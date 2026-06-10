@@ -1,14 +1,27 @@
 [project]
 name = "resdac-doc-archive"
 version = "0.1.0"
-description = "Add your description here"
+description = "CMS documentation archive and inventory tooling"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = ["pydantic>=2"]
 
+[project.scripts]
+cms-kb = "cms_kb.__main__:main"
+
 [dependency-groups]
-dev = ["basedpyright>=1.20"]
+dev = ["basedpyright>=1.20", "pytest>=8"]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cms_kb"]
 
 [tool.basedpyright]
 typeCheckingMode = "standard"
 pythonVersion = "3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
