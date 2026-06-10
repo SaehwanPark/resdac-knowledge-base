@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import re
-import sys
 from pathlib import Path
 
 
@@ -52,7 +51,9 @@ def parse_frontmatter(text: str) -> dict[str, str]:
 
 
 def has_heading(text: str, heading: str) -> bool:
-  pattern = re.compile(rf"^##\s+{re.escape(heading)}\s*$", re.IGNORECASE | re.MULTILINE)
+  pattern = re.compile(
+    rf"^##\s+{re.escape(heading)}\s*$", re.IGNORECASE | re.MULTILINE
+  )
   return bool(pattern.search(text))
 
 
@@ -125,4 +126,3 @@ def main() -> int:
 
 if __name__ == "__main__":
   raise SystemExit(main())
-

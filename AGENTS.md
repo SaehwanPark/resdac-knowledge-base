@@ -18,6 +18,7 @@ Keep this file short and repo-wide. Use [README.md](/Users/saehwan/repos/resdac-
 - Use Railway-oriented programming for fallible flows: keep the happy path linear, return success/failure values instead of throwing deep inside business logic, and isolate side effects at the edges.
 - Prefer type-safe programming with `basedpyright`; keep annotations complete enough that static checking stays useful.
 - Run Python commands with `uv run ...`; add dependencies with `uv add ...`; sync the environment with `uv sync`.
+- Use `ruff` for Python linting and style detection; keep its config in `ruff.toml` and run it with `uv run ruff check .`.
 - Run type checks with `uv run basedpyright .` once the Python surface exists.
 - Use 2-space indentation everywhere unless a file format requires otherwise. See `.editorconfig`.
 - Before handing off work, run the relevant `uv` command for the changed area, then verify the diff is narrow and provenance is preserved.

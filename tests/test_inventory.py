@@ -22,7 +22,9 @@ def _listing_html(*hrefs: str) -> str:
 
 def _dataset_html(*hrefs: str) -> str:
   links = "".join(f'<a href="{href}">Link</a>' for href in hrefs)
-  return f"<html><head><title>PDE</title></head><body><h1>PDE</h1>{links}</body></html>"
+  return (
+    f"<html><head><title>PDE</title></head><body><h1>PDE</h1>{links}</body></html>"
+  )
 
 
 def _documentation_html(*hrefs: str) -> str:
@@ -31,7 +33,11 @@ def _documentation_html(*hrefs: str) -> str:
 
 
 def test_parse_page_preserves_all_links() -> None:
-  html = _listing_html("/cms-data/files/pde", "/cms-data/files/pde/data-documentation", "/cms-data?page=1")
+  html = _listing_html(
+    "/cms-data/files/pde",
+    "/cms-data/files/pde/data-documentation",
+    "/cms-data?page=1",
+  )
   title, links = parse_page(html)
 
   assert title == "CMS Data"
@@ -43,18 +49,25 @@ def test_parse_page_preserves_all_links() -> None:
 
 
 def test_normalize_url_strips_www_and_fragments() -> None:
-  assert normalize_url(
-    "https://resdac.org/cms-data",
-    "https://www.resdac.org/cms-data/files/pde#top",
-  ) == "https://resdac.org/cms-data/files/pde"
+  assert (
+    normalize_url(
+      "https://resdac.org/cms-data",
+      "https://www.resdac.org/cms-data/files/pde#top",
+    )
+    == "https://resdac.org/cms-data/files/pde"
+  )
 
 
-def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(tmp_path: Path) -> None:
+def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
+  tmp_path: Path,
+) -> None:
   listing_url = "https://resdac.org/cms-data?page=0"
   dataset_url = "https://resdac.org/cms-data/files/pde"
   doc_url = "https://resdac.org/cms-data/files/pde/data-documentation"
   pdf_url = "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
-  xlsx_url = "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+  xlsx_url = (
+    "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+  )
 
   pages = {
     listing_url: HtmlFetchResult(
@@ -92,7 +105,9 @@ def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(tm
   fetch_calls: list[str] = []
   probe_calls: list[str] = []
 
-  def fake_fetch(url: str, timeout_seconds: float, user_agent: str) -> HtmlFetchResult:
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
     fetch_calls.append(url)
     return pages[url]
 
@@ -151,7 +166,9 @@ def test_crawl_inventory_stops_when_listing_page_repeats(tmp_path: Path) -> None
 
   fetch_calls: list[str] = []
 
-  def fake_fetch(url: str, timeout_seconds: float, user_agent: str) -> HtmlFetchResult:
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
     fetch_calls.append(url)
     return pages[url]
 
@@ -163,7 +180,9 @@ def test_crawl_inventory_stops_when_listing_page_repeats(tmp_path: Path) -> None
   result = crawl_inventory(
     config,
     fetch_html_fn=fake_fetch,
-    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(url=url, status=200),
+    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(
+      url=url, status=200
+    ),
   )
 
   assert fetch_calls == [page0, page1, dataset_url]

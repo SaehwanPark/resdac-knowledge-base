@@ -18,7 +18,9 @@ from urllib.request import Request, urlopen
 
 from pydantic import BaseModel, Field, field_validator
 
-ResourceKind = Literal["listing_page", "dataset_page", "documentation_page", "asset", "other"]
+ResourceKind = Literal[
+  "listing_page", "dataset_page", "documentation_page", "asset", "other"
+]
 LinkState = Literal["live", "dead", "unknown"]
 
 
@@ -66,7 +68,10 @@ def classify_asset_kind(url: str, content_type: str | None) -> str:
   path = urlparse(url).path.lower()
   if path.endswith(".pdf") or content_type == "application/pdf":
     return "pdf"
-  if path.endswith(".xlsx") or content_type in {"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.ms-excel"}:
+  if path.endswith(".xlsx") or content_type in {
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "application/vnd.ms-excel",
+  }:
     return "xlsx"
   if path.endswith(".xls"):
     return "xls"
@@ -81,7 +86,9 @@ def build_listing_url(base_url: str, page_number: int) -> str:
   parts = urlparse(base_url)
   query = dict(parse_qsl(parts.query, keep_blank_values=True))
   query["page"] = str(page_number)
-  return urlunparse((parts.scheme, parts.netloc, parts.path, parts.params, urlencode(query), ""))
+  return urlunparse(
+    (parts.scheme, parts.netloc, parts.path, parts.params, urlencode(query), "")
+  )
 
 
 class InventoryConfig(BaseModel):
@@ -238,7 +245,9 @@ def _link_is_asset(base_url: str, href: str) -> bool:
   return classify_resource_kind(normalize_url(base_url, href)) == "asset"
 
 
-def _empty_row(url: str, *, source_url: str = "", source_title: str = "", title: str = "") -> InventoryRow:
+def _empty_row(
+  url: str, *, source_url: str = "", source_title: str = "", title: str = ""
+) -> InventoryRow:
   return InventoryRow(
     url=url,
     title=title,
@@ -259,16 +268,32 @@ def _request_with_retry(
   for attempt in range(3):
     try:
       with urlopen(request, timeout=timeout_seconds) as response:
-        body = response.read().decode("utf-8", errors="replace") if read_body else None
-        return int(response.status), response.headers.get_content_type(), body or ""
+        body = (
+          response.read().decode("utf-8", errors="replace")
+          if read_body
+          else None
+        )
+        return (
+          int(response.status),
+          response.headers.get_content_type(),
+          body or "",
+        )
     except HTTPError as exc:
       if exc.code in retry_statuses and attempt < 2:
-        retry_after = exc.headers.get("Retry-After") if exc.headers is not None else None
-        sleep_seconds = float(retry_after) if retry_after and retry_after.isdigit() else delay_seconds
+        retry_after = (
+          exc.headers.get("Retry-After") if exc.headers is not None else None
+        )
+        sleep_seconds = (
+          float(retry_after)
+          if retry_after and retry_after.isdigit()
+          else delay_seconds
+        )
         time.sleep(sleep_seconds)
         delay_seconds *= 2
         continue
-      content_type = exc.headers.get_content_type() if exc.headers is not None else None
+      content_type = (
+        exc.headers.get_content_type() if exc.headers is not None else None
+      )
       return int(exc.code), content_type, ""
     except URLError:
       if attempt < 2:
@@ -356,7 +381,9 @@ def _update_page_row(
     row.link_state = "live" if status < 400 else "dead"
   row.linked_documents = linked_documents
   if row.content_type.startswith("text/html"):
-    row.resource_kind = row.resource_kind if row.resource_kind != "other" else "other"
+    row.resource_kind = (
+      row.resource_kind if row.resource_kind != "other" else "other"
+    )
 
 
 def _update_probe_row(row: InventoryRow, probe: ProbeResult) -> None:
@@ -367,11 +394,19 @@ def _update_probe_row(row: InventoryRow, probe: ProbeResult) -> None:
   else:
     row.link_state = "live" if probe.status < 400 else "dead"
   if not row.asset_kind:
-    row.asset_kind = classify_asset_kind(row.url, row.content_type or probe.content_type)
+    row.asset_kind = classify_asset_kind(
+      row.url, row.content_type or probe.content_type
+    )
 
 
 def _sorted_rows(rows: dict[str, InventoryRow]) -> list[InventoryRow]:
-  order = {"listing_page": 0, "dataset_page": 1, "documentation_page": 2, "asset": 3, "other": 4}
+  order = {
+    "listing_page": 0,
+    "dataset_page": 1,
+    "documentation_page": 2,
+    "asset": 3,
+    "other": 4,
+  }
   return sorted(rows.values(), key=lambda row: (order[row.resource_kind], row.url))
 
 
@@ -395,9 +430,13 @@ def crawl_inventory(
     listing_url = build_listing_url(config.base_url, page_number)
     if config.request_delay_seconds:
       time.sleep(config.request_delay_seconds)
-    page_result = fetch_html_fn(listing_url, config.timeout_seconds, config.user_agent)
+    page_result = fetch_html_fn(
+      listing_url, config.timeout_seconds, config.user_agent
+    )
     page_title, links = parse_page(page_result.html)
-    page_row = _register_row(rows, duplicates_skipped, url=listing_url, title=page_title)
+    page_row = _register_row(
+      rows, duplicates_skipped, url=listing_url, title=page_title
+    )
     page_row.resource_kind = "listing_page"
     _update_page_row(
       page_row,
@@ -453,7 +492,9 @@ def crawl_inventory(
         row.resource_kind = "asset"
 
     page_row.linked_documents = len(set(listing_discovered_urls))
-    signature = hashlib.sha1("\n".join(sorted(set(listing_discovered_urls))).encode("utf-8")).hexdigest()
+    signature = hashlib.sha1(
+      "\n".join(sorted(set(listing_discovered_urls))).encode("utf-8")
+    ).hexdigest()
     if page_number > 0 and signature in seen_listing_signatures:
       break
     seen_listing_signatures.add(signature)
@@ -468,11 +509,15 @@ def crawl_inventory(
 
     if config.request_delay_seconds:
       time.sleep(config.request_delay_seconds)
-    page_result = fetch_html_fn(current_url, config.timeout_seconds, config.user_agent)
+    page_result = fetch_html_fn(
+      current_url, config.timeout_seconds, config.user_agent
+    )
     page_title, links = parse_page(page_result.html)
     row = rows.get(current_url)
     if row is None:
-      row = _register_row(rows, duplicates_skipped, url=current_url, title=page_title)
+      row = _register_row(
+        rows, duplicates_skipped, url=current_url, title=page_title
+      )
     if row.resource_kind == "other":
       row.resource_kind = classify_resource_kind(current_url)
     _update_page_row(
@@ -529,7 +574,9 @@ def crawl_inventory(
         child_row.resource_kind = "asset"
         if config.request_delay_seconds:
           time.sleep(config.request_delay_seconds)
-        probe = probe_url_fn(absolute, config.timeout_seconds, config.user_agent)
+        probe = probe_url_fn(
+          absolute, config.timeout_seconds, config.user_agent
+        )
         _update_probe_row(child_row, probe)
 
     row.linked_documents = len(set(page_discovered_urls))
@@ -605,7 +652,13 @@ def write_workspace_summary(result: InventoryResult) -> Path:
     "| kind | count |",
     "| --- | ---: |",
   ]
-  for kind in ("listing_page", "dataset_page", "documentation_page", "asset", "other"):
+  for kind in (
+    "listing_page",
+    "dataset_page",
+    "documentation_page",
+    "asset",
+    "other",
+  ):
     lines.append(f"| {kind} | {by_kind.get(kind, 0)} |")
   lines.extend(["", "## By Asset Kind", "", "| kind | count |", "| --- | ---: |"])
   if by_asset_kind:
@@ -615,13 +668,17 @@ def write_workspace_summary(result: InventoryResult) -> Path:
     lines.append("| none | 0 |")
   lines.extend(["", "## Dead Links", ""])
   if result.dead_links:
-    lines.extend(["| url | source | status | content_type |", "| --- | --- | ---: | --- |"])
+    lines.extend(
+      ["| url | source | status | content_type |", "| --- | --- | ---: | --- |"]
+    )
     for row in result.dead_links[:25]:
       lines.append(
         f"| {row.url} | {row.source_url or ''} | {row.http_status or ''} | {row.content_type or ''} |"
       )
     if len(result.dead_links) > 25:
-      lines.append(f"\n- Additional dead links omitted: {len(result.dead_links) - 25}")
+      lines.append(
+        f"\n- Additional dead links omitted: {len(result.dead_links) - 25}"
+      )
   else:
     lines.append("- None")
   summary_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -636,10 +693,14 @@ def run_inventory(config: InventoryConfig) -> tuple[InventoryResult, Path]:
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-  parser = argparse.ArgumentParser(description="Discover and inventory CMS data documentation pages.")
+  parser = argparse.ArgumentParser(
+    description="Discover and inventory CMS data documentation pages."
+  )
   parser.add_argument("--base-url", default="https://resdac.org/cms-data")
   parser.add_argument("--max-pages", type=int, default=4)
-  parser.add_argument("--output", type=Path, default=Path("manifests/site_inventory.csv"))
+  parser.add_argument(
+    "--output", type=Path, default=Path("manifests/site_inventory.csv")
+  )
   parser.add_argument("--workspace-dir", type=Path, default=Path("_workspace"))
   parser.add_argument("--timeout-seconds", type=float, default=20.0)
   parser.add_argument("--request-delay-seconds", type=float, default=0.5)
