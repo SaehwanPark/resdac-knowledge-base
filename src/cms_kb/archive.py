@@ -225,6 +225,7 @@ def _manifest_row_for_failure(
 def _manifest_row_for_success(
   row: InventoryRow,
   *,
+  http_status: int | None,
   content_type: str,
   downloaded_at_utc: str,
   sha256: str,
@@ -237,7 +238,7 @@ def _manifest_row_for_success(
     source_url=row.source_url,
     source_title=row.source_title,
     content_type=content_type,
-    http_status=row.http_status,
+    http_status=http_status,
     archive_state="archived",
     downloaded_at_utc=downloaded_at_utc,
     sha256=sha256,
@@ -332,6 +333,7 @@ def run_archive(
     manifest_rows.append(
       _manifest_row_for_success(
         row,
+        http_status=download.status,
         content_type=download.content_type or row.content_type,
         downloaded_at_utc=downloaded_at_utc,
         sha256=hashlib.sha256(download.body).hexdigest(),

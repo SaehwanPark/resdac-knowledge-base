@@ -109,6 +109,44 @@ def test_run_archive_archives_live_html_and_assets_and_skips_non_live_rows(
   assert "- Failed: 0" in summary_text
 
 
+def test_run_archive_records_actual_download_status_in_success_manifest(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  asset_row = InventoryRow(
+    url="https://example.com/files/codebook.pdf",
+    title="Codebook",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=200,
+    link_state="live",
+  )
+  write_inventory_csv([asset_row], inventory_path)
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+    ),
+    download_url_fn=lambda url, timeout_seconds, user_agent: DownloadResult(
+      url=url,
+      status=206,
+      content_type="application/pdf",
+      body=b"%PDF-1.4 fake pdf",
+    ),
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  archived_row = result.manifest_rows[0]
+  assert archived_row.archive_state == "archived"
+  assert archived_row.http_status == 206
+
+
 def test_run_archive_records_failed_live_download_and_continues_writing_outputs(
   tmp_path: Path,
 ) -> None:
