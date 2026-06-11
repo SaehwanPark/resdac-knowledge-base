@@ -8,6 +8,7 @@ from cms_kb.inventory import (
   InventoryConfig,
   InventoryRow,
   ProbeResult,
+  build_arg_parser,
   crawl_inventory,
   normalize_url,
   parse_page,
@@ -56,6 +57,12 @@ def test_normalize_url_strips_www_and_fragments() -> None:
     )
     == "https://resdac.org/cms-data/files/pde"
   )
+
+
+def test_arg_parser_accepts_max_listing_pages_alias() -> None:
+  args = build_arg_parser().parse_args(["--max-listing-pages", "2"])
+
+  assert args.max_pages == 2
 
 
 def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
@@ -229,6 +236,123 @@ def test_crawl_inventory_probes_assets_linked_from_listing_page(
   assert asset.link_state == "live"
   assert asset.http_status == 200
   assert asset.asset_kind == "pdf"
+
+
+def test_crawl_inventory_can_skip_follow_pages_with_limit(tmp_path: Path) -> None:
+  listing_url = "https://resdac.org/cms-data?page=0"
+  dataset_url = "https://resdac.org/cms-data/files/pde"
+
+  pages = {
+    listing_url: HtmlFetchResult(
+      url=listing_url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html("/cms-data/files/pde"),
+    ),
+  }
+  fetch_calls: list[str] = []
+  progress_messages: list[str] = []
+
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
+    fetch_calls.append(url)
+    return pages[url]
+
+  config = InventoryConfig(
+    base_url="https://resdac.org/cms-data",
+    max_pages=1,
+    max_follow_pages=0,
+    output_path=tmp_path / "cms-kb-test.csv",
+  )
+  result = crawl_inventory(
+    config,
+    fetch_html_fn=fake_fetch,
+    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(
+      url=url, status=200
+    ),
+    progress_fn=progress_messages.append,
+  )
+
+  assert fetch_calls == [listing_url]
+  assert any(row.url == dataset_url for row in result.rows)
+  assert any("configured limit" in message for message in progress_messages)
+
+
+def test_crawl_inventory_deduplicates_asset_probes(tmp_path: Path) -> None:
+  listing_url = "https://resdac.org/cms-data?page=0"
+  doc_url = "https://resdac.org/cms-data/files/pde/data-documentation"
+  pdf_url = "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+
+  pages = {
+    listing_url: HtmlFetchResult(
+      url=listing_url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html(doc_url.replace("https://resdac.org", "")),
+    ),
+    doc_url: HtmlFetchResult(
+      url=doc_url,
+      status=200,
+      content_type="text/html",
+      html=_documentation_html(pdf_url, pdf_url),
+    ),
+  }
+  probe_calls: list[str] = []
+
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
+    return pages[url]
+
+  def fake_probe(url: str, timeout_seconds: float, user_agent: str) -> ProbeResult:
+    probe_calls.append(url)
+    return ProbeResult(url=url, status=200, content_type="application/pdf")
+
+  config = InventoryConfig(
+    base_url="https://resdac.org/cms-data",
+    max_pages=1,
+    output_path=tmp_path / "cms-kb-test.csv",
+  )
+  result = crawl_inventory(config, fetch_html_fn=fake_fetch, probe_url_fn=fake_probe)
+
+  assert probe_calls == [pdf_url]
+  assert [row.url for row in result.rows].count(pdf_url) == 1
+
+
+def test_crawl_inventory_honors_asset_limit(tmp_path: Path) -> None:
+  listing_url = "https://resdac.org/cms-data?page=0"
+  pdf_url = "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+
+  pages = {
+    listing_url: HtmlFetchResult(
+      url=listing_url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html(pdf_url),
+    ),
+  }
+  probe_calls: list[str] = []
+
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
+    return pages[url]
+
+  def fake_probe(url: str, timeout_seconds: float, user_agent: str) -> ProbeResult:
+    probe_calls.append(url)
+    return ProbeResult(url=url, status=200, content_type="application/pdf")
+
+  config = InventoryConfig(
+    base_url="https://resdac.org/cms-data",
+    max_pages=1,
+    max_assets=0,
+    output_path=tmp_path / "cms-kb-test.csv",
+  )
+  result = crawl_inventory(config, fetch_html_fn=fake_fetch, probe_url_fn=fake_probe)
+
+  assert probe_calls == []
+  assert all(row.url != pdf_url for row in result.rows)
 
 
 def test_write_inventory_csv_creates_expected_columns(tmp_path: Path) -> None:

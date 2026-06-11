@@ -6,6 +6,7 @@ import argparse
 import csv
 import hashlib
 import re
+import sys
 import time
 from collections import Counter, deque
 from dataclasses import dataclass
@@ -106,8 +107,11 @@ def build_listing_url(base_url: str, page_number: int) -> str:
 class InventoryConfig(BaseModel):
   base_url: str = "https://resdac.org/cms-data"
   max_pages: int = 4
+  max_follow_pages: int | None = None
+  max_assets: int | None = None
   timeout_seconds: float = 20.0
   request_delay_seconds: float = 0.0
+  progress_interval: int = 25
   user_agent: str = "Mozilla/5.0 (compatible; cms-kb-inventory/0.1)"
   output_path: Path = Path("manifests/site_inventory.csv")
   workspace_dir: Path = Path("_workspace")
@@ -127,11 +131,25 @@ class InventoryConfig(BaseModel):
       raise ValueError("max_pages must be at least 1")
     return value
 
+  @field_validator("max_follow_pages", "max_assets")
+  @classmethod
+  def _validate_optional_non_negative_int(cls, value: int | None) -> int | None:
+    if value is not None and value < 0:
+      raise ValueError("crawl limits cannot be negative")
+    return value
+
   @field_validator("request_delay_seconds")
   @classmethod
   def _validate_request_delay_seconds(cls, value: float) -> float:
     if value < 0:
       raise ValueError("request_delay_seconds cannot be negative")
+    return value
+
+  @field_validator("progress_interval")
+  @classmethod
+  def _validate_progress_interval(cls, value: int) -> int:
+    if value < 0:
+      raise ValueError("progress_interval cannot be negative")
     return value
 
 
@@ -442,6 +460,10 @@ def _probe_asset_row(
   _update_probe_row(row, probe)
 
 
+def _asset_probe_needed(row: InventoryRow) -> bool:
+  return row.http_status is None and row.link_state == "unknown"
+
+
 def _update_probe_row(row: InventoryRow, probe: ProbeResult) -> None:
   row.http_status = probe.status
   row.content_type = probe.content_type or row.content_type
@@ -470,17 +492,69 @@ def _count_dead_links(rows: list[InventoryRow]) -> list[InventoryRow]:
   return [row for row in rows if row.link_state == "dead"]
 
 
+def _limit_reached(limit: int | None, count: int) -> bool:
+  return limit is not None and count >= limit
+
+
+def _emit_progress(
+  progress_fn: Callable[[str], None] | None,
+  message: str,
+) -> None:
+  if progress_fn is not None:
+    progress_fn(message)
+
+
+def _emit_periodic_progress(
+  config: InventoryConfig,
+  progress_fn: Callable[[str], None] | None,
+  *,
+  network_operations: int,
+  listing_pages: int,
+  follow_pages: int,
+  asset_probes: int,
+  queued_pages: int,
+  rows: int,
+) -> None:
+  if config.progress_interval == 0:
+    return
+  if network_operations % config.progress_interval != 0:
+    return
+  _emit_progress(
+    progress_fn,
+    "progress: "
+    f"{listing_pages} listing pages, "
+    f"{follow_pages} follow pages, "
+    f"{asset_probes} asset probes, "
+    f"{queued_pages} queued pages, "
+    f"{rows} unique rows",
+  )
+
+
 def crawl_inventory(
   config: InventoryConfig,
   *,
   fetch_html_fn: Callable[[str, float, str], HtmlFetchResult] = fetch_html,
   probe_url_fn: Callable[[str, float, str], ProbeResult] = probe_url,
+  progress_fn: Callable[[str], None] | None = None,
 ) -> InventoryResult:
   rows: dict[str, InventoryRow] = {}
   duplicates_skipped = [0]
   visited_pages: set[str] = set()
   seen_listing_signatures: set[str] = set()
   queue: deque[str] = deque()
+  asset_urls: set[str] = set()
+  listing_pages_fetched = 0
+  follow_pages_fetched = 0
+  asset_probes = 0
+  network_operations = 0
+
+  _emit_progress(
+    progress_fn,
+    "starting inventory crawl: "
+    f"max listing pages={config.max_pages}, "
+    f"max follow pages={config.max_follow_pages if config.max_follow_pages is not None else 'unbounded'}, "
+    f"max assets={config.max_assets if config.max_assets is not None else 'unbounded'}",
+  )
 
   for page_number in range(config.max_pages):
     listing_url = build_listing_url(config.base_url, page_number)
@@ -489,6 +563,8 @@ def crawl_inventory(
     page_result = fetch_html_fn(
       listing_url, config.timeout_seconds, config.user_agent
     )
+    listing_pages_fetched += 1
+    network_operations += 1
     page_title, links = parse_page(page_result.html)
     page_row = _register_row(
       rows, duplicates_skipped, url=listing_url, title=page_title
@@ -536,7 +612,12 @@ def crawl_inventory(
         if absolute not in visited_pages:
           queue.append(absolute)
       elif _link_is_asset(listing_url, link.href):
+        if absolute not in asset_urls and _limit_reached(
+          config.max_assets, len(asset_urls)
+        ):
+          continue
         listing_discovered_urls.append(absolute)
+        asset_urls.add(absolute)
         row = _register_row(
           rows,
           duplicates_skipped,
@@ -546,9 +627,22 @@ def crawl_inventory(
           source_title=page_title,
         )
         row.resource_kind = "asset"
-        _probe_asset_row(row, config, probe_url_fn=probe_url_fn)
+        if _asset_probe_needed(row):
+          _probe_asset_row(row, config, probe_url_fn=probe_url_fn)
+          asset_probes += 1
+          network_operations += 1
 
     page_row.linked_documents = len(set(listing_discovered_urls))
+    _emit_periodic_progress(
+      config,
+      progress_fn,
+      network_operations=network_operations,
+      listing_pages=listing_pages_fetched,
+      follow_pages=follow_pages_fetched,
+      asset_probes=asset_probes,
+      queued_pages=len(queue),
+      rows=len(rows),
+    )
     signature = hashlib.sha1(
       "\n".join(sorted(set(listing_discovered_urls))).encode("utf-8")
     ).hexdigest()
@@ -559,6 +653,12 @@ def crawl_inventory(
       break
 
   while queue:
+    if _limit_reached(config.max_follow_pages, follow_pages_fetched):
+      _emit_progress(
+        progress_fn,
+        f"stopped follow-page crawl at configured limit: {config.max_follow_pages}",
+      )
+      break
     current_url = queue.popleft()
     if current_url in visited_pages:
       continue
@@ -569,6 +669,8 @@ def crawl_inventory(
     page_result = fetch_html_fn(
       current_url, config.timeout_seconds, config.user_agent
     )
+    follow_pages_fetched += 1
+    network_operations += 1
     page_title, links = parse_page(page_result.html)
     row = rows.get(current_url)
     if row is None:
@@ -619,7 +721,12 @@ def crawl_inventory(
         if absolute not in visited_pages:
           queue.append(absolute)
       elif _link_is_asset(current_url, link.href):
+        if absolute not in asset_urls and _limit_reached(
+          config.max_assets, len(asset_urls)
+        ):
+          continue
         page_discovered_urls.append(absolute)
+        asset_urls.add(absolute)
         child_row = _register_row(
           rows,
           duplicates_skipped,
@@ -629,9 +736,22 @@ def crawl_inventory(
           source_title=page_title,
         )
         child_row.resource_kind = "asset"
-        _probe_asset_row(child_row, config, probe_url_fn=probe_url_fn)
+        if _asset_probe_needed(child_row):
+          _probe_asset_row(child_row, config, probe_url_fn=probe_url_fn)
+          asset_probes += 1
+          network_operations += 1
 
     row.linked_documents = len(set(page_discovered_urls))
+    _emit_periodic_progress(
+      config,
+      progress_fn,
+      network_operations=network_operations,
+      listing_pages=listing_pages_fetched,
+      follow_pages=follow_pages_fetched,
+      asset_probes=asset_probes,
+      queued_pages=len(queue),
+      rows=len(rows),
+    )
 
   ordered_rows = _sorted_rows(rows)
   dead_links = _count_dead_links(ordered_rows)
@@ -738,14 +858,48 @@ def build_arg_parser() -> argparse.ArgumentParser:
     description="Discover and inventory CMS data documentation pages."
   )
   parser.add_argument("--base-url", default="https://resdac.org/cms-data")
-  parser.add_argument("--max-pages", type=int, default=4)
+  parser.add_argument(
+    "--max-pages",
+    type=int,
+    default=4,
+    dest="max_pages",
+    help="Maximum ResDAC listing pages to crawl. Follow-up pages are controlled separately.",
+  )
+  parser.add_argument(
+    "--max-listing-pages",
+    type=int,
+    dest="max_pages",
+    help="Alias for --max-pages with clearer naming.",
+  )
+  parser.add_argument(
+    "--max-follow-pages",
+    type=int,
+    default=None,
+    help="Maximum discovered dataset/documentation pages to fetch after listing pages.",
+  )
+  parser.add_argument(
+    "--max-assets",
+    type=int,
+    default=None,
+    help="Maximum unique asset URLs to inventory and probe.",
+  )
   parser.add_argument(
     "--output", type=Path, default=Path("manifests/site_inventory.csv")
   )
   parser.add_argument("--workspace-dir", type=Path, default=Path("_workspace"))
   parser.add_argument("--timeout-seconds", type=float, default=20.0)
   parser.add_argument("--request-delay-seconds", type=float, default=0.5)
+  parser.add_argument(
+    "--progress-interval",
+    type=int,
+    default=25,
+    help="Print progress after this many network operations; use 0 to disable.",
+  )
   return parser
+
+
+def _print_progress(message: str) -> None:
+  print(message, file=sys.stderr, flush=True)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -754,12 +908,17 @@ def main(argv: list[str] | None = None) -> int:
   config = InventoryConfig(
     base_url=args.base_url,
     max_pages=args.max_pages,
+    max_follow_pages=args.max_follow_pages,
+    max_assets=args.max_assets,
     timeout_seconds=args.timeout_seconds,
     request_delay_seconds=args.request_delay_seconds,
+    progress_interval=args.progress_interval,
     output_path=args.output,
     workspace_dir=args.workspace_dir,
   )
-  result, summary_path = run_inventory(config)
+  result = crawl_inventory(config, progress_fn=_print_progress)
+  write_inventory_csv(result.rows, config.output_path)
+  summary_path = write_workspace_summary(result)
   print(
     f"wrote {len(result.rows)} inventory rows to {config.output_path} "
     f"and {summary_path}"

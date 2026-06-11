@@ -204,6 +204,14 @@ Run the Phase 0 inventory crawl against ResDAC:
 uv run cms-kb --max-pages 4 --request-delay-seconds 0.5
 ```
 
+`--max-pages`/`--max-listing-pages` limits ResDAC listing pages only. The
+crawler also follows discovered dataset/documentation pages and probes linked
+assets. For a bounded smoke test, add explicit follow-up limits:
+
+```bash
+uv run cms-kb --max-listing-pages 1 --max-follow-pages 10 --max-assets 10 --request-delay-seconds 0.5
+```
+
 Outputs:
 
 - `manifests/site_inventory.csv`
