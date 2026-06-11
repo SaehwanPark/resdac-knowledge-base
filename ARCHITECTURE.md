@@ -42,4 +42,11 @@ Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms
 - `manifests/archive_manifest.csv`: archive provenance rows with URL, status, checksum, timestamp, and local path.
 - `_workspace/03_archive_manifest.md`: archive handoff summary for downstream phases.
 
-Metadata extraction, parsing, graph construction, and retrieval layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how future phases should hand off provenance-bearing artifacts.
+Phase 2 metadata extraction is implemented in `src/cms_kb/extraction.py`. The `cms-kb-extract` CLI consumes archived rows from `manifests/archive_manifest.csv`, verifies local files and checksums, and writes:
+
+- `data/metadata/datasets.csv`: dataset records extracted from archived dataset pages.
+- `data/metadata/documents.csv`: documentation page and asset records linked to datasets.
+- `data/graph/document_edges.csv`: graph seed edges from datasets to documents.
+- `_workspace/04_extraction_pack.md`: extraction handoff summary with unresolved normalization notes and failures.
+
+Document content parsing, variable extraction, richer graph construction, and retrieval layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how future phases should hand off provenance-bearing artifacts.

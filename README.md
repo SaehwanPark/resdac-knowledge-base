@@ -222,6 +222,19 @@ Outputs:
 - `manifests/archive_manifest.csv`
 - `_workspace/03_archive_manifest.md`
 
+Run the Phase 2 metadata extraction pass against the archive manifest:
+
+```bash
+uv run cms-kb-extract
+```
+
+Outputs:
+
+- `data/metadata/datasets.csv`
+- `data/metadata/documents.csv`
+- `data/graph/document_edges.csv`
+- `_workspace/04_extraction_pack.md`
+
 ## Core Data Model
 
 ### Dataset
