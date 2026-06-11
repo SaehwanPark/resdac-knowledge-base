@@ -7,6 +7,7 @@ Keep this file short and repo-wide. Use [README.md](README.md) and [ROADMAP.md](
 - Canonical paths are `data/`, `manifests/`, `src/`, `tests/`, and `docs/`.
 - `LESSONS.md` is the repo-local log for recurring setup traps, debugging lessons, and workflow gotchas.
 - Use `uv` for all Python dependency and execution workflows.
+- Use `gh` for all GitHub CLI workflows.
 - Use `pydantic` for validated runtime data models and external-input boundaries.
 
 ## Why
@@ -23,5 +24,5 @@ Keep this file short and repo-wide. Use [README.md](README.md) and [ROADMAP.md](
 - Use 2-space indentation everywhere unless a file format requires otherwise. See `.editorconfig`.
 - Before handing off work, run the relevant `uv` command for the changed area, then verify the diff is narrow and provenance is preserved.
 - When you hit a failure pattern, surprising dependency issue, or non-obvious fix that could recur, add a short factual entry to `LESSONS.md` with context, cause, resolution, and prevention.
-- If CLI tool is not found, try running `which <tool>` to find it in the environment.
+- If CLI tool such as `uv` or `gh` is not found, try running `which <tool>` to find it in the environment.
 - You may install missing dependencies with `uv add <package>`.
