@@ -209,6 +209,19 @@ Outputs:
 - `manifests/site_inventory.csv`
 - `_workspace/02_source_inventory.md`
 
+Run the Phase 1 archive pass against the inventory output:
+
+```bash
+uv run cms-kb-archive --request-delay-seconds 0.5
+```
+
+Outputs:
+
+- `data/raw/html/...`
+- `data/raw/assets/...`
+- `manifests/archive_manifest.csv`
+- `_workspace/03_archive_manifest.md`
+
 ## Core Data Model
 
 ### Dataset
