@@ -1,5 +1,12 @@
 """CMS KB inventory and crawl helpers."""
 
+from .archive import (
+  ArchiveConfig,
+  ArchiveManifestRow,
+  ArchiveResult,
+  DownloadResult,
+  run_archive,
+)
 from .inventory import (
   HtmlFetchResult,
   InventoryConfig,
@@ -12,6 +19,10 @@ from .inventory import (
 )
 
 __all__ = [
+  "ArchiveConfig",
+  "ArchiveManifestRow",
+  "ArchiveResult",
+  "DownloadResult",
   "HtmlFetchResult",
   "InventoryConfig",
   "InventoryResult",
@@ -19,5 +30,6 @@ __all__ = [
   "ProbeResult",
   "crawl_inventory",
   "main",
+  "run_archive",
   "run_inventory",
 ]

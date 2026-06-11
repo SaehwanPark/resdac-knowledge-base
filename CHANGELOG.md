@@ -7,3 +7,4 @@
 - Repository-level architecture and scope notes for the CMS documentation knowledge base.
 - Repository-level `LESSONS.md` for capturing recurring failure patterns and workflow lessons.
 - Discovery-only CMS data inventory crawl with CSV output, workspace summary output, and live-site provenance capture.
+- Phase 1 archive preservation CLI with raw HTML/asset downloads, archive manifest CSV output, and `_workspace/03_archive_manifest.md` handoff summary.

@@ -8,6 +8,7 @@ dependencies = ["pydantic>=2"]
 
 [project.scripts]
 cms-kb = "cms_kb.__main__:main"
+cms-kb-archive = "cms_kb.archive:main"
 
 [dependency-groups]
 dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]

@@ -22,6 +22,18 @@ ResourceKind = Literal[
   "listing_page", "dataset_page", "documentation_page", "asset", "other"
 ]
 LinkState = Literal["live", "dead", "unknown"]
+INVENTORY_FIELDNAMES = [
+  "url",
+  "title",
+  "resource_kind",
+  "asset_kind",
+  "content_type",
+  "http_status",
+  "link_state",
+  "linked_documents",
+  "source_url",
+  "source_title",
+]
 
 
 def _normalize_whitespace(text: str) -> str:
@@ -155,6 +167,42 @@ class InventoryResult(BaseModel):
   summary: dict[str, int] = Field(default_factory=dict)
   dead_links: list[InventoryRow] = Field(default_factory=list)
   duplicates_skipped: int = 0
+
+
+def read_inventory_csv(input_path: Path) -> list[InventoryRow]:
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      raise ValueError(f"inventory CSV has no header: {input_path}")
+
+    missing_fieldnames = [
+      fieldname
+      for fieldname in INVENTORY_FIELDNAMES
+      if fieldname not in reader.fieldnames
+    ]
+    if missing_fieldnames:
+      raise ValueError(
+        f"inventory CSV is missing required columns: {', '.join(missing_fieldnames)}"
+      )
+
+    rows: list[InventoryRow] = []
+    for raw_row in reader:
+      normalized_row = {
+        "url": raw_row["url"],
+        "title": raw_row["title"],
+        "resource_kind": raw_row["resource_kind"],
+        "asset_kind": raw_row["asset_kind"],
+        "content_type": raw_row["content_type"],
+        "http_status": (
+          int(raw_row["http_status"]) if raw_row["http_status"].strip() else None
+        ),
+        "link_state": raw_row["link_state"],
+        "linked_documents": int(raw_row["linked_documents"] or 0),
+        "source_url": raw_row["source_url"],
+        "source_title": raw_row["source_title"],
+      }
+      rows.append(InventoryRow.model_validate(normalized_row))
+  return rows
 
 
 @dataclass(frozen=True)
@@ -606,18 +654,7 @@ def write_inventory_csv(rows: list[InventoryRow], output_path: Path) -> None:
   with output_path.open("w", newline="", encoding="utf-8") as handle:
     writer = csv.DictWriter(
       handle,
-      fieldnames=[
-        "url",
-        "title",
-        "resource_kind",
-        "asset_kind",
-        "content_type",
-        "http_status",
-        "link_state",
-        "linked_documents",
-        "source_url",
-        "source_title",
-      ],
+      fieldnames=INVENTORY_FIELDNAMES,
     )
     writer.writeheader()
     for row in rows:

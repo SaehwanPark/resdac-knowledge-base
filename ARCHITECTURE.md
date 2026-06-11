@@ -3,7 +3,7 @@
 ## Overview
 The repository is currently a documentation-first knowledge base for CMS and ResDAC materials. The canonical repo state is the archived source material, extracted metadata, and provenance-bearing manifests that future code will generate.
 
-Last Reviewed: 2026-06-10
+Last Reviewed: 2026-06-11
 Status: Verified
 
 ## Main Surfaces
@@ -35,4 +35,11 @@ Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI 
 - `manifests/site_inventory.csv`: machine-readable inventory rows.
 - `_workspace/02_source_inventory.md`: human-readable coverage summary for harness handoffs.
 
-Archive download, metadata extraction, parsing, graph construction, and retrieval layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how future phases should hand off provenance-bearing artifacts.
+Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms-kb-archive` CLI consumes the inventory CSV, downloads live HTML pages and live linked assets, and writes:
+
+- `data/raw/html/...`: archived listing, dataset, and documentation page HTML.
+- `data/raw/assets/...`: archived asset files grouped by asset kind.
+- `manifests/archive_manifest.csv`: archive provenance rows with URL, status, checksum, timestamp, and local path.
+- `_workspace/03_archive_manifest.md`: archive handoff summary for downstream phases.
+
+Metadata extraction, parsing, graph construction, and retrieval layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how future phases should hand off provenance-bearing artifacts.
