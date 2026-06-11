@@ -30,4 +30,9 @@ Status: Verified
 - Do not introduce retrieval outputs that cannot be traced back to a source document.
 
 ## Current State
-There is no runtime pipeline yet in the repository. The current architecture is the project documentation and harness contract that define the intended shape of the future system.
+Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI crawls ResDAC listing pages, follows dataset and documentation links, probes linked assets, and writes:
+
+- `manifests/site_inventory.csv`: machine-readable inventory rows.
+- `_workspace/02_source_inventory.md`: human-readable coverage summary for harness handoffs.
+
+Archive download, metadata extraction, parsing, graph construction, and retrieval layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how future phases should hand off provenance-bearing artifacts.

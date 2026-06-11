@@ -1,6 +1,6 @@
 # Repository Agents Guide
 
-Keep this file short and repo-wide. Use [README.md](/Users/saehwan/repos/resdac-knowledge-base/README.md) and [ROADMAP.md](/Users/saehwan/repos/resdac-knowledge-base/ROADMAP.md) for deeper context.
+Keep this file short and repo-wide. Use [README.md](README.md) and [ROADMAP.md](ROADMAP.md) for deeper context.
 
 ## What
 - CMS documentation knowledge base for archival, metadata extraction, retrieval, and agent support.

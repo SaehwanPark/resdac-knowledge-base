@@ -189,6 +189,48 @@ def test_crawl_inventory_stops_when_listing_page_repeats(tmp_path: Path) -> None
   assert any(row.url == dataset_url for row in result.rows)
 
 
+def test_crawl_inventory_probes_assets_linked_from_listing_page(
+  tmp_path: Path,
+) -> None:
+  listing_url = "https://resdac.org/cms-data?page=0"
+  pdf_url = "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+
+  pages = {
+    listing_url: HtmlFetchResult(
+      url=listing_url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html(pdf_url),
+    ),
+  }
+  probes = {
+    pdf_url: ProbeResult(url=pdf_url, status=200, content_type="application/pdf"),
+  }
+  probe_calls: list[str] = []
+
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
+    return pages[url]
+
+  def fake_probe(url: str, timeout_seconds: float, user_agent: str) -> ProbeResult:
+    probe_calls.append(url)
+    return probes[url]
+
+  config = InventoryConfig(
+    base_url="https://resdac.org/cms-data",
+    max_pages=1,
+    output_path=tmp_path / "cms-kb-test.csv",
+  )
+  result = crawl_inventory(config, fetch_html_fn=fake_fetch, probe_url_fn=fake_probe)
+
+  asset = next(row for row in result.rows if row.url == pdf_url)
+  assert probe_calls == [pdf_url]
+  assert asset.link_state == "live"
+  assert asset.http_status == 200
+  assert asset.asset_kind == "pdf"
+
+
 def test_write_inventory_csv_creates_expected_columns(tmp_path: Path) -> None:
   output = tmp_path / "site_inventory.csv"
   write_inventory_csv(

@@ -8,6 +8,7 @@ from .inventory import (
   ProbeResult,
   crawl_inventory,
   main,
+  run_inventory,
 )
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
   "ProbeResult",
   "crawl_inventory",
   "main",
+  "run_inventory",
 ]

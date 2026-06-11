@@ -8,3 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Ephemeral harness handoffs and generated inventory runs
+_workspace/

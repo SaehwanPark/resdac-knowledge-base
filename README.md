@@ -165,7 +165,7 @@ All responses should include source citations.
 ## Repository Structure
 
 ```text
-cms-kb/
+resdac-knowledge-base/
 
 ├── data/
 │   ├── raw/
@@ -176,20 +176,38 @@ cms-kb/
 ├── manifests/
 │
 ├── src/
-│   ├── crawl/
-│   ├── archive/
-│   ├── parse/
-│   ├── metadata/
-│   ├── graph/
-│   ├── retrieval/
-│   └── evaluation/
+│   └── cms_kb/
 │
 ├── tests/
 │
-├── notebooks/
+├── docs/
+│   └── harness/cms-kb/
 │
-└── docs/
+└── .agents/skills/
 ```
+
+## Development
+
+Use `uv` for dependency management and command execution.
+
+```bash
+uv sync
+uv run pytest
+uv run ruff check .
+uv run basedpyright .
+uv run python scripts/validate_harness.py
+```
+
+Run the Phase 0 inventory crawl against ResDAC:
+
+```bash
+uv run cms-kb --max-pages 4 --request-delay-seconds 0.5
+```
+
+Outputs:
+
+- `manifests/site_inventory.csv`
+- `_workspace/02_source_inventory.md`
 
 ## Core Data Model
 

@@ -380,10 +380,18 @@ def _update_page_row(
     row.http_status = status
     row.link_state = "live" if status < 400 else "dead"
   row.linked_documents = linked_documents
-  if row.content_type.startswith("text/html"):
-    row.resource_kind = (
-      row.resource_kind if row.resource_kind != "other" else "other"
-    )
+
+
+def _probe_asset_row(
+  row: InventoryRow,
+  config: InventoryConfig,
+  *,
+  probe_url_fn: Callable[[str, float, str], ProbeResult],
+) -> None:
+  if config.request_delay_seconds:
+    time.sleep(config.request_delay_seconds)
+  probe = probe_url_fn(row.url, config.timeout_seconds, config.user_agent)
+  _update_probe_row(row, probe)
 
 
 def _update_probe_row(row: InventoryRow, probe: ProbeResult) -> None:
@@ -490,6 +498,7 @@ def crawl_inventory(
           source_title=page_title,
         )
         row.resource_kind = "asset"
+        _probe_asset_row(row, config, probe_url_fn=probe_url_fn)
 
     page_row.linked_documents = len(set(listing_discovered_urls))
     signature = hashlib.sha1(
@@ -572,12 +581,7 @@ def crawl_inventory(
           source_title=page_title,
         )
         child_row.resource_kind = "asset"
-        if config.request_delay_seconds:
-          time.sleep(config.request_delay_seconds)
-        probe = probe_url_fn(
-          absolute, config.timeout_seconds, config.user_agent
-        )
-        _update_probe_row(child_row, probe)
+        _probe_asset_row(child_row, config, probe_url_fn=probe_url_fn)
 
     row.linked_documents = len(set(page_discovered_urls))
 
@@ -718,12 +722,10 @@ def main(argv: list[str] | None = None) -> int:
     output_path=args.output,
     workspace_dir=args.workspace_dir,
   )
-  result = crawl_inventory(config)
-  write_inventory_csv(result.rows, config.output_path)
-  write_workspace_summary(result)
+  result, summary_path = run_inventory(config)
   print(
     f"wrote {len(result.rows)} inventory rows to {config.output_path} "
-    f"and {config.workspace_dir / '02_source_inventory.md'}"
+    f"and {summary_path}"
   )
   return 0
 
