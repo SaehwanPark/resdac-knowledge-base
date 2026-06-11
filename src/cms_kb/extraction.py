@@ -201,12 +201,19 @@ def _slugify(value: str) -> str:
 
 
 def _dataset_id_from_url(url: str) -> str:
+  dataset_id = _dataset_id_from_resdac_file_url(url)
+  if dataset_id is not None:
+    return dataset_id
+  return _slugify(Path(urlparse(url).path).stem)
+
+
+def _dataset_id_from_resdac_file_url(url: str) -> str | None:
   parts = [part for part in urlparse(url).path.split("/") if part]
   if "files" not in parts:
-    return _slugify(Path(urlparse(url).path).stem)
+    return None
   files_index = parts.index("files")
   if files_index + 1 >= len(parts):
-    return "unknown"
+    return None
   return _slugify(parts[files_index + 1])
 
 
@@ -286,12 +293,16 @@ def _extract_dataset(row: ArchiveManifestRow) -> DatasetMetadataRow:
   )
 
 
-def _dataset_id_for_document(row: ArchiveManifestRow) -> str:
+def _stable_url_hash(url: str) -> str:
+  return hashlib.sha1(url.encode("utf-8")).hexdigest()[:10]
+
+
+def _dataset_id_for_document(row: ArchiveManifestRow) -> str | None:
   if row.resource_kind == "documentation_page":
-    return _dataset_id_from_url(row.url)
+    return _dataset_id_from_resdac_file_url(row.url)
   if row.source_url:
-    return _dataset_id_from_url(row.source_url)
-  return _dataset_id_from_url(row.url)
+    return _dataset_id_from_resdac_file_url(row.source_url)
+  return _dataset_id_from_resdac_file_url(row.url)
 
 
 def _document_kind(row: ArchiveManifestRow) -> str:
@@ -300,14 +311,15 @@ def _document_kind(row: ArchiveManifestRow) -> str:
   return row.asset_kind or "other"
 
 
-def _extract_document(row: ArchiveManifestRow) -> DocumentMetadataRow:
-  dataset_id = _dataset_id_for_document(row)
+def _extract_document(row: ArchiveManifestRow, dataset_id: str) -> DocumentMetadataRow:
   local_path = Path(row.local_path)
   if row.resource_kind == "documentation_page" and row.content_type == "text/html":
     title = _read_html_title(local_path)
   else:
     title = row.source_title
-  document_id = f"{dataset_id}__{_document_suffix_from_url(row.url)}"
+  document_id = (
+    f"{dataset_id}__{_document_suffix_from_url(row.url)}__{_stable_url_hash(row.url)}"
+  )
   return DocumentMetadataRow(
     document_id=document_id,
     dataset_id=dataset_id,
@@ -423,9 +435,36 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
     if row.resource_kind == "dataset_page":
       dataset = _extract_dataset(row)
       datasets_by_id[dataset.dataset_id] = dataset
-    elif row.resource_kind in {"documentation_page", "asset"}:
-      document = _extract_document(row)
-      documents_by_id[document.document_id] = document
+
+  for row in _eligible_rows(manifest_rows):
+    if row.resource_kind not in {"documentation_page", "asset"}:
+      continue
+    failure = _verify_archived_row(row)
+    if failure is not None:
+      continue
+    dataset_id = _dataset_id_for_document(row)
+    if dataset_id is None:
+      failures.append(
+        ExtractionFailure(
+          url=row.url,
+          resource_kind=row.resource_kind,
+          local_path=row.local_path,
+          reason="document source is not linked to a dataset page",
+        )
+      )
+      continue
+    if dataset_id not in datasets_by_id:
+      failures.append(
+        ExtractionFailure(
+          url=row.url,
+          resource_kind=row.resource_kind,
+          local_path=row.local_path,
+          reason="document references missing dataset",
+        )
+      )
+      continue
+    document = _extract_document(row, dataset_id)
+    documents_by_id[document.document_id] = document
 
   documents = list(documents_by_id.values())
   result = ExtractionResult(
