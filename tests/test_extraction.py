@@ -117,9 +117,10 @@ def test_run_extraction_writes_dataset_document_and_graph_outputs(
       "source_url": dataset_url,
       "local_path": str(dataset_path),
       "sha256": dataset_sha,
-      "extraction_notes": "program, category, and availability not normalized",
+      "extraction_notes": "",
     }
   ]
+
 
   with (tmp_path / "data" / "metadata" / "documents.csv").open(
     newline="", encoding="utf-8"
@@ -413,3 +414,100 @@ def test_extraction_main_returns_nonzero_when_failures_are_present(
   )
 
   assert exit_code == 1
+
+
+def test_run_extraction_normalizes_fields_and_emits_ontology(tmp_path: Path) -> None:
+  manifest_path = tmp_path / "manifests" / "archive_manifest.csv"
+  dataset_path = tmp_path / "data" / "raw" / "html" / "dataset.html"
+
+  dataset_body = (
+    b"<html><head><title>Part D Event File</title></head><body>"
+    b'<div class="views-field views-field-field-program-type">'
+    b'<span class="views-label">Program: </span>'
+    b'<div class="field-content"><a href="/cms-data?tid_1[1]=1">Medicare</a></div>'
+    b"</div>"
+    b'<div class="views-field views-field-field-data-file-category">'
+    b'<span class="views-label">Category: </span>'
+    b'<div class="field-content"><a href="/cms-data?tid[230611]=230611">Special Programs</a></div>'
+    b"</div>"
+    b'<div class="views-field views-field-field-availability">'
+    b'<span class="views-label">Availability: </span>'
+    b'<div class="field-content">2016-2025 Q1</div>'
+    b"</div>"
+    b'<a href="/cms-data/files/cmds-entity">Entity</a>'
+    b"</body></html>"
+  )
+
+  dataset_sha = _write_archive_file(dataset_path, dataset_body)
+  dataset_url = "https://resdac.org/cms-data/files/pde"
+
+  _write_manifest(
+    [
+      ArchiveManifestRow(
+        url=dataset_url,
+        resource_kind="dataset_page",
+        content_type="text/html",
+        http_status=200,
+        archive_state="archived",
+        downloaded_at_utc="2026-06-11T12:00:00Z",
+        sha256=dataset_sha,
+        local_path=str(dataset_path),
+      ),
+    ],
+    manifest_path,
+  )
+
+  result, _ = run_extraction(
+    ExtractionConfig(
+      archive_manifest_path=manifest_path,
+      metadata_dir=tmp_path / "data" / "metadata",
+      graph_dir=tmp_path / "data" / "graph",
+      workspace_dir=tmp_path / "_workspace",
+    )
+  )
+
+  assert result.dataset_count == 1
+  assert result.failures == []
+
+  # Verify datasets.csv output
+  with (tmp_path / "data" / "metadata" / "datasets.csv").open(
+    newline="", encoding="utf-8"
+  ) as handle:
+    datasets = list(csv.DictReader(handle))
+  assert datasets == [
+    {
+      "dataset_id": "pde",
+      "name": "Part D Event File",
+      "program": "Medicare",
+      "category": "Special Programs",
+      "availability": "2016-2025 Q1",
+      "source_url": dataset_url,
+      "local_path": str(dataset_path),
+      "sha256": dataset_sha,
+      "extraction_notes": "",
+    }
+  ]
+
+  # Verify ontology_nodes.csv output
+  with (tmp_path / "data" / "graph" / "ontology_nodes.csv").open(
+    newline="", encoding="utf-8"
+  ) as handle:
+    nodes = list(csv.DictReader(handle))
+
+  assert len(nodes) == 2
+  node_ids = {n["node_id"] for n in nodes}
+  assert node_ids == {"pde", "medicare"}
+
+  # Verify ontology_edges.csv output
+  with (tmp_path / "data" / "graph" / "ontology_edges.csv").open(
+    newline="", encoding="utf-8"
+  ) as handle:
+    edges = list(csv.DictReader(handle))
+
+  assert len(edges) == 2
+  edge_types = {(e["source_id"], e["target_id"], e["relationship"]) for e in edges}
+  assert edge_types == {
+    ("pde", "medicare", "belongs_to"),
+    ("pde", "cmds-entity", "related_to"),
+  }
+

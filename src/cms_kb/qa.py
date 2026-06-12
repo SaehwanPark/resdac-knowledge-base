@@ -16,6 +16,8 @@ from .extraction import (
   DatasetMetadataRow,
   DocumentEdgeRow,
   DocumentMetadataRow,
+  OntologyNodeRow,
+  OntologyEdgeRow,
   read_archive_manifest_csv,
 )
 
@@ -24,6 +26,8 @@ class QAConfig(BaseModel):
   datasets_metadata_path: Path = Path("data/metadata/datasets.csv")
   documents_metadata_path: Path = Path("data/metadata/documents.csv")
   document_edges_path: Path = Path("data/graph/document_edges.csv")
+  ontology_nodes_path: Path = Path("data/graph/ontology_nodes.csv")
+  ontology_edges_path: Path = Path("data/graph/ontology_edges.csv")
   archive_manifest_path: Path = Path("manifests/archive_manifest.csv")
   workspace_dir: Path = Path("_workspace")
 
@@ -114,6 +118,48 @@ def read_document_edges_csv(input_path: Path) -> list[DocumentEdgeRow]:
           source_id=raw_row["source_id"],
           target_id=raw_row["target_id"],
           relationship=raw_row.get("relationship", "has_document"),
+          source_url=raw_row["source_url"],
+          local_path=raw_row["local_path"],
+          sha256=raw_row["sha256"],
+        )
+      )
+  return rows
+
+
+def read_ontology_nodes_csv(input_path: Path) -> list[OntologyNodeRow]:
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      raise ValueError(f"ontology nodes CSV has no header: {input_path}")
+
+    rows: list[OntologyNodeRow] = []
+    for raw_row in reader:
+      rows.append(
+        OntologyNodeRow(
+          node_id=raw_row["node_id"],
+          node_class=raw_row["node_class"],
+          name=raw_row.get("name", ""),
+          source_url=raw_row["source_url"],
+          local_path=raw_row["local_path"],
+          sha256=raw_row["sha256"],
+        )
+      )
+  return rows
+
+
+def read_ontology_edges_csv(input_path: Path) -> list[OntologyEdgeRow]:
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      raise ValueError(f"ontology edges CSV has no header: {input_path}")
+
+    rows: list[OntologyEdgeRow] = []
+    for raw_row in reader:
+      rows.append(
+        OntologyEdgeRow(
+          source_id=raw_row["source_id"],
+          target_id=raw_row["target_id"],
+          relationship=raw_row["relationship"],
           source_url=raw_row["source_url"],
           local_path=raw_row["local_path"],
           sha256=raw_row["sha256"],
@@ -234,6 +280,38 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
     summary_path = write_qa_workspace_summary(result)
     return result, summary_path
 
+  # Load ontology nodes and edges if present
+  ontology_nodes: list[OntologyNodeRow] = []
+  ontology_edges: list[OntologyEdgeRow] = []
+
+  if config.ontology_nodes_path.is_file():
+    try:
+      ontology_nodes = read_ontology_nodes_csv(config.ontology_nodes_path)
+    except Exception as exc:
+      findings.append(
+        QAFinding(
+          file=str(config.ontology_nodes_path),
+          item_id="header/parse",
+          field="csv_parsing",
+          severity="error",
+          message=f"Failed to read ontology nodes: {exc}",
+        )
+      )
+
+  if config.ontology_edges_path.is_file():
+    try:
+      ontology_edges = read_ontology_edges_csv(config.ontology_edges_path)
+    except Exception as exc:
+      findings.append(
+        QAFinding(
+          file=str(config.ontology_edges_path),
+          item_id="header/parse",
+          field="csv_parsing",
+          severity="error",
+          message=f"Failed to read ontology edges: {exc}",
+        )
+      )
+
   if not datasets:
     findings.append(
       QAFinding(
@@ -283,9 +361,11 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
   # Index datasets by ID for reference integrity checks
   dataset_ids = {d.dataset_id for d in datasets}
   document_ids = {doc.document_id for doc in documents}
+  ontology_node_ids = {node.node_id for node in ontology_nodes}
 
   seen_dataset_ids: set[str] = set()
   seen_document_ids: set[str] = set()
+  seen_ontology_node_ids: set[str] = set()
 
   # 3. Perform detailed checks on Datasets
   for d in datasets:
@@ -714,6 +794,152 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
             )
           )
 
+  # 5b. Perform detailed checks on Ontology Nodes and Edges
+  for node in ontology_nodes:
+    node_id = node.node_id
+    if not node_id or not node_id.strip():
+      findings.append(
+        QAFinding(
+          file="ontology_nodes.csv",
+          item_id="N/A",
+          field="node_id",
+          severity="error",
+          message="Ontology node row has empty node_id",
+        )
+      )
+      continue
+
+    if node_id in seen_ontology_node_ids:
+      findings.append(
+        QAFinding(
+          file="ontology_nodes.csv",
+          item_id=node_id,
+          field="node_id",
+          severity="error",
+          message=f"Duplicate ontology node_id encountered: {node_id}",
+        )
+      )
+    seen_ontology_node_ids.add(node_id)
+
+    if node.node_class not in {"Dataset", "Table", "Variable", "Program"}:
+      findings.append(
+        QAFinding(
+          file="ontology_nodes.csv",
+          item_id=node_id,
+          field="node_class",
+          severity="error",
+          message=f"Invalid node_class '{node.node_class}' for node {node_id}",
+        )
+      )
+
+    # Check URL
+    if not is_valid_url(node.source_url):
+      findings.append(
+        QAFinding(
+          file="ontology_nodes.csv",
+          item_id=node_id,
+          field="source_url",
+          severity="error",
+          message=f"Invalid source_url: {node.source_url}",
+        )
+      )
+    else:
+      if node.source_url not in manifest_lookup:
+        findings.append(
+          QAFinding(
+            file="ontology_nodes.csv",
+            item_id=node_id,
+            field="source_url",
+            severity="error",
+            message=f"source_url not found in archive manifest: {node.source_url}",
+          )
+        )
+
+    # Check local path existence and checksum
+    local_path_str = node.local_path.strip()
+    if not local_path_str:
+      findings.append(
+        QAFinding(
+          file="ontology_nodes.csv",
+          item_id=node_id,
+          field="local_path",
+          severity="error",
+          message="Empty local_path for ontology node",
+        )
+      )
+    else:
+      local_path = Path(local_path_str)
+      if not local_path.is_file():
+        findings.append(
+          QAFinding(
+            file="ontology_nodes.csv",
+            item_id=node_id,
+            field="local_path",
+            severity="error",
+            message=f"Local file does not exist: {local_path_str}",
+          )
+        )
+      else:
+        try:
+          actual_sha = compute_sha256(local_path)
+          if actual_sha != node.sha256:
+            findings.append(
+              QAFinding(
+                file="ontology_nodes.csv",
+                item_id=node_id,
+                field="sha256",
+                severity="error",
+                message=f"Checksum mismatch. Metadata: {node.sha256}, Actual: {actual_sha}",
+              )
+            )
+        except Exception as exc:
+          findings.append(
+            QAFinding(
+              file="ontology_nodes.csv",
+              item_id=node_id,
+              field="sha256",
+              severity="error",
+              message=f"Error computing checksum: {exc}",
+            )
+          )
+
+  valid_target_ids = dataset_ids | document_ids | ontology_node_ids
+  for edge_idx, edge in enumerate(ontology_edges):
+    edge_label = f"Line {edge_idx + 2}"
+
+    if edge.source_id not in valid_target_ids:
+      findings.append(
+        QAFinding(
+          file="ontology_edges.csv",
+          item_id=edge_label,
+          field="source_id",
+          severity="error",
+          message=f"source_id '{edge.source_id}' does not map to any dataset, document, or ontology node",
+        )
+      )
+
+    if edge.target_id not in valid_target_ids:
+      findings.append(
+        QAFinding(
+          file="ontology_edges.csv",
+          item_id=edge_label,
+          field="target_id",
+          severity="warning",
+          message=f"target_id '{edge.target_id}' does not map to any dataset, document, or ontology node",
+        )
+      )
+
+    if edge.source_url and not is_valid_url(edge.source_url):
+      findings.append(
+        QAFinding(
+          file="ontology_edges.csv",
+          item_id=edge_label,
+          field="source_url",
+          severity="error",
+          message=f"Invalid source_url: {edge.source_url}",
+        )
+      )
+
   # 6. Verdict Assignment
   # pass = no errors and no warnings (or only warnings)
   # fix = has errors, but they are bounded/fixable (e.g. checksum mismatches or missing local files)
@@ -732,6 +958,9 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
       "document_id",
       "dataset_count",
       "document_count",
+      "node_class",
+      "node_id",
+      "source_id",
     }
     has_major_error = any(f.field in major_error_types for f in errors)
 
@@ -752,7 +981,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
     findings=findings,
     datasets_checked=datasets_checked,
     documents_checked=documents_checked,
-    edges_checked=edges_checked,
+    edges_checked=edges_checked + len(ontology_edges),
   )
 
   summary_path = write_qa_workspace_summary(result)
@@ -816,6 +1045,16 @@ def build_arg_parser() -> argparse.ArgumentParser:
     default=Path("data/graph/document_edges.csv"),
   )
   parser.add_argument(
+    "--ontology-nodes",
+    type=Path,
+    default=Path("data/graph/ontology_nodes.csv"),
+  )
+  parser.add_argument(
+    "--ontology-edges",
+    type=Path,
+    default=Path("data/graph/ontology_edges.csv"),
+  )
+  parser.add_argument(
     "--archive-manifest",
     type=Path,
     default=Path("manifests/archive_manifest.csv"),
@@ -831,6 +1070,8 @@ def main(argv: list[str] | None = None) -> int:
     datasets_metadata_path=args.datasets_metadata,
     documents_metadata_path=args.documents_metadata,
     document_edges_path=args.document_edges,
+    ontology_nodes_path=args.ontology_nodes,
+    ontology_edges_path=args.ontology_edges,
     archive_manifest_path=args.archive_manifest,
     workspace_dir=args.workspace_dir,
   )

@@ -613,3 +613,82 @@ def test_run_qa_corrupted_edges(tmp_path: Path) -> None:
   assert result.error_count == 1
   assert result.findings[0].field == "csv_parsing"
 
+
+def test_run_qa_validates_ontology_nodes_and_edges(tmp_path: Path) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  graph_dir = tmp_path / "data" / "graph"
+  metadata_dir.mkdir(parents=True, exist_ok=True)
+  manifest_dir.mkdir(parents=True, exist_ok=True)
+  raw_dir.mkdir(parents=True, exist_ok=True)
+  graph_dir.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  write_archive_manifest([
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=ds_sha,
+      local_path=str(ds_html),
+    )
+  ], manifest_path)
+
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["dataset_id", "name", "program", "category", "availability", "source_url", "local_path", "sha256", "extraction_notes"])
+    writer.writerow(["ds-1", "Dataset 1", "Medicare", "Claims", "Available", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, ""])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["document_id", "dataset_id", "title", "document_kind", "source_url", "local_path", "sha256", "content_type", "extraction_notes"])
+    writer.writerow(["doc-1", "ds-1", "Doc 1", "html", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, "text/html", ""])
+
+  edges_csv = graph_dir / "document_edges.csv"
+  with edges_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["source_id", "target_id", "relationship", "source_url", "local_path", "sha256"])
+    writer.writerow(["ds-1", "doc-1", "has_document", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha])
+
+  # Write invalid ontology nodes
+  nodes_csv = graph_dir / "ontology_nodes.csv"
+  with nodes_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["node_id", "node_class", "name", "source_url", "local_path", "sha256"])
+    # Invalid node class "BadClass"
+    writer.writerow(["ds-1", "BadClass", "Dataset 1", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha])
+
+  # Write invalid ontology edges
+  ontology_edges_csv = graph_dir / "ontology_edges.csv"
+  with ontology_edges_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["source_id", "target_id", "relationship", "source_url", "local_path", "sha256"])
+    # Invalid source_id "unknown-id"
+    writer.writerow(["unknown-id", "ds-1", "belongs_to", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha])
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    document_edges_path=edges_csv,
+    ontology_nodes_path=nodes_csv,
+    ontology_edges_path=ontology_edges_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, _ = run_qa(config)
+  assert result.verdict == "redo"
+  assert result.error_count == 2
+
+  error_fields = {f.field for f in result.findings if f.severity == "error"}
+  assert "node_class" in error_fields
+  assert "source_id" in error_fields
+
+

@@ -11,3 +11,4 @@
 - Phase 2 metadata extraction CLI with checksum validation, dataset/document metadata CSV outputs, graph seed edges, and `_workspace/04_extraction_pack.md` handoff summary.
 - Phase 3 document parsing CLI with HTML/PDF text extraction, chunking, and `_workspace/05_parsing_pack.md` handoff summary.
 - Phase 4 QA Specialist CLI with checksum verification, URL mapping auditing, reference integrity checks, and `_workspace/06_qa_review.md` handoff summary.
+- Phase 5 CMS Research Ontology with field normalization (program, category, availability) and graph nodes/edges seed extraction (belongs_to, related_to) plus QA auditing integration.

@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+from html.parser import HTMLParser
 import re
 from pathlib import Path
 from typing import Literal, Sequence
@@ -13,7 +14,7 @@ from urllib.parse import urlparse
 from pydantic import BaseModel, Field
 
 from .archive import ARCHIVE_MANIFEST_FIELDNAMES, ArchiveManifestRow
-from .inventory import ResourceKind, parse_page
+from .inventory import ResourceKind, normalize_url, parse_page
 
 DatasetFieldnames = Literal[
   "dataset_id",
@@ -45,6 +46,22 @@ DocumentEdgeFieldnames = Literal[
   "local_path",
   "sha256",
 ]
+OntologyNodeFieldnames = Literal[
+  "node_id",
+  "node_class",
+  "name",
+  "source_url",
+  "local_path",
+  "sha256",
+]
+OntologyEdgeFieldnames = Literal[
+  "source_id",
+  "target_id",
+  "relationship",
+  "source_url",
+  "local_path",
+  "sha256",
+]
 
 DATASET_FIELDNAMES: list[DatasetFieldnames] = [
   "dataset_id",
@@ -69,6 +86,22 @@ DOCUMENT_FIELDNAMES: list[DocumentFieldnames] = [
   "extraction_notes",
 ]
 DOCUMENT_EDGE_FIELDNAMES: list[DocumentEdgeFieldnames] = [
+  "source_id",
+  "target_id",
+  "relationship",
+  "source_url",
+  "local_path",
+  "sha256",
+]
+ONTOLOGY_NODE_FIELDNAMES: list[OntologyNodeFieldnames] = [
+  "node_id",
+  "node_class",
+  "name",
+  "source_url",
+  "local_path",
+  "sha256",
+]
+ONTOLOGY_EDGE_FIELDNAMES: list[OntologyEdgeFieldnames] = [
   "source_id",
   "target_id",
   "relationship",
@@ -124,6 +157,24 @@ class DocumentEdgeRow(BaseModel):
   sha256: str
 
 
+class OntologyNodeRow(BaseModel):
+  node_id: str
+  node_class: str  # "Dataset", "Table", "Variable", "Program"
+  name: str
+  source_url: str
+  local_path: str
+  sha256: str
+
+
+class OntologyEdgeRow(BaseModel):
+  source_id: str
+  target_id: str
+  relationship: str
+  source_url: str
+  local_path: str
+  sha256: str
+
+
 class ExtractionFailure(BaseModel):
   url: str
   resource_kind: ResourceKind
@@ -137,6 +188,8 @@ class ExtractionResult(BaseModel):
   datasets: list[DatasetMetadataRow] = Field(default_factory=list)
   documents: list[DocumentMetadataRow] = Field(default_factory=list)
   document_edges: list[DocumentEdgeRow] = Field(default_factory=list)
+  ontology_nodes: list[OntologyNodeRow] = Field(default_factory=list)
+  ontology_edges: list[OntologyEdgeRow] = Field(default_factory=list)
   failures: list[ExtractionFailure] = Field(default_factory=list)
 
   @property
@@ -150,6 +203,14 @@ class ExtractionResult(BaseModel):
   @property
   def edge_count(self) -> int:
     return len(self.document_edges)
+
+  @property
+  def ontology_node_count(self) -> int:
+    return len(self.ontology_nodes)
+
+  @property
+  def ontology_edge_count(self) -> int:
+    return len(self.ontology_edges)
 
   @property
   def failure_count(self) -> int:
@@ -280,17 +341,185 @@ def _eligible_rows(rows: list[ArchiveManifestRow]) -> list[ArchiveManifestRow]:
   ]
 
 
-def _extract_dataset(row: ArchiveManifestRow) -> DatasetMetadataRow:
+class DatasetPageParser(HTMLParser):
+  def __init__(self) -> None:
+    super().__init__()
+    self.title_parts: list[str] = []
+    self.h1_parts: list[str] = []
+    self.program = ""
+    self.category = ""
+    self.availability = ""
+    self.links: list[str] = []
+
+    self._in_title = False
+    self._in_h1 = False
+
+    self._div_stack: list[str] = []
+    self._field_content_div_index: int | None = None
+    self._current_field: str | None = None
+    self._field_content_parts: list[str] = []
+
+  def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+    attributes = dict(attrs)
+    class_attr = attributes.get("class") or ""
+    classes = class_attr.split()
+
+    if tag == "title":
+      self._in_title = True
+    elif tag == "h1" and not self.h1_parts:
+      self._in_h1 = True
+    elif tag == "a":
+      href = attributes.get("href")
+      if href:
+        self.links.append(href)
+
+    if tag == "div":
+      self._div_stack.append(class_attr)
+
+      if "views-field-field-program-type" in classes:
+        self._current_field = "program"
+      elif "views-field-field-data-file-category" in classes:
+        self._current_field = "category"
+      elif "views-field-field-availability" in classes:
+        self._current_field = "availability"
+
+      if self._current_field is not None and "field-content" in classes:
+        self._field_content_div_index = len(self._div_stack) - 1
+        self._field_content_parts = []
+
+  def handle_data(self, data: str) -> None:
+    if self._in_title:
+      self.title_parts.append(data)
+    if self._in_h1:
+      self.h1_parts.append(data)
+    if self._field_content_div_index is not None:
+      self._field_content_parts.append(data)
+
+  def handle_endtag(self, tag: str) -> None:
+    if tag == "title":
+      self._in_title = False
+    elif tag == "h1":
+      self._in_h1 = False
+    elif tag == "div":
+      if self._div_stack:
+        self._div_stack.pop()
+      if self._field_content_div_index is not None:
+        if len(self._div_stack) <= self._field_content_div_index:
+          val = re.sub(r"\s+", " ", "".join(self._field_content_parts)).strip()
+          if self._current_field == "program":
+            self.program = val
+          elif self._current_field == "category":
+            self.category = val
+          elif self._current_field == "availability":
+            self.availability = val
+
+          self._field_content_div_index = None
+          self._current_field = None
+
+
+def _extract_dataset(
+  row: ArchiveManifestRow,
+) -> tuple[DatasetMetadataRow, list[OntologyNodeRow], list[OntologyEdgeRow]]:
+  dataset_id = _dataset_id_from_url(row.url)
   local_path = Path(row.local_path)
-  title = _read_html_title(local_path) if row.content_type == "text/html" else ""
-  return DatasetMetadataRow(
-    dataset_id=_dataset_id_from_url(row.url),
-    name=title or row.source_title,
+
+  if row.content_type == "text/html":
+    html = local_path.read_text(encoding="utf-8", errors="replace")
+    parser = DatasetPageParser()
+    parser.feed(html)
+
+    title = "".join(parser.title_parts).strip()
+    if not title:
+      title = "".join(parser.h1_parts).strip()
+    title = re.sub(r"\s+", " ", title)
+    if title.endswith(" | ResDAC"):
+      title = title[:-9]
+
+    name = title or row.source_title
+    program = parser.program
+    category = parser.category
+    availability = parser.availability
+    links = parser.links
+  else:
+    name = row.source_title
+    program = ""
+    category = ""
+    availability = ""
+    links = []
+
+  dataset = DatasetMetadataRow(
+    dataset_id=dataset_id,
+    name=name,
+    program=program,
+    category=category,
+    availability=availability,
     source_url=row.url,
     local_path=row.local_path,
     sha256=row.sha256,
-    extraction_notes="program, category, and availability not normalized",
+    extraction_notes="",
   )
+
+  nodes = [
+    OntologyNodeRow(
+      node_id=dataset_id,
+      node_class="Dataset",
+      name=name,
+      source_url=row.url,
+      local_path=row.local_path,
+      sha256=row.sha256,
+    )
+  ]
+  edges = []
+
+  if program:
+    program_id = _slugify(program)
+    nodes.append(
+      OntologyNodeRow(
+        node_id=program_id,
+        node_class="Program",
+        name=program,
+        source_url=row.url,
+        local_path=row.local_path,
+        sha256=row.sha256,
+      )
+    )
+    edges.append(
+      OntologyEdgeRow(
+        source_id=dataset_id,
+        target_id=program_id,
+        relationship="belongs_to",
+        source_url=row.url,
+        local_path=row.local_path,
+        sha256=row.sha256,
+      )
+    )
+
+  seen_related: set[str] = set()
+  for href in links:
+    try:
+      target_url = normalize_url(row.url, href)
+      parts = urlparse(target_url)
+      path_parts = [p for p in parts.path.split("/") if p]
+      if "files" in path_parts:
+        files_idx = path_parts.index("files")
+        if files_idx + 1 < len(path_parts):
+          target_id = _slugify(path_parts[files_idx + 1])
+          if target_id != dataset_id and target_id not in seen_related:
+            seen_related.add(target_id)
+            edges.append(
+              OntologyEdgeRow(
+                source_id=dataset_id,
+                target_id=target_id,
+                relationship="related_to",
+                source_url=row.url,
+                local_path=row.local_path,
+                sha256=row.sha256,
+              )
+            )
+    except Exception:
+      pass
+
+  return dataset, nodes, edges
 
 
 def _stable_url_hash(url: str) -> str:
@@ -369,6 +598,16 @@ def write_metadata_outputs(result: ExtractionResult) -> None:
     result.config.graph_dir / "document_edges.csv",
     DOCUMENT_EDGE_FIELDNAMES,
   )
+  _write_model_csv(
+    result.ontology_nodes,
+    result.config.graph_dir / "ontology_nodes.csv",
+    ONTOLOGY_NODE_FIELDNAMES,
+  )
+  _write_model_csv(
+    result.ontology_edges,
+    result.config.graph_dir / "ontology_edges.csv",
+    ONTOLOGY_EDGE_FIELDNAMES,
+  )
 
 
 def write_extraction_workspace_summary(result: ExtractionResult) -> Path:
@@ -382,6 +621,8 @@ def write_extraction_workspace_summary(result: ExtractionResult) -> Path:
     f"- Datasets: {result.dataset_count}",
     f"- Documents: {result.document_count}",
     f"- Document edges: {result.edge_count}",
+    f"- Ontology nodes: {result.ontology_node_count}",
+    f"- Ontology edges: {result.ontology_edge_count}",
     f"- Failures: {result.failure_count}",
     "",
     "## Outputs",
@@ -389,6 +630,8 @@ def write_extraction_workspace_summary(result: ExtractionResult) -> Path:
     f"- Dataset metadata: {result.config.metadata_dir / 'datasets.csv'}",
     f"- Document metadata: {result.config.metadata_dir / 'documents.csv'}",
     f"- Document graph edges: {result.config.graph_dir / 'document_edges.csv'}",
+    f"- Ontology graph nodes: {result.config.graph_dir / 'ontology_nodes.csv'}",
+    f"- Ontology graph edges: {result.config.graph_dir / 'ontology_edges.csv'}",
     "",
     "## Unresolved Normalization",
     "",
@@ -424,6 +667,8 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
   manifest_rows = read_archive_manifest_csv(config.archive_manifest_path)
   datasets_by_id: dict[str, DatasetMetadataRow] = {}
   documents_by_id: dict[str, DocumentMetadataRow] = {}
+  ontology_nodes: list[OntologyNodeRow] = []
+  ontology_edges: list[OntologyEdgeRow] = []
   failures: list[ExtractionFailure] = []
 
   for row in _eligible_rows(manifest_rows):
@@ -433,8 +678,10 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
       continue
 
     if row.resource_kind == "dataset_page":
-      dataset = _extract_dataset(row)
+      dataset, nodes, edges = _extract_dataset(row)
       datasets_by_id[dataset.dataset_id] = dataset
+      ontology_nodes.extend(nodes)
+      ontology_edges.extend(edges)
 
   for row in _eligible_rows(manifest_rows):
     if row.resource_kind not in {"documentation_page", "asset"}:
@@ -466,6 +713,11 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
     document = _extract_document(row, dataset_id)
     documents_by_id[document.document_id] = document
 
+  # Deduplicate ontology nodes by node_id
+  unique_nodes: dict[str, OntologyNodeRow] = {}
+  for node in ontology_nodes:
+    unique_nodes[node.node_id] = node
+
   documents = list(documents_by_id.values())
   result = ExtractionResult(
     config=config,
@@ -473,6 +725,8 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
     datasets=sorted(datasets_by_id.values(), key=lambda row: row.dataset_id),
     documents=documents,
     document_edges=[_edge_for_document(row) for row in documents],
+    ontology_nodes=sorted(unique_nodes.values(), key=lambda node: node.node_id),
+    ontology_edges=ontology_edges,
     failures=failures,
   )
   write_metadata_outputs(result)
@@ -517,9 +771,13 @@ __all__ = [
   "DATASET_FIELDNAMES",
   "DOCUMENT_EDGE_FIELDNAMES",
   "DOCUMENT_FIELDNAMES",
+  "ONTOLOGY_NODE_FIELDNAMES",
+  "ONTOLOGY_EDGE_FIELDNAMES",
   "DatasetMetadataRow",
   "DocumentEdgeRow",
   "DocumentMetadataRow",
+  "OntologyNodeRow",
+  "OntologyEdgeRow",
   "ExtractionConfig",
   "ExtractionFailure",
   "ExtractionResult",
