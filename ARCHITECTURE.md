@@ -7,7 +7,10 @@ Last Reviewed: 2026-06-12
 Status: Verified
 
 ## Main Surfaces
-- `README.md`: project motivation, scope, and the intended multi-phase system.
+- `README.md`: first-visitor overview, quick start, and documentation map.
+- `docs/pipeline.md`: phase commands, generated outputs, and QA workflow.
+- `docs/data-model.md`: dataset, document, variable, graph, and provenance records.
+- `docs/source-coverage.md`: current ResDAC source scope and future source families.
 - `SPEC.md`: operational feature-state record with mutually exclusive Past, Present, and Future sections.
 - `ROADMAP.md`: strategic phase history and future direction for archive, extraction, parsing, graph, retrieval, and evaluation work.
 - `docs/harness/cms-kb/team-spec.md`: repo-local orchestration contract for archive, extraction, and QA handoffs.

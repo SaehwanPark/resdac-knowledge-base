@@ -1,429 +1,127 @@
 # CMS Documentation Knowledge Base
 
-A reproducible archive, metadata catalog, and retrieval system for CMS (Medicare and Medicaid) data documentation.
+A local, reproducible knowledge base for public CMS and ResDAC documentation.
+It preserves source documents first, then turns them into metadata, graph seeds,
+parsed text, and searchable retrieval results with citations.
 
-## Motivation
+## Who This Is For
 
-CMS health policy research depends heavily on documentation distributed across ResDAC, CMS technical documentation, data dictionaries, user guides, and related resources.
+This repository is intended for people who need to understand CMS data before
+using it in research, policy, engineering, or AI-assisted workflows:
 
-These materials contain critical information regarding:
+- Health policy researchers comparing Medicare and Medicaid data sources.
+- Scientists and analysts looking for variables, years, caveats, and data
+  linkage guidance.
+- Engineers building reproducible documentation pipelines, search tools, or
+  agent-facing data discovery systems.
+- AI agents that need grounded, citation-backed access to CMS documentation.
 
-* Dataset availability
-* Variable definitions
-* Data linkage strategies
-* Population coverage
-* File relationships
-* Known limitations and caveats
-* Year-specific changes
+## Why It Exists
 
-As documentation sources evolve or become unavailable, research reproducibility and AI-assisted workflows become increasingly vulnerable.
+CMS research depends on documentation spread across ResDAC pages, CMS technical
+documentation, data dictionaries, user guides, spreadsheets, and PDFs. Those
+materials describe dataset availability, variable definitions, population
+coverage, file relationships, linkage strategies, limitations, and year-specific
+changes.
 
-This project aims to create a durable, locally maintained knowledge base that preserves documentation and transforms it into a structured, searchable resource suitable for both human researchers and AI agents.
+When source documentation changes or disappears, reproducibility suffers. This
+project keeps an offline archive and derives structured, traceable records from
+that archive so researchers and tools can answer questions with provenance.
 
-## Objectives
+## What You Can Do
 
-### Preservation
+- Inventory public ResDAC CMS data pages and linked documentation.
+- Archive source HTML, PDFs, spreadsheets, images, and attachments locally.
+- Extract dataset, document, ontology, and variable metadata.
+- Parse documentation into provenance-bearing text chunks.
+- Search locally across datasets, documents, variables, and parsed chunks.
+- Run QA checks over checksums, source URLs, local paths, and references.
 
-Create a complete offline archive of publicly accessible CMS documentation resources.
+Example questions the knowledge base is meant to support:
 
-### Knowledge Extraction
+- Which files contain Medicare Advantage encounter information?
+- Which datasets contain beneficiary enrollment information?
+- Where is `BENE_ID` documented?
+- What source document supports a dataset or variable record?
 
-Transform unstructured documentation into structured metadata.
+## Current Status
 
-### Retrieval
+The implemented pipeline currently covers inventory, archive preservation,
+metadata extraction, document parsing, QA, ontology seed extraction,
+variable-level extraction, and deterministic lexical retrieval.
 
-Enable accurate retrieval of datasets, variables, concepts, and methodological guidance.
+`SPEC.md` is the operational source of truth for what is complete, active, and
+planned. `ROADMAP.md` describes the broader strategic direction.
 
-### Agent Support
-
-Provide AI agents with grounded, citation-backed access to CMS data knowledge.
-
-## Project Scope
-
-### Phase 1: Documentation Preservation
-
-Archive:
-
-* HTML pages
-* PDFs
-* XLSX files
-* CSV files
-* Images and attachments
-
-Primary initial target:
-
-* ResDAC CMS Data pages
-
-Potential future sources:
-
-* CMS documentation
-* CCW documentation
-* TAF technical specifications
-* VRDC resources
-* Medicare Advantage encounter documentation
-* Medicaid technical documentation
-
-### Phase 2: Metadata Catalog
-
-Extract structured information including:
-
-* Dataset names
-* Program affiliations
-* Data availability
-* Documentation links
-* Special considerations
-* Related files
-
-### Phase 3: Knowledge Graph
-
-Represent relationships among:
-
-* Datasets
-* Tables
-* Variables
-* Programs
-* Concepts
-* Documentation resources
-
-Example:
-
-Dataset -> contains -> Variable
-
-Dataset -> belongs_to -> Program
-
-Dataset -> related_to -> Dataset
-
-Variable -> appears_in -> Dataset
-
-### Phase 4: Retrieval Layer
-
-Support:
-
-* Exact matching
-* Keyword retrieval
-* Semantic retrieval
-* Graph-based traversal
-
-### Phase 5: AI Agent Integration
-
-Provide APIs enabling agents to answer questions such as:
-
-* Which files contain Medicare Advantage encounters?
-* How can dual eligibility be identified?
-* Which datasets contain beneficiary enrollment information?
-* What are the limitations of TAF OT data?
-
-All responses should include source citations.
-
-## Architecture
-
-```text
-                   +------------------+
-                   | Source Websites  |
-                   +------------------+
-                             |
-                             v
-                   +------------------+
-                   |     Archiver     |
-                   +------------------+
-                             |
-                             v
-                   +------------------+
-                   |  Raw Documents   |
-                   +------------------+
-                             |
-                             v
-                   +------------------+
-                   | Metadata Parser  |
-                   +------------------+
-                             |
-                             v
-                   +------------------+
-                   | Knowledge Store  |
-                   +------------------+
-                             |
-                 +-----------+-----------+
-                 |                       |
-                 v                       v
-        +----------------+     +----------------+
-        | Search Indexes |     | Knowledge Graph|
-        +----------------+     +----------------+
-                 |                       |
-                 +-----------+-----------+
-                             |
-                             v
-                   +------------------+
-                   | Retrieval API    |
-                   +------------------+
-                             |
-                             v
-                   +------------------+
-                   | AI Agents        |
-                   +------------------+
-```
-
-## Repository Structure
-
-```text
-resdac-knowledge-base/
-
-├── data/
-│   ├── raw/
-│   ├── parsed/
-│   ├── metadata/
-│   └── graph/
-│
-├── manifests/
-│
-├── src/
-│   └── cms_kb/
-│
-├── tests/
-│
-├── docs/
-│   └── harness/cms-kb/
-│
-└── .agents/skills/
-```
-
-## Development
+## Quick Start
 
 Use `uv` for dependency management and command execution.
 
 ```bash
 uv sync
 uv run pytest
-uv run ruff check .
-uv run basedpyright .
-uv run python scripts/validate_harness.py
 ```
 
-Run the Phase 0 inventory crawl against ResDAC:
-
-```bash
-uv run cms-kb --max-listing-pages 10 --request-delay-seconds 1.0
-```
-
-`--max-pages`/`--max-listing-pages` limits ResDAC listing pages only. Use a
-ceiling higher than the currently known listing count; the crawler stops when a
-later listing page repeats or contains no discovered links. The crawler also
-follows discovered dataset/documentation pages and probes linked assets. For a
-bounded smoke test, add explicit follow-up limits:
+Run a bounded inventory smoke test:
 
 ```bash
 uv run cms-kb --max-listing-pages 1 --max-follow-pages 10 --max-assets 10 --request-delay-seconds 0.5
 ```
 
-Outputs:
-
-- `manifests/site_inventory.csv`
-- `_workspace/02_source_inventory.md`
-
-If `_workspace/02_source_inventory.md` reports transient unresolved links,
-rerun with a larger `--request-delay-seconds` before starting the archive pass.
-
-Run the Phase 1 archive pass against the inventory output:
-
-```bash
-uv run cms-kb-archive --request-delay-seconds 0.5
-```
-
-Outputs:
-
-- `data/raw/html/...`
-- `data/raw/assets/...`
-- `manifests/archive_manifest.csv`
-- `_workspace/03_archive_manifest.md`
-
-Run the Phase 2 metadata extraction pass against the archive manifest:
-
-```bash
-uv run cms-kb-extract
-```
-
-Outputs:
-
-- `data/metadata/datasets.csv`
-- `data/metadata/documents.csv`
-- `data/graph/document_edges.csv`
-- `data/graph/ontology_nodes.csv`
-- `data/graph/ontology_edges.csv`
-- `_workspace/04_extraction_pack.md`
-
-Run the Phase 3 parsing pass against extracted metadata:
-
-```bash
-uv run cms-kb-parse
-```
-
-Outputs:
-
-- `data/parsed/html/...`
-- `data/parsed/pdf/...`
-- `data/parsed/chunks/...`
-- `data/parsed/chunks.jsonl`
-- `_workspace/05_parsing_pack.md`
-
-Run the Phase 6 variable metadata pass against parsed chunks:
-
-```bash
-uv run cms-kb-variables
-```
-
-Outputs:
-
-- `data/metadata/variables.csv`
-- `data/graph/variable_edges.csv`
-- `_workspace/07_variable_pack.md`
-
-Run the retrieval MVP against metadata and parsed chunks:
+Run local retrieval after metadata and parsed chunks exist:
 
 ```bash
 uv run cms-kb-search --query BENE_ID --limit 5 --json
 ```
 
-The retrieval layer performs local lexical search over datasets, documents,
-variables, and chunks. Results include stable IDs, snippets, scores, and
-source citations.
+For the full phase-by-phase command list, see `docs/pipeline.md`.
 
-Run the QA Specialist after extraction, parsing, or variable updates:
+## Documentation Map
 
-```bash
-uv run cms-kb-qa
+- `docs/pipeline.md`: phase commands, generated outputs, and QA workflow.
+- `docs/data-model.md`: dataset, document, variable, graph, and provenance
+  records.
+- `docs/source-coverage.md`: current ResDAC source scope and future source
+  families.
+- `SPEC.md`: operational feature-state record for past, present, and future
+  work.
+- `ARCHITECTURE.md`: repository surfaces, data flow, constraints, and current
+  implementation state.
+- `ROADMAP.md`: strategic layering and future direction.
+- `docs/harness/cms-kb/team-spec.md`: agent handoff contract for archive,
+  extraction, parsing, and QA workflows.
+- `LESSONS.md`: recurring setup traps, debugging lessons, and workflow gotchas.
+
+## Repository Structure
+
+```text
+resdac-knowledge-base/
+
+├── data/       # Raw archives, parsed text, metadata, and graph artifacts
+├── manifests/  # Inventory and archive provenance manifests
+├── src/        # Python implementation for pipeline and retrieval CLIs
+├── tests/      # Archive, extraction, parsing, retrieval, and QA tests
+├── docs/       # Human and agent documentation
+└── .agents/    # Repo-local agent skills
 ```
-
-Output:
-
-- `_workspace/06_qa_review.md`
-
-## Core Data Model
-
-### Dataset
-
-```json
-{
-  "dataset_id": "...",
-  "name": "...",
-  "program": "...",
-  "description": "...",
-  "availability": "...",
-  "source_url": "..."
-}
-```
-
-### Variable
-
-```json
-{
-  "variable_id": "...",
-  "variable_name": "...",
-  "dataset_id": "...",
-  "definition": "...",
-  "aliases": "...",
-  "years": "...",
-  "source_document": "...",
-  "source_url": "...",
-  "chunk_id": "..."
-}
-```
-
-### Document
-
-```json
-{
-  "document_id": "...",
-  "title": "...",
-  "url": "...",
-  "content_type": "...",
-  "local_path": "..."
-}
-```
-
-## Development Roadmap
-
-`SPEC.md` is the operational source of truth for whether work is Past,
-Present, or Future. The milestones below summarize the strategic direction and
-may include both completed and planned layers.
-
-### Milestone 1
-
-Documentation inventory and archival pipeline.
-
-### Milestone 2
-
-Structured metadata extraction.
-
-### Milestone 3
-
-Document parsing and chunk generation.
-
-### Milestone 4
-
-Knowledge graph construction.
-
-### Milestone 5
-
-Retrieval system, starting with deterministic lexical search and preserving
-future room for hybrid or semantic retrieval.
-
-### Milestone 6
-
-Agent-facing APIs.
-
-### Milestone 7
-
-Benchmark evaluation suite.
 
 ## Guiding Principles
 
-### Preserve First
+- Preserve first: never discard source documents.
+- Provenance everywhere: every extracted fact should trace back to a source.
+- Structure over embeddings: prefer explicit metadata and relationships where
+  possible.
+- Reproducibility: artifacts should be rebuildable from source inputs.
+- Agent-friendly design: expose stable, structured interfaces with citations.
 
-Never discard source documents.
+## Safety And Non-Goals
 
-### Provenance Everywhere
+This project manages public documentation, metadata, knowledge representations,
+and retrieval infrastructure only.
 
-Every extracted fact must retain a traceable source.
+It does not:
 
-### Structure Over Embeddings
-
-Prefer explicit metadata and relationships whenever possible.
-
-### Reproducibility
-
-All artifacts should be rebuildable from source inputs.
-
-### Agent-Friendly Design
-
-Expose information through stable, structured interfaces rather than relying solely on document retrieval.
-
-## Long-Term Vision
-
-Create an institutional knowledge base for CMS data research that enables both human researchers and AI agents to reliably discover:
-
-* Appropriate datasets
-* Relevant variables
-* Methodological caveats
-* Data linkage strategies
-* Documentation sources
-
-while maintaining transparent provenance and reproducibility.
-
-## Non-Goals
-
-This project is not intended to:
-
-- Host CMS restricted data
-- Store PHI
-- Replicate CMS analytical datasets
-- Generate research conclusions
-
-The project only manages metadata, documentation,
-knowledge representations, and retrieval infrastructure.
-
-## ResDAC Data Files' Entry Points
-
-- https://resdac.org/cms-data?page=0
-- https://resdac.org/cms-data?page=1
-- https://resdac.org/cms-data?page=2
-- https://resdac.org/cms-data?page=3
-- https://resdac.org/cms-data?page=4
+- Host CMS restricted data.
+- Store PHI.
+- Replicate CMS analytical datasets.
+- Generate research conclusions.
