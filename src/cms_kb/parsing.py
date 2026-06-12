@@ -5,10 +5,11 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import shutil
 import sys
 from pathlib import Path
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 # Try standard fitz import for PyMuPDF
 try:
@@ -28,6 +29,16 @@ class ParsingConfig(BaseModel):
   workspace_dir: Path = Path("_workspace")
   chunk_size: int = 500
   chunk_overlap: int = 100
+
+  @model_validator(mode="after")
+  def validate_chunk_settings(self) -> ParsingConfig:
+    if self.chunk_size <= 0:
+      raise ValueError("chunk_size must be greater than 0")
+    if self.chunk_overlap < 0:
+      raise ValueError("chunk_overlap must be non-negative")
+    if self.chunk_overlap >= self.chunk_size:
+      raise ValueError("chunk_overlap must be less than chunk_size")
+    return self
 
 
 class ChunkMetadata(BaseModel):
@@ -58,8 +69,7 @@ class ParsingResult(BaseModel):
 
 
 def read_datasets_csv(input_path: Path) -> list[DatasetMetadataRow]:
-  if not input_path.exists():
-    return []
+  # Let FileNotFoundError propagate if the file is missing
   with input_path.open(newline="", encoding="utf-8") as handle:
     reader = csv.DictReader(handle)
     if reader.fieldnames is None:
@@ -84,8 +94,7 @@ def read_datasets_csv(input_path: Path) -> list[DatasetMetadataRow]:
 
 
 def read_documents_csv(input_path: Path) -> list[DocumentMetadataRow]:
-  if not input_path.exists():
-    return []
+  # Let FileNotFoundError propagate if the file is missing
   with input_path.open(newline="", encoding="utf-8") as handle:
     reader = csv.DictReader(handle)
     if reader.fieldnames is None:
@@ -120,14 +129,13 @@ def parse_html(local_path: Path) -> str:
 
 
 def parse_pdf(local_path: Path) -> list[tuple[int, str]]:
-  doc = fitz.open(str(local_path))
   pages: list[tuple[int, str]] = []
-  for page_idx in range(len(doc)):
-    page = doc.load_page(page_idx)
-    text = page.get_text()
-    text_str = text if isinstance(text, str) else ""
-    pages.append((page_idx + 1, text_str))
-  doc.close()
+  with fitz.open(str(local_path)) as doc:
+    for page_idx in range(len(doc)):
+      page = doc.load_page(page_idx)
+      text = page.get_text()
+      text_str = text if isinstance(text, str) else ""
+      pages.append((page_idx + 1, text_str))
   return pages
 
 
@@ -136,10 +144,20 @@ def chunk_text(
   chunk_size: int = 500,
   chunk_overlap: int = 100,
 ) -> list[str]:
+  if chunk_size <= 0:
+    raise ValueError("chunk_size must be greater than 0")
+  if chunk_overlap < 0:
+    raise ValueError("chunk_overlap must be non-negative")
+  if chunk_overlap >= chunk_size:
+    raise ValueError("chunk_overlap must be less than chunk_size")
+
   if not text or not text.strip():
     return []
 
-  text = re.sub(r"\s+", " ", text).strip()
+  # Normalize horizontal spaces but keep paragraph/newline spacing
+  text = re.sub(r"[ \t]+", " ", text)
+  text = re.sub(r"\n\s*\n+", "\n\n", text).strip()
+
   if len(text) <= chunk_size:
     return [text]
 
@@ -148,19 +166,28 @@ def chunk_text(
   text_len = len(text)
 
   while start < text_len:
-    end = start + chunk_size
-    if end >= text_len:
-      chunks.append(text[start:])
+    if start + chunk_size >= text_len:
+      chunks.append(text[start:].strip())
       break
 
-    # Look back for a word boundary (space) to avoid cutting words
-    search_start = max(start, start + chunk_size - 30)
+    end = start + chunk_size
+
+    # Look back for a word boundary (space) near the end to avoid cutting words
+    search_start = max(start, end - 30)
     space_idx = text.rfind(" ", search_start, end)
     if space_idx != -1 and space_idx > start:
       end = space_idx
 
     chunks.append(text[start:end].strip())
+
+    # Align the start of the next overlapping chunk to the nearest word boundary
     next_start = end - chunk_overlap
+    if next_start < text_len:
+      search_overlap_start = max(start, next_start - 15)
+      space_overlap_idx = text.find(" ", search_overlap_start, next_start + 15)
+      if space_overlap_idx != -1 and space_overlap_idx > start:
+        next_start = space_overlap_idx + 1
+
     if next_start <= start:
       start = end
     else:
@@ -195,8 +222,10 @@ def write_parsing_workspace_summary(result: ParsingResult) -> Path:
   if result.failures:
     lines.extend(["| url | local_path | reason |", "| --- | --- | --- |"])
     for failure in result.failures[:25]:
+      # Escape pipe characters and replace newlines to avoid breaking markdown tables
+      reason_safe = failure.reason.replace("|", "\\|").replace("\n", " ")
       lines.append(
-        f"| {failure.url} | {failure.local_path} | {failure.reason} |"
+        f"| {failure.url} | {failure.local_path} | {reason_safe} |"
       )
     if len(result.failures) > 25:
       lines.append(f"\n- Additional failures omitted: {len(result.failures) - 25}")
@@ -207,178 +236,86 @@ def write_parsing_workspace_summary(result: ParsingResult) -> Path:
 
 
 def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
+  # Let FileNotFoundError propagate
   datasets = read_datasets_csv(config.datasets_metadata_path)
   documents = read_documents_csv(config.documents_metadata_path)
 
-  # Setup output directories
+  # Setup output directories (clean them first to prevent orphaned files)
   html_out = config.parsed_root / "html"
   pdf_out = config.parsed_root / "pdf"
   chunks_out = config.parsed_root / "chunks"
 
-  html_out.mkdir(parents=True, exist_ok=True)
-  pdf_out.mkdir(parents=True, exist_ok=True)
-  chunks_out.mkdir(parents=True, exist_ok=True)
+  for path in [html_out, pdf_out, chunks_out]:
+    if path.exists():
+      shutil.rmtree(path)
+    path.mkdir(parents=True, exist_ok=True)
 
   parsed_datasets_count = 0
   parsed_documents_count = 0
-  chunks: list[ChunkMetadata] = []
+  chunks_count = 0
   failures: list[ParsingFailure] = []
 
-  # 1. Parse Datasets (all are HTML files)
-  for dataset in datasets:
-    local_path = Path(dataset.local_path)
-    if not local_path.exists():
-      failures.append(
-        ParsingFailure(
-          url=dataset.source_url,
-          local_path=dataset.local_path,
-          reason="dataset file does not exist locally",
-        )
-      )
-      continue
+  valid_dataset_ids = {d.dataset_id for d in datasets}
+  jsonl_path = config.parsed_root / "chunks.jsonl"
 
-    try:
-      text = parse_html(local_path)
-      if not text:
+  with jsonl_path.open("w", encoding="utf-8") as f_jsonl:
+    # 1. Parse Datasets (all are HTML files)
+    for dataset in datasets:
+      local_path_str = dataset.local_path.strip()
+      if not local_path_str:
         failures.append(
           ParsingFailure(
             url=dataset.source_url,
-            local_path=dataset.local_path,
-            reason="extracted HTML text is empty",
+            local_path="",
+            reason="dataset has empty local path",
           )
         )
         continue
 
-      # Save clean raw text
-      txt_path = html_out / f"{dataset.dataset_id}.txt"
-      txt_path.write_text(text, encoding="utf-8")
-      parsed_datasets_count += 1
-
-      # Chunk text
-      txt_chunks = chunk_text(
-        text,
-        chunk_size=config.chunk_size,
-        chunk_overlap=config.chunk_overlap,
-      )
-      for idx, chunk_txt in enumerate(txt_chunks):
-        chunk_id = f"{dataset.dataset_id}__chunk_{idx}"
-        chunk = ChunkMetadata(
-          chunk_id=chunk_id,
-          source_document=dataset.local_path,
-          page=1,
-          text=chunk_txt,
-          dataset=dataset.dataset_id,
-          url=dataset.source_url,
-        )
-        chunks.append(chunk)
-
-        # Save individual chunk
-        chunk_path = chunks_out / f"{chunk_id}.json"
-        chunk_path.write_text(
-          chunk.model_dump_json(indent=2), encoding="utf-8"
-        )
-
-    except Exception as exc:
-      failures.append(
-        ParsingFailure(
-          url=dataset.source_url,
-          local_path=dataset.local_path,
-          reason=f"failed to parse/chunk dataset page: {exc}",
-        )
-      )
-
-  # 2. Parse Documents (can be HTML or PDF)
-  for doc in documents:
-    local_path = Path(doc.local_path)
-    if not local_path.exists():
-      failures.append(
-        ParsingFailure(
-          url=doc.source_url,
-          local_path=doc.local_path,
-          reason="document file does not exist locally",
-        )
-      )
-      continue
-
-    try:
-      if doc.document_kind == "pdf":
-        pages = parse_pdf(local_path)
-        if not pages:
-          failures.append(
-            ParsingFailure(
-              url=doc.source_url,
-              local_path=doc.local_path,
-              reason="extracted PDF pages are empty",
-            )
+      local_path = Path(local_path_str)
+      if not local_path.is_file():
+        failures.append(
+          ParsingFailure(
+            url=dataset.source_url,
+            local_path=local_path_str,
+            reason="dataset file does not exist locally",
           )
-          continue
+        )
+        continue
 
-        # Save combined clean text
-        combined_text = "\n\n".join(text for _, text in pages)
-        txt_path = pdf_out / f"{doc.document_id}.txt"
-        txt_path.write_text(combined_text, encoding="utf-8")
-        parsed_documents_count += 1
-
-        # Chunk text page-by-page
-        for page_num, page_text in pages:
-          page_chunks = chunk_text(
-            page_text,
-            chunk_size=config.chunk_size,
-            chunk_overlap=config.chunk_overlap,
-          )
-          for idx, chunk_txt in enumerate(page_chunks):
-            chunk_id = f"{doc.document_id}__p{page_num}__chunk_{idx}"
-            chunk = ChunkMetadata(
-              chunk_id=chunk_id,
-              source_document=doc.local_path,
-              page=page_num,
-              text=chunk_txt,
-              dataset=doc.dataset_id,
-              url=doc.source_url,
-            )
-            chunks.append(chunk)
-
-            # Save individual chunk
-            chunk_path = chunks_out / f"{chunk_id}.json"
-            chunk_path.write_text(
-              chunk.model_dump_json(indent=2), encoding="utf-8"
-            )
-
-      else:
-        # Assume HTML
+      try:
         text = parse_html(local_path)
-        if not text:
+        if not text or not text.strip():
           failures.append(
             ParsingFailure(
-              url=doc.source_url,
-              local_path=doc.local_path,
+              url=dataset.source_url,
+              local_path=local_path_str,
               reason="extracted HTML text is empty",
             )
           )
           continue
 
         # Save clean raw text
-        txt_path = html_out / f"{doc.document_id}.txt"
+        txt_path = html_out / f"{dataset.dataset_id}.txt"
         txt_path.write_text(text, encoding="utf-8")
-        parsed_documents_count += 1
+        parsed_datasets_count += 1
 
-        # Chunk text
+        # Chunk text (page = None for HTML)
         txt_chunks = chunk_text(
           text,
           chunk_size=config.chunk_size,
           chunk_overlap=config.chunk_overlap,
         )
         for idx, chunk_txt in enumerate(txt_chunks):
-          chunk_id = f"{doc.document_id}__chunk_{idx}"
+          chunk_id = f"{dataset.dataset_id}__chunk_{idx}"
           chunk = ChunkMetadata(
             chunk_id=chunk_id,
-            source_document=doc.local_path,
-            page=1,
+            source_document=dataset.local_path,
+            page=None,
             text=chunk_txt,
-            dataset=doc.dataset_id,
-            url=doc.source_url,
+            dataset=dataset.dataset_id,
+            url=dataset.source_url,
           )
-          chunks.append(chunk)
 
           # Save individual chunk
           chunk_path = chunks_out / f"{chunk_id}.json"
@@ -386,26 +323,174 @@ def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
             chunk.model_dump_json(indent=2), encoding="utf-8"
           )
 
-    except Exception as exc:
-      failures.append(
-        ParsingFailure(
-          url=doc.source_url,
-          local_path=doc.local_path,
-          reason=f"failed to parse/chunk document: {exc}",
-        )
-      )
+          # Stream write to jsonl
+          f_jsonl.write(chunk.model_dump_json() + "\n")
+          chunks_count += 1
 
-  # Write consolidated chunks.jsonl
-  jsonl_path = config.parsed_root / "chunks.jsonl"
-  with jsonl_path.open("w", encoding="utf-8") as f:
-    for chunk in chunks:
-      f.write(chunk.model_dump_json() + "\n")
+      except Exception as exc:
+        failures.append(
+          ParsingFailure(
+            url=dataset.source_url,
+            local_path=local_path_str,
+            reason=f"failed to parse/chunk dataset page: {exc}",
+          )
+        )
+
+    # 2. Parse Documents (can be HTML or PDF)
+    for doc in documents:
+      # Stop/fail if a document cannot be mapped to any dataset ID
+      if doc.dataset_id not in valid_dataset_ids:
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path=doc.local_path,
+            reason=f"document dataset_id '{doc.dataset_id}' not found in datasets metadata",
+          )
+        )
+        continue
+
+      local_path_str = doc.local_path.strip()
+      if not local_path_str:
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path="",
+            reason="document has empty local path",
+          )
+        )
+        continue
+
+      local_path = Path(local_path_str)
+      if not local_path.is_file():
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path=local_path_str,
+            reason="document file does not exist locally",
+          )
+        )
+        continue
+
+      # Enforce explicit supported document kind check
+      if doc.document_kind not in {"pdf", "html"}:
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path=local_path_str,
+            reason=f"unsupported document kind: {doc.document_kind}",
+          )
+        )
+        continue
+
+      try:
+        if doc.document_kind == "pdf":
+          pages = parse_pdf(local_path)
+          
+          # Check if the extracted PDF text is completely empty (OCR stop condition)
+          combined_text = "\n\n".join(page_text for _, page_text in pages).strip()
+          if not combined_text:
+            failures.append(
+              ParsingFailure(
+                url=doc.source_url,
+                local_path=local_path_str,
+                reason="extracted PDF text is empty (PDF may contain only scanned images and require OCR)",
+              )
+            )
+            continue
+
+          # Save combined clean text
+          txt_path = pdf_out / f"{doc.document_id}.txt"
+          txt_path.write_text(combined_text, encoding="utf-8")
+          parsed_documents_count += 1
+
+          # Chunk text page-by-page
+          for page_num, page_text in pages:
+            if not page_text.strip():
+              continue
+            page_chunks = chunk_text(
+              page_text,
+              chunk_size=config.chunk_size,
+              chunk_overlap=config.chunk_overlap,
+            )
+            for idx, chunk_txt in enumerate(page_chunks):
+              chunk_id = f"{doc.document_id}__p{page_num}__chunk_{idx}"
+              chunk = ChunkMetadata(
+                chunk_id=chunk_id,
+                source_document=doc.local_path,
+                page=page_num,
+                text=chunk_txt,
+                dataset=doc.dataset_id,
+                url=doc.source_url,
+              )
+
+              # Save individual chunk
+              chunk_path = chunks_out / f"{chunk_id}.json"
+              chunk_path.write_text(
+                chunk.model_dump_json(indent=2), encoding="utf-8"
+              )
+
+              # Stream write to jsonl
+              f_jsonl.write(chunk.model_dump_json() + "\n")
+              chunks_count += 1
+
+        elif doc.document_kind == "html":
+          text = parse_html(local_path)
+          if not text or not text.strip():
+            failures.append(
+              ParsingFailure(
+                url=doc.source_url,
+                local_path=local_path_str,
+                reason="extracted HTML text is empty",
+              )
+            )
+            continue
+
+          # Save clean raw text
+          txt_path = html_out / f"{doc.document_id}.txt"
+          txt_path.write_text(text, encoding="utf-8")
+          parsed_documents_count += 1
+
+          # Chunk text (page = None for HTML)
+          txt_chunks = chunk_text(
+            text,
+            chunk_size=config.chunk_size,
+            chunk_overlap=config.chunk_overlap,
+          )
+          for idx, chunk_txt in enumerate(txt_chunks):
+            chunk_id = f"{doc.document_id}__chunk_{idx}"
+            chunk = ChunkMetadata(
+              chunk_id=chunk_id,
+              source_document=doc.local_path,
+              page=None,
+              text=chunk_txt,
+              dataset=doc.dataset_id,
+              url=doc.source_url,
+            )
+
+            # Save individual chunk
+            chunk_path = chunks_out / f"{chunk_id}.json"
+            chunk_path.write_text(
+              chunk.model_dump_json(indent=2), encoding="utf-8"
+            )
+
+            # Stream write to jsonl
+            f_jsonl.write(chunk.model_dump_json() + "\n")
+            chunks_count += 1
+
+      except Exception as exc:
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path=local_path_str,
+            reason=f"failed to parse/chunk document: {exc}",
+          )
+        )
 
   result = ParsingResult(
     config=config,
     parsed_datasets_count=parsed_datasets_count,
     parsed_documents_count=parsed_documents_count,
-    chunks_count=len(chunks),
+    chunks_count=chunks_count,
     failures=failures,
   )
 
