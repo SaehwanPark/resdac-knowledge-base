@@ -1,0 +1,420 @@
+from __future__ import annotations
+
+import csv
+import hashlib
+from pathlib import Path
+
+
+from cms_kb.archive import ArchiveManifestRow, write_archive_manifest
+from cms_kb.qa import (
+  QAConfig,
+  QAFinding,
+  main,
+  run_qa,
+)
+
+
+def _write_file(path: Path, content: bytes) -> str:
+  path.parent.mkdir(parents=True, exist_ok=True)
+  path.write_bytes(content)
+  return hashlib.sha256(content).hexdigest()
+
+
+def test_qa_finding_model() -> None:
+  finding = QAFinding(
+    file="datasets.csv",
+    item_id="ds-1",
+    field="sha256",
+    severity="error",
+    message="test message",
+  )
+  assert finding.file == "datasets.csv"
+  assert finding.severity == "error"
+
+
+def test_run_qa_success_flow(tmp_path: Path) -> None:
+  # 1. Setup paths
+  metadata_dir = tmp_path / "data" / "metadata"
+  graph_dir = tmp_path / "data" / "graph"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  workspace_dir = tmp_path / "_workspace"
+
+  for d in [metadata_dir, graph_dir, manifest_dir, raw_dir, workspace_dir]:
+    d.mkdir(parents=True, exist_ok=True)
+
+  # 2. Write mock raw files
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  doc_pdf = raw_dir / "doc-1.pdf"
+  doc_sha = _write_file(doc_pdf, b"%PDF fake doc")
+
+  # 3. Write archive manifest
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  manifest_rows = [
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=ds_sha,
+      local_path=str(ds_html),
+    ),
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1/doc-1",
+      resource_kind="documentation_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=doc_sha,
+      local_path=str(doc_pdf),
+    ),
+  ]
+  write_archive_manifest(manifest_rows, manifest_path)
+
+  # 4. Write datasets metadata CSV
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "dataset_id",
+      "name",
+      "program",
+      "category",
+      "availability",
+      "source_url",
+      "local_path",
+      "sha256",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "ds-1",
+      "Dataset 1",
+      "Medicare",
+      "Claims",
+      "Available",
+      "https://resdac.org/cms-data/files/ds-1",
+      str(ds_html),
+      ds_sha,
+      "",
+    ])
+
+  # 5. Write documents metadata CSV
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "document_id",
+      "dataset_id",
+      "title",
+      "document_kind",
+      "source_url",
+      "local_path",
+      "sha256",
+      "content_type",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "doc-1",
+      "ds-1",
+      "Doc 1 Title",
+      "pdf",
+      "https://resdac.org/cms-data/files/ds-1/doc-1",
+      str(doc_pdf),
+      doc_sha,
+      "application/pdf",
+      "",
+    ])
+
+  # 6. Write document edges CSV
+  edges_csv = graph_dir / "document_edges.csv"
+  with edges_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "source_id",
+      "target_id",
+      "relationship",
+      "source_url",
+      "local_path",
+      "sha256",
+    ])
+    writer.writerow([
+      "ds-1",
+      "doc-1",
+      "has_document",
+      "https://resdac.org/cms-data/files/ds-1/doc-1",
+      str(doc_pdf),
+      doc_sha,
+    ])
+
+  # 7. Run QA verification
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    document_edges_path=edges_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=workspace_dir,
+  )
+
+  result, summary_path = run_qa(config)
+
+  # 8. Assertions
+  assert result.verdict == "pass"
+  assert len(result.findings) == 0
+  assert result.datasets_checked == 1
+  assert result.documents_checked == 1
+  assert result.edges_checked == 1
+  assert summary_path.exists()
+
+  # Check CLI command main exit code
+  exit_code = main([
+    "--datasets-metadata",
+    str(datasets_csv),
+    "--documents-metadata",
+    str(documents_csv),
+    "--document-edges",
+    str(edges_csv),
+    "--archive-manifest",
+    str(manifest_path),
+    "--workspace-dir",
+    str(workspace_dir),
+  ])
+  assert exit_code == 0
+
+
+def test_run_qa_file_missing(tmp_path: Path) -> None:
+  # Check missing files verdict (Fatal REDO)
+  config = QAConfig(
+    datasets_metadata_path=tmp_path / "non_existent_datasets.csv",
+    documents_metadata_path=tmp_path / "non_existent_documents.csv",
+    document_edges_path=tmp_path / "non_existent_edges.csv",
+    archive_manifest_path=tmp_path / "non_existent_manifest.csv",
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, summary_path = run_qa(config)
+  assert result.verdict == "redo"
+  # At least 3 errors for missing datasets, documents, and manifest
+  assert len(result.findings) >= 3
+  assert any("Required datasets metadata file is missing" in f.message for f in result.findings)
+  assert any("Required documents metadata file is missing" in f.message for f in result.findings)
+  assert any("Required archive manifest file is missing" in f.message for f in result.findings)
+
+
+def test_run_qa_integrity_fail(tmp_path: Path) -> None:
+  # 1. Setup paths
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  workspace_dir = tmp_path / "_workspace"
+
+  for d in [metadata_dir, manifest_dir, raw_dir, workspace_dir]:
+    d.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  doc_pdf = raw_dir / "doc-1.pdf"
+  doc_sha = _write_file(doc_pdf, b"%PDF fake doc")
+
+  # 2. Write archive manifest (matching ds-1 but not doc-1)
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  manifest_rows = [
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=ds_sha,
+      local_path=str(ds_html),
+    ),
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1/doc-1",
+      resource_kind="documentation_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=doc_sha,
+      local_path=str(doc_pdf),
+    ),
+  ]
+  write_archive_manifest(manifest_rows, manifest_path)
+
+  # 3. Write datasets metadata CSV
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "dataset_id",
+      "name",
+      "program",
+      "category",
+      "availability",
+      "source_url",
+      "local_path",
+      "sha256",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "ds-1",
+      "Dataset 1",
+      "Medicare",
+      "Claims",
+      "Available",
+      "https://resdac.org/cms-data/files/ds-1",
+      str(ds_html),
+      ds_sha,
+      "",
+    ])
+
+  # 4. Write documents metadata CSV referencing non-existent dataset 'ds-unmapped'
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "document_id",
+      "dataset_id",
+      "title",
+      "document_kind",
+      "source_url",
+      "local_path",
+      "sha256",
+      "content_type",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "doc-1",
+      "ds-unmapped",
+      "Doc 1 Title",
+      "pdf",
+      "https://resdac.org/cms-data/files/ds-1/doc-1",
+      str(doc_pdf),
+      doc_sha,
+      "application/pdf",
+      "",
+    ])
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=workspace_dir,
+  )
+
+  result, _ = run_qa(config)
+
+  # Check references integrity error results in REDO
+  assert result.verdict == "redo"
+  assert result.error_count == 1
+  errors = [f for f in result.findings if f.severity == "error"]
+  assert errors[0].field == "dataset_id"
+  assert "does not exist in datasets metadata" in errors[0].message
+
+
+def test_run_qa_validation_failures(tmp_path: Path) -> None:
+  # 1. Setup paths
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  workspace_dir = tmp_path / "_workspace"
+
+  for d in [metadata_dir, manifest_dir, raw_dir, workspace_dir]:
+    d.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  doc_pdf = raw_dir / "doc-1.pdf"
+  doc_sha = _write_file(doc_pdf, b"%PDF fake doc")
+
+  # 2. Write archive manifest (matching correct shas)
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  manifest_rows = [
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=ds_sha,
+      local_path=str(ds_html),
+    ),
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1/doc-1",
+      resource_kind="documentation_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=doc_sha,
+      local_path=str(doc_pdf),
+    ),
+  ]
+  write_archive_manifest(manifest_rows, manifest_path)
+
+  # 3. Write datasets metadata CSV with a checksum mismatch
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "dataset_id",
+      "name",
+      "program",
+      "category",
+      "availability",
+      "source_url",
+      "local_path",
+      "sha256",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "ds-1",
+      "Dataset 1",
+      "Medicare",
+      "Claims",
+      "Available",
+      "https://resdac.org/cms-data/files/ds-1",
+      str(ds_html),
+      "wrong-sha-hash",
+      "",
+    ])
+
+  # 4. Write documents metadata CSV with missing local file
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "document_id",
+      "dataset_id",
+      "title",
+      "document_kind",
+      "source_url",
+      "local_path",
+      "sha256",
+      "content_type",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "doc-1",
+      "ds-1",
+      "Doc 1 Title",
+      "pdf",
+      "https://resdac.org/cms-data/files/ds-1/doc-1",
+      str(raw_dir / "non-existent-doc.pdf"),
+      doc_sha,
+      "application/pdf",
+      "",
+    ])
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=workspace_dir,
+  )
+
+  result, _ = run_qa(config)
+
+  # Should be FIX since the issues are local file missing and checksum mismatch, and no structural errors.
+  # (Wait, if len(errors) <= 5 and no major error field, verdict is fix)
+  assert result.verdict == "fix"
+  assert result.error_count == 2
+  errors = [f for f in result.findings if f.severity == "error"]
+  assert any(f.field == "sha256" for f in errors)
+  assert any(f.field == "local_path" for f in errors)

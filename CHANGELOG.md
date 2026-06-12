@@ -9,3 +9,5 @@
 - Discovery-only CMS data inventory crawl with CSV output, workspace summary output, and live-site provenance capture.
 - Phase 1 archive preservation CLI with raw HTML/asset downloads, archive manifest CSV output, and `_workspace/03_archive_manifest.md` handoff summary.
 - Phase 2 metadata extraction CLI with checksum validation, dataset/document metadata CSV outputs, graph seed edges, and `_workspace/04_extraction_pack.md` handoff summary.
+- Phase 3 document parsing CLI with HTML/PDF text extraction, chunking, and `_workspace/05_parsing_pack.md` handoff summary.
+- Phase 4 QA Specialist CLI with checksum verification, URL mapping auditing, reference integrity checks, and `_workspace/06_qa_review.md` handoff summary.
