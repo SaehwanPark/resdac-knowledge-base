@@ -4,12 +4,17 @@ version = "0.1.0"
 description = "CMS documentation archive and inventory tooling"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = ["pydantic>=2"]
+dependencies = [
+  "pydantic>=2",
+  "pymupdf>=1.27.2.3",
+  "trafilatura>=2.1.0",
+]
 
 [project.scripts]
 cms-kb = "cms_kb.__main__:main"
 cms-kb-archive = "cms_kb.archive:main"
 cms-kb-extract = "cms_kb.extraction:main"
+cms-kb-parse = "cms_kb.parsing:main"
 
 [dependency-groups]
 dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]
