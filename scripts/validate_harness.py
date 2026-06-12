@@ -12,6 +12,7 @@ SKILLS = [
   ROOT / ".agents/skills/cms-kb-orchestrator/SKILL.md",
   ROOT / ".agents/skills/cms-kb-archive/SKILL.md",
   ROOT / ".agents/skills/cms-kb-extraction/SKILL.md",
+  ROOT / ".agents/skills/cms-kb-parse/SKILL.md",
   ROOT / ".agents/skills/cms-kb-qa/SKILL.md",
 ]
 TEAM_SPEC = ROOT / "docs/harness/cms-kb/team-spec.md"
@@ -86,12 +87,14 @@ def check_team_spec(path: Path) -> list[str]:
     "cms-kb-orchestrator",
     "cms-kb-archive",
     "cms-kb-extraction",
+    "cms-kb-parse",
     "cms-kb-qa",
     "_workspace/01_request.md",
     "_workspace/02_source_inventory.md",
     "_workspace/03_archive_manifest.md",
     "_workspace/04_extraction_pack.md",
-    "_workspace/05_qa_review.md",
+    "_workspace/05_parsing_pack.md",
+    "_workspace/06_qa_review.md",
   ]
 
   for term in required_terms:

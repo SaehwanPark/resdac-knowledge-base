@@ -11,6 +11,7 @@ It is intentionally repo-local and markdown-driven. Version 1 does not add `AGEN
 - `cms-kb-orchestrator`: classifies the request, assigns the phase, and enforces handoff order.
 - `cms-kb-archive`: discovers source pages, inventories assets, and records archive provenance.
 - `cms-kb-extraction`: turns archived material into metadata, entities, and graph seeds.
+- `cms-kb-parse`: parses HTML and PDF text and generates chunks with complete provenance.
 - `cms-kb-qa`: checks citations, provenance, and completeness before downstream use.
 
 ## Handoff Contract
@@ -21,7 +22,8 @@ The harness uses deterministic `_workspace/` files so every phase can be inspect
 - `_workspace/02_source_inventory.md`: discovered pages, files, and coverage notes.
 - `_workspace/03_archive_manifest.md`: archive paths, checksums, and download provenance.
 - `_workspace/04_extraction_pack.md`: extracted dataset, variable, and relationship records.
-- `_workspace/05_qa_review.md`: pass/fix/redo verdict with reasons and missing evidence.
+- `_workspace/05_parsing_pack.md`: parsed text paths and text chunk JSONs with full provenance.
+- `_workspace/06_qa_review.md`: pass/fix/redo verdict with reasons and missing evidence.
 
 Canonical durable outputs, when the repo later materializes writers, are `data/raw/`, `data/metadata/`, and `data/graph/`. The harness itself only depends on the markdown handoffs above.
 

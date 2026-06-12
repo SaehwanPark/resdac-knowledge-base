@@ -26,11 +26,19 @@ from .inventory import (
   main,
   run_inventory,
 )
+from .parsing import (
+  ChunkMetadata,
+  ParsingConfig,
+  ParsingFailure,
+  ParsingResult,
+  run_parsing,
+)
 
 __all__ = [
   "ArchiveConfig",
   "ArchiveManifestRow",
   "ArchiveResult",
+  "ChunkMetadata",
   "DatasetMetadataRow",
   "DocumentEdgeRow",
   "DocumentMetadataRow",
@@ -42,10 +50,14 @@ __all__ = [
   "InventoryConfig",
   "InventoryResult",
   "InventoryRow",
+  "ParsingConfig",
+  "ParsingFailure",
+  "ParsingResult",
   "ProbeResult",
   "crawl_inventory",
   "main",
   "run_archive",
   "run_extraction",
   "run_inventory",
+  "run_parsing",
 ]
