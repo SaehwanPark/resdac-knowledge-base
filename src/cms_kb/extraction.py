@@ -321,7 +321,19 @@ def _verify_archived_row(row: ArchiveManifestRow) -> ExtractionFailure | None:
       local_path=row.local_path,
       reason="archived row has no sha256",
     )
-  actual_sha256 = hashlib.sha256(local_path.read_bytes()).hexdigest()
+  sha = hashlib.sha256()
+  try:
+    with local_path.open("rb") as f:
+      while chunk := f.read(8192):
+        sha.update(chunk)
+    actual_sha256 = sha.hexdigest()
+  except Exception as exc:
+    return ExtractionFailure(
+      url=row.url,
+      resource_kind=row.resource_kind,
+      local_path=row.local_path,
+      reason=f"error hashing file: {exc}",
+    )
   if actual_sha256 != row.sha256:
     return ExtractionFailure(
       url=row.url,
@@ -472,7 +484,7 @@ def _extract_dataset(
   edges = []
 
   if program:
-    program_id = _slugify(program)
+    program_id = f"program_{_slugify(program)}"
     nodes.append(
       OntologyNodeRow(
         node_id=program_id,
@@ -671,23 +683,26 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
   ontology_edges: list[OntologyEdgeRow] = []
   failures: list[ExtractionFailure] = []
 
-  for row in _eligible_rows(manifest_rows):
+  eligible_rows = _eligible_rows(manifest_rows)
+
+  for row in eligible_rows:
+    if row.resource_kind != "dataset_page":
+      continue
     failure = _verify_archived_row(row)
     if failure is not None:
       failures.append(failure)
       continue
+    dataset, nodes, edges = _extract_dataset(row)
+    datasets_by_id[dataset.dataset_id] = dataset
+    ontology_nodes.extend(nodes)
+    ontology_edges.extend(edges)
 
-    if row.resource_kind == "dataset_page":
-      dataset, nodes, edges = _extract_dataset(row)
-      datasets_by_id[dataset.dataset_id] = dataset
-      ontology_nodes.extend(nodes)
-      ontology_edges.extend(edges)
-
-  for row in _eligible_rows(manifest_rows):
+  for row in eligible_rows:
     if row.resource_kind not in {"documentation_page", "asset"}:
       continue
     failure = _verify_archived_row(row)
     if failure is not None:
+      failures.append(failure)
       continue
     dataset_id = _dataset_id_for_document(row)
     if dataset_id is None:

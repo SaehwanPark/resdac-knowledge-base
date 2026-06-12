@@ -496,7 +496,7 @@ def test_run_extraction_normalizes_fields_and_emits_ontology(tmp_path: Path) -> 
 
   assert len(nodes) == 2
   node_ids = {n["node_id"] for n in nodes}
-  assert node_ids == {"pde", "medicare"}
+  assert node_ids == {"pde", "program_medicare"}
 
   # Verify ontology_edges.csv output
   with (tmp_path / "data" / "graph" / "ontology_edges.csv").open(
@@ -507,7 +507,7 @@ def test_run_extraction_normalizes_fields_and_emits_ontology(tmp_path: Path) -> 
   assert len(edges) == 2
   edge_types = {(e["source_id"], e["target_id"], e["relationship"]) for e in edges}
   assert edge_types == {
-    ("pde", "medicare", "belongs_to"),
+    ("pde", "program_medicare", "belongs_to"),
     ("pde", "cmds-entity", "related_to"),
   }
 

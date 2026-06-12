@@ -132,6 +132,11 @@ def read_ontology_nodes_csv(input_path: Path) -> list[OntologyNodeRow]:
     if reader.fieldnames is None:
       raise ValueError(f"ontology nodes CSV has no header: {input_path}")
 
+    required_headers = ["node_id", "node_class", "name", "source_url", "local_path", "sha256"]
+    missing = [h for h in required_headers if h not in reader.fieldnames]
+    if missing:
+      raise ValueError(f"ontology nodes CSV is missing columns: {', '.join(missing)}")
+
     rows: list[OntologyNodeRow] = []
     for raw_row in reader:
       rows.append(
@@ -152,6 +157,11 @@ def read_ontology_edges_csv(input_path: Path) -> list[OntologyEdgeRow]:
     reader = csv.DictReader(handle)
     if reader.fieldnames is None:
       raise ValueError(f"ontology edges CSV has no header: {input_path}")
+
+    required_headers = ["source_id", "target_id", "relationship", "source_url", "local_path", "sha256"]
+    missing = [h for h in required_headers if h not in reader.fieldnames]
+    if missing:
+      raise ValueError(f"ontology edges CSV is missing columns: {', '.join(missing)}")
 
     rows: list[OntologyEdgeRow] = []
     for raw_row in reader:
@@ -939,6 +949,55 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
           message=f"Invalid source_url: {edge.source_url}",
         )
       )
+    elif edge.source_url:
+      if edge.source_url not in manifest_lookup:
+        findings.append(
+          QAFinding(
+            file="ontology_edges.csv",
+            item_id=edge_label,
+            field="source_url",
+            severity="error",
+            message=f"source_url not found in archive manifest: {edge.source_url}",
+          )
+        )
+
+    # Check local path existence and checksum if provided
+    local_path_str = edge.local_path.strip()
+    if local_path_str:
+      local_path = Path(local_path_str)
+      if not local_path.is_file():
+        findings.append(
+          QAFinding(
+            file="ontology_edges.csv",
+            item_id=edge_label,
+            field="local_path",
+            severity="error",
+            message=f"Local file does not exist: {local_path_str}",
+          )
+        )
+      elif edge.sha256.strip():
+        try:
+          actual_sha = compute_sha256(local_path)
+          if actual_sha != edge.sha256:
+            findings.append(
+              QAFinding(
+                file="ontology_edges.csv",
+                item_id=edge_label,
+                field="sha256",
+                severity="error",
+                message=f"Checksum mismatch. Edge: {edge.sha256}, Actual: {actual_sha}",
+              )
+            )
+        except Exception as exc:
+          findings.append(
+            QAFinding(
+              file="ontology_edges.csv",
+              item_id=edge_label,
+              field="sha256",
+              severity="error",
+              message=f"Error computing checksum: {exc}",
+            )
+          )
 
   # 6. Verdict Assignment
   # pass = no errors and no warnings (or only warnings)
