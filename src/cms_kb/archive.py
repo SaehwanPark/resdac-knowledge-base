@@ -246,6 +246,23 @@ def _manifest_row_for_success(
   )
 
 
+def _manifest_row_for_existing_file(
+  row: InventoryRow,
+  *,
+  downloaded_at_utc: str,
+  local_path: Path,
+) -> ArchiveManifestRow:
+  body = local_path.read_bytes()
+  return _manifest_row_for_success(
+    row,
+    http_status=row.http_status,
+    content_type=row.content_type,
+    downloaded_at_utc=downloaded_at_utc,
+    sha256=hashlib.sha256(body).hexdigest(),
+    local_path=local_path,
+  )
+
+
 def write_archive_manifest(
   rows: list[ArchiveManifestRow], output_path: Path
 ) -> None:
@@ -315,10 +332,22 @@ def run_archive(
       skipped_count += 1
       continue
 
+    downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
+    local_path = archive_path_for_row(row, config.raw_root)
+    if local_path.is_file() and local_path.stat().st_size > 0:
+      manifest_rows.append(
+        _manifest_row_for_existing_file(
+          row,
+          downloaded_at_utc=downloaded_at_utc,
+          local_path=local_path,
+        )
+      )
+      archived_count += 1
+      continue
+
     if config.request_delay_seconds:
       sleep_fn(config.request_delay_seconds)
     download = download_url_fn(row.url, config.timeout_seconds, config.user_agent)
-    downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
 
     if download.status is None or download.status >= 400 or not download.body:
       manifest_rows.append(
@@ -327,7 +356,6 @@ def run_archive(
       failed_count += 1
       continue
 
-    local_path = archive_path_for_row(row, config.raw_root)
     local_path.parent.mkdir(parents=True, exist_ok=True)
     local_path.write_bytes(download.body)
     manifest_rows.append(

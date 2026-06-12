@@ -4,6 +4,7 @@
 
 ### Changed
 - Clarified `SPEC.md` so `Past`, `Present`, and `Future` are mutually exclusive operational states, with completed pipeline phases moved out of active work.
+- Treat transient inventory HTTP statuses as unresolved instead of dead links, and allow archive retries to reuse already preserved raw files.
 
 ### Added
 - Initial canonical project documentation with `SPEC.md`, `ARCHITECTURE.md`, and `CHANGELOG.md`.

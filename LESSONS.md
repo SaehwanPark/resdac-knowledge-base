@@ -35,3 +35,11 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Cause: `--max-pages` limited listing pages only; the crawler still followed discovered dataset/documentation pages and probed assets, with per-request delays and retry backoff.
 - Resolution: add follow-up limits, asset limits, duplicate asset probe suppression, and CLI progress output.
 - Prevention: use `--max-follow-pages` and `--max-assets` for smoke tests, and leave progress output enabled unless running in a quiet automation context.
+
+### Archive retries should reuse preserved raw files
+
+- Context: full ResDAC archive pass after a successful 339-row inventory crawl.
+- Symptom: the first archive run preserved 297 files but exited nonzero after later ResDAC HTML requests returned HTTP 429.
+- Cause: the archive pass retried transient statuses but had no resume path, so rerunning would re-download already preserved files and increase throttling risk.
+- Resolution: reuse existing non-empty raw files when rebuilding the archive manifest, then retry only missing targets with a larger request delay.
+- Prevention: after archive throttling, inspect `_workspace/03_archive_manifest.md`, keep existing `data/raw/` files, and rerun `cms-kb-archive` with a slower delay instead of deleting outputs.
