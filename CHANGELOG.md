@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+### Changed
+- Clarified `SPEC.md` so `Past`, `Present`, and `Future` are mutually exclusive operational states, with completed pipeline phases moved out of active work.
+
 ### Added
 - Initial canonical project documentation with `SPEC.md`, `ARCHITECTURE.md`, and `CHANGELOG.md`.
 - Repository-level architecture and scope notes for the CMS documentation knowledge base.

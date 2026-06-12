@@ -336,6 +336,10 @@ Output:
 
 ## Development Roadmap
 
+`SPEC.md` is the operational source of truth for whether work is Past,
+Present, or Future. The milestones below summarize the strategic direction and
+may include both completed and planned layers.
+
 ### Milestone 1
 
 Documentation inventory and archival pipeline.
@@ -354,7 +358,8 @@ Knowledge graph construction.
 
 ### Milestone 5
 
-Hybrid retrieval system.
+Retrieval system, starting with deterministic lexical search and preserving
+future room for hybrid or semantic retrieval.
 
 ### Milestone 6
 

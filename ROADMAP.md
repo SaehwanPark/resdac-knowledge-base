@@ -1,3 +1,9 @@
+# ROADMAP
+
+This roadmap records the strategic layering for the project. Use `SPEC.md` as
+the operational source of truth for whether a feature is Past, Present, or
+Future; these roadmap phases may include completed work and future direction.
+
 Build layers in this order:
 
 ```text

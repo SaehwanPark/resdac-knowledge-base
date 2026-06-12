@@ -1,19 +1,23 @@
 # ARCHITECTURE
 
 ## Overview
-The repository is currently a documentation-first knowledge base for CMS and ResDAC materials. The canonical repo state is the archived source material, extracted metadata, and provenance-bearing manifests that future code will generate.
+The repository is a documentation-first knowledge base for CMS and ResDAC materials. The canonical repo state is the archived source material, extracted metadata, parsed chunks, graph seed files, retrieval outputs, and provenance-bearing manifests produced by the local pipeline.
 
 Last Reviewed: 2026-06-12
 Status: Verified
 
 ## Main Surfaces
 - `README.md`: project motivation, scope, and the intended multi-phase system.
-- `ROADMAP.md`: phased execution plan for archive, extraction, parsing, graph, retrieval, and evaluation work.
+- `SPEC.md`: operational feature-state record with mutually exclusive Past, Present, and Future sections.
+- `ROADMAP.md`: strategic phase history and future direction for archive, extraction, parsing, graph, retrieval, and evaluation work.
 - `docs/harness/cms-kb/team-spec.md`: repo-local orchestration contract for archive, extraction, and QA handoffs.
-- `data/`: canonical durable outputs when the pipeline exists, especially raw archives, metadata, and graph artifacts.
+- `data/`: canonical durable outputs, especially raw archives, parsed text, metadata, and graph artifacts.
 - `manifests/`: inventory and provenance manifests for downloaded or parsed sources.
 - `src/`: implementation surface for crawl, archive, parse, metadata, graph, retrieval, and evaluation code.
 - `tests/`: verification for archive integrity, extraction accuracy, and retrieval behavior.
+
+Last Reviewed: 2026-06-12
+Status: Verified
 
 ## Data Flow
 1. Discover source pages and files from ResDAC and related CMS documentation sites.
@@ -22,12 +26,18 @@ Status: Verified
 4. Persist provenance-bearing artifacts in `data/`, `manifests/`, and related stores.
 5. Expose search and retrieval layers that always retain citations back to source documents.
 
+Last Reviewed: 2026-06-12
+Status: Verified
+
 ## Constraints
 - Preserve source material before transforming it.
 - Keep provenance attached to every derived record.
 - Favor small, composable pipeline steps over hidden cross-cutting logic.
 - Treat `data/raw/` and manifest outputs as canonical inputs to downstream extraction.
 - Do not introduce retrieval outputs that cannot be traced back to a source document.
+
+Last Reviewed: 2026-06-12
+Status: Verified
 
 ## Current State
 Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI crawls ResDAC listing pages, follows dataset and documentation links, probes linked assets, and writes:
@@ -63,6 +73,8 @@ Phase 4 QA is implemented in `src/cms_kb/qa.py`. The `cms-kb-qa` CLI validates c
 
 - `_workspace/06_qa_review.md`: pass/fix/redo verdict with finding details.
 
+Phase 5 CMS Research Ontology is implemented as part of extraction and QA. It normalizes program, category, and availability fields and writes ontology seed nodes and edges for program, category, availability, `belongs_to`, and `related_to` relationships.
+
 Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variables.py`. The `cms-kb-variables` CLI consumes parsed chunks, extracts conservative variable records only when definition evidence is present, and writes:
 
 - `data/metadata/variables.csv`: variable records with dataset, definition, aliases, years, source document, source URL, page, and chunk provenance.
@@ -72,3 +84,6 @@ Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variabl
 Phase 7 retrieval MVP is implemented in `src/cms_kb/retrieval.py`. The `cms-kb-search` CLI performs deterministic lexical search over dataset, document, variable, and parsed chunk records, returning stable result fields with `source_url` citations and local source document/page provenance when available.
 
 Agent-facing API layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
+
+Last Reviewed: 2026-06-12
+Status: Verified
