@@ -35,6 +35,7 @@ INVENTORY_FIELDNAMES = [
   "source_url",
   "source_title",
 ]
+TRANSIENT_HTTP_STATUSES = {429, 500, 502, 503, 504}
 
 
 def _normalize_whitespace(text: str) -> str:
@@ -444,7 +445,7 @@ def _update_page_row(
     row.content_type = content_type
   if status is not None:
     row.http_status = status
-    row.link_state = "live" if status < 400 else "dead"
+    row.link_state = _link_state_for_status(status)
   row.linked_documents = linked_documents
 
 
@@ -470,11 +471,19 @@ def _update_probe_row(row: InventoryRow, probe: ProbeResult) -> None:
   if probe.status is None:
     row.link_state = "unknown"
   else:
-    row.link_state = "live" if probe.status < 400 else "dead"
+    row.link_state = _link_state_for_status(probe.status)
   if not row.asset_kind:
     row.asset_kind = classify_asset_kind(
       row.url, row.content_type or probe.content_type
     )
+
+
+def _link_state_for_status(status: int) -> LinkState:
+  if status < 400:
+    return "live"
+  if status in TRANSIENT_HTTP_STATUSES:
+    return "unknown"
+  return "dead"
 
 
 def _sorted_rows(rows: dict[str, InventoryRow]) -> list[InventoryRow]:
@@ -490,6 +499,14 @@ def _sorted_rows(rows: dict[str, InventoryRow]) -> list[InventoryRow]:
 
 def _count_dead_links(rows: list[InventoryRow]) -> list[InventoryRow]:
   return [row for row in rows if row.link_state == "dead"]
+
+
+def _count_transient_links(rows: list[InventoryRow]) -> list[InventoryRow]:
+  return [
+    row
+    for row in rows
+    if row.link_state == "unknown" and row.http_status in TRANSIENT_HTTP_STATUSES
+  ]
 
 
 def _limit_reached(limit: int | None, count: int) -> bool:
@@ -755,9 +772,11 @@ def crawl_inventory(
 
   ordered_rows = _sorted_rows(rows)
   dead_links = _count_dead_links(ordered_rows)
+  transient_links = _count_transient_links(ordered_rows)
   summary = Counter(row.resource_kind for row in ordered_rows)
   summary["total_urls"] = len(ordered_rows)
   summary["dead_links"] = len(dead_links)
+  summary["transient_links"] = len(transient_links)
   summary["duplicates_skipped"] = duplicates_skipped[0]
 
   return InventoryResult(
@@ -799,6 +818,7 @@ def write_workspace_summary(result: InventoryResult) -> Path:
   summary_path = result.config.workspace_dir / "02_source_inventory.md"
   by_kind = Counter(row.resource_kind for row in result.rows)
   by_asset_kind = Counter(row.asset_kind for row in result.rows if row.asset_kind)
+  transient_links = _count_transient_links(result.rows)
   lines = [
     "# Source Inventory",
     "",
@@ -806,6 +826,7 @@ def write_workspace_summary(result: InventoryResult) -> Path:
     f"- Listing pages crawled: {sum(1 for row in result.rows if row.resource_kind == 'listing_page')}",
     f"- Unique URLs: {len(result.rows)}",
     f"- Dead links: {len(result.dead_links)}",
+    f"- Transient unresolved links: {len(transient_links)}",
     f"- Duplicate URLs skipped: {result.duplicates_skipped}",
     "",
     "## By Resource Kind",
@@ -839,6 +860,22 @@ def write_workspace_summary(result: InventoryResult) -> Path:
     if len(result.dead_links) > 25:
       lines.append(
         f"\n- Additional dead links omitted: {len(result.dead_links) - 25}"
+      )
+  else:
+    lines.append("- None")
+  lines.extend(["", "## Transient Unresolved Links", ""])
+  if transient_links:
+    lines.extend(
+      ["| url | source | status | content_type |", "| --- | --- | ---: | --- |"]
+    )
+    for row in transient_links[:25]:
+      lines.append(
+        f"| {row.url} | {row.source_url or ''} | {row.http_status or ''} | {row.content_type or ''} |"
+      )
+    if len(transient_links) > 25:
+      lines.append(
+        "\n- Additional transient unresolved links omitted: "
+        f"{len(transient_links) - 25}"
       )
   else:
     lines.append("- None")

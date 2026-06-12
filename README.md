@@ -201,12 +201,14 @@ uv run python scripts/validate_harness.py
 Run the Phase 0 inventory crawl against ResDAC:
 
 ```bash
-uv run cms-kb --max-pages 4 --request-delay-seconds 0.5
+uv run cms-kb --max-listing-pages 10 --request-delay-seconds 1.0
 ```
 
-`--max-pages`/`--max-listing-pages` limits ResDAC listing pages only. The
-crawler also follows discovered dataset/documentation pages and probes linked
-assets. For a bounded smoke test, add explicit follow-up limits:
+`--max-pages`/`--max-listing-pages` limits ResDAC listing pages only. Use a
+ceiling higher than the currently known listing count; the crawler stops when a
+later listing page repeats or contains no discovered links. The crawler also
+follows discovered dataset/documentation pages and probes linked assets. For a
+bounded smoke test, add explicit follow-up limits:
 
 ```bash
 uv run cms-kb --max-listing-pages 1 --max-follow-pages 10 --max-assets 10 --request-delay-seconds 0.5
@@ -216,6 +218,9 @@ Outputs:
 
 - `manifests/site_inventory.csv`
 - `_workspace/02_source_inventory.md`
+
+If `_workspace/02_source_inventory.md` reports transient unresolved links,
+rerun with a larger `--request-delay-seconds` before starting the archive pass.
 
 Run the Phase 1 archive pass against the inventory output:
 
@@ -421,3 +426,4 @@ knowledge representations, and retrieval infrastructure.
 - https://resdac.org/cms-data?page=1
 - https://resdac.org/cms-data?page=2
 - https://resdac.org/cms-data?page=3
+- https://resdac.org/cms-data?page=4

@@ -12,6 +12,7 @@ from cms_kb.inventory import (
   crawl_inventory,
   normalize_url,
   parse_page,
+  write_workspace_summary,
   write_inventory_csv,
 )
 
@@ -143,6 +144,112 @@ def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
   assert xlsx_url in dead
   assert dead[xlsx_url].link_state == "dead"
   assert dead[xlsx_url].http_status == 404
+
+
+def test_crawl_inventory_keeps_transient_page_status_unknown(
+  tmp_path: Path,
+) -> None:
+  listing_url = "https://resdac.org/cms-data?page=0"
+  dataset_url = "https://resdac.org/cms-data/files/pde"
+
+  pages = {
+    listing_url: HtmlFetchResult(
+      url=listing_url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html("/cms-data/files/pde"),
+    ),
+    dataset_url: HtmlFetchResult(
+      url=dataset_url,
+      status=429,
+      content_type="text/html",
+      html="",
+    ),
+  }
+
+  def fake_fetch(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> HtmlFetchResult:
+    return pages[url]
+
+  result = crawl_inventory(
+    InventoryConfig(
+      base_url="https://resdac.org/cms-data",
+      max_pages=1,
+      output_path=tmp_path / "cms-kb-test.csv",
+    ),
+    fetch_html_fn=fake_fetch,
+    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(
+      url=url, status=200
+    ),
+  )
+
+  row = next(row for row in result.rows if row.url == dataset_url)
+  assert row.http_status == 429
+  assert row.link_state == "unknown"
+  assert result.dead_links == []
+  assert result.summary["transient_links"] == 1
+
+
+def test_crawl_inventory_keeps_transient_asset_probe_status_unknown(
+  tmp_path: Path,
+) -> None:
+  listing_url = "https://resdac.org/cms-data?page=0"
+  pdf_url = "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+
+  result = crawl_inventory(
+    InventoryConfig(
+      base_url="https://resdac.org/cms-data",
+      max_pages=1,
+      output_path=tmp_path / "cms-kb-test.csv",
+    ),
+    fetch_html_fn=lambda url, timeout_seconds, user_agent: HtmlFetchResult(
+      url=listing_url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html(pdf_url),
+    ),
+    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(
+      url=url, status=503, content_type="application/pdf"
+    ),
+  )
+
+  row = next(row for row in result.rows if row.url == pdf_url)
+  assert row.http_status == 503
+  assert row.link_state == "unknown"
+  assert row.asset_kind == "pdf"
+  assert result.dead_links == []
+  assert result.summary["transient_links"] == 1
+
+
+def test_write_workspace_summary_lists_transient_unresolved_links(
+  tmp_path: Path,
+) -> None:
+  result = crawl_inventory(
+    InventoryConfig(
+      base_url="https://resdac.org/cms-data",
+      max_pages=1,
+      output_path=tmp_path / "cms-kb-test.csv",
+      workspace_dir=tmp_path / "_workspace",
+    ),
+    fetch_html_fn=lambda url, timeout_seconds, user_agent: HtmlFetchResult(
+      url="https://resdac.org/cms-data?page=0",
+      status=429,
+      content_type="text/html",
+      html="",
+    ),
+    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(
+      url=url, status=200
+    ),
+  )
+
+  summary_path = write_workspace_summary(result)
+
+  summary = summary_path.read_text(encoding="utf-8")
+  assert "- Dead links: 0" in summary
+  assert "- Transient unresolved links: 1" in summary
+  assert "## Transient Unresolved Links" in summary
+  assert "https://resdac.org/cms-data?page=0" in summary
 
 
 def test_crawl_inventory_stops_when_listing_page_repeats(tmp_path: Path) -> None:
