@@ -418,3 +418,198 @@ def test_run_qa_validation_failures(tmp_path: Path) -> None:
   errors = [f for f in result.findings if f.severity == "error"]
   assert any(f.field == "sha256" for f in errors)
   assert any(f.field == "local_path" for f in errors)
+
+
+def test_run_qa_empty_lists(tmp_path: Path) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  metadata_dir.mkdir(parents=True, exist_ok=True)
+  manifest_dir.mkdir(parents=True, exist_ok=True)
+
+  datasets_csv = metadata_dir / "datasets.csv"
+  datasets_csv.write_text("dataset_id,name,program,category,availability,source_url,local_path,sha256,extraction_notes\n")
+
+  documents_csv = metadata_dir / "documents.csv"
+  documents_csv.write_text("document_id,dataset_id,title,document_kind,source_url,local_path,sha256,content_type,extraction_notes\n")
+
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  write_archive_manifest([], manifest_path)
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, _ = run_qa(config)
+  assert result.verdict == "redo"
+  assert result.error_count == 2
+  errors = [f for f in result.findings if f.severity == "error"]
+  assert any(f.field == "dataset_count" for f in errors)
+  assert any(f.field == "document_count" for f in errors)
+
+
+def test_run_qa_duplicate_ids(tmp_path: Path) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  metadata_dir.mkdir(parents=True, exist_ok=True)
+  manifest_dir.mkdir(parents=True, exist_ok=True)
+  raw_dir.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  write_archive_manifest([
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=ds_sha,
+      local_path=str(ds_html),
+    )
+  ], manifest_path)
+
+  # Duplicate ds-1 rows
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["dataset_id", "name", "program", "category", "availability", "source_url", "local_path", "sha256", "extraction_notes"])
+    writer.writerow(["ds-1", "Dataset 1", "Medicare", "Claims", "Available", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, ""])
+    writer.writerow(["ds-1", "Dataset 1 Duplicate", "Medicare", "Claims", "Available", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, ""])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["document_id", "dataset_id", "title", "document_kind", "source_url", "local_path", "sha256", "content_type", "extraction_notes"])
+    writer.writerow(["doc-1", "ds-1", "Doc 1", "html", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, "text/html", ""])
+    # Duplicate doc-1 rows
+    writer.writerow(["doc-1", "ds-1", "Doc 1 Duplicate", "html", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, "text/html", ""])
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, _ = run_qa(config)
+  assert result.verdict == "redo"
+  assert result.error_count == 2
+  errors = [f for f in result.findings if f.severity == "error"]
+  assert any("Duplicate dataset_id" in f.message for f in errors)
+  assert any("Duplicate document_id" in f.message for f in errors)
+
+
+def test_run_qa_whitespace_and_failed_archive(tmp_path: Path) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  metadata_dir.mkdir(parents=True, exist_ok=True)
+  manifest_dir.mkdir(parents=True, exist_ok=True)
+  raw_dir.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  write_archive_manifest([
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="failed",  # NOT archived
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256="",
+      local_path="",
+      error="HTTP 404",
+    )
+  ], manifest_path)
+
+  # ds_id has trailing space: "ds-1 "
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["dataset_id", "name", "program", "category", "availability", "source_url", "local_path", "sha256", "extraction_notes"])
+    writer.writerow(["ds-1 ", "Dataset 1", "Medicare", "Claims", "Available", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, ""])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["document_id", "dataset_id", "title", "document_kind", "source_url", "local_path", "sha256", "content_type", "extraction_notes"])
+    writer.writerow(["doc-1", "ds-1", "Doc 1", "html", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, "text/html", ""])
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, _ = run_qa(config)
+  # Should trigger redo due to failed archive state error, and warning due to whitespace
+  assert result.verdict == "redo"
+  # 2 warnings expected: 1 for whitespace, 1 for missing document edges CSV file
+  assert result.warning_count == 2
+  assert result.error_count > 0
+  assert any("leading/trailing whitespace" in f.message for f in result.findings if f.severity == "warning")
+  assert any("archive state is 'failed'" in f.message for f in result.findings if f.severity == "error")
+
+
+def test_run_qa_corrupted_edges(tmp_path: Path) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  graph_dir = tmp_path / "data" / "graph"
+  metadata_dir.mkdir(parents=True, exist_ok=True)
+  manifest_dir.mkdir(parents=True, exist_ok=True)
+  raw_dir.mkdir(parents=True, exist_ok=True)
+  graph_dir.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  write_archive_manifest([
+    ArchiveManifestRow(
+      url="https://resdac.org/cms-data/files/ds-1",
+      resource_kind="dataset_page",
+      archive_state="archived",
+      downloaded_at_utc="2026-06-11T12:00:00Z",
+      sha256=ds_sha,
+      local_path=str(ds_html),
+    )
+  ], manifest_path)
+
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["dataset_id", "name", "program", "category", "availability", "source_url", "local_path", "sha256", "extraction_notes"])
+    writer.writerow(["ds-1", "Dataset 1", "Medicare", "Claims", "Available", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, ""])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow(["document_id", "dataset_id", "title", "document_kind", "source_url", "local_path", "sha256", "content_type", "extraction_notes"])
+    writer.writerow(["doc-1", "ds-1", "Doc 1", "html", "https://resdac.org/cms-data/files/ds-1", str(ds_html), ds_sha, "text/html", ""])
+
+  # Corrupt edges CSV content: missing required 'source_id' header column to raise KeyError
+  edges_csv = graph_dir / "document_edges.csv"
+  edges_csv.write_text("bad_header,target_id,relationship,source_url,local_path,sha256\nds-1,doc-1,has_document,https://resdac.org/cms-data/files/ds-1,local,sha\n")
+
+  config = QAConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    document_edges_path=edges_csv,
+    archive_manifest_path=manifest_path,
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, _ = run_qa(config)
+  # Parsing failure on edges is now an ERROR -> verdict is REDO
+  assert result.verdict == "redo"
+  assert result.error_count == 1
+  assert result.findings[0].field == "csv_parsing"
+

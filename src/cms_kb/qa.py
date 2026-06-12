@@ -234,6 +234,27 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
     summary_path = write_qa_workspace_summary(result)
     return result, summary_path
 
+  if not datasets:
+    findings.append(
+      QAFinding(
+        file="datasets.csv",
+        item_id="N/A",
+        field="dataset_count",
+        severity="error",
+        message="Datasets metadata file has zero rows of data",
+      )
+    )
+  if not documents:
+    findings.append(
+      QAFinding(
+        file="documents.csv",
+        item_id="N/A",
+        field="document_count",
+        severity="error",
+        message="Documents metadata file has zero rows of data",
+      )
+    )
+
   edges: list[DocumentEdgeRow] = []
   if config.document_edges_path.is_file():
     try:
@@ -244,7 +265,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
           file=str(config.document_edges_path),
           item_id="header/parse",
           field="csv_parsing",
-          severity="warning",
+          severity="error",
           message=f"Failed to read document edges: {exc}",
         )
       )
@@ -263,6 +284,9 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
   dataset_ids = {d.dataset_id for d in datasets}
   document_ids = {doc.document_id for doc in documents}
 
+  seen_dataset_ids: set[str] = set()
+  seen_document_ids: set[str] = set()
+
   # 3. Perform detailed checks on Datasets
   for d in datasets:
     datasets_checked += 1
@@ -280,6 +304,41 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
         )
       )
       continue
+
+    # Check duplicate dataset_id
+    if d_id in seen_dataset_ids:
+      findings.append(
+        QAFinding(
+          file="datasets.csv",
+          item_id=d_id,
+          field="dataset_id",
+          severity="error",
+          message=f"Duplicate dataset_id encountered: {d_id}",
+        )
+      )
+    seen_dataset_ids.add(d_id)
+
+    # Check leading/trailing whitespace
+    if d_id != d_id.strip():
+      findings.append(
+        QAFinding(
+          file="datasets.csv",
+          item_id=d_id,
+          field="dataset_id",
+          severity="warning",
+          message=f"dataset_id has leading/trailing whitespace: '{d_id}'",
+        )
+      )
+    if d.source_url != d.source_url.strip():
+      findings.append(
+        QAFinding(
+          file="datasets.csv",
+          item_id=d_id,
+          field="source_url",
+          severity="warning",
+          message=f"source_url has leading/trailing whitespace: '{d.source_url}'",
+        )
+      )
 
     # Check URL
     if not is_valid_url(d.source_url):
@@ -304,6 +363,22 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
             message=f"source_url not found in archive manifest: {d.source_url}",
           )
         )
+      else:
+        # Verify archive state is 'archived'
+        manifest_row = manifest_lookup[d.source_url]
+        if manifest_row.archive_state != "archived":
+          findings.append(
+            QAFinding(
+              file="datasets.csv",
+              item_id=d_id,
+              field="source_url",
+              severity="error",
+              message=(
+                f"source_url archive state is '{manifest_row.archive_state}' "
+                f"(expected 'archived') for dataset: {d_id}"
+              ),
+            )
+          )
 
     # Check local file existence and integrity
     local_path_str = d.local_path.strip()
@@ -388,6 +463,51 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
       )
       continue
 
+    # Check duplicate document_id
+    if doc_id in seen_document_ids:
+      findings.append(
+        QAFinding(
+          file="documents.csv",
+          item_id=doc_id,
+          field="document_id",
+          severity="error",
+          message=f"Duplicate document_id encountered: {doc_id}",
+        )
+      )
+    seen_document_ids.add(doc_id)
+
+    # Check leading/trailing whitespace
+    if doc_id != doc_id.strip():
+      findings.append(
+        QAFinding(
+          file="documents.csv",
+          item_id=doc_id,
+          field="document_id",
+          severity="warning",
+          message=f"document_id has leading/trailing whitespace: '{doc_id}'",
+        )
+      )
+    if doc.dataset_id != doc.dataset_id.strip():
+      findings.append(
+        QAFinding(
+          file="documents.csv",
+          item_id=doc_id,
+          field="dataset_id",
+          severity="warning",
+          message=f"dataset_id has leading/trailing whitespace: '{doc.dataset_id}'",
+        )
+      )
+    if doc.source_url != doc.source_url.strip():
+      findings.append(
+        QAFinding(
+          file="documents.csv",
+          item_id=doc_id,
+          field="source_url",
+          severity="warning",
+          message=f"source_url has leading/trailing whitespace: '{doc.source_url}'",
+        )
+      )
+
     # Reference integrity check
     if doc.dataset_id not in dataset_ids:
       findings.append(
@@ -423,6 +543,22 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
             message=f"source_url not found in archive manifest: {doc.source_url}",
           )
         )
+      else:
+        # Verify archive state is 'archived'
+        manifest_row = manifest_lookup[doc.source_url]
+        if manifest_row.archive_state != "archived":
+          findings.append(
+            QAFinding(
+              file="documents.csv",
+              item_id=doc_id,
+              field="source_url",
+              severity="error",
+              message=(
+                f"source_url archive state is '{manifest_row.archive_state}' "
+                f"(expected 'archived') for document: {doc_id}"
+              ),
+            )
+          )
 
     # Check local file existence and integrity
     local_path_str = doc.local_path.strip()
@@ -492,7 +628,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
   # 5. Perform detailed checks on Edges
   for edge_idx, edge in enumerate(edges):
     edges_checked += 1
-    edge_label = f"edge_{edge_idx}"
+    edge_label = f"Line {edge_idx + 2}"
 
     # Verify ID references
     if edge.source_id not in dataset_ids and edge.source_id not in document_ids:
@@ -589,7 +725,14 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
   else:
     # If there are major structural errors (e.g., missing CSV files, header parser failures,
     # or reference integrity violations), return redo.
-    major_error_types = {"csv_parsing", "file_existence", "dataset_id", "document_id"}
+    major_error_types = {
+      "csv_parsing",
+      "file_existence",
+      "dataset_id",
+      "document_id",
+      "dataset_count",
+      "document_count",
+    }
     has_major_error = any(f.field in major_error_types for f in errors)
 
     # Reference integrity check errors
