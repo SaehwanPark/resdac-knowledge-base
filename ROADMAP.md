@@ -280,7 +280,7 @@ Potential future sources:
 
 ---
 
-# Phase 6 — Hybrid Retrieval Layer
+# Phase 7 — Hybrid Retrieval Layer
 
 Now build retrieval.
 
@@ -333,7 +333,7 @@ BM25 excels here.
 
 ---
 
-# Phase 7 — Agent API
+# Phase 8 — Agent API
 
 Expose a small toolkit.
 
@@ -365,7 +365,7 @@ This dramatically reduces hallucinations.
 
 ---
 
-# Phase 8 — Evaluation Suite
+# Phase 9 — Evaluation Suite
 
 This is the part I'd insist on if Penn intends real usage.
 

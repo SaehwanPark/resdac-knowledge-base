@@ -271,6 +271,16 @@ Outputs:
 - `data/graph/variable_edges.csv`
 - `_workspace/07_variable_pack.md`
 
+Run the retrieval MVP against metadata and parsed chunks:
+
+```bash
+uv run cms-kb-search --query BENE_ID --limit 5 --json
+```
+
+The retrieval layer performs local lexical search over datasets, documents,
+variables, and chunks. Results include stable IDs, snippets, scores, and
+source citations.
+
 Run the QA Specialist after extraction, parsing, or variable updates:
 
 ```bash

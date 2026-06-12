@@ -69,4 +69,6 @@ Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variabl
 - `data/graph/variable_edges.csv`: dataset-to-variable `contains` edges with chunk provenance.
 - `_workspace/07_variable_pack.md`: variable extraction handoff summary with skipped candidates and failures.
 
-Retrieval and agent-facing API layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
+Phase 7 retrieval MVP is implemented in `src/cms_kb/retrieval.py`. The `cms-kb-search` CLI performs deterministic lexical search over dataset, document, variable, and parsed chunk records, returning stable result fields with `source_url` citations and local source document/page provenance when available.
+
+Agent-facing API layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
