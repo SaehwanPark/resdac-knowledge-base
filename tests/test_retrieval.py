@@ -6,6 +6,7 @@ from pathlib import Path
 
 from cms_kb.parsing import ChunkMetadata
 from cms_kb.retrieval import (
+  RetrievableRecord,
   RetrievalConfig,
   load_retrievable_records,
   main,
@@ -181,6 +182,23 @@ def test_search_records_rejects_empty_query(tmp_path: Path) -> None:
     assert "query must not be empty" in str(exc)
   else:
     raise AssertionError("empty query should fail")
+
+
+def test_search_records_returns_empty_when_records_have_no_searchable_tokens() -> None:
+  records = [
+    RetrievableRecord(
+      record_id="punctuation",
+      record_type="chunk",
+      title="Punctuation",
+      text="!!!",
+      dataset_id="ds",
+      source_url="https://example.com/source",
+      source_document="source.txt",
+      page=None,
+    )
+  ]
+
+  assert search_records("BENE_ID", records) == []
 
 
 def test_retrieval_cli_json_output(tmp_path: Path, capsys) -> None:

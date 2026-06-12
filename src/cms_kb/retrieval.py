@@ -322,6 +322,8 @@ def search_records(
 
   idf = _idf_by_token(records)
   token_lengths = [len(_tokens(record.text)) for record in records]
+  if sum(token_lengths) == 0:
+    return []
   average_length = sum(token_lengths) / len(token_lengths)
   scored_records = [
     (

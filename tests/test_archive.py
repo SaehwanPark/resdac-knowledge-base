@@ -192,6 +192,47 @@ def test_run_archive_records_failed_live_download_and_continues_writing_outputs(
   assert "HTTP Error 503" in summary_text
 
 
+def test_run_archive_rejects_unsafe_live_inventory_url(tmp_path: Path) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  live_row = InventoryRow(
+    url="file:///tmp/private.pdf",
+    title="Private",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=200,
+    link_state="live",
+  )
+  write_inventory_csv([live_row], inventory_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(url=url, status=200, body=b"unsafe")
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  assert download_calls == []
+  assert result.archived_count == 0
+  assert result.failed_count == 1
+  failed_row = result.manifest_rows[0]
+  assert failed_row.archive_state == "failed"
+  assert "absolute http(s)" in failed_row.error
+
+
 def test_run_archive_reuses_existing_raw_file_without_download(
   tmp_path: Path,
 ) -> None:
@@ -210,6 +251,21 @@ def test_run_archive_reuses_existing_raw_file_without_download(
   existing_path = archive_path_for_row(live_row, raw_root)
   existing_path.parent.mkdir(parents=True, exist_ok=True)
   existing_path.write_bytes(b"%PDF-1.4 existing pdf")
+  existing_sha = hashlib.sha256(b"%PDF-1.4 existing pdf").hexdigest()
+  manifest_output_path = tmp_path / "manifests" / "archive_manifest.csv"
+  archive.write_archive_manifest([
+    archive.ArchiveManifestRow(
+      url=live_row.url,
+      resource_kind=live_row.resource_kind,
+      asset_kind=live_row.asset_kind,
+      content_type=live_row.content_type,
+      http_status=live_row.http_status,
+      archive_state="archived",
+      downloaded_at_utc="2026-06-10T12:00:00Z",
+      sha256=existing_sha,
+      local_path=str(existing_path),
+    )
+  ], manifest_output_path)
   download_calls: list[str] = []
 
   def fake_download(
@@ -222,7 +278,7 @@ def test_run_archive_reuses_existing_raw_file_without_download(
     ArchiveConfig(
       inventory_path=inventory_path,
       raw_root=raw_root,
-      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      manifest_output_path=manifest_output_path,
       workspace_dir=tmp_path / "_workspace",
       request_delay_seconds=0.0,
     ),
@@ -237,9 +293,7 @@ def test_run_archive_reuses_existing_raw_file_without_download(
   archived_row = result.manifest_rows[0]
   assert archived_row.archive_state == "archived"
   assert archived_row.local_path == str(existing_path)
-  assert archived_row.sha256 == hashlib.sha256(
-    b"%PDF-1.4 existing pdf"
-  ).hexdigest()
+  assert archived_row.sha256 == existing_sha
 
 
 def test_archive_main_returns_nonzero_when_failures_are_present(

@@ -10,6 +10,7 @@ from cms_kb.inventory import (
   ProbeResult,
   build_arg_parser,
   crawl_inventory,
+  is_relevant_href,
   normalize_url,
   parse_page,
   write_workspace_summary,
@@ -57,6 +58,17 @@ def test_normalize_url_strips_www_and_fragments() -> None:
       "https://www.resdac.org/cms-data/files/pde#top",
     )
     == "https://resdac.org/cms-data/files/pde"
+  )
+
+
+def test_is_relevant_href_rejects_off_origin_cms_pages() -> None:
+  assert not is_relevant_href(
+    "https://resdac.org/cms-data",
+    "https://attacker.example/cms-data/files/pde",
+  )
+  assert is_relevant_href(
+    "https://resdac.org/cms-data",
+    "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf",
   )
 
 

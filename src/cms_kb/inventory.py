@@ -292,9 +292,12 @@ def parse_page(html: str) -> tuple[str, list[ParsedLink]]:
 def is_relevant_href(base_url: str, href: str) -> bool:
   absolute = normalize_url(base_url, href)
   parts = urlparse(absolute)
+  base_parts = urlparse(base_url)
+  if parts.scheme not in {"http", "https"} or not parts.netloc:
+    return False
   path = parts.path.lower()
   if path.startswith("/cms-data/files/"):
-    return True
+    return _strip_www(parts.netloc.lower()) == _strip_www(base_parts.netloc.lower())
   if path.endswith((".pdf", ".xlsx", ".xls", ".csv", ".zip")):
     return True
   return False

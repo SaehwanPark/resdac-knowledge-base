@@ -215,6 +215,73 @@ def test_run_parsing_success_flow(tmp_path: Path) -> None:
     assert first_chunk["page"] is None  # HTML page should be None
 
 
+def test_run_parsing_rejects_unsafe_output_ids(tmp_path: Path) -> None:
+  raw_root = tmp_path / "data" / "raw"
+  raw_root.mkdir(parents=True, exist_ok=True)
+  dataset_html = raw_root / "dataset.html"
+  dataset_html.write_text(
+    "<html><body><main>Dataset Page Content</main></body></html>",
+    encoding="utf-8",
+  )
+
+  metadata_dir = tmp_path / "data" / "metadata"
+  metadata_dir.mkdir(parents=True, exist_ok=True)
+
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "dataset_id",
+      "name",
+      "program",
+      "category",
+      "availability",
+      "source_url",
+      "local_path",
+      "sha256",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "../outside",
+      "Dataset Name",
+      "Program",
+      "Category",
+      "Available",
+      "https://example.com/ds",
+      str(dataset_html),
+      "fake-sha",
+      "",
+    ])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "document_id",
+      "dataset_id",
+      "title",
+      "document_kind",
+      "source_url",
+      "local_path",
+      "sha256",
+      "content_type",
+      "extraction_notes",
+    ])
+
+  config = ParsingConfig(
+    datasets_metadata_path=datasets_csv,
+    documents_metadata_path=documents_csv,
+    parsed_root=tmp_path / "data" / "parsed",
+    workspace_dir=tmp_path / "_workspace",
+  )
+
+  result, _ = run_parsing(config)
+
+  assert result.failure_count == 1
+  assert "dataset_id contains unsafe output path characters" in result.failures[0].reason
+  assert not (tmp_path / "data" / "outside.txt").exists()
+
+
 def test_missing_metadata_files(tmp_path: Path) -> None:
   config = ParsingConfig(
     datasets_metadata_path=tmp_path / "missing_datasets.csv",

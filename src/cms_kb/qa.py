@@ -967,7 +967,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
           file="document_edges.csv",
           item_id=edge_label,
           field="source_id",
-          severity="warning",
+          severity="error",
           message=f"source_id '{edge.source_id}' does not map to any dataset or document",
         )
       )
@@ -978,7 +978,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
           file="document_edges.csv",
           item_id=edge_label,
           field="target_id",
-          severity="warning",
+          severity="error",
           message=f"target_id '{edge.target_id}' does not map to any dataset or document",
         )
       )

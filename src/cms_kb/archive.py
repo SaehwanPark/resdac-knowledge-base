@@ -5,6 +5,10 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import ipaddress
+import os
+import socket
+import tempfile
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -44,6 +48,7 @@ HTML_RESOURCE_KINDS: tuple[ResourceKind, ...] = (
   "dataset_page",
   "documentation_page",
 )
+MAX_DOWNLOAD_BYTES = 512 * 1024 * 1024
 
 
 class ArchiveConfig(BaseModel):
@@ -98,11 +103,24 @@ def _request_bytes_with_retry(
   for attempt in range(3):
     try:
       with urlopen(request, timeout=timeout_seconds) as response:
+        body = bytearray()
+        while True:
+          chunk = response.read(1024 * 1024)
+          if not chunk:
+            break
+          body.extend(chunk)
+          if len(body) > MAX_DOWNLOAD_BYTES:
+            return DownloadResult(
+              url=request.full_url,
+              status=int(response.status),
+              content_type=response.headers.get_content_type(),
+              error=f"download exceeds maximum size of {MAX_DOWNLOAD_BYTES} bytes",
+            )
         return DownloadResult(
           url=request.full_url,
           status=int(response.status),
           content_type=response.headers.get_content_type(),
-          body=response.read(),
+          body=bytes(body),
         )
     except HTTPError as exc:
       if exc.code in retry_statuses and attempt < 2:
@@ -222,6 +240,21 @@ def _manifest_row_for_failure(
   )
 
 
+def _download_failure(
+  row: InventoryRow, error: str, downloaded_at_utc: str
+) -> ArchiveManifestRow:
+  return _manifest_row_for_failure(
+    row,
+    DownloadResult(
+      url=row.url,
+      status=row.http_status,
+      content_type=row.content_type or None,
+      error=error,
+    ),
+    downloaded_at_utc,
+  )
+
+
 def _manifest_row_for_success(
   row: InventoryRow,
   *,
@@ -244,6 +277,94 @@ def _manifest_row_for_success(
     sha256=sha256,
     local_path=str(local_path),
   )
+
+
+def _host_is_private_or_local(hostname: str) -> bool:
+  try:
+    addresses = [ipaddress.ip_address(hostname)]
+  except ValueError:
+    try:
+      resolved = socket.getaddrinfo(hostname, None, type=socket.SOCK_STREAM)
+    except socket.gaierror:
+      return False
+    addresses = [
+      ipaddress.ip_address(result[4][0])
+      for result in resolved
+      if result[4] and result[4][0]
+    ]
+
+  return any(
+    address.is_private
+    or address.is_loopback
+    or address.is_link_local
+    or address.is_multicast
+    or address.is_reserved
+    or address.is_unspecified
+    for address in addresses
+  )
+
+
+def _archive_url_error(url: str) -> str:
+  parsed = urlparse(url)
+  if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+    return "archive URL must be an absolute http(s) URL"
+  if parsed.hostname.lower() == "localhost":
+    return "archive URL host resolves to a private or local address"
+  if _host_is_private_or_local(parsed.hostname):
+    return "archive URL host resolves to a private or local address"
+  return ""
+
+
+def _write_bytes_atomically(local_path: Path, body: bytes) -> str:
+  local_path.parent.mkdir(parents=True, exist_ok=True)
+  hasher = hashlib.sha256()
+  with tempfile.NamedTemporaryFile(
+    mode="wb",
+    dir=local_path.parent,
+    prefix=f".{local_path.name}.",
+    delete=False,
+  ) as handle:
+    temp_path = Path(handle.name)
+    hasher.update(body)
+    handle.write(body)
+  try:
+    os.replace(temp_path, local_path)
+  except Exception:
+    temp_path.unlink(missing_ok=True)
+    raise
+  return hasher.hexdigest()
+
+
+def _read_trusted_previous_manifest(
+  manifest_path: Path,
+) -> dict[tuple[str, str], str]:
+  if not manifest_path.is_file():
+    return {}
+
+  trusted: dict[tuple[str, str], str] = {}
+  with manifest_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    for row in reader:
+      if row.get("archive_state") != "archived":
+        continue
+      url = (row.get("url") or "").strip()
+      local_path = (row.get("local_path") or "").strip()
+      sha256 = (row.get("sha256") or "").strip()
+      if url and local_path and sha256:
+        trusted[(url, local_path)] = sha256
+  return trusted
+
+
+def _existing_file_is_trusted(
+  row: InventoryRow,
+  local_path: Path,
+  previous_manifest: dict[tuple[str, str], str],
+) -> bool:
+  expected_sha256 = previous_manifest.get((row.url, str(local_path)))
+  if expected_sha256 is None:
+    return False
+  body = local_path.read_bytes()
+  return hashlib.sha256(body).hexdigest() == expected_sha256
 
 
 def _manifest_row_for_existing_file(
@@ -325,6 +446,7 @@ def run_archive(
   archived_count = 0
   skipped_count = 0
   failed_count = 0
+  previous_manifest = _read_trusted_previous_manifest(config.manifest_output_path)
 
   for row in inventory_rows:
     if not _should_archive(row):
@@ -333,8 +455,18 @@ def run_archive(
       continue
 
     downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
+    url_error = _archive_url_error(row.url)
+    if url_error:
+      manifest_rows.append(_download_failure(row, url_error, downloaded_at_utc))
+      failed_count += 1
+      continue
+
     local_path = archive_path_for_row(row, config.raw_root)
-    if local_path.is_file() and local_path.stat().st_size > 0:
+    if (
+      local_path.is_file()
+      and local_path.stat().st_size > 0
+      and _existing_file_is_trusted(row, local_path, previous_manifest)
+    ):
       manifest_rows.append(
         _manifest_row_for_existing_file(
           row,
@@ -357,14 +489,14 @@ def run_archive(
       continue
 
     local_path.parent.mkdir(parents=True, exist_ok=True)
-    local_path.write_bytes(download.body)
+    sha256 = _write_bytes_atomically(local_path, download.body)
     manifest_rows.append(
       _manifest_row_for_success(
         row,
         http_status=download.status,
         content_type=download.content_type or row.content_type,
         downloaded_at_utc=downloaded_at_utc,
-        sha256=hashlib.sha256(download.body).hexdigest(),
+        sha256=sha256,
         local_path=local_path,
       )
     )

@@ -68,6 +68,22 @@ class ParsingResult(BaseModel):
     return len(self.failures)
 
 
+SAFE_OUTPUT_ID_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_.-]*$")
+
+
+def _safe_output_id_error(field: str, value: str) -> str:
+  if not value.strip():
+    return f"{field} must not be empty"
+  if (
+    value != Path(value).name
+    or Path(value).is_absolute()
+    or ".." in Path(value).parts
+    or not SAFE_OUTPUT_ID_PATTERN.fullmatch(value)
+  ):
+    return f"{field} contains unsafe output path characters: {value}"
+  return ""
+
+
 def read_datasets_csv(input_path: Path) -> list[DatasetMetadataRow]:
   # Let FileNotFoundError propagate if the file is missing
   with input_path.open(newline="", encoding="utf-8") as handle:
@@ -261,6 +277,17 @@ def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
   with jsonl_path.open("w", encoding="utf-8") as f_jsonl:
     # 1. Parse Datasets (all are HTML files)
     for dataset in datasets:
+      dataset_id_error = _safe_output_id_error("dataset_id", dataset.dataset_id)
+      if dataset_id_error:
+        failures.append(
+          ParsingFailure(
+            url=dataset.source_url,
+            local_path=dataset.local_path,
+            reason=dataset_id_error,
+          )
+        )
+        continue
+
       local_path_str = dataset.local_path.strip()
       if not local_path_str:
         failures.append(
@@ -338,6 +365,28 @@ def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
 
     # 2. Parse Documents (can be HTML or PDF)
     for doc in documents:
+      document_id_error = _safe_output_id_error("document_id", doc.document_id)
+      if document_id_error:
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path=doc.local_path,
+            reason=document_id_error,
+          )
+        )
+        continue
+
+      dataset_id_error = _safe_output_id_error("dataset_id", doc.dataset_id)
+      if dataset_id_error:
+        failures.append(
+          ParsingFailure(
+            url=doc.source_url,
+            local_path=doc.local_path,
+            reason=dataset_id_error,
+          )
+        )
+        continue
+
       # Stop/fail if a document cannot be mapped to any dataset ID
       if doc.dataset_id not in valid_dataset_ids:
         failures.append(
