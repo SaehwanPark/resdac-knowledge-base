@@ -1351,7 +1351,12 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
       "document_count",
       "node_class",
       "node_id",
+      "variable_id",
+      "variable_name",
       "source_id",
+      "target_id",
+      "source_document",
+      "chunk_id",
     }
     has_major_error = any(f.field in major_error_types for f in errors)
 
