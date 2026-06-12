@@ -35,6 +35,7 @@ that archive so researchers and tools can answer questions with provenance.
 - Extract dataset, document, ontology, and variable metadata.
 - Parse documentation into provenance-bearing text chunks.
 - Search locally across datasets, documents, variables, and parsed chunks.
+- Return citation-preserving retrieval context for downstream agent workflows.
 - Run QA checks over checksums, source URLs, local paths, and references.
 
 Example questions the knowledge base is meant to support:
@@ -79,6 +80,12 @@ Run local retrieval after metadata and parsed chunks exist:
 
 ```bash
 uv run cms-kb-search --query BENE_ID --limit 5 --json
+```
+
+Return JSON context for an agent workflow:
+
+```bash
+uv run cms-kb-agent-context --query BENE_ID --limit 5 --json
 ```
 
 For the full phase-by-phase command list, see `docs/pipeline.md`.

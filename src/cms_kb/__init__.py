@@ -1,5 +1,12 @@
 """CMS KB inventory and crawl helpers."""
 
+from .agent_api import (
+  AgentCitation,
+  AgentContextConfig,
+  AgentContextHit,
+  AgentContextResponse,
+  build_agent_context,
+)
 from .archive import (
   ArchiveConfig,
   ArchiveManifestRow,
@@ -51,6 +58,10 @@ from .variables import (
 )
 
 __all__ = [
+  "AgentCitation",
+  "AgentContextConfig",
+  "AgentContextHit",
+  "AgentContextResponse",
   "ArchiveConfig",
   "ArchiveManifestRow",
   "ArchiveResult",
@@ -80,6 +91,7 @@ __all__ = [
   "VariableExtractionFailure",
   "VariableExtractionResult",
   "VariableMetadataRow",
+  "build_agent_context",
   "crawl_inventory",
   "main",
   "run_archive",

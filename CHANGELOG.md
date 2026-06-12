@@ -20,3 +20,4 @@
 - Phase 5 CMS Research Ontology with field normalization (program, category, availability) and graph nodes/edges seed extraction (belongs_to, related_to) plus QA auditing integration.
 - Phase 6 variable-level metadata CLI with conservative parsed-chunk extraction, `variables.csv`, `variable_edges.csv`, and `_workspace/07_variable_pack.md` handoff summary.
 - Phase 7 retrieval MVP CLI with deterministic lexical search over datasets, documents, variables, and parsed chunks while preserving source citations.
+- Minimal agent-facing context CLI and Python API that wrap retrieval results in stable, citation-preserving output for downstream agent workflows.

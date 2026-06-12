@@ -25,6 +25,8 @@ The current Python implementation includes:
 - Conservative variable-level metadata extraction from parsed chunks.
 - Deterministic lexical retrieval across datasets, documents, variables, and
   parsed chunks.
+- Minimal agent-facing context retrieval that returns citation-preserving JSON
+  and Pydantic models.
 
 `SPEC.md` tracks implementation lifecycle state with mutually exclusive
 `Past`, `Present`, and `Future` sections.
@@ -63,6 +65,9 @@ The pipeline can generate these artifacts:
 - `data/parsed/pdf/...`
 - `data/parsed/chunks/...`
 - `data/parsed/chunks.jsonl`
+
+Agent context results are generated on demand from the retrieval inputs and are
+not retained as derived artifacts.
 
 When these files are generated and intentionally retained, update this file
 with the artifact paths, row counts or file counts, and the command used to

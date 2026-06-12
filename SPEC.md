@@ -20,6 +20,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 5 CMS Research Ontology is implemented, normalizing program, category, and availability fields from HTML, and extracting graph node and edge seeds (belongs_to, related_to) with QA validation.
 - Phase 6 variable-level metadata extraction is implemented, deriving conservative variable records from parsed chunks and writing provenance-bearing variable metadata and graph edges.
 - Phase 7 retrieval MVP is implemented, performing deterministic local lexical search over datasets, documents, variables, and parsed chunks while preserving source citations.
+- Minimal agent-facing context API is implemented, exposing retrieval results as citation-preserving Pydantic models and JSON CLI output.
 - Documentation state model clarified so Past, Present, and Future are mutually exclusive and completed phases no longer appear as active work.
 
 ## Present
@@ -27,6 +28,6 @@ checked-in corpus coverage, and retained generated data artifacts.
 
 ## Future
 - Expand archived documentation beyond the current ResDAC source set to related CMS, CCW, TAF, VRDC, Medicare Advantage encounter, and Medicaid technical documentation sources.
-- Add agent-facing APIs or tools on top of the archived corpus, metadata catalog, graph seeds, variable records, and retrieval layer.
+- Add richer agent integrations or tools on top of the archived corpus, metadata catalog, graph seeds, variable records, retrieval layer, and minimal context API.
 - Add hybrid retrieval beyond the deterministic lexical MVP, including optional semantic retrieval or reranking while preserving source citations.
 - Add benchmark evaluation with gold-standard CMS research questions, expected datasets or variables, and citation accuracy checks.
