@@ -123,3 +123,12 @@ uv run cms-kb-search --query BENE_ID --limit 5 --json
 ```
 
 Results include stable IDs, snippets, scores, and source citations.
+
+Return the same retrieval evidence as JSON context for agent workflows:
+
+```bash
+uv run cms-kb-agent-context --query BENE_ID --limit 5 --json
+```
+
+The context response nests source URL, local source document, and page
+provenance under each result citation.
