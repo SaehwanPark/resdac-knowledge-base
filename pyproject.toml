@@ -16,6 +16,7 @@ cms-kb-archive = "cms_kb.archive:main"
 cms-kb-extract = "cms_kb.extraction:main"
 cms-kb-parse = "cms_kb.parsing:main"
 cms-kb-qa = "cms_kb.qa:main"
+cms-kb-variables = "cms_kb.variables:main"
 
 [dependency-groups]
 dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]

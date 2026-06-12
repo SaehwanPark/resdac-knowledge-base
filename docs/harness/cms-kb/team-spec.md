@@ -24,6 +24,7 @@ The harness uses deterministic `_workspace/` files so every phase can be inspect
 - `_workspace/04_extraction_pack.md`: extracted dataset, variable, and relationship records.
 - `_workspace/05_parsing_pack.md`: parsed text paths and text chunk JSONs with full provenance.
 - `_workspace/06_qa_review.md`: pass/fix/redo verdict with reasons and missing evidence.
+- `_workspace/07_variable_pack.md`: variable-level records, graph edges, skipped candidates, and extraction failures.
 
 Canonical durable outputs, when the repo later materializes writers, are `data/raw/`, `data/metadata/`, and `data/graph/`. The harness itself only depends on the markdown handoffs above.
 
@@ -45,4 +46,3 @@ Canonical durable outputs, when the repo later materializes writers, are `data/r
 - Do not add an experiment ledger in this harness version.
 - Do not add a second coordination layer.
 - Do not create repo-wide guidance files unless the repository later needs always-loaded instructions.
-

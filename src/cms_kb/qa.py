@@ -20,12 +20,15 @@ from .extraction import (
   OntologyEdgeRow,
   read_archive_manifest_csv,
 )
+from .variables import VariableEdgeRow, VariableMetadataRow
 
 
 class QAConfig(BaseModel):
   datasets_metadata_path: Path = Path("data/metadata/datasets.csv")
   documents_metadata_path: Path = Path("data/metadata/documents.csv")
+  variables_metadata_path: Path = Path("data/metadata/variables.csv")
   document_edges_path: Path = Path("data/graph/document_edges.csv")
+  variable_edges_path: Path = Path("data/graph/variable_edges.csv")
   ontology_nodes_path: Path = Path("data/graph/ontology_nodes.csv")
   ontology_edges_path: Path = Path("data/graph/ontology_edges.csv")
   archive_manifest_path: Path = Path("manifests/archive_manifest.csv")
@@ -46,6 +49,7 @@ class QAResult(BaseModel):
   findings: list[QAFinding] = Field(default_factory=list)
   datasets_checked: int = 0
   documents_checked: int = 0
+  variables_checked: int = 0
   edges_checked: int = 0
 
   @property
@@ -126,6 +130,86 @@ def read_document_edges_csv(input_path: Path) -> list[DocumentEdgeRow]:
   return rows
 
 
+def read_variables_csv(input_path: Path) -> list[VariableMetadataRow]:
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      raise ValueError(f"variables CSV has no header: {input_path}")
+
+    required_headers = [
+      "variable_id",
+      "variable_name",
+      "dataset_id",
+      "definition",
+      "aliases",
+      "years",
+      "source_document",
+      "source_url",
+      "page",
+      "chunk_id",
+      "extraction_notes",
+    ]
+    missing = [h for h in required_headers if h not in reader.fieldnames]
+    if missing:
+      raise ValueError(f"variables CSV is missing columns: {', '.join(missing)}")
+
+    rows: list[VariableMetadataRow] = []
+    for raw_row in reader:
+      page_value = raw_row.get("page", "").strip()
+      rows.append(
+        VariableMetadataRow(
+          variable_id=raw_row["variable_id"],
+          variable_name=raw_row["variable_name"],
+          dataset_id=raw_row["dataset_id"],
+          definition=raw_row["definition"],
+          aliases=raw_row.get("aliases", ""),
+          years=raw_row.get("years", ""),
+          source_document=raw_row["source_document"],
+          source_url=raw_row["source_url"],
+          page=int(page_value) if page_value else None,
+          chunk_id=raw_row["chunk_id"],
+          extraction_notes=raw_row.get("extraction_notes", ""),
+        )
+      )
+  return rows
+
+
+def read_variable_edges_csv(input_path: Path) -> list[VariableEdgeRow]:
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      raise ValueError(f"variable edges CSV has no header: {input_path}")
+
+    required_headers = [
+      "source_id",
+      "target_id",
+      "relationship",
+      "source_url",
+      "source_document",
+      "page",
+      "chunk_id",
+    ]
+    missing = [h for h in required_headers if h not in reader.fieldnames]
+    if missing:
+      raise ValueError(f"variable edges CSV is missing columns: {', '.join(missing)}")
+
+    rows: list[VariableEdgeRow] = []
+    for raw_row in reader:
+      page_value = raw_row.get("page", "").strip()
+      rows.append(
+        VariableEdgeRow(
+          source_id=raw_row["source_id"],
+          target_id=raw_row["target_id"],
+          relationship=raw_row.get("relationship", "contains"),
+          source_url=raw_row["source_url"],
+          source_document=raw_row["source_document"],
+          page=int(page_value) if page_value else None,
+          chunk_id=raw_row["chunk_id"],
+        )
+      )
+  return rows
+
+
 def read_ontology_nodes_csv(input_path: Path) -> list[OntologyNodeRow]:
   with input_path.open(newline="", encoding="utf-8") as handle:
     reader = csv.DictReader(handle)
@@ -198,6 +282,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
   findings: list[QAFinding] = []
   datasets_checked = 0
   documents_checked = 0
+  variables_checked = 0
   edges_checked = 0
 
   # 1. Basic File Existence Checks (Fatal if missing datasets/documents/manifest)
@@ -291,8 +376,38 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
     return result, summary_path
 
   # Load ontology nodes and edges if present
+  variables: list[VariableMetadataRow] = []
+  variable_edges: list[VariableEdgeRow] = []
   ontology_nodes: list[OntologyNodeRow] = []
   ontology_edges: list[OntologyEdgeRow] = []
+
+  if config.variables_metadata_path.is_file():
+    try:
+      variables = read_variables_csv(config.variables_metadata_path)
+    except Exception as exc:
+      findings.append(
+        QAFinding(
+          file=str(config.variables_metadata_path),
+          item_id="header/parse",
+          field="csv_parsing",
+          severity="error",
+          message=f"Failed to read variables metadata: {exc}",
+        )
+      )
+
+  if config.variable_edges_path.is_file():
+    try:
+      variable_edges = read_variable_edges_csv(config.variable_edges_path)
+    except Exception as exc:
+      findings.append(
+        QAFinding(
+          file=str(config.variable_edges_path),
+          item_id="header/parse",
+          field="csv_parsing",
+          severity="error",
+          message=f"Failed to read variable edges: {exc}",
+        )
+      )
 
   if config.ontology_nodes_path.is_file():
     try:
@@ -371,10 +486,12 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
   # Index datasets by ID for reference integrity checks
   dataset_ids = {d.dataset_id for d in datasets}
   document_ids = {doc.document_id for doc in documents}
+  variable_ids = {variable.variable_id for variable in variables}
   ontology_node_ids = {node.node_id for node in ontology_nodes}
 
   seen_dataset_ids: set[str] = set()
   seen_document_ids: set[str] = set()
+  seen_variable_ids: set[str] = set()
   seen_ontology_node_ids: set[str] = set()
 
   # 3. Perform detailed checks on Datasets
@@ -715,6 +832,129 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
             )
           )
 
+  # 4b. Perform detailed checks on Variables
+  for variable in variables:
+    variables_checked += 1
+    variable_id = variable.variable_id
+
+    if not variable_id or not variable_id.strip():
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id="N/A",
+          field="variable_id",
+          severity="error",
+          message="Variable row has empty variable_id",
+        )
+      )
+      continue
+
+    if variable_id in seen_variable_ids:
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="variable_id",
+          severity="error",
+          message=f"Duplicate variable_id encountered: {variable_id}",
+        )
+      )
+    seen_variable_ids.add(variable_id)
+
+    if variable.variable_id != variable.variable_id.strip():
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="variable_id",
+          severity="warning",
+          message=f"variable_id has leading/trailing whitespace: '{variable.variable_id}'",
+        )
+      )
+    if variable.dataset_id not in dataset_ids:
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="dataset_id",
+          severity="error",
+          message=f"dataset_id '{variable.dataset_id}' does not exist in datasets metadata",
+        )
+      )
+    if not variable.variable_name.strip():
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="variable_name",
+          severity="error",
+          message="Variable row has empty variable_name",
+        )
+      )
+    if not variable.definition.strip():
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="definition",
+          severity="warning",
+          message="Variable row has empty definition",
+        )
+      )
+    if not variable.chunk_id.strip():
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="chunk_id",
+          severity="error",
+          message="Variable row has empty chunk_id",
+        )
+      )
+
+    if not is_valid_url(variable.source_url):
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="source_url",
+          severity="error",
+          message=f"Invalid source_url: {variable.source_url}",
+        )
+      )
+    elif variable.source_url not in manifest_lookup:
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="source_url",
+          severity="error",
+          message=f"source_url not found in archive manifest: {variable.source_url}",
+        )
+      )
+
+    source_document = variable.source_document.strip()
+    if not source_document:
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="source_document",
+          severity="error",
+          message="Empty source_document for variable",
+        )
+      )
+    elif not Path(source_document).is_file():
+      findings.append(
+        QAFinding(
+          file="variables.csv",
+          item_id=variable_id,
+          field="source_document",
+          severity="error",
+          message=f"Source document does not exist: {source_document}",
+        )
+      )
+
   # 5. Perform detailed checks on Edges
   for edge_idx, edge in enumerate(edges):
     edges_checked += 1
@@ -803,6 +1043,98 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
               message=f"Error computing checksum: {exc}",
             )
           )
+
+  # 5a. Perform detailed checks on Variable Edges
+  for edge_idx, edge in enumerate(variable_edges):
+    edges_checked += 1
+    edge_label = f"Line {edge_idx + 2}"
+
+    if edge.source_id not in dataset_ids:
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="source_id",
+          severity="error",
+          message=f"source_id '{edge.source_id}' does not map to any dataset",
+        )
+      )
+
+    if edge.target_id not in variable_ids:
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="target_id",
+          severity="error",
+          message=f"target_id '{edge.target_id}' does not map to any variable",
+        )
+      )
+
+    if edge.relationship != "contains":
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="relationship",
+          severity="warning",
+          message=f"Unexpected variable relationship: {edge.relationship}",
+        )
+      )
+
+    if not is_valid_url(edge.source_url):
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="source_url",
+          severity="error",
+          message=f"Invalid source_url: {edge.source_url}",
+        )
+      )
+    elif edge.source_url not in manifest_lookup:
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="source_url",
+          severity="error",
+          message=f"source_url not found in archive manifest: {edge.source_url}",
+        )
+      )
+
+    source_document = edge.source_document.strip()
+    if not source_document:
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="source_document",
+          severity="error",
+          message="Empty source_document for variable edge",
+        )
+      )
+    elif not Path(source_document).is_file():
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="source_document",
+          severity="error",
+          message=f"Source document does not exist: {source_document}",
+        )
+      )
+
+    if not edge.chunk_id.strip():
+      findings.append(
+        QAFinding(
+          file="variable_edges.csv",
+          item_id=edge_label,
+          field="chunk_id",
+          severity="error",
+          message="Variable edge has empty chunk_id",
+        )
+      )
 
   # 5b. Perform detailed checks on Ontology Nodes and Edges
   for node in ontology_nodes:
@@ -913,7 +1245,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
             )
           )
 
-  valid_target_ids = dataset_ids | document_ids | ontology_node_ids
+  valid_target_ids = dataset_ids | document_ids | variable_ids | ontology_node_ids
   for edge_idx, edge in enumerate(ontology_edges):
     edge_label = f"Line {edge_idx + 2}"
 
@@ -1019,7 +1351,12 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
       "document_count",
       "node_class",
       "node_id",
+      "variable_id",
+      "variable_name",
       "source_id",
+      "target_id",
+      "source_document",
+      "chunk_id",
     }
     has_major_error = any(f.field in major_error_types for f in errors)
 
@@ -1040,6 +1377,7 @@ def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
     findings=findings,
     datasets_checked=datasets_checked,
     documents_checked=documents_checked,
+    variables_checked=variables_checked,
     edges_checked=edges_checked + len(ontology_edges),
   )
 
@@ -1061,6 +1399,7 @@ def write_qa_workspace_summary(result: QAResult) -> Path:
     "",
     f"- Datasets Checked: {result.datasets_checked}",
     f"- Documents Checked: {result.documents_checked}",
+    f"- Variables Checked: {result.variables_checked}",
     f"- Edges Checked: {result.edges_checked}",
     f"- Total Findings: {len(result.findings)}",
     f"  - Errors: {result.error_count}",
@@ -1099,9 +1438,19 @@ def build_arg_parser() -> argparse.ArgumentParser:
     default=Path("data/metadata/documents.csv"),
   )
   parser.add_argument(
+    "--variables-metadata",
+    type=Path,
+    default=Path("data/metadata/variables.csv"),
+  )
+  parser.add_argument(
     "--document-edges",
     type=Path,
     default=Path("data/graph/document_edges.csv"),
+  )
+  parser.add_argument(
+    "--variable-edges",
+    type=Path,
+    default=Path("data/graph/variable_edges.csv"),
   )
   parser.add_argument(
     "--ontology-nodes",
@@ -1128,7 +1477,9 @@ def main(argv: list[str] | None = None) -> int:
   config = QAConfig(
     datasets_metadata_path=args.datasets_metadata,
     documents_metadata_path=args.documents_metadata,
+    variables_metadata_path=args.variables_metadata,
     document_edges_path=args.document_edges,
+    variable_edges_path=args.variable_edges,
     ontology_nodes_path=args.ontology_nodes,
     ontology_edges_path=args.ontology_edges,
     archive_manifest_path=args.archive_manifest,

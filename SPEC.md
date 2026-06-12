@@ -10,8 +10,8 @@
 - Phase 3 document parsing is implemented, parsing text from HTML/PDFs and generating text chunks with preserved provenance.
 - Phase 4 QA Specialist is implemented, performing checksum and url checks to audit provenance, reporting to _workspace/06_qa_review.md.
 - Phase 5 CMS Research Ontology is implemented, normalizing program, category, and availability fields from HTML, and extracting graph node and edge seeds (belongs_to, related_to) with QA validation.
+- Phase 6 variable-level metadata extraction is implemented, deriving conservative variable records from parsed chunks and writing provenance-bearing variable metadata and graph edges.
 
 ## Future
 - Preserve ResDAC and related CMS documentation sources into canonical raw archives.
-- Extract variable-level metadata with provenance (Phase 6).
 - Build retrieval and citation-backed agent support on top of the archived corpus.
