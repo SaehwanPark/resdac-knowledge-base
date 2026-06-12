@@ -33,6 +33,12 @@ from .parsing import (
   ParsingResult,
   run_parsing,
 )
+from .qa import (
+  QAConfig,
+  QAFinding,
+  QAResult,
+  run_qa,
+)
 
 __all__ = [
   "ArchiveConfig",
@@ -54,10 +60,14 @@ __all__ = [
   "ParsingFailure",
   "ParsingResult",
   "ProbeResult",
+  "QAConfig",
+  "QAFinding",
+  "QAResult",
   "crawl_inventory",
   "main",
   "run_archive",
   "run_extraction",
   "run_inventory",
   "run_parsing",
+  "run_qa",
 ]
