@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s10__chunk_3",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 10,
+  "text": "with participants TINs used in financial reconciliation. Most values are 6 or 7 characters; a very small number of CCNs are 5, 8 or 9 characters. CHAR 9\nACO_NUM ACO_NUM ACO_NUM Encrypted ACO Identifier. Format: A##### CHAR 6\nNPI_Name NPI_NAME Name of Provider Associated with the NPI Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS) CHAR 100\nTIN_LBN TIN_LBN Legal Business Name Associated with the ACO Participant TIN",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

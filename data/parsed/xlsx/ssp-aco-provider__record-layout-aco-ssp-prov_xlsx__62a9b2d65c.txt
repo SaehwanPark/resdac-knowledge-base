@@ -1,0 +1,354 @@
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2013 Provider File
+Version — March 2025
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a physician reported by the ACO on its attestation list (these records will include both a TIN and CCN on the same line as the NPI) or provider (physician or non-physician) who reassigned billing rights to an ACO participant in the performance period (based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS))	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number	CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list used in financial reconciliation	CHAR	6
+ACO_NUM	ACO_NUM	ACO Identifier	Encrypted ACO Identifier. Format: A#####	CHAR	6
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	Legal Business Name Associated with the ACO Participant TIN	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	ACO Agreement Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN included on the ACO's certified participant list used in financial reconciliation, as reported by the ACO. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital Method II 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2021 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period. This field will be blank in the initial version of the file.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS). This field will be blank in the initial version of the file.	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS). This field will be blank in the initial version of the file.	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. This field will be blank in the initial version of the file. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the initial version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank. This field will be blank in the initial version of the file.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2022 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period. This field will be blank in the preliminary version of the file.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS). This field will be blank in the initial version of the file.	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS). This field will be blank in the preliminary version of the file.	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. This field will be blank in the preliminary version of the file. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the preliminary version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank. This field will be blank in the preliminary version of the file.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2023 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS).	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS).	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the preliminary version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2024 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS).	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS).	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the preliminary version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2025 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS).	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS).	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the preliminary version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2026 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS).	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS).	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the preliminary version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5
+
+NOTES:
+Provider RIFs from 2013 through 2017 included an encrypted, 6-character ACO identifier: ACO_NUM. Starting in 2018, the Provider RIFs include the 5-character ACO identifier used by the Shared Savings Program as part of its operations: ACO_ID. A crosswalk of the ACO_NUM and ACO_ID identifiers is available as an attachment to the Performance Year 2019 public-use files found at data.cms.gov.
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2014 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a physician reported by the ACO on its attestation list (these records will include both a TIN and CCN on the same line as the NPI) or provider (physician or non-physician) who reassigned billing rights to an ACO participant in the performance period (based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)). In the 2014 file (only), due to limitations of the data available at the time that the RIF was created, no NPI information is available for 11 ACOs who terminated early in 2014 but were still financially reconciled for the performance year.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list via the attestation list or included as an organization associated with a participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with participants TINs used in financial reconciliation. In the 2014 file (only), due to limitations of the data available at the time that the RIF was created, no PECOS-sourced CCN information is available for 11 ACOs who terminated early in 2014 but were still financially reconciled for the performance year.	CHAR	6
+ACO_NUM	ACO_NUM	ACO Identifier	Encrypted ACO Identifier. Format: A#####	CHAR	6
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	Legal Business Name Associated with the ACO Participant TIN	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN. For CCNs obtained from the participant list, facility type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital Method II 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2015 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a physician on the ACO's attestation list (affiliated with a FQHC or RHC participating in the ACO) or provider (physician or non-physician) who reassigned billing rights to an ACO participant in the performance period (based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS))	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number	CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list via the attestation list or included as an organization associated with a participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with participants TINs used in financial reconciliation. Most values are 6 or 7 characters; a very small number of CCNs are 5, 8 or 9 characters.	CHAR	9
+ACO_NUM	ACO_NUM	ACO_NUM	Encrypted ACO Identifier. Format: A#####	CHAR	6
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	Legal Business Name Associated with the ACO Participant TIN	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Date that the ACO participant indicated in the TIN field began its participation with the ACO. This applies to the 2015 RIF only; in all other years, this field represents the ACO's initial agreement start date. Data users who prefer to utilize a start date value that reflects the date on which the ACO itself began participation in the program can find the ACO start date field in the ACO Public-Use File for 2015 that is available at https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SSPACO.	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN. For CCNs obtained from the participant list, facility type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital Method II 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2016 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a physician on the ACO's attestation list (affiliated with a FQHC or RHC participating in the ACO) or provider (physician or non-physician) who reassigned billing rights to an ACO participant in the performance period (based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS))	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list via the attestation list or included as an organization associated with a participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with participants TINs used in financial reconciliation.	CHAR	7
+ACO_NUM	ACO_NUM	ACO Identifier	Encrypted ACO Identifier. Format: A#####	CHAR	6
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	Legal Business Name Associated with the ACO Participant TIN	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN. For CCNs obtained from the participant list, facility type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital Method II 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2017 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) reported by the ACO on its attestation list (these records will include both a TIN and CCN on the same line as the NPI); (3) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (4) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list via the attestation list or included as an organization associated with a participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with participants TINs used in financial reconciliation.	CHAR	6
+ACO_NUM	ACO_NUM	ACO Identifier	Encrypted ACO Identifier. Format: A#####	CHAR	6
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	Legal Business Name Associated with the ACO Participant TIN	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN. For CCNs obtained from the participant list, facility type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital Method II 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2018 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) reported by the ACO on its attestation list (these records will include both a TIN and CCN on the same line as the NPI); (3) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (4) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list via the attestation list or included as an organization associated with a participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with participants TINs used in financial reconciliation.	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN. For CCNs obtained from the participant list, facility type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital Method II 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2019 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with ACO participant TINs used in financial reconciliation.	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2019A Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with ACO participant TINs used in financial reconciliation.	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN)	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside	CHAR	5
+
+Shared Savings Program — Accountable Care Organizations (SSP ACO)
+2020 Provider File
+Version — March 2026
+Variable	SAS name	Short description	Long description	Type	Length
+NPI	NPI	National Provider Identifier (NPI) for practitioner	National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period. This field will be blank in the initial version of the file.	CHAR	10
+PRVDR_ACO_YEAR	PRVDR_ACO_YEAR	Year of ACO Source Record	NUM	4
+TIN	TIN	Tax Identification Number (TIN) of ACO Participant	Tax identification number of the ACO participant included on the ACO's certified participant list. The initial version of the file includes all ACOs who actively participated in the performance year, while the final version is limited to ACOs included in financial reconciliation.	CHAR	9
+CCN	CCN	CMS Certification Number (CCN; formerly OSCAR number)	CMS Certification Number (formerly OSCAR Number) included as an organization associated with an ACO participant TIN during the period of performance (based on information in PECOS). This field will be blank in the initial version of the file.	CHAR	6
+ACO_ID	ACO_ID	ACO Identifier	ACO Identifier. Format: A####	CHAR	5
+NPI_Name	NPI_NAME	Name of Provider Associated with the NPI	Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS). This field will be blank in the initial version of the file.	CHAR	100
+TIN_LBN	TIN_LBN	TIN Legal Business Name	Legal business name associated with the ACO participant TIN included on the ACO's certified participant list.	CHAR	100
+ACO_NAME	ACO_NAME	ACO Name	ACO Doing Business As (DBA) or Legal Business Name (LBN).	CHAR	100
+START_DATE	START_DATE	Start Date	Initial agreement start date	DATE	8
+Fac_Type	FAC_TYPE	CCN Facility Type	Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. This field will be blank in the initial version of the file. 
+Values:
+F = Federally Qualified Health Center
+R = Rural Health Center
+C = Critical Access Hospital 
+T = Elective Teaching Amendment Hospital
+X = Other Facility Type	CHAR	1
+FAC_DESC	FAC_DESC	CCN Facility Type Description	Description of the facility. New data field beginning in 2017; blank for prior years. This field will be blank in the initial version of the file.	CHAR	105
+SPEC	PRVDR_SPCLTY_CD	Provider Specialty Code	CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank. This field will be blank in the initial version of the file.	CHAR	2
+ACO_Loc	ACO_LOCATION	ACO Location (county primarily served)	Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside.	CHAR	5

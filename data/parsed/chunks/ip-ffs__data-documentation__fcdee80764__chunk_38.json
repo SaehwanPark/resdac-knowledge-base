@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_38",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| ICD_PRCDR_CD24 | Claim Procedure Code XXIV | \n\n | 197 | PRCDR_DT24 | Claim Procedure Code XXIV Date | \n\n | 198 | ICD_PRCDR_CD25 | Claim Procedure Code XXV | \n\n | 196 | PRCDR_DT25 | Claim Procedure Code XXV Date | \n\n | 200 | IME_OP_CLM_VAL_AMT | Operating Indirect Medical Education (IME) Amount | \n\n | 201 | DSH_OP_CLM_VAL_AMT | Operating Disproportionate Share (DSH) Amount | \n\n | 202 | DOB_DT | Date of Birth from Claim | \n\n | 204 | BENE_RACE_CD | Beneficiary Race Code (FFS) | \n\n | 205 |",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

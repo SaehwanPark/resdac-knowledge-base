@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_111",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "behavioral symptoms - resists care - behavioral symptom alterability. 0 = Behavior not present OR behavior easily altered, 1 = Behavior was not easily altered, \"-\" = Unknown, -2 = Space.\n186 E5 E5_CHANGE_BEHAVE (E5) Change in Behavioral Symptoms CHAR 1 Mood and behavior patterns: change in behavioral symptoms. 0 = No change, 1 = Improved, 2 = Deteriorated. \"-\" = Unknown, -2 = Space.\n187 F1A F1A_ACTIVE_OTHERS (F1A) At Ease Interacting with Others CHAR 1 Psychosocial well-being: sense of",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

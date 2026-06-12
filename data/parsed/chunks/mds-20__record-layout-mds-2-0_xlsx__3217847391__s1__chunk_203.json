@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_203",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Arthritis CHAR 1 Disease diagnosis: diseases - musculoskeletal - arthritis. 0 = No, 1 = Yes, \"-\" = Unknown.\n301 I1LL I1LL_GALUCOMA (I1LL) Glaucoma CHAR 1 Disease diagnosis: diseases - sensory - glaucoma. 0 = No, 1 = Yes, \"-\" = Unknown.\n302 I1M I1M_HIP_FRAC (I1M) Hip Fracture CHAR 1 Disease diagnosis: diseases - musculoskeletal - hip fracture. 0 = No, 1 = Yes, \"-\" = Unknown.\n303 I1MM I1MM_MACULAR_DEGN (I1MM) Macular Degeneration CHAR 1 Disease diagnosis: diseases - sensory - macular",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p127__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 127,
+  "text": "TYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF/T-MSIS DE file (derived) (derived) \nVALUES: \n1 = Medicaid only — Aged/Blind/or Disabled (A/B/D) \n2 = Medicare only \n3 = Partial Dual \n4 = Full Dual \nCOMMENT: \nMMLEADS also includes the monthly MME_TYPE_CD_01–12. \nIf the beneficiary has more than one MME_TYPE_CD_01–12 value during the year, then CCW uses the \nmaximum value of the monthly MME_TYPE_CD_MM. The hierarchy (and definition of the \nMME_TYPE_CD) is: \nFull dual (MME_TYPE_CD = 4) — the MBSF",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

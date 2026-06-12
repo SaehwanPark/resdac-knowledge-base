@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p73__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 73,
+  "text": "2 \nSOURCE: \nPDE and plan characteristics (derived) \nVALUES: \nNull \n1–7 = The tier on the plan's formulary associated with the drug on the PDE \n(NOTE: if the plan is not required to submit a formulary then TIER_ID is assigned a value of '1') \nCOMMENT: \nPart D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS \nvia the Health Plan Management System (HPMS). \nThis includes information on how many cost-sharing tiers each plan will use and the drugs that",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

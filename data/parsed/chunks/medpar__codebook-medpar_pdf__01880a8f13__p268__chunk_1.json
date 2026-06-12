@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p268__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 268,
+  "text": "the final claim(s) that \ncomprise the stay to the beneficiary death date): \n0 = Do duplicate record \n1 = Duplicate record \n2 = Death date < admission date \n3 = Death date < admission date and duplicate record \nWarning indicator 9 ('pass-thru indicator' derived from the presence of a pass thru per diem amount on \nthe final action claim(s) that comprise the stay): \n0 = No pass thru per diem present (non-PPS) \n1 = Pass thru per diem present on final action claim \nWarning indicator 10 (Resource",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_16",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| 86 | PHRMCY_CHRG_AMT | Pharmacy Charge Amount ($) | \n\n | 87 | MDCL_SUPLY_CHRG_AMT | Medical/Surgical Supplies Charge Amount ($) | \n\n | 88 | DME_CHRG_AMT | Durable Medical Equipment (DME) Charge Amount ($) | \n\n | 89 | USED_DME_CHRG_AMT | Used Durable Medical Equipment (DME) Charge Amount ($) | \n\n | 90 | PHYS_THRPY_CHRG_AMT | Physical Therapy Charge Amount ($) | \n\n | 91 | OCPTNL_THRPY_CHRG_AMT | Occupational Therapy Charge Amount ($) | \n\n | 92 | SPCH_PTHLGY_CHRG_AMT | Speech Pathology Charge",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_160",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "ADL self-performance \"-\" = Unknown, 0 = Independent - No help provided, 1 = Supervision - Oversight help only, 2 = Physical help limited to transfer only, 3 = Physical help in part of bathing activity, 4 = Total Dependence, 8 = Activity did not occur during entire 7 days.\n227 G2B G2B_BATH_SUPPORT (G2B) Bathing Support CHAR 1 Physical functioning and structural problems: bathing - ADL support provided. \"-\" = Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

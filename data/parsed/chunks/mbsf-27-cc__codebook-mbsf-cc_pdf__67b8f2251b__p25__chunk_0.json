@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__codebook-mbsf-cc_pdf__67b8f2251b__p25__chunk_0",
+  "source_document": "data/raw/assets/pdf/67b8f2251b8ce41fa22290227e10b8b8ec333559.pdf",
+  "page": 25,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 \n19 \nBENE_ENROLLMT_REF_YR \nLABEL: \nReference Year \nDESCRIPTION: This field indicates the reference year of the enrollment data. \nSHORT NAME: RFRNC_YR \nLONG NAME: BENE_ENROLLMT_REF_YR \nTYPE: \nNUM \nLENGTH: \n4 \nSOURCE: \nCMS Enrollment Database (EDB) \nVALUES: \n1999–current data year \nCOMMENT: \nThe data files are partitioned into calendar year files. \n^ Back to TOC ^",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cc.pdf"
+}

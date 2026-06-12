@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_303",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "the patient was able to recall that they are in a hospital/hospital unit during the three-day assessment period. 0 = No\n1 = Yes\n292 C0900Z_RCLL_NONE_CD C0900Z_RCLL_NONE_CD C0900Z Memory/Recall - None Of The Above (3-day Asmt Prd) - If equal to one, the data in this column identifies that none of the above were recalled during the three-day assessment period. CHAR 1 If equal to one, the data in this column identifies that none of the above were recalled during the three-day assessment period. 0",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p28__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 28,
+  "text": "T-MSIS Annual Managed Care Plan TAF \nVALUES: \nDate (numeric, system dependent) \n31DEC9999 = (default value) no ending date/still active \nNull/missing \nCOMMENT: \nThe APL base file contains a continuous managed care contract date range that is constructed from \none or more contract effective/end dates, if necessary. \nThis variable is derived from the monthly managed care plan TAF contract start and end date pairs and \nidentifies the earliest contract start date range continuous with the date",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

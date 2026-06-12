@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_393",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "hospitalization was due to wound infection or deterioration. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2440_NH_HOSPICE M2440 (M0900) Nursing Home Reason- Hospice Care This field indicates the reason the patient was admitted to a nursing home was for hospice care. 0 = Not Checked, 1 = Checked CHAR 1 x\nM2440_NH_OTHER M2440 (M0900) Nursing Home Reason- Other This field indicates the reason the patient was admitted to a nursing home was for other reasons. 0 = Not Checked, 1 = Checked",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

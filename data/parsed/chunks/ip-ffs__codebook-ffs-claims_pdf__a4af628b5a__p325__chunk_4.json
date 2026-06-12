@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p325__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 325,
+  "text": "adjustments) \nPR = Patient Responsibility — this group \nshould be used when the \nadjustment represents an amount \nthat should be billed to the patient \nor insured. This group would \ntypically be used for deductible \nand copay adjustments \n***********Claim Adjustment Reason Codes*************** \n***********POSITIONS 3 through 5 of ANSI CODE********** \n1 = Deductible Amount \n2 = Coinsurance Amount \n3 = Co-pay Amount",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

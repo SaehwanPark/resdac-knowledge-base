@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_16",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "Total Medicare Coinsurance Amount | \n\n | 96 | MDCR_CMBND_DDCTBL_IND | Medicare Combined Deductible and Coinsurance Indicator | \n\n | 97 | MDCR_REIMBRSMT_TYPE_CD | Medicare Reimbursement Type Code | \n\n | 98 | BENE_LIABILITY_AMT | Total Beneficiary Long-Term Care Liability Amount | \n\n | 99 | COINSRNC_AMT | Beneficiary Coinsurance Amount | \n\n | 100 | COPAY_AMT | Beneficiary Copayment Amount | \n\n | 101 | DDCTBL_AMT | Beneficiary Deductible Amount | \n\n | 102 | COPAY_WVD_IND | Indicator Signifying",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

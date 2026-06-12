@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s5__chunk_3",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 5,
+  "text": "Group Active Indicator - October CHAR 1 14\nPRVDR_GRP_ACTV_IND_11 Provider Group Active Indicator - November CHAR 1 15\nPRVDR_GRP_ACTV_IND_12 Provider Group Active Indicator - December CHAR 1 16\nCCW_APR_LINK_KEY CCW Key to Link APR Base Record to Related Supplement Records NUM 15 17\nRFRNC_YR Reference Yr CHAR 4 18\n* Field length expanded from 12 to 30 in 2023 data.",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

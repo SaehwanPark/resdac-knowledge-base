@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p2__chunk_4",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 2,
+  "text": "and SRVC_PRVDR_TYPE_CD \n• \nAdded value for Guam to STATE_CD and SUBMTG_STATE_CD \nand added detail to SUBMTG_STATE_CD for MT TPA (94) and \nWY CHIP (93) \n• \nAdded valid values to IP, LT, OT and RX claim line records: \nXIX_SRVC_CTGRY_CD, XXI_SRVC_CTGRY_CD \n1.6",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

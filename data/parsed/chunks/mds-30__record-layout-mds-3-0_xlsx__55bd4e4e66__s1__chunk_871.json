@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_871",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Suctioning (Admission) CHAR 1 The data in this column indicates whether the resident received suctioning days one through three (on admission) of becoming a resident of the facility. 0=No\n1=Yes effective 10/01/2023\n973 SCTNG_14_CD SCTNG_14_CD O0110D1B Therapies: Suctioning (14 days) CHAR 1 The data in this column indicates whether the resident received suctioning while a resident of the facility and within the last 14 days. 0=No\n1=Yes effective 10/01/2023\n974 SCTNG_DSCHRG_CD SCTNG_DSCHRG_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

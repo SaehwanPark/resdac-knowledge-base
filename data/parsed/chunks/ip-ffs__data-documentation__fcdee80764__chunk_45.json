@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_45",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "(SSO) Standard Payment Amount | \n\n | 234 | HAC_PGM_RDCTN_IND_SW | Claim Hospital Acquired Condition (HAC) Program Reduction Indicator Switch | \n\n | 235 | EHR_PGM_RDCTN_IND_SW | Claim Electronic Health Records (EHR) Program Reduction Indicator Switch | \n\n | 236 | CLM_SITE_NTRL_PYMT_CST_AMT | Claim Site Neutral Payment Based on Cost Amount | \n\n | 237 | CLM_SITE_NTRL_PYMT_IPPS_AMT | Claim Site Neutral Payment Based on Inpatient Prospective Payment System (IPPS) Amounts | \n\n | 238 |",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

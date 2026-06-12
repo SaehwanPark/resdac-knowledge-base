@@ -1,0 +1,12 @@
+The Medicare Encounter Carrier file includes Medicare Advantage plan records for professional providers, including physicians, physician assistants, clinical social workers, nurse practitioners.
+Records for some organizational providers are also found in the Carrier (Encounter) file. Examples include independent clinical laboratories, ambulance providers, freestanding ambulatory surgical centers and freestanding radiology centers.
+Researchers rarely use this file alone.
+This file includes (variable highlights):
+- Part C Benefit Package and Contract number
+- Diagnosis (ICD diagnosis)
+- HCPCS code
+- Date of service (line date)
+- NPI for line rendering physician
+- No payment information
+Special considerations:
+- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter data may include records for some of these additional items and services provided under the plan.

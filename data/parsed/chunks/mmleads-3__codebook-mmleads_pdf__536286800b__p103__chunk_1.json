@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p103__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 103,
+  "text": "MDCR_MC_PTA_PTB_CAPTD_SPEND_11 \nMDCR_MC_PTA_PTB_CAPTD_SPEND_12 \nLABEL: \nMedicare PTA/PTB Managed Care Capitated Payment Amount — January–December (01–12) \nDESCRIPTION: This variable is the monthly capitated premium payment amount for Medicare Part A and Part B. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS Medicare Advantage Prescription Drug System (MARx) data (derived) \nVALUES: \n$ \nCOMMENT: \nCMS and Medicare Advantage (MA) plans use the MARx System to exchange data files and reports \nbetween the",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

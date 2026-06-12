@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_320",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "x\nM1850_CUR_TRNSFRNG M1850 Transferring This field indicates the patient's current ability to move safely from bed to chair, or ability to turn and position self in bed if patient is bedfast. 00 = Able to independently transfer.\n01 = Able to transfer with minimal human assistance or with use of an assistive device.\n02 = Able to bear weight and pivot during the transfer but unable to transfer self.\n03 = Unable to transfer self and is unable to bear weight or pivot when transferred by another",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,23 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Bayesian Improved Surname Geocoding (MBISG) File
+Version — January 2025
+SAS name	Label	Type	Length	Format	Values
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+RFRNC_DT	Data File Reference Date	DATE	8	DATE9.	01MAR2023; 01MAR2024
+MBISG_VRSN	Version of the MBISG algorithm	CHAR	5	5	2.1.2
+RE_PRBLTY_AIAN	R/E probability - American Indian or Alaska Native	NUM	8	12.1	x.xxxxxxxxx
+RE_PRBLTY_AANHPI	R/E probability - Asian American and Native Hawaiian or Other Pacific Islander	NUM	8	12.1	x.xxxxxxxxx
+RE_PRBLTY_BLACK	R/E probability - Black	NUM	8	12.1	x.xxxxxxxxx
+RE_PRBLTY_HSPNC	R/E probability - Hispanic	NUM	8	12.1	x.xxxxxxxxx
+RE_PRBLTY_MULTIRACIAL	R/E probability - Multiracial	NUM	8	12.1	x.xxxxxxxxx
+RE_PRBLTY_WHT	R/E probability - White	NUM	8	12.1	x.xxxxxxxxx
+RE_CLSFCTN	R/E Classification with Highest Probability	CHAR	15	15	AA and NHPI = Asian American and Native Hawaiian or Other Pacific Islander 
+AI/AN = American Indian or Alaska Native
+Black
+Hispanic
+White
+SPNSH_PREFNC_CTGRY	Predicted Spanish Preference Category	NUM	3	1	1 = highest probability
+2 = medium probability
+3 = low probability
+4 = very low probability
+Missing = geographic data missing or beneficiary was not in 50 states, DC or Puerto Rico

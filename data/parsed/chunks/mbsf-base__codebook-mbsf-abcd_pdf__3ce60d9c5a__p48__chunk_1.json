@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p48__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 48,
+  "text": "Part C Plan Type Code – January through December \nDESCRIPTION: This variable is the type of Medicare Part C plan for the beneficiary for a given month (January through \nDecember). \nSHORT NAME: \nPTC_PLAN_TYPE_CD_01 \nPTC_PLAN_TYPE_CD_02 \nPTC_PLAN_TYPE_CD_03 \nPTC_PLAN_TYPE_CD_04 \nPTC_PLAN_TYPE_CD_05 \nPTC_PLAN_TYPE_CD_06 \nPTC_PLAN_TYPE_CD_07 \nPTC_PLAN_TYPE_CD_08 \nPTC_PLAN_TYPE_CD_09 \nPTC_PLAN_TYPE_CD_10 \nPTC_PLAN_TYPE_CD_11 \nPTC_PLAN_TYPE_CD_12 \nLONG NAME: \nPTC_PLAN_TYPE_CD_01 \nPTC_PLAN_TYPE_CD_02",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

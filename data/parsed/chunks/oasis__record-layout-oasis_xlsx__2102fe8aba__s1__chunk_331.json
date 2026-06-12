@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_331",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 2 x x x x\nM1900_PRIOR_ADLIADL_HSEHOLD M1900 Prior Functioning ADL/IADL - Household Tasks This field indicates the patient's usual ability with the everyday activity of household tasks (e.g. light meal preparation, laundry, shopping) prior to this current illness, exacerbation, or injury. 00 = Independent\n01 = Needed Some Help\n02 = Dependent CHAR 2 x x x x\nM1900_PRIOR_ADLIADL_SELF M1900 Prior Functioning ADL/IADL- Self Care This field indicates the patient's usual ability with the everyday",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

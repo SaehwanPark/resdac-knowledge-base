@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "of the 4 Eligible Pre-Paid Plan (PHP) Group codes for the month equals 01 (medical or comprehensive managed care plan), 05 (LTC managed care plan), 06 (PACE), 07 (PCCM), 02 (dental), 03 (behavioral), 04(prenatal), or 08 (other managed care - only if individual lived in AL, CA, FL, or W). If none of these PHP values applies, then individual is considered FFS for the month 1 - FFS\n2 - Long term care\n3 - Comprehensive managed care\n4 - Primary care case management\n5 - Program of all-inclusive care",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

@@ -1,0 +1,92 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Master Beneficiary Summary File — Other Chronic or Potentially Disabling Conditions
+Version — March 2025
+Short SAS name1	Long SAS name2	Label	Type	Length
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+RFRNC_YR	RFRNC_YR	Reference Year	DATE	4
+ENRL_SRC	ENRL_SRC	Source of enrollment data	CHAR	3
+ACP_MEDICARE	ACP_MEDICARE	ADHD and Other Conduct Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+ACP_MEDICARE_EVER	ACP_MEDICARE_EVER	ADHD and Other Conduct Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+ALCO_MEDICARE	ALCO_MEDICARE	Alcohol Use Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+ALCO_MEDICARE_EVER	ALCO_MEDICARE_EVER	Alcohol Use Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+ANXI_MEDICARE	ANXI_MEDICARE	Anxiety Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+ANXI_MEDICARE_EVER	ANXI_MEDICARE_EVER	Anxiety Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+AUTISM_MEDICARE	AUTISM_MEDICARE	Autism Spectrum Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+AUTISM_MEDICARE_EVER	AUTISM_MEDICARE_EVER	Autism Spectrum Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+BIPL_MEDICARE	BIPL_MEDICARE	Bipolar Disorder End-of-Year Indicator - Medicare Only Claims	NUM	1
+BIPL_MEDICARE_EVER	BIPL_MEDICARE_EVER	Bipolar Disorder First Ever Occurrence Date - Medicare Only Claims	DATE	8
+BRAINJ_MEDICARE	BRAINJ_MEDICARE	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage End-of-Year Indicator  - Medicare Only Claims	NUM	1
+BRAINJ_MEDICARE_EVER	BRAINJ_MEDICARE_EVER	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage First Ever Occurrence Date - Medicare Only Claims	DATE	8
+CERPAL_MEDICARE	CERPAL_MEDICARE	Cerebral Palsy End-of-Year Indicator - Medicare Only Claims	NUM	1
+CERPAL_MEDICARE_EVER	CERPAL_MEDICARE_EVER	Cerebral Palsy First Ever Occurrence Date - Medicare Only Claims	DATE	8
+CHRONICPAIN_MEDICARE3	CHRONICPAIN_MEDICARE	Chronic Pain End-of-Year Indicator - Medicare Only Claims	NUM	1
+CHRONICPAIN_MEDICARE_EVER3	CHRONICPAIN_MEDICARE_EVER	Chronic Pain First Ever Occurrence Date (starting 2016) - Medicare Only Claims	DATE	8
+CYSFIB_MEDICARE	CYSFIB_MEDICARE	Cystic Fibrosis and Other Metabolic Developmental Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+CYSFIB_MEDICARE_EVER	CYSFIB_MEDICARE_EVER	Cystic Fibrosis and Other Metabolic Developmental Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+DEPSN_MEDICARE	DEPSN_MEDICARE	Major Depressive Affective Disorder End-of-Year Indicator - Medicare Only Claims	NUM	1
+DEPSN_MEDICARE_EVER	DEPSN_MEDICARE_EVER	Major Depressive Affective Disorder First Ever Occurrence Date - Medicare Only Claims	DATE	8
+DRUG_MEDICARE	DRUG_MEDICARE	Drug Use Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+DRUG_MEDICARE_EVER	DRUG_MEDICARE_EVER	Drug Use Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+EPILEP_MEDICARE	EPILEP_MEDICARE	Epilepsy End-of-Year Indicator - Medicare Only Claims	NUM	1
+EPILEP_MEDICARE_EVER	EPILEP_MEDICARE_EVER	Epilepsy First Ever Occurrence Date - Medicare Only Claims	DATE	8
+FIBRO_MEDICARE	FIBRO_MEDICARE	Fibromyalgia, Chronic Pain and Fatigue End-of-Year Indicator - Medicare Only Claims	NUM	1
+FIBRO_MEDICARE_EVER	FIBRO_MEDICARE_EVER	Fibromyalgia, Chronic Pain and Fatigue First Ever Occurrence Date - Medicare Only Claims	DATE	8
+HEARIM_MEDICARE	HEARIM_MEDICARE	Sensory - Deafness and Hearing Impairment End-of-Year Indicator - Medicare Only Claims	NUM	1
+HEARIM_MEDICARE_EVER	HEARIM_MEDICARE_EVER	Sensory - Deafness and Hearing Impairment First Ever Occurrence Date - Medicare Only Claims	DATE	8
+HEPVIRAL_MEDICARE	HEPVIRAL_MEDICARE	Viral Hepatitis (General) End-of-Year Indicator - Medicare Only Claims	NUM	1
+HEPVIRAL_MEDICARE_EVER	HEPVIRAL_MEDICARE_EVER	Viral Hepatitis (General) First Ever Occurrence Date - Medicare Only Claims	DATE	8
+HIVAIDS_MEDICARE	HIVAIDS_MEDICARE	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) End-of-Year Indicator - Medicare Only Claims	NUM	1
+HIVAIDS_MEDICARE_EVER	HIVAIDS_MEDICARE_EVER	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) First Ever Occurrence Date - Medicare Only Claims	DATE	8
+INTDIS_MEDICARE	INTDIS_MEDICARE	Intellectual Disabilities and Related Conditions End-of-Year Indicator - Medicare Only Claims	NUM	1
+INTDIS_MEDICARE_EVER	INTDIS_MEDICARE_EVER	Intellectual Disabilities and Related Conditions First Ever Occurrence Date - Medicare Only Claims	DATE	8
+LEADIS_MEDICARE	LEADIS_MEDICARE	Learning Disabilities End-of-Year Indicator - Medicare Only Claims	NUM	1
+LEADIS_MEDICARE_EVER	LEADIS_MEDICARE_EVER	Learning Disabilities First Ever Occurrence Date - Medicare Only Claims	DATE	8
+LEUKLYMPH_MEDICARE	LEUKLYMPH_MEDICARE	Leukemias and Lymphomas End-of-Year Indicator - Medicare Only Claims	NUM	1
+LEUKLYMPH_MEDICARE_EVER	LEUKLYMPH_MEDICARE_EVER	Leukemias and Lymphomas First Ever Occurrence Date - Medicare Only Claims	DATE	8
+LIVER_MEDICARE	LIVER_MEDICARE	Liver Disease, Cirrhosis and Other Liver Conditions (excluding Hepatitis) End-of-Year Indicator - Medicare Only Claims	NUM	1
+LIVER_MEDICARE_EVER	LIVER_MEDICARE_EVER	Liver Disease, Cirrhosis and Other Liver Conditions (excluding Hepatitis) First Ever Occurrence Date - Medicare Only Claims	DATE	8
+MIGRAINE_MEDICARE	MIGRAINE_MEDICARE	Migraine and other Chronic Headache End-of-Year Indicator - Medicare Only Claims	NUM	1
+MIGRAINE_MEDICARE_EVER	MIGRAINE_MEDICARE_EVER	Migraine and other Chronic Headache First Ever Occurrence Date - Medicare Only Claims	DATE	8
+MOBIMP_MEDICARE	MOBIMP_MEDICARE	Mobility Impairments End-of-Year Indicator - Medicare Only Claims	NUM	1
+MOBIMP_MEDICARE_EVER	MOBIMP_MEDICARE_EVER	Mobility Impairments First Ever Occurrence Date - Medicare Only Claims	DATE	8
+MULSCL_MEDICARE	MULSCL_MEDICARE	Multiple Sclerosis and Transverse Myelitis End-of-Year Indicator - Medicare Only Claims	NUM	1
+MULSCL_MEDICARE_EVER	MULSCL_MEDICARE_EVER	Multiple Sclerosis and Transverse Myelitis First Ever Occurrence Date - Medicare Only Claims	DATE	8
+MUSDYS_MEDICARE	MUSDYS_MEDICARE	Muscular Dystrophy End-of-Year Indicator - Medicare Only Claims	NUM	1
+MUSDYS_MEDICARE_EVER	MUSDYS_MEDICARE_EVER	Muscular Dystrophy First Ever Occurrence Date - Medicare Only Claims	DATE	8
+OBESITY_MEDICARE	OBESITY_MEDICARE	Obesity End-of-Year Indicator - Medicare Only Claims	NUM	1
+OBESITY_MEDICARE_EVER	OBESITY_MEDICARE_EVER	Obesity First Ever Occurrence Date - Medicare Only Claims	DATE	8
+OTHDEL_MEDICARE	OTHDEL_MEDICARE	Other Developmental Delays End-of-Year Indicator - Medicare Only Claims	NUM	1
+OTHDEL_MEDICARE_EVER	OTHDEL_MEDICARE_EVER	Other Developmental Delays First Ever Occurrence Date - Medicare Only Claims	DATE	8
+OUD_ANY_MEDICARE	OUD_ANY_MEDICARE	Overarching OUD Disorder (Any of the Three Sub-Indicators) - Medicare Only Claims	NUM	1
+OUD_ANY_MEDICARE_EVER	OUD_ANY_MEDICARE_EVER	Overarching OUD Disorder (Any of the Three Sub-Indicators) - First Ever Occurrence Date	DATE	8
+OUD_DX_MEDICARE	OUD_DX_MEDICARE	Diagnosis and Procedure Basis for OUD - Medicare Only Claims	NUM	1
+OUD_DX_MEDICARE_EVER	OUD_DX_MEDICARE_EVER	Diagnosis and Procedure Basis for OUD First Ever Occurrence Date - Medicare Only Claims	DATE	8
+OUD_HOSP_MEDICARE	OUD_HOSP_MEDICARE	Opioid-Related Hospitalization or ED - Medicare Only Claims	NUM	1
+OUD_HOSP_MEDICARE_EVER	OUD_HOSP_MEDICARE_EVER	Opioid-Related Hospitalization or ED First Ever Occurrence Date - Medicare Only Claims	DATE	8
+OUD_MAT_MEDICARE	OUD_MAT_MEDICARE	Use of Medication-Assisted Treatment (MAT) - Medicare Only Claims	NUM	1
+OUD_MAT_MEDICARE_EVER	OUD_MAT_MEDICARE_EVER	Use of Medication-Assisted Treatment (MAT) First Ever Occurrence Date - Medicare Only C	DATE	8
+PSDS_MEDICARE	PSDS_MEDICARE	Personality Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+PSDS_MEDICARE_EVER	PSDS_MEDICARE_EVER	Personality Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+PTRA_MEDICARE	PTRA_MEDICARE	Post-Traumatic Stress Disorder End-of-Year Indicator - Medicare Only Claims	NUM	1
+PTRA_MEDICARE_EVER	PTRA_MEDICARE_EVER	Post-Traumatic Stress Disorder First Ever Occurrence Date - Medicare Only Claims	DATE	8
+PVD_MEDICARE	PVD_MEDICARE	Peripheral Vascular Disease End-of-Year Indicator - Medicare Only Claims	NUM	1
+PVD_MEDICARE_EVER	PVD_MEDICARE_EVER	Peripheral Vascular Disease First Ever Occurrence Date - Medicare Only Claims	DATE	8
+SCD_MEDICARE	SCD_MEDICARE	Sickle Cell Disease End-of-Year Indicator - Medicare Only Claims	NUM	1
+SCD_MEDICARE_EVER	SCD_MEDICARE_EVER	Sickle Cell Disease First Ever Occurrence Date - Medicare Only Claims	DATE	8
+SCHI_MEDICARE	SCHI_MEDICARE	Schizophrenia End-of-Year Indicator - Medicare Only Claims	NUM	1
+SCHI_MEDICARE_EVER	SCHI_MEDICARE_EVER	Schizophrenia First Ever Occurrence Date - Medicare Only Claims	DATE	8
+SCHIOT_MEDICARE	SCHIOT_MEDICARE	Schizophrenia and Other Psychotic Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+SCHIOT_MEDICARE_EVER	SCHIOT_MEDICARE_EVER	Schizophrenia and Other Psychotic Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+SPIBIF_MEDICARE	SPIBIF_MEDICARE	Spina Bifida and Other Congenital Anomalies of the Nervous System End-of-Year Indicator - Medicare Only Claims	NUM	1
+SPIBIF_MEDICARE_EVER	SPIBIF_MEDICARE_EVER	Spina Bifida and Other Congenital Anomalies of the Nervous System First Ever Occurrence Date - Medicare Only Claims	DATE	8
+SPIINJ_MEDICARE	SPIINJ_MEDICARE	Spinal Cord Injury End-of-Year Indicator - Medicare Only Claims	NUM	1
+SPIINJ_MEDICARE_EVER	SPIINJ_MEDICARE_EVER	Spinal Cord Injury First Ever Occurrence Date - Medicare Only Claims	DATE	8
+TOBA_MEDICARE	TOBA_MEDICARE	Tobacco Use Disorders End-of-Year Indicator - Medicare Only Claims	NUM	1
+TOBA_MEDICARE_EVER	TOBA_MEDICARE_EVER	Tobacco Use Disorders First Ever Occurrence Date - Medicare Only Claims	DATE	8
+ULCERS_MEDICARE	ULCERS_MEDICARE	Pressure Ulcers and Chronic Ulcers End-of-Year Indicator - Medicare Only Claims	NUM	1
+ULCERS_MEDICARE_EVER	ULCERS_MEDICARE_EVER	Pressure Ulcers and Chronic Ulcers First Ever Occurrence Date - Medicare Only Claims	DATE	8
+VISUAL_MEDICARE	VISUAL_MEDICARE	Sensory - Blindness and Visual Impairment End-of-Year Indicator - Medicare Only Claims	NUM	1
+VISUAL_MEDICARE_EVER	VISUAL_MEDICARE_EVER	Sensory - Blindness and Visual Impairment First Ever Occurrence Date - Medicare Only Claims	DATE	8
+1 If read into SAS version 6.x environment, "SHORT NAMES" will display in output file.
+2 If read into SAS version 8.x environment, "LONG NAMES" will display in output file.
+3 The chronic pain variables are not populated prior to 2018.

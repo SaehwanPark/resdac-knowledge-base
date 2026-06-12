@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "populated; LC = length change for variable; VC = value change.\n2 Prior to 2015, CCW was required to encrypt or use CCW-assigned ID values to protect these sensitive data fields.\nThese sensitive fields were those which could be used to identify the prescriber (PRSCRBR_ID), the pharmacy, the plan (PLAN_CNTRCT_REC_ID) and benefit package (PLAN_PBP_REC_NUM),\nor the plan’s formulary (FORMULARY_ID). We are no longer required to encrypt the prescriber, pharmacy, plan or formulary identifiers.\n3 For",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

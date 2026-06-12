@@ -1,0 +1,8 @@
+{
+  "chunk_id": "md-ppas__record-layout-mdppas_pdf__583b8c5935__p4__chunk_3",
+  "source_document": "data/raw/assets/pdf/583b8c59350c60f3a057b741c5d5e47e73c3d990.pdf",
+  "page": 4,
+  "text": "Count of line items billed by NPI \nClaims \nnpi_allowed_amt \nTotal allowed charges billed by NPI \nClaims \nnpi_unq_benes \nNumber of unique beneficiaries for whom the NPI billed \nClaims \n\nTIN1 variables \nDescription \nData Source \ntin1 \nTax identification number (TIN) with the most service lines \nClaims \ntin1_legal_name \nTIN1 legal name \nPECOS \ntin1_srvc_month \nTwelve monthly flags for whether the NPI billed for any services under \nTIN1. Position 1 pertains to January; position 12 to December. \n1=",
+  "dataset": "md-ppas",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mdppas.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p265__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 265,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n252 \nPLAN_TYPE \nLABEL: \nPart D Plan Type \nDESCRIPTION: This variable indicates the type of Part D plan offered by the plan sponsor. \nSHORT NAME: — \nLONG NAME: PLAN_TYPE \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n01 = Health Maintenance Organization (HMO) \n\n02 = Health Maintenance Organization Point-of-Service (HMO POS) \n\n04 = Local Preferred Provider Organization",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

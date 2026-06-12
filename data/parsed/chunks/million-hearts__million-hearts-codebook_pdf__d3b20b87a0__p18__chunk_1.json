@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p18__chunk_1",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 18,
+  "text": "4000 \nFILE(S): \nPractice \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \nEX — 15161718,15161719 \nNull/missing \nCOMMENT: \nThe first six digits of each CMS Certification Number (CCN) are the facility number; additional digits \n(i.e., positions 7–13) may be used to distinguish between campuses for multiple campus hospitals. This \nfield could be missing or have one or more CCNs, separated by a comma. \nNote that if attempting to join to Medicare claims files in the CCW, the 6-digit CCN is called",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

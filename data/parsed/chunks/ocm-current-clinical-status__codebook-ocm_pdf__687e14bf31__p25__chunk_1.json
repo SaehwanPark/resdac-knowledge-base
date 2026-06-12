@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p25__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 25,
+  "text": "together. \nSHORT NAME: PRFMNC_PRD \nLONG NAME: PRFMNC_PRD \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nClinical and staging \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \n3 = Episodes beginning July 2, 2017–January 1, 2018 \n4 = Episodes beginning January 2, 2018–July 1, 2018 \n5 = Episodes beginning July 2, 2018–January 1, 2019 \n6 = Episodes beginning January 2, 2019–July 1, 2019 \n7 = Episodes beginning July 2, 2019–January 1, 2020 \n8 = Episodes beginning January 2, 2020–July 1, 2020 \n9 = Episodes",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

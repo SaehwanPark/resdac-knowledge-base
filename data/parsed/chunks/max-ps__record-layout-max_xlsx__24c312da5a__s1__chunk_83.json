@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_83",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "X X X X X\n387 RX_PYMT_AMT_FQHC Prescription drug payments (FQHC) NUM 12 X X X X X X X X X X X\n388 TOT_REC_CNT_FQHC Total records (FQHC) NUM 5 X X X X X X X X X X X\n389 TOT_PYMT_AMT_FQHC Total payments (FQHC) NUM 12 X X X X X X X X X X X\n390 IP_HOSP_REC_IHS Inpatient hospital record count - Indian Health Services (IHS) NUM 3 X X X X X X X X X X X\n391 IP_HOSP_PYMT_IHS Inpatient hospital payments (IHS) NUM 12 X X X X X X X X X X X\n392 LT_REC_CNT_IHS Institutional LT care records (IHS) NUM 5 X X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

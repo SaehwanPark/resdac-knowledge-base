@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s5__chunk_3",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 5,
+  "text": "NPI Number Char 10 19 19\nORG_TXNMY_CD Organization Taxonomy Code Char 10 20 20\nCLM_PLACE_OF_SRVC_CD Claim Place of Service Code Char 2 - 66\nRNDRNG_PHYSN_NPI Claim Rendering Physician NPI Number Char 10 - 65\nRFRG_PHYSN_NPI Claim Referring Physician NPI Number Char 10 21 21\nPRNCPAL_DGNS_CD Claim Principal Diagnosis Code Char 7 22 22\nPRNCPAL_DGNS_VRSN_CD Claim Principal Diagnosis Version Code Char 1 23 23\nICD_DGNS_CD1 Claim Diagnosis Code 1 Char 7 24 24\nICD_DGNS_VRSN_CD1 Claim Diagnosis Code I",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

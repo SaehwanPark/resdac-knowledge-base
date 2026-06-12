@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s8__chunk_3",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 8,
+  "text": "to HH, Hospice and OP revenue lines;\n7) REV_CNTR_CRA_TPNIES_AMT and REV_CNTR_THRPY_RDCTN_AMT to OP revenue lines;\n8) LINE_ADJUST_GRP_CD, LINE_ADJUST_RSN_CD, and LINE_RA_RMRK_CD to Carrier lines;\n9) DMERC_OXGN_EQUIP_INITL_DT, DMERC_OXGN_INITL_DT_CD, and DMERC_OXGN_EQUIP_PRVS_DT to DME lines.\n44197 IP, SNF, Hospice, HHA, HOP, Carrier, DME Changes resulting from NCH Version L updates\n•Update Inpatient and SNF Claim: expand CLM_DRG_CD from 3 bytes to 4 bytes\n•Update Carrier and DME Line: expand",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

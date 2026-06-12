@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_10",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "3 54\nFUNDNG_CD Code To Indicate Source of Non-Federal Funding CHAR 2 55\nFUNDNG_SRC_NON_FED_SHR_CD Funding Source Non-Federal Share Code CHAR 2 56\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 8 57\nTMSIS_RUN_ID TMSIS State Data Processing Run Identifier NUM 8 58\nRX_VRSN Rx Version Representing the Iteration of the File CHAR 2 59\nRX_FIL_DT RX File Date - Represents the Year and Month of the Reporting Period DATE 8 60\nCCW_LD_DT CCW Load Date DATE 8 61\nLine file\nBENE_ID",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

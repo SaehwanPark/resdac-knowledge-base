@@ -1,0 +1,21 @@
+The Acute Hospital Care at Home (AHCAH) initiative, launched in November 2020 in response to the COVID-19 Public Health Emergency (PHE), allows Medicare-certified hospitals to treat patients with inpatient-level care at home. Data contained within the AHCAH data set was collected by CMS directly from individual hospitals on either a weekly or monthly basis depending on their participation tier, which is based on the level of experience the facility has with providing hospital at-home services.
+The AHCAH data file set contains two files, a Hospital file and a Patient file, both of which are provided as a set with an approved research request and signed data use agreement. The Hospital file contains hospital-specific information, including facility location information, the waiver participation tier, and the submission date for the data represented in the file record. The submission date represents the data submitted by the facility for the previous month or week.
+The Hospital file also contains three key metrics related to the in-home care provided during the data submission time period:
+- The number of admissions to the inpatient home care setting
+- The number of patient escalations of care, where the patient is transferred from the home back to the hospital, and
+- The number of unexpected patient mortalities
+The AHCAH file set is organized by release, and each release contains two files (a hospital and a patient file). Researchers should request files by release, as opposed to individual years or months.
+There have been two AHCAH releases to date:
+- First release data submission period: November 2020 - March 2023 (29 months)
+- Second release data submission period: April 2023 - September 2025 (30 months)
+What does this file include? (variable highlights)
+- CMS Certification Number (CCN), also known as the Facility Identifier
+- Facility Waiver Participation Tier (based on the level of experience the facility has with providing hospital-at-home services)
+- Facility Waiver Submission Identifier
+- Data Submission Date
+- Discharges
+- Escalations
+- Mortalities
+- Facility Location Information
+Special Considerations
+- AHCAH data may need to be requested in conjunction with Part A claims, beneficiary demographic and eligibility data to fully understand the information in the AHCAH dataset.

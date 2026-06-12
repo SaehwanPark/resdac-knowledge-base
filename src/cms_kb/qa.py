@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Literal
 from urllib.parse import urlparse
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 from .extraction import (
   DatasetMetadataRow,
@@ -23,16 +23,45 @@ from .extraction import (
 from .variables import VariableEdgeRow, VariableMetadataRow
 
 
+DEFAULT_DATASETS_METADATA_PATH = Path("data/metadata/datasets.csv")
+DEFAULT_DOCUMENTS_METADATA_PATH = Path("data/metadata/documents.csv")
+DEFAULT_VARIABLES_METADATA_PATH = Path("data/metadata/variables.csv")
+DEFAULT_DOCUMENT_EDGES_PATH = Path("data/graph/document_edges.csv")
+DEFAULT_VARIABLE_EDGES_PATH = Path("data/graph/variable_edges.csv")
+DEFAULT_ONTOLOGY_NODES_PATH = Path("data/graph/ontology_nodes.csv")
+DEFAULT_ONTOLOGY_EDGES_PATH = Path("data/graph/ontology_edges.csv")
+
+
 class QAConfig(BaseModel):
-  datasets_metadata_path: Path = Path("data/metadata/datasets.csv")
-  documents_metadata_path: Path = Path("data/metadata/documents.csv")
-  variables_metadata_path: Path = Path("data/metadata/variables.csv")
-  document_edges_path: Path = Path("data/graph/document_edges.csv")
-  variable_edges_path: Path = Path("data/graph/variable_edges.csv")
-  ontology_nodes_path: Path = Path("data/graph/ontology_nodes.csv")
-  ontology_edges_path: Path = Path("data/graph/ontology_edges.csv")
+  datasets_metadata_path: Path = DEFAULT_DATASETS_METADATA_PATH
+  documents_metadata_path: Path = DEFAULT_DOCUMENTS_METADATA_PATH
+  variables_metadata_path: Path = DEFAULT_VARIABLES_METADATA_PATH
+  document_edges_path: Path = DEFAULT_DOCUMENT_EDGES_PATH
+  variable_edges_path: Path = DEFAULT_VARIABLE_EDGES_PATH
+  ontology_nodes_path: Path = DEFAULT_ONTOLOGY_NODES_PATH
+  ontology_edges_path: Path = DEFAULT_ONTOLOGY_EDGES_PATH
   archive_manifest_path: Path = Path("manifests/archive_manifest.csv")
   workspace_dir: Path = Path("_workspace")
+
+  @model_validator(mode="after")
+  def keep_optional_paths_with_custom_roots(self) -> QAConfig:
+    custom_metadata_root = self.datasets_metadata_path != DEFAULT_DATASETS_METADATA_PATH
+    if custom_metadata_root:
+      metadata_dir = self.datasets_metadata_path.parent
+      graph_dir = metadata_dir.parent / "graph"
+      if self.variables_metadata_path == DEFAULT_VARIABLES_METADATA_PATH:
+        self.variables_metadata_path = metadata_dir / "variables.csv"
+      if self.document_edges_path == DEFAULT_DOCUMENT_EDGES_PATH:
+        self.document_edges_path = graph_dir / "document_edges.csv"
+    if self.document_edges_path != DEFAULT_DOCUMENT_EDGES_PATH:
+      graph_dir = self.document_edges_path.parent
+      if self.variable_edges_path == DEFAULT_VARIABLE_EDGES_PATH:
+        self.variable_edges_path = graph_dir / "variable_edges.csv"
+      if self.ontology_nodes_path == DEFAULT_ONTOLOGY_NODES_PATH:
+        self.ontology_nodes_path = graph_dir / "ontology_nodes.csv"
+      if self.ontology_edges_path == DEFAULT_ONTOLOGY_EDGES_PATH:
+        self.ontology_edges_path = graph_dir / "ontology_edges.csv"
+    return self
 
 
 class QAFinding(BaseModel):

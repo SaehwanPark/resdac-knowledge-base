@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p183__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 183,
+  "text": "LENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = Did not screen positive for mental health need \n1 = Screened positive for mental health need \nMissing \nCOMMENT: \nThe variables considered for this indicator are SR_SPLMTL_MH_1_2_SUM (which is the sum of \nSR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD) and SR_SPLMTL_MH_3_CD. This field is “1” if the \nsum of the first two mental health questions is three or higher or if the value of the third mental \nhealth question is 1 = A little bit, 2 = Somewhat, 3",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

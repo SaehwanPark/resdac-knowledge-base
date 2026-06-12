@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p41__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 41,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n31 \nCLM_LINE_NUM \nLABEL: \nClaim Line Number \nDESCRIPTION: This variable identifies an individual line number on an encounter record claim. \nEach revenue center record or claim line has a sequential line number to distinguish distinct \n\nservices that are submitted on the same encounter record. \nAll revenue center records or claim lines on a given claim have the same encounter join key",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

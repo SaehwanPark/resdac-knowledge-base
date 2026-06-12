@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p357__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 357,
+  "text": "using a different HIPPS code than the one submitted by the \nprovider. When this happens, the revised HIPPS code (the one used for payment purposes) appears in \nthis field and the original HIPPS code submitted by the provider remains in the HCPCS_CD field. \nOtherwise, this variable will always be null or have a value of “00000” for HH revenue center records. \nThe resource utilization group for the particular revenue center is located in the data field called the \nAPC or HIPPS code variable. \nThe",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

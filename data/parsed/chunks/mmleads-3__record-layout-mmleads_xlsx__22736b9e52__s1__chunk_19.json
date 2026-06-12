@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "Medical Coverage Indicator - June Num 8\n96 MDCR_DUAL_STUS_CD_07 Medicare - Medicaid Dual Eligibility Code - July Char 2\n97 MDCR_BUYIN_07 Medicare - Entitlement/Buy-In Indicator - July Char 1\n98 MDCR_FFS_MEDICAL_07 Medicare - Fee-for-Service Medical Coverage Indicator - July Num 8\n99 MDCR_DUAL_STUS_CD_08 Medicare - Medicaid Dual Eligibility Code - August Char 2\n100 MDCR_BUYIN_08 Medicare - Entitlement/Buy-In Indicator - August Char 1\n101 MDCR_FFS_MEDICAL_08 Medicare - Fee-for-Service Medical",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

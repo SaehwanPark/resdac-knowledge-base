@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 17,
+  "text": "B. 2025 MCAHPS Format Tables\n17\nmd_testfup: RECODE : Last 6 mths, how often MD ofﬁce follow up with test results\nSAS Format: OFA\n2: SOMETIMES\n3: USUALLY\n4: ALWAYS\nmd_visits: RECODE : Last 6 mths, number of in-person/phone/video visits with personal MD about health\nSAS Format: NMA\n0: NONE\n1: 1 TIME\n2: 2\n3: 3\n4: 4\n5: 5 TO 9\n6: 10 OR MORE TIMES\nmhs: RECODE : Rate overall mental health\nSAS Format: RTB\n1: EXCELLENT\n2: VERY GOOD\n3: GOOD\n4: FAIR\n5: POOR\npd_ezrxmail: RECODE : Last 6 mths, easy to use",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

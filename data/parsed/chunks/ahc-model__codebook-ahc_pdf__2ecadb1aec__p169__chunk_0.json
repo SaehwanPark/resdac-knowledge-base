@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p169__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 169,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n168 \nSR_SPLMTL_DSBLTS_OVRL_SCRNG_IND \nLABEL: \nScreened Supplemental HRSN Disabilities Overall Indicator \nDESCRIPTION: Screening result (SR) supplemental health related social need (HRSN) disabilities composite indicator. \nLONG NAME: SR_SPLMTL_DSBLTS_OVRL_SCRNG_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = Did not screen positive for disabilities need \n1 =",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

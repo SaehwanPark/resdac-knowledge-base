@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p80__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 80,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n66 \nFREE_FIRST_FILL \nLABEL: \nIndicates Whether Part D Plan Offers Free First Prescription Fill \nDESCRIPTION: This variable indicates whether the Part D plan offers a free first fill (i.e. $0 copayment) to the \nbeneficiary for any drugs. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes \nN = No \n9 = Not Applicable \nCOMMENT: \nThe CCW constructs the plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_210",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "During Rehabilitation Stay (ICD-9 Code) CHAR 7 An ICD-9-CM code indicating the complications or comorbidities that began after the rehabilitation stay started. This code identifies conditions which delayed or compromised the effectiveness of the rehabilitation program or represent high-risk medical disorders.\n171 _48A SOB_EXRTN_ADMSN_SW (48a) Shortness of Breath With Exertion: Admission CHAR 1 A code which indicates whether the patient reports one or more episodes of becoming 'breathless' or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

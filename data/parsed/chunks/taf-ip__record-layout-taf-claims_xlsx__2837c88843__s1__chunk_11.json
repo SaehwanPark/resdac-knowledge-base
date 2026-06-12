@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "10 Present on Admission Indicator CHAR 1 68\nDGNS_CD_11 Diagnosis Code 11 CHAR 7 69\nDGNS_VRSN_CD_11 Diagnosis Version Code 11 (ICD-9 or ICD-10) CHAR 1 70\nDGNS_POA_IND_11 Diagnosis 11 Present on Admission Indicator CHAR 1 71\nDGNS_CD_12 Diagnosis Code 12 CHAR 7 72\nDGNS_VRSN_CD_12 Diagnosis Version Code 12 (ICD-9 or ICD-10) CHAR 1 73\nDGNS_POA_IND_12 Diagnosis 12 Present on Admission Indicator CHAR 1 74\nHAC_IND Health Care Acquired Condition (HAC) Indicator CHAR 1 75\nIP_MH_DGNS_IND Mental Health",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

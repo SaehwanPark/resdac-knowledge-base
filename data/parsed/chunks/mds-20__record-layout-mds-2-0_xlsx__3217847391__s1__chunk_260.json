@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_260",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "in last 7 days - nutrition/hydration intervention. 0 = No, 1 = Yes, \"-\" = Unknown.\n426 M5E M5E_ULCER_CARE (M5E) Ulcer Care CHAR 1 Skin condition: skin treatments in last 7 days - ulcer care. 0 = No, 1 = Yes, \"-\" = Unknown.\n427 M5F M5F_SURG_WOUND_CAR (M5F) Surgical Wound Care CHAR 1 Skin condition: skin treatments in last 7 days - surgical wound care. 0 = No, 1 = Yes, \"-\" = Unknown.\n428 M5G M5G_APP_DRESSINGS (M5G) Application of Dressings CHAR 1 Skin condition: skin treatments in last 7 days -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_418",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Setup or clean-up assistance\n06 = Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n357 GG0170L2_WLKG_UNEVEN_GOAL_CD GG0170L2_WLKG_UNEVEN_GOAL_CD GG0170L2 Discharge Goal Walk 10 Feet On Uneven Surface Code - the patient's discharge goal to walk at least 10 feet on uneven or sloping surfaces such as grass or gravel. CHAR 2 The data in this column indicates the patient's",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Services, 08 = Developmental Disabilities Services, 09 = State Vocational Rehabilitation, 10 = Private Pay, 11 = Employee Courtesy, 12 = Unreimbursed, 13 = CHAMPUS, 14 = Other, 15 = None, 16 = No-fault Auto Insurance, 51 = Medicare MCO, 52 = Medicaid MCO\n37 _21A IMPRMNT_GRP_ADMSN_CD (21a) Impairment Group: Admission CHAR 9 The Impairment Group Code (IGC) that best describes the primary reason for admission to the rehabilitation program. Each IGC consists of a two-digit number (indicating the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

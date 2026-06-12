@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_20",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| 102 | CLM_POA_IND_SW14 | Claim Diagnosis Code XIV Diagnosis Present on Admission (POA) Indicator Code (FFS) | \n\n | 103 | ICD_DGNS_CD15 | Claim Diagnosis Code XV (FFS) | \n\n | 104 | CLM_POA_IND_SW15 | Claim Diagnosis Code XV Diagnosis Present on Admission (POA) Indicator Code (FFS) | \n\n | 105 | ICD_DGNS_CD16 | Claim Diagnosis Code XVI (FFS) | \n\n | 106 | CLM_POA_IND_SW16 | Claim Diagnosis Code XVI Diagnosis Present on Admission (POA) Indicator Code | \n\n | 107 | ICD_DGNS_CD17 | Claim Diagnosis",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

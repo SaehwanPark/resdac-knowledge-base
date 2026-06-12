@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p72__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 72,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n61 \nMDCD_TOTAL_USE \nLABEL: \nMedicaid Use (Claim Count) — Total \nDESCRIPTION: This variable is the total count of Medicaid inpatient (IP), long-term care (LT), pharmacy (RX), and \nother services (OT) (header) claims for the beneficiary for during the year, after removing the \nmanaged care capitated payment claims from the OT file. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Claims files (derived) \nVALUES: \nXX \nCOMMENT: \nCCW",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nMedicare Part D Plan Characteristics File - Premium File\nVersion - May 2018\nLong SAS Name Label Type Length Year of Data File 1\n2007 - 2008 2009 2010 +\nCONTRACT_ID Part D Contract Identifier 2 CHAR 5 X X X\nPLAN_ID Part D Plan Benefit Package Identifier 2 CHAR 3 X X X\nSEGMENT_ID Part D Market Segment Identifier CHAR 3 X X X\nPART_B_PREMIUM_REDUCTION_AMT Part B Premium Reduction Amount NUM 8 X LC X\nPART_C_PREMIUM Part C Premium NUM 8 X X",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_19",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "($) | \n\n | 103 | MRI_CHRG_AMT | Magnetic Resonance Imaging (MRI) charge amount ($) | \n\n | 104 | OP_SRVC_CHRG_AMT | Outpatient Service Charge Amount ($) | \n\n | 105 | ER_CHRG_AMT | Emergency Room (ER) Charge Amount ($) | \n\n | 106 | AMBLNC_CHRG_AMT | Ambulance Charge Amount ($) | \n\n | 107 | PROFNL_FEES_CHRG_AMT | Professional Fees Charge Amount ($) | \n\n | 108 | ORGN_ACQSTN_CHRG_AMT | Organ acquisition or other donor bank charge amount ($) | \n\n | 109 | ESRD_REV_SETG_CHRG_AMT | End Stage Renal",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

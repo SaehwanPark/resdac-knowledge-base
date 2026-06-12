@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p243__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 243,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n227 \nSRGCL_PRCDR_VRSN_CD \nLABEL: \nSurgical Procedure Version Code (Earlier Version) \nDESCRIPTION: The code is used to indicate if the surgical procedure code is ICD-9 or ICD-10. \nSHORT NAME: SRGCL_PRCDR_VRSN_CD \nLONG NAME: SRGCL_PRCDR_VRSN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nNull/missing = ICD-9-CM \n9 = ICD-9-CM \n0 = ICD-10-PCS \nCOMMENT: \nICD-10 procedure codes were used starting",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

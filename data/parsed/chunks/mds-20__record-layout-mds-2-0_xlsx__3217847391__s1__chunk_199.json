@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_199",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Unknown.\n290 I1G I1G_VEIN_THROMB (I1G) Deep Vein Thrombosis CHAR 1 Disease diagnosis: diseases - heart/circulation - deep vein thrombosis. 0 = No, 1 = Yes, \"-\" = Unknown.\n291 I1GG I1GG_SCHIZO (I1GG) Schizophrenia CHAR 1 Disease diagnosis: diseases - psychiatric/mood - schizophrenia. 0 = No, 1 = Yes, \"-\" = Unknown.\n292 I1H I1H_HYPERTENSION (I1H) Hypertension CHAR 1 Disease diagnosis: diseases - heart/circulation - hypertension. 0 = No, 1 = Yes, \"-\" = Unknown.\n293 I1HH I1HH_ASTHMA (I1HH) Asthma",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

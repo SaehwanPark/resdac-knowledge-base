@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-encounter__chunk_1",
+  "source_document": "data/raw/html/dataset_page/8d8101948f2978af09e9f0a954289b9ffd5fd1bf.html",
+  "page": null,
+  "text": "and community mental health centers.\nThis file includes (variable highlights):\n- Diagnosis (ICD diagnosis) codes\n- HCPCS code\n- Revenue center codes, dates, unit counts\n- Part C Benefit Package and Contract number\n- Organization NPI number\n- No payment information\nSpecial considerations:\n- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter",
+  "dataset": "op-encounter",
+  "url": "https://resdac.org/cms-data/files/op-encounter?page=1"
+}

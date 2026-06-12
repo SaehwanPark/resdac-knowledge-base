@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_290",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - Alzheimer's/dementia special care unit. 0 = No, 1 = Yes, \"-\" = Unknown.\n486 P1AO P1AO_HOSPICE (P1AO) Hospice Care CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - hospice care. 0 = No, 1 = Yes, \"-\" = Unknown.\n487 P1AP P1AP_PEDIATRIC (P1AP) Pediatric Unit CHAR 1 Special treatments and procedures: special",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

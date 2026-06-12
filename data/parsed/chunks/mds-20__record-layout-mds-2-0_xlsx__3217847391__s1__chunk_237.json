@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_237",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "gain - 5% or more in 30 days; 10% or more in 180 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n385 K4A K4A_COMP_FOOD_TAST (K4A) Complains About the Taste of Many Foods CHAR 1 Oral/nutritional status: nutritional problems - complains about taste of many foods. 0 = No, 1 = Yes, \"-\" = Unknown.\n386 K4B K4B_CONSTANT_HUNGR (K4B) Regular Complaints of Hunger CHAR 1 Oral/nutritional status: nutritional problems - regular complaints of hunger. 0 = No, 1 = Yes, \"-\" = Unknown.\n387 K4C K4C_NOT_EATING (K4C) Leaves",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_252",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "contraindication \n4 - Offered and declined\n5 - Not offered\n6 - Inability to obtain influenza vaccine due to a declared shortage \n9 - None of the above\n226 CALCD_CCN_NUM CALCD_CCN_NUM Calculated CCN - Calculated CMS Certification Number CHAR 12 The CMS Certification Number (CCN) of the facility calculated by the ASAP system.\n227 ETLGC_DGNS_A_CD ETLGC_DGNS_A_CD 22A Etiologic Diagnosis A CHAR 3 This is the first ICD code indicating the etiologic problem that led to the condition for which the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

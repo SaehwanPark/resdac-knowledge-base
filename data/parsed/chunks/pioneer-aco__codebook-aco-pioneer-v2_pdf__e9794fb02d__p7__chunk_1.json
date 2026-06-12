@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__codebook-aco-pioneer-v2_pdf__e9794fb02d__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/e9794fb02d175a1909be3f0dea52965ad4524cdd.pdf",
+  "page": 7,
+  "text": "records in all CCW data files (e.g., Medicare claims, MAX claims, MDS assessment data). \nThis number does not change during a beneficiary’s lifetime and each number is used only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nSHORT NAME: BENE_ID \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nCCW \nVALUES: \n— \nCOMMENT: \n— \n\n^ Back to TOC ^",
+  "dataset": "pioneer-aco",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-aco-pioneer-v2.pdf"
+}

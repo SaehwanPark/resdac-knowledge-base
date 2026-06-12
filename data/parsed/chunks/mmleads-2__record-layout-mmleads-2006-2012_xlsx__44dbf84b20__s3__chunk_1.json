@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 3,
+  "text": "for individuals who do not have a valid BENE_ID up to 20 alphanumeric characters\nSTATE_CD MDCD State for used for Medicaid-only individuals who do not have a valid BENE_ID 2-letter postal abbreviation\nSTATE_CD_1-STATE_CD_12 Monthly State Code: January, etc; (state of residence) 2-letter postal abbreviation\nSAMPLE_IND 1% sample 1 - person is included in 1% sample\nNull/missing\nService Type SRVC_1 Level 1 service category. Waiver Vs. Non-waiver or Managed Care MDCD_WAIVER\nMDCD_NONWAIVER\nMDCD_MC\nSRV",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p142__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 142,
+  "text": "(linking from provider base to the provider Location and provider License files via the \nCCW_APR_LINK_KEY and the PRVDR_LCTN_ID). \nSHORT NAME: SPLMTL_LCNS_ACRDTN \nLONG NAME: SPLMTL_LCNS_ACRDTN \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThe CCW_APR_LINK_KEY identifies each unique combination of submitting state entity code \n(SUBMTG_STATE_CD) and state-specific provider identifier (SUBMTG_STATE_PRVDR_ID). \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

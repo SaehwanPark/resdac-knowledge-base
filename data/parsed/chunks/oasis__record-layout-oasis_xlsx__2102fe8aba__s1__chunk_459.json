@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_459",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "This field indicates the current number of unstageable unhealed pressure ulcers due to deep tissue injury in evolution. CHAR 2 x x x\nM1311_NSTG_DEEP_TISSUE_SOC_ROC M1311 (M1309) Number Unstageble Pressure Ulcers D/T Deep Tissue Injury in Evolution that were present at most recent SOC/ROC This field indicates the current number of unstageable unhealed pressure ulcers due to deep tissue injury in evolution that were present on admission (most recent SOC / ROC). CHAR 2 x x x\nM1311_NSTG_DRSG M1311",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

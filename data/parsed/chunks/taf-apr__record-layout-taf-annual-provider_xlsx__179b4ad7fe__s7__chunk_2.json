@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s7__chunk_2",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 7,
+  "text": "Provider State (FIPS) Code CHAR 2 12\nPRVDR_ZIP_CD Provider Zip Code CHAR 9 13\nPRVDR_CNTY_CD Provider County (FIPS) Code CHAR 3 14\nBRDR_STATE_IND Border State Indicator CHAR 1 15\nPRVDR_STATE_CD_DFRNT_IND Provider Location State Differs from Submitting State Indicator CHAR 1 16\nPRVDR_LCTN_ACTV_IND_01 Provider Location Active Indicator - January CHAR 1 17\nPRVDR_LCTN_ACTV_IND_02 Provider Location Active Indicator - February CHAR 1 18\nPRVDR_LCTN_ACTV_IND_03 Provider Location Program Active Indicator",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

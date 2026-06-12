@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p43__chunk_5",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 43,
+  "text": "equal “10”, the corresponding valid values associated with these \nrespective operating authorities. \nThis data element also triggers the individual operating authority indicators such as \nOPRTG_AUTHRTY_1115_DEMO_WVR_IND, etc. that appear on the APL base file. If any of the \nMC_PLAN_OPRTG_AUTHRTY_CD data elements contain a value of “02,” for example, then \nOPRTG_AUTHRTY_1915B_WVR_IND will be triggered. \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

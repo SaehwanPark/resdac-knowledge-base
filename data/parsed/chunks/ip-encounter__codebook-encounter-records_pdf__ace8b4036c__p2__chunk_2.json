@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p2__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 2,
+  "text": "BENE_STATE (added GU and UP) and both \nCLM_PLACE_OF_SRVC_CD and LINE_PLACE_OF_SRVC_CD \n(edited value descriptions for 02,18,19) \n1.5 \nNovember 2020 K. Schneider \nK. Russell \nUpdated LINE_PLACE_OF_SRVC_CD description and \nCLM_VAL_CD values; migrated codebook to new document \ntemplate \n1.4 \nMay 2020 \nK. Schneider \nUpdated state codes, added REV_CNTR values \n1.3 \nDecember 2019 K. Schneider \nAdded CLM_PLACE_OF_SRVC_CD and RNDRNG_PHYSN_NPI to \ncarrier and DME base claim layouts for 2016 encounter",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

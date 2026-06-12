@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_451",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "activity was not attempted, code reason (not to be used for DISCHARGE GOAL):\n07 = Patient refused\n09 = Not applicable\n88 = Not attempted due to medical condition or safety concerns CHAR 2 x\nHHA_ITM_SBST_CD HHA Item Subset Code CHAR 3 x x x x x x\nM1028_ACTV_DGNS_DML_IND Active Diagnosis - Diabetes Mellitus Active Diagnosis Comorbidities and Co-existing Conditions - Diabetes Mellitus CHAR 1 x x x\nM1028_ACTV_DGNS_IND Active Diagnosis - PVD or PAD Active Diagnosis Comorbidities and Co-existing",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

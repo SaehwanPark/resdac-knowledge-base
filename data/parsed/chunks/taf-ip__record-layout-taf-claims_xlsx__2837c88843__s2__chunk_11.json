@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_11",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Referring Provider Type Code CHAR 2 66 Retired4\nRFRG_PRVDR_SPCLTY_CD Referring Provider Specialty Code CHAR 2 67 Retired4\nPRVDR_LCTN_CD Provider Location Code CHAR 5 68\nBRDR_STATE_IND Border State Indicator CHAR 1 69\nMH_TXNMY_IND Mental Health Provider Taxonomy Indicator CHAR 1 70\nSUD_TXNMY_IND Substance Use Disorder Provider Taxonomy Indicator CHAR 1 71\nNCVRD_DAYS Medicaid Noncovered Days Count NUM 8 72\nCVRD_DAYS_ICF_IID Count of Medicaid Covered Days in ICF for Patients with Intellectual",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

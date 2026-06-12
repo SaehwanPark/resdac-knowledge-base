@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p72__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 72,
+  "text": "is the admission \ndate and the claim “from date” (field called CLM_FROM_DT) must be the same. \nFrom 1/1/2020 until 10/2/2023, there was no direct way to determine the admission date for HHA. \nPrior to January 2020, when this variable appeared in the HHA it is the date the care began for the \nHHA services reported on the claim. \nThe date in this variable may precede the claim from date (CLM_FROM_DT) if this claim is for a \nbeneficiary who has been continuously under care. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,11 @@
+The Medicare Encounter Skilled Nursing Facility file includes Medicare Advantage plan records for skilled nursing facility stays. Skilled nursing care is the only level of nursing home care that is covered by the Medicare program.
+This file includes:
+- Diagnosis codes (ICD diagnosis)
+- Procedure codes (ICD procedure)
+- Resource Utilization Group codes (RUGs)
+- Admission/discharge dates
+- Organization NPI number only
+- No payment variables
+- Part C/Medicare Advantage benefit package and contract number
+Special considerations:
+- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter data may include records for some of these additional items and services provided under the plan.

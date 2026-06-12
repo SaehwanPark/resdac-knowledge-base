@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p70__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 70,
+  "text": "if the beneficiary had managed care claims. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Claims files (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as the sum of all MDCD_PD_AMT from all IP, LT, OT, and RX header \nclaims. Unlike the MMLEADS variable called MDCD_TOTAL_NON_ CAPTD_SPEND, this variable does \nnot remove records for capitated payments. All claims are included in this amount. \nNote that the Center for Medicaid and CHIP Services (CMCS) at CMS has required redaction of the",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

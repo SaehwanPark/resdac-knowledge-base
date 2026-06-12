@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p21__chunk_3",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 21,
+  "text": "strength, and dosage form). In the PDE file, \nthis variable is populated by linking to the proprietary First DataBank MedKnowledge database by \nmatching on the National Drug Code (NDC; variable in the PDE files called the product service \nidentifier PROD_SRVC_ID). Additional details regarding the FDB source data are available at: \nhttp://www.fdbhealth.com/fdb-medknowledge/ \n^ Back to TOC ^",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

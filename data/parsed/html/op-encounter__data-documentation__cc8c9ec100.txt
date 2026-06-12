@@ -1,0 +1,437 @@
+| 1 | BENE_ID | Encrypted CCW Beneficiary ID | 
+        
+          
+                  
+                                                                                                                                        | 2 | SAMPLE_GROUP | CCW Beneficiary Random Sample Group | 
+        
+          
+                  
+                                                                                                                                        | 3 | ENC_JOIN_KEY | Unique Encounter Join Key | 
+        
+          
+                  
+                                                                                                                                        | 4 | CLM_TYPE_CD | Claim Type Code | 
+        
+          
+                  
+                                                                                                                                        | 5 | CLM_FROM_DT | Claim From Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 6 | CLM_THRU_DT | Claim Through Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 7 | SRVC_MONTH | Service Month | 
+        
+          
+                  
+                                                                                                                                        | 8 | CLM_CHRT_RVW_SW | Claim Chart Review Switch | 
+        
+          
+                  
+                                                                                                                                        | 9 | CLM_CNTL_NUM | Claim Control Number | 
+        
+          
+                  
+                                                                                                                                        | 10 | CLM_ORIG_CNTL_NUM | Claim Original Control Number | 
+        
+          
+                  
+                                                                                                                                        | 11 | CLM_FINL_ACTN_IND | Claim Final Action Indicator | 
+        
+          
+                  
+                                                                                                                                        | 12 | CLM_LTST_CLM_IND | Latest Claim Indicator | 
+        
+          
+                  
+                                                                                                                                        | 13 | EDPS_CREATE_DT | Encounter Data Processing System (EDPS) Create Date | 
+        
+          
+                  
+                                                                                                                                        | 14 | CLM_RCPT_DT | Claim Receipt Date | 
+        
+          
+                  
+                                                                                                                                        | 15 | CLM_FAC_TYPE_CD | Claim Facility Type Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 16 | CLM_SRVC_CLSFCTN_TYPE_CD | Claim Service Classification Type Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 17 | CLM_FREQ_CD | Claim Frequency Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 18 | CNTRCT_NUM | Medicare Part C Contract Number | 
+        
+          
+                  
+                                                                                                                                        | 19 | CNTRCT_PBP_NUM | Medicare Part C Plan Benefit Package (PBP) Number | 
+        
+          
+                  
+                                                                                                                                        | 20 | CLM_MDCL_REC | Claim Medical Record Number (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 21 | ORG_NPI | Organization NPI Number (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 22 | ORG_TXNMY_CD | Organization Taxonomy Code | 
+        
+          
+                  
+                                                                                                                                        | 23 | RNDRNG_PHYSN_NPI | Rendering Physician NPI (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 24 | RFRG_PHYSN_NPI | Carrier/DME Referring Physician NPI Number | 
+        
+          
+                  
+                                                                                                                                        | 25 | AT_PHYSN_NPI | Claim Attending Physician NPI Number (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 26 | AT_PHYSN_TXNMY_CD | Claim Attending Physician Taxonomy Code | 
+        
+          
+                  
+                                                                                                                                        | 27 | OP_PHYSN_NPI | Claim Operating Physician NPI Number (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 28 | OT_PHYSN_NPI | Claim Other Physician NPI Number (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 29 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 30 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 31 | ICD_DGNS_CD1 | Claim Diagnosis Code 1 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 32 | ICD_DGNS_CD2 | Claim Diagnosis Code 2 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 33 | ICD_DGNS_CD3 | Claim Diagnosis Code 3 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 34 | ICD_DGNS_CD4 | Claim Diagnosis Code 4 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 35 | ICD_DGNS_CD5 | Claim Diagnosis Code 5 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 36 | ICD_DGNS_CD6 | Claim Diagnosis Code 6 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 37 | ICD_DGNS_CD7 | Claim Diagnosis Code 7 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 38 | ICD_DGNS_CD8 | Claim Diagnosis Code 8 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 39 | ICD_DGNS_CD9 | Claim Diagnosis Code 9 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 40 | ICD_DGNS_CD10 | Claim Diagnosis Code 10 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 41 | ICD_DGNS_CD11 | Claim Diagnosis Code 11 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 42 | ICD_DGNS_CD12 | Claim Diagnosis Code 12 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 43 | ICD_DGNS_CD13 | Claim Diagnosis Code 13 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 44 | ICD_DGNS_CD14 | Claim Diagnosis Code 14 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 45 | ICD_DGNS_CD15 | Claim Diagnosis Code 15 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 46 | ICD_DGNS_CD16 | Claim Diagnosis Code 16 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 47 | ICD_DGNS_CD17 | Claim Diagnosis Code 17 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 48 | ICD_DGNS_CD18 | Claim Diagnosis Code 18 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 49 | ICD_DGNS_CD19 | Claim Diagnosis Code 19 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 50 | ICD_DGNS_CD20 | Claim Diagnosis Code 20 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 51 | ICD_DGNS_CD21 | Claim Diagnosis Code 21 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 52 | ICD_DGNS_CD22 | Claim Diagnosis Code 22 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 53 | ICD_DGNS_CD23 | Claim Diagnosis Code 23 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 54 | ICD_DGNS_CD24 | Claim Diagnosis Code 24 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 55 | ICD_DGNS_CD25 | Claim Diagnosis Code 25 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 56 | CLM_1ST_DGNS_E_CD | First Claim Diagnosis E Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 57 | ICD_DGNS_E_CD1 | Claim Diagnosis E Code 1 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 58 | ICD_DGNS_E_CD2 | Claim Diagnosis E Code 2 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 59 | ICD_DGNS_E_CD3 | Claim Diagnosis E Code 3 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 60 | ICD_DGNS_E_CD4 | Claim Diagnosis E Code 4 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 61 | ICD_DGNS_E_CD5 | Claim Diagnosis E Code 5 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 62 | ICD_DGNS_E_CD6 | Claim Diagnosis E Code 6 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 63 | ICD_DGNS_E_CD7 | Claim Diagnosis E Code 7 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 64 | ICD_DGNS_E_CD8 | Claim Diagnosis E Code 8 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 65 | ICD_DGNS_E_CD9 | Claim Diagnosis E Code 9 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 66 | ICD_DGNS_E_CD10 | Claim Diagnosis E Code 10 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 67 | RSN_VISIT_CD1 | Reason for Visit Diagnosis Code 1 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 68 | RSN_VISIT_CD2 | Reason for Visit Diagnosis Code 2 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 69 | RSN_VISIT_CD3 | Reason for Visit Diagnosis Code 3 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 70 | ICD_PRCDR_CD1 | Claim Procedure Code 1 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 71 | ICD_PRCDR_CD2 | Claim Procedure Code 2 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 72 | ICD_PRCDR_CD3 | Claim Procedure Code 3 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 73 | ICD_PRCDR_CD4 | Claim Procedure Code 4 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 74 | ICD_PRCDR_CD5 | Claim Procedure Code 5 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 75 | ICD_PRCDR_CD6 | Claim Procedure Code 6 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 76 | ICD_PRCDR_CD7 | Claim Procedure Code 7 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 77 | ICD_PRCDR_CD8 | Claim Procedure Code 8 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 78 | ICD_PRCDR_CD9 | Claim Procedure Code 9 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 79 | ICD_PRCDR_CD10 | Claim Procedure Code 10 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 80 | ICD_PRCDR_CD11 | Claim Procedure Code 11 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 81 | ICD_PRCDR_CD12 | Claim Procedure Code 12 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 82 | ICD_PRCDR_CD13 | Claim Procedure Code 13 (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 83 | PRCDR_DT1 | Claim Procedure Code 1 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 84 | PRCDR_DT2 | Claim Procedure Code 2 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 85 | PRCDR_DT3 | Claim Procedure Code 3 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 86 | PRCDR_DT4 | Claim Procedure Code 4 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 87 | PRCDR_DT5 | Claim Procedure Code 5 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 88 | PRCDR_DT6 | Claim Procedure Code 6 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 89 | PRCDR_DT7 | Claim Procedure Code 7 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 90 | PRCDR_DT8 | Claim Procedure Code 8 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 91 | PRCDR_DT9 | Claim Procedure Code 9 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 92 | PRCDR_DT10 | Claim Procedure Code 10 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 93 | PRCDR_DT11 | Claim Procedure Code 11 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 94 | PRCDR_DT12 | Claim Procedure Code 12 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 95 | PRCDR_DT13 | Claim Procedure Code 13 Date (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 96 | CLM_OBSLT_DT | Claim Obsolete Date | 
+        
+          
+                  
+                                                                                                                                        | 97 | CLM_BPRVDR_CITY_NAME | Billing Provider Address - City | 
+        
+          
+                  
+                                                                                                                                        | 98 | CLM_BPRVDR_USPS_STATE_CD | Billing Provider Address - USPS State Code | 
+        
+          
+                  
+                                                                                                                                        | 99 | CLM_BPRVDR_ADR_ZIP_CD | Billing Provider Zip Code | 
+        
+          
+                  
+                                                                                                                                        | 100 | CLM_SUBSCR_CITY_NAME | Medicare Subscriber Address - City | 
+        
+          
+                  
+                                                                                                                                        | 101 | CLM_SUBSCR_USPS_STATE_CD | Medicare Subscriber Address - USPS State Code | 
+        
+          
+                  
+                                                                                                                                        | 102 | CLM_SUBSCR_ADR_ZIP_CD | Medicare Subscriber Address - ZIP Code | 
+        
+          
+                  
+                                                                                                                                        | 103 | BENE_CNTY_CD | Beneficiary County Code from Claim (SSA) | 
+        
+          
+                  
+                                                                                                                                        | 104 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 105 | BENE_MLG_CNTCT_ZIP_CD | Beneficiary ZIP Code of Residence from Claim | 
+        
+          
+                  
+                                                                                                                                        | 107 | BENE_RACE_CD | Beneficiary Race Code (Encounter) | 
+        
+          
+                  
+                                                                                                                                        | 108 | DOB_DT | Date of Birth from Encounter | 
+        
+          
+                  
+                                                                                                                                        | 109 | BENE_MDCR_STUS_CD | Beneficiary Medicare Status Code | 
+        
+          
+                  
+                                                                                                                                        | 110 | TAX_NUM | Provider Tax Number | 
+        
+          
+                  
+                                                                                                                                        | 111 | BENE_STATE | State of beneficiary (postal abbreviation) |

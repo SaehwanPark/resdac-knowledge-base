@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p9__chunk_1",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 9,
+  "text": "LENGTH: \n6 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \nEx – 030036, 220110 \n\nCOMMENT: \nIf attempting to join to Medicare claims files in the CCW, the 6-digit CCN is called the provider number \n(PRVDR_NUM). \n^ Back to TOC ^",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_794",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "of injury in the last seven days. 0=No impairment\n1=Impairment on one side\n2=Impairment on both sides effective 10/01/2023\n887 MBLTY_CANE_CD MBLTY_CANE_CD GG0120A Mobility Device - Cane/Crutch CHAR 1 The data in this column indicates whether the resident used a cane or crutches in the last seven days. 0=No\n1=Yes effective 10/01/2023\n888 MBLTY_WLKR_CD MBLTY_WLKR_CD GG0120B Mobility Device - Walker CHAR 1 The data in this column indicates whether the resident used a walker in the last seven days.",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

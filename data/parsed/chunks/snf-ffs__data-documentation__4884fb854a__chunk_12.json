@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_12",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "Admitting Diagnosis Code (FFS) | \n\n | 67 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (FFS) | \n\n | 68 | ICD_DGNS_CD1 | Claim Diagnosis Code I (FFS) | \n\n | 69 | ICD_DGNS_CD2 | Claim Diagnosis Code II (FFS) | \n\n | 70 | ICD_DGNS_CD3 | Claim Diagnosis Code III (FFS) | \n\n | 71 | ICD_DGNS_CD4 | Claim Diagnosis Code IV (FFS) | \n\n | 72 | ICD_DGNS_CD5 | Claim Diagnosis Code V (FFS) | \n\n | 73 | ICD_DGNS_CD6 | Claim Diagnosis Code VI (FFS) | \n\n | 74 | ICD_DGNS_CD7 | Claim Diagnosis Code VII (FFS) |",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

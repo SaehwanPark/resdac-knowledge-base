@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p225__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 225,
+  "text": "applies to all drugs on the formulary. \n1 in 1st digit = All Formulary Drugs \n1 in 2nd digit = Generic \n1 in 3rd digit = Preferred Generic \n1 in 4th digit = Non-Preferred Generic \n1 in 5th digit = Brand \n1 in 6th digit = Preferred Brand \n1 in 7th digit = Non-Preferred Brand \n\nCOMMENT: \nThis variable is only available 2008–2010. The field was widened from 5 characters to 7 in 2009. \n\nThe Initial Coverage Limit (ICL) phase of the Part D benefit is also referred to as the coverage gap. \n\nThe CCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

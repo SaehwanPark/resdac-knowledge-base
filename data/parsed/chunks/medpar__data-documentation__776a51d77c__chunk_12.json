@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_12",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| \n\n | 63 | CLM_IP_INITL_MS_DRG_CD | MedPAR Claim Inpatient Initial MS-DRG Code | \n\n | 64 | IP_DSPRPRTNT_SHR_AMT | Inpatient Disproportionate Share (DSH) Amount ($) | \n\n | 65 | IME_AMT | Indirect Medical Education (IME) Amount ($) | \n\n | 66 | PASS_THRU_AMT | Pass Thru Per Diem Amount for Stay ($) | \n\n | 67 | TOT_PPS_CPTL_AMT | Total PPS Capital Amount ($) | \n\n | 68 | IP_LOW_VOL_PYMT_AMT | Inpatient Low Volume Payment Amount | \n\n | 69 | TOT_CHRG_AMT | Total Charge Amount ($) | \n\n | 70 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

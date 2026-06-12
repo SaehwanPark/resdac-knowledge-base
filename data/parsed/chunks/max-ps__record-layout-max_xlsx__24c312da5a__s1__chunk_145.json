@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_145",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Premium payment record count (HMO or PACE) NUM 5 X X X X X X X X X X X\n648 PREM_MDCD_PYMT_AMT_HMO Medicaid premium payments (HMO or PACE) NUM 12 X X X X X X X X X X X\n649 PREM_PYMT_IND_PHP Premium payment indicator (PHP) NUM 1 X X X X X X X X X X X Populated with Zeros Only\n650 PREM_PYMT_REC_CNT_PHP Premium payment records (PHP) NUM 5 X X X X X X X X X X X Populated with Zeros Only\n651 PREM_MDCD_PYMT_AMT_PHP Medicaid premium payments (PHP) NUM 12 X X X X X X X X X X X Populated with Zeros",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

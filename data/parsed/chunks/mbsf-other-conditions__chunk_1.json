@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__chunk_1",
+  "source_document": "data/raw/html/dataset_page/cb6221ac2e195081875db2207b6efc6681e56769.html",
+  "page": null,
+  "text": "health\n- Other chronic physical conditions\nWhat does this file include? (variable highlights)\n- Two flags for each chronic condition:- First ever occurrence date\n- End of year indicator\n\n- This file is a segment that can be requested in addition to the Master Beneficiary Summary File (MBSF) base file.\nSpecial considerations\n- This file uses information from Fee-For-Service (FFS) Medicare claims.",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://resdac.org/cms-data/files/mbsf-other-conditions"
+}

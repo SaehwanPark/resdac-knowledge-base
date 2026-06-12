@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p53__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 53,
+  "text": "PTD_PBP_ID_09 \nPTD_PBP_ID_10 \nPTD_PBP_ID_11 \nPTD_PBP_ID_12 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nThree-digit alphanumeric that can include leading zeros \nNull/missing =Not Enrolled in Medicare Part D \nCOMMENT: \nIf the beneficiary did not have a Part D plan for a given month, this variable will have null/missing \nvalue for that month. Effective with MBSF ABDC V2, a beneficiary with a verified or unverified date of \ndeath will have a null/missing Part",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

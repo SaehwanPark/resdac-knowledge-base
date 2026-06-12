@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p14__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 14,
+  "text": "Medicare claims, MAX claims, T-MSIS claims, and MDS assessment data). \nThis number does not change during a beneficiary’s lifetime, and CCW uses each number only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF/T-MSIS DE file (derived) \nVALUES: \nNull/Missing if not applicable \nCOMMENT: \nIf there is not a BENE_ID for the record, use the MSIS_ID in combination with the STATE_CD to identify",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

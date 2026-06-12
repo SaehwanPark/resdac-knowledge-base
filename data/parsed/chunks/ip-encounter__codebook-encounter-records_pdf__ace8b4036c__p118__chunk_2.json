@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p118__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 118,
+  "text": "8 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP revenue \nSNF revenue \nHH revenue \nOP revenue \nVALUES: \n0–XXXXXX \nCOMMENT: \nWhen revenue center code = “0022” (SNF PPS) the unit count reflects the number of covered days for \neach HIPPS code and, if applicable, the number of visits for each rehab therapy code. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

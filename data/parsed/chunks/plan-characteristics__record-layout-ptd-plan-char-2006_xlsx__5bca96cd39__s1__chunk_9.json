@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "national_pdp Indicates whether plan belongs to a National PDP sponsor Char 1 Indicates that the Part D plan benefit package is a stand-alone Prescription Drug Plan (PDP) offered by a national Part D sponsor. N No\nY Yes\n9 Not Applicable\n18 gap_coverage_type Type of Gap Coverage offered Char 1 Indicates that the plan benefit package offers some form of extra coverage in the coverage gap. N No Gap Coverage\nG Generics\nB Generics and Brands\n9 Not Applicable\n19 ded_apply How Deductible is applied",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_259",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "GRP_SPCH_THRPY_WK_1_NUM O0401CC SLP: Total Minutes Group Therapy Week 1 NUM 22 This indicates the total number of group speech-language pathology therapy minutes provided in the first week\nof stay.\n239 CO_TRTMT_SPCH_THRPY_WK_1_NUM CO_TRTMT_SPCH_THRPY_WK_1_NUM O0401CD SLP: Total Minutes Co-treatment Therapy Week 1 NUM 22 This indicates the total number of co-treatment speech-language pathology therapy minutes provided in the first\nweek of stay.\n240 INDVDL_PT_WK_2_NUM INDVDL_PT_WK_2_NUM O0402AA",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

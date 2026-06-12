@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p47__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 47,
+  "text": "Managed Care Capitated Payment Amount — January–December (01–12) \nDESCRIPTION: This variable is a monthly variable that calculates managed care capitated spending for the \nbeneficiary. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS OT Claims File (derived) \nVALUES: \n$ \nCOMMENT: \nCCW creates this variable by identifying OT header claims that are for managed care capitated \npayments. These are header claims where the claim type code (T-MSIS variable called CLM_TYPE_CD) \nis equal to '2' (Medicaid or",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

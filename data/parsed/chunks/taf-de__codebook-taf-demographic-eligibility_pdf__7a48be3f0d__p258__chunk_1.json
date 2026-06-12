@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p258__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 258,
+  "text": "the Medicaid Statistical Information \nSystem Identifier (MSIS_ID). \nSHORT NAME: MSIS_ID \nLONG NAME: MSIS_ID \nTYPE: \nCHAR \nLENGTH: \n32 \nFILE(S): \nAll demographic and eligibility \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \nAlphanumeric character string, 32 characters \n(Ex: 9Q81866B302C768A539BBE79FFB835FB) \nNull/missing = source value is missing or unknown \nCOMMENT: \nThe MSIS ID is unique only within a state for a year; a beneficiary’s MSIS ID may change longitudinally.",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

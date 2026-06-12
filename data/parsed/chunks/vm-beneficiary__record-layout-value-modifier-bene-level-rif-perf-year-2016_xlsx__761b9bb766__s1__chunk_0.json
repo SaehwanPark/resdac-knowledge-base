@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nValue Modifier Beneficiary-Level RIF / Performance Year 2016\nVersion - August 2018\nVariable Name Variable Label (Short Description) Long Description Position Format Length Notes\nBENE_ID Encrypted CCW Beneficiary ID Encrypted CCW Beneficiary ID 1 Char 15\nPRACTICE_ID Unique identifier of practice to which beneficiary is attributed Unique identifier of practice 2 Char 11\nIN_PATIENT Total costs for inpatient hospital facility services Per",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

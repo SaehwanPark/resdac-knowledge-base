@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p150__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 150,
+  "text": "or services to the state’s Medicaid/CHIP \nenrollees should be reflected in the T-MSIS provider data set (i.e. in the APR base file). \nSHORT NAME: SUBMTG_STATE_PRVDR_ID \nLONG NAME: SUBMTG_STATE_PRVDR_ID \nTYPE: \nCHAR \nLENGTH: \n30 \nFILE(S): \nAll annual provider files \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nNumeric string (e.g., 0000000001, 00000000000036). \nCOMMENT: \nThe CCW_APR_LINK_KEY identifies each unique combination of submitting state entity code \n(SUBMTG_STATE_CD) and state-specific",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

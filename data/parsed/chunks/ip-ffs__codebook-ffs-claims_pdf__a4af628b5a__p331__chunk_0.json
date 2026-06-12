@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p331__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 331,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n313 \nB13 = Previously paid. Payment for \nthis claim/service may have \nbeen provided in a previous \npayment \nB14 = Claim/service denied because \nonly one visit or consultation \nper physician per day is covered \nB15 = Claim/service adjusted because \nthis procedure/service is not \npaid separately \nB16 = Claim/service adjusted because \n“New Patient” qualifications \nwere not met",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

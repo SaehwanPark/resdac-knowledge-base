@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 \n\n12 \nPLAN_ID \nLABEL: \nPart D Plan Benefit Package Identifier \nDESCRIPTION: This variable is the unique plan benefit package (PBP) number for the Part D plan sponsor's contract. \nCMS assigns an identifier to each PBP within a contract that a Part D plan sponsor has with CMS. \nThis field is a key that links Part D sponsor's contract and plan identifiers. \nTYPE: \nCHAR",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

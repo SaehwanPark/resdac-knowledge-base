@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s8__chunk_1",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 8,
+  "text": "Identifier CHAR 5 4\nLCNS_TYPE_CD Provider License Type Code CHAR 1 5\nLCNS_NUM Provider License or Accreditation Number CHAR 20 6\nLCNS_ISSG_ENT_ID Provider License Issuing Entity Identifier CHAR 60 7\nPRVDR_LCNS_ACTV_IND_01 Provider License Active Indicator - January CHAR 1 8\nPRVDR_LCNS_ACTV_IND_02 Provider License Active Indicator - February CHAR 1 9\nPRVDR_LCNS_ACTV_IND_03 Provider License Active Indicator - March CHAR 1 10\nPRVDR_LCNS_ACTV_IND_04 Provider License Active Indicator - April CHAR 1",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

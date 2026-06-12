@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p261__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 261,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n243 \nNCH_BENE_PTA_COINSRNC_LBLTY_AM \nLABEL: \nNCH Beneficiary Part A Coinsurance Liability Amount \nDESCRIPTION: The amount of money for which the intermediary has determined that the beneficiary is liable for Part \nA coinsurance on the institutional claim. \nUnder Part A, beneficiaries pay coinsurance starting with the 61st day of an inpatient hospital stay \n(one daily amount",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

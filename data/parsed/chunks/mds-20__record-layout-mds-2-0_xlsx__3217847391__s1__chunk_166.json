@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_166",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "\"-\" = Unknown.\n233 G4BB G4BB_ARM_MOVE (G4BB) Arm Voluntary Movement CHAR 1 Physical functioning and structural problems: functional limitation in range of motion in last 7 days - arm - including shoulder or elbow - voluntary movement. 0 = No Loss, 1 = Partial Loss, 2 = Full Loss, \"-\" = Unknown.\n234 G4CA G4CA_HAND_RANGE (G4CA) Hand Range of Motion CHAR 1 Physical functioning and structural problems: functional limitation in range of motion in last 7 days - hand - including wrist or fingers -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

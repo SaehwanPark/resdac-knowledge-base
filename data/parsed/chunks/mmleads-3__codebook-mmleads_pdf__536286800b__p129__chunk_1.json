@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p129__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 129,
+  "text": "'45' '46' '47' '48' '49' '50' '51' '52' '59' '60' \n'69') then MME_TYPE_CD = 1 \nIf Medicaid /CHIP enrolled but not Medicaid A/B/D, then MME_TYPE_CD = '0' \nIf not enrolled in Medicaid/Medicare for the month, then MME_TYPE_CD = '.' (i.e., if the DE \nCHIP_CD = '.' and ELIGBLTY_GRP_CD = '.' and the MBSF MDCR BUY_IN = '0' 'NA') \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

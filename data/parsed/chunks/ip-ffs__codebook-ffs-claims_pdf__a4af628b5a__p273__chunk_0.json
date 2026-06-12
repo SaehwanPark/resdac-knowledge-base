@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p273__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 273,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n255 \nNCH_NEAR_LINE_REC_IDENT_CD \nLABEL: \nNCH Near Line Record Identification Code (RIC) \nDESCRIPTION: A code defining the type of claim record being processed. \nSHORT NAME: RIC_CD \nLONG NAME: NCH_NEAR_LINE_REC_IDENT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nM = Part B DMEPOS claim record (processed by DME regional carrier) \nO = Part B physician/supplier claim record",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

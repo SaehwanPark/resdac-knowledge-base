@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_7",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "7 49\nICD_DGNS_CD20 Claim Diagnosis Code 20 Char 7 50\nICD_DGNS_CD21 Claim Diagnosis Code 21 Char 7 51\nICD_DGNS_CD22 Claim Diagnosis Code 22 Char 7 52\nICD_DGNS_CD23 Claim Diagnosis Code 23 Char 7 53\nICD_DGNS_CD24 Claim Diagnosis Code 24 Char 7 54\nICD_DGNS_CD25 Claim Diagnosis Code 25 Char 7 55\nCLM_1ST_DGNS_E_CD First Claim Diagnosis E Code Char 7 56\nICD_DGNS_E_CD1 Claim Diagnosis E Code 1 Char 7 57\nICD_DGNS_E_CD2 Claim Diagnosis E Code 2 Char 7 58\nICD_DGNS_E_CD3 Claim Diagnosis E Code 3 Char 7",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

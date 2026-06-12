@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p157__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 157,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n117 \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n1 = Skilled Care \n2 = Intermediate Care \n3 = Custodial Care \nNull/missing = source value is missing or unknown \nCOMMENT: \nThere are up to three long-term care providers for each month; the sequence (first–third LTSS level of \ncare code) is indicated by the third digit from the right (e.g.,",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

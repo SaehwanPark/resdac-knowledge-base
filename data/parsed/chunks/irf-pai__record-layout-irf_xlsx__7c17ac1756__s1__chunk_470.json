@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_470",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "no injury since admission or prior assessment. CHAR 1 The data in this column indicates the number of falls that resulted in no injury since admission or prior assessment. 0 = None\n1 = One\n2 = Two or more\n391 J1900B_FALL_INJURY_CD J1900B_FALL_INJURY_CD J1900B Number of Falls Since Admission or Prior Assessment With Injury Except Major Code - The data in this column indicates the number of falls that resulted in injury (except major) since admission or prior assessment. CHAR 1 The data in this",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

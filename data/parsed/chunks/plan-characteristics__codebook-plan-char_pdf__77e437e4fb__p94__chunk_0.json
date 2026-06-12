@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p94__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 94,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n80 \nGAP_DAYS_MO_3M \nLABEL: \nGap Standard Mail Order — Number of Days in Three-Month Supply \nDESCRIPTION: This variable identifies the number of days in a three-month supply of a drug on this tier, when using a \nstandard mail order pharmacy during the coverage gap phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

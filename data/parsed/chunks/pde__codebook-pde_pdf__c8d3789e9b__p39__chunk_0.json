@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p39__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 39,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n34 \nOTHR_TROOP_AMOUNT_IND \nLABEL: \nOther True Out-of-Pocket (TrOOP) Amount Indicator \nDESCRIPTION: This code is used when the Other TrOOP Amount (variable called OTHR_TROOP_AMT) includes \nInflation Reduction Act Subsidy Amount (IRASA) dollars for benefit year 2023. \nSHORT NAME: OTHR_TROOP_AMOUNT_IND \nLONG NAME: OTHR_TROOP_AMOUNT_IND \nTYPE: \nCHAR \nLENGTH: \n1",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

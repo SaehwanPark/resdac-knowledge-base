@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_324",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Chairfast, unable to ambulate but is able to wheel self independently.\n05 = Chairfast, unable to ambulate and is unable to wheel self.\n06 = Bedfast, unable to ambulate or be up in a chair. CHAR 2 x x x x x x\nM1870_CU_FEEDING M1870 (M0710) Current Feeding This field indicates the patient's current ability to feed self meals and snacks safely. 00 = Able to independently feed self.\n01 = Able to feed self independently but requires: (a) meal set-up; OR (b) intermittent assistance or supervision",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

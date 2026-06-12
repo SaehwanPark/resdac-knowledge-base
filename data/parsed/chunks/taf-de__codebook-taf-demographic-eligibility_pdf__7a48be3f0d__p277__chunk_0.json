@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p277__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 277,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n237 \nRSTRCTD_BNFTS_CD_LTST \nLABEL: \nScope of Medicaid or CHIP Benefits — Latest in Year \nDESCRIPTION: A flag that indicates the scope of Medicaid or Children’s Health Insurance Program (CHIP) benefits to \nwhich a beneficiary is entitled; most recent in the calendar year. \nSHORT NAME: RSTRCTD_BNFTS_CD_LTST \nLONG NAME: RSTRCTD_BNFTS_CD_LTST \nTYPE: \nCHAR \nLENGTH: \n1",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

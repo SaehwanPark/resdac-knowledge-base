@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_869",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "transmission of the current reconciled medication list to the patient, family and/or caregiver was paper based. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2124E_ROUTE_RSDNT_OTHR_CD Patient Trans - Other Methods Indicate whether the route(s) of transmission of the current reconciled medication list to the patient, family and/or caregiver was an alternate method. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nB0200_HEARG_CD Hearing Indicates patient's ability to hear with hearing aid or hearing appliances if normally",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

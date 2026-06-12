@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 4,
+  "text": "1\nSTATE_NAME Segment State Name CHAR 25\nSTATE_ABBRV State Postal Code CHAR 2\nCOUNTY_NAME Segment County Name CHAR 35\nSSA_CODE Segment SSA State and County Code CHAR 5\nPARTIAL_FLAG Segment Partial County Indicator CHAR 1\nREGION_CODE Segment Region Code CHAR 2\nREGION_NAME Segment Region Name CHAR 150",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p6__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 6,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n2 \nCMR_DELIVERY_METHOD \nLABEL: \nComprehensive Medication Review (CMR) delivery method \nDESCRIPTION: This variable indicates the delivery method for the comprehensive medication review (CMR). \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n01 = Face-to-face \n02 = Telephone \n03 = Telehealth consultation (e.g., video conferencing) \n99 =",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

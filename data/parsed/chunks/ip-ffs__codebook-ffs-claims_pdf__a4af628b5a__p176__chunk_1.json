@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p176__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 176,
+  "text": "or other entities for whom the carrier's own ID number \n has been assigned. \n1 = Physicians or suppliers billing as solo practitioners for whom SSNs are shown in the physician ID \ncode field. \n2 = Physicians or suppliers billing as solo practitioners for whom the carrier's own physician ID code is \nshown. \n3 = Suppliers (other than sole proprietorship) for whom employer identification (EI) numbers are used \nin coding the ID field. \n4 = Suppliers (other than sole proprietorship) for whom the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

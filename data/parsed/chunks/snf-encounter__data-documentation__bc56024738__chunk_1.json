@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_1",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "Chart Review Switch | \n\n | 9 | CLM_CNTL_NUM | Claim Control Number | \n\n | 10 | CLM_ORIG_CNTL_NUM | Claim Original Control Number | \n\n | 11 | CLM_FINL_ACTN_IND | Claim Final Action Indicator | \n\n | 12 | CLM_LTST_CLM_IND | Latest Claim Indicator | \n\n | 13 | EDPS_CREATE_DT | Encounter Data Processing System (EDPS) Create Date | \n\n | 14 | CLM_RCPT_DT | Claim Receipt Date | \n\n | 15 | CLM_FAC_TYPE_CD | Claim Facility Type Code (Encounter) | \n\n | 16 | CLM_SRVC_CLSFCTN_TYPE_CD | Claim Service",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

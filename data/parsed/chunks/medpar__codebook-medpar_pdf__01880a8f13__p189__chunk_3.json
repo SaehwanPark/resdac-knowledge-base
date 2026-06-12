@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p189__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 189,
+  "text": "POA_DGNS_21_IND_CD \nPOA_DGNS_22_IND_CD \nPOA_DGNS_23_IND_CD \nPOA_DGNS_24_IND_CD \nPOA_DGNS_25_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Diagnosis codes that are exempt from the POA reporting requirements (same meaning as \nnull/missing) \n1 = Unreported/not used — exempt from POA reporting — this code is equivalent to a blank on the UB-\n04. \nY = Diagnosis was present at the time of inpatient admission. CMS will pay the CC/MCC DRG for those \nselected hospital acquired conditions",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

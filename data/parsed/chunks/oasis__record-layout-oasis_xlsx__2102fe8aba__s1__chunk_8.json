@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 6 x x x x x x x\nM0012_MEDICAID_ID (M0012) Agency Medicaid Number Agency Medicaid provider number. CHAR 15 x x\nM0014_BRANCH_STATE (M0014) Branch State Branch state. CHAR 2 x x x x x x x\nM0016_BRANCH_ID (M0016) Branch Identifier Number Branch ID number. CHAR 10 x x x x x x x\nM0018_PHYSICIAN_ID M0018 (M0072) Physician NPI This field lists the National Provider ID (NPI) for the attending physician who has signed the plan of care. CHAR 10 x x x x x x\nM0018_PHYSICIAN_UK M0018 (M0072) Physician",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

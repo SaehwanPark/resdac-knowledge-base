@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_259",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "in last 7 days - pressure relieving device(s) for bed. 0 = No, 1 = Yes, \"-\" = Unknown.\n424 M5C M5C_TURN_REPO (M5C) Turning/Repositioning Program CHAR 1 Skin condition: skin treatments in last 7 days - turning/repositioning program. 0 = No, 1 = Yes, \"-\" = Unknown.\n425 M5D M5D_INTER_SKN_PROB (M5D) Nutrition/Hydration Intervention to Manage Skin Problems CHAR 1 Skin condition: skin treatments in last 7 days - nutrition/hydration intervention. 0 = No, 1 = Yes, \"-\" = Unknown.\n426 M5E M5E_ULCER_CARE",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

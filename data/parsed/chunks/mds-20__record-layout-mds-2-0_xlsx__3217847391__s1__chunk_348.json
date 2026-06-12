@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_348",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "W3B W3B_PPV_NOT_RCVD_RSN_ID (W3B) Reason PPV not received CHAR 1 Reason Pneumococcal Polysaccharide not received. 1 = Not eligible, 2 = Offered and declined, 3 = Not offered, \"-\" = Unknown, -2 = Space\n1In 2025, this field was renamed to sex to comply with Executive Order 14168.",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

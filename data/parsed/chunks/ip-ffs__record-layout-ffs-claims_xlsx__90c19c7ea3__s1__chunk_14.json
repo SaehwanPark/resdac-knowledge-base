@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "MS-DRG Grouper Version Code CHAR 8 250 New5\nCLM_IP_INITL_MS_DRG_CD CLM_IP_INITL_MS_DRG_CD Claim Inpatient Initial MS DRG Code CHAR 4 243 New2\nOUTLR_CD CLM_DRG_OUTLIER_STAY_CD Claim Diagnosis Related Group Outlier Stay Code CHAR 1 67\nOUTLRPMT NCH_DRG_OUTLIER_APRVD_PMT_AMT NCH DRG Outlier Approved Payment Amount NUM 12 68\nADMTG_DGNS_CD ADMTG_DGNS_CD Claim Admitting Diagnosis Code CHAR 7 69\nPRNCPAL_DGNS_CD PRNCPAL_DGNS_CD Claim Principal Diagnosis Code CHAR 7 70\nICD_DGNS_CD1 ICD_DGNS_CD1 Claim",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

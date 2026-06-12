@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_297",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "scores in items C0200-C0400. CHAR 2 This column contains the BIMS (Brief Interview for Mental Status) score, which is calculated by adding the scores in items C0200-C0400. 00-15\n99 = Patient was unable to complete the interview\n287 C0600_CNDCT_STF_MENTL_STUS_CD C0600_CNDCT_STF_MENTL_STUS_CD C0600 Staff to Conduct Brief Interview for Mental Status - The data in this column indicates whether or not a staff assessment for mental status should be performed. CHAR 1 The data in this column indicates",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

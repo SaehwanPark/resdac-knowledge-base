@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_39",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "A1100B_INTRPTR_LANG_TXT A1100B Preferred Language CHAR 15 This column contains the resident's preferred language. discontinued 09/30/2023\n62 A1200_MRTL_STUS_CD A1200_MRTL_STUS_CD A1200 Marital Status Code CHAR 1 The data in this column identifies the resident's marital status. -=Not assessed/no information\n1=Never married\n2=Married\n3=Widowed\n4=Separated\n5=Divorced\n63 A1300A_MDCL_REC_NUM A1300A_MDCL_REC_NUM A1300A Medical Record Number CHAR 12 This column contains the resident's medical record",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

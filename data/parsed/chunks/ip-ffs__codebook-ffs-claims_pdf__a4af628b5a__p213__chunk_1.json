@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p213__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 213,
+  "text": "Care Contracting \n(CKCC) and Kidney Care First (KCF) model claims. \nSHORT NAME: LINE_ADJUST_GRP_CD \nLONG NAME: LINE_ADJUST_GRP_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nCO = Contractual obligation \nOA = Other adjustment \nPR = Patient responsibility \nCOMMENT: \nThis code set is an external code set maintained by X12 (www.x12.org/codes). This field is not \npopulated prior to 2021. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

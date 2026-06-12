@@ -1,0 +1,18 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| CCN | CMS Certification Number (Facility Provider Number) | 
+| PRVDR_STATE | Provider State | 
+| FAC_TIER | Tier 1: 25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients | 
+| FAC_DATA_SUBMSN_DT | Facility Data Submission Date | 
+| DISCHARGES | Count of AHCAH Discharges During the Data Submission Period | 
+| MORTALITIES | Count of AHCAH Mortalities During the Data Submission Period | 
+| ESCALATIONS | Count of AHCAH Patients Transferred Back to Inpatient Facility During the Data Submission Period | 
+| AHCAH_WVR_SUBMSN_ID | AHCAH Waiver Submission ID | 
+| PRVDR_NAME | Name of Facility | 
+| PRVDR_PHNE_NUM | Facility Phone Number | 
+| PRVDR_ADR | Facility Location Address | 
+| PRVDR_CITY | Facility Location City | 
+| PRVDR_ZIP_CD | Facility Location Zip Code |

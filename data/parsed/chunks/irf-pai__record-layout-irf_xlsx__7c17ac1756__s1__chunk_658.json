@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_658",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "treatments, procedures, or programs. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n625 O0350_COVID_VCNTN_CRNT_SW O0350_COVID_VCNTN_CRNT_SW O0350 - COVID-19 Vaccination Up To Date CHAR 1 This column documents whether the resident's COVID-19 vacciantion is up to date. 0 = No \n1 = Yes\n626 A1400A_MDCR_FFS_PYR_SW A1400A_MDCR_FFS_PYR_SW A1400A - Payer: Medicare (FFS) CHAR 1 This column documents whether the resident's payer is Medicare (FFS). 0 = No \n1 = Yes\n627 A1400B_MDCR_OPYR_SW",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

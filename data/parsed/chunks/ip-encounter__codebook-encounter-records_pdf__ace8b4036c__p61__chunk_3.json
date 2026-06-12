@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p61__chunk_3",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 61,
+  "text": "5 = \nComprehensive Rehabilitation \nCenter (CORF) \n6 = \nCommunity Mental Health \nCenter (CMHC) \n7 = \nFederally Qualified Health \nCenter (FQHC) \n9 = \nOther \nFor facility type code 8 (special facility): \n1 = \nHospice (non-hospital based) \n2 = \nHospice (hospital based) \n3 = \nAmbulatory surgical center \n(ASC) in hospital outpatient \ndepartment \n4 = \nFreestanding birthing center \n5 = \nCritical Access Hospital — \nOutpatient Services \n9 = \nOther \nCOMMENT: \nThis field, in combination with the facility",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

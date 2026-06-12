@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-practice__record-layout-value-modifier-practice-level-rif-perf-year-2016_xlsx__e75ad5dc90__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/e75ad5dc90d8b0bcd7b35ea5b41e8e51e49d04b1.xlsx",
+  "page": 1,
+  "text": "Practice Reporting Option (GPRO)\nGPRO_MECH GPRO reporting mechanism (text) Group Practice Reporting Option (GPRO) mechanism through which practice reported quality data to the PQRS 11 Char 40\nGPRO_EVAL Practice evaluated for meeting minimum reporting requirements based on GPRO data Indicator for whether practice evaluated for meeting minimum PQRS reporting requirements based on GPRO data 12 Num 8 Equals 1 if practice evaluated for meeting minimum PQRS reporting requirements based on GPRO",
+  "dataset": "vm-practice",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-practice-level-rif-perf-year-2016.xlsx"
+}

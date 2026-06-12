@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_68",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "= Two+ person physical assist, 8 = ADL activity itself did not occur during entire 7 days\n87 G1IA G1IA_SELF_TOLIET 23dA(G1iA)Toilet Use - Self Performance CHAR 1 Indicates how the patient without assistance uses the toilet room, commode, bedpan, or urinal, transfers on/off toilet, cleanses, changes pad, manages ostomy or catheter, and adjusts clothes. -1 = Unknown, 0 = Independent - No help or oversight -OR- Help/oversight provided only 1 or 2 times during last 7 days, 1 = Supervision -",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

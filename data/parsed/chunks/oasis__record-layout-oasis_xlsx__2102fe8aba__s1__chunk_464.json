@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_464",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "SOC/ROC This field indicates the current number of unhealed pressure ulcers at stage IV that were not present or were at a lesser stage at most recent SOC / ROC. If no current pressure ulcer at a given stage, enter 0. CHAR 2 x\nM1313_NSTG_DRSG_NOT_PRESENT M1313 Number of Unstageble Pressure Ulcers D/T Non-removeable dressing that were not present or were at a lesser stage at most recent SOC/ROC This field indicates the current number of unstageable unhealed pressure ulcers due to non-removeable",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

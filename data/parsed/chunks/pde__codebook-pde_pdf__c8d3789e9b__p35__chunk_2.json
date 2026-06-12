@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p35__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 35,
+  "text": "Part D \npharmacy characteristics file. \nResearchers who received CCW data from 2006–2013 and wish to identify the NCPDP_ID associated \nwith the CCW_PHARM_ID may request the pharmacy bridge file, which is designed for this purpose. \nThe NCPDP_ID variable is populated by linking the service provider identification number from the \nsource PDE to the proprietary National Council for Prescription Drug Programs (NCPDP) DataQ™ \nDatabase. The variable is populated for every PDE that can be linked to",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

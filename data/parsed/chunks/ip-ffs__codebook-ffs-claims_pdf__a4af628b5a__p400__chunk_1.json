@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p400__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 400,
+  "text": "physician \nwhose services qualify for an incentive bonus under the Primary Care Incentive Payment Program \n(PCIP). \nSHORT NAME: RNDRNG_PHYSN_NPI \nLONG NAME: RNDRNG_PHYSN_NPI \nTYPE: \nCHAR \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field appears on both the revenue center and base claim files. Medicare needs to identify primary \nphysicians/practitioners of service not only for use in standard claims transactions but also for review, \nfraud detection, and planning purposes. In order to",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

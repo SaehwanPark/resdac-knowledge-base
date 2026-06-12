@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Medicare Part A HIPPS code.\n15 C_MDCR_RUG_VRSN_TXT C_MDCR_RUG_VRSN_TXT Recalculated Z0100B CHAR 10 The data in this column contains the calculated Medicare Part A RUG version code.\n16 C_MDCR_STAY_CD C_MDCR_STAY_CD Recalculated Z0100C CHAR 1 The data in this column is an output value that is produced by the grouper and indicates whether the short-stay logic was used to calculate the RUG. discontinued 09/30/2023\n17 C_MDCR_SET_CD C_MDCR_SET_CD CMI Set for Recalculated Z0100A CHAR 3 The data in",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

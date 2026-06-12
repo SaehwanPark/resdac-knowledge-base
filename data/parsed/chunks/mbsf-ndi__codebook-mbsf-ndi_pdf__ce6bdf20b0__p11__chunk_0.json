@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n6 \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI) \nVALUES: \nEach condition takes seven positions in the record \nPosition1: Part/line number on certificate \n1 = Part I, line 1 (a) \n2 = Part I, line 2 (b) \n3 = Part I, line 3 (c) \n4 = Part I, line 4 (d) \n5 = Part I, line 5 (e) \n6 = Part II \nPosition 2: Sequence of",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

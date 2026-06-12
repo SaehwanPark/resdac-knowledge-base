@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_192",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "used. 0 = No, 1 = Yes, \"-\" = Unknown.\n274 H3H H3H_ENEMAS (H3H) Enemas/Irrigation CHAR 1 Continence in last 14 days: appliances and programs - enemas/irrigation. 0 = No, 1 = Yes, \"-\" = Unknown.\n275 H3I H3I_OSTOMY (H3I) Ostomy Present CHAR 1 Continence in last 14 days: appliances and programs - ostomy present. 0 = No, 1 = Yes, \"-\" = Unknown.\n276 H3J H3J_NONE_ABOVE (H3J) None of Above Appliances and Programs CHAR 1 Continence in last 14 days: appliances and programs - none of above. 0 = No, 1 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

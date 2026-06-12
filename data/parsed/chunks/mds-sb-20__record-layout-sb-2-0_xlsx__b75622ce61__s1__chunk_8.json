@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "MDS system.\n14 ORGSMTID ORIG_ASMT_INT_ID Encrypted Original Assessment Internal ID CHAR 15 Original version (ASMT INT ID) of this assessment where Correction Number is 00.\n15 PRVNTRNO PRVDR_INT_NUM Provider Internal Number CHAR 10 This field is used as a key to uniquely identify a provider in the CSP_PRVDR table.\n16 REC_TYPE REC_TYPE Record Type CHAR 2 This is a calculated field based on the combination of the AA8A PRI RFA and AA8B SPC RFA fields.\n17 RSCHGTS RES_CHG_TIMESTAMP Resident Data",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

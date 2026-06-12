@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-30-cc__codebook-mbsf-chronic_pdf__0f9abc3685__p43__chunk_0",
+  "source_document": "data/raw/assets/pdf/0f9abc36852dae6ab7448d07437b996a225a6692.pdf",
+  "page": 43,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MBSF 30 CCW Chronic Conditions (CHRONIC) File │ March 2022 │ V 1.0 \n37 \nGLAUCOMA \nLABEL: \nGlaucoma End-of-Year Indicator \nDESCRIPTION: This variable indicates whether a beneficiary met the Chronic Conditions Warehouse (CCW) criteria for \nglaucoma as of the end of the calendar year. \nSHORT NAME: — \nLONG NAME: GLAUCOMA \nTYPE: \nNUM \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service",
+  "dataset": "mbsf-30-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-chronic.pdf"
+}

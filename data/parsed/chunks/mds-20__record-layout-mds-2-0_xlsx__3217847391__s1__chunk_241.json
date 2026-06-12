@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_241",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "K5E_THERAPY_DIET (K5E) Therapeutic Diet CHAR 1 Oral/nutritional status: nutritional approaches in last 7 days - therpaeutic diet. 0 = No, 1 = Yes, \"-\" = Unknown.\n394 K5F K5F_DIET_SUPP (K5F) Dietary Supplement Between Meals CHAR 1 Oral/nutritional status: nutritional approaches in last 7 days - dietary supplement between meals. 0 = No, 1 = Yes, \"-\" = Unknown.\n395 K5G K5G_PLATE_GRD (K5G) Plate Guard, Stabilized Built-Up Utensil, Etc. CHAR 1 Oral/nutritional status: nutritional approaches in last",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

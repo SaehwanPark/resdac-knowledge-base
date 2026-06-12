@@ -1,0 +1,39 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Next Generation ACO (NGACO) — Beneficiary File
+Version — May 2025
+SAS Name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+ACO_ID	ACO identifier	CHAR	4
+BIRTH_DT	Date of Birth	NUM	8
+DEATH_DT	Date of Death	NUM	8
+SEX_CD	Sex	CHAR	1
+M01_ALIGN	Month 1 Alignment Flag	NUM	1
+M02_ALIGN	Month 2 Alignment Flag	NUM	1
+M03_ALIGN	Month 3 Alignment Flag	NUM	1
+M04_ALIGN	Month 4 Alignment Flag	NUM	1
+M05_ALIGN	Month 5 Alignment Flag	NUM	1
+M06_ALIGN	Month 6 Alignment Flag	NUM	1
+M07_ALIGN	Month 7 Alignment Flag	NUM	1
+M08_ALIGN	Month 8 Alignment Flag	NUM	1
+M09_ALIGN	Month 9 Alignment Flag	NUM	1
+M10_ALIGN	Month 10 Alignment Flag	NUM	1
+M11_ALIGN	Month 11 Alignment Flag	NUM	1
+M12_ALIGN	Month 12 Alignment Flag	NUM	1
+1In 2025, this field was renamed to sex to comply with Executive Order 14168
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Next Generation ACO (NGACO) — Beneficiary File
+Version — May 2025
+SAS Name	Label	Type	Length
+ACO_ID	ACO Identifier	CHAR	4
+CLNDR_YR	Year of ACO Source Record	CHAR	4
+PRVDR_CLASS	Provider Class (PART = Participant; PREF = Preferred Provider)	CHAR	4
+ORG_TIN	Billing TIN (Taxpayer Identification Number) of ACO Participant	CHAR	9
+ORG_NPI	National Provider Identifier (NPI) for Organization	CHAR	10
+ORG_CCN	CMS Certification Number	CHAR	6
+IND_NPI	National Provider Identifier (NPI) for Practitioner	CHAR	10
+ORG_NAME	Legal Business Name Associated with the ACO Participant TIN	CHAR	70
+LAST_NAME	Last Name of Provider Associated with the NPI	CHAR	25
+FIRST_NAME	First Name of Provider Associated with the NPI	CHAR	19
+CCN_TYPE	CCN Facility Type	CHAR	1
+PCP_FLAG	Primary Care Practitioner Indicator (Note: N/A for Preferred Providers)	CHAR	1

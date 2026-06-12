@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s8__chunk_2",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 8,
+  "text": "CLM_ADJUST_RSN_CD , CLM_PRCR_VRSN_CD and PRVDR_FULL_CCN_NUM to IP, SNF, HH, Hospice and OP base claims.\n2) OWNG_PRVDR_TIN_NUM to IP and OP base claims;\n3) MS_DRG_GRPR_VRSN_CD to IP and SNF base claims;\n4) ESRD_TRTMT_CHS_IND_CD and CLM_OP_PPS_IND to OP base claims;\n5) REV_CNTR_ADJUST_GRP_CD and REV_CNTR_ADJUST_RSN_CD to IP, SNF, HH, Hospice and OP revenue lines;\n6) REV_CNTR_RA_RMRK_CD to HH, Hospice and OP revenue lines;\n7) REV_CNTR_CRA_TPNIES_AMT and REV_CNTR_THRPY_RDCTN_AMT to OP revenue",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

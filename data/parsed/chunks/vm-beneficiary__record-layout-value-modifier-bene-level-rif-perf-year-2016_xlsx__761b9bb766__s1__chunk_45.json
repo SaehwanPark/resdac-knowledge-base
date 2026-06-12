@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_45",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "for beneficiary hospital admission during 2016 62 Char 7 Populated only for records with Inpatient_stay=1 or SSP_ADM=1\nSHORT_DESCRIPTION Description of principal diagnosis code for hospital admission Description of the ICD diagnostic code determined to be chiefly responsible for beneficiary hospital stay during 2016 63 Char 250 Populated only for records with Inpatient_stay=1 or SSP_ADM=1\nADMSN_DT Admission date of hospitalization Date of beneficiary hospital admission 64 Num 8 Populated only",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

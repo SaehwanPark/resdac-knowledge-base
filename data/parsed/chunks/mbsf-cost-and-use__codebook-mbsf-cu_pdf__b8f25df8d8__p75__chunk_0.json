@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p75__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 75,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n69 \nPTD_BENE_PMT \nLABEL: \nPart D Beneficiary Payments \nDESCRIPTION: This variable is the dollar amount that the beneficiary paid for all PDEs for a given year, without being \nreimbursed by a third party. The amount includes all copayments, coinsurance, deductible, or other \npatient payment amounts, and comes directly from the source Prescription Drug Events (PDEs). \nThe total",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

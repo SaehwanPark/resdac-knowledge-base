@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 1,
+  "text": "reconciliation CHAR 100\nACO_NAME ACO_NAME ACO Name ACO Doing Business As (DBA) or Legal Business Name (LBN) CHAR 100\nSTART_DATE START_DATE ACO Agreement Start Date Initial agreement start date DATE 8\nFac_Type FAC_TYPE CCN Facility Type Code indicating the type of facility represented by the CCN included on the ACO's certified participant list used in financial reconciliation, as reported by the ACO. Values:\nF = Federally Qualified Health Center\nR = Rural Health Center\nC = Critical Access",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

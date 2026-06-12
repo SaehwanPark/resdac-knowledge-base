@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p122__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 122,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n111 \nFIXD_PYMT_IND \nLABEL: \nFixed Payment Indicator \nDESCRIPTION: This indicator indicates that the reimbursement amount included on the claim is for a fixed payment. \nSHORT NAME: FIXD_PYMT_IND \nLONG NAME: FIXD_PYMT_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES: \n0 = Not Fixed Payment \n1 =",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

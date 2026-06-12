@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_169",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n198 F0800B_STF_CARE_PRSNL_ITM_CD F0800B_STF_CARE_PRSNL_ITM_CD F0800B Staff Assessment: Care Personal Item Code CHAR 1 The data in this column indicates whether the resident prefers to care for their personal belongings. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n199 F0800C_STF_TUB_BATH_CD F0800C_STF_TUB_BATH_CD F0800C Staff Assessment: Tub Bath Code CHAR 1 The data in this column indicates whether",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p17__chunk_2",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 17,
+  "text": "Managed Care Plan TAF \nVALUES: \nDate (numeric, system dependent) \n31DEC9999 = (default value) no ending date/still active \nNull/missing = not applicable (no associated accreditation start date MC_ENT_ACRDTN_START_DT) \nCOMMENT: \nThis data element is created from each submitted value reported in T-MSIS (up to a maximum of 5 \nvalues). They are ordered using the MC_ENT_ACRDTN_ORG_CD value (lowest value is considered \nMC_ENT_ACRDTN_ORG_CD _1) ; the associated MC_ENT_ACRDTN_ACHVMT_DT and",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

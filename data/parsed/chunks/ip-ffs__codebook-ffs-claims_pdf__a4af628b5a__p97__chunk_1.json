@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p97__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 97,
+  "text": "records or claim lines on a given claim have the same CLM_ID. It is used to link the \nrevenue lines together and/or to the base claim. \nSHORT NAME: CLM_ID \nLONG NAME: CLM_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nCCW \nVALUES: \n— \nCOMMENT: \nThe CLM_ID is assigned by the CCW. The CLM_ID is specific to the CCW and is not applicable to any \nother identification system or data source. \nLimitation: When pulled directly from the CCW database, this is a numeric column. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

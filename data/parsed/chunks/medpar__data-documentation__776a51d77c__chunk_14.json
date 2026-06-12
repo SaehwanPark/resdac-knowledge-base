@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_14",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| DPRTMNTL_TOT_CHRG_AMT | Total charge for all ancillary departments related to beneficiary’s stay ($) | \n\n | 75 | PRVT_ROOM_DAY_CNT | Private Room Day Count | \n\n | 76 | SEMIPRVT_ROOM_DAY_CNT | Semi-Private Room Day Count | \n\n | 77 | WARD_DAY_CNT | Ward Day Count | \n\n | 78 | INTNSV_CARE_DAY_CNT | Intensive Care Day Count | \n\n | 79 | CRNRY_CARE_DAY_CNT | Coronary Care Day Count | \n\n | 80 | PRVT_ROOM_CHRG_AMT | Private Room Charge Amount ($) | \n\n | 81 | SEMIPRVT_ROOM_CHRG_AMT | Semi-Private Room",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

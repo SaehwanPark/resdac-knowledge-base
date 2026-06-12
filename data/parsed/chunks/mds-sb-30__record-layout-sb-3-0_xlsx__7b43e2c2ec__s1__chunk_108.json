@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_108",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "(skip pattern)\n141 D0500B2_STF_FEEL_DOWN_FREQ_CD D0500B2_STF_FEEL_DOWN_FREQ_CD D0500B2 Staff Assessment of Resident Mood - Feel Down Frequency Code CHAR 1 The data in this column contains the staff assessment of the frequency that the resident has felt or appears to be down, depressed or hopeless. -=Not assessed/no information\n0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern)\n142 D0500C1_STF_TRBL_SLEEP_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

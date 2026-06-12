@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_3",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Service Tracking Type Code CHAR 2 17\nFED_SRVC_CTGRY_CD2 Federally Assigned Service Category Code Added During TAF Production CHAR 2 94\nBIRTH_DT Date of Birth DATE 8 18\nPGM_TYPE_CD Program Type Code CHAR 2 19\nMC_PLAN_ID Managed Care Plan Identification Number CHAR 12 20\nWVR_TYPE_CD Waiver Type Code CHAR 2 21\nWVR_ID Waiver Identification Number CHAR 20 22\nOTHR_INSRNC_IND Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid) CHAR 1 23\nSECT_1115A_DEMO_IND 1115(A) Demonstration",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

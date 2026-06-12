@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_0",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "| 1 | BENE_ID | Encrypted CCW Beneficiary ID | \n\n | 2 | SAMPLE_GROUP | CCW Beneficiary Random Sample Group | \n\n | 3 | ENC_JOIN_KEY | Unique Encounter Join Key | \n\n | 4 | CLM_TYPE_CD | Claim Type Code | \n\n | 5 | CLM_FROM_DT | Claim From Date (Encounter) | \n\n | 6 | CLM_THRU_DT | Claim Through Date (Encounter) | \n\n | 7 | SRVC_MONTH | Service Month | \n\n | 8 | CLM_CHRT_RVW_SW | Claim Chart Review Switch | \n\n | 9 | CLM_CNTL_NUM | Claim Control Number | \n\n | 10 | CLM_ORIG_CNTL_NUM | Claim Original",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_205",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n306 I1O I1O_OSTEOPORO (I1O) Osteoporosis CHAR 1 Disease diagnosis: diseases - musculoskeletal - osteoporosis. 0 = No, 1 = Yes, \"-\" = Unknown.\n307 I1OO I1OO_ANEMIA (I1OO) Anemia CHAR 1 Disease diagnosis: diseases - other - anemia. 0 = No, 1 = Yes, \"-\" = Unknown.\n308 I1P I1P_PATH_BONE_FRAC (I1P) Pathological Bone Fracture CHAR 1 Disease diagnosis: diseases - musculoskeletal - pathological bone fracture. 0 = No, 1 = Yes, \"-\" = Unknown.\n309 I1PP I1PP_CANCER (I1PP)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

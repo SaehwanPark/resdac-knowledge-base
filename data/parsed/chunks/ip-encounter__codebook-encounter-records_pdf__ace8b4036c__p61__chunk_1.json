@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p61__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 61,
+  "text": "(MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nVALUES: \nFor facility type code 1 thru 6, and 9: \n1 = \nInpatient \n2 = \nInpatient or home health \n(covered on Part B) \n3 = \nOutpatient (or HHA — covered \non Part A) \n4 = \nOther (Part B) — (Includes \nHHA medical and other health \nservices, e.g., SNF \nosteoporosis-injectable drugs) \n5 = \nIntermediate care — level I \n6 = \nIntermediate care — level II \n7 = \nSubacute inpatient (revenue \ncode 019X required) (formerly \nIntermediate care — level",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

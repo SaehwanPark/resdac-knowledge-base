@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_859",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "appointments, from getting medications, work, or from getting things that they need. 0. No\n1. Yes CHAR 1 x\nA1250X_TRNSPRTN_NO_RSPNS_CD Transportation: Patient unable to respond Indicates the patient was unable to respond about lack of transportation. 0. No\n1. Yes CHAR 1 x\nA1250Y_TRNSPRTN_DCLN_RSPNS_CD Transportation: Patient declines to respond Indicates the patient declined to respond about lack of transportation. 0. No\n1. Yes CHAR 1 x\nA2121_CRNT_MDCTN_LST_PRVDR_CD Current Reconciled",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p120__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 120,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n104 \nHRR_ADJSTMT_AMT \nLABEL: \nHospital Readmission Reduction (HRR) Adjustment Amount \nDESCRIPTION: The amount field (rounded to whole dollars) that represents the Hospital Readmission Reduction (HRR) \nProgram amount. This is a reduction to the claim for readmissions. This field holds a negative amount. \nSHORT NAME: HRR_ADJSTMT_AMT \nLONG NAME: HRR_ADJSTMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

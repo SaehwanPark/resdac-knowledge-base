@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p77__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 77,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n71 \nPTD_FILL_CNT \nLABEL: \nPart D Standardized Fill Count \nDESCRIPTION: Part D prescribing events (PDE) consist of highly variable days’ supply of the medication. This derived \nvariable creates a standard 30 days’ supply of a filled Part D prescription and counts this as a \nstandardized “fill.” \nThis field is calculated using the source PDE field for the days supply of the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

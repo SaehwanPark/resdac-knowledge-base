@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_63",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0320) Improperly Stored Hazardous Materials Safety hazards: improperly stored hazardous materials. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_COOLING (M0320) Inadequate Cooling Safety hazards: inadequate cooling. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_FLOOR (M0320) Inadequate Floor/Roof/Windows Safety hazards: inadequate floor, roof, or windows. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_HEATING (M0320) Inadequate Heating Safety hazards: inadequate heating. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_LIGHTING",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

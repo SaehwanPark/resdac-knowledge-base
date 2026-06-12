@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_304",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Pain management: Other Pain Intervention Code CHAR 1 The data in this column indicates whether the resident has received non-medication intervention for pain in the past five days. -=Not assessed/no information\n0=No\n1=Yes\n336 J0200_CNDCT_PAIN_ASMT_CD J0200_CNDCT_PAIN_ASMT_CD J0200 Should Pain Assessment be Conducted Code CHAR 1 The data in this column indicates whether or not a shoulder pain assessment interview could be conducted. -=Not assessed/no information\n0=No(resident is rarely/never",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

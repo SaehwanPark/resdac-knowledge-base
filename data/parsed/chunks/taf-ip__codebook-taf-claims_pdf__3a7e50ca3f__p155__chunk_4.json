@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p155__chunk_4",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 155,
+  "text": "managed care plan to a provider is found in \nthe MDCD_PD_AMT and TOT_MDCD_PD_AMT variables. The data for some data elements that \ncapture dollar amounts on managed care encounters, including the values reported by states in \nthe MDCD_PD_AMT and TOT_MDCD_PD_AMT variables, are suppressed for most data users \nbecause of the proprietary nature of that information to a managed care plan’s business. Data \nusers who do have access to those dollar amounts should avoid double counting the amount paid",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

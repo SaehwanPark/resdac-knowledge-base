@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_24",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "CHAR 1 108\nICD_DGNS_CD20 ICD_DGNS_CD20 Claim Diagnosis Code XX CHAR 7 109\nCLM_POA_IND_SW20 CLM_POA_IND_SW20 Claim Diagnosis Code XX Diagnosis Present on Admission Indicator Code CHAR 1 110\nICD_DGNS_CD21 ICD_DGNS_CD21 Claim Diagnosis Code XXI CHAR 7 111\nCLM_POA_IND_SW21 CLM_POA_IND_SW21 Claim Diagnosis Code XXI Diagnosis Present on Admission Indicator Code CHAR 1 112\nICD_DGNS_CD22 ICD_DGNS_CD22 Claim Diagnosis Code XXII CHAR 7 113\nCLM_POA_IND_SW22 CLM_POA_IND_SW22 Claim Diagnosis Code XXII",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

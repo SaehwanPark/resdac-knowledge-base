@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p122__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 122,
+  "text": "APR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nF: Female \nM: Male \nNull/missing \nCOMMENT: \nDerived from the same monthly base record as the most recent value of PRVDR_ENT_TYPE_CD in the \ncalendar year. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_283",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "eating, talking, or performing other ADLs) or with agitation\n04 = At rest (during day or night) CHAR 2 x x x x x x\nM1410_RESPTX_AIRPR M1410 (M0500) Resprtry Treat At Home- Airway Press This field indicates if the respiratory treatment utilized at home is continuous/bi-level positive airway pressure. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM1410_RESPTX_NONE M1410 (M0500) Resprtry Treat At Home- None This field indicates if the respiratory treatment utilized at home is none of the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

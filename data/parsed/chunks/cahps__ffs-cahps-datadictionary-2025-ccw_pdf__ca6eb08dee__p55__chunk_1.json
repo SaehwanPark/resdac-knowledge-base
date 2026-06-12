@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p55__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 55,
+  "text": "—– \ncs_csgetinfo* \nQ23 \npd_csrespect* \n—– \ncs_csrespect* \nQ24 \npd_covinfo \n—– \npd_getcovinf* \n—– \npd_costinfo \n—– \npd_getcostinf* \n—– \npd_diffrx \n—– \npd_rxnocov \n—– \npd_askrxcov \n—– \npd_appeal \npd_forms \npd_resolve \npd_listen \npd_discourage \npd_nothing \npd_rxcovered \npd_fillrx* \nR \npd_takemeds* \nR \npd_ezrxmeds* \n—– \npd_rxpharm \n—– \npd_ezrxpharm* \n—– \npd_rxmail \n—– \npd_ezrxmail* \n—– \npd_infocov \nR \n—– \nrate_pdp* \n—– \npd_recommend \nR \n—– \npd_rxhelp \npd_userxhelp \npd_proofrxhelp \npd_phnorxhelp",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

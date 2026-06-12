@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "based on the combination of the AA8A PRI RFA and AA8B SPC RFA fields.\n17 RSCHGTS RES_CHG_TIMESTAMP Resident Data Update Timestamp DATE 8 The late updated date and time of resident data.\n18 RSMTCHCR RES_MATCH_CRITERIA Resident Match Criteria CHAR 2 This field is used in determining if a record should be written to the resident history table. It is a number showing which of the resident matching criteria was positive for a match, and is zero if it is a new resident.\n19 SBASTIID SB_ASMT_INT_ID",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

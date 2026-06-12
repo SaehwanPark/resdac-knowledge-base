@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_35",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "is defaulted to 01. If this field is null, either no date was submitted or an invalid date was submitted.\n69 AA4 AA4_RACE_ETH (AA4) Race/Ethnicity CHAR 1 Resident' race/ethinicity. 1 = American Indian/Alaskan Native; 2 = Asian/Pacific Islander; 3 = Black, not of Hispanic origin; 4 = Hispanic; 5 = White, not of Hispanic origin; \"-\" = Unknown\n70 AA6A AA6A_FAC_MCAID_NBR (AA6A) Facility Medicaid Number CHAR 15 State facility provider number.\n71 AA6B AA6B_FAC_MCARE_NBR (AA6B) Facility Medicare",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

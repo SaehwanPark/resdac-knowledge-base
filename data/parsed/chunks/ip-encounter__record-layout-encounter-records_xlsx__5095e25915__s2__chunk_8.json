@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s2__chunk_8",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 2,
+  "text": "Char 7 57\nCLM_1ST_DGNS_E_CD First Claim Diagnosis E Code Char 7 58\nICD_DGNS_E_CD1 Claim Diagnosis E Code 1 Char 7 59\nICD_DGNS_E_CD2 Claim Diagnosis E Code 2 Char 7 60\nICD_DGNS_E_CD3 Claim Diagnosis E Code 3 Char 7 61\nRSN_VISIT_CD1 Reason for Visit Diagnosis Code 1 Char 7 62\nRSN_VISIT_CD2 Reason for Visit Diagnosis Code 2 Char 7 63\nRSN_VISIT_CD3 Reason for Visit Diagnosis Code 3 Char 7 64\nCLM_OBSLT_DT Claim Obsolete Date Date 8 65\nCLM_BPRVDR_CITY_NAME Billing Provider Address - City Char 30",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Part D Event (PDE) File\nVersion — July 2025\nShort SAS name Long SAS name Label Type Length Year of data file 1\n2006–2009 2010 2011 2012 2013 2014–2021 2022 2023+ 2025+\nPDE_ID PDE_ID CCW Encrypted Part D Event Number CHAR 15 X X X X X X X X X\nBENE_ID BENE_ID CCW Encrypted Beneficiary ID Number CHAR 15 X X X X X X X X X\nDOB_DT DOB_DT Patient Date of Birth (DOB) DATE 8 X X X X X X X X X\nSEX_CD7 SEX_CD7 Patient Sex CHAR 1 X X X X X X X",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

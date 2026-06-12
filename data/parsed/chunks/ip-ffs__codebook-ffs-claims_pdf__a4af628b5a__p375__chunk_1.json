@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p375__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 375,
+  "text": "2nd position \nbeing the payment indicator. \nSHORT NAME: PMTMTHD \nLONG NAME: REV_CNTR_PMT_MTHD_IND_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n0 = Unknown Value (but present in \ndata) \n1 = Paid standard hospital OPPS \namount (status indicators J1, J2, R, \nS, T, U, V) \n2 = Services not paid under OPPS \nPricer; paid under fee schedule or \nother payment system (status \nindicators A, G, K) \n3 = Not paid (status indicators Q1, Q2, \nQ3, Q4, M, W, Y, E1, E2) or not \npaid under OPPS (status",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

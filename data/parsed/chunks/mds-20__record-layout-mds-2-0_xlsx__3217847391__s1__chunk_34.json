@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_34",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "information: advanced directives - none of above 0 = No, 1 = Yes, \"-\" = Unknown.\n67 AA2 AA2_SEX1 (AA2) Sex CHAR 1 Resident's sex 0 = Unknown, 1 = Male, 2 = Female\n68 AA3 AA3_BIRTH_DT (AA3) Birth Date DATE 8 Resident's birthdate. If only the year (YYYY) was submitted, the month is defaulted to 01 and the day is defaulted to 01. If only the month and year are submitted, the day is defaulted to 01. If this field is null, either no date was submitted or an invalid date was submitted.\n69 AA4",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

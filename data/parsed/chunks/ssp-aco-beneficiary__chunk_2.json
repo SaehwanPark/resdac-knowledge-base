@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__chunk_2",
+  "source_document": "data/raw/html/dataset_page/e0b196e3d259fa2849b7e990d5bd1d887944fcad.html",
+  "page": null,
+  "text": "ID.\n- These files differ from the monthly Claim and Claim Line Feed (CCLF) files active Shared Savings Program ACOs receive from CMS. CCLF files include claims for the ACO’s assigned or assignable beneficiary population. The purpose of the CCLFs is to assist active Shared Savings Program ACOs with coordination of care. In contrast, Shared Savings Program Beneficiary-Level RIFs are statistics on beneficiaries and services included in each ACOs annual reconciliation. CCLF files cannot be linked",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://resdac.org/cms-data/files/ssp-aco-beneficiary?page=1"
+}

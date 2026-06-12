@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_11",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "Code XXIV (FFS) | \n\n | 69 | ICD_DGNS_CD25 | Claim Diagnosis Code XXV (FFS) | \n\n | 70 | FST_DGNS_E_CD | First Claim Diagnosis E Code (FFS) | \n\n | 71 | ICD_DGNS_E_CD1 | Claim Diagnosis E Code I (FFS) | \n\n | 72 | ICD_DGNS_E_CD2 | Claim Diagnosis E Code II (FFS) | \n\n | 73 | ICD_DGNS_E_CD3 | Claim Diagnosis E Code III (FFS) | \n\n | 74 | ICD_DGNS_E_CD4 | Claim Diagnosis E Code IV (FFS) | \n\n | 75 | ICD_DGNS_E_CD5 | Claim Diagnosis E Code V (FFS) | \n\n | 76 | ICD_DGNS_E_CD6 | Claim Diagnosis E Code VI",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

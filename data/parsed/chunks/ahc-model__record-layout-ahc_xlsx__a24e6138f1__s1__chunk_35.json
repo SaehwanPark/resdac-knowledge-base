@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_35",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "CHAR 1\nNN_SPLMTL_FINCL_CNCT_CSP_SW Navigated Splmt HRSN Financial Strain Connected to Community Serv Prvdr CHAR 1\nNN_SPLMTL_FINCL_OPTOUT_SW Navigated Supplemental HRSN Financial Strain Opted Out CHAR 1\nNN_SPLMTL_FINCL_CNTCT_FAIL_SW Navigated Supplemental HRSN Financial Strain Attempts to Reach Failed CHAR 1\nNN_SPLMTL_FINCL_CSP_UNAVBL_SW Navigated Splmt HRSN Financial Strain Community Serv Prvdr Unable to Help CHAR 1\nNN_SPLMTL_FINCL_OUTCM_UNK_SW Navigated Supplemental HRSN Financial Strain",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_862",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "reconciled medication list not provided to the subsequent provider \n1. Yes – Current reconciled medication list provided to the subsequent provider\n2. NA – The agency was not made aware of this transfer timely CHAR 1 x\nA2122A_ROUTE_PRVDR_EHR_CD Provider Trans - Electronic Health Record Indicate whether the route(s) of transmission of the current reconciled medication list to the subsequent provider was an electronic health record. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2122B_ROUTE_PRVDR_HIE_CD",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

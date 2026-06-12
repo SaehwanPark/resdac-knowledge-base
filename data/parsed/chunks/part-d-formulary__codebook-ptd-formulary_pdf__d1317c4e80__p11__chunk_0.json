@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n7 \nGCDF \nLABEL: \nDosage Form Code \nDESCRIPTION: This variable is the dosage form code according to the First DataBank (FDB) reference files. The dosage \nform describes the physical presentation of a drug, such as tablet, capsule, or liquid. It may also \nincorporate the delivery and release mechanism of the drug. When this variable appears in the \nFormulary file, it is the",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

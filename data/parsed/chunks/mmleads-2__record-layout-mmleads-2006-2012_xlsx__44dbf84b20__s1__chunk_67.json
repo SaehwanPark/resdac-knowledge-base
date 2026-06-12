@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_67",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "claims during months of 'Medicare Only' Status XXX\nU_MRO_DRUG_PTD Total number of Medicare Prescriptions during months of 'Medicare Only' Status XXX\nU_FD_OER_CNT # MDCR FFS month Hosp Outpt ER visit cnt during mos of Full Dual Status XXX\nU_FD_IER_CNT # MDCR FFS month Inpt ER visit count during mos of Full Dual Status XXX\nU_FD_HH_VST_CNT # MDCR FFS month HH visit count during mos of Full Dual Status XXX\nU_FD_IP_ACUTE_DAY # MDCR Acute Inpt covered days during mos of Full Dual Status",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

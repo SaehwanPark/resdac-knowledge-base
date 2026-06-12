@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p307__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 307,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n289 \nPRVDR_NUM (Institutional claim) \nLABEL: \nProvider Number \nDESCRIPTION: This variable is the provider identification number of the institutional provider certified by Medicare to \nprovide services to the beneficiary. This is the CMS Certification Number (CCN). \nThe first two digits indicate the state where the provider is located. As two-digit state codes have been",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

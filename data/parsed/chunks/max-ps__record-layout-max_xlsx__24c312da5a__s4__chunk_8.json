@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s4__chunk_8",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 4,
+  "text": "Procedure (service) coding system CHAR 2 X X X X\n44 PRCDR_CD Procedure (service) code CHAR 8 X X X X\n45 PRCDR_SRVC_MDFR_CD Procedure (service) code modifier CHAR 2 X X X X\n46 DIAG_CD_1 Principal Diagnosis code CHAR 8 X X X X\n47 DIAG_VRSN_CD_1 Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10) CHAR 1 ‾ ‾ ‾ X New in 2015\n48 DIAG_CD_2 Diagnosis codes (2nd diagnosis) CHAR 8 X X X X\n49 QTY_SRVC_UNITS Quantity of service NUM 6 X X X X\n50 SRVC_PRVDR_ID_NMBR Servicing provider identification",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

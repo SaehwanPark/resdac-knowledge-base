@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p77__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 77,
+  "text": "services (Refer to COMMENT section below). \nSHORT NAME: HCPCS_CD \nLONG NAME: HCPCS_CD \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP revenue \nSNF revenue \nHH revenue \nOP revenue \nCarrier line \nDME line \nVALUES: \n— \nCOMMENT: \nLevel I \nCodes and descriptors copyrighted by the American Medical Association's Current Procedural \nTerminology, Fourth Edition (CPT-4). These are 5-position numeric codes representing physician and \nnon-physician services. \nNote",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

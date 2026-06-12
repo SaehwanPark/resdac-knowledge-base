@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p266__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 266,
+  "text": "value=00010002000000000 (1 in the 4th digit and 2 in the 8th digit), then the \nbeneficiary had a greater number of utilization days than the LOS day count and the beneficiary had a \ndeath date that was prior to the admission date on for the stay. If the value = 00000000100000000 (1 in \nthe 9th digit), then the beneficiary had a claim pass thru per diem amount on the claim. \nWarning indicator 1 ('adjustment indicator' derived from the presence of query code values noted below \non any of the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

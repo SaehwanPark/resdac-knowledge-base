@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare-Medicaid Linked Enrollee Analytic Data Set (MMLEADS) — Beneficiary Summary File\nAugust 2021\nFile Sequence Long SAS NAME Label Type Length\n1 BENE_ID CCW Beneficiary Identifier Num 8\n2 MSIS_ID State Assigned Beneficiary Unique Identifier Char 32\n3 STATE_CD State Alpha Abbreviation Char 2\n4 MME_TYPE_CD Annual Medicare - Medicaid Eligibility Type Code Num 8\n5 SAMPLE_GRP Sample Group Indicator - 1% Num 8\n6 BIRTH_DT Date of Birth Date",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

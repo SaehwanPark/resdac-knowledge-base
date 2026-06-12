@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p63__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 63,
+  "text": "of this file for a given year. \nThe total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + \nLINE_BENE_PTB_DDCTBL_AMT for the relevant lines. \nClaims for other carrier/DME claim lines are a subset of the claims in the Part B carrier and DME data \nfiles. Types of services which may have been summarized in this other carrier category (OTHC) include \nambulance, chiropractor, chemotherapy, vision, hearing, and speech services, etc. \nSHORT NAME: — \nLONG NAME: OTHC_BENE_PMT \nTYPE:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

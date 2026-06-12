@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_28",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "scheduled assessment\n06=Readmission/return assessment\n07=Unscheduled assessment used for PPS (OMRA, significant or clinical\nchange, or significant correction assessment)\n99=None of the above\n46 A0310C_PPS_OMRA_CD A0310C_PPS_OMRA_CD A0310C PPS Other Medicare Required Assessment (OMRA) Code CHAR 1 This column contains the PPS Other Medicare Required Assessment value. 0=No\n1=Start of therapy assessment\n2=End of therapy assessment\n3=Both Start and End of therapy assessment\n4 = Change of therapy",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

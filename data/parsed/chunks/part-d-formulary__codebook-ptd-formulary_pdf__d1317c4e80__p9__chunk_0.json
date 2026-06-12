@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p9__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 9,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n5 \nFORMULARY_*ID \nLABEL: \nFormulary Identification Number \nDESCRIPTION: This variable is the unique identification number assigned to each formulary. Part D plans submit their \nformularies to C \nS and identify the drug products that are covered using the National Library of Medicine’s RxNorm Concept Unique \nIdentifiers (RXCUIs). The same formulary may be used by more than",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

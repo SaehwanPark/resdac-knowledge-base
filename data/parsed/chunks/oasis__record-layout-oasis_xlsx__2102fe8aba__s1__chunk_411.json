@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_411",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "controlled, patient needs frequent adjustment in\ntreatment and dose monitoring\n04 = Symptoms poorly controlled, history of rehospitalizations CHAR 2 x x x x\nM1023_OTH_DGN4_ICD M1023 (M0240) Other Diagnosis4 ICD-10 Code This field lists the other diagnosis 4 (ICD-10). CHAR 8 x x x x\nM1023_OTH_DGN4_SEV M1023 (M0240) Other Diagnosis4 Severity This field lists the severity of the other diagnosis 4. 00 = Asymptomatic, no treatment needed at this time\n01 = Symptoms well controlled with current",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

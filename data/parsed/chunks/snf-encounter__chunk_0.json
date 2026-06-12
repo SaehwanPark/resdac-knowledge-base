@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__chunk_0",
+  "source_document": "data/raw/html/dataset_page/970e4806529a8e1d182c58a55b451dc499166a4b.html",
+  "page": null,
+  "text": "The Medicare Encounter Skilled Nursing Facility file includes Medicare Advantage plan records for skilled nursing facility stays. Skilled nursing care is the only level of nursing home care that is covered by the Medicare program.\nThis file includes:\n- Diagnosis codes (ICD diagnosis)\n- Procedure codes (ICD procedure)\n- Resource Utilization Group codes (RUGs)\n- Admission/discharge dates\n- Organization NPI number only\n- No payment variables\n- Part C/Medicare Advantage benefit package and contract",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter?page=2"
+}

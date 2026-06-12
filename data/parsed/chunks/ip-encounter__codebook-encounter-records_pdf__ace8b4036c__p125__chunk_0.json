@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p125__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 125,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n115 \nRSN_VISIT_CD1 \nRSN_VISIT_CD2 \nRSN_VISIT_CD3 \nLABEL: \nReason for Visit Diagnosis Code 1–3 \nDESCRIPTION: The diagnosis code used to identify the patient's reason for the home health (HH) encounter record or \nHospital Outpatient visit. There are up to three reason for visit diagnosis codes on the claim. \nSHORT NAME: RSN_VISIT_CD1 \nRSN_VISIT_CD2 \nRSN_VISIT_CD3 \nLONG NAME:",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__record-layout-mesf-cc_xlsx__b3af3fbfad__s1__chunk_71",
+  "source_document": "data/raw/assets/xlsx/b3af3fbfad2f6ed43af3c60fe6a83820ef895ce6.xlsx",
+  "page": 1,
+  "text": "met the chronic condition algorithm criteria, considering only Medicare data, for having Epilepsy Values:\n0 - Claims and FFS not met\n1 - Claims met, not FFS\n2 - Claims not met, FFS\n3 - Claims met and FFS\nnull/missing\nFIBRO_COMBINED Chronic Pain, Fatigue, and Fibromyalgia - Combined Medicare & Medicaid Claims NUM 1 This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Chronic Pain, Fatigue, and Fibromyalgia",
+  "dataset": "mesf-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-cc.xlsx"
+}

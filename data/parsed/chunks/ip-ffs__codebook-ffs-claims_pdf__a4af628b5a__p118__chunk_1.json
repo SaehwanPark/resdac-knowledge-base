@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p118__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 118,
+  "text": "for the claim, the pass-through amount \n(which is the daily per diem amount) must be multiplied by the number of Medicare-covered days \n(e.g., multiply the CLM_PASS_THRU_PER_DIEM_AMT by the CLM_UTLZTN_DAY_CNT), and then added \nto the claim payment amount (this field). \nFor non-hospital services (SNF, home health, hospice, and hospital outpatient) and for other non-\ninstitutional services (carrier and DME), this variable equals the total actual Medicare payment \namount, and pass-through amounts",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

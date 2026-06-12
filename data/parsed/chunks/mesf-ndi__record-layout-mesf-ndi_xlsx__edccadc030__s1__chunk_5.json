@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "Did not match and all matching indicators included (DOB, sex, SSN, age, state)\n3 = Did not match since indicators were missing\nNDI_STATE_DEATH_CD NDI State of Death CHAR 2 This field indicates the state in which the beneficiary died, according to NDI data (CCW recodes it to the SSA code) 2-digit numeric (SSA code)\nDEATH_CERT_NUM NDI Death Certificate Number CHAR 6 This field indicates the death certificate number 6-digits; numbers are not unique across years\nICD_CODE ICD-10 Code CHAR 4 This",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

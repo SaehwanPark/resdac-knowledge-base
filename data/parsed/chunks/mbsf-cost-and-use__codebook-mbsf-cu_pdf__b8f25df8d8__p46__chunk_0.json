@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p46__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 46,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n40 \nHOS_PRMRY_PMT \nLABEL: \nHospice Primary Payer Amount \nDESCRIPTION: This variable indicates the total amount paid for Hospice stays by a primary payer other than Medicare. \nIt is the sum of all the primary payer amounts (NCH_PRMRY_PYR_CLM_PD_AMT from each claim) in the \nhospice setting for the year. The algorithm includes only claims that ended during the year of the data \nfile,",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_325",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(T2D) Walking Support Provided CHAR 1 Multistate supplement: walking when most self sufficient - walking support provided. \"-\" = Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person physical assist, 3 = Two+ person physical assist\n548 T2E T2E_PARA_BARS (T2E) Parallel Bars Used by Resident CHAR 1 Multistate supplement: walking when most self sufficient - parallel bars used. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n549 T3 T3MCARE_CALC_RUG (T3) Medicare",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

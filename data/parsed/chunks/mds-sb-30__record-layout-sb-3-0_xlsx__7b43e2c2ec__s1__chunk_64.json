@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_64",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "0 =None\n 1=One\n 2=Two\n 3= Three\n^=Blank(skip pattern)\n96 C0300A_RPT_CRCT_YR_CD C0300A_RPT_CRCT_YR_CD C0300A BIMS: Temporal Orientation - Able to Report Correct Year CHAR 1 The data in this column identifies how closely the resident knew the current year. -=Not assessed/no information\n0=Missed by > 5 years or no answer\n1=Missed by 2-5 years\n2=Missed by 1 year\n3=Correct\n^=Blank(skip pattern)\n97 C0300B_RPT_CRCT_MO_CD C0300B_RPT_CRCT_MO_CD C0300B BIMS: Temporal Orientation - Able to Report Correct",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

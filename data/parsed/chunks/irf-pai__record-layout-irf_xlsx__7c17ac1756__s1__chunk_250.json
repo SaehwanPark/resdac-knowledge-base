@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_250",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "assessed/no information\n0=No\n1=Yes\n==Not answered-voluntary\n^=Skipped\n223 INFLNZ_RCVD_IND INFLNZ_RCVD_IND O0250A Influenza Received Code CHAR 1 The code for whether the patient received the influenza vaccine in the facility for the current year's vaccination season. -=Not assessed/no information\n0=No\n1=Yes\n224 INFLNZ_RCVD_DT INFLNZ_RCVD_DT O0250B Influenza Received Date DATE 8 The date that the influenza vaccination was received.\n225 RSN_INFLNZ_NOT_RCVD_CD RSN_INFLNZ_NOT_RCVD_CD O0250C Reason",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

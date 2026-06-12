@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s3__chunk_3",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 3,
+  "text": "- August CHAR 1 12\nMC_PLAN_SAREA_ACTV_IND_09 Managed Care Plan Service Area Active Indicator - September CHAR 1 13\nMC_PLAN_SAREA_ACTV_IND_10 Managed Care Plan Service Area Active Indicator - October CHAR 1 14\nMC_PLAN_SAREA_ACTV_IND_11 Managed Care Plan Service Area Active Indicator - November CHAR 1 15\nMC_PLAN_SAREA_ACTV_IND_12 Managed Care Plan Service Area Active Indicator - December CHAR 1 16\nRFRNC_YR Reference Yr CHAR 4 17\nCCW_APL_LINK_KEY CCW Key to Link APL Base Record to Related",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p45__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 45,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n35 \nCLM_ORIG_CNTL_NUM \nLABEL: \nClaim Original Control Number \nDESCRIPTION: This variable is the original intermediary control number (ICN) which is present on adjustment \nencounter, representing the ICN of the original transaction now being adjusted. \nSHORT NAME: CLM_ORIG_CNTL_NUM \nLONG NAME: CLM_ORIG_CNTL_NUM \nTYPE: \nCHAR \nLENGTH: \n23 \nSOURCE: \nMedicare Advantage Organizations (MAOs)",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_27",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Revenue Center IDE, NDC, or UPC Number Char 24 14\nREV_CNTR_NDC_QTY Revenue Center National Drug Code (NDC) Quantity Num 10 15\nREV_CNTR_NDC_QTY_QLFR_CD Revenue Center NDC Quantity Qualifier Code Char 2 16\nREV_CNTR_RNDRNG_PHYSN_NPI Revenue Center Rendering Physician NPI Char 10 17\nLINE_LTST_CLM_IND Line Latest Claim Indicator Char 1 18\nCondition code file\nBENE_ID Encrypted CCW Beneficiary ID Char 15 1\nENC_JOIN_KEY Unique Encounter Join Key Char 15 2\nCLM_TYPE_CD Claim Type Code Char 4",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

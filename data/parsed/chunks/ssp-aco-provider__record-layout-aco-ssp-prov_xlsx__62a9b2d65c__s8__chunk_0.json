@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s8__chunk_0",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 8,
+  "text": "NOTES:\nProvider RIFs from 2013 through 2017 included an encrypted, 6-character ACO identifier: ACO_NUM. Starting in 2018, the Provider RIFs include the 5-character ACO identifier used by the Shared Savings Program as part of its operations: ACO_ID. A crosswalk of the ACO_NUM and ACO_ID identifiers is available as an attachment to the Performance Year 2019 public-use files found at data.cms.gov.",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

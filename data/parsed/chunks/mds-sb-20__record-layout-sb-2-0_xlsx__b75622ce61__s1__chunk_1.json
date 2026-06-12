@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all claim and assessment data files.\n2 ASMT_ID ASMT_ID Encrypted Assessment ID CHAR 15 This number is assigned when an assessment record is processed in the Chronic Condition Warehouse. This field is encrypted prior to delivery to researchers. It identifies lines that are submitted from the same assessment.\n3 ASBGVRDT AST_BEG_VER_DT Assessment Beginning Version Date DATE 8 Beginning",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

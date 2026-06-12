@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p300__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 300,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n282 \nPRF_PHYSN_NPI \nLABEL: \nCarrier Line Performing NPI Number \nDESCRIPTION: The National Provider Identifier (NPI) assigned to the performing provider. \nSHORT NAME: PRFNPI \nLONG NAME: PRF_PHYSN_NPI \nTYPE: \nCHAR \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nEffective May 2007, the NPI became the national standard identifier for covered health care providers. \nNPIs",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__record-layout-million-hearts_xlsx__10a5b94754__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/10a5b94754c766cb1dad7c4ed5361d3db70f550d.xlsx",
+  "page": 1,
+  "text": "Name of Practice CHAR 100\nGROUP_TYPE Practice Group Type CHAR 100\nCCNS List of CMS Certification Numbers (Facility Numbers) for the Practice CHAR 4000\nADDRESS_LINE_1 Practice's Address (line 1) CHAR 100\nADDRESS_LINE_2 Practice's Address (line 2) CHAR 100\nCITY Practice's City CHAR 100\nSTATE Practice's State (postal abbreviation) CHAR 2\nZIP_CODE Practice's Zip Code CHAR 20\nINSERT_DATE Date the Record was Created DATE 8\nUPDATE_DATE Date the Record was Modified DATE 8\nIS_ACTIVE Active Practice (Y)",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-million-hearts.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s3__chunk_24",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 3,
+  "text": "Brand, and Preferred Brand\n999 Not Applicable\n45 oop_tier_label Label of Post-OOP Threshold Tier Char 2 Text label selected by the Part D sponsor that describes the post out-of-pocket threshold (catastrophic) phase limit formulary tier. Note, this field is only populated if the Medicare-defined Post Threshold Cost Shares do not apply. 00 No Label\n01 Formulary Generic\n02 Formulary Preferred Brand\n03 Formulary Brand\n04 Non-Formulary Generic\n05 Non-Formulary Brand\n06 Generic\n07 Preferred Brand\n08",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__data-documentation__515e0f4b8a__chunk_3",
+  "source_document": "data/raw/html/documentation_page/515e0f4b8a82429031028f6befb46024fb536839.html",
+  "page": null,
+  "text": "| MSIS Type of Program (TOP) | \n\n | MAX_TOS | MAX Type of Service (TOS) | \n\n | PRVDR_ID_NMBR | Billing provider identification number (MAX) | \n\n | NPI | National Provider Identifier (MAX) | \n\n | TAXONOMY | Provider Taxonomy | \n\n | TYPE_CLM_CD | Type of claim | \n\n | ADJUST_CD | Adjustment code | \n\n | PHP_TYPE | Managed care type of plan code | \n\n | PHP_ID | Managed care plan identification code | \n\n | MDCD_PYMT_AMT | Medicaid payment amount | \n\n | TP_PYMT_AMT | Third party payment amount | \n\n |",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_336",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= Triggered, \"-\" = Determination precluded by missing data.\n568 VA10A VA10A_ACTIV_TR (VA10A) Activities Triggered CHAR 1 RAP summary: activities - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n569 VA10B VA10B_ACTIV_PC (VA10B) Activities Care Planning Decision CHAR 1 RAP summary: activities - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n570 VA11A VA11A_FALLS_TR (VA11A) Falls Triggered CHAR 1 RAP",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_32",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "- 3 day SNF waiver CHAR 1 167\nCLM_NEXT_GNRTN_ACO_IND_CD5 CLM_NEXT_GNRTN_ACO_IND_CD5 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation CHAR 1 168\nACO_ID_NUM ACO_ID_NUM Claim Accountable Care Organization (ACO) Identification Number CHAR 10 169\nCLM_BENE_ID_TYPE_CD CLM_BENE_ID_TYPE_CD Claim Beneficiary Identifier Type Code (For CMS Internal Use) CHAR 1 170\nCLM_RSDL_PYMT_IND_CD CLM_RSDL_PYMT_IND_CD Claim Residual Payment Indicator Code CHAR 1 171",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

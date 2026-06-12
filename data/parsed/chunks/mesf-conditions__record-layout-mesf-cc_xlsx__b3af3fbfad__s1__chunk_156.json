@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__record-layout-mesf-cc_xlsx__b3af3fbfad__s1__chunk_156",
+  "source_document": "data/raw/assets/xlsx/b3af3fbfad2f6ed43af3c60fe6a83820ef895ce6.xlsx",
+  "page": 1,
+  "text": "procedure, hospital or ED, or MAT) Values:\n0 - Claims and FFS not met\n1 - Claims met, not FFS\n2 - Claims not met, FFS\n3 - Claims met and FFS\nnull/missing\nOUD_ANY_MEDICAID Overarching OUD Disorder (Any of the 3 Sub-Indctrs) - Mdcd-Only Claims NUM 1 This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Overarching opioid use disorder (any positive result from the three indicators: DX or procedure, hospital or ED, or MAT)",
+  "dataset": "mesf-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-cc.xlsx"
+}

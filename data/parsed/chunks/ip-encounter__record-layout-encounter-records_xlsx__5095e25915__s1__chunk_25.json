@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_25",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Beneficiary State Postal Code Char 2 149\nRevenue center file\nBENE_ID Encrypted CCW Beneficiary ID Char 15 1\nENC_JOIN_KEY Unique Encounter Join Key Char 15 2\nCLM_TYPE_CD Claim Type Code Char 4 3\nCLM_LINE_NUM Claim Line Number Num 13 4\nLINE_NUM_ORIG Original Claim Line Number Num 13 19\nCLM_THRU_DT Claim Through Date Date 8 5\nREV_CNTR Revenue Center Code Char 4 6\nREV_CNTR_FROM_DT Revenue Center From Date Date 8 7\nREV_CNTR_THRU_DT Revenue Center Thru Date Date 8 8\nREV_CNTR_UNIT_CNT Revenue Center",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

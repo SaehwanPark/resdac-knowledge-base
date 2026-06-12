@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p256__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 256,
+  "text": "Known \n1 = Written — prescription obtained via paper \n2 = Telephone — prescription obtained via oral instructions or interactive voice response using a \nphone. \n3 = Electronic — prescription obtained via SCRIPT or HL7 Standard transactions, or electronically \nwithin closed systems. \n4 = Facsimile — prescription obtained via transmission using a fax machine. \n5 = Pharmacy — this value is used to cover any situation where a new Rx number needs to be created \nfrom an existing valid prescription",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

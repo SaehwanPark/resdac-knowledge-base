@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_257",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "lesions present in last 7 days - skin tears or cuts (other than surgery). 0 = No, 1 = Yes, \"-\" = Unknown.\n420 M4G M4G_SURG_WOUND (M4G) Surgical Wounds CHAR 1 Skin condition: other skin problems or lesions present in last 7 days - surgical wounds. 0 = No, 1 = Yes, \"-\" = Unknown.\n421 M4H M4H_NONE_ABOVE (M4H) None of Above Skin Problems CHAR 1 Skin condition: other skin problems or lesions present in last 7 days - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n422 M5A M5A_RELIEF_CHAIR (M5A)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

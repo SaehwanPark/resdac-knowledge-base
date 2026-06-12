@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Fee-For-Service Institutional Claims\nVersion — March 2025\nShort SAS name Long SAS name Label Type Length IP file sequence1 New variables\nBase claim file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 1\nCLM_ID CLM_ID Claim ID CHAR 15 2\nRIC_CD NCH_NEAR_LINE_REC_IDENT_CD NCH Near Line Record Identification Code (RIC) CHAR 1 3\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 4\nFROM_DT CLM_FROM_DT Claim From Date DATE 8",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p71__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 71,
+  "text": "Y = Yes (Medicare zero-dollar cost sharing plan) \nN = No (Medicare non-zero-dollar cost sharing plan) \n9 = Not Applicable (not a D-SNP plan; value retired in 2023) \nNull/missing (not a D-SNP plan) \nCOMMENT: \nThis variable is new in 2017. It was included in the plan base file from 2017–2022; starting with the \n2023 file, this field is moved to the SNP contract file. \nThe Bipartisan Budget Act (BBA) of 2018 permanently authorized Medicare Advantage dual-eligible \nspecial needs plans (D-SNPs),",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

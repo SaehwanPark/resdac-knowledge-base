@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_4",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "CMS Certification Number (CCN) | \n\n | 24 | SS_LS_SNF_IND_CD | Short Stay/Long Stay/SNF Provider Indicator Code | \n\n | 25 | ACTV_XREF_IND | MEDPAR Active Cross Reference Indicator | \n\n | 26 | SLCT_RSN_CD | Specifies whether this record is a case or control record | \n\n | 27 | STAY_FINL_ACTN_CLM_CNT | Number of claims (final action) included in stay | \n\n | 28 | LTST_CLM_ACRTN_DT | Latest Claim Accretion Date | \n\n | 29 | BENE_MDCR_BNFT_EXHST_DT | Beneficiary Medicare Benefit Exhausted Date | \n\n |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

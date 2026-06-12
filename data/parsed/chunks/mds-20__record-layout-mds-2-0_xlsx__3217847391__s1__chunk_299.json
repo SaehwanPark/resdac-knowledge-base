@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_299",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Therapy Minutes CHAR 4 Special treatments and procedures: special treatments, procedures, and programs - therapies - psychological therapy - total number of minutes (last 7 days).\n501 P2A P2A_BEHAVIOR (P2A) Special Behavior Symptom Evaluation Program CHAR 1 Special treatments and procedures: intervention programs for mood, behavior, cognitive loss - special behavior symptom evaluation program used in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n502 P2B P2B_EVALUATED (P2B) Evaluation by Licensed",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

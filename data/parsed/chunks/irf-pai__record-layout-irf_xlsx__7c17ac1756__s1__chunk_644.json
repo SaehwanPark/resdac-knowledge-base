@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_644",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "CHAR 1 This column documents whether, at the time of admission, the patient was receiving IV antibiotics. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n602 ANTBTC_DSCHRG_CD ANTBTC_DSCHRG_CD Other: IV - Antibiotics (Discharge) CHAR 1 This column documents whether, at the time of discharge, the patient was receiving IV antibiotics. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n603 ANTCGLNT_ADMSN_CD ANTCGLNT_ADMSN_CD Other: IV - Anticoagulation (Admission) CHAR 1 This column documents whether,",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

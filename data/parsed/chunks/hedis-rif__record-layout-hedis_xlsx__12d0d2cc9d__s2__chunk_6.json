@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s2__chunk_6",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 2,
+  "text": "SES Stratification Indicator: Low-Income Subsidy or Dual Eligble, and Disabled NUM 3 — 25 31\nSES_OTHR_POP_IND SES Stratification Indicator: Other Eligible Population NUM 3 — 26 32\nSES_UNK_POP_IND SES Stratification Indicator: Unknown Eligible Population NUM 3 — 27 33\nRFRNC_YR_HEDIS Reference Year HEDIS NUM 3 22 28 34\n1 For all columns relating to the year of the data file, shading or '—' indicates variable is not in the file.\n2In 2025, this field was renamed to sex to comply with Executive",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

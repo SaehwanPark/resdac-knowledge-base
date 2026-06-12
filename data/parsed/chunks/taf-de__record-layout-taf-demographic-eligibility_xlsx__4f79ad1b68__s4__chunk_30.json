@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s4__chunk_30",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 4,
+  "text": "CHAR 2 168\nWVR_TYPE_CD_06_10 Waiver Type Code (6th Occurrence) - October CHAR 2 169\nWVR_TYPE_CD_06_11 Waiver Type Code (6th Occurrence) - November CHAR 2 170\nWVR_TYPE_CD_06_12 Waiver Type Code (6th Occurrence) - December CHAR 2 171\nWVR_ID_07_01 Waiver ID (7th Occurrence) - January CHAR 20 172\nWVR_ID_07_02 Waiver ID (7th Occurrence) - February CHAR 20 173\nWVR_ID_07_03 Waiver ID (7th Occurrence) - March CHAR 20 174\nWVR_ID_07_04 Waiver ID (7th Occurrence) - April CHAR 20 175\nWVR_ID_07_05 Waiver ID",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_125",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n115 _39HG SPHNCTR_BWL_GOAL_CD (39Hg) Sphincter Control - Bowel: Goal CHAR 2 A score indicating the desired goal for the level of assistance needed for the patient's bowel management at discharge. Bowel management - level of assistance includes use of equipment or agents for bowel management. 01 = Helper - Complete Dependence/Total Assistance (Subject less than 25%), 02 = Helper - Complete",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

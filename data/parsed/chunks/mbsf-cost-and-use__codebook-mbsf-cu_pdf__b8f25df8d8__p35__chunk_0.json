@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p35__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 35,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n29 \nENRL_SRC \nLABEL: \nEnrollment Source \nDESCRIPTION: This variable indicates the source of enrollment data. \nSHORT NAME: ENRL_SRC \nLONG NAME: ENRL_SRC \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCCW \nVALUES: \nEDB = Enrollment Database \nCME = Common Medicare Environment \nCOMMENT: \nThe Centers for Medicare & Medicaid Services (CMS) has updated the Medicare enrollment source data \nfor the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

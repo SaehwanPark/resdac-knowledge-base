@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_179",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "to Hospital Reason admitted to acute care hospital. 01 = Hospitalization for emergent (unscheduled) care\n02 = Hospitalization for urgent (scheduled within 24 hours of admission) care\n03 = Hospitalization for elective (scheduled more than 24 hours before admission) care\nUK = Unknown CHAR 2 x x\nM0895_HOSP_CHEMO (M0895) Chemotherapy Reason for hospitalization: chemotherapy. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_VN_PULM (M0895) Deep Vein Thrombosis/Pulmonary Embolus Reason for",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Sequence Number\n22 SFTWR_ID SFTWR_ID Software ID CHAR 9 This field contains the identification number of the software vendor or agent the provider is using to automate the assessement requirement.\n23 SFTWVRSN SFTWR_VRSN Software Version CHAR 5 This field contains the version number of the vendor software being used by the facility or the facility's agent to automate the assessment submission process.\n24 STATE_CD STATE_CD State Code CHAR 2 The two-digit state abbreviation.\n25 SUBMSNDT SUBMSN_DT",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

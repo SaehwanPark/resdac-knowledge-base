@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_84",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "payments (IHS) NUM 12 X X X X X X X X X X X\n392 LT_REC_CNT_IHS Institutional LT care records (IHS) NUM 5 X X X X X X X X X X X\n393 LT_PYMT_AMT_IHS Institutional LT care payments (IHS) NUM 12 X X X X X X X X X X X\n394 OT_REC_CNT_IHS Other service records (IHS) NUM 5 X X X X X X X X X X X\n395 OT_PYMT_AMT_IHS Other service payments (IHS) NUM 12 X X X X X X X X X X X\n396 RX_REC_CNT_IHS Prescription drug records (IHS) NUM 5 X X X X X X X X X X X\n397 RX_PYMT_AMT_IHS Prescription drug payments (IHS)",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

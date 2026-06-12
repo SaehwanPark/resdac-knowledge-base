@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p13__chunk_2",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 13,
+  "text": "data \nVALUES: \n1 = hospital had 25+ patients who received hospital at home inpatient services \n2 = hospital had <= 24 patients who received hospital at home inpatient services \nCOMMENT: \nThe categorization of hospitals into the facility tier (FAC_TIER) uses historical information and does not \nchange during the AHCAH program. The FAC_TIER determines whether the hospital must submit data \nto CMS weekly or monthly. If FAC_TIER =1, the hospital submits data monthly; if FAC_TIER =2, the \nhospital",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p108__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 108,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n92 \nESRD_SETG_IND_1_CD \nESRD_SETG_IND_2_CD \nESRD_SETG_IND_3_CD \nESRD_SETG_IND_4_CD \nESRD_SETG_IND_5_CD \nLABEL: \nDialysis service type code 1 \nDESCRIPTION: The 1st code indicating the type of dialysis received by the beneficiary during the stay. Up to five (5) of \nthese 2-position codes may be present. \nSHORT NAME: \nESRDSTG1 \nESRDSTG2 \nESRDSTG3 \nESRDSTG4 \nESRDSTG5 \nLONG NAME: \nESRD_SETG_IND_1_CD",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

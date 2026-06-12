@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p340__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 340,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n322 \nREV_CNTR_2ND_MSP_PD_AMT \nLABEL: \nRevenue Center 2nd Medicare Secondary Payer (MSP) Paid Amount \nDESCRIPTION: The amount paid by the secondary payer when two payers are primary to Medicare (Medicare is the \ntertiary payer). \nSHORT NAME: REV_MSP2 \nLONG NAME: REV_CNTR_2ND_MSP_PD_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nThis field is populated",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

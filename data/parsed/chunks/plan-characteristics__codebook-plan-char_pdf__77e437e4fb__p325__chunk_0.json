@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p325__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 325,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n311 \nSSA_CODE \nLABEL: \nSegment SSA State and County Code \nDESCRIPTION: This variable is the standard five-digit Social Security Administration (SSA) state and county code in \nwhich the plan benefit package (segment) provides coverage. \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThe CCW constructs the plan characteristics file from information",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

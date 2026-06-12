@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p22__chunk_4",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 22,
+  "text": "absent \n198 = Precertification/notification/authorization/pre-treatment exceeded \n199 = Revenue code and procedure code do not match \n200 = Expenses incurred during lapse in coverage \n201 = Patient is responsible for amount of this claim/service through “set aside arrangement” or other \nagreement. (Use only with group code PR) At least one remark code must be provided (may be \ncomprised of either the NCPDP reject reason code, or remittance advice remark code that is not \nan ALERT.) \n202 =",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

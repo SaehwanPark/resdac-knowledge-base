@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p180__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 180,
+  "text": "(UM) Program. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes \nN = No \nCOMMENT: \nPlans that elect to cover OTC drugs as part of general drug utilization management or part of a step \ntherapy protocol have identified the applicable drugs and they appear in the OTC Drug file (which is \ndelivered as part of the Formulary file). When OTC_UM_PROGRAM='Y' then the over-the-counter \ndrugs that appear in the OTC Drug file are allowed by the plan. \n^ Back to TOC ^",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

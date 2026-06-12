@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p56__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 56,
+  "text": "LABEL: \nLevel of Care Status Code for LTSS ― January–December (01–12) \nDESCRIPTION: The monthly status code indicating the level of care required to meet a beneficiary's needs and to \ndetermine Long-Term Services and Supports (LTSS) program eligibility. There are separate variables for \neach of the 12 months during the year. \nSHORT NAME: \nCARE_LVL_STUS_CD_01 \nCARE_LVL_STUS_CD_02 \nCARE_LVL_STUS_CD_03 \nCARE_LVL_STUS_CD_04 \nCARE_LVL_STUS_CD_05 \nCARE_LVL_STUS_CD_06 \nCARE_LVL_STUS_CD_07",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

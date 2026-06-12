@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_142",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "in this column identifies the frequency that the resident wandered. -=Not assessed/no information\n0=Behavior not exhibited\n1=Behavior of this type occured 1 to 3 days\n2=Behavior of this type occurred 4 to 6 days, but less than daily\n3=Behavior of this type occurred daily\n^=Blank (skip pattern)\n175 E1000A_WNDR_RISK_CD E1000A_WNDR_RISK_CD E1000A Wander Risk Impact CHAR 1 The data in this column identifies whether the resident's wandering places them at significant risk for getting to a",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

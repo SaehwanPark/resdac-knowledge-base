@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p127__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 127,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n117 \nSRVC_MONTH \nLABEL: \nService Month \nDESCRIPTION: The CCW-derived service month indicates the month and year when the service was provided, \nbased on the claim through date (CLM_THRU_DT). \nSHORT NAME: SRVC_MONTH \nLONG NAME: SRVC_MONTH \nTYPE: \nDATE \nLENGTH: \n6 \nSOURCE: \nCCW \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n201501–201512 \nCOMMENT: \nThis",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

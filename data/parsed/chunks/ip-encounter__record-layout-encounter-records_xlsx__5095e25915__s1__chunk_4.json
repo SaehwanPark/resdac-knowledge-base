@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Physician NPI Number Char 10 26\nOT_PHYSN_NPI Claim Other Physician NPI Number Char 10 27\nCLM_ADMSN_DT Claim Admission Date Date 8 28\nCLM_IP_ADMSN_TYPE_CD Claim Inpatient Admission Type Code Char 1 29\nCLM_SRC_IP_ADMSN_CD Claim Source Inpatient Admission Code Char 1 30\nPTNT_DSCHRG_STUS_CD Patient Discharge Status Code Char 2 31\nCLM_DAY_CNT Day Count (Length of Stay) Num 4 32\nBENE_DSCHRG_DT Beneficiary Discharge Date Date 8 33\nCLM_DRG_CD Claim MS-Diagnosis Related Group Code (MS-DRG) Char 4",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

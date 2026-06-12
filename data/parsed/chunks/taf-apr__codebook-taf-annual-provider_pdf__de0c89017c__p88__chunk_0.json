@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p88__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 88,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n89 \nPRVDR_ENRLMT_END_DT \nLABEL: \nProvider Enrollment (Medicaid and/or CHIP) End Date \nDESCRIPTION: The end date of the provider’s enrollment in the Medicaid and/or CHIP program with the state. \nSHORT NAME: PRVDR_ENRLMT_END_DT \nLONG NAME: PRVDR_ENRLMT_END_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nAPR enrollment \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nDate (numeric,",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

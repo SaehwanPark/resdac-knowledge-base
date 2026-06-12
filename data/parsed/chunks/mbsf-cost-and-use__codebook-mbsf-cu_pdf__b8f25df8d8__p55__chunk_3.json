@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p55__chunk_3",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 55,
+  "text": "due to ACO or PBP programs. \nThere are two cost/use categories from the IP data files: Acute and the OIP. \nOIP_PERDIEM_PMT must be added to this field to obtain the total Medicare payments. The annual per \ndiem variable was new in 2010; it will always be null/missing in earlier files. \nCosts that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a \nCMS publication called \"Your Medicare Benefits,” which explains the deductibles and coinsurance \namounts.",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

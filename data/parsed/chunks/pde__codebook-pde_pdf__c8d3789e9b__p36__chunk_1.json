@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p36__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 36,
+  "text": "D drugs. This dollar amount is excluded from risk corridor calculations. \nMedicare requires Part D plans to cover certain drugs, but some plans may offer benefits that are \nmore generous than the standard benefit by covering drugs that Part D does not cover. \nSHORT NAME: NPP_AMT \nLONG NAME: NCVRD_PLAN_PD_AMT \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nField length expanded from 10 to 13 in 2025. This variable comes directly from the original PDE. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

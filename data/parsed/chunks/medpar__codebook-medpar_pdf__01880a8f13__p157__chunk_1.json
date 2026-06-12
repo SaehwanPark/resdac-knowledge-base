@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p157__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 157,
+  "text": "MedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge amount associated with revenue \ncenter codes 027x, and 062x from all claim’s records included in the stay. \nNote that detailed revenue center charge amounts for medical/surgical supplies are available 2011 \nforward — reference the following 12 fields: MDCL_SRGCL_GNRL_AMT, MDCL_SRGCL_NSTRL_AMT, \nMDCL_SRGCL_STRL_AMT, MDCL_SRGCL_DRSNG_AMT, MDCL_SRGCL_PCMKR_AMT, \nMDCL_SRGCL_MISC_AMT,",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

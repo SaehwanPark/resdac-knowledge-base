@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "ethnicity is white. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes) discontinued 09/30/2023\n60 A1100A_NEED_INTRPTR_CD A1100A_NEED_INTRPTR_CD A1100A Resident Need Interpreter Code CHAR 1 The data in this column indicates if the resident needs an interpreter. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine discontinued 09/30/2023\n61 A1100B_INTRPTR_LANG_TXT A1100B_INTRPTR_LANG_TXT A1100B Preferred Language CHAR 15 This column contains the resident's preferred",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

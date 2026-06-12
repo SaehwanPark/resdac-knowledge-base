@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p36__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 36,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n32 \nWRIT_SUMM_DT \nLABEL: \nDate the written summary of the required CMR (CMS standardized format) was provided or sent \nDESCRIPTION: This variable indicates the date the written summary of the required CMR (CMS standardized format) \nwas provided or sent \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis variable is new in",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

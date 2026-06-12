@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p17__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 17,
+  "text": "and her predicted cost reflects increments for both conditions. \nBecause the model codes a single individual for none, one, or more than one HCC, the CMS-HCC model can individually \nprice tens of thousands of distinct clinical profiles. The model’s structure thus provides, and predicts from, a detailed \ncomprehensive clinical profile for each individual. An evaluation of the CMS risk models is publicly available on the \nCMS website.26 \n\n26 Pope GC, Kautter J, Ingber MJ, et al. “Evaluation of",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

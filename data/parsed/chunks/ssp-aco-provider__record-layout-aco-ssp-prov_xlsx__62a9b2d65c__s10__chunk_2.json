@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s10__chunk_2",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 10,
+  "text": "the ACO's certified participant list used in financial reconciliation CHAR 9\nCCN CCN CMS Certification Number CMS Certification Number (formerly OSCAR Number) included on the ACO's certified participant list via the attestation list or included as an organization associated with a participant TIN during the period of performance (based on information in PECOS). Limited to CCNs associated with participants TINs used in financial reconciliation. Most values are 6 or 7 characters; a very small",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p272__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 272,
+  "text": "NUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nDerivation Rules: Accumulate the value amounts (from field called CLM_VAL_AMT) associated with \nvalue codes (CLM_VAL_CD) equal to 06, 08 thru 11 and A1, B1, or C1 and output to this field. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

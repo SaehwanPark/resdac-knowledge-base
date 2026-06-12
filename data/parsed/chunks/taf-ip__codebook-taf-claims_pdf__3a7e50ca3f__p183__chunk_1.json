@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p183__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 183,
+  "text": "VALUES: \nDate (numeric, system dependent) \nNull/missing = Source value is missing or unknown \nCOMMENT: \nFor Encounter Records (CLM_TYPE_CD = \"3\", \"C\", \"W\"), the date the managed care organization paid \nthe provider for the claim or adjustment. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "records with Inpatient_stay not equal to missing. Equals 1 if beneficiary died in 2016\nBENE_RISK_SCORE_PCTL Risk percentile rank Percentile of beneficiary hierarchical condition category (HCC) risk score compared with all other Medicare beneficiaries (higher percentiles indicate higher risk) 9 Num 8 Populated only for records with Inpatient_stay not equal to missing\nMSPB_RISK_SCORE_PCTL Risk percentile rank Percentile of beneficiary hierarchical condition category (HCC) risk score compared with",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

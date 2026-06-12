@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Code CHAR 1 A code designating the version of the assessment. C = Current, M = Modified, X = Inactive\n5 CLCDAGTX CALCTD_AGE_TXT Calculated Age Code CHAR 5 A preliminary calculation made prior to determining the CMG group. Age is computed on the basis of the difference between the Admission Date (Item 12) and the Birth Date (Item 6).\n6 CLCCMGTX CALCTD_CMG_TXT Calculated CMG Code CHAR 10 The Case-Mix Group code that is calculated from the data submitted to the NACD.\n7 CLCMVRTX CALCTD_CMG_VRSN_TXT",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

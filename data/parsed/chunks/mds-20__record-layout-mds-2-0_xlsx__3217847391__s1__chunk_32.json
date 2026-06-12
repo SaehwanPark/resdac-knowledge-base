@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_32",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "and background information: advanced directives - autopsy request 0 = No, 1 = Yes, \"-\" = Unknown.\n63 A10F A10F_FEED_RESTRICT (A10F) Feeding Restrictions CHAR 1 Identification and background information: advanced directives - feeding restrictions 0 = No, 1 = Yes, \"-\" = Unknown.\n64 A10G A10G_MED_RESTRICT (A10G) Medication Restrictions CHAR 1 Identification and background information: advanced directives - medication restrictions 0 = No, 1 = Yes, \"-\" = Unknown.\n65 A10H A10H_OTH_TRT_REST (A10H)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

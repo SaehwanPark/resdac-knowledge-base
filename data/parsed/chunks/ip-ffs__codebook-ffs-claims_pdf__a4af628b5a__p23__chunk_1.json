@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p23__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 23,
+  "text": "CHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n00 = Carrier wide \n01 = General practice \n02 = General surgery \n03 = Allergy/immunology \n04 = Otolaryngology \n05 = Anesthesiology \n06 = Cardiology \n07 = Dermatology \n08 = Family practice \n09 = Interventional Pain Management \n(IPM) (eff. 4/2003) \n10 = Gastroenterology \n11 = Internal medicine \n12 = Osteopathic manipulative \nmedicine \n13 = Neurology \n14 = Neurosurgery \n15 = Speech/language pathologist in \nprivate practice \n16 = Obstetrics/gynecology \n17 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

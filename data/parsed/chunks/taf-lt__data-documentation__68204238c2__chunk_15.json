@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_15",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "for a Covered Service | \n\n | 91 | MDCD_ACMDTN_PD_AMT | Medicaid Amount Paid for All Accommodation (Room and Board) Revenue Lines | \n\n | 92 | MDCD_ANCLRY_PD_AMT | Medicaid Amount Paid for All Ancillary (Non-Room & Board) Revenue Lines | \n\n | 93 | MDCR_PD_AMT | Medicare Paid Amount | \n\n | 94 | MDCR_DDCTBL_PD_AMT | Total Medicare Deductible Amount | \n\n | 95 | MDCR_COINSRNC_PD_AMT | Total Medicare Coinsurance Amount | \n\n | 96 | MDCR_CMBND_DDCTBL_IND | Medicare Combined Deductible and Coinsurance",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

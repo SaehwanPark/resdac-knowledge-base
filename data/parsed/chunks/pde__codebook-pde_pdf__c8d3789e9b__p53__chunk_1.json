@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p53__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 53,
+  "text": "other patient payment amounts, and \ncomes directly from the source PDE. This amount contributes to a beneficiary's true out-of-pocket \n(TrOOP) costs, but only if it is for a Part D-covered drug (i.e., spending on non-covered drugs does not \ncount toward the TrOOP amount). \nSHORT NAME: PTPAYAMT \nLONG NAME: PTNT_PAY_AMT \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nField length expanded from 10 to 13 in 2025. Three other variables measure payments that are made \non behalf of the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_471",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "for the most recent physical therapy. discontinued 09/30/2025\n530 O0400D1_RT_MIN_NUM O0400D1_RT_MIN_NUM O0400D1 Respiratory Therapy Minutes Number CHAR 4 The data in this column indicates the total number of minutes that respiratory therapy was administered to the resident in the last seven days. discontinued 09/30/2025\n531 O0400D2_RT_DAY_NUM O0400D2_RT_DAY_NUM O0400D2 Number of Days Respiratory Therapy Administered CHAR 1 The data in this column indicates the number of days that respiratory",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

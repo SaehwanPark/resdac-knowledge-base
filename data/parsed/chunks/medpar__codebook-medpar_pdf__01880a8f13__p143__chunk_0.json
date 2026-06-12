@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p143__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 143,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n127 \nIPPS_FLEX_PYMT_7_AMT \nLABEL: \nFlexible Payment Amount — 7th (placeholder) \nDESCRIPTION: This field is a placeholder for a dollar amount to be used for a future policy. \nSHORT NAME: IPPS_FLEX_PYMT_7_AMT \nLONG NAME: IPPS_FLEX_PYMT_7_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is new in October 2014 (it is not populated). This field only applies to Inpatient",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

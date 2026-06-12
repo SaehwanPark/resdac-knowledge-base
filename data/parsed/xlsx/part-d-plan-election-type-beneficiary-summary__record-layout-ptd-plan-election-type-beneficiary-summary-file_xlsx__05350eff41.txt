@@ -1,0 +1,25 @@
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Beneficiary Plan Election File
+Version 1.2 (April 2018)
+Long SAS NAME	Label	Type	Length
+BENE_ID	CCW Beneficiary ID	CHAR	15
+REF_YEAR	Year of Part D Election Flag	NUM	4
+APLCTN_DT	Beneficiary Part D Plan Enrollment Application Date	DATE	8
+ENRLMT_EFCTV_DT	Beneficiary Part D Plan Enrollment Effective Date	DATE	8
+DISENRLMT_DT	Beneficiary Part D Plan Disenrollment Date	DATE	8
+ENRLMT_TYPE_CD	Part D Enrollment Type Code	CHAR	1
+CONTRACT_ID	Contract ID	CHAR	5
+PLAN_ID	Plan ID	CHAR	3
+AUDT_SQNC_NUM	Audit Sequential Number: Valid=0/Canceled=Greater Than 0	NUM	3
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Beneficiary Auto-Assignment File
+Version 1.2 (April 2018)
+Long SAS NAME	Label	Type	Length
+BENE_ID	CCW Beneficiary ID	CHAR	15
+REF_YEAR	Part D Plan Enrollment Year	NUM	4
+LIS_MONTHS	Beneficiary Months of Low Income Subsidy	NUM	2
+AUTO_ASSIGNED_FLAG	Auto-Assignment Flag for 1 or More Enrollement Transactions	CHAR	1
+CHOOSER	Beneficiary Self-Selector Indicator	CHAR	1
+CRNT_PREV_YR_CHOOSER	Self-Selector in Current or Previous Year Indicator	CHAR	1
+REASSIGN_JAN	Beneficiary Newly Reassigned for January Plan	CHAR	1

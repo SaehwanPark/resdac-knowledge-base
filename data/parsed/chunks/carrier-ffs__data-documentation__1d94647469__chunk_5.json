@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_5",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "| \n\n | LINE_PRVDR_PMT_AMT | Line Provider Payment Amount | \n\n | LINE_BENE_PTB_DDCTBL_AMT | Line Beneficiary Part B Deductible Amount | \n\n | LINE_BENE_PRMRY_PYR_CD | Line Primary Payer Code (if not Medicare) | \n\n | LINE_BENE_PRMRY_PYR_PD_AMT | Line Primary Payer (if not Medicare) Paid Amount | \n\n | LINE_COINSRNC_AMT | Line Beneficiary Coinsurance Amount | \n\n | LINE_SBMTD_CHRG_AMT | Line Submitted Charge Amount | \n\n | LINE_ALOWD_CHRG_AMT | Line Allowed Charge Amount | \n\n | LINE_PRCSG_IND_CD |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

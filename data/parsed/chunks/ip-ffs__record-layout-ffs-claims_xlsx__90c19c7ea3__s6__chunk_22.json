@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_22",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "NUM 12 33\nLSBMTCHG LINE_SBMTD_CHRG_AMT Line Submitted Charge Amount NUM 12 34\nLALOWCHG LINE_ALOWD_CHRG_AMT Line Allowed Charge Amount NUM 12 35\nPRCNGIND LINE_PRCSG_IND_CD Line Processing Indicator Code CHAR 2 36\nPMTINDSW LINE_PMT_80_100_CD Line Payment 80% / 100% Code CHAR 1 37\nDED_SW LINE_SERVICE_DEDUCTIBLE Line Service Deductible Indicator Switch CHAR 1 38\nMTUS_CNT CARR_LINE_MTUS_CNT Carrier Line Miles/Time/Units/Services (MTUS) Count NUM 11 39\nMTUS_IND CARR_LINE_MTUS_CD Carrier Line",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

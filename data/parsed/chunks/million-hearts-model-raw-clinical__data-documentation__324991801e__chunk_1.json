@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-raw-clinical__data-documentation__324991801e__chunk_1",
+  "source_document": "data/raw/html/documentation_page/324991801e4f1b28b7838dcada3d35c60afd56e1.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| PRACTICE_ID | Model-Assigned Practice ID | \n| PRACTICE_NAME | Name of Practice | \n| TIN | Practice's Taxpayer Identification Number | \n| NPI | Provider's National Provider Identifier | \n| UNIQUE_PATIENT_ID | Unique Model-Assigned Patient ID | \n| ACTIVITY_DATE | Encounter/Procedure/Diagnosis/Lab/Medication Start or Occurrence Date | \n| ACTIVITY_END_DATE",
+  "dataset": "million-hearts-model-raw-clinical",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-raw-clinical/data-documentation"
+}

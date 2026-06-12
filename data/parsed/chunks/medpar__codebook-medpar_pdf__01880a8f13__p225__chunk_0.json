@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p225__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 225,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n209 \nRDLGY_OTHR_IMGNG_IND_SW \nLABEL: \nRadiology Other Imaging Indicator \nDESCRIPTION: The switch indicating whether the beneficiary received other radiology imaging services (e.g., \nultrasound, mammography) during the stay. \nSHORT NAME: IMGNG_SW \nLONG NAME: RDLGY_OTHR_IMGNG_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedPAR (derived) \nVALUES: \n0 = No other imaging services (revenue code not 040x) \n1",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

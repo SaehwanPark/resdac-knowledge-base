@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p45__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 45,
+  "text": "then a \nnew CLM_CNTL_NUM is assigned to this updated record. A null/missing CLM_ORIG_CNTL_NUM \nindicates that a prior encounter record has not been adjusted by the Medicare Advantage \nOrganization (MAO). Generally, this implies that it is the first occurrence of an encounter service \nrecord, but occasionally, multiple record submissions for the same service may appear as original \nencounters. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "it is the CMS facility internal identifier. Positive value indicates the CMS facility indentifier. Other values include: \"-\" = the data is averaged to the state, -2 = the data is averaged to the region and -3 = the data is averaged to the whole nation.\n11 MDSASIID MDS_ASMT_INT_ID Encrypted D20MDS Assessment Internal ID CHAR 10 Unique identifier for a version of an assessment when combined with State ID.\n12 VCODE2 VCODE2 MDS Data Specs Version Code CHAR 5 This field indicates which version of",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

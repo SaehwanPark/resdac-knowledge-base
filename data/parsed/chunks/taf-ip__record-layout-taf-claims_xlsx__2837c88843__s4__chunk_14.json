@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_14",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "Fill Date DATE 8 19\nNDC National Drug Code CHAR 13 20\nNDC_UOM_CD NDC Unit of Measure Code CHAR 2 21\nNDC_QTY NDC Quantity Dispensed NUM 8 22\nMTRC_DCML_QTY Metric Decimal Quantity of Product NUM 8 23\nNDC_QTY_ALOWD NDC Quantity Allowed NUM 8 24\nDAYS_SUPPLY Days Supply NUM 8 25\nNEW_RX_REFILL_NUM New Prescription Indicator (00) or Number of Refills CHAR 2 26\nBRND_GNRC_CD Brand - Generic Code CHAR 1 27\nDOSAGE_FORM_CD Medication Dosage Form Code CHAR 2 28\nREBT_ELGBL_CD Rebate Eligible Code CHAR 1",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

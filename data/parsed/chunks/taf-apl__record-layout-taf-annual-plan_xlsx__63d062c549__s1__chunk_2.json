@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 1,
+  "text": "Code CHAR 1 10\nMC_PLAN_CNTRCT_START_DT Managed Care Plan Contract Start Date DATE 8 11\nMC_PLAN_CNTRCT_END_DT Managed Care Plan Contract End Date DATE 8 12\nMC_PLAN_CNTRCT_ADDTNL_PRD_IND Managed Care Plan Contract Additional Period Indicator CHAR 1 13\nMC_PLAN_SAREA_CD CHAR 1 14\nMC_PLAN_STATEWIDE_IND Managed Care Plan Statewide Service Area Indicator - Ever in Calendar Yr CHAR 1 15\nMC_PLAN_CBSA_CD Managed Care Plan Core-Based Statistical Area Code for Service Area CHAR 1 16\nMC_PLAN_ACTV_IND_01",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p36__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 36,
+  "text": "Annual Managed Care Plan TAF \nVALUES: \nState-assigned unique managed care identification number. The field can contain any alphanumeric \ncharacters, digits, or symbols (e.g., 01234816, 45, CH) \nCOMMENT: \nThis variable will never contain NULL values. \nThis field, in conjunction with other fields, can be used to link to other TAF. \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

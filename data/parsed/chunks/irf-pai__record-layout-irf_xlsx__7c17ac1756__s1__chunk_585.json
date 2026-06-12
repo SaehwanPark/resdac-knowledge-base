@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_585",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "day-to-day activities (excluding rehabilitation therapy sessions) were limited because of pain? 1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to answer \n^ = Blank\n522 PRNTRL_ADMSN_CD PRNTRL_ADMSN_CD Nutritional Approaches (Admission): Parenteral CHAR 1 This column documents whether the patient was receiving Parenteral/IV feeding as their nutritional approach at the time of admission. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n523",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

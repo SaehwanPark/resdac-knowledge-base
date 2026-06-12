@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p60__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 60,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n55 \nRX_ORGN_CD \nLABEL: \nPrescription Origination Code \nDESCRIPTION: This variable indicates whether the prescription was transmitted as an electronic prescription, by \nphone, by fax, or as a written paper copy. \nSHORT NAME: RX_ORGN_CD \nLONG NAME: RX_ORGN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \nNull = Unknown \n0 = Not specified \n1 = Written \n2 =",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

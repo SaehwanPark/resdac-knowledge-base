@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p145__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 145,
+  "text": "AHC data system \nVALUES: \n0 = Did not screen positive for housing need \n1 = Screened positive for housing need \nMissing \nCOMMENT: \nVariables include SR_CORE_HOUSNG_1_CD (value of 2 = Worried lose housing or 3 = No steady \nhousing) and SR_CORE_HOUSNG_2_SCRNG_CMPST_IND (value of 1 = Has issues with pests, mold, \nlead, heat, oven, smoke detectors, and/or water). This field is “1” if either of the two housing \nquestions was positive for the need. \nVariables that start with “SR” include information",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

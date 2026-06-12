@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse. This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all data files. \nSource: CCW\n2 MSIS_ID Encrypted MSIS Identification Number CHAR 32 X X X X X X X X X X X This field is encrypted prior to data delivery\n3 STATE_CD State CHAR 2 X X X X X X X X X X X\n4 EL_STATE_CASE_NUM Encrypted Case Number CHAR 32 X X X X X X X X X X X\n5 MAX_YR_DT",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

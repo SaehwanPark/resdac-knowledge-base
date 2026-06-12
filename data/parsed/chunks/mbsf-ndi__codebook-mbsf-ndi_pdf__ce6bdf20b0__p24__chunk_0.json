@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p24__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 24,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n19 \nICD_CODE_358 \nLABEL: \n358 ICD-10 Cause of Death Recodes \nDESCRIPTION: This field groups (or recodes) the NDI ICD-10 code cause of death into 358 categories. The list reflects \n358 selected causes of death. \nSHORT NAME: ICD_CODE_358 \nLONG NAME: ICD_CODE_358 \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI)",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_95",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "FEE_FOR_SRVC_IND_05 Recipient indicator (MAX TOS 05 - intermediate care facility) CHAR 1 X X X X X X X X X X X\n440 FFS_CLM_CNT_05 Claim count (MAX TOS 05) NUM 6 X X X X X X X X X X X\n441 FFS_PYMT_AMT_05 Medicaid payment amount (MAX TOS 05) NUM 12 X X X X X X X X X X X\n442 FFS_CHRG_AMT_05 Charge amount (MAX TOS 05) NUM 12 X X X X X X X X X X X\n443 FFS_TP_AMT_05 Third party payment amount (MAX TOS 05) NUM 12 X X X X X X X X X X X\n444 ENCTR_REC_CNT_05 Encounter record count (MAX TOS 05) NUM 5 X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

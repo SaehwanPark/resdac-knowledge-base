@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-provider__data-documentation__a061a7bd7a__chunk_1",
+  "source_document": "data/raw/html/documentation_page/a061a7bd7ac896c6f3d6062bbc93d6aef05f2850.html",
+  "page": null,
+  "text": "locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| ACO_ID | Pioneer ACO Identifier | \n| CLNDR_YR | Year of ACO Source Record | \n| PRVDR_CLASS | Provider Class | \n| ORG_TIN | Billing TIN of ACO Participant | \n| ORG_NPI | National Provider Identifier (NPI) for Organization | \n| ORG_CCN | CMS Certification Number | \n| IND_NPI | NPI for Practitioner | \n| ORG_NAME | Legal Business Name Associated with the ACO Participant TIN | \n| LAST_NAME | Last Name",
+  "dataset": "ngaco-provider",
+  "url": "https://resdac.org/cms-data/files/ngaco-provider/data-documentation"
+}

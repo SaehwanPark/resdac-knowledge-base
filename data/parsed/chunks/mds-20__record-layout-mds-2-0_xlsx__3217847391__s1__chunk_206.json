@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_206",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- musculoskeletal - pathological bone fracture. 0 = No, 1 = Yes, \"-\" = Unknown.\n309 I1PP I1PP_CANCER (I1PP) Cancer CHAR 1 Disease diagnosis: diseases - other - cancer. 0 = No, 1 = Yes, \"-\" = Unknown.\n310 I1Q I1Q_ALZHEIMER (I1Q)Alzheimers Disease CHAR 1 Disease diagnosis: diseases - neurological - Alzheimer's disease. 0 = No, 1 = Yes, \"-\" = Unknown.\n311 I1QQ I1QQ_RENAL_FAIL (I1QQ) Renal Failure CHAR 1 Disease diagnosis: diseases - other - renal failure. 0 = No, 1 = Yes, \"-\" = Unknown.\n312 I1R",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

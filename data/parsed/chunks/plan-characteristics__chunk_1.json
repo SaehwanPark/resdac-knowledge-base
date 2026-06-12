@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__chunk_1",
+  "source_document": "data/raw/html/dataset_page/8b7cb3b3ddc436da3e8aba213676753e9c338587.html",
+  "page": null,
+  "text": "plan ID to previous years\n- Demonstration type\n- Special needs plan type\n- Linkage variables to the PDE and to each of the Plan Characteristic File sub-files:\n- Plan Contract ID, Plan Benefit Package ID (use in combination to link to specific plan)\n\nWhy do researchers request this file?\n- Studies that compare medication usage and clinical outcomes by plan benefits\nSpecial considerations\n- Plan identifiers are encrypted in the data prior to the CY2015 file, so researchers must use this file to",
+  "dataset": "plan-characteristics",
+  "url": "https://resdac.org/cms-data/files/plan-characteristics?page=2"
+}

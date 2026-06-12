@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_26",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "DME_CHRG_AMT Durable Medical Equipment (DME) charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nUDME_AMT USED_DME_CHRG_AMT Used Durable Medical Equipment (DME) charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nPHYTHAMT PHYS_THRPY_CHRG_AMT Physical therapy charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nOCPTLAMT OCPTNL_THRPY_CHRG_AMT Occupational therapy charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nSPCH_AMT SPCH_PTHLGY_CHRG_AMT Speech pathology",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

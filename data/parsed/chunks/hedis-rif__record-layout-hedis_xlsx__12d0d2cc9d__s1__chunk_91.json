@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_91",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Dnmtr Ind NUM 3 — — — 208 206\nSAA_NMRTR_IND Adherence to Antipsychotics for Individuals With Schizophrenia (SAA) Nmrtr Ind NUM 3 — — — 209 207\nAHU_DNMTR_IND Acute Hospital Utilization (AHU) Denominator Indicator NUM 3 — 179 — — —\nAHU_DNMTR_NOUTLIER_IND Acute Hospital Utilization (AHU) Denominator for Non-Outliers Indicator NUM 3 — 180 221 210 208\nAHU_DNMTR_OUTLIER_IND Acute Hospital Utilization (AHU) Denominator for Outliers Indicator NUM 3 — 181 222 211 209\nAHU_IP_SRGRY_DSCHRG_CNT Acute",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

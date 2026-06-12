@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p10__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 10,
+  "text": "A. 2025 MCAHPS Analytic Data Contents\n10\nThe following table provides additional details for a subset of variables from the preceding variable contents table\nVariable\nDetailed Variable Description\nMCAHPS_ID\nRandomly assigned identiﬁer used to de-identify beneﬁciaries within a single MCAHPS year\nThis variable cannot be used to merge beneﬁciaries across other years of MCAHPS data\nSU_TYPE\nIndicates to which survey the beneﬁciary responded (MA-PD, MA-Only, PDP, or FFS)\nSA_TYPE\nIndicates to which",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

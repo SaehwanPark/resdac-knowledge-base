@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_246",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "M0300G1 Unstageable Pressure Ulcers DTI Discharge Number CHAR 1 The number of unstageable pressure ulcers at discharge with suspected deep tissue injury in evolution.\n216 UNSTGBL_ULCR_DTI_PU_NUM UNSTGBL_ULCR_DTI_PU_NUM M0300G2 Unstageable Pressure Ulcers DTI Disch were Unst DTI PU Admission CHAR 1 The number of unstageable pressure ulcers at discharge with suspected deep tissue injury in evolution that were unstageable at admission.\n217 HLG_STG_1_ULCR_NUM HLG_STG_1_ULCR_NUM M0900A Healed Stage",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

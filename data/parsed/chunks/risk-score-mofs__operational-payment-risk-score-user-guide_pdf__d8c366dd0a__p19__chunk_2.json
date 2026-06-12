@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p19__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 19,
+  "text": "algorithm. The CCW team builds the SDA on the CCW production server, downloads it to a desktop PC, and burns it to \na CD, DVD, or USB hard drive depending on the size of the files. \nTable 9 lists the format and descriptions of each of these SDA contents. Table 10 lists the file names of the data \navailable within the CCW VRDC. \nTable 9. Format and naming convention for the CCW physically delivered files \nFile \nFile description \nREADME_FIRST_REQ232_2019.txt \nThis is a text file that describes",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

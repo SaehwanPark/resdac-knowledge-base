@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n13 \nASC_MDCR_PMT \nLABEL: \nAmbulatory Surgery Center Medicare Payments \nDESCRIPTION: This variable is the total Medicare payments in the Part B ambulatory surgery center (ASC) setting for a \ngiven year. ASC claims are a subset of the claim lines in the Part B carrier data file. \nThe ASC claim lines are identified by the claim lines where the LINE_CMS_TYPE_SRVC_CD = “F.” The \ntotal",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

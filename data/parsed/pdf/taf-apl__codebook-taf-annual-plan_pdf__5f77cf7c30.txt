@@ -1,0 +1,3399 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: 
+T-MSIS Analytic Files (TAF) Annual Managed Care 
+Plan (APL) Research Identifiable Files (RIFs) 
+OCTOBER 2022 │ VERSION 1.1
+
+
+  
+This page intentionally left blank. 
+
+
+  
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+October 2022 
+K. Schneider 
+Added new values for MC_ENT_ACRDTN_ORG_CD_1-5 and 
+MC_PLAN_OPRTG_AUTHRTY_CD. Added 8 new variables to the 
+APL base file to account for the new operating authority values: 
+OPRTG_AUTHRTY_1915AJ_IND, 
+OPRTG_AUTHRTY_1932A_1915J_IND, 
+OPRTG_AUTHRTY_1915BJ_IND, 
+OPRTG_AUTHRTY_1115_1915J_IND, 
+OPRTG_AUTHRTY_1915AK_IND, 
+OPRTG_AUTHRTY_1932A_1915K_IND, 
+OPRTG_AUTHRTY_1915BK_IND, and 
+OPRTG_AUTHRTY_1115_1915K_IND. 
+1.1 
+June 2021 
+K. Schneider 
+K. Russell 
+Initial release of codebook 
+1.0 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+ii 
+Tips on Navigating the Codebook 
+The Annual Managed Care Plan (APL) Transformed Medicaid Statistical Information System (T-MSIS) Analytic File (TAF) 
+research file is an annual file that Centers for Medicare & Medicaid Services (CMS) creates from the monthly managed 
+care plan data. The APL TAF contain information about each Medicaid and Children’s Health Insurance Program (CHIP) 
+managed care plan/entity that was active, as reflected by the effective and end dates, during the calendar year. The 
+APL includes but is not limited to: managed care plan name, type of managed care plan, the various service locations 
+of the managed care plan, the various service areas in which the managed care plan operates, operating authorities, 
+and eligibility groups authorized to enroll in each plan.  
+Each APL TAF is comprised of five files —a base file and four supplemental files: 1) location, 2) operating authority, 3) 
+population enrolled, and 4) service area. All five files can be linked together using unique keys that are constructed 
+based on various data elements. 
+This document is a detailed codebook that describes each variable in the TAF APL research files. Because the files have 
+such a large number of variables, we have included several ways for users to quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used. 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents.
+
+
+  
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links: 
+ 
+Variable Details ......................................................................................................................................................... 1 
+CCW_APL_LINK_KEY ....................................................................................................................................................... 1 
+CCW_LD_DT .................................................................................................................................................................... 2 
+CHIP_CVRG_CHLDRN_POP_IND ..................................................................................................................................... 3 
+CHIP_OPTN_CVRG_PRGNT_WMN_POP_IND ................................................................................................................. 4 
+CHIP_OPTNS_CVRG_CHLDRN_POP_IND ........................................................................................................................ 5 
+CMS_RGN ....................................................................................................................................................................... 6 
+DA_RUN_ID ..................................................................................................................................................................... 7 
+MC_ENT_ACRDTN_ACHVMT_DT_1 ................................................................................................................................ 8 
+MC_ENT_ACRDTN_ACHVMT_DT_2 ................................................................................................................................ 8 
+MC_ENT_ACRDTN_ACHVMT_DT_3 ................................................................................................................................ 8 
+MC_ENT_ACRDTN_ACHVMT_DT_4 ................................................................................................................................ 8 
+MC_ENT_ACRDTN_ACHVMT_DT_5 ................................................................................................................................ 8 
+MC_ENT_ACRDTN_END_DT_1 ....................................................................................................................................... 9 
+MC_ENT_ACRDTN_END_DT_2 ....................................................................................................................................... 9 
+MC_ENT_ACRDTN_END_DT_3 ....................................................................................................................................... 9 
+MC_ENT_ACRDTN_END_DT_4 ....................................................................................................................................... 9 
+MC_ENT_ACRDTN_END_DT_5 ....................................................................................................................................... 9 
+MC_ENT_ACRDTN_ORG_CD_1 ..................................................................................................................................... 10 
+MC_ENT_ACRDTN_ORG_CD_2 ..................................................................................................................................... 10 
+MC_ENT_ACRDTN_ORG_CD_3 ..................................................................................................................................... 10 
+MC_ENT_ACRDTN_ORG_CD_4 ..................................................................................................................................... 10 
+MC_ENT_ACRDTN_ORG_CD_5 ..................................................................................................................................... 10 
+MC_ENT_GOVT_PCT ..................................................................................................................................................... 12 
+MC_ENT_PRFT_STUS_CD ............................................................................................................................................. 13 
+MC_PLAN_ACTV_IND_01 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_02 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_03 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_04 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_05 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_06 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_07 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_08 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_09 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_10 ............................................................................................................................................. 14 
+MC_PLAN_ACTV_IND_11 ............................................................................................................................................. 14 
+A B C D E 
+F 
+G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+iv 
+MC_PLAN_ACTV_IND_12 ............................................................................................................................................. 14 
+MC_PLAN_ADR_LINE_1 ................................................................................................................................................ 16 
+MC_PLAN_ADR_LINE_2 ................................................................................................................................................ 16 
+MC_PLAN_ADR_LINE_3 ................................................................................................................................................ 16 
+MC_PLAN_CBSA_CD ..................................................................................................................................................... 17 
+MC_PLAN_CITY ............................................................................................................................................................. 18 
+MC_PLAN_CNTRCT_ADDTNL_PRD_IND ....................................................................................................................... 19 
+MC_PLAN_CNTRCT_END_DT ........................................................................................................................................ 20 
+MC_PLAN_CNTRCT_START_DT .................................................................................................................................... 21 
+MC_PLAN_CNTY_CD ..................................................................................................................................................... 22 
+MC_PLAN_ELGBL_POP_ACTV_IND_01......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_02......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_03......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_04......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_05......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_06......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_07......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_08......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_09......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_10......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_11......................................................................................................................... 23 
+MC_PLAN_ELGBL_POP_ACTV_IND_12......................................................................................................................... 23 
+MC_PLAN_ELGBLTY_GRP_POP_CD .............................................................................................................................. 25 
+MC_PLAN_ID ................................................................................................................................................................ 28 
+MC_PLAN_LCTN_ACTV_IND_01 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_02 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_03 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_04 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_05 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_06 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_07 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_08 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_09 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_10 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_11 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ACTV_IND_12 ................................................................................................................................... 29 
+MC_PLAN_LCTN_ID ...................................................................................................................................................... 31 
+MC_PLAN_NAME .......................................................................................................................................................... 32 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_01 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_02 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_03 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_04 ..................................................................................................................... 33 
+
+
+  
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+v 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_05 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_06 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_07 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_08 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_09 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_10 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_11 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_12 ..................................................................................................................... 33 
+MC_PLAN_OPRTG_AUTHRTY_CD ................................................................................................................................. 35 
+MC_PLAN_PGM_CD ..................................................................................................................................................... 36 
+MC_PLAN_REIMBRSMT_TYPE_CD ............................................................................................................................... 37 
+MC_PLAN_REIMBRSMT_TYPE_CTGRY_CD ................................................................................................................... 38 
+MC_PLAN_SAREA_ACTV_IND_01 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_02 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_03 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_04 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_05 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_06 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_07 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_08 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_09 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_10 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_11 ................................................................................................................................. 39 
+MC_PLAN_SAREA_ACTV_IND_12 ................................................................................................................................. 39 
+MC_PLAN_SAREA_CD ................................................................................................................................................... 41 
+MC_PLAN_SAREA_NAME ............................................................................................................................................. 42 
+MC_PLAN_STATE_CD ................................................................................................................................................... 43 
+MC_PLAN_STATEWIDE_IND ......................................................................................................................................... 44 
+MC_PLAN_TYPE_CD ..................................................................................................................................................... 45 
+MC_PLAN_TYPE_CTGRY_CD ......................................................................................................................................... 46 
+MC_PLAN_WVR_ID ...................................................................................................................................................... 47 
+MC_PLAN_ZIP_CD ........................................................................................................................................................ 48 
+MDCD_MAND_CVRG_ABD_POP_IND .......................................................................................................................... 49 
+MDCD_MAND_CVRG_ADLT_POP_IND ......................................................................................................................... 50 
+MDCD_MDCLY_NDY_CVRG_ABD_POP_IND ................................................................................................................ 51 
+MDCD_MDCLY_NDY_CVRG_ADLT_POP_IND ............................................................................................................... 52 
+MDCD_OPTNL_CVRG_ABD_POP_IND .......................................................................................................................... 53 
+MDCD_OPTNL_CVRG_ADLT_POP_IND ......................................................................................................................... 54 
+OPRTG_AUTHRTY_1115_DEMO_WVR_IND ................................................................................................................. 57 
+OPRTG_AUTHRTY_1902A70_NEMT_IND ..................................................................................................................... 58 
+OPRTG_AUTHRTY_1905T_PCCM_IND .......................................................................................................................... 59 
+OPRTG_AUTHRTY_1915A_IND ..................................................................................................................................... 60 
+
+
+  
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+vi 
+OPRTG_AUTHRTY_1915AC_WVR_IND ......................................................................................................................... 61 
+OPRTG_AUTHRTY_1915AI_IND .................................................................................................................................... 62 
+OPRTG_AUTHRTY_1915B_WVR_IND ........................................................................................................................... 65 
+OPRTG_AUTHRTY_1915BC_WVR_IND ......................................................................................................................... 66 
+OPRTG_AUTHRTY_1915BI_IND .................................................................................................................................... 67 
+OPRTG_AUTHRTY_1932A_1915C_IND ......................................................................................................................... 70 
+OPRTG_AUTHRTY_1932A_1915I_IND .......................................................................................................................... 71 
+OPRTG_AUTHRTY_1932A_SPO_IND ............................................................................................................................ 74 
+OPRTG_AUTHRTY_1937_ABP_IND ............................................................................................................................... 75 
+OPRTG_AUTHRTY_1945_HLTH_HOME_IND ................................................................................................................ 76 
+OPRTG_AUTHRTY_PACE_IND ....................................................................................................................................... 77 
+PL_VRSN ....................................................................................................................................................................... 78 
+RFRNC_YR ..................................................................................................................................................................... 79 
+SPLMTL_OPRTG_AUTHRTY ........................................................................................................................................... 80 
+SPLMTL_POP_ENRLMT ................................................................................................................................................. 81 
+SPLMTL_SAREA ............................................................................................................................................................. 82 
+SPLMTL_SRVC_ADDR_LCTN ......................................................................................................................................... 83 
+STATE_CD ..................................................................................................................................................................... 84 
+SUBMTG_STATE_CD ..................................................................................................................................................... 85 
+UNK_ELGBLTY_GRP_POP_IND ..................................................................................................................................... 86 
+WVR_1115_EXPNSN_CVRG_POP_IND ......................................................................................................................... 87 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Annual Managed Care Plan (APL) file. Each entry 
+contains variable details to facilitate understanding and use of the variables. 
+CCW_APL_LINK_KEY 
+LABEL: 
+CCW Key to Link APL base Record to Related Supplement Records 
+DESCRIPTION: CCW Key to Link Annual Managed Care Plan (APL) Base record to corresponding Supplemental file 
+records. 
+SHORT NAME:  CCW_APL_LINK_KEY 
+LONG NAME:  CCW_APL_LINK_KEY 
+TYPE: 
+NUM 
+LENGTH:  
+15 
+FILE(S):  
+All Annual Managed Care Plan files 
+SOURCE:  
+CCW (derived) 
+VALUES:  
+Alphanumeric character string (e.g., 123456789) 
+COMMENT: 
+The CCW_APL_LINK_KEY identifies each unique combination of submitting state entity code 
+(SUBMTG_STATE_CD) and state plan identification number (MC_PLAN_ID). This is the unique key for 
+linking all records in the APL base file to the APL supplemental files. Please note that there can be 
+more than 1 record in the APL supplemental files for each CCW_APL_LINK_KEY. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+2 
+CCW_LD_DT 
+LABEL: 
+CCW Load Date 
+DESCRIPTION: The Date Source file was Loaded to the CCW. 
+SHORT NAME:  CCW_LD_DT 
+LONG NAME:  CCW_LD_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+APL base 
+SOURCE:  
+CCW (derived) 
+VALUES:  
+Date (numeric, system dependent) e.g., 31DEC2015 
+COMMENT: 
+States may resubmit T-MSIS data to CMS. This date indicates when the TAF file was obtained by CCW. 
+As a result, CCW load dates may not be the same across states for a given TAF RIF service year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+3 
+CHIP_CVRG_CHLDRN_POP_IND 
+LABEL: 
+Eligible Population Indicator: CHIP Coverage Children — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the CHIP Coverage — Children eligibility 
+groups; ever in the calendar year. 
+SHORT NAME:  CHIP_CVRG_CHLDRN_POP_IND 
+LONG NAME:  CHIP_CVRG_CHLDRN_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S): 
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of 61 (Targeted Low-Income Children), 62 (Deemed 
+Newborn) or 63 (Children Ineligible for Medicaid Due to Loss of Income Disregards) in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+4 
+CHIP_OPTN_CVRG_PRGNT_WMN_POP_IND 
+LABEL: 
+Eligible Population Indicator: CHIP Additional Coverage Options for Pregnant Women — Ever in 
+Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the CHIP Additional Options for Coverage - 
+Pregnant Women eligibility groups; ever in the calendar year. 
+SHORT NAME:  CHIP_OPTN_CVRG_PRGNT_WMN_POP_IND 
+LONG NAME:  CHIP_OPTN_CVRG_PRGNT_WMN_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This variable will never contain NULL values. 
+This data element is triggered by a value of 67 (Targeted Low-Income Pregnant Women), or 68 
+(Pregnant Women with Access to Public Employee Coverage) in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+5 
+CHIP_OPTNS_CVRG_CHLDRN_POP_IND 
+LABEL: 
+Eligible Population Indicator: CHIP Additional Coverage Options for Children — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the CHIP Additional Options for Coverage - 
+Children eligibility groups; ever in the calendar year. 
+SHORT NAME:  CHIP_OPTNS_CVRG_CHLDRN_POP_IND 
+LONG NAME:  CHIP_OPTNS_CVRG_CHLDRN_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S): 
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This variable will never contain NULL values. 
+This data element is triggered by a value of 64 (Coverage from Conception to Birth), 65 (Children with 
+Access to Public Employee Coverage), or 66 (Children Eligible for Dental Only Supplemental Coverage) 
+in any instance of MC_PLAN_ELGBLTY_GRP_POP_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+6 
+CMS_RGN 
+LABEL: 
+CMS Region for Submitting State 
+DESCRIPTION: Submitting State FIPS Code grouped into the 10 CMS Regions. 
+SHORT NAME:  CMS_RGN 
+LONG NAME:  CMS_RGN 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+1 = Region 1: CT, MA, ME, NH, RI, VT 
+2 = Region 2: NJ, NY, PR, VI 
+3 = Region 3: DE, DC, MD, PA, VA, WV 
+4 = Region 4: AL, FL, GA, KY, MS, NC, SC, TN 
+5 = Region 5: IL, IN, MI, MN, OH, WI 
+6 = Region 6: AR, LA, NM, OK, TX 
+7 = Region 7: IA, KS, MO, NE 
+8 = Region 8: CO, MT, ND, SD, UT, WY 
+9 = Region 9: AZ, CA, HI, NV, AS, GU, MP 
+10 = Region 10: AK, ID, OR, WA 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+7 
+DA_RUN_ID 
+LABEL: 
+TAF Production Run Identifier (unique for each TAF run) 
+DESCRIPTION: A unique identifier that identifies the TAF production run that produced the TAF file. 
+SHORT NAME:  DA_RUN_ID 
+LONG NAME:  DA_RUN_ID 
+TYPE: 
+NUM 
+LENGTH:  
+6 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Numeric string (e.g., 4260) 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+8 
+MC_ENT_ACRDTN_ACHVMT_DT_1 
+MC_ENT_ACRDTN_ACHVMT_DT_2 
+MC_ENT_ACRDTN_ACHVMT_DT_3 
+MC_ENT_ACRDTN_ACHVMT_DT_4 
+MC_ENT_ACRDTN_ACHVMT_DT_5 
+LABEL: 
+Managed Care Entity Accreditation Achievement Date — Accrediting Organization (1–5 Occurrence) 
+DESCRIPTION: Assigns the date accreditation was achieved for every accreditation organization record. 
+SHORT NAME:  
+MC_ENT_ACRDTN_ACHVMT_DT_1 
+MC_ENT_ACRDTN_ACHVMT_DT_2 
+MC_ENT_ACRDTN_ACHVMT_DT_3 
+MC_ENT_ACRDTN_ACHVMT_DT_4 
+MC_ENT_ACRDTN_ACHVMT_DT_5 
+LONG NAME:  
+MC_ENT_ACRDTN_ACHVMT_DT_1 
+MC_ENT_ACRDTN_ACHVMT_DT_2 
+MC_ENT_ACRDTN_ACHVMT_DT_3 
+MC_ENT_ACRDTN_ACHVMT_DT_4 
+MC_ENT_ACRDTN_ACHVMT_DT_5 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Date (numeric, system dependent) e.g., 31DEC2015 
+Null/missing = not applicable (no associated accreditation organization 
+(MC_ENT_ACRDTN_ORG_CD_#) 
+COMMENT: 
+This data element is created from each submitted value reported in T-MSIS (up to a maximum of 5 
+values). They are ordered using the MC_ENT_ACRDTN_ORG_CD value (lowest value is considered 
+MC_ENT_ACRDTN_ORG_CD _1); the associated MC_ENT_ACRDTN_ACHVMT_DT and 
+MC_ENT_ACRDTN _END_DT use the same numeric suffix. That is, the 
+MC_ENT_ACRDTN_ACHVMT_DT_1 is the accreditation achievement start date associated with 
+MC_ENT_ACRDTN_ORG_CD_1 and MC_ENT_ACRDTN_ACHVMT_DT_2 is the achievement start date 
+associated with MC_ENT_ACRDTN_ORG_CD_2. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+9 
+MC_ENT_ACRDTN_END_DT_1 
+MC_ENT_ACRDTN_END_DT_2 
+MC_ENT_ACRDTN_END_DT_3 
+MC_ENT_ACRDTN_END_DT_4 
+MC_ENT_ACRDTN_END_DT_5 
+LABEL: 
+Managed Care Entity Accreditation End Date — Accrediting Organization (1–5 Occurrence) 
+DESCRIPTION: Assigns the date accreditation ended for every accreditation organization record. 
+SHORT NAME:  
+MC_ENT_ACRDTN_END_DT_1 
+MC_ENT_ACRDTN_END_DT_2 
+MC_ENT_ACRDTN_END_DT_3 
+MC_ENT_ACRDTN_END_DT_4 
+MC_ENT_ACRDTN_END_DT_5 
+LONG NAME:  
+MC_ENT_ACRDTN_END_DT_1 
+MC_ENT_ACRDTN_END_DT_2 
+MC_ENT_ACRDTN_END_DT_3 
+MC_ENT_ACRDTN_END_DT_4 
+MC_ENT_ACRDTN_END_DT_5 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Date (numeric, system dependent) 
+31DEC9999 = (default value) no ending date/still active 
+Null/missing = not applicable (no associated accreditation start date MC_ENT_ACRDTN_START_DT) 
+COMMENT: 
+This data element is created from each submitted value reported in T-MSIS (up to a maximum of 5 
+values). They are ordered using the MC_ENT_ACRDTN_ORG_CD value (lowest value is considered 
+MC_ENT_ACRDTN_ORG_CD _1) ; the associated MC_ENT_ACRDTN_ACHVMT_DT and 
+MC_ENT_ACRDTN _END_DT use the same numeric suffix. That is, the MC_ENT_ACRDTN_END_DT_1 is 
+the end date associated with MC_ENT_ACRDTN_ACHVMT_DT_1 and MC_ENT_ACRDTN_END_DT_2 is 
+the end date associated with MC_ENT_ACRDTN_ORG_CD_2. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+10 
+MC_ENT_ACRDTN_ORG_CD_1 
+MC_ENT_ACRDTN_ORG_CD_2 
+MC_ENT_ACRDTN_ORG_CD_3 
+MC_ENT_ACRDTN_ORG_CD_4 
+MC_ENT_ACRDTN_ORG_CD_5 
+LABEL: 
+Managed Care Entity — Accrediting Organization (1–5 Occurrence) 
+DESCRIPTION: Accreditations by an organization for this managed care entity. 
+SHORT NAME:  
+MC_ENT_ACRDTN_ORG_CD_1 
+MC_ENT_ACRDTN_ORG_CD_2 
+MC_ENT_ACRDTN_ORG_CD_3 
+MC_ENT_ACRDTN_ORG_CD_4 
+MC_ENT_ACRDTN_ORG_CD_5 
+LONG NAME:  
+MC_ENT_ACRDTN_ORG_CD_1 
+MC_ENT_ACRDTN_ORG_CD_2 
+MC_ENT_ACRDTN_ORG_CD_3 
+MC_ENT_ACRDTN_ORG_CD_4 
+MC_ENT_ACRDTN_ORG_CD_5 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+01 = National Committee for Quality Assurance 
+— excellent 
+02 = National Committee for Quality Assurance 
+— commendable 
+03 = National Committee for Quality Assurance 
+— provisional 
+05 = URAC — full 
+06 = URAC — conditional 
+07 = URAC — provisional 
+08 = Accreditation Association for Ambulatory 
+Health Care (AAAHC) — 3 years 
+11 = Not accredited 
+12 = Other 
+13 = National Committee for Quality Assurance 
+— accredited 
+14 = National Committee for Quality Assurance 
+— interim 
+15 = National Committee for Quality Assurance 
+— denied 
+16 = JCAHO (Joint Commission on 
+Accreditation of Healthcare 
+Organizations) 
+Null/missing 
+ 
+COMMENT: 
+This data element is created from each submitted value reported in T-MSIS (up to a maximum of 5 
+values). They are ordered using the MC_ENT_ACRDTN_ORG_CD (lowest value is considered 
+MC_ENT_ACRDTN_ORG_CD _1); the associated MC_ENT_ACRDTN_ACHVMT_DT and 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+11 
+MC_ENT_ACRDTN _END_DT use the same numeric suffix. There can be more than one entry for an 
+ACRDTN_ORG if more than one date range was found on the monthly records. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+12 
+MC_ENT_GOVT_PCT 
+LABEL: 
+Managed Care Entity Percent of Revenue from Medicare and Medicaid — Latest in Year 
+DESCRIPTION: The percentage of the managed care entity’s total revenue that is derived from contracts with 
+Medicare (Parts C and D) in the state and State Medicaid agency contract(s) in the prior calendar year; 
+most recent in the calendar year. 
+SHORT NAME:  MC_ENT_GOVT_PCT 
+LONG NAME:  MC_ENT_GOVT_PCT 
+TYPE: 
+NUM 
+LENGTH:  
+3 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Values are 0 through 100 or Null/missing  
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year).  
+Guidance to plans was to include Medicaid and Medicare in calculation of percentage of business in 
+public programs for IRS health insurer tax exemption as required in the Affordable Care Act (ACA). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+13 
+MC_ENT_PRFT_STUS_CD 
+LABEL: 
+Managed Care Entity Profit Status Code — Latest in Year 
+DESCRIPTION: A code denoting the profit status of the managed care entity; most recent in the calendar year. 
+SHORT NAME:  MC_ENT_PRFT_STUS_CD 
+LONG NAME:  MC_ENT_PRFT_STUS_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+01 = 501(C)(3) non-profits 
+02 = For-profit, closely held 
+03 = For-profit, publicly traded 
+04 = Other 
+Null/missing = unknown/missing 
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+14 
+MC_PLAN_ACTV_IND_01 
+MC_PLAN_ACTV_IND_02 
+MC_PLAN_ACTV_IND_03 
+MC_PLAN_ACTV_IND_04 
+MC_PLAN_ACTV_IND_05 
+MC_PLAN_ACTV_IND_06 
+MC_PLAN_ACTV_IND_07 
+MC_PLAN_ACTV_IND_08 
+MC_PLAN_ACTV_IND_09 
+MC_PLAN_ACTV_IND_10 
+MC_PLAN_ACTV_IND_11 
+MC_PLAN_ACTV_IND_12 
+LABEL: 
+Managed Care Plan Active Indicator — January through December 
+DESCRIPTION: A flag to indicate the managed care plan ID specified in the MC_PLAN_ID variable was active in the 
+given month. Each of 12 months. 
+SHORT NAME:  
+MC_PLAN_ACTV_IND_01 
+MC_PLAN_ACTV_IND_02 
+MC_PLAN_ACTV_IND_03 
+MC_PLAN_ACTV_IND_04 
+MC_PLAN_ACTV_IND_05 
+MC_PLAN_ACTV_IND_06 
+MC_PLAN_ACTV_IND_07 
+MC_PLAN_ACTV_IND_08 
+MC_PLAN_ACTV_IND_09 
+MC_PLAN_ACTV_IND_10 
+MC_PLAN_ACTV_IND_11 
+MC_PLAN_ACTV_IND_12 
+LONG NAME:  
+MC_PLAN_ACTV_IND_01 
+MC_PLAN_ACTV_IND_02 
+MC_PLAN_ACTV_IND_03 
+MC_PLAN_ACTV_IND_04 
+MC_PLAN_ACTV_IND_05 
+MC_PLAN_ACTV_IND_06 
+MC_PLAN_ACTV_IND_07 
+MC_PLAN_ACTV_IND_08 
+MC_PLAN_ACTV_IND_09 
+MC_PLAN_ACTV_IND_10 
+MC_PLAN_ACTV_IND_11 
+MC_PLAN_ACTV_IND_12 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+15 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+16 
+MC_PLAN_ADR_LINE_1 
+MC_PLAN_ADR_LINE_2 
+MC_PLAN_ADR_LINE_3 
+LABEL: 
+Managed Care Plan Location — Street Address (1–3) 
+DESCRIPTION: The street address (for lines 1–3) of the managed care service location associated with a unique 
+managed care service location ID. 
+SHORT NAME:  MC_PLAN_ADR_LINE_1 
+MC_PLAN_ADR_LINE_2 
+MC_PLAN_ADR_LINE_3 
+LONG NAME:  MC_PLAN_ADR_LINE_1 
+MC_PLAN_ADR_LINE_2 
+MC_PLAN_ADR_LINE_3 
+TYPE: 
+CHAR 
+LENGTH:  
+90 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Street address, numbers, and spaces 
+COMMENT: 
+The managed care organization (MCO) service location may have up to three lines for describing the 
+street address. Note that there are separate fields for the MCO city (MC_PLAN_CITY) and state 
+(MC_PLAN_STATE_CD). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+17 
+MC_PLAN_CBSA_CD 
+LABEL: 
+Managed Care Plan Core-Based Statistical Area Code for Service Area 
+DESCRIPTION: A code signifying whether the Managed Care Organization's (MCO) service area falls into one or more 
+metropolitan or micropolitan statistical areas; most recent in the calendar year. 
+Metropolitan and micropolitan statistical areas (metro and micro areas) are geographic entities 
+defined by the U.S. Office of Management and Budget (OMB). The term "Core Based Statistical Area" 
+(CBSA) is a collective term for both metro and micro areas. A metro area contains a core urban area of 
+50,000 or more population, and a micro area contains an urban core of at least 10,000 (but less than 
+50,000) population. Each metro or micro area consists of one or more counties and includes the 
+counties containing the core urban area, as well as any adjacent counties that have a high degree of 
+social and economic integration (as measured by commuting to work) with the urban core. 
+SHORT NAME:  MC_PLAN_CBSA_CD 
+LONG NAME:  MC_PLAN_CBSA_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+1 = The MCO’s service area falls partially or entirely inside one or more metropolitan areas. 
+2 = The MCO’s service area falls partially or entirely inside one or more micropolitan areas, but not 
+within any metropolitan areas. 
+3 = The MCO’s service area falls entirely outside of all metropolitan and micropolitan areas. 
+Null/missing = unknown/missing 
+COMMENT: 
+The U.S. Office of Management and Budget (OMB) defines metropolitan or micropolitan statistical 
+areas based on published standards. The standards for defining the areas are reviewed and revised 
+once every ten years, prior to each decennial census. Between censuses, the definitions are updated 
+annually to reflect the most recent Census Bureau population estimates. The current definitions are as 
+of August 2017. 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+18 
+MC_PLAN_CITY 
+LABEL: 
+Managed Care Plan Location — City 
+DESCRIPTION: The city of the managed care service location associated with a unique managed care service location 
+ID. 
+SHORT NAME:  MC_PLAN_CITY 
+LONG NAME:  MC_PLAN_CITY 
+TYPE: 
+CHAR 
+LENGTH:  
+42 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+City name 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+19 
+MC_PLAN_CNTRCT_ADDTNL_PRD_IND 
+LABEL: 
+Managed Care Plan Contract Additional Period Indicator 
+DESCRIPTION: This flag indicates whether the managed care plan has additional contract time periods not continuous 
+to the range reported on the Base file, relevant to this calendar year. 
+SHORT NAME:  MC_PLAN_CNTRCT_ADDTNL_PRD_IND 
+LONG NAME:  MC_PLAN_CNTRCT_ADDTNL_PRD_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes (an additional contract time period) 
+COMMENT: 
+If the T-MSIS records included any managed care contract effective and end date ranges that were not 
+continuous with the APL base record’s continuous managed care contract effective and end date (i.e., 
+the MC_PLAN_CNTRCT_START_DT and MC_PLAN_CNTRCT_END_DT), then this flag will be equal to 1. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+20 
+MC_PLAN_CNTRCT_END_DT 
+LABEL: 
+Managed Care Plan Contract End Date 
+DESCRIPTION: The expiration date of the managed care contract period with the state. 
+SHORT NAME:  MC_PLAN_CNTRCT_END_DT 
+LONG NAME:  MC_PLAN_CNTRCT_END_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Date (numeric, system dependent) 
+31DEC9999 = (default value) no ending date/still active 
+Null/missing 
+COMMENT: 
+The APL base file contains a continuous managed care contract date range that is constructed from 
+one or more contract effective/end dates, if necessary.  
+This variable is derived from the monthly managed care plan TAF contract start and end date pairs and 
+identifies the earliest contract start date range continuous with the date range on the record with the 
+last-best MC_PLAN_CNTRCT_END_DT. The algorithm starts with the date range on that record and 
+works backwards. 
+If the APL base variable MC_PLAN_CNTRCT_ADDTNL_PRD_IND equals 1, there are contract dates that 
+are not within the date range MC_PLAN_CNTRCT_START_DT to MC_PLAN_CNTRCT_END_DT. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+21 
+MC_PLAN_CNTRCT_START_DT 
+LABEL: 
+Managed Care Plan Contract Start Date 
+DESCRIPTION: The start date of the managed care contract period with the state. 
+SHORT NAME:  MC_PLAN_CNTRCT_START_DT 
+LONG NAME:  MC_PLAN_CNTRCT_START_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Date (numeric, system dependent) e.g., 31DEC2015 
+COMMENT: 
+The APL base file contains a continuous managed care contract date range that is constructed from 
+one or more contract effective/end dates, if necessary.  
+This variable is derived from the monthly managed care plan TAF contract start and end date pairs and 
+identifies the earliest contract start date range continuous with the date range on the record with the 
+last-best MC_PLAN_CNTRCT_END_DT. The algorithm starts with the date range on that record and 
+works backwards. 
+If the APL base variable MC_PLAN_CNTRCT_ADDTNL_PRD_IND equals 1, there are contract dates that 
+are not within the date range MC_PLAN_CNTRCT_START_DT to MC_PLAN_CNTRCT_END_DT. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+22 
+MC_PLAN_CNTY_CD 
+LABEL: 
+Managed Care Plan Location — County (FIPS) Code 
+DESCRIPTION: The county FIPS code for the managed care plan service location associated with a unique managed 
+care service location ID.  
+SHORT NAME:  MC_PLAN_CNTY_CD 
+LONG NAME:  MC_PLAN_CNTY_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+4 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Three digit numeric, with leading zeros (e.g., 087) 
+https://www.nber.org/data/ssa-fips-state-county-crosswalk.html 
+COMMENT: 
+Codes represent FIPS county codes. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+23 
+MC_PLAN_ELGBL_POP_ACTV_IND_01 
+MC_PLAN_ELGBL_POP_ACTV_IND_02 
+MC_PLAN_ELGBL_POP_ACTV_IND_03 
+MC_PLAN_ELGBL_POP_ACTV_IND_04 
+MC_PLAN_ELGBL_POP_ACTV_IND_05 
+MC_PLAN_ELGBL_POP_ACTV_IND_06 
+MC_PLAN_ELGBL_POP_ACTV_IND_07 
+MC_PLAN_ELGBL_POP_ACTV_IND_08 
+MC_PLAN_ELGBL_POP_ACTV_IND_09 
+MC_PLAN_ELGBL_POP_ACTV_IND_10 
+MC_PLAN_ELGBL_POP_ACTV_IND_11 
+MC_PLAN_ELGBL_POP_ACTV_IND_12 
+LABEL: 
+Managed Care Plan Eligible Population Active Indicator — January through December 
+DESCRIPTION: A flag to indicate the managed care entity authorized to enroll the Medicaid population specified in 
+the MC_PLAN_ELGBLTY_GRP_POP_CD variable was active in the given month. Each of 12 months. 
+SHORT NAME:  
+MC_PLAN_ELGBL_POP_ACTV_IND_01 
+MC_PLAN_ELGBL_POP_ACTV_IND_02 
+MC_PLAN_ELGBL_POP_ACTV_IND_03 
+MC_PLAN_ELGBL_POP_ACTV_IND_04 
+MC_PLAN_ELGBL_POP_ACTV_IND_05 
+MC_PLAN_ELGBL_POP_ACTV_IND_06 
+MC_PLAN_ELGBL_POP_ACTV_IND_07 
+MC_PLAN_ELGBL_POP_ACTV_IND_08 
+MC_PLAN_ELGBL_POP_ACTV_IND_09 
+MC_PLAN_ELGBL_POP_ACTV_IND_10 
+MC_PLAN_ELGBL_POP_ACTV_IND_11 
+MC_PLAN_ELGBL_POP_ACTV_IND_12 
+LONG NAME:  
+MC_PLAN_ELGBL_POP_ACTV_IND_01 
+MC_PLAN_ELGBL_POP_ACTV_IND_02 
+MC_PLAN_ELGBL_POP_ACTV_IND_03 
+MC_PLAN_ELGBL_POP_ACTV_IND_04 
+MC_PLAN_ELGBL_POP_ACTV_IND_05 
+MC_PLAN_ELGBL_POP_ACTV_IND_06 
+MC_PLAN_ELGBL_POP_ACTV_IND_07 
+MC_PLAN_ELGBL_POP_ACTV_IND_08 
+MC_PLAN_ELGBL_POP_ACTV_IND_09 
+MC_PLAN_ELGBL_POP_ACTV_IND_10 
+MC_PLAN_ELGBL_POP_ACTV_IND_11 
+MC_PLAN_ELGBL_POP_ACTV_IND_12 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL Population Enrolled 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+24 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+25 
+MC_PLAN_ELGBLTY_GRP_POP_CD 
+LABEL: 
+Managed Care Plan Authorized Eligibility Group Population Code 
+DESCRIPTION: The eligibility group(s) the state is authorized to enroll in managed care plans by its operating 
+authority 
+SHORT NAME:  MC_PLAN_ELGBLTY_GRP_POP_CD 
+LONG NAME:  MC_PLAN_ELGBLTY_GRP_POP_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL Population Enrolled 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+01 = Parents and Other Caretaker Relatives 
+02 = Transitional Medical Assistance 
+03 = Extended Medicaid due to Earnings 
+04 = Extended Medicaid due to Spousal Support Collections 
+05 = Pregnant Women 
+06 = Deemed Newborns 
+07 = Infants and Children under Age 19 
+08 = Children with Title IV-E Adoption Assistance, Foster Care or Guardianship Care 
+09 = Former Foster Care Children 
+11 = Individuals Receiving SSI 
+12 = Aged, Blind and Disabled Individuals in 209(b) States 
+13 = Individuals Receiving Mandatory State Supplements 
+14 = Individuals Who Are Essential Spouses 
+15 = Institutionalized Individuals Continuously Eligible Since 1973 
+16 = Blind or Disabled Individuals Eligible in 1973 
+17 = Individuals Who Lost Eligibility for SSI/SSP Due to an Increase in OASDI Benefits in 1972 
+18 = Individuals Who Would be Eligible for SSI/SSP but for OASDI COLA increases since April 1977 
+19 = Disabled Widows and Widowers Ineligible for SSI due to Increase in OASDI 
+20 = Disabled Widows and Widowers Ineligible for SSI due to Early Receipt of Social Security 
+21 = Working Disabled under 1619(b) 
+22 = Disabled Adult Children 
+23 = Qualified Medicare Beneficiaries 
+24 = Qualified Disabled and Working Individuals 
+25 = Specified Low Income Medicare Beneficiaries 
+26 = Qualifying Individuals 
+27 = Optional Coverage of Parents and Other Caretaker Relatives 
+28 = Reasonable Classifications of Individuals under Age 21 
+29 = Children with Non-IV-E Adoption Assistance 
+30 = Independent Foster Care Adolescents 
+31 = Optional Targeted Low-Income Children 
+32 = Individuals Electing COBRA Continuation Coverage 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+26 
+33 = Individuals above 133% FPL under Age 65 
+34 = Certain Individuals Needing Treatment for Breast or Cervical Cancer 
+35 = Individuals Eligible for Family Planning Services 
+36 = Individuals with Tuberculosis 
+37 = Aged, Blind, or Disabled Individuals Eligible for but Not Receiving Cash Assistance 
+38 = Individuals Eligible for Cash Assistance except for Institutionalization 
+39 = Individuals Receiving Home and Community Based Services under Institutional Rules 
+40 = Optional State Supplement Recipients — 1634 States, and SSI Criteria States with 1616 
+Agreements 
+41 = Optional State Supplement Recipients — 209(b) States, and SSI Criteria States without 1616 
+Agreements 
+42 = Institutionalized Individuals Eligible under a Special Income Level 
+43 = Individuals participating in a PACE Program under Institutional Rules 
+44 = Individuals Receiving Hospice Care 
+45 = Qualified Disabled Children under Age 19 
+46 = Poverty Level Aged or Disabled 
+47 = Work Incentives Eligibility Group 
+48 = Ticket to Work Basic Group 
+49 = Ticket to Work Medical Improvements Group 
+50 = Family Opportunity Act Children with Disabilities 
+51 = Individuals Eligible for Home and Community-Based Services 
+52 = Individuals Eligible for Home and Community-Based Services — Special Income Level 
+53 = Medically Needy Pregnant Women 
+54 = Medically Needy Children under Age 18 
+55 = Medically Needy Children Age 18 through 20 
+56 = Medically Needy Parents and Other Caretakers 
+59 = Medically Needy Aged, Blind or Disabled 
+60 = Medically Needy Blind or Disabled Individuals Eligible in 1973 
+61 = Targeted Low-Income Children 
+62 = Deemed Newborn 
+63 = Children Ineligible for Medicaid Due to Loss of Income Disregards 
+64 = Coverage from Conception to Birth 
+65 = Children with Access to Public Employee Coverage 
+66 = Children Eligible for Dental Only Supplemental Coverage 
+67 = Targeted Low-Income Pregnant Women 
+68 = Pregnant Women with Access to Public Employee Coverage 
+69 = Individuals with Mental Health Conditions (expansion group) 
+70 = Family Planning Participants (expansion group) 
+71 = Other expansion group 
+72 = Adult Group — Individuals at or below 133% FPL,19–64, newly eligible for all states 
+73 = Adult Group — Individuals at or below 133% FPL,19–64, not newly eligible for non 1905z(3) states 
+74 = Adult Group — Individuals at or below 133% FPL,19–64, not newly eligible parent/caretaker-
+relative(s) in 1905z(3) states 
+75 = Adult Group — Individuals at or below 133% FPL,19–64, not newly eligible non-parent/caretaker-
+relative(s) in 1905z(3) states 
+76 = Uninsured Individual eligible for COVID-19 testing — Uninsured individuals who are eligible for 
+medical assistance for COVID-19 diagnostic products and any visit described as a COVID-19 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+27 
+testing-related service for which payment may be made under the State plan during any portion 
+of the public health emergency period, beginning March 18, 2020. 
+COMMENT: 
+This variable is created from each submitted value reported in T-MSIS. For example, state X has a 
+health plan that enrolls infants and children under age 19, and children with non-IV-E adoption 
+assistance Medicaid populations. Accordingly, MC_PLAN_ELGBLTY_GRP_POP_CD will equal “07” on 
+the first Population Enrolled record and MC_PLAN_ELGBLTY_GRP_POP_CD will equal “29” on the 
+second Population Enrolled record. These population enrolled variables are also used to create the 
+Medicaid population indicators on the MCP base file, such as MDCD_MAND_CVRG_ADLT_POP_IND, 
+etc. For example, if any of the MC_PLAN_ELGBLTY_GRP_POP_CD data elements contain a value of 
+“01”–“09” or “72”–“75”, then MDCD_MAND_CVRG_ADLT_POP_IND will be set to 1. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+28 
+MC_PLAN_ID 
+LABEL: 
+Managed Care Plan Identification Number 
+DESCRIPTION: Contains the ID number the state issued to the managed care entity. 
+SHORT NAME:  MC_PLAN_ID 
+LONG NAME:  MC_PLAN_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+12 
+FILE(S):  
+All Annual Managed Care Plan files 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+State-assigned unique managed care identification number. The field can contain any alphanumeric 
+characters, digits, or symbols (e.g., 01234816, 45, CH) 
+COMMENT: 
+This variable will never contain NULL values. 
+This field, in conjunction with other fields, can be used to link to other TAF. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+29 
+MC_PLAN_LCTN_ACTV_IND_01 
+MC_PLAN_LCTN_ACTV_IND_02 
+MC_PLAN_LCTN_ACTV_IND_03 
+MC_PLAN_LCTN_ACTV_IND_04 
+MC_PLAN_LCTN_ACTV_IND_05 
+MC_PLAN_LCTN_ACTV_IND_06 
+MC_PLAN_LCTN_ACTV_IND_07 
+MC_PLAN_LCTN_ACTV_IND_08 
+MC_PLAN_LCTN_ACTV_IND_09 
+MC_PLAN_LCTN_ACTV_IND_10 
+MC_PLAN_LCTN_ACTV_IND_11 
+MC_PLAN_LCTN_ACTV_IND_12 
+LABEL: 
+Managed Care Plan Location Active Indicator — January through December 
+DESCRIPTION: A flag to indicate the managed care entity location specified in the MC_PLAN_LCTN_ID variable was 
+active in the given month. Each of 12 months. 
+SHORT NAME:  
+MC_PLAN_LCTN_ACTV_IND_01 
+MC_PLAN_LCTN_ACTV_IND_02 
+MC_PLAN_LCTN_ACTV_IND_03 
+MC_PLAN_LCTN_ACTV_IND_04 
+MC_PLAN_LCTN_ACTV_IND_05 
+MC_PLAN_LCTN_ACTV_IND_06 
+MC_PLAN_LCTN_ACTV_IND_07 
+MC_PLAN_LCTN_ACTV_IND_08 
+MC_PLAN_LCTN_ACTV_IND_09 
+MC_PLAN_LCTN_ACTV_IND_10 
+MC_PLAN_LCTN_ACTV_IND_11 
+MC_PLAN_LCTN_ACTV_IND_12 
+LONG NAME:  
+MC_PLAN_LCTN_ACTV_IND_01 
+MC_PLAN_LCTN_ACTV_IND_02 
+MC_PLAN_LCTN_ACTV_IND_03 
+MC_PLAN_LCTN_ACTV_IND_04 
+MC_PLAN_LCTN_ACTV_IND_05 
+MC_PLAN_LCTN_ACTV_IND_06 
+MC_PLAN_LCTN_ACTV_IND_07 
+MC_PLAN_LCTN_ACTV_IND_08 
+MC_PLAN_LCTN_ACTV_IND_09 
+MC_PLAN_LCTN_ACTV_IND_10 
+MC_PLAN_LCTN_ACTV_IND_11 
+MC_PLAN_LCTN_ACTV_IND_12 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+30 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+31 
+MC_PLAN_LCTN_ID 
+LABEL: 
+Managed Care Plan Location Identifier 
+DESCRIPTION: A field to differentiate a managed care entity’s service location. 
+SHORT NAME:  MC_PLAN_LCTN_ID 
+LONG NAME:  MC_PLAN_LCTN_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+15 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+State-reported location identification number. The field can contain any alphanumeric characters, 
+digits or symbols (e.g., 13222. 00001, 1)  
+COMMENT: 
+This variable corresponds to the other location information in the APL location record, including: 
+MC_PLAN_ADR_LINE_1–3, MC_PLAN_CITY, MC_PLAN_STATE_CD, MC_PLAN_ZIP_CD, and 
+MC_PLAN_CNTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+32 
+MC_PLAN_NAME 
+LABEL: 
+Managed Care Plan Name 
+DESCRIPTION: The name of the managed care entity under contract with the State Medicaid Agency. The name is as 
+it appears on the contract, most recent in the calendar year. 
+SHORT NAME:  MC_PLAN_NAME 
+LONG NAME:  MC_PLAN_NAME 
+TYPE: 
+CHAR 
+LENGTH:  
+82 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+The managed care name (e.g., BEST FAMILY PLAN USA, PATIENTS FIRST OF THE MIDWEST)  
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+33 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_01 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_02 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_03 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_04 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_05 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_06 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_07 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_08 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_09 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_10 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_11 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_12 
+LABEL: 
+Managed Care Plan Operating Authority and/or Waiver ID Active Indicator — January through 
+December 
+DESCRIPTION: A flag to indicate the operating authority and/or waiver ID specified in the 
+MC_PLAN_OPRTG_AUTHRTY_CD and MC_PLAN_WVR_ID variable(s) was active in the given month. 
+Each of 12 months. 
+SHORT NAME:  
+MC_PLAN_OPRTG_AUTH_ACTV_IND_01 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_02 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_03 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_04 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_05 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_06 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_07 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_08 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_09 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_10 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_11 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_12 
+LONG NAME:  
+MC_PLAN_OPRTG_AUTH_ACTV_IND_01 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_02 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_03 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_04 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_05 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_06 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_07 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_08 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_09 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_10 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_11 
+MC_PLAN_OPRTG_AUTH_ACTV_IND_12 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+34 
+FILE(S):  
+APL Operating Authority 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+35 
+MC_PLAN_OPRTG_AUTHRTY_CD 
+LABEL: 
+Managed Care Plan Operating Authority Code 
+DESCRIPTION: The type of operating authority(ies) through which the managed care entity receives its contract 
+authority. 
+SHORT NAME:  MC_PLAN_OPRTG_AUTHRTY_CD 
+LONG NAME:  MC_PLAN_OPRTG_AUTHRTY_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL Operating Authority 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+ 
+01 = 1115 demonstration waiver program 
+02 = 1915(b) waiver program 
+03 = 1932(a) state plan option to use managed 
+care for MCO and PCCM programs 
+04 = 1915(a) voluntary managed care 
+programs 
+05 = Concurrent (1915(b)/1915(c) waivers 
+06 = Concurrent (1915(a)/1915(c) waivers 
+07 = Concurrent 1932(a)/1915(c) waivers 
+08 = PACE 
+09 = 1905(t) voluntary PCCM program 
+10 = 1937 Alternative Benefit Plan 
+ 
+11 = 1902(a)(70) non-emergency medical 
+transportation program 
+12 = Concurrent 1915(b)/1915(i) HCBS state 
+plan services 
+13 = Concurrent 1915(a)/1915(i) HCBS state 
+plan services 
+14 = Concurrent 1932(a)/1915(i) HCBS state 
+plan services 
+15 = 1945 Health Homes 
+16 = Concurrent 1915(a)/1915(j) programs 
+17 = Concurrent 1932(a)/1915(j) programs 
+18 = Concurrent 1915(b)/1915(j) programs 
+19 = Concurrent 1115/1915(j) programs 
+20 = Concurrent 1915(a)/1915(k) programs 
+21 = Concurrent 1932(a)/1915(k) programs 
+22 = Concurrent 1915(b)/1915(k) programs 
+23 = Concurrent 1115/1915(k) programs 
+Null/missing 
+COMMENT: 
+This data element is created from each submitted value reported in T-MSIS. For example, a state has a 
+health plan that operates under both a 1915(a)/1915(c) waiver and 1937 Alternative Benefit Plan. 
+Accordingly, there would be two Operating Authority Supplemental file records for this health plan. 
+One record would have MC_PLAN_OPRTG_AUTHRTY_CD equal “06” and another would have 
+MC_PLAN_OPRTG_AUTHRTY_CD equal “10”, the corresponding valid values associated with these 
+respective operating authorities. 
+This data element also triggers the individual operating authority indicators such as 
+OPRTG_AUTHRTY_1115_DEMO_WVR_IND, etc. that appear on the APL base file. If any of the 
+MC_PLAN_OPRTG_AUTHRTY_CD data elements contain a value of “02,” for example, then 
+OPRTG_AUTHRTY_1915B_WVR_IND will be triggered. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+36 
+MC_PLAN_PGM_CD 
+LABEL: 
+Managed Care Plan Program Code 
+DESCRIPTION: The state program through which a managed care plan is approved to operate; most recent in the 
+calendar year. 
+SHORT NAME:  MC_PLAN_PGM_CD 
+LONG NAME:  MC_PLAN_PGM_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+1 = Medicaid State Plan 
+2 = CHIP State Plan 
+3 = Both Medicaid and CHIP 
+Null/missing = unknown/missing 
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+37 
+MC_PLAN_REIMBRSMT_TYPE_CD 
+LABEL: 
+Managed Care Plan Reimbursement Type Code 
+DESCRIPTION: A code indicating the how the managed care entity is reimbursed; most recent in the calendar year. 
+SHORT NAME:  MC_PLAN_REIMBRSMT_TYPE_CD 
+LONG NAME:  MC_PLAN_REIMBRSMT_TYPE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+01 = Risk-based capitation, no incentives or risk-sharing 
+02 = Risk-based capitation with Incentive arrangements 
+03 = Risk-based capitation with other risk-sharing arrangements 
+04 = Non-risk capitation 
+05 = Fee-for-service (FFS) 
+06 = Primary care case management (PCCM) payment 
+07 = Other 
+08 = Primary Care Case Management Payment plus Fee-For-Service 
+Null/missing = unknown/missing 
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+38 
+MC_PLAN_REIMBRSMT_TYPE_CTGRY_CD 
+LABEL: 
+Managed Care Plan Reimbursement Type Category Code 
+DESCRIPTION: Managed Care Plan Reimbursement Type Category Code — Aggregated categories based on the 
+managed care plan reimbursement type code values (MC_PLAN_REIMBRSMT_TYPE_CD); most recent 
+in the calendar year. 
+SHORT NAME:  MC_PLAN_REIMBRSMT_TYPE_CTGRY_CD 
+LONG NAME:  MC_PLAN_REIMBRSMT_TYPE_CTGRY_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+1 = Risk-based capitation 
+2 = Non-risk capitation 
+3 = Fee-for-service (FFS) 
+4 = Primary care case management (PCCM) 
+5 = Other 
+Null/missing = unknown/missing 
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+This field is derived from the MC_PLAN_REIMBRSMT_TYPE_CD using the following logic: 
+1 if MC_PLAN_REIMBRSMT_TYPE_CD equals “01”, “02”, “03” 
+2 if MC_PLAN_REIMBRSMT_TYPE_CD equals “04” 
+3 if MC_PLAN_REIMBRSMT_TYPE_CD equals “05” 
+4 if MC_PLAN_REIMBRSMT_TYPE_CD equals “06,” “08” 
+5 if MC_PLAN_REIMBRSMT_TYPE_CD equals “07” 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+39 
+MC_PLAN_SAREA_ACTV_IND_01 
+MC_PLAN_SAREA_ACTV_IND_02 
+MC_PLAN_SAREA_ACTV_IND_03 
+MC_PLAN_SAREA_ACTV_IND_04 
+MC_PLAN_SAREA_ACTV_IND_05 
+MC_PLAN_SAREA_ACTV_IND_06 
+MC_PLAN_SAREA_ACTV_IND_07 
+MC_PLAN_SAREA_ACTV_IND_08 
+MC_PLAN_SAREA_ACTV_IND_09 
+MC_PLAN_SAREA_ACTV_IND_10 
+MC_PLAN_SAREA_ACTV_IND_11 
+MC_PLAN_SAREA_ACTV_IND_12 
+LABEL: 
+Managed Care Plan Service Area Active Indicator — January through December 
+DESCRIPTION: A flag to indicate the managed care service area specified in the MC_PLAN_SAREA_NAME variable was 
+active in the given month. Each of 12 months. 
+SHORT NAME:  
+MC_PLAN_SAREA_ACTV_IND_01 
+MC_PLAN_SAREA_ACTV_IND_02 
+MC_PLAN_SAREA_ACTV_IND_03 
+MC_PLAN_SAREA_ACTV_IND_04 
+MC_PLAN_SAREA_ACTV_IND_05 
+MC_PLAN_SAREA_ACTV_IND_06 
+MC_PLAN_SAREA_ACTV_IND_07 
+MC_PLAN_SAREA_ACTV_IND_08 
+MC_PLAN_SAREA_ACTV_IND_09 
+MC_PLAN_SAREA_ACTV_IND_10 
+MC_PLAN_SAREA_ACTV_IND_11 
+MC_PLAN_SAREA_ACTV_IND_12 
+LONG NAME:  
+MC_PLAN_SAREA_ACTV_IND_01 
+MC_PLAN_SAREA_ACTV_IND_02 
+MC_PLAN_SAREA_ACTV_IND_03 
+MC_PLAN_SAREA_ACTV_IND_04 
+MC_PLAN_SAREA_ACTV_IND_05 
+MC_PLAN_SAREA_ACTV_IND_06 
+MC_PLAN_SAREA_ACTV_IND_07 
+MC_PLAN_SAREA_ACTV_IND_08 
+MC_PLAN_SAREA_ACTV_IND_09 
+MC_PLAN_SAREA_ACTV_IND_10 
+MC_PLAN_SAREA_ACTV_IND_11 
+MC_PLAN_SAREA_ACTV_IND_12 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL Service Area 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+40 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+41 
+MC_PLAN_SAREA_CD 
+LABEL: 
+Managed Care Plan Service Area Code — Latest in Year 
+DESCRIPTION: Identifies the geographic unit under which the managed care entity is under contract to provide 
+services; most recent in the calendar year. 
+SHORT NAME:  MC_PLAN_SAREA_CD 
+LONG NAME:  MC_PLAN_SAREA_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+ 
+1 = Statewide — the managed care entity provides services to beneficiaries throughout the entire 
+state. 
+2 = County — the managed care entity provides services to beneficiaries in specified counties. 
+3 = City — the managed care entity provides services to beneficiaries in specified cities. 
+4 = Region — the managed care entity provides services to beneficiaries in specified regions, not 
+defined by individual counties within the state (“region” is state-defined). 
+5 = Zip code — the managed care entity program provides services to beneficiaries in specified zip 
+codes. 
+6 = Other — the managed care entity provides services to beneficiaries in "other" area(s), not 
+statewide, county, city, or region. 
+Null/missing = unknown/missing 
+COMMENT: 
+The value was chosen using the last-best method for values from the monthly TAF (calendar year). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+42 
+MC_PLAN_SAREA_NAME 
+LABEL: 
+Managed Care Plan Service Area Name 
+DESCRIPTION: The specific identifiers for the counties, cities, regions, zip codes, and/or other geographic areas that 
+the managed care entity serves.  
+SHORT NAME:  MC_PLAN_SAREA_NAME 
+LONG NAME:  MC_PLAN_SAREA_NAME 
+TYPE: 
+CHAR 
+LENGTH:  
+45 
+FILE(S):  
+APL Service Area 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+The field can contain any alphanumeric characters, digits, or symbols (e.g., BROWN COUNTY, ALL MA 
+STATEWIDE, 0234). Null/missing = unknown/missing 
+COMMENT: 
+Each managed care service area name is associated with a MC_PLAN_ID.  
+CMS provides states with guidance for reporting this field: https://www.medicaid.gov/medicaid/data-
+and-systems/macbis/tmsis/tmsis-blog/entry/47542 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+43 
+MC_PLAN_STATE_CD 
+LABEL: 
+Managed Care Plan Location — State (ANSI Code) 
+DESCRIPTION: The state code of the managed care service location for each unique managed care service location ID 
+(i.e., for each occurrence of the MC_PLAN_LCTN_ID). 
+SHORT NAME:  MC_PLAN_STATE_CD 
+LONG NAME:  MC_PLAN_STATE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+https://www.census.gov/library/reference/code-lists/ansi/ansi-codes-for-states.html
+01 = Alabama 
+02 = Alaska 
+04 = Arizona 
+05 = Arkansas 
+06 = California 
+08 = Colorado 
+09 = Connecticut 
+10 = Delaware 
+11 = District of Columbia 
+12 = Florida 
+13 = Georgia 
+15 = Hawaii 
+16 = Idaho 
+17 = Illinois 
+18 = Indiana 
+19 = Iowa 
+20 = Kansas 
+21 = Kentucky 
+22 = Louisiana 
+23 = Maine 
+24 = Maryland 
+25 = Massachusetts 
+26 = Michigan 
+27 = Minnesota 
+28 = Mississippi 
+29 = Missouri 
+30 = Montana 
+31 = Nebraska 
+32 = Nevada 
+33 = New Hampshire 
+34 = New Jersey 
+35 = New Mexico 
+36 = New York 
+37 = North Carolina 
+38 = North Dakota 
+39 = Ohio 
+40 = Oklahoma 
+41 = Oregon 
+42 = Pennsylvania 
+44 = Rhode Island 
+45 = South Carolina 
+46 = South Dakota 
+47 = Tennessee 
+48 = Texas 
+49 = Utah 
+50 = Vermont 
+51 = Virginia 
+53 = Washington 
+54 = West Virginia 
+55 = Wisconsin 
+56 = Wyoming 
+72 = Puerto Rico 
+78 = United States Virgin Islands 
+Null/missing = unknown/missing 
+ 
+COMMENT:  
+Codes represent FIPS state codes. 
+ ^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+44 
+MC_PLAN_STATEWIDE_IND 
+LABEL: 
+Managed Care Plan Statewide Service Area Indicator — Ever in Calendar Year 
+DESCRIPTION: This variable indicates that the managed-care plan’s service area is a statewide service area; ever in 
+the calendar year. 
+SHORT NAME:  MC_PLAN_STATEWIDE_IND 
+LONG NAME:  MC_PLAN_STATEWIDE_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+45 
+MC_PLAN_TYPE_CD 
+LABEL: 
+Managed Care Plan Type Code 
+DESCRIPTION: The type of managed care plan that corresponds to MC_PLAN_ID 
+SHORT NAME:  MC_PLAN_TYPE_CD 
+LONG NAME:  MC_PLAN_TYPE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+01 = Comprehensive Managed Care 
+Organization (MCO) 
+02 = Traditional Primary Care Case 
+Management (PCCM) Provider 
+arrangement 
+03 = Enhanced PCCM Provider arrangement 
+04 = Health Insuring Organization (HIO) 
+05 = Medical-only Prepaid Inpatient Health 
+Plan (PIHP) (risk or non-risk/non-
+comprehensive/with inpatient hospital or 
+institutional services) 
+06 = Medical-only Prepaid Ambulatory Health 
+Plan (PAHP) (risk or non-risk/non-
+comprehensive/no inpatient hospital or 
+institutional services) 
+07 = Long Term Care Services and Supports 
+(LTSS) PIHP 
+08 = Mental Health (MH) PIHP 
+09 = Mental Health (MH) PAHP 
+10 = Substance Use Disorders (SUD) PIHP 
+11 = Substance Use Disorders (SUD) PAHP 
+12 = Mental Health (MH) and Substance Use 
+Disorders (SUD) PIHP 
+13 = Mental Health (MH) and Substance Use 
+Disorders (SUD) PAHP 
+14 = Dental PAHP 
+15 = Transportation PAHP 
+16 = Disease Management PAHP 
+17 = Program of All-Inclusive Care for the 
+Elderly (PACE) 
+18 = Pharmacy PAHP 
+19 = Individual is enrolled in Long-Term 
+Services and Supports (LTSS) and Mental 
+Health (MH) PIHP 
+20 = Other 
+60 = Accountable Care Organization (ACO) 
+70 = Health/Medical Home 
+80 = Integrated Care for Dual Eligibles 
+Null/missing = unknown/missing 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+46 
+MC_PLAN_TYPE_CTGRY_CD 
+LABEL: 
+Managed Care Plan Type Category Code 
+DESCRIPTION: Managed Care Plan Type Category Code — Aggregated categories based on the managed care plan 
+type values (MC_PLAN_TYPE_CD); most recent in the calendar year. 
+SHORT NAME:  MC_PLAN_TYPE_CTGRY_CD 
+LONG NAME:  MC_PLAN_TYPE_CTGRY_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+1 = Comprehensive medical care 
+2 = PCCM 
+3 = Medical only prepaid health plan 
+4 = LTC PIHP 
+5 = Mental health and/or SUD plan 
+6 = Dental PAHP 
+7 = Transportation PAHP 
+8 = Disease management PAHP 
+9 = Pharmacy PAHP 
+10 = Accountable Care Organization 
+11 = Health home or medical home 
+12 = Integrated care for dual eligible 
+13 = Other 
+Null/missing = unknown/missing 
+COMMENT: 
+This field is derived from the MC_PLAN_TYPE_CD using the following logic:  
+1 if MC_PLAN_TYPE_CD equals 01, 04, 17 
+2 if MC_PLAN_TYPE_CD equals 02, 03 
+3 if MC_PLAN_TYPE_CD equals 05, 06 
+4 if MC_PLAN_TYPE_CD equals 07, 19 
+5 if MC_PLAN_TYPE_CD equals 08, 09, 10, 11, 
+12, 13 
+6 if MC_PLAN_TYPE_CD equals 14 
+7 if MC_PLAN_TYPE_CD equals 15 
+8 if MC_PLAN_TYPE_CD equals 16 
+9 if MC_PLAN_TYPE_CD equals 18 
+10 if MC_PLAN_TYPE_CD equals 60 
+11 if MC_PLAN_TYPE_CD equals 70 
+12 if MC_PLAN_TYPE_CD equals 80 
+13 if MC_PLAN_TYPE_CD equals 20 
+ 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+47 
+MC_PLAN_WVR_ID 
+LABEL: 
+Managed Care Plan Waiver ID 
+DESCRIPTION: The waiver ID of the operating authority(ies), when applicable, through which the managed care entity 
+receives its contract authority. 
+These IDs are the approved, full federal waiver ID numbers assigned during the state submission and 
+CMS approval process.  
+SHORT NAME:  MC_PLAN_WVR_ID 
+LONG NAME:  MC_PLAN_WVR_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+20 
+FILE(S):  
+APL Operating Authority 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Waiver ID, maximum 20 letters and numbers (e.g., W-1115/2016, MA.RO1.MO5, 1926544) 
+Null/missing = unknown/missing 
+COMMENT: 
+The categories of demonstration and waiver programs include: 1915(b)(1); 1915(b)(2); 1915(b)(3), and 
+1915(b)(4) managed care waivers; 1915(c) home and community-based services waivers; combined 
+1915(b) and 1915(c) managed home and community-based services waivers and 1115 
+demonstrations. 
+The MC_PLAN_WVR_ID will equal the waiver ID that corresponds to the operating authority in 
+MC_PLAN_OPRTG_AUTHRTY_CD on the same record. Sometimes an operating authority does not 
+require a waiver identification number. In those instances, the corresponding MC_PLAN_WVR_ID will 
+be equal to NULL. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+48 
+MC_PLAN_ZIP_CD 
+LABEL: 
+Managed Care Plan Location — Zip Code 
+DESCRIPTION: The zip code of the managed care service location for each unique managed care service location ID 
+(i.e., for each occurrence of the MC_PLAN_LCTN_ID). 
+SHORT NAME:  MC_PLAN_ZIP_CD 
+LONG NAME:  MC_PLAN_ZIP_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+13 
+FILE(S):  
+APL Location 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+Zip code, up to 9 digits 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+49 
+MDCD_MAND_CVRG_ABD_POP_IND 
+LABEL: 
+Eligible Population Indicator: Medicaid Mandatory Coverage Aged-Blind-Disabled — Ever in Calendar 
+Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the mandatory Aged/Blind/Disabled 
+(A/B/D) eligibility groups; ever in the calendar year. 
+SHORT NAME:  MDCD_MAND_CVRG_ABD_POP_IND 
+LONG NAME:  MDCD_MAND_CVRG_ABD_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “11”-“26” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. These values are: 
+11 = Individuals Receiving SSI 
+12 = Aged, Blind and Disabled Individuals in 
+209(b) States 
+13 = Individuals Receiving Mandatory State 
+Supplements 
+14 = Individuals Who Are Essential Spouses 
+15 = Institutionalized Individuals Continuously 
+Eligible Since 1973 
+16 = Blind or Disabled Individuals Eligible in 
+1973 
+17 = Individuals Who Lost Eligibility for SSI/SSP 
+Due to an Increase in OASDI Benefits in 
+1972 
+18 = Individuals Who Would be Eligible for 
+SSI/SSP but for OASDI COLA increases 
+since April 1977 
+19 = Disabled Widows and Widowers Ineligible 
+for SSI due to increase in OASDI 
+20 = Disabled Widows and Widowers Ineligible 
+for SSI due to Early Receipt of Social 
+Security  
+21 = Working Disabled under 1619(b) 
+22 = Disabled Adult Children 
+23 = Qualified Medicare Beneficiaries  
+24 = Qualified Disabled and Working 
+Individuals 
+25 = Specified Low Income Medicare 
+Beneficiaries  
+26 = Qualifying Individuals 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+50 
+MDCD_MAND_CVRG_ADLT_POP_IND 
+LABEL: 
+Eligible Population Indicator: Medicaid Mandatory Coverage Family-Adult — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the mandatory family/adult eligibility 
+groups; ever in the calendar year. 
+SHORT NAME:  MDCD_MAND_CVRG_ADLT_POP_IND 
+LONG NAME:  MDCD_MAND_CVRG_ADLT_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “01”-“09” or “72”-“75” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+These values are: 
+01 = Parents and Other Caretaker Relatives 
+02 = Transitional Medical Assistance 
+03 = Extended Medicaid due to Earnings 
+04 = Extended Medicaid due to Spousal Support Collections 
+05 = Pregnant Women 
+06 = Deemed Newborns 
+07 = Infants and Children under Age 19 
+08 = Children with Title IV-E Adoption Assistance, Foster Care or Guardianship Care 
+09 = Former Foster Care Children 
+72 = Adult Group — Individuals at or below 133% FPL Age 19 through 64 — newly eligible for all states 
+73 = Adult Group — Individuals at or below 133% FPL Age 19 through 64 — not newly eligible for non 
+1905z(3) states 
+74 = Adult Group — Individuals at or below 133% FPL Age 19 through 64 – not newly eligible parent/ 
+caretaker-relative(s) in 1905z(3) states  
+ 75 = Adult Group — Individuals at or below 133% FPL Age 19 through 64 — not newly eligible non-
+parent/caretaker/relative(s) in 1905z(3) states 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+51 
+MDCD_MDCLY_NDY_CVRG_ABD_POP_IND 
+LABEL: 
+Eligible Population Indicator: Medicaid Medically Needy Coverage Aged-Blind-Disabled — Ever in 
+Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the medically needy A/B/D eligibility 
+groups; ever in the calendar year. 
+SHORT NAME:  MDCD_MDCLY_NDY_CVRG_ABD_POP_IND 
+LONG NAME:  MDCD_MDCLY_NDY_CVRG_ABD_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “59”–“60” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+These values are: 
+59 = Medically Needy Aged, Blind or Disabled 
+60 = Medically Needy Blind or Disabled Individuals Eligible in 1973 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+52 
+MDCD_MDCLY_NDY_CVRG_ADLT_POP_IND 
+LABEL: 
+Eligible Population Indicator: Medicaid Medically Needy Family-Adult — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the medically needy adult/family eligibility 
+groups; ever in the calendar year. 
+SHORT NAME:  MDCD_MDCLY_NDY_CVRG_ADLT_POP_IND 
+LONG NAME:  MDCD_MDCLY_NDY_CVRG_ADLT_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “53”–“56” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+53 = Medically Needy Pregnant Women 
+54 = Medically Needy Children under Age 18 
+55 = Medically Needy Children Age 18 through 20 
+56 = Medically Needy Parents and Other Caretakers 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+53 
+MDCD_OPTNL_CVRG_ABD_POP_IND 
+LABEL: 
+Eligible Population Indicator: Medicaid Optional Coverage Aged-Blind-Disabled — Ever in Calendar 
+Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the optional A/B/D eligibility groups; ever 
+in the calendar year. 
+SHORT NAME:  MDCD_OPTNL_CVRG_ABD_POP_IND 
+LONG NAME:  MDCD_OPTNL_CVRG_ABD_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “37”–“52” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. These values are: 
+37 = Aged, Blind or Disabled Individuals Eligible 
+for but Not Receiving Cash Assistance 
+38 = Individuals Eligible for Cash Assistance 
+except for Institutionalization 
+39 = Individuals Receiving Home and 
+Community Based Services under 
+Institutional Rules 
+40 = Optional State Supplement Recipients - 
+1634 States, and SSI Criteria States with 
+1616 Agreements  
+41 = Optional State Supplement Recipients - 
+209(b) States, and SSI Criteria States 
+without 1616 Agreements 
+42 = Institutionalized Individuals Eligible under 
+a Special Income Level 
+43 = Individuals participating in a PACE 
+Program under Institutional Rules 
+44 = Individuals Receiving Hospice Care 
+45 = Qualified Disabled Children under Age 19 
+46 = Poverty Level Aged or Disabled 
+47 = Work Incentives Eligibility Group 
+48 = Ticket to Work Basic Group 
+49 = Ticket to Work Medical Improvements 
+Group 
+50 = Family Opportunity Act Children with 
+Disabilities 
+51 = Individuals Eligible for Home and 
+Community-Based Services 
+52 = Individuals Eligible for Home and 
+Community-Based Services - Special 
+Income Level 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+54 
+MDCD_OPTNL_CVRG_ADLT_POP_IND 
+LABEL: 
+Eligible Population Indicator: Medicaid Optional Coverage Adult-Children — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the family/adult eligibility groups; ever in 
+the calendar year. 
+SHORT NAME:  MDCD_OPTNL_CVRG_ADLT_POP_IND 
+LONG NAME:  MDCD_OPTNL_CVRG_ADLT_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “27”-“36” or “76” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+These values are: 
+27 = Optional Coverage of Parents and Other Caretaker Relatives 
+28 = Reasonable Classifications of Individuals under Age 21 
+29 = Children with Non-IV-E Adoption Assistance 
+30 = Independent Foster Care Adolescents  
+31 = Optional Targeted Low-Income Children 
+32 = Individuals Electing COBRA Continuation Coverage 
+33 = Individuals above 133% FPL under Age 65 
+34 = Certain Individuals Needing Treatment for Breast or Cervical Cancer 
+35 = Individuals Eligible for Family Planning Services 
+36 = Individuals with Tuberculosis 
+76 = Uninsured Individual eligible for COVID-19 testing 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+55 
+OPRTG_AUTHRTY_1115_1915J_IND 
+LABEL: 
+Operating Authority Indicator: 1115 -1915(j)— Ever in Calendar Year 
+DESCRIPTION: Indicates when the operating authority is 1115/1915(j) for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1115_1915J_IND 
+LONG NAME:  OPRTG_AUTHRTY_1115_1915J_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “19” (Concurrent 1115/1915(j) programs) in any instance 
+of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+56 
+OPRTG_AUTHRTY_1115_1915K_IND 
+LABEL: 
+Operating Authority Indicator: 1115 -1915(k)— Ever in Calendar Year 
+DESCRIPTION: Indicates when the operating authority is 1115/1915(k) for the MC_PLAN_ID; ever in the calendar 
+year. 
+SHORT NAME:  OPRTG_AUTHRTY_1115_1915K_IND 
+LONG NAME:  OPRTG_AUTHRTY_1115_1915K_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “23” (Concurrent 1115/1915(k) programs) in any instance 
+of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+57 
+OPRTG_AUTHRTY_1115_DEMO_WVR_IND 
+LABEL: 
+Operating Authority Indicator: 1115 Demo Waiver — Ever in Calendar Year 
+DESCRIPTION: Indicates when the operating authority is 1115 demonstration for the MC_PLAN_ID; ever in the 
+calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1115_DEMO_WVR_IND 
+LONG NAME:  OPRTG_AUTHRTY_1115_DEMO_WVR_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “01” (1115 demonstration waiver program) in any instance 
+of MC_PLAN_OPRTG_AUTHRTY_CD. Please note that this indicator is not set to 1 when there is an 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD set to “19” or “23” (1115 demonstration concurrent with 
+another operating authority). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+58 
+OPRTG_AUTHRTY_1902A70_NEMT_IND 
+LABEL: 
+Operating Authority Indicator: 1902(a)(70) Non-Emergency Medical Transport (NEMT) — Ever in 
+Calendar Year 
+DESCRIPTION: Indicates 1902(a)(70) Non-Emergency Medical Transport (NEMT) operating authority for the 
+MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1902A70_NEMT_IND 
+LONG NAME:  OPRTG_AUTHRTY_1902A70_NEMT_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “11” (1902(a)(70) non-emergency medical transportation 
+program) in any instance of MC_PLAN_OPRTG_AUTHRTY_CD.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+59 
+OPRTG_AUTHRTY_1905T_PCCM_IND 
+LABEL: 
+Operating Authority Indicator: Voluntary Primary Care Case Management (PCCM) — Ever in Calendar 
+Year 
+DESCRIPTION: Indicates 1905(t) Voluntary Primary Care Case Management (PCCM) for the MC_PLAN_ID; ever in the 
+calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1905T_PCCM_IND 
+LONG NAME:  OPRTG_AUTHRTY_1905T_PCCM_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “09” (1905(t) voluntary PCCM program) in any instance of 
+MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+60 
+OPRTG_AUTHRTY_1915A_IND 
+LABEL: 
+Operating Authority Indicator: 1915(a) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(a) operating authority for the MC_PLAN_ID; ever in the calendar year 
+SHORT NAME:  OPRTG_AUTHRTY_1915A_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915A_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “04” (1915(a) voluntary managed care program) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. Please note that this indicator is not set to 1 when there 
+is an instance of MC_PLAN_OPRTG_AUTHRTY_CD set to “06,” “13,” “16” or “20” (1915(a) operating 
+authority concurrent with another operating authority). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+61 
+OPRTG_AUTHRTY_1915AC_WVR_IND 
+LABEL: 
+Operating Authority Indicator: 1915(a)(c) Waiver — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(a)/1915(c) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915AC_WVR_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915AC_WVR_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “06” (Concurrent 1915(a)/1915(c) waivers) in any instance 
+of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+62 
+OPRTG_AUTHRTY_1915AI_IND 
+LABEL: 
+Operating Authority Indicator: 1915(a)(i) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(a)/1915(i) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915AI_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915AI_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “13” (Concurrent 1915(a)/1915(i) Home and Community-
+Based Services (HCBS) state plan services) in any instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+63 
+OPRTG_AUTHRTY_1915AJ_IND 
+LABEL: 
+Operating Authority Indicator: 1915(a)(j) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(a)/1915(j) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915AJ_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915AJ_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “16” (Concurrent 1915(a)/1915(j) programs) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+64 
+OPRTG_AUTHRTY_1915AK_IND 
+LABEL: 
+Operating Authority Indicator: 1915(a)(k) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(a)/1915(k) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915AK_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915AK_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “20” (Concurrent 1915(a)/1915(k) programs) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+65 
+ 
+OPRTG_AUTHRTY_1915B_WVR_IND 
+LABEL: 
+Operating Authority Indicator: 1915(b) Waiver — Ever in Calendar Year 
+DESCRIPTION: Indicates when the operating authority is 1915(b) for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915B_WVR_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915B_WVR_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “02” (1915(b) waiver program) in any instance of 
+MC_PLAN_OPRTG_AUTHRTY_CD. Please note that this indicator is not set to 1 when there is an 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD set to “05,” “12,” “18,” or “22” (1915(b) waiver 
+concurrent with another operating authority). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+66 
+OPRTG_AUTHRTY_1915BC_WVR_IND 
+LABEL: 
+Operating Authority Indicator: 1915(b)(c) Waiver — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(b)/1915(c) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915BC_WVR_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915BC_WVR_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “05” (Concurrent 1915(b)/1915(c) waivers) in any instance 
+of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+67 
+OPRTG_AUTHRTY_1915BI_IND 
+LABEL: 
+Operating Authority Indicator: 1915(b)(i) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(b)/1915(i) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915BI_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915BI_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “12” (Concurrent 1915(b)/1915(i) Home and Community-
+Based Services (HCBS) state plan services) in any instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+68 
+OPRTG_AUTHRTY_1915BJ_IND 
+LABEL: 
+Operating Authority Indicator: 1915(b)(j) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(b)/1915(j) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915BJ_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915BJ_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “18” (Concurrent 1915(b)/1915(j) programs) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+69 
+OPRTG_AUTHRTY_1915BK_IND 
+LABEL: 
+Operating Authority Indicator: 1915(b)(k) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1915(b)/1915(k) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1915BK_IND 
+LONG NAME:  OPRTG_AUTHRTY_1915BK_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “22” (Concurrent 1915(b)/1915(k) programs) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+70 
+ 
+OPRTG_AUTHRTY_1932A_1915C_IND 
+LABEL: 
+Operating Authority Indicator: 1932(a)-1915(c) Waiver — Ever in Calendar Year 
+DESCRIPTION: Indicates 1932(a)/1915(c) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1932A_1915C_IND 
+LONG NAME:  OPRTG_AUTHRTY_1932A_1915C_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “07” (Concurrent 1932(a)/1915(c) waivers) in any instance 
+of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+71 
+OPRTG_AUTHRTY_1932A_1915I_IND 
+LABEL: 
+Operating Authority Indicator: 1932(a)-1915(i) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1932(a)/1915(i) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1932A_1915I_IND 
+LONG NAME:  OPRTG_AUTHRTY_1932A_1915I_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “14” (Concurrent 1932(a)/1915(i) Home and Community-
+Based Services (HCBS) state plan services) in any instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+72 
+OPRTG_AUTHRTY_1932A_1915J_IND 
+LABEL: 
+Operating Authority Indicator: 1932(a)-1915(j) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1932(a)/1915(j) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1932A_1915J_IND 
+LONG NAME:  OPRTG_AUTHRTY_1932A_1915J_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “17” (Concurrent 1932(a)/1915(j) programs) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+73 
+OPRTG_AUTHRTY_1932A_1915K_IND 
+LABEL: 
+Operating Authority Indicator: 1932(a)-1915(k) — Ever in Calendar Year 
+DESCRIPTION: Indicates 1932(a)/1915(k) operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1932A_1915K_IND 
+LONG NAME:  OPRTG_AUTHRTY_1932A_1915K_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “21” (Concurrent 1932(a)/1915(k) programs) in any 
+instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+74 
+ 
+OPRTG_AUTHRTY_1932A_SPO_IND 
+LABEL: 
+Operating Authority Indicator: 1932(a) State Plan Option — Ever in Calendar Year 
+DESCRIPTION: Indicates when the operating authority is 1932(a) for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1932A_SPO_IND 
+LONG NAME:  OPRTG_AUTHRTY_1932A_SPO_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “03” (1932(a) state plan option to use managed care for 
+MCO and PCCM programs) in any instance of MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+75 
+OPRTG_AUTHRTY_1937_ABP_IND 
+LABEL: 
+Operating Authority Indicator: 1937 Alternative Benefits Plan — Ever in Calendar Year 
+DESCRIPTION: Indicates 1937 operating authority for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1937_ABP_IND 
+LONG NAME:  OPRTG_AUTHRTY_1937_ABP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “10” (1937 Alternative Benefit Plan) in any instance of 
+MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+76 
+OPRTG_AUTHRTY_1945_HLTH_HOME_IND 
+LABEL: 
+Operating Authority Indicator: 1945 Health Home — Ever in Calendar Year 
+DESCRIPTION: Indicates 1945 health homes for the MC_PLAN_ID; ever in the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_1945_HLTH_HOME_IND 
+LONG NAME:  OPRTG_AUTHRTY_1945_HLTH_HOME_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “15” (1945 Health Homes) in any instance of 
+MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+77 
+OPRTG_AUTHRTY_PACE_IND 
+LABEL: 
+Operating Authority Indicator: PACE — Ever in Calendar Year 
+DESCRIPTION: Indicates Program of All-Inclusive Care for the Elderly (PACE) programs for the MC_PLAN_ID; ever in 
+the calendar year. 
+SHORT NAME:  OPRTG_AUTHRTY_PACE_IND 
+LONG NAME:  OPRTG_AUTHRTY_PACE_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “08” (PACE) in any instance of 
+MC_PLAN_OPRTG_AUTHRTY_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+78 
+PL_VRSN 
+LABEL: 
+Plan File Version Representing the Iteration of the File 
+DESCRIPTION: Indicator representing the iteration of the file. 
+SHORT NAME:  PL_VRSN 
+LONG NAME:  PL_VRSN 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+A two-character number (“01,” “02,” “14,” etc.)  
+COMMENT: 
+The higher the number, the later/more recent the iteration of the file. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+79 
+RFRNC_YR 
+LABEL: 
+Reference Year 
+DESCRIPTION: This variable represents the year of the data file 
+SHORT NAME:  RFRNC_YR 
+LONG NAME:  RFRNC_YR 
+TYPE: 
+CHAR 
+LENGTH:  
+4 
+FILE(S):  
+All Annual Managed Care Plan files 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+YYYY 
+COMMENT: 
+First year possible is 2014. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+80 
+SPLMTL_OPRTG_AUTHRTY 
+LABEL: 
+Annual Managed Care Plan Record in Supplemental Operating Authority File 
+DESCRIPTION: A flag to indicate that there are one or more record(s) in the Operating Authority supplemental file for 
+this managed care plan/entity (i.e., CCW_APL_LINK_KEY). 
+SHORT NAME:  SPLMTL_OPRTG_AUTHRTY 
+LONG NAME:  SPLMTL_OPRTG_AUTHRTY 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+The CCW_APL_LINK_KEY identifies each unique combination of submitting state entity code 
+(SUBMTG_STATE_CD) and state managed care plan/entity (MC_PLAN_ID). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+81 
+SPLMTL_POP_ENRLMT 
+LABEL: 
+Annual Managed Care Plan Record in Supplemental Enrolled Population File 
+DESCRIPTION: A flag to indicate that there are one or more record(s) in the Population Enrolled supplemental file for 
+this managed care plan/entity (i.e., CCW_APL_LINK_KEY).  
+SHORT NAME:  SPLMTL_POP_ENRLMT 
+LONG NAME:  SPLMTL_POP_ENRLMT 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+The CCW_APL_LINK_KEY identifies each unique combination of submitting state entity code 
+(SUBMTG_STATE_CD) and state managed care plan/entity (MC_PLAN_ID). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+82 
+SPLMTL_SAREA 
+LABEL: 
+Annual Managed Care Plan Record in Supplemental Service Area File 
+DESCRIPTION: A flag to indicate that there are one or more record(s) in the Service Area supplemental file for this 
+managed care plan/entity (i.e., CCW_APL_LINK_KEY) . 
+SHORT NAME:  SPLMTL_SAREA 
+LONG NAME:  SPLMTL_SAREA 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+The CCW_APL_LINK_KEY identifies each unique combination of submitting state entity code 
+(SUBMTG_STATE_CD) and state managed care plan/entity (MC_PLAN_ID). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+83 
+SPLMTL_SRVC_ADDR_LCTN 
+LABEL: 
+Annual Managed Care Plan Record in Supplemental Service Address Location File 
+DESCRIPTION: A flag to indicate that there are one or more record(s) in the Location supplemental file for this 
+managed care plan/entity (i.e., CCW_APL_LINK_KEY). 
+SHORT NAME:  SPLMTL_SRVC_ADDR_LCTN 
+LONG NAME:  SPLMTL_SRVC_ADDR_LCTN 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+The CCW_APL_LINK_KEY identifies each unique combination of submitting state entity code 
+(SUBMTG_STATE_CD) and state managed care plan/entity (MC_PLAN_ID). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+84 
+STATE_CD 
+LABEL: 
+Submitting State Alpha Abbreviation 
+DESCRIPTION: Submitting State (postal abbreviation) 
+SHORT NAME:  STATE_CD 
+LONG NAME:  STATE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+All Annual Managed Care Plan files 
+SOURCE:  
+CCW and CMS/Census Bureau crosswalk (derived) 
+VALUES:  
+Two-character postal state code 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC =North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+Null = Unknown 
+COMMENT: 
+This variable is the two-letter postal abbreviation for the state that submitted the APL record. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+85 
+SUBMTG_STATE_CD 
+LABEL: 
+Submitting State Entity Code 
+DESCRIPTION: The ANSI numeric state code for the U.S. state, territory, or the District of Columbia that has 
+submitted the data. 
+SHORT NAME:  SUBMTG_STATE_CD 
+LONG NAME:  SUBMTG_STATE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):  
+All Annual Managed Care Plan files 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+FIPS state codes can be found at: https://www.census.gov/library/reference/code-lists/ansi/ansi-
+codes-for-states.html  
+2-digit value (with leading zeros) 
+01 = Alabama 
+02 = Alaska 
+04 = Arizona 
+05 = Arkansas 
+06 = California 
+08 = Colorado 
+09 = Connecticut 
+10 = Delaware 
+11 = District of Columbia 
+12 = Florida 
+13 = Georgia 
+15 = Hawaii 
+16 = Idaho 
+17 = Illinois 
+18 = Indiana 
+19 = Iowa 
+20 = Kansas 
+21 = Kentucky 
+22 = Louisiana 
+23 = Maine 
+24 = Maryland 
+25 = Massachusetts 
+26 = Michigan 
+27 = Minnesota 
+28 = Mississippi 
+29 = Missouri 
+30 = Montana 
+31 = Nebraska 
+32 = Nevada 
+33 = New Hampshire 
+34 = New Jersey 
+35 = New Mexico 
+36 = New York 
+37 = North Carolina 
+38 = North Dakota 
+39 = Ohio 
+40 = Oklahoma 
+41 = Oregon 
+42 = Pennsylvania 
+44 = Rhode Island 
+45 = South Carolina 
+46 = South Dakota 
+47 = Tennessee 
+48 = Texas 
+49 = Utah 
+50 = Vermont 
+51 = Virginia 
+53 = Washington 
+54 = West Virginia 
+55 = Wisconsin 
+56 = Wyoming 
+72 = Puerto Rico 
+93 = Wyoming CHIP 
+94 = Montana third-party 
+administrator (TPA) 
+97 = Pennsylvania CHIP 
+COMMENT: 
+Codes represent FIPS state codes, with the exception of ’93,’ ’94’ (MT TPA), and ’97,’ which represent 
+non-Medicaid entities from states that submit CHIP or TPA separately from Medicaid. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+86 
+UNK_ELGBLTY_GRP_POP_IND 
+LABEL: 
+Eligible Population Indicator: Unknown Eligibility Group — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is associated with an unknown eligibility group; ever in the 
+calendar year. 
+SHORT NAME:  UNK_ELGBLTY_GRP_POP_IND 
+LONG NAME:  UNK_ELGBLTY_GRP_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by an invalid value (i.e., not values 01–76) in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse 
+CODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 
+87 
+WVR_1115_EXPNSN_CVRG_POP_IND 
+LABEL: 
+Eligible Population Indicator: 1115 Expansion Groups Coverage Waiver — Ever in Calendar Year 
+DESCRIPTION: Indicates if the managed care entity is authorized to enroll the 1115 expansion eligibility groups; ever 
+in the calendar year. 
+SHORT NAME:  WVR_1115_EXPNSN_CVRG_POP_IND 
+LONG NAME:  WVR_1115_EXPNSN_CVRG_POP_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):  
+APL base 
+SOURCE:  
+T-MSIS Annual Managed Care Plan TAF 
+VALUES:  
+0 = No 
+1 = Yes 
+COMMENT: 
+This data element is triggered by a value of “69”–“71” in any instance of 
+MC_PLAN_ELGBLTY_GRP_POP_CD. 
+These values are: 
+69 = Individuals with Mental Health Conditions (expansion group) 
+70 = Family Planning Participants (expansion group) 
+71 = Other expansion group 
+^ Back to TOC ^

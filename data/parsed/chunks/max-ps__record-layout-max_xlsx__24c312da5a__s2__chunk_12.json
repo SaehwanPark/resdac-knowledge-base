@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_12",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "Group (DRG) indicator CHAR 4 X X X\n69 DRG_REL_GROUP Diagnosis Related Group (DRG) NUM 4 X X X\n70 UB_92_REV_CD_GP_1 UB-92 revenue code (1st) NUM 4 X X X\n71 UB_92_REV_CD_CHGS_1 UB-92 revenue code charge (1st) NUM 12 X X X\n72 UB_92_REV_CD_UNITS_1 UB-92 revenue code units (1st) NUM 8 X X X\n73 UB_92_REV_CD_GP_2 UB-92 revenue code (2nd) NUM 4 X X X\n74 UB_92_REV_CD_CHGS_2 UB-92 revenue code charge (2nd) NUM 12 X X X\n75 UB_92_REV_CD_UNITS_2 UB-92 revenue code units (2nd) NUM 8 X X X\n76",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p73__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 73,
+  "text": "CHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = credit received \nN = no credit received \nCOMMENT: \nIf any claim that comprises the Stay has a value code (CLM-VAL-CD) equal to 'FD' populate the MEDPAR \nCredit Received from Manufacturer for Replaced Medical Device Switch with a 'Y'. If no 'FD' value code, \npopulate field with an 'N'. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

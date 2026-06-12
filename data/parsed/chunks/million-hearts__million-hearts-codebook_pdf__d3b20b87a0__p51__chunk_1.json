@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p51__chunk_1",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 51,
+  "text": "Hearts Data Registry \nVALUES: \nEx — 07/17/2019 \nCOMMENT: \nFormatted as MMDDYY10 in SAS. This field is in two files. Within the practice file it is populated with \nthe date the practice record was updated; within the NPI file it is the date the provider record was \nupdated. \n^ Back to TOC ^",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

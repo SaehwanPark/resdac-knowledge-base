@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p69__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 69,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n58 \nMDCD_TOTAL_NON_CAPTD_SPEND \nLABEL: \nMedicaid Payment Amount — Non-Capitated Total \nDESCRIPTION: This variable is the sum of Medicaid payment amount from other services (OT) (header) claims for the \nbeneficiary during the year, after removing the Medicaid managed care capitated payments. Note that \nthis dollar amount may be an undercount if the beneficiary had managed care claims. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

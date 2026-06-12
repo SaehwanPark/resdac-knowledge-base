@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "ZIP_CD (11) ZIP code of patients pre-hospital residence CHAR 5 The 5-digit ZIP code of the patient's pre-hospital residence.\n27 _12 ADMSN_DT (12) Admission Date DATE 8 The date that the patient begins receiving Part A covered Medicare services in an inpatient rehabilitation facility.\n28 _13 ASMT_RFRNC_DT (13) Assessment Reference Date DATE 8 The third calendar day of the rehabilitation stay, which represents the last day of the 3-day admission assessment time period. These three calendar days",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

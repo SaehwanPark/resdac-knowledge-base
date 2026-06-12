@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_8",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Beneficiary Part A Coinsurance Liability Amount | \n\n | 46 | NCH_BENE_BLOOD_DDCTBL_LBLTY_AM | NCH Beneficiary Blood Deductible Liability Amount | \n\n | 47 | NCH_PROFNL_CMPNT_CHRG_AMT | Professional Component Charge Amount | \n\n | 48 | NCH_IP_NCVRD_CHRG_AMT | NCH Inpatient (or other Part A) Non-covered Charge Amount | \n\n | 49 | NCH_IP_TOT_DDCTN_AMT | NCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount | \n\n | 50 | CLM_TOT_PPS_CPTL_AMT | Claim Total PPS Capital Amount | \n\n | 51 |",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_254",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "CNCRNT_PT_WK_1_NUM O0401AB PT: Total Minutes Concurrent Therapy Week 1 NUM 22 This indicates the total number of concurrent physical therapy minutes provided in the first week of stay.\n230 GRP_PT_WK_1_NUM GRP_PT_WK_1_NUM O0401AC PT: Total Minutes Group Therapy Week 1 NUM 22 This indicates the total number of group physical therapy minutes provided in the first week of stay.\n231 CO_TRTMT_PT_WK_1_NUM CO_TRTMT_PT_WK_1_NUM O0401AD PT: Total Minutes Co-treatment Therapy Week 1 NUM 22 This indicates",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

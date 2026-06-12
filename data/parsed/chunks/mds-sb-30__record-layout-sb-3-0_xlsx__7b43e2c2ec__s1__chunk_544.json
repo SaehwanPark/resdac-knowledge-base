@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_544",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "X1050A_INACTV_NO_EVNT_CD X1050A Reason for Inactivation: Event Did Not Occur Code CHAR 1 The data in this column indicates the reason for inactivation of the prior erroneous record is because the event did not occur. 0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern) effective 10/01/2023\n626 X1050Z_INACTV_OTHR_CD X1050Z_INACTV_OTHR_CD X1050Z Reason for Inactivation: Other Error Requiring Inactivation Code CHAR 1 The data in this column indicates the reason for inactivation of the prior",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p105__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 105,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n94 \nDRCTNG_PRVDR_TXNMY_CD \nLABEL: \nTaxonomy Code of Provider Directing the Patient’s Care \nDESCRIPTION: The provider taxonomy of the provider who directed the care of a patient that another provider \nadministered. \nSHORT NAME: DRCTNG_PRVDR_TXNMY_CD \nLONG NAME: DRCTNG_PRVDR_TXNMY_CD \nTYPE: \nCHAR \nLENGTH: \n12 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT header \nVALUES:",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

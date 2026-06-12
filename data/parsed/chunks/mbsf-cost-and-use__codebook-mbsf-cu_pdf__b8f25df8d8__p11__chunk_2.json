@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p11__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 11,
+  "text": "files. \nAcute inpatient claims are a subset of the claims in the IP data file consisting of data from both acute \nhospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of the \nprovider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. \nThere are two cost/use categories from the IP data files: Acute and the OIP. \nMedicare payments are described in detail in a series of Medicare Payment Advisory Commission \n(MedPAC)",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

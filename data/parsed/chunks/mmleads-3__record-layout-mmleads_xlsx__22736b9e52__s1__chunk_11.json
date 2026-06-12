@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "3\n57 MDCD_PHARMACY_COV_MOS Medicaid - Managed Care Pharmacy Months Num 3\n58 MDCD_HLTH_MDCL_HOME_COV_MOS Medicaid - Health or Medical Home Months Num 3\n59 MDCD_INTEGRATED_DUAL_COV_MOS Medicaid - Integrated Care for Dual Eligible Months Num 3\n60 MDCD_WVR_1115_TYPE_CD Medicaid - 1115 Waiver Type Cd - Ltst in Yr Char 2\n61 MDCD_WVR_1915C_TYPE_CD Medicaid - 1915(c) Waiver Type Cd - Ltst in Yr Char 2\n62 MDCD_WVR_1915B_MOS Medicaid - 1915(b) Waiver Months Num 3\n63 MDCD_WVR_1915C_MOS Medicaid - 1915(c)",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

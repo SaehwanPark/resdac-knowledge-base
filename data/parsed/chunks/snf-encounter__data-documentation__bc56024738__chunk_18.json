@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_18",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "| \n\n | 88 | CLM_1ST_DGNS_E_CD | First Claim Diagnosis E Code (Encounter) | \n\n | 89 | ICD_DGNS_E_CD1 | Claim Diagnosis E Code 1 (Encounter) | \n\n | 90 | ICD_DGNS_E_CD2 | Claim Diagnosis E Code 2 (Encounter) | \n\n | 91 | ICD_DGNS_E_CD3 | Claim Diagnosis E Code 3 (Encounter) | \n\n | 92 | ICD_DGNS_E_CD4 | Claim Diagnosis E Code 4 (Encounter) | \n\n | 93 | ICD_DGNS_E_CD5 | Claim Diagnosis E Code 5 (Encounter) | \n\n | 94 | ICD_DGNS_E_CD6 | Claim Diagnosis E Code 6 (Encounter) | \n\n | 95 | ICD_DGNS_E_CD7 |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

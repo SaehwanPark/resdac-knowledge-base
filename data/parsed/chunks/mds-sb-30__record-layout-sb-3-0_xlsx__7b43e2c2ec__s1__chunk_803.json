@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_803",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "assistance \n01=Dependent \n\nIf activity was not attempted, code reason:\n07=Resident refused\n09=Not applicable \n10=Not attempted due to environmental limitations (e.g., lack of equipment, weather constraints)\n88=Not attempted due to medical condition or safety concerns effective 10/01/2023\n896 PRSNL_HYGN_ADMSN_CD PRSNL_HYGN_ADMSN_CD GG0130I1 Personal Hygiene (Start of Stay Perf) CHAR 2 Indicates the resident's performance for personal hybiene at the start of the facility stay. 06=Independent",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

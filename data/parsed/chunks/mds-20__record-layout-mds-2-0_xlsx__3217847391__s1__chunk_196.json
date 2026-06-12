@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_196",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "I1CC I1CC_BRAIN_INJURY (I1CC) Traumatic Brain Injury CHAR 1 Disease diagnosis: diseases - nerological - traumatic brain injury. 0 = No, 1 = Yes, \"-\" = Unknown.\n284 I1D I1D_ASHD (I1D) Arteriosclerotic Heart Disease CHAR 1 Disease diagnosis: diseases - heart/circulation - arteriosclerotic heart disease (ASHD). 0 = No, 1 = Yes, \"-\" = Unknown.\n285 I1DD I1DD_ANX_DIS (I1DD) Anxiety Disorder CHAR 1 Disease diagnosis: diseases - psychiatric/mood - anxiety disorder. 0 = No, 1 = Yes, \"-\" = Unknown.\n286",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

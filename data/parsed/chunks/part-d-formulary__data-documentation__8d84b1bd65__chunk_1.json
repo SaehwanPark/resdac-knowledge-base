@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__data-documentation__8d84b1bd65__chunk_1",
+  "source_document": "data/raw/html/documentation_page/8d84b1bd651eeceaa76b852e04b843dc7e2242ad.html",
+  "page": null,
+  "text": "locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| FORMULARY_ID | Formulary Identification Number | \n| FRMLRY_RX_ID | CCW Formulary Drug Identifier | \n| TIER_ID | Tier Number | \n| STEP | Step Number | \n| QUANTITY_LIMIT_YN | Quantity Limit Indicator (Formulary) | \n| PRIOR_AUTHORIZATION_YN | Prior Authorization Indicator (Formulary) | \n| BN | Brand Name | \n| GNN | Generic Name | \n| STR | Drug Strength Description | \n| GCDF | Dosage Form Code | \n|",
+  "dataset": "part-d-formulary",
+  "url": "https://resdac.org/cms-data/files/part-d-formulary/data-documentation"
+}

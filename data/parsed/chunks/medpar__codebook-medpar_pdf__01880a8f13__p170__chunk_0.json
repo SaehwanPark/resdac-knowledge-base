@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p170__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 170,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n154 \nOPRTG_HSP_AMT \nLABEL: \nOperating Hospital Amount \nDESCRIPTION: The sum of the claim operating HSP amounts reported on the claims that comprise the stay. The \noperating HSP amount is used to identify the difference between the HSP rate payment (updated HSP x \nDRG weight) and the federal rate payment (includes DSH, IME, outliers, etc. as applicable) when HSP \nrate payment exceeds Federal rate",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

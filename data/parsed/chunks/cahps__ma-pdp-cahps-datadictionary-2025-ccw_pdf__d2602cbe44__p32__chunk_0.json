@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p32__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 32,
+  "text": "B. 2025 MCAHPS Format Tables\n32\nsu_dispo_lang: Language of Survey Data Collection\nSAS Format: $LANGF\n1: ENGLISH\n2: SPANISH\n3: CHINESE\n4: VIETNAMESE\n5: KOREAN\n6: TAGALOG\n7: MANDARIN\n88: NA\n8: CANTONESE\nsu_dispositn: Final Disposition Code\nSAS Format: $FDISPF\n10: COMPLETED SURVEY\n11: INSTITUTIONALIZED\n20: DECEASED\n22: LANGUAGE BARRIER\n24: MENT/PHYS UNABLE TO RESPOND\n31: PARTIALLY COMPLETE SURVEY\n32: REFUSAL\n33: NON-RESPONSE\n34: BLANK RETURNED\n35: BAD ADDRESS/BAD PHONE\n37: ANALYTIC COMPLETE\n40:",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

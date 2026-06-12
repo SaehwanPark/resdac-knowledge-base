@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_12",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "ACO_ID_NUM Claim Accountable Care Organization (ACO) Identification Number CHAR 10 56\nCLM_BENE_ID_TYPE_CD CLM_BENE_ID_TYPE_CD Claim Beneficiary Identifier Type Code (For CMS Internal Use) CHAR 1 57\nCLM_RSDL_PYMT_IND_CD CLM_RSDL_PYMT_IND_CD Claim Residual Payment Indicator Code CHAR 1 58 New2\nLine file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 1\nCLM_ID CLM_ID Claim ID CHAR 15 2\nLINE_NUM LINE_NUM Claim Line Number NUM 13 3\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 4\nTHRU_DT",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

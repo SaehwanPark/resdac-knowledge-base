@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p199__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 199,
+  "text": "Analytic File (TAF) claims \nFILE(S): \nRX line \nVALUES: \nNumeric value with three decimal places \nEx. 10.500 \nNull/missing = Source value is missing or unknown \nCOMMENT: \nQuantity limits are applied to medications when the majority of appropriate clinical utilizations will be \naddressed within the quantity allowed. \nAn example for interpreting this field is that a total of 100–250 milligram tablets are allowed; this field \nwould be populated with a quantity of 100. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

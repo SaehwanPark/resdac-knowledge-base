@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_372",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "pressure ulcer(s) at Stage 1 or higher. -=Not assessed/no information\n0=No\n1=Yes\n414 M0300A_STG_1_ULCR_NUM M0300A_STG_1_ULCR_NUM M0300A Stage 1 Pressure Ulcer Number CHAR 1 The data in this column indicates the current number of unhealed Stage 1 pressure ulcers. 0 Minimum\n9 Maximum\n- Not assessed/no information\n^ Blank (skip pattern)\n415 M0300B1_STG_2_ULCR_NUM M0300B1_STG_2_ULCR_NUM M0300B1 Stage 2 Pressure Ulcer Number CHAR 1 The data in this column indicates the current number of unhealed",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

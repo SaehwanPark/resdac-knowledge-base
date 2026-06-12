@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_39",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| 202 | DOB_DT | Date of Birth from Claim | \n\n | 204 | BENE_RACE_CD | Beneficiary Race Code (FFS) | \n\n | 205 | BENE_CNTY_CD | County Code from Claim (SSA) | \n\n | 206 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (FFS) | \n\n | 207 | BENE_MLG_CNTCT_ZIP_CD | Zip Code of Residence from Claim | \n\n | 208 | CLM_MDCL_REC | Claim Medical Record Number (FFS) | \n\n | 209 | CLM_TRTMT_AUTHRZTN_NUM | Claim Treatment Authorization Number | \n\n | 210 | CLM_PRCR_RTRN_CD | Claim Pricer Return Code |",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

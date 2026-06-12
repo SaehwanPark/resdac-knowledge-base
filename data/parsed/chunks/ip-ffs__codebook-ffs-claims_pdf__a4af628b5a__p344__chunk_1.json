@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p344__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 344,
+  "text": "INACTIVE \n69 = Day outlier amount \n70 = Cost outlier amount \n71 = Primary Payer amount \n72 = Coinsurance day. INACTIVE \n73 = Administrative days. INACTIVE \n74 = Indirect Medical Education \nAdjustment \n75 = Direct Medical Education \nAdjustment \n76 = Disproportionate Share \nAdjustment \n77 = Covered days. INACTIVE \n78 = Non-covered days/room charge \nadjustment \n79 = Cost report days. INACTIVE \n80 = Outlier days. INACTIVE \n81 = Discharges. INACTIVE \n82 = PIP days. INACTIVE \n83 = Total visits.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s13__chunk_4",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 13,
+  "text": "CHAR 6\nACO_ID ACO_ID ACO Identifier ACO Identifier. Format: A#### CHAR 5\nNPI_Name NPI_NAME Name of Provider Associated with the NPI Name of provider associated with the NPI as recorded in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS) CHAR 100\nTIN_LBN TIN_LBN TIN Legal Business Name Legal business name associated with the ACO participant TIN included on the ACO's certified participant list used in financial reconciliation CHAR 100\nACO_NAME ACO_NAME ACO Name ACO Doing",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

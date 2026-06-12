@@ -1,0 +1,1281 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Base File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+MISG_ELGBLTY_DATA_IND	Ind of Missing Eligibility Record for All Months of Service Yr	NUM	1	5
+BENE_STATE_CD	State FIPS Code for Beneficiary Home or Mailing Address - Ltst in Yr	CHAR	2	6
+BENE_CNTY_CD	County Code for Beneficiary Home or Mailing Address - Ltst in Yr	CHAR	3	7
+BENE_ZIP_CD	ZIP Code for Beneficiary Home or Mailing Address - Ltst in Yr	CHAR	9	8
+BIRTH_DT	Date of Birth	DATE	8	9
+AGE	Age (in Yrs)	NUM	3	10
+AGE_GRP_CD	Age Group	CHAR	2	11
+DEATH_DT	Date of Death	DATE	8	12
+DEATH_IND	Ind that Beneficiary Died During the Calendar Yr	NUM	1	13
+SEX_CD	Sex (Biological) - Ltst in Yr	CHAR	1	14
+ETHNCTY_CD	Ethnicity Code - Ltst in Yr	CHAR	1	15
+RACE_ETHNCTY_CD	Race and Ethnicity Constructed Code - Ltst in Yr	CHAR	1	16
+RACE_ETHNCTY_EXP_CD	Expanded Race and Ethnicity  Constructed  Code - Ltst in Yr	CHAR	3	17
+CRTFD_AMRCN_INDN_ALSKN_NTV_CD	Certified American Indian or Alaska Native Code - Ltst in Yr	CHAR	1	18
+PRMRY_LANG_GRP_CD	Constructed Primary Language Group Code - Ltst in Yr	CHAR	1	19
+PRMRY_LANG_CD	Primary Language Code - Ltst in Yr	CHAR	3	20
+ENGLSH_LANG_PRFCNCY_CD	English Language Proficiency Code - Ltst in Yr	CHAR	1	21
+MDCD_ENRLMT_DAYS_01	Medicaid Enrollment Days - January	NUM	3	22
+MDCD_ENRLMT_DAYS_02	Medicaid Enrollment Days - February	NUM	3	23
+MDCD_ENRLMT_DAYS_03	Medicaid Enrollment Days - March	NUM	3	24
+MDCD_ENRLMT_DAYS_04	Medicaid Enrollment Days - April	NUM	3	25
+MDCD_ENRLMT_DAYS_05	Medicaid Enrollment Days - May	NUM	3	26
+MDCD_ENRLMT_DAYS_06	Medicaid Enrollment Days - June	NUM	3	27
+MDCD_ENRLMT_DAYS_07	Medicaid Enrollment Days - July	NUM	3	28
+MDCD_ENRLMT_DAYS_08	Medicaid Enrollment Days - August	NUM	3	29
+MDCD_ENRLMT_DAYS_09	Medicaid Enrollment Days - September	NUM	3	30
+MDCD_ENRLMT_DAYS_10	Medicaid Enrollment Days - October	NUM	3	31
+MDCD_ENRLMT_DAYS_11	Medicaid Enrollment Days - November	NUM	3	32
+MDCD_ENRLMT_DAYS_12	Medicaid Enrollment Days - December	NUM	3	33
+MDCD_ENRLMT_DAYS_YR	Medicaid Enrollment Days - Total in Yr	NUM	3	34
+CHIP_ENRLMT_DAYS_01	CHIP Enrollment Days - January	NUM	3	35
+CHIP_ENRLMT_DAYS_02	CHIP Enrollment Days - February	NUM	3	36
+CHIP_ENRLMT_DAYS_03	CHIP Enrollment Days - March	NUM	3	37
+CHIP_ENRLMT_DAYS_04	CHIP Enrollment Days - April	NUM	3	38
+CHIP_ENRLMT_DAYS_05	CHIP Enrollment Days - May	NUM	3	39
+CHIP_ENRLMT_DAYS_06	CHIP Enrollment Days - June	NUM	3	40
+CHIP_ENRLMT_DAYS_07	CHIP Enrollment Days - July	NUM	3	41
+CHIP_ENRLMT_DAYS_08	CHIP Enrollment Days - August	NUM	3	42
+CHIP_ENRLMT_DAYS_09	CHIP Enrollment Days - September	NUM	3	43
+CHIP_ENRLMT_DAYS_10	CHIP Enrollment Days - October	NUM	3	44
+CHIP_ENRLMT_DAYS_11	CHIP Enrollment Days - November	NUM	3	45
+CHIP_ENRLMT_DAYS_12	CHIP Enrollment Days - December	NUM	3	46
+CHIP_ENRLMT_DAYS_YR	CHIP Enrollment Days - Total in Yr	NUM	3	47
+ELGBL_AFTR_EOY_IND1	Eligible After End of Year Indicator	CHAR	1	189
+MISG_ENRLMT_TYPE_IND_01	Missing Enrollment Type Code in Monthly Beneficiary Summary File – January	NUM	1	48
+MISG_ENRLMT_TYPE_IND_02	Missing Enrollment Type Code in Monthly Beneficiary Summary File – February	NUM	1	49
+MISG_ENRLMT_TYPE_IND_03	Missing Enrollment Type Code in Monthly Beneficiary Summary File – March	NUM	1	50
+MISG_ENRLMT_TYPE_IND_04	Missing Enrollment Type Code in Monthly Beneficiary Summary File – April	NUM	1	51
+MISG_ENRLMT_TYPE_IND_05	Missing Enrollment Type Code in Monthly Beneficiary Summary File – May	NUM	1	52
+MISG_ENRLMT_TYPE_IND_06	Missing Enrollment Type Code in Monthly Beneficiary Summary File – June	NUM	1	53
+MISG_ENRLMT_TYPE_IND_07	Missing Enrollment Type Code in Monthly Beneficiary Summary File – July	NUM	1	54
+MISG_ENRLMT_TYPE_IND_08	Missing Enrollment Type Code in Monthly Beneficiary Summary File – August	NUM	1	55
+MISG_ENRLMT_TYPE_IND_09	Missing Enrollment Type Code in Monthly Beneficiary Summary File – September	NUM	1	56
+MISG_ENRLMT_TYPE_IND_10	Missing Enrollment Type Code in Monthly Beneficiary Summary File – October	NUM	1	57
+MISG_ENRLMT_TYPE_IND_11	Missing Enrollment Type Code in Monthly Beneficiary Summary File – November	NUM	1	58
+MISG_ENRLMT_TYPE_IND_12	Missing Enrollment Type Code in Monthly Beneficiary Summary File – December	NUM	1	59
+CHIP_CD_01	Medicaid, Medicaid Expansion CHIP, or Separate CHIP Code - January	CHAR	1	60
+CHIP_CD_02	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - February	CHAR	1	61
+CHIP_CD_03	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - March	CHAR	1	62
+CHIP_CD_04	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - April	CHAR	1	63
+CHIP_CD_05	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - May	CHAR	1	64
+CHIP_CD_06	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - June	CHAR	1	65
+CHIP_CD_07	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - July	CHAR	1	66
+CHIP_CD_08	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - August	CHAR	1	67
+CHIP_CD_09	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - September	CHAR	1	68
+CHIP_CD_10	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - October	CHAR	1	69
+CHIP_CD_11	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - November	CHAR	1	70
+CHIP_CD_12	Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - December	CHAR	1	71
+CHIP_CD_LTST	Medicaid, Medicaid Expansion CHIP, or Separate CHIP Code - Ltst in Yr	CHAR	1	72
+ELGBLTY_CHG_RSN_CD_011	Reason For Change in Eligibility Status - January	CHAR	2	190
+ELGBLTY_CHG_RSN_CD_021	Reason For Change in Eligibility Status - February	CHAR	2	191
+ELGBLTY_CHG_RSN_CD_031	Reason For Change in Eligibility Status -March	CHAR	2	192
+ELGBLTY_CHG_RSN_CD_041	Reason For Change in Eligibility Status - April	CHAR	2	193
+ELGBLTY_CHG_RSN_CD_051	Reason For Change in Eligibility Status - May	CHAR	2	194
+ELGBLTY_CHG_RSN_CD_061	Reason For Change in Eligibility Status - June	CHAR	2	195
+ELGBLTY_CHG_RSN_CD_071	Reason For Change in Eligibility Status - July	CHAR	2	196
+ELGBLTY_CHG_RSN_CD_081	Reason For Change in Eligibility Status - August	CHAR	2	197
+ELGBLTY_CHG_RSN_CD_091	Reason For Change in Eligibility Status - September	CHAR	2	198
+ELGBLTY_CHG_RSN_CD_101	Reason For Change in Eligibility Status - October	CHAR	2	199
+ELGBLTY_CHG_RSN_CD_111	Reason For Change in Eligibility Status - November	CHAR	2	200
+ELGBLTY_CHG_RSN_CD_121	Reason For Change in Eligibility Status - December	CHAR	2	201
+RSTRCTD_BNFTS_CD_01	Scope of Medicaid or CHIP Benefits - January	CHAR	1	73
+RSTRCTD_BNFTS_CD_02	Scope of Medicaid or CHIP Benefits - February	CHAR	1	74
+RSTRCTD_BNFTS_CD_03	Scope of Medicaid or CHIP Benefits - March	CHAR	1	75
+RSTRCTD_BNFTS_CD_04	Scope of Medicaid or CHIP Benefits - April	CHAR	1	76
+RSTRCTD_BNFTS_CD_05	Scope of Medicaid or CHIP Benefits - May	CHAR	1	77
+RSTRCTD_BNFTS_CD_06	Scope of Medicaid or CHIP Benefits - June	CHAR	1	78
+RSTRCTD_BNFTS_CD_07	Scope of Medicaid or CHIP Benefits - July	CHAR	1	79
+RSTRCTD_BNFTS_CD_08	Scope of Medicaid or CHIP Benefits - August	CHAR	1	80
+RSTRCTD_BNFTS_CD_09	Scope of Medicaid or CHIP Benefits - September	CHAR	1	81
+RSTRCTD_BNFTS_CD_10	Scope of Medicaid or CHIP Benefits - October	CHAR	1	82
+RSTRCTD_BNFTS_CD_11	Scope of Medicaid or CHIP Benefits - November	CHAR	1	83
+RSTRCTD_BNFTS_CD_12	Scope of Medicaid or CHIP Benefits - December	CHAR	1	84
+RSTRCTD_BNFTS_CD_LTST	Scope of Medicaid or CHIP Benefits - Ltst in Yr	CHAR	1	85
+DUAL_ELGBL_CD_01	Medicare-Medicaid Dual Eligibility Code - January	CHAR	2	86
+DUAL_ELGBL_CD_02	Medicare-Medicaid Dual Eligibility Code - February	CHAR	2	87
+DUAL_ELGBL_CD_03	Medicare-Medicaid Dual Eligibility Code - March	CHAR	2	88
+DUAL_ELGBL_CD_04	Medicare-Medicaid Dual Eligibility Code - April	CHAR	2	89
+DUAL_ELGBL_CD_05	Medicare-Medicaid Dual Eligibility Code - May	CHAR	2	90
+DUAL_ELGBL_CD_06	Medicare-Medicaid Dual Eligibility Code - June	CHAR	2	91
+DUAL_ELGBL_CD_07	Medicare-Medicaid Dual Eligibility Code - July	CHAR	2	92
+DUAL_ELGBL_CD_08	Medicare-Medicaid Dual Eligibility Code - August	CHAR	2	93
+DUAL_ELGBL_CD_09	Medicare-Medicaid Dual Eligibility Code - September	CHAR	2	94
+DUAL_ELGBL_CD_10	Medicare-Medicaid Dual Eligibility Code - October	CHAR	2	95
+DUAL_ELGBL_CD_11	Medicare-Medicaid Dual Eligibility Code - November	CHAR	2	96
+DUAL_ELGBL_CD_12	Medicare-Medicaid Dual Eligibility Code - December	CHAR	2	97
+DUAL_ELGBL_CD_LTST	Medicare-Medicaid Dual Eligibility Code - Ltst in Yr	CHAR	2	98
+ELGBLTY_GRP_CD_01	Eligibility Group Code - January	CHAR	2	99
+ELGBLTY_GRP_CD_02	Eligibility Group Code - February	CHAR	2	100
+ELGBLTY_GRP_CD_03	Eligibility Group Code - March	CHAR	2	101
+ELGBLTY_GRP_CD_04	Eligibility Group Code - April	CHAR	2	102
+ELGBLTY_GRP_CD_05	Eligibility Group Code - May	CHAR	2	103
+ELGBLTY_GRP_CD_06	Eligibility Group Code - June	CHAR	2	104
+ELGBLTY_GRP_CD_07	Eligibility Group Code - July	CHAR	2	105
+ELGBLTY_GRP_CD_08	Eligibility Group Code - August	CHAR	2	106
+ELGBLTY_GRP_CD_09	Eligibility Group Code - September	CHAR	2	107
+ELGBLTY_GRP_CD_10	Eligibility Group Code - October	CHAR	2	108
+ELGBLTY_GRP_CD_11	Eligibility Group Code - November	CHAR	2	109
+ELGBLTY_GRP_CD_12	Eligibility Group Code - December	CHAR	2	110
+ELGBLTY_GRP_CD_LTST	Eligibility Group Code - Ltst in Yr	CHAR	2	111
+MASBOE_CD_01	Maintenance Assistance Status and Basis of Eligibility Code - January	CHAR	3	112
+MASBOE_CD_02	Maintenance Assistance Status and Basis of Eligibility Code - February	CHAR	3	113
+MASBOE_CD_03	Maintenance Assistance Status and Basis of Eligibility Code - March	CHAR	3	114
+MASBOE_CD_04	Maintenance Assistance Status and Basis of Eligibility Code - April	CHAR	3	115
+MASBOE_CD_05	Maintenance Assistance Status and Basis of Eligibility Code - May	CHAR	3	116
+MASBOE_CD_06	Maintenance Assistance Status and Basis of Eligibility Code - June	CHAR	3	117
+MASBOE_CD_07	Maintenance Assistance Status and Basis of Eligibility Code - July	CHAR	3	118
+MASBOE_CD_08	Maintenance Assistance Status and Basis of Eligibility Code - August	CHAR	3	119
+MASBOE_CD_09	Maintenance Assistance Status and Basis of Eligibility Code - September	CHAR	3	120
+MASBOE_CD_10	Maintenance Assistance Status and Basis of Eligibility Code - October	CHAR	3	121
+MASBOE_CD_11	Maintenance Assistance Status and Basis of Eligibility Code - November	CHAR	3	122
+MASBOE_CD_12	Maintenance Assistance Status and Basis of Eligibility Code - December	CHAR	3	123
+MASBOE_CD_LTST	Maintenance Assistance Status and Basis of Eligibility Code - Ltst in Yr	CHAR	3	124
+STATE_SPEC_ELGBLTY_GRP_CD_01	State-Specific Eligibility Group Code - January	CHAR	6	125
+STATE_SPEC_ELGBLTY_GRP_CD_02	State-Specific Eligibility Group Code - February	CHAR	6	126
+STATE_SPEC_ELGBLTY_GRP_CD_03	State-Specific Eligibility Group Code - March	CHAR	6	127
+STATE_SPEC_ELGBLTY_GRP_CD_04	State-Specific Eligibility Group Code - April	CHAR	6	128
+STATE_SPEC_ELGBLTY_GRP_CD_05	State-Specific Eligibility Group Code - May	CHAR	6	129
+STATE_SPEC_ELGBLTY_GRP_CD_06	State-Specific Eligibility Group Code - June	CHAR	6	130
+STATE_SPEC_ELGBLTY_GRP_CD_07	State-Specific Eligibility Group Code - July	CHAR	6	131
+STATE_SPEC_ELGBLTY_GRP_CD_08	State-Specific Eligibility Group Code - August	CHAR	6	132
+STATE_SPEC_ELGBLTY_GRP_CD_09	State-Specific Eligibility Group Code - September	CHAR	6	133
+STATE_SPEC_ELGBLTY_GRP_CD_10	State-Specific Eligibility Group Code - October	CHAR	6	134
+STATE_SPEC_ELGBLTY_GRP_CD_11	State-Specific Eligibility Group Code - November	CHAR	6	135
+STATE_SPEC_ELGBLTY_GRP_CD_12	State-Specific Eligibility Group Code - December	CHAR	6	136
+STATE_SPEC_ELGBLTY_GRP_CD_LTST	State-Specific Eligibility Group Code - Ltst in Yr	CHAR	6	137
+MC_PLAN_TYPE_CD_01	Managed Care Plan Type Code (Using Hierarchy) - January	CHAR	2	138
+MC_PLAN_TYPE_CD_02	Managed Care Plan Type Code (Using Hierarchy) - February	CHAR	2	139
+MC_PLAN_TYPE_CD_03	Managed Care Plan Type Code (Using Hierarchy) - March	CHAR	2	140
+MC_PLAN_TYPE_CD_04	Managed Care Plan Type Code (Using Hierarchy) - April	CHAR	2	141
+MC_PLAN_TYPE_CD_05	Managed Care Plan Type Code (Using Hierarchy) - May	CHAR	2	142
+MC_PLAN_TYPE_CD_06	Managed Care Plan Type Code (Using Hierarchy) - June	CHAR	2	143
+MC_PLAN_TYPE_CD_07	Managed Care Plan Type Code (Using Hierarchy) - July	CHAR	2	144
+MC_PLAN_TYPE_CD_08	Managed Care Plan Type Code (Using Hierarchy) - August	CHAR	2	145
+MC_PLAN_TYPE_CD_09	Managed Care Plan Type Code (Using Hierarchy) - September	CHAR	2	146
+MC_PLAN_TYPE_CD_10	Managed Care Plan Type Code (Using Hierarchy) - October	CHAR	2	147
+MC_PLAN_TYPE_CD_11	Managed Care Plan Type Code (Using Hierarchy) - November	CHAR	2	148
+MC_PLAN_TYPE_CD_12	Managed Care Plan Type Code (Using Hierarchy) - December	CHAR	2	149
+MRTL_STUS_CD	Marital Status Code - Ltst in Yr	CHAR	2	150
+HSEHLD_SIZE_CD	Household Size Used To Determine Medicaid or CHIP Eligibility - Ltst in Yr	CHAR	2	151
+INCM_CD	Income Relative to the Federal Poverty Level - Ltst in Yr	CHAR	2	152
+FPL_PCT	Beneficiary's household income  as a percentage of the federal poverty level	NUM	3	202	New2
+VET_IND	Veteran Ind - Ltst in Yr	CHAR	1	153
+CTZNSHP_IND	U.S. Citizenship Ind - Ltst in Yr	CHAR	1	154
+CTZNSHP_VRFCTN_PENDG_IND	Beneficiary is Enrolled Pending Citizenship Verification - Ltst in Yr	CHAR	1	155
+IMGRTN_STUS_CD	Immigration Status Code - Ltst in Yr	CHAR	1	156
+IMGRTN_VRFCTN_PENDG_IND	Beneficiary is Enrolled Pending Immigration Verification - Ltst in Yr	CHAR	1	157
+IMGRTN_STUS_5YR_BAR_END_DT	Immigration Status Five Yr Bar End Date - Ltst in Yr	DATE	8	158
+CARE_LVL_STUS_CD	Level of Care Status Code for LTSS - Ltst in Yr	CHAR	3	159
+DSBLTY_DEAF_IND	Disability Ind - Deaf - Ever in Calendar Yr	NUM	1	160
+DSBLTY_BLND_IND	Disability Ind - Blind - Ever in Calendar Yr	NUM	1	161
+DSBLTY_DFCLTY_CNCNTRTNG_IND	Disability Ind - Difficulty Concentrating - Ever in Calendar Yr	NUM	1	162
+DSBLTY_DFCLTY_WLKG_IND	Disability Ind - Difficulty Walking - Ever in Calendar Yr	NUM	1	163
+DSBLTY_DFCLTY_DRSNG_BATHNG_IND	Disability Ind - Difficulty Dressing or Bathing - Ever in Calendar Yr	NUM	1	164
+DSBLTY_DFCLTY_ERNDS_IND	Disability Ind - Difficulty Running Errands Alone - Ever in Calendar Yr	NUM	1	165
+DSBLTY_OTHR_IND	Disability Ind - Other Disability Not Listed - Ever in Calendar Yr	NUM	1	166
+BIRTH_CNCPTN_IND	Birth to Conception Ind - Ltst in Yr	CHAR	1	167
+SSDI_IND	Social Security Disability Insurance (SSDI) Ind - Ltst in Yr	CHAR	1	168
+SSI_IND	Supplemental Security Income (SSI) Ind - Ltst in Yr	CHAR	1	169
+SSI_STUS_CD	Supplemental Security Income (SSI) Status Code - Ltst in Yr	CHAR	3	170
+SSI_STATE_SPLMT_CD	Supplemental Security Income (SSI) State Supplement Code - Ltst in Yr	CHAR	3	171
+TANF_CASH_CD	Temporary Assistance for Needy Families (TANF) Cash Code - Ltst in Yr	CHAR	1	172
+TPL_INSRNC_CVRG_IND	Third Party Liability (TPL) Insurance Coverage Ind - Ltst in Yr	CHAR	1	173
+TPL_OTHR_CVRG_IND	Third Party Liability (TPL) - Other Coverage Ind - Ltst in Yr	CHAR	1	174
+MSIS_CASE_NUM	Encrypted TMSIS Case Number - Ltst in Yr	CHAR	32	175
+SPLMTL_DTS	Beneficiary Record In Supplemental Dates File	CHAR	1	176
+SPLMTL_MC	Beneficiary Record in Supplemental Managed Care File	CHAR	1	177
+SPLMTL_WVR	Beneficiary Record in Supplemental Waiver File	CHAR	1	178
+SPLMTL_HLTH_HOME_SPO	Beneficiary Record in Supplemental Hlth Home and State Plan Option (SPO) File	CHAR	1	179
+SPLMTL_MFP	Beneficiary Record in Supplemental Money Follows Person (MFP) File	CHAR	1	180
+SPLMTL_DSB_HCBS	Beneficiary HCBS Record in Supplemental Disability File	CHAR	1	181
+SPLMTL_DSB_LTSS	Beneficiary LTSS Record in Supplemental Disability File	CHAR	1	182
+SPLMTL_DSB_LCKIN	Beneficiary Lock-In Record in Supplemental Disability File	CHAR	1	183
+SPLMTL_DSB_OTHR	Beneficiary Other Needs Record in Supplemental Disability File	CHAR	1	184
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	185
+DE_VRSN	DE Version Representing the Iteration of the File	CHAR	2	186
+RFRNC_YR	Reference Yr	CHAR	4	187
+CCW_LD_DT	CCW Load Date	DATE	8	188
+1 Fields are populated starting with the 2020 Release 1 RIF
+2 Fields populated starting with the 2023 Release 1 RIF are designated as "New2"
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Dates File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+ENRLMT_TYPE_CD	Enrollment Type Code - Medicaid or CHIP	CHAR	1	5
+ENRLMT_START_DT	Enrollment Start Date (Within Calendar Yr)	DATE	8	6
+ENRLMT_END_DT	Enrollment End Date (Within Calendar Yr)	DATE	8	7
+RFRNC_YR	Reference Yr	CHAR	4	8
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Managed Care Enrollment File
+Version — December 2025
+RIF SAS name	RIF label	Type	Length	RIF sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CMPRHNSV_MCO_MOS	Comprehensive Managed Care Organization (MCO) Plan Months	NUM	3	5
+TRDTNL_PCCM_MOS	Traditional Primary Care Case Management (PCCM) Months	NUM	3	6
+ENHNCD_PCCM_MOS	Enhanced Primary Care Case Management (PCCM)  Months	NUM	3	7
+HIO_MOS	Hlth Insuring Organization (HIO) Months	NUM	3	8
+PIHP_MOS	Prepaid Inpatient Hlth Plan (PIHP) Months	NUM	3	9
+PAHP_MOS	Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	10
+LTC_PIHP_MOS	Long-Term Care Prepaid Inpatient Hlth Plan (PIHP) Months	NUM	3	11
+MH_PIHP_MOS	Mental Hlth (MH) Prepaid Inpatient Hlth Plan (PIHP) Months	NUM	3	12
+MH_PAHP_MOS	Mental Hlth (MH) Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	13
+SUD_PIHP_MOS	Substance Use Disorders (SUD) Prepaid Inpatient Hlth Plan (PIHP) Months	NUM	3	14
+SUD_PAHP_MOS	Substance Use Disorders (SUD) Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	15
+MH_SUD_PIHP_MOS	Mental Hlth & Substance Use Disorders Prepaid Inpatient Hlth Plan (PIHP) Months	NUM	3	16
+MH_SUD_PAHP_MOS	Mental Hlth & Substance Use Disorder Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	17
+DNTL_PAHP_MOS	Dental Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	18
+TRNSPRTN_PAHP_MOS	Transportation Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	19
+DISEASE_MGMT_PAHP_MOS	Disease Management Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	20
+PACE_MOS	Program of All-Inclusive Care for the Elderly (PACE) Months	NUM	3	21
+PHRMCY_PAHP_MOS	Pharmacy Prepaid Ambulatory Hlth Plan (PAHP) Months	NUM	3	22
+ACO_MOS	Accountable Care Organization (ACO) Months	NUM	3	23
+HLTH_MDCL_HOME_MOS	Hlth/Medical Home Months	NUM	3	24
+INTGRTD_CARE_DUAL_ELGBL_MOS	Integrated Care For Dual Eligible Months	NUM	3	25
+LTSS_PIHP_MOS1	Long-Term Supports and Services Prepaid Inpatient Hlth Plan (PIHP) Months	NUM	3	411
+OTH_PLAN_MOS1	Other Plan Months	NUM	3	412
+MC_PLAN_ID_01_01	Managed Care Plan ID (1st Occurrence ) - January	CHAR	12	26
+MC_PLAN_ID_01_02	Managed Care Plan ID (1st Occurrence ) - February	CHAR	12	27
+MC_PLAN_ID_01_03	Managed Care Plan ID (1st Occurrence ) - March	CHAR	12	28
+MC_PLAN_ID_01_04	Managed Care Plan ID (1st Occurrence ) - April	CHAR	12	29
+MC_PLAN_ID_01_05	Managed Care Plan ID (1st Occurrence ) - May	CHAR	12	30
+MC_PLAN_ID_01_06	Managed Care Plan ID (1st Occurrence ) - June	CHAR	12	31
+MC_PLAN_ID_01_07	Managed Care Plan ID (1st Occurrence ) - July	CHAR	12	32
+MC_PLAN_ID_01_08	Managed Care Plan ID (1st Occurrence ) - August	CHAR	12	33
+MC_PLAN_ID_01_09	Managed Care Plan ID (1st Occurrence ) - September	CHAR	12	34
+MC_PLAN_ID_01_10	Managed Care Plan ID (1st Occurrence ) - October	CHAR	12	35
+MC_PLAN_ID_01_11	Managed Care Plan ID (1st Occurrence ) - November	CHAR	12	36
+MC_PLAN_ID_01_12	Managed Care Plan ID (1st Occurrence ) - December	CHAR	12	37
+MC_PLAN_TYPE_CD_01_01	Managed Care Plan Type Code (1st Occurrence) - January	CHAR	2	38
+MC_PLAN_TYPE_CD_01_02	Managed Care Plan Type Code (1st Occurrence) - February	CHAR	2	39
+MC_PLAN_TYPE_CD_01_03	Managed Care Plan Type Code (1st Occurrence) - March	CHAR	2	40
+MC_PLAN_TYPE_CD_01_04	Managed Care Plan Type Code (1st Occurrence) - April	CHAR	2	41
+MC_PLAN_TYPE_CD_01_05	Managed Care Plan Type Code (1st Occurrence) - May	CHAR	2	42
+MC_PLAN_TYPE_CD_01_06	Managed Care Plan Type Code (1st Occurrence) - June	CHAR	2	43
+MC_PLAN_TYPE_CD_01_07	Managed Care Plan Type Code (1st Occurrence) - July	CHAR	2	44
+MC_PLAN_TYPE_CD_01_08	Managed Care Plan Type Code (1st Occurrence) - August	CHAR	2	45
+MC_PLAN_TYPE_CD_01_09	Managed Care Plan Type Code (1st Occurrence) - September	CHAR	2	46
+MC_PLAN_TYPE_CD_01_10	Managed Care Plan Type Code (1st Occurrence) - October	CHAR	2	47
+MC_PLAN_TYPE_CD_01_11	Managed Care Plan Type Code (1st Occurrence) - November	CHAR	2	48
+MC_PLAN_TYPE_CD_01_12	Managed Care Plan Type Code (1st Occurrence) - December	CHAR	2	49
+MC_PLAN_ID_02_01	Managed Care Plan ID (2nd Occurrence ) - January	CHAR	12	50
+MC_PLAN_ID_02_02	Managed Care Plan ID (2nd Occurrence ) - February	CHAR	12	51
+MC_PLAN_ID_02_03	Managed Care Plan ID (2nd Occurrence ) - March	CHAR	12	52
+MC_PLAN_ID_02_04	Managed Care Plan ID (2nd Occurrence ) - April	CHAR	12	53
+MC_PLAN_ID_02_05	Managed Care Plan ID (2nd Occurrence ) - May	CHAR	12	54
+MC_PLAN_ID_02_06	Managed Care Plan ID (2nd Occurrence ) - June	CHAR	12	55
+MC_PLAN_ID_02_07	Managed Care Plan ID (2nd Occurrence ) - July	CHAR	12	56
+MC_PLAN_ID_02_08	Managed Care Plan ID (2nd Occurrence ) - August	CHAR	12	57
+MC_PLAN_ID_02_09	Managed Care Plan ID (2nd Occurrence ) - September	CHAR	12	58
+MC_PLAN_ID_02_10	Managed Care Plan ID (2nd Occurrence ) - October	CHAR	12	59
+MC_PLAN_ID_02_11	Managed Care Plan ID (2nd Occurrence ) - November	CHAR	12	60
+MC_PLAN_ID_02_12	Managed Care Plan ID (2nd Occurrence ) - December	CHAR	12	61
+MC_PLAN_TYPE_CD_02_01	Managed Care Plan Type Code (2nd Occurrence) - January	CHAR	2	62
+MC_PLAN_TYPE_CD_02_02	Managed Care Plan Type Code (2nd Occurrence) - February	CHAR	2	63
+MC_PLAN_TYPE_CD_02_03	Managed Care Plan Type Code (2nd Occurrence) - March	CHAR	2	64
+MC_PLAN_TYPE_CD_02_04	Managed Care Plan Type Code (2nd Occurrence) - April	CHAR	2	65
+MC_PLAN_TYPE_CD_02_05	Managed Care Plan Type Code (2nd Occurrence) - May	CHAR	2	66
+MC_PLAN_TYPE_CD_02_06	Managed Care Plan Type Code (2nd Occurrence) - June	CHAR	2	67
+MC_PLAN_TYPE_CD_02_07	Managed Care Plan Type Code (2nd Occurrence) - July	CHAR	2	68
+MC_PLAN_TYPE_CD_02_08	Managed Care Plan Type Code (2nd Occurrence) - August	CHAR	2	69
+MC_PLAN_TYPE_CD_02_09	Managed Care Plan Type Code (2nd Occurrence) - September	CHAR	2	70
+MC_PLAN_TYPE_CD_02_10	Managed Care Plan Type Code (2nd Occurrence) - October	CHAR	2	71
+MC_PLAN_TYPE_CD_02_11	Managed Care Plan Type Code (2nd Occurrence) - November	CHAR	2	72
+MC_PLAN_TYPE_CD_02_12	Managed Care Plan Type Code (2nd Occurrence) - December	CHAR	2	73
+MC_PLAN_ID_03_01	Managed Care Plan ID (3rd Occurrence ) - January	CHAR	12	74
+MC_PLAN_ID_03_02	Managed Care Plan ID (3rd Occurrence ) - February	CHAR	12	75
+MC_PLAN_ID_03_03	Managed Care Plan ID (3rd Occurrence ) - March	CHAR	12	76
+MC_PLAN_ID_03_04	Managed Care Plan ID (3rd Occurrence ) - April	CHAR	12	77
+MC_PLAN_ID_03_05	Managed Care Plan ID (3rd Occurrence ) - May	CHAR	12	78
+MC_PLAN_ID_03_06	Managed Care Plan ID (3rd Occurrence ) - June	CHAR	12	79
+MC_PLAN_ID_03_07	Managed Care Plan ID (3rd Occurrence ) - July	CHAR	12	80
+MC_PLAN_ID_03_08	Managed Care Plan ID (3rd Occurrence ) - August	CHAR	12	81
+MC_PLAN_ID_03_09	Managed Care Plan ID (3rd Occurrence ) - September	CHAR	12	82
+MC_PLAN_ID_03_10	Managed Care Plan ID (3rd Occurrence ) - October	CHAR	12	83
+MC_PLAN_ID_03_11	Managed Care Plan ID (3rd Occurrence ) - November	CHAR	12	84
+MC_PLAN_ID_03_12	Managed Care Plan ID (3rd Occurrence ) - December	CHAR	12	85
+MC_PLAN_TYPE_CD_03_01	Managed Care Plan Type Code (3rd Occurrence) - January	CHAR	2	86
+MC_PLAN_TYPE_CD_03_02	Managed Care Plan Type Code (3rd Occurrence) - February	CHAR	2	87
+MC_PLAN_TYPE_CD_03_03	Managed Care Plan Type Code (3rd Occurrence) - March	CHAR	2	88
+MC_PLAN_TYPE_CD_03_04	Managed Care Plan Type Code (3rd Occurrence) - April	CHAR	2	89
+MC_PLAN_TYPE_CD_03_05	Managed Care Plan Type Code (3rd Occurrence) - May	CHAR	2	90
+MC_PLAN_TYPE_CD_03_06	Managed Care Plan Type Code (3rd Occurrence) - June	CHAR	2	91
+MC_PLAN_TYPE_CD_03_07	Managed Care Plan Type Code (3rd Occurrence) - July	CHAR	2	92
+MC_PLAN_TYPE_CD_03_08	Managed Care Plan Type Code (3rd Occurrence) - August	CHAR	2	93
+MC_PLAN_TYPE_CD_03_09	Managed Care Plan Type Code (3rd Occurrence) - September	CHAR	2	94
+MC_PLAN_TYPE_CD_03_10	Managed Care Plan Type Code (3rd Occurrence) - October	CHAR	2	95
+MC_PLAN_TYPE_CD_03_11	Managed Care Plan Type Code (3rd Occurrence) - November	CHAR	2	96
+MC_PLAN_TYPE_CD_03_12	Managed Care Plan Type Code (3rd Occurrence) - December	CHAR	2	97
+MC_PLAN_ID_04_01	Managed Care Plan ID (4th Occurrence ) - January	CHAR	12	98
+MC_PLAN_ID_04_02	Managed Care Plan ID (4th Occurrence ) - February	CHAR	12	99
+MC_PLAN_ID_04_03	Managed Care Plan ID (4th Occurrence ) - March	CHAR	12	100
+MC_PLAN_ID_04_04	Managed Care Plan ID (4th Occurrence ) - April	CHAR	12	101
+MC_PLAN_ID_04_05	Managed Care Plan ID (4th Occurrence ) - May	CHAR	12	102
+MC_PLAN_ID_04_06	Managed Care Plan ID (4th Occurrence ) - June	CHAR	12	103
+MC_PLAN_ID_04_07	Managed Care Plan ID (4th Occurrence ) - July	CHAR	12	104
+MC_PLAN_ID_04_08	Managed Care Plan ID (4th Occurrence ) - August	CHAR	12	105
+MC_PLAN_ID_04_09	Managed Care Plan ID (4th Occurrence ) - September	CHAR	12	106
+MC_PLAN_ID_04_10	Managed Care Plan ID (4th Occurrence ) - October	CHAR	12	107
+MC_PLAN_ID_04_11	Managed Care Plan ID (4th Occurrence ) - November	CHAR	12	108
+MC_PLAN_ID_04_12	Managed Care Plan ID (4th Occurrence ) - December	CHAR	12	109
+MC_PLAN_TYPE_CD_04_01	Managed Care Plan Type Code (4th Occurrence) - January	CHAR	2	110
+MC_PLAN_TYPE_CD_04_02	Managed Care Plan Type Code (4th Occurrence) - February	CHAR	2	111
+MC_PLAN_TYPE_CD_04_03	Managed Care Plan Type Code (4th Occurrence) - March	CHAR	2	112
+MC_PLAN_TYPE_CD_04_04	Managed Care Plan Type Code (4th Occurrence) - April	CHAR	2	113
+MC_PLAN_TYPE_CD_04_05	Managed Care Plan Type Code (4th Occurrence) - May	CHAR	2	114
+MC_PLAN_TYPE_CD_04_06	Managed Care Plan Type Code (4th Occurrence) - June	CHAR	2	115
+MC_PLAN_TYPE_CD_04_07	Managed Care Plan Type Code (4th Occurrence) - July	CHAR	2	116
+MC_PLAN_TYPE_CD_04_08	Managed Care Plan Type Code (4th Occurrence) - August	CHAR	2	117
+MC_PLAN_TYPE_CD_04_09	Managed Care Plan Type Code (4th Occurrence) - September	CHAR	2	118
+MC_PLAN_TYPE_CD_04_10	Managed Care Plan Type Code (4th Occurrence) - October	CHAR	2	119
+MC_PLAN_TYPE_CD_04_11	Managed Care Plan Type Code (4th Occurrence) - November	CHAR	2	120
+MC_PLAN_TYPE_CD_04_12	Managed Care Plan Type Code (4th Occurrence) - December	CHAR	2	121
+MC_PLAN_ID_05_01	Managed Care Plan ID (5th Occurrence ) - January	CHAR	12	122
+MC_PLAN_ID_05_02	Managed Care Plan ID (5th Occurrence ) - February	CHAR	12	123
+MC_PLAN_ID_05_03	Managed Care Plan ID (5th Occurrence ) - March	CHAR	12	124
+MC_PLAN_ID_05_04	Managed Care Plan ID (5th Occurrence ) - April	CHAR	12	125
+MC_PLAN_ID_05_05	Managed Care Plan ID (5th Occurrence ) - May	CHAR	12	126
+MC_PLAN_ID_05_06	Managed Care Plan ID (5th Occurrence ) - June	CHAR	12	127
+MC_PLAN_ID_05_07	Managed Care Plan ID (5th Occurrence ) - July	CHAR	12	128
+MC_PLAN_ID_05_08	Managed Care Plan ID (5th Occurrence ) - August	CHAR	12	129
+MC_PLAN_ID_05_09	Managed Care Plan ID (5th Occurrence ) - September	CHAR	12	130
+MC_PLAN_ID_05_10	Managed Care Plan ID (5th Occurrence ) - October	CHAR	12	131
+MC_PLAN_ID_05_11	Managed Care Plan ID (5th Occurrence ) - November	CHAR	12	132
+MC_PLAN_ID_05_12	Managed Care Plan ID (5th Occurrence ) - December	CHAR	12	133
+MC_PLAN_TYPE_CD_05_01	Managed Care Plan Type Code (5th Occurrence) - January	CHAR	2	134
+MC_PLAN_TYPE_CD_05_02	Managed Care Plan Type Code (5th Occurrence) - February	CHAR	2	135
+MC_PLAN_TYPE_CD_05_03	Managed Care Plan Type Code (5th Occurrence) - March	CHAR	2	136
+MC_PLAN_TYPE_CD_05_04	Managed Care Plan Type Code (5th Occurrence) - April	CHAR	2	137
+MC_PLAN_TYPE_CD_05_05	Managed Care Plan Type Code (5th Occurrence) - May	CHAR	2	138
+MC_PLAN_TYPE_CD_05_06	Managed Care Plan Type Code (5th Occurrence) - June	CHAR	2	139
+MC_PLAN_TYPE_CD_05_07	Managed Care Plan Type Code (5th Occurrence) - July	CHAR	2	140
+MC_PLAN_TYPE_CD_05_08	Managed Care Plan Type Code (5th Occurrence) - August	CHAR	2	141
+MC_PLAN_TYPE_CD_05_09	Managed Care Plan Type Code (5th Occurrence) - September	CHAR	2	142
+MC_PLAN_TYPE_CD_05_10	Managed Care Plan Type Code (5th Occurrence) - October	CHAR	2	143
+MC_PLAN_TYPE_CD_05_11	Managed Care Plan Type Code (5th Occurrence) - November	CHAR	2	144
+MC_PLAN_TYPE_CD_05_12	Managed Care Plan Type Code (5th Occurrence) - December	CHAR	2	145
+MC_PLAN_ID_06_01	Managed Care Plan ID (6th Occurrence ) - January	CHAR	12	146
+MC_PLAN_ID_06_02	Managed Care Plan ID (6th Occurrence ) - February	CHAR	12	147
+MC_PLAN_ID_06_03	Managed Care Plan ID (6th Occurrence ) - March	CHAR	12	148
+MC_PLAN_ID_06_04	Managed Care Plan ID (6th Occurrence ) - April	CHAR	12	149
+MC_PLAN_ID_06_05	Managed Care Plan ID (6th Occurrence ) - May	CHAR	12	150
+MC_PLAN_ID_06_06	Managed Care Plan ID (6th Occurrence ) - June	CHAR	12	151
+MC_PLAN_ID_06_07	Managed Care Plan ID (6th Occurrence ) - July	CHAR	12	152
+MC_PLAN_ID_06_08	Managed Care Plan ID (6th Occurrence ) - August	CHAR	12	153
+MC_PLAN_ID_06_09	Managed Care Plan ID (6th Occurrence ) - September	CHAR	12	154
+MC_PLAN_ID_06_10	Managed Care Plan ID (6th Occurrence ) - October	CHAR	12	155
+MC_PLAN_ID_06_11	Managed Care Plan ID (6th Occurrence ) - November	CHAR	12	156
+MC_PLAN_ID_06_12	Managed Care Plan ID (6th Occurrence ) - December	CHAR	12	157
+MC_PLAN_TYPE_CD_06_01	Managed Care Plan Type Code (6th Occurrence) - January	CHAR	2	158
+MC_PLAN_TYPE_CD_06_02	Managed Care Plan Type Code (6th Occurrence) - February	CHAR	2	159
+MC_PLAN_TYPE_CD_06_03	Managed Care Plan Type Code (6th Occurrence) - March	CHAR	2	160
+MC_PLAN_TYPE_CD_06_04	Managed Care Plan Type Code (6th Occurrence) - April	CHAR	2	161
+MC_PLAN_TYPE_CD_06_05	Managed Care Plan Type Code (6th Occurrence) - May	CHAR	2	162
+MC_PLAN_TYPE_CD_06_06	Managed Care Plan Type Code (6th Occurrence) - June	CHAR	2	163
+MC_PLAN_TYPE_CD_06_07	Managed Care Plan Type Code (6th Occurrence) - July	CHAR	2	164
+MC_PLAN_TYPE_CD_06_08	Managed Care Plan Type Code (6th Occurrence) - August	CHAR	2	165
+MC_PLAN_TYPE_CD_06_09	Managed Care Plan Type Code (6th Occurrence) - September	CHAR	2	166
+MC_PLAN_TYPE_CD_06_10	Managed Care Plan Type Code (6th Occurrence) - October	CHAR	2	167
+MC_PLAN_TYPE_CD_06_11	Managed Care Plan Type Code (6th Occurrence) - November	CHAR	2	168
+MC_PLAN_TYPE_CD_06_12	Managed Care Plan Type Code (6th Occurrence) - December	CHAR	2	169
+MC_PLAN_ID_07_01	Managed Care Plan ID (7th Occurrence ) - January	CHAR	12	170
+MC_PLAN_ID_07_02	Managed Care Plan ID (7th Occurrence ) - February	CHAR	12	171
+MC_PLAN_ID_07_03	Managed Care Plan ID (7th Occurrence ) - March	CHAR	12	172
+MC_PLAN_ID_07_04	Managed Care Plan ID (7th Occurrence ) - April	CHAR	12	173
+MC_PLAN_ID_07_05	Managed Care Plan ID (7th Occurrence ) - May	CHAR	12	174
+MC_PLAN_ID_07_06	Managed Care Plan ID (7th Occurrence ) - June	CHAR	12	175
+MC_PLAN_ID_07_07	Managed Care Plan ID (7th Occurrence ) - July	CHAR	12	176
+MC_PLAN_ID_07_08	Managed Care Plan ID (7th Occurrence ) - August	CHAR	12	177
+MC_PLAN_ID_07_09	Managed Care Plan ID (7th Occurrence ) - September	CHAR	12	178
+MC_PLAN_ID_07_10	Managed Care Plan ID (7th Occurrence ) - October	CHAR	12	179
+MC_PLAN_ID_07_11	Managed Care Plan ID (7th Occurrence ) - November	CHAR	12	180
+MC_PLAN_ID_07_12	Managed Care Plan ID (7th Occurrence ) - December	CHAR	12	181
+MC_PLAN_TYPE_CD_07_01	Managed Care Plan Type Code (7th Occurrence) - January	CHAR	2	182
+MC_PLAN_TYPE_CD_07_02	Managed Care Plan Type Code (7th Occurrence) - February	CHAR	2	183
+MC_PLAN_TYPE_CD_07_03	Managed Care Plan Type Code (7th Occurrence) - March	CHAR	2	184
+MC_PLAN_TYPE_CD_07_04	Managed Care Plan Type Code (7th Occurrence) - April	CHAR	2	185
+MC_PLAN_TYPE_CD_07_05	Managed Care Plan Type Code (7th Occurrence) - May	CHAR	2	186
+MC_PLAN_TYPE_CD_07_06	Managed Care Plan Type Code (7th Occurrence) - June	CHAR	2	187
+MC_PLAN_TYPE_CD_07_07	Managed Care Plan Type Code (7th Occurrence) - July	CHAR	2	188
+MC_PLAN_TYPE_CD_07_08	Managed Care Plan Type Code (7th Occurrence) - August	CHAR	2	189
+MC_PLAN_TYPE_CD_07_09	Managed Care Plan Type Code (7th Occurrence) - September	CHAR	2	190
+MC_PLAN_TYPE_CD_07_10	Managed Care Plan Type Code (7th Occurrence) - October	CHAR	2	191
+MC_PLAN_TYPE_CD_07_11	Managed Care Plan Type Code (7th Occurrence) - November	CHAR	2	192
+MC_PLAN_TYPE_CD_07_12	Managed Care Plan Type Code (7th Occurrence) - December	CHAR	2	193
+MC_PLAN_ID_08_01	Managed Care Plan ID (8th Occurrence ) - January	CHAR	12	194
+MC_PLAN_ID_08_02	Managed Care Plan ID (8th Occurrence ) - February	CHAR	12	195
+MC_PLAN_ID_08_03	Managed Care Plan ID (8th Occurrence ) - March	CHAR	12	196
+MC_PLAN_ID_08_04	Managed Care Plan ID (8th Occurrence ) - April	CHAR	12	197
+MC_PLAN_ID_08_05	Managed Care Plan ID (8th Occurrence ) - May	CHAR	12	198
+MC_PLAN_ID_08_06	Managed Care Plan ID (8th Occurrence ) - June	CHAR	12	199
+MC_PLAN_ID_08_07	Managed Care Plan ID (8th Occurrence ) - July	CHAR	12	200
+MC_PLAN_ID_08_08	Managed Care Plan ID (8th Occurrence ) - August	CHAR	12	201
+MC_PLAN_ID_08_09	Managed Care Plan ID (8th Occurrence ) - September	CHAR	12	202
+MC_PLAN_ID_08_10	Managed Care Plan ID (8th Occurrence ) - October	CHAR	12	203
+MC_PLAN_ID_08_11	Managed Care Plan ID (8th Occurrence ) - November	CHAR	12	204
+MC_PLAN_ID_08_12	Managed Care Plan ID (8th Occurrence ) - December	CHAR	12	205
+MC_PLAN_TYPE_CD_08_01	Managed Care Plan Type Code (8th Occurrence) - January	CHAR	2	206
+MC_PLAN_TYPE_CD_08_02	Managed Care Plan Type Code (8th Occurrence) - February	CHAR	2	207
+MC_PLAN_TYPE_CD_08_03	Managed Care Plan Type Code (8th Occurrence) - March	CHAR	2	208
+MC_PLAN_TYPE_CD_08_04	Managed Care Plan Type Code (8th Occurrence) - April	CHAR	2	209
+MC_PLAN_TYPE_CD_08_05	Managed Care Plan Type Code (8th Occurrence) - May	CHAR	2	210
+MC_PLAN_TYPE_CD_08_06	Managed Care Plan Type Code (8th Occurrence) - June	CHAR	2	211
+MC_PLAN_TYPE_CD_08_07	Managed Care Plan Type Code (8th Occurrence) - July	CHAR	2	212
+MC_PLAN_TYPE_CD_08_08	Managed Care Plan Type Code (8th Occurrence) - August	CHAR	2	213
+MC_PLAN_TYPE_CD_08_09	Managed Care Plan Type Code (8th Occurrence) - September	CHAR	2	214
+MC_PLAN_TYPE_CD_08_10	Managed Care Plan Type Code (8th Occurrence) - October	CHAR	2	215
+MC_PLAN_TYPE_CD_08_11	Managed Care Plan Type Code (8th Occurrence) - November	CHAR	2	216
+MC_PLAN_TYPE_CD_08_12	Managed Care Plan Type Code (8th Occurrence) - December	CHAR	2	217
+MC_PLAN_ID_09_01	Managed Care Plan ID (9th Occurrence ) - January	CHAR	12	218
+MC_PLAN_ID_09_02	Managed Care Plan ID (9th Occurrence ) - February	CHAR	12	219
+MC_PLAN_ID_09_03	Managed Care Plan ID (9th Occurrence ) - March	CHAR	12	220
+MC_PLAN_ID_09_04	Managed Care Plan ID (9th Occurrence ) - April	CHAR	12	221
+MC_PLAN_ID_09_05	Managed Care Plan ID (9th Occurrence ) - May	CHAR	12	222
+MC_PLAN_ID_09_06	Managed Care Plan ID (9th Occurrence ) - June	CHAR	12	223
+MC_PLAN_ID_09_07	Managed Care Plan ID (9th Occurrence ) - July	CHAR	12	224
+MC_PLAN_ID_09_08	Managed Care Plan ID (9th Occurrence ) - August	CHAR	12	225
+MC_PLAN_ID_09_09	Managed Care Plan ID (9th Occurrence ) - September	CHAR	12	226
+MC_PLAN_ID_09_10	Managed Care Plan ID (9th Occurrence ) - October	CHAR	12	227
+MC_PLAN_ID_09_11	Managed Care Plan ID (9th Occurrence ) - November	CHAR	12	228
+MC_PLAN_ID_09_12	Managed Care Plan ID (9th Occurrence ) - December	CHAR	12	229
+MC_PLAN_TYPE_CD_09_01	Managed Care Plan Type Code (9th Occurrence) - January	CHAR	2	230
+MC_PLAN_TYPE_CD_09_02	Managed Care Plan Type Code (9th Occurrence) - February	CHAR	2	231
+MC_PLAN_TYPE_CD_09_03	Managed Care Plan Type Code (9th Occurrence) - March	CHAR	2	232
+MC_PLAN_TYPE_CD_09_04	Managed Care Plan Type Code (9th Occurrence) - April	CHAR	2	233
+MC_PLAN_TYPE_CD_09_05	Managed Care Plan Type Code (9th Occurrence) - May	CHAR	2	234
+MC_PLAN_TYPE_CD_09_06	Managed Care Plan Type Code (9th Occurrence) - June	CHAR	2	235
+MC_PLAN_TYPE_CD_09_07	Managed Care Plan Type Code (9th Occurrence) - July	CHAR	2	236
+MC_PLAN_TYPE_CD_09_08	Managed Care Plan Type Code (9th Occurrence) - August	CHAR	2	237
+MC_PLAN_TYPE_CD_09_09	Managed Care Plan Type Code (9th Occurrence) - September	CHAR	2	238
+MC_PLAN_TYPE_CD_09_10	Managed Care Plan Type Code (9th Occurrence) - October	CHAR	2	239
+MC_PLAN_TYPE_CD_09_11	Managed Care Plan Type Code (9th Occurrence) - November	CHAR	2	240
+MC_PLAN_TYPE_CD_09_12	Managed Care Plan Type Code (9th Occurrence) - December	CHAR	2	241
+MC_PLAN_ID_10_01	Managed Care Plan ID (10th Occurrence ) - January	CHAR	12	242
+MC_PLAN_ID_10_02	Managed Care Plan ID (10th Occurrence ) - February	CHAR	12	243
+MC_PLAN_ID_10_03	Managed Care Plan ID (10th Occurrence ) - March	CHAR	12	244
+MC_PLAN_ID_10_04	Managed Care Plan ID (10th Occurrence ) - April	CHAR	12	245
+MC_PLAN_ID_10_05	Managed Care Plan ID (10th Occurrence ) - May	CHAR	12	246
+MC_PLAN_ID_10_06	Managed Care Plan ID (10th Occurrence ) - June	CHAR	12	247
+MC_PLAN_ID_10_07	Managed Care Plan ID (10th Occurrence ) - July	CHAR	12	248
+MC_PLAN_ID_10_08	Managed Care Plan ID (10th Occurrence ) - August	CHAR	12	249
+MC_PLAN_ID_10_09	Managed Care Plan ID (10th Occurrence ) - September	CHAR	12	250
+MC_PLAN_ID_10_10	Managed Care Plan ID (10th Occurrence ) - October	CHAR	12	251
+MC_PLAN_ID_10_11	Managed Care Plan ID (10th Occurrence ) - November	CHAR	12	252
+MC_PLAN_ID_10_12	Managed Care Plan ID (10th Occurrence ) - December	CHAR	12	253
+MC_PLAN_TYPE_CD_10_01	Managed Care Plan Type Code (10th Occurrence) - January	CHAR	2	254
+MC_PLAN_TYPE_CD_10_02	Managed Care Plan Type Code (10th Occurrence) - February	CHAR	2	255
+MC_PLAN_TYPE_CD_10_03	Managed Care Plan Type Code (10th Occurrence) - March	CHAR	2	256
+MC_PLAN_TYPE_CD_10_04	Managed Care Plan Type Code (10th Occurrence) - April	CHAR	2	257
+MC_PLAN_TYPE_CD_10_05	Managed Care Plan Type Code (10th Occurrence) - May	CHAR	2	258
+MC_PLAN_TYPE_CD_10_06	Managed Care Plan Type Code (10th Occurrence) - June	CHAR	2	259
+MC_PLAN_TYPE_CD_10_07	Managed Care Plan Type Code (10th Occurrence) - July	CHAR	2	260
+MC_PLAN_TYPE_CD_10_08	Managed Care Plan Type Code (10th Occurrence) - August	CHAR	2	261
+MC_PLAN_TYPE_CD_10_09	Managed Care Plan Type Code (10th Occurrence) - September	CHAR	2	262
+MC_PLAN_TYPE_CD_10_10	Managed Care Plan Type Code (10th Occurrence) - October	CHAR	2	263
+MC_PLAN_TYPE_CD_10_11	Managed Care Plan Type Code (10th Occurrence) - November	CHAR	2	264
+MC_PLAN_TYPE_CD_10_12	Managed Care Plan Type Code (10th Occurrence) - December	CHAR	2	265
+MC_PLAN_ID_11_01	Managed Care Plan ID (11th Occurrence ) - January	CHAR	12	266
+MC_PLAN_ID_11_02	Managed Care Plan ID (11th Occurrence ) - February	CHAR	12	267
+MC_PLAN_ID_11_03	Managed Care Plan ID (11th Occurrence ) - March	CHAR	12	268
+MC_PLAN_ID_11_04	Managed Care Plan ID (11th Occurrence ) - April	CHAR	12	269
+MC_PLAN_ID_11_05	Managed Care Plan ID (11th Occurrence ) - May	CHAR	12	270
+MC_PLAN_ID_11_06	Managed Care Plan ID (11th Occurrence ) - June	CHAR	12	271
+MC_PLAN_ID_11_07	Managed Care Plan ID (11th Occurrence ) - July	CHAR	12	272
+MC_PLAN_ID_11_08	Managed Care Plan ID (11th Occurrence ) - August	CHAR	12	273
+MC_PLAN_ID_11_09	Managed Care Plan ID (11th Occurrence ) - September	CHAR	12	274
+MC_PLAN_ID_11_10	Managed Care Plan ID (11th Occurrence ) - October	CHAR	12	275
+MC_PLAN_ID_11_11	Managed Care Plan ID (11th Occurrence ) - November	CHAR	12	276
+MC_PLAN_ID_11_12	Managed Care Plan ID (11th Occurrence ) - December	CHAR	12	277
+MC_PLAN_TYPE_CD_11_01	Managed Care Plan Type Code (11th Occurrence) - January	CHAR	2	278
+MC_PLAN_TYPE_CD_11_02	Managed Care Plan Type Code (11th Occurrence) - February	CHAR	2	279
+MC_PLAN_TYPE_CD_11_03	Managed Care Plan Type Code (11th Occurrence) - March	CHAR	2	280
+MC_PLAN_TYPE_CD_11_04	Managed Care Plan Type Code (11th Occurrence) - April	CHAR	2	281
+MC_PLAN_TYPE_CD_11_05	Managed Care Plan Type Code (11th Occurrence) - May	CHAR	2	282
+MC_PLAN_TYPE_CD_11_06	Managed Care Plan Type Code (11th Occurrence) - June	CHAR	2	283
+MC_PLAN_TYPE_CD_11_07	Managed Care Plan Type Code (11th Occurrence) - July	CHAR	2	284
+MC_PLAN_TYPE_CD_11_08	Managed Care Plan Type Code (11th Occurrence) - August	CHAR	2	285
+MC_PLAN_TYPE_CD_11_09	Managed Care Plan Type Code (11th Occurrence) - September	CHAR	2	286
+MC_PLAN_TYPE_CD_11_10	Managed Care Plan Type Code (11th Occurrence) - October	CHAR	2	287
+MC_PLAN_TYPE_CD_11_11	Managed Care Plan Type Code (11th Occurrence) - November	CHAR	2	288
+MC_PLAN_TYPE_CD_11_12	Managed Care Plan Type Code (11th Occurrence) - December	CHAR	2	289
+MC_PLAN_ID_12_01	Managed Care Plan ID (12th Occurrence ) - January	CHAR	12	290
+MC_PLAN_ID_12_02	Managed Care Plan ID (12th Occurrence ) - February	CHAR	12	291
+MC_PLAN_ID_12_03	Managed Care Plan ID (12th Occurrence ) - March	CHAR	12	292
+MC_PLAN_ID_12_04	Managed Care Plan ID (12th Occurrence ) - April	CHAR	12	293
+MC_PLAN_ID_12_05	Managed Care Plan ID (12th Occurrence ) - May	CHAR	12	294
+MC_PLAN_ID_12_06	Managed Care Plan ID (12th Occurrence ) - June	CHAR	12	295
+MC_PLAN_ID_12_07	Managed Care Plan ID (12th Occurrence ) - July	CHAR	12	296
+MC_PLAN_ID_12_08	Managed Care Plan ID (12th Occurrence ) - August	CHAR	12	297
+MC_PLAN_ID_12_09	Managed Care Plan ID (12th Occurrence ) - September	CHAR	12	298
+MC_PLAN_ID_12_10	Managed Care Plan ID (12th Occurrence ) - October	CHAR	12	299
+MC_PLAN_ID_12_11	Managed Care Plan ID (12th Occurrence ) - November	CHAR	12	300
+MC_PLAN_ID_12_12	Managed Care Plan ID (12th Occurrence ) - December	CHAR	12	301
+MC_PLAN_TYPE_CD_12_01	Managed Care Plan Type Code (12th Occurrence) - January	CHAR	2	302
+MC_PLAN_TYPE_CD_12_02	Managed Care Plan Type Code (12th Occurrence) - February	CHAR	2	303
+MC_PLAN_TYPE_CD_12_03	Managed Care Plan Type Code (12th Occurrence) - March	CHAR	2	304
+MC_PLAN_TYPE_CD_12_04	Managed Care Plan Type Code (12th Occurrence) - April	CHAR	2	305
+MC_PLAN_TYPE_CD_12_05	Managed Care Plan Type Code (12th Occurrence) - May	CHAR	2	306
+MC_PLAN_TYPE_CD_12_06	Managed Care Plan Type Code (12th Occurrence) - June	CHAR	2	307
+MC_PLAN_TYPE_CD_12_07	Managed Care Plan Type Code (12th Occurrence) - July	CHAR	2	308
+MC_PLAN_TYPE_CD_12_08	Managed Care Plan Type Code (12th Occurrence) - August	CHAR	2	309
+MC_PLAN_TYPE_CD_12_09	Managed Care Plan Type Code (12th Occurrence) - September	CHAR	2	310
+MC_PLAN_TYPE_CD_12_10	Managed Care Plan Type Code (12th Occurrence) - October	CHAR	2	311
+MC_PLAN_TYPE_CD_12_11	Managed Care Plan Type Code (12th Occurrence) - November	CHAR	2	312
+MC_PLAN_TYPE_CD_12_12	Managed Care Plan Type Code (12th Occurrence) - December	CHAR	2	313
+MC_PLAN_ID_13_01	Managed Care Plan ID (13th Occurrence ) - January	CHAR	12	314
+MC_PLAN_ID_13_02	Managed Care Plan ID (13th Occurrence ) - February	CHAR	12	315
+MC_PLAN_ID_13_03	Managed Care Plan ID (13th Occurrence ) - March	CHAR	12	316
+MC_PLAN_ID_13_04	Managed Care Plan ID (13th Occurrence ) - April	CHAR	12	317
+MC_PLAN_ID_13_05	Managed Care Plan ID (13th Occurrence ) - May	CHAR	12	318
+MC_PLAN_ID_13_06	Managed Care Plan ID (13th Occurrence ) - June	CHAR	12	319
+MC_PLAN_ID_13_07	Managed Care Plan ID (13th Occurrence ) - July	CHAR	12	320
+MC_PLAN_ID_13_08	Managed Care Plan ID (13th Occurrence ) - August	CHAR	12	321
+MC_PLAN_ID_13_09	Managed Care Plan ID (13th Occurrence ) - September	CHAR	12	322
+MC_PLAN_ID_13_10	Managed Care Plan ID (13th Occurrence ) - October	CHAR	12	323
+MC_PLAN_ID_13_11	Managed Care Plan ID (13th Occurrence ) - November	CHAR	12	324
+MC_PLAN_ID_13_12	Managed Care Plan ID (13th Occurrence ) - December	CHAR	12	325
+MC_PLAN_TYPE_CD_13_01	Managed Care Plan Type Code (13th Occurrence) - January	CHAR	2	326
+MC_PLAN_TYPE_CD_13_02	Managed Care Plan Type Code (13th Occurrence) - February	CHAR	2	327
+MC_PLAN_TYPE_CD_13_03	Managed Care Plan Type Code (13th Occurrence) - March	CHAR	2	328
+MC_PLAN_TYPE_CD_13_04	Managed Care Plan Type Code (13th Occurrence) - April	CHAR	2	329
+MC_PLAN_TYPE_CD_13_05	Managed Care Plan Type Code (13th Occurrence) - May	CHAR	2	330
+MC_PLAN_TYPE_CD_13_06	Managed Care Plan Type Code (13th Occurrence) - June	CHAR	2	331
+MC_PLAN_TYPE_CD_13_07	Managed Care Plan Type Code (13th Occurrence) - July	CHAR	2	332
+MC_PLAN_TYPE_CD_13_08	Managed Care Plan Type Code (13th Occurrence) - August	CHAR	2	333
+MC_PLAN_TYPE_CD_13_09	Managed Care Plan Type Code (13th Occurrence) - September	CHAR	2	334
+MC_PLAN_TYPE_CD_13_10	Managed Care Plan Type Code (13th Occurrence) - October	CHAR	2	335
+MC_PLAN_TYPE_CD_13_11	Managed Care Plan Type Code (13th Occurrence) - November	CHAR	2	336
+MC_PLAN_TYPE_CD_13_12	Managed Care Plan Type Code (13th Occurrence) - December	CHAR	2	337
+MC_PLAN_ID_14_01	Managed Care Plan ID (14th Occurrence ) - January	CHAR	12	338
+MC_PLAN_ID_14_02	Managed Care Plan ID (14th Occurrence ) - February	CHAR	12	339
+MC_PLAN_ID_14_03	Managed Care Plan ID (14th Occurrence ) - March	CHAR	12	340
+MC_PLAN_ID_14_04	Managed Care Plan ID (14th Occurrence ) - April	CHAR	12	341
+MC_PLAN_ID_14_05	Managed Care Plan ID (14th Occurrence ) - May	CHAR	12	342
+MC_PLAN_ID_14_06	Managed Care Plan ID (14th Occurrence ) - June	CHAR	12	343
+MC_PLAN_ID_14_07	Managed Care Plan ID (14th Occurrence ) - July	CHAR	12	344
+MC_PLAN_ID_14_08	Managed Care Plan ID (14th Occurrence ) - August	CHAR	12	345
+MC_PLAN_ID_14_09	Managed Care Plan ID (14th Occurrence ) - September	CHAR	12	346
+MC_PLAN_ID_14_10	Managed Care Plan ID (14th Occurrence ) - October	CHAR	12	347
+MC_PLAN_ID_14_11	Managed Care Plan ID (14th Occurrence ) - November	CHAR	12	348
+MC_PLAN_ID_14_12	Managed Care Plan ID (14th Occurrence ) - December	CHAR	12	349
+MC_PLAN_TYPE_CD_14_01	Managed Care Plan Type Code (14th Occurrence) - January	CHAR	2	350
+MC_PLAN_TYPE_CD_14_02	Managed Care Plan Type Code (14th Occurrence) - February	CHAR	2	351
+MC_PLAN_TYPE_CD_14_03	Managed Care Plan Type Code (14th Occurrence) - March	CHAR	2	352
+MC_PLAN_TYPE_CD_14_04	Managed Care Plan Type Code (14th Occurrence) - April	CHAR	2	353
+MC_PLAN_TYPE_CD_14_05	Managed Care Plan Type Code (14th Occurrence) - May	CHAR	2	354
+MC_PLAN_TYPE_CD_14_06	Managed Care Plan Type Code (14th Occurrence) - June	CHAR	2	355
+MC_PLAN_TYPE_CD_14_07	Managed Care Plan Type Code (14th Occurrence) - July	CHAR	2	356
+MC_PLAN_TYPE_CD_14_08	Managed Care Plan Type Code (14th Occurrence) - August	CHAR	2	357
+MC_PLAN_TYPE_CD_14_09	Managed Care Plan Type Code (14th Occurrence) - September	CHAR	2	358
+MC_PLAN_TYPE_CD_14_10	Managed Care Plan Type Code (14th Occurrence) - October	CHAR	2	359
+MC_PLAN_TYPE_CD_14_11	Managed Care Plan Type Code (14th Occurrence) - November	CHAR	2	360
+MC_PLAN_TYPE_CD_14_12	Managed Care Plan Type Code (14th Occurrence) - December	CHAR	2	361
+MC_PLAN_ID_15_01	Managed Care Plan ID (15th Occurrence ) - January	CHAR	12	362
+MC_PLAN_ID_15_02	Managed Care Plan ID (15th Occurrence ) - February	CHAR	12	363
+MC_PLAN_ID_15_03	Managed Care Plan ID (15th Occurrence ) - March	CHAR	12	364
+MC_PLAN_ID_15_04	Managed Care Plan ID (15th Occurrence ) - April	CHAR	12	365
+MC_PLAN_ID_15_05	Managed Care Plan ID (15th Occurrence ) - May	CHAR	12	366
+MC_PLAN_ID_15_06	Managed Care Plan ID (15th Occurrence ) - June	CHAR	12	367
+MC_PLAN_ID_15_07	Managed Care Plan ID (15th Occurrence ) - July	CHAR	12	368
+MC_PLAN_ID_15_08	Managed Care Plan ID (15th Occurrence ) - August	CHAR	12	369
+MC_PLAN_ID_15_09	Managed Care Plan ID (15th Occurrence ) - September	CHAR	12	370
+MC_PLAN_ID_15_10	Managed Care Plan ID (15th Occurrence ) - October	CHAR	12	371
+MC_PLAN_ID_15_11	Managed Care Plan ID (15th Occurrence ) - November	CHAR	12	372
+MC_PLAN_ID_15_12	Managed Care Plan ID (15th Occurrence ) - December	CHAR	12	373
+MC_PLAN_TYPE_CD_15_01	Managed Care Plan Type Code (15th Occurrence) - January	CHAR	2	374
+MC_PLAN_TYPE_CD_15_02	Managed Care Plan Type Code (15th Occurrence) - February	CHAR	2	375
+MC_PLAN_TYPE_CD_15_03	Managed Care Plan Type Code (15th Occurrence) - March	CHAR	2	376
+MC_PLAN_TYPE_CD_15_04	Managed Care Plan Type Code (15th Occurrence) - April	CHAR	2	377
+MC_PLAN_TYPE_CD_15_05	Managed Care Plan Type Code (15th Occurrence) - May	CHAR	2	378
+MC_PLAN_TYPE_CD_15_06	Managed Care Plan Type Code (15th Occurrence) - June	CHAR	2	379
+MC_PLAN_TYPE_CD_15_07	Managed Care Plan Type Code (15th Occurrence) - July	CHAR	2	380
+MC_PLAN_TYPE_CD_15_08	Managed Care Plan Type Code (15th Occurrence) - August	CHAR	2	381
+MC_PLAN_TYPE_CD_15_09	Managed Care Plan Type Code (15th Occurrence) - September	CHAR	2	382
+MC_PLAN_TYPE_CD_15_10	Managed Care Plan Type Code (15th Occurrence) - October	CHAR	2	383
+MC_PLAN_TYPE_CD_15_11	Managed Care Plan Type Code (15th Occurrence) - November	CHAR	2	384
+MC_PLAN_TYPE_CD_15_12	Managed Care Plan Type Code (15th Occurrence) - December	CHAR	2	385
+MC_PLAN_ID_16_01	Managed Care Plan ID (16th Occurrence ) - January	CHAR	12	386
+MC_PLAN_ID_16_02	Managed Care Plan ID (16th Occurrence ) - February	CHAR	12	387
+MC_PLAN_ID_16_03	Managed Care Plan ID (16th Occurrence ) - March	CHAR	12	388
+MC_PLAN_ID_16_04	Managed Care Plan ID (16th Occurrence ) - April	CHAR	12	389
+MC_PLAN_ID_16_05	Managed Care Plan ID (16th Occurrence ) - May	CHAR	12	390
+MC_PLAN_ID_16_06	Managed Care Plan ID (16th Occurrence ) - June	CHAR	12	391
+MC_PLAN_ID_16_07	Managed Care Plan ID (16th Occurrence ) - July	CHAR	12	392
+MC_PLAN_ID_16_08	Managed Care Plan ID (16th Occurrence ) - August	CHAR	12	393
+MC_PLAN_ID_16_09	Managed Care Plan ID (16th Occurrence ) - September	CHAR	12	394
+MC_PLAN_ID_16_10	Managed Care Plan ID (16th Occurrence ) - October	CHAR	12	395
+MC_PLAN_ID_16_11	Managed Care Plan ID (16th Occurrence ) - November	CHAR	12	396
+MC_PLAN_ID_16_12	Managed Care Plan ID (16th Occurrence ) - December	CHAR	12	397
+MC_PLAN_TYPE_CD_16_01	Managed Care Plan Type Code (16th Occurrence) - January	CHAR	2	398
+MC_PLAN_TYPE_CD_16_02	Managed Care Plan Type Code (16th Occurrence) - February	CHAR	2	399
+MC_PLAN_TYPE_CD_16_03	Managed Care Plan Type Code (16th Occurrence) - March	CHAR	2	400
+MC_PLAN_TYPE_CD_16_04	Managed Care Plan Type Code (16th Occurrence) - April	CHAR	2	401
+MC_PLAN_TYPE_CD_16_05	Managed Care Plan Type Code (16th Occurrence) - May	CHAR	2	402
+MC_PLAN_TYPE_CD_16_06	Managed Care Plan Type Code (16th Occurrence) - June	CHAR	2	403
+MC_PLAN_TYPE_CD_16_07	Managed Care Plan Type Code (16th Occurrence) - July	CHAR	2	404
+MC_PLAN_TYPE_CD_16_08	Managed Care Plan Type Code (16th Occurrence) - August	CHAR	2	405
+MC_PLAN_TYPE_CD_16_09	Managed Care Plan Type Code (16th Occurrence) - September	CHAR	2	406
+MC_PLAN_TYPE_CD_16_10	Managed Care Plan Type Code (16th Occurrence) - October	CHAR	2	407
+MC_PLAN_TYPE_CD_16_11	Managed Care Plan Type Code (16th Occurrence) - November	CHAR	2	408
+MC_PLAN_TYPE_CD_16_12	Managed Care Plan Type Code (16th Occurrence) - December	CHAR	2	409
+RFRNC_YR	Reference Yr	CHAR	4	410
+1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Waiver Program Enrollment File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+WVR_1915C_TYPE_CD	1915(c) Waiver Type Code - Ltst in Yr	CHAR	2	5
+WVR_1915C_MOS	1915(c) Waiver Months	NUM	2	6
+WVR_1915B_MOS	1915(b) Waiver Months	NUM	2	7
+WVR_1915BC_MOS	1915(b)(c) Waiver Months	NUM	2	8
+WVR_1115_TYPE_CD	1115 Waiver Type Code - Ltst in Yr	CHAR	2	9
+PHRMCY_WVR_1115_MOS	1115 Pharmacy Waiver Months	NUM	2	10
+DSTR_RLTD_WVR_1115_MOS	1115 Disaster-Related Waiver Months	NUM	2	11
+FMLY_PLNG_ONLY_WVR_1115_MOS	1115 Family Planning Only Waiver Months	NUM	2	12
+HIFA_WVR_1115_MOS	1115 Hlth Insurance Flexibility and Accountability Waiver Months	NUM	2	13
+OTH_WVR_1115_MOS	1115 Other Type of Waiver Months	NUM	2	14
+OTH_WVR_TYPE_MOS	Other Waiver Type Months	NUM	2	15
+CMMI_SECT_1115A_DEMO_IND_01	Ind of Enrollment in CMMI Section 1115A Demonstration - January	CHAR	1	16
+CMMI_SECT_1115A_DEMO_IND_02	Ind of Enrollment in CMMI Section 1115A Demonstration - February	CHAR	1	17
+CMMI_SECT_1115A_DEMO_IND_03	Ind of Enrollment in CMMI Section 1115A Demonstration - March	CHAR	1	18
+CMMI_SECT_1115A_DEMO_IND_04	Ind of Enrollment in CMMI Section 1115A Demonstration - April	CHAR	1	19
+CMMI_SECT_1115A_DEMO_IND_05	Ind of Enrollment in CMMI Section 1115A Demonstration - May	CHAR	1	20
+CMMI_SECT_1115A_DEMO_IND_06	Ind of Enrollment in CMMI Section 1115A Demonstration - June	CHAR	1	21
+CMMI_SECT_1115A_DEMO_IND_07	Ind of Enrollment in CMMI Section 1115A Demonstration - July	CHAR	1	22
+CMMI_SECT_1115A_DEMO_IND_08	Ind of Enrollment in CMMI Section 1115A Demonstration - August	CHAR	1	23
+CMMI_SECT_1115A_DEMO_IND_09	Ind of Enrollment in CMMI Section 1115A Demonstration - September	CHAR	1	24
+CMMI_SECT_1115A_DEMO_IND_10	Ind of Enrollment in CMMI Section 1115A Demonstration - October	CHAR	1	25
+CMMI_SECT_1115A_DEMO_IND_11	Ind of Enrollment in CMMI Section 1115A Demonstration - November	CHAR	1	26
+CMMI_SECT_1115A_DEMO_IND_12	Ind of Enrollment in CMMI Section 1115A Demonstration - December	CHAR	1	27
+WVR_ID_01_01	Waiver ID (1st Occurrence) - January	CHAR	20	28
+WVR_ID_01_02	Waiver ID (1st Occurrence) - February	CHAR	20	29
+WVR_ID_01_03	Waiver ID (1st Occurrence) - March	CHAR	20	30
+WVR_ID_01_04	Waiver ID (1st Occurrence) - April	CHAR	20	31
+WVR_ID_01_05	Waiver ID (1st Occurrence) - May	CHAR	20	32
+WVR_ID_01_06	Waiver ID (1st Occurrence) - June	CHAR	20	33
+WVR_ID_01_07	Waiver ID (1st Occurrence) - July	CHAR	20	34
+WVR_ID_01_08	Waiver ID (1st Occurrence) - August	CHAR	20	35
+WVR_ID_01_09	Waiver ID (1st Occurrence) - September	CHAR	20	36
+WVR_ID_01_10	Waiver ID (1st Occurrence) - October	CHAR	20	37
+WVR_ID_01_11	Waiver ID (1st Occurrence) - November	CHAR	20	38
+WVR_ID_01_12	Waiver ID (1st Occurrence) - December	CHAR	20	39
+WVR_TYPE_CD_01_01	Waiver Type Code (1st Occurrence) - January	CHAR	2	40
+WVR_TYPE_CD_01_02	Waiver Type Code (1st Occurrence) -February	CHAR	2	41
+WVR_TYPE_CD_01_03	Waiver Type Code (1st Occurrence) - March	CHAR	2	42
+WVR_TYPE_CD_01_04	Waiver Type Code (1st Occurrence) - April	CHAR	2	43
+WVR_TYPE_CD_01_05	Waiver Type Code (1st Occurrence) - May	CHAR	2	44
+WVR_TYPE_CD_01_06	Waiver Type Code (1st Occurrence) - June	CHAR	2	45
+WVR_TYPE_CD_01_07	Waiver Type Code (1st Occurrence) - July	CHAR	2	46
+WVR_TYPE_CD_01_08	Waiver Type Code (1st Occurrence) - August	CHAR	2	47
+WVR_TYPE_CD_01_09	Waiver Type Code (1st Occurrence) - September	CHAR	2	48
+WVR_TYPE_CD_01_10	Waiver Type Code (1st Occurrence) - October	CHAR	2	49
+WVR_TYPE_CD_01_11	Waiver Type Code (1st Occurrence) - November	CHAR	2	50
+WVR_TYPE_CD_01_12	Waiver Type Code (1st Occurrence) - December	CHAR	2	51
+WVR_ID_02_01	Waiver ID (2nd Occurrence) - January	CHAR	20	52
+WVR_ID_02_02	Waiver ID (2nd Occurrence) - February	CHAR	20	53
+WVR_ID_02_03	Waiver ID (2nd Occurrence) - March	CHAR	20	54
+WVR_ID_02_04	Waiver ID (2nd Occurrence) - April	CHAR	20	55
+WVR_ID_02_05	Waiver ID (2nd Occurrence) - May	CHAR	20	56
+WVR_ID_02_06	Waiver ID (2nd Occurrence) - June	CHAR	20	57
+WVR_ID_02_07	Waiver ID (2nd Occurrence) - July	CHAR	20	58
+WVR_ID_02_08	Waiver ID (2nd Occurrence) - August	CHAR	20	59
+WVR_ID_02_09	Waiver ID (2nd Occurrence) - September	CHAR	20	60
+WVR_ID_02_10	Waiver ID (2nd Occurrence) - October	CHAR	20	61
+WVR_ID_02_11	Waiver ID (2nd Occurrence) - November	CHAR	20	62
+WVR_ID_02_12	Waiver ID (2nd Occurrence) - December	CHAR	20	63
+WVR_TYPE_CD_02_01	Waiver Type Code (2nd Occurrence) - January	CHAR	2	64
+WVR_TYPE_CD_02_02	Waiver Type Code (2nd Occurrence) -February	CHAR	2	65
+WVR_TYPE_CD_02_03	Waiver Type Code (2nd Occurrence) - March	CHAR	2	66
+WVR_TYPE_CD_02_04	Waiver Type Code (2nd Occurrence) - April	CHAR	2	67
+WVR_TYPE_CD_02_05	Waiver Type Code (2nd Occurrence) - May	CHAR	2	68
+WVR_TYPE_CD_02_06	Waiver Type Code (2nd Occurrence) - June	CHAR	2	69
+WVR_TYPE_CD_02_07	Waiver Type Code (2nd Occurrence) - July	CHAR	2	70
+WVR_TYPE_CD_02_08	Waiver Type Code (2nd Occurrence) - August	CHAR	2	71
+WVR_TYPE_CD_02_09	Waiver Type Code (2nd Occurrence) - September	CHAR	2	72
+WVR_TYPE_CD_02_10	Waiver Type Code (2nd Occurrence) - October	CHAR	2	73
+WVR_TYPE_CD_02_11	Waiver Type Code (2nd Occurrence) - November	CHAR	2	74
+WVR_TYPE_CD_02_12	Waiver Type Code (2nd Occurrence) - December	CHAR	2	75
+WVR_ID_03_01	Waiver ID (3rd Occurrence) - January	CHAR	20	76
+WVR_ID_03_02	Waiver ID (3rd Occurrence) - February	CHAR	20	77
+WVR_ID_03_03	Waiver ID (3rd Occurrence) - March	CHAR	20	78
+WVR_ID_03_04	Waiver ID (3rd Occurrence) - April	CHAR	20	79
+WVR_ID_03_05	Waiver ID (3rd Occurrence) - May	CHAR	20	80
+WVR_ID_03_06	Waiver ID (3rd Occurrence) - June	CHAR	20	81
+WVR_ID_03_07	Waiver ID (3rd Occurrence) - July	CHAR	20	82
+WVR_ID_03_08	Waiver ID (3rd Occurrence) - August	CHAR	20	83
+WVR_ID_03_09	Waiver ID (3rd Occurrence) - September	CHAR	20	84
+WVR_ID_03_10	Waiver ID (3rd Occurrence) - October	CHAR	20	85
+WVR_ID_03_11	Waiver ID (3rd Occurrence) - November	CHAR	20	86
+WVR_ID_03_12	Waiver ID (3rd Occurrence) - December	CHAR	20	87
+WVR_TYPE_CD_03_01	Waiver Type Code (3rd Occurrence) - January	CHAR	2	88
+WVR_TYPE_CD_03_02	Waiver Type Code (3rd Occurrence) - February	CHAR	2	89
+WVR_TYPE_CD_03_03	Waiver Type Code (3rd Occurrence) - March	CHAR	2	90
+WVR_TYPE_CD_03_04	Waiver Type Code (3rd Occurrence) - April	CHAR	2	91
+WVR_TYPE_CD_03_05	Waiver Type Code (3rd Occurrence) - May	CHAR	2	92
+WVR_TYPE_CD_03_06	Waiver Type Code (3rd Occurrence) - June	CHAR	2	93
+WVR_TYPE_CD_03_07	Waiver Type Code (3rd Occurrence) - July	CHAR	2	94
+WVR_TYPE_CD_03_08	Waiver Type Code (3rd Occurrence) - August	CHAR	2	95
+WVR_TYPE_CD_03_09	Waiver Type Code (3rd Occurrence) - September	CHAR	2	96
+WVR_TYPE_CD_03_10	Waiver Type Code (3rd Occurrence) - October	CHAR	2	97
+WVR_TYPE_CD_03_11	Waiver Type Code (3rd Occurrence) - November	CHAR	2	98
+WVR_TYPE_CD_03_12	Waiver Type Code (3rd Occurrence) - December	CHAR	2	99
+WVR_ID_04_01	Waiver ID (4th Occurrence) - January	CHAR	20	100
+WVR_ID_04_02	Waiver ID (4th Occurrence) - February	CHAR	20	101
+WVR_ID_04_03	Waiver ID (4th Occurrence) - March	CHAR	20	102
+WVR_ID_04_04	Waiver ID (4th Occurrence) - April	CHAR	20	103
+WVR_ID_04_05	Waiver ID (4th Occurrence) - May	CHAR	20	104
+WVR_ID_04_06	Waiver ID (4th Occurrence) - June	CHAR	20	105
+WVR_ID_04_07	Waiver ID (4th Occurrence) - July	CHAR	20	106
+WVR_ID_04_08	Waiver ID (4th Occurrence) - August	CHAR	20	107
+WVR_ID_04_09	Waiver ID (4th Occurrence) - September	CHAR	20	108
+WVR_ID_04_10	Waiver ID (4th Occurrence) - October	CHAR	20	109
+WVR_ID_04_11	Waiver ID (4th Occurrence) - November	CHAR	20	110
+WVR_ID_04_12	Waiver ID (4th Occurrence) - December	CHAR	20	111
+WVR_TYPE_CD_04_01	Waiver Type Code (4th Occurrence) - January	CHAR	2	112
+WVR_TYPE_CD_04_02	Waiver Type Code (4th Occurrence) - February	CHAR	2	113
+WVR_TYPE_CD_04_03	Waiver Type Code (4th Occurrence) - March	CHAR	2	114
+WVR_TYPE_CD_04_04	Waiver Type Code (4th Occurrence) - April	CHAR	2	115
+WVR_TYPE_CD_04_05	Waiver Type Code (4th Occurrence) - May	CHAR	2	116
+WVR_TYPE_CD_04_06	Waiver Type Code (4th Occurrence) - June	CHAR	2	117
+WVR_TYPE_CD_04_07	Waiver Type Code (4th Occurrence) - July	CHAR	2	118
+WVR_TYPE_CD_04_08	Waiver Type Code (4th Occurrence) - August	CHAR	2	119
+WVR_TYPE_CD_04_09	Waiver Type Code (4th Occurrence) - September	CHAR	2	120
+WVR_TYPE_CD_04_10	Waiver Type Code (4th Occurrence) - October	CHAR	2	121
+WVR_TYPE_CD_04_11	Waiver Type Code (4th Occurrence) - November	CHAR	2	122
+WVR_TYPE_CD_04_12	Waiver Type Code (4th Occurrence) - December	CHAR	2	123
+WVR_ID_05_01	Waiver ID (5th Occurrence) - January	CHAR	20	124
+WVR_ID_05_02	Waiver ID (5th Occurrence) - February	CHAR	20	125
+WVR_ID_05_03	Waiver ID (5th Occurrence) - March	CHAR	20	126
+WVR_ID_05_04	Waiver ID (5th Occurrence) - April	CHAR	20	127
+WVR_ID_05_05	Waiver ID (5th Occurrence) - May	CHAR	20	128
+WVR_ID_05_06	Waiver ID (5th Occurrence) - June	CHAR	20	129
+WVR_ID_05_07	Waiver ID (5th Occurrence) - July	CHAR	20	130
+WVR_ID_05_08	Waiver ID (5th Occurrence) - August	CHAR	20	131
+WVR_ID_05_09	Waiver ID (5th Occurrence) - September	CHAR	20	132
+WVR_ID_05_10	Waiver ID (5th Occurrence) - October	CHAR	20	133
+WVR_ID_05_11	Waiver ID (5th Occurrence) - November	CHAR	20	134
+WVR_ID_05_12	Waiver ID (5th Occurrence) - December	CHAR	20	135
+WVR_TYPE_CD_05_01	Waiver Type Code (5th Occurrence) - January	CHAR	2	136
+WVR_TYPE_CD_05_02	Waiver Type Code (5th Occurrence) - February	CHAR	2	137
+WVR_TYPE_CD_05_03	Waiver Type Code (5th Occurrence) - March	CHAR	2	138
+WVR_TYPE_CD_05_04	Waiver Type Code (5th Occurrence) - April	CHAR	2	139
+WVR_TYPE_CD_05_05	Waiver Type Code (5th Occurrence) - May	CHAR	2	140
+WVR_TYPE_CD_05_06	Waiver Type Code (5th Occurrence) - June	CHAR	2	141
+WVR_TYPE_CD_05_07	Waiver Type Code (5th Occurrence) - July	CHAR	2	142
+WVR_TYPE_CD_05_08	Waiver Type Code (5th Occurrence) - August	CHAR	2	143
+WVR_TYPE_CD_05_09	Waiver Type Code (5th Occurrence) - September	CHAR	2	144
+WVR_TYPE_CD_05_10	Waiver Type Code (5th Occurrence) - October	CHAR	2	145
+WVR_TYPE_CD_05_11	Waiver Type Code (5th Occurrence) - November	CHAR	2	146
+WVR_TYPE_CD_05_12	Waiver Type Code (5th Occurrence) - December	CHAR	2	147
+WVR_ID_06_01	Waiver ID (6th Occurrence) - January	CHAR	20	148
+WVR_ID_06_02	Waiver ID (6th Occurrence) - February	CHAR	20	149
+WVR_ID_06_03	Waiver ID (6th Occurrence) - March	CHAR	20	150
+WVR_ID_06_04	Waiver ID (6th Occurrence) - April	CHAR	20	151
+WVR_ID_06_05	Waiver ID (6th Occurrence) - May	CHAR	20	152
+WVR_ID_06_06	Waiver ID (6th Occurrence) - June	CHAR	20	153
+WVR_ID_06_07	Waiver ID (6th Occurrence) - July	CHAR	20	154
+WVR_ID_06_08	Waiver ID (6th Occurrence) - August	CHAR	20	155
+WVR_ID_06_09	Waiver ID (6th Occurrence) - September	CHAR	20	156
+WVR_ID_06_10	Waiver ID (6th Occurrence) - October	CHAR	20	157
+WVR_ID_06_11	Waiver ID (6th Occurrence) - November	CHAR	20	158
+WVR_ID_06_12	Waiver ID (6th Occurrence) - December	CHAR	20	159
+WVR_TYPE_CD_06_01	Waiver Type Code (6th Occurrence) - January	CHAR	2	160
+WVR_TYPE_CD_06_02	Waiver Type Code (6th Occurrence) - February	CHAR	2	161
+WVR_TYPE_CD_06_03	Waiver Type Code (6th Occurrence) - March	CHAR	2	162
+WVR_TYPE_CD_06_04	Waiver Type Code (6th Occurrence) - April	CHAR	2	163
+WVR_TYPE_CD_06_05	Waiver Type Code (6th Occurrence) - May	CHAR	2	164
+WVR_TYPE_CD_06_06	Waiver Type Code (6th Occurrence) - June	CHAR	2	165
+WVR_TYPE_CD_06_07	Waiver Type Code (6th Occurrence) - July	CHAR	2	166
+WVR_TYPE_CD_06_08	Waiver Type Code (6th Occurrence) - August	CHAR	2	167
+WVR_TYPE_CD_06_09	Waiver Type Code (6th Occurrence) - September	CHAR	2	168
+WVR_TYPE_CD_06_10	Waiver Type Code (6th Occurrence) - October	CHAR	2	169
+WVR_TYPE_CD_06_11	Waiver Type Code (6th Occurrence) - November	CHAR	2	170
+WVR_TYPE_CD_06_12	Waiver Type Code (6th Occurrence) - December	CHAR	2	171
+WVR_ID_07_01	Waiver ID (7th Occurrence) - January	CHAR	20	172
+WVR_ID_07_02	Waiver ID (7th Occurrence) - February	CHAR	20	173
+WVR_ID_07_03	Waiver ID (7th Occurrence) - March	CHAR	20	174
+WVR_ID_07_04	Waiver ID (7th Occurrence) - April	CHAR	20	175
+WVR_ID_07_05	Waiver ID (7th Occurrence) - May	CHAR	20	176
+WVR_ID_07_06	Waiver ID (7th Occurrence) - June	CHAR	20	177
+WVR_ID_07_07	Waiver ID (7th Occurrence) - July	CHAR	20	178
+WVR_ID_07_08	Waiver ID (7th Occurrence) - August	CHAR	20	179
+WVR_ID_07_09	Waiver ID (7th Occurrence) - September	CHAR	20	180
+WVR_ID_07_10	Waiver ID (7th Occurrence) - October	CHAR	20	181
+WVR_ID_07_11	Waiver ID (7th Occurrence) - November	CHAR	20	182
+WVR_ID_07_12	Waiver ID (7th Occurrence) - December	CHAR	20	183
+WVR_TYPE_CD_07_01	Waiver Type Code (7th Occurrence) - January	CHAR	2	184
+WVR_TYPE_CD_07_02	Waiver Type Code (7th Occurrence) - February	CHAR	2	185
+WVR_TYPE_CD_07_03	Waiver Type Code (7th Occurrence) - March	CHAR	2	186
+WVR_TYPE_CD_07_04	Waiver Type Code (7th Occurrence) - April	CHAR	2	187
+WVR_TYPE_CD_07_05	Waiver Type Code (7th Occurrence) - May	CHAR	2	188
+WVR_TYPE_CD_07_06	Waiver Type Code (7th Occurrence) - June	CHAR	2	189
+WVR_TYPE_CD_07_07	Waiver Type Code (7th Occurrence) - July	CHAR	2	190
+WVR_TYPE_CD_07_08	Waiver Type Code (7th Occurrence) - August	CHAR	2	191
+WVR_TYPE_CD_07_09	Waiver Type Code (7th Occurrence) - September	CHAR	2	192
+WVR_TYPE_CD_07_10	Waiver Type Code (7th Occurrence) - October	CHAR	2	193
+WVR_TYPE_CD_07_11	Waiver Type Code (7th Occurrence) - November	CHAR	2	194
+WVR_TYPE_CD_07_12	Waiver Type Code (7th Occurrence) - December	CHAR	2	195
+WVR_ID_08_01	Waiver ID (8th Occurrence) - January	CHAR	20	196
+WVR_ID_08_02	Waiver ID (8th Occurrence) - February	CHAR	20	197
+WVR_ID_08_03	Waiver ID (8th Occurrence) - March	CHAR	20	198
+WVR_ID_08_04	Waiver ID (8th Occurrence) - April	CHAR	20	199
+WVR_ID_08_05	Waiver ID (8th Occurrence) - May	CHAR	20	200
+WVR_ID_08_06	Waiver ID (8th Occurrence) - June	CHAR	20	201
+WVR_ID_08_07	Waiver ID (8th Occurrence) - July	CHAR	20	202
+WVR_ID_08_08	Waiver ID (8th Occurrence) - August	CHAR	20	203
+WVR_ID_08_09	Waiver ID (8th Occurrence) - September	CHAR	20	204
+WVR_ID_08_10	Waiver ID (8th Occurrence) - October	CHAR	20	205
+WVR_ID_08_11	Waiver ID (8th Occurrence) - November	CHAR	20	206
+WVR_ID_08_12	Waiver ID (8th Occurrence) - December	CHAR	20	207
+WVR_TYPE_CD_08_01	Waiver Type Code (8th Occurrence) - January	CHAR	2	208
+WVR_TYPE_CD_08_02	Waiver Type Code (8th Occurrence) - February	CHAR	2	209
+WVR_TYPE_CD_08_03	Waiver Type Code (8th Occurrence) - March	CHAR	2	210
+WVR_TYPE_CD_08_04	Waiver Type Code (8th Occurrence) - April	CHAR	2	211
+WVR_TYPE_CD_08_05	Waiver Type Code (8th Occurrence) - May	CHAR	2	212
+WVR_TYPE_CD_08_06	Waiver Type Code (8th Occurrence) - June	CHAR	2	213
+WVR_TYPE_CD_08_07	Waiver Type Code (8th Occurrence) - July	CHAR	2	214
+WVR_TYPE_CD_08_08	Waiver Type Code (8th Occurrence) - August	CHAR	2	215
+WVR_TYPE_CD_08_09	Waiver Type Code (8th Occurrence) - September	CHAR	2	216
+WVR_TYPE_CD_08_10	Waiver Type Code (8th Occurrence) - October	CHAR	2	217
+WVR_TYPE_CD_08_11	Waiver Type Code (8th Occurrence) - November	CHAR	2	218
+WVR_TYPE_CD_08_12	Waiver Type Code (8th Occurrence) - December	CHAR	2	219
+WVR_ID_09_01	Waiver ID (9th Occurrence) - January	CHAR	20	220
+WVR_ID_09_02	Waiver ID (9th Occurrence) - February	CHAR	20	221
+WVR_ID_09_03	Waiver ID (9th Occurrence) - March	CHAR	20	222
+WVR_ID_09_04	Waiver ID (9th Occurrence) - April	CHAR	20	223
+WVR_ID_09_05	Waiver ID (9th Occurrence) - May	CHAR	20	224
+WVR_ID_09_06	Waiver ID (9th Occurrence) - June	CHAR	20	225
+WVR_ID_09_07	Waiver ID (9th Occurrence) - July	CHAR	20	226
+WVR_ID_09_08	Waiver ID (9th Occurrence) - August	CHAR	20	227
+WVR_ID_09_09	Waiver ID (9th Occurrence) - September	CHAR	20	228
+WVR_ID_09_10	Waiver ID (9th Occurrence) - October	CHAR	20	229
+WVR_ID_09_11	Waiver ID (9th Occurrence) - November	CHAR	20	230
+WVR_ID_09_12	Waiver ID (9th Occurrence) - December	CHAR	20	231
+WVR_TYPE_CD_09_01	Waiver Type Code (9th Occurrence) - January	CHAR	2	232
+WVR_TYPE_CD_09_02	Waiver Type Code (9th Occurrence) - February	CHAR	2	233
+WVR_TYPE_CD_09_03	Waiver Type Code (9th Occurrence) - March	CHAR	2	234
+WVR_TYPE_CD_09_04	Waiver Type Code (9th Occurrence) - April	CHAR	2	235
+WVR_TYPE_CD_09_05	Waiver Type Code (9th Occurrence) - May	CHAR	2	236
+WVR_TYPE_CD_09_06	Waiver Type Code (9th Occurrence) - June	CHAR	2	237
+WVR_TYPE_CD_09_07	Waiver Type Code (9th Occurrence) - July	CHAR	2	238
+WVR_TYPE_CD_09_08	Waiver Type Code (9th Occurrence) - August	CHAR	2	239
+WVR_TYPE_CD_09_09	Waiver Type Code (9th Occurrence) - September	CHAR	2	240
+WVR_TYPE_CD_09_10	Waiver Type Code (9th Occurrence) - October	CHAR	2	241
+WVR_TYPE_CD_09_11	Waiver Type Code (9th Occurrence) - November	CHAR	2	242
+WVR_TYPE_CD_09_12	Waiver Type Code (9th Occurrence) - December	CHAR	2	243
+WVR_ID_10_01	Waiver ID (10th Occurrence) - January	CHAR	20	244
+WVR_ID_10_02	Waiver ID (10th Occurrence) - February	CHAR	20	245
+WVR_ID_10_03	Waiver ID (10th Occurrence) - March	CHAR	20	246
+WVR_ID_10_04	Waiver ID (10th Occurrence) - April	CHAR	20	247
+WVR_ID_10_05	Waiver ID (10th Occurrence) - May	CHAR	20	248
+WVR_ID_10_06	Waiver ID (10th Occurrence) - June	CHAR	20	249
+WVR_ID_10_07	Waiver ID (10th Occurrence) - July	CHAR	20	250
+WVR_ID_10_08	Waiver ID (10th Occurrence) - August	CHAR	20	251
+WVR_ID_10_09	Waiver ID (10th Occurrence) - September	CHAR	20	252
+WVR_ID_10_10	Waiver ID (10th Occurrence) - October	CHAR	20	253
+WVR_ID_10_11	Waiver ID (10th Occurrence) - November	CHAR	20	254
+WVR_ID_10_12	Waiver ID (10th Occurrence) - December	CHAR	20	255
+WVR_TYPE_CD_10_01	Waiver Type Code (10th Occurrence) - January	CHAR	2	256
+WVR_TYPE_CD_10_02	Waiver Type Code (10th Occurrence) - February	CHAR	2	257
+WVR_TYPE_CD_10_03	Waiver Type Code (10th Occurrence) - March	CHAR	2	258
+WVR_TYPE_CD_10_04	Waiver Type Code (10th Occurrence) - April	CHAR	2	259
+WVR_TYPE_CD_10_05	Waiver Type Code (10th Occurrence) - May	CHAR	2	260
+WVR_TYPE_CD_10_06	Waiver Type Code (10th Occurrence) - June	CHAR	2	261
+WVR_TYPE_CD_10_07	Waiver Type Code (10th Occurrence) - July	CHAR	2	262
+WVR_TYPE_CD_10_08	Waiver Type Code (10th Occurrence) - August	CHAR	2	263
+WVR_TYPE_CD_10_09	Waiver Type Code (10th Occurrence) - September	CHAR	2	264
+WVR_TYPE_CD_10_10	Waiver Type Code (10th Occurrence) - October	CHAR	2	265
+WVR_TYPE_CD_10_11	Waiver Type Code (10th Occurrence) - November	CHAR	2	266
+WVR_TYPE_CD_10_12	Waiver Type Code (10th Occurrence) - December	CHAR	2	267
+RFRNC_YR	Reference Yr	CHAR	4	268
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Money Follows the Person File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+MFP_LVS_WTH_FMLY_CD	Money Follows Person (MFP) - Lives with Family or Non-Participant Code	CHAR	1	5
+MFP_QLFYD_RSDNC_CD	Money Follows Person (MFP) - Qualified Residence Code	CHAR	2	6
+MFP_QLFYD_INSTN_CD	Money Follows Person (MFP) - Qualified Institution Code	CHAR	2	7
+MFP_RINSTLZD_RSN_CD	Money Follows Person (MFP) - Reinstitutionalized Reason Code	CHAR	2	8
+MFP_PRTCPTN_END_RSN_CD	Money Follows Person (MFP) -Participation Ended Reason Code	CHAR	2	9
+MFP_IND_01	Money Follows Person (MFP) Participant - January	CHAR	1	10
+MFP_IND_02	Money Follows Person (MFP) Participant - February	CHAR	1	11
+MFP_IND_03	Money Follows Person (MFP) Participant - March	CHAR	1	12
+MFP_IND_04	Money Follows Person (MFP) Participant - April	CHAR	1	13
+MFP_IND_05	Money Follows Person (MFP) Participant - May	CHAR	1	14
+MFP_IND_06	Money Follows Person (MFP) Participant - June	CHAR	1	15
+MFP_IND_07	Money Follows Person (MFP) Participant - July	CHAR	1	16
+MFP_IND_08	Money Follows Person (MFP) Participant - August	CHAR	1	17
+MFP_IND_09	Money Follows Person (MFP) Participant - September	CHAR	1	18
+MFP_IND_10	Money Follows Person (MFP) Participant - October	CHAR	1	19
+MFP_IND_11	Money Follows Person (MFP) Participant - November	CHAR	1	20
+MFP_IND_12	Money Follows Person (MFP) Participant - December	CHAR	1	21
+MFP_IND_LTST	Money Follows Person (MFP) Participant - Ltst in Yr	CHAR	1	22
+RFRNC_YR	Reference Yr	CHAR	4	23
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Health Home and State Plan Options File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+HLTH_HOME_PRVDR_ID	Hlth Home Provider Identification Number - Ltst in Yr	CHAR	30	5
+HLTH_HOME_ENT_NAME	Hlth Home Entity Name - Ltst in Yr	CHAR	100	6
+HLTH_HOME_MH_CC_IND	Hlth Home Mental Hlth State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	7
+HLTH_HOME_SUD_CC_IND	Hlth Home Substance Abuse Disorders St-Rprtd Chronic Condition Ind - Ltst in Yr	CHAR	1	8
+HLTH_HOME_ASTHMA_CC_IND	Hlth Home Asthma State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	9
+HLTH_HOME_DBTS_CC_IND	Hlth Home Diabetes State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	10
+HLTH_HOME_HRT_DISEASE_CC_IND	Hlth Home Heart Disease State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	11
+HLTH_HOME_OVRWT_CC_IND	Hlth Home Overweight State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	12
+HLTH_HOME_HIV_AIDS_CC_IND	Hlth Home HIV or AIDS State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	13
+HLTH_HOME_OTH_CC_IND	Hlth Home Other Condition State-Reported Chronic Condition Ind - Ltst in Yr	CHAR	1	14
+HLTH_HOME_PGM_IND_01	Hlth Home Program Participation Ind - January	CHAR	1	15
+HLTH_HOME_PGM_IND_02	Hlth Home Program Participation Ind - February	CHAR	1	16
+HLTH_HOME_PGM_IND_03	Hlth Home Program Participation Ind - March	CHAR	1	17
+HLTH_HOME_PGM_IND_04	Hlth Home Program Participation Ind - April	CHAR	1	18
+HLTH_HOME_PGM_IND_05	Hlth Home Program Participation Ind - May	CHAR	1	19
+HLTH_HOME_PGM_IND_06	Hlth Home Program Participation Ind - June	CHAR	1	20
+HLTH_HOME_PGM_IND_07	Hlth Home Program Participation Ind - July	CHAR	1	21
+HLTH_HOME_PGM_IND_08	Hlth Home Program Participation Ind - August	CHAR	1	22
+HLTH_HOME_PGM_IND_09	Hlth Home Program Participation Ind - September	CHAR	1	23
+HLTH_HOME_PGM_IND_10	Hlth Home Program Participation Ind - October	CHAR	1	24
+HLTH_HOME_PGM_IND_11	Hlth Home Program Participation Ind - November	CHAR	1	25
+HLTH_HOME_PGM_IND_12	Hlth Home Program Participation Ind - December	CHAR	1	26
+CFC_SPO_IND_01	Community First Choice State Plan Option Ind - January	CHAR	1	27
+CFC_SPO_IND_02	Community First Choice State Plan Option Ind - February	CHAR	1	28
+CFC_SPO_IND_03	Community First Choice State Plan Option Ind - March	CHAR	1	29
+CFC_SPO_IND_04	Community First Choice State Plan Option Ind - April	CHAR	1	30
+CFC_SPO_IND_05	Community First Choice State Plan Option Ind - May	CHAR	1	31
+CFC_SPO_IND_06	Community First Choice State Plan Option Ind - June	CHAR	1	32
+CFC_SPO_IND_07	Community First Choice State Plan Option Ind - July	CHAR	1	33
+CFC_SPO_IND_08	Community First Choice State Plan Option Ind - August	CHAR	1	34
+CFC_SPO_IND_09	Community First Choice State Plan Option Ind - September	CHAR	1	35
+CFC_SPO_IND_10	Community First Choice State Plan Option Ind - October	CHAR	1	36
+CFC_SPO_IND_11	Community First Choice State Plan Option Ind - November	CHAR	1	37
+CFC_SPO_IND_12	Community First Choice State Plan Option Ind - December	CHAR	1	38
+SPO_1915I_IND_01	1915(i) State Plan Option Ind - January	CHAR	1	39
+SPO_1915I_IND_02	1915(i) State Plan Option Ind - February	CHAR	1	40
+SPO_1915I_IND_03	1915(i) State Plan Option Ind - March	CHAR	1	41
+SPO_1915I_IND_04	1915(i) State Plan Option Ind - April	CHAR	1	42
+SPO_1915I_IND_05	1915(i) State Plan Option Ind - May	CHAR	1	43
+SPO_1915I_IND_06	1915(i) State Plan Option Ind - June	CHAR	1	44
+SPO_1915I_IND_07	1915(i) State Plan Option Ind - July	CHAR	1	45
+SPO_1915I_IND_08	1915(i) State Plan Option Ind - August	CHAR	1	46
+SPO_1915I_IND_09	1915(i) State Plan Option Ind - September	CHAR	1	47
+SPO_1915I_IND_10	1915(i) State Plan Option Ind - October	CHAR	1	48
+SPO_1915I_IND_11	1915(i) State Plan Option Ind - November	CHAR	1	49
+SPO_1915I_IND_12	1915(i) State Plan Option Ind - December	CHAR	1	50
+SPO_1915J_IND_01	1915(j) State Plan Option Ind - January	CHAR	1	51
+SPO_1915J_IND_02	1915(j) State Plan Option Ind - February	CHAR	1	52
+SPO_1915J_IND_03	1915(j) State Plan Option Ind - March	CHAR	1	53
+SPO_1915J_IND_04	1915(j) State Plan Option Ind - April	CHAR	1	54
+SPO_1915J_IND_05	1915(j) State Plan Option Ind - May	CHAR	1	55
+SPO_1915J_IND_06	1915(j) State Plan Option Ind - June	CHAR	1	56
+SPO_1915J_IND_07	1915(j) State Plan Option Ind - July	CHAR	1	57
+SPO_1915J_IND_08	1915(j) State Plan Option Ind - August	CHAR	1	58
+SPO_1915J_IND_09	1915(j) State Plan Option Ind - September	CHAR	1	59
+SPO_1915J_IND_10	1915(j) State Plan Option Ind - October	CHAR	1	60
+SPO_1915J_IND_11	1915(j) State Plan Option Ind - November	CHAR	1	61
+SPO_1915J_IND_12	1915(j) State Plan Option Ind - December	CHAR	1	62
+SPO_1932A_IND_01	1932(a) State Plan Option Ind - January	CHAR	1	63
+SPO_1932A_IND_02	1932(a) State Plan Option Ind - February	CHAR	1	64
+SPO_1932A_IND_03	1932(a) State Plan Option Ind - March	CHAR	1	65
+SPO_1932A_IND_04	1932(a) State Plan Option Ind - April	CHAR	1	66
+SPO_1932A_IND_05	1932(a) State Plan Option Ind - May	CHAR	1	67
+SPO_1932A_IND_06	1932(a) State Plan Option Ind - June	CHAR	1	68
+SPO_1932A_IND_07	1932(a) State Plan Option Ind - July	CHAR	1	69
+SPO_1932A_IND_08	1932(a) State Plan Option Ind - August	CHAR	1	70
+SPO_1932A_IND_09	1932(a) State Plan Option Ind - September	CHAR	1	71
+SPO_1932A_IND_10	1932(a) State Plan Option Ind - October	CHAR	1	72
+SPO_1932A_IND_11	1932(a) State Plan Option Ind - November	CHAR	1	73
+SPO_1932A_IND_12	1932(a) State Plan Option Ind - December	CHAR	1	74
+SPO_1915A_IND_01	1915(a) State Plan Option Ind - January	CHAR	1	75
+SPO_1915A_IND_02	1915(a) State Plan Option Ind - February	CHAR	1	76
+SPO_1915A_IND_03	1915(a) State Plan Option Ind - March	CHAR	1	77
+SPO_1915A_IND_04	1915(a) State Plan Option Ind - April	CHAR	1	78
+SPO_1915A_IND_05	1915(a) State Plan Option Ind - May	CHAR	1	79
+SPO_1915A_IND_06	1915(a) State Plan Option Ind - June	CHAR	1	80
+SPO_1915A_IND_07	1915(a) State Plan Option Ind - July	CHAR	1	81
+SPO_1915A_IND_08	1915(a) State Plan Option Ind - August	CHAR	1	82
+SPO_1915A_IND_09	1915(a) State Plan Option Ind - September	CHAR	1	83
+SPO_1915A_IND_10	1915(a) State Plan Option Ind - October	CHAR	1	84
+SPO_1915A_IND_11	1915(a) State Plan Option Ind - November	CHAR	1	85
+SPO_1915A_IND_12	1915(a) State Plan Option Ind - December	CHAR	1	86
+ABP_SPO_1937_IND_01	1937 Alternative Benefit Plan State Plan Option Ind - January	CHAR	1	87
+ABP_SPO_1937_IND_02	1937 Alternative Benefit Plan State Plan Option Ind - February	CHAR	1	88
+ABP_SPO_1937_IND_03	1937 Alternative Benefit Plan State Plan Option Ind - March	CHAR	1	89
+ABP_SPO_1937_IND_04	1937 Alternative Benefit Plan State Plan Option Ind - April	CHAR	1	90
+ABP_SPO_1937_IND_05	1937 Alternative Benefit Plan State Plan Option Ind - May	CHAR	1	91
+ABP_SPO_1937_IND_06	1937 Alternative Benefit Plan State Plan Option Ind - June	CHAR	1	92
+ABP_SPO_1937_IND_07	1937 Alternative Benefit Plan State Plan Option Ind - July	CHAR	1	93
+ABP_SPO_1937_IND_08	1937 Alternative Benefit Plan State Plan Option Ind - August	CHAR	1	94
+ABP_SPO_1937_IND_09	1937 Alternative Benefit Plan State Plan Option Ind - September	CHAR	1	95
+ABP_SPO_1937_IND_10	1937 Alternative Benefit Plan State Plan Option Ind - October	CHAR	1	96
+ABP_SPO_1937_IND_11	1937 Alternative Benefit Plan State Plan Option Ind - November	CHAR	1	97
+ABP_SPO_1937_IND_12	1937 Alternative Benefit Plan State Plan Option Ind - December	CHAR	1	98
+RFRNC_YR	Reference Yr	CHAR	4	99
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Demographic and Enrollment — Disability and Need File
+Version — December 2025
+RIF SAS Name	RIF  Label	Type	Length	RIF Sequence	New variables
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+HCBS_AGED_CC_IND	HCBS Aged State-Reported Chronic Condition Ind - Ltst in Yr	NUM	3	5
+HCBS_PHYS_DSBLTS_CC_IND	HCBS Physical Disabilities State-Reported Chronic Condition Ind - Ltst in Yr	NUM	3	6
+HCBS_INTLCTL_DSBLTS_CC_IND	HCBS Intellectual Disabilities State-Reported Chronic Condition Ind - Ltst in Yr	NUM	3	7
+HCBS_DEVDIS_CC_IND	HCBS Developmental Disabilities State-Reported Chronic Condition Ind-Ltst in Yr	NUM	3	8
+HCBS_DSBLD_OTH_CC_IND	HCBS Disabled Other State-Reported Chronic Condition Ind- Ltst in Yr	NUM	3	9
+HCBS_AUTSM_CC_IND	HCBS Autism State-Reported Chronic Condition Ind- Ltst in Yr	NUM	3	10
+HCBS_MENTL_ILL_CC_IND	HCBS Mental Illness State-Reported Chronic Condition Ind - Ltst in Yr	NUM	3	11
+HCBS_BRN_INJURY_CC_IND	HCBS Brain Injury State-Reported Chronic Condition Ind — Ltst in Yr	NUM	3	12
+HCBS_HIV_AIDS_CC_IND	HCBS HIV or AIDS State-Reported Chronic Condition Ind - Ltst in Yr	NUM	3	13
+HCBS_TECH_DPNDNT_MF_CC_IND	HCBS Tech Dep Medically Fragile State-Reported Chronic Condition Ind-Ltst in Yr	NUM	3	14
+LCKIN_IND	Lock-in Ind - Ever in Calendar Yr	CHAR	1	15
+LCKIN_TOS_CD_1	Lock-in Type of Service Code 1	CHAR	3	221	New1
+LCKIN_PRVDR_ID_1	Lock-in Provider 1 Identification Number	CHAR	30	16
+LCKIN_PRVDR_TYPE_CD_1	Lock-in Provider 1 Type Code	CHAR	2	17
+LCKIN_TOS_CD_2	Lock-in Type of Service Code 2	CHAR	3	222	New1
+LCKIN_PRVDR_ID_2	Lock-in Provider 2 Identification Number	CHAR	30	18
+LCKIN_PRVDR_TYPE_CD_2	Lock-in Provider 2 Type Code	CHAR	2	19
+LCKIN_TOS_CD_3	Lock-in Type of Service Code 3	CHAR	3	223	New1
+LCKIN_PRVDR_ID_3	Lock-in Provider 3 Identification Number	CHAR	30	20
+LCKIN_PRVDR_TYPE_CD_3	Lock-in Provider 3 Type Code	CHAR	2	21
+DSBLTY_DFCLTY_CNCNTRTNG_IND_01	Disability Ind - Difficulty Concentrating - January	CHAR	1	22
+DSBLTY_DFCLTY_CNCNTRTNG_IND_02	Disability Ind - Difficulty Concentrating - February	CHAR	1	23
+DSBLTY_DFCLTY_CNCNTRTNG_IND_03	Disability Ind - Difficulty Concentrating - March	CHAR	1	24
+DSBLTY_DFCLTY_CNCNTRTNG_IND_04	Disability Ind - Difficulty Concentrating - April	CHAR	1	25
+DSBLTY_DFCLTY_CNCNTRTNG_IND_05	Disability Ind - Difficulty Concentrating - May	CHAR	1	26
+DSBLTY_DFCLTY_CNCNTRTNG_IND_06	Disability Ind - Difficulty Concentrating - June	CHAR	1	27
+DSBLTY_DFCLTY_CNCNTRTNG_IND_07	Disability Ind - Difficulty Concentrating - July	CHAR	1	28
+DSBLTY_DFCLTY_CNCNTRTNG_IND_08	Disability Ind - Difficulty Concentrating - August	CHAR	1	29
+DSBLTY_DFCLTY_CNCNTRTNG_IND_09	Disability Ind - Difficulty Concentrating - September	CHAR	1	30
+DSBLTY_DFCLTY_CNCNTRTNG_IND_10	Disability Ind - Difficulty Concentrating - October	CHAR	1	31
+DSBLTY_DFCLTY_CNCNTRTNG_IND_11	Disability Ind - Difficulty Concentrating - November	CHAR	1	32
+DSBLTY_DFCLTY_CNCNTRTNG_IND_12	Disability Ind - Difficulty Concentrating - December	CHAR	1	33
+DSBLTY_DFCLTY_WLKG_IND_01	Disability Ind - Difficulty Walking - January	CHAR	1	34
+DSBLTY_DFCLTY_WLKG_IND_02	Disability Ind - Difficulty Walking - February	CHAR	1	35
+DSBLTY_DFCLTY_WLKG_IND_03	Disability Ind - Difficulty Walking - March	CHAR	1	36
+DSBLTY_DFCLTY_WLKG_IND_04	Disability Ind - Difficulty Walking - April	CHAR	1	37
+DSBLTY_DFCLTY_WLKG_IND_05	Disability Ind - Difficulty Walking - May	CHAR	1	38
+DSBLTY_DFCLTY_WLKG_IND_06	Disability Ind - Difficulty Walking - June	CHAR	1	39
+DSBLTY_DFCLTY_WLKG_IND_07	Disability Ind - Difficulty Walking - July	CHAR	1	40
+DSBLTY_DFCLTY_WLKG_IND_08	Disability Ind - Difficulty Walking - August	CHAR	1	41
+DSBLTY_DFCLTY_WLKG_IND_09	Disability Ind - Difficulty Walking - September	CHAR	1	42
+DSBLTY_DFCLTY_WLKG_IND_10	Disability Ind - Difficulty Walking - October	CHAR	1	43
+DSBLTY_DFCLTY_WLKG_IND_11	Disability Ind - Difficulty Walking - November	CHAR	1	44
+DSBLTY_DFCLTY_WLKG_IND_12	Disability Ind - Difficulty Walking - December	CHAR	1	45
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_01	Disability Ind - Difficulty Dressing or Bathing - January	CHAR	1	46
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_02	Disability Ind - Difficulty Dressing or Bathing - February	CHAR	1	47
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_03	Disability Ind - Difficulty Dressing or Bathing - March	CHAR	1	48
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_04	Disability Ind - Difficulty Dressing or Bathing - April	CHAR	1	49
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_05	Disability Ind - Difficulty Dressing or Bathing - May	CHAR	1	50
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_06	Disability Ind - Difficulty Dressing or Bathing - June	CHAR	1	51
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_07	Disability Ind - Difficulty Dressing or Bathing - July	CHAR	1	52
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_08	Disability Ind - Difficulty Dressing or Bathing - August	CHAR	1	53
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_09	Disability Ind - Difficulty Dressing or Bathing - September	CHAR	1	54
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_10	Disability Ind - Difficulty Dressing or Bathing - October	CHAR	1	55
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_11	Disability Ind - Difficulty Dressing or Bathing - November	CHAR	1	56
+DSBLTY_DFCLTY_DRSNG_BTHNG_IND_12	Disability Ind - Difficulty Dressing or Bathing - December	CHAR	1	57
+DSBLTY_DFCLTY_ERNDS_IND_01	Disability Ind - Difficulty Running Errands Alone - January	CHAR	1	58
+DSBLTY_DFCLTY_ERNDS_IND_02	Disability Ind - Difficulty Running Errands Alone -February	CHAR	1	59
+DSBLTY_DFCLTY_ERNDS_IND_03	Disability Ind - Difficulty Running Errands Alone - March	CHAR	1	60
+DSBLTY_DFCLTY_ERNDS_IND_04	Disability Ind - Difficulty Running Errands Alone - April	CHAR	1	61
+DSBLTY_DFCLTY_ERNDS_IND_05	Disability Ind - Difficulty Running Errands Alone - May	CHAR	1	62
+DSBLTY_DFCLTY_ERNDS_IND_06	Disability Ind - Difficulty Running Errands Alone - June	CHAR	1	63
+DSBLTY_DFCLTY_ERNDS_IND_07	Disability Ind - Difficulty Running Errands Alone - July	CHAR	1	64
+DSBLTY_DFCLTY_ERNDS_IND_08	Disability Ind - Difficulty Running Errands Alone - August	CHAR	1	65
+DSBLTY_DFCLTY_ERNDS_IND_09	Disability Ind - Difficulty Running Errands Alone - September	CHAR	1	66
+DSBLTY_DFCLTY_ERNDS_IND_10	Disability Ind - Difficulty Running Errands Alone - October	CHAR	1	67
+DSBLTY_DFCLTY_ERNDS_IND_11	Disability Ind - Difficulty Running Errands Alone - November	CHAR	1	68
+DSBLTY_DFCLTY_ERNDS_IND_12	Disability Ind - Difficulty Running Errands Alone - December	CHAR	1	69
+CARE_LVL_STUS_CD_01	Level of Care Status Code for LTSS - January	CHAR	3	70
+CARE_LVL_STUS_CD_02	Level of Care Status Code for LTSS - February	CHAR	3	71
+CARE_LVL_STUS_CD_03	Level of Care Status Code for LTSS - March	CHAR	3	72
+CARE_LVL_STUS_CD_04	Level of Care Status Code for LTSS - April	CHAR	3	73
+CARE_LVL_STUS_CD_05	Level of Care Status Code for LTSS - May	CHAR	3	74
+CARE_LVL_STUS_CD_06	Level of Care Status Code for LTSS - June	CHAR	3	75
+CARE_LVL_STUS_CD_07	Level of Care Status Code for LTSS - July	CHAR	3	76
+CARE_LVL_STUS_CD_08	Level of Care Status Code for LTSS - August	CHAR	3	77
+CARE_LVL_STUS_CD_09	Level of Care Status Code for LTSS - September	CHAR	3	78
+CARE_LVL_STUS_CD_10	Level of Care Status Code for LTSS - October	CHAR	3	79
+CARE_LVL_STUS_CD_11	Level of Care Status Code for LTSS - November	CHAR	3	80
+CARE_LVL_STUS_CD_12	Level of Care Status Code for LTSS - December	CHAR	3	81
+LTSS_PRVDR_ID_1	Long-Term Services and Supports Provider 1 Identification Number - Ltst in Yr	CHAR	30	82
+LTSS_LVL_CD_1_01	Long-Term Services & Supports Provider 1 Level of Care Code – January	CHAR	1	83
+LTSS_LVL_CD_1_02	Long-Term Services & Supports Provider 1 Level of Care Code – February	CHAR	1	84
+LTSS_LVL_CD_1_03	Long-Term Services & Supports Provider 1 Level of Care Code – March	CHAR	1	85
+LTSS_LVL_CD_1_04	Long-Term Services & Supports Provider 1 Level of Care Code – April	CHAR	1	86
+LTSS_LVL_CD_1_05	Long-Term Services & Supports Provider 1 Level of Care Code – May	CHAR	1	87
+LTSS_LVL_CD_1_06	Long-Term Services & Supports Provider 1 Level of Care Code – June	CHAR	1	88
+LTSS_LVL_CD_1_07	Long-Term Services & Supports Provider 1 Level of Care Code – July	CHAR	1	89
+LTSS_LVL_CD_1_08	Long-Term Services & Supports Provider 1 Level of Care Code – August	CHAR	1	90
+LTSS_LVL_CD_1_09	Long-Term Services & Supports Provider 1 Level of Care Code – September	CHAR	1	91
+LTSS_LVL_CD_1_10	Long-Term Services & Supports Provider 1 Level of Care Code – October	CHAR	1	92
+LTSS_LVL_CD_1_11	Long-Term Services & Supports Provider 1 Level of Care Code – November	CHAR	1	93
+LTSS_LVL_CD_1_12	Long-Term Services & Supports Provider 1 Level of Care Code – December	CHAR	1	94
+LTSS_LVL_CD_1_LTST	Long-Term Services & Supports Provider 1 Level of Care Code - Ltst in Yr	CHAR	1	95
+LTSS_PRVDR_ID_2	Long-Term Services and Supports Provider 2 Identification Number - Ltst in Yr	CHAR	30	96
+LTSS_LVL_CD_2_01	Long-Term Services & Supports Provider 2 Level of Care Code – January	CHAR	1	97
+LTSS_LVL_CD_2_02	Long-Term Services & Supports Provider 2 Level of Care Code – February	CHAR	1	98
+LTSS_LVL_CD_2_03	Long-Term Services & Supports Provider 2 Level of Care Code – March	CHAR	1	99
+LTSS_LVL_CD_2_04	Long-Term Services & Supports Provider 2 Level of Care Code – April	CHAR	1	100
+LTSS_LVL_CD_2_05	Long-Term Services & Supports Provider 2 Level of Care Code – May	CHAR	1	101
+LTSS_LVL_CD_2_06	Long-Term Services & Supports Provider 2 Level of Care Code – June	CHAR	1	102
+LTSS_LVL_CD_2_07	Long-Term Services & Supports Provider 2 Level of Care Code – July	CHAR	1	103
+LTSS_LVL_CD_2_08	Long-Term Services & Supports Provider 2 Level of Care Code – August	CHAR	1	104
+LTSS_LVL_CD_2_09	Long-Term Services & Supports Provider 2 Level of Care Code – September	CHAR	1	105
+LTSS_LVL_CD_2_10	Long-Term Services & Supports Provider 2 Level of Care Code – October	CHAR	1	106
+LTSS_LVL_CD_2_11	Long-Term Services & Supports Provider 2 Level of Care Code – November	CHAR	1	107
+LTSS_LVL_CD_2_12	Long-Term Services & Supports Provider 2 Level of Care Code – December	CHAR	1	108
+LTSS_LVL_CD_2_LTST	Long-Term Services & Supports Provider 2 Level of Care Code - Ltst in Yr	CHAR	1	109
+LTSS_PRVDR_ID_3	Long-Term Services and Supports Provider 3 Identification Number - Ltst in Yr	CHAR	30	110
+LTSS_LVL_CD_3_01	Long-Term Services & Supports Provider 3 Level of Care Code – January	CHAR	1	111
+LTSS_LVL_CD_3_02	Long-Term Services & Supports Provider 3 Level of Care Code – February	CHAR	1	112
+LTSS_LVL_CD_3_03	Long-Term Services & Supports Provider 3 Level of Care Code – March	CHAR	1	113
+LTSS_LVL_CD_3_04	Long-Term Services & Supports Provider 3 Level of Care Code – April	CHAR	1	114
+LTSS_LVL_CD_3_05	Long-Term Services & Supports Provider 3 Level of Care Code – May	CHAR	1	115
+LTSS_LVL_CD_3_06	Long-Term Services & Supports Provider 3 Level of Care Code – June	CHAR	1	116
+LTSS_LVL_CD_3_07	Long-Term Services & Supports Provider 3 Level of Care Code – July	CHAR	1	117
+LTSS_LVL_CD_3_08	Long-Term Services & Supports Provider 3 Level of Care Code – August	CHAR	1	118
+LTSS_LVL_CD_3_09	Long-Term Services & Supports Provider 3 Level of Care Code – September	CHAR	1	119
+LTSS_LVL_CD_3_10	Long-Term Services & Supports Provider 3 Level of Care Code – October	CHAR	1	120
+LTSS_LVL_CD_3_11	Long-Term Services & Supports Provider 3 Level of Care Code – November	CHAR	1	121
+LTSS_LVL_CD_3_12	Long-Term Services & Supports Provider 3 Level of Care Code – December	CHAR	1	122
+LTSS_LVL_CD_3_LTST	Long-Term Services & Supports Provider 3 Level of Care Code - Ltst in Yr	CHAR	1	123
+BIRTH_CNCPTN_IND_01	Birth to Conception Ind - January	CHAR	1	124
+BIRTH_CNCPTN_IND_02	Birth to Conception Ind - February	CHAR	1	125
+BIRTH_CNCPTN_IND_03	Birth to Conception Ind - March	CHAR	1	126
+BIRTH_CNCPTN_IND_04	Birth to Conception Ind - April	CHAR	1	127
+BIRTH_CNCPTN_IND_05	Birth to Conception Ind - May	CHAR	1	128
+BIRTH_CNCPTN_IND_06	Birth to Conception Ind - June	CHAR	1	129
+BIRTH_CNCPTN_IND_07	Birth to Conception Ind - July	CHAR	1	130
+BIRTH_CNCPTN_IND_08	Birth to Conception Ind - August	CHAR	1	131
+BIRTH_CNCPTN_IND_09	Birth to Conception Ind - September	CHAR	1	132
+BIRTH_CNCPTN_IND_10	Birth to Conception Ind - October	CHAR	1	133
+BIRTH_CNCPTN_IND_11	Birth to Conception Ind - November	CHAR	1	134
+BIRTH_CNCPTN_IND_12	Birth to Conception Ind - December	CHAR	1	135
+SSDI_IND_01	Social Security Disability Insurance (SSDI) Ind - January	CHAR	1	136
+SSDI_IND_02	Social Security Disability Insurance (SSDI) Ind - February	CHAR	1	137
+SSDI_IND_03	Social Security Disability Insurance (SSDI) Ind - March	CHAR	1	138
+SSDI_IND_04	Social Security Disability Insurance (SSDI) Ind - April	CHAR	1	139
+SSDI_IND_05	Social Security Disability Insurance (SSDI) Ind - May	CHAR	1	140
+SSDI_IND_06	Social Security Disability Insurance (SSDI) Ind - June	CHAR	1	141
+SSDI_IND_07	Social Security Disability Insurance (SSDI) Ind - July	CHAR	1	142
+SSDI_IND_08	Social Security Disability Insurance (SSDI) Ind - August	CHAR	1	143
+SSDI_IND_09	Social Security Disability Insurance (SSDI) Ind - September	CHAR	1	144
+SSDI_IND_10	Social Security Disability Insurance (SSDI) Ind - October	CHAR	1	145
+SSDI_IND_11	Social Security Disability Insurance (SSDI) Ind - November	CHAR	1	146
+SSDI_IND_12	Social Security Disability Insurance (SSDI) Ind - December	CHAR	1	147
+SSI_IND_01	Supplemental Security Income (SSI) Ind - January	CHAR	1	148
+SSI_IND_02	Supplemental Security Income (SSI) Ind - February	CHAR	1	149
+SSI_IND_03	Supplemental Security Income (SSI) Ind - March	CHAR	1	150
+SSI_IND_04	Supplemental Security Income (SSI) Ind - April	CHAR	1	151
+SSI_IND_05	Supplemental Security Income (SSI) Ind - May	CHAR	1	152
+SSI_IND_06	Supplemental Security Income (SSI) Ind - June	CHAR	1	153
+SSI_IND_07	Supplemental Security Income (SSI) Ind - July	CHAR	1	154
+SSI_IND_08	Supplemental Security Income (SSI) Ind - August	CHAR	1	155
+SSI_IND_09	Supplemental Security Income (SSI) Ind - September	CHAR	1	156
+SSI_IND_10	Supplemental Security Income (SSI) Ind - October	CHAR	1	157
+SSI_IND_11	Supplemental Security Income (SSI) Ind - November	CHAR	1	158
+SSI_IND_12	Supplemental Security Income (SSI) Ind - December	CHAR	1	159
+SSI_STUS_CD_01	Supplemental Security Income (SSI) Status Code - January	CHAR	3	160
+SSI_STUS_CD_02	Supplemental Security Income (SSI) Status Code - February	CHAR	3	161
+SSI_STUS_CD_03	Supplemental Security Income (SSI) Status Code - March	CHAR	3	162
+SSI_STUS_CD_04	Supplemental Security Income (SSI) Status Code - April	CHAR	3	163
+SSI_STUS_CD_05	Supplemental Security Income (SSI) Status Code - May	CHAR	3	164
+SSI_STUS_CD_06	Supplemental Security Income (SSI) Status Code - June	CHAR	3	165
+SSI_STUS_CD_07	Supplemental Security Income (SSI) Status Code - July	CHAR	3	166
+SSI_STUS_CD_08	Supplemental Security Income (SSI) Status Code - August	CHAR	3	167
+SSI_STUS_CD_09	Supplemental Security Income (SSI) Status Code - September	CHAR	3	168
+SSI_STUS_CD_10	Supplemental Security Income (SSI) Status Code - October	CHAR	3	169
+SSI_STUS_CD_11	Supplemental Security Income (SSI) Status Code - November	CHAR	3	170
+SSI_STUS_CD_12	Supplemental Security Income (SSI) Status Code - December	CHAR	3	171
+SSI_STATE_SPLMT_CD_01	Supplemental Security Income (SSI) State Supplement Code - January	CHAR	3	172
+SSI_STATE_SPLMT_CD_02	Supplemental Security Income (SSI) State Supplement Code - February	CHAR	3	173
+SSI_STATE_SPLMT_CD_03	Supplemental Security Income (SSI) State Supplement Code - March	CHAR	3	174
+SSI_STATE_SPLMT_CD_04	Supplemental Security Income (SSI) State Supplement Code -April	CHAR	3	175
+SSI_STATE_SPLMT_CD_05	Supplemental Security Income (SSI) State Supplement Code - May	CHAR	3	176
+SSI_STATE_SPLMT_CD_06	Supplemental Security Income (SSI) State Supplement Code - June	CHAR	3	177
+SSI_STATE_SPLMT_CD_07	Supplemental Security Income (SSI) State Supplement Code - July	CHAR	3	178
+SSI_STATE_SPLMT_CD_08	Supplemental Security Income (SSI) State Supplement Code - August	CHAR	3	179
+SSI_STATE_SPLMT_CD_09	Supplemental Security Income (SSI) State Supplement Code - September	CHAR	3	180
+SSI_STATE_SPLMT_CD_10	Supplemental Security Income (SSI) State Supplement Code - October	CHAR	3	181
+SSI_STATE_SPLMT_CD_11	Supplemental Security Income (SSI) State Supplement Code - November	CHAR	3	182
+SSI_STATE_SPLMT_CD_12	Supplemental Security Income (SSI) State Supplement Code - December	CHAR	3	183
+TANF_CASH_CD_01	Temporary Assistance for Needy Families (TANF) Cash Code - January	CHAR	1	184
+TANF_CASH_CD_02	Temporary Assistance for Needy Families (TANF) Cash Code - February	CHAR	1	185
+TANF_CASH_CD_03	Temporary Assistance for Needy Families (TANF) Cash Code - March	CHAR	1	186
+TANF_CASH_CD_04	Temporary Assistance for Needy Families (TANF) Cash Code - April	CHAR	1	187
+TANF_CASH_CD_05	Temporary Assistance for Needy Families (TANF) Cash Code - May	CHAR	1	188
+TANF_CASH_CD_06	Temporary Assistance for Needy Families (TANF) Cash Code - June	CHAR	1	189
+TANF_CASH_CD_07	Temporary Assistance for Needy Families (TANF) Cash Code - July	CHAR	1	190
+TANF_CASH_CD_08	Temporary Assistance for Needy Families (TANF) Cash Code - August	CHAR	1	191
+TANF_CASH_CD_09	Temporary Assistance for Needy Families (TANF) Cash Code - September	CHAR	1	192
+TANF_CASH_CD_10	Temporary Assistance for Needy Families (TANF) Cash Code - October	CHAR	1	193
+TANF_CASH_CD_11	Temporary Assistance for Needy Families (TANF) Cash Code - November	CHAR	1	194
+TANF_CASH_CD_12	Temporary Assistance for Needy Families (TANF) Cash Code - December	CHAR	1	195
+TPL_INSRNC_CVRG_IND_01	Third Party Liability (TPL) Insurance Coverage Ind - January	CHAR	1	196
+TPL_INSRNC_CVRG_IND_02	Third Party Liability (TPL) Insurance Coverage Ind - February	CHAR	1	197
+TPL_INSRNC_CVRG_IND_03	Third Party Liability (TPL) Insurance Coverage Ind - March	CHAR	1	198
+TPL_INSRNC_CVRG_IND_04	Third Party Liability (TPL) Insurance Coverage Ind - April	CHAR	1	199
+TPL_INSRNC_CVRG_IND_05	Third Party Liability (TPL) Insurance Coverage Ind - May	CHAR	1	200
+TPL_INSRNC_CVRG_IND_06	Third Party Liability (TPL) Insurance Coverage Ind - June	CHAR	1	201
+TPL_INSRNC_CVRG_IND_07	Third Party Liability (TPL) Insurance Coverage Ind - July	CHAR	1	202
+TPL_INSRNC_CVRG_IND_08	Third Party Liability (TPL) Insurance Coverage Ind - August	CHAR	1	203
+TPL_INSRNC_CVRG_IND_09	Third Party Liability (TPL) Insurance Coverage Ind - September	CHAR	1	204
+TPL_INSRNC_CVRG_IND_10	Third Party Liability (TPL) Insurance Coverage Ind - October	CHAR	1	205
+TPL_INSRNC_CVRG_IND_11	Third Party Liability (TPL) Insurance Coverage Ind - November	CHAR	1	206
+TPL_INSRNC_CVRG_IND_12	Third Party Liability (TPL) Insurance Coverage Ind - December	CHAR	1	207
+TPL_OTHR_CVRG_IND_01	Third Party Liability - Other Coverage Ind - January	CHAR	1	208
+TPL_OTHR_CVRG_IND_02	Third Party Liability - Other Coverage Ind - February	CHAR	1	209
+TPL_OTHR_CVRG_IND_03	Third Party Liability - Other Coverage Ind - March	CHAR	1	210
+TPL_OTHR_CVRG_IND_04	Third Party Liability - Other Coverage Ind - April	CHAR	1	211
+TPL_OTHR_CVRG_IND_05	Third Party Liability - Other Coverage Ind - May	CHAR	1	212
+TPL_OTHR_CVRG_IND_06	Third Party Liability - Other Coverage Ind - June	CHAR	1	213
+TPL_OTHR_CVRG_IND_07	Third Party Liability - Other Coverage Ind - July	CHAR	1	214
+TPL_OTHR_CVRG_IND_08	Third Party Liability - Other Coverage Ind - August	CHAR	1	215
+TPL_OTHR_CVRG_IND_09	Third Party Liability - Other Coverage Ind - September	CHAR	1	216
+TPL_OTHR_CVRG_IND_10	Third Party Liability - Other Coverage Ind - October	CHAR	1	217
+TPL_OTHR_CVRG_IND_11	Third Party Liability - Other Coverage Ind - November	CHAR	1	218
+TPL_OTHR_CVRG_IND_12	Third Party Liability - Other Coverage Ind - December	CHAR	1	219
+RFRNC_YR	Reference Yr	CHAR	4	220
+1 Fields populated starting with the 2023 Release 1 RIF are designated as "New1"
+
+Revision date	Tab	Description
+45992	DE Base
+DE Disability & Need (DSB)	Added FPL_PCT.
+Added LCKIN_TOS_CD_1, LCKIN_TOS_CD_2 and LCKIN_TOS_CD_3.
+44835	DE Base	Added 13 variables: ELGBL_AFTR_EOY_IND and the monthly ELGBLTY_CHG_RSN_CD_01-12
+44440	DE Managed Care Enrollment	Added two new summary fields: LTSS_PIHP_MOS and OTH_PLAN_MOS
+44440	All files	Adjusted SAS label for SUBMTG_STATE_CD to reflect expansion of this field to state entity code

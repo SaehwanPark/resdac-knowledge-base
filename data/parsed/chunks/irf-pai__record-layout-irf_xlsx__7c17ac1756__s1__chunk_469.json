@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_469",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "had any falls since admission or prior assessment. CHAR 1 The data in this column indicates whether the patient had any falls since admission or prior assessment. 0 = No\n1 = Yes\n390 J1900A_FALL_NO_INJURY_CD J1900A_FALL_NO_INJURY_CD J1900A Number of Falls Since Admission or Prior Assessment With No Injury Code - The data in this column indicates the number of falls that resulted in no injury since admission or prior assessment. CHAR 1 The data in this column indicates the number of falls that",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

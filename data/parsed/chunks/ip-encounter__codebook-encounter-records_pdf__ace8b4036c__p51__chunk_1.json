@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p51__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 51,
+  "text": "CLM_POA_IND_SW16 \nCLM_POA_IND_SW17 \nCLM_POA_IND_SW18 \nCLM_POA_IND_SW19 \nCLM_POA_IND_SW20 \nCLM_POA_IND_SW21 \nCLM_POA_IND_SW22 \nCLM_POA_IND_SW23 \nCLM_POA_IND_SW24 \nCLM_POA_IND_SW25 \nLABEL: \nClaim Diagnosis Code I – 25 Diagnosis Present on Admission (POA) Indicator Code \nDESCRIPTION: The present on admission (POA) indicator code associated with the diagnosis codes (principal and \nsecondary; which are the ICD_DGNS_CD1–ICD_DGNS_CD25 fields). \nIn response to the Deficit Reduction Act of 2005, CMS",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p353__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 353,
+  "text": "(INP; also known as a standard retail pharmacy) \nduring the pre-initial coverage limit (ICL) phase of the Part D benefit. \nSHORT NAME: — \nLONG NAME: PRE_ICL_INP_1M_COPAY_TIER_08 \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \n\nCOMMENT: \nThis variable was new in 2007. It changed from 12 digits to 8 in 2009. \nPlans that use a coinsurance percentage rather than a co-payment amount will not have a value in this \nfield; see instead the corresponding coinsurance variable called",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

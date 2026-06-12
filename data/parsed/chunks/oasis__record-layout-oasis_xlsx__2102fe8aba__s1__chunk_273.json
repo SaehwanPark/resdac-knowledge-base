@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_273",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "number of unstageable unhealed pressure ulcers due to suspected deep tissue\ninjury in evolution. CHAR 2 x x x\nM1308_NSTG_DEEP_TISUE_SOC_ROC M1308 Number Unstageable Pressure Ulcers D/T Deep Tissue Injury @ SOC ROC This field indicates the current number of unstageable unhealed pressure ulcers due to suspected deep tissue\ninjury that were present on admission (most recent SOC / ROC). CHAR 2 x\nM1310_PRSR_ULCR_LNGTH M1310 Largest Pressure Ulcer Length This field records the longest length (in",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

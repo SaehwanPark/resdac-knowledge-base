@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "RE_DRNG_AFTR_CD Did screening occur before, during, or after the visit CHAR 1\nSR_CORE_FOOD_1_CD Core HRSN Food 1: Worried food would run out before got money for more CHAR 1\nSR_CORE_FOOD_2_CD Core HRSN Food 2: Food bought didn't last and didn't have money to get more CHAR 1\nSR_CORE_FOOD_OVRL_SCRNG_IND Screened Core HRSN Food Overall Indicator CHAR 1\nSR_CORE_HOUSNG_1_CD Core HRSN Housing 1: Current Living Situation CHAR 1\nSR_CORE_HOUSNG_2_HEAT_SW Core HRSN Housing 2: Heat Inadequate CHAR",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

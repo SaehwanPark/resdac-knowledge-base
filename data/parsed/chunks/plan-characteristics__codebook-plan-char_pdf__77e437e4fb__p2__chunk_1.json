@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 2,
+  "text": "and \nPART_D_LIPS_75 \n• Added POST_OOPT_EXCL_DRUG_CST_SHR and 15 new \nInsulin variables to Plan Tier file for 2024: \nINSULIN_INP_COPAY_1M, INSULIN_INP_COPAY_2M, \nINSULIN_INP_COPAY_3M, INSULIN_INPP_COPAY_1M, \nINSULIN_INPP_COPAY_2M, INSULIN_INPP_COPAY_3M, \nINSULIN_MO_COPAY_1M, INSULIN_MO_COPAY_2M, \nINSULIN_MO_COPAY_3M, INSULIN_MOPP_COPAY_1M, \nINSULIN_MOPP_COPAY_2M, INSULIN_MOPP_COPAY_3M, \nINSULIN_OONP_COPAY_1M, INSULIN_OONP_COPAY_OS, \nand INSULIN_LTCP_COPAY_1M \n• Added new CONTRACT_ID, PLAN_ID,",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

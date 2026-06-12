@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_0",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Risk Score Operational Payment Base and Model Output User Guide │ June 2026 │ V 1.1 \n13 \nTable 8. Adjustments within the risk adjustment model \nAdjustment \nDetails \nPayment adjustments \nCMS applies a normalization factor to keep the average \nFFS risk score at 1.0. \nPayment adjustments \nNOTE: CMS applies this coding intensity adjustment to \nall scores (not limited to scores for MA enrollees). \nCMS applies a coding pattern",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

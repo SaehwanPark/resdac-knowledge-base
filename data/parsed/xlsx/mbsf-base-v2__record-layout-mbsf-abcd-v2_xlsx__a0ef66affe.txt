@@ -1,0 +1,222 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Master Beneficiary Summary File (MBSF) Base A/B/C/D Version 2 (V2)
+Version — March 2025
+SAS name	Label	Type	Length
+BENE_ID	Encrypted 723 Beneficiary ID	CHAR	15
+BENE_ENROLLMT_REF_YR	Beneficiary Enrollment Reference Year	NUM	4
+SAMPLE_GROUP	Medicare 1, 5, or 20% Strict Sample Group Indicator	CHAR	2
+ENHANCED_FIVE_PERCENT_FLAG	Medicare Enhanced 5% Sample Indicator	CHAR	1
+CRNT_BIC_CD	Current Beneficiary Identification Code	CHAR	2
+STATE_CD	SSA State Code	CHAR	2
+COUNTY_CD	SSA County Code	CHAR	3
+ZIP_CD	5-digit ZIP Code	CHAR	5
+STATE_CNTY_FIPS_CD_01	FIPS State-County Code - January	CHAR	5
+STATE_CNTY_FIPS_CD_02	FIPS State-County Code - February	CHAR	5
+STATE_CNTY_FIPS_CD_03	FIPS State-County Code - March	CHAR	5
+STATE_CNTY_FIPS_CD_04	FIPS State-County Code - April	CHAR	5
+STATE_CNTY_FIPS_CD_05	FIPS State-County Code - May	CHAR	5
+STATE_CNTY_FIPS_CD_06	FIPS State-County Code - June	CHAR	5
+STATE_CNTY_FIPS_CD_07	FIPS State-County Code - July	CHAR	5
+STATE_CNTY_FIPS_CD_08	FIPS State-County Code - August	CHAR	5
+STATE_CNTY_FIPS_CD_09	FIPS State-County Code - September	CHAR	5
+STATE_CNTY_FIPS_CD_10	FIPS State-County Code - October	CHAR	5
+STATE_CNTY_FIPS_CD_11	FIPS State-County Code - November	CHAR	5
+STATE_CNTY_FIPS_CD_12	FIPS State-County Code - December	CHAR	5
+AGE_AT_END_REF_YR	Age at the End of the Reference Year	NUM	3
+BENE_BIRTH_DT	Beneficiary Date of Birth	DATE	8
+VALID_DEATH_DT_SW	Valid Date of Death Switch	CHAR	1
+BENE_DEATH_DT	Beneficiary Date of Death	DATE	8
+SEX_IDENT_CD	Sex	CHAR	1
+BENE_RACE_CD	Beneficiary Race Code	CHAR	1
+RTI_RACE_CD	Research Triangle Institute (RTI) Race Code	CHAR	1
+COVSTART	Medicare Coverage Start Date	DATE	8
+PTA_CVRG_STRT_DT	Medicare Part A Coverage Start Date	DATE	8
+PTB_CVRG_STRT_DT	Medicare Part B Coverage Start Date	DATE	8
+PTD_CVRG_STRT_DT	Medicare Part D Coverage Start Date	DATE	8
+ENTLMT_RSN_ORIG	Original Reason for Entitlement Code	CHAR	1
+ENTLMT_RSN_CURR	Current Reason for Entitlement Code	CHAR	1
+ESRD_IND	End-stage Renal Disease (ESRD)- Annual Indicator	CHAR	1
+ESRD_IND_01	ESRD Indicator - January	CHAR	1
+ESRD_IND_02	ESRD Indicator - February	CHAR	1
+ESRD_IND_03	ESRD Indicator - March	CHAR	1
+ESRD_IND_04	ESRD Indicator - April	CHAR	1
+ESRD_IND_05	ESRD Indicator - May	CHAR	1
+ESRD_IND_06	ESRD Indicator - June	CHAR	1
+ESRD_IND_07	ESRD Indicator - July	CHAR	1
+ESRD_IND_08	ESRD Indicator - August	CHAR	1
+ESRD_IND_09	ESRD Indicator - September	CHAR	1
+ESRD_IND_10	ESRD Indicator - October	CHAR	1
+ESRD_IND_11	ESRD Indicator - November	CHAR	1
+ESRD_IND_12	ESRD Indicator - December	CHAR	1
+SSA_DIB_AWD_CD	SSA Disability Insurance Benefit Award Code	CHAR	1
+SSA_DIB_JSTFCTN_CD	SSA Disability Insurance Benefit Entitlement to Medicare Justification Code	CHAR	1
+SSA_DIB_PRMRY_IMPRMNT_CD	SSA Disability Insurance Benefit Dx Primary Impairment Code	CHAR	4
+SSA_DIB_SCNDRY_IMPRMNT_CD	SSA Disability Insurance Benefit Dx Secondary Impairment Code	CHAR	4
+MDCR_STATUS_CD_01	Medicare Status Code - January	CHAR	2
+MDCR_STATUS_CD_02	Medicare Status Code - February	CHAR	2
+MDCR_STATUS_CD_03	Medicare Status Code - March	CHAR	2
+MDCR_STATUS_CD_04	Medicare Status Code - April	CHAR	2
+MDCR_STATUS_CD_05	Medicare Status Code - May	CHAR	2
+MDCR_STATUS_CD_06	Medicare Status Code - June	CHAR	2
+MDCR_STATUS_CD_07	Medicare Status Code - July	CHAR	2
+MDCR_STATUS_CD_08	Medicare Status Code - August	CHAR	2
+MDCR_STATUS_CD_09	Medicare Status Code - September	CHAR	2
+MDCR_STATUS_CD_10	Medicare Status Code - October	CHAR	2
+MDCR_STATUS_CD_11	Medicare Status Code - November	CHAR	2
+MDCR_STATUS_CD_12	Medicare Status Code - December	CHAR	2
+MDCR_STATUS_CD	Medicare Status Code - Annual Indicator	CHAR	2
+BENE_PTA_TRMNTN_CD	Part A Termination Code	CHAR	1
+BENE_PTB_TRMNTN_CD	Part B Termination Code	CHAR	1
+BENE_HI_CVRAGE_TOT_MONS	Hospital Insurance (HI) Coverage Months Count	NUM	3
+BENE_SMI_CVRAGE_TOT_MONS	Supplemental Medical Insurance (SMI) Coverage Months Count	NUM	3
+BENE_STATE_BUYIN_TOT_MONS	State Buy-In (SBI) Coverage Months	NUM	3
+BENE_HMO_CVRAGE_TOT_MONS	Health Maintenance Organization (HMO) Coverage Months	NUM	3
+PTD_PLAN_CVRG_MONS	Part D Contract Plan Coverage Months	NUM	3
+RDS_CVRG_MONS	Retiree Drug Subsidy (RDS) Coverage Months	NUM	3
+DUAL_ELGBL_MONS	Medicaid Dual Eligible Months	NUM	3
+MDCR_ENTLMT_BUYIN_IND_01	Medicare Entitlement/ Buy-In Indicator - January	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_02	Medicare Entitlement/ Buy-In Indicator - February	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_03	Medicare Entitlement/ Buy-In Indicator - March	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_04	Medicare Entitlement/ Buy-In Indicator - April	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_05	Medicare Entitlement/ Buy-In Indicator - May	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_06	Medicare Entitlement/ Buy-In Indicator - June	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_07	Medicare Entitlement/ Buy-In Indicator - July	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_08	Medicare Entitlement/ Buy-In Indicator - August	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_09	Medicare Entitlement/ Buy-In Indicator - September	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_10	Medicare Entitlement/ Buy-In Indicator - October	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_11	Medicare Entitlement/ Buy-In Indicator - November	CHAR	1
+MDCR_ENTLMT_BUYIN_IND_12	Medicare Entitlement/ Buy-In Indicator - December	CHAR	1
+HMO_IND_01	HMO Indicator - January	CHAR	1
+HMO_IND_02	HMO Indicator - February	CHAR	1
+HMO_IND_03	HMO Indicator - March	CHAR	1
+HMO_IND_04	HMO Indicator - April	CHAR	1
+HMO_IND_05	HMO Indicator - May	CHAR	1
+HMO_IND_06	HMO Indicator - June	CHAR	1
+HMO_IND_07	HMO Indicator - July	CHAR	1
+HMO_IND_08	HMO Indicator - August	CHAR	1
+HMO_IND_09	HMO Indicator - September	CHAR	1
+HMO_IND_10	HMO Indicator - October	CHAR	1
+HMO_IND_11	HMO Indicator - November	CHAR	1
+HMO_IND_12	HMO Indicator - December	CHAR	1
+DUAL_STUS_CD_01	State Reported Dual Eligible Status Code - January	CHAR	2
+DUAL_STUS_CD_02	State Reported Dual Eligible Status Code - February	CHAR	2
+DUAL_STUS_CD_03	State Reported Dual Eligible Status Code - March	CHAR	2
+DUAL_STUS_CD_04	State Reported Dual Eligible Status Code - April	CHAR	2
+DUAL_STUS_CD_05	State Reported Dual Eligible Status Code - May	CHAR	2
+DUAL_STUS_CD_06	State Reported Dual Eligible Status Code - June	CHAR	2
+DUAL_STUS_CD_07	State Reported Dual Eligible Status Code - July	CHAR	2
+DUAL_STUS_CD_08	State Reported Dual Eligible Status Code - August	CHAR	2
+DUAL_STUS_CD_09	State Reported Dual Eligible Status Code - September	CHAR	2
+DUAL_STUS_CD_10	State Reported Dual Eligible Status Code - October	CHAR	2
+DUAL_STUS_CD_11	State Reported Dual Eligible Status Code - November	CHAR	2
+DUAL_STUS_CD_12	State Reported Dual Eligible Status Code - December	CHAR	2
+Part C
+PTC_CNTRCT_ID_01	Part C Contract ID - January	CHAR	5
+PTC_CNTRCT_ID_02	Part C Contract ID - February	CHAR	5
+PTC_CNTRCT_ID_03	Part C Contract ID - March	CHAR	5
+PTC_CNTRCT_ID_04	Part C Contract ID - April	CHAR	5
+PTC_CNTRCT_ID_05	Part C Contract ID - May	CHAR	5
+PTC_CNTRCT_ID_06	Part C Contract ID - June	CHAR	5
+PTC_CNTRCT_ID_07	Part C Contract ID - July	CHAR	5
+PTC_CNTRCT_ID_08	Part C Contract ID - August	CHAR	5
+PTC_CNTRCT_ID_09	Part C Contract ID - September	CHAR	5
+PTC_CNTRCT_ID_10	Part C Contract ID - October	CHAR	5
+PTC_CNTRCT_ID_11	Part C Contract ID - November	CHAR	5
+PTC_CNTRCT_ID_12	Part C Contract ID - December	CHAR	5
+PTC_PBP_ID_01	Part C Plan Benefit Package ID - January	CHAR	3
+PTC_PBP_ID_02	Part C Plan Benefit Package ID - February	CHAR	3
+PTC_PBP_ID_03	Part C Plan Benefit Package ID - March	CHAR	3
+PTC_PBP_ID_04	Part C Plan Benefit Package ID - April	CHAR	3
+PTC_PBP_ID_05	Part C Plan Benefit Package ID - May	CHAR	3
+PTC_PBP_ID_06	Part C Plan Benefit Package ID - June	CHAR	3
+PTC_PBP_ID_07	Part C Plan Benefit Package ID - July	CHAR	3
+PTC_PBP_ID_08	Part C Plan Benefit Package ID - August	CHAR	3
+PTC_PBP_ID_09	Part C Plan Benefit Package ID - September	CHAR	3
+PTC_PBP_ID_10	Part C Plan Benefit Package ID - October	CHAR	3
+PTC_PBP_ID_11	Part C Plan Benefit Package ID - November	CHAR	3
+PTC_PBP_ID_12	Part C Plan Benefit Package ID - December	CHAR	3
+PTC_SGMT_ID_01	Part C Segment Number - January	CHAR	3
+PTC_SGMT_ID_02	Part C Segment Number - February	CHAR	3
+PTC_SGMT_ID_03	Part C Segment Number - March	CHAR	3
+PTC_SGMT_ID_04	Part C Segment Number - April	CHAR	3
+PTC_SGMT_ID_05	Part C Segment Number - May	CHAR	3
+PTC_SGMT_ID_06	Part C Segment Number - June	CHAR	3
+PTC_SGMT_ID_07	Part C Segment Number - July	CHAR	3
+PTC_SGMT_ID_08	Part C Segment Number - August	CHAR	3
+PTC_SGMT_ID_09	Part C Segment Number - September	CHAR	3
+PTC_SGMT_ID_10	Part C Segment Number - October	CHAR	3
+PTC_SGMT_ID_11	Part C Segment Number - November	CHAR	3
+PTC_SGMT_ID_12	Part C Segment Number - December	CHAR	3
+PTC_PLAN_TYPE_CD_01	Part C Plan Type Code - January	CHAR	3
+PTC_PLAN_TYPE_CD_02	Part C Plan Type Code - February	CHAR	3
+PTC_PLAN_TYPE_CD_03	Part C Plan Type Code - March	CHAR	3
+PTC_PLAN_TYPE_CD_04	Part C Plan Type Code - April	CHAR	3
+PTC_PLAN_TYPE_CD_05	Part C Plan Type Code - May	CHAR	3
+PTC_PLAN_TYPE_CD_06	Part C Plan Type Code - June	CHAR	3
+PTC_PLAN_TYPE_CD_07	Part C Plan Type Code - July	CHAR	3
+PTC_PLAN_TYPE_CD_08	Part C Plan Type Code - August	CHAR	3
+PTC_PLAN_TYPE_CD_09	Part C Plan Type Code - September	CHAR	3
+PTC_PLAN_TYPE_CD_10	Part C Plan Type Code - October	CHAR	3
+PTC_PLAN_TYPE_CD_11	Part C Plan Type Code - November	CHAR	3
+PTC_PLAN_TYPE_CD_12	Part C Plan Type Code - December	CHAR	3
+Part D
+PTD_CNTRCT_ID_01	Part D Contract ID - January	CHAR	5
+PTD_CNTRCT_ID_02	Part D Contract ID - February	CHAR	5
+PTD_CNTRCT_ID_03	Part D Contract ID - March	CHAR	5
+PTD_CNTRCT_ID_04	Part D Contract ID - April	CHAR	5
+PTD_CNTRCT_ID_05	Part D Contract ID - May	CHAR	5
+PTD_CNTRCT_ID_06	Part D Contract ID - June	CHAR	5
+PTD_CNTRCT_ID_07	Part D Contract ID - July	CHAR	5
+PTD_CNTRCT_ID_08	Part D Contract ID - August	CHAR	5
+PTD_CNTRCT_ID_09	Part D Contract ID - September	CHAR	5
+PTD_CNTRCT_ID_10	Part D Contract ID - October	CHAR	5
+PTD_CNTRCT_ID_11	Part D Contract ID - November	CHAR	5
+PTD_CNTRCT_ID_12	Part D Contract ID - December	CHAR	5
+PTD_PBP_ID_01	Part D Plan Benefit Package ID - January	CHAR	3
+PTD_PBP_ID_02	Part D Plan Benefit Package ID - February	CHAR	3
+PTD_PBP_ID_03	Part D Plan Benefit Package ID - March	CHAR	3
+PTD_PBP_ID_04	Part D Plan Benefit Package ID - April	CHAR	3
+PTD_PBP_ID_05	Part D Plan Benefit Package ID - May	CHAR	3
+PTD_PBP_ID_06	Part D Plan Benefit Package ID - June	CHAR	3
+PTD_PBP_ID_07	Part D Plan Benefit Package ID - July	CHAR	3
+PTD_PBP_ID_08	Part D Plan Benefit Package ID - August	CHAR	3
+PTD_PBP_ID_09	Part D Plan Benefit Package ID - September	CHAR	3
+PTD_PBP_ID_10	Part D Plan Benefit Package ID - October	CHAR	3
+PTD_PBP_ID_11	Part D Plan Benefit Package ID - November	CHAR	3
+PTD_PBP_ID_12	Part D Plan Benefit Package ID - December	CHAR	3
+PTD_SGMT_ID_01	Part D Segment ID - January	CHAR	3
+PTD_SGMT_ID_02	Part D Segment ID - February	CHAR	3
+PTD_SGMT_ID_03	Part D Segment ID - March	CHAR	3
+PTD_SGMT_ID_04	Part D Segment ID - April	CHAR	3
+PTD_SGMT_ID_05	Part D Segment ID - May	CHAR	3
+PTD_SGMT_ID_06	Part D Segment ID - June	CHAR	3
+PTD_SGMT_ID_07	Part D Segment ID - July	CHAR	3
+PTD_SGMT_ID_08	Part D Segment ID - August	CHAR	3
+PTD_SGMT_ID_09	Part D Segment ID - September	CHAR	3
+PTD_SGMT_ID_10	Part D Segment ID - October	CHAR	3
+PTD_SGMT_ID_11	Part D Segment ID - November	CHAR	3
+PTD_SGMT_ID_12	Part D Segment ID - December	CHAR	3
+RDS_IND_01	Retiree Drug Subsidy Indicators - January	CHAR	1
+RDS_IND_02	Retiree Drug Subsidy Indicators - February	CHAR	1
+RDS_IND_03	Retiree Drug Subsidy Indicators - March	CHAR	1
+RDS_IND_04	Retiree Drug Subsidy Indicators - April	CHAR	1
+RDS_IND_05	Retiree Drug Subsidy Indicators - May	CHAR	1
+RDS_IND_06	Retiree Drug Subsidy Indicators - June	CHAR	1
+RDS_IND_07	Retiree Drug Subsidy Indicators - July	CHAR	1
+RDS_IND_08	Retiree Drug Subsidy Indicators - August	CHAR	1
+RDS_IND_09	Retiree Drug Subsidy Indicators - September	CHAR	1
+RDS_IND_10	Retiree Drug Subsidy Indicators - October	CHAR	1
+RDS_IND_11	Retiree Drug Subsidy Indicators - November	CHAR	1
+RDS_IND_12	Retiree Drug Subsidy Indicators - December	CHAR	1
+CST_SHR_GRP_CD_01	Cost Share Group Code - January	CHAR	2
+CST_SHR_GRP_CD_02	Cost Share Group Code - February	CHAR	2
+CST_SHR_GRP_CD_03	Cost Share Group Code - March	CHAR	2
+CST_SHR_GRP_CD_04	Cost Share Group Code - April	CHAR	2
+CST_SHR_GRP_CD_05	Cost Share Group Code - May	CHAR	2
+CST_SHR_GRP_CD_06	Cost Share Group Code - June	CHAR	2
+CST_SHR_GRP_CD_07	Cost Share Group Code - July	CHAR	2
+CST_SHR_GRP_CD_08	Cost Share Group Code - August	CHAR	2
+CST_SHR_GRP_CD_09	Cost Share Group Code - September	CHAR	2
+CST_SHR_GRP_CD_10	Cost Share Group Code - October	CHAR	2
+CST_SHR_GRP_CD_11	Cost Share Group Code - November	CHAR	2
+CST_SHR_GRP_CD_12	Cost Share Group Code - December	CHAR	2

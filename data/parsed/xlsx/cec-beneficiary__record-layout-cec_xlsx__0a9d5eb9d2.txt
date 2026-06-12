@@ -1,0 +1,43 @@
+CMS Chronic Condition Warehouse (CCW) Data Dictionary
+Comprehensive End-stage Renal Disease Care Model (CEC) — Beneficiary File
+Version — May 2025
+SAS Name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+ESCO_NUMBER	ESCO Number	CHAR	5
+ESCO_NAME	ESCO Name	CHAR	100
+BENE_BRTH_DT	Beneficiary Date of Birth	DATE	8
+BENE_DEATH_DT	Beneficiary Date of Death	DATE	8
+BENE_SEX1	Beneficiary Sex: F = Female, M = Male	CHAR	1
+MO1_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO2_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO3_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO4_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO5_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO6_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO7_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO8_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO9_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO10_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO11_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO12_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO13_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO14_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+MO15_ALIGN	Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned	NUM	1
+1In 2025, this field was renamed to sex to comply with Executive Order 14168.
+
+CMS Chronic Condition Warehouse (CCW) Data Dictionary
+Comprehensive End-stage Renal Disease Care Model (CEC) — Provider File
+Version — May 2025
+SAS Name	Label	Type	Length
+ESCO_NUMBER	ESCO Number	CHAR	5
+ESCO_NAME	ESCO Name	CHAR	100
+PERFORMANCE_PERIOD	Period of Performance	CHAR	18
+TIN_NUMBER	Tax ID Number of the practice/facility associated with the Individual NPI	CHAR	10
+PRNT_PRTCPNT_NPI_NUM	Parent Participant NPI Number	CHAR	10
+ORGANIZATION_NAME	Organization Name	CHAR	255
+NPI_NUMBER	Individual NPI Number	CHAR	10
+PROVIDER_TYPE_DESC	Provider Type description	CHAR	255
+CCN_NUMBER	CMS Certification Number	CHAR	9
+CONTACT_FIRST_NAME	Practitioner First Name	CHAR	30
+CONTACT_LAST_NAME	Practitioner Last Name	CHAR	40
+INSTITUTE_TYPE_DESC	Institute Type Description	CHAR	255

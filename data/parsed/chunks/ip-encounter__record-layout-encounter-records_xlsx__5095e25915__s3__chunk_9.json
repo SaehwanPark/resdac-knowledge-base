@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_9",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "Diagnosis E Code 9 Char 7 65\nICD_DGNS_E_CD10 Claim Diagnosis E Code 10 Char 7 66\nRSN_VISIT_CD1 Reason for Visit Diagnosis Code 1 Char 7 67\nRSN_VISIT_CD2 Reason for Visit Diagnosis Code 2 Char 7 68\nRSN_VISIT_CD3 Reason for Visit Diagnosis Code 3 Char 7 69\nICD_PRCDR_CD1 Claim Procedure Code 1 Char 7 70\nICD_PRCDR_CD2 Claim Procedure Code 2 Char 7 71\nICD_PRCDR_CD3 Claim Procedure Code 3 Char 7 72\nICD_PRCDR_CD4 Claim Procedure Code 4 Char 7 73\nICD_PRCDR_CD5 Claim Procedure Code 5 Char 7",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

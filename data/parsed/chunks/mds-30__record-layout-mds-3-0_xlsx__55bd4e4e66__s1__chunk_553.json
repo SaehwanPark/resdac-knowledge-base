@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_553",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "FAC_INTRNL_ID FAC_INTRNL_ID Facility ID CHAR 16 This column contains the facility internal ID for nursing home facilities,\n639 A0310H_PTA_DSCHRG_ASMT_IND A0310H_PTA_DSCHRG_ASMT_IND A0310H SNF PPS Part A Discharge Assessment CHAR 1 Indicates if the assessment is a PPS Part A Stay Discharge record. 0=No\n1=Yes effective 10/01/2016\n640 C1310A_MENTL_STUS_CHG_IND C1310A_MENTL_STUS_CHG_IND C1310A Acute Mental Status Change CHAR 1 Indicates whether there has been an acute change in mental status from",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

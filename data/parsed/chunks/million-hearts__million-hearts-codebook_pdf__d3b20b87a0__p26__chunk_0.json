@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p26__chunk_0",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 26,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMillion Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 \n21 \nFOLLOWUP_ATTESTATION \nLABEL: \nPractitioner's Attestation to Follow-up \nDESCRIPTION: Practitioner's attestation to follow-up. This variable addresses the question, “Has the practitioner \nattested to follow-up?” \nSHORT NAME: FOLLOWUP_ATTESTATION \nLONG NAME: FOLLOWUP_ATTESTATION \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nVisit \nSOURCE: \nMillion Hearts",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

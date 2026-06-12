@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p34__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 34,
+  "text": "Indicator Code \nDESCRIPTION: The present on admission (POA) indicator code associated with the diagnosis E codes (principal and \nsecondary; fields ICD_DGNS_E_CD1–ICD_DGNS_E_CD10). \nIn response to the Deficit Reduction Act of 2005, CMS began to distinguish between hospitalization \ndiagnoses that occurred prior to versus during the admission. The objective was to eventually not pay \nhospitals more if the patient acquired a condition (e.g., infection) during the admission. This present \non",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

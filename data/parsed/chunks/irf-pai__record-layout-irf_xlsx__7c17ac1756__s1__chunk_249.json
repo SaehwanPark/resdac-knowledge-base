@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_249",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "PRPHRL_VSCLR_DEASE_IND PRPHRL_VSCLR_DEASE_IND I0900A Peripheral Vascular Disease Code CHAR 1 The code for whether the patient had a diagnosis of peripheral vascular disease (PVD). -=Not assessed/no information\n0=No\n1=Yes\n222 DBTC_NPHRTY_IND DBTC_NPHRTY_IND I2900C Diabetic Nephropathy Code CHAR 3 The code for whether the patient has an active diagnosis of diabetic nephropathy. -=Not assessed/no information\n0=No\n1=Yes\n==Not answered-voluntary\n^=Skipped\n223 INFLNZ_RCVD_IND INFLNZ_RCVD_IND O0250A",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

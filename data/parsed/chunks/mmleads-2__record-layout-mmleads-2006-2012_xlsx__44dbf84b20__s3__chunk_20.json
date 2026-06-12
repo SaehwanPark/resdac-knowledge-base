@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s3__chunk_20",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 3,
+  "text": "MEDICAID_CLM_CNT_1 - MEDICAID_CLM_CNT_12 Monthly Medicaid FFS and encounter claim count XXX\nMEDICAID_DAY_CNT_1 - MEDICAID_DAY_CNT_12 Monthly Medicaid days - determined using the start and end date of a claim XXX\nMEDICAID_COV_DAY_CNT_1 - MEDICAID_COV_DAY_CNT_12 Monthly Medicaid covered day count* XXX\nOTH_MEDICAID_CLM_FFS Medicaid FFS claims for months with 'Other' Dual Status XXX\nFD_MEDICAID_CLM_FFS Medicaid FFS claims for months with 'Full' Dual Status XXX\nQMB_MEDICAID_CLM_FFS Medicaid FFS",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

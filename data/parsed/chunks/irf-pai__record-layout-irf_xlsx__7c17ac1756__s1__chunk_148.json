@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_148",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "(Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n128 _39LDD WLK_WC_BOTH_DSCHRG_CD (39Ldd) Locomotion - Walk/wheelchair/both: Discharge CHAR 1 A score indicating the patient's ability to both walk and use a wheelchair at discharge. This item indicates that the patient uses 'both' means of locomotion about equally. B = Both, C = Wheelchair, W = Walk\n129 _39LG WLK_WC_GOAL_CD (39Lg) Locomotion - Walk/wheelchair: Goal CHAR 2 A score",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

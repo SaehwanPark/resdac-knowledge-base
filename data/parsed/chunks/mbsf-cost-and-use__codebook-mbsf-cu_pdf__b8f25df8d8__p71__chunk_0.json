@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p71__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 71,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n65 \nPTB_DRUG_BENE_PMT \nLABEL: \nPart B Drug Beneficiary Payments \nDESCRIPTION: This variable is the sum of coinsurance and deductible payments for Part B drugs for a given year. The \ntotal Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + \nLINE_BENE_PTB_DDCTBL_AMT for the relevant lines. \nPart B drug claims are a subset of the claims in the Part B carrier and",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

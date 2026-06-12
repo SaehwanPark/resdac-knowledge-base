@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p67__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 67,
+  "text": "Advantage Organizations (MAOs) \nFILE(S): \nAll encounter files \nVALUES: \n— \nCOMMENT: \nThe \"thru\" date on the claim may not always represent the last date of services, particularly for home \nhealth or Hospice care. To obtain the date corresponding with the cessation of services (or discharge \ndate) use the discharge date from the encounter (variable called BENE_DSCHRG_DT). \nFor Part B non-institutional (carrier and DME) services, this variable corresponds with the latest of any \nof the line-item",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "in Yr Char 2\n62 MDCD_WVR_1915B_MOS Medicaid - 1915(b) Waiver Months Num 3\n63 MDCD_WVR_1915C_MOS Medicaid - 1915(c) Waiver Type Code - Ltst in Yr Months Num 3\n64 MDCD_WVR_1915BC_MOS Medicaid - 1915(b)(c) Waiver Months Num 3\n65 MDCR_LTCH_MOS Medicare - Long-Term Care Hospital Months (from MDS) Num 8\n66 MDCR_SNF_MOS Medicare - Skilled Nursing Facility Months (from Claims) Num 8\n67 MDCR_NF_MOS Medicare - Nursing Facility months (from MDS) Num 8\n68 MDCD_HOSPITAL_LTSS_MOS Medicaid - Hospital LTSS",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_36",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Code 23 | \n\n | 198 | DGNS_24_CD | MedPAR ICD-9-CM Diagnosis Code 24 | \n\n | 199 | DGNS_25_CD | MedPAR ICD-9-CM Diagnosis Code 25 | \n\n | 200 | DGNS_POA_CD | Diagnosis Code POA Array | \n\n | 201 | POA_DGNS_CD_CNT | Count of Present on Admission (POA) Diagnosis Codes | \n\n | 202 | POA_DGNS_1_IND_CD | Diagnosis 1 Present on Admission (POA) Indicator Code | \n\n | 203 | POA_DGNS_2_IND_CD | MedPAR Diagnosis Present on Admission Indicator 2 | \n\n | 204 | POA_DGNS_3_IND_CD | MedPAR Diagnosis Present on",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

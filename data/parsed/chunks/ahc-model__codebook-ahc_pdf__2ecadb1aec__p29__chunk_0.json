@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p29__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 29,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n28 \nNC_NVGTN_CASE_TRMNTN_DT \nLABEL: \nNavigation Case termination date \nDESCRIPTION: Navigation case (NC) termination date. \nLONG NAME: NC_NVGTN_CASE_TRMNTN_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nAHC data system (derived) \nVALUES: \nFormat: DDMONYYYY (e.g., 20DEC2020) \nCOMMENT: \nDates are from October 8, 2018–April 3, 2023 \nFor each navigation-eligible beneficiary who was eligible for",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

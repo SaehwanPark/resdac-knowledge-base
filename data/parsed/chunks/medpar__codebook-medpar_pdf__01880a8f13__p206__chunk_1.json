@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p206__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 206,
+  "text": "contain the same first 6-digit CCN (reference PRVDR_BASE_FAC_NUM \nvariable in this data file), but positions 7–13 may be used to distinguish between campuses (ex. 01, 02, \n001, 002, A, etc.) In the future positions 7–13 may have other uses. \nSHORT NAME: PRVDR_FULL_CCN_NUM \nLONG NAME: PRVDR_FULL_CCN_NUM \nTYPE: \nCHAR \nLENGTH: \n13 \nSOURCE: \nNCH (derived) \nVALUES: \n— \nCOMMENT: \nThis field is the full provider CMS certification number from the first claim record included in the stay. \nThis field was",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_72",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "help. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_SPOUSE (M0340) Lives With Spouse/Significant Other Patient lives with spouse or significant other. 0 = No, 1 = Yes CHAR 1 x x\nM0350_AP_NONE (M0350) None of the Above Assisting Persons Assisting person(s): none of the above. 0 = No, 1 = Yes CHAR 1 x x\nM0350_AP_PD_HELP (M0350) Paid Help Assisting person(s): paid help. 0 = No, 1 = Yes CHAR 1 x x\nM0350_AP_HM_RES (M0350) Person Residing in Home Assisting person(s): person residing in the home (excluding",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

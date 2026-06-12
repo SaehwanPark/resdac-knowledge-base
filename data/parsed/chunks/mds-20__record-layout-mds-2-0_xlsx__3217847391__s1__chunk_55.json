@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_55",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "-2 = Space\n108 AC1M AC1M_BEDCTHS_DAY (AC1M) In Bedclothes Much of Day CHAR 1 Customary routine: ADL patterns - in bedclothes much of day. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n109 AC1N AC1N_TOLIET_NIGHT (AC1N) Wakens to Toilet Most Nights CHAR 1 Customary routine: ADL patterns - wakens to toilet most nights. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n110 AC1O AC1O_IRREG_BOWEL (AC1O) Has Irregular Bowel Movement Pattern CHAR 1 Customary routine: ADL patterns - has irregular bowel movement",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

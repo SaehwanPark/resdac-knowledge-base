@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p19__chunk_1",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 19,
+  "text": "YNA\n1: YES\n2: NO\npl_paperwk: RECODE : Last 6 mths, health plan give forms to ﬁll out\nSAS Format: YNA\n1: YES\n2: NO\npl_xtrabeneﬁts: RECODE : Last 6 mths, did health plan offer extra beneﬁts because of health condition\nSAS Format: YNA\n1: YES\n2: NO\nprob_dressing: RECODE : Do you have difﬁculty dressing or bathing\nSAS Format: YNA\n1: YES\n2: NO\nprob_errands: RECODE : Do you have difﬁculty doing errands alone\nSAS Format: YNA\n1: YES\n2: NO\nprob_walking: RECODE : Do you have serious difﬁculty walking or",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

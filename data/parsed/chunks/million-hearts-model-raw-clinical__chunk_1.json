@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-raw-clinical__chunk_1",
+  "source_document": "data/raw/html/dataset_page/72ee475771d626bb204c0fc1e193ec18d6e8d6d9.html",
+  "page": null,
+  "text": "using industry standard codes.\nNote that this file excludes all manually entered data in the Million Hearts® registry.\nWhat does this file include? (variable highlights)\n- Beneficiary ID\n- Model-Assigned Practice ID\n- Model-Assigned Patient ID\n- Provider NPI\n- Activity Date\n- Activity End Date\n- Provider NPI\n- Clinical Service Procedure Code\n- Clinical Service Procedure Modifier\n- Service Units\nA record represents one clinical data element per beneficiary. Beneficiaries that have multiple",
+  "dataset": "million-hearts-model-raw-clinical",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-raw-clinical?page=1"
+}

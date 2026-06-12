@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p10__chunk_1",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 10,
+  "text": "DISCHARGES \nTYPE: \nNUM \nLENGTH: \n8 \nFILE(S): \nHospital \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \n0─### \nCOMMENT: \nThe data submission period represents the data submission for the previous month or week. Data \nsubmissions are due to CMS by midnight of Wednesday for the previous week or month; therefore, \nsubmission dates may be a few days after the last day of the week or month. \nThere are two tiers of experience (assigned by CMS during evaluation of the facility’s waiver \nsubmission)",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

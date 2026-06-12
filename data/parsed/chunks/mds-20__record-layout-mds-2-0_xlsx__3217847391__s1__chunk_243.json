@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_243",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "\"-\" = Unknown.\n397 K5I K5I_NONE_ABOVE (K5I) None of Above Nutritional Approaches CHAR 1 Oral/nutritional status: nutritional approaches in last 7 days - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n398 K6A K6A_TOTAL_CALORIES (K6A) Calories Received in Last 7 Days CHAR 1 Oral/nutritional status: parenteral or enteral intake - total calories (%) received in last 7 days. 0 = None, 1 = 1% to 25%, 2 = 26% to 50%, 3 = 51% to 75%, 4 = 76% to 100%, \"-\" = Unknown, -2 = Space\n399 K6B K6B_FLUID_INTAKE",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

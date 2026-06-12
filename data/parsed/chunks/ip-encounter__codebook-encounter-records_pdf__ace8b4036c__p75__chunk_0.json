@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p75__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 75,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n65 \nENC_JOIN_KEY \nLABEL: \nUnique encounter join key \nDESCRIPTION: This is a unique join key assigned by CCW/CMS to assist the user in joining the base claim to a line \nclaim for each encounter record. \nSHORT NAME: ENC_JOIN_KEY \nLONG NAME: ENC_JOIN_KEY \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nCCW \nFILE(S): \nAll encounter files \nVALUES: \n— \nCOMMENT: \nEach IP, SNF, HH, or OP encounter base",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

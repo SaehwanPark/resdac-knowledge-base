@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_107",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "-1 = Unknown\n137 P1AH P1AH_RADIATION 38ae(P1ah)Special Care - Radiation CHAR 1 Indicates the patient received radiation. Includes radiation therapy or having a radiation implant. 0 = Unchecked, 1 = Checked, -1 = Unknown\n138 P1AI P1AI_SUCTION 38af(P1ai)Special Care - Suctioning CHAR 1 Indicates the patient received suctioning. Includes nasopharyngeal or tracheal aspiration. 0 = Unchecked, 1 = Checked, -1 = Unknown\n139 P1AJ P1AJ_TRACH_CARE 38ag(P1aj)Special Care - Tracheostomy Care CHAR 1",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

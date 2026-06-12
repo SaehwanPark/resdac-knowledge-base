@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p386__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 386,
+  "text": "indicator is currently the 1st position of the Revenue Center \nPayment Method Indicator Code. The payment method indicator code is being split into two 2-byte \nfields (payment indicator and status indicator). The expanded payment indicator will continue to be \nstored in the existing payment method indicator field. The split of the current payment method \nindicator field is due to the expansion of both pieces of data from 1-byte to 2-bytes. \nThis field is populated for those claims that are",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

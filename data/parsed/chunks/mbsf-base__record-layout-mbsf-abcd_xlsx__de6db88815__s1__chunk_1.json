@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Medicare 1, 5, or 20% strict sample group indicator CHAR 2\nEFIVEPCT ENHANCED_FIVE_PERCENT_FLAG Enhanced Medicare 5% Sample Indicator CHAR 1\nCRNT_BIC CRNT_BIC_CD Current Beneficiary Identification Code CHAR 2\nSTATE_CD STATE_CODE State code for beneficiary (SSA code) CHAR 2\nCNTY_CD COUNTY_CD County code for beneficiary (SSA code) CHAR 3\nZIP_CD ZIP_CD 5-digit ZIP code for beneficiary CHAR 5\nSTATE_CNTY_FIPS_CD_01 STATE_CNTY_FIPS_CD_01 State and county FIPS code - January CHAR",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_270",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "noted at a given stage, enter 0.\n256 PRPHRL_ARTERIAL_IND PRPHRL_ARTERIAL_IND I0900B Peripheral Arterial Code CHAR 1 The code for whether the patient had a diagnosis of Peripheral Arterial Disease (PAD). -=Not assessed/no information\n0=No\n1=Yes\n257 STG_2_PRSR_ULCRS_ADMSN_NUM STG_2_PRSR_ULCRS_ADMSN_NUM 48AA/M0300B1 Stage 2 Pressure Ulcers Admission Number. When Discharge Date is on or after Oct. 1,2014, M0300B1 Stage 2 Pressure Ulcers Admission Number will be displayed CHAR 1 This indicates the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

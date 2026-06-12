@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 31,
+  "text": "— January through December \nDESCRIPTION: This variable indicates whether the beneficiary was eligible for both Medicare and Medicaid in each \nmonth (January through December). \nLONG NAME: \nDUAL_STUS_CD_01 \nDUAL_STUS_CD_02 \nDUAL_STUS_CD_03 \nDUAL_STUS_CD_04 \nDUAL_STUS_CD_05 \nDUAL_STUS_CD_06 \nDUAL_STUS_CD_07 \nDUAL_STUS_CD_08 \nDUAL_STUS_CD_09 \nDUAL_STUS_CD_10 \nDUAL_STUS_CD_11 \nDUAL_STUS_CD_12 \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nNA = Non-Medicaid \n00 =",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

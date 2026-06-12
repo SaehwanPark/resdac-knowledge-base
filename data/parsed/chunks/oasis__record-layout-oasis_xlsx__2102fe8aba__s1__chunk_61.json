@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_61",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Board and care or assisted living facility.\n05 = Other (specify) CHAR 2 x x\nM0310_STR_DOORWAYS (M0310) Narrow or Obstructed Doorways Structural barriers: narrow or obstructed doorways. 0 = No, 1 = Yes CHAR 1 x x\nM0310_STR_NONE (M0310) No Structural Barriers Structural barriers: none 0 = No, 1 = Yes CHAR 1 x x\nM0310_STR_MST_ISTR (M0310) Stairs Inside Home Must Be Used Structural barriers: stairs inside which must be used by patient. 0 = No, 1 = Yes CHAR 1 x x\nM0310_STR_OPT_ISTR (M0310) Stairs",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

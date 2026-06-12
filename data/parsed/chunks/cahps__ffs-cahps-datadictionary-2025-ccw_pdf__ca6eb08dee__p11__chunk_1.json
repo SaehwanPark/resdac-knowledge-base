@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p11__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 11,
+  "text": "(possible only as a CATI response) \n.G = APPROPRIATE SKIP (screener response warrants a skip and no response was given) \n.I = INCONSISTENT RESPONSE (response to a prior question contradicts this response) \n.J = DON’T KNOW SURVEY OPTION (Don’t Know survey response option) \n.K = INAPPROPRIATE ANSWER (screener response warrants a skip, but response was given) \n.L = INAPPROPRIATE SKIP (screener response warrants an answer, but no response was given) \n.N = NA SURVEY OPTION (tailored skip) \n.R =",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

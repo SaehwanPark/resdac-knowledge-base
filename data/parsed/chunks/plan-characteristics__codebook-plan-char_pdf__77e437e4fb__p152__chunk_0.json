@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p152__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 152,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n138 \nGAP_OONP_COINS_OS \nLABEL: \nGap Out-of-Network Pharmacy Coinsurance for Other Days’ Supply \nDESCRIPTION: This variable identifies the beneficiary co-insurance percentage for a day’s supply of the drugs (other \nthan one month) on this tier, using an out-of-network pharmacy (OONP) during the coverage gap \nphase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

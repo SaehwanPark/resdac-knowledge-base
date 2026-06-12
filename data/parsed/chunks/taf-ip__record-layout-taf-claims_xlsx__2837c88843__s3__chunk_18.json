@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_18",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "CHAR 64 5\nOCRNC_CD_SEQ Occurrence Code Sequence CHAR 2 6\nOCRNC_CD Occurrence Code CHAR 2 7\nOCRNC_CD_START_DT Occurrence Code Start Date DATE 8 8\nOCRNC_CD_END_DT Occurrence Code End Date DATE 8 9\nLine file\nBENE_ID Encrypted CCW Beneficiary Identifier CHAR 15 1\nMSIS_ID Encrypted State Assigned Beneficiary Unique Identifier CHAR 32 2\nSTATE_CD Submitting State Alpha Abbreviation CHAR 2 3\nSUBMTG_STATE_CD Submitting State FIPS Code CHAR 2 4\nCLM_ID CCW Claim Identifier CHAR 64 5\nLINE_NUM Sequential",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

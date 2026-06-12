@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__data-documentation__54ad13ec0e__chunk_2",
+  "source_document": "data/raw/html/documentation_page/54ad13ec0ec7f6d311da24252620d5ade6c49360.html",
+  "page": null,
+  "text": "| Managed Care Plan Contract End Date | \n\n | 13 | MC_PLAN_CNTRCT_ADDTNL_PRD_IND | Managed Care Plan Contract Additional Period Indicator | \n\n | 14 | MC_PLAN_SAREA_CD | Managed Care Plan Service Area Code — Latest in Year | \n\n | 15 | MC_PLAN_STATEWIDE_IND | Managed Care Plan Statewide Service Area Indicator — Ever in Calendar Year | \n\n | 16 | MC_PLAN_CBSA_CD | Managed Care Plan Core-Based Statistical Area Code for Service Area | \n\n | 17 | MC_PLAN_ACTV_IND_01 | Managed Care Plan Active Indicator",
+  "dataset": "taf-apl",
+  "url": "https://resdac.org/cms-data/files/taf-apl/data-documentation"
+}

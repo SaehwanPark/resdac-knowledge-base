@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__record-layout-ocm_xlsx__841670bf41__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/841670bf413cf4120155451b7395c917931706ff.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Oncology Care Model Files — Current Clinical Status File\nVersion — May 2024\nSAS name Label Type Length\nBENE_ID Encrypted CCW Beneficiary ID CHAR 15\nICD10_CNCR_DGNS_CD_RPTD ICD10 Cancer Diagnosis Code Reported by Participant CHAR 7\nINITL_DGNS_DT Initial Diagnosis Date DATE 8\nCRNT_CLNCL_STUS Current Clinical Status CHAR 45\nCRNT_CLNCL_STUS_DT Current Clinical Status Date DATE 8",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ocm.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p24__chunk_2",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 24,
+  "text": "A single relationship ID will generally relate to more than one CCW_PHARM_ID (i.e., multiple \npharmacies can have the same overarching company). \nAlso, a single chain or franchise, which is represented in this data file as a relationship ID, can function \nas more than one type of dispenser (i.e., it can have different values in the dispenser type code for \ndifferent pharmacies). \nA parent organization (variable called PRNT_ORG_ID) may consist of multiple RELATIONSHIP_IDs. \nAdditional details",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

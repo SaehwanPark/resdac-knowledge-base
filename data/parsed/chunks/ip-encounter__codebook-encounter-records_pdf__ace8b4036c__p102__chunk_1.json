@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p102__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 102,
+  "text": "OT_PHYSN_NPI \nLONG NAME: OT_PHYSN_NPI \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nVALUES: \n— \nCOMMENT: \nThere are additional physician identifiers on the encounter record, including the attending physician \n(AT_PHYSN_NPI) and, depending on the claim type, the operating physician (OP_PHYSN_NPI), \nrendering physician (RNDRNG_PHYSN_NPI) or referring physician (RFRG_PHYSN_NPI). \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

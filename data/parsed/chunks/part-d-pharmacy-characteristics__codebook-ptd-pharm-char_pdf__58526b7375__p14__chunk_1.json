@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p14__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 14,
+  "text": "between pharmacies in the Part D Event (PDE) File and the CCW \nPharmacy Characteristics File. \nSHORT NAME: — \nLONG NAME: NCPDP_ID \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nPDE and NCDPD DataQ™ \nVALUES: \nNull/missing \n5-digit numeric value \nCOMMENT: \nThis variable was new in 2014. Beginning with 2014 data, the NCPDP_ID is used in place of the \nCCW_PHARM_ID in the Part D Pharmacy Characteristics File. Researchers who received CCW data \nfrom 2006–2013 and wish to identify the NCPDP_ID associated with the",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_497",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "or clinical\nchange, or significant correction assessment)\n99=None of the above\n^=Blank (Skip Pattern)\n561 V0100C_PRIOR_ASMT_RFRNC_DT V0100C_PRIOR_ASMT_RFRNC_DT V0100C Prior Assessment Reference Date CHAR 8 The data in this column contains the assessment reference date from the most recent prior OBRA or PPS assessment.\n562 V0100D_PRIOR_BIMS_SCRE_NUM V0100D_PRIOR_BIMS_SCRE_NUM V0100D Prior Assessment Brief Interview for Mental Status (BIMS) Summary Score Number CHAR 2 The data in this column",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

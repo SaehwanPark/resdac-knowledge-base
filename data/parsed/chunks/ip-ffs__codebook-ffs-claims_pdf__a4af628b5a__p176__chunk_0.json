@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p176__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 176,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n158 \nDMERC_LINE_SUPPLR_TYPE_CD \nLABEL: \nDMERC Line Supplier Type Code \nDESCRIPTION: The type of DMERC supplier. \nSHORT NAME: SUP_TYPE \nLONG NAME: DMERC_LINE_SUPPLR_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Clinics, groups, associations, partnerships, or other entities for whom the carrier's own ID number \n has been assigned. \n1 = Physicians or suppliers",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_5",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "Billing Provider NPI CHAR 10 28\nBLG_PRVDR_TXNMY_CD Billing Provider Taxonomy Code CHAR 12 29\nBLG_PRVDR_SPCLTY_CD Billing Provider Specialty Code CHAR 2 30\nPRSCRBNG_PRVDR_ID Prescribing Provider Identification Number CHAR 30 31\nPRSCRBNG_PRVDR_NPI Prescribing Provider NPI CHAR 10 32\nDSPNSNG_PRVDR_ID Dispensing Provider Identification Number CHAR 30 33\nDSPNSNG_PRVDR_NPI Dispensing Provider NPI CHAR 10 34\nPRVDR_LCTN_CD Provider Location Code CHAR 5 35\nBRDR_STATE_IND Border State Indicator CHAR 1",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

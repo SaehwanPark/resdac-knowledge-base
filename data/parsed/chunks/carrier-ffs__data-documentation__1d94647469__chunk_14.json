@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_14",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "| Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3-day SNF waiver | \n\n | CLM_NEXT_GNRTN_ACO_IND_CD5 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation | \n\n | CARR_LINE_MDPP_NPI_NUM | Carrier Line Medicare Diabetes Prevention Program (MDPP) NPI Number | \n\n | LINE_RSDL_PYMT_IND_CD | Line Residual Payment Indicator Code | \n\n | LINE_RP_IND_CD | Line Representative Payee (RP) Indicator Code | \n\n | LINE_PRVDR_VLDTN_TYPE_CD |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_176",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Nursing home\n04 = Hospice\nNA = NA - No inpatient facility admission CHAR 2 x x\nM0870_DSCHG_DISP (M0870) Discharge Disposition Where the patient is after discharge. 01 = Patient remained in the community (not in hospital, nursing home, or rehab facility).\n02 = Patient transferred to a noninstitutional hospice.\n03 = Unknown because patient moved to a geographic location not served by this agency.\nUK = Unknown CHAR 2 x x\nM0880_AFDC_OTH_AST (M0880) Assistance/Services Provided By Community",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

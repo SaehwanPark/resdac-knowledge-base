@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__record-layout-aco-pioneer-v2_xlsx__7957b5f6c4__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/7957b5f6c4da3ec2079167ec3fad059f4bf72ffc.xlsx",
+  "page": 2,
+  "text": "Business Name Associated with the ACO Participant TIN CHAR 70\nLAST_NAME Last Name of Provider Associated with the NPI CHAR 25\nFIRST_NAME First Name of Provider Associated with the NPI CHAR 19\nCCN_TYPE CCN Facility Type CHAR 1\nPCP_FLAG Primary Care Practitioner Indicator CHAR 1",
+  "dataset": "pioneer-aco",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-pioneer-v2.xlsx"
+}

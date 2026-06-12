@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p165__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 165,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n147 \nDEMO_ID_NUM \nLABEL: \nDemonstration number \nDESCRIPTION: The number assigned to identify a CMS demonstration project. \n\nThis field is also used to denote special processing (a.k.a. special processing number, SPN). \nSHORT NAME: DEMO_ID_NUM \nLONG NAME: DEMO_ID_NUM \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n01 = Nursing Home Case-Mix and \nQuality Demo (retired) \n02 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

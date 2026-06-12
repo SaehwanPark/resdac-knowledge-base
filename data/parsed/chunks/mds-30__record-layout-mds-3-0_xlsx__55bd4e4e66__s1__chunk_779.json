@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_779",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "0=No\n1=Yes\n9=No response effective 10/01/2023\n870 FALL_ASLEEP_FREQ_CD FALL_ASLEEP_FREQ_CD D0150C2 Mood: Trouble falling or staying asleep: Freq CHAR 1 The data in this column indicates how often the resident, over the past two weeks, has had trouble falling or staying asleep, or sleeping too much. 0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day) effective 10/01/2023\n871 FEEL_TIRED_CD FEEL_TIRED_CD D0150D1 Mood: Feeling tired or",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

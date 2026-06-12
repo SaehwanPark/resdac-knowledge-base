@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_233",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "ROM: Upper Extremity Motion Code CHAR 1 The data in this column identifies the resident's level of upper extremity limitation (shoulder, elbow, wrist, hand). -=Not assessed/no information\n0=No impairment\n1=Impairment on one side\n2=Impairment on both sides discontinued 09/30/2023\n246 G0400B_LWR_XTRMTY_MTN_CD G0400B_LWR_XTRMTY_MTN_CD G0400B Functional Limitation in ROM: Lower Extremity Motion Code CHAR 1 The data in this column identifies the resident's level of lower extremity limitation (hip,",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

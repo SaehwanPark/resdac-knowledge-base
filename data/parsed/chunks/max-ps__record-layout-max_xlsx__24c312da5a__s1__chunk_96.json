@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_96",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "(MAX TOS 05) NUM 12 X X X X X X X X X X X\n444 ENCTR_REC_CNT_05 Encounter record count (MAX TOS 05) NUM 5 X X X X X X X X X X X\n445 FEE_FOR_SRVC_IND_07 Recipient indicator (MAX TOS 07 - nursing facility services) CHAR 1 X X X X X X X X X X X\n446 FFS_CLM_CNT_07 Claim count (MAX TOS 07) NUM 6 X X X X X X X X X X X\n447 FFS_PYMT_AMT_07 Medicaid payment amount (MAX TOS 07) NUM 12 X X X X X X X X X X X\n448 FFS_CHRG_AMT_07 Charge amount (MAX TOS 07) NUM 12 X X X X X X X X X X X\n449 FFS_TP_AMT_07 Third",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

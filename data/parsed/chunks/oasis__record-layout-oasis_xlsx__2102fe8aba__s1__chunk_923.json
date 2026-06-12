@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_923",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Therapies: Oxygen - Continuous (Admission) Indicates whether the patient was receiving continuous oxygen therapy at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110C2C_OXGN_CNTNUS_DSCHRG_CD Therapies: Oxygen - Continuous (Discharge) Indicates whether the patient was receiving continuous oxygen therapy at the time of discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110C3A_OXGN_INTR_ADMSN_CD Therapies: Oxygen - Intermittent (Admission) Indicates",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n26 \nRPTD_TO_RGSTRY \nLABEL: \nParticipant Reported Episode to OCM Registry \nDESCRIPTION: Indicates whether the OCM participant reported data on this episode to the OCM registry. \nSHORT NAME: RPTD_TO_RGSTRY \nLONG NAME: RPTD_TO_RGSTRY \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nClinical and staging \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \n0 = No \n1 = Yes \n\nCOMMENT: \nOCM",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

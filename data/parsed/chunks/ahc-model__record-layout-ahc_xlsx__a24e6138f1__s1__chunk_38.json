@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Resolved CHAR 1\nNN_SPLMT_PHYS_ACT_CNCT_CSP_SW Navigated Splmt HRSN Physical Activity Connected to Community Serv Prvdr CHAR 1\nNN_SPLMT_PHYS_ACT_OPTOUT_SW Navigated Supplemental HRSN Physical Activity Opted Out CHAR 1\nNN_SPLMT_PHYS_ACT_CNTCT_FAIL_SW Navigated Supplemental HRSN Physical Activity Attempts to Reach Failed CHAR 1\nNN_SPLMT_PHYS_ACT_CSP_UNAVBL_SW Navigated Splmt HRSN Physical Activity Community Serv Prvdr Unable to Help CHAR 1\nNN_SPLMT_PHYS_ACT_OUTCM_UNK_SW Navigated Supplemental HRSN",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

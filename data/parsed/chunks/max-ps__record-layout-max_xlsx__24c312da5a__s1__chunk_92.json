@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_92",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "count (MAX TOS 01) NUM 5 X X X X X X X X X X X\n427 FEE_FOR_SRVC_IND_02 Recipient indicator (MAX TOS 02 - Mental Hospital for Aged) CHAR 1 X X X X X X X X X X X\n428 FFS_CLM_CNT_02 Fee-for-service claim count (MAX TOS 02) NUM 6 X X X X X X X X X X X\n429 FFS_PYMT_AMT_02 Fee-for-service Medicaid payment amount (MAX TOS 02) NUM 12 X X X X X X X X X X X\n430 FFS_CHRG_AMT_02 Fee-for-service charge amount (MAX TOS 02) NUM 12 X X X X X X X X X X X\n431 FFS_TP_AMT_02 Fee-for-service third party payment",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,13 @@
+The CMMI Model Data Sharing (CMDS) Provider file is one of a set of three file types (entity, provider, beneficiary) included for each model. A Provider is a Medicare provider/supplier who has an arrangement with an Entity to participate as a member of their entity group in a model.
+What does this file include? (variable highlights)
+- Model ID (in which the Provider participates)
+- Entity ID (with which the Provider is associated)
+- National Provider Identifier (NPI)
+- Tax Identification Number (TIN)
+- CMS Certification Number (CCN)
+- Provider Start Date
+- Provider End Date
+- Provider Participation Type Code
+The Entity ID is the only key field needed to link a Provider to their Entity.
+The NPI, TIN, and/or CCN can be used to link to claims and other relevant CCW data.
+A Provider may have an End Date of 12/31/9999, which indicates that the Provider is “currently” participating in the model.

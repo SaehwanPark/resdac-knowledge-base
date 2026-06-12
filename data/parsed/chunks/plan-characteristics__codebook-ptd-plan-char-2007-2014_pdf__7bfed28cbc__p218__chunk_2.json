@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p218__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 218,
+  "text": "brand-name drugs and all \ngenerics are covered on this tier during the coverage gap phase. \n1 in 1st digit = Only Select Brands \n\n1 in 2nd digit = All Generics \n\n1 in 3rd digit = All Preferred Generics \n\n1 in 4th digit = All Non-Preferred Generics \n\n1 in 5th digit = Only Select Generics \n\n1 in 6th digit = All Brands \n\n1 in 7th digit = All Preferred Brands \n\n1 in 8th digit = All Non-Preferred Brands \n\nAll 9s = Not Applicable \n\nCOMMENT: \nThis variable was populated only in 2008–2010. There is",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

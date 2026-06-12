@@ -1,0 +1,349 @@
+| 1 | MC_PLAN_ID | Managed Care Plan Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 2 | MC_PLAN_NAME | Managed Care Plan Name | 
+        
+          
+                  
+                                                                                                                                        | 3 | STATE_CD | Submitting State Alpha Abbreviation | 
+        
+          
+                  
+                                                                                                                                        | 4 | SUBMTG_STATE_CD | Submitting State FIPS Code | 
+        
+          
+                  
+                                                                                                                                        | 5 | CMS_RGN | CMS Region for Submitting State | 
+        
+          
+                  
+                                                                                                                                        | 6 | MC_PLAN_PGM_CD | Managed Care Plan Program Code | 
+        
+          
+                  
+                                                                                                                                        | 7 | MC_PLAN_TYPE_CD | Managed Care Plan Type Code | 
+        
+          
+                  
+                                                                                                                                        | 8 | MC_PLAN_TYPE_CTGRY_CD | Managed Care Plan Type Category Code | 
+        
+          
+                  
+                                                                                                                                        | 9 | MC_PLAN_REIMBRSMT_TYPE_CD | Managed Care Plan Reimbursement Type Code | 
+        
+          
+                  
+                                                                                                                                        | 10 | Managed Care Plan Reimbursement Type Category Code | Managed Care Plan Reimbursement Type Category Code | 
+        
+          
+                  
+                                                                                                                                        | 11 | MC_PLAN_CNTRCT_START_DT | Managed Care Plan Contract Start Date | 
+        
+          
+                  
+                                                                                                                                        | 12 | MC_PLAN_CNTRCT_END_DT | Managed Care Plan Contract End Date | 
+        
+          
+                  
+                                                                                                                                        | 13 | MC_PLAN_CNTRCT_ADDTNL_PRD_IND | Managed Care Plan Contract Additional Period Indicator | 
+        
+          
+                  
+                                                                                                                                        | 14 | MC_PLAN_SAREA_CD | Managed Care Plan Service Area Code — Latest in Year | 
+        
+          
+                  
+                                                                                                                                        | 15 | MC_PLAN_STATEWIDE_IND | Managed Care Plan Statewide Service Area Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 16 | MC_PLAN_CBSA_CD | Managed Care Plan Core-Based Statistical Area Code for Service Area | 
+        
+          
+                  
+                                                                                                                                        | 17 | MC_PLAN_ACTV_IND_01 | Managed Care Plan Active Indicator - January | 
+        
+          
+                  
+                                                                                                                                        | 18 | MC_PLAN_ACTV_IND_02 | Managed Care Plan Active Indicator - February | 
+        
+          
+                  
+                                                                                                                                        | 19 | MC_PLAN_ACTV_IND_03 | Managed Care Plan Active Indicator - March | 
+        
+          
+                  
+                                                                                                                                        | 20 | MC_PLAN_ACTV_IND_04 | Managed Care Plan Active Indicator - April | 
+        
+          
+                  
+                                                                                                                                        | 21 | MC_PLAN_ACTV_IND_05 | Managed Care Plan Active Indicator - May | 
+        
+          
+                  
+                                                                                                                                        | 22 | MC_PLAN_ACTV_IND_06 | Managed Care Plan Active Indicator - June | 
+        
+          
+                  
+                                                                                                                                        | 23 | MC_PLAN_ACTV_IND_07 | Managed Care Plan Active Indicator - July | 
+        
+          
+                  
+                                                                                                                                        | 24 | MC_PLAN_ACTV_IND_08 | Managed Care Plan Active Indicator - August | 
+        
+          
+                  
+                                                                                                                                        | 25 | MC_PLAN_ACTV_IND_09 | Managed Care Plan Active Indicator - September | 
+        
+          
+                  
+                                                                                                                                        | 26 | MC_PLAN_ACTV_IND_10 | Managed Care Plan Active Indicator - October | 
+        
+          
+                  
+                                                                                                                                        | 27 | MC_PLAN_ACTV_IND_11 | Managed Care Plan Active Indicator - November | 
+        
+          
+                  
+                                                                                                                                        | 28 | MC_PLAN_ACTV_IND_12 | Managed Care Plan Active Indicator - December | 
+        
+          
+                  
+                                                                                                                                        | 29 | OPRTG_AUTHRTY_1115_DEMO_WVR_IND | Operating Authority Indicator: 1115 Demo Waiver — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 30 | OPRTG_AUTHRTY_1915B_WVR_IND | Operating Authority Indicator: 1915(b) Waiver — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 31 | OPRTG_AUTHRTY_1932A_SPO_IND | Operating Authority Indicator: 1932(a) State Plan Option — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 32 | OPRTG_AUTHRTY_1915A_IND | Operating Authority Indicator: 1915(a) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 33 | OPRTG_AUTHRTY_1915BC_WVR_IND | Operating Authority Indicator: 1915(b)(c) Waiver — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 34 | OPRTG_AUTHRTY_1915AC_WVR_IND | Operating Authority Indicator: 1915(a)(c) Waiver — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 35 | OPRTG_AUTHRTY_1932A_1915C_IND | Operating Authority Indicator: 1932(a)-1915(c) Waiver — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 36 | OPRTG_AUTHRTY_PACE_IND | Operating Authority Indicator: PACE — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 37 | OPRTG_AUTHRTY_1905T_PCCM_IND | Operating Authority Indicator: Voluntary Primary Care Case Management (PCCM) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 38 | OPRTG_AUTHRTY_1937_ABP_IND | Operating Authority Indicator: 1937 Alternative Benefits Plan — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 39 | OPRTG_AUTHRTY_1902A70_NEMT_IND | Operating Authority Indicator: 1902(a)(70) Non-Emergency Medical Transport (NEMT) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 40 | OPRTG_AUTHRTY_1915BI_IND | Operating Authority Indicator: 1915(b)(i) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 41 | OPRTG_AUTHRTY_1915AI_IND | Operating Authority Indicator: 1915(a)(i) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 42 | OPRTG_AUTHRTY_1932A_1915I_IND | Operating Authority Indicator: 1932(a)-1915(i) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 43 | OPRTG_AUTHRTY_1945_HLTH_HOME_IND | Operating Authority Indicator: 1945 Health Home — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 44 | OPRTG_AUTHRTY_1915AJ_IND | Operating Authority Indicator: 1915(a)(j) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 45 | OPRTG_AUTHRTY_1932A_1915J_IND | Operating Authority Indicator: 1932(a)-1915(j) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 46 | OPRTG_AUTHRTY_1915BJ_IND | Operating Authority Indicator: 1915(b)(j) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 47 | OPRTG_AUTHRTY_1115_1915J_IND | Operating Authority Indicator: 1115 -1915(j)— Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 48 | OPRTG_AUTHRTY_1915AK_IND | Operating Authority Indicator: 1915(a)(k) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 49 | OPRTG_AUTHRTY_1932A_1915K_IND | Operating Authority Indicator: 1932(a)-1915(k) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 50 | OPRTG_AUTHRTY_1915BK_IND | Operating Authority Indicator: 1915(b)(k) — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 51 | OPRTG_AUTHRTY_1115_1915K_IND | Operating Authority Indicator: 1115 -1915(k)— Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 52 | MDCD_MAND_CVRG_ADLT_POP_IND | Eligible Population Indicator: Medicaid Mandatory Coverage Family-Adult — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 53 | MDCD_MAND_CVRG_ABD_POP_IND | Eligible Population Indicator: Medicaid Mandatory Coverage Aged-Blind-Disabled — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 54 | MDCD_OPTNL_CVRG_ADLT_POP_IND | Eligible Population Indicator: Medicaid Optional Coverage Adult-Children — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 55 | MDCD_OPTNL_CVRG_ABD_POP_IND | Eligible Population Indicator: Medicaid Optional Coverage Aged-Blind-Disabled — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 56 | MDCD_MDCLY_NDY_CVRG_ADLT_POP_IND | Eligible Population Indicator: Medicaid Medically Needy Family-Adult — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 57 | MDCD_MDCLY_NDY_CVRG_ABD_POP_IND | Eligible Population Indicator: Medicaid Medically Needy Coverage Aged-Blind-Disabled — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 58 | CHIP_CVRG_CHLDRN_POP_IND | Eligible Population Indicator: CHIP Coverage Children — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 59 | CHIP_OPTNS_CVRG_CHLDRN_POP_IND | Eligible Population Indicator: CHIP Additional Coverage Options for Children — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 60 | CHIP_OPTN_CVRG_PRGNT_WMN_POP_IND | Eligible Population Indicator: CHIP Additional Coverage Options for Pregnant Women — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 61 | WVR_1115_EXPNSN_CVRG_POP_IND | Eligible Population Indicator: 1115 Expansion Groups Coverage Waiver — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 62 | UNK_ELGBLTY_GRP_POP_IND | Eligible Population Indicator: Unknown Eligibility Group — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 63 | MC_ENT_ACRDTN_ORG_CD_1 | Managed Care Entity — 1st Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 64 | MC_ENT_ACRDTN_ACHVMT_DT_1 | Managed Care Entity Accreditation Achievement Date — 1st Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 65 | MC_ENT_ACRDTN_END_DT_1 | Managed Care Entity Accreditation End Date — 1st Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 66 | MC_ENT_ACRDTN_ORG_CD_2 | Managed Care Entity — 2nd Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 67 | MC_ENT_ACRDTN_ACHVMT_DT_2 | Managed Care Entity Accreditation Achievement Date — 2nd Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 68 | MC_ENT_ACRDTN_END_DT_2 | Managed Care Entity Accreditation End Date — 2nd Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 69 | MC_ENT_ACRDTN_ORG_CD_3 | Managed Care Entity — 3rd Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 70 | MC_ENT_ACRDTN_ACHVMT_DT_3 | Managed Care Entity Accreditation Achievement Date — 3rd Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 71 | MC_ENT_ACRDTN_END_DT_3 | Managed Care Entity Accreditation End Date — 3rd Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 72 | MC_ENT_ACRDTN_ORG_CD_4 | Managed Care Entity — 4th Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 73 | MC_ENT_ACRDTN_ACHVMT_DT_4 | Managed Care Entity Accreditation Achievement Date — 4th Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 74 | MC_ENT_ACRDTN_END_DT_4 | Managed Care Entity Accreditation End Date — 4th Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 75 | MC_ENT_ACRDTN_ORG_CD_5 | Managed Care Entity — 5th Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 76 | MC_ENT_ACRDTN_ACHVMT_DT_5 | Managed Care Entity Accreditation Achievement Date — 5th Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 77 | MC_ENT_ACRDTN_END_DT_5 | Managed Care Entity Accreditation End Date — 5th Accrediting Organization | 
+        
+          
+                  
+                                                                                                                                        | 78 | MC_ENT_PRFT_STUS_CD | Managed Care Entity Profit Status Code — Latest in Year | 
+        
+          
+                  
+                                                                                                                                        | 79 | MC_ENT_GOVT_PCT | Managed Care Entity Percent of Revenue from Medicare and Medicaid — Latest in Year | 
+        
+          
+                  
+                                                                                                                                        | 80 | SPLMTL_SRVC_ADDR_LCTN | Annual Managed Care Plan Record in Supplemental Service Address Location File | 
+        
+          
+                  
+                                                                                                                                        | 81 | SPLMTL_SAREA | Annual Managed Care Plan Record in Supplemental Service Area File | 
+        
+          
+                  
+                                                                                                                                        | 82 | SPLMTL_POP_ENRLMT | Annual Managed Care Plan Record in Supplemental Enrolled Population File | 
+        
+          
+                  
+                                                                                                                                        | 83 | SPLMTL_OPRTG_AUTHRTY | Annual Managed Care Plan Record in Supplemental Operating Authority File | 
+        
+          
+                  
+                                                                                                                                        | 84 | CCW_APL_LINK_KEY | CCW Key to Link APL base Record to Related Supplement Records | 
+        
+          
+                  
+                                                                                                                                        | 85 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | 
+        
+          
+                  
+                                                                                                                                        | 86 | PL_VRSN | Plan File Version Representing the Iteration of the File | 
+        
+          
+                  
+                                                                                                                                        | 87 | RFRNC_YR | Reference Year (TAF) | 
+        
+          
+                  
+                                                                                                                                        | 88 | CCW_LD_DT | CCW Load Date |

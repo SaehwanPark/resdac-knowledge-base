@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_13",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Code CHAR 2 72\nCOINSRNC_AMT Beneficiary Coinsurance Amount NUM 8 73\nTOT_BENE_COINSRNC_LBLTY_AMT Total Beneficiary Coinsurance Liability Amount NUM 8 100 New3\nCOINSRNC_PD_DT Beneficiary Coinsurance Paid Date DATE 8 74\nCOPAY_AMT Beneficiary Copayment Amount NUM 8 75\nTOT_BENE_COPAY_LBLTY_AMT Total Beneficiary Copayment Liability Amount NUM 8 101 New3\nCOPAY_PD_DT Beneficiary Copayment Paid Date DATE 8 76\nDDCTBL_AMT Beneficiary Deductible Amount NUM 8 77\nTOT_BENE_DDCTBL_LBLTY_AMT Total Beneficiary",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

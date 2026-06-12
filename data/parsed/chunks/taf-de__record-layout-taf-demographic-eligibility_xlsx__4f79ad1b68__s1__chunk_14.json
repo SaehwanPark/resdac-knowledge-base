@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "CHIP, and Separate CHIP Code - November CHAR 1 70\nCHIP_CD_12 Medicaid, Medicaid Expansion CHIP, and Separate CHIP Code - December CHAR 1 71\nCHIP_CD_LTST Medicaid, Medicaid Expansion CHIP, or Separate CHIP Code - Ltst in Yr CHAR 1 72\nELGBLTY_CHG_RSN_CD_011 Reason For Change in Eligibility Status - January CHAR 2 190\nELGBLTY_CHG_RSN_CD_021 Reason For Change in Eligibility Status - February CHAR 2 191\nELGBLTY_CHG_RSN_CD_031 Reason For Change in Eligibility Status -March CHAR 2",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

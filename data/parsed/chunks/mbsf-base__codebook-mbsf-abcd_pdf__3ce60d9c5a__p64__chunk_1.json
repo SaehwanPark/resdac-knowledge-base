@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p64__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 64,
+  "text": "74 = Texas (eff. 10/2005) \n80 = Maryland (eff. 8/2000) \n97 = Northern Marianas \n98 = Guam \n99 = With 000 county code is American \nSamoa; otherwise unknown\nCOMMENT: \nThe state code is based on the latest state code for the beneficiary for the year in the CME data. If the \nvalue is missing, then the first state code in the following year populates this field. \n^ Back to TOC ^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

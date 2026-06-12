@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_0",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Carrier (Physician/Supplier) Encounter Records\nVersion — May 2025\nSAS name Label Type Length 2015 1 2016+ 1\nBase claim file\nBENE_ID Encrypted CCW Beneficiary ID Char 15 1 1\nSAMPLE_GROUP CCW Beneficiary Random Sample Group Char 2 2 2\nENC_JOIN_KEY Unique Encounter Join Key Char 15 3 3\nCLM_TYPE_CD Claim Type Code Char 4 4 4\nCLM_FROM_DT Claim From Date Date 8 5 5\nCLM_THRU_DT Claim Through Date Date 8 6 6\nSRVC_MONTH Service Month Date 6",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

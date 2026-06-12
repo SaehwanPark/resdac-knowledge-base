@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p6__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 6,
+  "text": "LABEL: \nAdjustment Deletion Code \nDESCRIPTION: This field distinguishes original from adjusted or deleted PDE records so CMS can adjust claims and \nmake accurate payment for revised PDE records. \nSHORT NAME: ADJDELCD \nLONG NAME: ADJSTMT_DLTN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \nBlank = Original PDE \nA = Adjustment \nD = Deletion \nR = Resubmitted \nCOMMENT: \nOnly the final version of the PDE at the time of payment reconciliation is included in the Part D \nstandard analytic file",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

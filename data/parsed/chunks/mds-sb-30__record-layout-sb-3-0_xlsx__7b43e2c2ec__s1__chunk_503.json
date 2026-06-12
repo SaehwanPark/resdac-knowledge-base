@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_503",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Code CHAR 1 The data in this column indicates whether the Communication CA was triggered. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n571 V0200A04B_COMMUN_CPL_CD V0200A04B_COMMUN_CPL_CD V0200A04B Communication Addressed in Care Plan Code CHAR 1 The data in this column indicates whether the Communication care area was addressed in the care plan. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n572 V0200A05A_ADL_CTR_CD V0200A05A_ADL_CTR_CD V0200A05A ADL Care",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

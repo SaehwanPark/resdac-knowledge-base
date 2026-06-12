@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Submitting State Entity Code CHAR 2 4\nMISG_ELGBLTY_DATA_IND Ind of Missing Eligibility Record for All Months of Service Yr NUM 1 5\nBENE_STATE_CD State FIPS Code for Beneficiary Home or Mailing Address - Ltst in Yr CHAR 2 6\nBENE_CNTY_CD County Code for Beneficiary Home or Mailing Address - Ltst in Yr CHAR 3 7\nBENE_ZIP_CD ZIP Code for Beneficiary Home or Mailing Address - Ltst in Yr CHAR 9 8\nBIRTH_DT Date of Birth DATE 8 9\nAGE Age (in Yrs) NUM 3 10\nAGE_GRP_CD Age Group CHAR 2 11\nDEATH_DT Date of",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p273__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 273,
+  "text": "M = Part B DMEPOS claim record (processed by DME regional carrier) \nO = Part B physician/supplier claim record (processed by local carriers; can include DMEPOS services) \nU = Both Part A and B institutional home health agency (HHA) claim records \nV = Part A institutional claim record (inpatient [IP], skilled nursing facility [SNF], hospice [HOS], or \nhome health agency [HHA]) \nW = Part B institutional claim record (outpatient [HOP], HHA) \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

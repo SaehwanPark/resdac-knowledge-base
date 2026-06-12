@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__chunk_1",
+  "source_document": "data/raw/html/dataset_page/f08566e9ff77b33f8482c1b865d835446c181ab2.html",
+  "page": null,
+  "text": "in Medicaid claims)\n- Medicare only (found in Medicare claims)\n- Combined data (found in Medicare and Medicaid claims)\n\nSpecial considerations\n- The algorithms used to assign the flags are available from the CCW website.\n- Algorithms that include multi-year look-back periods are applied without the purchase of additional years of data.\n- This is a segment of the MESF file. Another segment, the National Death Index (NDI) segment can also be requested.",
+  "dataset": "mesf-conditions",
+  "url": "https://resdac.org/cms-data/files/mesf-conditions"
+}

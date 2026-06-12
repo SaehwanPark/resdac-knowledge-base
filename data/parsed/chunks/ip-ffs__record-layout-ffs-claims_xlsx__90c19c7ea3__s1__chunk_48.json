@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_48",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Amount NUM 12 223\nPPS_STD_VAL_PYMT_AMT PPS_STD_VAL_PYMT_AMT Standard Payment Amount NUM 12 224\nFINL_STD_AMT FINL_STD_AMT Claim Final Standard Payment Amount NUM 12 225\nCLM_FULL_STD_PYMT_AMT CLM_FULL_STD_PYMT_AMT Claim Full Standard Payment Amount NUM 12 230\nCLM_SS_OUTLIER_STD_PYMT_AMT CLM_SS_OUTLIER_STD_PYMT_AMT Claim Short Stay Outlier (SSO) Standard Payment Amount NUM 12 231\nHAC_PGM_RDCTN_IND_SW HAC_PGM_RDCTN_IND_SW Claim Hospital Acquired Condition (HAC) Program Reduction Indicator Switch",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

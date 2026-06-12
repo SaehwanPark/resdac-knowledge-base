@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_419",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "9/30/2023\n471 N0410B_ANTINXTY_DAY_NUM N0410B_ANTINXTY_DAY_NUM N0410B Medications Received: Antianxiety Number Days CHAR 1 The data in this column indicates the number of days that the resident received antianxiety medication in the past seven days or since admission/reentry if less than seven days. 0 Minimum\n7 Maximum\n- Not assessed/no information effective 4/01/2012\ndiscontinued 9/30/2023\n472 N0410C_ANTIDPRSNT_DAY_NUM N0410C_ANTIDPRSNT_DAY_NUM N0410C Medications Received: Antidepressant Number",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

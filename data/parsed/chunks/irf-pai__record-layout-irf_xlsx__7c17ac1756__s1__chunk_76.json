@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_76",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n91 _38D WC_DSCHRG_CD (38d) Wheelchair: Discharge CHAR 2 A score indicating the patient's ability to use a wheelchair on a level surface once seated at discharge. 00 = Activity did not occur, 01 = Helper - Complete Dependence/Total Assistance (Subject less than 25%), 02 = Helper - Complete Dependence/Maximal Assistance (Subject 25% or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

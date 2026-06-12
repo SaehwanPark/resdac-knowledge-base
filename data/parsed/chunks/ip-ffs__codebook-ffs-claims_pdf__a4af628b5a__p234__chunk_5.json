@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p234__chunk_5",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 234,
+  "text": "Positive Payment Adjustment (eff. 4/2023) \nB4 = Making Care Primary (MCP) reduction amount \nB5 = Performance Based Adjustment (PBA) Positive Amount \nB6 = Performance Based Adjustment (PBA) Negative Amount \nB7 = Health Equity Adjustment (HEA) Positive Amount \nB8 = Health Equity Adjustment (HEA) Negative Amount \n\nCOMMENT: \nStarting in January 2021 with NCH version L, this field was changed from 1 character to 2. \nReference the associated amounts in the LINE_OTHR_APLD_AMT{#} field. \nThere are up",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

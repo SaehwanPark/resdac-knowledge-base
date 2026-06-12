@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "if an employer group plan is defined as calendar year or non-calendar year. Y Yes\nN No\n9 Not Applicable\n16 cov_criteria Coverage Criteria (A/B or B only) Char 1 Part B only waiver. An indicator that shows that the requirement for Part A entitlement is waived; beneficiaries with only Part B entitlement may enroll in the Part D plan benefit package. 1 Part A/B\n2 Part B Only\n9 Not Applicable\n17 national_pdp Indicates whether plan belongs to a National PDP sponsor Char 1 Indicates that the Part D",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

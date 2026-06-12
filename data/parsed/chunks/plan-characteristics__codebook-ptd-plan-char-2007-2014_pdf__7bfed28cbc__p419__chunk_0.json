@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p419__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 419,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n406 \nREDUCED_DED \n\nLABEL: \nPlan Offers Reduced Deductible Amount \nDESCRIPTION: This variable indicates whether the plan offers reduced cost sharing in the deductible phase of the \nPart D benefit. \nSHORT NAME: — \nLONG NAME: REDUCED_DED \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nY = Yes \n\nN = No \n\n9 = Not applicable \n\nX = Unknown \n\nCOMMENT: \nThis variable was new in",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

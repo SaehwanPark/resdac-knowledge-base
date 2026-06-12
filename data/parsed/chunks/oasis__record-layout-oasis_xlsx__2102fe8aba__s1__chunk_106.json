@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_106",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Yes CHAR 1 x x\nM0600_BEH_DIM_INT (M0600) Diminished Interest in Most Activities Patient's behaviors: diminished interest in most activities. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_INDECIS (M0600) Indecisiveness, Lack of Concentration Patient's behaviors: indecisiveness, lack of concentration. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_NONE (M0600) None of the Above Behaviors Observed Patient's behaviors: none of the above. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_APPWT_C (M0600) Recent Change in Appetite",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

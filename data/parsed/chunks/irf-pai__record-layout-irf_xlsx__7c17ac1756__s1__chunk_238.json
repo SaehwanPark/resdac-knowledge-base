@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_238",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "STG_3_PRSR_ULCR_DSCHRG_POA_NUM STG_3_PRSR_ULCR_DSCHRG_POA_NUM M0300C2 Stage 3 Pressure Ulcers Discharge Present on Admission Number CHAR 1 The number of Stage 3 pressure ulcers at discharge that were present on admission\n204 STG_3_ULCR_DSCHRG_UNSTGBL_NUM STG_3_ULCR_DSCHRG_UNSTGBL_NUM M0300C3 Stage 3 Pressure Ulcers Discharge Unstageable on Admission Number CHAR 1 The number of Stage 3 pressure ulcers at discharge that were unstageable on admission.\n205 STG_4_PRSR_ULCR_DSCHRG_POA_NUM",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_278",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= No\n01 = Yes, patient has BOTH observable and unobservable stasis ulcers.\n02 = Yes, patient has observable stasis ulcers ONLY.\n03 = Yes, patient has unobservable stasis ulcers ONLY (known but not\nobservable due to non-removable dressing). CHAR 2 x x x x x x\nM1332_NUM_STAS_ULCR M1332 Current Number of (Observable) Stasis Ulcers This field indicates the current number of (observable) stasis wounds. 01 = One\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x x x x x x\nM1334_STUS_PRBLM_STAS_ULCR M1334",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

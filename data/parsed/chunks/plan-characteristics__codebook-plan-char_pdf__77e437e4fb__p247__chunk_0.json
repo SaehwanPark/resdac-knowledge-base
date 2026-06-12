@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p247__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 247,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n233 \nPRE_ICL_DAYS_OONP_OS \nLABEL: \nPre-ICL Out-of-Network Pharmacy — days in other day supply \nDESCRIPTION: This variable identifies the number of days in another days’ supply of the drugs (other than 1 or 3 \nmonths) on this tier, when using an out-of-network pharmacy (OONP) during the pre-initial coverage \nlimit (ICL) phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p85__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 85,
+  "text": "to \nboth Medicare and Medicaid benefits. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF (derived) \nVALUES: \n0–12, or null/missing (if no Medicare enrollment) \nCOMMENT: \nCCW creates this variable by linking the MBSF monthly Part D contract ID with the Plan Characteristics \nfile, and then counting the months where the Plan Characteristics special needs plan variable indicated \nthe plan was for dual eligible (where SNP_TYPE = D). Additional details regarding D-SNP plans are \navailable on the CMS website:",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

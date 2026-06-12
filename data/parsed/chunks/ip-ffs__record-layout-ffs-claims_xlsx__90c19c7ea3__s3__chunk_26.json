@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s3__chunk_26",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 3,
+  "text": "Indicator 1 Code CHAR 1 28\nTHRPY_CAP_IND_CD2 THRPY_CAP_IND_CD2 Revenue Center Therapy Cap Indicator 2 Code CHAR 1 29\nREV_CNTR_RP_IND_CD REV_CNTR_RP_IND_CD Revenue Center Representative Payee (RP) Indicator Code CHAR 1 30 New2\nRC_MODEL_REIMBRSMT_AMT RC_MODEL_REIMBRSMT_AMT Revenue Center Model Reimbursement Amount NUM 12 31 New3\nRC_VLNTRY_SRVC_IND_CD RC_VLNTRY_SRVC_IND_CD Revenue Center Voluntary Service Indicator Code CHAR 1 32 New4\nORDRNG_PHYSN_NPI ORDRNG_PHYSN_NPI Revenue Center Ordering",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

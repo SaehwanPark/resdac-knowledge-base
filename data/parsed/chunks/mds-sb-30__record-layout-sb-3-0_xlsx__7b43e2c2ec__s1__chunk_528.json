@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_528",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "or swing bed) submitting the modification or inactivation request. 1=Nursing home (SNF/NF)\n2=Swing bed effective 10/01/2023\ndiscontinued 9/30/2025\n608 X0300_CRCTN_SEX_CD1 X0300_CRCTN_SEX_CD X0300 Correction Sex Code CHAR 1 The data in this column indicates the resident's sex from the prior erroneous record to be modified or inactivated. -=Not assessed/no information/unable to determine\n1=Male\n2=Female\n^=Blank (Skip Pattern) effective 10/01/2023\n609 X0400_CRCTN_BIRTH_DT X0400_CRCTN_BIRTH_DT",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

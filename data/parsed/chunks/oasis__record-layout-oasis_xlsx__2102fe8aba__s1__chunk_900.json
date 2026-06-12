@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_900",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "at all \n2. Occasionally \n3. Frequently \n4. Almost constantly \n8. Unable to answer CHAR 1 x\nK0520A1_PRNTRL_ADMSN_CD Nutritional Approaches (Admission): Parenteral Indicates whether, on admission, the patient's nutritional approach included parenteral/IV feeding. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nK0520A4_PRNTRL_7_DAY_CD Nutritional Approaches (7 days): Parenteral Indicates whether, in the past seven days, the patient's nutritional approach included parenteral/IV feeding. 0.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

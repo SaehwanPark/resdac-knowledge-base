@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p9__chunk_1",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 9,
+  "text": "an individual’s records in all CCW data files (e.g., Medicare claims, MAX claims, MDS assessment data). \nThis number does not change during a beneficiary’s lifetime and each number is used only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nCCW \nFILE(S): \nPart D Beneficiary Plan Election file \nPart D Beneficiary Auto-Assignment file \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

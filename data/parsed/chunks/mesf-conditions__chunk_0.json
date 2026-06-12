@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__chunk_0",
+  "source_document": "data/raw/html/dataset_page/f08566e9ff77b33f8482c1b865d835446c181ab2.html",
+  "page": null,
+  "text": "The Conditions segment of the Medicaid Enrollee Supplemental File (MESF) flags each Medicaid beneficiary for the presence of one of 27 specific chronic conditions or one of 35 other chronic or potentially disabling conditions.\nWhat does this file include? (variable highlights)\n- Three flags for each chronic condition (based on end of calendar year):- Medicaid only (found in Medicaid claims)\n- Medicare only (found in Medicare claims)\n- Combined data (found in Medicare and Medicaid",
+  "dataset": "mesf-conditions",
+  "url": "https://resdac.org/cms-data/files/mesf-conditions"
+}

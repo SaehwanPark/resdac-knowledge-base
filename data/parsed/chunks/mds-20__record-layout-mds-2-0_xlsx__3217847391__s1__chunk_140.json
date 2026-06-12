@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_140",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "7 days, 8 = Activity did not occur during entire 7 days.\n215 G1EB G1EB_SUPP_LOC_UNIT (G1EB) Locomotion on Unit Support Provided CHAR 1 Physical functioning and structural problems: locomotion on unit - ADL support provided. \"-\" = Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person physical assist, 3 = Two+ person physical assist, 8 = ADL activity itself did not occur during entire 7 days\n216 G1FA G1FA_SELF_LOC_OFFU (G1FA) Locomotion off Unit Self Performance",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

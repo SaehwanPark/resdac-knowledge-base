@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p91__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 91,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n81 \nLINE_NUM_ORIG \nLABEL: \nOriginal Claim Line Number \nDESCRIPTION: This variable identifies an individual line number on an encounter record claim, as assigned in the CMS \nIntegrated Data Repository (IDR). \nSHORT NAME: LINE_NUM_ORIG \nLONG NAME: LINE_NUM_ORIG \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nCCW \nFILE(S): \nIP revenue \nSNF revenue \nHH revenue \nOP revenue \nCarrier Line \nDME Line",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

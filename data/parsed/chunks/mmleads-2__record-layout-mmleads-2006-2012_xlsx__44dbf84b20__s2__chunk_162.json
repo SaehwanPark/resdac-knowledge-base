@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s2__chunk_162",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 2,
+  "text": "the Three Sub-Indicators) First Ever Occurrence Date - Medicaid Only Claims date - MM/DD/YYYY\nOUD_ANY_MEDICARE_EVER Overarching OUD Disorder (Any of the Three Sub-Indicators) First Ever Occurrence Date - Medicare Only Claims date - MM/DD/YYYY\nOUD_DX_COMBINED Diagnosis and Procedure Basis for OUD - Combined Medicare & Medicaid Claims 0 - Claims and FFS not met\n1 - Claims met, not FFS\n2 - Claims not met, FFS\n3 - Claims met and FFS\nOUD_DX_MEDICAID Diagnosis and Procedure Basis for OUD - Medicaid",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

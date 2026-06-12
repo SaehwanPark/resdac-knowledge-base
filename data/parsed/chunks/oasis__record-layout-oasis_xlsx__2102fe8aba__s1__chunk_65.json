@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_65",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "hazards: lack of fire safety devices. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_PAINT (M0320) Lead-Based Paint Safety hazards: lead-based paint. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_NONE (M0320) No Safety Hazards Safety hazards: none. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_OTHER (M0320) Other Safety Hazards Safety hazards: other (specify). 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_FLOORCOV (M0320) Unsafe Floor Coverings Safety hazards: unsafe floor coverings. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_APPLIANC",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

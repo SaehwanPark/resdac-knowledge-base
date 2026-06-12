@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p18__chunk_7",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 18,
+  "text": "(e.g., age or disability status) may have changed, and in rare instances, the model \nuses different decision rules for populating fields than the MBSF. Investigators should consider the MBSF the definitive \nsource of Medicare beneficiary enrollment and demographic information. \n\n27 CMS began using a new Medicare beneficiary identifier (MBI) in place of the HIC, starting in 2018. \n28 Beginning with the 2023 annual data file, there are additional fields and adjustments in algorithms for the MBSF;",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

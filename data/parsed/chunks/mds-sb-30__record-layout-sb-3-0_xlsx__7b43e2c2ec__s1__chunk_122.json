@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_122",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "(nearly every day)\n^=Blank (skip pattern)\n154 D0500I1_STF_NGTV_STATE_CD D0500I1_STF_NGTV_STATE_CD D0500I1 Staff Assessment of Resident Mood - Negative Statement Code CHAR 1 The data in this column contains the staff assessment whether the resident states that life isn't worth living, wishes for death or attempts to harm self. -=Not assessed/no information\n0=No (enter 0 in column 2)\n1=Yes (enter 0-3 in column 2)\n^=Blank (skip pattern)\n155 D0500I2_STF_NGTV_STATE_FREQ_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

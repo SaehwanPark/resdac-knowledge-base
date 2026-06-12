@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s13__chunk_7",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 13,
+  "text": "New data field beginning in 2017; blank for prior years. CHAR 105\nSPEC PRVDR_SPCLTY_CD Provider Specialty Code CMS specialty code associated with the NPI as recorded in PECOS. A specialty code was not found for a small number of NPIs, in which case the SPEC field is blank. CHAR 2\nACO_Loc ACO_LOCATION ACO Location (county primarily served) Social Security Administration county code for the county in which the plurality of ACO assigned beneficiaries reside CHAR 5",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

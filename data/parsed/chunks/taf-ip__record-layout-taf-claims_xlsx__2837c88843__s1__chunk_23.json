@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "CHAR 1 141 Retired4\nTP_PD_AMT Total Third Party Liability Paid Amount NUM 8 142\nTP_COINSRNC_PD_AMT Third Party Coinsurance Paid Amount NUM 8 143\nTP_COPAY_PD_AMT Third Party Copayment Paid Amount NUM 8 144\nOTHR_INSRNC_PD_AMT Total Other Than Medicare or Medicaid -Insurance Paid Amount NUM 8 145\nOTHR_TP_CLCTN_CD Other Third Party Collection Code CHAR 3 146\nFUNDNG_CD Code To Indicate Source of Non-Federal Funding CHAR 2 147\nFUNDNG_SRC_NON_FED_SHR_CD Funding Source Non-Federal Share Code CHAR 2",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

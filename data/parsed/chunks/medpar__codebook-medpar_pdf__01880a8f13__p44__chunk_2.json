@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p44__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 44,
+  "text": "Service (PHS) or other Federal agency (other than VA) \nG = Working disabled beneficiary under age 65 with a local government health plan (LGHP) \nH = Black lung (BL) program \nI = Department of Veteran's Affairs \nL = Any liability insurance \nM = Override EGHP — Medicare is primary payer \nN = Override non-EGHP — Medicare is primary payer \nBlank/missing = No other primary payer \nCOMMENT: \nThe presence of a primary payer code indicates that some other payer besides Medicare covered at \nleast some",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p42__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 42,
+  "text": "benchmark for subsidy-eligible individuals. \nLIS individuals who enroll in plans that waive the de minimis premium amount are charged a monthly \nbeneficiary premium for basic prescription drug coverage rather than for the higher de minimis \namount (i.e., full benefit dual eligible beneficiaries have a full premium subsidy and would essentially \nhave $0 premium payment). \nSHORT NAME: — \nLONG NAME: DEMINIMIS_PD_FLAG \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files)NCH \nVALUES: \nY = Yes \nN = No",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

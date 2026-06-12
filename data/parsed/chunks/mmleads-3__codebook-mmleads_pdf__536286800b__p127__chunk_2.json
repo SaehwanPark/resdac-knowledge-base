@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p127__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 127,
+  "text": "MME_TYPE_CD_MM. The hierarchy (and definition of the \nMME_TYPE_CD) is: \nFull dual (MME_TYPE_CD = 4) — the MBSF DUAL_STUS_CD_MM in ('02' '04' '08'); \nPartial dual (MME_TYPE_CD = 3) — the MBSF DUAL_STUS_CD_MM in ('01' '03' '05' '06'); \nMedicare only (MME_TYPE_CD = 2) — the MBSF DUAL_STUS_CD_MM = '00' '09' 'N/A' 'NA' \n'99' and MDCR_BUY_IN in ('1' '2' '3' 'A' 'B' 'C') then (Medicare Only); or else if \nMedicaid only A/B/D (MME_TYPE_CD = 1) — the T-MSIS DE File ELIGBLTY_GRP_CD_MM IN \n('11' '12' '13'",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

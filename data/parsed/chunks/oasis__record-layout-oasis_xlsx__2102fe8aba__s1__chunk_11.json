@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "ZIP Code Patient's ZIP code. CHAR 11 x x x x x x x\nM0063_MEDICARE_NA (M0063) No Medicare Number Patient has no Medicare number. 0 = Not Checked (Not NA - No Medicare), 1 = Checked (NA - No Medicare) CHAR 1 x x x x x x x\nM0065_MEDICAID_NA (M0065) No Medicaid Number Patient has no Medicaid number. 0 = Not Checked (Not NA - No Medicaid), 1 = Checked (NA - No Medicaid) CHAR 1 x x x x x x\nM0066_PAT_BIRTH_DT (M0066) Patient Birth Date Patient's birthdate. If only the year (YYYY) was submitted, the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

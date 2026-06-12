@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p176__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 176,
+  "text": "= Other organ acquisition (revenue code 0819) \n02 = General acquisition (revenue code 0890) \nB1 = Bone donor bank (revenue code 0891) \n03 = Organ donor bank other than kidney (revenue code 0892) \nS1 = Skin donor bank (revenue code 0893) \n04 = Other donor bank (revenue code 0899) \nNull/Missing = No organ acquisition indication \nCOMMENT: \nThis field is derived by checking for the presence of the organ acquisition revenue center codes (081x \nand 089x) on any of the claim records included in the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

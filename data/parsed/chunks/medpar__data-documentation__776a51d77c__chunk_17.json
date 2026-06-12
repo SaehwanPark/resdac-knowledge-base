@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_17",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Occupational Therapy Charge Amount ($) | \n\n | 92 | SPCH_PTHLGY_CHRG_AMT | Speech Pathology Charge Amount ($) | \n\n | 93 | INHLTN_THRPY_CHRG_AMT | Inhalation Therapy Charge Amount ($) | \n\n | 94 | BLOOD_CHRG_AMT | Blood Charge Amount ($) | \n\n | 95 | BLOOD_ADMIN_CHRG_AMT | Blood storage and processing charge amount ($) | \n\n | 96 | BLOOD_PT_FRNSH_QTY | Blood Pints Furnished Quantity | \n\n | 97 | OPRTG_ROOM_CHRG_AMT | Operating Room Charge Amount ($) | \n\n | 98 | LTHTRPSY_CHRG_AMT | Lithotripsy",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

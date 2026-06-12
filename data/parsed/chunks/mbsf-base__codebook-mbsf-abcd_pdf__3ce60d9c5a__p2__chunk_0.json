@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nMay 2026 \nK. Schneider \nRemoved leading zeros for values of PTC_PLAN_TYPE_CD_01–12 \n1.9 \nJanuary 2025 \nK. Schneider \nAdded caution to BENE_HMO_CVRAGE_TOT_MONS and clarified \nmaximum AGE_AT_END_REF_YR \n1.8 \nOctober 2024 \nK. Schneider \nClarified meaning of 0 value in HMO_IND_01–12; clarified meaning \nof first digit in",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

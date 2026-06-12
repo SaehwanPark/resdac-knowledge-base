@@ -1,0 +1,16 @@
+Medicaid Analytic Extract (MAX) Long Term (LT) Care file contains claim records for institutional long term care provided at four specific facility identified by the MAX Type of Service:
+- Nursing Facility Services
+- Mental Hospital Services for the Aged
+- Inpatient Psychiatric Facility Services for Individuals Under the Age Of 21
+- Intermediate Care Facility (ICF) Services for Individuals With Intellectual Disabilities
+What does this file include? (variable highlights)
+- 5 diagnosis codes
+- Admission date
+- Charges and payments (FFS only)
+- Provider identifier
+- Patient discharge status or destination
+- Counts of covered days
+Special considerations
+- Encounter record reporting may not be complete. Data reporting may vary by state, year and eligibility group.
+- Stays may be made up of multiple records.
+- Long term care services provided to community-dwelling beneficiaries are found the MAX OT file.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p167__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 167,
+  "text": "(01–12) \nDESCRIPTION: A beneficiary’s Maintenance Assistance Status and Basis of Eligibility (MASBOE) group. This is a three-\ncharacter designation, where the first character indicates the beneficiary’s Maintenance Assistance \nStatus (MAS), e.g., “medically needy”, and the second and third positions indicate their Basis of \nEligibility (BOE), e.g., “aged”; in the month. There are separate variables for each of the 12 months \nduring the year. \nSHORT NAME:\nMASBOE_CD_01 \nMASBOE_CD_02 \nMASBOE_CD_03",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

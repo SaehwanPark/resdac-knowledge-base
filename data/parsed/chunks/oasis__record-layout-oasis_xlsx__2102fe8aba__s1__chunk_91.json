@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_91",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Three\n04 = Four or more CHAR 2 x x\nM0474_UNOBS_STAULC (M0474) Unobservable Stasis Ulcer Does patient have at least one stasis ulcer that cannot be observed due to nonremovable dressing? 0 = No, 1 = Yes CHAR 1 x x\nM0476_STA_PRB_STAU (M0476) Status of Most Problematic Stasis Ulcer Status of most problematic stasis ulcer. 01 = Fully granulating\n02 = Early/partial granulation\n03 = Not healing\nNA = No observable ulcer/wound CHAR 2 x x\nM0482_SURG_WOUND (M0482) Surgical Wound Does patient have a",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

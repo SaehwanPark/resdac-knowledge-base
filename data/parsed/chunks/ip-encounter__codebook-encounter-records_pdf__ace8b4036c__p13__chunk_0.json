@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p13__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 13,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n3 \nAT_PHYSN_TXNMY_CD \nLABEL: \nClaim Attending Physician Taxonomy Code \nDESCRIPTION: The health care provider taxonomy (HCPT) code used to indicate the attending provider's specialty. \nThis is a unique identifier for a classification of health care specialty at a specialized level of defined \nmedical activity within a medical field as created by the National Uniform Claim Committee",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

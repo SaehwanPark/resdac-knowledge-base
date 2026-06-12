@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_25",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "PRCDR_DT16 Claim Procedure Code XVI Date DATE 8 135\nICD_PRCDR_CD17 ICD_PRCDR_CD17 Claim Procedure Code XVII CHAR 7 136\nPRCDR_DT17 PRCDR_DT17 Claim Procedure Code XVII Date DATE 8 137\nICD_PRCDR_CD18 ICD_PRCDR_CD18 Claim Procedure Code XVIII CHAR 7 138\nPRCDR_DT18 PRCDR_DT18 Claim Procedure Code XVIII Date DATE 8 139\nICD_PRCDR_CD19 ICD_PRCDR_CD19 Claim Procedure Code XIX CHAR 7 140\nPRCDR_DT19 PRCDR_DT19 Claim Procedure Code XIX Date DATE 8 141\nICD_PRCDR_CD20 ICD_PRCDR_CD20 Claim Procedure Code XX",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

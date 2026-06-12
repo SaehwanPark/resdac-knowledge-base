@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p51__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 51,
+  "text": "which are the ICD_DGNS_CD1–ICD_DGNS_CD25 fields). \nIn response to the Deficit Reduction Act of 2005, CMS began to distinguish between hospitalization \ndiagnoses that occurred prior to versus during the admission. The objective was to eventually not pay \nhospitals more if the patient acquired a condition (e.g., infection) during the admission. \nThis present on admission (POA) field is used to indicate whether the diagnosis was present on \nadmission. \nSHORT NAME: \nCLM_POA_IND_SW1 \nCLM_POA_IND_SW2",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

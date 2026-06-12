@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p47__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 47,
+  "text": "PTC_PLAN_TYPE_CD_10 \nPTC_PLAN_TYPE_CD_11 \nPTC_PLAN_TYPE_CD_12 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n\nNull/missing =Not Enrolled in Medicare \nPart C \n01 = Health Maintenance Organization \n(HMO) \n02 = HMO point-of-service (HMOPOS) \n04 = Local Preferred Provider \nOrganization (PPO) \n05 = PSO (State License) \n06 = PSO (Federal Waiver of State \nLicense) \n07 = Medical Savings Account (MSA) \n08 = Religious Fraternal Benefit (RFB) \nprivate fee-for-service",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

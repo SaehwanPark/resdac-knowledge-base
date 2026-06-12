@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p58__chunk_3",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 58,
+  "text": "NAME: OIP_STAYS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nThe algorithm considers all claims (for the ACUTE_STAYS and OIP_STAYS variables). However, for the \ncount of covered days (ACUTE_COV_DAYS and OIP_COV_DAYS) and payments (ACUTE_MDCR_PMT and \nOIP_MDCR_PMT), the algorithms include only claims that ended during the year of the data file, and \nwhere the payment amount was >= $0. \nThere are two cost/use categories from the IP data files: Acute",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

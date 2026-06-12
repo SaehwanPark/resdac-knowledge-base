@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p70__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 70,
+  "text": "living in long-term \ncare (LTC) facilities, this variable indicates how many days’ supply of the medication was dispensed by \nthe long-term care pharmacy and provides some details about the dispensing event. \nSHORT NAME: SUBMSN_CLRFCTN_CD_1 \nSUBMSN_CLRFCTN_CD_2 \nSUBMSN_CLRFCTN_CD_3 \nSUBMSN_CLRFCTN_CD_4 \nSUBMSN_CLRFCTN_CD_5 \nLONG NAME: SUBMSN_CLRFCTN_CD_1 \nSUBMSN_CLRFCTN_CD_2 \nSUBMSN_CLRFCTN_CD_3 \nSUBMSN_CLRFCTN_CD_4 \nSUBMSN_CLRFCTN_CD_5 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nPDE \nVALUES: \n00 =",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

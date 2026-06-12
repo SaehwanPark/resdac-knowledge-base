@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_39",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "TMSIS Case Number - Ltst in Yr CHAR 32 175\nSPLMTL_DTS Beneficiary Record In Supplemental Dates File CHAR 1 176\nSPLMTL_MC Beneficiary Record in Supplemental Managed Care File CHAR 1 177\nSPLMTL_WVR Beneficiary Record in Supplemental Waiver File CHAR 1 178\nSPLMTL_HLTH_HOME_SPO Beneficiary Record in Supplemental Hlth Home and State Plan Option (SPO) File CHAR 1 179\nSPLMTL_MFP Beneficiary Record in Supplemental Money Follows Person (MFP) File CHAR 1 180\nSPLMTL_DSB_HCBS Beneficiary HCBS Record in",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

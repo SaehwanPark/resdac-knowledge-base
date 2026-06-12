@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "rmembring, or making decisions CHAR 1\nSR_SPLMTL_DSBLTS_2_SW Supplemental HRSN Disabilities 2: Difficulty doing errands alone CHAR 1\nSR_SPLMTL_DSBLTS_OVRL_SCRNG_IND Screened Supplemental HRSN Disabilities Overall Indicator CHAR 1\nSR_SPLMTL_EDCTN_1_SW Supplemental HRSN Education 1: Speak a language other than English at home CHAR 1\nSR_SPLMTL_EDCTN_2_SW Supplemental HRSN Education 2: Want help with school or training CHAR 1\nSR_SPLMTL_EDCTN_OVRL_SCRNG_IND Screened Supplemental HRSN Education",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

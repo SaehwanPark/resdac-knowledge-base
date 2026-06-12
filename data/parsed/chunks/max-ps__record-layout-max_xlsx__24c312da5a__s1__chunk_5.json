@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "EL_SEX_RACE_CD Sex/race code NUM 1 X X X X X X X X X X X\n21 EL_DOD Date of death (from MSIS) DATE 8 X X X X X X X X X X X\n22 MDCR_DOD Date of death (from Medicare EDB) DATE 8 X X X X X X X X X X X\n23 MDCR_DEATH_DAY_SW Day of death verified (from Medicare EDB) CHAR 1 X X X X X X X X X X X\n24 EL_RSDNC_CNTY_CD_LTST County of residence CHAR 3 X X X X X X X X X X X\n25 EL_RSDNC_ZIP_CD_LTST Zip code of residence NUM 9 X X X X X X X X X X X\n26 EL_SS_ELGBLTY_CD_LTST State specific eligibility - most",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

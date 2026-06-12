@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_41",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Disability File CHAR 1 184\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 8 185\nDE_VRSN DE Version Representing the Iteration of the File CHAR 2 186\nRFRNC_YR Reference Yr CHAR 4 187\nCCW_LD_DT CCW Load Date DATE 8 188\n1 Fields are populated starting with the 2020 Release 1 RIF\n2 Fields populated starting with the 2023 Release 1 RIF are designated as \"New2\"",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

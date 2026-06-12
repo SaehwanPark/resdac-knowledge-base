@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p45__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 45,
+  "text": "LONG NAME: CLM_ORIG_CNTL_NUM \nTYPE: \nCHAR \nLENGTH: \n23 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n— \nCOMMENT: \nWhen an encounter record has been adjusted, the claim control number (CLM_CNTL_NUM) for the \nversion of the record that is being adjusted appears in the CLM_ORIG_CNTL_NUM field – and then a \nnew CLM_CNTL_NUM is assigned to this updated record. A null/missing CLM_ORIG_CNTL_NUM \nindicates that a",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

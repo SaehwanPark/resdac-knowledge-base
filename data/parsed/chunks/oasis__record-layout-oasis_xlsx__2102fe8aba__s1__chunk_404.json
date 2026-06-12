@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_404",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "field lists the patient's medical diagnoses and ICD10 code 6 for those conditions requiring changed medical or treatment regimen within the past 14 days. CHAR 8 x x\nM1017_CHGREG_ICD_NA M1017 Regimen Change In Past 14 Days - NA This field is checked if there have been no medical or treatment regimen changes within the past 14 days. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x\nM1021_PRI_DGN_ICD M1021 Primary Diagnosis ICD-10 Code This field lists the primary diagnosis (ICD-10). CHAR 8 x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

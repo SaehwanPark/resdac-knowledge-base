@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_228",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "or ulcer edges.\n188 _52ED TISUE_TYPE_DSCHRG_CD (52Ed) Tissue Type: Discharge CHAR 2 A code that indicates the type of tissue that occupies the majority of the ulcer bed of the largest pressure ulcer at the time of discharge. 00 = Closed/resurfaced: The wound is completely covered with epithelium (new skin), 01 = Epithelial tissue: For superficial ulcers, new pink or shiny tissue (skin) that grows in from the edges or as islands on the ulcer surface. 02 = Granulation tissue: Pink or beefy red",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

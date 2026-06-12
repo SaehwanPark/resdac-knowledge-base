@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_6",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "| Claim Referring Physician Specialty Code | \n\n | 38 | CLM_MCO_PD_SW | Claim MCO Paid Switch | \n\n | 39 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (FFS) | \n\n | 40 | CLM_TOT_CHRG_AMT | Claim Total Charge Amount | \n\n | 41 | NCH_BENE_BLOOD_DDCTBL_LBLTY_AM | NCH Beneficiary Blood Deductible Liability Amount | \n\n | 42 | NCH_PROFNL_CMPNT_CHRG_AMT | Professional Component Charge Amount | \n\n | 43 | NCH_BLOOD_PNTS_FRNSHD_QTY | NCH Blood Pints Furnished Quantity | \n\n | 44 | PRNCPAL_DGNS_CD |",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

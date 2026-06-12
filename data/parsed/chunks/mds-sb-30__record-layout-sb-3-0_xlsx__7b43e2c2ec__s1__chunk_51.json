@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_51",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "A2100 Discharge Status Code CHAR 2 The data in this column identifies the resident's discharge status. 01=Community (private home/apt.,board/care,assisted living, group home)\n02=Another nursing home or swing bed\n03=Acute hospital\n04=Psychiatric hospital\n05=Inpatient rehabilitation facility\n06=ID/DD facility\n07=Hospice\n08=Deceased\n09=Long Term Care Hospital (LTCH)\n99=Other\n^=Blank(skip pattern) discontinued 09/30/2023\n81 A2200_PRVS_ASMT_RFRNC_DT A2200_PRVS_ASMT_RFRNC_DT A2200 Previous Assessment",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

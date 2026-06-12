@@ -1,0 +1,463 @@
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Plan Characteristics File - Plan Base File
+Version - May 2018
+Long SAS Name	Label	Type	Length 2	Year of Data File 1
+2007	2008	2009	2010	2011	2012 - 2014
+CONTRACT_ID	Part D Contract Identifier 3	CHAR	5	X	X	X	X	X	X
+PLAN_ID	Part D Plan Benefit Package Identifier 3	CHAR	3	X	X	X	X	X	X
+FORMULARY_ID	Part D Formulary Identifier 3	CHAR	8	X	X	LC	X	X	X
+CONTRACT_NAME	Part D Contract Name	CHAR	150	X	X	X	X	X	X
+PLAN_NAME	Part D Plan Benefit Package Name	CHAR	75	X	X	X	X	X	X
+ORGANIZATION_MARKETING_NAME	Part D Plan Organization Marketing Name	CHAR	150	X	X	X	X	X	X
+PARENT_ORGANIZATION	Part D Plan Parent Organization Name	CHAR	50	X	X	X	X	X	X
+EFFECTIVE_DATE	Part D Plan Effective Date	CHAR	10	X	X	X	X	X	X
+ORGANIZATION_TYPE	Part D Organization Type	CHAR	2	X	X	X	X	X	X
+PLAN_TYPE	Part D Plan Type	CHAR	2	X	X	X	X	X	X
+DEMO_TYPE	Part D Demonstration Type	CHAR	1	X	X	X	X	X	X
+REINSURANCE_DEMO_TYPE	Part D Reinsurance Demonstration Type	CHAR	1	X	X	X	X	-	-
+SNP_TYPE	Part D Special Needs Plan (SNP) Type	CHAR	1	X	X	X	X	X	X
+FIDE_SNP	Fully Integrated Dual Eligible (FIDE) SNP	CHAR	1	-	-	-	-	-	X
+DRUG_BENEFIT_TYPE	Part D Drug Benefit Type	CHAR	1	X	X	X	X	X	X
+EGWP_INDICATOR	Employer Group Waiver Plan (EGWP) Indicator	CHAR	1	X	X	X	X	X	X
+EGHP_CALENDAR_YEAR_FLAG	Employer Group Health Plan (EGHP) Calendar Year Indicator	CHAR	1	X	X	X	X	X	X
+COV_CRITERIA	Part D Coverage Criteria - Indicator of Waiver of Part A Requirement	CHAR	1	X	X	X	X	X	X
+NATIONAL_PDP	National Prescription Drug Plan (PDP) Sponsor	CHAR	1	X	X	X	X	X	X
+GAP_COVERAGE_TYPE	Type of Gap Coverage Offered	CHAR	2	X	X	LC	X	X	X
+DEMINIMIS_PD_FLAG	Deminimis Paid Flag	CHAR	1	-	-	-	-	-	X
+DED_APPLY	How Part D Deductible is Applied	CHAR	1	X	X	X	X	X	X
+DED_AMT	Part D Deductible Amount	NUM	8	X	X	LC	X	X	X
+DED_APPLY_ALL	Type of Cost Sharing in the Deductible Phase	CHAR	1	X	X	X	X	X	X
+DED_GENERIC_COPAY	Part D Co-Payment Amount for Generic Drugs in Deductible	NUM	8	X	X	LC	-	-	-
+DED_COSTSHARE_TIERS	Tiers with Cost Sharing in the Deductible Phase	CHAR	6	-	-	-	X	LC	X
+DED_COPAY	Part D Deductible Co-pay Amount	NUM	8	-	-	-	X	X	X
+DED_COINS	Part D Deductible Coinsurance Percentage	NUM	8	-	-	-	X	X	X
+FREE_FIRST_FILL	Free First Prescription Fill	CHAR	1	X	X	X	X	X	X
+LESSER_OF_PRICING	Lesser of Part D Pricing	CHAR	1	X	X	-	-	-	-
+PRE_ICL_APPLY	How Part D Pre-ICL Cost-Sharing is Applied	CHAR	1	X	X	X	X	X	X
+ICL_APPLY	How Part D Initial Coverage Limit (ICL) is Applied	CHAR	1	X	X	X	X	X	X
+ICL_AMT	Part D Initial Coverage Limit (ICL) Amount	NUM	8	X	X	LC	X	X	X
+POST_OOPT_APPLY	How Post Out-of-Pocket (OOP) Threshold Cost-Sharing is Applied	CHAR	1	X	X	X	X	X	X
+OOPT_AMT	Out-of-Pocket (OOP) Threshold Amount	NUM	8	X	X	LC	X	X	X
+EXCLUDED_DRUGS	Plan Covers Excluded Drugs	CHAR	1	X	X	X	X	X	X
+REDUCED_COST_SHARE	Plan Offers Reduced Cost-Sharing	CHAR	1	X	X	X	X	X	X
+REDUCED_DED	Plan Offers Reduced Deductible Amount	CHAR	1	X	X	X	X	X	X
+REDUCED_PREICL_CS	Plan Offers Reduced pre-ICL Cost-sharing Amount	CHAR	1	X	X	X	X	X	X
+REDUCED_GAP_CS	Plan Offers Reduced Cost-Sharing in the Coverage Gap	CHAR	1	X	X	X	X	X	-
+REDUCED_OOPT_CS	Plan Offers Reduced Post Out-of-Pocket (OOP) Threshold Cost-Sharing Amounts	CHAR	1	X	X	X	X	X	X
+INCREASED_ICL	Plan Offers Increased Initial Coverage Limit (ICL) Amount	CHAR	1	-	-	-	-	X	X
+SPECIALTY_TIER	Specialty Tier Number	CHAR	2	X	X	LC	X	X	X
+NAT_RX_COV_YN	Plan Offers Nationwide Prescription Coverage	CHAR	1	-	X	X	X	X	X
+LIMITED_GAP_BENEFIT	Plan Offers Limited benefit above the Initial Coverage Limit (ICL)	CHAR	1	-	X	LC	X	-	-
+LIMITED_GAP_BENEFIT_TYPE	Types of Drugs Offered for Limited Gap Coverage	CHAR	7	-	X	LC	X	-	-
+LIMITED_GAP_BENEFIT_AMT	Limited Gap Coverage Amount	NUM	8	-	X	X	X	-	-
+FREE_GENERICS	Plan Offers Free Generic Drugs up to a Maximum Amount	CHAR	1	-	X	X	X	-	-
+FREE_GENERICS_AMT	Maximum Amount for Free Generic Drugs	NUM	8	-	X	LC	X	-	-
+SPECIALTY_ACCESS	Plan Requires Specialty Pharmacies for Some Drugs	CHAR	1	-	X	X	X	-	-
+OTC_UM_PROGRAM	Plan Covers Over-the-Counter medications (OTCs) under the Utilization Management Program	CHAR	1	-	X	X	X	X	X
+Tier-specific Cost-sharing Information
+PRE_ICL_DRUG_TYPE_TIER_01	Pre-ICL Drug Type for Tier 1	CHAR	6	LC	X	X	X	X	X
+PRE_ICL_DRUG_TYPE_TIER_02	Pre-ICL Drug Type for Tier 2	CHAR	6	LC	X	X	X	X	X
+PRE_ICL_DRUG_TYPE_TIER_03	Pre-ICL Drug Type for Tier 3	CHAR	6	LC	X	X	X	X	X
+PRE_ICL_DRUG_TYPE_TIER_04	Pre-ICL Drug Type for Tier 4	CHAR	6	LC	X	X	X	X	X
+PRE_ICL_DRUG_TYPE_TIER_05	Pre-ICL Drug Type for Tier 5	CHAR	6	LC	X	X	X	X	X
+PRE_ICL_DRUG_TYPE_TIER_06	Pre-ICL Drug Type for Tier 6	CHAR	6	LC	X	X	X	X	X
+PRE_ICL_DRUG_TYPE_TIER_07	Pre-ICL Drug Type for Tier 7	CHAR	6	LC	X	X	X	-	-
+PRE_ICL_DRUG_TYPE_TIER_08	Pre-ICL Drug Type for Tier 8	CHAR	6	LC	-	-	-	-	-
+PRE_ICL_DRUG_TYPE_TIER_09	Pre-ICL Drug Type for Tier 9	CHAR	6	X	-	-	-	-	-
+PRE_ICL_INP_1M_COPAY_TIER_01	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 1	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COPAY_TIER_02	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 2	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COPAY_TIER_03	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 3	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COPAY_TIER_04	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 4	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COPAY_TIER_05	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 5	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COPAY_TIER_06	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 6	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COPAY_TIER_07	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 7	NUM	8	X	X	LC	X	-	-
+PRE_ICL_INP_1M_COPAY_TIER_08	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 8	NUM	8	X	-	-	-	-	-
+PRE_ICL_INP_1M_COPAY_TIER_09	Pre-ICL In-Network Pharmacy Copay for 1 Month Supply on Tier 9	NUM	8	X	-	-	-	-	-
+PRE_ICL_INP_1M_COINS_TIER_01	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 1	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COINS_TIER_02	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 2	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COINS_TIER_03	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 3	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COINS_TIER_04	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 4	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COINS_TIER_05	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 5	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COINS_TIER_06	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 6	NUM	8	X	X	LC	X	X	X
+PRE_ICL_INP_1M_COINS_TIER_07	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 7	NUM	8	X	X	LC	X	-	-
+PRE_ICL_INP_1M_COINS_TIER_08	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 8	NUM	8	X	-	-	-	-	-
+PRE_ICL_INP_1M_COINS_TIER_09	Pre-ICL In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 9	NUM	8	X	-	-	-	-	-
+GAP_TIER_01	Gap Coverage on Tier 1	CHAR	1	-	X	X	X	X	X
+GAP_TIER_02	Gap Coverage on Tier 2	CHAR	1	-	X	X	X	X	X
+GAP_TIER_03	Gap Coverage on Tier 3	CHAR	1	-	X	X	X	X	X
+GAP_TIER_04	Gap Coverage on Tier 4	CHAR	1	-	X	X	X	X	X
+GAP_TIER_05	Gap Coverage on Tier 5	CHAR	1	-	X	X	X	X	X
+GAP_TIER_06	Gap Coverage on Tier 6	CHAR	1	-	X	X	X	X	X
+GAP_TIER_07	Gap Coverage on Tier 7	CHAR	1	-	X	X	X	-	-
+GAP_PARTIAL_TIER_01	Partial Gap Coverage on Tier 1	CHAR	1	-	X	X	X	X	X
+GAP_PARTIAL_TIER_02	Partial Gap Coverage on Tier 2	CHAR	1	-	X	X	X	X	X
+GAP_PARTIAL_TIER_03	Partial Gap Coverage on Tier 3	CHAR	1	-	X	X	X	X	X
+GAP_PARTIAL_TIER_04	Partial Gap Coverage on Tier 4	CHAR	1	-	X	X	X	X	X
+GAP_PARTIAL_TIER_05	Partial Gap Coverage on Tier 5	CHAR	1	-	X	X	X	X	X
+GAP_PARTIAL_TIER_06	Partial Gap Coverage on Tier 6	CHAR	1	-	X	X	X	X	X
+GAP_PARTIAL_TIER_07	Partial Gap Coverage on Tier 7	CHAR	1	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_01	Type of Partial Gap Coverage on Tier 1	CHAR	8	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_02	Type of Partial Gap Coverage on Tier 2	CHAR	8	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_03	Type of Partial Gap Coverage on Tier 3	CHAR	8	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_04	Type of Partial Gap Coverage on Tier 4	CHAR	8	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_05	Type of Partial Gap Coverage on Tier 5	CHAR	8	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_06	Type of Partial Gap Coverage on Tier 6	CHAR	8	-	X	X	X	-	-
+GAP_PARTIAL_TYPE_TIER_07	Type of Partial Gap Coverage on Tier 7	CHAR	8	-	X	X	X	-	-
+GAP_DRUG_TYPE_TIER_01	Gap Drug Type for Tier 1	CHAR	6	X	X	X	X	X	X
+GAP_DRUG_TYPE_TIER_02	Gap Drug Type for Tier 2	CHAR	6	X	X	X	X	X	X
+GAP_DRUG_TYPE_TIER_03	Gap Drug Type for Tier 3	CHAR	6	X	X	X	X	X	X
+GAP_DRUG_TYPE_TIER_04	Gap Drug Type for Tier 4	CHAR	6	X	X	X	X	X	X
+GAP_DRUG_TYPE_TIER_05	Gap Drug Type for Tier 5	CHAR	6	X	X	X	X	X	X
+GAP_DRUG_TYPE_TIER_06	Gap Drug Type for Tier 6	CHAR	6	X	X	X	X	X	X
+GAP_DRUG_TYPE_TIER_07	Gap Drug Type for Tier 7	CHAR	6	X	X	X	X	-	-
+GAP_DRUG_TYPE_TIER_08	Gap Drug Type for Tier 8	CHAR	6	X	-	-	-	-	-
+GAP_DRUG_TYPE_TIER_09	Gap Drug Type for Tier 9	CHAR	6	X	-	-	-	-	-
+GAP_INP_1M_COPAY_TIER_01	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 1	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COPAY_TIER_02	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 2	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COPAY_TIER_03	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 3	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COPAY_TIER_04	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 4	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COPAY_TIER_05	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 5	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COPAY_TIER_06	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 6	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COPAY_TIER_07	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 7	NUM	8	X	X	LC	X	-	-
+GAP_INP_1M_COPAY_TIER_08	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 8	NUM	8	X	-	-	-	-	-
+GAP_INP_1M_COPAY_TIER_09	Coverage Gap In-Network Pharmacy Copay for 1 Month Supply on Tier 9	NUM	8	X	-	-	-	-	-
+GAP_INP_1M_COINS_TIER_01	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 1	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COINS_TIER_02	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 2	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COINS_TIER_03	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 3	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COINS_TIER_04	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 4	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COINS_TIER_05	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 5	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COINS_TIER_06	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 6	NUM	8	X	X	LC	X	X	X
+GAP_INP_1M_COINS_TIER_07	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 7	NUM	8	X	X	LC	X	-	-
+GAP_INP_1M_COINS_TIER_08	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 8	NUM	8	X	-	-	-	-	-
+GAP_INP_1M_COINS_TIER_09	Coverage Gap In-Network Pharmacy Coinsurance for 1 Month Supply on Tier 9	NUM	8	X	-	-	-	-	-
+1 For all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); LC = length change for variable.
+2 Length reflects the length of the most recent data file.  Refer to Footnote 1 regarding 'LC' (length change) to identify if/when there was a change in length.
+3 Prior to the 2013 data release, CCW was required to encrypt  these sensitive data fields.  These sensitive fields were those which could be used to identify the  the plan sponsor's contract (CONTRACT_ID),  plan benefit package (PLAN_ID), and the plan’s formulary (FORMULARY_ID). We are no longer required to encrypt these variables.
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Plan Characteristics File - Premium File
+Version - May 2018
+Long SAS Name	Label	Type	Length	Year of Data File 1
+2007 - 2008	2009	2010 +
+CONTRACT_ID	Part D Contract Identifier 2	CHAR	5	X	X	X
+PLAN_ID	Part D Plan Benefit Package Identifier 2	CHAR	3	X	X	X
+SEGMENT_ID	Part D Market Segment Identifier	CHAR	3	X	X	X
+PART_B_PREMIUM_REDUCTION_AMT	Part B Premium Reduction Amount	NUM	8	X	LC	X
+PART_C_PREMIUM	Part C Premium	NUM	8	X	X	X
+PLAN_BASIC_PREMIUM_NET_REBATE	Part D Basic Premium Net of Rebate	NUM	8	X	X	X
+PLAN_SUPP_PREMIUM_NET_REBATE	Part D Supplemental Premium Net of Rebate	NUM	8	X	X	X
+PLAN_TOTAL_PREMIUM_NET_REBATE	Part D Total Premium Net of Rebate	NUM	8	X	X	X
+PART_D_LIS_25	Part D Low Income Subsidy 25%	NUM	8	X	X	X
+PART_D_LIS_50	Part D Low Income Subsidy 50%	NUM	8	X	X	X
+PART_D_LIS_75	Part D Low Income Subsidy 75%	NUM	8	X	X	X
+PART_D_LIS_100	Part D Low Income Subsidy 100%	NUM	8	X	X	X
+PART_D_LIPS_25	Part D Low Income Premium Subsidy 25%	NUM	8	X	X	X
+PART_D_LIPS_50	Part D Low Income Premium Subsidy 50%	NUM	8	X	X	X
+PART_D_LIPS_75	Part D Low Income Premium Subsidy 75%	NUM	8	X	X	X
+PART_D_LIPS_100	Part D Low Income Premium Subsidy 100%	NUM	8	X	X	X
+BELOW_BENCHMARK	Part D Plan Offered Below Benchmark	CHAR	1	X	X	X
+1 For all columns under "Year of Data File":  X = variable is present; LC = length change for variable.
+2 Prior to the 2013 data release, CCW was required to encrypt  these sensitive data fields.  These sensitive fields were those which could be used to identify the  the plan sponsor's contract (CONTRACT_ID) and  plan benefit package (PLAN_ID). We are no longer required to encrypt these variables.
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Plan Characteristics File - Tier File
+Version - May 2018
+Long SAS Name	Label	Type	Length	Year of Data File 1
+2007	2008 - 2010	2009	2010	2011	2012	2013	2014
+CONTRACT_ID	Part D Contract Identifier 2	CHAR	5	X	X	X	X	X	X	X	X
+PLAN_ID	Part D Plan Benefit Package Identifier 2	CHAR	3	X	X	X	X	X	X	X	X
+TIER_ID	Tier Number	CHAR	2	X	X	X	X	X	X	X	X
+GAP_TIER	Gap Tier	CHAR	1	X	X	X	X	X	X	X	X
+GAP_TIER_PARTIAL	Gap Tier Partial	CHAR	1	-	X	X	X	X	X	X	X
+EXCLUDED_TIER_GAP	Excluded Drugs Covered on this Tier in the Gap Phase	CHAR	1	-	-	-	-	-	X	X	X
+EXCLUDED_TIER_PRE_ICL	Excluded drugs are covered on this tier in the Pre ICL phase	CHAR	1	-	-	-	-	-	X	X	X
+SPECIALTY_TIER	Specialty Tier	CHAR	1	X	LC	X	X	X	X	X	X
+Pre-ICL Tier Cost-Sharing
+PRE_ICL_TIER_DRUG_TYPE	Pre-ICL Drug Type by Tier	CHAR	6	X	X	X	X	X	X	X	X
+PRE_ICL_COSTSHARE_TYPE	Pre-ICL Costshare Type	CHAR	1	X	X	X	X	X	X	X	X
+PRE_ICL_INP_COINS_1M	Pre-ICL In-Network Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INP_COINS_2M	Pre-ICL In-Network Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INP_COINS_3M	Pre-ICL In-Network Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INP_COINS_OS	Pre-ICL In-Network Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_INP_COINS_AVG_1M	Pre-ICL In-Network Pharmacy Average Expected Coinsurance for 1 month Supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INPP_COINS_1M	Pre-ICL In-Network Preferred Pharmacy Coinsurance for 1 month Supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INPP_COINS_2M	re-ICL Coinsurance In-Network Preferred Pharmacy Coinsurance for 2 month Supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INPP_COINS_3M	Pre-ICL Coinsurance In-Network Preferred Pharmacy Coinsurance for 3 month Supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INPP_COINS_OS	Pre-ICL Coinsurance In-Network Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_INPP_COINS_AVG_1M	Pre-ICL In-Network Preferred Pharmacy Average Expected Coinsurance for 1 month Supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INNPP_COINS_1M	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INNPP_COINS_2M	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INNPP_COINS_3M	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INNPP_COINS_OS	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_INNPP_COINS_AVG_1M	Pre-ICL In-Network Non-Preferred Pharmacy Average Expected Coinsurance for 1 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_OONP_COINS_1M	Pre-ICL Out-of-Network Pharmacy Coinsurance for 1 month Supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_OONP_COINS_3M	Pre-ICL Out-of-Network Pharmacy Coinsurance for 3 month Supply	NUM	8	X	-	-	-	-	-	-	-
+PRE_ICL_OONP_COINS_OS	Pre-ICL Out-of-Network Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MO_COINS_1M	Pre-ICL Mail Order Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MO_COINS_2M	Pre-ICL Mail Order Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MO_COINS_3M	Pre-ICL Mail Order Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MO_COINS_OS	Pre-ICL Mail Order Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_MOPP_COINS_1M	Pre-ICL Mail Order Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MOPP_COINS_2M	Pre-ICL Mail Order Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MOPP_COINS_3M	Pre-ICL Mail Order Preferred Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MOPP_COINS_OS	Pre-ICL Mail Order Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_MONPP_COINS_1M	Pre-ICL Mail Order Non-Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MONPP_COINS_2M	Pre-ICL Mail Order Non-Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MONPP_COINS_3M	Pre-ICL Mail Order Non-Preferred Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MONPP_COINS_OS	Pre-ICL Mail Order Non-Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_LTCP_COINS_1M	Pre-ICL Long Term Care Pharmacy Coinsurance for 1 month supply	NUM	8	-	X	X	X	X	X	-	X
+PRE_ICL_LTCP_COINS_B_1M	Pre-ICL Long Term Care Pharmacy Coinsurance for 1 month supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_LTCP_COINS_G_1M	Pre-ICL Long Term Care Pharmacy Coinsurance for 1 month supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_INP_COPAY_1M	Pre-ICL In-Network Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INP_COPAY_2M	Pre-ICL In-Network Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INP_COPAY_3M	Pre-ICL In-Network Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INP_COPAY_OS	Pre-ICL In-Network Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_INP_COPAY_DAILY	Pre-ICL In-Network Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INPP_COPAY_1M	Pre-ICL In-Network Preferred Pharmacy Copay for 1 month Supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INPP_COPAY_2M	Pre-ICL In-Network Preferred Pharmacy Copay for 2 month Supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INPP_COPAY_3M	Pre-ICL In-Network Preferred Pharmacy Copay for 3 month Supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INPP_COPAY_OS	Pre-ICL Copay In-Network Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_INPP_COPAY_DAILY	Pre-ICL Copay In-Network Preferred Pharmacy Coinsurance for one day supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INNPP_COPAY_1M	Pre-ICL In-Network Non-Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INNPP_COPAY_2M	Pre-ICL In-Network Non-Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_INNPP_COPAY_3M	Pre-ICL In-Network Non-Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_INNPP_COPAY_OS	Pre-ICL In-Network Non-Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_INNPP_COPAY_DAILY	Pre-ICL In-Network Non-Preferred Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_OONP_COPAY_1M	Pre-ICL Out-of-Network Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_OONP_COPAY_3M	Pre-ICL Out-of-Network Pharmacy Copay for 3 month supply	NUM	8	X	-	-	-	-	-	-	-
+PRE_ICL_OONP_COPAY_OS	Pre-ICL Out-of-Network Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MO_COPAY_1M	Pre-ICL Mail Order Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MO_COPAY_2M	Pre-ICL Mail Order Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MO_COPAY_3M	Pre-ICL Mail Order Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MO_COPAY_OS	Pre-ICL Mail Order Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_MO_COPAY_DAILY	Pre-ICL Mail Order Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MOPP_COPAY_1M	Pre-ICL Mail Order Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MOPP_COPAY_2M	Pre-ICL Mail Order Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MOPP_COPAY_3M	Pre-ICL Mail Order Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MOPP_COPAY_OS	Pre-ICL Mail Order Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_MOPP_COPAY_DAILY	Pre-ICL Mail Order Preferred Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MONPP_COPAY_1M	Pre-ICL Mail Order Non-Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MONPP_COPAY_2M	Pre-ICL Mail Order Non-Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_MONPP_COPAY_3M	Pre-ICL Mail Order Non-Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_MONPP_COPAY_OS	Pre-ICL Mail Order Non-Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_MONPP_COPAY_DAILY	Pre-ICL Mail Order Non-Preferred Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_LTCP_COPAY_1M	Pre-ICL Long Term Care Pharmacy Copay for 1 month supply	NUM	8	-	X	X	X	X	X	-	X
+PRE_ICL_LTCP_COPAY_DAILY	Pre-ICL Long Term Care Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	-	X
+PRE_ICL_LTCP_COPAY_B_1M	Pre-ICL Long Term Care Pharmacy Copay for 1 month supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_LTCP_COPAY_B_DAILY	Pre-ICL Long Term Care Pharmacy Copay for one day supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_LTCP_COPAY_G_1M	Pre-ICL Long Term Care Pharmacy Copay for 1 month supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_LTCP_COPAY_G_DAILY	Pre-ICL Long Term Care Pharmacy Copay for one day supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_DAYS_INP_1M	Pre-ICL In-Network Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_INP_2M	Pre-ICL In-Network Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_DAYS_INP_3M	Pre-ICL In-Network Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_INP_OS	Pre-ICL In-Network Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_DAYS_INPP_1M	Pre-ICL In-Network Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_INPP_2M	Pre-ICL In-Network Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_DAYS_INPP_3M	Pre-ICL In-Network Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_INPP_OS	Pre-ICL In-Network Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_DAYS_INNPP_1M	Pre-ICL In-Network Non-Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_INNPP_2M	Pre-ICL In-Network Non-Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_DAYS_INNPP_3M	Pre-ICL In-Network Non-Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_INNPP_OS	Pre-ICL In-Network Non-Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_DAYS_OONP_1M	Pre-ICL Out-of-Network Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_OONP_3M	Pre-ICL Out-of-Network Pharmacy - days in 3 month supply	NUM	8	X	-	-	-	-	-	-	-
+PRE_ICL_DAYS_OONP_OS	Pre-ICL Out-of-Network Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MO_1M	Pre-ICL Mail Order Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MO_2M	Pre-ICL Mail Order Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_DAYS_MO_3M	Pre-ICL Mail Order Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MO_OS	Pre-ICL Mail Order Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_DAYS_MOPP_1M	Pre-ICL Mail Order Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MOPP_2M	Pre-ICL Mail Order Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_DAYS_MOPP_3M	Pre-ICL Mail Order Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MOPP_OS	Pre-ICL Mail Order Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_DAYS_MONPP_1M	Pre-ICL Mail Order Non-Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MONPP_2M	Pre-ICL Mail Order Non-Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+PRE_ICL_DAYS_MONPP_3M	Pre-ICL Mail Order Non-Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+PRE_ICL_DAYS_MONPP_OS	Pre-ICL Mail Order Non-Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+PRE_ICL_DAYS_LTCP_1M	Pre-ICL Long Term Care Pharmacy - days in 1 month supply	NUM	8	-	X	X	X	X	X	-	X
+PRE_ICL_DAYS_LTCP_B_1M	Pre-ICL Long Term Care Pharmacy - days in 1 month supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_DAYS_LTCP_B_OS	Pre-ICL Long Term Care Pharmacy - days in other day supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_DAYS_LTCP_G_1M	Pre-ICL Long Term Care Pharmacy - days in 1 month supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+PRE_ICL_DAYS_LTCP_G_OS	Pre-ICL Long Term Care Pharmacy - days in other day supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP Tier Cost-Sharing (= ICL Phase)
+GAP_TIER_DRUG_TYPE	Gap Drug Type by Tier	CHAR	6	X	X	X	X	X	X	X	X
+GAP_TIER_PARTIAL_TYPE	Partial Gap Drug Type by Tier	CHAR	8	-	X	X	X	-	-	-	-
+GAP_COSTSHARE_TYPE	Gap Cost Share Type	CHAR	1	X	X	X	X	X	X	X	X
+GAP_INP_COINS_1M	Gap In-Network Pharmacy Coinsurance for 1 month Supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INP_COINS_2M	Gap In-Network Pharmacy Coinsurance for 2 month Supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INP_COINS_3M	Gap In-Network Pharmacy Coinsurance for 3 month Supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INP_COINS_OS	Gap In-Network Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_INP_COINS_AVG_1M	Gap In-Network Pharmacy Average Expected Coinsurance for 1 month Supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INPP_COINS_1M	Gap In-Network Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INPP_COINS_2M	Gap In-Network Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INPP_COINS_3M	Gap In-Network Preferred Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INPP_COINS_OS	Gap In-Network Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_INPP_COINS_AVG_1M	Gap In-Network Preferred Pharmacy Average Expected Coinsurance for 1 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INNPP_COINS_1M	Gap In-Network Non-Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INNPP_COINS_2M	Gap In-Network Non-Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INNPP_COINS_3M	Gap In-Network Non-Preferred Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INNPP_COINS_OS	Gap In-Network Non-Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_INNPP_COINS_AVG_1M	Gap In-Network Non-Preferred Pharmacy Average Expected Coinsurance for 1 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_OONP_COINS_1M	Gap Out-of-Network Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_OONP_COINS_3M	Gap Out-of-Network Pharmacy Coinsurance for 3 month supply	NUM	8	X	-	-	-	-	-	-	-
+GAP_OONP_COINS_OS	Gap Out-of-Network Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MO_COINS_1M	Gap Mail Order Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MO_COINS_2M	Gap Mail Order Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MO_COINS_3M	Gap Mail Order Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MO_COINS_OS	Gap Mail Order Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_MOPP_COINS_1M	Gap Mail Order Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MOPP_COINS_2M	Gap Mail Order Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MOPP_COINS_3M	Gap Mail Order Preferred Pharmacy Coinsurance for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MOPP_COINS_OS	Gap Mail Order Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_MONPP_COINS_1M	Gap Mail Order Non-Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MONPP_COINS_2M	Gap Mail Order Non-Preferred Pharmacy Coinsurance for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MONPP_COINS_3M	Gap Mail Order Non-Preferred Pharmacy Coinsurance for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MONPP_COINS_OS	Gap Mail Order Non-Preferred Pharmacy Coinsurance for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_LTCP_COINS_1M	Gap Long Term Care Pharmacy Coinsurance for 1 month supply	NUM	8	-	X	X	X	X	X	-	X
+GAP_LTCP_COINS_B_1M	Gap Long Term Care Pharmacy Coinsurance for 1 month supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_LTCP_COINS_G_1M	Gap Long Term Care Pharmacy Coinsurance for 1 month supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_INP_COPAY_1M	Gap In-Network Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INP_COPAY_2M	Gap In-Network Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INP_COPAY_3M	Gap In-Network Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INP_COPAY_OS	Gap In-Network Pharmacy Copay for for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_INP_COPAY_DAILY	Gap In-Network Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INPP_COPAY_1M	Gap In-Network Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INPP_COPAY_2M	Gap In-Network Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INPP_COPAY_3M	Gap In-Network Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INPP_COPAY_OS	Gap In-Network Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_INPP_COPAY_DAILY	Gap In-Network Preferred Pharmacy Copay for 1 day supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INNPP_COPAY_1M	Gap In-Network Non-Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INNPP_COPAY_2M	Gap In-Network Non-Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_INNPP_COPAY_3M	Gap In-Network Non-Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_INNPP_COPAY_OS	Gap In-Network Non-Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_INNPP_COPAY_DAILY	Gap In-Network Non-Preferred Pharmacy Copay for one day supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_OONP_COPAY_1M	Gap Out-of-Network Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_OONP_COPAY_3M	Gap Out-of-Network Pharmacy Copay for 3 month supply	NUM	8	X	-	-	-	-	-	-	-
+GAP_OONP_COPAY_OS	Gap Out-of-Network Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MO_COPAY_1M	Gap Mail Order Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MO_COPAY_2M	Gap Mail Order Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MO_COPAY_3M	Gap Mail Order Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MO_COPAY_OS	Gap Mail Order Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_MO_COPAY_DAILY	Gap Mail Order Pharmacy Copay for 1 day supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MOPP_COPAY_1M	Gap Mail Order Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MOPP_COPAY_2M	Gap Mail Order Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MOPP_COPAY_3M	Gap Mail Order Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MOPP_COPAY_OS	Gap Mail Order Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_MOPP_COPAY_DAILY	Gap Mail Order Preferred Pharmacy Copay for 1 day supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MONPP_COPAY_1M	Gap Mail Order Non-Preferred Pharmacy Copay for 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MONPP_COPAY_2M	Gap Mail Order Non-Preferred Pharmacy Copay for 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_MONPP_COPAY_3M	Gap Mail Order Non-Preferred Pharmacy Copay for 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_MONPP_COPAY_OS	Gap Mail Order Non-Preferred Pharmacy Copay for other days supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_MONPP_COPAY_DAILY	Gap Mail Order Non-Preferred Pharmacy Copay for 1 day supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_LTCP_COPAY_1M	Gap Long Term Care Pharmacy Copay for 1 month supply	NUM	8	-	X	X	X	X	X	-	X
+GAP_LTCP_COPAY_DAILY	Gap In-Network Preferred Pharmacy Copay for 1 day supply	NUM	8	-	-	-	-	-	-	-	X
+GAP_LTCP_COPAY_B_1M	Gap Long Term Care Pharmacy Copay for 1 month supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_LTCP_COPAY_B_DAILY	Gap Long Term Care Pharmacy Copay for 1 day supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_LTCP_COPAY_G_1M	Gap Long Term Care Pharmacy Copay for 1 month supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_LTCP_COPAY_G_DAILY	Gap Long Term Care Pharmacy Copay for 1 day supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_DAYS_INP_1M	Gap In-Network Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_INP_2M	Gap In-Network Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_DAYS_INP_3M	Gap In-Network Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_INP_OS	Gap In-Network Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_DAYS_INPP_1M	Gap In-Network Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_INPP_2M	Gap In-Network Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_DAYS_INPP_3M	Gap In-Network Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_INPP_OS	Gap In-Network Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_DAYS_INNPP_1M	Gap In-Network Non-Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_INNPP_2M	Gap In-Network Non-Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_DAYS_INNPP_3M	Gap In-Network Non-Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_INNPP_OS	Gap In-Network Non-Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_DAYS_OONP_1M	Gap Out-of-Network Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_OONP_3M	Gap Out-of-Network Pharmacy - days in 3 month supply	NUM	8	X	-	-	-	-	-	-	-
+GAP_DAYS_OONP_OS	Gap Out-of-Network Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MO_1M	Gap Mail Order Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MO_2M	Gap Mail Order Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_DAYS_MO_3M	Gap Mail Order Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MO_OS	Gap Mail Order Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_DAYS_MOPP_1M	Gap Mail Order Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MOPP_2M	Gap Mail Order Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_DAYS_MOPP_3M	Gap Mail Order Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MOPP_OS	Gap Mail Order Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_DAYS_MONPP_1M	Gap Mail Order Non-Preferred Pharmacy - days in 1 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MONPP_2M	Gap Mail Order Non-Preferred Pharmacy - days in 2 month supply	NUM	8	-	-	-	-	-	-	X	X
+GAP_DAYS_MONPP_3M	Gap Mail Order Non-Preferred Pharmacy - days in 3 month supply	NUM	8	X	X	X	X	X	X	X	X
+GAP_DAYS_MONPP_OS	Gap Mail Order Non-Preferred Pharmacy - days in other day supply	NUM	8	X	X	X	X	X	X	-	-
+GAP_DAYS_LTCP_1M	Gap Long Term Care Pharmacy - days in 1 month supply	NUM	8	-	X	X	X	X	X	-	X
+GAP_DAYS_LTCP_B_1M	Gap Long Term Care Pharmacy - days in 1 month supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_DAYS_LTCP_B_OS	Gap Long Term Care Pharmacy - days in other day supply of brand name drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_DAYS_LTCP_G_1M	Gap Long Term Care Pharmacy - days in 1 month supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+GAP_DAYS_LTCP_G_OS	Gap Long Term Care Pharmacy - days in other day supply of generic drugs	NUM	8	-	-	-	-	-	-	X	-
+Post-ICL Tier Cost-Sharing
+POST_OOPT_TIER_DRUG_TYPE	Post-Out-of-Pocket Threshold Drug Type by Tier	CHAR	6	X	X	X	X	X	X	X	X
+POST_OOPT_COSTSHARE_TYPE	Post-Out-of-Pocket Threshold Costshare Type by Tier	CHAR	1	X	X	X	X	X	X	X	X
+POST_OOPT_COINS_PCT	Post-Out-of-pocket threshold Coinsurance Percentage	NUM	8	X	X	X	X	X	X	X	X
+POST_OOPT_COPAY_AMT	Post-Out-of-Pocket Threshold Copay	NUM	8	X	X	X	X	X	X	X	X
+1 For all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); LC = length change for variable.
+2 Prior to the 2013 data release, CCW was required to encrypt these sensitive data fields.  These sensitive fields were those which could be used to identify the  the plan sponsor's contract (CONTRACT_ID) and  plan benefit package (PLAN_ID). We are no longer required to encrypt these variables.
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Plan Characteristics File - Service Area File
+Version - May 2018
+Long SAS Name	Label	Type	Length	Year of Data File
+2007 +
+CONTRACT_ID	Part D Contract Identifier 1	CHAR	5	X
+PLAN_ID	Part D Plan Benefit Package Identifier 1	CHAR	3	X
+SEGMENT_ID	Part D Market Segment Identifier	CHAR	3	X
+STATE_NAME	Part D Segment State Name	CHAR	24	X
+COUNTY_NAME	Part D Segment County Name	CHAR	30	X
+SSA_CODE	Part D Segment SSA State and County Code	CHAR	5	X
+PARTIAL_FLAG	Part D Segment Partial County Indicator	CHAR	1	X
+REGION_CODE	Part D Segment Region Code	CHAR	2	X
+REGION_NAME	Part D Segment Region Name	CHAR	120	X
+1 Prior to the 2013 data release, CCW was required to encrypt  these sensitive data fields.  These sensitive fields were those which could be used to identify the  the plan sponsor's contract (CONTRACT_ID) and  plan benefit package (PLAN_ID). We are no longer required to encrypt these variables.
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Plan Characteristics File - Plan Crosswalk File 1
+Version - May 2018
+Long SAS Name 2	Label	Type	Length
+RELATIONSHIP_CODE	Relationship Code 3	CHAR	1
+RELATIONSHIP_DESC	Relationship Description 3	CHAR	15
+2007 4
+CONTRACT_ID_07	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_07	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_06	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_06	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2008
+CONTRACT_ID_08	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_08	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_07	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_07	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2009
+CONTRACT_ID_09	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_09	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_08	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_08	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2010
+CONTRACT_ID_10	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_10	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_09	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_09	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2011
+CONTRACT_ID_11	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_11	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_10	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_10	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2012
+CONTRACT_ID_12	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_12	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_11	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_11	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2013
+CONTRACT_ID_13	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_13	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_12	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_12	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+2014
+CONTRACT_ID_14	Part D Contract Identifier for Reference Year	CHAR	5
+PLAN_ID_14	Part D Plan Benefit Package Identifier for Reference Year	CHAR	3
+CONTRACT_ID_13	Part D Contract Identifier for Previous Year	CHAR	5
+PLAN_ID_13	Part D Plan Benefit Package Identifier for Previous Year	CHAR	3
+1 Naming convention for plan and contract ID variables uses the reference year (i.e., year of the data file) and the prior year.  As a result, variable names change each year, as indicated in the record layout.
+2 The contract & plan ID variables must be used together to uniquely identify a plan sponsor's benefit package; prior to the 2013 data release, these variables were required to be encrypted.
+3 These two variables (RELATIONSHIP_CODE and RELATIONSHIP_DESC) appear in each data file.
+4 The 2007 Plan Crosswalk File maps plans in 2007 back to plans in 2006.  There is no 2006 crosswalk, since this was the first year of the Part D benefit.

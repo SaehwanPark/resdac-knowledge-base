@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p66__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 66,
+  "text": "each digit of the value indicates which tiers are on the \nformulary. \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nBinary character string, where each digit is a 1 or 0, to accommodate each tier. Each position of the \ncharacter string represents a tier. For example, if the value=0011000 (1s in the 3rd and 4th digits), \nthen cost-sharing applies to the 1st and 2nd tiers of the formulary. \n1 in 1st digit = Tier 7 \n1 in 2nd digit = Tier 1 \n1 in 3rd digit = Tier 2 \n1 in 4th digit =",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

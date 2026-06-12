@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "code (Sep) NUM 1 X X X X X X X X X X X\n88 EL_PVT_INS_CD_10 Private health insurance code (Oct) NUM 1 X X X X X X X X X X X\n89 EL_PVT_INS_CD_11 Private health insurance code (Nov) NUM 1 X X X X X X X X X X X\n90 EL_PVT_INS_CD_12 Private health insurance code (Dec) NUM 1 X X X X X X X X X X X\n91 EL_MDCR_BEN_MO_1 Medicare beneficiary code (Jan) NUM 1 X X X X X X X X X X X\n92 EL_MDCR_BEN_MO_2 Medicare beneficiary code (Feb) NUM 1 X X X X X X X X X X X\n93 EL_MDCR_BEN_MO_3 Medicare beneficiary code",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

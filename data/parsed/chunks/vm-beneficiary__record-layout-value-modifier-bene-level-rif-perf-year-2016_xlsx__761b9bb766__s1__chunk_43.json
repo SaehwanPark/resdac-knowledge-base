@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_43",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "occurred 60 Char 6 Populated only for records with Inpatient_stay=1, MSPB_episode=1, or SSP_ADM=1\nRADM30 Hospital readmission within 30 days Indicator for whether an unplanned readmission for any cause followed within 30 days from the date of hospital discharge 61 Num 8 Populated only for records with Inpatient_stay=1 or SSP_ADM=1. Equals 1 if beneficiary has unplanned readmission for any cause followed within 30 days from the date of hospital discharge. Does not apply to beneficiaries",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

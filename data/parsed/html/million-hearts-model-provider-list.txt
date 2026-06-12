@@ -1,0 +1,9 @@
+The Provider List file contains the list of all NPIs enrolled in the model, including the activation and deactivation dates.
+What does this file include? (variable highlights)
+- NPI of the Participating Provider
+- Provider First and Last Name
+- Model-Assigned Practice ID the provider is associated with
+- Practice Name
+- Practice TIN
+A record represents a provider (NPI) who is enrolled in the registry.
+The Model-Assigned Practice ID can be used to link all Million Hearts® data files for provider-oriented analytics. It does not link to other CCW provider data.

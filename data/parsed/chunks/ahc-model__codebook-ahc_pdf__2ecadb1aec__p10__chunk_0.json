@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p10__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 10,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n9 \nAHC_BRDG_ORG_ID \nLABEL: \nAHC Bridge Organization Identifier \nDESCRIPTION: Each organization participating in the AHC program was assigned an AHC bridge organization \nidentifier. \nLONG NAME: AHC_BRDG_ORG_ID \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nAHC data system \nVALUES: \nAlphanumeric character string (e.g., B05) \nCOMMENT: \nThis is an identifier assigned within the AHC data system and",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

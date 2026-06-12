@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p6__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 6,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n1 \nVariable Details \nThis section of the codebook contains one entry for each variable in the CMS Acute Hospital Care at Home (AHCAH) \ndata files. Each entry contains variable details to facilitate understanding and use of the variables. \nADMSN_DT \nLABEL: \nFacility Admission Date \nDESCRIPTION: Date of the patient’s admission to the facility.",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p263__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 263,
+  "text": "NAME: PAHP_MOS \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nManaged Care \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0–12 (Number of months) \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis variable is the number of months during the year when the monthly TAF managed care plan type \ncode (in any of the 16 possible fields; MC_PLAN_TYPE_CD_01_01–MC_PLAN_TYPE_CD_16_12) = 06 \n(Medical-only PAHP). \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "6\nBN BN Brand Name CHAR 30 X X X X X X X X X\nGNN GNN Generic Name CHAR 30 X X X X X X X X X\nSTR STR Drug Strength Description CHAR 10 X X X X X X X X X\nGCDF GCDF Dosage Form Code CHAR 2 X X X X X X X X X\nGCDF_DESC GCDF_DESC Dosage Form Code Description CHAR 40 X X X X X X X X X\n1 For all columns under \"Year of Data File\": X = variable is present; '-' indicates not present, or not populated; LC = length change for variable; VC = value change.\n2 Prior to 2015, CCW was required to encrypt or use",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p74__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 74,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n81 \nPRVDR_CLSFCTN_CD \nLABEL: \nProvider Classification Code \nDESCRIPTION: The code value from the categorization schema identified in the PRVDR_CLSFCTN_SYS data element. \nSHORT NAME: PRVDR_CLSFCTN_CD \nLONG NAME: PRVDR_CLSFCTN_CD \nTYPE: \nCHAR \nLENGTH: \n30 \nFILE(S): \nAPR Taxonomy \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nAlphanumeric character string (e.g., 70,",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

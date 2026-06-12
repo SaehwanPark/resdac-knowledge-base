@@ -43,3 +43,19 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Cause: the archive pass retried transient statuses but had no resume path, so rerunning would re-download already preserved files and increase throttling risk.
 - Resolution: reuse existing non-empty raw files when rebuilding the archive manifest, then retry only missing targets with a larger request delay.
 - Prevention: after archive throttling, inspect `_workspace/03_archive_manifest.md`, keep existing `data/raw/` files, and rerun `cms-kb-archive` with a slower delay instead of deleting outputs.
+
+### Listing-sourced assets can still belong to datasets
+
+- Context: retained KB rebuild from the checked-in ResDAC archive snapshot.
+- Symptom: metadata extraction returned failures for archived PDF assets whose manifest `source_url` pointed to a listing page.
+- Cause: the assets were linked from archived dataset pages, but the inventory row kept the listing page as the immediate source.
+- Resolution: resolve asset-to-dataset ownership by scanning archived dataset-page links when manifest `source_url` is not a dataset page.
+- Prevention: when extraction reports "document source is not linked to a dataset page", search archived dataset HTML for the asset URL before treating it as orphaned.
+
+### XLSX assets are first-class parse inputs
+
+- Context: retained KB rebuild after metadata extraction included XLSX document rows.
+- Symptom: parsing wrote HTML/PDF chunks but exited nonzero with unsupported `xlsx` document kind failures.
+- Cause: the checked-in archive includes spreadsheet record layouts, and parsing originally handled only HTML and PDF documents.
+- Resolution: parse XLSX files from workbook XML/shared strings with the Python standard library and write parsed text plus chunks.
+- Prevention: include `data/parsed/xlsx/` in parsed artifact checks and rerun `cms-kb-parse` after changing document-kind support.

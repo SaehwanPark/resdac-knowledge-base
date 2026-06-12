@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n13 \nHISTOLOGY \nLABEL: \nHistology \nDESCRIPTION: Histology. \nSHORT NAME: HISTOLOGY \nLONG NAME: HISTOLOGY \nTYPE: \nCHAR \nLENGTH: \n30 \nFILE(S): \nClinical and staging \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \nAdenocarcinoma \nAdenocarcinoma, NOS \nCarcinoma, NOS \nInflammatory \nNSCLC - Adenocarcinoma \nNSCLC - Large Cell \nNSCLC - Squamous Cell \nNon-small cell carcinoma",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

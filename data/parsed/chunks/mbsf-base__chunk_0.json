@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__chunk_0",
+  "source_document": "data/raw/html/dataset_page/bc037fe7a91d939c1551aec399d84c3e4d69bc38.html",
+  "page": null,
+  "text": "The Master Beneficiary Summary File (MBSF) Base A/B/C/D file includes beneficiary enrollment information, (A/B/C/D). Medicare Advantage (Part C) and the Prescription Drug Program (Part D) plan enrollment information is included.\nWhat does this file include? (variable highlights)\n- State, county annual SSA codes\n- State, county monthly FIPS codes\n- Zip code, State and County\n- Date of birth, date of death\n- Race\n- Reason for entitlement\n- Monthly enrollment for each part of the Medicare program,",
+  "dataset": "mbsf-base",
+  "url": "https://resdac.org/cms-data/files/mbsf-base"
+}

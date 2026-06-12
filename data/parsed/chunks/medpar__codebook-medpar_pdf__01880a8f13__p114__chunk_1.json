@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p114__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 114,
+  "text": "LONG NAME: GHO_PD_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = Yes, paid by GHO/MCO \nNull/missing = Not paid by GHO/MCO \nCOMMENT: \nThis field comes from the GHO-paid (aka MCO paid) indicator that is present on the first claim record \nincluded in the stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

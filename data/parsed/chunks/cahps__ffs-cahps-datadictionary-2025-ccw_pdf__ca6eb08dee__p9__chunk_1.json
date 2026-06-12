@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p9__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 9,
+  "text": "& you) \n$ID_F \nsa_snp_type \nPart d special needs plan type \n$SNP \nsa_sex \nSex of beneficiary \n$SEXF \nsa_region \nRegion defined using sa_st_abbr/sa_fips_state \nRGN \nsa_race \nBeneficiary race \n$RACEF \nsa_ptdpbp \nPart d plan id \nsa_ptdcntrct \nPart d health plan id \nsa_ptd_type \nPart d plan type \n$PBT \nsa_ptd_snp \nPart d special needs plan \n$ID_F \nsa_ptd_prm_c \nPart d premium range \n$PRM \nsa_ptabpbp \nPart a-b plan id \nsa_ptabcntrct \nPart a-b health plan id \nsa_ptab_type \nPart a-b plan type \n$PBT",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

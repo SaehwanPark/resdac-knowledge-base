@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p101__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 101,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n85 \nEMER _USE_SW \nLABEL: \nEmergency Use Switch \nDESCRIPTION: This variable indicates that the service was provided as part of an emergency use authorization (EUA). \nSHORT NAME: EMER_USE_SW \nLONG NAME: EMER_USE_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH (derived) \nVALUES: \nY = Yes \nN = No \nCOMMENT: \nThis field was new in 2021. \nThis field is derived when the condition code (CLM RLT COND CD) is equal",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

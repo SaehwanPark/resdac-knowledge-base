@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_310",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "1=Mild\n 2=Moderate\n 3=Severe\n 4=Very severe, horrible\n 9=Unable to answer\n343 J0700_STF_CNDCT_PAIN_ASMT_CD J0700_STF_CNDCT_PAIN_ASMT_CD J0700 Staff Conduct Pain Assessment Code CHAR 1 The data in this column indicates whether staff should perform a pain assessment. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n344 J0800A_NVRBL_SND_CD J0800A_NVRBL_SND_CD J0800A Staff Assessment for Pain: Nonverbal Sound Code CHAR 1 The data in this column indicates whether the resident had",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

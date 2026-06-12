@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p108__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 108,
+  "text": "corresponding provider \nidentification number (performing NPI). \nSHORT NAME: PRVDR_SPCLTY \nLONG NAME: PRVDR_SPCLTY \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nCarrier line \nDME line \nVALUES: \n\n01 = \nGeneral practice \n02 = \nGeneral surgery \n03 = \nAllergy/immunology \n04 = \nOtolaryngology \n05 = \nAnesthesiology \n06 = \nCardiology \n07 = \nDermatology \n08 = \nFamily practice \n09 = \nInterventional Pain \nManagement (IPM) \n10 = \nGastroenterology \n11 = \nInternal",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

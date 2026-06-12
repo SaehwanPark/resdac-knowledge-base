@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Code XIII Diagnosis Present on Admission Indicator Code CHAR 1 96\nICD_DGNS_CD14 ICD_DGNS_CD14 Claim Diagnosis Code XIV CHAR 7 97\nCLM_POA_IND_SW14 CLM_POA_IND_SW14 Claim Diagnosis Code XIV Diagnosis Present on Admission Indicator Code CHAR 1 98\nICD_DGNS_CD15 ICD_DGNS_CD15 Claim Diagnosis Code XV CHAR 7 99\nCLM_POA_IND_SW15 CLM_POA_IND_SW15 Claim Diagnosis Code XV Diagnosis Present on Admission Indicator Code CHAR 1 100\nICD_DGNS_CD16 ICD_DGNS_CD16 Claim Diagnosis Code XVI CHAR 7",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

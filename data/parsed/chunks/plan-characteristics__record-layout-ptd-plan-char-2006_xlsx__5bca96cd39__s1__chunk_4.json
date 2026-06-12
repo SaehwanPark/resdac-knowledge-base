@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "Care Retirement Community\n39 ESRD II\n10 demo_type Demo Type Char 1 This variable describes the type of Part D demonstration organization for contracts that are offered as such. 0 Non-Demo\n1 CCRC Demo\n2 ESRDII Demo\n3 MA Health Senior Care Options\n4 Minnesota Disability Health Options\n5 Minnesota Senior Health Options\n6 SHMO\n7 SHMO II\n8 Wisconsin Partnership Program\n11 reinsurance_demo_type Part D Reinsurance Demo Type Char 1 This variable describes the type of Part D payment reinsurance",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

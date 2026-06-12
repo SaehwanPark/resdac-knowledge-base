@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p299__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 299,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n279 \nTP_PD_AMT \nLABEL: \nTotal Third-Party Liability Paid Amount \nDESCRIPTION: Third-Party Liability (TPL) refers to the legal obligation of third parties (i.e., certain individuals, entities, \nor programs), to pay all or part of the expenditures for medical assistance furnished under a state \nplan. \nSHORT NAME: TP_PD_AMT \nLONG NAME: TP_PD_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

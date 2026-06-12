@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p121__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 121,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n103 \nCLM_PPS_CPTL_DRG_WT_NUM \nLABEL: \nClaim PPS Capital DRG Weight Number \nDESCRIPTION: The number used to determine a transfer adjusted case mix index for capital, under the prospective \npayment system (PPS). The number is determined by multiplying the Diagnosis Related Group Code \n(DRG) weight times the discharge fraction. \nMedicare assigns a weight to each DRG to reflect",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

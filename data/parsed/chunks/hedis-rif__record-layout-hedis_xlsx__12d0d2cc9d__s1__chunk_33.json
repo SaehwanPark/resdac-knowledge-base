@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Antidepressnts Antipsychotics or Sleep Agnts NUM 3 61 55 97 — —\nDDE_DNMTR_2_DMNT_ANTDPRST_IND DDE Denominator 2: Dementia + Tricyclic Antidepressants or Anticholineric Agents NUM 3 62 56 98 — —\nDDE_NMRTR_2_DMNT_ANTDPRST_IND DDE Numerator 2: Dementia + Tricyclic Antidepressants or Anticholineric Agents NUM 3 63 57 99 — —\nDDE_DNMTR_3_CKD_NSAID_IND DDE Dnmtr 3: Chronic Kidney Disease+Nonaspirin NSAIDs or Cox2 Selective NSAIDs NUM 3 64 58 100 — —\nDDE_NMRTR_3_CKD_NSAID_IND DDE Nmrtr 3: Chronic",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

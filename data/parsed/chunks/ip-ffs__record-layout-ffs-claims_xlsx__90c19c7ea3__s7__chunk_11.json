@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_11",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "CHAR 12 48\nCCLTRNUM CLM_CLNCL_TRIL_NUM Clinical Trial Number CHAR 8 49\nDOB_DT DOB_DT Date of Birth from Claim DATE 8 50\nRACE_CD BENE_RACE_CD Race Code from Claim CHAR 1 51\nCNTY_CD BENE_CNTY_CD County Code from Claim (SSA) CHAR 3 52\nSTATE_CD BENE_STATE_CD Beneficiary Residence (SSA) State Code CHAR 2 53\nZIP_CD BENE_MLG_CNTCT_ZIP_CD ZIP Code of Residence from Claim CHAR 9 54\nACO_ID_NUM ACO_ID_NUM Claim Accountable Care Organization (ACO) Identification Number CHAR 10 56\nCLM_BENE_ID_TYPE_CD",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

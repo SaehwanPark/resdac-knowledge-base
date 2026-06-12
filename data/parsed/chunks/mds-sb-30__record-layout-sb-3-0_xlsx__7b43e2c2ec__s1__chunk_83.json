@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_83",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "pattern) discontinued 09/30/2016\n117 D0100_CNDCT_MOOD_CD D0100_CNDCT_MOOD_CD D0100 Resident Mood Interview Be Conducted Code CHAR 1 The data in this column indicates whether the resident mood interview should be conducted. -=Not assessed/no information\n0=No(resident is rarely/never understood)\n1=Yes\n^=Blank(skip pattern)\n118 D0200A1_INTRST_LOSS_CD D0200A1_INTRST_LOSS_CD D0200A1 Resident Mood Interview - Interest Loss Code CHAR 1 The data in this column indicates if the resident experienced a",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

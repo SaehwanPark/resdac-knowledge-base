@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-beneficiary-demographic__chunk_1",
+  "source_document": "data/raw/html/dataset_page/e482880f2eb8288d4e13995dba93d25264eda7c6.html",
+  "page": null,
+  "text": "record for each beneficiary. It’s possible for the same beneficiary to appear in the file twice, if two or more organizations tried to enroll the same beneficiary.\nWhat does this file include? (variable highlights)\n- Beneficiary ID\n- Model-Assigned Patient ID\n- Patient Date of Birth\n- Patient Sex\n- Patient Race\n- Patient Ethnicity\nA record represents a single beneficiary. Some beneficiaries may have more than one record if more than one organization tried to enroll them in the trial.\nThe Unique",
+  "dataset": "million-hearts-model-beneficiary-demographic",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-beneficiary-demographic?page=1"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \niii \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nMay 2025 \nK. Schneider \n\n• Removed values to comply with NUBCTM licensing for: \no CLM_IP_ADMSN_TYPE_CD \no CLM_RLT_COND_CD \no CLM_RLT_OCRNC_CD \no CLM_SPAN_CD \no CLM_SRC_IP_ADMSN_CD \no CLM_VAL_CD \no PTNT_DSCHRG_STUS_CD \no REV_CNTR \n• Variable was removed because beneficiary sex is available in \nthe Master Beneficiary Summary File",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__data-documentation__856a7e4838__chunk_2",
+  "source_document": "data/raw/html/documentation_page/856a7e4838643c566306030b513d1693d008b4c5.html",
+  "page": null,
+  "text": "or Medicaid only enrollee | \n| DEATH_DT | Date of Death | \n| NDI_DOD | NDI Date of Death | \n| NDI_MATCH | Death confirmed through NDI match | \n| NDI_STATE_DEATH_CD | NDI State of Death | \n| DEATH_CERT_NUM | NDI Death Certificate Number | \n| ICD_CODE | ICD-10 Code | \n| ICD_TITLE | ICD-10 Code Description | \n| ICD_CODE_358 | 358 ICD-10 Cause of Death Recodes | \n| ICD_CODE_113 | 113 ICD-10 Cause of Death Recodes | \n| ICD_CODE_130 | 130 ICD-10 Cause of Death Recodes | \n| ENTITY_COND_1 (through",
+  "dataset": "mesf-ndi",
+  "url": "https://resdac.org/cms-data/files/mesf-ndi/data-documentation"
+}

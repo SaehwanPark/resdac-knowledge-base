@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "cost shares are applied Char 1 Indicates how plan charges cost sharing before the Initial Coverage Limit (ICL) is reached. 1 25% coinsurance amount *2006 value definitions are different than 2007 value definitions.\n2 One or more groups of cost sharing\n3 No cost sharing\n22 icl_apply How ICL is applied Char 1 Indicates whether plan applies the Medicare-defined Part D Initial Coverage Limit (ICL) Amount. 1 Medicare-defined amount\n2 Plan-defined amount\n3 No ICL\n23 icl_amt ICL Amount Num 12 Dollar",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

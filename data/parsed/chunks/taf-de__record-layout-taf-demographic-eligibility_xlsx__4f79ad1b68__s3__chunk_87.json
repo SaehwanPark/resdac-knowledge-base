@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s3__chunk_87",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 3,
+  "text": "- September CHAR 2 406\nMC_PLAN_TYPE_CD_16_10 Managed Care Plan Type Code (16th Occurrence) - October CHAR 2 407\nMC_PLAN_TYPE_CD_16_11 Managed Care Plan Type Code (16th Occurrence) - November CHAR 2 408\nMC_PLAN_TYPE_CD_16_12 Managed Care Plan Type Code (16th Occurrence) - December CHAR 2 409\nRFRNC_YR Reference Yr CHAR 4 410\n1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

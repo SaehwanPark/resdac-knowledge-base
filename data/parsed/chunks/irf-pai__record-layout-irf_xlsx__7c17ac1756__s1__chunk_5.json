@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "that are taken from Item 39 on the IRF-PAI form.\n9 CLMTSCTX CALCTD_MOTOR_SCALE_TXT Calculated Motor Scale Code CHAR 5 A preliminary calculation made prior to determining the CMG group. The motor score is based upon 12 variables that are taken from Item 39 on the IRF-PAI form.\n10 ORGASIID ORGNL_ASMT_INT_ID Encrypted D189Original Assessment Internal ID CHAR 10 Original version (ASMT INT ID) of this assessment where Correction Number is 00.\n11 PRVNTRNO PRVDR_INT_NUM Provider Internal Number CHAR",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_326",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "sufficient - parallel bars used. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n549 T3 T3MCARE_CALC_RUG (T3) Medicare Calculated RUG CHAR 5 Multistate supplement: Medicare Case Mix Group. Medicare RUG value calculated by state system.\n550 VA01A VA01A_DELIURIUM_TR (VA01A) Delirium Triggered CHAR 1 RAP summary: delirium - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n551 VA01B VA01B_DELIURIUM_PC (VA01B) Delirium Care Planning Decision CHAR 1 RAP summary:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

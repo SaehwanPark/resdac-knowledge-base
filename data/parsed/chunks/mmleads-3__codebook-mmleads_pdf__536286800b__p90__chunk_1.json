@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p90__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 90,
+  "text": "Code — January–December (01–12) \nDESCRIPTION: This variable is the monthly Medicare and Medicaid dual enrollment status variable. There are \nseparate variables for each of the 12 months during the year. \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nMedicare MBSF \nVALUES: \n00 = Medicare beneficiary not enrolled in Medicare for the month \n01 = Qualified Medicare Beneficiary (QMB)-only \n02 = QMB and full Medicaid coverage, including prescription drugs \n03 = Specified Low-Income Medicare Beneficiary",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

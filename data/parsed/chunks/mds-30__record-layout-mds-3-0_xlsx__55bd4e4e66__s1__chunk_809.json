@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_809",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "If activity was not attempted, code reason:\n07=Resident refused\n09=Not applicable \n10=Not attempted due to environmental limitations (e.g., lack of equipment, weather constraints)\n88=Not attempted due to medical condition or safety concerns effective 10/01/2023\n899 ROLL_INTRM_CD ROLL_INTRM_CD GG0170A5 Roll left and right (Interim Perf) CHAR 2 The data in this column indicates the resident's ability to roll left and right during this assessment period plus two previous calendar days.",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

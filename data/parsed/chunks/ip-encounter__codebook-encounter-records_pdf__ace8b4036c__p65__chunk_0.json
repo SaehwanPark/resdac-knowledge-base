@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p65__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 65,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n55 \nCLM_SUBSCR_USPS_STATE_CD \nLABEL: \nMedicare Subscriber Address – USPS State Code \nDESCRIPTION: This variable is the Medicare subscriber’s 2-character United States Postal Service (USPS) state code \nabbreviation, as submitted on the encounter record. \nSHORT NAME: CLM_SUBSCR_USPS_STATE_CD \nLONG NAME: CLM_SUBSCR_USPS_STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nMedicare Advantage",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

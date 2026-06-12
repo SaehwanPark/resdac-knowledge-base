@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p296__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 296,
+  "text": "liability minus previous \nbeneficiary payments that went toward their deductible. Do not subtract out any payments for the \ngiven claim that went toward the deductible. \nSHORT NAME: TOT_BENE_DDCTBL_LBLTY_AMT \nLONG NAME: TOT_BENE_DDCTBL_LBLTY_AMT \nTYPE: \n\nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES: \nDollar amount with two decimal places (e.g., 98.76) \nCOMMENT: \nThis field is new, starting with the 2023 service year.",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

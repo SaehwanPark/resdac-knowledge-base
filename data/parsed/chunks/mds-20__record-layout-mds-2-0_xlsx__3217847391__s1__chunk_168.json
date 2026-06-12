@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_168",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- hand - including wrist or fingers - voluntary movement.. 0 = No Loss, 1 = Partial Loss, 2 = Full Loss, \"-\" = Unknown.\n236 G4DA G4DA_LEG_RANGE (G4DA) Leg Range of Motion CHAR 1 Physical functioning and structural problems: functional limitation in range of motion in last 7 days - leg - includig hip or knee - range of motion. 0 = No Limitation, 1 = Limitation on one side, 2 = Limitation on both sides, \"-\" = Unknown.\n237 G4DB G4DB_LEG_MOVE (G4DB) Leg Voluntary Movement CHAR 1 Physical",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

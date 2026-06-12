@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p219__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 219,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n205 \nPOST_OOPT_APPLY \nLABEL: \nHow Post Out-of-Pocket (OOP) Threshold Cost-Sharing is applied in the Part D Plan \nDESCRIPTION: This variable Indicates how the Part D plan applies beneficiary cost-sharing once the beneficiary has \nreached the Medicare-defined Part D annual Out-of-Pocket (OOP) Cost Threshold (i.e., in catastrophic \ncoverage phase). \nTYPE: \nCHAR \nLENGTH: \n1",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

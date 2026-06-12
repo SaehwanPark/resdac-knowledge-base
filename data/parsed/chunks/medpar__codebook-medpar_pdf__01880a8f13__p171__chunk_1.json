@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p171__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 171,
+  "text": "SOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge amount (REV-CNTR-TOT-CHRG-\nAMT) associated with revenue center codes (REV CNTR CD) '0360', '0361', '0362', '0363', '0364', '0365', \n'0366', '0367', '0368' and '0369', '0710', '0711', '0712', '0713', '0714', '0715', '0717', '0718' and '0719' \nfrom all claim records included in the stay. \nThis field was new in 2011. \nNote that the sum of this field and the labor room and",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

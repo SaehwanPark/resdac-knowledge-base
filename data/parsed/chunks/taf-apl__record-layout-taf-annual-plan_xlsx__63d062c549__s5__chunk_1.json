@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s5__chunk_1",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 5,
+  "text": "20 4\nMC_PLAN_OPRTG_AUTHRTY_CD Managed Care Plan Operating Authority Code CHAR 2 5\nMC_PLAN_OPRTG_AUTH_ACTV_IND_01 Managed Care Plan Operating Authority and/or Waiver ID Active Ind - January CHAR 1 6\nMC_PLAN_OPRTG_AUTH_ACTV_IND_02 Managed Care Plan Operating Authority and/or Waiver ID Active Ind - February CHAR 1 7\nMC_PLAN_OPRTG_AUTH_ACTV_IND_03 Managed Care Plan Operating Authority and/or Waiver ID Active Ind - March CHAR 1 8\nMC_PLAN_OPRTG_AUTH_ACTV_IND_04 Managed Care Plan Operating Authority",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

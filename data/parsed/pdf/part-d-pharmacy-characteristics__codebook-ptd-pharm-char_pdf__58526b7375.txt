@@ -1,0 +1,1272 @@
+Chronic Condition Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Condition Warehouse 
+CODEBOOK: 
+Medicare Part D Pharmacy Characteristics 
+APRIL 2021 │ VERSION 1.1 
+
+
+  
+This page intentionally left blank. 
+
+
+  
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+April 2021 
+K. Schneider 
+D. Happe 
+Migrated codebook to the 2020 document template 
+1.1 
+May 2017 
+K. Schneider 
+C. Alleman 
+Initial release of codebook  
+1.0 
+
+
+  
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Part D Pharmacy Characteristics research files. 
+Because the files have many variables, we have included several ways for users to quickly find the information they 
+need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used. 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents. 
+
+
+  
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:  
+ 
+Variable Details............................................................................................................................................................. 1 
+CCW_PHARM_ID ...................................................................................................................................................... 1 
+DISPENSER_CLASS .................................................................................................................................................... 2 
+DME_SRVC_CD ......................................................................................................................................................... 3 
+DME_SRVC_IND ........................................................................................................................................................ 4 
+EPRSCRB_SRVC_CD ................................................................................................................................................... 5 
+EPRSCRB_SRVC_IND ................................................................................................................................................. 6 
+IMMUNIZATIONS_CD................................................................................................................................................ 7 
+IMMUNIZATIONS_IND .............................................................................................................................................. 8 
+NCPDP_ID ................................................................................................................................................................. 9 
+PHYSICAL_LOCATION_CLOSE_DATE ........................................................................................................................ 10 
+PHYSICAL_LOCATION_OPEN_DATE ......................................................................................................................... 11 
+PHYSICAL_LOCATION_STATE_CODE ........................................................................................................................ 12 
+PREV_CCW_PHARM_ID .......................................................................................................................................... 13 
+PRIMARY_DISPENSER_TYPE .................................................................................................................................... 14 
+PRIMARY_TAXONOMY_CODE ................................................................................................................................. 16 
+PRNT_ORG_ID ........................................................................................................................................................ 17 
+RELATIONSHIP_FROM_DT....................................................................................................................................... 18 
+RELATIONSHIP_ID ................................................................................................................................................... 19 
+RELATIONSHIP_THRU_DT ....................................................................................................................................... 20 
+RELATIONSHIP_TYPE ............................................................................................................................................... 21 
+SECONDARY_DISPENSER_TYPE ............................................................................................................................... 22 
+SECONDARY_TAXONOMY_CODE ............................................................................................................................ 24 
+STATUS_340B_CD ................................................................................................................................................... 25 
+STATUS_340B_IND ................................................................................................................................................. 26 
+TERTIARY_DISPENSER_TYPE.................................................................................................................................... 27 
+TERTIARY_TAXONOMY_CODE ................................................................................................................................. 29 
+WALKIN_CLINIC_CD ................................................................................................................................................ 30 
+WALKIN_CLINIC_IND............................................................................................................................................... 31 
+ 
+ 
+ 
+A B C D E 
+F 
+G H 
+I 
+J 
+K 
+L 
+M N O P Q R S 
+T U V W X 
+Y 
+Z 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Part D Pharmacy Characteristics file. Each 
+entry contains variable details to facilitate understanding and use of the variables. 
+CCW_PHARM_ID 
+LABEL: 
+CCW-assigned Pharmacy Identifier 
+DESCRIPTION: This is the CCW-assigned pharmacy identification number used to uniquely identify pharmacy entities. 
+The ID is specific to the CCW and not applicable to any other identification system or data source.  
+This field also enables linkage between pharmacies in the Part D Event file and the CCW Pharmacy 
+Characteristics file.  
+SHORT NAME:  — 
+LONG NAME:  CCW_PHARM_ID 
+TYPE: 
+NUM 
+LENGTH:  
+12 
+SOURCE: 
+PDE and NCDPD DataQ™ (derived) 
+VALUES: 
+Null/missing, or a 5-digit numeric value 
+COMMENT: 
+This variable is only available 2006–2013. Investigators who wish to obtain Pharmacy Characteristics 
+files must choose between the pharmacy IDs on the PDE (variable called the service provider ID 
+[SRVC_PRVDR_ID]), or the CCW_PHARM_ID (or, starting in 2014, the proprietary NCPDP_ID) that will 
+allow linkage between the PDE and Pharmacy Characteristics Files. 
+Beginning with 2014 data, the NCPDP_ID is used in place of the CCW_PHARM_ID. Researchers who 
+received CCW data from 2006–2013 and wish to identify the NCPDP_ID associated with the 
+CCW_PHARM_ID may request the “Pharmacy Bridge File”, which is designed for this purpose. 
+This variable is populated by linking the service provider identification number (SRVC_PRVDR_ID) from 
+the source PDE to the proprietary National Council for Prescription Drug Programs (NCPDP) Database. 
+The variable is populated for every PDE that could be linked to the NCPDP pharmacy data for that 
+year, and will occasionally be null if there was no conclusive link between the service provider 
+identification number in the source PDE data and the provider identification numbers in the NCPDP 
+pharmacy data. 
+This variable usually represents a unique pharmacy entity, which historically was a retail store. 
+However, as the pharmacy industry has evolved, some retail stores have added other lines of business, 
+such as filling prescriptions for long-term care facilities. In these cases, the pharmacy can ask NCPDP to 
+issue them more than one identification number to keep the billing separate for their multiple lines of 
+business. 
+Additional details regarding the NCPDP source data are available at: http://dataq.ncpdp.org/. 
+ 
+ ^ Back to TOC ^ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+2 
+DISPENSER_CLASS 
+LABEL: 
+Part D Dispenser Class Code 
+DESCRIPTION: This variable describes the class of pharmacy that filled the prescription. The dispenser class code is 
+self-designated by pharmacies to NCPDP and is not related to taxonomy codes. 
+SHORT NAME:  — 
+LONG NAME:  DISPENSER_CLASS 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+NCDPD DataQ™  
+VALUES: 
+01 = Independent pharmacy, defined as one to three pharmacies under common ownership. 
+02 = Chain pharmacy, defined as part of a group of four or more pharmacies under common 
+ownership. Pharmacies may or may not share the same Federal Tax ID number.  
+05 = Franchise pharmacy, defined as an independently owned pharmacy that has signed a franchise 
+agreement with a franchisor wherein the franchisee receives services such as training, marketing, 
+and other support from the franchisor in exchange for a franchise fee to the franchisor. A 
+franchisee often includes the franchisor’s name as part of the store name.  
+06 = Government pharmacy, defined as a pharmacy under the jurisdiction of federal, state, county or 
+city government, or the Indian Health Service. This includes military pharmacies within or outside 
+the United States.  
+07 = Alternate dispensing site, defined as a pharmacy or dispensing site that does not fit into the four 
+classes above. This includes mail service pharmacies, institutional and hospital pharmacies, most 
+clinic pharmacies and non-pharmacy dispensing sites.  
+Null = Unknown/missing 
+COMMENT: 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+3 
+DME_SRVC_CD 
+LABEL: 
+Code Indicating the DME Services Offered 
+DESCRIPTION: For pharmacies that indicated they offer some level of durable medical equipment (DME) (reference 
+variable called DME_SRVC_IND), this variable identifies the type of DME services offered.  
+SHORT NAME:  — 
+LONG NAME:  DME_SRVC_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+13 = Site does not offer durable medical equipment (DME) 
+14 = Site provides off-the-shelf non-custom DME but is not accredited 
+15 = Site provides a full range of DME including custom items but is not accredited 
+16 = Site is accredited to provide DME limited to pharmaceuticals and diabetic testing supplies 
+17 = Site is accredited to provide DME limited to off-the-shelf non-custom products and 
+pharmaceuticals 
+18 = Site is accredited to provide a full range of DME including custom items and pharmaceuticals 
+Null/missing = This information has not been reported by the pharmacy.  
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+4 
+DME_SRVC_IND 
+LABEL: 
+DME Services Indicator 
+DESCRIPTION: This variable is an indicator as to whether or not the pharmacy offers some level of durable medical 
+equipment (DME).  
+SHORT NAME:  — 
+LONG NAME:  DME_SRVC_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+Y = Yes, pharmacy offers DME 
+N = No, pharmacy does not offer DME 
+Null/missing = This information has not been reported by the pharmacy.  
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+5 
+EPRSCRB_SRVC_CD 
+LABEL: 
+Code Indicating the E-Prescribing Services Offered 
+DESCRIPTION: For pharmacies that indicated they offer e-prescribing (reference variable called EPRSCRB_SRVC_IND), 
+this variable identifies the type of e-prescribing transactions offered. 
+SHORT NAME:  — 
+LONG NAME:  EPRSCRB_SRVC_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+01 = Site does not accept NCPDP SCRIPT Transactions 
+02 = Site accepts NCPDP SCRIPT Transactions 
+Null/missing = This information has not been reported by the pharmacy.  
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+6 
+EPRSCRB_SRVC_IND 
+LABEL: 
+E-Prescribing Services Indicator 
+DESCRIPTION: This variable is an indicator as to whether or not the pharmacy accepts electronic prescriptions 
+(computer to computer).  
+SHORT NAME:  — 
+LONG NAME:  EPRSCRB_SRVC_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+Y = Yes, pharmacy offers e-prescribing. 
+N = No, pharmacy does not offer e-prescribing. 
+Null/missing = This information has not been reported by the provider.  
+COMMENT: 
+This variable is new in 2012. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+7 
+IMMUNIZATIONS_CD 
+LABEL: 
+Code Indicating the Level of Immunization Services Offered 
+DESCRIPTION: For pharmacies that indicated they offer some level of immunizations (reference variable called 
+IMMUNIZATIONS_IND), this variable identifies the level of Immunization services offered.  
+SHORT NAME:  — 
+LONG NAME:  IMMUNIZATIONS_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+31 = Site does not offer on-site immunization services 
+32 = Site offers immunization services at select dates and times 
+33 = Site offers immunization services without appointment during business hours 
+Null/missing = This information has not been reported by the pharmacy  
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+8 
+IMMUNIZATIONS_IND 
+LABEL: 
+Immunization Services Indicator 
+DESCRIPTION: This variable is an indicator as to whether or not the pharmacy offers some level immunizations on-
+site.  
+SHORT NAME:  — 
+LONG NAME:  IMMUNIZATIONS_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+Y = Yes, pharmacy offers immunizations  
+N = No, pharmacy does not offer immunizations  
+Null/missing= This information has not been reported by the pharmacy 
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+9 
+NCPDP_ID 
+LABEL: 
+NCPDP Pharmacy Identifier 
+DESCRIPTION: This is the unique, national identification number assigned by the National Council for Prescription 
+Drug Programs (NCPDP) to every licensed pharmacy in the United States and its territories.  
+This field also enables linkage between pharmacies in the Part D Event (PDE) File and the CCW 
+Pharmacy Characteristics File. 
+SHORT NAME:  — 
+LONG NAME:  NCPDP_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+7 
+SOURCE: 
+PDE and NCDPD DataQ™  
+VALUES: 
+Null/missing 
+5-digit numeric value 
+COMMENT: 
+This variable was new in 2014. Beginning with 2014 data, the NCPDP_ID is used in place of the 
+CCW_PHARM_ID in the Part D Pharmacy Characteristics File. Researchers who received CCW data 
+from 2006–2013 and wish to identify the NCPDP_ID associated with the CCW_PHARM_ID may request 
+the “Pharmacy Bridge File,” which is designed for this purpose. 
+Investigators who wish to obtain Pharmacy Characteristics files must choose between the pharmacy 
+IDs on the PDE (variable called the service provider ID [SRVC_PRVDR_ID]), or the proprietary 
+NCPDP_ID that will allow linkage between the PDE and Pharmacy Characteristics Files. 
+The NCPDP_ID variable is populated by linking the service provider identification number 
+(SRVC_PRVDR_ID) from the source PDE to the proprietary National Council for Prescription Drug 
+Programs (NCPDP) Database. The variable is populated for every PDE that can be linked to the NCPDP 
+pharmacy data for that year, and will occasionally be null if there was no conclusive link between the 
+service provider identification number in the source PDE data and the provider identification numbers 
+in the NCPDP pharmacy data. Within the NCPDP database, this ID used to be called the NABP Number. 
+NCPDP also enumerates licensed Alternate Dispensing Sites and Durable Medical Equipment (DME) 
+Providers. 
+This variable usually represents a unique pharmacy entity, which historically was a retail store. 
+However, as the pharmacy industry has evolved, some retail stores have added other lines of business, 
+such as filling prescriptions for long-term care facilities. In these cases, the pharmacy can ask NCPDP to 
+issue them more than one identification number to keep the billing separate for their multiple lines of 
+business. 
+Additional details regarding the NCPDP source data are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+10 
+PHYSICAL_LOCATION_CLOSE_DATE 
+LABEL: 
+Physical Location of Pharmacy Closure Date 
+DESCRIPTION: The last day of business for the pharmacy at this location, as reported to NCPDP. This variable is 
+populated with dates only for stores that have closed or are planning to close. The date may not 
+correspond with the year of the data file. 
+SHORT NAME:  — 
+LONG NAME:  PHYSICAL_LOCATION_CLOSE_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+MMDDYYYY (e.g., 11/28/2017), or null/missing (close date n/a)— 
+COMMENT: 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+11 
+PHYSICAL_LOCATION_OPEN_DATE 
+LABEL: 
+Physical Location of Pharmacy Open Date 
+DESCRIPTION: The date the pharmacy opened at this location, as reported by the pharmacy to NCPDP. 
+SHORT NAME:  — 
+LONG NAME:  PHYSICAL_LOCATION_OPEN_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+NCDPD DataQ™  
+VALUES: 
+MMDDYYYY (e.g., 11/28/2006) 
+COMMENT: 
+This variable (the store open date) is missing for 72% of the pharmacies, and a default of date of 
+1/1/1990 may appear when the date was not specified; this is self-reported data from pharmacies. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+12 
+PHYSICAL_LOCATION_STATE_CODE 
+LABEL: 
+Physical Location of Pharmacy State Code 
+DESCRIPTION: The state where the pharmacy is physically located, using the standard two-character postal state 
+code. 
+SHORT NAME:  —  
+LONG NAME:  PHYSICAL_LOCATION_STATE_CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+NCDPD DataQ™  
+VALUES: 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+GU = Guam 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC = North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+XX = Unknown 
+Null/missing = Unable to link PDE 
+pharmacy id to NCPDP database 
+COMMENT: 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+ ^ Back to TOC ^ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+13 
+PREV_CCW_PHARM_ID 
+LABEL: 
+Previous Owner CCW Pharmacy identifier 
+DESCRIPTION: This variable is the CCW-assigned pharmacy identification number that is used to uniquely identify 
+pharmacy entities. This variable is only populated if the pharmacy ownership changed in the reference 
+year and the new owner did not keep the same pharmacy identifiers as the previous owner. This 
+variable allows linkage of records in this file that are for the same physical location. 
+SHORT NAME:  — 
+LONG NAME:  PREV_CCW_PHARM_ID 
+TYPE: 
+NUM 
+LENGTH:  
+8 
+SOURCE: 
+PDE and NCDPD DataQ™ (derived) 
+VALUES: 
+Null/missing (n/a) 
+ 
+5-digit numeric value 
+COMMENT: 
+Available in 2012 and 2013 files only. 
+The CCW Pharmacy ID is created by linking the service provider identification number 
+(SRVC_PRVDR_ID) from the source PDE to the proprietary National Council for Prescription Drug 
+Programs (NCPDP) Database. The variable is populated only for the subset of CCW Pharmacy IDs 
+where the physical location of the pharmacy did not change, but the NCPDP pharmacy data for that 
+year indicated the ownership changed.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+14 
+PRIMARY_DISPENSER_TYPE 
+LABEL: 
+Pharmacy Primary Dispenser Type Code 
+DESCRIPTION: This variable describes the type of pharmacy that filled the prescription. NCPDP requires all providers 
+to specify a primary dispenser type. 
+SHORT NAME:  — 
+LONG NAME:  PRIMARY_DISPENSER_TYPE 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+ 
+01 = Community/retail pharmacy, defined as a pharmacy where pharmacists store, prepare, and 
+dispense medicinal preparations and/or prescriptions for a local patient population in accordance 
+with federal and state law. 
+04 = Long-term care pharmacy, defined as a pharmacy that dispenses medicinal preparations 
+delivered to patients residing within an intermediate or skilled nursing facility, including 
+intermediate care facilities for mentally retarded, hospice, assisted living facilities, group homes, 
+and other forms of congregate living arrangements.  
+05 = Mail-order pharmacy, defined as a pharmacy where pharmacists compound or dispense 
+prescriptions or other medications in accordance with federal and state law, using common 
+carriers to deliver the medications to patient or their caregivers.  
+06 = Home infusion therapy provider, defined as a pharmacy-based, decentralized patient care 
+organization with expertise in USP 797-compliant sterile drug compounding that provides care to 
+patients with acute or chronic conditions generally pertaining to parenteral administration of 
+drugs, biologics and nutritional formulae administered through catheters and/or needles in home 
+and alternate sites. 
+07 = Non-pharmacy dispensing site, defined as a site other than a pharmacy that dispenses medicinal 
+preparations under the supervision of a physician to patients for self-administration (for example, 
+physician offices, emergency rooms, urgent care centers, and rural health facilities).  
+08 = Indian Health Service/tribal/urban Indian health (I/T/U) pharmacy, defined as a pharmacy 
+operated by the Indian Health Service, an Indian tribe or tribal organization, or an urban Indian 
+organization, all of which are defined in Section 4 of the Indian Health Care Improvement Act, 25 
+U.S.C. 1603.  
+09 = Department of Veterans Affairs (VA) pharmacy, defined as any place under VA jurisdiction where 
+drugs are dispensed and pharmaceutical care is provided to enrolled veterans, by licensed 
+pharmacists. VA pharmacies include inpatient (institutional), outpatient, consolidated mail 
+outpatient pharmacies, research, addiction treatment centers, long-term care and community-
+based outpatient clinic pharmacies.  
+11 = Institutional pharmacy, defined as a pharmacy in a hospital (inpatient) or institution used by 
+pharmacists for the compounding and delivery of medicinal preparations to be administered to 
+the patient by nursing or other authorized personnel.  
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+15 
+12 = Managed Care Organization (MCO) pharmacy, defined as a pharmacy owned by an MCO and used 
+by pharmacists for the compounding and dispensing of medicinal preparations to that MCO’s 
+covered members only.  
+13 = DME supplier, defined as a supplier of medical equipment such as respirators, wheelchairs, home 
+dialysis systems, or monitoring systems, that are prescribed by a physician for a patient’s use.  
+14 = Clinic pharmacy, defined as a pharmacy in a clinic, emergency room, or hospital (outpatient) that 
+dispenses medications to patients for self-administration under the supervision of a pharmacist. 
+15 = Specialty pharmacy, defined as a pharmacy that dispenses generally low-volume and high-cost 
+medicinal preparations to patients who are undergoing intensive therapies for illnesses that are 
+generally chronic, complex and potentially life threatening.  
+16 = Nuclear pharmacy, defined as a pharmacy dedicated to the compounding and dispensing of 
+radioactive materials for use in nuclear imaging and nuclear medical procedures. 
+17 = Military/U.S. Coast Guard pharmacy, defined as a Department of Defense (DoD) or U.S. Coast 
+Guard entity whose primary function is to store, prepare and dispense pharmaceuticals and other 
+associated items to Uniformed Services beneficiaries. These pharmacies may be associated with a 
+DoD or U.S. Coast Guard clinic, DoD hospital or freestanding facility.  
+18 = Compounding pharmacy, defined as a pharmacy that specializes in the preparation of 
+components into a drug preparation. A compounding pharmacy utilizes specialized equipment 
+and specially designed facilities necessary to meet the legal and quality requirements of its scope 
+of compounding practice.  
+19 = Oxygen Equipment  
+20 = Nursing Facility Supplies 
+21 = Customized Equipment 
+22 = Dialysis Equipment 
+23 = Parenteral and Enteral Nutrition 
+Null/missing = Unknown 
+COMMENT: 
+For each pharmacy, there is information for up to three dispenser types (reference 
+SECONDARY_DISPENSER_TYPE and TERTIARY_DISPENSER_TYPE variables). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+16 
+PRIMARY_TAXONOMY_CODE 
+LABEL: 
+Pharmacy Primary Taxonomy Code  
+DESCRIPTION: This is the taxonomy code for the pharmacy. This field allows researchers to better understand the 
+type of pharmacy that dispensed the medication.  
+SHORT NAME:  — 
+LONG NAME:  PRIMARY_TAXONOMY_CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+10  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+(e.g., 3336C0003X) 
+COMMENT: 
+This primary taxonomy code applies to the primary dispenser type (variable called 
+PRIMARY_DISPENSER_TYPE). For each pharmacy, there is information for up to three taxonomy codes, 
+associated with each of the dispenser types (reference SECONDARY_TAXONOMY_CODE and 
+TERTIARY_TAXONOMY_CODE variables). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+17 
+PRNT_ORG_ID 
+LABEL: 
+Pharmacy Parent Organization Identifier (encrypted) 
+DESCRIPTION: The encrypted NCPDP identifier for a business entity that has been reported to serve as the 
+headquarters for chains, buying groups or third party contracting organizations. There may be multiple 
+relationship IDs (variable called RELATIONSHIP_ID) that link to a common parent organization. 
+SHORT NAME:  — 
+LONG NAME:  PRNT_ORG_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+6  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+6-digit alpha numeric or null/missing (parent organization n/a) 
+COMMENT: 
+This variable was new in 2012. 
+A single parent organization ID will generally relate to multiple CCW_PHARM_IDs (i.e., multiple 
+pharmacies can have the same parent company).  
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+18 
+RELATIONSHIP_FROM_DT 
+LABEL: 
+Pharmacy Relationship From Date 
+DESCRIPTION: The start date of the pharmacy's relationship with a chain or franchise as reported to NCPDP. 
+Some pharmacies share a relationship with a common organization. For each of these pharmacies, 
+there is a relationship ID (RELATIONSHIP_ID) and type (RELATIONSHIP_TYPE).  
+SHORT NAME:  — 
+LONG NAME:  RELATIONSHIP_FROM_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+MMDDYYYY (e.g., 11/28/2006), or null/missing (relationship date n/a) 
+COMMENT: 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+19 
+RELATIONSHIP_ID 
+LABEL: 
+Pharmacy Relationship Identifier (encrypted) 
+DESCRIPTION: An encrypted NCPDP identifier for a chain or franchise organization that the pharmacy has a 
+relationship with.  
+Some pharmacies share a relationship with a common organization. For each of these pharmacies, 
+there is a maximum of one relationship ID (RELATIONSHIP_ID) and type (RELATIONSHIP_TYPE). When 
+a relationship was not specified, both the relationship ID and relationship type variables are null 
+(missing).  
+SHORT NAME:  — 
+LONG NAME:  RELATIONSHIP_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+3  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+3-digit alpha numeric or null/missing (relationship n/a) 
+COMMENT: 
+A single relationship ID will generally relate to more than one CCW_PHARM_ID (i.e., multiple 
+pharmacies can have the same overarching company).  
+Also, a single chain or franchise, which is represented in this data file as a relationship ID, can function 
+as more than one type of dispenser (i.e., it can have different values in the dispenser type code for 
+different pharmacies).  
+A parent organization (variable called PRNT_ORG_ID) may consist of multiple RELATIONSHIP_IDs. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+20 
+RELATIONSHIP_THRU_DT 
+LABEL: 
+Pharmacy Relationship Through Date 
+DESCRIPTION: The end date of the pharmacy's relationship with a chain or franchise as reported to NCPDP. 
+Some pharmacies share a relationship with a common organization. For each of these pharmacies, 
+there is a relationship ID (RELATIONSHIP_ID) and type (RELATIONSHIP_TYPE).  
+SHORT NAME:  — 
+LONG NAME:  RELATIONSHIP_THRU_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+MMDDYYYY (e.g., 11/28/2015), or null/missing (relationship date n/a) 
+COMMENT: 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+21 
+RELATIONSHIP_TYPE 
+LABEL: 
+Pharmacy Relationship Type 
+DESCRIPTION: The pharmacy relationship type indicates whether or not the pharmacy has a chain or franchise 
+relationship with another entity. 
+SHORT NAME:  —  
+LONG NAME:  RELATIONSHIP_TYPE 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+01 = Chain: a group of providers operating under a single banner and having common ownership. 
+02 = Franchise: a provider which has entered into an agreement with a franchiser entitling the latter to 
+the use of a complete business package, common identification and having all the elements 
+necessary to enable him or her to run it on an ongoing basis. 
+Null/missing = The provider has no chain or franchise relationships. 
+COMMENT: 
+If there is a relationship ID (variable called RELATIONSHIP_ID), then the type of relationship is captured 
+in this field. Note that the type of relationship in this field may not correspond with the dispenser class 
+code for the pharmacy (DISPENSER_CLASS). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+22 
+SECONDARY_DISPENSER_TYPE 
+LABEL: 
+Pharmacy Secondary Dispenser Type Code 
+DESCRIPTION: This variable describes the secondary type of pharmacy that filled the prescription, if applicable.  
+ 
+Providers are not required by NCPDP to specify a secondary dispenser type. 
+SHORT NAME:  — 
+LONG NAME:  SECONDARY_DISPENSER_TYPE 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+ 
+01 = Community/retail pharmacy, defined as a pharmacy where pharmacists store, prepare, and 
+dispense medicinal preparations and/or prescriptions for a local patient population in accordance 
+with federal and state law. 
+04 = Long-term care pharmacy, defined as a pharmacy that dispenses medicinal preparations 
+delivered to patients residing within an intermediate or skilled nursing facility, including 
+intermediate care facilities for mentally retarded, hospice, assisted living facilities, group homes, 
+and other forms of congregate living arrangements.  
+05 = Mail-order pharmacy, defined as a pharmacy where pharmacists compound or dispense 
+prescriptions or other medications in accordance with federal and state law, using common 
+carriers to deliver the medications to patient or their caregivers.  
+06 = Home infusion therapy provider, defined as a pharmacy-based, decentralized patient care 
+organization with expertise in USP 797-compliant sterile drug compounding that provides care to 
+patients with acute or chronic conditions generally pertaining to parenteral administration of 
+drugs, biologics and nutritional formulae administered through catheters and/or needles in home 
+and alternate sites. 
+07 = Non-pharmacy dispensing site, defined as a site other than a pharmacy that dispenses medicinal 
+preparations under the supervision of a physician to patients for self-administration (for example, 
+physician offices, emergency rooms, urgent care centers, and rural health facilities).  
+08 = Indian Health Service/tribal/urban Indian health (I/T/U) pharmacy, defined as a pharmacy 
+operated by the Indian Health Service, an Indian tribe or tribal organization, or an urban Indian 
+organization, all of which are defined in Section 4 of the Indian Health Care Improvement Act, 25 
+U.S.C. 1603.  
+09 = Department of Veterans Affairs (VA) pharmacy, defined as any place under VA jurisdiction where 
+drugs are dispensed and pharmaceutical care is provided to enrolled veterans, by licensed 
+pharmacists. VA pharmacies include inpatient (institutional), outpatient, consolidated mail 
+outpatient pharmacies, research, addiction treatment centers, long-term care and community-
+based outpatient clinic pharmacies.  
+11 = Institutional pharmacy, defined as a pharmacy in a hospital (inpatient) or institution used by 
+pharmacists for the compounding and delivery of medicinal preparations to be administered to 
+the patient by nursing or other authorized personnel.  
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+23 
+12 = Managed Care Organization (MCO) pharmacy, defined as a pharmacy owned by an MCO and used 
+by pharmacists for the compounding and dispensing of medicinal preparations to that MCO’s 
+covered members only.  
+13 = DME supplier, defined as a supplier of medical equipment such as respirators, wheelchairs, home 
+dialysis systems, or monitoring systems, that are prescribed by a physician for a patient’s use.  
+14 = Clinic pharmacy, defined as a pharmacy in a clinic, emergency room, or hospital (outpatient) that 
+dispenses medications to patients for self-administration under the supervision of a pharmacist.  
+15 = Specialty pharmacy, defined as a pharmacy that dispenses generally low-volume and high-cost 
+medicinal preparations to patients who are undergoing intensive therapies for illnesses that are 
+generally chronic, complex and potentially life threatening.  
+16 = Nuclear pharmacy, defined as a pharmacy dedicated to the compounding and dispensing of 
+radioactive materials for use in nuclear imaging and nuclear medical procedures.  
+17 = Military/U.S. Coast Guard pharmacy, defined as a Department of Defense (DoD) or U.S. Coast 
+Guard entity whose primary function is to store, prepare and dispense pharmaceuticals and other 
+associated items to Uniformed Services beneficiaries. These pharmacies may be associated with a 
+DoD or U.S. Coast Guard clinic, DoD hospital or freestanding facility.  
+18 = Compounding pharmacy, defined as a pharmacy that specializes in the preparation of 
+components into a drug preparation. A compounding pharmacy utilizes specialized equipment 
+and specially designed facilities necessary to meet the legal and quality requirements of its scope 
+of compounding practice.  
+19 = Oxygen Equipment  
+20 = Nursing Facility Supplies 
+21 = Customized Equipment 
+22 = Dialysis Equipment 
+23 = Parenteral and Enteral Nutrition 
+Null/missing = Unknown 
+COMMENT: 
+For each pharmacy, there is information for up to three dispenser types (reference 
+PRIMARY_DISPENSER_TYPE and TERTIARY_DISPENSER_TYPE variables). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+24 
+SECONDARY_TAXONOMY_CODE 
+LABEL: 
+Pharmacy Secondary Taxonomy Code  
+DESCRIPTION: This is the secondary taxonomy code for the pharmacy, if applicable. This field allows researchers to 
+better understand the type of pharmacy that dispensed the medication. Pharmacies are not required 
+by NCPDP to specify a secondary dispenser type. 
+SHORT NAME:  — 
+LONG NAME:  SECONDARY_TAXONOMY_CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+10  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+(e.g., 3336C0003X), or null/missing (n/a) 
+COMMENT: 
+This taxonomy code applies to the secondary dispenser type (variable called 
+SECONDARY_DISPENSER_TYPE). For each pharmacy, there is information for up to three taxonomy 
+codes, associated with each of the dispenser types (reference PRIMARY_TAXONOMY_CODE and 
+TERTIARY_TAXONOMY_CODE variables). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+25 
+STATUS_340B_CD 
+LABEL: 
+Code Indicating the Level of 340B Services Offered 
+DESCRIPTION: For pharmacies that indicated they offer some level of 340B service (reference variable called 
+STATUS_340B_IND), this variable identifies the level of 340B services offered.  
+SHORT NAME:  — 
+LONG NAME:  STATUS_340B_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+36 = Site has no 340B relationships or is non-participating 
+37 = Site is not owned by a 340B covered entity but acts as a contract pharmacy to one or more 
+covered entities 
+38 = Site is owned by a participating 340B covered entity but also serves non Eligible Patients 
+39 = Site is owned by a participating 340B covered entity and serves only Eligible Patients 
+Null /missing= This information has not been reported by the pharmacy 
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+Additional information regarding the 340B Drug Pricing Program is available through hrsa.gov 
+(reference http://www.hrsa.gov/opa/). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+26 
+STATUS_340B_IND 
+LABEL: 
+340B Status Indicator 
+DESCRIPTION: This variable is an indicator as to whether or not the pharmacy offers some level of 340B service.  
+The 340B Program offers eligible safety net health care providers access to low-cost medications. 
+Pharmacies must register to participate in this program. 
+SHORT NAME:  — 
+LONG NAME:  STATUS_340B_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+Y = Yes, pharmacy participates in a 340B program  
+N = No, pharmacy does not participate in a 340B program  
+Null/missing = This information has not been reported by the pharmacy 
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+Additional information regarding the 340B Drug Pricing Program is available through hrsa.gov 
+(reference http://www.hrsa.gov/opa/). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+27 
+TERTIARY_DISPENSER_TYPE 
+LABEL: 
+Pharmacy Tertiary Dispenser Type Code 
+DESCRIPTION: This variable describes the tertiary type of pharmacy that filled the prescription, if applicable. 
+Providers are not required by NCPDP to specify a tertiary dispenser type. 
+SHORT NAME:  — 
+LONG NAME:  TERTIARY_DISPENSER_TYPE 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+ 
+01 = Community/retail pharmacy, defined as a pharmacy where pharmacists store, prepare, and 
+dispense medicinal preparations and/or prescriptions for a local patient population in accordance 
+with federal and state law. 
+04 = Long-term care pharmacy, defined as a pharmacy that dispenses medicinal preparations 
+delivered to patients residing within an intermediate or skilled nursing facility, including 
+intermediate care facilities for mentally retarded, hospice, assisted living facilities, group homes, 
+and other forms of congregate living arrangements.  
+05 = Mail-order pharmacy, defined as a pharmacy where pharmacists compound or dispense 
+prescriptions or other medications in accordance with federal and state law, using common 
+carriers to deliver the medications to patient or their caregivers.  
+06 = Home infusion therapy provider, defined as a pharmacy-based, decentralized patient care 
+organization with expertise in USP 797-compliant sterile drug compounding that provides care to 
+patients with acute or chronic conditions generally pertaining to parenteral administration of 
+drugs, biologics and nutritional formulae administered through catheters and/or needles in home 
+and alternate sites. 
+07 = Non-pharmacy dispensing site, defined as a site other than a pharmacy that dispenses medicinal 
+preparations under the supervision of a physician to patients for self-administration (for example, 
+physician offices, emergency rooms, urgent care centers, and rural health facilities).  
+08 = Indian Health Service/tribal/urban Indian health (I/T/U) pharmacy, defined as a pharmacy 
+operated by the Indian Health Service, an Indian tribe or tribal organization, or an urban Indian 
+organization, all of which are defined in Section 4 of the Indian Health Care Improvement Act, 25 
+U.S.C. 1603.  
+09 = Department of Veterans Affairs (VA) pharmacy, defined as any place under VA jurisdiction where 
+drugs are dispensed and pharmaceutical care is provided to enrolled veterans, by licensed 
+pharmacists. VA pharmacies include inpatient (institutional), outpatient, consolidated mail 
+outpatient pharmacies, research, addiction treatment centers, long-term care and community-
+based outpatient clinic pharmacies.  
+11 = Institutional pharmacy, defined as a pharmacy in a hospital (inpatient) or institution used by 
+pharmacists for the compounding and delivery of medicinal preparations to be administered to 
+the patient by nursing or other authorized personnel.  
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+28 
+12 = Managed Care Organization (MCO) pharmacy, defined as a pharmacy owned by an MCO and used 
+by pharmacists for the compounding and dispensing of medicinal preparations to that MCO’s 
+covered members only.  
+13 = DME supplier, defined as a supplier of medical equipment such as respirators, wheelchairs, home 
+dialysis systems, or monitoring systems, that are prescribed by a physician for a patient’s use.  
+14 = Clinic pharmacy, defined as a pharmacy in a clinic, emergency room, or hospital (outpatient) that 
+dispenses medications to patients for self-administration under the supervision of a pharmacist.  
+15 = Specialty pharmacy, defined as a pharmacy that dispenses generally low-volume and high-cost 
+medicinal preparations to patients who are undergoing intensive therapies for illnesses that are 
+generally chronic, complex and potentially life threatening.  
+16 = Nuclear pharmacy, defined as a pharmacy dedicated to the compounding and dispensing of 
+radioactive materials for use in nuclear imaging and nuclear medical procedures.  
+17 = Military/U.S. Coast Guard pharmacy, defined as a Department of Defense (DoD) or U.S. Coast 
+Guard entity whose primary function is to store, prepare and dispense pharmaceuticals and other 
+associated items to Uniformed Services beneficiaries. These pharmacies may be associated with a 
+DoD or U.S. Coast Guard clinic, DoD hospital or freestanding facility.  
+18 = Compounding pharmacy, defined as a pharmacy that specializes in the preparation of 
+components into a drug preparation. A compounding pharmacy utilizes specialized equipment 
+and specially designed facilities necessary to meet the legal and quality requirements of its scope 
+of compounding practice.  
+19 = Oxygen Equipment  
+20 = Nursing Facility Supplies 
+21 = Customized Equipment 
+22 = Dialysis Equipment 
+23 = Parenteral and Enteral Nutrition 
+Null/missing = Unknown 
+COMMENT: 
+For each pharmacy, there is information for up to three dispenser types (reference 
+PRIMARY_DISPENSER_TYPE and SECONDARY_DISPENSER_TYPE variables). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+29 
+TERTIARY_TAXONOMY_CODE 
+LABEL: 
+Pharmacy Tertiary Taxonomy Code 
+DESCRIPTION: This is the tertiary taxonomy code for the pharmacy, if applicable. This field allows researchers to 
+better understand the type of pharmacy that dispensed the medication. Pharmacies are not required 
+by NCPDP to specify a tertiary dispenser type. 
+SHORT NAME:  — 
+LONG NAME:  TERTIARY_TAXONOMY_CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+10  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+(e.g., 3336C0003X), or null/missing (n/a) 
+COMMENT: 
+This taxonomy code applies to the tertiary dispenser type (variable called 
+TERTIARY_DISPENSER_TYPE). For each pharmacy, there is information for up to three taxonomy 
+codes, associated with each of the dispenser types (reference PRIMARY_TAXONOMY_CODE and 
+SECONDARY_TAXONOMY_CODE variables). 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+30 
+WALKIN_CLINIC_CD 
+LABEL: 
+Code Indicating the Level of Walk-in Clinic Services Offered 
+DESCRIPTION: For pharmacies that indicated they offer some level of walk-in clinic services (reference variable called 
+WALKIN_CLINIC_IND), this variable identifies the level of walk-in clinic services offered. 
+SHORT NAME:  — 
+LONG NAME:  WALKIN_CLINIC_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+19 = Site does not have on-site walk-in clinic 
+20 = Site has on-site affiliate walk-in clinic offering limited services staffed by mid-level practitioner(s) 
+21 = Site has on-site affiliate walk-in clinic offering limited services staffed by licensed physician(s) 
+22 = Site has on-site affiliate emergency room 
+Null = This information has not been reported by the pharmacy 
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+31 
+WALKIN_CLINIC_IND 
+LABEL: 
+Walk-in Clinic Services Indicator 
+DESCRIPTION: This variable is an indicator as to whether or not the pharmacy offers some level of walk-in clinical 
+services.  
+SHORT NAME:  — 
+LONG NAME:  WALKIN_CLINIC_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+NCDPD DataQ™ 
+VALUES: 
+Y = Yes, pharmacy offers a walk-in clinic  
+N = No, pharmacy does not offer a walk-in clinic 
+Null = This information has not been reported by the pharmacy. 
+COMMENT: 
+This variable is new in 2012. This information is optional, and not required to be reported by 
+pharmacies to NCPDP. 
+Additional details regarding the National Council for Prescription Drug Programs (NCPDP) source data 
+are available at: http://dataq.ncpdp.org/.  
+^ Back to TOC ^

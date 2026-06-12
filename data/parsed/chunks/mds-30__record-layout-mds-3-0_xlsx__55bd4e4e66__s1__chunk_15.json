@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "09/30/2023\n21 C_MDCR_NT_SET_CD C_MDCR_NT_SET_CD CMI Set for Recalculated Z0150A CHAR 3 The data in this column contains the calculated Medicare non-therapy Set Code. discontinued 09/30/2023\n22 C_MDCR_NT_CMI_TXT C_MDCR_NT_CMI_TXT CMI Value for Recalculated Z0150A CHAR 7 The data in this column contains the calculated Medicare non-therapy CMI value. discontinued 09/30/2023\n23 C_STATE_RUG_GRP_TXT C_STATE_RUG_GRP_TXT Recalculated Z0200A CHAR 10 The data in this column contains the calculated state",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

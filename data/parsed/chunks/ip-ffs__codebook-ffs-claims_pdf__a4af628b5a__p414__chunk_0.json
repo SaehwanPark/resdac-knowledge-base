@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p414__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 414,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n396 \nTHRPY_CAP_IND_CD1 \nTHRPY_CAP_IND_CD2 \nTHRPY_CAP_IND_CD3 \nTHRPY_CAP_IND_CD4 \nTHRPY_CAP_IND_CD5 \nLABEL: \nTherapy Cap Indicator Code \nDESCRIPTION: The field used to identify whether the claim line (or revenue center) is subject to a therapy cap. \nSHORT NAME: THRPY_CAP_IND_CD1 \nTHRPY_CAP_IND_CD2 \nTHRPY_CAP_IND_CD3 \nTHRPY_CAP_IND_CD4 \nTHRPY_CAP_IND_CD5 \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

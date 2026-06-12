@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_858",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "0. No\n1. Yes CHAR 1 x\nA1250B_TRNSPRTN_NON_MDCL_CD Transportation: Yes, non-medical Indicates whether lack of transportation has kept the patient from non-medical meetings, appointments, work, or from getting things that they need. 0. No\n1. Yes CHAR 1 x\nA1250C_TRNSPRTN_NO_CD Transportation: No Indicates that lack of transportation has not kept the patient from medical or non-medical appointments, from getting medications, work, or from getting things that they need. 0. No\n1. Yes CHAR 1",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s6__chunk_5",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 6,
+  "text": "CHAR 100\nSTART_DATE START_DATE Start Date Initial agreement start date DATE 8\nFac_Type FAC_TYPE CCN Facility Type Code indicating the type of facility represented by the CCN as indicated by the code assigned to the provider by CMS. \nValues:\nF = Federally Qualified Health Center\nR = Rural Health Center\nC = Critical Access Hospital \nT = Elective Teaching Amendment Hospital\nX = Other Facility Type CHAR 1\nFAC_DESC FAC_DESC CCN Facility Type Description Description of the facility. New data field",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

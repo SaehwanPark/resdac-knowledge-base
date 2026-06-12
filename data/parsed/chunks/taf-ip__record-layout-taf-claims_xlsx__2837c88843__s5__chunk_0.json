@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s5__chunk_0",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 5,
+  "text": "Revision date Tab Description\n45992 All files Added new variables SRC_LCTN_CD, TOT_BENE_COINSRNC_LBLTY_AMT, TOT_BENE_COPAY_LBLTY_AMT, TOT_BENE_DDCTBL_LBLTY_AMT, and CMBND_BENE_CST_SHRNG_PD_AMT to all header claims. \nAlso added new fields ORDRG_PRVDR_ID and ORDRG_PRVDR_NPI to OT header file.\nAdded new field RX_ORGN_CD to RX header file.\nAdded new variable IHS_SRVC_IND to all line files.\nAdded five new variables to RX line file: DSPNSNG_FEE_PD_AMT, INGRDNT_CST_BILLED_AMT, INGRDNT_CST_PD_AMT,",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

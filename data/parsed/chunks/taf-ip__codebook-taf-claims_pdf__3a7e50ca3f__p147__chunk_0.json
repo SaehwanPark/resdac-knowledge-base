@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p147__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 147,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n127 \nLEAVE_DAYS \nLABEL: \nCount of Days During Medicaid Coverage Period when Patient was not Residing in LTC \nDESCRIPTION: The number of days, during the period covered by Medicaid, on which the patient did not reside in the \nlong-term care (LTC) facility. \nSHORT NAME: LEAVE_DAYS \nLONG NAME: LEAVE_DAYS \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nLT",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

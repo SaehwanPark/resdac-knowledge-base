@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p62__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 62,
+  "text": "SHORT NAME: PRVDR_ADR_LINE_1 \nPRVDR_ADR_LINE_2 \nPRVDR_ADR_LINE_3 \nLONG NAME: PRVDR_ADR_LINE_1 \nPRVDR_ADR_LINE_2 \nPRVDR_ADR_LINE_3 \nTYPE: \nCHAR \nLENGTH: \n90 \nFILE(S): \nAPR Location \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nText description for street address (e.g., 555 MAIN ST; P.O. BOX 555; HEARTLAND OFFICE BUILDING); \nor null/missing \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

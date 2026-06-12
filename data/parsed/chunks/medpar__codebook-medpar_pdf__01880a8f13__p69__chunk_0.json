@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p69__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 69,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n53 \nCLNCL_TRIL_SW \nLABEL: \nOther Clinical Trial Switch \nDESCRIPTION: This variable indicates that the service was provided as part of a clinical trial of a different product. \nSHORT NAME: CLNCL_TRIL_SW \nLONG NAME: CLNCL_TRIL_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH (derived) \nVALUES: \nY = Yes \nN = No \nCOMMENT: \nThis field was new in 2021. \nThis field is derived when the condition code (CLM RLT",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p242__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 242,
+  "text": "SRGCL_PRCDR_PRFRM_25_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is the actual date associated with the principal or one of up to 24 other surgical procedure \ncodes that is present on the last claim record included in the stay. \nThere may be up to 25 procedures and dates. \nNote that until 2009, only six procedure codes were allowed. The principal procedure code is stored as \nthe first procedure code (PRCDRCD1). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

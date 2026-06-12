@@ -1,0 +1,96 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Formulary File1
+Version — October 2025
+Long SAS NAME	Label	Type	Length
+FORMULARY_ID	Formulary Identification Number 2	CHAR	8
+FRMLRY_RX_ID	CCW Formulary Drug Identifier	CHAR	8
+TIER_ID	Tier Number3	CHAR	2
+STEP	Step Number3	CHAR	2
+QUANTITY_LIMIT_YN	Quantity Limit Indicator3	CHAR	2
+PRIOR_AUTHORIZATION_YN	Prior Authorization Indicator3	CHAR	2
+BN	Brand Name	CHAR	30
+GNN	Generic Name	CHAR	30
+STR	Drug Strength Description	CHAR	10
+GCDF	Dosage Form Code	CHAR	2
+GCDF_DESC	Dosage Form Code Description	CHAR	40
+1 This file was first available starting with the 2010 data release.
+2 Prior to the 2013 data release, CCW was required to encrypt this sensitive data field. We are no longer required
+to encrypt this variable.
+3 For 2006-2009 the utilization management variables were available on the PDE File for filled prescriptions.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Formulary File — Excluded Drug File
+Version — October 2025
+Long SAS NAME	Label	Type	Length	Year of Data File1
+2011 2	2012 +
+FORMULARY_ID	Formulary Identification Number 3	CHAR	8	X	X
+FRMLRY_RX_ID	CCW Formulary Drug Identifier	CHAR	8	X	X
+CONTRACT_ID	Part D Contract ID 3	CHAR	5	X	-
+PLAN_ID	Part D Plan ID 3	CHAR	3	X	-
+TIER_ID	Tier Number	CHAR	2	X	X
+STEP_THERAPY_YN	Step Therapy Indicator	CHAR	2	-	X
+QUANTITY_LIMIT_YN	Quantity Limit Indicator	CHAR	2	-	X
+PRIOR_AUTHORIZATION_YN	Prior Authorization Indicator	CHAR	2	-	X
+BN	Brand Name	CHAR	30	X	X
+GNN	Generic Name	CHAR	30	X	X
+STR	Drug Strength Description	CHAR	10	X	X
+GCDF	Dosage Form Code	CHAR	2	X	X
+GCDF_DESC	Dosage Form Code Description	CHAR	40	X	X
+1 Shading or '-' indicates that the variable was not present during this time.
+2 2011 was the first year this file was available; the linkage variables to the PDE File were the FORMULARY_ID and FRMLRY_RX_ID.
+3 Prior to the 2013 data release, CCW was required to encrypt these sensitive data fields. These sensitive fields were those which could be
+used to identify the plan sponsor's contract (CONTRACT_ID), plan benefit package (PLAN_ID), and the plan’s formulary (FORMULARY_ID).
+We are no longer required to encrypt these variables.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Formulary File — OTC Drug File1
+Version — October 2025
+Long SAS NAME	Label	Type	Length
+FORMULARY_ID	Formulary Identification Number2	CHAR	8
+FRMLRY_RX_ID	CCW Formulary Drug Identifier	CHAR	8
+BN	Brand Name	CHAR	30
+GNN	Generic Name	CHAR	30
+STR	Drug Strength Description	CHAR	10
+GCDF	Dosage Form Code	CHAR	2
+GCDF_DESC	Dosage Form Code Description	CHAR	40
+1 This file was first available starting with the 2011 data release.
+2 Prior to the 2013 data release, CCW was required to encrypt this sensitive data field. This sensitive field was one
+which could be used to identify the plan’s formulary (FORMULARY_ID). We are no longer required to encrypt this variable.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Formulary File — Indication-based Formulary1
+Version — October 2025
+Long SAS NAME	Label	Type	Length
+FORMULARY_ID	Formulary Identification Number 2	CHAR	8
+FRMLRY_RX_ID	CCW Formulary Drug Identifier	CHAR	8
+BN	Brand Name	CHAR	30
+GNN	Generic Name	CHAR	30
+STR	Drug Strength Description	CHAR	10
+GCDF	Dosage Form Code	CHAR	2
+GCDF_DESC	Dosage Form Code Description	CHAR	40
+MESH_CUI	Coverage Indicator	CHAR	11
+DISEASE	Condition	CHAR	100
+1 This file was first available starting with the 2020 data release.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Formulary File — Part D Senior Savings (PDSS) Model1
+Version — October 2025
+Long SAS name	Label	Type	Length
+CONTRACT_ID	Contract ID	CHAR	5
+PLAN_ID	Plan ID	CHAR	3
+SEGMENT_ID	Segment ID	CHAR	3
+FRMLRY_RX_ID	CCW Identifier for a Drug Product Found in a Part D Prescription Drug Plan Formulary	CHAR	8
+BN	FDB Brand Name for Proxy NDC	CHAR	30
+GNN	FDB USAN Generic Name - Short Version for Proxy NDC	CHAR	30
+STR	FDB Drug Strength Description for Proxy NDC	CHAR	10
+GCDF	FDB Dosage Form Code for Proxy NDC	CHAR	2
+GCDF_DESC	FDB Dosage Form Code Description for Proxy NDC	CHAR	40
+TYPE	Insulin Type as Defined by the Model	CHAR	50
+COPAY	Copay	NUM	3
+1 This file was first available starting with the 2021 data release. The file was retired after 2023, and is not available 2024+.
+
+Revision date	Tab	Description
+45931	PDSS Model	Updated PDSS Model layout to indicate it is retired and not produced after 2023
+44835	PDSS Model	New Part D Senior Savings (PDSS) model file added
+44470	Indication-based	New indication-based formulary file added
+42644

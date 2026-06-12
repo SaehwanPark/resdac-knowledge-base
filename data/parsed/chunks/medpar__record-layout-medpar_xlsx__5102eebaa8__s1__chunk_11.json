@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X\nDSCHRGDT DSCHRG_DT Date beneficiary was discharged or died DATE 8 X X X X X X X X X X X X X X X X X X\nDSTNTNCD DSCHRG_DSTNTN_CD Destination upon discharge from facility code Char 2 X X X X X X X X X X X X X X X X X X\nCVRLVLDT CVRD_LVL_CARE_THRU_DT Date covered level of care ended in a SNF DATE 8 X X X X X X X X X X X X X X X X X X\nDEATHDT BENE_DEATH_DT Date beneficiary died DATE 8 X X X X X X X X X X X X X X X X X X\nDEATHCD BENE_DEATH_DT_VRFY_CD Death Date Verification Code",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_22",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "ICD_PRCDR_CD23 Claim Procedure Code XXIII CHAR 7 123\nPRCDR_DT23 PRCDR_DT23 Claim Procedure Code XXIII Date DATE 8 124\nICD_PRCDR_CD24 ICD_PRCDR_CD24 Claim Procedure Code XXIV CHAR 7 125\nPRCDR_DT24 PRCDR_DT24 Claim Procedure Code XXIV Date DATE 8 126\nICD_PRCDR_CD25 ICD_PRCDR_CD25 Claim Procedure Code XXV CHAR 7 127\nPRCDR_DT25 PRCDR_DT25 Claim Procedure Code XXV Date DATE 8 128\nRSN_VISIT_CD1 RSN_VISIT_CD1 Reason for Visit Diagnosis Code I CHAR 7 129\nRSN_VISIT_CD2 RSN_VISIT_CD2 Reason for Visit",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

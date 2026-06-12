@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p36__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 36,
+  "text": "VALUES: \nY = Yes, pharmacy offers a walk-in clinic \nN = No, pharmacy does not offer a walk-in clinic \nNull = This information has not been reported by the pharmacy. \nCOMMENT: \nThis variable is new in 2012. This information is optional, and not required to be reported by \npharmacies to NCPDP. \nAdditional details regarding the National Council for Prescription Drug Programs (NCPDP) source data \nare available at: http://dataq.ncpdp.org/. \n^ Back to TOC ^",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

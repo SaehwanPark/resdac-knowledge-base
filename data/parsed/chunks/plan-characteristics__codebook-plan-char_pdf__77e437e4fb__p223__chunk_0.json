@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p223__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 223,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n209 \nPOST_OOPT_EXCL_DRUG_CST_SHR \nLABEL: \nPost-Out-of-Pocket Threshold Cost Share Type by Tier for Excluded Drugs \nDESCRIPTION: This variable indicates how the plan applies cost-sharing on this tier for excluded drugs beyond the \nMedicare Part D annual out-of-pocket threshold. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n1= Medicare Defined Amount ($0) \n2=",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

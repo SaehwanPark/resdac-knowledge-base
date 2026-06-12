@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p107__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 107,
+  "text": "LONG NAME: CLM_MODEL_4_READMSN_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = claim is related readmission to a Model 4 BPCI claim and shall pay IME, DSH, and capital only \n2 = two Model 4 BPCI claims within 30 days of each other, first claim in episode shall process as it \nwould in the absence of Model 4 BPCI \n3 = two Model 4 BPCI claims within 30 days of each other, this is the second claim in the episode and \npaid as Model 4 \nNull/missing = not a BPCI claim \nCOMMENT: \nBundling",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

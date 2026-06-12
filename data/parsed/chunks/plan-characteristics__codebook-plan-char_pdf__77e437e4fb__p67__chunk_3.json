@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p67__chunk_3",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 67,
+  "text": "payment). \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes \nN = No \n9 = Not Applicable \nCOMMENT: \n The Part D premium benchmarks vary by region. The de minimis amount is $2.00. \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors to \nCMS’s Health Plan Management System (HPMS). \nProvisions in the Patient Protection and Affordable Care Act of 2010 (ACA) changed the way \nbenchmarks are calculated to improve continuity of Part D plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

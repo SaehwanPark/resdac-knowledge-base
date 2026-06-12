@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p42__chunk_3",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 42,
+  "text": "for the month \n10 = Aged without end-stage renal disease (ESRD) \n11 = Aged with ESRD \n20 = Disabled without ESRD \n21 = Disabled with ESRD \n31 = ESRD only \n40 = Beneficiary insured due to Part B Immunosuppressive Drug (PBID) \nCOMMENT: \nAnalysts can use this variable to quickly distinguish between the aged, disabled, and ESRD populations. \nThis field is coded from age, original reason for entitlement, current reason for entitlement and ESRD \nindicator contained in the enrollment database at CMS.",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

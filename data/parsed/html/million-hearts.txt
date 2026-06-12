@@ -1,0 +1,12 @@
+The Million Hearts® Cardiovascular Disease (CVD) Risk Reduction Model was a randomized controlled trial that sought to bridge a gap in cardiovascular care by providing targeted incentives for health care practitioners to engage in beneficiary CVD risk calculation and population-level risk management. Instead of focusing on the individual components of risk, participating organizations engaged in risk stratification across a beneficiary panel to identify those at highest risk for atherosclerotic cardiovascular disease (ASCVD).
+The Million Hearts® Cardiovascular Disease Risk Reduction Model used data-driven predictive modeling approaches to generate individualized risk scores and mitigation plans for eligible Medicare fee-for-service beneficiaries.
+The data from the trial is released as a suite of seventeen linked data files. The data include detailed information about the beneficiaries, physician practices, specific providers and clinic visits. The files do not contain names, street addresses or contact information. However, they can be linked to other CMS files through the CCW beneficiary ID.
+The following data files are included in the model:
+- Raw Clinical File - all visit and clinical data for beneficiaries as it was uploaded to the data collection registry by the provider
+- Final Clinical File - a model-curated version of the raw clinical data
+- Beneficiary Demographic File - demographic data submitted by the practice
+- Visit File – All data extracted to create a beneficiary visit, and includes the generated risk scores and baseline groups for each participating beneficiary
+- Practice List File - information about practices enrolled in the model
+- Provider List File - information about the providers (National Provider Identifiers) enrolled in the model
+- Alignment Files (11) – Point-in-time beneficiary alignment and program eligibility determination analytic file. This alignment validation process occurred semi-annually throughout the duration of the model.
+For more information on the Million Hearts® Cardiovascular Disease Risk Reduction Model, visit the CMS Innovation Center website.

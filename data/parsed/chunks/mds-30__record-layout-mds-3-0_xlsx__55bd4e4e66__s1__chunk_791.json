@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_791",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "TOT_SVRTY_SCRE_NUM TOT_SVRTY_SCRE_NUM D0160 Total severity score CHAR 2 The data in this column is the resident's total severity score. 00 to 27=Severity score\n99=Unable to complete the interview effective 10/01/2023\n884 SCL_ISLTN_CD SCL_ISLTN_CD D0700 Social Isolation CHAR 1 The data in this column indicates how often the resident feels lonely or isolated from those around them. 0=Never\n1=Rarely\n2=Sometimes\n3=Often\n4=Always\n7=Resident declines to respond\n8=Resident unable to respond effective",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

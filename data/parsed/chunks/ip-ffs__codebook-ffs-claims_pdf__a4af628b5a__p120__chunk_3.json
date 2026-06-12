@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p120__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 120,
+  "text": "undesirable when submitting the data \nZ = Denotes the end of the POA indicators \nX = Denotes the end of the POA indicators in special data processing situations that may be identified \nby CMS in the future \nCOMMENT: \nPrior to version “J,” the POA indicators were stored in a 10-byte field in the fixed portion of the claim. \nThe field was named: CLM_POA_IND_CD. Medicare claims did not indicate whether a diagnosis was \nPOA until 2011. \nThe present on admission indicators for the diagnosis E codes",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

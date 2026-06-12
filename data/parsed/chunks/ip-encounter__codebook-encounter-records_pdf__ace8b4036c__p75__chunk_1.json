@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p75__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 75,
+  "text": "15 \nSOURCE: \nCCW \nFILE(S): \nAll encounter files \nVALUES: \n— \nCOMMENT: \nEach IP, SNF, HH, or OP encounter base record has at least one revenue center record. \nEach carrier or DME encounter base record has at least one line record. \nAll revenue center records or lines on a given encounter record have the same ENC_JOIN_KEY. It is \nused to link the revenue lines together and/or to the base claim. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

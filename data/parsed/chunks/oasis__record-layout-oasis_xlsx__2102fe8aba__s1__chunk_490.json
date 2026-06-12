@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_490",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "person to complete activities.\n1. Dependent – A helper completed the activities for the patient.\n8. Unknown\n9. Not Applicable CHAR 1 x x\nGG0110A_PRIOR_MNL_WLCHR_IND GG0110A Prior Device: Manual Wheelchair Indicates the patient's prior use of a manual wheelchair. CHAR 1 x x\nGG0110B_PRIOR_MTRZD_WLCHR_IND GG0110B Prior Device: Motorized Wheelchair and/or Scooter Indicates the patient's prior use of a motorized wheelchair and/or scooter. CHAR 1 x x\nGG0110C_PRIOR_MCHNCL_LIFT_IND GG0110C Prior",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

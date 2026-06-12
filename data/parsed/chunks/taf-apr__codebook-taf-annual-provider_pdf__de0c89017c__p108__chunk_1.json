@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p108__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 108,
+  "text": "CHAR \nLENGTH: \n5 \nFILE(S): \nAPR Location \nAPR License \nAPR Identifiers \nAPR bed type \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nAlphanumeric character string (e.g., 1, 27, 00001, 5867, Z7720), and value ‘000’ means this record \napplies to all provider locations; or null/missing. \nCOMMENT: \nThe provider location identification number uniquely identifies the geographic locations applicable to \nthe provider for each CCW_APR_LINK_KEY. The same PRVDR_LCTN_IDs may be used by multiple \nstates;",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

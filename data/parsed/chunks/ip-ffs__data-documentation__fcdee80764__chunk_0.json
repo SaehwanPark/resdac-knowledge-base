@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_0",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| 1 | BENE_ID | Encrypted CCW Beneficiary ID | \n\n | 2 | CLM_ID | Claim ID | \n\n | 3 | NCH_NEAR_LINE_REC_IDENT_CD | NCH Near Line Record Identification Code (RIC) | \n\n | 4 | NCH_CLM_TYPE_CD | NCH Claim Type Code | \n\n | 5 | CLM_FROM_DT | Claim From Date (FFS) | \n\n | 6 | CLM_THRU_DT | Claim Through Date (FFS) | \n\n | 7 | NCH_WKLY_PROC_DT | NCH Weekly Claim Processing Date | \n\n | 8 | FI_CLM_PROC_DT | FI Claim Process Date | \n\n | 9 | CLAIM_QUERY_CODE | Claim Query Code | \n\n | 10 | PRVDR_NUM | Provider",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

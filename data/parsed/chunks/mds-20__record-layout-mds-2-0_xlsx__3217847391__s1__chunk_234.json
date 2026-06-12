@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_234",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Health conditions: stability of conditions - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n377 K1A K1A_CHEW_PROB (K1A) Chewing Problem CHAR 1 Oral/nutritional status: oral problems - chewing problem. 0 = No, 1 = Yes, \"-\" = Unknown.\n378 K1B K1B_SWALLOW_PROB (K1B) Swallowing Problem CHAR 1 Oral/nutritional status: oral problems - swallowing problem. 0 = No, 1 = Yes, \"-\" = Unknown.\n379 K1C K1C_MOUTH_PAIN (K1C) Mouth Pain CHAR 1 Oral/nutritional status: oral problems - mouth pain. 0 = No, 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

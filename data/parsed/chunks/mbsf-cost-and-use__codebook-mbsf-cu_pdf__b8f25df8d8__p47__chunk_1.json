@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p47__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 47,
+  "text": "where the beneficiary is only discharged on the most recent claim in the set. \nThis algorithm includes all claims regardless of CLM_PMT_AMT. \nSHORT NAME: — \nLONG NAME: HOS_STAYS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nThe CLM_THRU_DT must have been in the year of the data file. Stays that cross-over into another \ncalendar year would only appear in the year when the stay ended (e.g., a stay that began in 2017 but \nended in 2018 would only be",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

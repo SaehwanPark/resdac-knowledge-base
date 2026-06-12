@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_262",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "M5I_PREVNT_SKIN_CARE (M5I) Other Preventative or Protective Skin Care CHAR 1 Skin condition: skin treatments in last 7 days - other preventative/protective skin care other than to feet. 0 = No, 1 = Yes, \"-\" = Unknown.\n431 M5J M5J_NONE_ABOVE (M5J) None of Above Skin Treatments CHAR 1 Skin condition: skin treatments in last 7 days - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n432 M6A M6A_FOOT_PROB (M6A) Resident Has 1 or More Foot Problems CHAR 1 Skin condition: foot problems and care in last",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

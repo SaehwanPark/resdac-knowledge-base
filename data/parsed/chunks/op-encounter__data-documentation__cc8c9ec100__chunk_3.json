@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-encounter__data-documentation__cc8c9ec100__chunk_3",
+  "source_document": "data/raw/html/documentation_page/cc8c9ec10085c1e35a3492144e3ee40013ca2d48.html",
+  "page": null,
+  "text": "Record Number (Encounter) | \n\n | 21 | ORG_NPI | Organization NPI Number (Encounter) | \n\n | 22 | ORG_TXNMY_CD | Organization Taxonomy Code | \n\n | 23 | RNDRNG_PHYSN_NPI | Rendering Physician NPI (Encounter) | \n\n | 24 | RFRG_PHYSN_NPI | Carrier/DME Referring Physician NPI Number | \n\n | 25 | AT_PHYSN_NPI | Claim Attending Physician NPI Number (Encounter) | \n\n | 26 | AT_PHYSN_TXNMY_CD | Claim Attending Physician Taxonomy Code | \n\n | 27 | OP_PHYSN_NPI | Claim Operating Physician NPI Number",
+  "dataset": "op-encounter",
+  "url": "https://resdac.org/cms-data/files/op-encounter/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_262",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "pain CHAR 2 x x x x\nM1242_PAIN_FREQ_ACTVTY_MVMT M1242 Frequency of Pain Interfering With Activity This field indicates the frequency of pain interfering with patient's activity or movement. 00 = Patient has no pain\n01 = Patient has pain that does not interfere with activity or movement 02=Less often than daily\n03 = Daily, but not constantly\n04 = All of the time CHAR 2 x x x x x\nM1300_PRSR_ULCR_RISK_ASMT M1300 Pressure Ulcer Assessment This field indicates whether the patient was assessed for",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

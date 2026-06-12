@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "assignment table in IDR) based on the ACO's certified participant list used in fourth quarter assignment NUM 1 All Tracks Q4 = 12 month reference year x x x x x x x x x x x\nINTERIM_ASSIGN Assigned in Interim Period (Boolean) 0/1 flag; =1 if beneficiary was assigned in interim period (from interim reconciliation assignment tables in IDR) NUM 1 x - x - - - - - - - -\nFINAL_ASSIGN Assigned in Final Reconciliation (Boolean) 0/1 flag; =1 if beneficiary was assigned in final reconciliation period",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

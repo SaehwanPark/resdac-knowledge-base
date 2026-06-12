@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p382__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 382,
+  "text": "or not the RAP is for a first episode. \nOn the final claim, the HIPPS code could change the payment if the therapy threshold is not met, or \npartial episode payment (PEP) adjustment or a significant change in condition (SCIC) adjustment. \nIn cases of SCICs, there will be more than one “0023” revenue center line, each representing the \npayment made at each case-mix level. \nFor IRF PPS claims (when revenue center code equals “0024”), CMS has developed a PRICER to \ncompute the rate based on the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

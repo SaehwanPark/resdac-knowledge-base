@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p54__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 54,
+  "text": "or may not be the same as \nthe contract ID in the previous year (2021). \nThis field is a key that links the plan sponsor's contract and plan identifiers. \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nFive-digit alpha/numeric value \nCOMMENT: \nAll contract and plan ID that were active in 2022 appear in this data file. To determine whether \nthe contract and plan IDs in the data file represent the same plan in the prior year, compare this \nvariable (along with the corresponding",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

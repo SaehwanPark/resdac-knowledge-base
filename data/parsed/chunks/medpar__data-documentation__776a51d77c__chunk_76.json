@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_76",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Other Device Amount ($) | \n\n | 411 | INCDNT_RDLGY_AMT | Medical/Surgical Supplies Incident Radiology Amount ($) | \n\n | 412 | INCDNT_DGNSTC_SRVCS_AMT | Medical/Surgical Supplies Incident Diagnostic Services Amount ($) | \n\n | 413 | MDCL_SRGCL_DRSNG_AMT | Medical/Surgical Dressing Amount ($) | \n\n | 414 | INVSTGTNL_DVC_AMT | Medical/Surgical Supplies Investigational Device Amount ($) | \n\n | 415 | MDCL_SRGCL_MISC_AMT | Medical Surgical Miscellaneous Amount ($) | \n\n | 416 | RDLGY_ONCOLOGY_AMT |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

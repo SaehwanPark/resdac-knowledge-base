@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p37__chunk_6",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 37,
+  "text": "T1H = Lab tests — other (non-Medicare fee schedule) \nT2A = Other tests — electrocardiograms \nT2B = Other tests — cardiovascular stress tests \nT2C = Other tests — EKG monitoring \nT2D = Other tests — other \nY1 = Other — Medicare fee schedule \nY2 = Other — non-Medicare fee schedule \nZ1 = Local codes \nZ2 = Undefined codes \nCOMMENT: \nCMS derives this field using a Healthcare Common Procedure Coding System (HCPCS) code to BETOS \ncode crosswalk. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

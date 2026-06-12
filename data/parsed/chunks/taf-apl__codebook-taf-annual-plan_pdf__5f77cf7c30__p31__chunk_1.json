@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 31,
+  "text": "MC_PLAN_ELGBL_POP_ACTV_IND_10 \nMC_PLAN_ELGBL_POP_ACTV_IND_11 \nMC_PLAN_ELGBL_POP_ACTV_IND_12 \nLABEL: \nManaged Care Plan Eligible Population Active Indicator — January through December \nDESCRIPTION: A flag to indicate the managed care entity authorized to enroll the Medicaid population specified in \nthe MC_PLAN_ELGBLTY_GRP_POP_CD variable was active in the given month. Each of 12 months. \nSHORT NAME: \nMC_PLAN_ELGBL_POP_ACTV_IND_01 \nMC_PLAN_ELGBL_POP_ACTV_IND_02 \nMC_PLAN_ELGBL_POP_ACTV_IND_03",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

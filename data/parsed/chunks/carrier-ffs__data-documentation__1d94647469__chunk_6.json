@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_6",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "| Line Submitted Charge Amount | \n\n | LINE_ALOWD_CHRG_AMT | Line Allowed Charge Amount | \n\n | LINE_PRCSG_IND_CD | Line Processing Indicator Code | \n\n | LINE_PMT_80_100_CD | Line Payment 80%/100% Code | \n\n | LINE_SERVICE_DEDUCTIBLE | Line Service Deductible Indicator Switch | \n\n | CARR_LINE_MTUS_CNT | Carrier Line Miles/Time/Units/Services (MTUS) Count | \n\n | CARR_LINE_MTUS_CD | Carrier Line Miles/Time/Units/Services (MTUS) Indicator Code | \n\n | LINE_ICD_DGNS_CD | Line Diagnosis Code | \n\n |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

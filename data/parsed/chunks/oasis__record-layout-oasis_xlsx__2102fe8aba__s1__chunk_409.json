@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_409",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "with current therapy\n02 = Symptoms controlled with difficulty, affecting daily functioning;\npatient needs ongoing monitoring\n03 = Symptoms poorly controlled, patient needs frequent adjustment in\ntreatment and dose monitoring\n04 = Symptoms poorly controlled, history of rehospitalizations CHAR 2 x x x x\nM1023_OTH_DGN3_ICD M1023 (M0240) Other Diagnosis3 ICD-10 Code This field lists the other diagnosis 3 (ICD-10). CHAR 8 x x x x\nM1023_OTH_DGN3_SEV M1023 (M0240) Other Diagnosis3 Severity This field",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

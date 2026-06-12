@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p55__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 55,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n45 \nCLM_RLT_OCRNC_CD \nLABEL: \nClaim Related Occurrence Code \nDESCRIPTION: The code that identifies a significant event relating to an institutional claim or encounter record that \nmay affect payer processing. \nThese codes are associated with a specific date (the claim related occurrence date). \nSHORT NAME: CLM_RLT_OCRNC_CD \nLONG NAME: CLM_RLT_OCRNC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE:",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_10",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "Address - USPS State Code Char 2 55 55\nCLM_SUBSCR_ADR_ZIP_CD Medicare Subscriber Address - ZIP Code Char 9 56 56\nBENE_CNTY_CD Beneficiary County Code from Claim (SSA) Char 3 57 57\nBENE_STATE_CD Beneficiary Residence (SSA) State Code Char 2 58 58\nBENE_MLG_CNTCT_ZIP_CD Beneficiary ZIP Code of Residence Char 9 59 59\nBENE_RACE_CD Race Code Char 1 60 60\nDOB_DT Date of Birth Date 8 61 61\nBENE_MDCR_STUS_CD Beneficiary Medicare Status Code Char 2 62 62\nTAX_NUM Provider Tax Number Char 10 63",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

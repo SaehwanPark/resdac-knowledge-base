@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p151__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 151,
+  "text": "PPS claim, only one of four fields will be populated (CLM_SITE_NTRL_PYMT_CST_AMT, \nCLM_SITE_NTRL_PYMT_IPPS_AMT, CLM_FULL_STD_PYMT_AMT, or \nCLM_SS_OUTLIER_STD_PYMT_AMT) as they are mutually exclusive (i.e., only one of the 4 fields will \nhave a non-zero value). The field with the non-zero value is included in the Claim Payment Amount \nfield. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p33__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 33,
+  "text": "LONG NAME: LTPAC_DSPNSNG_FREQ_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE \nVALUES: \n1 = Medication dispensed in a day-supply increment equal to the billed days supply (for example: \n medication dispensed for a 30-day supply and billed for a 30-day supply) \n2 = 7 days — dispenses medication in 7-day supplies \n3 = 4 days — dispenses medication in 4-day supplies \n4 = 3 days — dispenses medication in 3-day supplies \n5 = 2 days — dispenses medication in 2-day supplies \n6 = 1 day — dispenses",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

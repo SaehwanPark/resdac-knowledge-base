@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "submitted from the same assessment.\n3 ASBGVRDT AST_BEG_VER_DT Assessment Beginning Version Date DATE 8 Beginning date of the submission file that contains the version of this assessment\n4 CRRCTNNM AST_CORR_VER Assessment Correction Version Number CHAR 2 The number of the assessment. 00 = Original, 01 = First correction, 02 = Second correction, etc.\n5 ASNDVRDT AST_END_VER_DT Assessment Ending Version Date DATE 8 Ending date of the submission file that contains the version of this assessment\n6",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

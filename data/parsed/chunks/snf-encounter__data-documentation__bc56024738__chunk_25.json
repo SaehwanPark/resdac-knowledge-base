@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_25",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "| Claim Procedure Code 12 (Encounter) | \n\n | 121 | ICD_PRCDR_CD13 | Claim Procedure Code 13 (Encounter) | \n\n | 122 | PRCDR_DT1 | Claim Procedure Code 1 Date (Encounter) | \n\n | 123 | PRCDR_DT2 | Claim Procedure Code 2 Date (Encounter) | \n\n | 124 | PRCDR_DT3 | Claim Procedure Code 3 Date (Encounter) | \n\n | 125 | PRCDR_DT4 | Claim Procedure Code 4 Date (Encounter) | \n\n | 126 | PRCDR_DT5 | Claim Procedure Code 5 Date (Encounter) | \n\n | 127 | PRCDR_DT6 | Claim Procedure Code 6 Date (Encounter) |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

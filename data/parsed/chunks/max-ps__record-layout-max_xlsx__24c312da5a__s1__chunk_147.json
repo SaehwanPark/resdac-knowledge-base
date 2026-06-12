@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_147",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "payments (PCCM) NUM 12 X X X X X X X X X X X Populated with Zeros Only\n655 SSA_DOD Date of death (from SSA Death Master File) DATE 8 NP NP NP NP NP NP NP NP NP NP NP Effective 4/2014, this field is no longer available for release per CMS\n656 EL_MDCR_ANN_XOVR_99 Crossover code (Annual) - Same As Dual Code - In Place for Historical Compatibility CHAR 2 ‾ X X X X X X X X X X\n657 EL_MDCR_XOVR_MO_1 Medicare crossover code (Jan) - Same As Dual Code - In Place for Historical Compatibility CHAR 2 ‾ X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

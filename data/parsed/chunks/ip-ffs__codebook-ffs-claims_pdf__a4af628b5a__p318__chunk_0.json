@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p318__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 318,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n300 \nPRVDR_VLDTN_TYPE_CD \nLABEL: \nProvider Validation Type Code \nDESCRIPTION: Provider Validation Type Code \nSHORT NAME: PRVDR_VLDTN_TYPE_CD \nLONG NAME: PRVDR_VLDTN_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nRP = Rendering Provider \nOP = Operating Physician \nCP = Ordering/Referring Physician \nAP = Attending Physician \nFA = Facility \nCOMMENT: \nThe purpose of the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

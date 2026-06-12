@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p44__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 44,
+  "text": "TAF \nVALUES: \n-1 through 125 \nNull/missing = source value is missing or unknown \nCOMMENT: \nIn the monthly TAF, if AGE_NUM is greater than 125, then AGE_NUM is set equal to 125. An age less \nthan zero is possible when the state covers the health of a fetus or the child during the gestational \nperiod. \nThis age value is calculated using the date of birth in the eligibility file (or, if not populated, then most \nrecent date of birth value from the two-prior year[s] is used). \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

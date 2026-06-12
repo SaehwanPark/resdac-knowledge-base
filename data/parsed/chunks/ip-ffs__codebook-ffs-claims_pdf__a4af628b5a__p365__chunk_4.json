@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p365__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 365,
+  "text": "in this field. \nAdditional exception: Virgin Island hospitals and hospitals that furnish only inpatient Part B services \nwith dates of service 1/1/2002 and forward. \nIt has been discovered that this field may be populated with data on claims with dates of service prior \nto 7/2000 (implementation of Claim Line Expansion OPPS/HHPPS). The original understanding of the \nnew revenue center fields was that data would be populated on claims with dates of service 7/2000 \nand forward.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

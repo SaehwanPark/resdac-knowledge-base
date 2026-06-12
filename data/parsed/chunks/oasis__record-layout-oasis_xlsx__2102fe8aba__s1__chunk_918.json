@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_918",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "whether the patient was receiving IV chemotherapy at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110A2C_CHM_IV_DSCHRG_CD Treatment: Chemo - IV (Discharge) Indicates whether the patient was receiving IV chemotherapy at the time of discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110A3A_CHM_ORAL_ADMSN_CD Treatment: Chemo - Oral (Admission) Indicates whether the patient was receiving oral chemotherapy at the time of admission. 0. No\n1. Yes\n-. Not",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

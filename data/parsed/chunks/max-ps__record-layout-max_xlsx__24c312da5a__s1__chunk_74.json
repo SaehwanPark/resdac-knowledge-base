@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_74",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "TOT_LTC_CVR_DAY_CNT_ICFMR Total Intermediate Care Facility (ICF) /MR covered days NUM 4 X X X X X X X X X X X\n349 TOT_LTC_CVR_DAY_CNT_NF Total Nursing Facility covered days NUM 4 X X X X X X X X X X X\n350 TOT_LTC_CVR_DAY_CNT Total LT covered days (sum of LTC covered Aged, Psych, ICF/MR and NF days) NUM 4 X X X X X X X X X X X\n351 TOT_MDCD_CLM_CNT Total record count (sum of FFS, PHP premium, and encounter record counts) NUM 6 X X X X X X X X X X X\n352 TOT_MDCD_FFS_CLM_CNT Total fee-for-service",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

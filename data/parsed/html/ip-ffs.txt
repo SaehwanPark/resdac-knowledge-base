@@ -1,0 +1,8 @@
+The Original Medicare Fee-For-Service (FFS) Inpatient (IP) file contains fee-for-service claims submitted by inpatient hospital providers for reimbursement of facility costs. These claim records represent covered stays (Medicare paid FFS bills).
+This file is based on information from the CMS form 1450 (UB04).
+What does this file include? (variable highlights)
+- Admission, discharge dates
+- Diagnosis (ICD diagnosis)
+- Procedure (ICD procedure code)
+- FFS reimbursement amount
+- Hospital provider number

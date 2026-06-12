@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p2__chunk_3",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 2,
+  "text": "Added CLM_PLACE_OF_SRVC_CD and RNDRNG_PHYSN_NPI to \ncarrier and DME base claim layouts for 2016 encounter data \nfiles. \n1.2 \nApril 2019 \nK. Schneider \nAdded a variable to correspond with the final 2015 encounter \ndata files: LINE_NUM_ORIG; edited description for \nCLM_LINE_NUM \n1.1 \nApril 2018 \nC. Alleman \nR. VanGilder \nK. Schneider \nInitial release of codebook for Medicare encounter records \n1.0",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

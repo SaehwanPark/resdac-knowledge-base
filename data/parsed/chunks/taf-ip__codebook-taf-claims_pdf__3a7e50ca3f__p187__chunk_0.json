@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p187__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 187,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n167 \nMDCR_PD_AMT \nLABEL: \nMedicare Paid Amount \nDESCRIPTION: The amount paid by Medicare on this claim or adjustment. \nSHORT NAME: MDCR_PD_AMT \nLONG NAME: MDCR_PD_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nVALUES: \nDollar amount with two decimal places (e.g., 98.76); may be negative. \nNull/missing = Source value is missing or",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p2__chunk_4",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 2,
+  "text": "• Added values to DE base file related to COVID-19 to the \nmonthly ELGBLTY_GRP_CD_01–12 and ELGBLTY_GRP_CD_LTST, \nRSTRCTD_BNFTS_CD_01–12 and RSTRCTD_BNFTS_CD_LTST; \nadded managed care plan type code values to \nMC_PLAN_TYPE_CD_01–MC_PLAN_TYPE_CD_12 and the series: \nMC_PLAN_TYPE_CD_01_01–MC_PLAN_TYPE_CD_16_12 \n• Added two new summary variables to the Managed Care file: \nLTSS_PIHP_MOS and OTH_PLAN_MOS \n1.3 \nOctober 2020 \nK. Schneider \nUpdated value description for DE_VRSN, added value for",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 21,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n11 \nWA = Washington \nWI = Wisconsin \nWV = West Virginia \nWY = Wyoming \nNull = Unknown \nCOMMENT: \nCCW derived this variable by taking the SSA state/county code on the CME record for that beneficiary \nin the CMS enrollment database and linking it to the corresponding state postal abbreviation. If we \ncould not find a state using this method, we set the variable equal to the state portion",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

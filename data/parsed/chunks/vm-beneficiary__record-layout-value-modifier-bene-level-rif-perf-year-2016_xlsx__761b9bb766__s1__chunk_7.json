@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "only for records with Inpatient_stay not equal to missing. Equals 1 if beneficiary has Diabetes\nCHF Chronic condition flag for heart failure Indicator for whether beneficiary has Heart Failure 14 Num 8 Populated only for records with Inpatient_stay not equal to missing. Equals 1 if beneficiary has Heart Failure\nACSC_ADM_COPD ACSC admission for COPD or Asthma Indicator for whether beneficiary hospital admission counted in calculation of practice's COPD or Asthma Ambulatory Care-Sensitive",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p58__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 58,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n48 \nCLM_SPAN_FROM_DT \nLABEL: \nClaim Occurrence Span From Date \nDESCRIPTION: The from date of a period associated with an occurrence of a specific event relating to an institutional \nclaim that may affect payer processing. \nThe first date associated with the claim occurrence span code (variable called the CLM_SPAN_CD). \nSHORT NAME: CLM_SPAN_FROM_DT \nLONG NAME: CLM_SPAN_FROM_DT \nTYPE:",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

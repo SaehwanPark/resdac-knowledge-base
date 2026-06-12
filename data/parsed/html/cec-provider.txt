@@ -1,0 +1,14 @@
+CMS has created an analytical file that contains information about providers who are participating in the Comprehensive ESRD Care (CEC) Model. A related file, the CEC Beneficiary RIF, contains identifying information about the beneficiaries assigned to a provider who is participating in the CEC Model.
+The CEC Provider Performance Year RIF files contain PY finder files for the providers participating in the ESRD Seamless Care Organization (ESCO).
+What does this file include? (variable highlights)
+- ESCO Name
+- Period of Performance
+- Tax Identification Number of the practice/facility associated with the Individual NPI
+- Parent Participant NPI Number
+- Organization Name
+- Provider Type description
+- CMS Certification Number (CCN)
+Special considerations
+- This file can be linked to any other CMS file that include the TIN, CCN, or NPI.
+- PY1 is for a 15 month period beginning in October, all other PYs are for a calendar year beginning in January.
+- All technical questions related to the CEC program should be directed to [email protected].

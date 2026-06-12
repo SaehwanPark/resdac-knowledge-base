@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_581",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "assistance\n 03=Partial/moderate assistance\n 04=Supervision or touching assistance\n 05=Setup or clean-up assistance\n 06=Independent\n 07=Resident refused\n 09=Not applicable\n 88=Not attempted due to medical condition or safety concerns\n ^=Blank (skip pattern) effective 10/01/2016\n660 GG0170D2_STTG_STNDG_GOAL_CD GG0170D2_STTG_STNDG_GOAL_CD GG0170D2 Mobility: Sitting to Standing Goal by End of SNF PPS Part A Stay CHAR 2 Indicates the resident's goal to move to a standing position from a sitting",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

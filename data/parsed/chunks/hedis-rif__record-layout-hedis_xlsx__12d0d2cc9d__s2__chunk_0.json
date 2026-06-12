@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nHEDIS Person-Level Data — Inpatient (File 2)\nVersion — June 2025\nRIF SAS name RIF label Type Length 2015–171 RIF sequence 2018 1 2020–21 1\nBENE_ID CCW Beneficiary Identifier NUM 8 1 1 1\nHEDIS_REC_ID HEDIS Record identifier NUM 8 2 2 2\nHEDIS_CNTRCT_ID Contract Identifier (HEDIS) CHAR 5 3 3 3\nHEDIS_PLAN_TYPE Plan Type (HEDIS) CHAR 30 4 4 4\nHEDIS_PLAN_ID Plan Identifier (HEDIS) CHAR 3 5 5 5\nHEDIS_ORG_TYPE Plan Organization Type (HEDIS) CHAR 10",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

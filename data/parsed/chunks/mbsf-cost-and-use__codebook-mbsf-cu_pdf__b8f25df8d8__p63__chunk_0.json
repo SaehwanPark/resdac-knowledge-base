@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p63__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 63,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n57 \nOTHC_BENE_PMT \nLABEL: \nOther Part B Carrier Beneficiary Payments \nDESCRIPTION: This variable is the sum of coinsurance and deductible payments from Part B carrier and DME claims \nwhich appear in settings other than the 10 specific categories which are part of this file for a given year. \nThe total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT +",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Number is 00. CHAR 15 x x x x x x\nSTATE_ID State ID The two-digit state abbreviation. This may also be the two-character CMS region code. CHAR 2 x x x x x x\nSUBMISSION_DATE Submission Date The date the submission was received by the system. DATE 8 x x x x x x\nM0010_MEDICARE_ID (M0010) Agency Medicare Number Agency Medicare provider number. The CMS Certification Number (CCN). CHAR 6 x x x x x x x\nM0012_MEDICAID_ID (M0012) Agency Medicaid Number Agency Medicaid provider number. CHAR 15 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

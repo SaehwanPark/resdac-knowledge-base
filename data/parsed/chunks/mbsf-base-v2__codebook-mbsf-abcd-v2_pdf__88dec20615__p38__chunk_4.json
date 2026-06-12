@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p38__chunk_4",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 38,
+  "text": "between months enrolled \nwithout HMO coverage (‘0’) and months not enrolled in Medicare (‘N’). In addition, a beneficiary with \na verified or unverified date of death will have an ‘N’ for any month that is after the death date. \nThis variable indicates whether the beneficiary was enrolled in a Medicare Advantage (MA) plan \nduring a given month.",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

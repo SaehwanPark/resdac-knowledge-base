@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_308",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "J0500B_PAIN_EFCT_ACTVTY_CD J0500B_PAIN_EFCT_ACTVTY_CD J0500B Pain Assessment Interview: Pain Effect Activity Code CHAR 1 The data in this column indicates whether the resident's day-to-day activities were limited because of pain or hurting in the last five days. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine discontinued 09/30/2023\n341 J0600A_PAIN_INTNSTY_NUM J0600A_PAIN_INTNSTY_NUM J0600A Pain Intensity Numeric Rating Scale Number CHAR 2 The data in this column indicates the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

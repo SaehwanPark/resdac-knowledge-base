@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_652",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "was receiving peritoneal dialysis. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n615 INTRVNS_ACS_ADMSN_CD INTRVNS_ACS_ADMSN_CD Other: IV Access (Admission) CHAR 1 This column documents whether, at the time of admission, the patient had IV access. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n616 INTRVNS_ACS_DSCHRG_CD INTRVNS_ACS_DSCHRG_CD Other: IV Access (Discharge) CHAR 1 This column documents whether, at the time of discharge, the patient had IV access. 0 = No \n1 = Yes\n- = Not",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

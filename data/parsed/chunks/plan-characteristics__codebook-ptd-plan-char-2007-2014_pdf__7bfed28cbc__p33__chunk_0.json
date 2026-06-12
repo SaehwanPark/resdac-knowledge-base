@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p33__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 33,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n20 \nCOUNTY_NAME \nLABEL: \nPart D Segment County Name \nDESCRIPTION: Name of county in which the Part D plan benefit package (segment) provides coverage. \nSHORT NAME: — \nLONG NAME: COUNTY_NAME \nTYPE: \nCHAR \nLENGTH: \n30 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n-\nCOMMENT: \nThe CCW constructs the Plan Characteristics file from information submitted by Part D plan sponsors \nto CMS’s Health Plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

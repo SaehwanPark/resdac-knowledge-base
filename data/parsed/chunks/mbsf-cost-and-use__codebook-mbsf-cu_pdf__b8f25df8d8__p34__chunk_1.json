@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p34__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 34,
+  "text": "in the Part B \ncarrier and DME data files, and a subset of physician claims. \nThe E/M claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit =“M” \n(but is not M1A or M1B — which are categorized as physician office care in this file — reference \nPHYS_MDCR_PMT). The total Primary Payer Payments are calculated as the sum of the \nLINE_BENE_PRMRY_PYR_PD_AMT. \nSHORT NAME: — \nLONG NAME: EM_PRMRY_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n—",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

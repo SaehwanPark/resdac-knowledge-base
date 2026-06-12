@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_370",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "of Pressure Ulcer Risk: None of Above CHAR 1 The data in this column indicates that none of the above applies. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n412 M0150_PRSR_ULCR_RISK_CD M0150_PRSR_ULCR_RISK_CD M0150 Pressure Ulcer Risk Code CHAR 1 The data in this column indicates whether the resident is at risk for developing pressure ulcers. -=Not assessed/no information\n0=No\n1=Yes\n413 M0210_STG_1_HGHR_ULCR_CD M0210_STG_1_HGHR_ULCR_CD M0210 One or More Stage 1 or Higher",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p62__chunk_3",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 62,
+  "text": "STATE_CNTY_FIPS_CD_10 \nSTATE_CNTY_FIPS_CD_11 \nSTATE_CNTY_FIPS_CD_12 \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n5-digit numeric value, which can include leading zeros, or null (if there is no crosswalk from the SSA \ncode to the FIPS code) \nCOMMENT: \nThe first 2 digits specify the state; the last 3 digits specify the county. \nThis variable is derived by taking the SSA state/county code on record for the beneficiary in the CMS \nenrollment database and",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

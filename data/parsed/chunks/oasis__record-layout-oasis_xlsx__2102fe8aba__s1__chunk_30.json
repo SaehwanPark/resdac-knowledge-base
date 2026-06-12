@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 1 x x\nM0170_DC_HOSP_14_D (M0170) Hospital From which of the following inpatient facilities was the patient discharged during the past 14 days: Hospital. 0 = No, 1 = Yes CHAR 1 x x\nM0170_DC_N_HM_14_D (M0170) Nursing Home From which of the following inpatient facilities was the patient discharged during the past 14 days: Nursing home. 0 = No, 1 = Yes CHAR 1 x x\nM0170_DC_OTHER (M0170) Other Inpatient Facility From which of the following inpatient facilities was the patient discharged during",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

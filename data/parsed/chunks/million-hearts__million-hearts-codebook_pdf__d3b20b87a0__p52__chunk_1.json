@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p52__chunk_1",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 52,
+  "text": "Million Hearts Data Registry \nVALUES: \nEx — 114, 2, 684, 999, %, (12-27), 7.4 TH/UL, NORMAL, or null/missing \nCOMMENT: \nThe values in the Clinical_final file have been cleaned and standardized and include missing values. In \nthe raw clinical file, values are a mixture of non-standardized values which may include values from \ntest results, ranges of values, symbols such as % or +, as well as free-form text, and other unknown \nvalues. \nThe information in the VALUE field is associated with CODE",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

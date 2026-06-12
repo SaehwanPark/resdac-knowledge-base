@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_454",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "CHAR 1 The data in this column indicates whether the resident received a pneumococcal vaccine. -=Not assessed/no information\n0=No\n1=Yes\n508 O0300B_RSN_PPV_NOT_RCVD_CD O0300B_RSN_PPV_NOT_RCVD_CD O0300B Reason Pneumococcal Vaccination Not Received Code CHAR 1 The data in this column indicates the reason that the resident did not receive the pneumococcal vaccine. -=Not assessed/no information\n1=Not elgible - medical contraindication\n2=Offered and declined\n3=Not offered\n^=Blank (skip pattern)\n509",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

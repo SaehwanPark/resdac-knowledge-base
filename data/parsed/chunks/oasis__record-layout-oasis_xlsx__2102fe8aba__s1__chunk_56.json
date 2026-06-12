@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_56",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(TPN or lipids). 0 = No, 1 = Yes CHAR 1 x x\nM0260_OVRALL_PROGN (M0260) Overall Prognosis Overall prognosis: best description of patient's overall prognosis for recovery from this episode of illness. 00 = Poor: little or no recovery is expected and/or further decline is imminent.\n01 = Good/Fair: partial to full recovery is expected.\nUK = Unknown. CHAR 2 x x\nM0270_REHAB_PROGN (M0270) Rehabilitive Prognosis Rehabilitative prognosis: best description of patient's prognosis for functional status. 00",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

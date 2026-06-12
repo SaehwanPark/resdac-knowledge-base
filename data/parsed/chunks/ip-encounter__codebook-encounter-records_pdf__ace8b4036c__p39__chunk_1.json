@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p39__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 39,
+  "text": "Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n— \nCOMMENT: \nThe \"from\" date on the claim may not always represent the first date of services, particularly for home \nhealth care. To obtain the date corresponding with the onset of services (or admission date) use the \nadmission date from the claim (variable called CLM_ADMSN_DT for IP, SNF and HH. \nFor Part B non-institutional (carrier and DME) services, this variable corresponds",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

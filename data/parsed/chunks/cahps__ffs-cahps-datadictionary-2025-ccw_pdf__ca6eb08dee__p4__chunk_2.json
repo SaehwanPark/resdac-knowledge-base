@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p4__chunk_2",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 4,
+  "text": "Variable Types in the MCAHPS Survey Data \nVariable Type \nVariable Prefix \nDescription \nAnalytic survey variables \nVaries according to question topic (i.e. ma_, ins_, ca_, etc) \nVariables that directly correspond to survey items \nDerived variables \nws_ \nVariables created during data processing to summarize survey completeness \nSurvey processing variables \nsu_ \nVariables created by survey vendors to identify information about data collection \nAdministrative variables \nsa_ \nVariables that contain",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

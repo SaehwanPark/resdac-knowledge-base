@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__data-documentation__5852cefcaf__chunk_2",
+  "source_document": "data/raw/html/documentation_page/5852cefcaf4dca5dba3392a521caae7b6816e9f1.html",
+  "page": null,
+  "text": "| 15 | CLM_FAC_TYPE_CD | Claim Facility Type Code (Encounter) | \n\n | 16 | CLM_SRVC_CLSFCTN_TYPE_CD | Claim Service Classification Type Code (Encounter) | \n\n | 17 | CLM_FREQ_CD | Claim Frequency Code (Encounter) | \n\n | 18 | CNTRCT_NUM | Medicare Part C Contract Number | \n\n | 19 | CNTRCT_PBP_NUM | Medicare Part C Plan Benefit Package (PBP) Number | \n\n | 20 | CLM_MDCL_REC | Claim Medical Record Number (Encounter) | \n\n | 21 | ORG_NPI | Organization NPI Number (Encounter) | \n\n | 22 | ORG_TXNMY_CD |",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter/data-documentation"
+}

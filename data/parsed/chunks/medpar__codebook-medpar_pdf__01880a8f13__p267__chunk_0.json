@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p267__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 267,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n251 \nWarning indicator 4 ('utilization day/LOS day indicator' derived after summing up fields on the final \naction claim(s) that comprise the stay; compares resulting utilization day count and length-of-stay [LOS] \ncount): \n0 = Utilization day count = LOS day count \n1 = Utilization day count < LOS day count \n2 = Utilization day count > LOS day count \nWarning indicator 5 ('single/multiple claim",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

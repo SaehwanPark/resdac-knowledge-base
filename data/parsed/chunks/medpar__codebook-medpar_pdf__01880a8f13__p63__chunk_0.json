@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p63__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 63,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n47 \nCLM_PTNT_RLTNSHP_CD \nLABEL: \nClaim Patient Relationship Code \nDESCRIPTION: The code used to identify the patient relationship to the beneficiary. \nSHORT NAME: CLM_PTNT_RLTNSHP_CD \nLONG NAME: CLM_PTNT_RLTNSHP_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n18 = Patient is insured \n39 = Organ donor Null/missing \nCOMMENT: \nThis field is new in 2011. It comes from the patient relationship code",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

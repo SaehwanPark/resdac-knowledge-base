@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p134__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 134,
+  "text": "system \nVALUES: \n0 = Did not screen positive for food need \n1 = Screened positive for food need \nMissing \nCOMMENT: \nVariable considers the two HRSN food screening questions: SR_CORE_FOOD_1_CD and \nSR_CORE_FOOD_2_CD. This field is “1” if either of the two questions had a value of 1 = Sometimes \nTrue or 2 = Often True (positive for need). \nVariables that start with “SR” include information for each screening. \n^ Back to TOC ^",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p237__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 237,
+  "text": "version code (variables SRGCL_PRCDR_VRSN_CD_1–\nSRGCL_PRCDR_VRSN_CD_25) indicates whether this code is ICD-9 or ICD-10. \nPRCDRCD7–PRCDRCD25 were new in 2009 (earlier surgical procedure codes were available all years; we \nhad 1–6 historically). \nThe principal procedure code is stored as the first procedure code (PRCDRCD1). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

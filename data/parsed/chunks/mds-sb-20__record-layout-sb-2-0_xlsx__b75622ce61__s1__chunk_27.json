@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_27",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "day assessment, 2 = Medicare 30 day assessment, 3 = Medicare 60 day assessment, 4 = Mediare 90 day assessment, 5 = Medicare readmission/return assessment, 6 = Other state required assessment, 7 = Medicare 14 day assessment, 8 = Other Medicare required assessment\n53 AB1 AB1_ADMSN_DT 13(AB1)Admission Date DATE 8 The date of the initial admission for swing bed services.\n54 R4 R4_DISCHARGE_DT 15(R4)Discharge Date DATE 8 The date that the patient was discharged from the Swing Bed.\n55 A4A",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

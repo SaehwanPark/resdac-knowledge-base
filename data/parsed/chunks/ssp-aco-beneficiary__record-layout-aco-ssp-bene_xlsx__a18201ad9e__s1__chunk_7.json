@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "used in second quarter assignment NUM 1 Tracks 1 and 2 Q2 = 12 months prior to the end of Q2 of reference year - i.e. 7/1/20xx - 6/30/20xx; Track 3 Q1 and Q2 current reference year - i.e. 1/1/20yy - 6/30/20yy x x x x x x x - x x x\nQ3_ASSIGN Assigned in Quarter 3 (Boolean) 0/1 flag; =1 if beneficiary was assigned in third quarter (from quarterly assignment table in IDR) based on the ACO's certified participant list used in third quarter assignment NUM 1 Tracks 1 and 2 Q2 = 12 months prior to the",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

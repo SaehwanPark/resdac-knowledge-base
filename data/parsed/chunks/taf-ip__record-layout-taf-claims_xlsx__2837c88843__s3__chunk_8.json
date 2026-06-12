@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_8",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Referring Provider Taxonomy Code CHAR 12 45 Retired4\nRFRG_PRVDR_TYPE_CD Referring Provider Type Code CHAR 2 46 Retired4\nRFRG_PRVDR_SPCLTY_CD Referring Provider Specialty Code CHAR 2 47 Retired4\nORDRG_PRVDR_ID Ordering Provider Identification Number CHAR 30 98 New3\nORDRG_PRVDR_NPI Ordering Provider NPI CHAR 10 99 New3\nDRCTNG_PRVDR_NPI NPI of Provider Directing the Patient's Care CHAR 10 48 Retired4\nDRCTNG_PRVDR_TXNMY_CD Taxonomy Code of Provider Directing the Patient's Care CHAR 12 49",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

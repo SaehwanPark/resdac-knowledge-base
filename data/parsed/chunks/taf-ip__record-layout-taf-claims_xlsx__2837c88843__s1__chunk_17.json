@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "Code CHAR 2 108\nBLG_PRVDR_SPCLTY_CD Billing Provider Specialty Code CHAR 2 109\nRFRG_PRVDR_ID Referring Provider Identification Number CHAR 30 110\nRFRG_PRVDR_NPI Referring Provider NPI CHAR 10 111\nRFRG_PRVDR_TYPE_CD Referring Provider Type Code CHAR 2 112 Retired4\nRFRG_PRVDR_SPCLTY_CD Referring Provider Specialty Code CHAR 2 113 Retired4\nPRVDR_LCTN_CD Provider Location Code CHAR 5 114\nBRDR_STATE_IND Border State Indicator CHAR 1 115\nIP_MH_TXNMY_IND Mental Health Provider Taxonomy Indicator CHAR",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

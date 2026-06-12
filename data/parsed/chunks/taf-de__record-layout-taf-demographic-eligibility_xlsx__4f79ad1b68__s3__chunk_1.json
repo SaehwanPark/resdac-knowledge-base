@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 3,
+  "text": "2 3\nSUBMTG_STATE_CD Submitting State Entity Code CHAR 2 4\nCMPRHNSV_MCO_MOS Comprehensive Managed Care Organization (MCO) Plan Months NUM 3 5\nTRDTNL_PCCM_MOS Traditional Primary Care Case Management (PCCM) Months NUM 3 6\nENHNCD_PCCM_MOS Enhanced Primary Care Case Management (PCCM) Months NUM 3 7\nHIO_MOS Hlth Insuring Organization (HIO) Months NUM 3 8\nPIHP_MOS Prepaid Inpatient Hlth Plan (PIHP) Months NUM 3 9\nPAHP_MOS Prepaid Ambulatory Hlth Plan (PAHP) Months NUM 3 10\nLTC_PIHP_MOS Long-Term Care",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

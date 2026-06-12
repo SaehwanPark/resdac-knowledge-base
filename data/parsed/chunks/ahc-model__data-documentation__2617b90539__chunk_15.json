@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__data-documentation__2617b90539__chunk_15",
+  "source_document": "data/raw/html/documentation_page/2617b90539062fe66e0d34c18b850febb573183e.html",
+  "page": null,
+  "text": "| Screened Supplemental HRSN Substance Use Overall Indicator | \n\n | SR_HAS_CORE_HRSN_IND | Beneficiary Has at Least 1 Core HRSN | \n\n | SR_ER_VISITS_CD | Beneficiary Number of ED Visits Last 12 Months | \n\n | SR_ELGBL_FOR_NVGTN_IND | Beneficiary Eligibility for Navigation, includes Track 1 Control Group Benes | \n\n | SR_GRP_ASGNMT_IND | Beneficiary Group Assignment Assistance Track | \n\n | SR_NVGTN_OPT_IN_OUT_IND | Beneficiary Opted In or Out of Navigation services | \n\n | SR_NVGTN_OPT_IN_OUT_DT |",
+  "dataset": "ahc-model",
+  "url": "https://resdac.org/cms-data/files/ahc-model/data-documentation"
+}

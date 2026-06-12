@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p48__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 48,
+  "text": "formularies for their plan benefit packages to CMS \nvia the Health Plan Management System (HPMS). \nThis includes information on which drugs are subject to prior authorization, which means that a \nphysician must get the plan’s approval in advance before prescribing the drug. The CCW creates this \nvariable based on the beneficiary’s plan of record, which is identified using the Part D contract and \nplan benefit package of record (the PLAN_CNTRCT_REC_ID and PLAN_PBP_REC_NUM variables). For a",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p52__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 52,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n47 \nPTD_MODEL_IND \nLABEL: \nPart D Model Indicator \nDESCRIPTION: Plan reported value indicating the Part D Model type applied to the PDE. \nSHORT NAME: PTD_MODEL_IND \nLONG NAME: PTD_MODEL_IND \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE \nVALUES: \n01 = Value-based Insurance Design (VBID) Model \n07 = Part D Senior Savings (PDSS) Model \nNull/missing = no Part D Model",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

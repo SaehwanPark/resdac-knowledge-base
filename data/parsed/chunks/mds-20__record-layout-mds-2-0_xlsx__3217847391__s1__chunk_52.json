@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_52",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "routine: cycle of daily events - moves independently indoors. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n102 AC1G AC1G_TOBAC_DAILY (AC1G) Use of Tobacco Products at Least Daily CHAR 1 Customary routine: cycle of daily events - use of tobacco daily. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n103 AC1H AC1H_NONE_ABOVE (AC1H) None of Above Cycle of Daily Events CHAR 1 Customary routine: cycle of daily events - none of above. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n104 AC1I AC1I_FOOD_PREF (AC1I)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_174",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Wheeled CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days - other person wheeled. 0 = No, 1 = Yes, \"-\" = Unknown.\n245 G5D G5D_WHEELCHAIR (G5D) Wheelchair Primary Mode of Locomotion CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days - wheelchair for primary locomotion. 0 = No, 1 = Yes, \"-\" = Unknown.\n246 G5E G5E_NONE_ABOVE (G5E) None of Above Modes of Locomotion CHAR 1 Physical functioning and structural problems: modes",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

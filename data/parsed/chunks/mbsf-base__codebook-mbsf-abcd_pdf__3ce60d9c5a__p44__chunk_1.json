@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p44__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 44,
+  "text": "January through December \nDESCRIPTION: This variable is the Medicare Part C contract number for the beneficiary’s Medicare Advantage (MA) \nplan for a given month (January through December). \nCMS assigns an identifier to each contract that a managed care plan has with CMS. \nSHORT NAME: \nPTC_CNTRCT_ID_01 \nPTC_CNTRCT_ID_02 \nPTC_CNTRCT_ID_03 \nPTC_CNTRCT_ID_04 \nPTC_CNTRCT_ID_05 \nPTC_CNTRCT_ID_06 \nPTC_CNTRCT_ID_07 \nPTC_CNTRCT_ID_08 \nPTC_CNTRCT_ID_09 \nPTC_CNTRCT_ID_10 \nPTC_CNTRCT_ID_11",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

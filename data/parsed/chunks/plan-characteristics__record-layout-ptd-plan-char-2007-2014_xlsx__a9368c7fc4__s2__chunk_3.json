@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s2__chunk_3",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 2,
+  "text": "Part D Low Income Premium Subsidy 100% NUM 8 X X X\nBELOW_BENCHMARK Part D Plan Offered Below Benchmark CHAR 1 X X X\n1 For all columns under \"Year of Data File\": X = variable is present; LC = length change for variable.\n2 Prior to the 2013 data release, CCW was required to encrypt these sensitive data fields. These sensitive fields were those which could be used to identify the the plan sponsor's contract (CONTRACT_ID) and plan benefit package (PLAN_ID). We are no longer required to encrypt",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

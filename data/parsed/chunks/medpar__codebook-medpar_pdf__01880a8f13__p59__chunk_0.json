@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p59__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 59,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n43 \nCLM_FULL_STD_PYMT_AMT \nLABEL: \nClaim Full Standard Payment Amount \nDESCRIPTION: Under the Long-Term Care Hospital (LTCH) Prospective Payment System (PPS), the payment amount \nbased on the MS-LTC-DRG. This amount does not include any applicable outlier payment amount. \nSHORT NAME: CLM_FULL_STD_PYMT_AMT \nLONG NAME: CLM_FULL_STD_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \nXXXXXX",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

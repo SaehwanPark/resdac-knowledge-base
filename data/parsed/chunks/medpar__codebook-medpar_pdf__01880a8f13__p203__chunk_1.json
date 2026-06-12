@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p203__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 203,
+  "text": "for rehabilitation hospitals \nZ = Swing bed designation for critical access hospitals \nThere is also a special numbering system for assigning emergency hospital identification numbers (non-\nparticipating hospitals). \nThe sixth position of the provider number is as follows: \nE = Non-federal emergency hospital \nF = Federal emergency hospital \nStarting in 2021, the PRVDR_BASE_FAC_CCN_NUM is populated with CCN of the parent provider for \nIPPS hospitals, critical access hospitals, and IPPS-excluded",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

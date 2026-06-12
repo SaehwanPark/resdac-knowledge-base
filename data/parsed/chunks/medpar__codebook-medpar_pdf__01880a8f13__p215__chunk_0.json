@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p215__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 215,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n199 \nRDLGY_CHRG_AMT \nLABEL: \nRadiology charge amount (excluding MRI) ($) \nDESCRIPTION: The charge amount (rounded to whole dollars) for radiology costs (including oncology, excluding MRI) \nrelated to a beneficiary's stay. \nSHORT NAME: RDLGYAMT \nLONG NAME: RDLGY_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

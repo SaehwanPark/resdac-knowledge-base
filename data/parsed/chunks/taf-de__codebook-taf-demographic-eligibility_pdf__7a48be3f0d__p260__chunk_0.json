@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p260__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 260,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n220 \nOTH_WVR_1115_MOS \nLABEL: \n1115 Other Type of Waiver Months \nDESCRIPTION: Number of months the beneficiary was enrolled in a Section 1115 (“Research and Demonstration \nAuthority”) waiver in the calendar year. \nSHORT NAME: OTH_WVR_1115_MOS \nLONG NAME: OTH_WVR_1115_MOS \nTYPE: \nNUM \nLENGTH: \n2 \nFILE(S): \nWaiver \nSOURCE: \nT-MSIS annual demographic and eligibility TAF",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_857",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "O0110A2A Treatment: Chemo - IV (Admission) CHAR 1 The data in this column indicates whether the resident received IV chemotherapy days one through three (on admission) of becoming a resident of the facility. 0=No\n1=Yes effective 10/01/2023\n955 CHMTHRPY_INTRVNS_DSCHRG_CD CHMTHRPY_INTRVNS_DSCHRG_CD O0110A2C Treatment: Chemo - IV (Discharge) CHAR 1 The data in this column indicates whether the resident received IV chemotherapy in the last three days of their SNF stay. 0=No\n1=Yes effective",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

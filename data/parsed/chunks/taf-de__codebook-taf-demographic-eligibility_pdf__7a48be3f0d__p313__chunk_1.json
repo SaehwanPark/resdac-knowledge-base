@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p313__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 313,
+  "text": "SUBMTG_STATE_CD \nLONG NAME: SUBMTG_STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAll demographic and eligibility \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \nFIPS state codes can be found at: https://www.census.gov/library/reference/code-lists/ansi.html \nTwo-digit value (with leading zeros) \n01: Alabama \n02: Alaska \n04: Arizona \n05: Arkansas \n06: California \n08: Colorado \n09: Connecticut \n10: Delaware \n11: District of Columbia \n12: Florida \n13: Georgia \n15: Hawaii \n16: Idaho",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

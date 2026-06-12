@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "_9C ETH_AFRCN_AMRCN_SW (9C) Race: Black or African American CHAR 1 The patient's race or ethnic category: Black or African American. 0 = No, 1 = Yes\n22 _9D ETH_HSPNC_LTN_SW (9D) Ethnicity: Hispanic or Latino CHAR 1 The patient's race or ethnic category: Hispanic or Latino. 0 = No, 1 = Yes\n23 _9E ETH_NTV_HI_PCFC_ISLDR_SW (9E) Race: Native Hawaiian or other Pacific Islander CHAR 1 The patient's race or ethnic category: Native Hawaiian or other Pacific Islander. 0 = No, 1 = Yes\n24 _9F ETH_WHT_SW",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

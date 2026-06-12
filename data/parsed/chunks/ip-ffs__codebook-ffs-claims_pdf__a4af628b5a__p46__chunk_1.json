@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p46__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 46,
+  "text": "NCH \nVALUES: \nOnly one-byte was used until 1/2011 (currently, either 1- or 2-byte values may be used, symbols not \ncurrently allowed) \n0 = Denied \n1 = Physician/Supplier \n2 = Beneficiary \n3 = Both physician/supplier and \nbeneficiary \n4 = Hospital (hospital-based \nphysicians) \n5 = Both hospital and beneficiary \n6 = Group practice prepayment plan \n7 = Other entries (e.g., Employer, \nunion) \n8 = Federally funded \n9 = PA service \nA = Beneficiary under limitation of \nliability \nB =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

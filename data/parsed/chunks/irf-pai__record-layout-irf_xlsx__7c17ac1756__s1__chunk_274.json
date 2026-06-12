@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_274",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "of admission.\n261 STG_3_PRSR_ULCRS_DSCHRG_NUM STG_3_PRSR_ULCRS_DSCHRG_NUM 48BD/M0300C1 Stage 3 Pressure Ulcers Discharge Number. When Discharge Date is on or after Oct. 1,2014, M0300C1 Stage 3 Pressure Ulcers Discharge Number will be displayed CHAR 1 This indicates the number of unhealed Stage 3 pressure ulcers that were present at the time of discharge.\n262 STG_4_PRSR_ULCR_DSCHRG_NOT_NUM STG_4_PRSR_ULCR_DSCHRG_NOT_NUM M0300D4 Stage 4 Pressure Ulcers Discharge Not Present or Lesser Stage on",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

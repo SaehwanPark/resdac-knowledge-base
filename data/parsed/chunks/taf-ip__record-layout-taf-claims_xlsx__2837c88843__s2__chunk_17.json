@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_17",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "NUM 8 117 New3\nDDCTBL_AMT Beneficiary Deductible Amount NUM 8 97\nTOT_BENE_DDCTBL_LBLTY_AMT Total Beneficiary Deductible Liability Amount NUM 8 118 New3\nCMBND_BENE_CST_SHRNG_PD_AMT Combined Beneficiary Cost Sharing Paid Amount NUM 8 119 New3\nCOPAY_WVD_IND Indicator Signifying Copay was Waived by Provider CHAR 1 98 Retired4\nTP_PD_AMT Total Third Party Liability Paid Amount NUM 8 99\nTP_COINSRNC_PD_AMT Third Party Coinsurance Paid Amount NUM 8 100\nTP_COPAY_PD_AMT Third Party Copayment Paid Amount",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

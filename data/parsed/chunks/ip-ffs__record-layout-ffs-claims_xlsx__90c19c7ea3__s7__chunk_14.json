@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_14",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "NUM 4 9\nTYPSRVCB LINE_CMS_TYPE_SRVC_CD Line CMS Type Service Code CHAR 1 10\nPLCSRVC LINE_PLACE_OF_SRVC_CD Line Place of Service Code CHAR 2 11\nEXPNSDT1 LINE_1ST_EXPNS_DT Line First Expense Date DATE 8 12\nEXPNSDT2 LINE_LAST_EXPNS_DT Line Last Expense Date DATE 8 13\nHCPCS_CD HCPCS_CD Healthcare Common Procedure Coding System (HCPCS) Code CHAR 5 14\nMDFR_CD1 HCPCS_1ST_MDFR_CD HCPCS Initial Modifier Code CHAR 5 15\nMDFR_CD2 HCPCS_2ND_MDFR_CD HCPCS Second Modifier Code CHAR 5 16\nMDFR_CD3",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

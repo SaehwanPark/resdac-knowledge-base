@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p118__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 118,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n120 \nPRVDR_NUM_ISSG_ENT_ID \nLABEL: \nProvider Number Issuing Entity Identifier \nDESCRIPTION: A code to identify the entity which issued the provider identification number that is captured in the \nPRVDR_NUM data element. \nSHORT NAME: PRVDR_NUM_ISSG_ENT_ID \nLONG NAME: PRVDR_NUM_ISSG_ENT_ID \nTYPE: \nCHAR \nLENGTH: \n18 \nFILE(S): \nAPR Identifiers \nSOURCE: \nT-MSIS annual provider",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

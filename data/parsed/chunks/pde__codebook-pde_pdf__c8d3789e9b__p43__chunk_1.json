@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p43__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 43,
+  "text": "networks that are sufficient to ensure access to \nMedicare beneficiaries – including retail, home infusion, and long-term care pharmacies. Plan \nsponsors have contracts with pharmacies to provide “in-network” services. \nSHORT NAME: — \nLONG NAME: PHRMCY_SRVC_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE \nVALUES: \n01 = Community/retail pharmacy \n02 = Compounding pharmacy \n03 = Home infusion therapy provider \n04 = Institutional pharmacy \n05 = Long-term care pharmacy \n06 = Mail order pharmacy \n07",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

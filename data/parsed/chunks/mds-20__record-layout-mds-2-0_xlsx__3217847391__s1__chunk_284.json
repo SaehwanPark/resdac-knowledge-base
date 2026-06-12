@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_284",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "treatments, procedures, and programs - special care - treatments in last 14 days - intake/output. 0 = No, 1 = Yes, \"-\" = Unknown.\n476 P1AE P1AE_ACUTE_COND (P1AE) Monitoring Acute Medical Condition CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - monitoring acute medical condition. 0 = No, 1 = Yes, \"-\" = Unknown.\n477 P1AF P1AF_OSTOMY (P1AF) Ostomy Care CHAR 1 Special treatments and procedures: special treatments,",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

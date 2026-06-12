@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p360__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 360,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n342 \nREV_CNTR_BLOOD_DDCTBL_AMT \nLABEL: \nRevenue Center Blood Deductible Amount \nDESCRIPTION: This variable is the dollar amount the beneficiary is responsible for related to the deductible for blood \nproducts that appear on the revenue center record. \nA deductible amount applies to the first 3 pints of blood (or equivalent units; applies only to whole \nblood or packed red",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_190",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Continence in last 14 days: appliances and programs - external (condom) catheter. 0 = No, 1 = Yes, \"-\" = Unknown.\n270 H3D H3D_INDWELL_CATH (H3D) Indwelling Catheter CHAR 1 Continence in last 14 days: appliances and programs - indwelling catheter. 0 = No, 1 = Yes, \"-\" = Unknown.\n271 H3E H3E_INTERMIT_CATH (H3E) Intermittent Catheter CHAR 1 Continence in last 14 days: appliances and programs - intermittent catheter. 0 = No, 1 = Yes, \"-\" = Unknown.\n272 H3F H3F_NOT_USE_TOLIET (H3F) Did Not",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

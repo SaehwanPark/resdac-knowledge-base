@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p15__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 15,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n5 \nBENE_DSCHRG_DT \nLABEL: \nBeneficiary Discharge Date \nDESCRIPTION: On an inpatient, SNF, or home health claim, the date the beneficiary was discharged/transferred from \nthe facility or died. \nSHORT NAME: BENE_DSCHRG_DT \nLONG NAME: BENE_DSCHRG_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nVALUES: \n— \nCOMMENT: \n— \n^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

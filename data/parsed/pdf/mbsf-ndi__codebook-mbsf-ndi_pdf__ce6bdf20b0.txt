@@ -1,0 +1,2517 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+ 
+Chronic Conditions Warehouse Virtual Research Data Center  
+Master Beneficiary Summary File (MBSF) 
+National Death Index (NDI) Segment Codebook  
+MAY 2026 │ VERSION 2.6
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+May 2026 
+K. Schneider 
+Added values to NDI_STATE_DEATH_CD 
+2.6 
+April 2026 
+K. Schneider 
+Updated CDC reference for ICD_CODE_113, ICD_CODE_130, and 
+ICD_CODE_358, and added ICD codes U07.0 and U07.1 to 
+appropriate categories 
+2.5 
+December 2023 K. Schneider 
+Clarified available years for variables 
+2.4 
+February 2021 
+C. Alleman 
+K. Russell 
+Migrated codebook to 2020 document template 
+2.3 
+November 2018 C. Alleman 
+K. Schneider  
+Inserted statement re: missing data for ICD_CODE_358 and 
+ICD_CODE_113 
+2.2 
+June 2018 
+C. Alleman  
+Updated values for ICD_CODE_113, ICD_CODE_130, and 
+ICD_CODE_358 
+2.1 
+March 2018 
+C. Alleman 
+K. Schneider 
+S. Pietzsch  
+Added new variables received with second purchase of NDI data 
+2.0 
+May 2017 
+C. Alleman 
+K. Schneider 
+Initial release of codebook for Master Beneficiary Summary File 
+(MBSF) — National Death Index (NDI) Segment 
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Beneficiary Summary File (MBSF) 
+— National Death Index (NDI) Segment research files. The guide includes several ways for users to quickly find the 
+information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and notes discussing the variable construction and use 
+The CCW team has included hyperlinks throughout the codebook to make it easier for users to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes users to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes users back to the Table of Contents
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+ii 
+Table of Contents  
+This section of the Codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links: 
+Variable Details............................................................................................................................................................. 1 
+BENE_ENROLLMT_REF_YR ........................................................................................................................................ 1 
+BENE_ID ................................................................................................................................................................... 2 
+DEATH_CERT_NUM .................................................................................................................................................. 3 
+ENRL_SRC ................................................................................................................................................................. 4 
+ENTITY_COND_1 ....................................................................................................................................................... 5 
+ENTITY_COND_2 ....................................................................................................................................................... 5 
+ENTITY_COND_3 ....................................................................................................................................................... 5 
+ENTITY_COND_4 ....................................................................................................................................................... 5 
+ENTITY_COND_5 ....................................................................................................................................................... 5 
+ENTITY_COND_6 ....................................................................................................................................................... 5 
+ENTITY_COND_7 ....................................................................................................................................................... 5 
+ENTITY_COND_8 ....................................................................................................................................................... 5 
+ENTITY_COND_9 ....................................................................................................................................................... 5 
+ENTITY_COND_10 ..................................................................................................................................................... 5 
+ENTITY_COND_11 ..................................................................................................................................................... 5 
+ENTITY_COND_12 ..................................................................................................................................................... 5 
+ENTITY_COND_13 ..................................................................................................................................................... 5 
+ENTITY_COND_14 ..................................................................................................................................................... 5 
+ENTITY_COND_15 ..................................................................................................................................................... 5 
+ENTITY_COND_16 ..................................................................................................................................................... 5 
+ENTITY_COND_17 ..................................................................................................................................................... 5 
+ENTITY_COND_18 ..................................................................................................................................................... 5 
+ENTITY_COND_19 ..................................................................................................................................................... 5 
+ENTITY_COND_20 ..................................................................................................................................................... 5 
+ICD_CODE ................................................................................................................................................................. 7 
+ICD_CODE_113 ......................................................................................................................................................... 8 
+ICD_CODE_130 ....................................................................................................................................................... 13 
+ICD_CODE_358 ....................................................................................................................................................... 19 
+ICD_TITLE ............................................................................................................................................................... 34 
+NDI_DEATH_DT ...................................................................................................................................................... 35 
+NDI_STATE_DEATH_CD ........................................................................................................................................... 36 
+RECORD_COND_1 ................................................................................................................................................... 37 
+RECORD_COND_2 ................................................................................................................................................... 37 
+RECORD_COND_3 ................................................................................................................................................... 37 
+RECORD_COND_4 ................................................................................................................................................... 37 
+RECORD_COND_5 ................................................................................................................................................... 37 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+iii 
+RECORD_COND_6 ................................................................................................................................................... 37 
+RECORD_COND_7 ................................................................................................................................................... 37 
+RECORD_COND_8 ................................................................................................................................................... 37 
+RECORD_COND_9 ................................................................................................................................................... 37 
+RECORD_COND_10 ................................................................................................................................................. 37 
+RECORD_COND_11 ................................................................................................................................................. 37 
+RECORD_COND_12 ................................................................................................................................................. 37 
+RECORD_COND_13 ................................................................................................................................................. 37 
+RECORD_COND_14 ................................................................................................................................................. 37 
+RECORD_COND_15 ................................................................................................................................................. 37 
+RECORD_COND_16 ................................................................................................................................................. 37 
+RECORD_COND_17 ................................................................................................................................................. 37 
+RECORD_COND_18 ................................................................................................................................................. 37 
+RECORD_COND_19 ................................................................................................................................................. 37 
+RECORD_COND_20 ................................................................................................................................................. 37 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Medicare Beneficiary Summary File (MBSF) 
+National Death Index (NDI) segment files. Each entry has variable details to facilitate understanding and use of the 
+variables. 
+BENE_ENROLLMT_REF_YR 
+LABEL: 
+Reference Year 
+DESCRIPTION: This field indicates the reference year of the enrollment data. 
+SHORT NAME: RFRNC_YR 
+LONG NAME: BENE_ENROLLMT_REF_YR 
+TYPE: 
+NUM 
+LENGTH: 
+4 
+SOURCE: 
+CMS Common Medicare Environment (CME)) 
+VALUES: 
+1999 forward 
+COMMENT: 
+The data files are partitioned into calendar year files. Since the source data originate outside of CMS, 
+the update cycle is not the same as the other MBSF segments and does not occur on any regular 
+cadence. For years available, reference the CCW Data Availability web page. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+2 
+BENE_ID 
+LABEL:  
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary.  
+The CCW assigns a unique beneficiary identification number to each individual who receives Medicare 
+and/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., 
+Medicare claims, Medicaid T-MSIS claims, MAX claims, and MDS assessment data). 
+This number does not change during a beneficiary’s lifetime and each number is used only once. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME: BENE_ID 
+LONG NAME: BENE_ID 
+TYPE:  
+CHAR 
+LENGTH: 
+15 
+SOURCE: 
+CCW 
+VALUES: 
+— 
+COMMENT: 
+— 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+3 
+DEATH_CERT_NUM 
+LABEL:  
+NDI Death Certificate Number 
+DESCRIPTION: This field represents the death certificate number of the beneficiary. 
+SHORT NAME: DEATH_CERT_NUM 
+LONG NAME: DEATH_CERT_NUM 
+TYPE:  
+CHAR 
+LENGTH: 
+6 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+— 
+COMMENT: 
+Numbers are not unique across years. Researchers wishing to obtain this NDI segment of the MBSF 
+must obtain an additional approval beyond the CMS DUA. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+4 
+ENRL_SRC 
+LABEL:  
+Enrollment Source 
+DESCRIPTION: This variable indicates the source of enrollment data. 
+SHORT NAME: ENRL_SRC 
+LONG NAME: ENRL_SRC 
+TYPE:  
+CHAR 
+LENGTH: 
+3 
+SOURCE: 
+CCW 
+VALUES: 
+EDB = CMS Enrollment Database 
+CME = CMS Common Medicare Environment 
+COMMENT: 
+The Centers for Medicare & Medicaid Services (CMS) has updated the Medicare enrollment source 
+data for the Master Beneficiary Summary File (MBSF). As of March 2017, the MBSF includes Medicare 
+enrollment information from the CMS Common Medicare Environment (CME) rather than the CMS 
+Common Medicare Environment (CME). Data from the two sources was nearly identical. The CME 
+improves the identification of Medicare Part B enrollment and allows for more timely release of the 
+MBSF. 
+The universe of beneficiaries in the CME versus the EDB version of the MBSF are only slightly different. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+5 
+ 
+ENTITY_COND_1 
+ENTITY_COND_2 
+ENTITY_COND_3 
+ENTITY_COND_4 
+ENTITY_COND_5 
+ENTITY_COND_6 
+ENTITY_COND_7 
+ENTITY_COND_8 
+ENTITY_COND_9 
+ENTITY_COND_10 
+ENTITY_COND_11 
+ENTITY_COND_12 
+ENTITY_COND_13 
+ENTITY_COND_14 
+ENTITY_COND_15 
+ENTITY_COND_16 
+ENTITY_COND_17 
+ENTITY_COND_18 
+ENTITY_COND_19 
+ENTITY_COND_20 
+LABEL: 
+NDI Entity Axis Cause of Death 
+DESCRIPTION: This field identifies the underlying causes of death code as listed by the certifier of death (formatted 
+but not audited). 
+SHORT NAME:   
+ENTITY_COND_1 
+ENTITY_COND_2 
+ENTITY_COND_3 
+ENTITY_COND_4 
+ENTITY_COND_5 
+ENTITY_COND_6 
+ENTITY_COND_7 
+ENTITY_COND_8 
+ENTITY_COND_9 
+ENTITY_COND_10 
+ENTITY_COND_11 
+ENTITY_COND_12 
+ENTITY_COND_13 
+ENTITY_COND_14 
+ENTITY_COND_15 
+ENTITY_COND_16 
+ENTITY_COND_17 
+ENTITY_COND_18 
+ENTITY_COND_19 
+ENTITY_COND_20
+LONG NAME:   
+ENTITY_COND_1 
+ENTITY_COND_2 
+ENTITY_COND_3 
+ENTITY_COND_4 
+ENTITY_COND_5 
+ENTITY_COND_6 
+ENTITY_COND_7 
+ENTITY_COND_8 
+ENTITY_COND_9 
+ENTITY_COND_10 
+ENTITY_COND_11 
+ENTITY_COND_12 
+ENTITY_COND_13 
+ENTITY_COND_14 
+ENTITY_COND_15 
+ENTITY_COND_16 
+ENTITY_COND_17 
+ENTITY_COND_18 
+ENTITY_COND_19 
+ENTITY_COND_20 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+6 
+TYPE:  
+CHAR 
+LENGTH: 
+7 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+Each condition takes seven positions in the record 
+Position1: Part/line number on certificate 
+1 = Part I, line 1 (a) 
+2 = Part I, line 2 (b) 
+3 = Part I, line 3 (c) 
+4 = Part I, line 4 (d) 
+5 = Part I, line 5 (e) 
+6 = Part II 
+Position 2: Sequence of condition within part/line Code range 1–7 
+Position 3–6: Condition code (reference ICD-10 codes) whenever there is a 4-position code, there is 
+always an implied decimal after the third position. 
+Position 7: Nature of Injury flag 
+0 = all other codes (always 0 for ICD-10 codes; 1999 forward) 
+COMMENT: 
+For decedents 1999–2006 there are up to eight underlying conditions on the NDI record, and for 2007 
+forward there are up to 20 underlying conditions (ENTITY_COND_1–ENTITY_COND_20). Researchers 
+wishing to obtain this NDI segment of the MBSF must obtain an additional approval beyond the CMS 
+DUA. There is another version of the underlying cause of death conditions that is edited and audited 
+by the National Center for Health Statistics (NCHS; reference RECORD_COND_1–RECORD_COND_20). 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+7 
+ICD_CODE 
+LABEL:  
+ICD-10 Cause of Death Code 
+DESCRIPTION: This field identifies only the ICD-10 diagnosis code associated with cause of death. The text descriptor 
+for this code is in the field called ICD_TITLE. 
+SHORT NAME: ICD_CODE 
+LONG NAME: ICD_CODE 
+TYPE:  
+CHAR 
+LENGTH: 
+4 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+— 
+COMMENT: 
+All ICD-10 cause of death codes begin with an alpha character followed by two or three digits. NDI 
+results do not include decimals in the cause of death codes. The decimal is implied between the 
+second and third digits for ICD-10 codes. Researchers wishing to obtain this NDI segment of the MBSF 
+must obtain an additional approval beyond the CMS DUA. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+8 
+ICD_CODE_113 
+LABEL:  
+113 ICD-10 Cause of Death Recodes 
+DESCRIPTION: This field groups (or recodes) the NDI ICD-10 code cause of death into 113 categories. The list reflects 
+113 selected causes of death and enterocolitis due to Clostridium Difficile. 
+SHORT NAME: ICD_CODE_113 
+LONG NAME: ICD_CODE_113 
+TYPE:  
+CHAR 
+LENGTH: 
+3 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+001 = Salmonella infections (A01–A02) 
+002 = Shigellosis and amebiasis (A03, 
+A06) 
+003 = Certain other intestinal infections 
+(A04, A07–A09) 
+004 = Tuberculosis (A16–A19) 
+005 = Respiratory tuberculosis (A16) 
+006 = Other tuberculosis (A17–A19) 
+007 = Whooping cough (A37) 
+008 = Scarlet fever and erysipelas (A38, 
+A46) 
+009 = Meningococcal infection (A39) 
+010 = Septicemia (A40–A41) 
+011 = Syphilis (A50–A53) 
+012 = Acute poliomyelitis (A80) 
+013 = Arthropod-borne viral 
+encephalitis (A83–A84, A85.2) 
+014 = Measles (B05) 
+015 = Viral hepatitis (B15–B19) 
+016 = Human immunodeficiency virus 
+(HIV) disease (B20–B24) 
+017 = Malaria (B50–B54) 
+018 = Other and unspecified infectious 
+and parasitic diseases and their 
+sequelae (A00, A05, A20–A36, 
+A42–A44, A48–A49, A54–A79, 
+A81–A82, A85.0–A85.1, A85.8, 
+A86–B04, B06–B09, B25–B49, 
+B55–B99, U071) 
+019 = Malignant neoplasms (C00–C97) 
+020 = Malignant neoplasms of lip, oral 
+cavity, and pharynx (C00–C14) 
+021 = Malignant neoplasm of 
+esophagus (C15) 
+022 = Malignant neoplasm of stomach 
+(C16) 
+023 = Malignant neoplasms of colon, 
+rectum, and anus (C18–C21) 
+024 = Malignant neoplasms of liver and 
+intrahepatic bile ducts (C22) 
+025 = Malignant neoplasm of pancreas 
+(C25) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+9 
+026 = Malignant neoplasm of larynx 
+(C32) 
+027 = Malignant neoplasms of trachea, 
+bronchus, and lung (C33–C34) 
+028 = Malignant melanoma of skin 
+(C43) 
+029 = Malignant neoplasm of breast 
+(C50) 
+030 = Malignant neoplasm of cervix 
+uteri (C53) 
+031 = Malignant neoplasms of corpus 
+uteri and uterus, part 
+unspecified (C54–C55) 
+032 = Malignant neoplasm of ovary 
+(C56) 
+033 = Malignant neoplasm of prostate 
+(C61) 
+034 = Malignant neoplasms of kidney 
+and renal pelvis (C64–C65) 
+035 = Malignant neoplasm of bladder 
+(C67) 
+036 = Malignant neoplasms of 
+meninges, brain, and other 
+parts of central nervous system 
+(C70–C72) 
+037 = Malignant neoplasms of 
+lymphoid, hematopoietic, and 
+related tissue (C81–C96) 
+038 = Hodgkin disease (C81) 
+039 = Non-Hodgkin lymphoma (C82–
+C85) 
+040 = Leukemia (C91–C95) 
+041 = Multiple myeloma and 
+immunoproliferative neoplasms 
+(C88, C90) 
+042 = Other and unspecified malignant 
+neoplasms of lymphoid, 
+hematopoietic, and related 
+tissue (C96) 
+043 = All other and unspecified 
+malignant neoplasms (C17, 
+C23–C24, C26–C31, C37–C41, 
+C44–C49, C51–C52, C57–C60, 
+C62–C63, C66, C68–C69, C73–
+C80, C97)  
+044 = In situ neoplasms, benign 
+neoplasms, and neoplasms of 
+uncertain or unknown behavior 
+(D00–D48) 
+045 = Anemias (D50–D64) 
+046 = Diabetes mellitus (E10–E14) 
+047 = Nutritional deficiencies (E40–E64) 
+048 = Malnutrition (E40–E46) 
+049 = Other nutritional deficiencies 
+(E50–E64) 
+050 = Meningitis (G00, G03) 
+051 = Parkinson disease (G20–G21) 
+052 = Alzheimer disease (G30) 
+053 = Major cardiovascular diseases 
+(I00–I78) 
+054 = Diseases of heart (I00–I09, I11, 
+I13, I20–I51) 
+055 = Acute rheumatic fever and 
+chronic rheumatic heart 
+diseases (I00–I09) 
+056 = Hypertensive heart disease (I11) 
+057 = Hypertensive heart and renal 
+disease (I13) 
+058 = Ischemic heart diseases (I20–I25) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+10 
+059 = Acute myocardial infarction (I21–
+I22) 
+060 = Other acute ischemic heart 
+diseases (I24) 
+061 = Other forms of chronic ischemic 
+heart disease (I20, I25) 
+062 = Atherosclerotic cardiovascular 
+disease, so described (I25.0) 
+063 = All other forms of chronic 
+ischemic heart disease (I20, 
+I25.1–I25.9) 
+064 = Other heart diseases (I26–I51) 
+065 = Acute and subacute endocarditis 
+(I33) 
+066 = Diseases of pericardium and 
+acute myocarditis (I30–I31, I40) 
+067 = Heart failure (I50) 
+068 = All other forms of heart disease 
+(I26–I28, I34–I38, I42–I49, I51) 
+069 = Essential (primary) hypertension 
+and hypertensive renal disease 
+(I10, I12) 
+070 = Cerebrovascular diseases (I60–
+I69) 
+071 = Atherosclerosis (I70) 
+072 = Other diseases of circulatory 
+system (I71–I78) 
+073 = Aortic aneurysm and dissection 
+(I71) 
+074 = Other diseases of arteries, 
+arterioles, and capillaries (I72–
+I78) 
+075 = Other disorders of circulatory 
+system (I80–I99) 
+076 = Influenza and pneumonia (J10–
+J18) 
+077 = Influenza (J10–J11) 
+078 = Pneumonia (J12–J18) 
+079 = Other acute lower respiratory 
+infections (J20–J22) 
+080 = Acute bronchitis and bronchiolitis 
+(J20–J21) 
+081 = Unspecified acute lower 
+respiratory infection (J22) 
+082 = Chronic lower respiratory 
+diseases (J40–J47) 
+083 = Bronchitis, chronic and 
+unspecified (J40–J42) 
+084 = Emphysema (J43) 
+085 = Asthma (J45–J46) 
+086 = Other chronic lower respiratory 
+diseases (J44, J47) 
+087 = Pneumoconiosis and chemical 
+effects (J60–J66, J68, U070) 
+088 = Pneumonitis due to solids and 
+liquids (J69) 
+089 = Other diseases of respiratory 
+system (J00–J06, J30–J39, J67, 
+J70–J98) 
+090 = Peptic ulcer (K25–K28) 
+091 = Diseases of appendix (K35–K38) 
+092 = Hernia (K40–K46) 
+093 = Chronic liver disease and cirrhosis 
+(K70, K73–K74) 
+094 = Alcoholic liver disease (K70) 
+095 = Other chronic liver disease and 
+cirrhosis (K73–K74) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+11 
+096 = Cholelithiasis and other disorders 
+of gallbladder (K80–K82) 
+097 = Nephritis, nephrotic syndrome, 
+and nephrosis (N00–N07, N17–
+N19, N25–N27) 
+098 = Acute and rapidly progressive 
+nephritic and nephrotic 
+syndrome (N00–N01, N04) 
+099 = Chronic glomerulonephritis, 
+nephritis and nephropathy not 
+specified as acute or chronic, 
+and renal sclerosis unspecified 
+(N02–N03, N05–N07, N26) 
+100 = Renal failure (N17–N19) 
+101 = Other disorders of kidney (N25, 
+N27) 
+102 = Infections of kidney (N10–N12, 
+N13.6, N15.1) 
+103 = Hyperplasia of prostate (N40) 
+104 = Inflammatory diseases of female 
+pelvic organs (N70–N76)  
+105 = Pregnancy, childbirth, and the 
+puerperium (O00–O99) 
+106 = Pregnancy with abortive outcome 
+(O00–O07) 
+107 = Other complications of 
+pregnancy, childbirth, and the 
+puerperium (O10–O99) 
+108 = Certain conditions originating in 
+the perinatal period (P00–P96) 
+109 = Congenital malformations, 
+deformations, and 
+chromosomal abnormalities 
+(Q00–Q99) 
+110 = Symptoms, signs, and abnormal clinical 
+and laboratory findings, not elsewhere 
+classified (R00–R99) 
+111 = All other diseases (Residual) 
+(D65–E07, E15–E34, E65–F99, 
+G04–G12, G23–G25, G31–H93, 
+K00–K22, K29–K31, K50–K66, 
+K71–K72, K75–K76, K83–M99, 
+N13.0–N13.5, N13.7–N13.9, 
+N14, N15.0, N15.8–N15.9, N20–
+N23, N28–N39, N41–N64, N80–
+N98) 
+112 = Accidents (unintentional injuries) 
+(V01–X59, Y85–Y86) 
+113 = Transport accidents (V01–V99, 
+Y85) 
+114 = Motor vehicle accidents (V02–
+V04, V09.0, V09.2, V12–V14, 
+V19.0–V19.2, V19.4–V19.6, 
+V20–V79, V80.3–V80.5, V81.0–
+V81.1, V82.0–V82.1, V83–V86, 
+V87.0–V87.8, V88.0–V88.8, 
+V89.0, V89.2) 
+115 = Other land transport accidents 
+(V01, V05–V06, V09.1, V09.3–
+V09.9, V10–V11, V15–V18, 
+V19.3, V19.8–V19.9, V80.0–
+V80.2, V80.6–V80.9, V81.2–
+V81.9, V82.2–V82.9, V87.9, 
+V88.9, V89.1, V89.3, V89.9) 
+116 = Water, air and space, and other 
+and unspecified transport 
+accidents and their sequelae 
+(V90–V99, Y85) 
+117 = Nontransport accidents (W00–
+X59, Y86) 
+118 = Falls (W00–W19) 
+119 = Accidental discharge of firearms 
+(W32–W34) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+12 
+120 = Accidental drowning and 
+submersion (W65–
+W74) 
+121 = Accidental exposure to smoke, 
+fire, and flames (X00–X09) 
+122 = Accidental poisoning and 
+exposure to noxious substances 
+(X40–X49) 
+123 = Other and unspecified 
+nontransport accidents and 
+their sequelae (W20–W31, 
+W35–W64, W75–W99, X10–
+X39, X50–X59, Y86) 
+124 = Intentional self-harm (suicide) 
+(*U03, X60–X84, Y87.0) 
+125 = Intentional self-harm (suicide) by 
+discharge of firearms (X72–X74) 
+126 = Intentional self-harm (suicide) by 
+other and unspecified means 
+and their sequelae (*U03, X60–
+X71, X75–X84, Y87.0) 
+127 = Assault (homicide) (*U01–*U02, X85–Y09, 
+Y87.1) 
+128 = Assault (homicide) by discharge 
+of firearms (*U01.4, X93–X95) 
+129 = Assault (homicide) by other and 
+unspecified means and their 
+sequelae (*U01.0–*U01.3, 
+*U01.5–*U01.9, *U02, X85–
+X92, X96–Y09, Y87.1) 
+130 = Legal intervention (Y35, Y89.0) 
+131 = Events of undetermined intent 
+(Y10–Y34, Y87.2, Y89.9) 
+132 = Discharge of firearms, 
+undetermined intent (Y22–Y24) 
+133 = Other and unspecified events of 
+undetermined intent and their 
+sequelae (Y10–Y21, Y25–Y34, 
+Y87.2, Y89.9) 
+134 = Operations of war and their 
+sequelae (Y36, Y89.1) 
+135 = Complications of medical and 
+surgical care (Y40–Y84, Y88) 
+COMMENT: 
+Additional information regarding these categories can be found on the CDC website (reference 
+https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf ). 
+Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional approval 
+beyond the CMS DUA.  
+NOTE: This field is not populated for a large proportion of 2008 records due to source data issues. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+13 
+ICD_CODE_130 
+LABEL:  
+130 ICD-10 Cause of Death Recodes 
+DESCRIPTION: This field groups (or recodes) the NDI ICD-10 code cause of death into 130 categories. The list reflects 
+130 selected causes of infant death. 
+SHORT NAME: ICD_CODE_130 
+LONG NAME: ICD_CODE_130 
+TYPE:  
+CHAR 
+LENGTH: 
+3 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+001 = Certain infectious and parasitic 
+diseases (A00–B99, U071) 
+002 = Certain intestinal infectious 
+diseases (A00–A08) 
+003 = Diarrhea and gastroenteritis of 
+infectious origin (A09) 
+004 = Tuberculosis (A16–A19) 
+005 = Tetanus (A33, A35) 
+006 = Diphtheria (A36) 
+007 = Whooping cough (A37) 
+008 = Meningococcal infection (A39) 
+009 = Septicemia (A40–A41) 
+010 = Congenital syphilis (A50) 
+011 = Gonococcal infection (A54) 
+012 = Viral diseases (A80–B34) 
+013 = Acute poliomyelitis (A80) 
+014 = Varicella (chickenpox) (B01) 
+015 = Measles (B05) 
+016 = Human immunodeficiency virus 
+(HIV) disease (B20–B24) 
+017 = Mumps (B26) 
+018 = Other and unspecified viral 
+diseases (A81–B00, B02–B04, 
+B06–B19, B25, B27–B34, U071) 
+019 = Candidiasis (B37) 
+020 = Malaria (B50–B54) 
+021 = Pneumocystosis (B59) 
+022 = All other and unspecified 
+infectious and parasitic diseases 
+(A20–A32, A38, A42–A49, A51–
+A53, A55–A79, B35–B36, B38–
+B49, B55–B58, B60–B99) 
+023 = Neoplasms (C00–D48) 
+024 = Malignant neoplasms (C00–C97) 
+025 = Hodgkin disease and non-Hodgkin 
+lymphomas (C81–C85) 
+026 = Leukemia (C91–C95) 
+027 = Other and unspecified malignant 
+neoplasms (C00–C80, C88, C90, 
+C96–C97) 
+028 = In situ neoplasms, benign neoplasms, and 
+neoplasms of uncertain or unknown 
+behavior (D00–D48) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+14 
+029 = Diseases of the blood and 
+blood-forming organs and 
+certain disorders involving the 
+immune mechanism (D50–D89) 
+030 = Anemias (D50–D64) 
+031 = Hemorrhagic conditions and 
+other diseases of blood and 
+blood-forming organs (D65–
+D76) 
+032 = Certain disorders involving the 
+immune mechanism (D80–D89) 
+033 = Endocrine, nutritional, and 
+metabolic diseases (E00–E88) 
+034 = Short stature, not elsewhere 
+classified (E34.3) 
+035 = Nutritional deficiencies (E40–E64) 
+036 = Cystic fibrosis (E84) 
+037 = Volume depletion, disorders of 
+fluid, electrolyte, and acid-base 
+balance (E86–E87) 
+038 = All other endocrine, nutritional 
+and metabolic diseases (E00–
+E32, E34.0–E34.2, E34.4–E34.9, 
+E65–E83, E85, E88) 
+039 = Diseases of the nervous system 
+(G00–G98) 
+040 = Meningitis (G00, G03) 
+041 = Infantile spinal muscular atrophy, 
+type I (Werdnig-Hoffman) 
+(G12.0) 
+042 = Infantile cerebral palsy (G80) 
+043 = Anoxic brain damage, not 
+elsewhere classified (G93.1) 
+044 = Other diseases of nervous system 
+(G04, G06–G11, G12.1–G12.9, 
+G20–G72, G81–G92, G93.0, 
+G93.2–G93.9, G95–G98) 
+045 = Diseases of the ear and mastoid 
+process (H60–H93) 
+046 = Diseases of the circulatory system 
+(I00–I99) 
+047 = Pulmonary heart disease and 
+diseases of pulmonary 
+circulation (I26–I28) 
+048 = Pericarditis, endocarditis, and 
+myocarditis (I30, I33, I40) 
+049 = Cardiomyopathy (I42) 
+050 = Cardiac arrest (I46) 
+051 = Cerebrovascular diseases (I60–
+I69) 
+052 = All other diseases of circulatory 
+system (I00–I25, I31, I34–I38, 
+I44–I45, I47–I51, I70–I99) 
+053 = Diseases of the respiratory 
+system (J00–J98) 
+054 = Acute upper respiratory 
+infections (J00–J06) 
+055 = Influenza and pneumonia (J10–
+J18) 
+056 = Influenza (J10–J11) 
+057 = Pneumonia (J12–J18) 
+058 = Acute bronchitis and acute 
+bronchiolitis (J20–J21) 
+059 = Bronchitis, chronic and 
+unspecified (J40–J42) 
+060 = Asthma (J45–J46) 
+061 = Pneumonitis due to solids and 
+liquids (J69) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+15 
+062 = Other and unspecified diseases of 
+respiratory system (J22, J30–
+J39, J43–J44, J47–J68, J70–J98) 
+063 = Diseases of the digestive system 
+(K00–K92) 
+064 = Gastritis, duodenitis, and 
+noninfective enteritis and colitis 
+(K29, K50–K55) 
+065 = Hernia of abdominal cavity and 
+intestinal obstruction without 
+hernia (K40–K46, K56) 
+066 = All other and unspecified diseases 
+of digestive system (K00–K28, 
+K30–K38, K57–K92) 
+067 = Diseases of the genitourinary 
+system (N00–N95) 
+068 = Renal failure and other disorders 
+of kidney (N17–N19, N25, N27) 
+069 = Other and unspecified diseases of 
+genitourinary system (N00–
+N15, N20–N23, N26, N28–N95) 
+070 = Certain conditions originating in 
+the perinatal period (P00–P96) 
+071 = Newborn affected by maternal 
+factors and by complications of 
+pregnancy, labor, and delivery 
+(P00–P04) 
+072 = Newborn affected by maternal 
+hypertensive disorders (P00.0) 
+073 = Newborn affected by other 
+maternal conditions which may 
+be unrelated to present 
+pregnancy (P00.1–P00.9) 
+074 = Newborn affected by maternal 
+complications of pregnancy 
+(P01) 
+075 = Newborn affected by 
+incompetent cervix (P01.0) 
+076 = Newborn affected by premature 
+rupture of membranes (P01.1) 
+077 = Newborn affected by multiple 
+pregnancy (P01.5) 
+078 = Newborn affected by other 
+maternal complications of 
+pregnancy (P01.2–P01.4, 
+P01.6–P01.9) 
+079 = Newborn affected by 
+complications of placenta, cord, 
+and membranes (P02) 
+080 = Newborn affected by 
+complications involving 
+placenta (P02.0–P02.3) 
+081 = Newborn affected by 
+complications involving cord 
+(P02.4–P02.6) 
+082 = Newborn affected by 
+chorioamnionitis (P02.7) 
+083 = Newborn affected by other and 
+unspecified abnormalities of 
+membranes (P02.8–P02.9) 
+084 = Newborn affected by other 
+complications of labor and 
+delivery (P03) 
+085 = Newborn affected by noxious 
+influences transmitted via 
+placenta or breast milk (P04) 
+086 = Disorders related to length of 
+gestation and fetal malnutrition 
+(P05–P08) 
+087 = Slow fetal growth and fetal 
+malnutrition (P05) 
+088 = Disorders related to short 
+gestation and low birthweight, 
+not elsewhere classified (P07) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+16 
+089 = Extremely low birthweight or 
+extreme immaturity (P07.0, 
+P07.2) 
+090 = Other low birthweight or preterm 
+(P07.1, P07.3) 
+091 = Disorders related to long 
+gestation and high birthweight 
+(P08) 
+092 = Birth trauma (P10–P15) 
+093 = Intrauterine hypoxia and birth 
+asphyxia (P20–P21) 
+094 = Intrauterine hypoxia (P20) 
+095 = Birth asphyxia (P21) 
+096 = Respiratory distress of newborn 
+(P22) 
+097 = Other respiratory conditions 
+originating in the perinatal 
+period (P23–P28) 
+098 = Congenital pneumonia (P23) 
+099 = Neonatal aspiration syndromes 
+(P24) 
+100 = Interstitial emphysema and 
+related conditions originating in 
+the perinatal period (P25) 
+101 = Pulmonary hemorrhage 
+originating in the perinatal 
+period (P26) 
+102 = Chronic respiratory disease 
+originating in the perinatal 
+period (P27) 
+103 = Atelectasis (P28.0–P28.1) 
+104 = All other respiratory conditions 
+originating in the perinatal 
+period (P28.2–P28.9) 
+105 = Infections specific to the perinatal 
+period (P35–P39) 
+106 = Bacterial sepsis of newborn (P36) 
+107 = Omphalitis of newborn with or 
+without mild hemorrhage (P38) 
+108 = All other infections specific to the 
+perinatal period (P35, P37, P39) 
+109 = Hemorrhagic and hematological 
+disorders of newborn (P50–
+P61) 
+110 = Neonatal hemorrhage (P50–P52, 
+P54) 
+111 = Hemorrhagic disease of newborn 
+(P53) 
+112 = Hemolytic disease of newborn 
+due to isoimmunization and 
+other perinatal jaundice (P55–
+P59) 
+113 = Hematological disorders (P60–
+P61) 
+114 = Syndrome of infant of a diabetic 
+mother and neonatal diabetes 
+mellitus (P70.0–P70.2) 
+115 = Necrotizing enterocolitis of 
+newborn (P77) 
+116 = Hydrops fetalis not due to 
+hemolytic disease (P83.2) 
+117 = Other perinatal conditions (P29, 
+P70.3–P70.9, P71–P76, P78–
+P81, P83.0–P83.1, P83.3–P83.9, 
+P90–P96) 
+118 = Congenital malformations, 
+deformations, and 
+chromosomal abnormalities 
+(Q00–Q99) 
+119 = Anencephaly and similar 
+malformations (Q00) 
+120 = Congenital hydrocephalus (Q03) 
+121 = Spina bifida (Q05) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+17 
+122 = Other congenital 
+malformations of 
+nervous system (Q01–
+Q02, Q04, Q06–Q07) 
+123 = Congenital malformations 
+of heart (Q20–Q24) 
+124 = Other congenital malformations 
+of circulatory system (Q25–
+Q28) 
+125 = Congenital malformations of 
+respiratory system (Q30–Q34) 
+126 = Congenital malformations of 
+digestive system (Q35–Q45) 
+127 = Congenital malformations of 
+genitourinary system (Q50–
+Q64) 
+128 = Congenital malformations and 
+deformations of 
+musculoskeletal system, limbs, 
+and integument (Q65–Q85) 
+129 = Down syndrome (Q90) 
+130 = Edward syndrome (Q91.0–Q91.3) 
+131 = Patau syndrome (Q91.4–Q91.7) 
+132 = Other congenital malformations 
+and deformations (Q10–Q18, 
+Q86–Q89) 
+133 = Other chromosomal 
+abnormalities, not elsewhere 
+classified (Q92–Q99) 
+134 = Symptoms, signs, and abnormal 
+clinical and laboratory findings, 
+not elsewhere classified (R00–
+R99) 
+135 = Sudden infant death syndrome 
+(R95) 
+136 = Other symptoms, signs, and 
+abnormal clinical and 
+laboratory findings, not 
+elsewhere classified (R00–R53, 
+R55–R94, R96–R99) 
+137 = All other diseases (Residual) (F01–
+F99, H00–H57, L00–M99) 
+138 = External causes of mortality 
+(*U01, V01–Y84) 
+139 = Accidents (unintentional injuries) 
+(V01–X59) 
+140 = Transport accidents (V01–V99) 
+141 = Motor vehicle accidents (V02–
+V04, V09.0, V09.2, V12–V14, 
+V19.0–V19.2, V19.4–V19.6, 
+V20–V79, V80.3–V80.5, V81.0–
+V81.1, V82.0–V82.1, V83–V86, 
+V87.0–V87.8, V88.0–V88.8, 
+V89.0, V89.2) 
+142 = Other and unspecified transport 
+accidents (V01, V05–V06, 
+V09.1, V09.3–V09.9, V10–V11, 
+V15–V18, V19.3, V19.8–V19.9, 
+V80.0–V80.2, V80.6–V80.9, 
+V81.2–V81.9, V82.2–V82.9, 
+V87.9, V88.9, V89.1, V89.3, 
+V89.9, V90–V99) 
+143 = Falls (W00–W19) 
+144 = Accidental discharge of firearms 
+(W32–W34) 
+145 = Accidental drowning and 
+submersion (W65–W74) 
+146 = Accidental suffocation and 
+strangulation in bed (W75) 
+147 = Other accidental suffocation and 
+strangulation (W76–W77, 
+W81–W84) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+18 
+148 = Accidental inhalation and 
+ingestion of food or other 
+objects causing obstruction of 
+respiratory tract (W78–W80) 
+149 = Accidents caused by exposure to 
+smoke, fire, and flames (X00–
+X09) 
+150 = Accidental poisoning and 
+exposure to noxious substances 
+(X40–X49) 
+151 = Other and unspecified accidents 
+(W20–W31, W35–W64, W85–
+W99, X10–X39, X50–X59) 
+152 = Assault (homicide) (*U01, X85–
+Y09) 
+153 = Assault (homicide) by hanging 
+strangulation and suffocation 
+(X91) 
+154 = Assault (homicide) by discharge 
+of firearms (*U01.4, X93–X95) 
+155 = Neglect, abandonment, and other 
+maltreatment syndromes (Y06–
+Y07) 
+156 = Assault (homicide) by other and 
+unspecified means (*U01.0–
+*U01.3, *U01.5–*U01.9, X85–
+X90, X92, X96–X99, Y00–Y05, 
+Y08–Y09) 
+157 = Complications of medical and 
+surgical care (Y40–Y84) 
+158 = Other external causes (X60–X84, 
+Y10–Y36) 
+COMMENT: 
+Additional information regarding these categories can be found on the CDC website (reference 
+https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf ). 
+Available for 2007 forward. Researchers wishing to obtain this NDI segment of the MBSF must obtain 
+an additional approval beyond the CMS DUA. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+19 
+ICD_CODE_358 
+LABEL:  
+358 ICD-10 Cause of Death Recodes 
+DESCRIPTION: This field groups (or recodes) the NDI ICD-10 code cause of death into 358 categories. The list reflects 
+358 selected causes of death. 
+SHORT NAME: ICD_CODE_358 
+LONG NAME: ICD_CODE_358 
+TYPE:  
+CHAR 
+LENGTH: 
+5 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+00100 = Certain infectious and parasitic 
+diseases (A00–B99, U071) 
+00200 = Intestinal infectious diseases 
+(A00–A09) 
+00300 = Cholera (A00) 
+00400 = Other intestinal infectious 
+diseases (A01–A08) 
+00500 = Typhoid fever (A01.0) 
+00600 = Paratyphoid fevers and other 
+salmonella infections (A01.1–
+A01.4, A02) 
+00700 = Shigellosis (A03) 
+00800 = Other bacterial food-borne 
+intoxications (A05) 
+00900 = Amebiasis (A06) 
+01000 = Intestinal infections due to 
+other specified organisms (A04, 
+A07–A08) 
+01100 = Diarrhea and gastroenteritis of 
+infectious origin (A09) 
+01200 = Tuberculosis (A16–A19) 
+01300 = Respiratory tuberculosis (A16) 
+01400 = Other tuberculosis (A17–A19) 
+01500 = Zoonotic and other bacterial 
+diseases (A20–A49) 
+01600 = Plague (A20) 
+01700 = Brucellosis (A23) 
+01800 = Tetanus (A33–A35) 
+01900 = Diphtheria (A36) 
+02000 = Whooping cough (A37) 
+02100 = Scarlet fever and erysipelas 
+(A38, A46) 
+02200 = Meningococcal infection (A39) 
+02300 = Septicemia (A40–A41) 
+02400 = Other zoonotic and bacterial 
+diseases (A21–A22, A24–A32, 
+A42–A44, A48–A49) 
+02500 = Infections with a 
+predominately sexual mode of 
+transmission (A50–A64) 
+02600 = Syphilis (A50–A53) 
+02700 = Cardiovascular syphilis (A52.0) 
+02800 = Neurosyphilis (A52.1–A52.3) 
+02900 = Other and unspecified syphilis 
+(A50–A51, A52.7–A52.9, A53) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+20 
+03000 = Gonococcal infection (A54) 
+03100 = Other infections with a 
+predominately sexual mode of 
+transmission (A55–A64) 
+03200 = Other infections caused by 
+spirochetes, chlamydia, or 
+rickettsia (A65–A79) 
+03300 = Lyme disease (A69.2) 
+03400 = Typhus fever (A75) 
+03500 = All other infections caused by 
+spirochetes, chlamydia, or 
+rickettsia (A65–A68, A69.0–
+A69.1, A69.8–A69.9, A70–A74, 
+A77–A79) 
+03600 = Viral diseases (A80–B34) 
+03700 = Acute poliomyelitis (A80) 
+03800 = Rabies (A82) 
+03900 = Arthropod-borne viral 
+encephalitis (A83–A84, A85.2) 
+04000 = Yellow fever (A95) 
+04100 = Other and unspecified 
+arthropod-borne viral and 
+hemorrhagic fevers (A90–A94, 
+A96–A99) 
+04200 = Herpesviral (herpes simplex) 
+infections (B00) 
+04300 = Zoster (herpes zoster) (B02) 
+04400 = Smallpox (B03) 
+04500 = Measles (B05) 
+04600 = Rubella (German measles) 
+(B06) 
+04700 = Viral hepatitis (B15–B19) 
+04800 = Human immunodeficiency virus 
+(HIV) disease (B20–B24) 
+04900 = Human immunodeficiency virus 
+(HIV) disease resulting in 
+infectious and parasitic diseases 
+(B20) 
+05000 = Human immunodeficiency virus 
+(HIV) disease resulting in 
+malignant neoplasms (B21) 
+05100 = Human immunodeficiency virus 
+(HIV) disease resulting in other 
+specified diseases (B22) 
+05200 = Human immunodeficiency virus 
+(HIV) disease resulting in other 
+conditions (B23) 
+05300 = Unspecified human 
+immunodeficiency virus (HIV) 
+disease (B24) 
+05400 = All other and unspecified viral 
+diseases (A81, A85.0–A85.1, 
+A85.8, A86–A89, B01, B04, 
+B07–B09, B25–B34, U071) 
+05500 = Other and unspecified 
+infectious and parasitic diseases 
+and their sequelae (B35–B99) 
+05600 = Mycoses (B35–B49) 
+05700 = Protozoal diseases (B50–B64) 
+05800 = Malaria (B50–B54) 
+05900 = Leishmaniasis (B55) 
+06000 = Trypanosomiasis (B56–B57) 
+06100 = Pneumocystosis (B59) 
+06200 = Other and unspecified 
+protozoal diseases (B58, B60–
+B64) 
+06300 = Helminthiases (B65–B83) 
+06400 = Schistosomiasis (bilharziasis) 
+(B65) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+21 
+06500 = Other and unspecified 
+helminthiases (B66–B83) 
+06600 = Sequelae of tuberculosis (B90) 
+06700 = Sequelae of poliomyelitis (B91) 
+06800 = All other and unspecified 
+infectious and parasitic diseases 
+and their sequelae (B85–B89, 
+B92–B99) 
+06900 = II. Neoplasms (C00–D48) 
+07000 = Malignant neoplasms (C00–
+C97) 
+07100 = Malignant neoplasms of lip, 
+oral cavity, and pharynx (C00–
+C14) 
+07200 = Of lip (C00) 
+07300 = Of tongue (C01–C02) 
+07400 = Of pharynx (C10–C13, C14.0) 
+07500 = Of other and unspecified sites 
+within the lip, oral cavity, and 
+pharynx (C03–C09, C14.2–
+C14.8) 
+07600 = Malignant neoplasms of 
+digestive organs (C15–C26) 
+07700 = Of esophagus (C15) 
+07800 = Of stomach (C16) 
+07900 = Of small intestine (C17) 
+08000 = Of colon, rectum, and anus 
+(C18–C21) 
+08100 = Colon (C18) 
+08200 = Rectosigmoid junction and 
+rectum (C19–C20) 
+08300 = Anus and anus canal (C21) 
+08400 = Of liver and intrahepatic bile 
+ducts (C22) 
+08500 = Liver (C22.0, C22.2–C22.9) 
+08600 = Intrahepatic bile duct 
+carcinoma (C22.1) 
+08700 = Of gallbladder and extrahepatic 
+bile ducts (C23–C24) 
+08800 = Of pancreas (C25) 
+08900 = Of other and ill-defined 
+digestive organs (C26) 
+09000 = Malignant neoplasms of 
+respiratory and intrathoracic 
+organs (C30–C39) 
+09100 = Of nasal cavity, middle ear, and 
+accessory sinuses (C30–C31) 
+09200 = Of larynx (C32) 
+09300 = Of trachea, bronchus, and lung 
+(C33–C34) 
+09400 = Of thymus, heart, 
+mediastinum, and pleura (C37–
+C38) 
+09500 = Of other and ill-defined sites in 
+respiratory system and 
+intrathoracic organs (C39) 
+09600 = Malignant neoplasms of bone 
+and articular cartilage (C40–
+C41) 
+09700 = Melanoma and other 
+malignant neoplasms of skin 
+(C43–C44) 
+09800 = Malignant melanoma of skin 
+(C43) 
+09900 = Other malignant neoplasms of 
+skin (C44) 
+10000 = Malignant neoplasms of 
+mesothelial and soft tissue 
+(C45–C49) 
+10100 = Mesothelioma (C45) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+22 
+10200 = Kaposi sarcoma (C46) 
+10300 = Of other mesothelial and soft 
+tissue (C47–C49) 
+10400 = Malignant neoplasm of breast 
+(C50) 
+10500 = Malignant neoplasms of female 
+genital organs (C51–C58) 
+10600 = Of vulva and vagina (C51–C52) 
+10700 = Of cervix uteri (C53) 
+10800 = Of corpus uteri and uterus, part 
+unspecified (C54–C55) 
+10900 = Of ovary (C56) 
+11000 = Of other and unspecified 
+female genital organs (C57) 
+11100 = Of placenta (C58) 
+11200 = Malignant neoplasms of male 
+genital organs (C60–C63) 
+11300 = Of prostate (C61) 
+11400 = Of testis (C62) 
+11500 = Of penis and other and 
+unspecified male genital organs 
+(C60, C63) 
+11600 = Malignant neoplasms of 
+urinary tract (C64–C68) 
+11700 = Of kidney and renal pelvis 
+(C64–C65) 
+11800 = Of bladder (C67) 
+11900 = Of other and unspecified sites 
+within the urinary tract (C66, 
+C68) 
+12000 = Malignant neoplasm of eye and 
+adnexa (C69) 
+12100 = Malignant neoplasms of 
+meninges, brain, and other 
+parts of central nervous system 
+(C70–C72) 
+12200 = Of brain (C71) 
+12300 = Of other parts of central 
+nervous system (C70, C72) 
+12400 = Malignant neoplasms of 
+thyroid and other endocrine 
+glands (C73–C75) 
+12500 = Other malignant neoplasms of 
+other and unspecified sites 
+(C76–C80, C97) 
+12600 = Malignant neoplasms of 
+lymphoid, hematopoietic, and 
+related tissue (C81–C96) 
+12700 = Hodgkin disease (C81) 
+12800 = Of other lymphoid, 
+hematopoietic, and related 
+tissue (C82–C85, C96) 
+12900 = Non-Hodgkin lymphoma (C82–
+C85) 
+13000 = Of other and unspecified 
+lymphoid, hematopoietic, and 
+related tissue (C96) 
+13100 = Malignant immunoproliferative 
+diseases (C88) 
+13200 = Multiple myeloma and 
+malignant plasma cell 
+neoplasms (C90) 
+13300 = Leukemia (C91–C95) 
+13400 = Lymphoid leukemia (C91) 
+13500 = Myeloid leukemia (C92) 
+13600 = Monocytic leukemia (C93) 
+13700 = Other and unspecified 
+leukemia (C94–C95) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+23 
+13800 = In situ neoplasms (D00–D09) 
+13900 = Carcinoma in situ of breast and 
+genitourinary system (D05–
+D07) 
+14000 = Carcinoma in situ of other and 
+unspecified sites (D00–D04, 
+D09) 
+14100 = Benign neoplasms (D10–D36) 
+14200 = Of female genital organs (D25–
+D28) 
+14300 = Of eye, brain, and other parts 
+of central nervous system 
+(D31–D33) 
+14400 = Of other and unspecified sites 
+(D10–D24, D29–D30, D34–D36) 
+14500 = Neoplasms of uncertain or 
+unknown behavior of specified 
+sites (D37–D47) 
+14600 = Neoplasms of uncertain or 
+unknown behavior of 
+unspecified sites (D48) 
+14700 = III. Diseases of the blood and 
+blood-forming organs and 
+certain disorders involving the 
+immune mechanism (D50–D89) 
+14800 = Anemias (D50–D64) 
+14900 = Nutritional anemias (D50–D53) 
+15000 = Hemolytic anemias (D55–D59) 
+15100 = Aplastic anemias (D60–D61) 
+15200 = Acute post hemorrhagic and 
+other anemias (D62, D64) 
+15300 = Coagulation defects, purpura, 
+and other hemorrhagic 
+conditions (D65–D69) 
+15400 = Other diseases of blood and blood-
+forming organs (D70–D76) 
+15500 = Certain disorders involving the 
+immune mechanism (D80–D89) 
+15600 = IV. Endocrine, nutritional, and 
+metabolic diseases (E00–E88) 
+15700 = Endocrine diseases (E00–E34) 
+15800 = Disorders of thyroid gland 
+(E00–E07) 
+15900 = Diabetes mellitus (E10–E14) 
+16000 = Disorders of pituitary gland 
+(E22–E23) 
+16100 = Disorders of adrenal glands 
+(E24–E27) 
+16200 = Diseases of thymus (E32) 
+16300 = Other endocrine diseases (E15–
+E21, E28–E31, E34) 
+16400 = Nutritional diseases (E40–E68) 
+16500 = Malnutrition (E40–E46) 
+16600 = Nutritional marasmus (E41) 
+16700 = Other and unspecified 
+malnutrition (E40, E42–E46) 
+16800 = Other nutritional deficiencies 
+(E50–E64) 
+16900 = Obesity and other 
+hyperalimentation (E65–E68) 
+17000 = Metabolic disorders (E70–E88) 
+17100 = Cystic fibrosis (E84) 
+17200 = Volume depletion, disorders of 
+fluid, electrolyte, and acid-base 
+balance (E86–E87) 
+17300 = Other metabolic disorders 
+(E70–E83, E85, E88) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+24 
+17400 = V. Mental and 
+behavioral disorders 
+(F01–F99) 
+17500 = Organic dementia (F01, F03) 
+17600 = Other and unspecified organic 
+mental disorders (F04–F09) 
+17700 = Mental and behavioral 
+disorders due to psychoactive 
+substance use (F10–F19) 
+17800 = Mental and behavioral 
+disorders due to use of alcohol 
+(F10) 
+17900 = Mental and behavioral 
+disorders due to other 
+psychoactive substance use 
+(F11–F19) 
+18000 = Schizophrenia, schizotypal and 
+delusional disorders (F20–F29) 
+18100 = Mood (affective) disorders 
+(F30–F39) 
+18200 = Neurotic, stress-related and 
+somatoform disorders (F40–
+F48) 
+18300 = Mental retardation (F70–F79) 
+18400 = Other and unspecified mental 
+and behavioral disorders (F50–
+F69, F80–F99) 
+18500 = VI. Diseases of the nervous 
+system (G00–G98) 
+18600 = Meningitis (G00, G03) 
+18700 = Other inflammatory diseases of 
+central nervous system (G04–
+G09) 
+18800 = Parkinson disease (G20–G21) 
+18900 = Alzheimer disease (G30) 
+19000 = Multiple sclerosis (G35) 
+19100 = Epilepsy (G40–G41) 
+19200 = Transient cerebral ischemic 
+attacks and related syndromes 
+(G45) 
+19300 = Infantile cerebral palsy (G80) 
+19400 = All other diseases of nervous 
+system (G10–G12, G23–G25, 
+G31, G36–G37, G43–G44, G47–
+G72, G81–G98) 
+19500 = VII. Diseases of the eye and 
+adnexa (H00–H57) 
+19600 = VIII. Diseases of the ear and 
+mastoid process (H60–H93) 
+19700 = IX. Diseases of the circulatory 
+system (I00–I99) 
+19800 = Acute rheumatic fever and 
+chronic rheumatic heart 
+diseases (I00–I09) 
+19900 = Acute rheumatic fever (I00–
+I02) 
+20000 = Chronic rheumatic heart 
+diseases (I05–I09) 
+20100 = Rheumatic mitral valve 
+diseases (I05) 
+20200 = Rheumatic aortic valve 
+diseases (I06) 
+20300 = Disorders of both mitral and 
+aortic valves (I08.0) 
+20400 = Other chronic rheumatic heart 
+diseases (I07, I08.1–I08.9, I09) 
+20500 = Hypertensive diseases (I10–I13) 
+20600 = Essential (primary) 
+hypertension (I10) 
+20700 = Hypertensive heart disease 
+(I11) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+25 
+20800 = Hypertensive renal 
+disease (I12) 
+20900 = Hypertensive heart and renal 
+disease (I13) 
+21000 = Ischemic heart diseases (I20–
+I25) 
+21100 = Acute myocardial infarction 
+(I21–I22) 
+21200 = Other acute ischemic heart 
+diseases (I24) 
+21300 = Other forms of chronic 
+ischemic heart disease (I20, I25) 
+21400 = Atherosclerotic cardiovascular 
+disease, so described (I25.0) 
+21500 = All other forms of chronic 
+ischemic heart disease (I20, 
+I25.1–I25.9) 
+21600 = Other heart diseases (I26–I51) 
+21700 = Pulmonary heart disease and 
+diseases of pulmonary 
+circulation (I26–I28) 
+21800 = Pulmonary embolism (I26) 
+21900 = Other pulmonary heart disease 
+and diseases of pulmonary 
+circulation (I27–I28) 
+22000 = Other non-pulmonary forms of 
+heart disease (I30–I51) 
+22100 = Acute and subacute 
+endocarditis (I33) 
+22200 = Diseases of pericardium and 
+acute myocarditis (I30–I31, I40) 
+22300 = Other diseases of endocardium 
+(I34–I38) 
+22400 = Nonrheumatic mitral valve 
+disorders (I34) 
+22500 = Nonrheumatic aortic valve disorders 
+(I35) 
+22600 = All other diseases of 
+endocardium (I36–I38) 
+22700 = Cardiomyopathy (I42) 
+22800 = Conduction disorders and 
+cardiac dysrhythmias (I44–I49) 
+22900 = Heart failure (I50) 
+23000 = Congestive heart failure (I50.0) 
+23100 = Other and unspecified heart 
+failure (I50.1–I50.9) 
+23200 = Myocarditis, unspecified and 
+myocardial degeneration 
+(I51.4–I51.5) 
+23300 = All other and ill-defined forms 
+of heart disease (I50.0–I51.3, 
+I51.6–I51.9) 
+23400 = Cerebrovascular diseases (I60–
+I69) 
+23500 = Subarachnoid hemorrhage 
+(I60) 
+23600 = Intracerebral and other 
+intracranial hemorrhage (I61–
+I62) 
+23700 = Cerebral infarction (I63) 
+23800 = Stroke, not specified as 
+hemorrhage or infarction (I64) 
+23900 = Other cerebrovascular diseases 
+and their sequelae (I67, I69) 
+24000 = Diseases of arteries, arterioles, 
+and capillaries (I70–I78) 
+24100 = Atherosclerosis (I70) 
+24200 = Aortic aneurysm and dissection 
+(I71) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+26 
+24300 = Other diseases of 
+arteries, arterioles, and 
+capillaries (I72–I78) 
+24400 = Other disorders of circulatory 
+system (I80–I99) 
+24500 = Phlebitis, thrombophlebitis, 
+venous embolism, and 
+thrombosis (I80–I82) 
+24600 = All other and unspecified 
+disorders of circulatory system 
+(I83–I99) 
+24700 = X. Diseases of the respiratory 
+system (J00–J98, U070) 
+24800 = Acute upper respiratory 
+infections (J00–J06) 
+24900 = Acute pharyngitis and tonsillitis 
+(J02–J03) 
+25000 = Acute laryngitis and tracheitis 
+(J04) 
+25100 = Other and unspecified acute 
+upper respiratory infections 
+(J00–J01, J05–J06) 
+25200 = Other diseases of the 
+respiratory system (J10–J98) 
+25300 = Influenza (J10–J11) 
+25400 = Pneumonia (J12–J18) 
+25500 = Viral pneumonia, not 
+elsewhere classified (J12) 
+25600 = Bacterial pneumonia (J13–J15) 
+25700 = Pneumonia due to other or 
+unspecified organisms (J16, J18) 
+25800 = Other acute lower respiratory 
+infections (J20–J22) 
+25900 = Acute bronchitis and 
+bronchiolitis (J20–J21) 
+26000 = Unspecified acute lower respiratory 
+infection (J22) 
+26100 = Other diseases of upper 
+respiratory tract (J30–J39) 
+26200 = Chronic lower respiratory 
+diseases (J40–J47) 
+26300 = Bronchitis, chronic and 
+unspecified, emphysema and 
+asthma (J40–J46) 
+26400 = Bronchitis, not specified as 
+acute or chronic (J40) 
+26500 = Chronic bronchitis (J41–J42) 
+26600 = Emphysema (J43) 
+26700 = Other chronic obstructive 
+pulmonary disease (J44) 
+26800 = Asthma (J45–J46) 
+26900 = Bronchiectasis (J47) 
+27000 = Lung diseases due to external 
+agents (J60–J70) 
+27100 = Pneumoconioses and chemical 
+effects (J60–J66, J68, U070) 
+27200 = Pneumonitis due to solids and 
+liquids (J69) 
+27300 = Pneumonitis due to food and 
+vomit (J69.0) 
+27400 = Other pneumonitis due to 
+solids and liquids (J69.1–J69.8) 
+27500 = Other lung diseases due to 
+external agents (J67, J70) 
+27600 = Suppurative and necrotic 
+conditions of lower respiratory 
+tract (J85–J86) 
+27700 = Pleural effusion and plaque 
+(J90, J92) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+27 
+27800 = All other diseases of 
+respiratory system 
+(J80–J84, J93–J98) 
+27900 = XI. Diseases of the digestive 
+system (K00–K92) 
+28000 = Diseases of oral cavity, salivary 
+glands, and jaws (K00–K14) 
+28100 = Diseases of other parts of 
+digestive system (K20–K92) 
+28200 = Diseases of esophagus (K20–
+K22) 
+28300 = Peptic ulcer (K25–K28) 
+28400 = Gastric ulcer (K25) 
+28500 = Duodenal ulcer (K26) 
+28600 = Peptic ulcer, site unspecified 
+(K27) 
+28700 = Gastrojejunal ulcer (K28) 
+28800 = Gastritis and duodenitis (K29) 
+28900 = Dyspepsia and other diseases 
+of stomach and duodenum 
+(K30–K31) 
+29000 = Diseases of appendix (K35–
+K38) 
+29100 = Hernia (K40–K46) 
+29200 = Crohn disease and ulcerative 
+colitis (K50–K51) 
+29300 = Vascular disorders and 
+obstruction of intestine without 
+hernia (K55–K56) 
+29400 = Diverticular disease of intestine 
+(K57) 
+29500 = Other diseases of intestines 
+and peritoneum (K52, K58–K63) 
+29600 = Diseases of peritoneum (K65–K66) 
+29700 = Diseases of liver (K70–K76) 
+29800 = Alcoholic liver disease (K70) 
+29900 = Chronic hepatitis, not 
+elsewhere classified (K73) 
+30000 = Fibrosis and cirrhosis of liver 
+(K74) 
+30100 = Other diseases of liver (K71–
+K72, K75–K76) 
+30200 = Cholelithiasis and other 
+disorders of gallbladder (K80–
+K82) 
+30300 = Disorders of biliary tract and 
+pancreas (K83–K86) 
+30400 = Pancreatitis (K85, K86.0–K86.1) 
+30500 = Other disorders of biliary tract 
+and pancreas (K83, K86.2–
+K86.9) 
+30600 = All other diseases of digestive 
+system (K90, K92) 
+30700 = XII. Diseases of the skin and 
+subcutaneous tissue (L00–L98) 
+30800 = Infections of skin and 
+subcutaneous tissue (L00–L08) 
+30900 = Other and unspecified diseases 
+of skin and subcutaneous tissue 
+(L10–L98) 
+31000 = XIII. Diseases of the 
+musculoskeletal system and 
+connective tissue (M00–M99) 
+31100 = Rheumatoid arthritis and 
+related inflammatory 
+polyarthropathies (M05–M08) 
+31200 = Systemic lupus erythematosus 
+(M32) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+28 
+31300 = Other arthropathies 
+and related disorders 
+(M00, M02, M10–M31, 
+M33–M35) 
+31400 = Dorsopathies (M40–
+M54) 
+31500 = Soft tissue disorders (M60–
+M79) 
+31600 = Osteopathies, chondropathies 
+and other disorders of 
+musculoskeletal system and 
+connective tissue (M80–M99) 
+31700 = Osteoporosis (M80–M81) 
+31800 = Other osteopathies, 
+chondropathies and disorders 
+of musculoskeletal system and 
+connective tissue (M83–M99) 
+31900 = XIV. Diseases of the 
+genitourinary system (N00–
+N98) 
+32000 = Diseases of urinary system 
+(N00–N39) 
+32100 = Glomerular and renal tubule-
+interstitial diseases (N00–N15) 
+32200 = Glomerular diseases (N00–
+N07) 
+32300 = Acute and rapidly progressive 
+nephritic syndrome (N00–N01) 
+32400 = Nephrotic syndrome (N04) 
+32500 = Other and unspecified 
+glomerular diseases (N02–N03, 
+N05–N07) 
+32600 = Renal tubulo-interstitial 
+diseases (N10–N15) 
+32700 = Renal failure (N17–N19) 
+32800 = Urolithiasis (N20–N23) 
+32900 = Other and unspecified disorders of 
+kidney (N25–N27) 
+33000 = Urinary tract infection, site not 
+specified (N39.0) 
+33100 = Other diseases of urinary system (N28–
+N36, N39.1–N39.9) 
+33200 = Diseases of male genital organs 
+(N40–N50) 
+33300 = Hyperplasia of prostate (N40) 
+33400 = Other diseases of male genital 
+organs (N41–N50) 
+33500 = Disorders of breast (N60–N64) 
+33600 = Disorders of female genital 
+organs (N70–N98) 
+33700 = Inflammatory diseases of 
+female pelvic organs (N70–N76) 
+33800 = Noninflammatory disorders of 
+female genital tract (N80–N98) 
+33900 = XV. Pregnancy, childbirth, and 
+the puerperium (O00–O99) 
+34000 = Pregnancy with abortive 
+outcome (O00–O07) 
+34100 = Ectopic pregnancy (O00) 
+34200 = Spontaneous abortion (O03) 
+34300 = Medical abortion (O04) 
+34400 = Other abortion (O05) 
+34500 = Other and unspecified 
+pregnancy with abortive 
+outcome (O01–O02, O06–O07) 
+34600 = Other direct obstetric deaths 
+(O10–O92) 
+34700 = Eclampsia and pre-eclampsia 
+(O11, O13–O16) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+29 
+34800 = Hemorrhage of 
+pregnancy and 
+childbirth and placenta 
+previa (O20, O44–O46, 
+O67, 072) 
+34900 = Complications 
+predominately related 
+to the puerperium 
+(O85–O92) 
+35000 = Obstetric embolism 
+(O88) 
+35100 = Other complications 
+predominately related to the 
+puerperium (O85–O87, O89–
+O92) 
+35200 = All other direct obstetric causes 
+(O10, O12, O21–O43, O47–O66, 
+O68–O71, O73–O75) 
+35300 = Obstetric death of unspecified 
+cause (O95) 
+35400 = Other deaths related to 
+pregnancy, childbirth, and the 
+puerperium (O96–O97) 
+35500 = Indirect obstetric deaths (O98–
+O99) 
+35600 = XVI. Certain conditions 
+originating in the perinatal 
+period (P00–P96) 
+35700 = Newborn affected by maternal 
+factors and by complications of 
+pregnancy, labor, and delivery 
+(P00–P04) 
+35800 = Disorders related to short 
+gestation and low birth weight, 
+not elsewhere classified (P07) 
+35900 = Birth trauma (P10–P15) 
+36000 = Intrauterine hypoxia and birth 
+asphyxia (P20–P21) 
+36100 = Respiratory distress of newborn (P22) 
+36200 = Other respiratory conditions originating 
+in the perinatal period (P23–P28) 
+36300 = Infections specific to the perinatal 
+period (P35–P39) 
+36400 = Other and unspecified conditions 
+originating in the perinatal period (P05, 
+P08, P29, P50–P96) 
+36500 = XVII. Congenital malformations, 
+deformations, and 
+chromosomal abnormalities 
+(Q00–Q99) 
+36600 = Anencephaly and similar 
+malformations (Q00) 
+36700 = Spina bifida (Q05) 
+36800 = All other congenital 
+malformations of nervous 
+system (Q01–Q04, Q06–Q07) 
+36900 = Congenital malformations of 
+heart (Q20–Q24) 
+37000 = Other congenital 
+malformations of circulatory 
+system (Q25–Q28) 
+37100 = Congenital malformations of 
+respiratory system (Q30–Q34) 
+37200 = Other congenital 
+malformations and 
+deformations (Q10–Q18, Q35–
+Q89) 
+37300 = Down syndrome (Q90) 
+37400 = All other chromosomal 
+abnormalities, not elsewhere 
+classified (Q91–Q99) 
+37500 = XVIII. Symptoms, signs, and 
+abnormal clinical and 
+laboratory findings, not 
+elsewhere classified (R00–R99) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+30 
+37600 = Senility (R54) 
+37700 = Ill-defined and 
+unknown causes of 
+mortality (R95–R99) 
+37800 = Sudden infant death 
+syndrome (R95) 
+37900 = Other ill-defined and 
+unknown causes of 
+mortality (R96–R99) 
+38000 = All other symptoms, signs, and 
+abnormal clinical and 
+laboratory findings, not 
+elsewhere classified (R00–R53, 
+R55–R94) 
+38100 = XX. External causes of mortality 
+(*U01–*U03, V01–Y89) 
+38200 = Accidents (unintentional 
+injuries) (V01–X59, Y85–Y86) 
+38300 = Transport accidents (V01–V99, 
+Y85) 
+38400 = Railway accidents (V05, V15, 
+V80.6, V81.2–V81.9) 
+38500 = Motor vehicle accidents (V02–
+V04, V09.0, V09.2, V12–V14, 
+V19.0–V19.2, V19.4–V19.6, 
+V20–V79, V80.3–V80.5, V81.0–
+V81.1, V82.0–V82.1, V83–V86, 
+V87.0–V87.8, V88.0–V88.8, 
+V89.0, V89.2) 
+38600 = Pedestrian involved in collision 
+with motor vehicle (V02–V04) 
+38700 = Pedalcyclist involved in 
+collision with motor vehicle 
+(V12–V14, V19.0–V19.2, V19.4–
+V19.6) 
+38800 = Motorcyclist involved in any 
+accident except collision with 
+railway train (V20–V24, V26–
+V34, V36–V39) 
+38900 = Motor vehicle accident involving 
+collision with railway train (V25, V35, 
+V45, V55, V65, V75, V81.0–V81.1, 
+V87.6, V88.6) 
+39000 = Motorcyclist involved in collision with 
+railway train (V25, V35) 
+39100 = Other motor vehicle accident 
+involving collision with railway 
+train (V45, V55, V65, V75, 
+V81.0–V81.1, V87.6, V88.6) 
+39200 = Occupant of motor vehicle 
+involved in collision with other 
+(non-motorized) road vehicle, 
+streetcar, animal, or pedestrian 
+(V40–V41, V46–V47, V50–V51, 
+V56–V57, V60–V61, V66–V67, 
+V70–V71, V76–V77) 
+39300 = Occupant of car, pickup truck 
+or van involved in collision with 
+other motor vehicle (V42–V44, 
+V49, V52–V54, V59) 
+39400 = Occupant of heavy transport 
+vehicle or bus involved in 
+collision with other motor 
+vehicle (V62–V64, V69, V72–
+V74, V79) 
+39500 = Occupant of motor vehicle 
+involved in no collision accident 
+(V48, V58, V68, V78) 
+39600 = Occupant of special-use motor 
+vehicle involved in any accident 
+(V83–V86) 
+39700 = Other and unspecified motor 
+vehicle accidents (V09.0, V09.2, 
+V80.3–V80.5, V82.0–V82.1, 
+V87.0–V87.5, V87.7–V87.8, 
+V88.0–V88.5, V88.7–V88.8, 
+V89.0, V89.2) 
+39800 = Streetcar accidents (V82.2–
+V82.9) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+31 
+39900 = Other and unspecified 
+land transport 
+accidents (V01, V06, 
+V09.1, V09.3, V09.9, 
+V10–V11, V16–V18, 
+V19.3, V19.8–V19.9, 
+V80.0–V80.2, V80.7–
+V80.9, V87.9, V88.9, 
+V89.1, V89.3, V89.9) 
+40000 = Water transport accidents 
+(V90–V94) 
+40100 = Air and space transport 
+accidents (V95–V97) 
+40200 = Other and unspecified 
+transport accidents and their 
+sequelae (V98–V99, Y85) 
+40300 = Falls (W00–W19) 
+40400 = Fall on same level (W00–W09, 
+W18) 
+40500 = Fall from one level to another 
+(W10–W17) 
+40600 = Unspecified fall (W19) 
+40700 = Accidental discharge of 
+firearms (W32–W34) 
+40800 = Accidental explosion (W39–
+W40) 
+40900 = Accidental drowning and 
+submersion (W65–W74) 
+41000 = Accidental inhalation and 
+ingestion of food or other 
+objects causing obstruction of 
+respiratory tract (W78–W80) 
+41100 = Other accidental and 
+unspecified threats to breathing 
+(W75–W77, W81–W84) 
+41200 = Accidental exposure to electric 
+current (W85–W87) 
+41300 = Accidental exposure to radiation (W88–
+W91) 
+41400 = Accidental exposure to smoke, fire, and 
+flames (X00–X09) 
+41500 = Accidental contact with heat and hot 
+substances (X10–X19) 
+41600 = Lightning (X33) 
+41700 = Earthquake, volcanic eruption, 
+avalanche, landslide, and other 
+earth movements (X34–X36) 
+41800 = Cataclysmic storm and flood 
+(X37–X38) 
+41900 = Accidental poisoning and 
+exposure to noxious substances 
+(X40–X49) 
+42000 = Accidental poisoning by and 
+exposure to drugs and other 
+biological substances (X40–X44) 
+42100 = Accidental poisoning by and 
+exposure to other and 
+unspecified solid or liquids 
+substances (X45–X46, X48–X49) 
+42200 = Accidental poisoning by and 
+exposure to other gases and 
+vapors (X47) 
+42300 = All other and unspecified 
+accidents and their sequelae 
+(W20–W31, W35–W38, W41–
+W64, W92–W99, X20–X32, X39, 
+X50–X59, Y86) 
+42400 = Intentional self-harm (suicide) 
+(*U03, X60–X84, Y87.0) 
+42500 = Intentional self-poisoning 
+(suicide) by and exposure to 
+drugs and other biological 
+substances (X60–X64) 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+32 
+42600 = Intentional self-
+poisoning (suicide) by 
+and exposure to other 
+and unspecified solid or 
+liquid substances and 
+their vapors (X65–X66, 
+X68–X69) 
+42700 = Intentional self-
+poisoning (suicide) by 
+and exposure to other 
+gases and vapors (X67) 
+42800 = Intentional self-harm 
+(suicide) by hanging, 
+strangulation and 
+suffocation (X70) 
+42900 = Intentional self-harm (suicide) 
+by discharge of firearms (X72–
+X74) 
+43000 = Intentional self-harm (suicide) 
+by jumping from a high place 
+(X80) 
+43100 = Intentional self-harm (suicide) 
+by all other and unspecified 
+means and their sequelae 
+(*U03, X71, X75–X79, X81–X84, 
+Y87.0) 
+43200 = Assault (homicide) (*U01–
+*U02, X85–Y09, Y87.1) 
+43300 = Assault (homicide) by drugs, 
+biological substances, and other 
+and unspecified noxious 
+substances (*U01.6–*U01.7, 
+X85–X90) 
+43400 = Assault (homicide) by hanging, 
+strangulation and suffocation 
+(X91) 
+43500 = Assault (homicide) by discharge 
+of firearms (*U01.4, X93–X95) 
+43600 = Assault (homicide) by sharp 
+object (X99) 
+43700 = Assault (homicide) by blunt object 
+(Y00) 
+43800 = Assault (homicide) by bodily force (Y04) 
+43900 = Sexual assault (homicide) by bodily 
+force (Y05) 
+44000 = Neglect, abandonment, and other 
+maltreatment syndromes (Y06–Y07) 
+44100 = Assault (homicide) by all other 
+and unspecified means and 
+their sequelae (*U01.0–*U01.3, 
+*U01.5, *U01.8–*U01.9, *U02, 
+X92, X96–X98, Y01–Y03, Y08–
+Y09, Y87.1) 
+44200 = Event of undetermined intent 
+(Y10–Y34, Y87.2, Y89.9) 
+44300 = Poisoning by and exposure to 
+drugs and biological substances, 
+undetermined intent (Y10–Y14) 
+44400 = Poisoning by and exposure to 
+other and unspecified solid or 
+liquid substance, undetermined 
+intent (Y15–Y16, Y18–Y19) 
+44500 = Poisoning by and exposure to 
+other gases and vapors, 
+undetermined intent (Y17) 
+44600 = Discharge of firearms, 
+undetermined intent (Y22–Y24) 
+44700 = Falling, jumping, or pushed 
+from a high place, 
+undetermined intent (Y30) 
+44800 = All other and unspecified 
+events of undetermined intent 
+and their sequelae (Y20–Y21, 
+Y25–Y29, Y31–Y34, Y87.2, 
+Y89.9) 
+44900 = Legal intervention (Y35, Y89.0) 
+45000 = Legal execution (Y35.5) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+33 
+45100 = Other legal 
+intervention and their 
+sequelae (Y35.0–Y35.4, 
+Y35.6–Y35.7, Y89.0) 
+45200 = Operations of war and 
+their sequelae (Y36, 
+Y89.1) 
+45300 = Complications of 
+medical and surgical 
+care (Y40–Y84, Y88) 
+45400 = Drugs, medicaments and biological 
+substances causing adverse effects in 
+therapeutic use, and their sequelae 
+(Y40–Y59, Y88.0) 
+45500 = Misadventures to patients 
+during medical and surgical care 
+and their sequelae (Y60–Y69, 
+Y88.1) 
+45600 = Other complications of medical and 
+surgical care and their sequelae (Y70–
+Y84, Y88.2–Y88.3)
+COMMENT: 
+Additional information regarding these categories can be found on the CDC website (reference 
+https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf ).  
+NOTE: This field is not populated for a large proportion of 2008 records due to source data issues. 
+Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional approval 
+beyond the CMS DUA. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+34 
+ICD_TITLE 
+LABEL:  
+ICD-10 Cause of Death Title 
+DESCRIPTION: This field is the narrative description of the ICD-10 cause of death code value (for variable ICD_CODE). 
+SHORT NAME: ICD_TITLE 
+LONG NAME: ICD_TITLE 
+TYPE:  
+CHAR 
+LENGTH: 
+120 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+ Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional approval 
+beyond the CMS DUA. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+35 
+NDI_DEATH_DT 
+LABEL:  
+NDI Date of Death 
+DESCRIPTION: This variable is the date of death as reported on the Beneficiary’s death certificate. 
+SHORT NAME: NDI_DEATH_DT 
+LONG NAME: NDI_DEATH_DT 
+TYPE:  
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+— 
+COMMENT: 
+Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional approval 
+beyond the CMS DUA. 
+^Back to TOC^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+36 
+NDI_STATE_DEATH_CD 
+LABEL:  
+NDI State of Death 
+DESCRIPTION: This variable is the two-digit Social Security Administration (SSA) code for the state identified as the 
+state where the beneficiary death occurred. 
+SHORT NAME: NDI_STATE_DEATH_CD 
+LONG NAME: NDI_STATE_DEATH_CD 
+TYPE:  
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) and CCW (recode) 
+VALUES: 
+01 = Alabama 
+02 = Alaska 
+03 = Arizona 
+04 = Arkansas 
+05 = California 
+06 = Colorado 
+07 = Connecticut 
+08 = Delaware 
+09 = District of Columbia 
+10 = Florida 
+11 = Georgia 
+12 = Hawaii 
+13 = Idaho 
+14 = Illinois 
+15 = Indiana 
+16 = Iowa 
+17 = Kansas 
+18 = Kentucky 
+19 = Louisiana 
+20 = Maine 
+21 = Maryland 
+22 = Massachusetts 
+23 = Michigan 
+24 = Minnesota 
+25 = Mississippi 
+26 = Missouri 
+27 = Montana 
+28 = Nebraska 
+29 = Nevada 
+30 = New Hampshire 
+31 = New Jersey 
+32 = New Mexico 
+33 = New York 
+34 = North Carolina 
+35 = North Dakota 
+36 = Ohio 
+37 = Oklahoma 
+38 = Oregon 
+39 = Pennsylvania 
+40 = Puerto Rico 
+41 = Rhode Island 
+42 = South Carolina 
+43 = South Dakota 
+44 = Tennessee 
+45 = Texas 
+46 = Utah 
+47 = Vermont 
+48 = Virgin Islands 
+49 = Virginia 
+50 = Washington 
+51 = West Virginia 
+52 = Wisconsin 
+53 = Wyoming 
+65= Guam 
+99 = Unknown 
+COMMENT: 
+Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional approval 
+beyond the CMS DUA. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+37 
+RECORD_COND_1 
+RECORD_COND_2 
+RECORD_COND_3 
+RECORD_COND_4 
+RECORD_COND_5 
+RECORD_COND_6 
+RECORD_COND_7 
+RECORD_COND_8 
+RECORD_COND_9 
+RECORD_COND_10 
+RECORD_COND_11 
+RECORD_COND_12 
+RECORD_COND_13 
+RECORD_COND_14 
+RECORD_COND_15 
+RECORD_COND_16 
+RECORD_COND_17 
+RECORD_COND_18 
+RECORD_COND_19 
+RECORD_COND_20 
+LABEL:  
+NDI Record Axis Cause of Death 
+DESCRIPTION: This field identifies the underlying causes of death code as edited and audited by National Center for 
+Health Statistics (NCHS). 
+SHORT NAME:   
+RECORD_COND_1 
+RECORD _COND_2 
+RECORD _COND_3 
+RECORD _COND_4 
+RECORD _COND_5 
+RECORD _COND_6 
+RECORD _COND_7 
+RECORD _COND_8 
+RECORD _COND_9 
+RECORD _COND_10 
+RECORD _COND_11 
+RECORD _COND_12 
+RECORD _COND_13 
+RECORD _COND_14 
+RECORD _COND_15 
+RECORD _COND_16 
+RECORD _COND_17 
+RECORD _COND_18 
+RECORD _COND_19 
+RECORD _COND_20
+LONG NAME:   
+RECORD_COND_1 
+RECORD _COND_2 
+RECORD _COND_3 
+RECORD _COND_4 
+RECORD _COND_5 
+RECORD _COND_6 
+RECORD _COND_7 
+RECORD _COND_8 
+RECORD _COND_9 
+RECORD _COND_10 
+RECORD _COND_11 
+RECORD _COND_12 
+RECORD _COND_13 
+RECORD _COND_14 
+RECORD _COND_15 
+RECORD _COND_16 
+RECORD _COND_17 
+RECORD _COND_18 
+RECORD _COND_19 
+RECORD _COND_20
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 
+38 
+TYPE:  
+CHAR 
+LENGTH: 
+5 
+SOURCE: 
+Centers for Disease Control and Prevention (CDC) National Death Index (NDI) 
+VALUES: 
+Each condition takes five positions in the record. 
+Positions 1–4: Condition Code (Reference ICD-10 codes) 
+NOTE: Whenever there is a 4-position code, there is always an implied decimal after the third position. 
+Position 5: Nature of Injury Flag 
+0 = all other codes (always 0 for ICD-10 codes; 1999 forward) 
+COMMENT: 
+For decedents 1999–2006 there are up to 8 underlying conditions on the NDI record and for 2007 
+forward there are up to 20 underlying conditions (RECORD_COND_1–RECORD_COND_20). 
+Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional approval 
+beyond the CMS DUA. There is another version of the underlying cause of death conditions that is the 
+unedited version from the death certificate (reference ENTITY_COND_1–ENTITY_COND_20). 
+^Back to TOC^

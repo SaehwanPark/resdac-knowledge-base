@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbisg__data-documentation__38b915f246__chunk_1",
+  "source_document": "data/raw/html/documentation_page/38b915f246a9143b94c1fce3618ed3d184a9ff07.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\nCCW Record Layout - Medicare Bayesian Improved Surname Geocoding (MBISG)\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| RFRNC_DT | Data File Reference Date | \n| MBISG_VRSN | Version of the MBISG algorithm | \n| RE_PRBLTY_AIAN | R/E probability - American Indian or Alaska Native | \n| RE_PRBLTY_AANHPI | R/E probability - Asian American and Native Hawaiian or Other Pacific Islander | \n| RE_PRBLTY_BLACK",
+  "dataset": "mbisg",
+  "url": "https://resdac.org/cms-data/files/mbisg/data-documentation"
+}

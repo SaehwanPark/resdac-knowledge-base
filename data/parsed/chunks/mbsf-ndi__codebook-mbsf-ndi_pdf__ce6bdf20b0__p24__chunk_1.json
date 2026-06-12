@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p24__chunk_1",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 24,
+  "text": "TYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI) \nVALUES: \n00100 = Certain infectious and parasitic \ndiseases (A00–B99, U071) \n00200 = Intestinal infectious diseases \n(A00–A09) \n00300 = Cholera (A00) \n00400 = Other intestinal infectious \ndiseases (A01–A08) \n00500 = Typhoid fever (A01.0) \n00600 = Paratyphoid fevers and other \nsalmonella infections (A01.1–\nA01.4, A02) \n00700 = Shigellosis (A03) \n00800 = Other bacterial food-borne",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

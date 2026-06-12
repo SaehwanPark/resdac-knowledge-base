@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_35",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Facility Inpatient facility admitted from during past 14 days - rehabilitation facility. 0 = No, 1 = Yes CHAR 1 x x\nM0175_DC_SNF_14_DA (M0175) Inpatient Facility Admitted From during past 14 Days - Skilled Nursing Facility Inpatient facility admitted from during past 14 days - skilled nursing facility. 0 = No, 1 = Yes CHAR 1 x x\nM0180_DSCHG_UK (M0180) Inpatient Discharge Date Unknown Inpatient discharge date (most recent): unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0180_INP_DSCHG_DT (M0180) Inpatient",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

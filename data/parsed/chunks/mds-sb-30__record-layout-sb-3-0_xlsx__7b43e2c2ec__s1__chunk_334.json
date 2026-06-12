@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_334",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "medications. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n371 K0100D_CMPLNT_SWLWG_CD K0100D_CMPLNT_SWLWG_CD K0100D Swallowing Disorder: Complaint Swallowing Code CHAR 1 The data in this column indicates whether the resident had complaints of difficulty or pain with swallowing. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n372 K0100Z_NO_SWLWG_CD K0100Z_NO_SWLWG_CD K0100Z Swallowing Disorder: None of Above Code CHAR 1 The data in this column indicates that",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

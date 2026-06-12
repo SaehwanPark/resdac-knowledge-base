@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_453",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "-=Not assessed/no information\n1=Resident not in facility during this years flu season\n2=Recieved outside of this facility\n3=Not elgible - medical contraindication\n4=Offered and declined\n5=Not offered\n6=Inability to obtain vaccine due to declared shortage\n9=None of the above\n^=Blank (skip pattern)\n507 O0300A_PPV_CD O0300A_PPV_CD O0300A Pneumococcal Vaccination Code CHAR 1 The data in this column indicates whether the resident received a pneumococcal vaccine. -=Not assessed/no",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

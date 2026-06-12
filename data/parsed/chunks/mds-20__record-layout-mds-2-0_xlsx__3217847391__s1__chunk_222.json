@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_222",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "conditions - other - hallucinations in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n349 J1J J1J_INTERN_BLEED (J1J) Internal Bleeding CHAR 1 Health conditions: problem conditions - other - internal bleeding in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n350 J1K J1K_LUNG_ASPIR (J1K) Recurrent Lung Aspirations CHAR 1 Health conditions: problem conditions - other - recurrent lung aspirations in last 90 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n351 J1L J1L_SHORT_BREATH (J1L) Shortness of Breath CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

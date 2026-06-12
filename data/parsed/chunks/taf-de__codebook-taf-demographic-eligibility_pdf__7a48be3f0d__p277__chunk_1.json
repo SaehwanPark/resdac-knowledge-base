@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p277__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 277,
+  "text": "the calendar year. \nSHORT NAME: RSTRCTD_BNFTS_CD_LTST \nLONG NAME: RSTRCTD_BNFTS_CD_LTST \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = Individual is not eligible for Medicaid or Children’s Health Insurance Program (CHIP) during the \nmonth. \n1 = Individual is eligible for Medicaid or CHIP and entitled to the full scope of Medicaid or CHIP \nbenefits. \n2 = Individual is eligible for Medicaid or Medicaid-Expansion CHIP, but",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_356",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n324 GG0170A1_ROLL_STRT_CD GG0170A1_ROLL_STRT_CD GG0170A1 Admission Performance Roll Left Right Code - The data in this column indicates the patient's ability to roll left and right, at the time of admission. CHAR 2 The data in this column indicates the patient's ability to roll left and right, at the time of admission. 01 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

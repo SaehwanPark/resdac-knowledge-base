@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p6__chunk_3",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 6,
+  "text": "status. CMS may also base risk score resolution on dual Medicare-Medicaid eligibility status. CMS adjusts model output risk \nscores for payment year specific FFS normalization and coding intensity adjustments. The FFS normalization adjustment \naccounts for changes in FFS population between the year the model is calibrated and the payment year. For Part C risk scores, \nthe coding intensity adjustment accounts for changes in the diagnosis code submission patterns between FFS and MA. Both \nthe",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

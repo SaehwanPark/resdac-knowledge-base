@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p6__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 6,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n2 \nCONTRACT_ID \nLABEL: \nPart D Contract Identifier \nDESCRIPTION: This variable is the unique number CMS assigns to each contract that a Part D plan has with CMS. This \nfield is a key that links of Part D sponsor's contract and plan identifiers. \nSHORT NAME: — \nLONG NAME: CONTRACT_ID \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n5-digit alpha/numeric value",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

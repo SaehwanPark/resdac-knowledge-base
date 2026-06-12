@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_235",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "in Home- Enteral Nutrition This field is checked if the patient receives enteral nutrition therapy at home. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1030_THH_IV_INFUS M1030 (M0250) Therapies in Home- IV Infusion This field is checked if the patient receives intravenous or infusion therapy at home. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1030_THH_NONE_ABV M1030 (M0250) Therapies in Home- None Above This field is checked if the patient receives none of the above",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p207__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 207,
+  "text": "a plan sponsor has with CMS. This was the plan \nID for the plan in 2020 (the reference year). It may or may not be the same as the plan ID in the prior \nyear (2019). \nThis field is a key that links the plan sponsor's contract and plan identifiers. \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nThree-digit numeric value \nCOMMENT: \nAll contract and plan ID that were active in 2020 appear in this data file. To determine whether the \ncontract and plan IDs in the data file for the",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

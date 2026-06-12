@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p106__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 106,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n88 \n% = MSP cost avoided — Recovery \nAudit Contractor — California \n(“25” 2-byte code) (eff. \n10/2005) \n& = MSP cost avoided — Recovery Audit Contractor \n— Florida (“26” 2-byte code) (eff. 10/2005) \nCOMMENT: \nThis field was put on all institutional claim types, but data did not start coming in on OP/HHA/hospice \nuntil April 1, 2002. Prior to April 1, 2002, data only came in",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

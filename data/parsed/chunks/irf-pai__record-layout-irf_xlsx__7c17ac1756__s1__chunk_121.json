@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_121",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n113 _39HA SPHNCTR_BWL_ADMSN_CD (39Ha) Sphincter Control - Bowel: Admission CHAR 2 A score indicating the level of assistance needed for the patient's bowel management at admission. Bowel management - level of assistance includes use of equipment or agents for bowel management. 01 = Helper - Complete Dependence/Total Assistance (Subject",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

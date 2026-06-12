@@ -1,0 +1,14 @@
+The Long-Term Care Hospital (LTCH) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS) is the assessment instrument LTCH providers use to collect patient assessment data in accordance with the LTCH Quality Reporting Program (QRP). This assessment instrument is used for all patients receiving inpatient services in a facility certified as a hospital and designated as an LTCH under the Medicare program. Patient assessment data is collected on all patients at admission, discharge (planned or unplanned), and for patients who have expired.
+This is an all-payer dataset completed for all patients receiving care in the LTCH including, but not limited to, Medicare Fee-for-Service (FFS) and Medicare Advantage beneficiaries and includes condition categories used to calculate scores for LTCH quality measure data.
+LCDS assessment records are submitted to the Centers for Medicare & Medicaid Services (CMS) from all Medicare certified LTCHs in accordance with the data submission requirements identified in the Long-Term Care Hospital (LTCH) Continuity Assessment Record and Evaluation (CARE) Data Set (LCDS) Manual.
+What does this file include? (variable highlights)
+- Beneficiary ID
+- Beneficiary demographic information
+- Facility provider identifiers and location
+- Admission and discharge dates
+- Beneficiary diagnoses, functional status and other physical status information
+- Beneficiary cognitive pattern assessment
+- Use of medications in high-risk drug classes
+- Selected procedures, treatments and programs
+Special Considerations
+- For more information about the LCDS, please see the LCDS Manual on the CMS website.

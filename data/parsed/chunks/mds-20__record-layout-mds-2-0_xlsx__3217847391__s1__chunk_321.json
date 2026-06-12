@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_321",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "procedures - recreation therapy - total number of minutes.\n541 T1B T1B_ORDER_THPY (T1B) Ordered Therapies CHAR 1 Multistate supplement: special treatments and procedures - ordered therapies. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n542 T1C T1C_THPY_DAYS (T1C) Therapy Days CHAR 2 Multistate supplement: special treatments and procedures - estimate of days of therapy until day 15.\n543 T1D T1D_THPY_MIN (T1D) Therapy Minutes CHAR 4 Multistate supplement: special treatments and procedures -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

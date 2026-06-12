@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p267__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 267,
+  "text": "action code and cancel \nreason code are present, cancel reason code takes priority.): \n0 = No cancel action \n1 = Cancel action by credit adjustment (action code = (2 or 6) \n2 = Cancel action only (action code = 4) \n3 = Coverage transfer (cancel reason code = C) \n4 = Plan transfer (cancel reason code = P) \n5 = Scramble (cancel reason code = S) \n6 = Duplicate billing (cancel reason code = D) \n7 = Other (cancel reason code = H) \n8 = Combining 2 spells or 2 beneficiary records (cancel reason code =",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

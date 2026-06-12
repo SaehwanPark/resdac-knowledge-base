@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p4__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 4,
+  "text": "claims except for \nDME, and LINE_PRVDR_VLDTN_TYPE_CD to carrier and DME line; 4) \nRR_BRD_EXCLSN_IND_SW to IP,SNF, HH, hospice and OP base claims, \nand LINE_RR_BRD_EXCLSN_IND_SW to DME line; 5) \nCLM_IP_INITL_MS_DRG_CD to IP base file; and 6) \nDMERC_LINE_FRGN_ADR_IND to DME line. \nAlso changed the name of the HHA base field FINL_STD_AMT to be \nPPS_STD_VAL_PYMT_AMT; edited description of FINL_STD_AMT and \nPPS_STD_VAL_PYMT_AMT. \n1.4 \nJanuary 2019 \nC. Alleman \nK. Schneider \nAdded new valid value for",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

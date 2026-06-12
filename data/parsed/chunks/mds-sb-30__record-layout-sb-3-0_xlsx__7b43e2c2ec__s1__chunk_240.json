@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_240",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "the resident has an indwelling catheter (including suprapubic catheter and nephrostomy tube). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n255 H0100B_EXTRNL_CTHTR_CD H0100B_EXTRNL_CTHTR_CD H0100B Bladder and Bowel Appliances: External Catheter Code CHAR 1 The data in this column indicates whether the resident had an external catheter. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n256 H0100C_OSTMY_CD H0100C_OSTMY_CD H0100C Bladder and Bowel Appliances:",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

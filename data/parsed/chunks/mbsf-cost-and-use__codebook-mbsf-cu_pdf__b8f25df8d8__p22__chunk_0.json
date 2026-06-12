@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 22,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n16 \nBENE_ID \nLABEL: \nEncrypted CCW Beneficiary ID \nDESCRIPTION: The unique CCW identifier for a beneficiary. \nThe CCW assigns a unique beneficiary identification number to each individual who receives Medicare \nand/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., \nMedicare claims, MAX claims, MDS assessment data). \nThis number does",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

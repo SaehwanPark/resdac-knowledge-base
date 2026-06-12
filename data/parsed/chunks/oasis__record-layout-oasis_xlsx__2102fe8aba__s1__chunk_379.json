@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_379",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "was admitted. 01 = Hospital\n02 = Rehabilitation facility\n03 = Nursing home\n04 = Hospice\nNA = No inpatient facility admission. CHAR 2 x x x x X X\nM2420_DSCHRG_DISP M2420 Discharge Disposition This field indicates where the patient is after discharge from the agency. 01 = Patient remained in the community (without formal assistive services).\n02 = Patient remained in the community (with formal assistive services).\n03 = Patient transferred to a non-institutional hospice.\n04 = Unknown because",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

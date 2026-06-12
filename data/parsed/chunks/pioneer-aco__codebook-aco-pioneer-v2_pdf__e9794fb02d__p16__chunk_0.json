@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__codebook-aco-pioneer-v2_pdf__e9794fb02d__p16__chunk_0",
+  "source_document": "data/raw/assets/pdf/e9794fb02d175a1909be3f0dea52965ad4524cdd.pdf",
+  "page": 16,
+  "text": "ORG_NAME \nChronic Conditions Warehouse Virtual Research Data Center \nACO Pioneer V2 Codebook │ May 2025 │ V 1.1 \n12 \nORG_NAME \nLABEL: \nName of the TIN \nDESCRIPTION: Legal Business Name Associated with the ACO Participant TIN. \nSHORT NAME: ORG_NAME \nLONG NAME: ORG_NAME \nTYPE: \nCHAR \nLENGTH: \n70 \nSOURCE: \nCMS Participating Provider Pioneer ACO RIF \nVALUES: \n— \nCOMMENT: \nNull values indicates that the ACO did not submit a TIN name. The TIN number is in the field called \nORG_TIN. \n\n^ Back to TOC ^",
+  "dataset": "pioneer-aco",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-aco-pioneer-v2.pdf"
+}

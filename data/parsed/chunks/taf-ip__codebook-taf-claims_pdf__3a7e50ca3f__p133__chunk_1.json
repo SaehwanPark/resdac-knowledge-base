@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p133__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 133,
+  "text": "SHORT NAME: IHS_SRVC_IND \nLONG NAME: IHS_SRVC_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP line \nLT line \nOT line \nRX line \nVALUES: \n0 = No \n1 = Yes \nNull/missing = Source value is missing or unknown \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

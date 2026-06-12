@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__chunk_0",
+  "source_document": "data/raw/html/dataset_page/e5f45c1825ba4b2fabf81ff96515fb26076640eb.html",
+  "page": null,
+  "text": "The Medicare Encounter Inpatient file contains Medicare Advantage plan records for inpatient hospital stays.\nThis file includes (variable highlights):\n- Admission, discharge dates\n- Diagnosis (ICD diagnosis) codes\n- Procedure (ICD procedure) codes\n- Diagnostic related group (DRG) codes\n- Patient discharge status code\n- Organization NPI\n- Part C/Medicare Advantage benefit package and contract number\n- Revenue center codes, dates, unit counts\n- No payment variables are available\nSpecial",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter?page=1"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_119",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "TOS 35 - hospice benefits) CHAR 1 X X X X X X X X X X X\n548 FFS_CLM_CNT_35 Claim count (MAX TOS 35) NUM 6 X X X X X X X X X X X\n549 FFS_PYMT_AMT_35 Medicaid payment amount (MAX TOS 35) NUM 12 X X X X X X X X X X X\n550 FFS_CHRG_AMT_35 Charge amount (MAX TOS 35) NUM 12 X X X X X X X X X X X\n551 FFS_TP_AMT_35 Third party payment amount (MAX TOS 35) NUM 12 X X X X X X X X X X X\n552 ENCTR_REC_CNT_35 Encounter record count (MAX TOS 35) NUM 5 X X X X X X X X X X X\n553 FEE_FOR_SRVC_IND_36 Recipient",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

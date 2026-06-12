@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p86__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 86,
+  "text": "prior abbreviated \nencounter submission \n\nCOMMENT: \nThis field can be used in determining the “type of bill” for an institutional claim. Often type of bill \nconsists of a combination of two variables: the facility type code (variable called CLM_FAC_TYPE_CD) \nand the service classification type code (CLM_SRVC_CLSFCTN_TYPE_CD). This variable serves as the \noptional third component of bill type, and it is helpful for distinguishing between final, interim, or RAP \n(request for anticipated payment)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p99__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 99,
+  "text": "enrollment) \nCOMMENT: \nCCW creates this variable using the MBSF. We consider the beneficiary to be enrolled in an MMP \nmanaged care plan if the beneficiary had Medicare fee-for-service enrollment for the month and had \none or more months when the MBSF monthly Part C plan type code (variable called \nPTC_PLAN_TYPE_CD_MM) = 48 (Medicare-Medicaid plan) or 49 (Medicare-Medicaid plan HMO point-\nof-service [MMP HMOPOS]). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p144__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 144,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n128 \nISLET_ADD_ON_PYMT_AMT \nLABEL: \nIslet Add-On Payment Amount \nDESCRIPTION: This field is used to identify the Islet add-on payment amount found in the value code/amount trailer. \nSHORT NAME: ISLET_ADD_ON_PYMT_AMT \nLONG NAME: ISLET_ADD_ON_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the claim value amount associated with",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

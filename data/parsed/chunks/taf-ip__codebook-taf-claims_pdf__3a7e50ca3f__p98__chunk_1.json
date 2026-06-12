@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p98__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 98,
+  "text": "The code is either an ICD-9 or an ICD-10-CM code, depending on the date. For ICD-9 diagnosis codes, \nthis is a 3–5 digit numeric or alpha/numeric value; it can include leading zeros. On October 1, 2015, \nthe conversion from the 9th version of the International Classification of Diseases (ICD-9-CM) to \nversion 10 (ICD-10-CM) occurred. The Diagnosis Version Code associated with each of the diagnosis \ncodes, indicates whether the version was ICD9 or 10 (refer to the DGNS_VRSN_CD_1–12 fields). \n^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

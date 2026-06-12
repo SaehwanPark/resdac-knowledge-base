@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s6__chunk_0",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 6,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nTAF Annual Provider File — Affiliated Programs File\nVersion — December 2025\nRIF SAS name RIF label Type Length RIF sequence\nSUBMTG_STATE_PRVDR_ID Submitting State Provider Identification Number CHAR 30 1\nSTATE_CD Submitting State Alpha Abbreviation CHAR 2 2\nSUBMTG_STATE_CD Submitting State Entity Code CHAR 2 3\nAFLTD_PGM_TYPE_CD Affiliated Program Type Code CHAR 1 4\nPRVDR_AFLTD_PGM_ID Provider Affiliated Program Identifier CHAR 50",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

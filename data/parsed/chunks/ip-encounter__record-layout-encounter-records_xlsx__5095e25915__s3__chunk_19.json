@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_19",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "file\nBENE_ID Encrypted CCW Beneficiary ID Char 15 1\nENC_JOIN_KEY Unique Encounter Join Key Char 15 2\nCLM_TYPE_CD Claim Type Code Char 4 3\nRLT_OCRNC_CD_SEQ Claim Related Occurrence Code Sequence Char 2 4\nCLM_RLT_OCRNC_CD Claim Related Occurrence Code Char 2 5\nCLM_RLT_OCRNC_DT Claim Related Occurrence Date Date 8 6\nSpan code file\nBENE_ID Encrypted CCW Beneficiary ID Char 15 1\nENC_JOIN_KEY Unique Encounter Join Key Char 15 2\nCLM_TYPE_CD Claim Type Code Char 4 3\nRLT_SPAN_CD_SEQ Claim Related Span",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

@@ -1,0 +1,111 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Million Hearts Data File — Practice File
+Version — May 2025
+SAS name	Label	Type	Length
+PRACTICE_ID	Model-Assigned Practice ID	CHAR	9
+BILLING_TIN	Practice's Billing TIN	CHAR	9
+TINS	List of Taxpayer Identification Numbers for the Practice	CHAR	4000
+NPIS	List of National Provider Identifiers in the Practice	CHAR	4000
+PRACTICE_NAME	Name of Practice	CHAR	100
+GROUP_TYPE	Practice Group Type	CHAR	100
+CCNS	List of CMS Certification Numbers (Facility Numbers) for the Practice	CHAR	4000
+ADDRESS_LINE_1	Practice's Address (line 1)	CHAR	100
+ADDRESS_LINE_2	Practice's Address (line 2)	CHAR	100
+CITY	Practice's City	CHAR	100
+STATE	Practice's State (postal abbreviation)	CHAR	2
+ZIP_CODE	Practice's Zip Code	CHAR	20
+INSERT_DATE	Date the Record was Created	DATE	8
+UPDATE_DATE	Date the Record was Modified	DATE	8
+IS_ACTIVE	Active Practice (Y) or Inactive Practice (N)	CHAR	1
+FILE_COUNT	Number of Files Submitted for the Practice	CHAR	10
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Million Hearts Data File — NPI File
+Version — May 2025
+SAS name	Label	Type	Length
+PRACTICE_ID	Model-Assigned Practice ID	CHAR	9
+PRACTICE_NAME	Name of Practice	CHAR	100
+TIN	Practice's Taxpayer Identification Number	CHAR	9
+NPI	Provider's National Provider Identifier	CHAR	10
+FIRST_NAME	Provider's First Name	CHAR	100
+LAST_NAME	Provider's Last Name	CHAR	100
+INSERT_DATE	Date the Record was Created	DATE	8
+UPDATE_DATE	Date the Record was Modified	DATE	8
+ACTIVATION_DATE	Date the Provider Joined the Program	DATE	8
+DEACTIVATION_DATE	Date the Provider Left the Program	DATE	8
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Million Hearts Data File — Demographic File
+Version — May 2025
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+PRACTICE_ID	Model-Assigned Practice ID	CHAR	9
+PRACTICE_NAME	Name of Practice	CHAR	100
+TIN	Practice's Taxpayer Identification Number	CHAR	9
+UNIQUE_PATIENT_ID	Unique Model-Assigned Patient ID	CHAR	36
+PATIENT_DOB	Patient's Date of Birth	DATE	8
+PATIENT_SEX1	Patient's Sex	CHAR	1
+PATIENT_RACE	Patient's Race	CHAR	6
+PATIENT_ETHNICITY	Patient's Ethnicity	CHAR	6
+IS_MEDICARE_PARTB	Identify if the Patient is Enrolled in Medicare Part B	CHAR	1
+CREATE_DATE	Date the Record was Created	DATE	8
+LAST_MODIFIED_DATE	Date the Patient Record was Modified	DATE	8
+1In 2025, this field was renamed to sex to comply with Executive Order 14168.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Million Hearts Data File  — Final and Raw Clinical Files
+Version — May 2025
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+PRACTICE_ID	Model-Assigned Practice ID	CHAR	9
+PRACTICE_NAME	Name of Practice	CHAR	100
+TIN	Practice's Taxpayer Identification Number	CHAR	9
+NPI	Provider's National Provider Identifier	CHAR	10
+UNIQUE_PATIENT_ID	Unique Model-Assigned Patient ID	CHAR	36
+ACTIVITY_DATE	Encounter/Procedure/Diagnosis/Lab/Medication Start or Occurrence Date	DATE	8
+ACTIVITY_END_DATE	Encounter/Procedure/Diagnosis End Date	DATE	8
+CODE	Code Used to Document the Service	CHAR	20
+MODIFIER	Any Modifiers for the Base Code	CHAR	10
+VALUE	Value Provided for Certain Service Attributes	CHAR	250
+UNITS	Unit for the Value Provided for Certain Service Attributes	CHAR	10
+CREATE_DATE	Date the Record was Created	DATE	8
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Million Hearts Data File — Visit File
+Version — May 2025
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+PRACTICE_ID	Model-Assigned Practice ID	CHAR	9
+PRACTICE_NAME	Name of Practice	CHAR	100
+TIN	Practice's Taxpayer Identification Number	CHAR	9
+UNIQUE_PATIENT_ID	Unique Model-Assigned Patient ID	CHAR	36
+NPI	Provider's National Provider Identifier	CHAR	10
+VISIT_DATE	Patient Visit Date	DATE	8
+FOLLOWUP_ATTESTATION	Practitioner's Attestation to Follow-up	CHAR	1
+ACCURACY_ATTESTATION	Practitioner's Accuracy of Attestation	CHAR	1
+RISK_SCORE	Calculated ASCVD Risk Score	CHAR	10
+BASELINE_SCORE	Patient's Baseline ASCVD Score	CHAR	10
+BASELINE_GROUP	Patient's Baseline Group (Low, Medium, High)	CHAR	10
+BASELINE_DATE	Patient's Baseline Date	DATE	8
+CREATE_DATE	Date the Record was Created	DATE	8
+LAST_MODIFIED_DATE	Date the Patient Record was Modified	DATE	8
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Million Hearts Data File — Alignment Files
+Version — May 2025
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+PRACTICE_ID	Model-Assigned Practice ID	CHAR	9
+PRACTICE_NAME	Name of Practice	CHAR	100
+TIN	Practice's Taxpayer Identification Number	CHAR	9
+UNIQUE_PATIENT_ID	Unique Model-Assigned Patient ID	CHAR	36
+PATIENT_DOB	Patient's Date of Birth	DATE	8
+PATIENT_SEX1	Patient's Sex	CHAR	1
+PATIENT_RACE	Patient's Race	CHAR	6
+PATIENT_ETHNICITY	Patient's Ethnicity	CHAR	6
+ALIGNED	Indication of Patient's Attribution to the Practice (Y or N)	CHAR	1
+ELIGIBLE	Indication of Patient's Eligibility	CHAR	1
+REASON_CODE	Reason Code(s) for Patient Status Change	CHAR	250
+LAST_MODIFIED_DATE	Date the Patient Record was Modified	DATE	8
+IS_BASELINE_COMPLETE	Indication of Completion of Beneficiary Record in the Registry (Y or N)	CHAR	1
+1In 2025, this field was renamed to sex to comply with Executive Order 14168.

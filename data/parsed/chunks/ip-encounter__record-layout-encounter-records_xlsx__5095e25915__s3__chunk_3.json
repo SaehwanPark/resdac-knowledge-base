@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_3",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "(PBP) Number Char 3 19\nCLM_MDCL_REC Claim Medical Record Number Char 1 20\nORG_NPI Organization NPI Number Char 10 21\nORG_TXNMY_CD Organization Taxonomy Code Char 10 22\nRNDRNG_PHYSN_NPI Claim Rendering Physician NPI Number Char 10 23\nRFRG_PHYSN_NPI Claim Referring Physician NPI Number Char 10 24\nAT_PHYSN_NPI Claim Attending Physician NPI Number Char 10 25\nAT_PHSYN_TXNMY_CD Claim Attending Physician Taxonomy Code Char 10 26\nOP_PHYSN_NPI Claim Operating Physician NPI Number Char 10 27\nOT_PHYSN_NPI",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

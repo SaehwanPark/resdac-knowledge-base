@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p56__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 56,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n38 \nCARR_LINE_MTUS_CD \nLABEL: \nCarrier Line Miles/Time/Units/Services (MTUS) Indicator Code \nDESCRIPTION: Code indicating the units associated with services needing unit reporting on the line item for the \ncarrier claim (non-DMERC). \nSHORT NAME: MTUS_IND \nLONG NAME: CARR_LINE_MTUS_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Values reported as zero (no allowed",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

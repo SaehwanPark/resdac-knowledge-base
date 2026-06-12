@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_41",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Model 1 Code (bundled payment) | \n\n | 215 | CLM_CARE_IMPRVMT_MODEL_CD2 | Claim Care Improvement Model 2 Code | \n\n | 216 | CLM_CARE_IMPRVMT_MODEL_CD3 | Claim Care Improvement Model 3 Code | \n\n | 217 | CLM_CARE_IMPRVMT_MODEL_CD4 | Claim Care Improvement Model 4 Code | \n\n | 218 | CLM_BNDLD_MODEL_1_DSCNT_PCT | Claim Bundled Model 1 Discount Percent | \n\n | 219 | CLM_BASE_OPRTG_DRG_AMT | Claim Base Operating DRG Amount | \n\n | 220 | CLM_VBP_PRTCPNT_IND_CD | Claim Value-Based Purchasing (VBP)",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

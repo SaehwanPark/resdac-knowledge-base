@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_319",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "data in this column indicates whether or not the patient used any mobility devices prior to the current illness, exacerbation or injury. 0 = No\n1 = Yes\n303 GG0130A1_EATG_ABILITY_STRT_CD GG0130A1_EATG_ABILITY_STRT_CD GG0130A1 Admission Performance Eating Code - The data in this column identifies the patient's usual performance ability with eating at the time of admission. CHAR 2 The data in this column identifies the patient's usual performance ability with eating at the time of admission. 01 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

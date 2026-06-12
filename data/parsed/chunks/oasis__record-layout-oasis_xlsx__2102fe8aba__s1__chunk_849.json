@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_849",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Ethnicity: Yes, Another Hispanic/Latino/Spanish Indicates the patient's self reported ethnicity. A. No, not of Hispanic, Latino/a, or Spanish origin\nB. Yes, Mexican, Mexican American, Chicano/a\nC. Yes, Puerto Rican\nD. Yes, Cuban\nE. Yes, another Hispanic, Latino, or Spanish origin\nX. Patient unable to respond\nY. Patient declines to respond CHAR 1 x\nA1005X_ETHNCTY_NO_RSPNS_CD Ethnicity: Patient unable to respond Indicates the patient's self reported ethnicity. A. No, not of Hispanic, Latino/a, or",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

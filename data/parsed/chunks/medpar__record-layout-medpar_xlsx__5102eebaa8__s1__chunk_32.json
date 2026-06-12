@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_32",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X X X X X X X X\nCLNC_AMT CLNC_VISIT_CHRG_AMT Clinic visit charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nHOSP_AT_HOME_CHRG_AMT HOSP_AT_HOME_CHRG_AMT Hospital at Home Room and Board (R&B) Charge Amount Num 8 - - - - - - - - - - - - - - - - - X\nHOSP_AT_HOME_FROM_DT HOSP_AT_HOME_FROM_DT Hospital at Home Care From Date DATE 8 - - - - - - - - - - - - - - - - - X\nHOSP_AT_HOME_THRU_DT HOSP_AT_HOME_THRU_DT Hospital at Home Care Through Date DATE 8 - - - - - - - - - - - - -",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

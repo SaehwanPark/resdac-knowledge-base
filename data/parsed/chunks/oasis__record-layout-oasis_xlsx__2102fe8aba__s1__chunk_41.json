@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_41",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "treatment regimen change or inpatient stay within past 14 days: indwelling/suprapubic catheter. 0 = No, 1 = Yes, Spaces = Unknown. CHAR 1 x x\nM0220_PR_INTR_PAIN (M0220) Intractable Pain Conditions prior to medical or treatment regimen change or inpatient stay within past 4 days: intractable pain. 0 = No, 1 = Yes, Spaces = Unknown. CHAR 1 x x\nM0220_PR_MEM_LOSS (M0220) Memory Loss to Extent Supervision Required Conditions prior to medical or treatment regimen change or inpatient stay within past",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

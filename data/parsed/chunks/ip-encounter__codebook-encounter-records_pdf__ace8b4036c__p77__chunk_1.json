@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p77__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 77,
+  "text": "and to \nindividuals enrolled in private health insurance programs. The codes are divided into three levels, or \ngroups, as described below (in COMMENT). \nIn the institutional encounter revenue center files, this variable can indicate the specific case-mix \ngrouping that Medicare used to pay for skilled nursing facility (SNF), home health, or inpatient \nrehabilitation facility (IRF) services (Refer to COMMENT section below). \nSHORT NAME: HCPCS_CD \nLONG NAME: HCPCS_CD \nTYPE: \nCHAR \nLENGTH: \n5",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

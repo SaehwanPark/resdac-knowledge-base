@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p71__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 71,
+  "text": "DESCRIPTION: This variable is the sum of Medicaid payment amount from the inpatient (IP), long-term care (LT), \npharmacy (RX), and other services (OT) (header) claims for the beneficiary for each month. Note that \nthis dollar amount may be an undercount if the beneficiary had managed care claims. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Claims files (derived) \nVALUES: \n$ \nCOMMENT: \nMonthly claims total spending is calculated independent of Medicaid eligibility status; the CCW sums \nthe",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

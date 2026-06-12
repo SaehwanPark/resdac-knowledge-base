@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_124",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "= Yes, -1 = Unknown, -2 = Space\n163 T1C T1C_THPY_DAYS 42b(T1c)Ordered Therapies - Days CHAR 2 Estimated number of days at least one therapy service is expected to be delivered through the patient's fifteenth day of admission.\n164 T1D T1D_THPY_MIN 42c(T1d)Ordered Therapies - Minutes CHAR 4 Estimated total number of minutes of therapy the patient is expected to receive through his fifteenth day of admission.\n165 T3MDCR T3MCARE_CALC_RUG 43-Medicare (T3)Case Mix Group - Medicare CHAR 5 The software",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

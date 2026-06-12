@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p271__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 271,
+  "text": "LONG NAME: NCH_IP_NCVRD_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nDERIVED FROM: \n• \nREV_CNTR_CD \n• \nREV_CNTR_NCVR_CHRG_AMT \nDerivation Rules: Based on the presence of revenue center code equal to 0001, move the related non-\ncovered charge amount to NCH_IP_NCOV_CHRG_AMT. \n ^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

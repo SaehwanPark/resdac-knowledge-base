@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p9__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 9,
+  "text": "A. 2025 MCAHPS Analytic Data Contents \n9 \nname \nLABEL \nFORMAT \nsu_mode \nSurvey data collection mode \n$MODEF \nsu_email_stat \nEmail indicator \n$ESTATF \nsu_dispositn \nFinal disposition code \n$FDISPF \nsu_dispo_lang \nLanguage of survey data collection \n$LANGF \nsa_type \nMa & pdp survey type (1-4) \nSTP \nsa_st_abbr \nFips state abbreviation \nsa_spanish_ind \nSpanish language flag (medicare & you) \n$ID_F \nsa_snp_type \nPart d special needs plan type \n$SNP \nsa_sex \nSex of beneficiary \n$SEXF \nsa_region",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

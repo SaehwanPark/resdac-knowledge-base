@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_735",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Minutes CHAR 4 Co-treatment minutes of physicaltherpay services that were provided over the SNF stay. effective 10/01/2019\n813 O0425C5_PT_DAYS_NUM O0425C5_PT_DAYS_NUM O0425C5 Physical Therapy: Days CHAR 3 Number of days of physicaltherpay services that were provided over the SNF stay. effective 10/01/2019\n814 O0430_PTA_THRPY_DAYS_NUM O0430_PTA_THRPY_DAYS_NUM O0430 Distinct Calendar Days of Part A Therapy CHAR 3 Distinct calendar days of Part A therapy for at least 15 minutes during the SNF Part",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

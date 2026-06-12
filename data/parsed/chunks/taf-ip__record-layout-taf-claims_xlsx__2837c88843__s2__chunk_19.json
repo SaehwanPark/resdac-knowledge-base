@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_19",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Code CHAR 2 105\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 8 106\nTMSIS_RUN_ID TMSIS State Data Processing Run Identifier NUM 8 107\nLT_VRSN Long-Term Version Representing the Iteration of the File CHAR 2 108\nLT_FIL_DT Long-Term File Date - Represents the Year and Month of the Reporting Period DATE 8 109\nCCW_LD_DT CCW Load Date DATE 8 110\nOccurrence code file\nBENE_ID Encrypted CCW Beneficiary Identifier CHAR 15 1\nMSIS_ID Encrypted State Assigned Beneficiary Unique",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

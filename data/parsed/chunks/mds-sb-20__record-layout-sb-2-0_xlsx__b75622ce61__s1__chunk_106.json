@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_106",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "the patient received IV medication. Includes any drug or biological given by intravenous push or drip through a central or peripheral port. 0 = Unchecked, 1 = Checked, -1 = Unknown\n136 P1AG P1AG_OXYGEN 38ad(P1ag)Special Care - Oxygen Therapy CHAR 1 Indicates the patient receive oxygen therpay. Includes continuous or intermittent oxygen via mask, cannula, etc. 0 = Unchecked, 1 = Checked, -1 = Unknown\n137 P1AH P1AH_RADIATION 38ae(P1ah)Special Care - Radiation CHAR 1 Indicates the patient received",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

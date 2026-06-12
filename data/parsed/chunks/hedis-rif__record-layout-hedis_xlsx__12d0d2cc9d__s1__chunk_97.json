@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_97",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Medical NUM 8 — 195 236 225 223\nAHU_PUCD_TOT_AGE_SEX_WT3 Acute Hospital Utilization (AHU): PUCD Age-Sex Weight, Total NUM 8 — 196 237 226 224\nEDU_DNMTR_IND Emergency Department Utilization (EDU) Denominator Indicator NUM 3 182 197 238 — —\nEDU_NOUTLIER_IND Emergency Department Utilization (EDU): Non-Outliers Indicator NUM 3 — — — 227 225\nEDU_OUTLIER_IND Emergency Department Utilization (EDU): Outliers Indicator NUM 3 — — — 228 226\nEDU_ED_VISIT_CNT Emergency Department Utilization (EDU): Observed",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

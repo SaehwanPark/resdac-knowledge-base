@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p385__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 385,
+  "text": "hospital claims, where \nmultiple methods may be used to determine the payment amount for the various revenue center \nrecords on the claim (for example, some lines may be bundled into an APC and paid under the \noutpatient PPS, while other lines may be paid under other fee schedules). \nSHORT NAME: REVSTIND \nLONG NAME: REV_CNTR_STUS_IND_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nA = Services not paid under OPPS; paid \nunder fee schedule or other \npayment system (Includes \nUnclassified",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

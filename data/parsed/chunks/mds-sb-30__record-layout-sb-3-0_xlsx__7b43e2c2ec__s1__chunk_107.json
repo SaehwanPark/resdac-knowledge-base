@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_107",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "days (nearly every day)\n^=Blank (skip pattern)\n140 D0500B1_STF_FEEL_DOWN_CD D0500B1_STF_FEEL_DOWN_CD D0500B1 Staff Assessment of Resident Mood - Feel Down Code CHAR 1 The data in this column contains the staff assessment whether the resident has felt or appears to be down, depressed or hopeless. -=Not assessed/no information\n0=No (enter 0 in column 2)\n1=Yes (enter 0-3 in column 2)\n^=Blank (skip pattern)\n141 D0500B2_STF_FEEL_DOWN_FREQ_CD D0500B2_STF_FEEL_DOWN_FREQ_CD D0500B2 Staff Assessment of",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

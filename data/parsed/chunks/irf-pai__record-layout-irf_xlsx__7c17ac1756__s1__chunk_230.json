@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_230",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "_52FA TOT_PUSH_SCRE_ADMSN_NUM (52Fa) Total PUSH Score: Admission CHAR 2 The sum of the scores of the three items (52C + 52D + 52E) to derive the total PUSH tool score at the time of admission.\n190 _52FD TOT_PUSH_SCRE_DSCHRG_NUM (52Fd) Total PUSH Score: Discharge CHAR 2 The sum of the scores of the three items (52C + 52D + 52E) to derive the total PUSH tool score at the time of discharge.\n191 _53A STNDG_BAL_PRBLM_ADMSN_SW (53a) Standing Balance Problem: Admission CHAR 1 A code indicating whether",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

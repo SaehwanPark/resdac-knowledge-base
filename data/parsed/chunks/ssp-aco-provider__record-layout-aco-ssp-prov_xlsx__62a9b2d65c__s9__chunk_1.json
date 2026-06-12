@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s9__chunk_1",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 9,
+  "text": "as the NPI) or provider (physician or non-physician) who reassigned billing rights to an ACO participant in the performance period (based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)). In the 2014 file (only), due to limitations of the data available at the time that the RIF was created, no NPI information is available for 11 ACOs who terminated early in 2014 but were still financially reconciled for the performance year. CHAR 10\nPRVDR_ACO_YEAR",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_100",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "8 189 204 245 — —\nHPC_DNMTR_IND Hospitalization for Potentially Preventable Complications (HPC) Denominator Ind NUM 3 190 205 — — —\nHPC_CHRNC_ACSC_NOL_DSCHRG_IND HPC: Observd Chronic Ambulatory Care Senstv Condtn (ACSC) Non-Outlier Dschrg Ind NUM 3 — 206 246 234 232\nHPC_CHRNC_ACSC_OL_DSCHRG_IND HPC: Observed Chronic Ambulatory Care Senstv Condtn (ACSC) Outlier Discharge Ind NUM 3 — 207 247 235 233\nHPC_ACUTE_ACSC_NOL_DSCHRG_IND HPC: Observed Acute Ambulatory Care Senstv Condtn (ACSC) Non-Outlier",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

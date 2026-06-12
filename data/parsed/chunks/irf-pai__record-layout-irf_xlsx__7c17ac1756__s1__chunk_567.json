@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_567",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "things, such as reading the newspaper or watching television. 0 = Never or 1 day \n1 = 2-6 days \n2 = 7-11 days \n3 = 12-14 days \n- = Not Assessed/No Information \n^ = Blank\n504 MOVE_SLOW_ADMSN_CD MOVE_SLOW_ADMSN_CD Mood: Moving or speaking so slowly: P (A) CHAR 1 This column documents whether, at the time of admission, the patient expressed moving or speaking so slowly that other people could have noticed. Or the opposite – being so fidgety or restless that you have been moving around a lot more",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

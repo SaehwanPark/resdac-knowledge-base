@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__record-layout-ahcah_xlsx__83602a409f__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/83602a409fc06cd2d8af1083b47854c376f2898a.xlsx",
+  "page": 1,
+  "text": "Tier 2: <= 24 AHCAH Patients NUM 1\nSTATE_BENE_MDCD_ID Encrypted State-Specific Medicaid Beneficiary ID CHAR 32\nPGM_ID Program Identifier (1=FFS Medicare; 2=FFS Medicaid; 3=Dual) NUM 1\nADMSN_DT Facility Admission Date DATE 8\nAHCAH_WVR_SUBMSN_ID AHCAH Waiver Submission ID CHAR 15\nPRVDR_NAME Name of Facility CHAR 255\nPRVDR_PHNE_NUM Facility Phone Number CHAR 22\nPRVDR_ADR Facility Location Address CHAR 510\nPRVDR_CITY Facility Location City CHAR 255\nPRVDR_ZIP_CD Facility Location City Zip Code CHAR",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahcah.xlsx"
+}

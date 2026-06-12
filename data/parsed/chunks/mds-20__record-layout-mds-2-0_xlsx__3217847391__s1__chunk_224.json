@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_224",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "J1N J1N_UNSTEADY_GAIT (J1N) Unsteady Gait CHAR 1 Health conditions: problem conditions - other - unsteady gait in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n354 J1O J1O_VOMIT (J1O) Vomiting CHAR 1 Health conditions: problem conditions - other - vomiting in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n355 J1P J1P_NONE_ABOVE (J1P) None of Above Problem Conditions CHAR 1 Health conditions: problem conditions - other - none of above in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n356 J2A",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

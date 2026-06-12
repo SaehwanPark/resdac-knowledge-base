@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_121",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "prospective period and later becomes a terminated ACO, that ACO will remain in the file.\nFiles subsequent to termination will have blank data assignment run flags for terminated ACOs.\nFor ACOs under prospective assignment, beneficiaries are prospectively assigned at the start of the PY with exclusions applied throughout the PY. As a result, the number of assigned beneficiaries for Prospective Assignment ACOs will be smaller for each consecutive assignment period.",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

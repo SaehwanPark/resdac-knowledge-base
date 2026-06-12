@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p39__chunk_2",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 39,
+  "text": "year, compare this variable (along with the \ncorresponding PLAN_ID_15) to the CONTRACT_ID_16 (and PLAN_ID_16). \nYou need to know both the contract number and plan benefit package identification number (variable \ncalled PLAN_ID_YY) to identify the specific plan benefit package offered to beneficiaries for the \nparticular year (YY). \nThis variable corresponds with the CONTRACT_NAME variable in the plan base file for the year, which \nis the contract name that corresponds with this number. \nThe CCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

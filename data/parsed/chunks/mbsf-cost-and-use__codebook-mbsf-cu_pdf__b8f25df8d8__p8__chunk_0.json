@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p8__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 8,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n2 \nACUTE_COV_DAYS \nLABEL: \nAcute Inpatient Medicare Covered Days \nDESCRIPTION: This variable is the count of Medicare covered days in the acute inpatient hospital setting for the year. \nThis variable equals the sum of the CLM_UTLZTN_DAY_CNT variables on the source claims. \nSHORT NAME: — \nLONG NAME: ACUTE_COV_DAYS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

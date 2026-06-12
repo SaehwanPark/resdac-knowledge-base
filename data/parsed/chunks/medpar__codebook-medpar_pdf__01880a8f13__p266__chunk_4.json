@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p266__chunk_4",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 266,
+  "text": "checking the edit code trailer on the final action \nclaims(s) that comprise the stay): \n0 = No error \n1 = Error condition \nWarning indicator 3 ('reimbursement/total charge indicator' derived after summing up fields on the final \naction claim(s) that comprise the stay; checks resulting Medicare payment amount (commonly called \nreimbursement), total charge amount, as well as beneficiary primary payer amount and utilization day \ncount): \n0 = Medicare payment amount and total charge amount > zeroes",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

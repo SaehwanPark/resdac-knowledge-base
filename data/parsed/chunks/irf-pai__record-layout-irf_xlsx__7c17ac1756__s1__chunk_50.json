@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_50",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Helper - Complete Dependence/Maximal Assistance (Subject 25% or more), 03 = Helper - Modified Dependence/Moderate Assistance (Subject 50% or more), 04 = Helper - Modified Dependence/Minimal Assistance (Subject 75% or more), 05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence\n73 _29D BLADR_ASTNC_DSCHRG_CD (29d) Bladder Level of Assistance: Discharge CHAR 2 A score indicating the level of assistance",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

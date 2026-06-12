@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s5__chunk_12",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 5,
+  "text": "Claim Line Number Num 13 19 19\nCLM_THRU_DT Claim Through Date Date 8 5 5\nPRVDR_NPI DME Line Supplier NPI Char 10 6 6\nPRVDR_SPCLTY Line CMS Provider Specialty Code Char 2 7 7\nLINE_SRVC_CNT Line Service Count Num 12 8 8\nLINE_PLACE_OF_SRVC_CD Line Place of Service Code Char 2 9 9\nLINE_1ST_EXPNS_DT Line First Expense Date Date 8 10 10\nLINE_LAST_EXPNS_DT Line Last Expense Date Date 8 11 11\nHCPCS_CD HCFA Common Procedure Coding System (HCPCS) Code Char 5 12 12\nHCPCS_1ST_MDFR_CD HCPCS Initial Modifier",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

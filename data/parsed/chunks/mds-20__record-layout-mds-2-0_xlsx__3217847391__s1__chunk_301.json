@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_301",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "treatments and procedures: intervention programs for mood, behavior, cognitive loss - group therapy used in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n504 P2D P2D_EN_CHG_4_MOOD (P2D) Resident-Specific Deliberate Changes in Environment CHAR 1 Special treatments and procedures: intervention programs for mood, behavior, cognitive loss - resident-specific changes in environment to address mood/behavior patterns used in last 7 days 0 = No, 1 = Yes, \"-\" = Unknown.\n505 P2E P2E_REORIENT (P2E)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

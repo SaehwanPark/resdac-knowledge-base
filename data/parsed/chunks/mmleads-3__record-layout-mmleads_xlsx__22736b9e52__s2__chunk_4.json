@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s2__chunk_4",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 2,
+  "text": "8\n21 MDCD_IP_TOTAL_SPEND Medicaid Payment Amount - Inpatient Num 8\n22 MDCD_LT_TOTAL_USE Medicaid Use (Claim Count) - Long Term Care Num 8\n23 MDCD_LT_TOTAL_SPEND Medicaid Payment Amount - Long Term Care Num 8\n24 MDCD_OT_TOTAL_USE Medicaid Use (Claim Count) - Other Services Num 8\n25 MDCD_OT_TOTAL_SPEND Medicaid Payment Amount - Other Services Num 8\n26 MDCD_OT_MC_CAPTD_USE Medicaid Managed Care Capitated Claim Count - Other Services Num 8\n27 MDCD_OT_MC_CAPTD_SPEND Medicaid Managed Care Capitated",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

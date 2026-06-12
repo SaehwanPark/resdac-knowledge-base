@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 14,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n4 \nBENE_CNTY_CD \nLABEL: \nBeneficiary County Code from Claim (SSA) \nDESCRIPTION: The three-digit social security administration (SSA) standard county code of a beneficiary's residence. \nSHORT NAME: BENE_CNTY_CD \nLONG NAME: BENE_CNTY_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Encounter Data System (EDS) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n—",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

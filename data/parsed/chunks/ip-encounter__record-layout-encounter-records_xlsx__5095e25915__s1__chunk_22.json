@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_22",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Claim Procedure Code 8 Date Date 8 129\nPRCDR_DT9 Claim Procedure Code 9 Date Date 8 130\nPRCDR_DT10 Claim Procedure Code 10 Date Date 8 131\nPRCDR_DT11 Claim Procedure Code 11 Date Date 8 132\nPRCDR_DT12 Claim Procedure Code 12 Date Date 8 133\nPRCDR_DT13 Claim Procedure Code 13 Date Date 8 134\nCLM_OBSLT_DT Claim Obsolete Date Date 8 135\nCLM_BPRVDR_CITY_NAME Billing Provider Address - City Char 30 136\nCLM_BPRVDR_USPS_STATE_CD Billing Provider Address - USPS State Code Char 2",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

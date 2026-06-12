@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_4",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "Amount (sum of all line-level allowed charges) NUM 12 18\nDEDAPPLY CARR_CLM_CASH_DDCTBL_APLD_AMT Carrier Claim Cash Deductible Applied Amount (sum of all line-level deductible amounts) NUM 12 19\nHCPCS_YR CARR_CLM_HCPCS_YR_CD Claim Healthcare Common Procedure Coding System (HCPCS) Year Code CHAR 1 20\nPRNCPAL_DGNS_CD PRNCPAL_DGNS_CD Claim Principal Diagnosis Code CHAR 7 21\nPRNCPAL_DGNS_VRSN_CD PRNCPAL_DGNS_VRSN_CD Claim Principal Diagnosis Version Code CHAR 1 22\nICD_DGNS_CD1 ICD_DGNS_CD1 Claim",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

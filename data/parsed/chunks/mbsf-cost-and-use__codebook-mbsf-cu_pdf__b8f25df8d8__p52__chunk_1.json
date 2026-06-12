@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p52__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 52,
+  "text": "SHORT NAME: — \nLONG NAME: IP_ER_VISITS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nAdditional ED revenue centers are found in the Hospital Outpatient data files — if the ED visit did not \nresult in an inpatient admission at the same facility. Reference the variable HOP_ER_VISITS within the \nMBSF-CU file. \nThere are two variables that contain counts of ER visits in different settings: this variable and the \nHospital Outpatient ER (HOP_ER_VISITS).",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

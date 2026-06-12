@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "X - - - - - - - -\nSTEP 5 STEP Maximum Step Number CHAR 2 X - - - - - - - -\nFORMULARY_ID FORMULARY_ID Formulary ID CHAR 8 - X X X X X X X X\nFRMLRY_RX_ID FRMLRY_RX_ID CCW Formulary Drug ID CHAR 8 - X X X X X X X X\nPTD_MODEL_IND PTD_MODEL_IND Part D Model Indicator CHAR 2 - - - - - - X X X\nOTHR_TROOP_AMOUNT_IND OTHR_TROOP_AMOUNT_IND Other TrOOP Amount Indicator CHAR 1 - - - - - - - X X\nMDCR_RX_PYMT_PLAN_IND MDCR_RX_PYMT_PLAN_IND Medicare Prescription Payment Plan (MPPP) Indicator CHAR 1 - - - - -",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

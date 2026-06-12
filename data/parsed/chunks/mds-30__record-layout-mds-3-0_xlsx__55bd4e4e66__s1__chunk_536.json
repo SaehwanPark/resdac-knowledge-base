@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_536",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "erroneous record to be modified or inactivated. 01=Entry tracking record\n10=Discharge assessment - return not anticipated\n11=Discharge assessment - return anticipated\n12=Death in facility tracking record\n99=None of the above\n^=Blank (Skip Pattern) effective 10/01/2023\n615 X0700A_CRCTN_ASMT_RFRNC_DT X0700A_CRCTN_ASMT_RFRNC_DT X0700A Correction Assessment Reference Date CHAR 8 The data in this column contains the event date for the prior erroneous record to be modified or inactivated. The event",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

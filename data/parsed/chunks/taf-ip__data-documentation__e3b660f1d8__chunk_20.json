@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_20",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| 129 | DRG_RLTV_WT | DRG Relative Weight | \n\n | 130 | PYMT_LVL_IND | Payment Level Indicator - Header or Line | \n\n | 131 | BILLED_AMT | Total Claim Billed Amount | \n\n | 132 | NCVRD_CHRG_AMT | Non-covered Charges Amount | \n\n | 133 | MDCD_ALOWD_AMT | Total Medicaid Allowed Amount | \n\n | 134 | MDCD_PD_AMT | Total Amount Paid By Medicaid | \n\n | 135 | MDCD_COPAY_AMT | Total Copay Amount Paid by Beneficiary | \n\n | 136 | MDCD_DSH_PD_AMT | Medicaid Amount Paid Disproportionate Share Hospital (DSH) |",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

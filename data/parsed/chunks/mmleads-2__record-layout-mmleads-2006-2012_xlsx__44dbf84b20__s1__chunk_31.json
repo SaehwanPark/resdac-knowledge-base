@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "- No other primary payer besides Medicare\nE_BUYIN_1 - 12 Monthly Medicare Part A and/or B Entitlement Indicator. January through December 0 - Not Entitled\n1 - Part A Only\n2 - Part B Only\n3 - Part A and Part B\nA - Part A, State Buy-in\nB - Part B, State buy-in\nC - Parts A and B, State Buy-in\nE_MEDICAREMA_1 - 12 Monthly Medicare Managed Care (Medicare Advantage; MA) Indicator. January through December 0 - Not a member of HMO\n1 - Non lock-in, HCFA to process provider claim\n2 - Non lock-in, GHO to",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

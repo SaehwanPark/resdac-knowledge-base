@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p29__chunk_3",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 29,
+  "text": "CST_SHR_GRP_CD_09 \nCST_SHR_GRP_CD_10 \nCST_SHR_GRP_CD_11 \nCST_SHR_GRP_CD_12 \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n00 = Not Medicare enrolled for the \nmonth \n01 = Beneficiary enrolled in Parts A \nand/or B, and Part D; deemed \neligible for LIS with 100% premium \nsubsidy and no copayment \n02 = Beneficiary enrolled in Parts A \nand/or B, and Part D; deemed \neligible for LIS with 100% premium \nsubsidy and low copayment",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

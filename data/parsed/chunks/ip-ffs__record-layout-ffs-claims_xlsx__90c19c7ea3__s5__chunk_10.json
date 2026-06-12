@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_10",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Code IX CHAR 7 49\nICD_DGNS_CD10 ICD_DGNS_CD10 Claim Diagnosis Code X CHAR 7 50\nICD_DGNS_CD11 ICD_DGNS_CD11 Claim Diagnosis Code XI CHAR 7 51\nICD_DGNS_CD12 ICD_DGNS_CD12 Claim Diagnosis Code XII CHAR 7 52\nICD_DGNS_CD13 ICD_DGNS_CD13 Claim Diagnosis Code XIII CHAR 7 53\nICD_DGNS_CD14 ICD_DGNS_CD14 Claim Diagnosis Code XIV CHAR 7 54\nICD_DGNS_CD15 ICD_DGNS_CD15 Claim Diagnosis Code XV CHAR 7 55\nICD_DGNS_CD16 ICD_DGNS_CD16 Claim Diagnosis Code XVI CHAR 7 56\nICD_DGNS_CD17 ICD_DGNS_CD17 Claim Diagnosis",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

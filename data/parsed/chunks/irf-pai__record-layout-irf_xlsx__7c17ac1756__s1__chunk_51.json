@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_51",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "(29d) Bladder Level of Assistance: Discharge CHAR 2 A score indicating the level of assistance needed for the patient's bladder management at discharge. Bladder management - level of assistance includes the safe use of equipment or agents for bladder management. 01 = Helper - Complete Dependence/Total Assistance (Subject less than 25%), 02 = Helper - Complete Dependence/Maximal Assistance (Subject 25% or more), 03 = Helper - Modified Dependence/Moderate Assistance (Subject 50% or more), 04 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

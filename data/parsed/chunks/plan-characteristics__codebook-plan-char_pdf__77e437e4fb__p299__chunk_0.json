@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p299__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 299,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n285 \nPRE_ICL_OONP_COPAY_OS \nLABEL: \nPre-ICL Out-of-Network Pharmacy Copay for Other Days’ Supply \nDESCRIPTION: This variable identifies the beneficiary co-payment amount for a day’s supply of the drugs (other than \n1 or 3 months) on this tier, using an out-of-network pharmacy (OONP) during the pre-initial coverage \nlimit (ICL) phase of the Part D benefit. Other supply.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

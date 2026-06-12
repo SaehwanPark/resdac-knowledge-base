@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p74__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 74,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n56 \nCLM_BENE_ID_TYPE_CD \nLABEL: \nClaim Beneficiary Identifier Type Code \nDESCRIPTION: This field identifies whether the claim was submitted by the provider, during the transition period, \nwith a HICN or MBI (for CMS internal use). \nSHORT NAME: CLM_BENE_ID_TYPE_CD \nLONG NAME: CLM_BENE_ID_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nM = MBI \nH = HICN \nNull/missing",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

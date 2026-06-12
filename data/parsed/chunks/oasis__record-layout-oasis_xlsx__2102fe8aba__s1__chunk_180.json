@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_180",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_VN_PULM (M0895) Deep Vein Thrombosis/Pulmonary Embolus Reason for hospitalization: deep vein thrombosis, pulmonary embolus. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_CF_FLDS (M0895) Exacerbation of CHF/Fluid Overload/Heart Failure Reason for hospitalization: exacerbation of CHF, fluid overload, heart failure. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_GI_BLD (M0895) GI Bleeding, Obstruction Reason for hospitalization: GI",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

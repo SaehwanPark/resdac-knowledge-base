@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p89__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 89,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n71 \nCLM_HHA_LUPA_IND_CD \nLABEL: \nClaim HHA Low Utilization Payment Adjustment (LUPA) Indicator Code \nDESCRIPTION: The code used to identify those home health PPS claims that have 4 visits or less in a 60-day episode. \nIf an HHA provides 4 visits or less, they will be reimbursed based on a national standardized per visit \nrate instead of home health resource groups (HHRGs).",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

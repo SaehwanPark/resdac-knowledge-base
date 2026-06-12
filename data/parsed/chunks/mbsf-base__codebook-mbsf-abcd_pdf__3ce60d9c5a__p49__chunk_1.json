@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p49__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 49,
+  "text": "(MA) Health Senior Care Options \n37 = Continuing Care Retirement Community \n38 = End-Stage Renal Disease — I (ESRD) \n39 = ESRD II \n40 = Employer/Union Only Direct Contract PFFS \n41 = Medical Savings Account (MSA) Demonstration \n48 = Medicare-Medicaid Plan (MMP) HMO \n49 = Medicare-Medicaid Plan HMO Point-of-Service (MMP HMOPOS) \nCOMMENT: \nIf the beneficiary was not enrolled in a managed care plan for a given month, this variable will be \nnull/missing for that month. There are 12 monthly",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

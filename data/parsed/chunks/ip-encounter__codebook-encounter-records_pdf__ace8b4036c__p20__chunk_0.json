@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n10 \nBENE_STATE \nLABEL: \nState of Beneficiary (postal abbreviation) \nDESCRIPTION: This variable is the two-letter postal abbreviation for the state where the beneficiary lives. \nSHORT NAME: BENE_STATE \nLONG NAME: BENE_STATE \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS Common Medicare Environment (CME) and CMS/Census Bureau crosswalk (derived) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

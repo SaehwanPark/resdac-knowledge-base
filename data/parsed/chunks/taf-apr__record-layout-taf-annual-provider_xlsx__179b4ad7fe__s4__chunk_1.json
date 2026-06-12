@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 4,
+  "text": "State Plan Enrollment Code (Medicaid and/or CHIP) CHAR 1 4\nPRVDR_ENRLMT_STUS_CD Provider Enrollment Status Code (Medicaid and/or CHIP) CHAR 2 5\nPRVDR_ENRLMT_STUS_CTGRY_CD Provider Enrollment Status Category Code CHAR 8 6\nPRVDR_ENRLMT_MTHD_CD Provider Medicaid or CHIP Program Enrollment Method Code CHAR 1 7\nAPLCTN_DT Provider Medicaid or CHIP Program Application Date DATE 8 8\nPRVDR_ENRLMT_START_DT Provider Enrollment (Medicaid and/or CHIP) Start Date DATE 8 9\nPRVDR_ENRLMT_END_DT Provider",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

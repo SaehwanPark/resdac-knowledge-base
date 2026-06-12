@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p361__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 361,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n343 \nREV_CNTR_CASH_DDCTBL_AMT \nLABEL: \nRevenue Center Cash Deductible Amount \nDESCRIPTION: This variable is the beneficiary’s liability under the annual Part B deductible for the revenue center \nrecord. The Part B deductible applies to both institutional (e.g., HOP) and non-institutional (e.g., \ncarrier and DME) services. \nSHORT NAME: REVDCTBL \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

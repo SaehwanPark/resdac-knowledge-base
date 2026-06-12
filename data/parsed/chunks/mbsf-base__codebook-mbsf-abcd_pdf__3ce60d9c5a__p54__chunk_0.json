@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p54__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 54,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \n46 \nPTD_PLAN_CVRG_MONS \nLABEL: \nMonths of Part D Coverage \nDESCRIPTION: This variable is the number of months during the year that the beneficiary had Medicare Part D \ncoverage. CCW derives this variable by counting the number of months where the beneficiary had Part \nD coverage. \nSHORT NAME: PTD_MO \nLONG NAME: PTD_PLAN_CVRG_MONS \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

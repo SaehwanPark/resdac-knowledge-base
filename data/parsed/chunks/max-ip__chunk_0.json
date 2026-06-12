@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__chunk_0",
+  "source_document": "data/raw/html/dataset_page/515da00461d6442d0119c5c4c8cb1f3da0961381.html",
+  "page": null,
+  "text": "The Medicaid Analytic Extract (MAX) Inpatient (IP) file contains complete stay records for enrollees who had an inpatient hospital stay. Records include fee-for-service (FFS) claims and encounter records submitted for stays covered by Medicaid managed care.\nWhat does this file include? (variable highlights)\n- 10 diagnosis code fields\n- 7 procedure code fields\n- Discharge status\n- Charges and payments (FFS only)\n- Provider identifier\nSpecial considerations\n- Encounter record reporting may not be",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip?page=1"
+}

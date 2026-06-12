@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_75",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Count NUM 4* 128 162 204 193 191\nPSA_DNMTR_IND Non-Recommended PSA-Based Screening in Older Men (PSA) Denominator Indicator NUM 3 129 163 205 194 192\nPSA_NMRTR_IND Non-Recommended PSA-Based Screening in Older Men (PSA) Numerator Indicator NUM 3 130 164 206 195 193\nMRP_DNMTR_DSCHRG_CNT Medication Reconciliation Post—Discharge (MRP) Denominator: Discharge Count NUM 3 131 165 207 — —\nMRP_NMRTR_30DAY_CNT Medication Reconcilitn Post—Discharge(MRP) Nmrtr: Mdctn Recon Within 30 Dys Cnt NUM 3 132 166",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

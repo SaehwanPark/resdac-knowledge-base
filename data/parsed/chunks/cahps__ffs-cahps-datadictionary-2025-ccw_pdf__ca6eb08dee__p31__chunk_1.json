@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 31,
+  "text": "Last 6 mths, how often get appointment with specialist as soon as needed \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \nsp_mdinformd: RECODE : Last 6 mths, how often personal MD up-to-date on care from specialists \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \nsp_persmd: RECODE : Personal MD is a specialist \nSAS Format: YNA \n1: YES \n2: NO",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

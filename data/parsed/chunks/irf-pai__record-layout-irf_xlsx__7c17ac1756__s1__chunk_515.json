@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_515",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "list to the patient, family and/or caregiver was via electronic health record. 0 = No\n1 = Yes\n^ = Blank\n451 ROUTE_RSDNT_HC_EXCHG_INFO_CD ROUTE_RSDNT_HC_EXCHG_INFO_CD Patient Trans - Health Info Exchange CHAR 1 This column documents whether, at the time of discharge, the transmission route of patient's current reconciled medication list to the patient, family and/or caregiver was via a health information exchange. 0 = No\n1 = Yes\n^ = Blank\n452 ROUTE_RSDNT_VRBL_CD ROUTE_RSDNT_VRBL_CD Patient Trans",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 22,
+  "text": "Encounter Data System (EDS) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n\n00 = unknown state \n01 = Alabama \n02 = Alaska \n03 = Arizona \n04 = Arkansas \n05 = California \n06 = Colorado \n07 = Connecticut \n08 = Delaware \n09 = District of Columbia \n10 = Florida \n11 = Georgia \n12 = Hawaii \n13 = Idaho \n14 = Illinois \n15 = Indiana \n16 = Iowa \n17 = Kansas \n18 = Kentucky \n19 = Louisiana \n20 = Maine \n21 = Maryland \n22 = Massachusetts \n23 = Michigan \n24 = Minnesota \n25 =",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-beneficiary__chunk_1",
+  "source_document": "data/raw/html/dataset_page/d48a69cecaed5ae7646e6ef39ac98789b97bdbc6.html",
+  "page": null,
+  "text": "does this file include? (variable highlights)\n- Model ID (with which the Beneficiary is associated)\n- Entity ID (with which the Beneficiary is associated)\n- CCW Beneficiary ID\n- Beneficiary Start Date\n- Beneficiary End Date\n- Beneficiary Operational End Date\n- Voluntary Alignment Indicator\nThe Entity ID is the only key field needed to link a Beneficiary to their Entity.\nThe Beneficiary file also contains the CCW Beneficiary ID that can be used to link to claims and other relevant CCW data.\nA",
+  "dataset": "cmds-beneficiary",
+  "url": "https://resdac.org/cms-data/files/cmds-beneficiary"
+}

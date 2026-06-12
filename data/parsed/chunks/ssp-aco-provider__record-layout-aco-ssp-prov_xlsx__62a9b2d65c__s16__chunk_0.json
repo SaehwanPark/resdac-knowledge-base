@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s16__chunk_0",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 16,
+  "text": "Shared Savings Program — Accountable Care Organizations (SSP ACO)\n2020 Provider File\nVersion — March 2026\nVariable SAS name Short description Long description Type Length\nNPI NPI National Provider Identifier (NPI) for practitioner National Provider Identifier of a supplier associated with ACO participants in one of the following ways: (1) reassigned billing rights to an ACO participant during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

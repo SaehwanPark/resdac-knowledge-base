@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__chunk_0",
+  "source_document": "data/raw/html/dataset_page/996a716d9a80f27752f95ccaff466c809c729e0b.html",
+  "page": null,
+  "text": "The Medicare Part D Prescriber Characteristics file contains descriptive information for the prescriber identified on a Part D Event file record.\nWhat does this file include? (variable highlights)\n- Primary Taxonomy Code\n- Practice location (state)\n- Academic or Professional Credential for the prescriber\n- Linkage variables to the PDE file:\n- CCW Prescriber Identifier\n\nWhy do researchers request this file?\n- Studies describing prescribing patterns based on prescriber specialty\n- Evaluation of",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://resdac.org/cms-data/files/part-d-prescriber-characteristics?page=1"
+}

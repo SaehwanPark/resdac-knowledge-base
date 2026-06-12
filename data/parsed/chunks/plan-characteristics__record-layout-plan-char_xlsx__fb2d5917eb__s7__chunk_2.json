@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s7__chunk_2",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 7,
+  "text": "for consistency.\n45597 Plan Base\nPlan Crosswalk\nSNP Contract Updated layout to reflect FIDE_SNPand DSNP_ZERODOLLAR fields in Plan Base File are retired after 2022. Added new annual variables to Plan Croswalk file for 2022 and 2023 files: CONTRACT_ID_YY, PLAN_ID_YY and PTCD_INDICATOR_YY. Updated layout to reflect three fields added to SNP contract file: AIP_INDICATOR, DSNP_INTEGRATION_LEVEL, and DSNP_ZERODOLLAR\n44835 Plan Base\nPlan Crosswalk Edited length of DED_COSTSHARE_TIERS field in Plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

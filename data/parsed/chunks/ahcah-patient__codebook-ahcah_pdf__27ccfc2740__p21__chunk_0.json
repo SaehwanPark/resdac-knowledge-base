@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 21,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n16 \nPRVDR_ZIP_CD \nLABEL: \nFacility Location Zip Code \nDESCRIPTION: The facility location’s ZIP code. \nSHORT NAME: PRVDR_ZIP_CD \nLONG NAME: PRVDR_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n10 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data (verified by CMS) \nVALUES: \nFormatted as either 5-digit or the full 9-digit (ZIP + 4 ) code \nEx",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

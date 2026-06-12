@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p9__chunk_0",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 9,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMillion Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 \n4 \nACTIVITY_END_DATE \nLABEL: \nEncounter/Procedure/Diagnosis End date \nDESCRIPTION: Encounter/Procedure/Diagnosis end date. \nSHORT NAME: ACTIVITY_END_DATE \nLONG NAME: ACTIVITY_END_DATE \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nClinical (final and raw) \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \nEx — 07/10/2020 \nCOMMENT: \nFormatted as MMDDYY10 in SAS",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

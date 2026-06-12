@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p68__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 68,
+  "text": "Wisconsin \nWV = West Virginia \nWY = Wyoming \nXX = Other territories or Unknown \nNull/missing = not enrolled in the \nmonth\nCOMMENT: \nThis variable only populated for Medicaid enrollees. If beneficiary is enrolled only in Medicaid, then \nwe populate the variable with T-MSIS DE variable STATE_CD. A beneficiary (or an MSIS_ID) may be \nenrolled in Medicaid in more than one state within a month, in which case we select the state with the \nhighest total Medicaid spend for the month. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

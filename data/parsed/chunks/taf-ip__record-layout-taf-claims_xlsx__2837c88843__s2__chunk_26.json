@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_26",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Servicing Provider Specialty Code CHAR 2 34\nREV_CNTR_CHRG_AMT Revenue Center Charge Amount NUM 8 35\nLINE_MDCD_ALOWD_AMT Line Medicaid Allowed Amount NUM 8 36\nLINE_MDCD_PD_AMT Line Medicaid Paid Amount NUM 8 37\nLINE_MDCD_FFS_EQUIV_AMT Line Medicaid Fee For Service Equivalent Amount NUM 8 38\nLINE_TP_PD_AMT Line Third Party Liability Paid Amount NUM 8 39\nLINE_OTHR_INSRNC_PD_AMT Line Other Than Medicare or Medicaid -Insurance Paid Amount NUM 8 40\nLT_ACCMDTN_HCPCS_RATE Long-Term Care Accommodation",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

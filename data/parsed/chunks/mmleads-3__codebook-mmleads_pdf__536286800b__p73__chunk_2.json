@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p73__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 73,
+  "text": "capitated payments and payments \nfor services. Capitated payment claims are header claims where the claim type code (T-MSIS variable \ncalled CLM_TYPE_CD) is equal to '2' (Medicaid or expansion claim) 'B' (S-CHIP claim) or 'V' (Other \nServices claim). \nThe Medicaid payment information corresponding to this variable is in the monthly \nMDCD_TOTAL_SPEND_01–12 variables variable; however, due to CMS payment redaction \nrequirements the dollar totals will not reflect the (redacted) managed care",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

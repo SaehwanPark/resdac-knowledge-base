@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_49",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Completed Date DATE 8 Demographic information: date background information was completed. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n96 AC1A AC1A_LATE_NITE (AC1A) Stays Up Late at Night CHAR 1 Customary routine: cycle of daily events - stays up late at night. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n97 AC1B AC1B_NAPS (AC1B) Naps Regularly During Day CHAR 1 Customary routine: cycle of daily events - naps regularly during day 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n98 AC1C AC1C_OUT_1_WEEK",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

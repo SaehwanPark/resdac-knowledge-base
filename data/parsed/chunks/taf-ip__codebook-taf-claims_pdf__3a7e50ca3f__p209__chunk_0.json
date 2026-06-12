@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p209__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 209,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n189 \nOT_ACCMDTN_HCPCS_RATE \nLABEL: \nOther Services Accommodation Rate \nDESCRIPTION: For outpatient hospital facility claims, HCPCS/CPT is captured here. \nSHORT NAME: OT_ACCMDTN_HCPCS_RATE \nLONG NAME: OT_ACCMDTN_HCPCS_RATE \nTYPE: \nCHAR \nLENGTH: \n14 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT line \nVALUES: \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/Physicia",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

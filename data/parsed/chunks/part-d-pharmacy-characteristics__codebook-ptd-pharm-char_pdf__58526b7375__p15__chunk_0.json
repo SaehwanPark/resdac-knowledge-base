@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p15__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 15,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n10 \nPHYSICAL_LOCATION_CLOSE_DATE \nLABEL: \nPhysical Location of Pharmacy Closure Date \nDESCRIPTION: The last day of business for the pharmacy at this location, as reported to NCPDP. This variable is \npopulated with dates only for stores that have closed or are planning to close. The date may not \ncorrespond with the year of the data file. \nSHORT NAME: — \nLONG NAME: PHYSICAL_LOCATION_CLOSE_DATE",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

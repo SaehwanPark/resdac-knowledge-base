@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_385",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Medication Administration This field indicates the reason the patient required hospitalization was due to improper medication administration. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOSP_INJRY_BY_FALL M2430 Hospital Reason- Injury Caused By Fall This field indicates the reason the patient required hospitalization was due to injury caused by a fall. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOSP_CTHTR_CMPLCTN M2430 Hospital Reason- IV Catheter",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

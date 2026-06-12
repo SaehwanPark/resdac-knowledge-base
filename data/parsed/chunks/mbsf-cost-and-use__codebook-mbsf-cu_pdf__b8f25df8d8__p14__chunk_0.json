@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 14,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n8 \nANES_EVENTS \nLABEL: \nAnesthesia Events \nDESCRIPTION: This variable is the count of events for Part B anesthesia services (ANES) for a given year. An event is \ndefined as each line item that contains the relevant service. \nANES claim lines are a subset of the claims, and a subset of procedures in the Part B carrier data file. \nANES claims are defined as those with a line BETOS",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

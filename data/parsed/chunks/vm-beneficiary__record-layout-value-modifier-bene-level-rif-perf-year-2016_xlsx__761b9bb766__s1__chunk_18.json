@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "of all primary care services provided and billed by practice's physicians, nurse practitioners, physician assistants, and clinical nurse specialists for beneficiary 25 Num 8 Populated only for records with Inpatient_stay not equal to missing\nLAST_CLM_DATE Date of last claim filed by practice Date of last claim filed by practice for beneficiary 26 Num 8 Populated only for records with Inpatient_stay not equal to missing\nLAST_CLM_DATE_NPI_IN_PRIM Date of last claim filed by NPI for beneficiary",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

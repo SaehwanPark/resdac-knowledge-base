@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_86",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "NUM 3 X X X X X X X X X X X\n401 IP_HOSP_PYMT_HCBCA Inpatient hospital payments (HCBCA) NUM 12 X X X X X X X X X X X\n402 LT_REC_CNT_HCBCA Institutional LT care records (HCBCA) NUM 5 X X X X X X X X X X X\n403 LT_PYMT_AMT_HCBCA Institutional LT care payments (HCBCA) NUM 12 X X X X X X X X X X X\n404 OT_REC_CNT_HCBCA Other service records (HCBCA) NUM 5 X X X X X X X X X X X\n405 OT_PYMT_AMT_HCBCA Other service payments (HCBCA) NUM 12 X X X X X X X X X X X\n406 RX_REC_CNT_HCBCA Prescription drug",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

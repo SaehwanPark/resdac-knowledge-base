@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p130__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 130,
+  "text": "with LOS > covered days \n***Inpatient Rehab Facility (IRF) Pricer Return Codes*** \nIRF Payment return codes: \n00 = Paid normal CMG payment without \noutlier \n01 = Paid normal CMG payment with \noutlier \n02 = Transfer paid on a per diem basis \nwithout outlier \n03 = Transfer paid on a per diem basis \nwith outlier \n04 = Blended CMG payment — 2/3 \nfederal PPS rate + 1/3 provider \nspecific rate — without outlier \n05 = Blended CMG payment — 2/3 \nfederal PPS rate + 1/3 provider \nspecific rate — with",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

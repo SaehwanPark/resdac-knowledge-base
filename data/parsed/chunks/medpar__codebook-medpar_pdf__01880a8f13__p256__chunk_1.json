@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p256__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 256,
+  "text": "comes from the Unique Tracking Number (CLM-UNIQ-TRKNG-NUM) that is present on the first \nclaim record included in the stay. If there is no unique tracking number on the 1st claim record, then \ntake the first found code on any of the other claims that make up the stay. \nThis field is new in 2014 (not populated through 2018); it only applies to Inpatient/SNF claims. \nStays with a prior authorization requirement are identified by the prior authorization indicator code field \n(called PA_IND_CD). \n^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

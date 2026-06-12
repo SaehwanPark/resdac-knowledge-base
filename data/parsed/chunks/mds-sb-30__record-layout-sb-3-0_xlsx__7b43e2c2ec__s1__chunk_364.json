@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_364",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "or likely cavity or broken natural teeth. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n404 L0200E_INFLMD_GUM_CD L0200E_INFLMD_GUM_CD L0200E Dental Status: Inflamed Gum Code CHAR 1 The data in this column indicates whether the resident has inflamed or bleeding gums or loose natural teeth. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n405 L0200F_MOUTH_PAIN_CD L0200F_MOUTH_PAIN_CD L0200F Dental Status: Mouth or Facial Pain Code CHAR 1 The data in this column",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

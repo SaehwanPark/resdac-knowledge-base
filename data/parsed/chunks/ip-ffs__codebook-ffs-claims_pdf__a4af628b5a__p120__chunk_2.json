@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p120__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 120,
+  "text": "(POA) \nN = Diagnosis was not present at the time of admission \nU = Documentation is insufficient to determine if condition was present on admission \nW = Provider is unable to clinically determine whether condition was present on admission \n1 = Unreported/not used — exempt from POA reporting — this code is the equivalent code of a blank, \nhowever, it was determined that blanks were undesirable when submitting the data \nZ = Denotes the end of the POA indicators \nX = Denotes the end of the POA",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

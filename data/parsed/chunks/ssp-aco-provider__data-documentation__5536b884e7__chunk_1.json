@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__data-documentation__5536b884e7__chunk_1",
+  "source_document": "data/raw/html/documentation_page/5536b884e7233be4eb8f47d766a551801359d265.html",
+  "page": null,
+  "text": "locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| NPI | National Provider Identifier (NPI) for practitioner | \n| PRVDR_ACO_YEAR | Year of ACO Source Record | \n| TIN | Tax Identification Number (TIN) of ACO Participant | \n| CCN | CMS Certification Number (CCN; formerly OSCAR number) | \n| ACO_NUM | ACO Identifier | \n| NPI_NAME | Name of Provider Associated with the NPI | \n| TIN_LBN | TIN Legal Business Name | \n| ACO_NAME | ACO Name | \n| START_DATE |",
+  "dataset": "ssp-aco-provider",
+  "url": "https://resdac.org/cms-data/files/ssp-aco-provider/data-documentation"
+}

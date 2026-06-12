@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "10 The Case-Mix Group code that is calculated from the data submitted to the NACD.\n7 CLCMVRTX CALCTD_CMG_VRSN_TXT Calculated CMG Version Code CHAR 10 The version code of the CMG Grouper on the NACD.\n8 CLGNVSTX CALCTD_CGNTV_SCALE_TXT Calculated Cognitive Scale Code CHAR 5 A preliminary calculation made prior to determining the CMG group. The cognitive score is based upon 5 variables that are taken from Item 39 on the IRF-PAI form.\n9 CLMTSCTX CALCTD_MOTOR_SCALE_TXT Calculated Motor Scale Code",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

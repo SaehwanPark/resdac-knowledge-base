@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_946",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(Admission) Indicates whether the patient had peripheral IV access at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110O2C_PRPHRL_DSCHRG_CD Other: IV Access - Peripheral (Discharge) Indicates whether the patient had peripheral IV access at the time of discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110O3A_MIDLINE_ADMSN_CD Other: IV Access - Mid-line (Admission) Indicates whether the patient had mid-line IV access at the time of admission. 0.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

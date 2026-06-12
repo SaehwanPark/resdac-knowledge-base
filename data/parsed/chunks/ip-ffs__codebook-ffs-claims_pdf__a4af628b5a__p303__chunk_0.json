@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p303__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 303,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n285 \nPRNCPAL_DGNS_VRSN_CD \nLABEL: \nClaim Principal Diagnosis Version Code \nDESCRIPTION: Effective with version “J,” the code used to indicate if the diagnosis code is ICD-9/ICD-10. \nSHORT NAME: PRNCPAL_DGNS_VRSN_CD \nLONG NAME: PRNCPAL_DGNS_VRSN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nBlank = ICD-9 \n9 = ICD-9 \n0 = ICD-10 \nCOMMENT: \nWith 5010, the diagnosis and",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

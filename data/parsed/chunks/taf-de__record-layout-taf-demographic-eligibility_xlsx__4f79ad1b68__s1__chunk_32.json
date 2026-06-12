@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_32",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Managed Care Plan Type Code (Using Hierarchy) - July CHAR 2 144\nMC_PLAN_TYPE_CD_08 Managed Care Plan Type Code (Using Hierarchy) - August CHAR 2 145\nMC_PLAN_TYPE_CD_09 Managed Care Plan Type Code (Using Hierarchy) - September CHAR 2 146\nMC_PLAN_TYPE_CD_10 Managed Care Plan Type Code (Using Hierarchy) - October CHAR 2 147\nMC_PLAN_TYPE_CD_11 Managed Care Plan Type Code (Using Hierarchy) - November CHAR 2 148\nMC_PLAN_TYPE_CD_12 Managed Care Plan Type Code (Using Hierarchy) - December CHAR 2",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

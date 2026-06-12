@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nPROFFEES PROFNL_FEES_CHRG_AMT Professional fees charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nORGNAMT ORGN_ACQSTN_CHRG_AMT Organ acquisition or other donor bank charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nESRDSETG ESRD_REV_SETG_CHRG_AMT End Stage Renal Disease (ESRD) charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nCLNC_AMT CLNC_VISIT_CHRG_AMT Clinic visit charge amount ($) Num 8 X X X X X X X X",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

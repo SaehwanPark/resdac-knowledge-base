@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p76__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 76,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n66 \nHCPCS_1ST_MDFR_CD \nHCPCS_2ND_MDFR_CD \nHCPCS_3RD_MDFR_CD \nHCPCS_4TH_MDFR_CD \nLABEL: \nHCPCS Modifier Code \nDESCRIPTION: Modifiers 1–4 to the Healthcare Common Procedure Coding System (HCPCS) procedure code to \nenable a more specific procedure identification for the revenue center or line-item service for the \nencounter record. \nSHORT NAME: \nLONG NAME: \nTYPE: \nCHAR \nLENGTH: \n2",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

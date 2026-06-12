@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_806",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "at SOC/ROC Indicates whether the patient uses a wheelchair and/or scooter at the start of care/resumption of care. 0. No\n1. Yes CHAR 2 x x\nGG0170Q3_WLCHR_END_CD GG0170Q3 Mobility: Uses Wheelchair and/or Scooter at Discharge Indicates whether the patient uses a wheelchair and/or scooter at discharge. 0. No\n1. Yes CHAR 2 x x\nGG0170Q4_WLCHR_FLWP_CD GG0170Q4 Mobility: Uses Wheelchair and/or Scooter at Follow-Up Indicates whether the patient uses a wheelchair and/or scooter at follow-up. 0. No\n1.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

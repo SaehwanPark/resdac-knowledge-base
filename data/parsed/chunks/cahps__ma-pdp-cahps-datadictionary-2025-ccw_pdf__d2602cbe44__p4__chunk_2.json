@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p4__chunk_2",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 4,
+  "text": "in the MCAHPS Survey Data\nVariable Type\nVariable Preﬁx\nDescription\nAnalytic survey variables\nVaries according to question topic (i.e. ma_, ins_, ca_, etc)\nVariables that directly correspond to survey items\nDerived variables\nws_\nVariables created during data processing to summarize survey completeness\nSurvey processing variables\nsu_\nVariables created by survey vendors to identify information about data collection\nAdministrative variables\nsa_\nVariables that contain enrollment and demographic",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

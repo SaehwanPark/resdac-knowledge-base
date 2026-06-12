@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p51__chunk_4",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 51,
+  "text": "variables are: \n• \nNPI format — 10 numeric characters starting with “1” or “2” \n• \nDEA format — 9 alpha-numeric characters with the first two being alpha and the last 7 being \nnumeric \n• \nUPIN format — 6 alpha-numeric characters with the first being alpha and the remaining 5 being \nnumeric (note: the UPIN is a legacy identifier and should not be seen often in the current PDEs) \n• \nState license numbers – formats are highly variable \nA fair number of values in this data field that are not NPIs",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

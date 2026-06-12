@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p31__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 31,
+  "text": "B. 2025 MCAHPS Format Tables \n31 \nsa_snp_type: Part D Special Needs Plan Type \nSAS Format: $SNP \n1: CHRONIC CONDITION \n2: DUAL ELIGIBLE \n3: INSTITUTIONAL \n9: UNKNOWN \nsa_spanish_ind: Spanish Language Flag (Medicare & You) \nSAS Format: $ID_F \nN: NO \nU: UNKNOWN \nY: YES \nsa_type: MA & PDP Survey Type (1-4) \nSAS Format: STP \n1: MA ONLY \n2: MA PDP \n3: PDP \n5: FFS \nsp_getappt: RECODE : Last 6 mths, how often get appointment with specialist as soon as needed \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Core HRSN Safety 1: How often physically hurt CHAR 1\nSR_CORE_SFTY_2_CD Core HRSN Safety 2: How often insulted CHAR 1\nSR_CORE_SFTY_3_CD Core HRSN Safety 3: How often threatened CHAR 1\nSR_CORE_SFTY_4_CD Core HRSN Safety 4: How often screamed or cursed at CHAR 1\nSR_CORE_SFTY_OVRL_SCRNG_IND Screened Core HRSN Safety Overall Indicator CHAR 1\nSR_CORE_TRNSPRTN_1_SW Core HRSN Transportation 1: Lack of Reliable Transportation CHAR 1\nSR_CORE_TRNSPRTN_OVRL_SCRNG_IND Screened Core HRSN Transportation",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

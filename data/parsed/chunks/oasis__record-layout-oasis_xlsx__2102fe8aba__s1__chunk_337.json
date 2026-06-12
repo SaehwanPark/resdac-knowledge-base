@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_337",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Risk Drug Educ This field indicates whether the patient/caregiver received instruction on special precautions for all high-risk medications. 00 = No\n01 = Yes\nNA = Patient not taking any high-risk drugs OR patient/caregiver fully knowledgeable about special precautions associated with all high-risk medications CHAR 2 x x x x x x\nM2015_DRUG_EDCTN_INTRVTN M2015 Patient/Caregiver Drug Educ Intervention This field indicates whether the patient/caregiver was instructed by agency staff or other health",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p380__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 380,
+  "text": "the claim payment \namounts should be used instead. \nFor Hospital outpatient services (also called Institutional outpatient claims, which consist of claim type \n[variable called NCH_CLM_TYPE_CD] = 40), this variable can be summed across all revenue center lines \nfor the claim to obtain the total Medicare claim payment amount. \nSHORT NAME: RPRVDPMT \nLONG NAME: REV_CNTR_PRVDR_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nThis field is populated for those claims that",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

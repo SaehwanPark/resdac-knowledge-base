@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-base__chunk_4",
+  "source_document": "data/raw/html/dataset_page/a908448a73ab3c65dfd95d8626da4db2940148f2.html",
+  "page": null,
+  "text": "file uses a beneficiary’s demographic, care setting, and clinical characteristics to identify the beneficiary’s correct monthly payment score, i.e., the monthly “operational” risk scores for each beneficiary which determine what CMS pays an MAO for that beneficiary.\nThe research risk score files are designed to be used with other Chronic Conditions Warehouse (CCW) data products that contain a wide range of demographic and Medicare coverage information and can be linked to other CCW files using",
+  "dataset": "risk-score-base",
+  "url": "https://resdac.org/cms-data/files/risk-score-base"
+}

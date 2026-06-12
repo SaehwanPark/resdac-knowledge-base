@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p97__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 97,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n87 \nLINE_RX_NUM \nLABEL: \nCarrier Line RX Number \nDESCRIPTION: The pharmacy's internal invoice number on pharmaceutical claims. \nSHORT NAME: LINE_RX_NUM \nLONG NAME: LINE_RX_NUM \nTYPE: \nCHAR \nLENGTH: \n30 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nCarrier Line \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

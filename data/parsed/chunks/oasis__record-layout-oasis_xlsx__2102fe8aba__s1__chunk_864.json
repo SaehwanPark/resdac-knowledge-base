@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_864",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Trans - Verbal Indicate whether the route(s) of transmission of the current reconciled medication list to the subsequent provider was verbal. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2122D_ROUTE_PRVDR_PAPER_CD Provider Trans - Paper-based Indicate whether the route(s) of transmission of the current reconciled medication list to the subsequent provider was paper based. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2122E_ROUTE_PRVDR_OTHR_CD Provider Trans - Other Methods Indicate whether the route(s) of transmission",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

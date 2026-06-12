@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p186__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 186,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n185 \nSR_SPLMTL_PHYS_ACTVTY_2_CD \nLABEL: \nSupplemental HRSN Physical Activity 2: Number Minutes of Moderate Exercise \nDESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) physical activity counting \nnumber of minutes of moderate exercise. \nLONG NAME: SR_SPLMTL_PHYS_ACTVTY_2_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nAHC data system \nVALUES: \n0 = 0 minutes \n10 =",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

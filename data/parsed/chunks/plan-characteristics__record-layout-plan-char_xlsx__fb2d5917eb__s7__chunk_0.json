@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s7__chunk_0",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 7,
+  "text": "Revision date Tab Description\n45931 Premium\nTier\nPlan Crosswalk Retired 6 fields from Premium file after 2023: PART_D_LIS_25, PART_D_LIS_50, PART_D_LIS_75, PART_D_LIPS_25, PART_D_LIPS_50, PART_D_LIPS_75.\n\nAdded 16 fields to Tier file starting with 2024: POST_OOPT_EXCL_DRUG_CST_SHR, INSULIN_INP_COPAY_1M, INSULIN_INP_COPAY_2M, INSULIN_INP_COPAY_3M, INSULIN_INPP_COPAY_1M, INSULIN_INPP_COPAY_2M, INSULIN_INPP_COPAY_3M, INSULIN_MO_COPAY_1M, INSULIN_MO_COPAY_2M, INSULIN_MO_COPAY_3M,",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

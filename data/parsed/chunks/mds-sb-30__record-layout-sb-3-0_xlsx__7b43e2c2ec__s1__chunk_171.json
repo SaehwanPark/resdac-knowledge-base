@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_171",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "prefers to receive a shower. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n201 F0800E_STF_BED_BATH_CD F0800E_STF_BED_BATH_CD F0800E Staff Assessment: Bed Bath Code CHAR 1 The data in this column indicates whether the resident prefers to receive a bed bath. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n202 F0800F_STF_SPNG_BATH_CD F0800F_STF_SPNG_BATH_CD F0800F Staff Assessment: Sponge Bath Code CHAR 1 The data in",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

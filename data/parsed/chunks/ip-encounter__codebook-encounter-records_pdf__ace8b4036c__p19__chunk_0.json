@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n9 \nBENE_RACE_CD \nLABEL: \nBeneficiary Race Code \nDESCRIPTION: Race code of the beneficiary \nSHORT NAME: BENE_RACE_CD \nLONG NAME: BENE_RACE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Encounter Data System (EDS) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n0 = \nUnknown \n1 = \nWhite \n2 = \nBlack \n3 = \nOther \n4 = \nAsian \n5 = \nHispanic \n6 = \nNorth American",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

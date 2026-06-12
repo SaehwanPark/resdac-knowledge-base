@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 27,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n17 \nCLM_BPRVDR_CITY_NAME \nLABEL: \nBilling Provider Address — City \nDESCRIPTION: This variable is the billing provider city name, as submitted on the encounter. \nSHORT NAME: CLM_BPRVDR_CITY_NAME \nLONG NAME: CLM_BPRVDR_CITY_NAME \nTYPE: \nCHAR \nLENGTH: \n30 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n—",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

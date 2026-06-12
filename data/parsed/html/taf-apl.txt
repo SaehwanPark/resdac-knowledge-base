@@ -1,0 +1,10 @@
+The T-MSIS Analytic File (TAF) Annual Managed Care Plan (APL) file contains information about managed care organizations serving Medicaid enrollees. By linking the information in the APL to other TAFs, users can enhance their analyses focused on plans and providers. For example, users can describe their results by plan name. Users can also identify whether the plan serves Medicaid, CHIP, or both; whether the plan operates under a waiver or state plan authority; how the plan reimburses its providers; and whether the plan is for profit.
+What does this file include (variable highlights)
+- Managed Care Plan type
+- Waivers such as 1115
+- Eligible population indicators such as CHIP coverage
+Special considerations
+- This file does not contain individual service records but contains information about plans that can be linked to individual enrollment information and may help put utilization into context.
+- CMS continues to work with states to address data quality issues. In addition to preliminary and fully mature files, CMS may provide updated releases of the files for a given year. Please see this page on CMS fee information for TAF data pricing.
+- ResDAC provides resources on Medicaid TAF data quality.
+- A bridge file will be provided to assist researchers that are conducting longitudinal analysis involving 2020 TAF research files along with earlier service years. For additional information, please see the CCW T-MSIS Analytic Files (TAF) User Guide posted on CCW’s User Documentation page.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_13",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Inpatient Low Volume Payment Amount | \n\n | 69 | TOT_CHRG_AMT | Total Charge Amount ($) | \n\n | 70 | TOT_CVR_CHRG_AMT | Total Covered Charge Amount ($) | \n\n | 71 | MDCR_PMT_AMT | Total Medicare Payment Amount ($) | \n\n | 72 | PPS_PRCR_VRSN_CD | Prospective Payment System (PPS) Pricer Version | \n\n | 73 | ACMDTNS_TOT_CHRG_AMT | Total Charge for All Accommodations ($) | \n\n | 74 | DPRTMNTL_TOT_CHRG_AMT | Total charge for all ancillary departments related to beneficiary’s stay ($) | \n\n | 75 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

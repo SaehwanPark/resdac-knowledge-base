@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p42__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 42,
+  "text": "a DEA format: 9 alpha-numeric characters with the first two characters alpha \nand the last seven numeric \nU = PDE prescriber ID has a UPIN format: 6 alpha-numeric characters with the first one alpha and the \nremaining numeric \nX = PDE prescriber ID is none of the above formats. PDE prescriber ID could be a valid State License \nnumber, an invalid prescriber identifier, or a missing prescriber ID \nCOMMENT: \nThis variable may have ascribed a different format to the prescriber identifier than what",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

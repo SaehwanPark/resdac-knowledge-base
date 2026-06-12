@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p82__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 82,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n66 \nCOMMENT: \nThis field was new in 2009. \nICD-10 diagnosis codes were used starting October 2015. The diagnosis version code for these 12 E code \ndiagnoses appears in variables DGNS_E_VRSN_CD_1–DGNS_E_VRSN_CD_12, which indicates whether \nthis diagnosis code is ICD-9 or ICD-10. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p26__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 26,
+  "text": "B. 2025 MCAHPS Format Tables \n26 \nsa_deemd_cpmt: Generic Level for Copay Computation \nSAS Format: $GENLEVF \nN: N/A \nsa_deemd_lis: Deemed for Low Income Subsidy \nSAS Format: $ID_F \nN: NO \nU: UNKNOWN \nY: YES \nsa_disbld: Disabled Flag \nSAS Format: $ID_F \nN: NO \nU: UNKNOWN \nY: YES \nsa_fpl_pct: Federal Poverty Level Percent Code \nSAS Format: $FPL \n1: BELOW 100% FPL \n2: 100% OR ABOVE FPL \n9: UNKNOWN \nsa_incarc_sw: Incarceration Flag \nSAS Format: $ID_F \nN: NO \nU: UNKNOWN \nY: YES \nsa_lis: Low Income",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

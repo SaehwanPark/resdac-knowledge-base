@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_75",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "= Checked, -1 = Unknown\n92 I1R I1R_APHASIA 25b(I1r)Aphasia CHAR 1 Indicates the diagnosis of aphasia - a speech or language disorder caused by disease or injury to the brain resulting in difficulty expressing thoughts (spoken or written) or understanding spoken or written language. 0 = Unchecked, 1 = Checked, -1 = Unknown\n93 I1S I1S_CEREBRAL_PALSY 25c(I1s)Cerebral Palsy CHAR 1 Indicates the diagnosis of Cerebral Palsy - a paralysis related to developmental brain defects or birth trauma. 0 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

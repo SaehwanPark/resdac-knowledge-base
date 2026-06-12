@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p390__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 390,
+  "text": "institutional \nclaim. \nDepending on type of service, units are measured by number of covered days in a particular \naccommodation, pints of blood, emergency room visits, clinic visits, dialysis treatments (sessions or \ndays), outpatient therapy visits, and outpatient clinical diagnostic laboratory tests. \nSHORT NAME: REV_UNIT \nLONG NAME: REV_CNTR_UNIT_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nWhen revenue center code = “0022” (SNF PPS) the unit count will reflect the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 \n\n6 \nCONTRACT_ID \nLABEL: \nPart D Contract Number \nDESCRIPTION: This variable is the Medicare Part D contract number for the beneficiary’s Part D plan. \nCMS assigns an identifier to each contract that a Part D plan has with CMS. \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS Common Medicare Environment (CME) \nFILE(S): \nPart D Beneficiary Plan Election file \nVALUES: \nXXXXX",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

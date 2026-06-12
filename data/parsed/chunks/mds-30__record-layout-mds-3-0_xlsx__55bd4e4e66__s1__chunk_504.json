@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_504",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "V0200A04B_COMMUN_CPL_CD V0200A04B_COMMUN_CPL_CD V0200A04B Communication Addressed in Care Plan Code CHAR 1 The data in this column indicates whether the Communication care area was addressed in the care plan. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n572 V0200A05A_ADL_CTR_CD V0200A05A_ADL_CTR_CD V0200A05A ADL Care Area Trigger Code CHAR 1 The data in this column indicates whether the ADL Functional/Rehabilitation Potential CA was triggered. -=Not assessed/no",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

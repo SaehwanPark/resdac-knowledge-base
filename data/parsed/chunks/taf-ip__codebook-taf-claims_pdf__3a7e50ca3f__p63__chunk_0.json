@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p63__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 63,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n52 \nBRDR_STATE_IND \nLABEL: \nBorder State Indicator \nDESCRIPTION: This code indicates whether a beneficiary received services or equipment across state borders. (The \nprovider location is out of state, but for payment purposes the provider is treated as an in-state \nprovider.) \nSHORT NAME: BRDR_STATE_IND \nLONG NAME: BRDR_STATE_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS Analytic File",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

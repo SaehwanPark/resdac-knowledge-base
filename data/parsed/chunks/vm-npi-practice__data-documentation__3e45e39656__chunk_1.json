@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-npi-practice__data-documentation__3e45e39656__chunk_1",
+  "source_document": "data/raw/html/documentation_page/3e45e3965694930db13649f2d6cfc67b29348671.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| PRACTICE_ID | Unique Identifier of Practice | \n| PERF_NPI | NPI | \n| PRVDR_NAME | Name of Provider | \n| PHYSICIAN | Physician Eligible Professional | \n| NP_PA_CNS_CRNA | Nonphysican eligible professional subject to the 2018 Value Modifier | \n| NONPHYS_VM_EXEMPT | Nonphysician Eligible Professional Not Subject to the 2018 Value Modifier | \n| HCFA_SPECIALTY | Specialty Designation | \n|",
+  "dataset": "vm-npi-practice",
+  "url": "https://resdac.org/cms-data/files/vm-npi-practice/data-documentation"
+}

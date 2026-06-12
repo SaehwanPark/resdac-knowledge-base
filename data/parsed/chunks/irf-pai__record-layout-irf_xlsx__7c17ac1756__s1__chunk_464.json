@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_464",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "patient's bowel continence level. 0 = Always continent \n1 = Occasionally incontinent\n2 = Frequently incontinent\n3 = Always incontinent\n9 = Not rated\n385 I0900_PRPHRL_VSCLR_DEASE_IND I0900_PRPHRL_VSCLR_DEASE_IND I0900 Peripheral Vascular Disease (PVD) Code - The data in this column indicates whether the patient had a diagnosis of peripheral vascular disease (PVD) or peripheral arterial disease (PAD) at the time of admission. CHAR 1 The data in this column indicates whether the patient had a",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

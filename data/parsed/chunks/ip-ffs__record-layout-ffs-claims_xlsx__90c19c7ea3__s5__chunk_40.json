@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_40",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Transitnl Add-on Pymnt Amt New and Innovtv Equip NUM 12 53 New5\nREV_CNTR_NDC_QTY REV_CNTR_NDC_QTY Revenue Center National Drug Code (NDC) Quantity NUM 10 38\nREV_CNTR_NDC_QTY_QLFR_CD REV_CNTR_NDC_QTY_QLFR_CD Revenue Center NDC Quantity Qualifier Code CHAR 2 39\nRNDRNG_PHYSN_UPIN RNDRNG_PHYSN_UPIN Revenue Center Rendering Physician UPIN CHAR 12 40\nRNDRNG_PHYSN_NPI RNDRNG_PHYSN_NPI Revenue Center Rendering Physician NPI CHAR 12 41\nRNDRNG_PHYSN_SPCLTY_CD RNDRNG_PHYSN_SPCLTY_CD Revenue Center",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

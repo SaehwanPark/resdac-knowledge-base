@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p13__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 13,
+  "text": "COMMENT: \nBeginning with 2014 data, this variable has been retired and researchers may obtain both the actual \nprescriber identifier (PRSCRBR_ID) and the CCW prescriber characteristics file. As of May 2013, the \nPRSCRBR_ID is always populated with the National Provider Identifier (NPI). \nResearchers who received CCW data from 2006–2013 and wish to identify the HCIdea-assigned \nprovider ID (HCID) and/or NPI associated with the CCW_PRSCRBR_ID may request the prescriber \nbridge file, which is",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

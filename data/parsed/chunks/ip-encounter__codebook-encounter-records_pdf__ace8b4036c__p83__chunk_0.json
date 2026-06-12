@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p83__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 83,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n73 \nICD_DGNS_VRSN_CD1 \nICD_DGNS_VRSN_CD2 \nICD_DGNS_VRSN_CD3 \nICD_DGNS_VRSN_CD4 \nICD_DGNS_VRSN_CD5 \nICD_DGNS_VRSN_CD6 \nICD_DGNS_VRSN_CD7 \nICD_DGNS_VRSN_CD8 \nICD_DGNS_VRSN_CD9 \nICD_DGNS_VRSN_CD10 \nICD_DGNS_VRSN_CD11 \nICD_DGNS_VRSN_CD12 \nICD_DGNS_VRSN_CD13 \nLABEL: \nClaim Diagnosis Code 1–13 Diagnosis Version Code (ICD-9 or ICD-10) \nDESCRIPTION: Effective with Version 'J', the code used to",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

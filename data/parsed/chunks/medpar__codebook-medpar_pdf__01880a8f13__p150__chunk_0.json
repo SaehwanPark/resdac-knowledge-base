@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p150__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 150,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n134 \nMA_TCHNG_IND_SW \nLABEL: \nMA Teaching Indicator \nDESCRIPTION: The code used to identify whether the claim contains any request for supplemental Indirect Medical \nEducation (IME)/Graduate Medical Education (DGME)/Nursing and Allied Health (N&AH) payment. \nSHORT NAME: MA_TCHNG_IND_SW \nLONG NAME: MA_TCHNG_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = Yes, provider requests a",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

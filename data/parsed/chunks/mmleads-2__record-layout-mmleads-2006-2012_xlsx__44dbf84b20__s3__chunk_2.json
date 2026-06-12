@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s3__chunk_2",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 3,
+  "text": "Type SRVC_1 Level 1 service category. Waiver Vs. Non-waiver or Managed Care MDCD_WAIVER\nMDCD_NONWAIVER\nMDCD_MC\nSRVC_2 Level 2 service category MDCD_FFS_ACUTE\nMDCD_FFS_LTI\nMDCD_FFS_LTN\nMDCD_FFS_DRUG\nMDCD_MC\nSRVC_3 Level 3 service category. MAX Type of Service MDCD_FFS_ACUTE_IP\nMDCD_FFS_ACUTE_HOP\nMDCD_FFS_ACUTE_PHYS\nMDCD_FFS_ACUTE_OTH_OTHPRC\nMDCD_FFS_ACUTE_OTH_CLINIC\nMDCD_FFS_ACUTE_OTH_LABX\nMDCD_FFS_ACUTE_OTH_MISC\nMDCD_FFS_ACUTE_OTH_STERL\nMDCD_FFS_ACUTE_OTH_ABORT\nMDCD_FFS_ACUTE_OTH_THERAPY\nMDCD_FF",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

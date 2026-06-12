@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_24",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "- ZIP Code Char 9 141\nBENE_CNTY_CD Beneficiary County Code from Claim (SSA) Char 3 142\nBENE_STATE_CD Beneficiary Residence (SSA) State Code Char 2 143\nBENE_MLG_CNTCT_ZIP_CD Beneficiary ZIP Code of Residence Char 9 144\nBENE_RACE_CD Race Code Char 1 145\nDOB_DT Date of Birth Date 8 146\nBENE_MDCR_STUS_CD Beneficiary Medicare Status Code Char 2 147\nTAX_NUM Provider Tax Number Char 10 148\nBENE_STATE Beneficiary State Postal Code Char 2 149\nRevenue center file\nBENE_ID Encrypted CCW Beneficiary ID Char",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

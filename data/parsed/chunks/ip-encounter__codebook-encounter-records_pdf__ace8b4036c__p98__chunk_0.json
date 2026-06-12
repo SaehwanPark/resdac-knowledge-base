@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p98__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 98,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n88 \nLINE_SRVC_CNT \nLABEL: \nLine Service Count \nDESCRIPTION: The count of the total number of services processed for the line item on the non-institutional claim. \nSHORT NAME: LINE_SRVC_CNT \nLONG NAME: LINE_SRVC_CNT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS Encounter Data System (EDS) \nFILE(S): \nCarrier line \nDME Line \nVALUES: \n0 – XXXX (numeric values may include decimals) \nCOMMENT: \n— \n^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

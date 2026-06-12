@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p122__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 122,
+  "text": "PDEs are included. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedicare Claims Files (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as the sum of all CLM_PMT_AMT from the IP, SNF, HHA, Hospice, HOP, \nCarrier, and DME claims as well as the TOT_RX_CST_AMT for all PDEs for the beneficiary for the year. \nWithin MMLEADS, there are four variables that also sum to this MDCR_TOTAL_FFS_SPEND: \nMDCR_PTA_TOTAL_FFS_SPEND, MDCR_HOP_TOTAL_FFS_SPEND, MDCR_PTBNI_TOTAL_FFS_SPEND, \nand MDCR_PTD_TOTAL_SPEND.",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

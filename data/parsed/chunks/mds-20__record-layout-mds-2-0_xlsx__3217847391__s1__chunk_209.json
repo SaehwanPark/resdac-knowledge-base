@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_209",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Disease diagnosis: diseases - neurological - dementia other than Alzheimer's. 0 = No, 1 = Yes, \"-\" = Unknown.\n317 I1V I1V_HEMIPLEGIA (I1V) Hemiplegia/Hemiparesis CHAR 1 Disease diagnosis: diseases - neurological - hemiplegia/hemparesis 0 = No, 1 = Yes, \"-\" = Unknown.\n318 I1W I1W_M_S (I1W) Multiple Sclerosis CHAR 1 Disease diagnosis: diseases - neurological - multiple sclerosis. 0 = No, 1 = Yes, \"-\" = Unknown.\n319 I1X I1X_PARAPLEGIA (I1X) Paraplegia CHAR 1 Disease diagnosis: diseases -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

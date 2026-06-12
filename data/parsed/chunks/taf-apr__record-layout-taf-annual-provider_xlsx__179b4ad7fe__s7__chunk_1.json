@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s7__chunk_1",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 7,
+  "text": "Identifier CHAR 5 4\nBLG_LCTN_IND Billing Location Indicator CHAR 1 5\nPRCTC_LCTN_IND Practice Location Indicator CHAR 1 6\nSRVC_LCTN_IND Service Location Indicator CHAR 1 7\nPRVDR_ADR_LINE_1 Provider Street Address 1 CHAR 90 8\nPRVDR_ADR_LINE_2 Provider Street Address 2 CHAR 90 9\nPRVDR_ADR_LINE_3 Provider Street Address 3 CHAR 90 10\nPRVDR_CITY Provider City CHAR 42 11\nPRVDR_STATE_CD Provider State (FIPS) Code CHAR 2 12\nPRVDR_ZIP_CD Provider Zip Code CHAR 9 13\nPRVDR_CNTY_CD Provider County (FIPS)",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

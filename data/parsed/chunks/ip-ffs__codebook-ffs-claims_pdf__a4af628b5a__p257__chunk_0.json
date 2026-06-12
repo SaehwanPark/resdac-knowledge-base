@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p257__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 257,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n239 \nNCH_BENE_BLOOD_DDCTBL_LBLTY_AM \nLABEL: \nNCH Beneficiary Blood Deductible Liability Amount \nDESCRIPTION: The amount of money for which the intermediary determined the beneficiary is liable for the blood \ndeductible. \nA blood deductible amount applies to the first three pints of blood (or equivalent units; applies only to \nwhole blood or packed red cells — not platelets,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Beneficiary Medicare Lifetime Reserve Days (LRD) Used Count NUM 3 58\nNUTILDAY CLM_NON_UTLZTN_DAYS_CNT Claim Medicare Non Utilization Days Count NUM 5 59\nBLDFRNSH NCH_BLOOD_PNTS_FRNSHD_QTY NCH Blood Pints Furnished Quantity NUM 3 60\nNCOVFROM NCH_VRFD_NCVRD_STAY_FROM_DT NCH Verified Noncovered Stay From Date DATE 8 61\nNCOVTHRU NCH_VRFD_NCVRD_STAY_THRU_DT NCH Verified Noncovered Stay Through Date DATE 8 62\nCARETHRU NCH_ACTV_OR_CVRD_LVL_CARE_THRU NCH Active or Covered Level Care Thru Date DATE 8",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__record-layout-mbsf-ndi_xlsx__21e721b4ec__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/21e721b4ec64c624ca4af0c2f9b8d19c80c4925d.xlsx",
+  "page": 1,
+  "text": "ENTITY_COND_17 NDI Entity Axis Cause of Death - Condition 17 CHAR 7 - x\nENTITY_COND_18 ENTITY_COND_18 NDI Entity Axis Cause of Death - Condition 18 CHAR 7 - x\nENTITY_COND_19 ENTITY_COND_19 NDI Entity Axis Cause of Death - Condition 19 CHAR 7 - x\nENTITY_COND_20 ENTITY_COND_20 NDI Entity Axis Cause of Death - Condition 20 CHAR 7 - x\nRECORD_COND_1 RECORD_COND_1 NDI Record Axis Cause of Death - 1st Condition CHAR 5 x x\nRECORD_COND_2 RECORD_COND_2 NDI Record Axis Cause of Death - 2nd Condition CHAR",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-ndi.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_522",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "other written material from their doctor \nor pharmacy. 0 = Never\n1 = Rarely\n2 = Sometimes\n3 = Often\n4 = Always\n7 = Patient declines to respond\n8 = Patient unable to respond\n458 HLTH_LITERACY_DSCHRG_CD HLTH_LITERACY_DSCHRG_CD Health Literacy (Dsch) CHAR 1 This column documents, at the time of discharge, how often the patient need to have someone help them when they read instructions, pamphlets, or other written material from their doctor \nor pharmacy. 0 = Never\n1 = Rarely\n2 = Sometimes\n3 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

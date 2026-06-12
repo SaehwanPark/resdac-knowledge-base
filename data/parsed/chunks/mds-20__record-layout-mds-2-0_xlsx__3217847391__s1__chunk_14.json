@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "RSMTCHCR RES_MATCH_CRITERIA Resident Match Criteria CHAR 2 This field is used in determining if a record should be written to the resident history table. It is a number showing which of the resident matching criteria was positive for a match, and is zero if it is a new resident.\n27 SFTW_ID SFTW_ID Software Vendor ID CHAR 9 This field contains the identification number of the software vendor or agent the facility is using to automate the MDS requirement.\n28 SFT_VER SFT_VER Software Version CHAR",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

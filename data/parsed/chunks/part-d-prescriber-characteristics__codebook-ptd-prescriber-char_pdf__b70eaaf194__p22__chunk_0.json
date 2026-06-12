@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 22,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n17 \nPRACTICE_LOC_STATE03 \nLABEL: \nPrescriber Practice Location State 3 \nDESCRIPTION: The 3rd state where the prescriber practices, using the standard two-character postal state code. \nThe CCW Prescriber Characteristics file allows for up to five practice location states associated with \nthe prescriber during the year. \nThe number of associated states may vary from year to year. \nSHORT NAME: —",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p33__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 33,
+  "text": "the 5% sample but had a HIC change that was not part of the \nsample. The \"enhanced\" indicator variable allows for longitudinal study of the 5% sample (i.e., once in, \nalways in). \nCCW creates the 5% sample using standard CMS processes. The 5% random sample consists of people \nwho had a Medicare beneficiary Health Insurance Claim number (HIC) equal to the Claim Account \nNumber (CAN) plus Beneficiary Identity Code (BIC) (HIC=CAN+BIC) where the last two digits of the CAN \nare in the set {05, 20,",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p9__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 9,
+  "text": "the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, \nrather it may include adjustments due to ACO or PBP programs. \nAcute inpatient hospital claims are a subset of the claims in the IP data file consisting of data from both \nacute hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of \nthe provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. \nACUTE_PERDIEM_PMT must be added to this",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

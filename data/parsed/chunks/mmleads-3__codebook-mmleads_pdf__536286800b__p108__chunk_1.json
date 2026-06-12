@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p108__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 108,
+  "text": "renal disease (ESRD) \n3 = Both DIB and ESRD \nNull/missing = not Medicare enrolled \nCOMMENT: \nCCW obtains this directly from the MBSF ENTLMT_RSN_ORIG variable. \nThe current reason for entitlement can differ from the original reason that a beneficiary qualified for \nMedicare (reference the MDCR_CREC variable in MMLEADS). \nCMS obtains this information from the Social Security Administration (SSA) and Railroad Retirement \nBoard (RRB) record systems. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

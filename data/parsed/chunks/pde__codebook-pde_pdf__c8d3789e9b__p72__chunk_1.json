@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p72__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 72,
+  "text": "types \nof claims on the PDE record; used to identify specific types of claims with valid values. \nSHORT NAME: SUBMSN_TYPE_CD_1 \nSUBMSN_TYPE_CD_2 \nSUBMSN_TYPE_CD_3 \nSUBMSN_TYPE_CD_4 \nSUBMSN_TYPE_CD_5 \nLONG NAME: SUBMSN_TYPE_CD_1 \nSUBMSN_TYPE_CD_2 \nSUBMSN_TYPE_CD_3 \nSUBMSN_TYPE_CD_4 \nSUBMSN_TYPE_CD_5 \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE \nVALUES: \nAA = 340B Claims \nAB = Split Billing \nAD = Nominal Price \nAF = Synchronization Fill \nAG = Trial Fill \nNull/missing \n\nCOMMENT: \nThese fields were new",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

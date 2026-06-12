@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p281__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 281,
+  "text": "pharmacy) during the pre-initial coverage \nlimit (ICL) phase of the Part D benefit. \nSHORT NAME: — \nLONG NAME: PRE_ICL_DAYS_INP_3M \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \nCOMMENT: \nThis variable was new in 2007. Starting in 2016, CMS changed how they describe pharmacy networks. \nThe INP are currently referred to as standard retail pharmacies. There is no change in the meaning of \nthe variable, and the data values are the same over time. \nThe CCW constructs the Plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

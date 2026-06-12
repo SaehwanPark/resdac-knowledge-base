@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s3__chunk_42",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 3,
+  "text": "Care Plan ID (8th Occurrence ) - March CHAR 12 196\nMC_PLAN_ID_08_04 Managed Care Plan ID (8th Occurrence ) - April CHAR 12 197\nMC_PLAN_ID_08_05 Managed Care Plan ID (8th Occurrence ) - May CHAR 12 198\nMC_PLAN_ID_08_06 Managed Care Plan ID (8th Occurrence ) - June CHAR 12 199\nMC_PLAN_ID_08_07 Managed Care Plan ID (8th Occurrence ) - July CHAR 12 200\nMC_PLAN_ID_08_08 Managed Care Plan ID (8th Occurrence ) - August CHAR 12 201\nMC_PLAN_ID_08_09 Managed Care Plan ID (8th Occurrence ) - September",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

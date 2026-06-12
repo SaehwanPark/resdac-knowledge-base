@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_4",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "the coding intensity adjustment to the resolved risk scores for all beneficiaries regardless of \npayment year enrollment status. CMS uses the payment risk scores to determine MA reimbursement. As a result, \nthe resolved risk score for a beneficiary that was FFS in the data collection period may be artificially low as the \ncoding intensity adjustment may not be applicable. Investigators may “back-out” this coding intensity adjustment \nby identifying FFS beneficiaries (i.e., using the CCW MBSF)",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

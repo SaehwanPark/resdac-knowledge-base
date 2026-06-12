@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_533",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Assessment (OMRA) Code CHAR 1 The data in this column indicates the PPS Other Medicare Required Assessment (A0310C) code from the prior erroneous record to be modified or inactivated. 0=No\n 1=Start of therapy assessment\n 2=End of therapy assessment\n 3=Both Start and End of therapy assessment\n 4=Change of therapy assessment\n ^=Blank (Skip Pattern) discontinued 09/30/2023\n613 X0600D_CRCTN_SB_CLNCL_CHG_CD X0600D_CRCTN_SB_CLNCL_CHG_CD X0600D Correction Swing Bed Clinical Change Code CHAR 1 The data",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

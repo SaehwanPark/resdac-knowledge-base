@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_12",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Days Count NUM 8 72\nCVRD_DAYS_ICF_IID Count of Medicaid Covered Days in ICF for Patients with Intellectual Disability NUM 8 73\nCVRD_DAYS_NF Count of Medicaid Covered Days in a Nursing Facility NUM 8 74\nCVRD_DAYS_IP_PSYCH Count of Medicaid Covered Days in an Inpatient Psychiatric Facility (IPF) NUM 8 75\nCVRD_DAYS_IP_PSYCH_OVER_65 Count of Medicaid Covered Days in an IPF (Beneficiary Over 65 Years) NUM 8 76\nCVRD_DAYS_IP_PSYCH_UNDER_21 Count of Medicaid Covered Days in an IPF (Beneficiary Under 21",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

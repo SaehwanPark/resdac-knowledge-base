@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "home, 5 = Acute Care Hospital, 6 = Psychiatric Hospital, MR/DD facility, 7 = Rehabilitation Hospital, 8 = Other\n40 A5 A5_MARTIAL_STATUS (A5) Marital Status CHAR 1 Identification and background information: marital status. \"-\" = Unknown, 1 = Never married, 2 = Married, 3 = Widowed, 4 = Separated, 5 = Divorced\n41 A7A A7A_MCAID_PER_DIEM (A7A) Medicaid Per Diem CHAR 1 Identification and background information: current payment sources - medicaid per diem 0 = No, 1 = Yes, \"-\" = Unknown.\n42 A7B",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p38__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 38,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n27 \nADMTG_PRVDR_TXNMY_CD \nLABEL: \nAdmitting Provider Taxonomy Code \nDESCRIPTION: The taxonomy code for the admitting provider. \nSHORT NAME: ADMTG_PRVDR_TXNMY_CD \nLONG NAME: ADMTG_PRVDR_TXNMY_CD \nTYPE: \nCHAR \nLENGTH: \n12 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nVALUES: \nhttp://www.wpc-edi.com/reference/ \nNull/missing = Source value is missing or unknown",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

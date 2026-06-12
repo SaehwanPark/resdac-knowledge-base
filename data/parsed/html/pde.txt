@@ -1,0 +1,21 @@
+When a Medicare beneficiary with Part D coverage fills a prescription, the prescription drug plan submits a record to CMS. The PDE file includes all transactions covered by the Medicare prescription drug plan for both Prescription Drug Plans (PDPs) and Medicare Advantage Prescription Drug Plans (MA-PDs).
+What does this file include? (variable highlights)
+- Service date
+- Product Service ID (NDC code)
+- Quantity dispensed
+- Days supply
+- Cost
+- Payment
+- Linkage variables:- Plan Contract ID, Plan Benefit Package ID for linkage to Plan Characteristics file
+- Product ID (NDC code) used by the CCW to link to the Drug Characteristics data
+- Beneficiary Id for linkage to MTM and Plan Election characteristics files, CMS utilization, enrollment and assessment data for Medicare and Medicaid
+- Formulary drug identifier for linkage to the Part D Formulary files
+- CCW Pharmacy ID or the NCPDP_ID for linkage to the Pharmacy Characteristics file
+- CCW-assigned Prescriber Identifier for linkage to the Prescriber Characteristics file
+ 
+Why do researchers request this file?
+- Studies that include prescription drugs as a treatment of interest
+- Research comparing outcomes of treatment
+Special considerations
+- These files do not have information on drugs given during hospitalizations or which are paid under other auspices (e.g., hospice)
+- If the Drug characteristics variables are selected during the request process, these are appended to the PDE.

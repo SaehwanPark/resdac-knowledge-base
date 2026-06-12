@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_50",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "of daily events - naps regularly during day 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n98 AC1C AC1C_OUT_1_WEEK (AC1C) Goes Out 1+ Days a Week CHAR 1 Customary routine: cycle of daily events - goes out one or more days a week. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n99 AC1D AC1D_STAY_BUSY (AC1D) Stays Busy With Hobbies/Reading/Fixed Daily Routine CHAR 1 Customary routine: cycle of daily events - stys busy with hobbies/fixed routine. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n100 AC1E",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

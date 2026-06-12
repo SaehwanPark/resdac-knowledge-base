@@ -1,0 +1,20 @@
+CMS has created a set of analytical files that contain data from the Medicare Shared Saving Program. There are two separate files in this data set:
+- The Shared Savings Program Beneficiary-Level Research Identifiable File (RIF)
+- The Shared Savings Program Provider-Level RIF
+What does this file include? (variable highlights)
+- ACO ID
+- ACO Name
+- Start Date
+- Tax Identification Number (TIN) of ACO Participant
+- TIN Legal Business Name
+- National Provider Identifier (NPI) for practitioner
+- Name of Provider Associated with the NPI
+- CMS Certification Number (CCN; formerly OSCAR number)
+- CCN Facility Type
+- CCN Facility Type Description
+- Provider Specialty Code
+- ACO Location (county primarily served)
+- Year of ACO Source Record
+Special considerations
+- Shared Savings Program RIFs do not include data for models such as ACO Realizing Equity, Access and Communication Health (ACO REACH) or Kidney Care Choices (KCC) models.
+- All technical questions related to the Shared Savings Program should be directed to the ACO Information Center at [email protected].

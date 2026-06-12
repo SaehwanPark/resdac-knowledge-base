@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-practice-list__data-documentation__ef2a095405__chunk_2",
+  "source_document": "data/raw/html/documentation_page/ef2a0954051ab868decb1ea31e3aa95aea747cde.html",
+  "page": null,
+  "text": "Group Type | \n| CCNS | List of CMS Certification Numbers (Facility Numbers) for the Practice | \n| ADDRESS_LINE_1 | Practice's Address (line 1) | \n| ADDRESS_LINE_2 | Practice's Address (line 2) | \n| CITY | Practice's City | \n| STATE | Practice's State (postal abbreviation) | \n| ZIP_CODE | Practice's Zip Code | \n| INSERT_DATE | Date the Record was Created | \n| UPDATE_DATE | Date the Record was Modified | \n| IS_ACTIVE | Active Practice (Y) or Inactive Practice (N) | \n| FILE_COUNT | Number of Files",
+  "dataset": "million-hearts-model-practice-list",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-practice-list/data-documentation"
+}

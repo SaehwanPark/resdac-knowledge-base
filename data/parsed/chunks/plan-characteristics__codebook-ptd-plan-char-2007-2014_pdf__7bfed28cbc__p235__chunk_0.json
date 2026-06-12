@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p235__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 235,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n222 \nPART_D_LIPS_25 \nLABEL: \nPart D Low Income Premium Subsidy 25% \nDESCRIPTION: This variable is the dollar amount of the monthly Part D low-income total premium subsidy (LIPS) for \nbeneficiaries at the 25% subsidized level. \nSHORT NAME: — \nLONG NAME: PART_D_LIPS_25 \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \n\nCOMMENT: \nThe width of this value changed from 12 to",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

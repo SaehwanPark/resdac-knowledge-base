@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_13",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "8 11 11\nHCPCS_CD HCFA Common Procedure Coding System (HCPCS) Code Char 5 12 12\nHCPCS_1ST_MDFR_CD HCPCS Initial Modifier Code Char 2 13 13\nHCPCS_2ND_MDFR_CD HCPCS Second Modifier Code Char 2 14 14\nHCPCS_3RD_MDFR_CD HCPCS Third Modifier Code Char 2 15 15\nHCPCS_4TH_MDFR_CD HCPCS Fourth Modifier Code Char 2 16 16\nLINE_NDC_CD Line National Drug Code (NDC) Char 11 17 17\nLINE_RX_NUM Line RX Number Char 30 18 18\nLINE_LTST_CLM_IND Line Latest Claim Indicator Char 1 19 19\n1 Number shown on the matrix",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_283",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "care - treatments in last 14 days - dialysis. 0 = No, 1 = Yes, \"-\" = Unknown.\n474 P1AC P1AC_IV_MED (P1AC) IV Medication CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - IV medication. 0 = No, 1 = Yes, \"-\" = Unknown.\n475 P1AD P1AD_INTAKE (P1AD) Intake/Output CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - intake/output. 0 = No, 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

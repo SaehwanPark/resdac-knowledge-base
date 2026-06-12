@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p33__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 33,
+  "text": "B. 2025 MCAHPS Format Tables\n33\nsu_type: Survey Type (1-4)\nSAS Format: $TYPEF\n1: MA PDP\n2: MA ONLY\n3: PDP\n4: FFS\nsu_web_surv: Indicates Whether Submitted Web Survey Came from Prenotiﬁcation Letter, Web Invitation, or Reminder\nSAS Format: WEBF\n1: Prenotiﬁcation letter URL/PIN\n2: Paper web invitation URL/PIN\n3: Email web invitation URL/PIN\n4: Email reminder URL/PIN\n8: Not Applicable\nweb_at_home: RECODE : Do you ever use the internet at home\nSAS Format: YNA\n1: YES\n2: NO\nws_wes_comp: WESTAT:",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

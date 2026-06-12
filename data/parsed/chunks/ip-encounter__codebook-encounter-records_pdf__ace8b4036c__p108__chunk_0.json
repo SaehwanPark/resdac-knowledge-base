@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p108__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 108,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n98 \nPRVDR_SPCLTY \nLABEL: \nLine CMS Provider Specialty Code \nDESCRIPTION: CMS (previously called HCFA) specialty code used for pricing the line-item service on the non-\ninstitutional encounter record. \nAssigned by the Medicare Advantage Organization (MAO) based on the corresponding provider \nidentification number (performing NPI). \nSHORT NAME: PRVDR_SPCLTY \nLONG NAME: PRVDR_SPCLTY",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

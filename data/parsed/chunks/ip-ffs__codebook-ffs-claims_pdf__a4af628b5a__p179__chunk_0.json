@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p179__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 179,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n161 \nDMERC_OXGN_INITL_DT_CD \nLABEL: \nOxygen Equipment Initial Date Code \nDESCRIPTION: The initial date indicator for oxygen equipment. \nSHORT NAME: DMERC_OXGN_INITL_DT_CD \nLONG NAME: DMERC_OXGN_INITL_DT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nI = Initial Date \nB = Backdate Initial Date \nR = Replacement Item \nNull/missing = no oxygen equipment \nCOMMENT: \nThis field",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_251",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Patient Living Situation This field indicates the best description of the patient's residential circumstance and availability of assistance. 01 = Patient lives alone, around the clock assistance available.\n02 = Patient lives alone, regular daytime assistance available.\n03 = Patient lives alone, regular nighttime assistance available.\n04 = Patient lives alone, occasional / short-term assistance available.\n05 = Patient lives alone, no assistance available.\n06 = Patient lives with other person(s)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

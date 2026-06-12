@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_45",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Model 1 Discount Percent NUM 8 212\nCLM_BASE_OPRTG_DRG_AMT CLM_BASE_OPRTG_DRG_AMT Claim Base Operating DRG Amount NUM 12 213\nCLM_VBP_PRTCPNT_IND_CD CLM_VBP_PRTCPNT_IND_CD Claim Value-Based Purchasing (VBP) Participant Indicator Code CHAR 1 214\nCLM_VBP_ADJSTMT_PCT CLM_VBP_ADJSTMT_PCT Claim VBP Adjustment Percent NUM 15 215\nCLM_HRR_PRTCPNT_IND_CD CLM_HRR_PRTCPNT_IND_CD Claim Hospital Readmission Rdctn (HRR) Participant Indicator Code CHAR 1 216\nCLM_HRR_ADJSTMT_PCT CLM_HRR_ADJSTMT_PCT Claim HRR",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

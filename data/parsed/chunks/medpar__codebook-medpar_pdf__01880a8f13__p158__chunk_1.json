@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p158__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 158,
+  "text": "To obtain the total amount paid by Medicare for the stay, the pass-through amount (which is the daily \nper diem amount; field called PASSTHRU) must be added to this field. \nSHORT NAME: PMT_AMT \nLONG NAME: MDCR_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nCOMMENT: \nThis field is derived by accumulating the payment amount that is present on all the claim records \nincluded in the stay (i.e., the sum of payment [reimbursement] reported on the claims that comprise the \nstay). \nIn",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

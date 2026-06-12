@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "NUM 8 128\nMDCD_ALOWD_AMT Total Medicaid Allowed Amount NUM 8 129\nMDCD_PD_AMT Total Amount Paid By Medicaid NUM 8 130\nMDCD_COPAY_AMT Total Copay Amount Paid by Beneficiary NUM 8 131\nMDCD_DSH_PD_AMT Medicaid Amount Paid Disproportionate Share Hospital (DSH) NUM 8 132\nMDCR_PD_AMT Medicare Paid Amount NUM 8 133\nMDCR_DDCTBL_PD_AMT Total Medicare Deductible Amount NUM 8 134\nMDCR_COINSRNC_PD_AMT Total Medicare Coinsurance Amount NUM 8 135\nMDCR_CMBND_DDCTBL_IND Medicare Combined Deductible and",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

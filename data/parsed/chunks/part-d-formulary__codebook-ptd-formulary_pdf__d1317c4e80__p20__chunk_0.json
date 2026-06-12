@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n16 \nSTEP_THERAPY_YN \nLABEL: \nStep Therapy Indicator \nDESCRIPTION: This is a CCW-derived field that indicates whether the prescription was subject to a step therapy \nprotocol, according to the benefit structure and formulary for the beneficiary’s plan. \nSHORT NAME: — \nLONG NAME: STEP_THERAPY_YN \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n0 = No \n1 = Yes",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

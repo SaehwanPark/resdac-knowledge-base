@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n2 \nADMTG_DGNS_CD \nLABEL: \nClaim Admitting Diagnosis Code \nDESCRIPTION: A diagnosis code on the institutional claim indicating the beneficiary's initial diagnosis at admission. \nThis diagnosis code after evaluating the patient; it may be different from the eventual diagnoses (e.g., \nas in PRNCPAL_DGNS_CD or ICD_DGNS_CD1–25). \nSHORT NAME: ADMTG_DGNS_CD \nLONG NAME: ADMTG_DGNS_CD",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p29__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 29,
+  "text": "files. \nThese claim lines are defined as those with a line BETOS code (BETOS_CD) where the first three digits \nare “D1A,” “D1B,” “D1C,” “D1D,” “D1E,” or “D1F.” The total Medicare payments are calculated as the \nsum of LINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant \nlines. \nSHORT NAME: — \nLONG NAME: DME_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nStarting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

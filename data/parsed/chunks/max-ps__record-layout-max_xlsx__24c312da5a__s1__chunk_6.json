@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Zip code of residence NUM 9 X X X X X X X X X X X\n26 EL_SS_ELGBLTY_CD_LTST State specific eligibility - most recent CHAR 6 X X X X X X X X X X X\n27 EL_MAX_ELGBLTY_CD_LTST MAX unform eligibility code - most recent CHAR 2 X X X X X X X X X X X\n28 MSNG_ELG_DATA Missing Medicaid eligibility data CHAR 1 X X X X X X X X X X X\n29 EL_ELGBLTY_MO_CNT Months of Eligibility NUM 2 X X X X X X X X X X X\n30 EL_PRVT_INSRNC_MO_CNT Private insurance months NUM 2 X X X X X X X X X X X\n31 EL_MDCR_ANN_XOVR_OLD",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_256",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1210 Ability To Hear This field indicates the patient's ability to hear. 00 = Adequate: hears normal conversation without difficulty.\n01 = Mildly to Moderately Impaired: difficulty hearing in some\nenvironments or speaker any need to increase volume or speak distinctly.\n02 = Severely Impaired: absence of useful hearing.\nUK = Unable to assess hearing. CHAR 2 x x x x\nM1220_UNDRSTG_VERBAL_CNTNT M1220 Understanding Of Verbal Content This field indicates the patient's understanding of verbal content",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

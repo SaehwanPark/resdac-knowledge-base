@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p76__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 76,
+  "text": "the presence of coronary care revenue center codes (021X) on any of \nthe claim records included in the stay. If more than one of the revenue center codes are included on \nthese claims; the code with the highest revenue center total charge amount is used. \nThere is approximately a 20% error rate in the revenue center code category 0214 due to coders \nmisunderstanding the term 'post CCU' as including any day after a CCU stay rather than just days in a \nstep-down/lower case version of a CCU.",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

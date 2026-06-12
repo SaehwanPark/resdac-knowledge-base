@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p268__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 268,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n248 \nSRVC_PRVDR_NPI \nLABEL: \nServicing Provider NPI \nDESCRIPTION: The National Provider Identifier (NPI) of the health care professional who delivers or completes a \nparticular medical service or non-surgical procedure. \nSHORT NAME: SRVC_PRVDR_NPI \nLONG NAME: SRVC_PRVDR_NPI \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP line \nLT line \nOT line \nVALUES:",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p388__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 388,
+  "text": "Service classification type (CLM_SRVC_CLSFCTN_TYPE_CD). \nEffective January 3, 2023, this field will include the Rural Emergency Hospital (REH) 5% payment \nincrease. Applies to claims processed by the outpatient prospective payment system (OPPS), identified \nby provider type of “24K”, CLM_OP_PPS_IND = 2, and TOBs 13X and 14X. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

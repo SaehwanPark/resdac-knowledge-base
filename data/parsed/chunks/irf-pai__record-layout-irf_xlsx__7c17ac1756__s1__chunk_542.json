@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_542",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "in doing things. 0 = No \n1 = Yes \n9 = No response \n- = Not Assessed/No Information\n477 LTTL_INTRST_DSCHRG_CD LTTL_INTRST_DSCHRG_CD Mood: Little interest/pleasure doing things: P (D) CHAR 1 This column documents whether, at the time of discharge, the patient expressed that in the last two weeks they found little interest or pleasure in doing things. 0 = No \n1 = Yes \n9 = No response \n- = Not Assessed/No Information\n478 LTTL_INTRST_FREQ_ADMSN_CD LTTL_INTRST_FREQ_ADMSN_CD Mood: Little",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p124__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 124,
+  "text": "Count) — January–December (01–12) \nDESCRIPTION: This variable is the total count of claims for each month for all Medicare fee-for-service (FFS) claims \nand Part D events (PDEs) for the beneficiary. Note that only fee-for-service (FFS) claims for services \nand PDEs are included. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedicare Claims files (derived) \nVALUES: \nXX \nCOMMENT: \nCCW calculates this variable as the count of all claims from the monthly Inpatient, Skilled Nursing \nFacility, Home Health,",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

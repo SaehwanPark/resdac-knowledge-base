@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p36__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 36,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n30 \nHH_MDCR_PMT \nLABEL: \nHome Health Medicare Payments \nDESCRIPTION: This variable is the total Medicare payments in the home health (HH) setting for a given year. The total \nMedicare payments for HH are calculated as the sum of CLM_PMT_AMT for all HH claims where the \nCLM_PMT_AMT >= 0. \nSHORT NAME: — \nLONG NAME: HH_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived)",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

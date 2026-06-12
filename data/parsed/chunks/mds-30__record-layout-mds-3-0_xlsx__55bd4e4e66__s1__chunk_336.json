@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_336",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "(Yes)\n373 K0200A_HGT_NUM K0200A_HGT_NUM K0200A Height Number CHAR 2 The data in this column contains the resident's height (in inches). 0 Minimum\n99 Maximum\n- Not assessed/no information\n374 K0200B_WT_NUM K0200B_WT_NUM K0200B Weight Number CHAR 3 The data in this column contains the resident's weight (in pounds). 0 Minimum\n999 Maximum\n- Not assessed/no information\n375 K0300_WT_LOSS_CD K0300_WT_LOSS_CD K0300 Weight Loss Code CHAR 1 The data in this column indicates if the resident had a weight",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

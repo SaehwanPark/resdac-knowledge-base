@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_269",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1308 Number of Pressure Ulcers- Stage IV This field indicates the current number of unhealed pressure ulcers at stage IV (enter 0 if none). CHAR 2 x x x\nM1308_NBR_STG4_AT_SOC_ROC M1308 Number of Pressure Ulcers- Stage IV At SOC ROC This field indicates the current number of unhealed pressure ulcers at stage IV that were present on admission\n(most recent SOC / ROC). CHAR 2 x\nM1308_NSTG_DRSG M1308 Number of Unstageable Pressure Ulcers Due To Non-Rmvble Dsg This field indicates the current number",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

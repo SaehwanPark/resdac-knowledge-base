@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "NUM 3 28 26 26\nCOL_NMRTR_UNK_POP_IND SES Stratificatn Colorectal Cancer Screening (COL) Nmrtr: Unknown Elig Populatn NUM 3 — — 29 27 27\nBCS_DNMTR_IND Breast Cancer Screening (BCS) Denominator Indicator NUM 3 18 18 30 28 28\nBCS_NMRTR_IND Breast Cancer Screening (BCS) Numerator Indicator NUM 3 19 19 31 29 29\nBCS_DNMTR_NO_LISDE_NO_DSBLTY_IND SES Stratficatn Brst Cancr Screenng (BCS) Dnmtr: Non-LIS, Non-Dual, Nondisability NUM 3 — — 32 30 30\nBCS_NMRTR_NO_LISDE_NO_DSBLTY_IND SES Stratficatn Brst",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

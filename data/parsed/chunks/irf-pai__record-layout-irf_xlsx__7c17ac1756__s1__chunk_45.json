@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_45",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "of delirium at time of admission. Delirium may be manifested as disoriented thinking, being easily distracted, disorganized speech, restlessness, lethargy, or altered perceptions or awareness of surroundings. 0 = No, 1 = Yes\n68 _27A SWLWG_ADMSN_CD (27a) Swallowing Status: Admission CHAR 2 A code used to describe the patient's swallowing status at time of admission. 01 = Tube/Parenteral Feeding: tube/parenteral feeding used wholly or partially as a means of sustenance, 02 = Modified Food",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

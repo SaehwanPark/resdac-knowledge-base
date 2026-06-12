@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "NCH_PROFNL_CMPNT_CHRG_AMT NCH Professional Component Charge Amount NUM 12 45\nNCCHGAMT NCH_IP_NCVRD_CHRG_AMT NCH Inpatient (or other Part A) Noncovered Charge Amount NUM 12 46\nTDEDAMT NCH_IP_TOT_DDCTN_AMT NCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount NUM 12 47\nPPS_CPTL CLM_TOT_PPS_CPTL_AMT Claim Total PPS Capital Amount NUM 12 48\nCPTL_FSP CLM_PPS_CPTL_FSP_AMT Claim PPS Capital Federal Specific Portion (FSP) Amount NUM 12 49\nCPTLOUTL CLM_PPS_CPTL_OUTLIER_AMT Claim PPS",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

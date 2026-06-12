@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_254",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "or cured in the lat 90 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n414 M4A M4A_ABRASIONS (M4A) Abrasions/Bruises CHAR 1 Skin condition: other skin problems or lesions present in last 7 days - abrasions/bruises. 0 = No, 1 = Yes, \"-\" = Unknown.\n415 M4B M4B_BURNS (M4B) Burns 2nd/3rd Degree CHAR 1 Skin condition: other skin problems or lesions present in last 7 days - burns (second or third degree) 0 = No, 1 = Yes, \"-\" = Unknown.\n416 M4C M4C_OPEN_LESIONS (M4C) Open Lesions Other Than Ulcers/Rashes/Cuts",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

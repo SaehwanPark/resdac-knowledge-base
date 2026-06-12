@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-npi-practice__record-layout-value-modifier-npi-practice-level-rif-perf-year-2016_xlsx__8d974257e6__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/8d974257e6bbc17164c21a5c1277482e156fa4a9.xlsx",
+  "page": 1,
+  "text": "professional not subject to the 2018 Value Modifier 6 Num 8 Indicator of whether provider is a nonphysician eligible professional not subject to the 2018 Value Modifier\nHCFA_SPECIALTY Specialty designation Specialty of provider 7 Char 120 Specialty of provider\nLAST_CLM_DATE Date of last Medicare Part B claim billed under practice Date of last Medicare Part B claim billed under practice 8 Num 8 Date of last Medicare Part B claim billed under practice\nBILL_UND_PRAC Identified via billings",
+  "dataset": "vm-npi-practice",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-npi-practice-level-rif-perf-year-2016.xlsx"
+}

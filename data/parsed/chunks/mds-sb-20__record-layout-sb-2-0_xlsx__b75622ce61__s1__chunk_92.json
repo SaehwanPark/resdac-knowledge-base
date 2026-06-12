@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_92",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "not include healed surgical sites or stomas. 0 = Unchecked, 1 = Checked, -1 = Unknown\n118 M5A M5A_RELIEF_CHAIR 34a(M5a)Pressure Relieving Device(s) for Chair CHAR 1 Indicates the patient has received pressure relieving device(s) for the chair to manage skin problems in the past seven days. Includes gel, air, or other cushioning placed on a chair or wheelchair. 0 = Unchecked, 1 = Checked, -1 = Unknown\n119 M5B M5B_RELIEF_BED 34b(M5b)Pressure Relieving Device(s) for Bed CHAR 1 Indicates the",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

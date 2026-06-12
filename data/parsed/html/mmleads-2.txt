@@ -1,0 +1,13 @@
+The Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) 2.0 suite of files combines Medicare and Medicaid enrollment and claims data into four annual beneficiary-level files. The files include beneficiaries who are Medicare-only, Medicare-Medicaid dually enrolled and Medicaid-only blind and disabled.
+Source data
+- Medicare: FFS, PDE and MA
+- Medicaid: MAX data
+What does this file include? (variable highlights)
+- Eligibility, enrollment variables
+- Aggregated cost and use
+- Prescription Drug service utilization reported for classes of drugs
+- Chronic Condition flags - 27 CCW Chronic Conditions plus an additional 25 other condition flags
+- All four files are released for approved MMLEADS data requests- Beneficiary file
+- Medicare Services file
+- Medicaid Services file
+- Conditions file

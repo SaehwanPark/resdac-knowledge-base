@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p84__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 84,
+  "text": "(NCH_PRMRY_PYR_CLM_PD_AMT from each claim) in the SNF setting for the year. This algorithm \nincludes claims where the CLM_PMT_AMT ≥ $0. \nSHORT NAME: — \nLONG NAME: SNF_PRMRY_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis variable was new in 2010; it will always be null/missing in earlier files. \nMedicare payments are described in detail in a series of Medicare Payment Advisory Commission \n(MedPAC) documents called “Payment Basics” (reference:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

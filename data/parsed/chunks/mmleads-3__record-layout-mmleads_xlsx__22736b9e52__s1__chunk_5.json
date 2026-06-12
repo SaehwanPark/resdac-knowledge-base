@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "Medicare Status Code - Ltst in Yr Char 2\n31 MDCR_DIB_AWD_CD Medicare - SSA Disability Insurance Benefit Award Code Char 1\n32 MDCR_DIB_JSTFCTN_CD Medicare - Disability Insurance Benefit Entitlement to Medicare Justifctn Code Char 1\n33 MDCR_DIB_PRMRY_IMPRMNT_CD Medicare - SSA Disability Insurance Benefit Dx Primary Impairment Code Char 4\n34 MDCR_DIB_SCNDRY_IMPRMNT_CD Medicare - SSA Disability Insurance Benefit Dx Secondary Impairment Code Char 4\n35 MDCR_FFS_MEDICAL_MOS Medicare - Fee-for-Service",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

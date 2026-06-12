@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_5",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Identifies the Date Field Used to Populate SRVC_END_DT CHAR 1 29\nADMSN_DT Admission Date DATE 8 30\nADMSN_HR Admission Hour CHAR 2 31\nDSCHRG_DT Discharge Date DATE 8 32\nDSCHRG_HR Discharge Hour CHAR 2 33\nADMTG_DGNS_CD Admitting Diagnosis Code CHAR 7 34\nADMTG_DGNS_VRSN_CD Admitting Diagnosis Version Code (ICD-9 or ICD-10) CHAR 1 35\nDGNS_CD_1 Primary or Principal Diagnosis Code CHAR 7 36\nDGNS_VRSN_CD_1 Diagnosis Version Code 1 (ICD-9 or ICD-10) CHAR 1 37\nDGNS_POA_IND_1 Diagnosis 1 Present on",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

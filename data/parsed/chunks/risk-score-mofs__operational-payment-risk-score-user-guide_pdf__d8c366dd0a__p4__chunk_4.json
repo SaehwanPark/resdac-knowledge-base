@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p4__chunk_4",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 4,
+  "text": "in Original Medicare or MA. CMS designs the files for investigators to use them with other \nCCW data products, such as the Master Beneficiary Summary File (MBSF) that contains a wide range of demographic \nand Medicare coverage information. When the CCW team loads the source data to the CCW database, the team \nassigns each record the CCW unique beneficiary identifier (the BENE_ID variable), to facilitate linkage between files \nand for longitudinal analyses. \nThis guide provides users with",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

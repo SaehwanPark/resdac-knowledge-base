@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "assessment where Correction Number is 00.\n24 P_REC_DT P_REC_DT Previous Record Date DATE 8 Previous Record Date\n25 RSCHGTS RES_CHG_TIMESTAMP Resident Change Timestamp DATE 8 This is a timestamp indicating when the resident identifying information was changed. It is used to distinguish which version of the resident identifying information was in effect during a particular time period.\n26 RSMTCHCR RES_MATCH_CRITERIA Resident Match Criteria CHAR 2 This field is used in determining if a record",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

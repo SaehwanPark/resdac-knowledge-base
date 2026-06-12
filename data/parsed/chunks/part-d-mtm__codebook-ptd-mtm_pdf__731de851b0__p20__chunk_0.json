@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n16 \nCONTRACT_ID \nLABEL: \nPart D Contract Number \nDESCRIPTION: This variable is the Medicare Part D contract number for the beneficiary’s Medicare Part D plan. \nCMS assigns an identifier to each contract that a Part D plan has with CMS. \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nXXXXX \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

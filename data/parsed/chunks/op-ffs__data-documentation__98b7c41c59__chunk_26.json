@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_26",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "Organization (ACO) Indicator Code - Capitation | \n\n | 158 | ACO_ID_NUM | Claim Accountable Care Organization (ACO) Identification Number | \n\n | 159 | CLM_BENE_ID_TYPE_CD | Claim Beneficiary Identifier Type Code | \n\n | 160 | CLM_RSDL_PYMT_IND_CD | Claim Residual Payment Indicator Code | \n\n | 161 | PRVDR_VLDTN_TYPE_CD | Provider Validation Type Code | \n\n | 162 | RR_BRD_EXCLSN_IND_SW | Railroad Board Exclusion Indicator Switch | \n\n | 163 | CLM_MODEL_REIMBRSMT_AMT | Claim Model Reimbursement Amount",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

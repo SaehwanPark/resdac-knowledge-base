@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 31,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nNull = Default \nV = Valid death date \nCOMMENT: \nThis field is derived from the enrollment database's beneficiary source death date code, or from the \npresence of a claim status code = '20' (expired) on the last claim record included in the stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

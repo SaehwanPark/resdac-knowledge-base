@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p61__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 61,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n64 \nPRCTC_LCTN_IND \nLABEL: \nPractice Location Indicator \nDESCRIPTION: Indicator denoting if this is a practice location address type for the provider. \nSHORT NAME: PRCTC_LCTN_IND \nLONG NAME: PRCTC_LCTN_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR Location \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThere can be multiple records per",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

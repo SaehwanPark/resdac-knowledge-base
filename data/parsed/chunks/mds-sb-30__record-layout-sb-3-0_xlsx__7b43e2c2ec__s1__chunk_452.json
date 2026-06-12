@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_452",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "O0250C_RSN_INFLNZ_NOT_RCV_CD O0250C Reason Influenza Not Received Code CHAR 1 The data in this column indicates the reason that the resident did not receive the influenza vaccine. -=Not assessed/no information\n1=Resident not in facility during this years flu season\n2=Recieved outside of this facility\n3=Not elgible - medical contraindication\n4=Offered and declined\n5=Not offered\n6=Inability to obtain vaccine due to declared shortage\n9=None of the above\n^=Blank (skip pattern)\n507 O0300A_PPV_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

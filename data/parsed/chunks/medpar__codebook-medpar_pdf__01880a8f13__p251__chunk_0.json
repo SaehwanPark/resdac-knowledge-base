@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p251__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 251,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n235 \nTOT_COINSRNC_DAY_CNT \nLABEL: \nMEDPAR Beneficiary Total Coinsurance Day Count \nDESCRIPTION: The count of the total number of coinsurance days involved with the beneficiary's stay in a facility. \nSHORT NAME: COIN_DAY \nLONG NAME: TOT_COINSRNC_DAY_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nFor Inpatient services, the beneficiary is liable for a daily coinsurance",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

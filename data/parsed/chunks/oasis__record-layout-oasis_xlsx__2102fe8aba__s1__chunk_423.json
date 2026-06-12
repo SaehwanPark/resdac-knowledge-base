@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_423",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M1032) Risk For Hosp - Taking 5 Or More Meds This field is checked if the patient is at risk for hospitalization due to taking 5 or more medications. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_EXHAUSTION M1033 Risk For Hosp - Exhaustion This field is checked if the patient is at risk for hospitalization due to current exhaustion. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_OTHR M1033 (M1032) Risk For Hospitalization - Other This field",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

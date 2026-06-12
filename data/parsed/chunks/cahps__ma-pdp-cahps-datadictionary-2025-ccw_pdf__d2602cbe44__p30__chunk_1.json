@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p30__chunk_1",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 30,
+  "text": "SOUTHWEST (AR,LA,NM,OK,TX)\n7: MIDWEST (IA,KS,MO,NE)\n8: MOUNTAIN (CO,MT,ND,SD,UT,WY)\n9: PACIFIC (AZ,CA,HI,NV)\n10: NORTHWEST (AK,ID,OR,WA)\nsa_sex: Sex of Beneﬁciary\nSAS Format: $SEXF\n0: UNKNOWN\n1: MALE\n2: FEMALE\nsa_snp_type: Part D Special Needs Plan Type\nSAS Format: $SNP\n1: CHRONIC CONDITION\n2: DUAL ELIGIBLE\n3: INSTITUTIONAL\n9: UNKNOWN\nsa_spanish_ind: Spanish Language Flag (Medicare & You)\nSAS Format: $ID_F\nN: NO\nU: UNKNOWN\nY: YES",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

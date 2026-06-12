@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p6__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 6,
+  "text": "an individual’s records in all CCW data files (e.g., \nMedicare claims and enrollment, T-MSIS claims, and MDS assessment data). \nThis number does not change during a beneficiary’s lifetime, and CCW uses each number only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nSHORT NAME: BENE_ID \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nFILE(S): \nClinical and staging \nCurrent clinical status \nSOURCE: \nCCW \nVALUES: \n— \nCOMMENT: \n—",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

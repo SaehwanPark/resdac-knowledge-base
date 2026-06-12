@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_42",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Demographic information: residential history prior to entry - other residential facility. 0 = No, 1 = Yes, \"-\" = Unknown\n81 AB5D AB5D_PRIOR_PSHCH (AB5D) MH/Psychiatric Setting CHAR 1 Demographic information: residential history prior to entry - MH/psychiatric setting. 0 = No, 1 = Yes, \"-\" = Unknown\n82 AB5E AB5E_PRIOR_MR_DD (AB5E) MR/DD Setting CHAR 1 Demographic information: residential history prior to entry - MR/DD setting. 0 = No, 1 = Yes, \"-\" = Unknown\n83 AB5F AB5F_NONE_ABOVE (AB5F)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

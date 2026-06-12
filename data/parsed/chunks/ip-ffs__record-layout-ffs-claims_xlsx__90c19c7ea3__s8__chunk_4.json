@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s8__chunk_4",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 8,
+  "text": "Inpatient and SNF Claim: expand CLM_DRG_CD from 3 bytes to 4 bytes\n•Update Carrier and DME Line: expand LINE_OTHR_APLD_IND_CD1-LINE_OTHR_APLD_IND_CD7 from 1 byte to 2 bytes\n•Add to Inpatient Claim: LTCH_DSCHRG_PYMT_ADJSTMT_AMT\n•Add to Outpatient, HHA, Hospice Revenue: REV_CNTR_ORDRG_PHYSN_NPI\n•Add to Outpatient, HHA, Hospice Revenue: RC_VLNTRY_SRVC_IND_CD\n•Add to Carrier and DME Line: LINE_VLNTRY_SRVC_IND_CD\n43862 IP, SNF, Hospice, HHA, and HOP Added one new variable to each Base and Revenue",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

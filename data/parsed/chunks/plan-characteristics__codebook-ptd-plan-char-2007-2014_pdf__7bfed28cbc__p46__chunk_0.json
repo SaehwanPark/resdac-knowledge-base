@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p46__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 46,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n33 \nEGHP_CALENDAR_YEAR_FLAG \nLABEL: \nEmployer Group Health Plan (EGHP) Calendar Year Indicator \nDESCRIPTION: This variable indicates whether an employer group health plan (EGHP) is defined using a calendar year \nor non-calendar year. \nSHORT NAME: — \nLONG NAME: EGHP_CALENDAR_YEAR_FLAG \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nY = Yes (calendar year) \nN = No \n9 =",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

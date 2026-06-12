@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p15__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 15,
+  "text": "HCCs).23 The conditions are hierarchical \nmeaning that CMS selects the most severe condition within a category and accumulates scores from all unrelated \nconditions categories. Some combinations of clinical conditions are important and the effect of the combination is not \njust additive (i.e., HCC interaction terms). \nTable 7 and Table 8 show the categories of data elements that CMS uses in determining both the raw and the resolved \nrisk scores. \nTable 7. Variables added together to create the",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

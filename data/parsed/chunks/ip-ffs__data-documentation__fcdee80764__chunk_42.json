@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_42",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| Claim Base Operating DRG Amount | \n\n | 220 | CLM_VBP_PRTCPNT_IND_CD | Claim Value-Based Purchasing (VBP) Participant Indicator Code | \n\n | 221 | CLM_VBP_ADJSTMT_PCT | Claim VBP Adjustment Percent | \n\n | 222 | CLM_HRR_PRTCPNT_IND_CD | Claim Hospital Readmission Reduction (HRR) Participant Indicator Code | \n\n | 223 | CLM_HRR_ADJSTMT_PCT | Claim HRR Adjustment Percent | \n\n | 224 | CLM_MODEL_4_READMSN_IND_CD | Claim Model 4 Readmission Indicator Code | \n\n | 225 | CLM_UNCOMPD_CARE_PMT_AMT | Claim",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

@@ -1,0 +1,995 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: 
+Medicare Part D Medication Therapy 
+Management Enrollment File 
+MAY 2024 │ VERSION 1.3 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+May 2024 
+K. Schneider 
+Added new 2022 variables: DSPSL_MDCTNS_MTHD, 
+NUM_COMMS_SAFE_DSPSL_MDCTNS, and 
+TARG_CRITERIA_MET_REASON. Noted discontinuation of variables: 
+CMR_RECIPIENT_INI and TARG_CRITERIA_MET 
+1.3 
+April 2021 
+S. Pietzsch 
+Added new 2019 variables: LTC_CMR, CMR_RECIPIENT_INI, 
+WRIT_SUMM_DT, and TMR_PERF_DT. Noted discontinuance of 
+variables: CMR_RECEIVED_DT2 and CMR_RECEIVED_NUM 
+1.2 
+August 2018 
+K. Schneider 
+C. Alleman 
+Recoded “other” values consistently over time 
+1.1 
+May 2017 
+K. Schneider 
+C. Alleman 
+Initial release of codebook  
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Part D Medication Therapy 
+Management Enrollment research files. Because the files have many variables, we have included several ways for 
+users to quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used. 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents. 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:  
+ 
+ 
+Variable Details............................................................................................................................................................. 1 
+BENE_ID ................................................................................................................................................................... 1 
+CMR_DELIVERY_METHOD ......................................................................................................................................... 2 
+CMR_OFFERED ......................................................................................................................................................... 3 
+CMR_OFFERED_DT ................................................................................................................................................... 4 
+CMR_PROVIDER ........................................................................................................................................................ 5 
+CMR_RECEIVED ........................................................................................................................................................ 6 
+CMR_RECEIVED_DT1 ................................................................................................................................................ 7 
+CMR_RECEIVED_DT2 ................................................................................................................................................ 8 
+CMR_RECEIVED_DT3 ................................................................................................................................................ 9 
+CMR_RECEIVED_DT4 .............................................................................................................................................. 10 
+CMR_RECEIVED_DT5 .............................................................................................................................................. 11 
+CMR_RECEIVED_NUM ............................................................................................................................................ 12 
+CMR_RECIPIENT...................................................................................................................................................... 13 
+CMR_RECIPIENT_INI ............................................................................................................................................... 14 
+COG_IMPAIRED ...................................................................................................................................................... 15 
+CONTRACT_ID ......................................................................................................................................................... 16 
+DSPSL_MDCTNS_MTHD .......................................................................................................................................... 17 
+DRUG_THER_CHG_NUM ......................................................................................................................................... 18 
+ENROLLMENT_DT ................................................................................................................................................... 19 
+LTC_CMR ................................................................................................................................................................ 20 
+LTC_ENROLLMENT .................................................................................................................................................. 21 
+NUM_COMMS_SAFE_DSPSL_MDCTNS ................................................................................................................... 22 
+OPT_OUT_DT .......................................................................................................................................................... 23 
+OPT_OUT_REASON ................................................................................................................................................. 24 
+PRESCRIBER_INTERV_NUM ..................................................................................................................................... 25 
+RFRNC_YR ............................................................................................................................................................... 26 
+TARG_CRITERIA_MET ............................................................................................................................................. 27 
+TARG_CRITERIA_MET_REASON ............................................................................................................................... 28 
+TARG_CRITERIA_MET_DT ....................................................................................................................................... 29 
+TARG_MED_REV_NUM ........................................................................................................................................... 30 
+TMR_PERF_DT ........................................................................................................................................................ 31 
+WRIT_SUMM_DT .................................................................................................................................................... 32 
+ 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in Medicare Part D Medication Therapy 
+Management Enrollment file. Each entry contains variable details to facilitate understanding and use of the variables. 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. The CCW assigns a unique beneficiary identification 
+number to each individual who receives Medicare and/or Medicaid and uses that number to identify 
+an individual’s records in all CCW data files (e.g., Medicare claims, MAX claims, MDS assessment data). 
+This number does not change during a beneficiary’s lifetime and each number is used only once. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+TYPE: 
+CHAR  
+LENGTH: 
+15 
+SOURCE: 
+CCW 
+VALUES: 
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+2 
+CMR_DELIVERY_METHOD 
+LABEL: 
+Comprehensive Medication Review (CMR) delivery method 
+DESCRIPTION: This variable indicates the delivery method for the comprehensive medication review (CMR). 
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Face-to-face 
+02 = Telephone 
+03 = Telehealth consultation (e.g., video conferencing) 
+99 = Other 
+Null/missing = beneficiary did not receive a CMR 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS).  
+If more than one CMR is received, this applies to the initial CMR. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+3 
+CMR_OFFERED 
+LABEL: 
+Comprehensive Medication Review (CMR) offered  
+DESCRIPTION: This variable indicates whether the beneficiary was offered an annual comprehensive medication 
+review (CMR). 
+TYPE: 
+CHAR 
+LENGTH: 
+1 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Y = Yes 
+N = No 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS).  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+4 
+CMR_OFFERED_DT 
+LABEL: 
+Date Comprehensive Medication Review (CMR) offered 
+DESCRIPTION: This variable is the date of the initial comprehensive medication review (CMR) within the reporting 
+period. 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+5 
+CMR_PROVIDER 
+LABEL: 
+Comprehensive Medication Review (CMR) provider type  
+DESCRIPTION: This variable indicates the type of qualified provider who performed the initial comprehensive 
+medication review (CMR) 
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Physician 
+02 = Registered Nurse 
+03 = Licensed Practical Nurse 
+04 = Nurse Practitioner 
+05 = Physician's Assistant 
+06 = Local Pharmacist 
+07 = LTC Consultant Pharmacist 
+08 = Plan Sponsor Pharmacist 
+09 = Plan Benefit Manager (PBM) Pharmacist 
+10 = MTM Vendor Local Pharmacist 
+11 = MTM Vendor In-house Pharmacist 
+12 = Hospital Pharmacist 
+13 = Pharmacist — other 
+14 = Supervised pharmacy intern (new in 2016) 
+99 = Other 
+Null/missing = beneficiary did not receive a CMR 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+If more than one CMR is received, this applies to the initial CMR. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+6 
+CMR_RECEIVED 
+LABEL: 
+Comprehensive Medication Review (CMR) received  
+DESCRIPTION: This variable indicates whether the beneficiary received the annual comprehensive medication review 
+(CMR) with written summary in the CMS standardized format 
+TYPE: 
+CHAR 
+LENGTH: 
+1 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Y = Yes 
+N = No 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+7 
+CMR_RECEIVED_DT1 
+LABEL: 
+Date First Comprehensive Medication Review (CMR) received 
+DESCRIPTION: This variable indicates the date of the initial Comprehensive Medication Review (CMR) with written 
+summary in CMS standardized format was received 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+This field is only populated if the variable CMR_RECEIVED is "Y" (YES). For 2013–2015, there are fields 
+for five CMR dates, see variables (CMR_RECEIVED_DT1–CMR_RECEIVED_DT5). Note that for 2016–
+2018 there are only two CMR_RECEIVED_DT fields — one for the initial CMR (this field) and one for 
+the last CMR provided (in the CMR_RECEIVED_DT2 field). Beginning in 2019, only the initial CMR date 
+(CMR_RECEIVED_DT1) exists in the file.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+8 
+CMR_RECEIVED_DT2 
+LABEL: 
+Date Second Comprehensive Medication Review (CMR) received  
+DESCRIPTION: This variable indicates the date the second Comprehensive Medication Review (CMR) with written 
+summary in CMS standardized format was received. Note that for 2016–2018 this is the date of the 
+last CMR review during the year, if more than one CMR was provided. 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+This field is only populated if the variable CMR_RECEIVED_NUM is greater than 1. For 2013–2015, 
+there are fields for five CMR dates, see variables (CMR_RECEIVED_DT1–CMR_RECEIVED_DT5). Note 
+that for 2016–2018 there are only two CMR_RECEIVED_DT fields — one for the initial CMR (the field 
+called CMR_RECEIVED_DT1) and one for the final date (this field). Beginning in 2019, only the initial 
+CMR date (CMR_RECEIVED_DT1) exists in the file.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+9 
+CMR_RECEIVED_DT3 
+LABEL: 
+Date Third Comprehensive Medication Review (CMR) received 
+DESCRIPTION: This variable indicates the date the third Comprehensive Medication Review (CMR) with written 
+summary in CMS standardized format was received 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS).  
+For 2013–2015, this field is only populated if the variable CMR_RECEIVED_NUM is greater than 4. 
+There are fields for five CMR dates, see variables (CMR_RECEIVED_DT1–CMR_RECEIVED_DT5). Note 
+that for 2016–2018 there are only two CMR_RECEIVED_DT fields; this field is not available. Beginning 
+in 2019, only the initial CMR date (CMR_RECEIVED_DT1) exists in the file.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+10 
+CMR_RECEIVED_DT4 
+LABEL: 
+Date Fourth Comprehensive Medication Review (CMR) received 
+DESCRIPTION: This variable indicates the date the fourth Comprehensive Medication Review (CMR) with written 
+summary in CMS standardized format was received 
+TYPE: 
+DATE 
+LENGTH:  
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS).  
+For 2013–2015, this field is only populated if the variable CMR_RECEIVED_NUM is greater than 4. 
+There are fields for five CMR dates, see variables (CMR_RECEIVED_DT1–CMR_RECEIVED_DT5). Note 
+that for 2016–2018 there are only two CMR_RECEIVED_DT fields; this field is not available. Beginning 
+in 2019, only the initial CMR date (CMR_RECEIVED_DT1) exists in the file.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+11 
+CMR_RECEIVED_DT5 
+LABEL: 
+Date Fifth Comprehensive Medication Review (CMR) received  
+DESCRIPTION: This variable indicates the date the fifth Comprehensive Medication Review (CMR) with written 
+summary in CMS standardized format was received 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+For 2013–2015, this field is only populated if the variable CMR_RECEIVED_NUM is greater than 4. 
+There are fields for five CMR dates, see variables (CMR_RECEIVED_DT1–CMR_RECEIVED_DT5). Note 
+that for 2016–2018 there are only two CMR_RECEIVED_DT fields; this field is not available. Beginning 
+in 2019, only the initial CMR date (CMR_RECEIVED_DT1) exists in the file.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+12 
+CMR_RECEIVED_NUM 
+LABEL: 
+Number of Comprehensive Medication Reviews (CMRs) received 
+DESCRIPTION: This variable indicates the number of Comprehensive Medication Reviews (CMRs) with written 
+summary in CMS standardized format the beneficiary received 
+TYPE: 
+NUM 
+LENGTH: 
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+0–XX 
+COMMENT: 
+This variable is populated in the 2013–2018 data files. 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+13 
+CMR_RECIPIENT 
+LABEL: 
+Comprehensive Medication Review (CMR) recipient  
+DESCRIPTION: This variable indicates the recipient of the comprehensive medication review (CMR) interaction and 
+not the recipient of the CMR documentation 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Beneficiary 
+02 = Beneficiary's prescriber 
+03 = Caregiver 
+99 = Other authorized individual 
+Null/missing = beneficiary did not receive a CMR 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+14 
+CMR_RECIPIENT_INI 
+LABEL: 
+Indicates the recipient of the initial comprehensive medication review (CMR) offer 
+DESCRIPTION: Indicates the recipient of the initial comprehensive medication review (CMR) offer  
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Beneficiary 
+02 = Beneficiary's prescriber 
+03 = Caregiver 
+99 = Other authorized individual 
+Null/missing = beneficiary did not receive a CMR 
+COMMENT: 
+If the beneficiary received a CMR offer, then the recipient of the CMR offer is required. If the 
+beneficiary received more than 1 CMR offer, report the recipient of the initial CMR offer. 
+This field is available in the 2019–2021 data files. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+15 
+COG_IMPAIRED 
+LABEL: 
+Beneficiary Identified as Cognitively Impaired  
+DESCRIPTION: This variable indicates if the beneficiary was identified as being cognitively impaired at the time of the 
+CMR offer or delivery 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Y = Yes 
+N = No 
+U = Unknown 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+16 
+CONTRACT_ID 
+LABEL: 
+Part D Contract Number 
+DESCRIPTION: This variable is the Medicare Part D contract number for the beneficiary’s Medicare Part D plan. 
+CMS assigns an identifier to each contract that a Part D plan has with CMS. 
+TYPE: 
+CHAR 
+LENGTH: 
+5 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+XXXXX 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+17 
+DSPSL_MDCTNS_MTHD 
+LABEL: 
+Method of delivery for information regarding safe disposal of medications 
+DESCRIPTION: This variable indicates the method of delivery for information regarding safe disposal of medications, if 
+applicable  
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Face-to-face 
+02 = Telephone 
+03 = Telehealth consultation (e.g., video conferencing) 
+99 = Other 
+Null/missing = No communications sent to beneficiary regarding safe disposal of medications 
+ 
+COMMENT: 
+This field is available in the 2022+ data files. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+18 
+DRUG_THER_CHG_NUM 
+LABEL: 
+Number of drug therapy problem resolutions with prescribers  
+DESCRIPTION: This variable indicates the number of drug therapy problem resolutions with prescribers resulting from 
+recommendations made to beneficiary's prescriber(s) as a result of Medication Therapy Management 
+(MTM) services 
+TYPE: 
+NUM 
+LENGTH: 
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+0–xx 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+19 
+ENROLLMENT_DT 
+LABEL: 
+Date of MTM program enrollment  
+DESCRIPTION: This variable is the date of the Medication Therapy Management (MTM) program enrollment 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+20 
+LTC_CMR 
+LABEL: 
+Indicates whether the beneficiary was identified as residing in a long-term care facility when the CMR 
+was offered or delivered  
+DESCRIPTION: Indicates whether the beneficiary was identified as residing in a long-term care facility when the CMR 
+was offered or delivered 
+TYPE: 
+CHAR 
+LENGTH: 
+1 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Y = Yes 
+N = No 
+U = Unknown 
+COMMENT: 
+This field is available beginning in 2019.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+21 
+LTC_ENROLLMENT 
+LABEL: 
+Long-term care (LTC) facility resident  
+DESCRIPTION: This variable indicates if the beneficiary was a long-term care (LTC) facility resident 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Y = Yes 
+N = No 
+U = Unknown 
+COMMENT: 
+This field is available only in 2013.  
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+22 
+NUM_COMMS_SAFE_DSPSL_MDCTNS 
+LABEL: 
+Number of communications sent to beneficiary regarding safe disposal of medications 
+DESCRIPTION: This variable is the number of communications sent to beneficiary regarding safe disposal of 
+medications. 
+TYPE: 
+NUM 
+LENGTH: 
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+0-xx or Null/missing 
+COMMENT: 
+This field is available in the 2022+ data files. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+23 
+OPT_OUT_DT 
+LABEL: 
+Date of MTM program opt-out  
+DESCRIPTION: This variable is the date the beneficiary opted out of the Medication Therapy Management (MTM) 
+program, if applicable. 
+TYPE: 
+DATE 
+LENGTH: 
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+24 
+OPT_OUT_REASON 
+LABEL: 
+Reason participant opted-out of MTM program 
+DESCRIPTION: This variable indicates the reason the participant opted-out of the Medication Therapy Management 
+(MTM) program, if applicable 
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Death 
+02 = Disenrollment from plan 
+03 = Request from beneficiary 
+99 = Other 
+Null/missing = beneficiary did not opt-out 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+This field is required if there is an opt-out date (field called OPT_OUT_DT). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+25 
+PRESCRIBER_INTERV_NUM 
+LABEL: 
+Number of drug therapy problem recommendations to prescribers  
+DESCRIPTION: This variable indicates the number of drug therapy problem recommendations made to beneficiary's 
+prescriber(s) as a result of Medication Therapy Management (MTM) services 
+TYPE: 
+NUM 
+LENGTH:  
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+0–xx 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+26 
+RFRNC_YR 
+LABEL: 
+Year of Part D Medication Therapy Management (MTM) file 
+DESCRIPTION: Year of Part D Medication Therapy Management (MTM) file. The data files are partitioned into 
+calendar year files. 
+TYPE: 
+NUM 
+LENGTH: 
+4 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+2013+ 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+27 
+TARG_CRITERIA_MET 
+LABEL: 
+Beneficiary Met Targeting criteria  
+DESCRIPTION: This variable indicates if the beneficiary met the specified targeting criteria for Medication Therapy 
+Management (MTM) per CMS's Part D requirements. 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Y = Yes 
+N = No 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+This field is available in the 2013–2021 data files. Starting with 2022, the 
+TARG_CRITERIA_MET_REASON field contains expanded information, documenting the reason why 
+beneficiary met the targeting criteria 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+28 
+TARG_CRITERIA_MET_REASON 
+LABEL: 
+Reason why beneficiary met the targeting criteria 
+DESCRIPTION: This variable indicates the reason why the beneficiary met the targeting criteria for Medication 
+Therapy Management (MTM) per CMS's Part D requirements. 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+01 = Multiple chronic diseases/multiple Part D drugs/cost threshold  
+02 = Drug management program at-risk beneficiary 
+03 = Both  
+04 = None 
+ 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+This field is available in the 2022+ data files. Prior to 2022, the TARG_CRITERIA_MET field contains a 
+dichotomous variable indicating whether the beneficiary met the targeting criteria. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+29 
+TARG_CRITERIA_MET_DT 
+LABEL: 
+Date Part D Targeting Criteria Met  
+DESCRIPTION: This variable is the date of the beneficiary met the specified targeting criteria for Medication Therapy 
+Management (MTM) per CMS's Part D requirements 
+TYPE: 
+DATE 
+LENGTH:  
+9 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+30 
+TARG_MED_REV_NUM 
+LABEL: 
+Number of targeted medication reviews conducted  
+DESCRIPTION: This variable indicates the number of targeted medication reviews conducted 
+TYPE: 
+NUM 
+LENGTH: 
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+0–XXX 
+COMMENT: 
+CMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+31 
+TMR_PERF_DT 
+LABEL: 
+Date the first targeted medication review (TMR) was performed  
+DESCRIPTION: This variable indicates the date the first targeted medication review (TMR) was performed 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+This variable is new in 2019. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 
+32 
+WRIT_SUMM_DT 
+LABEL: 
+Date the written summary of the required CMR (CMS standardized format) was provided or sent  
+DESCRIPTION: This variable indicates the date the written summary of the required CMR (CMS standardized format) 
+was provided or sent 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+— 
+COMMENT: 
+This variable is new in 2019. 
+The date must be provided if the beneficiary received a CMR per CMS — Part D requirements with 
+written summary in CMS’ standardized format.

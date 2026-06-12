@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p41__chunk_3",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 41,
+  "text": "enrolled for the month \n1 = Part A only \n2 = Part B only \n3 = Part A and Part B \nA = Part A state buy-in \nB = Part B state buy-in \nC = Part A and Part B state buy-in \nCOMMENT: \nThis variable indicates whether the beneficiary was entitled to Part A, Part B, or both for a given \nmonth. There are 12 monthly variables — where the 01 through 12 at the end of the variable name \ncorrespond with the month (e.g., 01 is January and 12 is December).The variable also indicates \nwhether the beneficiary’s",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

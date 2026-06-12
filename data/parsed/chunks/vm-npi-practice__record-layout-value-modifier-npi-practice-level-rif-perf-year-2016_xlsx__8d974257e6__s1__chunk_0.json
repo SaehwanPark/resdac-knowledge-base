@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-npi-practice__record-layout-value-modifier-npi-practice-level-rif-perf-year-2016_xlsx__8d974257e6__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/8d974257e6bbc17164c21a5c1277482e156fa4a9.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nValue Modifier NPI Practice-Level RIF / Performance Year 2016\nVersion - August 2018\nVariable Name Variable Label (Short Description) Long Description Position Format Length Notes\nPRACTICE_ID Unique identifier of practice Unique identifier of practice 1 Char 11 Unique identifier of practice\nPERF_NPI NPI National Provider Identifier 2 Char 11 National Provider Identifier\nPRVDR_NAME Name of provider Name of provider in practice 3 Char 200",
+  "dataset": "vm-npi-practice",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-npi-practice-level-rif-perf-year-2016.xlsx"
+}

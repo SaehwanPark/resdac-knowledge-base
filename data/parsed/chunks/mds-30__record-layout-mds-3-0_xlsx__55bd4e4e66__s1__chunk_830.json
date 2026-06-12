@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_830",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Approaches (Non-res): Feeding tube CHAR 1 The data in this column indicates whether the resident performed a feeding tube while not a resident of the facility and within the last seven days. 0=No\n1=Yes effective 10/01/2023\n918 FEED_TUBE_7_DAY_CD FEED_TUBE_7_DAY_CD K0520B3 Nutritional Approaches (7 days): Feeding tube CHAR 1 The data in this column indicates whether a feeding tube was performed while a resident of the facility and within the last seven days. 0=No\n1=Yes effective 10/01/2023\n919",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

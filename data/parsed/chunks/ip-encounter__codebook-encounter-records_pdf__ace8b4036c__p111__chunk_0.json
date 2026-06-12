@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p111__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 111,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n101 \nREV_CNTR \nLABEL: \nRevenue Center Code \nDESCRIPTION: The provider-assigned revenue code for each cost center for which a separate charge is billed (type of \naccommodation or ancillary). \nA cost center is a division or unit within a hospital (e.g. radiology, emergency room, pathology). \nEXCEPTION: Revenue center code 0001 represents the total of all revenue centers included on the",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

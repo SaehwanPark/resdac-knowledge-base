@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p79__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 79,
+  "text": "ICD_DGNS_CD20 \nICD_DGNS_CD21 \nICD_DGNS_CD22 \nICD_DGNS_CD23 \nICD_DGNS_CD24 \nICD_DGNS_CD25 \nLABEL: \nClaim Diagnosis Code 1–25 \nDESCRIPTION: The diagnosis code identifying the beneficiary's diagnosis. There are up to 25 diagnosis codes for IP, \nSNF, HH and OP claims, and up to 13 diagnosis codes on the carrier and DME claims. The lower the \nnumber, the more important the diagnosis in the patient treatment/billing (i.e., ICD_DGNS_CD1 is \nconsidered the primary diagnosis). \nSHORT NAME:",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p226__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 226,
+  "text": "of the \ntwo. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n1 = Coinsurance \n2 = Copayment \n4 = Lesser of Coinsurance and Copayment \nCOMMENT: \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors to \nCMS’s Health Plan Management System (HPMS). \n^ Back to TOC ^",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

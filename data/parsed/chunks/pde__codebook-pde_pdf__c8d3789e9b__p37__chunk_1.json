@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p37__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 37,
+  "text": "format in which plans \nreceive data from pharmacies. \nSHORT NAME: NSTFMTCD \nLONG NAME: NSTD_FRMT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \nX = X12 837 \nA = Medicaid subrogation claim \nB = Beneficiary submitted claim \nC = Coordination of Benefits \nP = Paper claim from provider \nBlank = NCPDP electronic format \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

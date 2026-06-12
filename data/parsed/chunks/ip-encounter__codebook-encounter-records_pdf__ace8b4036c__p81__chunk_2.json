@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p81__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 81,
+  "text": "LONG NAME: \nICD_DGNS_E_CD1 \nICD_DGNS_E_CD2 \nICD_DGNS_E_CD3 \nICD_DGNS_E_CD4 \nICD_DGNS_E_CD5 \nICD_DGNS_E_CD6 \nICD_DGNS_E_CD7 \nICD_DGNS_E_CD8 \nICD_DGNS_E_CD9 \nICD_DGNS_E_CD10 \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nVALUES: \n—",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

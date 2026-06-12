@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "State and county FIPS code - September CHAR 5\nSTATE_CNTY_FIPS_CD_10 STATE_CNTY_FIPS_CD_10 State and county FIPS code - October CHAR 5\nSTATE_CNTY_FIPS_CD_11 STATE_CNTY_FIPS_CD_11 State and county FIPS code - November CHAR 5\nSTATE_CNTY_FIPS_CD_12 STATE_CNTY_FIPS_CD_12 State and county FIPS code - December CHAR 5\nAGE AGE_AT_END_REF_YR Age of beneficiary at end of year NUM 3\nBENE_DOB BENE_BIRTH_DT Beneficiary date of birth DATE 8\nV_DOD_SW VALID_DEATH_DT_SW Valid Date of Death Switch CHAR 1\nDEATH_DT",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cec-beneficiary__record-layout-cec_xlsx__0a9d5eb9d2__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/0a9d5eb9d2a837bfce8a309faaa844e1ab5cb215.xlsx",
+  "page": 1,
+  "text": "Beneficiary Sex: F = Female, M = Male CHAR 1\nMO1_ALIGN Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned NUM 1\nMO2_ALIGN Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned NUM 1\nMO3_ALIGN Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned NUM 1\nMO4_ALIGN Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned NUM 1\nMO5_ALIGN Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not aligned NUM 1\nMO6_ALIGN Beneficiary Monthly Alignment",
+  "dataset": "cec-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cec.xlsx"
+}

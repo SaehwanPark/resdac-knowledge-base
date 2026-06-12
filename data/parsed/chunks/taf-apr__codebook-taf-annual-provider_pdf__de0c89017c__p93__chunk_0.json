@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p93__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 93,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n93 \nCOMMENT: \nThe values in this field are also classified into four groups in the PRVDR_ENRLMT_STUS_CTGRY_CD \nvariable. The PRVDR_MDCD_CHIP_ENRLMT_CD data element identifies whether the provider is \nenrolled in Medicaid, CHIP, both or not state plan affiliated. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

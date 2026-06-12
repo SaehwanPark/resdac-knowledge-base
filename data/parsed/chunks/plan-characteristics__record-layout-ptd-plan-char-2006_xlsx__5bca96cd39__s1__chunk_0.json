@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "2006 Part D Plan Characteristics File Data Dictionary\nVariable Sequence Variable Name Variable Label Data Type Data Length Description Possible Values Value Description Notes\n1 contract_id Contract ID Char 5 The unique number CMS assigns to each contract that a Part D plan has with CMS.\n2 plan_id Plan ID Char 3 The unique number CMS assigns to identify a specific Part D plan benefit package within a contract.\n3 formulary_id Formulary ID Char 8 Medicare Part D formulary identifier. This field is",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

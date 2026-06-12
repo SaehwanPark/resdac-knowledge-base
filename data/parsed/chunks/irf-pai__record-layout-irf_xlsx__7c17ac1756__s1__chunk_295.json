@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_295",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "second word. CHAR 1 The data in this column identifies the patient's ability to recall the second word. 0 = No - could not recall\n1 = Yes, after cueing (\"a color\")\n2 = Yes, no cue required\n285 C0400C_RCLL_3RD_WORD_CD C0400C_RCLL_3RD_WORD_CD C0400C BIMS: Recall - Able to Recall Bed - The data in this column identifies the patient's ability to recall the third word. CHAR 1 The data in this column identifies the patient's ability to recall the third word. 0 = No - could not recall\n1 = Yes, after",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 1,
+  "text": "Code CHAR 2 4\nCMS_RGN CMS Region for Submitting State CHAR 2 5\nPRVDR_ENT_TYPE_CD Provider Entity Type Code - individual, group or facility CHAR 2 6\nPRVDR_TAX_NAME Provider Tax (IRS) Name CHAR 150 7\nPRVDR_ORG_NAME Provider Organization Name CHAR 90 8\nPRVDR_DBA_NAME Provider Doing Business as (DBA) Name CHAR 150 9\nPRVDR_NPI_1 Provider NPI - 1st Occurrence CHAR 12 10\nPRVDR_NPI_2 Provider NPI - 2nd Occurrence CHAR 12 11\nPRVDR_NPI_CNT Provider NPI Count NUM 2 12\nSUBMTG_STATE_PRVDR_IND_01 Submitting",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

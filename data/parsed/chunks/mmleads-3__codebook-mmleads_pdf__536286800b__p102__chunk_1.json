@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p102__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 102,
+  "text": "Part D). \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS Medicare Advantage Prescription Drug System (MARx) data (derived) \nVALUES: \n$ \nCOMMENT: \nCMS and Medicare Advantage (MA) plans use the MARx System to exchange data files and reports \nbetween the Plans and CMS. The capitation payments provided to MA and Medicare Advantage \nPrescription Drug (MAPD) sponsors are calculated and paid monthly. \nCCW calculates this variable as the sum of all the monthly Part A and Part B capitated premium \npayments. The",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

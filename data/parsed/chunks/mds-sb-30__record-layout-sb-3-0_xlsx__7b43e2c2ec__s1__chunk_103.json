@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_103",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "way). -=Not assessed/no information\n0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern) discontinued 09/30/2023\n136 D0300_MOOD_SCRE_NUM D0300_MOOD_SCRE_NUM D0300 Resident Mood Interview - Total Severity Mood Score Code CHAR 2 The data in this column contains the total severity score of mood symptoms. discontinued 09/30/2023\n137 D0350_NGTV_STATE_NTFY_STF_CD D0350_NGTV_STATE_NTFY_STF_CD D0350 Resident Mood",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

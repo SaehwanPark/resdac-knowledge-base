@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_221",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "skin layers (Stage 2), 03 = Deep craters in the skin (Stage 3), 04 = Breaks in skin exposing muscle or bone (Stage 4), 05 = Not stageable (necrotic eschar predominant; no prior staging available)\n181 _52BA PRSR_ULCR_ADMSN_CNT (52Ba) Number of Current Pressure Ulcers: Admission CHAR 2 The number of pressure ulcers, including ulcers that cannot be accurately staged at the time of admission.\n182 _52BD PRSR_ULCR_DSCHRG_CNT (52Bd) Number of Current Pressure Ulcers: Discharge CHAR 2 The number of",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

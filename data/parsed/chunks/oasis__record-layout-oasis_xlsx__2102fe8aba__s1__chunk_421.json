@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_421",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "patient is at risk for hospitalization due to multiple hospitalizations (2 or more) in the\npast 12 months. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_PLTPL_ER_VSTS M1033 Risk For Hosp - 2 or More ED Visits In 6 Mo This field is checked if the patient is at risk for hospitalization due to multiple ER visits (2 or more) in the past 6 months. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_RCNT_DCLN M1033 (M1032) Risk For Hosp - Decline In",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p272__chunk_5",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 272,
+  "text": "indicates beneficiary is Hispanic, value will be \nset to 20 regardless of what is reported in the RACE source data element. Otherwise, if there is at least \none valid race code, value will be set to reflect the reported race code(s). If both source variables are \nmissing or unknown, then this field will be set to NULL. \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

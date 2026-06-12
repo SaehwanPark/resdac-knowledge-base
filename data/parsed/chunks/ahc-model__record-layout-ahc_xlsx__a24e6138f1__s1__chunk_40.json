@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_40",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Supplemental HRSN Substance Use Opted Out CHAR 1\nNN_SPLMT_SBSTN_USE_CNTCT_FAIL_SW Navigated Supplemental HRSN Substance Use Attempts to Reach Failed CHAR 1\nNN_SPLMT_SBSTN_USE_CSP_UNAVBL_SW Navigated Splmt HRSN Substance Use Community Service Provider Unable to Help CHAR 1\nNN_SPLMT_SBSTN_USE_OUTCM_UNK_SW Navigated Supplemental HRSN Substance Use Outcome Unknown CHAR 1\n1In 2025, this field was renamed to sex to comply with Executive Order 14168.",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

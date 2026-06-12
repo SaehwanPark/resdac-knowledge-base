@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p51__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 51,
+  "text": "field (PRSCRBR_ID). \nInvestigators interested in linking the prescriber identifiers to cross-reference databases may find it \nhelpful to know the type of variable that appears in this data field. The CCW methodology consists of \nexamining the format and structure of the PRSCRBR_ID to determine whether the value appears to \nconform to the various types of ID. \nThe formats of these variables are: \n• \nNPI format — 10 numeric characters starting with “1” or “2” \n• \nDEA format — 9 alpha-numeric",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

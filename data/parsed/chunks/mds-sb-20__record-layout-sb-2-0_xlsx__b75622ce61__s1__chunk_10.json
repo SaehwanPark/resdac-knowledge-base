@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "matching criteria was positive for a match, and is zero if it is a new resident.\n19 SBASTIID SB_ASMT_INT_ID Encrypted D170SB Assessment Internal ID CHAR 15 The number assigned to identify a swing bed assessment.\n20 SBSUBREQ SB_SUB_REQ SB Submission Requirement CHAR 1 Submission authority for SB-MDS Record\n21 SBSBSQNO SB_SUBMSN_SQNC_NUM SB Submission Sequence Number CHAR 10 SB Submission Sequence Number\n22 SFTWR_ID SFTWR_ID Software ID CHAR 9 This field contains the identification number of the",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

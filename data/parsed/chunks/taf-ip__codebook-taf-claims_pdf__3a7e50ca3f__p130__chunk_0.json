@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p130__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 130,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n119 \nHLTH_HOME_PRVDR_IND \nLABEL: \nHealth Home Provider Indicator \nDESCRIPTION: This code indicates whether the claim is submitted by a provider or provider group enrolled in the \nHealth Home care model. Health home providers provide service for patients with chronic illnesses. \nSHORT NAME: HLTH_HOME_PRVDR_IND \nLONG NAME: HLTH_HOME_PRVDR_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

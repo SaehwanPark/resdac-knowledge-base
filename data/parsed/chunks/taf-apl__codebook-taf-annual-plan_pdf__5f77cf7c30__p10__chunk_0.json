@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p10__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 10,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n2 \nCCW_LD_DT \nLABEL: \nCCW Load Date \nDESCRIPTION: The Date Source file was Loaded to the CCW. \nSHORT NAME: CCW_LD_DT \nLONG NAME: CCW_LD_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nAPL base \nSOURCE: \nCCW (derived) \nVALUES: \nDate (numeric, system dependent) e.g., 31DEC2015 \nCOMMENT: \nStates may resubmit T-MSIS data to CMS. This date indicates when the TAF file was obtained by CCW. \nAs a result, CCW",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

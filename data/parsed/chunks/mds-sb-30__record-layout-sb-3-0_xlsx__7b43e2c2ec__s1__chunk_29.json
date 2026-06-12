@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "of therapy assessment\n2=End of therapy assessment\n3=Both Start and End of therapy assessment\n4 = Change of therapy assessment discontinued 9/30/2019\n47 A0310D_SB_CLNCL_CHG_CD A0310D_SB_CLNCL_CHG_CD A0310D Swing Bed Clinical Change Code CHAR 1 The data in this column indicates if the assessment is a swing bed clinical change assessment. 0=No\n1=Yes\n^=Blank (Skip Pattern) discontinued 9/30/2019\n48 A0310E_FIRST_SINCE_ADMSN_CD A0310E_FIRST_SINCE_ADMSN_CD A0310E First Assessment Since Most Recent",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

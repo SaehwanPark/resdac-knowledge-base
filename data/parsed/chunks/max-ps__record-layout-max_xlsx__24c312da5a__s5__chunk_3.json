@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_3",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "State specific eligibility - most recent CHAR 6 X\n15 EL_SS_ELGBLTY_CD_MO State specific eligibility - month of svc CHAR 6 X\n16 EL_MAX_ELGBLTY_CD_LTST MAX eligibility - most recent CHAR 2 X\n17 EL_MAX_ELGBLTY_CD_MO MAX eligibility - month of svc CHAR 2 X\n18 EL_MDCR_ANN_XOVR_OLD Medicare crossover code (Annual) old values NUM 1 X\n19 MSNG_ELG_DATA Missing eligibility data CHAR 1 X\n20 EL_MDCR_XOVR_CLM_BSD_CD Medicare crossover code (from claims only) NUM 1 X\n21 EL_MDCR_ANN_XOVR_99 Medicare crossover",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

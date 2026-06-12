@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p3__chunk_5",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 3,
+  "text": "1. LTCH_DSCHRG_PYMT_ADJSTMT_AMT to IP Base Claim; \n2. ORDRG_PHYSN_NPI to hospice, HH and OP revenue lines; \n3. RC_VLNTRY_SRVC_IND_CD to hospice, HH and OP revenue lines; \n4. LINE_VLNTRY_SRVC_IND_CD to carrier and DME lines. \nAlso changed CLM_DRG_CD from three to four characters, and \nLINE_OTHR_APLD_IND_CD1-LINE_OTHR_APLD_IND_CD7 from one to \ntwo characters \n1.7 \nApril 2020 \nS. Pietzsch \nAdded two fields to Part A layouts: \nCLM_MODEL_REIMBRSMT_AMT \nRC_MODEL_REIMBRSMT_AMT \n1.6",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

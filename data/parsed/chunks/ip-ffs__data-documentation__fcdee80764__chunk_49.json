@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_49",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Validation Type Code | \n\n | 248 | RR_BRD_EXCLSN_IND_SW | Railroad Board Exclusion Indicator Switch | \n\n | 250 | CLM_MODEL_REIMBRSMT_AMT | Claim Model Reimbursement Amount | \n\n | 251 | LTCH_DSCHRG_PYMT_ADJSTMT_AMT | LTCH Discharge Payment Adjustment Amount | \n\n | 251 | CLM_ADJUST_GRP_CD | Claim Adjustment Group Code | \n\n | 252 | CLM_ADJUST_RSN_CD | Claim Adjustment Reason Code |",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

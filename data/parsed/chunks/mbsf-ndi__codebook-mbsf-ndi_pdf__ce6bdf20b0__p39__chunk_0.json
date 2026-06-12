@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p39__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 39,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n34 \nICD_TITLE \nLABEL: \nICD-10 Cause of Death Title \nDESCRIPTION: This field is the narrative description of the ICD-10 cause of death code value (for variable ICD_CODE). \nSHORT NAME: ICD_TITLE \nLONG NAME: ICD_TITLE \nTYPE: \nCHAR \nLENGTH: \n120 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \n Researchers wishing to obtain this NDI segment of the MBSF must obtain an additional",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

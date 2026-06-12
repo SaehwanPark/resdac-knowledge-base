@@ -65,10 +65,11 @@ Phase 2 metadata extraction is implemented in `src/cms_kb/extraction.py`. The `c
 - `data/graph/ontology_edges.csv`: ontology seed relationships such as `belongs_to` and `related_to`.
 - `_workspace/04_extraction_pack.md`: extraction handoff summary with unresolved normalization notes and failures.
 
-Phase 3 document parsing is implemented in `src/cms_kb/parsing.py`. The `cms-kb-parse` CLI consumes dataset and document metadata, parses HTML/PDF text, chunks extracted text, and writes:
+Phase 3 document parsing is implemented in `src/cms_kb/parsing.py`. The `cms-kb-parse` CLI consumes dataset and document metadata, parses HTML/PDF/XLSX text, chunks extracted text, and writes:
 
 - `data/parsed/html/...`: parsed HTML text.
 - `data/parsed/pdf/...`: parsed PDF text.
+- `data/parsed/xlsx/...`: parsed spreadsheet text.
 - `data/parsed/chunks/...`: per-chunk JSON metadata.
 - `data/parsed/chunks.jsonl`: unified chunk stream with source document, page, dataset, and URL provenance.
 - `_workspace/05_parsing_pack.md`: parsing handoff summary with failures.
@@ -100,7 +101,7 @@ The checked-in corpus currently contains the raw ResDAC archive snapshot and pro
 - `data/raw/assets/pdf/`: 36 archived PDF assets.
 - `data/raw/assets/xlsx/`: 50 archived XLSX assets.
 
-Generated metadata, graph, parsed chunk, and retrieval artifacts are pipeline outputs. They are not part of the current checked-in data snapshot unless listed in `STATUS.md`.
+Generated metadata, graph, parsed text, chunk, and variable artifacts are retained pipeline outputs from the checked-in ResDAC archive snapshot. Current retained counts are listed in `STATUS.md`.
 
 Last Reviewed: 2026-06-12
 Status: Verified

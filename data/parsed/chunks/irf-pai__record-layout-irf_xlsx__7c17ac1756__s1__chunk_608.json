@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_608",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "(Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was taking any medications by pharmacological classification, not how it is used, \nfrom the opioid class. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n551 OPIOID_INDCTN_ADMSN_CD OPIOID_INDCTN_ADMSN_CD High-Drug Risk (Indication): Opioid (Adm) CHAR 1 This column documents whether, at the time of admission, the patient was taking medication from the opioid class and whether there was an indication noted for all",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

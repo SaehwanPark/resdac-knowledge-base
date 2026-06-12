@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p84__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 84,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n68 \nDGNS_E_VRSN_CD \nLABEL: \nDiagnosis E Version Code (Earlier Version) \nDESCRIPTION: The code is used to indicate if the diagnosis E code is ICD-9 or ICD-10. \nSHORT NAME: DGNS_E_VRSN_CD \nLONG NAME: DGNS_E_VRSN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nNull/missing = ICD-9 \n9 = ICD-9 \n0 = ICD-10 \nCOMMENT: \nICD-10 codes were used starting October 2015. \nThis field was populated only in 2009",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}
