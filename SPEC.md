@@ -3,6 +3,8 @@
 This file is the operational feature-state record for the repository.
 `Past`, `Present`, and `Future` are mutually exclusive by construction:
 each feature or work item belongs to exactly one section at a time.
+Use `STATUS.md` for the separate current status of code implementation,
+checked-in corpus coverage, and retained generated data artifacts.
 
 - `Past`: completed and verified work.
 - `Present`: active implementation or refinement only. Keep this section small.

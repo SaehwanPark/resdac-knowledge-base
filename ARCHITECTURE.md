@@ -1,22 +1,23 @@
 # ARCHITECTURE
 
 ## Overview
-The repository is a documentation-first knowledge base for CMS and ResDAC materials. The canonical repo state is the archived source material, extracted metadata, parsed chunks, graph seed files, retrieval outputs, and provenance-bearing manifests produced by the local pipeline.
+The repository is a documentation-first knowledge base for CMS and ResDAC materials. It has two main surfaces: code that crawls, archives, extracts, parses, validates, and retrieves documentation; and data made of archived source material, provenance manifests, and generated knowledge-base artifacts.
 
 Last Reviewed: 2026-06-12
 Status: Verified
 
 ## Main Surfaces
 - `README.md`: first-visitor overview, quick start, and documentation map.
+- `STATUS.md`: separate current status for code implementation, checked-in corpus coverage, and retained generated artifacts.
 - `docs/pipeline.md`: phase commands, generated outputs, and QA workflow.
 - `docs/data-model.md`: dataset, document, variable, graph, and provenance records.
 - `docs/source-coverage.md`: current ResDAC source scope and future source families.
 - `SPEC.md`: operational feature-state record with mutually exclusive Past, Present, and Future sections.
 - `ROADMAP.md`: strategic phase history and future direction for archive, extraction, parsing, graph, retrieval, and evaluation work.
 - `docs/harness/cms-kb/team-spec.md`: repo-local orchestration contract for archive, extraction, and QA handoffs.
-- `data/`: canonical durable outputs, especially raw archives, parsed text, metadata, and graph artifacts.
-- `manifests/`: inventory and provenance manifests for downloaded or parsed sources.
-- `src/`: implementation surface for crawl, archive, parse, metadata, graph, retrieval, and evaluation code.
+- `data/`: corpus surface for raw archives plus generated parsed text, metadata, and graph artifacts when retained.
+- `manifests/`: data provenance surface for inventory and archive manifests.
+- `src/`: code implementation surface for crawl, archive, parse, metadata, graph, retrieval, and evaluation CLIs.
 - `tests/`: verification for archive integrity, extraction accuracy, and retrieval behavior.
 
 Last Reviewed: 2026-06-12
@@ -42,7 +43,7 @@ Status: Verified
 Last Reviewed: 2026-06-12
 Status: Verified
 
-## Current State
+## Current Code State
 Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI crawls ResDAC listing pages, follows dataset and documentation links, probes linked assets, and writes:
 
 - `manifests/site_inventory.csv`: machine-readable inventory rows.
@@ -87,6 +88,19 @@ Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variabl
 Phase 7 retrieval MVP is implemented in `src/cms_kb/retrieval.py`. The `cms-kb-search` CLI performs deterministic lexical search over dataset, document, variable, and parsed chunk records, returning stable result fields with `source_url` citations and local source document/page provenance when available.
 
 Agent-facing API layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
+
+## Current Data State
+The checked-in corpus currently contains the raw ResDAC archive snapshot and provenance manifests:
+
+- `manifests/site_inventory.csv`: 339 inventory rows.
+- `manifests/archive_manifest.csv`: 339 archive provenance rows.
+- `data/raw/html/listing_page/`: 5 archived listing pages.
+- `data/raw/html/dataset_page/`: 154 archived dataset pages.
+- `data/raw/html/documentation_page/`: 93 archived documentation pages.
+- `data/raw/assets/pdf/`: 36 archived PDF assets.
+- `data/raw/assets/xlsx/`: 50 archived XLSX assets.
+
+Generated metadata, graph, parsed chunk, and retrieval artifacts are pipeline outputs. They are not part of the current checked-in data snapshot unless listed in `STATUS.md`.
 
 Last Reviewed: 2026-06-12
 Status: Verified

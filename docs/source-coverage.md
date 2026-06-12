@@ -17,6 +17,21 @@ Primary entry points:
 The inventory crawler follows discovered dataset pages, documentation pages, and
 linked assets from those listings.
 
+## Current Archived Corpus
+
+The checked-in raw ResDAC archive snapshot currently contains:
+
+- 339 inventory rows in `manifests/site_inventory.csv`.
+- 339 archive provenance rows in `manifests/archive_manifest.csv`.
+- 5 archived listing pages.
+- 154 archived dataset pages.
+- 93 archived documentation pages.
+- 36 archived PDF assets.
+- 50 archived XLSX assets.
+
+See `STATUS.md` for the separate status of code implementation, checked-in
+corpus coverage, and retained generated artifacts.
+
 ## Preserved Asset Types
 
 The archive pipeline is designed to preserve public documentation assets such
