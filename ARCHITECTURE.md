@@ -87,7 +87,7 @@ Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variabl
 
 Phase 7 retrieval MVP is implemented in `src/cms_kb/retrieval.py`. The `cms-kb-search` CLI performs deterministic lexical search over dataset, document, variable, and parsed chunk records, returning stable result fields with `source_url` citations and local source document/page provenance when available.
 
-Agent-facing API layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
+The minimal agent-facing context API is implemented in `src/cms_kb/agent_api.py`. The `cms-kb-agent-context` CLI wraps retrieval results in citation-preserving Pydantic models and JSON output for downstream agent workflows. Richer agent integrations, including MCP tooling, remain future work. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
 
 ## Current Data State
 The checked-in corpus currently contains the raw ResDAC archive snapshot and provenance manifests:

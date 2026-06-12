@@ -339,9 +339,11 @@ BM25 excels here.
 
 ---
 
-# Phase 8 — Agent API
+# Phase 8 — Agent Integration
 
-Expose a small toolkit.
+Expose a small toolkit. The repository already has a minimal JSON/Pydantic
+agent context CLI; the next integration target is MCP tooling over the same
+citation-preserving retrieval surface.
 
 Examples:
 
@@ -358,6 +360,9 @@ related_datasets()
 
 citations()
 ```
+
+MCP should expose read-only tools around existing retrieval and context
+functions first, before adding higher-level workflow helpers.
 
 Then an agent can do:
 
