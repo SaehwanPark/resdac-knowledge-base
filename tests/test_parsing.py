@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+import zipfile
 from pathlib import Path
 
 import pytest
@@ -19,6 +20,7 @@ from cms_kb.parsing import (
   main,
   parse_html,
   parse_pdf,
+  parse_xlsx,
   run_parsing,
 )
 
@@ -96,6 +98,48 @@ def test_parse_pdf(tmp_path: Path) -> None:
   assert "Page 1" in pages[0][1]
   assert pages[1][0] == 2
   assert "Page 2" in pages[1][1]
+
+
+def _write_minimal_xlsx(path: Path) -> None:
+  shared_strings = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="4" uniqueCount="4">
+  <si><t>Variable</t></si>
+  <si><t>Definition</t></si>
+  <si><t>BENE_ID</t></si>
+  <si><t>Beneficiary identifier</t></si>
+</sst>"""
+  sheet = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetData>
+    <row r="1"><c r="A1" t="s"><v>0</v></c><c r="B1" t="s"><v>1</v></c></row>
+    <row r="2"><c r="A2" t="s"><v>2</v></c><c r="B2" t="s"><v>3</v></c></row>
+  </sheetData>
+</worksheet>"""
+  with zipfile.ZipFile(path, "w") as workbook:
+    workbook.writestr("xl/sharedStrings.xml", shared_strings)
+    workbook.writestr("xl/worksheets/sheet1.xml", sheet)
+    workbook.writestr(
+      "xl/worksheets/sheet10.xml",
+      sheet.replace("<v>2</v>", "<v>0</v>").replace("<v>3</v>", "<v>1</v>"),
+    )
+    workbook.writestr(
+      "xl/worksheets/sheet2.xml",
+      sheet.replace("<v>2</v>", "<v>1</v>").replace("<v>3</v>", "<v>0</v>"),
+    )
+
+
+def test_parse_xlsx(tmp_path: Path) -> None:
+  xlsx_path = tmp_path / "layout.xlsx"
+  _write_minimal_xlsx(xlsx_path)
+
+  sheets = parse_xlsx(xlsx_path)
+
+  assert len(sheets) == 3
+  assert [sheet_num for sheet_num, _ in sheets] == [1, 2, 3]
+  assert "Variable\tDefinition" in sheets[0][1]
+  assert "BENE_ID\tBeneficiary identifier" in sheets[0][1]
+  assert "Definition\tVariable" in sheets[1][1]
+  assert "Variable\tDefinition" in sheets[2][1]
 
 
 def test_run_parsing_success_flow(tmp_path: Path) -> None:
@@ -380,11 +424,11 @@ def test_run_parsing_failures(tmp_path: Path) -> None:
       "doc2",
       "ds-slug",
       "Unsupported",
-      "xlsx",
+      "zip",
       "https://example.com/doc2",
       str(empty_pdf),
       "hash",
-      "xlsx",
+      "application/zip",
       "",
     ])
     # doc3: scanned PDF

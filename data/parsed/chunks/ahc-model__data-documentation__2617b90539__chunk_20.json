@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__data-documentation__2617b90539__chunk_20",
+  "source_document": "data/raw/html/documentation_page/2617b90539062fe66e0d34c18b850febb573183e.html",
+  "page": null,
+  "text": "| Number of navigator attempts to contact beneficiary (successful or not) | \n\n | NE_NVGTR_SUCSFL_CNTCT_NUM | Number of navigator successful contacts with beneficiary | \n\n | NE_NVGTR_AVG_CNTCT_MNTS_NUM | Average duration of successful contacts with beneficiary | \n\n | NN_CORE_1_CNCTED_TO_CSP_SW | At Least 1 Core HRSN Connected to CSP, None Resolved | \n\n | NN_CORE_1_RSLVD_SW | At Least 1 Core HRSN Resolved | \n\n | NN_CORE_ALL_RSLVD_SW | All Core HRSNs Resolved | \n\n | NN_CORE_ALL_CNCTED_TO_CSP_SW |",
+  "dataset": "ahc-model",
+  "url": "https://resdac.org/cms-data/files/ahc-model/data-documentation"
+}

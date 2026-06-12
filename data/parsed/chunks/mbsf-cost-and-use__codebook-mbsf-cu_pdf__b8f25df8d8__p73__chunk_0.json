@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p73__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 73,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n67 \nPTB_DRUG_MDCR_PMT \nLABEL: \nPart B Drug Medicare Payments \nDESCRIPTION: This variable is the total Medicare payments for Part B drugs for a given year. Part B drug claims are a \nsubset of the claims in the Part B carrier and DME data files. \nThe Part B drug claim lines are identified by BETOS codes (CCW variable BETOS_CD with values of “D1G,” \n“O1D,” “O1E,” “O1G,” “I1E,” or",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

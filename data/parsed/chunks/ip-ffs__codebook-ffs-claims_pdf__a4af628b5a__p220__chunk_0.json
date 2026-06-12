@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p220__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 220,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n202 \nLINE_CMS_TYPE_SRVC_CD \nLABEL: \nLine CMS Type Service Code \nDESCRIPTION: Code indicating the type of service, as defined in the CMS Medicare carrier Manual, for this line item \non the non-institutional claim. \nSHORT NAME: TYPSRVCB \nLONG NAME: LINE_CMS_TYPE_SRVC_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = Medical care \n2 = Surgery \n3 = Consultation \n4 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

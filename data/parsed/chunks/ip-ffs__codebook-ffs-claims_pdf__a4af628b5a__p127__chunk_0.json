@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p127__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 127,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n109 \nCLM_PPS_IND_CD \nLABEL: \nClaim PPS Indicator Code \nDESCRIPTION: The code indicating whether or not: \n(1) the claim is from the prospective payment system (PPS), and/or \n(2) the beneficiary is a deemed insured MQGE (Medicare Qualified Government Employee) \nSHORT NAME: PPS_IND \nLONG NAME: CLM_PPS_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nBlank = Not a PPS bill",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

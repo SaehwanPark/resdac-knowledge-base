@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s3__chunk_4",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 3,
+  "text": "Code CHAR 2 18\nORGNPINM ORG_NPI_NUM Organization NPI Number CHAR 10 19\nSRVC_LOC_NPI_NUM SRVC_LOC_NPI_NUM Claim Service Location NPI Number CHAR 22 20\nAT_UPIN AT_PHYSN_UPIN Claim Attending Physician UPIN Number CHAR 6 21\nAT_NPI AT_PHYSN_NPI Claim Attending Physician NPI Number CHAR 10 22\nAT_PHYSN_SPCLTY_CD AT_PHYSN_SPCLTY_CD Claim Attending Physician Specialty Code CHAR 2 23\nOP_NPI OP_PHYSN_NPI Claim Operating Physician NPI Number CHAR 10 24\nOP_PHYSN_SPCLTY_CD OP_PHYSN_SPCLTY_CD Claim Operating",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_548",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Z0150A_MDCR_NTHRPY_HIPPS_TXT Z0150A Medicare Part A Non-therapy HIPPS Code Text CHAR 7 The data in this column contains the submitted Medicare non-therapy Part A HIPPS code (RUG group followed by assessment type indicator). discontinued 9/30/2019\n632 Z0150B_MDCR_NTHRPY_RUGVRSN_TXT Z0150B_MDCR_NTHRPY_RUGVRSN_TXT Z0150B Medicare Non-therapy Part A RUG Version Text CHAR 10 The data in this column contains the submitted Medicare non-therapy Part A RUG version code. discontinued 9/30/2019\n633",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

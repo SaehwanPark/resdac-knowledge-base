@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p265__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 265,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n247 \nNCH_CARR_CLM_ALOWD_AMT \nLABEL: \nNCH Carrier Claim Allowed Charge Amount (sum of all line-level allowed charges) \nDESCRIPTION: The total allowed charges on the claim (the sum of line item allowed charges). \nSHORT NAME: ALOWCHRG \nLONG NAME: NCH_CARR_CLM_ALOWD_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nSum of all the line",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

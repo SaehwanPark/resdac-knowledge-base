@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Part A Months Count NUM 3\nB_MO_CNT BENE_SMI_CVRAGE_TOT_MONS Part B Months Count NUM 3\nBUYIN_MO BENE_STATE_BUYIN_TOT_MONS State Buy-In Coverage Count NUM 3\nHMO_MO BENE_HMO_CVRAGE_TOT_MONS HMO Coverage Count NUM 3\nPTD_MO PTD_PLAN_CVRG_MONS Months of Part D Coverage NUM 3\nRDS_MO RDS_CVRG_MONS Months of Retiree Drug Subsidy Coverage NUM 3\nDUAL_MO DUAL_ELGBL_MONS Months of Dual Eligibility NUM 3\nBUYIN01 MDCR_ENTLMT_BUYIN_IND_01 Medicare Entitlement/Buy-In Indicator - January CHAR 1\nBUYIN02",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

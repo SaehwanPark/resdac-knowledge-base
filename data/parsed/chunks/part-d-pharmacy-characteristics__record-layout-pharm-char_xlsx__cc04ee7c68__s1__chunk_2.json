@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__record-layout-pharm-char_xlsx__cc04ee7c68__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/cc04ee7c6808c16f3ba84c100b6269bc17e26f68.xlsx",
+  "page": 1,
+  "text": "X X\nPRIMARY_TAXONOMY_CODE Pharmacy Primary Taxonomy Code CHAR 10 X X X\nSECONDARY_DISPENSER_TYPE Pharmacy Secondary Dispenser Type Code CHAR 2 X X X\nSECONDARY_TAXONOMY_CODE Pharmacy Secondary Taxonomy Code CHAR 10 X X X\nTERTIARY_DISPENSER_TYPE Pharmacy Tertiary Dispenser Type Code CHAR 2 X X X\nTERTIARY_TAXONOMY_CODE Pharmacy Tertiary Taxonomy Code CHAR 10 X X X\nRELATIONSHIP_ID Pharmacy Relationship Identifier (encrypted) CHAR 3 X X X\nRELATIONSHIP_FROM_DT Pharmacy Relationship From Date DATE 8 X",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pharm-char.xlsx"
+}

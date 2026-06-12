@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p32__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 32,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n22 \nCLM_DAY_CNT \nLABEL: \nDay Count (Length of Stay) \nDESCRIPTION: This is a derived field that calculates the beneficiary's length of stay in an inpatient or SNF setting. \nSHORT NAME: CLM_DAY_CNT \nLONG NAME: CLM_DAY_CNT \nTYPE: \nNUM \nLENGTH: \n4 \nSOURCE: \nCMS Integrated Data Repository (IDR) \nFILE(S): \nIP base \nSNF base \nVALUES: \n— \nCOMMENT: \nThe count of days is the (CLM_THRU_DT –",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

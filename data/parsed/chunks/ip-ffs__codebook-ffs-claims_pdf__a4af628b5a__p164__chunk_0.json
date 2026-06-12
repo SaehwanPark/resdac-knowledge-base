@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p164__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 164,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n146 \nCPO_PRVDR_NUM \nLABEL: \nCare Plan Oversight (CPO) Provider Number \nDESCRIPTION: The National Provider Identifier (NPI) number of the home health agency (HHA) or hospice rendering \nMedicare services during the period the physician is providing care plan oversight (CPO). \nSHORT NAME: CPO_PRVDR_NUM \nLONG NAME: CPO_PRVDR_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n—",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

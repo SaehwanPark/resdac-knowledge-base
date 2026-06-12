@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p250__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 250,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n232 \nLINE_SBMTD_CHRG_AMT \nLABEL: \nLine Submitted Charge Amount \nDESCRIPTION: The amount of submitted charges for the line-item service on the non-institutional claim. \nProviders' submitted charges often differ from the amount they were eventually paid — either from \nMedicare, the beneficiary (through deductible or coinsurance amounts) or third-party payers. \nSHORT NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p13__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 13,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n9 \nGNN \nLABEL: \nGeneric Name \nDESCRIPTION: This is the generic name of the dispensed PDE, according to the First DataBank (FDB) reference files. It \nis the drug ingredient name adopted by United States Adopted Names (USAN). When this variable \nappears in the Formulary file, it is the FDB generic name for a drug product on the formulary. \nSHORT NAME: GNN \nLONG NAME: GNN",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

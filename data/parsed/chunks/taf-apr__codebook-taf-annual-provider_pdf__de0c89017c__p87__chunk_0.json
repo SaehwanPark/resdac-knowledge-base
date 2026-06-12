@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p87__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 87,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n88 \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nA record is specified by the unique combination of enrollment variables (PRVDR_ENRLMT_START_DT, \nPRVDR_ENRLMT_END_DT, PRVDR_ENRLMT_STUS_CD, PRVDR_ENRLMT_MTHD_CD, APLCTN_DT, \nPRVDR_ENRLMT_STUS_CTGRY_CD, PRVDR_MDCD_CHIP_ENRLMT_CD) \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_37",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Reduced Coinsurance Amount NUM 12 28\nREV_MSP1 REV_CNTR_1ST_MSP_PD_AMT Revenue Center 1st Medicare Secondary Payer (MSP) Paid Amount NUM 12 29\nREV_MSP2 REV_CNTR_2ND_MSP_PD_AMT Revenue Center 2nd Medicare Secondary Payer Paid Amount NUM 12 30\nRPRVDPMT REV_CNTR_PRVDR_PMT_AMT Revenue Center (Medicare) Provider Payment Amount NUM 12 31\nRBENEPMT REV_CNTR_BENE_PMT_AMT Revenue Center Payment Amount to Beneficiary NUM 12 32\nPTNTRESP REV_CNTR_PTNT_RSPNSBLTY_PMT Revenue Center Patient Responsibility",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

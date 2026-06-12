@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Splmtl HRSN Mntl Hlth 3: Feel tense, restless, anxious, sleepless, troubled CHAR 1\nSR_SPLMTL_MH_OVRL_SCRNG_IND Screened Supplemental HRSN Mental Health Overall Indicator CHAR 1\nSR_SPLMTL_PHYS_ACTVTY_1_CD Supplemental HRSN Physical Activity 1: Number days moderate exercise CHAR 1\nSR_SPLMTL_PHYS_ACTVTY_2_CD Supplemental HRSN Physical Activity 2: Number mins moderate exercise CHAR 3\nSR_SPLMTL_PHYS_ACTVTY_1_2_QTY Splmtl HRSN Phys Activity Items 1x2 Numb of days/minutes moderate exercise NUM",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

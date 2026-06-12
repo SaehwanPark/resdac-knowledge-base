@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_177",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n208 F0800L_STF_READG_AVLBL_CD F0800L_STF_READG_AVLBL_CD F0800L Staff Assessment: Reading Materials Available Code CHAR 1 The data in this column indicates whether the resident prefers reading books, magazines or newspapers. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n209 F0800M_STF_MUSIC_CD F0800M_STF_MUSIC_CD F0800M Staff Assessment: Music Code CHAR 1 The data in this",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

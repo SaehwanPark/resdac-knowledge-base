@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p52__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 52,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n46 \nIP_ER_VISITS \nLABEL: \nInpatient Emergency Room Visits \nDESCRIPTION: This variable is the count of emergency department (ED) claims in the inpatient setting for the year. The \nrevenue center codes indicating Emergency Room use were (0450, 0451, 0452, 0456, 0459). \nSHORT NAME: — \nLONG NAME: IP_ER_VISITS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

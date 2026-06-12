@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_383",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "assistance\n03 = Partial/moderate assistance\n04 = Supervision or touching assistance\n05 = Setup or clean-up assistance\n06 = Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n338 GG0170E3_TRNSFR_END_CD GG0170E3_TRNSFR_END_CD GG0170E3 Discharge Performance Chair to Bed Code - The data in this column indicates the patient's ability to safely transfer to and from a bed to a chair (or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

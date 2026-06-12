@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Diagnosis E Code 9 Diagnosis Present on Admission Indicator Code Char 1 107\nCLM_E_POA_IND_SW10 Claim Diagnosis E Code 10 Diagnosis Present on Admission Indicator Code Char 1 108\nICD_PRCDR_CD1 Claim Procedure Code 1 Char 7 109\nICD_PRCDR_CD2 Claim Procedure Code 2 Char 7 110\nICD_PRCDR_CD3 Claim Procedure Code 3 Char 7 111\nICD_PRCDR_CD4 Claim Procedure Code 4 Char 7 112\nICD_PRCDR_CD5 Claim Procedure Code 5 Char 7 113\nICD_PRCDR_CD6 Claim Procedure Code 6 Char 7 114\nICD_PRCDR_CD7 Claim Procedure",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

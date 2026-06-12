@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p149__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 149,
+  "text": "LCKIN_PRVDR_TYPE_CD_3 \nLONG NAME: LCKIN_PRVDR_TYPE_CD_1 \n\nLCKIN_PRVDR_TYPE_CD_2 \n\nLCKIN_PRVDR_TYPE_CD_3 \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nFILE(S): \nDisability and need \nVALUES: \n01 = Physician \n02 = Speech Language Pathologist \n03 = Oral Surgery (Dentist only) \n04 = Cardiac Rehabilitation and \nIntensive Cardiac Rehabilitation \n05 = Anesthesiology Assistant \n06 = Chiropractic \n07 = Optometry \n08 = Certified Nurse Midwife \n09 = Certified Registered",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

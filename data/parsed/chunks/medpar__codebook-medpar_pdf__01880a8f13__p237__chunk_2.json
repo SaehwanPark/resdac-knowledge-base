@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p237__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 237,
+  "text": "SRGCL_PRCDR_13_CD \nSRGCL_PRCDR_14_CD \nSRGCL_PRCDR_15_CD \nSRGCL_PRCDR_16_CD \nSRGCL_PRCDR_17_CD \nSRGCL_PRCDR_18_CD \nSRGCL_PRCDR_19_CD \nSRGCL_PRCDR_20_CD \nSRGCL_PRCDR_21_CD \nSRGCL_PRCDR_22_CD \nSRGCL_PRCDR_23_CD \nSRGCL_PRCDR_24_CD \nSRGCL_PRCDR_25_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nICD-10 procedure codes were used starting October 2015. \nThe surgical procedure version code (variables SRGCL_PRCDR_VRSN_CD_1–\nSRGCL_PRCDR_VRSN_CD_25) indicates whether this code is ICD-9 or",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

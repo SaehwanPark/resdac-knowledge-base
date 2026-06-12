@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_51",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "Spending per Beneficiary (MSPB) index hospitalization during 2016 72 Char 200 Populated only for records with MSPB_episode=1\nLEAD_NPI_NAME Name of EP with plurality of cost for MSPB Name of the eligible professional in practice with the most standardized Medicare Part B payments during the beneficiary Medicare Spending per Beneficiary (MSPB) index hospitalization 73 Char 70 Populated only for records with MSPB_episode=1\nLEAD_NPI NPI of EP with plurality of cost for MSPB National Provider",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_219",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "shortness of breath in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n342 J1C J1C_DEHYDRATED (J1C) Dehydrated/Output Exceeds Input CHAR 1 Health conditions: problem conditions - indicators of fluid status - dehydrated - output exceeds input in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n343 J1D J1D_INSUFF_FLUID (J1D) Insufficient Fluid CHAR 1 Health conditions: problem conditions - indicators of fluid status - insufficient fluid in last 3 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n344 J1E",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

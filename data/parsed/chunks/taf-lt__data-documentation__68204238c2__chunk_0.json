@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_0",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "| 1 | BENE_ID | Encrypted CCW Beneficiary Identifier | \n\n | 2 | MSIS_ID | Encrypted State Assigned Beneficiary Unique Identifier | \n\n | 3 | STATE_CD | Submitting State Alpha Abbreviation | \n\n | 4 | SUBMTG_STATE_CD | Submitting State FIPS Code | \n\n | 5 | CLM_ID | CCW Claim Identifier | \n\n | 6 | CLM_NUM_ORIG | Original Claim Identifier | \n\n | 7 | CLM_NUM_ADJ | Adjustment Claim Identifier | \n\n | 8 | CLM_TYPE_CD | Claim Type Code (TAF) | \n\n | 9 | BILL_TYPE_CD | Bill Type Code | \n\n | 10 |",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

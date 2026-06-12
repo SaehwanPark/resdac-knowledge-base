@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_296",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "bowel elimination that was related to an inpatient stay\nor necessitated a change in medical or treatment regimen. 00 = Patient does not have an ostomy for bowel elimination.\n01 = Patient ostomy was not related to an inpatient stay and did not\nnecessitate change in medical or treatment regimen.\n02 = The ostomy was related to an inpatient stay or did necessitate change in medical or treatment regimen. CHAR 2 x x x x x x\nM1700_COG_FUNCTION M1700 (M0560) Cognitive Functioning This field indicates",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

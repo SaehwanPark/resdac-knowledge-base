@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(A10C) Do Not Hospitalize CHAR 1 Identification and background information: advanced directives - do not hospitalize 0 = No, 1 = Yes, \"-\" = Unknown.\n61 A10D A10D_ORGAN_DONATE (A10D) Organ Donation CHAR 1 Identification and background information: advanced directives - organ donation 0 = No, 1 = Yes, \"-\" = Unknown.\n62 A10E A10E_AUTOPSY_REQ (A10E) Autopsy Request CHAR 1 Identification and background information: advanced directives - autopsy request 0 = No, 1 = Yes, \"-\" = Unknown.\n63 A10F",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

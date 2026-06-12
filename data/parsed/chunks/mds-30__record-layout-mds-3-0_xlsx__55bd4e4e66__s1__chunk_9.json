@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "file was received by the system.\n9 MDS_CRCTN_STUS_CD MDS_CRCTN_STUS_CD Correction Status Code CHAR 1 This column contains the correction status code indicating the status of the assessment: current (C), modified (M) or inactivated (X). C=Current Assessment\nI=Inactivation Requested\nM=Modified by a Subsequent Submission\nX=Inactivated by a Subsequent Submission\n10 ORGNL_ASMT_ID ORGNL_ASMT_ID Encrypted Original Assessment ID NUM 15 This column contains the unique ID of the assessment where the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

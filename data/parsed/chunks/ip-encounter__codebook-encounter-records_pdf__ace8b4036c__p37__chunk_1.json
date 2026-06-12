@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p37__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 37,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n0 = Non-payment/zero claims \n1 = Admit thru discharge claim \n2 = Interim – first claim \n3 = Interim – continuing claim \n4 = Interim – last claim \n5 = Late charge(s) only claim \n6 = Reserved for national assignment \n7 = Replacement of prior claim \n8 = Void/cancel prior claim \n9 = Final claim (for HH PPS = process \nas a debit/credit to RAP",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

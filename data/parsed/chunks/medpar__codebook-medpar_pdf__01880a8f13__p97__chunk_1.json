@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p97__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 97,
+  "text": "LONG NAME: DRG_PRICE_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the following amounts: \nMEDPAR Medicare payment amount, MEDPAR beneficiary primary payer payment amount, MEDPAR \nbeneficiary coinsurance liability amount, MEDPAR beneficiary Inpatient deductible liability amount, \nMEDPAR beneficiary blood deductible amount; and then subtracting from the sum the MEDPAR DRG \noutlier approved payment amount. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

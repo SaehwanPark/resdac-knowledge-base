@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_261",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(e.g., speech is nonsensical or unintelligible).\n05 = Patient unresponsive or unable to speak. CHAR 2 x x x x\nM1240_FRML_PAIN_ASMT M1240 Formal Pain Assessment This field indicates if the patient had a formal Pain Assessment using a standardized pain assessment tool. 00 = No standardized assessment conducted\n01 = Yes, and it does not indicate severe pain\n02 = Yes, and it indicates severe pain CHAR 2 x x x x\nM1242_PAIN_FREQ_ACTVTY_MVMT M1242 Frequency of Pain Interfering With Activity This field",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

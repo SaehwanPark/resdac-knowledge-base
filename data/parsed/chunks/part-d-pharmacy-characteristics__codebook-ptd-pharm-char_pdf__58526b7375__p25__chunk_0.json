@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p25__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 25,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n20 \nRELATIONSHIP_THRU_DT \nLABEL: \nPharmacy Relationship Through Date \nDESCRIPTION: The end date of the pharmacy's relationship with a chain or franchise as reported to NCPDP. \nSome pharmacies share a relationship with a common organization. For each of these pharmacies, \nthere is a relationship ID (RELATIONSHIP_ID) and type (RELATIONSHIP_TYPE). \nSHORT NAME: — \nLONG NAME: RELATIONSHIP_THRU_DT",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

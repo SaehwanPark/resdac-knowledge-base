@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Condition Warehouse. This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all claim and assessment data files. CHAR 15 x x x x x x x\nASMT_ID Encrypted Assessment ID This number is assigned when an assessment record is processed in the Chronic Condition Warehouse. This field is encrypted prior to delivery to researchers. It identifies lines that are submitted from the same assessment. CHAR 15 x x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_4",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Physician NPI Number (FFS) | \n\n | 27 | AT_PHYSN_SPCLTY_CD | Claim Attending Physician Specialty Code | \n\n | 28 | OP_PHYSN_UPIN | Claim Operating Physician UPIN Number | \n\n | 29 | OP_PHYSN_NPI | Claim Operating Physician NPI Number (FFS) | \n\n | 30 | OP_PHYSN_SPCLTY_CD | Claim Operating Physician Specialty Code | \n\n | 31 | OT_PHYSN_UPIN | Claim Other Physician UPIN Number | \n\n | 32 | OT_PHYSN_NPI | Claim Other Physician NPI Number (FFS) | \n\n | 33 | OT_PHYSN_SPCLTY_CD | Claim Other Physician",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

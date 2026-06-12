@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p95__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 95,
+  "text": "NUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the DRG outlier approved payment amount (value code = 17 \namount) that is present on any of the claim records included in the stay (i.e., the sum of outlier amounts \nreported on the claims that comprise the stay). \nThis amount is already included in the MEDPAR Medicare payment amount (field called PMT_AMT). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

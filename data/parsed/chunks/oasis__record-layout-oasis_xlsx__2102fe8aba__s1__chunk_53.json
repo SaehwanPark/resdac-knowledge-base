@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_53",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "ICD b. CHAR 7 x x\nM0240_OTH_DGN2_ICD (M0240) Other Diagnosis and ICD Code - c Other diagnosis ICD c. CHAR 7 x x\nM0240_OTH_DGN3_ICD (M0240) Other Diagnosis and ICD Code - d Other diagnosis ICD d. CHAR 7 x x\nM0240_OTH_DGN4_ICD (M0240) Other Diagnosis and ICD Code - e Other diagnosis ICD e. CHAR 7 x x\nM0240_OTH_DGN5_ICD (M0240) Other Diagnosis and ICD Code - f Other diagnosis ICD f. CHAR 7 x x\nM0245_PMT_ICD2 (M0245) Payment Diagnosis: First Secondary ICD The ICD-9 code indicating the first",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

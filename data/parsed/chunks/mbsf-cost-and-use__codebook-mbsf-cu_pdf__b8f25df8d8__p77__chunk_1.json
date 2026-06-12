@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p77__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 77,
+  "text": "this as a \nstandardized “fill.” \nThis field is calculated using the source PDE field for the days supply of the medication \n(DAYS_SUPLY_NUM) The Part D standardized fill count does not indicate the number of different drugs \nthe person is using, only the total months covered by a medication (e.g., if a patient is receiving a full \nyear supply of a medication, whether this occurs in one transaction or 12 monthly transactions, the fill \ncount = 12; if the patient is taking three such medications,",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

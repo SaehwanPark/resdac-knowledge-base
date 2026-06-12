@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p11__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 11,
+  "text": "from \neach claim) in the acute inpatient hospital setting for the year. The algorithm includes only claims that \nended during the year of the data file, and where the payment amount was >= $0. \nSHORT NAME: — \nLONG NAME: ACUTE_PRMRY_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis variable was new in 2010; it will always be null/missing in earlier files. \nAcute inpatient claims are a subset of the claims in the IP data file consisting of data from both acute",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

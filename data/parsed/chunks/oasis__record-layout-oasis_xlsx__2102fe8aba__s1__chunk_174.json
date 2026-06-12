@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_174",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 1 x x\nM0840_ECR_OTHER (M0840) Other than Above Reasons for Emergent Care Emergent Care Reason: other than above. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_RESP (M0840) Respiratory Problems Emergent Care Reason: respiratory problems. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_UK (M0840) Unknown Emergent Care Reason Emergent Care Reason: reason unknown. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_WOUND (M0840) Wound Infection Emergent Care Reason: wound",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

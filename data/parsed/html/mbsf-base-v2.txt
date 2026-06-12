@@ -1,0 +1,17 @@
+The Master Beneficiary Summary File (MBSF) Base A/B/C/D V2 file includes beneficiary enrollment information, (A/B/C/D). Medicare Advantage (Part C) and the Prescription Drug Program (Part D) plan enrollment information is included.
+What does this file include? (variable highlights)
+- State, county annual SSA codes
+- State, county monthly FIPS codes
+- Zip code, State and County
+- Date of birth, date of death
+- Race
+- Reason for entitlement
+- Monthly enrollment for each part of the Medicare program, A/B/C/D
+- Dual eligible status
+- Part C plan and enrollment information
+- Part D plan and enrollment information
+- Part D low income cost sharing
+- Social Security disability status variables
+Special considerations
+- When requesting 2023 data, researchers will receive both the current MBSF Base A/B/C/D and the new V2 files. Researchers requesting quarterly 2024 MBSF base data will receive the current version. The current MBSF Base A/B/C/D file will no longer be produced starting with annual 2024 data. For more detailed information about the MBSF data and enhancements, reference the CCW Medicare Administrative Data User Guide and Codebook.
+- Four additional segments are available for order with this file:

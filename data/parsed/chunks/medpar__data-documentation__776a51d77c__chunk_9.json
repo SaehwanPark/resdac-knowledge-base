@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_9",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "in a hospital/SNF | \n\n | 49 | OUTLIER_DAY_CNT | Days paid as outliers (either day or cost) under PPS beyond DRG threshold | \n\n | 50 | UTLZTN_DAY_CNT | Covered days of care chargeable to Medicare utilization for stay | \n\n | 51 | TOT_COINSRNC_DAY_CNT | MEDPAR Beneficiary Total Coinsurance Day Count | \n\n | 52 | BENE_LRD_USE_CNT | Lifetime reserve days (LRD) used by beneficiary for stay | \n\n | 53 | BENE_PTA_COINSRNC_AMT | Beneficiary’s liability for part A coinsurance for stay ($) | \n\n | 54 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p270__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 270,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n252 \nNCH_DRG_OUTLIER_APRVD_PMT_AMT \nLABEL: \nNCH DRG Outlier Approved Payment Amount \nDESCRIPTION: On an institutional claim, the additional payment amount approved by the Quality Improvement \nOrganization due to an outlier situation for a beneficiary's stay under the prospective payment system \n(PPS), which has been classified into a specific diagnosis related group (DRG).",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

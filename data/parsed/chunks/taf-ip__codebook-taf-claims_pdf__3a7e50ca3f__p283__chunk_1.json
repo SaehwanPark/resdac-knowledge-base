@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p283__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 283,
+  "text": "and facilities are used to \nidentify substance use-related claims. \nSHORT NAME: SUD_TXNMY_IND \nLONG NAME: SUD_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS Analytic File (TAF) claims (derived) \nFILE(S): \nLT header \nOT header \nVALUES: \n0 = Neither billing provider nor servicing provider(s) on claim are substance use disorders (SUD) \nproviders \n1 = Both SUD billing provider and servicing provider(s) on claim \n2 = Only SUD billing provider on claim \n3 = Only SUD servicing provider(s) on",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

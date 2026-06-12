@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_9",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Care CHAR 10 48 Retired4\nDRCTNG_PRVDR_TXNMY_CD Taxonomy Code of Provider Directing the Patient's Care CHAR 12 49 Retired4\nSPRVSNG_PRVDR_NPI Supervising Provider NPI CHAR 10 50\nSPRVSNG_PRVDR_TXNMY_CD Supervising Provider Taxonomy Code CHAR 12 51 Retired4\nHLTH_HOME_PRVDR_IND Health Home Provider Indicator CHAR 1 52\nHLTH_HOME_PRVDR_NPI Health Home Provider NPI CHAR 10 53\nHLTH_HOME_ENT_NAME Health Home Entity Name CHAR 50 54\nPRVDR_LCTN_CD Provider Location Code CHAR 5 55\nBRDR_STATE_IND Border State",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

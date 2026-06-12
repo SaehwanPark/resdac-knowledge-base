@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-encounter__data-documentation__cc8c9ec100__chunk_17",
+  "source_document": "data/raw/html/documentation_page/cc8c9ec10085c1e35a3492144e3ee40013ca2d48.html",
+  "page": null,
+  "text": "- ZIP Code | \n\n | 103 | BENE_CNTY_CD | Beneficiary County Code from Claim (SSA) | \n\n | 104 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (Encounter) | \n\n | 105 | BENE_MLG_CNTCT_ZIP_CD | Beneficiary ZIP Code of Residence from Claim | \n\n | 107 | BENE_RACE_CD | Beneficiary Race Code (Encounter) | \n\n | 108 | DOB_DT | Date of Birth from Encounter | \n\n | 109 | BENE_MDCR_STUS_CD | Beneficiary Medicare Status Code | \n\n | 110 | TAX_NUM | Provider Tax Number | \n\n | 111 | BENE_STATE | State of",
+  "dataset": "op-encounter",
+  "url": "https://resdac.org/cms-data/files/op-encounter/data-documentation"
+}

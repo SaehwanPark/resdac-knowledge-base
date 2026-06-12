@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_83",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "has internal bleeding - bleeding may be frank (such as bright red blood) or occult. 0 = Unchecked, 1 = Checked, -1 = Unknown\n104 J1O J1O_VOMIT 27f(J1o)Vomiting CHAR 1 Indicates the patient has a vomiting problem condition. 0 = Unchecked, 1 = Checked, -1 = Unknown\n105 K3A K3A_WEIGHT_LOSS 28(K3a)Unplanned Weight Loss CHAR 1 Indicates variations in the patient's weight over time: 5% or more lost in the last 30 days; 10% or more lost in the last 180 days. 0 = No, 1 = Yes, -1 = Unknown\n106 K5A",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

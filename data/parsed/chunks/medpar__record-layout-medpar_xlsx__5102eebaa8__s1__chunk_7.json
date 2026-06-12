@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "PRVDR_FULL_CCN_NUM Provider Full CMS Certification Number (CCN) Char 13 - - - - - - - - - - - - - - - - - X\nSSLSSNF SS_LS_SNF_IND_CD Short Stay/Long Stay/SNF Provider Indicator Code Char 1 X X X X X X X X X X X X X X X X X X\nACTV_XREF_IND ACTV_XREF_IND MEDPAR Active Cross-Reference Claim Indicator Char 1 - - - - - - - - - - - - - - - - - -\nSLCT_RSN_CD SLCT_RSN_CD Specifies whether this record is a case or control record Char 1 - - - - - - - - - - - - - - - - - -\nFACLMCNT STAY_FINL_ACTN_CLM_CNT",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n20 \nCLM_CHRT_RVW_SW \nLABEL: \nClaim Chart Review Switch \nDESCRIPTION: This variable is used to indicate whether the encounter record is a chart review record. Chart reviews \nare a type of encounter data record that allow Medicare Advantage Organizations (MAOs) to add or \nremove diagnoses that they identified through medical record reviews that were not initially reported \non encounter",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

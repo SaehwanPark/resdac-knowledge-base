@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_8",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "| Hematocrit/Hemoglobin Test Results | \n\n | LINE_HCT_HGB_TYPE_CD | Hematocrit/Hemoglobin Test Type Code | \n\n | LINE_NDC_CD | Line National Drug Code (NDC) (FFS) | \n\n | CARR_LINE_CLIA_LAB_NUM | Clinical Laboratory Improvement Amendments (CLIA) monitored laboratory number | \n\n | CARR_LINE_ASNTHSA_UNIT_CNT | Carrier Line Anesthesia Unit Count | \n\n | CARR_LINE_CL_CHRG_AMT | Carrier Line Clinical Lab Charge Amount | \n\n | PHYSN_ZIP_CD | Line Place of Service (POS) Physician Zip Code | \n\n |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

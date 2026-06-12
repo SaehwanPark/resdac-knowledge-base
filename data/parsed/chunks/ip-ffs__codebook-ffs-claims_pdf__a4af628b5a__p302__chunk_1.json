@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p302__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 302,
+  "text": "provided. \nThis data is also redundantly stored as the first occurrence of the diagnosis code (variable called \nICD_DGNS_CD1). \nSHORT NAME: PRNCPAL_DGNS_CD \nLONG NAME: PRNCPAL_DGNS_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nStarting in 2011, with version J of the NCH claim layout, institutional claims can have up to 25 \ndiagnosis codes (previously only 11 were accommodated), and the non-institutional claims can have \nup to 12 diagnosis codes (previously only up to 8).",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

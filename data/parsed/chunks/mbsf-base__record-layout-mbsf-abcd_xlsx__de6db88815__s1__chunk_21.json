@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "C Plan Type Code - December CHAR 3\nPart D #REF!\nPTDCNTRCT01 PTD_CNTRCT_ID_01 Part D Contract Number - January CHAR 5\nPTDCNTRCT02 PTD_CNTRCT_ID_02 Part D Contract Number - February CHAR 5\nPTDCNTRCT03 PTD_CNTRCT_ID_03 Part D Contract Number - March CHAR 5\nPTDCNTRCT04 PTD_CNTRCT_ID_04 Part D Contract Number - April CHAR 5\nPTDCNTRCT05 PTD_CNTRCT_ID_05 Part D Contract Number - May CHAR 5\nPTDCNTRCT06 PTD_CNTRCT_ID_06 Part D Contract Number - June CHAR 5\nPTDCNTRCT07 PTD_CNTRCT_ID_07 Part D Contract",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

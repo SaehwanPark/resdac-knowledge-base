@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__record-layout-pharm-char_xlsx__cc04ee7c68__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/cc04ee7c6808c16f3ba84c100b6269bc17e26f68.xlsx",
+  "page": 1,
+  "text": "Relationship Identifier (encrypted) CHAR 3 X X X\nRELATIONSHIP_FROM_DT Pharmacy Relationship From Date DATE 8 X X X\nRELATIONSHIP_THRU_DT Pharmacy Relationship Through Date DATE 8 X X X\nRELATIONSHIP_TYPE Pharmacy Relationship Type CHAR 2 X X X\nPRNT_ORG_ID Pharmacy Parent Organization Identifier (encrypted) CHAR 6 - X X\nEPRSCRB_SRVC_IND E-Prescribing Services Indicator CHAR 1 - X X\nEPRSCRB_SRVC_CD Code Indicating the E-Prescribing Services Offered CHAR 2 - X X\nDME_SRVC_IND DME Services Indicator",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pharm-char.xlsx"
+}

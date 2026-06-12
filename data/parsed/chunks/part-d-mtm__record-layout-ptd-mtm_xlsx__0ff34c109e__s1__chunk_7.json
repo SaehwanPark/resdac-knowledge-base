@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "resolutions with prescribers NUM 8 X X X X X\nDSPSL_MDCTNS_MTHD Method of delivery for information regarding safe disposal of medications CHAR 2 - - - - X\nNUM_COMMS_SAFE_DSPSL_MDCTNS Number of communications sent to beneficiary regarding safe disposal of medications NUM 8 - - - - X\n1 Shading or '-' indicates that the variable was not present during this time.",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s2__chunk_5",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 2,
+  "text": "to Skilled Nursing Care Observation Stay Weight NUM 8 — — 27\nSES_NO_LISDE_NO_DSBLTY_IND SES Stratification Indicator: Non-Low-Income Subsdy(LIS), Non-Dual, Nondisablity NUM 3 — 22 28\nSES_LIS_DE_IND SES Stratification Indicator: Low-Income Subsidy (LIS) or Dual Eligible (DE) NUM 3 — 23 29\nSES_DSBLTY_IND SES Stratification Indicator: Disability NUM 3 — 24 30\nSES_LIS_DE_DSBLTY_IND SES Stratification Indicator: Low-Income Subsidy or Dual Eligble, and Disabled NUM 3 — 25 31\nSES_OTHR_POP_IND SES",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

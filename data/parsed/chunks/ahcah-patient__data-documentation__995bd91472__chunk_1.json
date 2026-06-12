@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__data-documentation__995bd91472__chunk_1",
+  "source_document": "data/raw/html/documentation_page/995bd914721a5979423878bb7fe55e7b1d831074.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| FAC_DATA_SUBMSN_DT | Facility Data Submission Date | \n| CCN | CMS Certification Number (Facility Provider Number) | \n| PRVDR_STATE | Provider State | \n| FAC_TIER | Tier 1: 25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients | \n| STATE_BENE_MDCD_ID | Encrypted State-Specific Medicaid Beneficiary ID | \n| PGM_ID | Program Identifier (1=FFS Medicare; 2=FFS",
+  "dataset": "ahcah-patient",
+  "url": "https://resdac.org/cms-data/files/ahcah-patient/data-documentation"
+}

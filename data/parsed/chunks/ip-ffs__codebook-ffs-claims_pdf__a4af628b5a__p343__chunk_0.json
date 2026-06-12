@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p343__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 343,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n325 \n37 = Balance does not exceed \ndeductible amount \n38 = Services not provided or \nauthorized by designated \n(network) providers \n39 = Services denied at the time \nauthorization/pre-certification \nwas requested \n40 = Charges do not meet \nqualifications for \nemergency/urgent care \n41 = Discount agreed to in Preferred \nProvider contract \n42 = Charges exceed our fee schedule",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

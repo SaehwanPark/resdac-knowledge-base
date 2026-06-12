@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__data-documentation__5f87a8e2e1__chunk_1",
+  "source_document": "data/raw/html/documentation_page/5f87a8e2e116646c5b2efabbdfcab56530e7beb6.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\nCCW Codebook - Medicare Part D Plan Election Type Beneficiary Summary\nCCW Record Layout - Medicare Part D Plan Election Type Beneficiary Summary\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | CCW Beneficiary ID | \n| REF_YEAR | Part D Plan Enrollment Year | \n| APLCTN_DT | Beneficiary Part D Plan Enrollment Application Date | \n| ENRLMT_EFCTV_DT | Beneficiary Part D Plan Enrollment Effective Date | \n| DISENRLMNT_DT | Beneficiary Part",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://resdac.org/cms-data/files/part-d-plan-election-type-beneficiary-summary/data-documentation"
+}

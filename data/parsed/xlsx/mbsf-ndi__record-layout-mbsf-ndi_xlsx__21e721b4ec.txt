@@ -1,0 +1,60 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Master Beneficiary Summary File — National Death Index (NDI)
+Version — April 2026
+Short SAS name2	Long SAS name3	Label	Type	Length	Year of data file1
+1999–2006	2007–2024
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	x	x
+RFRNC_YR	BENE_ENROLLMT_REF_YR	Reference Year	NUM	4	x	x
+ENRL_SRC	ENRL_SRC	Source of enrollment data	CHAR	3	x	x
+DEATH_CERT_NUM	DEATH_CERT_NUM	NDI Death Certificate Number	CHAR	6	x	x
+NDI_DEATH_DT	NDI_DEATH_DT	NDI Date of Death	DATE	8	x	x
+NDI_STATE_DEATH_CD	NDI_STATE_DEATH_CD	NDI State of Death	CHAR	2	x	x
+ICD_CODE	ICD_CODE	ICD-10 Cause of Death Code	CHAR	4	x	x
+ICD_TITLE	ICD_TITLE	ICD-10 Cause of Death Title	CHAR	120	x	x
+ICD_CODE_358	ICD_CODE_358	358 ICD-10 Cause of Death Recodes	CHAR	5	x	x
+ICD_CODE_113	ICD_CODE_113	113 ICD-10 Cause of Death Recodes	CHAR	3	x	x
+ICD_CODE_130	ICD_CODE_130	130 ICD-10 Cause of Death Recodes	CHAR	3	-	x
+ENTITY_COND_1	ENTITY_COND_1	NDI Entity Axis Cause of Death - 1st Condition	CHAR	7	x	x
+ENTITY_COND_2	ENTITY_COND_2	NDI Entity Axis Cause of Death - 2nd Condition	CHAR	7	x	x
+ENTITY_COND_3	ENTITY_COND_3	NDI Entity Axis Cause of Death - 3rd Condition	CHAR	7	x	x
+ENTITY_COND_4	ENTITY_COND_4	NDI Entity Axis Cause of Death - 4th Condition	CHAR	7	x	x
+ENTITY_COND_5	ENTITY_COND_5	NDI Entity Axis Cause of Death - 5th Condition	CHAR	7	x	x
+ENTITY_COND_6	ENTITY_COND_6	NDI Entity Axis Cause of Death - 6th Condition	CHAR	7	x	x
+ENTITY_COND_7	ENTITY_COND_7	NDI Entity Axis Cause of Death - 7th Condition	CHAR	7	x	x
+ENTITY_COND_8	ENTITY_COND_8	NDI Entity Axis Cause of Death - 8th Condition	CHAR	7	x	x
+ENTITY_COND_9	ENTITY_COND_9	NDI Entity Axis Cause of Death - Condition 9	CHAR	7	-	x
+ENTITY_COND_10	ENTITY_COND_10	NDI Entity Axis Cause of Death - Condition 10	CHAR	7	-	x
+ENTITY_COND_11	ENTITY_COND_11	NDI Entity Axis Cause of Death - Condition 11	CHAR	7	-	x
+ENTITY_COND_12	ENTITY_COND_12	NDI Entity Axis Cause of Death - Condition 12	CHAR	7	-	x
+ENTITY_COND_13	ENTITY_COND_13	NDI Entity Axis Cause of Death - Condition 13	CHAR	7	-	x
+ENTITY_COND_14	ENTITY_COND_14	NDI Entity Axis Cause of Death - Condition 14	CHAR	7	-	x
+ENTITY_COND_15	ENTITY_COND_15	NDI Entity Axis Cause of Death - Condition 15	CHAR	7	-	x
+ENTITY_COND_16	ENTITY_COND_16	NDI Entity Axis Cause of Death - Condition 16	CHAR	7	-	x
+ENTITY_COND_17	ENTITY_COND_17	NDI Entity Axis Cause of Death - Condition 17	CHAR	7	-	x
+ENTITY_COND_18	ENTITY_COND_18	NDI Entity Axis Cause of Death - Condition 18	CHAR	7	-	x
+ENTITY_COND_19	ENTITY_COND_19	NDI Entity Axis Cause of Death - Condition 19	CHAR	7	-	x
+ENTITY_COND_20	ENTITY_COND_20	NDI Entity Axis Cause of Death - Condition 20	CHAR	7	-	x
+RECORD_COND_1	RECORD_COND_1	NDI Record Axis Cause of Death - 1st Condition	CHAR	5	x	x
+RECORD_COND_2	RECORD_COND_2	NDI Record Axis Cause of Death - 2nd Condition	CHAR	5	x	x
+RECORD_COND_3	RECORD_COND_3	NDI Record Axis Cause of Death - 3rd Condition	CHAR	5	x	x
+RECORD_COND_4	RECORD_COND_4	NDI Record Axis Cause of Death - 4th Condition	CHAR	5	x	x
+RECORD_COND_5	RECORD_COND_5	NDI Record Axis Cause of Death - 5th Condition	CHAR	5	x	x
+RECORD_COND_6	RECORD_COND_6	NDI Record Axis Cause of Death - 6th Condition	CHAR	5	x	x
+RECORD_COND_7	RECORD_COND_7	NDI Record Axis Cause of Death - 7th Condition	CHAR	5	x	x
+RECORD_COND_8	RECORD_COND_8	NDI Record Axis Cause of Death - 8th Condition	CHAR	5	x	x
+RECORD_COND_9	RECORD_COND_9	NDI Record Axis Cause of Death - Condition 9	CHAR	5	-	x
+RECORD_COND_10	RECORD_COND_10	NDI Record Axis Cause of Death - Condition 10	CHAR	5	-	x
+RECORD_COND_11	RECORD_COND_11	NDI Record Axis Cause of Death - Condition 11	CHAR	5	-	x
+RECORD_COND_12	RECORD_COND_12	NDI Record Axis Cause of Death - Condition 12	CHAR	5	-	x
+RECORD_COND_13	RECORD_COND_13	NDI Record Axis Cause of Death - Condition 13	CHAR	5	-	x
+RECORD_COND_14	RECORD_COND_14	NDI Record Axis Cause of Death - Condition 14	CHAR	5	-	x
+RECORD_COND_15	RECORD_COND_15	NDI Record Axis Cause of Death - Condition 15	CHAR	5	-	x
+RECORD_COND_16	RECORD_COND_16	NDI Record Axis Cause of Death - Condition 16	CHAR	5	-	x
+RECORD_COND_17	RECORD_COND_17	NDI Record Axis Cause of Death - Condition 17	CHAR	5	-	x
+RECORD_COND_18	RECORD_COND_18	NDI Record Axis Cause of Death - Condition 18	CHAR	5	-	x
+RECORD_COND_19	RECORD_COND_19	NDI Record Axis Cause of Death - Condition 19	CHAR	5	-	x
+RECORD_COND_20	RECORD_COND_20	NDI Record Axis Cause of Death - Condition 20	CHAR	5	-	x
+1 The file contains all fields; however for all columns under "Year of Data File":  X = variable is populated  (shading or '-'
+indicates it is not populated).
+2 If read into SAS version 6.x environment, "SHORT NAMES" will display in output file.
+3 If read into SAS version 8.x environment, "LONG NAMES" will display in output file.

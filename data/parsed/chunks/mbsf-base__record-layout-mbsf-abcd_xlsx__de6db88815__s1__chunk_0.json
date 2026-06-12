@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File - Base (with Medicare Part A/B/C/D)\nVersion - May 2017 (Source: CME)\nShort SAS Name1 Long SAS Name2 Label Type Length\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15\nRFRNC_YR BENE_ENROLLMT_REF_YR Reference Year NUM 4\nENRL_SRC ENRL_SRC Source of enrollment data CHAR 3\nSAMPLE_GROUP SAMPLE_GROUP Medicare 1, 5, or 20% strict sample group indicator CHAR 2\nEFIVEPCT ENHANCED_FIVE_PERCENT_FLAG Enhanced",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

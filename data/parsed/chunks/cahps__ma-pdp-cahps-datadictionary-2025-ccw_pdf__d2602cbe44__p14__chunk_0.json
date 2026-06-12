@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 14,
+  "text": "B. 2025 MCAHPS Format Tables\n14\nghs: RECODE : Rate overall general health\nSAS Format: RTB\n2: VERY GOOD\n3: GOOD\n4: FAIR\n5: POOR\nim_ﬂu1last: RECODE : Had a ﬂu shot since July 1, 2024\nSAS Format: YNA\n1: YES\n2: NO\nim_pneum: RECODE : Ever had Pneumonia shot\nSAS Format: YNA\n1: YES\n2: NO\nlang_speak: RECODE : Language mainly speak at home\nSAS Format: LANGH\n1: ENGLISH\n2: SPANISH\n3: CHINESE\n4: KOREAN\n5: TAGALOG\n6: VIETNAMESE\n7: SOME OTHER LANGUAGE\nliving_numinhh: RECODE : Number of people living in",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

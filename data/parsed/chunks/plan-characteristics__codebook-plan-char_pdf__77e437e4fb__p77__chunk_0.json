@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p77__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 77,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n63 \nEXCLUDED_TIER_PRE_ICL \nLABEL: \nIndicates Whether Excluded Drugs are Covered on this Tier in the Pre ICL-Phase \nDESCRIPTION: For Enhanced Alternative plans that cover excluded drugs as a supplemental benefit, this variable \nIndicates whether the Part D plan provides coverage on this tier during the pre-initial coverage limit \n(ICL) phase. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

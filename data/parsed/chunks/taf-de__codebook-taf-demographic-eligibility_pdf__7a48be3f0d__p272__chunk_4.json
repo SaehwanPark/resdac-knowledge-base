@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p272__chunk_4",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 272,
+  "text": "Native Hawaiian or Other Pacific \nIslander Unknown, Non-Hispanic, \nor Hispanic not reported \n18 = Multi-Islander, Non-Hispanic, or \nHispanic not reported \n19 = Multi-racial, Non-Hispanic, or \nHispanic not reported \n20 = Hispanic, any race \n21 = Other, Non-Hispanic\nNull/missing = source value is missing or unknown \nCOMMENT: \nIf the ethnicity code variable (ETHNCTY_CD) on the TAF indicates beneficiary is Hispanic, value will be \nset to 20 regardless of what is reported in the RACE source data",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

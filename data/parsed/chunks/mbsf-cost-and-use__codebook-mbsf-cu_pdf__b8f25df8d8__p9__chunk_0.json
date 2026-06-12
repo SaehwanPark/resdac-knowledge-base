@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p9__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 9,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n3 \nACUTE_MDCR_PMT \nLABEL: \nAcute Inpatient Medicare Payments \nDESCRIPTION: This variable is the sum of the Medicare claim payment amounts (CLM_PMT_AMT from each claim) in \nthe acute inpatient hospital setting for a given year. The algorithm includes only Institutional claims that \nended during the year of the data file, and where the payment amount was >= $0. To obtain the total",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

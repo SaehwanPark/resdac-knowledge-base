@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p105__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 105,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n95 \nPRNCPAL_DGNS_CD \nLABEL: \nClaim Principal Diagnosis Code \nDESCRIPTION: The diagnosis code identifying the diagnosis, condition, problem or other reason for the \nadmission/encounter/visit shown in the medical record to be chiefly responsible for the services \nprovided. \nThis data is also redundantly stored as the first occurrence of the diagnosis code (variable called \nICD_DGNS_CD1).",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p55__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 55,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n44 \nMDCD_OT_TOTAL_USE \nLABEL: \nMedicaid Use (Claim Count) — Other Services \nDESCRIPTION: This variable is the total count of Medicaid other services (OT) (header) claims for the beneficiary after \nremoving the managed care capitated payments. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Other Services Claims file (derived) \nVALUES: \nXX \nCOMMENT: \nCCW filtered the OT claims header records to distinguish between capitated payments",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

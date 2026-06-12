@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p316__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 316,
+  "text": "calendar year. \nSHORT NAME: TANF_CASH_CD \nLONG NAME: TANF_CASH_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = Individual was not eligible for Medicaid \n1 = Individual did not receive TANF benefits \n2 = Individual did receive TANF benefits (States should only use this value if they can accurately \nseparate eligible receiving TANF benefits from other 1931 eligible) \nNull/missing = source value is missing or unknown",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

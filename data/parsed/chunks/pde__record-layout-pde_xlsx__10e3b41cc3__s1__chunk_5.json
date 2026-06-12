@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "X X X X X LC\nGDCAOOPT GDC_ABV_OOPT_AMT Gross Drug Cost Above Out-of-Pocket Threshold (GDCA) NUM 13 X X X X X X X X LC\nPTPAYAMT PTNT_PAY_AMT Patient Pay Amount NUM 13 X X X X X X X X LC\nOTHTROOP OTHR_TROOP_AMT Other True Out-of-Pocket (TrOOP) Amount NUM 13 X X X X X X X X LC\nLICS_AMT LICS_AMT Low Income Cost Sharing Subsidy Amount (LICS) NUM 13 X X X X X X X X LC\nPLRO_AMT PLRO_AMT Patient Liability Reduction Due to Other Payer Amount (PLRO) NUM 13 X X X X X X X X LC\nCPP_AMT CVRD_D_PLAN_PD_AMT",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

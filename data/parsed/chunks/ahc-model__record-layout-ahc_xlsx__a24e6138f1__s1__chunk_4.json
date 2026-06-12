@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "HRSN Housing 1: Current Living Situation CHAR 1\nSR_CORE_HOUSNG_2_HEAT_SW Core HRSN Housing 2: Heat Inadequate CHAR 1\nSR_CORE_HOUSNG_2_LEAD_SW Core HRSN Housing 2: Lead Paint Pipes CHAR 1\nSR_CORE_HOUSNG_2_MOLD_SW Core HRSN Housing 2: Mold CHAR 1\nSR_CORE_HOUSNG_2_OVEN_SW Core HRSN Housing 2: Oven not Working CHAR 1\nSR_CORE_HOUSNG_2_PESTS_SW Core HRSN Housing 2: Pests CHAR 1\nSR_CORE_HOUSNG_2_SMK_DTCTR_SW Core HRSN Housing 2: Smoke Detector not Working CHAR 1\nSR_CORE_HOUSNG_2_WTR_LEAK_SW Core HRSN",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

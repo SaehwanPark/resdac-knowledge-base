@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p193__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 193,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n177 \nVALUES: \n0 = Diagnosis codes that are exempt from the POA reporting requirements (same meaning as \nnull/missing) \n1 = Unreported/not used — exempt from POA reporting. This code is equivalent to a blank on the UB-\n04. \nY = Diagnosis was present at the time of inpatient admission. CMS will pay the CC/MCC DRG for those \nselected hospital acquired conditions (HACs) that are coded as 'Y' for the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

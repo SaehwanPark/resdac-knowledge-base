@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_225",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "to the ulcer for the largest pressure ulcer at the time of admission. 00 = None, 01 = Light, 02 = Moderate, 03 = Heavy\n186 _52DD EXDT_AMT_DSCHRG_CD (52Dd) Exudate Amount: Discharge CHAR 2 A code indicating the amount of exudate (drainage) present after removing the dressing and applying any topical agent to the ulcer for the largest pressure ulcer at the time of admission. 00 = None, 01 = Light, 02 = Moderate, 03 = Heavy\n187 _52EA TISUE_TYPE_ADMSN_CD (52Ea) Tissue Type: Admission CHAR 2 A code",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

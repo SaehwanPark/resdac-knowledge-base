@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_441",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Caregiver(s) not likely to provide assistance\n04 = Assistance needed, but no caregiver(s) available CHAR 2 x x x x x\nM1309_NSTG_CVRG_SOC_ROC M1309 (M1308) Number Unstageble Pressure Ulcers D/T Coverage Slough @ SOC ROC This field indicates the current number of unstageable unhealed pressure ulcers due to coverage of wound bed by\nslough and/or eschar that were present on admission (most recent SOC / ROC). CHAR 2 x x\nM1511_HRT_FAILR_PHYSN_TRTMT M1511 Heart Fail. Follow-Up: Physician-Ordered",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

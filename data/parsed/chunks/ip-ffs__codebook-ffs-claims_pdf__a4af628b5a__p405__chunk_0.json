@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p405__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 405,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n387 \nRNDRNG_PRVDR_SPCLTY_CD1 \nRNDRNG_PRVDR_SPCLTY_CD2 \nRNDRNG_PRVDR_SPCLTY_CD3 \nLABEL: \nRendering Provider Secondary Specialty Code (1–3) \nDESCRIPTION: CMS secondary specialty code(s) for the rendering (aka performing) provider on the non-institutional \nclaim. \nApplies to the PRF_PHYSN_NPI on the carrier line file. These rendering provider specialty codes are in \naddition to",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

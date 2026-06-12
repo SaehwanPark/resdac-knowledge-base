@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-beneficiary-demographic__chunk_0",
+  "source_document": "data/raw/html/dataset_page/e482880f2eb8288d4e13995dba93d25264eda7c6.html",
+  "page": null,
+  "text": "The Beneficiary Demographic file contains all beneficiary demographic information entered via manual entry and upload to the model data collection registry. Additionally, partial beneficiary data that was created through the semi-annual beneficiary alignment validation process is also included and could be considered a data input method. The file is at the beneficiary level, with one record for each beneficiary. It’s possible for the same beneficiary to appear in the file twice, if two or more",
+  "dataset": "million-hearts-model-beneficiary-demographic",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-beneficiary-demographic?page=1"
+}

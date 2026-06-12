@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 1,
+  "text": "- 3rd Accrediting Organization DATE 8 63\nMC_ENT_ACRDTN_ORG_CD_4 Managed Care Entity - 4th Accrediting Organization CHAR 2 64\nMC_ENT_ACRDTN_ACHVMT_DT_4 Managed Care Entity Accreditation Achievement Dt - 4th Accrediting Organization DATE 8 65\nMC_ENT_ACRDTN_END_DT_4 Managed Care Entity Accreditation End Date - 4th Accrediting Organization DATE 8 66\nMC_ENT_ACRDTN_ORG_CD_5 Managed Care Entity - 5th Accrediting Organization CHAR 2 67\nMC_ENT_ACRDTN_ACHVMT_DT_5 Managed Care Entity Accreditation",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

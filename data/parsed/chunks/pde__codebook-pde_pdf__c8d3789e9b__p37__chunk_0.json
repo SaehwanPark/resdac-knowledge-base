@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p37__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 37,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n32 \nNSTD_FRMT_CD \nLABEL: \nNon-Standard Format Code \nDESCRIPTION: This data element is used by CMS to identify PDE records that are compiled from non-standard \nsources. \nThe National Council for Prescription Drug Program (NCPDP) is the standard format in which plans \nreceive data from pharmacies. \nSHORT NAME: NSTFMTCD \nLONG NAME: NSTD_FRMT_CD \nTYPE: \nCHAR",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

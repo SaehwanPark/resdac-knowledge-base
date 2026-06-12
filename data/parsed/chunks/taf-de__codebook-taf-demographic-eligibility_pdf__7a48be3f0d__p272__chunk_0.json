@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p272__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 272,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n232 \nRACE_ETHNCTY_EXP_CD \nLABEL: \nExpanded Race and Ethnicity Constructed Code — Latest in Year \nDESCRIPTION: A constructed variable that is an expanded code indicating the beneficiary’s race and ethnicity; most \nrecent in the calendar and the two prior years. \nSHORT NAME: RACE_ETHNCTY_EXP_CD \nLONG NAME: RACE_ETHNCTY_EXP_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nFILE(S): \nAnnual",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

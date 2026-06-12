@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "missing. Equals 1 if beneficiary attributed to practice in Step 1, equals 2 if beneficiary attributed to practice in Step 2\nED_ADM Emergency department admission Indicator for whether beneficiary's hospital admission occurred through emergency department 23 Num 8 Populated only for records with Inpatient_stay=1. Equals 1 if beneficiary was admitted via the emergency department\nNUM_PC_SVCS_PRAC Number of primary care services provided by practice Number of all primary care services provided and",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p326__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 326,
+  "text": "code is inconsistent \nwith the patient's sex \n8 = The procedure code is inconsistent \nwith the provider type \n9 = The diagnosis is inconsistent with \nthe patient's age \n10 = The diagnosis is inconsistent with \nthe patient's sex \n11 = The diagnosis is inconsistent with \nthe procedure \n12 = The diagnosis is inconsistent with \nthe provider type \n13 = The date of death precedes the \ndate of service \n14 = The date of birth follows the date \nof service \n15 = Claim/service adjusted because \nthe",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

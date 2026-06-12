@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_873",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "pamphlets, or other written material from their doctor or pharmacy. 0. Never\n1. Rarely\n2. Sometimes\n3. Often\n4. Always\n8. Patient unable to respond CHAR 1 x\nC0100_CNDCT_MENTL_STUS_CD Brief Interview for Mental Status Indicates whether a brief interview for mental status was recommended. 0. No (patient is rarely/never understood) \n1. Yes CHAR 1 x\nC0200_WORD_RPET_FIRST_ATMPT_CD Repetition of three words Indicates patient's ability to repeat back three words given to them after first attempt. 0.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

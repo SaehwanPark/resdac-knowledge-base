@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_465",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "disease (PAD) at the time of admission. CHAR 1 The data in this column indicates whether the patient had a diagnosis of peripheral vascular disease (PVD) or peripheral arterial disease (PAD) at the time of admission. 0 = No\n1 = Yes\n386 I2900_DML_CD I2900_DML_CD I2900 Diabetes Mellitus (DM) Code - The data in this column indicates whether the patient had an active diagnosis of diabetes mellitus (diabetic retinopathy, neuropathy and nephropathy) at the time of admission. CHAR 1 The data in this",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

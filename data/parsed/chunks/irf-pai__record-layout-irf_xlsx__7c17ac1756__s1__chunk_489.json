@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_489",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "physician (or physician-designee) prescribed/recommended actions by midnight of the next calendar day each time potential clinically significant medication issues were identified since the admission. 0 = No\n1 = Yes\n9 = NA - There were no potential clinically significant medication issues identified since admission or patient is not taking any medications.\n406 O0100N_TOT_PRNTRL_NTRTN_SW O0100N_TOT_PRNTRL_NTRTN_SW O0100N Total Parenteral Nutrition Code - The data in this column indicates if the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

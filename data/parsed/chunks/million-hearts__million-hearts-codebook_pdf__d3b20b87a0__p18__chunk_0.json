@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMillion Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 \n13 \nCCNS \nLABEL: \nList of CMS Certification Numbers (Facility Numbers) for the Practice \nDESCRIPTION: List of CMS Certification Numbers (facility numbers) for the practice. \nSHORT NAME: CCNS \nLONG NAME: CCNS \nTYPE: \nCHAR \nLENGTH: \n4000 \nFILE(S): \nPractice \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \nEX — 15161718,15161719 \nNull/missing",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

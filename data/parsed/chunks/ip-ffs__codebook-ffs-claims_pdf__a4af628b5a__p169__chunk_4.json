@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p169__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 169,
+  "text": "and the admission date is within HMO \neffective/termination date; or non-PPS claim and the from date is within HMO effective/termination \ndate and (2) CHOICES plan number matches the HMO plan number. If either condition is not met the \ntext field will reflect “INVALID CHOICES PLAN NUMBER”. When CHOICES plan number not present, \ntext will reflect “INVALID” \nDemo ID = 15 (ESRD Managed Care) — text field will contain the ESRD/MCO plan number. If \nESRD/MCO plan number does not present the field",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s8__chunk_6",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 8,
+  "text": "to all base claims, and LINE_RSDL_PYMT_IND_CD to Carrier and DME lines; 2) CLM_RP_IND_CD to IP base claim, REV_CNTR_RP_IND_CD to SNF, HH, Hospice and OP revenue lines, and LINE_RP_IND_CD to Carrier and DME lines; 3) PRVDR_VLDTN_TYPE_CD to all base claims except for DME, and LINE_PRVDR_VLDTN_TYPE_CD to Carrier and DME line; 4) RR_BRD_EXCLSN_IND_SW to IP,SNF, HH, Hospice and OP base claims, and LINE_RR_BRD_EXCLSN_IND_SW to DME line; 5) CLM_IP_INITL_MS_DRG_CD to IP base file; and 6)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

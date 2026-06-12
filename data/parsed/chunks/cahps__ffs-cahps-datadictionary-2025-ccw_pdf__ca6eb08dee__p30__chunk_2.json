@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p30__chunk_2",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 30,
+  "text": "(AR,LA,NM,OK,TX) \n7: MIDWEST (IA,KS,MO,NE) \n8: MOUNTAIN (CO,MT,ND,SD,UT,WY) \n9: PACIFIC (AZ,CA,HI,NV) \n10: NORTHWEST (AK,ID,OR,WA) \nsa_sex: Sex of Beneficiary \nSAS Format: $SEXF \n0: UNKNOWN \n1: MALE \n2: FEMALE",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

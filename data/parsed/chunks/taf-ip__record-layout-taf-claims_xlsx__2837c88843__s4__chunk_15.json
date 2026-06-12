@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_15",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "Code CHAR 1 27\nDOSAGE_FORM_CD Medication Dosage Form Code CHAR 2 28\nREBT_ELGBL_CD Rebate Eligible Code CHAR 1 29\nDRUG_UTLZTN_CD Drug Utilization Code CHAR 6 30\nRSN_SRVC_CD Reason for Service Code CHAR 6 31\nPROF_SRVC_CD Professional Service Code CHAR 6 32\nRSLT_SRVC_CD Result of Service Code CHAR 6 33\nIMNZTN_TYPE_CD Immunization Type Code CHAR 2 34\nDSPNSNG_FEE_AMT Dispensing Fee Submitted Amount NUM 8 35\nDSPNSNG_FEE_PD_AMT Dispensing Fee Paid Amount NUM 8 49 New3\nINGRDNT_CST_BILLED_AMT Ingredient",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

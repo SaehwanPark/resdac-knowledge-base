@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_24",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "LINE_OTHR_APLD_AMT7 Line Other Applied 7 Amount NUM 12 60\nLINE_RSDL_PYMT_IND_CD LINE_RSDL_PYMT_IND_CD Line Residual Payment Indicator Code CHAR 1 61 New2\nLINE_RP_IND_CD LINE_RP_IND_CD Line Representative Payee (RP) Indicator Code CHAR 1 62 New2\nDMERC_LINE_FRGN_ADR_IND DMERC_LINE_FRGN_ADR_IND Line Foreign Address Indicator CHAR 2 63 New2\nLINE_RR_BRD_EXCLSN_IND_SW LINE_RR_BRD_EXCLSN_IND_SW Line Railroad Board Exclusion Indicator Switch CHAR 1 64 New2\nLINE_VLNTRY_SRVC_IND_CD",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

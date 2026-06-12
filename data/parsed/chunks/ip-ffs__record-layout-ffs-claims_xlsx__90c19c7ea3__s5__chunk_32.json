@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_32",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Claim ID CHAR 15 2\nTHRU_DT CLM_THRU_DT Claim Through Date DATE 8 3\nCLM_LN CLM_LINE_NUM Claim Line Number NUM 13 4\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 5\nREV_CNTR REV_CNTR Revenue Center Code CHAR 4 6\nREV_DT REV_CNTR_DT Revenue Center Date DATE 8 7\nREVANSI1 REV_CNTR_1ST_ANSI_CD Revenue Center 1st ANSI Code CHAR 5 8\nREVANSI2 REV_CNTR_2ND_ANSI_CD Revenue Center 2nd ANSI Code CHAR 5 9\nREVANSI3 REV_CNTR_3RD_ANSI_CD Revenue Center 3rd ANSI Code CHAR 5 10\nREVANSI4 REV_CNTR_4TH_ANSI_CD",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p36__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 36,
+  "text": "and survivor’s insurance (OASI) \n1 = Disability insurance benefits (DIB) \n2 = End-stage renal disease (ESRD) \n3 = Both DIB and ESRD \n4 = Beneficiary insured due to Part B Immunosuppressive Drug (PBID) \nCOMMENT: \nThis variable indicates how the beneficiary currently qualifies for Medicare. The current reason for \nentitlement can differ from the original reason that a beneficiary qualified for Medicare (reference the \nENTLMT_RSN_ORIG variable). CMS obtains this information from the Social",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

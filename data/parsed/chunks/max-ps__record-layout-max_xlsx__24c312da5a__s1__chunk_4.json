@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Race - Asian (from MSIS) CHAR 1 ‾ X X X X X X X X X X\n16 RACE_CODE_5 Race - Hawaiian/Pac. Islands (from MSIS) CHAR 1 ‾ X X X X X X X X X X\n17 ETHNICITY_CODE Ethnicity - Hispanic (from MSIS) CHAR 1 ‾ X X X X X X X X X X\n18 MDCR_RACE_ETHNCY_CD Race/ethnicity (from Medicare EDB) NUM 1 X X X X X X X X X X X\n19 MDCR_LANG_CD Language code (from Medicare EDB) CHAR 1 X X X X X X X X X X X\n20 EL_SEX_RACE_CD Sex/race code NUM 1 X X X X X X X X X X X\n21 EL_DOD Date of death (from MSIS) DATE 8 X X X X X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

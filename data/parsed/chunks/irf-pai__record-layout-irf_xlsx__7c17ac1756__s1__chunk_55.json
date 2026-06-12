@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_55",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "or more accidents in the past 7 days, 02 = Four accidents in the past 7 days, 03 = Three accidents in the past 7 days, 04 = Two accidents in the past 7 days, 05 = One accident in the past 7 days, 06 = No accidents, uses device such as catheter, 07 = No accidents.\n76 _31A BWL_ASTNC_ADMSN_CD (31a) Bowel Level of Assistance: Admission CHAR 2 A score indicating the level of assistance needed for the patient's bowel management at admission. Bowel management - level of assistance includes the safe",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

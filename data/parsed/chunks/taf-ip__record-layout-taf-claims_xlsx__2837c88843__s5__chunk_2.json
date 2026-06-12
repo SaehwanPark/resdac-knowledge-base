@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s5__chunk_2",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 5,
+  "text": "LINE_PRCDR_CCS_CTGRY_CD and SRVC_PRVDR_NPPES_TXNMY_CD to the OT line file.\n44440 All files Added new variable PRSN_CLM_IND to all header claims\nAdjusted SAS label for SUBMTG_STATE_CD to reflect expansion of this field to state entity code",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

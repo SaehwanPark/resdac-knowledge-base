@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s3__chunk_20",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 3,
+  "text": "Term Care Pharmacy Copay for 1 month supply NUM 12 X X\nPRE_ICL_LTCP_COPAY_DAILY Pre-ICL Long Term Care Pharmacy Copay for 1 day supply NUM 12 X X\nPRE_ICL_DAYS_LTCP_1M Pre-ICL Long Term Care Pharmacy - days in 1 month supply NUM 5 X X\nGAP Tier Cost-Sharing (= ICL Phase)\nGAP_TIER_DRUG_TYPE2 Gap Drug Type by Tier CHAR 6* X X\nGAP_COSTSHARE_TYPE Gap Cost Share Type CHAR 1 X X\nGAP_INP_COINS_1M Gap Coinsurance Standard Retail- 1 month supply NUM 12 X X\nGAP_INP_COINS_2M Gap Coinsurance Standard Retail-",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

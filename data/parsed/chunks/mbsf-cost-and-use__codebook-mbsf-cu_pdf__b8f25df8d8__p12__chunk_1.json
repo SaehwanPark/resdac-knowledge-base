@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p12__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 12,
+  "text": "inpatient hospital claims where the beneficiary is only discharged on the most recent claim in the \nset. If a beneficiary is transferred to a different provider, the acute stay is continued even if there is a \ndischarge date on the claim from which the beneficiary was transferred. \nSHORT NAME: — \nLONG NAME: ACUTE_STAYS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nThe CLM_THRU_DT for the last claim associated with the stay must have been in the year",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

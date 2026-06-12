@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_226",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "01 = Light, 02 = Moderate, 03 = Heavy\n187 _52EA TISUE_TYPE_ADMSN_CD (52Ea) Tissue Type: Admission CHAR 2 A code that indicates the type of tissue that occupies the majority of the ulcer bed of the largest pressure ulcer at the time of admission. 00 = Closed/resurfaced: The wound is completely covered with epithelium (new skin), 01 = Epithelial tissue: For superficial ulcers, new pink or shiny tissue (skin) that grows in from the edges or as islands on the ulcer surface. 02 = Granulation tissue:",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

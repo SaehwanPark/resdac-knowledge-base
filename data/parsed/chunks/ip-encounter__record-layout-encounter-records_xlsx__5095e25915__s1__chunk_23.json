@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Provider Address - City Char 30 136\nCLM_BPRVDR_USPS_STATE_CD Billing Provider Address - USPS State Code Char 2 137\nCLM_BPRVDR_ADR_ZIP_CD Billing Provider Address - ZIP Code Char 9 138\nCLM_SUBSCR_CITY_NAME Medicare Subscriber Address - City Char 30 139\nCLM_SUBSCR_USPS_STATE_CD Medicare Subscriber Address - USPS State Code Char 2 140\nCLM_SUBSCR_ADR_ZIP_CD Medicare Subscriber Address - ZIP Code Char 9 141\nBENE_CNTY_CD Beneficiary County Code from Claim (SSA) Char 3 142\nBENE_STATE_CD Beneficiary",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

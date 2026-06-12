@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_19",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| Medicaid Non-covered Days Count | \n\n | 123 | CVRD_DAYS | Medicaid Covered Inpatient Days Count | \n\n | 124 | OUTLIER_DAYS | Outlier Days Count | \n\n | 125 | OUTLIER_TYPE_CD | Outlier Type Code | \n\n | 126 | DRG_OUTLIER_AMT | DRG Outlier Additional Payment Amount | \n\n | 127 | FIXD_PYMT_IND | Fixed Payment Indicator | \n\n | 128 | SRVC_TRKNG_PYMT_AMT | Service Tracking Payment Amount | \n\n | 129 | DRG_RLTV_WT | DRG Relative Weight | \n\n | 130 | PYMT_LVL_IND | Payment Level Indicator - Header or Line |",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

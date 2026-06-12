@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p113__chunk_2",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 113,
+  "text": "3F = Therapy Changed — cost increased acknowledged \n3G = Drug Therapy Unchanged \n3H = Follow-Up/Report \n3J = Patient Referral \n3K = Instructions Understood \n3M = Compliance Aid Provided \n3N = Medication Administered \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThe T-MSIS Drug Utilization Code data element is composite field comprised of three distinct NCPDP \ndata elements: \"Reason for Service Code\" (439-E4); \"Professional Service Code\" (440-E5); and \"Result \nof Service Code\"",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

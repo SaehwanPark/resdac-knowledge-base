@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_269",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "in Activities CHAR 1 Activity pursuit patterns: average time involved in activities. 0 = Most - more than 2/3 of time, 1 = Some - from 1/3 to 2/3 of time, 2 = Little - less than 1/3 of the time, 3 = None, \"-\" = Unknown\n444 N3A N3A_OWN_ROOM (N3A) Prefers Own Room CHAR 1 Activity pursuit patterns: preferred activity settings - own room. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n445 N3B N3B_ACTIVITY_RM (N3B) Prefers Day/Activity Room CHAR 1 Activity pursuit patterns: preferred activity settings",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

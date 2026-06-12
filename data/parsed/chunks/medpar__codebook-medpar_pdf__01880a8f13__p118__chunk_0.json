@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p118__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 118,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n102 \nHOSP_AT_HOME_FROM_DT \nLABEL: \nHospital at Home Care from Date \nDESCRIPTION: This variable represents the beginning date of the beneficiary’s acute hospital at home care stay. \nSHORT NAME: HOSP_AT_HOME_FROM_DT \nLONG NAME: HOSP_AT_HOME_FROM_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH (derived) \nVALUES: \n— \nCOMMENT: \nThis field was new in 2021. \nThis field is derived when the occurrence span code",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_284",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "checked (No)\n1=Checked (Yes)\n308 I5300_PRKNSN_CD I5300_PRKNSN_CD I5300 Active Diagnoses: Parkinsons Code CHAR 1 The data in this column indicates whether the resident had an active diagnosis of Parkinson's Disease in the last seven days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n309 I5350_TOURT_CD I5350_TOURT_CD I5350 Tourettes Code CHAR 1 The data in this column indicates whether the resident had an active diagnosis of Tourette's Syndrome in the last seven days. -=Not",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

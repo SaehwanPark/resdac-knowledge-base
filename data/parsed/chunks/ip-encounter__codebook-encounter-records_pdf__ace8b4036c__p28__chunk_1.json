@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p28__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 28,
+  "text": "LONG NAME: CLM_BPRVDR_USPS_STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \nAK = Alaska \nAL = Alabama \nAR = Arkansas \nAZ = Arizona \nCA = California \nCO = Colorado \nCT = Connecticut \nDC = District of Columbia \nDE = Delaware \nFL = Florida \nGA = Georgia \nHI = Hawaii \nIA = Iowa \nID = Idaho \nIL = Illinois \nIN = Indiana \nKS = Kansas \nKY = Kentucky \nLA = Louisiana \nMA = Massachusetts",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

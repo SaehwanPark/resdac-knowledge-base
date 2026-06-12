@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_273",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n294 I3700_ARTHTS_CD I3700_ARTHTS_CD I3700 Active Diagnoses: Arthritis Code CHAR 1 The data in this column indicates whether the resident had an active diagnosis of arthritis (e.g., degenerative joint disease (DJD), osteoarthritis, and rheumatoid arthritis (RA)) in the last seven days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n295 I3800_OSTPRS_CD I3800_OSTPRS_CD I3800 Active Diagnoses: Osteoporosis Code",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

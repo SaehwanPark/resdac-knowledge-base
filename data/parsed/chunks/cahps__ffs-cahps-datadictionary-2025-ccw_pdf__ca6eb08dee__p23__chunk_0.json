@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p23__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 23,
+  "text": "B. 2025 MCAHPS Format Tables \n23 \nrace_black: RECODE : Race: Black or African American \nSAS Format: YNE \n1: CHECKED \nrace_hisp: RECODE : Hispanic or Latino origin/descent \nSAS Format: HSP \n1: HISPANIC OR LATINO \n2: NOT HISPANIC OR LATINO \nrace_natamer: RECODE : Race: American Indian or Alaska Native \nSAS Format: YNE \n0: NOT CHECKED \n1: CHECKED \nrace_pacific: RECODE : Race: Native Hawaiian or other Pacific Islander \nSAS Format: YNE \n0: NOT CHECKED \n1: CHECKED \nrace_white: RECODE : Race: White",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

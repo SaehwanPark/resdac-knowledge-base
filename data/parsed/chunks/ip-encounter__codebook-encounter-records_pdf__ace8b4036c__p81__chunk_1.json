@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p81__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 81,
+  "text": "or other adverse effect. The lower the \nnumber in the variable name, the more important the diagnosis in the patient treatment/billing (i.e., \nICD_DGNS_E_CD1 is considered more important than ICD_DGNS_E_CD9). \nSHORT NAME: \nICD_DGNS_E_CD1 \nICD_DGNS_E_CD2 \nICD_DGNS_E_CD3 \nICD_DGNS_E_CD4 \nICD_DGNS_E_CD5 \nICD_DGNS_E_CD6 \nICD_DGNS_E_CD7 \nICD_DGNS_E_CD8 \nICD_DGNS_E_CD9 \nICD_DGNS_E_CD10 \nLONG NAME: \nICD_DGNS_E_CD1 \nICD_DGNS_E_CD2 \nICD_DGNS_E_CD3 \nICD_DGNS_E_CD4 \nICD_DGNS_E_CD5 \nICD_DGNS_E_CD6",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

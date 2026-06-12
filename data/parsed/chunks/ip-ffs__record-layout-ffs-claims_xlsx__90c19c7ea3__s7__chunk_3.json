@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_3",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "Provider Payment Amount NUM 12 15\nBENE_PMT NCH_CLM_BENE_PMT_AMT NCH Claim Payment Amount to Beneficiary NUM 12 16\nCLM_BENE_PD_AMT CLM_BENE_PD_AMT Carrier Claim Beneficiary Paid Amount NUM 12 55\nSBMTCHRG NCH_CARR_CLM_SBMTD_CHRG_AMT NCH Carrier Claim Submitted Charge Amount (sum of all line-level submitted charges) NUM 12 17\nALOWCHRG NCH_CARR_CLM_ALOWD_AMT NCH Carrier Claim Allowed Charge Amount (sum of all line-level allowed charges) NUM 12 18\nDEDAPPLY CARR_CLM_CASH_DDCTBL_APLD_AMT Carrier Claim",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

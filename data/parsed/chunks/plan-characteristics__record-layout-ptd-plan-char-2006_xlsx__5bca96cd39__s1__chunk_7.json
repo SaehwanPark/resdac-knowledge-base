@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "Basic Alternative\n4 Enhanced Alternative\n14 egwp_indicator EGWP Indicator Char 1 Indicates whether the Part D plan benefit package is an employer group waiver plan (EGWP). EGWP plan are not open to general enrollment but rather are offered to beneficiaries through an employer group. N No\nY Yes\n9 Not Applicable\n15 eghp_calendar_year_flag EGHP Calendar Year Indicator Char 1 Indicates if an employer group plan is defined as calendar year or non-calendar year. Y Yes\nN No\n9 Not Applicable\n16",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

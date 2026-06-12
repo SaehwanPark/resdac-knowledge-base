@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s9__chunk_6",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 9,
+  "text": "Name ACO Doing Business As (DBA) or Legal Business Name (LBN) CHAR 100\nSTART_DATE START_DATE Start Date Initial agreement start date DATE 8\nFac_Type FAC_TYPE CCN Facility Type Code indicating the type of facility represented by the CCN. For CCNs obtained from the participant list, facility type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:\nF = Federally Qualified Health Center\nR = Rural Health Center\nC =",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

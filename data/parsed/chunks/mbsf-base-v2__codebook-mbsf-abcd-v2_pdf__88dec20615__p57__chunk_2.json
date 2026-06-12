@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p57__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 57,
+  "text": "Common Medicare Environment (CME) \nVALUES: \nY = Employer subsidized for the retired beneficiary \nN = No employer subsidization for the retired beneficiary \n0 = Not Medicare enrolled for the month \nNull/missing = Enrolled in Medicare A and/or B, but no Part D enrollment data for the beneficiary. \nCOMMENT: \nSome employers offer prescription drug plans to their retirees, and Part D pays a subsidy to plans that \noffer coverage that is equivalent to (or better than) conventional Part D benefits.",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

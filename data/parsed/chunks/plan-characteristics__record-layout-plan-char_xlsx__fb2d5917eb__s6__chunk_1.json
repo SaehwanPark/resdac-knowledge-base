@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s6__chunk_1",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 6,
+  "text": "SNP Institutional Type CHAR 1 X X X\nAIP_INDICATOR Applicable Integrated Plan Indicator CHAR 1 - - X\nDSNP_INTEGRATION_LEVEL D-SNP integration level with FIDE/HIDE/CO values CHAR 10 - - X\nDSNP_ZERODOLLAR Medicare Zero-Dollar Cost Sharing D-SNP Plan CHAR 1 - - X\nCONDITION_CATEGORY_01 Chronic Alcohol and Other Drug Dependence CHAR 1 X X X\nCONDITION_CATEGORY_02 Auto-immune Disorders CHAR 1 X X X\nCONDITION_CATEGORY_03 Cancer Excluding Pre-cancer Conditions or In-situ Status CHAR 1 X X",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

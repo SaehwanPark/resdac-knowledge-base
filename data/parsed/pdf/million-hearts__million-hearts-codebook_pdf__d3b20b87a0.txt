@@ -1,0 +1,1767 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® Cardiovascular Disease (CVD)  
+Risk Reduction Model Medicare  
+Data Files Codebook 
+MAY 2025 │ VERSION 1.1 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+May 2025 
+D. Happe 
+Edits made to comply with Executive Order 14168 
+1.1 
+May 2023 
+K. Schneider 
+Initial release of codebook  
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Million Hearts® CVD Risk Reduction Model 
+Medicare Data research files. The guide includes several ways for users to quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and notes discussing the variable construction and use 
+The CCW team has included hyperlinks throughout the codebook to make it easier for users to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes users to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes users back to the Table of Contents  
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:   
+ 
+ 
+Variable Details ...................................................................................................................................................... 1 
+ACCURACY_ATTESTATION ...............................................................................................................................................1 
+ACTIVATION_DATE ..........................................................................................................................................................2 
+ACTIVITY_DATE ................................................................................................................................................................3 
+ACTIVITY_END_DATE .......................................................................................................................................................4 
+ADDRESS_LINE_1 .............................................................................................................................................................5 
+ADDRESS_LINE_2 .............................................................................................................................................................6 
+ALIGNED...........................................................................................................................................................................7 
+BASELINE_DATE ...............................................................................................................................................................8 
+BASELINE_GROUP ............................................................................................................................................................9 
+BASELINE_SCORE .......................................................................................................................................................... 10 
+BENE_ID ........................................................................................................................................................................ 11 
+BILLING_TIN .................................................................................................................................................................. 12 
+CCNS 
+ ......................................................................................................................................................................... 13 
+CITY 
+ ......................................................................................................................................................................... 14 
+CODE  ......................................................................................................................................................................... 15 
+CREATE_DATE ............................................................................................................................................................... 16 
+DEACTIVATION_DATE ................................................................................................................................................... 17 
+ELIGIBLE ........................................................................................................................................................................ 18 
+FILE_COUNT .................................................................................................................................................................. 19 
+FIRST_NAME ................................................................................................................................................................. 20 
+FOLLOWUP_ATTESTATION ........................................................................................................................................... 21 
+GROUP_TYPE ................................................................................................................................................................ 22 
+INSERT_DATE ................................................................................................................................................................ 23 
+IS_ACTIVE ...................................................................................................................................................................... 24 
+IS_BASELINE_COMPLETE .............................................................................................................................................. 25 
+IS_MEDICARE_PARTB ................................................................................................................................................... 26 
+LAST_MODIFIED_DATE ................................................................................................................................................. 27 
+LAST_NAME .................................................................................................................................................................. 28 
+MODIFIER ...................................................................................................................................................................... 29 
+NPI 
+ ......................................................................................................................................................................... 30 
+NPIS 
+ ......................................................................................................................................................................... 31 
+PATIENT_DOB ............................................................................................................................................................... 32 
+PATIENT_ETHNICITY ..................................................................................................................................................... 33 
+PATIENT_SEX ................................................................................................................................................................ 34 
+PATIENT_RACE .............................................................................................................................................................. 35 
+A B C D E 
+F 
+G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+iv 
+PRACTICE_ID ................................................................................................................................................................. 36 
+PRACTICE_NAME .......................................................................................................................................................... 37 
+REASON_CODE ............................................................................................................................................................. 38 
+RISK_SCORE .................................................................................................................................................................. 40 
+STATE  ......................................................................................................................................................................... 41 
+TIN 
+ ......................................................................................................................................................................... 42 
+TINS 
+ ......................................................................................................................................................................... 43 
+UNIQUE_PATIENT_ID ................................................................................................................................................... 44 
+UNITS  ......................................................................................................................................................................... 45 
+UPDATE_DATE .............................................................................................................................................................. 46 
+VALUE  ......................................................................................................................................................................... 47 
+VISIT_DATE ................................................................................................................................................................... 48 
+ZIP_CODE ...................................................................................................................................................................... 49 
+ 
+ 
+ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Million Hearts® CVD Risk Reduction Model 
+Medicare Data files. Each entry contains variable details to facilitate understanding and use of the variables. 
+ACCURACY_ATTESTATION 
+LABEL: 
+Practitioner's Accuracy of Attestation 
+DESCRIPTION: Practitioner's accuracy of attestation. This variable addresses the question, “Has the practitioner 
+attested to accuracy?” 
+SHORT NAME: ACCURACY_ATTESTATION 
+LONG NAME: ACCURACY_ATTESTATION 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes 
+N = No 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+2 
+ACTIVATION_DATE 
+LABEL: 
+Date the Provider Joined the Program 
+DESCRIPTION: Date the provider joined the program. 
+SHORT NAME: ACTIVATION_DATE 
+LONG NAME: ACTIVATION_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 09/18/2016 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+3 
+ACTIVITY_DATE 
+LABEL: 
+Encounter/Procedure/Diagnosis/Lab/Medication Start or Occurrence Date 
+DESCRIPTION: Encounter/Procedure/Diagnosis/Lab/Medication start or occurrence date. 
+SHORT NAME: ACTIVITY_DATE 
+LONG NAME: ACTIVITY_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Clinical (final and raw) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 07/10/2020 
+COMMENT: 
+Formatted as MMDDYY10. in SAS 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+4 
+ACTIVITY_END_DATE 
+LABEL: 
+Encounter/Procedure/Diagnosis End date 
+DESCRIPTION: Encounter/Procedure/Diagnosis end date. 
+SHORT NAME: ACTIVITY_END_DATE 
+LONG NAME: ACTIVITY_END_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Clinical (final and raw) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 07/10/2020 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+5 
+ADDRESS_LINE_1 
+LABEL: 
+Practice's Address (line 1) 
+DESCRIPTION: Practice's address (line 1). 
+SHORT NAME: ADDRESS_LINE_1 
+LONG NAME: ADDRESS_LINE_1 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 12345 MAIN STREET 
+COMMENT: 
+This field is the street address where billing TIN is located. There is also a second address line practices 
+could use if needed (ADDRESS_LINE_2). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+6 
+ADDRESS_LINE_2 
+LABEL: 
+Practice's Address (line 2) 
+DESCRIPTION: Practice's address (line 2). 
+SHORT NAME: ADDRESS_LINE_2 
+LONG NAME: ADDRESS_LINE_2 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — Suite 100, or null/missing 
+COMMENT: 
+This is the second line of an address, used only if needed. Refer to the first portion of the street 
+address in ADDRESS_LINE_1. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+7 
+ALIGNED 
+LABEL: 
+Indication of Patient's Attribution to the Practice (Y or N) 
+DESCRIPTION: Indication of patient's attribution to the practice (Y or N). 
+SHORT NAME: ALIGNED 
+LONG NAME: ALIGNED 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes 
+N = No 
+Null/missing 
+COMMENT: 
+The (beneficiary) Enrollment, Validation, Alignment, and Adjudication (EVAA) analysis was performed 
+by the Million Hearts data contractor. The Million Hearts model employed a complex EVAA analytic 
+process. During this process, each beneficiary record submitted by providers to the Million Hearts 
+registry was validated against claims data, and beneficiary alignments and program eligibilities were 
+determined. The EVAA process occurred semiannually, each October and April. There was a total of 10 
+EVAA analytical cycles, between October 2017 through April 2022 (two per year for the five years of 
+the project). 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+8 
+BASELINE_DATE 
+LABEL: 
+Patient's Baseline Date 
+DESCRIPTION: Patient's baseline date. 
+SHORT NAME: BASELINE_DATE 
+LONG NAME: BASELINE_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 10/12/2018 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+9 
+BASELINE_GROUP 
+LABEL: 
+Patient's Baseline Group (Low, Medium, High) 
+DESCRIPTION: Patient's baseline group (low, medium, high). 
+SHORT NAME: BASELINE_GROUP 
+LONG NAME: BASELINE_GROUP 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+LOW 
+ 
+MEDIUM 
+ 
+HIGH 
+ 
+Null/missing 
+COMMENT: 
+This field is the stratified CVD risk group derived from the BASELINE_SCORE. For the purposes of the 
+Million Hearts® Cardiovascular Disease Risk Reduction Model, CMS defined “high-risk” beneficiaries as 
+individuals with an ACC/AHA 10-year ASCVD risk score of greater than 30%. The ACC/AHA guidelines 
+still hold true that all individuals should have a risk score less than 7.5%. CMS was attempting to 
+intervene on the critically high-risk group (reference https://innovation.cms.gov/files/x/mhcvdrrm-
+faqs.pdf).  
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+10 
+BASELINE_SCORE 
+LABEL: 
+Patient's Baseline ASCVD Score 
+DESCRIPTION: Patient's baseline atherosclerotic cardiovascular disease (ASCVD) score. 
+SHORT NAME: BASELINE_SCORE 
+LONG NAME: BASELINE_SCORE 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 21.7000, or null/missing 
+COMMENT: 
+This field is the ACC Risk score calculated from information during the visit. The higher the score, the 
+greater the ASCVD risk. The data file also includes a categorical variable that groups this score into 
+either high, medium, or low risk (BASELINE_GROUP). After the baseline assessment, subsequent 
+provider assessments of patient risk are in the RISK_SCORE field. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+11 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. 
+The CCW assigns a unique beneficiary identification number to each individual who receives Medicare 
+and/ or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., 
+Medicare claims and enrollment, T-MSIS claims, and MDS assessment data).  
+This number does not change during a beneficiary’s lifetime, and CCW uses each number only once.  
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME: BENE_ID 
+LONG NAME: BENE_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+15 
+FILE(S):   
+Clinical (final and raw) 
+Visit 
+Demographic 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+CCW 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+12 
+BILLING_TIN 
+LABEL: 
+Practice's Billing TIN 
+DESCRIPTION: Practice's billing federal Taxpayer Identification Number (TIN). 
+SHORT NAME: BILLING_TIN 
+LONG NAME: BILLING_TIN 
+TYPE: 
+CHAR 
+LENGTH:  
+9 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+Identifies the practice to whom payment was made for the Million Hearts Model. If attempting to join 
+this field to Medicare carrier claims files in the CCW, the provider Tax ID field is called TAX_NUM. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+13 
+CCNS 
+LABEL: 
+List of CMS Certification Numbers (Facility Numbers) for the Practice 
+DESCRIPTION: List of CMS Certification Numbers (facility numbers) for the practice. 
+SHORT NAME: CCNS 
+LONG NAME: CCNS 
+TYPE: 
+CHAR 
+LENGTH:  
+4000 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+EX — 15161718,15161719 
+Null/missing 
+COMMENT: 
+The first six digits of each CMS Certification Number (CCN) are the facility number; additional digits 
+(i.e., positions 7–13) may be used to distinguish between campuses for multiple campus hospitals. This 
+field could be missing or have one or more CCNs, separated by a comma.  
+Note that if attempting to join to Medicare claims files in the CCW, the 6-digit CCN is called the 
+provider number (PRVDR_NUM). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+14 
+CITY 
+LABEL: 
+Practice's City 
+DESCRIPTION: Practice's city. 
+SHORT NAME: CITY 
+LONG NAME: CITY 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — BRONX 
+COMMENT: 
+This field is the city where billing TIN is located. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+15 
+CODE 
+LABEL: 
+Code Used to Document the Service 
+DESCRIPTION: Code used to document the service. The ACC/AHA risk calculation used clinical information submitted 
+by the practice to ascertain CVD risk. The risk factors are documented for each patient. There is one 
+record in the file for each patient and each risk factor that was assessed on a given date (i.e., the 
+ACTIVITY_DATE). 
+SHORT NAME: CODE 
+LONG NAME: CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+20 
+FILE(S):   
+Clinical (final and raw) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Within the Clinical_Final file the values are: 
+AFB.NO = Whether or not the patient has atrial fibrillation 
+AFB.YES = Whether or not the patient has atrial fibrillation 
+ASP.NO = Whether or not the patient is taking aspirin 
+ASP.YES = Whether or not the patient is taking aspirin 
+DBT.NO = Whether or not the patient has diabetes 
+DBT.YES = Whether or not the patient has diabetes 
+HDL = High-density lipoprotein 
+LDL = Low-density lipoprotein 
+SBP = Systolic blood pressure 
+SCM = Stress cardiomyopathy  
+SMK.NO = Smoking — whether or not the patient is a smoker 
+SMK.YES = Smoking — whether or not the patient is a smoker 
+STT.NO = Statin — whether the patient is on a Statin 
+STT.YES = Statin — whether the patient is on a Statin 
+TCH = Total cholesterol 
+THY.NO = Thyroid 
+THY.YES = Thyroid 
+COMMENT: 
+The values above are the cleaned and standardized values that populate the final clinical file. In the 
+raw clinical file, values are a mixture of non-standardized values which may include diagnosis codes, 
+values from test results, free-form text, and other unknown values. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+16 
+CREATE_DATE 
+LABEL: 
+Date the Record was Created 
+DESCRIPTION: Date when the record was created. 
+SHORT NAME: CREATE_DATE 
+LONG NAME: CREATE_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Demographic 
+Clinical (final and raw) 
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 10/12/2018 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+17 
+DEACTIVATION_DATE 
+LABEL: 
+Date the Provider Left the Program 
+DESCRIPTION: Date the provider left the program. 
+SHORT NAME: DEACTIVATION_DATE 
+LONG NAME: DEACTIVATION_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 10/12/2018 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+18 
+ELIGIBLE 
+LABEL: 
+Indication of Patient's Eligibility 
+DESCRIPTION: Indication of patient's eligibility. 
+SHORT NAME: ELIGIBLE 
+LONG NAME: ELIGIBLE 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes 
+N = No 
+Null/missing 
+COMMENT: 
+If ELIGIBLE variable value is “N” then the reason code for ineligibility is documented in the 
+REASON_CODE. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+19 
+FILE_COUNT 
+LABEL: 
+Number of Files Submitted for the Practice 
+DESCRIPTION: Number of files submitted to the Million Hearts Data Registry (MHDR) for the practice. 
+SHORT NAME: FILE_COUNT 
+LONG NAME: FILE_COUNT 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+0, 3 
+COMMENT: 
+Practices were to submit demographic/clinical data for patients to MHDR. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+20 
+FIRST_NAME 
+LABEL: 
+Provider's First Name 
+DESCRIPTION: Provider's first name. 
+SHORT NAME: FIRST_NAME 
+LONG NAME: FIRST_NAME 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+21 
+FOLLOWUP_ATTESTATION 
+LABEL: 
+Practitioner's Attestation to Follow-up 
+DESCRIPTION: Practitioner's attestation to follow-up. This variable addresses the question, “Has the practitioner 
+attested to follow-up?” 
+SHORT NAME: FOLLOWUP_ATTESTATION 
+LONG NAME: FOLLOWUP_ATTESTATION 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes 
+N = No 
+COMMENT: 
+– 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+22 
+GROUP_TYPE 
+LABEL: 
+Practice Group Type 
+DESCRIPTION: Practice group type. 
+SHORT NAME: GROUP_TYPE 
+LONG NAME: GROUP_TYPE 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+CONTROL 
+ 
+INTERVENTION 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+23 
+INSERT_DATE 
+LABEL: 
+Date the Record was Created 
+DESCRIPTION: The date when the practice or provider record was created. 
+SHORT NAME: INSERT_DATE 
+LONG NAME: INSERT_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Practice 
+ 
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 06/15/2018 
+COMMENT: 
+This field is in two files. Within the practice file, it is populated with the date the practice record was 
+created; within the NPI file, it is the date the provider record was created. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+24 
+IS_ACTIVE 
+LABEL: 
+Active Practice (Y) or Inactive Practice (N) 
+DESCRIPTION: Active practice or inactive practice. 
+SHORT NAME: IS_ACTIVE 
+LONG NAME: IS_ACTIVE 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes (active practice) 
+N = No (inactive practice) 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+25 
+IS_BASELINE_COMPLETE 
+LABEL: 
+Indication of Completion of Beneficiary Record in the Registry (Y or N) 
+DESCRIPTION: Indication of completion of beneficiary record in the registry (Y or N). 
+SHORT NAME: IS_BASELINE_COMPLETE 
+LONG NAME: IS_BASELINE_COMPLETE 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes 
+N = No 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+26 
+IS_MEDICARE_PARTB 
+LABEL: 
+Identify if the Patient is Enrolled in Medicare Part B 
+DESCRIPTION: Identify if the patient is enrolled in Medicare Part B at the time of enrollment in the project. 
+SHORT NAME: IS_MEDICARE_PARTB 
+LONG NAME: IS_MEDICARE_PARTB 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Demographic 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Y = Yes 
+N = No 
+COMMENT: 
+– 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+27 
+LAST_MODIFIED_DATE 
+LABEL: 
+Date the Patient Record was Modified 
+DESCRIPTION: Date the patient record was modified. 
+SHORT NAME: LAST_MODIFIED_DATE 
+LONG NAME: LAST_MODIFIED_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Demographic 
+Visit 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 06/15/2018 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+28 
+LAST_NAME 
+LABEL: 
+Provider's Last Name 
+DESCRIPTION: Provider's last name. 
+SHORT NAME: LAST_NAME 
+LONG NAME: LAST_NAME 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+29 
+MODIFIER 
+LABEL: 
+Any Modifiers for the Base Code 
+DESCRIPTION: Any modifiers for the base code. 
+SHORT NAME: MODIFIER 
+LONG NAME: MODIFIER 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Clinical (final and raw) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+This field is only populated in the Clinical_raw file (not the Clinical_final where it is always missing). In 
+the raw clinical file, values are a mixture of non-standardized values which may include numbers, 
+words, NULL, N/A, free-form text, and other unknown values. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+30 
+NPI 
+LABEL: 
+Provider's National Provider Identifier 
+DESCRIPTION: Provider's National Provider Identifier (NPI). 
+SHORT NAME: NPI 
+LONG NAME: NPI 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Clinical (final and raw) 
+Visit 
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+31 
+NPIS 
+LABEL: 
+List of National Provider Identifiers in the Practice 
+DESCRIPTION: List of National Provider Identifiers in the practice. 
+SHORT NAME: NPIS 
+LONG NAME: NPIS 
+TYPE: 
+CHAR 
+LENGTH:  
+4000 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+List of one or more NPI separated by a comma. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+32 
+PATIENT_DOB 
+LABEL: 
+Patient's Date of Birth 
+DESCRIPTION: Patient's date of birth (DOB). 
+SHORT NAME: PATIENT_DOB 
+LONG NAME: PATIENT_DOB 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Demographic 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 04/22/1943 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+33 
+PATIENT_ETHNICITY 
+LABEL: 
+Patient's Ethnicity 
+DESCRIPTION: Patient's ethnicity. 
+SHORT NAME: PATIENT_ETHNICITY 
+LONG NAME: PATIENT_ETHNICITY 
+TYPE: 
+CHAR 
+LENGTH:  
+6 
+FILE(S):   
+Demographic 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+2135-2 = Hispanic or Latino 
+2186-5 = Not Hispanic or Latino 
+NA, or Null/missing 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+34 
+PATIENT_SEX 
+LABEL: 
+Patient's Sex 
+DESCRIPTION: Patient's sex. 
+SHORT NAME: PATIENT_SEX 
+LONG NAME: PATIENT_SEX 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+FILE(S):   
+Demographic 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+M = male 
+F = female 
+Null/missing 
+COMMENT: 
+In 2025, this field was renamed to sex to comply with Executive Order 14168. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+35 
+PATIENT_RACE 
+LABEL: 
+Patient's Race 
+DESCRIPTION: Patient's race. 
+SHORT NAME: PATIENT_RACE 
+LONG NAME: PATIENT_RACE 
+TYPE: 
+CHAR 
+LENGTH:  
+6 
+FILE(S):   
+Demographic 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+1002-5 = American Indian or Alaska Native 
+2028-9 = Asian 
+2054-5 = Black or African American 
+2076-8 = Native Hawaiian or Other Pacific Islander 
+2106-3 = White 
+2131-1 = Other race 
+Null/missing 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+36 
+PRACTICE_ID 
+LABEL: 
+Model-Assigned Practice ID 
+DESCRIPTION: Model-assigned practice identifier (ID). 
+SHORT NAME: PRACTICE_ID 
+LONG NAME: PRACTICE_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+9 
+FILE(S):   
+Clinical (final and raw) 
+Visit 
+Demographic 
+Alignment (final and EVAA cycle files) 
+Practice 
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Value formatted as: MH-xxxxxx 
+Ex — MH-123456 
+COMMENT: 
+This number appears on every MH data file and only has meaning within the MH model. The 
+corresponding name of the practice is a field called PRACTICE_NAME. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+37 
+PRACTICE_NAME 
+LABEL: 
+Name of Practice 
+DESCRIPTION: Name of practice. 
+SHORT NAME: PRACTICE_NAME 
+LONG NAME: PRACTICE_NAME 
+TYPE: 
+CHAR 
+LENGTH:  
+100 
+FILE(S):   
+Clinical (final and raw) 
+Visit 
+Demographic 
+Alignment (final and EVAA cycle files) 
+Practice 
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+The corresponding practice Identification number (ID) is the field called PRACTICE_ID. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+38 
+REASON_CODE 
+LABEL: 
+Reason Code(s) for Patient Status Change 
+DESCRIPTION: Reason code(s) for patient status change. 
+SHORT NAME: REASON_CODE 
+LONG NAME: REASON_CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+250 
+FILE(S):   
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — S014, SC017, SC018, SC019 
+Registry 
+status 
+Status display in registry 
+(patient grid) 
+Supporting codes 
+(sub-codes) 
+Code definition 
+S001 
+Incomplete record 
+SC001 
+The temporarily not enrolled for cause beneficiary has 
+now been accepted 
+S001 
+Incomplete record 
+SC002 
+The pending acceptance beneficiary is accepted, but 
+data is not complete 
+S002 
+Released for validation 
+SC003 
+PO updated HICN for verify HICN action 
+S002 
+Released for validation 
+SC023 
+PO updated record for verify beneficiary action 
+S002 
+Released for validation 
+SC022 
+PO updated MBI for verify MBI action 
+S002 
+Released for validation 
+SC033 
+Beneficiary was lost to follow up 
+S002 
+Released for validation 
+SC034 
+PO updated records for dropped action 
+S002 
+Released for validation 
+SC036 
+PO updated visit for verify visit action 
+S003 
+Enrolled 
+SC004 
+The pending acceptance beneficiary was accepted and 
+completed 
+S003 
+Enrolled 
+SC005 
+The temporarily not enrolled for cause beneficiary has 
+now been accepted 
+S003 
+Enrolled 
+SC006 
+Beneficiary status changed to aligned 
+  
+Low/Med 
+SC015 
+The alignment record indicates that the Low- or 
+Medium-risk patient is not aligned but eligible 
+S004 
+Pending acceptance 
+SC013 
+The beneficiary is pending acceptance 
+S005 
+Not aligned 
+SC014 
+Beneficiary status changed to not aligned 
+S006 
+Verify HICN 
+SC017 
+Verify HICN 
+S007 
+Ineligible 
+SC026 
+Exclusion: The beneficiary is not enrolled in Medicare 
+Fee for Service Parts A and B 
+S007 
+Ineligible 
+SC027 
+Exclusion: The beneficiary is not age 40–79 at time of 
+enrollment 
+S007 
+Ineligible 
+SC028 
+Exclusion: The beneficiary is enrolled in the hospice 
+benefit 
+S007 
+Ineligible 
+SC029 
+Exclusion: The beneficiary is enrolled in Medicare 
+Advantage  
+S007 
+Ineligible 
+SC030 
+Exclusion: Medicare is not a primary payer 
+S008 
+Permanently ineligible 
+SC025 
+Exclusion: The beneficiary is not alive 
+S008 
+Permanently ineligible 
+SC031 
+Exclusion: The beneficiary has end-stage renal disease 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+39 
+Registry 
+status 
+Status display in registry 
+(patient grid) 
+Supporting codes 
+(sub-codes) 
+Code definition 
+S008 
+Permanently ineligible 
+SC032 
+Exclusion: The beneficiary has a previous heart attack 
+or stroke 
+S009 
+Permanent: Not enrolled for 
+cause 
+SC007 
+Significant comorbidities with a limited life expectancy 
+of less than two years 
+S009 
+Permanent: Not enrolled for 
+cause 
+SC008 
+Unstable angina 
+S009 
+Permanent: Not enrolled for 
+cause 
+SC009 
+Class IV heart failure 
+S009 
+Permanent: Not enrolled for 
+cause 
+SC010 
+Peripheral vascular disease 
+S009 
+Permanent: Not enrolled for 
+cause 
+SC011 
+Prior heart attack or stroke  
+S010 
+Temporary: Not enrolled for 
+cause 
+SC012 
+One-time encounter/Will not return for follow up  
+S010 
+Temporary: Not enrolled for 
+cause 
+SC013 
+Beneficiary declines to participate in the model 
+ S010 
+Unavailable cholesterol 
+SC016 
+Cholesterol not available or out of range 
+S011 
+Lost to follow-up 
+  
+Enrolled beneficiary lost to follow-up 
+S012 
+Dropped 
+  
+Low/Medium beneficiary lost to follow-up 
+COMMENT: 
+Provides reason code(s) for patient status change, and if ELIGIBLE variable value is “N” provides the 
+reason code for ineligibility; multiple codes are separated by commas. Codes that begin with “S” are 
+status codes, those that begin with “SC” are supporting codes or subcodes. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+40 
+RISK_SCORE 
+LABEL: 
+Calculated ASCVD Risk Score 
+DESCRIPTION: Calculated atherosclerotic cardiovascular disease (ASCVD) risk score. 
+SHORT NAME: RISK_SCORE 
+LONG NAME: RISK_SCORE 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 21.7 
+COMMENT: 
+This field is the ACC risk score calculated from information during the visit. The higher the score, the 
+greater the ASCVD risk. If the visit is after the baseline visit, then the RISK_SCORE includes the value 
+for that visit. Otherwise, at baseline, the two risk score fields match (i.e., BASELINE_SCORE equals 
+RISK_SCORE). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+41 
+STATE 
+LABEL: 
+Practice's State (postal abbreviation) 
+DESCRIPTION: Practice's state (postal abbreviation). 
+SHORT NAME: STATE 
+LONG NAME: STATE 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Two-character postal state code 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC = North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+ 
+COMMENT: 
+This field is the state where billing TIN is located. 
+ 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+42 
+TIN 
+LABEL: 
+Practice's Taxpayer Identification Number 
+DESCRIPTION: Practice's federal Taxpayer Identification Number (TIN). 
+SHORT NAME: TIN 
+LONG NAME: TIN 
+TYPE: 
+CHAR 
+LENGTH:  
+9 
+FILE(S):   
+Clinical (final and raw) 
+Visit 
+Demographic 
+Alignment (final and EVAA cycle files) 
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+If attempting to join to Medicare carrier claims files in the CCW, the provider Tax ID field is called 
+TAX_NUM. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+43 
+TINS 
+LABEL: 
+List of Taxpayer Identification Numbers for the Practice 
+DESCRIPTION: List of federal Taxpayer Identification Numbers (TINs) for the practice. 
+SHORT NAME: TINS 
+LONG NAME: TINS 
+TYPE: 
+CHAR 
+LENGTH:  
+4000 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+This field is a list of one or more TINs for the practice, separated by a comma. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+44 
+UNIQUE_PATIENT_ID 
+LABEL: 
+Unique Model-Assigned Patient ID 
+DESCRIPTION: Unique patient ID assigned for the Million Hearts model. 
+SHORT NAME: UNIQUE_PATIENT_ID 
+LONG NAME: UNIQUE_PATIENT_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+36 
+FILE(S):   
+Clinical (final and raw) 
+Visit 
+Demographic 
+Alignment (final and EVAA cycle files) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Value formatted as: ########-####-####-####-########### 
+Ex — A1B2C3D4-E5F6-G7H8-IJKLM9012345 
+COMMENT: 
+This identifier has meaning only within the CCW MHM data files; not linkable to any other data set. 
+Within CCW you may use the BENE_ID to join to other Medicare data files (outside the MHM data 
+product). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+45 
+UNITS 
+LABEL: 
+Unit for the Value Provided for Certain Service Attributes 
+DESCRIPTION: Unit for the value provided for certain service attributes. 
+SHORT NAME: UNITS 
+LONG NAME: UNITS 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):   
+Clinical (final and raw) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — %, ##, -##.#, MG/DL, NULL, MM HG, missing 
+COMMENT: 
+This field is only populated in the Clinical_raw file (not the Clinical_final where it is always missing). In 
+the raw clinical file, values are a mixture of non-standardized values which may include values from 
+test results, dosages of medications, free-form text, and other unknown values. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+46 
+UPDATE_DATE 
+LABEL: 
+Date the Record was Modified 
+DESCRIPTION: The date when the practice or NPI record was modified. 
+SHORT NAME: UPDATE_DATE 
+LONG NAME: UPDATE_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Practice 
+NPI 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 07/17/2019 
+COMMENT: 
+Formatted as MMDDYY10 in SAS. This field is in two files. Within the practice file it is populated with 
+the date the practice record was updated; within the NPI file it is the date the provider record was 
+updated. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+47 
+VALUE 
+LABEL: 
+Value Provided for Certain Service Attributes 
+DESCRIPTION: Value provided for certain service attributes. 
+SHORT NAME: VALUE 
+LONG NAME: VALUE 
+TYPE: 
+CHAR 
+LENGTH:  
+250 
+FILE(S):   
+Clinical (final and raw) 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 114, 2, 684, 999, %, (12-27), 7.4 TH/UL, NORMAL, or null/missing 
+COMMENT: 
+The values in the Clinical_final file have been cleaned and standardized and include missing values. In 
+the raw clinical file, values are a mixture of non-standardized values which may include values from 
+test results, ranges of values, symbols such as % or +, as well as free-form text, and other unknown 
+values. 
+The information in the VALUE field is associated with CODE value in the Clinical_final file. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+48 
+VISIT_DATE 
+LABEL: 
+Patient Visit Date 
+DESCRIPTION: The patient visit date. 
+SHORT NAME: VISIT_DATE 
+LONG NAME: VISIT_DATE 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):   
+Visit 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+Ex — 04/127/2018 
+COMMENT: 
+Formatted as MMDDYY10 in SAS. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Million Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 
+49 
+ZIP_CODE 
+LABEL: 
+Practice's Zip Code 
+DESCRIPTION: Practice's zip code. 
+SHORT NAME: ZIP_CODE 
+LONG NAME: ZIP_CODE 
+TYPE: 
+CHAR 
+LENGTH:  
+20 
+FILE(S):   
+Practice 
+SOURCE:  
+Million Hearts Data Registry 
+VALUES:  
+— 
+COMMENT: 
+This field is the zip code where billing TIN is located.  
+ 
+^ Back to TOC ^

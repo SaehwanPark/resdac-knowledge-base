@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p157__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 157,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n141 \nMDCL_SUPLY_CHRG_AMT \nLABEL: \nMedical/Surgical Supplies Charge Amount ($) \nDESCRIPTION: The charge amount (rounded to whole dollars) for medical/surgical supplies related to the beneficiary's \nstay. \nSHORT NAME: SUPLYAMT \nLONG NAME: MDCL_SUPLY_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_5",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "OP_PHYSN_NPI Claim Operating Physician NPI Number CHAR 10 24\nOP_PHYSN_SPCLTY_CD OP_PHYSN_SPCLTY_CD Claim Operating Physician Specialty Code CHAR 2 25\nOT_NPI OT_PHYSN_NPI Claim Other Physician NPI Number CHAR 10 26\nOT_PHYSN_SPCLTY_CD OT_PHYSN_SPCLTY_CD Claim Other Physician Specialty Code CHAR 2 27\nRNDRNG_PHYSN_NPI RNDRNG_PHYSN_NPI Claim Rendering Physician NPI Number CHAR 12 28\nRNDRNG_PHYSN_SPCLTY_CD RNDRNG_PHYSN_SPCLTY_CD Claim Rendering Physician Specialty Code CHAR 2 29\nRFR_PHYSN_NPI",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,626 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+ Accountable Care Organizations (ACO)  
+Pioneer Codebook  
+MAY 2025 │ VERSION 1.1
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+ 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+May 2025 
+D. Happe 
+Variable was updated to sex to comply with Executive Order 
+14168 
+1.1 
+May 2023 
+S. Pietzsch  
+Created initial document 
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+ 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Accountable Care Organizations (ACO) 
+Pioneer version 2 (V2) Codebook segment research files. We have included several ways for users to quickly find the 
+information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and, in many cases, comments discussing the variable construction and use. 
+Hyperlinks are included throughout the codebook to make it easier for users to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents.  
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+ 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links: 
+Variable Details ..................................................................................................................................................... 1 
+ACO_ID  .......................................................................................................................................................................... 1 
+BENE_ACO_YEAR ........................................................................................................................................................... 2 
+BENE_ID ......................................................................................................................................................................... 3 
+BIRTH_DT ....................................................................................................................................................................... 4 
+CCN_TYPE ...................................................................................................................................................................... 5 
+DEATH_DT ..................................................................................................................................................................... 6 
+FIRST_NAME .................................................................................................................................................................. 7 
+IND_NPI ......................................................................................................................................................................... 8 
+LAST_NAME ................................................................................................................................................................... 9 
+MO1_ALIGN ................................................................................................................................................................. 10 
+MO2_ALIGN ................................................................................................................................................................. 10 
+MO3_ALIGN ................................................................................................................................................................. 10 
+MO4_ALIGN ................................................................................................................................................................. 10 
+MO5_ALIGN ................................................................................................................................................................. 10 
+MO6_ALIGN ................................................................................................................................................................. 10 
+MO7_ALIGN ................................................................................................................................................................. 10 
+MO8_ALIGN ................................................................................................................................................................. 10 
+MO9_ALIGN ................................................................................................................................................................. 10 
+MO10_ALIGN ............................................................................................................................................................... 10 
+MO11_ALIGN ............................................................................................................................................................... 10 
+MO12_ALIGN ............................................................................................................................................................... 10 
+ORG_CCN ..................................................................................................................................................................... 11 
+ORG_NAME ................................................................................................................................................................. 12 
+ORG_TIN ...................................................................................................................................................................... 13 
+PCP_FLAG .................................................................................................................................................................... 14 
+PRVDR_ACO_YEAR ...................................................................................................................................................... 15 
+SEX_CD  ........................................................................................................................................................................ 16 
+ 
+A 
+B 
+C 
+D 
+E 
+F 
+G 
+H 
+I 
+J 
+K 
+L 
+M 
+N 
+O 
+P 
+Q 
+R 
+S 
+T 
+U 
+V 
+W X 
+Y 
+Z 
+
+
+ACO_ID  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Accountable Care Organizations (ACO) Pioneer 
+V2 segment files. Each entry contains variable details to facilitate understanding and use of the variables. 
+ACO_ID 
+LABEL:  
+Pioneer ACO Identifier 
+DESCRIPTION: The identifier of the Pioneer ACO with which the beneficiary is aligned. 
+SHORT NAME:  ACO_ID 
+LONG NAME:  ACO_ID 
+TYPE:  
+CHAR 
+LENGTH:  
+4 
+SOURCE: 
+CMS Pioneer ACO RIF 
+VALUES: 
+4-digit alpha/numeric value 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+   
+ 
+ 
+
+
+BENE_ACO_YEAR  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+2 
+BENE_ACO_YEAR 
+LABEL:  
+Year of beneficiary claims 
+DESCRIPTION: The performance year (PY). Corresponds with the calendar year (CY) of claims. 
+SHORT NAME:  BENE_ACO_YEAR 
+LONG NAME:  BENE_ACO_YEAR 
+TYPE:  
+NUM 
+LENGTH:  
+4 
+SOURCE: 
+CMS Aligned Beneficiary Pioneer ACO RIF  
+VALUES: 
+2015, 2016 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+  
+ 
+ 
+
+
+BENE_ID  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+3 
+BENE_ID 
+LABEL:  
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. The CCW assigns a unique beneficiary identification 
+number to each individual who receives Medicare and/or Medicaid and uses that number to identify 
+an individual’s records in all CCW data files (e.g., Medicare claims, MAX claims, MDS assessment data).  
+This number does not change during a beneficiary’s lifetime and each number is used only once. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME:  BENE_ID 
+LONG NAME:  BENE_ID 
+TYPE:  
+CHAR 
+LENGTH:  
+15   
+SOURCE: 
+CCW 
+VALUES: 
+— 
+COMMENT: 
+— 
+  
+^ Back to TOC ^ 
+ 
+  
+ 
+ 
+
+
+BIRTH_DT  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+4 
+BIRTH_DT 
+LABEL:  
+Date of birth 
+DESCRIPTION: This is the beneficiary's date of birth. 
+SHORT NAME:  BIRTH_DT 
+LONG NAME:  BIRTH_DT 
+TYPE:  
+DATE 
+LENGTH:  
+8   
+SOURCE: 
+CMS Aligned Beneficiary Pioneer ACO RIF  
+VALUES: 
+Format is DDMMMCCYY 
+COMMENT: 
+— 
+  
+ 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+CCN_TYPE  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+5 
+CCN_TYPE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LABEL:  
+CCN Facility Type 
+DESCRIPTION: This field describes the alignment for the Participant Provider. 
+SHORT NAME:  CCN_TYPE 
+LONG NAME:  CCN_TYPE 
+TYPE:  
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF 
+VALUES: 
+C = Certified  
+X = Excluded 
+R = Removed  
+F = Failure to find 
+ 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+DEATH_DT  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+6 
+DEATH_DT 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LABEL:  
+Date of Death 
+DESCRIPTION: This variable indicates the date of death of the beneficiary. A null value means that no death date was 
+reported for the beneficiary. 
+SHORT NAME:  DEATH_DT 
+LONG NAME:  DEATH_DT 
+TYPE:  
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CMS Aligned Beneficiary Pioneer ACO RIF  
+VALUES: 
+Format is DDMMMCCYY 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+  
+ 
+ 
+
+
+FIRST_NAME  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+7 
+FIRST_NAME  
+ 
+ 
+ 
+ 
+ 
+ 
+LABEL:  
+First Name of Provider Associated with the NPI 
+DESCRIPTION: The first name of the provider associated with the National Provider Identifier (NPI). 
+SHORT NAME:  FIRST_NAME 
+LONG NAME:  FIRST_NAME 
+TYPE:  
+CHAR 
+LENGTH:  
+19 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF  
+VALUES: 
+— 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+  
+ 
+  
+ 
+ 
+
+
+IND_NPI  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+8 
+IND_NPI 
+LABEL:  
+NPI for Practitioner 
+DESCRIPTION: The National Provider Identifier (NPI) for a participating individual (in the case of a record for a 
+professional) or organization (in the case of a record for an institution). 
+SHORT NAME:  IND_NPI 
+LONG NAME:  IND_NPI 
+TYPE:  
+NUM 
+LENGTH:  
+10 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF  
+VALUES: 
+— 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+  
+ 
+ 
+
+
+LAST_NAME  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+9 
+LAST_NAME 
+LABEL:  
+Last Name of Provider Associated with the NPI 
+DESCRIPTION: The last name of the provider associated with the National Provider Identifier (NPI). 
+SHORT NAME:  LAST_NAME 
+LONG NAME:  LAST_NAME 
+TYPE:  
+CHAR 
+LENGTH:  
+25 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF  
+VALUES: 
+— 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+  
+ 
+ 
+
+
+MO1_ALIGN  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+10 
+MO1_ALIGN 
+MO2_ALIGN  
+MO3_ALIGN  
+MO4_ALIGN  
+MO5_ALIGN 
+MO6_ALIGN 
+MO7_ALIGN 
+MO8_ALIGN  
+MO9_ALIGN  
+MO10_ALIGN 
+MO11_ALIGN 
+MO12_ALIGN  
+LABEL:  
+Month1–Month 12 Alignment Flag 
+DESCRIPTION: Monthly alignment eligibility of a Beneficiary to a Pioneer ACO. 
+SHORT NAME:  MO1_ALIGN–M12_ALIGN 
+LONG NAME:  MO1_ALIGN–M12_ALIGN  
+TYPE:  
+NUM 
+LENGTH:  
+1 
+SOURCE: 
+CMS Aligned Beneficiary Pioneer ACO RIF 
+VALUES: 
+0 = Not alignment-eligible (due to exclusion, alignment cannot be verified, overlap, etc.) 
+1 = Alignment-eligible 
+COMMENT: 
+— 
+  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ORG_CCN  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+11 
+ORG_CCN 
+LABEL:  
+CMS Certification Number 
+DESCRIPTION: The CMS Certification Number (CCN) of a participating institutional provider (when applicable and 
+available). 
+SHORT NAME:  ORG_CCN 
+LONG NAME:  ORN_CCN 
+TYPE:  
+CHAR 
+LENGTH:  
+6 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF 
+VALUES: 
+— 
+COMMENT: 
+— 
+  
+ 
+^ Back to TOC ^ 
+ 
+  
+ 
+ 
+
+
+ORG_NAME  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+12 
+ORG_NAME 
+LABEL:  
+Name of the TIN 
+DESCRIPTION: Legal Business Name Associated with the ACO Participant TIN. 
+SHORT NAME:  ORG_NAME 
+LONG NAME:  ORG_NAME 
+TYPE:  
+CHAR 
+LENGTH:  
+70   
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF 
+VALUES: 
+— 
+COMMENT: 
+Null values indicates that the ACO did not submit a TIN name. The TIN number is in the field called 
+ORG_TIN.  
+ 
+^ Back to TOC ^ 
+ 
+ 
+  
+ 
+ 
+
+
+ORG_TIN  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+13 
+ORG_TIN 
+LABEL:  
+Billing TIN of ACO Participant 
+DESCRIPTION: The taxpayer identification number (TIN) of the participating provider, generally an employer 
+identification number (EIN) but may be (in the case of professionals) a Social Security number (SSN). 
+SHORT NAME:  ORG_TIN 
+LONG NAME:  ORG_TIN 
+TYPE:  
+NUM 
+LENGTH:  
+9 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF 
+VALUES: 
+— 
+COMMENT: 
+The legal name associated with the TIN is in the field called TIN_NAME.  
+ 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+PCP_FLAG  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+14 
+PCP_FLAG 
+LABEL:  
+Primary Care Practitioner Indicator 
+DESCRIPTION: An indicator of whether the participating provider was considered a primary care specialist for 
+purposes of applying exclusivity rules. 
+SHORT NAME:  PCP_FLAG 
+LONG NAME:  PCP_FLAG 
+TYPE:  
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+CMS Participating Provider Pioneer ACO RIF 
+VALUES: 
+N = non-primary care specialist 
+ 
+ 
+Y = primary care specialist 
+COMMENT: 
+The primary care specialist flag is not set for Performance Year 1 (PY1) providers. The primary care 
+specialist flag is used solely to apply rules governing whether a provider may be listed as a 
+participating provider by more than one Pioneer ACO. 
+ 
+^ Back to TOC ^ 
+ 
+ 
+  
+ 
+ 
+
+
+PRVDR_ACO_YEAR  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+15 
+PRVDR_ACO_YEAR 
+LABEL:  
+Year of Provider ACO Source Record 
+DESCRIPTION: This field is the year of the provider ACO source record; it corresponds with the calendar year (CY) of 
+claims. 
+SHORT NAME:  PRVDR_ACO_YEAR 
+LONG NAME:  PRVDR_ACO_YEAR 
+TYPE:  
+NUM 
+LENGTH:  
+4 
+SOURCE: 
+— 
+VALUES: 
+2015, 2016 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+SEX_CD  
+Chronic Conditions Warehouse Virtual Research Data Center 
+ACO Pioneer V2 Codebook │ May 2025 │ V 1.1 
+16 
+SEX_CD 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LABEL:  
+Sex 
+DESCRIPTION: This variable indicates the sex of the beneficiary. 
+SHORT NAME:  SEX_CD 
+LONG NAME:  SEX_CD 
+TYPE:  
+CHAR 
+LENGTH:  
+1 
+SOURCE: 
+CMS Aligned Beneficiary Pioneer ACO RIF  
+VALUES: 
+1 = Male 
+ 
+ 
+2 = Female 
+COMMENT: 
+In 2025, this field was renamed to sex to comply with Executive Order 14168. 
+ 
+^ Back to TOC ^

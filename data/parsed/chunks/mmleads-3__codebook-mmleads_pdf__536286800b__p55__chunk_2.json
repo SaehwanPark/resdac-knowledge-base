@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p55__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 55,
+  "text": "in the \nMDCD_OT_MC_PREMIUM_USE variable. \nThe Medicaid payment information corresponding to this variable is in the MDCD_OT_TOTAL_SPEND \nvariable; however, due to CMS payment redaction requirements the dollar totals will not reflect the \n(redacted) managed care expenditures. MMLEADS counts all claims in the MDCD_OT_TOTAL_USE \nvariable. Use caution when calculating average spend per claim. There may be claims (i.e., use) for \nwhich there is no corresponding payment information. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

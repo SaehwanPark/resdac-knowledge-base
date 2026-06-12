@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Risk Score Operational Payment Base and Model Output User Guide │ June 2026 │ V 1.1 \n8 \nTable 3. Part D model segment code values, by payment year \nPTD_MODEL_ \nSGMT_CD_MM \nDescription \n2019 \n2020–2021 \nD1 \nCommunity Non-Low Income Continuing Enrollee \nX \nX \nD2 \nCommunity Low Income Continuing Enrollee \nX \nX \nD3 \nInstitutional Continuing Enrollee \nX \nX \nD4 \nNew Enrollee Community Non-Low Income Non-ESRD \nX \nX \nD5 \nNew Enrollee",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

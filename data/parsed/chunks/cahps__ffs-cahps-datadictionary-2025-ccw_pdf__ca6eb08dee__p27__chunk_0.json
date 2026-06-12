@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 27,
+  "text": "B. 2025 MCAHPS Format Tables \n27 \nsa_mdcr_stus: Reason for Beneficiary Entitlement \nSAS Format: $MCR \n0 : MISSING \n10: AGED WITHOUT ESRD \n11: AGED WITH ESRD \n20: DISABLED WITHOUT ESRD \n21: DISABLED WITH ESRD \n31: ESRD ONLY \nsa_org_entlmt: Original Reason for Entitlement \nSAS Format: $OEN \n0: AGE \n1: DISABILITY \n2: ESRD \n3: DISABILITY & ESRD \nU: UNKNOWN \nsa_partd_stus: Part D Status \nSAS Format: $ID_F \nN: NO \nU: UNKNOWN \nY: YES \nsa_pbp_type: Plan Type of Surveyed Plan \nSAS Format: $PBT \n01: HMO",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

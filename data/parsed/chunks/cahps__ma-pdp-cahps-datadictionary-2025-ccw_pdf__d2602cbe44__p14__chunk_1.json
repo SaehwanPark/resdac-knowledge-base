@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p14__chunk_1",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 14,
+  "text": "KOREAN\n5: TAGALOG\n6: VIETNAMESE\n7: SOME OTHER LANGUAGE\nliving_numinhh: RECODE : Number of people living in household\nSAS Format: NMD\n1: 1 PERSON\n2: 2-3 PEOPLE\n3: 4+ PEOPLE\nma_hlthplan: RECODE : Covered by named Medicare health plan\nSAS Format: YNA\n1: YES\n2: NO\nmd_explain: RECODE : Last 6 mths, how often personal MD explain things\nSAS Format: OFA\n1: NEVER",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

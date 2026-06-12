@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__chunk_4",
+  "source_document": "data/raw/html/dataset_page/5f790fcd9499f996f1cbe1ebbbb4d8aa4648a8e3.html",
+  "page": null,
+  "text": "| \nEach MOF raw risk score file is based upon different model coefficients and different diagnosis code inputs for beneficiary clinical information, such as MA encounter data, Original Medicare claims, and the Risk Adjustment Processing System (RAPS), a predecessor system to encounter data collection. As a result, some MOFs will have more than one record per person because the risk model generates raw scores based on multiple sources of clinical diagnoses.\nMOFs also contain Hierarchical",
+  "dataset": "risk-score-mofs",
+  "url": "https://resdac.org/cms-data/files/risk-score-mofs"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_476",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "K0110C Swallowing Tube Code - The data in this column indicates whether parenteral or tube feeding was used wholly or partially during the admission time period. CHAR 1 The data in this column indicates whether parenteral or tube feeding was used wholly or partially during the admission time period. 0 = No\n1 = Yes\n397 M0800A_WRSNG_STG_2_ULCRS_NUM M0800A_WRSNG_STG_2_ULCRS_NUM M0800A Pressure Ulcers - Number of Worsening Stage 2 Pressure Ulcers Since Admission - The data in this column indicates",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_47",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "statuses will be left blank. Beneficiaries who were not included in the most recently available payment year risk score file, or who were excluded during the report period will not have a risk score. CMS-HCC risk scores for beneficiaries who are new enrollees are based on demographic factors only, even if those beneficiaries have CMS-HCC flags. NUM 15 - - - - - - - - - x x\nDIS_SCORE CMS-HCC Risk Score for Disabled Status Final, prospective risk score based on the applicable risk adjustment",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

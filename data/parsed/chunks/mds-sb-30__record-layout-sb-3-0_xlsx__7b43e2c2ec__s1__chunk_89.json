@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_89",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "D0200C2_TRBL_SLEEP_FREQ_CD D0200C2 Resident Mood Interview - Trouble Sleep Frequency Code CHAR 1 The data in this column indicates if the resident is having trouble falling or staying asleep, or is sleeping too\nmuch. -=Not assessed/no information\n0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern) discontinued 09/30/2023\n124 D0200D1_LTL_ENRGY_CD D0200D1_LTL_ENRGY_CD D0200D1 Resident Mood Interview - Little",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

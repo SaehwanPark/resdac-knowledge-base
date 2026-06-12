@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p10__chunk_1",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 10,
+  "text": "made the plan \nselection (Enrollment Type Code of B or L). \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) — derived \nFILE(S): \nPart D Beneficiary Auto-Assignment file \nVALUES: \nY = yes, the beneficiary elected the Part D Plan \nNull/missing \nCOMMENT: \nThe Enrollment Type Code variable (SAS name is ENRLMT_TYPE_CD) appears in the Part D Beneficiary \nPlan Election file. \n^ Back to TOC ^",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p191__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 191,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n177 \nPART_D_LIS_100 \nLABEL: \nPart D Low Income Subsidy 100% \nDESCRIPTION: This variable is the dollar amount of the Part D low-income subsidy (LIS) where the subsidy level is \n100%. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors to \nCMS’s Health Plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

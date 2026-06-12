@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n10 \nAHC_BRDG_ORG_STATE_CD \nLABEL: \nAHC Bridge Organization State \nDESCRIPTION: AHC bridge organization state. \nLONG NAME: AHC_BRDG_ORG_STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nAHC data system \nVALUES: \nAZ = Arizona \nCO = Colorado \nCT = Connecticut \nGA = Georgia \nHI = Hawaii \nIL = Illinois \nIN = Indiana \nKY = Kentucky \nMD = Maryland \nMI = Michigan \nMN = Minnesota \nMS = Mississippi",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

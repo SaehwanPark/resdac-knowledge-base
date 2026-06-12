@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p38__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 38,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n32 \nHH_VISITS \nLABEL: \nHome Health Visits \nDESCRIPTION: This variable is the count of home health (HH) visits for the year. The CCW variable \nCLM_HHA_TOT_VISIT_CNT is used to obtain this variable. \nThis algorithm includes all claims with a CLM_PMT_AMT ≥ $0.; therefore it differs from the algorithms \nused for the other PTA utilization algorithms. \nSHORT NAME: — \nLONG NAME:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

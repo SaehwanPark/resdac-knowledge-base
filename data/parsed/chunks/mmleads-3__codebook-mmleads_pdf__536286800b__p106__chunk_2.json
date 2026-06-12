@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p106__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 106,
+  "text": "CMS rules, CCW employs a hierarchy of claims and MDS assessment \ndata. If the beneficiary does not have Medicare claims for inpatient hospitalization, or skilled nursing \nfacility (SNF), then CCW determines if there is an MDS assessment for the day. For MMLEADS, CCW \ncalculates the number of months during the year when the beneficiary was in a NF. Note that the \nnumber of months with a Medicare long-term care hospital claim or a SNF claim are captured in the \nMDCR_LTCH_MOS and MDCR_SNF_MOS",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

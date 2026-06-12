@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "Claim for a Person CHAR 1 154\nSRVC_TRKNG_TYPE_CD Service Tracking Type Code CHAR 2 18\nFED_SRVC_CTGRY_CD2 Federally Assigned Service Category Code Added During TAF Production CHAR 2 155\nBIRTH_DT Date of Birth DATE 8 19\nPTNT_DSCHRG_STUS_CD Patient Status at Ending Date of Service CHAR 2 20\nBIRTH_WT Birth Weight in Grams NUM 8 21\nPGM_TYPE_CD Program Type Code CHAR 2 22\nMC_PLAN_ID Managed Care Plan Identification Number CHAR 12 23\nWVR_TYPE_CD Waiver Type Code CHAR 2 24\nWVR_ID Waiver Identification",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

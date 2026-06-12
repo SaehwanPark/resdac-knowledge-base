@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p64__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 64,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n58 \nOTHC_EVENTS \nLABEL: \nOther Part B Carrier Events \nDESCRIPTION: This variable is the count of events in the Part B other setting for a given year, which includes Part B \ncarrier and DME claims which appear in settings other than the 10 specific categories which are part of \nthis file for a given year. Claim lines for other carrier/DME claims are a subset of the claims in the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

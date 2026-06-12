@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_292",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "care - treatments in last 14 days - respite care. 0 = No, 1 = Yes, \"-\" = Unknown.\n489 P1AR P1AR_TRAINING (P1AR) Training in Community Skills CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - training in community skills. 0 = No, 1 = Yes, \"-\" = Unknown.\n490 P1AS P1AS_NONE_ABOVE (P1AS) None of Above Special Treatments CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

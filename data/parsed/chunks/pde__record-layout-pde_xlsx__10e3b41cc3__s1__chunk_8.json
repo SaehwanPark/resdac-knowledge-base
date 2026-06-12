@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "LTPAC_DSPNSNG_FREQ_CD Long Term and Post Acute Care (LTPAC) Dispensing Frequency Code CHAR 2 - - - - - - - - X\nSUBMSN_CLR_CD SUBMSN_CLR_CD Submission Clarification Code CHAR 2 - - - - X X X X -\nSUBMSN_CLRFCTN_CD_1 SUBMSN_CLRFCTN_CD_1 Submission Clarification Code 1 CHAR 3 - - - - - - - - X\nSUBMSN_CLRFCTN_CD_2 SUBMSN_CLRFCTN_CD_2 Submission Clarification Code 2 CHAR 3 - - - - - - - - X\nSUBMSN_CLRFCTN_CD_3 SUBMSN_CLRFCTN_CD_3 Submission Clarification Code 3 CHAR 3 - - - - - - - -",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

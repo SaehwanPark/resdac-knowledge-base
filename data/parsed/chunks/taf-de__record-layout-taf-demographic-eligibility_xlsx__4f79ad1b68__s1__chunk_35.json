@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_35",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Verification - Ltst in Yr CHAR 1 157\nIMGRTN_STUS_5YR_BAR_END_DT Immigration Status Five Yr Bar End Date - Ltst in Yr DATE 8 158\nCARE_LVL_STUS_CD Level of Care Status Code for LTSS - Ltst in Yr CHAR 3 159\nDSBLTY_DEAF_IND Disability Ind - Deaf - Ever in Calendar Yr NUM 1 160\nDSBLTY_BLND_IND Disability Ind - Blind - Ever in Calendar Yr NUM 1 161\nDSBLTY_DFCLTY_CNCNTRTNG_IND Disability Ind - Difficulty Concentrating - Ever in Calendar Yr NUM 1 162\nDSBLTY_DFCLTY_WLKG_IND Disability Ind - Difficulty",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

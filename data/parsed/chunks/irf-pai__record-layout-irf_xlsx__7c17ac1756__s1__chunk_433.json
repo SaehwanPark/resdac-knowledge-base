@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_433",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "or safety concerns\n365 GG0170O1_12_STP_STRT_CD GG0170O1_12_STP_STRT_CD GG0170O1 Admission Performance 12 Steps Code - The data in this column indicates the patient's ability to go up and down twelve steps with or without a rail at the time of admission. CHAR 2 The data in this column indicates the patient's ability to go up and down twelve steps with or without a rail at the time of admission. 01 = Dependent\n02 = Substantial/maximal assistance\n03 = Partial/moderate assistance\n04 = Supervision",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

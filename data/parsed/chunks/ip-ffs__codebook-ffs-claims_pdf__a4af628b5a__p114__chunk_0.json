@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p114__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 114,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n96 \nCLM_OP_PPS_IND \nLABEL: \nClaim Outpatient prospective payment system (OPPS) Indicator \nDESCRIPTION: The code indicating the type and priority of an inpatient admission associated with the service on an \nintermediary submitted claim. \nSHORT NAME: CLM_OP_PPS_IND \nLONG NAME: CLM_OP_PPS_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = OPPS \n\n2 = Non-OPPS \nCOMMENT: \nA",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

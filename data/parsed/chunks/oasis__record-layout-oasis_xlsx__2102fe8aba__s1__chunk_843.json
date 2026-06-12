@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_843",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "or prior assessment. 0. No\n1. Yes CHAR 1 x x\nJ1900A_FLS_NO_INJURY_IND J1900A Number of Falls Since SOC/ROC With No Injury Code Indicates the number of falls that resulted in no injury since admission or prior assessment. 0. None\n1. One\n2. Two or more CHAR 1 x x\nJ1900B_FLS_INJURY_IND J1900B Number of Falls Since SOC/ROC With Injury Except Major Code Indicates the number of falls that resulted in injury (except major) since admission or prior assessment. 0. None\n1. One\n2. Two or more CHAR 1 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

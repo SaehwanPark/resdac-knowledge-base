@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_72",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "= Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person physical assist, 3 = Two+ person physical assist, 8 = ADL activity itself did not occur during entire 7 days\n89 H3A H3A_TOLIET_PLAN 24a(H3a)Any Scheduled Toileting Plan CHAR 1 A plan whereby staff members at scheduled times each day either take the patient to the toilet room, or give the patient a urinal, or remind the patient to go to the toilet. Includes habit training and/or prompted voiding. 0 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

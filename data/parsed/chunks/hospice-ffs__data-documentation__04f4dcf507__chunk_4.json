@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_4",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "Physician Specialty Code | \n\n | 27 | OP_PHYSN_NPI | Claim Operating Physician NPI Number (FFS) | \n\n | 28 | OP_PHYSN_SPCLTY_CD | Claim Operating Physician Specialty Code | \n\n | 29 | OT_PHYSN_NPI | Claim Other Physician NPI Number (FFS) | \n\n | 30 | OT_PHYSN_SPCLTY_CD | Claim Other Physician Specialty Code | \n\n | 31 | RNDRNG_PHYSN_NPI | Rendering Physician NPI (FFS) | \n\n | 32 | RNDRNG_PHYSN_SPCLTY_CD | Claim or Revenue Center Rendering Physician Specialty Code | \n\n | 33 | RFR_PHYSN_NPI | Claim",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

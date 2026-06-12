@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_56",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "in some environments (e.g.,when person\nspeaks softly or setting is noisy\n2=Moderate difficulty-speaker has to increase volume and speak distinctly\n3=High impaired-absence of useful hearing\n^=Blank(skip pattern)\n88 B0300_HEARG_AID_CD B0300_HEARG_AID_CD B0300 Hearing Aide Code CHAR 1 The data in this column indicates whether or not the resident used a hearing aide or other hearing appliance. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n89 B0600_SPCH_CLRTY_CD B0600_SPCH_CLRTY_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

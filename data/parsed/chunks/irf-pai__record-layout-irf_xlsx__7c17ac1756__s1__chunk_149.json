@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_149",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Both, C = Wheelchair, W = Walk\n129 _39LG WLK_WC_GOAL_CD (39Lg) Locomotion - Walk/wheelchair: Goal CHAR 2 A score indicating the desired goal for the patient to achieve to walk or use a wheelchair on a level surface at discharge. This item indicates the most frequent mode of locomotion the patient uses - 'walk' or 'wheelchair'. 01 = Helper - Complete Dependence/Total Assistance (Subject less than 25%), 02 = Helper - Complete Dependence/Maximal Assistance (Subject 25% or more), 03 = Helper -",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

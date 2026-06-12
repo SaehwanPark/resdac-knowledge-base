@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p66__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 66,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n52 \nDED_COSTSHARE_TIERS \nLABEL: \nTiers with Cost Sharing in the Part D Deductible Phase \nDESCRIPTION: This variable identifies which formulary tiers require beneficiary cost sharing during the Part D \ndeductible phase. \nThe value contains a string of binary digits; each digit of the value indicates which tiers are on the \nformulary. \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nCMS",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

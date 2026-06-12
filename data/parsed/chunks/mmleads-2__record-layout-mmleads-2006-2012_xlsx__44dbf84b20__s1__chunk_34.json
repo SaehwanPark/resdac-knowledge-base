@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_34",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Part D during the month\nE_PTD_SNP_1 - 12 Monthly Medicare Part D Special Needs Plan (SNP) Indicator. January through December 0 - Part D plan is not a SNP\nC - Chronic or disabling condition SNP\nD - Dual eligible SNP\nI - Institutional SNP\nNull/Missing = No Medicare Part D coverage for the month\nEligibility (Medicaid) E_MAS_1 - 12 Monthly Medicaid Maintenance Assistance Status (Source=1st position of uniform eligibility code). January through December 0 - Not eligible for Medicaid\n1 - Cash\n2 -",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

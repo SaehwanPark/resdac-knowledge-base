@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_487",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "O0600_PHYSN_EXMN_NUM O0600 Physician Examination Day Number CHAR 2 The data in this column indicates the number of days that the physician (or authorized assistant or practitioner) examined the resident in the last 14 days. discontinued 09/30/2023\n550 O0700_PHYSN_ORDR_NUM O0700_PHYSN_ORDR_NUM O0700 Physician Order Day Number CHAR 2 The data in this column indicates the number of days that the physician (or authorized assistant or practitioner) changed the resident's orders in the last 14 days.",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_596",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "ANTPSYCT_TKNG_ADMSN_CD ANTPSYCT_TKNG_ADMSN_CD High-Risk Drug (Is Taking): Antipsychotic (Adm) CHAR 1 This column documents whether, at the time of admission, the patient was taking any medications by pharmacological classification, not how it is used, \nfrom the antipsychotic class. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n538 ANTPSYCT_TKNG_DSCHRG_CD ANTPSYCT_TKNG_DSCHRG_CD High-Risk Drug (Is Taking): Antipsychotic (Dsch) CHAR 1 This column documents whether, at the time of discharge, the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

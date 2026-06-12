@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_12",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "E Code X (FFS) | \n\n | 77 | ICD_DGNS_E_CD11 | Claim Diagnosis E Code XI | \n\n | 78 | ICD_DGNS_E_CD12 | Claim Diagnosis E Code XII | \n\n | 79 | CLM_HOSPC_START_DT_ID | Claim Hospice Start Date | \n\n | 80 | CLM_ADMSN_DT | Claim Admission Date (FFS) | \n\n | 81 | BENE_HOSPC_PRD_CNT | Beneficiary's Hospice Period Count | \n\n | 82 | DOB_DT | Date of Birth from Claim | \n\n | 84 | BENE_RACE_CD | Beneficiary Race Code (FFS) | \n\n | 85 | BENE_CNTY_CD | County Code from Claim (SSA) | \n\n | 86 | BENE_STATE_CD |",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

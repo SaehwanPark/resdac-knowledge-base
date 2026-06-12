@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_363",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "checked (No)\n1=Checked (Yes)\n402 L0200C_ABNRML_MOUTH_TISUE_CD L0200C_ABNRML_MOUTH_TISUE_CD L0200C Dental Status: Abnormal Mouth Tissue Code CHAR 1 The data in this column indicates whether the resident has abnormal mouth tissue (ulcers, masses, oral lesions, including under denture or partial if one is worn). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n403 L0200D_CVTY_CD L0200D_CVTY_CD L0200D Dental Status: Cavity Code CHAR 1 The data in this column indicates whether the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

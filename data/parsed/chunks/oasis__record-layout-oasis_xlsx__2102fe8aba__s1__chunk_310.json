@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_310",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "This field indicates the patient's current ability to tend safely to personal hygiene needs. 00 = Able to groom self unaided, with or without the use of assistive devices or adapted methods.\n01 = Grooming utensils must be placed within reach before able to complete grooming activities.\n02 = Someone must assist the patient to groom self.\n03 = Patient depends entirely upon someone else for grooming needs. CHAR 2 x x x x x x\nM1810_CU_DRESS_UPR M1810 (M0650) Current Dress Upper This field indicates",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

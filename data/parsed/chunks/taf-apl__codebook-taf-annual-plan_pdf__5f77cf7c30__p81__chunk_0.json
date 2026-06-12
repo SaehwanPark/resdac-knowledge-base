@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p81__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 81,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n73 \nOPRTG_AUTHRTY_1932A_1915K_IND \nLABEL: \nOperating Authority Indicator: 1932(a)-1915(k) — Ever in Calendar Year \nDESCRIPTION: Indicates 1932(a)/1915(k) operating authority for the MC_PLAN_ID; ever in the calendar year. \nSHORT NAME: OPRTG_AUTHRTY_1932A_1915K_IND \nLONG NAME: OPRTG_AUTHRTY_1932A_1915K_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

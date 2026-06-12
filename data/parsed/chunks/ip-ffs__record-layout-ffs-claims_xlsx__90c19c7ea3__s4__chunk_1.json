@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "(RIC) CHAR 1 3\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 4\nFROM_DT CLM_FROM_DT Claim From Date DATE 8 5\nTHRU_DT CLM_THRU_DT Claim Through Date DATE 8 6\nWKLY_DT NCH_WKLY_PROC_DT NCH Weekly Claim Processing Date DATE 8 7\nFI_CLM_PROC_DT FI_CLM_PROC_DT FI Claim Process Date DATE 8 8\nQUERY_CD CLAIM_QUERY_CODE Claim Query Code CHAR 1 84\nPROVIDER PRVDR_NUM Provider Number CHAR 6 9\nPRVDR_FULL_CCN_NUM PRVDR_FULL_CCN_NUM Full CMS Certification Number for Provider CHAR 13 107 New5\nFAC_TYPE",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

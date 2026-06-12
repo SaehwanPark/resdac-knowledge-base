@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p100__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 100,
+  "text": "than '0' (Not a member of an \nHMO) or '4' (Fee-for-service participant in case or disease management demonstration project) (i.e., \nBENE_HMO_IND_MM NOT IN ('0' '4'), and the plan type code was for any type of plan other than \nPACE or MMP (i.e., where PTC_PLAN_TPE_CD_MM NOT IN ('20' '48' '49')). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

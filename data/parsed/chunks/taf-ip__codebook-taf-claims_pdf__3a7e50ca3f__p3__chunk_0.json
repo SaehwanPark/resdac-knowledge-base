@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p3__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 3,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \niv \nDate \nChanged by \nRevisions \nVersion \nOctober 2022 \nK. Schneider \n• \nAdded new field on each header claim record: \nFED_SRVC_CTGRY_CD; added DGNS_1_CCSR_CTGRY_CD and \nBLG_PRVDR_NPPES_TXNMY_CD to IP, LT, and OT header \nclaims; \n• \nAdded LINE_PRCDR_CCS_CTGRY_CD and \nSRVC_PRVDR_NPPES_TXNMY_CD to the OT line file \n• \nUpdated value details for LINE_PRCDR_MDFR_CD_1– \nLINE_PRCDR_MDFR_CD_4 \n•",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p84__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 84,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n76 \nOPRTG_AUTHRTY_1945_HLTH_HOME_IND \nLABEL: \nOperating Authority Indicator: 1945 Health Home — Ever in Calendar Year \nDESCRIPTION: Indicates 1945 health homes for the MC_PLAN_ID; ever in the calendar year. \nSHORT NAME: OPRTG_AUTHRTY_1945_HLTH_HOME_IND \nLONG NAME: OPRTG_AUTHRTY_1945_HLTH_HOME_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

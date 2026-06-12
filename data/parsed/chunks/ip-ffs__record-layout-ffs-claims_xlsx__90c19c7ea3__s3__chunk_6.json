@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s3__chunk_6",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 3,
+  "text": "28\nRNDRNG_PHYSN_SPCLTY_CD RNDRNG_PHYSN_SPCLTY_CD Claim Rendering Physician Specialty Code CHAR 2 29\nRFR_PHYSN_NPI RFR_PHYSN_NPI Claim Referring Physician NPI Number CHAR 12 30\nRFR_PHYSN_SPCLTY_CD RFR_PHYSN_SPCLTY_CD Claim Referring Physician Specialty Code CHAR 2 31\nSTUS_CD PTNT_DSCHRG_STUS_CD Patient Discharge Status Code CHAR 2 32\nTOT_CHRG CLM_TOT_CHRG_AMT Claim Total Charge Amount NUM 12 33\nPTNTSTUS NCH_PTNT_STATUS_IND_CD NCH Patient Status Indicator Code CHAR 1 34\nUTIL_DAY",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

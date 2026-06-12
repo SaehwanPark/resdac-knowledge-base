@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s11__chunk_1",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 11,
+  "text": "or non-physician) who reassigned billing rights to an ACO participant in the performance period (based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS)) CHAR 10\nPRVDR_ACO_YEAR PRVDR_ACO_YEAR Year of ACO Source Record NUM 4\nTIN TIN Tax Identification Number (TIN) of ACO Participant Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation CHAR 9\nCCN CCN CMS Certification Number (CCN;",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

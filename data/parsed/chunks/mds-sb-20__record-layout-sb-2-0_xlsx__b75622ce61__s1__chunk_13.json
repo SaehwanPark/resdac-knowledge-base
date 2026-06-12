@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "type of assessment. For IRF-PAI, the Target Date is 12: Admission Date. For SB the Target DAte is the same as the Event Date and is equal to the following dates: 10a (A3A - Assessment Reference Date, 15 (R4) - Discharge Date and 16 (A4A) - Reentry Date.\n27 UPDTDDT UPDATED_DT Updated Date DATE 8 This is the date the row was last updated in the assessment table in the state system.\n28 VRSN_CD1 VRSN_CD1 Version Code 1 CHAR 5 This code represents the version of the form actually complted in the",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

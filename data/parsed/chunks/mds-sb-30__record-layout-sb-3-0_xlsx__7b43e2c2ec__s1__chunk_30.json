@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "9/30/2019\n48 A0310E_FIRST_SINCE_ADMSN_CD A0310E_FIRST_SINCE_ADMSN_CD A0310E First Assessment Since Most Recent Admission Code CHAR 1 The data in this column indicates if this assessment is the first assessment since the most recent admission. 0=No\n1=Yes\n49 A0310F_ENTRY_DSCHRG_CD A0310F_ENTRY_DSCHRG_CD A0310F Entry/Discharge Code CHAR 2 The data in this column indicates whether the assessment is an Entry or Discharge record. 01=Entry tracking record\n10=Discharge assessment - return not",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

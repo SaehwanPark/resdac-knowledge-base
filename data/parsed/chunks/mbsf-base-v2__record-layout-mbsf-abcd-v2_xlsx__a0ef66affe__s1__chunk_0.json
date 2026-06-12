@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File (MBSF) Base A/B/C/D Version 2 (V2)\nVersion — March 2025\nSAS name Label Type Length\nBENE_ID Encrypted 723 Beneficiary ID CHAR 15\nBENE_ENROLLMT_REF_YR Beneficiary Enrollment Reference Year NUM 4\nSAMPLE_GROUP Medicare 1, 5, or 20% Strict Sample Group Indicator CHAR 2\nENHANCED_FIVE_PERCENT_FLAG Medicare Enhanced 5% Sample Indicator CHAR 1\nCRNT_BIC_CD Current Beneficiary Identification Code CHAR 2\nSTATE_CD SSA",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

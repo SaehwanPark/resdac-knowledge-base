@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p51__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 51,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n46 \nPRSCRBR_ID_QLFYR_CD \nLABEL: \nPrescriber Identification Number Qualifier Code \nDESCRIPTION: This variable contains information regarding the type of prescriber identification number that was \nsubmitted on the original PDE data, as reported by the Part D sponsor on the PDE record submitted to \nCMS. \nHistorically, this identifier could be an NPI, DEA",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

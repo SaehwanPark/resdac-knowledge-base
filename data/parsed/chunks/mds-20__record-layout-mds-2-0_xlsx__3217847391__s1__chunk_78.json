@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_78",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- difficulty finding words or finishing thoughts, 2 = Sometimes Understood - ability is limited to making concrete requests, 3 = Rarely/Never Understood, \"-\" = Unknown, -2 = Space.\n150 C5 C5_SPEECH_CLARITY (C5) Speech Clarity CHAR 1 Communications/hearing patterns: speech clarity. 0 = Clear Speech - distinct, intelligible words, 1 = Unlcear Speech - slurred, mumbled words, 2 = No Speech - absence of spoken words, \"-\" = Unknown, -2 = Space.\n151 C6 C6_UNDERSTAND_OTH (C6) Ability to Understand",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

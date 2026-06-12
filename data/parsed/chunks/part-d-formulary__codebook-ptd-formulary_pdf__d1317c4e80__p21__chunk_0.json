@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 21,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n17 \nSTR \nLABEL: \nDrug Strength Description \nDESCRIPTION: This variable is the strength or potency of the drug product as dispensed, according to the First \nDataBank (FDB) reference files. When this variable appears in the Formulary file, it is the FDB drug \nstrength for a drug product on the formulary. \nSHORT NAME: STR \nLONG NAME: STR \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE:",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

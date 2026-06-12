@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_167",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "to monitor equipment (e.g., liter flow, fluid in bag) and must call someone else to manage the equipment.\n04 = Patient is completely dependent on someone else to manage all equipment.\nNA = NA - No equipment of this type used in care. CHAR 2 x x\nM0820_CG_MGMT_EQP (M0820) Caregiver Management of Equipment Caregiver Management of Equipment. 00 = Caregiver manages all tasks related to equipment completely independently.\n01 = If someone else sets up equipment, caregiver is able to manage all other",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

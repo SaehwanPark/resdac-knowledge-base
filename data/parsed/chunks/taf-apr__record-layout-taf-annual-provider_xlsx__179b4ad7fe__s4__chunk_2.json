@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s4__chunk_2",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 4,
+  "text": "Provider Enrollment (Medicaid and/or CHIP) Start Date DATE 8 9\nPRVDR_ENRLMT_END_DT Provider Enrollment (Medicaid and/or CHIP) End Date DATE 8 10\nPRVDR_ENRLMT_ACTV_IND_01 Provider Enrollment Active Indicator - January CHAR 1 11\nPRVDR_ENRLMT_ACTV_IND_02 Provider Enrollment Active Indicator - February CHAR 1 12\nPRVDR_ENRLMT_ACTV_IND_03 Provider Enrollment Active Indicator - March CHAR 1 13\nPRVDR_ENRLMT_ACTV_IND_04 Provider Enrollment Active Indicator - April CHAR 1 14\nPRVDR_ENRLMT_ACTV_IND_05",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

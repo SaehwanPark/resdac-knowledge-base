@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s13__chunk_6",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 13,
+  "text": "type is self-reported. For CCNs obtained from PECOS, facility type is obtained from PECOS and assigned a valid Fac_Type value. Values:\nF = Federally Qualified Health Center\nR = Rural Health Center\nC = Critical Access Hospital Method II \nT = Elective Teaching Amendment Hospital\nX = Other Facility Type CHAR 1\nFAC_DESC FAC_DESC CCN Facility Type Description Description of the facility. New data field beginning in 2017; blank for prior years. CHAR 105\nSPEC PRVDR_SPCLTY_CD Provider Specialty Code",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_125",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Dependence - Full staff performance of activity during entire 7 days, 8 = Activity did not occur during entire 7 days.\n207 G1AB G1AB_SUPP_BED (G1AB) Bed Mobility Support Provided CHAR 1 Physical functioning and structural problems: bed mobility - ADL support provided. \"-\" = Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person physical assist, 3 = Two+ person physical assist, 8 = ADL activity itself did not occur during entire 7 days\n208 G1BA G1BA_SELF_TRANS",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

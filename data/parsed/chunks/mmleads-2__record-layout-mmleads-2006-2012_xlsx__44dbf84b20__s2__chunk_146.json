@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s2__chunk_146",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 2,
+  "text": "using disability determination codes) 0 - No Disability determination/no HIV disabilitly \n1 - Asymptomatic HIV Infection (0440) \n2 - Symptomatic HIV Infection (0430)\n3 - HIV Wasting Syndrome (2630)\n4 - HIV Encephalopathy (3480) \nNull/missing (for Medicaid only enrollees)\nHIVTSTNG_CAT1 HIV/AIDS Screening Tests {0, 1, 2, 3 = 3+} - Category 1 {86701, 87390, 87534, 87535, S3645} 0-3 or Missing\nHIVTSTNG_CAT2 HIV/AIDS Screening Tests {0, 1, 2, 3 = 3+} - Category 2 {86702, 87391} 0-3 or",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

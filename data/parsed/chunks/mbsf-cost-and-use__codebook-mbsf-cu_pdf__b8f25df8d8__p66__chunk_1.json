@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p66__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 66,
+  "text": "payer other than Medicare \nfor a given year. Claim lines for other carrier/DME claims are a subset of the claims in the Part B carrier \nand DME data files. Types of services which may have been summarized in this other carrier category \n(OTHC) include ambulance, chiropractor, chemotherapy, vision, hearing, and speech services, etc. \nThe total Primary Payer Payments are calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. \nSHORT NAME: — \nLONG NAME: OTHC_PRMRY_PMT \nTYPE: \nNUM \nLENGTH: \n12",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

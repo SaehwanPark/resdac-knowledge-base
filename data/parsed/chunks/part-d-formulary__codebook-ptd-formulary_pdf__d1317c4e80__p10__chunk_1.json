@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p10__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 10,
+  "text": "using the \nNational Library of Medicine RxNorm Concept Unique Identifiers (RXCUIs). There can be several drug \nproducts submitted that are the same clinical formulation (same ingredients, strength, and dosage \nform) but different brand names. Each RXCUI corresponds to a unique brand name and clinical \nformulation. The CCW Formulary drug ID is analogous to an RXCUI. \nSHORT NAME: FRMLRY_RX_ID \nLONG NAME: FRMLRY_RX_ID \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nPDE and CMS HPMS (derived) \n VALUES: \n8-digit",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

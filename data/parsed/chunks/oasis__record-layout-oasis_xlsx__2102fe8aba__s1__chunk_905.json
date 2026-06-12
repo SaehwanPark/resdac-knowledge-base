@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_905",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Nutritional Approaches (Discharge): Mech Alt Diet Indicates whether, at discharge, the patient's nutritional approach includeda mechanically altered diet. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nK0520D1_THRPTC_DIET_ADMSN_CD Nutritional Approaches (Admission) : Therapeutic Indicates whether, on admission, the patient's nutritional approach included a therapeutic diet. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nK0520D4_THRPTC_DIET_7_DAY_CD Nutritional Approaches (7 day):",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

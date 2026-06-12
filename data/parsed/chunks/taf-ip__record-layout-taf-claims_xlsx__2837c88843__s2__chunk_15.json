@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_15",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Lines NUM 8 87\nMDCD_ANCLRY_PD_AMT Medicaid Amount Paid for All Ancillary (Non-Room & Board) Revenue Lines NUM 8 88\nMDCR_PD_AMT Medicare Paid Amount NUM 8 89\nMDCR_DDCTBL_PD_AMT Total Medicare Deductible Amount NUM 8 90\nMDCR_COINSRNC_PD_AMT Total Medicare Coinsurance Amount NUM 8 91\nMDCR_CMBND_DDCTBL_IND Medicare Combined Deductible and Coinsurance Indicator CHAR 1 92\nMDCR_REIMBRSMT_TYPE_CD Medicare Reimbursement Type Code CHAR 2 93\nBENE_LIABILITY_AMT Total Beneficiary Long-Term Care Liability",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

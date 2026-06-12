@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p375__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 375,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n357 \nREV_CNTR_PMT_MTHD_IND_CD \nLABEL: \nRevenue Center Payment Method Indicator Code \nDESCRIPTION: The code used to identify how the service is priced for payment. \nThis field is made up of two pieces of data, 1st position being the status indicator and the 2nd position \nbeing the payment indicator. \nSHORT NAME: PMTMTHD \nLONG NAME: REV_CNTR_PMT_MTHD_IND_CD \nTYPE: \nCHAR",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

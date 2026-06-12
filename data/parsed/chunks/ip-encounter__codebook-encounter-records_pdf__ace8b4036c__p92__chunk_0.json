@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p92__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 92,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n82 \nLINE_PLACE_OF_SRVC_CD \nLABEL: \nLine Place of Service Code \nDESCRIPTION: The code indicating where the service was performed; the place of service. \nSHORT NAME: LINE_PLACE_OF_SRVC_CD \nLONG NAME: LINE_PLACE_OF_SRVC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nCarrier Line \nDME Line \nVALUES: \n\n00 = \nUnknown \n01 = \nPharmacy. A facility or",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

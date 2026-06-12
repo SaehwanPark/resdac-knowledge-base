@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p39__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 39,
+  "text": "for IP, SNF and HH. \nFor Part B non-institutional (carrier and DME) services, this variable corresponds with the earliest of \nany of the line-item level dates (i.e., in the Line File, it is the first CLM_FROM_DT for any line on the \nclaim). It is almost always the same as the CLM_THRU_DT; exception is for DME claims — where some \nservices are billed in advance. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

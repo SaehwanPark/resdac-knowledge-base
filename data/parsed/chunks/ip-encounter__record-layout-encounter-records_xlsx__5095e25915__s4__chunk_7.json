@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_7",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "or ICD-10) Char 1 39 39\nICD_DGNS_CD9 Claim Diagnosis Code 9 Char 7 40 40\nICD_DGNS_VRSN_CD9 Claim Diagnosis Code IX Diagnosis Version Code (ICD-9 or ICD-10) Char 1 41 41\nICD_DGNS_CD10 Claim Diagnosis Code 10 Char 7 42 42\nICD_DGNS_VRSN_CD10 Claim Diagnosis Code X Diagnosis Version Code (ICD-9 or ICD-10) Char 1 43 43\nICD_DGNS_CD11 Claim Diagnosis Code 11 Char 7 44 44\nICD_DGNS_VRSN_CD11 Claim Diagnosis Code XI Diagnosis Version Code (ICD-9 or ICD-10) Char 1 45 45\nICD_DGNS_CD12 Claim Diagnosis Code",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

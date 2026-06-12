@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n15 \nDRUG_CVRG_STUS_CD \nLABEL: \nDrug Coverage Status Code \nDESCRIPTION: This field indicates whether or not the drug is covered by Medicare Part D. \nThe Part D benefit does not cover all FDA-approved drugs. However, plan sponsors can offer an \n“enhanced” benefit package that covers non-Part D drugs, such as over-the-counter medications. \nSHORT NAME: DRCVSTCD",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

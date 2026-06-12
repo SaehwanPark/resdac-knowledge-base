@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n14 \nDOB_DT \nLABEL: \nPatient Date of Birth (DOB) \nDESCRIPTION: Date of birth of the patient as indicated on the event record. \nSHORT NAME: DOB_DT \nLONG NAME: DOB_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nPDE \nVALUES: \nDate formatted as CCYYMMDD \nCOMMENT: \nIt is possible that this date may be different than the beneficiary date of birth (BENE_BIRTH_DT) \nvariable",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

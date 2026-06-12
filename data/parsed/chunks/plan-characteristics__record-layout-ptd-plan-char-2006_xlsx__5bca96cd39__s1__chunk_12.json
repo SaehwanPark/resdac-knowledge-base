@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "Limit (ICL) Amount. 1 Medicare-defined amount\n2 Plan-defined amount\n3 No ICL\n23 icl_amt ICL Amount Num 12 Dollar amount of Initial Coverage Limit (ICL) applied by Part D plan. If no ICL is applied this field is blank.\n24 post_OOPT_apply How Post OOP threshold cost shares are applied Char 1 Indicates how plan applies cost sharing beyond the Medicare-defined Part D Annual Out-of-Pocket Cost Threshold (i.e., in catastrophic coverage phase). (Fixed Capitated Reinsurance Demos: How cost sharing is",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

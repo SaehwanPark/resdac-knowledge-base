@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p63__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 63,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n52 \nMDCD_RSTRCTD_BNFTS_CD_LTST \nLABEL: \nMedicaid — Scope of Medicaid or CHIP Benefits — Latest in Year \nDESCRIPTION: This variable indicates the scope of Medicaid or Children’s Health Insurance Program (CHIP) benefits \nto which a beneficiary is entitled; most recent in the calendar year. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS DE file \nVALUES: \n0 = Not eligible for Medicaid or (CHIP) during the month \n1 = Eligible for",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

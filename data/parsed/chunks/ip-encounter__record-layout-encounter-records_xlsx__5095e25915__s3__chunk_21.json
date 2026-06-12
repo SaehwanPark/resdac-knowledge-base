@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_21",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "Encounter Join Key Char 15 2\nCLM_TYPE_CD Claim Type Code Char 4 3\nRLT_VAL_CD_SEQ Claim Related Value Code Sequence Char 2 4\nCLM_VAL_CD Claim Value Code Char 2 5\n1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because\nit is available in the Master Beneficiary Summary File; the numbering of the fields was updated.",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

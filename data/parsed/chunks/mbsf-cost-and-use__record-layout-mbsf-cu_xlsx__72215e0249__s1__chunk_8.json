@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "Part B Physician Primary Payer Amount NUM 12\nPHYS_EVENTS Part B Physician Events NUM 6\nDIALYS_BENE_PMT Dialysis Beneficiary Payments NUM 12\nDIALYS_MDCR_PMT Dialysis Medicare Payments NUM 12\nDIALYS_PRMRY_PMT Dialysis Primary Payer Amount NUM 12\nDIALYS_EVENTS Dialysis Events NUM 6\nOPROC_BENE_PMT Other Procedures Beneficiary Payments NUM 12\nOPROC_MDCR_PMT Other Procedures Medicare Payments NUM 12\nOPROC_PRMRY_PMT Other Procedures Primary Payer Amount NUM 12\nOPROC_EVENTS Other Procedures Events NUM",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

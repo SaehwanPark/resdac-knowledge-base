@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p51__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 51,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \n43 \nCOMMENT: \nThe first character of the contract ID is a letter that indicates the type of plan. If the beneficiary did not \nhave a Part D plan for a given month, this variable will have a value of N, 0, or be null/missing for that \nmonth. If the beneficiary changed plans during the year, the value indicates the final, reconciled \ncontract number. For 2006–2012, this",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

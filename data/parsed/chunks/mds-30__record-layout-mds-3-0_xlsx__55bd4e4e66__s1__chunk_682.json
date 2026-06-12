@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_682",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "04=Supervision or touching assistance\n 05=Setup or clean-up assistance\n 06=Independent\n 07=Resident refused\n 09=Not applicable\n 88=Not attempted due to medical condition or safety concerns\n ^=Blank (skip pattern) effective 10/01/2018\ndiscontinued 09/30/2024\n737 GG0170M3_1_STP_END_CD GG0170M3_1_STP_END_CD GG0170M3 1 Step End Indicator CHAR 2 Indicates the resident's ability to go up and down a curb and/or up and down one step at the end of the SNF PPS Part A stay. -=Not assessed/no information",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

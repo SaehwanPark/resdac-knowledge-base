@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__chunk_2",
+  "source_document": "data/raw/html/dataset_page/f1ac9f508a2284b35eb33f94c4a7438c882f785c.html",
+  "page": null,
+  "text": "multiple CCS records, within an episode and across multiple episodes.\n- The Clinical and Staging data file and the Current Clinical Status data file can be linked by the Beneficiary ID, ICD10 Cancer Diagnosis Code Reported by Participant, and the Initial Diagnosis Date.\n- Researchers may wish to obtain Medicare Fee-for-Service claims data for a population they identify within the OCM data files. The Beneficiary ID can be used to link to Medicare claims.",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://resdac.org/cms-data/files/ocm-current-clinical-status"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "D Drug Benefit Type CHAR 1 X X X X X X\nEGWP_INDICATOR Employer Group Waiver Plan (EGWP) Indicator CHAR 1 X X X X X X\nEGHP_CALENDAR_YEAR_FLAG Employer Group Health Plan (EGHP) Calendar Year Indicator CHAR 1 X X X X X X\nCOV_CRITERIA Part D Coverage Criteria - Indicator of Waiver of Part A Requirement CHAR 1 X X X X X X\nNATIONAL_PDP National Prescription Drug Plan (PDP) Sponsor CHAR 1 X X X X X X\nGAP_COVERAGE_TYPE Type of Gap Coverage Offered CHAR 2 X X LC X X X\nDEMINIMIS_PD_FLAG Deminimis Paid",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

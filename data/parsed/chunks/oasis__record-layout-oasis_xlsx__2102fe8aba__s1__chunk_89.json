@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_89",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "ulcer that cannot be observed due to eschar or nonremovable dressing, including casts? 0 = No, 1 = Yes CHAR 1 x x\nM0460_STG_PRBL_PRU (M0460) Stage of Most Problematic Pressure Ulcer Stage of most problematic pressure ulcer. 01 = Stage 1\n02 = Stage 2\n03 = Stage 3\n04 = Stage 4\nNA = No observable pressure ulcer CHAR 2 x x\nM0464_STA_PRBL_PRU (M0464) Status of Most Problematic Pressure Ulcer Status of most problematic pressure ulcer. 01 = Fully granulating\n02 = Early/partial granulation\n03 = Not",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "VRSN_CD1 VRSN_CD1 Version Code 1 CHAR 5 This code represents the version of the form actually complted in the hospital.\n29 VRSN_CD2 VRSN_CD2 Version Code 2 CHAR 5 This code represents the verion of the data specification sused to create the data record for submssion to the National System.\n30 _5A ETHNCTY_AMRCN_INDN_AK_NTV_SW (5a)Race: American Indian/Alaskan Native CHAR 1 The patient's race or ethnic category: American Indian or Alaskan Native.\n31 _5B ETHNCTY_ASN_SW (5b)Race: Asian CHAR 1 The",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

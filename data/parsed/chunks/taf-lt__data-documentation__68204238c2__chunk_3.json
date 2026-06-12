@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_3",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "| BIRTH_DT | Date of Birth | \n\n | 22 | PTNT_DSCHRG_STUS_CD | Patient Status at Ending Date of Service | \n\n | 23 | PGM_TYPE_CD | Program Type Code | \n\n | 24 | MC_PLAN_ID | Managed Care Plan Identification Number | \n\n | 25 | WVR_TYPE_CD | Waiver Type Code | \n\n | 26 | WVR_ID | Waiver Identification Number | \n\n | 27 | OTHR_INSRNC_IND | Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid) | \n\n | 28 | SECT_1115A_DEMO_IND | 1115(A) Demonstration Participation Indicator | \n\n | 29 |",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

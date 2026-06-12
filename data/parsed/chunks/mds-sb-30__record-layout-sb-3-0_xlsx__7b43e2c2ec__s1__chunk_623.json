@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_623",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "N0450C_LAST_ATMPTED_GDR_DT N0450C_LAST_ATMPTED_GDR_DT N0450C Date of Last Attempted GDR CHAR 8 The data in this column indicates the date of the last attempt to do a gradual dose reduction (GDR) of\nantipsychotic medication. effective 10/01/2017\n693 N0450D_GDR_DOCD_CONTRA_SW N0450D_GDR_DOCD_CONTRA_SW N0450D GDR Physician Documented Contraindicated CHAR 1 The data in this column indicates whether a physician has documented a gradual dose reduction (GDR) as\nclinically contraindicated.",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p245__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 245,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n205 \nMFP_QLFYD_INSTN_CD \nLABEL: \nMoney Follows Person (MFP) — Qualified Institution Code \nDESCRIPTION: A code describing the type of qualified institution in which a beneficiary was living at the time of \ntransition to the community; most recent in the calendar year. \nSHORT NAME: MFP_QLFYD_INSTN_CD \nLONG NAME: MFP_QLFYD_INSTN_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S):",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

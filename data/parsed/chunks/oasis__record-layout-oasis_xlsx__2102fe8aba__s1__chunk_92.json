@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_92",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Not healing\nNA = No observable ulcer/wound CHAR 2 x x\nM0482_SURG_WOUND (M0482) Surgical Wound Does patient have a surgical wound? 0 = No, 1 = Yes CHAR 1 x x\nM0484_NBR_SURGWND (M0484) Number Surgical Wounds Current number of observable surgical wounds. 00 = Zero\n01 = one\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x x\nM0486_UNOBS_SRGWND (M0486) Unobservable Surgical Wound Does patient have at least one surgical wound that cannot be observed due to nonremovable dressing? 0 = No, 1 = Yes CHAR 1 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

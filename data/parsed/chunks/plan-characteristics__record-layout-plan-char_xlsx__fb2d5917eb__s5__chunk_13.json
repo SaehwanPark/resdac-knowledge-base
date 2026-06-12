@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s5__chunk_13",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 5,
+  "text": "year.\nAs a result, variable names change each year.\n2 The contract and plan ID variables must be used together to uniquely identify a plan sponsor's benefit package.\n3 These two variables (RELATIONSHIP_CODE and RELATIONSHIP_DESC) appear in each data file.\n4 Shading or '-' indicates that the variable was not present during this time.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

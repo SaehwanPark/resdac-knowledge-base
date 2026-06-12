@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p123__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 123,
+  "text": "TYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedicare Claims files (derived) \nVALUES: \nXX \nCOMMENT: \nCCW calculates this variable as the count of all claims from the IP, SNF, HHA, Hospice, HOP, Carrier, \nand DME claims as well as the count of PDEs for the beneficiary for the year. \nWithin MMLEADS, there are four variables that also sum to this MDCR_TOTAL_FFS_USE: \nMDCR_PTA_TOTAL_FFS_ USE, MDCR_HOP_TOTAL_FFS_ USE, MDCR_PTBNI_TOTAL_FFS_ USE, and \nMDCR_PTD_TOTAL_USE. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

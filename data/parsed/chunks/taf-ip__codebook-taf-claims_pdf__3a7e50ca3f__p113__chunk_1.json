@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p113__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 113,
+  "text": "Different Drug \n1F = Filled, With Different Quantity \n1G = Filled, With Prescriber Approval \n1H = Brand-to-Generic Change \n1J = Rx-to-OTC Change \n1K = Filled with Different Dosage Form \n2A = Prescription Not Filled \n2B = Not Filled, Directions Clarified \n3A = Recommendation Accepted \n3B = Recommendation Not Accepted \n3C = Discontinued Drug \n3D = Regimen Changed \n3E = Therapy Changed \n3F = Therapy Changed — cost increased acknowledged \n3G = Drug Therapy Unchanged \n3H = Follow-Up/Report \n3J =",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

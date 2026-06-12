@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_105",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "HPC: PPD Total Ambulatory Care Senstv Condtn (ACSC) Age-Sex Weight NUM 8 199 218 260 248 246\nHPC_PPD_CHRNC_ACSC_BASE_RISK_WT HPC: PPD Chronic Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight NUM 8 200 — — — —\nHPC_PPD_ACUTE_ACSC_BASE_RISK_WT HPC: PPD Acute Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight NUM 8 201 — — — —\nHPC_PPD_TOT_ACSC_BASE_RISK_WT HPC: PPD Total Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight NUM 8 202 — — — —\nHPC_PUCD_CHRNC_ACSC_CMRBDTY_WT HPC: PUCD Chronic",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

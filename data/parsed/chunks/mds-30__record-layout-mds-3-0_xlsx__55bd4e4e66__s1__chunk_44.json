@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_44",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "-=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern) effective 4/01/2012\n70 A1550A_DOWN_SYNDRM_CD A1550A_DOWN_SYNDRM_CD A1550A MR/DD Status: Down Syndrome Code CHAR 1 The data in this column identifies if the resident has Down Syndrome. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n71 A1550B_AUTSM_CD A1550B_AUTSM_CD A1550B MR/DD Status: Autism Code CHAR 1 The data in this column identifies if the resident has autism.",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

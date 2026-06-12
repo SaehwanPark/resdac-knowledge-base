@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p195__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 195,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n179 \nPPS_IND_CD \nLABEL: \nProspective payment system (PPS) Indicator Code \nDESCRIPTION: The code indicating whether the facility is being paid under the prospective payment system (PPS). \nSHORT NAME: PPS_IND \nLONG NAME: PPS_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = facility is not PPS \n2 = facility is PPS \nCOMMENT: \nThis value is calculated by determining if the condition code is",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

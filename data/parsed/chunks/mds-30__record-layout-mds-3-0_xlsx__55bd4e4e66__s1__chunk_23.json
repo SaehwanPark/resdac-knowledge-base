@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "IV Hierarchical Version CHAR 10 This column contains the calculated RUG IV Hierarchical Medicare RUG Group Version code.\n39 A0050_TRANS_TYPE_CD A0050_TRANS_TYPE_CD A0050 Type of Record Code CHAR 1 This column identifies the type of record submitted. 1=Add a new record\n2= Modify existing record\n3=Inactivate existing record\n^=Blank(skip pattern) effective 4/01/2012\n40 A0100A_NPI_NUM A0100A_NPI_NUM A0100A Facility National Provider Identifier (NPI) CHAR 10 This column contains the facility or",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,177 @@
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+      
+                                                                      | CLM_ID | Claim ID | 
+      
+                                                                      | CLM_LINE_NUM | Claim Line Number | 
+      
+                                                                      | NCH_CLM_TYPE_CD | NCH Claim Type Code | 
+      
+                                                                      | CLM_THRU_DT | Claim Through Date (FFS) | 
+      
+                                                                      | CARR_PRFRNG_PIN_NUM | Carrier Line Performing Provider ID Number (PIN) | 
+      
+                                                                      | PRF_PHYSN_UPIN | Carrier Line Performing UPIN Number | 
+      
+                                                                      | PRF_PHYSN_NPI | Carrier Line Performing NPI Number | 
+      
+                                                                      | ORG_NPI_NUM | Organization (or group) NPI Number | 
+      
+                                                                      | CARR_LINE_PRVDR_TYPE_CD | Carrier Line Provider Type Code | 
+      
+                                                                      | TAX_NUM | Line Provider Tax Number | 
+      
+                                                                      | PRVDR_STATE_CD | NCH Provider SSA State Code | 
+      
+                                                                      | PRVDR_ZIP | Carrier Line Performing Provider ZIP Code | 
+      
+                                                                      | PRVDR_SPCLTY | Line CMS Provider Specialty Code | 
+      
+                                                                      | RNDRNG_PRVDR_SPCLTY_CD1 | Rendering Provider Secondary Specialty Code 1 | 
+      
+                                                                      | RNDRNG_PRVDR_SPCLTY_CD2 | Rendering Provider Secondary Specialty Code 2 | 
+      
+                                                                      | RNDRNG_PRVDR_SPCLTY_CD3 | Rendering Provider Secondary Specialty Code 3 | 
+      
+                                                                      | RNDRNG_PRVDR_TXNMY_CD | Rendering Provider Taxonomy Code | 
+      
+                                                                      | PRTCPTNG_IND_CD | Line Provider Participating Indicator Code | 
+      
+                                                                      | CARR_LINE_RDCD_PMT_PHYS_ASTN_C | Carrier Line Reduced Payment Physician Assistant Code | 
+      
+                                                                      | LINE_SRVC_CNT | Line Service Count (FFS) | 
+      
+                                                                      | LINE_CMS_TYPE_SRVC_CD | Line CMS Type Service Code | 
+      
+                                                                      | LINE_PLACE_OF_SRVC_CD | Line Place Of Service Code (FFS) | 
+      
+                                                                      | CARR_LINE_PRCNG_LCLTY_CD | Carrier Line Pricing Locality Code | 
+      
+                                                                      | LINE_1ST_EXPNS_DT | Line First Expense Date (FFS) | 
+      
+                                                                      | LINE_LAST_EXPNS_DT | Line Last Expense Date (FFS) | 
+      
+                                                                      | HCPCS_CD | Healthcare Common Procedure Coding System (HCPCS) Code (FFS) | 
+      
+                                                                      | HCPCS_1ST_MDFR_CD | HCPCS Initial Modifier Code (FFS) | 
+      
+                                                                      | HCPCS_2ND_MDFR_CD | HCPCS Second Modifier Code (FFS) | 
+      
+                                                                      | BETOS_CD | Line Berenson-Eggers Type of Service (BETOS) Code | 
+      
+                                                                      | LINE_NCH_PMT_AMT | Line NCH Medicare Payment Amount | 
+      
+                                                                      | LINE_BENE_PMT_AMT | Line Payment Amount to Beneficiary | 
+      
+                                                                      | LINE_PRVDR_PMT_AMT | Line Provider Payment Amount | 
+      
+                                                                      | LINE_BENE_PTB_DDCTBL_AMT | Line Beneficiary Part B Deductible Amount | 
+      
+                                                                      | LINE_BENE_PRMRY_PYR_CD | Line Primary Payer Code (if not Medicare) | 
+      
+                                                                      | LINE_BENE_PRMRY_PYR_PD_AMT | Line Primary Payer (if not Medicare) Paid Amount | 
+      
+                                                                      | LINE_COINSRNC_AMT | Line Beneficiary Coinsurance Amount | 
+      
+                                                                      | LINE_SBMTD_CHRG_AMT | Line Submitted Charge Amount | 
+      
+                                                                      | LINE_ALOWD_CHRG_AMT | Line Allowed Charge Amount | 
+      
+                                                                      | LINE_PRCSG_IND_CD | Line Processing Indicator Code | 
+      
+                                                                      | LINE_PMT_80_100_CD | Line Payment 80%/100% Code | 
+      
+                                                                      | LINE_SERVICE_DEDUCTIBLE | Line Service Deductible Indicator Switch | 
+      
+                                                                      | CARR_LINE_MTUS_CNT | Carrier Line Miles/Time/Units/Services (MTUS) Count | 
+      
+                                                                      | CARR_LINE_MTUS_CD | Carrier Line Miles/Time/Units/Services (MTUS) Indicator Code | 
+      
+                                                                      | LINE_ICD_DGNS_CD | Line Diagnosis Code | 
+      
+                                                                      | LINE_ICD_DGNS_VRSN_CD | Line Diagnosis Code Diagnosis Version Code (ICD-9 or ICD-10) | 
+      
+                                                                      | HPSA_SCRCTY_IND_CD | Carrier Line Health Professional Shortage Area (HPSA)/Scarcity Indicator Code | 
+      
+                                                                      | CARR_LINE_RX_NUM | Carrier Line RX Number (FFS) | 
+      
+                                                                      | LINE_HCT_HGB_RSLT_NUM | Hematocrit/Hemoglobin Test Results | 
+      
+                                                                      | LINE_HCT_HGB_TYPE_CD | Hematocrit/Hemoglobin Test Type Code | 
+      
+                                                                      | LINE_NDC_CD | Line National Drug Code (NDC) (FFS) | 
+      
+                                                                      | CARR_LINE_CLIA_LAB_NUM | Clinical Laboratory Improvement Amendments (CLIA) monitored laboratory number | 
+      
+                                                                      | CARR_LINE_ASNTHSA_UNIT_CNT | Carrier Line Anesthesia Unit Count | 
+      
+                                                                      | CARR_LINE_CL_CHRG_AMT | Carrier Line Clinical Lab Charge Amount | 
+      
+                                                                      | PHYSN_ZIP_CD | Line Place of Service (POS) Physician Zip Code | 
+      
+                                                                      | LINE_POINT_OF_PCKP_ZIP_CD | Line Point of Pickup Zip Code | 
+      
+                                                                      | LINE_DROP_OFF_ZIP_CD | Line Drop Off Zip Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD1 | Line Other Applied Indicator 1st Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD2 | Line Other Applied Indicator 2nd Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD3 | Line Other Applied Indicator 3rd Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD4 | Line Other Applied Indicator 4th Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD5 | Line Other Applied Indicator 5th Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD6 | Line Other Applied Indicator 6th Code | 
+      
+                                                                      | LINE_OTHR_APLD_IND_CD7 | Line Other Applied Indicator 7th Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT1 | Line Other Applied Amount for 1st Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT2 | Line Other Applied Amount for 2nd Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT3 | Line Other Applied Amount for 3rd Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT4 | Line Other Applied Amount for 4th Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT5 | Line Other Applied Amount for 5th Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT6 | Line Other Applied Amount for 6th Code | 
+      
+                                                                      | LINE_OTHR_APLD_AMT7 | Line Other Applied Amount for 7th Code | 
+      
+                                                                      | THRPY_CAP_IND_CD1 | Therapy cap Indicator 1 Code | 
+      
+                                                                      | THRPY_CAP_IND_CD2 | Therapy cap Indicator 2 Code | 
+      
+                                                                      | THRPY_CAP_IND_CD3 | Therapy cap Indicator 3 Code | 
+      
+                                                                      | THRPY_CAP_IND_CD4 | Therapy cap Indicator 4 Code | 
+      
+                                                                      | THRPY_CAP_IND_CD5 | Therapy cap Indicator 5 Code | 
+      
+                                                                      | CLM_NEXT_GNRTN_ACO_IND_CD1 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population-Based Payment (PBP) | 
+      
+                                                                      | CLM_NEXT_GNRTN_ACO_IND_CD2 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth | 
+      
+                                                                      | CLM_NEXT_GNRTN_ACO_IND_CD3 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits | 
+      
+                                                                      | CLM_NEXT_GNRTN_ACO_IND_CD4 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3-day SNF waiver | 
+      
+                                                                      | CLM_NEXT_GNRTN_ACO_IND_CD5 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation | 
+      
+                                                                      | CARR_LINE_MDPP_NPI_NUM | Carrier Line Medicare Diabetes Prevention Program (MDPP) NPI Number | 
+      
+                                                                      | LINE_RSDL_PYMT_IND_CD | Line Residual Payment Indicator Code | 
+      
+                                                                      | LINE_RP_IND_CD | Line Representative Payee (RP) Indicator Code | 
+      
+                                                                      | LINE_PRVDR_VLDTN_TYPE_CD | Line Provider Validation Type Code | 
+      
+                                                                      | LINE_VLNTRY_SRVC_IND_CD | Line Voluntary Service Indicator Code | 
+      
+                                                                      | LINE_ADJUST_GRP_CD | Line Adjustment Group Code | 
+      
+                                                                      | LINE_ADJUST_RSN_CD | Line Adjustment Reason Code | 
+      
+                                                                      | LINE_RA_RMRK_CD | Line Remittance Advice Remark Code |

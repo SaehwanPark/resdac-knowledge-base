@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p90__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 90,
+  "text": "There are up to 25 diagnosis codes (variables called DGNSCD1–DGNSCD25). \nICD-10 codes were used starting October 2015.The diagnosis version code for these 25 diagnoses \nappears in variables DGNS_VRSN_CD_1–DGNS_VRSN_CD_25, which indicates whether this diagnosis \ncode is ICD-9 or ICD-10. \nThis field was new in 2011. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

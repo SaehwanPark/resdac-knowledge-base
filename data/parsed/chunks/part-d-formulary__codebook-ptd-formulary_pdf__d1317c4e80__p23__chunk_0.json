@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p23__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 23,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n19 \nTYPE \nLABEL: \nInsulin Type as Defined by the Model \nDESCRIPTION: Insulin Type as Defined by the Model \nTYPE: \nCHAR \nLENGTH: \n50 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nCOMBINATION \nCONCENTRATE \nINTERMEDIATE-ACTING \nLONG-ACTING \nMIX \nRAPID_ACTING \nSHORT_ACTING \nCOMMENT: \nThe PDSS model file was new in 2021, and is retired after 2023. This PDSS Model file is not produced",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_204",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "_45 DSCHRG_TO_LVG_WTH_CD (45) Discharge to Living With CHAR 2 A code which indicates with whom the resident will be living if Item 44A (Discharge to Living Setting) is coded 01 - Home. 01 = Alone, 02 = Family/Relatives, 03 = Friends, 04 = Attendant, 05 = Other\n164 _46 DGNS_TRNSFR_DEATH_CD (46) Diagnosis for Interruption or Death (ICD-9 Code) CHAR 7 An ICD-9 code indicating the reason for the program interruption or death.\n165 _47A CMPLCTN_DRNG_REHAB_A_CD (47A) Complications During",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

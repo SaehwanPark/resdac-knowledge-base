@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p55__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 55,
+  "text": "the state submission and \nCMS approval process. \nSHORT NAME: MC_PLAN_WVR_ID \nLONG NAME: MC_PLAN_WVR_ID \nTYPE: \nCHAR \nLENGTH: \n20 \nFILE(S): \nAPL Operating Authority \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nWaiver ID, maximum 20 letters and numbers (e.g., W-1115/2016, MA.RO1.MO5, 1926544) \nNull/missing = unknown/missing \nCOMMENT: \nThe categories of demonstration and waiver programs include: 1915(b)(1); 1915(b)(2); 1915(b)(3), and \n1915(b)(4) managed care waivers; 1915(c) home and",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

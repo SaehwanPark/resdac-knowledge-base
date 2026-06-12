@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p128__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 128,
+  "text": "This variable is the monthly indicator of the beneficiary’s Medicare-Medicaid eligibility type code. CCW \ncreates this variable using a hierarchy that gives priority to full benefit dual status over other types of \nenrollment. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF/T-MSIS DE file (derived) (derived) \nVALUES: \n1 = Medicaid only— Aged/Blind/or Disabled (A/B/D) (non-dual) \n2 = Medicare only (non-dual) \n3 = Partial Dual) \n4 = Full Dual \n0 = Not MMLEADS population for the month \nNull/missing = not",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p16__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 16,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n6 \nBENE_ID \nLABEL: \nEncrypted CCW Beneficiary ID \nDESCRIPTION: The unique CCW identifier for a beneficiary. \nThe CCW assigns a unique beneficiary identification number to everyone who receives Medicare \nand/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., \nMedicare claims, Medicare encounter, MAX claims, and MDS assessment data). \nThis",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

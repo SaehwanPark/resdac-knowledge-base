@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p6__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 6,
+  "text": "LONG NAME: CONTRACT_ID \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n5-digit alpha/numeric value \nCOMMENT: \nPrior to 2015, this variable was always encrypted to comply with CMS privacy rules. You need to know \nboth the Part D contract number and plan benefit package identification number (variable called \nPLAN_ID) in order to identify the specific plan benefit package offered to beneficiaries. This variable \ncorresponds with the CONTRACT_NAME variable, which is the contract",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

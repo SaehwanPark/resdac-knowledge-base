@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Assessment Correction Version CHAR 2 The number of the assessment. 00 = Original, 01 = First correction, 02 = Second correction, etc.\n6 ASTMDND AST_MOD_IND Assessment Modification Indicator CHAR 1 Designates version of the assessment C = Current, M = Modified, X = Inactive\n7 CARELOCK CARE_LOCK Care Planning Lock Date DATE 8 Care Planning Lock Date\n8 CRTDDT CREATED_DATE Created Date DATE 8 For OASIS and MDS Assessments, it is the date the record submitted was saved to the state database.",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

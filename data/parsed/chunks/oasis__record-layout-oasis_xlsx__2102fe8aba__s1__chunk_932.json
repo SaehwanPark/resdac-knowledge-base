@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_932",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110G1A_NINVSV_VNT_ADMSN_CD Therapies: Non-Invas Mechanical Ventilator (Admis) Indicates whether the patient was receiving non-invasive mechanical ventilator therapies at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110G1C_NINVSV_VNT_DSCHRG_CD Therapies: Non-Invas Mechanical Ventilator (Disch) Indicates whether the patient was receiving non-invasive mechanical ventilator therapies at the time of",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p194__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 194,
+  "text": "be paid under the inpatient prospective payment system (IPPS). \nSHORT NAME: HAC_PGM_RDCTN_IND_SW \nLONG NAME: HAC_PGM_RDCTN_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = hospital subject to a reduction under the HAC Reduction Program \nN = hospital is not subject to a reduction under the HAC Reduction Program \nCOMMENT: \nThis field is new in October 2014. This field only applies to inpatient claims. \nFor details on the CMS hospital readmission reduction program reference the CMS",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

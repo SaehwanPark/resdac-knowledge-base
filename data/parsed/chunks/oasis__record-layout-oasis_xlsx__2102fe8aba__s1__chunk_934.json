@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_934",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Therapies: BiPAP (Discharge) Indicates whether the patient was receiving BiPAP therapies at the time of discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110G3A_CPAP_ADMSN_CD Therapies: CPAP (Admission) Indicates whether the patient was receiving CPAP therapies at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110G3C_CPAP_DSCHRG_CD Therapies: CPAP (Discharge) Indicates whether the patient was receiving CPAP therapies at the time of discharge. 0.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

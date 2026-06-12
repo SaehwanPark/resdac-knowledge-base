@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_278",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "pressure ulcer at a given stage, enter 0..\n266 WORSENING_STG_3_PRSR_ULCRS_NUM WORSENING_STG_3_PRSR_ULCRS_NUM M0800B Worsening Stage 3 Pressure Ulcers Number CHAR 1 The number of current stage 3 pressure ulcers that were not present or were at a lesser stage on admission. If no current pressure ulcer at a given stage, enter 0..\n267 WORSENING_STG_4_PRSR_ULCRS_NUM WORSENING_STG_4_PRSR_ULCRS_NUM M0800C Worsening Stage 4 Pressure Ulcers Number CHAR 1 The number of current stage 4 pressure ulcers",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

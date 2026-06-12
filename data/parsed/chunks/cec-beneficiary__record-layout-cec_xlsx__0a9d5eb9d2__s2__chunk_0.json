@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cec-beneficiary__record-layout-cec_xlsx__0a9d5eb9d2__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/0a9d5eb9d2a837bfce8a309faaa844e1ab5cb215.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Condition Warehouse (CCW) Data Dictionary\nComprehensive End-stage Renal Disease Care Model (CEC) — Provider File\nVersion — May 2025\nSAS Name Label Type Length\nESCO_NUMBER ESCO Number CHAR 5\nESCO_NAME ESCO Name CHAR 100\nPERFORMANCE_PERIOD Period of Performance CHAR 18\nTIN_NUMBER Tax ID Number of the practice/facility associated with the Individual NPI CHAR 10\nPRNT_PRTCPNT_NPI_NUM Parent Participant NPI Number CHAR 10\nORGANIZATION_NAME Organization Name CHAR 255\nNPI_NUMBER Individual",
+  "dataset": "cec-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cec.xlsx"
+}

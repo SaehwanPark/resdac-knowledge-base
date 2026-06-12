@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_62",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Memory Problem, \"-\" = Unknown, -2 = Space\n124 B3A B3A_CURNT_SEASON (B3A) Current Season CHAR 1 Cognitive patterns: memory/recall ability - current season. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n125 B3B B3B_LOC_OWN_ROOM (B3B) Location of Own Room CHAR 1 Cognitive patterns: memory/recall ability - location of own room. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n126 B3C B3C_STAFF (B3C) Staff Names/Faces CHAR 1 Cognitive patterns: memory/recall ability - staff names/faces. 0 = No, 1 = Yes, \"-\"",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

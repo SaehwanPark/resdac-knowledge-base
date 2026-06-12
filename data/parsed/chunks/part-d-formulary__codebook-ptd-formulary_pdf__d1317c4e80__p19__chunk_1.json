@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p19__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 19,
+  "text": "step therapy protocols, this field is populated with the maximum step value for \nthe product. \nIf the value is greater than 1, then the beneficiary’s plan imposed some type of step therapy \nrequirement, and the value indicates the number of steps or therapy trials needed before becoming \neligible for the current drug. \nSHORT NAME: — \nLONG NAME: STEP \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nNull (no step requirement), 1-4 \nCOMMENT: \nPart D plan sponsors submit the pricing,",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

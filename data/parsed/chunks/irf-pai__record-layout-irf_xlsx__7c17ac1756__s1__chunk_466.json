@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_466",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "mellitus (diabetic retinopathy, neuropathy and nephropathy) at the time of admission. CHAR 1 The data in this column indicates whether the patient had an active diagnosis of diabetes mellitus (diabetic retinopathy, neuropathy and nephropathy) at the time of admission. 0 = No\n1 = Yes\n387 I7900_NO_ACTV_DEASE_CD I7900_NO_ACTV_DEASE_CD I7900 No Active Disease Code - The data in this column indicates that the patient had none of the active diagnoses at the time of admission. CHAR 1 The data in this",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

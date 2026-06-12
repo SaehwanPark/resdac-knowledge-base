@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 2,
+  "text": "15 4\nMC_PLAN_ADR_LINE_1 Managed Care Plan Location - Street Address 1 CHAR 90 5\nMC_PLAN_ADR_LINE_2 Managed Care Plan Location - Street Address 2 CHAR 90 6\nMC_PLAN_ADR_LINE_3 Managed Care Plan Location - Street Address 3 CHAR 90 7\nMC_PLAN_CITY Managed Care Plan Location - City CHAR 42 8\nMC_PLAN_STATE_CD Managed Care Plan Location - State (ANSI Code) CHAR 2 9\nMC_PLAN_ZIP_CD Managed Care Plan Location - Zip Code CHAR 13 10\nMC_PLAN_CNTY_CD Managed Care Plan Location - County (FIPS) Code CHAR 4",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 22,
+  "text": "STATE_BENE_MDCD_ID \nLONG NAME: STATE_BENE_MDCD_ID \nTYPE: \nCHAR \nLENGTH: \n32 \nFILE(S): \nPatient \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \nEx - ABC123XYZ9875555555DDDDDDD55DD \nCOMMENT: \nThis ID number may not be the state’s Transformed Medicaid Statistical Information System (T-MSIS) \nidentifier (MSIS_ID) for the patient. That means it may not be possible to join the AHCAH data with the \nCCW Medicaid T-MSIS data files (e.g., if interested in identifying the actual inpatient claims for",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

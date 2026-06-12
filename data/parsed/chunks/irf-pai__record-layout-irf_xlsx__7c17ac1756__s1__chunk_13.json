@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "stay, which represents the last day of the 3-day admission assessment time period. These three calendar days are the days during which the patient's clinical condition should be assessed.\n29 _14 ADMSN_CLS_CD (14) Admission Class CHAR 2 The patient's admission classification. 01 = Initial Rehab, 02 = Evaluation, 03 = Readmission, 04 = Unplanned Discharge, 05 = Continuing Rehabilitation.\n30 _15 ADMT_FROM_CD (15) Admit From (at date of admission) CHAR 2 The living setting from which the patient",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

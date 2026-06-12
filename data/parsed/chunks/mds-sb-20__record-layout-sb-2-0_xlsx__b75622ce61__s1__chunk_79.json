@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_79",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Indicates a diagnosis of pneumonia - inflammation of the lungs; most commonly of bacterial or viral origin. 0 = Unchecked, 1 = Checked, -1 = Unknown\n98 I2G I2G_SEPTICEMIA 26b(I2g)Septicemia CHAR 1 Indicates a diagnosis of septicemia - morbid condition associated with bacterial growth in the blood. 0 = Unchecked, 1 = Checked, -1 = Unknown\n99 J1C J1C_DEHYDRATED 27a(J1c)Dehydrated - Output Exceeds Input CHAR 1 Indicates the patient is dehydrated - output excees input. 0 = Unchecked, 1 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

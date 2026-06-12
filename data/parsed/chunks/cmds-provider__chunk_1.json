@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-provider__chunk_1",
+  "source_document": "data/raw/html/dataset_page/d29088b3a0ca3b7bd57bfb2ce420ed5854cd27de.html",
+  "page": null,
+  "text": "Entity ID (with which the Provider is associated)\n- National Provider Identifier (NPI)\n- Tax Identification Number (TIN)\n- CMS Certification Number (CCN)\n- Provider Start Date\n- Provider End Date\n- Provider Participation Type Code\nThe Entity ID is the only key field needed to link a Provider to their Entity.\nThe NPI, TIN, and/or CCN can be used to link to claims and other relevant CCW data.\nA Provider may have an End Date of 12/31/9999, which indicates that the Provider is “currently”",
+  "dataset": "cmds-provider",
+  "url": "https://resdac.org/cms-data/files/cmds-provider"
+}

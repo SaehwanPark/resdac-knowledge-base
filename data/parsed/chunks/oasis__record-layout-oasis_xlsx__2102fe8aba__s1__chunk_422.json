@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_422",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_RCNT_DCLN M1033 (M1032) Risk For Hosp - Decline In Mental, Emotional, Behavioral This field is checked if the patient is at risk for hospitalization due to recent decline in mental, emotional, or\nbehavioral status in the past 3 months. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_5PLUS_MDCTN M1033 (M1032) Risk For Hosp - Taking 5 Or More Meds This field is checked if the patient is at risk for hospitalization",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

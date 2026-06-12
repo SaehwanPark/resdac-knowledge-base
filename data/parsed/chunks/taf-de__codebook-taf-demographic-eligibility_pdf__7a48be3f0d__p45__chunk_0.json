@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p45__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 45,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n5 \n AGE_GRP_CD \nLABEL: \nAge Group \nDESCRIPTION: A beneficiary’s age group (in years) during the last month of enrollment in the calendar year, grouped \ninto categories. \nSHORT NAME: AGE_GRP_CD \nLONG NAME: AGE_GRP_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n1 = Age <1 \n2 = Age 1–5 \n3 = Age",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

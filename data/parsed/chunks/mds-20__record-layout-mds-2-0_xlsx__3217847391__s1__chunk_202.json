@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_202",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = Yes, \"-\" = Unknown.\n298 I1K I1K_OTH_CARDIO_DIS (I1K) Other Cardiovascular Disease CHAR 1 Disease diagnosis: diseases - heart/circulation - other cardiovascular disease. 0 = No, 1 = Yes, \"-\" = Unknown.\n299 I1KK I1KK_DIAB_RETIN (I1KK) Diabetic Retinopathy CHAR 1 Disease diagnosis: diseases - sensory - diabetic retinopathy. 0 = No, 1 = Yes, \"-\" = Unknown.\n300 I1L I1L_ARTHRITIS (I1L) Arthritis CHAR 1 Disease diagnosis: diseases - musculoskeletal - arthritis. 0 = No, 1 = Yes, \"-\" = Unknown.\n301",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "gap. N No Gap Coverage\nG Generics\nB Generics and Brands\n9 Not Applicable\n19 ded_apply How Deductible is applied Char 1 Indicates whether plan charges the Medicare-defined Part D deductible amount.\n1 Medicare-defined amount\n2 Plan-defined amount\n3 No deductible\n20 ded_amt Deductible Amount Num 12 Dollar amount of Part D deductible charged by plan.\n21 pre_ICL_apply How Pre-ICL cost shares are applied Char 1 Indicates how plan charges cost sharing before the Initial Coverage Limit (ICL) is",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

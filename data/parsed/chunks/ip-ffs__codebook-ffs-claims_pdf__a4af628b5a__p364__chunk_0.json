@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p364__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 364,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n346 \nREV_CNTR_DDCTBL_COINSRNC_CD \nLABEL: \nRevenue Center Deductible Coinsurance Code \nDESCRIPTION: Code indicating whether the revenue center charges are subject to deductible and/or coinsurance. \nSHORT NAME: REVDEDCD \nLONG NAME: REV_CNTR_DDCTBL_COINSRNC_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Charges are subject to deductible and coinsurance \n1 = Charges are",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

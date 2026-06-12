@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_501",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "1 This column contains information on whether the patient needs an interpreter to communicate with a doctor or health care staff. 0 = No\n1 = Yes\n9 = Unable to Determine\n433 TRNSPRTN_MDCL_ADMSN_CD TRNSPRTN_MDCL_ADMSN_CD Transportation: Yes, medical (Adm) CHAR 1 This column documents whether lack of transportation has kept the patient from attending medical appointments at the time of admission. 0 = No\n1 = Yes\n434 TRNSPRTN_MDCL_DSCHRG_CD TRNSPRTN_MDCL_DSCHRG_CD Transportation: Yes, medical (Dsch)",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

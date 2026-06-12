@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p251__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 251,
+  "text": "MedPAR (derived) \nVALUES: \n— \nCOMMENT: \nFor Inpatient services, the beneficiary is liable for a daily coinsurance amount after the 60th day and \nbefore the 91st day in a single spell of illness; for SNF services, the beneficiary is liable for a daily \ncoinsurance amount after the 20th day and before the 101st day in a single spell of illness. \nThis field is derived by accumulating the coinsurance day count that is present on any of the claim \nrecords included in the stay (i.e., the sum of",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

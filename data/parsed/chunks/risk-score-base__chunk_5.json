@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-base__chunk_5",
+  "source_document": "data/raw/html/dataset_page/a908448a73ab3c65dfd95d8626da4db2940148f2.html",
+  "page": null,
+  "text": "contain a wide range of demographic and Medicare coverage information and can be linked to other CCW files using the Beneficiary ID variable.\nWhat does this file include? (variable highlights)\n- Monthly Part C risk payment scores\n- Monthly Part C model segment codes\n- Monthly Part D payment risk scores\n- Monthly Part D model segment codes\n- Long-term institutional monthly indicators\n- All possible Part C and Part D risk scores\n- Beneficiary demographic characteristics\nSpecial considerations:\n-",
+  "dataset": "risk-score-base",
+  "url": "https://resdac.org/cms-data/files/risk-score-base"
+}

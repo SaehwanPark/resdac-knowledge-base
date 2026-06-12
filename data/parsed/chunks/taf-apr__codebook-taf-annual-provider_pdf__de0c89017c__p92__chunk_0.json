@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p92__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 92,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n93 \nPRVDR_ENRLMT_STUS_CD \nLABEL: \nProvider Enrollment Status Code (Medicaid and/or CHIP) \nDESCRIPTION: A code representing the provider’s Medicaid and/or CHIP enrollment status for the time span specified \nby the PRVDR_ENRLMT START_DT and PRVDR_ENRLMT_END_DT data elements. \nSHORT NAME: PRVDR_ENRLMT_STUS_CD \nLONG NAME: PRVDR_ENRLMT_STUS_CD \nTYPE: \nCHAR \nLENGTH: \n2",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_338",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "precluded by missing data.\n572 VA12A VA12A_NUTRITION_TR (VA12A) Nutritional Status Triggered CHAR 1 RAP summary: nutritional status - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n573 VA12B VA12B_NUTRITION_PC (VA12B) Nutritional Status Care Planning Decision CHAR 1 RAP summary: nutritional status - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n574 VA13A VA13A_FEED_TUBE_TR (VA13A) Feeding Tubes",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

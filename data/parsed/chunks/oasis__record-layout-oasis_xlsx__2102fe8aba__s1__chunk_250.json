@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_250",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "This field indicates the reason why the PPV was not received from the agency during this episode of care. 01 = Patient has received PPV in the past.\n02 = Offered and declined.\n03 = Assessed and determined to have medical contraindication(s).\n04 = Not indicated; patient does not meet age/condition guidelines for PPV.\n05 = None of the above. CHAR 2 x\nM1100_PTNT_LVG_STUTN M1100 Patient Living Situation This field indicates the best description of the patient's residential circumstance and",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

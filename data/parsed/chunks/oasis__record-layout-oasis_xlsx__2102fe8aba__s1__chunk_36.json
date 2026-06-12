@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_36",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Inpatient discharge date (most recent): unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0180_INP_DSCHG_DT (M0180) Inpatient Discharge Date Inpatient discharge date (most recent). DATE 8 x x\nM0190_14D_INP1_ICD (M0190) Inpatient Diagnosis and ICD Code - a Inpatient diagnosis and ICD code categories: inpatient facility diagnosis, ICD Code - a. CHAR 7 x x\nM0190_14D_INP2_ICD (M0190) Inpatient Diagnosis and ICD Code - b Inpatient diagnosis and ICD code categories: inpatient facility diagnosis, ICD Code - b.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

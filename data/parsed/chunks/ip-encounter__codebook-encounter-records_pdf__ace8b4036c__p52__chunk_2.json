@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p52__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 52,
+  "text": "= \nDiagnosis was present at the time of admission (POA) \nN = \nDiagnosis was not present at the time of admission \nU = \nDocumentation is insufficient to determine if condition was present on admission \nW = \nProvider is unable to clinically determine whether condition was present on admission \nCOMMENT: \nThe present on admission indicators for the diagnosis E codes are stored in CLM_E_POA_IND_SW1–\nCLM_E_POA_IND_SW10. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

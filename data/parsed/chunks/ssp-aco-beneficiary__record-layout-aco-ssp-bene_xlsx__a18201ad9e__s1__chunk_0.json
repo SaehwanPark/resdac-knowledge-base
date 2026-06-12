@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "Shared Savings Program — Accountable Care Organizations (SSP ACO)\nBeneficiary File\nVersion — January 2026\nVariable/SAS name SAS Label Long description Type Length Time period 2013 2014 2015 2016 2017 2018 2019 2019-A3 2020-2021 2022 2023-2026\nBENE_ID Encrypted 723 Beneficiary ID The unique CCW identifier for a beneficiary. The CCW assigns a unique beneficiary identification number to each individual who receives Medicare and/or Medicaid, and uses that number to identify an individual’s records",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

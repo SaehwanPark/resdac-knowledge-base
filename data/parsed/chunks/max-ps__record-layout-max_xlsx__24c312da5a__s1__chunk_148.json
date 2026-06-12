@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_148",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Medicare crossover code (Jan) - Same As Dual Code - In Place for Historical Compatibility CHAR 2 ‾ X X X X X X X X X X All values in 2005 = '99'\n658 EL_MDCR_XOVR_MO_2 Medicare crossover code (Feb) - Same As Dual Code - In Place for Historical Compatibility CHAR 2 ‾ X X X X X X X X X X All values in 2005 = '99'\n659 EL_MDCR_XOVR_MO_3 Medicare crossover code (Mar) - Same As Dual Code - In Place for Historical Compatibility CHAR 2 ‾ X X X X X X X X X X All values in 2005 = '99'\n660",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

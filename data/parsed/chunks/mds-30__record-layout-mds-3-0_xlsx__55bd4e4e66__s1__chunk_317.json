@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_317",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "information\n 1=Indicators of pain or possible pain observed 1 to 2 days\n 2=Indicators of pain or possible pain observed 3 to 4 days\n 3=Indicators of possible pain observed daily\n^=Blank (skip pattern)\n350 J1100A_SOB_EXRTN_CD J1100A_SOB_EXRTN_CD J1100A Shortness of Breath With Exertion Code CHAR 1 The data in this column indicates whether the resident had shortness of breath with exertion (e.g., walking, bathing, transferring). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n351",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

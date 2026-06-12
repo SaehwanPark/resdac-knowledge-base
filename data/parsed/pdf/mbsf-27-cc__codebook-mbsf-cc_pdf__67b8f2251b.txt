@@ -1,0 +1,3020 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Master Beneficiary Summary File (MBSF) 
+27 CCW Chronic Conditions (CC) File Codebook 
+MAY 2026 │ VERSION 1.3
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+May 2026 
+K. Schneider 
+Re (alpha)-ordered variable entry for CANCER_COLORECTAL 
+1.3 
+January 2022 
+A. Sisco 
+Updated titling to reflect "27" conditions and "CC" file 
+1.2 
+February 2021 
+C. Alleman 
+K. Russell 
+Migrated codebook to new document template; changed 
+variable order to sort alphabetically on long name. 
+1.1 
+May 2017 
+C. Alleman 
+K. Schneider 
+Initial release of codebook for the Master Beneficiary Summary 
+File — Chronic Condition Segment 
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Beneficiary Summary File (MBSF) 
+— 27 CCW Chronic Condition (CC) research files. The guide includes several ways for users to quickly find the 
+information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and notes discussing the variable construction and use 
+The CCW team has included hyperlinks throughout the codebook to make it easier for users to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes users to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes users back to the Table of Contents
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+ii 
+Table of Contents  
+This section of the Codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links: 
+ 
+Variable Details............................................................................................................................................................. 1 
+ALZH 
+ .................................................................................................................................................................... 1 
+ALZH_DEMEN ........................................................................................................................................................... 2 
+ALZH_DEMEN_EVER ................................................................................................................................................. 3 
+ALZH_DEMEN_MID ................................................................................................................................................... 4 
+ALZH_EVER ............................................................................................................................................................... 5 
+ALZH_MID ................................................................................................................................................................ 6 
+AMI 
+ .................................................................................................................................................................... 7 
+AMI_EVER................................................................................................................................................................. 8 
+AMI_MID .................................................................................................................................................................. 9 
+ANEMIA .................................................................................................................................................................. 10 
+ANEMIA_EVER ........................................................................................................................................................ 11 
+ANEMIA_MID ......................................................................................................................................................... 12 
+ASTHMA ................................................................................................................................................................. 13 
+ASTHMA_EVER ....................................................................................................................................................... 14 
+ASTHMA_MID ......................................................................................................................................................... 15 
+ATRIAL_FIB ............................................................................................................................................................. 16 
+ATRIAL_FIB_EVER ................................................................................................................................................... 17 
+ATRIAL_FIB_MID ..................................................................................................................................................... 18 
+BENE_ENROLLMT_REF_YR ...................................................................................................................................... 19 
+BENE_ID ................................................................................................................................................................. 20 
+CANCER_BREAST .................................................................................................................................................... 21 
+CANCER_BREAST_EVER........................................................................................................................................... 22 
+CANCER_BREAST_MID ............................................................................................................................................ 23 
+CANCER_COLORECTAL ............................................................................................................................................ 24 
+CANCER_COLORECTAL_EVER .................................................................................................................................. 25 
+CANCER_COLORECTAL_MID ................................................................................................................................... 26 
+CANCER_ENDOMETRIAL ......................................................................................................................................... 27 
+CANCER_ENDOMETRIAL_EVER ............................................................................................................................... 28 
+CANCER_ENDOMETRIAL_MID ................................................................................................................................. 29 
+CANCER_LUNG ....................................................................................................................................................... 30 
+CANCER_LUNG_EVER ............................................................................................................................................. 31 
+CANCER_LUNG_MID ............................................................................................................................................... 32 
+CANCER_PROSTATE ................................................................................................................................................ 33 
+CANCER_PROSTATE_EVER ...................................................................................................................................... 34 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+iii 
+CANCER_PROSTATE_MID ........................................................................................................................................ 35 
+CATARACT .............................................................................................................................................................. 36 
+CATARACT_EVER..................................................................................................................................................... 37 
+CATARACT_MID ...................................................................................................................................................... 38 
+CHF 
+ .................................................................................................................................................................. 39 
+CHF_EVER ............................................................................................................................................................... 40 
+CHF_MID ................................................................................................................................................................ 41 
+CHRONICKIDNEY ..................................................................................................................................................... 42 
+CHRONICKIDNEY_EVER ........................................................................................................................................... 43 
+CHRONICKIDNEY_MID ............................................................................................................................................ 44 
+COPD  .................................................................................................................................................................. 45 
+COPD_EVER ............................................................................................................................................................ 46 
+COPD_MID.............................................................................................................................................................. 47 
+DEPRESSION ........................................................................................................................................................... 48 
+DEPRESSION_EVER ................................................................................................................................................. 49 
+DEPRESSION_MID ................................................................................................................................................... 50 
+DIABETES ................................................................................................................................................................ 51 
+DIABETES_EVER ...................................................................................................................................................... 52 
+DIABETES_MID ....................................................................................................................................................... 53 
+ENRL_SRC ............................................................................................................................................................... 54 
+GLAUCOMA ............................................................................................................................................................ 55 
+GLAUCOMA_EVER .................................................................................................................................................. 56 
+GLAUCOMA_MID .................................................................................................................................................... 57 
+HIP_FRACTURE ....................................................................................................................................................... 58 
+HIP_FRACTURE_EVER ............................................................................................................................................. 59 
+HIP_FRACTURE_MID ............................................................................................................................................... 60 
+HYPERL  .................................................................................................................................................................. 61 
+HYPERL_EVER ......................................................................................................................................................... 62 
+HYPERL_MID ........................................................................................................................................................... 63 
+HYPERP  .................................................................................................................................................................. 64 
+HYPERP_EVER ......................................................................................................................................................... 65 
+HYPERP_MID .......................................................................................................................................................... 66 
+HYPERT  .................................................................................................................................................................. 67 
+HYPERT_EVER ......................................................................................................................................................... 68 
+HYPERT_MID .......................................................................................................................................................... 69 
+HYPOTH .................................................................................................................................................................. 70 
+HYPOTH_EVER ........................................................................................................................................................ 71 
+HYPOTH_MID ......................................................................................................................................................... 72 
+ISCHEMICHEART ..................................................................................................................................................... 73 
+ISCHEMICHEART_EVER ........................................................................................................................................... 74 
+ISCHEMICHEART_MID ............................................................................................................................................. 75 
+OSTEOPOROSIS ....................................................................................................................................................... 76 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+iv 
+OSTEOPOROSIS_EVER ............................................................................................................................................. 77 
+OSTEOPOROSIS_MID .............................................................................................................................................. 78 
+RA_OA  .................................................................................................................................................................. 79 
+RA_OA_EVER .......................................................................................................................................................... 80 
+RA_OA_MID ........................................................................................................................................................... 81 
+STROKE_TIA ............................................................................................................................................................ 82 
+STROKE_TIA_EVER .................................................................................................................................................. 83 
+STROKE_TIA_MID ................................................................................................................................................... 84 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+1 
+Variable Details 
+This section of the Codebook contains one entry for each variable in the Medicare Beneficiary Summary File (MBSF) 27 
+CCW Chronic Conditions (CC) files. Each entry contains variable details to facilitate understanding and use of the variables. 
+ALZH 
+LABEL: 
+Alzheimer's Disease End-of-Year Indicator 
+DESCRIPTION: This code specifies whether the beneficiary met the Chronic Condition Warehouse (CCW) algorithm 
+criteria for Alzheimer's disease as of the end of the calendar year. 
+SHORT NAME: ALZH 
+LONG NAME: ALZH 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+ 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For Alzheimer's disease, beneficiaries must have at least one inpatient, SNF, home health, Part B 
+institutional, or Part B non-institutional (carrier) claim with an Alzheimer's code in any position during 
+the three-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+2 
+ALZH_DEMEN 
+LABEL: 
+Alzheimer's Disease and Related Disorders or Senile Dementia End-of-Year Indicator 
+DESCRIPTION:  This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+Alzheimer's disease and related disorders or senile dementia as of the end of the calendar year. 
+SHORT NAME: ALZHDMTA 
+LONG NAME: ALZH_DEMEN 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT:  
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For Alzheimer's disease and related disorders or senile dementia, beneficiaries must have at least one 
+inpatient, SNF, home health, Part B institutional, or Part B non-institutional (carrier) claim with a 
+related code in any position during the three-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+3 
+ALZH_DEMEN_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the Alzheimer's disease and related disorders or 
+senile dementia indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) Alzheimer's disease and related disorders or senile dementia indicator. The variable 
+will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: ALZHDMTE 
+LONG NAME: ALZH_DEMEN_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+4 
+ALZH_DEMEN_MID 
+LABEL: 
+Alzheimer's Disease and Related Disorders or Senile Dementia Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+Alzheimer's disease and related disorders or senile dementia on July 1 of the specified reference 
+period. 
+SHORT NAME: ALZHDMTM 
+LONG NAME: ALZH_DEMEN_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For Alzheimer's disease and related disorders or senile dementia, beneficiaries must have at least one 
+inpatient, SNF, home health, Part B institutional, or Part B non-institutional (carrier) claim with a 
+related code in any position during the three-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+5 
+ALZH_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the Alzheimer’s disease indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) Alzheimer's disease indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: ALZHE 
+LONG NAME: ALZH_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+6 
+ALZH_MID 
+LABEL: 
+Alzheimer's Disease Mid-Year Indicator 
+DESCRIPTION: This code specifies whether the beneficiary met the Chronic Condition Warehouse (CCW) algorithm 
+criteria for Alzheimer's disease on July 1 of the specified reference period. 
+SHORT NAME: ALZHM 
+LONG NAME: ALZH_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For Alzheimer's disease, beneficiaries must have at least one inpatient, SNF, home health, Part B 
+institutional, or Part B non-institutional (carrier) claim with an Alzheimer's code in any position during 
+the three-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+7 
+AMI 
+LABEL: 
+Acute Myocardial Infarction End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+an acute myocardial infarction (AMI; heart attack) as of the end of the calendar year. 
+SHORT NAME: AMI 
+LONG NAME: AMI 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For heart attack, beneficiaries must have at least one inpatient claim with a heart attack diagnosis 
+code in the first or second position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+8 
+AMI_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the AMI indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) acute myocardial infarction (AMI; heart attack) indicator. The variable will be blank 
+for beneficiaries that have never had the condition. 
+SHORT NAME: AMIE 
+LONG NAME: AMI_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+9 
+AMI_MID 
+LABEL: 
+Acute Myocardial Infarction Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+an acute myocardial infarction (AMI; heart attack) on July 1 of the specified reference period. 
+SHORT NAME: AMIM 
+LONG NAME: AMI_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For heart attack, beneficiaries must have at least one inpatient claim with a heart attack diagnosis 
+code in the first or second position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+10 
+ANEMIA 
+LABEL: 
+Anemia End Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+anemia as of the end of the calendar year. 
+SHORT NAME: ANEMIA 
+LONG NAME: ANEMIA 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For anemia, beneficiaries must have at least one inpatient, SNF, home health, Part B institutional, or 
+Part B non-institutional (carrier) claim with an anemia code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+11 
+ANEMIA_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the anemia indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) anemia indicator. The variable will be blank for beneficiaries that have never had 
+the condition. 
+SHORT NAME: ANEMIA_EVER 
+LONG NAME: ANEMIA_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+12 
+ANEMIA_MID 
+LABEL: 
+Anemia Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+anemia on July 1 of the specified reference period. 
+SHORT NAME: ANEMIA_MID 
+LONG NAME: ANEMIA_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For anemia, beneficiaries must have at least one inpatient, SNF, home health, Part B institutional, or 
+Part B non-institutional (carrier) claim with an anemia code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+13 
+ASTHMA 
+LABEL: 
+Asthma End Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+asthma as of the end of the calendar year. 
+SHORT NAME: ASTHMA 
+LONG NAME: ASTHMA 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For asthma, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-Part B 
+(institutional or non-institutional) claims with an asthma code in any position during the one-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+14 
+ASTHMA_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the asthma indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) asthma indicator. The variable will be blank for beneficiaries that have never had 
+the condition. 
+SHORT NAME: ASTHMA_EVER 
+LONG NAME: ASTHMA_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+15 
+ASTHMA_MID 
+LABEL: 
+Asthma Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+asthma on July 1 of the specified reference period. 
+SHORT NAME: ASTHMA_MID 
+LONG NAME: ASTHMA_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For asthma, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-Part B 
+(institutional or non-institutional) claims with an asthma code in any position during the one-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+16 
+ATRIAL_FIB 
+LABEL: 
+Atrial Fibrillation End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+atrial fibrillation as of the end of the calendar year. 
+SHORT NAME: ATRIALFB 
+LONG NAME: ATRIAL_FIB 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For atrial fibrillation, beneficiaries must have at least one inpatient claim or two-Part B institutional or 
+non-institutional (carrier) claims with an atrial fibrillation code in the first or second position during 
+the one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+17 
+ATRIAL_FIB_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the atrial fibrillation indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) atrial fibrillation indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: ATRIALFE 
+LONG NAME: ATRIAL_FIB_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+18 
+ATRIAL_FIB_MID 
+LABEL: 
+Atrial Fibrillation Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+atrial fibrillation on July 1 of the specified reference period. 
+SHORT NAME: ATRIALFM 
+LONG NAME: ATRIAL_FIB_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For atrial fibrillation, beneficiaries must have at least one inpatient claim or two-Part B institutional or 
+non-institutional (carrier) claims with an atrial fibrillation code in the first or second position during 
+the one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+19 
+BENE_ENROLLMT_REF_YR 
+LABEL: 
+Reference Year 
+DESCRIPTION: This field indicates the reference year of the enrollment data. 
+SHORT NAME: RFRNC_YR 
+LONG NAME: BENE_ENROLLMT_REF_YR 
+TYPE: 
+NUM 
+LENGTH: 
+4 
+SOURCE: 
+CMS Enrollment Database (EDB) 
+VALUES: 
+1999–current data year 
+COMMENT: 
+The data files are partitioned into calendar year files. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+20 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. 
+The CCW assigns a unique beneficiary identification number to each individual who receives Medicare 
+and/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., 
+Medicare claims, MAX claims, MDS assessment data). 
+This number does not change during a beneficiary’s lifetime and each number is used only once. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME: BENE_ID 
+LONG NAME: BENE_ID 
+TYPE: 
+CHAR 
+LENGTH: 
+15 
+SOURCE: 
+CCW 
+VALUES: 
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+21 
+CANCER_BREAST 
+LABEL: 
+Breast Cancer End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+breast cancer (female or male) as of the end of the calendar year. 
+SHORT NAME: CNCRBRST 
+LONG NAME: CANCER_BREAST 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For breast cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart with a breast cancer code in 
+any position during the one-year reference period. When two claims are required, they must occur at 
+least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+22 
+CANCER_BREAST_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for female/male breast cancer indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) breast cancer (female or male) indicator. The variable will be blank for beneficiaries 
+that have never had the condition. 
+SHORT NAME: CNCRBRSE 
+LONG NAME: CANCER_BREAST_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+23 
+CANCER_BREAST_MID 
+LABEL: 
+Breast Cancer Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+breast cancer (female or male) on July 1 of the specified reference period. 
+SHORT NAME: CNCRBRSM 
+LONG NAME: CANCER_BREAST_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For breast cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart with a breast cancer code in 
+any position during the one-year reference period. When two claims are required, they must occur at 
+least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+24 
+CANCER_COLORECTAL 
+LABEL: 
+Colorectal Cancer End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+colorectal cancer as of the end of the calendar year. 
+SHORT NAME: CNCRCLRC 
+LONG NAME: CANCER_COLORECTAL 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For colorectal cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims at least one day apart, with a colorectal cancer code in any 
+position during the one-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+25 
+CANCER_COLORECTAL_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the colorectal cancer indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) colorectal cancer indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: CNCRCLRE 
+LONG NAME: CANCER_COLORECTAL_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+26 
+CANCER_COLORECTAL_MID 
+LABEL: 
+Colorectal Cancer Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether the beneficiary met the Chronic Condition Warehouse (CCW) criteria 
+on July 1 of the specified reference period. 
+SHORT NAME: CNCRCLRM 
+LONG NAME: CANCER_COLORECTAL_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For colorectal cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims at least one day apart, with a colorectal cancer code in any 
+position during the one-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+27 
+CANCER_ENDOMETRIAL 
+LABEL: 
+Endometrial Cancer End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+endometrial cancer as of the end of the calendar year. 
+SHORT NAME: CNCRENDM 
+LONG NAME: CANCER_ENDOMETRIAL 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For endometrial cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart, with an endometrial cancer 
+code in any position during the one-year reference period. When two claims are required, they must 
+occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+28 
+CANCER_ENDOMETRIAL_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the endometrial cancer indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) endometrial cancer indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: CNCENDME 
+LONG NAME: CANCER_ENDOMETRIAL_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+29 
+CANCER_ENDOMETRIAL_MID 
+LABEL: 
+Endometrial Cancer Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+endometrial cancer on July 1 of the specified reference period. 
+SHORT NAME: CNCENDMM 
+LONG NAME: CANCER_ENDOMETRIAL_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For endometrial cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart, with an endometrial cancer 
+code in any position during the one-year reference period. When two claims are required, they must 
+occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+30 
+CANCER_LUNG 
+LABEL: 
+Lung Cancer End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+lung cancer as of the end of the calendar year. 
+SHORT NAME: CNCRLUNG 
+LONG NAME: CANCER_LUNG 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For lung cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart, with a lung cancer code in any 
+position during the one-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+31 
+CANCER_LUNG_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the lung cancer indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) lung cancer indicator. The variable will be blank for beneficiaries that have never 
+had the condition. 
+SHORT NAME: CNCRLNGE 
+LONG NAME: CANCER_LUNG_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+32 
+CANCER_LUNG_MID 
+LABEL: 
+Lung Cancer Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+lung cancer on July 1 of the specified reference period. 
+SHORT NAME: CNCRLNGM 
+LONG NAME: CANCER_LUNG_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For lung cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart, with a lung cancer code in any 
+position during the one-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+33 
+CANCER_PROSTATE 
+LABEL: 
+Prostate Cancer End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+prostate cancer as of the end of the calendar year. 
+SHORT NAME: CNCRPRST 
+LONG NAME: CANCER_PROSTATE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For prostate cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart, with a prostate cancer code, 
+on any diagnosis, within the last year. When two claims are required, they must occur at least one day 
+apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+34 
+CANCER_PROSTATE_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the prostate cancer indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) prostate cancer indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: CNCRPRSE 
+LONG NAME: CANCER_PROSTATE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+35 
+CANCER_PROSTATE_MID 
+LABEL: 
+Prostate Cancer Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+prostate cancer on July 1 of the specified reference period. 
+SHORT NAME: CNCRPRSM 
+LONG NAME: CANCER_PROSTATE_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For prostate cancer, beneficiaries must have at least one inpatient or SNF claim, or two-Part B 
+(institutional or non-institutional) claims that are at least one day apart, with a prostate cancer code, 
+on any diagnosis, within the last year. When two claims are required, they must occur at least one day 
+apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+36 
+CATARACT 
+LABEL: 
+Cataract End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+a cataract as of the end of the calendar year. 
+SHORT NAME: CATARACT 
+LONG NAME: CATARACT 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For a cataract, beneficiaries must have at least one Part B (institutional or non-institutional) claim with 
+a cataract code in the principal position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+37 
+CATARACT_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the cataract indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) cataract indicator. The variable will be blank for beneficiaries that have never had 
+the condition. 
+SHORT NAME: CATARCTE 
+LONG NAME: CATARACT_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+38 
+CATARACT_MID 
+LABEL: 
+Cataract Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+a cataract on July 1 of the specified reference period. 
+SHORT NAME: CATARCTM 
+LONG NAME: CATARACT_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For a cataract, beneficiaries must have at least one Part B (institutional or non-institutional) claim with 
+a cataract code in the principal position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+39 
+CHF 
+LABEL: 
+Heart Failure End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+congestive heart failure (CHF) as of the end of the calendar year. 
+SHORT NAME: CHF 
+LONG NAME: CHF 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For congestive heart failure, beneficiaries must have at least one inpatient or Part B (institutional or 
+non-institutional) claim with a heart failure code in any position during the two-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+40 
+CHF_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the congestive heart failure indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) congestive heart failure indicator. The variable will be blank for beneficiaries that 
+have never had the condition. 
+SHORT NAME: CHFE 
+LONG NAME: CHF_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+41 
+CHF_MID 
+LABEL: 
+Heart Failure Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+congestive heart failure (CHF) on July 1 of the specified reference period. 
+SHORT NAME: CHFM 
+LONG NAME: CHF_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For congestive heart failure, beneficiaries must have at least one inpatient or Part B (institutional or 
+non-institutional) claim with a heart failure code in any position during the two-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+42 
+CHRONICKIDNEY 
+LABEL: 
+Chronic Kidney Disease End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+chronic kidney disease (CKD) as of the end of the calendar year. 
+SHORT NAME: CHRNKIDN 
+LONG NAME: CHRONICKIDNEY 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For chronic kidney disease, beneficiaries must have at least one inpatient, SNF, or home health claim, 
+or two-Part B (institutional or non-institutional) claims with a chronic kidney disease code in any 
+position during the two-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+43 
+CHRONICKIDNEY_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the chronic kidney disease indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) chronic kidney disease indicator. The variable will be blank for beneficiaries that 
+have never had the condition. 
+SHORT NAME: CHRNKDNE 
+LONG NAME: CHRONICKIDNEY_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+44 
+CHRONICKIDNEY_MID 
+LABEL: 
+Chronic Kidney Disease Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+chronic kidney disease (CKD) on July 1 of the specified reference period. 
+SHORT NAME: CHRNKDNM 
+LONG NAME: CHRONICKIDNEY_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For chronic kidney disease, beneficiaries must have at least one inpatient, SNF, or home health claim, 
+or two-Part B (institutional or non-institutional) claims with a chronic kidney disease code in any 
+position during the two-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+45 
+COPD 
+LABEL: 
+Chronic Obstructive Pulmonary Disease End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+chronic obstructive pulmonary disease (COPD) and bronchiectasis as of the end of the calendar year. 
+SHORT NAME: COPD 
+LONG NAME: COPD 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For COPD and bronchiectasis, beneficiaries must have at least one inpatient, SNF, or home health 
+claim, or two-Part B (institutional or non-institutional) claims with a COPD code in any position during 
+the one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+46 
+COPD_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the COPD and bronchiectasis indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) chronic obstructive pulmonary disease (COPD) and bronchiectasis indicator. The 
+variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: COPDE 
+LONG NAME: COPD_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+47 
+COPD_MID 
+LABEL: 
+Chronic Obstructive Pulmonary Disease Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+chronic obstructive pulmonary disease (COPD) and bronchiectasis on July 1 of the specified reference 
+period. 
+SHORT NAME: COPDM 
+LONG NAME: COPD_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For COPD and bronchiectasis, beneficiaries must have at least one inpatient, SNF, or home health 
+claim, or two-Part B (institutional or non-institutional) claims with a COPD code in any position during 
+the one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+48 
+DEPRESSION 
+LABEL: 
+Depression End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+depression as of the end of the calendar year. 
+SHORT NAME: DEPRESSN 
+LONG NAME: DEPRESSION 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For depression, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with a depression code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+49 
+DEPRESSION_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the depression indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) depression indicator. The variable will be blank for beneficiaries that have never 
+had the condition. 
+SHORT NAME: DEPRSSNE 
+LONG NAME: DEPRESSION_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+50 
+DEPRESSION_MID 
+LABEL: 
+Depression Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+depression on July 1 of the specified reference period. 
+SHORT NAME: DEPRSSNM 
+LONG NAME: DEPRESSION_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For depression, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with a depression code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+51 
+DIABETES 
+LABEL: 
+Diabetes End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+diabetes as of the end of the calendar year. 
+SHORT NAME: DIABETES 
+LONG NAME: DIABETES 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For depression, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with a depression code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+52 
+DIABETES_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the diabetes indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) diabetes indicator. The variable will be blank for beneficiaries that have never had 
+the condition. 
+SHORT NAME: DIABTESE 
+LONG NAME: DIABETES_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+53 
+DIABETES_MID 
+LABEL: 
+Diabetes Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+diabetes on July 1 of the specified reference period. 
+SHORT NAME: DIABTESM 
+LONG NAME: DIABETES_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For depression, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with a depression code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+54 
+ENRL_SRC 
+LABEL: 
+Enrollment Source 
+DESCRIPTION: This variable indicates the source of enrollment data. 
+SHORT NAME: ENRL_SRC 
+LONG NAME: ENRL_SRC 
+TYPE: 
+CHAR 
+LENGTH: 
+3 
+SOURCE: 
+CCW 
+VALUES: 
+EDB = Enrollment Database 
+CME = Common Medicare Environment 
+COMMENT: 
+The Centers for Medicare & Medicaid Services (CMS) has updated the Medicare enrollment source 
+data for the Master Beneficiary Summary File (MBSF). As of March 2017, the MBSF includes Medicare 
+enrollment information from the CMS Common Medicare Environment (CME) rather than the 
+Enrollment Database (EDB). Data from the two sources was nearly identical. The CME improves the 
+identification of Medicare Part B enrollment and also allows for more timely release of the MBSF. 
+The universe of beneficiaries in the CME versus the EDB version of the MBSF are only slightly different. 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+55 
+GLAUCOMA 
+LABEL: 
+Glaucoma End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+glaucoma as of the end of the calendar year. 
+SHORT NAME: GLAUCOMA 
+LONG NAME: GLAUCOMA 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For depression, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with a depression code in any position during the one-year 
+reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+56 
+GLAUCOMA_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the glaucoma indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) glaucoma indicator. The variable will be blank for beneficiaries that have never had 
+the condition. 
+SHORT NAME: GLAUCMAE 
+LONG NAME: GLAUCOMA_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+57 
+GLAUCOMA_MID 
+LABEL: 
+Glaucoma Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+glaucoma on July 1 of the specified reference period. 
+SHORT NAME: GLAUCMAM 
+LONG NAME: GLAUCOMA_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For glaucoma, beneficiaries must have at least one Part B non-institutional claim with a glaucoma code 
+in the principal position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+58 
+HIP_FRACTURE 
+LABEL: 
+Hip/Pelvic Fracture End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+a hip/pelvic fracture as of the end of the calendar year. 
+SHORT NAME: HIPFRAC 
+LONG NAME: HIP_FRACTURE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For hip/pelvic fractures, beneficiaries must have at least one inpatient or SNF claim with a hip/pelvic 
+fracture code in any position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+59 
+HIP_FRACTURE_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the hip/pelvic fracture indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) hip/pelvic fracture indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: HIPFRACE 
+LONG NAME: HIP_FRACTURE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+60 
+HIP_FRACTURE_MID 
+LABEL: 
+Hip/Pelvic Fracture Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+a hip/pelvic fracture on July 1 of the specified reference period. 
+SHORT NAME: HIPFRACM 
+LONG NAME: HIP_FRACTURE_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For hip/pelvic fractures, beneficiaries must have at least one inpatient or SNF claim with a hip/pelvic 
+fracture code in any position during the one-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+61 
+HYPERL 
+LABEL: 
+Hyperlipidemia End Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+hyperlipidemia as of the end of the calendar year. 
+SHORT NAME: HYPERL 
+LONG NAME: HYPERL 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For hyperlipidemia, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-
+Part B (institutional or non-institutional) claims, with a hyperlipidemia code in any position during the 
+one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+62 
+HYPERL_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the hyperlipidemia indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) hyperlipidemia indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: HYPERL_EVER 
+LONG NAME: HYPERL_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+63 
+HYPERL_MID 
+LABEL: 
+Hyperlipidemia Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+hyperlipidemia on July 1 of the specified reference period. 
+SHORT NAME: HYPERL_MID 
+LONG NAME: HYPERL_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For hyperlipidemia, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-
+Part B (institutional or non-institutional) claims, with a hyperlipidemia code in any position during the 
+one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+64 
+HYPERP 
+LABEL: 
+Benign Prostatic Hyperplasia End Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+benign prostatic hyperplasia as of the end of the calendar year. 
+SHORT NAME: HYPERP 
+LONG NAME: HYPERP 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For benign prostatic hyperplasia, beneficiaries must have at least one inpatient, SNF, or home health 
+claim, or two-Part B (institutional or non-institutional) claims, with a benign prostatic hyperplasia code 
+in any position during the one-year reference period. When two claims are required, they must occur 
+at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+65 
+HYPERP_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the benign prostatic hyperplasia indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) benign prostatic hyperplasia indicator. The variable will be blank for beneficiaries 
+that have never had the condition. 
+SHORT NAME: HYPERP_EVER 
+LONG NAME: HYPERP_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+66 
+HYPERP_MID 
+LABEL: 
+Benign Prostatic Hyperplasia Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+benign prostatic hyperplasia on July 1 of the specified reference period. 
+SHORT NAME: HYPERP_MID 
+LONG NAME: HYPERP_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For benign prostatic hyperplasia, beneficiaries must have at least one inpatient, SNF, or home health 
+claim, or two-Part B (institutional or non-institutional) claims, with a benign prostatic hyperplasia code 
+in any position during the one-year reference period. When two claims are required, they must occur 
+at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+67 
+HYPERT 
+LABEL: 
+Hypertension End Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+hypertension (high blood pressure) as of the end of the calendar year. 
+SHORT NAME: HYPERT 
+LONG NAME: HYPERT 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For hypertension, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-
+Part B (institutional or non-institutional) claims, with a hypertension code in any position during the 
+one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+68 
+HYPERT_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the hypertension indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) hypertension (high blood pressure) indicator. The variable will be blank for 
+beneficiaries that have never had the condition. 
+SHORT NAME: HYPERT_EVER  
+LONG NAME: HYPERT_EVER  
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+69 
+HYPERT_MID 
+LABEL: 
+Hypertension Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+hypertension (high blood pressure) on July 1 of the specified reference period. 
+SHORT NAME: HYPERT_MID 
+LONG NAME: HYPERT_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For hypertension, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-
+Part B (institutional or non-institutional) claims, with a hypertension code in any position during the 
+one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+70 
+HYPOTH 
+LABEL: 
+Acquired Hypothyroidism End Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+acquired hypothyroidism as of the end of the calendar year. 
+SHORT NAME: HYPOTH 
+LONG NAME: HYPOTH 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For acquired hypothyroidism, beneficiaries must have at least one inpatient, SNF, or home health 
+claim, or two-Part B (institutional or non-institutional) claims with an acquired hypothyroidism code in 
+any position during the one-year reference period. When two claims are required, they must occur at 
+least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+71 
+HYPOTH_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the acquired hypothyroidism indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) acquired hypothyroidism indicator. The variable will be blank for beneficiaries that 
+have never had the condition. 
+SHORT NAME: HYPOTH_EVER 
+LONG NAME: HYPOTH_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+72 
+HYPOTH_MID 
+LABEL: 
+Acquired Hypothyroidism Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+acquired hypothyroidism on July 1 of the specified reference period. 
+SHORT NAME: HYPOTH_MID 
+LONG NAME: HYPOTH_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For acquired hypothyroidism, beneficiaries must have at least one inpatient, SNF, or home health 
+claim, or two-Part B (institutional or non-institutional) claims with an acquired hypothyroidism code in 
+any position during the one-year reference period. When two claims are required, they must occur at 
+least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+73 
+ISCHEMICHEART 
+LABEL: 
+Ischemic Heart Disease End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+ischemic heart disease (IHD) as of the end of the calendar year. 
+SHORT NAME: ISCHMCHT 
+LONG NAME: ISCHEMICHEART 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For ischemic heart disease, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with an ischemic heart disease code in any position during the 
+two-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+74 
+ISCHEMICHEART_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the ischemic heart disease indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) ischemic heart disease (IHD) indicator. The variable will be blank for beneficiaries 
+that have never had the condition. 
+SHORT NAME: ISCHMCHE 
+LONG NAME: ISCHEMICHEART_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+75 
+ISCHEMICHEART_MID 
+LABEL: 
+Ischemic Heart Disease Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+ischemic heart disease (IHD) on July 1 of the specified reference period. 
+SHORT NAME: ISCHMCHM 
+LONG NAME: ISCHEMICHEART_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For ischemic heart disease, beneficiaries must have at least one inpatient, SNF, home health, or Part B 
+(institutional or non-institutional) claim with an ischemic heart disease code in any position during the 
+two-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+76 
+OSTEOPOROSIS 
+LABEL: 
+Osteoporosis End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+osteoporosis as of the end of the calendar year. 
+SHORT NAME: OSTEOPRS 
+LONG NAME: OSTEOPOROSIS 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For osteoporosis, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-
+Part B (institutional or non-institutional) claims, with an osteoporosis code in any position during the 
+one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+77 
+OSTEOPOROSIS_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the osteoporosis indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) osteoporosis indicator. The variable will be blank for beneficiaries that have never 
+had the condition. 
+SHORT NAME: OSTEOPRE 
+LONG NAME: OSTEOPOROSIS_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+78 
+OSTEOPOROSIS_MID 
+LABEL: 
+Osteoporosis Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+osteoporosis on July 1 of the specified reference period. 
+SHORT NAME: OSTEOPRM 
+LONG NAME: OSTEOPOROSIS_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For osteoporosis, beneficiaries must have at least one inpatient, SNF, or home health claim, or two-
+Part B (institutional or non-institutional) claims, with an osteoporosis code in any position during the 
+one-year reference period. When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+79 
+ 
+RA_OA 
+LABEL: 
+Rheumatoid Arthritis / Osteoarthritis End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+rheumatoid arthritis/osteoarthritis as of the end of the calendar year. 
+SHORT NAME: RA_OA 
+LONG NAME: RA_OA 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For rheumatoid arthritis/osteoarthritis, beneficiaries must have at least two inpatient, SNF, home 
+health, or Part B (institutional or non-institutional) claims that are at least one day apart with a 
+rheumatoid arthritis/osteoarthritis code in any position during the two-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+80 
+RA_OA_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the rheumatoid arthritis/osteoarthritis indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) rheumatoid arthritis/osteoarthritis indicator. The variable will be blank for 
+beneficiaries that have never had the condition. 
+SHORT NAME: RA_OA_E 
+LONG NAME: RA_OA_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+81 
+RA_OA_MID 
+LABEL: 
+Rheumatoid Arthritis / Osteoarthritis Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+rheumatoid arthritis/osteoarthritis on July 1 of the specified reference period. 
+SHORT NAME: RA_OA_M 
+LONG NAME: RA_OA_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For rheumatoid arthritis/osteoarthritis, beneficiaries must have at least two inpatient, SNF, home 
+health, or Part B (institutional or non-institutional) claims that are at least one day apart with a 
+rheumatoid arthritis/osteoarthritis code in any position during the two-year reference period. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+82 
+STROKE_TIA 
+LABEL: 
+Stroke / Transient Ischemic Attack End-of-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+stroke / transient ischemic attack (TIA) as of the end of the calendar year. 
+SHORT NAME: STRKETIA 
+LONG NAME: STROKE_TIA 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For stroke/TIA, beneficiaries must have at least one inpatient claim or two-Part B (institutional or non-
+institutional) claims with a stroke/TIA code in any position during the one-year reference period. 
+When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+83 
+STROKE_TIA_EVER 
+LABEL: 
+Date that beneficiary first met claims criteria for the stroke indicator 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition 
+Warehouse (CCW) stroke / transient ischemic attack (TIA) indicator. The variable will be blank for 
+beneficiaries that have never had the condition. 
+SHORT NAME: STRKTIAE 
+LONG NAME: STROKE_TIA_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the Beneficiary File). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 
+84 
+STROKE_TIA_MID 
+LABEL: 
+Stroke / Transient Ischemic Attack Mid-Year Indicator 
+DESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for 
+stroke / transient ischemic attack (TIA). 
+SHORT NAME: STRKTIAM 
+LONG NAME: STROKE_TIA_MID 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum 
+number/type of claims that have the proper diagnosis codes and occurred within a specified time 
+period) and coverage criteria (FFS Part A and Part B coverage during the entire specified time period). 
+For stroke/TIA, beneficiaries must have at least one inpatient claim or two-Part B (institutional or non-
+institutional) claims with a stroke/TIA code in any position during the one-year reference period. 
+When two claims are required, they must occur at least one day apart. 
+The CCW’s criteria were developed after reviewing validated algorithms from the research literature 
+and criteria used by other federal data sources. You can find more detailed information on the criteria 
+on the CCW website: https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^

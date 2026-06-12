@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n1 \nVariable Details \nThis section of the codebook contains one entry for each variable in the encounter records file. Each entry contains \nvariable details to facilitate understanding and use of the variables. \n\nADMTG_DGNS_CD \nLABEL: \nClaim Admitting Diagnosis Code \nDESCRIPTION: A diagnosis code on the institutional encounter indicating the beneficiary's initial diagnosis at",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

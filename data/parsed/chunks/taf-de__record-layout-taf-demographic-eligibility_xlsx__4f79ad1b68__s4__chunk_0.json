@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s4__chunk_0",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 4,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nTAF Demographic and Enrollment — Waiver Program Enrollment File\nVersion — December 2025\nRIF SAS name RIF label Type Length RIF sequence New variables\nBENE_ID Encrypted CCW Beneficiary Identifier CHAR 15 1\nMSIS_ID Encrypted State Assigned Beneficiary Unique Identifier CHAR 32 2\nSTATE_CD Submitting State Alpha Abbreviation CHAR 2 3\nSUBMTG_STATE_CD Submitting State Entity Code CHAR 2 4\nWVR_1915C_TYPE_CD 1915(c) Waiver Type Code - Ltst in Yr",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

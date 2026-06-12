@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "We are no longer required to encrypt the prescriber, pharmacy, plan or formulary identifiers.\n3 For PDE files 2006-2013, the CCW_PHARM_ID is used to identify the pharmacy. Beginning with 2014 PDE, the NCPDP_ID is used.\n4 For PDE files 2006-2013, the CCW_PRSCRBR_ID is used to identify the prescriber. Beginning with 2014 PDE the actual prescriber identifier and the associated qualifier code\n(PRSCRBR_ID and PRSCRBR_ID_QLFYR_CD variables) are used. The CCW Prescriber ID variable (and the associated",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

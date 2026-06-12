@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p223__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 223,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n205 \nLINE_DROP_OFF_ZIP_CD \nLABEL: \nLine Drop Off Zip Code \nDESCRIPTION: Line drop off zip code. \nSHORT NAME: LINE_DROP_OFF_ZIP_CD \nLONG NAME: LINE_DROP_OFF_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nNCH \nVALUES: \nXXXXX \nCOMMENT: \nThe drop off zip code is used for pricing ambulance services. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

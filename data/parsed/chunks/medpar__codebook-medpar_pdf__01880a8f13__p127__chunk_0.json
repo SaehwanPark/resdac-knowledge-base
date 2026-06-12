@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p127__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 127,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n111 \nINFRMTL_ENCTR_IND_SW \nLABEL: \nInformational Encounter Indicator \nDESCRIPTION: The indicator switch used to identify if a beneficiary is enrolled in a Managed Care Organization (MCO). \nSHORT NAME: INFRMTL_ENCTR_IND_SW \nLONG NAME: INFRMTL_ENCTR_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = Yes, beneficiary is a Managed care enrollee (hospital expects to receive payment from an MCO)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

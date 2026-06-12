@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s7__chunk_36",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 7,
+  "text": "CHAR 1 156\nSSI_IND_10 Supplemental Security Income (SSI) Ind - October CHAR 1 157\nSSI_IND_11 Supplemental Security Income (SSI) Ind - November CHAR 1 158\nSSI_IND_12 Supplemental Security Income (SSI) Ind - December CHAR 1 159\nSSI_STUS_CD_01 Supplemental Security Income (SSI) Status Code - January CHAR 3 160\nSSI_STUS_CD_02 Supplemental Security Income (SSI) Status Code - February CHAR 3 161\nSSI_STUS_CD_03 Supplemental Security Income (SSI) Status Code - March CHAR 3 162\nSSI_STUS_CD_04",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

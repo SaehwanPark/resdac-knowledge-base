@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_67",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "Beneficiary (MSPB) costs for attributed beneficiary, Other Physician or Supplier Part B Services Billed During Any Hospitalization category 97 Num 8 Populated only for records with MSPB_episode=1\nCOST_OP_THERAPY MSPB outpatient physical, occupational, or speech and language pathology therapy costs Medicare Spending per Beneficiary (MSPB) costs for attributed beneficiary, Outpatient Physical, Occupational, or Speech and Language Pathology Therapy category 98 Num 8 Populated only for records with",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

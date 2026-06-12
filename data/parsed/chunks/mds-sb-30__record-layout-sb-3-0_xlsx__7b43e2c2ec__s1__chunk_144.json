@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_144",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "significantly intrudes on the privacy or activity of others. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n177 E1100_BHVR_CHG_PRIOR_CD E1100_BHVR_CHG_PRIOR_CD E1100 Change in Behavior or Other Symptoms CHAR 1 The data in this column identifies how the resident's current behavior status compares to the prior assessment (e.g., stairs, outside of the facility). -=Not assessed/no information\n 0=Same\n 1=Improved\n 2=Worse\n 3=N/A because no prior MDS assessment\n ^=Blank (skip",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

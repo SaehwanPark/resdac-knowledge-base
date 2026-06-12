@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_874",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "of three words Indicates patient's ability to repeat back three words given to them after first attempt. 0. None \n1. One \n2. Two \n3. Three CHAR 1 x\nC0300A_RPT_CRCT_YR_CD Temporal Orientation: Able to report correct year Indicates the patient's ability to report the correct year. 0. Missed by > 5 years or no answer \n1. Missed by 2-5 years \n2. Missed by 1 year \n3. Correct CHAR 1 x\nC0300B_RPT_CRCT_MO_CD Temporal Orientation: Able to report correct month Indicates the patient's ability to report",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

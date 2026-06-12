@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-beneficiary__record-layout-cmds_xlsx__db71320620__s4__chunk_0",
+  "source_document": "data/raw/assets/xlsx/db713206205b9bc4a36a311a78fdfb65414c59e1.xlsx",
+  "page": 4,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nCMMI Data Sharing (CMDS) — Model IDs\nVersion — April 2025\nModel ID Model name Short name\n01 Independence at Home Demonstration IAH\n11 Medicare-Medicaid Financial Alignment Initiative FAI\n25 Graduate Nursing Education Demonstration GNE\n22 Comprehensive Primary Care Plus Model CPC+\n27 Pennsylvania Rural Health Model PARHM\n28 Rural Community Hospital Demo RCH\n33 Comprehensive Care for Joint Replacement Payment Model CJR\n36 Frontier Community",
+  "dataset": "cmds-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cmds.xlsx"
+}

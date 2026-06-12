@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_69",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Status* XXX\nU_FD_HOP_VST Total number of Medicare Hospital Outpatient visits during months of 'Full' Dual Status XXX\nU_FD_PHYS_VST Total number of Medicare Physician claims during months of 'Full' Dual Status XXX\nU_FD_DME_VST Total number of Medicare DME claims during months of 'Full' Dual Status XXX\nU_FD_DRUG_PTD Total number of Medicare Prescriptions during months of 'Full' Dual Status XXX\nU_PD_OER_CNT # MDCR FFS month HospOutpt ER visit cnt during mos of Partial Dual Status XXX\nU_PD_IER_CNT",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

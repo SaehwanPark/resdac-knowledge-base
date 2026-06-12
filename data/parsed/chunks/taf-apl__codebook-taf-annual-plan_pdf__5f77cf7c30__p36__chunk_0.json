@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p36__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 36,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n28 \nMC_PLAN_ID \nLABEL: \nManaged Care Plan Identification Number \nDESCRIPTION: Contains the ID number the state issued to the managed care entity. \nSHORT NAME: MC_PLAN_ID \nLONG NAME: MC_PLAN_ID \nTYPE: \nCHAR \nLENGTH: \n12 \nFILE(S): \nAll Annual Managed Care Plan files \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nState-assigned unique managed care identification number. The field can",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

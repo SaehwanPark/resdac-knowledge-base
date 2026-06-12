@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_2",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "1 12 12\nEDPS_CREATE_DT Encounter Data Processing System (EDPS) Create Date Date 8 13 13\nCLM_RCPT_DT Claim Receipt Date Date 8 14 14\nCLM_FREQ_CD Claim Frequency Code Char 1 15 15\nCNTRCT_NUM Medicare Part C Contract Number Char 5 16 16\nCNTRCT_PBP_NUM Medicare Part C Plan Benefit Package (PBP) Number Char 3 17 17\nCLM_MDCL_REC Claim Medical Record Number Char 1 18 18\nORG_NPI Organization NPI Number Char 10 19 19\nORG_TXNMY_CD Organization Taxonomy Code Char 10 20 20\nCLM_PLACE_OF_SRVC_CD Claim Place",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

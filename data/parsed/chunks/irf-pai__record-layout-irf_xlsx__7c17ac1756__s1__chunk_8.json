@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "the Target Date is 12: Admission Date. For SB the Target DAte is the same as the Event Date and is equal to the following dates: 10a (A3A - Assessment Reference Date, 15 (R4) - Discharge Date and 16 (A4A) - Reentry Date.\n16 _1B FAC_MDCR_PRVDR_NUM (1B) Facility Medicare Provider Number CHAR 12 Facility Medicare Provider Number assigned by CMS.\n17 _6 BIRTH_DT (6) Birth Date DATE 8 The patient's birthdate.\n18 _8 SEX_CD1 (8) Sex Code CHAR 1 The patient's sex. 1 = Male, 2 = Female\n19 _9A",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

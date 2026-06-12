@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 7,
+  "text": "LABEL: \nAcute Inpatient Hospital Beneficiary Payments \nDESCRIPTION: This variable is the sum of Medicare coinsurance and deductible payments in the acute inpatient \nhospital setting for the year. The total acute hospitalization beneficiary payments are calculated as the \nsum of the beneficiary deductible amount and coinsurance amount (variables called \nNCH_BENE_IP_DDCTBL_AMT and NCH_BENE_PTA_COINSRNC_LBLTY_AM) for all acute inpatient claims \nwhere the CLM_PMT_AMT >= 0. \nSHORT NAME: — \nLONG",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

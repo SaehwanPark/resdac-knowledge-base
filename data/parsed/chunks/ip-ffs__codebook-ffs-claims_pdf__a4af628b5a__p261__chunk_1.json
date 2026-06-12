@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p261__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 261,
+  "text": "Part A, beneficiaries pay coinsurance starting with the 61st day of an inpatient hospital stay \n(one daily amount for days 61–90, and a higher daily amount for any days after that, which count \ntowards a beneficiary’s 60 lifetime reserve days) or the 21st day of a skilled nursing facility (SNF) stay \n(a daily amount for days 21–100, after which SNF coverage ends). \nThis variable is null/missing for home health and hospice claims. \nSHORT NAME: COIN_AMT \nLONG NAME: NCH_BENE_PTA_COINSRNC_LBLTY_AM",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

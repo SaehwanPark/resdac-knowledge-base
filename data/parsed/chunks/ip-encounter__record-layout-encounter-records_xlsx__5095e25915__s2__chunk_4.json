@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s2__chunk_4",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 2,
+  "text": "Taxonomy Code Char 10 26\nOP_PHYSN_NPI Claim Operating Physician NPI Number Char 10 27\nOT_PHYSN_NPI Claim Other Physician NPI Number Char 10 28\nCLM_ADMSN_DT Claim Admission Date Date 8 29\nPTNT_DSCHRG_STUS_CD Patient Discharge Status Code Char 2 30\nBENE_DSCHRG_DT Beneficiary Discharge Date Date 8 31\nPRNCPAL_DGNS_CD Claim Principal Diagnosis Code Char 7 32\nICD_DGNS_CD1 Claim Diagnosis Code 1 Char 7 33\nICD_DGNS_CD2 Claim Diagnosis Code 2 Char 7 34\nICD_DGNS_CD3 Claim Diagnosis Code 3 Char 7",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

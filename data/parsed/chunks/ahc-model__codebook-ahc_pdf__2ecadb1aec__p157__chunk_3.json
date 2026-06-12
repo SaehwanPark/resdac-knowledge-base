@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p157__chunk_3",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 157,
+  "text": "intervention group and a 30% probability of being assigned to the control group. About 1% of \nassistance track navigation-eligible beneficiaries have a missing value, likely due to a technical issue \nwith the AHC data system. Most of those beneficiaries (93%) have a missing value for the navigation \nopt in/out flag (SR_NVGTN_OPT_IN_OUT_IND) indicating that they were likely not offered navigation \nservices. The other seven percent opted out of navigation services (SR_NVGTN_OPT_IN_OUT_IND = \n0).",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

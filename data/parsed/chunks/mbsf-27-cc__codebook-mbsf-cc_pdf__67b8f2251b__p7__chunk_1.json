@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__codebook-mbsf-cc_pdf__67b8f2251b__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/67b8f2251b8ce41fa22290227e10b8b8ec333559.pdf",
+  "page": 7,
+  "text": "variables. \nALZH \nLABEL: \nAlzheimer's Disease End-of-Year Indicator \nDESCRIPTION: This code specifies whether the beneficiary met the Chronic Condition Warehouse (CCW) algorithm \ncriteria for Alzheimer's disease as of the end of the calendar year. \nSHORT NAME: ALZH \nLONG NAME: ALZH \nTYPE: \nNUM \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage \n\n1 = Beneficiary met claims criteria but did not have",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cc.pdf"
+}

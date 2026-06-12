@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p33__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 33,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n23 \nCLM_DRG_CD \nLABEL: \nClaim Diagnosis Related Group Code (or MS-DRG Code) \nDESCRIPTION: The diagnostic related group to which a hospital claim belongs. A unique identifier of a hospital case \ntype that is based on similar clinical problems. \nSHORT NAME: CLM_DRG_CD \nLONG NAME: CLM_DRG_CD \nTYPE: \nCHAR \nLENGTH: \n4 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

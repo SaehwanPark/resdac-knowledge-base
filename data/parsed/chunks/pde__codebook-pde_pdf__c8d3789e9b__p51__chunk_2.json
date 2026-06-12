@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p51__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 51,
+  "text": "Number (UPIN) \n08 = State license number \n12 = Drug Enforcement Administration (DEA) number \nNull/missing \nCOMMENT: \nThis variable may only be obtained if the investigator receives the prescriber identifier (PRSCRBR_ID), \nwhich is available 2014 forward. \nThis field is not validated and does not always reliably describe the identification numbers found in the \nprescriber identifier field (PRSCRBR_ID). \nInvestigators interested in linking the prescriber identifiers to cross-reference databases",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

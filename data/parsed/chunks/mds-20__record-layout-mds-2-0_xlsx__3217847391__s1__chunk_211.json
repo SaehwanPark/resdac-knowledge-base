@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_211",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "diagnosis: diseases - neurological - quadriplegia. 0 = No, 1 = Yes, \"-\" = Unknown.\n322 I2A I2A_AB_RES_INFECT (I2A) Antibiotic Resistant Infection CHAR 1 Disease diagnosis: infections - antibiotic resistance infection. 0 = No, 1 = Yes, \"-\" = Unknown.\n323 I2B I2B_CLOST_DIFF (I2B) Clostridium Difficile CHAR 1 Disease diagnosis: infections - clostridium difficile (c. diff.) 0 = No, 1 = Yes, \"-\" = Unknown.\n324 I2C I2C_CONJUNCT (I2C) Conjunctivitis CHAR 1 Disease diagnosis: infections -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

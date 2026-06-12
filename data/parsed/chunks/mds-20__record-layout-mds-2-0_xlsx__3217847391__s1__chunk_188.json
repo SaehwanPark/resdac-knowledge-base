@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_188",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n265 H2D H2D_FECAL_IMPACT (H2D) Fecal Impaction CHAR 1 Continence in last 14 days: bowel elimination pattern - fecal impaction. 0 = No, 1 = Yes, \"-\" = Unknown.\n266 H2E H2E_NONE_ABOVE (H2E) None of Above Bowel Elimination Pattern CHAR 1 Continence in last 14 days: bowel elimination pattern - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n267 H3A H3A_TOLIET_PLAN (H3A) Any Scheduled Toileting Plan CHAR 1 Continence in last 14 days: appliances and programs - any",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

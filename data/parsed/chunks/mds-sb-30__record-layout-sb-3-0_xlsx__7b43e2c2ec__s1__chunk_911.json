@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_911",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "O0350_COVID_VCNTN_CRNT_SW O0350_COVID_VCNTN_CRNT_SW O0350 - COVID-19 Vaccination Up To Date CHAR 1 The data in this column indicates whether the resident’s COVID-19 vaccination is up to date. 0=No\n1=Yes effective 10/01/2024\n1030 O0390A_SPCH_THRPY_CD O0390A_SPCH_THRPY_CD O0390A Speech-Language Pathology and Audiology Services Code CHAR 1 The data in this column indicates whether the resident received Speech-Language Pathology and Audiology Services for at least 15 minutes a day on one or more",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

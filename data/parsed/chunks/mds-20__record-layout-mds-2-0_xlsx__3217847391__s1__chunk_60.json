@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_60",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n119 AC1X AC1X_NONE_ABOVE (AC1X) None of Above Involvement Patterns CHAR 1 Customary routine: involvement patterns - none of above. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n120 AC1Y AC1Y_UNKNOWN (AC1Y) Unknown Customary Routine CHAR 1 Customary routine: invovlement patterns - unknown customary routine. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n121 B1 B1_COMATOSE (B1) Comatose CHAR 1 Cognitive patterns: comatose. 0 = No, 1 = Yes, \"-\" = Unknown.\n122",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

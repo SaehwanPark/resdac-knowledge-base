@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p125__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 125,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n127 \nPRVDR_TAX_NAME \nLABEL: \nProvider Tax (IRS) Name \nDESCRIPTION: The name that the provider entity uses on Internal Revenue Service (IRS) tax filings; most recent in the \ncalendar year. \nSHORT NAME: PRVDR_TAX_NAME \nLONG NAME: PRVDR_TAX_NAME \nTYPE: \nCHAR \nLENGTH: \n150 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nText string (e.g., UNIVERSAL CLINICS",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_62",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "stairs inside which must be used by patient. 0 = No, 1 = Yes CHAR 1 x x\nM0310_STR_OPT_ISTR (M0310) Stairs Inside Home Used Optionally Structural barriers: stairs inside home which are used optionally. 0 = No, 1 = Yes CHAR 1 x x\nM0310_STR_OUTSTAIR (M0310) Stairs Leading Inside Home Structural barriers: stairs leading from inside to outside house. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_HAZ_MAT (M0320) Improperly Stored Hazardous Materials Safety hazards: improperly stored hazardous materials. 0 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

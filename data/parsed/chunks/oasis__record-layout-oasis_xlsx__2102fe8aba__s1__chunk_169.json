@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_169",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "of equipment or supplies).\n04 = Caregiver is completely dependent on someone else to manage all equipment.\nNA = NA - No caregiver\nUK = Unknown CHAR 2 x x\nM0825_THERAPY_NEED (M0825) Therapy Need (M0825) Therapy Need. 00 = No, 01 = Yes, NA = Not Applicable CHAR 2 x x\nM0830_EC_MD_OFF (M0830) Doctor's Office Emergency Visit Emergent care: doctor's office emergency visit/house call 0 = No, 1 = Yes CHAR 1 x x\nM0830_EC_EMER_ROOM (M0830) Hospital Emergency Room Emergent care: hospital emergency room. 0",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

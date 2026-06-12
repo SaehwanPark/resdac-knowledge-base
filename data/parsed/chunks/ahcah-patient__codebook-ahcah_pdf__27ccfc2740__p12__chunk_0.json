@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 12,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n7 \nFAC_DATA_SUBMSN_DT \nLABEL: \nFacility Data Submission Date \nDESCRIPTION: The date the facility submitted weekly or monthly data to CMS. \n\nSHORT NAME: FAC_DATA_SUBMSN_DT \nLONG NAME: FAC_DATA_SUBMSN_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \n23DEC2020 forward \nCOMMENT:",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

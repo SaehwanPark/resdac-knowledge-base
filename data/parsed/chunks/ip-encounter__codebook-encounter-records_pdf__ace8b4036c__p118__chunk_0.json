@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p118__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 118,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n108 \nREV_CNTR_UNIT_CNT \nLABEL: \nRevenue Center Unit Count \nDESCRIPTION: A quantitative measure (unit) of the number of times the service or procedure being reported was \nperformed according to the revenue center/HCPCS code definition as described on an institutional \nclaim or encounter record. \nDepending on type of service, units are measured by number of covered days in a particular",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

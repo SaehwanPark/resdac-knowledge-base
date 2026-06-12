@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_17",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "LINE_COINSRNC_AMT Line Beneficiary Coinsurance Amount NUM 12 24\nPRPYALOW LINE_PRMRY_ALOWD_CHRG_AMT Line Primary Payer Allowed Charge Amount NUM 12 25\nLSBMTCHG LINE_SBMTD_CHRG_AMT Line Submitted Charge Amount NUM 12 26\nLALOWCHG LINE_ALOWD_CHRG_AMT Line Allowed Charge Amount NUM 12 27\nPRCNGIND LINE_PRCSG_IND_CD Line Processing Indicator Code CHAR 2 28\nPMTINDSW LINE_PMT_80_100_CD Line Payment 80% / 100% Code CHAR 1 29\nDED_SW LINE_SERVICE_DEDUCTIBLE Line Service Deductible Indicator Switch CHAR 1",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

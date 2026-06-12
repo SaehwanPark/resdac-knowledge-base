@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__data-documentation__fbf03a23f2__chunk_1",
+  "source_document": "data/raw/html/documentation_page/fbf03a23f28d2958758965b82ec1ff240da093a5.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\nCCW Codebook - Accountable Care Organizations (ACO) Pioneer\nCCW Record Layout - Accountable Care Organizations (ACO) Pioneer\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| BENE_ACO_YEAR | Year of Beneficiary Claims | \n| ACO_ID | Pioneer ACO Identifier | \n| BIRTH_DT | Date of Birth | \n| DEATH_DT | Date of Death | \n| SEX_CD | Sex | \n| MO1_ALIGN | Month 1 Alignment Flag | \n| MO2_ALIGN | Month 2",
+  "dataset": "pioneer-aco",
+  "url": "https://resdac.org/cms-data/files/pioneer-aco/data-documentation"
+}

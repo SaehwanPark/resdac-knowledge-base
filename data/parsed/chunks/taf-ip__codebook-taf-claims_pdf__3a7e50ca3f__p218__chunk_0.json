@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p218__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 218,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n198 \nPOS_CD \nLABEL: \nPlace of Service Code \nDESCRIPTION: A code indicating where the service was performed. CMS 1500 values are used for this data element. \nSHORT NAME: POS_CD \nLONG NAME: POS_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT header \nVALUES: \n01 = \nPharmacy. A facility or location where drugs and other medically related items and",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_143",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "pattern)\n175 E1000A_WNDR_RISK_CD E1000A_WNDR_RISK_CD E1000A Wander Risk Impact CHAR 1 The data in this column identifies whether the resident's wandering places them at significant risk for getting to a potentially dangerous situation. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n176 E1000B_WNDR_INTRD_PRVCY_CD E1000B_WNDR_INTRD_PRVCY_CD E1000B Wandering Intrudes on Privacy of Others CHAR 1 The data in this column indicates whether the resident's wandering significantly",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

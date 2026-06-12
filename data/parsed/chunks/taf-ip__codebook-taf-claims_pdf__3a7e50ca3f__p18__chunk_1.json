@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p18__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 18,
+  "text": "additional costs \n071 = Primary payer amount. (No longer used: 06/30/2000, Use code 023) \n072 = Coinsurance day. (Handled in QTY, QTY01=CD) \n073 = Administrative days \n074 = Indirect Medical education adjustment \n075 = Direct Medical education adjustment \n076 = Disproportionate share adjustment \n077 = Covered days. (Handled in QTY, QTY01=CA) \n078 = Non-covered days/Room charge adjustment \n079 = Cost report days. (Handled in MIA15) \n080 = Outlier days. (Handled in QTY, QTY01=OU) \n081 =",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_194",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "75% or more), 05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n152 _40 DSCHRG_DT (40) Discharge Date DATE 8 This date determines the year of the assessment. The date the patient is discharges from the rehabilitation facility. 0 = No, 1 = Yes\n153 _41 DSCHRG_AGNST_MDCL_ADVC_SW (41) Patient Discharged Against Medical Advice CHAR 1 A code indicating whether the patient was discharged",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

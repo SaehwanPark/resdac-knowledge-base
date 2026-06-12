@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "10 = Other, 12 = Alternate Level of Care Unit, 13 = Subacute Setting, 14 = Assisted Living Residence\n31 _16 PRE_HOSP_LVG_SET_CD (16) Pre-Hospital Living Setting CHAR 2 The setting where the patient was living prior to being hospitalized. 01 = Home, 02 = Board and Care, 03 = Transitional Living, 04 = Intermediate Care, 05 = Skilled Nursing Facility, 06 = Acute Unit of Own Facility, 07 = Acute Unit of Another Facility, 08 = Chronic Hospital, 09 = Rehabilitation Facility, 10 = Other, 12 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

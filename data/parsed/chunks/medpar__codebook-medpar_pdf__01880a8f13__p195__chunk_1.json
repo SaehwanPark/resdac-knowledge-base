@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p195__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 195,
+  "text": "is not PPS \n2 = facility is PPS \nCOMMENT: \nThis value is calculated by determining if the condition code is not equal 65 on all the claims included in \nthe stay and the third position of the provider number is numeric, then the value of this field = 2 (PPS); \notherwise, the value = 0 (non-PPS.) \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p115__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 115,
+  "text": "reduction of what they \nwould otherwise be paid under IPPS. \nThe dollar amount of the reduction is in the HAC Reduction Payment Amount field \n(HAC_RDCTN_PMT_AMT; in 2014 it was referred to as the IPPS_FLEX_PYMT_6_AMT). \nThis field is new in October 2014. It is not populated (through 2018). This field only applies to \nInpatient/SNF claims. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_5",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "| 34 | DSCHRG_DT | Discharge Date | \n\n | 35 | DSCHRG_HR | Discharge Hour | \n\n | 36 | ADMTG_DGNS_CD | Admitting Diagnosis Code | \n\n | 37 | ADMTG_DGNS_VRSN_CD | Admitting Diagnosis Version Code (ICD-9 or ICD-10) | \n\n | 38 | DGNS_CD_1 | Primary or Principal Diagnosis Code | \n\n | 39 | DGNS_VRSN_CD_1 | Diagnosis Version Code 1 (ICD-9 or ICD-10) | \n\n | 40 | DGNS_POA_IND_1 | Diagnosis Present on Admission Indicator 1 | \n\n | 41 | DGNS_1_CCSR_CTGRY_CD | AHRQ Clinical Classifications Software Refined",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

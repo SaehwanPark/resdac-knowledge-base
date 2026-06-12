@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p56__chunk_0",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 56,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D, Version 2 │ May 2026 │ V 1.2 \n49 \nRDS_CVRG_MONS \nLABEL: \nMonths of Retiree Drug Subsidy Coverage \nDESCRIPTION: This variable is the number of months during the year that the beneficiary was enrolled in an \nemployer-sponsored prescription drug plan that qualified for Part D’s retiree drug subsidy (RDS). CCW \nderives this variable by counting the number of months where the beneficiary had retiree",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

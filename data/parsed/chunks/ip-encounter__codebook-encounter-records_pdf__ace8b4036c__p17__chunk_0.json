@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n7 \nBENE_MDCR_STUS_CD \nLABEL: \nBeneficiary Medicare Status Code \nDESCRIPTION: This variable identifies how a beneficiary qualifies for Medicare benefits as of a particular date. \nSHORT NAME: BENE_MDCR_STUS_CD \nLONG NAME: BENE_MDCR_STUS_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS Encounter Data System (EDS) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES:",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

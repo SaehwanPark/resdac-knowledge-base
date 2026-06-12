@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_22",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "| Claim Outpatient Payment Amount to Beneficiary | \n\n | 140 | DOB_DT | Date of Birth from Claim | \n\n | 142 | BENE_RACE_CD | Beneficiary Race Code (FFS) | \n\n | 143 | BENE_CNTY_CD | County Code from Claim (SSA) | \n\n | 144 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (FFS) | \n\n | 145 | BENE_MLG_CNTCT_ZIP_CD | Zip Code of Residence from Claim | \n\n | 146 | CLM_MDCL_REC | Claim Medical Record Number (FFS) | \n\n | 147 | CLM_TRTMT_AUTHRZTN_NUM | Claim Treatment Authorization Number | \n\n |",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_224",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= 0 cm, 01 = <0.3 cm, 02 = 0.3 to 0.6 cm, 03 = 0.7 to 1.0 cm, 04 = 1.1 to 2.0 cm, 05 = 2.1 to 3.0 cm, 06 = 3.1 to 4.0 cm, 07 = 4.1 to 8.0 cm, 08 = 8.1 to 12.0 cm, 09 = 12.1 to 24.0 cm, 10 = >24 cm\n185 _52DA EXDT_AMT_ADMSN_CD (52Da) Exudate Amount: Admission CHAR 2 A code indicating the amount of exudate (drainage) present after removing the dressing and applying any topical agent to the ulcer for the largest pressure ulcer at the time of admission. 00 = None, 01 = Light, 02 = Moderate, 03 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p128__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 128,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n110 \nCLM_PPS_OLD_CPTL_HLD_HRMLS_AMT \nLABEL: \nClaim PPS Old Capital Hold Harmless Amount \nDESCRIPTION: This amount is the hold harmless amount payable for old capital as computed by PRICER for providers \nwith a payment code equal to “A”. \nThe hold harmless amount-old capital is 100 percent of the reasonable costs of old capital for sole \ncommunity hospitals, or 85 percent of",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

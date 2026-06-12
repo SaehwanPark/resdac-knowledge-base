@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s13__chunk_2",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 13,
+  "text": "appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period. CHAR 10\nPRVDR_ACO_YEAR PRVDR_ACO_YEAR Year of ACO Source Record NUM 4\nTIN TIN Tax Identification Number (TIN) of ACO Participant Tax identification number of the ACO participant included on the ACO's certified participant list used in financial reconciliation CHAR 9\nCCN CCN CMS Certification Number (CCN; formerly OSCAR number) CMS Certification Number (formerly OSCAR Number) included on",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

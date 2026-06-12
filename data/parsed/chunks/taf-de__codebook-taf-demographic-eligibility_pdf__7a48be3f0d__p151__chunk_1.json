@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p151__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 151,
+  "text": "and LCKIN_PRVDR_TYPE_CD_1. \nSHORT NAME: LCKIN_TOS_CD_1 \nLCKIN_TOS_CD_2 \nLCKIN_TOS_CD_3 \nLONG NAME: LCKIN_TOS_CD_1 \n\nLCKIN_TOS_CD_2 \n\nLCKIN_TOS_CD_3 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nFILE(S): \nDisability and need \nVALUES: \nThree-digit value; may have leading zeros: \nTOS \ncode \nTOS description \n001 \nInpatient hospital services, other than services in an institution for mental diseases \n002 \nOutpatient hospital services \n003 \nRural health clinic",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

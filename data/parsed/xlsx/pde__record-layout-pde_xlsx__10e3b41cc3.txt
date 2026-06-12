@@ -1,0 +1,90 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Event (PDE) File
+Version — July 2025
+Short SAS name	Long SAS name	Label	Type	Length	Year of data file 1
+2006–2009	2010	2011	2012	2013	2014–2021	2022	2023+	2025+
+PDE_ID	PDE_ID	CCW Encrypted Part D Event Number	CHAR	15	X	X	X	X	X	X	X	X	X
+BENE_ID	BENE_ID	CCW Encrypted Beneficiary ID Number	CHAR	15	X	X	X	X	X	X	X	X	X
+DOB_DT	DOB_DT	Patient Date of Birth (DOB)	DATE	8	X	X	X	X	X	X	X	X	X
+SEX_CD7	SEX_CD7	Patient Sex	CHAR	1	X	X	X	X	X	X	X	X	X
+SRVC_DT	SRVC_DT	RX Date of Service (DOS)	DATE	8	X	X	X	X	X	X	X	X	X
+PD_DT	PD_DT	Paid Date	DATE	8	X	X	X	X	X	X	X	X	X
+SRVRFNUM	RX_SRVC_RFRNC_NUM	RX Service Reference Number	NUM	12	X	X	LC	X	X	X	X	X	X
+PRDSRVID	PROD_SRVC_ID	Product Service ID (the National Drug Code [NDC])	CHAR	40	X	X	X	X	X	X	X	X	LC
+PLNCNTRC 2	PLAN_CNTRCT_REC_ID	Plan Contract ID	CHAR	5	X	X	X	X	X	X	X	X	X
+PLNPBPRC 2	PLAN_PBP_REC_NUM	Plan Benefit Package ID	CHAR	3	X	X	X	X	X	X	X	X	X
+CMPND_CD	CMPND_CD	Compound Code	NUM	2	X	X	X	X	X	X	X	X	X
+DAWPS_CD	DAW_PROD_SLCTN_CD	Dispense as Written (DAW) Product Selection Code	CHAR	1	X	X	X	X	X	X	X	X	X
+QTYDSPNS	QTY_DSPNSD_NUM	Quantity Dispensed	NUM	12	X	X	X	X	X	X	X	X	X
+DAYSSPLY	DAYS_SUPLY_NUM	Days Supply	NUM	3	X	X	X	X	X	X	X	X	X
+FILL_NUM	FILL_NUM	Fill Number	NUM	3	X	X	X	X	X	X	X	X	X
+DSPNSTCD	DSPNSNG_STUS_CD	Dispensing Status Code	CHAR	1	X	X	VC	-	-	-	-	-	-
+QTY_PRSCRBD_NUM	QTY_PRSCRBD_NUM	Quantity Prescribed - for Schedule II Drugs	NUM	12	-	-	-	-	-	-	-	-	X
+DRCVSTCD	DRUG_CVRG_STUS_CD	Drug Coverage Status Code	CHAR	1	X	X	X	X	X	X	X	X	X
+ADJDELCD	ADJSTMT_DLTN_CD	Adjustment Deletion Code	CHAR	1	X	X	X	X	X	X	X	X	X
+NSTFMTCD	NSTD_FRMT_CD	Non-Standard Format Code	CHAR	1	X	X	X	X	X	X	X	X	X
+PRCGEXCD	PRCNG_EXCPTN_CD	Pricing Exception Code	CHAR	1	X	X	X	X	X	X	X	X	X
+CATCOVCD	CTSTRPHC_CVRG_CD	Catastrophic Coverage Code	CHAR	1	X	X	-	-	-	-	-	-	-
+GDCBOOPT	GDC_BLW_OOPT_AMT	Gross Drug Cost Below Out-of-Pocket Threshold (GDCB)	NUM	13	X	X	X	X	X	X	X	X	LC
+GDCAOOPT	GDC_ABV_OOPT_AMT	Gross Drug Cost Above Out-of-Pocket Threshold (GDCA)	NUM	13	X	X	X	X	X	X	X	X	LC
+PTPAYAMT	PTNT_PAY_AMT	Patient Pay Amount	NUM	13	X	X	X	X	X	X	X	X	LC
+OTHTROOP	OTHR_TROOP_AMT	Other True Out-of-Pocket (TrOOP) Amount	NUM	13	X	X	X	X	X	X	X	X	LC
+LICS_AMT	LICS_AMT	Low Income Cost Sharing Subsidy Amount (LICS)	NUM	13	X	X	X	X	X	X	X	X	LC
+PLRO_AMT	PLRO_AMT	Patient Liability Reduction Due to Other Payer Amount (PLRO)	NUM	13	X	X	X	X	X	X	X	X	LC
+CPP_AMT	CVRD_D_PLAN_PD_AMT	Covered D Plan Paid Amount (CPP)	NUM	13	X	X	X	X	X	X	X	X	LC
+NPP_AMT	NCVRD_PLAN_PD_AMT	Non-Covered Plan Paid Amount (NPP)	NUM	13	X	X	X	X	X	X	X	X	LC
+TOTALCST	TOT_RX_CST_AMT	Gross Drug Cost	NUM	14	X	X	X	X	X	X	X	X	LC
+RX_ORGN_CD	RX_ORGN_CD	Prescription Origin Code	CHAR	1	-	X	X	X	X	X	X	X	X
+GAPDSCNT	RPTD_GAP_DSCNT_NUM	Gap Discount Amount	NUM	13	-	-	-	X	X	X	X	X	LC
+BRNDGNCD	BRND_GNRC_CD	Brand-Generic Code Reported by Submitting Plan	CHAR	1	-	-	-	X	X	X	X	X	X
+PHRMCY_SRVC_TYPE_CD	PHRMCY_SRVC_TYPE_CD	Pharmacy Service Type Code	CHAR	2	-	-	-	-	X	X	X	X	X
+PTNT_RSDNC_CD	PTNT_RSDNC_CD	Patient Residence Code	CHAR	2	-	-	-	-	X	X	X	X	X
+LTPAC_DSPNSNG_FREQ_CD	LTPAC_DSPNSNG_FREQ_CD	Long Term and Post Acute Care (LTPAC) Dispensing Frequency Code	CHAR	2	-	-	-	-	-	-	-	-	X
+SUBMSN_CLR_CD	SUBMSN_CLR_CD	Submission Clarification Code	CHAR	2	-	-	-	-	X	X	X	X	-
+SUBMSN_CLRFCTN_CD_1	SUBMSN_CLRFCTN_CD_1	Submission Clarification Code 1	CHAR	3	-	-	-	-	-	-	-	-	X
+SUBMSN_CLRFCTN_CD_2	SUBMSN_CLRFCTN_CD_2	Submission Clarification Code 2	CHAR	3	-	-	-	-	-	-	-	-	X
+SUBMSN_CLRFCTN_CD_3	SUBMSN_CLRFCTN_CD_3	Submission Clarification Code 3	CHAR	3	-	-	-	-	-	-	-	-	X
+SUBMSN_CLRFCTN_CD_4	SUBMSN_CLRFCTN_CD_4	Submission Clarification Code 4	CHAR	3	-	-	-	-	-	-	-	-	X
+SUBMSN_CLRFCTN_CD_5	SUBMSN_CLRFCTN_CD_5	Submission Clarification Code 5	CHAR	3	-	-	-	-	-	-	-	-	X
+SUBMSN_TYPE_CD_1	SUBMSN_TYPE_CD_1	Submission Type Code 1	CHAR	2	-	-	-	-	-	-	-	-	X
+SUBMSN_TYPE_CD_2	SUBMSN_TYPE_CD_2	Submission Type Code 2	CHAR	2	-	-	-	-	-	-	-	-	X
+SUBMSN_TYPE_CD_3	SUBMSN_TYPE_CD_3	Submission Type Code 3	CHAR	2	-	-	-	-	-	-	-	-	X
+SUBMSN_TYPE_CD_4	SUBMSN_TYPE_CD_4	Submission Type Code 4	CHAR	2	-	-	-	-	-	-	-	-	X
+SUBMSN_TYPE_CD_5	SUBMSN_TYPE_CD_5	Submission Type Code 5	CHAR	2	-	-	-	-	-	-	-	-	X
+BNFTPHAS	BENEFIT_PHASE	Benefit Phase of Part D Event	CHAR	2	X	X	X	X	X	X	X	X	X
+PHARM_ID 3	CCW_PHARM_ID	CCW Pharmacy Identifier	NUM	12	X	X	X	X	X	-	-	-	-
+NCPDP_ID 3	NCPDP_ID	NCPDP Pharmacy Identifier	CHAR	7	-	-	-	-	-	X	X	X	X
+PRSCRBID 2,4	PRSCRBR_ID	Prescriber Identification Number	CHAR	35	-	-	-	-	-	X	X	X	LC
+PRSCQLFR 4	PRSCRBR_ID_QLFYR_CD	Prescriber ID Qualifier Code	CHAR	2	-	-	-	-	-	X	X	X	X
+CCW_PRSCRBR_ID 4	CCW_PRSCRBR_ID	CCW Prescriber Identifier	NUM	12	X	X	X	X	X	-	-	-	-
+PDE_PRSCRBR_ID_FRMT_CD 4	PDE_PRSCRBR_ID_FRMT_CD	PDE Prescriber ID Format Code	CHAR	1	X	X	X	X	X	-	-	-	-
+PRAUTHYN 5	PRIOR_AUTHORIZATION_YN	Prior Authorization Indicator	CHAR	2	X	-	-	-	-	-	-	-	-
+TIER_ID 5	TIER_ID	Medicare Part D Formulary Tier Number	CHAR	2	X	-	-	-	-	-	-	-	-
+QTYLMTYN 5	QUANTITY_LIMIT_YN	Quantity Limit Indicator	CHAR	2	X	-	-	-	-	-	-	-	-
+STEP 5	STEP	Maximum Step Number	CHAR	2	X	-	-	-	-	-	-	-	-
+FORMULARY_ID	FORMULARY_ID	Formulary ID	CHAR	8	-	X	X	X	X	X	X	X	X
+FRMLRY_RX_ID	FRMLRY_RX_ID	CCW Formulary Drug ID	CHAR	8	-	X	X	X	X	X	X	X	X
+PTD_MODEL_IND	PTD_MODEL_IND	Part D Model Indicator	CHAR	2	-	-	-	-	-	-	X	X	X
+OTHR_TROOP_AMOUNT_IND	OTHR_TROOP_AMOUNT_IND	Other TrOOP Amount Indicator	CHAR	1	-	-	-	-	-	-	-	X	X
+MDCR_RX_PYMT_PLAN_IND	MDCR_RX_PYMT_PLAN_IND	Medicare Prescription Payment Plan (MPPP) Indicator	CHAR	1	-	-	-	-	-	-	-	-	X
+SLCTD_DRUG_SBSDY_AMT	SLCTD_DRUG_SBSDY_AMT	Selected Drug Subsidy Amount at Point of Sale	NUM	13	-	-	-	-	-	-	-	-	X
+RPTD_MFTR_DSCNT_AMT	RPTD_MFTR_DSCNT_AMT	Reported Manufacturer Discount Amount at Point of Sale	NUM	13	-	-	-	-	-	-	-	-	X
+SMALL_MFTR_DSCNT_PCT	SMALL_MFTR_DSCNT_PCT	Applicable Discount Percentage for Specified Small Manufacturer Drugs	NUM	2	-	-	-	-	-	-	-	-	X
+LIS_MFTR_DSCNT_PCT	LIS_MFTR_DSCNT_PCT	Applicable Discount Pctg for Spcfied Manufacturer Drugs Dispensed to LIS Benes	NUM	2	-	-	-	-	-	-	-	-	X
+DRUG_STUS_IND	DRUG_STUS_IND	Drug Status Indicator of Manufacturer Discount	CHAR	1	-	-	-	-	-	-	-	-	X
+Part D drug characteristics 6
+BN	BN	Brand Name	CHAR	30	X	X	X	X	X	X	X	X	X
+GNN	GNN	Generic Name	CHAR	30	X	X	X	X	X	X	X	X	X
+STR	STR	Drug Strength Description	CHAR	10	X	X	X	X	X	X	X	X	X
+GCDF	GCDF	Dosage Form Code	CHAR	2	X	X	X	X	X	X	X	X	X
+GCDF_DESC	GCDF_DESC	Dosage Form Code Description	CHAR	40	X	X	X	X	X	X	X	X	X
+1 For all columns under "Year of Data File":  X = variable is present; '-' indicates not present, or not populated; LC = length change for variable; VC = value change.
+2 Prior to 2015, CCW was required to encrypt or use CCW-assigned ID values to protect these sensitive data fields.
+These sensitive fields were those which could be used to identify the prescriber (PRSCRBR_ID), the pharmacy, the plan (PLAN_CNTRCT_REC_ID) and benefit package (PLAN_PBP_REC_NUM),
+or the plan’s formulary (FORMULARY_ID).  We are no longer required to encrypt the prescriber, pharmacy, plan or formulary identifiers.
+3 For PDE files 2006-2013, the CCW_PHARM_ID  is used to identify the pharmacy. Beginning with 2014 PDE, the NCPDP_ID is used.
+4 For PDE files 2006-2013,  the CCW_PRSCRBR_ID is used to identify the prescriber.  Beginning with 2014 PDE the actual prescriber identifier and the associated qualifier code
+(PRSCRBR_ID and PRSCRBR_ID_QLFYR_CD variables) are used. The CCW Prescriber ID variable (and the associated PDE_PRSCRBR_ID_FRMT_CD) was retired after the 2013 data file.
+5 Starting in 2010, these variables were moved from PDE to the Formulary file.
+6 If these variables are selected, they are appended to the PDE records.
+7 In 2025, this field was renamed  to sex to comply with Executive Order 14168

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_74",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "188\nABX_NMRTR_OTHR_RX_PENICLN_CNT2 Antibiotic Utilization (ABX) Numerator: All Oth Antibiotics - Penicillins Count NUM 4* 126 160 202 191 189\nABX_NMRTR_OTHR_RX_TETRACYCLN_CNT2 Antibiotic Utilization (ABX) Numerator: All Oth Antibiotics -Tetracyclines Count NUM 4* 127 161 203 192 190\nABX_NMRTR_OTHR_RX_MISC_CNT2 Antibiotic Utilization (ABX) Numerator: All Oth Miscellaneous Antibiotics Count NUM 4* 128 162 204 193 191\nPSA_DNMTR_IND Non-Recommended PSA-Based Screening in Older Men (PSA) Denominator",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

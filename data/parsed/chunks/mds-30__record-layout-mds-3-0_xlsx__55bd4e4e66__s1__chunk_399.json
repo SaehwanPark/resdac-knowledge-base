@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_399",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Skin Tear(s) CHAR 1 The data in this column indicates whether the resident has a skin tear(s). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n447 M1040H_MASD_CD M1040H_MASD_CD M1040H Other Skin Problems: Moisture Associated Skin Damage CHAR 1 The data in this column indicates whether the resident has moisture associated skin damage. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n448 M1040Z_NO_OTHR_SKIN_PRBLM_CD M1040Z_NO_OTHR_SKIN_PRBLM_CD M1040Z Other Skin",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

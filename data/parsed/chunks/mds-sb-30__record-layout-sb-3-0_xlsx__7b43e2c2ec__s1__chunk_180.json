@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_180",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "with groups of people. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n213 F0800Q_STF_FVRT_ACTVTY_CD F0800Q_STF_FVRT_ACTVTY_CD F0800Q Staff Assessment: Favorite Activity Code CHAR 1 The data in this column indicates whether the resident prefers participating in favorite activities. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n214 F0800R_STF_TIME_AWAY_NH_CD F0800R_STF_TIME_AWAY_NH_CD F0800R Staff Assessment: Time",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

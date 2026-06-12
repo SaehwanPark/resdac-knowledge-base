@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_70",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Yes CHAR 1 x x\nM0330_SAN_OTHER (M0330) Other Sanitation Hazards Sanitation hazards: other (specify). 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_OUT_TOIL (M0330) Outdoor Toileting Facilities Only Sanitation hazards: outdoor toileting facilities only. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_ALONE (M0340) Lives Alone Patient lives alone. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_FRIEND (M0340) Lives With Friend Patient lives with friend. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_OTH_FAM (M0340) Lives With Other",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

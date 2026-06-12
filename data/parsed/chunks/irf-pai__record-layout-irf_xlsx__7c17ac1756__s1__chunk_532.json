@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_532",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "baseline at the time of admission. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n469 MENTL_STUS_CHG_DSCHRG_CD MENTL_STUS_CHG_DSCHRG_CD Delirium: Acute Onset Mental Status Change (Dsch) CHAR 1 This column documents whether there Is evidence of an acute change in mental status from the patient's baseline at the time of discharge. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n470 DFCLTY_ATTN_ADMSN_CD DFCLTY_ATTN_ADMSN_CD Delirium: Inattention (Adm) CHAR 1 At the time of admission, did the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

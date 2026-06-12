@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p22__chunk_2",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 22,
+  "text": "code from paper remittance. Usage: This code is to be used by \nproviders/payers providing Coordination of Benefits information to another payer in the 837 \ntransaction only. This code is only used when the non-standard code cannot be reasonably \nmapped to an existing claims Adjustment Reason Code, specifically Deductible, Coinsurance and \nCo-payment \n193 = Original payment decision is being maintained. Upon review, it was determined that this claim \nwas processed properly \n194 = Anesthesia",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

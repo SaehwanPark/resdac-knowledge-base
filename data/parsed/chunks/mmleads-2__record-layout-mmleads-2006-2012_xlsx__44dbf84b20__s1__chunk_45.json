@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_45",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "and cents\nS_MEDICARE_PMT Annual Medicare FFS payments Value displayed in dollars and cents\nS_MEDICARE_BENE_PMT_1 - 12 Monthly Medicare coinsurance and deductible FFS payments (based on claim through date) Value displayed in dollars and cents\nS_MEDICARE_BENE_PMT Annual Medicare coinsurance and deductible FFS payments Value displayed in dollars and cents\nS_OTH_MEDICARE_PMT Medicare FFS payments for months with 'Other' Dual Status Value displayed in dollars and cents\nS_OTH_MEDICARE_BENE_PMT",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

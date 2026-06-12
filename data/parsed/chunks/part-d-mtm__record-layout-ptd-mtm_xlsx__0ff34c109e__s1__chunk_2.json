@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "identified as long-term care (LTC) facility resident CHAR 1 X - - - -\nENROLLMENT_DT Date of MTM program enrollment DATE 8 X X X X X\nTARG_CRITERIA_MET_DT Date Part D targeting criteria met DATE 8 X X X X X\nOPT_OUT_DT Date MTM program opt-out, if applicable DATE 8 X X X X X\nOPT_OUT_REASON Reason participant opted-out of MTM program CHAR 2 X X X X X\nCMR_OFFERED Beneficiary offered an annual comprehensive medication review (CMR) CHAR 1 X X X X X\nCMR_OFFERED_DT Date of the initial CMR offer within",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

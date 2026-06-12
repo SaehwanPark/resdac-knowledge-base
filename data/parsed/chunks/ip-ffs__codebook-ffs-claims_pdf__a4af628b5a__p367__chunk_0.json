@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p367__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 367,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n349 \nREV_CNTR_DT \nLABEL: \nRevenue Center Date \nDESCRIPTION: This is the date of service for the revenue center record. \nHowever, it is populated only for home health claims, hospice claims, and Part B institutional (HOP) \nclaims. \nFor home health claims, which are paid based on episodes that can last up to 60 days, this variable \nindicates the dates for the individual visits.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

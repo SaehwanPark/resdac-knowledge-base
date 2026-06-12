@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 22,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n18 \nTIER_ID \nLABEL: \nTier Number \nDESCRIPTION: Medicare Part D formulary tier identifier. This field represents the cost sharing tier in which the drug \nproduct was placed in the sponsor's formulary. This identifier is also a key that links a Part D sponsor's \ncost sharing tier record in the Plan Characteristics File to a prescription drug event record (i.e., the PDE \ndata)",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

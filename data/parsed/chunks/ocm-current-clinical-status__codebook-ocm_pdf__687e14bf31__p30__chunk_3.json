@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p30__chunk_3",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 30,
+  "text": "values for the variables listed above, those where \nRPTD_TO_RGSTRY = 1 but whose reported values were determined to be invalid for one of the \nfollowing reasons: \n1. Participant-reported cancer type (CNCR_TYPE_RPTD) not equal to OCM-assigned cancer type \n(CNCR_TYPE_ASGNED) \n2. Practice reporting the data was not the same as the practice to which the beneficiary’s \nepisode was attributed \n3. Not all information was completely reported, or, \n4. Multiple records with conflicting values for the",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

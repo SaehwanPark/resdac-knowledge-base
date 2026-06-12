@@ -1,0 +1,37 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Part D Medication Therapy Management (MTM) — Enrollment File
+Version — May 2024
+Long SAS name	Label	Type	Length	2013 1	2014–2015 1	2016–2018 1	2019–2021 1	2022 + 1
+BENE_ID	Encrypted CCW beneficiary ID	CHAR	15	X	X	X	X	X
+RFRNC_YR	Year of Part D Medication Therapy Management (MTM) file	NUM	8	X	X	X	X	X
+CONTRACT_ID	Part D contract number	CHAR	5	X	X	X	X	X
+TARG_CRITERIA_MET	Beneficiary met targeting criteria	CHAR	1	X	X	X	X	-
+TARG_CRITERIA_MET_REASON	Reason why beneficiary met the targeting criteria	CHAR	2	-	-	-	-	X
+COG_IMPAIRED	Beneficiary identified as cognitively impaired	CHAR	1	X	X	X	X	X
+LTC_CMR	Beneficiary identified as residing in a LTC facility	CHAR	1	-	-	-	X	X
+LTC_ENROLLMENT	Beneficiary identified as long-term care (LTC) facility resident	CHAR	1	X	-	-	-	-
+ENROLLMENT_DT	Date of MTM program enrollment	DATE	8	X	X	X	X	X
+TARG_CRITERIA_MET_DT	Date  Part D targeting criteria met	DATE	8	X	X	X	X	X
+OPT_OUT_DT	Date MTM program opt-out, if applicable	DATE	8	X	X	X	X	X
+OPT_OUT_REASON	Reason participant opted-out of MTM program	CHAR	2	X	X	X	X	X
+CMR_OFFERED	Beneficiary offered an annual comprehensive medication review (CMR)	CHAR	1	X	X	X	X	X
+CMR_OFFERED_DT	Date of the initial CMR offer within the reporting period	DATE	8	X	X	X	X	X
+CMR_RECIPIENT	Comprehensive medication review (CMR) recipient	CHAR	2	X	X	X	X	X
+CMR_RECEIVED	Indicate if received annual CMR with written summary in CMS standardized format	CHAR	1	X	X	X	X	X
+CMR_RECEIVED_NUM	Number of comprehensive medication reviews (CMRs) received	NUM	8	X	X	X	-	-
+CMR_RECEIVED_DT1	Date first comprehensive medication review (CMR) received	DATE	8	X	X	X	X	X
+CMR_RECEIVED_DT2	Date second (or last for 2016+) comprehensive medication review (CMR) received	DATE	8	X	X	X	-	-
+CMR_RECEIVED_DT3	Date third comprehensive medication review (CMR) received	DATE	8	X	X	-	-	-
+CMR_RECEIVED_DT4	Date fourth comprehensive medication review (CMR) received	DATE	8	X	X	-	-	-
+CMR_RECEIVED_DT5	Date fifth comprehensive medication review (CMR) received	DATE	8	X	X	-	-	-
+WRIT_SUMM_DT	Date written summary in CMS’ standardized format was provided or sent	DATE	8	-	-	-	X	X
+CMR_DELIVERY_METHOD	Comprehensive medication review (CMR) method	CHAR	2	X	X	X	X	X
+CMR_PROVIDER	Comprehensive medication review (CMR) provider type	CHAR	2	X	X	X	X	X
+CMR_RECIPIENT_INI	If offered a CMR  recipient of (initial) offer	CHAR	2	-	-	-	X	-
+TARG_MED_REV_NUM	Number of targeted medication reviews conducted	NUM	8	X	X	X	X	X
+TMR_PERF_DT	Date the first TMR was performed	DATE	8	-	-	-	X	X
+PRESCRIBER_INTERV_NUM	Number of drug therapy problem recommendations made to  prescribers	NUM	8	X	X	X	X	X
+DRUG_THER_CHG_NUM	Number of drug therapy problem resolutions with prescribers	NUM	8	X	X	X	X	X
+DSPSL_MDCTNS_MTHD	Method of delivery for information regarding safe disposal of medications	CHAR	2	-	-	-	-	X
+NUM_COMMS_SAFE_DSPSL_MDCTNS	Number of communications sent to beneficiary regarding safe disposal of medications	NUM	8	-	-	-	-	X
+1 Shading or '-' indicates that the variable was not present during this time.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p27__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 27,
+  "text": "character string that contains intelligence (e.g., 323006639 is the 6,639th navigation \ncase for the AHC bridge organization B23). \nThe first digit is always 3, then the 2nd and 3rd digits are the numeric portion of the bridge organization \nidentifier (i.e., the “B” from the bridge organization ID is replaced with a “3”). The remaining 6 digits \nare sequential numbers representing the navigation cases within the bridge organization. \nCOMMENT: \nFor each navigation-eligible beneficiary who opted",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

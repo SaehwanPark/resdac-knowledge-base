@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p28__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 28,
+  "text": "will contain a \npositive dollar value. If a prescription crosses the threshold, then the portion of the gross drug cost \nthat is above the threshold will appear in this field. \nSHORT NAME: GDCAOOPT \nLONG NAME: GDC_ABV_OOPT_AMT \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nField length expanded from 10 to 13 in 2025. Reference the GDC_BLW_OOPT_AMT variable for the \nportion of the gross drug cost that was not covered by Part D’s catastrophic coverage. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

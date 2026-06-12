@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p251__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 251,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n231 \nRSLT_SRVC_CD \nLABEL: \nResult of Service Code \nDESCRIPTION: Describes the action the pharmacist took in response to a conflict or the result of a pharmacist’s \nprofessional service. \nThis is the value reported in the Result of Service Code field of the NCPDP claim form. \nSHORT NAME: RSLT_SRVC_CD \nLONG NAME: RSLT_SRVC_CD \nTYPE: \nCHAR \nLENGTH: \n6 \nSOURCE: \nT-MSIS Analytic File (TAF)",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

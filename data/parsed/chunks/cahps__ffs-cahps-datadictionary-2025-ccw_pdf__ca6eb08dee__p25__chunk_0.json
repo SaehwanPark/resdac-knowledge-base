@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p25__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 25,
+  "text": "B. 2025 MCAHPS Format Tables \n25 \nrecontact: RECODE : Medicare Program may recontact about health care services received \nSAS Format: YNA \n1: YES \n2: NO \nrxdelay: RECODE : Last 6 mths, delayed filling RX meds because of cost \nSAS Format: YNA \n1: YES \n2: NO \nrxezmeds: RECODE: Last 6 mths, easy to get medicines doctor prescribed \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \nrxinspay: RECODE: Have insurance that pays part or all the cost of RX medicines \nSAS Format: YNA \n1: YES",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

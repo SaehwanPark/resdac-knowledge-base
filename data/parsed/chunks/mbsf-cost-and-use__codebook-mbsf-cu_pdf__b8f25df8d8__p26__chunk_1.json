@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p26__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 26,
+  "text": "Medicare for a given year. Dialysis claims are a subset of the claims, and a subset of procedures in the \nPart B carrier data file. \nDialysis claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = \n“P9.” The total Primary Payer Payments are calculated as the sum of the \nLINE_BENE_PRMRY_PYR_PD_AMT. \nSHORT NAME: — \nLONG NAME: DIALYS_PRMRY_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThere are 11 cost/use categories from the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

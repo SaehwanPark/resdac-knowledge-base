@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-beneficiary__record-layout-next-generation_xlsx__486207168f__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/486207168fb11df3830f1b952de1d345767ec72c.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nNext Generation ACO (NGACO) — Beneficiary File\nVersion — May 2025\nSAS Name Label Type Length\nACO_ID ACO Identifier CHAR 4\nCLNDR_YR Year of ACO Source Record CHAR 4\nPRVDR_CLASS Provider Class (PART = Participant; PREF = Preferred Provider) CHAR 4\nORG_TIN Billing TIN (Taxpayer Identification Number) of ACO Participant CHAR 9\nORG_NPI National Provider Identifier (NPI) for Organization CHAR 10\nORG_CCN CMS Certification Number CHAR 6\nIND_NPI",
+  "dataset": "ngaco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-next-generation.xlsx"
+}

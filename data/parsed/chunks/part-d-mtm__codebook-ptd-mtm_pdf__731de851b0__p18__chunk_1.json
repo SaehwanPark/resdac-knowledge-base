@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p18__chunk_1",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 18,
+  "text": "SOURCE: \nCMS (HPMS files) \nVALUES: \n01 = Beneficiary \n02 = Beneficiary's prescriber \n03 = Caregiver \n99 = Other authorized individual \nNull/missing = beneficiary did not receive a CMR \nCOMMENT: \nIf the beneficiary received a CMR offer, then the recipient of the CMR offer is required. If the \nbeneficiary received more than 1 CMR offer, report the recipient of the initial CMR offer. \nThis field is available in the 2019–2021 data files. \n^ Back to TOC ^",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

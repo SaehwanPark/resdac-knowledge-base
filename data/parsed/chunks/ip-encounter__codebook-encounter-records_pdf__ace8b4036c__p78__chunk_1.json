@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p78__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 78,
+  "text": "services that are not represented in the \nlevel I or level II codes. \nNote 2: \nThis field may contain information regarding case-mix grouping that Medicare used to pay for SNF, \nhome health, or IRF services. These groupings are sometimes known as Health Insurance Prospective \nPayment System (HIPPS) codes. \nThis field contains a HIPPS code if the revenue center code (REV_CNTR) equals 0022 for SNF care, 0023 \nfor home health, or 0024 for IRF care. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

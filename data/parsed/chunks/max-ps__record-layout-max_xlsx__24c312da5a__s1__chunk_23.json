@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "NUM 1 X X X X X X X X X X X\n102 EL_MDCR_BEN_MO_12 Medicare beneficiary code (Dec) NUM 1 X X X X X X X X X X X\n103 EL_PPH_PLN_MO_CNT_CMCP Prepaid plan months - Comprehensive Managed Care Plans (CMCP) NUM 2 X X X X X X X X X X X\n104 EL_PPH_PLN_MO_CNT_DMCP Prepaid plan months - Dental Managed Care Plans (DMCP) NUM 2 X X X X X X X X X X X\n105 EL_PPH_PLN_MO_CNT_BMCP Prepaid plan months- Behavioral Managed Care Plans (BMCP) NUM 2 X X X X X X X X X X X\n106 EL_PPH_PLN_MO_CNT_PDMC Prepaid plan months -",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

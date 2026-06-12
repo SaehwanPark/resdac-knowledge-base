@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "identify if/when there was a change in length.\n3 Prior to the 2013 data release, CCW was required to encrypt these sensitive data fields. These sensitive fields were those which could be used to identify the the plan sponsor's contract (CONTRACT_ID), plan benefit package (PLAN_ID), and the plan’s formulary (FORMULARY_ID). We are no longer required to encrypt these variables.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

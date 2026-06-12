@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_472",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "^=Blank (skip pattern)\n532 O0400E1_PSYCH_THRPY_MIN_NUM O0400E1_PSYCH_THRPY_MIN_NUM O0400E1 Psychological Therapy Minutes Number CHAR 4 The data in this column indicates the total number of minutes that psychological therapy was administered to the resident in the last seven days. discontinued 09/30/2025\n533 O0400E2_PSYCH_THRPY_DAY_NUM O0400E2_PSYCH_THRPY_DAY_NUM O0400E2 Number of Days Psychological Therapy Administered CHAR 1 The data in this column indicates the number of days that",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

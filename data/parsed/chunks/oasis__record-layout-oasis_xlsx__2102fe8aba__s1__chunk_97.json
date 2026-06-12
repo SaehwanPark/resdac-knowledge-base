@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_97",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Patient on prophylactic treatment\nUK = Unknown CHAR 2 x x\nM0520_UR_INCONT (M0520) Urinary Incontinence Urinary incontinence or urinary catheter presence. 00 = No incontinence or catheter (includes anuria or ostomy for urinary drainage)\n01 = Patient is incontinent\n02 = Patient requires a urinary catheter (e.g., external, indwelling, intermittent, suprapubic) CHAR 2 x x\nM0530_UR_INCONT_OC (M0530) When Urinary Incontinence Occurs When urinary incontinence occurs. 00 = Timed voiding defers",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

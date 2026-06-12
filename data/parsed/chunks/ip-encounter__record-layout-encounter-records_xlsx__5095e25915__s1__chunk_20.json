@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Claim Procedure Code 5 Char 7 113\nICD_PRCDR_CD6 Claim Procedure Code 6 Char 7 114\nICD_PRCDR_CD7 Claim Procedure Code 7 Char 7 115\nICD_PRCDR_CD8 Claim Procedure Code 8 Char 7 116\nICD_PRCDR_CD9 Claim Procedure Code 9 Char 7 117\nICD_PRCDR_CD10 Claim Procedure Code 10 Char 7 118\nICD_PRCDR_CD11 Claim Procedure Code 11 Char 7 119\nICD_PRCDR_CD12 Claim Procedure Code 12 Char 7 120\nICD_PRCDR_CD13 Claim Procedure Code 13 Char 7 121\nPRCDR_DT1 Claim Procedure Code 1 Date Date 8 122\nPRCDR_DT2 Claim",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p130__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 130,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n90 \nHLTH_HOME_ENT_NAME \nLABEL: \nHealth Home Entity Name — Latest in Year \nDESCRIPTION: A field to identify the health home state plan amendments (SPA) in which a beneficiary is enrolled in \nthe calendar year; most recent in the calendar year. Because an identification numbering schema has \nnot been established, the entities’ names are being used instead. \nSHORT NAME:",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

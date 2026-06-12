@@ -1,0 +1,1027 @@
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicaid Analytic eXtract (MAX) Personal Summary (PS) Record
+Version - December 2019
+CCW Order	Short SAS NAME	Label	Type	Field Width	1999-2004 1	2005 1	2006 1	2007 1	2008 1	2009 1	2010 1	2011 1	2012 1	2013 1	2014 -2015 1	Comments
+1	BENE_ID	Encrypted 723 CCW Beneficiary ID	CHAR	15	X	X	X	X	X	X	X	X	X	X	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse.  This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all  data files. 
+Source:  CCW
+2	MSIS_ID	Encrypted MSIS Identification Number	CHAR	32	X	X	X	X	X	X	X	X	X	X	X	This field is encrypted prior to data delivery
+3	STATE_CD	State	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+4	EL_STATE_CASE_NUM	Encrypted Case Number	CHAR	32	X	X	X	X	X	X	X	X	X	X	X
+5	MAX_YR_DT	Year	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+6	HGT_FLAG	SSN (from MSIS) High Group Test	CHAR	1	‾	X	X	X	X	X	X	NP	NP	NP	NP
+7	EXT_SSN_SRCE	External SSN source	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+8	EL_DOB	Date of birth	DATE	8	X	X	X	X	X	X	X	X	X	X	X
+9	EL_AGE_GRP_CD	Age group code	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+10	EL_SEX_CD	Sex	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+11	EL_RACE_ETHNCY_CD	Race/ethnicity (from MSIS)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+12	RACE_CODE_1	Race - White (from MSIS)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+13	RACE_CODE_2	Race - Black/ African American (from MSIS)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+14	RACE_CODE_3	Race - Am Indian/Alaskan (from MSIS)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+15	RACE_CODE_4	Race - Asian (from MSIS)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+16	RACE_CODE_5	Race - Hawaiian/Pac. Islands (from MSIS)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+17	ETHNICITY_CODE	Ethnicity - Hispanic (from MSIS)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+18	MDCR_RACE_ETHNCY_CD	Race/ethnicity (from Medicare EDB)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+19	MDCR_LANG_CD	Language code (from Medicare EDB)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+20	EL_SEX_RACE_CD	Sex/race code	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+21	EL_DOD	Date of death (from MSIS)	DATE	8	X	X	X	X	X	X	X	X	X	X	X
+22	MDCR_DOD	Date of death (from Medicare EDB)	DATE	8	X	X	X	X	X	X	X	X	X	X	X
+23	MDCR_DEATH_DAY_SW	Day of death verified (from Medicare EDB)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+24	EL_RSDNC_CNTY_CD_LTST	County of residence	CHAR	3	X	X	X	X	X	X	X	X	X	X	X
+25	EL_RSDNC_ZIP_CD_LTST	Zip code of residence	NUM	9	X	X	X	X	X	X	X	X	X	X	X
+26	EL_SS_ELGBLTY_CD_LTST	State specific eligibility - most recent	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+27	EL_MAX_ELGBLTY_CD_LTST	MAX unform eligibility code - most recent	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+28	MSNG_ELG_DATA	Missing Medicaid eligibility data	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+29	EL_ELGBLTY_MO_CNT	Months of Eligibility	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+30	EL_PRVT_INSRNC_MO_CNT	Private insurance months	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+31	EL_MDCR_ANN_XOVR_OLD	Medicare crossover code (Old Annual)	NUM	1	X	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP
+32	EL_MDCR_QTR_XOVR_OLD_1	Quarterly crossover code (Old Quarter 1)	NUM	1	X	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP
+33	EL_MDCR_QTR_XOVR_OLD_2	Quarterly crossover code (Old Quarter 2)	NUM	1	X	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP
+34	EL_MDCR_QTR_XOVR_OLD_3	Quarterly crossover code (Old Quarter 3)	NUM	1	X	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP
+35	EL_MDCR_QTR_XOVR_OLD_4	Quarterly crossover code (Old Quarter 4)	NUM	1	X	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP
+36	EL_MDCR_DUAL_ANN	Medicare dual code (Annual)	CHAR	2	X	X	X	X	X	X	X	X	35	X	X
+37	EL_MDCR_QTR_XOVR_99_1	Quarterly crossover code (Quarter 1)	CHAR	2	X	X	X	NP	NP	NP	NP	NP	NP	NP	NP
+38	EL_MDCR_QTR_XOVR_99_2	Quarterly crossover code (Quarter 2)	CHAR	2	X	X	X	NP	NP	NP	NP	NP	NP	NP	NP
+39	EL_MDCR_QTR_XOVR_99_3	Quarterly crossover code (Quarter 3)	CHAR	2	X	X	X	NP	NP	NP	NP	NP	NP	NP	NP
+40	EL_MDCR_QTR_XOVR_99_4	Quarterly crossover code (Quarter 4)	CHAR	2	X	X	X	NP	NP	NP	NP	NP	NP	NP	NP
+41	EL_MDCR_BEN_MO_CNT	Medicare benefit mos (from Medicare EDB)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+42	MDCR_ORIG_REAS_CD	Mcare orig entitlemt reason (from EDB)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+43	EL_MDCR_DUAL_MO_1	Medicare dual code (Jan)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	New in 2005 (replaces the monthly XOVR codes - which are at the end of this layout)
+44	EL_MDCR_DUAL_MO_2	Medicare dual code (Feb)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+45	EL_MDCR_DUAL_MO_3	Medicare dual code (Mar)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+46	EL_MDCR_DUAL_MO_4	Medicare dual code (Apr)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+47	EL_MDCR_DUAL_MO_5	Medicare dual code (May)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+48	EL_MDCR_DUAL_MO_6	Medicare dual code (Jun)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+49	EL_MDCR_DUAL_MO_7	Medicare dual code (Jul)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+50	EL_MDCR_DUAL_MO_8	Medicare dual code (Aug)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+51	EL_MDCR_DUAL_MO_9	Medicare dual code (Sep)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+52	EL_MDCR_DUAL_MO_10	Medicare dual code (Oct)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+53	EL_MDCR_DUAL_MO_11	Medicare dual code (Nov)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+54	EL_MDCR_DUAL_MO_12	Medicare dual code (Dec)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+55	SS_ELG_CD_MO_1	State specific eligibility group (Jan)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+56	SS_ELG_CD_MO_2	State specific eligibility group (Feb)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+57	SS_ELG_CD_MO_3	State specific eligibility group (Mar)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+58	SS_ELG_CD_MO_4	State specific eligibility group (Apr)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+59	SS_ELG_CD_MO_5	State specific eligibility group (May)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+60	SS_ELG_CD_MO_6	State specific eligibility group (Jun)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+61	SS_ELG_CD_MO_7	State specific eligibility group (Jul)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+62	SS_ELG_CD_MO_8	State specific eligibility group (Aug)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+63	SS_ELG_CD_MO_9	State specific eligibility group (Sep)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+64	SS_ELG_CD_MO_10	State specific eligibility group (Oct)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+65	SS_ELG_CD_MO_11	State specific eligibility group (Nov)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+66	SS_ELG_CD_MO_12	State specific eligibility group (Dec)	CHAR	6	X	X	X	X	X	X	X	X	X	X	X
+67	MAX_ELG_CD_MO_1	MAX uniform eligibility group (Jan)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+68	MAX_ELG_CD_MO_2	MAX uniform eligibility group (Feb)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+69	MAX_ELG_CD_MO_3	MAX uniform eligibility group (Mar)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+70	MAX_ELG_CD_MO_4	MAX uniform eligibility group (Apr)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+71	MAX_ELG_CD_MO_5	MAX uniform eligibility group (May)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+72	MAX_ELG_CD_MO_6	MAX uniform eligibility group (Jun)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+73	MAX_ELG_CD_MO_7	MAX uniform eligibility group (Jul)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+74	MAX_ELG_CD_MO_8	MAX uniform eligibility group (Aug)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+75	MAX_ELG_CD_MO_9	MAX uniform eligibility group (Sep)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+76	MAX_ELG_CD_MO_10	MAX uniform eligibility group (Oct)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+77	MAX_ELG_CD_MO_11	MAX uniform eligibility group (Nov)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+78	MAX_ELG_CD_MO_12	MAX uniform eligibility group (Dec)	CHAR	2	X	X	X	X	X	X	X	X	X	X	X
+79	EL_PVT_INS_CD_1	Private health insurance code (Jan)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+80	EL_PVT_INS_CD_2	Private health insurance code (Feb)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+81	EL_PVT_INS_CD_3	Private health insurance code (Mar)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+82	EL_PVT_INS_CD_4	Private health insurance code (Apr)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+83	EL_PVT_INS_CD_5	Private health insurance code (May)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+84	EL_PVT_INS_CD_6	Private health insurance code (Jun)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+85	EL_PVT_INS_CD_7	Private health insurance code (Jul)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+86	EL_PVT_INS_CD_8	Private health insurance code (Aug)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+87	EL_PVT_INS_CD_9	Private health insurance code (Sep)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+88	EL_PVT_INS_CD_10	Private health insurance code (Oct)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+89	EL_PVT_INS_CD_11	Private health insurance code (Nov)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+90	EL_PVT_INS_CD_12	Private health insurance code (Dec)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+91	EL_MDCR_BEN_MO_1	Medicare beneficiary code (Jan)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+92	EL_MDCR_BEN_MO_2	Medicare beneficiary code (Feb)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+93	EL_MDCR_BEN_MO_3	Medicare beneficiary code (Mar)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+94	EL_MDCR_BEN_MO_4	Medicare beneficiary code (Apr)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+95	EL_MDCR_BEN_MO_5	Medicare beneficiary code (May)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+96	EL_MDCR_BEN_MO_6	Medicare beneficiary code (Jun)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+97	EL_MDCR_BEN_MO_7	Medicare beneficiary code (Jul)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+98	EL_MDCR_BEN_MO_8	Medicare beneficiary code (Aug)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+99	EL_MDCR_BEN_MO_9	Medicare beneficiary code (Sep)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+100	EL_MDCR_BEN_MO_10	Medicare beneficiary code (Oct)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+101	EL_MDCR_BEN_MO_11	Medicare beneficiary code (Nov)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+102	EL_MDCR_BEN_MO_12	Medicare beneficiary code (Dec)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+103	EL_PPH_PLN_MO_CNT_CMCP	Prepaid plan months - Comprehensive Managed Care Plans (CMCP)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+104	EL_PPH_PLN_MO_CNT_DMCP	Prepaid plan months - Dental Managed Care Plans (DMCP)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+105	EL_PPH_PLN_MO_CNT_BMCP	Prepaid plan months- Behavioral Managed Care Plans (BMCP)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+106	EL_PPH_PLN_MO_CNT_PDMC	Prepaid plan months - Prenatal/Delivery Managed Care Plans (PDMC)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+107	EL_PPH_PLN_MO_CNT_LTCM	Prepaid plan months - Long-Term Care Managed Care Plans (LTCM)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+108	EL_PPH_PLN_MO_CNT_AICE	Prepaid plan months - All-Inclusive Care for the Elderly (PACE) Plans (AICE)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+109	EL_PPH_PLN_MO_CNT_PCCM	Prepaid plan months - Primary Care Case Management Plans  (PCCM)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+110	EL_PHP_TYPE_1_1	Prepaid plan type-1 (Jan)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+111	EL_PHP_ID_1_1	Prepaid plan identifier-1 (Jan)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+112	EL_PHP_TYPE_2_1	Prepaid plan type-2 (Jan)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+113	EL_PHP_ID_2_1	Prepaid plan identifier-2 (Jan)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+114	EL_PHP_TYPE_3_1	Prepaid plan type-3 (Jan)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+115	EL_PHP_ID_3_1	Prepaid plan identifier-3 (Jan)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+116	EL_PHP_TYPE_4_1	Prepaid plan type-4 (Jan)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+117	EL_PHP_ID_4_1	Prepaid plan identifier-4 (Jan)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+118	EL_PHP_TYPE_1_2	Prepaid plan type-1 (Feb)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+119	EL_PHP_ID_1_2	Prepaid plan identifier-1 (Feb)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+120	EL_PHP_TYPE_2_2	Prepaid plan type-2 (Feb)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+121	EL_PHP_ID_2_2	Prepaid plan identifier-2 (Feb)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+122	EL_PHP_TYPE_3_2	Prepaid plan type-3 (Feb)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+123	EL_PHP_ID_3_2	Prepaid plan identifier-3 (Feb)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+124	EL_PHP_TYPE_4_2	Prepaid plan type-4 (Feb)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+125	EL_PHP_ID_4_2	Prepaid plan identifier-4 (Feb)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+126	EL_PHP_TYPE_1_3	Prepaid plan type-1 (Mar)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+127	EL_PHP_ID_1_3	Prepaid plan identifier-1 (Mar)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+128	EL_PHP_TYPE_2_3	Prepaid plan type-2 (Mar)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+129	EL_PHP_ID_2_3	Prepaid plan identifier-2 (Mar)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+130	EL_PHP_TYPE_3_3	Prepaid plan type-3 (Mar)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+131	EL_PHP_ID_3_3	Prepaid plan identifier-3 (Mar)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+132	EL_PHP_TYPE_4_3	Prepaid plan type-4 (Mar)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+133	EL_PHP_ID_4_3	Prepaid plan identifier-4 (Mar)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+134	EL_PHP_TYPE_1_4	Prepaid plan type-1 (Apr)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+135	EL_PHP_ID_1_4	Prepaid plan identifier-1 (Apr)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+136	EL_PHP_TYPE_2_4	Prepaid plan type-2 (Apr)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+137	EL_PHP_ID_2_4	Prepaid plan identifier-2 (Apr)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+138	EL_PHP_TYPE_3_4	Prepaid plan type-3 (Apr)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+139	EL_PHP_ID_3_4	Prepaid plan identifier-3 (Apr)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+140	EL_PHP_TYPE_4_4	Prepaid plan type-4 (Apr)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+141	EL_PHP_ID_4_4	Prepaid plan identifier-4 (Apr)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+142	EL_PHP_TYPE_1_5	Prepaid plan type-1 (May)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+143	EL_PHP_ID_1_5	Prepaid plan identifier-1 (May)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+144	EL_PHP_TYPE_2_5	Prepaid plan type-2 (May)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+145	EL_PHP_ID_2_5	Prepaid plan identifier-2 (May)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+146	EL_PHP_TYPE_3_5	Prepaid plan type-3 (May)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+147	EL_PHP_ID_3_5	Prepaid plan identifier-3 (May)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+148	EL_PHP_TYPE_4_5	Prepaid plan type-4 (May)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+149	EL_PHP_ID_4_5	Prepaid plan identifier-4 (May)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+150	EL_PHP_TYPE_1_6	Prepaid plan type-1 (Jun)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+151	EL_PHP_ID_1_6	Prepaid plan identifier-1 (Jun)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+152	EL_PHP_TYPE_2_6	Prepaid plan type-2 (Jun)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+153	EL_PHP_ID_2_6	Prepaid plan identifier-2 (Jun)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+154	EL_PHP_TYPE_3_6	Prepaid plan type-3 (Jun)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+155	EL_PHP_ID_3_6	Prepaid plan identifier-3 (Jun)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+156	EL_PHP_TYPE_4_6	Prepaid plan type-4 (Jun)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+157	EL_PHP_ID_4_6	Prepaid plan identifier-4 (Jun)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+158	EL_PHP_TYPE_1_7	Prepaid plan type-1 (Jul)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+159	EL_PHP_ID_1_7	Prepaid plan identifier-1 (Jul)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+160	EL_PHP_TYPE_2_7	Prepaid plan type-2 (Jul)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+161	EL_PHP_ID_2_7	Prepaid plan identifier-2 (Jul)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+162	EL_PHP_TYPE_3_7	Prepaid plan type-3 (Jul)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+163	EL_PHP_ID_3_7	Prepaid plan identifier-3 (Jul)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+164	EL_PHP_TYPE_4_7	Prepaid plan type-4 (Jul)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+165	EL_PHP_ID_4_7	Prepaid plan identifier-4 (Jul)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+166	EL_PHP_TYPE_1_8	Prepaid plan type-1 (Aug)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+167	EL_PHP_ID_1_8	Prepaid plan identifier-1 (Aug)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+168	EL_PHP_TYPE_2_8	Prepaid plan type-2 (Aug)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+169	EL_PHP_ID_2_8	Prepaid plan identifier-2 (Aug)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+170	EL_PHP_TYPE_3_8	Prepaid plan type-3 (Aug)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+171	EL_PHP_ID_3_8	Prepaid plan identifier-3 (Aug)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+172	EL_PHP_TYPE_4_8	Prepaid plan type-4 (Aug)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+173	EL_PHP_ID_4_8	Prepaid plan identifier-4 (Aug)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+174	EL_PHP_TYPE_1_9	Prepaid plan type-1 (Sep)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+175	EL_PHP_ID_1_9	Prepaid plan identifier-1 (Sep)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+176	EL_PHP_TYPE_2_9	Prepaid plan type-2 (Sep)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+177	EL_PHP_ID_2_9	Prepaid plan identifier-2 (Sep)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+178	EL_PHP_TYPE_3_9	Prepaid plan type-3 (Sep)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+179	EL_PHP_ID_3_9	Prepaid plan identifier-3 (Sep)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+180	EL_PHP_TYPE_4_9	Prepaid plan type-4 (Sep)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+181	EL_PHP_ID_4_9	Prepaid plan identifier-4 (Sep)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+182	EL_PHP_TYPE_1_10	Prepaid plan type-1 (Oct)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+183	EL_PHP_ID_1_10	Prepaid plan identifier-1 (Oct)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+184	EL_PHP_TYPE_2_10	Prepaid plan type-2 (Oct)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+185	EL_PHP_ID_2_10	Prepaid plan identifier-2 (Oct)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+186	EL_PHP_TYPE_3_10	Prepaid plan type-3 (Oct)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+187	EL_PHP_ID_3_10	Prepaid plan identifier-3 (Oct)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+188	EL_PHP_TYPE_4_10	Prepaid plan type-4 (Oct)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+189	EL_PHP_ID_4_10	Prepaid plan identifier-4 (Oct)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+190	EL_PHP_TYPE_1_11	Prepaid plan type-1 (Nov)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+191	EL_PHP_ID_1_11	Prepaid plan identifier-1 (Nov)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+192	EL_PHP_TYPE_2_11	Prepaid plan type-2 (Nov)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+193	EL_PHP_ID_2_11	Prepaid plan identifier-2 (Nov)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+194	EL_PHP_TYPE_3_11	Prepaid plan type-3 (Nov)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+195	EL_PHP_ID_3_11	Prepaid plan identifier-3 (Nov)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+196	EL_PHP_TYPE_4_11	Prepaid plan type-4 (Nov)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+197	EL_PHP_ID_4_11	Prepaid plan identifier-4 (Nov)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+198	EL_PHP_TYPE_1_12	Prepaid plan type-1 (Dec)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+199	EL_PHP_ID_1_12	Prepaid plan identifier-1 (Dec)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+200	EL_PHP_TYPE_2_12	Prepaid plan type-2 (Dec)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+201	EL_PHP_ID_2_12	Prepaid plan identifier-2 (Dec)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+202	EL_PHP_TYPE_3_12	Prepaid plan type-3 (Dec)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+203	EL_PHP_ID_3_12	Prepaid plan identifier-3 (Dec)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+204	EL_PHP_TYPE_4_12	Prepaid plan type-4 (Dec)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+205	EL_PHP_ID_4_12	Prepaid plan identifier-4 (Dec)	CHAR	12	X	X	X	X	X	X	X	X	X	X	X
+206	MC_COMBO_MO_1	Managed care combinations (Jan)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+207	MC_COMBO_MO_2	Managed care combinations (Feb)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+208	MC_COMBO_MO_3	Managed care combinations (Mar)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+209	MC_COMBO_MO_4	Managed care combinations (Apr)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+210	MC_COMBO_MO_5	Managed care combinations (May)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+211	MC_COMBO_MO_6	Managed care combinations (Jun)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+212	MC_COMBO_MO_7	Managed care combinations (Jul)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+213	MC_COMBO_MO_8	Managed care combinations (Aug)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+214	MC_COMBO_MO_9	Managed care combinations (Sep)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+215	MC_COMBO_MO_10	Managed care combinations (Oct)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+216	MC_COMBO_MO_11	Managed care combinations (Nov)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+217	MC_COMBO_MO_12	Managed care combinations (Dec)	NUM	2	X	X	X	X	X	X	X	X	X	X	X
+218	EL_DAYS_EL_CNT_1	Days of eligibility (Jan)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+219	EL_DAYS_EL_CNT_2	Days of eligibility (Feb)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+220	EL_DAYS_EL_CNT_3	Days of eligibility (Mar)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+221	EL_DAYS_EL_CNT_4	Days of eligibility (Apr)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+222	EL_DAYS_EL_CNT_5	Days of eligibility (May)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+223	EL_DAYS_EL_CNT_6	Days of eligibility (Jun)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+224	EL_DAYS_EL_CNT_7	Days of eligibility (Jul)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+225	EL_DAYS_EL_CNT_8	Days of eligibility (Aug)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+226	EL_DAYS_EL_CNT_9	Days of eligibility (Sep)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+227	EL_DAYS_EL_CNT_10	Days of eligibility (Oct)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+228	EL_DAYS_EL_CNT_11	Days of eligibility (Nov)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+229	EL_DAYS_EL_CNT_12	Days of eligibility (Dec)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+230	EL_TANF_CASH_FLG_1	TANF cash eligibility (Jan)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+231	EL_TANF_CASH_FLG_2	TANF cash eligibility (Feb)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+232	EL_TANF_CASH_FLG_3	TANF cash eligibility (Mar)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+233	EL_TANF_CASH_FLG_4	TANF cash eligibility (Apr)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+234	EL_TANF_CASH_FLG_5	TANF cash eligibility (May)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+235	EL_TANF_CASH_FLG_6	TANF cash eligibility (Jun)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+236	EL_TANF_CASH_FLG_7	TANF cash eligibility (Jul)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+237	EL_TANF_CASH_FLG_8	TANF cash eligibility (Aug)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+238	EL_TANF_CASH_FLG_9	TANF cash eligibility (Sep)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+239	EL_TANF_CASH_FLG_10	TANF cash eligibility (Oct)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+240	EL_TANF_CASH_FLG_11	TANF cash eligibility (Nov)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+241	EL_TANF_CASH_FLG_12	TANF cash eligibility (Dec)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+242	EL_RSTRCT_BNFT_FLG_1	Restricted benefits (Jan)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+243	EL_RSTRCT_BNFT_FLG_2	Restricted benefits (Feb)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+244	EL_RSTRCT_BNFT_FLG_3	Restricted benefits (Mar)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+245	EL_RSTRCT_BNFT_FLG_4	Restricted benefits (Apr)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+246	EL_RSTRCT_BNFT_FLG_5	Restricted benefits (May)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+247	EL_RSTRCT_BNFT_FLG_6	Restricted benefits (Jun)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+248	EL_RSTRCT_BNFT_FLG_7	Restricted benefits (Jul)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+249	EL_RSTRCT_BNFT_FLG_8	Restricted benefits (Aug)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+250	EL_RSTRCT_BNFT_FLG_9	Restricted benefits (Sep)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+251	EL_RSTRCT_BNFT_FLG_10	Restricted benefits (Oct)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+252	EL_RSTRCT_BNFT_FLG_11	Restricted benefits (Nov)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+253	EL_RSTRCT_BNFT_FLG_12	Restricted benefits (Dec)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+254	EL_CHIP_FLAG_1	SCHIP eligibility (Jan)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+255	EL_CHIP_FLAG_2	SCHIP eligibility (Feb)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+256	EL_CHIP_FLAG_3	SCHIP eligibility (Mar)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+257	EL_CHIP_FLAG_4	SCHIP eligibility (Apr)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+258	EL_CHIP_FLAG_5	SCHIP eligibility (May)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+259	EL_CHIP_FLAG_6	SCHIP eligibility (Jun)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+260	EL_CHIP_FLAG_7	SCHIP eligibility (Jul)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+261	EL_CHIP_FLAG_8	SCHIP eligibility (Aug)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+262	EL_CHIP_FLAG_9	SCHIP eligibility (Sep)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+263	EL_CHIP_FLAG_10	SCHIP eligibility (Oct)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+264	EL_CHIP_FLAG_11	SCHIP eligibility (Nov)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+265	EL_CHIP_FLAG_12	SCHIP eligibility (Dec)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+266	MAX_WAIVER_TYPE_1_MO_1	MAX Waiver Type Code -1 (Jan)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+267	MAX_WAIVER_ID_1_MO_1	Waiver ID-1 (Jan)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+268	MAX_WAIVER_TYPE_2_MO_1	MAX Waiver Type Code -2 (Jan)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+269	MAX_WAIVER_ID_2_MO_1	Waiver ID-2 (Jan)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+270	MAX_WAIVER_TYPE_3_MO_1	MAX Waiver Type Code -3 (Jan)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+271	MAX_WAIVER_ID_3_MO_1	Waiver ID-3 (Jan)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+272	MAX_WAIVER_TYPE_1_MO_2	MAX Waiver Type Code -1 (Feb)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+273	MAX_WAIVER_ID_1_MO_2	Waiver ID-1 (Feb)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+274	MAX_WAIVER_TYPE_2_MO_2	MAX Waiver Type Code -2 (Feb)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+275	MAX_WAIVER_ID_2_MO_2	Waiver ID-2 (Feb)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+276	MAX_WAIVER_TYPE_3_MO_2	MAX Waiver Type Code -3 (Feb)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+277	MAX_WAIVER_ID_3_MO_2	Waiver ID-3 (Feb)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+278	MAX_WAIVER_TYPE_1_MO_3	MAX Waiver Type Code -1 (Mar)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+279	MAX_WAIVER_ID_1_MO_3	Waiver ID-1 (Mar)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+280	MAX_WAIVER_TYPE_2_MO_3	MAX Waiver Type Code -2 (Mar)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+281	MAX_WAIVER_ID_2_MO_3	Waiver ID-2 (Mar)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+282	MAX_WAIVER_TYPE_3_MO_3	MAX Waiver Type Code -3 (Mar)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+283	MAX_WAIVER_ID_3_MO_3	Waiver ID-3 (Mar)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+284	MAX_WAIVER_TYPE_1_MO_4	MAX Waiver Type Code -1 (Apr)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+285	MAX_WAIVER_ID_1_MO_4	Waiver ID-1 (Apr)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+286	MAX_WAIVER_TYPE_2_MO_4	MAX Waiver Type Code -2 (Apr)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+287	MAX_WAIVER_ID_2_MO_4	Waiver ID-2 (Apr)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+288	MAX_WAIVER_TYPE_3_MO_4	MAX Waiver Type Code -3 (Apr)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+289	MAX_WAIVER_ID_3_MO_4	Waiver ID-3 (Apr)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+290	MAX_WAIVER_TYPE_1_MO_5	MAX Waiver Type Code -1 (May)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+291	MAX_WAIVER_ID_1_MO_5	Waiver ID-1 (May)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+292	MAX_WAIVER_TYPE_2_MO_5	MAX Waiver Type Code -2 (May)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+293	MAX_WAIVER_ID_2_MO_5	Waiver ID-2 (May)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+294	MAX_WAIVER_TYPE_3_MO_5	MAX Waiver Type Code -3 (May)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+295	MAX_WAIVER_ID_3_MO_5	Waiver ID-3 (May)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+296	MAX_WAIVER_TYPE_1_MO_6	MAX Waiver Type Code -1 (Jun)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+297	MAX_WAIVER_ID_1_MO_6	Waiver ID-1 (Jun)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+298	MAX_WAIVER_TYPE_2_MO_6	MAX Waiver Type Code -2 (Jun)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+299	MAX_WAIVER_ID_2_MO_6	Waiver ID-2 (Jun)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+300	MAX_WAIVER_TYPE_3_MO_6	MAX Waiver Type Code -3 (Jun)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+301	MAX_WAIVER_ID_3_MO_6	Waiver ID-3 (Jun)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+302	MAX_WAIVER_TYPE_1_MO_7	MAX Waiver Type Code -1 (Jul)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+303	MAX_WAIVER_ID_1_MO_7	Waiver ID-1 (Jul)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+304	MAX_WAIVER_TYPE_2_MO_7	MAX Waiver Type Code -2 (Jul)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+305	MAX_WAIVER_ID_2_MO_7	Waiver ID-2 (Jul)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+306	MAX_WAIVER_TYPE_3_MO_7	MAX Waiver Type Code -3 (Jul)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+307	MAX_WAIVER_ID_3_MO_7	Waiver ID-3 (Jul)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+308	MAX_WAIVER_TYPE_1_MO_8	MAX Waiver Type Code -1 (Aug)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+309	MAX_WAIVER_ID_1_MO_8	Waiver ID-1 (Aug)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+310	MAX_WAIVER_TYPE_2_MO_8	MAX Waiver Type Code -2 (Aug)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+311	MAX_WAIVER_ID_2_MO_8	Waiver ID-2 (Aug)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+312	MAX_WAIVER_TYPE_3_MO_8	MAX Waiver Type Code -3 (Aug)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+313	MAX_WAIVER_ID_3_MO_8	Waiver ID-3 (Aug)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+314	MAX_WAIVER_TYPE_1_MO_9	MAX Waiver Type Code -1 (Sep)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+315	MAX_WAIVER_ID_1_MO_9	Waiver ID-1 (Sep)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+316	MAX_WAIVER_TYPE_2_MO_9	MAX Waiver Type Code -2 (Sep)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+317	MAX_WAIVER_ID_2_MO_9	Waiver ID-2 (Sep)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+318	MAX_WAIVER_TYPE_3_MO_9	MAX Waiver Type Code -3 (Sep)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+319	MAX_WAIVER_ID_3_MO_9	Waiver ID-3 (Sep)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+320	MAX_WAIVER_TYPE_1_MO_10	MAX Waiver Type Code -1 (Oct)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+321	MAX_WAIVER_ID_1_MO_10	Waiver ID-1 (Oct)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+322	MAX_WAIVER_TYPE_2_MO_10	MAX Waiver Type Code -2 (Oct)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+323	MAX_WAIVER_ID_2_MO_10	Waiver ID-2 (Oct)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+324	MAX_WAIVER_TYPE_3_MO_10	MAX Waiver Type Code -3 (Oct)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+325	MAX_WAIVER_ID_3_MO_10	Waiver ID-3 (Oct)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+326	MAX_WAIVER_TYPE_1_MO_11	MAX Waiver Type Code -1 (Nov)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+327	MAX_WAIVER_ID_1_MO_11	Waiver ID-1 (Nov)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+328	MAX_WAIVER_TYPE_2_MO_11	MAX Waiver Type Code -2 (Nov)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+329	MAX_WAIVER_ID_2_MO_11	Waiver ID-2 (Nov)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+330	MAX_WAIVER_TYPE_3_MO_11	MAX Waiver Type Code -3 (Nov)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+331	MAX_WAIVER_ID_3_MO_11	Waiver ID-3 (Nov)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+332	MAX_WAIVER_TYPE_1_MO_12	MAX Waiver Type Code -1 (Dec)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+333	MAX_WAIVER_ID_1_MO_12	Waiver ID-1 (Dec)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+334	MAX_WAIVER_TYPE_2_MO_12	MAX Waiver Type Code -2 (Dec)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+335	MAX_WAIVER_ID_2_MO_12	Waiver ID-2 (Dec)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+336	MAX_WAIVER_TYPE_3_MO_12	MAX Waiver Type Code -3 (Dec)	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+337	MAX_WAIVER_ID_3_MO_12	Waiver ID-3 (Dec)	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+338	MAX_1915C_WAIVER_TYPE_LTST	Annual 1915(c) MAX Waiver Type	CHAR	1	‾	X	X	X	X	X	X	X	X	X	X
+Summary Claims/Encounter Information	1999-2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014
+339	RCPNT_IND	Recipient indicator	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+340	TOT_IP_DSCHRG_CNT	Total Inpatient (IP) discharges	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+341	TOT_IP_STAY_CNT	Total Inpatient (IP) stays	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+342	TOT_IP_DAY_CNT_DSCHRG	Total IP Length of Stay (LOS) - for discharges	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+343	TOT_IP_DAY_CNT_STAYS	Total IP Length of Stay (LOS) - for stays	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+344	TOT_IP_CVR_DAY_CNT_DSCHRG	Total IP Covered days - for discharges	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+345	TOT_IP_CVR_DAY_CNT_STAYS	Total IP Covered days - for stays	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+346	TOT_LTC_CVR_DAY_CNT_AGED	Total Long Term Care Mental Hospital for the Aged - covered days	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+347	TOT_LTC_CVR_DAY_CNT_PSYCH	Total Long Term Care Inpatient Psych (age < 21) covered days	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+348	TOT_LTC_CVR_DAY_CNT_ICFMR	Total Intermediate Care Facility (ICF) /MR covered days	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+349	TOT_LTC_CVR_DAY_CNT_NF	Total Nursing Facility covered days	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+350	TOT_LTC_CVR_DAY_CNT	Total LT covered days (sum of LTC covered Aged, Psych, ICF/MR and NF days)	NUM	4	X	X	X	X	X	X	X	X	X	X	X
+351	TOT_MDCD_CLM_CNT	Total record count (sum of FFS, PHP premium, and encounter record counts)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+352	TOT_MDCD_FFS_CLM_CNT	Total fee-for-service (FFS) claim count	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+353	TOT_MDCD_PREM_CLM_CNT	Total Medicaid pre-paid plan (PHP) Premium payment record count	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+354	TOT_MDCD_ENCT_CLM_CNT	Total encounter record count	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+355	TOT_MDCD_PYMT_AMT	Total Medicaid payment amount	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+356	TOT_MDCD_FFS_PYMT_AMT	Total fee-for-service (FFS) Medicaid payment amount	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+357	TOT_MDCD_PREM_PYMT_AMT	Total Medicaid pre-paid plan (PHP) Premium payment amount	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+358	TOT_MDCD_CHRG_AMT	Total Medicaid charge amount	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+359	TOT_MDCD_TP_PYMT_AMT	Total third party payment amount	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+360	IP_HOSP_REC_FP	Inpatient hospital record count - Family Planning (FP)	NUM	3	X	X	X	X	X	X	X	X	X	X	X
+361	IP_HOSP_PYMT_FP	Inpatient hospital payments (FP)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+362	LT_REC_CNT_FP	Institutional LT care record count (FP)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+363	LT_PYMT_AMT_FP	Institutional LT care payments (FP)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+364	OT_REC_CNT_FP	Other service record count (FP)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+365	OT_PYMT_AMT_FP	Other service payments (FP)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+366	RX_REC_CNT_FP	Prescription drug record count (FP)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+367	RX_PYMT_AMT_FP	Prescription drug payments (FP)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+368	TOT_REC_CNT_FP	Total record count (FP)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+369	TOT_PYMT_AMT_FP	Total payments (FP)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+370	IP_HOSP_REC_RHC	Inpatient hospital record count - Rural Health Center (RHC)	NUM	3	X	X	X	X	X	X	X	X	X	X	X
+371	IP_HOSP_PYMT_RHC	Inpatient hospital payments (RHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+372	LT_REC_CNT_RHC	Institutional LT care record count (RHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+373	LT_PYMT_AMT_RHC	Institutional LT care payments (RHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+374	OT_REC_CNT_RHC	Other service records (RHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+375	OT_PYMT_AMT_RHC	Other service payments (RHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+376	RX_REC_CNT_RHC	Prescription drug records (RHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+377	RX_PYMT_AMT_RHC	Prescription drug payments (RHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+378	TOT_REC_CNT_RHC	Total records (RHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+379	TOT_PYMT_AMT_RHC	Total payments (RHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+380	IP_HOSP_REC_FQHC	Inpatient hospital record count - Federally Qualiied Health Centers (FQHC)	NUM	3	X	X	X	X	X	X	X	X	X	X	X
+381	IP_HOSP_PYMT_FQHC	Inpatient hospital payments (FQHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+382	LT_REC_CNT_FQHC	Institutional LT care records (FQHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+383	LT_PYMT_AMT_FQHC	Institutional LT care payments (FQHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+384	OT_REC_CNT_FQHC	Other service records (FQHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+385	OT_PYMT_AMT_FQHC	Other service payments (FQHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+386	RX_REC_CNT_FQHC	Prescription drug records (FQHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+387	RX_PYMT_AMT_FQHC	Prescription drug payments (FQHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+388	TOT_REC_CNT_FQHC	Total records (FQHC)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+389	TOT_PYMT_AMT_FQHC	Total payments (FQHC)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+390	IP_HOSP_REC_IHS	Inpatient hospital record count - Indian Health Services (IHS)	NUM	3	X	X	X	X	X	X	X	X	X	X	X
+391	IP_HOSP_PYMT_IHS	Inpatient hospital payments (IHS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+392	LT_REC_CNT_IHS	Institutional LT care records (IHS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+393	LT_PYMT_AMT_IHS	Institutional LT care payments (IHS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+394	OT_REC_CNT_IHS	Other service records (IHS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+395	OT_PYMT_AMT_IHS	Other service payments (IHS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+396	RX_REC_CNT_IHS	Prescription drug records (IHS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+397	RX_PYMT_AMT_IHS	Prescription drug payments (IHS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+398	TOT_REC_CNT_IHS	Total records (IHS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+399	TOT_PYMT_AMT_IHS	Total payments (IHS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+400	IP_HOSP_REC_HCBCA	Inpatient hospital record count - Home and Community-Based Care for Aged (HCBCA)	NUM	3	X	X	X	X	X	X	X	X	X	X	X
+401	IP_HOSP_PYMT_HCBCA	Inpatient hospital payments (HCBCA)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+402	LT_REC_CNT_HCBCA	Institutional LT care records (HCBCA)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+403	LT_PYMT_AMT_HCBCA	Institutional LT care payments (HCBCA)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+404	OT_REC_CNT_HCBCA	Other service records (HCBCA)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+405	OT_PYMT_AMT_HCBCA	Other service payments (HCBCA)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+406	RX_REC_CNT_HCBCA	Prescription drug records (HCBCA)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+407	RX_PYMT_AMT_HCBCA	Prescription drug payments (HCBCA)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+408	TOT_REC_CNT_HCBCA	Total records (HCBCA)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+409	TOT_PYMT_AMT_HCBCA	Total payments (HCBCA)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+410	IP_HOSP_REC_HCBCS	Inpatient hospital record count - Home and Community-Based Care Waiver (HCBCS)	NUM	3	X	X	X	X	X	X	X	X	X	X	X
+411	IP_HOSP_PYMT_HCBCS	Inpatient hospital payments (HCBCS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+412	LT_REC_CNT_HCBCS	Institutional LT care records (HCBCS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+413	LT_PYMT_AMT_HCBCS	Institutional LT care payments (HCBCS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+414	OT_REC_CNT_HCBCS	Other service records (HCBCS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+415	OT_PYMT_AMT_HCBCS	Other service payments (HCBCS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+416	RX_REC_CNT_HCBCS	Prescription drug records (HCBCS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+417	RX_PYMT_AMT_HCBCS	Prescription drug payments (HCBCS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+418	TOT_REC_CNT_HCBCS	Total records (HCBCS)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+419	TOT_PYMT_AMT_HCBCS	Total payments (HCBCS)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+420	RCPNT_DLVRY_CD	Recipient maternal delivery code - Annual indicator	NUM	1	X	X	X	X	X	X	X	X	X	X	X	Note - same variable  name as IP variable, but different meaning/values
+421	FEE_FOR_SRVC_IND_01	Recipient indicator (MAX TOS 01 - inpatient hospital)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+422	FFS_CLM_CNT_01	Fee-for-service claim count (MAX TOS 01)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+423	FFS_PYMT_AMT_01	Fee-for-service Medicaid payment amount (MAX TOS 01)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+424	FFS_CHRG_AMT_01	Fee-for-service charge amount (MAX TOS 01)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+425	FFS_TP_AMT_01	Fee-for-service third party payment amount (MAX TOS 01)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+426	ENCTR_REC_CNT_01	Encounter record count (MAX TOS 01)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+427	FEE_FOR_SRVC_IND_02	Recipient indicator (MAX TOS 02 - Mental Hospital for Aged)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+428	FFS_CLM_CNT_02	Fee-for-service claim count (MAX TOS 02)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+429	FFS_PYMT_AMT_02	Fee-for-service Medicaid payment amount (MAX TOS 02)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+430	FFS_CHRG_AMT_02	Fee-for-service charge amount (MAX TOS 02)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+431	FFS_TP_AMT_02	Fee-for-service third party payment amount (MAX TOS 02)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+432	ENCTR_REC_CNT_02	Encounter record count (MAX TOS 02)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+433	FEE_FOR_SRVC_IND_04	Recipient indicator (MAX TOS 04 - inpatient psychiatric - youth)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+434	FFS_CLM_CNT_04	Claim count (MAX TOS 04)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+435	FFS_PYMT_AMT_04	Medicaid payment amount (MAX TOS 04)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+436	FFS_CHRG_AMT_04	Charge amount (MAX TOS 04)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+437	FFS_TP_AMT_04	Third party payment amount (MAX TOS 04)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+438	ENCTR_REC_CNT_04	Encounter record count (MAX TOS 04)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+439	FEE_FOR_SRVC_IND_05	Recipient indicator (MAX TOS 05 - intermediate care facility)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+440	FFS_CLM_CNT_05	Claim count (MAX TOS 05)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+441	FFS_PYMT_AMT_05	Medicaid payment amount (MAX TOS 05)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+442	FFS_CHRG_AMT_05	Charge amount (MAX TOS 05)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+443	FFS_TP_AMT_05	Third party payment amount (MAX TOS 05)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+444	ENCTR_REC_CNT_05	Encounter record count (MAX TOS 05)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+445	FEE_FOR_SRVC_IND_07	Recipient indicator (MAX TOS 07 - nursing facility services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+446	FFS_CLM_CNT_07	Claim count (MAX TOS 07)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+447	FFS_PYMT_AMT_07	Medicaid payment amount (MAX TOS 07)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+448	FFS_CHRG_AMT_07	Charge amount (MAX TOS 07)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+449	FFS_TP_AMT_07	Third party payment amount (MAX TOS 07)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+450	ENCTR_REC_CNT_07	Encounter record count (MAX TOS 07)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+451	FEE_FOR_SRVC_IND_08	Recipient indicator (MAX TOS 08 -physician )	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+452	FFS_CLM_CNT_08	Claim count (MAX TOS 08)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+453	FFS_PYMT_AMT_08	Medicaid payment amount (MAX TOS 08)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+454	FFS_CHRG_AMT_08	Charge amount (MAX TOS 08)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+455	FFS_TP_AMT_08	Third party payment amount (MAX TOS 08)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+456	ENCTR_REC_CNT_08	Encounter record count (MAX TOS 08)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+457	FEE_FOR_SRVC_IND_09	Recipient indicator (MAX TOS 09 - dental)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+458	FFS_CLM_CNT_09	Claim count (MAX TOS 09)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+459	FFS_PYMT_AMT_09	Medicaid payment amount (MAX TOS 09)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+460	FFS_CHRG_AMT_09	Charge amount (MAX TOS 09)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+461	FFS_TP_AMT_09	Third party payment amount (MAX TOS 09)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+462	ENCTR_REC_CNT_09	Encounter record count (MAX TOS 09)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+463	FEE_FOR_SRVC_IND_10	Recipient indicator (MAX TOS 10 - other practitioners)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+464	FFS_CLM_CNT_10	Claim count (MAX TOS 10)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+465	FFS_PYMT_AMT_10	Medicaid payment amount (MAX TOS 10)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+466	FFS_CHRG_AMT_10	Charge amount (MAX TOS 10)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+467	FFS_TP_AMT_10	Third party payment amount (MAX TOS 10)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+468	ENCTR_REC_CNT_10	Encounter record count (MAX TOS 10)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+469	FEE_FOR_SRVC_IND_11	Recipient indicator (MAX TOS 11 - outpatient hospital)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+470	FFS_CLM_CNT_11	Claim count (MAX TOS 11)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+471	FFS_PYMT_AMT_11	Medicaid payment amount (MAX TOS 11)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+472	FFS_CHRG_AMT_11	Charge amount (MAX TOS 11)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+473	FFS_TP_AMT_11	Third party payment amount (MAX TOS 11)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+474	ENCTR_REC_CNT_11	Encounter record count (MAX TOS 11)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+475	FEE_FOR_SRVC_IND_12	Recipient indicator (MAX TOS 12 - clinic)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+476	FFS_CLM_CNT_12	Claim count (MAX TOS 12)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+477	FFS_PYMT_AMT_12	Medicaid payment amount (MAX TOS 12)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+478	FFS_CHRG_AMT_12	Charge amount (MAX TOS 12)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+479	FFS_TP_AMT_12	Third party payment amount (MAX TOS 12)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+480	ENCTR_REC_CNT_12	Encounter record count (MAX TOS 12)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+481	FEE_FOR_SRVC_IND_13	Recipient indicator (MAX TOS 13 - home health)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+482	FFS_CLM_CNT_13	Claim count (MAX TOS 13)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+483	FFS_PYMT_AMT_13	Medicaid payment amount (MAX TOS 13)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+484	FFS_CHRG_AMT_13	Charge amount (MAX TOS 13)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+485	FFS_TP_AMT_13	Third party payment amount (MAX TOS 13)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+486	ENCTR_REC_CNT_13	Encounter record count (MAX TOS 13)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+487	FEE_FOR_SRVC_IND_15	Recipient indicator (MAX TOS 15 - lab and x-ray)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+488	FFS_CLM_CNT_15	Claim count (MAX TOS 15)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+489	FFS_PYMT_AMT_15	Medicaid payment amount (MAX TOS 15)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+490	FFS_CHRG_AMT_15	Charge amount (MAX TOS 15)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+491	FFS_TP_AMT_15	Third party payment amount (MAX TOS 15)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+492	ENCTR_REC_CNT_15	Encounter record count (MAX TOS 15)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+493	FEE_FOR_SRVC_IND_16	Recipient indicator (MAX TOS 16 - drugs)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+494	FFS_CLM_CNT_16	Claim count (MAX TOS 16)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+495	FFS_PYMT_AMT_16	Medicaid payment amount (MAX TOS 16)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+496	FFS_CHRG_AMT_16	Charge amount (MAX TOS 16)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+497	FFS_TP_AMT_16	Third party payment amount (MAX TOS 16)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+498	ENCTR_REC_CNT_16	Encounter record count (MAX TOS 16)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+499	FEE_FOR_SRVC_IND_19	Recipient indicator (MAX TOS 19 - other services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+500	FFS_CLM_CNT_19	Claim count (MAX TOS 19)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+501	FFS_PYMT_AMT_19	Medicaid payment amount (MAX TOS 19)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+502	FFS_CHRG_AMT_19	Charge amount (MAX TOS 19)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+503	FFS_TP_AMT_19	Third party payment amount (MAX TOS 19)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+504	ENCTR_REC_CNT_19	Encounter record count (MAX TOS 19)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+505	FEE_FOR_SRVC_IND_24	Recipient indicator (MAX TOS 24 - sterilizations)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+506	FFS_CLM_CNT_24	Claim count (MAX TOS 24)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+507	FFS_PYMT_AMT_24	Medicaid payment amount (MAX TOS 24)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+508	FFS_CHRG_AMT_24	Charge amount (MAX TOS 24)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+509	FFS_TP_AMT_24	Third party payment amount (MAX TOS 24)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+510	ENCTR_REC_CNT_24	Encounter record count (MAX TOS 24)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+511	FEE_FOR_SRVC_IND_25	Recipient indicator (MAX TOS 25 - abortions)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+512	FFS_CLM_CNT_25	Claim count (MAX TOS 25)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+513	FFS_PYMT_AMT_25	Medicaid payment amount (MAX TOS 25)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+514	FFS_CHRG_AMT_25	Charge amount (MAX TOS 25)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+515	FFS_TP_AMT_25	Third party payment amount (MAX TOS 25)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+516	ENCTR_REC_CNT_25	Encounter record count (MAX TOS 25)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+517	FEE_FOR_SRVC_IND_26	Recipient indicator (MAX TOS 26 - transportation services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+518	FFS_CLM_CNT_26	Claim count (MAX TOS 26)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+519	FFS_PYMT_AMT_26	Medicaid payment amount (MAX TOS 26)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+520	FFS_CHRG_AMT_26	Charge amount (MAX TOS 26)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+521	FFS_TP_AMT_26	Third party payment amount (MAX TOS 26)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+522	ENCTR_REC_CNT_26	Encounter record count (MAX TOS 26)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+523	FEE_FOR_SRVC_IND_30	Recipient indicator (MAX TOS 30 - personal care services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+524	FFS_CLM_CNT_30	Claim count (MAX TOS 30)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+525	FFS_PYMT_AMT_30	Medicaid payment amount (MAX TOS 30)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+526	FFS_CHRG_AMT_30	Charge amount (MAX TOS 30)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+527	FFS_TP_AMT_30	Third party payment amount (MAX TOS 30)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+528	ENCTR_REC_CNT_30	Encounter record count (MAX TOS 30)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+529	FEE_FOR_SRVC_IND_31	Recipient indicator (MAX TOS 31 - targeted case management)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+530	FFS_CLM_CNT_31	Claim count (MAX TOS 31)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+531	FFS_PYMT_AMT_31	Medicaid payment amount (MAX TOS 31)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+532	FFS_CHRG_AMT_31	Charge amount (MAX TOS 31)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+533	FFS_TP_AMT_31	Third party payment amount (MAX TOS 31)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+534	ENCTR_REC_CNT_31	Encounter record count (MAX TOS 31)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+535	FEE_FOR_SRVC_IND_33	Recipient indicator (MAX TOS 33 - rehabilitaion services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+536	FFS_CLM_CNT_33	Claim count (MAX TOS 33)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+537	FFS_PYMT_AMT_33	Medicaid payment amount (MAX TOS 33)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+538	FFS_CHRG_AMT_33	Charge amount (MAX TOS 33)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+539	FFS_TP_AMT_33	Third party payment amount (MAX TOS 33)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+540	ENCTR_REC_CNT_33	Encounter record count (MAX TOS 33)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+541	FEE_FOR_SRVC_IND_34	Recipient indicator (MAX TOS 34 - PT, OT, Speech, Hearing services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+542	FFS_CLM_CNT_34	Claim count (MAX TOS 34)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+543	FFS_PYMT_AMT_34	Medicaid payment amount (MAX TOS 34)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+544	FFS_CHRG_AMT_34	Charge amount (MAX TOS 34)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+545	FFS_TP_AMT_34	Third party payment amount (MAX TOS 34)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+546	ENCTR_REC_CNT_34	Encounter record count (MAX TOS 34)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+547	FEE_FOR_SRVC_IND_35	Recipient indicator (MAX TOS 35 - hospice benefits)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+548	FFS_CLM_CNT_35	Claim count (MAX TOS 35)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+549	FFS_PYMT_AMT_35	Medicaid payment amount (MAX TOS 35)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+550	FFS_CHRG_AMT_35	Charge amount (MAX TOS 35)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+551	FFS_TP_AMT_35	Third party payment amount (MAX TOS 35)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+552	ENCTR_REC_CNT_35	Encounter record count (MAX TOS 35)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+553	FEE_FOR_SRVC_IND_36	Recipient indicator (MAX TOS 36 - nurse midwife services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+554	FFS_CLM_CNT_36	Claim count (MAX TOS 36)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+555	FFS_PYMT_AMT_36	Medicaid payment amount (MAX TOS 36)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+556	FFS_CHRG_AMT_36	Charge amount (MAX TOS 36)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+557	FFS_TP_AMT_36	Third party payment amount (MAX TOS 36)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+558	ENCTR_REC_CNT_36	Encounter record count (MAX TOS 36)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+559	FEE_FOR_SRVC_IND_37	Recipient indicator (MAX TOS 37 - nurse practioner services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+560	FFS_CLM_CNT_37	Claim count (MAX TOS 37)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+561	FFS_PYMT_AMT_37	Medicaid payment amount (MAX TOS 37)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+562	FFS_CHRG_AMT_37	Charge amount (MAX TOS 37)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+563	FFS_TP_AMT_37	Third party payment amount (MAX TOS 37)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+564	ENCTR_REC_CNT_37	Encounter record count (MAX TOS 37)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+565	FEE_FOR_SRVC_IND_38	Recipient indicator (MAX TOS 38 - private duty nursing)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+566	FFS_CLM_CNT_38	Claim count (MAX TOS 38)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+567	FFS_PYMT_AMT_38	Medicaid payment amount (MAX TOS 38)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+568	FFS_CHRG_AMT_38	Charge amount (MAX TOS 38)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+569	FFS_TP_AMT_38	Third party payment amount (MAX TOS 38)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+570	ENCTR_REC_CNT_38	Encounter record count (MAX TOS 38)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+571	FEE_FOR_SRVC_IND_39	Recipient indicator (MAX TOS 39 - religious non-medical health care institutions)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+572	FFS_CLM_CNT_39	Claim count (MAX TOS 39)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+573	FFS_PYMT_AMT_39	Medicaid payment amount (MAX TOS 39)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+574	FFS_CHRG_AMT_39	Charge amount (MAX TOS 39)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+575	FFS_TP_AMT_39	Third party payment amount (MAX TOS 39)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+576	ENCTR_REC_CNT_39	Encounter record count (MAX TOS 39)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+577	FEE_FOR_SRVC_IND_51	Recipient indicator (MAX TOS 51 - durable medical equipment and supplies)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+578	FFS_CLM_CNT_51	Claim count (MAX TOS 51)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+579	FFS_PYMT_AMT_51	Medicaid payment amount (MAX TOS 51)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+580	FFS_CHRG_AMT_51	Charge amount (MAX TOS 51)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+581	FFS_TP_AMT_51	Third party payment amount (MAX TOS 51)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+582	ENCTR_REC_CNT_51	Encounter record count (MAX TOS 51)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+583	FEE_FOR_SRVC_IND_52	Recipient indicator (MAX TOS 52 - residential care)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+584	FFS_CLM_CNT_52	Claim count (MAX TOS 52)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+585	FFS_PYMT_AMT_52	Medicaid payment amount (MAX TOS 52)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+586	FFS_CHRG_AMT_52	Charge amount (MAX TOS 52)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+587	FFS_TP_AMT_52	Third party payment amount (MAX TOS 52)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+588	ENCTR_REC_CNT_52	Encounter record count (MAX TOS 52)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+589	FEE_FOR_SRVC_IND_53	Recipient indicator (MAX TOS 53 - psychiatric services)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+590	FFS_CLM_CNT_53	Claim count (MAX TOS 53)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+591	FFS_PYMT_AMT_53	Medicaid payment amount (MAX TOS 53)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+592	FFS_CHRG_AMT_53	Charge amount (MAX TOS 53)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+593	FFS_TP_AMT_53	Third party payment amount (MAX TOS 53)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+594	ENCTR_REC_CNT_53	Encounter record count (MAX TOS 53)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+595	FEE_FOR_SRVC_IND_54	Recipient indicator (MAX TOS 54 - adult day care)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+596	FFS_CLM_CNT_54	Claim count (MAX TOS 54)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+597	FFS_PYMT_AMT_54	Medicaid payment amount (MAX TOS 54)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+598	FFS_CHRG_AMT_54	Charge amount (MAX TOS 54)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+599	FFS_TP_AMT_54	Third party payment amount (MAX TOS 54)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+600	ENCTR_REC_CNT_54	Encounter record count (MAX TOS 54)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+601	FEE_FOR_SRVC_IND_99	Recipient indicator (Unknown MAX TOS)	CHAR	1	X	X	X	X	X	X	X	X	X	X	X
+602	FFS_CLM_CNT_99	Claim count (Unknown)	NUM	6	X	X	X	X	X	X	X	X	X	X	X
+603	FFS_PYMT_AMT_99	Medicaid payment amount (Unknown)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+604	FFS_CHRG_AMT_99	Charge amount (Unknown)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+605	FFS_TP_AMT_99	Third party payment amount (Unknown)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+606	ENCTR_REC_CNT_99	Encounter record count (Unknown)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+607	CLTC_FFS_PYMT_AMT_11	Medicaid payment amount (CLTC 11) - non-waiver personal care	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+608	CLTC_FFS_PYMT_AMT_12	Medicaid payment amount (CLTC 12) - non-waiver private duty nursing	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+609	CLTC_FFS_PYMT_AMT_13	Medicaid payment amount (CLTC 13) - non-waiver adult day program	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+610	CLTC_FFS_PYMT_AMT_14	Medicaid payment amount (CLTC 14) - non-waiver home health	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+611	CLTC_FFS_PYMT_AMT_15	Medicaid payment amount (CLTC 15) - non-waiver residential care	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+612	CLTC_FFS_PYMT_AMT_16	Medicaid payment amount (CLTC 16) - non-waiver rehabilitation for aged or disabled	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+613	CLTC_FFS_PYMT_AMT_17	Medicaid payment amount (CLTC 17) - non-waiver targeted case management for aged or disabled	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+614	CLTC_FFS_PYMT_AMT_18	Medicaid payment amount (CLTC 18) - non-waiver transportation for aged or disabled	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+615	CLTC_FFS_PYMT_AMT_19	Medicaid payment amount (CLTC 19) - non-waiver hospice care for aged or disabled	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+616	CLTC_FFS_PYMT_AMT_20	Medicaid payment amount (CLTC 20) - non-waiver durable medical equipment for aged or disabled	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+617	CLTC_FFS_PYMT_AMT_30	Medicaid payment amount (CLTC 30) - waiver service in any other type of service	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+618	CLTC_FFS_PYMT_AMT_31	Medicaid payment amount (CLTC 31) - waiver personal care	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+619	CLTC_FFS_PYMT_AMT_32	Medicaid payment amount (CLTC 32) - waiver private duty nursing	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+620	CLTC_FFS_PYMT_AMT_33	Medicaid payment amount (CLTC 33) - waiver adult day program	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+621	CLTC_FFS_PYMT_AMT_34	Medicaid payment amount (CLTC 34) - waiver home health	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+622	CLTC_FFS_PYMT_AMT_35	Medicaid payment amount (CLTC 35) - waiver residential care	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+623	CLTC_FFS_PYMT_AMT_36	Medicaid payment amount (CLTC 36) - waiver rehabilitation	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+624	CLTC_FFS_PYMT_AMT_37	Medicaid payment amount (CLTC 37) - waiver targeted case management	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+625	CLTC_FFS_PYMT_AMT_38	Medicaid payment amount (CLTC 38) - waiver transportation	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+626	CLTC_FFS_PYMT_AMT_39	Medicaid payment amount (CLTC 39) - waiver hospice care	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+627	CLTC_FFS_PYMT_AMT_40	Medicaid payment amount (CLTC 40) - waiver durable medical equipment	NUM	12	‾	X	X	X	X	X	X	X	X	X	X
+628	HCBS_TXNMY_MDCD_PYMT_AMT_01	Medicaid payment amount (HCBS Taxonomy) - Case Management	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+629	HCBS_TXNMY_MDCD_PYMT_AMT_02	Medicaid payment amount (HCBS) - Around the Clock Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+630	HCBS_TXNMY_MDCD_PYMT_AMT_03	Medicaid payment amount (HCBS) - Supported Employment	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+631	HCBS_TXNMY_MDCD_PYMT_AMT_04	Medicaid payment amount (HCBS) - Day Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+632	HCBS_TXNMY_MDCD_PYMT_AMT_05	Medicaid payment amount (HCBS) - Nursing Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+633	HCBS_TXNMY_MDCD_PYMT_AMT_06	Medicaid payment amount (HCBS) - Home Delivered Meals	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+634	HCBS_TXNMY_MDCD_PYMT_AMT_07	Medicaid payment amount (HCBS) - Rent and Food Expenses for Live-In Caregiver	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+635	HCBS_TXNMY_MDCD_PYMT_AMT_08	Medicaid payment amount (HCBS) - Home Based Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+636	HCBS_TXNMY_MDCD_PYMT_AMT_09	Medicaid payment amount (HCBS) - Caregiver Support	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+637	HCBS_TXNMY_MDCD_PYMT_AMT_10	Medicaid payment amount (HCBS) - Other Mental Health and BHS	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+638	HCBS_TXNMY_MDCD_PYMT_AMT_11	Medicaid payment amount (HCBS) - Other Health and Theraputic Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+639	HCBS_TXNMY_MDCD_PYMT_AMT_12	Medicaid payment amount (HCBS) - Services Supporting Participant Direction	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+640	HCBS_TXNMY_MDCD_PYMT_AMT_13	Medicaid payment amount (HCBS) - Participant Training	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+641	HCBS_TXNMY_MDCD_PYMT_AMT_14	Medicaid payment amount (HCBS) - Equipment, Technology, and Modifications	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+642	HCBS_TXNMY_MDCD_PYMT_AMT_15	Medicaid payment amount (HCBS) - Non-Medical Transportation	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X
+643	HCBS_TXNMY_MDCD_PYMT_AMT_16	Medicaid payment amount (HCBS) - Community Transition Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X	Populated with Zeros Only
+644	HCBS_TXNMY_MDCD_PYMT_AMT_17	Medicaid payment amount (HCBS) - Other Services	NUM	8	‾	‾	‾	‾	‾	‾	X	X	X	X	X	Populated with Zeros Only
+645	HCBS_TXNMY_MDCD_PYMT_AMT_99	Medicaid payment amount (HCBS) - Unknown	NUM	8	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾
+646	PREM_PYMT_IND_HMO	Premium payment indicator (HMO or PACE)	NUM	1	X	X	X	X	X	X	X	X	X	X	X
+647	PREM_PYMT_REC_CNT_HMO	Premium payment record count (HMO or PACE)	NUM	5	X	X	X	X	X	X	X	X	X	X	X
+648	PREM_MDCD_PYMT_AMT_HMO	Medicaid premium payments (HMO or PACE)	NUM	12	X	X	X	X	X	X	X	X	X	X	X
+649	PREM_PYMT_IND_PHP	Premium payment indicator (PHP)	NUM	1	X	X	X	X	X	X	X	X	X	X	X	Populated with Zeros Only
+650	PREM_PYMT_REC_CNT_PHP	Premium payment records (PHP)	NUM	5	X	X	X	X	X	X	X	X	X	X	X	Populated with Zeros Only
+651	PREM_MDCD_PYMT_AMT_PHP	Medicaid premium payments (PHP)	NUM	12	X	X	X	X	X	X	X	X	X	X	X	Populated with Zeros Only
+652	PREM_PYMT_IND_PCCM	Premium payment indicator (PCCM)	NUM	1	X	X	X	X	X	X	X	X	X	X	X	Populated with Zeros Only
+653	PREM_PYMT_REC_CNT_PCCM	Premium payment records (PCCM)	NUM	5	X	X	X	X	X	X	X	X	X	X	X	Populated with Zeros Only
+654	PREM_MDCD_PYMT_AMT_PCCM	Medicaid premium payments (PCCM)	NUM	12	X	X	X	X	X	X	X	X	X	X	X	Populated with Zeros Only
+655	SSA_DOD	Date of death (from SSA Death Master File)	DATE	8	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP	NP	Effective 4/2014, this field is no longer available for release per CMS
+656	EL_MDCR_ANN_XOVR_99	Crossover code (Annual) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X
+657	EL_MDCR_XOVR_MO_1	Medicare crossover code (Jan) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+658	EL_MDCR_XOVR_MO_2	Medicare crossover code (Feb) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+659	EL_MDCR_XOVR_MO_3	Medicare crossover code (Mar) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+660	EL_MDCR_XOVR_MO_4	Medicare crossover code (Apr) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+661	EL_MDCR_XOVR_MO_5	Medicare crossover code (May) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+662	EL_MDCR_XOVR_MO_6	Medicare crossover code (Jun) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+663	EL_MDCR_XOVR_MO_7	Medicare crossover code (Jul) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+664	EL_MDCR_XOVR_MO_8	Medicare crossover code (Aug) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+665	EL_MDCR_XOVR_MO_9	Medicare crossover code (Sep) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+666	EL_MDCR_XOVR_MO_10	Medicare crossover code (Oct) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+667	EL_MDCR_XOVR_MO_11	Medicare crossover code (Nov) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+668	EL_MDCR_XOVR_MO_12	Medicare crossover code (Dec) - Same As Dual Code - In Place for Historical Compatibility	CHAR	2	‾	X	X	X	X	X	X	X	X	X	X	All values in 2005 = '99'
+669	PREM_PYMT_IND_PHI	Premium payment indicator- private health insurance  (PHI)	NUM	1	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zeros Only	Not in 2013 proc contents
+670	PREM_PYMT_REC_CNT_PHI	Premium payment records (PHI)	NUM	5	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zeros Only	Not in 2013 proc contents
+671	PREM_MDCD_PYMT_AMT_PHI	Medicaid premium payments (PHI)	NUM	8	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zeros Only	Not in 2013 proc contents
+672	ENCTR_REC_CNT_HCBS	Encounter record count - Home and Community-Based Services (HCBS)	NUM	5	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zeros Only	Not in 2013 proc contents
+673	TMSIS_ELG_GRP_MO_1	T-MSIS Eligibility Group - Month 1	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+674	TMSIS_ELG_GRP_MO_2	T-MSIS Eligibility Group - Month 2	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+675	TMSIS_ELG_GRP_MO_3	T-MSIS Eligibility Group - Month 3	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+676	TMSIS_ELG_GRP_MO_4	T-MSIS Eligibility Group - Month 4	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+677	TMSIS_ELG_GRP_MO_5	T-MSIS Eligibility Group - Month 5	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+678	TMSIS_ELG_GRP_MO_6	T-MSIS Eligibility Group - Month 6	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+679	TMSIS_ELG_GRP_MO_7	T-MSIS Eligibility Group - Month 7	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+680	TMSIS_ELG_GRP_MO_8	T-MSIS Eligibility Group - Month 8	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+681	TMSIS_ELG_GRP_MO_9	T-MSIS Eligibility Group - Month 9	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+682	TMSIS_ELG_GRP_MO_10	T-MSIS Eligibility Group - Month 10	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+683	TMSIS_ELG_GRP_MO_11	T-MSIS Eligibility Group - Month 11	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+684	TMSIS_ELG_GRP_MO_12	T-MSIS Eligibility Group - Month 12	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+685	TMSIS_ELG_GRP_LTST	T-MSIS Eligibility Group- most recent	CHAR	2	‾	‾	‾	‾	‾	‾	‾	‾	‾	‾	X	Populated with Zero or '99'
+1 Year of Data File - for all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values)
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicaid Analytic eXtract (MAX) Inpatient (IP) Record
+Version - December 2019
+CCW Order	Column	Label	Type	Field Width	1999-2004 1	2005-2014 1	2015 1	Comments
+1	BENE_ID	Encrypted 723 CCW Beneficiary ID	CHAR	15	X	X	X	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse.  This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all  data files. 
+Source:  CCW
+2	MSIS_ID	Encrypted MSIS Identification Number	CHAR	32	X	X	X	This field is encrypted prior to data delivery
+3	STATE_CD	State	CHAR	2	X	X	X
+4	YR_NUM	Year of MAX Record	NUM	4	X	X	X
+5	EL_DOB	Birth date	DATE	8	X	X	X
+6	EL_SEX_CD	Sex	CHAR	1	X	X	X
+7	EL_RACE_ETHNCY_CD	Race/ethnicity (from MSIS)	CHAR	1	X	X	X
+8	RACE_CODE_1	Race - White (from MSIS)	CHAR	1	‾	X	X
+9	RACE_CODE_2	Race - Black (from MSIS)	CHAR	1	‾	X	X
+10	RACE_CODE_3	Race - Am Indian/Alaskan (from MSIS)	CHAR	1	‾	X	X
+11	RACE_CODE_4	Race - Asian (from MSIS)	CHAR	1	‾	X	X
+12	RACE_CODE_5	Race - Hawaiian/Pac. Islands (from MSIS)	CHAR	1	‾	X	X
+13	ETHNICITY_CODE	Ethnicity - Hispanic (from MSIS)	CHAR	1	‾	X	X
+14	EL_SS_ELGBLTY_CD_LTST	State specific eligibility - most recent	CHAR	6	X	X	X
+15	EL_SS_ELGBLTY_CD_MO	State specific eligibility - month of svc	CHAR	6	X	X	X
+16	EL_MAX_ELGBLTY_CD_LTST	MAX eligibility - most recent	CHAR	2	X	X	X
+17	EL_MAX_ELGBLTY_CD_MO	MAX eligibility - month of svc	CHAR	2	X	X	X
+18	EL_MDCR_ANN_XOVR_OLD	Medicare crossover code (Annual) old values	NUM	1	X	NP	NP	2005+ variable is present but field is blank.
+19	MSNG_ELG_DATA	Missing eligibility data	CHAR	1	‾	X	X
+20	EL_MDCR_XOVR_CLM_BSD_CD	Medicare crossover code (from claims only)	NUM	1	X	X	X
+21	EL_MDCR_ANN_XOVR_99	Medicare crossover code (Annual)	CHAR	2	X	X	X
+22	MSIS_TOS	MSIS Type of Service (TOS)	NUM	2	X	X	X
+23	MSIS_TOP	MSIS Type of Program (TOP)	NUM	1	X	X	X
+24	MAX_TOS	MAX Type of Service (TOS)	NUM	2	X	X	X
+25	PRVDR_ID_NMBR	Billing provider identification number	CHAR	12	X	X	X
+26	NPI	National Provider Identifier	CHAR	12	‾	X	X	Populated starting in 2009
+27	TAXONOMY	Provider Taxonomy	CHAR	12	‾	X	X	Populated starting in 2010
+28	TYPE_CLM_CD	Type of claim	NUM	1	X	X	X
+29	ADJUST_CD	Adjustment code	NUM	1	X	X	X
+30	PHP_TYPE	Managed care type of plan code	NUM	2	X	X	X
+31	PHP_ID	Managed care plan identification code	CHAR	12	X	X	X
+32	MDCD_PYMT_AMT	Medicaid payment amount	NUM	12	X	X	X
+33	TP_PYMT_AMT	Third party payment amount	NUM	12	X	X	X
+34	PYMT_DT	Payment/adjudication date	DATE	8	X	X	X
+35	CHRG_AMT	Charge amount	NUM	12	X	X	X
+36	PHP_VAL	Prepaid plan value	NUM	12	X	X	X
+37	MDCR_COINSUR_PYMT_AMT	Medicare coinsurance payment amount	NUM	12	X	X	X
+38	MDCR_DED_PYMT_AMT	Medicare deductible payment amount	NUM	12	X	X	X
+39	ADMSN_DT	Admission date	DATE	8	X	X	X
+40	SRVC_BGN_DT	Beginning date of service	DATE	8	X	X	X
+41	SRVC_END_DT	Ending date of service	DATE	8	X	X	X
+42	DIAG_CD_1	Principal Diagnosis code	CHAR	8	X	X	X
+43	DIAG_VRSN_CD_1	Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	‾	‾	X	New in 2015
+44	DIAG_CD_2	Diagnosis codes (2nd diagnosis)	CHAR	8	X	X	X
+45	DIAG_CD_3	Diagnosis codes (3rd diagnosis)	CHAR	8	X	X	X
+46	DIAG_CD_4	Diagnosis codes (4th diagnosis)	CHAR	8	X	X	X
+47	DIAG_CD_5	Diagnosis codes (5th diagnosis)	CHAR	8	X	X	X
+48	DIAG_CD_6	Diagnosis codes (6th diagnosis)	CHAR	8	X	X	X
+49	DIAG_CD_7	Diagnosis codes (7th diagnosis)	CHAR	8	X	X	X
+50	DIAG_CD_8	Diagnosis codes (8th diagnosis)	CHAR	8	X	X	X
+51	DIAG_CD_9	Diagnosis codes (9th diagnosis)	CHAR	8	X	X	X
+52	PRNCPL_PRCDR_DT	Principal procedure date	DATE	8	X	X	X
+53	PRCDR_CD_SYS_1	Procedure code system- principal	CHAR	2	X	X	X
+54	PRCDR_CD_1	Principal procedure code	CHAR	8	X	X	X
+55	PRCDR_CD_SYS_2	Procedure code system (2nd procedure)	CHAR	2	X	X	X
+56	PRCDR_CD_2	Procedure code (2nd procedure)	CHAR	8	X	X	X
+57	PRCDR_CD_SYS_3	Procedure code system (3rd procedure)	CHAR	2	X	X	X
+58	PRCDR_CD_3	Procedure code (3rd procedure)	CHAR	8	X	X	X
+59	PRCDR_CD_SYS_4	Procedure code system (4th procedure)	CHAR	2	X	X	X
+60	PRCDR_CD_4	Procedure code (4th procedure)	CHAR	8	X	X	X
+61	PRCDR_CD_SYS_5	Procedure code system (5th procedure)	CHAR	2	X	X	X
+62	PRCDR_CD_5	Procedure code (5th procedure)	CHAR	8	X	X	X
+63	PRCDR_CD_SYS_6	Procedure code system (6th procedure)	CHAR	2	X	X	X
+64	PRCDR_CD_6	Procedure code (6th procedure)	CHAR	8	X	X	X
+65	RCPNT_DLVRY_CD	Maternal Delivery code	NUM	1	X	X	X	SAS name is same as PS variable, but meaning & values are different
+66	MDCD_CVRD_IP_DAYS	Medicaid covered inpatient days	NUM	5	X	X	X
+67	PATIENT_STATUS_CD	Patient status	NUM	2	X	X	X
+68	DRG_REL_GROUP_IND	Diagnosis Related Group (DRG) indicator	CHAR	4	X	X	X
+69	DRG_REL_GROUP	Diagnosis Related Group (DRG)	NUM	4	X	X	X
+70	UB_92_REV_CD_GP_1	UB-92 revenue code (1st)	NUM	4	X	X	X
+71	UB_92_REV_CD_CHGS_1	UB-92 revenue code charge (1st)	NUM	12	X	X	X
+72	UB_92_REV_CD_UNITS_1	UB-92 revenue code units (1st)	NUM	8	X	X	X
+73	UB_92_REV_CD_GP_2	UB-92 revenue code (2nd)	NUM	4	X	X	X
+74	UB_92_REV_CD_CHGS_2	UB-92 revenue code charge (2nd)	NUM	12	X	X	X
+75	UB_92_REV_CD_UNITS_2	UB-92 revenue code units (2nd)	NUM	8	X	X	X
+76	UB_92_REV_CD_GP_3	UB-92 revenue code (3rd)	NUM	4	X	X	X
+77	UB_92_REV_CD_CHGS_3	UB-92 revenue code charge (3rd)	NUM	12	X	X	X
+78	UB_92_REV_CD_UNITS_3	UB-92 revenue code units (3rd)	NUM	8	X	X	X
+79	UB_92_REV_CD_GP_4	UB-92 revenue code (4th)	NUM	4	X	X	X
+80	UB_92_REV_CD_CHGS_4	UB-92 revenue code charge (4th)	NUM	12	X	X	X
+81	UB_92_REV_CD_UNITS_4	UB-92 revenue code units (4th)	NUM	8	X	X	X
+82	UB_92_REV_CD_GP_5	UB-92 revenue code (5th)	NUM	4	X	X	X
+83	UB_92_REV_CD_CHGS_5	UB-92 revenue code charge (5th)	NUM	12	X	X	X
+84	UB_92_REV_CD_UNITS_5	UB-92 revenue code units (5th)	NUM	8	X	X	X
+85	UB_92_REV_CD_GP_6	UB-92 revenue code (6th)	NUM	4	X	X	X
+86	UB_92_REV_CD_CHGS_6	UB-92 revenue code charge (6th)	NUM	12	X	X	X
+87	UB_92_REV_CD_UNITS_6	UB-92 revenue code units (6th)	NUM	8	X	X	X
+88	UB_92_REV_CD_GP_7	UB-92 revenue code (7th)	NUM	4	X	X	X
+89	UB_92_REV_CD_CHGS_7	UB-92 revenue code charge (7th)	NUM	12	X	X	X
+90	UB_92_REV_CD_UNITS_7	UB-92 revenue code units (7th)	NUM	8	X	X	X
+91	UB_92_REV_CD_GP_8	UB-92 revenue code (8th)	NUM	4	X	X	X
+92	UB_92_REV_CD_CHGS_8	UB-92 revenue code charge (8th)	NUM	12	X	X	X
+93	UB_92_REV_CD_UNITS_8	UB-92 revenue code units (8th)	NUM	8	X	X	X
+94	UB_92_REV_CD_GP_9	UB-92 revenue code (9th)	NUM	4	X	X	X
+95	UB_92_REV_CD_CHGS_9	UB-92 revenue code charge (9th)	NUM	12	X	X	X
+96	UB_92_REV_CD_UNITS_9	UB-92 revenue code units (9th)	NUM	8	X	X	X
+97	UB_92_REV_CD_GP_10	UB-92 revenue code (10th)	NUM	4	X	X	X
+98	UB_92_REV_CD_CHGS_10	UB-92 revenue code charge (10th)	NUM	12	X	X	X
+99	UB_92_REV_CD_UNITS_10	UB-92 revenue code units (10th)	NUM	8	X	X	X
+100	UB_92_REV_CD_GP_11	UB-92 revenue code (11th)	NUM	4	X	X	X
+101	UB_92_REV_CD_CHGS_11	UB-92 revenue code charge (11th)	NUM	12	X	X	X
+102	UB_92_REV_CD_UNITS_11	UB-92 revenue code units (11th)	NUM	8	X	X	X
+103	UB_92_REV_CD_GP_12	UB-92 revenue code (12th)	NUM	4	X	X	X
+104	UB_92_REV_CD_CHGS_12	UB-92 revenue code charge (12th)	NUM	12	X	X	X
+105	UB_92_REV_CD_UNITS_12	UB-92 revenue code units (12th)	NUM	8	X	X	X
+106	UB_92_REV_CD_GP_13	UB-92 revenue code (13th)	NUM	4	X	X	X
+107	UB_92_REV_CD_CHGS_13	UB-92 revenue code charge (13th)	NUM	12	X	X	X
+108	UB_92_REV_CD_UNITS_13	UB-92 revenue code units (13th)	NUM	8	X	X	X
+109	UB_92_REV_CD_GP_14	UB-92 revenue code (14th)	NUM	4	X	X	X
+110	UB_92_REV_CD_CHGS_14	UB-92 revenue code charge (14th)	NUM	12	X	X	X
+111	UB_92_REV_CD_UNITS_14	UB-92 revenue code units (14th)	NUM	8	X	X	X
+112	UB_92_REV_CD_GP_15	UB-92 revenue code (15th)	NUM	4	X	X	X
+113	UB_92_REV_CD_CHGS_15	UB-92 revenue code charge (15th)	NUM	12	X	X	X
+114	UB_92_REV_CD_UNITS_15	UB-92 revenue code units (15th)	NUM	8	X	X	X
+115	UB_92_REV_CD_GP_16	UB-92 revenue code (16th)	NUM	4	X	X	X
+116	UB_92_REV_CD_CHGS_16	UB-92 revenue code charge (16th)	NUM	12	X	X	X
+117	UB_92_REV_CD_UNITS_16	UB-92 revenue code units (16th)	NUM	8	X	X	X
+118	UB_92_REV_CD_GP_17	UB-92 revenue code (17th)	NUM	4	X	X	X
+119	UB_92_REV_CD_CHGS_17	UB-92 revenue code charge (17th)	NUM	12	X	X	X
+120	UB_92_REV_CD_UNITS_17	UB-92 revenue code units (17th)	NUM	8	X	X	X
+121	UB_92_REV_CD_GP_18	UB-92 revenue code (18th)	NUM	4	X	X	X
+122	UB_92_REV_CD_CHGS_18	UB-92 revenue code charge (18th)	NUM	12	X	X	X
+123	UB_92_REV_CD_UNITS_18	UB-92 revenue code units (18th)	NUM	8	X	X	X
+124	UB_92_REV_CD_GP_19	UB-92 revenue code (19th)	NUM	4	X	X	X
+125	UB_92_REV_CD_CHGS_19	UB-92 revenue code charge (19th)	NUM	12	X	X	X
+126	UB_92_REV_CD_UNITS_19	UB-92 revenue code units (19th)	NUM	8	X	X	X
+127	UB_92_REV_CD_GP_20	UB-92 revenue code (20th)	NUM	4	X	X	X
+128	UB_92_REV_CD_CHGS_20	UB-92 revenue code charge (20th)	NUM	12	X	X	X
+129	UB_92_REV_CD_UNITS_20	UB-92 revenue code units (20th)	NUM	8	X	X	X
+130	UB_92_REV_CD_GP_21	UB-92 revenue code (21st)	NUM	4	X	X	X
+131	UB_92_REV_CD_CHGS_21	UB-92 revenue code charge (21st)	NUM	12	X	X	X
+132	UB_92_REV_CD_UNITS_21	UB-92 revenue code units (21st)	NUM	8	X	X	X
+133	UB_92_REV_CD_GP_22	UB-92 revenue code (22nd)	NUM	4	X	X	X
+134	UB_92_REV_CD_CHGS_22	UB-92 revenue code charge (22nd)	NUM	12	X	X	X
+135	UB_92_REV_CD_UNITS_22	UB-92 revenue code units (22nd)	NUM	8	X	X	X
+136	UB_92_REV_CD_GP_23	UB-92 revenue code (23rd)	NUM	4	X	X	X
+137	UB_92_REV_CD_CHGS_23	UB-92 revenue code charge (23rd)	NUM	12	X	X	X
+138	UB_92_REV_CD_UNITS_23	UB-92 revenue code units (23rd)	NUM	8	X	X	X
+139	UPDT_DT	MAX file update date	DATE	4	X	X	NP
+1 Year of Data File - for all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values)
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicaid Analytic eXtract (MAX) Long-Term Care (LT) Record
+Version - December 2019
+CCW Order	Column	Label	Type	Field Width	1999-2004 1	2005-2014 1	2015 1	Comments
+1	BENE_ID	Encrypted 723 CCW Beneficiary ID	CHAR	15	X	X	X	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse.  This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all  data files. 
+Source:  CCW
+2	MSIS_ID	Encrypted MSIS Identification Number	CHAR	32	X	X	X	This field is encrypted prior to data delivery
+3	STATE_CD	State	CHAR	2	X	X	X
+4	YR_NUM	Year of MAX Record	NUM	4	X	X	X
+5	EL_DOB	Birth date	DATE	8	X	X	X
+6	EL_SEX_CD	Sex	CHAR	1	X	X	X
+7	EL_RACE_ETHNCY_CD	Race/ethnicity (from MSIS)	CHAR	1	X	X	X
+8	RACE_CODE_1	Race - White (from MSIS)	CHAR	1	‾	X	X
+9	RACE_CODE_2	Race - Black (from MSIS)	CHAR	1	‾	X	X
+10	RACE_CODE_3	Race - Am Indian/Alaskan (from MSIS)	CHAR	1	‾	X	X
+11	RACE_CODE_4	Race - Asian (from MSIS)	CHAR	1	‾	X	X
+12	RACE_CODE_5	Race - Hawaiian/Pac. Islands (from MSIS)	CHAR	1	‾	X	X
+13	ETHNICITY_CODE	Ethnicity - Hispanic (from MSIS)	CHAR	1	‾	X	X
+14	EL_SS_ELGBLTY_CD_LTST	State specific eligibility - most recent	CHAR	6	X	X	X
+15	EL_SS_ELGBLTY_CD_MO	State specific eligibility - month of svc	CHAR	6	X	X	X
+16	EL_MAX_ELGBLTY_CD_LTST	MAX eligibility - most recent	CHAR	2	X	X	X
+17	EL_MAX_ELGBLTY_CD_MO	MAX eligibility - month of svc	CHAR	2	X	X	X
+18	EL_MDCR_ANN_XOVR_OLD	Medicare crossover code (Annual) old values	NUM	1	X	NP	NP
+19	MSNG_ELG_DATA	Missing eligibility data	CHAR	1	‾	X	X
+20	EL_MDCR_XOVR_CLM_BSD_CD	Medicare crossover code (from claims only)	NUM	1	X	X	X
+21	EL_MDCR_ANN_XOVR_99	Medicare crossover code (Annual)	CHAR	2	X	X	X
+22	MSIS_TOS	MSIS Type of Service (TOS)	NUM	2	X	X	X
+23	MSIS_TOP	MSIS Type of Program (TOP)	NUM	1	X	X	X
+24	MAX_TOS	MAX Type of Service (TOS)	NUM	2	X	X	X
+25	PRVDR_ID_NMBR	Billing provider identification number	CHAR	12	X	X	X
+26	NPI	National Provider Identifier	CHAR	12	‾	X	X
+27	TAXONOMY	Provider Taxonomy	CHAR	12	‾	X	X
+28	TYPE_CLM_CD	Type of claim	NUM	1	X	X	X
+29	ADJUST_CD	Adjustment code	NUM	1	X	X	X
+30	PHP_TYPE	Managed care type of plan code	NUM	2	X	X	X
+31	PHP_ID	Managed care plan identification code	CHAR	12	X	X	X
+32	MDCD_PYMT_AMT	Medicaid payment amount	NUM	12	X	X	X
+33	TP_PYMT_AMT	Third party payment amount	NUM	12	X	X	X
+34	PYMT_DT	Payment/adjudication date	DATE	8	X	X	X
+35	CHRG_AMT	Charge amount	NUM	12	X	X	X
+36	PHP_VAL	Prepaid plan value	NUM	12	X	X	X
+37	MDCR_COINSUR_PYMT_AMT	Medicare coinsurance payment amount	NUM	12	X	X	X
+38	MDCR_DED_PYMT_AMT	Medicare deductible payment amount	NUM	12	X	X	X
+39	ADMSN_DT	Admission date	DATE	8	X	X	X
+40	SRVC_BGN_DT	Beginning date of service	DATE	8	X	X	X
+41	SRVC_END_DT	Ending date of service	DATE	8	X	X	X
+42	DIAG_CD_1	Principal Diagnosis code	CHAR	8	X	X	X
+43	DIAG_VRSN_CD_1	Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	‾	‾	X	New in 2015
+44	DIAG_CD_2	Diagnosis codes (2nd diagnosis)	CHAR	8	X	X	X
+45	DIAG_CD_3	Diagnosis codes (3rd diagnosis)	CHAR	8	X	X	X
+46	DIAG_CD_4	Diagnosis codes (4th diagnosis)	CHAR	8	X	X	X
+47	DIAG_CD_5	Diagnosis codes (5th diagnosis)	CHAR	8	X	X	X
+48	MDCD_CVRD_MENTL_DAY_CNT	Mental hospital for the aged days	NUM	5	X	X	X
+49	MDCD_CVRD_PSYCH_DAY_CNT	Inpatient Psychiatric (age < 21) days	NUM	5	X	X	X
+50	INTRMDT_FAC_MR_DAY_CNT	ICF-MR days	NUM	5	X	X	X
+51	NRSNG_FAC_DAY_CNT	Nursing facility days	NUM	5	X	X	X
+52	LT_CARE_LVE_DAY_CNT	Leave days	NUM	5	X	X	X
+53	PATIENT_STATUS_CD	Patient status	NUM	2	X	X	X
+54	PATIENT_LIB_AMT	Patient liability amount	NUM	12	X	X	X
+55	UPDT_DT	MAX file update date	DATE	4	X	X	NP
+1 Year of Data File - for all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values);
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicaid Analytic eXtract (MAX) Other Services (OT) Record
+Version - December 2019
+CCW Order	Column	Label	Type	Field Width	1999-2004 1	2005-2009 1	2010 -2014 1	2015 1	Comments
+1	BENE_ID	Encrypted 723 CCW Beneficiary ID	CHAR	15	X	X	X	X	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse.  This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all  data files. 
+Source:  CCW
+2	MSIS_ID	Encrypted MSIS Identification Number	CHAR	32	X	X	X	X	This field is encrypted prior to data delivery.
+3	STATE_CD	State	CHAR	2	X	X	X	X
+4	YR_NUM	Year of MAX Record	NUM	4	X	X	X	X
+5	EL_DOB	Birth date	DATE	8	X	X	X	X
+6	EL_SEX_CD	Sex	CHAR	1	X	X	X	X
+7	EL_RACE_ETHNCY_CD	Race/ethnicity (from MSIS)	CHAR	1	X	X	X	X
+8	RACE_CODE_1	Race - White (from MSIS)	CHAR	1	‾	X	X	X
+9	RACE_CODE_2	Race - Black (from MSIS)	CHAR	1	‾	X	X	X
+10	RACE_CODE_3	Race - Am Indian/Alaskan (from MSIS)	CHAR	1	‾	X	X	X
+11	RACE_CODE_4	Race - Asian (from MSIS)	CHAR	1	‾	X	X	X
+12	RACE_CODE_5	Race - Hawaiian/Pac. Islands (from MSIS)	CHAR	1	‾	X	X	X
+13	ETHNICITY_CODE	Ethnicity - Hispanic (from MSIS)	CHAR	1	‾	X	X	X
+14	EL_SS_ELGBLTY_CD_LTST	State specific eligibility - most recent	CHAR	6	X	X	X	X
+15	EL_SS_ELGBLTY_CD_MO	State specific eligibility - month of svc	CHAR	6	X	X	X	X
+16	EL_MAX_ELGBLTY_CD_LTST	MAX eligibility - most recent	CHAR	2	X	X	X	X
+17	EL_MAX_ELGBLTY_CD_MO	MAX eligibility - month of svc	CHAR	2	X	X	X	X
+18	EL_MDCR_ANN_XOVR_OLD	Medicare crossover code (Annual) old values	NUM	1	X	NP	X	X
+19	MSNG_ELG_DATA	Missing eligibility data	CHAR	1	‾	X	X	X
+20	EL_MDCR_XOVR_CLM_BSD_CD	Medicare crossover code (from claims only)	NUM	1	X	X	X	X
+21	EL_MDCR_ANN_XOVR_99	Medicare crossover code (Annual)	CHAR	2	X	X	X	X
+22	MSIS_TOS	MSIS Type of Service (TOS)	NUM	2	X	X	X	X
+23	MSIS_TOP	MSIS Type of Program (TOP)	NUM	1	X	X	X	X
+24	HCBS_TXNMY_WVR_CD	Home and community-based services (HCBS) toxonomy code for waviers	CHAR	5	‾	NP	X	X
+25	MAX_TOS	MAX Type of Service (TOS)	NUM	2	X	X	X	X
+26	CLTC_FLAG	Community-based LT care (CLTC) flag	CHAR	2	‾	X	X	X
+27	PRVDR_ID_NMBR	Billing provider identification number	CHAR	12	X	X	X	X
+28	NPI	National Provider Identifier	CHAR	12	X	X	X	X
+29	TAXONOMY	Provider Taxonomy	CHAR	12	X	X	X	X
+30	TYPE_CLM_CD	Type of claim	NUM	1	X	X	X	X
+31	ADJUST_CD	Adjustment code	NUM	1	X	X	X	X
+32	PHP_TYPE	Managed care type of plan code	NUM	2	X	X	X	X
+33	PHP_ID	Managed care plan identification code	CHAR	12	X	X	X	X
+34	MDCD_PYMT_AMT	Medicaid payment amount	NUM	12	X	X	X	X
+35	TP_PYMT_AMT	Third party payment amount	NUM	12	X	X	X	X
+36	PYMT_DT	Payment/adjudication date	DATE	8	X	X	X	X
+37	CHRG_AMT	Charge amount	NUM	12	X	X	X	X
+38	PHP_VAL	Prepaid plan value	NUM	12	X	X	X	X
+39	MDCR_COINSUR_PYMT_AMT	Medicare coinsurance payment amount	NUM	12	X	X	X	X
+40	MDCR_DED_PYMT_AMT	Medicare deductible payment amount	NUM	12	X	X	X	X
+41	SRVC_BGN_DT	Beginning date of service	DATE	8	X	X	X	X
+42	SRVC_END_DT	Ending date of service	DATE	8	X	X	X	X
+43	PRCDR_CD_SYS	Procedure (service) coding system	CHAR	2	X	X	X	X
+44	PRCDR_CD	Procedure (service) code	CHAR	8	X	X	X	X
+45	PRCDR_SRVC_MDFR_CD	Procedure (service) code modifier	CHAR	2	X	X	X	X
+46	DIAG_CD_1	Principal Diagnosis code	CHAR	8	X	X	X	X
+47	DIAG_VRSN_CD_1	Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	‾	‾	‾	X	New in 2015
+48	DIAG_CD_2	Diagnosis codes (2nd diagnosis)	CHAR	8	X	X	X	X
+49	QTY_SRVC_UNITS	Quantity of service	NUM	6	X	X	X	X
+50	SRVC_PRVDR_ID_NMBR	Servicing provider identification number	CHAR	12	X	X	X	X
+51	SRVC_PRVDR_SPEC_CD	Servicing provider specialty code	CHAR	4	X	X	X	X
+52	PLC_OF_SRVC_CD	Place of service	NUM	2	X	X	X	X
+53	UB_92_REV_CD	UB-92 revenue code	NUM	4	X	X	X	X
+1 Year of Data File - for all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values)
+
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicaid Analytic eXtract (MAX) Drug (RX) Record
+Version - December 2019
+CCW Order	Column	Label	Type	Field Width	Year of Data File1 1999+	Comments
+1	BENE_ID	Encrypted 723 CCW Beneficiary ID	CHAR	15	X	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse.  This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all  data files. 
+
+Source:  CCW
+2	MSIS_ID	Encrypted MSIS Identification Number	CHAR	32	X	This field is encrypted prior to data delivery
+3	STATE_CD	State	CHAR	2	X
+4	YR_NUM	Year of MAX Record	NUM	4	X
+5	EL_DOB	Birth date	DATE	8	X
+6	EL_SEX_CD	Sex	CHAR	1	X
+7	EL_RACE_ETHNCY_CD	Race/ethnicity (from MSIS)	CHAR	1	X
+8	RACE_CODE_1	Race - White (from MSIS)	CHAR	1	X
+9	RACE_CODE_2	Race - Black (from MSIS)	CHAR	1	X
+10	RACE_CODE_3	Race - Am Indian/Alaskan (from MSIS)	CHAR	1	X
+11	RACE_CODE_4	Race - Asian (from MSIS)	CHAR	1	X
+12	RACE_CODE_5	Race - Hawaiian/Pac. Islands (from MSIS)	CHAR	1	X
+13	ETHNICITY_CODE	Ethnicity - Hispanic (from MSIS)	CHAR	1	X
+14	EL_SS_ELGBLTY_CD_LTST	State specific eligibility - most recent	CHAR	6	X
+15	EL_SS_ELGBLTY_CD_MO	State specific eligibility - month of svc	CHAR	6	X
+16	EL_MAX_ELGBLTY_CD_LTST	MAX eligibility - most recent	CHAR	2	X
+17	EL_MAX_ELGBLTY_CD_MO	MAX eligibility - month of svc	CHAR	2	X
+18	EL_MDCR_ANN_XOVR_OLD	Medicare crossover code (Annual) old values	NUM	1	X
+19	MSNG_ELG_DATA	Missing eligibility data	CHAR	1	X
+20	EL_MDCR_XOVR_CLM_BSD_CD	Medicare crossover code (from claims only)	NUM	1	X
+21	EL_MDCR_ANN_XOVR_99	Medicare crossover code (Annual)	CHAR	2	X
+22	MSIS_TOS	MSIS Type of Service (TOS)	NUM	2	X
+23	MSIS_TOP	MSIS Type of Program (TOP)	NUM	1	X
+24	MAX_TOS	MAX Type of Service (TOS)	NUM	2	X
+25	PRVDR_ID_NMBR	Billing provider identification number	CHAR	12	X
+26	NPI	National Provider Identifier	CHAR	12	X
+27	TAXONOMY	Provider Taxonomy	CHAR	12	X
+28	TYPE_CLM_CD	Type of claim	NUM	1	X
+29	ADJUST_CD	Adjustment code	NUM	1	X
+30	PHP_TYPE	Managed care type of plan code	NUM	2	X
+31	PHP_ID	Managed care plan identification code	CHAR	12	X
+32	MDCD_PYMT_AMT	Medicaid payment amount	NUM	12	X
+33	TP_PYMT_AMT	Third party payment amount	NUM	12	X
+34	PYMT_DT	Payment/adjudication date	DATE	8	X
+35	CHRG_AMT	Charge amount	NUM	12	X
+36	PHP_VAL	Prepaid plan value	NUM	12	X
+37	MDCR_COINSUR_PYMT_AMT	Medicare coinsurance payment amount	NUM	12	X
+38	MDCR_DED_PYMT_AMT	Medicare deductible payment amount	NUM	12	X
+39	PRES_PHYSICIAN_ID_NUM	Prescribing physician id number	CHAR	12	X
+40	PRSC_WRTE_DT	Prescribed date	DATE	8	X
+41	PRSCRPTN_FILL_DT	Prescription fill date	DATE	8	X
+42	NEW_REFILL_IND	New or refill indicator	NUM	2	X
+43	NDC	National Drug Code (NDC)	CHAR	12	X
+44	QTY_SRVC_UNITS	Quantity of service	NUM	6	X
+45	DAYS_SUPPLY	Days supply	NUM	4	X
+46	NDC_FORMT_IND	NDC Format	Char	1	NP	field contains proprietary data; is not released
+47	DRUG_CLASS_CD	Drug Class	Char	1	NP	field contains proprietary data; is not released
+48	MULTI_SRCE_CD	Multi Source Code	Char	1	NP	field contains proprietary data; is not released
+49	HICL_THRTPC_CTGRY	HICL	Char	54	NP	field contains proprietary data; is not released
+50	THRTPC_CLASS_CD_SPCFC	Therapeutic Class-Specific	Char	3	NP	field contains proprietary data; is not released
+51	THRTPC_CLASS_CD_GENERIC	Therapeutic Class-Generic	Char	2	NP	field contains proprietary data; is not released
+52	AMER_HSPTL_FRMLRY_SYS_CD	American Hospital Formulary code	Char	6	NP	field contains proprietary data; is not released
+53	SMART_KEY	Smart Key	Char	24	NP	field contains proprietary data; is not released
+54	MEDISPAN_DRG_CTGRY	Medispan code	Char	14	NP	field contains proprietary data; is not released
+55	OVER_COUNTER_IND	Over-the-counter indicator	Char	1	NP	field contains proprietary data; is not released
+56	GCN_SEQNO	Clinical Formulation ID	Char	6	NP	field contains proprietary data; is not released
+57	HICL_SEQNO	Ingredient List ID	Char	6	NP	field contains proprietary data; is not released
+58	HIC3	HTCC Code	Char	3	NP	field contains proprietary data; is not released
+59	HIC3_SEQN	HTCC Sequence Number	Char	6	NP	field contains proprietary data; is not released
+1 For all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values)

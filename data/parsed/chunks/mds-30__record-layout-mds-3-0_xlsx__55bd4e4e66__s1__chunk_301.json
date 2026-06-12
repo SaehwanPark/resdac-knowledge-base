@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_301",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "8 for an additional active diagnoses in the last seven days.\n331 I8000I_ICD_9_CD I8000I_ICD_9_CD I8000I Additional Active Diagnoses: ICD 9 Code CHAR 8 This column contains ICD (International Classification of Diseases) code 9 for an additional active diagnoses in the last seven days.\n332 I8000J_ICD_10_CD I8000J_ICD_10_CD I8000J Additional Active Diagnoses: ICD 10 Code CHAR 8 This column contains ICD (International Classification of Diseases) code 10 for an additional active diagnoses in the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

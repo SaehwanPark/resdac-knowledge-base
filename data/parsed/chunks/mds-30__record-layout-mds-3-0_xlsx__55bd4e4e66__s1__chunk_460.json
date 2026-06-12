@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_460",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "O0400A5_SPCH_THRPY_STRT_DT O0400A5 Speech Therapy/Audiology Start Date CHAR 8 The data in this column indicates the start date for the most recent speech-language therapy regimen. discontinued 09/30/2025\n515 O0400A6_SPCH_THRPY_END_DT O0400A6_SPCH_THRPY_END_DT O0400A6 Speech Therapy/Audiology End Date CHAR 8 The data in this column indicates the end date for the most recent speech-language therapy regimen. discontinued 09/30/2025\n516 O0400B1_OT_INDVDL_MIN_NUM O0400B1_OT_INDVDL_MIN_NUM O0400B1",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

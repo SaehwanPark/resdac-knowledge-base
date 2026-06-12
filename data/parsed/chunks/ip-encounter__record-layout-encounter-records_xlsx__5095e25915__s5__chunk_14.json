@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s5__chunk_14",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 5,
+  "text": "Latest Claim Indicator Char 1 18 18\n1 Number shown on the matrix indicates the sequence of the data field. Shading or '-' indicates variable is not present or not populated. In 2025,\nthe field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File; the numbering of the fields was updated.",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

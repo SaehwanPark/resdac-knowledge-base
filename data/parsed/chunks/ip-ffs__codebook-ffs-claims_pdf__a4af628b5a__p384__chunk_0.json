@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p384__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 384,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n366 \nREV_CNTR_RP_IND_CD \nLABEL: \nRevenue Center Representative Payee (RP) Indicator Code \nDESCRIPTION: Revenue Center Representative Payee (RP) Indicator Code \nSHORT NAME: REV_CNTR_RP_IND_CD \nLONG NAME: REV_CNTR_RP_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nR = bypass representative payee \nCOMMENT: \nThis field is used to designate by-passing of the prior",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

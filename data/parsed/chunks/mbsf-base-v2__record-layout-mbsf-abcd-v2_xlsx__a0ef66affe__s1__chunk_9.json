@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "2\nMDCR_STATUS_CD_11 Medicare Status Code - November CHAR 2\nMDCR_STATUS_CD_12 Medicare Status Code - December CHAR 2\nMDCR_STATUS_CD Medicare Status Code - Annual Indicator CHAR 2\nBENE_PTA_TRMNTN_CD Part A Termination Code CHAR 1\nBENE_PTB_TRMNTN_CD Part B Termination Code CHAR 1\nBENE_HI_CVRAGE_TOT_MONS Hospital Insurance (HI) Coverage Months Count NUM 3\nBENE_SMI_CVRAGE_TOT_MONS Supplemental Medical Insurance (SMI) Coverage Months Count NUM 3\nBENE_STATE_BUYIN_TOT_MONS State Buy-In (SBI) Coverage",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

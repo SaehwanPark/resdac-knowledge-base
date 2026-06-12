@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 31,
+  "text": "It may or may not be the same as the \nContract ID in the previous year (2013). \nThis field is a key that links of Part D sponsor's contract and plan identifiers. \nSHORT NAME: — \nLONG NAME: CONTRACT_ID_14 \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n5-digit alpha/numeric value \nCOMMENT: \nAll Contract and Plan ID that were active in 2014 appear in this data file. To determine whether the \nContract and Plan IDs in the data file represent the same plan in the prior year, compare",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

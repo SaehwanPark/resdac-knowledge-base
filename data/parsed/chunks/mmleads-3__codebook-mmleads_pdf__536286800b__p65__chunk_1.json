@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p65__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 65,
+  "text": "Medicaid payment information for RX is in the MDCD_RX_TOTAL_SPEND variable; \nhowever, due to CMS payment redaction requirements the dollar totals will not reflect the (redacted) \nmanaged care expenditures. MMLEADS counts all claims in the MDCD_RX_TOTAL_USE variable. Use \ncaution when calculating average spend per claim. There may be claims (i.e., use) for which there is no \ncorresponding payment information. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

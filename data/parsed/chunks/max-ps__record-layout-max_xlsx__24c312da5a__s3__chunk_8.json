@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s3__chunk_8",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 3,
+  "text": "(3rd diagnosis) CHAR 8 X X X\n46 DIAG_CD_4 Diagnosis codes (4th diagnosis) CHAR 8 X X X\n47 DIAG_CD_5 Diagnosis codes (5th diagnosis) CHAR 8 X X X\n48 MDCD_CVRD_MENTL_DAY_CNT Mental hospital for the aged days NUM 5 X X X\n49 MDCD_CVRD_PSYCH_DAY_CNT Inpatient Psychiatric (age < 21) days NUM 5 X X X\n50 INTRMDT_FAC_MR_DAY_CNT ICF-MR days NUM 5 X X X\n51 NRSNG_FAC_DAY_CNT Nursing facility days NUM 5 X X X\n52 LT_CARE_LVE_DAY_CNT Leave days NUM 5 X X X\n53 PATIENT_STATUS_CD Patient status NUM 2 X X X\n54",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

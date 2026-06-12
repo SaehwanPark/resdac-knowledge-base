@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p275__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 275,
+  "text": "during the pre-initial coverage limit (ICL) phase of \nthe Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nPlans that use a co-payment amount rather than a coinsurance percentage will not have a value in this \nfield; reference instead the corresponding co-payment variable called (PRE_ICL_MO_COPAY_1M). \nStarting in 2016, CMS changed how they describe pharmacy networks. The mail order pharmacies are \ncurrently referred to as standard mail order",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

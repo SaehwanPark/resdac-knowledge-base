@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_196",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "calendar days. 0 = No, 1 = Yes\n155 _43A TRNSFR_1_DT (43A) First Interruption Date DATE 8 The date when the patient leaves the inpatient rehabilitation facility in a program interruption situation (Item 42 - a situation where a Medicare inpatient is discharged from the inpatient rehabilitation facility and returns to the same inpatient rehabilitation facility within 3 consecutive calendar days).\n156 _43B RTRN_1_DT (43B) First Return Date DATE 8 The date when the patient returns to the inpatient",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

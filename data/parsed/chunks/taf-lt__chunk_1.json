@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__chunk_1",
+  "source_document": "data/raw/html/dataset_page/8cb6484ad20a60abb1e2f652756c576cfbf5dba9.html",
+  "page": null,
+  "text": "With Intellectual Disabilities\nThe records in the LT TAF include fee-for-service (FFS) claims, managed care encounters and supplemental payments for Medicaid, Medicaid-expansion CHIP, and separate CHIP.\nWhat does this file include? (variable highlights)\n- Diagnosis codes\n- Present on Admission indicator\n- Admission date\n- Charges and payments\n- Provider identifier\n- Patient discharge status or destination\n- Counts of covered days\nSpecial considerations\n- Encounter data reporting may vary by",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt?page=1"
+}

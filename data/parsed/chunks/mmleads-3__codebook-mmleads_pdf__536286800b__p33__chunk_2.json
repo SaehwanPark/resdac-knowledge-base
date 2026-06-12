@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p33__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 33,
+  "text": "(MDCD_MC_MEDICAL_MOS). If the beneficiary does not have comprehensive managed care medical \ncoverage during the month, then we set the monthly fee-for-service indicator to 1 \n(MDCD_FFS_MEDICAL_01–12). We count the number of months with FFS coverage \n(MDCD_FFS_MEDICAL_MOS). These variables are set to null/missing for beneficiaries who are not \nenrolled in Medicaid during the year. \nThe sum of these two variables (MDCD_MC_MEDICAL_MOS + MDCD_FFS_MEDICAL_MOS) is equal to \nthe total months of",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

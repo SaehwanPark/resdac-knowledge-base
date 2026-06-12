@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_16",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Medicare Reimbursement Type Code CHAR 2 93\nBENE_LIABILITY_AMT Total Beneficiary Long-Term Care Liability Amount NUM 8 94\nCOINSRNC_AMT Beneficiary Coinsurance Amount NUM 8 95\nTOT_BENE_COINSRNC_LBLTY_AMT Total Beneficiary Coinsurance Liability Amount NUM 8 116 New3\nCOPAY_AMT Beneficiary Copayment Amount NUM 8 96\nTOT_BENE_COPAY_LBLTY_AMT Total Beneficiary Copayment Liability Amount NUM 8 117 New3\nDDCTBL_AMT Beneficiary Deductible Amount NUM 8 97\nTOT_BENE_DDCTBL_LBLTY_AMT Total Beneficiary",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

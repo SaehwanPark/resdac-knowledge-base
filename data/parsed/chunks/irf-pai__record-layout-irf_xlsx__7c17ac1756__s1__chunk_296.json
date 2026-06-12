@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_296",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "in this column identifies the patient's ability to recall the third word. 0 = No - could not recall\n1 = Yes, after cueing (\"a piece of furniture\")\n2 = Yes, no cue required\n286 C0500_BIMS_SCRE_NUM C0500_BIMS_SCRE_NUM C0500 Brief Interview for Mental Status (BIMS) Score Number - This column contains the BIMS (Brief Interview for Mental Status) score, which is calculated by adding the scores in items C0200-C0400. CHAR 2 This column contains the BIMS (Brief Interview for Mental Status) score, which",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

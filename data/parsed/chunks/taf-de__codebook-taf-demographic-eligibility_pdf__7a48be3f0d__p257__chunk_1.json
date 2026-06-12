@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p257__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 257,
+  "text": "of a case varies. There are single-person cases (mostly aged and blind/disabled) and \nmulti-person cases (mostly TANF) in which all members of the case have the same case number, but a \nunique MSIS identification number. A warning for longitudinal research efforts: a person’s case \nnumber may change over time. \nSHORT NAME: MSIS_CASE_NUM \nLONG NAME: MSIS_CASE_NUM \nTYPE: \nCHAR \nLENGTH: \n32 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \nAlphanumeric",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

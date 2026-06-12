@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_712",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "GG0170K5 Mobility: Ability to Walk 150 Feet (Interim Perf) CHAR 2 Walk 150 feet: Once standing, the ability to walk at least 150 feet in a corridor or similar space. effective 10/01/2019\n768 I0020B_PRMRY_MDCL_ICD_CD I0020B_PRMRY_MDCL_ICD_CD I0020B Primary Medical Condition ICD Code CHAR 8 ICD Code effective 10/01/2019\n769 J2100_RCNT_SRGRY_SNF_CARE_IND J2100_RCNT_SRGRY_SNF_CARE_IND J2100 Recent Surgery Requiring Active SNF Care CHAR 1 Indicates whether the resident had a major surgical procedure",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

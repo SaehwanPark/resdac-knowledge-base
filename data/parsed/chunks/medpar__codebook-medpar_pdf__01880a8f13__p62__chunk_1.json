@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p62__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 62,
+  "text": "are Next Generation (NG) \nAccountable Care Organization (ACO) claims that qualify for specific claims processing edits. \nSHORT NAME: \nCLM_NGACO_IND_1_CD \nCLM_NGACO_IND_2_CD \nCLM_NGACO_IND_3_CD \nCLM_NGACO_IND_4_CD \nCLM_NGACO_IND_5_CD \nLONG NAME: \nCLM_NGACO_IND_1_CD \nCLM_NGACO_IND_2_CD \nCLM_NGACO_IND_3_CD \nCLM_NGACO_IND_4_CD \nCLM_NGACO_IND_5_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Base record (no enhancements) \n1 = Population Based Payments (PBP) \n2 = Telehealth \n3 = Post",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

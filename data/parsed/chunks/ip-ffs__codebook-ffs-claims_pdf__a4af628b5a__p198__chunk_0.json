@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p198__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 198,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n180 \nHCPCS_4TH_MDFR_CD \nLABEL: \nHCPCS Fourth Modifier Code \nDESCRIPTION: A fourth modifier to the Healthcare Common Procedure Coding System (HCPCS) procedure code to \nmake it more specific than the first, second, or third modifier codes identify the revenue center or \nline-item services for the claim. \nSHORT NAME: MDFR_CD4 \nLONG NAME: HCPCS_4TH_MDFR_CD \nTYPE: \nCHAR \nLENGTH:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

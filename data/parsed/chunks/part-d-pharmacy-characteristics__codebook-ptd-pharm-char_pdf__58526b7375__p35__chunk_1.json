@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p35__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 35,
+  "text": "services offered. \nSHORT NAME: — \nLONG NAME: WALKIN_CLINIC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n19 = Site does not have on-site walk-in clinic \n20 = Site has on-site affiliate walk-in clinic offering limited services staffed by mid-level practitioner(s) \n21 = Site has on-site affiliate walk-in clinic offering limited services staffed by licensed physician(s) \n22 = Site has on-site affiliate emergency room \nNull = This information has not been reported by the pharmacy",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

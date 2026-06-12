@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p162__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 162,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n161 \nSR_SCRNG_DT \nLABEL: \nScreening Date \nDESCRIPTION: Screening result (SR) Screening date. \nLONG NAME: SR_SCRNG_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nAHC data system \nVALUES: \nFormat: DDMONYYYY (e.g., 26NOV2018) \n\nCOMMENT: \nScreening dates occurred between May 1, 2018–January 31, 2023. \nVariables that start with “SR” include information for each screening. \n^ Back to TOC ^",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 21,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n16 \nDRUG_STUS_IND \nLABEL: \nDrug Status Indicator of Manufacturer Discount \nDESCRIPTION: This field indicates whether the NDC for PDE was considered an applicable drug, non-applicable drug, \nor selected drug by CMS at the time of PDE processing for purposes of manufacturer \ndiscount/selected drug applicability and reinsurance calculations. \nSHORT NAME:",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

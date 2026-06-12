@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "CLM_PASS_THRU_PER_DIEM_AMT Claim Pass Thru Per Diem Amount NUM 12 41\nDED_AMT NCH_BENE_IP_DDCTBL_AMT NCH Beneficiary Inpatient (or other Part A) Deductible Amount NUM 12 42\nCOIN_AMT NCH_BENE_PTA_COINSRNC_LBLTY_AM NCH Beneficiary Part A Coinsurance Liability Amount NUM 12 43\nBLDDEDAM NCH_BENE_BLOOD_DDCTBL_LBLTY_AM NCH Beneficiary Blood Deductible Liability Amount NUM 12 44\nPCCHGAMT NCH_PROFNL_CMPNT_CHRG_AMT NCH Professional Component Charge Amount NUM 12 45\nNCCHGAMT NCH_IP_NCVRD_CHRG_AMT NCH",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

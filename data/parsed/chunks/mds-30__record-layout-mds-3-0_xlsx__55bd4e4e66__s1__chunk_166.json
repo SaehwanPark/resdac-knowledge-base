@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_166",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "important\n3=Not very important\n4=Not important at all\n5=Important, but can't do or no choice\n9=No response or non-responsive\n^=Blank (skip pattern)\n195 F0600_RSPNDT_ACTVTY_CD F0600_RSPNDT_ACTVTY_CD F0600 Daily and Activity Preferences Primary Respondent Code CHAR 1 The data in this column identifies the primary respondent for the daily and activity preferences questions. -=Not assessed/no information\n1=Resident\n2=Family or significant other (close friend or other respresentative)\n9=Interview",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p21__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 21,
+  "text": "for purposes of manufacturer \ndiscount/selected drug applicability and reinsurance calculations. \nSHORT NAME: DRUG_STUS_IND \nLONG NAME: DRUG_STUS_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \n1 = Applicable \n2 = Non-applicable \n3 = Selected (effective for DOS >= 01/01/2026) \nNull/missing = the drug coverage status code (field called DRUG_CVRG_STUS_CD) is E (Supplemental \ndrugs) or O (Over-the-counter drugs). \nCOMMENT: \nThis field was new in 2025. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

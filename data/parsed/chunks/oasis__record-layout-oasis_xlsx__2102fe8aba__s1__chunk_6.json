@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "is averaged to the whole nation CHAR 10 x x x x x x\nPRVDR_ID Provider Internal ID This ID is populated for new facilities beginning in August 2020. NUM 10 x x\nHHA_ASMT_INT_ID HHA Assessment Internal ID The assessment internal identification number. CHAR 15 x x x x x x\nORIG_ASMT_INT_ID Original Assessment Internal ID Original version (ASMT INT ID) of this assessment where Correction Number is 00. CHAR 15 x x x x x x\nSTATE_ID State ID The two-digit state abbreviation. This may also be the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

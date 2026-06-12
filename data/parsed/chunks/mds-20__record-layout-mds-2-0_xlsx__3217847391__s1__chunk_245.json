@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_245",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "\"-\" = Unknown, -2 = Space\n400 L1A L1A_DEBRIS_B4_BED (L1A) Debris Present in Mouth Prior to Going to Bed CHAR 1 Oral/dental status: oral status and disease prevention - debris in mouth before bed. 0 = No, 1 = Yes, \"-\" = Unknown.\n401 L1B L1B_DENTURES (L1B) Has Dentures/Removable Bridge CHAR 1 Oral/dental status: oral status and disease prevention - has dentures or removable bridge. 0 = No, 1 = Yes, \"-\" = Unknown.\n402 L1C L1C_LOST_TEETH (L1C) Some/All Natural Teeth Lost CHAR 1 Oral/dental status:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

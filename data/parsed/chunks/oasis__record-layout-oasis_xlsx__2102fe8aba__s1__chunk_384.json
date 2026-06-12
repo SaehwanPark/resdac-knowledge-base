@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_384",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "to heart failure. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOS_HYPOGLYC M2430 Hospital Reason- (M0895) Hypo/Hyperglycemia This field indicates the reason the patient required hospitalization was due to hypo/hyperglycemia, diabetes out of control. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOSP_MED M2430 Hospital Reason- (M0895) Improper Medication Administration This field indicates the reason the patient required hospitalization was due to improper",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

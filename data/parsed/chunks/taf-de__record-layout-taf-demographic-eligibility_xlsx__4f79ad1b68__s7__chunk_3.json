@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s7__chunk_3",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 7,
+  "text": "HCBS Brain Injury State-Reported Chronic Condition Ind — Ltst in Yr NUM 3 12\nHCBS_HIV_AIDS_CC_IND HCBS HIV or AIDS State-Reported Chronic Condition Ind - Ltst in Yr NUM 3 13\nHCBS_TECH_DPNDNT_MF_CC_IND HCBS Tech Dep Medically Fragile State-Reported Chronic Condition Ind-Ltst in Yr NUM 3 14\nLCKIN_IND Lock-in Ind - Ever in Calendar Yr CHAR 1 15\nLCKIN_TOS_CD_1 Lock-in Type of Service Code 1 CHAR 3 221 New1\nLCKIN_PRVDR_ID_1 Lock-in Provider 1 Identification Number CHAR 30 16\nLCKIN_PRVDR_TYPE_CD_1",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

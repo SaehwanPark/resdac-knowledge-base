@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p58__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 58,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n53 \nRPTD_GAP_DSCNT_NUM \nLABEL: \nGap Discount Amount \nDESCRIPTION: This variable indicates the amount of the discount provided by the drug’s manufacturer under the \nMedicare Coverage Gap Discount Program, as calculated by CMS based on data reported in the PDE. \nSHORT NAME: GAPDSCNT \nLONG NAME: RPTD_GAP_DSCNT_NUM \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nPDE \nVALUES:",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nOctober 2025 \nK. Schneider \n• Updated Plan Premium file to indicate the following six fields \nare retired after 2023: PART_D_LIS_25, PART_D_LIS_50, \nPART_D_LIS_75, PART_D_LIPS_25, PART_D_LIPS_50, and \nPART_D_LIPS_75 \n• Added POST_OOPT_EXCL_DRUG_CST_SHR and 15 new \nInsulin variables to Plan Tier file for 2024:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

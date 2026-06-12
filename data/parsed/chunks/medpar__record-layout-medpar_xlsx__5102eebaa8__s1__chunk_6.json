@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "- - - - X X X X X X X X X X X X X X\nPRVDRNUM PRVDR_NUM Provider Number Char 10 X X X X X X X X X X X X X X X X X X\nSPCLUNIT PRVDR_NUM_SPCL_UNIT_CD Provider Number Special Unit Code Char 1 X X X X X X X X X X X X X X X X X X\nPRVDR_BASE_FAC_CCN_NUM PRVDR_BASE_FAC_CCN_NUM Provider Base Facility CMS Certification Number (CCN) Char 6 - - - - - - - - - - - - - - - - - X\nPRVDR_FULL_CCN_NUM PRVDR_FULL_CCN_NUM Provider Full CMS Certification Number (CCN) Char 13 - - - - - - - - - - - - - - - - -",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

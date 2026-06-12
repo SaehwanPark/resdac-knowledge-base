@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p46__chunk_2",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 46,
+  "text": "COMMENT: \nThe value was chosen using the last-best method for values from the monthly TAF (calendar year). \nThis field is derived from the MC_PLAN_REIMBRSMT_TYPE_CD using the following logic: \n1 if MC_PLAN_REIMBRSMT_TYPE_CD equals “01”, “02”, “03” \n2 if MC_PLAN_REIMBRSMT_TYPE_CD equals “04” \n3 if MC_PLAN_REIMBRSMT_TYPE_CD equals “05” \n4 if MC_PLAN_REIMBRSMT_TYPE_CD equals “06,” “08” \n5 if MC_PLAN_REIMBRSMT_TYPE_CD equals “07” \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

@@ -1,0 +1,24 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| ENC_JOIN_KEY | Unique Encounter Join Key | 
+| CLM_TYPE_CD | Claim Type Code | 
+| CLM_LINE_NUM | Claim Line Number (Encounter) | 
+| LINE_NUM_ORIG | Original Claim Line Number | 
+| CLM_THRU_DT | Claim Through Date (Encounter) | 
+| PRVDR_NPI | Line Rendering Physician NPI | 
+| PRVDR_SPCLTY | Line CMS Provider Specialty Code | 
+| LINE_SRVC_CNT | Line Service Count (Encounter) | 
+| LINE_PLACE_OF_SRVC_CD | Line Place of Service Code (Encounter) | 
+| LINE_1ST_EXPNS_DT | Line First Expense Date (Encounter) | 
+| LINE_LAST_EXPNS_DT | Line Last Expense Date (Encounter) | 
+| HCPCS_CD | Healthcare Common Procedure Coding System (HCPCS) Code (Encounter) | 
+| HCPCS_1ST_MDFR_CD | HCPCS Initial Modifier Code (Encounter) | 
+| HCPCS_2ND_MDFR_CD | HCPCS Second Modifier Code (Encounter) | 
+| HCPCS_3RD_MDFR_CD | HCPCS Third Modifier Code (Encounter) | 
+| HCPCS_4TH_MDFR_CD | HCPCS Fourth Modifier Code (Encounter) | 
+| LINE_NDC_CD | Line National Drug Code (NDC) (Encounter) | 
+| LINE_LTST_CLM_IND | Line Latest Claim Indicator |

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p388__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 388,
+  "text": "CO or CQ are present. \nSHORT NAME: REV_CNTR_THRPY_RDCTN_AMT \nLONG NAME: REV_CNTR_THRPY_RDCTN_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nX.XX \nCOMMENT: \nApplies to types of bill (TOB)s; 13x, 22x, 23x, 34x, 74x, and 75x. This only appears on outpatient claims. \nThis field is not populated prior to 2021. \nThe TOB is the concatenation of two variables: \nFacility type (CLM_FAC_TYPE_CD) \nService classification type (CLM_SRVC_CLSFCTN_TYPE_CD). \nEffective January 3, 2023, this field will",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

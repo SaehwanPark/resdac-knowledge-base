@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_454",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "of discharge. CHAR 1 The data in this column indicate the type of wheelchair or scooter used by the patient used in wheeling 50 feet with two turns at the time of discharge. 1 = Manual\n2 = Motorized\n378 GG0170S1_WHEEL_150_STRT_CD GG0170S1_WHEEL_150_STRT_CD GG0170S1 Admission Performance Wheelchair 150 Feet Code - The data in this column indicates the patient's ability to wheel at least 150 feet in a corridor or similar space atthe time of admission. CHAR 2 The data in this column indicates the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

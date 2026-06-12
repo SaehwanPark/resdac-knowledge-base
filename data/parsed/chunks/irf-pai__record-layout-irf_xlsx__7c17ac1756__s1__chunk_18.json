@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "for Age, 07 = Retired for Disability\n34 _19 PRE_HOSP_VCTNL_EFRT_CD (19) Pre-Hospital Vocational Effort CHAR 2 The patient's vocational effort prior to hospitalization (if Item 18 - Pre-hospital Vocational Category is coded 1-4). 01 = Full-time, 02 = Part-time, 03 = Adjusted Workload\n35 _20A PRMRY_PMT_SRC_CD (20A) Primary Payment Source CHAR 2 A code indicating the primary source of payment for inpatient rehabilitation services. 01 = Blue Cross, 02 = Medicare non-MCO, 03 = Medicaid non-MCO, 04 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

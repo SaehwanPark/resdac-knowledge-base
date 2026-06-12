@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p220__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 220,
+  "text": "the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis field is only populated if the Medicare-defined Post Threshold Cost Shares do not apply. Plans that \nuse a co-payment amount rather than a coinsurance percentage will not have a value in this field; \nreference instead the corresponding co-payment variable called (POST_OOPT_COPAY_AMT). The \ncatastrophic coverage phase is also referred to as the post-out-of-pocket threshold phase for the Part \nD",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

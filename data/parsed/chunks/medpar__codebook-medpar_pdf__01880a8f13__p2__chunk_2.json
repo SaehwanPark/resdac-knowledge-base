@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p2__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 2,
+  "text": "2021 S. Pietzsch \nAdded 11 new variables: \nLTCH_DPP_ADJSTMT_AMT \nRC_NDC_1_CD–RC NDC_10_CD \nChanged DRG_CD variable length from 3 to 4 bytes \n4.0 \nNovember 2020 K. Schneider \nAdded six new variables: \nCELL_GENE_THRPY_PRCDRS_TOT_AMT \nCELL_THRPY_DRUGS_TOT_AMT \nCLM_MODEL_REIMBRSMT_AMT \nGENE_THRPY_DRUGS_TOT_AMT \nRC_MODEL_REIMBRSMT_AMT \nVAL_CD_QB_OCM_PYMT_ADJSTMT_AMT \n3.0 \nNovember 2019 K. Schneider \nAdded two new variables from 2018 file release \n2.0 \nJuly 2019 \nK. Schneider \nA. Sisco \nCreated",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

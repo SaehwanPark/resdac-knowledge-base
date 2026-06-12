@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "10 The data in this column contains the calculated state Medicaid RUG case mix group code.\n24 C_STATE_RUG_VRSN_TXT C_STATE_RUG_VRSN_TXT Recalculated Z0200B CHAR 10 The data in this column contains the calculated state Medicaid RUG version code.\n25 C_STATE_SET_CD C_STATE_SET_CD CMI Set for Recalculated Z0200A CHAR 3 The data in this column contains the calculated state Medicaid RUG Set Code.\n26 C_STATE_CMI_TXT C_STATE_CMI_TXT CMI Value for Recalculated Z0200A CHAR 7 The data in this column",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

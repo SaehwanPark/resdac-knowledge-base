@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Reference Year CHAR 4\nBENE_STATE_CD Beneficiary State CHAR 2\nBENE_ZIP_CD Beneficiary ZIP Code CHAR 5\nBENE_BIRTH_DT Beneficiary Birth Date DATE 8\nBENE_AGE_NUM Beneficiary Age at Screening NUM 3\nBENE_SEX_CD Beneficiary Sex CHAR 1\nBENE_RACE_ETHNCTY_CD Beneficiary Race and Ethnicity CHAR 1\nBENE_PREFRD_LANG_TXT Beneficiary Preferred Language CHAR 15\nBENE_EDCTN_CD Beneficiary Education CHAR 1\nBENE_INCM_RNG_CD Beneficiary Income CHAR 1\nBENE_INSRNC_TYPE_CD Beneficiary Payer Type CHAR 1\nAHC_BRDG_ORG_ID",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-beneficiary__record-layout-cmds_xlsx__db71320620__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/db713206205b9bc4a36a311a78fdfb65414c59e1.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nCMMI Data Sharing (CMDS) — Provider File\nVersion — April 2025\nSAS name Label Type Length Format Values\nMODEL_ID Model Identifier CHAR 2 refer to Model ID tab\nENTITY_ID Entity Identifier CHAR 10\nPRVDR_TIN Taxpayer Identification Number of Provider CHAR 9\nPRVDR_NPI National Provider Identifier of Provider CHAR 10\nPRVDR_CCN CMS Certification Number of Provider CHAR 6\nSTART_DATE Provider Start Date DATE 8 CCYYMMDD\nEND_DATE Provider End Date",
+  "dataset": "cmds-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cmds.xlsx"
+}

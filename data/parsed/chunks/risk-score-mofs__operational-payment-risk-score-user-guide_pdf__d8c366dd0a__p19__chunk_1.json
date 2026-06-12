@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p19__chunk_1",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 19,
+  "text": "within the CCW Virtual Research Data Center (VRDC). \nThe CCW team packages files delivered physically in encrypted self-decrypting archives (SDAs). The encryption \ntechnique for files extracted from the CCW uses Pretty Good Privacy Command Line 9.0 with the SDA method. This \nmethod builds a compressed, encrypted, password protected file using a FIPS 140-1/140-2 approved AES256 cipher \nalgorithm. The CCW team builds the SDA on the CCW production server, downloads it to a desktop PC, and burns it",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p186__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 186,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n170 \nPHRMCY_IND_CD \nLABEL: \nPharmacy Indicator Code \nDESCRIPTION: The code indicating whether the beneficiary received drugs during the stay. It also specifies the type of \ndrugs. \nSHORT NAME: PHRMCYCD \nLONG NAME: PHRMCY_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedPAR (derived) \nVALUES: \n0 = No drugs (revenue code other than those listed below) \n1 = General drugs and/pr IV therapy (revenue code",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

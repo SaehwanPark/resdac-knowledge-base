@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_254",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "situation (e.g., assisted living), regular\nnighttime assistance available.\n14 = Patient lives in congregate situation (e.g., assisted living), occasional \nshort-term assistance available. 15=Patient lives in congregate situation (e.g., assisted living), no assistance available. CHAR 2 x x x x x x\nM1200_VISION M1200 (M0390) Vision This field indicates the patient's vision status. 00 = Normal vision; sees adequately in most situations; can see medication labels, newsprint.\n01 = Partially",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

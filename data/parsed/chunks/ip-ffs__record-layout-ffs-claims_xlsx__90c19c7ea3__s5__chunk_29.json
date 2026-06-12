@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_29",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "CHAR 1 153\nACO_ID_NUM ACO_ID_NUM Claim Accountable Care Organization (ACO) Identification Number CHAR 10 154\nCLM_BENE_ID_TYPE_CD CLM_BENE_ID_TYPE_CD Claim Beneficiary Identifier Type Code (For CMS Internal Use) CHAR 1 155\nCLM_RSDL_PYMT_IND_CD CLM_RSDL_PYMT_IND_CD Claim Residual Payment Indicator Code CHAR 1 156 New2\nPRVDR_VLDTN_TYPE_CD PRVDR_VLDTN_TYPE_CD Provider Validation Type Code CHAR 2 157 New2\nRR_BRD_EXCLSN_IND_SW RR_BRD_EXCLSN_IND_SW Railroad Board Exclusion Indicator Switch CHAR 1 158",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

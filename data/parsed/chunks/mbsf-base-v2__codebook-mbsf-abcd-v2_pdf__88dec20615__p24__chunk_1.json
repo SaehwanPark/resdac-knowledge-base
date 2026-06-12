@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p24__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 24,
+  "text": "qualifies under another person’s \naccount (for example, as a spouse or child), the code identifies the type of relationship between the \nindividual and primary beneficiary. \nLONG NAME: CRNT_BIC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n10 = Railroad Retirement Board (RRB) \nRetirement employee or annuitant \n11 = RRB Survivor joint annuitant \nreduced benefits taken to ensure \nbenefits for surviving spouse \n13 = RRB Child of RR annuitant or \nWidow of",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

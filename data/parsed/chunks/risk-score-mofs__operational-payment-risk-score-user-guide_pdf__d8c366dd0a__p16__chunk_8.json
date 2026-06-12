@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_8",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "The CMS-HCC diagnostic classification system begins by classifying all ICD-10-CM diagnosis codes into diagnostic \ngroups. A diagnostic group represents a well-specified medical condition or set of conditions. CMS further aggregated \nthe diagnostic groupings into Condition Categories (CCs). CCs describe a broader set of similar diseases. Although they \nare not as homogeneous as the diagnostic groupings, diseases within a CC are related clinically and with respect to \ncost. An example is the CCs",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

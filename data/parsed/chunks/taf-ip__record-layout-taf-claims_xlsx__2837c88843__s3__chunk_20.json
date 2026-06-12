@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_20",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "DATE 8 11\nLINE_CLAIM_STUS_CD Claim Line Status Code CHAR 3 12\nLINE_ADJUST_CD Claim Line Adjustment Code CHAR 1 13\nLINE_ADJUST_RSN_CD Claim Line Adjustment Reason Code CHAR 3 14\nLINE_SRVC_BGN_DT Claim Line Beginning Date of Service DATE 8 15\nLINE_SRVC_END_DT Claim Line Ending Date of Service DATE 8 16\nBNFT_TYPE_CD Benefit Type Code CHAR 3 17\nTOS_CD Type of Service Code CHAR 3 18\nXIX_SRVC_CTGRY_CD CMS-64 Form Category of Service for the Paid Claim CHAR 4 19\nXXI_SRVC_CTGRY_CD CMS-21 Form Category",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

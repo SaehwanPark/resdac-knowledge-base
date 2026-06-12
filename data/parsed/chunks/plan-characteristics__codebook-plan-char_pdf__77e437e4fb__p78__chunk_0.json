@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p78__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 78,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n64 \nFIDE_SNP \nLABEL: \nFully Integrated Dual Eligible (FIDE) SNP \nDESCRIPTION: Indicates if a Dual Eligible Special Needs plan (D-SNP) is a Fully Integrated Dual Eligible (FIDE) SNP. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes \nN = No \n9 = Not Applicable \nCOMMENT: \nThis field is retired in 2023 and no longer appears in the plan base file. The CCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

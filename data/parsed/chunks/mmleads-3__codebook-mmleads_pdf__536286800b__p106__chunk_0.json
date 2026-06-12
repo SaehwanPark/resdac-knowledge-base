@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p106__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 106,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n95 \nMDCR_NF_MOS \nLABEL: \nMedicare — Nursing Facility months (from MDS) \nDESCRIPTION: This variable is the total count of months during the year where the beneficiary was in a nursing \nfacility (NF), according to the Minimum Data Set (MDS) assessment. A hierarchical algorithm is used, \nso that NF is only counted for the month if there is not a Medicare long-term care hospital or skilled \nnursing facility claim. \nTYPE: \nNUM",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

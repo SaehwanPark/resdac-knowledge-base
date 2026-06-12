@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_55",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "95 107 149 — —\nIPU_NMRTR_IP_MDCL_DAYS_CNT Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Medical Days NUM 3 96 108 150 — —\nIPU_NMRTR_IP_SRGRY_DSCHRG_CNT Inpatient Utilization Hospital-Acute Care (IPU) Nmrtr: Surgery Discharges Count NUM 3 97 109 151 — —\nIPU_NMRTR_IP_SRGRY_DAYS_CNT Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Surgery Days NUM 3 98 110 152 — —\nIPU_NMRTR_IP_MATRNTY_DSCHRG_CNT Inpatient Utilization Hospital-Acute Care (IPU) Nmrtr: Maternity Discharges Cnt",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

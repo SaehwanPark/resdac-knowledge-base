@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_116",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Staff CHAR 1 Psychosocial well-being: unsettled relationships - covert/open conflict with staff. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n195 F2B F2B_CONFLCT_RMMATE (F2B) Unhappy With Roommate CHAR 1 Psychosocial well-being: unsettled relationships - unhappy with roommate. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n196 F2C F2C_CONFLT_OTH_RES (F2C) Unhappy With Residents Other Than Roommate CHAR 1 Psychosocial well-being: unsettled relationships - unhappy with other residents. 0 = No, 1 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,353 @@
+| 1 | SUBMTG_STATE_PRVDR_ID | Submitting State Provider Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 2 | PRVDR_LGL_NAME | Provider Legal Name | 
+        
+          
+                  
+                                                                                                                                        | 3 | STATE_CD | Submitting State Alpha Abbreviation | 
+        
+          
+                  
+                                                                                                                                        | 4 | SUBMTG_STATE_CD | Submitting State FIPS Code | 
+        
+          
+                  
+                                                                                                                                        | 5 | CMS_RGN | CMS Region for Submitting State | 
+        
+          
+                  
+                                                                                                                                        | 6 | PRVDR_ENT_TYPE_CD | Provider Entity Type Code — individual, group or facility | 
+        
+          
+                  
+                                                                                                                                        | 7 | PRVDR_TAX_NAME | Provider Tax (IRS) Name | 
+        
+          
+                  
+                                                                                                                                        | 8 | PRVDR_ORG_NAME | Provider Organization Name | 
+        
+          
+                  
+                                                                                                                                        | 9 | PRVDR_DBA_NAME | Provider Doing Business as (DBA) Name | 
+        
+          
+                  
+                                                                                                                                        | 10 | PRVDR_NPI_1 | Provider NPI — First Occurrence | 
+        
+          
+                  
+                                                                                                                                        | 11 | PRVDR_NPI_2 | Provider NPI — Second Occurrence | 
+        
+          
+                  
+                                                                                                                                        | 12 | PRVDR_NPI_CNT | Provider NPI Count | 
+        
+          
+                  
+                                                                                                                                        | 13 | SUBMTG_STATE_PRVDR_IND_01 | Submitting State Provider Identifier Indicator — January | 
+        
+          
+                  
+                                                                                                                                        | 14 | SUBMTG_STATE_PRVDR_IND_02 | Submitting State Provider Identifier Indicator — February | 
+        
+          
+                  
+                                                                                                                                        | 15 | SUBMTG_STATE_PRVDR_IND_03 | Submitting State Provider Identifier Indicator — March | 
+        
+          
+                  
+                                                                                                                                        | 16 | SUBMTG_STATE_PRVDR_IND_04 | Submitting State Provider Identifier Indicator — April | 
+        
+          
+                  
+                                                                                                                                        | 17 | SUBMTG_STATE_PRVDR_IND_05 | Submitting State Provider Identifier Indicator — May | 
+        
+          
+                  
+                                                                                                                                        | 18 | SUBMTG_STATE_PRVDR_IND_06 | Submitting State Provider Identifier Indicator — June | 
+        
+          
+                  
+                                                                                                                                        | 19 | SUBMTG_STATE_PRVDR_IND_07 | Submitting State Provider Identifier Indicator — July | 
+        
+          
+                  
+                                                                                                                                        | 20 | SUBMTG_STATE_PRVDR_IND_08 | Submitting State Provider Identifier Indicator — August | 
+        
+          
+                  
+                                                                                                                                        | 21 | SUBMTG_STATE_PRVDR_IND_9 | Submitting State Provider Identifier Indicator — September | 
+        
+          
+                  
+                                                                                                                                        | 22 | SUBMTG_STATE_PRVDR_IND_10 | Submitting State Provider Identifier Indicator — October | 
+        
+          
+                  
+                                                                                                                                        | 23 | SUBMTG_STATE_PRVDR_IND_11 | Submitting State Provider Identifier Indicator — November | 
+        
+          
+                  
+                                                                                                                                        | 24 | SUBMTG_STATE_PRVDR_IND_12 | Submitting State Provider Identifier Indicator — December | 
+        
+          
+                  
+                                                                                                                                        | 25 | PRVDR_LAST_NAME | Provider Last Name — Individual | 
+        
+          
+                  
+                                                                                                                                        | 26 | PRVDR_FIRST_NAME | Provider First Name — Individual | 
+        
+          
+                  
+                                                                                                                                        | 27 | PRVDR_MDL_INITL_NAME | Provider Middle Initial — Individual | 
+        
+          
+                  
+                                                                                                                                        | 28 | PRVDR_SEX_CD | Provider Sex Code | 
+        
+          
+                  
+                                                                                                                                        | 29 | PRVDR_BIRTH_DT | Provider Date of Birth | 
+        
+          
+                  
+                                                                                                                                        | 30 | PRVDR_DEATH_DT | Provider Date of Death | 
+        
+          
+                  
+                                                                                                                                        | 31 | PRVDR_AGE | Provider Age (in Years) | 
+        
+          
+                  
+                                                                                                                                        | 32 | TCHNG_IND | Provider Organization Teaching Facility Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 33 | OWNRSHP_CD | Provider Ownership Code — Latest in Year | 
+        
+          
+                  
+                                                                                                                                        | 34 | OWNRSHP_CTGRY_CD | Provider Ownership Category Code — Latest in Year | 
+        
+          
+                  
+                                                                                                                                        | 35 | PRVDR_PRFT_STUS_CD | Provider Profit Status Code — Latest in Year | 
+        
+          
+                  
+                                                                                                                                        | 36 | ACPTG_NEW_PTNTS_IND | Provider Accepting New Patients Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 37 | PRVDR_MDCD_ENRLMT_IND | Enrolled in Medicaid Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 38 | PRVDR_CHIP_ENRLMT_IND | Enrolled in CHIP Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 39 | NOT_SP_AFLTD_IND | Not Affiliated with State Plan Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 40 | PRVDR_ENRLMT_STUS_ACTV_IND | Medicaid or CHIP Active Enrollment Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 41 | PRVDR_ENRLMT_STUS_DND_IND | Medicaid or CHIP Enrollment Denied Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 42 | PRVDR_ENRLMT_STUS_TRMNTD_IND | Medicaid or CHIP Enrollment Terminated Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 43 | PRVDR_ENRLMT_STUS_PENDG_IND | Medicaid or CHIP Enrollment Status Pending Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 44 | MLT_SNGL_SPCLTY_GRP_TXNMY_IND | Multi- or Single-Specialty Group Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 45 | ALPTHC_OSTPTHC_PHYSN_TXNMY_IND | Allopathic or Osteopathic Physician Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 46 | BHVRL_HLTH_SCL_SRVC_TXNMY_IND | Behavioral Health-Social Service Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 47 | CHRPRCTIC_TXNMY_IND | Chiropractic Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 48 | DNTL_TXNMY_IND | Dental Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 49 | DTRY_NTRTNL_SRVC_TXNMY_IND | Dietary or Nutritional Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 50 | EMER_MDCL_SRVC_TXNMY_IND | Emergency Medical Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 51 | EYE_VSN_SRVC_TXNMY_IND | Eye or Vision Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 52 | NRSNG_SRVC_TXNMY_IND | Nursing Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 53 | RLTD_NRSNG_SRVC_TXNMY_IND | Related Nursing Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 54 | OTHR_INDVDL_SRVC_TXNMY_IND | Other Individual Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 55 | PHRMCY_SRVC_TXNMY_IND | Pharmacy Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 56 | PA_APN_TXNMY_IND | Physician Assistant or Advanced Practice Nursing Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 57 | PDTRY_TXNMY_IND | Podiatry Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 58 | RT_DEVMTL_REHAB_RSTRTV_TXNMY_IND | Respiratory, Development, Rehabilitate, or Restorative Services Taxonomy Indicator — Ever in Year | 
+        
+          
+                  
+                                                                                                                                        | 59 | SPCH_LANG_HEARG_TXNMY_IND | Speech, Language or Hearing Services Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 60 | STDNT_HLTH_CARE_PRVDR_TXNMY_IND | Student Health Care Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 61 | RDLGY_OTHR_TCHNCL_SRVC_TXNMY_IND | Radiologic and Other Technical Services Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 62 | AGNCY_PRVDR_TXNMY_IND | Agency Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 63 | AMBLTRY_CLNC_TXNMY_IND | Ambulatory Health Services Clinic Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 64 | HOSP_UNIT_TXNMY_IND | Hospital Unit Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 65 | HOSP_TXNMY_IND | Hospital Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 66 | LAB_TXNMY_IND | Laboratory Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 67 | MCO_TXNMY_IND | Managed Care Organization Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 68 | NRSNG_CSTDL_CARE_PRVDR_TXNMY_IND | Nursing Custodial Care Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 69 | LDGNG_MEALS_PRVDR_TXNMY_IND | Lodging or Meals Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 70 | RSDNTL_TRTMT_FAC_TXNMY_IND | Residential Treatment Facility Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 71 | RESP_CARE_FAC_TXNMY_IND | Respite Care Facility Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 72 | SUPLR_PRVDR_TXNMY_IND | Supplier Provider (DME, Pharmacy, Organs, Etc.) Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 73 | TRNSPRTN_SRVC_TXNMY_IND | Transportation Services Provider Taxonomy Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 74 | SUD_SRVC_PRVDR_CLSFCTN_IND | Substance Use Disorder Service Provider Classification Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 75 | MH_SRVC_PRVDR_CLSFCTN_IND | Mental Health Service Provider Classification Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 76 | EMER_SRVC_PRVDR_CLSFCTN_IND | Emergency Services Provider Classification Indicator — Ever in Calendar Year | 
+        
+          
+                  
+                                                                                                                                        | 77 | SPLMTL_ADDR_LCTN | Annual Provider Record in Supplemental Provider Address Location File | 
+        
+          
+                  
+                                                                                                                                        | 78 | SPLMTL_LCNS_ACRDTN | Annual Provider Record in Supplemental Provider License and Accreditation File | 
+        
+          
+                  
+                                                                                                                                        | 79 | SPLMTL_PRVDR_ID | Annual Provider Record in Supplemental Identifier File | 
+        
+          
+                  
+                                                                                                                                        | 80 | SPLMTL_AFLTD_GRP | Annual Provider Record in Supplemental Affiliated Groups File | 
+        
+          
+                  
+                                                                                                                                        | 81 | SPLMTL_AFLTD_PGM | Annual Provider Record in Supplemental Affiliated Programs File | 
+        
+          
+                  
+                                                                                                                                        | 82 | SPLMTL_TXNMY | Annual Provider Record in Supplemental Taxonomy File | 
+        
+          
+                  
+                                                                                                                                        | 83 | SPLMTL_ENRLMT | Annual Provider Record in Supplemental Enrollment File | 
+        
+          
+                  
+                                                                                                                                        | 84 | SPLMTL_BED_TYPE | Annual Provider Record in Supplemental Bed Type File | 
+        
+          
+                  
+                                                                                                                                        | 85 | CCW_APL_LINK_KEY | CCW Key to Link APL base Record to Related Supplement Records | 
+        
+          
+                  
+                                                                                                                                        | 86 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | 
+        
+          
+                  
+                                                                                                                                        | 87 | PR_VRSN | Provider File Version Representing the Iteration of the File | 
+        
+          
+                  
+                                                                                                                                        | 88 | RFRNC_YR | Reference Year (TAF) | 
+        
+          
+                  
+                                                                                                                                        | 89 | CCW_LD_DT | CCW Load Date |

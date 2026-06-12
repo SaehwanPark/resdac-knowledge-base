@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p35__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 35,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n17 \nBENE_TOT_COINSRNC_DAYS_CNT \nLABEL: \nBeneficiary Total Coinsurance Days Count \nDESCRIPTION: The count of the total number of coinsurance days involved with the beneficiary's stay in a facility. \nDuring each benefit period (calendar year), the beneficiary is responsible for coinsurance for particular \ndays of inpatient care (no coinsurance from day 1 through day 60, then",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

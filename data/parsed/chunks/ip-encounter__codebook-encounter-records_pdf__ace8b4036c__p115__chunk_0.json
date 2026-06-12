@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p115__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 115,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n105 \nREV_CNTR_NDC_QTY_QLFR_CD \nLABEL: \nRevenue Center NDC Quantity Qualifier Code \nDESCRIPTION: The code used to indicate the unit of measurement for the drug that was administered. \nSHORT NAME: REV_CNTR_NDC_QTY_QLFR_CD \nLONG NAME: REV_CNTR_NDC_QTY_QLFR_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP revenue \nSNF revenue \nHH revenue \nOP",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

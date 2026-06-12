@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 1,
+  "text": "Plan Offers Free First Prescription Fill CHAR 1 X X X\nPRE_ICL_APPLY How Part D Pre-ICL Cost-Sharing is Applied in the Part D Plan CHAR 1 X X X\nICL_APPLY How Part D Initial Coverage Limit (ICL) is Applied in the Part D Plan CHAR 1 X X X\nICL_AMT Part D Plan Initial Coverage Limit (ICL) Amount NUM 12 X X X\nPOST_OOPT_APPLY How Post Out-of-Pocket (OOP) Threshold Cost-Sharing is Applied in the Part D Plan CHAR 1 X X X\nOOPT_AMT Out-of-Pocket (OOP) Threshold Amount in the Part D Plan NUM 12 X X",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_36",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Medicaid\n1 - Aged\n2 - Blind/disabled\n4 - Child\n5 - Adult\n6 - Child of unemployed adult\n7 - Unemployed Adult\n8 - Foster care child\nA - Covered under Breast and Cervical Cancer Prevention Act\n9 - Unknown\nNull/Missing = No Medicaid coverage during the month\nE_MAS Annual Medicaid Maintenance Assisstance Status - last enrolled month 0 - Not Eligible\n1 - Cash\n2 - Medically Needy\n3 - Poverty\n4 - Other\n5 - Section 1115 waiver\n9 - Unknown\nNull/missing = no Medicaid coverage during the month\nE_BOE Annual",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

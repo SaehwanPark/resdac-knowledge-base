@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__chunk_1",
+  "source_document": "data/raw/html/dataset_page/11d9a872883bc4d19e66239ef8f263fcc5ea67b5.html",
+  "page": null,
+  "text": "Tier ID\n- Step Therapy Indicator\n- Quantity Limit\n- Prior authorization\n- Linking variables to the PDE file record:- Formulary Identification Number (in each sub-file)\n\nWhy do researchers request this file?\n- To examine differences in utilization based on formulary inclusion or restrictions\n- To examine plan differences in formularies\nSpecial considerations\n- Linking variables provide information for each Part D Drug Event (PDE) record.\n- The Tier ID available in this file may be linked to the",
+  "dataset": "part-d-formulary",
+  "url": "https://resdac.org/cms-data/files/part-d-formulary?page=1"
+}

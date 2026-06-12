@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p84__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 84,
+  "text": "than 70,000 unique \ndiagnosis codes compared to approximately 14,000 ICD-9 codes, which allows for more detail \nsurrounding diagnoses. \nThe diagnosis version code applies to all diagnoses on the claim (i.e., diagnoses appear in variables \nICD_DGNS_CDX). \nThis field is not present in the institutional claims (inpatient, skilled nursing, home health) since the \ncutover occurred exactly on October 1, 2015. Although this cutover date applies to carrier/DME claims, \nthere are some instances where a",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

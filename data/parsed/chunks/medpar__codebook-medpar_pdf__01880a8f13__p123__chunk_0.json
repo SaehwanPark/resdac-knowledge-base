@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p123__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 123,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n107 \nICU_IND_CD \nLABEL: \nIntensive Care Unit (ICU) Indicator Code \nDESCRIPTION: The code indicating that the beneficiary has spent time in the intensive care unit (ICU) during the stay. It \nalso specifies the type of ICU. \nSHORT NAME: ICUINDCD \nLONG NAME: ICU_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedPAR (derived) \nVALUES: \n0 = General (revenue center 0200) \n1 = Surgical (revenue center 0201) \n2",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

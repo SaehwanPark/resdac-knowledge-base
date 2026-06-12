@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_140",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "E0600C_BHVR_DSRUPT_ENVRMNT_CD E0600C Behavior Impact on Others: Disrupt Care or Living Environment CHAR 1 The data in this column indicates if the whether the resident's symptoms significantly disrupt the care or living environment. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n173 E0800_RJCT_EVALTN_CD E0800_RJCT_EVALTN_CD E0800 Rejection of Care: Presence and Frequency CHAR 1 The data in this column indicates the frequency that the resident rejected evaluation or care that is",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p288__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 288,
+  "text": "Annual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = No \n1 = Yes \nNull/missing = source value is missing or unknown \nCOMMENT: \nThere will be a record for a beneficiary in this supplemental file if the beneficiary was covered under \nany type of waiver in any month in the calendar year. Specifically, this value is set to 1 if there is a non-\nmissing value for any of the monthly waiver ID variables (WVR_ID_##_01–WVR_ID_##_12) or monthly \nwaiver type",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p247__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 247,
+  "text": "most recent in the calendar year. \nSHORT NAME: MFP_RINSTLZD_RSN_CD \nLONG NAME: MFP_RINSTLZD_RSN_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nMoney Follows the Person \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n00 = Default- No MFP Participation \n01 = Acute care hospitalization followed by long-term rehabilitation \n02 = Deterioration in cognitive functioning \n03 = Deterioration in health \n04 = Deterioration in mental health \n05 = Loss of housing \n06 = Loss of personal care giver",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

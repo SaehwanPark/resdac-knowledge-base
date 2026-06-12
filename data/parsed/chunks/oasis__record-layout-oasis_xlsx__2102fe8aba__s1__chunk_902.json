@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_902",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "1 x\nK0520B1_FEED_TUBE_ADMSN_CD Nutritional Approaches (Admission): Feeding tube Indicates whether, on admission, the patient's nutritional approach included a feeding tube. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nK0520B4_FEED_TUBE_7_DAY_CD Nutritional Approaches (7 days): Feeding tube Indicates whether, in the past seven days, the patient's nutritional approach included a feeding tube. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nK0520B5_FEED_TUBE_DSCHRG_CD Nutritional",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

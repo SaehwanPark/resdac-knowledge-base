@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p78__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 78,
+  "text": "the low-income cost sharing subsidy amount (LICS_AMT) during the year. \nSHORT NAME: — \nLONG NAME: PTD_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis variable does not include all costs to Medicare for the Part D benefit; it does not include non-\ncovered drugs (PDE variable called NCVRD_PLAN_PD_AMT) also does not consider include any \napplicable rebate amounts or other discounts). \nPlans may choose to provide enhanced benefits that pay for some non-covered",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

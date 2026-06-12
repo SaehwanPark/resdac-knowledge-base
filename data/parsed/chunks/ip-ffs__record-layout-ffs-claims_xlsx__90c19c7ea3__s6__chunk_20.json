@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_20",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Coding System (HCPCS) Code CHAR 5 23\nMDFR_CD1 HCPCS_1ST_MDFR_CD HCPCS Initial Modifier Code CHAR 5 24\nMDFR_CD2 HCPCS_2ND_MDFR_CD HCPCS Second Modifier Code CHAR 5 25\nBETOS BETOS_CD Line Berenson-Eggers Type of Service (BETOS) Code CHAR 3 26\nLINEPMT LINE_NCH_PMT_AMT Line NCH Medicare Payment Amount NUM 12 27\nLBENPMT LINE_BENE_PMT_AMT Line Payment Amount to Beneficiary NUM 12 28\nLPRVPMT LINE_PRVDR_PMT_AMT Line Provider Payment Amount NUM 12 29\nLDEDAMT LINE_BENE_PTB_DDCTBL_AMT Line Beneficiary",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

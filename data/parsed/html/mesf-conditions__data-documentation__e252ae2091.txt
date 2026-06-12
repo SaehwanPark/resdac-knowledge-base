@@ -1,0 +1,913 @@
+| 1 | BENE_ID | Encrypted 723 Beneficiary ID (Unique Key) | 
+        
+          
+                  
+                                                                                                                                        | 2 | STATE_CD | State Code (MESF) | 
+        
+          
+                  
+                                                                                                                                        | 3 | MSIS_ID | Encrypted MSIS Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 4 | DM_SOURCE | Dual or Medicaid only enrollee | 
+        
+          
+                  
+                                                                                                                                        | 5 | ACP_COMBINED | ADHD and Other Conduct Disorders Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 6 | ACP_MEDICAID | ADHD and Other Conduct Disorders Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 7 | ACP_MEDICARE | ADHD and Other Conduct Disorders Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 8 | AFIB_COMBINED | Atrial Fibrillation Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 9 | AFIB_MEDICAID | Atrial Fibrillation Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 10 | AFIB_MEDICARE | Atrial Fibrillation Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 11 | ALCO_COMBINED | Alcohol Use Disorder - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 12 | ALCO_MEDICAID | Alcohol Use Disorder - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 13 | ALCO_MEDICARE | Alcohol Use Disorder - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 14 | ALZ_COMBINED | Alzheimer's Disease Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 15 | ALZ_MEDICAID | Alzheimer's Disease Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 16 | ALZ_MEDICARE | Alzheimer's Disease Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 17 | ALZRDSD_COMBINED | Alzheimer's or related dementia Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 18 | ALZRDSD_MEDICAID | Alzheimer's Disease Related Disorders or Senile Dementia Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 19 | ALZRDSD_MEDICARE | Alzheimer's Disease Related Disorders or Senile Dementia Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 20 | AMI_COMBINED | Acute Myocardial Infarction Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 21 | AMI_MEDICAID | Acute Myocardial Infarction Indicator - Medicaid-Only | 
+        
+          
+                  
+                                                                                                                                        | 22 | AMI_MEDICARE | Acute Myocardial Infarction Indicator - Medicare-Only | 
+        
+          
+                  
+                                                                                                                                        | 23 | ANEMIA_COMBINED | Anemia Indicator -Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 24 | ANEMIA_MEDICAID | Anemia Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 25 | ANEMIA_MEDICARE | Anemia Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 26 | ANXI_COMBINED | Anxiety Disorders Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 27 | ANXI_MEDICAID | Anxiety Disorders Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 28 | ANXI_MEDICARE | Anxiety Disorders Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 29 | ASTHMA_COMBINED | Asthma Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 30 | ASTHMA_MEDICAID | Asthma Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 31 | ASTHMA_MEDICARE | Asthma Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 32 | AUTISM_COMBINED | Autism Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 33 | AUTISM_MEDICAID | Autism Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 34 | AUTISM_MEDICARE | Autism Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 35 | BIPL_COMBINED | Bipolar Disorder Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 36 | BIPL_MEDICAID | Bipolar Disorder Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 37 | BIPL_MEDICARE | Bipolar Disorder Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 38 | BRAINJ_COMBINED | Brain Injury Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 39 | BRAINJ_MEDICAID | Brain Injury Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 40 | BRAINJ_MEDICARE | Brain Injury Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 41 | BRC_COMBINED | Breast Cancer Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 42 | BRC_MEDICAID | Breast Cancer Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 43 | BRC_MEDICARE | Breast Cancer Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 44 | CAT_COMBINED | Cataract Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 45 | CAT_MEDICAID | Cataract Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 46 | CAT_MEDICARE | Cataract Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 47 | CERPAL_COMBINED | Cerebral Palsy Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 48 | CERPAL_MEDICAID | Cerebral Palsy Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 49 | CERPAL_MEDICARE | Cerebral Palsy Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 50 | CHF_COMBINED | Heart Failure Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 51 | CHF_MEDICAID | Heart Failure Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 52 | CHF_MEDICARE | Heart Failure Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 53 | CKD_COMBINED | Chronic Kidney Disease Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 54 | CKD_MEDICAID | Chronic Kidney Disease Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 55 | CKD_MEDICARE | Chronic Kidney Disease Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 56 | COPD_COMBINED | Chronic Obstructive Pulmonary Disease Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 57 | COPD_MEDICAID | Chronic Obstructive Pulmonary Disease Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 58 | COPD_MEDICARE | Chronic Obstructive Pulmonary Disease Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 59 | CRC_COMBINED | Colorectal Cancer Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 60 | CRC_MEDICAID | Colorectal Cancer Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 61 | CRC_MEDICARE | Colorectal Cancer Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 62 | CYSFIB_COMBINED | Cystic Fibrosis Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 63 | CYSFIB_MEDICAID | Cystic Fibrosis Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 64 | CYSFIB_MEDICARE | Cystic Fibrosis Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 65 | DEPR_COMBINED | Depression Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 66 | DEPR_MEDICAID | Depression Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 67 | DEPR_MEDICARE | Depression Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 68 | DEPSN_COMBINED | TO10 Depression Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 69 | DEPSN_MEDICAID | TO10 Depression Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 70 | DEPSN_MEDICARE | TO10 Depression Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 71 | DIAB_COMBINED | Diabetes Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 72 | DIAB_MEDICAID | Diabetes Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 73 | DIAB_MEDICARE | Diabetes Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 74 | DRUG_COMBINED | Drug Use Disorder Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 75 | DRUG_MEDICAID | Drug Use Disorder - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 76 | DRUG_MEDICARE | Drug Use Disorder Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 77 | ENDC_COMBINED | Endometrial Cancer Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 78 | ENDC_MEDICAID | Endometrial Cancer Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 79 | ENDC_MEDICARE | Endometrial Cancer Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 80 | EPLILEP_COMBINED | Epilepsy Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 81 | EPLILEP_MEDICAID | Epilepsy Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 82 | EPLILEP_MEDICARE | Epilepsy Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 83 | FIBRO_COMBINED | Chronic Pain, Fatigue, and Fibromyalgia - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 84 | FIBRO_MEDICAID | Chronic Pain, Fatigue, and Fibromyalgia - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 85 | FIBRO_MEDICARE | Chronic Pain, Fatigue, and Fibromyalgia - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 86 | GLCM_COMBINED | Glaucoma Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 87 | GLCM_MEDICAID | Glaucoma Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 88 | GLCM_MEDICARE | Glaucoma Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 89 | HEARIM_COMBINED | Hearing Impaired Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 90 | HEARIM_MEDICAID | Hearing Impaired Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 91 | HEARIM_MEDICARE | Hearing Impaired Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 92 | HEPA_COMBINED | Hepatitis A - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 93 | HEPA_MEDICAID | Hepatitis A - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 94 | HEPA_MEDICARE | Hepatitis A - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 95 | HEPB_ACT_COMBINED | Hepatitis B (Acute or Unspecified) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 96 | HEPB_ACT_MEDICAID | Hepatitis B (Acute or Unspecified) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 97 | HEPB_ACT_MEDICARE | Hepatitis B (Acute or Unspecified) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 98 | HEPB_CHR_COMBINED | Hepatitis B (Chronic) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 99 | HEPB_CHR_MEDICAID | Hepatitis B (Chronic) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 100 | HEPB_CHR_MEDICARE | Hepatitis B (Chronic) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 101 | HEPC_ACT_COMBINED | Hepatitis C (Acute) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 102 | HEPC_ACT_MEDICAID | Hepatitis C (Acute) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 103 | HEPC_ACT_MEDICARE | Hepatitis C (Acute) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 104 | HEPC_CHR_COMBINED | Hepatitis C (Chronic) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 105 | HEPC_CHR_MEDICAID | Hepatitis C (Chronic) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 106 | HEPC_CHR_MEDICARE | Hepatitis C (Chronic) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 107 | HEPC_UNS_COMBINED | Hepatitis C (Unspecified) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 108 | HEPC_UNS_MEDICAID | Hepatitis C (Unspecified) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 109 | HEPC_UNS_MEDICARE | Hepatitis C (Unspecified) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 110 | HEPD_COMBINED | Hepatitis D - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 111 | HEPD_MEDICAID | Hepatitis D - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 112 | HEPD_MEDICARE | Hepatitis D - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 113 | HEPE_COMBINED | Hepatitis E - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 114 | HEPE_MEDICAID | Hepatitis E - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 115 | HEPE_MEDICARE | Hepatitis E - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 116 | HEPVIRAL_COMBINED | Viral Hepatitis (General) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 117 | HEPVIRAL_MEDICAID | Viral Hepatitis (General) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 118 | HEPVIRAL_MEDICARE | Viral Hepatitis (General) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 119 | HFRAC_COMBINED | Hip / Pelvic Fracture Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 120 | HFRAC_MEDICAD | Hip / Pelvic Fracture Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 121 | HFRAC_MEDICARE | Hip / Pelvic Fracture Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 122 | HIVAIDS_COMBINED | (HIV/AIDS) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 123 | HIVAIDS_MEDICAID | (HIV/AIDS) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 124 | HIVAIDS_MEDICARE | (HIV/AIDS) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 125 | HYPLIP_COMBINED | Hyperlipidemia Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 126 | HYPLIP_MEDICAID | Hyperlipidemia Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 127 | HYPLIP_MEDICARE | Hyperlipidemia Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 128 | HYPPLA_COMBINED | Benign Prostatic Hyperplasia Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 129 | HYPPLA_MEDICAID | Benign Prostatic Hyperplasia Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 130 | HYPPLA_MEDICARE | Benign Prostatic Hyperplasia Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 131 | HYPTEN_COMBINED | Hypertension Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 132 | HYPTEN_MEDICAID | Hypertension Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 133 | HYPTEN_MEDICARE | Hypertension Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 134 | HYPTHY_COMBINED | Acquired Hypothyroidism Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 135 | HYPTHY_MEDICAID | Acquired Hypothyroidism Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 136 | HYPTHY_MEDICARE | Acquired Hypothyroidism Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 137 | IHD_COMBINED | Ischemic Heart Disease Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 138 | IHD_MEDICAID | Ischemic Heart Disease Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 139 | IHD_MEDICARE | Ischemic Heart Disease Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 140 | INTDIS_COMBINED | Intellectual Disabilities Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 141 | INTDIS_MEDICAID | Intellectual Disabilities Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 142 | INTDIS_MEDICARE | Intellectual Disabilities Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 143 | LEADIS_COMBINED | Learning Disabilities Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 144 | LEADIS_MEDICAID | Learning Disabilities Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 145 | LEADIS_MEDICARE | Learning Disabilities Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 146 | LEUKLYMPH_COMBINED | Leukemias and Lymphomas - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 147 | LEUKLYMPH_MEDICAID | Leukemias and Lymphomas - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 148 | LEUKLYMPH_MEDICARE | Leukemias and Lymphomas - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 149 | LIVER_COMBINED | Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis) - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 150 | LIVER_MEDICAID | Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis) - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 151 | LIVER_MEDICARE | Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis) - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 152 | LNGC_COMBINED | Lung Cancer Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 153 | LNGC_MEDICAID | Lung Cancer Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 154 | LNGC_MEDICARE | Lung Cancer Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 155 | MIGRAINE_COMBINED | Migraine and other Chronic Headache - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 156 | MIGRAINE_MEDICAID | Migraine and other Chronic Headache - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 157 | MIGRAINE_MEDICARE | Migraine and other Chronic Headache - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 158 | MOBIMP_COMBINED | Mobility Impairments Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 159 | MOBIMP_MEDICAID | Mobility Impairments Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 160 | MOBIMP_MEDICARE | Mobility Impairments Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 161 | MULSCL_COMBINED | Multiple Sclerosis and Transverse Myelitis Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 162 | MULSCL_MEDICAID | Multiple Sclerosis and Transverse Myelitis Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 163 | MULSCL_MEDICARE | Multiple Sclerosis and Transverse Myelitis Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 164 | MUSDYS_COMBINED | Muscular Dystrophy Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 165 | MUSDYS_MEDICAID | Muscular Dystrophy Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 166 | MUSDYS_MEDICARE | Muscular Dystrophy Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 167 | OBESITY_COMBINED | Obesity - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 168 | OBESITY_MEDICAID | Obesity - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 169 | OBESITY_MEDICARE | Obesity - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 170 | OST_COMBINED | Osteoporosis Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 171 | OST_MEDICAID | Osteoporosis Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 172 | OST_MEDICARE | Osteoporosis Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 173 | OTHDEL_COMBINED | Other Developmental Delays Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 174 | OTHDEL_MEDICAID | Other Developmental Delays Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 175 | OTHDEL_MEDICARE | Other Developmental Delays Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 176 | OUD_ANY_COMBINED | Overarching OUD Disorder (Any of the 3 Sub-Indicators) - Combined Claims | 
+        
+          
+                  
+                                                                                                                                        | 177 | OUD_ANY_MEDICAID | Overarching OUD Disorder (Any of the 3 Sub-Indctrs) - Mdcd-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 178 | OUD_ANY_MEDICARE | Overarching OUD Disorder (Any of the 3 Sub-Indctrs) - Mdcr-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 179 | OUD_DX_COMBINED | Diagnosis and Procedure Basis for OUD - Combined Claims | 
+        
+          
+                  
+                                                                                                                                        | 180 | OUD_DX_MEDICAID | Diagnosis and Procedure Basis for OUD - Medicaid-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 181 | OUD_DX_MEDICARE | Diagnosis and Procedure Basis for OUD - Medicare-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 182 | OUD_HOSP_COMBINED | Opioid-Related Hospitalization or Emergency Department - Combined Claims | 
+        
+          
+                  
+                                                                                                                                        | 183 | OUD_HOSP_MEDICAID | Opioid-Related Hospitalization or Emergency Department - Medicaid-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 184 | OUD_HOSP_MEDICARE | Opioid-Related Hospitalization or Emergency Department - Medicare-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 185 | OUD_MAT_COMBINED | Use of Medication-Assisted Treatment (MAT) - Combined Claims | 
+        
+          
+                  
+                                                                                                                                        | 186 | OUD_MAT_MEDICAID | Use of Medication-Assisted Treatment (MAT) - Medicaid-Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 187 | OUD_MAT_MEDICARE | Use of Medication-Assisted Treatment (MAT) - Medicare-Only Claims (MESF) | 
+        
+          
+                  
+                                                                                                                                        | 188 | PRC_COMBINED | Prostate Cancer Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 189 | PRC_MEDICAID | Prostate Cancer Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 190 | PRC_MEDICARE | Prostate Cancer Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 191 | PSDS_COMBINED | Personality Disorders Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 192 | PSDS_MEDICAID | Personality Disorders Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 193 | PSDS_MEDICARE | Personality Disorders Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 194 | PTRA_COMBINED | PTSD Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 195 | PTRA_MEDICAID | PTSD Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 196 | PTRA_MEDICARE | PTSD Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 197 | PVD_COMBINED | Peripheral Vascular Disease - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 198 | PVD_MEDICAID | Peripheral Vascular Disease - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 199 | PVD_MEDICARE | Peripheral Vascular Disease - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 200 | RAOA_COMBINED | Rheumatoid - Osteo Arthritis Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 201 | RAOA_MEDICAID | Rheumatoid - Osteo Arthritis Indicator - Medicaid-Only | 
+        
+          
+                  
+                                                                                                                                        | 202 | RAOA_MEDICARE | Rheumatoid - Osteo Arthritis Indicator - Medicare-Only | 
+        
+          
+                  
+                                                                                                                                        | 203 | SCD_COMBINED | Sickle Cell Disease Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 204 | SCD_MEDICAID | Sickle Cell Disease Indicator- Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 205 | SCD_MEDICARE | Sickle Cell Disease Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 206 | SCHI_COMBINED | Schizophrenia Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 207 | SCHI_MEDICAID | Schizophrenia Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 208 | SCHI_MEDICARE | Schizophrenia Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 209 | SCHIOT_COMBINED | Schizophrenia and Other Psychotic Disorders Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 210 | SCHIOT_MEDICAID | Schizophrenia and Other Psychotic Disorders indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 211 | SCHIOT_MEDICARE | Schizophrenia and Other Psychotic Disorders Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 212 | SPIBIF_COMBINED | Spina Bifida and Other Congenital Anomalies Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 213 | SPIBIF_MEDICAID | Spina Bifida and Other Congenital Anomalies Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 214 | SPIBIF_MEDICARE | Spina Bifida and Other Congenital Anomalies Indicator - Medicare Ony Data | 
+        
+          
+                  
+                                                                                                                                        | 215 | SPIINJ_COMBINED | Spinal Cord Injury - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 216 | SPIINJ_MEDICAID | Spinal Cord Injury - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 217 | SPIINJ_MEDICARE | Spinal Cord Injury - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 218 | STRK_COMBINED | Stroke/Transient Ischemic Attack Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 219 | STRK_MEDICAID | Stroke/Transient Ischemic Attack Indicator - Medicaid-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 220 | STRK_MEDICARE | Stroke/Transient Ischemic Attack Indicator - Medicare-Only Data | 
+        
+          
+                  
+                                                                                                                                        | 221 | TOBA_COMBINED | Tobacco Use Disorders Indicator - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 222 | TOBA_MEDICAID | Tobacco Use Disorders Indicator - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 223 | TOBA_MEDICARE | Tobacco Use Disorders Indicator - Medicare Only Data | 
+        
+          
+                  
+                                                                                                                                        | 224 | ULCERS_COMBINED | Pressure Ulcers and Chronic Ulcers - Combined Medicare & Medicaid Claims | 
+        
+          
+                  
+                                                                                                                                        | 225 | ULCERS_MEDICAID | Pressure Ulcers and Chronic Ulcers - Medicaid Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 226 | ULCERS_MEDICARE | Pressure Ulcers and Chronic Ulcers - Medicare Only Claims | 
+        
+          
+                  
+                                                                                                                                        | 227 | VISUAL_COMBINED | Sensory Blindness and Visual Impairment - Combined Data | 
+        
+          
+                  
+                                                                                                                                        | 228 | VISUAL_MEDICAID | Sensory Blindness and Visual Impairment - Medicaid Only Data | 
+        
+          
+                  
+                                                                                                                                        | 229 | VISUAL_MEDICARE | Sensory Blindness and Visual Impairment - Medicare Only Data |

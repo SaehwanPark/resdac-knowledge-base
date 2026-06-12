@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p50__chunk_4",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 50,
+  "text": "each prescriber and \nassigning a CCW_PRSCRBR_ID to represent an individual medical practitioner. This allowed PDE \nrecords that had the same prescriber but used a combination of different identifiers to be assigned the \nsame identifier in the CCW files. \nFrom 2006–2013, the CCW_PRSCRBR_ID enabled linkage to the CCW prescriber characteristics file. For \ncurrent years, the PRSCRBR_ID will link to the prescriber characteristics file. The CCW_PRSCRBR_ID \nwas retired after 2013. \nResearchers who",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "and Medicaid SSA DOD from MAX for others (Medicaid date of death from MAX for non-Medicare for 2006) date - MM/DD/YYYY\nNull/missing = no date of death (did not die during year)\nD_DOB Date of birth. Source is Medicare for all with Medicare coverage, Medicaid DOB for non-Medicare date - MM/DD/YYYY\nD_AGE Age (in years) at the end of the calendar year XXX\nD_SEX Sex of enrollee F - Female\nM - Male\nU - Unknown\nD_DISABILITY_CD Disability Insurance Benefit Entitlement to Medicare Justification code -",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

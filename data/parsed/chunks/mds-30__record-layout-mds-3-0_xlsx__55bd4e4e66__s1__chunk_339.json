@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_339",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Feeding Code CHAR 1 The data in this column indicates whether the resident received nutrition through parenteral/IV feedings. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes) discontinued 9/30/2012\n378 K0500B_FEEDG_TUBE_CD K0500B_FEEDG_TUBE_CD K0500B Nutritional Approaches: Feeding Tube Code CHAR 1 The data in this column indicates whether the resident received nutrition through a feeding tube. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes) discontinued",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

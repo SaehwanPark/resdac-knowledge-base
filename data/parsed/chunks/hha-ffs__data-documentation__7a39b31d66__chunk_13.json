@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hha-ffs__data-documentation__7a39b31d66__chunk_13",
+  "source_document": "data/raw/html/documentation_page/7a39b31d66a1e4c8a9496eb67fda7c56df9bca35.html",
+  "page": null,
+  "text": "| \n\n | 83 | DOB_DT | Date of Birth from Claim | \n\n | 85 | BENE_RACE_CD | Beneficiary Race Code (FFS) | \n\n | 86 | BENE_CNTY_CD | County Code from Claim (SSA) | \n\n | 87 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (FFS) | \n\n | 88 | BENE_MLG_CNTCT_ZIP_CD | Zip Code of Residence from Claim | \n\n | 89 | CLM_MDCL_REC | Claim Medical Record Number (FFS) | \n\n | 90 | CLM_TRTMT_AUTHRZTN_NUM | Claim Treatment Authorization Number | \n\n | 91 | CLM_PRCR_RTRN_CD | Claim Pricer Return Code | \n\n | 92",
+  "dataset": "hha-ffs",
+  "url": "https://resdac.org/cms-data/files/hha-ffs/data-documentation"
+}

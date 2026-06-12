@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p87__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 87,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n77 \nLINE_1ST_EXPNS_DT \nLABEL: \nLine First Expense Date \nDESCRIPTION: Beginning date (1st expense) for this line-item service on the non-institutional encounter record. \nSHORT NAME: LINE_1ST_EXPNS_DT \nLONG NAME: LINE_1ST_EXPNS_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nCarrier line \nDME line \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Nursing home, 5 = Acute Care Hospital, 6 = Psychiatric Hospital, MR/DD facility, 7 = Rehabilitation Hospital, 8 = Other\n42 _14B DSCHRG_STUS_CD (14b) Discharge Status Code CHAR 2 The patient's living arrangements after discharge and the presence or absence of home halth services if the patient is in a private home or apartment.\n43 _14C REENTRY_FROM_CD (14c) Reentry From Code CHAR 2 Indicates the patient's living arrangement prior to reentry for swing bed services.\n44 AA2 AA2_SEX1 2(AA2) Sex CHAR",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

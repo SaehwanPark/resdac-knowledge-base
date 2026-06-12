@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p368__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 368,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n350 \nREV_CNTR_IDE_NDC_UPC_NUM \nLABEL: \nRevenue Center IDE, NDC, or UPC Number \nDESCRIPTION: This field may contain one of three types of identifiers: the National Drug Code (NDC), the Universal \nProduct Code (UPC), or the number assigned by the Food and Drug Administration (FDA) to an \ninvestigational device (IDE) after the manufacturer has approval to conduct a clinical",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

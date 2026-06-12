@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p43__chunk_4",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 43,
+  "text": "is created from each submitted value reported in T-MSIS. For example, a state has a \nhealth plan that operates under both a 1915(a)/1915(c) waiver and 1937 Alternative Benefit Plan. \nAccordingly, there would be two Operating Authority Supplemental file records for this health plan. \nOne record would have MC_PLAN_OPRTG_AUTHRTY_CD equal “06” and another would have \nMC_PLAN_OPRTG_AUTHRTY_CD equal “10”, the corresponding valid values associated with these \nrespective operating authorities. \nThis",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

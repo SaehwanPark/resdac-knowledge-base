@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_14",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "| Service Tracking Payment Amount | \n\n | 85 | PYMT_LVL_IND | Payment Level Indicator - Header or Line | \n\n | 86 | BILLED_AMT | Total Claim Billed Amount | \n\n | 87 | NCVRD_CHRG_AMT | Non-covered Charges Amount | \n\n | 88 | MDCD_ALOWD_AMT | Total Medicaid Allowed Amount | \n\n | 89 | MDCD_PD_AMT | Total Amount Paid By Medicaid | \n\n | 90 | DAILY_RATE | Daily Rate that a Policy will Pay for a Covered Service | \n\n | 91 | MDCD_ACMDTN_PD_AMT | Medicaid Amount Paid for All Accommodation (Room and Board)",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

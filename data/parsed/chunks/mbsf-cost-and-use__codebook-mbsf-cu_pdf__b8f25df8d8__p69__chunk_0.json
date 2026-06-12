@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p69__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 69,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n63 \nPHYS_MDCR_PMT \nLABEL: \nPart B Physician Medicare Payments \nDESCRIPTION: This variable is the total Medicare payments for the Part B physician office services (PHYS) for a given \nyear. Physician office claims are a subset of the claim lines in the Part B carrier and DME data files, and a \nsubset of physician evaluation and management (E/M) claim lines (NOTE: E/M are tabulated",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p92__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 92,
+  "text": "during the month \nNull/missing = not Medicare enrolled for the month \nCOMMENT: \nCCW creates this variable using the MBSF file. We consider the beneficiary to have FFS Medical \ncoverage if the beneficiary had Medicare enrollment for the month, and the monthly beneficiary HMO \n(Medicare Advantage) indicator code was either '0' (Not a member of an HMO) or '4' (Fee-for-service \nparticipant in case or disease management demonstration project) (i.e., BENE_HMO_IND_MM IN ('0' \n'4'). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_18",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "(POA) Indicator Code (FFS) | \n\n | 93 | ICD_DGNS_CD10 | Claim Diagnosis Code X (FFS) | \n\n | 94 | CLM_POA_IND_SW10 | Claim Diagnosis Code X Diagnosis Present on Admission (POA) Indicator Code (FFS) | \n\n | 95 | ICD_DGNS_CD11 | Claim Diagnosis Code XI (FFS) | \n\n | 96 | CLM_POA_IND_SW11 | Claim Diagnosis Code XI Diagnosis Present on Admission (POA) Indicator Code (FFS) | \n\n | 97 | ICD_DGNS_CD12 | Claim Diagnosis Code XII (FFS) | \n\n | 98 | CLM_POA_IND_SW12 | Claim Diagnosis Code XII Diagnosis Present",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

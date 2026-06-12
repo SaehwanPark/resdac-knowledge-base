@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p215__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 215,
+  "text": "8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge amount associated with revenue \ncenter codes 028x, 032x, 033x, 034x, 035x and 040x from all claim records included in the stay. \nNote that detailed revenue center charge amounts for radiology are available 2011 forward — reference \nfields: RDLGY_ONCOLOGY_AMT, RDLGY_DGNSTC_AMT, RDLGY_THRPTC_AMT, \nRDLGY_NUCLR_MDCN_AMT, RDLGY_CT_SCAN_AMT, RDLGY_OTHR_IMGNG_AMT. \nMagnetic",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_239",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "nutritional problems - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n389 K5A K5A_PARENTERAL_IV (K5A) Parenteral IV CHAR 1 Oral/nutritional status: nutritional approaches in last 7 days - parenteral/IV. 0 = No, 1 = Yes, \"-\" = Unknown.\n390 K5B K5B_FEED_TUBE (K5B) Feeding Tube CHAR 1 Oral/nutritional status: nutritional approaches in last 7 days - feeding tube. 0 = No, 1 = Yes, \"-\" = Unknown.\n391 K5C K5C_MECH_DIET (K5C) Mechanically Altered Diet CHAR 1 Oral/nutritional status: nutritional",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

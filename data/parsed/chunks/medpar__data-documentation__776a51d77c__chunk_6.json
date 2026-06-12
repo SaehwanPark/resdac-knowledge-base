@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_6",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| \n\n | 33 | IP_ADMSN_TYPE_CD | Inpatient admission type code | \n\n | 34 | ADMSN_DAY_CD | Code indicating day of week beneficiary was admitted to facility | \n\n | 35 | ADMSN_DT | Date beneficiary admitted for Inpatient care or date care started | \n\n | 36 | DSCHRG_DT | Date beneficiary was discharged or died | \n\n | 37 | DSCHRG_DSTNTN_CD | Destination upon discharge from facility code | \n\n | 38 | CVRD_LVL_CARE_THRU_ DT | Date covered level of care ended in a SNF | \n\n | 39 | BENE_DEATH_DT | Date",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

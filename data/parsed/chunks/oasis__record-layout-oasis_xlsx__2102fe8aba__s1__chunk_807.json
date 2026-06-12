@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_807",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "and/or Scooter at Follow-Up Indicates whether the patient uses a wheelchair and/or scooter at follow-up. 0. No\n1. Yes CHAR 2 x x\nGG0170R1_WHEEL_50_STRT_CD GG0170R1 Mobility: Ability to Wheel 50 Feet With Two Turns at SOC/ROC Indicates the patient's ability to wheel the wheelchair or scooter at least 50 feet with two turns at the start of care/resumption of care. 06. Independent – Patient completes the activity by him/herself with no assistance from a helper.\n05. Setup or clean-up assistance –",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

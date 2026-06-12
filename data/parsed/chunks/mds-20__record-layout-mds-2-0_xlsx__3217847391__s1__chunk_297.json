@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_297",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "minutes (last 7 days).\n497 P1BDA P1BDA_RES_THPY_DAY (P1BDA) Respiratory Therapy Days CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - therapies - respiratory therapy - number of days for 15 minutes or more (last 7 days).\n498 P1BDB P1BDB_RES_THPY_MIN (P1BDB) Respiratory Therapy Minutes CHAR 4 Special treatments and procedures: special treatments, procedures, and programs - therapies - respiratory therapy - total number of minutes (last 7 days).\n499 P1BEA",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

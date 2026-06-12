@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_288",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - transfusions. 0 = No, 1 = Yes, \"-\" = Unknown.\n483 P1AL P1AL_VENTILATOR (P1AL) Ventilator/Respirator CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - ventilator or respirator. 0 = No, 1 = Yes, \"-\" = Unknown.\n484 P1AM P1AM_ALC_ORG_TREAT (P1AM) Alcohol/Drug Treatment Program CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

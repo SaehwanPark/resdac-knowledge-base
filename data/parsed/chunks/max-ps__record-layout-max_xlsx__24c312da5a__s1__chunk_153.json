@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_153",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "In Place for Historical Compatibility CHAR 2 ‾ X X X X X X X X X X All values in 2005 = '99'\n669 PREM_PYMT_IND_PHI Premium payment indicator- private health insurance (PHI) NUM 1 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zeros Only Not in 2013 proc contents\n670 PREM_PYMT_REC_CNT_PHI Premium payment records (PHI) NUM 5 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zeros Only Not in 2013 proc contents\n671 PREM_MDCD_PYMT_AMT_PHI Medicaid premium payments (PHI) NUM 8 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zeros",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

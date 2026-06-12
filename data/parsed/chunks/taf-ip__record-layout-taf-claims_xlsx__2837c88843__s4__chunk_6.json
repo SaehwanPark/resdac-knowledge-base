@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_6",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "NPI CHAR 10 34\nPRVDR_LCTN_CD Provider Location Code CHAR 5 35\nBRDR_STATE_IND Border State Indicator CHAR 1 36\nFIXD_PYMT_IND Fixed Payment Indicator CHAR 1 37\nSRVC_TRKNG_PYMT_AMT Service Tracking Payment Amount NUM 8 38\nPYMT_LVL_IND Payment Level Indicator - Header or Line CHAR 1 39\nBILLED_AMT Total Claim Billed Amount NUM 8 40\nMDCD_ALOWD_AMT Total Medicaid Allowed Amount NUM 8 41\nMDCD_PD_AMT Total Amount Paid By Medicaid NUM 8 42\nMDCD_COPAY_AMT Total Copay Amount Paid by Beneficiary NUM 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

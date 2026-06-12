@@ -306,6 +306,67 @@ def test_run_extraction_reports_documents_without_emitted_dataset(
   }
 
 
+def test_run_extraction_resolves_listing_sourced_asset_from_dataset_links(
+  tmp_path: Path,
+) -> None:
+  manifest_path = tmp_path / "manifests" / "archive_manifest.csv"
+  dataset_path = tmp_path / "data" / "raw" / "html" / "dataset.html"
+  asset_path = tmp_path / "data" / "raw" / "assets" / "pdf" / "guide.pdf"
+
+  dataset_url = "https://resdac.org/cms-data/files/hha-ffs"
+  asset_url = "https://cms.gov/manuals/guide.pdf"
+  dataset_body = (
+    b"<html><head><title>Home Health Agency</title></head><body>"
+    b'<a href="https://cms.gov/manuals/guide.pdf">home health covered services</a>'
+    b"</body></html>"
+  )
+  asset_body = b"%PDF home health guide"
+  dataset_sha = _write_archive_file(dataset_path, dataset_body)
+  asset_sha = _write_archive_file(asset_path, asset_body)
+
+  _write_manifest(
+    [
+      ArchiveManifestRow(
+        url=dataset_url,
+        resource_kind="dataset_page",
+        content_type="text/html",
+        http_status=200,
+        archive_state="archived",
+        sha256=dataset_sha,
+        local_path=str(dataset_path),
+      ),
+      ArchiveManifestRow(
+        url=asset_url,
+        resource_kind="asset",
+        asset_kind="pdf",
+        source_url="https://resdac.org/cms-data?page=1",
+        source_title="Find the CMS Data File You Need | ResDAC",
+        content_type="application/pdf",
+        http_status=200,
+        archive_state="archived",
+        sha256=asset_sha,
+        local_path=str(asset_path),
+      ),
+    ],
+    manifest_path,
+  )
+
+  result, _ = run_extraction(
+    ExtractionConfig(
+      archive_manifest_path=manifest_path,
+      metadata_dir=tmp_path / "data" / "metadata",
+      graph_dir=tmp_path / "data" / "graph",
+      workspace_dir=tmp_path / "_workspace",
+    )
+  )
+
+  assert result.failure_count == 0
+  assert result.document_count == 1
+  document = result.documents[0]
+  assert document.dataset_id == "hha-ffs"
+  assert document.source_url == asset_url
+
+
 def test_run_extraction_keeps_same_basename_assets_distinct(
   tmp_path: Path,
 ) -> None:
@@ -435,6 +496,7 @@ def test_run_extraction_normalizes_fields_and_emits_ontology(tmp_path: Path) -> 
     b'<div class="field-content">2016-2025 Q1</div>'
     b"</div>"
     b'<a href="/cms-data/files/cmds-entity">Entity</a>'
+    b'<a href="/sites/datadocumentation.resdac.org/files/2022-10/layout.xlsx">Layout</a>'
     b"</body></html>"
   )
 
@@ -510,4 +572,3 @@ def test_run_extraction_normalizes_fields_and_emits_ontology(tmp_path: Path) -> 
     ("pde", "program_medicare", "belongs_to"),
     ("pde", "cmds-entity", "related_to"),
   }
-

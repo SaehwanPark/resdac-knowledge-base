@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p288__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 288,
+  "text": "SOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT line \nVALUES: \n00 = Entire Oral Cavity \n01 = Maxillary Area \n02 = Mandibular Area \n03 = Upper Right Sextant \n04 = Upper Anterior Sextant \n05 = Upper Left Sextant \n06 = Lower Left Sextant \n07 = Lower Anterior Sextant \n08 = Lower Right Sextant \n09 = Other Area of Oral Cavity (An area specified in an annexed document or further explanation \navailable.) \n10 = Upper Right Quadrant (Right Refers to the oral and skeletal structures on the right",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

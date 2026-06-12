@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p37__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 37,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n28 \nEYE_VSN_SRVC_TXNMY_IND \nLABEL: \nEye or Vision Services Provider Taxonomy Indicator — Ever in Calendar Year \nDESCRIPTION: Indicates whether the provider’s taxonomy value maps to the eye and vision service provider \ncategory; ever in the calendar year. \nSHORT NAME: EYE_VSN_SRVC_TXNMY_IND \nLONG NAME: EYE_VSN_SRVC_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

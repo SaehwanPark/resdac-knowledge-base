@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p33__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 33,
+  "text": "for weekends. \n10 = Per shift dispensing (multiple med passes) \n11 = Per med pass dispensing \n12 = PRN on demand \n13 = 7-day or less cycle not otherwise represented \n14 = 14 days dispensing — dispenses medication in 14-day supplies \n15 = 8–14-day dispensing cycle not otherwise represented \nNull/missing \nCOMMENT: \nThis field was new in 2025. \nPrior to 2025, LTPAC short-cycle dispensing was reported in the submission clarification code field \n(SUBMSN_CLR_CD) on the PDE. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

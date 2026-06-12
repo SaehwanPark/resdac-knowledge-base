@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_22",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "reason for admission to the rehabilitation program. Each IGC consists of a two-digit number (indicating the major Impairment Group) followed by a decimal point and 1 to 4 additional digits identifying the subgroup.\n38 _21D IMPRMNT_GRP_DSCHRG_CD (21d) Impairment Group: Discharge CHAR 9 The Impairment Group Code (IGC) that best describes the primary impairment at discharge from the rehabilitation program. Each IGC consists of a two-digit number (indicating the major Impairment Group) followed by",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

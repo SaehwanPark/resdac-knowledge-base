@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p24__chunk_2",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 24,
+  "text": "obtained Medicaid beneficiary identifying information (e.g., Medicaid ID \ncard, state, zip code, first and last name, date of birth) that the CMS AHC Model used to join to the \nCCW MSIS_ID in the Transformed Medicaid Statistical Information System (T-MSIS) Analytic Files (TAF) \n(or in the Medicaid Analytic eXtract (MAX) files for applicable states for 2015 – which is part of a 3-\nyear look back period for the AHC Model). An MSIS_ID was not always obtained. \nWithin the AHC data file, unique",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p27__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 27,
+  "text": "T-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \n8 = State does not distinguish “border state providers” \nNull/missing \nCOMMENT: \nIf no service location exists for the provider, the address from the practice location is used. Where no \nservice or practice locations exist, the billing location is used. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

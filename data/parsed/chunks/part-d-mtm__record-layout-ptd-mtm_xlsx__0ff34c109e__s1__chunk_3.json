@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "annual comprehensive medication review (CMR) CHAR 1 X X X X X\nCMR_OFFERED_DT Date of the initial CMR offer within the reporting period DATE 8 X X X X X\nCMR_RECIPIENT Comprehensive medication review (CMR) recipient CHAR 2 X X X X X\nCMR_RECEIVED Indicate if received annual CMR with written summary in CMS standardized format CHAR 1 X X X X X\nCMR_RECEIVED_NUM Number of comprehensive medication reviews (CMRs) received NUM 8 X X X - -\nCMR_RECEIVED_DT1 Date first comprehensive medication review (CMR)",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

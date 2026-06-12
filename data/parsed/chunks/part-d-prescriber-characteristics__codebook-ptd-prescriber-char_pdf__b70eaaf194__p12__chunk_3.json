@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p12__chunk_3",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 12,
+  "text": "(CCW_PRSCRBR_ID). \nCCW purchased the HCIdea™ Prescriber Database to enable us to roll-up various IDs in the Part D \nPrescription Drug Event (PDE) file to a unique prescriber. Each year, CCW used HCIdea™ and cross-\nwalked all of the identifiers in the PDE for a unique prescriber (which corresponded to a HCID) and \nassigned a CCW_PRSCRBR_ID to represent an individual medical practitioner. This allowed PDE records \nthat had the same prescriber but used a combination of different identifiers to be",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_225",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "conditions: problem conditions - other - none of above in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n356 J2A J2A_PAIN_FREQUENCY (J2A) Pain Frequency CHAR 1 Health conditions: pain symptoms - frequency in last 7 days. 0 = No Pain, 1 = Pain less than daily, 2 = Pain daily, \"-\" = Unknown.\n357 J2B J2B_PAIN_INTENSITY (J2B) Pain Intensity CHAR 1 Health conditions: pain symptoms - intensity in last 7 days. 0 = Mild Pain, 1 = Moderate Pain, 2 = Times when pain is horrible or excruciatin, \"-\" =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

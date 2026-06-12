@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_85",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "D0200A2 Resident Mood Interview - Interest Loss Frequency Code CHAR 1 The data in this column indicates the frequency that the resident experienced a loss of interest or pleasure in doing things. -=Not assessed/no information\n0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern) discontinued 09/30/2023\n120 D0200B1_FEEL_DOWN_CD D0200B1_FEEL_DOWN_CD D0200B1 Resident Mood Interview - Feel Down Code CHAR 1 The data",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p8__chunk_8",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 8,
+  "text": "answered\nsu_web_surv\nIndicates whether submitted web survey came from prenotiﬁcation letter, web invitation, or reminder\nWEBF\nsu_type\nSurvey type (1-4)\n$TYPEF\nsu_supp_items\nTotal number of supplemental items added by the plan\nsu_received\nDate survey data collected\nsu_mode\nSurvey data collection mode\n$MODEF\nsu_email_stat\nEmail indicator\n$ESTATF\nsu_dispositn\nFinal disposition code\n$FDISPF\nsu_dispo_lang\nLanguage of survey data collection\n$LANGF\n8",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

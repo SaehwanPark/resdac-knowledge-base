@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_436",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Caregiver(s) not likely to provide assistance\n04 = Assistance needed, but no caregiver(s) available CHAR 2 x x x x x\nM2102_CARE_TYPE_SRC_PRCDR M2102 (M2100) Care Management - Medical Procedures / Treatments This field indicates the level of caregiver ability and willingness to provide medical procedures/treatments assistance. 00 = No assistance needed in this area\n01 = Caregiver(s) currently provides assistance\n02 = Caregiver(s) need training/supportive services to provide assistance\n03 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

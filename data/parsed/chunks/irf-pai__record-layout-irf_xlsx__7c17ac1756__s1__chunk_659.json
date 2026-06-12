@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_659",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "1 This column documents whether the resident's payer is Medicare (FFS). 0 = No \n1 = Yes\n627 A1400B_MDCR_OPYR_SW A1400B_MDCR_OPYR_SW A1400B - Payer: Medicare (Managed Care/Part C/Medicare Advantage.) CHAR 1 This column documents whether the resident's payer is Medicare (Managed Care/Part C/Medicare Advantage.). 0 = No \n1 = Yes\n628 A1400C_MDCD_FFS_PYR_SW A1400C_MDCD_FFS_PYR_SW A1400C - Payer: Medicaid (FFS) CHAR 1 This column documents whether the resident's payer is Medicaid (FFS). 0 = No \n1 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

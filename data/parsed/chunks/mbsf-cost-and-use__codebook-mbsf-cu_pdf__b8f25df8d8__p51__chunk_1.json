@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p51__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 51,
+  "text": "for a \ngiven year. Claims for imaging procedures are a subset of the claims, and a subset of procedures in the \nPart B carrier and DME data files. \nThese imaging claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit \n=I (except for “I1E,” or “I1F” — which are considered Part B drugs). The total Primary Payer Payments \nare calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. \nSHORT NAME: — \nLONG NAME: IMG_PRMRY_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \n—",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

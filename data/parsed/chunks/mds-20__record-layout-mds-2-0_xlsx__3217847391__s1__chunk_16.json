@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "STATE_ID STATE_ID State ID CHAR 2 The two-digit state abbreviation. This may also be the two-character CMS region code.\n31 STPRPDDT ST_PREPD_DT State Prepared Date DATE 8 This field represents the date when the state prepared the data to be pulled to the national. Used for replication purposes only.\n32 SBMSSNDT SUBMISSION_DATE Submission Date DATE 8 The date the submission was received by the system.\n33 SUB_REQ SUB_REQ Submission Requirement CHAR 1 0 = Default for all records prior to the",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

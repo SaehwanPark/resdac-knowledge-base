@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_453",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1060 Height and Weight - Weight (in pounds) This field indicates the most recent base weight in the last 30 days; measure weight consistently, according to standard agency practice (for example, in a.m. after voiding, before meal, with shoes off, etc.) Weight (in pounsds) CHAR 3 x x x\nM1311_NBR_STG2 M1311 (M1309) Number Of Unhealed Pressure Ulcers - Stage II This field indicates the current number of unhealed pressure ulcers at stage II. CHAR 2 x x x\nM1311_NBR_STG2_AT_SOC_ROC M1311 (M1309)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "by the sate system using the OASIS PPS dll for this assessment. CHAR 5 x x x x x x\nCALC_HIPPS_VERSION Calculated HIPPS Version The version of the HIPPS (Health Insurance Prospective Payment System) code calculated. CHAR 5 x x x x x x\nFAC_INT_ID Facility Internal ID The CMS facility internal identifier that is unique within a state. For the NATL_MDS_FAC_SUBMSN_SMRY, NATL_HHA_FAC_SUBMSN_SMRY, OBQI_ROLLUPS, OBQI_CMIX_RISK_ADJSTD_ROLLUPS, OBQI_RAO_RISK_ADJSTD_ROLLUPS, OBQI_BRIEFG_BOOK_MISC_MSR and",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

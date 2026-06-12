@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_495",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "patient's response to their race. 0 = No\n1 = Yes\n417 RACE_ASN_INDN_CD RACE_ASN_INDN_CD Race: Asian Indian CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n418 RACE_CHINESE_CD RACE_CHINESE_CD Race: Chinese CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n419 RACE_FILIPINO_CD RACE_FILIPINO_CD Race: Filipino CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n420 RACE_JAPANESE_CD",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

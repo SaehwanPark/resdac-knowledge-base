@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Code CHAR 1\nCREC ENTLMT_RSN_CURR Current Reason for Entitlement Code CHAR 1\nESRD_IND ESRD_IND End-stage Renal Disease (ESRD) Indicator CHAR 1\nMDCR_STUS_CD_01 MDCR_STATUS_CODE_01 Medicare Status Code - January CHAR 2\nMDCR_STUS_CD_02 MDCR_STATUS_CODE_02 Medicare Status Code - February CHAR 2\nMDCR_STUS_CD_03 MDCR_STATUS_CODE_03 Medicare Status Code - March CHAR 2\nMDCR_STUS_CD_04 MDCR_STATUS_CODE_04 Medicare Status Code - April CHAR 2\nMDCR_STUS_CD_05 MDCR_STATUS_CODE_05 Medicare Status Code - May",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p62__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 62,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n65 \nPRVDR_ADR_LINE_1 \nPRVDR_ADR_LINE_2 \nPRVDR_ADR_LINE_3 \nLABEL: \nProvider Street Address (1–3) \nDESCRIPTION: The first through third address lines when the provider address type represents the provider’s billing, \npractice or service location. \nSHORT NAME: PRVDR_ADR_LINE_1 \nPRVDR_ADR_LINE_2 \nPRVDR_ADR_LINE_3 \nLONG NAME: PRVDR_ADR_LINE_1 \nPRVDR_ADR_LINE_2",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

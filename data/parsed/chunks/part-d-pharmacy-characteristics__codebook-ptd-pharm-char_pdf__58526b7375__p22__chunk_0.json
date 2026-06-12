@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 22,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n17 \nPRNT_ORG_ID \nLABEL: \nPharmacy Parent Organization Identifier (encrypted) \nDESCRIPTION: The encrypted NCPDP identifier for a business entity that has been reported to serve as the \nheadquarters for chains, buying groups or third party contracting organizations. There may be multiple \nrelationship IDs (variable called RELATIONSHIP_ID) that link to a common parent organization. \nSHORT NAME: —",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

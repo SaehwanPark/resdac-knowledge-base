@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_13",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "Obsolete Date Date 8 96\nCLM_BPRVDR_CITY_NAME Billing Provider Address - City Char 30 97\nCLM_BPRVDR_USPS_STATE_CD Billing Provider Address - USPS State Code Char 2 98\nCLM_BPRVDR_ADR_ZIP_CD Billing Provider Address - ZIP Code Char 9 99\nCLM_SUBSCR_CITY_NAME Medicare Subscriber Address - City Char 30 100\nCLM_SUBSCR_USPS_STATE_CD Medicare Subscriber Address - USPS State Code Char 2 101\nCLM_SUBSCR_ADR_ZIP_CD Medicare Subscriber Address - ZIP Code Char 9 102\nBENE_CNTY_CD Beneficiary County Code",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_13",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "| Beneficiary Race Code (FFS) | \n\n | 85 | BENE_CNTY_CD | County Code from Claim (SSA) | \n\n | 86 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (FFS) | \n\n | 87 | BENE_MLG_CNTCT_ZIP_CD | Zip Code of Residence from Claim | \n\n | 88 | CLM_MDCL_REC | Claim Medical Record Number (FFS) | \n\n | 89 | CLM_TRTMT_AUTHRZTN_NUM | Claim Treatment Authorization Number | \n\n | 90 | CLM_PRCR_RTRN_CD | Claim Pricer Return Code | \n\n | 91 | CLM_PRCR_VRSN_CD | Claim Pricer Version Code | \n\n | 92 |",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

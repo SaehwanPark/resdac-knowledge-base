@@ -1,0 +1,9 @@
+The Medicaid Analytic Extract (MAX) Inpatient (IP) file contains complete stay records for enrollees who had an inpatient hospital stay. Records include fee-for-service (FFS) claims and encounter records submitted for stays covered by Medicaid managed care.
+What does this file include? (variable highlights)
+- 10 diagnosis code fields
+- 7 procedure code fields
+- Discharge status
+- Charges and payments (FFS only)
+- Provider identifier
+Special considerations
+- Encounter record reporting may not be complete. Data reporting may vary by state, year and eligibility group.

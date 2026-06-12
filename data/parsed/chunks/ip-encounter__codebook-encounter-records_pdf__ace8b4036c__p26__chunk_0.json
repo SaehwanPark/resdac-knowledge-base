@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p26__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 26,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n\n16 \nCLM_BPRVDR_ADR_ZIP_CD \nLABEL: \nBilling Provider Zip Code \nDESCRIPTION: This variable is the 9-digit zip code for the primary practice/business location of the physician receiving \nthe payment or other transfer of value (i.e., the billing provider). \nSHORT NAME: CLM_BPRVDR_ADR_ZIP_CD \nLONG NAME: CLM_BPRVDR_ADR_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n9 \nSOURCE: \nCMS Encounter Data System",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

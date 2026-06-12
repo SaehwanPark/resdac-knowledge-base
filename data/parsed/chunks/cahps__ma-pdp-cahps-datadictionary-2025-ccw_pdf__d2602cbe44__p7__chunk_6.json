@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p7__chunk_6",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 7,
+  "text": "6 mths, needed help from personal md to manage care\nYNA\nmd_getmngca\nRECODE : Last 6 mths, got help needed from personal md to manage care\nYNB\nsp_persmd\nRECODE : Personal md is a specialist\nYNA\nsp_tryappt\nRECODE : Last 6 mths, make appointments with specialist\nYNA\nsp_getappt\nRECODE : Last 6 mths, how often get appointment with specialist as soon as needed\nOFA\nsp_visits\nRECODE : Last 6 mths, number of specialists talked to\nNMB\nrate_spec\nRECODE : Rate specialist talked to most",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

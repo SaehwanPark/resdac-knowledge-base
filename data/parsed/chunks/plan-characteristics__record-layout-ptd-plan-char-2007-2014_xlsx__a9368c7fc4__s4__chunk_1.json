@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 4,
+  "text": "State Name CHAR 24 X\nCOUNTY_NAME Part D Segment County Name CHAR 30 X\nSSA_CODE Part D Segment SSA State and County Code CHAR 5 X\nPARTIAL_FLAG Part D Segment Partial County Indicator CHAR 1 X\nREGION_CODE Part D Segment Region Code CHAR 2 X\nREGION_NAME Part D Segment Region Name CHAR 120 X\n1 Prior to the 2013 data release, CCW was required to encrypt these sensitive data fields. These sensitive fields were those which could be used to identify the the plan sponsor's contract (CONTRACT_ID) and",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

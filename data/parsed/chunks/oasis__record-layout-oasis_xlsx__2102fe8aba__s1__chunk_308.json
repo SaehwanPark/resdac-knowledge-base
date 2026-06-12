@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_308",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0610) Cog/Behavr/Psych Symp- Verbal Disruption This field indicates verbal disruption has been demonstrated at least once a week. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x\nM1745_BEH_PROB_FRQ M1745 (M0620) Frequency of Disruptive Behavior Symptoms This field indicates the frequency of disruptive behavior symptoms. 00 = Never\n01 = Less than once a month\n02 = Once a month\n03 = Several times each month\n04 = Several times a week\n05 = At least daily CHAR 2 x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

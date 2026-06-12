@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p72__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 72,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n67 \nSUBMSN_TYPE_CD_1 \nSUBMSN_TYPE_CD_2 \nSUBMSN_TYPE_CD_3 \nSUBMSN_TYPE_CD_4 \nSUBMSN_TYPE_CD_5 \nLABEL: \nSubmission Type Code (1 – 5) \nDESCRIPTION: Optional fields allow Part D sponsors to report up to five instances of codes that identify specific types \nof claims on the PDE record; used to identify specific types of claims with valid values. \nSHORT NAME:",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

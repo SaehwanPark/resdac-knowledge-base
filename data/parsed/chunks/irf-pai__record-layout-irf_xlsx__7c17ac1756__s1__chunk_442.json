@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_442",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "assistance\n04 = Supervision or touching assistance\n05 = Setup or clean-up assistance\n06 = Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n370 GG0170P3_PCKNG_UP_OBJ_END_CD GG0170P3_PCKNG_UP_OBJ_END_CD GG0170P3 Discharge Performance Pick up Object Code - The data in this column indicates the patient's ability to bend/stoop from a standing position to pick up a small object, such",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

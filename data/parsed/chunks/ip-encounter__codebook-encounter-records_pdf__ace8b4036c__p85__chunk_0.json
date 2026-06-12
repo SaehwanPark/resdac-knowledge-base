@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p85__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 85,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n75 \nICD_PRCDR_CD1 \nICD_PRCDR_CD2 \nICD_PRCDR_CD3 \nICD_PRCDR_CD4 \nICD_PRCDR_CD5 \nICD_PRCDR_CD6 \nICD_PRCDR_CD7 \nICD_PRCDR_CD8 \nICD_PRCDR_CD9 \nICD_PRCDR_CD10 \nICD_PRCDR_CD11 \nICD_PRCDR_CD12 \nICD_PRCDR_CD13 \nLABEL: \nClaim Procedure Code 1–13 \nDESCRIPTION: The code that indicates the procedure(s) performed during the period covered by the institutional \nclaim. There are up to 13 procedures",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

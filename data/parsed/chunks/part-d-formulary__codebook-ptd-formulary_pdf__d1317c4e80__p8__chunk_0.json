@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p8__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 8,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n4 \nDISEASE \nLABEL: \nCondition \nDESCRIPTION: This variable is the FDA-approved indication for which the drug (represented by the FRMLRY_RX_ID) is \nconsidered on-formulary. \nSHORT NAME: DISEASE \nLONG NAME: DISEASE \nTYPE: \nCHAR \nLENGTH: \n100 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nText description (e.g., CROHN DISEASE and ARTHRITIS, PSORIATIC) \nCOMMENT: \nStarting in 2020,",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

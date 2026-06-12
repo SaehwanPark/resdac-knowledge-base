@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n8 \nBENE_MLG_CNTCT_ZIP_CD \nLABEL: \nBeneficiary ZIP Code of Residence from Claim \nDESCRIPTION: The ZIP code of the mailing address where the beneficiary may be contacted. It is the zip 5 and 4-digit \nextension as submitted on the encounter record. \nSHORT NAME: BENE_MLG_CNTCT_ZIP_CD \nLONG NAME: BENE_MLG_CNTCT_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n9 \nSOURCE: \nMedicare Advantage Organizations",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

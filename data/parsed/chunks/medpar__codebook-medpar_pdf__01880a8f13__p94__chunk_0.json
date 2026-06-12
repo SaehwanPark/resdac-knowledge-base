@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p94__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 94,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n78 \nDRG_GRPR_VRSN _CD \nLABEL: \nMedicare-Severity Diagnosis Related Group (MS-DRG) Grouper Version \nDESCRIPTION: This variable displays the MS-DRG grouper version. \nSHORT NAME: DRG_GRPR_VRSN_CD \nLONG NAME: DRG_GRPR_VRSN_CD \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field was new in 2021. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

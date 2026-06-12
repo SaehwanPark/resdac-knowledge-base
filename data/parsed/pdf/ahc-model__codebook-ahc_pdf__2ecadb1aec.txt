@@ -1,0 +1,5956 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Accountable Health Communities (AHC) Model 
+Data File Codebook  
+DECEMBER 2024 │ VERSION 1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+December 2024 K. Schneider 
+R. VanGilder 
+Initial release of codebook  
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+ii 
+Tips on Navigating the Codebook 
+The Accountable Health Communities (AHC) Model data file is from the Centers for Medicare & Medicaid Services 
+(CMS) Center for Medicare & Medicaid Innovation (CMS Innovation Center) AHC Model test. The CCW team obtained 
+the AHC data file from CMS and disseminates it. The AHC data file includes all screening and navigation data submitted 
+by 31 bridge organizations between May 2018 and April 2023. Many of the fields in the data file are from the AHC 
+Health Related Social Needs Screening tool, which is available at: 
+• 
+Standardized Screening for Health-Related Social Needs in Clinical Settings: The Accountable Health Communities 
+Screening Tool - National Academy of Medicine (nam.edu)  
+• 
+The AHC Health-Related Social Needs Screening Tool (cms.gov)  
+Variables from the AHC Screening tool begin with the prefix “SR_*” (screening results). 
+This document is a detailed codebook that describes each variable in the AHC data file. Because the file has many 
+variables, we have included several ways for users to quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:   
+ 
+Variable Details............................................................................................................................................................. 8 
+AHC_BENE_ID ........................................................................................................................................................... 8 
+AHC_BRDG_ORG_ID ................................................................................................................................................. 9 
+AHC_BRDG_ORG_STATE_CD ................................................................................................................................... 10 
+AHC_TRK_CD .......................................................................................................................................................... 11 
+BENE_AGE_NUM .................................................................................................................................................... 12 
+BENE_BIRTH_DT ..................................................................................................................................................... 13 
+BENE_EDCTN_CD .................................................................................................................................................... 14 
+BENE_GNDR_CD ..................................................................................................................................................... 15 
+BENE_ID ................................................................................................................................................................. 16 
+BENE_INCM_RNG_CD ............................................................................................................................................. 17 
+BENE_INSRNC_TYPE_CD ......................................................................................................................................... 18 
+BENE_PREFRD_LANG_TXT ...................................................................................................................................... 19 
+BENE_RACE_ETHNCTY_CD ...................................................................................................................................... 20 
+BENE_STATE_CD ..................................................................................................................................................... 21 
+BENE_ZIP_CD .......................................................................................................................................................... 22 
+MSIS_ID .................................................................................................................................................................. 23 
+MSIS_RFRNC_YR ..................................................................................................................................................... 24 
+NC_NVGTN_ACTN_PLAN_CMPLT_SW ..................................................................................................................... 25 
+NC_NVGTN_CASE_ID .............................................................................................................................................. 26 
+NC_NVGTN_CASE_STRT_DT .................................................................................................................................... 27 
+NC_NVGTN_CASE_TRMNTN_DT ............................................................................................................................. 28 
+NE_NVGTR_AVG_CNTCT_MNTS_NUM ................................................................................................................... 29 
+NE_NVGTR_CNTCT_ATMPT_NUM .......................................................................................................................... 30 
+NE_NVGTR_SUCSFL_CNTCT_NUM .......................................................................................................................... 31 
+NN_CORE_1_CNCTED_TO_CSP_SW ........................................................................................................................ 32 
+NN_CORE_1_RSLVD_SW ......................................................................................................................................... 33 
+NN_CORE_ALL_CNCTED_TO_CSP_SW ..................................................................................................................... 34 
+NN_CORE_ALL_CSP_UNAVLBL_SW ......................................................................................................................... 35 
+NN_CORE_ALL_OPTOUT_NVGTN_SW ..................................................................................................................... 36 
+NN_CORE_ALL_OUTCM_UNK_SW .......................................................................................................................... 37 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW ............................................................................................................ 38 
+NN_CORE_ALL_RSLVD_SW ..................................................................................................................................... 39 
+NN_CORE_FOOD_CNCT_CSP_SW ........................................................................................................................... 40 
+NN_CORE_FOOD_CNTCT_FAIL_SW ......................................................................................................................... 41 
+NN_CORE_FOOD_CSP_UNAVBL_SW ....................................................................................................................... 42 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+iv 
+NN_CORE_FOOD_OPTOUT_SW .............................................................................................................................. 43 
+NN_CORE_FOOD_OUTCM_UNK_SW....................................................................................................................... 44 
+NN_CORE_FOOD_RSLVD_SW.................................................................................................................................. 45 
+NN_CORE_HOUSNG_CNCT_CSP_SW ....................................................................................................................... 46 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW .................................................................................................................... 47 
+NN_CORE_HOUSNG_CSP_UNAVBL_SW .................................................................................................................. 48 
+NN_CORE_HOUSNG_OPTOUT_SW ......................................................................................................................... 49 
+NN_CORE_HOUSNG_OUTCM_UNK_SW .................................................................................................................. 50 
+NN_CORE_HOUSNG_RSLVD_SW ............................................................................................................................. 51 
+NN_CORE_SFTY_CNCT_CSP_SW ............................................................................................................................. 52 
+NN_CORE_SFTY_CNTCT_FAIL_SW ........................................................................................................................... 53 
+NN_CORE_SFTY_CSP_UNAVBL_SW ......................................................................................................................... 54 
+NN_CORE_SFTY_OPTOUT_SW ................................................................................................................................ 55 
+NN_CORE_SFTY_OUTCM_UNK_SW......................................................................................................................... 56 
+NN_CORE_SFTY_RSLVD_SW.................................................................................................................................... 57 
+NN_CORE_TRNSPRTN_CNCT_CSP_SW .................................................................................................................... 58 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW ................................................................................................................. 59 
+NN_CORE_TRNSPRTN_CSP_UNAVBL_SW................................................................................................................ 60 
+NN_CORE_TRNSPRTN_OPTOUT_SW ....................................................................................................................... 61 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW ............................................................................................................... 62 
+NN_CORE_TRNSPRTN_RSLVD_SW .......................................................................................................................... 63 
+NN_CORE_UTILITIES_CNCT_CSP_SW ...................................................................................................................... 64 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW .................................................................................................................... 65 
+NN_CORE_UTILITIES_CSP_UNAVBL_SW .................................................................................................................. 66 
+NN_CORE_UTILITIES_OPTOUT_SW ......................................................................................................................... 67 
+NN_CORE_UTILITIES_OUTCM_UNK_SW ................................................................................................................. 68 
+NN_CORE_UTILITIES_RSLVD_SW ............................................................................................................................ 69 
+NN_NVGTD_CORE_FOOD_SW ................................................................................................................................ 70 
+NN_NVGTD_CORE_HOUSNG_SW ........................................................................................................................... 71 
+NN_NVGTD_CORE_SFTY_SW .................................................................................................................................. 72 
+NN_NVGTD_CORE_TRNSPRTN_SW ......................................................................................................................... 73 
+NN_NVGTD_CORE_UTILITIES_SW ........................................................................................................................... 74 
+NN_NVGTD_SPLMTL_DSBLTY_SW .......................................................................................................................... 75 
+NN_NVGTD_SPLMTL_EDCTN_SW ........................................................................................................................... 76 
+NN_NVGTD_SPLMTL_EMPLYMT_SW ...................................................................................................................... 77 
+NN_NVGTD_SPLMTL_FINCL_SW ............................................................................................................................. 78 
+NN_NVGTD_SPLMTL_FMLY_CMNTY_SW ................................................................................................................ 79 
+NN_NVGTD_SPLMTL_MH_SW ................................................................................................................................ 80 
+NN_NVGTD_SPLMTL_PHYS_ACTVTY_SW ................................................................................................................ 81 
+NN_NVGTD_SPLMTL_SBSTNC_USE_SW .................................................................................................................. 82 
+NN_SPLMT_FMLY_CMNT_CNCT_CSP_SW ............................................................................................................... 83 
+NN_SPLMT_FMLY_CMNT_CNTCT_FAIL_SW ............................................................................................................ 84 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+v 
+NN_SPLMT_FMLY_CMNT_CSP_UNAVBL_SW .......................................................................................................... 85 
+NN_SPLMT_FMLY_CMNT_OPTOUT_SW.................................................................................................................. 86 
+NN_SPLMT_FMLY_CMNT_OUTCM_UNK_SW .......................................................................................................... 87 
+NN_SPLMT_FMLY_CMNT_RSLVD_SW ..................................................................................................................... 88 
+NN_SPLMT_PHYS_ACT_CNCT_CSP_SW ................................................................................................................... 89 
+NN_SPLMT_PHYS_ACT_CNTCT_FAIL_SW ................................................................................................................ 90 
+NN_SPLMT_PHYS_ACT_CSP_UNAVBL_SW .............................................................................................................. 91 
+NN_SPLMT_PHYS_ACT_OPTOUT_SW...................................................................................................................... 92 
+NN_SPLMT_PHYS_ACT_OUTCM_UNK_SW .............................................................................................................. 93 
+NN_SPLMT_PHYS_ACT_RSLVD_SW ......................................................................................................................... 94 
+NN_SPLMT_SBSTN_USE_CNCT_CSP_SW ................................................................................................................. 95 
+NN_SPLMT_SBSTN_USE_CNTCT_FAIL_SW .............................................................................................................. 96 
+NN_SPLMT_SBSTN_USE_CSP_UNAVBL_SW ............................................................................................................ 97 
+NN_SPLMT_SBSTN_USE_OPTOUT_SW .................................................................................................................... 98 
+NN_SPLMT_SBSTN_USE_OUTCM_UNK_SW ............................................................................................................ 99 
+NN_SPLMT_SBSTN_USE_RSLVD_SW ..................................................................................................................... 100 
+NN_SPLMTL_DSBLTS_CNCT_CSP_SW .................................................................................................................... 101 
+NN_SPLMTL_DSBLTS_CNTCT_FAIL_SW ................................................................................................................. 102 
+NN_SPLMTL_DSBLTS_CSP_UNAVBL_SW ............................................................................................................... 103 
+NN_SPLMTL_DSBLTS_OPTOUT_SW....................................................................................................................... 104 
+NN_SPLMTL_DSBLTS_OUTCM_UNK_SW ............................................................................................................... 105 
+NN_SPLMTL_DSBLTS_RSLVD_SW .......................................................................................................................... 106 
+NN_SPLMTL_EDCTN_CNCT_CSP_SW .................................................................................................................... 107 
+NN_SPLMTL_EDCTN_CNTCT_FAIL_SW .................................................................................................................. 108 
+NN_SPLMTL_EDCTN_CSP_UNAVBL_SW ................................................................................................................ 109 
+NN_SPLMTL_EDCTN_OPTOUT_SW ....................................................................................................................... 110 
+NN_SPLMTL_EDCTN_OUTCM_UNK_SW ................................................................................................................ 111 
+NN_SPLMTL_EDCTN_RSLVD_SW ........................................................................................................................... 112 
+NN_SPLMTL_EMPLYMT_CNCT_CSP_SW ............................................................................................................... 113 
+NN_SPLMTL_EMPLYMT_CNTCT_FAIL_SW ............................................................................................................. 114 
+NN_SPLMTL_EMPLYMT_CSP_UNAVBL_SW ........................................................................................................... 115 
+NN_SPLMTL_EMPLYMT_OPTOUT_SW .................................................................................................................. 116 
+NN_SPLMTL_EMPLYMT_OUTCM_UNK_SW .......................................................................................................... 117 
+NN_SPLMTL_EMPLYMT_RSLVD_SW ..................................................................................................................... 118 
+NN_SPLMTL_FINCL_CNCT_CSP_SW ...................................................................................................................... 119 
+NN_SPLMTL_FINCL_CNTCT_FAIL_SW .................................................................................................................... 120 
+NN_SPLMTL_FINCL_CSP_UNAVBL_SW .................................................................................................................. 121 
+NN_SPLMTL_FINCL_OPTOUT_SW ......................................................................................................................... 122 
+NN_SPLMTL_FINCL_OUTCM_UNK_SW ................................................................................................................. 123 
+NN_SPLMTL_FINCL_RSLVD_SW ............................................................................................................................ 124 
+NN_SPLMTL_MH_CNCT_CSP_SW ......................................................................................................................... 125 
+NN_SPLMTL_MH_CNTCT_FAIL_SW ....................................................................................................................... 126 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+vi 
+NN_SPLMTL_MH_CSP_UNAVBL_SW ..................................................................................................................... 127 
+NN_SPLMTL_MH_OPTOUT_SW ............................................................................................................................ 128 
+NN_SPLMTL_MH_OUTCM_UNK_SW..................................................................................................................... 129 
+NN_SPLMTL_MH_RSLVD_SW................................................................................................................................ 130 
+SR_CORE_FOOD_1_CD ......................................................................................................................................... 131 
+SR_CORE_FOOD_2_CD ......................................................................................................................................... 132 
+SR_CORE_FOOD_OVRL_SCRNG_IND ..................................................................................................................... 133 
+SR_CORE_HOUSNG_1_CD ..................................................................................................................................... 134 
+SR_CORE_HOUSNG_2_HEAT_SW .......................................................................................................................... 135 
+SR_CORE_HOUSNG_2_LEAD_SW .......................................................................................................................... 136 
+SR_CORE_HOUSNG_2_MOLD_SW ........................................................................................................................ 137 
+SR_CORE_HOUSNG_2_OVEN_SW ......................................................................................................................... 138 
+SR_CORE_HOUSNG_2_PESTS_SW ......................................................................................................................... 139 
+SR_CORE_HOUSNG_2_PRBLM_CNT ...................................................................................................................... 140 
+SR_CORE_HOUSNG_2_SCRNG_CMPST_IND .......................................................................................................... 141 
+SR_CORE_HOUSNG_2_SMK_DTCTR_SW ............................................................................................................... 142 
+SR_CORE_HOUSNG_2_WTR_LEAK_SW ................................................................................................................. 143 
+SR_CORE_HOUSNG_OVRL_SCRNG_IND ................................................................................................................ 144 
+SR_CORE_SFTY_1_CD ........................................................................................................................................... 145 
+SR_CORE_SFTY_2_CD ........................................................................................................................................... 146 
+SR_CORE_SFTY_3_CD ........................................................................................................................................... 147 
+SR_CORE_SFTY_4_CD ........................................................................................................................................... 148 
+SR_CORE_SFTY_OVRL_SCRNG_IND ....................................................................................................................... 149 
+SR_CORE_TRNSPRTN_1_SW ................................................................................................................................. 150 
+SR_CORE_TRNSPRTN_OVRL_SCRNG_IND .............................................................................................................. 151 
+SR_CORE_UTILITIES_1_CD .................................................................................................................................... 152 
+SR_CORE_UTLTY_OVRL_SCRNG_IND..................................................................................................................... 153 
+SR_ELGBL_FOR_NVGTN_IND ................................................................................................................................ 154 
+SR_ER_VISITS_CD.................................................................................................................................................. 155 
+SR_GRP_ASGNMT_IND ......................................................................................................................................... 156 
+SR_HAS_CORE_HRSN_IND .................................................................................................................................... 157 
+SR_NVGTN_OPT_IN_OUT_DT ............................................................................................................................... 158 
+SR_NVGTN_OPT_IN_OUT_IND .............................................................................................................................. 159 
+SR_SCRNG_BEFORE_DRNG_AFTR_CD ................................................................................................................... 160 
+SR_SCRNG_DT ...................................................................................................................................................... 161 
+SR_SCRNG_ID ....................................................................................................................................................... 162 
+SR_SPLM_FMLY_CMNTY_OVRL_SCRN_IND........................................................................................................... 163 
+SR_SPLM_PHYS_ACTV_OVRL_SCRN_IND .............................................................................................................. 164 
+SR_SPLMT_SBST_USE_OVRL_SCRNG_IND ............................................................................................................. 165 
+SR_SPLMTL_DSBLTS_1_SW ................................................................................................................................... 166 
+SR_SPLMTL_DSBLTS_2_SW ................................................................................................................................... 167 
+SR_SPLMTL_DSBLTS_OVRL_SCRNG_IND ............................................................................................................... 168 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+vii 
+SR_SPLMTL_EDCTN_1_SW .................................................................................................................................... 169 
+SR_SPLMTL_EDCTN_2_SW .................................................................................................................................... 170 
+SR_SPLMTL_EDCTN_OVRL_SCRNG_IND ................................................................................................................ 171 
+SR_SPLMTL_EMPLYMT_1_CD ............................................................................................................................... 172 
+SR_SPLMTL_EMPLYMT_OVRL_SCRN_IND ............................................................................................................. 173 
+SR_SPLMTL_FINCL_1_CD ...................................................................................................................................... 174 
+SR_SPLMTL_FINCL_OVRL_SCRNG_IND .................................................................................................................. 175 
+SR_SPLMTL_FMLY_CMNTY_SPRT_1_CD ................................................................................................................ 176 
+SR_SPLMTL_FMLY_CMNTY_SPRT_2_CD ................................................................................................................ 177 
+SR_SPLMTL_MH_1_2_SUM .................................................................................................................................. 178 
+SR_SPLMTL_MH_1_CD ......................................................................................................................................... 179 
+SR_SPLMTL_MH_2_CD ......................................................................................................................................... 180 
+SR_SPLMTL_MH_3_CD ......................................................................................................................................... 181 
+SR_SPLMTL_MH_OVRL_SCRNG_IND ..................................................................................................................... 182 
+SR_SPLMTL_PHYS_ACTVTY_1_2_QTY ................................................................................................................... 183 
+SR_SPLMTL_PHYS_ACTVTY_1_CD ......................................................................................................................... 184 
+SR_SPLMTL_PHYS_ACTVTY_2_CD ......................................................................................................................... 185 
+SR_SPLMTL_SBSTNC_USE_1_CD ........................................................................................................................... 186 
+SR_SPLMTL_SBSTNC_USE_2_CD ........................................................................................................................... 187 
+SR_SPLMTL_SBSTNC_USE_3_CD ........................................................................................................................... 188 
+SR_SPLMTL_SBSTNC_USE_4_CD ........................................................................................................................... 189 
+STATE_CD ............................................................................................................................................................. 190 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+8 
+Variable Details 
+This section of the codebook contains one entry for each variable in the AHC data file. Each entry contains variable 
+details to facilitate understanding and use of the variables. 
+AHC_BENE_ID 
+LABEL: 
+AHC Beneficiary Identifier 
+DESCRIPTION: Standardized nine-digit unique AHC beneficiary identifier.  
+LONG NAME:  AHC_BENE_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+9 
+SOURCE:  
+AHC data system (derived)  
+VALUES:  
+Alphanumeric character string that contains intelligence (e.g., 123019767 is the 19,767th beneficiary 
+in the AHC bridge organization B23). 
+The first digit is always 1, then the 2nd and 3rd digits are the numeric portion of the bridge organization 
+identifier (i.e., the “B” from the bridge organization ID is replaced with a “1”). The remaining 6 digits 
+are sequential numbers representing unique AHC beneficiaries. 
+COMMENT: 
+This ID is specific to the AHC Model and does not link to any other CMS data file or system. Most AHC 
+beneficiaries (94%) have a MSIS_ID or CCW BENE_ID that may be used to join to other CCW Medicaid 
+(T-MSIS) or Medicare data files. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+9 
+AHC_BRDG_ORG_ID 
+LABEL: 
+AHC Bridge Organization Identifier 
+DESCRIPTION: Each organization participating in the AHC program was assigned an AHC bridge organization 
+identifier. 
+LONG NAME:  AHC_BRDG_ORG_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+3 
+SOURCE:  
+AHC data system 
+VALUES:  
+Alphanumeric character string (e.g., B05) 
+COMMENT: 
+This is an identifier assigned within the AHC data system and cannot be linked to any other data set. 
+The AHC bridge organization assigned “B09” voluntarily terminated before the AHC model began. 
+Three other bridge organizations voluntarily terminated before the AHC Model ended. Specifically, 
+B15 ended participation on 5/1/2019, B21 ended participation on 9/1/2019, and B13 ended 
+participation on 11/1/2020. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+10 
+AHC_BRDG_ORG_STATE_CD 
+LABEL: 
+AHC Bridge Organization State 
+DESCRIPTION: AHC bridge organization state. 
+LONG NAME:  AHC_BRDG_ORG_STATE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE:  
+AHC data system 
+VALUES:  
+AZ = Arizona 
+CO = Colorado 
+CT = Connecticut 
+GA = Georgia 
+HI = Hawaii 
+IL = Illinois 
+IN = Indiana 
+KY = Kentucky 
+MD = Maryland 
+MI = Michigan 
+MN = Minnesota 
+MS = Mississippi 
+NJ = New Jersey 
+NM = New Mexico 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+RI = Rhode Island 
+TX = Texas 
+VA = Virginia 
+WV = West Virginia 
+COMMENT: 
+— 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+11 
+AHC_TRK_CD 
+LABEL: 
+AHC Assistance or Alignment Track 
+DESCRIPTION: AHC assistance or alignment track. 
+LONG NAME:  AHC_TRK_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Assistance 
+2 = Alignment 
+COMMENT: 
+Bridge organizations participated in one of two AHC model tracks.  
+1. The assistance track identified and randomly assigned to an intervention or control group all 
+navigation-eligible Medicare and Medicaid beneficiaries. They provided navigation services to 
+those assigned to the intervention group, which involved development of an individualized action 
+plan and guidance and support by navigators to help beneficiaries connect with community 
+service providers (CSPs) that could help resolve their health-related social needs (HRSNs).  
+2. The alignment track expanded upon the assistance track intervention by also requiring an advisory 
+board. Bridge organizations comprised their advisory boards with beneficiaries, health care 
+partners, and community service organizations and charged them with identifying and addressing 
+gaps in community services relative to community needs. Due to the community alignment aspect 
+of the intervention, the alignment track did not have a control group. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+12 
+BENE_AGE_NUM 
+LABEL: 
+Beneficiary Age at Screening 
+DESCRIPTION: Beneficiary age at screening. 
+LONG NAME:  BENE_AGE_NUM 
+TYPE: 
+NUM 
+LENGTH:  
+3 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0–118 
+COMMENT: 
+Calculated field — screen date minus date of birth. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+13 
+BENE_BIRTH_DT 
+LABEL: 
+Beneficiary Birth Date 
+DESCRIPTION: Beneficiary birth date. 
+LONG NAME:  BENE_BIRTH_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+Format: DDMONYYYY (e.g., 04MAY1951) 
+COMMENT: 
+If the beneficiary was successfully linked to Medicare claims data, the date of birth from the Medicare 
+enrollment files was used. If the beneficiary was linked to Medicaid claims data, but not Medicare 
+claims data, the date of birth from the Medicaid enrollment files was used. If the beneficiary was not 
+linked to either Medicare or Medicaid claims data, the date of birth from the AHC screening and 
+navigation data was used.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+14 
+BENE_EDCTN_CD 
+LABEL: 
+Beneficiary Education 
+DESCRIPTION: Beneficiary education level code. 
+LONG NAME:  BENE_EDCTN_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Less than High School Degree 
+2 = High School Graduate or Equivalent 
+3 = Some College 
+4 = College Graduate 
+Missing 
+COMMENT: 
+Nearly one-third (31%) of screenings have a missing value. 
+  ^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+15 
+BENE_GNDR_CD 
+LABEL: 
+Beneficiary Sex 
+DESCRIPTION: Beneficiary sex code. 
+LONG NAME:  BENE_GNDR_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Female 
+2 = Male 
+Missing 
+COMMENT: 
+— 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+16 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary Identifier  
+DESCRIPTION: Encrypted CCW beneficiary identifier. 
+LONG NAME:  BENE_ID 
+TYPE: 
+CHAR  
+LENGTH:  
+15 
+SOURCE:  
+AHC data system/CCW (derived) 
+VALUES:  
+15-character alphanumeric string (Ex. 22222222GDDGjJs) 
+Null/missing = not enough identifying information to associate with a CCW BENE_ID 
+COMMENT: 
+The AHC Bridge organizations obtained Medicare beneficiary identifying information (e.g., Medicare ID 
+card [i.e. Health Insurance Claim Number or HIC, first and last name, date of birth) that the CMS AHC 
+Model used to identify a CCW BENE_ID using an internal “crosswalk” process. A BENE_ID was not 
+always obtained. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+Within the AHC data file, unique beneficiaries are identified using the AHC_BENE_ID. You would only 
+use the BENE_ID or MSIS_ID if you were attempting to link AHC data to other CCW data files. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+17 
+BENE_INCM_RNG_CD 
+LABEL: 
+Beneficiary Income 
+DESCRIPTION: Beneficiary income range code. 
+LONG NAME:  BENE_INCM_RNG_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Less than $10,000 
+2 = $10,000 - $14,999 
+3 = $15,000 - $19,999 
+4 = $20,000 - $24,999 
+5 = $25,000 - $34,999 
+6 = $35,000 - $49,999 
+7 = $50,000 - $74,999 
+8 = $75,000 or more 
+Missing 
+COMMENT: 
+More than half (54%) of screenings have a missing value. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+18 
+BENE_INSRNC_TYPE_CD 
+LABEL: 
+Beneficiary Payer Type 
+DESCRIPTION: Beneficiary payer type code. 
+LONG NAME:  BENE_INSRNC_TYPE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+CCW 
+VALUES:  
+1 = Medicare only 
+2 = Medicaid only 
+3 = Dually eligible for Medicare and Medicaid 
+Missing 
+COMMENT: 
+— 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+19 
+BENE_PREFRD_LANG_TXT 
+LABEL: 
+Beneficiary Preferred Language 
+DESCRIPTION: Beneficiary preferred language. 
+LONG NAME:  BENE_PREFRD_LANG_TXT 
+TYPE: 
+CHAR 
+LENGTH:  
+15 
+SOURCE:  
+AHC data system 
+VALUES:  
+ 
+Arabic 
+Armenian 
+Chinese 
+English 
+French 
+German 
+Greek 
+Gujarati 
+Hebrew 
+Hindi 
+Italian 
+Japanese 
+Khmer 
+Korean 
+Other 
+Persian 
+Polish 
+Portuguese 
+Russian 
+Serbo-Croatian 
+Spanish 
+Tagalog 
+Thai 
+Urdu 
+Vietnamese 
+Yiddish 
+Missing
+ 
+COMMENT: 
+This field is populated with the full name of the language rather than an abbreviation. This field was 
+added to the AHC data system in 2021, 3 years after bridge organizations began screening, and is 
+missing for 76% of screenings.  
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+20 
+BENE_RACE_ETHNCTY_CD 
+LABEL: 
+Beneficiary Race and Ethnicity 
+DESCRIPTION: Beneficiary race and ethnicity code. 
+LONG NAME:  BENE_RACE_ETHNCTY_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+CCW 
+VALUES:  
+1 = American Indian or Alaska Native 
+2 = Asian or Hawaiian or Other Pacific Islander 
+3 = Black or African American 
+4 = Hispanic or Latino 
+5 = White 
+6 = Other Race 
+Null/Missing 
+COMMENT: 
+If the beneficiary was successfully linked to Medicare claims data, race and ethnicity from the 
+Medicare enrollment files was used. If the beneficiary was linked to Medicaid claims data, but not 
+Medicare claims data, race and ethnicity from the Medicaid enrollment files was used. If the 
+beneficiary was not linked to either Medicare or Medicaid claims data, race and ethnicity from the 
+AHC screening and navigation data was used. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+21 
+BENE_STATE_CD 
+LABEL: 
+Beneficiary State 
+DESCRIPTION: The state code for the beneficiary. 
+LONG NAME:  BENE_STATE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE:  
+AHC data system 
+VALUES:  
+Two-character postal state code 
+AE = US Armed Forces in Europe, the 
+Middle East, Africa and Canada 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AS = American Samoa 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MP = Northern Mariana Islands 
+MS = Mississippi 
+MT = Montana 
+NC =North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands  
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+Null = Unknown
+COMMENT: 
+A small number of beneficiaries did not live in the same state as the bridge organization by which they 
+were screened. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+22 
+BENE_ZIP_CD 
+LABEL: 
+Beneficiary ZIP Code 
+DESCRIPTION: Beneficiary ZIP code. 
+LONG NAME:  BENE_ZIP_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+5 
+SOURCE:  
+AHC data system 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+23 
+MSIS_ID 
+LABEL: 
+Encrypted Medicaid State Assigned Beneficiary Unique Identifier 
+DESCRIPTION: A state-assigned unique identification number used to identify a Medicaid/CHIP enrolled beneficiary 
+and any claims submitted to the system. Also referred to as the Medicaid Statistical Information 
+System Identifier (MSIS_ID). Encrypted Medicaid state-assigned beneficiary unique identifier. 
+LONG NAME:  MSIS_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+32 
+SOURCE:  
+AHC data system 
+CCW (derived) 
+VALUES:  
+Alphanumeric character string, up to 20 characters 
+(Ex. 9Q81866B302C768A539B) 
+Null/missing = source value is missing or unknown 
+COMMENT: 
+The AHC Bridge organizations obtained Medicaid beneficiary identifying information (e.g., Medicaid ID 
+card, state, zip code, first and last name, date of birth) that the CMS AHC Model used to join to the 
+CCW MSIS_ID in the Transformed Medicaid Statistical Information System (T-MSIS) Analytic Files (TAF) 
+(or in the Medicaid Analytic eXtract (MAX) files for applicable states for 2015 – which is part of a 3-
+year look back period for the AHC Model). An MSIS_ID was not always obtained. 
+Within the AHC data file, unique beneficiaries are identified using the AHC_BENE_ID. You would only 
+use the BENE_ID or MSIS_ID if you were attempting to link AHC data to other CCW data files. For these 
+linkages, MSIS_ID must be combined with STATE_CD to uniquely identify a beneficiary. The reference 
+year (MSIS_RFRNC_YR) field identifies the earliest year the MSIS_ID was identified during the AHC 
+study period. 
+This variable is encrypted in the CCW and may not be joined to any other data sets without CMS 
+permission.  
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+24 
+MSIS_RFRNC_YR 
+LABEL: 
+Medicaid Beneficiary Identifier Reference Year 
+DESCRIPTION: Year the MSIS_ID in the AHC file was found in the T-MSIS claims. 
+LONG NAME:  MSIS_RFRNC_YR 
+TYPE: 
+CHAR 
+LENGTH:  
+4 
+SOURCE:  
+CCW 
+VALUES:  
+2018–2022, or  
+Null/missing = MSIS_ID was not found in T-MSIS or beneficiary was enrolled in Medicare only and not 
+Medicaid 
+COMMENT: 
+Earliest year associated with the MSIS_ID for the beneficiary during the AHC study period. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+25 
+NC_NVGTN_ACTN_PLAN_CMPLT_SW 
+LABEL: 
+Navigation Case Action Plan Complete Indicator 
+DESCRIPTION: Navigation case (NC) action plan complete indicator. This field indicates whether a navigator 
+developed a personalized action plan for addressing HRSNs with the beneficiary who opted in for 
+navigation services. 
+LONG NAME:  NC_NVGTN_ACTN_PLAN_CMPLT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+This was not a required field until October 2019, so if a beneficiary has a missing value, it does not 
+necessarily mean the navigator did not work with the beneficiary to complete a personalized action 
+plan. It is possible the navigator and beneficiary completed the personalized action plan but did not 
+document it in the AHC data system. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+26 
+NC_NVGTN_CASE_ID 
+LABEL: 
+Navigation Case Unique Identifier 
+DESCRIPTION: Navigation case (NC) standardized nine-digit unique navigation case identifier. 
+LONG NAME:  NC_NVGTN_CASE_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+9 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+Alphanumeric character string that contains intelligence (e.g., 323006639 is the 6,639th navigation 
+case for the AHC bridge organization B23). 
+The first digit is always 3, then the 2nd and 3rd digits are the numeric portion of the bridge organization 
+identifier (i.e., the “B” from the bridge organization ID is replaced with a “3”). The remaining 6 digits 
+are sequential numbers representing the navigation cases within the bridge organization. 
+COMMENT: 
+For each navigation-eligible beneficiary who opted in for navigation, the bridge organization opened a 
+“navigation case,” assigned a case ID. The bridge organization provided navigation services for up to 
+12 months. 
+This ID is specific to the AHC Model and does not link to any other CMS data file or system. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+27 
+NC_NVGTN_CASE_STRT_DT 
+LABEL: 
+Navigation Case Opt In Date 
+DESCRIPTION: Navigation case (NC) opt in date. 
+LONG NAME:  NC_NVGTN_CASE_STRT_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+AHC data system 
+VALUES:  
+Format: DDMONYYYY (e.g., 21DEC2019) 
+COMMENT: 
+Dates are from May 3, 2018–April 24, 2023. 
+For each navigation-eligible beneficiary who opted in for and received navigation services (i.e., non-
+missing NC_NVGTN_CASE_ID), this field indicates the date the navigation case was opened. Toward 
+the end of the model, CMS advised bridge organizations to try to provide at least 3 months of 
+navigation to those who opted in for navigation services.  
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+28 
+NC_NVGTN_CASE_TRMNTN_DT 
+LABEL: 
+Navigation Case termination date 
+DESCRIPTION: Navigation case (NC) termination date. 
+LONG NAME:  NC_NVGTN_CASE_TRMNTN_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+Format: DDMONYYYY (e.g., 20DEC2020) 
+COMMENT: 
+Dates are from October 8, 2018–April 3, 2023 
+For each navigation-eligible beneficiary who was eligible for navigation and who opted in for and 
+received navigation (i.e., non-missing NC_NVGTN_CASE_ID), this field indicates the date the navigation 
+case terminated. Toward the end of the model, CMS advised bridge organizations to try to provide at 
+least 3 months of navigation to those who opted in for navigation services. The termination dates for 
+any navigation cases still open when the bridge organization ended participation were set to the last 
+day of the bridge organization’s participation (reference Appendix B in the AHC User Guide for start 
+and end dates for each bridge organization). 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+29 
+NE_NVGTR_AVG_CNTCT_MNTS_NUM 
+LABEL: 
+Average duration of successful contacts with beneficiary 
+DESCRIPTION: Navigator event (NE) summarizing the average duration (in minutes) of successful contacts between 
+the navigator and the beneficiary. 
+LONG NAME:  NE_NVGTR_AVG_CNTCT_MNTS_NUM 
+TYPE: 
+NUM 
+LENGTH:  
+5 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+FORMAT: XX.XX (e.g., 5.91, 15.00), expressed in minutes  
+Missing 
+COMMENT: 
+Range is from 5–30 minutes. The values for the raw variable were 5 minutes, 15 minutes, 30 minutes, 
+and more than 30 minutes. Values of more than 30 minutes were coded as 30 minutes. CMS did not 
+require bridge organizations to report navigation contacts in the AHC data system, so 
+NE_NVGTR_AVG_CNTCT_MNTS_NUM may not reflect the duration of all contacts for all beneficiaries 
+navigated across all bridge organizations. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+30 
+NE_NVGTR_CNTCT_ATMPT_NUM 
+LABEL: 
+Number of navigator attempts to contact beneficiary (successful or not) 
+DESCRIPTION: Navigator event (NE) summarizing the total number of navigator attempts to contact beneficiary 
+(successful or not). 
+LONG NAME:  NE_NVGTR_CNTCT_ATMPT_NUM 
+TYPE: 
+NUM 
+LENGTH:  
+2 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+1–67 
+Missing 
+COMMENT: 
+CMS did not require bridge organizations to report navigation contacts in the AHC data system, so 
+NE_NVGTR_CNTCT_ATMPT_NUM may not reflect all attempts at contacting beneficiaries navigated 
+across all bridge organizations. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+31 
+NE_NVGTR_SUCSFL_CNTCT_NUM 
+LABEL: 
+Number of navigator successful contacts with beneficiary 
+DESCRIPTION: Navigator event (NE) summarizing the total number of navigator successful contacts with beneficiary. 
+LONG NAME:  NE_NVGTR_SUCSFL_CNTCT_NUM 
+TYPE: 
+NUM 
+LENGTH:  
+2 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0–57 
+Missing 
+COMMENT: 
+CMS did not require bridge organizations to report navigation contacts in the AHC Data System, so 
+NE_NVGTR_SUCSFL_CNTCT_NUM may not reflect all successful contacts for all beneficiaries navigated 
+across all bridge organizations. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+32 
+NN_CORE_1_CNCTED_TO_CSP_SW 
+LABEL: 
+At Least 1 Core HRSN Connected to CSP, None Resolved 
+DESCRIPTION: Navigation needs (NN): beneficiary had at least one navigated core health related social need 
+(HRSN)connected to community service providers (CSPs); none resolved. 
+LONG NAME:  NN_CORE_1_CNCTED_TO_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services.  
+Whether the beneficiary had at least one HRSN resolved (NN_CORE_1_RSLVD_SW) or connected with 
+a CSP for at least one of their navigated HRSNs but had no HRSNs resolved 
+(NN_CORE_1_CNCTED_TO_CSP_SW) are mutually exclusive.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+33 
+NN_CORE_1_RSLVD_SW 
+LABEL: 
+At Least 1 Core HRSN Resolved 
+DESCRIPTION: Navigation needs (NN): beneficiary had at least one navigated core health related social need (HRSN) 
+resolved 
+LONG NAME:  NN_CORE_1_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services.  
+Whether the beneficiary had at least one HRSN resolved (NN_CORE_1_RSLVD_SW) or connected with 
+a community service provider (CSP) for at least one of their navigated HRSNs but had no HRSNs 
+resolved (NN_CORE_1_CNCTED_TO_CSP_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+34 
+NN_CORE_ALL_CNCTED_TO_CSP_SW 
+LABEL: 
+All Core HRSNs: Connected to CSP 
+DESCRIPTION: Navigation needs (NN): all navigated core health related social needs (HRSNs) connected to 
+community service provider (CSP). 
+LONG NAME:  NN_CORE_ALL_CNCTED_TO_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+ 
+Navigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, 
+NN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and 
+NN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive.  
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+35 
+NN_CORE_ALL_CSP_UNAVLBL_SW 
+LABEL: 
+All Core HRSNs: CSP Unavailable or Unable to Help 
+DESCRIPTION: Navigation needs (NN): all navigated core health related social needs (HRSNs) community service 
+provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_CORE_ALL_CSP_UNAVLBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, 
+NN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and 
+NN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+36 
+NN_CORE_ALL_OPTOUT_NVGTN_SW 
+LABEL: 
+All Core HRSNs: Opted Out of Further Navigation Services 
+DESCRIPTION: Navigation needs (NN): all navigated core health related social needs (HRSNs); opted out of further 
+navigation services. 
+LONG NAME:  NN_CORE_ALL_OPTOUT_NVGTN_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, 
+NN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and 
+NN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+37 
+NN_CORE_ALL_OUTCM_UNK_SW 
+LABEL: 
+All Core HRSNs: Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): all navigated core health related social needs (HRSNs); outcome unknown. 
+LONG NAME:  NN_CORE_ALL_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, 
+NN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and 
+NN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive. 
+ 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+38 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW 
+LABEL: 
+All Core HRSNs: Attempt to Reach Failed 
+DESCRIPTION: Navigation needs (NN): all navigated core health related social needs (HRSNs); attempt to reach failed. 
+LONG NAME:  NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, 
+NN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and 
+NN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+39 
+NN_CORE_ALL_RSLVD_SW 
+LABEL: 
+All Core HRSNs Resolved 
+DESCRIPTION: Navigation needs (NN): all navigated core health related social needs (HRSNs) resolved. 
+LONG NAME:  NN_CORE_ALL_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, 
+NN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, 
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and 
+NN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+40 
+NN_CORE_FOOD_CNCT_CSP_SW 
+LABEL: 
+Navigated Core HRSN Food Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated core health related social needs (HRSNs) food connected to 
+community service provider (CSP). 
+LONG NAME:  NN_CORE_FOOD_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the food HRSN (i.e., NN_CORE_FOOD_RSLVD_SW, 
+NN_CORE_FOOD_CNCT_CSP_SW, NN_CORE_FOOD_OPTOUT_SW, NN_CORE_FOOD_CNTCT_FAIL_SW, 
+NN_CORE_FOOD_CSP_UNAVBL_SW, and NN_CORE_FOOD_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+41 
+NN_CORE_FOOD_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Core HRSN Food Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food attempts to reach 
+failed. 
+LONG NAME:  NN_CORE_FOOD_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the food HRSN (i.e., NN_CORE_FOOD_RSLVD_SW, 
+NN_CORE_FOOD_CNCT_CSP_SW, NN_CORE_FOOD_OPTOUT_SW, NN_CORE_FOOD_CNTCT_FAIL_SW, 
+NN_CORE_FOOD_CSP_UNAVBL_SW, and NN_CORE_FOOD_OUTCM_UNK_SW) are mutually exclusive. 
+ 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+42 
+NN_CORE_FOOD_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Core HRSN Food Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food community service 
+provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_CORE_FOOD_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the food HRSN (i.e., NN_CORE_FOOD_RSLVD_SW, 
+NN_CORE_FOOD_CNCT_CSP_SW, NN_CORE_FOOD_OPTOUT_SW, NN_CORE_FOOD_CNTCT_FAIL_SW, 
+NN_CORE_FOOD_CSP_UNAVBL_SW, and NN_CORE_FOOD_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+43 
+NN_CORE_FOOD_OPTOUT_SW 
+LABEL: 
+Navigated Core HRSN Food Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food opted out of further 
+navigation services. 
+LONG NAME:  NN_CORE_FOOD_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the food HRSN (i.e., NN_CORE_FOOD_RSLVD_SW, 
+NN_CORE_FOOD_CNCT_CSP_SW, NN_CORE_FOOD_OPTOUT_SW, NN_CORE_FOOD_CNTCT_FAIL_SW, 
+NN_CORE_FOOD_CSP_UNAVBL_SW, and NN_CORE_FOOD_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+44 
+NN_CORE_FOOD_OUTCM_UNK_SW 
+LABEL: 
+Navigated Core HRSN Food Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food outcome unknown. 
+LONG NAME:  NN_CORE_FOOD_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the food HRSN (i.e., NN_CORE_FOOD_RSLVD_SW, 
+NN_CORE_FOOD_CNCT_CSP_SW, NN_CORE_FOOD_OPTOUT_SW, NN_CORE_FOOD_CNTCT_FAIL_SW, 
+NN_CORE_FOOD_CSP_UNAVBL_SW, and NN_CORE_FOOD_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+45 
+NN_CORE_FOOD_RSLVD_SW 
+LABEL: 
+Navigated Core HRSN Food Resolved 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food resolved. 
+LONG NAME:  NN_CORE_FOOD_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the food HRSN (i.e., NN_CORE_FOOD_RSLVD_SW, 
+NN_CORE_FOOD_CNCT_CSP_SW, NN_CORE_FOOD_OPTOUT_SW, NN_CORE_FOOD_CNTCT_FAIL_SW, 
+NN_CORE_FOOD_CSP_UNAVBL_SW, and NN_CORE_FOOD_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+46 
+NN_CORE_HOUSNG_CNCT_CSP_SW 
+LABEL: 
+Navigated Core HRSN Housing Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing connected to 
+community service provider (CSP). 
+LONG NAME:  NN_CORE_HOUSNG_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the housing HRSN (i.e., NN_CORE_HOUSNG_RSLVD_SW, 
+NN_CORE_HOUSNG CNCT_CSP_SW, NN_CORE_HOUSNG_OPTOUT_SW, 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW, NN_CORE_HOUSNG_CSP_UNAVBL_SW, and 
+NN_CORE_HOUSNG_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+47 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Core HRSN Housing Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing attempts to reach 
+failed. 
+LONG NAME:  NN_CORE_HOUSNG_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the housing HRSN (i.e., NN_CORE_HOUSNG_RSLVD_SW, 
+NN_CORE_HOUSNG CNCT_CSP_SW, NN_CORE_HOUSNG_OPTOUT_SW, 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW, NN_CORE_HOUSNG_CSP_UNAVBL_SW, and 
+NN_CORE_HOUSNG_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+48 
+NN_CORE_HOUSNG_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Core HRSN Housing Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing community service 
+provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_CORE_HOUSNG_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the housing HRSN (i.e., NN_CORE_HOUSNG_RSLVD_SW, 
+NN_CORE_HOUSNG CNCT_CSP_SW, NN_CORE_HOUSNG_OPTOUT_SW, 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW, NN_CORE_HOUSNG_CSP_UNAVBL_SW, and 
+NN_CORE_HOUSNG_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+49 
+NN_CORE_HOUSNG_OPTOUT_SW 
+LABEL: 
+Navigated Core HRSN Housing Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing opted out of further 
+navigation services. 
+LONG NAME:  NN_CORE_HOUSNG_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the housing HRSN (i.e., NN_CORE_HOUSNG_RSLVD_SW, 
+NN_CORE_HOUSNG CNCT_CSP_SW, NN_CORE_HOUSNG_OPTOUT_SW, 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW, NN_CORE_HOUSNG_CSP_UNAVBL_SW, and 
+NN_CORE_HOUSNG_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+50 
+NN_CORE_HOUSNG_OUTCM_UNK_SW 
+LABEL: 
+Navigated Core HRSN Housing Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing outcome unknown. 
+LONG NAME:  NN_CORE_HOUSNG_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the housing HRSN (i.e., NN_CORE_HOUSNG_RSLVD_SW, 
+NN_CORE_HOUSNG CNCT_CSP_SW, NN_CORE_HOUSNG_OPTOUT_SW, 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW, NN_CORE_HOUSNG_CSP_UNAVBL_SW, and 
+NN_CORE_HOUSNG_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+51 
+NN_CORE_HOUSNG_RSLVD_SW 
+LABEL: 
+Navigated Core HRSN Housing Resolved 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing resolved. 
+LONG NAME:  NN_CORE_HOUSNG_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the housing HRSN (i.e., NN_CORE_HOUSNG_RSLVD_SW, 
+NN_CORE_HOUSNG CNCT_CSP_SW, NN_CORE_HOUSNG_OPTOUT_SW, 
+NN_CORE_HOUSNG_CNTCT_FAIL_SW, NN_CORE_HOUSNG_CSP_UNAVBL_SW, and 
+NN_CORE_HOUSNG_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+52 
+NN_CORE_SFTY_CNCT_CSP_SW 
+LABEL: 
+Navigated Core HRSN Safety Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety connected to 
+community service provider (CSP). 
+LONG NAME:  NN_CORE_SFTY_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the safety HRSN (i.e., NN_CORE_SFTY_RSLVD_SW, NN_CORE_SFTY 
+CNCT_CSP_SW, NN_CORE_SFTY_OPTOUT_SW, NN_CORE_SFTY_CNTCT_FAIL_SW, 
+NN_CORE_SFTY_CSP_UNAVBL_SW, and NN_CORE_SFTY_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+53 
+NN_CORE_SFTY_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Core HRSN Safety Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety attempts to reach 
+failed. 
+LONG NAME:  NN_CORE_SFTY_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the safety HRSN (i.e., NN_CORE_SFTY_RSLVD_SW, NN_CORE_SFTY 
+CNCT_CSP_SW, NN_CORE_SFTY_OPTOUT_SW, NN_CORE_SFTY_CNTCT_FAIL_SW, 
+NN_CORE_SFTY_CSP_UNAVBL_SW, and NN_CORE_SFTY_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+54 
+NN_CORE_SFTY_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Core HRSN Safety Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety community service 
+provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_CORE_SFTY_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the safety HRSN (i.e., NN_CORE_SFTY_RSLVD_SW, NN_CORE_SFTY 
+CNCT_CSP_SW, NN_CORE_SFTY_OPTOUT_SW, NN_CORE_SFTY_CNTCT_FAIL_SW, 
+NN_CORE_SFTY_CSP_UNAVBL_SW, and NN_CORE_SFTY_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+55 
+NN_CORE_SFTY_OPTOUT_SW 
+LABEL: 
+Navigated Core HRSN Safety Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety opted out. 
+LONG NAME:  NN_CORE_SFTY_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the safety HRSN (i.e., NN_CORE_SFTY_RSLVD_SW, NN_CORE_SFTY 
+CNCT_CSP_SW, NN_CORE_SFTY_OPTOUT_SW, NN_CORE_SFTY_CNTCT_FAIL_SW, 
+NN_CORE_SFTY_CSP_UNAVBL_SW, and NN_CORE_SFTY_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+56 
+NN_CORE_SFTY_OUTCM_UNK_SW 
+LABEL: 
+Navigated Core HRSN Safety Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety outcome unknown. 
+LONG NAME:  NN_CORE_SFTY_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the safety HRSN (i.e., NN_CORE_SFTY_RSLVD_SW, NN_CORE_SFTY 
+CNCT_CSP_SW, NN_CORE_SFTY_OPTOUT_SW, NN_CORE_SFTY_CNTCT_FAIL_SW, 
+NN_CORE_SFTY_CSP_UNAVBL_SW, and NN_CORE_SFTY_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+57 
+NN_CORE_SFTY_RSLVD_SW 
+LABEL: 
+Navigated Core HRSN Safety Resolved 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety resolved. 
+LONG NAME:  NN_CORE_SFTY_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the safety HRSN (i.e., NN_CORE_SFTY_RSLVD_SW, NN_CORE_SFTY 
+CNCT_CSP_SW, NN_CORE_SFTY_OPTOUT_SW, NN_CORE_SFTY_CNTCT_FAIL_SW, 
+NN_CORE_SFTY_CSP_UNAVBL_SW, and NN_CORE_SFTY_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+58 
+NN_CORE_TRNSPRTN_CNCT_CSP_SW 
+LABEL: 
+Navigated Core HRSN Transportation Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation connected to 
+community service provider (CSP). 
+LONG NAME:  NN_CORE_TRNSPRTN_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the transportation HRSN (i.e., NN_CORE_TRNSPRTN_RSLVD_SW, 
+NN_CORE_TRNSPRT CNCT_CSP_SW, NN_CORE_TRNSPRTN_OPTOUT_SW, 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW, NN_CORE_TRNSPRTN_CSP_UNAVBL_SW, and 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+59 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Core HRSN Transportation Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation attempts to 
+reach failed. 
+LONG NAME:  NN_CORE_TRNSPRTN_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the transportation HRSN (i.e., NN_CORE_TRNSPRTN_RSLVD_SW, 
+NN_CORE_TRNSPRT CNCT_CSP_SW, NN_CORE_TRNSPRTN_OPTOUT_SW, 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW, NN_CORE_TRNSPRTN_CSP_UNAVBL_SW, and 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+60 
+NN_CORE_TRNSPRTN_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Core HRSN Transportation Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation community 
+service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_CORE_TRNSPRTN_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the transportation HRSN (i.e., NN_CORE_TRNSPRTN_RSLVD_SW, 
+NN_CORE_TRNSPRT CNCT_CSP_SW, NN_CORE_TRNSPRTN_OPTOUT_SW, 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW, NN_CORE_TRNSPRTN_CSP_UNAVBL_SW, and 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+61 
+NN_CORE_TRNSPRTN_OPTOUT_SW 
+LABEL: 
+Navigated Core HRSN Transportation Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation opted out of 
+further navigation services. 
+LONG NAME:  NN_CORE_TRNSPRTN_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the transportation HRSN (i.e., NN_CORE_TRNSPRTN_RSLVD_SW, 
+NN_CORE_TRNSPRT CNCT_CSP_SW, NN_CORE_TRNSPRTN_OPTOUT_SW, 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW, NN_CORE_TRNSPRTN_CSP_UNAVBL_SW, and 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+62 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW 
+LABEL: 
+Navigated Core HRSN Transportation Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation outcome 
+unknown. 
+LONG NAME:  NN_CORE_TRNSPRTN_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the transportation HRSN (i.e., NN_CORE_TRNSPRTN_RSLVD_SW, 
+NN_CORE_TRNSPRT CNCT_CSP_SW, NN_CORE_TRNSPRTN_OPTOUT_SW, 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW, NN_CORE_TRNSPRTN_CSP_UNAVBL_SW, and 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+63 
+NN_CORE_TRNSPRTN_RSLVD_SW 
+LABEL: 
+Navigated Core HRSN Transportation Resolved 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation resolved. 
+LONG NAME:  NN_CORE_TRNSPRTN_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the transportation HRSN (i.e., NN_CORE_TRNSPRTN_RSLVD_SW, 
+NN_CORE_TRNSPRT CNCT_CSP_SW, NN_CORE_TRNSPRTN_OPTOUT_SW, 
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW, NN_CORE_TRNSPRTN_CSP_UNAVBL_SW, and 
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW) are mutually exclusive. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+64 
+NN_CORE_UTILITIES_CNCT_CSP_SW 
+LABEL: 
+Navigated Core HRSN Utilities Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities connected to 
+community service provider (CSP). 
+LONG NAME:  NN_CORE_UTILITIES_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the utility HRSN (i.e., NN_CORE_UTILITIES_RSLVD_SW, 
+NN_CORE_UTILITIES CNCT_CSP_SW, NN_CORE_UTILITIES_OPTOUT_SW, 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW, NN_CORE_UTILITIES_CSP_UNAVBL_SW, and 
+NN_CORE_UTILITIES_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+65 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Core HRSN Utilities Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities attempts to reach 
+failed. 
+LONG NAME:  NN_CORE_UTILITIES_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the utility HRSN (i.e., NN_CORE_UTILITIES_RSLVD_SW, 
+NN_CORE_UTILITIES CNCT_CSP_SW, NN_CORE_UTILITIES_OPTOUT_SW, 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW, NN_CORE_UTILITIES_CSP_UNAVBL_SW, and 
+NN_CORE_UTILITIES_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+66 
+NN_CORE_UTILITIES_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Core HRSN Utilities Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities community service 
+provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_CORE_UTILITIES_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the utility HRSN (i.e., NN_CORE_UTILITIES_RSLVD_SW, 
+NN_CORE_UTILITIES CNCT_CSP_SW, NN_CORE_UTILITIES_OPTOUT_SW, 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW, NN_CORE_UTILITIES_CSP_UNAVBL_SW, and 
+NN_CORE_UTILITIES_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+67 
+NN_CORE_UTILITIES_OPTOUT_SW 
+LABEL: 
+Navigated Core HRSN Utilities Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities opted out of further 
+navigation services. 
+LONG NAME:  NN_CORE_UTILITIES_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the utility HRSN (i.e., NN_CORE_UTILITIES_RSLVD_SW, 
+NN_CORE_UTILITIES CNCT_CSP_SW, NN_CORE_UTILITIES_OPTOUT_SW, 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW, NN_CORE_UTILITIES_CSP_UNAVBL_SW, and 
+NN_CORE_UTILITIES_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+68 
+NN_CORE_UTILITIES_OUTCM_UNK_SW 
+LABEL: 
+Navigated Core HRSN Utilities Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities outcome unknown. 
+LONG NAME:  NN_CORE_UTILITIES_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the utility HRSN (i.e., NN_CORE_UTILITIES_RSLVD_SW, 
+NN_CORE_UTILITIES CNCT_CSP_SW, NN_CORE_UTILITIES_OPTOUT_SW, 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW, NN_CORE_UTILITIES_CSP_UNAVBL_SW, and 
+NN_CORE_UTILITIES_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+69 
+NN_CORE_UTILITIES_RSLVD_SW 
+LABEL: 
+Navigated Core HRSN Utilities Resolved 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities resolved. 
+LONG NAME:  NN_CORE_UTILITIES_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+Navigation outcome variables the utility HRSN (i.e., NN_CORE_UTILITIES_RSLVD_SW, 
+NN_CORE_UTILITIES CNCT_CSP_SW, NN_CORE_UTILITIES_OPTOUT_SW, 
+NN_CORE_UTILITIES_CNTCT_FAIL_SW, NN_CORE_UTILITIES_CSP_UNAVBL_SW, and 
+NN_CORE_UTILITIES_OUTCM_UNK_SW) are mutually exclusive. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+70 
+NN_NVGTD_CORE_FOOD_SW 
+LABEL: 
+Navigated Core HRSN Food Indicator 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food indicator. 
+LONG NAME:  NN_NVGTD_CORE_FOOD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+71 
+NN_NVGTD_CORE_HOUSNG_SW 
+LABEL: 
+Navigated Core HRSN Housing Indicator 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) housing indicator. 
+LONG NAME:  NN_NVGTD_CORE_HOUSNG_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+72 
+NN_NVGTD_CORE_SFTY_SW 
+LABEL: 
+Navigated Core HRSN Safety Indicator 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) safety indicator. 
+LONG NAME:  NN_NVGTD_CORE_SFTY_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+73 
+NN_NVGTD_CORE_TRNSPRTN_SW 
+LABEL: 
+Navigated Core HRSN Transportation Indicator 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) transportation indicator. 
+LONG NAME:  NN_NVGTD_CORE_TRNSPRTN_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+74 
+NN_NVGTD_CORE_UTILITIES_SW 
+LABEL: 
+Navigated Core HRSN Utilities Indicator 
+DESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities indicator. 
+LONG NAME:  NN_NVGTD_CORE_UTILITIES_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+75 
+NN_NVGTD_SPLMTL_DSBLTY_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_DSBLTY_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+76 
+NN_NVGTD_SPLMTL_EDCTN_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_EDCTN_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+77 
+NN_NVGTD_SPLMTL_EMPLYMT_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment 
+indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_EMPLYMT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+78 
+NN_NVGTD_SPLMTL_FINCL_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_FINCL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+79 
+NN_NVGTD_SPLMTL_FMLY_CMNTY_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_FMLY_CMNTY_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+80 
+NN_NVGTD_SPLMTL_MH_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_MH_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+81 
+NN_NVGTD_SPLMTL_PHYS_ACTVTY_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_PHYS_ACTVTY_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+82 
+NN_NVGTD_SPLMTL_SBSTNC_USE_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Indicator 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+indicator. 
+LONG NAME:  NN_NVGTD_SPLMTL_SBSTNC_USE_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+83 
+NN_SPLMT_FMLY_CMNT_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Connected to Community Service 
+Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMT_FMLY_CMNT_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+84 
+NN_SPLMT_FMLY_CMNT_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support attempts to reach failed. 
+LONG NAME:  NN_SPLMT_FMLY_CMNT_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+85 
+NN_SPLMT_FMLY_CMNT_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Community Service Provider Unable to 
+Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMT_FMLY_CMNT_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+86 
+NN_SPLMT_FMLY_CMNT_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support opted out of further navigation services. 
+LONG NAME:  NN_SPLMT_FMLY_CMNT_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+87 
+NN_SPLMT_FMLY_CMNT_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support outcome unknown. 
+LONG NAME:  NN_SPLMT_FMLY_CMNT_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+88 
+NN_SPLMT_FMLY_CMNT_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Family and Community Support Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) family and 
+community support resolved. 
+LONG NAME:  NN_SPLMT_FMLY_CMNT_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+89 
+NN_SPLMT_PHYS_ACT_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMT_PHYS_ACT_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+90 
+NN_SPLMT_PHYS_ACT_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+attempts to reach failed. 
+LONG NAME:  NN_SPLMT_PHYS_ACT_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+91 
+NN_SPLMT_PHYS_ACT_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMT_PHYS_ACT_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+92 
+NN_SPLMT_PHYS_ACT_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+opted out of further navigation services. 
+LONG NAME:  NN_SPLMT_PHYS_ACT_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+93 
+NN_SPLMT_PHYS_ACT_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+outcome unknown. 
+LONG NAME:  NN_SPLMT_PHYS_ACT_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+94 
+NN_SPLMT_PHYS_ACT_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Physical Activity Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) physical activity 
+resolved. 
+LONG NAME:  NN_SPLMT_PHYS_ACT_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+95 
+NN_SPLMT_SBSTN_USE_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMT_SBSTN_USE_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+96 
+NN_SPLMT_SBSTN_USE_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+attempts to reach failed. 
+LONG NAME:  NN_SPLMT_SBSTN_USE_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+97 
+NN_SPLMT_SBSTN_USE_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMT_SBSTN_USE_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+98 
+NN_SPLMT_SBSTN_USE_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+opted out of further navigation services. 
+LONG NAME:  NN_SPLMT_SBSTN_USE_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+99 
+NN_SPLMT_SBSTN_USE_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+outcome unknown. 
+LONG NAME:  NN_SPLMT_SBSTN_USE_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+100 
+NN_SPLMT_SBSTN_USE_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Substance Use Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) substance use 
+resolved. 
+LONG NAME:  NN_SPLMT_SBSTN_USE_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+101 
+NN_SPLMTL_DSBLTS_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability connected 
+to community service provider (CSP). 
+LONG NAME:  NN_SPLMTL_DSBLTS_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+102 
+NN_SPLMTL_DSBLTS_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability attempts 
+to reach failed. 
+LONG NAME:  NN_SPLMTL_DSBLTS_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+103 
+NN_SPLMTL_DSBLTS_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability 
+community service provider (CSP) unavailable or unable to help 
+LONG NAME:  NN_SPLMTL_DSBLTS_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+104 
+NN_SPLMTL_DSBLTS_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability opted out 
+of further navigation services. 
+LONG NAME:  NN_SPLMTL_DSBLTS_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+105 
+NN_SPLMTL_DSBLTS_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability outcome 
+unknown. 
+LONG NAME:  NN_SPLMTL_DSBLTS_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+106 
+NN_SPLMTL_DSBLTS_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Disability Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) disability resolved. 
+LONG NAME:  NN_SPLMTL_DSBLTS_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+107 
+NN_SPLMTL_EDCTN_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education 
+connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMTL_EDCTN_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+108 
+NN_SPLMTL_EDCTN_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education attempts 
+to reach failed. 
+LONG NAME:  NN_SPLMTL_EDCTN_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+109 
+NN_SPLMTL_EDCTN_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education 
+community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMTL_EDCTN_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+110 
+NN_SPLMTL_EDCTN_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education opted 
+out of further navigation services. 
+LONG NAME:  NN_SPLMTL_EDCTN_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+111 
+NN_SPLMTL_EDCTN_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education outcome 
+unknown. 
+LONG NAME:  NN_SPLMTL_EDCTN_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+112 
+NN_SPLMTL_EDCTN_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Education Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) education resolved. 
+LONG NAME:  NN_SPLMTL_EDCTN_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+113 
+NN_SPLMTL_EMPLYMT_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment 
+connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMTL_EMPLYMT_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+114 
+NN_SPLMTL_EMPLYMT_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment 
+attempts to reach failed. 
+LONG NAME:  NN_SPLMTL_EMPLYMT_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+115 
+NN_SPLMTL_EMPLYMT_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment 
+community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMTL_EMPLYMT_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+116 
+NN_SPLMTL_EMPLYMT_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment opted 
+out of further navigation services. 
+LONG NAME:  NN_SPLMTL_EMPLYMT_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+117 
+NN_SPLMTL_EMPLYMT_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment 
+outcome unknown. 
+LONG NAME:  NN_SPLMTL_EMPLYMT_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+118 
+NN_SPLMTL_EMPLYMT_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Employment Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) employment 
+resolved. 
+LONG NAME:  NN_SPLMTL_EMPLYMT_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+119 
+NN_SPLMTL_FINCL_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMTL_FINCL_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+120 
+NN_SPLMTL_FINCL_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+attempts to reach failed. 
+LONG NAME:  NN_SPLMTL_FINCL_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+121 
+NN_SPLMTL_FINCL_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMTL_FINCL_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+122 
+NN_SPLMTL_FINCL_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+opted out of further navigation services. 
+LONG NAME:  NN_SPLMTL_FINCL_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+123 
+NN_SPLMTL_FINCL_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+outcome unknown. 
+LONG NAME:  NN_SPLMTL_FINCL_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+124 
+NN_SPLMTL_FINCL_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Financial Strain Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) financial strain 
+resolved. 
+LONG NAME:  NN_SPLMTL_FINCL_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+125 
+NN_SPLMTL_MH_CNCT_CSP_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Connected to Community Service Provider 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+connected to community service provider (CSP). 
+LONG NAME:  NN_SPLMTL_MH_CNCT_CSP_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+126 
+NN_SPLMTL_MH_CNTCT_FAIL_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Attempts to Reach Failed 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+attempts to reach failed. 
+LONG NAME:  NN_SPLMTL_MH_CNTCT_FAIL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+127 
+NN_SPLMTL_MH_CSP_UNAVBL_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Community Service Provider Unable to Help 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+community service provider (CSP) unavailable or unable to help. 
+LONG NAME:  NN_SPLMTL_MH_CSP_UNAVBL_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+128 
+NN_SPLMTL_MH_OPTOUT_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Opted Out 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+opted out of further navigation services. 
+LONG NAME:  NN_SPLMTL_MH_OPTOUT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+129 
+NN_SPLMTL_MH_OUTCM_UNK_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Outcome Unknown 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+outcome unknown. 
+LONG NAME:  NN_SPLMTL_MH_OUTCM_UNK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+130 
+NN_SPLMTL_MH_RSLVD_SW 
+LABEL: 
+Navigated Supplemental HRSN Mental Health Resolved 
+DESCRIPTION: Navigation needs (NN): navigated supplemental health related social need (HRSN) mental health 
+resolved. 
+LONG NAME:  NN_SPLMTL_MH_RSLVD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “NN” include information for each core and supplemental HRSN for which a 
+beneficiary received navigation services. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+131 
+SR_CORE_FOOD_1_CD 
+LABEL: 
+Core HRSN Food 1: Worried Food Would Run Out Before Got Money for More 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) worried food would run out before got 
+money for more. 
+LONG NAME:  SR_CORE_FOOD_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never True 
+1 = Sometimes True 
+2 = Often True 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+Values 1 and 2 indicate positive for the core food health related social need (HRSN). 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+132 
+SR_CORE_FOOD_2_CD 
+LABEL: 
+Core HRSN Food 2: Food Bought Didn't Last and Didn't Have Money to Get More 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) food bought didn't last and didn't have 
+money to get more. 
+LONG NAME:  SR_CORE_FOOD_2_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never True 
+1 = Sometimes True 
+2 = Often True 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+ 
+Values 1 and 2 indicate positive for the core food health related social need (HRSN). 
+ 
+^ Back to TOC ^ 
+  
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+133 
+SR_CORE_FOOD_OVRL_SCRNG_IND 
+LABEL: 
+Screened Core HRSN Food Overall Indicator 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) food composite indicator. 
+LONG NAME:  SR_CORE_FOOD_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system  
+VALUES:  
+0 = Did not screen positive for food need 
+1 = Screened positive for food need 
+Missing 
+COMMENT: 
+Variable considers the two HRSN food screening questions: SR_CORE_FOOD_1_CD and 
+SR_CORE_FOOD_2_CD. This field is “1” if either of the two questions had a value of 1 = Sometimes 
+True or 2 = Often True (positive for need). 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+134 
+SR_CORE_HOUSNG_1_CD 
+LABEL: 
+Core HRSN Housing 1: Current Living Situation 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing – current living situation. 
+LONG NAME:  SR_CORE_HOUSNG_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Steady place to live 
+2 = Worried lose housing 
+3 = No steady housing 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+ 
+Values of 2 and 3 indicate positive for the core housing health related social need (HRSN). 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+135 
+SR_CORE_HOUSNG_2_HEAT_SW 
+LABEL: 
+Core HRSN Housing 2: Heat Inadequate 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing – heat is inadequate. 
+LONG NAME:  SR_CORE_HOUSNG_2_HEAT_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+136 
+SR_CORE_HOUSNG_2_LEAD_SW 
+LABEL: 
+Core HRSN Housing 2: Lead Paint Pipes 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing has lead paint or pipes. 
+LONG NAME:  SR_CORE_HOUSNG_2_LEAD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+137 
+SR_CORE_HOUSNG_2_MOLD_SW 
+LABEL: 
+Core HRSN Housing 2: Mold 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing has mold. 
+LONG NAME:  SR_CORE_HOUSNG_2_MOLD_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+138 
+SR_CORE_HOUSNG_2_OVEN_SW 
+LABEL: 
+Core HRSN Housing 2: Oven not Working 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing – oven or stove not working. 
+LONG NAME:  SR_CORE_HOUSNG_2_OVEN_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+139 
+SR_CORE_HOUSNG_2_PESTS_SW 
+LABEL: 
+Core HRSN Housing 2: Pests 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing – pests such as bugs, ants, or 
+mice. 
+LONG NAME:  SR_CORE_HOUSNG_2_PESTS_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+140 
+SR_CORE_HOUSNG_2_PRBLM_CNT 
+LABEL: 
+Core HRSN Housing 2: Number of Problems 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) Housing – count of the number of 
+problems. 
+LONG NAME:  SR_CORE_HOUSNG_2_PRBLM_CNT 
+TYPE: 
+NUM 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 – 7, or 
+Null/Missing 
+COMMENT: 
+Variables included in this count are the seven fields that begin with “SR_CORE_HOUSNG_2_*”. These 
+are: SR_CORE_HOUSNG_2_HEAT_SW, SR_CORE_HOUSNG_2_LEAD_SW, 
+SR_CORE_HOUSNG_2_MOLD_SW, SR_CORE_HOUSNG_2_OVEN_SW, 
+SR_CORE_HOUSNG_2_PESTS_SW, SR_CORE_HOUSNG_2_SMK_DTCTR_SW, and 
+SR_CORE_HOUSNG_2_WTR_LEAK_SW. 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+141 
+SR_CORE_HOUSNG_2_SCRNG_CMPST_IND 
+LABEL: 
+Core HRSN Housing 2: Problems Composite 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) composite indicator that housing has 
+problems with pests, mold, lead, heat, oven, smoke detectors, and/or water. 
+LONG NAME:  SR_CORE_HOUSNG_2_SCRNG_CMPST_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No issues with pests, mold, lead, heat, oven, smoke detectors, or water 
+1 = Has issues with pests, mold, lead, heat, oven, smoke detectors, and/or water 
+Missing 
+COMMENT: 
+Variables considered for this indicator are the seven fields that begin with “SR_CORE_HOUSNG_2_*”. 
+These are: SR_CORE_HOUSNG_2_HEAT_SW, SR_CORE_HOUSNG_2_LEAD_SW, 
+SR_CORE_HOUSNG_2_MOLD_SW, SR_CORE_HOUSNG_2_OVEN_SW, 
+SR_CORE_HOUSNG_2_PESTS_SW, SR_CORE_HOUSNG_2_SMK_DTCTR_SW, and 
+SR_CORE_HOUSNG_2_WTR_LEAK_SW. 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+142 
+SR_CORE_HOUSNG_2_SMK_DTCTR_SW 
+LABEL: 
+Core HRSN Housing 2: Smoke Detector not Working 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing has a smoke detector missing or 
+not working. 
+LONG NAME:  SR_CORE_HOUSNG_2_SMK_DTCTR_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+143 
+SR_CORE_HOUSNG_2_WTR_LEAK_SW 
+LABEL: 
+Core HRSN Housing 2: Water Leaks 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing with water leaks. 
+LONG NAME:  SR_CORE_HOUSNG_2_WTR_LEAK_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+144 
+SR_CORE_HOUSNG_OVRL_SCRNG_IND 
+LABEL: 
+Screened Core HRSN Housing Overall Indicator 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) housing – composite indicator. 
+LONG NAME:  SR_CORE_HOUSNG_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for housing need 
+1 = Screened positive for housing need 
+Missing 
+COMMENT: 
+Variables include SR_CORE_HOUSNG_1_CD (value of 2 = Worried lose housing or 3 = No steady 
+housing) and SR_CORE_HOUSNG_2_SCRNG_CMPST_IND (value of 1 = Has issues with pests, mold, 
+lead, heat, oven, smoke detectors, and/or water). This field is “1” if either of the two housing 
+questions was positive for the need.  
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+145 
+SR_CORE_SFTY_1_CD 
+LABEL: 
+Core HRSN Safety 1: How Often Physically Hurt 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) safety – how often is subject physically 
+hurt by anyone, including family and friends. 
+LONG NAME:  SR_CORE_SFTY_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Never 
+2 = Rarely 
+3 = Sometimes 
+4 = Fairly often 
+5 = Frequently 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+146 
+SR_CORE_SFTY_2_CD 
+LABEL: 
+Core HRSN Safety 2: How Often Insulted 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) safety – how often is subject insulted by 
+anyone, including family and friends. 
+LONG NAME:  SR_CORE_SFTY_2_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Never 
+2 = Rarely 
+3 = Sometimes 
+4 = Fairly Often 
+5 = Frequently 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+147 
+SR_CORE_SFTY_3_CD 
+LABEL: 
+Core HRSN Safety 3: How Often Threatened 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) safety – how often is subject threatened 
+with harm by anyone, including family and friends. 
+LONG NAME:  SR_CORE_SFTY_3_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Never 
+2 = Rarely 
+3 = Sometimes 
+4 = Fairly often 
+5 = Frequently 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+148 
+SR_CORE_SFTY_4_CD 
+LABEL: 
+Core HRSN Safety 4: How Often Screamed or Cursed At 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) safety – how often is subject screamed or 
+cursed at by anyone, including family and friends. 
+LONG NAME:  SR_CORE_SFTY_4_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Never 
+2 = Rarely 
+3 = Sometimes 
+4 = Fairly often 
+5 = Frequently 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+149 
+SR_CORE_SFTY_OVRL_SCRNG_IND 
+LABEL: 
+Screened Core HRSN Safety Overall Indicator 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) safety composite indicator. 
+LONG NAME:  SR_CORE_SFTY_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system  
+VALUES:  
+0 = Did not screen positive for safety need 
+1 = Screened positive for safety need 
+Missing 
+COMMENT: 
+Variable considers the four safety screening questions that begin with “SR_CORE_SFTY_*”:  
+SR_CORE_SFTY_1_CD, SR_CORE_SFTY_2_CD, SR_CORE_SFTY_3_CD, and SR_CORE_SFTY_4_CD. This 
+field is “1” if the sum of the four safety questions is 11 or higher.  
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+150 
+SR_CORE_TRNSPRTN_1_SW 
+LABEL: 
+Core HRSN Transportation 1: Lack of Reliable Transportation 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) lack of reliable transportation for medical 
+appointments, meetings, work, or from getting to things needed for daily living. 
+LONG NAME:  SR_CORE_TRNSPRTN_1_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No   
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+151 
+SR_CORE_TRNSPRTN_OVRL_SCRNG_IND 
+LABEL: 
+Screened Core HRSN Transportation Overall Indicator 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) transportation composite indicator. 
+LONG NAME:  SR_CORE_TRNSPRTN_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for transportation need 
+1 = Screened positive for transportation need 
+Missing 
+COMMENT: 
+The variable considered for this indicator is SR_CORE_TRNSPRTN_1_SW. This field is “1” if the 
+transportation question had a value of 1 = Yes (positive for need).  
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+152 
+SR_CORE_UTILITIES_1_CD 
+LABEL: 
+Core HRSN Utility 1: Utility Company Threatened to Shut Off Services to Home 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) utilities identifies whether electric, gas, 
+oil, or water company threatened to shut off services to home. 
+LONG NAME:  SR_CORE_UTILITIES_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+2 = Already shut off 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+153 
+SR_CORE_UTLTY_OVRL_SCRNG_IND 
+LABEL: 
+Screened Core HRSN Utilities Overall Indicator 
+DESCRIPTION: Screening result (SR) core health related social need (HRSN) patient has difficulty in paying utility bills 
+composite indicator. 
+LONG NAME:  SR_CORE_UTLTY_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for utility need 
+1 = Screened positive for utility need 
+Missing 
+COMMENT: 
+The variable considered for this indicator is the SR_CORE_UTILITIES_1_CD. This field is “1” if the 
+transportation question value of 1 = Yes or 2 = Already shut off (positive for need). 
+Variables that start with “SR” include information for each screening 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+154 
+SR_ELGBL_FOR_NVGTN_IND 
+LABEL: 
+Beneficiary Eligibility for Navigation, Includes Track 1 Control Group Benes 
+DESCRIPTION: Screening result (SR) Beneficiary eligible for navigation, includes track 1 control group beneficiaries. 
+LONG NAME:  SR_ELGBL_FOR_NVGTN_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0 = Not eligible for intervention  
+1 = Eligible for intervention (1+ core HRSNs, 2+ ED visits) 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+This variable is “1” if the beneficiary has at least 1 core HRSN (SR_CN_HRSN_YN = 1) and two or more 
+ED visits in the previous 12 months (SR_ED_LAST_12_MOS = 2 or more). 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+155 
+SR_ER_VISITS_CD 
+LABEL: 
+Beneficiary Number of ED Visits Last 12 Months 
+DESCRIPTION: Screening result (SR) Beneficiary number of emergency department (ED) visits in the last 12 months, 
+categorized value. 
+LONG NAME:  SR_ER_VISITS_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = no ED visits 
+1 = one ED visit 
+2 = two or more ED visits 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+156 
+SR_GRP_ASGNMT_IND 
+LABEL: 
+Beneficiary Group Assignment Assistance Track 
+DESCRIPTION: Screening result (SR) variable that indicates whether the beneficiary was assigned to the intervention 
+group (the assistance track) or a control group. 
+LONG NAME:  SR_GRP_ASGNMT_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Control group 
+1 = Intervention group (assistance track) 
+Null/Missing 
+COMMENT: 
+Navigation-eligible beneficiaries in the assistance track were randomly assigned to intervention (70%) 
+or control (30%) group. More specifically, the AHC data system used a randomizer to set the 
+probability. When a beneficiary met the randomization eligibility criteria (i.e., 1+ core HRSN and 2+ ED 
+visits in the 12 months prior to screening), the AHC data system “tossed a 10 dice." If the result was 1 
+to 7, the beneficiary was assigned to the intervention group; if the result was 8 to 10, the beneficiary 
+was assigned to the control group. Therefore, the beneficiary had a 70% probability being assigned to 
+the intervention group and a 30% probability of being assigned to the control group. About 1% of 
+assistance track navigation-eligible beneficiaries have a missing value, likely due to a technical issue 
+with the AHC data system. Most of those beneficiaries (93%) have a missing value for the navigation 
+opt in/out flag (SR_NVGTN_OPT_IN_OUT_IND) indicating that they were likely not offered navigation 
+services. The other seven percent opted out of navigation services (SR_NVGTN_OPT_IN_OUT_IND = 
+0). 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+157 
+SR_HAS_CORE_HRSN_IND 
+LABEL: 
+Beneficiary Has at Least 1 Core HRSN 
+DESCRIPTION: Screening result (SR) Beneficiary has at least one core health related social need (HRSN). 
+LONG NAME:  SR_HAS_CORE_HRSN_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived)  
+VALUES:  
+0 = No core HRSNs 
+1 = One or more core HRSNs 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+ 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+158 
+SR_NVGTN_OPT_IN_OUT_DT 
+LABEL: 
+Navigation Case Opt In/Out Date 
+DESCRIPTION: Screening result (SR) Navigation case opt in/out date. 
+LONG NAME:  SR_NVGTN_OPT_IN_OUT_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+AHC data system 
+VALUES:  
+Format: DDMONYYYY (e.g., 09SEP2019) 
+COMMENT: 
+Dates are from May 3, 2018–April 24, 2023. 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+159 
+SR_NVGTN_OPT_IN_OUT_IND 
+LABEL: 
+Beneficiary Opted In or Out of Navigation services 
+DESCRIPTION: Screening result (SR)Beneficiary opted in or out of navigation services. 
+LONG NAME:  SR_NVGTN_OPT_IN_OUT_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Opted out 
+1 = Opted in 
+Missing - Not eligible 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+160 
+SR_SCRNG_BEFORE_DRNG_AFTR_CD 
+LABEL: 
+Did Screening Occur Before, During, or After the Visit 
+DESCRIPTION: Screening result (SR) Did screening occur before, during, or after the visit. 
+LONG NAME:  SR_SCRNG_BEFORE_DRNG_AFTR_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+1 = Before clinical visit 
+2 = During clinical visit 
+3 = After clinical visit 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+161 
+SR_SCRNG_DT 
+LABEL: 
+Screening Date 
+DESCRIPTION: Screening result (SR) Screening date. 
+LONG NAME:  SR_SCRNG_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+AHC data system 
+VALUES:  
+Format: DDMONYYYY (e.g., 26NOV2018)  
+ 
+COMMENT: 
+Screening dates occurred between May 1, 2018–January 31, 2023. 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+162 
+SR_SCRNG_ID 
+LABEL: 
+Screening Identifier 
+DESCRIPTION: Screening result (SR) AHC screening standardized nine-digit unique identifier. 
+LONG NAME:  SR_SCRNG_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+9 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+Alphanumeric character string that contains intelligence (e.g., 2230025803 is the 25,803rd unique 
+screening for the AHC bridge organization B23). 
+The first digit is always 2, then the 2nd and 3rd digits are the numeric portion of the bridge organization 
+identifier (i.e., the “B” from the bridge organization ID is replaced with a “2”). The remaining 6 digits 
+are sequential numbers representing unique screenings for each bridge organization. 
+COMMENT: 
+Beneficiaries had between one and 95 screenings; these are uniquely identified using this screening ID 
+(SR_SCRNG_ID) field. 
+This ID is specific to the AHC Model and does not link to any other CMS data file or system. 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+163 
+SR_SPLM_FMLY_CMNTY_OVRL_SCRN_IND 
+LABEL: 
+Screened Supplemental HRSN Family and Community Support Overall Indicator 
+DESCRIPTION: Screening result (SR) supplemental health related social need (HRSN) family and community support 
+composite indicator. 
+LONG NAME:  SR_SPLM_FMLY_CMNTY_OVRL_SCRN_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for friends and community support need 
+1 = Screened positive for friends and community support need 
+Missing 
+COMMENT: 
+The variables considered for this indicator are SR_SPLMTL_FMLY_CMNTY_SPRT_1_CD (value of 2 = I 
+could use a little more help or 3 = I need a lot more help) and SR_SPLMTL_FMLY_CMNTY_SPRT_2_CD 
+(value of 3 = Often or 4 = Always). This field is “1” if either of the two family and community support 
+questions was positive for the need. 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+164 
+SR_SPLM_PHYS_ACTV_OVRL_SCRN_IND 
+LABEL: 
+Screened Supplemental HRSN Physical Activity Overall Indicator 
+DESCRIPTION: Screening result (SR) supplemental health related social need (HRSN) physical activity composite 
+indicator. 
+LONG NAME:  SR_SPLM_PHYS_ACTV_OVRL_SCRN_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for physical activity need 
+1 = Screened positive for physical activity need 
+Missing 
+COMMENT: 
+The variable considered for this indicator is SR_SPLMTL_PHYS_ACTVTY_1_2_QTY, which is the product 
+of SR_SPLMTL_PHYS_ACTVTY_1_CD and SR_SPLMTL_PHYS_ACTVTY_2_CD. 
+Whether this field is “1” depends on 1) the amount of exercise engaged in each week, and 2) the 
+respondent’s age: 
+ 
+Under 6 years old: No physical activity HRSN  
+ 
+Age 6 to 17: Fewer than an average of 60 minutes per day indicates a physical activity HRSN 
+ 
+Age 18 or older: Fewer than 150 minutes per week indicates a physical activity HRSN 
+ 
+Example: If a 57-year-old indicates that she exercises two days a week for 40 minutes, her score would 
+be 80 minutes per week [2 days x 40 minutes = 80 minute per week]. Because she is over 18 and 
+exercises fewer than 150 minutes per week, she has an identified physical activity HRSN. 
+ 
+Variables that start with “SR” include information for each screening 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+165 
+SR_SPLMT_SBST_USE_OVRL_SCRNG_IND 
+LABEL: 
+Screened Supplemental HRSN Substance Use Overall Indicator 
+DESCRIPTION: Screening result (SR) supplemental health related social need (HRSN) substance use composite 
+indicator. 
+LONG NAME:  SR_SPLMT_SBST_USE_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for substance use need 
+1 = Screened positive for substance use need 
+Missing 
+COMMENT: 
+The variables considered for this indicator are SR_SPLMTL_SBSTNC_USE_1_CD, 
+SR_SPLMTL_SBSTNC_USE_2_CD, SR_SPLMTL_SBSTNC_USE_3_CD, and 
+SR_SPLMTL_SBSTNC_USE_4_CD. This field is “1” if any of the four substance use questions was 
+positive for the need (value of 1 = Once or twice, 2 = Monthly, 3 = Weekly, or 4 = Daily or almost daily).  
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+166 
+SR_SPLMTL_DSBLTS_1_SW 
+LABEL: 
+Supplemental HRSN Disability 1: Serious Difficulty Concentrating, Remembering, or Making Decisions 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) disabilities variable where 
+patient has serious difficulty concentrating, remembering, or making decisions due to physical, 
+mental, or emotional condition (five years or older). 
+LONG NAME:  SR_SPLMTL_DSBLTS_1_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+167 
+SR_SPLMTL_DSBLTS_2_SW 
+LABEL: 
+Supplemental HRSN Disabilities 2: Difficulty Doing Errands Alone 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) disabilities descriptor where 
+patient has difficulty doing errands alone such as visiting a doctor's office or shopping (15 years or 
+older). 
+LONG NAME:  SR_SPLMTL_DSBLTS_2_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+168 
+SR_SPLMTL_DSBLTS_OVRL_SCRNG_IND 
+LABEL: 
+Screened Supplemental HRSN Disabilities Overall Indicator 
+DESCRIPTION: Screening result (SR) supplemental health related social need (HRSN) disabilities composite indicator. 
+LONG NAME:  SR_SPLMTL_DSBLTS_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for disabilities need 
+1 = Screened positive for disabilities need 
+Missing 
+COMMENT: 
+The variables considered for this indicator are the SR_SPLMTL_DSBLTS_1_SW and 
+SR_SPLMTL_DSBLTS_2_SW. This field is “1” if either of the disabilities questions was positive for the 
+need (value of 1 = Yes). 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+169 
+SR_SPLMTL_EDCTN_1_SW 
+LABEL: 
+Supplemental HRSN Education 1: Speak a Language Other Than English at Home 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) education descriptor where 
+patient speaks a language other than English at home. 
+LONG NAME:  SR_SPLMTL_EDCTN_1_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+170 
+SR_SPLMTL_EDCTN_2_SW 
+LABEL: 
+Supplemental HRSN Education 2: Want Help with School or Training 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) education where patient wants 
+help with school or training. 
+LONG NAME:  SR_SPLMTL_EDCTN_2_SW 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = No 
+1 = Yes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+171 
+SR_SPLMTL_EDCTN_OVRL_SCRNG_IND 
+LABEL: 
+Screened Supplemental HRSN Education Overall Indicator 
+DESCRIPTION: Screening result (SR) supplemental health related social need (HRSN) education composite indicator. 
+LONG NAME:  SR_SPLMTL_EDCTN_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for education need 
+1 = Screened positive for education need 
+Missing 
+COMMENT: 
+The variables considered for this indicator are SR_SPLMTL_EDCTN_1_SW and 
+SR_SPLMTL_EDCTN_2_SW. This field is “1” if either of the education questions was positive for the 
+need (value of 1 = Yes). 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+172 
+SR_SPLMTL_EMPLYMT_1_CD 
+LABEL: 
+Supplemental HRSN Employment 1: Want Help Finding or Keeping Job 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) employment where patient 
+wants help finding or keeping a job. 
+LONG NAME:  SR_SPLMTL_EMPLYMT_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = I do not need or want help  
+1 = Yes, help keeping work 
+2 = Yes, help finding work 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+173 
+SR_SPLMTL_EMPLYMT_OVRL_SCRN_IND 
+LABEL: 
+Screened Supplemental HRSN Employment Overall Indicator 
+DESCRIPTION: Screening result (SR) Screened Supplemental health related social need (HRSN) employment 
+composite indicator. 
+LONG NAME:  SR_SPLMTL_EMPLYMT_OVRL_SCRN_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for employment need 
+1 = Screened positive for employment need 
+Missing 
+COMMENT: 
+The variable considered for this indicator is SR_SPLMTL_EMPLYMT_1_CD. This field is “1” if the 
+employment question was positive for the need ( 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+174 
+SR_SPLMTL_FINCL_1_CD 
+LABEL: 
+Supplemental HRSN Financial Strain 1: How Hard to Pay for Basics 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) financial strain telling how hard 
+it is to pay for basics like food, housing, medical care, and heating. 
+LONG NAME:  SR_SPLMTL_FINCL_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Not hard 
+1 = Somewhat hard 
+2 = Very hard 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+175 
+SR_SPLMTL_FINCL_OVRL_SCRNG_IND 
+LABEL: 
+Screened Supplemental HRSN Financial Strain Overall Indicator 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) financial strain composite 
+indicator. 
+LONG NAME:  SR_SPLMTL_FINCL_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for financial strain need 
+1 = Screened positive for financial strain need 
+Missing 
+COMMENT: 
+The variable considered for this indicator is SR_SPLMTL_FINCL_1_CD. This field is “1” if the financial 
+strain question is positive for the need (value of 1 = Somewhat hard or 2 = Very hard). 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+176 
+SR_SPLMTL_FMLY_CMNTY_SPRT_1_CD 
+LABEL: 
+Supplemental HRSN Family and Community Support 1: Get Help with Day-to-Day Activities 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) family and community support if 
+it is needed, get help with day-to-day activities such as bathing, preparing meals, shopping, caring for 
+children or dependents, managing finances, etc. 
+LONG NAME:  SR_SPLMTL_FMLY_CMNTY_SPRT_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = I don't need any help  
+1 = I get all the help I need 
+2 = I could use a little more help 
+3 = I need a lot more help 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+177 
+SR_SPLMTL_FMLY_CMNTY_SPRT_2_CD 
+LABEL: 
+Supplemental HRSN Family and Community Support 2: How Often Feel Lonely or Isolated 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) family and community support 
+telling how often patient feels lonely or isolated. 
+LONG NAME:  SR_SPLMTL_FMLY_CMNTY_SPRT_2_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never   
+1 = Rarely 
+2 = Sometimes 
+3 = Often 
+4 = Always 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+178 
+SR_SPLMTL_MH_1_2_SUM 
+LABEL: 
+Supplemental HRSN Mental Health Sum of SR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD  
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) mental health sum of 
+SR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD. 
+LONG NAME:  SR_SPLMTL_MH_1_2_SUM 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0–6, or  
+Null/Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+179 
+SR_SPLMTL_MH_1_CD 
+LABEL: 
+Supplemental HRSN Mental Health 1: Little Interest or Pleasure in Things 
+DESCRIPTION: 
+Screening result (SR) Supplemental health related social need (HRSN) mental health where patient has 
+little interest or pleasure in doing things. 
+LONG NAME:  SR_SPLMTL_MH_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Not at all 
+1 = Several days 
+2 = More than half the days 
+3 = Nearly every day 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+180 
+SR_SPLMTL_MH_2_CD 
+LABEL: 
+Supplemental HRSN Mental Health 2: Feeling Down, Depressed, or Hopeless 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) mental health where patient is 
+feeling down, depressed, or hopeless. 
+LONG NAME:  SR_SPLMTL_MH_2_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Not at all 
+1 = Several days 
+2 = More than half the days 
+3 = Nearly every day 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+181 
+SR_SPLMTL_MH_3_CD 
+LABEL: 
+Supplemental HRSN Mental Health 3: Feel Tense, Restless, Anxious, Sleepless, Troubled 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) mental health where patient 
+feels tense, restless, nervous or anxious, or unable to sleep at night because mind is troubled all the 
+time. 
+LONG NAME:  SR_SPLMTL_MH_3_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Not at all 
+1 = A little bit 
+2 = Somewhat 
+3 = Quite a bit 
+4 = Very much 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+^ Back to TOC ^ 
+  
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+182 
+SR_SPLMTL_MH_OVRL_SCRNG_IND 
+LABEL: 
+Screened Supplemental HRSN Mental Health Overall Indicator 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) mental health composite 
+indicator. 
+LONG NAME:  SR_SPLMTL_MH_OVRL_SCRNG_IND 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Did not screen positive for mental health need 
+1 = Screened positive for mental health need 
+Missing 
+COMMENT: 
+The variables considered for this indicator are SR_SPLMTL_MH_1_2_SUM (which is the sum of 
+SR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD) and SR_SPLMTL_MH_3_CD. This field is “1” if the 
+sum of the first two mental health questions is three or higher or if the value of the third mental 
+health question is 1 = A little bit, 2 = Somewhat, 3 = Quite a bit, or 4 = Very much. 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+183 
+SR_SPLMTL_PHYS_ACTVTY_1_2_QTY 
+LABEL: 
+Supplemental HRSN Physical Activity Items 1 x 2 Numb of Days/Minutes Moderate Exercise 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) physical activity calculated field. 
+This field is the physical activity items 1 – moderate exercise days (field called 
+SR_SPLMTL_PHYS_ACTVTY_1_CD) multiplied by physical activity item 2 x 2 – number of days/minutes 
+of moderate exercise (field called SR_SPLMTL_PHYS_ACTVTY_2_CD). 
+LONG NAME:  SR_SPLMTL_PHYS_ACTVTY_1_2_QTY 
+TYPE: 
+NUM 
+LENGTH:  
+4 
+SOURCE:  
+AHC data system (derived) 
+VALUES:  
+0–1050 
+Missing 
+COMMENT: 
+This field represents total minutes (in the week) of moderate exercise. 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+184 
+SR_SPLMTL_PHYS_ACTVTY_1_CD 
+LABEL: 
+Supplemental HRSN Physical Activity 1: Number of Days Moderate Exercise 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) physical activity counting 
+number days moderate exercise. 
+LONG NAME:  SR_SPLMTL_PHYS_ACTVTY_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = 0 days 
+1 = 1 day 
+2 = 2 days 
+3 = 3 days 
+4 = 4 days 
+5 = 5 days 
+6 = 6 days 
+7 = 7 days 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+185 
+SR_SPLMTL_PHYS_ACTVTY_2_CD 
+LABEL: 
+Supplemental HRSN Physical Activity 2: Number Minutes of Moderate Exercise 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) physical activity counting 
+number of minutes of moderate exercise. 
+LONG NAME:  SR_SPLMTL_PHYS_ACTVTY_2_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+3 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = 0 minutes 
+10 = 10 minutes 
+20 = 20 minutes 
+30 = 30 minutes 
+40 = 40 minutes 
+50 = 50 minutes 
+60 = 60 minutes 
+90 = 90 minutes 
+120 = 120 minutes 
+150 = 150 minutes 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+186 
+SR_SPLMTL_SBSTNC_USE_1_CD 
+LABEL: 
+Supplemental HRSN Substance Use 1: Past 12 Months Alcohol Use 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) substance use counting the past 
+12 months alcohol use. 
+LONG NAME:  SR_SPLMTL_SBSTNC_USE_1_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never 
+1 = Once or twice 
+2 = Monthly 
+3 = Weekly 
+4 = Daily or almost daily 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+187 
+SR_SPLMTL_SBSTNC_USE_2_CD 
+LABEL: 
+Supplemental HRSN Substance Use 2: Past 12 Months Tobacco Use 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) Substance use counting the past 
+12 months tobacco use. 
+LONG NAME:  SR_SPLMTL_SBSTNC_USE_2_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never 
+1 = Once or twice 
+2 = Monthly 
+3 = Weekly 
+4 = Daily or almost daily 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+188 
+SR_SPLMTL_SBSTNC_USE_3_CD 
+LABEL: 
+Supplemental HRSN Substance Use 3: Past 12 months Non-Medical Prescription Drug Use 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) substance use asking past 12 
+months non-medical prescription drug use. 
+LONG NAME:  SR_SPLMTL_SBSTNC_USE_3_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never 
+1 = Once or twice 
+2 = Monthly 
+3 = Weekly 
+4 = Daily or almost daily 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+189 
+SR_SPLMTL_SBSTNC_USE_4_CD 
+LABEL: 
+Supplemental HRSN Substance Use 4: Past 12 Months Illegal Drug Use 
+DESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) substance use past 12 months 
+illegal drug use. 
+LONG NAME:  SR_SPLMTL_SBSTNC_USE_4_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+AHC data system 
+VALUES:  
+0 = Never 
+1 = Once or twice 
+2 = Monthly 
+3 = Weekly 
+4 = Daily or almost daily 
+Missing 
+COMMENT: 
+Variables that start with “SR” include information for each screening. 
+  ^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+AHC Model Data File Codebook │ December 2024 │ V 1.0  
+190 
+STATE_CD 
+LABEL: 
+Submitting State Alpha Abbreviation 
+DESCRIPTION: State Code associated with the Medicaid Beneficiary Identifier (the MSIS_ID) 
+LONG NAME:  STATE_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE:  
+AHC data system/CCW (derived) 
+VALUES:  
+Two-character postal state code 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC =North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+Null/Missing = Unknown (beneficiary 
+not linked to Medicaid data therefore 
+MSIS_ID + STATE_CD was not 
+obtained) 
+COMMENT: 
+— 
+ ^ Back to TOC ^

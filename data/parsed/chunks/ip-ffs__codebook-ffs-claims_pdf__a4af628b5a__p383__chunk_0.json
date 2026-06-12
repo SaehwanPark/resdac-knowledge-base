@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p383__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 383,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n365 \nREV_CNTR_RDCD_COINSRNC_AMT \nLABEL: \nRevenue Center Reduced Coinsurance Amount \nDESCRIPTION: For all services subject to outpatient prospective payment system (PPS or OPPS), the amount of \ncoinsurance applicable to the line for a particular service (as indicated by the HCPCS code) for which \nthe provider has elected to reduce the coinsurance amount. \nSHORT NAME: RDCDCOIN",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

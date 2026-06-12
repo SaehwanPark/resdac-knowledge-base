@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p106__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 106,
+  "text": "MedPAR (derived) \nVALUES: \n00 = No dialysis or ESRD services \n71 = Billing is for a patient who received staff assisted dialysis services in a hospital or renal dialysis \nfacility. \n72 = Self-care in unit — Billing is for a patient who managed his own dialysis services without staff \nassistance in a hospital or renal dialysis facility. \n73 = Self-care training — Billing is for special dialysis services where the patient and helper (if necessary) \nwere learning to perform dialysis. \n74 = Home —",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s7__chunk_4",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 7,
+  "text": "Location Active Indicator - July CHAR 1 23\nPRVDR_LCTN_ACTV_IND_08 Provider Location Active Indicator - August CHAR 1 24\nPRVDR_LCTN_ACTV_IND_09 Provider Location Active Indicator - September CHAR 1 25\nPRVDR_LCTN_ACTV_IND_10 Provider Location Active Indicator - October CHAR 1 26\nPRVDR_LCTN_ACTV_IND_11 Provider Location Active Indicator - November CHAR 1 27\nPRVDR_LCTN_ACTV_IND_12 Provider Location Active Indicator - December CHAR 1 28\nCCW_APR_LINK_KEY CCW Key to Link APR Base Record to Related",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

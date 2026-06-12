@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 4,
+  "text": "within a contract.\n3 segment_id Segment ID Char 3 Segment identifier\n4 state_name State name Char 24 Name of state in which the Part D plan benefit package (segment) provides coverage.\n5 county_name County name Char 30 Name of county in which the Part D plan benefit package (segment) provides coverage.\n6 SSA_code SSA State code + County code Char 5 Social Security Administration state/county code in which the Part D plan benefit package (segment) provides coverage.\n7 Partial_flag Partial County",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

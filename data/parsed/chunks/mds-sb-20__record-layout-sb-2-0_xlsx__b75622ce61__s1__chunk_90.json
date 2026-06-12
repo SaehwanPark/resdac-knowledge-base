@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_90",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "32(M2a)Pressure Ulcer CHAR 1 A determination of the highest stage for pressure ulcers that were present in the last 7 days.\n115 M4B M4B_BURNS 33a(M4b)Burns (Second or Third Degree) CHAR 1 The presence of second or third degree burns from any cause (heat, chemicals) in any stage of healing. 0 = Unchecked, 1 = Checked, -1 = Unknown\n116 M4C M4C_OPEN_LESIONS 33b(M4c)Open Lesions Other Than Ulcers, Rashes, Cuts CHAR 1 The presence of open lesions other than ulcers, rashes, cuts. Examples inlcude",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

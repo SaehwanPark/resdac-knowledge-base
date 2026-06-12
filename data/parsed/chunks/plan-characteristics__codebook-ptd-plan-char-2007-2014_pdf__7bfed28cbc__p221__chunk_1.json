@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p221__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 221,
+  "text": "standard ICL amount. \nSHORT NAME: — \nLONG NAME: INCREASED_ICL \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nY = Yes \n\nN = No \n\n9 = Not Applicable \n\nX = Unknown \n\nCOMMENT: \nThis variable was new in 2011. It applies ONLY to the Enhanced Alternative Plans that offer reduced \ncost-sharing (i.e., where variable called REDUCED_COST_SHARE= “Y”). \n\nThe Initial Coverage Limit (ICL) phase of the Part D benefit is also referred to as the coverage gap. \n\nThe CCW constructs the Plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_510",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "whether the transmission route of patient's current reconciled medication list to subsequent provider was via electronic health record. 0 = No\n1 = Yes\n^ = Blank\n445 ROUTE_PRVDR_HC_EXCHG_INFO_CD ROUTE_PRVDR_HC_EXCHG_INFO_CD Provider Trans - Health Info Exchange CHAR 1 This column documents whether the transmission route of patient's current reconciled medication list to subsequent provider was via a health information exchange. 0 = No\n1 = Yes\n^ = Blank\n446 ROUTE_PRVDR_VRBL_CD ROUTE_PRVDR_VRBL_CD",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

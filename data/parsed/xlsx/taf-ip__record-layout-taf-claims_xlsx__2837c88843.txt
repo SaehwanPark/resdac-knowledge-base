@@ -1,0 +1,739 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Claims — Inpatient (IP) Files
+Version — December 2025
+SAS name	Label	Type	Length	IP sequence	New variables
+Header claim file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	6
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	7
+CLM_TYPE_CD	Claim Type Code	CHAR	1	8
+BILL_TYPE_CD	Bill Type Code	CHAR	4	9
+CROSSOVER_CLM_IND	Code to Indicate if a Portion of Claim is Paid by Medicare	CHAR	1	10
+ADJUST_CD	Claim Adjustment Code	CHAR	1	11
+ADJUST_RSN_CD	Adjustment Reason Code	CHAR	3	12
+ADJDCTN_DT	Adjudication Date	DATE	8	13
+MDCD_PD_DT	Medicaid Paid Date	DATE	8	14
+SPLIT_CLM_IND	Split Claim Indicator	CHAR	1	15
+SRC_LCTN_CD	Denotes the Claims Payment System from which the Claim was Extracted	CHAR	2	158	New3
+CLL_CNT	Claim Line Count - Original	NUM	8	16
+CLL_CNT_CALC	Claim Line Count - Calculated	NUM	8	17
+PRSN_CLM_IND1	Indicator of a Claim for a Person	CHAR	1	154
+SRVC_TRKNG_TYPE_CD	Service Tracking Type Code	CHAR	2	18
+FED_SRVC_CTGRY_CD2	Federally Assigned Service Category Code Added During TAF Production	CHAR	2	155
+BIRTH_DT	Date of Birth	DATE	8	19
+PTNT_DSCHRG_STUS_CD	Patient Status at Ending Date of Service	CHAR	2	20
+BIRTH_WT	Birth Weight in Grams	NUM	8	21
+PGM_TYPE_CD	Program Type Code	CHAR	2	22
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	23
+WVR_TYPE_CD	Waiver Type Code	CHAR	2	24
+WVR_ID	Waiver Identification Number	CHAR	20	25
+OTHR_INSRNC_IND	Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid)	CHAR	1	26
+SECT_1115A_DEMO_IND	1115(A) Demonstration Participation Indicator	CHAR	1	27
+SRVC_BGN_DT	Claim Beginning Date of Service	DATE	8	28
+SRVC_END_DT	Claim Ending Date of Service	DATE	8	29
+SRVC_END_DT_CD	Identifies the Date Field Used to Populate SRVC_END_DT	CHAR	1	30
+HOSP_TYPE_CD	Hospital Type Code	CHAR	2	31
+ADMSN_TYPE_CD	Admission Type Code	CHAR	1	32
+ADMSN_DT	Admission Date	DATE	8	33
+ADMSN_HR	Admission Hour	CHAR	2	34
+DSCHRG_DT	Discharge Date	DATE	8	35
+DSCHRG_HR	Discharge Hour	CHAR	2	36
+ADMTG_DGNS_CD	Admitting Diagnosis Code	CHAR	7	37
+ADMTG_DGNS_VRSN_CD	Admitting Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	38
+DGNS_CD_1	Primary or Principal Diagnosis Code	CHAR	7	39
+DGNS_VRSN_CD_1	Diagnosis Version Code 1 (ICD-9 or ICD-10)	CHAR	1	40
+DGNS_POA_IND_1	Diagnosis 1 Present on Admission Indicator	CHAR	1	41
+DGNS_1_CCSR_CTGRY_CD2	AHRQ Clinical Classifications Software Refined (CCSR) Diagnosis 1 Category Code	CHAR	6	156
+DGNS_CD_2	Diagnosis Code 2	CHAR	7	42
+DGNS_VRSN_CD_2	Diagnosis Version Code 2 (ICD-9 or ICD-10)	CHAR	1	43
+DGNS_POA_IND_2	Diagnosis 2 Present on Admission Indicator	CHAR	1	44
+DGNS_CD_3	Diagnosis Code 3	CHAR	7	45
+DGNS_VRSN_CD_3	Diagnosis Version Code 3 (ICD-9 or ICD-10)	CHAR	1	46
+DGNS_POA_IND_3	Diagnosis 3 Present on Admission Indicator	CHAR	1	47
+DGNS_CD_4	Diagnosis Code 4	CHAR	7	48
+DGNS_VRSN_CD_4	Diagnosis Version Code 4 (ICD-9 or ICD-10)	CHAR	1	49
+DGNS_POA_IND_4	Diagnosis 4 Present on Admission Indicator	CHAR	1	50
+DGNS_CD_5	Diagnosis Code 5	CHAR	7	51
+DGNS_VRSN_CD_5	Diagnosis Version Code 5 (ICD-9 or ICD-10)	CHAR	1	52
+DGNS_POA_IND_5	Diagnosis 5 Present on Admission Indicator	CHAR	1	53
+DGNS_CD_6	Diagnosis Code 6	CHAR	7	54
+DGNS_VRSN_CD_6	Diagnosis Version Code 6 (ICD-9 or ICD-10)	CHAR	1	55
+DGNS_POA_IND_6	Diagnosis 6 Present on Admission Indicator	CHAR	1	56
+DGNS_CD_7	Diagnosis Code 7	CHAR	7	57
+DGNS_VRSN_CD_7	Diagnosis Version Code 7 (ICD-9 or ICD-10)	CHAR	1	58
+DGNS_POA_IND_7	Diagnosis 7 Present on Admission Indicator	CHAR	1	59
+DGNS_CD_8	Diagnosis Code 8	CHAR	7	60
+DGNS_VRSN_CD_8	Diagnosis Version Code 8 (ICD-9 or ICD-10)	CHAR	1	61
+DGNS_POA_IND_8	Diagnosis 8 Present on Admission Indicator	CHAR	1	62
+DGNS_CD_9	Diagnosis Code 9	CHAR	7	63
+DGNS_VRSN_CD_9	Diagnosis Version Code 9 (ICD-9 or ICD-10)	CHAR	1	64
+DGNS_POA_IND_9	Diagnosis 9 Present on Admission Indicator	CHAR	1	65
+DGNS_CD_10	Diagnosis Code 10	CHAR	7	66
+DGNS_VRSN_CD_10	Diagnosis Version Code 10 (ICD-9 or ICD-10)	CHAR	1	67
+DGNS_POA_IND_10	Diagnosis 10 Present on Admission Indicator	CHAR	1	68
+DGNS_CD_11	Diagnosis Code 11	CHAR	7	69
+DGNS_VRSN_CD_11	Diagnosis Version Code 11 (ICD-9 or ICD-10)	CHAR	1	70
+DGNS_POA_IND_11	Diagnosis 11 Present on Admission Indicator	CHAR	1	71
+DGNS_CD_12	Diagnosis Code 12	CHAR	7	72
+DGNS_VRSN_CD_12	Diagnosis Version Code 12 (ICD-9 or ICD-10)	CHAR	1	73
+DGNS_POA_IND_12	Diagnosis 12 Present on Admission Indicator	CHAR	1	74
+HAC_IND	Health Care Acquired Condition (HAC) Indicator	CHAR	1	75
+IP_MH_DGNS_IND	Mental Health Diagnosis Indicator	CHAR	1	76
+IP_SUD_DGNS_IND	Substance Use Disorder Diagnosis Indicator	CHAR	1	77
+DRG_CD	Diagnosis Related Group (DRG) Code	CHAR	7	78
+DRG_CD_SYS	DRG Code System/Nomenclature	CHAR	8	79
+DRG_DESC	Description of DRG Code	CHAR	20	80
+MDC_CD	Major Diagnostic Category (MDC) Code	CHAR	3	81
+PRCDR_CD_DT_1	Date Procedure 1 Performed	DATE	8	82
+PRCDR_CD_1	Procedure Code 1	CHAR	8	83
+PRCDR_CD_SYS_1	Procedure Code 1 System/Nomenclature	CHAR	2	84
+PRCDR_CD_DT_2	Date Procedure 2 Performed	DATE	8	85
+PRCDR_CD_2	Procedure Code 2	CHAR	8	86
+PRCDR_CD_SYS_2	Procedure Code 2 System/Nomenclature	CHAR	2	87
+PRCDR_CD_DT_3	Date Procedure 3 Performed	DATE	8	88
+PRCDR_CD_3	Procedure Code 3	CHAR	8	89
+PRCDR_CD_SYS_3	Procedure Code 3 System/Nomenclature	CHAR	2	90
+PRCDR_CD_DT_4	Date Procedure 4 Performed	DATE	8	91
+PRCDR_CD_4	Procedure Code 4	CHAR	8	92
+PRCDR_CD_SYS_4	Procedure Code 4 System/Nomenclature	CHAR	2	93
+PRCDR_CD_DT_5	Date Procedure 5 Performed	DATE	8	94
+PRCDR_CD_5	Procedure Code 5	CHAR	8	95
+PRCDR_CD_SYS_5	Procedure Code 5 System/Nomenclature	CHAR	2	96
+PRCDR_CD_DT_6	Date Procedure 6 Performed	DATE	8	97
+PRCDR_CD_6	Procedure Code 6	CHAR	8	98
+PRCDR_CD_SYS_6	Procedure Code 6 System/Nomenclature	CHAR	2	99
+ADMTG_PRVDR_ID	Admitting Provider Identification Number	CHAR	30	100
+ADMTG_PRVDR_NPI	Admitting Provider NPI	CHAR	10	101
+ADMTG_PRVDR_TXNMY_CD	Admitting Provider Taxonomy Code	CHAR	12	102
+ADMTG_PRVDR_TYPE_CD	Admitting Provider Type Code	CHAR	2	103
+ADMTG_PRVDR_SPCLTY_CD	Admitting Provider Specialty Code	CHAR	2	104
+BLG_PRVDR_ID	Billing Provider Identification Number	CHAR	30	105
+BLG_PRVDR_NPI	Billing Provider NPI	CHAR	10	106
+BLG_PRVDR_TXNMY_CD	Billing Provider Taxonomy Code	CHAR	12	107
+BLG_PRVDR_NPPES_TXNMY_CD2	Billing Provider NPPES Taxonomy Code	CHAR	10	157
+BLG_PRVDR_TYPE_CD	Billing Provider Type Code	CHAR	2	108
+BLG_PRVDR_SPCLTY_CD	Billing Provider Specialty Code	CHAR	2	109
+RFRG_PRVDR_ID	Referring Provider Identification Number	CHAR	30	110
+RFRG_PRVDR_NPI	Referring Provider NPI	CHAR	10	111
+RFRG_PRVDR_TYPE_CD	Referring Provider Type Code	CHAR	2	112	Retired4
+RFRG_PRVDR_SPCLTY_CD	Referring Provider Specialty Code	CHAR	2	113	Retired4
+PRVDR_LCTN_CD	Provider Location Code	CHAR	5	114
+BRDR_STATE_IND	Border State Indicator	CHAR	1	115
+IP_MH_TXNMY_IND	Mental Health Provider Taxonomy Indicator	CHAR	1	116
+IP_SUD_TXNMY_IND	Substance Use Disorder Provider Taxonomy Indicator	CHAR	1	117
+NCVRD_DAYS	Count of Medicaid Noncovered Days	NUM	8	118
+CVRD_DAYS	Count of Medicaid Covered Inpatient Days	NUM	8	119
+OUTLIER_DAYS	Outlier Days Count	NUM	8	120
+OUTLIER_TYPE_CD	Outlier Type Code	CHAR	2	121
+DRG_OUTLIER_AMT	DRG Outlier Additional Payment Amount	NUM	8	122
+FIXD_PYMT_IND	Fixed Payment Indicator	CHAR	1	123
+SRVC_TRKNG_PYMT_AMT	Service Tracking Payment Amount	NUM	8	124
+DRG_RLTV_WT	DRG Relative Weight	NUM	8	125
+PYMT_LVL_IND	Payment Level Indicator - Header or Line	CHAR	1	126
+BILLED_AMT	Total Claim Billed Amount	NUM	8	127
+NCVRD_CHRG_AMT	Noncovered Charges Amount	NUM	8	128
+MDCD_ALOWD_AMT	Total Medicaid Allowed Amount	NUM	8	129
+MDCD_PD_AMT	Total Amount Paid By Medicaid	NUM	8	130
+MDCD_COPAY_AMT	Total Copay Amount Paid by Beneficiary	NUM	8	131
+MDCD_DSH_PD_AMT	Medicaid Amount Paid Disproportionate Share Hospital (DSH)	NUM	8	132
+MDCR_PD_AMT	Medicare Paid Amount	NUM	8	133
+MDCR_DDCTBL_PD_AMT	Total Medicare Deductible Amount	NUM	8	134
+MDCR_COINSRNC_PD_AMT	Total Medicare Coinsurance Amount	NUM	8	135
+MDCR_CMBND_DDCTBL_IND	Medicare Combined Deductible and Coinsurance Indicator	CHAR	1	136
+MDCR_REIMBRSMT_TYPE_CD	Medicare Reimbursement Type Code	CHAR	2	137
+COINSRNC_AMT	Beneficiary Coinsurance Amount	NUM	8	138
+TOT_BENE_COINSRNC_LBLTY_AMT	Total Beneficiary Coinsurance Liability Amount	NUM	8	159	New3
+COPAY_AMT	Beneficiary Copayment Amount	NUM	8	139
+TOT_BENE_COPAY_LBLTY_AMT	Total Beneficiary Copayment Liability Amount	NUM	8	160	New3
+DDCTBL_AMT	Beneficiary Deductible Amount	NUM	8	140
+TOT_BENE_DDCTBL_LBLTY_AMT	Total Beneficiary Deductible Liability Amount	NUM	8	161	New3
+CMBND_BENE_CST_SHRNG_PD_AMT	Combined Beneficiary Cost Sharing Paid Amount	NUM	8	162	New3
+COPAY_WVD_IND	Indicator Signifying Copay was Waived by Provider	CHAR	1	141	Retired4
+TP_PD_AMT	Total Third Party Liability Paid Amount	NUM	8	142
+TP_COINSRNC_PD_AMT	Third Party Coinsurance Paid Amount	NUM	8	143
+TP_COPAY_PD_AMT	Third Party Copayment Paid Amount	NUM	8	144
+OTHR_INSRNC_PD_AMT	Total Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	145
+OTHR_TP_CLCTN_CD	Other Third Party Collection Code	CHAR	3	146
+FUNDNG_CD	Code To Indicate Source of Non-Federal Funding	CHAR	2	147
+FUNDNG_SRC_NON_FED_SHR_CD	Funding Source Non-Federal Share Code	CHAR	2	148
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	149
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	150
+IP_VRSN	Inpatient Version Representing the Iteration of the File	CHAR	2	151
+IP_FIL_DT	Inpatient File Date - Represents the Year and Month of the Reporting Period	DATE	8	152
+CCW_LD_DT	CCW Load Date	DATE	8	153
+Occurrence code file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+OCRNC_CD_SEQ	Occurrence Code Sequence	CHAR	2	6
+OCRNC_CD	Occurrence Code	CHAR	2	7
+OCRNC_CD_START_DT	Occurrence Code Start Date	DATE	8	8
+OCRNC_CD_END_DT	Occurrence Code End Date	DATE	8	9
+Line file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+LINE_NUM	Sequential Claim Line Number	NUM	3	6
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	7
+LINE_NUM_ORIG	Original Claim Line Number	CHAR	3	8
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	9
+LINE_NUM_ADJ	Adjustment Claim Line Number	CHAR	3	10
+ADJDCTN_DT	Adjudication Date	DATE	8	11
+LINE_CLAIM_STUS_CD	Claim Line Status Code	CHAR	3	12
+LINE_ADJUST_CD	Claim Line Adjustment Code	CHAR	1	13
+LINE_SRVC_BGN_DT	Claim Line Beginning Date of Service	DATE	8	14
+LINE_SRVC_END_DT	Claim Line Ending Date of Service	DATE	8	15
+BNFT_TYPE_CD	Benefit Type Code	CHAR	3	16
+TOS_CD	Type of Service Code	CHAR	3	17
+XIX_SRVC_CTGRY_CD	CMS-64 Form Category of Service for the Paid Claim	CHAR	4	18
+XXI_SRVC_CTGRY_CD	CMS-21 Form Category of Service for the Paid Claim	CHAR	3	19
+CMS_64_FED_CTGRY_CD	CMS-64 Form Code for Federal Reimbursement	CHAR	2	20
+IHS_SRVC_IND	Indian Health Service (IHS) Service Indicator	CHAR	1	43	New3
+REV_CNTR_CD	Revenue Center Code	CHAR	4	21
+ACTL_SRVC_QTY	Actual Service Quantity	NUM	8	22
+ALOWD_SRVC_QTY	Maximum Allowed Service Quantity	NUM	8	23
+NDC	National Drug Code	CHAR	13	24
+NDC_UOM_CD	NDC Unit of Measure Code	CHAR	2	25
+NDC_QTY	NDC Quantity Dispensed	NUM	8	26
+IMNZTN_TYPE_CD	Immunization Type Code	CHAR	2	27
+PRVDR_FAC_TYPE_CD	Provider Facility Type Code	CHAR	9	28
+SRVC_PRVDR_ID	Servicing Provider Identification Number	CHAR	30	29
+SRVC_PRVDR_NPI	Servicing Provider NPI	CHAR	10	30
+SRVC_PRVDR_TXNMY_CD	Servicing Provider Taxonomy Code	CHAR	12	31	Retired4
+SRVC_PRVDR_TYPE_CD	Servicing Provider Type Code	CHAR	2	32
+SRVC_PRVDR_SPCLTY_CD	Servicing Provider Specialty Code	CHAR	2	33
+OPRTG_PRVDR_NPI	Operating Provider NPI	CHAR	10	34
+REV_CNTR_CHRG_AMT	Revenue Center Charge Amount	NUM	8	35
+LINE_MDCD_ALOWD_AMT	Line Medicaid Allowed Amount	NUM	8	36
+LINE_MDCD_PD_AMT	Line Medicaid Paid Amount	NUM	8	37
+LINE_MDCD_FFS_EQUIV_AMT	Line Medicaid Fee For Service Equivalent Amount	NUM	8	38
+LINE_OTHR_INSRNC_PD_AMT	Line Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	39
+IP_ACCMDTN_HCPCS_RATE	Inpatient Hospital Accommodation Rate	CHAR	14	40
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	41
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	42
+1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs
+2 Fields are populated starting with the 2020 Release 1 RIF
+3 Fields populated starting with the 2023 Release 1 RIF are designated as "New3"
+4 Fields that are retired; therefore, blank starting with the 2023 Release 1 RIF are designated as "Retired4"
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Claims — Long-term Care (LT) Files
+Version — December 2025
+SAS name	Label	Type	Length	LT sequence	New variables
+Header claim file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	6
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	7
+CLM_TYPE_CD	Claim Type Code	CHAR	1	8
+BILL_TYPE_CD	Bill Type Code	CHAR	4	9
+CROSSOVER_CLM_IND	Code To Indicate if a Portion of Claim is Paid by Medicare	CHAR	1	10
+ADJUST_CD	Claim Adjustment Code	CHAR	1	11
+ADJUST_RSN_CD	Adjustment Reason Code	CHAR	3	12
+ADJDCTN_DT	Adjudication Date	DATE	8	13
+MDCD_PD_DT	Medicaid Paid Date	DATE	8	14
+SPLIT_CLM_IND	Split Claim Indicator	CHAR	1	15
+SRC_LCTN_CD	Denotes the Claims Payment System from which the Claim was Extracted	CHAR	2	115	New3
+CLL_CNT	Claim Line Count - Original	NUM	8	16
+CLL_CNT_CALC	Claim Line Count - Calculated	NUM	8	17
+PRSN_CLM_IND1	Indicator of a Claim for a Person	CHAR	1	111
+SRVC_TRKNG_TYPE_CD	Service Tracking Type Code	CHAR	2	18
+FED_SRVC_CTGRY_CD2	Federally Assigned Service Category Code Added During TAF Production	CHAR	2	112
+BIRTH_DT	Date of Birth	DATE	8	19
+PTNT_DSCHRG_STUS_CD	Patient Status at Ending Date of Service	CHAR	2	20
+PGM_TYPE_CD	Program Type Code	CHAR	2	21
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	22
+WVR_TYPE_CD	Waiver Type Code	CHAR	2	23
+WVR_ID	Waiver Identification Number	CHAR	20	24
+OTHR_INSRNC_IND	Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid)	CHAR	1	25
+SECT_1115A_DEMO_IND	1115(A) Demonstration Participation Indicator	CHAR	1	26
+SRVC_BGN_DT	Claim Beginning Date of Service	DATE	8	27
+SRVC_END_DT	Claim Ending Date of Service	DATE	8	28
+SRVC_END_DT_CD	Identifies the Date Field Used to Populate SRVC_END_DT	CHAR	1	29
+ADMSN_DT	Admission Date	DATE	8	30
+ADMSN_HR	Admission Hour	CHAR	2	31
+DSCHRG_DT	Discharge Date	DATE	8	32
+DSCHRG_HR	Discharge Hour	CHAR	2	33
+ADMTG_DGNS_CD	Admitting Diagnosis Code	CHAR	7	34
+ADMTG_DGNS_VRSN_CD	Admitting Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	35
+DGNS_CD_1	Primary or Principal Diagnosis Code	CHAR	7	36
+DGNS_VRSN_CD_1	Diagnosis Version Code 1 (ICD-9 or ICD-10)	CHAR	1	37
+DGNS_POA_IND_1	Diagnosis 1 Present on Admission Indicator	CHAR	1	38
+DGNS_1_CCSR_CTGRY_CD2	AHRQ Clinical Classifications Software Refined (CCSR) Diagnosis 1 Category Code	CHAR	6	113
+DGNS_CD_2	Diagnosis Code 2	CHAR	7	39
+DGNS_VRSN_CD_2	Diagnosis Version Code 2 (ICD-9 or ICD-10)	CHAR	1	40
+DGNS_POA_IND_2	Diagnosis 2 Present on Admission Indicator	CHAR	1	41
+DGNS_CD_3	Diagnosis Code 3	CHAR	7	42
+DGNS_VRSN_CD_3	Diagnosis Version Code 3 (ICD-9 or ICD-10)	CHAR	1	43
+DGNS_POA_IND_3	Diagnosis 3 Present on Admission Indicator	CHAR	1	44
+DGNS_CD_4	Diagnosis Code 4	CHAR	7	45
+DGNS_VRSN_CD_4	Diagnosis Version Code 4 (ICD-9 or ICD-10)	CHAR	1	46
+DGNS_POA_IND_4	Diagnosis 4 Present on Admission Indicator	CHAR	1	47
+DGNS_CD_5	Diagnosis Code 5	CHAR	7	48
+DGNS_VRSN_CD_5	Diagnosis Version Code 5 (ICD-9 or ICD-10)	CHAR	1	49
+DGNS_POA_IND_5	Diagnosis 5 Present on Admission Indicator	CHAR	1	50
+HAC_IND	Health Care Acquired Condition (HAC) Indicator	CHAR	1	51
+MH_DGNS_IND	Mental Health Diagnosis Indicator	CHAR	1	52
+SUD_DGNS_IND	Substance Use Disorder Diagnosis Indicator	CHAR	1	53
+ADMTG_PRVDR_ID	Admitting Provider Identification Number	CHAR	30	54
+ADMTG_PRVDR_NPI	Admitting Provider NPI	CHAR	10	55
+ADMTG_PRVDR_TXNMY_CD	Admitting Provider Taxonomy Code	CHAR	12	56
+ADMTG_PRVDR_TYPE_CD	Admitting Provider Type Code	CHAR	2	57
+ADMTG_PRVDR_SPCLTY_CD	Admitting Provider Specialty Code	CHAR	2	58
+BLG_PRVDR_ID	Billing Provider Identification Number	CHAR	30	59
+BLG_PRVDR_NPI	Billing Provider NPI	CHAR	10	60
+BLG_PRVDR_TXNMY_CD	Billing Provider Taxonomy Code	CHAR	12	61
+BLG_PRVDR_NPPES_TXNMY_CD2	Billing Provider NPPES Taxonomy Code	CHAR	10	114
+BLG_PRVDR_TYPE_CD	Billing Provider Type Code	CHAR	2	62
+BLG_PRVDR_SPCLTY_CD	Billing Provider Specialty Code	CHAR	2	63
+RFRG_PRVDR_ID	Referring Provider Identification Number	CHAR	30	64
+RFRG_PRVDR_NPI	Referring Provider NPI	CHAR	10	65
+RFRG_PRVDR_TYPE_CD	Referring Provider Type Code	CHAR	2	66	Retired4
+RFRG_PRVDR_SPCLTY_CD	Referring Provider Specialty Code	CHAR	2	67	Retired4
+PRVDR_LCTN_CD	Provider Location Code	CHAR	5	68
+BRDR_STATE_IND	Border State Indicator	CHAR	1	69
+MH_TXNMY_IND	Mental Health Provider Taxonomy Indicator	CHAR	1	70
+SUD_TXNMY_IND	Substance Use Disorder Provider Taxonomy Indicator	CHAR	1	71
+NCVRD_DAYS	Medicaid Noncovered Days Count	NUM	8	72
+CVRD_DAYS_ICF_IID	Count of Medicaid Covered Days in ICF for Patients with Intellectual Disability	NUM	8	73
+CVRD_DAYS_NF	Count of Medicaid Covered Days in a Nursing Facility	NUM	8	74
+CVRD_DAYS_IP_PSYCH	Count of Medicaid Covered Days in an Inpatient Psychiatric Facility (IPF)	NUM	8	75
+CVRD_DAYS_IP_PSYCH_OVER_65	Count of Medicaid Covered Days in an IPF (Beneficiary Over 65 Years)	NUM	8	76
+CVRD_DAYS_IP_PSYCH_UNDER_21	Count of Medicaid Covered Days in an IPF (Beneficiary Under 21 Years)	NUM	8	77
+LEAVE_DAYS	Count of Days During Medicaid Coverage Period Patient was not Residing in LTC	NUM	8	78
+FIXD_PYMT_IND	Fixed Payment Indicator	CHAR	1	79
+SRVC_TRKNG_PYMT_AMT	Service Tracking Payment Amount	NUM	8	80
+PYMT_LVL_IND	Payment Level Indicator - Header or Line	CHAR	1	81
+BILLED_AMT	Total Claim Billed Amount	NUM	8	82
+NCVRD_CHRG_AMT	Noncovered Charges Amount	NUM	8	83
+MDCD_ALOWD_AMT	Total Medicaid Allowed Amount	NUM	8	84
+MDCD_PD_AMT	Total Amount Paid By Medicaid	NUM	8	85
+DAILY_RATE	Daily Rate that a Policy will Pay for a Covered Service	NUM	8	86
+MDCD_ACMDTN_PD_AMT	Medicaid Amount Paid for All Accommodation (Room and Board) Revenue Lines	NUM	8	87
+MDCD_ANCLRY_PD_AMT	Medicaid Amount Paid for All Ancillary (Non-Room & Board) Revenue Lines	NUM	8	88
+MDCR_PD_AMT	Medicare Paid Amount	NUM	8	89
+MDCR_DDCTBL_PD_AMT	Total Medicare Deductible Amount	NUM	8	90
+MDCR_COINSRNC_PD_AMT	Total Medicare Coinsurance Amount	NUM	8	91
+MDCR_CMBND_DDCTBL_IND	Medicare Combined Deductible and Coinsurance Indicator	CHAR	1	92
+MDCR_REIMBRSMT_TYPE_CD	Medicare Reimbursement Type Code	CHAR	2	93
+BENE_LIABILITY_AMT	Total Beneficiary Long-Term Care Liability Amount	NUM	8	94
+COINSRNC_AMT	Beneficiary Coinsurance Amount	NUM	8	95
+TOT_BENE_COINSRNC_LBLTY_AMT	Total Beneficiary Coinsurance Liability Amount	NUM	8	116	New3
+COPAY_AMT	Beneficiary Copayment Amount	NUM	8	96
+TOT_BENE_COPAY_LBLTY_AMT	Total Beneficiary Copayment Liability Amount	NUM	8	117	New3
+DDCTBL_AMT	Beneficiary Deductible Amount	NUM	8	97
+TOT_BENE_DDCTBL_LBLTY_AMT	Total Beneficiary Deductible Liability Amount	NUM	8	118	New3
+CMBND_BENE_CST_SHRNG_PD_AMT	Combined Beneficiary Cost Sharing Paid Amount	NUM	8	119	New3
+COPAY_WVD_IND	Indicator Signifying Copay was Waived by Provider	CHAR	1	98	Retired4
+TP_PD_AMT	Total Third Party Liability Paid Amount	NUM	8	99
+TP_COINSRNC_PD_AMT	Third Party Coinsurance Paid Amount	NUM	8	100
+TP_COPAY_PD_AMT	Third Party Copayment Paid Amount	NUM	8	101
+OTHR_INSRNC_PD_AMT	Total Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	102
+OTHR_TP_CLCTN_CD	Other Third Party Collection Code	CHAR	3	103
+FUNDNG_CD	Code To Indicate Source of Non-Federal Funding	CHAR	2	104
+FUNDNG_SRC_NON_FED_SHR_CD	Funding Source Non-Federal Share Code	CHAR	2	105
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	106
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	107
+LT_VRSN	Long-Term Version Representing the Iteration of the File	CHAR	2	108
+LT_FIL_DT	Long-Term File Date - Represents the Year and Month of the Reporting Period	DATE	8	109
+CCW_LD_DT	CCW Load Date	DATE	8	110
+Occurrence code file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+OCRNC_CD_SEQ	Occurrence Code Sequence	CHAR	2	6
+OCRNC_CD	Occurrence Code	CHAR	2	7
+OCRNC_CD_START_DT	Occurrence Code Start Date	DATE	8	8
+OCRNC_CD_END_DT	Occurrence Code End Date	DATE	8	9
+Line file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+LINE_NUM	Sequential Claim Line Number	NUM	3	6
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	7
+LINE_NUM_ORIG	Original Claim Line Number	CHAR	3	8
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	9
+LINE_NUM_ADJ	Adjustment Claim Line Number	CHAR	3	10
+ADJDCTN_DT	Adjudication Date	DATE	8	11
+LINE_CLAIM_STUS_CD	Claim Line Status Code	CHAR	3	12
+LINE_ADJUST_CD	Claim Line Adjustment Code	CHAR	1	13
+LINE_SRVC_BGN_DT	Claim Line Beginning Date of Service	DATE	8	14
+LINE_SRVC_END_DT	Claim Line Ending Date of Service	DATE	8	15
+BNFT_TYPE_CD	Benefit Type Code	CHAR	3	16
+TOS_CD	Type of Service Code	CHAR	3	17
+XIX_SRVC_CTGRY_CD	CMS-64 Form Category of Service for the Paid Claim	CHAR	4	18
+XXI_SRVC_CTGRY_CD	CMS-21 Form Category of Service for the Paid Claim	CHAR	3	19
+CMS_64_FED_CTGRY_CD	CMS-64 Form Code for Federal Reimbursement	CHAR	2	20
+IHS_SRVC_IND	Indian Health Service (IHS) Service Indicator	CHAR	1	44	New3
+REV_CNTR_CD	Revenue Center Code	CHAR	4	21
+ACTL_SRVC_QTY	Actual Service Quantity	NUM	8	22
+ALOWD_SRVC_QTY	Maximum Allowed Service Quantity	NUM	8	23
+BLG_UOM_CD	Service Billing Unit of Measure Code	CHAR	2	24
+NDC	National Drug Code	CHAR	13	25
+NDC_UOM_CD	NDC Unit of Measure Code	CHAR	2	26
+NDC_QTY	NDC Quantity Dispensed	NUM	8	27
+IMNZTN_TYPE_CD	Immunization Type Code	CHAR	2	28
+PRVDR_FAC_TYPE_CD	Provider Facility Type Code	CHAR	9	29
+SRVC_PRVDR_ID	Servicing Provider Identification Number	CHAR	30	30
+SRVC_PRVDR_NPI	Servicing Provider NPI	CHAR	10	31
+SRVC_PRVDR_TXNMY_CD	Servicing Provider Taxonomy Code	CHAR	12	32	Retired4
+SRVC_PRVDR_TYPE_CD	Servicing Provider Type Code	CHAR	2	33
+SRVC_PRVDR_SPCLTY_CD	Servicing Provider Specialty Code	CHAR	2	34
+REV_CNTR_CHRG_AMT	Revenue Center Charge Amount	NUM	8	35
+LINE_MDCD_ALOWD_AMT	Line Medicaid Allowed Amount	NUM	8	36
+LINE_MDCD_PD_AMT	Line Medicaid Paid Amount	NUM	8	37
+LINE_MDCD_FFS_EQUIV_AMT	Line Medicaid Fee For Service Equivalent Amount	NUM	8	38
+LINE_TP_PD_AMT	Line Third Party Liability Paid Amount	NUM	8	39
+LINE_OTHR_INSRNC_PD_AMT	Line Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	40
+LT_ACCMDTN_HCPCS_RATE	Long-Term Care Accommodation Rate	CHAR	14	41
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	42
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	43
+1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs
+2 Fields are populated starting with the 2020 Release 1 RIF
+3 Fields populated starting with the 2023 Release 1 RIF are designated as "New3"
+4 Fields that are retired; therefore, blank starting with the 2023 Release 1 RIF are designated as "Retired4"
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Claims — Other Services (OT) Files
+Version — December 2025
+SAS name	Label	Type	Length	OT sequence	New variables
+Header claim file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	6
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	7
+CLM_TYPE_CD	Claim Type Code	CHAR	1	8
+BILL_TYPE_CD	Bill Type Code	CHAR	4	9
+CROSSOVER_CLM_IND	Code To Indicate if a Portion of Claim is Paid by Medicare	CHAR	1	10
+ADJUST_CD	Claim Adjustment Code	CHAR	1	11
+ADJUST_RSN_CD	Adjustment Reason Code	CHAR	3	12
+ADJDCTN_DT	Adjudication Date	DATE	8	13
+MDCD_PD_DT	Medicaid Paid Date	DATE	8	14
+SRC_LCTN_CD	Denotes the Claims Payment System from which the Claim was Extracted	CHAR	2	97	New3
+CLL_CNT	Claim Line Count - Original	NUM	8	15
+CLL_CNT_CALC	Claim Line Count - Calculated	NUM	8	16
+PRSN_CLM_IND1	Indicator of a Claim for a Person	CHAR	1	93
+SRVC_TRKNG_TYPE_CD	Service Tracking Type Code	CHAR	2	17
+FED_SRVC_CTGRY_CD2	Federally Assigned Service Category Code Added During TAF Production	CHAR	2	94
+BIRTH_DT	Date of Birth	DATE	8	18
+PGM_TYPE_CD	Program Type Code	CHAR	2	19
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	20
+WVR_TYPE_CD	Waiver Type Code	CHAR	2	21
+WVR_ID	Waiver Identification Number	CHAR	20	22
+OTHR_INSRNC_IND	Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid)	CHAR	1	23
+SECT_1115A_DEMO_IND	1115(A) Demonstration Participation Indicator	CHAR	1	24
+SRVC_BGN_DT	Claim Beginning Date of Service	DATE	8	25
+SRVC_END_DT	Claim Ending Date of Service	DATE	8	26
+SRVC_END_DT_CD	Identifies the Date Field Used to Populate SRVC_END_DT	CHAR	1	27
+DGNS_CD_1	Primary or Principal Diagnosis Code	CHAR	7	28
+DGNS_VRSN_CD_1	Diagnosis Version Code 1 (ICD-9 or ICD-10)	CHAR	1	29
+DGNS_POA_IND_1	Diagnosis 1 Present on Admission Indicator	CHAR	1	30
+DGNS_1_CCSR_CTGRY_CD2	AHRQ Clinical Classifications Software Refined (CCSR) Diagnosis 1 Category Code	CHAR	6	95
+DGNS_CD_2	Diagnosis Code 2	CHAR	7	31
+DGNS_VRSN_CD_2	Diagnosis Version Code 2 (ICD-9 or ICD-10)	CHAR	1	32
+DGNS_POA_IND_2	Diagnosis 2 Present on Admission Indicator	CHAR	1	33
+HAC_IND	Health Care Acquired Condition (HAC) Indicator	CHAR	1	34
+MH_DGNS_IND	Mental Health Diagnosis Indicator	CHAR	1	35
+SUD_DGNS_IND	Substance Use Disorder Diagnosis Indicator	CHAR	1	36
+POS_CD	Place of Service Code	CHAR	2	37
+BLG_PRVDR_ID	Billing Provider Identification Number	CHAR	30	38
+BLG_PRVDR_NPI	Billing Provider NPI	CHAR	10	39
+BLG_PRVDR_TXNMY_CD	Billing Provider Taxonomy Code	CHAR	12	40
+BLG_PRVDR_NPPES_TXNMY_CD2	Billing Provider NPPES Taxonomy Code	CHAR	10	96
+BLG_PRVDR_TYPE_CD	Billing Provider Type Code	CHAR	2	41
+BLG_PRVDR_SPCLTY_CD	Billing Provider Specialty Code	CHAR	2	42
+RFRG_PRVDR_ID	Referring Provider Identification Number	CHAR	30	43
+RFRG_PRVDR_NPI	Referring Provider NPI	CHAR	10	44
+RFRG_PRVDR_TXNMY_CD	Referring Provider Taxonomy Code	CHAR	12	45	Retired4
+RFRG_PRVDR_TYPE_CD	Referring Provider Type Code	CHAR	2	46	Retired4
+RFRG_PRVDR_SPCLTY_CD	Referring Provider Specialty Code	CHAR	2	47	Retired4
+ORDRG_PRVDR_ID	Ordering Provider Identification Number	CHAR	30	98	New3
+ORDRG_PRVDR_NPI	Ordering Provider NPI	CHAR	10	99	New3
+DRCTNG_PRVDR_NPI	NPI of Provider Directing the Patient's Care	CHAR	10	48	Retired4
+DRCTNG_PRVDR_TXNMY_CD	Taxonomy Code of Provider Directing the Patient's Care	CHAR	12	49	Retired4
+SPRVSNG_PRVDR_NPI	Supervising Provider NPI	CHAR	10	50
+SPRVSNG_PRVDR_TXNMY_CD	Supervising Provider Taxonomy Code	CHAR	12	51	Retired4
+HLTH_HOME_PRVDR_IND	Health Home Provider Indicator	CHAR	1	52
+HLTH_HOME_PRVDR_NPI	Health Home Provider NPI	CHAR	10	53
+HLTH_HOME_ENT_NAME	Health Home Entity Name	CHAR	50	54
+PRVDR_LCTN_CD	Provider Location Code	CHAR	5	55
+BRDR_STATE_IND	Border State Indicator	CHAR	1	56
+MH_TXNMY_IND	Mental Health Provider Taxonomy Indicator	CHAR	1	57
+SUD_TXNMY_IND	Substance Use Disorder Provider Taxonomy Indicator	CHAR	1	58
+FIXD_PYMT_IND	Fixed Payment Indicator	CHAR	1	59
+SRVC_TRKNG_PYMT_AMT	Service Tracking Payment Amount	NUM	8	60
+PYMT_LVL_IND	Payment Level Indicator - Header or Line	CHAR	1	61
+CPTATD_PYMT_BILLED_AMT	Capitated Payment Billed Amount	NUM	8	62	Retired4
+CPTATD_PYMT_BILLED_DT	Capitated Payment Billed Date	DATE	8	63	Retired4
+BILLED_AMT	Total Claim Billed Amount	NUM	8	64
+MDCD_ALOWD_AMT	Total Medicaid Allowed Amount	NUM	8	65
+MDCD_PD_AMT	Total Amount Paid By Medicaid	NUM	8	66
+DAILY_RATE	Daily Rate that a Policy will Pay for a Covered Service	NUM	8	67
+MDCD_COPAY_AMT	Total Copay Amount Paid by Beneficiary	NUM	8	68
+MDCR_DDCTBL_PD_AMT	Total Medicare Deductible Amount	NUM	8	69
+MDCR_COINSRNC_PD_AMT	Total Medicare Coinsurance Amount	NUM	8	70
+MDCR_CMBND_DDCTBL_IND	Medicare Combined Deductible and Coinsurance Indicator	CHAR	1	71
+MDCR_REIMBRSMT_TYPE_CD	Medicare Reimbursement Type Code	CHAR	2	72
+COINSRNC_AMT	Beneficiary Coinsurance Amount	NUM	8	73
+TOT_BENE_COINSRNC_LBLTY_AMT	Total Beneficiary Coinsurance Liability Amount	NUM	8	100	New3
+COINSRNC_PD_DT	Beneficiary Coinsurance Paid Date	DATE	8	74
+COPAY_AMT	Beneficiary Copayment Amount	NUM	8	75
+TOT_BENE_COPAY_LBLTY_AMT	Total Beneficiary Copayment Liability Amount	NUM	8	101	New3
+COPAY_PD_DT	Beneficiary Copayment Paid Date	DATE	8	76
+DDCTBL_AMT	Beneficiary Deductible Amount	NUM	8	77
+TOT_BENE_DDCTBL_LBLTY_AMT	Total Beneficiary Deductible Liability Amount	NUM	8	102	New3
+DDCTBL_PD_DT	Beneficiary Deductible Paid Date	DATE	8	78
+CMBND_BENE_CST_SHRNG_PD_AMT	Combined Beneficiary Cost Sharing Paid Amount	NUM	8	103	New3
+COPAY_WVD_IND	Indicator Signifying Copay was Waived by Provider	CHAR	1	79	Retired4
+TP_PD_AMT	Total Third Party Liability Paid Amount	NUM	8	80
+TP_COINSRNC_PD_AMT	Third Party Coinsurance Paid Amount	NUM	8	81
+TP_COPAY_PD_AMT	Third Party Copayment Paid Amount	NUM	8	82
+OTHR_INSRNC_PD_AMT	Total Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	83
+OTHR_TP_CLCTN_CD	Other Third Party Collection Code	CHAR	3	84
+FUNDNG_CD	Code To Indicate Source of Non-Federal Funding	CHAR	2	85
+FUNDNG_SRC_NON_FED_SHR_CD	Funding Source Non-Federal Share Code	CHAR	2	86
+REMITTANCE_NUM	Remittance Number	CHAR	30	87
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	88
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	89
+OT_VRSN	Other Services Version Representing the Iteration of the File	CHAR	2	90
+OT_FIL_DT	Other Services File Date - Represents the Year and Month of the Reporting Period	DATE	8	91
+CCW_LD_DT	CCW Load Date	DATE	8	92
+Occurrence code file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+OCRNC_CD_SEQ	Occurrence Code Sequence	CHAR	2	6
+OCRNC_CD	Occurrence Code	CHAR	2	7
+OCRNC_CD_START_DT	Occurrence Code Start Date	DATE	8	8
+OCRNC_CD_END_DT	Occurrence Code End Date	DATE	8	9
+Line file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+LINE_NUM	Sequential Claim Line Number	NUM	3	6
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	7
+LINE_NUM_ORIG	Original Claim Line Number	CHAR	3	8
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	9
+LINE_NUM_ADJ	Adjustment Claim Line Number	CHAR	3	10
+ADJDCTN_DT	Adjudication Date	DATE	8	11
+LINE_CLAIM_STUS_CD	Claim Line Status Code	CHAR	3	12
+LINE_ADJUST_CD	Claim Line Adjustment Code	CHAR	1	13
+LINE_ADJUST_RSN_CD	Claim Line Adjustment Reason Code	CHAR	3	14
+LINE_SRVC_BGN_DT	Claim Line Beginning Date of Service	DATE	8	15
+LINE_SRVC_END_DT	Claim Line Ending Date of Service	DATE	8	16
+BNFT_TYPE_CD	Benefit Type Code	CHAR	3	17
+TOS_CD	Type of Service Code	CHAR	3	18
+XIX_SRVC_CTGRY_CD	CMS-64 Form Category of Service for the Paid Claim	CHAR	4	19
+XXI_SRVC_CTGRY_CD	CMS-21 Form Category of Service for the Paid Claim	CHAR	3	20
+CMS_64_FED_CTGRY_CD	CMS-64 Form Code for Federal Reimbursement	CHAR	2	21
+IHS_SRVC_IND	Indian Health Service (IHS) Service Indicator	CHAR	1	62	New3
+REV_CNTR_CD	Revenue Center Code	CHAR	4	22
+ACTL_SRVC_QTY	Actual Service Quantity	NUM	8	23
+ALOWD_SRVC_QTY	Maximum Allowed Service Quantity	NUM	8	24
+LINE_PRCDR_CD_DT	Date Line Procedure Performed	DATE	8	25
+LINE_PRCDR_CD	Line Procedure Code	CHAR	8	26
+LINE_PRCDR_CD_SYS	Line Procedure Code System/Nomenclature	CHAR	2	27
+LINE_PRCDR_MDFR_CD_1	Line Procedure Code Modifier Code 1	CHAR	2	28
+LINE_PRCDR_MDFR_CD_2	Line Procedure Code Modifier Code 2	CHAR	2	29
+LINE_PRCDR_MDFR_CD_3	Line Procedure Code Modifier Code 3	CHAR	2	30
+LINE_PRCDR_MDFR_CD_4	Line Procedure Code Modifier Code 4	CHAR	2	31
+LINE_PRCDR_CCS_CTGRY_CD2	Line Procedure AHRQ Clinical Classifications Software Refined (CCSR) Category Cd	CHAR	8	60
+NDC	National Drug Code	CHAR	13	32
+NDC_UOM_CD	NDC Unit of Measure Code	CHAR	2	33
+NDC_QTY	NDC Quantity Dispensed	NUM	8	34
+IMNZTN_TYPE_CD	Immunization Type Code	CHAR	2	35
+SELF_DRCTN_TYPE_CD	Beneficiary Service Self-Direction Type Code	CHAR	3	36
+PRE_AUTHRZTN_NUM	Pre-Authorization Number	CHAR	18	37
+HCBS_SRVC_CD	Home- and Community-Based Services Service Code	CHAR	1	38
+HCBS_TXNMY_CD	Home- and Community-Based Services Taxonomy Code	CHAR	5	39
+TOOTH_DSGNTN_SYS	Tooth Designation System/Nomenclature	CHAR	2	40
+TOOTH_NUM	Tooth Number	CHAR	2	41
+TOOTH_ORAL_CVTY_AREA_DSGNTD_CD	Tooth Oral Cavity Area Designated Code	CHAR	2	42
+TOOTH_SRFC_CD	Tooth Surface Code	CHAR	1	43
+SRVC_PRVDR_ID	Servicing Provider Identification Number	CHAR	30	44
+SRVC_PRVDR_NPI	Servicing Provider NPI	CHAR	10	45
+SRVC_PRVDR_TXNMY_CD	Servicing Provider Taxonomy Code	CHAR	12	46
+SRVC_PRVDR_NPPES_TXNMY_CD2	Servicing Provider NPPES Taxonomy Code	CHAR	10	61
+SRVC_PRVDR_TYPE_CD	Servicing Provider Type Code	CHAR	2	47
+SRVC_PRVDR_SPCLTY_CD	Servicing Provider Specialty Code	CHAR	2	48
+LINE_BILLED_AMT	Line Billed Amount	NUM	8	49
+LINE_MDCD_ALOWD_AMT	Line Medicaid Allowed Amount	NUM	8	50
+LINE_MDCD_PD_AMT	Line Medicaid Paid Amount	NUM	8	51
+LINE_MDCD_FFS_EQUIV_AMT	Line Medicaid Fee For Service Equivalent Amount	NUM	8	52
+LINE_MDCR_PD_AMT	Line Medicare Paid Amount	NUM	8	53
+LINE_COPAY_AMT	Line Beneficiary Copayment Amount	NUM	8	54
+LINE_TP_PD_AMT	Line Third Party Liability Paid Amount	NUM	8	55
+LINE_OTHR_INSRNC_PD_AMT	Line Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	56
+OT_ACCMDTN_HCPCS_RATE	Other Services Accommodation Rate	CHAR	14	57	Retired4
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	58
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	59
+1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs
+2 Fields are populated starting with the 2020 Release 1 RIF
+3 Fields populated starting with the 2023 Release 1 RIF are designated as "New3"
+4 Fields that are retired; therefore, blank starting with the 2023 Release 1 RIF are designated as "Retired4"
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Claims — Pharmacy (Rx) Files
+Version — December 2025
+SAS name	Label	Type	Length	RX sequence	New variables
+Header claim file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	6
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	7
+CLM_TYPE_CD	Claim Type Code	CHAR	1	8
+CROSSOVER_CLM_IND	Code To Indicate if a Portion of Claim is Paid by Medicare	CHAR	1	9
+ADJUST_CD	Claim Adjustment Code	CHAR	1	10
+ADJUST_RSN_CD	Adjustment Reason Code	CHAR	3	11
+ADJDCTN_DT	Adjudication Date	DATE	8	12
+MDCD_PD_DT	Medicaid Paid Date	DATE	8	13
+CMPND_DRUG_IND	Compound Drug Indicator	CHAR	1	14
+SRC_LCTN_CD	Denotes the Claims Payment System from which the Claim was Extracted	CHAR	2	64	New3
+RX_ORGN_CD	Prescription Origin Code	CHAR	1	65	New3
+CLL_CNT	Claim Line Count - Original	NUM	8	15
+CLL_CNT_CALC	Claim Line Count - Calculated	NUM	8	16
+PRSN_CLM_IND1	Indicator of a Claim for a Person	CHAR	1	62
+SRVC_TRKNG_TYPE_CD	Service Tracking Type Code	CHAR	2	17
+FED_SRVC_CTGRY_CD2	Federally Assigned Service Category Code Added During TAF Production	CHAR	2	63
+BIRTH_DT	Date of Birth	DATE	8	18
+PGM_TYPE_CD	Program Type Code	CHAR	2	19
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	20
+WVR_TYPE_CD	Waiver Type Code	CHAR	2	21
+WVR_ID	Waiver Identification Number	CHAR	20	22
+OTHR_INSRNC_IND	Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid)	CHAR	1	23
+SECT_1115A_DEMO_IND	1115(A) Demonstration Participation Indicator	CHAR	1	24
+PRSCRBD_DT	Prescribed Date	DATE	8	25
+RX_FILL_DT	Prescription Fill Date	DATE	8	26
+BLG_PRVDR_ID	Billing Provider Identification Number	CHAR	30	27
+BLG_PRVDR_NPI	Billing Provider NPI	CHAR	10	28
+BLG_PRVDR_TXNMY_CD	Billing Provider Taxonomy Code	CHAR	12	29
+BLG_PRVDR_SPCLTY_CD	Billing Provider Specialty Code	CHAR	2	30
+PRSCRBNG_PRVDR_ID	Prescribing Provider Identification Number	CHAR	30	31
+PRSCRBNG_PRVDR_NPI	Prescribing Provider NPI	CHAR	10	32
+DSPNSNG_PRVDR_ID	Dispensing Provider Identification Number	CHAR	30	33
+DSPNSNG_PRVDR_NPI	Dispensing Provider NPI	CHAR	10	34
+PRVDR_LCTN_CD	Provider Location Code	CHAR	5	35
+BRDR_STATE_IND	Border State Indicator	CHAR	1	36
+FIXD_PYMT_IND	Fixed Payment Indicator	CHAR	1	37
+SRVC_TRKNG_PYMT_AMT	Service Tracking Payment Amount	NUM	8	38
+PYMT_LVL_IND	Payment Level Indicator - Header or Line	CHAR	1	39
+BILLED_AMT	Total Claim Billed Amount	NUM	8	40
+MDCD_ALOWD_AMT	Total Medicaid Allowed Amount	NUM	8	41
+MDCD_PD_AMT	Total Amount Paid By Medicaid	NUM	8	42
+MDCD_COPAY_AMT	Total Copay Amount Paid by Beneficiary	NUM	8	43
+MDCR_DDCTBL_PD_AMT	Total Medicare Deductible Amount	NUM	8	44
+MDCR_COINSRNC_PD_AMT	Total Medicare Coinsurance Amount	NUM	8	45
+COINSRNC_AMT	Beneficiary Coinsurance Amount	NUM	8	46
+TOT_BENE_COINSRNC_LBLTY_AMT	Total Beneficiary Coinsurance Liability Amount	NUM	8	66	New3
+COPAY_AMT	Beneficiary Copayment Amount	NUM	8	47
+TOT_BENE_COPAY_LBLTY_AMT	Total Beneficiary Copayment Liability Amount	NUM	8	67	New3
+DDCTBL_AMT	Beneficiary Deductible Amount	NUM	8	48
+TOT_BENE_DDCTBL_LBLTY_AMT	Total Beneficiary Deductible Liability Amount	NUM	8	68	New3
+CMBND_BENE_CST_SHRNG_PD_AMT	Combined Beneficiary Cost Sharing Paid Amount	NUM	8	69	New3
+COPAY_WVD_IND	Indicator Signifying Copay was Waived by Provider	CHAR	1	49	Retired4
+TP_PD_AMT	Total Third Party Liability Paid Amount	NUM	8	50
+TP_COINSRNC_PD_AMT	Third Party Coinsurance Paid Amount	NUM	8	51
+TP_COPAY_PD_AMT	Third Party Copayment Paid Amount	NUM	8	52
+OTHR_INSRNC_PD_AMT	Total Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	53
+OTHR_TP_CLCTN_CD	Other Third Party Collection Code	CHAR	3	54
+FUNDNG_CD	Code To Indicate Source of Non-Federal Funding	CHAR	2	55
+FUNDNG_SRC_NON_FED_SHR_CD	Funding Source Non-Federal Share Code	CHAR	2	56
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	57
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	58
+RX_VRSN	Rx Version Representing the Iteration of the File	CHAR	2	59
+RX_FIL_DT	RX File Date - Represents the Year and Month of the Reporting Period	DATE	8	60
+CCW_LD_DT	CCW Load Date	DATE	8	61
+Line file
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15	1
+MSIS_ID	Encrypted State Assigned Beneficiary Unique Identifier	CHAR	32	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State FIPS Code	CHAR	2	4
+CLM_ID	CCW Claim Identifier	CHAR	64	5
+LINE_NUM	Sequential Claim Line Number	NUM	3	6
+CLM_NUM_ORIG	Original Claim Identifier	CHAR	50	7
+LINE_NUM_ORIG	Original Claim Line Number	CHAR	3	8
+CLM_NUM_ADJ	Adjustment Claim Identifier	CHAR	50	9
+LINE_NUM_ADJ	Adjustment Claim Line Number	CHAR	3	10
+ADJDCTN_DT	Adjudication Date	DATE	8	11
+LINE_CLAIM_STUS_CD	Claim Line Status Code	CHAR	3	12
+LINE_ADJUST_CD	Claim Line Adjustment Code	CHAR	1	13
+BNFT_TYPE_CD	Benefit Type Code	CHAR	3	14
+TOS_CD	Type of Service Code	CHAR	3	15
+XIX_SRVC_CTGRY_CD	CMS-64 Form Category of Service for the Paid Claim	CHAR	4	16
+XXI_SRVC_CTGRY_CD	CMS-21 Form Category of Service for the Paid Claim	CHAR	3	17
+CMS_64_FED_CTGRY_CD	CMS-64 Form Code for Federal Reimbursement	CHAR	2	18
+IHS_SRVC_IND	Indian Health Service (IHS) Service Indicator	CHAR	1	48	New3
+RX_FILL_DT	Prescription Fill Date	DATE	8	19
+NDC	National Drug Code	CHAR	13	20
+NDC_UOM_CD	NDC Unit of Measure Code	CHAR	2	21
+NDC_QTY	NDC Quantity Dispensed	NUM	8	22
+MTRC_DCML_QTY	Metric Decimal Quantity of Product	NUM	8	23
+NDC_QTY_ALOWD	NDC Quantity Allowed	NUM	8	24
+DAYS_SUPPLY	Days Supply	NUM	8	25
+NEW_RX_REFILL_NUM	New Prescription Indicator (00) or Number of Refills	CHAR	2	26
+BRND_GNRC_CD	Brand - Generic Code	CHAR	1	27
+DOSAGE_FORM_CD	Medication Dosage Form Code	CHAR	2	28
+REBT_ELGBL_CD	Rebate Eligible Code	CHAR	1	29
+DRUG_UTLZTN_CD	Drug Utilization Code	CHAR	6	30
+RSN_SRVC_CD	Reason for Service Code	CHAR	6	31
+PROF_SRVC_CD	Professional Service Code	CHAR	6	32
+RSLT_SRVC_CD	Result of Service Code	CHAR	6	33
+IMNZTN_TYPE_CD	Immunization Type Code	CHAR	2	34
+DSPNSNG_FEE_AMT	Dispensing Fee Submitted Amount	NUM	8	35
+DSPNSNG_FEE_PD_AMT	Dispensing Fee Paid Amount	NUM	8	49	New3
+INGRDNT_CST_BILLED_AMT	Ingredient Cost Billed Amount	NUM	8	50	New3
+INGRDNT_CST_PD_AMT	Ingredient Cost Paid Amount	NUM	8	51	New3
+PROFNL_SRVC_FEE_BILLED_AMT	Professional Service Fee Billed Amount	NUM	8	52	New3
+PROFNL_SRVC_FEE_PD_AMT	Professional Service Fee Paid Amount	NUM	8	53	New3
+LINE_BILLED_AMT	Line Billed Amount	NUM	8	36
+LINE_MDCD_ALOWD_AMT	Line Medicaid Allowed Amount	NUM	8	37
+LINE_MDCD_PD_AMT	Line Medicaid Paid Amount	NUM	8	38
+LINE_MDCD_FFS_EQUIV_AMT	Line Medicaid Fee For Service Equivalent Amount	NUM	8	39
+LINE_MDCR_PD_AMT	Line Medicare Paid Amount	NUM	8	40
+LINE_MDCR_DDCTBL_PD_AMT	Line Medicare Deductible Amount	NUM	8	41
+LINE_MDCR_COINSRNC_PD_AMT	Line Medicare Coinsurance Amount	NUM	8	42
+LINE_COPAY_AMT	Line Beneficiary Copayment Amount	NUM	8	43
+LINE_TP_PD_AMT	Line Third Party Liability Paid Amount	NUM	8	44
+LINE_OTHR_INSRNC_PD_AMT	Line Other Than Medicare or Medicaid -Insurance Paid Amount	NUM	8	45
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	8	46
+TMSIS_RUN_ID	TMSIS State Data Processing Run Identifier	NUM	8	47
+1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs
+2 Fields are populated starting with the 2020 Release 1 RIF
+3 Fields populated starting with the 2023 Release 1 RIF are designated as "New3"
+4 Fields that are retired; therefore, blank starting with the 2023 Release 1 RIF are designated as "Retired4"
+
+Revision date	Tab	Description
+45992	All files	Added new variables SRC_LCTN_CD, TOT_BENE_COINSRNC_LBLTY_AMT, TOT_BENE_COPAY_LBLTY_AMT, TOT_BENE_DDCTBL_LBLTY_AMT, and CMBND_BENE_CST_SHRNG_PD_AMT to all header claims. 
+Also added new fields ORDRG_PRVDR_ID and ORDRG_PRVDR_NPI to OT header file.
+Added new field RX_ORGN_CD to RX header file.
+Added new variable IHS_SRVC_IND to all line files.
+Added five new variables to RX line file: DSPNSNG_FEE_PD_AMT, INGRDNT_CST_BILLED_AMT, INGRDNT_CST_PD_AMT, PROFNL_SRVC_FEE_BILLED_AMT, and PROFNL_SRVC_FEE_PD_AMT.
+44835	All files	Added new variable FED_SRVC_CTGRY_CD to all header claims; also added new variables DGNS_1_CCSR_CTGRY_CD and BLG_PRVDR_NPPES_TXNMY_CD to IP, LT and OT header claims.
+44835	OT line	Added new variables LINE_PRCDR_CCS_CTGRY_CD and SRVC_PRVDR_NPPES_TXNMY_CD to the OT line file.
+44440	All files	Added new variable PRSN_CLM_IND to all header claims
+Adjusted SAS label for SUBMTG_STATE_CD to reflect expansion of this field to state entity code

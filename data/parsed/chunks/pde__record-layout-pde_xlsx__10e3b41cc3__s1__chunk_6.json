@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "Patient Liability Reduction Due to Other Payer Amount (PLRO) NUM 13 X X X X X X X X LC\nCPP_AMT CVRD_D_PLAN_PD_AMT Covered D Plan Paid Amount (CPP) NUM 13 X X X X X X X X LC\nNPP_AMT NCVRD_PLAN_PD_AMT Non-Covered Plan Paid Amount (NPP) NUM 13 X X X X X X X X LC\nTOTALCST TOT_RX_CST_AMT Gross Drug Cost NUM 14 X X X X X X X X LC\nRX_ORGN_CD RX_ORGN_CD Prescription Origin Code CHAR 1 - X X X X X X X X\nGAPDSCNT RPTD_GAP_DSCNT_NUM Gap Discount Amount NUM 13 - - - X X X X X LC\nBRNDGNCD BRND_GNRC_CD",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

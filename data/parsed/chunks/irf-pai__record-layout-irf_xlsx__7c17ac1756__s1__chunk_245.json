@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_245",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "ulcers at discharge due to coverage of wound bed by slough and/or eschar that were stageable at admission.\n214 UNSTGBL_ULCR_DTI_ADMSN_NUM UNSTGBL_ULCR_DTI_ADMSN_NUM M0300G1 Unstageable Pressure Ulcers DTI Admission Number CHAR 1 The number of unstageable pressure ulcers at admission with suspected deep tissue injury in evolution.\n215 UNSTGBL_ULCR_DTI_DSCHRG_NUM UNSTGBL_ULCR_DTI_DSCHRG_NUM M0300G1 Unstageable Pressure Ulcers DTI Discharge Number CHAR 1 The number of unstageable pressure ulcers",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_22",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Food Connected to Community Service Provider CHAR 1\nNN_CORE_FOOD_OPTOUT_SW Navigated Core HRSN Food Opted Out CHAR 1\nNN_CORE_FOOD_CNTCT_FAIL_SW Navigated Core HRSN Food Attempts to Reach Failed CHAR 1\nNN_CORE_FOOD_CSP_UNAVBL_SW Navigated Core HRSN Food Community Service Provider Unable to Help CHAR 1\nNN_CORE_FOOD_OUTCM_UNK_SW Navigated Core HRSN Food Outcome Unknown CHAR 1\nNN_CORE_HOUSNG_RSLVD_SW Navigated Core HRSN Housing Resolved CHAR 1\nNN_CORE_HOUSNG_CNCT_CSP_SW Navigated Core HRSN Housing",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

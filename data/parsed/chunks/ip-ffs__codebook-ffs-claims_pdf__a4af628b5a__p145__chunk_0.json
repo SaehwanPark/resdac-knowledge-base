@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p145__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 145,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n127 \nCLM_SPAN_CD \nLABEL: \nClaim Occurrence Span Code \nDESCRIPTION: The code that identifies a significant event relating to an institutional claim that may affect payer \nprocessing. \nThese codes are claim-related occurrences that are related to a time period span of dates (variables \ncalled the CLM_SPAN_FROM_DT and CLM_SPAN_THRU_DT). \nSHORT NAME: SPAN_CD \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

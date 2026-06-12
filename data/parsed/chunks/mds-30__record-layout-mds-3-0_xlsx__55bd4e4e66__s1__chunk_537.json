@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_537",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "in this column contains the event date for the prior erroneous record to be modified or inactivated. The event date is the assessment reference date for an assessment record. effective 10/01/2023\n616 X0700B_CRCTN_DSCHRG_DT X0700B_CRCTN_DSCHRG_DT X0700B Correction Discharge Date CHAR 8 The data in this column contains the event date for the prior erroneous record to be modified or inactivated. The event date is the discharge date for a discharge record. effective 10/01/2023\n617",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

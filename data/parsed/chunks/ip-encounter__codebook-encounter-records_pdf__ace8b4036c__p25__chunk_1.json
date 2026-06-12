@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p25__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 25,
+  "text": "started for the HH services reported on the encounter \nrecord. \nSHORT NAME: CLM_ADMSN_DT \nLONG NAME: CLM_ADMSN_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nVALUES: \n— \nCOMMENT: \nFor HH, this date indicates the date the home health plan was established or last reviewed. \nThe date in this variable may precede the claim from date (CLM_FROM_DT) if this claim is for a \nbeneficiary who has been continuously under care. \n^ Back to",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_86",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Utilization (IHU): PPD Comorbidity Weight, Surgery NUM 8 165 — — — —\nIHU_PPD_MDCL_CMRBDTY_WT Inpatient Hospital Utilization (IHU): PPD Comorbidity Weight, Medical NUM 8 166 — — — —\nIHU_PPD_TOT_AGE_SEX_WT3 Inpatient Hospital Utilization (IHU): PPD Age-Sex Weight, Total NUM 8 167 — — — —\nIHU_PPD_SRGRY_AGE_SEX_WT3 Inpatient Hospital Utilization (IHU): PPD Age-Sex Weight, Surgery NUM 8 168 — — — —\nIHU_PPD_MDCL_AGE_SEX_WT3 Inpatient Hospital Utilization (IHU): PPD Age-Sex Weight, Medical NUM 8 169 —",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

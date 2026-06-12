@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p222__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 222,
+  "text": "payments can only be \nmade until the cap is met. \nThis line-item field is applicable to non-institutional claims involving DME, prosthetic, orthotic and \nsupply items, immunosuppressive drugs, parenteral nutrition (PEN), ESRD and oxygen items referred \nto as DMEPOS. \nSHORT NAME: DME_PURC \nLONG NAME: LINE_DME_PRCHS_PRICE_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

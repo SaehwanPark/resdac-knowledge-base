@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-base__chunk_1",
+  "source_document": "data/raw/html/dataset_page/a908448a73ab3c65dfd95d8626da4db2940148f2.html",
+  "page": null,
+  "text": "for all Medicare beneficiaries, regardless of whether the beneficiary was enrolled in Original Medicare (also known as Fee-For-Service Medicare) or MA during the payment year.\nFor a given payment year, the research risk score files include an Operational Payment Base File and Model Output Files (MOFs) from a mix of six potential risk models. The MOFs contain raw risk scores calculated prior to any adjustments made for payments. Each payment year has specific risk models that are based on that",
+  "dataset": "risk-score-base",
+  "url": "https://resdac.org/cms-data/files/risk-score-base"
+}

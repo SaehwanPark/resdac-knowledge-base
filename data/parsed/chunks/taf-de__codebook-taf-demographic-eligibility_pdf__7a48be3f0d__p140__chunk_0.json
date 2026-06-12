@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p140__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 140,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n100 \nHLTH_MDCL_HOME_MOS \nLABEL: \nHealth/Medical Home Months \nDESCRIPTION: Number of months the beneficiary was enrolled in a Health or Medical Home in the calendar year. \nSHORT NAME: HLTH_MDCL_HOME_MOS \nLONG NAME: HLTH_MDCL_HOME_MOS \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nManaged Care \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0-12 (Number of",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Code CHAR 5 This field indicates which version of the MDS RAI form was completed for this assessment.\n15 MCD_CMI MCD_CMI Medicaid CMI Value for RUG Group CHAR 9 This field contains the Medicaid Case Mix Index generated in the RUG calculation for this assessment by the state MDS system.\n16 MCDSTCD MCD_SET_CODE Medicaid RUG CMI Set Used CHAR 3 This field contains the Medicaid set code that was used in the RUB calculation for this assessment by the state MDS system.\n17 MCD_GP MCD_GP Medicaid RUG",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

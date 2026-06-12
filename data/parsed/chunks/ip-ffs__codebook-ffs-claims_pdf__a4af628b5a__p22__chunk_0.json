@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 22,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n4 \nAT_PHYSN_NPI \nLABEL: \nClaim Attending Physician NPI Number \nDESCRIPTION: On an institutional claim, the national provider identifier (NPI) is a unique number assigned to identify \nthe physician who has overall responsibility for the beneficiary's care and treatment. \nNPIs replaced UPINs as the standard provider identifiers beginning in 2007. The UPIN is almost never",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

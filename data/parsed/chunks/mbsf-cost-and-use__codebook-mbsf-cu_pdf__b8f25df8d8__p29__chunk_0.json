@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p29__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 29,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n23 \nDME_MDCR_PMT \nLABEL: \nDurable Medical Equipment Medicare Payments \nDESCRIPTION: This variable is the total Medicare payments for Part B durable medical equipment (DME) for a given \nyear. Claims for DME are a subset of the claims in the Part B carrier and DME data files. \nThese claim lines are defined as those with a line BETOS code (BETOS_CD) where the first three digits \nare",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

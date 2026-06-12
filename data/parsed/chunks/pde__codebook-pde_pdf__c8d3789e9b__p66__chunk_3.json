@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p66__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 66,
+  "text": "Health Plan Management System (HPMS). \nThis includes information on which drugs are subject to step therapy, which requires a beneficiary to \nfirst try one or more other medications in the same therapeutic class. The CCW creates this variable \nbased on the beneficiary’s plan of record, which is identified using the Part D contract and plan benefit \npackage of record (the PLAN_CNTRCT_REC_ID and PLAN_PBP_REC_NUM variables). For a small \nnumber of beneficiaries, particularly those who changed",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

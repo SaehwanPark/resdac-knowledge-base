@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p38__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 38,
+  "text": "a verified or unverified date of death) (value effective with MBSF ABCD V2) \n0 = Enrolled in Medicare A or B but not a member of an HMO in the month \n1 = Non-lock-in, CMS to process provider claims \n2 = Non-lock-in, group health organization (GHO; MA plan) to process in plan Part A and in area Part B \nclaims \n4 = Fee-for-service participant in case or disease management demonstration project \nA = Lock-in, CMS to process provider claims \nB = Lock-in, GHO to process in plan Part A and in area",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

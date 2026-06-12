@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p23__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 23,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n17 \nDIALYS_BENE_PMT \nLABEL: \nDialysis Beneficiary Payments \nDESCRIPTION: This variable is the total Medicare payments for Part B dialysis services (primarily the professional \ncomponent since treatments are covered in hospital outpatient) for a given year. The total Beneficiary \npayments are calculated as the sum of LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for the \nrelevant",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

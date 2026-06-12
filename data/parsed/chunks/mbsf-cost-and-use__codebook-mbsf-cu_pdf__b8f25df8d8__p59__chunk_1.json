@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p59__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 59,
+  "text": "are \ncalculated as the sum of LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. \nClaims for other procedures are a subset of the claims in the Part B carrier data file. These other \nprocedure claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits \nare (“P1,” “P2,” “P3,” “P4,” “P5,” “P6,” “P7,” or “P8”). \nSHORT NAME: — \nLONG NAME: OPROC_BENE_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThere are 11 cost/use",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

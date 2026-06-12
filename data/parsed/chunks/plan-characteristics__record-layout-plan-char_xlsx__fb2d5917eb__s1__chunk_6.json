@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 1,
+  "text": "in the Part D Plan CHAR 1 X X X\nOOPT_AMT Out-of-Pocket (OOP) Threshold Amount in the Part D Plan NUM 12 X X X\nEXCLUDED_DRUGS Indicates Whether Part D Plan Covers Excluded Drugs CHAR 1 X X X\nREDUCED_COST_SHARE Indicates Whether Part D Plan Offers Reduced Cost-Sharing CHAR 1 X X X\nREDUCED_DED Indicates Whether Part D Plan Offers Reduced Deductible Amount CHAR 1 X X X\nREDUCED_PREICL_CS Indicates Whether Part D Plan Offers Reduced Pre-ICL Cost-sharing CHAR 1 X X X\nREDUCED_OOPT_CS Indicates Whether",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

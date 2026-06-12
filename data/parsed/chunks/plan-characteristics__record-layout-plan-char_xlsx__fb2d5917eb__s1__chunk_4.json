@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 1,
+  "text": "Plan Deductible Amount NUM 12 X X X\nDED_APPLY_ALL Type of Cost Sharing in the Part D Plan Deductible Phase CHAR 1 X X X\nDED_COSTSHARE_TIERS Tiers with Cost Sharing in the Part D Deductible Phase CHAR 7 X X X\nDED_COPAY Part D Deductible Phase Co-pay Amount NUM 12 X X X\nDED_COINS Part D Plan Deductible Phase Coinsurance Percentage NUM 12 X X X\nFREE_FIRST_FILL Indicates Whether Part D Plan Offers Free First Prescription Fill CHAR 1 X X X\nPRE_ICL_APPLY How Part D Pre-ICL Cost-Sharing is Applied in",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

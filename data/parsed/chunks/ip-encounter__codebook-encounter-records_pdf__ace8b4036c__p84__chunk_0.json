@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p84__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 84,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n74 \nFILE(S): \nCarrier base \nDME base \nVALUES: \nBlank = ICD-9 \n9 = \nICD-9 \n0 = \nICD-10 \nCOMMENT: \nOn October 1, 2015, the conversion from the ninth version of the International Classification of \nDiseases (ICD-9-CM) to version 10 (ICD-10-CM) occurred. ICD-10 has more than 70,000 unique \ndiagnosis codes compared to approximately 14,000 ICD-9 codes, which allows for more detail",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p143__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 143,
+  "text": "DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = U.S. citizen or U.S. national \n1 = Qualified non-citizen \n2 = Lawfully present under Children's Health Insurance Program Reauthorization Act (CHIPRA) 214 \n3 = Eligible only for payment for emergency services \nNull/missing = source value is missing or unknown \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

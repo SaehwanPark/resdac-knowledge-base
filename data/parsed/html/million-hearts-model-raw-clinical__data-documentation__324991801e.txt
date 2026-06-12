@@ -1,0 +1,18 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| PRACTICE_ID | Model-Assigned Practice ID | 
+| PRACTICE_NAME | Name of Practice | 
+| TIN | Practice's Taxpayer Identification Number | 
+| NPI | Provider's National Provider Identifier | 
+| UNIQUE_PATIENT_ID | Unique Model-Assigned Patient ID | 
+| ACTIVITY_DATE | Encounter/Procedure/Diagnosis/Lab/Medication Start or Occurrence Date | 
+| ACTIVITY_END_DATE | Encounter/Procedure/Diagnosis End date | 
+| CODE | Code Used to Document the Service | 
+| MODIFIER | Any Modifiers for the Base Code | 
+| VALUE | Value Provided for Certain Service Attributes | 
+| UNITS | Unit for the Value Provided for Certain Service Attributes | 
+| INSERT_DATE | Date the Record was Created |

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p181__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 181,
+  "text": "TYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge amount (REV-CNTR-TOT-CHRG-\nAMT) associated with revenue center code (REV CNTR CD) '0277' from all claim records included in the \nstay. This field was new in 2011. \nThis field is one of 15 detailed medical surgical amounts. Reference: \nMDCL_SRGCL_GNRL_AMT, MDCL_SRGCL_NSTRL_AMT, MDCL_SRGCL_STRL_AMT, \nMDCL_SRGCL_DRSNG_AMT, MDCL_SRGCL_PCMKR_AMT,",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

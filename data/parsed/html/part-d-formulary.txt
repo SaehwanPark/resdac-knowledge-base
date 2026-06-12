@@ -1,0 +1,15 @@
+The Medicare Part D Formulary file is a suite of five sub-files: Formulary, Excluded Drug, Over-the-Counter Drug, Indication-based Formulary, and Part D Senior Savings (PDSS) Model that contain information on how the plan covers the prescription drugs filled (as described in the Part D Drug Event (PDE) file.
+What does this file include? (variable highlights)
+- CCW Formulary Drug Identifier
+- Tier ID
+- Step Therapy Indicator
+- Quantity Limit
+- Prior authorization
+- Linking variables to the PDE file record:- Formulary Identification Number (in each sub-file)
+ 
+Why do researchers request this file?
+- To examine differences in utilization based on formulary inclusion or restrictions
+- To examine plan differences in formularies
+Special considerations
+- Linking variables provide information for each Part D Drug Event (PDE) record.
+- The Tier ID available in this file may be linked to the Plan Characteristics File.

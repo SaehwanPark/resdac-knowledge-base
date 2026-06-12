@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_23",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Carrier Line Miles/Time/Units/Services (MTUS) Count NUM 11 39\nMTUS_IND CARR_LINE_MTUS_CD Carrier Line Miles/Time/Units/Services (MTUS) Indicator Code CHAR 1 40\nLINE_ICD_DGNS_CD LINE_ICD_DGNS_CD Line Diagnosis Code CHAR 7 41\nLINE_ICD_DGNS_VRSN_CD LINE_ICD_DGNS_VRSN_CD Line Diagnosis Code Diagnosis Version Code (ICD-9 or ICD-10) CHAR 1 42\nHPSASCCD HPSA_SCRCTY_IND_CD Carrier Line Health Professional Shortage Area (HPSA) / Scarcity Indicator Code CHAR 1 43\nCARRXNUM CARR_LINE_RX_NUM Carrier Line RX",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

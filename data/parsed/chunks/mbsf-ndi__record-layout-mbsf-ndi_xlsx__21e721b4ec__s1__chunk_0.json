@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__record-layout-mbsf-ndi_xlsx__21e721b4ec__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/21e721b4ec64c624ca4af0c2f9b8d19c80c4925d.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File — National Death Index (NDI)\nVersion — April 2026\nShort SAS name2 Long SAS name3 Label Type Length Year of data file1\n1999–2006 2007–2024\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 x x\nRFRNC_YR BENE_ENROLLMT_REF_YR Reference Year NUM 4 x x\nENRL_SRC ENRL_SRC Source of enrollment data CHAR 3 x x\nDEATH_CERT_NUM DEATH_CERT_NUM NDI Death Certificate Number CHAR 6 x x\nNDI_DEATH_DT NDI_DEATH_DT NDI Date of",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-ndi.xlsx"
+}

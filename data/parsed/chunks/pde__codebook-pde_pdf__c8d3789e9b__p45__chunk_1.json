@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p45__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 45,
+  "text": "that a Part D plan sponsor \nhas with CMS. \nIf the beneficiary was enrolled in more than one plan during the year, this is the plan benefit package \nidentifier for the plan in which the beneficiary was enrolled at the end of the year. \nSHORT NAME: PLNPBPRC \nLONG NAME: PLAN_PBP_REC_NUM \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nPDE \nVALUES: \n3-digit numeric value \nCOMMENT: \nFor 2006–2012, this variable was always encrypted to comply with CMS privacy rules. \nYou need to know both the Part D contract",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

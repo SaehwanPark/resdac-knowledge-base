@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_26",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "the ISC. 1=Nursing home (SNF/NF)\n2=Swing bed\n44 A0310A_FED_OBRA_CD A0310A_FED_OBRA_CD A0310A Federal OBRA Reason for Assessment Code CHAR 2 This column contains the federal OBRA reason for assessment value. 01=Admission assessment (required by day 14)\n02=Quarterly review assessment\n03=Annual assessment\n04=Significant change in status assessment\n05=Significant correction to prior comprehensive assessment\n06=Significant correction to prior quarterly assessment\n99=None of the above\n45",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

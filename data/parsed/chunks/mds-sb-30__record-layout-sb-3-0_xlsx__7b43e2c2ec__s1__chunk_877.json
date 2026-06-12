@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_877",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "O0110F1A Therapies: Invasive Mechanical Ventilator (Admis) CHAR 1 The data in this column indicates whether the resident received invasive mechanical ventilator treatment days one through three (on admission) of becoming a resident of the facility. 0=No\n1=Yes effective 10/01/2023\n983 INVSV_VNTLTR_14_CD INVSV_VNTLTR_14_CD O0110F1B Therapies: Invasive Mechanical Ventilator (14day) CHAR 1 The data in this column indicates whether the resident received invasive mechanical ventilator treatment while",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

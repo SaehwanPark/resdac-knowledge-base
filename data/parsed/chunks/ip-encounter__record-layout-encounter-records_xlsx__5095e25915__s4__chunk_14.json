@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_14",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "RX Number Char 30 18 18\nLINE_LTST_CLM_IND Line Latest Claim Indicator Char 1 19 19\n1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because\nit is available in the Master Beneficiary Summary File; the numbering of the fields was updated.",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

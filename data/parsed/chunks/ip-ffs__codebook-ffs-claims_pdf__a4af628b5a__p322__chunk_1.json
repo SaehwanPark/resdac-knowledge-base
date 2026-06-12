@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p322__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 322,
+  "text": "of 1.3516 for new patient initial preventive physical examination (IPPE) and annual \nwellness visit. \nSHORT NAME: RC_PTNT_ADD_ON_PYMT_AMT \nLONG NAME: RC_PTNT_ADD_ON_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nThis field is new in October 2014.This field only applies to outpatient claims. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

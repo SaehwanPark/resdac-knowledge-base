@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p71__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 71,
+  "text": "which a beneficiary was enrolled. CNTRCT_PBP_NUM \nis not submitted by the MAO on an encounter data record; the MAO only submits the contract ID. \nInstead, the plan ID is assigned by CMS based on the beneficiary’s enrollment data for the claim dates \nof service. CMS enrollment data is obtained from the source CMS Common Medicare Environment \n(CME) data \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

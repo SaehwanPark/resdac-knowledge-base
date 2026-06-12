@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 11,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n6 \nEPRSCRB_SRVC_IND \nLABEL: \nE-Prescribing Services Indicator \nDESCRIPTION: This variable is an indicator as to whether or not the pharmacy accepts electronic prescriptions \n(computer to computer). \nSHORT NAME: — \nLONG NAME: EPRSCRB_SRVC_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \nY = Yes, pharmacy offers e-prescribing. \nN = No, pharmacy does not offer e-prescribing.",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

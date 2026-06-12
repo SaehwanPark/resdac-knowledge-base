@@ -7,6 +7,8 @@ import csv
 import re
 import shutil
 import sys
+import zipfile
+from xml.etree import ElementTree
 from pathlib import Path
 
 from pydantic import BaseModel, Field, model_validator
@@ -155,6 +157,77 @@ def parse_pdf(local_path: Path) -> list[tuple[int, str]]:
   return pages
 
 
+def _xml_text(element: ElementTree.Element) -> str:
+  return "".join(element.itertext())
+
+
+def _read_xlsx_shared_strings(workbook: zipfile.ZipFile) -> list[str]:
+  if "xl/sharedStrings.xml" not in workbook.namelist():
+    return []
+
+  root = ElementTree.fromstring(workbook.read("xl/sharedStrings.xml"))
+  shared_strings: list[str] = []
+  for item in root:
+    shared_strings.append(_xml_text(item).strip())
+  return shared_strings
+
+
+def _xlsx_cell_text(
+  cell: ElementTree.Element, shared_strings: list[str]
+) -> str:
+  cell_type = cell.attrib.get("t", "")
+  if cell_type == "inlineStr":
+    inline_text = cell.find("{*}is")
+    return _xml_text(inline_text).strip() if inline_text is not None else ""
+
+  value = cell.find("{*}v")
+  if value is None or value.text is None:
+    return ""
+
+  raw_value = value.text.strip()
+  if cell_type == "s":
+    try:
+      return shared_strings[int(raw_value)]
+    except (IndexError, ValueError):
+      return raw_value
+  return raw_value
+
+
+def _xlsx_sheet_sort_key(path: str) -> tuple[int, str]:
+  match = re.search(r"sheet(\d+)\.xml$", path)
+  if match is None:
+    return (0, path)
+  return (int(match.group(1)), path)
+
+
+def parse_xlsx(local_path: Path) -> list[tuple[int, str]]:
+  sheets: list[tuple[int, str]] = []
+  with zipfile.ZipFile(local_path) as workbook:
+    shared_strings = _read_xlsx_shared_strings(workbook)
+    sheet_paths = sorted(
+      [
+        name
+        for name in workbook.namelist()
+        if name.startswith("xl/worksheets/sheet") and name.endswith(".xml")
+      ],
+      key=_xlsx_sheet_sort_key,
+    )
+
+    for sheet_index, sheet_path in enumerate(sheet_paths, start=1):
+      root = ElementTree.fromstring(workbook.read(sheet_path))
+      rows: list[str] = []
+      for row in root.findall(".//{*}sheetData/{*}row"):
+        values = [
+          _xlsx_cell_text(cell, shared_strings)
+          for cell in row.findall("{*}c")
+        ]
+        row_text = "\t".join(value for value in values if value)
+        if row_text.strip():
+          rows.append(row_text)
+      sheets.append((sheet_index, "\n".join(rows)))
+  return sheets
+
+
 def chunk_text(
   text: str,
   chunk_size: int = 500,
@@ -229,6 +302,7 @@ def write_parsing_workspace_summary(result: ParsingResult) -> Path:
     "",
     f"- Parsed HTML directory: {result.config.parsed_root / 'html'}",
     f"- Parsed PDF directory: {result.config.parsed_root / 'pdf'}",
+    f"- Parsed XLSX directory: {result.config.parsed_root / 'xlsx'}",
     f"- Chunks directory: {result.config.parsed_root / 'chunks'}",
     f"- Unified chunks file: {result.config.parsed_root / 'chunks.jsonl'}",
     "",
@@ -259,9 +333,10 @@ def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
   # Setup output directories (clean them first to prevent orphaned files)
   html_out = config.parsed_root / "html"
   pdf_out = config.parsed_root / "pdf"
+  xlsx_out = config.parsed_root / "xlsx"
   chunks_out = config.parsed_root / "chunks"
 
-  for path in [html_out, pdf_out, chunks_out]:
+  for path in [html_out, pdf_out, xlsx_out, chunks_out]:
     if path.exists():
       shutil.rmtree(path)
     path.mkdir(parents=True, exist_ok=True)
@@ -421,7 +496,7 @@ def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
         continue
 
       # Enforce explicit supported document kind check
-      if doc.document_kind not in {"pdf", "html"}:
+      if doc.document_kind not in {"pdf", "html", "xlsx"}:
         failures.append(
           ParsingFailure(
             url=doc.source_url,
@@ -526,6 +601,52 @@ def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
             f_jsonl.write(chunk.model_dump_json() + "\n")
             chunks_count += 1
 
+        elif doc.document_kind == "xlsx":
+          sheets = parse_xlsx(local_path)
+          combined_text = "\n\n".join(
+            sheet_text for _, sheet_text in sheets
+          ).strip()
+          if not combined_text:
+            failures.append(
+              ParsingFailure(
+                url=doc.source_url,
+                local_path=local_path_str,
+                reason="extracted XLSX text is empty",
+              )
+            )
+            continue
+
+          txt_path = xlsx_out / f"{doc.document_id}.txt"
+          txt_path.write_text(combined_text, encoding="utf-8")
+          parsed_documents_count += 1
+
+          for sheet_num, sheet_text in sheets:
+            if not sheet_text.strip():
+              continue
+            sheet_chunks = chunk_text(
+              sheet_text,
+              chunk_size=config.chunk_size,
+              chunk_overlap=config.chunk_overlap,
+            )
+            for idx, chunk_txt in enumerate(sheet_chunks):
+              chunk_id = f"{doc.document_id}__s{sheet_num}__chunk_{idx}"
+              chunk = ChunkMetadata(
+                chunk_id=chunk_id,
+                source_document=doc.local_path,
+                page=sheet_num,
+                text=chunk_txt,
+                dataset=doc.dataset_id,
+                url=doc.source_url,
+              )
+
+              chunk_path = chunks_out / f"{chunk_id}.json"
+              chunk_path.write_text(
+                chunk.model_dump_json(indent=2), encoding="utf-8"
+              )
+
+              f_jsonl.write(chunk.model_dump_json() + "\n")
+              chunks_count += 1
+
       except Exception as exc:
         failures.append(
           ParsingFailure(
@@ -603,5 +724,6 @@ __all__ = [
   "main",
   "parse_html",
   "parse_pdf",
+  "parse_xlsx",
   "run_parsing",
 ]

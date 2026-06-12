@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p411__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 411,
+  "text": "RSN_VISIT_VRSN_CD1 \nRSN_VISIT_VRSN_CD1 \nLONG NAME: RSN_VISIT_VRSN_CD1 \nRSN_VISIT_VRSN_CD1 \nRSN_VISIT_VRSN_CD1 \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nBlank = ICD-9 \n9 = ICD-9 \n0 = ICD-10 \nCOMMENT: \nWith 5010, the diagnosis and procedure codes expanded to accommodate ICD-10. \nOn October 1, 2015, the conversion from the 9th version of the International Classification of Diseases \n(ICD-9-CM) to version 10 (ICD-10-CM) occurred. \nThis code is associated with the diagnosis code identified",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

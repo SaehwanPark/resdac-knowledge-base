@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p356__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 356,
+  "text": "(DC), Comprehensive Kidney Care \nContracting (CKCC) and Kidney Care First (KCF) model claims. \nSHORT NAME: REV_CNTR_ADJUST_RSN_CD \nLONG NAME: REV_CNTR_ADJUST_RSN_CD \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nNCH \nVALUES: \nThis is not a comprehensive list of values; refer to website below for current values and descriptions: \n\n94 = Processed in Excess of charges \n119 = Benefit maximum for this time period or occurrence has been reached \n132 = Prearranged demonstration project adjustment \nCOMMENT: \nThis",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

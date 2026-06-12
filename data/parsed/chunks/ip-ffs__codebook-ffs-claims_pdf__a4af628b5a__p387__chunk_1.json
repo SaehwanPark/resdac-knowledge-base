@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p387__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 387,
+  "text": "claim line. It is also used to \ncommunicate information about remittance processing. This field is currently only populated for \nDirect Contracting (DC), Comprehensive Kidney Care Contracting (CKCC) and Kidney Care First (KCF) \nmodel claims. \nSHORT NAME: REV_CNTR_RA_RMRK_CD \nLONG NAME: REV_CNTR_RA_RMRK_CD \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nNCH \nVALUES: \nN83 = No appeal rights. Adjudicative decision based on the provisions of a demonstration project. \nCOMMENT: \nThis code set is an external code",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

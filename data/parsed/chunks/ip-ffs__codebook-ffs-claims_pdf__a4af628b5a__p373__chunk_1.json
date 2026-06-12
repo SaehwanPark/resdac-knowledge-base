@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p373__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 373,
+  "text": "NCH \nVALUES: \n0 = Not packaged \n1 = Packaged service (service indicator N) \n2 = Packaged as part of partial hospitalization per diem or daily mental health service per diem \n3 = Artificial charges for surgical procedure (eff. 7/2004) \nCOMMENT: \nThis field is populated for those claims that are required to process through outpatient PPS PRICER \nsoftware. The type of bills (TOB) required to process through are: 12X, 13X, 14X (except Maryland \nproviders, Indian Health Providers, hospitals located",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

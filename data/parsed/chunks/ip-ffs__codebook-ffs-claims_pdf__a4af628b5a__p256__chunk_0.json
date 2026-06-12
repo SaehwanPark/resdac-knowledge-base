@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p256__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 256,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n238 \nNCH_ACTV_OR_CVRD_LVL_CARE_THRU \nLABEL: \nNCH Active or Covered Level Care Thru Date \nDESCRIPTION: The date on a claim for which the covered level of care ended in a general hospital or the active care \nended in a psychiatric/tuberculosis hospital. \nSHORT NAME: CARETHRU \nLONG NAME: NCH_ACTV_OR_CVRD_LVL_CARE_THRU \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH QA Process \nVALUES: \n—",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p122__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 122,
+  "text": "File (TAF) claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES: \n0 = Not Fixed Payment \n1 = Fee-for-service (FFS) Fixed Payment \nNull/missing = Source value is missing or unknown \nCOMMENT: \nFixed payments are made by the state to insurers or providers for premiums or eligible coverage, not \nfor a particular service. For example, some states have Primary Care Case Management (PCCM) \nprograms where the state pays providers a monthly patient management fee of $3.50 for each",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

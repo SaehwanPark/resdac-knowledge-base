@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_113",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X X X\n521 FFS_TP_AMT_26 Third party payment amount (MAX TOS 26) NUM 12 X X X X X X X X X X X\n522 ENCTR_REC_CNT_26 Encounter record count (MAX TOS 26) NUM 5 X X X X X X X X X X X\n523 FEE_FOR_SRVC_IND_30 Recipient indicator (MAX TOS 30 - personal care services) CHAR 1 X X X X X X X X X X X\n524 FFS_CLM_CNT_30 Claim count (MAX TOS 30) NUM 6 X X X X X X X X X X X\n525 FFS_PYMT_AMT_30 Medicaid payment amount (MAX TOS 30) NUM 12 X X X X X X X X X X X\n526 FFS_CHRG_AMT_30 Charge amount",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_9",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "code Char 6 NP field contains proprietary data; is not released\n53 SMART_KEY Smart Key Char 24 NP field contains proprietary data; is not released\n54 MEDISPAN_DRG_CTGRY Medispan code Char 14 NP field contains proprietary data; is not released\n55 OVER_COUNTER_IND Over-the-counter indicator Char 1 NP field contains proprietary data; is not released\n56 GCN_SEQNO Clinical Formulation ID Char 6 NP field contains proprietary data; is not released\n57 HICL_SEQNO Ingredient List ID Char 6 NP field",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

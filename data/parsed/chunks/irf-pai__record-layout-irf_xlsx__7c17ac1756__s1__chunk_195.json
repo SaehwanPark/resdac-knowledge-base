@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_195",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "(41) Patient Discharged Against Medical Advice CHAR 1 A code indicating whether the patient was discharged against medical advice. 0 = No, 1 = Yes\n154 _42 PGM_INTRPTN_SW (42) Program Interruption(s) CHAR 1 A code indicating whether the Medicare inpatient is discharged from the inpatient rehabilitation facility and returns to the same inpatient rehabilitation facility within 3 consecutive calendar days. 0 = No, 1 = Yes\n155 _43A TRNSFR_1_DT (43A) First Interruption Date DATE 8 The date when the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_937",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 1 x\nO0110H2C_VASOACTV_DSCHRG_CD Other: IV - Vasoactive medications (Discharge) Indicates whether the patient was receiving IV vasoactive medications at the time of discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110H3A_ANTBTC_ADMSN_CD Other: IV - Antibiotics (Admission) Indicates whether the patient was receiving IV antibiotics at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110H3C_ANTBTC_DSCHRG_CD Other: IV - Antibiotics (Discharge)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

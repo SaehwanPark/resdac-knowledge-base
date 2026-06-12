@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p15__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 15,
+  "text": "(above attachment point), then the PDE is in the catastrophic phase. When \nthe value equals A (attachment point), the PDE has caused the beneficiary to move into the \ncatastrophic phase (i.e., this is the “triggering” PDE). \nSHORT NAME: CATCOVCD \nLONG NAME: CTSTRPHC_CVRG_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \nA = Attachment point met on this event \nC = Above attachment point \nN = Attachment Point met; TrOOP subsequently reduced below the OOP threshold due to payment \namounts from",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

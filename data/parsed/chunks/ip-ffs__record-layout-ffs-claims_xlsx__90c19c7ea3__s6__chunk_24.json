@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_24",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Professional Shortage Area (HPSA) / Scarcity Indicator Code CHAR 1 43\nCARRXNUM CARR_LINE_RX_NUM Carrier Line RX Number CHAR 30 44\nHCTHGBRS LINE_HCT_HGB_RSLT_NUM Hematocrit / Hemoglobin Test Results NUM 4 45\nHCTHGBTP LINE_HCT_HGB_TYPE_CD Hematocrit / Hemoglobin Test Type Code CHAR 2 46\nLNNDCCD LINE_NDC_CD Line National Drug Code (NDC) CHAR 11 47\nCARR_LINE_CLIA_LAB_NUM CARR_LINE_CLIA_LAB_NUM Clinical Laboratory Improvement Amendments (CLIA) monitored laboratory number CHAR 10",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

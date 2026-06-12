@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_108",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "(ACSC) Age-Sex Weight NUM 8 208 224 266 254 252\nHPC_PUCD_CHRNC_ACSC_BASE_RISK_WT HPC: PUCD Chronic Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight NUM 8 209 — — — —\nHPC_PUCD_ACUTE_ACSC_BASE_RISK_WT HPC: PUCD Acute Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight NUM 8 210 — — — —\nHPC_PUCD_TOT_ACSC_BASE_RISK_WT HPC: PUCD Total Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight NUM 8 211 — — — —\nFUM_DNMTR_MENTL_ILL_ED_VISIT_CNT Follow-Up After Emer Dpt (ED) Visit for Mental Illness",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

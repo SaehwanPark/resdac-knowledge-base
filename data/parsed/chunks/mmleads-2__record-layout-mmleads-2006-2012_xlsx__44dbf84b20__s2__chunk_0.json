@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 2,
+  "text": "Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) V2.0\nConditions File Data Dictionary - a row of data for each person in the Beneficiary File\nNote: File is at the Bene_ID level (MSIS_ID/State level for Medicaid only eligible without a BENE_ID)\nCategory Variable Name Description Values\nIdentifiers BENE_ID CCW beneficiary ID up to 15 alphanumeric characters\nMSIS_ID State reported MSIS ID used for individuals who do not have a valid BENE_ID up to 20 alphanumeric characters\nSTATE_CD",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

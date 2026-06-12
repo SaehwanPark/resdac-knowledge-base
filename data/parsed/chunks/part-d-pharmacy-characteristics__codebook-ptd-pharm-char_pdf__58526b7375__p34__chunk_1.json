@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p34__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 34,
+  "text": "by NCPDP to specify a tertiary dispenser type. \nSHORT NAME: — \nLONG NAME: TERTIARY_TAXONOMY_CODE \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n(e.g., 3336C0003X), or null/missing (n/a) \nCOMMENT: \nThis taxonomy code applies to the tertiary dispenser type (variable called \nTERTIARY_DISPENSER_TYPE). For each pharmacy, there is information for up to three taxonomy \ncodes, associated with each of the dispenser types (reference PRIMARY_TAXONOMY_CODE and \nSECONDARY_TAXONOMY_CODE",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

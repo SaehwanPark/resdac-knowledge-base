@@ -1,0 +1,11 @@
+The Beneficiary Demographic file contains all beneficiary demographic information entered via manual entry and upload to the model data collection registry. Additionally, partial beneficiary data that was created through the semi-annual beneficiary alignment validation process is also included and could be considered a data input method. The file is at the beneficiary level, with one record for each beneficiary. It’s possible for the same beneficiary to appear in the file twice, if two or more organizations tried to enroll the same beneficiary.
+What does this file include? (variable highlights)
+- Beneficiary ID
+- Model-Assigned Patient ID
+- Patient Date of Birth
+- Patient Sex
+- Patient Race
+- Patient Ethnicity
+A record represents a single beneficiary. Some beneficiaries may have more than one record if more than one organization tried to enroll them in the trial.
+The Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link to other CCW non-Million Hearts® files.
+The Beneficiary ID can be linked to other beneficiary records in this dataset and other CCW Medicare data.

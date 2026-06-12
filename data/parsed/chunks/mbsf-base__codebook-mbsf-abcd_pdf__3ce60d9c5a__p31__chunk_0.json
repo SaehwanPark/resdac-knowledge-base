@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p31__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 31,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \n23 \nDUAL_ELGBL_MONS \nLABEL: \nMonths of Dual Eligibility \nDESCRIPTION: This variable is the number of months during the year that the beneficiary was dually eligible (i.e., \nhe/she was also eligible for Medicaid benefits). \nSHORT NAME: DUAL_MO \nLONG NAME: DUAL_ELGBL_MONS \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) (derived) \nVALUES: \n0–12",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

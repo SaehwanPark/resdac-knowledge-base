@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_67",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Payment Amount | \n\n | 372 | IPPS_FLEX_PYMT_6_AMT | Flexible Payment Amount (6th) - renamed to Hospital Acquired Conditions (HAC) Reduction Payment Amount | \n\n | 373 | HAC_RDCTN_PMT_AMT | Hospital Acquired Conditions (HAC) Reduction Payment Amount | \n\n | 374 | IPPS_FLEX_PYMT_7_AMT | Flexible Payment Amount — 7th (placeholder) | \n\n | 375 | PTNT_ADD_ON_PYMT_AMT | Patient Add-On Payment Amount (new patient) | \n\n | 376 | HAC_PGM_RDCTN_IND_SW | Hospital Acquired Conditions (HAC) Program Reduction",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

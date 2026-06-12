@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "CHAR 2 This field specifies the state as it appeared in the Medicaid enrollment file. 2 character postal state code\nMSIS_ID Encrypted Medicaid State ID Number CHAR 32 This field indicates the enrollee's Medicaid state identification number\nREF_YR Record Reference Year CHAR 4 This field indicates the reference year of the Medicaid enrollment data.\nDM_SOURCE Dual or Medicaid only enrollee CHAR 1 This field specifies whether enrollee was dually enrolled in Medicare & Medicaid during the year, or",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

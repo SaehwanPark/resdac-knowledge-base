@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_321",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "indicates whether the resident has a condition or chronic disease that may result in a life expectancy of less than six months. -=Not assessed/no information\n0=No\n1=Yes\n356 J1550A_FVR_CD J1550A_FVR_CD J1550A Problem Conditions: Fever Code CHAR 1 The data in this column indicates whether the resident had a fever. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n357 J1550B_VMTG_CD J1550B_VMTG_CD J1550B Problem Conditions: Vomiting Code CHAR 1 The data in this column indicates",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

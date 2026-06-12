@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p123__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 123,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n112 \nMDCR_TOTAL_FFS_USE \nLABEL: \nMedicare Use (FFS Claim Count) — Total \nDESCRIPTION: This variable is the total count of claims for all Medicare fee-for-service (FFS) claims and Part D events \n(PDEs) for the beneficiary during the year. Note that only fee-for-service (FFS) claims for services and \nPDEs are included. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedicare Claims files (derived) \nVALUES: \nXX \nCOMMENT: \nCCW calculates this",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

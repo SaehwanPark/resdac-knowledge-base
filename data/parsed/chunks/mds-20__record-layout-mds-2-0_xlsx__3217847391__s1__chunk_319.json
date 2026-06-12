@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_319",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = Private home/apt. with no home health services, 2 = Private home/apt. with home health services, 3 = Board and care/assisted living, 4 = Another nursing facility, 5 = Acute Care Hospital, 6 = Psychiatric Hospital, MR/DD facility, 7 = Rehabilitation Hospital, 8 = Deceased, 9 = Other\n537 R3B R3B_STATE_CD (R3B) State Code CHAR 1 Assessment/discharge information: optional state code.\n538 R4 R4_DISCHARGE_DT (R4) Discharge Date DATE 8 Assessment/discharge information: discharge date.\n539 T1AA",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

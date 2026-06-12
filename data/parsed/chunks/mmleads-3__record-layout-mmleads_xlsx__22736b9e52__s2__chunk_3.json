@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s2__chunk_3",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 2,
+  "text": "Outpatient Num 8\n16 MDCR_PTBNI_TOTAL_FFS_USE Medicare Use (FFS Claim Count) - Part B Non-Institutional Num 8\n17 MDCR_PTBNI_TOTAL_FFS_SPEND Medicare FFS Payment Amount - Part B Non-Institutional Num 8\n18 MDCR_PTD_TOTAL_USE Medicare Use (Claim Count) - PDE Num 8\n19 MDCR_PTD_TOTAL_SPEND Medicare Payment Amount - PDE Num 8\n20 MDCD_IP_TOTAL_USE Medicaid Use (Claim Count) - Inpatient Num 8\n21 MDCD_IP_TOTAL_SPEND Medicaid Payment Amount - Inpatient Num 8\n22 MDCD_LT_TOTAL_USE Medicaid Use (Claim Count)",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

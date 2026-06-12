@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_518",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "transmission route of patient's current reconciled medication list to the patient, family and/or caregiver was an alternate method such as text, email or CD. 0 = No\n1 = Yes\n^ = Blank\n455 HEARG_CD HEARG_CD Hearing CHAR 1 This column documents the patient's ability to hear (with hearing aid or hearing appliances if normally used). 0 = Adequate; no difficulty in normal conversation, social interaction, listening to TV\n1 = Minimal difficulty; difficulty in some environments (e.g., when person",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p68__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 68,
+  "text": "are a subset of the claims in the Part B carrier and DME data files, and a \nsubset of physician evaluation and management (E/M) claim lines (NOTE: E/M are tabulated separately \nin this data file). The PHYS claims are defined as those with a line BETOS code (BETOS_CD) where the \nfirst three digits = “M1A” or “M1B” (the remainder of physician services which occur in different settings \nappear in EM_MDCR_PMT). \nSHORT NAME: — \nLONG NAME: PHYS_EVENTS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived)",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_22",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "for home care: Medicare (traditional fee-for-service). 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x x\nM0150_CPY_MCAREHMO (M0150) Medicare HMO/Managed Care Current payment sources for home care: Medicare (HMO/managed care). 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x x\nM0150_CPY_NONE (M0150) No Charge for Current Services Current payment sources for home care: none, no charge for current services. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_4",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "FI_CLM_ACTN_CD FI or MAC Claim Action Code CHAR 1 142\nPRSTATE PRVDR_STATE_CD NCH Provider SSA State Code CHAR 2 19\nORGNPINM ORG_NPI_NUM Organization NPI Number CHAR 10 20\nSRVC_LOC_NPI_NUM SRVC_LOC_NPI_NUM Claim Service Location NPI Number CHAR 22 21\nAT_UPIN AT_PHYSN_UPIN Claim Attending Physician UPIN Number CHAR 6 22\nAT_NPI AT_PHYSN_NPI Claim Attending Physician NPI Number CHAR 10 23\nAT_PHYSN_SPCLTY_CD AT_PHYSN_SPCLTY_CD Claim Attending Physician Specialty Code CHAR 2 24\nOP_UPIN OP_PHYSN_UPIN",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

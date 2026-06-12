@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p121__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 121,
+  "text": "reduction program reference the CMS website: \nhttp://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/AcuteInpatientPPS/Readmissions-\nReduction-Program.html \nThis field comes from the Claim HRR Adjustment Percent (CLM-HRR-ADJSTMT-PCT) that is present on \nthe last claim record included in the stay. \nThis field is new in 2011. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

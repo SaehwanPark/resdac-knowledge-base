@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p139__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 139,
+  "text": "File (TAF) claims (derived) \nFILE(S): \nIP header \nVALUES: \n0 = Not a mental health (MH) claim \n1 = MH claim \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis variable is derived in the TAF using ICD-9 codes 290–302 and 306–319 and ICD-10 codes F01–F09 \nand F20–F99 to identify mental health-related claims. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

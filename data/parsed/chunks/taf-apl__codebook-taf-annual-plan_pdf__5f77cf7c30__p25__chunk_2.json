@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p25__chunk_2",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 25,
+  "text": "at least 10,000 (but less than \n50,000) population. Each metro or micro area consists of one or more counties and includes the \ncounties containing the core urban area, as well as any adjacent counties that have a high degree of \nsocial and economic integration (as measured by commuting to work) with the urban core. \nSHORT NAME: MC_PLAN_CBSA_CD \nLONG NAME: MC_PLAN_CBSA_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n1 = The MCO’s service",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

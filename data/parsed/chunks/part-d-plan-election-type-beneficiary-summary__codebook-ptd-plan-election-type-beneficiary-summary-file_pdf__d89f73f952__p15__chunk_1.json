@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p15__chunk_1",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 15,
+  "text": "Environment (CME) \nFILE(S): \nPart D Beneficiary Plan Election file \nVALUES: \nA = Part D Auto Enrolled by CMS \nB = Beneficiary Election (Beneficiary Made Plan Choice) \nC = Part D Facilitated Enrollment by CMS \nD = System Generated Enrollment (Rollover) \nE = Plan Submitted Auto Enrollment \nF = Plan Submitted Facilitated Enrollment \nG = Point of Sale (POS) submitted enrollment (i.e., pharmacy enrolled beneficiary in a LINET plan) \nH = CMS or Plan Submitted Re-assignment Enrollment \nI = Assigned to",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

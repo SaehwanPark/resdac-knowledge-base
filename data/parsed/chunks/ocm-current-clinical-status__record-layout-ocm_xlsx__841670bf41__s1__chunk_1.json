@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__record-layout-ocm_xlsx__841670bf41__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/841670bf413cf4120155451b7395c917931706ff.xlsx",
+  "page": 1,
+  "text": "8\nOCM_PRCTC_ID OCM-Assigned Practice ID CHAR 7\nCNCR_TYPE_ASGNED OCM-Assigned Cancer Type CHAR 35\nPRFMNC_PRD OCM 6 Month Performance Period NUM 3\nRPTD_TO_RGSTRY Participant Reported Episode to OCM Registry NUM 3\nICD10_CNCR_DGNS_CD_RPTD ICD10 Cancer Diagnosis Code Reported by Participant CHAR 7\nCNCR_TYPE_RPTD Participant-Reported Cancer Type CHAR 35\nINITL_DGNS_DT Initial Diagnosis Date DATE 8\nAJCC_EDITION AJCC Cancer Staging Edition CHAR 3\nPRMRY_TUMOR Primary Tumor Staging CHAR 30\nNODAL_DISEASE",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ocm.xlsx"
+}

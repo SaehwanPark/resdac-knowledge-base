@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__data-documentation__2617b90539__chunk_16",
+  "source_document": "data/raw/html/documentation_page/2617b90539062fe66e0d34c18b850febb573183e.html",
+  "page": null,
+  "text": "| SR_NVGTN_OPT_IN_OUT_IND | Beneficiary Opted In or Out of Navigation services | \n\n | SR_NVGTN_OPT_IN_OUT_DT | Navigation Case Opt In/Out Date | \n\n | NC_NVGTN_CASE_ID | Navigation Case Unique Identifier | \n\n | NC_NVGTN_CASE_STRT_DT | Navigation Case Opt In Date | \n\n | NC_NVGTN_CASE_TRMNTN_DT | Navigation Case termination date | \n\n | NC_NVGTN_ACTN_PLAN_CMPLT_SW | Navigation Case Action Plan Complete Indicator | \n\n | NN_NVGTD_CORE_FOOD_SW | Navigated Core HRSN Food Indicator | \n\n |",
+  "dataset": "ahc-model",
+  "url": "https://resdac.org/cms-data/files/ahc-model/data-documentation"
+}

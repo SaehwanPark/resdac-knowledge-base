@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "code\n(PRSCRBR_ID and PRSCRBR_ID_QLFYR_CD variables) are used. The CCW Prescriber ID variable (and the associated PDE_PRSCRBR_ID_FRMT_CD) was retired after the 2013 data file.\n5 Starting in 2010, these variables were moved from PDE to the Formulary file.\n6 If these variables are selected, they are appended to the PDE records.\n7 In 2025, this field was renamed to sex to comply with Executive Order 14168",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

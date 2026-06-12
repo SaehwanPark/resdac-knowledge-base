@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 2,
+  "text": "o REV_CNTR \n• Variable was removed because beneficiary sex is available in \nthe Master Beneficiary Summary File \n1.7 \nNovember 2024 S. Pietzsch \nUpdated CLM_DRG_CD to length 4 \n1.6 \nJune 2023 \nK. Schneider \nAdded values and corresponding descriptions for \nCLM_FREQ_CD, CLM_RLT_OCRNC_CD, \nCLM_SRC_IP_ADMSN_CD, CLM_VAL_CD, and REV_CNTR. \nEdited values for BENE_STATE_CD (removed territories), \nBENE_STATE (added GU and UP) and both \nCLM_PLACE_OF_SRVC_CD and LINE_PLACE_OF_SRVC_CD \n(edited value",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

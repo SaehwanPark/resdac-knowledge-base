@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p27__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 27,
+  "text": "such as tablet, capsule, or \nliquid. It may also incorporate the delivery and release mechanism of the drug. \nWhen this variable appears in the formulary file, it is the FDB dosage form code description for a drug \nproduct on the formulary. \nSHORT NAME: GCDF_DESC \nLONG NAME: GCDF_DESC \nTYPE: \nCHAR \nLENGTH: \n40 \nSOURCE: \nFirst DataBank \nVALUES: \nNarrative description (e.g., DROPS or TABLET) \nCOMMENT: \nThe accompanying FDB code for this description appears in the dosage form code variable (called",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

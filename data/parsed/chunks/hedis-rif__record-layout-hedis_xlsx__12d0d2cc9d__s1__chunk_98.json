@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_98",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "(EDU): Outliers Indicator NUM 3 — — — 228 226\nEDU_ED_VISIT_CNT Emergency Department Utilization (EDU): Observed ED Visits NUM 3 183 198 239 229 227\nEDU_PPV_CMRBDTY_WT Emergency Department Utilization (EDU): PPV Comorbidity Weight NUM 8 184 199 240 230 228\nEDU_PPV_AGE_SEX_WT3 Emergency Department Utilization (EDU): PPV Age-Sex Weight NUM 8 185 200 241 231 229\nEDU_PPV_BASE_RISK_WT Emergency Department Utilization (EDU): PPV Base Risk Weight NUM 8 186 201 242 — —\nEDU_PUCV_CMRBDTY_WT Emergency",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

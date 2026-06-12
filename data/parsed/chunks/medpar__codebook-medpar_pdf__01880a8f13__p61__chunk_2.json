@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p61__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 61,
+  "text": "derived by accumulating the Claim Model Reimbursement Amount (CLM-MODEL-\nREIMBRSMT-AMT) that is present on any of the claim records included in the stay (i.e., sum of the CLM-\nMODEL-REIMBRSMT-AMT reported on the claims that comprised the stay). \nNOTE: This field will be used with future models and not just the Pennsylvania Rural Health Model \n(PARHM) (CR11355). A demo code (CLM_DEMO_ID_NUM) will be assigned for future models. \nCLM_RLT_COND_CD = M6 and CLM_VAL_CD = Q4 have been created to",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

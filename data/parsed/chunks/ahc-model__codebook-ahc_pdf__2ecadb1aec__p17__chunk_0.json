@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n16 \nBENE_ID \nLABEL: \nEncrypted CCW Beneficiary Identifier \nDESCRIPTION: Encrypted CCW beneficiary identifier. \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nAHC data system/CCW (derived) \nVALUES: \n15-character alphanumeric string (Ex. 22222222GDDGjJs) \nNull/missing = not enough identifying information to associate with a CCW BENE_ID \nCOMMENT: \nThe AHC Bridge organizations",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

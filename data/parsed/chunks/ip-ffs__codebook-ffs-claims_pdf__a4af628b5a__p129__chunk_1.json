@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p129__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 129,
+  "text": "by \nthe PRICER tool. \nSHORT NAME: CLM_PRCR_RTRN_CD \nLONG NAME: CLM_PRCR_RTRN_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nThe meaning of the values varies by type of bill (TOB) \n****Inpatient Hospital Pricer Return Codes****** \n******************TOB 11X*********************** \nInpatient Hospital Payment return codes: \n00 = Paid normal DRG payment \n01 = Paid as a day outlier (NOTE: day \noutlier no longer being paid as of \n10/1/97) \n02 = Paid as a cost outlier \n03 = Transfer paid on a per",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

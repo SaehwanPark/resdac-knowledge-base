@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_310",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "A helper completed the activities for the patient. \n2 = Needed Some Help - Patient needed partial assistance from another person to complete activities.\n3 = Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.\n8 = Unknown \n9 = Not Applicable\n296 GG0100D_PRIOR_FNCTNL_CGNTN_IND GG0100D_PRIOR_FNCTNL_CGNTN_IND GG0100D Prior Functioning - Functional Cognition Code - The data in this column identifies the patient's need",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

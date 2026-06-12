@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Claim PPS Indicator Code CHAR 1 35\nTOT_CHRG CLM_TOT_CHRG_AMT Claim Total Charge Amount NUM 12 36\nADMSN_DT CLM_ADMSN_DT Claim Admission Date DATE 8 37\nTYPE_ADM CLM_IP_ADMSN_TYPE_CD Claim Inpatient Admission Type Code CHAR 1 38\nSRC_ADMS CLM_SRC_IP_ADMSN_CD Claim Source Inpatient Admission Code CHAR 1 39\nPTNTSTUS NCH_PTNT_STATUS_IND_CD NCH Patient Status Indicator Code CHAR 1 40\nPER_DIEM CLM_PASS_THRU_PER_DIEM_AMT Claim Pass Thru Per Diem Amount NUM 12 41\nDED_AMT NCH_BENE_IP_DDCTBL_AMT NCH",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

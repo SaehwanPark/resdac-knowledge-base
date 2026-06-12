@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p69__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 69,
+  "text": "amount may be an undercount if the beneficiary had managed care claims. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Claims files (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as the sum of all MDCD_PD_AMT from the OT header claims; the \nexception is that CCW removed the OT claims header records for capitated payments. Capitated \npayments are header claims where the claim type code (T-MSIS variable called CLM_TYPE_CD) is equal \nto '2' (Medicaid or expansion claim) 'B' (S-CHIP claim)",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

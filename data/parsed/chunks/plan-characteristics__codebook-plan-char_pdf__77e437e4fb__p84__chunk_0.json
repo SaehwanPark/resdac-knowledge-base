@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p84__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 84,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n70 \nGAP_DAYS_INNPP_3M \nLABEL: \nGap Split Network Standard Retail — Number of Days in Three-Month Supply \nDESCRIPTION: This variable identifies the number of days in a three-month supply of a drug on this tier, when using \nan in-network non-preferred pharmacy (INNPP; also known as a standard retail pharmacy within a \nsplit network) during the coverage gap phase of the Part D",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

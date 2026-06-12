@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_197",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 7 x x\nM0246_PMT_DGNS_ICD_F4_CD (M0246) Optional - Case Mix Diagnosis Optional field to capture the Case Mix Diagnosis. Effective August 2008. CHAR 7 x x\nM0826_THRPY_NEED_NUM (M0826) Number of therapy visits indicated for current payment episode Number of therapy visits indicated for current payment episode. Effective August 2008. CHAR 3 x x\nM0826_THRPY_NEED_NA_NUM (M0826) Therapy visits not applicable Therapy visits not applicable. Effective August 2008. CHAR 1 x x\nM1000_DC_IPPS_14_DA",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

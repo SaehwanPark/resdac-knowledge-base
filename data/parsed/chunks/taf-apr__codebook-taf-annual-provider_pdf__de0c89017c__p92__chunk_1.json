@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p92__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 92,
+  "text": "data elements. \nSHORT NAME: PRVDR_ENRLMT_STUS_CD \nLONG NAME: PRVDR_ENRLMT_STUS_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAPR enrollment \nSOURCE: \nT-MSIS annual provider TAF\nVALUES: \n01 = Active — Active Do Not Pay \n02 = Active — Active Reinstated \n03 = Active — Active \n04 = Active — Eligibility Verification \n05 = Active — Encounter Only \n06 = Active — Financial Trans Only \n20 = Denied — Denied Two Provider \nNumbers \n21 = Denied — For Other Reasons \n22 = Denied — Invalid License \n23 = Denied — Not",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

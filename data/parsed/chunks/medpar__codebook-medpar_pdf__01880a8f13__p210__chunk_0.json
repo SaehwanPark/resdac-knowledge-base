@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p210__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 210,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n194 \nPTNT_ADD_ON_PYMT_AMT \nLABEL: \nPatient Add-On Payment Amount (new patient) \nDESCRIPTION: This field represents a base rate increase factor for 1.3516 for new patient initial preventive physical \nexamination (IPPE) and annual wellness visit. \nSHORT NAME: PTNT_ADD_ON_PYMT_AMT \nLONG NAME: PTNT_ADD_ON_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is derived by",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

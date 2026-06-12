@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p100__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 100,
+  "text": "undetermined. Provider unable to clinically determine whether the condition was \npresent at the time of inpatient admission \n1 = Unreported/Not used. Exempt from POA reporting \nNull/missing = Source value is missing, unknown, or not on the valid value list or within the range of \nvalid values \nCOMMENT: \nPOA indicator is used to identify certain preventable conditions that are: \n(a) high cost or high volume or both, \n(b) result in the assignment of a case to a Diagnosis Related Group (DRG)* that",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

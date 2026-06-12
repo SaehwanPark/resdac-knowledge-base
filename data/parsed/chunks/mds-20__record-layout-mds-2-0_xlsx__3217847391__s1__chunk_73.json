@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_73",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "communication devices/techniques - hearing aid present/not used regularly. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n140 C2C C2C_OTHER_RECPT (C2C) Other Receptive Communication Techniques Used CHAR 1 Communications/hearing patterns: communication devices/techniques - other receptive communication techniques used. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n141 C2D C2D_NONE_ABOVE (C2D) None of Above Communication Devices CHAR 1 Communications/hearing patterns: communication devices/techniques",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

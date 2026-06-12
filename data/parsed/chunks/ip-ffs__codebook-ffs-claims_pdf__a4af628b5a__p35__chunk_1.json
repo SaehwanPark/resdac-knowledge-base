@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p35__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 35,
+  "text": "responsible for coinsurance for particular \ndays of inpatient care (no coinsurance from day 1 through day 60, then for days 61 through 90 there is \n25% coinsurance), SNF care (no coinsurance until day 21, then is 1/8 of inpatient hospital deductible \namount through 100th day of SNF). \nDifferent rules apply for lifetime reserve days, etc. \nSHORT NAME: COIN_DAY \nLONG NAME: BENE_TOT_COINSRNC_DAYS_CNT \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

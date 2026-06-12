@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_837",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "while not a resident of the facility and within the last seven days. 0=No\n1=Yes effective 10/01/2023\n928 NTRTN_NONE_7_DAY_CD NTRTN_NONE_7_DAY_CD K0520Z3 Nutritional Approaches (7-day): None CHAR 1 The data in this column indicates whether the resident performed none of the listed nutritional approaches while a resident of the facility and within the last seven days. 0=No\n1=Yes effective 10/01/2023\n929 NTRTN_NONE_DSCHRG_CD NTRTN_NONE_DSCHRG_CD K0520Z4 Nutritional Approaches (Discharge): None",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

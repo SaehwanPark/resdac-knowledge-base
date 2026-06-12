@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "CHIP Enrollment Days - Total in Yr NUM 3 47\nELGBL_AFTR_EOY_IND1 Eligible After End of Year Indicator CHAR 1 189\nMISG_ENRLMT_TYPE_IND_01 Missing Enrollment Type Code in Monthly Beneficiary Summary File – January NUM 1 48\nMISG_ENRLMT_TYPE_IND_02 Missing Enrollment Type Code in Monthly Beneficiary Summary File – February NUM 1 49\nMISG_ENRLMT_TYPE_IND_03 Missing Enrollment Type Code in Monthly Beneficiary Summary File – March NUM 1 50\nMISG_ENRLMT_TYPE_IND_04 Missing Enrollment Type Code in Monthly",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

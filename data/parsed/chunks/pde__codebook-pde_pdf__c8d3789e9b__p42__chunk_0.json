@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p42__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 42,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n37 \nPDE_PRSCRBR_ID_FRMT_CD \nLABEL: \nPDE Prescriber ID Format Code \nDESCRIPTION: This variable was created by CCW to describe whether the prescriber ID on the source PDE (variable \ncalled PRSCRBR_ID) was an NPI, DEA, or UPIN format based on the length of the prescriber ID and the \ncombination of alpha and numeric characters. \nThis variable was only available",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_315",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "status: discharge potential - support person positive toward discharge. 0 = No, 1 = Yes, \"-\" = Unknown.\n530 Q1C Q1C_SHORT_STAY (Q1C) Discharge within 90 Days CHAR 1 Discharge potential and overall status: discharge potential - stay projected to be of short duration. 0 = No, 1 = Within 30 days, 2 = Within 31-90 days, 3 = Discharge status uncertain, \"-\" = Unknown.\n531 Q2 Q2_OVERALL_CHG (Q2) Change in Care Needs CHAR 1 Discharge potential and overall status: overall change in care needs. 0 = No",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

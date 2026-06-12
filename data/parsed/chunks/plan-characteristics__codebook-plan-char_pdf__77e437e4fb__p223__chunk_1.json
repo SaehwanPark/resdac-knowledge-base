@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p223__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 223,
+  "text": "threshold. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n1= Medicare Defined Amount ($0) \n2= Alternate cost sharing \nNull/missing for all plans in the CCW Tier file that do not offer coverage for excluded drugs in the \ncatastrophic phase of their benefit. \n\nCOMMENT: \nThis variable is new in 2024. The Inflation Reduction Act of 2022 eliminated cost-sharing for \nbeneficiaries in the catastrophic phase of the benefit for all Part D covered drugs beginning in 2024. \nThe CCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

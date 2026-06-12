@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p262__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 262,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n222 \nPACE_MOS \nLABEL: \nProgram of All-Inclusive Care for the Elderly (PACE) Months \nDESCRIPTION: Number of months the beneficiary was enrolled in a Program of All-Inclusive Care for the Elderly \n(PACE) Managed Care Plan in the calendar year. \nSHORT NAME: PACE_MOS \nLONG NAME: PACE_MOS \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nManaged Care \nSOURCE: \nT-MSIS annual demographic",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

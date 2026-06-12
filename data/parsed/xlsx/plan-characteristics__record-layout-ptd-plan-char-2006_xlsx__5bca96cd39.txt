@@ -1,0 +1,288 @@
+2006 Part D Plan Characteristics File Data Dictionary
+Variable Sequence	Variable Name	Variable Label	Data Type	Data Length	Description	Possible Values	Value Description	Notes
+1	contract_id	Contract ID	Char	5	The unique number CMS assigns to each contract that a Part D plan has with CMS.
+2	plan_id	Plan ID	Char	3	The unique number CMS assigns to identify a specific Part D plan benefit package within a contract.
+3	formulary_id	Formulary ID	Char	8	Medicare Part D formulary identifier.  This field is a key that links of Part D sponsor's formulary file to their contract and plan identifiers.
+4	contract_name	Contract Name	Char	150	Name of the Medicare Part D Contract
+5	plan_name	Plan Name	Char	75	Name of the Medicare Part D Plan as defined by a unique benefit package within a contract.
+6	organization_marketing_name	Organization Marketing Name	Char	150	Name used for marketing the Medicare Part D organization.
+7	effective_date	Effective Date	Char	10	The effective date of the contract.
+8	organization_type	Organization Type	Char	2	Type of organization for the contract.	1	Local CCP
+4	PFFS
+5	Demo
+6	1876 Cost
+8	National PACE
+10	PDP
+11	Regional CCP
+9	plan_type	Plan Type	Char	2	Type of Part D plan.	01	HMO
+02	HMOPOS
+04	PPO
+05	PSO (State License)
+06	PSO (Federal Waiver of State License)
+09	PFFS
+10	SHMO
+18	1876 Cost
+20	National PACE
+29	Medicare Prescription Drug Plan
+30	Employer Sponsored PDP
+31	Regional PPO
+33	MN Disability Health Options
+34	MN Senior Health Options
+35	WI Partnership Program
+36	MA Health Senior Care Options
+37	Continuing Care Retirement Community
+39	ESRD II
+10	demo_type	Demo Type	Char	1	This variable describes the type of Part D demonstration organization for contracts that are offered as such.	0	Non-Demo
+1	CCRC Demo
+2	ESRDII Demo
+3	MA Health Senior Care Options
+4	Minnesota Disability Health Options
+5	Minnesota Senior Health Options
+6	SHMO
+7	SHMO II
+8	Wisconsin Partnership Program
+11	reinsurance_demo_type	Part D Reinsurance Demo Type	Char	1	This variable describes the type of Part D payment reinsurance demonstration, for plan benefit packages that are offered as such.	0	Non-Payment Demo
+1	Flexible capitated option
+2	Fixed capitated option
+3	Flexible MA rebate option
+12	snp_type	SNP Type	Char	1	This variable describes the type of special needs plan (SNP) for Part D plan benefit packages that are offered as such.	0	Non-SNP
+C	Chronic or Disabling Condition
+D	Dual-Eligible
+I	Institutional
+13	drug_benefit_type	Drug Benefit Type	Char	1	Indicates the type of Part D benefit structure used by the plan benefit package (Defined Standard, Actuarially Equivalent, Basic Alternative, or Enhanced Alternative).	1	Defined Standard Benefit
+2	Actuarially Equivalent Standard
+3	Basic Alternative
+4	Enhanced Alternative
+14	egwp_indicator	EGWP Indicator	Char	1	Indicates whether the Part D plan benefit package is an employer group waiver plan (EGWP).  EGWP plan are not open to general enrollment but rather are offered to beneficiaries through an employer group.	N	No
+Y	Yes
+9	Not Applicable
+15	eghp_calendar_year_flag	EGHP Calendar Year Indicator	Char	1	Indicates if an employer group plan is defined as calendar year or non-calendar year.	Y	Yes
+N	No
+9	Not Applicable
+16	cov_criteria	Coverage Criteria (A/B or B only)	Char	1	Part B only waiver.  An indicator that shows that the requirement for Part A entitlement is waived; beneficiaries with only Part B entitlement may enroll in the Part D plan benefit package.	1	Part A/B
+2	Part B Only
+9	Not Applicable
+17	national_pdp	Indicates whether plan belongs to a National PDP sponsor	Char	1	Indicates that the Part D plan benefit package is a stand-alone Prescription Drug Plan (PDP) offered by a national Part D sponsor.	N	No
+Y	Yes
+9	Not Applicable
+18	gap_coverage_type	Type of Gap Coverage offered	Char	1	Indicates that the plan benefit package offers some form of extra coverage in the coverage gap.	N	No Gap Coverage
+G	Generics
+B	Generics and Brands
+9	Not Applicable
+19	ded_apply	How Deductible is applied	Char	1	Indicates whether plan charges the Medicare-defined Part D deductible amount.
+1	Medicare-defined amount
+2	Plan-defined amount
+3	No deductible
+20	ded_amt	Deductible Amount	Num	12	Dollar amount of Part D deductible charged by plan.
+21	pre_ICL_apply	How Pre-ICL cost shares are applied	Char	1	Indicates how plan charges cost sharing before the Initial Coverage Limit (ICL) is reached.	1	25% coinsurance amount	*2006 value definitions are different than 2007 value definitions.
+2	One or more groups of cost sharing
+3	No cost sharing
+22	icl_apply	How ICL is applied	Char	1	Indicates whether plan applies the Medicare-defined Part D Initial Coverage Limit (ICL) Amount.	1	Medicare-defined amount
+2	Plan-defined amount
+3	No ICL
+23	icl_amt	ICL Amount	Num	12	Dollar amount of Initial Coverage Limit (ICL) applied by Part D plan.  If no ICL is applied this field is blank.
+24	post_OOPT_apply	How Post OOP threshold cost shares are applied	Char	1	Indicates how plan applies cost sharing beyond the Medicare-defined Part D Annual Out-of-Pocket Cost Threshold (i.e., in catastrophic coverage phase). (Fixed Capitated Reinsurance Demos: How cost sharing is applied after the Medicare-defined total drug spending amount.)	1	> $2 generic or $5 preferred or 5% copay	*2006 values definitions are different than 2007 value definitions.
+2	One or more groups of cost sharing
+3	No cost sharing
+25	OOPT_amt	OOP Threshold Amount	Num	12	Dollar amount of the Medicare-defined Part D Annual Out-of-Pocket Cost Threshold.  This field is blank for Fixed Capitated Reinsurance Demos.
+26-33	Pre_ICL_drug_type_Tier_01 - Pre_ICL_drug_type_Tier_08	Type of Drugs on Pre-ICL Tier 1 - 8	Char	3	Indicates the type of drug (e.g., "Generic", "Brand", etc.) included on Part D formulary tier 1 through tier 8 for the pre-initial coverage phase.  A tier may include multiple drug types.	001	Brand	*2006 values are different than 2007 values.
+010	Generic
+011	Generic and Brand
+100	Preferred Brand
+101	Brand and Preferred Brand
+110	Generic and Preferred Brand
+111	Generic, Brand, and Preferred Brand
+999	Not Applicable
+34-41	Pre_ICL_tier_label_Tier_01 - Pre_ICL_tier_label_Tier_08	Label of Pre-ICL Tier 1 - 8	Char	2	Text label selected by the Part D sponsor that describes Tier 1 through Tier 8.	00	No Label
+01	Formulary Generic
+02	Formulary Preferred Brand
+03	Formulary Brand
+04	Non-Formulary Generic
+05	Non-Formulary Brand
+06	Generic
+07	Preferred Brand
+08	Brand
+09	Tier 1
+10	Tier 2
+11	Tier 3
+12	Tier 4
+13	Tier 5
+14	Tier 6
+15	Tier 7
+16	Tier 8
+17	Tier 9
+18	Tier 10
+42-49	Pre_ICL_inpp_1m_COPAY_Tier_01 - Pre_ICL_inpp_1m_COPAY_Tier_08	Tier 1 - 8 Pre-ICL In-Network Pharmacy Copay Amt. one month supply	Num	12	Dollar amount of pre-initial coverage limit in-network  pharmacy copay amount for 1 month for Tier 1 through Tier 8.
+50-57	Pre_ICL_inpp_1m_COINS_Tier_01 - Pre_ICL_inpp_1m_COINS_Tier_08	Tier 1 - 8 Pre-ICL In-Network  Pharmacy Coinsurance one month supply	Num	12	Pre-initial coverage limit in-network pharmacy co-insurance percentage for 1 month for Tier 1 through Tier 8.
+
+2006 Part D Premium File Data Dictionary
+Variable Sequence	Long SAS Name	Variable Label	Data Type	Data Length	Description	Possible Values	Value Description	Notes
+1	contract_id	Contract ID	Char	5	The unique number CMS assigns to each contract that a Part D plan has with CMS.
+2	plan_id	Plan ID	Char	3	The unique number CMS assigns to identify a specific Part D plan benefit package within a contract.
+3	segment_id	Segment ID	Char	3	Segment identifier	Premium values can differ by segment within some plans.
+4	part_b_premium_reduction_amt	Part B Premium Reduction Amt	Num	12	Dollar amount of Part D rebate attributed to Part B premium reduction.
+5	part_c_premium	Part C Premium	Num	12	Dollar amount of the Part C Basic Plus Mandatory Supplemental Premium Rate (Net of Rebates).
+6	plan_basic_premium_net_rebate	Part D Basic Premium Net of Rebate	Num	12	Dollar amount of the Part D Premium Basic Rate (Net of Rebates).
+7	plan_supp_premium_net_rebate	Part D Supplemental Premium Net of Rebate	Num	12	Dollar amount of the Part D Premium Enhanced (supplemental) Rate (Net of Rebates).
+8	plan_total_premium_net_rebate	Part D Total Premium Net of Rebate	Num	12	Dollar amount of the Part D Total Premium (basic + supplemental) Rate (Net of Rebates).
+9	part_d_lis_25	Part D Low Income Subsidy 25%	Num	12	Dollar amount of the Part D low-income subsidy where the subsidy level is 25%.
+10	part_d_lis_50	Part D Low Income Subsidy 50%	Num	12	Dollar amount of the Part D low-income subsidy where the subsidy level is 50%.
+11	part_d_lis_75	Part D Low Income Subsidy 75%	Num	12	Dollar amount of the Part D low-income subsidy where the subsidy level is 75%.
+12	part_d_lis_100	Part D Low Income Subsidy 100%	Num	12	Dollar amount of the Part D low-income subsidy where the subsidy level is 100%.
+13	below_benchmark	Indicates whether plan is a basic plan with a premium below the regional benchmark (or de minimis amount)	Char	1	Indicates whether the plan benefit package is a stand-alone Prescription Drug Plan (PDP) that offers a basic benefit with a premium below the regional benchmark or de minimis amount.  A beneficiary with a full (100%) low-income premium subsidy would pay no premium for this plan.	D	Below De minimus Amount
+B	Below Regional Benchmark
+N	No
+9	Not Applicable
+
+2006 Part D Tier Benefit File Data Dictionary
+Variable Sequence	Long SAS Name	Variable Label	Data Type	Data Length	Description	Possible Values	Value Description	Notes
+1	contract_id	Contract ID	Char	5	The unique number CMS assigns to each contract that a Part D plan has with CMS.
+2	plan_id	Plan ID	Char	3	The unique number CMS assigns to identify a specific Part D plan benefit package within a contract.
+3	tier_id	Tier ID	Char	2	Medicare Part D formulary tier identifier.  This field represents the cost sharing tier in which the product was placed in the sponsor's formulary.  This identifier is also a key that links a Part D sponsor's cost sharing tier record to a prescription drug event record via contract ID, plan ID, and tier ID.
+4	pre_ICL_tier_drug_type	Pre-ICL Tier Drug Type	Char	3	Indicates the type of drug (e.g., "Generic", "Brand", etc.) included on the Part D formulary tier for the pre-initial coverage limit phase.  A tier may include multiple drug types.	001	Brand	*2006 values are different than 2007 values.
+010	Generic
+011	Generic and Brand
+100	Preferred Brand
+101	Brand and Preferred Brand
+110	Generic and Preferred Brand
+111	Generic, Brand, and Preferred Brand
+999	Not Applicable
+5	Pre_ICL_tier_label	Label of Pre-ICL Tier	Char	2	Text label selected by the Part D sponsor that describes the pre-initial coverage limit formulary tier.	00	No Label
+01	Formulary Generic
+02	Formulary Preferred Brand
+03	Formulary Brand
+04	Non-Formulary Generic
+05	Non-Formulary Brand
+06	Generic
+07	Preferred Brand
+08	Brand
+09	Tier 1
+10	Tier 2
+11	Tier 3
+12	Tier 4
+13	Tier 5
+14	Tier 6
+15	Tier 7
+16	Tier 8
+17	Tier 9
+18	Tier 10
+6	Pre_ICL_coins_yn	Pre-ICL Coinsurance Y/N	Char	1	Indicates the type of pre-initial coverage limit cost sharing for drugs on the tier is a co-insurance percentage.	Y	Yes
+N	No
+7	Pre_ICL_copay_yn	Pre-ICL Copay YN	Char	1	Indicates the type of pre-initial coverage limit cost sharing for drugs on the tier is a copayment amount.	Y	Yes
+N	No
+8	Pre_ICL_inpp_coins_1m	Pre-ICL In-Network Preferred Pharmacy Coinsurance one month supply	Num	12	Pre-initial coverage limit: in-network preferred pharmacy co-insurance percentage for 1 month supply.
+9	Pre_ICL_inpp_coins_3m	Pre-ICL In-Network Preferred Pharmacy Coinsurance three month supply	Num	12	Pre-initial coverage limit: in-network preferred pharmacy co-insurance percentage for 3 month supply.
+10	Pre_ICL_inpp_coins_os	Pre-ICL In-Network Preferred Pharmacy Coinsurance other day supply	Num	12	Pre-initial coverage limit: in-network preferred pharmacy co-insurance percentage for other supply.
+11	Pre_ICL_innpp_coins_1m	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance one month supply	Num	12	Pre-initial coverage limit: in-network non-preferred pharmacy co-insurance percentage for 1 month supply.
+12	Pre_ICL_innpp_coins_3m	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance three month supply	Num	12	Pre-initial coverage limit: in-network non-preferred pharmacy co-insurance percentage for 3 month supply.
+13	Pre_ICL_innpp_coins_os	Pre-ICL In-Network Non-Preferred Pharmacy Coinsurance other day supply	Num	12	Pre-initial coverage limit: in-network non-preferred pharmacy co-insurance percentage for other supply.
+14	Pre_ICL_oonp_coins_1m	Pre-ICL Out-of-Network Pharmacy Coinsurance one month supply	Num	12	Pre-initial coverage limit: out-of-network pharmacy co-insurance percentage for 1 month supply.
+15	Pre_ICL_oonp_coins_3m	Pre-ICL Out-of-Network Pharmacy Coinsurance three month supply	Num	12	Pre-initial coverage limit: out-of-network pharmacy co-insurance percentage for 3 month supply.
+16	Pre_ICL_oonp_coins_os	Pre-ICL Out-of-Network Pharmacy Coinsurance other day supply	Num	12	Pre-initial coverage limit: out-of-network pharmacy co-insurance percentage for other supply.
+17	Pre_ICL_mo_coins_1m	Pre-ICL Mail Order Coinsurance one month supply	Num	12	Pre-initial coverage limit: mail order pharmacy co-insurance percentage for 1 month supply.
+18	Pre_ICL_mo_coins_3m	Pre-ICL Mail Order Coinsurance three month supply	Num	12	Pre-initial coverage limit: mail order pharmacy co-insurance percentage for 3 month supply.
+19	Pre_ICL_mo_coins_os	Pre-ICL Mail Order Coinsurance other day supply	Num	12	Pre-initial coverage limit: mail order pharmacy co-insurance percentage for other supply.
+20	Pre_ICL_inpp_copay_1m	Pre-ICL In-Network Preferred Pharmacy Copay Amt one month supply	Num	12	Pre-initial coverage limit: in-network preferred pharmacy copay amount for 1 month supply.
+21	Pre_ICL_inpp_copay_3m	Pre-ICL In-Network Preferred Pharmacy Copay Amt three month supply	Num	12	Pre-initial coverage limit: in-network preferred pharmacy copay amount for 3 month supply.
+22	Pre_ICL_inpp_copay_os	Pre-ICL In-Network Preferred Pharmacy Copay Amt other day supply	Num	12	Pre-initial coverage limit: in-network preferred pharmacy copay amount for other supply.
+23	Pre_ICL_innpp_copay_1m	Pre-ICL In-Network Non-Preferred Pharmacy Copay Amt one month supply	Num	12	Pre-initial coverage limit: in-network non-preferred pharmacy copay amount for 1 month supply.
+24	Pre_ICL_innpp_copay_3m	Pre-ICL In-Network Non-Preferred Pharmacy Copay Amt three month supply	Num	12	Pre-initial coverage limit: in-network non-preferred pharmacy copay amount for 3 month supply.
+25	Pre_ICL_innpp_copay_os	Pre-ICL In-Network Non-Preferred Pharmacy Copay Amt other day supply	Num	12	Pre-initial coverage limit: in-network non-preferred pharmacy copay amount for other supply.
+26	Pre_ICL_oonp_copay_1m	Pre-ICL Out-of-Network Pharmacy Copay Amt one month supply	Num	12	Pre-initial coverage limit: out-of-network pharmacy copay amount for 1 month supply.
+27	Pre_ICL_oonp_copay_3m	Pre-ICL Out-of-Network Pharmacy Copay Amt three month supply	Num	12	Pre-initial coverage limit: out-of-network pharmacy copay amount for 3 month supply.
+28	Pre_ICL_oonp_copay_os	Pre-ICL Out-of-Network Pharmacy Copay Amt other day supply	Num	12	Pre-initial coverage limit: out-of-network pharmacy copay amount for other supply.
+29	Pre_ICL_mo_copay_1m	Pre-ICL Mail Order Copay Amt one month supply	Num	12	Pre-initial coverage limit: mail order pharmacy copay amount for 1 month supply.
+30	Pre_ICL_mo_copay_3m	Pre-ICL Mail Order Copay Amt three month supply	Num	12	Pre-initial coverage limit: mail order pharmacy copay amount for 3 month supply.
+31	Pre_ICL_mo_copay_os	Pre-ICL Mail Order Copay Amt other day supply	Num	12	Pre-initial coverage limit: mail order pharmacy copay amount for other supply.
+32	Pre_ICL_days_inpp_1m	Pre-ICL In-Network Preferred Pharmacy Number of Days in one month supply	Num	5	Pre-initial coverage limit: in-network preferred pharmacy number of days in 1 month supply.
+33	Pre_ICL_days_inpp_3m	Pre-ICL In-Network Preferred Pharmacy Number of Days in three month supply	Num	5	Pre-initial coverage limit: in-network preferred pharmacy number of days in 3 month supply.
+34	Pre_ICL_days_inpp_os	Pre-ICL In-Network Preferred Pharmacy Number of Days in other day supply	Num	5	Pre-initial coverage limit: in-network preferred pharmacy number of days in other supply.
+35	Pre_ICL_days_innpp_1m	Pre-ICL In-Network Non-Preferred Pharmacy Number of Days in one month supply	Num	5	Pre-initial coverage limit: in-network non-preferred pharmacy number of days in 1 month supply.
+36	Pre_ICL_days_innpp_3m	Pre-ICL In-Network Non-Preferred Pharmacy Number of Days in three month supply	Num	5	Pre-initial coverage limit: in-network non-preferred pharmacy number of days in 3 month supply.
+37	Pre_ICL_days_innpp_os	Pre-ICL In-Network Non-Preferred Pharmacy Number of Days in other day supply	Num	5	Pre-initial coverage limit: in-network non-preferred pharmacy number of days in other supply.
+38	Pre_ICL_days_oonp_1m	Pre-ICL Out-of-Network Pharmacy Number of Days in one month supply	Num	5	Pre-initial coverage limit: out-of-network pharmacy number of days in 1 month supply.
+39	Pre_ICL_days_oonp_3m	Pre-ICL Out-of-Network Pharmacy Number of Days in three month supply	Num	5	Pre-initial coverage limit: out-of-network pharmacy number of days in 3 month supply.
+40	Pre_ICL_days_oonp_os	Pre-ICL Out-of-Network Pharmacy Number of Days in other day supply	Num	5	Pre-initial coverage limit: out-of-network pharmacy number of days in other supply.
+41	Pre_ICL_days_mo_1m	Pre-ICL Mail Order Number of Days in one month supply	Num	5	Pre-initial coverage limit: mail order pharmacy number of days in 1 month supply.
+42	Pre_ICL_days_mo_3m	Pre-ICL Mail Order Number of Days in three month supply	Num	5	Pre-initial coverage limit: mail order pharmacy number of days in 3 month supply.
+43	Pre_ICL_days_mo_os	Pre-ICL Mail Order Number of Days in other day supply	Num	5	Pre-initial coverage limit: mail order pharmacy number of days in other supply.
+44	post_OOPT_tier_drug_type	Type of Drugs on Post-OOP Threshold Tier	Char	3	Indicates the type of drug (e.g., "Generic", "Brand", etc.) included on the formulary tier for the post out-of-pocket threshold (catastrophic) phase.  A tier may include multiple drug types.  Note, this field is only populated if the Medicare-defined Post Threshold Cost Shares do not apply.	001	Brand	*2006 values are different than 2007 values.
+010	Generic
+011	Generic and Brand
+100	Preferred Brand
+101	Brand and Preferred Brand
+110	Generic and Preferred Brand
+111	Generic, Brand, and Preferred Brand
+999	Not Applicable
+45	oop_tier_label	Label of Post-OOP Threshold Tier	Char	2	Text label selected by the Part D sponsor that describes the post out-of-pocket threshold (catastrophic) phase limit formulary tier.  Note, this field is only populated if the Medicare-defined Post Threshold Cost Shares do not apply.	00	No Label
+01	Formulary Generic
+02	Formulary Preferred Brand
+03	Formulary Brand
+04	Non-Formulary Generic
+05	Non-Formulary Brand
+06	Generic
+07	Preferred Brand
+08	Brand
+09	Tier 1
+10	Tier 2
+11	Tier 3
+12	Tier 4
+13	Tier 5
+14	Tier 6
+15	Tier 7
+16	Tier 8
+17	Tier 9
+18	Tier 10
+46	OOP_coins_yn	Post-OOP Threshold Coinsurance Y/N	Char	1	Indicates the type of post out-of-pocket threshold (catastrophic) phase cost sharing for drugs on the tier is a co-insurance percentage.	Y	Yes
+N	No
+47	OOP_copay_yn	Post-OOP Threshold Copay YN	Char	1	Indicates the type of post out-of-pocket threshold (catastrophic) phase cost sharing for drugs on the tier is a copayment amount.	Y	Yes
+N	No
+48	OOP_inpp_coins_1m	Post-OOP Threshold In-Network Preferred Pharmacy Coinsurance one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy co-insurance percentage for 1 month supply.
+49	OOP_inpp_coins_3m	Post-OOP Threshold In-Network Preferred Pharmacy Coinsurance three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy co-insurance percentage for 3 month supply.
+50	OOP_inpp_coins_os	Post-OOP Threshold In-Network Preferred Pharmacy Coinsurance other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy co-insurance percentage for other supply.
+51	OOP_innpp_coins_1m	Post-OOP Threshold In-Network Non-Preferred Pharmacy Coinsurance one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy co-insurance percentage for 1 month supply.
+52	OOP_innpp_coins_3m	Post-OOP Threshold In-Network Non-Preferred Pharmacy Coinsurance three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy co-insurance percentage for 3 month supply.
+53	OOP_innpp_coins_os	Post-OOP Threshold In-Network Non-Preferred Pharmacy Coinsurance other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy co-insurance percentage for other supply.
+54	OOP_oonp_coins_1m	Post-OOP Threshold Out-of-Network Pharmacy Coinsurance one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy co-insurance percentage for 1 month supply.
+55	OOP_oonp_coins_3m	Post-OOP Threshold Out-of-Network Pharmacy Coinsurance three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy co-insurance percentage for 3 month supply.
+56	OOP_oonp_coins_os	Post-OOP Threshold Out-of-Network Pharmacy Coinsurance other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy co-insurance percentage for other supply.
+57	OOP_mo_coins_1m	Post-OOP Threshold Mail Order Coinsurance one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy co-insurance percentage for 1 month supply.
+58	OOP_mo_coins_3m	Post-OOP Threshold Mail Order Coinsurance three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy co-insurance percentage for 3 month supply.
+59	OOP_mo_coins_os	Post-OOP Threshold Mail Order Coinsurance other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy co-insurance percentage for other supply.
+60	OOP_inpp_copay_1m	Post-OOP Threshold In-Network Preferred Pharmacy Copay Amt one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy copay amount for 1 month supply.
+61	OOP_inpp_copay_3m	Post-OOP Threshold In-Network Preferred Pharmacy Copay Amt three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy copay amount for 3 month supply.
+62	OOP_inpp_copay_os	Post-OOP Threshold In-Network Preferred Pharmacy Copay Amt other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy copay amount for other supply.
+63	OOP_innpp_copay_1m	Post-OOP Threshold In-Network Non-Preferred Pharmacy Copay Amt one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy copay amount for 1 month supply.
+64	OOP_innpp_copay_3m	Post-OOP Threshold In-Network Non-Preferred Pharmacy Copay Amt three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy copay amount for 3 month supply.
+65	OOP_innpp_copay_os	Post-OOP Threshold In-Network Non-Preferred Pharmacy Copay Amt other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy copay amount for other supply.
+66	OOP_oonp_copay_1m	Post-OOP Threshold Out-of-Network Pharmacy Copay Amt one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy copay amount for 1 month supply.
+67	OOP_oonp_copay_3m	Post-OOP Threshold Out-of-Network Pharmacy Copay Amt three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy copay amount for 3 month supply.
+68	OOP_oonp_copay_os	Post-OOP Threshold Out-of-Network Pharmacy Copay Amt other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy copay amount for other supply.
+69	OOP_mo_copay_1m	Post-OOP Threshold Mail Order Copay Amt one month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy copay amount for 1 month supply.
+70	OOP_mo_copay_3m	Post-OOP Threshold Mail Order Copay Amt three month supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy copay amount for 3 month supply.
+71	OOP_mo_copay_os	Post-OOP Threshold Mail Order Copay Amt other day supply	Num	12	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy copay amount for other supply.
+72	OOP_days_inpp_1m	Post-OOP Threshold In-Network Preferred Pharmacy number of days in one month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy number of days in 1 month supply.
+73	OOP_days_inpp_3m	Post-OOP Threshold In-Network Preferred Pharmacy number of days in three month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy number of days in 3 month supply.
+74	OOP_days_inpp_os	Post-OOP Threshold In-Network Preferred Pharmacy number of days in other day supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: in-network preferred pharmacy number of days in other supply.
+75	OOP_days_innpp_1m	Post-OOP Threshold In-Network Non-Preferred Pharmacy number of days in one month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy number of days in 1 month supply.
+76	OOP_days_innpp_3m	Post-OOP Threshold In-Network Non-Preferred Pharmacy number of days in three month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy number of days in 3 month supply.
+77	OOP_days_innpp_os	Post-OOP Threshold In-Network Non-Preferred Pharmacy number of days in other day supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy number of days in other supply.
+78	OOP_days_oonp_1m	Post-OOP Threshold Out-of-Network Pharmacy number of days in one month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy number of days in 1 month supply.
+79	OOP_days_oonp_3m	Post-OOP Threshold Out-of-Network Pharmacy number of days in three month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy number of days in 3 month supply.
+80	OOP_days_oonp_os	Post-OOP Threshold Out-of-Network Pharmacy number of days in other day supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy number of days in other supply.
+81	OOP_days_mo_1m	Post-OOP Threshold Mail Order number of days in one month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy number of days in 1 month supply.
+82	OOP_days_mo_3m	Post-OOP Threshold Mail Order number of days in three month supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy number of days in 3 month supply.
+83	OOP_days_mo_os	Post-OOP Threshold Mail Order number of days in other day supply	Num	5	Post out-of-pocket threshold (catastrophic) phase: mail order pharmacy number of days in other supply.
+
+2006 Part D Service Area File Data Dictionary
+Variable Sequence	Long SAS Name	Variable Label	Data Type	Data Length	Description	Possible Values	Value Description	Notes
+1	contract_id	Contract ID	Char	5	The unique number CMS assigns to each contract that a Part D plan has with CMS.
+2	plan_id	Plan ID	Char	3	The unique number CMS assigns to identify a specific Part D plan benefit package within a contract.
+3	segment_id	Segment ID	Char	3	Segment identifier
+4	state_name	State name	Char	24	Name of state in which the Part D plan benefit package (segment) provides coverage.
+5	county_name	County name	Char	30	Name of county in which the Part D plan benefit package (segment) provides coverage.
+6	SSA_code	SSA State code + County code	Char	5	Social Security Administration state/county code in which the Part D plan benefit package (segment) provides coverage.
+7	Partial_flag	Partial County Indicator	Char	1	Indicates that the Part D plan benefit package (segment) covers only a portion of the county.	Blank	Plan benefit package segment covers the whole county or does not vary by segment.
+Y	Plan benefit package segment covers only a portion of the county
+8	Region_code	Region code	Char	2	PDP or MA-PD region code in which the plan benefit package provides coverage.  Applies only to stand-alone Prescription Drug Plans and regional Medicare Advantage Prescription Drug plans.
+9	Region_name	Region name	Char	100	PDP or MA-PD region name in which the plan benefit package provides coverage.  Applies only to stand-alone Prescription Drug Plans and regional Medicare Advantage Prescription Drug plans.

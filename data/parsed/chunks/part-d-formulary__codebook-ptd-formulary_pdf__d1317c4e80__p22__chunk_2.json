@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p22__chunk_2",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 22,
+  "text": "in the Formulary file in 2010. It is also present in the Excluded Drug file, starting with 2012 \ndata. It can be joined to PDE using the combination of the plan's formulary ID (variable called \nFORMULARY_ID) and the CCW formulary drug identifier (variable called FORMULARY_RX_ID) to \ndetermine the placement of a particular PDE on the formulary (according to plan design). The value of \nthis field may not exactly represent the beneficiary experience at the time of the prescription fill (e.g., \nno",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

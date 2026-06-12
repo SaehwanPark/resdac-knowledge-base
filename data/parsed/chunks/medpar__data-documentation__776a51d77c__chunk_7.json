@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_7",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| \n\n | 38 | CVRD_LVL_CARE_THRU_ DT | Date covered level of care ended in a SNF | \n\n | 39 | BENE_DEATH_DT | Date beneficiary died | \n\n | 40 | BENE_DEATH_DT_VRFY_CD | Death Date Verification Code | \n\n | 41 | ADMSN_DEATH_DAY_CNT | Days from date admitted to facility to date of death | \n\n | 42 | INTRNL_USE_SSI_IND_CD | MEDPAR Internal Use SSI Indicator Code | \n\n | 43 | INTRNL_USE_SSI_DAY_CNT | MEDPAR Internal Use SSI Day Count | \n\n | 44 | INTRNL_USE_SSI_DATA | MEDPAR Internal Use SSI Data | \n\n | 45",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

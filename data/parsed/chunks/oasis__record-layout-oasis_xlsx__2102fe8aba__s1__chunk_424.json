@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_424",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_OTHR M1033 (M1032) Risk For Hospitalization - Other This field is checked if the patient is at risk for hospitalization is other risk not listed here. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_NONE_ABOVE M1033 (M1032) Risk For Hosp - None Of The Above This field is checked if the patient is at risk for hospitalization is none of the above. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

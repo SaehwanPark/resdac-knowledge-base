@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p29__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 29,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n24 \nSECONDARY_TAXONOMY_CODE \nLABEL: \nPharmacy Secondary Taxonomy Code \nDESCRIPTION: This is the secondary taxonomy code for the pharmacy, if applicable. This field allows researchers to \nbetter understand the type of pharmacy that dispensed the medication. Pharmacies are not required \nby NCPDP to specify a secondary dispenser type. \nSHORT NAME: — \nLONG NAME: SECONDARY_TAXONOMY_CODE \nTYPE: \nCHAR",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

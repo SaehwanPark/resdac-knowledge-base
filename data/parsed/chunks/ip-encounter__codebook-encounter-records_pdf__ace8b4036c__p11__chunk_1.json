@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p11__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 11,
+  "text": "DESCRIPTION: A diagnosis code on the institutional encounter indicating the beneficiary's initial diagnosis at \nadmission. \nThis diagnosis code may not be confirmed after the patient is evaluated; it may be different than the \neventual diagnoses (e.g., as in PRNCPAL_DGNS_CD or ICD_DGNS_CD1–25). \nSHORT NAME: ADMTG_DGNS_CD \nLONG NAME: ADMTG_DGNS_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nVALUES: \n— \nCOMMENT: \nOn October 1, 2015,",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

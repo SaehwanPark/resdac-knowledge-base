@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf\nENTITY_COND_1 (through ENTITY_COND_20) NDI Entity Axis Cause of Death - Condition 1 (through Condition 20) CHAR 7 These fields identify the underlying causes of death as listed by the certifier of death (formatted but not audited). From 1999-2006 there were up to 8 codes, and from 2007 forward there are up to 20 codes. Position1: Part/line number on certificate\n1 = Part I, line 1 (a)\n2 = Part I, line 2 (b)\n3 = Part I, line 3",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

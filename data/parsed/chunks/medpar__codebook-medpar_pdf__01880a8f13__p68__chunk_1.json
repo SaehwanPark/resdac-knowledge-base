@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p68__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 68,
+  "text": "NAME: CLM_SS_OUTLIER_STD_PYMT_AMT \nLONG NAME: CLM_SS_OUTLIER_STD_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \nXXXXXX \nCOMMENT: \nThis amount does not include any applicable outlier payment amount. \nThis field is derived by accumulating the amount field (CLM_SSO_STD_PMT_AMT) that is on any of the \nclaim records included in the stay (i.e., sum of the CLM_SSO_STD_PMT_AMT reported on the claims that \ncomprised the stay). \nThis field is new in 2015. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

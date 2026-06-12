@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p146__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 146,
+  "text": "the initial coverage limit (ICL) for the Part D benefit. \nPlans that use a coinsurance percentage rather than a co-payment amount will not have a value in this \nfield; see instead the corresponding co-payment variable called (GAP_INPP_COINS_OS). \nThe CCW constructs the Plan Characteristics file from information submitted by Part D plan sponsors \nto CMS’s Health Plan Management System (HPMS). \nEmployer and National Program of All-inclusive Care for the Elderly (PACE) plans are waived from",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

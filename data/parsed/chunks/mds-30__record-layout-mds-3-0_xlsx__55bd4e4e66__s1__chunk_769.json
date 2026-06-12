@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_769",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "CDs) 0=No\n1=Yes effective 10/01/2023\n858 CRNT_MDCTN_LST_RSDNT_CD CRNT_MDCTN_LST_RSDNT_CD A2123 Current Reconciled Medication List - Ptnt/Fam/Care CHAR 1 The data in this column indicates whether, at the time of discharge, the current facility provided the resident’s current reconciled medication list to the resident, family and/or caregiver. 0=No\n1=Yes effective 10/01/2023\n859 ROUTE_RSDNT_EHR_CD ROUTE_RSDNT_EHR_CD A2124A Patient Trans - Electronic Health Record CHAR 1 The data in this column",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

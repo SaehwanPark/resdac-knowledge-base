@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Through Date DATE 8 62\nCARETHRU NCH_ACTV_OR_CVRD_LVL_CARE_THRU NCH Active or Covered Level Care Thru Date DATE 8 63\nEXHST_DT NCH_BENE_MDCR_BNFTS_EXHTD_DT_I NCH Beneficiary Medicare Benefits Exhausted Date DATE 8 64\nDSCHRGDT NCH_BENE_DSCHRG_DT NCH Beneficiary Discharge Date DATE 8 65\nDRG_CD CLM_DRG_CD Claim Diagnosis Related Group Code (or MS-DRG Code) CHAR 4 66\nMS_DRG_GRPR_VRSN_CD MS_DRG_GRPR_VRSN_CD MS-DRG Grouper Version Code CHAR 8 250 New5\nCLM_IP_INITL_MS_DRG_CD CLM_IP_INITL_MS_DRG_CD Claim",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p312__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 312,
+  "text": "(BOE) values (before January 1, 2014) and ELIGIBILITY-GROUP \nvalues (on or after January 1, 2014); most recent in the calendar year. \nThis field should not include information that already appears elsewhere on the Eligible-File record \neven if it is part of the MAS and BOE or ELIGIBILITY-GROUP algorithm (e.g., age information computed \nfrom DATE-OF-BIRTH or COUNTY-CODE). \nSHORT NAME: STATE_SPEC_ELGBLTY_GRP_CD_LTST \nLONG NAME: STATE_SPEC_ELGBLTY_GRP_CD_LTST \nTYPE: \nCHAR \nLENGTH: \n6 \nFILE(S):",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

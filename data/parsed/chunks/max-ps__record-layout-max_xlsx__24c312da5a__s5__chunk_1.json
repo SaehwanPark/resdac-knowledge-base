@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_1",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across all data files. \n\nSource: CCW\n2 MSIS_ID Encrypted MSIS Identification Number CHAR 32 X This field is encrypted prior to data delivery\n3 STATE_CD State CHAR 2 X\n4 YR_NUM Year of MAX Record NUM 4 X\n5 EL_DOB Birth date DATE 8 X\n6 EL_SEX_CD Sex CHAR 1 X\n7 EL_RACE_ETHNCY_CD Race/ethnicity (from MSIS) CHAR 1 X\n8 RACE_CODE_1 Race - White (from MSIS) CHAR 1 X\n9 RACE_CODE_2 Race -",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

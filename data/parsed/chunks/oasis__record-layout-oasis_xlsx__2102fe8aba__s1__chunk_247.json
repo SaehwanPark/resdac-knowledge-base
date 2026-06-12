@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_247",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1040 Influenza Received in Agency This field indicates if the patient received the influenza vaccine during this episode of care in agency. 00 = No\n01 = Yes\nNA = Does not apply because entire episode of care (SOC/ROC to\nTransfer/Discharge) is outside this influenza season. CHAR 2 x\nM1045_INFLNZ_RSN_NOT_RCVD M1045 Influenza Vaccine- Reason not Received This field indicates the reason why the influenza vaccine was not received from the agency during this episode of\ncare. 01 = Received from",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_258",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "I1100 Active Diagnoses: Cirrhosis Code CHAR 1 The data in this column indicates whether the resident had an active diagnosis of cirrhosis in the last seven days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n276 I1200_GERD_CD I1200_GERD_CD I1200 Active Diagnoses: Gastroesophageal Reflux Disease (GERD) Code CHAR 1 The data in this column indicates whether the resident had an active diagnosis of gastoresophageal reflux disease (GERD) or ulcer (e.g., esophageal, gasric and",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

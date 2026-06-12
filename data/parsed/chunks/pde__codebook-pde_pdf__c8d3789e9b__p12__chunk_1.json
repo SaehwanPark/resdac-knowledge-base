@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p12__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 12,
+  "text": "system or data \nsource. \nThis field also enables linkage between pharmacies in the Part D Event File and the CCW Pharmacy \nCharacteristics File (2006–2013; note that starting in 2014 the NCPDP_ID is used for linkage). \nThis variable is only available 2006–2013. \nSHORT NAME: CCW_PHARM_ID \nLONG NAME: CCW_PHARM_ID \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE and NCDPD dataQ™ (derived) \nVALUES: \nNull, or a 5-digit numeric value \nCOMMENT: \nBeginning with 2014 data, the NCPDP_ID is used in place of the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

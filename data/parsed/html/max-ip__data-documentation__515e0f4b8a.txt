@@ -1,0 +1,277 @@
+| BENE_ID | Encrypted 723 CCW Beneficiary ID | 
+      
+                                                                      | MSIS_ID | Encrypted MSIS Identification Number | 
+      
+                                                                      | STATE_CD | State | 
+      
+                                                                      | YR_NUM | Year of MAX Record | 
+      
+                                                                      | EL_DOB | Birth date | 
+      
+                                                                      | EL_SEX_CD | Sex (MAX) | 
+      
+                                                                      | EL_RACE_ETHNCY_CD | Race/ethnicity (from MSIS) | 
+      
+                                                                      | RACE_CODE_1 | Race - White (from MSIS) | 
+      
+                                                                      | RACE_CODE_2 | Race - Black (from MSIS) | 
+      
+                                                                      | RACE_CODE_3 | Race - Am Indian/Alaskan (from MSIS) | 
+      
+                                                                      | RACE_CODE_4 | Race - Asian (from MSIS) | 
+      
+                                                                      | RACE_CODE_5 | Race - Hawaiian/Pac Islands (from MSIS) | 
+      
+                                                                      | ETHNICITY_CODE | Ethnicity - Hispanic (from MSIS) | 
+      
+                                                                      | EL_SS_ELGBLTY_CD_LTST | State specific eligibility - most recent | 
+      
+                                                                      | EL_SS_ELGBLTY_CD_MO | State specific eligibility - mo of svc | 
+      
+                                                                      | EL_MAX_ELGBLTY_CD_LTST | MAX eligibility - most recent | 
+      
+                                                                      | EL_MAX_ELGBLTY_CD_MO | MAX eligibility - mo of svc | 
+      
+                                                                      | EL_MDCR_ANN_XOVR_OLD | Medicare Crossover code (Annual) old values | 
+      
+                                                                      | MSNG_ELG_DATA | Missing eligibility data | 
+      
+                                                                      | EL_MDCR_XOVR_CLM_BSD_CD | Crossover code (from claims only) | 
+      
+                                                                      | EL_MDCR_ANN_XOVR_99 | Crossover code (Annual) | 
+      
+                                                                      | MSIS_TOS | MSIS Type of Service (TOS) | 
+      
+                                                                      | MSIS_TOP | MSIS Type of Program (TOP) | 
+      
+                                                                      | MAX_TOS | MAX Type of Service (TOS) | 
+      
+                                                                      | PRVDR_ID_NMBR | Billing provider identification number (MAX) | 
+      
+                                                                      | NPI | National Provider Identifier (MAX) | 
+      
+                                                                      | TAXONOMY | Provider Taxonomy | 
+      
+                                                                      | TYPE_CLM_CD | Type of claim | 
+      
+                                                                      | ADJUST_CD | Adjustment code | 
+      
+                                                                      | PHP_TYPE | Managed care type of plan code | 
+      
+                                                                      | PHP_ID | Managed care plan identification code | 
+      
+                                                                      | MDCD_PYMT_AMT | Medicaid payment amount | 
+      
+                                                                      | TP_PYMT_AMT | Third party payment amount | 
+      
+                                                                      | PYMT_DT | Payment/adjudication date | 
+      
+                                                                      | CHRG_AMT | Charge amount | 
+      
+                                                                      | PHP_VAL | Prepaid plan value | 
+      
+                                                                      | MDCR_COINSUR_PYMT_AMT | Medicare coinsurance payment amount | 
+      
+                                                                      | MDCR_DED_PYMT_AMT | Medicare deductible payment amount | 
+      
+                                                                      | ADMSN_DT | Admission date (MAX) | 
+      
+                                                                      | SRVC_BGN_DT | Beginning date of service | 
+      
+                                                                      | SRVC_END_DT | Ending date of service | 
+      
+                                                                      | DIAG_CD_1 | Principle Diagnosis code | 
+      
+                                                                      | ICD_DGNS_VRSN_CD1 | Claim Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10) (Encounter) | 
+      
+                                                                      | DIAG_CD_2 | Diagnosis codes (2nd diagnosis) | 
+      
+                                                                      | DIAG_CD_3 | Diagnosis codes (3rd diagnosis) | 
+      
+                                                                      | DIAG_CD_4 | Diagnosis codes (4th diagnosis) | 
+      
+                                                                      | DIAG_CD_5 | Diagnosis codes (5th diagnosis) | 
+      
+                                                                      | DIAG_CD_6 | Diagnosis codes (6th diagnosis) | 
+      
+                                                                      | DIAG_CD_7 | Diagnosis codes (7th diagnosis) | 
+      
+                                                                      | DIAG_CD_8 | Diagnosis codes (8th diagnosis) | 
+      
+                                                                      | DIAG_CD_9 | Diagnosis codes (9th diagnosis) | 
+      
+                                                                      | PRNCPL_PRCDR_DT | Principle procedure date | 
+      
+                                                                      | PRCDR_CD_SYS_1 | Procedure code system- principal | 
+      
+                                                                      | PRCDR_CD_1 | Principle procedure code | 
+      
+                                                                      | PRCDR_CD_SYS_2 | Procedure code system (2nd procedure) | 
+      
+                                                                      | PRCDR_CD_2 | Procedure code (2nd procedure) | 
+      
+                                                                      | PRCDR_CD_SYS_3 | Procedure code system (3rd procedure) | 
+      
+                                                                      | PRCDR_CD_3 | Procedure code (3rd procedure) | 
+      
+                                                                      | PRCDR_CD_SYS_4 | Procedure code system (4th procedure) | 
+      
+                                                                      | PRCDR_CD_4 | Procedure code (4th procedure) | 
+      
+                                                                      | PRCDR_CD_SYS_5 | Procedure code system (5th procedure) | 
+      
+                                                                      | PRCDR_CD_5 | Procedure code (5th procedure) | 
+      
+                                                                      | PRCDR_CD_SYS_6 | Procedure code system (6th procedure) | 
+      
+                                                                      | PRCDR_CD_6 | Procedure code (6th procedure) | 
+      
+                                                                      | RCPNT_DLVRY_CD | Delivery code (MAX IP) | 
+      
+                                                                      | MDCD_CVRD_IP_DAYS | Medicaid covered inpatient days | 
+      
+                                                                      | PATIENT_STATUS_CD | Patient status | 
+      
+                                                                      | DRG_REL_GROUP_IND | Diagnosis Related Group (DRG) indicator | 
+      
+                                                                      | DRG_REL_GROUP | Diagnosis Related Group (DRG) | 
+      
+                                                                      | UB_92_REV_CD_GP_1 | UB-92 revenue code (1st) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_1 | UB-92 revenue code charge (1st) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_1 | UB-92 revenue code units (1st) | 
+      
+                                                                      | UB_92_REV_CD_GP_2 | UB-92 revenue code (2nd) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_2 | UB-92 revenue code charge (2nd) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_2 | UB-92 revenue code units (2nd) | 
+      
+                                                                      | UB_92_REV_CD_GP_3 | UB-92 revenue code (3rd) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_3 | UB-92 revenue code charge (3rd) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_3 | UB-92 revenue code units (3rd) | 
+      
+                                                                      | UB_92_REV_CD_GP_4 | UB-92 revenue code (4th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_4 | UB-92 revenue code charge (4th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_4 | UB-92 revenue code units (4th) | 
+      
+                                                                      | UB_92_REV_CD_GP_5 | UB-92 revenue code (5th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_5 | UB-92 revenue code charge (5th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_5 | UB-92 revenue code units (5th) | 
+      
+                                                                      | UB_92_REV_CD_GP_6 | UB-92 revenue code (6th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_6 | UB-92 revenue code charge (6th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_6 | UB-92 revenue code units (6th) | 
+      
+                                                                      | UB_92_REV_CD_GP_7 | UB-92 revenue code (7th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_7 | UB-92 revenue code charge (7th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_7 | UB-92 revenue code units (7th) | 
+      
+                                                                      | UB_92_REV_CD_GP_8 | UB-92 revenue code (8th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_8 | UB-92 revenue code charge (8th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_8 | UB-92 revenue code units (8th) | 
+      
+                                                                      | UB_92_REV_CD_GP_9 | UB-92 revenue code (9th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_9 | UB-92 revenue code charge (9th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_9 | UB-92 revenue code units (9th) | 
+      
+                                                                      | UB_92_REV_CD_GP_10 | UB-92 revenue code (10th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_10 | UB-92 revenue code charge (10th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_10 | UB-92 revenue code units (10th) | 
+      
+                                                                      | UB_92_REV_CD_GP_11 | UB-92 revenue code (11th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_11 | UB-92 revenue code charge (11th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_11 | UB-92 revenue code units (11th) | 
+      
+                                                                      | UB_92_REV_CD_GP_12 | UB-92 revenue code (12th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_12 | UB-92 revenue code charge (12th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_12 | UB-92 revenue code units (12th) | 
+      
+                                                                      | UB_92_REV_CD_GP_13 | UB-92 revenue code (13th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_13 | UB-92 revenue code charge (13th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_13 | UB-92 revenue code units (13th) | 
+      
+                                                                      | UB_92_REV_CD_GP_14 | UB-92 revenue code (14th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_14 | UB-92 revenue code charge (14th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_14 | UB-92 revenue code units (14th) | 
+      
+                                                                      | UB_92_REV_CD_GP_15 | UB-92 revenue code (15th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_15 | UB-92 revenue code charge (15th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_15 | UB-92 revenue code units (15th) | 
+      
+                                                                      | UB_92_REV_CD_GP_16 | UB-92 revenue code (16th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_16 | UB-92 revenue code charge (16th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_16 | UB-92 revenue code units (16th) | 
+      
+                                                                      | UB_92_REV_CD_GP_17 | UB-92 revenue code (17th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_17 | UB-92 revenue code charge (17th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_17 | UB-92 revenue code units (17th) | 
+      
+                                                                      | UB_92_REV_CD_GP_18 | UB-92 revenue code (18th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_18 | UB-92 revenue code charge (18th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_18 | UB-92 revenue code units (18th) | 
+      
+                                                                      | UB_92_REV_CD_GP_19 | UB-92 revenue code (19th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_19 | UB-92 revenue code charge (19th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_19 | UB-92 revenue code units (19th) | 
+      
+                                                                      | UB_92_REV_CD_GP_20 | UB-92 revenue code (20th) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_20 | UB-92 revenue code charge (20th) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_20 | UB-92 revenue code units (20th) | 
+      
+                                                                      | UB_92_REV_CD_GP_21 | UB-92 revenue code (21st) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_21 | UB-92 revenue code charge (21st) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_21 | UB-92 revenue code units (21st) | 
+      
+                                                                      | UB_92_REV_CD_GP_22 | UB-92 revenue code (22nd) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_22 | UB-92 revenue code charge (22nd) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_22 | UB-92 revenue code units (22nd) | 
+      
+                                                                      | UB_92_REV_CD_GP_23 | UB-92 revenue code (23rd) | 
+      
+                                                                      | UB_92_REV_CD_CHGS_23 | UB-92 revenue code charge (23rd) | 
+      
+                                                                      | UB_92_REV_CD_UNITS_23 | UB-92 revenue code units (23rd) | 
+      
+                                                                      | UPDT_DT | MAX File Update Date |

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_527",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "date.\n605 V0200C2_CARE_PLN_DT V0200C2_CARE_PLN_DT V0200C2 Care Plan Completion Date CHAR 8 The data in this column contains the date that the staff completed the care planning decision.\n606 X0100_TRANS_TYPE_CD X0100_TRANS_TYPE_CD X0100 Type of Record Code CHAR 1 The data in this column indicates the type of record that is being submitted (new, modification or inactivation). 1=Add new record\n2=Modify existing record\n3=Inactivate existing record\n607 X0150_CRCTN_PRVDR_TYPE_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

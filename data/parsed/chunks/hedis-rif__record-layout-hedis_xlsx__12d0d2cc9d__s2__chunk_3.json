@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s2__chunk_3",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 2,
+  "text": "Age - Sex Weight NUM 8 18 18 17\nCMRBDTY_WT Comorbidity Weight NUM 8 19 19 18\nSRGRY_WT Surgery Weight NUM 8 20 20 19\nDSCHRG_WT Discharge Weight NUM 8 21 21 20\nOBSRVTN_STAY_WT Observation Stay Weight NUM 8 — — 21\nDSCHRG_TRNSFR_SKLD_NRSNG_IND Discharge or Transfer to Skilled Nursing Care Indictor NUM 3 — — 22\nDSCHRG_TRNSFR_SN_AGE_SEX_WT2 Discharge or Transfer to Skilled Nursing Care Age-Sex Weight NUM 8 — — 23\nDSCHRG_TRNSFR_SN_SRGRY_WT Discharge or Transfer to Skilled Nursing Care Surgery Weight",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p262__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 262,
+  "text": "a standard retail pharmacy) during the pre-\ninitial coverage limit (ICL) phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nPlans that use a coinsurance percentage amount rather than a co-payment will not have a value in this \nfield; reference instead the corresponding coinsurance variable called (PRE_ICL_INP_COINS_3M). \nStarting in 2016, CMS changed how they describe pharmacy networks. The INP are currently referred \nto as standard retail",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

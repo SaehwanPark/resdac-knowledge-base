@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_44",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "or impairment that is used to place a patient into a rehabilitation impairment\ncategory.\n66 _25 CMTS_SW (25) Comatose: Admission CHAR 1 A code indicating whether the patient is diagnosed as comatose or in a persistent vegetative state at the time of admission. 0 = No, 1 = Yes\n67 _26 DLRS_SW (26) Delirious: Admission CHAR 1 A code indicating whether the patient has exhibited symptoms of delirium at time of admission. Delirium may be manifested as disoriented thinking, being easily distracted,",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

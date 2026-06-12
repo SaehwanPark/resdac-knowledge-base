@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__data-documentation__5f87a8e2e1__chunk_2",
+  "source_document": "data/raw/html/documentation_page/5f87a8e2e116646c5b2efabbdfcab56530e7beb6.html",
+  "page": null,
+  "text": "| \n| ENRLMT_EFCTV_DT | Beneficiary Part D Plan Enrollment Effective Date | \n| DISENRLMNT_DT | Beneficiary Part D Plan Disenrollment Date | \n| ENRLMT_TYPE_CD | Beneficiary Part D Plan Enrollment Type Code | \n| CONTRACT_ID | Part D Contract Number | \n| PLAN_ID | Part D Plan Benefit Package Identifier | \n| AUDT_SQNC_NUM | Part D Enrollment Transaction Audit Sequence Number | \n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | CCW Beneficiary ID | \n| REF_YEAR | Part D Plan Enrollment Year | \n|",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://resdac.org/cms-data/files/part-d-plan-election-type-beneficiary-summary/data-documentation"
+}

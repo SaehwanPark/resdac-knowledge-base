@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p219__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 219,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n201 \nLINE_BENE_PTB_DDCTBL_AMT \nLABEL: \nLine Beneficiary Part B Deductible Amount \nDESCRIPTION: The amount of money for which the carrier has determined that the beneficiary is liable for the Part B \ncash deductible for the line-item service on the non-institutional claim. \nSHORT NAME: LDEDAMT \nLONG NAME: LINE_BENE_PTB_DDCTBL_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p135__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 135,
+  "text": "days \n16 = Invalid HRG days, > 60 \n20 = PEP indicator invalid \n25 = Med review indicator \ninvalid \n30 = Invalid MSA code \n35 = Invalid initial payment indicator \n40 = Dates < October 1, 2000, or invalid \n70 = Invalid HRG code \n75 = No HRG present in 1st occurrence \n80 = Invalid revenue code \n85 = No revenue code present on HH final \nclaim/adjustment \n************Outpatient PPS Pricer Return Codes****** \nOutpatient PPS payment return codes: \n01 = Line processed to payment \n20 = Line processed",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

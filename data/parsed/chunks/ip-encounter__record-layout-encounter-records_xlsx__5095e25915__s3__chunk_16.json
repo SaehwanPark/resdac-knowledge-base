@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s3__chunk_16",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 3,
+  "text": "Claim Through Date Date 8 5\nREV_CNTR Revenue Center Code Char 4 6\nREV_CNTR_FROM_DT Revenue Center From Date Date 8 7\nREV_CNTR_THRU_DT Revenue Center Thru Date Date 8 8\nREV_CNTR_UNIT_CNT Revenue Center Unit Count Num 8 9\nHCPCS_CD HCFA Common Procedure Coding System (HCPCS) Code Char 5 10\nHCPCS_1ST_MDFR_CD HCPCS Initial Modifier Code Char 2 11\nHCPCS_2ND_MDFR_CD HCPCS Second Modifier Code Char 2 12\nHCPCS_3RD_MDFR_CD HCPCS Third Modifier Code Char 2 13\nHCPCS_4TH_MDFR_CD HCPCS Fourth Modifier Code",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

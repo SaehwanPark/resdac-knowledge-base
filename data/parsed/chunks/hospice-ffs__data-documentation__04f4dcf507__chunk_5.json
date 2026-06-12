@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_5",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "| Claim or Revenue Center Rendering Physician Specialty Code | \n\n | 33 | RFR_PHYSN_NPI | Claim Referring Physician NPI Number | \n\n | 34 | RFRG_SPCLTY_CD | Claim Referring Physician Specialty Code | \n\n | 35 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (FFS) | \n\n | 36 | CLM_TOT_CHRG_AMT | Claim Total Charge Amount | \n\n | 37 | NCH_PTNT_STUS_IND_CD | NCH Patient Status Indicator Code | \n\n | 38 | CLM_UTLZTN_DAY_CNT | Claim Medicare Utilization Day Count | \n\n | 39 | NCH_BENE_DSCHRG_DT | NCH",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

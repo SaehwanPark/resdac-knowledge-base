@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p72__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 72,
+  "text": "(S-CHIP claim) or 'V' \n(Other Services claim). \nThe Medicaid payment information corresponding to this variable is in the MDCD_TOTAL_ \nNON_CAPTD_SPEND variable; however, due to CMS payment redaction requirements the dollar totals \nwill not reflect the total managed care expenditures. MMLEADS may count claims (in this MDCD_ \nTOTAL_USE variable) for which there is no corresponding payment information. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

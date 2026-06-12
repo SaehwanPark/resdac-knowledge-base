@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 19,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n14 \nNull/missing = Unable to link PDE \nprescriber to HCIdea™ Prescriber \nDatabase \nCOMMENT: \nWe populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber \nDatabase. \n^ Back to TOC ^",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

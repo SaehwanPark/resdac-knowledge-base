@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 27,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n23 \nOPT_OUT_DT \nLABEL: \nDate of MTM program opt-out \nDESCRIPTION: This variable is the date the beneficiary opted out of the Medication Therapy Management (MTM) \nprogram, if applicable. \nTYPE: \nDATE \nLENGTH: \n9 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nCMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

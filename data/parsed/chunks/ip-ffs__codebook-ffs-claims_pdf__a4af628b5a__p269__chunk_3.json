@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p269__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 269,
+  "text": "Started with Medicare data\". \nNote that there is a data issue with the incorrect assignment of National Claims History (NCH) claim \ntype codes for 37,962 Part B carrier and DMERC (claim type codes 71,72,81,82) claims processed on \n01/27/23 (i.e., the NCH_WKLY_PROC_DT). For nearly all of the affected claims, the \nNCH_CLM_TYPE_CD was incorrectly assigned an 81 instead of 82; there are also 7 of the total \nimpacted claims where the NCH_CLM_TPYE_CD was incorrectly assigned 71 instead of 72. \n^ Back",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

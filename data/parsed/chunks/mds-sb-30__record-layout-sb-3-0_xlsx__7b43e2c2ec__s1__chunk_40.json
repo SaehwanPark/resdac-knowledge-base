@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_40",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "CHAR 12 This column contains the resident's medical record number.\n64 A1300B_ROOM_NUM A1300B_ROOM_NUM A1300B Room Number CHAR 10 This column contains the resident's room number.\n65 A1300D_LFTM_OCPTN_TXT A1300D_LFTM_OCPTN_TXT A1300D Lifetime Occupation(s) Text CHAR 23 This column contains the resident's lifetime occupation(s).\n66 A1500_PASRR_CD A1500_PASRR_CD A1500 Preadmission Screening and Resident Review (PASRR) Code CHAR 1 The data in this column identifies if the resident has been evaluated",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_583",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "0 = Does not apply - I have not received rehabilitation therapy in the past 5 days\n1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to answer \n^ = Blank\n520 PAIN_DAY_DAY_ADMSN_CD PAIN_DAY_DAY_ADMSN_CD Pain interference with DTD activities (Adm) CHAR 1 This column document, at the time of admission, how often, in the past five days, day-to-day activities (excluding rehabilitation therapy sessions) were limited because of pain? 1 = Rarely or not at all",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

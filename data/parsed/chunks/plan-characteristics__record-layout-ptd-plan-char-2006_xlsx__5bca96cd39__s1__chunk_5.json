@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "Part D Reinsurance Demo Type Char 1 This variable describes the type of Part D payment reinsurance demonstration, for plan benefit packages that are offered as such. 0 Non-Payment Demo\n1 Flexible capitated option\n2 Fixed capitated option\n3 Flexible MA rebate option\n12 snp_type SNP Type Char 1 This variable describes the type of special needs plan (SNP) for Part D plan benefit packages that are offered as such. 0 Non-SNP\nC Chronic or Disabling Condition\nD Dual-Eligible\nI Institutional\n13",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

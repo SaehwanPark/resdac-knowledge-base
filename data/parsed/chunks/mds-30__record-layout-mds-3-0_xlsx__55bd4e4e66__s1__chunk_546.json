@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_546",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "the reason for inactivation of the prior erroneous record is because of an other error requiring inactivation. 0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern) effective 10/01/2023\n627 X1100E_ATSTN_DT X1100E_ATSTN_DT X1100E Attestation Date CHAR 8 The data in this column indicates the date that the staff member attested to the completion and accuracy of the corrected information. effective 10/01/2023\n628 Z0100A_MDCR_HIPPS_TXT Z0100A_MDCR_HIPPS_TXT Z0100A Medicare Part A HIPPS Code Text",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

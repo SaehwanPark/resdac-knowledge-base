@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_21",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| HOSP_AT_HOME_THRU_DT | Hospital at Home Care Through Date | \n\n | 114 | ICU_IND_CD | Intensive Care Unit (ICU) Indicator Code | \n\n | 115 | CRNRY_CARE_IND_CD | Coronary Care Unit (CCU) Indicator Code | \n\n | 116 | PHRMCY_IND_CD | Pharmacy Indicator Code | \n\n | 117 | TRNSPLNT_IND_CD | Organ Transplant Indicator Code | \n\n | 118 | RDLGY_ONCLGY_IND_SW | Oncology Indicator | \n\n | 119 | RDLGY_DGNSTC_IND_SW | Diagnostic Radiology Indicator | \n\n | 120 | RDLGY_THRPTC_IND_SW | Therapeutic Radiology",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

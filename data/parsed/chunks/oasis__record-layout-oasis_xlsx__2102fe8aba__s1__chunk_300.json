@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_300",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "not constantly\n04 = Constantly\nNA = NA - Patient nonresponsive CHAR 2 x x x x x x\nM1720_WHEN_ANXIOUS M1720 (M0580) When Anxious This field indicates when the patient is anxious (Reported or Observed Within the Last 14 Days). 00 = None of the time\n01 = Less often than daily\n02 = Daily, but not constantly\n03 = All of the time\nNA = Patient nonresponsive CHAR 2 x x x x x x\nM1730_STDZ_DPRSN_SCRNG M1730 Depression Screening This field indicates if the patient has been screened for depression using a",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

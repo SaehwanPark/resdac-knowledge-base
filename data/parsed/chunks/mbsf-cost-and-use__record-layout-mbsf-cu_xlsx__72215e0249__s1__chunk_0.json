@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File - Cost and Use\nVersion - May 2017\nLong SAS Name Label Type Length\nBENE_ID Encrypted CCW Beneficiary ID CHAR 15\nRFRNC_YR Reference Year NUM 4\nENRL_SRC Source of enrollment data CHAR 3\nACUTE_BENE_PMT Acute Inpatient Hospital Beneficiary Payments NUM 12\nACUTE_MDCR_PMT Acute Inpatient Medicare Payments NUM 12\nACUTE_PERDIEM_PMT Acute Inpatient Hospital Pass-thru Per Diem Payments NUM 12\nACUTE_PRMRY_PMT Acute",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

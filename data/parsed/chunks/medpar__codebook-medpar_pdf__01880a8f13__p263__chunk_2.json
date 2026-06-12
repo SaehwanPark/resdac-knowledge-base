@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p263__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 263,
+  "text": "(CLM-VBP-PRTCPNT-IND-CD) that is present on the first claim record included in the stay. \nIf there is no Claim VBP Participant Indicator code on the first claim, then the first found code on any of \nthe other claims that make up the stay is used. \nThis field is new in 2011. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

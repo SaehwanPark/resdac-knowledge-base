@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "- October CHAR 1\nHMOIND11 HMO_IND_11 HMO Indicator - November CHAR 1\nHMOIND12 HMO_IND_12 HMO Indicator - December CHAR 1\nPart C #REF!\nPTC_CNTRCT_ID_01 PTC_CNTRCT_ID_01 Part C Contract Number - January CHAR 5\nPTC_CNTRCT_ID_02 PTC_CNTRCT_ID_02 Part C Contract Number - February CHAR 5\nPTC_CNTRCT_ID_03 PTC_CNTRCT_ID_03 Part C Contract Number - March CHAR 5\nPTC_CNTRCT_ID_04 PTC_CNTRCT_ID_04 Part C Contract Number - April CHAR 5\nPTC_CNTRCT_ID_05 PTC_CNTRCT_ID_05 Part C Contract Number - May CHAR",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

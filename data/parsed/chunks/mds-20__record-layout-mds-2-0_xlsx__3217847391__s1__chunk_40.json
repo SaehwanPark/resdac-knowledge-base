@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_40",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= Rehabilitation Hospital, 8 = Other, \"-\" = Unknown\n76 AB3 AB3_LIVED_ALONE (AB3) Lived Alone Prior to Entry CHAR 1 Demographic information: lived alone (prior to entry) 0 = No, 1 = Yes, 2 = Other\n77 AB4 AB4_PRIOR_ZIP (AB4) ZIP Code of Prior Primary Residence CHAR 5 Demographic information: ZIP code of prior primary residence.\n78 AB5A AB5A_PRIOR_THIS_NF (AB5A) Prior Stay in This Nursing Home CHAR 1 Demographic information: residential history prior to entry - prior stay at this nursing home. 0 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

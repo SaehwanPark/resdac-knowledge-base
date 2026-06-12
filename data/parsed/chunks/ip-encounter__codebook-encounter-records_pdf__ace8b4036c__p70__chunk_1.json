@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p70__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 70,
+  "text": "TYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n5-digit alphanumeric \nCOMMENT: \nThe first character of the contract ID is a letter that indicates the type of plan. For local managed care \ncontracts, it begins with “H” or '9'; for regional managed care contracts, it begins with 'R'; for \nprescription drug plans (PDPs), it begins with 'S'; for fallback contracts, it begins with 'F', for",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

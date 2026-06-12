@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p338__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 338,
+  "text": "met. INACTIVE \nA4 = Medicare Claim PPS Capital Day \nOutlier Amount. \nA5 = Medicare Claim PPS Capital Cost \nOutlier Amount \nA6 = Prior hospitalization or 30-day \ntransfer requirement not met \nA7 = Presumptive Payment Adjustment \nA8 = Claim denied; ungroupable DRG \nB1 = Non-covered visits \nB2 = Covered visits. INACTIVE \n\nB3 = Covered charges. INACTIVE \nB4 = Late filing penalty \nB5 = Claim/service adjusted because \ncoverage/program guidelines were \nnot met or were exceeded \nB6 = This",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

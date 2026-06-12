@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_94",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Dyspneic/Short of Breath When patient is dyspneic or noticeable short of breath. 00 = Never, patient is not short of breath\n01 = When walking more than 20 feet, climbing stairs\n02 = With moderate exertion (e.g., while dressing, using commode or bedpan, walking distances less than 20 feet)\n03 = With minimal exertion (e.g., while eating, talking, or performing other ADLs) or with agitation\n04 = At rest (during day or night) CHAR 2 x x\nM0500_RESPTX_AIRPR (M0500) Continuous Positive Airway Pressure",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_186",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_WOUND (M0895) Wound or Tube Site Infection Reason for hospitalization: wound or tube site infection, deteriorating wound status, new lesion/ ulcer. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0900_NH_HOSPICE (M0900) Hospice Care Reason(s) for admission to nursing home: hospice care. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0900_NH_OTHER (M0900) Other Reason Admitted to Nursing Home Reason(s) for admission to nursing home: other. 0 = No, 1 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_248",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "have healed on discharge.\n219 HLG_STG_3_ULCR_NUM HLG_STG_3_ULCR_NUM M0900C Healed Stage 3 Ulcers Number CHAR 1 The number of Stage 3 pressure ulcers present on the admission that have healed on discharge.\n220 HLG_STG_4_ULCR_NUM HLG_STG_4_ULCR_NUM M0900D Healed Stage 4 Ulcers Number CHAR 1 The number of Stage 4 pressure ulcers present on the admission that have healed on discharge.\n221 PRPHRL_VSCLR_DEASE_IND PRPHRL_VSCLR_DEASE_IND I0900A Peripheral Vascular Disease Code CHAR 1 The code for",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

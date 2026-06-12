@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 2,
+  "text": "HOS_STAYS, OIP_PRMRY_PMT, OIP_MDCR_PMT, OIP_STAYS, \nSNF_COV_DAYS, SNF_PRMRY_PMT, SNF_STAYS \n• Added clarification re: calculation for HOP_VISITS, \nPTD_FILL_CNT, and corrected source variable names used to \ncalculate HOP_BENE_PMT \n• Added COMMENT re: ACO payments to all _MDCR_PMT \nfields (except for PTD_MDCR_PMT) \n1.3 \nMarch 2022 \nK. Schneider \nR. VanGilder \nCorrected the algorithms for the “stays” variables so that they \nrefer to the CLM_THRU_DT. \n1.2 \nFebruary 2021 \nC. Alleman \nK. Russell",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

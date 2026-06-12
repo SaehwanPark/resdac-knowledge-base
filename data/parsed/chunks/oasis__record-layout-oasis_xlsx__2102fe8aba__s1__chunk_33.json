@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "- hospital. 0 = No, 1 = Yes CHAR 1 x x\nM0175_DC_NON_14_DA (M0175) Inpatient Facility Admitted From during past 14 Days - Not Discharged from an Inpatient Facility Inpatient facility admitted from during past 14 days - not discharged from an inpatient facility. 0 = No, 1 = Yes CHAR 1 x x\nM0175_DC_ONH_14_DA (M0175) Inpatient Facility Admitted From during past 14 Days - Other Nursing Home Inpatient facility admitted from during past 14 days - other nursing home. 0 = No, 1 = Yes CHAR 1 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

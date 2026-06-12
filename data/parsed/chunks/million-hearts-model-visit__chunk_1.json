@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-visit__chunk_1",
+  "source_document": "data/raw/html/dataset_page/b3cf81e0d45803a40a7257d835f432647f90ecbd.html",
+  "page": null,
+  "text": "Model-Assigned Practice ID\n- Model-Assigned Patient ID\n- Visit Date\n- Baseline CVD Risk Score\n- CVD Risk Score at the time of the visit\n- Baseline risk group (low, medium, high)\nA record represents a patient at the time of a particular visit, and includes information such as visit date, baseline risk score, visit risk score, and baseline group.\nThe Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link",
+  "dataset": "million-hearts-model-visit",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-visit?page=1"
+}

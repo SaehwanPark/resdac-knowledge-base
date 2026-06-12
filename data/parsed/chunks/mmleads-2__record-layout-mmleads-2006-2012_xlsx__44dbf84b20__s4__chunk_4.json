@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s4__chunk_4",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 4,
+  "text": "in dollars and cents\nMEDICARE_COIN_PMT_01-12 Monthly Medicare coinsurance payments Value displayed in dollars and cents\nMEDICARE_DED_PMT_01-12 Monthly Medicare deductible payments payments Value displayed in dollars and cents\nMEDICARE_PMT Annual Medicare payments (For Part D, it's the sum of monthly cvrd_d_plan_pd_amt ) Value displayed in dollars and cents\nMEDICARE_BENE_PMT Annual Medicare coinsurance and deductible payments Value displayed in dollars and cents\nMEDICAID_BENE_PMT Annual Medicare",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

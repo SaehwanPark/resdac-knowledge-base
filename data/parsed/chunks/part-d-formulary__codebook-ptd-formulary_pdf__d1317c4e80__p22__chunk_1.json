@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 22,
+  "text": "sharing tier record in the Plan Characteristics File to a prescription drug event record (i.e., the PDE \ndata) using contract ID, plan ID, and tier ID. \nSHORT NAME: — \nLONG NAME: TIER_ID \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n01–09 \nCOMMENT: \nFor 2006–2009 this variable was found in the Part D Event Characteristics files. This variable is first \navailable in the Formulary file in 2010. It is also present in the Excluded Drug file, starting with 2012 \ndata. It can be",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

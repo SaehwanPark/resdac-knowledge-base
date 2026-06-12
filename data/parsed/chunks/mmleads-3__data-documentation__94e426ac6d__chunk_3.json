@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__data-documentation__94e426ac6d__chunk_3",
+  "source_document": "data/raw/html/documentation_page/94e426ac6df090203083bffc9a6b039975585c37.html",
+  "page": null,
+  "text": "| Partial Dual Months | \n\n | 21 | MDCR_ONLY_MOS | Medicare Only Months | \n\n | 22 | MDCD_ELGBLTY_GRP_CD_LTST | Medicaid — Eligibility Group Code — Latest in Year | \n\n | 23 | MDCD_ABD_MOS | Medicaid Enrollment — Aged, Blind, Disabled Months | \n\n | 24 | MDCD_ONLY_MOS | Medicaid Aged, Blind, Disabled Only Months | \n\n | 25 | MDCD_CHIP_NON_ABD_MOS | MDCD or CHIP Enrollment — Non-ABD Months | \n\n | 26 | MDCD_RSTRCTD_BNFTS_CD_LTST | Medicaid — Scope of Medicaid or CHIP Benefits — Latest in Year | \n\n |",
+  "dataset": "mmleads-3",
+  "url": "https://resdac.org/cms-data/files/mmleads-3/data-documentation"
+}

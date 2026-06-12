@@ -1,0 +1,21 @@
+The Medicaid and CHIP T-MSIS Analytic File (TAF) Long Term Care (LT) file contains records for institutional long term care provided by specific facilities identified by the Type of Service variable:
+- Nursing Facility Services
+- Mental Facility Services
+- Independent (free-standing) Psychiatric Wings of Acute Care Hospitals
+- Intermediate Care Facility (ICF) Services for Individuals With Intellectual Disabilities
+The records in the LT TAF include fee-for-service (FFS) claims, managed care encounters and supplemental payments for Medicaid, Medicaid-expansion CHIP, and separate CHIP.
+What does this file include? (variable highlights)
+- Diagnosis codes
+- Present on Admission indicator
+- Admission date
+- Charges and payments
+- Provider identifier
+- Patient discharge status or destination
+- Counts of covered days
+Special considerations
+- Encounter data reporting may vary by state, year and eligibility group.
+- Stays may be made up of multiple records.
+- Long term care services provided to community-dwelling beneficiaries are found in the TAF OT file.
+- CMS continues to work with states to address data quality issues. In addition to preliminary and fully mature files, CMS may provide updated releases of the files for a given year. CMS has fee information for TAF data pricing.
+- ResDAC provides resources on Medicaid TAF data quality.
+- A bridge file will be provided to assist researchers that are conducting longitudinal analysis involving 2020 TAF research files along with earlier service years. For additional information, please see the CCW T-MSIS Analytic Files (TAF) User Guide posted on CCW’s User Documentation page.

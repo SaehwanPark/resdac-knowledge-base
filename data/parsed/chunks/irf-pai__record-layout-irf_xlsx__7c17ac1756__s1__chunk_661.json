@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_661",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "CHAR 1 This column documents whether the resident's payer is Workers' Compensation. 0 = No \n1 = Yes\n631 A1400F_TITLE_PGMS_PYR_SW A1400F_TITLE_PGMS_PYR_SW A1400F - Payer: Title programs CHAR 1 This column documents whether the resident's payer is Title programs. 0 = No \n1 = Yes\n632 A1400G_OTHR_GOVT_PYR_SW A1400G_OTHR_GOVT_PYR_SW A1400G - Payer: Other Government CHAR 1 This column documents whether the resident's payer is other Government. 0 = No \n1 = Yes\n633 A1400H_PRVT_INSRNC_PYR_SW",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

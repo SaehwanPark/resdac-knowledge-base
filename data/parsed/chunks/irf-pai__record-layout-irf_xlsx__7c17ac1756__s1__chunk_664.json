@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_664",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "0 = No \n1 = Yes\n637 A1400X_UNK_PYR_SW A1400X_UNK_PYR_SW A1400X - Payer: Unknown CHAR 1 This column documents whether the resident's payer is unkown. 0 = No \n1 = Yes\n638 A1400Y_OPYR_SW A1400Y_OPYR_SW A1400Y - Payer: Other CHAR 1 This column documents whether the resident's payer is something other than the above choices. 0 = No \n1 = Yes\n1In 2025, this field was renamed to sex to comply with Executive Order 14168.",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

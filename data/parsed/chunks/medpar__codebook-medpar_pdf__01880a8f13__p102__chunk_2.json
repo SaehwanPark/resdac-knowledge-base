@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p102__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 102,
+  "text": "NAME: EQTBL_BIC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nA = Primary claimant \nB = Aged wife, age 62 or over (1st claimant) \nB1 = Aged husband, age 62 or over (1st claimant) \nB2 = Young wife, with a child in her care (1st claimant) \nB3 = Aged wife (2nd claimant) \nB4 = Aged husband (2nd claimant) \nB5 = Young wife (2nd claimant) \nB6 = Divorced wife, age 62 or over (1st claimant) \nB7 = Young wife (3rd claimant) \nB8 = Aged wife (3rd claimant) \nB9 = Divorced wife (2nd claimant) \nBA = Aged",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__record-layout-aco-pioneer-v2_xlsx__7957b5f6c4__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/7957b5f6c4da3ec2079167ec3fad059f4bf72ffc.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nPioneer — Accountable Care Organizations (ACO) — Beneficiary File V2\nVersion — May 2025\nSAS name Label Type Length\nBENE_ID Encrypted CCW Beneficiary ID CHAR 15\nBENE_ACO_YEAR Year of Beneficiary ACO Source Record NUM 4\nACO_ID ACO Identifier CHAR 4\nBIRTH_DT Date of Birth DATE 8\nDEATH_DT Date of Death DATE 8\nSEX_CD Sex CHAR 1\nM01_ALIGN Month 1 Alignment Flag NUM 1\nM02_ALIGN Month 2 Alignment Flag NUM 1\nM03_ALIGN Month 3 Alignment Flag NUM",
+  "dataset": "pioneer-aco",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-pioneer-v2.xlsx"
+}

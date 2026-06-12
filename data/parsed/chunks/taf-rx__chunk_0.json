@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-rx__chunk_0",
+  "source_document": "data/raw/html/dataset_page/4e158ec9ec730af462c8ee86fbfacdaf76bb7468.html",
+  "page": null,
+  "text": "The Medicaid and CHIP T-MSIS Analytic File (TAF) Pharmacy (RX) file includes records of filled prescriptions. Records include fee-for-service (FFS) claims, managed care encounters and supplemental payments for Medicaid, Medicaid-expansion CHIP and separate CHIP.\nWhat does this file include? (variable highlights)\n- National Drug Code (NDC)\n- Days supply covered by the prescription\n- Charges and Medicaid payments (FFS only)\n- National Provider Identifier (NPI) for the billing provider\nSpecial",
+  "dataset": "taf-rx",
+  "url": "https://resdac.org/cms-data/files/taf-rx?page=1"
+}

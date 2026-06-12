@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p235__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 235,
+  "text": "LONG NAME: SRC_IP_ADMSN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n This code set is an external code set maintained by the National Uniform Billing Committee \n(NUBC™) https://www.nubc.org/ \nCOMMENT: \nThis field comes from the source Inpatient admission code that is present on the last claim record \nincluded in the stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

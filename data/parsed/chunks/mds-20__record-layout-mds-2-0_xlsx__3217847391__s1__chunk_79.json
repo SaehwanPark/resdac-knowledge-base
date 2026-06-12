@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_79",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Speech - absence of spoken words, \"-\" = Unknown, -2 = Space.\n151 C6 C6_UNDERSTAND_OTH (C6) Ability to Understand Others CHAR 1 Communications/hearing patterns: ability to understand others. 0 = Understands; 1 = Usually Understands - may miss some part/intent of message; 2 = Sometimes Understands - responds adequately to simple, direct communication; 3 = Rarely/Never Understands; \"-\" = Unknown, -2 = Space.\n152 C7 C7_CHANGE_IN_COMM (C7) Change in Communication/Hearing CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

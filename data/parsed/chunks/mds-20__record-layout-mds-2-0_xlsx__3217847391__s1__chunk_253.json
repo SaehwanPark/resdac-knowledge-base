@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_253",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "indicator of a stasis ulcer in the last 7 days. A stasis ulcer is an open lesion caused by poor circulation in the lower extremities. 0 = None; 1 = Stage 1; 2 = Stage 2; 3 = Stage 3; 4 = Stage 4; \"-\" = Unknown.\n413 M3 M3_HIST_ULCER (M3) History of Resolved Ulcers CHAR 1 Skin condition: history of resolved ulcers. This field indicates if the resident had an ulcer that was resolved or cured in the lat 90 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n414 M4A M4A_ABRASIONS (M4A) Abrasions/Bruises CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

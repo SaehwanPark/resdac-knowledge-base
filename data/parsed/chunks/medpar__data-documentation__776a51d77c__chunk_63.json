@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_63",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Value-Based Purchasing (VBP) Participant Indicator Code | \n\n | 351 | HRR_PRTCPNT_IND_CD | Hospital Readmission Reduction (HRR) Participant Indicator Code | \n\n | 352 | BNDLD_MODEL_DSCNT_PCT | Bundled Payment Model Discount Percent | \n\n | 353 | VBP_ADJSTMT_PCT | Value Based Purchasing (VBP) Adjustment Percent | \n\n | 354 | HRR_ADJSTMT_PCT | Hospital Readmission Reduction (HRR) Adjustment Percent | \n\n | 355 | INFRMTL_ENCTR_IND_SW | Informational Encounter Indicator | \n\n | 356 | MA_TCHNG_IND_SW |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

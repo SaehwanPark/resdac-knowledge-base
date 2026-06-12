@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p37__chunk_3",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 37,
+  "text": "generated adjustment claim \nI = Misc. adjustment claim (e.g., \ninitiated by intermediary or QIO) \nP = Adjustment required by QIO \nQ = Claim Submitted for Reconsideration \nOutside of Timely Limits \nCOMMENT: \nThis code is used for encounter final action processing for all encounter claim types, including carrier. \nThe encounter bill type frequency codes utilize a similar nomenclature to Medicare fee for service bill \ntype frequency codes. This field can be used in determining the \"type of bill\"",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

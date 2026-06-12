@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p116__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 116,
+  "text": "SHORT NAME: HAC_RDCTN_PMT_AMT \nLONG NAME: HAC_RDCTN_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n0, -XXX (negative integers) \nCOMMENT: \nThis field is derived by accumulating the HAC Reduction Payment Amount (HAC-RDCTN_PMT_AMT; in \n2014 it was referred to as the IPPS_FLEX_PYMT_6_AMT) that is present on any of the claim records \nincluded in the stay (i.e., the sum of the claim HAC reduction payment amounts reported on the claims \nthat comprise the stay). \nThis field is new in October",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

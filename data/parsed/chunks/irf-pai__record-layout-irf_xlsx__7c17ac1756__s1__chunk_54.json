@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_54",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "05 = One accident in the past 7 days, 06 = No accidents, uses device such as catheter, 07 = No accidents.\n75 _30D BLADR_ACDNT_DSCHRG_CD (30d) Bladder Frequency of Accidents: Discharge CHAR 2 A score indicating the frequency of bladder accidents at discharge. Bladder accidents refers to the act of wetting linen or clothing with urine, and includes bedpan and urinal spills. 01 = Five or more accidents in the past 7 days, 02 = Four accidents in the past 7 days, 03 = Three accidents in the past 7",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

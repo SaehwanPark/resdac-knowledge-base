@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__chunk_0",
+  "source_document": "data/raw/html/dataset_page/f1ac9f508a2284b35eb33f94c4a7438c882f785c.html",
+  "page": null,
+  "text": "The Oncology Care Model (OCM) Current Clinical Status file includes information on the reported Current Clinical Status (CCS) for a patient. CCS was required to be reported at least once for each episode, as well as whenever there was a change in the CCS.\nThis file contains CCS information submitted for the third through eleventh OCM performance periods (episodes initiating July 2, 2017 - December 31, 2021), primarily including data reported by OCM participants to the Oncology Care Model",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://resdac.org/cms-data/files/ocm-current-clinical-status"
+}

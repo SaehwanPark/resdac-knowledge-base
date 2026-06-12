@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__record-layout-mbsf-ndi_xlsx__21e721b4ec__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/21e721b4ec64c624ca4af0c2f9b8d19c80c4925d.xlsx",
+  "page": 1,
+  "text": "5 x x\nICD_CODE_113 ICD_CODE_113 113 ICD-10 Cause of Death Recodes CHAR 3 x x\nICD_CODE_130 ICD_CODE_130 130 ICD-10 Cause of Death Recodes CHAR 3 - x\nENTITY_COND_1 ENTITY_COND_1 NDI Entity Axis Cause of Death - 1st Condition CHAR 7 x x\nENTITY_COND_2 ENTITY_COND_2 NDI Entity Axis Cause of Death - 2nd Condition CHAR 7 x x\nENTITY_COND_3 ENTITY_COND_3 NDI Entity Axis Cause of Death - 3rd Condition CHAR 7 x x\nENTITY_COND_4 ENTITY_COND_4 NDI Entity Axis Cause of Death - 4th Condition CHAR 7 x",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-ndi.xlsx"
+}

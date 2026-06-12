@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_100",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "D0200H2_MVMT_DFRNT_FREQ_CD D0200H2 Resident Mood Interview - Movement Different Frequency Code CHAR 1 The data in this column indicates the frequency that the resident's movement and speech is different (slow or fidgety or restless). -=Not assessed/no information\n0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern) discontinued 09/30/2023\n134 D0200I1_NGTV_STATE_CD D0200I1_NGTV_STATE_CD D0200I1 Resident Mood",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

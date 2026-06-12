@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "tobacco use CHAR 1\nSR_SPLMTL_SBSTNC_USE_3_CD Supplemental HRSN Substance Use 3: Past 12 months non-medical rx drug use CHAR 1\nSR_SPLMTL_SBSTNC_USE_4_CD Supplemental HRSN Substance Use 4: Past 12 months illegal drug use CHAR 1\nSR_SPLMT_SBST_USE_OVRL_SCRNG_IND Screened Supplemental HRSN Substance Use Overall Indicator CHAR 1\nSR_HAS_CORE_HRSN_IND Beneficiary has at least 1 core HRSN CHAR 1\nSR_ER_VISITS_CD Beneficiary Number of ED Visits Last 12 Months CHAR 1\nSR_ELGBL_FOR_NVGTN_IND Beneficiary Elig",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

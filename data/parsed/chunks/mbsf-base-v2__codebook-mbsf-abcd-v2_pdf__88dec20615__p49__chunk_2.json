@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p49__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 49,
+  "text": "PTC_SGMT_ID_04 \nPTC_SGMT_ID_05 \nPTC_SGMT_ID_06 \nPTC_SGMT_ID_07 \nPTC_SGMT_ID_08 \nPTC_SGMT_ID_09 \nPTC_SGMT_ID_10 \nPTC_SGMT_ID_11 \nPTC_SGMT_ID_12 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nNull/missing or a three-digit numeric value that includes leading zeros \nCOMMENT: \nIf the beneficiary did not have a Part C plan for a given month, this variable will have null/missing \nvalue for that month; this includes beneficiaries not enrolled in Medicare for the",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

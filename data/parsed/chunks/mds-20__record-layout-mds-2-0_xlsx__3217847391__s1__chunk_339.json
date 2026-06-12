@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_339",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = Triggered, \"-\" = Determination precluded by missing data.\n574 VA13A VA13A_FEED_TUBE_TR (VA13A) Feeding Tubes Triggered CHAR 1 RAP summary: feeding tubes - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n575 VA13B VA13B_FEED_TUBE_PC (VA13B) Feeding Tubes Care Planning Decision CHAR 1 RAP summary: feeding tubes - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n576 VA14A VA14A_DEHYDRAT_TR (VA14A)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

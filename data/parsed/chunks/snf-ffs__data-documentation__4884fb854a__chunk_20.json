@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_20",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "| Claim Procedure Code VII (FFS) | \n\n | 119 | PRCDR_DT7 | Claim Procedure Code VII Date (FFS) | \n\n | 120 | ICD_PRCDR_CD8 | Claim Procedure Code VIII (FFS) | \n\n | 121 | PRCDR_DT8 | Claim Procedure Code VIII Date (FFS) | \n\n | 122 | ICD_PRCDR_CD9 | Claim Procedure Code IX (FFS) | \n\n | 123 | PRCDR_DT9 | Claim Procedure Code IX Date (FFS) | \n\n | 124 | ICD_PRCDR_CD10 | Claim Procedure Code X (FFS) | \n\n | 125 | PRCDR_DT10 | Claim Procedure Code X Date (FFS) | \n\n | 126 | ICD_PRCDR_CD11 | Claim",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

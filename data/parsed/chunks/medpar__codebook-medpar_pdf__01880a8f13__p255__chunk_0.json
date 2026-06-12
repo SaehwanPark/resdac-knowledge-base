@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p255__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 255,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n239 \nUNCOMPD_CARE_PYMT_AMT \nLABEL: \nUncompensated Care Payment Amount \nDESCRIPTION: The field represents the uncompensated care amount (rounded to whole dollars) of the payment for \ndisproportionate share hospitals (DSH) hospitals. \nSHORT NAME: UNCOMPD_CARE_PYMT_AMT \nLONG NAME: UNCOMPD_CARE_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nUncompensated care payments are",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

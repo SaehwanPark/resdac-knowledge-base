@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_886",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "0. No\n1. Yes \n9. No response CHAR 1 x\nD0150C2_FALL_ASLP_FREQ_CD Mood: Trouble falling or staying asleep: Freq Indicates the frequency, over the last 2 weeks, the patient has had trouble falling or staying asleep, or sleeping too much. 0. Never or 1 day \n1. 2-6 days (several days) \n2. 7-11 days (half or more of the days) \n3. 12-14 days (nearly every day) CHAR 1 x\nD0150D1_FEEL_TRD_CD Mood: Feeling tired or having little energy: Pres Indicates whether, over the last 2 weeks, the patient has been",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

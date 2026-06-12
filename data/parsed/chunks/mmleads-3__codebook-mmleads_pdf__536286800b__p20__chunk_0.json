@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n9 \nMDCD_BEHAVIORAL_COV_MOS \nLABEL: \nMedicaid Managed Care Mental Health or Substance Abuse Coverage Months \nDESCRIPTION: This variable is the number of months during the year that the beneficiary was enrolled in a Medicaid \nmanaged care mental health or substance abuse managed care plan. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS DE file (derived) \nVALUES: \n0–12 or null/missing (if no Medicaid enrollment) \nCOMMENT: \nCCW",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

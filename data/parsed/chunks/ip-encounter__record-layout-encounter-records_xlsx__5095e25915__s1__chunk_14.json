@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 1,
+  "text": "Admission (POA) Indicator Code Char 1 82\nCLM_POA_IND_SW21 Claim Diagnosis Code 21 Diagnosis Present on Admission (POA) Indicator Code Char 1 83\nCLM_POA_IND_SW22 Claim Diagnosis Code 22 Diagnosis Present on Admission (POA) Indicator Code Char 1 84\nCLM_POA_IND_SW23 Claim Diagnosis Code 23 Diagnosis Present on Admission (POA) Indicator Code Char 1 85\nCLM_POA_IND_SW24 Claim Diagnosis Code 24 Diagnosis Present on Admission (POA) Indicator Code Char 1 86\nCLM_POA_IND_SW25 Claim Diagnosis Code 25",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

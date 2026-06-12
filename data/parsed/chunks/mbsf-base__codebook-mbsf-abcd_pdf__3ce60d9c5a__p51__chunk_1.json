@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p51__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 51,
+  "text": "changed plans during the year, the value indicates the final, reconciled \ncontract number. For 2006–2012, this variable was always encrypted to comply with CMS privacy \nrules. \nThere are 12 monthly variables — where the 01 through 12 at the end of the variable name \ncorrespond with the month (e.g., 01 is January and 12 is December). \nYou need to know both the Part D contract number and plan benefit package (PTD_PBP_ID_XX) to \nidentify the specific plan in which a beneficiary was enrolled. \n^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

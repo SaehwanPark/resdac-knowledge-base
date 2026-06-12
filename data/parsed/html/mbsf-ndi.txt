@@ -1,0 +1,7 @@
+The Master Beneficiary Summary File (MBSF) National Death Index (NDI) segment includes cause of death information from death certificates provided through linkage with the NDI.
+What does this file include? (variable highlights)
+- NDI date of death
+- ICD-10 code for cause of death
+- Underlying conditions for cause of death
+- CDC category code for cause of death
+This file is a segment that can be requested in addition to the Master Beneficiary Summary File (MBSF) base file.

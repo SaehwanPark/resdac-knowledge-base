@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Screened Supplemental HRSN Financial Strain Overall Indicator CHAR 1\nSR_SPLMTL_MH_1_CD Supplemental HRSN Mental Health 1: Little interest or pleasure in things CHAR 1\nSR_SPLMTL_MH_2_CD Supplemental HRSN Mental Health 2: Feeling down, depressed, or hopeless CHAR 1\nSR_SPLMTL_MH_1_2_SUM Supplemental HRSN Mental Health Sum of SR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD CHAR 1\nSR_SPLMTL_MH_3_CD Splmtl HRSN Mntl Hlth 3: Feel tense, restless, anxious, sleepless, troubled CHAR 1\nSR_SPLMTL_MH_OVRL_SCRNG_IND",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

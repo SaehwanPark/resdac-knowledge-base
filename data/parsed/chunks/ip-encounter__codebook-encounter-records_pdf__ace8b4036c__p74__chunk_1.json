@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p74__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 74,
+  "text": "LENGTH: \n8 \nSOURCE: \nCMS Encounter Data System (EDS) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n— \nCOMMENT: \nThe CLM_RCPT_DT is derived from the claim control number created by the CMS Encounter Data \nSystem, and typically equals to or less than the EDPS_CREATN_DT. \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

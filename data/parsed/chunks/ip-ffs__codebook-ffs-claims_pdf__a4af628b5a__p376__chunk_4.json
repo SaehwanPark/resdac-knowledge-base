@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p376__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 376,
+  "text": "indicator N, or no HCPCS code and certain \nrevenue center codes, or HCPCS codes \nQ0082 (activity therapy), G0129 \n(occupational therapy) or G0172 (partial \nhospitalization training) \nCOMMENT: \nPrior to 10/2005, this variable contained the valid values for both the payment indicator and status \nindicator. Effective 10/2005, only the payment indicator codes remain in this table and the status \nindicator is housed in a new field named: REV_CNTR_STUS_IND_CD (with the corresponding values in \nthe",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

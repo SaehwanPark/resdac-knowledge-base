@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_530",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "whether, at the time of discharge, the patient was able to recall the word bed from the previous repetition of words question. 2 = Yes, no cue required \n1 = Yes, after cueing (\"a piece of furniture\") \n0 = No - could not recall \n- = Not Assessed/No Information \n^ = Blank\n467 BIMS_SCRE_DSCHRG_CD BIMS_SCRE_DSCHRG_CD BIMS - Summary Score (Dsch) CHAR 2 This column is the patients BIMS summary score at the time of discharge. 00 = Minimum value \n15 = Maximum value \n99 = Patient was unable to complete",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

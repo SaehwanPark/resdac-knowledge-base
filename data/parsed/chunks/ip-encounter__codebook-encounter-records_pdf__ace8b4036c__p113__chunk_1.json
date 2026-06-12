@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p113__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 113,
+  "text": "(FDA) to an \ninvestigational device (IDE) after the manufacturer has approval to conduct a clinical trial. \nThe IDEs has a revenue center code “0624.” \nSHORT NAME: REV_CNTR_IDE_NDC_UPC_NUM \nLONG NAME: REV_CNTR_IDE_NDC_UPC_NUM \nTYPE: \nCHAR \nLENGTH: \n24 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP revenue \nSNF revenue \nHH revenue \nOP revenue \nVALUES: \n— \nCOMMENT: \nThis field could contain either of these 3 fields (there would never be an instance where more than \none would come",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p187__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 187,
+  "text": "Occurrence) ― January–December (01–12) \nDESCRIPTION: Monthly values for the ninth of up to 16 managed care plan identification numbers under which the \neligible beneficiary is enrolled. There are separate variables for each of the 12 months during the year. \nThe last two digits of this variable indicate the month. \nStates may use their own identifier or the national health plan identifier. \nSHORT NAME: \nMC_PLAN_ID_09_01 \nMC_PLAN_ID_09_02 \nMC_PLAN_ID_09_03 \nMC_PLAN_ID_09_04 \nMC_PLAN_ID_09_05",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

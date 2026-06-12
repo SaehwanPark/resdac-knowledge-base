@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_688",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "or clean-up assistance\n 06=Independent\n 07=Resident refused\n 09=Not applicable\n 88=Not attempted due to medical condition or safety concerns\n ^=Blank (skip pattern) effective 10/01/2018\n741 GG0170O1_12_STP_STRT_CD GG0170O1_12_STP_STRT_CD GG0170O1 12 Step Start Indicator CHAR 2 Indicates the resident's ability to go up and down 12 steps with or without a rail at the start of the SNF PPS Part A stay. -=Not assessed/no information\n 01=Dependent\n 02=Substantial/maximal assistance",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

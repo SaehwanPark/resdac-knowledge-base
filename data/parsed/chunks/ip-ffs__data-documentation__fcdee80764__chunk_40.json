@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_40",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| Claim Treatment Authorization Number | \n\n | 210 | CLM_PRCR_RTRN_CD | Claim Pricer Return Code | \n\n | 211 | CLM_PRCR_VRSN_CD | Claim Pricer Version Code | \n\n | 212 | CLM_SRVC_FAC_ZIP_CD | Claim service facility ZIP code (where service was provided) | \n\n | 213 | CLM_IP_LOW_VOL_PMT_AMT | Claim Inpatient Low Volume Payment Amount | \n\n | 214 | CLM_CARE_IMPRVMT_MODEL_CD1 | Claim Care Improvement Model 1 Code (bundled payment) | \n\n | 215 | CLM_CARE_IMPRVMT_MODEL_CD2 | Claim Care Improvement Model 2",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

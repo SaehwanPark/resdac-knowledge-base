@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_325",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "prior to admission/entry or reentry. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine\n^=Blank(skip pattern)\n362 J1700B_FALL_31_180_DAY_CD J1700B_FALL_31_180_DAY_CD J1700B Fall History on Admission: Fall 31-180 Day Code CHAR 1 The data in this column indicates whether the resident had a fall at any time in the last two to six months prior to admission/entry or reentry. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine\n^=Blank(skip pattern)\n363 J1700C_FRCTR_SIX_MO_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

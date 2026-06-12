@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_127",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "solely for billing the Medicare Part A stay under the SNF PPS. The codes reflect the 3-character RUG-III group into which the patient is classified, and a 2-character assessment indicator. See the Swing Bed HIPPS Code spreadsheet in Code Reference Sets.xls\n168 R2B R2B_COMPLETE_DT 45b(R2b)Signature Completion Date DATE 8 The date RN Assessment Coordinator signed the assessment as complete.\n1In 2025, this field was renamed to sex to comply with Executive Order 14168.",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_323",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "T2B T2B_TIME_WALK (T2B) Time Walked CHAR 1 Multistate supplement: walking when most self sufficient - time walked without sitting down. 0 = 1-2 minutes, 1 = 3-4 minutes, 2 = 5\"-\"0 minutes, 3 = 11\"-\"5 minutes, 4 = 16-30 minutes, 5 = 31+ minutes.\n546 T2C T2C_SELF_WALK (T2C) Self Performance in Walking CHAR 1 Multistate supplement: walking when most self sufficient - self-performance in walking. 0 = Independent - No help or oversight, 1 = Supervision - Oversight, encouragement or cueing provided,",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

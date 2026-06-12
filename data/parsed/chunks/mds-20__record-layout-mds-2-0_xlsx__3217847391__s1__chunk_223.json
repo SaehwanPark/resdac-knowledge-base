@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_223",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "in last 90 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n351 J1L J1L_SHORT_BREATH (J1L) Shortness of Breath CHAR 1 Health conditions: problem conditions - other - shortness of breath in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n352 J1M J1M_SYNCOPE (J1M) Syncope/Fainting CHAR 1 Health conditions: problem conditions - other - syncope (fainting) in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n353 J1N J1N_UNSTEADY_GAIT (J1N) Unsteady Gait CHAR 1 Health conditions: problem conditions - other - unsteady",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

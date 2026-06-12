@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_445",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "and/or scooter (Adm) - The data in this column indicates whether or not the patient used a wheelchair and/or scooter at the time of admission. CHAR 1 The data in this column indicates whether or not the patient used a wheelchair and/or scooter at the time of admission. 0 = No\n1 = Yes\n372 GG0170Q3_USE_WLCHR_END_CD GG0170Q3_USE_WLCHR_END_CD GG0170Q3 Does patient use wheelchair and/or scooter (Dschg) - The data in this column indicates whether or not the patient used a wheelchair and/or scooter at",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

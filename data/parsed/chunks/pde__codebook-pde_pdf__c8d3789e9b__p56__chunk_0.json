@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p56__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 56,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n51 \nQTY_PRSCRBD_NUM \nLABEL: \nQuantity Prescribed — for Schedule II Drugs \nDESCRIPTION: This field indicates the number of units, grams, milliliters, or other quantity prescribed if the current \ndrug event is for a Schedule II drug. \nSHORT NAME: QTY_PRSCRBD_NUM \nLONG NAME: QTY_PRSCRBD_NUM \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nThe values",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

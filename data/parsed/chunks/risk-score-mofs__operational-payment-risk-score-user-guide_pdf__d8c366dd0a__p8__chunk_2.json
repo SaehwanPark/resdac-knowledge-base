@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p8__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 8,
+  "text": "payment score (i.e., a \nresolved risk score). The file also includes all possible Part C and Part D payment risk scores for reference purposes \n• \nMOFs — Each MOF is a beneficiary-level file that contains the model-specific “raw” risk scores. MOFs provide \nbeneficiary specific information including demographic characteristics and the set of diseases (HCCs) included in \nthat particular model. Payment years may use a blend of model risk scores, and therefore uses different MOFs as \ninputs for CMS",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

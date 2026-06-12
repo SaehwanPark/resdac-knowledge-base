@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_483",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "assessment conducted at or since the most recent SOC/ROC assessment indicates the patient has no pain CHAR 2 x x x\nM2401_INTRVTN_SMRY_PRSULC_PRVN M2401 Intervention Synopsis - Prevent Pressure Ulcers Intervention(s) to prevent pressure ulcers 00 = No\n01 = Yes\nNA = Every standardized, validated pressure ulcer risk assessment conducted at or since the most recent SOC/ROC assessment indicates the patient is not at risk of developing pressure ulcers CHAR 2 x x x\nM2401_INTRVTN_SMRY_PRSULC_WET M2401",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

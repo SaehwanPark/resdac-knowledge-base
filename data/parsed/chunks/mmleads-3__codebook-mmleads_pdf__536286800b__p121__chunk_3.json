@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p121__chunk_3",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 121,
+  "text": "55 = Wisconsin \n56 = Wyoming \n60 = American Samoa \n66 = Guam \n68 = Florida \n69 = Commonwealth of the Northern Mariana Islands \n72 = Puerto Rico \n78 = U.S. Virgin Islands \n99 = Other/unknown \nNull/missing = source value is missing or unknown\nCOMMENT: \nCCW derives this variable from the MBSF monthly state/county FIPS code (source variables called \nSTATE_CNTY_FIPS_CD_01–12). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

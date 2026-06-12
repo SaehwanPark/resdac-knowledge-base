@@ -1,0 +1,438 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Provider Analysis and Review (MEDPAR) File
+Version — November 2023
+Short SAS name	Long SAS name	Label	Type	Length	1999– 2000 1	2001 1	2002– 2004 1	2005 1	2006 1	2007– 2008 1	2009 1	2010 1	2011 1	2012 1	2013 1	2014 1	2015 1	2016– 2017 1	2018 1	2019 1	2020 1	2021-2022 1
+BENE_ID	BENE_ID	CCW Encrypted Beneficiary ID Number	CHAR	15	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+MEDPARID	MEDPAR_ID	MEDPAR ID Number	CHAR	15	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+MEDPAR_YR_NUM	MEDPAR_YR_NUM	Year of MedPAR Record	Char	4	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	Char	2	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X
+BIC	BENE_IDENT_CD	BIC reported on first claim included in stay	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+EQ_BIC	EQTBL_BIC_CD	Equated BIC	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+AGE_CNT	BENE_AGE_CNT	Age as of Date of Admission	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SEX	BENE_SEX_CD	Sex of Beneficiary	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+RACE	BENE_RACE_CD	Race of Beneficiary	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+MS_CD	BENE_MDCR_STUS_CD	Reason for entitlement to Medicare benefits as of CLM_THRU_DT	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+STATE_CD	BENE_RSDNC_SSA_STATE_CD	SSA standard state code of the beneficiarys residence	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CNTY_CD	BENE_RSDNC_SSA_CNTY_CD	SSA standard county code of the beneficiarys residence	Char	3	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+BENE_ZIP	BENE_MLG_CNTCT_ZIP_CD	Zip code of the beneficiarys residence	Char	5	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DSCHRGCD	BENE_DSCHRG_STUS_CD	Code identifying status of patient as of CLM_THRU_DT	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+FICARR	FICARR_IDENT_NUM	Fiscal Intermediary (FI) ID Number	Char	5	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+WRNGCD	WRNG_IND_CD	Warning indicators code specifying detailed billing info	Char	18	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+GHOPDCD	GHO_PD_CD	Code indicating whether Group Health Organization (GHO) has paid provider for claim(s)	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PPS_IND	PPS_IND_CD	Prospective payment system (PPS) Indicator Code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ORGNPINM	ORG_NPI_NUM	Organization NPI Number	Char	10	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRVDRNUM	PRVDR_NUM	Provider Number	Char	10	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SPCLUNIT	PRVDR_NUM_SPCL_UNIT_CD	Provider Number Special Unit Code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRVDR_BASE_FAC_CCN_NUM	PRVDR_BASE_FAC_CCN_NUM	Provider Base Facility CMS Certification Number (CCN)	Char	6	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+PRVDR_FULL_CCN_NUM	PRVDR_FULL_CCN_NUM	Provider Full CMS Certification Number (CCN)	Char	13	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+SSLSSNF	SS_LS_SNF_IND_CD	Short Stay/Long Stay/SNF Provider Indicator Code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ACTV_XREF_IND	ACTV_XREF_IND	MEDPAR Active Cross-Reference Claim Indicator	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+SLCT_RSN_CD	SLCT_RSN_CD	Specifies whether this record is a case or control record	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+FACLMCNT	STAY_FINL_ACTN_CLM_CNT	Number of claims (final action) included in stay	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ACRTNDT	LTST_CLM_ACRTN_DT	Latest Claim Accretion Date	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+EXHST_DT	BENE_MDCR_BNFT_EXHST_DT	Beneficiary Medicare Benefit Exhausted Date	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+QLFYFROM	SNF_QUALN_FROM_DT	Beginning date of beneficiarys qualifying SNF stay	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+QLFYTHRU	SNF_QUALN_THRU_DT	Ending date of beneficiarys qualifying SNF stay	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SRC_ADMS	SRC_IP_ADMSN_CD	Source of admission to an Inpatient facility - for newborn admit is type of delivery code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+TYPE_ADM	IP_ADMSN_TYPE_CD	Inpatient admission type code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ADMSNDAY	ADMSN_DAY_CD	Code indicating day of week beneficiary was admitted to facility	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ADMSNDT	ADMSN_DT	Date beneficiary admitted for Inpatient care or date care started	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DSCHRGDT	DSCHRG_DT	Date beneficiary was discharged or died	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DSTNTNCD	DSCHRG_DSTNTN_CD	Destination upon discharge from facility code	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CVRLVLDT	CVRD_LVL_CARE_THRU_DT	Date covered level of care ended in a SNF	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DEATHDT	BENE_DEATH_DT	Date beneficiary died	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DEATHCD	BENE_DEATH_DT_VRFY_CD	Death Date Verification Code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DEATHDAY	ADMSN_DEATH_DAY_CNT	Days from date admitted to facility to date of death	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SSICD	INTRNL_USE_SSI_IND_CD	MEDPAR Internal Use SSI Indicator Code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SSIDAY	INTRNL_USE_SSI_DAY_CNT	MEDPAR Internal Use SSI Day Count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+INTRNL_USE_SSI_DATA	INTRNL_USE_SSI_DATA	Internal Use SSI Data	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+IPSBCD	INTRNL_USE_IPSB_CD	For internal Use Only. IPSB Code	Char	3	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+FILDTCD	INTRNL_USE_FIL_DT_CD	For internal use only. Fiscal year/calendar year segments.	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SMPLSIZE	INTRNL_USE_SMPL_SIZE_CD	For internal use. MEDPAR sample size.	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+Stay-Level Use and Payment Summaries
+LOSCNT	LOS_DAY_CNT	Days of beneficiarys stay in a hospital/SNF	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OUTLRDAY	OUTLIER_DAY_CNT	Days paid as outliers (either day or cost) under PPS beyond DRG threshld	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+UTIL_DAY	UTLZTN_DAY_CNT	Covered days of care chargeable to Medicare utilization for stay	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+COIN_DAY	TOT_COINSRNC_DAY_CNT	MEDPAR Beneficiary Total Coinsurance Day Count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+LRD_USE	BENE_LRD_USE_CNT	Lifetime reserve days (LRD) used by beneficiary for stay	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+COIN_AMT	BENE_PTA_COINSRNC_AMT	Beneficiarys liability for part A coinsurance for stay ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DED_AMT	BENE_IP_DDCTBL_AMT	Beneficiarys liability for deductible for stay ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+BLDDEDAM	BENE_BLOOD_DDCTBL_AMT	Beneficiarys liability for blood deductible for stay ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRPAY_CD	BENE_PRMRY_PYR_CD	Primary payer responsibility code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRPAYAMT	BENE_PRMRY_PYR_AMT	Primary payer paid amount	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DRG_CD	DRG_CD	Diagnosis Related Group Code (or MS-DRG Code)	Char	4	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OUTLR_CD	DRG_OUTLIER_STAY_CD	DRG Cost or Day Outlier code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OUTLRAMT	DRG_OUTLIER_PMT_AMT	DRG Outlier Approved Payment Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DRGPRICE	DRG_PRICE_AMT	DRG Price Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DRG_GRPR_VRSN_CD	DRG_GRPR_VRSN_CD	Medicare-Severity Diagnosis Related Group (MS-DRG) Grouper Version	Char	8	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+CLM_IP_INITL_MS_DRG_CD	CLM_IP_INITL_MS_DRG_CD	Claim Inpatient Initial MS-DRG Code	Char	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X
+DISP_SHR	IP_DSPRPRTNT_SHR_AMT	Inpatient Disproportionate Share (DSH) Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+IME_AMT	IME_AMT	Indirect Medical Education (IME) Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PASSTHRU	PASS_THRU_AMT	Pass Thru Per Diem Amount for stay ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PPS_CPTL	TOT_PPS_CPTL_AMT	Total PPS capital Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+IP_LOW_VOL_PYMT_AMT	IP_LOW_VOL_PYMT_AMT	Inpatient Low Volume Payment Amount	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+TOTCHRG	TOT_CHRG_AMT	Total Charge Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CVRCHRG	TOT_CVR_CHRG_AMT	Total Covered Charge Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PMT_AMT	MDCR_PMT_AMT	Total Medicare Payment Amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PPS_PRCR_VRSN_CD	PPS_PRCR_VRSN_CD	Prospective Payment System (PPS) Pricer Version	Char	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+Service Use and Payment Summaries from Revenue Center Codes
+ACMDTNS	ACMDTNS_TOT_CHRG_AMT	Total charge for all accommodations ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DPRTMNTL	DPRTMNTL_TOT_CHRG_AMT	Total charge for all ancillary depts related to beneficiarys stay ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRVTDAY	PRVT_ROOM_DAY_CNT	Private room day count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SPRVTDAY	SEMIPRVT_ROOM_DAY_CNT	Semi-private room day count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+WARDDAY	WARD_DAY_CNT	Ward day count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ICARECNT	INTNSV_CARE_DAY_CNT	Intensive care day count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CRNRYDAY	CRNRY_CARE_DAY_CNT	Coronary care day count	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRVTAMT	PRVT_ROOM_CHRG_AMT	Private room charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SPRVTAMT	SEMIPRVT_ROOM_CHRG_AMT	Semi-private room charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+WARDAMT	WARD_CHRG_AMT	Ward charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ICAREAMT	INTNSV_CARE_CHRG_AMT	Intensive care charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CRNRYAMT	CRNRY_CARE_CHRG_AMT	Coronary care charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OTHRAMT	OTHR_SRVC_CHRG_AMT	Other services charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PHRMCAMT	PHRMCY_CHRG_AMT	Pharmacy charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SUPLYAMT	MDCL_SUPLY_CHRG_AMT	Medical/surgical supplies charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DME_AMT	DME_CHRG_AMT	Durable Medical Equipment (DME) charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+UDME_AMT	USED_DME_CHRG_AMT	Used Durable Medical Equipment (DME) charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PHYTHAMT	PHYS_THRPY_CHRG_AMT	Physical therapy charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OCPTLAMT	OCPTNL_THRPY_CHRG_AMT	Occupational therapy charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SPCH_AMT	SPCH_PTHLGY_CHRG_AMT	Speech pathology charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+INHLTAMT	INHLTN_THRPY_CHRG_AMT	Inhalation therapy charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+BLOODAMT	BLOOD_CHRG_AMT	Blood charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+BLDADMIN	BLOOD_ADMIN_CHRG_AMT	Blood storage and processing charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+BLDFRNSH	BLOOD_PT_FRNSH_QTY	Blood pints furnished quantity	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OROOMAMT	OPRTG_ROOM_CHRG_AMT	Operating room charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+LTHTRPSY	LTHTRPSY_CHRG_AMT	Lithotripsy charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CRDLGY	CRDLGY_CHRG_AMT	Cardiology charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ANSTHSA	ANSTHSA_CHRG_AMT	Anesthesia charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+LAB_AMT	LAB_CHRG_AMT	Laboratory charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+RDLGYAMT	RDLGY_CHRG_AMT	Radiology charge amount (excluding MRI) ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+MRI_AMT	MRI_CHRG_AMT	Magnetic resonance imaging (MRI) charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OPSRVC	OP_SRVC_CHRG_AMT	Outpatient service charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ER_AMT	ER_CHRG_AMT	Emergency room (ER) charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+AMBLNC	AMBLNC_CHRG_AMT	Ambulance charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PROFFEES	PROFNL_FEES_CHRG_AMT	Professional fees charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ORGNAMT	ORGN_ACQSTN_CHRG_AMT	Organ acquisition or other donor bank charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRDSETG	ESRD_REV_SETG_CHRG_AMT	End Stage Renal Disease (ESRD) charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CLNC_AMT	CLNC_VISIT_CHRG_AMT	Clinic visit charge amount ($)	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+HOSP_AT_HOME_CHRG_AMT	HOSP_AT_HOME_CHRG_AMT	Hospital at Home Room and Board (R&B) Charge Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+HOSP_AT_HOME_FROM_DT	HOSP_AT_HOME_FROM_DT	Hospital at Home Care From Date	DATE	8	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+HOSP_AT_HOME_THRU_DT	HOSP_AT_HOME_THRU_DT	Hospital at Home Care Through Date	DATE	8	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+Use/Type Indicators
+ICUINDCD	ICU_IND_CD	Intensive Care Unit (ICU) indicator code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CRNRY_CD	CRNRY_CARE_IND_CD	Coronary care unit (CCU) indicator code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PHRMCYCD	PHRMCY_IND_CD	Pharmacy indicatorcode	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+TRNSPLNT	TRNSPLNT_IND_CD	Organ transplant indicator code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ONCLGYSW	RDLGY_ONCLGY_IND_SW	Oncology indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSTCSW	RDLGY_DGNSTC_IND_SW	Diagnostic radiology indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+THRPTCSW	RDLGY_THRPTC_IND_SW	Therapeutic Radiology indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+NUCLR_SW	RDLGY_NUCLR_MDCN_IND_SW	Radiology nuclear medicine indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+CTSCANSW	RDLGY_CT_SCAN_IND_SW	Radiology computed tomographic (CT) scan indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+IMGNG_SW	RDLGY_OTHR_IMGNG_IND_SW	Radiology other imaging indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+OPSRVCCD	OP_SRVC_IND_CD	Outpatient services/ambulatory surgical care indicator code	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ORGNCD	ORGN_ACQSTN_IND_CD	Organ acquisition type code	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRD_CD	ESRD_COND_CD	End Stage Renal Disease (ESRD) condition indicator code	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRDSTG1	ESRD_SETG_IND_1_CD	Dialysis service type code 1	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRDSTG2	ESRD_SETG_IND_2_CD	Dialysis service type code 2	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRDSTG3	ESRD_SETG_IND_3_CD	Dialysis service type code 3	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRDSTG4	ESRD_SETG_IND_4_CD	Dialysis service type code 4	Char	2	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ESRDSTG5	ESRD_SETG_IND_5_CD	Dialysis service type code 5	Char	2	X	-	X	-	-	X	X	-	-	-	-	-	-	-	X	X	-	-
+RC_NDC_1_CD	RC_NDC_1_CD	Revenue Center National Drug Code (NDC) 1	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_2_CD	RC_NDC_2_CD	Revenue Center National Drug Code (NDC) 2	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_3_CD	RC_NDC_3_CD	Revenue Center National Drug Code (NDC) 3	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_4_CD	RC_NDC_4_CD	Revenue Center National Drug Code (NDC) 4	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_5_CD	RC_NDC_5_CD	Revenue Center National Drug Code (NDC) 5	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_6_CD	RC_NDC_6_CD	Revenue Center National Drug Code (NDC) 6	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_7_CD	RC_NDC_7_CD	Revenue Center National Drug Code (NDC) 7	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_8_CD	RC_NDC_8_CD	Revenue Center National Drug Code (NDC) 8	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_9_CD	RC_NDC_9_CD	Revenue Center National Drug Code (NDC) 9	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+RC_NDC_10_CD	RC_NDC_10_CD	Revenue Center National Drug Code (NDC) 10	Char	11	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+NO_PSTV_TEST_SW	NO_PSTV_TEST_SW	No Positive Test Switch	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+EXPNDD_ACS_SW	EXPNDD_ACS_SW	Expanded Access Switch	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+CLNCL_TRIL_SW	CLNCL_TRIL_SW	Other Clinical Trial Switch	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+EMER_USE_SW	EMER_USE_SW	Emergency Use Switch	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X
+Diagnosis and Procedure Codes
+AD_DGNS	ADMTG_DGNS_CD	Initial diagnosis at time of admission	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+ADMTG_DGNS_VRSN_CD	ADMTG_DGNS_VRSN_CD	Admitting Diagnosis Version Code (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCNT	DGNS_CD_CNT	Count of diagnosis codes	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD	DGNS_VRSN_CD	Diagnosis Version Code (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_VRSN_CD_1	DGNS_VRSN_CD_1	Diagnosis Version Code 1 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_2	DGNS_VRSN_CD_2	Diagnosis Version Code 2 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_3	DGNS_VRSN_CD_3	Diagnosis Version Code 3 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_4	DGNS_VRSN_CD_4	Diagnosis Version Code 4 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_5	DGNS_VRSN_CD_5	Diagnosis Version Code 5 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_6	DGNS_VRSN_CD_6	Diagnosis Version Code 6 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_7	DGNS_VRSN_CD_7	Diagnosis Version Code 7 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_8	DGNS_VRSN_CD_8	Diagnosis Version Code 8 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_9	DGNS_VRSN_CD_9	Diagnosis Version Code 9 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_10	DGNS_VRSN_CD_10	Diagnosis Version Code 10 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_11	DGNS_VRSN_CD_11	Diagnosis Version Code 11 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_12	DGNS_VRSN_CD_12	Diagnosis Version Code 12 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_13	DGNS_VRSN_CD_13	Diagnosis Version Code 13 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_14	DGNS_VRSN_CD_14	Diagnosis Version Code 14 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_15	DGNS_VRSN_CD_15	Diagnosis Version Code 15 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_16	DGNS_VRSN_CD_16	Diagnosis Version Code 16 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_17	DGNS_VRSN_CD_17	Diagnosis Version Code 17 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_18	DGNS_VRSN_CD_18	Diagnosis Version Code 18 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_19	DGNS_VRSN_CD_19	Diagnosis Version Code 19 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_20	DGNS_VRSN_CD_20	Diagnosis Version Code 20 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_21	DGNS_VRSN_CD_21	Diagnosis Version Code 21 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_22	DGNS_VRSN_CD_22	Diagnosis Version Code 22 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_23	DGNS_VRSN_CD_23	Diagnosis Version Code 23 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_24	DGNS_VRSN_CD_24	Diagnosis Version Code 24 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_VRSN_CD_25	DGNS_VRSN_CD_25	Diagnosis Version Code 25 (ICD-9 or ICD-10)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNSCD1	DGNS_1_CD	Principal diagnosis code	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD2	DGNS_2_CD	Diagnosis code II	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD3	DGNS_3_CD	Diagnosis code III	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD4	DGNS_4_CD	Diagnosis code IV	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD5	DGNS_5_CD	Diagnosis code V	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD6	DGNS_6_CD	Diagnosis code VI	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD7	DGNS_7_CD	Diagnosis code VII	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD8	DGNS_8_CD	Diagnosis code VIII	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD9	DGNS_9_CD	Diagnosis code IX	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD10	DGNS_10_CD	ICD-9-CM Diagnosis code 10	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD11	DGNS_11_CD	ICD-9-CM Diagnosis code 11	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD12	DGNS_12_CD	ICD-9-CM Diagnosis code 12	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD13	DGNS_13_CD	ICD-9-CM Diagnosis code 13	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD14	DGNS_14_CD	ICD-9-CM Diagnosis code 14	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD15	DGNS_15_CD	ICD-9-CM Diagnosis code 15	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD16	DGNS_16_CD	ICD-9-CM Diagnosis code 16	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD17	DGNS_17_CD	ICD-9-CM Diagnosis code 17	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD18	DGNS_18_CD	ICD-9-CM Diagnosis code 18	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD19	DGNS_19_CD	ICD-9-CM Diagnosis code 19	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD20	DGNS_20_CD	ICD-9-CM Diagnosis code 20	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD21	DGNS_21_CD	ICD-9-CM Diagnosis code 21	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD22	DGNS_22_CD	ICD-9-CM Diagnosis code 22	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD23	DGNS_23_CD	ICD-9-CM Diagnosis code 23	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD24	DGNS_24_CD	ICD-9-CM Diagnosis code 24	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNSCD25	DGNS_25_CD	ICD-9-CM Diagnosis code 25	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNS_POA	DGNS_POA_CD	Diagnosis Code POA Array	Char	10	-	-	-	-	-	X	-	-	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_CD_CNT	POA_DGNS_CD_CNT	Count of Present on Admission (POA) Diagnosis Codes	Num	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_1_IND_CD	POA_DGNS_1_IND_CD	Diagnosis 1  Present on Admission (POA) Indicator Code	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_2_IND_CD	POA_DGNS_2_IND_CD	Diagnosis Present on Admission Indicator 2	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_3_IND_CD	POA_DGNS_3_IND_CD	Diagnosis Present on Admission Indicator 3	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_4_IND_CD	POA_DGNS_4_IND_CD	Diagnosis Present on Admission Indicator 4	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_5_IND_CD	POA_DGNS_5_IND_CD	Diagnosis Present on Admission Indicator 5	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_6_IND_CD	POA_DGNS_6_IND_CD	Diagnosis Present on Admission Indicator 6	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_7_IND_CD	POA_DGNS_7_IND_CD	Diagnosis Present on Admission Indicator 7	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_8_IND_CD	POA_DGNS_8_IND_CD	Diagnosis Present on Admission Indicator 8	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_9_IND_CD	POA_DGNS_9_IND_CD	Diagnosis Present on Admission Indicator 9	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_10_IND_CD	POA_DGNS_10_IND_CD	Diagnosis Present on Admission Indicator 10	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_11_IND_CD	POA_DGNS_11_IND_CD	Diagnosis Present on Admission Indicator 11	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_12_IND_CD	POA_DGNS_12_IND_CD	Diagnosis Present on Admission Indicator 12	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_13_IND_CD	POA_DGNS_13_IND_CD	Diagnosis Present on Admission Indicator 13	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_14_IND_CD	POA_DGNS_14_IND_CD	Diagnosis Present on Admission Indicator 14	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_15_IND_CD	POA_DGNS_15_IND_CD	Diagnosis Present on Admission Indicator 15	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_16_IND_CD	POA_DGNS_16_IND_CD	Diagnosis Present on Admission Indicator 16	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_17_IND_CD	POA_DGNS_17_IND_CD	Diagnosis Present on Admission Indicator 17	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_18_IND_CD	POA_DGNS_18_IND_CD	Diagnosis Present on Admission Indicator 18	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_19_IND_CD	POA_DGNS_19_IND_CD	Diagnosis Present on Admission Indicator 19	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_20_IND_CD	POA_DGNS_20_IND_CD	Diagnosis Present on Admission Indicator 20	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_21_IND_CD	POA_DGNS_21_IND_CD	Diagnosis Present on Admission Indicator 21	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_22_IND_CD	POA_DGNS_22_IND_CD	Diagnosis Present on Admission Indicator 22	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_23_IND_CD	POA_DGNS_23_IND_CD	Diagnosis Present on Admission Indicator 23	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_24_IND_CD	POA_DGNS_24_IND_CD	Diagnosis Present on Admission Indicator 24	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_25_IND_CD	POA_DGNS_25_IND_CD	Diagnosis Present on Admission Indicator 25	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNS_E_CD_CNT	DGNS_E_CD_CNT	Count of Diagnosis E Codes	Num	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNS_E_VRSN_CD	DGNS_E_VRSN_CD	Diagnosis E Version Code (Earlier Version)	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_1	DGNS_E_VRSN_CD_1	Diagnosis E Version Code 1	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+DGNS_E_VRSN_CD_2	DGNS_E_VRSN_CD_2	Diagnosis E Version Code 2	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_3	DGNS_E_VRSN_CD_3	Diagnosis E Version Code 3	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_4	DGNS_E_VRSN_CD_4	Diagnosis E Version Code 4	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_5	DGNS_E_VRSN_CD_5	Diagnosis E Version Code 5	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_6	DGNS_E_VRSN_CD_6	Diagnosis E Version Code 6	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_7	DGNS_E_VRSN_CD_7	Diagnosis E Version Code 7	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_8	DGNS_E_VRSN_CD_8	Diagnosis E Version Code 8	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_9	DGNS_E_VRSN_CD_9	Diagnosis E Version Code 9	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_10	DGNS_E_VRSN_CD_10	Diagnosis E Version Code 10	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_11	DGNS_E_VRSN_CD_11	Diagnosis E Version Code 11	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_VRSN_CD_12	DGNS_E_VRSN_CD_12	Diagnosis E Version Code 12	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_1_CD	DGNS_E_1_CD	Diagnosis E Code 1	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+DGNS_E_2_CD	DGNS_E_2_CD	Diagnosis E Code 2	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_3_CD	DGNS_E_3_CD	Diagnosis E Code 3	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_4_CD	DGNS_E_4_CD	Diagnosis E Code 4	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_5_CD	DGNS_E_5_CD	Diagnosis E Code 5	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_6_CD	DGNS_E_6_CD	Diagnosis E Code 6	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_7_CD	DGNS_E_7_CD	Diagnosis E Code 7	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_8_CD	DGNS_E_8_CD	Diagnosis E Code 8	Char	7	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+DGNS_E_9_CD	DGNS_E_9_CD	Diagnosis E Code 9	Char	7	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_10_CD	DGNS_E_10_CD	Diagnosis E Code 10	Char	7	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_11_CD	DGNS_E_11_CD	Diagnosis E Code 11	Char	7	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+DGNS_E_12_CD	DGNS_E_12_CD	Diagnosis E Code 12	Char	7	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_CD_CNT	POA_DGNS_E_CD_CNT	Count of Present on Admission (POA) Diagnosis E Codes	Num	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_E_1_IND_CD	POA_DGNS_E_1_IND_CD	Diagnosis E Code Present on Admission Indicator 1	Char	1	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+POA_DGNS_E_2_IND_CD	POA_DGNS_E_2_IND_CD	Diagnosis E Code Present on Admission Indicator 2	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_3_IND_CD	POA_DGNS_E_3_IND_CD	Diagnosis E Code Present on Admission Indicator 3	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_4_IND_CD	POA_DGNS_E_4_IND_CD	Diagnosis E Code Present on Admission Indicator 4	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_5_IND_CD	POA_DGNS_E_5_IND_CD	Diagnosis E Code Present on Admission Indicator 5	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_6_IND_CD	POA_DGNS_E_6_IND_CD	Diagnosis E Code Present on Admission Indicator 6	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_7_IND_CD	POA_DGNS_E_7_IND_CD	Diagnosis E Code Present on Admission Indicator 7	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_8_IND_CD	POA_DGNS_E_8_IND_CD	Diagnosis E Code Present on Admission Indicator 8	Char	1	-	-	-	-	-	-	-	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_9_IND_CD	POA_DGNS_E_9_IND_CD	Diagnosis E Code Present on Admission Indicator 9	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_10_IND_CD	POA_DGNS_E_10_IND_CD	Diagnosis E Code Present on Admission Indicator 10	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_11_IND_CD	POA_DGNS_E_11_IND_CD	Diagnosis E Code Present on Admission Indicator 11	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+POA_DGNS_E_12_IND_CD	POA_DGNS_E_12_IND_CD	Diagnosis E Code Present on Admission Indicator 12	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+PRCDRSW	SRGCL_PRCDR_IND_SW	Surgical procedure indicator	Char	1	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCNT	SRGCL_PRCDR_CD_CNT	Surgical procedure codes included in stay	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD	SRGCL_PRCDR_VRSN_CD	Surgical Procedure Version Code (Earlier Version)	Char	1	-	-	-	-	-	-	X	X	-	-	-	-	-	-	-	-	-	-
+SRGCL_PRCDR_VRSN_CD_1	SRGCL_PRCDR_VRSN_CD_1	MEDPAR Surgical Procedure Version Code 1 (ICD-9-CM or ICD-10-PCS)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_2	SRGCL_PRCDR_VRSN_CD_2	MEDPAR Surgical Procedure Version Code 2	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_3	SRGCL_PRCDR_VRSN_CD_3	MEDPAR Surgical Procedure Version Code 3	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_4	SRGCL_PRCDR_VRSN_CD_4	MEDPAR Surgical Procedure Version Code 4	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_5	SRGCL_PRCDR_VRSN_CD_5	MEDPAR Surgical Procedure Version Code 5	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_6	SRGCL_PRCDR_VRSN_CD_6	MEDPAR Surgical Procedure Version Code 6	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_7	SRGCL_PRCDR_VRSN_CD_7	MEDPAR Surgical Procedure Version Code 7	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_8	SRGCL_PRCDR_VRSN_CD_8	MEDPAR Surgical Procedure Version Code 8	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_9	SRGCL_PRCDR_VRSN_CD_9	MEDPAR Surgical Procedure Version Code 9	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_10	SRGCL_PRCDR_VRSN_CD_10	MEDPAR Surgical Procedure Version Code 10	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_11	SRGCL_PRCDR_VRSN_CD_11	MEDPAR Surgical Procedure Version Code 11	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_12	SRGCL_PRCDR_VRSN_CD_12	MEDPAR Surgical Procedure Version Code 12	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_13	SRGCL_PRCDR_VRSN_CD_13	MEDPAR Surgical Procedure Version Code 13	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_14	SRGCL_PRCDR_VRSN_CD_14	MEDPAR Surgical Procedure Version Code 14	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_15	SRGCL_PRCDR_VRSN_CD_15	MEDPAR Surgical Procedure Version Code 15	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_16	SRGCL_PRCDR_VRSN_CD_16	MEDPAR Surgical Procedure Version Code 16	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_17	SRGCL_PRCDR_VRSN_CD_17	MEDPAR Surgical Procedure Version Code 17	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_18	SRGCL_PRCDR_VRSN_CD_18	MEDPAR Surgical Procedure Version Code 18	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_19	SRGCL_PRCDR_VRSN_CD_19	MEDPAR Surgical Procedure Version Code 19	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_20	SRGCL_PRCDR_VRSN_CD_20	MEDPAR Surgical Procedure Version Code 20	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_21	SRGCL_PRCDR_VRSN_CD_21	MEDPAR Surgical Procedure Version Code 21	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_22	SRGCL_PRCDR_VRSN_CD_22	MEDPAR Surgical Procedure Version Code 22	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_23	SRGCL_PRCDR_VRSN_CD_23	MEDPAR Surgical Procedure Version Code 23	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_24	SRGCL_PRCDR_VRSN_CD_24	MEDPAR Surgical Procedure Version Code 24	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SRGCL_PRCDR_VRSN_CD_25	SRGCL_PRCDR_VRSN_CD_25	MEDPAR Surgical Procedure Version Code 25	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+PRCDRCD1	SRGCL_PRCDR_1_CD	Principal Procedure code	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD2	SRGCL_PRCDR_2_CD	Procedure Code 2	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD3	SRGCL_PRCDR_3_CD	Procedure Code 3	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD4	SRGCL_PRCDR_4_CD	Procedure Code 4	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD5	SRGCL_PRCDR_5_CD	Procedure Code 5	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD6	SRGCL_PRCDR_6_CD	Procedure Code 6	Char	7	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD7	SRGCL_PRCDR_7_CD	Procedure Code 7	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD8	SRGCL_PRCDR_8_CD	Procedure Code 8	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD9	SRGCL_PRCDR_9_CD	Procedure Code 9	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD10	SRGCL_PRCDR_10_CD	Procedure Code 10	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD11	SRGCL_PRCDR_11_CD	Procedure Code 11	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD12	SRGCL_PRCDR_12_CD	Procedure Code 12	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD13	SRGCL_PRCDR_13_CD	Procedure Code 13	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD14	SRGCL_PRCDR_14_CD	Procedure Code 14	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD15	SRGCL_PRCDR_15_CD	Procedure Code 15	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD16	SRGCL_PRCDR_16_CD	Procedure Code 16	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD17	SRGCL_PRCDR_17_CD	Procedure Code 17	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD18	SRGCL_PRCDR_18_CD	Procedure Code 18	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD19	SRGCL_PRCDR_19_CD	Procedure Code 19	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD20	SRGCL_PRCDR_20_CD	Procedure Code 20	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD21	SRGCL_PRCDR_21_CD	Procedure Code 21	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD22	SRGCL_PRCDR_22_CD	Procedure Code 22	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD23	SRGCL_PRCDR_23_CD	Procedure Code 23	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD24	SRGCL_PRCDR_24_CD	Procedure Code 24	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRCD25	SRGCL_PRCDR_25_CD	Procedure Code 25	Char	7	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDTCNT	SRGCL_PRCDR_DT_CNT	Dates associated with surgical procedures included in stay	Num	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT1	SRGCL_PRCDR_PRFRM_1_DT	Principal Procedure Date	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT2	SRGCL_PRCDR_PRFRM_2_DT	Procedure Date 2	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT3	SRGCL_PRCDR_PRFRM_3_DT	Procedure Date 3	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT4	SRGCL_PRCDR_PRFRM_4_DT	Procedure Date 4	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT5	SRGCL_PRCDR_PRFRM_5_DT	Procedure Date 5	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT6	SRGCL_PRCDR_PRFRM_6_DT	Procedure Date 6	DATE	8	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT7	SRGCL_PRCDR_PRFRM_7_DT	Procedure Date 7	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT8	SRGCL_PRCDR_PRFRM_8_DT	Procedure Date 8	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT9	SRGCL_PRCDR_PRFRM_9_DT	Procedure Date 9	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT10	SRGCL_PRCDR_PRFRM_10_DT	Procedure Date 10	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT11	SRGCL_PRCDR_PRFRM_11_DT	Procedure Date 11	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT12	SRGCL_PRCDR_PRFRM_12_DT	Procedure Date 12	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT13	SRGCL_PRCDR_PRFRM_13_DT	Procedure Date 13	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT14	SRGCL_PRCDR_PRFRM_14_DT	Procedure Date 14	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT15	SRGCL_PRCDR_PRFRM_15_DT	Procedure Date 15	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT16	SRGCL_PRCDR_PRFRM_16_DT	Procedure Date 16	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT17	SRGCL_PRCDR_PRFRM_17_DT	Procedure Date 17	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT18	SRGCL_PRCDR_PRFRM_18_DT	Procedure Date 18	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT19	SRGCL_PRCDR_PRFRM_19_DT	Procedure Date 19	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT20	SRGCL_PRCDR_PRFRM_20_DT	Procedure Date 20	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT21	SRGCL_PRCDR_PRFRM_21_DT	Procedure Date 21	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT22	SRGCL_PRCDR_PRFRM_22_DT	Procedure Date 22	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT23	SRGCL_PRCDR_PRFRM_23_DT	Procedure Date 23	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT24	SRGCL_PRCDR_PRFRM_24_DT	Procedure Date 24	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+PRCDRDT25	SRGCL_PRCDR_PRFRM_25_DT	Procedure Date 25	DATE	8	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X	X	X
+Medicare — Payment Policy Fields
+CLM_PTNT_RLTNSHP_CD	CLM_PTNT_RLTNSHP_CD	Claim Patient Relationship Code	Char	2	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+CARE_IMPRVMT_MODEL_1_CD	CARE_IMPRVMT_MODEL_1_CD	Care Improvement Model 1 Code	Char	2	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X
+CARE_IMPRVMT_MODEL_2_CD	CARE_IMPRVMT_MODEL_2_CD	Care Improvement Model 2 Code	Char	2	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	-	-
+CARE_IMPRVMT_MODEL_3_CD	CARE_IMPRVMT_MODEL_3_CD	Care Improvement Model 3 Code	Char	2	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+CARE_IMPRVMT_MODEL_4_CD	CARE_IMPRVMT_MODEL_4_CD	Care Improvement Model 4 Code	Char	2	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	-	-	-
+VBP_PRTCPNT_IND_CD	VBP_PRTCPNT_IND_CD	Value Based Purchasing (VBP) Participant Indicator Code	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+HRR_PRTCPNT_IND_CD	HRR_PRTCPNT_IND_CD	Hospital Readmission Reduction (HRR) Participant Indicator Code	Char	1	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X
+BNDLD_MODEL_DSCNT_PCT	BNDLD_MODEL_DSCNT_PCT	Bundled Payment Model Discount Percent	Num	8	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X
+VBP_ADJSTMT_PCT	VBP_ADJSTMT_PCT	Value Based Purchasing (VBP) Adjustment Percent	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+HRR_ADJSTMT_PCT	HRR_ADJSTMT_PCT	Hospital Readmission Reduction (HRR) Adjustment Percent	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+INFRMTL_ENCTR_IND_SW	INFRMTL_ENCTR_IND_SW	Informational Encounter Indicator	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+MA_TCHNG_IND_SW	MA_TCHNG_IND_SW	MA Teaching Indicator	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+PROD_RPLCMT_LIFECYC_SW	PROD_RPLCMT_LIFECYC_SW	Product Replacement within Product Lifecycle (early)	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+PROD_RPLCMT_RCLL_SW	PROD_RPLCMT_RCLL_SW	Product Replacement for Recall of Product	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+CRED_RCVD_RPLCD_DVC_SW	CRED_RCVD_RPLCD_DVC_SW	Credit Received Replaced Device	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OBSRVTN_SW	OBSRVTN_SW	Observation Unit Indicator	Char	1	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+NEW_TCHNLGY_ADD_ON_AMT	NEW_TCHNLGY_ADD_ON_AMT	New Technology Add-On Amount	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+BASE_OPRTG_DRG_AMT	BASE_OPRTG_DRG_AMT	Base Operating DRG Amount	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OPRTG_HSP_AMT	OPRTG_HSP_AMT	Operating Hospital Amount	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+SQSTRTN_RDCTN_AMT	SQSTRTN_RDCTN_AMT	Sequestration Reduction Amount	Num	8	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X
+UNCOMPD_CARE_PYMT_AMT	UNCOMPD_CARE_PYMT_AMT	Uncompensated Care Payment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X
+BNDLD_ADJSTMT_AMT	BNDLD_ADJSTMT_AMT	Bundled Payment Adjustment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X
+VBP_ADJSTMT_AMT	VBP_ADJSTMT_AMT	Hospital Value Based Purchasing (VBP) Amount	Num	8	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X
+HRR_ADJSTMT_AMT	HRR_ADJSTMT_AMT	Hospital Readmission Reduction (HRR) Adjustment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X
+EHR_PYMT_ADJSTMT_AMT	EHR_PYMT_ADJSTMT_AMT	Electronic Health Record (EHR) Payment Adjustment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X
+PPS_STD_VAL_PYMT_AMT	PPS_STD_VAL_PYMT_AMT	Standard Payment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X
+FINL_STD_AMT	FINL_STD_AMT	Final standard payment amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X
+IPPS_FLEX_PYMT_6_AMT	IPPS_FLEX_PYMT_6_AMT	Flexible Payment Amount (6th) - renamed to Hospital Acquired Conditions (HAC) Reduction Payment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	X	R	R	R	R	R	R
+HAC_RDCTN_PMT_AMT	HAC_RDCTN_PMT_AMT	Hospital Acquired Conditions (HAC) Reduction Payment Amount	Num	8	-	X	X	X	X	X	X
+IPPS_FLEX_PYMT_7_AMT	IPPS_FLEX_PYMT_7_AMT	Flexible Payment Amount - 7th (placeholder)	Num	8	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X
+PTNT_ADD_ON_PYMT_AMT	PTNT_ADD_ON_PYMT_AMT	Patient Add-On Payment Amount (new pt)	Num	8	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X
+HAC_PGM_RDCTN_IND_SW	HAC_PGM_RDCTN_IND_SW	Hospital Acquired Conditions (HAC) Program Reduction Indicator	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+PGM_RDCTN_IND_SW	PGM_RDCTN_IND_SW	Electronic Health Records (EHR) Program Reduction Indicator	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+PA_IND_CD	PA_IND_CD	Prior Authorization Indicator Code	Char	4	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+UNIQ_TRKNG_NUM	UNIQ_TRKNG_NUM	Unique Tracking Number	Char	14	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+STAY_2_IND_SW	STAY_2_IND_SW	Two Midnight Stay Indicator	Char	1	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X
+CLM_SITE_NTRL_PYMT_CST_AMT	CLM_SITE_NTRL_PYMT_CST_AMT	Claim Site Neutral Payment Based on Cost Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_SITE_NTRL_PYMT_IPPS_AMT	CLM_SITE_NTRL_PYMT_IPPS_AMT	Claim Site Neutral Payment Based on IPPS Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_FULL_STD_PYMT_AMT	CLM_FULL_STD_PYMT_AMT	Claim Full Standard Payment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_SS_OUTLIER_STD_PYMT_AMT	CLM_SS_OUTLIER_STD_PYMT_AMT	Claim Short Stay Outlier (SSO) Standard Payment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_NGACO_IND_1_CD	CLM_NGACO_IND_1_CD	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 1	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_NGACO_IND_2_CD	CLM_NGACO_IND_2_CD	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 2	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_NGACO_IND_3_CD	CLM_NGACO_IND_3_CD	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 3	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	-	-	-	-
+CLM_NGACO_IND_4_CD	CLM_NGACO_IND_4_CD	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 4	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	-	-	-	-
+CLM_NGACO_IND_5_CD	CLM_NGACO_IND_5_CD	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 5	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	-	-	-	-
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X	X
+CLM_RP_IND_CD	CLM_RP_IND_CD	Claim Representative Payee (RP) Indicator Code	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	X	X	-	-	-	-
+RC_RP_IND_CD	RC_RP_IND_CD	Revenue Center Representative Payee (RP) Indicator Code	Char	1	-	-	-	-	-	-	-	-	-	-	-	-	-	X	-	-	-	-
+ACO_ID_NUM	ACO_ID_NUM	Accountable Care Organization (ACO) Identification Number	Char	10	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X
+LTCH_DPP_ADJSTMT_AMT	LTCH_DPP_ADJSTMT_AMT	Long Term Care Hospital Discharge Payment Percentage Adjustment Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X
+VAL_CD_Q1_PYMT_RDCTN_AMT	VAL_CD_Q1_PYMT_RDCTN_AMT	Value Code Q1 Payment Reduction Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X
+CLM_MODEL_REIMBRSMT_AMT	CLM_MODEL_REIMBRSMT_AMT	Claim Model Reimbursement Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X
+RC_MODEL_REIMBRSMT_AMT	RC_MODEL_REIMBRSMT_AMT	Revenue Center Model Reimbursement Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X
+VAL_CD_QB_OCM_PYMT_ADJSTMT_AMT	VAL_CD_QB_OCM_PYMT_ADJSTMT_AMT	Value Code QB OCM + Payment Adjustment Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X
+RC_ALLOGENEIC_STEM_CELL_AMT	RC_ALLOGENEIC_STEM_CELL_AMT	Revenue Center Allogeneic Stem Cell Acquisition/Donor Services Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X
+ISLET_ADD_ON_PYMT_AMT	ISLET_ADD_ON_PYMT_AMT	Islet Add-On Payment Amount	Num	8	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X	X	X
+Payment Details from Revenue Center Codes
+MDCL_SRGCL_GNRL_AMT	MDCL_SRGCL_GNRL_AMT	Medical/Surgical General Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+MDCL_SRGCL_NSTRL_AMT	MDCL_SRGCL_NSTRL_AMT	Medical/Surgical Non-Sterile Supplies Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+MDCL_SRGCL_STRL_AMT	MDCL_SRGCL_STRL_AMT	Medical/Surgical Sterile Supplies Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+TAKE_HOME_AMT	TAKE_HOME_AMT	Medical/Surgical Supplies Take Home Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+PRSTHTC_ORTHTC_AMT	PRSTHTC_ORTHTC_AMT	Medical/Surgical Supplies Prosthetic Orthotic Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+MDCL_SRGCL_PCMKR_AMT	MDCL_SRGCL_PCMKR_AMT	Medical/Surgical Pacemaker Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+INTRAOCULAR_LENS_AMT	INTRAOCULAR_LENS_AMT	Medical/Surgical Supplies Intraocular Lens Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OXYGN_TAKE_HOME_AMT	OXYGN_TAKE_HOME_AMT	Medical/Surgical Supplies Oxygen Take Home Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OTHR_IMPLANTS_AMT	OTHR_IMPLANTS_AMT	Medical/Surgical Supplies Other Implants Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OTHR_SUPLIES_DVC_AMT	OTHR_SUPLIES_DVC_AMT	Medical/Surgical Supplies Other Device Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+INCDNT_RDLGY_AMT	INCDNT_RDLGY_AMT	Medical/Surgical Supplies Incident Radiology Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+INCDNT_DGNSTC_SRVCS_AMT	INCDNT_DGNSTC_SRVCS_AMT	Medical/Surgical Supplies Incident Diagnostic Services Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+MDCL_SRGCL_DRSNG_AMT	MDCL_SRGCL_DRSNG_AMT	Medical/Surgical Dressing Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+INVSTGTNL_DVC_AMT	INVSTGTNL_DVC_AMT	Medical/Surgical Supplies Investigational Device Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+MDCL_SRGCL_MISC_AMT	MDCL_SRGCL_MISC_AMT	Medical/Surgical Miscellaneous Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+RDLGY_ONCOLOGY_AMT	RDLGY_ONCOLOGY_AMT	Oncology Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+RDLGY_DGNSTC_AMT	RDLGY_DGNSTC_AMT	Radiology Diagnostic Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+RDLGY_THRPTC_AMT	RDLGY_THRPTC_AMT	Radiology Therapeutic Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+RDLGY_NUCLR_MDCN_AMT	RDLGY_NUCLR_MDCN_AMT	Radiology Nuclear Medicine Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+RDLGY_CT_SCAN_AMT	RDLGY_CT_SCAN_AMT	Radiology CT Scan Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+RDLGY_OTHR_IMGNG_AMT	RDLGY_OTHR_IMGNG_AMT	Radiology Other Imaging Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OPRTG_ROOM_AMT	OPRTG_ROOM_AMT	Operating & Recovery Room Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+OR_LABOR_DLVRY_AMT	OR_LABOR_DLVRY_AMT	Labor Room & Delivery Amount ($)	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+CRDC_CATHRZTN_AMT	CRDC_CATHRZTN_AMT	Cardiac Catheterization Lab Amount	Num	8	-	-	-	-	-	-	-	-	X	X	X	X	X	X	X	X	X	X
+CELL_GENE_THRPY_PRCDRS_TOT_AMT	CELL_GENE_THRPY_PRCDRS_TOT_AMT	Cell/Gene Therapy Procedures Total Charge Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X
+CELL_THRPY_DRUGS_TOT_AMT	CELL_THRPY_DRUGS_TOT_AMT	Cell Therapy Drugs Total Charge Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X
+GENE_THRPY_DRUGS_TOT_AMT	GENE_THRPY_DRUGS_TOT_AMT	Gene Therapy Drugs Total Charge Amount	Num	10	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	X	X	X
+1 Year of Data File - for all columns under "Year of Data File":  X = variable is present; shading or '-' indicates it is not populated, R indicates the field no longer appears in the record layout.

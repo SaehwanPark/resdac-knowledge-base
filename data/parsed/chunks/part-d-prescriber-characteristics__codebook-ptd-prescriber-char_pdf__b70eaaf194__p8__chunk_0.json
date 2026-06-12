@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p8__chunk_0",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 8,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n3 \nCREDENTIAL02 \nLABEL: \nAcademic or Professional Credential 2 — for Part D Prescribers \nDESCRIPTION: The degree or academic credential for the prescriber. This variable is one of five possible credentials or \nacademic degrees in the source data. \nSHORT NAME: — \nLONG NAME: CREDENTIAL02 \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nHCIdea™ Prescriber Database \nVALUES: \n(e.g., MD, DO, RN, DPM) \nCOMMENT:",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

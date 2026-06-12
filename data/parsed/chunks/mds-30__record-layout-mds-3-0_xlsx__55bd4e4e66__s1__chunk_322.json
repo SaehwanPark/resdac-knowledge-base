@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_322",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "J1550B_VMTG_CD J1550B_VMTG_CD J1550B Problem Conditions: Vomiting Code CHAR 1 The data in this column indicates whether the resident had vomiting. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n358 J1550C_DHYDRT_CD J1550C_DHYDRT_CD J1550C Problem Conditions: Dehydration Code CHAR 1 The data in this column indicates whether the resident had dehydration. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n359 J1550D_INTRNL_BLEDG_CD J1550D_INTRNL_BLEDG_CD J1550D",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

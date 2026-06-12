@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 31,
+  "text": "NEVER\n2: SOMETIMES\n3: USUALLY\n4: ALWAYS\nsp_persmd: RECODE : Personal MD is a specialist\nSAS Format: YNA\n1: YES\n2: NO\nsp_tryappt: RECODE : Last 6 mths, make appointments with specialist\nSAS Format: YNA\n1: YES\n2: NO\nsp_visits: RECODE : Last 6 mths, number of specialists talked to\nSAS Format: NMB\n0: NONE\n1: 1 SPECIALIST\n2: 2\n3: 3\n4: 4\n5: 5 OR MORE SPECIALISTS",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

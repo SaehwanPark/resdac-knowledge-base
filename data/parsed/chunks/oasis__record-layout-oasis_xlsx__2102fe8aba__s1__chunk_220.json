@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_220",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "This field is checked if the patient had urinary incontinence prior to the inpatient stay or change in medical or\ntreatment regimen within the past 14 days. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM1020_PRI_DGN_ICD M1020 (M0230) Primary Diagnosis ICD Code This field lists the primary diagnosis (ICD-9). CHAR 7 x\nM1020_PRI_DGN_SEV M1020 (M0230) Primary Diagnosis Severity This field lists the severity of the primary diagnosis. 00 = Asymptomatic, no treatment needed at this time\n01 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

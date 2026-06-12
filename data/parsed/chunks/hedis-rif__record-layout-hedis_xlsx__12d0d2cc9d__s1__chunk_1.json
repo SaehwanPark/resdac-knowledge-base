@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Plan Identifier (HEDIS) CHAR 3 4 4 4 4 4\nHEDIS_PLAN_TYPE Plan Type (HEDIS) CHAR 30 5 5 5 5 5\nHEDIS_ORG_TYPE Plan Organization Type (HEDIS) CHAR 10 6 6 6 6 6\nCMS_RGN_NAME CMS Region Name for Plan Organization CHAR 20 7 7 7 7 7\nHEDIS_BENE_STATE_CD State Code for Beneficiary (Postal) CHAR 2 8 8 8 8 8\nHEDIS_BENE_ZIP_CD Beneficiary ZIP code CHAR 5 9 9 9 9 9\nHEDIS_SEX_CD3 Beneficiary sex assigned at birth. Sex (HEDIS) CHAR 1 10 10 10 10 10\nHEDIS_BENE_DOB Beneficiary date of birth (HEDIS) DATE 8 11 11",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 4,
+  "text": "4\nCLM_FROM_DT Claim From Date Date 8 5 5\nCLM_THRU_DT Claim Through Date Date 8 6 6\nSRVC_MONTH Service Month Date 6 7 7\nCLM_CHRT_RVW_SW Claim Chart Review Switch Char 1 8 8\nCLM_CNTL_NUM Claim Control Number Char 23 9 9\nCLM_ORIG_CNTL_NUM Claim Original Control Number Char 23 10 10\nCLM_FINL_ACTN_IND Claim Final Action Indicator Char 1 11 11\nCLM_LTST_CLM_IND Latest Claim Indicator Char 1 12 12\nEDPS_CREATE_DT Encounter Data Processing System (EDPS) Create Date Date 8 13 13\nCLM_RCPT_DT Claim Receipt",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

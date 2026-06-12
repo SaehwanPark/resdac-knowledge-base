@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 1,
+  "text": "Indicates Whether Part D Plan Offers Reduced Pre-ICL Cost-sharing CHAR 1 X X X\nREDUCED_OOPT_CS Indicates Whether Part D Plan Offers Reduced Post Out-of-Pocket (OOP) Threshold Cost-Sharing Amounts CHAR 1 X X X\nINCREASED_ICL Indicates Whether Part D Plan Offers Increased Initial Coverage Limit (ICL) Amount CHAR 1 X X X\nOTC_UM_PROGRAM Part D Plan Covers Over-the-Counter (OTC) Medications under the Utilization Management Program CHAR 1 X X X\n1 For all columns under \"Year of Data File\": X = variable",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

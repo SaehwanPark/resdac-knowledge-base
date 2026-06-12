@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p330__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 330,
+  "text": "LENGTH: \n2 \nFILE(S): \nWaiver \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0–12 (Number of months) \nCOMMENT: \nThis variable is the number of months during the year when the monthly TAF waiver type code (in any \nof the 10 possible fields; WVR_TYPE_CD_01_01–WVR_TYPE_CD_10_12) = 20 (1915b/c Waiver). \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

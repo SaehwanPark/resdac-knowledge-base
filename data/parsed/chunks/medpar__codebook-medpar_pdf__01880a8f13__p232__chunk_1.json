@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p232__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 232,
+  "text": "to benefits. For skilled nursing facility (SNF) claims, the date relates to the \nqualifying stay from a hospital that is at least two days in a row if the source of admission is an 'A', or at \nleast three days in a row if the source of admission is other than an 'A'. \nSHORT NAME: QLFYTHRU \nLONG NAME: SNF_QUALN_THRU_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field comes from occurrence span code = 70 and related occurrence span from date, if present on \nany of the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

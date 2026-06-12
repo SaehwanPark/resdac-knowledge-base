@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "X X X X X\nCMR_RECIPIENT_INI If offered a CMR recipient of (initial) offer CHAR 2 - - - X -\nTARG_MED_REV_NUM Number of targeted medication reviews conducted NUM 8 X X X X X\nTMR_PERF_DT Date the first TMR was performed DATE 8 - - - X X\nPRESCRIBER_INTERV_NUM Number of drug therapy problem recommendations made to prescribers NUM 8 X X X X X\nDRUG_THER_CHG_NUM Number of drug therapy problem resolutions with prescribers NUM 8 X X X X X\nDSPSL_MDCTNS_MTHD Method of delivery for information regarding",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

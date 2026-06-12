@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p65__chunk_3",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 65,
+  "text": "to the FIPS code) \nCOMMENT: \nThe first two digits specify the state; the last 3 digits specify the county. \nThis variable is derived by taking the SSA state/county code on record for the beneficiary in the CMS \nenrollment database and linking it to the corresponding FIPS state/county code. \nA beneficiary with a verified or unverified date of death will have a null state/county FIPS code for any \nmonth that is after the death date. \nThere are 12 monthly variables — where the 01 through 12 at the",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

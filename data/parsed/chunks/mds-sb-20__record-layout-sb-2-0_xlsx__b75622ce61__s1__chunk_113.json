@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_113",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "of minutes of physical therapy received by the patient for the past seven days.\n148 P1BDA P1BDA_RES_THPY_DAY 38bdA(P1bdA)Respiratory Therapy Days CHAR 1 Indicates the number of days of respiratory therapy received by the patient for the past seven days.\n149 P1BDB P1BDB_RES_THPY_MIN 38bdB(P1bdB)Respiratory Therapy Minutes CHAR 4 Indicates the total number of minutes of respiratory therapy received by the patient for the past seven days.\n150 P3A P3A_NR_MOTION_PASS 39a(P3a)Nursing Rehab: Range of",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

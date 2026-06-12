@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_914",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "O0390D_RT_CD O0390D_RT_CD O0390D Respiratory Therapy Code CHAR 1 The data in this column indicates whether the resident received Respiratory Therapy for at least 15 minutes a day on one or more days in the last 7 days -=Not assessed/no information\n0=No\n1=Yes effective 10/01/2025\n1034 O0390E_PSYCHLGCL_THRPY_CD O0390E_PSYCHLGCL_THRPY_CD O0390E Psychological Therapy Code CHAR 1 The data in this column indicates whether the resident received Psychological Therapy for at least 15 minutes a day on",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

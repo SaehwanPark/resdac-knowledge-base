@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_215",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(I2K) Viral Hepititis CHAR 1 Disease diagnosis: infections - viral hepatitis. 0 = No, 1 = Yes, \"-\" = Unknown.\n333 I2L I2L_WOUND (I2L) Wound Infection CHAR 1 Disease diagnosis: infections - wound infection. 0 = No, 1 = Yes, \"-\" = Unknown.\n334 I2M I2M_NONE_ABOVE (I2M) None of Above Infections CHAR 1 Disease diagnosis: infections - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n335 I3A I3A_OTHR_ICD9_CD (I3A) Other Diagnosis/ICD-9 Codes CHAR 7 Disease diagnosis: other current or more detailed",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

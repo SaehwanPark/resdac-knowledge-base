@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p13__chunk_1",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 13,
+  "text": "1 hospitals treated “at home” at least 25 patients meeting \ninpatient admission criteria through their program prior to requesting an AHCAH waiver; Tier 2 \nhospitals treated “at home” 24 or fewer patients (or none at all) prior to requesting a CMS waiver. \n\nSHORT NAME: FAC_TIER \nLONG NAME: FAC_TIER \nTYPE: \nNUM \nLENGTH: \n1 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \n1 = hospital had 25+ patients who received hospital at home inpatient services \n2 = hospital",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

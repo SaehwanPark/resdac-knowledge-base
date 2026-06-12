@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p44__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 44,
+  "text": "Data Repository (IDR) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \n— \nCOMMENT: \nNote that the CLM_OBSLT_DT=“12-31-9999” for claims without any subsequent adjustments. When \nthe record is superseded by subsequent adjustments, then the CLM_OBSLT_DT = (EDPS_CREATE_DT of \nthe record with the latest action – 1). \n^ Back to TOC ^",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "the year of the assessment. For MDS, the effective date is based on the (AA8A) Primary Reason for Assessment field. The effective date will be the R4 Discharge Date for any discharge (RFA 06, 07, 08); the A4A Reentry Date for any re-entry (RFA 09); or the R2B Complete Date for any other type of assessment (RFA 01, 02, 03, 04, 05, 10, 00.) For SB, this date is the same as the Completion Date as is equal to the following dates: 15 (R4) - Discharge Date, 16 (A4A) - Reentry Date and 45b (R2B) -",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

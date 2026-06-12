@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_11",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "Procedure code system (6th procedure) CHAR 2 X X X\n64 PRCDR_CD_6 Procedure code (6th procedure) CHAR 8 X X X\n65 RCPNT_DLVRY_CD Maternal Delivery code NUM 1 X X X SAS name is same as PS variable, but meaning & values are different\n66 MDCD_CVRD_IP_DAYS Medicaid covered inpatient days NUM 5 X X X\n67 PATIENT_STATUS_CD Patient status NUM 2 X X X\n68 DRG_REL_GROUP_IND Diagnosis Related Group (DRG) indicator CHAR 4 X X X\n69 DRG_REL_GROUP Diagnosis Related Group (DRG) NUM 4 X X X\n70 UB_92_REV_CD_GP_1",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

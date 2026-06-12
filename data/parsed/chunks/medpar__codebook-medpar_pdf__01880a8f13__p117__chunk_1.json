@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p117__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 117,
+  "text": "NAME: HOSP_AT_HOME_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH (derived) \nVALUES: \n— \nCOMMENT: \nThis field was new in 2021. \nThis field is derived by accumulating the revenue center total charge amount associated with the \nrevenue center code 0161 from all claim records included in the stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

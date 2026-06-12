@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p55__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 55,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n39 \nBNDLD_MODEL_DSCNT_PCT \nLABEL: \nBundled Payment Model Discount Percent \nDESCRIPTION: The field used to identify the discount percentage that will be applied to the payment for all the \nhospitals' DRG over the lifetime of the Bundled Payments for Care Improvement initiative (BPCI, Model \n1). \nSHORT NAME: BNDLD_MODEL_DSCNT_PCT \nLONG NAME: BNDLD_MODEL_DSCNT_PCT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

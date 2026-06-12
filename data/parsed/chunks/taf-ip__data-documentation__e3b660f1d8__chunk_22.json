@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_22",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| \n\n | 141 | MDCR_REIMBRSMT_TYPE_CD | Medicare Reimbursement Type Code | \n\n | 142 | COINSRNC_AMT | Beneficiary Coinsurance Amount | \n\n | 143 | COPAY_AMT | Beneficiary Copayment Amount | \n\n | 144 | DDCTBL_AMT | Beneficiary Deductible Amount | \n\n | 145 | COPAY_WVD_IND | Indicator Signifying Copay was Waived by Provider | \n\n | 146 | TP_PD_AMT | Total Third Party Liability Paid Amount | \n\n | 147 | TP_COINSRNC_PD_AMT | Third Party Coinsurance Paid Amount | \n\n | 148 | TP_COPAY_PD_AMT | Third Party",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

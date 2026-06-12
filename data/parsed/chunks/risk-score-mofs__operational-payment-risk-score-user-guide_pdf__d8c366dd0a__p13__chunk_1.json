@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p13__chunk_1",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 13,
+  "text": "as the V21 file \nCMS produces three versions of the ESRD file each year using various data inputs for the model; therefore for each \nbeneficiary there are three records in the annual ESRD file. CCW derived a field called the MOF diagnosis input file \nsource code (MOF_DGNS_INPUT_CD) in the MOFs to identify the three versions. Table 5 describes the field values. \nTable 5. Identified versions of the MOF diagnosis input file source code \nValid values \nValue descriptions \nPPME \nEncounter, FFS, RAPS",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

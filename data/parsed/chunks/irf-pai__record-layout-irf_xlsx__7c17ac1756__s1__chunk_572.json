@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_572",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Blank\n508 THGHT_BETTER_DD_ADMSN_CD THGHT_BETTER_DD_ADMSN_CD Mood: Thoughts of better off dead: P (A) CHAR 1 This column documents whether, at the time of admission, the patient said they had thoughts that they would be better off dead, or of hurting themselves in some way. 0 = No \n1 = Yes \n9 = No response \n- = Not Assessed/No Information\n^ = Blank\n509 THGHT_BETTER_DD_DSCHRG_CD THGHT_BETTER_DD_DSCHRG_CD Mood: Thoughts of better off dead: P (D) CHAR 1 This column documents whether, at the time",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

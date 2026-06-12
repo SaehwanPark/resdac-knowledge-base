@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p117__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 117,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n99 \nCLM_PASS_THRU_PER_DIEM_AMT \nLABEL: \nClaim Pass Thru Per Diem Amount \nDESCRIPTION: Medicare establishes a daily payment amount to reimburse IPPS hospitals for certain “pass-through” \nexpenses, such as capital-related costs, direct medical education costs, kidney acquisition costs for \nhospitals that are renal transplant centers, and bad debts. This variable is the daily",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

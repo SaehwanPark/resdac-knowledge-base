@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p280__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 280,
+  "text": "SOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nAll header claim, line, and occurrence code files \nVALUES: \nhttps://www.census.gov/library/reference/code-lists/ansi.html \nTwo-digit value (with leading zeros) \n01 = Alabama \n02 = Alaska \n04 = Arizona \n05 = Arkansas \n06 = California \n08 = Colorado \n09 = Connecticut \n10 = Delaware \n11 = District of Columbia \n12 = Florida \n13 = Georgia \n15 = Hawaii \n16 = Idaho \n17 = Illinois \n18 = Indiana \n19 = Iowa \n20 = Kansas \n21 = Kentucky \n22 = Louisiana",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_229",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n365 J3H J3H_TISSUE_PAIN (J3H) Soft Tissue Pain CHAR 1 Health conditions: pain symptoms - soft tissue pain (lesion, muscle) in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n366 J3I J3I_STOMACH_PAIN (J3I) Stomach Pain CHAR 1 Health conditions: pain symptoms - stomach pain in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n367 J3J J3J_OTHER (J3J) Other Pain Site CHAR 1 Health conditions: pain symptoms - other in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n368 J4A",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

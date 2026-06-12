@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-30-cc__chunk_0",
+  "source_document": "data/raw/html/dataset_page/e1008ac596c397313ccc0e4c65931d5fbe9c0413.html",
+  "page": null,
+  "text": "The 30 CCW Chronic Conditions segment of the Master Beneficiary Summary File (MBSF) flags each Medicare beneficiary for the presence of one of 30 specific chronic conditions.\nWhat does this file include? (variable highlights)\n- Two flags for each chronic condition:- First occurrence date\n- End of year indicator\n\nSpecial considerations\n- The algorithms used to assign the flags are available from the CCW website.\n- Algorithms requiring a multiple-year look back period are completed without",
+  "dataset": "mbsf-30-cc",
+  "url": "https://resdac.org/cms-data/files/mbsf-30-cc?page=1"
+}

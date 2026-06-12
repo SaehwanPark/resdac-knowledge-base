@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 12,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n7 \nIMMUNIZATIONS_CD \nLABEL: \nCode Indicating the Level of Immunization Services Offered \nDESCRIPTION: For pharmacies that indicated they offer some level of immunizations (reference variable called \nIMMUNIZATIONS_IND), this variable identifies the level of Immunization services offered. \nSHORT NAME: — \nLONG NAME: IMMUNIZATIONS_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n31 =",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

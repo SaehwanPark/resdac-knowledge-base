@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 14,
+  "text": "B. 2025 MCAHPS Format Tables \n14 \nghs: RECODE : Rate overall general health \nSAS Format: RTB \n2: VERY GOOD \n3: GOOD \n4: FAIR \n5: POOR \nim_flu1last: RECODE : Had a flu shot since July 1, 2024 \nSAS Format: YNA \n1: YES \n2: NO \nim_pneum: RECODE : Ever had Pneumonia shot \nSAS Format: YNA \n1: YES \n2: NO \nins_employer: RECODE : Other Insurance-Employer, Union \nSAS Format: YNE \n0: NOT CHECKED \n1: CHECKED \nins_have_oth: RECODE : Have health insurance other than Medicare \nSAS Format: YNA \n1: YES \n2: NO",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

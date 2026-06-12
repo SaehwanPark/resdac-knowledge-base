@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p23__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 23,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n7 \nADMTG_DGNS_CD \nLABEL: \nInitial diagnosis at time of admission \nDESCRIPTION: The diagnosis code indicating the beneficiary's initial diagnosis at the time of admission. \nSHORT NAME: AD_DGNS \nLONG NAME: ADMTG_DGNS_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field comes from the admitting diagnosis code that is present on the last claim record included in \nthe stay. \nFor",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

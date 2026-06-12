@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p16__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 16,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n11 \nCVRD_D_PLAN_PD_AMT \nLABEL: \nAmount Paid by Part D Plan for the PDE (drug is covered by Part D) \nDESCRIPTION: This is the net amount that the Part D plan paid for a PDE that was covered by the Medicare Part D \nbenefit. \nThis field is populated when the drug coverage code (DRUG_CVRG_STUS_CD) equals “C.” \nThis field excludes supplemental drugs, supplemental",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

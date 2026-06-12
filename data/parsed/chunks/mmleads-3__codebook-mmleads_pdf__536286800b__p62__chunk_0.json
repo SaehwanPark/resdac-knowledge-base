@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p62__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 62,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n51 \nMDCD_RACE_ETHNCTY_CD \nLABEL: \nMedicaid — Race and Ethnicity Constructed Code — Latest in Year \nDESCRIPTION: This variable indicates the Medicaid beneficiary’s race and ethnicity code. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS DE file \nVALUES: \n1 = White, non-Hispanic \n2 = Black, non-Hispanic \n3 = Asian, non-Hispanic \n4 = American Indian and Alaska Native (AIAN), non-Hispanic \n5 = Hawaiian/Pacific Islander \n6 =",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

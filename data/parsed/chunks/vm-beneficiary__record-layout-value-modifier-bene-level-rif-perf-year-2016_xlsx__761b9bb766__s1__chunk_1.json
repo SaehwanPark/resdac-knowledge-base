@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "Unique identifier of practice 2 Char 11\nIN_PATIENT Total costs for inpatient hospital facility services Per capita cost for attributed beneficiary, Inpatient Hospital Facility Services category 3 Num 8 Populated only for records with Inpatient_stay not equal to missing\nMSPB_EPISODE Episode for MSPB measure Indicator for whether record corresponds to episode for Medicare Spending per Beneficiary (MSPB) measure 4 Num 8 Equals 1 if record corresponds to episode for Medicare Spending per",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

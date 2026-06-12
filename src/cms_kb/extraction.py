@@ -270,12 +270,9 @@ def _dataset_id_from_url(url: str) -> str:
 
 def _dataset_id_from_resdac_file_url(url: str) -> str | None:
   parts = [part for part in urlparse(url).path.split("/") if part]
-  if "files" not in parts:
+  if len(parts) < 3 or parts[0] != "cms-data" or parts[1] != "files":
     return None
-  files_index = parts.index("files")
-  if files_index + 1 >= len(parts):
-    return None
-  return _slugify(parts[files_index + 1])
+  return _slugify(parts[2])
 
 
 def _document_suffix_from_url(url: str) -> str:
@@ -510,24 +507,21 @@ def _extract_dataset(
   for href in links:
     try:
       target_url = normalize_url(row.url, href)
-      parts = urlparse(target_url)
-      path_parts = [p for p in parts.path.split("/") if p]
-      if "files" in path_parts:
-        files_idx = path_parts.index("files")
-        if files_idx + 1 < len(path_parts):
-          target_id = _slugify(path_parts[files_idx + 1])
-          if target_id != dataset_id and target_id not in seen_related:
-            seen_related.add(target_id)
-            edges.append(
-              OntologyEdgeRow(
-                source_id=dataset_id,
-                target_id=target_id,
-                relationship="related_to",
-                source_url=row.url,
-                local_path=row.local_path,
-                sha256=row.sha256,
-              )
-            )
+      target_id = _dataset_id_from_resdac_file_url(target_url)
+      if target_id is None:
+        continue
+      if target_id != dataset_id and target_id not in seen_related:
+        seen_related.add(target_id)
+        edges.append(
+          OntologyEdgeRow(
+            source_id=dataset_id,
+            target_id=target_id,
+            relationship="related_to",
+            source_url=row.url,
+            local_path=row.local_path,
+            sha256=row.sha256,
+          )
+        )
     except Exception:
       pass
 
@@ -544,6 +538,34 @@ def _dataset_id_for_document(row: ArchiveManifestRow) -> str | None:
   if row.source_url:
     return _dataset_id_from_resdac_file_url(row.source_url)
   return _dataset_id_from_resdac_file_url(row.url)
+
+
+def _linked_urls_for_dataset(row: ArchiveManifestRow) -> set[str]:
+  if row.content_type != "text/html":
+    return set()
+
+  local_path = Path(row.local_path)
+  html = local_path.read_text(encoding="utf-8", errors="replace")
+  parser = DatasetPageParser()
+  parser.feed(html)
+  linked_urls: set[str] = set()
+  for href in parser.links:
+    try:
+      linked_urls.add(normalize_url(row.url, href))
+    except Exception:
+      continue
+  return linked_urls
+
+
+def _dataset_ids_for_document(
+  row: ArchiveManifestRow, linked_asset_dataset_ids: dict[str, set[str]]
+) -> list[str]:
+  dataset_id = _dataset_id_for_document(row)
+  if dataset_id is not None:
+    return [dataset_id]
+  if row.resource_kind != "asset":
+    return []
+  return sorted(linked_asset_dataset_ids.get(row.url, set()))
 
 
 def _document_kind(row: ArchiveManifestRow) -> str:
@@ -682,6 +704,7 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
   ontology_nodes: list[OntologyNodeRow] = []
   ontology_edges: list[OntologyEdgeRow] = []
   failures: list[ExtractionFailure] = []
+  linked_asset_dataset_ids: dict[str, set[str]] = {}
 
   eligible_rows = _eligible_rows(manifest_rows)
 
@@ -696,6 +719,8 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
     datasets_by_id[dataset.dataset_id] = dataset
     ontology_nodes.extend(nodes)
     ontology_edges.extend(edges)
+    for linked_url in _linked_urls_for_dataset(row):
+      linked_asset_dataset_ids.setdefault(linked_url, set()).add(dataset.dataset_id)
 
   for row in eligible_rows:
     if row.resource_kind not in {"documentation_page", "asset"}:
@@ -704,8 +729,8 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
     if failure is not None:
       failures.append(failure)
       continue
-    dataset_id = _dataset_id_for_document(row)
-    if dataset_id is None:
+    dataset_ids = _dataset_ids_for_document(row, linked_asset_dataset_ids)
+    if not dataset_ids:
       failures.append(
         ExtractionFailure(
           url=row.url,
@@ -715,18 +740,19 @@ def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
         )
       )
       continue
-    if dataset_id not in datasets_by_id:
-      failures.append(
-        ExtractionFailure(
-          url=row.url,
-          resource_kind=row.resource_kind,
-          local_path=row.local_path,
-          reason="document references missing dataset",
+    for dataset_id in dataset_ids:
+      if dataset_id not in datasets_by_id:
+        failures.append(
+          ExtractionFailure(
+            url=row.url,
+            resource_kind=row.resource_kind,
+            local_path=row.local_path,
+            reason="document references missing dataset",
+          )
         )
-      )
-      continue
-    document = _extract_document(row, dataset_id)
-    documents_by_id[document.document_id] = document
+        continue
+      document = _extract_document(row, dataset_id)
+      documents_by_id[document.document_id] = document
 
   # Deduplicate ontology nodes by node_id
   unique_nodes: dict[str, OntologyNodeRow] = {}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p29__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 29,
+  "text": "Care Model Data Registry \nVALUES: \nNone Selected \nNot Tested \nNegative \nPositive \nNull/missing = n/a (not breast cancer); or not reported by OCM participant (reference details in the \nRPTD_TO_RGSTRY codebook entry) \n\nCOMMENT: \nPractices were required to report clinical and staging data associated with each beneficiary’s assigned \ncancer. Progesterone Receptor (PR) is routinely tested for breast cancer and is necessary for staging \nand treatment decisions. This variable is only populated for",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

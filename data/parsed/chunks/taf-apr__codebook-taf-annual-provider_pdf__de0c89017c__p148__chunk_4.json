@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p148__chunk_4",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 148,
+  "text": "94: Montana Third-Party \nAdministrator (TPA) (retired \nafter 2019 data year) \n97: Pennsylvania CHIP \n\nCOMMENT: \nCodes represent FIPS state codes or outlying areas under U.S. sovereignty (e.g., Puerto Rico, US Virgin \nIslands, Guam), except for ’93,’ ’94,’ and ’97,’ which represent non-Medicaid entities from states that \nsubmit CHIP or TPA separately from Medicaid. \nFor those states with multiple reporting entities, all values of SUBMTG_STATE_CD should be used (‘56’ \nand ‘93’ for Wyoming; ‘30’",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 3,
+  "text": "1 X X\nGAP_TIER_PARTIAL Indicates Whether Tier is Partially Covered in the Gap Phase CHAR 1 X X\nEXCLUDED_TIER_GAP Indicates Whether Excluded Drugs are Covered on this Tier in the Gap Phase CHAR 1 X X\nEXCLUDED_TIER_PRE_ICL Indicates Whether Excluded Drugs are Covered on this Tier in the Pre ICL Phase CHAR 1 X X\nSPECIALTY_TIER Indicates Whether Tier is a Specialty Tier CHAR 1 X X\nPre-ICL Tier Cost-Sharing\nPRE_ICL_TIER_DRUG_TYPE2 Pre-ICL Drug Type by Tier CHAR 6* X X\nPRE_ICL_COSTSHARE_TYPE Pre-ICL",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

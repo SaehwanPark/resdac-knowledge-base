@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__record-layout-encounter-records_xlsx__5095e25915__s5__chunk_9",
+  "source_document": "data/raw/assets/xlsx/5095e25915944f165a226eb229e89fb27260125e.xlsx",
+  "page": 5,
+  "text": "49\nCLM_OBSLT_DT Claim Obsolete Date Date 8 50 50\nCLM_BPRVDR_CITY_NAME Billing Provider Address - City Char 30 51 51\nCLM_BPRVDR_USPS_STATE_CD Billing Provider Address - USPS State Code Char 2 52 52\nCLM_BPRVDR_ADR_ZIP_CD Billing Provider Address - ZIP Code Char 9 53 53\nCLM_SUBSCR_CITY_NAME Beneficiary County Code from Claim (SSA) Char 30 54 54\nCLM_SUBSCR_USPS_STATE_CD Beneficiary Residence (SSA) State Code Char 2 55 55\nCLM_SUBSCR_ADR_ZIP_CD Beneficiary ZIP Code of Residence Char 9 56",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-encounter-records.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p169__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 169,
+  "text": "redefined Claim Edit Group, 3rd occurrence, 4th position. \nDemo ID = 02 (home health demo) — the text field will contain PROV#. When demo number not equal \nto 02 then text will reflect “INVALID” \nDemo ID = 03 (Telemedicine demo) — text field will contain the HCPCS code. If the required HCPCS is \nnot shown, then the text field will reflect “INVALID” \nDemo ID = 04 (UMWA) — text field will contain W0 denoting that condition code W0 was present. If \ncondition code W0 not present, then the text",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

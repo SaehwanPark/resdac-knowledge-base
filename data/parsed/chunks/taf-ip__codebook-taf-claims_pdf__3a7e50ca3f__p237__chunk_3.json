@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p237__chunk_3",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 237,
+  "text": "or coordination of benefits was deducted from the total paid/allowed amount at the header only \n(PYMT_LVL_IND = \"3\"), then the line-level paid amount (LINE_MDCD_PD_AMT) would be blank and \nline-level allowed (LINE_MDCD_ALOWD_AMT) and header level total allowed (MDCD_ALOWD_AMT) \nand total paid (MDCD_PD_AMT) amounts must all be populated but the line level allowed amounts \nare not expected to sum exactly to the header level total allowed. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

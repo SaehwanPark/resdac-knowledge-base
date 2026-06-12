@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_487",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "medication issues. CHAR 1 The data in this column indicates whether the facility contacted the physician (or physician-designee) by midnight the next calendar day and completed the prescribed/recommended actions in response to the identified potential clinically significant medication issues. 0 = No\n1 = Yes\n405 N2005_MDCTN_INTRVTN_IND N2005_MDCTN_INTRVTN_IND N2005 Medication Intervention - The data in this column indicates whether the facility contacted and completed the physician (or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

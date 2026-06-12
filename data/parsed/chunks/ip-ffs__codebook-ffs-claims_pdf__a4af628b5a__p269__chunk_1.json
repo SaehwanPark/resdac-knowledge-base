@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p269__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 269,
+  "text": "NCH \nVALUES: \n10 = Home health agency (HHA) claim \n20 = Non swing bed skilled nursing facility (SNF) claim \n30 = Swing bed SNF claim \n40 = Hospital outpatient claim \n50 = Hospice claim \n60 = Inpatient claim \n71 = Local carrier non-durable medical equipment, prosthetics, orthotics, and supplies (DMEPOS) claim \n72 = Local carrier DMEPOS claim \n81 = Durable medical equipment regional carrier (DMERC); non-DMEPOS claim \n82 = DMERC; DMEPOS claim \nCOMMENT: \nThis variable may not always indicate the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

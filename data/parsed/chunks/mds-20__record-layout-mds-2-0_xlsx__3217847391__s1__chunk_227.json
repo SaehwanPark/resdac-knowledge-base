@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_227",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n360 J3C J3C_CHEST_PAIN (J3C) Chest Pain while Doing Usual Activities CHAR 1 Health conditions: pain symptoms - chest pain during usual activities in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n361 J3D J3D_HEADACHE (J3D) Headache CHAR 1 Health conditions: pain symptoms - headache in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n362 J3E J3E_HIP_PAIN (J3E) Hip Pain CHAR 1 Health conditions: pain symptoms - hip pain in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n363",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

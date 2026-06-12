@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p36__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 36,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n31 \nWALKIN_CLINIC_IND \nLABEL: \nWalk-in Clinic Services Indicator \nDESCRIPTION: This variable is an indicator as to whether or not the pharmacy offers some level of walk-in clinical \nservices. \nSHORT NAME: — \nLONG NAME: WALKIN_CLINIC_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \nY = Yes, pharmacy offers a walk-in clinic \nN = No, pharmacy does not offer a walk-in clinic \nNull =",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

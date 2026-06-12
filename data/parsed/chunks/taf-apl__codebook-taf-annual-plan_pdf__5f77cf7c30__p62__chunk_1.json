@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p62__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 62,
+  "text": "year. \nSHORT NAME: MDCD_OPTNL_CVRG_ADLT_POP_IND \nLONG NAME: MDCD_OPTNL_CVRG_ADLT_POP_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis data element is triggered by a value of “27”-“36” or “76” in any instance of \nMC_PLAN_ELGBLTY_GRP_POP_CD. \nThese values are: \n27 = Optional Coverage of Parents and Other Caretaker Relatives \n28 = Reasonable Classifications of Individuals under Age 21 \n29 = Children with",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p120__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 120,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n109 \nMDCR_SNF_MOS \nLABEL: \nMedicare — Skilled Nursing Facility Months (from Claims) \nDESCRIPTION: This variable is the total count of months during the year where the beneficiary was in a skilled nursing \nfacility (SNF), according to Medicare claims. A hierarchical algorithm is used, so that SNF is only \ncounted for the month if there is not a Medicare long-term care hospital claim. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedicare",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_547",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "effective 10/01/2023\n628 Z0100A_MDCR_HIPPS_TXT Z0100A_MDCR_HIPPS_TXT Z0100A Medicare Part A HIPPS Code Text CHAR 7 The data in this column contains the submitted Medicare Part A HIPPS code (RUG group followed by assessment type indicator).\n629 Z0100B_MDCR_RUG_VRSN_TXT Z0100B_MDCR_RUG_VRSN_TXT Z0100B Medicare Part A RUG Version Text CHAR 10 The data in this column contains the submitted Medicare Part A RUG version code.\n630 Z0100C_MDCR_SHRT_STAY_CD Z0100C_MDCR_SHRT_STAY_CD Z0100C Medicare Part A",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

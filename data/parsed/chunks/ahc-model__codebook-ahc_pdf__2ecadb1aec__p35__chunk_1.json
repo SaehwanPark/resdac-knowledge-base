@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p35__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 35,
+  "text": "LENGTH: \n1 \nSOURCE: \nAHC data system (derived) \nVALUES: \n0 = No \n1 = Yes \nMissing \nCOMMENT: \nVariables that start with “NN” include information for each core and supplemental HRSN for which a \nbeneficiary received navigation services. \n\nNavigation outcome variables with “ALL” in the name (i.e., NN_CORE_ALL_RSLVD_SW, \nNN_CORE_ALL_CNCTED_TO_CSP_SW, NN_CORE_ALL_OPTOUT_NVGTN_SW, \nNN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW, NN_CORE_ALL_CSP_UNAVLBL_SW, and \nNN_CORE_ALL_OUTCM_UNK_SW) are mutually exclusive. \n^",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

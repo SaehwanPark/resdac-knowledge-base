@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 22,
+  "text": "1: VERY UNLIKELY \n2: UNLIKELY \n3: LIKELY \n4: VERY LIKELY \nr_md_getmngca: REVERSED: last 6 mths, got help from personal md to manage care \nSAS Format: YNC \n1: NO \n2: YES, SOMEWHAT \n3: YES, DEFINITELY \nr_mhs: REVERSED: Rate Mental Health \nSAS Format: RTC \n1: POOR \n2: FAIR \n3: GOOD \n4: VERY GOOD \n5: EXCELLENT \nrace_asian: RECODE : Race: Asian \nSAS Format: YNE \n0: NOT CHECKED \n1: CHECKED \nrace_black: RECODE : Race: Black or African American \nSAS Format: YNE \n0: NOT CHECKED",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_528",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "1=Add new record\n2=Modify existing record\n3=Inactivate existing record\n607 X0150_CRCTN_PRVDR_TYPE_CD X0150_CRCTN_PRVDR_TYPE_CD X0150 Correction Provider Type Code CHAR 1 The data in this column indicates the type of provider (nursing home or swing bed) submitting the modification or inactivation request. 1=Nursing home (SNF/NF)\n2=Swing bed effective 10/01/2023\n608 X0300_CRCTN_SEX_CD1 X0300_CRCTN_SEX_CD X0300 Correction Sex Code CHAR 1 The data in this column indicates the resident's sex from",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

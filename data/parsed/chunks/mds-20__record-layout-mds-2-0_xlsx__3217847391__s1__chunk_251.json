@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_251",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "tissue.\n410 M1D M1D_STAGE_4_ULCER (M1D) Stage 4 Ulcers CHAR 1 Skin condition: ulcers - stage 4 in last 7 days. This field indicates the number of stage 4 ulcers on the resdient's body. Stage 4 is defined as a full thickness of skin and subcutaneous tissue is lost, exposing muscle or bone.\n411 M2A M2A_PRES_ULCER (M2A) Pressure Ulcers CHAR 1 Skin condition: ulcers - pressure ulcer. This field indicates the highest stage indicator of a pressure ulcer in the last 7 days. A pressure ulcer is any",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

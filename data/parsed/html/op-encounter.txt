@@ -1,0 +1,10 @@
+The Medicare Encounter Outpatient file contains Medicare Advantage plan records from a variety of outpatient providers. Examples of institutional outpatient providers include hospital outpatient departments, rural health clinics, renal dialysis facilities, outpatient rehabilitation facilities, comprehensive outpatient rehabilitation facilities, Federally Qualified Health Centers and community mental health centers.
+This file includes (variable highlights):
+- Diagnosis (ICD diagnosis) codes
+- HCPCS code
+- Revenue center codes, dates, unit counts
+- Part C Benefit Package and Contract number
+- Organization NPI number
+- No payment information
+Special considerations:
+- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter data may include records for some of these additional items and services provided under the plan.

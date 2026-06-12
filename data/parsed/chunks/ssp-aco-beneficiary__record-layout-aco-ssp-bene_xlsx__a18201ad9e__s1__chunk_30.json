@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "is “QMB only,” “QMB and Medicaid coverage including Rx,” \"SLMB and Medicaid coverage including RX,\" or \"Other Dual Eligibles (Non-QMB, SLMB, QWDI, or QI) w/Medicaid coverage including RX\" (BENE_DUAL_STUS_CD = 01, 02, 04, or 08) for the 12 month period used for final reconciliation period; values from 0-12; will be missing if beneficiary not assigned in period (Final_assign = 0) NUM 2 Final = 12 month reference year x x x x - - - - - - -\nFINAL_PTD_ELIG_MONTHS Part D Eligibile Months Number of",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

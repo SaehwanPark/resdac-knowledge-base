@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p168__chunk_4",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 168,
+  "text": "502 = Section 1115 Demonstration \nexpansion eligible, Blind/Disabled \n504 = Section 1115 Demonstration \nexpansion eligible, Children \n505 = Section 1115 Demonstration \nexpansion eligible, Adult \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis variable has been retired and T-MSIS is using the eligibility group code (monthly \nELGBLTY_GRP_CD_01–12) to designate information regarding eligibility. This variable \n(MASBOE_CD_01–12) is a sparsely reported by states. \nThis variable",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

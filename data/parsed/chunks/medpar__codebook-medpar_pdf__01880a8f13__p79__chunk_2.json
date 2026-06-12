@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p79__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 79,
+  "text": "NCH \nVALUES: \n— \nCOMMENT: \nThe principal diagnosis code is stored as the first diagnosis code (DGNSCD1). \nUntil 2009, there were up to 9 diagnosis codes; currently there are up to 25 (i.e., diagnosis codes 1–25). \nICD-10 diagnosis codes were used starting October 2015. The diagnosis version code (variables \nDGNS_VRSN_CD_1–DGNS_VRSN_CD_25) indicates whether this diagnosis code is ICD-9 or ICD-10. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

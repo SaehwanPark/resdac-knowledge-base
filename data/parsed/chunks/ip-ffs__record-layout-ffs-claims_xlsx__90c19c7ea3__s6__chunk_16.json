@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_16",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Carrier Line Performing UPIN Number CHAR 12 7\nPRFNPI PRF_PHYSN_NPI Carrier Line Performing NPI Number CHAR 12 8\nPRGRPNPI ORG_NPI_NUM Carrier Line Performing Group NPI Number CHAR 10 9\nPRV_TYPE CARR_LINE_PRVDR_TYPE_CD Carrier Line Provider Type Code CHAR 1 10\nTAX_NUM TAX_NUM Line Provider Tax Number CHAR 10 11\nPRVSTATE PRVDR_STATE_CD Line Provider State Code (SSA) CHAR 2 12\nPROVZIP PRVDR_ZIP Carrier Line Performing Provider ZIP Code CHAR 9 13\nHCFASPCL PRVDR_SPCLTY Line CMS Provider Specialty",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

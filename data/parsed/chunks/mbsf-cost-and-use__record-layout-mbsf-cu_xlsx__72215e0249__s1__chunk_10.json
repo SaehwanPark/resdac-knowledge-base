@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "Tests Primary Payer Amount NUM 12\nTEST_EVENTS Tests Events NUM 6\nDME_BENE_PMT Durable Medical Equipment Beneficiary Payments NUM 12\nDME_MDCR_PMT Durable Medical Equipment Medicare Payments NUM 12\nDME_PRMRY_PMT Durable Medical Equipment Primary Payer Amount NUM 12\nDME_EVENTS Durable Medical Equipment Events NUM 6\nOTHC_BENE_PMT Other Part B Carrier Beneficiary Payments NUM 12\nOTHC_MDCR_PMT Other Part B Carrier Medicare Payments NUM 12\nOTHC_PRMRY_PMT Other Part B Carrier Primary Payer Amount NUM",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_474",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "contacted. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x\nM2001_DRUG_RGMN_RVW M2001 Drug Regimen Review This field indicates whether a complete drug regimen review was completed. 0 = No - issues found during review\n1 = Yes - issues found during review\n9 = NA - Patient is not taking any medications CHAR 1 x x x\nM2003_MDCTN_FLWP M2003 Medication Follow-Up This field indicates whether a physician or the physician-designee was contacted within one calendar day to resolve clinically significant",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

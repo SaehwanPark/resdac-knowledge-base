@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p109__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 109,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n111 \nPRVDR_LGL_NAME \nLABEL: \nProvider Legal Name \nDESCRIPTION: The name as it appears on the provider agreement between the state and the entity. Both persons \nand other entities can have a legal name, most recent in the calendar year. \nSHORT NAME: PRVDR_LGL_NAME \nLONG NAME: PRVDR_LGL_NAME \nTYPE: \nCHAR \nLENGTH: \n150 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

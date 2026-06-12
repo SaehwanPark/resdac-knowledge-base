@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__data-documentation__94e426ac6d__chunk_2",
+  "source_document": "data/raw/html/documentation_page/94e426ac6df090203083bffc9a6b039975585c37.html",
+  "page": null,
+  "text": "| 14 | MDCR_COUNTY_CD | Medicare — County FIPS Code — Latest in Year | \n\n | 15 | MDCR_PTA_MOS | Medicare Part A Enrolled Months | \n\n | 16 | MDCR_PTB_MOS | Medicare Part B Enrolled Months | \n\n | 17 | MDCR_PTAPTB_MOS | Medicare Part A and Part B Enrolled Months | \n\n | 18 | MDCR_PTD_MOS | Medicare — Part D Months | \n\n | 19 | FD_MOS | Medicare — Full Dual Months | \n\n | 20 | PD_MOS | Partial Dual Months | \n\n | 21 | MDCR_ONLY_MOS | Medicare Only Months | \n\n | 22 | MDCD_ELGBLTY_GRP_CD_LTST |",
+  "dataset": "mmleads-3",
+  "url": "https://resdac.org/cms-data/files/mmleads-3/data-documentation"
+}

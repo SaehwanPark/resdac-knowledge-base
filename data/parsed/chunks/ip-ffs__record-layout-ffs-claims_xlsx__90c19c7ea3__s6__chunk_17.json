@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_17",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "PRVDR_ZIP Carrier Line Performing Provider ZIP Code CHAR 9 13\nHCFASPCL PRVDR_SPCLTY Line CMS Provider Specialty Code CHAR 3 14\nRNDRNG_PRVDR_SPCLTY_CD1 RNDRNG_PRVDR_SPCLTY_CD1 Rendering Provider Secondary Specialty Code 1 CHAR 2 84 New6\nRNDRNG_PRVDR_SPCLTY_CD2 RNDRNG_PRVDR_SPCLTY_CD2 Rendering Provider Secondary Specialty Code 2 CHAR 2 85 New6\nRNDRNG_PRVDR_SPCLTY_CD3 RNDRNG_PRVDR_SPCLTY_CD3 Rendering Provider Secondary Specialty Code 3 CHAR 2 86 New6\nRNDRNG_PRVDR_TXNMY_CD RNDRNG_PRVDR_TXNMY_CD",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "data source. CHAR 15 x x x x x x x x x x x\nBENE_ACO_YEAR Year of Beneficiary ACO Source Record The year that CMS labels the data file. Year of the Accountable Care Organization (ACO) beneficiary data. NUM 4 x x x x x x x x x x x\nBENE_ACO_QTR1 Quarter of Beneficiary ACO Source Record (Null If Yearly Record) Quarter of Beneficiary ACO Source Record (Null If Yearly Record) NUM 1 - - - - - x x x x x x\nACO_NUM SSP ACO Identifier Encrypted ACO Identifier CHAR 6 x x x x x x x x x x x\nACO_NAME ACO Name",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

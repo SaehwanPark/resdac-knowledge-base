@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__record-layout-mbsf-other_xlsx__cc8c2fac5a__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/cc8c2fac5a2291b61e5426cbe53c089c37e0e38c.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File — Other Chronic or Potentially Disabling Conditions\nVersion — March 2025\nShort SAS name1 Long SAS name2 Label Type Length\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15\nRFRNC_YR RFRNC_YR Reference Year DATE 4\nENRL_SRC ENRL_SRC Source of enrollment data CHAR 3\nACP_MEDICARE ACP_MEDICARE ADHD and Other Conduct Disorders End-of-Year Indicator - Medicare Only Claims NUM 1\nACP_MEDICARE_EVER ACP_MEDICARE_EVER",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-other.xlsx"
+}

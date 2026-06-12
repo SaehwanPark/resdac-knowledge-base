@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p12__chunk_1",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 12,
+  "text": "Note that for 2016–2018 this is the date of the \nlast CMR review during the year, if more than one CMR was provided. \nTYPE: \nDATE \nLENGTH: \n9 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nCMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan \nManagement System (HPMS). \nThis field is only populated if the variable CMR_RECEIVED_NUM is greater than 1. For 2013–2015, \nthere are fields for five CMR dates, see variables (CMR_RECEIVED_DT1–CMR_RECEIVED_DT5)",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

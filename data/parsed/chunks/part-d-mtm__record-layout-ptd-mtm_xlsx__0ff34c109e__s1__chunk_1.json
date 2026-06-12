@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "Part D contract number CHAR 5 X X X X X\nTARG_CRITERIA_MET Beneficiary met targeting criteria CHAR 1 X X X X -\nTARG_CRITERIA_MET_REASON Reason why beneficiary met the targeting criteria CHAR 2 - - - - X\nCOG_IMPAIRED Beneficiary identified as cognitively impaired CHAR 1 X X X X X\nLTC_CMR Beneficiary identified as residing in a LTC facility CHAR 1 - - - X X\nLTC_ENROLLMENT Beneficiary identified as long-term care (LTC) facility resident CHAR 1 X - - - -\nENROLLMENT_DT Date of MTM program enrollment",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

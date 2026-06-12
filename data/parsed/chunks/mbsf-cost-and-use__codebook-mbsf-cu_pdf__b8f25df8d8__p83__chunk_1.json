@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p83__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 83,
+  "text": "for all SNF claims \nwhere the CLM_PMT_AMT >= 0. \nSHORT NAME: — \nLONG NAME: SNF_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nStarting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, \nrather it may include adjustments due to ACO or PBP programs. \nMedicare payments are described in detail in a series of Medicare Payment Advisory Commission \n(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documen",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

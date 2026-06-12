@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Medical Insurance (SMI) Coverage Months Count NUM 3\nBENE_STATE_BUYIN_TOT_MONS State Buy-In (SBI) Coverage Months NUM 3\nBENE_HMO_CVRAGE_TOT_MONS Health Maintenance Organization (HMO) Coverage Months NUM 3\nPTD_PLAN_CVRG_MONS Part D Contract Plan Coverage Months NUM 3\nRDS_CVRG_MONS Retiree Drug Subsidy (RDS) Coverage Months NUM 3\nDUAL_ELGBL_MONS Medicaid Dual Eligible Months NUM 3\nMDCR_ENTLMT_BUYIN_IND_01 Medicare Entitlement/ Buy-In Indicator - January CHAR 1\nMDCR_ENTLMT_BUYIN_IND_02 Medicare",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

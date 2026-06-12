@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p130__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 130,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n112 \nInpatient Hospital Error return codes: \n51 = No provider specific information \nfound \n52 = Invalid MSA# in provider file \n53 = Waiver state — not \ncalculated by PPS \n54 = DRG < 001 or > 511, or = 214, 215, \n221, 222, 438, 456, 457, 458 \n55 = Discharge date < provider effective \nstart date or discharge date < MSA \neffective start date for PPS \n56 = Invalid length of stay",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

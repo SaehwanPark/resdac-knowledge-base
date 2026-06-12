@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p30__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 30,
+  "text": "diagnoses that they identified through medical record reviews that were not initially reported \non encounter data records. \nSHORT NAME: CLM_CHRT_RVW_SW \nLONG NAME: CLM_CHRT_RVW_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nHH base \nOP base \nCarrier base \nDME base \nVALUES: \nY = Record is a chart review \nNull/missing = Record is not a chart review \nCOMMENT: \nThis is an indicator value that is set to “Y” when MAOs report diagnoses",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

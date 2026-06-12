@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 7,
+  "text": "Leukemia \nAnal Cancer \nBladder Cancer \nBreast Cancer \nCNS Tumor \nChronic Leukemia \nEndocrine Tumor \nFemale GU Cancer other than Ovary \nGastro/Esophageal Cancer \nHead and Neck Cancer \nKidney Cancer \nLiver Cancer \nLung Cancer \nLymphoma \nMDS \nMalignant Melanoma \nMultiple Myeloma \nOvarian Cancer \nPancreatic Cancer \nProstate Cancer \nSmall Intestine/Colorectal Cancer \n\nCOMMENT: \nOCM classified each episode by cancer type (e.g., prostate, lymphoma, breast). Cancer type was \ndefined using the plurality",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

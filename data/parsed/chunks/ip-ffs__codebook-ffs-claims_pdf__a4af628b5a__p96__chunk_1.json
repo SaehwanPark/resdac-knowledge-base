@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p96__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 96,
+  "text": "CLM_HRR_PRTCPNT_IND_CD \nLONG NAME: CLM_HRR_PRTCPNT_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Not participating \n1 = Participating and not equal to 1.0000 \n2 = Participating and equal to 1.0000 \nNull/missing = Not participating \nCOMMENT: \nThe ACA (Section 3025) requires CMS to reduce payments to inpatient prospective payment system \n(IPPS) hospitals with excess readmissions. \nAdditional information is available on the CMS \"Hospital Value-Based Purchasing\" website. \nThis",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

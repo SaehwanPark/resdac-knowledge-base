@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p310__chunk_2",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 310,
+  "text": "(on or after January 1, 2014); in the month. There are separate variables for each of the 12 \nmonths during the year. \nThis field should not include information that already appears elsewhere on the Eligible-File record \neven if it is part of the MAS and BOE or ELGBLTY_GRP_CD algorithm (e.g., age information computed \nfrom BIRTH_DT or BENE_CNTY_CD). \nSHORT NAME: \nSTATE_SPEC_ELGBLTY_GRP_CD_01 \nSTATE_SPEC_ELGBLTY_GRP_CD_02 \nSTATE_SPEC_ELGBLTY_GRP_CD_03 \nSTATE_SPEC_ELGBLTY_GRP_CD_04",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

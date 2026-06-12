@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p133__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 133,
+  "text": "gap phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis variable will only be populated if the plan has an enhanced benefit design with extra coverage in \nthe gap. The coverage gap is technically referred to as the initial coverage limit (ICL) for the Part D \nbenefit. Plans that use a coinsurance percentage rather than a co-payment amount will not have a \nvalue in this field; reference instead the corresponding co-payment variable called",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_334",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "assistance\n04 = Supervision or touching assistance\n05 = Setup or clean-up assistance\n06 = Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n312 GG0130E1_BTHE_SELF_STRT_CD GG0130E1_BTHE_SELF_STRT_CD GG0130E1 Admission Performance Bathing Code - The data in this column indicates the patient's usual performance in their ability to bathe/shower in shower or tub, at the time of",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

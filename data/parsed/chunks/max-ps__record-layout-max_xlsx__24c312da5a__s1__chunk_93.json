@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_93",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "charge amount (MAX TOS 02) NUM 12 X X X X X X X X X X X\n431 FFS_TP_AMT_02 Fee-for-service third party payment amount (MAX TOS 02) NUM 12 X X X X X X X X X X X\n432 ENCTR_REC_CNT_02 Encounter record count (MAX TOS 02) NUM 5 X X X X X X X X X X X\n433 FEE_FOR_SRVC_IND_04 Recipient indicator (MAX TOS 04 - inpatient psychiatric - youth) CHAR 1 X X X X X X X X X X X\n434 FFS_CLM_CNT_04 Claim count (MAX TOS 04) NUM 6 X X X X X X X X X X X\n435 FFS_PYMT_AMT_04 Medicaid payment amount (MAX TOS 04) NUM 12 X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

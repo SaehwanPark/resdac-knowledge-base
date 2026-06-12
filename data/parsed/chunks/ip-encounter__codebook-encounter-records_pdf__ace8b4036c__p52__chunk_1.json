@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p52__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 52,
+  "text": "CLM_POA_IND_SW11 \nCLM_POA_IND_SW12 \nCLM_POA_IND_SW13 \nCLM_POA_IND_SW14 \nCLM_POA_IND_SW15 \nCLM_POA_IND_SW16 \nCLM_POA_IND_SW17 \nCLM_POA_IND_SW18 \nCLM_POA_IND_SW19 \nCLM_POA_IND_SW20 \nCLM_POA_IND_SW21 \nCLM_POA_IND_SW22 \nCLM_POA_IND_SW23 \nCLM_POA_IND_SW24 \nCLM_POA_IND_SW25 \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nIP base \nSNF base \nVALUES: \nY = \nDiagnosis was present at the time of admission (POA) \nN = \nDiagnosis was not present at the time of admission",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

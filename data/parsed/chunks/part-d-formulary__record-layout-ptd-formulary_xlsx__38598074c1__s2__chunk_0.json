@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__record-layout-ptd-formulary_xlsx__38598074c1__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/38598074c1dd858c02b65f05a48cc7e746745ec7.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Part D Formulary File — Excluded Drug File\nVersion — October 2025\nLong SAS NAME Label Type Length Year of Data File1\n2011 2 2012 +\nFORMULARY_ID Formulary Identification Number 3 CHAR 8 X X\nFRMLRY_RX_ID CCW Formulary Drug Identifier CHAR 8 X X\nCONTRACT_ID Part D Contract ID 3 CHAR 5 X -\nPLAN_ID Part D Plan ID 3 CHAR 3 X -\nTIER_ID Tier Number CHAR 2 X X\nSTEP_THERAPY_YN Step Therapy Indicator CHAR 2 - X\nQUANTITY_LIMIT_YN Quantity",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-formulary.xlsx"
+}

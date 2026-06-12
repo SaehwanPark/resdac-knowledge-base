@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_64",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "with MSPB_episode=1\nCOST_REHAB_LTCH MSPB inpatient rehabilitation or long-term care hospital costs Medicare Spending per Beneficiary (MSPB) costs for attributed beneficiary, Inpatient Rehabilitation or Long-Term Care Hospital category 93 Num 8 Populated only for records with MSPB_episode=1\nCOST_ER_TESTS MSPB lab, pathology, and other test costs in an ER setting Medicare Spending per Beneficiary (MSPB) costs for attributed beneficiary, ER Laboratory, Pathology, and Other Tests category 94 Num 8",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

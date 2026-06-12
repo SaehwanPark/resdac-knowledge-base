@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_285",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 1 x x x x\nM1410_RESPTX_VENT M1410 (M0500) Resprtry Treat At Home- Ventilator This field indicates if the respiratory treatment utilized at home is a ventilator (continually or at night). 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM1500_SYMTM_HRT_FAILR_PTNTS M1500 Symptoms in Heart Failure Patients This field indicates, if the patient has been diagnosed with heart failure, did the patient exhibit symptoms indicated by clinical heart failure guidelines at any point since the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

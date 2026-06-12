@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p38__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 38,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n22 \nBENE_IP_DDCTBL_AMT \nLABEL: \nBeneficiary’s liability for deductible for stay ($) \nDESCRIPTION: The amount of money (rounded to whole dollars) identified as the beneficiary's liability for the \ninpatient deductible for the stay. \nSHORT NAME: DED_AMT \nLONG NAME: BENE_IP_DDCTBL_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

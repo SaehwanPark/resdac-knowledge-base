@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p68__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 68,
+  "text": "= Home health + outpatient \n4012 = Hospital inpatient (covered by \nMedicare Part B – not Part A) \n4013 = Hospital outpatient \n4014 = Hospital laboratory services \nprovided to non-patients \n4022 = SNF skilled nursing inpatient \n(covered by Medicare Part B – \nnot Part A) \n4023 = SNF skilled nursing outpatient \n4034 = Home health + laboratory \nservices provided to non-\npatients \n4071 = Clinic (RHC) Rural Health \n4072 = Clinic (ESRD) Renal Dialysis \nHospital based or Independent \n4073 = Clinic",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "Drugs in Deductible NUM 8 X X LC - - -\nDED_COSTSHARE_TIERS Tiers with Cost Sharing in the Deductible Phase CHAR 6 - - - X LC X\nDED_COPAY Part D Deductible Co-pay Amount NUM 8 - - - X X X\nDED_COINS Part D Deductible Coinsurance Percentage NUM 8 - - - X X X\nFREE_FIRST_FILL Free First Prescription Fill CHAR 1 X X X X X X\nLESSER_OF_PRICING Lesser of Part D Pricing CHAR 1 X X - - - -\nPRE_ICL_APPLY How Part D Pre-ICL Cost-Sharing is Applied CHAR 1 X X X X X X\nICL_APPLY How Part D Initial Coverage",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

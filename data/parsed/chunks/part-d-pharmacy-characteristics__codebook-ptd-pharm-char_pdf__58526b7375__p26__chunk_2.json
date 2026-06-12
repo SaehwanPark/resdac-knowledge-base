@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p26__chunk_2",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 26,
+  "text": "= The provider has no chain or franchise relationships. \nCOMMENT: \nIf there is a relationship ID (variable called RELATIONSHIP_ID), then the type of relationship is captured \nin this field. Note that the type of relationship in this field may not correspond with the dispenser class \ncode for the pharmacy (DISPENSER_CLASS). \nAdditional details regarding the National Council for Prescription Drug Programs (NCPDP) source data \nare available at: http://dataq.ncpdp.org/. \n^ Back to TOC ^",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

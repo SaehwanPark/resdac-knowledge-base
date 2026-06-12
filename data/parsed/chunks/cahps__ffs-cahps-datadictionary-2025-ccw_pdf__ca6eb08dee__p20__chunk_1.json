@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p20__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 20,
+  "text": "OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \npl_hospovn: RECODE : Last 6 mths, spend one or more nights in a hospital \nSAS Format: YNA \n1: YES \n2: NO \npl_paperwk: RECODE : Last 6 mths, health plan give forms to fill out \nSAS Format: YNA \n1: YES \n2: NO \nprob_errands: RECODE : Do you have difficulty doing errands alone \nSAS Format: YNA \n1: YES \n2: NO \nproxy: RECODE : Someone helped complete survey \nSAS Format: YNA \n1: YES \n2: NO",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

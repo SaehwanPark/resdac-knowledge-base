@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_62",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "inpatient hospital admissions during year XXX\nU_MEDICARE_READMITS # Medicare hospital inpt readmissions within 30 days (excl transfers) XXX\nMonthly Medicare Utilization U_MEDICARE_IER_CNT_1 - 12 Total number of Medicare Inpatient ER visits per month XXX\nU_MEDICARE_OER_CNT_1 - 12 Total number of Medicare Hospital Outpatient ER visits per month XXX\nU_MEDICARE_HH_VST_CNT_1 - 12 Total number of Medicare FFS month Home Health visit count XXX\nU_ACUTE_DAY_COV_DAY_CNT_1 - 12 Total number of Medicare",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

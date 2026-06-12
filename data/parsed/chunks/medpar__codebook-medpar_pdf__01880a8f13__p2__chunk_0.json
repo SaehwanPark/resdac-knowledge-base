@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nApril 2025 \nK. Schneider \nRemoved values to comply with NUBCTM licensing for: \nIP_ADMSN_TYPE_CD, SRC_IP_ADMSN_CD, and \nDSCHRG_DSTNTN_CD \n4.2 \nDecember 2022 K. Schneider \nAdded 11 new variables: \nCLNCL_TRIL_SW \nDRG_GRPR_VRSN_CD \nEMER_USE_SW \nEXPNDD_ACS_SW \nHOSP_AT_HOME_CHRG_AMT \nHOSP_AT_HOME_FROM_DT \nHOSP_AT_HOME_THRU_DT \nNO_PSTV_TEST_SW",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

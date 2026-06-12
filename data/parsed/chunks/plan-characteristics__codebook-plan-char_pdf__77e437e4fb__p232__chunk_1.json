@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p232__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 232,
+  "text": "a standard retail pharmacy) during the pre-initial \ncoverage limit (ICL) phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nStarting in 2016, CMS changed how they describe pharmacy networks. The INP are currently referred \nto as standard retail pharmacies. There is no change in the meaning of the variable, and the data \nvalues are the same over time. \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

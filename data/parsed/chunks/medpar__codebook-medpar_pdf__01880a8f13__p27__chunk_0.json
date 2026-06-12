@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 27,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n11 \nBASE_OPRTG_DRG_AMT \nLABEL: \nBase Operating DRG Amount \nDESCRIPTION: The sum of the claim base operating DRG amounts reported on the claims that comprise the stay. \nSHORT NAME: BASE_OPRTG_DRG_AMT \nLONG NAME: BASE_OPRTG_DRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field was new in 2011. \nThis field is derived by accumulating the Claim Base Operating DRG amount",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

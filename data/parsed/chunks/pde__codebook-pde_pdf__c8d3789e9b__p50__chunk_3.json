@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p50__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 50,
+  "text": "usually represents a unique individual prescriber (i.e., a prescribing provider), but can \noccasionally represent an entity or organization (e.g., a clinic or specialized unit of a hospital). \nFrom 2006–2013, when CMS privacy restrictions prohibited release of this variable, the CCW created a \nunique CCW prescriber identifier by cross walking all of the possible identifiers for each prescriber and \nassigning a CCW_PRSCRBR_ID to represent an individual medical practitioner. This allowed PDE",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

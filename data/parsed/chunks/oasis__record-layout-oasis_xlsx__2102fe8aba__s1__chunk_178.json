@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_178",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "receive health, personal, or support services or assistance: yes, family or friends. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0880_AFDC_NO_AST (M0880) No Assistance/Services Received After discharge, does patient receive health, personal, or support services or assistance: no assistance or services. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0890_HOSP_RSN (M0890) Reason Admitted to Hospital Reason admitted to acute care hospital. 01 = Hospitalization for emergent (unscheduled) care\n02 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

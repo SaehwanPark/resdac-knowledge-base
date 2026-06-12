@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s7__chunk_3",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 7,
+  "text": "and DSNP_ZERODOLLAR\n44835 Plan Base\nPlan Crosswalk Edited length of DED_COSTSHARE_TIERS field in Plan Base File to 7 (rather than 6). Added new annual variables to Plan Croswalk file for 2020 and 2021 files: CONTRACT_ID_YY, PLAN_ID_YY and PTCD_INDICATOR_YY\n44470 Service Area File Added new variable STATE_ABBRV to the layout\n44166 SNP Contract Clarified that SNP_PERCENTAGE_TYPE is not available after 2017\n43739 Tier Edit to Plan Base File: \nUpdated DED_COSTSHARE_TIERS value descriptions\nUpdated",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

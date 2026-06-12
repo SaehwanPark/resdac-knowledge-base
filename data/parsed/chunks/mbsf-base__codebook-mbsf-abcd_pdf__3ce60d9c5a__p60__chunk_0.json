@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p60__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 60,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \n52 \nSAMPLE_GROUP \nLABEL: \nMedicare Sample Group Indicator \nDESCRIPTION: Medicare 1, 5, or 20% strict sample group indicator. \nSHORT NAME: SAMPLE_GROUP \nLONG NAME: SAMPLE_GROUP \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCCW (derived) \nVALUES: \n01, 04, 15, null/missing (not included in 20% sample for the year) \nCOMMENT: \nCCW creates the sample values using standard CMS processes",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

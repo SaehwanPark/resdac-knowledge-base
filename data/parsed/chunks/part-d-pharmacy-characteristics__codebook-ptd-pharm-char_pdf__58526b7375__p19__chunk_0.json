@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 19,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n14 \nPRIMARY_DISPENSER_TYPE \nLABEL: \nPharmacy Primary Dispenser Type Code \nDESCRIPTION: This variable describes the type of pharmacy that filled the prescription. NCPDP requires all providers \nto specify a primary dispenser type. \nSHORT NAME: — \nLONG NAME: PRIMARY_DISPENSER_TYPE \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n\n01 = Community/retail pharmacy, defined as a pharmacy where",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

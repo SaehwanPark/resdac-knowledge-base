@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p118__chunk_3",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 118,
+  "text": "the state’s taxation \ndivision (e.g., DOR, OK TAX). \nIf PRVDR_NUM_SYS equals “8” (Other), then this value is the name of the entity (e.g., SSA, DEA). \nIf PRVDR_NUM_SYS equals “9” (Old state provider ID), then this variable is set to the applicable ANSI \nstate numeric code. \nThe provide type code (PRVDR_NUM_SYS) indicates the type of identifier that has been assigned. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

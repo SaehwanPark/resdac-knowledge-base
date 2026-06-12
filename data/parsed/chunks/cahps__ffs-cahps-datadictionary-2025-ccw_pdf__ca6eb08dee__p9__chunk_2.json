@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p9__chunk_2",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 9,
+  "text": "sa_ptabpbp \nPart a-b plan id \nsa_ptabcntrct \nPart a-b health plan id \nsa_ptab_type \nPart a-b plan type \n$PBT \nsa_plan_name \nPlan name \nsa_pffs \nPrivate fee for service plan \nsa_pbp_type \nPlan type of surveyed plan \n$PBT \nsa_pbp_num \nPlan id of surveyed plan \nsa_partd_stus \nPart d status \n$ID_F \nsa_org_entlmt \nOriginal reason for entitlement \n$OEN \nsa_mmp \nWESTAT: Mmp plan \nsa_mdcr_stus \nReason for beneficiary entitlement \n$MCR \nsa_mdcd_stus \nSample members who are dual eligible \n$ID_F",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

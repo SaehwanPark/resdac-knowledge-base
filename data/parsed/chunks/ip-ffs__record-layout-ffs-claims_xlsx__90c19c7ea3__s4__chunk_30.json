@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_30",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "2 4\nRLT_COND CLM_RLT_COND_CD Claim Related Condition Code CHAR 2 5\nOccurrence code file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 1\nCLM_ID CLM_ID Claim ID CHAR 15 2\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 3\nRLTOCRSQ RLT_OCRNC_CD_SEQ Claim Related Occurrence Code Sequence CHAR 2 4\nOCRNC_CD CLM_RLT_OCRNC_CD Claim Related Occurrence Code CHAR 2 5\nOCRNCDT CLM_RLT_OCRNC_DT Claim Related Occurrence Date DATE 8 6\nSpan code file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

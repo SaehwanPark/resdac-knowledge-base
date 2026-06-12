@@ -1,0 +1,24 @@
+The Plan Characteristics file contains Medicare Advantage plan and Prescription Drug Plan information separated into six subfiles.
+The subfiles are:
+- Plan Base
+- Premium
+- Tier
+- Service Area
+- Plan Crosswalk
+- SNP Contract
+What does this file include? (variable highlights)
+- Initial and gap coverage limits
+- Plan premium amount
+- Plan service area description
+- Crosswalk of current plan ID to previous years
+- Demonstration type
+- Special needs plan type
+- Linkage variables to the PDE and to each of the Plan Characteristic File sub-files:
+- Plan Contract ID, Plan Benefit Package ID (use in combination to link to specific plan)
+ 
+Why do researchers request this file?
+- Studies that compare medication usage and clinical outcomes by plan benefits
+Special considerations
+- Plan identifiers are encrypted in the data prior to the CY2015 file, so researchers must use this file to find out more information about the plan. Beginning with the CY2015 file, plan contract ID numbers are not encrypted
+- This file consists of six sub-files.
+- When the Plan characteristics file is requested and approved, all subfiles are delivered.

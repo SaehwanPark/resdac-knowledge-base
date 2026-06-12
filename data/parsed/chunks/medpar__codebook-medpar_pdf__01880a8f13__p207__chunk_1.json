@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p207__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 207,
+  "text": "SHORT NAME: SPCLUNIT \nLONG NAME: PRVDR_NUM_SPCL_UNIT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nM = PPS-exempt psychiatric unit in a critical access hospital (CAH) \nR = PPS-exempt rehabilitation unit in CAH \nS = PPS-exempt psychiatric unit \nT = PPS-exempt rehabilitation unit \nU = Swing-bed short-term/acute care hospital \nW = Swing-bed long-term hospital \nY = Swing-bed rehabilitation hospital \nZ = Swing-bed rural primary care hospital (eff. 10/97 changed to critical access hospitals)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

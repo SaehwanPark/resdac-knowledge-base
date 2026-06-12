@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_76",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "the diagnosis of Cerebral Palsy - a paralysis related to developmental brain defects or birth trauma. 0 = Unchecked, 1 = Checked, -1 = Unknown\n94 I1V I1V_HEMIPLEGIA 25d(I1v)Hemiplegia/Hemiparesis CHAR 1 Indicates a diagnosis of hemiplegia/hemiparesis - paralysis/partial paralysis (temporary or permanent impariment of sensation, function, motion) of both limbs on one side of the body - usually caused by cerebral hemorrhage, thrombosis, embolism, or tumor. 0 = Unchecked, 1 = Checked, -1 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

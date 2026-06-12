@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p133__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 133,
+  "text": "limit \n(ICL) for the Part D benefit. Plans that use a coinsurance percentage rather than a co-payment amount \nwill not have a value in this field; see instead the corresponding co-payment variable called \n(GAP_INP_COINS_1M). This variable also appears in the Plan Characteristics - Base File (see \nGAP_INP_1M_COPAY_TIER_01 - GAP_INP_1M_COPAY_TIER_09). \nStarting in 2016, CMS changed how they describe pharmacy networks. The INP are currently referred \nto as standard retail pharmacies. There is no",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

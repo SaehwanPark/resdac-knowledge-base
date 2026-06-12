@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p348__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 348,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n330 \nREV_CNTR_4TH_ANSI_CD \nLABEL: \nRevenue Center 4th ANSI Code \nDESCRIPTION: The fourth code used to identify the detailed reason an adjustment was made (e.g., reason for denial \nor reducing payment). \nSHORT NAME: REVANSI4 \nLONG NAME: REV_CNTR_4TH_ANSI_CD \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nNCH \nVALUES: \n*******EXPLANATION OF CLAIM ADJUSTMENT GROUP CODES*******",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

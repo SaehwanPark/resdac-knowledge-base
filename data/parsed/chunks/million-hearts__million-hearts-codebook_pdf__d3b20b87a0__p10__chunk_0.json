@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p10__chunk_0",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 10,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMillion Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 \n5 \nADDRESS_LINE_1 \nLABEL: \nPractice's Address (line 1) \nDESCRIPTION: Practice's address (line 1). \nSHORT NAME: ADDRESS_LINE_1 \nLONG NAME: ADDRESS_LINE_1 \nTYPE: \nCHAR \nLENGTH: \n100 \nFILE(S): \nPractice \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \nEx — 12345 MAIN STREET \nCOMMENT: \nThis field is the street address where billing TIN is located.",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

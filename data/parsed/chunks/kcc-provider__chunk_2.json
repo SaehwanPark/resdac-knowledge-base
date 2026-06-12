@@ -1,0 +1,8 @@
+{
+  "chunk_id": "kcc-provider__chunk_2",
+  "source_document": "data/raw/html/dataset_page/3047d052106df32116d1fcd096c5521ac8f2e200.html",
+  "page": null,
+  "text": "for dialysis, coordinate care across different healthcare settings, and incentivize kidney transplantation.\nWhat does this file include? (variable highlights)\n- Participant Tax Identification Number\n- Individual National Provider Identifier (NPI)\n- CMS Certification Number\n- KCC Model Participant Type\n- Participant relationship to Kidney Contracting Entities under the KCC Model\n- Participant information\nSpecial Considerations\n- This file can be linked to any other CMS file that includes the",
+  "dataset": "kcc-provider",
+  "url": "https://resdac.org/cms-data/files/kcc-provider"
+}

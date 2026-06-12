@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p15__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 15,
+  "text": "claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES: \n001 = Deductible amount \n002 = Coinsurance amount \n003 = Co-payment amount \n004 = The procedure code is inconsistent with the modifier used or a required modifier is missing \n005 = The procedure code/type of bill is inconsistent with the place of service \n006 = The procedure/revenue code is inconsistent with the patient’s age \n007 = The procedure/revenue code is inconsistent with the patient’s sex \n008 = The procedure code",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

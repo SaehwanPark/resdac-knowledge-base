@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p3__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 3,
+  "text": "REV_CNTR. \nAdjusted historical values and formatting for CARR_NUM and \nFI_NUM. Corrected values for CLM_VAL_CD, BENE_STATE_CD, \nDMERC_LINE_PRCNG_STATE_CD, and PRVDR_STATE_CD. Updated \ndescription for NCH_BENE_DSCHRG_DT and PRVDR_NUM. \n1.8 \nFebruary 2021 \nK. Schneider \nK. Russell \nC. Alleman \nMigrated codebook to 2020 document template. Added four fields \ndue to NCH version L updates: \n1. LTCH_DSCHRG_PYMT_ADJSTMT_AMT to IP Base Claim; \n2. ORDRG_PHYSN_NPI to hospice, HH and OP revenue lines; \n3.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

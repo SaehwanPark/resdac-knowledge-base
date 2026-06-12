@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-lt__chunk_1",
+  "source_document": "data/raw/html/dataset_page/e93fb78e4019c671e994a0552e88d01b076e690f.html",
+  "page": null,
+  "text": "With Intellectual Disabilities\nWhat does this file include? (variable highlights)\n- 5 diagnosis codes\n- Admission date\n- Charges and payments (FFS only)\n- Provider identifier\n- Patient discharge status or destination\n- Counts of covered days\nSpecial considerations\n- Encounter record reporting may not be complete. Data reporting may vary by state, year and eligibility group.\n- Stays may be made up of multiple records.\n- Long term care services provided to community-dwelling beneficiaries are",
+  "dataset": "max-lt",
+  "url": "https://resdac.org/cms-data/files/max-lt?page=1"
+}

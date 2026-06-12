@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_9",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Total Deductible/Coinsurance Amount | \n\n | 50 | CLM_TOT_PPS_CPTL_AMT | Claim Total PPS Capital Amount | \n\n | 51 | CLM_PPS_CPTL_FSP_AMT | Claim PPS Capital Federal Specific Portion (FSP) Amount | \n\n | 52 | CLM_PPS_CPTL_OUTLIER_AMT | Claim PPS Capital Outlier Amount | \n\n | 53 | CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT | Claim PPS Capital Disproportionate Share Amount | \n\n | 54 | CLM_PPS_CPTL_IME_AMT | Claim PPS Capital Indirect Medical Education (IME) Amount | \n\n | 55 | CLM_PPS_CPTL_EXCPTN_AMT | Claim PPS",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

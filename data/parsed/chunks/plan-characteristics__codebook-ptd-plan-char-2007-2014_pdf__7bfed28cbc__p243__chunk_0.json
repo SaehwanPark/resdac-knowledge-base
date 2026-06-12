@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p243__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 243,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n230 \nPARTIAL_FLAG \nLABEL: \nPart D Segment Partial County Indicator \nDESCRIPTION: Indicates that the Part D plan benefit package (segment) covers only a portion of the county. \nSHORT NAME: — \nLONG NAME: PARTIAL_FLAG \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nBlank = Plan benefit package segment covers the whole county or does not vary by segment. \nY = Plan benefit",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

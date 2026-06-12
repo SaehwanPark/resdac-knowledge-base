@@ -1,0 +1,9 @@
+The Practice List file contains the list of all practices enrolled in the model, including an indicator if the practice is active and the number of files submitted for the practice.
+What does this file include? (variable highlights)
+- Model-Assigned Practice ID
+- Practice Billing TIN
+- Practice Location
+- Comma-Separated Lists of Affiliated Practice NPIs and CCNs (Facility Numbers)
+A record represents a single physician practice (billing TIN).
+The practice TIN can be linked to other Medicare data that contains TINs.
+The Model-Assigned Practice ID can be used to link all Million Hearts® data files for provider-oriented analytics. It does not link to other CCW provider data.

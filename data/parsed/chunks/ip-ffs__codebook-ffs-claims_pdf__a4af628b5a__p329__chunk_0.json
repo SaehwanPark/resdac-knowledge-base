@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p329__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 329,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n311 \n102 = Major medical adjustment \n103 = Provider promotional \ndiscount (i.e., Senior citizen \ndiscount) \n104 = Managed care withholding \n105 = Tax withholding \n106 = Patient payment option/election \nnot in effect \n107 = Claim/service denied because \nthe related or qualifying \nclaim/service was not paid or \nidentified on the claim \n108 = Claim/service reduced because",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

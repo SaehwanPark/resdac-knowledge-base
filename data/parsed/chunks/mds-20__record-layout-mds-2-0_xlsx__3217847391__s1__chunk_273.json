@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_273",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- exercises/sports. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n452 N4D N4D_MUSIC (N4D) Music CHAR 1 Activity pursuit patterns: general activity preference - music. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n453 N4E N4E_READING (N4E) Reading/Writing CHAR 1 Activity pursuit patterns: general activity preference - reading/writing. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n454 N4F N4F_RELIGIOUS (N4F) Spiritual/Religious Activities CHAR 1 Activity pursuit patterns: general activity preference -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

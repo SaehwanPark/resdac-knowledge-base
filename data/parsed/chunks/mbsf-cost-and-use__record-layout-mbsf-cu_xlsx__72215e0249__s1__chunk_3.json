@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "Beneficiary Payments NUM 12\nSNF_MDCR_PMT Skilled Nursing Facility Medicare Payments NUM 12\nSNF_PRMRY_PMT Skilled Nursing Facility Primary Payer Amount NUM 12\nSNF_STAYS Skilled Nursing Facility Stays NUM 6\nSNF_COV_DAYS Skilled Nursing Facility Medicare Covered Days NUM 6\nHOS_MDCR_PMT Hospice Medicare Payments NUM 12\nHOS_PRMRY_PMT Hospice Primary Payer Amount NUM 12\nHOS_STAYS Hospice Stays NUM 6\nHOS_COV_DAYS Hospice Medicare Covered Days NUM 6\nHH_MDCR_PMT Home Health Medicare Payments NUM",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

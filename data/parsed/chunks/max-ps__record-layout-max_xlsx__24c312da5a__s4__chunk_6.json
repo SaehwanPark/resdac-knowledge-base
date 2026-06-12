@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s4__chunk_6",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 4,
+  "text": "X\n29 TAXONOMY Provider Taxonomy CHAR 12 X X X X\n30 TYPE_CLM_CD Type of claim NUM 1 X X X X\n31 ADJUST_CD Adjustment code NUM 1 X X X X\n32 PHP_TYPE Managed care type of plan code NUM 2 X X X X\n33 PHP_ID Managed care plan identification code CHAR 12 X X X X\n34 MDCD_PYMT_AMT Medicaid payment amount NUM 12 X X X X\n35 TP_PYMT_AMT Third party payment amount NUM 12 X X X X\n36 PYMT_DT Payment/adjudication date DATE 8 X X X X\n37 CHRG_AMT Charge amount NUM 12 X X X X\n38 PHP_VAL Prepaid plan value NUM 12 X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

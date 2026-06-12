@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p122__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 122,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n104 \nCLM_PPS_CPTL_DSPRPRTNT_SHR_AMT \nLABEL: \nClaim PPS Capital Disproportionate Share Amount \nDESCRIPTION: The amount of disproportionate share (rate reflecting indigent population served) portion of the PPS \npayment for capital. \nThis is one component of the total amount that is payable for capital PPS for the claim. The total \ncapital amount, which includes this variable,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__chunk_3",
+  "source_document": "data/raw/html/dataset_page/5f790fcd9499f996f1cbe1ebbbb4d8aa4648a8e3.html",
+  "page": null,
+  "text": "calibration year)\n- Part C V21 scores\n- Part C V22 scores\n- Part C V23 scores\n- Part C V24 scores\n- Part D V05 scores\nThe table below lists the risk models used in each payment year's risk adjustment methodology:\n| Model Output Files | 2019 | 2020 | 2021 | \n| ESRD V21 | X | X | X | \n| V21 | X | - | - | \n| V22 | X | X | X | \n| V23 | X | - | - | \n| V24 | - | X | X | \n| RX | X | X | X | \nEach MOF raw risk score file is based upon different model coefficients and different diagnosis code inputs for",
+  "dataset": "risk-score-mofs",
+  "url": "https://resdac.org/cms-data/files/risk-score-mofs"
+}

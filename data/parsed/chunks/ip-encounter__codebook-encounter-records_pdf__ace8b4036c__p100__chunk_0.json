@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p100__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 100,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nEncounter Records RIFs Codebook │ May 2025 │ V 1.7 \n90 \nORG_NPI \nLABEL: \nOrganization NPI Number \nDESCRIPTION: On an institutional claim or encounter record, the National Provider Identifier (NPI) number assigned \nto uniquely identify the institutional provider certified by Medicare to provide services to the \nbeneficiary. \nFor a non-institutional claim or encounter record, this is the NPI number of the billing provider on the \nclaim.",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

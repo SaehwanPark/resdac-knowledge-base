@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_55",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "artificial entry into alimentary canal). 0 = No, 1 = Yes CHAR 1 x x\nM0250_THH_IV_INFUS (M0250) Intravenous or Infusion Therapy Intravenous or infusion therapy (excludes TPN). 0 = No, 1 = Yes CHAR 1 x x\nM0250_THH_NONE_ABV (M0250) None of the Above Therapies None of the above therapies. 0 = No, 1 = Yes CHAR 1 x x\nM0250_THH_PAR_NUTR (M0250) Parenteral Nutrition Parenteral nutrition (TPN or lipids). 0 = No, 1 = Yes CHAR 1 x x\nM0260_OVRALL_PROGN (M0260) Overall Prognosis Overall prognosis: best",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

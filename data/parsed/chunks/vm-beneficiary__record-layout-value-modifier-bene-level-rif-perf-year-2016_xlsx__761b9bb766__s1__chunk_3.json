@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "hospital admission counted in calculation of ACO-level All Condition Readmission measure. Equal to zero otherwise.\nGENDER Gender Beneficiary gender 6 Char 1 Equals M if beneficiary is male and equals F if beneficiary is female\nDOB Birth date Beneficiary date of birth 7 Num 8 MM/DD/YYYY\nDIED Died during 2016 Indicator for whether beneficiary died in 2016 8 Num 8 Populated only for records with Inpatient_stay not equal to missing. Equals 1 if beneficiary died in 2016\nBENE_RISK_SCORE_PCTL Risk",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

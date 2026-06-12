@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "CCW Prescriber Identifier NUM 12 X X X X X - - - -\nPDE_PRSCRBR_ID_FRMT_CD 4 PDE_PRSCRBR_ID_FRMT_CD PDE Prescriber ID Format Code CHAR 1 X X X X X - - - -\nPRAUTHYN 5 PRIOR_AUTHORIZATION_YN Prior Authorization Indicator CHAR 2 X - - - - - - - -\nTIER_ID 5 TIER_ID Medicare Part D Formulary Tier Number CHAR 2 X - - - - - - - -\nQTYLMTYN 5 QUANTITY_LIMIT_YN Quantity Limit Indicator CHAR 2 X - - - - - - - -\nSTEP 5 STEP Maximum Step Number CHAR 2 X - - - - - - - -\nFORMULARY_ID FORMULARY_ID Formulary ID",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

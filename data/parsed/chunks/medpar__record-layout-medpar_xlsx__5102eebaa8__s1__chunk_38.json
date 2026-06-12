@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "ESRD_SETG_IND_5_CD Dialysis service type code 5 Char 2 X - X - - X X - - - - - - - X X - -\nRC_NDC_1_CD RC_NDC_1_CD Revenue Center National Drug Code (NDC) 1 Char 11 - - - - - - - - - - - - - - - - X X\nRC_NDC_2_CD RC_NDC_2_CD Revenue Center National Drug Code (NDC) 2 Char 11 - - - - - - - - - - - - - - - - X X\nRC_NDC_3_CD RC_NDC_3_CD Revenue Center National Drug Code (NDC) 3 Char 11 - - - - - - - - - - - - - - - - X X\nRC_NDC_4_CD RC_NDC_4_CD Revenue Center National Drug Code (NDC) 4 Char 11 - -",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

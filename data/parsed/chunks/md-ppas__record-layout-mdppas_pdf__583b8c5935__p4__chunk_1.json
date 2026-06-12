@@ -1,0 +1,8 @@
+{
+  "chunk_id": "md-ppas__record-layout-mdppas_pdf__583b8c5935__p4__chunk_1",
+  "source_document": "data/raw/assets/pdf/583b8c59350c60f3a057b741c5d5e47e73c3d990.pdf",
+  "page": 4,
+  "text": "living facility, custodial care facility, or group home) \nClaims \npos_other \n% of line items delivered in other places of service \nClaims \n\nGeographic location \nDescription \nData Source \nstate \nState abbreviation with the most line items for that NPI \n99=missing \nClaims \nstate_multi \nMultiple state indicator (1=multiple states; 0=single state) \nClaims \ncbsa_type \nType of CBSA for physician \n1=Metropolitan area \n2=Micropolitan area \n3=non-CBSA \n9=missing CBSA code \nClaims \ncbsa_cd \nCBSA code",
+  "dataset": "md-ppas",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mdppas.pdf"
+}

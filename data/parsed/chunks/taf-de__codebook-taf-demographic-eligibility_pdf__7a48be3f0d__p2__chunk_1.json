@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 2,
+  "text": "description for ELGBLTY_CHG_RSN_CD_01- \nELGBLTY_CHG_RSN_CD_12 \n• Embellished comment for AGE_GRP_CD \n• Added values for MRTL_STUS_CD, RSTRCTD_BNFTS_CD_LTST \n1.8 \nDecember 2024 K. Schneider \n• Added valid values for: ELGBLTY_CHG_RSN_CD_01–12, \nLCKIN_PRVDR_TYPE_CD_1–3, MRTL_STUS_CD, \nRSTRCTD_BNFTS_CD_01–12 \n• Added value for Guam to STATE_CD and SUBMTG_STATE_CD \nand added detail to SUBMTG_STATE_CD for MT TPA (94) and \nWY CHIP (93) \n1.7 \nDecember 2023 K. Schneider \nAdded comment to BENE_ZIP_CD",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

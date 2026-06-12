@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s3__chunk_9",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 3,
+  "text": "days NUM 5 X X X\n52 LT_CARE_LVE_DAY_CNT Leave days NUM 5 X X X\n53 PATIENT_STATUS_CD Patient status NUM 2 X X X\n54 PATIENT_LIB_AMT Patient liability amount NUM 12 X X X\n55 UPDT_DT MAX file update date DATE 4 X X NP\n1 Year of Data File - for all columns under \"Year of Data File\": X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values);",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

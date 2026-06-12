@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p30__chunk_2",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 30,
+  "text": "for the following \nvariables in the Clinical and Staging file: AJCC_EDITION, CNCR_TYPE_RPTD, ESTROGEN_RECEPTOR, \nHER2_AMPLIFICATION, HISTOLOGY, ICD10_CNCR_DGNS_CD_RPTD, INITL_DGNS_DT, METASTASIS, \nNODAL_DISEASE, PRMRY_TUMOR, and PROGESTERONE_RECEPTOR. Such beneficiaries will also not \nhave records in the current clinical status file. \n\nA second group of beneficiaries also has blank values for the variables listed above, those where \nRPTD_TO_RGSTRY = 1 but whose reported values were determined",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

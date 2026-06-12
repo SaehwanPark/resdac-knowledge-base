@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p55__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 55,
+  "text": "1). \nSHORT NAME: BNDLD_MODEL_DSCNT_PCT \nLONG NAME: BNDLD_MODEL_DSCNT_PCT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \nX.XXXX \nCOMMENT: \nThe hospital must be participating in the Model 1 Bundled Payments for Care Improvement initiative \n(BPCI) — refer to CARE_IMPRVMT_MODEL_1_CD. The dollar amount of the payment reduction for the \nservice is in the field called BNDLD_ADJSTMT_AMT. \nThis field comes from the Claim Bundled Model Discount (CLM-BNDLD-MODEL-1-DSCNT-PCT) that is \npresent on the last",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p58__chunk_2",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 58,
+  "text": "RDS_IND_05 \nRDS_IND_06 \nRDS_IND_07 \nRDS_IND_08 \nRDS_IND_09 \nRDS_IND_10 \nRDS_IND_11 \nRDS_IND_12 \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nY = Employer subsidized for the retired beneficiary \nN = No employer subsidization for the retired beneficiary \n0 = Not Medicare enrolled for the month \nNull/missing = Enrolled in Medicare A and/or B, but no Part D enrollment data for the beneficiary. \nCOMMENT: \nSome employers offer prescription drug plans to their",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

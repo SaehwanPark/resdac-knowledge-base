@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p10__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 10,
+  "text": "determine the total Medicare \npayments for acute hospitalizations for the beneficiary, this field must be added to the total Medicare \npayment amount for acute inpatient hospitalizations. \nSHORT NAME: — \nLONG NAME: ACUTE_PERDIEM_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis variable was new in 2010; it will always be null/missing in earlier files. \nACUTE_MDCR_PMT must be added to this field to obtain the total Medicare payments for the year. \nAcute inpatient",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

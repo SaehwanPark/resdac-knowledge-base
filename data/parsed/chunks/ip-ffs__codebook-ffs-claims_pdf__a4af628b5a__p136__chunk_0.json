@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p136__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 136,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n118 \n49 = Site of service flag not = to 0 or \n(APC 0033 is not on the claim and \nservice indicator = “P” or APC = \n0322, 0325, 0373, 0374) \n50 = Wage index not located \n51 = Wage index equals zero \n52 = Provider specific file wage index \nreclassification code invalid or missing \n53 = Service from date not numeric or < \n20000801 \n54 = Service from date < provider effective",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

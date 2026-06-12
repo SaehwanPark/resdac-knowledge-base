@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p12__chunk_2",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 12,
+  "text": "NAME: — \nLONG NAME: HCID \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nHCIdea™ Prescriber Database \nVALUES: \nNull, or any positive or negative number \nCOMMENT: \nThis variable was new in 2014; beginning with 2014 Part D Prescriber Characteristics file, the NPI is \nused in place of the CCW_PRSCRBR_ID. \nThe HCID was historically used to assign the CCW-assigned prescriber identifier (CCW_PRSCRBR_ID). \nCCW purchased the HCIdea™ Prescriber Database to enable us to roll-up various IDs in the Part D",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

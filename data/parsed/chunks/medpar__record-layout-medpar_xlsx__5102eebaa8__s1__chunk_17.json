@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "($) Num 8 X X X X X X X X X X X X X X X X X X\nPRPAY_CD BENE_PRMRY_PYR_CD Primary payer responsibility code Char 1 X X X X X X X X X X X X X X X X X X\nPRPAYAMT BENE_PRMRY_PYR_AMT Primary payer paid amount Num 8 X X X X X X X X X X X X X X X X X X\nDRG_CD DRG_CD Diagnosis Related Group Code (or MS-DRG Code) Char 4 X X X X X X X X X X X X X X X X X X\nOUTLR_CD DRG_OUTLIER_STAY_CD DRG Cost or Day Outlier code Char 1 X X X X X X X X X X X X X X X X X X\nOUTLRAMT DRG_OUTLIER_PMT_AMT DRG Outlier Approved",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

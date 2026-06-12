@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p27__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 27,
+  "text": "pTis (Paget) \nNull/missing = n/a (not required for cancer type); or not reported by OCM participant (reference \ndetails in the RPTD_TO_RGSTRY codebook entry) \n\nCOMMENT: \nPractices were required to report clinical and staging data associated with each beneficiary’s assigned \ncancer. Primary Tumor (T) describes the size and/or the extension of the primary tumor specifically \ndefined for each cancer site. Generally, the higher the Primary Tumor category (value), the greater the \nextent of the",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

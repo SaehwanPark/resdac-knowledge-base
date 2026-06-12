@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p205__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 205,
+  "text": "populate “22” \nPsych Unit of Rehab Facility: \nIf “SD”, populate, “30” \nRehab/Psych Unit of Hospital: \nIf “TE” or “SE”, populate “33” \nRehab Unit of Psych Facility: \nIf “TF” populate, “40” \nIf “TG” populate, “41” \nIf “TH” populate, “42” \nIf “TJ” populate, “43” \nIf “TK” populate, “44” \n\nFor all else blank will be mapped in positions 1–6 of this field. \n\n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

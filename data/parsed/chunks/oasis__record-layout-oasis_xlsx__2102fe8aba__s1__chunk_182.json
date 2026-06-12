@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_182",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0895) IV Catheter-Related Infection Reason for hospitalization: IV catheter-related infection. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_MED (M0895) Improper Medication Administration Reason for hospitalization: improper medication administration, medication side effects, toxicity, anaphylaxis. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_INJURY (M0895) Injury Caused by Fall/Accident Reason for hospitalization: injury caused by fall or accident at home. 0 = No, 1 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

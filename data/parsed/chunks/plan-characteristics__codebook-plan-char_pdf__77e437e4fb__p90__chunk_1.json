@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p90__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 90,
+  "text": "known as a preferred pharmacy within a split network) \nduring the coverage gap phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis variable will only be populated if the plan has an enhanced benefit design with extra coverage in \nthe gap. The coverage gap is technically referred to as the initial coverage limit (ICL) for the Part D \nbenefit. \nStarting in 2016, CMS changed how they describe pharmacy networks. The INPP are currently referred",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

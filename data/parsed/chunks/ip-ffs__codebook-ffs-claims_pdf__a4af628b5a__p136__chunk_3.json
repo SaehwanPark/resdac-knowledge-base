@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p136__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 136,
+  "text": "= Date of birth not numeric or = zero \n55 = Patient weight not numeric or = zero \n56 = Patient height not numeric or = zero \n57 = Revenue center code not in range \n58 = Condition code not = “73” or “74” or \nblank \n60 = MSA wage adjusted rate record not \nfound \n98 = Claim through date before 4/1/2005 \nor not numeric \n\nCOMMENT: \nThe payment return code identifies the type of payment calculated by the PRICER software. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

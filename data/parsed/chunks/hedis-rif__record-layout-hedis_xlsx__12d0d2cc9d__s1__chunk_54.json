@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_54",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "NUM 3 92 104 146 151 149\nIPU_NMRTR_IP_DSCHRG_CNT Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Total IP Discharges NUM 3 93 105 147 — —\nIPU_NMRTR_IP_DAYS_CNT Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Total Inpatient Days NUM 3 94 106 148 — —\nIPU_NMRTR_IP_MDCL_DSCHRG_CNT Inpatient Utilizatn Hospital-Acute Care (IPU) Nmrtr: Medical Discharges Count NUM 3 95 107 149 — —\nIPU_NMRTR_IP_MDCL_DAYS_CNT Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Medical Days",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p51__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 51,
+  "text": "by the Part D sponsor on the PDE record submitted to \nCMS. \nHistorically, this identifier could be an NPI, DEA identification number, UPIN, or state license number. \nAfter April 2013, it is an NPI. \nSHORT NAME: PRSCRBR_ID_QLFYR_CD \nLONG NAME: PRSCRBR_ID_QLFYR_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE \nVALUES: \n01 = National Provider Identifier (NPI) \n06 = Unique Physician Identification Number (UPIN) \n08 = State license number \n12 = Drug Enforcement Administration (DEA) number \nNull/missing",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

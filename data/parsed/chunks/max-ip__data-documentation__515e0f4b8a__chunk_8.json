@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__data-documentation__515e0f4b8a__chunk_8",
+  "source_document": "data/raw/html/documentation_page/515e0f4b8a82429031028f6befb46024fb536839.html",
+  "page": null,
+  "text": "| Procedure code system (5th procedure) | \n\n | PRCDR_CD_5 | Procedure code (5th procedure) | \n\n | PRCDR_CD_SYS_6 | Procedure code system (6th procedure) | \n\n | PRCDR_CD_6 | Procedure code (6th procedure) | \n\n | RCPNT_DLVRY_CD | Delivery code (MAX IP) | \n\n | MDCD_CVRD_IP_DAYS | Medicaid covered inpatient days | \n\n | PATIENT_STATUS_CD | Patient status | \n\n | DRG_REL_GROUP_IND | Diagnosis Related Group (DRG) indicator | \n\n | DRG_REL_GROUP | Diagnosis Related Group (DRG) | \n\n | UB_92_REV_CD_GP_1 |",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip/data-documentation"
+}

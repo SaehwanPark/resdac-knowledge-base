@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p102__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 102,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n91 \nMDCR_MC_PTA_PTB_CAPTD_SPEND \nLABEL: \nMedicare PTA/PTB Managed Care Capitated Payment Amount — Total \nDESCRIPTION: This variable is total capitated premium payment amount for Medicare Part A and Part B for the \nbeneficiary during the year. Note that only Part A and B capitated payments are included (not Part D). \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS Medicare Advantage Prescription Drug System (MARx) data (derived)",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

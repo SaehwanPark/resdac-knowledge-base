@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_11",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Primary Payer Paid Amount | \n\n | 58 | DRG_CD | Diagnosis Related Group Code (or MS-DRG Code) | \n\n | 59 | DRG_OUTLIER_STAY_CD | DRG Cost or Day Outlier code | \n\n | 60 | DRG_OUTLIER_PMT_AMT | DRG Outlier Approved Payment Amount ($) | \n\n | 61 | DRG_PRICE_AMT | DRG Price Amount ($) | \n\n | 62 | DRG_GRPR_VRSN_CD | Medicare-Severity Diagnosis Related Group (MS-DRG) Grouper Version | \n\n | 63 | CLM_IP_INITL_MS_DRG_CD | MedPAR Claim Inpatient Initial MS-DRG Code | \n\n | 64 | IP_DSPRPRTNT_SHR_AMT |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

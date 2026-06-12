@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-entity__chunk_1",
+  "source_document": "data/raw/html/dataset_page/fe306019948692b5209277e7fd3e0aeb53e463a9.html",
+  "page": null,
+  "text": "performance goals. An Entity can be a Medicare group practice, an Accountable Care Organization, a State, or other organizations or groups of organizations.\nWhat does this file include? (variable highlights)\n- Model ID (in which the Entity participates)\n- Model Name (in which the Entity particpates)\n- Entity ID\n- Entity Name\n- Entity Type\n- Entity Start Date\n- Entity End Date\nThe Entity ID is unique to CMMI systems and cannot be used to link to claims data or other CCW data. The Entity ID is",
+  "dataset": "cmds-entity",
+  "url": "https://resdac.org/cms-data/files/cmds-entity"
+}

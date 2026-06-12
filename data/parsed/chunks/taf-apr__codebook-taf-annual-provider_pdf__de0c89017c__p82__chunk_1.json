@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p82__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 82,
+  "text": "SOURCE: \nT-MSIS annual provider TAF \nVALUES: \n1 = T-MSIS taxonomy code \n2 = Provider specialty code \n3 = Provider type code \n4 = Authorized category of service code \nN = NPPES primary taxonomy code (derived by joining provider ID to the CMS National Plan and \nProvider Enumeration System [NPPES]) \n\nCOMMENT: \nValues “1” to “4” are derived from T-MSIS. Value “N” indicates that the corresponding \nPRVDR_CLSFCTN_CD is derived from NPPES. \nThe classification code values are in the PRVDR_CLSFCTN_CD",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

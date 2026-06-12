@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p41__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 41,
+  "text": "VALUES: \n10 = Aged without end-stage renal disease (ESRD) \n11 = Aged with ESRD \n20 = Disabled without ESRD 21 = Disabled with ESRD \n31 = ESRD only \nCOMMENT: \nAnalysts can use this variable to quickly distinguish between the aged, disabled, and ESRD populations. \nThis field is coded from age, original reason for entitlement, current reason for entitlement and ESRD \nindicator contained in the enrollment data base at CMS, as of the claim through date. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

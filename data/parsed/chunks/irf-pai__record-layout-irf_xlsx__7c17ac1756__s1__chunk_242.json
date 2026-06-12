@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_242",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Dressing Discharge Stageable on Admission Number CHAR 1 The number of unstageable pressure ulcers due to non-removable dressing/device that were stageable on admission.\n210 UNSTGBL_ULCR_AND_OR_ADMSN_NUM UNSTGBL_ULCR_AND_OR_ADMSN_NUM M0300F1 Unstageable Pressure Ulcers Slough and/or Eschar Admission Number CHAR 1 The number of unstageable pressure ulcers at admission due to coverage of wound bed by slough and/or eschar.\n211 UNSTGBL_ULCR_AND_OR_DSCHRG_NUM UNSTGBL_ULCR_AND_OR_DSCHRG_NUM M0300F1",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

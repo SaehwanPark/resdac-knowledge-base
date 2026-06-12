@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_17",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "| Provider Validation Type Code | \n\n | 102 | RR_BRD_EXCLSN_IND_SW | Railroad Board Exclusion Indicator Switch | \n\n | 103 | CLM_MODEL_REIMBRSMT_AMT | Claim Model Reimbursement Amount | \n\n | 104 | CLM_ADJUST_GRP_CD | Claim Adjustment Group Code | \n\n | 105 | CLM_ADJUST_RSN_CD | Claim Adjustment Reason Code | \n\n | 106 | CLM_CLNCL_TRIL_NUM | Clinical Trial Number |",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_92",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Utilization (AHU) Denominator for Outliers Indicator NUM 3 — 181 222 211 209\nAHU_IP_SRGRY_DSCHRG_CNT Acute Hospital Utilization (AHU): Observed IP Discharges, Surgery NUM 3 — 182 — — —\nAHU_IP_MDCL_DSCHRG_CNT Acute Hospital Utilization (AHU): Observed IP Discharges, Medical NUM 3 — 183 — — —\nAHU_IP_TOT_DSCHRG_CNT Acute Hospital Utilization (AHU): Observed IP Discharges, Total NUM 3 — 184 — — —\nAHU_SRGRY_DSCHRG_CNT Acute Hospital Utilization (IHU): Observed Discharges, Surgery NUM 3 — — 223 212",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

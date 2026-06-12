@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 12,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n7 \nCCW_PHARM_ID \nLABEL: \nCCW Pharmacy Identifier \nDESCRIPTION: This is the CCW-assigned pharmacy identification number that is used to uniquely identify pharmacy \nentities. The ID is specific to the CCW and not applicable to any other identification system or data \nsource. \nThis field also enables linkage between pharmacies in the Part D Event File and the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

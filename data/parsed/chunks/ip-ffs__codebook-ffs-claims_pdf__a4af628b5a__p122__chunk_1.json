@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p122__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 122,
+  "text": "amount that is payable for capital PPS for the claim. The total \ncapital amount, which includes this variable, is in the variable CLM_TOT_PPS_CPTL_AMT. \nSHORT NAME: DISP_SHR \nLONG NAME: CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nMedicare payments are described in detail in a series of Medicare Payment Advisory Commission \n(MedPAC) documents called “Payment Basics” (reference: https://www.medpac.gov/document-\ntype/payment-basic/). \nAlso, in",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

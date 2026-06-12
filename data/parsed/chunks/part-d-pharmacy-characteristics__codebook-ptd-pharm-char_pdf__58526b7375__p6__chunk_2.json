@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p6__chunk_2",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 6,
+  "text": "NUM \nLENGTH: \n12 \nSOURCE: \nPDE and NCDPD DataQ™ (derived) \nVALUES: \nNull/missing, or a 5-digit numeric value \nCOMMENT: \nThis variable is only available 2006–2013. Investigators who wish to obtain Pharmacy Characteristics \nfiles must choose between the pharmacy IDs on the PDE (variable called the service provider ID \n[SRVC_PRVDR_ID]), or the CCW_PHARM_ID (or, starting in 2014, the proprietary NCPDP_ID) that will \nallow linkage between the PDE and Pharmacy Characteristics Files. \nBeginning with",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

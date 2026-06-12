@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_424",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "limitations\n88 = Not attempted due to medical condition or safety concerns\n360 GG0170M2_1_STP_GOAL_CD GG0170M2_1_STP_GOAL_CD GG0170M2 Discharge Goal 1 Step Code - The data in this column indicates the patient's discharge goal to step over a curb or up and down one step. CHAR 2 The data in this column indicates the patient's discharge goal to step over a curb or up and down one step. 01 = Dependent\n02 = Substantial/maximal assistance\n03 = Partial/moderate assistance\n04 = Supervision or touching",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

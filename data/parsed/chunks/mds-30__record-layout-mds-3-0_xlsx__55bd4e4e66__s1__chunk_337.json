@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_337",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "K0300_WT_LOSS_CD K0300 Weight Loss Code CHAR 1 The data in this column indicates if the resident had a weight loss 5% or more in the last month or 10% or more in last six months. -=Not assessed/no information\n0=No or unknown\n1=Yes, on physician-prescribed weight-loss regimen\n2=Yes, not on physician-prescribed weight-loss regimen\n376 K0310_WT_GAIN_CD K0310_WT_GAIN_CD K0310 Weight Gain Code CHAR 1 The data in this column indicates if the resident had a weight gain 5% or more in the last month or",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

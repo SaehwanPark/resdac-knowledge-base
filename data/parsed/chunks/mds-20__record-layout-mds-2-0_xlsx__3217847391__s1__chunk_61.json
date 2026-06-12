@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_61",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= Space\n121 B1 B1_COMATOSE (B1) Comatose CHAR 1 Cognitive patterns: comatose. 0 = No, 1 = Yes, \"-\" = Unknown.\n122 B2A B2A_ST_MEMORY (B2A) Short Term Memory CHAR 1 Cognitive patterns: short-term memory OK 0 = Memory OK, 1 = Memory Problem, \"-\" = Unknown, -2 = Space\n123 B2B B2B_LT_MEMORY (B2B) Long Term Memory CHAR 1 Cognitive patterns: long-term memory OK 0 = Memory OK, 1 = Memory Problem, \"-\" = Unknown, -2 = Space\n124 B3A B3A_CURNT_SEASON (B3A) Current Season CHAR 1 Cognitive patterns:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

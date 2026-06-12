@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_7",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "MM is the month 01 through 12), and the \nassociated model segment code indicator (the risk score factor code, or PTC_MODEL_SGMT_CD_MM and \nPTD_MODEL_SGMT_CD_MM) that indicates which segment is appliable for that month. The base file also contains the \nadditional relative risk scores associated with the beneficiary for both Part C and Part D. \n5.2 Hierarchical Condition Categories \nThe CMS-HCC diagnostic classification system begins by classifying all ICD-10-CM diagnosis codes into diagnostic",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

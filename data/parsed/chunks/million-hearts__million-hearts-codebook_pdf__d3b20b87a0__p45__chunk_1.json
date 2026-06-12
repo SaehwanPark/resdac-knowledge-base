@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p45__chunk_1",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 45,
+  "text": "Million Hearts Data Registry \nVALUES: \nEx — 21.7 \nCOMMENT: \nThis field is the ACC risk score calculated from information during the visit. The higher the score, the \ngreater the ASCVD risk. If the visit is after the baseline visit, then the RISK_SCORE includes the value \nfor that visit. Otherwise, at baseline, the two risk score fields match (i.e., BASELINE_SCORE equals \nRISK_SCORE). \n^ Back to TOC ^",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

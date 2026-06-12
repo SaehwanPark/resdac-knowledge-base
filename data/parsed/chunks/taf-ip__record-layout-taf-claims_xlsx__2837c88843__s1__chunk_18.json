@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "Border State Indicator CHAR 1 115\nIP_MH_TXNMY_IND Mental Health Provider Taxonomy Indicator CHAR 1 116\nIP_SUD_TXNMY_IND Substance Use Disorder Provider Taxonomy Indicator CHAR 1 117\nNCVRD_DAYS Count of Medicaid Noncovered Days NUM 8 118\nCVRD_DAYS Count of Medicaid Covered Inpatient Days NUM 8 119\nOUTLIER_DAYS Outlier Days Count NUM 8 120\nOUTLIER_TYPE_CD Outlier Type Code CHAR 2 121\nDRG_OUTLIER_AMT DRG Outlier Additional Payment Amount NUM 8 122\nFIXD_PYMT_IND Fixed Payment Indicator CHAR 1",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

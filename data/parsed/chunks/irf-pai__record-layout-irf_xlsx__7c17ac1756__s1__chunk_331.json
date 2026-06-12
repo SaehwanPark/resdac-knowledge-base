@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_331",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n310 GG0130C2_TOILT_GOAL_BY_END_CD GG0130C2_TOILT_GOAL_BY_END_CD GG0130C2 Discharge Goal Toileting Hygiene Code - The data in this column indicates the patient's discharge goal for toileting hygiene care. CHAR 2 The data in this column indicates the patient's discharge goal for toileting hygiene care. 01 = Dependent\n02 = Substantial/maximal assistance\n03 = Partial/moderate",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

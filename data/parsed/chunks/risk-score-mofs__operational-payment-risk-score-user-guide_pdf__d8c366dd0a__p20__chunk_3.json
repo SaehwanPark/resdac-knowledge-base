@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p20__chunk_3",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 20,
+  "text": "This set of files includes the RX MOF executable file, and \nonce decrypted and uncompressed it includes the .dat \n(data) file, .fts (layout and record counts) file, and version 8 \nSAS read-in programs. \n*V24 is not applicable for 2019; the CCW team includes this only as an example of the naming convention. \nDifferent MOFs apply for each payment year; they include only MOFs applicable to the years in the data request. The \nfiles within the CCW VRDC have a different naming convention, as",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

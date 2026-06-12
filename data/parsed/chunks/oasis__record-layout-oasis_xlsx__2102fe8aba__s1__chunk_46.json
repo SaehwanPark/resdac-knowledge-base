@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_46",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "poorly controlled, history of rehospitalizations. CHAR 2 x x\nM0230_PRI_DGN_ICD (M0230) Primary Diagnosis and ICD Code - a The values available describing the primary diagnosis. CHAR 7 x x\nM0240_OTH_DGN1_SEV (M0240) Other Diagnosis Severity Rating - b Other diagnosis severity rating (0-4) b. 00 = Asymptomatic, no treatment needed at this time. \n01 = Symptoms well controlled with current therapy.\n02 = Symptoms controlled with difficulty, affecting daily functioning; patient needs ongoing",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

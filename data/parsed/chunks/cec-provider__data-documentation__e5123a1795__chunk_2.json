@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cec-provider__data-documentation__e5123a1795__chunk_2",
+  "source_document": "data/raw/html/documentation_page/e5123a1795316feb41120271adc8af7000686d48.html",
+  "page": null,
+  "text": "Name | \n| NPI_NUMBER | Individual NPI Number | \n| PROVIDER_TYPE_DESC | Provider Type Description | \n| CCN | CMS Certification Number (CCN; formerly OSCAR number) | \n| CONTACT_FIRST_NAME | Practitioner First Name | \n| CONTACT_LAST_NAME | Practitioner Last Name | \n| INSTITUTE_TYPE_DESC | Institute Type Description |",
+  "dataset": "cec-provider",
+  "url": "https://resdac.org/cms-data/files/cec-provider/data-documentation"
+}

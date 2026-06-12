@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p219__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 219,
+  "text": "VALUES: \n0 = No diagnostic radiology (revenue code not 032x) \n1 = Yes diagnostic radiology (revenue code 032x) \nCOMMENT: \nThis field is derived by checking for revenue center code 032X on any of the claim records included in \nthe stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

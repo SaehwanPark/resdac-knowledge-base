@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p126__chunk_2",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 126,
+  "text": "Beneficiary included in the 15 percent sample for the year \nNull/missing = Beneficiary not included in any sample group for the year \nCOMMENT: \nTo use the random 5 percent sample, users must combine the 1 and 4 percent samples (i.e., \nspecify that SAMPLE_GROUP can equal “01” or “04”). To use the 20 percent sample, users \nmust combine the 1, 4, and 15 percent samples (i.e., specify that SAMPLE_GROUP can equal \n“01”, “04”, or “15”). \nBeneficiaries are assigned to sample groups each year based on",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

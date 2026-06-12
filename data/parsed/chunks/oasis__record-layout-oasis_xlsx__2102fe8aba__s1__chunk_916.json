@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_916",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "noted for all medications in the drug class. 0. No\n1. Yes\n-. Not assessed/no information\n^. Blank CHAR 1 x\nN0415Z1_DRUG_NONE_TKNG_CD High-Risk Drug (Is taking): None of the above Indicates whether the patient is not taking any of the above medications. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110A1A_CHMTHRPY_ADMSN_CD Treatment: Chemotherapy (Admission) Indicates whether the patient was receiving chemotherapy at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

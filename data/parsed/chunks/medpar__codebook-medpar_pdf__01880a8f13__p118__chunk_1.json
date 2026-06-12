@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p118__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 118,
+  "text": "(derived) \nVALUES: \n— \nCOMMENT: \nThis field was new in 2021. \nThis field is derived when the occurrence span code (CLM_OCRNC_SPAN_CD) is equal to “82” on any of \nthe claim records included in the stay, populate the date in (CLM_OCRNC_SPAN_FROM_DT) to this field. \nIf more than one record has an occurrence span code equal to “82”, with different span dates, the date \nfrom the last claim record included in the stay is used. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_1",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "| FI Claim Process Date | \n\n | 9 | CLAIM_QUERY_CODE | Claim Query Code | \n\n | 10 | PRVDR_NUM | Provider Number | \n\n | 11 | PRVDR_FULL_CCN_NUM | Full CMS Certification Number for Provider | \n\n | 12 | CLM_FAC_TYPE_CD | Claim Facility Type Code (FFS) | \n\n | 13 | OWNG_PRVDR_TIN_NUM | Owning Provider Tax Identification Number (TIN) | \n\n | 14 | CLM_SRVC_CLSFCTN_TYPE_CD | Claim Service Classification Type Code (FFS) | \n\n | 15 | CLM_FREQ_CD | Claim Frequency Code (FFS) | \n\n | 16 | FI_NUM | FI or MAC",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_41",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "not receive ADI because of address changes or census block groups. These beneficiaries will receive an imputed ADI National Percentile Rank of 50. NUM 3 - - - - - - - - - - x\nBENE_LIS_STATUS LIS Status Flag indicating a beneficiary had any months of LIS in the rolling 12 month report period. NUM 1 - - - - - - - - - - x\nIN_VA_MAX Voluntary Alignment Flag 0/1 flag; = 1 if the beneficiary was prospectively assigned to the ACO through voluntary alignment and = 0 if the beneficiary was not",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

@@ -1,0 +1,6 @@
+The Healthcare Effectiveness Data and Information Set (HEDIS) Patient-Level Detail (PLD) files are a set of standardized healthcare quality measures designed to provide information for reliable comparison of health plan performance. The HEDIS PLD data are submitted annually by Medicare Advantage (MA) Organizations, Cost Plans, and Demonstration Plans and contribute to the assignment of CMS Star Ratings for MA plans.
+HEDIS data are released as a set of two files per year:
+- File 1: HEDIS Measures File (does not include Plan All-Cause Readmission measures)
+- File 2: Plan All-Cause Readmissions File
+HEDIS data are released based on the measurement year of the plan data submission, which reflect health care delivered in that calendar year. Other HEDIS reports may distinguish between measurement year and submission year. Care should be taken to confirm that the correct years are being requested.
+HEDIS record layouts vary depending on measurement year and data source. ResDAC will work with the researcher to identify the appropriate data source depending on the measurement years requested.

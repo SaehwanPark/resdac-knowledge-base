@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_502",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "admission. 0 = No\n1 = Yes\n434 TRNSPRTN_MDCL_DSCHRG_CD TRNSPRTN_MDCL_DSCHRG_CD Transportation: Yes, medical (Dsch) CHAR 1 This column documents whether lack of transportation has kept the patient from attending medical appointments at the time of discharge. 0 = No\n1 = Yes\n435 TRNSPRTN_NON_MDCL_ADMSN_CD TRNSPRTN_NON_MDCL_ADMSN_CD Transportation: Yes, non-medical (Adm) CHAR 1 This column documents whether lack of transportation has kept the patient from attending meetings, work, or from getting",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

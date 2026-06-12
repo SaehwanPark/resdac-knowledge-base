@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p73__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 73,
+  "text": "lines are identified by BETOS codes (CCW variable BETOS_CD with values of “D1G,” \n“O1D,” “O1E,” “O1G,” “I1E,” or “I1F”). Total Part B drug payments are calculated as sum of \nLINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S.” \nSHORT NAME: — \nLONG NAME: PTB_DRUG_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nStarting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, \nrather it may include adjustments due",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_849",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "column indicates if the resident is taking diuretic medication and whether there is an indication noted for all medications in the drug class. 0=No\n1=Yes effective 10/01/2023\n944 OPIOID_TKNG_CD OPIOID_TKNG_CD N0415H1 High-Risk Drug (Is Taking): Opioid CHAR 1 The data in this column indicates if the resident is taking opioid medication during the last seven days or since admission/entry or reentry if less than seven days. 0=No\n1=Yes effective 10/01/2023\n945 OPIOID_INDCTN_CD OPIOID_INDCTN_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

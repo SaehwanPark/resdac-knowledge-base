@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p55__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 55,
+  "text": "FILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n1: Voluntary \n2: Proprietary \n3: Government \n4: Voluntary/Proprietary \n5: Proprietary/Government \n6: Voluntary/Government \n7: Not applicable \nNull/missing \nCOMMENT: \nDerived from the OWNRSHP_CD, using the last-best method for values from the monthly TAF \n(calendar year). \nOWNRSHP_CTGRY_CD is set to: \n1 when OWNRSHP_CD equals “01” through “03” \n2 when OWNRSHP_CD equals “04” through “08” \n3 when OWNRSHP_CD equals “09” through “16”",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

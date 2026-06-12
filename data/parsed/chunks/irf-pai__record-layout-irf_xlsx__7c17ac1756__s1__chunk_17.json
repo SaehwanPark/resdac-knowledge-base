@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "only if code 01 (Home) in Item 16 (Prehospital Living Setting) was coded. 01 = Alone, 02 = Family/Relatives, 03 = Friends, 04 = Attendant, 05 = Other\n33 _18 PRE_HOSP_VCTNL_CTGRY_CD (18) Pre-Hospital Vocational Category CHAR 2 Indicates the vocational status of the patient prior to hospitalization. 01 = Employed, 02 = Sheltered, 03 = Student, 04 = Homemaker, 05 = Not Working, 06 = Retired for Age, 07 = Retired for Disability\n34 _19 PRE_HOSP_VCTNL_EFRT_CD (19) Pre-Hospital Vocational Effort CHAR",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

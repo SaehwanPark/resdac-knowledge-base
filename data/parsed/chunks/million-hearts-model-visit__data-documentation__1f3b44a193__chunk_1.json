@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-visit__data-documentation__1f3b44a193__chunk_1",
+  "source_document": "data/raw/html/documentation_page/1f3b44a193ee97cae4f968a27927d3d117f6924b.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| PRACTICE_ID | Model-Assigned Practice ID | \n| PRACTICE_NAME | Name of Practice | \n| TIN | Practice's Taxpayer Identification Number | \n| UNIQUE_PATIENT_ID | Unique Model-Assigned Patient ID | \n| NPI | Provider's National Provider Identifier | \n| VISIT_DATE | Patient Visit Date | \n| FOLLOWUP_ATTESTATION | Practitioner's Attestation to Follow-up | \n|",
+  "dataset": "million-hearts-model-visit",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-visit/data-documentation"
+}

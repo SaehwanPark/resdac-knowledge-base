@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__record-layout-ahcah_xlsx__83602a409f__s2__chunk_2",
+  "source_document": "data/raw/assets/xlsx/83602a409fc06cd2d8af1083b47854c376f2898a.xlsx",
+  "page": 2,
+  "text": "Facility Location Address CHAR 510\nPRVDR_CITY Facility Location City CHAR 255\nPRVDR_ZIP_CD Facility Location City Zip Code CHAR 10",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahcah.xlsx"
+}

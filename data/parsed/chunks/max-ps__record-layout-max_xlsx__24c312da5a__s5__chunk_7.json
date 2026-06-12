@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_7",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "2 X\n43 NDC National Drug Code (NDC) CHAR 12 X\n44 QTY_SRVC_UNITS Quantity of service NUM 6 X\n45 DAYS_SUPPLY Days supply NUM 4 X\n46 NDC_FORMT_IND NDC Format Char 1 NP field contains proprietary data; is not released\n47 DRUG_CLASS_CD Drug Class Char 1 NP field contains proprietary data; is not released\n48 MULTI_SRCE_CD Multi Source Code Char 1 NP field contains proprietary data; is not released\n49 HICL_THRTPC_CTGRY HICL Char 54 NP field contains proprietary data; is not released\n50",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

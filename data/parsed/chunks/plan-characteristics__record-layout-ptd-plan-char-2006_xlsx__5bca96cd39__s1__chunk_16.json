@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "label selected by the Part D sponsor that describes Tier 1 through Tier 8. 00 No Label\n01 Formulary Generic\n02 Formulary Preferred Brand\n03 Formulary Brand\n04 Non-Formulary Generic\n05 Non-Formulary Brand\n06 Generic\n07 Preferred Brand\n08 Brand\n09 Tier 1\n10 Tier 2\n11 Tier 3\n12 Tier 4\n13 Tier 5\n14 Tier 6\n15 Tier 7\n16 Tier 8\n17 Tier 9\n18 Tier 10\n42-49 Pre_ICL_inpp_1m_COPAY_Tier_01 - Pre_ICL_inpp_1m_COPAY_Tier_08 Tier 1 - 8 Pre-ICL In-Network Pharmacy Copay Amt. one month supply Num 12 Dollar amount",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

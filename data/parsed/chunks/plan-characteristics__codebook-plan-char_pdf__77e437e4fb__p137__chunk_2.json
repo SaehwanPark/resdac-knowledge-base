@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p137__chunk_2",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 137,
+  "text": "initial coverage limit (ICL) for the Part D \nbenefit. Plans that use a co-payment amount rather than a coinsurance percentage will not have a \nvalue in this field; reference instead the corresponding co-payment variable called \n(GAP_MONPP_COPAY_1M). \nStarting in 2016, CMS changed how they describe pharmacy networks. The MOPP are currently \nreferred to as standard mail order pharmacies within split networks. There is no change in the \nmeaning of the variable, and the data values are the same",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

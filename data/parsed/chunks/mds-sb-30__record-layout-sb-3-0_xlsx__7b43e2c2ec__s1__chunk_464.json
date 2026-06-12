@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_464",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Number of Days Occupational Therapy Administered CHAR 1 The data in this column indicates the number of days that occupational therapy was administered for at least 15 minutes in the last seven days. discontinued 09/30/2025\n521 O0400B5_OT_STRT_DT O0400B5_OT_STRT_DT O0400B5 Occupational Therapy Start Date CHAR 8 The data in this column indicates the start date for the most recent occupational therapy. discontinued 09/30/2025\n522 O0400B6_OT_END_DT O0400B6_OT_END_DT O0400B6 Occupational Therapy",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

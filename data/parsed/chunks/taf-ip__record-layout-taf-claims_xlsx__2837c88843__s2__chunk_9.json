@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_9",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Admitting Provider Identification Number CHAR 30 54\nADMTG_PRVDR_NPI Admitting Provider NPI CHAR 10 55\nADMTG_PRVDR_TXNMY_CD Admitting Provider Taxonomy Code CHAR 12 56\nADMTG_PRVDR_TYPE_CD Admitting Provider Type Code CHAR 2 57\nADMTG_PRVDR_SPCLTY_CD Admitting Provider Specialty Code CHAR 2 58\nBLG_PRVDR_ID Billing Provider Identification Number CHAR 30 59\nBLG_PRVDR_NPI Billing Provider NPI CHAR 10 60\nBLG_PRVDR_TXNMY_CD Billing Provider Taxonomy Code CHAR 12 61\nBLG_PRVDR_NPPES_TXNMY_CD2 Billing",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p125__chunk_1",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 125,
+  "text": "for visit diagnosis codes on the claim. \nSHORT NAME: RSN_VISIT_CD1 \nRSN_VISIT_CD2 \nRSN_VISIT_CD3 \nLONG NAME: RSN_VISIT_CD1 \nRSN_VISIT_CD2 \nRSN_VISIT_CD3 \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nMedicare Advantage Organizations (MAOs) \nFILE(S): \nHH base \nOP base \nVALUES: \n— \nCOMMENT: \nFor ICD-9 diagnosis codes, this is a 3–5 digit numeric or alpha/numeric value; it can include leading \nzeros. \nOn October 1, 2015, the conversion from the ninth version of the International Classification of \nDiseases",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

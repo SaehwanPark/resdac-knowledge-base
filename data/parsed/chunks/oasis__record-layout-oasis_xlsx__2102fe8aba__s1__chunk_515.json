@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_515",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "of 2 or more helpers is required for the patient to complete the activity.\nIf activity was not attempted, code reason:\n07. Patient refused\n09. Not applicable – Not attempted and the patient did not perform this activity prior to the current illness, exacerbation or injury.\n10. Not attempted due to environmental limitations (e.g., lack of equipment, weather constraints)\n88. Not attempted due to medical conditions or safety concerns CHAR 2 x x\nGG0130B3_ORAL_HYGN_END_CD GG0130B3 Self Care: Oral",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

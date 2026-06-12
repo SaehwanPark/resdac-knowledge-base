@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n15 \nINITL_DGNS_DT \nLABEL: \nInitial Diagnosis Date \nDESCRIPTION: Initial diagnosis date. \nSHORT NAME: INITL_DGNS_DT \nLONG NAME: INITL_DGNS_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nClinical and staging \nCurrent clinical status \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \nEx — 03/29/2015 \nCOMMENT: \nFormatted as MMDDYY10 in SAS \n^ Back to TOC ^",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

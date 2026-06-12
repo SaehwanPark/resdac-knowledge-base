@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p203__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 203,
+  "text": "describes the type(s) of \ndrugs. \nApplies only to enhanced plans with gap coverage. \nThe value contains a string of binary digits; each digit of the value indicates which types of drugs are \ncovered on this tier of the formulary. \nSHORT NAME: — \nLONG NAME: GAP_PARTIAL_TYPE_TIER_03 \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nBinary character string where each digit is a 1 or 0 to accommodate a variety of types of drugs; \nposition 1 is the leftmost digit. For example, if the",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

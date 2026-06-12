@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 21,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n16 \nPRIMARY_TAXONOMY_CODE \nLABEL: \nPharmacy Primary Taxonomy Code \nDESCRIPTION: This is the taxonomy code for the pharmacy. This field allows researchers to better understand the \ntype of pharmacy that dispensed the medication. \nSHORT NAME: — \nLONG NAME: PRIMARY_TAXONOMY_CODE \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n(e.g., 3336C0003X) \nCOMMENT: \nThis primary taxonomy code",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

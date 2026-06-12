@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p73__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 73,
+  "text": "is the total count of Medicaid inpatient (IP), long-term care (LT), pharmacy (RX) and other \nservices (OT) (header) claims for the beneficiary for each month, after removing the managed care \ncapitated payment claims from the OT file. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Claims files (derived) \nVALUES: \nXX \nCOMMENT: \nCCW filtered the OT claims header records to distinguish between capitated payments and payments \nfor services. Capitated payment claims are header claims where the claim type",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

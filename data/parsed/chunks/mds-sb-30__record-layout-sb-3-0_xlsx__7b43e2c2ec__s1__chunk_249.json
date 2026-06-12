@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_249",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "rated, resident had a catheter (indwelling, condom), urinary ostomy, or no urine output for entire 7 days\n264 H0500_BWL_TOILTG_PGM_CD H0500_BWL_TOILTG_PGM_CD H0500 Bowel Toileting Program Code CHAR 1 The data in this column indicates whether a bowel toileting program is being utilized to manage the resident's bowel continence. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine\n265 H0600_CONSTPTN_CD H0600_CONSTPTN_CD H0600 Constipation Code CHAR 1 The data in this column indicates",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

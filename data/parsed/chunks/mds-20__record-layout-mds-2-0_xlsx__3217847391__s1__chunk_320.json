@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_320",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "code.\n538 R4 R4_DISCHARGE_DT (R4) Discharge Date DATE 8 Assessment/discharge information: discharge date.\n539 T1AA T1AA_REC_THPY_DAYS (T1AA) Recreation Therapy Days CHAR 1 Multistate supplement: special treatments and procedures - recreation therapy - number of days.\n540 T1AB T1AB_REC_THPY_MIN (T1AB) Recreation Therapy Minutes CHAR 4 Multistate supplement: special treatments and procedures - recreation therapy - total number of minutes.\n541 T1B T1B_ORDER_THPY (T1B) Ordered Therapies CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

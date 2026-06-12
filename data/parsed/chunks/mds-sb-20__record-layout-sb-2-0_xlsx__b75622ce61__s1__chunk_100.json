@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_100",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "cellulitis, purulent drainage. 0 = Unchecked, 1 = Checked, -1 = Unknown\n127 M6C M6C_LESIONS_FOOT 35b(M6c)Open Lesions of the Foot CHAR 1 Indicates the patient has open foot lesions during the past seven days. Includes cuts, ulcers, and fissures. 0 = Unchecked, 1 = Checked, -1 = Unknown\n128 M6F M6F_DRESSINGS_FOOT 35c(M6f)Application of Dressing (Foot) CHAR 1 Indicates the patient has dressings with or without topical medication applied on the foot during the past seven days. Includes dry gauze",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

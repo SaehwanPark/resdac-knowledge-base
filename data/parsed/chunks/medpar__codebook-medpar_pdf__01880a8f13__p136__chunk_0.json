@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p136__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 136,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n120 \nINTRNL_USE_SSI_DAY_CNT \nLABEL: \nMEDPAR Internal Use SSI Day Count \nDESCRIPTION: Internal use SSI Day count. \nSHORT NAME: SSIDAY \nLONG NAME: INTRNL_USE_SSI_DAY_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n0 = information not available \nCOMMENT: \nLimited availability; for internal use; applicable to inpatient claims only. Where not available, this field \nwill contain zeroes.",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

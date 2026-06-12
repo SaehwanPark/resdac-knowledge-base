@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_107",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "behaviors: none of the above. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_APPWT_C (M0600) Recent Change in Appetite or Weight Patient's behaviors: recent change in appetite or weight. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_SLEEP_D (M0600) Sleep Disturbances Patient's behaviors: sleep disturbances. 0 = No, 1 = Yes CHAR 1 x x\nM0610_BD_DELUSIONS (M0610) Delusional/Hallucinatory/Paranoid Behavior Behaviors demonstrated at least once a week: delusional, hallucinatory, paranoid behavior. 0 = No, 1 = Yes CHAR",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

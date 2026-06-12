@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_312",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 2 Special treatments and procedures: hospital stays. The number of times the resident was admitted with an overnight stay in last 90 days.\n524 P6 P6_ER_VISIT (P6) Emergency Room Visits CHAR 2 Special treatments and procedures: emergency room (ER) visits. The number of times the resident visited the ER without an overnight stay in last 90 days.\n525 P7 P7_PHYS_VISIT (P7) Physician Visits CHAR 2 Special treatments and procedures: physician visits. The number of days the physician or an",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

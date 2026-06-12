@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p61__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 61,
+  "text": "a physician's assistant performed the \nservice. \nSHORT NAME: ASTNT_CD \nLONG NAME: CARR_LINE_RDCD_PMT_PHYS_ASTN_C \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nBLANK = Adjustment situation (where CLM_DISP_CD equal 3) \n0 = N/A \n1 = 65% of payment. Either physician assistants assisting in surgery or nurse midwives \n2 = 75% of payment. Either physician assistants performing services in a hospital (other than assisting \nsurgery) or nurse practitioners/clinical nurse specialist performing services",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

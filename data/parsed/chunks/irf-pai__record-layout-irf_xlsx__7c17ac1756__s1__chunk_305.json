@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_305",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "column identifies the patient's ability for self care prior to the current illness, exacerbation or injury. 1 = Dependent - A helper completed the activities for the patient. \n2 = Needed Some Help - Patient needed partial assistance from another person to complete activities.\n3 = Independent - Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.\n8 = Unknown \n9 = Not Applicable\n294 GG0100B_PRIOR_INDR_MBLTY_IND",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

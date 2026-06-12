@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p318__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 318,
+  "text": "1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nN = New \nR = Renewal \nC = Consolidation \nT = Termination \nCOMMENT: \nThe variable describes the relationship between the contract and plan ID in the reference year \ncompared to the prior year. The description for these codes is in the relationship description variable \n(RELATIONSHIP_DESC). \nThe contract and plan ID for the reference year (year of the data file) could be related to more than \none contract and plan ID in the previous year (e.g., if reference",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

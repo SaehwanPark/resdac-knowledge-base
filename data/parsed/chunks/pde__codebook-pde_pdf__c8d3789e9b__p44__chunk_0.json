@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p44__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 44,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n39 \nPLAN_CNTRCT_REC_ID \nLABEL: \nPlan Contract ID \nDESCRIPTION: This variable is the unique Part D contract identifier for the beneficiary’s Part D plan of record for the \nyear. CMS assigns an identifier to each contract that a Part D plan has with CMS. \nIf the beneficiary was enrolled in more than one plan during the year, this is the contract number for \nthe",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

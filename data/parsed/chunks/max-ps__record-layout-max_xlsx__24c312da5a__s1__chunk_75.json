@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_75",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "premium, and encounter record counts) NUM 6 X X X X X X X X X X X\n352 TOT_MDCD_FFS_CLM_CNT Total fee-for-service (FFS) claim count NUM 6 X X X X X X X X X X X\n353 TOT_MDCD_PREM_CLM_CNT Total Medicaid pre-paid plan (PHP) Premium payment record count NUM 6 X X X X X X X X X X X\n354 TOT_MDCD_ENCT_CLM_CNT Total encounter record count NUM 6 X X X X X X X X X X X\n355 TOT_MDCD_PYMT_AMT Total Medicaid payment amount NUM 12 X X X X X X X X X X X\n356 TOT_MDCD_FFS_PYMT_AMT Total fee-for-service (FFS)",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

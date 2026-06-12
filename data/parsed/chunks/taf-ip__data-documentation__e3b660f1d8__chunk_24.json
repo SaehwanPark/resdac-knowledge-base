@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_24",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| FUNDNG_SRC_NON_FED_SHR_CD | Funding Source Non-Federal Share Code | \n\n | 153 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | \n\n | 154 | TMSIS_RUN_ID | TMSIS State Data Processing Run Identifier | \n\n | 155 | IP_VRSN | Inpatient Version Representing the Iteration of the File | \n\n | 156 | IP_FIL_DT | Inpatient File Date - Represents the Year and Month of the Reporting Period | \n\n | 157 | CCW_LD_DT | CCW Load Date |",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

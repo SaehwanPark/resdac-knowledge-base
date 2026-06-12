@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-alignment__data-documentation__48fc5d682b__chunk_2",
+  "source_document": "data/raw/html/documentation_page/48fc5d682bc1c7af9247fa6777ca8daf93550d55.html",
+  "page": null,
+  "text": "PATIENT_SEX | Patient's Sex | \n| PATIENT_RACE | Patient's Race | \n| PATIENT_ETHNICITY | Patient's Ethnicity | \n| ALIGNED | Indication of Patient's Attribution to the Practice (Y or N) | \n| ELIGIBLE | Indication of Patient's Eligibility | \n| REASON_CODE | Reason Code(s) for Patient Status Change | \n| LAST_MODIFIED_DATE | Date the Patient Record was Modified | \n| IS_BASELINE_COMPLETE | Indication of Completion of Beneficiary Record in the Registry (Y or N) |",
+  "dataset": "million-hearts-model-alignment",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-alignment/data-documentation"
+}

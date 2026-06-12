@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p13__chunk_4",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 13,
+  "text": "model versions, this model incorporated additional HCC \nconditions, different disease interactions, and different disabled HCC interactions terms to calculate an HCC score.18 \nNearly one-third of the variables in the file are variables for HCC conditions. All the HCCs within the V21 file have a \nvariable name with “V21_” prefix (Table 6 is an example, HCC1 (HIV/AIDS) has the name V21_HCC1 in this data file \n(whereas the same HCC in the V22 file is called V22_HCC1). The HCC numbering may apply",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

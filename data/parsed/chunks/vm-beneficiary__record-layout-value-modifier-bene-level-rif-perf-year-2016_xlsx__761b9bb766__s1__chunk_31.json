@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "for beneficiary 43 Char 119 Populated only for records with Inpatient_stay not equal to missing\nTOTCOST Total payment-standardized Medicare FFS cost Total payment-standardized Medicare Fee-For-Service costs for beneficiary 44 Num 8 Populated only for records with Inpatient_stay not equal to missing\nOTHER_ALL Total costs for all other services Per capita cost for attributed beneficiary, All Other Services category 45 Num 8 Populated only for records with Inpatient_stay not equal to",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

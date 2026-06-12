@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_217",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Memory Loss This field is checked if the patient had memory loss to the extent that supervision was required prior to the inpatient stay or change in medical or treatment regimen within the past 14 days. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM1018_PR_NOCHG_14D M1018 (M0220) Prior Condition- NA This field is checked if the patient had no inpatient facility discharge and no change in medical or treatment\nregimen within the past 14 days. 0 = Not Checked (Not NA), 1 = Checked (NA)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

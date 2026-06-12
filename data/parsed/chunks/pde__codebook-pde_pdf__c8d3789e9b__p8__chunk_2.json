@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p8__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 8,
+  "text": "benefit phases \ndepend on specific dollar amounts and often do not split exactly between prescription fills; that is, a \nparticular PDE may “straddle” more than one benefit phase. For example, “DD” indicates that the \nbeneficiary was in the deductible phase of the benefit both before and after filling the prescription, \nbut “PI” indicates that this PDE occurred partly in the pre-ICL phase and partly in the coverage gap. \nSHORT NAME: BNFTPHAS \nLONG NAME: BENEFIT_PHASE \nTYPE: \nCHAR \nLENGTH: \n2",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

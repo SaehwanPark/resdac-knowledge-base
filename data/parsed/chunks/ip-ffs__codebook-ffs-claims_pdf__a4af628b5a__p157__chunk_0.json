@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p157__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 157,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n139 \nCLM_UTLZTN_DAY_CNT \nLABEL: \nClaim Medicare Utilization Day Count \nDESCRIPTION: On an institutional claim, the number of covered days of care that are chargeable to Medicare facility \nutilization that includes full days, coinsurance days, and lifetime reserve days. \nIt excludes any days classified as non-covered, leave of absence days, and the day of discharge or \ndeath.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

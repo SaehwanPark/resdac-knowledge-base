@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p110__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 110,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n112 \nPRVDR_MDCD_CHIP_ENRLMT_CD \nLABEL: \nProvider State Plan Enrollment Code (Medicaid and/or CHIP) \nDESCRIPTION: The state plan with which a provider has an affiliation and can provide services to the state’s fee for \nservice enrollees. \nSHORT NAME: PRVDR_MDCD_CHIP_ENRLMT_CD \nLONG NAME: PRVDR_MDCD_CHIP_ENRLMT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR enrollment \nSOURCE:",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

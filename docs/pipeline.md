@@ -84,6 +84,7 @@ Outputs:
 
 - `data/parsed/html/...`
 - `data/parsed/pdf/...`
+- `data/parsed/xlsx/...`
 - `data/parsed/chunks/...`
 - `data/parsed/chunks.jsonl`
 - `_workspace/05_parsing_pack.md`

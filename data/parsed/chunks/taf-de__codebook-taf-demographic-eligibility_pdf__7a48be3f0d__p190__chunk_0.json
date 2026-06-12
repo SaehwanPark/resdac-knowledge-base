@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p190__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 190,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n150 \nFILE(S): \nManaged Care \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \nIdentification number, maximum 12 letters and numbers \nNull/missing = source value is missing or unknown \nCOMMENT: \nFor each month, there are up to 16 managed care plan IDs; the sequence (first–16th plan ID) is \nindicated by the third and fourth digits from the right (e.g.,",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

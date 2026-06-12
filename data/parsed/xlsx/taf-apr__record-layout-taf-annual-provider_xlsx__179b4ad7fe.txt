@@ -1,0 +1,312 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Base File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+PRVDR_LGL_NAME	Provider Legal Name	CHAR	150	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CMS_RGN	CMS Region for Submitting State	CHAR	2	5
+PRVDR_ENT_TYPE_CD	Provider Entity Type Code - individual, group or facility	CHAR	2	6
+PRVDR_TAX_NAME	Provider Tax (IRS) Name	CHAR	150	7
+PRVDR_ORG_NAME	Provider Organization Name	CHAR	90	8
+PRVDR_DBA_NAME	Provider Doing Business as (DBA) Name	CHAR	150	9
+PRVDR_NPI_1	Provider NPI - 1st Occurrence	CHAR	12	10
+PRVDR_NPI_2	Provider NPI - 2nd Occurrence	CHAR	12	11
+PRVDR_NPI_CNT	Provider NPI Count	NUM	2	12
+SUBMTG_STATE_PRVDR_IND_01	Submitting State Provider Identifier Indicator - January	CHAR	1	13
+SUBMTG_STATE_PRVDR_IND_02	Submitting State Provider Identifier Indicator - February	CHAR	1	14
+SUBMTG_STATE_PRVDR_IND_03	Submitting State Provider Identifier Indicator - March	CHAR	1	15
+SUBMTG_STATE_PRVDR_IND_04	Submitting State Provider Identifier Indicator - April	CHAR	1	16
+SUBMTG_STATE_PRVDR_IND_05	Submitting State Provider Identifier Indicator - May	CHAR	1	17
+SUBMTG_STATE_PRVDR_IND_06	Submitting State Provider Identifier Indicator - June	CHAR	1	18
+SUBMTG_STATE_PRVDR_IND_07	Submitting State Provider Identifier Indicator - July	CHAR	1	19
+SUBMTG_STATE_PRVDR_IND_08	Submitting State Provider Identifier Indicator - August	CHAR	1	20
+SUBMTG_STATE_PRVDR_IND_09	Submitting State Provider Identifier Indicator - September	CHAR	1	21
+SUBMTG_STATE_PRVDR_IND_10	Submitting State Provider Identifier Indicator - October	CHAR	1	22
+SUBMTG_STATE_PRVDR_IND_11	Submitting State Provider Identifier Indicator - November	CHAR	1	23
+SUBMTG_STATE_PRVDR_IND_12	Submitting State Provider Identifier Indicator - December	CHAR	1	24
+PRVDR_LAST_NAME	Provider Last Name - Individual	CHAR	45	25
+PRVDR_FIRST_NAME	Provider First Name - Individual	CHAR	45	26
+PRVDR_MDL_INITL_NAME	Provider Middle Initial - Individual	CHAR	1	27
+PRVDR_SEX_CD	Provider Sex Code	CHAR	1	28
+PRVDR_BIRTH_DT	Provider Date of Birth	DATE	8	29
+PRVDR_DEATH_DT	Provider Date of Death	DATE	8	30
+PRVDR_AGE	Provider Age (in Years)	NUM	3	31
+TCHNG_IND	Provider Organization Teaching Facility Ind - Ever in Calendar Year	CHAR	1	32
+OWNRSHP_CD	Provider Ownership Code - Latest in Year	CHAR	2	33
+OWNRSHP_CTGRY_CD	Provider Ownership Category Code - Latest in Year	CHAR	1	34
+PRVDR_PRFT_STUS_CD	Provider Profit Status Code - Latest in Year	CHAR	2	35
+ACPTG_NEW_PTNTS_IND	Provider Accepting New Patients Ind - Ever in Calendar Year	CHAR	1	36
+PRVDR_MDCD_ENRLMT_IND	Enrolled in Medicaid Indicator - Ever in Calendar Year	CHAR	1	37
+PRVDR_CHIP_ENRLMT_IND	Enrolled in CHIP Indicator - Ever in Calendar Year	CHAR	1	38
+NOT_SP_AFLTD_IND	Not Affiliated with State Plan Indicator - Ever in Calendar Year	CHAR	1	39
+PRVDR_ENRLMT_STUS_ACTV_IND	Medicaid or CHIP Active Enrollment Indicator - Ever in Calendar Year	CHAR	1	40
+PRVDR_ENRLMT_STUS_DND_IND	Medicaid or CHIP Enrollment Denied Indicator  - Ever in Calendar Yr	CHAR	1	41
+PRVDR_ENRLMT_STUS_TRMNTD_IND	Medicaid or CHIP Enrollment Terminated Indicator - Ever in Calendar Year	CHAR	1	42
+PRVDR_ENRLMT_STUS_PENDG_IND	Medicaid or CHIP Enrollment Status Pending Ind - Ever in Calendar Yr	CHAR	1	43
+MLT_SNGL_SPCLTY_GRP_TXNMY_IND	Multi- or Single-Specialty Group Taxonomy Indicator - Ever in Calendar Year	CHAR	1	44
+ALPTHC_OSTPTHC_PHYSN_TXNMY_IND	Allopathic or Osteopathic Physician Taxonomy Indicator - Ever in Calendar Year	CHAR	1	45
+BHVRL_HLTH_SCL_SRVC_TXNMY_IND	Behavioral Health- Social Service Provider Taxonomy Ind - Ever in Calendar Yr	CHAR	1	46
+CHRPRCTIC_TXNMY_IND	Chiropractic Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	47
+DNTL_TXNMY_IND	Dental Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	48
+DTRY_NTRTNL_SRVC_TXNMY_IND	Dietary or Nutritional Services Provider Taxonomy Ind - Ever in Calendar Year	CHAR	1	49
+EMER_MDCL_SRVC_TXNMY_IND	Emergency Medical Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	50
+EYE_VSN_SRVC_TXNMY_IND	Eye or Vision Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	51
+NRSNG_SRVC_TXNMY_IND	Nursing Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	52
+RLTD_NRSNG_SRVC_TXNMY_IND	Related Nursing Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	53
+OTHR_INDVDL_SRVC_TXNMY_IND	Other Individual Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	54
+PHRMCY_SRVC_TXNMY_IND	Pharmacy Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	55
+PA_APN_TXNMY_IND	Physcn Asst or Advanced Practice Nursing Taxonomy Ind - Ever in Calendar Yr	CHAR	1	56
+PDTRY_TXNMY_IND	Podiatry Taxonomy Indicator - Ever in Calendar Year	CHAR	1	57
+RT_DEVMTL_REHAB_RSTRTV_TXNMY_IND	Respiratory, Developmental, Rehabilitative, or Restorative Svcs Taxonomy Ind - Ever in Yr	CHAR	1	58
+SPCH_LANG_HEARG_TXNMY_IND	Speech, Language or Hearing Services Taxonomy Indicator - Ever in Calendar Year	CHAR	1	59
+STDNT_HLTH_CARE_PRVDR_TXNMY_IND	Student Health Care Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	60
+RDLGY_OTHR_TCHNCL_SRVC_TXNMY_IND	Radiologic & Other Technical Services Taxonomy Indicator - Ever in Calendar Year	CHAR	1	61
+AGNCY_PRVDR_TXNMY_IND	Agency Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	62
+AMBLTRY_CLNC_TXNMY_IND	Ambulatory Health Services Clinic Taxonomy Indicator - Ever in Calendar Yr	CHAR	1	63
+HOSP_UNIT_TXNMY_IND	Hospital Unit Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	64
+HOSP_TXNMY_IND	Hospital Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	65
+LAB_TXNMY_IND	Laboratory Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	66
+MCO_TXNMY_IND	Managed Care Organization Taxonomy Ind - Ever in Calendar Year	CHAR	1	67
+NRSNG_CSTDL_CARE_PRVDR_TXNMY_IND	Nursing Custodial Care Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	68
+LDGNG_MEALS_PRVDR_TXNMY_IND	Lodging or Meals Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	69
+RSDNTL_TRTMT_FAC_TXNMY_IND	Residential Treatment Facility Taxonomy Indicator - Ever in Calendar Year	CHAR	1	70
+RESP_CARE_FAC_TXNMY_IND	Respite Care Facility Taxonomy Indicator - Ever in Calendar Year	CHAR	1	71
+SUPLR_PRVDR_TXNMY_IND	Supplier Provider (DME, Pharmacy, Organs, Etc.) Taxonomy Ind - Ever in Cal Yr	CHAR	1	72
+TRNSPRTN_SRVC_TXNMY_IND	Transportation Services Provider Taxonomy Indicator - Ever in Calendar Year	CHAR	1	73
+SUD_SRVC_PRVDR_CLSFCTN_IND	Substance Use Disorder Service Provider Classification Ind - Ever in Calendar Yr	CHAR	1	74
+MH_SRVC_PRVDR_CLSFCTN_IND	Mental Health Service Provider Classification Ind - Ever in Calendar Year	CHAR	1	75
+EMER_SRVC_PRVDR_CLSFCTN_IND	Emergency Services Provider Classification Indicator - Ever in Calendar Year	CHAR	1	76
+SPLMTL_ADDR_LCTN	Annual Provider Record in Supplemental Provider Address Location File	CHAR	1	77
+SPLMTL_LCNS_ACRDTN	Annual Provider Record in Supplemental Provider License and Accreditation File	CHAR	1	78
+SPLMTL_PRVDR_ID	Annual Provider Record in Supplemental Identifier File	CHAR	1	79
+SPLMTL_AFLTD_GRP	Annual Provider Record in Supplemental Affiliated Groups File	CHAR	1	80
+SPLMTL_AFLTD_PGM	Annual Provider Record in Supplemental Affiliated Programs File	CHAR	1	81
+SPLMTL_TXNMY	Annual Provider Record in Supplemental Taxonomy File	CHAR	1	82
+SPLMTL_ENRLMT	Annual Provider Record in Supplemental Enrollment File	CHAR	1	83
+SPLMTL_BED_TYPE	Annual Provider Record in Supplemental Bed Type File	CHAR	1	84
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	85
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	11	86
+PR_VRSN	Provider File Version Representing the Iteration of the File	CHAR	2	87
+RFRNC_YR	Reference Yr	CHAR	4	88
+CCW_LD_DT	CCW Load Date	DATE	8	89
+
+Revision date	Tab	Description
+45992	APR Affiliated Groups
+APR Identifiers	Expanded width of PRVDR_GRP_ID field from 12 to 30.
+Expanded width of PRVDR_NUM field from 12 to 30.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Taxonomy File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_CLSFCTN_SYS	Provider Classification System/Nomenclature	CHAR	1	4
+PRVDR_CLSFCTN_CD	Provider Classification Code	CHAR	30	5
+PRVDR_CLSFCTN_ACTV_IND_01	Provider Classification Code Active Indicator - January	CHAR	1	6
+PRVDR_CLSFCTN_ACTV_IND_02	Provider Classification Code Active Indicator - February	CHAR	1	7
+PRVDR_CLSFCTN_ACTV_IND_03	Provider Classification Code Active Indicator - March	CHAR	1	8
+PRVDR_CLSFCTN_ACTV_IND_04	Provider Classification Code Active Indicator - April	CHAR	1	9
+PRVDR_CLSFCTN_ACTV_IND_05	Provider Classification Code Active Indicator - May	CHAR	1	10
+PRVDR_CLSFCTN_ACTV_IND_06	Provider Classification Code Active Indicator - June	CHAR	1	11
+PRVDR_CLSFCTN_ACTV_IND_07	Provider Classification Code Active Indicator - July	CHAR	1	12
+PRVDR_CLSFCTN_ACTV_IND_08	Provider Classification Code Active Indicator - August	CHAR	1	13
+PRVDR_CLSFCTN_ACTV_IND_09	Provider Classification Code Active Indicator - September	CHAR	1	14
+PRVDR_CLSFCTN_ACTV_IND_10	Provider Classification Code Active Indicator - October	CHAR	1	15
+PRVDR_CLSFCTN_ACTV_IND_11	Provider Classification Code Active Indicator - November	CHAR	1	16
+PRVDR_CLSFCTN_ACTV_IND_12	Provider Classification Code Active Indicator - December	CHAR	1	17
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	18
+RFRNC_YR	Reference Yr	CHAR	4	19
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Enrollment File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_MDCD_CHIP_ENRLMT_CD	Provider State Plan Enrollment Code (Medicaid and/or CHIP)	CHAR	1	4
+PRVDR_ENRLMT_STUS_CD	Provider Enrollment Status Code (Medicaid and/or CHIP)	CHAR	2	5
+PRVDR_ENRLMT_STUS_CTGRY_CD	Provider Enrollment Status Category Code	CHAR	8	6
+PRVDR_ENRLMT_MTHD_CD	Provider Medicaid or CHIP Program Enrollment Method Code	CHAR	1	7
+APLCTN_DT	Provider Medicaid or CHIP Program Application Date	DATE	8	8
+PRVDR_ENRLMT_START_DT	Provider Enrollment (Medicaid and/or CHIP) Start Date	DATE	8	9
+PRVDR_ENRLMT_END_DT	Provider Enrollment (Medicaid and/or CHIP) End Date	DATE	8	10
+PRVDR_ENRLMT_ACTV_IND_01	Provider Enrollment Active Indicator - January	CHAR	1	11
+PRVDR_ENRLMT_ACTV_IND_02	Provider Enrollment Active Indicator - February	CHAR	1	12
+PRVDR_ENRLMT_ACTV_IND_03	Provider Enrollment Active Indicator - March	CHAR	1	13
+PRVDR_ENRLMT_ACTV_IND_04	Provider Enrollment Active Indicator - April	CHAR	1	14
+PRVDR_ENRLMT_ACTV_IND_05	Provider Enrollment Active Indicator - May	CHAR	1	15
+PRVDR_ENRLMT_ACTV_IND_06	Provider Enrollment Active Indicator - June	CHAR	1	16
+PRVDR_ENRLMT_ACTV_IND_07	Provider Enrollment Active Indicator - July	CHAR	1	17
+PRVDR_ENRLMT_ACTV_IND_08	Provider Enrollment Active Indicator - August	CHAR	1	18
+PRVDR_ENRLMT_ACTV_IND_09	Provider Enrollment Active Indicator - September	CHAR	1	19
+PRVDR_ENRLMT_ACTV_IND_10	Provider Enrollment Active Indicator - October	CHAR	1	20
+PRVDR_ENRLMT_ACTV_IND_11	Provider Enrollment Active Indicator - November	CHAR	1	21
+PRVDR_ENRLMT_ACTV_IND_12	Provider Enrollment Active Indicator - December	CHAR	1	22
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	23
+RFRNC_YR	Reference Yr	CHAR	4	24
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Affiliated Groups File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_GRP_ID	Submitting State Provider Group Identification Number	CHAR	30*	4
+PRVDR_GRP_ACTV_IND_01	Provider Group Active Indicator - January	CHAR	1	5
+PRVDR_GRP_ACTV_IND_02	Provider Group Active Indicator - February	CHAR	1	6
+PRVDR_GRP_ACTV_IND_03	Provider Group Active Indicator - March	CHAR	1	7
+PRVDR_GRP_ACTV_IND_04	Provider Group Active Indicator - April	CHAR	1	8
+PRVDR_GRP_ACTV_IND_05	Provider Group Active Indicator - May	CHAR	1	9
+PRVDR_GRP_ACTV_IND_06	Provider Group Active Indicator - June	CHAR	1	10
+PRVDR_GRP_ACTV_IND_07	Provider Group Active Indicator - July	CHAR	1	11
+PRVDR_GRP_ACTV_IND_08	Provider Group Active Indicator - August	CHAR	1	12
+PRVDR_GRP_ACTV_IND_09	Provider Group Active Indicator - September	CHAR	1	13
+PRVDR_GRP_ACTV_IND_10	Provider Group Active Indicator - October	CHAR	1	14
+PRVDR_GRP_ACTV_IND_11	Provider Group Active Indicator - November	CHAR	1	15
+PRVDR_GRP_ACTV_IND_12	Provider Group Active Indicator - December	CHAR	1	16
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	17
+RFRNC_YR	Reference Yr	CHAR	4	18
+* Field length expanded from 12 to 30 in 2023 data.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Affiliated Programs File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+AFLTD_PGM_TYPE_CD	Affiliated Program Type Code	CHAR	1	4
+PRVDR_AFLTD_PGM_ID	Provider Affiliated Program Identifier	CHAR	50	5
+PRVDR_AFLTD_PGM_ACTV_IND_01	Provider Affiliated Program Active Indicator - January	CHAR	1	6
+PRVDR_AFLTD_PGM_ACTV_IND_02	Provider Affiliated Program Active Indicator - February	CHAR	1	7
+PRVDR_AFLTD_PGM_ACTV_IND_03	Provider Affiliated Program Active Indicator - March	CHAR	1	8
+PRVDR_AFLTD_PGM_ACTV_IND_04	Provider Affiliated Program Active Indicator - April	CHAR	1	9
+PRVDR_AFLTD_PGM_ACTV_IND_05	Provider Affiliated Program Active Indicator - May	CHAR	1	10
+PRVDR_AFLTD_PGM_ACTV_IND_06	Provider Affiliated Program Active Indicator - June	CHAR	1	11
+PRVDR_AFLTD_PGM_ACTV_IND_07	Provider Affiliated Program Active Indicator - July	CHAR	1	12
+PRVDR_AFLTD_PGM_ACTV_IND_08	Provider Affiliated Program Active Indicator - August	CHAR	1	13
+PRVDR_AFLTD_PGM_ACTV_IND_09	Provider Affiliated Program Active Indicator - September	CHAR	1	14
+PRVDR_AFLTD_PGM_ACTV_IND_10	Provider Affiliated Program Active Indicator - October	CHAR	1	15
+PRVDR_AFLTD_PGM_ACTV_IND_11	Provider Affiliated Program Active Indicator - November	CHAR	1	16
+PRVDR_AFLTD_PGM_ACTV_IND_12	Provider Affiliated Program Active Indicator - December	CHAR	1	17
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	18
+RFRNC_YR	Reference Yr	CHAR	4	19
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Location File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_LCTN_ID	Provider Location Identifier	CHAR	5	4
+BLG_LCTN_IND	Billing Location Indicator	CHAR	1	5
+PRCTC_LCTN_IND	Practice Location Indicator	CHAR	1	6
+SRVC_LCTN_IND	Service Location Indicator	CHAR	1	7
+PRVDR_ADR_LINE_1	Provider Street Address 1	CHAR	90	8
+PRVDR_ADR_LINE_2	Provider Street Address 2	CHAR	90	9
+PRVDR_ADR_LINE_3	Provider Street Address 3	CHAR	90	10
+PRVDR_CITY	Provider City	CHAR	42	11
+PRVDR_STATE_CD	Provider State (FIPS) Code	CHAR	2	12
+PRVDR_ZIP_CD	Provider Zip Code	CHAR	9	13
+PRVDR_CNTY_CD	Provider County (FIPS) Code	CHAR	3	14
+BRDR_STATE_IND	Border State Indicator	CHAR	1	15
+PRVDR_STATE_CD_DFRNT_IND	Provider Location State Differs from Submitting State Indicator	CHAR	1	16
+PRVDR_LCTN_ACTV_IND_01	Provider Location Active Indicator - January	CHAR	1	17
+PRVDR_LCTN_ACTV_IND_02	Provider Location Active Indicator - February	CHAR	1	18
+PRVDR_LCTN_ACTV_IND_03	Provider Location Program Active Indicator - March	CHAR	1	19
+PRVDR_LCTN_ACTV_IND_04	Provider Location Active Indicator - April	CHAR	1	20
+PRVDR_LCTN_ACTV_IND_05	Provider Location Active Indicator - May	CHAR	1	21
+PRVDR_LCTN_ACTV_IND_06	Provider Location Active Indicator - June	CHAR	1	22
+PRVDR_LCTN_ACTV_IND_07	Provider Location Active Indicator - July	CHAR	1	23
+PRVDR_LCTN_ACTV_IND_08	Provider Location Active Indicator - August	CHAR	1	24
+PRVDR_LCTN_ACTV_IND_09	Provider Location Active Indicator - September	CHAR	1	25
+PRVDR_LCTN_ACTV_IND_10	Provider Location Active Indicator - October	CHAR	1	26
+PRVDR_LCTN_ACTV_IND_11	Provider Location Active Indicator - November	CHAR	1	27
+PRVDR_LCTN_ACTV_IND_12	Provider Location Active Indicator - December	CHAR	1	28
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	29
+RFRNC_YR	Reference Yr	CHAR	4	30
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — License File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_LCTN_ID	Provider Location Identifier	CHAR	5	4
+LCNS_TYPE_CD	Provider License Type Code	CHAR	1	5
+LCNS_NUM	Provider License or Accreditation Number	CHAR	20	6
+LCNS_ISSG_ENT_ID	Provider License Issuing Entity Identifier	CHAR	60	7
+PRVDR_LCNS_ACTV_IND_01	Provider License Active Indicator - January	CHAR	1	8
+PRVDR_LCNS_ACTV_IND_02	Provider License Active Indicator - February	CHAR	1	9
+PRVDR_LCNS_ACTV_IND_03	Provider License Active Indicator - March	CHAR	1	10
+PRVDR_LCNS_ACTV_IND_04	Provider License Active Indicator - April	CHAR	1	11
+PRVDR_LCNS_ACTV_IND_05	Provider License Active Indicator - May	CHAR	1	12
+PRVDR_LCNS_ACTV_IND_06	Provider License Active Indicator - June	CHAR	1	13
+PRVDR_LCNS_ACTV_IND_07	Provider License Active Indicator - July	CHAR	1	14
+PRVDR_LCNS_ACTV_IND_08	Provider License Active Indicator - August	CHAR	1	15
+PRVDR_LCNS_ACTV_IND_09	Provider License Active Indicator - September	CHAR	1	16
+PRVDR_LCNS_ACTV_IND_10	Provider License Active Indicator - October	CHAR	1	17
+PRVDR_LCNS_ACTV_IND_11	Provider License Active Indicator - November	CHAR	1	18
+PRVDR_LCNS_ACTV_IND_12	Provider License Active Indicator - December	CHAR	1	19
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	20
+RFRNC_YR	Reference Yr	CHAR	4	21
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Identifiers File
+Version — December 2025
+RIF SAS Name	RIF  Label	Type	Length	RIF Sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_LCTN_ID	Provider Location Identifier	CHAR	5	4
+PRVDR_NUM_SYS	Provider Number System/Nomenclature	CHAR	1	5
+PRVDR_NUM	Provider Number	CHAR	30*	6
+PRVDR_NUM_ISSG_ENT_ID	Provider Number Issuing Entity Identifier	CHAR	18	7
+PRVDR_NUM_ACTV_IND_01	Provider Number Active Indicator - January	CHAR	1	8
+PRVDR_NUM_ACTV_IND_02	Provider Number Active Indicator - February	CHAR	1	9
+PRVDR_NUM_ACTV_IND_03	Provider Number Active Indicator - March	CHAR	1	10
+PRVDR_NUM_ACTV_IND_04	Provider Number Active Indicator - April	CHAR	1	11
+PRVDR_NUM_ACTV_IND_05	Provider Number Active Indicator - May	CHAR	1	12
+PRVDR_NUM_ACTV_IND_06	Provider Number Active Indicator - June	CHAR	1	13
+PRVDR_NUM_ACTV_IND_07	Provider Number Active Indicator - July	CHAR	1	14
+PRVDR_NUM_ACTV_IND_08	Provider Number Active Indicator - August	CHAR	1	15
+PRVDR_NUM_ACTV_IND_09	Provider Number Active Indicator - September	CHAR	1	16
+PRVDR_NUM_ACTV_IND_10	Provider Number Active Indicator - October	CHAR	1	17
+PRVDR_NUM_ACTV_IND_11	Provider Number Active Indicator - November	CHAR	1	18
+PRVDR_NUM_ACTV_IND_12	Provider Number Active Indicator - December	CHAR	1	19
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	20
+RFRNC_YR	Reference Yr	CHAR	4	21
+* Field length expanded from 12 to 30 in 2023 data.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Provider File — Bed Type File
+Version — December 2025
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+SUBMTG_STATE_PRVDR_ID	Submitting State Provider Identification Number	CHAR	30	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+PRVDR_LCTN_ID	Provider Location Identifier	CHAR	5	4
+BED_TYPE_CD	Bed Type Code	CHAR	1	5
+BED_CNT	Bed Count	NUM	11	6
+PRVDR_BED_ACTV_IND_01	Provider Bed Type and Count for Facility Active Indicator - January	CHAR	1	7
+PRVDR_BED_ACTV_IND_02	Provider Bed Type and Count for Facility Active Indicator - February	CHAR	1	8
+PRVDR_BED_ACTV_IND_03	Provider Bed Type and Count for Facility Active Indicator - March	CHAR	1	9
+PRVDR_BED_ACTV_IND_04	Provider Bed Type and Count for Facility Active Indicator - April	CHAR	1	10
+PRVDR_BED_ACTV_IND_05	Provider Bed Type and Count for Facility Active Indicator - May	CHAR	1	11
+PRVDR_BED_ACTV_IND_06	Provider Bed Type and Count for Facility Active Indicator - June	CHAR	1	12
+PRVDR_BED_ACTV_IND_07	Provider Bed Type and Count for Facility Active Indicator - July	CHAR	1	13
+PRVDR_BED_ACTV_IND_08	Provider Bed Type and Count for Facility Active Indicator - August	CHAR	1	14
+PRVDR_BED_ACTV_IND_09	Provider Bed Type and Count for Facility Active Indicator - September	CHAR	1	15
+PRVDR_BED_ACTV_IND_10	Provider Bed Type and Count for Facility Active Indicator - October	CHAR	1	16
+PRVDR_BED_ACTV_IND_11	Provider Bed Type and Count for Facility Active Indicator - November	CHAR	1	17
+PRVDR_BED_ACTV_IND_12	Provider Bed Type and Count for Facility Active Indicator - December	CHAR	1	18
+CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	19
+RFRNC_YR	Reference Yr	CHAR	4	20

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__codebook-encounter-records_pdf__ace8b4036c__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/ace8b4036c73edd88167f0ea9a3d49439a3af313.pdf",
+  "page": 12,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Encounter Records RIFs │ May 2025 │ V 1.7 \n2 \nAT_PHYSN_NPI \nLABEL: \nClaim Attending Physician NPI Number \nDESCRIPTION: On an institutional claim, the national provider identifier (NPI) number assigned to uniquely identify \nthe physician who has overall responsibility for the beneficiary's care and treatment. \nSHORT NAME: AT_PHYSN_NPI \nLONG NAME: AT_PHYSN_NPI \nTYPE: \nCHAR \nLENGTH: \n10 \nFILE(S): \nIP base \nSNF base \nHH base \nOP",
+  "dataset": "ip-encounter",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-encounter-records.pdf"
+}

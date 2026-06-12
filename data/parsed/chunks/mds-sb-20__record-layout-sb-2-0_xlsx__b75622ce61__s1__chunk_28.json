@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_28",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "R4 R4_DISCHARGE_DT 15(R4)Discharge Date DATE 8 The date that the patient was discharged from the Swing Bed.\n55 A4A A4A_REENTRY_DT 16(A4a)Reentry Date DATE 8 The date the patient returns to the Swing Bed program from a discharge status-return anticipated.\n56 B1 B1_COMATOSE 17(B1)Comatose CHAR 1 Indicates a pathological state in which neither arousal (wakefulness, alertness) nor awareness (cognition of self and envrionment) is present. -1 = Unknown, 0 = No, 1 = Yes\n57 B2A B2A_ST_MEMORY",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

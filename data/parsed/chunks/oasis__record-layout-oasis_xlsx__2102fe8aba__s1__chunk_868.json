@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_868",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "electronic health information exchange. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2124C_ROUTE_RSDNT_VRBL_CD Patient Trans - Verbal Indicate whether the route(s) of transmission of the current reconciled medication list to the patient, family and/or caregiver was verbal. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2124D_ROUTE_RSDNT_PAPER_CD Patient Trans - Paper-based Indicate whether the route(s) of transmission of the current reconciled medication list to the patient, family and/or caregiver was paper based. 0.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_314",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "values. 0 = No, 1 = Yes, \"-\" = Unknown.\n528 Q1A Q1A_RES_RETURN (Q1A) Resident Wishes to Return to Community CHAR 1 Discharge potential and overall status: discharge potential - resident wished to return to community. 0 = No, 1 = Yes, \"-\" = Unknown.\n529 Q1B Q1B_SUPPORT_RES (Q1B) Resident Supported by Someone Positive Toward Discharge CHAR 1 Discharge potential and overall status: discharge potential - support person positive toward discharge. 0 = No, 1 = Yes, \"-\" = Unknown.\n530 Q1C",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

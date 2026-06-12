@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p295__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 295,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n275 \nTOT_BENE_COPAY_LBLTY_AMT \nLABEL: \nTotal Beneficiary Copayment Liability Amount \nDESCRIPTION: The total copayment amount on a claim the beneficiary is obligated to pay for covered services. This \namount is the total Medicaid or contract negotiated beneficiary copayment liability for covered \nservices on the claim. \nSHORT NAME: TOT_BENE_COPAY_LBLTY_AMT \nLONG NAME:",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

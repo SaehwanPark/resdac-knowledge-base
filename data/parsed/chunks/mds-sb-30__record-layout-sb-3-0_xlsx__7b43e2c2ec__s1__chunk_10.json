@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "the unique ID of the assessment where the Correction Number is equal to '00'.\n11 V0100F_PRIOR_STF_MOOD_SCRE_NUM V0100F_PRIOR_STF_MOOD_SCRE_NUM Prior Assessment Staff Assessment of Resident Mood (PHQ-9) Total Severity Score Number CHAR 2 Prior Assessment Staff Assessment of Resident Mood (PHQ-9) Total Severity Score Number\n12 C_RSDNT_AGE_NUM C_RSDNT_AGE_NUM Resident Age CHAR 8 This column contains the system calculated resident age number.\n13 C_URBN_RRL_CD C_URBN_RRL_CD CBSA Urban/Rural Code",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

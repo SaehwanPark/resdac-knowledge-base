@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_22",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| RDLGY_DGNSTC_IND_SW | Diagnostic Radiology Indicator | \n\n | 120 | RDLGY_THRPTC_IND_SW | Therapeutic Radiology Indicator | \n\n | 121 | RDLGY_NUCLR_MDCN_IND_SW | Radiology Nuclear Medicine Indicator | \n\n | 122 | RDLGY_CT_SCAN_IND_SW | Radiology Computed Tomographic (CT) Scan Indicator | \n\n | 123 | RDLGY_OTHR_IMGNG_IND_SW | Radiology Other Imaging Indicator | \n\n | 124 | OP_SRVC_IND_CD | Outpatient services/ambulatory surgical care indicator code | \n\n | 125 | ORGN_ACQSTN_IND_CD | Organ Acquisition",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

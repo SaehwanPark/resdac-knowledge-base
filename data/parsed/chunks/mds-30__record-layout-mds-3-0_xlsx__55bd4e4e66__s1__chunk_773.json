@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_773",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "the resident/family/caregiver was paper-based (e.g., fax, copies, printouts). 0=No\n1=Yes effective 10/01/2023\n863 ROUTE_RSDNT_OTHR_CD ROUTE_RSDNT_OTHR_CD A2124E Patient Trans - Other Methods CHAR 1 The data in this column indicates that the route(s) of transmission of the current reconciled medication list to the resident/family/caregiver was an other method (e.g., texting, email, CDs) 0=No\n1=Yes effective 10/01/2023\n864 HLTH_LITERACY_CD HLTH_LITERACY_CD B1300 Health Literacy CHAR 1 The data in",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

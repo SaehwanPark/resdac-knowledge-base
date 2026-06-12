@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 3,
+  "text": "CHAR 2 X X X X X X X X\nGAP_TIER Gap Tier CHAR 1 X X X X X X X X\nGAP_TIER_PARTIAL Gap Tier Partial CHAR 1 - X X X X X X X\nEXCLUDED_TIER_GAP Excluded Drugs Covered on this Tier in the Gap Phase CHAR 1 - - - - - X X X\nEXCLUDED_TIER_PRE_ICL Excluded drugs are covered on this tier in the Pre ICL phase CHAR 1 - - - - - X X X\nSPECIALTY_TIER Specialty Tier CHAR 1 X LC X X X X X X\nPre-ICL Tier Cost-Sharing\nPRE_ICL_TIER_DRUG_TYPE Pre-ICL Drug Type by Tier CHAR 6 X X X X X X X X\nPRE_ICL_COSTSHARE_TYPE",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

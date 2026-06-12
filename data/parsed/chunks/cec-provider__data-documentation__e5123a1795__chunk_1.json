@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cec-provider__data-documentation__e5123a1795__chunk_1",
+  "source_document": "data/raw/html/documentation_page/e5123a1795316feb41120271adc8af7000686d48.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| ESCO_NUMBER | ESCO Number | \n| ESCO_NAME | ESCO Name | \n| PERFORMANCE_PERIOD | Period of Performance | \n| TIN_NUMBER | Tax ID Number of the practice/facility associated with the Individual NPI | \n| PRNT_PRTCPNT_NPI_NUM | Parent Participant NPI Number | \n| ORGANIZATION_NAME | Organization Name | \n| NPI_NUMBER | Individual NPI Number | \n| PROVIDER_TYPE_DESC | Provider Type Description | \n| CCN |",
+  "dataset": "cec-provider",
+  "url": "https://resdac.org/cms-data/files/cec-provider/data-documentation"
+}

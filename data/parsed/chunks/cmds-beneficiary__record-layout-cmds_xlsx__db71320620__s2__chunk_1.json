@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-beneficiary__record-layout-cmds_xlsx__db71320620__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/db713206205b9bc4a36a311a78fdfb65414c59e1.xlsx",
+  "page": 2,
+  "text": "Certification Number of Provider CHAR 6\nSTART_DATE Provider Start Date DATE 8 CCYYMMDD\nEND_DATE Provider End Date DATE 8 CCYYMMDD\nPART_TYPE Provider Participation Type CHAR 1 P = Participating Provider\nF = Preferred Provider",
+  "dataset": "cmds-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cmds.xlsx"
+}

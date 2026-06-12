@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p25__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 25,
+  "text": "of the \ndata file) represent the same plan in the prior year, compare this variable (along with the \ncorresponding PLAN_ID_11) to the CONTRACT_ID_12 (and PLAN_ID_12). \nPrior to 2015, this variable was always encrypted to comply with CMS privacy rules. You need to know \nboth the Part D contract number and plan benefit package identification number (variable called \nPLAN_ID_YY) in order to identify the specific plan benefit package offered to beneficiaries for the \nparticular year (YY). \nThis",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p101__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 101,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n83 \nCLM_LINE_NUM \nLABEL: \nClaim Line Number \nDESCRIPTION: This variable identifies an individual line number on a claim. \nEach revenue center record or claim line has a sequential line number to distinguish distinct services \nthat are submitted on the same claim. \nAll revenue center records or claim lines on a given claim have the same CLM_ID. \nSHORT NAME: CLM_LN \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

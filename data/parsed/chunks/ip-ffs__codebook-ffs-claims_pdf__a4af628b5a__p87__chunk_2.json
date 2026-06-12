@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p87__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 87,
+  "text": "admission \ndate) use the admission date from the claim (variable called CLM_ADMSN_DT for IP, SNF, and HH — \nand variable called CLM_HOSPC_START_DT_ID for hospice claims). \nFor Part B non-institutional (carrier and DME) services, this variable corresponds with the earliest of \nany of the line-item level dates (e.g., in the line file, it is the first CLM_FROM_DT for any line on the \nclaim). It is almost always the same as the CLM_THRU_DT; exception is for DME claims — where some \nservices are",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

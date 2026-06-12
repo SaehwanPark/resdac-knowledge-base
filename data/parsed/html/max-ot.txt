@@ -1,0 +1,10 @@
+Medicaid Analytic Extract (MAX) Other Services (OT) file contains claim records for a variety of Medicaid services, including physician services, outpatient hospital institutional utilization, lab/X-ray, clinic services, home health, hospice and premium payments.
+What does this file include? (variable highlights)
+- As appropriate for the type of service on the record:- 2 diagnosis codes
+- 1 procedure code
+ 
+- Broadly defined Type of Service codes
+- Charges and payments (FFS only)
+- Provider identifier
+Special considerations
+- Encounter record reporting may not be complete. Data reporting may vary by state, year and eligibility group

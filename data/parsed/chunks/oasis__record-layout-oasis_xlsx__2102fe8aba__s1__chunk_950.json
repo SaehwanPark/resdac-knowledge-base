@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_950",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Vaccination Up To Date Indicates whether or not the patient's COVID-19 vaccination is up to date. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\n1In 2025, this field was renamed to sex to comply with Executive Order 14168.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

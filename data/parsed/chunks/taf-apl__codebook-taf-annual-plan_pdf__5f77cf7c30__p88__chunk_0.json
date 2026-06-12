@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p88__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 88,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n80 \nSPLMTL_OPRTG_AUTHRTY \nLABEL: \nAnnual Managed Care Plan Record in Supplemental Operating Authority File \nDESCRIPTION: A flag to indicate that there are one or more record(s) in the Operating Authority supplemental file for \nthis managed care plan/entity (i.e., CCW_APL_LINK_KEY). \nSHORT NAME: SPLMTL_OPRTG_AUTHRTY \nLONG NAME: SPLMTL_OPRTG_AUTHRTY \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}
