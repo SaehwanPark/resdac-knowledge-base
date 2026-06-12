@@ -182,6 +182,170 @@ def test_run_qa_success_flow(tmp_path: Path) -> None:
   assert exit_code == 0
 
 
+def test_run_qa_validates_variable_metadata_and_edges(tmp_path: Path) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  graph_dir = tmp_path / "data" / "graph"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  workspace_dir = tmp_path / "_workspace"
+
+  for d in [metadata_dir, graph_dir, manifest_dir, raw_dir, workspace_dir]:
+    d.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+  doc_txt = tmp_path / "data" / "parsed" / "html" / "doc-1.txt"
+  _write_file(doc_txt, b"BENE_ID: Beneficiary identifier.")
+
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  source_url = "https://resdac.org/cms-data/files/ds-1"
+  write_archive_manifest(
+    [
+      ArchiveManifestRow(
+        url=source_url,
+        resource_kind="dataset_page",
+        archive_state="archived",
+        downloaded_at_utc="2026-06-11T12:00:00Z",
+        sha256=ds_sha,
+        local_path=str(ds_html),
+      )
+    ],
+    manifest_path,
+  )
+
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "dataset_id",
+      "name",
+      "program",
+      "category",
+      "availability",
+      "source_url",
+      "local_path",
+      "sha256",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "ds-1",
+      "Dataset 1",
+      "Medicare",
+      "Claims",
+      "Available",
+      source_url,
+      str(ds_html),
+      ds_sha,
+      "",
+    ])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "document_id",
+      "dataset_id",
+      "title",
+      "document_kind",
+      "source_url",
+      "local_path",
+      "sha256",
+      "content_type",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "doc-1",
+      "ds-1",
+      "Doc 1 Title",
+      "html",
+      source_url,
+      str(ds_html),
+      ds_sha,
+      "text/html",
+      "",
+    ])
+
+  document_edges_csv = graph_dir / "document_edges.csv"
+  with document_edges_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "source_id",
+      "target_id",
+      "relationship",
+      "source_url",
+      "local_path",
+      "sha256",
+    ])
+
+  variables_csv = metadata_dir / "variables.csv"
+  with variables_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "variable_id",
+      "variable_name",
+      "dataset_id",
+      "definition",
+      "aliases",
+      "years",
+      "source_document",
+      "source_url",
+      "page",
+      "chunk_id",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "ds-1__var__bene-id",
+      "BENE_ID",
+      "ds-1",
+      "Beneficiary identifier",
+      "",
+      "2020",
+      str(doc_txt),
+      source_url,
+      "",
+      "chunk-1",
+      "",
+    ])
+
+  variable_edges_csv = graph_dir / "variable_edges.csv"
+  with variable_edges_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "source_id",
+      "target_id",
+      "relationship",
+      "source_url",
+      "source_document",
+      "page",
+      "chunk_id",
+    ])
+    writer.writerow([
+      "ds-1",
+      "ds-1__var__bene-id",
+      "contains",
+      source_url,
+      str(doc_txt),
+      "",
+      "chunk-1",
+    ])
+
+  result, _ = run_qa(
+    QAConfig(
+      datasets_metadata_path=datasets_csv,
+      documents_metadata_path=documents_csv,
+      variables_metadata_path=variables_csv,
+      document_edges_path=document_edges_csv,
+      variable_edges_path=variable_edges_csv,
+      archive_manifest_path=manifest_path,
+      workspace_dir=workspace_dir,
+    )
+  )
+
+  assert result.verdict == "pass"
+  assert result.variables_checked == 1
+  assert result.edges_checked == 1
+
+
 def test_run_qa_file_missing(tmp_path: Path) -> None:
   # Check missing files verdict (Fatal REDO)
   config = QAConfig(
@@ -690,5 +854,4 @@ def test_run_qa_validates_ontology_nodes_and_edges(tmp_path: Path) -> None:
   error_fields = {f.field for f in result.findings if f.severity == "error"}
   assert "node_class" in error_fields
   assert "source_id" in error_fields
-
 

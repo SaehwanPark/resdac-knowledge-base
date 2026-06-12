@@ -241,7 +241,45 @@ Outputs:
 - `data/metadata/datasets.csv`
 - `data/metadata/documents.csv`
 - `data/graph/document_edges.csv`
+- `data/graph/ontology_nodes.csv`
+- `data/graph/ontology_edges.csv`
 - `_workspace/04_extraction_pack.md`
+
+Run the Phase 3 parsing pass against extracted metadata:
+
+```bash
+uv run cms-kb-parse
+```
+
+Outputs:
+
+- `data/parsed/html/...`
+- `data/parsed/pdf/...`
+- `data/parsed/chunks/...`
+- `data/parsed/chunks.jsonl`
+- `_workspace/05_parsing_pack.md`
+
+Run the Phase 6 variable metadata pass against parsed chunks:
+
+```bash
+uv run cms-kb-variables
+```
+
+Outputs:
+
+- `data/metadata/variables.csv`
+- `data/graph/variable_edges.csv`
+- `_workspace/07_variable_pack.md`
+
+Run the QA Specialist after extraction, parsing, or variable updates:
+
+```bash
+uv run cms-kb-qa
+```
+
+Output:
+
+- `_workspace/06_qa_review.md`
 
 ## Core Data Model
 
@@ -262,11 +300,15 @@ Outputs:
 
 ```json
 {
+  "variable_id": "...",
   "variable_name": "...",
   "dataset_id": "...",
   "definition": "...",
-  "years": [],
-  "source_document": "..."
+  "aliases": "...",
+  "years": "...",
+  "source_document": "...",
+  "source_url": "...",
+  "chunk_id": "..."
 }
 ```
 

@@ -3,7 +3,7 @@
 ## Overview
 The repository is currently a documentation-first knowledge base for CMS and ResDAC materials. The canonical repo state is the archived source material, extracted metadata, and provenance-bearing manifests that future code will generate.
 
-Last Reviewed: 2026-06-11
+Last Reviewed: 2026-06-12
 Status: Verified
 
 ## Main Surfaces
@@ -47,6 +47,26 @@ Phase 2 metadata extraction is implemented in `src/cms_kb/extraction.py`. The `c
 - `data/metadata/datasets.csv`: dataset records extracted from archived dataset pages.
 - `data/metadata/documents.csv`: documentation page and asset records linked to datasets.
 - `data/graph/document_edges.csv`: graph seed edges from datasets to documents.
+- `data/graph/ontology_nodes.csv`: dataset and program ontology seed nodes.
+- `data/graph/ontology_edges.csv`: ontology seed relationships such as `belongs_to` and `related_to`.
 - `_workspace/04_extraction_pack.md`: extraction handoff summary with unresolved normalization notes and failures.
 
-Document content parsing, variable extraction, richer graph construction, and retrieval layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how future phases should hand off provenance-bearing artifacts.
+Phase 3 document parsing is implemented in `src/cms_kb/parsing.py`. The `cms-kb-parse` CLI consumes dataset and document metadata, parses HTML/PDF text, chunks extracted text, and writes:
+
+- `data/parsed/html/...`: parsed HTML text.
+- `data/parsed/pdf/...`: parsed PDF text.
+- `data/parsed/chunks/...`: per-chunk JSON metadata.
+- `data/parsed/chunks.jsonl`: unified chunk stream with source document, page, dataset, and URL provenance.
+- `_workspace/05_parsing_pack.md`: parsing handoff summary with failures.
+
+Phase 4 QA is implemented in `src/cms_kb/qa.py`. The `cms-kb-qa` CLI validates checksums, source URLs, local paths, dataset/document references, ontology references, and optional variable outputs, then writes:
+
+- `_workspace/06_qa_review.md`: pass/fix/redo verdict with finding details.
+
+Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variables.py`. The `cms-kb-variables` CLI consumes parsed chunks, extracts conservative variable records only when definition evidence is present, and writes:
+
+- `data/metadata/variables.csv`: variable records with dataset, definition, aliases, years, source document, source URL, page, and chunk provenance.
+- `data/graph/variable_edges.csv`: dataset-to-variable `contains` edges with chunk provenance.
+- `_workspace/07_variable_pack.md`: variable extraction handoff summary with skipped candidates and failures.
+
+Retrieval and agent-facing API layers are not implemented yet. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.

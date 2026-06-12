@@ -41,6 +41,14 @@ from .qa import (
   QAResult,
   run_qa,
 )
+from .variables import (
+  VariableEdgeRow,
+  VariableExtractionConfig,
+  VariableExtractionFailure,
+  VariableExtractionResult,
+  VariableMetadataRow,
+  run_variable_extraction,
+)
 
 __all__ = [
   "ArchiveConfig",
@@ -67,6 +75,11 @@ __all__ = [
   "QAConfig",
   "QAFinding",
   "QAResult",
+  "VariableEdgeRow",
+  "VariableExtractionConfig",
+  "VariableExtractionFailure",
+  "VariableExtractionResult",
+  "VariableMetadataRow",
   "crawl_inventory",
   "main",
   "run_archive",
@@ -74,4 +87,5 @@ __all__ = [
   "run_inventory",
   "run_parsing",
   "run_qa",
+  "run_variable_extraction",
 ]
