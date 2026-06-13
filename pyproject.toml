@@ -5,6 +5,7 @@ description = "CMS documentation archive and inventory tooling"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+  "mcp>=1.27.2",
   "pydantic>=2",
   "pymupdf>=1.27.2.3",
   "trafilatura>=2.1.0",
@@ -19,6 +20,7 @@ cms-kb-qa = "cms_kb.qa:main"
 cms-kb-variables = "cms_kb.variables:main"
 cms-kb-search = "cms_kb.retrieval:main"
 cms-kb-agent-context = "cms_kb.agent_api:main"
+cms-kb-mcp = "cms_kb.mcp:main"
 
 [dependency-groups]
 dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]

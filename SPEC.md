@@ -22,6 +22,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 7 retrieval MVP is implemented, performing deterministic local lexical search over datasets, documents, variables, and parsed chunks while preserving source citations.
 - Minimal agent-facing context API is implemented, exposing retrieval results as citation-preserving Pydantic models and JSON CLI output.
 - Documentation state model clarified so Past, Present, and Future are mutually exclusive and completed phases no longer appear as active work.
+- Phase 8: MCP Agent Integration is implemented, exposing read-only MCP server and tools (search_datasets, search_documents, search_variables, search_chunks, get_agent_context) over the retrieval API.
 
 ## Present
 - No active implementation item is currently tracked.
@@ -30,27 +31,6 @@ checked-in corpus coverage, and retained generated data artifacts.
 Future work is organized as implementation phases. A phase may be promoted into
 `Present` when active work begins, with concise verification criteria and
 explicit out-of-scope notes.
-
-### Phase 8: MCP Agent Integration
-Purpose: expose the existing citation-preserving retrieval and agent context
-API through MCP so AI agents can query the knowledge base through stable tools
-instead of ad hoc shell or JSON CLI calls.
-
-Subphases:
-- 8A: Define a small local MCP server that wraps existing read-only retrieval
-  and context-building functions without changing result provenance.
-- 8B: Expose MCP tools for dataset, document, variable, chunk, and context
-  search using the same citation fields returned by `cms-kb-agent-context`.
-- 8C: Add agent-client usage documentation and focused verification for MCP
-  tool responses, empty queries, missing inputs, and citation preservation.
-
-Verification:
-- MCP responses preserve source URL, local source document, page, and stable
-  result identifiers where available.
-- Existing `cms-kb-search` and `cms-kb-agent-context` behavior remains
-  unchanged.
-- MCP support is documented as read-only over archived and generated KB
-  artifacts.
 
 ### Phase 9: Source Expansion
 Purpose: expand archived documentation beyond the current ResDAC source set

@@ -12,7 +12,7 @@ be implemented even when its generated data artifacts are not checked in.
 
 ## Code Implementation Status
 
-Status: implemented through the deterministic retrieval MVP.
+Status: implemented through the MCP Agent Integration.
 
 The current Python implementation includes:
 
@@ -27,6 +27,7 @@ The current Python implementation includes:
   parsed chunks.
 - Minimal agent-facing context retrieval that returns citation-preserving JSON
   and Pydantic models.
+- Read-only Model Context Protocol (MCP) server for integration with AI agents.
 
 `SPEC.md` tracks implementation lifecycle state with mutually exclusive
 `Past`, `Present`, and `Future` sections.
