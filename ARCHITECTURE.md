@@ -7,16 +7,16 @@ Last Reviewed: 2026-06-12
 Status: Verified
 
 ## Main Surfaces
-- [README.md](file:///Users/saehwan/repos/resdac-knowledge-base/README.md): first-visitor overview, quick start, and documentation map.
-- [user-manual.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/user-manual.md): comprehensive user manual for health policy researchers, scientists, and analysts.
-- [developer-guide.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/developer-guide.md): developer reference guide for pipeline execution, code constraints, and MCP server configuration.
-- [STATUS.md](file:///Users/saehwan/repos/resdac-knowledge-base/STATUS.md): separate current status for code implementation, checked-in corpus coverage, and retained generated artifacts.
-- [pipeline.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/pipeline.md): phase commands, generated outputs, and QA workflow.
-- [data-model.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/data-model.md): dataset, document, variable, graph, and provenance records.
-- [source-coverage.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/source-coverage.md): current ResDAC source scope and future source families.
-- [SPEC.md](file:///Users/saehwan/repos/resdac-knowledge-base/SPEC.md): operational feature-state record with mutually exclusive Past, Present, and Future sections.
-- [ROADMAP.md](file:///Users/saehwan/repos/resdac-knowledge-base/ROADMAP.md): strategic phase history and future direction for archive, extraction, parsing, graph, retrieval, and evaluation work.
-- [team-spec.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/harness/cms-kb/team-spec.md): repo-local orchestration contract for archive, extraction, and QA handoffs.
+- [README.md](README.md): first-visitor overview, quick start, and documentation map.
+- [user-manual.md](docs/user-manual.md): comprehensive user manual for health policy researchers, scientists, and analysts.
+- [developer-guide.md](docs/developer-guide.md): developer reference guide for pipeline execution, code constraints, and MCP server configuration.
+- [STATUS.md](STATUS.md): separate current status for code implementation, checked-in corpus coverage, and retained generated artifacts.
+- [pipeline.md](docs/pipeline.md): phase commands, generated outputs, and QA workflow.
+- [data-model.md](docs/data-model.md): dataset, document, variable, graph, and provenance records.
+- [source-coverage.md](docs/source-coverage.md): current ResDAC source scope and future source families.
+- [SPEC.md](SPEC.md): operational feature-state record with mutually exclusive Past, Present, and Future sections.
+- [ROADMAP.md](ROADMAP.md): strategic phase history and future direction for archive, extraction, parsing, graph, retrieval, and evaluation work.
+- [team-spec.md](docs/harness/cms-kb/team-spec.md): repo-local orchestration contract for archive, extraction, and QA handoffs.
 - `data/`: corpus surface for raw archives plus generated parsed text, metadata, and graph artifacts when retained.
 - `manifests/`: data provenance surface for inventory and archive manifests.
 - `src/`: code implementation surface for crawl, archive, parse, metadata, graph, retrieval, and evaluation CLIs.
