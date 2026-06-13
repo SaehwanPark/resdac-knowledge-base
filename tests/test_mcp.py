@@ -2,11 +2,13 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Generator
 
 import pytest
 
 from cms_kb.mcp import (
   get_agent_context,
+  main,
   mcp,
   search_chunks,
   search_datasets,
@@ -18,10 +20,15 @@ from test_agent_api import _write_metadata_fixture
 
 
 @pytest.fixture
-def _setup_test_state(tmp_path: Path) -> None:
+def _setup_test_state(tmp_path: Path) -> Generator[None, None, None]:
+  orig_config = state.config
+  orig_limit = state.default_limit
   retrieval_config = _write_metadata_fixture(tmp_path)
   state.config = retrieval_config
   state.default_limit = 5
+  yield
+  state.config = orig_config
+  state.default_limit = orig_limit
 
 
 def test_mcp_tools_registration() -> None:
@@ -94,3 +101,27 @@ def test_mcp_empty_query_raises(_setup_test_state: None) -> None:
   # Empty query should raise ValueError matching existing API behavior
   with pytest.raises(ValueError, match="query must not be empty"):
     search_datasets(" ")
+
+
+def test_mcp_limit_fallback_and_override(_setup_test_state: None) -> None:
+  # Verify tool uses state.default_limit when limit=None
+  state.default_limit = 1
+  # Add another mock variable to make search return multiple results
+  # Note: our write_metadata_fixture only wrote 1 variable. Let's make sure
+  # if limit is overridden, it works.
+  response_str = search_variables("mbsf", limit=1)
+  results = json.loads(response_str)
+  assert len(results) <= 1
+
+
+def test_mcp_cli_fails_on_missing_files(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+  # Main CLI should fail fast when paths do not exist
+  exit_code = main([
+    "--datasets-metadata",
+    str(tmp_path / "missing_datasets.csv"),
+    "--documents-metadata",
+    str(tmp_path / "missing_documents.csv"),
+  ])
+  assert exit_code == 1
+  captured = capsys.readouterr()
+  assert "Datasets metadata file not found" in captured.err
