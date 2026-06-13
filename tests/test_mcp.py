@@ -106,10 +106,7 @@ def test_mcp_empty_query_raises(_setup_test_state: None) -> None:
 def test_mcp_limit_fallback_and_override(_setup_test_state: None) -> None:
   # Verify tool uses state.default_limit when limit=None
   state.default_limit = 1
-  # Add another mock variable to make search return multiple results
-  # Note: our write_metadata_fixture only wrote 1 variable. Let's make sure
-  # if limit is overridden, it works.
-  response_str = search_variables("mbsf", limit=1)
+  response_str = search_variables("mbsf")
   results = json.loads(response_str)
   assert len(results) <= 1
 
