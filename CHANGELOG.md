@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+### Added
+- Comprehensive [user-manual.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/user-manual.md) for health policy researchers, scientists, and analysts.
+- Detailed [developer-guide.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/developer-guide.md) for engineers, operators, and developers maintaining the pipeline.
+- Phase 8: Model Context Protocol (MCP) server integration, exposing read-only tools for automated agent search and retrieval.
+
 ### Changed
 - Split documentation status tracking into separate code implementation,
   checked-in corpus, and derived artifact states.

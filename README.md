@@ -87,25 +87,21 @@ Return JSON context for an agent workflow:
 uv run cms-kb-agent-context --query BENE_ID --limit 5 --json
 ```
 
-For the full phase-by-phase command list, see `docs/pipeline.md`.
+For the full phase-by-phase command list, see [pipeline.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/pipeline.md).
 
 ## Documentation Map
 
-- `STATUS.md`: current code implementation status, checked-in corpus status,
-  and derived artifact status.
-- `docs/pipeline.md`: phase commands, generated outputs, and QA workflow.
-- `docs/data-model.md`: dataset, document, variable, graph, and provenance
-  records.
-- `docs/source-coverage.md`: current ResDAC source scope and future source
-  families.
-- `SPEC.md`: operational feature-state record for past, present, and future
-  work.
-- `ARCHITECTURE.md`: repository surfaces, data flow, constraints, and current
-  implementation state.
-- `ROADMAP.md`: strategic layering and future direction.
-- `docs/harness/cms-kb/team-spec.md`: agent handoff contract for archive,
-  extraction, parsing, and QA workflows.
-- `LESSONS.md`: recurring setup traps, debugging lessons, and workflow gotchas.
+- [user-manual.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/user-manual.md): a comprehensive user manual written for health policy researchers, scientists, and analysts.
+- [developer-guide.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/developer-guide.md): developer reference guide for pipeline execution, code constraints, and MCP server configuration.
+- [STATUS.md](file:///Users/saehwan/repos/resdac-knowledge-base/STATUS.md): current code implementation status, checked-in corpus status, and derived artifact status.
+- [pipeline.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/pipeline.md): phase commands, generated outputs, and QA workflow.
+- [data-model.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/data-model.md): dataset, document, variable, graph, and provenance records.
+- [source-coverage.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/source-coverage.md): current ResDAC source scope and future source families.
+- [SPEC.md](file:///Users/saehwan/repos/resdac-knowledge-base/SPEC.md): operational feature-state record for past, present, and future work.
+- [ARCHITECTURE.md](file:///Users/saehwan/repos/resdac-knowledge-base/ARCHITECTURE.md): repository surfaces, data flow, constraints, and current implementation state.
+- [ROADMAP.md](file:///Users/saehwan/repos/resdac-knowledge-base/ROADMAP.md): strategic layering and future direction.
+- [team-spec.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/harness/cms-kb/team-spec.md): agent handoff contract for archive, extraction, parsing, and QA workflows.
+- [LESSONS.md](file:///Users/saehwan/repos/resdac-knowledge-base/LESSONS.md): recurring setup traps, debugging lessons, and workflow gotchas.
 
 ## Repository Structure
 

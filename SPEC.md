@@ -23,6 +23,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Minimal agent-facing context API is implemented, exposing retrieval results as citation-preserving Pydantic models and JSON CLI output.
 - Documentation state model clarified so Past, Present, and Future are mutually exclusive and completed phases no longer appear as active work.
 - Phase 8: MCP Agent Integration is implemented, exposing read-only MCP server and tools (search_datasets, search_documents, search_variables, search_chunks, get_agent_context) over the retrieval API.
+- Comprehensive end-user manual ([user-manual.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/user-manual.md)) and developer guide ([developer-guide.md](file:///Users/saehwan/repos/resdac-knowledge-base/docs/developer-guide.md)) created and linked to README.md.
 
 ## Present
 - No active implementation item is currently tracked.
