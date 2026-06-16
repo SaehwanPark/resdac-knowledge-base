@@ -67,6 +67,7 @@ ALIAS_PATTERN = re.compile(
   r"\b(?:also known as|aka|alias(?:es)?|formerly)\b[:\s]+([^.;\n]+)",
   re.IGNORECASE,
 )
+TABLE_SEPARATOR_CELL_PATTERN = re.compile(r"^:?-{2,}:?$")
 
 
 class VariableExtractionConfig(BaseModel):
@@ -141,7 +142,41 @@ def _clean_definition(value: str) -> str:
   return cleaned
 
 
+def _table_cells(line: str) -> list[str]:
+  if "|" not in line:
+    return []
+  cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+  return [cell for cell in cells if cell]
+
+
+def _candidate_table_definition(line: str, variable_name: str) -> str | None:
+  cells = _table_cells(line)
+  if len(cells) < 2:
+    return None
+  if all(TABLE_SEPARATOR_CELL_PATTERN.fullmatch(cell) is not None for cell in cells):
+    return None
+
+  for index, cell in enumerate(cells):
+    if cell != variable_name:
+      continue
+    for candidate in cells[index + 1:]:
+      if candidate == variable_name:
+        continue
+      if TABLE_SEPARATOR_CELL_PATTERN.fullmatch(candidate) is not None:
+        continue
+      if candidate.lower() in {"variable name", "sas name", "short name", "long name"}:
+        continue
+      definition = _clean_definition(candidate)
+      if definition:
+        return definition
+  return None
+
+
 def _candidate_definition(line: str, variable_name: str) -> str | None:
+  table_definition = _candidate_table_definition(line, variable_name)
+  if table_definition is not None:
+    return table_definition
+
   match = re.search(rf"\b{re.escape(variable_name)}\b", line)
   if match is None:
     return None
@@ -175,6 +210,20 @@ def _extract_aliases(line: str) -> str:
 
 def _extract_years(line: str) -> str:
   return "|".join(sorted(set(YEAR_PATTERN.findall(line))))
+
+
+def _source_priority(row: VariableMetadataRow) -> int:
+  source_url = row.source_url.lower()
+  source_document = row.source_document.lower()
+  is_html = source_document.endswith(".html") or "text/html" in row.extraction_notes.lower()
+
+  if is_html and "/data-documentation" in source_url:
+    return 0
+  if is_html:
+    return 1
+  if source_document.endswith(".xlsx") or source_url.endswith(".xlsx"):
+    return 2
+  return 3
 
 
 def extract_variables_from_chunk(
@@ -243,7 +292,12 @@ def _deduplicate_variables(
     if existing is None:
       unique[row.variable_id] = row
       continue
-    if len(row.definition) > len(existing.definition):
+    row_priority = _source_priority(row)
+    existing_priority = _source_priority(existing)
+    if row_priority < existing_priority:
+      unique[row.variable_id] = row
+      continue
+    if row_priority == existing_priority and len(row.definition) > len(existing.definition):
       unique[row.variable_id] = row
   return sorted(unique.values(), key=lambda row: (row.dataset_id, row.variable_name))
 

@@ -2,9 +2,9 @@
 
 - Parsed chunks input: data/parsed/chunks.jsonl
 - Chunks read: 27123
-- Variables: 153
-- Variable edges: 153
-- Skipped candidates: 51946
+- Variables: 3347
+- Variable edges: 3347
+- Skipped candidates: 47947
 - Failures: 0
 
 ## Outputs

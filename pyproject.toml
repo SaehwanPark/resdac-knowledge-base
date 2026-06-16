@@ -21,6 +21,7 @@ cms-kb-variables = "cms_kb.variables:main"
 cms-kb-search = "cms_kb.retrieval:main"
 cms-kb-agent-context = "cms_kb.agent_api:main"
 cms-kb-mcp = "cms_kb.mcp:main"
+cms-kb-evaluate-variables = "cms_kb.evaluation:main"
 
 [dependency-groups]
 dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]

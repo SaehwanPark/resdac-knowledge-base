@@ -9,7 +9,7 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
-from .agent_api import AgentCitation, AgentContextHit, AgentContextResponse
+from .agent_api import AgentContextResponse, context_hit_from_search_result
 from .retrieval import (
   RetrievableRecord,
   RetrievalConfig,
@@ -114,22 +114,7 @@ def get_agent_context(query: str, limit: int | None = None) -> str:
   resolved_limit = limit if limit is not None else state.default_limit
   records = state.get_records()
   results = search_records(query, records, resolved_limit)
-  hits = [
-    AgentContextHit(
-      record_id=res.record_id,
-      record_type=res.record_type,
-      title=res.title,
-      dataset_id=res.dataset_id,
-      score=res.score,
-      snippet=res.snippet,
-      citation=AgentCitation(
-        source_url=res.source_url,
-        source_document=res.source_document,
-        page=res.page,
-      ),
-    )
-    for res in results
-  ]
+  hits = [context_hit_from_search_result(res) for res in results]
   response = AgentContextResponse(query=query, results=hits)
   return json.dumps(response.model_dump(), indent=2)
 

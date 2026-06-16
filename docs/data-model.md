@@ -110,4 +110,6 @@ Derived records should preserve:
 - Checksum lineage through manifests for archived files.
 
 Retrieval results should include citations back to source URLs and local source
-document/page provenance when available.
+document/page provenance when available. Agent context citations can also
+include variable-detail URLs. The local variable-detail document is populated
+only when that standalone variable page is archived locally.

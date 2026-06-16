@@ -6,8 +6,8 @@
 
 - Datasets Checked: 96
 - Documents Checked: 179
-- Variables Checked: 153
-- Edges Checked: 585
+- Variables Checked: 3347
+- Edges Checked: 3779
 - Total Findings: 1
   - Errors: 0
   - Warnings: 1

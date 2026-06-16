@@ -25,6 +25,8 @@ The current Python implementation includes:
 - Conservative variable-level metadata extraction from parsed chunks.
 - Deterministic lexical retrieval across datasets, documents, variables, and
   parsed chunks.
+- Deterministic variable-retrieval usefulness smoke evaluation over seeded
+  retained variable-name samples.
 - Minimal agent-facing context retrieval that returns citation-preserving JSON
   and Pydantic models.
 - Read-only Model Context Protocol (MCP) server for integration with AI agents.
@@ -57,11 +59,11 @@ The retained generated artifacts are:
 
 - `data/metadata/datasets.csv`: 96 dataset rows.
 - `data/metadata/documents.csv`: 179 document rows.
-- `data/metadata/variables.csv`: 153 variable rows.
+- `data/metadata/variables.csv`: 3,347 variable rows.
 - `data/graph/document_edges.csv`: 179 document edge rows.
 - `data/graph/ontology_nodes.csv`: 99 ontology node rows.
 - `data/graph/ontology_edges.csv`: 253 ontology edge rows.
-- `data/graph/variable_edges.csv`: 153 variable edge rows.
+- `data/graph/variable_edges.csv`: 3,347 variable edge rows.
 - `data/parsed/html/`: 189 parsed HTML text files.
 - `data/parsed/pdf/`: 36 parsed PDF text files.
 - `data/parsed/xlsx/`: 50 parsed XLSX text files.
@@ -74,6 +76,31 @@ not retained as derived artifacts.
 These retained artifacts were produced by `uv run cms-kb-extract`,
 `uv run cms-kb-parse`, and `uv run cms-kb-variables`, then validated with
 `uv run cms-kb-qa`.
+
+## Variable Evidence Refinement Run
+
+Run completed: 2026-06-16
+
+Scope:
+
+- Branch: `fix/prefer-html-variable-evidence`
+- Source corpus: checked-in retained parsed chunks from the ResDAC archive
+  snapshot.
+- Purpose: prefer HTML data-documentation evidence for exact variable lookup
+  results and add a seeded variable-retrieval usefulness smoke evaluation.
+
+Completed steps:
+
+- `uv run pytest tests/test_variables.py tests/test_retrieval.py tests/test_agent_api.py tests/test_evaluation.py`
+  — 26 passed, 5 warnings from PyMuPDF/SWIG imports.
+- `uv run cms-kb-variables` wrote 3,347 variables and 3,347 variable edges.
+- `uv run cms-kb-qa` — PASS with 0 errors and 1 warning.
+- `uv run cms-kb-search --query BENE_ID --limit 8 --json` returned HTML
+  data-documentation-backed variable citations.
+- `uv run cms-kb-agent-context --query BENE_ID --limit 2 --json` returned the
+  same improved citations under `citation`.
+- `uv run cms-kb-evaluate-variables --sample-size 10 --seed 20260616 --json`
+  passed 10 of 10 sampled variable-name retrieval cases.
 
 ## Retained KB Rebuild Run
 
