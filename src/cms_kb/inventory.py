@@ -19,6 +19,8 @@ from urllib.request import Request, urlopen
 
 from pydantic import BaseModel, Field, field_validator
 
+from .progress import append_progress_event
+
 ResourceKind = Literal[
   "listing_page",
   "dataset_page",
@@ -39,6 +41,15 @@ INVENTORY_FIELDNAMES = [
   "linked_documents",
   "source_url",
   "source_title",
+]
+INVENTORY_EDGE_FIELDNAMES = [
+  "source_url",
+  "target_url",
+  "relationship",
+  "source_title",
+  "target_title",
+  "target_resource_kind",
+  "target_asset_kind",
 ]
 TRANSIENT_HTTP_STATUSES = {429, 500, 502, 503, 504}
 
@@ -120,8 +131,10 @@ class InventoryConfig(BaseModel):
   timeout_seconds: float = 20.0
   request_delay_seconds: float = 0.0
   progress_interval: int = 25
+  progress_log_path: Path | None = None
   user_agent: str = "Mozilla/5.0 (compatible; cms-kb-inventory/0.1)"
   output_path: Path = Path("manifests/site_inventory.csv")
+  edge_output_path: Path = Path("manifests/site_inventory_edges.csv")
   workspace_dir: Path = Path("_workspace")
 
   @field_validator("base_url")
@@ -187,9 +200,20 @@ class InventoryRow(BaseModel):
   source_title: str = ""
 
 
+class InventoryEdgeRow(BaseModel):
+  source_url: str
+  target_url: str
+  relationship: str = "links_to"
+  source_title: str = ""
+  target_title: str = ""
+  target_resource_kind: ResourceKind = "other"
+  target_asset_kind: str = ""
+
+
 class InventoryResult(BaseModel):
   config: InventoryConfig
   rows: list[InventoryRow] = Field(default_factory=list)
+  edges: list[InventoryEdgeRow] = Field(default_factory=list)
   summary: dict[str, int] = Field(default_factory=dict)
   dead_links: list[InventoryRow] = Field(default_factory=list)
   duplicates_skipped: int = 0
@@ -229,6 +253,37 @@ def read_inventory_csv(input_path: Path) -> list[InventoryRow]:
       }
       rows.append(InventoryRow.model_validate(normalized_row))
   return rows
+
+
+def read_inventory_edges_csv(input_path: Path) -> list[InventoryEdgeRow]:
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      raise ValueError(f"inventory edges CSV has no header: {input_path}")
+    missing_fieldnames = [
+      fieldname
+      for fieldname in INVENTORY_EDGE_FIELDNAMES
+      if fieldname not in reader.fieldnames
+    ]
+    if missing_fieldnames:
+      raise ValueError(
+        "inventory edges CSV is missing required columns: "
+        f"{', '.join(missing_fieldnames)}"
+      )
+    return [
+      InventoryEdgeRow.model_validate(
+        {
+          "source_url": raw_row["source_url"],
+          "target_url": raw_row["target_url"],
+          "relationship": raw_row.get("relationship", "links_to"),
+          "source_title": raw_row.get("source_title", ""),
+          "target_title": raw_row.get("target_title", ""),
+          "target_resource_kind": raw_row.get("target_resource_kind", "other"),
+          "target_asset_kind": raw_row.get("target_asset_kind", ""),
+        }
+      )
+      for raw_row in reader
+    ]
 
 
 @dataclass(frozen=True)
@@ -445,6 +500,32 @@ def _register_row(
   return row
 
 
+def _register_edge(
+  edges: dict[tuple[str, str, str], InventoryEdgeRow],
+  *,
+  source_url: str,
+  target_url: str,
+  source_title: str = "",
+  target_title: str = "",
+  relationship: str = "links_to",
+) -> None:
+  target_resource_kind = classify_resource_kind(target_url)
+  edge = InventoryEdgeRow(
+    source_url=source_url,
+    target_url=target_url,
+    relationship=relationship,
+    source_title=source_title,
+    target_title=target_title,
+    target_resource_kind=target_resource_kind,
+    target_asset_kind=(
+      classify_asset_kind(target_url, None)
+      if target_resource_kind == "asset"
+      else ""
+    ),
+  )
+  edges[(edge.source_url, edge.target_url, edge.relationship)] = edge
+
+
 def _update_page_row(
   row: InventoryRow,
   *,
@@ -570,6 +651,7 @@ def crawl_inventory(
   progress_fn: Callable[[str], None] | None = None,
 ) -> InventoryResult:
   rows: dict[str, InventoryRow] = {}
+  edges: dict[tuple[str, str, str], InventoryEdgeRow] = {}
   duplicates_skipped = [0]
   visited_pages: set[str] = set()
   seen_listing_signatures: set[str] = set()
@@ -586,6 +668,16 @@ def crawl_inventory(
     f"max listing pages={config.max_pages}, "
     f"max follow pages={config.max_follow_pages if config.max_follow_pages is not None else 'unbounded'}, "
     f"max assets={config.max_assets if config.max_assets is not None else 'unbounded'}",
+  )
+  append_progress_event(
+    config.progress_log_path,
+    phase="inventory",
+    event="start",
+    message=(
+      f"max listing pages={config.max_pages}, "
+      f"max follow pages={config.max_follow_pages if config.max_follow_pages is not None else 'unbounded'}, "
+      f"max assets={config.max_assets if config.max_assets is not None else 'unbounded'}"
+    ),
   )
 
   for page_number in range(config.max_pages):
@@ -619,6 +711,13 @@ def crawl_inventory(
       absolute = normalize_url(listing_url, link.href)
       if _link_is_dataset_page(listing_url, link.href):
         listing_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=listing_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+        )
         row = _register_row(
           rows,
           duplicates_skipped,
@@ -632,6 +731,13 @@ def crawl_inventory(
           queue.append(absolute)
       elif _link_is_documentation(listing_url, link.href):
         listing_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=listing_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+        )
         row = _register_row(
           rows,
           duplicates_skipped,
@@ -649,6 +755,13 @@ def crawl_inventory(
         ):
           continue
         listing_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=listing_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+        )
         asset_urls.add(absolute)
         row = _register_row(
           rows,
@@ -674,6 +787,19 @@ def crawl_inventory(
       asset_probes=asset_probes,
       queued_pages=len(queue),
       rows=len(rows),
+    )
+    append_progress_event(
+      config.progress_log_path,
+      phase="inventory",
+      event="progress",
+      counts={
+        "listing_pages": listing_pages_fetched,
+        "follow_pages": follow_pages_fetched,
+        "asset_probes": asset_probes,
+        "queued_pages": len(queue),
+        "rows": len(rows),
+        "edges": len(edges),
+      },
     )
     signature = hashlib.sha1(
       "\n".join(sorted(set(listing_discovered_urls))).encode("utf-8")
@@ -730,6 +856,13 @@ def crawl_inventory(
       absolute = normalize_url(current_url, link.href)
       if _link_is_documentation(current_url, link.href):
         page_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=current_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+        )
         child_row = _register_row(
           rows,
           duplicates_skipped,
@@ -743,6 +876,13 @@ def crawl_inventory(
           queue.append(absolute)
       elif _link_is_dataset_page(current_url, link.href):
         page_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=current_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+        )
         child_row = _register_row(
           rows,
           duplicates_skipped,
@@ -760,6 +900,13 @@ def crawl_inventory(
         ):
           continue
         page_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=current_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+        )
         asset_urls.add(absolute)
         child_row = _register_row(
           rows,
@@ -779,6 +926,14 @@ def crawl_inventory(
         and _link_is_variable_page(current_url, link.href)
       ):
         page_discovered_urls.append(absolute)
+        _register_edge(
+          edges,
+          source_url=current_url,
+          target_url=absolute,
+          source_title=page_title,
+          target_title=link.text,
+          relationship="documents_variable",
+        )
         child_row = _register_row(
           rows,
           duplicates_skipped,
@@ -800,19 +955,56 @@ def crawl_inventory(
       queued_pages=len(queue),
       rows=len(rows),
     )
+    append_progress_event(
+      config.progress_log_path,
+      phase="inventory",
+      event="progress",
+      url=current_url,
+      resource_kind=row.resource_kind,
+      status=page_result.status,
+      counts={
+        "listing_pages": listing_pages_fetched,
+        "follow_pages": follow_pages_fetched,
+        "asset_probes": asset_probes,
+        "queued_pages": len(queue),
+        "rows": len(rows),
+        "edges": len(edges),
+      },
+    )
 
   ordered_rows = _sorted_rows(rows)
+  ordered_edges = sorted(
+    edges.values(),
+    key=lambda edge: (edge.source_url, edge.target_resource_kind, edge.target_url),
+  )
   dead_links = _count_dead_links(ordered_rows)
   transient_links = _count_transient_links(ordered_rows)
   summary = Counter(row.resource_kind for row in ordered_rows)
   summary["total_urls"] = len(ordered_rows)
+  summary["total_edges"] = len(ordered_edges)
   summary["dead_links"] = len(dead_links)
   summary["transient_links"] = len(transient_links)
   summary["duplicates_skipped"] = duplicates_skipped[0]
+  append_progress_event(
+    config.progress_log_path,
+    phase="inventory",
+    event="complete",
+    counts={
+      "listing_pages": listing_pages_fetched,
+      "follow_pages": follow_pages_fetched,
+      "asset_probes": asset_probes,
+      "rows": len(ordered_rows),
+      "edges": len(ordered_edges),
+      "dead_links": len(dead_links),
+      "transient_links": len(transient_links),
+      "duplicates_skipped": duplicates_skipped[0],
+    },
+  )
 
   return InventoryResult(
     config=config,
     rows=ordered_rows,
+    edges=ordered_edges,
     summary=dict(summary),
     dead_links=dead_links,
     duplicates_skipped=duplicates_skipped[0],
@@ -844,6 +1036,17 @@ def write_inventory_csv(rows: list[InventoryRow], output_path: Path) -> None:
       )
 
 
+def write_inventory_edges_csv(
+  edges: list[InventoryEdgeRow], output_path: Path
+) -> None:
+  output_path.parent.mkdir(parents=True, exist_ok=True)
+  with output_path.open("w", newline="", encoding="utf-8") as handle:
+    writer = csv.DictWriter(handle, fieldnames=INVENTORY_EDGE_FIELDNAMES)
+    writer.writeheader()
+    for edge in edges:
+      writer.writerow(edge.model_dump())
+
+
 def write_workspace_summary(result: InventoryResult) -> Path:
   result.config.workspace_dir.mkdir(parents=True, exist_ok=True)
   summary_path = result.config.workspace_dir / "02_source_inventory.md"
@@ -856,6 +1059,7 @@ def write_workspace_summary(result: InventoryResult) -> Path:
     f"- Base URL: {result.config.base_url}",
     f"- Listing pages crawled: {sum(1 for row in result.rows if row.resource_kind == 'listing_page')}",
     f"- Unique URLs: {len(result.rows)}",
+    f"- Discovery edges: {len(result.edges)}",
     f"- Dead links: {len(result.dead_links)}",
     f"- Transient unresolved links: {len(transient_links)}",
     f"- Duplicate URLs skipped: {result.duplicates_skipped}",
@@ -918,6 +1122,7 @@ def write_workspace_summary(result: InventoryResult) -> Path:
 def run_inventory(config: InventoryConfig) -> tuple[InventoryResult, Path]:
   result = crawl_inventory(config)
   write_inventory_csv(result.rows, config.output_path)
+  write_inventory_edges_csv(result.edges, config.edge_output_path)
   summary_path = write_workspace_summary(result)
   return result, summary_path
 
@@ -955,7 +1160,16 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--output", type=Path, default=Path("manifests/site_inventory.csv")
   )
+  parser.add_argument(
+    "--edge-output", type=Path, default=Path("manifests/site_inventory_edges.csv")
+  )
   parser.add_argument("--workspace-dir", type=Path, default=Path("_workspace"))
+  parser.add_argument(
+    "--progress-log",
+    type=Path,
+    default=Path("_workspace/02_inventory_progress.jsonl"),
+  )
+  parser.add_argument("--no-progress-log", action="store_true")
   parser.add_argument("--timeout-seconds", type=float, default=20.0)
   parser.add_argument("--request-delay-seconds", type=float, default=0.5)
   parser.add_argument(
@@ -983,13 +1197,17 @@ def main(argv: list[str] | None = None) -> int:
     request_delay_seconds=args.request_delay_seconds,
     progress_interval=args.progress_interval,
     output_path=args.output,
+    edge_output_path=args.edge_output,
     workspace_dir=args.workspace_dir,
+    progress_log_path=None if args.no_progress_log else args.progress_log,
   )
   result = crawl_inventory(config, progress_fn=_print_progress)
   write_inventory_csv(result.rows, config.output_path)
+  write_inventory_edges_csv(result.edges, config.edge_output_path)
   summary_path = write_workspace_summary(result)
   print(
-    f"wrote {len(result.rows)} inventory rows to {config.output_path} "
+    f"wrote {len(result.rows)} inventory rows to {config.output_path}, "
+    f"{len(result.edges)} inventory edges to {config.edge_output_path}, "
     f"and {summary_path}"
   )
   return 0

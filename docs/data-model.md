@@ -66,6 +66,27 @@ Primary output:
 
 - `data/metadata/variables.csv`
 
+## Canonical Variable
+
+Canonical variable records describe standalone ResDAC variable-detail pages when
+they are archived. They use the variable-detail URL slug as the canonical
+identity so one semantic variable can connect to many data sources.
+
+```json
+{
+  "variable_id": "...",
+  "variable_name": "...",
+  "variable_label": "...",
+  "definition": "...",
+  "source_url": "...",
+  "source_document": "..."
+}
+```
+
+Primary output:
+
+- `data/metadata/canonical_variables.csv`
+
 ## Graph Seeds
 
 The graph outputs represent lightweight relationships among datasets,
@@ -75,6 +96,7 @@ Example relationship shapes:
 
 ```text
 Dataset -> contains -> Variable
+Dataset -> contains -> CanonicalVariable
 Dataset -> belongs_to -> Program
 Dataset -> related_to -> Dataset
 Dataset -> documented_by -> Document
@@ -86,6 +108,7 @@ Primary outputs:
 - `data/graph/ontology_nodes.csv`
 - `data/graph/ontology_edges.csv`
 - `data/graph/variable_edges.csv`
+- `data/graph/data_source_variable_edges.csv`
 
 ## Parsed Chunks
 

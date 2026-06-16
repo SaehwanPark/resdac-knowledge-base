@@ -49,6 +49,7 @@ Status: Verified
 Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI crawls ResDAC listing pages, follows dataset and documentation links, records variable-detail links from documentation pages, probes linked assets, and writes:
 
 - `manifests/site_inventory.csv`: machine-readable inventory rows.
+- `manifests/site_inventory_edges.csv`: source-to-target discovery edges preserving many-to-many link provenance.
 - `_workspace/02_source_inventory.md`: human-readable coverage summary for harness handoffs.
 
 Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms-kb-archive` CLI consumes the inventory CSV, downloads live HTML pages, discovered variable-detail pages, and live linked assets, and writes:
@@ -57,6 +58,10 @@ Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms
 - `data/raw/assets/...`: archived asset files grouped by asset kind.
 - `manifests/archive_manifest.csv`: archive provenance rows with URL, status, checksum, timestamp, and local path.
 - `_workspace/03_archive_manifest.md`: archive handoff summary for downstream phases.
+
+The archive CLI emits optional JSONL progress events for long runs and handles
+ResDAC HTTP 429 responses with polite retry/backoff and variable-page deferral
+after repeated rate limits.
 
 Phase 2 metadata extraction is implemented in `src/cms_kb/extraction.py`. The `cms-kb-extract` CLI consumes archived rows from `manifests/archive_manifest.csv`, verifies local files and checksums, and writes:
 
@@ -85,7 +90,9 @@ Phase 5 CMS Research Ontology is implemented as part of extraction and QA. It no
 Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variables.py`. The `cms-kb-variables` CLI consumes parsed chunks, extracts conservative variable records only when definition evidence is present, and writes:
 
 - `data/metadata/variables.csv`: variable records with dataset, definition, aliases, years, source document, source URL, page, and chunk provenance.
+- `data/metadata/canonical_variables.csv`: standalone ResDAC variable-page records keyed by variable-detail URL slug when archived.
 - `data/graph/variable_edges.csv`: dataset-to-variable `contains` edges with chunk provenance.
+- `data/graph/data_source_variable_edges.csv`: data-source-to-canonical-variable `contains` edges derived from archived variable-detail page membership.
 - `_workspace/07_variable_pack.md`: variable extraction handoff summary with skipped candidates and failures.
 
 Phase 7 retrieval MVP is implemented in `src/cms_kb/retrieval.py`. The `cms-kb-search` CLI performs deterministic lexical search over dataset, document, variable, and parsed chunk records, returning stable result fields with `source_url` citations and local source document/page provenance when available.

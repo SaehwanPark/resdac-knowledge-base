@@ -3,6 +3,13 @@
 ## Unreleased
 
 ### Added
+- `manifests/site_inventory_edges.csv` support for preserving many-to-many
+  discovery provenance separately from URL-deduplicated inventory rows.
+- Lightweight JSONL progress logging for inventory/archive runs, plus
+  `cms-kb-progress` for summarizing recent progress events.
+- Canonical ResDAC variable-page outputs:
+  `data/metadata/canonical_variables.csv` and
+  `data/graph/data_source_variable_edges.csv`.
 - Comprehensive [user-manual.md](docs/user-manual.md) for health policy researchers, scientists, and analysts.
 - Detailed [developer-guide.md](docs/developer-guide.md) for engineers, operators, and developers maintaining the pipeline.
 - Phase 8: Model Context Protocol (MCP) server integration, exposing read-only tools for automated agent search and retrieval.
@@ -22,6 +29,8 @@
 - Agent context citations now include variable-detail URLs and populate local
   variable-detail documents from `manifests/archive_manifest.csv` when the
   standalone variable page is archived locally.
+- Archive preservation now retries HTTP 429 responses politely and defers
+  remaining standalone variable-page requests after repeated rate limits.
 
 ### Added
 - Initial canonical project documentation with `SPEC.md`, `ARCHITECTURE.md`, and `CHANGELOG.md`.

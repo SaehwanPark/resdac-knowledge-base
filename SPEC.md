@@ -23,6 +23,11 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Exact variable retrieval now prefers HTML data-documentation evidence when available, and a seeded variable-name smoke evaluation CLI checks snippet usefulness and citation presence.
 - Minimal agent-facing context API is implemented, exposing retrieval results as citation-preserving Pydantic models and JSON CLI output.
 - Agent context variable citations resolve archived standalone variable-detail pages from the archive manifest when those pages are available locally.
+- Inventory now preserves many-to-many discovery edges separately from
+  URL-deduplicated inventory rows, archive preservation emits progress logs and
+  handles repeated rate limits politely, and variable extraction writes
+  canonical ResDAC variable graph artifacts when archived variable-detail pages
+  are available.
 - Documentation state model clarified so Past, Present, and Future are mutually exclusive and completed phases no longer appear as active work.
 - Phase 8: MCP Agent Integration is implemented, exposing read-only MCP server and tools (search_datasets, search_documents, search_variables, search_chunks, get_agent_context) over the retrieval API.
 - Comprehensive end-user manual ([user-manual.md](docs/user-manual.md)) and developer guide ([developer-guide.md](docs/developer-guide.md)) created and linked to README.md.

@@ -7,6 +7,7 @@ import csv
 import hashlib
 import ipaddress
 import os
+import random
 import socket
 import tempfile
 from datetime import UTC, datetime
@@ -25,6 +26,7 @@ from .inventory import (
   classify_asset_kind,
   read_inventory_csv,
 )
+from .progress import append_progress_event
 
 ArchiveState = Literal["archived", "skipped", "failed"]
 
@@ -50,6 +52,7 @@ HTML_RESOURCE_KINDS: tuple[ResourceKind, ...] = (
   "variable_page",
 )
 MAX_DOWNLOAD_BYTES = 512 * 1024 * 1024
+MAX_RETRY_SLEEP_SECONDS = 300.0
 
 
 class ArchiveConfig(BaseModel):
@@ -59,6 +62,8 @@ class ArchiveConfig(BaseModel):
   workspace_dir: Path = Path("_workspace")
   timeout_seconds: float = 20.0
   request_delay_seconds: float = 0.0
+  max_consecutive_rate_limits: int = 5
+  progress_log_path: Path | None = None
   user_agent: str = "Mozilla/5.0 (compatible; cms-kb-archive/0.1)"
 
 
@@ -126,7 +131,11 @@ def _request_bytes_with_retry(
     except HTTPError as exc:
       if exc.code in retry_statuses and attempt < 2:
         retry_after = exc.headers.get("Retry-After") if exc.headers else None
-        sleep_seconds = _parse_retry_after_seconds(retry_after) or delay_seconds
+        sleep_seconds = min(
+          _parse_retry_after_seconds(retry_after)
+          or (delay_seconds + random.uniform(0, delay_seconds / 4)),
+          MAX_RETRY_SLEEP_SECONDS,
+        )
         _sleep(sleep_seconds)
         delay_seconds *= 2
         continue
@@ -170,7 +179,7 @@ def download_url(url: str, timeout_seconds: float, user_agent: str) -> DownloadR
   return _request_bytes_with_retry(
     request,
     timeout_seconds=timeout_seconds,
-    retry_statuses={500, 502, 503, 504},
+    retry_statuses={429, 500, 502, 503, 504},
   )
 
 
@@ -460,18 +469,81 @@ def run_archive(
   skipped_count = 0
   failed_count = 0
   previous_manifest = _read_trusted_previous_manifest(config.manifest_output_path)
+  consecutive_rate_limits = 0
+  defer_variable_pages = False
+
+  append_progress_event(
+    config.progress_log_path,
+    phase="archive",
+    event="start",
+    message=f"inventory={config.inventory_path}",
+    counts={"inventory_rows": len(inventory_rows)},
+  )
 
   for row in sorted(inventory_rows, key=_archive_order_key):
     if not _should_archive(row):
       manifest_rows.append(_manifest_row_for_skip(row))
       skipped_count += 1
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="skip",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        status=row.http_status,
+        counts={
+          "archived": archived_count,
+          "skipped": skipped_count,
+          "failed": failed_count,
+        },
+      )
       continue
 
     downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
+    if defer_variable_pages and row.resource_kind == "variable_page":
+      manifest_rows.append(
+        _download_failure(
+          row,
+          "deferred after repeated HTTP 429 rate limits",
+          downloaded_at_utc,
+        )
+      )
+      failed_count += 1
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="circuit_breaker",
+        message="deferred variable page after repeated HTTP 429 rate limits",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        counts={
+          "archived": archived_count,
+          "skipped": skipped_count,
+          "failed": failed_count,
+          "consecutive_rate_limits": consecutive_rate_limits,
+        },
+      )
+      continue
+
     url_error = _archive_url_error(row.url)
     if url_error:
       manifest_rows.append(_download_failure(row, url_error, downloaded_at_utc))
       failed_count += 1
+      consecutive_rate_limits = 0
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="download_failure",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        status=row.http_status,
+        error=url_error,
+        counts={
+          "archived": archived_count,
+          "skipped": skipped_count,
+          "failed": failed_count,
+        },
+      )
       continue
 
     local_path = archive_path_for_row(row, config.raw_root)
@@ -488,6 +560,20 @@ def run_archive(
         )
       )
       archived_count += 1
+      consecutive_rate_limits = 0
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="reuse",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        status=row.http_status,
+        counts={
+          "archived": archived_count,
+          "skipped": skipped_count,
+          "failed": failed_count,
+        },
+      )
       continue
 
     if config.request_delay_seconds:
@@ -499,8 +585,47 @@ def run_archive(
         _manifest_row_for_failure(row, download, downloaded_at_utc)
       )
       failed_count += 1
+      if download.status == 429:
+        consecutive_rate_limits += 1
+        append_progress_event(
+          config.progress_log_path,
+          phase="archive",
+          event="rate_limited",
+          url=row.url,
+          resource_kind=row.resource_kind,
+          status=download.status,
+          error=download.error,
+          counts={
+            "archived": archived_count,
+            "skipped": skipped_count,
+            "failed": failed_count,
+            "consecutive_rate_limits": consecutive_rate_limits,
+          },
+        )
+        if (
+          row.resource_kind == "variable_page"
+          and consecutive_rate_limits >= config.max_consecutive_rate_limits
+        ):
+          defer_variable_pages = True
+      else:
+        consecutive_rate_limits = 0
+        append_progress_event(
+          config.progress_log_path,
+          phase="archive",
+          event="download_failure",
+          url=row.url,
+          resource_kind=row.resource_kind,
+          status=download.status,
+          error=download.error,
+          counts={
+            "archived": archived_count,
+            "skipped": skipped_count,
+            "failed": failed_count,
+          },
+        )
       continue
 
+    consecutive_rate_limits = 0
     local_path.parent.mkdir(parents=True, exist_ok=True)
     sha256 = _write_bytes_atomically(local_path, download.body)
     manifest_rows.append(
@@ -514,6 +639,19 @@ def run_archive(
       )
     )
     archived_count += 1
+    append_progress_event(
+      config.progress_log_path,
+      phase="archive",
+      event="download_success",
+      url=row.url,
+      resource_kind=row.resource_kind,
+      status=download.status,
+      counts={
+        "archived": archived_count,
+        "skipped": skipped_count,
+        "failed": failed_count,
+      },
+    )
 
   result = ArchiveResult(
     config=config,
@@ -525,6 +663,17 @@ def run_archive(
   )
   write_archive_manifest(manifest_rows, config.manifest_output_path)
   summary_path = write_archive_workspace_summary(result)
+  append_progress_event(
+    config.progress_log_path,
+    phase="archive",
+    event="complete",
+    counts={
+      "archived": archived_count,
+      "skipped": skipped_count,
+      "failed": failed_count,
+      "manifest_rows": len(manifest_rows),
+    },
+  )
   return result, summary_path
 
 
@@ -542,6 +691,18 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument("--workspace-dir", type=Path, default=Path("_workspace"))
   parser.add_argument("--timeout-seconds", type=float, default=20.0)
   parser.add_argument("--request-delay-seconds", type=float, default=0.5)
+  parser.add_argument(
+    "--max-consecutive-rate-limits",
+    type=int,
+    default=5,
+    help="Defer remaining variable pages after this many consecutive HTTP 429 responses.",
+  )
+  parser.add_argument(
+    "--progress-log",
+    type=Path,
+    default=Path("_workspace/03_archive_progress.jsonl"),
+  )
+  parser.add_argument("--no-progress-log", action="store_true")
   return parser
 
 
@@ -555,6 +716,8 @@ def main(argv: list[str] | None = None) -> int:
     workspace_dir=args.workspace_dir,
     timeout_seconds=args.timeout_seconds,
     request_delay_seconds=args.request_delay_seconds,
+    max_consecutive_rate_limits=args.max_consecutive_rate_limits,
+    progress_log_path=None if args.no_progress_log else args.progress_log,
   )
   result, summary_path = run_archive(config)
   print(

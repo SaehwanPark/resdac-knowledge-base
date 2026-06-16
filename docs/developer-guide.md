@@ -78,7 +78,7 @@ Builds the inventory listing containing dataset URLs, title attributes, content 
 ```bash
 uv run cms-kb --max-listing-pages 10 --request-delay-seconds 1.0
 ```
-*Creates: `manifests/site_inventory.csv` and `_workspace/02_source_inventory.md`.*
+*Creates: `manifests/site_inventory.csv`, `manifests/site_inventory_edges.csv`, and `_workspace/02_source_inventory.md`.*
 
 ### Step 1: Local Archival Preservation
 Downloads raw HTML pages and linked documents/spreadsheets, using checksum preservation to reuse local files on rerun:
@@ -90,7 +90,8 @@ uv run cms-kb-archive --request-delay-seconds 0.5
 
 > [!WARNING]
 > **ResDAC Rate Limiting Caveat**: ResDAC aggressively rate-limits bulk downloads when fetching thousands of standalone variable-detail pages.
-> The archive tool is designed to fail fast on `429 Too Many Requests` (retaining the failures in `manifests/archive_manifest.csv` and `_workspace/03_archive_manifest.md`) rather than stalling indefinitely.
+> The archive tool retries `429 Too Many Requests` politely, respects `Retry-After` when provided, and defers remaining variable-page requests after repeated 429s.
+> Rate-limited and deferred rows are retained in `manifests/archive_manifest.csv` and `_workspace/03_archive_manifest.md`.
 > Extraction, parsing, and QA are designed to tolerate these failures, allowing downstream steps to pass even with partial variable-page coverage. Iterative rerun of `cms-kb-archive` will attempt to fetch missing pages.
 
 ### Step 2: Metadata and Ontology Extraction
@@ -115,7 +116,7 @@ Extracts variable definitions, years, and aliases from text chunks:
 ```bash
 uv run cms-kb-variables
 ```
-*Creates: `data/metadata/variables.csv`, `data/graph/variable_edges.csv`, and `_workspace/07_variable_pack.md`.*
+*Creates: `data/metadata/variables.csv`, `data/metadata/canonical_variables.csv`, `data/graph/variable_edges.csv`, `data/graph/data_source_variable_edges.csv`, and `_workspace/07_variable_pack.md`.*
 
 ### Step 5: Quality Assurance Audit
 Runs reference and checksum checks to verify that every record contains valid citations, local paths, and matches its checksum:
