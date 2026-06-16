@@ -9,7 +9,11 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
-from .agent_api import AgentContextResponse, context_hit_from_search_result
+from .agent_api import (
+  AgentContextResponse,
+  context_hit_from_search_result,
+  read_archived_document_map,
+)
 from .retrieval import (
   RetrievableRecord,
   RetrievalConfig,
@@ -21,8 +25,10 @@ from .retrieval import (
 class ServerState:
   def __init__(self) -> None:
     self._config = RetrievalConfig()
+    self._archive_manifest_path = Path("manifests/archive_manifest.csv")
     self.default_limit: int = 5
     self._records: list[RetrievableRecord] | None = None
+    self._archived_documents_by_url: dict[str, str] | None = None
 
   @property
   def config(self) -> RetrievalConfig:
@@ -37,6 +43,22 @@ class ServerState:
     if self._records is None:
       self._records = load_retrievable_records(self._config)
     return self._records
+
+  @property
+  def archive_manifest_path(self) -> Path:
+    return self._archive_manifest_path
+
+  @archive_manifest_path.setter
+  def archive_manifest_path(self, value: Path) -> None:
+    self._archive_manifest_path = value
+    self._archived_documents_by_url = None
+
+  def get_archived_documents_by_url(self) -> dict[str, str]:
+    if self._archived_documents_by_url is None:
+      self._archived_documents_by_url = read_archived_document_map(
+        self._archive_manifest_path
+      )
+    return self._archived_documents_by_url
 
 
 state = ServerState()
@@ -114,7 +136,11 @@ def get_agent_context(query: str, limit: int | None = None) -> str:
   resolved_limit = limit if limit is not None else state.default_limit
   records = state.get_records()
   results = search_records(query, records, resolved_limit)
-  hits = [context_hit_from_search_result(res) for res in results]
+  archived_documents_by_url = state.get_archived_documents_by_url()
+  hits = [
+    context_hit_from_search_result(res, archived_documents_by_url)
+    for res in results
+  ]
   response = AgentContextResponse(query=query, results=hits)
   return json.dumps(response.model_dump(), indent=2)
 
@@ -143,6 +169,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("data/parsed/chunks.jsonl"),
   )
+  parser.add_argument(
+    "--archive-manifest",
+    type=Path,
+    default=Path("manifests/archive_manifest.csv"),
+  )
   parser.add_argument("--limit", type=int, default=5)
   return parser
 
@@ -164,6 +195,7 @@ def main(argv: list[str] | None = None) -> int:
     variables_metadata_path=args.variables_metadata,
     chunks_jsonl_path=args.chunks_jsonl,
   )
+  state.archive_manifest_path = args.archive_manifest
   state.default_limit = args.limit
 
   try:

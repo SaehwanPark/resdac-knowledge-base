@@ -14,20 +14,26 @@ Primary entry points:
 - https://resdac.org/cms-data?page=3
 - https://resdac.org/cms-data?page=4
 
-The inventory crawler follows discovered dataset pages, documentation pages, and
-linked assets from those listings.
+The inventory crawler follows discovered dataset pages and documentation pages,
+records standalone variable-detail pages linked from documentation tables, and
+probes linked assets from those listings.
 
 ## Current Archived Corpus
 
 The checked-in raw ResDAC archive snapshot currently contains:
 
-- 339 inventory rows in `manifests/site_inventory.csv`.
-- 339 archive provenance rows in `manifests/archive_manifest.csv`.
+- 3,950 inventory rows in `manifests/site_inventory.csv`.
+- 3,950 archive provenance rows in `manifests/archive_manifest.csv`.
 - 5 archived listing pages.
 - 154 archived dataset pages.
 - 93 archived documentation pages.
+- 660 archived variable-detail pages.
 - 36 archived PDF assets.
 - 50 archived XLSX assets.
+
+The archive manifest also records rate-limited standalone variable-detail pages
+that returned ResDAC HTTP 429 during the retained refresh. These rows preserve
+coverage gaps explicitly and do not block dataset/document extraction QA.
 
 See `STATUS.md` for the separate status of code implementation, checked-in
 corpus coverage, and retained generated artifacts.

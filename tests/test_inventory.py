@@ -85,6 +85,7 @@ def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
   dataset_url = "https://resdac.org/cms-data/files/pde"
   doc_url = "https://resdac.org/cms-data/files/pde/data-documentation"
   pdf_url = "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+  variable_url = "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
   xlsx_url = (
     "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
   )
@@ -110,7 +111,7 @@ def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
       url=doc_url,
       status=200,
       content_type="text/html",
-      html=_documentation_html(pdf_url, xlsx_url),
+      html=_documentation_html(pdf_url, xlsx_url, variable_url),
     ),
   }
   probes = {
@@ -147,10 +148,17 @@ def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
   assert dataset_url in urls
   assert doc_url in urls
   assert pdf_url in urls
+  assert variable_url in urls
   assert xlsx_url in urls
   assert urls.count(dataset_url) == 1
   assert len(fetch_calls) == 3
   assert probe_calls == [pdf_url, xlsx_url]
+
+  rows_by_url = {row.url: row for row in result.rows}
+  assert rows_by_url[variable_url].resource_kind == "variable_page"
+  assert rows_by_url[variable_url].linked_documents == 0
+  assert rows_by_url[variable_url].http_status is None
+  assert rows_by_url[variable_url].link_state == "unknown"
 
   dead = {row.url: row for row in result.dead_links}
   assert xlsx_url in dead

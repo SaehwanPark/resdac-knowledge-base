@@ -16,18 +16,21 @@ from cms_kb.mcp import (
   search_variables,
   state,
 )
-from test_agent_api import _write_metadata_fixture
+from test_agent_api import _write_archive_manifest_fixture, _write_metadata_fixture
 
 
 @pytest.fixture
 def _setup_test_state(tmp_path: Path) -> Generator[None, None, None]:
   orig_config = state.config
+  orig_archive_manifest_path = state.archive_manifest_path
   orig_limit = state.default_limit
   retrieval_config = _write_metadata_fixture(tmp_path)
   state.config = retrieval_config
+  state.archive_manifest_path = _write_archive_manifest_fixture(tmp_path)
   state.default_limit = 5
   yield
   state.config = orig_config
+  state.archive_manifest_path = orig_archive_manifest_path
   state.default_limit = orig_limit
 
 
@@ -100,7 +103,9 @@ def test_get_agent_context(_setup_test_state: None) -> None:
   assert hit["citation"]["variable_url"] == (
     "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
   )
-  assert hit["citation"]["variable_document"] == ""
+  assert hit["citation"]["variable_document"].endswith(
+    "data/raw/html/variable_page/bene.html"
+  )
 
 
 def test_mcp_empty_query_raises(_setup_test_state: None) -> None:

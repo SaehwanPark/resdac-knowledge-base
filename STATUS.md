@@ -16,8 +16,8 @@ Status: implemented through the MCP Agent Integration.
 
 The current Python implementation includes:
 
-- Inventory discovery for ResDAC listing, dataset, documentation, and asset
-  links.
+- Inventory discovery for ResDAC listing, dataset, documentation, standalone
+  variable-detail, and asset links.
 - Archive preservation for raw HTML pages and linked assets with checksums.
 - Metadata extraction for datasets, documents, ontology seeds, and graph edges.
 - HTML/PDF/XLSX parsing and provenance-bearing chunk generation.
@@ -29,6 +29,8 @@ The current Python implementation includes:
   retained variable-name samples.
 - Minimal agent-facing context retrieval that returns citation-preserving JSON
   and Pydantic models.
+- Agent context variable citations resolve archived local variable-detail pages
+  from `manifests/archive_manifest.csv` when available.
 - Read-only Model Context Protocol (MCP) server for integration with AI agents.
 
 `SPEC.md` tracks implementation lifecycle state with mutually exclusive
@@ -40,13 +42,19 @@ Status: raw ResDAC archive snapshot is checked in.
 
 The checked-in corpus currently includes:
 
-- `manifests/site_inventory.csv`: 339 inventory rows.
-- `manifests/archive_manifest.csv`: 339 archive provenance rows.
+- `manifests/site_inventory.csv`: 3,950 inventory rows.
+- `manifests/archive_manifest.csv`: 3,950 archive provenance rows.
 - `data/raw/html/listing_page/`: 5 archived listing pages.
 - `data/raw/html/dataset_page/`: 154 archived dataset pages.
 - `data/raw/html/documentation_page/`: 93 archived documentation pages.
+- `data/raw/html/variable_page/`: 660 archived variable-detail pages.
 - `data/raw/assets/pdf/`: 36 archived PDF assets.
 - `data/raw/assets/xlsx/`: 50 archived XLSX assets.
+
+The current archive manifest records 251 archived standalone variable-detail
+rows and 3,360 rate-limited variable-detail failures from ResDAC HTTP 429
+responses. Dataset, documentation, and asset rows needed by extraction remain
+archived, and QA passes.
 
 This snapshot is source material for downstream extraction and retrieval.
 

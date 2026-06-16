@@ -2,10 +2,10 @@
 
 - Base URL: https://resdac.org/cms-data
 - Listing pages crawled: 5
-- Unique URLs: 339
+- Unique URLs: 3950
 - Dead links: 1
 - Transient unresolved links: 0
-- Duplicate URLs skipped: 1068
+- Duplicate URLs skipped: 3517
 
 ## By Resource Kind
 
@@ -14,6 +14,7 @@
 | listing_page | 5 |
 | dataset_page | 155 |
 | documentation_page | 93 |
+| variable_page | 3611 |
 | asset | 86 |
 | other | 0 |
 

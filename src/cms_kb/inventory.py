@@ -20,7 +20,12 @@ from urllib.request import Request, urlopen
 from pydantic import BaseModel, Field, field_validator
 
 ResourceKind = Literal[
-  "listing_page", "dataset_page", "documentation_page", "asset", "other"
+  "listing_page",
+  "dataset_page",
+  "documentation_page",
+  "variable_page",
+  "asset",
+  "other",
 ]
 LinkState = Literal["live", "dead", "unknown"]
 INVENTORY_FIELDNAMES = [
@@ -71,6 +76,8 @@ def classify_resource_kind(url: str) -> ResourceKind:
     return "listing_page"
   if path.endswith("/data-documentation"):
     return "documentation_page"
+  if path.startswith("/cms-data/variables/"):
+    return "variable_page"
   if "/cms-data/files/" in path:
     return "dataset_page"
   if path.endswith((".pdf", ".xlsx", ".xls", ".csv", ".zip")):
@@ -296,7 +303,7 @@ def is_relevant_href(base_url: str, href: str) -> bool:
   if parts.scheme not in {"http", "https"} or not parts.netloc:
     return False
   path = parts.path.lower()
-  if path.startswith("/cms-data/files/"):
+  if path.startswith("/cms-data/files/") or path.startswith("/cms-data/variables/"):
     return _strip_www(parts.netloc.lower()) == _strip_www(base_parts.netloc.lower())
   if path.endswith((".pdf", ".xlsx", ".xls", ".csv", ".zip")):
     return True
@@ -313,6 +320,10 @@ def _link_is_dataset_page(base_url: str, href: str) -> bool:
 
 def _link_is_asset(base_url: str, href: str) -> bool:
   return classify_resource_kind(normalize_url(base_url, href)) == "asset"
+
+
+def _link_is_variable_page(base_url: str, href: str) -> bool:
+  return classify_resource_kind(normalize_url(base_url, href)) == "variable_page"
 
 
 def _empty_row(
@@ -494,8 +505,9 @@ def _sorted_rows(rows: dict[str, InventoryRow]) -> list[InventoryRow]:
     "listing_page": 0,
     "dataset_page": 1,
     "documentation_page": 2,
-    "asset": 3,
-    "other": 4,
+    "variable_page": 3,
+    "asset": 4,
+    "other": 5,
   }
   return sorted(rows.values(), key=lambda row: (order[row.resource_kind], row.url))
 
@@ -708,6 +720,8 @@ def crawl_inventory(
     )
     if page_result.status != 200:
       continue
+    if row.resource_kind == "variable_page":
+      continue
 
     page_discovered_urls: list[str] = []
     for link in links:
@@ -760,6 +774,20 @@ def crawl_inventory(
           _probe_asset_row(child_row, config, probe_url_fn=probe_url_fn)
           asset_probes += 1
           network_operations += 1
+      elif (
+        row.resource_kind == "documentation_page"
+        and _link_is_variable_page(current_url, link.href)
+      ):
+        page_discovered_urls.append(absolute)
+        child_row = _register_row(
+          rows,
+          duplicates_skipped,
+          url=absolute,
+          title=link.text,
+          source_url=current_url,
+          source_title=page_title,
+        )
+        child_row.resource_kind = "variable_page"
 
     row.linked_documents = len(set(page_discovered_urls))
     _emit_periodic_progress(
@@ -841,6 +869,7 @@ def write_workspace_summary(result: InventoryResult) -> Path:
     "listing_page",
     "dataset_page",
     "documentation_page",
+    "variable_page",
     "asset",
     "other",
   ):

@@ -92,11 +92,6 @@ PR_VRSN	Provider File Version Representing the Iteration of the File	CHAR	2	87
 RFRNC_YR	Reference Yr	CHAR	4	88
 CCW_LD_DT	CCW Load Date	DATE	8	89
 
-Revision date	Tab	Description
-45992	APR Affiliated Groups
-APR Identifiers	Expanded width of PRVDR_GRP_ID field from 12 to 30.
-Expanded width of PRVDR_NUM field from 12 to 30.
-
 CMS Chronic Conditions Warehouse (CCW) Data Dictionary
 TAF Annual Provider File — Taxonomy File
 Version — December 2025
@@ -310,3 +305,8 @@ PRVDR_BED_ACTV_IND_11	Provider Bed Type and Count for Facility Active Indicator 
 PRVDR_BED_ACTV_IND_12	Provider Bed Type and Count for Facility Active Indicator - December	CHAR	1	18
 CCW_APR_LINK_KEY	CCW Key to Link APR Base Record to Related Supplement Records	NUM	15	19
 RFRNC_YR	Reference Yr	CHAR	4	20
+
+Revision date	Tab	Description
+45992	APR Affiliated Groups
+APR Identifiers	Expanded width of PRVDR_GRP_ID field from 12 to 30.
+Expanded width of PRVDR_NUM field from 12 to 30.

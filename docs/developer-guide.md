@@ -88,6 +88,11 @@ uv run cms-kb-archive --request-delay-seconds 0.5
 ```
 *Creates: `data/raw/` downloads, `manifests/archive_manifest.csv`, and `_workspace/03_archive_manifest.md`.*
 
+> [!WARNING]
+> **ResDAC Rate Limiting Caveat**: ResDAC aggressively rate-limits bulk downloads when fetching thousands of standalone variable-detail pages.
+> The archive tool is designed to fail fast on `429 Too Many Requests` (retaining the failures in `manifests/archive_manifest.csv` and `_workspace/03_archive_manifest.md`) rather than stalling indefinitely.
+> Extraction, parsing, and QA are designed to tolerate these failures, allowing downstream steps to pass even with partial variable-page coverage. Iterative rerun of `cms-kb-archive` will attempt to fetch missing pages.
+
 ### Step 2: Metadata and Ontology Extraction
 Processes the raw HTML to identify datasets, document groupings, program assignments, and network categories:
 

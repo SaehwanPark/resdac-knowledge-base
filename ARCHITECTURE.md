@@ -46,14 +46,14 @@ Last Reviewed: 2026-06-12
 Status: Verified
 
 ## Current Code State
-Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI crawls ResDAC listing pages, follows dataset and documentation links, probes linked assets, and writes:
+Phase 0 discovery is implemented in `src/cms_kb/inventory.py`. The `cms-kb` CLI crawls ResDAC listing pages, follows dataset and documentation links, records variable-detail links from documentation pages, probes linked assets, and writes:
 
 - `manifests/site_inventory.csv`: machine-readable inventory rows.
 - `_workspace/02_source_inventory.md`: human-readable coverage summary for harness handoffs.
 
-Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms-kb-archive` CLI consumes the inventory CSV, downloads live HTML pages and live linked assets, and writes:
+Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms-kb-archive` CLI consumes the inventory CSV, downloads live HTML pages, discovered variable-detail pages, and live linked assets, and writes:
 
-- `data/raw/html/...`: archived listing, dataset, and documentation page HTML.
+- `data/raw/html/...`: archived listing, dataset, documentation, and variable page HTML.
 - `data/raw/assets/...`: archived asset files grouped by asset kind.
 - `manifests/archive_manifest.csv`: archive provenance rows with URL, status, checksum, timestamp, and local path.
 - `_workspace/03_archive_manifest.md`: archive handoff summary for downstream phases.
@@ -90,16 +90,17 @@ Phase 6 variable-level metadata extraction is implemented in `src/cms_kb/variabl
 
 Phase 7 retrieval MVP is implemented in `src/cms_kb/retrieval.py`. The `cms-kb-search` CLI performs deterministic lexical search over dataset, document, variable, and parsed chunk records, returning stable result fields with `source_url` citations and local source document/page provenance when available.
 
-The minimal agent-facing context API is implemented in `src/cms_kb/agent_api.py`. The `cms-kb-agent-context` CLI wraps retrieval results in citation-preserving Pydantic models and JSON output for downstream agent workflows. Richer agent integrations, including MCP tooling, remain future work. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
+The minimal agent-facing context API is implemented in `src/cms_kb/agent_api.py`. The `cms-kb-agent-context` CLI wraps retrieval results in citation-preserving Pydantic models and JSON output for downstream agent workflows. Variable citations include standalone variable-detail URLs when found in archived data-documentation rows, and resolve local variable-detail documents through `manifests/archive_manifest.csv` when those pages are archived. The MCP server exposes the same citation behavior. The harness contract in `docs/harness/cms-kb/team-spec.md` defines how phases should hand off provenance-bearing artifacts.
 
 ## Current Data State
 The checked-in corpus currently contains the raw ResDAC archive snapshot and provenance manifests:
 
-- `manifests/site_inventory.csv`: 339 inventory rows.
-- `manifests/archive_manifest.csv`: 339 archive provenance rows.
+- `manifests/site_inventory.csv`: 3,950 inventory rows.
+- `manifests/archive_manifest.csv`: 3,950 archive provenance rows.
 - `data/raw/html/listing_page/`: 5 archived listing pages.
 - `data/raw/html/dataset_page/`: 154 archived dataset pages.
 - `data/raw/html/documentation_page/`: 93 archived documentation pages.
+- `data/raw/html/variable_page/`: 660 archived variable-detail pages.
 - `data/raw/assets/pdf/`: 36 archived PDF assets.
 - `data/raw/assets/xlsx/`: 50 archived XLSX assets.
 

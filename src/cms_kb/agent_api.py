@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 from html.parser import HTMLParser
 import json
 import sys
@@ -16,6 +17,7 @@ from .retrieval import RetrievalConfig, SearchResult, run_retrieval
 
 class AgentContextConfig(BaseModel):
   retrieval: RetrievalConfig = RetrievalConfig()
+  archive_manifest_path: Path = Path("manifests/archive_manifest.csv")
   default_limit: int = 5
 
 
@@ -80,7 +82,30 @@ class _VariableLinkParser(HTMLParser):
       self._current_cell_text.append(data)
 
 
-def _find_variable_link(result: SearchResult) -> tuple[str, str]:
+def read_archived_document_map(input_path: Path) -> dict[str, str]:
+  if not input_path.is_file():
+    return {}
+
+  with input_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    if reader.fieldnames is None:
+      return {}
+    required = {"url", "archive_state", "local_path"}
+    if not required.issubset(set(reader.fieldnames)):
+      return {}
+    return {
+      row["url"].strip(): row["local_path"].strip()
+      for row in reader
+      if row.get("archive_state") == "archived"
+      and row.get("url", "").strip()
+      and row.get("local_path", "").strip()
+    }
+
+
+def _find_variable_link(
+  result: SearchResult,
+  archived_documents_by_url: dict[str, str] | None = None,
+) -> tuple[str, str]:
   source_document = Path(result.source_document)
   if result.record_type != "variable" or not source_document.is_file():
     return "", ""
@@ -101,12 +126,19 @@ def _find_variable_link(result: SearchResult) -> tuple[str, str]:
       continue
     for _, href in row:
       if "/cms-data/variables/" in href:
-        return urljoin("https://resdac.org", href), ""
+        variable_url = urljoin("https://resdac.org", href)
+        variable_document = (archived_documents_by_url or {}).get(variable_url, "")
+        return variable_url, variable_document
   return "", ""
 
 
-def context_hit_from_search_result(result: SearchResult) -> AgentContextHit:
-  variable_url, variable_document = _find_variable_link(result)
+def context_hit_from_search_result(
+  result: SearchResult,
+  archived_documents_by_url: dict[str, str] | None = None,
+) -> AgentContextHit:
+  variable_url, variable_document = _find_variable_link(
+    result, archived_documents_by_url
+  )
   return AgentContextHit(
     record_id=result.record_id,
     record_type=result.record_type,
@@ -131,9 +163,13 @@ def build_agent_context(
 ) -> AgentContextResponse:
   resolved_limit = config.default_limit if limit is None else limit
   results = run_retrieval(config.retrieval, query, resolved_limit)
+  archived_documents_by_url = read_archived_document_map(config.archive_manifest_path)
   return AgentContextResponse(
     query=query,
-    results=[context_hit_from_search_result(result) for result in results],
+    results=[
+      context_hit_from_search_result(result, archived_documents_by_url)
+      for result in results
+    ],
   )
 
 
@@ -163,6 +199,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("data/parsed/chunks.jsonl"),
   )
+  parser.add_argument(
+    "--archive-manifest",
+    type=Path,
+    default=Path("manifests/archive_manifest.csv"),
+  )
   parser.add_argument("--json", action="store_true", help="Emit JSON output.")
   return parser
 
@@ -177,6 +218,7 @@ def main(argv: list[str] | None = None) -> int:
       variables_metadata_path=args.variables_metadata,
       chunks_jsonl_path=args.chunks_jsonl,
     ),
+    archive_manifest_path=args.archive_manifest,
     default_limit=args.limit,
   )
 
@@ -198,4 +240,5 @@ __all__ = [
   "build_agent_context",
   "context_hit_from_search_result",
   "main",
+  "read_archived_document_map",
 ]
