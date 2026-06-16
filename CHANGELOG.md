@@ -6,12 +6,19 @@
 - Comprehensive [user-manual.md](docs/user-manual.md) for health policy researchers, scientists, and analysts.
 - Detailed [developer-guide.md](docs/developer-guide.md) for engineers, operators, and developers maintaining the pipeline.
 - Phase 8: Model Context Protocol (MCP) server integration, exposing read-only tools for automated agent search and retrieval.
+- `cms-kb-evaluate-variables` for seeded exact variable-name retrieval usefulness smoke checks.
 
 ### Changed
 - Split documentation status tracking into separate code implementation,
   checked-in corpus, and derived artifact states.
 - Clarified `SPEC.md` so `Past`, `Present`, and `Future` are mutually exclusive operational states, with completed pipeline phases moved out of active work.
 - Treat transient inventory HTTP statuses as unresolved instead of dead links, and allow archive retries to reuse already preserved raw files.
+- Variable extraction now recognizes HTML data-documentation table rows as
+  definition evidence and prefers HTML citations over PDF evidence for exact
+  variable retrieval.
+- Agent context citations now include variable-detail URLs and populate local
+  variable-detail documents only when the standalone variable page is archived
+  locally.
 
 ### Added
 - Initial canonical project documentation with `SPEC.md`, `ARCHITECTURE.md`, and `CHANGELOG.md`.

@@ -133,3 +133,13 @@ uv run cms-kb-agent-context --query BENE_ID --limit 5 --json
 
 The context response nests source URL, local source document, and page
 provenance under each result citation.
+
+Run a deterministic variable-retrieval usefulness smoke evaluation:
+
+```bash
+uv run cms-kb-evaluate-variables --sample-size 10 --seed 20260616 --json
+```
+
+The evaluation samples retained variable names, runs exact variable-name
+retrieval, and reports whether matching variable results appear with useful
+snippets and citation provenance.

@@ -6,6 +6,8 @@ from pathlib import Path
 from cms_kb.parsing import ChunkMetadata
 from cms_kb.variables import (
   VariableExtractionConfig,
+  VariableMetadataRow,
+  _deduplicate_variables,
   extract_variables_from_chunk,
   main,
   read_chunks_jsonl,
@@ -45,6 +47,81 @@ def test_extract_variables_from_chunk_requires_definition_evidence() -> None:
   assert rows[0].years == "2020"
   assert rows[0].page == 3
   assert rows[0].chunk_id == "chunk-1"
+
+
+def test_extract_variables_from_html_pipe_table_row() -> None:
+  chunk = ChunkMetadata(
+    chunk_id="chunk-1",
+    source_document="/tmp/source.html",
+    page=None,
+    text="| 1 | BENE_ID | CCW Encrypted Beneficiary ID Number |",
+    dataset="medpar",
+    url="https://resdac.org/cms-data/files/medpar/data-documentation",
+  )
+
+  rows, skipped = extract_variables_from_chunk(chunk)
+
+  assert skipped == 0
+  assert len(rows) == 1
+  assert rows[0].variable_id == "medpar__var__bene-id"
+  assert rows[0].definition == "CCW Encrypted Beneficiary ID Number"
+
+
+def test_deduplicate_variables_prefers_html_data_documentation() -> None:
+  pdf_row = VariableMetadataRow(
+    variable_id="medpar__var__bene-id",
+    variable_name="BENE_ID",
+    dataset_id="medpar",
+    definition=(
+      "A longer PDF definition that should lose when HTML data documentation "
+      "exists for the same variable."
+    ),
+    source_document="data/raw/assets/pdf/codebook.pdf",
+    source_url="https://www2.ccwdata.org/documents/codebook.pdf",
+    page=33,
+    chunk_id="pdf-chunk",
+  )
+  html_row = VariableMetadataRow(
+    variable_id="medpar__var__bene-id",
+    variable_name="BENE_ID",
+    dataset_id="medpar",
+    definition="CCW Encrypted Beneficiary ID Number",
+    source_document="data/raw/html/documentation_page/medpar.html",
+    source_url="https://resdac.org/cms-data/files/medpar/data-documentation",
+    page=None,
+    chunk_id="html-chunk",
+  )
+
+  rows = _deduplicate_variables([pdf_row, html_row])
+
+  assert rows == [html_row]
+
+
+def test_deduplicate_variables_keeps_longer_definition_with_same_priority() -> None:
+  short_row = VariableMetadataRow(
+    variable_id="mbsf__var__bene-id",
+    variable_name="BENE_ID",
+    dataset_id="mbsf",
+    definition="Beneficiary ID",
+    source_document="data/raw/html/documentation_page/mbsf.html",
+    source_url="https://resdac.org/cms-data/files/mbsf/data-documentation",
+    page=None,
+    chunk_id="short-chunk",
+  )
+  long_row = VariableMetadataRow(
+    variable_id="mbsf__var__bene-id",
+    variable_name="BENE_ID",
+    dataset_id="mbsf",
+    definition="Encrypted CCW Beneficiary ID",
+    source_document="data/raw/html/documentation_page/mbsf.html",
+    source_url="https://resdac.org/cms-data/files/mbsf/data-documentation",
+    page=None,
+    chunk_id="long-chunk",
+  )
+
+  rows = _deduplicate_variables([short_row, long_row])
+
+  assert rows == [long_row]
 
 
 def test_read_chunks_jsonl_reports_malformed_rows(tmp_path: Path) -> None:

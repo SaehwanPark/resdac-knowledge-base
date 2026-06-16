@@ -20,6 +20,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 5 CMS Research Ontology is implemented, normalizing program, category, and availability fields from HTML, and extracting graph node and edge seeds (belongs_to, related_to) with QA validation.
 - Phase 6 variable-level metadata extraction is implemented, deriving conservative variable records from parsed chunks and writing provenance-bearing variable metadata and graph edges.
 - Phase 7 retrieval MVP is implemented, performing deterministic local lexical search over datasets, documents, variables, and parsed chunks while preserving source citations.
+- Exact variable retrieval now prefers HTML data-documentation evidence when available, and a seeded variable-name smoke evaluation CLI checks snippet usefulness and citation presence.
 - Minimal agent-facing context API is implemented, exposing retrieval results as citation-preserving Pydantic models and JSON CLI output.
 - Documentation state model clarified so Past, Present, and Future are mutually exclusive and completed phases no longer appear as active work.
 - Phase 8: MCP Agent Integration is implemented, exposing read-only MCP server and tools (search_datasets, search_documents, search_variables, search_chunks, get_agent_context) over the retrieval API.

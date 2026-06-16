@@ -93,8 +93,14 @@ def test_get_agent_context(_setup_test_state: None) -> None:
   hit = response["results"][0]
   assert hit["record_id"] == "mbsf__var__bene-id"
   assert hit["record_type"] == "variable"
-  assert hit["citation"]["source_url"] == "https://resdac.org/cms-data/files/mbsf-codebook"
-  assert hit["citation"]["page"] == 3
+  assert hit["citation"]["source_url"] == (
+    "https://resdac.org/cms-data/files/mbsf/data-documentation"
+  )
+  assert hit["citation"]["page"] is None
+  assert hit["citation"]["variable_url"] == (
+    "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+  )
+  assert hit["citation"]["variable_document"] == ""
 
 
 def test_mcp_empty_query_raises(_setup_test_state: None) -> None:
