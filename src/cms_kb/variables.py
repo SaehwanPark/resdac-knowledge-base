@@ -7,11 +7,15 @@ import csv
 import json
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 from typing import Literal, Sequence
+from urllib.parse import urljoin, urlparse
 
 from pydantic import BaseModel, Field
 
+from .archive import ArchiveManifestRow
+from .extraction import read_archive_manifest_csv
 from .parsing import ChunkMetadata
 
 VariableFieldnames = Literal[
@@ -33,6 +37,28 @@ VariableEdgeFieldnames = Literal[
   "relationship",
   "source_url",
   "source_document",
+  "page",
+  "chunk_id",
+]
+CanonicalVariableFieldnames = Literal[
+  "variable_id",
+  "variable_name",
+  "variable_label",
+  "definition",
+  "source",
+  "source_url",
+  "source_document",
+  "extraction_notes",
+]
+DataSourceVariableEdgeFieldnames = Literal[
+  "source_id",
+  "target_id",
+  "relationship",
+  "source_url",
+  "source_document",
+  "variable_url",
+  "variable_document",
+  "evidence_type",
   "page",
   "chunk_id",
 ]
@@ -59,6 +85,28 @@ VARIABLE_EDGE_FIELDNAMES: list[VariableEdgeFieldnames] = [
   "page",
   "chunk_id",
 ]
+CANONICAL_VARIABLE_FIELDNAMES: list[CanonicalVariableFieldnames] = [
+  "variable_id",
+  "variable_name",
+  "variable_label",
+  "definition",
+  "source",
+  "source_url",
+  "source_document",
+  "extraction_notes",
+]
+DATA_SOURCE_VARIABLE_EDGE_FIELDNAMES: list[DataSourceVariableEdgeFieldnames] = [
+  "source_id",
+  "target_id",
+  "relationship",
+  "source_url",
+  "source_document",
+  "variable_url",
+  "variable_document",
+  "evidence_type",
+  "page",
+  "chunk_id",
+]
 
 VARIABLE_PATTERN = re.compile(r"\b[A-Z][A-Z0-9]{1,}(?:_[A-Z0-9]+)+\b")
 YEAR_PATTERN = re.compile(r"\b(?:19|20)\d{2}\b")
@@ -72,6 +120,7 @@ TABLE_SEPARATOR_CELL_PATTERN = re.compile(r"^:?-{2,}:?$")
 
 class VariableExtractionConfig(BaseModel):
   chunks_jsonl_path: Path = Path("data/parsed/chunks.jsonl")
+  archive_manifest_path: Path = Path("manifests/archive_manifest.csv")
   metadata_dir: Path = Path("data/metadata")
   graph_dir: Path = Path("data/graph")
   workspace_dir: Path = Path("_workspace")
@@ -101,6 +150,30 @@ class VariableEdgeRow(BaseModel):
   chunk_id: str
 
 
+class CanonicalVariableRow(BaseModel):
+  variable_id: str
+  variable_name: str = ""
+  variable_label: str = ""
+  definition: str = ""
+  source: str = "resdac_variable_page"
+  source_url: str
+  source_document: str
+  extraction_notes: str = ""
+
+
+class DataSourceVariableEdgeRow(BaseModel):
+  source_id: str
+  target_id: str
+  relationship: str = "contains"
+  source_url: str
+  source_document: str = ""
+  variable_url: str
+  variable_document: str
+  evidence_type: str = "variable_page_containing_file"
+  page: int | None = None
+  chunk_id: str = ""
+
+
 class VariableExtractionFailure(BaseModel):
   chunk_id: str = ""
   source_document: str = ""
@@ -112,6 +185,8 @@ class VariableExtractionResult(BaseModel):
   chunks_read: int = 0
   variables: list[VariableMetadataRow] = Field(default_factory=list)
   edges: list[VariableEdgeRow] = Field(default_factory=list)
+  canonical_variables: list[CanonicalVariableRow] = Field(default_factory=list)
+  data_source_variable_edges: list[DataSourceVariableEdgeRow] = Field(default_factory=list)
   skipped_candidates: int = 0
   failures: list[VariableExtractionFailure] = Field(default_factory=list)
 
@@ -122,6 +197,14 @@ class VariableExtractionResult(BaseModel):
   @property
   def edge_count(self) -> int:
     return len(self.edges)
+
+  @property
+  def canonical_variable_count(self) -> int:
+    return len(self.canonical_variables)
+
+  @property
+  def data_source_variable_edge_count(self) -> int:
+    return len(self.data_source_variable_edges)
 
   @property
   def failure_count(self) -> int:
@@ -137,9 +220,207 @@ def _stable_variable_id(dataset_id: str, variable_name: str) -> str:
   return f"{_slugify(dataset_id)}__var__{_slugify(variable_name)}"
 
 
+def _canonical_variable_id_from_url(url: str) -> str:
+  slug = Path(urlparse(url).path).name
+  return _slugify(slug)
+
+
+def _dataset_id_from_resdac_file_url(url: str) -> str | None:
+  parts = [part for part in urlparse(url).path.split("/") if part]
+  if len(parts) < 3 or parts[0] != "cms-data" or parts[1] != "files":
+    return None
+  return _slugify(parts[2])
+
+
 def _clean_definition(value: str) -> str:
   cleaned = re.sub(r"\s+", " ", value).strip(" .;:-–—")
   return cleaned
+
+
+class _VariablePageParser(HTMLParser):
+  def __init__(self, page_url: str) -> None:
+    super().__init__()
+    self.page_url = page_url
+    self.title_parts: list[str] = []
+    self.h1_parts: list[str] = []
+    self.links: list[tuple[str, str]] = []
+    self.rows: list[list[str]] = []
+    self._in_title = False
+    self._in_h1 = False
+    self._in_a = False
+    self._current_href = ""
+    self._current_link_text: list[str] = []
+    self._current_row: list[str] | None = None
+    self._current_cell: list[str] | None = None
+
+  def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+    attributes = dict(attrs)
+    if tag == "title":
+      self._in_title = True
+    elif tag == "h1" and not self.h1_parts:
+      self._in_h1 = True
+    elif tag == "a":
+      href = attributes.get("href")
+      if href:
+        self._in_a = True
+        self._current_href = href
+        self._current_link_text = []
+    elif tag == "tr":
+      self._current_row = []
+    elif tag in {"td", "th"} and self._current_row is not None:
+      self._current_cell = []
+
+  def handle_data(self, data: str) -> None:
+    if self._in_title:
+      self.title_parts.append(data)
+    if self._in_h1:
+      self.h1_parts.append(data)
+    if self._in_a:
+      self._current_link_text.append(data)
+    if self._current_cell is not None:
+      self._current_cell.append(data)
+
+  def handle_endtag(self, tag: str) -> None:
+    if tag == "title":
+      self._in_title = False
+    elif tag == "h1":
+      self._in_h1 = False
+    elif tag == "a" and self._in_a:
+      self.links.append((
+        urljoin(self.page_url, self._current_href),
+        re.sub(r"\s+", " ", "".join(self._current_link_text)).strip(),
+      ))
+      self._in_a = False
+      self._current_href = ""
+      self._current_link_text = []
+    elif tag in {"td", "th"} and self._current_row is not None:
+      text = re.sub(r"\s+", " ", "".join(self._current_cell or [])).strip()
+      self._current_row.append(text)
+      self._current_cell = None
+    elif tag == "tr" and self._current_row is not None:
+      if self._current_row:
+        self.rows.append(self._current_row)
+      self._current_row = None
+
+  @property
+  def title(self) -> str:
+    value = re.sub(r"\s+", " ", "".join(self.h1_parts)).strip()
+    if not value:
+      value = re.sub(r"\s+", " ", "".join(self.title_parts)).strip()
+    return value.removesuffix(" | ResDAC").strip()
+
+
+def _field_value_from_rows(rows: list[list[str]], names: set[str]) -> str:
+  for row in rows:
+    if len(row) < 2:
+      continue
+    label = row[0].strip(" :").lower()
+    if label in names:
+      return row[1].strip()
+  return ""
+
+
+def _definition_from_text(text: str, variable_name: str) -> str:
+  patterns = [
+    r"(?:Definition|Description)\s*[:\-]\s*(.+)",
+    rf"{re.escape(variable_name)}\s*(?:[-:=])\s*(.+)",
+  ]
+  for pattern in patterns:
+    match = re.search(pattern, text, flags=re.IGNORECASE)
+    if match is not None:
+      return _clean_definition(match.group(1).splitlines()[0])
+  return ""
+
+
+def _extract_canonical_variable_from_page(
+  row: ArchiveManifestRow,
+) -> tuple[CanonicalVariableRow | None, list[DataSourceVariableEdgeRow]]:
+  if row.archive_state != "archived" or row.resource_kind != "variable_page":
+    return None, []
+  if not row.local_path or not Path(row.local_path).is_file():
+    return None, []
+
+  html = Path(row.local_path).read_text(encoding="utf-8", errors="replace")
+  parser = _VariablePageParser(row.url)
+  parser.feed(html)
+  page_text = re.sub(r"<[^>]+>", " ", html)
+  page_text = re.sub(r"\s+", " ", page_text)
+  variable_name = _field_value_from_rows(
+    parser.rows,
+    {"sas name", "variable name", "name"},
+  )
+  if not variable_name:
+    match = re.search(r"\b[A-Z][A-Z0-9]{1,}(?:_[A-Z0-9]+)+\b", html)
+    variable_name = match.group(0) if match is not None else ""
+  definition = _field_value_from_rows(
+    parser.rows,
+    {"definition", "description"},
+  )
+  if not definition and variable_name:
+    definition = _definition_from_text(page_text, variable_name)
+
+  variable = CanonicalVariableRow(
+    variable_id=_canonical_variable_id_from_url(row.url),
+    variable_name=variable_name,
+    variable_label=parser.title,
+    definition=definition,
+    source_url=row.url,
+    source_document=row.local_path,
+    extraction_notes="" if variable_name else "variable name not found on page",
+  )
+
+  edges: dict[str, DataSourceVariableEdgeRow] = {}
+  for href, _text in parser.links:
+    source_id = _dataset_id_from_resdac_file_url(href)
+    if source_id is None:
+      continue
+    edges[href] = DataSourceVariableEdgeRow(
+      source_id=source_id,
+      target_id=variable.variable_id,
+      source_url=href,
+      variable_url=row.url,
+      variable_document=row.local_path,
+    )
+  return variable, sorted(edges.values(), key=lambda edge: edge.source_url)
+
+
+def _extract_canonical_variables_from_manifest(
+  manifest_path: Path,
+) -> tuple[list[CanonicalVariableRow], list[DataSourceVariableEdgeRow], list[VariableExtractionFailure]]:
+  if not manifest_path.is_file():
+    return [], [], []
+  failures: list[VariableExtractionFailure] = []
+  try:
+    manifest_rows = read_archive_manifest_csv(manifest_path)
+  except Exception as exc:
+    return [], [], [
+      VariableExtractionFailure(reason=f"failed to read archive manifest: {exc}")
+    ]
+
+  variables_by_id: dict[str, CanonicalVariableRow] = {}
+  edges_by_key: dict[tuple[str, str, str], DataSourceVariableEdgeRow] = {}
+  for manifest_row in manifest_rows:
+    try:
+      variable, edges = _extract_canonical_variable_from_page(manifest_row)
+    except Exception as exc:
+      failures.append(
+        VariableExtractionFailure(
+          source_document=manifest_row.local_path,
+          reason=f"failed to extract canonical variable page: {exc}",
+        )
+      )
+      continue
+    if variable is None:
+      continue
+    variables_by_id[variable.variable_id] = variable
+    for edge in edges:
+      edges_by_key[(edge.source_id, edge.target_id, edge.source_url)] = edge
+
+  return (
+    sorted(variables_by_id.values(), key=lambda variable: variable.variable_id),
+    sorted(edges_by_key.values(), key=lambda edge: (edge.source_id, edge.target_id)),
+    failures,
+  )
 
 
 def _table_cells(line: str) -> list[str]:
@@ -335,6 +616,16 @@ def write_variable_outputs(result: VariableExtractionResult) -> None:
     result.config.graph_dir / "variable_edges.csv",
     VARIABLE_EDGE_FIELDNAMES,
   )
+  _write_model_csv(
+    result.canonical_variables,
+    result.config.metadata_dir / "canonical_variables.csv",
+    CANONICAL_VARIABLE_FIELDNAMES,
+  )
+  _write_model_csv(
+    result.data_source_variable_edges,
+    result.config.graph_dir / "data_source_variable_edges.csv",
+    DATA_SOURCE_VARIABLE_EDGE_FIELDNAMES,
+  )
 
 
 def write_variable_workspace_summary(result: VariableExtractionResult) -> Path:
@@ -347,6 +638,8 @@ def write_variable_workspace_summary(result: VariableExtractionResult) -> Path:
     f"- Chunks read: {result.chunks_read}",
     f"- Variables: {result.variable_count}",
     f"- Variable edges: {result.edge_count}",
+    f"- Canonical variables: {result.canonical_variable_count}",
+    f"- Data source variable edges: {result.data_source_variable_edge_count}",
     f"- Skipped candidates: {result.skipped_candidates}",
     f"- Failures: {result.failure_count}",
     "",
@@ -354,6 +647,8 @@ def write_variable_workspace_summary(result: VariableExtractionResult) -> Path:
     "",
     f"- Variable metadata: {result.config.metadata_dir / 'variables.csv'}",
     f"- Variable graph edges: {result.config.graph_dir / 'variable_edges.csv'}",
+    f"- Canonical variable metadata: {result.config.metadata_dir / 'canonical_variables.csv'}",
+    f"- Data source variable graph edges: {result.config.graph_dir / 'data_source_variable_edges.csv'}",
     "",
     "## Failures",
     "",
@@ -377,6 +672,10 @@ def run_variable_extraction(
   config: VariableExtractionConfig,
 ) -> tuple[VariableExtractionResult, Path]:
   chunks, failures = read_chunks_jsonl(config.chunks_jsonl_path)
+  canonical_variables, data_source_variable_edges, canonical_failures = (
+    _extract_canonical_variables_from_manifest(config.archive_manifest_path)
+  )
+  failures.extend(canonical_failures)
   extracted_rows: list[VariableMetadataRow] = []
   skipped_candidates = 0
 
@@ -409,6 +708,8 @@ def run_variable_extraction(
     chunks_read=len(chunks),
     variables=variables,
     edges=[_edge_for_variable(row) for row in variables],
+    canonical_variables=canonical_variables,
+    data_source_variable_edges=data_source_variable_edges,
     skipped_candidates=skipped_candidates,
     failures=failures,
   )
@@ -426,6 +727,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("data/parsed/chunks.jsonl"),
   )
+  parser.add_argument(
+    "--archive-manifest",
+    type=Path,
+    default=Path("manifests/archive_manifest.csv"),
+  )
   parser.add_argument("--metadata-dir", type=Path, default=Path("data/metadata"))
   parser.add_argument("--graph-dir", type=Path, default=Path("data/graph"))
   parser.add_argument("--workspace-dir", type=Path, default=Path("_workspace"))
@@ -437,6 +743,7 @@ def main(argv: list[str] | None = None) -> int:
   args = parser.parse_args(argv)
   config = VariableExtractionConfig(
     chunks_jsonl_path=args.chunks_jsonl,
+    archive_manifest_path=args.archive_manifest,
     metadata_dir=args.metadata_dir,
     graph_dir=args.graph_dir,
     workspace_dir=args.workspace_dir,
@@ -445,6 +752,8 @@ def main(argv: list[str] | None = None) -> int:
     result, summary_path = run_variable_extraction(config)
     print(
       f"wrote {result.variable_count} variables and {result.edge_count} "
+      f"variable edges; wrote {result.canonical_variable_count} canonical "
+      f"variables and {result.data_source_variable_edge_count} data source "
       f"variable edges; summary: {summary_path}"
     )
     return 1 if result.failure_count else 0
@@ -456,6 +765,10 @@ def main(argv: list[str] | None = None) -> int:
 __all__ = [
   "VARIABLE_EDGE_FIELDNAMES",
   "VARIABLE_FIELDNAMES",
+  "CANONICAL_VARIABLE_FIELDNAMES",
+  "DATA_SOURCE_VARIABLE_EDGE_FIELDNAMES",
+  "CanonicalVariableRow",
+  "DataSourceVariableEdgeRow",
   "VariableEdgeRow",
   "VariableExtractionConfig",
   "VariableExtractionFailure",

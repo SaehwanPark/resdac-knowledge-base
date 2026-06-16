@@ -15,6 +15,7 @@ from cms_kb.inventory import (
   parse_page,
   write_workspace_summary,
   write_inventory_csv,
+  write_inventory_edges_csv,
 )
 
 
@@ -164,6 +165,51 @@ def test_crawl_inventory_deduplicates_duplicate_links_and_records_dead_assets(
   assert xlsx_url in dead
   assert dead[xlsx_url].link_state == "dead"
   assert dead[xlsx_url].http_status == 404
+  assert any(
+    edge.source_url == doc_url
+    and edge.target_url == variable_url
+    and edge.relationship == "documents_variable"
+    for edge in result.edges
+  )
+
+
+def test_write_inventory_edges_preserves_many_to_many_sources(tmp_path: Path) -> None:
+  target_url = "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+  first_doc = "https://resdac.org/cms-data/files/mbsf/data-documentation"
+  second_doc = "https://resdac.org/cms-data/files/medpar/data-documentation"
+
+  result = crawl_inventory(
+    InventoryConfig(
+      base_url="https://resdac.org/cms-data",
+      max_pages=1,
+      output_path=tmp_path / "site_inventory.csv",
+      edge_output_path=tmp_path / "site_inventory_edges.csv",
+    ),
+    fetch_html_fn=lambda url, timeout_seconds, user_agent: HtmlFetchResult(
+      url=url,
+      status=200,
+      content_type="text/html",
+      html=_listing_html(first_doc, second_doc)
+      if url.endswith("page=0")
+      else _documentation_html(target_url),
+    ),
+    probe_url_fn=lambda url, timeout_seconds, user_agent: ProbeResult(
+      url=url, status=200
+    ),
+  )
+
+  variable_rows = [row for row in result.rows if row.url == target_url]
+  assert len(variable_rows) == 1
+  variable_edges = [
+    edge for edge in result.edges if edge.target_url == target_url
+  ]
+  assert {edge.source_url for edge in variable_edges} == {first_doc, second_doc}
+
+  edge_output_path = tmp_path / "site_inventory_edges.csv"
+  write_inventory_edges_csv(result.edges, edge_output_path)
+  with edge_output_path.open(newline="", encoding="utf-8") as handle:
+    rows = list(csv.DictReader(handle))
+  assert len([row for row in rows if row["target_url"] == target_url]) == 2
 
 
 def test_crawl_inventory_keeps_transient_page_status_unknown(

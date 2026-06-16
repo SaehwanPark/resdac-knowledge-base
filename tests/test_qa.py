@@ -408,6 +408,176 @@ def test_run_qa_validates_variable_metadata_and_edges(tmp_path: Path) -> None:
   assert result.edges_checked == 1
 
 
+def test_run_qa_validates_canonical_variable_metadata_and_edges(
+  tmp_path: Path,
+) -> None:
+  metadata_dir = tmp_path / "data" / "metadata"
+  graph_dir = tmp_path / "data" / "graph"
+  manifest_dir = tmp_path / "manifests"
+  raw_dir = tmp_path / "data" / "raw"
+  workspace_dir = tmp_path / "_workspace"
+
+  for directory in [metadata_dir, graph_dir, manifest_dir, raw_dir, workspace_dir]:
+    directory.mkdir(parents=True, exist_ok=True)
+
+  ds_html = raw_dir / "ds-1.html"
+  ds_sha = _write_file(ds_html, b"<html>Dataset</html>")
+  variable_html = raw_dir / "variable.html"
+  variable_sha = _write_file(variable_html, b"<html>BENE_ID</html>")
+  variable_url = "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+  source_url = "https://resdac.org/cms-data/files/ds-1/data-documentation"
+  manifest_path = manifest_dir / "archive_manifest.csv"
+  write_archive_manifest(
+    [
+      ArchiveManifestRow(
+        url="https://resdac.org/cms-data/files/ds-1",
+        resource_kind="dataset_page",
+        archive_state="archived",
+        downloaded_at_utc="2026-06-11T12:00:00Z",
+        sha256=ds_sha,
+        local_path=str(ds_html),
+      ),
+      ArchiveManifestRow(
+        url=source_url,
+        resource_kind="documentation_page",
+        archive_state="archived",
+        downloaded_at_utc="2026-06-11T12:00:00Z",
+        sha256=ds_sha,
+        local_path=str(ds_html),
+      ),
+      ArchiveManifestRow(
+        url=variable_url,
+        resource_kind="variable_page",
+        archive_state="archived",
+        downloaded_at_utc="2026-06-11T12:00:00Z",
+        sha256=variable_sha,
+        local_path=str(variable_html),
+      ),
+    ],
+    manifest_path,
+  )
+
+  datasets_csv = metadata_dir / "datasets.csv"
+  with datasets_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "dataset_id",
+      "name",
+      "program",
+      "category",
+      "availability",
+      "source_url",
+      "local_path",
+      "sha256",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "ds-1",
+      "Dataset 1",
+      "",
+      "",
+      "",
+      "https://resdac.org/cms-data/files/ds-1",
+      str(ds_html),
+      ds_sha,
+      "",
+    ])
+
+  documents_csv = metadata_dir / "documents.csv"
+  with documents_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "document_id",
+      "dataset_id",
+      "title",
+      "document_kind",
+      "source_url",
+      "local_path",
+      "sha256",
+      "content_type",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "doc-1",
+      "ds-1",
+      "Dataset page",
+      "html",
+      "https://resdac.org/cms-data/files/ds-1",
+      str(ds_html),
+      ds_sha,
+      "text/html",
+      "",
+    ])
+
+  canonical_variables_csv = metadata_dir / "canonical_variables.csv"
+  with canonical_variables_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "variable_id",
+      "variable_name",
+      "variable_label",
+      "definition",
+      "source",
+      "source_url",
+      "source_document",
+      "extraction_notes",
+    ])
+    writer.writerow([
+      "encrypted-ccw-beneficiary-id",
+      "BENE_ID",
+      "Encrypted CCW Beneficiary ID",
+      "The unique CCW identifier for a beneficiary.",
+      "resdac_variable_page",
+      variable_url,
+      str(variable_html),
+      "",
+    ])
+
+  data_source_variable_edges_csv = graph_dir / "data_source_variable_edges.csv"
+  with data_source_variable_edges_csv.open("w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerow([
+      "source_id",
+      "target_id",
+      "relationship",
+      "source_url",
+      "source_document",
+      "variable_url",
+      "variable_document",
+      "evidence_type",
+      "page",
+      "chunk_id",
+    ])
+    writer.writerow([
+      "ds-1",
+      "encrypted-ccw-beneficiary-id",
+      "contains",
+      source_url,
+      "",
+      variable_url,
+      str(variable_html),
+      "variable_page_containing_file",
+      "",
+      "",
+    ])
+
+  result, _ = run_qa(
+    QAConfig(
+      datasets_metadata_path=datasets_csv,
+      documents_metadata_path=documents_csv,
+      canonical_variables_metadata_path=canonical_variables_csv,
+      data_source_variable_edges_path=data_source_variable_edges_csv,
+      archive_manifest_path=manifest_path,
+      workspace_dir=workspace_dir,
+    )
+  )
+
+  assert result.verdict == "pass"
+  assert result.error_count == 0
+  assert result.variables_checked == 1
+  assert result.edges_checked == 1
+
+
 def test_run_qa_treats_variable_reference_errors_as_redo(tmp_path: Path) -> None:
   metadata_dir = tmp_path / "data" / "metadata"
   graph_dir = tmp_path / "data" / "graph"

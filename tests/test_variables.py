@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 from pathlib import Path
 
+from cms_kb.archive import ArchiveManifestRow, write_archive_manifest
 from cms_kb.parsing import ChunkMetadata
 from cms_kb.variables import (
   VariableExtractionConfig,
@@ -217,6 +219,97 @@ def test_run_variable_extraction_writes_outputs(tmp_path: Path) -> None:
   assert edges[0]["source_id"] == "mbsf"
   assert edges[0]["target_id"] == "mbsf__var__bene-id"
   assert edges[0]["relationship"] == "contains"
+
+
+def test_run_variable_extraction_writes_canonical_variable_graph(
+  tmp_path: Path,
+) -> None:
+  source_path = tmp_path / "data" / "parsed" / "html" / "mbsf.txt"
+  source_path.parent.mkdir(parents=True, exist_ok=True)
+  source_path.write_text("source text", encoding="utf-8")
+  chunks_path = tmp_path / "data" / "parsed" / "chunks.jsonl"
+  _write_chunk_jsonl(
+    chunks_path,
+    [
+      ChunkMetadata(
+        chunk_id="chunk-1",
+        source_document=str(source_path),
+        page=None,
+        text="BENE_ID: Beneficiary identifier.",
+        dataset="mbsf",
+        url="https://resdac.org/cms-data/files/mbsf/data-documentation",
+      )
+    ],
+  )
+
+  variable_page = (
+    tmp_path
+    / "data"
+    / "raw"
+    / "html"
+    / "variable_page"
+    / "encrypted-ccw-beneficiary-id.html"
+  )
+  variable_html = """
+  <html><head><title>Encrypted CCW Beneficiary ID | ResDAC</title></head>
+  <body>
+    <h1>Encrypted CCW Beneficiary ID</h1>
+    <table>
+      <tr><th>SAS Name</th><td>BENE_ID</td></tr>
+      <tr><th>Definition</th><td>The unique CCW identifier for a beneficiary.</td></tr>
+    </table>
+    <a href="/cms-data/files/mbsf/data-documentation">MBSF Base</a>
+    <a href="/cms-data/files/medpar/data-documentation">MedPAR</a>
+  </body></html>
+  """
+  variable_page.parent.mkdir(parents=True, exist_ok=True)
+  variable_page.write_text(variable_html, encoding="utf-8")
+  manifest_path = tmp_path / "manifests" / "archive_manifest.csv"
+  write_archive_manifest(
+    [
+      ArchiveManifestRow(
+        url="https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id",
+        resource_kind="variable_page",
+        content_type="text/html",
+        http_status=200,
+        archive_state="archived",
+        downloaded_at_utc="2026-06-16T00:00:00Z",
+        sha256=hashlib.sha256(variable_html.encode("utf-8")).hexdigest(),
+        local_path=str(variable_page),
+      )
+    ],
+    manifest_path,
+  )
+
+  result, _ = run_variable_extraction(
+    VariableExtractionConfig(
+      chunks_jsonl_path=chunks_path,
+      archive_manifest_path=manifest_path,
+      metadata_dir=tmp_path / "data" / "metadata",
+      graph_dir=tmp_path / "data" / "graph",
+      workspace_dir=tmp_path / "_workspace",
+    )
+  )
+
+  assert result.canonical_variable_count == 1
+  assert result.canonical_variables[0].variable_id == "encrypted-ccw-beneficiary-id"
+  assert result.canonical_variables[0].variable_name == "BENE_ID"
+  assert result.data_source_variable_edge_count == 2
+  assert {
+    edge.source_id for edge in result.data_source_variable_edges
+  } == {"mbsf", "medpar"}
+
+  with (tmp_path / "data" / "metadata" / "canonical_variables.csv").open(
+    newline="", encoding="utf-8"
+  ) as handle:
+    canonical_rows = list(csv.DictReader(handle))
+  assert canonical_rows[0]["variable_id"] == "encrypted-ccw-beneficiary-id"
+
+  with (tmp_path / "data" / "graph" / "data_source_variable_edges.csv").open(
+    newline="", encoding="utf-8"
+  ) as handle:
+    edge_rows = list(csv.DictReader(handle))
+  assert len(edge_rows) == 2
 
 
 def test_run_variable_extraction_reports_missing_source_document(

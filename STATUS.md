@@ -18,11 +18,18 @@ The current Python implementation includes:
 
 - Inventory discovery for ResDAC listing, dataset, documentation, standalone
   variable-detail, and asset links.
+- Inventory discovery preserves source-to-target edge rows separately from
+  URL-deduplicated inventory rows.
 - Archive preservation for raw HTML pages and linked assets with checksums.
+- Archive preservation emits optional JSONL progress logs and handles repeated
+  HTTP 429 responses with retry/backoff plus variable-page deferral.
 - Metadata extraction for datasets, documents, ontology seeds, and graph edges.
 - HTML/PDF/XLSX parsing and provenance-bearing chunk generation.
 - QA checks for checksums, source URLs, local paths, and cross-file references.
 - Conservative variable-level metadata extraction from parsed chunks.
+- Canonical ResDAC variable-page extraction writes additive canonical variable
+  and data-source-variable graph artifacts when archived variable pages are
+  available.
 - Deterministic lexical retrieval across datasets, documents, variables, and
   parsed chunks.
 - Deterministic variable-retrieval usefulness smoke evaluation over seeded
@@ -55,6 +62,9 @@ The current archive manifest records 251 archived standalone variable-detail
 rows and 3,360 rate-limited variable-detail failures from ResDAC HTTP 429
 responses. Dataset, documentation, and asset rows needed by extraction remain
 archived, and QA passes.
+
+The retained data corpus has not been regenerated for the canonical variable
+graph enhancement in this status update.
 
 This snapshot is source material for downstream extraction and retrieval.
 

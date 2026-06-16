@@ -209,6 +209,60 @@ def test_run_archive_records_failed_live_download_and_continues_writing_outputs(
   assert "HTTP Error 503" in summary_text
 
 
+def test_run_archive_defers_variable_pages_after_repeated_rate_limits(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  rows = [
+    InventoryRow(
+      url=f"https://resdac.org/cms-data/variables/rate-limited-{idx}",
+      title=f"Variable {idx}",
+      resource_kind="variable_page",
+      link_state="unknown",
+    )
+    for idx in range(3)
+  ]
+  write_inventory_csv(rows, inventory_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(
+      url=url,
+      status=429,
+      content_type="text/html",
+      error="HTTP Error 429: Too Many Requests",
+    )
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      max_consecutive_rate_limits=2,
+      progress_log_path=tmp_path / "_workspace" / "archive_progress.jsonl",
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  assert result.failed_count == 3
+  assert download_calls == [rows[0].url, rows[1].url]
+  assert result.manifest_rows[2].error == (
+    "deferred after repeated HTTP 429 rate limits"
+  )
+  log_text = (tmp_path / "_workspace" / "archive_progress.jsonl").read_text(
+    encoding="utf-8"
+  )
+  assert '"event":"rate_limited"' in log_text
+  assert '"event":"circuit_breaker"' in log_text
+
+
 def test_run_archive_rejects_unsafe_live_inventory_url(tmp_path: Path) -> None:
   inventory_path = tmp_path / "site_inventory.csv"
   live_row = InventoryRow(

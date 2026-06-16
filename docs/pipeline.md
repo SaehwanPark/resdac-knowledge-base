@@ -36,7 +36,9 @@ uv run cms-kb --max-listing-pages 1 --max-follow-pages 10 --max-assets 10 --requ
 Outputs:
 
 - `manifests/site_inventory.csv`
+- `manifests/site_inventory_edges.csv`
 - `_workspace/02_source_inventory.md`
+- `_workspace/02_inventory_progress.jsonl` when progress logging is enabled
 
 If `_workspace/02_source_inventory.md` reports transient unresolved links,
 rerun with a larger `--request-delay-seconds` before starting the archive pass.
@@ -55,11 +57,15 @@ Outputs:
 - `data/raw/assets/...`
 - `manifests/archive_manifest.csv`
 - `_workspace/03_archive_manifest.md`
+- `_workspace/03_archive_progress.jsonl` when progress logging is enabled
 
 Standalone variable-detail pages may be rate-limited by ResDAC during large
-archive refreshes. Failed variable-page rows are retained in the manifest as
-explicit coverage gaps; dataset/document extraction requires the dataset,
-documentation, and asset rows to remain archived.
+archive refreshes. The archive pass retries `429 Too Many Requests` responses
+politely, respects `Retry-After` when provided, and defers remaining
+variable-page requests after repeated 429s. Failed or deferred variable-page
+rows are retained in the manifest as explicit coverage gaps; dataset/document
+extraction requires the dataset, documentation, and asset rows to remain
+archived.
 
 ## Phase 2: Metadata Extraction
 
@@ -118,7 +124,9 @@ uv run cms-kb-variables
 Outputs:
 
 - `data/metadata/variables.csv`
+- `data/metadata/canonical_variables.csv`
 - `data/graph/variable_edges.csv`
+- `data/graph/data_source_variable_edges.csv`
 - `_workspace/07_variable_pack.md`
 
 ## Phase 7: Retrieval MVP
