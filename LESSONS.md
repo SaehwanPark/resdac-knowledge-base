@@ -59,3 +59,11 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Cause: the checked-in archive includes spreadsheet record layouts, and parsing originally handled only HTML and PDF documents.
 - Resolution: parse XLSX files from workbook XML/shared strings with the Python standard library and write parsed text plus chunks.
 - Prevention: include `data/parsed/xlsx/` in parsed artifact checks and rerun `cms-kb-parse` after changing document-kind support.
+
+### Variable-detail archive batches can hit ResDAC rate limits
+
+- Context: retained corpus refresh after adding standalone variable-detail pages from data-documentation tables.
+- Symptom: inventory/archive runs appeared stalled while sleeping after HTTP 429 responses, and a full variable-page archive returned many 429 failures.
+- Cause: data-documentation pages link thousands of variable-detail URLs, and bulk fetching those pages triggers ResDAC rate limiting.
+- Resolution: record variable-page URLs during inventory without fetching them, let archive own the actual download/status manifest, and fail fast on 429 instead of sleeping indefinitely.
+- Prevention: prioritize required variable pages for smoke validation, inspect `_workspace/03_archive_manifest.md` for rate-limited variable rows, and rerun archive later for missing variable-page coverage instead of blocking extraction/QA.

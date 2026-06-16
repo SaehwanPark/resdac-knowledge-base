@@ -24,7 +24,8 @@ uv run cms-kb --max-listing-pages 10 --request-delay-seconds 1.0
 `--max-pages` and `--max-listing-pages` limit ResDAC listing pages only. Use a
 ceiling higher than the currently known listing count; the crawler stops when a
 later listing page repeats or contains no discovered links. The crawler also
-follows discovered dataset and documentation pages and probes linked assets.
+follows discovered dataset and documentation pages, records variable-detail
+links from documentation tables, and probes linked assets.
 
 For a bounded smoke test:
 
@@ -54,6 +55,11 @@ Outputs:
 - `data/raw/assets/...`
 - `manifests/archive_manifest.csv`
 - `_workspace/03_archive_manifest.md`
+
+Standalone variable-detail pages may be rate-limited by ResDAC during large
+archive refreshes. Failed variable-page rows are retained in the manifest as
+explicit coverage gaps; dataset/document extraction requires the dataset,
+documentation, and asset rows to remain archived.
 
 ## Phase 2: Metadata Extraction
 

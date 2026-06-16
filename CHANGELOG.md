@@ -13,12 +13,15 @@
   checked-in corpus, and derived artifact states.
 - Clarified `SPEC.md` so `Past`, `Present`, and `Future` are mutually exclusive operational states, with completed pipeline phases moved out of active work.
 - Treat transient inventory HTTP statuses as unresolved instead of dead links, and allow archive retries to reuse already preserved raw files.
+- Inventory now records standalone ResDAC variable-detail pages linked from
+  data-documentation tables, and archive preservation attempts those pages as
+  raw HTML citation supplements.
 - Variable extraction now recognizes HTML data-documentation table rows as
   definition evidence and prefers HTML citations over PDF evidence for exact
   variable retrieval.
 - Agent context citations now include variable-detail URLs and populate local
-  variable-detail documents only when the standalone variable page is archived
-  locally.
+  variable-detail documents from `manifests/archive_manifest.csv` when the
+  standalone variable page is archived locally.
 
 ### Added
 - Initial canonical project documentation with `SPEC.md`, `ARCHITECTURE.md`, and `CHANGELOG.md`.

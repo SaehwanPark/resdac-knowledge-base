@@ -47,6 +47,7 @@ HTML_RESOURCE_KINDS: tuple[ResourceKind, ...] = (
   "listing_page",
   "dataset_page",
   "documentation_page",
+  "variable_page",
 )
 MAX_DOWNLOAD_BYTES = 512 * 1024 * 1024
 
@@ -169,11 +170,15 @@ def download_url(url: str, timeout_seconds: float, user_agent: str) -> DownloadR
   return _request_bytes_with_retry(
     request,
     timeout_seconds=timeout_seconds,
-    retry_statuses={429, 500, 502, 503, 504},
+    retry_statuses={500, 502, 503, 504},
   )
 
 
 def _should_archive(row: InventoryRow) -> bool:
+  if row.resource_kind == "variable_page":
+    return row.link_state != "dead" and (
+      row.http_status is None or row.http_status < 400
+    )
   if row.link_state != "live":
     return False
   if row.http_status is None or row.http_status >= 400:
@@ -384,6 +389,14 @@ def _manifest_row_for_existing_file(
   )
 
 
+def _archive_order_key(row: InventoryRow) -> tuple[int, str]:
+  if row.resource_kind == "variable_page" and "encrypted-ccw-beneficiary-id" in row.url:
+    return (0, row.url)
+  if row.resource_kind != "variable_page":
+    return (1, row.url)
+  return (2, row.url)
+
+
 def write_archive_manifest(
   rows: list[ArchiveManifestRow], output_path: Path
 ) -> None:
@@ -448,7 +461,7 @@ def run_archive(
   failed_count = 0
   previous_manifest = _read_trusted_previous_manifest(config.manifest_output_path)
 
-  for row in inventory_rows:
+  for row in sorted(inventory_rows, key=_archive_order_key):
     if not _should_archive(row):
       manifest_rows.append(_manifest_row_for_skip(row))
       skipped_count += 1

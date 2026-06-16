@@ -43,6 +43,14 @@ def test_run_archive_archives_live_html_and_assets_and_skips_non_live_rows(
     source_url=html_row.url,
     source_title=html_row.title,
   )
+  variable_row = InventoryRow(
+    url="https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id",
+    title="Encrypted CCW Beneficiary ID",
+    resource_kind="variable_page",
+    link_state="unknown",
+    source_url=html_row.url,
+    source_title=html_row.title,
+  )
   skipped_row = InventoryRow(
     url="https://example.com/files/dead.pdf",
     title="Dead asset",
@@ -52,7 +60,7 @@ def test_run_archive_archives_live_html_and_assets_and_skips_non_live_rows(
     http_status=404,
     link_state="dead",
   )
-  write_inventory_csv([html_row, asset_row, skipped_row], inventory_path)
+  write_inventory_csv([html_row, asset_row, variable_row, skipped_row], inventory_path)
 
   downloads = {
     html_row.url: DownloadResult(
@@ -66,6 +74,12 @@ def test_run_archive_archives_live_html_and_assets_and_skips_non_live_rows(
       status=200,
       content_type="application/pdf",
       body=b"%PDF-1.4 fake pdf",
+    ),
+    variable_row.url: DownloadResult(
+      url=variable_row.url,
+      status=200,
+      content_type="text/html",
+      body=b"<html><body>Encrypted CCW Beneficiary ID</body></html>",
     ),
   }
 
@@ -82,14 +96,16 @@ def test_run_archive_archives_live_html_and_assets_and_skips_non_live_rows(
     sleep_fn=lambda seconds: None,
   )
 
-  assert result.archived_count == 2
+  assert result.archived_count == 3
   assert result.skipped_count == 1
   assert result.failed_count == 0
 
   html_path = archive_path_for_row(html_row, tmp_path / "data" / "raw")
   asset_path = archive_path_for_row(asset_row, tmp_path / "data" / "raw")
+  variable_path = archive_path_for_row(variable_row, tmp_path / "data" / "raw")
   assert html_path.read_bytes() == downloads[html_row.url].body
   assert asset_path.read_bytes() == downloads[asset_row.url].body
+  assert variable_path.read_bytes() == downloads[variable_row.url].body
 
   manifest_path = tmp_path / "manifests" / "archive_manifest.csv"
   with manifest_path.open(newline="", encoding="utf-8") as handle:
@@ -100,11 +116,12 @@ def test_run_archive_archives_live_html_and_assets_and_skips_non_live_rows(
     downloads[html_row.url].body
   ).hexdigest()
   assert manifest_rows[asset_row.url]["local_path"] == str(asset_path)
+  assert manifest_rows[variable_row.url]["local_path"] == str(variable_path)
   assert manifest_rows[skipped_row.url]["archive_state"] == "skipped"
   assert "not a live archive target" in manifest_rows[skipped_row.url]["error"]
 
   summary_text = summary_path.read_text(encoding="utf-8")
-  assert "- Archived: 2" in summary_text
+  assert "- Archived: 3" in summary_text
   assert "- Skipped: 1" in summary_text
   assert "- Failed: 0" in summary_text
 

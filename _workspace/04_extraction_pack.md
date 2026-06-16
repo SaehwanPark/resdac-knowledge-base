@@ -1,7 +1,7 @@
 # Extraction Pack
 
 - Archive manifest input: manifests/archive_manifest.csv
-- Manifest rows: 339
+- Manifest rows: 3950
 - Datasets: 96
 - Documents: 179
 - Document edges: 179

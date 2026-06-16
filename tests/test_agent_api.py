@@ -14,6 +14,9 @@ from cms_kb.parsing import ChunkMetadata
 from cms_kb.retrieval import RetrievalConfig, SearchResult
 
 
+VARIABLE_URL = "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+
+
 def _write_metadata_fixture(tmp_path: Path, include_variables: bool = True) -> RetrievalConfig:
   metadata_dir = tmp_path / "data" / "metadata"
   parsed_dir = tmp_path / "data" / "parsed"
@@ -138,8 +141,54 @@ def _write_metadata_fixture(tmp_path: Path, include_variables: bool = True) -> R
   )
 
 
+def _write_archive_manifest_fixture(tmp_path: Path) -> Path:
+  variable_page = tmp_path / "data" / "raw" / "html" / "variable_page" / "bene.html"
+  variable_page.parent.mkdir(parents=True, exist_ok=True)
+  variable_page.write_text(
+    "<html><body>Encrypted CCW Beneficiary ID</body></html>",
+    encoding="utf-8",
+  )
+  manifest_path = tmp_path / "manifests" / "archive_manifest.csv"
+  manifest_path.parent.mkdir(parents=True, exist_ok=True)
+  with manifest_path.open("w", newline="", encoding="utf-8") as handle:
+    writer = csv.writer(handle)
+    writer.writerow([
+      "url",
+      "resource_kind",
+      "asset_kind",
+      "source_url",
+      "source_title",
+      "content_type",
+      "http_status",
+      "archive_state",
+      "downloaded_at_utc",
+      "sha256",
+      "local_path",
+      "error",
+    ])
+    writer.writerow([
+      VARIABLE_URL,
+      "variable_page",
+      "",
+      "https://resdac.org/cms-data/files/mbsf/data-documentation",
+      "MBSF Data Documentation",
+      "text/html",
+      "200",
+      "archived",
+      "2026-06-16T00:00:00Z",
+      "fake-sha",
+      str(variable_page),
+      "",
+    ])
+  return manifest_path
+
+
 def test_build_agent_context_returns_ordered_cited_hits(tmp_path: Path) -> None:
-  config = AgentContextConfig(retrieval=_write_metadata_fixture(tmp_path), default_limit=5)
+  config = AgentContextConfig(
+    retrieval=_write_metadata_fixture(tmp_path),
+    archive_manifest_path=tmp_path / "missing_archive_manifest.csv",
+    default_limit=5,
+  )
 
   response = build_agent_context(config, "BENE_ID")
 
@@ -151,9 +200,27 @@ def test_build_agent_context_returns_ordered_cited_hits(tmp_path: Path) -> None:
   )
   assert response.results[0].citation.page is None
   assert response.results[0].citation.variable_url == (
-    "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+    VARIABLE_URL
   )
   assert response.results[0].citation.variable_document == ""
+
+
+def test_build_agent_context_populates_archived_variable_document(
+  tmp_path: Path,
+) -> None:
+  manifest_path = _write_archive_manifest_fixture(tmp_path)
+  config = AgentContextConfig(
+    retrieval=_write_metadata_fixture(tmp_path),
+    archive_manifest_path=manifest_path,
+    default_limit=5,
+  )
+
+  response = build_agent_context(config, "BENE_ID")
+
+  assert response.results[0].citation.variable_url == VARIABLE_URL
+  assert response.results[0].citation.variable_document.endswith(
+    "data/raw/html/variable_page/bene.html"
+  )
 
 
 def test_build_agent_context_uses_explicit_limit(tmp_path: Path) -> None:
@@ -183,7 +250,7 @@ def test_context_hit_populates_local_standalone_variable_document(tmp_path: Path
   hit = context_hit_from_search_result(result)
 
   assert hit.citation.variable_url == (
-    "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+    VARIABLE_URL
   )
   assert hit.citation.variable_document == str(variable_page)
 
@@ -192,6 +259,7 @@ def test_agent_context_cli_outputs_json_with_nested_citations(
   tmp_path: Path, capsys
 ) -> None:
   retrieval_config = _write_metadata_fixture(tmp_path)
+  manifest_path = _write_archive_manifest_fixture(tmp_path)
 
   exit_code = main([
     "--query",
@@ -206,6 +274,8 @@ def test_agent_context_cli_outputs_json_with_nested_citations(
     str(retrieval_config.variables_metadata_path),
     "--chunks-jsonl",
     str(retrieval_config.chunks_jsonl_path),
+    "--archive-manifest",
+    str(manifest_path),
     "--json",
   ])
 
@@ -216,9 +286,11 @@ def test_agent_context_cli_outputs_json_with_nested_citations(
   assert payload["results"][0]["record_id"] == "mbsf__var__bene-id"
   assert payload["results"][0]["citation"]["source_url"]
   assert payload["results"][0]["citation"]["variable_url"] == (
-    "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+    VARIABLE_URL
   )
-  assert payload["results"][0]["citation"]["variable_document"] == ""
+  assert payload["results"][0]["citation"]["variable_document"].endswith(
+    "data/raw/html/variable_page/bene.html"
+  )
 
 
 def test_agent_context_cli_failure_for_empty_query(tmp_path: Path, capsys) -> None:
