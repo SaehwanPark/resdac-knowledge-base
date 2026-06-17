@@ -934,6 +934,81 @@ def test_run_archive_retry_failed_only_retries_deferred_rows(
   assert result.manifest_rows[0].archive_state == "archived"
 
 
+def test_run_archive_bulk_defer_respects_retry_failed_only_carry_forward(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  deferred_row = InventoryRow(
+    url="https://resdac.org/cms-data/variables/a-still-deferred",
+    title="Still deferred",
+    resource_kind="variable_page",
+    link_state="unknown",
+  )
+  archived_row = InventoryRow(
+    url="https://resdac.org/cms-data/variables/z-already-archived",
+    title="Already archived",
+    resource_kind="variable_page",
+    link_state="unknown",
+  )
+  write_inventory_csv([deferred_row, archived_row], inventory_path)
+  raw_root = tmp_path / "data" / "raw"
+  existing_path = archive_path_for_row(archived_row, raw_root)
+  existing_path.parent.mkdir(parents=True, exist_ok=True)
+  existing_path.write_bytes(b"<html><body>archived</body></html>")
+  existing_sha = hashlib.sha256(b"<html><body>archived</body></html>").hexdigest()
+  manifest_output_path = tmp_path / "manifests" / "archive_manifest.csv"
+  archive.write_archive_manifest([
+    archive.ArchiveManifestRow(
+      url=archived_row.url,
+      resource_kind=archived_row.resource_kind,
+      archive_state="archived",
+      downloaded_at_utc="2026-06-10T12:00:00Z",
+      sha256=existing_sha,
+      local_path=str(existing_path),
+    ),
+    archive.ArchiveManifestRow(
+      url=deferred_row.url,
+      resource_kind=deferred_row.resource_kind,
+      archive_state="deferred",
+      downloaded_at_utc="2026-06-10T12:01:00Z",
+      error="deferred after repeated HTTP 429 rate limits",
+    ),
+  ], manifest_output_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(
+      url=url,
+      status=429,
+      content_type="text/html",
+      error="HTTP Error 429: Too Many Requests",
+    )
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=raw_root,
+      manifest_output_path=manifest_output_path,
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      max_consecutive_rate_limits=1,
+      retry_failed_only=True,
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  rows_by_url = {row.url: row for row in result.manifest_rows}
+  assert download_calls == [deferred_row.url]
+  assert rows_by_url[archived_row.url].archive_state == "archived"
+  assert rows_by_url[deferred_row.url].archive_state == "failed"
+  assert result.deferred_count == 0
+
+
 def test_run_archive_emits_preflight_warning_for_large_variable_inventory(
   tmp_path: Path,
   capsys: pytest.CaptureFixture[str],

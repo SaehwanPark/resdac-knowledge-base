@@ -759,12 +759,29 @@ def _bulk_defer_remaining_rows(
   download_attempts: int,
   consecutive_rate_limits: int,
   now_utc_fn: Callable[[], datetime],
+  previous_manifest_rows: dict[str, ArchiveManifestRow],
 ) -> tuple[int, int, int, int, int]:
   bulk_deferred = 0
   downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
   for row in sorted_rows[start_index:]:
+    previous_row = previous_manifest_rows.get(row.url)
     if not _should_archive(row):
       manifest_row = _manifest_row_for_skip(row)
+    elif (
+      config.retry_failed_only
+      and previous_row is not None
+      and not _is_retriable_archive_state(previous_row.archive_state)
+    ):
+      if previous_row.archive_state == "archived" and not _previous_archive_row_is_trusted(
+        previous_row
+      ):
+        manifest_row = _download_failure(
+          row,
+          "previous archived row is missing or checksum does not match",
+          downloaded_at_utc,
+        )
+      else:
+        manifest_row = previous_row
     else:
       manifest_row = _manifest_row_for_deferred(row, downloaded_at_utc)
       bulk_deferred += 1
@@ -1174,6 +1191,7 @@ def run_archive(
             download_attempts=download_attempts,
             consecutive_rate_limits=consecutive_rate_limits,
             now_utc_fn=now_utc_fn,
+            previous_manifest_rows=previous_manifest_rows,
           )
         )
         break
