@@ -21,7 +21,8 @@ The current Python implementation includes:
 - Inventory discovery preserves source-to-target edge rows separately from
   URL-deduplicated inventory rows.
 - Archive preservation for raw HTML pages and linked assets with checksums.
-- Archive preservation emits optional JSONL progress logs and handles repeated
+- Archive preservation emits JSONL progress logs (truncated per run, with periodic
+  rollups) and handles repeated
   HTTP 429 responses with retry/backoff plus variable-page deferral.
 - Metadata extraction for datasets, documents, ontology seeds, and graph edges.
 - HTML/PDF/XLSX parsing and provenance-bearing chunk generation.

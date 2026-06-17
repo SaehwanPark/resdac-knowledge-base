@@ -3,6 +3,9 @@
 ## Unreleased
 
 ### Added
+- Archive progress logging now emits periodic rollup events, truncates the
+  per-run JSONL log at start, flushes each append, and reads tails efficiently
+  from large logs.
 - `manifests/site_inventory_edges.csv` support for preserving many-to-many
   discovery provenance separately from URL-deduplicated inventory rows.
 - Lightweight JSONL progress logging for inventory/archive runs, plus

@@ -9,6 +9,7 @@ import ipaddress
 import os
 import random
 import socket
+import sys
 import tempfile
 from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
@@ -26,7 +27,7 @@ from .inventory import (
   classify_asset_kind,
   read_inventory_csv,
 )
-from .progress import append_progress_event
+from .progress import append_progress_event, init_progress_log
 
 ArchiveState = Literal["archived", "skipped", "failed"]
 
@@ -67,6 +68,7 @@ class ArchiveConfig(BaseModel):
   max_downloads: int | None = None
   rate_limit_cooldown_seconds: float = 0.0
   progress_log_path: Path | None = None
+  progress_interval: int = 25
   user_agent: str = "Mozilla/5.0 (compatible; cms-kb-archive/0.1)"
 
   @model_validator(mode="after")
@@ -83,6 +85,8 @@ class ArchiveConfig(BaseModel):
       raise ValueError(
         "rate_limit_cooldown_seconds must be greater than or equal to 0"
       )
+    if self.progress_interval < 0:
+      raise ValueError("progress_interval must be greater than or equal to 0")
     return self
 
 
@@ -512,6 +516,102 @@ def _count_map(
   }
 
 
+def _archive_progress_counts(
+  *,
+  rows_processed: int,
+  inventory_rows: int,
+  archived_count: int,
+  skipped_count: int,
+  failed_count: int,
+  download_attempts: int,
+  consecutive_rate_limits: int,
+) -> dict[str, int]:
+  counts = {
+    "rows_processed": rows_processed,
+    "inventory_rows": inventory_rows,
+    "archived": archived_count,
+    "skipped": skipped_count,
+    "failed": failed_count,
+    "download_attempts": download_attempts,
+  }
+  if consecutive_rate_limits:
+    counts["consecutive_rate_limits"] = consecutive_rate_limits
+  return counts
+
+
+def _emit_archive_periodic_progress(
+  config: ArchiveConfig,
+  progress_fn: Callable[[str], None] | None,
+  *,
+  rows_processed: int,
+  inventory_rows: int,
+  archived_count: int,
+  skipped_count: int,
+  failed_count: int,
+  download_attempts: int,
+  consecutive_rate_limits: int,
+  force: bool = False,
+) -> None:
+  if config.progress_interval == 0:
+    return
+  if not force and rows_processed % config.progress_interval != 0:
+    return
+  counts = _archive_progress_counts(
+    rows_processed=rows_processed,
+    inventory_rows=inventory_rows,
+    archived_count=archived_count,
+    skipped_count=skipped_count,
+    failed_count=failed_count,
+    download_attempts=download_attempts,
+    consecutive_rate_limits=consecutive_rate_limits,
+  )
+  if progress_fn is not None:
+    rate_suffix = (
+      f" consecutive_rate_limits={consecutive_rate_limits}"
+      if consecutive_rate_limits
+      else ""
+    )
+    progress_fn(
+      "progress: "
+      f"{rows_processed}/{inventory_rows} rows "
+      f"(archived={archived_count} skipped={skipped_count} failed={failed_count} "
+      f"download_attempts={download_attempts}{rate_suffix})"
+    )
+  append_progress_event(
+    config.progress_log_path,
+    phase="archive",
+    event="progress",
+    counts=counts,
+  )
+
+
+def _advance_archive_row_progress(
+  config: ArchiveConfig,
+  progress_fn: Callable[[str], None] | None,
+  *,
+  rows_processed: int,
+  inventory_rows: int,
+  archived_count: int,
+  skipped_count: int,
+  failed_count: int,
+  download_attempts: int,
+  consecutive_rate_limits: int,
+) -> int:
+  rows_processed += 1
+  _emit_archive_periodic_progress(
+    config,
+    progress_fn,
+    rows_processed=rows_processed,
+    inventory_rows=inventory_rows,
+    archived_count=archived_count,
+    skipped_count=skipped_count,
+    failed_count=failed_count,
+    download_attempts=download_attempts,
+    consecutive_rate_limits=consecutive_rate_limits,
+  )
+  return rows_processed
+
+
 def _archive_order_key(row: InventoryRow) -> tuple[int, str]:
   if row.resource_kind == "variable_page" and "encrypted-ccw-beneficiary-id" in row.url:
     return (0, row.url)
@@ -592,25 +692,43 @@ def run_archive(
   download_url_fn: Callable[[str, float, str], DownloadResult] = download_url,
   now_utc_fn: Callable[[], datetime] = lambda: datetime.now(UTC),
   sleep_fn: Callable[[float], None] = _sleep,
+  progress_fn: Callable[[str], None] | None = None,
 ) -> tuple[ArchiveResult, Path]:
   inventory_rows = read_inventory_fn(config.inventory_path)
+  inventory_row_count = len(inventory_rows)
   manifest_rows: list[ArchiveManifestRow] = []
   archived_count = 0
   skipped_count = 0
   failed_count = 0
+  rows_processed = 0
   previous_manifest = _read_trusted_previous_manifest(config.manifest_output_path)
   previous_manifest_rows = _read_previous_manifest_rows(config.manifest_output_path)
   consecutive_rate_limits = 0
   defer_variable_pages = False
   download_attempts = 0
 
+  init_progress_log(config.progress_log_path)
   append_progress_event(
     config.progress_log_path,
     phase="archive",
     event="start",
     message=f"inventory={config.inventory_path}",
-    counts={"inventory_rows": len(inventory_rows)},
+    counts={"inventory_rows": inventory_row_count},
   )
+
+  def advance_row_progress() -> None:
+    nonlocal rows_processed
+    rows_processed = _advance_archive_row_progress(
+      config,
+      progress_fn,
+      rows_processed=rows_processed,
+      inventory_rows=inventory_row_count,
+      archived_count=archived_count,
+      skipped_count=skipped_count,
+      failed_count=failed_count,
+      download_attempts=download_attempts,
+      consecutive_rate_limits=consecutive_rate_limits,
+    )
 
   for row in sorted(inventory_rows, key=_archive_order_key):
     previous_row = previous_manifest_rows.get(row.url)
@@ -636,6 +754,7 @@ def run_archive(
           "failed": failed_count,
         },
       )
+      advance_row_progress()
       continue
 
     downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
@@ -664,6 +783,7 @@ def run_archive(
           failed_count=failed_count,
         ),
       )
+      advance_row_progress()
       continue
 
     if (
@@ -701,6 +821,7 @@ def run_archive(
           failed_count=failed_count,
         ),
       )
+      advance_row_progress()
       continue
 
     if defer_variable_pages and row.resource_kind == "variable_page":
@@ -730,6 +851,7 @@ def run_archive(
           "consecutive_rate_limits": consecutive_rate_limits,
         },
       )
+      advance_row_progress()
       continue
 
     if config.max_downloads is not None and download_attempts >= config.max_downloads:
@@ -762,6 +884,7 @@ def run_archive(
         )
         | {"download_attempts": download_attempts},
       )
+      advance_row_progress()
       continue
 
     url_error = _archive_url_error(row.url)
@@ -789,6 +912,7 @@ def run_archive(
           "failed": failed_count,
         },
       )
+      advance_row_progress()
       continue
 
     local_path = archive_path_for_row(row, config.raw_root)
@@ -823,6 +947,7 @@ def run_archive(
           "failed": failed_count,
         },
       )
+      advance_row_progress()
       continue
 
     if config.request_delay_seconds:
@@ -879,6 +1004,7 @@ def run_archive(
             "failed": failed_count,
           },
         )
+      advance_row_progress()
       continue
 
     consecutive_rate_limits = 0
@@ -912,6 +1038,25 @@ def run_archive(
         "failed": failed_count,
       },
     )
+    advance_row_progress()
+
+  if (
+    config.progress_interval > 0
+    and rows_processed > 0
+    and rows_processed % config.progress_interval != 0
+  ):
+    _emit_archive_periodic_progress(
+      config,
+      progress_fn,
+      rows_processed=rows_processed,
+      inventory_rows=inventory_row_count,
+      archived_count=archived_count,
+      skipped_count=skipped_count,
+      failed_count=failed_count,
+      download_attempts=download_attempts,
+      consecutive_rate_limits=consecutive_rate_limits,
+      force=True,
+    )
 
   result = ArchiveResult(
     config=config,
@@ -928,12 +1073,21 @@ def run_archive(
     phase="archive",
     event="complete",
     counts={
+      "rows_processed": rows_processed,
+      "inventory_rows": inventory_row_count,
       "archived": archived_count,
       "skipped": skipped_count,
       "failed": failed_count,
+      "download_attempts": download_attempts,
       "manifest_rows": len(manifest_rows),
     },
   )
+  if progress_fn is not None:
+    progress_fn(
+      "complete: "
+      f"archived={archived_count} skipped={skipped_count} failed={failed_count} "
+      f"manifest_rows={len(manifest_rows)}"
+    )
   return result, summary_path
 
 
@@ -980,26 +1134,41 @@ def build_arg_parser() -> argparse.ArgumentParser:
     default=Path("_workspace/03_archive_progress.jsonl"),
   )
   parser.add_argument("--no-progress-log", action="store_true")
+  parser.add_argument(
+    "--progress-interval",
+    type=int,
+    default=25,
+    help="Emit rollup progress after this many processed inventory rows; use 0 to disable.",
+  )
   return parser
+
+
+def _print_progress(message: str) -> None:
+  print(message, file=sys.stderr, flush=True)
 
 
 def main(argv: list[str] | None = None) -> int:
   parser = build_arg_parser()
   args = parser.parse_args(argv)
-  config = ArchiveConfig(
-    inventory_path=args.inventory,
-    raw_root=args.raw_root,
-    manifest_output_path=args.manifest_output,
-    workspace_dir=args.workspace_dir,
-    timeout_seconds=args.timeout_seconds,
-    request_delay_seconds=args.request_delay_seconds,
-    max_consecutive_rate_limits=args.max_consecutive_rate_limits,
-    retry_failed_only=args.retry_failed_only,
-    max_downloads=args.max_downloads,
-    rate_limit_cooldown_seconds=args.rate_limit_cooldown_seconds,
-    progress_log_path=None if args.no_progress_log else args.progress_log,
-  )
-  result, summary_path = run_archive(config)
+  try:
+    config = ArchiveConfig(
+      inventory_path=args.inventory,
+      raw_root=args.raw_root,
+      manifest_output_path=args.manifest_output,
+      workspace_dir=args.workspace_dir,
+      timeout_seconds=args.timeout_seconds,
+      request_delay_seconds=args.request_delay_seconds,
+      max_consecutive_rate_limits=args.max_consecutive_rate_limits,
+      retry_failed_only=args.retry_failed_only,
+      max_downloads=args.max_downloads,
+      rate_limit_cooldown_seconds=args.rate_limit_cooldown_seconds,
+      progress_log_path=None if args.no_progress_log else args.progress_log,
+      progress_interval=args.progress_interval,
+    )
+  except ValueError as exc:
+    print(f"error: {exc}", file=sys.stderr)
+    return 2
+  result, summary_path = run_archive(config, progress_fn=_print_progress)
   print(
     f"wrote {len(result.manifest_rows)} archive rows to "
     f"{config.manifest_output_path} and {summary_path}"

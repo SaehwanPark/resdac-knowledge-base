@@ -65,6 +65,7 @@ The package defines several command-line tools in `pyproject.toml`. Run all comm
 | `cms-kb-search` | `cms_kb.retrieval` | stdout (JSON) | Direct local lexical search CLI |
 | `cms-kb-agent-context` | `cms_kb.agent_api` | stdout (JSON) | Retrieval context CLI with citation mapping |
 | `cms-kb-mcp` | `cms_kb.mcp` | stdio stream | Model Context Protocol (MCP) server |
+| `cms-kb-progress` | `cms_kb.progress` | stdout | Summarize tail of inventory/archive progress JSONL |
 
 ---
 
@@ -128,7 +129,42 @@ uv run cms-kb-qa
 
 ---
 
-## 5. Exposing the MCP Server
+## 5. Monitoring Long Runs
+
+Inventory (`cms-kb`) and archive (`cms-kb-archive`) write JSONL progress logs
+under `_workspace/` by default. Each run **truncates** its log file at start so
+tails reflect the current run only.
+
+| Phase | Default progress log |
+| :--- | :--- |
+| Inventory | `_workspace/02_inventory_progress.jsonl` |
+| Archive | `_workspace/03_archive_progress.jsonl` |
+
+During a run:
+
+```bash
+tail -f _workspace/03_archive_progress.jsonl
+```
+
+For a structured summary of recent events:
+
+```bash
+uv run cms-kb-progress _workspace/03_archive_progress.jsonl --lines 50
+uv run cms-kb-progress _workspace/03_archive_progress.jsonl --lines 20 --json
+```
+
+Archive flags:
+
+- `--progress-interval 25` — emit rollup `progress` events and stderr status lines every N processed inventory rows (`0` disables rollups).
+- `--no-progress-log` — disable JSONL file output entirely.
+
+Per-row events (`download_success`, `rate_limited`, `skip`, etc.) remain in the
+JSONL log for detailed tails. Periodic `progress` events include cumulative
+counts such as `rows_processed`, `archived`, `failed`, and `download_attempts`.
+
+---
+
+## 6. Exposing the MCP Server
 
 The server implements the Model Context Protocol to serve the retrieved outputs. It runs in `stdio` mode and can be integrated into AI editors (e.g., Cursor, Windsurf) or client applications (e.g., Claude Desktop).
 
