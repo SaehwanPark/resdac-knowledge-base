@@ -29,7 +29,7 @@ from .inventory import (
 )
 from .progress import append_progress_event, init_progress_log
 
-ArchiveState = Literal["archived", "skipped", "failed"]
+ArchiveState = Literal["archived", "skipped", "failed", "deferred"]
 
 ARCHIVE_MANIFEST_FIELDNAMES = [
   "url",
@@ -54,6 +54,8 @@ HTML_RESOURCE_KINDS: tuple[ResourceKind, ...] = (
 )
 MAX_DOWNLOAD_BYTES = 512 * 1024 * 1024
 MAX_RETRY_SLEEP_SECONDS = 300.0
+VARIABLE_PAGE_BATCH_WARNING_THRESHOLD = 100
+DEFERRED_AFTER_RATE_LIMITS_ERROR = "deferred after repeated HTTP 429 rate limits"
 
 
 class ArchiveConfig(BaseModel):
@@ -138,6 +140,7 @@ class ArchiveResult(BaseModel):
   archived_count: int = 0
   skipped_count: int = 0
   failed_count: int = 0
+  deferred_count: int = 0
 
 
 def _request_bytes_with_retry(
@@ -324,6 +327,27 @@ def _download_failure(
   )
 
 
+def _manifest_row_for_deferred(
+  row: InventoryRow, downloaded_at_utc: str
+) -> ArchiveManifestRow:
+  return ArchiveManifestRow(
+    url=row.url,
+    resource_kind=row.resource_kind,
+    asset_kind=row.asset_kind,
+    source_url=row.source_url,
+    source_title=row.source_title,
+    content_type=row.content_type,
+    http_status=row.http_status,
+    archive_state="deferred",
+    downloaded_at_utc=downloaded_at_utc,
+    error=DEFERRED_AFTER_RATE_LIMITS_ERROR,
+  )
+
+
+def _is_retriable_archive_state(state: ArchiveState) -> bool:
+  return state in {"failed", "deferred"}
+
+
 def _manifest_row_for_success(
   row: InventoryRow,
   *,
@@ -493,14 +517,17 @@ def _increment_counts(
   archived_count: int,
   skipped_count: int,
   failed_count: int,
-) -> tuple[int, int, int]:
+  deferred_count: int,
+) -> tuple[int, int, int, int]:
   if row.archive_state == "archived":
     archived_count += 1
   elif row.archive_state == "skipped":
     skipped_count += 1
+  elif row.archive_state == "deferred":
+    deferred_count += 1
   else:
     failed_count += 1
-  return archived_count, skipped_count, failed_count
+  return archived_count, skipped_count, failed_count, deferred_count
 
 
 def _count_map(
@@ -508,12 +535,15 @@ def _count_map(
   archived_count: int,
   skipped_count: int,
   failed_count: int,
+  deferred_count: int,
 ) -> dict[str, int]:
-  return {
+  counts = {
     "archived": archived_count,
     "skipped": skipped_count,
     "failed": failed_count,
+    "deferred": deferred_count,
   }
+  return counts
 
 
 def _archive_progress_counts(
@@ -523,8 +553,10 @@ def _archive_progress_counts(
   archived_count: int,
   skipped_count: int,
   failed_count: int,
+  deferred_count: int,
   download_attempts: int,
   consecutive_rate_limits: int,
+  circuit_breaker_open: bool = False,
 ) -> dict[str, int]:
   counts = {
     "rows_processed": rows_processed,
@@ -532,10 +564,13 @@ def _archive_progress_counts(
     "archived": archived_count,
     "skipped": skipped_count,
     "failed": failed_count,
+    "deferred": deferred_count,
     "download_attempts": download_attempts,
   }
   if consecutive_rate_limits:
     counts["consecutive_rate_limits"] = consecutive_rate_limits
+  if circuit_breaker_open:
+    counts["circuit_breaker_open"] = 1
   return counts
 
 
@@ -548,8 +583,10 @@ def _emit_archive_periodic_progress(
   archived_count: int,
   skipped_count: int,
   failed_count: int,
+  deferred_count: int,
   download_attempts: int,
   consecutive_rate_limits: int,
+  circuit_breaker_open: bool = False,
   force: bool = False,
 ) -> None:
   if config.progress_interval == 0:
@@ -562,20 +599,25 @@ def _emit_archive_periodic_progress(
     archived_count=archived_count,
     skipped_count=skipped_count,
     failed_count=failed_count,
+    deferred_count=deferred_count,
     download_attempts=download_attempts,
     consecutive_rate_limits=consecutive_rate_limits,
+    circuit_breaker_open=circuit_breaker_open,
   )
   if progress_fn is not None:
+    deferred_suffix = f" deferred={deferred_count}" if deferred_count else ""
     rate_suffix = (
       f" consecutive_rate_limits={consecutive_rate_limits}"
       if consecutive_rate_limits
       else ""
     )
+    breaker_suffix = " circuit_breaker=open" if circuit_breaker_open else ""
     progress_fn(
       "progress: "
       f"{rows_processed}/{inventory_rows} rows "
-      f"(archived={archived_count} skipped={skipped_count} failed={failed_count} "
-      f"download_attempts={download_attempts}{rate_suffix})"
+      f"(archived={archived_count} skipped={skipped_count} failed={failed_count}"
+      f"{deferred_suffix} download_attempts={download_attempts}{rate_suffix}"
+      f"{breaker_suffix})"
     )
   append_progress_event(
     config.progress_log_path,
@@ -594,8 +636,10 @@ def _advance_archive_row_progress(
   archived_count: int,
   skipped_count: int,
   failed_count: int,
+  deferred_count: int,
   download_attempts: int,
   consecutive_rate_limits: int,
+  circuit_breaker_open: bool = False,
 ) -> int:
   rows_processed += 1
   _emit_archive_periodic_progress(
@@ -606,8 +650,10 @@ def _advance_archive_row_progress(
     archived_count=archived_count,
     skipped_count=skipped_count,
     failed_count=failed_count,
+    deferred_count=deferred_count,
     download_attempts=download_attempts,
     consecutive_rate_limits=consecutive_rate_limits,
+    circuit_breaker_open=circuit_breaker_open,
   )
   return rows_processed
 
@@ -642,21 +688,24 @@ def write_archive_workspace_summary(result: ArchiveResult) -> Path:
     f"- Archived: {result.archived_count}",
     f"- Skipped: {result.skipped_count}",
     f"- Failed: {result.failed_count}",
+    f"- Deferred: {result.deferred_count}",
     "",
   ]
   failures = [row for row in result.manifest_rows if row.archive_state == "failed"]
-  if failures:
+  deferred = [row for row in result.manifest_rows if row.archive_state == "deferred"]
+  if failures or deferred:
     rate_limited_failures = [
       row
       for row in failures
-      if row.http_status == 429 or "429" in row.error or "rate limit" in row.error
+      if row.http_status == 429 or "rate limit" in row.error.lower()
     ]
-    if rate_limited_failures:
+    if rate_limited_failures or deferred:
       lines.extend([
         "## Retry Guidance",
         "",
         (
-          "Rate-limited rows are present. Retry later in bounded batches with "
+          "Rate-limited or deferred variable-page rows are present. Retry later in "
+          "bounded batches with "
           "`uv run cms-kb-archive --retry-failed-only --max-downloads 50 "
           "--request-delay-seconds 5 --rate-limit-cooldown-seconds 300`."
         ),
@@ -669,6 +718,15 @@ def write_archive_workspace_summary(result: ArchiveResult) -> Path:
       lines.append(f"| {row.url} | {row.http_status or ''} | {row.error} |")
     if len(failures) > 25:
       lines.append(f"\n- Additional failures omitted: {len(failures) - 25}")
+  else:
+    lines.append("- None")
+  lines.extend(["", "## Deferred", ""])
+  if deferred:
+    lines.extend(["| url | error |", "| --- | --- |"])
+    for row in deferred[:25]:
+      lines.append(f"| {row.url} | {row.error} |")
+    if len(deferred) > 25:
+      lines.append(f"\n- Additional deferred rows omitted: {len(deferred) - 25}")
   else:
     lines.append("- None")
   lines.extend(["", "## Skipped", ""])
@@ -685,6 +743,105 @@ def write_archive_workspace_summary(result: ArchiveResult) -> Path:
   return summary_path
 
 
+def _bulk_defer_remaining_rows(
+  config: ArchiveConfig,
+  progress_fn: Callable[[str], None] | None,
+  *,
+  sorted_rows: list[InventoryRow],
+  start_index: int,
+  manifest_rows: list[ArchiveManifestRow],
+  archived_count: int,
+  skipped_count: int,
+  failed_count: int,
+  deferred_count: int,
+  rows_processed: int,
+  inventory_row_count: int,
+  download_attempts: int,
+  consecutive_rate_limits: int,
+  now_utc_fn: Callable[[], datetime],
+  previous_manifest_rows: dict[str, ArchiveManifestRow],
+) -> tuple[int, int, int, int, int]:
+  bulk_deferred = 0
+  downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
+  for row in sorted_rows[start_index:]:
+    previous_row = previous_manifest_rows.get(row.url)
+    if not _should_archive(row):
+      manifest_row = _manifest_row_for_skip(row)
+    elif (
+      config.retry_failed_only
+      and previous_row is not None
+      and not _is_retriable_archive_state(previous_row.archive_state)
+    ):
+      if previous_row.archive_state == "archived" and not _previous_archive_row_is_trusted(
+        previous_row
+      ):
+        manifest_row = _download_failure(
+          row,
+          "previous archived row is missing or checksum does not match",
+          downloaded_at_utc,
+        )
+      else:
+        manifest_row = previous_row
+    else:
+      manifest_row = _manifest_row_for_deferred(row, downloaded_at_utc)
+      bulk_deferred += 1
+    manifest_rows.append(manifest_row)
+    archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
+      manifest_row,
+      archived_count=archived_count,
+      skipped_count=skipped_count,
+      failed_count=failed_count,
+      deferred_count=deferred_count,
+    )
+    rows_processed += 1
+    if (
+      config.progress_interval > 0
+      and rows_processed % config.progress_interval == 0
+    ):
+      _emit_archive_periodic_progress(
+        config,
+        progress_fn,
+        rows_processed=rows_processed,
+        inventory_rows=inventory_row_count,
+        archived_count=archived_count,
+        skipped_count=skipped_count,
+        failed_count=failed_count,
+        deferred_count=deferred_count,
+        download_attempts=download_attempts,
+        consecutive_rate_limits=consecutive_rate_limits,
+        circuit_breaker_open=True,
+        force=True,
+      )
+
+  if bulk_deferred:
+    append_progress_event(
+      config.progress_log_path,
+      phase="archive",
+      event="circuit_breaker_bulk",
+      message=(
+        f"deferred {bulk_deferred} remaining variable pages after repeated HTTP 429 "
+        "rate limits"
+      ),
+      counts=_count_map(
+        archived_count=archived_count,
+        skipped_count=skipped_count,
+        failed_count=failed_count,
+        deferred_count=deferred_count,
+      )
+      | {
+        "consecutive_rate_limits": consecutive_rate_limits,
+        "bulk_deferred": bulk_deferred,
+      },
+    )
+  if progress_fn is not None and bulk_deferred:
+    progress_fn(
+      "circuit breaker: "
+      f"deferred {bulk_deferred} remaining variable pages "
+      f"(failed={failed_count} deferred={deferred_count})"
+    )
+  return archived_count, skipped_count, failed_count, deferred_count, rows_processed
+
+
 def run_archive(
   config: ArchiveConfig,
   *,
@@ -696,16 +853,21 @@ def run_archive(
 ) -> tuple[ArchiveResult, Path]:
   inventory_rows = read_inventory_fn(config.inventory_path)
   inventory_row_count = len(inventory_rows)
+  sorted_rows = sorted(inventory_rows, key=_archive_order_key)
   manifest_rows: list[ArchiveManifestRow] = []
   archived_count = 0
   skipped_count = 0
   failed_count = 0
+  deferred_count = 0
   rows_processed = 0
   previous_manifest = _read_trusted_previous_manifest(config.manifest_output_path)
   previous_manifest_rows = _read_previous_manifest_rows(config.manifest_output_path)
   consecutive_rate_limits = 0
-  defer_variable_pages = False
+  bulk_defer_remaining = False
   download_attempts = 0
+  variable_page_count = sum(
+    1 for row in inventory_rows if row.resource_kind == "variable_page"
+  )
 
   init_progress_log(config.progress_log_path)
   append_progress_event(
@@ -716,7 +878,27 @@ def run_archive(
     counts={"inventory_rows": inventory_row_count},
   )
 
-  def advance_row_progress() -> None:
+  if (
+    variable_page_count > VARIABLE_PAGE_BATCH_WARNING_THRESHOLD
+    and not config.retry_failed_only
+    and config.max_downloads is None
+  ):
+    warning_message = (
+      f"warning: inventory contains {variable_page_count} variable_page rows; "
+      "use bounded Phase 1B batches (see docs/pipeline.md) to avoid rate limits"
+    )
+    print(warning_message, file=sys.stderr, flush=True)
+    if progress_fn is not None:
+      progress_fn(warning_message)
+    append_progress_event(
+      config.progress_log_path,
+      phase="archive",
+      event="preflight_warning",
+      message=warning_message,
+      counts={"variable_page_count": variable_page_count},
+    )
+
+  def advance_row_progress(*, circuit_breaker_open: bool = False) -> None:
     nonlocal rows_processed
     rows_processed = _advance_archive_row_progress(
       config,
@@ -726,20 +908,23 @@ def run_archive(
       archived_count=archived_count,
       skipped_count=skipped_count,
       failed_count=failed_count,
+      deferred_count=deferred_count,
       download_attempts=download_attempts,
       consecutive_rate_limits=consecutive_rate_limits,
+      circuit_breaker_open=circuit_breaker_open,
     )
 
-  for row in sorted(inventory_rows, key=_archive_order_key):
+  for row_index, row in enumerate(sorted_rows):
     previous_row = previous_manifest_rows.get(row.url)
     if not _should_archive(row):
       manifest_row = _manifest_row_for_skip(row)
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       append_progress_event(
         config.progress_log_path,
@@ -748,11 +933,12 @@ def run_archive(
         url=row.url,
         resource_kind=row.resource_kind,
         status=row.http_status,
-        counts={
-          "archived": archived_count,
-          "skipped": skipped_count,
-          "failed": failed_count,
-        },
+        counts=_count_map(
+          archived_count=archived_count,
+          skipped_count=skipped_count,
+          failed_count=failed_count,
+          deferred_count=deferred_count,
+        ),
       )
       advance_row_progress()
       continue
@@ -764,11 +950,12 @@ def run_archive(
         "not attempted because retry-failed-only requires a previous manifest row",
       )
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       append_progress_event(
         config.progress_log_path,
@@ -781,6 +968,7 @@ def run_archive(
           archived_count=archived_count,
           skipped_count=skipped_count,
           failed_count=failed_count,
+          deferred_count=deferred_count,
         ),
       )
       advance_row_progress()
@@ -789,7 +977,7 @@ def run_archive(
     if (
       config.retry_failed_only
       and previous_row is not None
-      and previous_row.archive_state != "failed"
+      and not _is_retriable_archive_state(previous_row.archive_state)
     ):
       if previous_row.archive_state == "archived" and not _previous_archive_row_is_trusted(
         previous_row
@@ -802,11 +990,12 @@ def run_archive(
       else:
         manifest_row = previous_row
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       append_progress_event(
         config.progress_log_path,
@@ -819,37 +1008,8 @@ def run_archive(
           archived_count=archived_count,
           skipped_count=skipped_count,
           failed_count=failed_count,
+          deferred_count=deferred_count,
         ),
-      )
-      advance_row_progress()
-      continue
-
-    if defer_variable_pages and row.resource_kind == "variable_page":
-      manifest_row = _download_failure(
-        row,
-        "deferred after repeated HTTP 429 rate limits",
-        downloaded_at_utc,
-      )
-      manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
-        manifest_row,
-        archived_count=archived_count,
-        skipped_count=skipped_count,
-        failed_count=failed_count,
-      )
-      append_progress_event(
-        config.progress_log_path,
-        phase="archive",
-        event="circuit_breaker",
-        message="deferred variable page after repeated HTTP 429 rate limits",
-        url=row.url,
-        resource_kind=row.resource_kind,
-        counts={
-          "archived": archived_count,
-          "skipped": skipped_count,
-          "failed": failed_count,
-          "consecutive_rate_limits": consecutive_rate_limits,
-        },
       )
       advance_row_progress()
       continue
@@ -864,11 +1024,12 @@ def run_archive(
           downloaded_at_utc,
         )
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       append_progress_event(
         config.progress_log_path,
@@ -881,6 +1042,7 @@ def run_archive(
           archived_count=archived_count,
           skipped_count=skipped_count,
           failed_count=failed_count,
+          deferred_count=deferred_count,
         )
         | {"download_attempts": download_attempts},
       )
@@ -891,11 +1053,12 @@ def run_archive(
     if url_error:
       manifest_row = _download_failure(row, url_error, downloaded_at_utc)
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       consecutive_rate_limits = 0
       append_progress_event(
@@ -906,11 +1069,12 @@ def run_archive(
         resource_kind=row.resource_kind,
         status=row.http_status,
         error=url_error,
-        counts={
-          "archived": archived_count,
-          "skipped": skipped_count,
-          "failed": failed_count,
-        },
+        counts=_count_map(
+          archived_count=archived_count,
+          skipped_count=skipped_count,
+          failed_count=failed_count,
+          deferred_count=deferred_count,
+        ),
       )
       advance_row_progress()
       continue
@@ -927,11 +1091,12 @@ def run_archive(
         local_path=local_path,
       )
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       consecutive_rate_limits = 0
       append_progress_event(
@@ -941,11 +1106,12 @@ def run_archive(
         url=row.url,
         resource_kind=row.resource_kind,
         status=row.http_status,
-        counts={
-          "archived": archived_count,
-          "skipped": skipped_count,
-          "failed": failed_count,
-        },
+        counts=_count_map(
+          archived_count=archived_count,
+          skipped_count=skipped_count,
+          failed_count=failed_count,
+          deferred_count=deferred_count,
+        ),
       )
       advance_row_progress()
       continue
@@ -958,11 +1124,12 @@ def run_archive(
     if download.status is None or download.status >= 400 or not download.body:
       manifest_row = _manifest_row_for_failure(row, download, downloaded_at_utc)
       manifest_rows.append(manifest_row)
-      archived_count, skipped_count, failed_count = _increment_counts(
+      archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
         manifest_row,
         archived_count=archived_count,
         skipped_count=skipped_count,
         failed_count=failed_count,
+        deferred_count=deferred_count,
       )
       if download.status == 429:
         consecutive_rate_limits += 1
@@ -974,18 +1141,19 @@ def run_archive(
           resource_kind=row.resource_kind,
           status=download.status,
           error=download.error,
-          counts={
-            "archived": archived_count,
-            "skipped": skipped_count,
-            "failed": failed_count,
-            "consecutive_rate_limits": consecutive_rate_limits,
-          },
+          counts=_count_map(
+            archived_count=archived_count,
+            skipped_count=skipped_count,
+            failed_count=failed_count,
+            deferred_count=deferred_count,
+          )
+          | {"consecutive_rate_limits": consecutive_rate_limits},
         )
         if (
           row.resource_kind == "variable_page"
           and consecutive_rate_limits >= config.max_consecutive_rate_limits
         ):
-          defer_variable_pages = True
+          bulk_defer_remaining = True
         if config.rate_limit_cooldown_seconds:
           sleep_fn(config.rate_limit_cooldown_seconds)
       else:
@@ -998,13 +1166,35 @@ def run_archive(
           resource_kind=row.resource_kind,
           status=download.status,
           error=download.error,
-          counts={
-            "archived": archived_count,
-            "skipped": skipped_count,
-            "failed": failed_count,
-          },
+          counts=_count_map(
+            archived_count=archived_count,
+            skipped_count=skipped_count,
+            failed_count=failed_count,
+            deferred_count=deferred_count,
+          ),
         )
-      advance_row_progress()
+      advance_row_progress(circuit_breaker_open=bulk_defer_remaining)
+      if bulk_defer_remaining:
+        archived_count, skipped_count, failed_count, deferred_count, rows_processed = (
+          _bulk_defer_remaining_rows(
+            config,
+            progress_fn,
+            sorted_rows=sorted_rows,
+            start_index=row_index + 1,
+            manifest_rows=manifest_rows,
+            archived_count=archived_count,
+            skipped_count=skipped_count,
+            failed_count=failed_count,
+            deferred_count=deferred_count,
+            rows_processed=rows_processed,
+            inventory_row_count=inventory_row_count,
+            download_attempts=download_attempts,
+            consecutive_rate_limits=consecutive_rate_limits,
+            now_utc_fn=now_utc_fn,
+            previous_manifest_rows=previous_manifest_rows,
+          )
+        )
+        break
       continue
 
     consecutive_rate_limits = 0
@@ -1019,11 +1209,12 @@ def run_archive(
       local_path=local_path,
     )
     manifest_rows.append(manifest_row)
-    archived_count, skipped_count, failed_count = _increment_counts(
+    archived_count, skipped_count, failed_count, deferred_count = _increment_counts(
       manifest_row,
       archived_count=archived_count,
       skipped_count=skipped_count,
       failed_count=failed_count,
+      deferred_count=deferred_count,
     )
     append_progress_event(
       config.progress_log_path,
@@ -1032,11 +1223,12 @@ def run_archive(
       url=row.url,
       resource_kind=row.resource_kind,
       status=download.status,
-      counts={
-        "archived": archived_count,
-        "skipped": skipped_count,
-        "failed": failed_count,
-      },
+      counts=_count_map(
+        archived_count=archived_count,
+        skipped_count=skipped_count,
+        failed_count=failed_count,
+        deferred_count=deferred_count,
+      ),
     )
     advance_row_progress()
 
@@ -1053,8 +1245,10 @@ def run_archive(
       archived_count=archived_count,
       skipped_count=skipped_count,
       failed_count=failed_count,
+      deferred_count=deferred_count,
       download_attempts=download_attempts,
       consecutive_rate_limits=consecutive_rate_limits,
+      circuit_breaker_open=bulk_defer_remaining,
       force=True,
     )
 
@@ -1065,28 +1259,32 @@ def run_archive(
     archived_count=archived_count,
     skipped_count=skipped_count,
     failed_count=failed_count,
+    deferred_count=deferred_count,
   )
   write_archive_manifest(manifest_rows, config.manifest_output_path)
   summary_path = write_archive_workspace_summary(result)
+  complete_counts = {
+    "rows_processed": rows_processed,
+    "inventory_rows": inventory_row_count,
+    "archived": archived_count,
+    "skipped": skipped_count,
+    "failed": failed_count,
+    "deferred": deferred_count,
+    "download_attempts": download_attempts,
+    "manifest_rows": len(manifest_rows),
+  }
   append_progress_event(
     config.progress_log_path,
     phase="archive",
     event="complete",
-    counts={
-      "rows_processed": rows_processed,
-      "inventory_rows": inventory_row_count,
-      "archived": archived_count,
-      "skipped": skipped_count,
-      "failed": failed_count,
-      "download_attempts": download_attempts,
-      "manifest_rows": len(manifest_rows),
-    },
+    counts=complete_counts,
   )
   if progress_fn is not None:
+    deferred_suffix = f" deferred={deferred_count}" if deferred_count else ""
     progress_fn(
       "complete: "
-      f"archived={archived_count} skipped={skipped_count} failed={failed_count} "
-      f"manifest_rows={len(manifest_rows)}"
+      f"archived={archived_count} skipped={skipped_count} failed={failed_count}"
+      f"{deferred_suffix} manifest_rows={len(manifest_rows)}"
     )
   return result, summary_path
 
@@ -1114,7 +1312,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--retry-failed-only",
     action="store_true",
-    help="Only retry rows that failed in the previous archive manifest.",
+    help="Only retry rows that failed or were deferred in the previous archive manifest.",
   )
   parser.add_argument(
     "--max-downloads",

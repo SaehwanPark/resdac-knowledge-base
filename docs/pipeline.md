@@ -48,10 +48,18 @@ rerun with a larger `--request-delay-seconds` before starting the archive pass.
 
 ## Phase 1: Archive Preservation
 
-Run the archive pass against the inventory output:
+Phase 1 is intentionally split into two passes. ResDAC rate-limits bulk
+variable-detail downloads, so a single full pass often archives datasets,
+documentation, and assets successfully while deferring thousands of variable
+pages after repeated HTTP 429 responses.
+
+### Phase 1A: Initial archive pass
+
+Archive the full inventory once. Expect non-variable rows to archive cleanly;
+variable pages may end up `failed` (real 429s) or `deferred` (circuit breaker).
 
 ```bash
-uv run cms-kb-archive --request-delay-seconds 0.5
+uv run cms-kb-archive --request-delay-seconds 1.0
 ```
 
 Outputs:
@@ -65,10 +73,49 @@ Outputs:
 Use `--progress-interval 25` (default) for periodic rollup events and stderr
 status lines. Use `--no-progress-log` to disable file progress entirely.
 
+Progress counters:
+
+| Counter | Meaning |
+| --- | --- |
+| `archived` | Successfully stored with checksum |
+| `failed` | Real download or validation errors |
+| `deferred` | Skipped after the rate-limit circuit breaker (not a download failure) |
+| `download_attempts` | Actual network requests in this run |
+
+When the inventory contains more than 100 variable-page rows and no
+`--max-downloads` cap is set, the archiver prints a pre-flight warning
+recommending Phase 1B batches.
+
+### Phase 1B: Bounded variable-page recovery
+
+Retry failed and deferred variable pages in small batches. Repeat until
+`_workspace/03_archive_manifest.md` shows `Deferred: 0` or you accept partial
+variable-page coverage.
+
+```bash
+uv run cms-kb-archive \
+  --retry-failed-only \
+  --max-downloads 50 \
+  --request-delay-seconds 5 \
+  --rate-limit-cooldown-seconds 300
+```
+
+Monitor long runs:
+
+```bash
+tail -f _workspace/03_archive_progress.jsonl
+uv run cms-kb-progress _workspace/03_archive_progress.jsonl --lines 50
+```
+
+### Proceeding to Phase 2
+
+Dataset, documentation, and asset rows should be `archived`. Variable-page gaps
+are acceptable for extraction and QA; fill them iteratively with Phase 1B.
+
 Standalone variable-detail pages may be rate-limited by ResDAC during large
 archive refreshes. The archive pass retries `429 Too Many Requests` responses
-politely, respects `Retry-After` when provided, and defers remaining
-variable-page requests after repeated 429s. Failed or deferred variable-page
+politely, respects `Retry-After` when provided, and bulk-defers remaining
+variable-page requests after repeated 429s. Failed and deferred variable-page
 rows are retained in the manifest as explicit coverage gaps; dataset/document
 extraction requires the dataset, documentation, and asset rows to remain
 archived.
