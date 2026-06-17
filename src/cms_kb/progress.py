@@ -78,16 +78,19 @@ def _read_last_text_lines(log_path: Path, line_count: int) -> list[str]:
 
     buffer = b""
     position = file_size
+    lines_found = 0
     while position > 0:
       read_size = min(chunk_size, position)
       position -= read_size
       handle.seek(position)
-      buffer = handle.read(read_size) + buffer
-      if buffer.count(b"\n") > line_count:
+      chunk = handle.read(read_size)
+      buffer = chunk + buffer
+      lines_found += chunk.count(b"\n")
+      if lines_found > line_count:
         break
 
     return [
-      line.decode("utf-8")
+      line.decode("utf-8", errors="replace")
       for line in buffer.splitlines()[-line_count:]
     ]
 
