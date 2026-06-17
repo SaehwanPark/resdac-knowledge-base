@@ -541,9 +541,8 @@ def _count_map(
     "archived": archived_count,
     "skipped": skipped_count,
     "failed": failed_count,
+    "deferred": deferred_count,
   }
-  if deferred_count:
-    counts["deferred"] = deferred_count
   return counts
 
 
@@ -565,10 +564,9 @@ def _archive_progress_counts(
     "archived": archived_count,
     "skipped": skipped_count,
     "failed": failed_count,
+    "deferred": deferred_count,
     "download_attempts": download_attempts,
   }
-  if deferred_count:
-    counts["deferred"] = deferred_count
   if consecutive_rate_limits:
     counts["consecutive_rate_limits"] = consecutive_rate_limits
   if circuit_breaker_open:
@@ -699,7 +697,7 @@ def write_archive_workspace_summary(result: ArchiveResult) -> Path:
     rate_limited_failures = [
       row
       for row in failures
-      if row.http_status == 429 or "429" in row.error or "rate limit" in row.error
+      if row.http_status == 429 or "rate limit" in row.error.lower()
     ]
     if rate_limited_failures or deferred:
       lines.extend([
@@ -763,8 +761,8 @@ def _bulk_defer_remaining_rows(
   now_utc_fn: Callable[[], datetime],
 ) -> tuple[int, int, int, int, int]:
   bulk_deferred = 0
+  downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
   for row in sorted_rows[start_index:]:
-    downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
     if not _should_archive(row):
       manifest_row = _manifest_row_for_skip(row)
     else:
@@ -798,25 +796,26 @@ def _bulk_defer_remaining_rows(
         force=True,
       )
 
-  append_progress_event(
-    config.progress_log_path,
-    phase="archive",
-    event="circuit_breaker_bulk",
-    message=(
-      f"deferred {bulk_deferred} remaining variable pages after repeated HTTP 429 "
-      "rate limits"
-    ),
-    counts=_count_map(
-      archived_count=archived_count,
-      skipped_count=skipped_count,
-      failed_count=failed_count,
-      deferred_count=deferred_count,
+  if bulk_deferred:
+    append_progress_event(
+      config.progress_log_path,
+      phase="archive",
+      event="circuit_breaker_bulk",
+      message=(
+        f"deferred {bulk_deferred} remaining variable pages after repeated HTTP 429 "
+        "rate limits"
+      ),
+      counts=_count_map(
+        archived_count=archived_count,
+        skipped_count=skipped_count,
+        failed_count=failed_count,
+        deferred_count=deferred_count,
+      )
+      | {
+        "consecutive_rate_limits": consecutive_rate_limits,
+        "bulk_deferred": bulk_deferred,
+      },
     )
-    | {
-      "consecutive_rate_limits": consecutive_rate_limits,
-      "bulk_deferred": bulk_deferred,
-    },
-  )
   if progress_fn is not None and bulk_deferred:
     progress_fn(
       "circuit breaker: "
@@ -871,6 +870,7 @@ def run_archive(
       f"warning: inventory contains {variable_page_count} variable_page rows; "
       "use bounded Phase 1B batches (see docs/pipeline.md) to avoid rate limits"
     )
+    print(warning_message, file=sys.stderr, flush=True)
     if progress_fn is not None:
       progress_fn(warning_message)
     append_progress_event(
@@ -898,27 +898,6 @@ def run_archive(
     )
 
   for row_index, row in enumerate(sorted_rows):
-    if bulk_defer_remaining:
-      archived_count, skipped_count, failed_count, deferred_count, rows_processed = (
-        _bulk_defer_remaining_rows(
-          config,
-          progress_fn,
-          sorted_rows=sorted_rows,
-          start_index=row_index,
-          manifest_rows=manifest_rows,
-          archived_count=archived_count,
-          skipped_count=skipped_count,
-          failed_count=failed_count,
-          deferred_count=deferred_count,
-          rows_processed=rows_processed,
-          inventory_row_count=inventory_row_count,
-          download_attempts=download_attempts,
-          consecutive_rate_limits=consecutive_rate_limits,
-          now_utc_fn=now_utc_fn,
-        )
-      )
-      break
-
     previous_row = previous_manifest_rows.get(row.url)
     if not _should_archive(row):
       manifest_row = _manifest_row_for_skip(row)
@@ -1177,7 +1156,7 @@ def run_archive(
             deferred_count=deferred_count,
           ),
         )
-      advance_row_progress()
+      advance_row_progress(circuit_breaker_open=bulk_defer_remaining)
       if bulk_defer_remaining:
         archived_count, skipped_count, failed_count, deferred_count, rows_processed = (
           _bulk_defer_remaining_rows(
@@ -1272,11 +1251,10 @@ def run_archive(
     "archived": archived_count,
     "skipped": skipped_count,
     "failed": failed_count,
+    "deferred": deferred_count,
     "download_attempts": download_attempts,
     "manifest_rows": len(manifest_rows),
   }
-  if deferred_count:
-    complete_counts["deferred"] = deferred_count
   append_progress_event(
     config.progress_log_path,
     phase="archive",
