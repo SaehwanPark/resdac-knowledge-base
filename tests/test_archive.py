@@ -6,6 +6,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
+from pydantic import ValidationError
 
 from cms_kb import archive
 from cms_kb.archive import ArchiveConfig, DownloadResult, archive_path_for_row, run_archive
@@ -455,6 +456,109 @@ def test_run_archive_retry_failed_only_carries_forward_prior_successes(
   assert rows_by_url[failed_row.url].archive_state == "archived"
 
 
+def test_run_archive_retry_failed_only_skips_rows_missing_previous_manifest(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  new_row = InventoryRow(
+    url="https://example.com/files/new-codebook.pdf",
+    title="New codebook",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=200,
+    link_state="live",
+  )
+  write_inventory_csv([new_row], inventory_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(url=url, status=200, body=b"should not download")
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      retry_failed_only=True,
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  assert download_calls == []
+  assert result.skipped_count == 1
+  assert result.failed_count == 0
+  assert result.manifest_rows[0].archive_state == "skipped"
+  assert "retry-failed-only" in result.manifest_rows[0].error
+
+
+def test_run_archive_skips_current_non_live_row_despite_previous_archive(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  dead_row = InventoryRow(
+    url="https://example.com/files/dead-codebook.pdf",
+    title="Dead codebook",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=404,
+    link_state="dead",
+  )
+  write_inventory_csv([dead_row], inventory_path)
+  raw_root = tmp_path / "data" / "raw"
+  archived_path = archive_path_for_row(dead_row, raw_root)
+  archived_path.parent.mkdir(parents=True, exist_ok=True)
+  archived_path.write_bytes(b"%PDF-1.4 stale")
+  manifest_output_path = tmp_path / "manifests" / "archive_manifest.csv"
+  archive.write_archive_manifest([
+    archive.ArchiveManifestRow(
+      url=dead_row.url,
+      resource_kind=dead_row.resource_kind,
+      asset_kind=dead_row.asset_kind,
+      content_type=dead_row.content_type,
+      http_status=200,
+      archive_state="archived",
+      downloaded_at_utc="2026-06-10T12:00:00Z",
+      sha256=hashlib.sha256(b"%PDF-1.4 stale").hexdigest(),
+      local_path=str(archived_path),
+    )
+  ], manifest_output_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(url=url, status=200, body=b"should not download")
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=raw_root,
+      manifest_output_path=manifest_output_path,
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  assert download_calls == []
+  assert result.archived_count == 0
+  assert result.skipped_count == 1
+  assert result.manifest_rows[0].archive_state == "skipped"
+  assert result.manifest_rows[0].http_status == 404
+
+
 def test_run_archive_max_downloads_limits_fresh_network_attempts(
   tmp_path: Path,
 ) -> None:
@@ -541,6 +645,69 @@ def test_run_archive_sleeps_after_rate_limit_cooldown(
   assert sleep_calls == [300.0]
   summary_text = summary_path.read_text(encoding="utf-8")
   assert "--retry-failed-only --max-downloads 50" in summary_text
+
+
+def test_archive_config_rejects_negative_retry_controls() -> None:
+  with pytest.raises(ValueError, match="max_downloads"):
+    ArchiveConfig(max_downloads=-1)
+
+  with pytest.raises(ValueError, match="rate_limit_cooldown_seconds"):
+    ArchiveConfig(rate_limit_cooldown_seconds=-1)
+
+
+def test_run_archive_rejects_invalid_previous_manifest_row(tmp_path: Path) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  row = InventoryRow(
+    url="https://example.com/files/codebook.pdf",
+    title="Codebook",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=200,
+    link_state="live",
+  )
+  write_inventory_csv([row], inventory_path)
+  manifest_output_path = tmp_path / "manifests" / "archive_manifest.csv"
+  manifest_output_path.parent.mkdir(parents=True, exist_ok=True)
+  manifest_output_path.write_text(
+    ",".join(archive.ARCHIVE_MANIFEST_FIELDNAMES)
+    + "\n"
+    + ",".join([
+      row.url,
+      "bad_kind",
+      "pdf",
+      "",
+      "",
+      "application/pdf",
+      "200",
+      "archived",
+      "2026-06-10T12:00:00Z",
+      "not-a-real-sha",
+      "data/raw/assets/pdf/example.pdf",
+      "",
+    ])
+    + "\n",
+    encoding="utf-8",
+  )
+
+  with pytest.raises(ValidationError, match="resource_kind"):
+    run_archive(
+      ArchiveConfig(
+        inventory_path=inventory_path,
+        raw_root=tmp_path / "data" / "raw",
+        manifest_output_path=manifest_output_path,
+        workspace_dir=tmp_path / "_workspace",
+        request_delay_seconds=0.0,
+        retry_failed_only=True,
+      ),
+      download_url_fn=lambda url, timeout_seconds, user_agent: DownloadResult(
+        url=url,
+        status=200,
+        body=b"should not download",
+      ),
+      now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+      sleep_fn=lambda seconds: None,
+    )
 
 
 def test_archive_main_returns_nonzero_when_failures_are_present(
