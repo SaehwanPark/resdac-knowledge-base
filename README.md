@@ -75,6 +75,12 @@ Run a bounded inventory smoke test:
 uv run cms-kb --max-listing-pages 1 --max-follow-pages 10 --max-assets 10 --request-delay-seconds 0.5
 ```
 
+Retry a rate-limited archive pass in small batches:
+
+```bash
+uv run cms-kb-archive --retry-failed-only --max-downloads 50 --request-delay-seconds 5 --rate-limit-cooldown-seconds 300
+```
+
 Run local retrieval after metadata and parsed chunks exist:
 
 ```bash

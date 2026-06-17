@@ -67,3 +67,11 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Cause: data-documentation pages link thousands of variable-detail URLs, and bulk fetching those pages triggers ResDAC rate limiting.
 - Resolution: record variable-page URLs during inventory without fetching them, let archive own the actual download/status manifest, and fail fast on 429 instead of sleeping indefinitely.
 - Prevention: prioritize required variable pages for smoke validation, inspect `_workspace/03_archive_manifest.md` for rate-limited variable rows, and rerun archive later for missing variable-page coverage instead of blocking extraction/QA.
+
+### Phase 1 archive recovery should be bounded and resumable
+
+- Context: rerunning Phase 1 after ResDAC returned thousands of HTTP 429/deferred variable-page failures.
+- Symptom: a plain archive rerun could revisit too many URLs and quickly trigger rate limiting again.
+- Cause: successful raw files and failed rows share the same full archive manifest, so the operator needs retry controls that preserve prior provenance while limiting new network attempts.
+- Resolution: use `uv run cms-kb-archive --retry-failed-only --max-downloads 50 --request-delay-seconds 5 --rate-limit-cooldown-seconds 300` to retry failed rows in batches.
+- Prevention: keep the previous manifest and `data/raw/` files in place, use bounded retry-only batches after 429s, and inspect `_workspace/03_archive_manifest.md` between batches.
