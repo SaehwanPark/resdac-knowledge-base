@@ -38,7 +38,10 @@ Outputs:
 - `manifests/site_inventory.csv`
 - `manifests/site_inventory_edges.csv`
 - `_workspace/02_source_inventory.md`
-- `_workspace/02_inventory_progress.jsonl` when progress logging is enabled
+- `_workspace/02_inventory_progress.jsonl` when progress logging is enabled (truncated per run)
+
+Use `--no-progress-log` to disable file progress. Use `--progress-interval 0` to
+disable periodic rollup lines while keeping per-row JSONL events.
 
 If `_workspace/02_source_inventory.md` reports transient unresolved links,
 rerun with a larger `--request-delay-seconds` before starting the archive pass.
@@ -57,7 +60,10 @@ Outputs:
 - `data/raw/assets/...`
 - `manifests/archive_manifest.csv`
 - `_workspace/03_archive_manifest.md`
-- `_workspace/03_archive_progress.jsonl` when progress logging is enabled
+- `_workspace/03_archive_progress.jsonl` when progress logging is enabled (truncated per run)
+
+Use `--progress-interval 25` (default) for periodic rollup events and stderr
+status lines. Use `--no-progress-log` to disable file progress entirely.
 
 Standalone variable-detail pages may be rate-limited by ResDAC during large
 archive refreshes. The archive pass retries `429 Too Many Requests` responses

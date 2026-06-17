@@ -95,6 +95,10 @@ uv run cms-kb-agent-context --query BENE_ID --limit 5 --json
 
 For the full phase-by-phase command list, see [pipeline.md](docs/pipeline.md).
 
+During long inventory or archive runs, tail `_workspace/*_progress.jsonl` or run
+`uv run cms-kb-progress` for a structured summary. See
+[developer-guide.md](docs/developer-guide.md#5-monitoring-long-runs).
+
 ## Documentation Map
 
 - [user-manual.md](docs/user-manual.md): a comprehensive user manual written for health policy researchers, scientists, and analysts.

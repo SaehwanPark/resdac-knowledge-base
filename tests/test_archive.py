@@ -717,7 +717,9 @@ def test_archive_main_returns_nonzero_when_failures_are_present(
   manifest_output_path = tmp_path / "manifests" / "archive_manifest.csv"
   workspace_dir = tmp_path / "_workspace"
 
-  def fake_run_archive(config: ArchiveConfig) -> tuple[archive.ArchiveResult, Path]:
+  def fake_run_archive(
+    config: ArchiveConfig, **kwargs: object
+  ) -> tuple[archive.ArchiveResult, Path]:
     return (
       archive.ArchiveResult(
         config=config,
@@ -748,3 +750,77 @@ def test_archive_main_returns_nonzero_when_failures_are_present(
   )
 
   assert exit_code == 1
+
+
+def test_run_archive_truncates_progress_log_on_each_run(tmp_path: Path) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  dead_row = InventoryRow(
+    url="https://example.com/dead.pdf",
+    title="Dead",
+    resource_kind="asset",
+    link_state="dead",
+  )
+  write_inventory_csv([dead_row], inventory_path)
+  progress_log_path = tmp_path / "_workspace" / "archive_progress.jsonl"
+  config = ArchiveConfig(
+    inventory_path=inventory_path,
+    raw_root=tmp_path / "data" / "raw",
+    manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+    workspace_dir=tmp_path / "_workspace",
+    request_delay_seconds=0.0,
+    progress_log_path=progress_log_path,
+    progress_interval=0,
+  )
+
+  run_archive(
+    config,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+  first_run_lines = progress_log_path.read_text(encoding="utf-8").splitlines()
+  run_archive(
+    config,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 13, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+  second_run_lines = progress_log_path.read_text(encoding="utf-8").splitlines()
+
+  assert sum(1 for line in first_run_lines if '"event":"start"' in line) == 1
+  assert sum(1 for line in second_run_lines if '"event":"start"' in line) == 1
+  assert len(second_run_lines) == len(first_run_lines)
+
+
+def test_run_archive_emits_periodic_progress_events(tmp_path: Path) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  rows = [
+    InventoryRow(
+      url=f"https://example.com/dead-{idx}.pdf",
+      title=f"Dead {idx}",
+      resource_kind="asset",
+      link_state="dead",
+    )
+    for idx in range(4)
+  ]
+  write_inventory_csv(rows, inventory_path)
+  progress_log_path = tmp_path / "_workspace" / "archive_progress.jsonl"
+  progress_messages: list[str] = []
+
+  run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      progress_log_path=progress_log_path,
+      progress_interval=2,
+    ),
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+    progress_fn=progress_messages.append,
+  )
+
+  log_text = progress_log_path.read_text(encoding="utf-8")
+  assert log_text.count('"event":"progress"') == 2
+  assert any("2/4 rows" in message for message in progress_messages)
+  assert any("4/4 rows" in message for message in progress_messages)

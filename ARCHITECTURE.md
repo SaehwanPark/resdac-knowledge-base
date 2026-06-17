@@ -59,7 +59,8 @@ Phase 1 archive preservation is implemented in `src/cms_kb/archive.py`. The `cms
 - `manifests/archive_manifest.csv`: archive provenance rows with URL, status, checksum, timestamp, and local path.
 - `_workspace/03_archive_manifest.md`: archive handoff summary for downstream phases.
 
-The archive CLI emits optional JSONL progress events for long runs and handles
+The archive CLI emits JSONL progress events for long runs (truncated per run,
+with periodic rollups and per-row events), and handles
 ResDAC HTTP 429 responses with polite retry/backoff and variable-page deferral
 after repeated rate limits.
 

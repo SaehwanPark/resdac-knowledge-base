@@ -75,3 +75,11 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Cause: successful raw files and failed rows share the same full archive manifest, so the operator needs retry controls that preserve prior provenance while limiting new network attempts.
 - Resolution: use `uv run cms-kb-archive --retry-failed-only --max-downloads 50 --request-delay-seconds 5 --rate-limit-cooldown-seconds 300` to retry failed rows in batches.
 - Prevention: keep the previous manifest and `data/raw/` files in place, use bounded retry-only batches after 429s, and inspect `_workspace/03_archive_manifest.md` between batches.
+
+### Tail archive progress logs during long reruns
+
+- Context: multi-hour archive reruns after ResDAC rate limiting.
+- Symptom: the terminal shows little output until the run finishes, making it hard to tell whether the job is progressing or stuck in cooldown.
+- Cause: archive progress is written to `_workspace/03_archive_progress.jsonl`, and the manifest summary is only refreshed at the end of the run.
+- Resolution: tail the JSONL log (`tail -f _workspace/03_archive_progress.jsonl`) or summarize recent events with `uv run cms-kb-progress _workspace/03_archive_progress.jsonl --lines 20`.
+- Prevention: leave progress logging enabled for long archive batches; use periodic rollup lines (`--progress-interval 25`) to scan status without reading every per-row event.

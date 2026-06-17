@@ -29,6 +29,13 @@ def now_utc_timestamp() -> str:
   return datetime.now(UTC).isoformat().replace("+00:00", "Z")
 
 
+def init_progress_log(log_path: Path | None) -> None:
+  if log_path is None:
+    return
+  log_path.parent.mkdir(parents=True, exist_ok=True)
+  log_path.write_text("", encoding="utf-8")
+
+
 def append_progress_event(
   log_path: Path | None,
   *,
@@ -58,6 +65,31 @@ def append_progress_event(
   )
   with log_path.open("a", encoding="utf-8") as handle:
     handle.write(progress_event.model_dump_json(exclude_none=True) + "\n")
+    handle.flush()
+
+
+def _read_last_text_lines(log_path: Path, line_count: int) -> list[str]:
+  chunk_size = 8192
+  with log_path.open("rb") as handle:
+    handle.seek(0, 2)
+    file_size = handle.tell()
+    if file_size == 0:
+      return []
+
+    buffer = b""
+    position = file_size
+    while position > 0:
+      read_size = min(chunk_size, position)
+      position -= read_size
+      handle.seek(position)
+      buffer = handle.read(read_size) + buffer
+      if buffer.count(b"\n") > line_count:
+        break
+
+    return [
+      line.decode("utf-8")
+      for line in buffer.splitlines()[-line_count:]
+    ]
 
 
 def read_progress_tail(log_path: Path, line_count: int) -> list[ProgressEvent]:
@@ -65,7 +97,7 @@ def read_progress_tail(log_path: Path, line_count: int) -> list[ProgressEvent]:
     raise ValueError("line_count must be at least 1")
   if not log_path.is_file():
     raise FileNotFoundError(f"progress log does not exist: {log_path}")
-  lines = log_path.read_text(encoding="utf-8").splitlines()[-line_count:]
+  lines = _read_last_text_lines(log_path, line_count)
   events: list[ProgressEvent] = []
   for line_number, line in enumerate(lines, start=1):
     if not line.strip():
@@ -136,6 +168,7 @@ __all__ = [
   "ProgressEvent",
   "append_progress_event",
   "build_arg_parser",
+  "init_progress_log",
   "main",
   "read_progress_tail",
   "summarize_progress_events",
