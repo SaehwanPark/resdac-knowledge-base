@@ -367,6 +367,182 @@ def test_run_archive_reuses_existing_raw_file_without_download(
   assert archived_row.sha256 == existing_sha
 
 
+def test_run_archive_retry_failed_only_carries_forward_prior_successes(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  archived_row = InventoryRow(
+    url="https://example.com/files/already-archived.pdf",
+    title="Already archived",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=200,
+    link_state="live",
+  )
+  failed_row = InventoryRow(
+    url="https://example.com/files/retry-me.pdf",
+    title="Retry me",
+    resource_kind="asset",
+    asset_kind="pdf",
+    content_type="application/pdf",
+    http_status=200,
+    link_state="live",
+  )
+  write_inventory_csv([archived_row, failed_row], inventory_path)
+
+  raw_root = tmp_path / "data" / "raw"
+  existing_path = archive_path_for_row(archived_row, raw_root)
+  existing_path.parent.mkdir(parents=True, exist_ok=True)
+  existing_path.write_bytes(b"%PDF-1.4 archived")
+  existing_sha = hashlib.sha256(b"%PDF-1.4 archived").hexdigest()
+  manifest_output_path = tmp_path / "manifests" / "archive_manifest.csv"
+  archive.write_archive_manifest([
+    archive.ArchiveManifestRow(
+      url=archived_row.url,
+      resource_kind=archived_row.resource_kind,
+      asset_kind=archived_row.asset_kind,
+      content_type=archived_row.content_type,
+      http_status=archived_row.http_status,
+      archive_state="archived",
+      downloaded_at_utc="2026-06-10T12:00:00Z",
+      sha256=existing_sha,
+      local_path=str(existing_path),
+    ),
+    archive.ArchiveManifestRow(
+      url=failed_row.url,
+      resource_kind=failed_row.resource_kind,
+      asset_kind=failed_row.asset_kind,
+      content_type=failed_row.content_type,
+      http_status=429,
+      archive_state="failed",
+      downloaded_at_utc="2026-06-10T12:01:00Z",
+      error="HTTP Error 429: Too Many Requests",
+    ),
+  ], manifest_output_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(
+      url=url,
+      status=200,
+      content_type="application/pdf",
+      body=b"%PDF-1.4 retried",
+    )
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=raw_root,
+      manifest_output_path=manifest_output_path,
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      retry_failed_only=True,
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  assert download_calls == [failed_row.url]
+  assert result.archived_count == 2
+  assert result.failed_count == 0
+  rows_by_url = {row.url: row for row in result.manifest_rows}
+  assert rows_by_url[archived_row.url].local_path == str(existing_path)
+  assert rows_by_url[failed_row.url].archive_state == "archived"
+
+
+def test_run_archive_max_downloads_limits_fresh_network_attempts(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  rows = [
+    InventoryRow(
+      url=f"https://example.com/files/codebook-{idx}.pdf",
+      title=f"Codebook {idx}",
+      resource_kind="asset",
+      asset_kind="pdf",
+      content_type="application/pdf",
+      http_status=200,
+      link_state="live",
+    )
+    for idx in range(2)
+  ]
+  write_inventory_csv(rows, inventory_path)
+  download_calls: list[str] = []
+
+  def fake_download(
+    url: str, timeout_seconds: float, user_agent: str
+  ) -> DownloadResult:
+    download_calls.append(url)
+    return DownloadResult(
+      url=url,
+      status=200,
+      content_type="application/pdf",
+      body=b"%PDF-1.4 downloaded",
+    )
+
+  result, _ = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      max_downloads=1,
+    ),
+    download_url_fn=fake_download,
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=lambda seconds: None,
+  )
+
+  assert download_calls == [rows[0].url]
+  assert result.archived_count == 1
+  assert result.failed_count == 1
+  assert result.manifest_rows[1].error == "not attempted because max downloads reached"
+
+
+def test_run_archive_sleeps_after_rate_limit_cooldown(
+  tmp_path: Path,
+) -> None:
+  inventory_path = tmp_path / "site_inventory.csv"
+  row = InventoryRow(
+    url="https://resdac.org/cms-data/variables/rate-limited",
+    title="Rate limited",
+    resource_kind="variable_page",
+    link_state="unknown",
+  )
+  write_inventory_csv([row], inventory_path)
+  sleep_calls: list[float] = []
+
+  result, summary_path = run_archive(
+    ArchiveConfig(
+      inventory_path=inventory_path,
+      raw_root=tmp_path / "data" / "raw",
+      manifest_output_path=tmp_path / "manifests" / "archive_manifest.csv",
+      workspace_dir=tmp_path / "_workspace",
+      request_delay_seconds=0.0,
+      rate_limit_cooldown_seconds=300.0,
+    ),
+    download_url_fn=lambda url, timeout_seconds, user_agent: DownloadResult(
+      url=url,
+      status=429,
+      content_type="text/html",
+      error="HTTP Error 429: Too Many Requests",
+    ),
+    now_utc_fn=lambda: datetime(2026, 6, 11, 12, 0, tzinfo=UTC),
+    sleep_fn=sleep_calls.append,
+  )
+
+  assert result.failed_count == 1
+  assert sleep_calls == [300.0]
+  summary_text = summary_path.read_text(encoding="utf-8")
+  assert "--retry-failed-only --max-downloads 50" in summary_text
+
+
 def test_archive_main_returns_nonzero_when_failures_are_present(
   monkeypatch: pytest.MonkeyPatch, tmp_path: Path
 ) -> None:

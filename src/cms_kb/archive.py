@@ -30,6 +30,7 @@ from .progress import append_progress_event
 
 ArchiveState = Literal["archived", "skipped", "failed"]
 
+ARCHIVE_STATES: tuple[ArchiveState, ...] = ("archived", "skipped", "failed")
 ARCHIVE_MANIFEST_FIELDNAMES = [
   "url",
   "resource_kind",
@@ -51,6 +52,14 @@ HTML_RESOURCE_KINDS: tuple[ResourceKind, ...] = (
   "documentation_page",
   "variable_page",
 )
+RESOURCE_KINDS: tuple[ResourceKind, ...] = (
+  "listing_page",
+  "dataset_page",
+  "documentation_page",
+  "variable_page",
+  "asset",
+  "other",
+)
 MAX_DOWNLOAD_BYTES = 512 * 1024 * 1024
 MAX_RETRY_SLEEP_SECONDS = 300.0
 
@@ -63,6 +72,9 @@ class ArchiveConfig(BaseModel):
   timeout_seconds: float = 20.0
   request_delay_seconds: float = 0.0
   max_consecutive_rate_limits: int = 5
+  retry_failed_only: bool = False
+  max_downloads: int | None = None
+  rate_limit_cooldown_seconds: float = 0.0
   progress_log_path: Path | None = None
   user_agent: str = "Mozilla/5.0 (compatible; cms-kb-archive/0.1)"
 
@@ -369,6 +381,39 @@ def _read_trusted_previous_manifest(
   return trusted
 
 
+def _read_previous_manifest_rows(
+  manifest_path: Path,
+) -> dict[str, ArchiveManifestRow]:
+  if not manifest_path.is_file():
+    return {}
+
+  rows: dict[str, ArchiveManifestRow] = {}
+  with manifest_path.open(newline="", encoding="utf-8") as handle:
+    reader = csv.DictReader(handle)
+    for row in reader:
+      url = (row.get("url") or "").strip()
+      if not url:
+        continue
+      http_status = row.get("http_status")
+      resource_kind = row.get("resource_kind") or ""
+      archive_state = row.get("archive_state") or ""
+      rows[url] = ArchiveManifestRow(
+        url=url,
+        resource_kind=resource_kind if resource_kind in RESOURCE_KINDS else "asset",
+        asset_kind=row.get("asset_kind") or "",
+        source_url=row.get("source_url") or "",
+        source_title=row.get("source_title") or "",
+        content_type=row.get("content_type") or "",
+        http_status=int(http_status) if http_status else None,
+        archive_state=archive_state if archive_state in ARCHIVE_STATES else "failed",
+        downloaded_at_utc=row.get("downloaded_at_utc") or "",
+        sha256=row.get("sha256") or "",
+        local_path=row.get("local_path") or "",
+        error=row.get("error") or "",
+      )
+  return rows
+
+
 def _existing_file_is_trusted(
   row: InventoryRow,
   local_path: Path,
@@ -396,6 +441,25 @@ def _manifest_row_for_existing_file(
     sha256=hashlib.sha256(body).hexdigest(),
     local_path=local_path,
   )
+
+
+def _previous_archive_row_is_trusted(row: ArchiveManifestRow) -> bool:
+  if row.archive_state != "archived" or not row.local_path or not row.sha256:
+    return False
+  local_path = Path(row.local_path)
+  if not local_path.is_file() or local_path.stat().st_size <= 0:
+    return False
+  return hashlib.sha256(local_path.read_bytes()).hexdigest() == row.sha256
+
+
+def _archive_counts(
+  rows: list[ArchiveManifestRow],
+) -> dict[str, int]:
+  return {
+    "archived": sum(row.archive_state == "archived" for row in rows),
+    "skipped": sum(row.archive_state == "skipped" for row in rows),
+    "failed": sum(row.archive_state == "failed" for row in rows),
+  }
 
 
 def _archive_order_key(row: InventoryRow) -> tuple[int, str]:
@@ -429,10 +493,26 @@ def write_archive_workspace_summary(result: ArchiveResult) -> Path:
     f"- Skipped: {result.skipped_count}",
     f"- Failed: {result.failed_count}",
     "",
-    "## Failures",
-    "",
   ]
   failures = [row for row in result.manifest_rows if row.archive_state == "failed"]
+  if failures:
+    rate_limited_failures = [
+      row
+      for row in failures
+      if row.http_status == 429 or "429" in row.error or "rate limit" in row.error
+    ]
+    if rate_limited_failures:
+      lines.extend([
+        "## Retry Guidance",
+        "",
+        (
+          "Rate-limited rows are present. Retry later in bounded batches with "
+          "`uv run cms-kb-archive --retry-failed-only --max-downloads 50 "
+          "--request-delay-seconds 5 --rate-limit-cooldown-seconds 300`."
+        ),
+        "",
+      ])
+  lines.extend(["## Failures", ""])
   if failures:
     lines.extend(["| url | status | error |", "| --- | ---: | --- |"])
     for row in failures[:25]:
@@ -469,8 +549,10 @@ def run_archive(
   skipped_count = 0
   failed_count = 0
   previous_manifest = _read_trusted_previous_manifest(config.manifest_output_path)
+  previous_manifest_rows = _read_previous_manifest_rows(config.manifest_output_path)
   consecutive_rate_limits = 0
   defer_variable_pages = False
+  download_attempts = 0
 
   append_progress_event(
     config.progress_log_path,
@@ -481,9 +563,13 @@ def run_archive(
   )
 
   for row in sorted(inventory_rows, key=_archive_order_key):
+    previous_row = previous_manifest_rows.get(row.url)
     if not _should_archive(row):
-      manifest_rows.append(_manifest_row_for_skip(row))
-      skipped_count += 1
+      manifest_rows.append(previous_row or _manifest_row_for_skip(row))
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
       append_progress_event(
         config.progress_log_path,
         phase="archive",
@@ -500,6 +586,61 @@ def run_archive(
       continue
 
     downloaded_at_utc = now_utc_fn().isoformat().replace("+00:00", "Z")
+    if config.retry_failed_only and previous_row is None:
+      manifest_rows.append(
+        _download_failure(
+          row,
+          "not attempted because retry-failed-only requires a previous failed row",
+          downloaded_at_utc,
+        )
+      )
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="retry_skip",
+        message="no previous manifest row in retry-failed-only mode",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        counts=counts,
+      )
+      continue
+
+    if (
+      config.retry_failed_only
+      and previous_row is not None
+      and previous_row.archive_state != "failed"
+    ):
+      if previous_row.archive_state == "archived" and not _previous_archive_row_is_trusted(
+        previous_row
+      ):
+        manifest_rows.append(
+          _download_failure(
+            row,
+            "previous archived row is missing or checksum does not match",
+            downloaded_at_utc,
+          )
+        )
+      else:
+        manifest_rows.append(previous_row)
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="carry_forward",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        status=previous_row.http_status,
+        counts=counts,
+      )
+      continue
+
     if defer_variable_pages and row.resource_kind == "variable_page":
       manifest_rows.append(
         _download_failure(
@@ -508,7 +649,10 @@ def run_archive(
           downloaded_at_utc,
         )
       )
-      failed_count += 1
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
       append_progress_event(
         config.progress_log_path,
         phase="archive",
@@ -525,10 +669,39 @@ def run_archive(
       )
       continue
 
+    if config.max_downloads is not None and download_attempts >= config.max_downloads:
+      if previous_row is not None:
+        manifest_rows.append(previous_row)
+      else:
+        manifest_rows.append(
+          _download_failure(
+            row,
+            "not attempted because max downloads reached",
+            downloaded_at_utc,
+          )
+        )
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
+      append_progress_event(
+        config.progress_log_path,
+        phase="archive",
+        event="download_limit",
+        message="not attempted because max downloads reached",
+        url=row.url,
+        resource_kind=row.resource_kind,
+        counts=counts | {"download_attempts": download_attempts},
+      )
+      continue
+
     url_error = _archive_url_error(row.url)
     if url_error:
       manifest_rows.append(_download_failure(row, url_error, downloaded_at_utc))
-      failed_count += 1
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
       consecutive_rate_limits = 0
       append_progress_event(
         config.progress_log_path,
@@ -578,13 +751,17 @@ def run_archive(
 
     if config.request_delay_seconds:
       sleep_fn(config.request_delay_seconds)
+    download_attempts += 1
     download = download_url_fn(row.url, config.timeout_seconds, config.user_agent)
 
     if download.status is None or download.status >= 400 or not download.body:
       manifest_rows.append(
         _manifest_row_for_failure(row, download, downloaded_at_utc)
       )
-      failed_count += 1
+      counts = _archive_counts(manifest_rows)
+      archived_count = counts["archived"]
+      skipped_count = counts["skipped"]
+      failed_count = counts["failed"]
       if download.status == 429:
         consecutive_rate_limits += 1
         append_progress_event(
@@ -607,6 +784,8 @@ def run_archive(
           and consecutive_rate_limits >= config.max_consecutive_rate_limits
         ):
           defer_variable_pages = True
+        if config.rate_limit_cooldown_seconds:
+          sleep_fn(config.rate_limit_cooldown_seconds)
       else:
         consecutive_rate_limits = 0
         append_progress_event(
@@ -638,7 +817,10 @@ def run_archive(
         local_path=local_path,
       )
     )
-    archived_count += 1
+    counts = _archive_counts(manifest_rows)
+    archived_count = counts["archived"]
+    skipped_count = counts["skipped"]
+    failed_count = counts["failed"]
     append_progress_event(
       config.progress_log_path,
       phase="archive",
@@ -698,6 +880,23 @@ def build_arg_parser() -> argparse.ArgumentParser:
     help="Defer remaining variable pages after this many consecutive HTTP 429 responses.",
   )
   parser.add_argument(
+    "--retry-failed-only",
+    action="store_true",
+    help="Only retry rows that failed in the previous archive manifest.",
+  )
+  parser.add_argument(
+    "--max-downloads",
+    type=int,
+    default=None,
+    help="Maximum fresh network download attempts for this archive run.",
+  )
+  parser.add_argument(
+    "--rate-limit-cooldown-seconds",
+    type=float,
+    default=0.0,
+    help="Additional cooldown after a final HTTP 429 response.",
+  )
+  parser.add_argument(
     "--progress-log",
     type=Path,
     default=Path("_workspace/03_archive_progress.jsonl"),
@@ -717,6 +916,9 @@ def main(argv: list[str] | None = None) -> int:
     timeout_seconds=args.timeout_seconds,
     request_delay_seconds=args.request_delay_seconds,
     max_consecutive_rate_limits=args.max_consecutive_rate_limits,
+    retry_failed_only=args.retry_failed_only,
+    max_downloads=args.max_downloads,
+    rate_limit_cooldown_seconds=args.rate_limit_cooldown_seconds,
     progress_log_path=None if args.no_progress_log else args.progress_log,
   )
   result, summary_path = run_archive(config)
