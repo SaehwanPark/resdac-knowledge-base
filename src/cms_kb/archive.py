@@ -100,6 +100,24 @@ class ArchiveManifestRow(BaseModel):
   local_path: str = ""
   error: str = ""
 
+  @model_validator(mode="after")
+  def validate_archived_provenance(self) -> ArchiveManifestRow:
+    if self.archive_state != "archived":
+      return self
+    if not self.downloaded_at_utc:
+      raise ValueError("archived rows require downloaded_at_utc")
+    try:
+      datetime.fromisoformat(self.downloaded_at_utc.replace("Z", "+00:00"))
+    except ValueError as exc:
+      raise ValueError("archived rows require a valid downloaded_at_utc") from exc
+    if not self.local_path:
+      raise ValueError("archived rows require local_path")
+    if len(self.sha256) != 64 or any(
+      character not in "0123456789abcdefABCDEF" for character in self.sha256
+    ):
+      raise ValueError("archived rows require a 64-character hex sha256")
+    return self
+
 
 class DownloadResult(BaseModel):
   url: str
