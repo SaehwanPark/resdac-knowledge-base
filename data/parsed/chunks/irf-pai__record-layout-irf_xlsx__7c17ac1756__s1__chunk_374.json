@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_374",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "GG0170D1_STTG_STNDG_STRT_CD GG0170D1 Admission Performance Sit to Stand Code - The data in this column indicates the patient's ability to safely come to a standing position from sitting in a chair or on the side of the bed at the time of admission. CHAR 2 The data in this column indicates the patient's ability to safely come to a standing position from sitting in a chair or on the side of the bed at the time of admission. 01 = Dependent\n02 = Substantial/maximal assistance\n03 = Partial/moderate",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

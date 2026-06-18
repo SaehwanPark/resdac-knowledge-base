@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__chunk_3",
+  "source_document": "data/raw/html/dataset_page/e4e7d441e332e7ddf0868ff151091dc1906c9165.html",
+  "page": null,
+  "text": "by release, and each release contains two files (a hospital and a patient file). Researchers should request files by release, as opposed to individual years or months.\nThere have been two AHCAH releases to date:\n- First release data submission period: November 2020 - March 2023 (29 months)\n- Second release data submission period: April 2023 - September 2025 (30 months)\nWhat does this file include? (variable highlights)\n- CCW Beneficiary Identifier\n- Beneficiary Program Identifier (Medicare,",
+  "dataset": "ahcah-patient",
+  "url": "https://resdac.org/cms-data/files/ahcah-patient"
+}

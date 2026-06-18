@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p289__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 289,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n271 \nORG_NPI_NUM \nLABEL: \nOrganization (or group) NPI Number \nDESCRIPTION: The National Provider Identifier (NPI) of the organization or group practice. \nSHORT NAME: ORGNPINM \nLONG NAME: ORG_NPI_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nOn an institutional claim, this is the NPI number assigned to uniquely identify the institutional provider",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

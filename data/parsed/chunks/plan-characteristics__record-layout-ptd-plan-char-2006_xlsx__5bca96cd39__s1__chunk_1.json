@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "package within a contract.\n3 formulary_id Formulary ID Char 8 Medicare Part D formulary identifier. This field is a key that links of Part D sponsor's formulary file to their contract and plan identifiers.\n4 contract_name Contract Name Char 150 Name of the Medicare Part D Contract\n5 plan_name Plan Name Char 75 Name of the Medicare Part D Plan as defined by a unique benefit package within a contract.\n6 organization_marketing_name Organization Marketing Name Char 150 Name used for marketing the",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p59__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 59,
+  "text": "RPTD_MFTR_DSCNT_AMT \nLONG NAME: RPTD_MFTR_DSCNT_AMT \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nThis amount does not increment the true out-of-pocket accumulator amount. \nThis variable was new in 2025. It may be $0.00. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

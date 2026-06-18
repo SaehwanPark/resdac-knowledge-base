@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p58__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 58,
+  "text": "one or \nmore consecutive non-acute inpatient claims where the beneficiary is only discharged on the most \nrecent claim in the set. The CLM_THRU_DT for the last claim associated with the stay must have been in \nthe year of the data file. Stays that cross-over into another calendar year would only appear in the year \nwhen the stay ended (e.g., a stay that began in 2017 but ended in 2018 would only be counted as a stay \nin the 2018 file). \nThese “other” inpatient (OIP) claims are a subset of the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-beneficiary__data-documentation__0fc2b1e684__chunk_1",
+  "source_document": "data/raw/html/documentation_page/0fc2b1e68473fbe27627c6b2ac066fbab69d9d8c.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| ACO_ID | Pioneer ACO Identifier | \n| BIRTH_DT | Date of Birth | \n| DEATH_DT | Date of Death | \n| SEX_CD | Sex | \n| MO1_ALIGN | Month 1 Alignment Flag | \n| MO2_ALIGN | Month 2 Alignment Flag | \n| MO3_ALIGN | Month 3 Alignment Flag | \n| MO4_ALIGN | Month 4 Alignment Flag | \n| MO5_ALIGN | Month 5 Alignment Flag | \n| MO6_ALIGN | Month 6 Alignment Flag | \n|",
+  "dataset": "ngaco-beneficiary",
+  "url": "https://resdac.org/cms-data/files/ngaco-beneficiary/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__record-layout-ptd-formulary_xlsx__38598074c1__s2__chunk_2",
+  "source_document": "data/raw/assets/xlsx/38598074c1dd858c02b65f05a48cc7e746745ec7.xlsx",
+  "page": 2,
+  "text": "X X\n1 Shading or '-' indicates that the variable was not present during this time.\n2 2011 was the first year this file was available; the linkage variables to the PDE File were the FORMULARY_ID and FRMLRY_RX_ID.\n3 Prior to the 2013 data release, CCW was required to encrypt these sensitive data fields. These sensitive fields were those which could be\nused to identify the plan sponsor's contract (CONTRACT_ID), plan benefit package (PLAN_ID), and the plan’s formulary (FORMULARY_ID).\nWe are no",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-formulary.xlsx"
+}

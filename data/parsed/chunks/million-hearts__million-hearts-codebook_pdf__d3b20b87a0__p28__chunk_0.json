@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p28__chunk_0",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 28,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMillion Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 \n23 \nINSERT_DATE \nLABEL: \nDate the Record was Created \nDESCRIPTION: The date when the practice or provider record was created. \nSHORT NAME: INSERT_DATE \nLONG NAME: INSERT_DATE \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nPractice \n\nNPI \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \nEx — 06/15/2018 \nCOMMENT: \nThis field is in two files. Within the practice",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

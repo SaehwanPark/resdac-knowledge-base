@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p78__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 78,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n67 \nMDCD_WVR_1915C_MOS \nLABEL: \nMedicaid — 1915(c) Waiver Months \nDESCRIPTION: This variable is the number of months the beneficiary was enrolled in a Medicaid Section 1915(c) \n(Home- and Community-Based Care) waiver during the year. \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \n T-MSIS DE file \nVALUES: \n0–12, or null/missing (if no Medicaid enrollment) \nCOMMENT: \nCCW obtains this directly from the DE Waiver Supplemental file",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_476",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "indicates if there were any clinically significant medication issues since the previous OASIS assessment, was a physician or physician-designee contacted within one calendar day of the assessment to resolve clinically significant medication issues. 0 = No\n1 = Yes\n9 = NA - There were no potential clinically significant medication issues identified since SOC/ROC or patient is not taking any medications CHAR 1 x x x\nM2016_DRUG_EDCTN_INTRVTN M2016 Patient/Caregiver Drug Educ Intervention This field",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

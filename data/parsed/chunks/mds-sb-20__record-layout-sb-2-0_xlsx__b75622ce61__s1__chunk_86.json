@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_86",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "1 = 1% to 25%, 2 = 26% to 50%, 3 = 51% to 75%, 4 = 76% to 100%, -1 = Unknown, -2 = Space\n109 K6B K6B_FLUID_INTAKE 30b(K6b)Average Fluid Intake In Last 7 Days CHAR 1 The actual amount of fluid the patient receive by IV or tube feeding in the last seven days. 0 = None, 1 = 1 to 500 cc/day, 2 = 501 to 1000 cc/day, 3 = 1001 to 1500 cc/day, 4 = 1501 to 2000 cc/day, 5 = 2001 or more cc/day, -1 = Unknown, -2 = Space\n110 M1A M1A_STAGE_1_ULCER 31a(M1a)Ulcers - Stage 1 CHAR 1 A count of the number of",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

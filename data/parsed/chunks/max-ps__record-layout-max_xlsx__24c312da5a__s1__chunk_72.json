@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_72",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Total Inpatient (IP) discharges NUM 5 X X X X X X X X X X X\n341 TOT_IP_STAY_CNT Total Inpatient (IP) stays NUM 5 X X X X X X X X X X X\n342 TOT_IP_DAY_CNT_DSCHRG Total IP Length of Stay (LOS) - for discharges NUM 4 X X X X X X X X X X X\n343 TOT_IP_DAY_CNT_STAYS Total IP Length of Stay (LOS) - for stays NUM 4 X X X X X X X X X X X\n344 TOT_IP_CVR_DAY_CNT_DSCHRG Total IP Covered days - for discharges NUM 4 X X X X X X X X X X X\n345 TOT_IP_CVR_DAY_CNT_STAYS Total IP Covered days - for stays NUM 4 X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

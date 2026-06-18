@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_6",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Diagnosis 2 Present on Admission Indicator CHAR 1 33\nHAC_IND Health Care Acquired Condition (HAC) Indicator CHAR 1 34\nMH_DGNS_IND Mental Health Diagnosis Indicator CHAR 1 35\nSUD_DGNS_IND Substance Use Disorder Diagnosis Indicator CHAR 1 36\nPOS_CD Place of Service Code CHAR 2 37\nBLG_PRVDR_ID Billing Provider Identification Number CHAR 30 38\nBLG_PRVDR_NPI Billing Provider NPI CHAR 10 39\nBLG_PRVDR_TXNMY_CD Billing Provider Taxonomy Code CHAR 12 40\nBLG_PRVDR_NPPES_TXNMY_CD2 Billing Provider NPPES",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

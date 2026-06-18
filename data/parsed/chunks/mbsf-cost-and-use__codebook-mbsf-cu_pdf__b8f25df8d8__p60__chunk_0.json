@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p60__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 60,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n54 \nOPROC_EVENTS \nLABEL: \nOther Procedures Events \nDESCRIPTION: This variable is the count of events for Part B other procedures for a given year. An event is defined as \neach line item that contains the relevant service. Claims for other procedures are a subset of the claims \nin the Part B carrier data file. \nThese other procedure claim lines are defined as those with a line",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

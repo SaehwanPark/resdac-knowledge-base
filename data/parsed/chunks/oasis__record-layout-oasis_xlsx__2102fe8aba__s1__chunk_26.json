@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_26",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0150) Unknown Payment Source Current payment sources for home care: unknown. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x x\nM0150_CPY_WRKCOMP (M0150) Workers Compensation Current payment sources for home care: worker's compensation. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x x\nM0160_LTD_FIN_FOOD (M0160) Limited Financial Factors - Food Financial factors limiting ability of patient/family to meet basic health needs: unable to afford food. 0 = No, 1 = Yes CHAR 1 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

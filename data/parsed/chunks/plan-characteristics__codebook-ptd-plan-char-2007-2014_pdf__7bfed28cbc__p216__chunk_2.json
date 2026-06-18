@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p216__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 216,
+  "text": "Generic \n\n1 in 3rd digit = Preferred Generic \n\n1 in 4th digit = Non-Preferred Generic \n\n1 in 5th digit = Brand \n\n1 in 6th digit = Preferred Brand \n\nAll 9s = Not Applicable \nCOMMENT: \nThis variable was new in 2007. This field is only populated if the plan has an enhanced benefit design \nwith extra coverage in the gap. \nThere is variation in the number of formulary tiers over time. Before 2015, this variable also appeared \nin the Plan Characteristics - Base File (see GAP_COVERAGE_TYPE). The",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

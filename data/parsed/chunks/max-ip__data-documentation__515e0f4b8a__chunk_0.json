@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__data-documentation__515e0f4b8a__chunk_0",
+  "source_document": "data/raw/html/documentation_page/515e0f4b8a82429031028f6befb46024fb536839.html",
+  "page": null,
+  "text": "| BENE_ID | Encrypted 723 CCW Beneficiary ID | \n\n | MSIS_ID | Encrypted MSIS Identification Number | \n\n | STATE_CD | State | \n\n | YR_NUM | Year of MAX Record | \n\n | EL_DOB | Birth date | \n\n | EL_SEX_CD | Sex (MAX) | \n\n | EL_RACE_ETHNCY_CD | Race/ethnicity (from MSIS) | \n\n | RACE_CODE_1 | Race - White (from MSIS) | \n\n | RACE_CODE_2 | Race - Black (from MSIS) | \n\n | RACE_CODE_3 | Race - Am Indian/Alaskan (from MSIS) | \n\n | RACE_CODE_4 | Race - Asian (from MSIS) | \n\n | RACE_CODE_5 | Race -",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip/data-documentation"
+}

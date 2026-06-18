@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p386__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 386,
+  "text": "visit \nW = Invalid HCPCS or invalid revenue \ncode with blank HCPCS \nX = Ancillary service (terminated) \nY = Non-implantable DME (e.g., \ntherapeutic shoes) \nZ = Valid revenue with blank HCPCS \nand no other status indicator \nassigned \nCOMMENT: \nThis 2-byte indicator was added 10/2005 due to an expansion of a field that currently exist on the \nrevenue center trailer. The status indicator is currently the 1st position of the Revenue Center \nPayment Method Indicator Code. The payment method",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,19 @@
+The Final Clinical file is a model-curated version of the information in the Raw Clinical data. Million Hearts® business rules are applied to the raw data and select information is extracted and translated into custom codes.
+Note that clinical data excludes all “Incomplete” visits.
+What is a clinical data element? Data fields that can be collected, utilized, or stored in various application systems.
+What does this file include? (variable highlights)
+- Beneficiary ID
+- Model-Assigned Practice ID
+- Model-Assigned Patient ID
+- Provider NPI
+- Activity Date
+- Activity End Date
+- Provider NPI
+- Clinical Service Procedure Code
+- Clinical Service Procedure Modifier
+- Service Units
+A record represents one clinical data element per beneficiary. Beneficiaries that have multiple clinical data elements will have multiple records.
+The Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link to other CCW non-Million Hearts® files.
+The Model-Assigned Practice ID can be used to link all Million Hearts® data files for provider-oriented analytics. It does not link to other CCW provider data.
+The Beneficiary ID can be linked to other beneficiary records in this dataset and other CCW Medicare data.
+The NPI can be linked to other records with NPI in this dataset and other CCW Medicare data.

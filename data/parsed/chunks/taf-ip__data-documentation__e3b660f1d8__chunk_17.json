@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_17",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| Billing Provider Taxonomy Code | \n\n | 111 | BLG_PRVDR_NPPES_TXNMY_CD | Billing Provider NPPES Taxonomy Code | \n\n | 112 | BLG_PRVDR_TYPE_CD | Billing Provider Type Code | \n\n | 113 | BLG_PRVDR_SPCLTY_CD | Billing Provider Specialty Code | \n\n | 114 | RFRG_PRVDR_ID | Referring Provider Identification Number | \n\n | 115 | RFRG_PRVDR_NPI | Referring Provider NPI | \n\n | 116 | RFRG_PRVDR_TYPE_CD | Referring Provider Type Code | \n\n | 117 | RFRG_PRVDR_SPCLTY_CD | Referring Provider Specialty Code | \n\n |",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

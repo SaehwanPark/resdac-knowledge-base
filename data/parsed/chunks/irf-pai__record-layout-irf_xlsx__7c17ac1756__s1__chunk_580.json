@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_580",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "the past 5 days \n1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to answer\n517 PAIN_SLP_DSCHRG_CD PAIN_SLP_DSCHRG_CD Pain effect on sleep (Dsch) CHAR 1 This column document, at the time of discharge, how often, in the past five days, has pain made it hard to sleep at night. 0 = Does not apply - I have not had any pain or hurting in the past 5 days \n1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

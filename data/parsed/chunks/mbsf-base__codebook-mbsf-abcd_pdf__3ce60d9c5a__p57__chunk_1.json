@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p57__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 57,
+  "text": "subsidy (RDS). CCW \nderives this variable by counting the number of months where the beneficiary had retiree drug \nsubsidy. \nSHORT NAME: RDS_MO \nLONG NAME: RDS_CVRG_MONS \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) (derived) \nVALUES: \n0–12 \nCOMMENT: \nA month of RDS is when the RDS_IND_XX for the month = Y. \nSome employers offer prescription drug plans to their retirees, and Part D pays a subsidy to plans that \noffer coverage that is equivalent to (or better than)",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p327__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 327,
+  "text": "most recent in \nthe calendar and the two prior years. \nSHORT NAME: VET_IND \nLONG NAME: VET_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = No \n1 = Yes \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis value is the most recent in the calendar year (or, if not populated, then most recent value from \nthe two-prior year[s] is used). \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

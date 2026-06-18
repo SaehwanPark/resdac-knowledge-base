@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p268__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 268,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n250 \nNCH_CLM_PRVDR_PMT_AMT \nLABEL: \nNCH Claim Provider Payment Amount \nDESCRIPTION: The total payments made to the provider for this claim (sum of line-item provider payment amounts \n(variable called LINE_PRVDR_PMT_AMT). \nSHORT NAME: PROV_PMT \nLONG NAME: NCH_CLM_PRVDR_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nMedicare payments are",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

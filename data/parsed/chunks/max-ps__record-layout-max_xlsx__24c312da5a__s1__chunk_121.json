@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_121",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "(MAX TOS 36) NUM 12 X X X X X X X X X X X\n557 FFS_TP_AMT_36 Third party payment amount (MAX TOS 36) NUM 12 X X X X X X X X X X X\n558 ENCTR_REC_CNT_36 Encounter record count (MAX TOS 36) NUM 5 X X X X X X X X X X X\n559 FEE_FOR_SRVC_IND_37 Recipient indicator (MAX TOS 37 - nurse practioner services) CHAR 1 X X X X X X X X X X X\n560 FFS_CLM_CNT_37 Claim count (MAX TOS 37) NUM 6 X X X X X X X X X X X\n561 FFS_PYMT_AMT_37 Medicaid payment amount (MAX TOS 37) NUM 12 X X X X X X X X X X X\n562",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

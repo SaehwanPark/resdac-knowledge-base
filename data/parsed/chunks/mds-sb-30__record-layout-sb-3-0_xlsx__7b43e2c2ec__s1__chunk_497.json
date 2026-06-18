@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_497",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "data in this column contains the assessment reference date from the most recent prior OBRA or PPS assessment.\n562 V0100D_PRIOR_BIMS_SCRE_NUM V0100D_PRIOR_BIMS_SCRE_NUM V0100D Prior Assessment Brief Interview for Mental Status (BIMS) Summary Score Number CHAR 2 The data in this column contains the BIMS summary score from the most recent prior OBRA or PPS assessment.\n563 V0100E_PRIOR_MOOD_SCRE_NUM V0100E_PRIOR_MOOD_SCRE_NUM V0100E Prior Assessment Resident Mood Interview (PHQ-9) Total Severity",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

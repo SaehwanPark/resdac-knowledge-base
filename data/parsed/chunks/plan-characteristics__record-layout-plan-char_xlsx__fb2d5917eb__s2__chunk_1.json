@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 2,
+  "text": "Year Plan is Part C, Part D or Both CHAR 1 X X\nPART_B_PREMIUM_REDUCTION_AMT Part B Premium Reduction Amount NUM 12 X X\nPART_C_PREMIUM Part C Premium NUM 12 X X\nPLAN_BASIC_PREMIUM_NET_REBATE Part D Basic Premium Net of Rebate NUM 12 X X\nPLAN_SUPP_PREMIUM_NET_REBATE Part D Supplemental Premium Net of Rebate NUM 12 X X\nPLAN_TOTAL_PREMIUM_NET_REBATE Part D Total Premium Net of Rebate NUM 12 X X\nPART_D_LIS_25 Part D Low Income Subsidy 25% NUM 12 X -\nPART_D_LIS_50 Part D Low Income Subsidy 50% NUM 12",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

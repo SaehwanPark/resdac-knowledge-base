@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p190__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 190,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n189 \nSR_SPLMTL_SBSTNC_USE_4_CD \nLABEL: \nSupplemental HRSN Substance Use 4: Past 12 Months Illegal Drug Use \nDESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) substance use past 12 months \nillegal drug use. \nLONG NAME: SR_SPLMTL_SBSTNC_USE_4_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = Never \n1 = Once or twice \n2 = Monthly \n3 =",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p281__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 281,
+  "text": "some beneficiaries, all days in one of these settings may not be covered by Medicare. \nSHORT NAME: NCOVTHRU \nLONG NAME: NCH_VRFD_NCVRD_STAY_THRU_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH QA Process \nVALUES: \n— \nCOMMENT: \nDerivation Rules: Based on the presence of the occurrence span code (variable called CLM_SPAN_CD) \n74, 76, 77, or 79. When this code value is present the date is populated using the \nCLM_SPAN_THRU_DT. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

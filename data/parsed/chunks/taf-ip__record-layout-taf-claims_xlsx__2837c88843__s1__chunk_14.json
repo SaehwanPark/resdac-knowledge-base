@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "Procedure Code 3 CHAR 8 89\nPRCDR_CD_SYS_3 Procedure Code 3 System/Nomenclature CHAR 2 90\nPRCDR_CD_DT_4 Date Procedure 4 Performed DATE 8 91\nPRCDR_CD_4 Procedure Code 4 CHAR 8 92\nPRCDR_CD_SYS_4 Procedure Code 4 System/Nomenclature CHAR 2 93\nPRCDR_CD_DT_5 Date Procedure 5 Performed DATE 8 94\nPRCDR_CD_5 Procedure Code 5 CHAR 8 95\nPRCDR_CD_SYS_5 Procedure Code 5 System/Nomenclature CHAR 2 96\nPRCDR_CD_DT_6 Date Procedure 6 Performed DATE 8 97\nPRCDR_CD_6 Procedure Code 6 CHAR 8 98\nPRCDR_CD_SYS_6",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

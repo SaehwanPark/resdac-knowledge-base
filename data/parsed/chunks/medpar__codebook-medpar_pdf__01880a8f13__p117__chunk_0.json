@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p117__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 117,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n101 \nHOSP_AT_HOME_CHRG_AMT \nLABEL: \nHospital at Home Room and Board (R&B) Charge Amount \nDESCRIPTION: This variable represents the charge amount for room and board hospital at home care, related to a \nbeneficiary’s acute hospital at home stay. \nSHORT NAME: HOSP_AT_HOME_CHRG_AMT \nLONG NAME: HOSP_AT_HOME_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH (derived) \nVALUES: \n— \nCOMMENT: \nThis field was",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

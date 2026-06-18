@@ -1,0 +1,770 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook  
+OCTOBER 2025 │ VERSION 2.2
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+October 2025 
+K. Schneider 
+Updated COPAY and TYPE variables to reflect the PDSS Model file 
+was retired and not delivered after 2023 
+2.2 
+October 2022 
+K. Schneider 
+Added variables in the Part D Senior Savings (PDSS) model file. 
+Updated value description for TIER_ID 
+2.1 
+October 2021 
+K. Schneider 
+Migrated codebook to new document template. Added two 
+variables new for the 2020 file — for the indication-based 
+formulary file: DISEASE and MESH_CUI. 
+2.0 
+May 2017 
+K. Schneider 
+C. Alleman 
+Initial release of codebook for PTD Formulary file 
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Formulary research files. The guide 
+includes several ways for users to quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and notes discussing the variable construction and use 
+The CCW team has included hyperlinks throughout the codebook to make it easier for users to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes users to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes users back to the Table of Contents
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:  
+ 
+ 
+Variable Details ......................................................................................................................................................... 1 
+BN 
+ ........................................................................................................................................................................... 1 
+CONTRACT_ID ................................................................................................................................................................. 2 
+COPAY  ........................................................................................................................................................................... 3 
+DISEASE ........................................................................................................................................................................... 4 
+FORMULARY_ID .............................................................................................................................................................. 5 
+FRMLRY_RX_ID ............................................................................................................................................................... 6 
+GCDF 
+ ........................................................................................................................................................................... 7 
+GCDF_DESC ..................................................................................................................................................................... 8 
+GNN 
+ ........................................................................................................................................................................... 9 
+MESH_CUI ..................................................................................................................................................................... 10 
+PLAN_ID ........................................................................................................................................................................ 11 
+PRIOR_AUTHORIZATION_YN ........................................................................................................................................ 12 
+QUANTITY_LIMIT_YN .................................................................................................................................................... 13 
+SEGMENT_ID ................................................................................................................................................................ 14 
+STEP 
+ ......................................................................................................................................................................... 15 
+STEP_THERAPY_YN ....................................................................................................................................................... 16 
+STR 
+ ......................................................................................................................................................................... 17 
+TIER_ID  ......................................................................................................................................................................... 18 
+TYPE 
+ ......................................................................................................................................................................... 19 
+ 
+A B C D E 
+F 
+G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Medicare Formulary research file. Each entry 
+contains variable details to facilitate understanding and use of the variables. 
+BN 
+LABEL: 
+Brand Name 
+DESCRIPTION: This is the brand name of the dispensed PDE, according to the First DataBank (FDB) reference files. The 
+name that appears on the package label provided by the manufacturer. When this variable appears in 
+the Formulary file, it is the FDB brand name for a drug product on the formulary. 
+SHORT NAME:  BN 
+LONG NAME:  BN 
+TYPE: 
+CHAR 
+LENGTH: 
+30 
+SOURCE: 
+First DataBank 
+VALUES: 
+text description; DIABETIC SUPPLY for all diabetic supplies 
+COMMENT:  
+In the PDE file, this variable is populated by linking to the proprietary First DataBank MedKnowledge 
+database by matching on the National Drug Code (NDC; variable in the PDE files called the product 
+service identifier PROD_SRVC_ID). In the Formulary file, this variable is first available in 2010. It is 
+populated by matching the drug products on the Part D Plan submitted formulary to FDB. Part D plan 
+sponsors submit the formulary to the CMS Health Plan Management System (HPMS). Plans identify 
+the drug products on their formularies using the National Library of Medicine RxNorm Concept Unique 
+Identifiers (RXCUIs). Each RXCUI corresponds to a unique brand name and clinical formulation (same 
+ingredients, strength, and dosage form). Additional details regarding the FDB source data are available 
+at: http://www.fdbhealth.com/fdb-medknowledge/ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+2 
+CONTRACT_ID  
+LABEL: 
+Part D Contract Identifier 
+DESCRIPTION:  This variable is the unique number CMS assigns to each contract that a Part D plan has with CMS. This 
+field is a key that links of Part D sponsor's contract and plan identifiers. 
+SHORT NAME: — 
+LONG NAME: CONTRACT_ID  
+TYPE: 
+CHAR 
+LENGTH: 
+5 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+5-digit alpha/numeric value 
+COMMENT: 
+Prior to 2015, this variable was always encrypted to comply with CMS privacy rules. You need to know 
+both the Part D contract number and plan benefit package identification number (variable called 
+PLAN_ID) in order to identify the specific plan benefit package offered to beneficiaries. This variable 
+corresponds with the CONTRACT_NAME variable, which is the contract name that corresponds with 
+this number. The CCW constructs the Plan Characteristics file from information submitted by Part D 
+plan sponsors to CMS’s Health Plan Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+3 
+COPAY 
+LABEL: 
+Copay 
+DESCRIPTION:  This variable identifies the beneficiary copayment amount for the drug products covered by the Part D 
+Senior Savings (PDSS) model. The insulin drug products (represented by the FRMLRY_RX_ID) covered 
+as part of the PDSS have a different payment structure than other insulins (or other drug products) on 
+the formulary. 
+SHORT NAME: COPAY  
+LONG NAME: COPAY 
+TYPE: 
+NUM 
+ 
+LENGTH: 
+3 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+up to 3-digit numeric value 
+COMMENT: 
+The PDSS Model file was new in 2021 and is retired after 2023. This PDSS Model file is not produced 
+after 2023.. Additional details regarding this CMS Innovation Center Model are available on the CMS 
+website.  
+ 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+4 
+DISEASE 
+LABEL: 
+Condition 
+DESCRIPTION:  This variable is the FDA-approved indication for which the drug (represented by the FRMLRY_RX_ID) is 
+considered on-formulary. 
+SHORT NAME: DISEASE  
+LONG NAME: DISEASE  
+TYPE: 
+CHAR 
+LENGTH: 
+100 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+Text description (e.g., CROHN DISEASE and ARTHRITIS, PSORIATIC) 
+COMMENT: 
+Starting in 2020, Medicare Part D plan sponsors may limit formulary inclusion of a Part D drug to only 
+certain FDA-approved indications. The corresponding standardized medical subject headings (MeSH) 
+for this value appears in the variable called “MESH_CUI.” Both variables are included in the CMS-
+created indication-based reference file in HPMS for plan sponsors to use for indication-based drug 
+coverage https://www.cms.gov/Research-Statistics-Data-and-Systems/Computer-Data-and-
+Systems/HPMS/Downloads/HPMS-Memos/Weekly/SysHPMS-Memo-2018-Aug-29th.pdf 
+The US National Library of Medicine maintains the standardized MeSH. MeSH is a hierarchically-
+organized terminology for indexing and cataloging of biomedical information. It is used for the 
+indexing of PubMed and other NLM databases. Additional information is available on the NLM.NIH.gov 
+website - 
+https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/MSH/sourcerepresentation.html 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+5 
+FORMULARY_*ID 
+LABEL: 
+Formulary Identification Number 
+DESCRIPTION:  This variable is the unique identification number assigned to each formulary. Part D plans submit their 
+formularies to C 
+S and identify the drug products that are covered using the National Library of Medicine’s RxNorm Concept Unique 
+Identifiers (RXCUIs). The same formulary may be used by more than one plan benefit package (PBP) 
+within a contract. 
+SHORT NAME: FORMULARY_ID  
+LONG NAME: FORMULARY_ID  
+TYPE: 
+CHAR 
+LENGTH: 
+8 
+SOURCE: 
+PDE and CMS HPMS (derived) 
+VALUES: 
+8-digit numeric value 
+COMMENT: 
+Researchers interested in linking the Utilization Management (UM) variables (tier, step therapy, 
+quantity limits, and prior authorization) to the PDE data will need to link the FORMULARY_ID and 
+FRMLRY_RX_ID to the Formulary Characteristics file to get the UM variables. The CCW constructs a 
+Formulary Characteristics file from the CMS Approved Formulary Data found in the CMS’s Health Plan 
+Management System (HPMS). This variable is first available in 2010. This variable was always 
+encrypted from 2010–2012 to comply with CMS privacy rules. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+6 
+FRMLRY_RX_ID 
+LABEL: 
+CCW Formulary Drug Identifier 
+DESCRIPTION:  This variable is a CCW-created identifier for a drug product that is found in a Part D prescription drug 
+plan's formulary. Part D Plans submit their formularies to CMS and identify drug products using the 
+National Library of Medicine RxNorm Concept Unique Identifiers (RXCUIs). There can be several drug 
+products submitted that are the same clinical formulation (same ingredients, strength, and dosage 
+form) but different brand names. Each RXCUI corresponds to a unique brand name and clinical 
+formulation. The CCW Formulary drug ID is analogous to an RXCUI. 
+SHORT NAME: FRMLRY_RX_ID  
+LONG NAME:  FRMLRY_RX_ID  
+TYPE: 
+CHAR 
+LENGTH: 
+8 
+SOURCE: 
+PDE and CMS HPMS (derived) 
+ VALUES: 
+8-digit number 
+The value: 99999999 indicates diabetic supplies. 
+COMMENT: 
+This variable was new in 2010. The Formulary Characteristics files are built from the CMS Approved 
+Formulary Data found in the CMS’ Health Plan Management System (HPMS) where a proxy NDC is 
+assigned to each RXCUI. The proxy NDC for each drug product is mapped to a unique First DataBank 
+(FDB) brand name and proprietary clinical formulation identifier which is then assigned a CCW 
+sequence number (FRMLRY_RX_ID). In order for a PDE record to link to the Formulary Characteristics 
+files, the drug product on the PDE must map to a FRMLRY_RX_ID in the formulary associated with the 
+plan of record. Researchers interested in linking the Utilization Management (UM) variables (tier, step 
+therapy, quantity limits, and prior authorization) to the PDE data will need to link the FORMULARY_ID 
+and FRMLRY_RX_ID to the Formulary Characteristics file to get the UM variables. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+7 
+GCDF 
+LABEL: 
+Dosage Form Code 
+DESCRIPTION: This variable is the dosage form code according to the First DataBank (FDB) reference files. The dosage 
+form describes the physical presentation of a drug, such as tablet, capsule, or liquid. It may also 
+incorporate the delivery and release mechanism of the drug. When this variable appears in the 
+Formulary file, it is the FDB dosage form code for a drug product on the formulary. 
+SHORT NAME: GCDF 
+LONG NAME: GCDF 
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+First DataBank 
+VALUES: 
+2-digit alpha/numeric code (e.g., CA [capsule], PS [adhesive patch, medicated]) 
+COMMENT:  
+The narrative description for this code appears in the dosage form code description variable (called 
+GCDF_DESC). In the Formulary file, this variable is populated by matching the drug products on the 
+Part D Plan submitted formulary to FDB. Part D plan sponsors submit the formulary to the CMS Health 
+Plan Management System (HPMS). Plans identify the drug products on their formularies using the 
+National Library of Medicine RxNorm Concept Unique Identifiers (RXCUIs). Each RXCUI corresponds to 
+a unique brand name and clinical formulation (same ingredients, strength, and dosage form). In the 
+PDE file, this variable is populated by linking to the proprietary First DataBank MedKnowledge 
+database by matching on the National Drug Code (NDC; variable in the PDE files called the product 
+service identifier PROD_SRVC_ID). Additional details regarding the FDB source data are available at: 
+http://www.fdbhealth.com/fdb-medknowledge/  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+8 
+GCDF_DESC 
+LABEL: 
+Dosage Form Code Description 
+DESCRIPTION: This variable describes the dosage form of a clinical formulation, according to the First DataBank (FDB) 
+reference files. The dosage form is the physical presentation of a drug, such as tablet, capsule, or 
+liquid. It may also incorporate the delivery and release mechanism of the drug. When this variable 
+appears in the Formulary file, it is the FDB dosage form code description for a drug product on the 
+formulary. 
+SHORT NAME: GCDF_DESC 
+LONG NAME:  GCDF_DESC 
+TYPE: 
+CHAR 
+LENGTH: 
+40 
+SOURCE: 
+First DataBank 
+VALUES: 
+Narrative description (e.g., DROPS or TABLET) 
+COMMENT:  
+The accompanying FDB code for this description appears in the dosage form code variable (called 
+GCDF). In the Formulary file, this variable is populated by matching the drug products on the Part D 
+Plan submitted formulary to FDB. Part D plan sponsors submit the formulary to the CMS Health Plan 
+Management System (HPMS). Plans identify the drug products on their formularies using the National 
+Library of Medicine 
+RxNorm Concept Unique Identifiers (RXCUIs). Each RXCUI corresponds to a unique brand name and 
+clinical formulation (same ingredients, strength, and dosage form). 
+In the PDE file, this variable is populated by linking to the proprietary First DataBank MedKnowledge 
+database by matching on the National Drug Code (NDC; variable in the PDE files called the product 
+service identifier PROD_SRVC_ID). Additional details regarding the FDB source data are available at: 
+http://www.fdbhealth.com/fdb-medknowledge/  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+9 
+GNN 
+LABEL: 
+Generic Name 
+DESCRIPTION: This is the generic name of the dispensed PDE, according to the First DataBank (FDB) reference files. It 
+is the drug ingredient name adopted by United States Adopted Names (USAN). When this variable 
+appears in the Formulary file, it is the FDB generic name for a drug product on the formulary. 
+SHORT NAME:  GNN 
+LONG NAME:  GNN 
+TYPE: 
+CHAR 
+LENGTH: 
+30 
+SOURCE: 
+First DataBank 
+VALUES: 
+text description of drug (e.g., RISEDRONATE SODIUM, MEMANTINE HCL) 
+COMMENT: 
+FDB uses the chemical name when the USAN name is not available. For multi-ingredient products, 
+abbreviations may be used (e.g., HCTZ [Hydrochlorothiazide] and PP [Phenylpropanolamine]). In the 
+Formulary file, this variable is populated by matching the drug products on the Part D Plan submitted 
+formulary to FDB. Part D plan sponsors submit the formulary to the CMS Health Plan Management 
+System (HPMS). Plans identify the drug products on their formularies using the National Library of 
+Medicine 
+RxNorm Concept Unique Identifiers (RXCUIs). Each RXCUI corresponds to a unique brand name and 
+clinical formulation (same ingredients, strength, and dosage form). In the PDE file, this variable is 
+populated by linking to the proprietary First DataBank MedKnowledge database by matching on the 
+National Drug Code (NDC; variable in the PDE files called the product service identifier 
+PROD_SRVC_ID). Additional details regarding the FDB source data are available at: 
+http://www.fdbhealth.com/fdb-medknowledge/  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+10 
+MESH_CUI 
+LABEL: 
+Coverage indicator 
+DESCRIPTION:  This variable is the medical subject heading (MeSH) concept unique identifier (CUI)  
+SHORT NAME: MESH_CUI  
+LONG NAME: MESH_CUI 
+TYPE: 
+CHAR 
+LENGTH: 
+11 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+7-XXX digit alphanumeric (e.g., D003424, M0023901) 
+COMMENT: 
+This variable is new in 2020 and appears in the Indication-based Formulary file. The description for this 
+value appears in the variable called “DISEASE”. Both variables are included in the CMS-created 
+indication-based reference file in HPMS for plan sponsors to use for indication-based drug coverage.  
+The US National Library of Medicine maintains standardized medical subject headings (MeSH). MeSH 
+is a hierarchically-organized terminology for indexing and cataloging of biomedical information. It is 
+used for the indexing of PubMed and other NLM databases. Additional information is available on the 
+NLM.NIH.gov website 
+https://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/MSH/sourcerepresentation.html 
+ ^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+11 
+PLAN_ID  
+LABEL: 
+Part D Plan Benefit Package Identifier 
+DESCRIPTION: This variable is the unique plan benefit package (PBP) number for the Part D plan sponsor's contract. 
+CMS assigns an identifier to each PBP within a contract that a Part D plan sponsor has with CMS. This 
+field is a key that links of Part D sponsor's contract and plan identifiers. 
+SHORT NAME: — 
+LONG NAME:  PLAN_ID  
+TYPE: 
+CHAR  
+LENGTH: 
+3 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+3-digit numeric value 
+COMMENT: 
+Prior to 2015, this variable was always encrypted to comply with CMS privacy rules. You need to know 
+both the Part D contract number (variable called CONTRACT_ID) and plan benefit package identifier in 
+order to identify the specific plan benefit package offered to beneficiaries. The CCW constructs the 
+Plan Characteristics file from information submitted by Part D plan sponsors to CMS’s Health Plan 
+Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+12 
+PRIOR_AUTHORIZATION_YN  
+LABEL: 
+Prior Authorization Indicator 
+DESCRIPTION:  This is a CCW-derived field that indicates whether the prescription was subject to prior authorization, 
+according to the benefit structure and formulary for the beneficiary’s plan. 
+SHORT NAME: — 
+LONG NAME: PRIOR_AUTHORIZATION_YN  
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS files) 
+ VALUES: 
+0 = No 
+1 = Yes 
+COMMENT:  
+Part D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS 
+via the Health Plan Management System (HPMS). This includes information on which drugs are subject 
+to prior authorization, which means that a physician must get the plan’s approval in advance before 
+prescribing the drug. The value of this field may not exactly represent the beneficiary experience at 
+the time of the prescription fill (e.g., no data are collected at the time of the transaction to indicate 
+the actual beneficiary experience). For 2006–2009 this variable was found in the Event Characteristics 
+files (BP_UM_TIER_YYYY_MM). This variable is first available in the Formulary file in 2010. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+13 
+QUANTITY_LIMIT_YN 
+LABEL: 
+Quantity Limit Indicator 
+DESCRIPTION:  This is a CCW-derived field that indicates whether the prescription was subject to quantity limits, 
+according to the benefit structure and formulary for the beneficiary’s plan. 
+SHORT NAME: — 
+LONG NAME: QUANTITY_LIMIT_YN  
+ 
+TYPE: 
+CHAR 
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS Files)  
+VALUES: 
+0 = No 
+1 = Yes 
+COMMENT:  
+For 2006–2009 this variable was found in the Event Characteristics files (BP_UM_TIER_YYYY_MM).This 
+variable is first available in the Formulary file in 2010. 
+Part D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS 
+via the Health Plan Management System (HPMS). This includes information on which drugs are subject 
+to quantity limits, which restrict the amount that a beneficiary may receive within a certain time 
+period. The value of this field may not exactly represent the beneficiary experience at the time of the 
+prescription fill (e.g., no data are collected at the time of the transaction to indicate the actual 
+beneficiary experience). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+14 
+SEGMENT_ID 
+LABEL: 
+Market Segment Identifier 
+DESCRIPTION: This variable is the identifier for the geographic market segment covered by the plan. 
+TYPE: 
+CHAR 
+LENGTH:  
+3  
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+3-digit number 
+COMMENT: 
+You need to know both the contract number and plan benefit package identification number 
+(variables called CONTRACT_ID and PLAN_ID) in order to identify the specific plan benefit 
+package offered to beneficiaries in the particular market segments.  
+The CCW constructs the Plan Characteristics file from information submitted by plan sponsors to 
+CMS’s Health Plan Management System (HPMS).  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+15 
+STEP 
+LABEL: 
+Step Number 
+DESCRIPTION: This is a CCW-derived field that indicates whether the prescription was subject to a step therapy 
+protocol, according to the benefit structure and formulary for the beneficiary’s plan. If a product is 
+part of two different step therapy protocols, this field is populated with the maximum step value for 
+the product.  
+If the value is greater than 1, then the beneficiary’s plan imposed some type of step therapy 
+requirement, and the value indicates the number of steps or therapy trials needed before becoming 
+eligible for the current drug.  
+SHORT NAME:  — 
+LONG NAME:  STEP 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+CMS (HPMS Files) 
+VALUES: 
+Null (no step requirement), 1-4 
+COMMENT: 
+Part D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS 
+via the Health Plan Management System (HPMS). This includes information on which drugs are subject 
+to step therapy, which requires a beneficiary to first try one or more other medications in the same 
+therapeutic class. 
+The value of this field may not exactly represent the beneficiary experience at the time of the 
+prescription fill (e.g., no data are collected at the time of the transaction to indicate the actual 
+beneficiary experience). 
+For 2006–2009 this variable was found in the Part D Event Characteristics files. This variable is first 
+available in the Formulary File in 2010. It is also present in the Excluded Drug file, starting with 2012 
+data.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+16 
+STEP_THERAPY_YN 
+LABEL: 
+Step Therapy Indicator 
+DESCRIPTION: This is a CCW-derived field that indicates whether the prescription was subject to a step therapy 
+protocol, according to the benefit structure and formulary for the beneficiary’s plan.  
+SHORT NAME:  — 
+LONG NAME:  STEP_THERAPY_YN 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+SOURCE: 
+CMS (HPMS Files) 
+VALUES: 
+0 = No 
+1 = Yes 
+COMMENT: 
+Part D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS 
+via the Health Plan Management System (HPMS).  
+This includes information on which drugs are subject to step therapy, which requires a beneficiary to 
+first try one or more other medications in the same therapeutic class. The value of this field may not 
+exactly represent the beneficiary experience at the time of the prescription fill (e.g., no data are 
+collected at the time of the transaction to indicate the actual beneficiary experience).  
+This variable is first available in the Formulary Excluded Drug file in 2012.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+17 
+STR 
+LABEL: 
+Drug Strength Description 
+DESCRIPTION: This variable is the strength or potency of the drug product as dispensed, according to the First 
+DataBank (FDB) reference files. When this variable appears in the Formulary file, it is the FDB drug 
+strength for a drug product on the formulary. 
+SHORT NAME: STR 
+LONG NAME: STR 
+TYPE: 
+CHAR 
+LENGTH: 
+10 
+SOURCE: 
+First DataBank 
+VALUES: 
+10-digit alpha/numeric value (e.g., 25MG, 1:10000, or 10MG/100ML) 
+COMMENT:  
+Description of drug potency may be expressed in units of grams, milligrams, percentage, and other 
+terms. In the Formulary file, this variable is populated by matching the drug products on the Part D 
+Plan submitted formulary to FDB. Part D plan sponsors submit the formulary to the CMS Health Plan 
+Management System (HPMS). Plans identify the drug products on their formularies using the National 
+Library of Medicine RxNorm Concept Unique Identifiers (RXCUIs). Each RXCUI corresponds to a unique 
+brand name and clinical formulation (same ingredients, strength, and dosage form). In the PDE file, 
+this variable is populated by linking to the proprietary First DataBank MedKnowledge database by 
+matching on the National Drug Code (NDC; variable in the PDE files called the product service 
+identifier PROD_SRVC_ID). Additional details regarding the FDB source data are available at: 
+http://www.fdbhealth.com/fdb-medknowledge/  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+18 
+TIER_ID 
+LABEL: 
+Tier Number 
+DESCRIPTION:  Medicare Part D formulary tier identifier. This field represents the cost sharing tier in which the drug 
+product was placed in the sponsor's formulary. This identifier is also a key that links a Part D sponsor's 
+cost sharing tier record in the Plan Characteristics File to a prescription drug event record (i.e., the PDE 
+data) using contract ID, plan ID, and tier ID. 
+SHORT NAME: — 
+LONG NAME: TIER_ID  
+TYPE: 
+CHAR  
+LENGTH: 
+2 
+SOURCE: 
+CMS (HPMS Files) 
+VALUES: 
+01–09 
+COMMENT: 
+For 2006–2009 this variable was found in the Part D Event Characteristics files. This variable is first 
+available in the Formulary file in 2010. It is also present in the Excluded Drug file, starting with 2012 
+data. It can be joined to PDE using the combination of the plan's formulary ID (variable called 
+FORMULARY_ID) and the CCW formulary drug identifier (variable called FORMULARY_RX_ID) to 
+determine the placement of a particular PDE on the formulary (according to plan design). The value of 
+this field may not exactly represent the beneficiary experience at the time of the prescription fill (e.g., 
+no data are collected at the time of the transaction to indicate the actual beneficiary experience). The 
+maximum number of tiers varied by year. The largest number of tiers was 9 (in 2007). From 2011–
+2020, only up to six tiers are possible; starting in 2021 plans are allowed to have up to seven tiers. The 
+CCW constructs the Plan Characteristics file from information submitted by Part D plan sponsors to 
+CMS’s Health Plan Management System (HPMS). 
+^ Back to TOC ^ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+Medicare Part D Formulary File Codebook │ October 2025 │ V 2.2 
+19 
+TYPE 
+LABEL: 
+Insulin Type as Defined by the Model 
+DESCRIPTION: Insulin Type as Defined by the Model 
+TYPE: 
+CHAR 
+LENGTH:  
+50 
+SOURCE: 
+CMS (HPMS files) 
+VALUES: 
+COMBINATION 
+CONCENTRATE 
+INTERMEDIATE-ACTING 
+LONG-ACTING 
+MIX 
+RAPID_ACTING 
+SHORT_ACTING 
+COMMENT: 
+The PDSS model file was new in 2021, and is retired after 2023. This PDSS Model file is not produced 
+after 2023. The type of drug for each insulin national drug code (NDC) was documented by CMS in the 
+NDC List for the model drugs. Additional details are on the CMS website; reference the Innovation 
+Center webpage for the Part D Senior Savings Program.  
+^ Back to TOC ^

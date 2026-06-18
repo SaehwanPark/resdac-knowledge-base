@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p118__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 118,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n100 \nCLM_PMT_AMT \nLABEL: \nClaim (Medicare) Payment Amount \nDESCRIPTION: The Medicare claim payment amount. \nFor hospital services, this amount does not include the claim pass-through per diem payments made \nby Medicare. To obtain the total amount paid by Medicare for the claim, the pass-through amount \n(which is the daily per diem amount) must be multiplied by the number of",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

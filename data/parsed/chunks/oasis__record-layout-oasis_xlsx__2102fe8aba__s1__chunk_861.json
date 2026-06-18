@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_861",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "to the subsequent provider\n1. Yes – Current reconciled medication list provided to the subsequent provide CHAR 1 x\nA2120_CRNT_MDCTN_LST_TRNSFR_CD Current Reconciled Medication List - Prvdr (Tra) Indicates whether, at the time of transfer to another provider, whether the current agency provided the patient’s current reconciled medication list to the subsequent provider. 0. No– Current reconciled medication list not provided to the subsequent provider \n1. Yes – Current reconciled medication list",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

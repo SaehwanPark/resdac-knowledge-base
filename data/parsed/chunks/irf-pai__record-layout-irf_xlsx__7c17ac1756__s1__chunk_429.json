@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_429",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n363 GG0170N2_4_STP_GOAL_CD GG0170N2_4_STP_GOAL_CD GG0170N2 Discharge Goal 4 Steps Code - The data in this column indicates the patient's discharge goal ability to go up and down four steps with or without a rail. CHAR 2 The data in this column indicates the patient's discharge goal ability to go up and down four steps with or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

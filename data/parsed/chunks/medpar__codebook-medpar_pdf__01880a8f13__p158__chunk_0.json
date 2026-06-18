@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p158__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 158,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n142 \nMDCR_PMT_AMT \nLABEL: \nTotal Medicare Payment Amount ($) \nDESCRIPTION: Amount of payment made from the Medicare trust fund for the services covered by the claim record. \nFor hospital services, this amount does not include the claim pass-through per diem payments made by \nMedicare. \nTo obtain the total amount paid by Medicare for the stay, the pass-through amount (which is the daily \nper diem",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__chunk_0",
+  "source_document": "data/raw/html/dataset_page/dbaf3aed47201c3fc4db788b6db09a84cd3fe53c.html",
+  "page": null,
+  "text": "The Original Medicare Fee-for-Service (FFS) Hospice file contains claims submitted by Medicare hospice providers. Records are included in the file regardless of whether the beneficiary is enrolled in fee-for-service Medicare or Medicare Advantage (Medicare managed care.)\nThis file is based on information from the CMS form 1450 (UB04).\nWhat does this file include? (variable highlights)\n- The level of hospice care received (e.g., home health aide, skilled nursing care)\n- Diagnosis (ICD diagnosis",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs?page=1"
+}

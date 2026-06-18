@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_395",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Respite Care This field indicates the reason the patient was admitted to a nursing home was for respite care. 0 = Not Checked, 1 = Checked CHAR 1 x\nM2440_NH_THERAPY M2440 (M0900) Nursing Home Reason- Therapy Services This field indicates the reason the patient was admitted to a nursing home was for therapy services. 0 = Not Checked, 1 = Checked CHAR 1 x\nM2440_NH_UK M2440 (M0900) Nursing Home Reason- Unknown This field indicates the reason the patient was admitted to a nursing home was for",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

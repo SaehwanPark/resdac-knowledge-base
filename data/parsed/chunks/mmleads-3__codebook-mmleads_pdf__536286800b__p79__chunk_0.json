@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p79__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 79,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n68 \nMDCD_WVR_1915C_TYPE_CD \nLABEL: \nMedicaid — 1915(c) Waiver Type Code — Latest in Year \nDESCRIPTION: This variable is the code to indicate the type of 1915(c) waiver under which the beneficiary received \nMedicaid coverage; most recent in the calendar year. \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS DE file \nVALUES: \n06 = 1915(c) — Aged and Disabled \n07 = 1915(c) — Aged \n08 = 1915(c) — Physical Disabilities \n09 = 1915(c) —",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

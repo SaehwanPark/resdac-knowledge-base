@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_24",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Group).\n40 _23 ONST_DT (23) Date of Onset DATE 8 The onset date of the impairment that was coded in Item 21 (Impairment Group).\n41 _24A CMRBD_COND_A_CD (24A) Comorbid Conditions (ICD-9 Code) CHAR 7 An ICD-9 code for comorbid conditions. A comorbidity is a specific condition that also affects a patient in addition to the principal diagnosis or impairment that is used to place a patient into a rehabilitation impairment category.\n42 _24B CMRBD_COND_B_CD (24B) Comorbid Conditions (ICD-9 Code) CHAR",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

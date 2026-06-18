@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p13__chunk_3",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 13,
+  "text": "identifiers were allowed on the PDE. HCIdea has prescriber information \nfrom a variety of data sources, including the NPPES directory (the National Plan and Provider \nEnumeration System, which assigns a unique NPI to each provider), the Drug Enforcement \nAdministration (through data files known as the Controlled Substances Act Registrants), and \nSureScripts (a nationwide e-prescribing network). Using these input files, it is generally possible to \nidentify a unique provider using an NPI, DEA",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

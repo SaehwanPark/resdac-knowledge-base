@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 14,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n6 \nCMS_RGN \nLABEL: \nCMS Region for Submitting State \nDESCRIPTION: Submitting State FIPS Code grouped into the 10 CMS Regions. \nSHORT NAME: CMS_RGN \nLONG NAME: CMS_RGN \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n1 = Region 1: CT, MA, ME, NH, RI, VT \n2 = Region 2: NJ, NY, PR, VI \n3 = Region 3: DE, DC, MD, PA, VA, WV \n4 = Region 4: AL, FL,",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Beneficiary date of birth DATE 8\nV_DOD_SW VALID_DEATH_DT_SW Valid Date of Death Switch CHAR 1\nDEATH_DT BENE_DEATH_DT Date of Death DATE 8\nSEX SEX_IDENT_CD Sex CHAR 1\nRACE BENE_RACE_CD Beneficiary Race Code CHAR 1\nRTI_RACE_CD RTI_RACE_CD Research Triangle Institute (RTI) Race Code CHAR 1\nCOVSTART COVSTART Medicare Coverage Start Date DATE 8\nOREC ENTLMT_RSN_ORIG Original Reason for Entitlement Code CHAR 1\nCREC ENTLMT_RSN_CURR Current Reason for Entitlement Code CHAR 1\nESRD_IND ESRD_IND End-stage",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

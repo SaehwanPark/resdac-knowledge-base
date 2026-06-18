@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p35__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 35,
+  "text": "plan that enrolls infants and children under age 19, and children with non-IV-E adoption \nassistance Medicaid populations. Accordingly, MC_PLAN_ELGBLTY_GRP_POP_CD will equal “07” on \nthe first Population Enrolled record and MC_PLAN_ELGBLTY_GRP_POP_CD will equal “29” on the \nsecond Population Enrolled record. These population enrolled variables are also used to create the \nMedicaid population indicators on the MCP base file, such as MDCD_MAND_CVRG_ADLT_POP_IND, \netc. For example, if any of the",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

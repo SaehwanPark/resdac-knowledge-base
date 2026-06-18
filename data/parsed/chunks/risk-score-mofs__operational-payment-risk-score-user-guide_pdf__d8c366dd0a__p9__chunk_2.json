@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p9__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 9,
+  "text": "to identify \nthe beneficiary’s correct monthly payment score, i.e., the monthly “resolved” risk scores for each beneficiary.11 There \nare four types of variables in the file: 1) overall monthly scores, 2) monthly model indicators, 3) long-term institutional \nmonthly indicators, and 4) non-resolved payment scores. Reference Table 1 for a list of fields containing resolved \nscores. CMS calculates payment risk scores for all model segments for a beneficiary, regardless of the beneficiary’s",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

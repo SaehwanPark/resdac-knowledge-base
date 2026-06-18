@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p235__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 235,
+  "text": "also known as a preferred pharmacy within a split network) \nduring the pre-initial coverage limit (ICL) phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nStarting in 2016, CMS changed how they describe pharmacy networks. The INPP are currently referred \nto as preferred pharmacies within split networks. There is no change in the meaning of the variable, \nand the data values are the same over time. \nThe CCW constructs the plan characteristics",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

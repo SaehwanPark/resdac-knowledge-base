@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_517",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Trans - Paper-based CHAR 1 This column documents whether, at the time of discharge, the transmission route of patient's current reconciled medication list to the patient, family and/or caregiver was paper based. 0 = No\n1 = Yes\n^ = Blank\n454 ROUTE_RSDNT_OTHR_CD ROUTE_RSDNT_OTHR_CD Patient Trans - Other Methods CHAR 1 This column documents whether, at the time of discharge, the transmission route of patient's current reconciled medication list to the patient, family and/or caregiver was an",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

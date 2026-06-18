@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p43__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 43,
+  "text": "NUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Long-Term Care Claims File (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as the sum of all MDCD_PD_AMT from the Long-Term care (header) \nclaims. The Center for Medicaid and CHIP Services (CMCS) at CMS has required redaction of this \npayment field for managed care claims due to the proprietary and confidential nature of this \ninformation. Therefore, when summing Medicaid expenditures using the claim files it is important to \nkeep in mind that",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

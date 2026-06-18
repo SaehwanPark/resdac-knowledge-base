@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p48__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 48,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n32 \nBENE_RSDNC_SSA_STATE_CD \nLABEL: \nSSA standard state code of the beneficiary’s residence \nDESCRIPTION: This variable is the two-digit Social Security Administration (SSA) code for the state identified as the \nbeneficiary mailing address. \nSHORT NAME: STATE_CD \nLONG NAME: BENE_RSDNC_SSA_STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n01 = Alabama \n02 = Alaska \n03 = Arizona \n04 =",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

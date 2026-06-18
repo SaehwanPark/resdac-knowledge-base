@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p266__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 266,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n250 \nWRNG_IND_CD \nLABEL: \nWarning indicators code specifying detailed billing info \nDESCRIPTION: The codes (commonly called warning indicators) specify detailed billing information obtained from the \nclaims analyzed for the stay. The purpose of these codes is to provide additional information for the \nMEDPAR user, i.e., let the user know whether the stay included adjustments, a single claim or",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

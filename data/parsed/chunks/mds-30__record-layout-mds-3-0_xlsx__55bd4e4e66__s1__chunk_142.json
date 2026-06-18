@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_142",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "(skip pattern)\n174 E0900_WNDR_CD E0900_WNDR_CD E0900 Wandering: Presence and Frequency CHAR 1 The data in this column identifies the frequency that the resident wandered. -=Not assessed/no information\n0=Behavior not exhibited\n1=Behavior of this type occured 1 to 3 days\n2=Behavior of this type occurred 4 to 6 days, but less than daily\n3=Behavior of this type occurred daily\n^=Blank (skip pattern)\n175 E1000A_WNDR_RISK_CD E1000A_WNDR_RISK_CD E1000A Wander Risk Impact CHAR 1 The data in this column",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

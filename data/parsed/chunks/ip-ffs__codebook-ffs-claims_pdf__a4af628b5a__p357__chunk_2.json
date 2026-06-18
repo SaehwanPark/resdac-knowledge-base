@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p357__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 357,
+  "text": "types (e.g., home health and SNF) use resource groupings, which are similar to case-\nmix groups, as the basis for payment (e.g., HHRG, SNF RUGs). \nFor home health (HH) claims, when the revenue center code (variable called REV_CNTR) is 0023, the \nHHRG is located in this field and is a HIPPS code. This field is only meaningful for a HH claim when CMS \ndetermines the claim should be paid using a different HIPPS code than the one submitted by the \nprovider. When this happens, the revised HIPPS code",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

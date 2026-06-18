@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_201",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Disease diagnosis: diseases - pulmonary - emphysema/COPD. 0 = No, 1 = Yes, \"-\" = Unknown.\n296 I1J I1J_PERI_VAC_DIS (I1J) Peripheral Vascular Disease CHAR 1 Disease diagnosis: diseases - heart/circulation - peripheral vascual disease. 0 = No, 1 = Yes, \"-\" = Unknown.\n297 I1JJ I1JJ_CATARACTS (I1JJ) Cataracts CHAR 1 Disease diagnosis: diseases - sensory - cataracts. 0 = No, 1 = Yes, \"-\" = Unknown.\n298 I1K I1K_OTH_CARDIO_DIS (I1K) Other Cardiovascular Disease CHAR 1 Disease diagnosis:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

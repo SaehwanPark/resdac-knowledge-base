@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "CHAR 2\nMDCR_STATUS_CD_04 Medicare Status Code - April CHAR 2\nMDCR_STATUS_CD_05 Medicare Status Code - May CHAR 2\nMDCR_STATUS_CD_06 Medicare Status Code - June CHAR 2\nMDCR_STATUS_CD_07 Medicare Status Code - July CHAR 2\nMDCR_STATUS_CD_08 Medicare Status Code - August CHAR 2\nMDCR_STATUS_CD_09 Medicare Status Code - September CHAR 2\nMDCR_STATUS_CD_10 Medicare Status Code - October CHAR 2\nMDCR_STATUS_CD_11 Medicare Status Code - November CHAR 2\nMDCR_STATUS_CD_12 Medicare Status Code - December CHAR",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

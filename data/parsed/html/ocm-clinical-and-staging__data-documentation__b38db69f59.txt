@@ -1,0 +1,25 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| DOB | Beneficiary Date of Birth | 
+| SEX | Beneficiary Sex | 
+| EPSD_BGN_DT | Episode Beginning Date | 
+| EPSD_END_DT | Episode Ending Date | 
+| DOD | Beneficiary Date of Death | 
+| CNCR_TYPE_ASGNED | OCM-Assigned Cancer Type | 
+| PRFMNC_PRD | OCM 6 Month Performance Period | 
+| RPTD_TO_RGSTRY | Participant Reported Episode to OCM Registry | 
+| ICD10_CNCR_DGNS_CD_RPTD | ICD10 Cancer Diagnosis Code Reported by Participant | 
+| CNCR_TYPE_RPTD | Participant-Reported Cancer Type | 
+| INITL_DGNS_DT | Initial Diagnosis Date | 
+| AJCC_EDITION | AJCC Cancer Staging Edition | 
+| PRMRY_TUMOR | Primary Tumor Staging | 
+| NODAL_DISEASE | Nodal Disease Staging | 
+| METASTASIS | Metastasis Staging | 
+| ESTROGEN_RECEPTOR | Breast Cancer Estrogen Receptor | 
+| PROGESTERONE_RECEPTOR | Breast Cancer Progesterone Receptor | 
+| HER2_AMPLIFICATION | HER2 Amplification | 
+| HISTOLOGY | Histology |

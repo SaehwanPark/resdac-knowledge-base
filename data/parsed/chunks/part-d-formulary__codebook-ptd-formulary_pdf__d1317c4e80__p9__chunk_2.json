@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p9__chunk_2",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 9,
+  "text": "variables (tier, step therapy, \nquantity limits, and prior authorization) to the PDE data will need to link the FORMULARY_ID and \nFRMLRY_RX_ID to the Formulary Characteristics file to get the UM variables. The CCW constructs a \nFormulary Characteristics file from the CMS Approved Formulary Data found in the CMS’s Health Plan \nManagement System (HPMS). This variable is first available in 2010. This variable was always \nencrypted from 2010–2012 to comply with CMS privacy rules. \n^ Back to TOC ^",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

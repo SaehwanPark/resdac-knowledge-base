@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-practice-list__data-documentation__ef2a095405__chunk_1",
+  "source_document": "data/raw/html/documentation_page/ef2a0954051ab868decb1ea31e3aa95aea747cde.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| PRACTICE_ID | Model-Assigned Practice ID | \n| BILLING_TIN | Practice's Billing TIN | \n| TINS | List of Taxpayer Identification Numbers for the Practice | \n| NPIS | List of National Provider Identifiers in the Practice | \n| PRACTICE_NAME | Name of Practice | \n| GROUP_TYPE | Practice Group Type | \n| CCNS | List of CMS Certification Numbers (Facility Numbers) for the Practice | \n| ADDRESS_LINE_1 |",
+  "dataset": "million-hearts-model-practice-list",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-practice-list/data-documentation"
+}

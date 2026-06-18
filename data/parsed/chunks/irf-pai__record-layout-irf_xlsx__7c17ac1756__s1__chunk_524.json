@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_524",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "status interview should be conducted. 0 = No (patient is rarely/never understood)\n1 = Yes\n- = Not Assessed/No Information\n460 WORD_RPTTN_1ST_ATMPT_DSCHRG_CD WORD_RPTTN_1ST_ATMPT_DSCHRG_CD BIMS - Repetition of Three Words (Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was able to repeat three words just spoken to them. 3 = Three \n2 = Two \n1 = One \n0 = None \n- = Not Assessed/No Information \n^ = Blank\n461 RPT_CRCT_YR_DSCHRG_CD RPT_CRCT_YR_DSCHRG_CD BIMS -",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

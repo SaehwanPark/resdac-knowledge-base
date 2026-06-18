@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 7,
+  "text": "(zero) for valid occurrences and \nwill be incremented by 1 for audited rows with the same key fields. \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) \nFILE(S): \nPart D Beneficiary Plan Election file \nVALUES: \n0 = valid (effective) transaction \n1–X = audited records \nCOMMENT: \nWhile a beneficiary can only be enrolled in one Part D plan during a given time period there may be \nmore than one enrollment transaction with an audit sequence number of zero for that time period.",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_22",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "Present on Admission (POA) Indicator Code (Encounter) | \n\n | 106 | CLM_E_POA_IND_SW8 | Claim Diagnosis E Code 8 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 107 | CLM_E_POA_IND_SW9 | Claim Diagnosis E Code 9 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 108 | CLM_E_POA_IND_SW10 | Claim Diagnosis E Code 10 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 109 | ICD_PRCDR_CD1 | Claim Procedure Code 1 (Encounter) | \n\n | 110 |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

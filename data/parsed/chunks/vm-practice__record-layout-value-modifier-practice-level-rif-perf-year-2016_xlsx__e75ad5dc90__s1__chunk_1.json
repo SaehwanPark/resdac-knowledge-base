@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-practice__record-layout-value-modifier-practice-level-rif-perf-year-2016_xlsx__e75ad5dc90__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/e75ad5dc90d8b0bcd7b35ea5b41e8e51e49d04b1.xlsx",
+  "page": 1,
+  "text": "Practice Name 2 Char 70\nSTATE Location (state) of practice State in which practice is located 3 Char 2\nGET_REPORT Full QRUR received Indicator for whether practice received full Quality and Resource Use Report (QRUR) 4 Num 8 Equals 1 if practice received a full Quality and Resource Use Report (QRUR)\nVM_PAYMENT_ADJ_POST_IR Value Modifier payment adjustment (post-IR) Updated Value Modifier payment adjustment after Informal Review process 5 Char 8 AF stands for Adjustment Factor.\nVM_PAYMENT_ADJ",
+  "dataset": "vm-practice",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-practice-level-rif-perf-year-2016.xlsx"
+}

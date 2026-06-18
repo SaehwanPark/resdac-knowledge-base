@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_241",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "at discharge.\n208 UNSTGBL_PRSR_ULCR_NON_NUM UNSTGBL_PRSR_ULCR_NON_NUM M0300E2 Unstageable Pressure Ulcers non-Removable Dressing Discharge on Admission Number CHAR 1 The number of unstageable pressure ulcers due to non-removable dressing/device that were unstageable on admission.\n209 UNSTGBL_PRSR_ULCR_STG_NUM UNSTGBL_PRSR_ULCR_STG_NUM M0300E3 Unstageable Pressure Ulcers non-Removable Dressing Discharge Stageable on Admission Number CHAR 1 The number of unstageable pressure ulcers due to",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

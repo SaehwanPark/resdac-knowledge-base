@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p93__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 93,
+  "text": "NCH \nVALUES: \n— \nCOMMENT: \nThis field comes from the actual DRG code (or MS-DRG code) that is present on the last claim record \nincluded in the stay. \nThe exception is if the DRG code is not present (e.g., claims from Maryland and PPS-exempt hospital \nunits do not have a DRG), then a valid DRG is obtained using the grouper software and is moved to this \nfield. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

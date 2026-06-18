@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p198__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 198,
+  "text": "SHORT NAME: PROD_RPLCMT_LIFECYC_SW \nLONG NAME: PROD_RPLCMT_LIFECYC_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = Yes, product replaced early/within product lifecycle \nN = No, product not replaced early (or not applicable) \nCOMMENT: \nIf any claim that comprises the Stay has a condition code (CLM-RLT-COND-CD) equal to '49' then the \nMEDPAR Product Replacement within Product Lifecycle Switch = 'Y'. If no '49' condition code, then this \nfield ='N'. \nThis field is new in 2011. \n^ Back to",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

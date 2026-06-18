@@ -1,0 +1,635 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: 
+Acute Hospital Care at Home (AHCAH)  
+Patient and Hospital Data Files 
+JANUARY 2024 │ VERSION 1.0 
+
+
+  
+This page intentionally left blank. 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+January 2024 
+S. Pietzsch 
+Initial release of codebook  
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the CMS Acute Hospital Care at Home (AHCAH) 
+research files. Because the files have many variables, we have included several ways for users to quickly find the 
+information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used. 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents. 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:  
+ 
+ 
+Variable Details............................................................................................................................................................. 1 
+ADMSN_DT ............................................................................................................................................................... 1 
+AHCAH_WVR_SUBMSN_ID ....................................................................................................................................... 2 
+BENE_ID ................................................................................................................................................................... 3 
+CCN 
+ .................................................................................................................................................................... 4 
+DISCHARGES ............................................................................................................................................................. 5 
+ESCALATIONS ............................................................................................................................................................ 6 
+FAC_DATA_SUBMSN_DT........................................................................................................................................... 7 
+FAC_TIER .................................................................................................................................................................. 8 
+MORTALITIES ............................................................................................................................................................ 9 
+PGM_ID .................................................................................................................................................................. 10 
+PRVDR_ADR ............................................................................................................................................................ 11 
+PRVDR_CITY ............................................................................................................................................................ 12 
+PRVDR_NAME......................................................................................................................................................... 13 
+PRVDR_PHNE_NUM................................................................................................................................................ 14 
+PRVDR_STATE ......................................................................................................................................................... 15 
+PRVDR_ZIP_CD ....................................................................................................................................................... 16 
+STATE_BENE_MDCD_ID .......................................................................................................................................... 17 
+ 
+ 
+ 
+ 
+ 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the CMS Acute Hospital Care at Home (AHCAH) 
+data files. Each entry contains variable details to facilitate understanding and use of the variables. 
+ADMSN_DT 
+LABEL: 
+Facility Admission Date 
+DESCRIPTION: Date of the patient’s admission to the facility. 
+SHORT NAME: ADMSN_DT 
+LONG NAME: ADMSN_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Patient 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+25NOV2020 forward 
+COMMENT: 
+Formatted as MMDDYY10. in SAS.  The earliest date a patient could be admitted to a facility under the 
+AHCAH waiver is November 25, 2020. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+2 
+AHCAH_WVR_SUBMSN_ID 
+LABEL: 
+AHCAH Waiver Submission ID 
+DESCRIPTION: The AHCAH waiver submission ID. The waiver ID is assigned to the participating hospital CCN (CMS 
+Certification Number); there is only one AHCAH_WVR_SUBMSN_ID for each CCN.  
+SHORT NAME: AHCAH_WVR_SUBMSN_ID 
+LONG NAME: AHCAH_WVR_SUBMSN_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+15 
+FILE(S):  
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+Ex – AHCAH-1234, AHCAH-99887 
+COMMENT: 
+Formatted as AHCAH-xxxxx 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+3 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. 
+The CCW assigns a unique beneficiary identification number to each individual who receives Medicare 
+and/ or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., 
+Medicare claims and enrollment, T-MSIS claims, and MDS assessment data).  
+This number does not change during a beneficiary’s lifetime, and CCW uses each number only once.  
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME: BENE_ID 
+LONG NAME: BENE_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+15 
+FILE(S): 
+Patient 
+SOURCE:  
+CCW 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+4 
+CCN 
+LABEL: 
+CMS Certification Number (Facility Provider Number) 
+DESCRIPTION: CMS Certification Number; the hospital provider number used to verify Medicare/Medicaid 
+certification 
+SHORT NAME: CCN 
+LONG NAME: CCN 
+TYPE: 
+CHAR 
+LENGTH:  
+6 
+FILE(S):  
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+Ex – 030036, 220110 
+ 
+COMMENT: 
+If attempting to join to Medicare claims files in the CCW, the 6-digit CCN is called the provider number 
+(PRVDR_NUM). 
+^ Back to TOC ^ 
+  
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+5 
+DISCHARGES 
+LABEL: 
+Count of AHCAH Discharges During the Data Submission Period 
+DESCRIPTION: The number of patients discharged from the inpatient care episode during the data submission period.   
+ 
+SHORT NAME: DISCHARGES 
+LONG NAME: DISCHARGES 
+TYPE: 
+NUM 
+LENGTH:  
+8 
+FILE(S):  
+Hospital 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+0─### 
+COMMENT: 
+The data submission period represents the data submission for the previous month or week.  Data 
+submissions are due to CMS by midnight of Wednesday for the previous week or month; therefore, 
+submission dates may be a few days after the last day of the week or month.  
+There are two tiers of experience (assigned by CMS during evaluation of the facility’s waiver 
+submission) that determine whether the facility submits data monthly or weekly: Tier 1 hospitals have 
+treated “at home” at least 25 patients meeting inpatient admission criteria through their existing 
+program prior to requesting an AHCAH waiver; Tier 2 hospitals have treated “at home” fewer than 25 
+patients, or none at all, prior to requesting a waiver.  Tier 1 hospitals (variable called FAC_TIER=1) 
+submit AHCAH data on a monthly basis; Tier 2 facilities (variable called FAC_TIER=2) submit data on a 
+weekly basis. 
+ 
+ ^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+6 
+ESCALATIONS 
+LABEL: 
+Count of AHCAH Patients Transferred Back to Inpatient Facility During the Data Submission Period 
+DESCRIPTION: The number of patients served by the hospital at home program who were transferred back to the 
+traditional inpatient setting from the home during the data submission period. 
+ 
+SHORT NAME: ESCALATIONS 
+LONG NAME: ESCALATIONS 
+TYPE: 
+NUM 
+LENGTH:  
+8 
+FILE(S):  
+Hospital 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+0, 1+ 
+ 
+COMMENT: 
+Occasionally a negative value may appear in a data submission; theses are corrections to prior data.  
+Data users should interpret the negative values to mean zero (no escalations). 
+The data submission period represents the data submission for the previous month or week. Data 
+submissions are due to CMS by midnight of Wednesday for the previous week or month; therefore, 
+submission dates may be a few days after the last day of the week or month.  
+There are two tiers of experience (assigned by CMS during evaluation of the facility’s waiver 
+submission) that determine whether the facility submits data monthly or weekly: Tier 1 hospitals have 
+treated “at home” at least 25 patients meeting inpatient admission criteria through their existing 
+program prior to requesting an AHCAH waiver; Tier 2 hospitals have treated “at home” fewer than 25 
+patients, or none at all, prior to requesting a waiver.  Tier 1 hospitals (variable called FAC_TIER=1) 
+submit AHCAH data on a monthly basis; Tier 2 facilities (variable called FAC_TIER=2) submit data on a 
+weekly basis.  
+   
+ 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+7 
+FAC_DATA_SUBMSN_DT 
+LABEL: 
+Facility Data Submission Date 
+DESCRIPTION: The date the facility submitted weekly or monthly data to CMS.  
+ 
+SHORT NAME: FAC_DATA_SUBMSN_DT 
+LONG NAME: FAC_DATA_SUBMSN_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+23DEC2020 forward  
+COMMENT: 
+Formatted as MMDDYY10. in SAS  
+ 
+The data submission period represents the data submission for the previous month or wee. Data 
+submissions are due to CMS by midnight of Wednesday for the previous week or month; therefore, 
+submission dates may be a few days after the last day of the week or month.  
+There are two tiers of experience (assigned by CMS during evaluation of the facility’s waiver 
+submission) that determine whether the facility submits data monthly or weekly: Tier 1 hospitals have 
+treated “at home” at least 25 patients meeting inpatient admission criteria through their existing 
+program prior to requesting an AHCAH waiver; Tier 2 hospitals have treated “at home” fewer than 25 
+patients, or none at all, prior to requesting a waiver.  Tier 1 hospitals (variable called FAC_TIER=1) 
+submit AHCAH data on a monthly basis; Tier 2 facilities (variable called FAC_TIER=2) submit data on a 
+weekly basis.  
+^ Back to TOC ^ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+8 
+FAC_TIER 
+LABEL: 
+Tier 1: 25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients 
+DESCRIPTION: The level of experience the facility had with providing hospital at home services at the time the CMS 
+waiver for AHCAH was requested. Tier 1 hospitals treated “at home” at least 25 patients meeting 
+inpatient admission criteria through their program prior to requesting an AHCAH waiver; Tier 2 
+hospitals treated “at home” 24 or fewer patients (or none at all) prior to requesting a CMS waiver. 
+ 
+SHORT NAME: FAC_TIER 
+LONG NAME: FAC_TIER 
+TYPE: 
+NUM 
+LENGTH:  
+1 
+FILE(S):  
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+1 = hospital had 25+ patients who received hospital at home inpatient services  
+2 = hospital had <= 24 patients who received hospital at home inpatient services 
+COMMENT: 
+The categorization of hospitals into the facility tier (FAC_TIER) uses historical information and does not 
+change during the AHCAH program. The FAC_TIER determines whether the hospital must submit data 
+to CMS weekly or monthly. If FAC_TIER =1, the hospital submits data monthly; if FAC_TIER =2, the 
+hospital submits data weekly. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+9 
+MORTALITIES 
+LABEL: 
+Count of AHCAH Mortalities During the Data Submission Period 
+DESCRIPTION: The number of patients served by the hospital at home program who died during the data submission 
+period, including those whose care was escalated to the hospital (excluding those on hospice or those 
+for whom death was expected). 
+SHORT NAME: MORTALITIES 
+LONG NAME: MORTALITIES 
+TYPE: 
+NUM 
+LENGTH:  
+8 
+FILE(S):  
+Hospital 
+ 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+0, 1+ 
+COMMENT: 
+Occasionally a negative value may appear in a data submission; theses are corrections to prior data.  
+Data users should interpret the negative values to mean zero (no mortalities). 
+The data submission period represents the data submission for the previous month or week. Data 
+submissions are due to CMS by midnight of Wednesday for the previous week or month; therefore, 
+submission dates may be a few days after the last day of the week or month.  
+There are two tiers of experience (assigned by CMS during evaluation of the facility’s waiver 
+submission) that determine whether the facility submits data monthly or weekly: Tier 1 hospitals have 
+treated “at home” at least 25 patients meeting inpatient admission criteria through their existing 
+program prior to requesting an AHCAH waiver; Tier 2 hospitals have treated “at home” fewer than 25 
+patients, or none at all, prior to requesting a waiver.  Tier 1 hospitals (variable called FAC_TIER=1) 
+submit AHCAH data on a monthly basis; Tier 2 facilities (variable called FAC_TIER=2) submit data on a 
+weekly basis.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+10 
+PGM_ID 
+LABEL: 
+Program Identifier (1=FFS Medicare; 2=FFS Medicaid; 3=Dual) 
+DESCRIPTION: A constructed data element identifying the applicable CMS program of which the patient is a 
+beneficiary. 
+SHORT NAME: PGM_ID 
+LONG NAME: PGM_ID 
+TYPE: 
+NUM 
+LENGTH:  
+1 
+FILE(S):  
+Patient 
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+1 = FFS Medicare 
+2 = FFS Medicaid  
+3 = Dually eligible for both Medicare and Medicaid (and enrolled in FFS for both) 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+11 
+PRVDR_ADR 
+LABEL: 
+Facility Location Address 
+DESCRIPTION: The facility location’s address. 
+SHORT NAME: PRVDR_ADR 
+LONG NAME: PRVDR_ADR 
+TYPE: 
+CHAR 
+LENGTH:  
+510 
+FILE(S):  
+Patient and hospital 
+ 
+SOURCE:  
+AHCAH facility-submitted data (verified by CMS) 
+VALUES:  
+Ex — 12345 Main St 
+ 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+12 
+PRVDR_CITY 
+LABEL: 
+Facility Location City 
+DESCRIPTION: The facility location’s city. 
+SHORT NAME: PRVDR_CITY 
+LONG NAME: PRVDR_CITY 
+TYPE: 
+CHAR 
+LENGTH:  
+255 
+FILE(S): 
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data (verified by CMS) 
+VALUES:  
+Ex — Concord 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+13 
+PRVDR_NAME 
+LABEL: 
+Name of Facility 
+DESCRIPTION: The facility’s name. 
+SHORT NAME: PRVDR_NAME 
+LONG NAME: PRVDR_NAME 
+TYPE: 
+CHAR 
+LENGTH:  
+255 
+FILE(S): 
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data (verified by CMS) 
+VALUES:  
+Ex – Best hospital 
+ 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+14 
+PRVDR_PHNE_NUM 
+LABEL: 
+Facility Phone Number 
+DESCRIPTION: The facility location’s phone number. 
+SHORT NAME: PRVDR_PHNE_NUM 
+LONG NAME: PRVDR_PHNE_NUM 
+TYPE: 
+CHAR 
+LENGTH:  
+22 
+FILE(S):  
+Patient and hospital 
+ 
+SOURCE:  
+AHCAH facility-submitted data (verified by CMS) 
+VALUES:  
+Ex – (202)867-5309 
+ 
+COMMENT: 
+Formatted (999)999–9999 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+15 
+PRVDR_STATE 
+LABEL: 
+Provider State 
+DESCRIPTION: The state in which the hospital facility is located. 
+SHORT NAME: PRVDR_STATE 
+LONG NAME: PRVDR_STATE 
+TYPE: 
+CHAR 
+LENGTH:  
+2 
+FILE(S): 
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data (verified by CMS) 
+VALUES:  
+Two-character postal state code 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+16 
+PRVDR_ZIP_CD 
+LABEL: 
+Facility Location Zip Code 
+DESCRIPTION: The facility location’s ZIP code. 
+SHORT NAME: PRVDR_ZIP_CD 
+LONG NAME: PRVDR_ZIP_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+FILE(S):  
+Patient and hospital 
+SOURCE:  
+AHCAH facility-submitted data (verified by CMS) 
+VALUES:  
+Formatted as either 5-digit or the full 9-digit (ZIP + 4 ) code 
+Ex — 99999 or 99999-9999 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 
+17 
+STATE_BENE_MDCD_ID 
+LABEL: 
+Encrypted State-Specific Medicaid Beneficiary ID 
+DESCRIPTION: The state-assigned beneficiary identifier for individual Medicaid beneficiaries receiving Medicaid 
+services.  
+ 
+SHORT NAME: STATE_BENE_MDCD_ID 
+LONG NAME: STATE_BENE_MDCD_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+32 
+FILE(S):  
+Patient  
+SOURCE:  
+AHCAH facility-submitted data 
+VALUES:  
+Ex - ABC123XYZ9875555555DDDDDDD55DD 
+COMMENT: 
+This ID number may not be the state’s Transformed Medicaid Statistical Information System (T-MSIS) 
+identifier (MSIS_ID) for the patient. That means it may not be possible to join the AHCAH data with the 
+CCW Medicaid T-MSIS data files (e.g., if interested in identifying the actual inpatient claims for these 
+patients). 
+^ Back to TOC ^

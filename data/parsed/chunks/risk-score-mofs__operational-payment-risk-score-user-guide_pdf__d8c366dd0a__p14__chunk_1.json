@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p14__chunk_1",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 14,
+  "text": "The variable names for each of these HCCs begins with “V22_”. \nThis file is available starting with 2019. Starting with 2020, CMS produces two versions of the V22 file per year using \nvarious data inputs for the model; therefore for each beneficiary there are two records in the annual V22 file. CCW \nderived a field called the MOF diagnosis input file source code (MOF_DGNS_INPUT_CD) in the MOFs to identify the \ntwo versions. Table 5 describes the field values. The two values for V22 are",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

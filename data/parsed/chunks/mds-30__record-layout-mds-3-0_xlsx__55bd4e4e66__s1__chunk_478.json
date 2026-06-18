@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_478",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "O0450B_RSMPTN_THRPY_DT O0450B Date Therapy Resumed CHAR 8 The data in this column indicates the date on which the therapy regime resumed. effective 10/01/2011\ndiscontinued 9/30/2019\n539 O0500A_PSV_ROM_NUM O0500A_PSV_ROM_NUM O0500A Restorative Nursing: Passive Range of Motion Number CHAR 1 The data in this column indicates the number of days that the resident received passive range of motion (ROM) for at least 15 minutes a day in the last seven days. 0 Minimum\n7 Maximum\n- Not assessed/no",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

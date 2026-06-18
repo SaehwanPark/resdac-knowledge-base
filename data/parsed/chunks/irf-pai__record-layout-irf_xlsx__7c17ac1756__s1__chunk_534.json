@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_534",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "changes in severity) \n- = Not Assessed/No Information\n471 DFCLTY_ATTN_DSCHRG_CD DFCLTY_ATTN_DSCHRG_CD Delirium: Inattention (Dsch) CHAR 1 At the time of discharge, did the patient have difficulty focusing attention, for example, being easily distractible or having difficulty keeping track of what was being said? 0 = Behavior not present \n1 = Behavior continuously present, does not fluctuate \n2 = Behavior present, fluctuates (comes and goes, changes in severity) \n- = Not Assessed/No",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

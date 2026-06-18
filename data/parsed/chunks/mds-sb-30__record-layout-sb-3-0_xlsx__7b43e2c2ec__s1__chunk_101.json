@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_101",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "09/30/2023\n134 D0200I1_NGTV_STATE_CD D0200I1_NGTV_STATE_CD D0200I1 Resident Mood Interview - Negative Statement Code CHAR 1 The data in this column indicates if the resident is experiencing negative thoughts (that they would be better off dead; thoughts of hurting themselves in some way). -=Not assessed/no information\n0=No (enter 0 in column 2)\n1=Yes (enter 0-3 in column 2)\n9=No response (leave column 2 blank)\n^=Blank (skip pattern) discontinued 09/30/2023\n135 D0200I2_NGTV_STATE_FREQ_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

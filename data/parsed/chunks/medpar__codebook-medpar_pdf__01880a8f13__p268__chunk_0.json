@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p268__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 268,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n252 \nWarning indicator 8 ('duplicate indicator' derived from the presence of two claim records with the same \nclaim number admission date, provider number, claim from/thru date, HCFA process date and query \ncode; death/admission date indicator derived by comparing the admission date on the final claim(s) that \ncomprise the stay to the beneficiary death date): \n0 = Do duplicate record \n1 = Duplicate",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

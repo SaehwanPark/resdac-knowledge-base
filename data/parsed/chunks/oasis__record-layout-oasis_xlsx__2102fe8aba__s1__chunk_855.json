@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_855",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Guamanian or Chamorro Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010M_RACE_SMOAN_CD Race: Samoan Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010N_RACE_OTHR_PCFCISLNDR_CD Race: Other Pacific Islander Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010X_RACE_NO_RSPNS_CD Race: Patient unable to respond Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010Y_RACE_DCLN_RSPNS_CD Race: Patient declines to respond",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

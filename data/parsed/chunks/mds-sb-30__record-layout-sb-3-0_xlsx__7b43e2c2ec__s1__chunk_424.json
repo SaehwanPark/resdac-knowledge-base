@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_424",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "9/30/2023\n476 N0410G_DRTC_DAY_NUM N0410G_DRTC_DAY_NUM N0410G Medications Received: Diuretic Number Days CHAR 1 The data in this column indicates the number of days that the resident received a diurectic in the past seven days or since admission/reentry if less than seven days. 0 Minimum\n7 Maximum\n- Not assessed/no information effective 4/01/2012\ndiscontinued 9/30/2023\n477 O0100A1_CHMTHRPY_PRIOR_CD O0100A1_CHMTHRPY_PRIOR_CD O0100A1 Special Treatments/Programs: Chemotherapy Pre-admit Code CHAR 1",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

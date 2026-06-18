@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p330__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 330,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n290 \nWVR_1915BC_MOS \nLABEL: \n1915(b)(c) Waiver Months \nDESCRIPTION: Number of months the beneficiary was enrolled in a concurrent (combined) Section 1915(b)(c) waiver \nin the calendar year. \nSHORT NAME: WVR_1915BC_MOS \nLONG NAME: WVR_1915BC_MOS \nTYPE: \nNUM \nLENGTH: \n2 \nFILE(S): \nWaiver \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0–12 (Number of",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_25",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "CARR_LINE_CLIA_LAB_NUM Clinical Laboratory Improvement Amendments (CLIA) monitored laboratory number CHAR 10 48\nCARR_LINE_ANSTHSA_UNIT_CNT CARR_LINE_ANSTHSA_UNIT_CNT Carrier Line Anesthesia Unit Count NUM 2 49\nCARR_LINE_CL_CHRG_AMT CARR_LINE_CL_CHRG_AMT Carrier Line Clinical Lab Charge Amount NUM 12 50\nPHYSN_ZIP_CD PHYSN_ZIP_CD Line Place of Service (POS) Physician Zip Code CHAR 15 51\nLINE_POINT_OF_PCKP_ZIP_CD LINE_POINT_OF_PCKP_ZIP_CD Line Point of Pickup Zip Code CHAR 5 88",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

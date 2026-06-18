@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p313__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 313,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n273 \nSUBMTG_STATE_CD \nLABEL: \nSubmitting State Entity Code \nDESCRIPTION: The ANSI Federal Information Processing Standards (FIPS) numeric state code for the U.S. state, \nterritory, or the District of Columbia that has submitted the data. \nSHORT NAME: SUBMTG_STATE_CD \nLONG NAME: SUBMTG_STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAll demographic and eligibility",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

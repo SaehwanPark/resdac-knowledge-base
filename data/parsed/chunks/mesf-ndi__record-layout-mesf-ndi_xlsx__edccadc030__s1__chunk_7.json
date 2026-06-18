@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "implied between the second and third digits for ICD-10 codes\nICD_TITLE ICD-10 Code Description CHAR 120 This field indicates the ICD 10 descriptor (text) for the cause of death (the ICD_CODE)\nICD_CODE_358 358 ICD-10 Cause of Death Recodes CHAR 5 This field is the NDI recode of the ICD-10 Code cause of death into one of 358 categories Refer to the CDC's \"ICD-10 Cause-of-Death Lists for Tabulating Mortality Statistics.\" see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf\nICD_",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

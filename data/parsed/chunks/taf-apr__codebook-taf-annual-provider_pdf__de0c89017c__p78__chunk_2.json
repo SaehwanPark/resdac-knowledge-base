@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p78__chunk_2",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 78,
+  "text": "with respiratory therapist \n49 = Department store \n50 = Grocery store \n51 = Indian health service facility \n52 = Oxygen supplier \n53 = Pedorthic personnel \n54 = Medical supply company with pedorthic personnel \n55 = Rehabilitation agency \n56 = Ocularist \n57 = All other \n58 = Institutions for Mental Disease \nIf PRVDR_CLSFCTN_SYS equals “4” (authorized categories of service codes), then the values are: \n001 = Inpatient hospital services, other than services in an institution for mental diseases",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

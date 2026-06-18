@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_104",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "Amount Num 8 - - - - - - - - - - X X X X X X X X\nUNCOMPD_CARE_PYMT_AMT UNCOMPD_CARE_PYMT_AMT Uncompensated Care Payment Amount Num 8 - - - - - - - - - - X X X X X X X X\nBNDLD_ADJSTMT_AMT BNDLD_ADJSTMT_AMT Bundled Payment Adjustment Amount Num 8 - - - - - - - - - - X X X X X X X X\nVBP_ADJSTMT_AMT VBP_ADJSTMT_AMT Hospital Value Based Purchasing (VBP) Amount Num 8 - - - - - - - - - - X X X X X X X X\nHRR_ADJSTMT_AMT HRR_ADJSTMT_AMT Hospital Readmission Reduction (HRR) Adjustment Amount Num 8 - - -",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_39",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "optional), ICD - c. CHAR 7 x x\nM0210_CHGREG_ICD4 (M0210) Medical Diagnosis and ICD Code - d List patient's medical diagnosis and ICD code categories (three digits required; five optional), ICD - d. CHAR 7 x x\nM0220_PR_DISRUPT (M0220) Disruptive/Socially Inappropriate Behavior Conditions prior to medical or treatment regimen change or inpatient stay within past 14 days: disruptive or socially inappropriate behavior. 0 = No, 1 = Yes, Spaces = Unknown. CHAR 1 x x\nM0220_PR_IMP_DCSN (M0220) Impaired",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

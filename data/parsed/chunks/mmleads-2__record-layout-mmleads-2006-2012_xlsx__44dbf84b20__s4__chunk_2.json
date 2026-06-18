@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s4__chunk_2",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 4,
+  "text": "count 1 - single row of data for the person\n1/x - person used x distinct level 2 services in the file\nUSER1_CNT Unduplicated srvc_1 user count 0 - person did not use any service in the file\n1/x - 1.0 - person used x distinct level 1 services in the file\nUSER2_CNT Unduplicated srvc_2 user count 0 - person did not use any service in the file\n1.0 - person used the particular level 2 Medicare service\nMedicare Cost MEDICARE_PMT_01 - 12 Monthly Medicare payments (For Part D, it's the",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

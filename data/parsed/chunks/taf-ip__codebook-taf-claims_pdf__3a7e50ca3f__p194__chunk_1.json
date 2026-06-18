@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p194__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 194,
+  "text": "NUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nRX line \nVALUES: \nValid numeric value, three decimal places. \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis variable and the NDC Quantity Dispensed variable (NDC_QTY) may, in some cases, represent the \nsame thing. \nRefer to the NDC Unit of Measure Code (UOM_CD) for the unit of measurement. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_330",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "precluded by missing data.\n557 VA04B VA04B_COMM_PC (VA04B) Communication Care Planning Decision CHAR 1 RAP summary: communication - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n558 VA05A VA05A_ADL_TR (VA05A) ADL Functional Potential Triggered CHAR 1 RAP summary: ADL functional/rehabilitation potential - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n559 VA05B VA05B_ADL_PC (VA05B) ADL Functional",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

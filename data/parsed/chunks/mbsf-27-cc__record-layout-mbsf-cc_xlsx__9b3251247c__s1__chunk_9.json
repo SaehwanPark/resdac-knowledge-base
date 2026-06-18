@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__record-layout-mbsf-cc_xlsx__9b3251247c__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/9b3251247c196c2ff5244785fa3366fd9b900eec.xlsx",
+  "page": 1,
+  "text": "DATE 8\nSTRKETIA STROKE_TIA Stroke / Transient Ischemic Attack End-of-Year Indicator NUM 1\nSTRKTIAM STROKE_TIA_MID Stroke / Transient Ischemic Attack Mid-Year Indicator NUM 1\nSTRKTIAE STROKE_TIA_EVER First Occurrence of Stroke / Transient Ischemic Attack DATE 8\nCNCRBRST CANCER_BREAST Breast Cancer End-of-Year Indicator NUM 1\nCNCRBRSM CANCER_BREAST_MID Breast Cancer Mid-Year Indicator NUM 1\nCNCRBRSE CANCER_BREAST_EVER First Occurrence of Breast Cancer DATE 8\nCNCRCLRC CANCER_COLORECTAL Colorectal",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cc.xlsx"
+}

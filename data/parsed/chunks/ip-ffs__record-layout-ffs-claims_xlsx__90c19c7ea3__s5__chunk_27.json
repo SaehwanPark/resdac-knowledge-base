@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_27",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP) CHAR 1 149\nCLM_NEXT_GNRTN_ACO_IND_CD2 CLM_NEXT_GNRTN_ACO_IND_CD2 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth CHAR 1 150\nCLM_NEXT_GNRTN_ACO_IND_CD3 CLM_NEXT_GNRTN_ACO_IND_CD3 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits CHAR 1 151\nCLM_NEXT_GNRTN_ACO_IND_CD4",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

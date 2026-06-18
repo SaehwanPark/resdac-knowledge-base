@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-encounter__chunk_1",
+  "source_document": "data/raw/html/dataset_page/3fc3fad128988cbf5f0a1b39005e72e895d911c4.html",
+  "page": null,
+  "text": "surgical centers and freestanding radiology centers.\nResearchers rarely use this file alone.\nThis file includes (variable highlights):\n- Part C Benefit Package and Contract number\n- Diagnosis (ICD diagnosis)\n- HCPCS code\n- Date of service (line date)\n- NPI for line rendering physician\n- No payment information\nSpecial considerations:\n- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental,",
+  "dataset": "carrier-encounter",
+  "url": "https://resdac.org/cms-data/files/carrier-encounter?page=1"
+}

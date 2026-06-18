@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "(FOR NURSING HOMES ONLY)\n3=Federal required submission\n52 A0800_SEX_CD1 A0800_SEX_CD A0800 Sex CHAR 1 This data in this column identifies the resident's sex. -=Not assessed/no information/unable to determine\n1=Male\n2=Female discontinued 09/30/2025\n53 A0900_BIRTH_DT A0900_BIRTH_DT A0900 Birth Date DATE 8 This column contains the resident's birth date.\n54 A1000A_AMRCN_INDN_AK_NTV_CD A1000A_AMRCN_INDN_AK_NTV_CD A1000A Race/Ethnicity: American Indian or Alaskan Native Code CHAR 1 The data in this",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

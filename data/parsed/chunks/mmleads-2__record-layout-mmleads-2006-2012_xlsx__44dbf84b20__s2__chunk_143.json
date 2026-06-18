@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s2__chunk_143",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 2,
+  "text": "Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) - Medicare Only Claims, First Ever Occurrence Date date - MM/DD/YYYY\nHIVARV_COMBINED Antiretroviral Medication Number of Unique Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Combined Medicare & Medicaid Claims 0-9 or Missing\nHIVARV_MEDICAID Antiretroviral Medication Number of Unique Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Medicaid Only Claims 0-9 or Missing\nHIVARV_MEDICARE",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

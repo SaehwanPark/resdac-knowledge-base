@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_662",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "column documents whether the resident's payer is other Government. 0 = No \n1 = Yes\n633 A1400H_PRVT_INSRNC_PYR_SW A1400H_PRVT_INSRNC_PYR_SW A1400H - Payer: Private insurance/Medigap CHAR 1 This column documents whether the resident's payer is private insurance/Medigap. 0 = No \n1 = Yes\n634 A1400I_PRVT_MC_PYR_SW A1400I_PRVT_MC_PYR_SW A1400I - Payer: Private managed care CHAR 1 This column documents whether the resident's payer is private managed care. 0 = No \n1 = Yes\n635 A1400J_SELF_PAY_PYR_SW",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

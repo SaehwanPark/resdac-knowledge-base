@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p35__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 35,
+  "text": "SHORT NAME: EMER_MDCL_SRVC_TXNMY_IND \nLONG NAME: EMER_MDCL_SRVC_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis variable = 1 if PRVDR_CLSFCTN_SYS = “1” or “N” and the taxonomy code value is one of the \nfollowing: \n146D00000X: Personal emergency response attendant \n146L00000X: Emergency medical technician, paramedic \n146M00000X: Emergency medical technician, intermediate \n146N00000X: Emergency medical",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

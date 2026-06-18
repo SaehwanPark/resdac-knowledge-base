@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p128__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 128,
+  "text": "only (non-dual) \n3 = Partial Dual) \n4 = Full Dual \n0 = Not MMLEADS population for the month \nNull/missing = not enrolled in the month \nCOMMENT: \nCCW calculates this variable using the MBSF monthly dual status code (note that these source \nvariables are also included in MMLEADS as MDCR_DUAL_STUS_CD_01–12). If the beneficiary has more \nthan one value during the month (i.e., due to being enrolled in Medicaid in more than one state during \nthe month), then CCW uses the maximum value of the monthly",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

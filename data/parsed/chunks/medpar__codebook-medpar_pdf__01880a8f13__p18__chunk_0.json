@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n2 \nACO_ID_NUM \nLABEL: \nAccountable Care Organization (ACO) Identification Number \nDESCRIPTION: The field at the claim level to identify the unique identification number assigned to the Accountable \nCare Organization (ACO). \nSHORT NAME: ACO_ID_NUM \nLONG NAME: ACO_ID_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field comes from the Claim ACO Identification Number",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

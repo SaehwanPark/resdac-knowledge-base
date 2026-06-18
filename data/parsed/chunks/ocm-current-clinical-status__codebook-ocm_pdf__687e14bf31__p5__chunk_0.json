@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p5__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 5,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n1 \nVariable Details \nThis section of the codebook contains one entry for each variable in the Medicare Oncology Care Model files. Each \nentry contains variable details to facilitate understanding and use of the variables. \nAJCC_EDITION \nLABEL: \nAJCC Cancer Staging Edition \nDESCRIPTION: The edition of the American Joint Committee on Cancer (AJCC) Cancer Staging manual used",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p16__chunk_2",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 16,
+  "text": "of people living in household \nSAS Format: NMD \n1: 1 PERSON \n2: 2-3 PEOPLE \n3: 4+ PEOPLE \nmd_change: RECODE : How likely to change doctors if dissatisfied with dr communication \nSAS Format: LIKE \n1: VERY LIKELY \n2: LIKELY \n3: UNLIKELY",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

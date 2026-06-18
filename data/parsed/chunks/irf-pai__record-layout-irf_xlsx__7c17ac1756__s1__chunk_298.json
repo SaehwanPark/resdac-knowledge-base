@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_298",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "whether or not a staff assessment for mental status should be performed. CHAR 1 The data in this column indicates whether or not a staff assessment for mental status should be performed. 0 = No (patient was able to complete Brief Interview fo Mental Status)\n1 = Yes (patient was unable to complete Brief Interview fo Mental Status)\n288 C0900A_RCLL_CRNTL_SEASN_CD C0900A_RCLL_CRNTL_SEASN_CD C0900A Memory/Recall - Current Season (3-day Asmt Prd) - The data in this column indentifies whether or not",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

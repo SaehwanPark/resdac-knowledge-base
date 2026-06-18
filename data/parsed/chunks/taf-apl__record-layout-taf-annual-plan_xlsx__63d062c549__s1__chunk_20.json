@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 1,
+  "text": "CHAR 1 74\nSPLMTL_OPRTG_AUTHRTY Annual Managed Care Plan Record in Supplemental Operating Authority File CHAR 1 75\nCCW_APL_LINK_KEY CCW Key to Link APL Base Record to Related Supplement Records NUM 15 76\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 6 77\nPL_VRSN Plan File Version Representing the Iteration of the File CHAR 2 78\nRFRNC_YR Reference Yr CHAR 4 79\nCCW_LD_DT CCW Load Date DATE 8 80\n1 Fields that are new starting with the August 2021 RIF 2017 and 2018 Release 2",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

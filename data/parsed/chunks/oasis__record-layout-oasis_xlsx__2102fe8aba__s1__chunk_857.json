@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_857",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "15 x\nA1110B_NEED_WNT_INTRPTR_CD Do you need or want an interpreter Indicates whether the patient would like an interpreter to communicate with a doctor or health care staff? 0. No\n1. Yes\n9. Unable to determine CHAR 1 x\nA1250A_TRNSPRTN_MDCL_CD Transportation: Yes, medical Indicates whether lack of transportation has kept the patient from medical appointments or from getting medications. 0. No\n1. Yes CHAR 1 x\nA1250B_TRNSPRTN_NON_MDCL_CD Transportation: Yes, non-medical Indicates whether lack of",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

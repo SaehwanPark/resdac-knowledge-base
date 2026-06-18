@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "the normalization factor to keep the FFS average risk score to be equal to 1.0 for the \npayment year. Due to the lag between the time CMS estimated the model data and converted it to a relative risk \nscore, and the payment year, changes in the demographic composition and health conditions of the FFS cohort \nmay result in an average risk score not equal to 1.0. CMS designed the normalization factor to correct for this \nsituation \n• \nCoding intensity — CMS designed the adjustment for MA coding",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

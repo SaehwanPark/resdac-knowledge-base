@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_102",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "than half the time, \n04 = Totally dependent due to disturbances such as constant disorientation, coma, persistent vegetative state, or delirium. CHAR 2 x x\nM0570_WHEN_CONFUSD (M0570) When Confused When confused (reported or observed). 00 = Never \n01 = In new or complex situations only\n02 = On awakening or at night only\n03 = During the day and evening, but not constantly\n04 = Constantly\nNA = NA - Patient nonresponsive. CHAR 2 x x\nM0580_WHEN_ANXIOUS (M0580) When Anxious When anxious (reported or",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

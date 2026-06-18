@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_342",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "dental care - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n580 VA16A VA16A_PRS_ULCER_TR (VA16A) Pressure Ulcers Triggered CHAR 1 RAP summary: pressure ulcers - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n581 VA16B VA16B_PRS_ULCER_PC (VA16B) Pressure Ulcers Care Planning Decision CHAR 1 RAP summary: pressure ulcers - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "sex 1 = Male, 2 = Female CHAR 1 x x x x x x x\nM0072_PHYSICIAN_UK (M0072) Physician NPI UK Primary referring physician is unknown or not available. 0 = No, 1 = Yes CHAR 1 x\nM0072_PHYSICIAN_ID (M0072) Physician NPI Primary referring physician identification Spaces = Unknown CHAR 10 x\nM0080_ASSR_DISCIPL (M0080) Discipline of Person Completing Assessment Discipline of person competing assessment. 01 = RN, 02 = PT, 03 = SLP/ST, 04 = OT CHAR 2 x x x x x x x\nM0090_ASMT_CPLT_DT (M0090) Date Assessment",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

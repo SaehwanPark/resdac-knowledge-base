@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_15",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "Code | \n\n | LINE_RP_IND_CD | Line Representative Payee (RP) Indicator Code | \n\n | LINE_PRVDR_VLDTN_TYPE_CD | Line Provider Validation Type Code | \n\n | LINE_VLNTRY_SRVC_IND_CD | Line Voluntary Service Indicator Code | \n\n | LINE_ADJUST_GRP_CD | Line Adjustment Group Code | \n\n | LINE_ADJUST_RSN_CD | Line Adjustment Reason Code | \n\n | LINE_RA_RMRK_CD | Line Remittance Advice Remark Code |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "patient's race or ethnic category: Native Hawaiian or other Pacific Islander. 0 = No, 1 = Yes\n24 _9F ETH_WHT_SW (9F) Race: White CHAR 1 The patient's race or ethnic category: White 0 = No, 1 = Yes\n25 _10 MRTL_STUS_CD (10) Marital Status CHAR 2 The patient's marital status at the time of admission. 01 = Never married, 02 = Married, 03 = Widowed, 04 = Separated, 05 = Divorced\n26 _11 ZIP_CD (11) ZIP code of patients pre-hospital residence CHAR 5 The 5-digit ZIP code of the patient's pre-hospital",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

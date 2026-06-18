@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p98__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 98,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n80 \nCLM_IP_ADMSN_TYPE_CD \nLABEL: \nClaim Inpatient Admission Type Code \nDESCRIPTION: The code indicating the type and priority of an inpatient admission associated with the service on an \nintermediary submitted claim. \nSHORT NAME: TYPE_ADM \nLONG NAME: CLM_IP_ADMSN_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nThis code set is an external code set maintained by the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

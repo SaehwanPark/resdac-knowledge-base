@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n13 \nDAYS_SUPLY_NUM \nLABEL: \nDays Supply \nDESCRIPTION: This field indicates the number of days' supply of medication dispensed by the pharmacy and consists \nof the amount the pharmacy enters for the prescription. \nSHORT NAME: DAYSSPLY \nLONG NAME: DAYS_SUPLY_NUM \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nPDE \nVALUES: \nPossible values are 0–999. \nCOMMENT: \nCMS accepts",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

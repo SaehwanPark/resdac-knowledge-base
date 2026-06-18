@@ -1,0 +1,16 @@
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Value Modifier NPI Practice-Level RIF / Performance Year 2016
+Version - August 2018
+Variable Name	Variable Label (Short Description)	Long Description	Position	Format	Length	Notes
+PRACTICE_ID	Unique identifier of practice	Unique identifier of practice	1	Char	11	Unique identifier of practice
+PERF_NPI	NPI	National Provider Identifier	2	Char	11	National Provider Identifier
+PRVDR_NAME	Name of provider	Name of provider in practice	3	Char	200	Name of provider in practice
+PHYSICIAN	Physician eligible professional	Indicator of whether provider is a physician eligible professional	4	Num	8	Indicator of whether provider is a physician eligible professional
+NP_PA_CNS_CRNA	Nonphysician eligible professional subject to the 2018 Value Modifier	Indicator of whether provider is a nonphysician eligible professional subject to the 2018 Value Modifier	5	Num	8	Indicator of whether provider is a nonphysician eligible professional subject to the 2018 Value Modifier
+NONPHYS_VM_EXEMPT	Nonphysician eligible professional not subject to the 2018 Value Modifier	Indicator of whether provider is a nonphysician eligible professional not subject to the 2018 Value Modifier	6	Num	8	Indicator of whether provider is a nonphysician eligible professional not subject to the 2018 Value Modifier
+HCFA_SPECIALTY	Specialty designation	Specialty of provider	7	Char	120	Specialty of provider
+LAST_CLM_DATE	Date of last Medicare Part B claim billed under practice	Date of last Medicare Part B claim billed under practice	8	Num	8	Date of last Medicare Part B claim billed under practice
+BILL_UND_PRAC	Identified via billings	Indicator of whether eligible professional was identified through Medicare Part B claims as having billed at least one service under practice during calendar year 2016	9	Num	8	Indicator of whether eligible professional was identified through Medicare Part B claims as having billed at least one service under practice during calendar year 2016
+LST_IN_PECOS	Identified via PECOS	Indicator of whether eligible professional was identified as associated with practice via the Provider Enrollment, Chain, and Ownership System (PECOS)	10	Num	8	Indicator of whether eligible professional was identified as associated with practice via the Provider Enrollment, Chain, and Ownership System (PECOS)
+EP_AVOIDED_PAY_ADJ	Avoided 2018 PQRS payment adjustment	Indicator of whether provider met criteria to avoid the 2018 PQRS payment adjustment	11	Num	8	Indicator of whether provider met criteria to avoid the 2018 PQRS payment adjustment
+Note: The data in the Performance Year 2016 NPI-Practice-Level RIF are current as of November 29, 2017, for the 207,151 practices subject to the Value Modifier and do not contain changes due to Informal Reviews after this date. The data do not include corrections to one practice’s 30-day All-Cause Hospital Readmission measure or corrections to 13 practices’ Medicare Spending per Beneficiary measure that affected the practices’ Value Modifier payment adjustment.

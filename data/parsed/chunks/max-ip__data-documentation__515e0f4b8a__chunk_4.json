@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__data-documentation__515e0f4b8a__chunk_4",
+  "source_document": "data/raw/html/documentation_page/515e0f4b8a82429031028f6befb46024fb536839.html",
+  "page": null,
+  "text": "code | \n\n | MDCD_PYMT_AMT | Medicaid payment amount | \n\n | TP_PYMT_AMT | Third party payment amount | \n\n | PYMT_DT | Payment/adjudication date | \n\n | CHRG_AMT | Charge amount | \n\n | PHP_VAL | Prepaid plan value | \n\n | MDCR_COINSUR_PYMT_AMT | Medicare coinsurance payment amount | \n\n | MDCR_DED_PYMT_AMT | Medicare deductible payment amount | \n\n | ADMSN_DT | Admission date (MAX) | \n\n | SRVC_BGN_DT | Beginning date of service | \n\n | SRVC_END_DT | Ending date of service | \n\n | DIAG_CD_1 | Principle",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip/data-documentation"
+}

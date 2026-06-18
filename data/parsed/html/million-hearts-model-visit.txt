@@ -1,0 +1,11 @@
+The Visit file contains all data extracted to create a beneficiary visit, and includes both uploaded data and manually entered data from the model data collection registry. All generated risk scores and baseline groups are contained in this file. The file is generated at the visit level, with one row for each visit for each beneficiary.
+What does this file include? (variable highlights)
+- Model-Assigned Practice ID
+- Model-Assigned Patient ID
+- Visit Date
+- Baseline CVD Risk Score
+- CVD Risk Score at the time of the visit
+- Baseline risk group (low, medium, high)
+A record represents a patient at the time of a particular visit, and includes information such as visit date, baseline risk score, visit risk score, and baseline group.
+The Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link to other CCW non-Million Hearts® files.
+The Beneficiary ID can be linked to other beneficiary records in this dataset and other CCW Medicare data.

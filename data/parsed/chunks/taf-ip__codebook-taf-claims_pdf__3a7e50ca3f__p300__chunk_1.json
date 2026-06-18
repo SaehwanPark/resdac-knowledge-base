@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p300__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 300,
+  "text": "LT header \nOT header \nRX header \nVALUES: \nWaiver ID, maximum 20 letters and numbers \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThese IDs must be the approved, full federal waiver ID number assigned during the state submission \nand CMS approval process. The categories of demonstration and waiver programs include: \n• \n1915(b)(1); \n• \n1915(b)(2); \n• \n1915(b)(3), and 1915(b)(4) managed care waivers; \n• \n1915(c) home and community-based services waivers; \n• \nCombined 1915(b) and",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

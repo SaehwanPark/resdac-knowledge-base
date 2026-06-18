@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p310__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 310,
+  "text": "file. \n\nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n1 = Part C only plan (any non-FFS; not all are MA) \n2 = Part D only plan \n3 = Both Part C and D plan \nNull/missing = Plan was terminated and not in current year file \nCOMMENT: \nYou may use this field to identify plans that offer either only the Part C benefit, the Part D \nbenefit, or both. Plans that are identified as Part C may include other non-fee-for-service plans \nsuch as some demonstrations (i.e., not all plans identified",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

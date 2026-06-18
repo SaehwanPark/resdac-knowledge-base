@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \niii \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nDecember 2025 K. Schneider \n• Added new variable FPL_PCT to the DE base file \n• Added three new variables to the disability and need file: \nLCKIN_TOS_CD_1, LCKIN_TOS_CD_2, and LCKIN_TOS_CD_3 \n• Updated description for ELGBLTY_CHG_RSN_CD_01- \nELGBLTY_CHG_RSN_CD_12 \n• Embellished comment for AGE_GRP_CD \n• Added",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

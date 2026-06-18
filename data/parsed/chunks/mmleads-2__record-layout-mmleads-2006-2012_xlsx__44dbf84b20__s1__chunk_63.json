@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_63",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "number of Medicare FFS month Home Health visit count XXX\nU_ACUTE_DAY_COV_DAY_CNT_1 - 12 Total number of Medicare Acute Inpatient covered days* XXX\nU_SNF_DAY_COV_CNT_1 - 12 Total number of Medicare Skilled Nursing Facility covered days* XXX\nU_PAC_OTH_DAY_COV_CNT_1 - 12 Total number of Medicare Post-Acute Care covered days* XXX\nU_HOSPICE_DAY_COV_CNT_1 - 12 Total number of Medicare Hospice covered days* XXX\nU_HOP_VST_1 - 12 Total number of Medicare Hospital Outpatient visits XXX\nU_PHYS_VST_1 - 12",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

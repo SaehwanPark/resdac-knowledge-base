@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p252__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 252,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n236 \nTOT_CVR_CHRG_AMT \nLABEL: \nTotal Covered Charge Amount ($) \nDESCRIPTION: The portion of the total charges amount (rounded to whole dollars) that is covered by Medicare for the \nstay. \nSHORT NAME: CVRCHRG \nLONG NAME: TOT_CVR_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by calculating the covered charges from all claim records included",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_91",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Than Ulcers, Rashes, Cuts CHAR 1 The presence of open lesions other than ulcers, rashes, cuts. Examples inlcude lesions such as cancer lesions. 0 = Unchecked, 1 = Checked, -1 = Unknown\n117 M4G M4G_SURG_WOUND 33c(M4g)Surgical Wounds CHAR 1 The presence of healing and non-healing, open or closed surgical incisions, skin grafts or drainage sites on any part of the body. This category does not include healed surgical sites or stomas. 0 = Unchecked, 1 = Checked, -1 = Unknown\n118 M5A M5A_RELIEF_CHAIR",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

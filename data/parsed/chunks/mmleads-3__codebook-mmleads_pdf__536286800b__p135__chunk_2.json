@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p135__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 135,
+  "text": "New Hampshire \nNJ = New Jersey \nNM = New Mexico \nNV = Nevada \nNY = New York \nOH = Ohio \nOK = Oklahoma \nOR = Oregon \nPA = Pennsylvania \nPR = Puerto Rico \nRI = Rhode Island \nSC = South Carolina \nSD = South Dakota \nTN = Tennessee \nTX = Texas \nUT = Utah \nVA = Virginia \nVT = Vermont \nWA = Washington \nWI = Wisconsin \nWV = West Virginia \nWY = Wyoming \nXX = Other territories or Unknown\nCOMMENT: \nThis variable is populated with the MBSF STATE_CD variable. If beneficiary is enrolled only in Medicaid,",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 2,
+  "text": "October 2024 \nK. Schneider \nClarified meaning of 0 value in HMO_IND_01–12; clarified meaning \nof first digit in PTC_CNTRCT_ID_01–12 \n1.7 \nFebruary 2024 \nK. Schneider \nAdded clarity re: derivation of ESRD_IND and a comment for \nDUAL_STUS_CD_01–12 \n1.6 \nApril 2023 \nK. Schneider \nAdded values and corresponding descriptions for \nENTLMT_RSN_CURR and MDCR_STATUS_CD; added a comment for \nSTATE_CODE and adjusted description for value 55 \n1.5 \nFebruary 2021 \nK. Russell \nC. Alleman \nD. Happe \nMigrated",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

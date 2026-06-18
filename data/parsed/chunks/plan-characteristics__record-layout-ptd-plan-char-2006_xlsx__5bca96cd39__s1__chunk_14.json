@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "12 Dollar amount of the Medicare-defined Part D Annual Out-of-Pocket Cost Threshold. This field is blank for Fixed Capitated Reinsurance Demos.\n26-33 Pre_ICL_drug_type_Tier_01 - Pre_ICL_drug_type_Tier_08 Type of Drugs on Pre-ICL Tier 1 - 8 Char 3 Indicates the type of drug (e.g., \"Generic\", \"Brand\", etc.) included on Part D formulary tier 1 through tier 8 for the pre-initial coverage phase. A tier may include multiple drug types. 001 Brand *2006 values are different than 2007 values.\n010",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

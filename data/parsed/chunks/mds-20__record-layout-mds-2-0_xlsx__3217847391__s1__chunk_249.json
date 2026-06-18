@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_249",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Stage 1 is defined as a persistent area of skin redness (without a break in the skin) that does not disappear when pressure is relieved.\n408 M1B M1B_STAGE_2_ULCER (M1B) Stage 2 Ulcers CHAR 1 Skin condition: ulcers - stage 2 in last 7 days. This field indicates the number of stage 2 ulcers on the resdient's body. Stage 2 is defined as a partial thickness loss of skin layers that presents clincially as an abrasion, blister, or shallow crater.\n409 M1C M1C_STAGE_3_ULCER (M1C) Stage 3 Ulcers CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "3\nSR_SPLMTL_PHYS_ACTVTY_1_2_QTY Splmtl HRSN Phys Activity Items 1x2 Numb of days/minutes moderate exercise NUM 4\nSR_SPLM_PHYS_ACTV_OVRL_SCRN_IND Screened Supplemental HRSN Physical Activity Overall Indicator CHAR 1\nSR_SPLMTL_SBSTNC_USE_1_CD Supplemental HRSN Substance Use 1: Past 12 months alcohol use CHAR 1\nSR_SPLMTL_SBSTNC_USE_2_CD Supplemental HRSN Substance Use 2: Past 12 months tobacco use CHAR 1\nSR_SPLMTL_SBSTNC_USE_3_CD Supplemental HRSN Substance Use 3: Past 12 months non-medical rx",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

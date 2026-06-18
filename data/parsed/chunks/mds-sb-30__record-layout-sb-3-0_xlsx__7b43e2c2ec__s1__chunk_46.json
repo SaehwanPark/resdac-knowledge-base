@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_46",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "A1550D_OTHR_ORGNC_MR_DD_CD A1550D MR/DD Status: Other Organic MR/DD Condition Code CHAR 1 The data in this column identifies if the resident has another organic condition related to MD/DD (Mental\nRetardation or Developmental Disability). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n74 A1550E_OTHR_MR_DD_CD A1550E_OTHR_MR_DD_CD A1550E MR/DD Status: MR/DD With No Organic Condition Code CHAR 1 The data in this column identifies if the resident has MR/DD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p14__chunk_4",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 14,
+  "text": "pharmacy data for that year, and will occasionally be null if there was no conclusive link between the \nservice provider identification number in the source PDE data and the provider identification numbers \nin the NCPDP pharmacy data. Within the NCPDP database, this ID used to be called the NABP Number. \nNCPDP also enumerates licensed Alternate Dispensing Sites and Durable Medical Equipment (DME) \nProviders. \nThis variable usually represents a unique pharmacy entity, which historically was a",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

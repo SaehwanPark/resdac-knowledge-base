@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "1\nSR_ER_VISITS_CD Beneficiary Number of ED Visits Last 12 Months CHAR 1\nSR_ELGBL_FOR_NVGTN_IND Beneficiary Elig for Navigation, includes Track 1 control group benes CHAR 1\nSR_GRP_ASGNMT_IND Beneficiary Group Assignment Assistance Track CHAR 1\nSR_NVGTN_OPT_IN_OUT_IND Beneficiary Opted in or out of Navigation services CHAR 1\nSR_NVGTN_OPT_IN_OUT_DT Navigation Case Opt In/Out Date DATE 8\nNC_NVGTN_CASE_ID Navigation Case Unique Identifier CHAR 9\nNC_NVGTN_CASE_STRT_DT Navigation Case Opt In Date DATE",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

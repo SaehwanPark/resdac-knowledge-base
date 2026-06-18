@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p215__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 215,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n197 \nLINE_ALOWD_CHRG_AMT \nLABEL: \nLine Allowed Charge Amount \nDESCRIPTION: The amount of allowed charges for the line-item service on the non-institutional claim. \nThis charge is used to compute the total claim-level payment to providers or reimbursement to \nbeneficiaries. \nSHORT NAME: LALOWCHG \nLONG NAME: LINE_ALOWD_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \n—",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

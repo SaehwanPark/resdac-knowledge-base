@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_34",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Validation Type Code CHAR 2 79 New2\nLINE_VLNTRY_SRVC_IND_CD LINE_VLNTRY_SRVC_IND_CD Line Voluntary Service Indicator Code CHAR 1 80 New3\nLINE_ADJUST_GRP_CD LINE_ADJUST_GRP_CD Line Adjustment Group Code CHAR 2 81 New5\nLINE_ADJUST_RSN_CD LINE_ADJUST_RSN_CD Line Adjustment Reason Code CHAR 5 82 New5\nLINE_RA_RMRK_CD LINE_RA_RMRK_CD Line Remittance Advice Remark Code CHAR 5 83 New5\nDemonstrations/Innovations code file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 1\nCLM_ID CLM_ID Claim ID CHAR",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

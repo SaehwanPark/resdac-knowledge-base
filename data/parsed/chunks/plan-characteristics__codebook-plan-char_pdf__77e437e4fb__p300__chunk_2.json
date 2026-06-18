@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p300__chunk_2",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 300,
+  "text": "in 1st digit = Non-Preferred Brand \n1 in 2nd digit = Generic \n1 in 3rd digit = Preferred Generic \n1 in 4th digit = Non-Preferred Generic \n1 in 5th digit = Brand \n1 in 6th digit = Preferred Brand \nFor 2018+ data — this is a binary character string where the digits are 1 or 0. \n1 in the 1st (leftmost) digit = Brand \n1 in the 2nd (right) digit = Generic \nCOMMENT: \nThere are a different number of records for each year to describe tiers, due to variation in the number \nof formulary tiers over time.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

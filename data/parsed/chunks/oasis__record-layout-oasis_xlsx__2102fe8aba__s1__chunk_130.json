@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_130",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "person at all times\n03 = Chairfast, unable to ambulate but is able to wheel self independently\n04 = Chairfast, unable to ambulate and is unable to wheel self\n05 = Bedfast, unable to ambulate or be up in a chair. CHAR 2 x x\nM0700_PR_AMBULATN (M0700) Prior Ambulation/Locomotion Prior ambulation/locomotion ability. 00 = Able to independently walk on even and uneven surfaces and climb stairs with or without railings (needs no human assistance or assistive device)\n01 = Requires use of a device",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

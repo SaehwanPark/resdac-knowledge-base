@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_535",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "does not fluctuate \n2 = Behavior present, fluctuates (comes and goes, changes in severity) \n- = Not Assessed/No Information\n472 THKNG_DSRGNZD_ADMSN_CD THKNG_DSRGNZD_ADMSN_CD Delirium: Disorganized thinking (Adm) CHAR 1 At the time of admission, was the patient's thinking disorganized or incoherent (rambling or irrelevant conversation, unclear or illogical flow of ideas, or unpredictable switching from subject to subject? 0 = Behavior not present \n1 = Behavior continuously present, does not",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p203__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 203,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n183 \nOCRNC_CD_END_DT \nLABEL: \nOccurrence Code Last End Date \nDESCRIPTION: The last date that the corresponding occurrence code (variable called OCRNC_CD) or occurrence span \ncode was applicable. \nSHORT NAME: OCRNC_CD_END_DT \nLONG NAME: OCRNC_CD_END_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP occurrence file \nLT occurrence file \nOT occurrence file",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

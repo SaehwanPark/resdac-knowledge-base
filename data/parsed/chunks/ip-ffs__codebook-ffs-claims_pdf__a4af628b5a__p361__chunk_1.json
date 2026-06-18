@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p361__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 361,
+  "text": "(e.g., HOP) and non-institutional (e.g., \ncarrier and DME) services. \nSHORT NAME: REVDCTBL \nLONG NAME: REV_CNTR_CASH_DDCTBL_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nCosts to beneficiaries are described in detail on the Medicare.gov website. There is a CMS publication \ncalled \"Your Medicare Benefits\", which explains the deductibles. \nThis field is populated for those claims that are required to process through outpatient PPS PRICER \nsoftware. The type of bills (TOB)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

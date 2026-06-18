@@ -1,0 +1,12 @@
+CMS has created an analytical file that contains enrollment data for beneficiaries in the Comprehensive ESRD Care (CEC) Model. A related file, the CEC Provider RIF, contains identifying information about the providers participating in the CEC Model.
+The CEC Beneficiary Performance Year RIF files contain PY finder files for the beneficiary population attributed to an ESRD Seamless Care Organization (ESCO).
+What does this file include (variable highlights)
+- Beneficiary ID (allows linkage to other files)
+- ESCO Name
+- Monthly assignment status information
+- Date of birth
+- Date of death
+Special Considerations
+- This file can be linked to any other CMS file that includes the Bene ID.
+- PY1 is for a 15 month period beginning in October, all other PYs are for a calendar year beginning in January.
+- All technical questions related to the CEC program should be directed to [email protected].

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_7",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "| NCH Beneficiary Part A Coinsurance Liability Amount | \n\n | 44 | NCH_BENE_BLOOD_DDCTBL_LBLTY_AM | NCH Beneficiary Blood Deductible Liability Amount | \n\n | 45 | NCH_IP_NCVRD_CHRG_AMT | NCH Inpatient (or other Part A) Non-covered Charge Amount | \n\n | 46 | NCH_IP_TOT_DDCTN_AMT | NCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount | \n\n | 47 | CLM_PPS_CPTL_FSP_AMT | Claim PPS Capital Federal Specific Portion (FSP) Amount | \n\n | 48 | CLM_PPS_CPTL_OUTLIER_AMT | Claim PPS Capital",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_136",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Helper - Modified Dependence/Moderate Assistance (Subject 50% or more), 04 = Helper - Modified Dependence/Minimal Assistance (Subject 75% or more), 05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n121 _39JG TOILT_GOAL_CD (39Jg) Transfers - Toilet: Goal CHAR 2 A score indicating the desired goal for the patient to achieve to safely get on and off a toilet at discharge. 01 = Helper -",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

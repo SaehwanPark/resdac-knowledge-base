@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_65",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Observation Unit Indicator | \n\n | 361 | NEW_TCHNLGY_ADD_ON_AMT | New Technology Add On Amount | \n\n | 362 | BASE_OPRTG_DRG_AMT | Base Operating DRG Amount | \n\n | 363 | OPRTG_HSP_AMT | Operating Hospital Amount | \n\n | 364 | SQSTRTN_RDCTN_AMT | Sequestration Reduction Amount | \n\n | 365 | UNCOMPD_CARE_PYMT_AMT | Uncompensated Care Payment Amount | \n\n | 366 | BNDLD_ADJSTMT_AMT | Bundled Payment Adjustment Amount | \n\n | 367 | VBP_ADJSTMT_AMT | Hospital Value Based Purchasing (VBP) Amount | \n\n | 368",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p19__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 19,
+  "text": "test/x-ray/other \nSAS Format: YNA \n1: YES \n2: NO \nmd_testasan: RECODE : Last 6 mths, how often got test results as soon as needed \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \nmd_testfup: RECODE : Last 6 mths, how often MD office follow up with test results \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \nmd_visits: RECODE : Last 6 mths, number of in-person/phone/video visits with personal MD about health \nSAS Format: NMA \n0: NONE \n1: 1 TIME \n2: 2 \n3: 3 \n4: 4",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

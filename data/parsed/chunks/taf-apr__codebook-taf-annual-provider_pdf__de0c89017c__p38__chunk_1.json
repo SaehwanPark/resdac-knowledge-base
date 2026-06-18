@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p38__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 38,
+  "text": "HOSP_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis variable = 1 if PRVDR_CLSFCTN_SYS = “1” or “N” and the taxonomy code value is one of the \nfollowing: \n281P00000X: Chronic disease hospital \n281PC2000X: Chronic disease hospital — children \n282E00000X: Long-term care hospital \n282J00000X: Religious nonmedical health care institution \n282N00000X: General acute care hospital \n282NC0060X: General acute care",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

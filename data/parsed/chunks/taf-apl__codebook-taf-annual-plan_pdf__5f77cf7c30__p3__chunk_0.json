@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p3__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 3,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nOctober 2022 \nK. Schneider \nAdded new values for MC_ENT_ACRDTN_ORG_CD_1-5 and \nMC_PLAN_OPRTG_AUTHRTY_CD. Added 8 new variables to the \nAPL base file to account for the new operating authority values: \nOPRTG_AUTHRTY_1915AJ_IND, \nOPRTG_AUTHRTY_1932A_1915J_IND, \nOPRTG_AUTHRTY_1915BJ_IND, \nOPRTG_AUTHRTY_1115_1915J_IND,",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

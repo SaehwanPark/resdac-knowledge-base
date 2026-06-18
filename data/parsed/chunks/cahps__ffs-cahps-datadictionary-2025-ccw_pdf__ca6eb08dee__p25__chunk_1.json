@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p25__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 25,
+  "text": "ALWAYS \nrxinspay: RECODE: Have insurance that pays part or all the cost of RX medicines \nSAS Format: YNA \n1: YES \n2: NO \nsa_cvrg_type: Part A-B Coverage Type \nSAS Format: $CVT \n3: CVP \n4: MSA \n5: PFFS \n6: PACE \n7: PCE \n8: DEMO \n9: FFS \n10: CHCCP \n12: CCDM \n14: MMP \nsa_deemd_cpmt: Generic Level for Copay Computation \nSAS Format: $GENLEVF \n1: HIGH \n2: LOW \n3: 0 \n4: 15% \n5: UNKNOWN",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

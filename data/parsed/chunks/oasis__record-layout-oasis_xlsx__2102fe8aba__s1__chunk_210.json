@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_210",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "ICD9 code 1 for those conditions requiring changed medical or treatment regimen within the past 14 days. CHAR 7 x\nM1016_CHGREG_ICD2 M1016 (M0210) Regimen Change- Diagnosis2 ICD Code This field lists the patient's medical diagnoses and ICD9 code 2 for those conditions requiring changed medical or treatment regimen within the past 14 days. CHAR 7 x\nM1016_CHGREG_ICD3 M1016 (M0210) Regimen Change- Diagnosis3 ICD Code This field lists the patient's medical diagnoses and ICD9 code 3 for those",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

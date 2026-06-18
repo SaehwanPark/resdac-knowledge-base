@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_118",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "F2E_NO_CNTCT_FAM (F2E) Absense of Personal Contact with Family/Friends CHAR 1 Psychosocial well-being: unsettled relationships - absence of personal contact with family/friends. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n199 F2F F2F_RECENT_LOSS (F2F) Recent Loss of Close Family Member/Friend CHAR 1 Psychosocial well-being: unsettled relationships - recent loss of close family member/friend. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n200 F2G F2G_NOT_ADJUST (F2G) Does Not Adjust Well Easily to",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

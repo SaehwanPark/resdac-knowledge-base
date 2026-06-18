@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p58__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 58,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n40 \nCARR_LINE_PRCNG_LCLTY_CD \nLABEL: \nCarrier Line Pricing Locality Code \nDESCRIPTION: Code denoting the carrier-specific locality used for pricing the service for this line item on the carrier \nclaim (non-DMERC). \nSHORT NAME: LCLTY_CD \nLONG NAME: CARR_LINE_PRCNG_LCLTY_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nMedicare localities \nThere are currently 89 total PFS",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

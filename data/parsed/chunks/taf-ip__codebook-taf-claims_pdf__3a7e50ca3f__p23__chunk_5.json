@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p23__chunk_5",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 23,
+  "text": "= Mutually exclusive procedures cannot be done in the same day/setting. Usage: Refer to the 835-\nhealthcare policy identification segment (loop 2110 service payment information REF) if present \n232 = Institutional transfer amount. Usage: Applies to institutional claims only and explains the DRG \namount difference when the patient care crosses multiple institutions \n233 = Services/charges related to the treatment of a hospital-acquired condition or preventable \nmedical error \n234 = This",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

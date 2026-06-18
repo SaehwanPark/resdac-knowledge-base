@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p24__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 24,
+  "text": "Statistical Information \nSystem Identifier (MSIS_ID). Encrypted Medicaid state-assigned beneficiary unique identifier. \nLONG NAME: MSIS_ID \nTYPE: \nCHAR \nLENGTH: \n32 \nSOURCE: \nAHC data system \nCCW (derived) \nVALUES: \nAlphanumeric character string, up to 20 characters \n(Ex. 9Q81866B302C768A539B) \nNull/missing = source value is missing or unknown \nCOMMENT: \nThe AHC Bridge organizations obtained Medicaid beneficiary identifying information (e.g., Medicaid ID \ncard, state, zip code, first and last",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

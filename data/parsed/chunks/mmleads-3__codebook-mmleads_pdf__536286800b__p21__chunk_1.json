@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p21__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 21,
+  "text": "to determine Long-Term Services and Supports (LTSS) program eligibility. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS DE file (derived) \nVALUES: \n0–12, or null/missing (if no Medicaid enrollment or no care level status) \nCOMMENT: \nCCW calculates this variable using the DE Disability and Need Supplemental file; we count each month \nwhere the care level status code is not missing (CARE_LVL_STUS_CD_MM ne ' '). The five levels of care \ninclude: hospital, inpatient psychiatric facility, nursing",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "assessment. 01 = RN, 02 = PT, 03 = SLP/ST, 04 = OT CHAR 2 x x x x x x x\nM0090_ASMT_CPLT_DT (M0090) Date Assessment Completed The date the assessment was completed. DATE 8 x x x x x x x\nM0100_ASSMT_REASON (M0100) Assessment Reason The reason the assessment is currently being completed. 01 = Start of care - further visits planned\n02 = Start of care - no further visits planned (retired)\n03 = Resumption of care (after inpatient stay)\n04 = Recertification (follow-up) reassessment\n05 = Other",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

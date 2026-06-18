@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_61",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Waiver ID-2 (Apr) CHAR 2 ‾ X X X X X X X X X X\n288 MAX_WAIVER_TYPE_3_MO_4 MAX Waiver Type Code -3 (Apr) CHAR 1 ‾ X X X X X X X X X X\n289 MAX_WAIVER_ID_3_MO_4 Waiver ID-3 (Apr) CHAR 2 ‾ X X X X X X X X X X\n290 MAX_WAIVER_TYPE_1_MO_5 MAX Waiver Type Code -1 (May) CHAR 1 ‾ X X X X X X X X X X\n291 MAX_WAIVER_ID_1_MO_5 Waiver ID-1 (May) CHAR 2 ‾ X X X X X X X X X X\n292 MAX_WAIVER_TYPE_2_MO_5 MAX Waiver Type Code -2 (May) CHAR 1 ‾ X X X X X X X X X X\n293 MAX_WAIVER_ID_2_MO_5 Waiver ID-2 (May) CHAR 2",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

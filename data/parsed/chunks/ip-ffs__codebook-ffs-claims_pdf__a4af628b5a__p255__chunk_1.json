@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p255__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 255,
+  "text": "LONG NAME: MS_DRG_GRPR_VRSN_CD \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is not populated prior to 2021. GROUPER is the software that determines the DRG from data \nelements reported by the hospital. \nOnce determined, the DRG code is one of the elements used to determine the price upon which to \nbase the reimbursement to the hospitals under prospective payment. \nNonpayment claims (zero reimbursement) may not have a DRG present. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

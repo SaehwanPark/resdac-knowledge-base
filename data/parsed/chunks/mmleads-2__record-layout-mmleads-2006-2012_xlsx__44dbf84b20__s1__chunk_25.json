@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_25",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "PCCM\n1 - No LTC or CMC or PCCM but some eligible months LMC\n0 - FFS = No LTC or CMC or PCCM or LMC\nNull - Not FFS or MA\nE_LTC_COV_MOS Months of Coverage in a Medicaid Long Term Care (LTC) PHP XX\nNull/missing = No Medicaid coverage during the month\nE_CMC_COV_MOS Months of Coverage in a Medicaid Comprehensive Managed Care PHP XX\nNull/missing = No Medicaid coverage during the month\nE_PCCM_COV_MOS Months of Coverage in a Medicaid Primary Care Case Management (PCCM) Plan XX\nNull/missing = No",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

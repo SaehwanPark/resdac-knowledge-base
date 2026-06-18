@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_156",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n133 _39NA CMPRHNSN_ADMSN_CD (39Na) Communication - Comprehension: Admission CHAR 2 A score indicating the patient's ability to comprehend at admission. Comprehension includes understanding of either auditory or visual communication (for example, writing, sign language, gestures). 01 = Helper - Complete Dependence/Total Assistance",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

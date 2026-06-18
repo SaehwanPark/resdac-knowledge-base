@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_30",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "service was provided) CHAR 9 162\nPCCHGAMT NCH_PROFNL_CMPNT_CHRG_AMT Professional Component Charge Amount NUM 12 163\nCLM_NEXT_GNRTN_ACO_IND_CD1 CLM_NEXT_GNRTN_ACO_IND_CD1 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP) CHAR 1 164\nCLM_NEXT_GNRTN_ACO_IND_CD2 CLM_NEXT_GNRTN_ACO_IND_CD2 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth CHAR 1 165\nCLM_NEXT_GNRTN_ACO_IND_CD3",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

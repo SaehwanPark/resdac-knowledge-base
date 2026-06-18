@@ -1,0 +1,8 @@
+{
+  "chunk_id": "dme-encounter__data-documentation__7a9e3ab95c__chunk_2",
+  "source_document": "data/raw/html/documentation_page/7a9e3ab95c81408f2ef1644024e5ac09aae2fff6.html",
+  "page": null,
+  "text": "| Line Rendering Physician NPI | \n| PRVDR_SPCLTY | Line CMS Provider Specialty Code | \n| LINE_SRVC_CNT | Line Service Count (Encounter) | \n| LINE_PLACE_OF_SRVC_CD | Line Place of Service Code (Encounter) | \n| LINE_1ST_EXPNS_DT | Line First Expense Date (Encounter) | \n| LINE_LAST_EXPNS_DT | Line Last Expense Date (Encounter) | \n| HCPCS_CD | Healthcare Common Procedure Coding System (HCPCS) Code (Encounter) | \n| HCPCS_1ST_MDFR_CD | HCPCS Initial Modifier Code (Encounter) | \n| HCPCS_2ND_MDFR_CD |",
+  "dataset": "dme-encounter",
+  "url": "https://resdac.org/cms-data/files/dme-encounter/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p221__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 221,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n208 \nINCREASED_ICL \nLABEL: \nPlan Offers Increased Initial Coverage Limit (ICL) Amount \nDESCRIPTION: This variable indicates whether the plan offers reduced cost sharing in the Initial Coverage Limit (ICL) \nby offering an ICL that is higher than the year's predefined standard ICL amount. \nSHORT NAME: — \nLONG NAME: INCREASED_ICL \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files)",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

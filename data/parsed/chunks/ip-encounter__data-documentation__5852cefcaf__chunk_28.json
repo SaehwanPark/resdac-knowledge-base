@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__data-documentation__5852cefcaf__chunk_28",
+  "source_document": "data/raw/html/documentation_page/5852cefcaf4dca5dba3392a521caae7b6816e9f1.html",
+  "page": null,
+  "text": "USPS State Code | \n\n | 138 | CLM_BPRVDR_ADR_ZIP_CD | Billing Provider Zip Code | \n\n | 139 | CLM_SUBSCR_CITY_NAME | Medicare Subscriber Address - City | \n\n | 140 | CLM_SUBSCR_USPS_STATE_CD | Medicare Subscriber Address - USPS State Code | \n\n | 141 | CLM_SUBSCR_ADR_ZIP_CD | Medicare Subscriber Address - ZIP Code | \n\n | 142 | BENE_CNTY_CD | Beneficiary County Code from Claim (SSA) | \n\n | 143 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (Encounter) | \n\n | 144 | BENE_MLG_CNTCT_ZIP_CD |",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_10",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "| 61 | ICD_DGNS_CD24 | Claim Diagnosis Code 24 (Encounter) | \n\n | 62 | ICD_DGNS_CD25 | Claim Diagnosis Code 25 (Encounter) | \n\n | 63 | CLM_POA_IND_SW1 | Claim Diagnosis Code 1 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 64 | CLM_POA_IND_SW2 | Claim Diagnosis Code 2 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 65 | CLM_POA_IND_SW3 | Claim Diagnosis Code 3 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 66 |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

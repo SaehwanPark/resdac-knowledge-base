@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_52",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "pattern) discontinued 09/30/2023\n81 A2200_PRVS_ASMT_RFRNC_DT A2200_PRVS_ASMT_RFRNC_DT A2200 Previous Assessment Reference Date For Significant Correction CHAR 8 This column contains the previous assessment reference date of the associated significant correction of prior quarterly or comprehensive assessment.\n82 A2300_ASMT_RFRNC_DT A2300_ASMT_RFRNC_DT A2300 Assessment Reference Date DATE 8 This column contains the end date of the observation period of the assessment.\n83 A2400A_MDCR_STAY_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

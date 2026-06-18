@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_637",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "patient was receiving invasive mechanical ventilator (or respirator) therapy. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n591 NONINVSV_VNTLTR_ADMSN_CD NONINVSV_VNTLTR_ADMSN_CD Therapies: Non-Invas Mechanical Ventilator (Admis) CHAR 1 This column documents whether, at the time of admission, the patient was receiving non-invasive mechanical ventilator therapy. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n592 NONINVSV_VNTLTR_DSCHRG_CD NONINVSV_VNTLTR_DSCHRG_CD Therapies: Non-Invas",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

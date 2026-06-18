@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_9",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "Number | \n\n | 58 | ADMTG_PRVDR_NPI | Admitting Provider NPI | \n\n | 59 | ADMTG_PRVDR_TXNMY_CD | Admitting Provider Taxonomy Code | \n\n | 60 | ADMTG_PRVDR_TYPE_CD | Admitting Provider Type Code | \n\n | 61 | ADMTG_PRVDR_SPCLTY_CD | Admitting Provider Specialty Code | \n\n | 62 | BLG_PRVDR_ID | Billing Provider Identification Number (TAF) | \n\n | 63 | BLG_PRVDR_NPI | Billing Provider NPI | \n\n | 64 | BLG_PRVDR_TXNMY_CD | Billing Provider Taxonomy Code | \n\n | 65 | BLG_PRVDR_NPPES_TXNMY_CD | Billing",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

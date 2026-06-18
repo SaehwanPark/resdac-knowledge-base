@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_36",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Medicaid Number CHAR 15 State facility provider number.\n71 AA6B AA6B_FAC_MCARE_NBR (AA6B) Facility Medicare Number CHAR 12 Federal facility provider number.\n72 AA8A AA8A_PRI_RFA (AA8A) Primary Reason for Assessment CHAR 2 Primary reason for assessment 01 = Admission Assessment (required by day 14), 02 = Annual Assessment, 03 = Significant change in status assessment, 04 = Significant correction to full prior assessment, 05 = Quarterly review assessment, 06 = Discharged - return not anticipated,",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

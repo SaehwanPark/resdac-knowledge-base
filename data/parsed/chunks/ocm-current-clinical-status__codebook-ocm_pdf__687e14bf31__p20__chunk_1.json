@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p20__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 20,
+  "text": "M1a, \nM1a(0), \nM1a(1), \nM1b, \nM1b(0), \nM1b(1), \nM1c, \nM1c(0), \nM1c(1), \nM1d, \nM1d(0), \nM1d(1), \ncM0(i+), \npM1, \npM1a, \npM1b, \npM1c \nNull/missing = n/a (not required for cancer type); or not reported by OCM participant (reference \ndetails in the RPTD_TO_RGSTRY codebook entry) \n\nCOMMENT: \nPractices were required to report clinical and staging data associated with each beneficiary’s assigned \ncancer. The Metastasis (M) category describes the presence of distant metastasis in sites and/or \norgans",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

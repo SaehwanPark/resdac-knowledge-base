@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_216",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "I3A I3A_OTHR_ICD9_CD (I3A) Other Diagnosis/ICD-9 Codes CHAR 7 Disease diagnosis: other current or more detailed diagnoses (ICD9) - other diagnosis A.\n336 I3B I3B_OTHR_ICD9_CD (I3B) Other Diagnosis/ICD-9 Codes CHAR 7 Disease diagnosis: other current or more detailed diagnoses (ICD9) - other diagnosis B.\n337 I3C I3C_OTHR_ICD9_CD (I3C) Other Diagnosis/ICD-9 Codes CHAR 7 Disease diagnosis: other current or more detailed diagnoses (ICD9) - other diagnosis C.\n338 I3D I3D_OTHR_ICD9_CD (I3D) Other",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

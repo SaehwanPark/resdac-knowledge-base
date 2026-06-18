@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_46",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Readmission Rdctn (HRR) Participant Indicator Code CHAR 1 216\nCLM_HRR_ADJSTMT_PCT CLM_HRR_ADJSTMT_PCT Claim HRR Adjustment Percent NUM 8 217\nCLM_MODEL_4_READMSN_IND_CD CLM_MODEL_4_READMSN_IND_CD Claim Model 4 Readmission Indicator Code CHAR 1 218\nCLM_UNCOMPD_CARE_PMT_AMT CLM_UNCOMPD_CARE_PMT_AMT Claim Uncompensated Care Payment Amount NUM 12 219\nCLM_BNDLD_ADJSTMT_PMT_AMT CLM_BNDLD_ADJSTMT_PMT_AMT Claim Bundled Adjustment Payment Amount NUM 12 220\nCLM_VBP_ADJSTMT_PMT_AMT CLM_VBP_ADJSTMT_PMT_AMT",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

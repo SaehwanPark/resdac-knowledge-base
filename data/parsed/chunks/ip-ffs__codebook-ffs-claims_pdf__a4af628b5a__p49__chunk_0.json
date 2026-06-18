@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p49__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 49,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n31 \nCARR_CLM_PRVDR_ASGNMT_IND_SW \nLABEL: \nCarrier Claim Provider Assignment Indicator Switch \nDESCRIPTION: Variable indicates whether or not the provider accepts assignment for the non-institutional claim. \nSHORT NAME: ASGMNTCD \nLONG NAME: CARR_CLM_PRVDR_ASGNMT_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nA = Assigned claim \nN = Non-assigned claim \nCOMMENT: \n— \n^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_27",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Other Than Medicare or Medicaid -Insurance Paid Amount NUM 8 40\nLT_ACCMDTN_HCPCS_RATE Long-Term Care Accommodation Rate CHAR 14 41\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 8 42\nTMSIS_RUN_ID TMSIS State Data Processing Run Identifier NUM 8 43\n1 Fields are populated starting with the 2017 and 2018 Release 2 RIFs\n2 Fields are populated starting with the 2020 Release 1 RIF\n3 Fields populated starting with the 2023 Release 1 RIF are designated as \"New3\"\n4 Fields that are",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

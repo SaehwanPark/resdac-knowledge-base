@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p135__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 135,
+  "text": "0% \n04 = Initial percentage payment, 50% \n05 = Initial percentage payment, 60% \n06 = LUPA payment only \n07 = Final payment, SCIC \n08 = Final payment, SCIC with outlier \n09 = Final payment, PEP \n11 = Final payment, PEP with outlier \n12 = Final payment, SCIC within PEP \n13 = Final payment, SCIS within PEP with outlier \nHome health error return codes: \n10 = Invalid TOB \n15 = Invalid PEP days \n16 = Invalid HRG days, > 60 \n20 = PEP indicator invalid \n25 = Med review indicator \ninvalid \n30 = Invalid",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

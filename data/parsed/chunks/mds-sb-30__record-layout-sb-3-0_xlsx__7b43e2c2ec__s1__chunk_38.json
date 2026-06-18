@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "(No)\n1=Checked (Yes) discontinued 09/30/2023\n60 A1100A_NEED_INTRPTR_CD A1100A_NEED_INTRPTR_CD A1100A Resident Need Interpreter Code CHAR 1 The data in this column indicates if the resident needs an interpreter. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine discontinued 09/30/2023\n61 A1100B_INTRPTR_LANG_TXT A1100B_INTRPTR_LANG_TXT A1100B Preferred Language CHAR 15 This column contains the resident's preferred language. discontinued 09/30/2023\n62 A1200_MRTL_STUS_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

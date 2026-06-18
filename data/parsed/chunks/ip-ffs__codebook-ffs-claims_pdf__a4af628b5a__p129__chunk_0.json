@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p129__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 129,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n111 \nCLM_PRCR_RTRN_CD \nLABEL: \nClaim Pricer Return Code \nDESCRIPTION: The code used to identify various prospective payment system (PPS) payment adjustment types. This \ncode identifies the payment return code or the error return code for every claim type calculated by \nthe PRICER tool. \nSHORT NAME: CLM_PRCR_RTRN_CD \nLONG NAME: CLM_PRCR_RTRN_CD \nTYPE: \nCHAR \nLENGTH: \n2",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

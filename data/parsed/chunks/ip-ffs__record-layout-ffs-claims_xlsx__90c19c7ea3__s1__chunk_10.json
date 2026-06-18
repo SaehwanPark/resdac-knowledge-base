@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Claim PPS Capital Federal Specific Portion (FSP) Amount NUM 12 49\nCPTLOUTL CLM_PPS_CPTL_OUTLIER_AMT Claim PPS Capital Outlier Amount NUM 12 50\nDISP_SHR CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT Claim PPS Capital Disproportionate Share (DSH) Amount NUM 12 51\nIME_AMT CLM_PPS_CPTL_IME_AMT Claim PPS Capital Indirect Medical Education (IME) Amount NUM 12 52\nCPTL_EXP CLM_PPS_CPTL_EXCPTN_AMT Claim PPS Capital Exception Amount NUM 12 53\nHLDHRMLS CLM_PPS_OLD_CPTL_HLD_HRMLS_AMT Claim PPS Old Capital Hold Harmless",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

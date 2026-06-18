@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__record-layout-ptd-prescriber-char_xlsx__cdba8b9984__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/cdba8b9984d9984d2f7918f548d349b2d33a4aa8.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nMedicare Part D Prescriber Characteristics File\nVersion - October 2016\nLong SAS Name Label Type Length Year of Data File1\n2006 - 2013 2014 +\nCCW_PRSCRBR_ID CCW-assigned Prescriber ID NUM 8 X -\nNPI Prescriber National Provider Identifier (NPI) CHAR 10 - X\nHCID HCIdea Proprietary Prescriber Identifier CHAR 10 - X\nPRIMARY_TAXONOMY_CD Primary Taxonomy Code for Part D Prescribers CHAR 10 X X\nPRIMARY_TAXONOMY_DESC Primary Taxonomy Code",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-prescriber-char.xlsx"
+}

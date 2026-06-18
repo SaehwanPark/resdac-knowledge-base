@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Completion Date for 04 or 05; and (M0906) Discharge/Transfer/Death date of 06, 07, 08, 09, or 10. DATE 8 x x x x x x\nAST_MOD_IND Assessment Modification Indicator Designates version of the assessment C = Current, M = Modified, X = Inactive CHAR 1 x x x x x x\nCALC_HIPPS_CODE Calculated HIPPS Code The value of the HIPPS (Health Insurance Prospective Payment System) code calculated by the sate system using the OASIS PPS dll for this assessment. CHAR 5 x x x x x x\nCALC_HIPPS_VERSION Calculated",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

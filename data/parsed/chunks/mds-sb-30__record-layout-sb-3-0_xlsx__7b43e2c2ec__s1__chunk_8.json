@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Home: Tracking (entry/expired)\nSD=Swing Bed: Discharge\nSO=Swing Bed: OMRA Other\nSP=Swing Bed: PPS\nSS=Swing Bed: OMRA Start of Therapy\nSSD=Swing Bed: OMRA Start of Therapy + Discharge\nST=Swing Bed: Tracking (entry/expired)\nXX=Inactivation\n8 SUBMSN_DT SUBMSN_DT Submission Date DATE 8 This column contains the date the submission file was received by the system.\n9 MDS_CRCTN_STUS_CD MDS_CRCTN_STUS_CD Correction Status Code CHAR 1 This column contains the correction status code indicating the status",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

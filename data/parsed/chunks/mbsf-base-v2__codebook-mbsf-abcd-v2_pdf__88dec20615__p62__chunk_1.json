@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p62__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 62,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n1 = Beneficiary is entitled to Medicare coverage due to prior periods of SSA disability entitlement \nA = Beneficiary is entitled to Medicare based upon SSA disability and the 24-month waiting period has \nbeen waived \nH = Beneficiary is entitled to Medicare due to health hazard \nNull = no record of SSA disability determination \nCOMMENT: \nCMS obtains information regarding SSA disability benefits and stores it as",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

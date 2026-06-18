@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_37",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Out CHAR 1\nNN_SPLMTL_MH_CNTCT_FAIL_SW Navigated Supplemental HRSN Mental Health Attempts to Reach Failed CHAR 1\nNN_SPLMTL_MH_CSP_UNAVBL_SW Navigated Splmt HRSN Mental Health Community Service Provider Unable to Help CHAR 1\nNN_SPLMTL_MH_OUTCM_UNK_SW Navigated Supplemental HRSN Mental Health Outcome Unknown CHAR 1\nNN_SPLMT_PHYS_ACT_RSLVD_SW Navigated Supplemental HRSN Physical Activity Resolved CHAR 1\nNN_SPLMT_PHYS_ACT_CNCT_CSP_SW Navigated Splmt HRSN Physical Activity Connected to Community Serv",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

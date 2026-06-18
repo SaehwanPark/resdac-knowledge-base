@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p12__chunk_3",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 12,
+  "text": "the National \nLibrary of Medicine \nRxNorm Concept Unique Identifiers (RXCUIs). Each RXCUI corresponds to a unique brand name and \nclinical formulation (same ingredients, strength, and dosage form). \nIn the PDE file, this variable is populated by linking to the proprietary First DataBank MedKnowledge \ndatabase by matching on the National Drug Code (NDC; variable in the PDE files called the product \nservice identifier PROD_SRVC_ID). Additional details regarding the FDB source data are available",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

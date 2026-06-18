@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "INT ID) of this assessment where Correction Number is 00.\n11 PRVNTRNO PRVDR_INT_NUM Provider Internal Number CHAR 10 This field is used as a key to uniquely identify a provider in the CSP_PRVDR table.\n12 STATE_CD STATE_CD State Code CHAR 2 The two-digit state abbreviation.\n13 SUBMSNDT SUBMSN_DT Submission Date DATE 8 The date the submission was received by the system.\n14 SBMTCMTX SBMTD_CMG_TXT Submitted CMG Code CHAR 10 The Case-Mix Group code that is submitted by the facility. This CMG code is",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

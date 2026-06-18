@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p305__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 305,
+  "text": "hospitals, all campuses contain the same first 6-digit CCN (reference PRVDR_NUM variable in \nthis data file), but positions 7–13 may be used to distinguish between campuses (ex. 01, 02, 001, 002, \nA, etc.) In the future positions 7–13 may have other uses. \nSHORT NAME: PRVDR_FULL_CCN_NUM \nLONG NAME: PRVDR_FULL_CCN_NUM \nTYPE: \nCHAR \nLENGTH: \n13 \nSOURCE: \nNCH (derived) \nVALUES: \n— \nCOMMENT: \nNCH will continue to map the positions 1–6 of the provider number to the provider number \n(PRVDR_NUM)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

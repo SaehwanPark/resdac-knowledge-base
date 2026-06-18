@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_521",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "(Yes)\n596 V0200A17A_PSYCH_DRUG_CTR_CD V0200A17A_PSYCH_DRUG_CTR_CD V0200A17A Psychotropic Drug Care Area Trigger Code CHAR 1 The data in this column indicates whether the Psychotropic Drug Use CA was triggered. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n597 V0200A17B_PSYCH_DRUG_CPL_CD V0200A17B_PSYCH_DRUG_CPL_CD V0200A17B Psychotropic Drug Addressed in Care Plan Code CHAR 1 The data in this column indicates whether the Psychotropic Drug Use care area was addressed in the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

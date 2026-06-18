@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p74__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 74,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n69 \nTOT_RX_CST_AMT \nLABEL: \nTotal Drug Cost (Part D) \nDESCRIPTION: This variable is the total cost of the prescription drug event and is taken directly from the original PDE. \nIt is the sum of the following components: \n• \nThe ingredient cost (INGRDNT_CST_PD_AMT), \n• \nThe dispensing fee (DSPNSNG_FEE_PD_AMT), \n• \nThe sales tax, if any",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

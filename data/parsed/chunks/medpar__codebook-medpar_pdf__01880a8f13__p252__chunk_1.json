@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p252__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 252,
+  "text": "VALUES: \n— \nCOMMENT: \nThis field is derived by calculating the covered charges from all claim records included in the stay (i.e., \nsubtracted the revenue center non-covered charge amount from the revenue center total charge \namount for revenue center code = 0001 that is reported on the claims that comprise the stay; sum the \nresults for all claims for the stay). \nThe exception to this formula is if there exists an erroneous condition relative to revenue center code \n0001, the calculation will",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

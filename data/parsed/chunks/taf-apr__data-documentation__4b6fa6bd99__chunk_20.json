@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__data-documentation__4b6fa6bd99__chunk_20",
+  "source_document": "data/raw/html/documentation_page/4b6fa6bd99a6df68962fe05bc883c5d7a0aa4c70.html",
+  "page": null,
+  "text": "Taxonomy File | \n\n | 83 | SPLMTL_ENRLMT | Annual Provider Record in Supplemental Enrollment File | \n\n | 84 | SPLMTL_BED_TYPE | Annual Provider Record in Supplemental Bed Type File | \n\n | 85 | CCW_APL_LINK_KEY | CCW Key to Link APL base Record to Related Supplement Records | \n\n | 86 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | \n\n | 87 | PR_VRSN | Provider File Version Representing the Iteration of the File | \n\n | 88 | RFRNC_YR | Reference Year (TAF) | \n\n | 89 |",
+  "dataset": "taf-apr",
+  "url": "https://resdac.org/cms-data/files/taf-apr/data-documentation"
+}

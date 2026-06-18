@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s7__chunk_5",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 7,
+  "text": "Code 3 CHAR 3 223 New1\nLCKIN_PRVDR_ID_3 Lock-in Provider 3 Identification Number CHAR 30 20\nLCKIN_PRVDR_TYPE_CD_3 Lock-in Provider 3 Type Code CHAR 2 21\nDSBLTY_DFCLTY_CNCNTRTNG_IND_01 Disability Ind - Difficulty Concentrating - January CHAR 1 22\nDSBLTY_DFCLTY_CNCNTRTNG_IND_02 Disability Ind - Difficulty Concentrating - February CHAR 1 23\nDSBLTY_DFCLTY_CNCNTRTNG_IND_03 Disability Ind - Difficulty Concentrating - March CHAR 1 24\nDSBLTY_DFCLTY_CNCNTRTNG_IND_04 Disability Ind - Difficulty",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

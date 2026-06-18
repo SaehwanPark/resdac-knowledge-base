@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_319",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "J1100C_SOB_LYG_CD J1100C Shortness of Breath When Lying Flat Code CHAR 1 The data in this column indicates whether the resident had shortness of breath when lying flat. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n353 J1100Z_NO_SOB_CD J1100Z_NO_SOB_CD J1100Z None of Above Shortness of Breath Code CHAR 1 The data in this column indicates that the resident had none of the above. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n354 J1300_TOBCO_CD J1300_TOBCO_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

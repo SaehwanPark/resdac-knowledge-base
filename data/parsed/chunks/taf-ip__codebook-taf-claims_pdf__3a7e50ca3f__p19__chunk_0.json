@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n8 \n092 = Claim paid in full \n093 = No claim level adjustments. Notes: As of 004010, CAS at the claim level is optional \n094 = Processed in excess of charges \n095 = Plan procedures not followed \n096 = Non-covered charge(s). At least one remark code must be provided (may be comprised of either \nthe NCPDP reject reason code, or remittance advice remark code that is not an ALERT) \n097 = The",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

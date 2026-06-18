@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p71__chunk_3",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 71,
+  "text": "Medicaid or Medicare enrollment in the MMLEADS Beneficiary file. \nNote that the Center for Medicaid and CHIP Services (CMCS) at CMS has required redaction of the \nMDCD_PD_AMT field for managed care claims due to the proprietary and confidential nature of this \ninformation. Therefore, these monthly totals do not reflect the redacted managed care expenditures. \nMMLEADS counts all claims in the monthly MDCD_TOTAL_USE_01–12 variables. Use caution when \ncalculating average spend per claim. There",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

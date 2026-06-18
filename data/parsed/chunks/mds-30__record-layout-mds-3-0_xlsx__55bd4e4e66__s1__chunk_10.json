@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Encrypted Original Assessment ID NUM 15 This column contains the unique ID of the assessment where the Correction Number is equal to '00'.\n11 V0100F_PRIOR_STF_MOOD_SCRE_NUM V0100F_PRIOR_STF_MOOD_SCRE_NUM Prior Assessment Staff Assessment of Resident Mood (PHQ-9) Total Severity Score Number CHAR 2 Prior Assessment Staff Assessment of Resident Mood (PHQ-9) Total Severity Score Number\n12 C_RSDNT_AGE_NUM C_RSDNT_AGE_NUM Resident Age CHAR 8 This column contains the system calculated resident age",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

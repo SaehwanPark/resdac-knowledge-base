@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_715",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Surgery - Fusion of Spinal Bones CHAR 1 Spinal surgery involving fusion of spinal bonesrequiring SNF service.\n776 J2420_SPNL_SRGRY_DISC_IND J2420_SPNL_SRGRY_DISC_IND J2420 Spinal Surgery - Lamina, Discs, or Facets CHAR 1 Spinal surgery involving lamina, discs, or facets requiring SNF service.\n777 J2499_SPNL_SRGRY_OTHR_IND J2499_SPNL_SRGRY_OTHR_IND J2499 Spinal Surgery - Other CHAR 1 Other major spinal surgery requiring SNF service.\n778 J2500_ORTHO_SRGRY_SHLDR_IND J2500_ORTHO_SRGRY_SHLDR_IND",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_247",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "H0300 Urinary Continence Code CHAR 1 The data in this column indicates the resident's urinary continence level. -=Not assessed/no information\n0=Always continent\n1=Occasionally incontinent (less than 7 episodes of incontinence)\n2=Frequently incontinent (7 or more episodes or urinary incontinence, but at least one episode of continent voiding)\n3=Always incontinent (no episode of continent voiding)\n9=Not rated, resident had a catheter (indwelling, condom), urinary ostomy, or no urine output for",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

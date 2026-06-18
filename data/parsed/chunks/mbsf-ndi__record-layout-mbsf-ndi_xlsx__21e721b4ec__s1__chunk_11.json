@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__record-layout-mbsf-ndi_xlsx__21e721b4ec__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/21e721b4ec64c624ca4af0c2f9b8d19c80c4925d.xlsx",
+  "page": 1,
+  "text": "of Death - Condition 19 CHAR 5 - x\nRECORD_COND_20 RECORD_COND_20 NDI Record Axis Cause of Death - Condition 20 CHAR 5 - x\n1 The file contains all fields; however for all columns under \"Year of Data File\": X = variable is populated (shading or '-'\nindicates it is not populated).\n2 If read into SAS version 6.x environment, \"SHORT NAMES\" will display in output file.\n3 If read into SAS version 8.x environment, \"LONG NAMES\" will display in output file.",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-ndi.xlsx"
+}

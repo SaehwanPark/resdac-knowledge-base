@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p37__chunk_2",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 37,
+  "text": "EKG for heart conditions?\nMA-PD\nQ32\nIn the last 6 months, did you get information or help from your health plan’s customer service?\ncs_cstryinfo\nMA-Only\nQ32\nFFFS\nQ36\nIn the last 6 months, did you get information or help from Medicare’s customer service?\nMA-PD\nQ33\nIn the last 6 months, how often did your health plan’s customer service give you the information or help you\ncs_csgetinfo\nMA-Only\nQ33\nneeded?\nFFS\nQ37\nIn the last 6 months, how often did Medicare’s customer service give you the",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

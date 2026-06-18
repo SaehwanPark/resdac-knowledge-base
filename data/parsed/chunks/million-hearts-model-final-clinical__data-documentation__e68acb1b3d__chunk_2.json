@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-final-clinical__data-documentation__e68acb1b3d__chunk_2",
+  "source_document": "data/raw/html/documentation_page/e68acb1b3de2655f4c3f52d5a7407fca996e39d3.html",
+  "page": null,
+  "text": "| \n| ACTIVITY_DATE | Encounter/Procedure/Diagnosis/Lab/Medication Start or Occurrence Date | \n| ACTIVITY_END_DATE | Encounter/Procedure/Diagnosis End date | \n| CODE | Code Used to Document the Service | \n| MODIFIER | Any Modifiers for the Base Code | \n| VALUE | Value Provided for Certain Service Attributes | \n| UNITS | Unit for the Value Provided for Certain Service Attributes | \n| INSERT_DATE | Date the Record was Created |",
+  "dataset": "million-hearts-model-final-clinical",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-final-clinical/data-documentation"
+}

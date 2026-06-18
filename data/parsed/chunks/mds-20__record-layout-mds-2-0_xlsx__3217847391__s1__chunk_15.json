@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "vendor or agent the facility is using to automate the MDS requirement.\n28 SFT_VER SFT_VER Software Version CHAR 5 This field conatins the version number of the vendor software being used by the facility or the facility's agent to automate the assessment submission process.\n29 T3STCLRG T3STATE_CALC_RUG State Case Mix Group CHAR 5 Multistate supplement: state (Medicaid) case mix group.\n30 STATE_ID STATE_ID State ID CHAR 2 The two-digit state abbreviation. This may also be the two-character CMS",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

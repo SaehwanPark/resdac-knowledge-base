@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_473",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "previous OASIS assessment, no actions have been taken to respond. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x\nM1511_HRT_FAILR_PHYSN_CNTCT M1511 Heart Fail. Follow-Up: Physician Contacted This field indicates, if the patient has been diagnosed with heart failure and has exhibited symptoms indicative of heart failure since the previous OASIS assessment, patient's physician has been contacted. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x\nM2001_DRUG_RGMN_RVW M2001 Drug Regimen Review This",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

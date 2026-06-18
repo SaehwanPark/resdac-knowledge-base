@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p130__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 130,
+  "text": "— \nCOMMENT: \nThis field is derived by accumulating the revenue center unit count associated with accommodation \nrevenue center codes 020X (all 9 subcategories) from all claims included in the stay. \nThere is approximately a 20% error rate in the revenue center code category 0206 due to coders \nmisunderstanding the term 'post ICU' as including any day after an ICU stay rather than just days in a \nstep-down/lower case version of an ICU. 'Post' was removed from the revenue center code 0206",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

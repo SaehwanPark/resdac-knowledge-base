@@ -1,0 +1,14753 @@
+RAND
+Medicare CAHPS (MCAHPS) 2025 Data Dictionary
+MA-PDP CAHPS
+RAND MCAHPS Project Team
+Funded by the Centers for Medicare & Medicaid Services
+This data dictionary was generated for CCW to support the requested 2025
+data ﬁles generated May 2026
+Version 2, Volume 1
+
+
+I. User Guide
+2
+I. User Guide
+
+
+I. User Guide
+3
+The table below details the Medicare Consumer Assessment of Healthcare Providers and Systems (MCAHPS) survey types,
+sample coverage, and type of care assessed. The table is included to provide context for the contents of this data dictionary
+as well as information on the speciﬁc years for which different types of data are available.
+Glossary of 2007-2025 MCAHPS Survey Types and Coverage*
+Survey Type
+Administered to Following Coverage Type
+Care Addressed
+Years
+Medicare Advantage Prescription Drug (MA-PD)
+MA-PD
+All aspects of care (Part C and Part D)
+2007-2025
+Medicare Advantage Only (MA-Only)
+MA-Only
+Part C aspects of care (there is no Part D)
+2007-2025
+Medicare Advantage Preferred Provider Organization (PPO)
+MA-PPO
+All aspects of care (Part C and Part D)
+2008-2012
+Prescription Drug Plan (PDP)
+FFS+PDP
+Part D aspects of care
+2011-2025
+Original Mediciare (FFS)
+FFS-Only and FFS+PDP
+Non-Part D aspects of care
+2011-2025
+Original Medicare Only (FFS-Only)
+FFS-Only
+Part C aspects of care (there is no part D)
+2007-2010
+Original Medicare and Prescription Drug Plan (FFS+PDP)
+FFS+PDP
+All aspects of care (Part C and Part D)
+2007-2010
+*Note: No MA and PDP CAHPS survey administration occurred in 2020.
+This data dictionary is presented in two volumes (indicated by Version 2 on the title page). Volume 1 contains content 
+speciﬁc to the Medicare Advantage (MA) and Prescription Drug Plan (PDP) CAHPS surveys. Volume 2 contains content 
+speciﬁc to the Original Medicare survey. Other data dictionaries are presented in a combined format (indicated by Version 1 
+on the title page).
+Helpful webpages with information about each of the surveys:
+• MA and PDP CAHPS
+– www.ma-pdpcahps.org
+– www.cms.gov/Research-Statistics-Data-and-Systems/Research/CAHPS/mcahps.html
+• ORIGINAL MEDICARE CAHPS
+– www.cms.gov/Research-Statistics-Data-and-Systems/Research/CAHPS/ffscahps.html
+The table of contents contains links that point to different sections of the data dictionary. These sections are described on the 
+following page.
+
+
+I. User Guide
+4
+Summary of Sections
+II. 2025 MCAHPS Data Contents
+This section summarizes the variables included in the requested data. The table below describes the sources or types of
+variables in the data. Part A of this section includes a list of all variable names as well as variable labels and formats. The
+standard ﬁle format is SAS and the format program included with the data delivery should be used with the data to view
+formatted values. The second table in this section provides a more detailed description of particular variables of interest. Part
+B includes the valid values for each variable, displayed in alphabetically sorted tables for each variable. Variables without
+formats (i.e. text variables, dates, etc) are not presented here.
+Variable Types in the MCAHPS Survey Data
+Variable Type
+Variable Preﬁx
+Description
+Analytic survey variables
+Varies according to question topic (i.e. ma_, ins_, ca_, etc)
+Variables that directly correspond to survey items
+Derived variables
+ws_
+Variables created during data processing to summarize survey completeness
+Survey processing variables
+su_
+Variables created by survey vendors to identify information about data collection
+Administrative variables
+sa_
+Variables that contain enrollment and demographic information about the beneﬁciary
+Reverse-coded variables
+r_
+Reverse-coded variables that directly correspond to the original survey variables
+III. 2025 Question and Variable Key
+The question key table provides exact question text for each survey item and the corresponding analytic variable name. This
+table also identiﬁes which survey types contain a speciﬁc question along with the question number for that survey. Any
+differences in question text associated with survey version are noted.
+IV. Crosswalk: 2007 to 2025
+The crosswalk tables summarize the presence of analytic variables across all years of survey administration. There is a
+separate crosswalk table for each survey type. The crosswalk tables document the question number for each survey item in
+each year and whether the item should be reverse-coded for analysis.
+V. Composites: 2007 to 2025
+The composite crosswalk tables summarize the composite items across all years of survey administration. There is a separate
+composite crosswalk table for each survey type. The composite crosswalk tables document the question number for each
+survey item in each year and the survey items that comprise each composite.
+
+
+5
+Contents
+I. User Guide
+2
+II. 2025 MCAHPS Data Contents
+6
+A. 2025 MCAHPS Analytic Data Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+7
+B. 2025 MCAHPS Format Tables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+11
+III. 2025 Question and Variable Key
+34
+IV. Crosswalk: 2007 to 2025
+41
+A. MA-PD Survey . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+43
+B. MA-Only Survey . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+C. PDP Survey . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+73
+V. Composites: 2007 to 2025
+88
+A. MA-PD Survey . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+90
+B. MA-Only Survey . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+93
+C. PDP Survey . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+96
+
+
+II. 2025 MCAHPS Data Contents
+6
+II. 2025 MCAHPS Data Contents
+
+
+A. 2025 MCAHPS Analytic Data Contents
+7
+A. 2025 MCAHPS Analytic Data Contents
+The following table is a complete list of all variables in the 2025 MCAHPS analytic data. In addition to analytic survey
+variables, these data contain several administrative and derived variables. These variables names begin with character
+combinations to indicate that they are not survey variables and their meanings are as follows:
+• ws_ - Westat derived variables
+• su_ - Survey processing variables
+• sa_ - Administrative variables
+• r_ - Survey variables with response categories reverse-coded
+name
+LABEL
+FORMAT
+ma_hlthplan
+RECODE : Covered by named medicare health plan
+YNA
+ma_hlthplan_txt
+RECODE : Name of health plan in 2024
+ca_illness
+RECODE : Last 6 mths, illness or injury requiring immediate care
+YNA
+ca_illasaw
+RECODE : Last 6 mths, how often get care as soon as needed
+OFA
+ca_routine
+RECODE : Last 6 mths, make in-person/phone/video appointment for check-up or routine care
+YNA
+ca_rtnasaw
+RECODE : Last 6 mths, how often get appt for routine care as soon as needed
+OFA
+ca_visits
+RECODE : Last 6 mths, how many in-person/phone/video visits for health care
+NMA
+rate_care
+RECODE : Last 6 mths, rate health care
+RTA
+md_have
+RECODE : Do you have a personal md
+YNA
+md_visits
+RECODE : Last 6 mths, number of in-person/phone/video visits with personal md about health
+NMA
+md_explain
+RECODE : Last 6 mths, how often personal md explain things
+OFA
+md_listen
+RECODE : Last 6 mths, how often personal md listen carefully
+OFA
+md_respect
+RECODE : Last 6 mths, how often personal md show respect
+OFA
+md_sptime
+RECODE : Last 6 mths, how often personal md spend enough time with you
+OFA
+rate_md
+RECODE : Rate personal md
+RTA
+md_medrecs
+RECODE : Last 6 mths, how often md ofﬁce have medical records
+OFA
+md_test
+RECODE : Last 6 mths, personal md ordered blood test/x-ray/other
+YNA
+md_testfup
+RECODE : Last 6 mths, how often md ofﬁce follow up with test results
+OFA
+md_testasan
+RECODE : Last 6 mths, how often got test results as soon as needed
+OFA
+md_rxmeds
+RECODE : Last 6 mths, took any prescription medicine
+YNA
+md_talkmeds
+RECODE : Last 6 mths, how often personal md talk about all rx medicines
+OFA
+md_morethan1
+RECODE : Last 6 mths, got care from more than one provider
+YNA
+md_needmngca
+RECODE : Last 6 mths, needed help from personal md to manage care
+YNA
+md_getmngca
+RECODE : Last 6 mths, got help needed from personal md to manage care
+YNB
+sp_persmd
+RECODE : Personal md is a specialist
+YNA
+sp_tryappt
+RECODE : Last 6 mths, make appointments with specialist
+YNA
+sp_getappt
+RECODE : Last 6 mths, how often get appointment with specialist as soon as needed
+OFA
+sp_visits
+RECODE : Last 6 mths, number of specialists talked to
+NMB
+rate_spec
+RECODE : Rate specialist talked to most often
+RTA
+sp_mdinformd
+RECODE : Last 6 mths, how often personal md up-to-date on care from specialists
+OFA
+pl_getcare
+RECODE : Last 6 mths, how often easy to get needed care/tests/treatment
+OFA
+pl_paperwk
+RECODE : Last 6 mths, health plan give forms to ﬁll out
+YNA
+pl_ezpaper
+RECODE : Last 6 mths, how often health plan forms easy to ﬁll out
+OFA
+rate_plan
+RECODE : Rate health plan
+RTA
+pl_lowercopay
+RECODE : Last 6 mths, did health plan offer to lower amount of your co-pay because of health condition
+YNA
+pl_xtrabeneﬁts
+RECODE : Last 6 mths, did health plan offer extra beneﬁts because of health condition
+YNA
+pl_hospovn
+RECODE : Last 6 mths, spend one or more nights in a hospital
+YNA
+pd_hlthplan
+RECODE : Name of health plan
+YNA
+pd_hlthplan_txt
+RECODE : Name of medicare prescription drug plan
+cs_cstryinfo
+RECODE : Last 6 mths, try to get info or help from health plan customer service
+YNA
+
+
+A. 2025 MCAHPS Analytic Data Contents
+name
+LABEL
+FORMAT
+cs_csgetinfo
+RECODE : Last 6 mths, how often health plan customer service give info
+OFA
+cs_csrespect
+RECODE : Last 6 mths, how often health plan customer service treat w/respect and courtesy
+OFA
+pd_ﬁllrx
+RECODE : Last 6 mths, dr/pharmacy/pdp contact: make sure ﬁll or reﬁll rx
+YNA
+pd_takemeds
+RECODE : Last 6 mths, dr/pharmacy/pdp contact: make sure take meds as directed
+YNA
+pd_ezrxmeds
+RECODE : Last 6 mths, easy to use pdp to get rx meds
+OFA
+pd_rxpharm
+RECODE : Last 6 mths, ever use pdp to ﬁll rx at local pharmacy
+YNA
+pd_ezrxpharm
+RECODE : Last 6 mths, easy to use pdp to ﬁll rx at local pharmacy
+OFA
+pd_rxmail
+RECODE : Last 6 mths, ever use pdp to ﬁll rx by mail
+YNA
+pd_ezrxmail
+RECODE : Last 6 mths, easy to use pdp to ﬁll rx by mail
+OFA
+rate_pdp
+RECODE : Rate prescription drug plan
+RTA
+ghs
+RECODE : Rate overall general health
+RTB
+mhs
+RECODE : Rate overall mental health
+RTB
+rxezmeds
+RECODE: Last 6 mths, easy to get medicines doctor prescribed
+OFA
+rxinspay
+RECODE: Have insurance that pays part or all the cost of rx medicines
+YNA
+rxdelay
+RECODE : Last 6 mths, delayed ﬁlling rx meds because of cost
+YNA
+cnd_heartattack
+RECODE : Dr ever said had: heart attack
+YNA
+cnd_angina
+RECODE : Dr ever said had: angina or coronary heart disease
+YNA
+cnd_hbp
+RECODE : Dr ever said had: hypertension or high blood pressure
+YNA
+cnd_cancer
+RECODE : Dr ever said had: cancer, other than skin cancer
+YNA
+cnd_copd
+RECODE : Dr ever said had: emphysema, asthma or copd
+YNA
+cnd_diabetes
+RECODE : Dr ever said had: diabetes or high blood sugar
+YNA
+prob_walking
+RECODE : Do you have serious difﬁculty walking or climbing stairs
+YNA
+prob_dressing
+RECODE : Do you have difﬁculty dressing or bathing
+YNA
+prob_errands
+RECODE : Do you have difﬁculty doing errands alone
+YNA
+im_ﬂu1last
+RECODE : Had a ﬂu shot since july 1, 2024
+YNA
+im_pneum
+RECODE : Ever had pneumonia shot
+YNA
+agecat
+Age category derived from sa_age
+AGE
+educ
+RECODE : Highest education level completed
+EDU
+race_hisp
+RECODE : Hispanic or latino origin/descent
+HSP
+race_white
+RECODE : Race: white
+YNE
+race_black
+RECODE : Race: black or african american
+YNE
+race_asian
+RECODE : Race: asian
+YNE
+race_paciﬁc
+RECODE : Race: native hawaiian or other paciﬁc islander
+YNE
+race_natamer
+RECODE : Race: american indian or alaska native
+YNE
+proxy
+RECODE : Someone helped complete survey
+YNA
+proxy_read
+RECODE : How helped: proxy read questions
+YNE
+proxy_writ
+RECODE : How helped: proxy wrote answers
+YNE
+proxy_answ
+RECODE : How helped: proxy answered questions
+YNE
+proxy_tran
+RECODE : How helped: proxy translated questions
+YNE
+proxy_othr
+RECODE : How helped: proxy helped other way
+YNE
+living_numinhh
+RECODE : Number of people living in household
+NMD
+web_at_home
+RECODE : Do you ever use the internet at home
+YNA
+recontact
+RECODE : Medicare program may recontact about health care services received
+YNA
+lang_speak
+RECODE : Language mainly speak at home
+LANGH
+ws_wes_comp
+WESTAT: Complete for analysis and reporting
+WESCOF
+ws_answered
+WESTAT: Number of substantive or evaluative items answered
+su_web_surv
+Indicates whether submitted web survey came from prenotiﬁcation letter, web invitation, or reminder
+WEBF
+su_type
+Survey type (1-4)
+$TYPEF
+su_supp_items
+Total number of supplemental items added by the plan
+su_received
+Date survey data collected
+su_mode
+Survey data collection mode
+$MODEF
+su_email_stat
+Email indicator
+$ESTATF
+su_dispositn
+Final disposition code
+$FDISPF
+su_dispo_lang
+Language of survey data collection
+$LANGF
+8
+
+
+A. 2025 MCAHPS Analytic Data Contents
+9
+name
+LABEL
+FORMAT
+sa_type
+Ma & pdp survey type (1-4)
+STP
+sa_st_abbr
+Fips state abbreviation
+sa_spanish_ind
+Spanish language ﬂag (medicare & you)
+$ID_F
+sa_snp_type
+Part d special needs plan type
+$SNP
+sa_sex
+Sex of beneﬁciary
+$SEXF
+sa_region
+Region deﬁned using sa_st_abbr/sa_ﬁps_state
+RGN
+sa_race
+Beneﬁciary race
+$RACEF
+sa_ptdpbp
+Part d plan id
+sa_ptdcntrct
+Part d health plan id
+sa_ptd_type
+Part d plan type
+$PBT
+sa_ptd_snp
+Part d special needs plan
+$ID_F
+sa_ptd_prm_c
+Part d premium range
+$PRM
+sa_ptabpbp
+Part a-b plan id
+sa_ptabcntrct
+Part a-b health plan id
+sa_ptab_type
+Part a-b plan type
+$PBT
+sa_plan_name
+Plan name
+sa_pffs
+Private fee for service plan
+sa_pbp_type
+Plan type of surveyed plan
+$PBT
+sa_pbp_num
+Plan id of surveyed plan
+sa_partd_stus
+Part d status
+$ID_F
+sa_org_entlmt
+Original reason for entitlement
+$OEN
+sa_mmp
+WESTAT: Mmp plan
+sa_mdcr_stus
+Reason for beneﬁciary entitlement
+$MCR
+sa_mdcd_stus
+Sample members who are dual eligible
+$ID_F
+sa_mbi_id
+Medicare beneﬁciary identiﬁer (mbi)
+sa_lis
+Low income subsidy
+$ID_F
+sa_incarc_sw
+Incarceration ﬂag
+$ID_F
+sa_fpl_pct
+Federal poverty level percent code
+$FPL
+sa_ﬁps_state
+Fips state code
+sa_ﬁps_cnty
+Fips county code
+sa_dodeath
+Date of death of beneﬁciary
+sa_dob
+Date of birth of beneﬁciary
+sa_disbld
+Disabled ﬂag
+$ID_F
+sa_deemd_lis
+Deemed for low income subsidy
+$ID_F
+sa_deemd_cpmt
+Generic level for copay computation
+$GENLEVF
+sa_cvrg_type
+Part a-b coverage type
+$CVT
+sa_cntrct_num
+Health plan id of surveyed plan
+sa_age
+Age derived as su_received - sa_dob
+r_pl_xtrabeneﬁts
+REVERSED: Last 6 mths, did health plan offer extra beneﬁts because of health condition
+YND
+r_pl_lowercopay
+REVERSED: Last 6 mths, did health plan offer to lower amount of your co-pay because of health condition
+YND
+r_pd_takemeds
+REVERSED: Last 6 mths, dr/pharmacy/pdp contact: make sure take meds as directed
+YND
+r_pd_ﬁllrx
+REVERSED: Last 6 mths, dr/pharmacy/pdp contact: make sure ﬁll or reﬁll rx
+YND
+r_mhs
+REVERSED: Rate mental health
+RTC
+r_md_getmngca
+REVERSED: Last 6 mths, got help from personal md to manage care
+YNC
+r_im_pneum
+REVERSED: Ever had a pneumonia shot
+YND
+r_im_ﬂu1last
+REVERSED: Flu shot last year
+YND
+r_ghs
+REVERSED: Rate overall health
+RTC
+mcahps_id
+Mcahps identiﬁer
+indiv_wt
+Final individual weight
+ﬁnal_wt
+Final contract-level survey weight
+
+
+A. 2025 MCAHPS Analytic Data Contents
+10
+The following table provides additional details for a subset of variables from the preceding variable contents table
+Variable
+Detailed Variable Description
+MCAHPS_ID
+Randomly assigned identiﬁer used to de-identify beneﬁciaries within a single MCAHPS year
+This variable cannot be used to merge beneﬁciaries across other years of MCAHPS data
+SU_TYPE
+Indicates to which survey the beneﬁciary responded (MA-PD, MA-Only, PDP, or FFS)
+SA_TYPE
+Indicates to which survey the beneﬁciary responded (MA-PD, MA-Only, PDP, or FFS)
+Note that SA_TYPE = 1 indicates MA-Only and SA_TYPE = 2 indicates MA-PD
+These values are reversed for SU_TYPE
+SA_PFFS
+PFFS plan type indicator
+SA_MMP
+MMP plan type indicator
+SA_ST_ABBR
+FIPS State Name Abbreviations, derived from SA_FIPS_STATE
+INDIV_WT
+Post-stratiﬁcation weight for comparing patient subgroups and for national point estimates
+FINAL_WT
+Contract-level (state-level for FFS) weight for weighting scores for Star Ratings
+
+
+B. 2025 MCAHPS Format Tables
+11
+B. 2025 MCAHPS Format Tables
+The following tables summarize the formatted response options within each analytic variable.
+Valid response options also include special missing values, which are summarized below.
+. = QUEX NOT ASKED (question not asked on the survey type)
+.A = MULTIPLE RESPONSES
+.B = NOT ANSWERED (truly missing)
+.D = DON’T KNOW (possible only as a CATI response)
+.G = APPROPRIATE SKIP (screener response warrants a skip and no response was given)
+.I = INCONSISTENT RESPONSE (response to a prior question contradicts this response)
+.J = DON’T KNOW SURVEY OPTION (Don’t Know survey response option)
+.K = INAPPROPRIATE ANSWER (screener response warrants a skip, but response was given)
+.L = INAPPROPRIATE SKIP (screener response warrants an answer, but no response was given)
+.N = NA SURVEY OPTION (tailored skip)
+.R = REFUSED (possible only as a CATI response)
+agecat: Age category derived from SA_AGE
+SAS Format: AGE
+1: 18-24
+2: 25-34
+3: 35-44
+4: 45-54
+5: 55-64
+6: 65-69
+7: 70-74
+8: 75-79
+9: 80-84
+10: 85 OR OLDER
+ca_illasaw: RECODE : Last 6 mths, how often get care as soon as needed
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+ca_illness: RECODE : Last 6 mths, illness or injury requiring immediate care
+SAS Format: YNA
+1: YES
+2: NO
+
+
+B. 2025 MCAHPS Format Tables
+12
+ca_routine: RECODE : Last 6 mths, make in-person/phone/video appointment for check-up or routine care
+SAS Format: YNA
+1: YES
+2: NO
+ca_rtnasaw: RECODE : Last 6 mths, how often get appt for routine care as soon as needed
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+ca_visits: RECODE : Last 6 mths, how many in-person/phone/video visits for health care
+SAS Format: NMA
+0: NONE
+1: 1 TIME
+2: 2
+3: 3
+4: 4
+5: 5 TO 9
+6: 10 OR MORE TIMES
+cnd_angina: RECODE : Dr ever said had: Angina or coronary heart disease
+SAS Format: YNA
+1: YES
+2: NO
+cnd_cancer: RECODE : Dr ever said had: Cancer, other than skin cancer
+SAS Format: YNA
+1: YES
+2: NO
+cnd_copd: RECODE : Dr ever said had: Emphysema, asthma or COPD
+SAS Format: YNA
+1: YES
+2: NO
+cnd_diabetes: RECODE : Dr ever said had: Diabetes or high blood sugar
+SAS Format: YNA
+1: YES
+2: NO
+
+
+B. 2025 MCAHPS Format Tables
+13
+cnd_hbp: RECODE : Dr ever said had: Hypertension or high blood pressure
+SAS Format: YNA
+1: YES
+2: NO
+cnd_heartattack: RECODE : Dr ever said had: Heart attack
+SAS Format: YNA
+1: YES
+2: NO
+cs_csgetinfo: RECODE : Last 6 mths, how often health plan customer service give info
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+cs_csrespect: RECODE : Last 6 mths, how often health plan customer service treat w/respect and courtesy
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+cs_cstryinfo: RECODE : Last 6 mths, try to get info or help from health plan customer service
+SAS Format: YNA
+1: YES
+2: NO
+educ: RECODE : Highest education level completed
+SAS Format: EDU
+1: <= 8TH GRADE
+2: SOME HS
+3: HS GRAD/GED
+4: SOME COLLEGE/2-YR DEGREE
+5: 4-YR COLLEGE GRAD
+6: >4-YR COLLEGE DEGREE
+ghs: RECODE : Rate overall general health
+SAS Format: RTB
+1: EXCELLENT
+
+
+B. 2025 MCAHPS Format Tables
+14
+ghs: RECODE : Rate overall general health
+SAS Format: RTB
+2: VERY GOOD
+3: GOOD
+4: FAIR
+5: POOR
+im_ﬂu1last: RECODE : Had a ﬂu shot since July 1, 2024
+SAS Format: YNA
+1: YES
+2: NO
+im_pneum: RECODE : Ever had Pneumonia shot
+SAS Format: YNA
+1: YES
+2: NO
+lang_speak: RECODE : Language mainly speak at home
+SAS Format: LANGH
+1: ENGLISH
+2: SPANISH
+3: CHINESE
+4: KOREAN
+5: TAGALOG
+6: VIETNAMESE
+7: SOME OTHER LANGUAGE
+living_numinhh: RECODE : Number of people living in household
+SAS Format: NMD
+1: 1 PERSON
+2: 2-3 PEOPLE
+3: 4+ PEOPLE
+ma_hlthplan: RECODE : Covered by named Medicare health plan
+SAS Format: YNA
+1: YES
+2: NO
+md_explain: RECODE : Last 6 mths, how often personal MD explain things
+SAS Format: OFA
+1: NEVER
+
+
+B. 2025 MCAHPS Format Tables
+15
+md_explain: RECODE : Last 6 mths, how often personal MD explain things
+SAS Format: OFA
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_getmngca: RECODE : Last 6 mths, got help needed from personal MD to manage care
+SAS Format: YNB
+1: YES, DEFINITELY
+2: YES, SOMEWHAT
+3: NO
+md_have: RECODE : Do you have a personal MD
+SAS Format: YNA
+1: YES
+2: NO
+md_listen: RECODE : Last 6 mths, how often personal MD listen carefully
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_medrecs: RECODE : Last 6 mths, how often MD ofﬁce have medical records
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_morethan1: RECODE : Last 6 mths, got care from more than one provider
+SAS Format: YNA
+1: YES
+2: NO
+md_needmngca: RECODE : Last 6 mths, needed help from personal MD to manage care
+SAS Format: YNA
+1: YES
+2: NO
+
+
+B. 2025 MCAHPS Format Tables
+16
+md_respect: RECODE : Last 6 mths, how often personal MD show respect
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_rxmeds: RECODE : Last 6 mths, took any prescription medicine
+SAS Format: YNA
+1: YES
+2: NO
+md_sptime: RECODE : Last 6 mths, how often personal MD spend enough time with you
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_talkmeds: RECODE : Last 6 mths, how often personal MD talk about all Rx medicines
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_test: RECODE : Last 6 mths, personal MD ordered blood test/x-ray/other
+SAS Format: YNA
+1: YES
+2: NO
+md_testasan: RECODE : Last 6 mths, how often got test results as soon as needed
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_testfup: RECODE : Last 6 mths, how often MD ofﬁce follow up with test results
+SAS Format: OFA
+1: NEVER
+
+
+B. 2025 MCAHPS Format Tables
+17
+md_testfup: RECODE : Last 6 mths, how often MD ofﬁce follow up with test results
+SAS Format: OFA
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+md_visits: RECODE : Last 6 mths, number of in-person/phone/video visits with personal MD about health
+SAS Format: NMA
+0: NONE
+1: 1 TIME
+2: 2
+3: 3
+4: 4
+5: 5 TO 9
+6: 10 OR MORE TIMES
+mhs: RECODE : Rate overall mental health
+SAS Format: RTB
+1: EXCELLENT
+2: VERY GOOD
+3: GOOD
+4: FAIR
+5: POOR
+pd_ezrxmail: RECODE : Last 6 mths, easy to use PDP to ﬁll RX by mail
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+pd_ezrxmeds: RECODE : Last 6 mths, easy to use PDP to get RX meds
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+pd_ezrxpharm: RECODE : Last 6 mths, easy to use PDP to ﬁll RX at local pharmacy
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+
+
+B. 2025 MCAHPS Format Tables
+18
+pd_ezrxpharm: RECODE : Last 6 mths, easy to use PDP to ﬁll RX at local pharmacy
+SAS Format: OFA
+3: USUALLY
+4: ALWAYS
+pd_ﬁllrx: RECODE : Last 6 mths, Dr/pharmacy/PDP contact: Make sure ﬁll or reﬁll Rx
+SAS Format: YNA
+1: YES
+2: NO
+pd_hlthplan: RECODE : Name of health plan
+SAS Format: YNA
+1: YES
+2: NO
+pd_rxmail: RECODE : Last 6 mths, ever use PDP to ﬁll RX by mail
+SAS Format: YNA
+1: YES
+2: NO
+pd_rxpharm: RECODE : Last 6 mths, ever use PDP to ﬁll RX at local pharmacy
+SAS Format: YNA
+1: YES
+2: NO
+pd_takemeds: RECODE : Last 6 mths, Dr/pharmacy/PDP contact: Make sure take meds as directed
+SAS Format: YNA
+1: YES
+2: NO
+pl_ezpaper: RECODE : Last 6 mths, how often health plan forms easy to ﬁll out
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+pl_getcare: RECODE : Last 6 mths, how often easy to get needed care/tests/treatment
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+
+
+B. 2025 MCAHPS Format Tables
+19
+pl_getcare: RECODE : Last 6 mths, how often easy to get needed care/tests/treatment
+SAS Format: OFA
+3: USUALLY
+4: ALWAYS
+pl_hospovn: RECODE : Last 6 mths, spend one or more nights in a hospital
+SAS Format: YNA
+1: YES
+2: NO
+pl_lowercopay: RECODE : Last 6 mths, did health plan offer to lower amount of your co-pay because of health condition
+SAS Format: YNA
+1: YES
+2: NO
+pl_paperwk: RECODE : Last 6 mths, health plan give forms to ﬁll out
+SAS Format: YNA
+1: YES
+2: NO
+pl_xtrabeneﬁts: RECODE : Last 6 mths, did health plan offer extra beneﬁts because of health condition
+SAS Format: YNA
+1: YES
+2: NO
+prob_dressing: RECODE : Do you have difﬁculty dressing or bathing
+SAS Format: YNA
+1: YES
+2: NO
+prob_errands: RECODE : Do you have difﬁculty doing errands alone
+SAS Format: YNA
+1: YES
+2: NO
+prob_walking: RECODE : Do you have serious difﬁculty walking or climbing stairs
+SAS Format: YNA
+1: YES
+2: NO
+
+
+B. 2025 MCAHPS Format Tables
+20
+proxy: RECODE : Someone helped complete survey
+SAS Format: YNA
+1: YES
+2: NO
+proxy_answ: RECODE : How helped: Proxy answered questions
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+proxy_othr: RECODE : How helped: Proxy helped other way
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+proxy_read: RECODE : How helped: Proxy read questions
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+proxy_tran: RECODE : How helped: Proxy translated questions
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+proxy_writ: RECODE : How helped: Proxy wrote answers
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+r_ghs: REVERSED: Rate Overall Health
+SAS Format: RTC
+1: POOR
+2: FAIR
+3: GOOD
+4: VERY GOOD
+5: EXCELLENT
+
+
+B. 2025 MCAHPS Format Tables
+21
+r_im_ﬂu1last: REVERSED: Flu shot last year
+SAS Format: YND
+1: NO
+2: YES
+r_im_pneum: REVERSED: Ever had a Pneumonia shot
+SAS Format: YND
+1: NO
+2: YES
+r_md_getmngca: REVERSED: last 6 mths, got help from personal md to manage care
+SAS Format: YNC
+1: NO
+2: YES, SOMEWHAT
+3: YES, DEFINITELY
+r_mhs: REVERSED: Rate Mental Health
+SAS Format: RTC
+1: POOR
+2: FAIR
+3: GOOD
+4: VERY GOOD
+5: EXCELLENT
+r_pd_ﬁllrx: REVERSED: Last 6 mths, Dr/pharmacy/PDP contact: Make sure ﬁll or reﬁll Rx
+SAS Format: YND
+1: NO
+2: YES
+r_pd_takemeds: REVERSED: Last 6 mths, Dr/pharmacy/PDP contact: Make sure take meds as directed
+SAS Format: YND
+1: NO
+2: YES
+r_pl_lowercopay: REVERSED: Last 6 mths, did health plan offer to lower amount of your co-pay because of health condition
+SAS Format: YND
+1: NO
+2: YES
+
+
+B. 2025 MCAHPS Format Tables
+22
+r_pl_xtrabeneﬁts: REVERSED: Last 6 mths, did health plan offer extra beneﬁts because of health condition
+SAS Format: YND
+1: NO
+2: YES
+race_asian: RECODE : Race: Asian
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+race_black: RECODE : Race: Black or African American
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+race_hisp: RECODE : Hispanic or Latino origin/descent
+SAS Format: HSP
+1: HISPANIC OR LATINO
+2: NOT HISPANIC OR LATINO
+race_natamer: RECODE : Race: American Indian or Alaska Native
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+race_paciﬁc: RECODE : Race: Native Hawaiian or other Paciﬁc Islander
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+race_white: RECODE : Race: White
+SAS Format: YNE
+0: NOT CHECKED
+1: CHECKED
+rate_care: RECODE : Last 6 mths, rate health care
+SAS Format: RTA
+0: WORST POSSIBLE
+1: 1
+2: 2
+3: 3
+
+
+B. 2025 MCAHPS Format Tables
+23
+rate_care: RECODE : Last 6 mths, rate health care
+SAS Format: RTA
+4: 4
+5: 5
+6: 6
+7: 7
+8: 8
+9: 9
+10: BEST POSSIBLE
+rate_md: RECODE : Rate personal MD
+SAS Format: RTA
+0: WORST POSSIBLE
+1: 1
+2: 2
+3: 3
+4: 4
+5: 5
+6: 6
+7: 7
+8: 8
+9: 9
+10: BEST POSSIBLE
+rate_pdp: RECODE : Rate prescription drug plan
+SAS Format: RTA
+0: WORST POSSIBLE
+1: 1
+2: 2
+3: 3
+4: 4
+5: 5
+6: 6
+7: 7
+8: 8
+9: 9
+10: BEST POSSIBLE
+rate_plan: RECODE : Rate health plan
+SAS Format: RTA
+0: WORST POSSIBLE
+1: 1
+2: 2
+3: 3
+
+
+B. 2025 MCAHPS Format Tables
+24
+rate_plan: RECODE : Rate health plan
+SAS Format: RTA
+4: 4
+5: 5
+6: 6
+7: 7
+8: 8
+9: 9
+10: BEST POSSIBLE
+rate_spec: RECODE : Rate specialist talked to most often
+SAS Format: RTA
+0: WORST POSSIBLE
+1: 1
+2: 2
+3: 3
+4: 4
+5: 5
+6: 6
+7: 7
+8: 8
+9: 9
+10: BEST POSSIBLE
+recontact: RECODE : Medicare Program may recontact about health care services received
+SAS Format: YNA
+1: YES
+2: NO
+rxdelay: RECODE : Last 6 mths, delayed ﬁlling RX meds because of cost
+SAS Format: YNA
+1: YES
+2: NO
+rxezmeds: RECODE: Last 6 mths, easy to get medicines doctor prescribed
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+
+
+B. 2025 MCAHPS Format Tables
+25
+rxinspay: RECODE: Have insurance that pays part or all the cost of RX medicines
+SAS Format: YNA
+1: YES
+2: NO
+sa_cvrg_type: Part A-B Coverage Type
+SAS Format: $CVT
+3: CVP
+4: MSA
+5: PFFS
+6: PACE
+7: PCE
+8: DEMO
+9: FFS
+10: CHCCP
+12: CCDM
+14: MMP
+sa_deemd_cpmt: Generic Level for Copay Computation
+SAS Format: $GENLEVF
+1: HIGH
+2: LOW
+3: 0
+4: 15%
+5: UNKNOWN
+N: N/A
+sa_deemd_lis: Deemed for Low Income Subsidy
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+sa_disbld: Disabled Flag
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+
+
+B. 2025 MCAHPS Format Tables
+26
+sa_fpl_pct: Federal Poverty Level Percent Code
+SAS Format: $FPL
+1: BELOW 100% FPL
+2: 100% OR ABOVE FPL
+9: UNKNOWN
+sa_incarc_sw: Incarceration Flag
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+sa_lis: Low Income Subsidy
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+sa_mdcd_stus: Sample Members who are Dual Eligible
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+sa_mdcr_stus: Reason for Beneﬁciary Entitlement
+SAS Format: $MCR
+0 : MISSING
+10: AGED WITHOUT ESRD
+11: AGED WITH ESRD
+20: DISABLED WITHOUT ESRD
+21: DISABLED WITH ESRD
+31: ESRD ONLY
+sa_org_entlmt: Original Reason for Entitlement
+SAS Format: $OEN
+0: AGE
+1: DISABILITY
+2: ESRD
+3: DISABILITY & ESRD
+U: UNKNOWN
+
+
+B. 2025 MCAHPS Format Tables
+27
+sa_partd_stus: Part D Status
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+sa_pbp_type: Plan Type of Surveyed Plan
+SAS Format: $PBT
+01: HMO
+02: HMOPOS
+03: CCOTH
+04: LOCAL PPO
+05: PSO(STATE LICENSE)
+06: PSO(FEDERAL WAIVER OF STATE LICENSE)
+07: MSA
+08: RFB
+09: PFFS
+10: SHMO
+17: OTHER
+18: 1876 COST
+19: HCPP-1833 COST
+20: NATIONAL PACE
+27: CAPITATED DISEASE MANAGEMENT DEMO
+28: CHRONIC CARE
+29: MEDICARE PDP
+30: EMPLOYER-SPONSORED PDP
+31: REGIONAL PPO
+32: FALLBACK
+33: MN DISABILITY HEALTH OPTIONS
+34: MN SENIOR HEALTH OPTIONS
+35: WI PARTNERSHIP PROGRAM
+36: MA HEALTH SENIOR CARE OPTIONS
+37: CONTINUING CARE RETIREMENT COMMUNITY
+38: ESRD I
+39: ESRD II
+40: EMPLOYER-SPONSORED PFFS
+46: POINT-OF-SALE CONTRACTOR
+48: MMP HMO
+UK: UNKNOWN
+sa_ptab_type: Part A-B Plan Type
+SAS Format: $PBT
+01: HMO
+02: HMOPOS
+
+
+B. 2025 MCAHPS Format Tables
+28
+sa_ptab_type: Part A-B Plan Type
+SAS Format: $PBT
+03: CCOTH
+04: LOCAL PPO
+05: PSO(STATE LICENSE)
+06: PSO(FEDERAL WAIVER OF STATE LICENSE)
+07: MSA
+08: RFB
+09: PFFS
+10: SHMO
+17: OTHER
+18: 1876 COST
+19: HCPP-1833 COST
+20: NATIONAL PACE
+27: CAPITATED DISEASE MANAGEMENT DEMO
+28: CHRONIC CARE
+29: MEDICARE PDP
+30: EMPLOYER-SPONSORED PDP
+31: REGIONAL PPO
+32: FALLBACK
+33: MN DISABILITY HEALTH OPTIONS
+34: MN SENIOR HEALTH OPTIONS
+35: WI PARTNERSHIP PROGRAM
+36: MA HEALTH SENIOR CARE OPTIONS
+37: CONTINUING CARE RETIREMENT COMMUNITY
+38: ESRD I
+39: ESRD II
+40: EMPLOYER-SPONSORED PFFS
+46: POINT-OF-SALE CONTRACTOR
+48: MMP HMO
+UK: UNKNOWN
+sa_ptd_prm_c: Part D Premium Range
+SAS Format: $PRM
+0: UNKNOWN
+1: 00.00
+2: 00.01-9.99
+3: 10.00-19.99
+4: 20.00-29.99
+5: 30.00-39.99
+6: 40.00-49.99
+7: 50.00+
+
+
+B. 2025 MCAHPS Format Tables
+29
+sa_ptd_snp: Part D Special Needs Plan
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+sa_ptd_type: Part D Plan Type
+SAS Format: $PBT
+01: HMO
+02: HMOPOS
+03: CCOTH
+04: LOCAL PPO
+05: PSO(STATE LICENSE)
+06: PSO(FEDERAL WAIVER OF STATE LICENSE)
+07: MSA
+08: RFB
+09: PFFS
+10: SHMO
+17: OTHER
+18: 1876 COST
+19: HCPP-1833 COST
+20: NATIONAL PACE
+27: CAPITATED DISEASE MANAGEMENT DEMO
+28: CHRONIC CARE
+29: MEDICARE PDP
+30: EMPLOYER-SPONSORED PDP
+31: REGIONAL PPO
+32: FALLBACK
+33: MN DISABILITY HEALTH OPTIONS
+34: MN SENIOR HEALTH OPTIONS
+35: WI PARTNERSHIP PROGRAM
+36: MA HEALTH SENIOR CARE OPTIONS
+37: CONTINUING CARE RETIREMENT COMMUNITY
+38: ESRD I
+39: ESRD II
+40: EMPLOYER-SPONSORED PFFS
+46: POINT-OF-SALE CONTRACTOR
+48: MMP HMO
+UK: UNKNOWN
+sa_race: Beneﬁciary Race
+SAS Format: $RACEF
+0: UNKNOWN
+1: WHITE
+
+
+B. 2025 MCAHPS Format Tables
+30
+sa_race: Beneﬁciary Race
+SAS Format: $RACEF
+2: BLACK
+3: OTHER
+4: ASIAN
+5: HISPANIC
+6: NORTH AMER NATV
+sa_region: REGION deﬁned using SA_ST_ABBR/SA_FIPS_STATE
+SAS Format: RGN
+1: NORTHEAST (CT,ME,MA,NH,RI,VT)
+2: NORTH MID-ATL (NJ,NY,PR,VI)
+3: MID-ATL (DE,DC,MD,PA,VA,WV)
+4: SOUTH ATL (AL,FL,GA,KY,MS,NC,SC,TN)
+5: EAST MIDWEST (IL,IN,MI,MN,OH,WI)
+6: SOUTHWEST (AR,LA,NM,OK,TX)
+7: MIDWEST (IA,KS,MO,NE)
+8: MOUNTAIN (CO,MT,ND,SD,UT,WY)
+9: PACIFIC (AZ,CA,HI,NV)
+10: NORTHWEST (AK,ID,OR,WA)
+sa_sex: Sex of Beneﬁciary
+SAS Format: $SEXF
+0: UNKNOWN
+1: MALE
+2: FEMALE
+sa_snp_type: Part D Special Needs Plan Type
+SAS Format: $SNP
+1: CHRONIC CONDITION
+2: DUAL ELIGIBLE
+3: INSTITUTIONAL
+9: UNKNOWN
+sa_spanish_ind: Spanish Language Flag (Medicare & You)
+SAS Format: $ID_F
+N: NO
+U: UNKNOWN
+Y: YES
+
+
+B. 2025 MCAHPS Format Tables
+31
+sa_type: MA & PDP Survey Type (1-4)
+SAS Format: STP
+1: MA ONLY
+2: MA PDP
+3: PDP
+5: FFS
+sp_getappt: RECODE : Last 6 mths, how often get appointment with specialist as soon as needed
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+sp_mdinformd: RECODE : Last 6 mths, how often personal MD up-to-date on care from specialists
+SAS Format: OFA
+1: NEVER
+2: SOMETIMES
+3: USUALLY
+4: ALWAYS
+sp_persmd: RECODE : Personal MD is a specialist
+SAS Format: YNA
+1: YES
+2: NO
+sp_tryappt: RECODE : Last 6 mths, make appointments with specialist
+SAS Format: YNA
+1: YES
+2: NO
+sp_visits: RECODE : Last 6 mths, number of specialists talked to
+SAS Format: NMB
+0: NONE
+1: 1 SPECIALIST
+2: 2
+3: 3
+4: 4
+5: 5 OR MORE SPECIALISTS
+
+
+B. 2025 MCAHPS Format Tables
+32
+su_dispo_lang: Language of Survey Data Collection
+SAS Format: $LANGF
+1: ENGLISH
+2: SPANISH
+3: CHINESE
+4: VIETNAMESE
+5: KOREAN
+6: TAGALOG
+7: MANDARIN
+88: NA
+8: CANTONESE
+su_dispositn: Final Disposition Code
+SAS Format: $FDISPF
+10: COMPLETED SURVEY
+11: INSTITUTIONALIZED
+20: DECEASED
+22: LANGUAGE BARRIER
+24: MENT/PHYS UNABLE TO RESPOND
+31: PARTIALLY COMPLETE SURVEY
+32: REFUSAL
+33: NON-RESPONSE
+34: BLANK RETURNED
+35: BAD ADDRESS/BAD PHONE
+37: ANALYTIC COMPLETE
+40: EXCLUDED FROM SURVEY
+su_email_stat: Email indicator
+SAS Format: $ESTATF
+N: No, no email identiﬁed for enrollee
+Y: Yes, email identiﬁed for enrollee
+su_mode: Survey Data Collection Mode
+SAS Format: $MODEF
+I: INBOUND CATI
+M: MAIL
+N: NA
+O: OUTBOUND CATI
+W: WEB
+
+
+B. 2025 MCAHPS Format Tables
+33
+su_type: Survey Type (1-4)
+SAS Format: $TYPEF
+1: MA PDP
+2: MA ONLY
+3: PDP
+4: FFS
+su_web_surv: Indicates Whether Submitted Web Survey Came from Prenotiﬁcation Letter, Web Invitation, or Reminder
+SAS Format: WEBF
+1: Prenotiﬁcation letter URL/PIN
+2: Paper web invitation URL/PIN
+3: Email web invitation URL/PIN
+4: Email reminder URL/PIN
+8: Not Applicable
+web_at_home: RECODE : Do you ever use the internet at home
+SAS Format: YNA
+1: YES
+2: NO
+ws_wes_comp: WESTAT: Complete for Analysis and Reporting
+SAS Format: WESCOF
+0: NOT COMPLETE FOR ANALYSIS
+1: COMPLETE FOR ANALYSIS
+
+
+III. 2025 Question and Variable Key
+34
+III. 2025 Question and Variable Key
+
+
+III. 2025 Question and Variable Key
+35
+The following table lists the analytic variables’ respective surveys, question numbers, and question texts. Grey highlighted
+rows identify different question text within the same analytic variable.
+Question
+Variable
+Survey
+Number
+Question Text
+MA-PD
+ma_hlthplan
+Q01
+Our records show that in 2024 your health services were covered by the plan named on the back page. Is that right?
+MA-Only
+MA-PD
+Please write below the name of the health plan you had in 2024 and complete the rest of the survey based on the
+ma_hlthplan_txt
+Q02
+MA-Only
+experiences you had with that plan. (Please print)
+Some people who have Medicare also have other insurance to help pay for some of the costs of their health care. Do
+ins_have_oth
+FFS
+Q01
+you have any other insurance that pays at least some of the cost of your health care?
+Please mark the box below for each type of health insurance that you have.
+ins_medigap
+FFS
+Q02A
+Medigap, which may be identiﬁed on the front of your policy as "Medicare Supplemental Insurance"
+Please mark the box below for each type of health insurance that you have.
+ins_employer
+FFS
+Q02B
+Employer, Union, or Retiree Health Coverage (Insurance)
+Please mark the box below for each type of health insurance that you have.
+ins_veteran
+FFS
+Q02C
+Veteran’s Beneﬁts, also known as VA beneﬁts
+Please mark the box below for each type of health insurance that you have.
+ins_military
+FFS
+Q02D
+Military Retiree Beneﬁts, also known as Tricare
+Please mark the box below for each type of health insurance that you have.
+ins_medicaid
+FFS
+Q02E
+Medicaid, also known as State medical assistance, which is for some persons with limited income and resources
+ins_ma_pdp
+FFS
+Q02F
+Please mark the box below for each type of health insurance that you have. Any Prescription Drug Plan
+ins_other
+FFS
+Q02G
+Please mark the box below for each type of health insurance that you have. Other
+Please mark the box below for each type of health insurance that you have.
+ins_other_txt
+FFS
+Q02_O
+(Please write the name of the other health insurance you currently have on the line below.)
+Please mark the box below for each type of health insurance that you have.
+ins_medicare
+FFS
+Q02H
+I don’t have health insurance other than Medicare.
+MA-PD
+ca_illness
+MA-Only
+Q03
+In the last 6 months, did you have an illness, injury, or condition that needed care right away?
+FFS
+MA-PD
+ca_illasaw
+MA-Only
+Q04
+In the last 6 months, when you needed care right away, how often did you get care as soon as you needed?
+FFS
+MA-PD
+ca_routine
+MA-Only
+Q05
+In the last 6 months, did you make any in-person, phone, or video appointments for a check-up or routine care?
+FFS
+MA-PD
+ca_rtnasaw
+MA-Only
+Q06
+In the last 6 months, how often did you get an appointment for a check-up or routine care as soon as you needed?
+FFS
+MA-PD
+In the last 6 months, not counting the times you went to an emergency room, how many times did you get health
+ca_visits
+MA-Only
+Q07
+care for yourself in person, by phone, or by video?
+FFS
+MA-PD
+Using any number from 0 to 10, where 0 is the worst health care possible and 10 is the best health care possible,
+rate_care
+MA-Only
+Q08
+what number would you use to rate all your health care in the last 6 months?
+FFS
+MA-PD
+pl_getcare
+MA-Only
+Q09
+In the last 6 months, how often was it easy to get the care, tests or treatment you needed?
+FFS
+MA-PD
+A personal doctor is the one you would talk to if you need a check-up, want advice about a health problem, or get
+md_have
+MA-Only
+Q10
+sick or hurt. Do you have a personal doctor?
+FFS
+MA-PD
+In the last 6 months, how many times did you have an in-person, phone, or video visit with your personal doctor
+md_visits
+MA-Only
+Q11
+about your health?
+FFS
+MA-PD
+md_explain
+MA-Only
+Q12
+In the last 6 months, how often did your personal doctor explain things in a way that was easy to understand?
+FFS
+
+
+III. 2025 Question and Variable Key
+36
+Question
+Variable
+Survey
+Number
+Question Text
+MA-PD
+md_listen
+MA-Only
+Q13
+In the last 6 months, how often did your personal doctor listen carefully to you?
+FFS
+MA-PD
+md_respect
+MA-Only
+Q14
+In the last 6 months, how often did your personal doctor show respect for what you had to say?
+FFS
+MA-PD
+md_sptime
+MA-Only
+Q15
+In the last 6 months, how often did your personal doctor spend enough time with you?
+FFS
+MA-PD
+Using any number from 0 to 10, where 0 is the worst personal doctor possible and 10 is the best personal doctor
+rate_md
+MA-Only
+Q16
+possible, what number would you use to rate your personal doctor?
+FFS
+MA-PD
+In the last 6 months, when you talked with your personal doctor for a scheduled appointment, how often did he or
+md_medrecs
+MA-Only
+Q17
+she have your medical records or other information about your care?
+FFS
+MA-PD
+md_test
+MA-Only
+Q18
+In the last 6 months, did your personal doctor order a blood test, x-ray or other test for you?
+FFS
+MA-PD
+In the last 6 months, when your personal doctor ordered a blood test, x-ray or other test for you, how often did
+md_testfup
+MA-Only
+Q19
+someone from your personal doctor’s ofﬁce follow up to give you those results?
+FFS
+MA-PD
+In the last 6 months, when your personal doctor ordered a blood test, x-ray or other test for you, how often did you
+md_testasan
+MA-Only
+Q20
+get those results as soon as you needed them?
+FFS
+MA-PD
+md_rxmeds
+MA-Only
+Q21
+In the last 6 months, did you take any prescription medicine?
+FFS
+MA-PD
+In the last 6 months, how often did you and your personal doctor talk about all the prescription medicines you were
+md_talkmeds
+MA-Only
+Q22
+taking?
+FFS
+MA-PD
+In the last 6 months, did you get care from more than one kind of health care provider or use more than one kind of
+md_morethan1
+MA-Only
+Q23
+health care service?
+FFS
+MA-PD
+In the last 6 months, did you need help from anyone in your personal doctor’s ofﬁce to manage your care among
+md_needmngca
+MA-Only
+Q24
+these different providers and services?
+FFS
+MA-PD
+In the last 6 months, did you get the help you needed from your personal doctor’s ofﬁce to manage your care among
+md_getmngca
+MA-Only
+Q25
+these different providers and services?
+FFS
+MA-PD
+Specialists are doctors like surgeons, heart doctors, allergy doctors, skin doctors, and other doctors who specialize
+sp_persmd
+MA-Only
+Q26
+in one area of health care. Is your personal doctor a specialist?
+FFS
+MA-PD
+sp_tryappt
+MA-Only
+Q27
+In the last 6 months, did you make any appointments with a specialist?
+FFS
+MA-PD
+sp_getappt
+MA-Only
+Q28
+In the last 6 months, how often did you get an appointment with a specialist as soon as you needed?
+FFS
+MA-PD
+sp_visits
+MA-Only
+Q29
+How many specialists have you talked to in the last 6 months?
+FFS
+MA-PD
+We want to know your rating of the specialist you talked to most often in the last 6 months. Using any number from 0 to
+rate_spec
+MA-Only
+Q30
+10, where 0 is the worst specialist possible and 10 is the best specialist possible, what number would you use to rate
+FFS
+that specialist?
+
+
+III. 2025 Question and Variable Key
+37
+Question
+Variable
+Survey
+Number
+Question Text
+MA-PD
+In the last 6 months, how often did your personal doctor seem informed and up-to-date about the care you got from
+sp_mdinformd
+MA-Only
+Q31
+specialists?
+FFS
+md_change
+FFS
+Q32
+How likely are you to change doctors if you are dissatisﬁed with the way you and your doctor communicate?
+md_disagree
+FFS
+Q33
+How likely are you to tell your doctor when you disagree with him or her?
+In the last 6 months, how often did you leave your doctor’s ofﬁce feeling that all of your concerns or questions were
+md_leavansr
+FFS
+Q34
+fully answered?
+In the last 6 months, how often did you make sure you understood the results of any medical test or procedure such as
+md_result
+FFS
+Q35
+x-ray, blood test, or EKG for heart conditions?
+MA-PD
+Q32
+In the last 6 months, did you get information or help from your health plan’s customer service?
+cs_cstryinfo
+MA-Only
+Q32
+FFFS
+Q36
+In the last 6 months, did you get information or help from Medicare’s customer service?
+MA-PD
+Q33
+In the last 6 months, how often did your health plan’s customer service give you the information or help you
+cs_csgetinfo
+MA-Only
+Q33
+needed?
+FFS
+Q37
+In the last 6 months, how often did Medicare’s customer service give you the information or help you needed?
+MA-PD
+Q34
+In the last 6 months, how often did your health plan’s customer service staff treat you with courtesy and respect?
+cs_csrespect
+MA-Only
+Q34
+FFS
+Q38
+In the last 6 months, how often did Medicare’s customer service staff treat you with courtesy and respect?
+MA-PD
+Q35
+In the last 6 months, did your health plan give you any forms to ﬁll out?
+pl_paperwk
+MA-Only
+Q35
+FFS
+Q39
+In the last 6 months, did Medicare give you any forms to ﬁll out?
+MA-PD
+Q36
+In the last 6 months, how often were the forms from your health plan easy to ﬁll out?
+pl_ezpaper
+MA-Only
+Q36
+FFS
+Q40
+In the last 6 months, how often were the forms from Medicare easy to ﬁll out?
+MA-PD
+Q37
+Using any number from 0 to 10, where 0 is the worst health plan possible and 10 is the best health plan possible,
+MA-Only
+Q37
+what number would you use to rate your health plan?
+rate_plan
+Using any number from 0 to 10, where 0 is the worst health plan possible and 10 is the best health plan possible,
+FFS
+Q41
+what number would you use to rate Medicare?
+A co-pay is the amount of money you pay at the time of a visit to a doctor’s ofﬁce or clinic. In the last 6 months,
+MA-PD
+pl_lowercopay
+Q38
+did your health plan offer to lower the amount of your co-pay because you have a health condition (like high blood
+MA-Only
+pressure)?
+MA-PD
+Your health plan beneﬁts are the types of health care and services you can get under the plan. In the last 6 months,
+pl_xtrabeneﬁts
+Q39
+MA-Only
+did your health plan offer you extra beneﬁts because you have a health condition (like high blood pressure)?
+Our records show that in 2024 your prescriptions were covered by the Medicare prescription drug plan named on
+pd_hlthplan
+PDP
+Q01
+the back page. Is that right?
+Please write below the name of the Medicare prescription drug plan you had in 2024 and complete the rest of the
+pd_hlthplan_txt
+PDP
+Q02
+survey based on the experiences you had with that plan. (Please print)
+MA-PD
+Q40A
+In the last 6 months, did anyone from a doctor’s ofﬁce, pharmacy or your prescription drug plan contact you:
+pd_ﬁllrx
+PDP
+Q03A
+To make sure you ﬁlled or reﬁlled a prescription?
+MA-PD
+Q40B
+In the last 6 months, did anyone from a doctor’s ofﬁce, pharmacy or your prescription drug plan contact you:
+pd_takemeds
+PDP
+Q03B
+To make sure you were taking medicine as directed?
+MA-PD
+Q41
+In the last 6 months, how often was it easy to use your prescription drug plan to get the medicines your doctor
+pd_ezrxmeds
+PDP
+Q04
+prescribed?
+MA-PD
+Q42
+pd_rxpharm
+In the last 6 months, did you ever use your prescription drug plan to ﬁll a prescription at your local pharmacy?
+PDP
+Q05
+MA-PD
+Q43
+In the last 6 months, how often was it easy to use your prescription drug plan to ﬁll a prescription at your local
+pd_ezrxpharm
+PDP
+Q06
+pharmacy?
+MA-PD
+Q44
+pd_rxmail
+In the last 6 months, did you ever use your prescription drug plan to ﬁll a prescription by mail?
+PDP
+Q07
+MA-PD
+Q45
+pd_ezrxmail
+In the last 6 months, how often was it easy to use your prescription drug plan to ﬁll a prescription by mail?
+PDP
+Q08
+MA-PD
+Q46
+Using any number from 0 to 10, where 0 is the worst prescription drug plan possible and 10 is the best prescription
+rate_pdp
+PDP
+Q09
+drug plan possible, what number would you use to rate your prescription drug plan?
+MA-PD
+Q47
+MA-Only
+Q40
+ghs
+In general, how would you rate your overall health?
+PDP
+Q10
+FFS
+Q42
+
+
+III. 2025 Question and Variable Key
+38
+Question
+Variable
+Survey
+Number
+Question Text
+MA-PD
+Q48
+MA-Only
+Q41
+mhs
+In general, how would you rate your overall mental or emotional health?
+PDP
+Q11
+FFS
+Q43
+MA-PD
+Q49
+MA-Only
+Q42
+lang_speak
+What language do you mainly speak at home?
+PDP
+Q12
+FFS
+Q44
+MA-PD
+Q50
+MA-Only
+Q43
+pl_hospovn
+In the last 6 months, did you spend one or more nights in a hospital?
+PDP
+Q13
+FFS
+Q45
+MA-Only
+Q44
+rxezmeds
+In the last 6 months, how often was it easy to get the medicines your doctor prescribed?
+FFS
+Q46
+MA-Only
+Q45
+rxinspay
+Do you have insurance that pays part or all of the cost of your prescription medicines?
+FFS
+Q47
+MA-PD
+Q51
+MA-Only
+Q46
+rxdelay
+In the last 6 months, did you delay or not ﬁll a prescription because you felt you could not afford it?
+PDP
+Q14
+FFS
+Q48
+MA-PD
+Q53A
+MA-Only
+Q48A
+Has a doctor ever told you that you had any of the following conditions?
+cnd_heartattack
+PDP
+Q15A
+A heart attack?
+FFS
+Q50A
+MA-PD
+Q53B
+MA-Only
+Q48B
+Has a doctor ever told you that you had any of the following conditions?
+cnd_angina
+PDP
+Q15B
+Angina or coronary heart disease?
+FFS
+Q50B
+MA-PD
+Q53C
+MA-Only
+Q48C
+Has a doctor ever told you that you had any of the following conditions?
+cnd_hbp
+PDP
+Q15C
+Hypertension or high blood pressure?
+FFS
+Q50C
+MA-PD
+Q53D
+MA-Only
+Q48D
+Has a doctor ever told you that you had any of the following conditions?
+cnd_cancer
+PDP
+Q15D
+Cancer, other than skin cancer?
+FFS
+Q50D
+MA-PD
+Q53E
+MA-Only
+Q48E
+Has a doctor ever told you that you had any of the following conditions?
+cnd_copd
+PDP
+Q15E
+Emphysema, asthma or COPD (chronic obstructive pulmonary disease)?
+FFS
+Q50E
+MA-PD
+Q53F
+MA-Only
+Q48F
+Has a doctor ever told you that you had any of the following conditions?
+cnd_diabetes
+PDP
+Q15F
+Any kind of diabetes or high blood sugar?
+FFS
+Q50F
+MA-PD
+Q54
+prob_walking
+MA-Only
+Q49
+Do you have serious difﬁculty walking or climbing stairs?
+PDP
+Q16
+MA-PD
+Q55
+prob_dressing
+MA-Only
+Q50
+Do you have difﬁculty dressing or bathing?
+PDP
+Q17
+MA-PD
+Q56
+MA-Only
+Q51
+Because of a physical, mental, or emotional condition, do you have difﬁculty doing errands alone such as visiting a
+prob_errands
+PDP
+Q18
+doctor’s ofﬁce or shopping?
+FFS
+Q58
+MA-PD
+Q57
+im_ﬂu1last
+MA-Only
+Q52
+Have you had a ﬂu shot since July 1, 2024?
+FFS
+Q51
+
+
+III. 2025 Question and Variable Key
+39
+Question
+Variable
+Survey
+Number
+Question Text
+MA-PD
+Q58
+Have you ever had one or more pneumonia shots? Two shots are usually given in a person’s lifetime and these are
+im_pneum
+MA-Only
+Q53
+different from a ﬂu shot. It is also called the pneumococcal vaccine.
+FFS
+Q52
+MA-PD
+Q59
+MA-Only
+Q54
+educ
+What is the highest grade or level of school that you have completed?
+PDP
+Q19
+FFS
+Q53
+MA-PD
+Q60
+MA-Only
+Q55
+race_hisp
+Are you of Hispanic or Latino origin or descent?
+PDP
+Q20
+FFS
+Q54
+MA-PD
+Q61A
+MA-Only
+Q56A
+What is your race? Please mark one or more.
+race_natamer
+PDP
+Q21A
+American Indian or Alaska Native
+FFS
+Q55A
+MA-PD
+Q61B
+MA-Only
+Q56B
+What is your race? Please mark one or more.
+race_asian
+PDP
+Q21B
+Asian
+FFS
+Q55B
+MA-PD
+Q61C
+MA-Only
+Q56C
+What is your race? Please mark one or more.
+race_black
+PDP
+Q21C
+Black or African-American
+FFS
+Q55C
+MA-PD
+Q61D
+MA-Only
+Q56D
+What is your race? Please mark one or more.
+race_paciﬁc
+PDP
+Q21D
+Native Hawaiian or other Paciﬁc Islander
+FFS
+Q55D
+MA-PD
+Q61E
+MA-Only
+Q56E
+What is your race? Please mark one or more.
+race_white
+PDP
+Q21E
+White
+FFS
+Q55E
+MA-PD
+Q62
+MA-Only
+Q57
+living_numinhh
+How many people live in your household now, including yourself?
+PDP
+Q22
+FFS
+Q56
+Because of a health or physical problem are you unable to do or have any difﬁculty doing the following activities?
+lim_bathing
+FFS
+Q57A
+(Please mark one response for each activity.) Bathing
+Because of a health or physical problem are you unable to do or have any difﬁculty doing the following activities?
+lim_dressing
+FFS
+Q57B
+(Please mark one response for each activity.) Dressing
+Because of a health or physical problem are you unable to do or have any difﬁculty doing the following activities?
+lim_eating
+FFS
+Q57C
+(Please mark one response for each activity.) Eating
+Because of a health or physical problem are you unable to do or have any difﬁculty doing the following activities?
+lim_chairs
+FFS
+Q57D
+(Please mark one response for each activity.) Getting in or out of chairs
+Because of a health or physical problem are you unable to do or have any difﬁculty doing the following activities?
+lim_walking
+FFS
+Q57E
+(Please mark one response for each activity.) Walking
+Because of a health or physical problem are you unable to do or have any difﬁculty doing the following activities?
+lim_toilet
+FFS
+Q57F
+(Please mark one response for each activity.) Using the toilet
+MA-PD
+Q63
+MA-Only
+Q58
+web_at_home
+Do you ever use the internet at home?
+PDP
+Q23
+FFS
+Q59
+MA-PD
+Q64
+MA-Only
+Q59
+May the Medicare Program follow up with you to learn more about your health care, or to invite you to a group
+recontact
+PDP
+Q24
+discussion or interview on topics related to health care?
+FFS
+Q60
+
+
+III. 2025 Question and Variable Key
+40
+Question
+Variable
+Survey
+Number
+Question Text
+MA-PD
+Q65
+MA-Only
+Q60
+proxy
+Did someone help you complete this survey?
+PDP
+Q25
+FFS
+Q61
+MA-PD
+Q66A
+MA-Only
+Q61A
+How did that person help you? Please mark one or more.
+proxy_read
+PDP
+Q26A
+Read the questions to me
+FFS
+Q62A
+MA-PD
+Q66B
+MA-Only
+Q61B
+How did that person help you? Please mark one or more.
+proxy_writ
+PDP
+Q26B
+Wrote down the answers I gave
+FFS
+Q62B
+MA-PD
+Q66C
+MA-Only
+Q61C
+How did that person help you? Please mark one or more.
+proxy_answ
+PDP
+Q26C
+Answered the questions for me
+FFS
+Q62C
+MA-PD
+Q66D
+MA-Only
+Q61D
+How did that person help you? Please mark one or more.
+proxy_tran
+PDP
+Q26D
+Translated the questions into my language
+FFS
+Q62D
+MA-PD
+Q66E
+MA-Only
+Q61E
+How did that person help you? Please mark one or more.
+proxy_othr
+PDP
+Q26E
+Helped in some other way
+FFS
+Q62E
+
+
+IV. Crosswalk: 2007 to 2025
+41
+IV. Crosswalk: 2007 to 2025
+
+
+IV. Crosswalk: 2007 to 2025
+42
+The following tables contain crosswalk information for 2007 to 2025. The tables include all analytic variables and question
+numbers across all years and survey types, along with several indicators with additional information. The following key
+describes these indicators.
+D: DROPPED
+—–: QUESTION NOT ASKED ON THIS SURVEY TYPE
+R: ITEM MUST BE REVERSED PRIOR TO ANALYSIS
+*: COMPOSITE ITEM/GLOBAL RATING
+VARIABLE DIFFERENCES:
+proxy, proxy_read, proxy_writ, proxy_answ, proxy_tran, and proxy_othr were proxy questions asked on mail mode cases
+only in 2007-2011. proxy_othr_txt was a proxy question only asked on mail mode cases in 2007-2010.
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+43
+A. MA-PD Survey
+The following table shows crosswalk information for the MA-PD survey.
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+ma_hlthplan
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+ma_hlthplan_txt
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+ins_have_oth
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medigap
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_employer
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_veteran
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_military
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicaid
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_ma_pdp
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_illness
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+ca_illasaw*
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_routine
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+ca_rtnasaw*
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_visits
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+ca_emerquex
+D
+ca_emeransr
+D
+ca_emerfup
+R
+D
+ca_wt15mns*
+D
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+rate_care*
+Q08
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+ca_equipment
+ca_getequip
+ca_therapy
+ca_gettherapy
+md_have
+Q10
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+md_visits
+Q11
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+md_explain*
+Q12
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+md_listen*
+Q13
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+md_respect*
+Q14
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+md_sptime*
+Q15
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+rate_md*
+Q16
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+md_medrecs*
+Q17
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+md_hlthcond
+md_ezinstr
+md_descinstr
+md_test
+Q18
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+md_testfup*
+Q19
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+md_testasan*
+Q20
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+md_rxmeds
+Q21
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+md_talkmeds*
+Q22
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+md_hhdevice
+R
+D
+md_hhdhelp
+R
+D
+md_hhdtalk
+D
+md_morethan1
+Q23
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+md_needmngca
+Q24
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+md_getmngca*
+R
+Q25
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+44
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+md_cacoord
+md_visnotes
+R
+D
+sp_persmd
+Q26
+Q27
+Q27
+Q27
+Q27
+Q27
+Q27
+Q27
+sp_tryappt
+Q27
+Q28
+Q28
+Q28
+Q28
+Q28
+Q28
+Q28
+sp_getappt*
+Q28
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+pp_specwait
+R
+sp_visits
+Q29
+Q30
+Q30
+Q30
+Q30
+Q30
+Q30
+Q30
+rate_spec*
+Q30
+Q31
+Q31
+Q31
+Q31
+Q31
+Q31
+Q31
+sp_mdinformd*
+Q31
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+md_change
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_disagree
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_leavansr
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_result
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_informed
+sp_cacoord
+pp_specvis
+pp_specntwk
+pp_specrec
+pp_specfar
+R
+pp_specfew
+R
+pp_speclist
+R
+pl_needcare
+D
+pl_getcare*
+Q09
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+pl_paperwk
+Q35
+Q36
+Q36
+Q36
+Q36
+Q36
+Q36
+Q36
+pl_ezpaper*
+Q36
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+rate_plan*
+Q37
+Q38
+Q38
+Q38
+Q38
+Q38
+Q38
+Q38
+pl_remindappt
+R
+D
+pl_remindﬂu
+R
+D
+pl_remindtest
+R
+D
+pl_lowercopay
+R
+Q38
+Q39
+Q39
+Q39
+Q39
+Q39
+Q39
+Q39
+pl_xtrabeneﬁts
+R
+Q39
+Q40
+Q40
+Q40
+Q40
+Q40
+Q40
+Q40
+pl_hospovn
+Q50
+Q51
+Q50
+Q50
+Q50
+Q50
+Q50
+Q50
+pl_hospfup
+R
+D
+pl_chgnotice
+R
+pl_benedoc
+R
+pl_insagtcall
+pl_insagtvis
+pl_insagtswtch
+pp_enoughmds
+R
+pp_ﬁndmd
+pp_ﬁndmdphon
+pp_ﬁndmdcs
+pp_ﬁndmdweb
+pp_ﬁndmdemp
+pp_ﬁndmddir
+pp_ﬁndmdoth
+pp_ﬁndmdoth_txt
+pp_accinfo
+R
+pp_inaccoffc
+pp_inacccs
+pp_inaccweb
+pp_inaccemp
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+45
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pp_inaccdir
+pp_inaccoth
+pp_inaccoth_txt
+pl_value
+ma_nocare
+D
+ma_reconsid
+D
+ma_appeal
+D
+ma_forms
+D
+ma_resolve
+D
+ma_listen
+D
+ma_discourage
+D
+ma_nothing
+D
+ma_complaint
+D
+ma_comphandle
+D
+ma_compresolv
+R
+D
+ma_compsat
+R
+D
+pd_hlthplan
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_hlthplan_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_covrxmeds
+pd_cstryinfo
+D
+cs_cstryinfo
+Q32
+Q33
+Q33
+Q33
+Q33
+Q33
+Q33
+Q33
+pd_csgetinfo*
+D
+cs_csgetinfo*
+Q33
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+pd_csrespect*
+D
+cs_csrespect*
+Q34
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+pd_covinfo
+D
+pd_getcovinf*
+D
+pd_costinfo
+D
+pd_getcostinf*
+D
+pd_diffrx
+D
+pd_rxnocov
+D
+pd_askrxcov
+D
+pd_appeal
+D
+pd_forms
+D
+pd_resolve
+D
+pd_listen
+D
+pd_discourage
+D
+pd_nothing
+D
+pd_rxcovered
+D
+pd_ﬁllrx*
+R
+Q40A
+Q41A
+Q41A
+Q41A
+Q41A
+Q41A
+Q41A
+Q41A
+pd_takemeds*
+R
+Q40B
+Q41B
+Q41B
+Q41B
+Q41B
+Q41B
+Q41B
+Q41B
+pd_ezrxmeds*
+Q41
+Q42
+Q42
+Q42
+Q42
+Q42
+Q42
+Q42
+pd_rxpharm
+Q42
+Q43
+Q43
+Q43
+Q43
+Q43
+Q43
+Q43
+pd_ezrxpharm*
+Q43
+Q44
+Q44
+Q44
+Q44
+Q44
+Q44
+Q44
+pd_rxmail
+Q44
+Q45
+Q45
+Q45
+Q45
+Q45
+Q45
+Q45
+pd_ezrxmail*
+Q45
+Q46
+Q46
+Q46
+Q46
+Q46
+Q46
+Q46
+pd_infocov
+R
+rate_pdp*
+Q46
+Q47
+Q47
+Q47
+Q47
+Q47
+Q47
+Q47
+pd_recommend
+R
+D
+pd_rxhelp
+pd_userxhelp
+pd_proofrxhelp
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+46
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pd_phnorxhelp
+ghs
+R
+Q47
+Q48
+Q48
+Q48
+Q48
+Q48
+Q48
+Q48
+mhs
+R
+Q48
+Q49
+Q49
+Q49
+Q49
+Q49
+Q49
+Q49
+lim_modact
+lim_climb
+lim_acomls
+R
+lim_regact
+R
+lim_acomlsem
+R
+lim_regactem
+R
+lim_painint
+R
+sf_calm
+R
+sf_energy
+R
+sf_downblue
+lim_socacts
+ds_nointerest
+R
+ds_depressed
+R
+cnd_seemd2
+D
+cnd_last3mo
+D
+cnd_rxmeds
+D
+cnd_meds3mo
+D
+rxmedslist
+rxezmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxinspay
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxdelay
+Q51
+Q52
+Q51
+Q51
+Q51
+Q51
+Q51
+Q51
+rxmailunreq
+D
+Q52
+Q52
+Q52
+Q52
+Q52
+Q52
+pdpenroll
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_enrollprog
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_medansr
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_meduse
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_summ
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_info
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_prog
+R
+—–
+—–
+—–
+—–
+—–
+—–
+knowcare
+R
+helpperscare
+helproutine
+lim_physcond
+cnd_heartattack
+Q53A
+Q54A
+Q53A
+Q53A
+Q53A
+Q53A
+Q53A
+Q53A
+cnd_angina
+Q53B
+Q54B
+Q53B
+Q53B
+Q53B
+Q53B
+Q53B
+Q53B
+cnd_stroke
+cnd_hbp
+Q53C
+Q54C
+Q53C
+Q53C
+Q53C
+Q53C
+Q53C
+Q53C
+cnd_cancer
+Q53D
+Q54D
+Q53D
+Q53D
+Q53D
+Q53D
+Q53D
+Q53D
+cnd_copd
+Q53E
+Q54E
+Q53E
+Q53E
+Q53E
+Q53E
+Q53E
+Q53E
+cnd_diabetes
+Q53F
+Q54F
+Q53F
+Q53F
+Q53F
+Q53F
+Q53F
+Q53F
+prob_walking
+Q54
+Q55
+Q54
+Q54
+Q54
+Q54
+Q54
+Q54
+prob_dressing
+Q55
+Q56
+Q55
+Q55
+Q55
+Q55
+Q55
+Q55
+prob_errands
+Q56
+Q57
+Q56
+Q56
+Q56
+Q56
+Q56
+Q56
+im_ﬂu1last*
+R
+Q57
+Q58
+Q57
+Q57
+Q57
+Q57
+Q57
+Q57
+im_ﬂu1plan
+im_pneum*
+R
+Q58
+Q59
+Q58
+Q58
+Q58
+Q58
+Q58
+Q58
+smokenow
+D
+Q60
+Q59
+Q59
+Q59
+Q59
+Q59
+Q59
+advsquit
+smokequit
+D
+Q61
+Q60
+Q60
+Q60
+Q60
+Q60
+Q60
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+47
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+agecat
+sex
+educ
+Q59
+Q62
+Q61
+Q61
+Q61
+Q61
+Q61
+Q61
+race_hisp
+Q60
+Q63
+Q62
+Q62
+Q62
+Q62
+Q62
+Q62
+race_white
+Q61E
+Q64E
+Q63E
+Q63A
+Q63A
+Q63A
+Q63A
+Q63A
+race_black
+Q61C
+Q64C
+Q63C
+Q63B
+Q63B
+Q63B
+Q63B
+Q63B
+race_asian
+Q61B
+Q64B
+Q63B
+Q63C
+Q63C
+Q63C
+Q63C
+Q63C
+race_paciﬁc
+Q61D
+Q64D
+Q63D
+Q63D
+Q63D
+Q63D
+Q63D
+Q63D
+race_natamer
+Q61A
+Q64A
+Q63A
+Q63E
+Q63E
+Q63E
+Q63E
+Q63E
+proxy
+Q65
+Q68
+Q67
+Q67
+Q67
+Q67
+Q67
+Q67
+proxy_read
+Q66A
+Q69A
+Q68A
+Q68A
+Q68A
+Q68A
+Q68A
+Q68A
+proxy_writ
+Q66B
+Q69B
+Q68B
+Q68B
+Q68B
+Q68B
+Q68B
+Q68B
+proxy_answ
+Q66C
+Q69C
+Q68C
+Q68C
+Q68C
+Q68C
+Q68C
+Q68C
+proxy_tran
+Q66D
+Q69D
+Q68D
+Q68D
+Q68D
+Q68D
+Q68D
+Q68D
+proxy_othr
+Q66E
+Q69E
+Q68E
+Q68E
+Q68E
+Q68E
+Q68E
+Q68E
+proxy_othr_txt
+living_arr
+living_arr_txt
+living_alone
+living_numinhh
+Q62
+Q65
+Q64
+Q64
+Q64
+Q64
+Q64
+Q64
+lim_bathing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_dressing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_eating
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_chairs
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_walking
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_toilet
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+web_at_home
+Q63
+Q66
+Q65
+Q65
+Q65
+Q65
+Q65
+Q65
+recontact
+Q64
+Q67
+Q66
+Q66
+Q66
+Q66
+Q66
+Q66
+dayphone
+lang_speak
+Q49
+Q50
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+48
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+ma_hlthplan
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+ma_hlthplan_txt
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+ins_have_oth
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medigap
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_employer
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_veteran
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_military
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicaid
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_ma_pdp
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_illness
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+ca_illasaw*
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_routine
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+ca_rtnasaw*
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_visits
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+ca_emerquex
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q08
+ca_emeransr
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q09
+ca_emerfup
+R
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q10
+ca_wt15mns*
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q11
+Q08
+Q08
+rate_care*
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q09
+Q09
+ca_equipment
+D
+Q13
+Q13
+Q13
+Q13
+Q10
+Q10
+ca_getequip
+D
+Q14
+Q14
+Q14
+Q14
+Q11
+Q11
+ca_therapy
+D
+Q12
+Q12
+ca_gettherapy
+D
+Q13
+Q13
+md_have
+Q13
+Q13
+Q13
+Q15
+Q15
+Q15
+Q15
+Q14
+Q14
+md_visits
+Q14
+Q14
+Q14
+Q16
+Q16
+Q16
+Q16
+Q15
+Q15
+md_explain*
+Q15
+Q15
+Q15
+Q17
+Q17
+Q17
+Q17
+Q16
+Q16
+md_listen*
+Q16
+Q16
+Q16
+Q18
+Q18
+Q18
+Q18
+Q17
+Q17
+md_respect*
+Q17
+Q17
+Q17
+Q19
+Q19
+Q19
+Q19
+Q18
+Q18
+md_sptime*
+Q18
+Q18
+Q18
+Q20
+Q20
+Q20
+Q20
+Q19
+Q19
+rate_md*
+Q19
+Q19
+Q19
+Q21
+Q21
+Q21
+Q21
+Q20
+Q20
+md_medrecs*
+Q20
+Q20
+Q20
+Q22
+Q22
+md_hlthcond
+—–
+—–
+—–
+md_ezinstr
+—–
+—–
+—–
+md_descinstr
+—–
+—–
+—–
+md_test
+Q21
+Q21
+Q21
+Q23
+Q23
+Q22
+Q22
+md_testfup*
+Q22
+Q22
+Q22
+Q24
+Q24
+Q23
+Q23
+md_testasan*
+Q23
+Q23
+Q23
+Q25
+Q25
+md_rxmeds
+Q24
+Q24
+Q24
+Q26
+Q26
+md_talkmeds*
+Q25
+Q25
+Q25
+Q27
+Q27
+md_hhdevice
+R
+Q26
+Q26
+Q26
+md_hhdhelp
+R
+Q27
+Q27
+Q27
+md_hhdtalk
+Q28
+Q28
+Q28
+md_morethan1
+Q29
+Q29
+Q29
+Q28
+Q28
+md_needmngca
+Q30
+Q30
+Q30
+Q29
+Q29
+md_getmngca*
+R
+Q31
+Q31
+Q31
+Q30
+Q30
+md_cacoord
+D
+Q31
+Q24
+md_visnotes
+R
+Q32
+Q32
+Q32
+Q31
+Q32
+sp_persmd
+Q33
+Q33
+Q33
+Q32
+sp_tryappt
+Q34
+Q34
+Q34
+Q33
+Q33
+Q25
+Q24
+Q21
+Q21
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+49
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+sp_getappt*
+Q35
+Q35
+Q35
+Q34
+Q34
+Q26
+Q25
+Q22
+Q22
+pp_specwait
+R
+—–
+—–
+sp_visits
+Q36
+Q36
+Q36
+Q35
+Q35
+Q27
+Q26
+Q23
+Q23
+rate_spec*
+Q37
+Q37
+Q37
+Q36
+Q36
+Q28
+Q27
+Q24
+Q24
+sp_mdinformd*
+Q38
+Q38
+Q38
+Q37
+Q37
+Q29
+Q28
+md_change
+R
+—–
+—–
+—–
+md_disagree
+R
+—–
+—–
+—–
+md_leavansr
+—–
+—–
+—–
+md_result
+—–
+—–
+—–
+sp_informed
+D
+Q29
+sp_cacoord
+D
+Q30
+pp_specvis
+—–
+—–
+—–
+—–
+—–
+pp_specntwk
+—–
+—–
+—–
+pp_specrec
+—–
+—–
+pp_specfar
+R
+—–
+—–
+pp_specfew
+R
+—–
+—–
+pp_speclist
+R
+—–
+pl_needcare
+Q39
+Q39
+Q39
+Q38
+Q38
+Q30
+Q31
+Q25
+Q25
+pl_getcare*
+Q40
+Q40
+Q40
+Q39
+Q39
+Q31
+Q32
+Q26
+Q26
+pl_paperwk
+Q44
+Q44
+Q44
+Q43
+Q43
+Q35
+Q36
+Q30
+Q30
+pl_ezpaper*
+Q45
+Q45
+Q45
+Q44
+Q44
+Q36
+Q37
+Q31
+Q31
+rate_plan*
+Q46
+Q46
+Q46
+Q45
+Q45
+Q37
+Q38
+Q32
+Q32
+pl_remindappt
+R
+Q47A
+Q47A
+Q47A
+Q46A
+pl_remindﬂu
+R
+Q47B
+Q47B
+Q47B
+Q46B
+pl_remindtest
+R
+Q47C
+Q47C
+Q47C
+Q46C
+pl_lowercopay
+R
+pl_xtrabeneﬁts
+R
+pl_hospovn
+Q48
+Q48
+Q48
+Q47
+pl_hospfup
+R
+Q49
+Q49
+Q49
+Q48
+pl_chgnotice
+R
+D
+Q39
+pl_benedoc
+R
+D
+Q40
+pl_insagtcall
+D
+Q41
+pl_insagtvis
+D
+Q42
+pl_insagtswtch
+D
+Q43
+pp_enoughmds
+R
+—–
+—–
+—–
+—–
+—–
+pp_ﬁndmd
+—–
+—–
+—–
+—–
+—–
+pp_ﬁndmdphon
+—–
+—–
+—–
+pp_ﬁndmdcs
+—–
+—–
+—–
+pp_ﬁndmdweb
+—–
+—–
+—–
+pp_ﬁndmdemp
+—–
+—–
+pp_ﬁndmddir
+—–
+—–
+—–
+pp_ﬁndmdoth
+—–
+—–
+—–
+pp_ﬁndmdoth_txt
+—–
+—–
+—–
+pp_accinfo
+R
+—–
+—–
+—–
+—–
+—–
+pp_inaccoffc
+—–
+—–
+pp_inacccs
+—–
+—–
+pp_inaccweb
+—–
+—–
+pp_inaccemp
+—–
+—–
+pp_inaccdir
+—–
+—–
+pp_inaccoth
+—–
+—–
+pp_inaccoth_txt
+—–
+—–
+pl_value
+D
+Q33
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+50
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+ma_nocare
+Q50
+Q50
+Q50
+Q49
+Q46
+Q38
+Q44
+Q33
+Q34
+ma_reconsid
+Q51
+Q51
+Q51
+Q50
+Q47
+Q39
+Q45
+Q34
+Q35
+ma_appeal
+Q52A
+Q52A
+Q52A
+Q51A
+Q48A
+Q40A
+Q46A
+Q35A
+Q36A
+ma_forms
+Q52B
+Q52B
+Q52B
+Q51B
+Q48B
+Q40B
+Q46B
+Q35B
+Q36B
+ma_resolve
+Q52C
+Q52C
+Q52C
+Q51C
+Q48C
+Q40C
+Q46C
+Q35C
+Q36C
+ma_listen
+Q52D
+Q52D
+Q52D
+Q51D
+Q48D
+Q40D
+Q46D
+Q35D
+Q36D
+ma_discourage
+Q52E
+Q52E
+Q52E
+Q51E
+Q48E
+Q40E
+Q46E
+Q35E
+Q36E
+ma_nothing
+Q52F
+Q52F
+Q52F
+Q51F
+Q48F
+Q40F
+Q46F
+Q35F
+Q36F
+ma_complaint
+Q53
+Q53
+Q53
+Q52
+Q49
+Q41
+Q47
+ma_comphandle
+Q54
+Q54
+Q54
+Q53
+Q50
+ma_compresolv
+R
+Q55
+Q55
+Q55
+Q54
+Q51
+Q42
+Q48
+ma_compsat
+R
+Q56
+Q56
+Q56
+Q55
+Q52
+Q43
+Q49
+pd_hlthplan
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_hlthplan_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_covrxmeds
+—–
+—–
+pd_cstryinfo
+Q57
+Q57
+Q57
+Q56
+Q53
+Q44
+Q50
+Q36
+Q37
+cs_cstryinfo
+Q41
+Q41
+Q41
+Q40
+Q40
+Q32
+Q33
+Q27
+Q27
+pd_csgetinfo*
+Q58
+Q58
+Q58
+Q57
+Q54
+Q45
+Q51
+Q37
+Q38
+cs_csgetinfo*
+Q42
+Q42
+Q42
+Q41
+Q41
+Q33
+Q34
+Q28
+Q28
+pd_csrespect*
+Q59
+Q59
+Q59
+Q58
+Q55
+Q46
+Q52
+Q38
+Q39
+cs_csrespect*
+Q43
+Q43
+Q43
+Q42
+Q42
+Q34
+Q35
+Q29
+Q29
+pd_covinfo
+Q60
+Q60
+Q60
+Q59
+Q56
+Q47
+Q53
+Q39
+Q40
+pd_getcovinf*
+Q61
+Q61
+Q61
+Q60
+Q57
+Q48
+Q54
+Q40
+Q41
+pd_costinfo
+Q62
+Q62
+Q62
+Q61
+Q58
+Q49
+Q55
+Q41
+Q42
+pd_getcostinf*
+Q63
+Q63
+Q63
+Q62
+Q59
+Q50
+Q56
+Q42
+Q43
+pd_diffrx
+Q64
+Q64
+Q64
+Q63
+Q60
+Q51
+Q57
+Q43
+Q44
+pd_rxnocov
+Q65
+Q65
+Q65
+Q64
+Q61
+Q52
+Q58
+Q44
+Q45
+pd_askrxcov
+Q66
+Q66
+Q66
+Q65
+Q62
+Q53
+Q59
+Q45
+Q46
+pd_appeal
+Q67A
+Q67A
+Q67A
+Q66A
+Q63A
+Q54A
+Q60A
+Q46A
+pd_forms
+Q67B
+Q67B
+Q67B
+Q66B
+Q63B
+Q54B
+Q60B
+Q46B
+pd_resolve
+Q67C
+Q67C
+Q67C
+Q66C
+Q63C
+Q54C
+Q60C
+Q46C
+pd_listen
+Q67D
+Q67D
+Q67D
+Q66D
+Q63D
+Q54D
+Q60D
+Q46D
+pd_discourage
+Q67E
+Q67E
+Q67E
+Q66E
+Q63E
+Q54E
+Q60E
+Q46E
+pd_nothing
+Q67F
+Q67F
+Q67F
+Q66F
+Q63F
+Q54F
+Q60F
+Q46F
+pd_rxcovered
+Q67G
+Q67G
+Q67G
+Q66G
+Q63G
+Q54G
+Q60G
+Q46G
+pd_ﬁllrx*
+R
+Q68A
+Q68A
+Q68A
+Q67A
+pd_takemeds*
+R
+Q68B
+Q68B
+Q68B
+Q67B
+pd_ezrxmeds*
+Q69
+Q69
+Q69
+Q68
+Q64
+Q55
+Q61
+Q47
+Q47
+pd_rxpharm
+Q70
+Q70
+Q70
+Q69
+Q65
+Q56
+Q62
+Q48
+Q48
+pd_ezrxpharm*
+Q71
+Q71
+Q71
+Q70
+Q66
+Q57
+Q63
+Q49
+Q49
+pd_rxmail
+Q72
+Q72
+Q72
+Q71
+Q67
+Q58
+Q64
+Q50
+Q50
+pd_ezrxmail*
+Q73
+Q73
+Q73
+Q72
+Q68
+Q59
+Q65
+Q51
+Q51
+pd_infocov
+R
+D
+rate_pdp*
+Q74
+Q74
+Q74
+Q73
+Q69
+Q60
+Q66
+Q52
+Q52
+pd_recommend
+R
+Q75
+Q75
+Q75
+Q74
+Q70
+Q61
+Q67
+Q53
+Q53
+pd_rxhelp
+D
+Q68
+pd_userxhelp
+D
+Q69
+pd_proofrxhelp
+D
+Q70
+pd_phnorxhelp
+D
+Q71
+ghs
+R
+Q76
+Q76
+Q76
+Q75
+Q71
+Q62
+Q72
+Q54
+Q54
+mhs
+R
+Q77
+Q77
+Q77
+Q76
+Q72
+Q63
+Q73
+Q55
+Q55
+lim_modact
+D
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+51
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+lim_climb
+D
+lim_acomls
+R
+D
+lim_regact
+R
+D
+lim_acomlsem
+R
+D
+lim_regactem
+R
+D
+lim_painint
+R
+D
+sf_calm
+R
+D
+sf_energy
+R
+D
+sf_downblue
+D
+lim_socacts
+D
+ds_nointerest
+R
+D
+Q74
+—–
+ds_depressed
+R
+D
+Q75
+—–
+cnd_seemd2
+Q78
+Q78
+Q78
+Q77
+Q73
+Q64
+Q76
+Q56
+Q56
+cnd_last3mo
+Q79
+Q79
+Q79
+Q78
+Q74
+Q65
+Q77
+Q57
+Q57
+cnd_rxmeds
+Q80
+Q80
+Q80
+Q79
+Q75
+Q66
+Q78
+Q58
+Q58
+cnd_meds3mo
+Q81
+Q81
+Q81
+Q80
+Q76
+Q67
+Q79
+Q59
+Q59
+rxmedslist
+Q60
+Q60
+rxezmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxinspay
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxdelay
+Q82
+Q82
+Q82
+Q81
+Q77
+Q68
+Q80
+Q61
+Q61
+rxmailunreq
+Q83
+Q83
+Q83
+pdpenroll
+R
+—–
+—–
+—–
+mtm_enrollprog
+—–
+—–
+—–
+mtm_medansr
+R
+—–
+—–
+—–
+mtm_meduse
+R
+—–
+—–
+—–
+mtm_summ
+R
+—–
+—–
+—–
+mtm_info
+R
+—–
+—–
+—–
+mtm_prog
+R
+—–
+—–
+—–
+knowcare
+R
+D
+Q81
+Q62
+Q62
+helpperscare
+D
+Q82
+Q63
+Q63
+helproutine
+D
+Q83
+Q64
+Q64
+lim_physcond
+D
+Q84
+Q65
+Q65
+cnd_heartattack
+Q84A
+Q84A
+Q84A
+Q82A
+Q78A
+Q69A
+Q85A
+Q66A
+Q66A
+cnd_angina
+Q84B
+Q84B
+Q84B
+Q82B
+Q78B
+Q69B
+Q85B
+Q66B
+Q66B
+cnd_stroke
+D
+Q82C
+Q78C
+Q69C
+Q85C
+Q66C
+Q66C
+cnd_hbp
+Q84C
+Q84C
+Q84C
+cnd_cancer
+Q84D
+Q84D
+Q84D
+Q82D
+Q78D
+Q69D
+Q85D
+Q66D
+Q66D
+cnd_copd
+Q84E
+Q84E
+Q84E
+Q82E
+Q78E
+Q69E
+Q85E
+Q66E
+Q66E
+cnd_diabetes
+Q84F
+Q84F
+Q84F
+Q82F
+Q78F
+Q69F
+Q85F
+Q66F
+Q66F
+prob_walking
+prob_dressing
+prob_errands
+im_ﬂu1last*
+R
+Q85
+Q85
+Q85
+Q83
+Q79
+Q70
+Q86
+Q67
+Q67
+im_ﬂu1plan
+D
+Q68
+Q68
+im_pneum*
+R
+Q86
+Q86
+Q86
+Q84
+Q80
+Q71
+Q87
+Q69
+Q69
+smokenow
+Q87
+Q87
+Q87
+Q85
+Q81
+Q72
+Q88
+Q70
+Q70
+advsquit
+D
+Q71
+Q71
+smokequit
+Q88
+Q88
+Q88
+Q86
+Q82
+Q73
+Q89
+agecat
+D
+Q87
+Q83
+Q74
+Q90
+Q72
+Q72
+sex
+D
+Q88
+Q84
+Q75
+Q91
+Q73
+Q73
+educ
+Q89
+Q89
+Q89
+Q89
+Q85
+Q76
+Q92
+Q74
+Q74
+race_hisp
+Q90
+Q90
+Q90
+Q90
+Q86
+Q77
+Q93
+Q75
+Q75
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+52
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+race_white
+Q91A
+Q91A
+Q91A
+Q91A
+Q87A
+Q78A
+Q94A
+Q76A
+Q76A
+race_black
+Q91B
+Q91B
+Q91B
+Q91B
+Q87B
+Q78B
+Q94B
+Q76B
+Q76B
+race_asian
+Q91C
+Q91C
+Q91C
+Q91C
+Q87C
+Q78C
+Q94C
+Q76C
+Q76C
+race_paciﬁc
+Q91D
+Q91D
+Q91D
+Q91D
+Q87D
+Q78D
+Q94D
+Q76D
+Q76D
+race_natamer
+Q91E
+Q91E
+Q91E
+Q91E
+Q87E
+Q78E
+Q94E
+Q76E
+Q76E
+proxy
+Q94
+Q94
+Q94
+Q92
+Q88
+Q79
+Q95
+Q77
+Q77
+proxy_read
+Q95A
+Q95A
+Q95A
+Q93A
+Q89A
+Q80A
+Q96A
+Q78A
+Q78A
+proxy_writ
+Q95B
+Q95B
+Q95B
+Q93B
+Q89B
+Q80B
+Q96B
+Q78B
+Q78B
+proxy_answ
+Q95C
+Q95C
+Q95C
+Q93C
+Q89C
+Q80C
+Q96C
+Q78C
+Q78C
+proxy_tran
+Q95D
+Q95D
+Q95D
+Q93D
+Q89D
+Q80D
+Q96D
+Q78D
+Q78D
+proxy_othr
+Q95E
+Q95E
+Q95E
+Q93E
+Q89E
+Q80E
+Q96E
+Q78E
+Q78E
+proxy_othr_txt
+D
+Q96_O
+Q78_O
+Q78_O
+living_arr
+D
+Q79
+living_arr_txt
+D
+Q79_O
+living_alone
+D
+Q90
+Q81
+Q97
+Q79
+living_numinhh
+Q92
+Q92
+Q92
+Q94
+lim_bathing
+—–
+—–
+—–
+—–
+—–
+D
+Q98A
+Q80A
+Q80A
+lim_dressing
+—–
+—–
+—–
+—–
+—–
+D
+Q98B
+Q80B
+Q80B
+lim_eating
+—–
+—–
+—–
+—–
+—–
+D
+Q98C
+Q80C
+Q80C
+lim_chairs
+—–
+—–
+—–
+—–
+—–
+D
+Q98D
+Q80D
+Q80D
+lim_walking
+—–
+—–
+—–
+—–
+—–
+D
+Q98E
+Q80E
+Q80E
+lim_toilet
+—–
+—–
+—–
+—–
+—–
+D
+Q98F
+Q80F
+Q80F
+web_at_home
+recontact
+Q93
+Q93
+Q93
+Q95
+Q91
+Q82
+Q99
+Q81
+Q81
+dayphone
+D
+Q82
+Q82
+lang_speak
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+53
+Variable
+Reverse
+2007
+Year 1
+ma_hlthplan
+Q01
+ma_hlthplan_txt
+Q02
+ins_have_oth
+—–
+ins_medigap
+—–
+ins_employer
+—–
+ins_veteran
+—–
+ins_military
+—–
+ins_medicaid
+—–
+ins_ma_pdp
+—–
+ins_other
+—–
+ins_other_txt
+—–
+ins_medicare
+—–
+ca_illness
+Q03
+ca_illasaw*
+Q04
+ca_routine
+Q05
+ca_rtnasaw*
+Q06
+ca_visits
+Q07
+ca_emerquex
+ca_emeransr
+ca_emerfup
+R
+ca_wt15mns*
+rate_care*
+Q08
+ca_equipment
+ca_getequip
+ca_therapy
+ca_gettherapy
+md_have
+Q09
+md_visits
+Q10
+md_explain*
+Q11
+md_listen*
+Q12
+md_respect*
+Q13
+md_sptime*
+Q14
+rate_md*
+Q15
+md_medrecs*
+md_hlthcond
+md_ezinstr
+md_descinstr
+md_test
+md_testfup*
+md_testasan*
+md_rxmeds
+md_talkmeds*
+md_hhdevice
+R
+md_hhdhelp
+R
+md_hhdtalk
+md_morethan1
+md_needmngca
+md_getmngca*
+R
+md_cacoord
+md_visnotes
+R
+sp_persmd
+sp_tryappt
+Q16
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+54
+Variable
+Reverse
+2007
+Year 1
+sp_getappt*
+Q17
+pp_specwait
+R
+sp_visits
+Q18
+rate_spec*
+Q19
+sp_mdinformd*
+md_change
+R
+md_disagree
+R
+md_leavansr
+md_result
+sp_informed
+sp_cacoord
+pp_specvis
+pp_specntwk
+pp_specrec
+pp_specfar
+R
+pp_specfew
+R
+pp_speclist
+R
+pl_needcare
+Q20
+pl_getcare*
+Q21
+pl_paperwk
+Q22
+pl_ezpaper*
+Q23
+rate_plan*
+Q24
+pl_remindappt
+R
+pl_remindﬂu
+R
+pl_remindtest
+R
+pl_lowercopay
+R
+pl_xtrabeneﬁts
+R
+pl_hospovn
+pl_hospfup
+R
+pl_chgnotice
+R
+pl_benedoc
+R
+pl_insagtcall
+pl_insagtvis
+pl_insagtswtch
+pp_enoughmds
+R
+pp_ﬁndmd
+pp_ﬁndmdphon
+pp_ﬁndmdcs
+pp_ﬁndmdweb
+pp_ﬁndmdemp
+pp_ﬁndmddir
+pp_ﬁndmdoth
+pp_ﬁndmdoth_txt
+pp_accinfo
+R
+pp_inaccoffc
+pp_inacccs
+pp_inaccweb
+pp_inaccemp
+pp_inaccdir
+pp_inaccoth
+pp_inaccoth_txt
+pl_value
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+55
+Variable
+Reverse
+2007
+Year 1
+ma_nocare
+Q25
+ma_reconsid
+Q26
+ma_appeal
+Q27A
+ma_forms
+Q27B
+ma_resolve
+Q27C
+ma_listen
+Q27D
+ma_discourage
+Q27E
+ma_nothing
+Q27F
+ma_complaint
+ma_comphandle
+ma_compresolv
+R
+ma_compsat
+R
+pd_hlthplan
+pd_hlthplan_txt
+pd_covrxmeds
+pd_cstryinfo
+Q28
+cs_cstryinfo
+—–
+pd_csgetinfo*
+Q29
+cs_csgetinfo*
+—–
+pd_csrespect*
+Q30
+cs_csrespect*
+—–
+pd_covinfo
+Q31
+pd_getcovinf*
+Q32
+pd_costinfo
+Q33
+pd_getcostinf*
+Q34
+pd_diffrx
+Q35
+pd_rxnocov
+Q36
+pd_askrxcov
+Q37
+pd_appeal
+pd_forms
+pd_resolve
+pd_listen
+pd_discourage
+pd_nothing
+pd_rxcovered
+pd_ﬁllrx*
+R
+pd_takemeds*
+R
+pd_ezrxmeds*
+Q38
+pd_rxpharm
+Q39
+pd_ezrxpharm*
+Q40
+pd_rxmail
+Q41
+pd_ezrxmail*
+Q42
+pd_infocov
+R
+Q43
+rate_pdp*
+Q44
+pd_recommend
+R
+Q45
+pd_rxhelp
+pd_userxhelp
+pd_proofrxhelp
+pd_phnorxhelp
+ghs
+R
+Q46
+mhs
+R
+Q47
+lim_modact
+Q48
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+56
+Variable
+Reverse
+2007
+Year 1
+lim_climb
+Q49
+lim_acomls
+R
+Q50
+lim_regact
+R
+Q51
+lim_acomlsem
+R
+Q52
+lim_regactem
+R
+Q53
+lim_painint
+R
+Q54
+sf_calm
+R
+Q55
+sf_energy
+R
+Q56
+sf_downblue
+Q57
+lim_socacts
+Q58
+ds_nointerest
+R
+ds_depressed
+R
+cnd_seemd2
+Q59
+cnd_last3mo
+Q60
+cnd_rxmeds
+Q61
+cnd_meds3mo
+Q62
+rxmedslist
+Q63
+rxezmeds
+rxinspay
+rxdelay
+Q64
+rxmailunreq
+pdpenroll
+R
+mtm_enrollprog
+mtm_medansr
+R
+mtm_meduse
+R
+mtm_summ
+R
+mtm_info
+R
+mtm_prog
+R
+knowcare
+R
+Q65
+helpperscare
+Q66
+helproutine
+Q67
+lim_physcond
+Q68
+cnd_heartattack
+cnd_angina
+cnd_stroke
+cnd_hbp
+cnd_cancer
+cnd_copd
+cnd_diabetes
+prob_walking
+prob_dressing
+prob_errands
+im_ﬂu1last*
+R
+Q69
+im_ﬂu1plan
+Q70
+im_pneum*
+R
+Q71
+smokenow
+Q72
+advsquit
+Q73
+smokequit
+agecat
+Q74
+sex
+Q75
+educ
+Q76
+race_hisp
+Q77
+
+
+A. Crosswalk: 2007 to 2025 - MA-PD Survey
+57
+Variable
+Reverse
+2007
+Year 1
+race_white
+Q78A
+race_black
+Q78B
+race_asian
+Q78C
+race_paciﬁc
+Q78D
+race_natamer
+Q78E
+proxy
+Q79
+proxy_read
+Q80A
+proxy_writ
+Q80B
+proxy_answ
+Q80C
+proxy_tran
+Q80D
+proxy_othr
+Q80E
+proxy_othr_txt
+Q80_O
+living_arr
+Q81
+living_arr_txt
+Q81_O
+living_alone
+living_numinhh
+lim_bathing
+Q82A
+lim_dressing
+Q82B
+lim_eating
+Q82C
+lim_chairs
+Q82D
+lim_walking
+Q82E
+lim_toilet
+Q82F
+web_at_home
+recontact
+Q83
+dayphone
+Q84
+lang_speak
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+58
+B. MA-Only Survey
+The following table shows crosswalk information for the MA-Only survey.
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+ma_hlthplan
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+ma_hlthplan_txt
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+ins_have_oth
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medigap
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_employer
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_veteran
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_military
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicaid
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_ma_pdp
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_illness
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+ca_illasaw*
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_routine
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+ca_rtnasaw*
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_visits
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+ca_emerquex
+D
+ca_emeransr
+D
+ca_emerfup
+R
+D
+ca_wt15mns*
+D
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+rate_care*
+Q08
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+ca_equipment
+ca_getequip
+ca_therapy
+ca_gettherapy
+md_have
+Q10
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+md_visits
+Q11
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+md_explain*
+Q12
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+md_listen*
+Q13
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+md_respect*
+Q14
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+md_sptime*
+Q15
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+rate_md*
+Q16
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+md_medrecs*
+Q17
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+md_hlthcond
+md_ezinstr
+md_descinstr
+md_test
+Q18
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+md_testfup*
+Q19
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+md_testasan*
+Q20
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+md_rxmeds
+Q21
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+md_talkmeds*
+Q22
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+md_hhdevice
+R
+D
+md_hhdhelp
+R
+D
+md_hhdtalk
+D
+md_morethan1
+Q23
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+md_needmngca
+Q24
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+md_getmngca*
+R
+Q25
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+59
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+md_cacoord
+md_visnotes
+R
+D
+sp_persmd
+Q26
+Q27
+Q27
+Q27
+Q27
+Q27
+Q27
+Q27
+sp_tryappt
+Q27
+Q28
+Q28
+Q28
+Q28
+Q28
+Q28
+Q28
+sp_getappt*
+Q28
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+pp_specwait
+R
+sp_visits
+Q29
+Q30
+Q30
+Q30
+Q30
+Q30
+Q30
+Q30
+rate_spec*
+Q30
+Q31
+Q31
+Q31
+Q31
+Q31
+Q31
+Q31
+sp_mdinformd*
+Q31
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+md_change
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_disagree
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_leavansr
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_result
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_informed
+sp_cacoord
+pp_specvis
+pp_specntwk
+pp_specrec
+pp_specfar
+R
+pp_specfew
+R
+pp_speclist
+R
+pl_needcare
+D
+pl_getcare*
+Q09
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+pl_paperwk
+Q35
+Q36
+Q36
+Q36
+Q36
+Q36
+Q36
+Q36
+pl_ezpaper*
+Q36
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+rate_plan*
+Q37
+Q38
+Q38
+Q38
+Q38
+Q38
+Q38
+Q38
+pl_remindappt
+R
+D
+pl_remindﬂu
+R
+D
+pl_remindtest
+R
+D
+pl_lowercopay
+R
+Q38
+Q39
+Q39
+Q39
+Q39
+Q39
+Q39
+Q39
+pl_xtrabeneﬁts
+R
+Q39
+Q40
+Q40
+Q40
+Q40
+Q40
+Q40
+Q40
+pl_hospovn
+Q43
+Q44
+Q43
+Q43
+Q43
+Q43
+Q43
+Q43
+pl_hospfup
+R
+D
+pl_chgnotice
+R
+pl_benedoc
+R
+pl_insagtcall
+pl_insagtvis
+pl_insagtswtch
+pp_enoughmds
+R
+pp_ﬁndmd
+pp_ﬁndmdphon
+pp_ﬁndmdcs
+pp_ﬁndmdweb
+pp_ﬁndmdemp
+pp_ﬁndmddir
+pp_ﬁndmdoth
+pp_ﬁndmdoth_txt
+pp_accinfo
+R
+pp_inaccoffc
+pp_inacccs
+pp_inaccweb
+pp_inaccemp
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+60
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pp_inaccdir
+pp_inaccoth
+pp_inaccoth_txt
+pl_value
+ma_nocare
+D
+ma_reconsid
+D
+ma_appeal
+D
+ma_forms
+D
+ma_resolve
+D
+ma_listen
+D
+ma_discourage
+D
+ma_nothing
+D
+ma_complaint
+D
+ma_comphandle
+D
+ma_compresolv
+R
+D
+ma_compsat
+R
+D
+pd_hlthplan
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_hlthplan_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_covrxmeds
+pd_cstryinfo
+cs_cstryinfo
+Q32
+Q33
+Q33
+Q33
+Q33
+Q33
+Q33
+Q33
+pd_csgetinfo*
+cs_csgetinfo*
+Q33
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+pd_csrespect*
+cs_csrespect*
+Q34
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+pd_covinfo
+pd_getcovinf*
+pd_costinfo
+pd_getcostinf*
+pd_diffrx
+pd_rxnocov
+pd_askrxcov
+pd_appeal
+pd_forms
+pd_resolve
+pd_listen
+pd_discourage
+pd_nothing
+pd_rxcovered
+pd_ﬁllrx*
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_takemeds*
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxmeds*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxpharm
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxpharm*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxmail
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxmail*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_infocov
+R
+rate_pdp*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_recommend
+R
+pd_rxhelp
+pd_userxhelp
+pd_proofrxhelp
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+61
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pd_phnorxhelp
+ghs
+R
+Q40
+Q41
+Q41
+Q41
+Q41
+Q41
+Q41
+Q41
+mhs
+R
+Q41
+Q42
+Q42
+Q42
+Q42
+Q42
+Q42
+Q42
+lim_modact
+lim_climb
+lim_acomls
+R
+lim_regact
+R
+lim_acomlsem
+R
+lim_regactem
+R
+lim_painint
+R
+sf_calm
+R
+sf_energy
+R
+sf_downblue
+lim_socacts
+ds_nointerest
+R
+ds_depressed
+R
+cnd_seemd2
+D
+cnd_last3mo
+D
+cnd_rxmeds
+D
+cnd_meds3mo
+D
+rxmedslist
+rxezmeds
+Q44
+Q45
+Q44
+Q44
+Q44
+Q44
+Q44
+Q44
+rxinspay
+Q45
+Q46
+Q45
+Q45
+Q45
+Q45
+Q45
+Q45
+rxdelay
+Q46
+Q47
+Q46
+Q46
+Q46
+Q46
+Q46
+Q46
+rxmailunreq
+D
+Q47
+Q47
+Q47
+Q47
+Q47
+Q47
+pdpenroll
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_enrollprog
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_medansr
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_meduse
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_summ
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_info
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_prog
+R
+—–
+—–
+—–
+—–
+—–
+—–
+knowcare
+R
+helpperscare
+helproutine
+lim_physcond
+cnd_heartattack
+Q48A
+Q49A
+Q48A
+Q48A
+Q48A
+Q48A
+Q48A
+Q48A
+cnd_angina
+Q48B
+Q49B
+Q48B
+Q48B
+Q48B
+Q48B
+Q48B
+Q48B
+cnd_stroke
+cnd_hbp
+Q48C
+Q49C
+Q48C
+Q48C
+Q48C
+Q48C
+Q48C
+Q48C
+cnd_cancer
+Q48D
+Q49D
+Q48D
+Q48D
+Q48D
+Q48D
+Q48D
+Q48D
+cnd_copd
+Q48E
+Q49E
+Q48E
+Q48E
+Q48E
+Q48E
+Q48E
+Q48E
+cnd_diabetes
+Q48F
+Q49F
+Q48F
+Q48F
+Q48F
+Q48F
+Q48F
+Q48F
+prob_walking
+Q49
+Q50
+Q49
+Q49
+Q49
+Q49
+Q49
+Q49
+prob_dressing
+Q50
+Q51
+Q50
+Q50
+Q50
+Q50
+Q50
+Q50
+prob_errands
+Q51
+Q52
+Q51
+Q51
+Q51
+Q51
+Q51
+Q51
+im_ﬂu1last*
+R
+Q52
+Q53
+Q52
+Q52
+Q52
+Q52
+Q52
+Q52
+im_ﬂu1plan
+im_pneum*
+R
+Q53
+Q54
+Q53
+Q53
+Q53
+Q53
+Q53
+Q53
+smokenow
+D
+Q55
+Q54
+Q54
+Q54
+Q54
+Q54
+Q54
+advsquit
+smokequit
+D
+Q56
+Q55
+Q55
+Q55
+Q55
+Q55
+Q55
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+62
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+agecat
+sex
+educ
+Q54
+Q57
+Q56
+Q56
+Q56
+Q56
+Q56
+Q56
+race_hisp
+Q55
+Q58
+Q57
+Q57
+Q57
+Q57
+Q57
+Q57
+race_white
+Q56E
+Q59E
+Q58E
+Q58A
+Q58A
+Q58A
+Q58A
+Q58A
+race_black
+Q56C
+Q59C
+Q58C
+Q58B
+Q58B
+Q58B
+Q58B
+Q58B
+race_asian
+Q56B
+Q59B
+Q58B
+Q58C
+Q58C
+Q58C
+Q58C
+Q58C
+race_paciﬁc
+Q56D
+Q59D
+Q58D
+Q58D
+Q58D
+Q58D
+Q58D
+Q58D
+race_natamer
+Q56A
+Q59A
+Q58A
+Q58E
+Q58E
+Q58E
+Q58E
+Q58E
+proxy
+Q60
+Q63
+Q62
+Q62
+Q62
+Q62
+Q62
+Q62
+proxy_read
+Q61A
+Q64A
+Q63A
+Q63A
+Q63A
+Q63A
+Q63A
+Q63A
+proxy_writ
+Q61B
+Q64B
+Q63B
+Q63B
+Q63B
+Q63B
+Q63B
+Q63B
+proxy_answ
+Q61C
+Q64C
+Q63C
+Q63C
+Q63C
+Q63C
+Q63C
+Q63C
+proxy_tran
+Q61D
+Q64D
+Q63D
+Q63D
+Q63D
+Q63D
+Q63D
+Q63D
+proxy_othr
+Q61E
+Q64E
+Q63E
+Q63E
+Q63E
+Q63E
+Q63E
+Q63E
+proxy_othr_txt
+living_arr
+living_arr_txt
+living_alone
+living_numinhh
+Q57
+Q60
+Q59
+Q59
+Q59
+Q59
+Q59
+Q59
+lim_bathing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_dressing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_eating
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_chairs
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_walking
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_toilet
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+web_at_home
+Q58
+Q61
+Q60
+Q60
+Q60
+Q60
+Q60
+Q60
+recontact
+Q59
+Q62
+Q61
+Q61
+Q61
+Q61
+Q61
+Q61
+dayphone
+lang_speak
+Q42
+Q43
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+63
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+ma_hlthplan
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+ma_hlthplan_txt
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+ins_have_oth
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medigap
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_employer
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_veteran
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_military
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicaid
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_ma_pdp
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_illness
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+ca_illasaw*
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_routine
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+ca_rtnasaw*
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_visits
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+ca_emerquex
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q08
+ca_emeransr
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q09
+ca_emerfup
+R
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q10
+ca_wt15mns*
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q11
+Q08
+Q08
+rate_care*
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q09
+Q09
+ca_equipment
+D
+Q13
+Q13
+Q13
+Q13
+Q10
+Q10
+ca_getequip
+D
+Q14
+Q14
+Q14
+Q14
+Q11
+Q11
+ca_therapy
+D
+Q12
+Q12
+ca_gettherapy
+D
+Q13
+Q13
+md_have
+Q13
+Q13
+Q13
+Q15
+Q15
+Q15
+Q15
+Q14
+Q14
+md_visits
+Q14
+Q14
+Q14
+Q16
+Q16
+Q16
+Q16
+Q15
+Q15
+md_explain*
+Q15
+Q15
+Q15
+Q17
+Q17
+Q17
+Q17
+Q16
+Q16
+md_listen*
+Q16
+Q16
+Q16
+Q18
+Q18
+Q18
+Q18
+Q17
+Q17
+md_respect*
+Q17
+Q17
+Q17
+Q19
+Q19
+Q19
+Q19
+Q18
+Q18
+md_sptime*
+Q18
+Q18
+Q18
+Q20
+Q20
+Q20
+Q20
+Q19
+Q19
+rate_md*
+Q19
+Q19
+Q19
+Q21
+Q21
+Q21
+Q21
+Q20
+Q20
+md_medrecs*
+Q20
+Q20
+Q20
+Q22
+Q22
+md_hlthcond
+—–
+—–
+—–
+md_ezinstr
+—–
+—–
+—–
+md_descinstr
+—–
+—–
+—–
+md_test
+Q21
+Q21
+Q21
+Q23
+Q23
+Q22
+Q22
+md_testfup*
+Q22
+Q22
+Q22
+Q24
+Q24
+Q23
+Q23
+md_testasan*
+Q23
+Q23
+Q23
+Q25
+Q25
+md_rxmeds
+Q24
+Q24
+Q24
+Q26
+Q26
+md_talkmeds*
+Q25
+Q25
+Q25
+Q27
+Q27
+md_hhdevice
+R
+Q26
+Q26
+Q26
+md_hhdhelp
+R
+Q27
+Q27
+Q27
+md_hhdtalk
+Q28
+Q28
+Q28
+md_morethan1
+Q29
+Q29
+Q29
+Q28
+Q28
+md_needmngca
+Q30
+Q30
+Q30
+Q29
+Q29
+md_getmngca*
+R
+Q31
+Q31
+Q31
+Q30
+Q30
+md_cacoord
+D
+Q31
+Q24
+md_visnotes
+R
+Q32
+Q32
+Q32
+Q31
+Q32
+sp_persmd
+Q33
+Q33
+Q33
+Q32
+sp_tryappt
+Q34
+Q34
+Q34
+Q33
+Q33
+Q25
+Q24
+Q21
+Q21
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+64
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+sp_getappt*
+Q35
+Q35
+Q35
+Q34
+Q34
+Q26
+Q25
+Q22
+Q22
+pp_specwait
+R
+—–
+—–
+sp_visits
+Q36
+Q36
+Q36
+Q35
+Q35
+Q27
+Q26
+Q23
+Q23
+rate_spec*
+Q37
+Q37
+Q37
+Q36
+Q36
+Q28
+Q27
+Q24
+Q24
+sp_mdinformd*
+Q38
+Q38
+Q38
+Q37
+Q37
+Q29
+Q28
+md_change
+R
+—–
+—–
+—–
+md_disagree
+R
+—–
+—–
+—–
+md_leavansr
+—–
+—–
+—–
+md_result
+—–
+—–
+—–
+sp_informed
+D
+Q29
+sp_cacoord
+D
+Q30
+pp_specvis
+—–
+—–
+—–
+—–
+—–
+pp_specntwk
+—–
+—–
+—–
+pp_specrec
+—–
+—–
+pp_specfar
+R
+—–
+—–
+pp_specfew
+R
+—–
+—–
+pp_speclist
+R
+—–
+pl_needcare
+Q39
+Q39
+Q39
+Q38
+Q38
+Q30
+Q31
+Q25
+Q25
+pl_getcare*
+Q40
+Q40
+Q40
+Q39
+Q39
+Q31
+Q32
+Q26
+Q26
+pl_paperwk
+Q44
+Q44
+Q44
+Q43
+Q43
+Q35
+Q36
+Q30
+Q30
+pl_ezpaper*
+Q45
+Q45
+Q45
+Q44
+Q44
+Q36
+Q37
+Q31
+Q31
+rate_plan*
+Q46
+Q46
+Q46
+Q45
+Q45
+Q37
+Q38
+Q32
+Q32
+pl_remindappt
+R
+Q47A
+Q47A
+Q47A
+Q46A
+pl_remindﬂu
+R
+Q47B
+Q47B
+Q47B
+Q46B
+pl_remindtest
+R
+Q47C
+Q47C
+Q47C
+Q46C
+pl_lowercopay
+R
+pl_xtrabeneﬁts
+R
+pl_hospovn
+Q48
+Q48
+Q48
+Q47
+pl_hospfup
+R
+Q49
+Q49
+Q49
+Q48
+pl_chgnotice
+R
+D
+Q39
+pl_benedoc
+R
+D
+Q40
+pl_insagtcall
+D
+Q41
+pl_insagtvis
+D
+Q42
+pl_insagtswtch
+D
+Q43
+pp_enoughmds
+R
+—–
+—–
+—–
+—–
+—–
+pp_ﬁndmd
+—–
+—–
+—–
+—–
+—–
+pp_ﬁndmdphon
+—–
+—–
+—–
+pp_ﬁndmdcs
+—–
+—–
+—–
+pp_ﬁndmdweb
+—–
+—–
+—–
+pp_ﬁndmdemp
+—–
+—–
+pp_ﬁndmddir
+—–
+—–
+—–
+pp_ﬁndmdoth
+—–
+—–
+—–
+pp_ﬁndmdoth_txt
+—–
+—–
+—–
+pp_accinfo
+R
+—–
+—–
+—–
+—–
+—–
+pp_inaccoffc
+—–
+—–
+pp_inacccs
+—–
+—–
+pp_inaccweb
+—–
+—–
+pp_inaccemp
+—–
+—–
+pp_inaccdir
+—–
+—–
+pp_inaccoth
+—–
+—–
+pp_inaccoth_txt
+—–
+—–
+pl_value
+D
+Q33
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+65
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+ma_nocare
+Q50
+Q50
+Q50
+Q49
+Q46
+Q38
+Q44
+Q33
+Q34
+ma_reconsid
+Q51
+Q51
+Q51
+Q50
+Q47
+Q39
+Q45
+Q34
+Q35
+ma_appeal
+Q52A
+Q52A
+Q52A
+Q51A
+Q48A
+Q40A
+Q46A
+Q35A
+Q36A
+ma_forms
+Q52B
+Q52B
+Q52B
+Q51B
+Q48B
+Q40B
+Q46B
+Q35B
+Q36B
+ma_resolve
+Q52C
+Q52C
+Q52C
+Q51C
+Q48C
+Q40C
+Q46C
+Q35C
+Q36C
+ma_listen
+Q52D
+Q52D
+Q52D
+Q51D
+Q48D
+Q40D
+Q46D
+Q35D
+Q36D
+ma_discourage
+Q52E
+Q52E
+Q52E
+Q51E
+Q48E
+Q40E
+Q46E
+Q35E
+Q36E
+ma_nothing
+Q52F
+Q52F
+Q52F
+Q51F
+Q48F
+Q40F
+Q46F
+Q35F
+Q36F
+ma_complaint
+Q53
+Q53
+Q53
+Q52
+Q49
+Q41
+Q47
+ma_comphandle
+Q54
+Q54
+Q54
+Q53
+Q50
+ma_compresolv
+R
+Q55
+Q55
+Q55
+Q54
+Q51
+Q42
+Q48
+ma_compsat
+R
+Q56
+Q56
+Q56
+Q55
+Q52
+Q43
+Q49
+pd_hlthplan
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_hlthplan_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_covrxmeds
+—–
+—–
+pd_cstryinfo
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+cs_cstryinfo
+Q41
+Q41
+Q41
+Q40
+Q40
+Q32
+Q33
+Q27
+Q27
+pd_csgetinfo*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+cs_csgetinfo*
+Q42
+Q42
+Q42
+Q41
+Q41
+Q33
+Q34
+Q28
+Q28
+pd_csrespect*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+cs_csrespect*
+Q43
+Q43
+Q43
+Q42
+Q42
+Q34
+Q35
+Q29
+Q29
+pd_covinfo
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_getcovinf*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_costinfo
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_getcostinf*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_diffrx
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxnocov
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_askrxcov
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_appeal
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_forms
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_resolve
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_listen
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_discourage
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_nothing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxcovered
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ﬁllrx*
+R
+—–
+—–
+—–
+—–
+pd_takemeds*
+R
+—–
+—–
+—–
+—–
+pd_ezrxmeds*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxpharm
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxpharm*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxmail
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxmail*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_infocov
+R
+D
+rate_pdp*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_recommend
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_rxhelp
+—–
+pd_userxhelp
+—–
+pd_proofrxhelp
+—–
+pd_phnorxhelp
+—–
+ghs
+R
+Q57
+Q57
+Q57
+Q56
+Q53
+Q44
+Q50
+Q36
+Q37
+mhs
+R
+Q58
+Q58
+Q58
+Q57
+Q54
+Q45
+Q51
+Q37
+Q38
+lim_modact
+D
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+66
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+lim_climb
+D
+lim_acomls
+R
+D
+lim_regact
+R
+D
+lim_acomlsem
+R
+D
+lim_regactem
+R
+D
+lim_painint
+R
+D
+sf_calm
+R
+D
+sf_energy
+R
+D
+sf_downblue
+D
+lim_socacts
+D
+ds_nointerest
+R
+D
+Q52
+—–
+ds_depressed
+R
+D
+Q53
+Q38
+cnd_seemd2
+Q59
+Q59
+Q59
+Q58
+Q55
+Q46
+Q54
+Q39
+Q39
+cnd_last3mo
+Q60
+Q60
+Q60
+Q59
+Q56
+Q47
+Q55
+Q40
+Q40
+cnd_rxmeds
+Q61
+Q61
+Q61
+Q60
+Q57
+Q48
+Q56
+Q41
+Q41
+cnd_meds3mo
+Q62
+Q62
+Q62
+Q61
+Q58
+Q49
+Q57
+Q42
+Q42
+rxmedslist
+D
+Q43
+Q43
+rxezmeds
+Q63
+Q63
+Q63
+Q62
+Q59
+Q50
+Q58
+Q44
+rxinspay
+Q64
+Q64
+Q64
+Q63
+Q60
+Q51
+Q59
+Q45
+rxdelay
+Q65
+Q65
+Q65
+Q64
+Q61
+Q52
+Q60
+Q46
+Q44
+rxmailunreq
+Q66
+Q66
+Q66
+pdpenroll
+R
+—–
+—–
+—–
+mtm_enrollprog
+—–
+—–
+—–
+mtm_medansr
+R
+—–
+—–
+—–
+mtm_meduse
+R
+—–
+—–
+—–
+mtm_summ
+R
+—–
+—–
+—–
+mtm_info
+R
+—–
+—–
+—–
+mtm_prog
+R
+—–
+—–
+—–
+knowcare
+R
+D
+Q61
+Q47
+Q45
+helpperscare
+D
+Q62
+Q48
+Q46
+helproutine
+D
+Q63
+Q49
+Q47
+lim_physcond
+D
+Q64
+Q50
+Q48
+cnd_heartattack
+Q67A
+Q67A
+Q67A
+Q65A
+Q62A
+Q53A
+Q65A
+Q51A
+Q49A
+cnd_angina
+Q67B
+Q67B
+Q67B
+Q65B
+Q62B
+Q53B
+Q65B
+Q51B
+Q49B
+cnd_stroke
+D
+Q65C
+Q62C
+Q53C
+Q65C
+Q51C
+Q49C
+cnd_hbp
+Q67C
+Q67C
+Q67C
+cnd_cancer
+Q67D
+Q67D
+Q67D
+Q65D
+Q62D
+Q53D
+Q65D
+Q51D
+Q49D
+cnd_copd
+Q67E
+Q67E
+Q67E
+Q65E
+Q62E
+Q53E
+Q65E
+Q51E
+Q49E
+cnd_diabetes
+Q67F
+Q67F
+Q67F
+Q65F
+Q62F
+Q53F
+Q65F
+Q51F
+Q49F
+prob_walking
+prob_dressing
+prob_errands
+im_ﬂu1last*
+R
+Q68
+Q68
+Q68
+Q66
+Q63
+Q54
+Q66
+Q52
+Q50
+im_ﬂu1plan
+D
+Q53
+Q51
+im_pneum*
+R
+Q69
+Q69
+Q69
+Q67
+Q64
+Q55
+Q67
+Q54
+Q52
+smokenow
+Q70
+Q70
+Q70
+Q68
+Q65
+Q56
+Q68
+Q55
+Q53
+advsquit
+D
+Q56
+Q54
+smokequit
+Q71
+Q71
+Q71
+Q69
+Q66
+Q57
+Q69
+agecat
+D
+Q70
+Q67
+Q58
+Q70
+Q57
+Q55
+sex
+D
+Q71
+Q68
+Q59
+Q71
+Q58
+Q56
+educ
+Q72
+Q72
+Q72
+Q72
+Q69
+Q60
+Q72
+Q59
+Q57
+race_hisp
+Q73
+Q73
+Q73
+Q73
+Q70
+Q61
+Q73
+Q60
+Q58
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+67
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+race_white
+Q74A
+Q74A
+Q74A
+Q74A
+Q71A
+Q62A
+Q74A
+Q61A
+Q59A
+race_black
+Q74B
+Q74B
+Q74B
+Q74B
+Q71B
+Q62B
+Q74B
+Q61B
+Q59B
+race_asian
+Q74C
+Q74C
+Q74C
+Q74C
+Q71C
+Q62C
+Q74C
+Q61C
+Q59C
+race_paciﬁc
+Q74D
+Q74D
+Q74D
+Q74D
+Q71D
+Q62D
+Q74D
+Q61D
+Q59D
+race_natamer
+Q74E
+Q74E
+Q74E
+Q74E
+Q71E
+Q62E
+Q74E
+Q61E
+Q59E
+proxy
+Q77
+Q77
+Q77
+Q75
+Q72
+Q63
+Q75
+Q62
+Q60
+proxy_read
+Q78A
+Q78A
+Q78A
+Q76A
+Q73A
+Q64A
+Q76A
+Q63A
+Q61A
+proxy_writ
+Q78B
+Q78B
+Q78B
+Q76B
+Q73B
+Q64B
+Q76B
+Q63B
+Q61B
+proxy_answ
+Q78C
+Q78C
+Q78C
+Q76C
+Q73C
+Q64C
+Q76C
+Q63C
+Q61C
+proxy_tran
+Q78D
+Q78D
+Q78D
+Q76D
+Q73D
+Q64D
+Q76D
+Q63D
+Q61D
+proxy_othr
+Q78E
+Q78E
+Q78E
+Q76E
+Q73E
+Q64E
+Q76E
+Q63E
+Q61E
+proxy_othr_txt
+D
+Q76_O
+Q63_O
+Q61_O
+living_arr
+D
+Q62
+living_arr_txt
+D
+Q62_O
+living_alone
+D
+Q74
+Q65
+Q77
+Q64
+living_numinhh
+Q75
+Q75
+Q75
+Q77
+lim_bathing
+—–
+—–
+—–
+—–
+—–
+D
+Q78A
+Q65A
+Q63A
+lim_dressing
+—–
+—–
+—–
+—–
+—–
+D
+Q78B
+Q65B
+Q63B
+lim_eating
+—–
+—–
+—–
+—–
+—–
+D
+Q78C
+Q65C
+Q63C
+lim_chairs
+—–
+—–
+—–
+—–
+—–
+D
+Q78D
+Q65D
+Q63D
+lim_walking
+—–
+—–
+—–
+—–
+—–
+D
+Q78E
+Q65E
+Q63E
+lim_toilet
+—–
+—–
+—–
+—–
+—–
+D
+Q78F
+Q65F
+Q63F
+web_at_home
+recontact
+Q76
+Q76
+Q76
+Q78
+Q75
+Q66
+Q79
+Q66
+Q64
+dayphone
+D
+Q67
+Q65
+lang_speak
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+68
+Variable
+Reverse
+2007
+Year 1
+ma_hlthplan
+Q01
+ma_hlthplan_txt
+Q02
+ins_have_oth
+—–
+ins_medigap
+—–
+ins_employer
+—–
+ins_veteran
+—–
+ins_military
+—–
+ins_medicaid
+—–
+ins_ma_pdp
+—–
+ins_other
+—–
+ins_other_txt
+—–
+ins_medicare
+—–
+ca_illness
+Q03
+ca_illasaw*
+Q04
+ca_routine
+Q05
+ca_rtnasaw*
+Q06
+ca_visits
+Q07
+ca_emerquex
+ca_emeransr
+ca_emerfup
+R
+ca_wt15mns*
+rate_care*
+Q08
+ca_equipment
+ca_getequip
+ca_therapy
+ca_gettherapy
+md_have
+Q09
+md_visits
+Q10
+md_explain*
+Q11
+md_listen*
+Q12
+md_respect*
+Q13
+md_sptime*
+Q14
+rate_md*
+Q15
+md_medrecs*
+md_hlthcond
+md_ezinstr
+md_descinstr
+md_test
+md_testfup*
+md_testasan*
+md_rxmeds
+md_talkmeds*
+md_hhdevice
+R
+md_hhdhelp
+R
+md_hhdtalk
+md_morethan1
+md_needmngca
+md_getmngca*
+R
+md_cacoord
+md_visnotes
+R
+sp_persmd
+sp_tryappt
+Q16
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+69
+Variable
+Reverse
+2007
+Year 1
+sp_getappt*
+Q17
+pp_specwait
+R
+sp_visits
+Q18
+rate_spec*
+Q19
+sp_mdinformd*
+md_change
+R
+md_disagree
+R
+md_leavansr
+md_result
+sp_informed
+sp_cacoord
+pp_specvis
+pp_specntwk
+pp_specrec
+pp_specfar
+R
+pp_specfew
+R
+pp_speclist
+R
+pl_needcare
+Q20
+pl_getcare*
+Q21
+pl_paperwk
+Q25
+pl_ezpaper*
+Q26
+rate_plan*
+Q27
+pl_remindappt
+R
+pl_remindﬂu
+R
+pl_remindtest
+R
+pl_lowercopay
+R
+pl_xtrabeneﬁts
+R
+pl_hospovn
+pl_hospfup
+R
+pl_chgnotice
+R
+pl_benedoc
+R
+pl_insagtcall
+pl_insagtvis
+pl_insagtswtch
+pp_enoughmds
+R
+pp_ﬁndmd
+pp_ﬁndmdphon
+pp_ﬁndmdcs
+pp_ﬁndmdweb
+pp_ﬁndmdemp
+pp_ﬁndmddir
+pp_ﬁndmdoth
+pp_ﬁndmdoth_txt
+pp_accinfo
+R
+pp_inaccoffc
+pp_inacccs
+pp_inaccweb
+pp_inaccemp
+pp_inaccdir
+pp_inaccoth
+pp_inaccoth_txt
+pl_value
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+70
+Variable
+Reverse
+2007
+Year 1
+ma_nocare
+Q28
+ma_reconsid
+Q29
+ma_appeal
+Q30A
+ma_forms
+Q30B
+ma_resolve
+Q30C
+ma_listen
+Q30D
+ma_discourage
+Q30E
+ma_nothing
+Q30F
+ma_complaint
+ma_comphandle
+ma_compresolv
+R
+ma_compsat
+R
+pd_hlthplan
+pd_hlthplan_txt
+pd_covrxmeds
+pd_cstryinfo
+—–
+cs_cstryinfo
+Q22
+pd_csgetinfo*
+—–
+cs_csgetinfo*
+Q23
+pd_csrespect*
+—–
+cs_csrespect*
+Q24
+pd_covinfo
+—–
+pd_getcovinf*
+—–
+pd_costinfo
+—–
+pd_getcostinf*
+—–
+pd_diffrx
+—–
+pd_rxnocov
+—–
+pd_askrxcov
+—–
+pd_appeal
+pd_forms
+pd_resolve
+pd_listen
+pd_discourage
+pd_nothing
+pd_rxcovered
+pd_ﬁllrx*
+R
+pd_takemeds*
+R
+pd_ezrxmeds*
+—–
+pd_rxpharm
+—–
+pd_ezrxpharm*
+—–
+pd_rxmail
+—–
+pd_ezrxmail*
+—–
+pd_infocov
+R
+—–
+rate_pdp*
+—–
+pd_recommend
+R
+—–
+pd_rxhelp
+pd_userxhelp
+pd_proofrxhelp
+pd_phnorxhelp
+ghs
+R
+Q31
+mhs
+R
+Q32
+lim_modact
+Q33
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+71
+Variable
+Reverse
+2007
+Year 1
+lim_climb
+Q34
+lim_acomls
+R
+Q35
+lim_regact
+R
+Q36
+lim_acomlsem
+R
+Q37
+lim_regactem
+R
+Q38
+lim_painint
+R
+Q39
+sf_calm
+R
+Q40
+sf_energy
+R
+Q41
+sf_downblue
+Q42
+lim_socacts
+Q43
+ds_nointerest
+R
+ds_depressed
+R
+cnd_seemd2
+Q44
+cnd_last3mo
+Q45
+cnd_rxmeds
+Q46
+cnd_meds3mo
+Q47
+rxmedslist
+Q48
+rxezmeds
+rxinspay
+rxdelay
+Q49
+rxmailunreq
+pdpenroll
+R
+mtm_enrollprog
+mtm_medansr
+R
+mtm_meduse
+R
+mtm_summ
+R
+mtm_info
+R
+mtm_prog
+R
+knowcare
+R
+Q50
+helpperscare
+Q51
+helproutine
+Q52
+lim_physcond
+Q53
+cnd_heartattack
+cnd_angina
+cnd_stroke
+cnd_hbp
+cnd_cancer
+cnd_copd
+cnd_diabetes
+prob_walking
+prob_dressing
+prob_errands
+im_ﬂu1last*
+R
+Q54
+im_ﬂu1plan
+Q55
+im_pneum*
+R
+Q56
+smokenow
+Q57
+advsquit
+Q58
+smokequit
+agecat
+Q59
+sex
+Q60
+educ
+Q61
+race_hisp
+Q62
+
+
+B. Crosswalk: 2007 to 2025 - MA-Only Survey
+72
+Variable
+Reverse
+2007
+Year 1
+race_white
+Q63A
+race_black
+Q63B
+race_asian
+Q63C
+race_paciﬁc
+Q63D
+race_natamer
+Q63E
+proxy
+Q64
+proxy_read
+Q65A
+proxy_writ
+Q65B
+proxy_answ
+Q65C
+proxy_tran
+Q65D
+proxy_othr
+Q65E
+proxy_othr_txt
+Q65_O
+living_arr
+Q66
+living_arr_txt
+Q66_O
+living_alone
+living_numinhh
+lim_bathing
+Q67A
+lim_dressing
+Q67B
+lim_eating
+Q67C
+lim_chairs
+Q67D
+lim_walking
+Q67E
+lim_toilet
+Q67F
+web_at_home
+recontact
+Q68
+dayphone
+Q69
+lang_speak
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+73
+C. PDP Survey
+The following table shows crosswalk information for the PDP survey. 1
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+ma_hlthplan
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_hlthplan_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_have_oth
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medigap
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_employer
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_veteran
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_military
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicaid
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_ma_pdp
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_other_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_medicare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_illness
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_illasaw*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_routine
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_rtnasaw*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_visits
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_emerquex
+ca_emeransr
+ca_emerfup
+R
+ca_wt15mns*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rate_care*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_equipment
+ca_getequip
+ca_therapy
+ca_gettherapy
+md_have
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_visits
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_explain*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_listen*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_respect*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_sptime*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rate_md*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_medrecs*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_hlthcond
+md_ezinstr
+md_descinstr
+md_test
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testfup*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testasan*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_rxmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_talkmeds*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_hhdevice
+R
+md_hhdhelp
+R
+md_hhdtalk
+md_morethan1
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+1Note that in 2007-2010, the Prescription Drug Plan Survey was called the FFS Stand-Alone Prescription Drug Plan Survey.
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+74
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+md_needmngca
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_getmngca*
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_cacoord
+md_visnotes
+R
+sp_persmd
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_tryappt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_getappt*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pp_specwait
+R
+sp_visits
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rate_spec*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_mdinformd*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_change
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_disagree
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_leavansr
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_result
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_informed
+sp_cacoord
+pp_specvis
+pp_specntwk
+pp_specrec
+pp_specfar
+R
+pp_specfew
+R
+pp_speclist
+R
+pl_needcare
+pl_getcare*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_paperwk
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_ezpaper*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rate_plan*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_remindappt
+R
+pl_remindﬂu
+R
+pl_remindtest
+R
+pl_lowercopay
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_xtrabeneﬁts
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_hospovn
+Q13
+Q13
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+pl_hospfup
+R
+pl_chgnotice
+R
+pl_benedoc
+R
+pl_insagtcall
+pl_insagtvis
+pl_insagtswtch
+pp_enoughmds
+R
+pp_ﬁndmd
+pp_ﬁndmdphon
+pp_ﬁndmdcs
+pp_ﬁndmdweb
+pp_ﬁndmdemp
+pp_ﬁndmddir
+pp_ﬁndmdoth
+pp_ﬁndmdoth_txt
+pp_accinfo
+R
+pp_inaccoffc
+pp_inacccs
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+75
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pp_inaccweb
+pp_inaccemp
+pp_inaccdir
+pp_inaccoth
+pp_inaccoth_txt
+pl_value
+ma_nocare
+ma_reconsid
+ma_appeal
+ma_forms
+ma_resolve
+ma_listen
+ma_discourage
+ma_nothing
+ma_complaint
+ma_comphandle
+D
+ma_compresolv
+R
+D
+ma_compsat
+R
+D
+pd_hlthplan
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+pd_hlthplan_txt
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+pd_covrxmeds
+pd_cstryinfo
+D
+cs_cstryinfo
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_csgetinfo*
+D
+cs_csgetinfo*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_csrespect*
+D
+cs_csrespect*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_covinfo
+D
+pd_getcovinf*
+D
+pd_costinfo
+D
+pd_getcostinf*
+D
+pd_diffrx
+D
+pd_rxnocov
+D
+pd_askrxcov
+D
+pd_appeal
+D
+pd_forms
+D
+pd_resolve
+D
+pd_listen
+D
+pd_discourage
+D
+pd_nothing
+D
+pd_rxcovered
+D
+pd_ﬁllrx*
+R
+Q03A
+Q03A
+Q03A
+Q03A
+Q03A
+Q03A
+Q03A
+Q03A
+pd_takemeds*
+R
+Q03B
+Q03B
+Q03B
+Q03B
+Q03B
+Q03B
+Q03B
+Q03B
+pd_ezrxmeds*
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+pd_rxpharm
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+pd_ezrxpharm*
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+pd_rxmail
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+pd_ezrxmail*
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+pd_infocov
+R
+rate_pdp*
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+pd_recommend
+R
+D
+pd_rxhelp
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+76
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pd_userxhelp
+pd_proofrxhelp
+pd_phnorxhelp
+ghs
+R
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+mhs
+R
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+lim_modact
+lim_climb
+lim_acomls
+R
+lim_regact
+R
+lim_acomlsem
+R
+lim_regactem
+R
+lim_painint
+R
+sf_calm
+R
+sf_energy
+R
+sf_downblue
+lim_socacts
+ds_nointerest
+R
+ds_depressed
+R
+cnd_seemd2
+D
+cnd_last3mo
+D
+cnd_rxmeds
+D
+cnd_meds3mo
+D
+rxmedslist
+rxezmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxinspay
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxdelay
+Q14
+Q14
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+rxmailunreq
+D
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+pdpenroll
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_enrollprog
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_medansr
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_meduse
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_summ
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_info
+R
+—–
+—–
+—–
+—–
+—–
+—–
+mtm_prog
+R
+—–
+—–
+—–
+—–
+—–
+—–
+knowcare
+R
+helpperscare
+helproutine
+lim_physcond
+cnd_heartattack
+Q15A
+Q15A
+Q15A
+Q15A
+Q15A
+Q15A
+Q15A
+Q15A
+cnd_angina
+Q15B
+Q15B
+Q15B
+Q15B
+Q15B
+Q15B
+Q15B
+Q15B
+cnd_stroke
+cnd_hbp
+Q15C
+Q15C
+Q15C
+Q15C
+Q15C
+Q15C
+Q15C
+Q15C
+cnd_cancer
+Q15D
+Q15D
+Q15D
+Q15D
+Q15D
+Q15D
+Q15D
+Q15D
+cnd_copd
+Q15E
+Q15E
+Q15E
+Q15E
+Q15E
+Q15E
+Q15E
+Q15E
+cnd_diabetes
+Q15F
+Q15F
+Q15F
+Q15F
+Q15F
+Q15F
+Q15F
+Q15F
+prob_walking
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+prob_dressing
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+Q17
+prob_errands
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+im_ﬂu1last*
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+im_ﬂu1plan
+im_pneum*
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+smokenow
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+77
+Variable
+Reverse
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+advsquit
+smokequit
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+agecat
+sex
+educ
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+Q19
+race_hisp
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+race_white
+Q21E
+Q21E
+Q21E
+Q21A
+Q21A
+Q21A
+Q21A
+Q21A
+race_black
+Q21C
+Q21C
+Q21C
+Q21B
+Q21B
+Q21B
+Q21B
+Q21B
+race_asian
+Q21B
+Q21B
+Q21B
+Q21C
+Q21C
+Q21C
+Q21C
+Q21C
+race_paciﬁc
+Q21D
+Q21D
+Q21D
+Q21D
+Q21D
+Q21D
+Q21D
+Q21D
+race_natamer
+Q21A
+Q21A
+Q21A
+Q21E
+Q21E
+Q21E
+Q21E
+Q21E
+proxy
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+Q25
+proxy_read
+Q26A
+Q26A
+Q26A
+Q26A
+Q26A
+Q26A
+Q26A
+Q26A
+proxy_writ
+Q26B
+Q26B
+Q26B
+Q26B
+Q26B
+Q26B
+Q26B
+Q26B
+proxy_answ
+Q26C
+Q26C
+Q26C
+Q26C
+Q26C
+Q26C
+Q26C
+Q26C
+proxy_tran
+Q26D
+Q26D
+Q26D
+Q26D
+Q26D
+Q26D
+Q26D
+Q26D
+proxy_othr
+Q26E
+Q26E
+Q26E
+Q26E
+Q26E
+Q26E
+Q26E
+Q26E
+proxy_othr_txt
+living_arr
+living_arr_txt
+living_alone
+living_numinhh
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+Q22
+lim_bathing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_dressing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_eating
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_chairs
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_walking
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+lim_toilet
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+web_at_home
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+recontact
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+Q24
+dayphone
+lang_speak
+Q12
+Q12
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+78
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+ma_hlthplan
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_hlthplan_txt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ins_have_oth
+—–
+—–
+—–
+—–
+—–
+D
+Q01
+Q01
+Q01
+ins_medigap
+—–
+—–
+—–
+—–
+—–
+D
+Q02A
+Q02A
+Q02A
+ins_employer
+—–
+—–
+—–
+—–
+—–
+D
+Q02B
+Q02B
+Q02B
+ins_veteran
+—–
+—–
+—–
+—–
+—–
+D
+Q02C
+Q02C
+Q02C
+ins_military
+—–
+—–
+—–
+—–
+—–
+D
+Q02D
+Q02D
+Q02D
+ins_medicaid
+—–
+—–
+—–
+—–
+—–
+D
+Q02E
+Q02E
+Q02E
+ins_ma_pdp
+—–
+—–
+—–
+—–
+—–
+D
+Q02F
+Q02F
+Q02F
+ins_other
+—–
+—–
+—–
+—–
+—–
+D
+Q02G
+Q02G
+Q02G
+ins_other_txt
+—–
+—–
+—–
+—–
+—–
+D
+Q02_O
+Q02_O
+Q02_O
+ins_medicare
+—–
+—–
+—–
+—–
+—–
+D
+Q02H
+Q02H
+Q02H
+ca_illness
+—–
+—–
+—–
+—–
+—–
+D
+Q03
+Q03
+Q03
+ca_illasaw*
+—–
+—–
+—–
+—–
+—–
+D
+Q04
+Q04
+Q04
+ca_routine
+—–
+—–
+—–
+—–
+—–
+D
+Q05
+Q05
+Q05
+ca_rtnasaw*
+—–
+—–
+—–
+—–
+—–
+D
+Q06
+Q06
+Q06
+ca_visits
+—–
+—–
+—–
+—–
+—–
+D
+Q07
+Q07
+Q07
+ca_emerquex
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_emeransr
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_emerfup
+R
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_wt15mns*
+—–
+—–
+—–
+—–
+—–
+D
+Q08
+Q08
+Q08
+rate_care*
+—–
+—–
+—–
+—–
+—–
+D
+Q09
+Q09
+Q09
+ca_equipment
+—–
+—–
+D
+Q10
+Q10
+Q10
+ca_getequip
+—–
+—–
+D
+Q11
+Q11
+Q11
+ca_therapy
+D
+Q12
+Q12
+ca_gettherapy
+D
+Q13
+Q13
+md_have
+—–
+—–
+—–
+—–
+—–
+D
+Q12
+Q14
+Q14
+md_visits
+—–
+—–
+—–
+—–
+—–
+D
+Q13
+Q15
+Q15
+md_explain*
+—–
+—–
+—–
+—–
+—–
+D
+Q14
+Q16
+Q16
+md_listen*
+—–
+—–
+—–
+—–
+—–
+D
+Q15
+Q17
+Q17
+md_respect*
+—–
+—–
+—–
+—–
+—–
+D
+Q16
+Q18
+Q18
+md_sptime*
+—–
+—–
+—–
+—–
+—–
+D
+Q17
+Q19
+Q19
+rate_md*
+—–
+—–
+—–
+—–
+—–
+D
+Q18
+Q20
+Q20
+md_medrecs*
+—–
+—–
+—–
+—–
+—–
+md_hlthcond
+—–
+—–
+—–
+md_ezinstr
+—–
+—–
+—–
+md_descinstr
+—–
+—–
+—–
+md_test
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testfup*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testasan*
+—–
+—–
+—–
+—–
+—–
+md_rxmeds
+—–
+—–
+—–
+—–
+—–
+md_talkmeds*
+—–
+—–
+—–
+—–
+—–
+md_hhdevice
+R
+—–
+—–
+—–
+md_hhdhelp
+R
+—–
+—–
+—–
+md_hhdtalk
+—–
+—–
+—–
+md_morethan1
+—–
+—–
+—–
+—–
+—–
+md_needmngca
+—–
+—–
+—–
+—–
+—–
+md_getmngca*
+R
+—–
+—–
+—–
+—–
+—–
+md_cacoord
+—–
+—–
+md_visnotes
+R
+—–
+—–
+—–
+—–
+—–
+sp_persmd
+—–
+—–
+—–
+—–
+sp_tryappt
+—–
+—–
+—–
+—–
+—–
+D
+Q19
+Q21
+Q21
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+79
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+sp_getappt*
+—–
+—–
+—–
+—–
+—–
+D
+Q20
+Q22
+Q22
+pp_specwait
+R
+—–
+—–
+sp_visits
+—–
+—–
+—–
+—–
+—–
+D
+Q21
+Q23
+Q23
+rate_spec*
+—–
+—–
+—–
+—–
+—–
+D
+Q22
+Q24
+Q24
+sp_mdinformd*
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_change
+R
+—–
+—–
+—–
+md_disagree
+R
+—–
+—–
+—–
+md_leavansr
+—–
+—–
+—–
+md_result
+—–
+—–
+—–
+sp_informed
+—–
+sp_cacoord
+—–
+pp_specvis
+—–
+—–
+—–
+—–
+—–
+pp_specntwk
+—–
+—–
+—–
+pp_specrec
+—–
+—–
+pp_specfar
+R
+—–
+—–
+pp_specfew
+R
+—–
+—–
+pp_speclist
+R
+—–
+pl_needcare
+—–
+—–
+—–
+—–
+—–
+D
+Q23
+Q25
+Q25
+pl_getcare*
+—–
+—–
+—–
+—–
+—–
+D
+Q24
+Q26
+Q26
+pl_paperwk
+—–
+—–
+—–
+—–
+—–
+D
+Q28
+Q30
+Q30
+pl_ezpaper*
+—–
+—–
+—–
+—–
+—–
+D
+Q29
+Q31
+Q31
+rate_plan*
+—–
+—–
+—–
+—–
+—–
+D
+Q30
+Q32
+Q32
+pl_remindappt
+R
+—–
+—–
+—–
+—–
+pl_remindﬂu
+R
+—–
+—–
+—–
+—–
+pl_remindtest
+R
+—–
+—–
+—–
+—–
+pl_lowercopay
+R
+pl_xtrabeneﬁts
+R
+pl_hospovn
+—–
+—–
+—–
+—–
+pl_hospfup
+R
+—–
+—–
+—–
+—–
+pl_chgnotice
+R
+—–
+pl_benedoc
+R
+—–
+pl_insagtcall
+D
+Q34
+pl_insagtvis
+D
+Q35
+pl_insagtswtch
+D
+Q36
+pp_enoughmds
+R
+—–
+—–
+—–
+—–
+—–
+pp_ﬁndmd
+—–
+—–
+—–
+—–
+—–
+pp_ﬁndmdphon
+—–
+—–
+—–
+pp_ﬁndmdcs
+—–
+—–
+—–
+pp_ﬁndmdweb
+—–
+—–
+—–
+pp_ﬁndmdemp
+—–
+—–
+pp_ﬁndmddir
+—–
+—–
+—–
+pp_ﬁndmdoth
+—–
+—–
+—–
+pp_ﬁndmdoth_txt
+—–
+—–
+—–
+pp_accinfo
+R
+—–
+—–
+—–
+—–
+—–
+pp_inaccoffc
+—–
+—–
+pp_inacccs
+—–
+—–
+pp_inaccweb
+—–
+—–
+pp_inaccemp
+—–
+—–
+pp_inaccdir
+—–
+—–
+pp_inaccoth
+—–
+—–
+pp_inaccoth_txt
+—–
+—–
+pl_value
+D
+Q33
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+80
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+ma_nocare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_reconsid
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_appeal
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_forms
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_resolve
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_listen
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_discourage
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_nothing
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ma_complaint
+—–
+—–
+—–
+—–
+—–
+D
+Q31
+ma_comphandle
+Q14
+Q14
+Q14
+Q14
+Q14
+ma_compresolv
+R
+Q15
+Q15
+Q15
+Q15
+Q15
+D
+Q32
+ma_compsat
+R
+Q16
+Q16
+Q16
+Q16
+Q16
+D
+Q33
+pd_hlthplan
+Q01
+Q01
+Q01
+Q01
+Q01
+Q01
+Q37
+Q33
+Q34
+pd_hlthplan_txt
+Q02
+Q02
+Q02
+Q02
+Q02
+Q02
+Q38
+Q34
+Q35
+pd_covrxmeds
+—–
+—–
+pd_cstryinfo
+Q03
+Q03
+Q03
+Q03
+Q03
+Q03
+Q39
+Q35
+Q36
+cs_cstryinfo
+—–
+—–
+—–
+—–
+—–
+D
+Q25
+Q27
+Q27
+pd_csgetinfo*
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q40
+Q36
+Q37
+cs_csgetinfo*
+—–
+—–
+—–
+—–
+—–
+D
+Q26
+Q28
+Q28
+pd_csrespect*
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q41
+Q37
+Q38
+cs_csrespect*
+—–
+—–
+—–
+—–
+—–
+D
+Q27
+Q29
+Q29
+pd_covinfo
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q42
+Q38
+Q39
+pd_getcovinf*
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q43
+Q39
+Q40
+pd_costinfo
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q44
+Q40
+Q41
+pd_getcostinf*
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q45
+Q41
+Q42
+pd_diffrx
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q46
+Q42
+Q43
+pd_rxnocov
+Q11
+Q11
+Q11
+Q11
+Q11
+Q11
+Q47
+Q43
+Q44
+pd_askrxcov
+Q12
+Q12
+Q12
+Q12
+Q12
+Q12
+Q48
+Q44
+Q45
+pd_appeal
+Q13A
+Q13A
+Q13A
+Q13A
+Q13A
+Q13A
+Q49A
+Q45A
+pd_forms
+Q13B
+Q13B
+Q13B
+Q13B
+Q13B
+Q13B
+Q49B
+Q45B
+pd_resolve
+Q13C
+Q13C
+Q13C
+Q13C
+Q13C
+Q13C
+Q49C
+Q45C
+pd_listen
+Q13D
+Q13D
+Q13D
+Q13D
+Q13D
+Q13D
+Q49D
+Q45D
+pd_discourage
+Q13E
+Q13E
+Q13E
+Q13E
+Q13E
+Q13E
+Q49E
+Q45E
+pd_nothing
+Q13F
+Q13F
+Q13F
+Q13F
+Q13F
+Q13F
+Q49F
+Q45F
+pd_rxcovered
+Q13G
+Q13G
+Q13G
+Q13G
+Q13G
+Q13G
+Q49G
+Q45G
+pd_ﬁllrx*
+R
+Q17A
+Q17A
+Q17A
+Q17A
+pd_takemeds*
+R
+Q17B
+Q17B
+Q17B
+Q17B
+pd_ezrxmeds*
+Q18
+Q18
+Q18
+Q18
+Q17
+Q14
+Q50
+Q46
+Q46
+pd_rxpharm
+Q19
+Q19
+Q19
+Q19
+Q18
+Q15
+Q51
+Q47
+Q47
+pd_ezrxpharm*
+Q20
+Q20
+Q20
+Q20
+Q19
+Q16
+Q52
+Q48
+Q48
+pd_rxmail
+Q21
+Q21
+Q21
+Q21
+Q20
+Q17
+Q53
+Q49
+Q49
+pd_ezrxmail*
+Q22
+Q22
+Q22
+Q22
+Q21
+Q18
+Q54
+Q50
+Q50
+pd_infocov
+R
+D
+rate_pdp*
+Q23
+Q23
+Q23
+Q23
+Q22
+Q19
+Q55
+Q51
+Q51
+pd_recommend
+R
+Q24
+Q24
+Q24
+Q24
+Q23
+Q20
+Q56
+Q52
+Q52
+pd_rxhelp
+D
+Q57
+pd_userxhelp
+D
+Q58
+pd_proofrxhelp
+D
+Q59
+pd_phnorxhelp
+D
+Q60
+ghs
+R
+Q25
+Q25
+Q25
+Q25
+Q24
+Q21
+Q61
+Q53
+Q53
+mhs
+R
+Q26
+Q26
+Q26
+Q26
+Q25
+Q22
+Q62
+Q54
+Q54
+lim_modact
+D
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+81
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+lim_climb
+D
+lim_acomls
+R
+D
+lim_regact
+R
+D
+lim_acomlsem
+R
+D
+lim_regactem
+R
+D
+lim_painint
+R
+D
+sf_calm
+R
+D
+sf_energy
+R
+D
+sf_downblue
+D
+lim_socacts
+D
+ds_nointerest
+R
+D
+Q63
+—–
+ds_depressed
+R
+D
+Q64
+—–
+cnd_seemd2
+Q27
+Q27
+Q27
+Q27
+Q26
+Q23
+Q65
+Q55
+Q55
+cnd_last3mo
+Q28
+Q28
+Q28
+Q28
+Q27
+Q24
+Q66
+Q56
+Q56
+cnd_rxmeds
+Q29
+Q29
+Q29
+Q29
+Q28
+Q25
+Q67
+Q57
+Q57
+cnd_meds3mo
+Q30
+Q30
+Q30
+Q30
+Q29
+Q26
+Q68
+Q58
+Q58
+rxmedslist
+D
+Q59
+Q59
+rxezmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxinspay
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+rxdelay
+Q31
+Q31
+Q31
+Q31
+Q30
+Q27
+Q69
+Q60
+Q60
+rxmailunreq
+Q32
+Q32
+Q32
+pdpenroll
+R
+—–
+—–
+—–
+mtm_enrollprog
+—–
+—–
+—–
+mtm_medansr
+R
+—–
+—–
+—–
+mtm_meduse
+R
+—–
+—–
+—–
+mtm_summ
+R
+—–
+—–
+—–
+mtm_info
+R
+—–
+—–
+—–
+mtm_prog
+R
+—–
+—–
+—–
+knowcare
+R
+D
+Q70
+Q61
+Q61
+helpperscare
+D
+Q71
+Q62
+Q62
+helproutine
+D
+Q72
+Q63
+Q63
+lim_physcond
+D
+Q73
+Q64
+Q64
+cnd_heartattack
+Q33A
+Q33A
+Q33A
+Q32A
+Q31A
+Q28A
+Q74A
+Q65A
+Q65A
+cnd_angina
+Q33B
+Q33B
+Q33B
+Q32B
+Q31B
+Q28B
+Q74B
+Q65B
+Q65B
+cnd_stroke
+D
+Q32C
+Q31C
+Q28C
+Q74C
+Q65C
+Q65C
+cnd_hbp
+Q33C
+Q33C
+Q33C
+cnd_cancer
+Q33D
+Q33D
+Q33D
+Q32D
+Q31D
+Q28D
+Q74D
+Q65D
+Q65D
+cnd_copd
+Q33E
+Q33E
+Q33E
+Q32E
+Q31E
+Q28E
+Q74E
+Q65E
+Q65E
+cnd_diabetes
+Q33F
+Q33F
+Q33F
+Q32F
+Q31F
+Q28F
+Q74F
+Q65F
+Q65F
+prob_walking
+prob_dressing
+prob_errands
+im_ﬂu1last*
+R
+D
+Q34
+Q34
+Q33
+Q32
+Q29
+Q75
+Q66
+Q66
+im_ﬂu1plan
+—–
+—–
+im_pneum*
+R
+D
+Q35
+Q35
+Q34
+Q33
+Q30
+Q76
+Q67
+Q67
+smokenow
+D
+Q36
+Q36
+Q35
+Q34
+Q31
+Q77
+Q68
+Q68
+advsquit
+D
+Q69
+Q69
+smokequit
+D
+Q37
+Q37
+Q36
+Q35
+Q32
+Q78
+agecat
+D
+Q37
+Q36
+Q33
+Q79
+Q70
+Q70
+sex
+D
+Q38
+Q37
+Q34
+Q80
+Q71
+Q71
+educ
+Q34
+Q38
+Q38
+Q39
+Q38
+Q35
+Q81
+Q72
+Q72
+race_hisp
+Q35
+Q39
+Q39
+Q40
+Q39
+Q36
+Q82
+Q73
+Q73
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+82
+Variable
+Reverse
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+race_white
+Q36A
+Q40A
+Q40A
+Q41A
+Q40A
+Q37A
+Q83A
+Q74A
+Q74A
+race_black
+Q36B
+Q40B
+Q40B
+Q41B
+Q40B
+Q37B
+Q83B
+Q74B
+Q74B
+race_asian
+Q36C
+Q40C
+Q40C
+Q41C
+Q40C
+Q37C
+Q83C
+Q74C
+Q74C
+race_paciﬁc
+Q36D
+Q40D
+Q40D
+Q41D
+Q40D
+Q37D
+Q83D
+Q74D
+Q74D
+race_natamer
+Q36E
+Q40E
+Q40E
+Q41E
+Q40E
+Q37E
+Q83E
+Q74E
+Q74E
+proxy
+Q39
+Q43
+Q43
+Q42
+Q41
+Q38
+Q84
+Q75
+Q75
+proxy_read
+Q40A
+Q44A
+Q44A
+Q43A
+Q42A
+Q39A
+Q85A
+Q76A
+Q76A
+proxy_writ
+Q40B
+Q44B
+Q44B
+Q43B
+Q42B
+Q39B
+Q85B
+Q76B
+Q76B
+proxy_answ
+Q40C
+Q44C
+Q44C
+Q43C
+Q42C
+Q39C
+Q85C
+Q76C
+Q76C
+proxy_tran
+Q40D
+Q44D
+Q44D
+Q43D
+Q42D
+Q39D
+Q85D
+Q76D
+Q76D
+proxy_othr
+Q40E
+Q44E
+Q44E
+Q43E
+Q42E
+Q39E
+Q85E
+Q76E
+Q76E
+proxy_othr_txt
+D
+Q85_O
+Q76_O
+Q76_O
+living_arr
+D
+Q77
+living_arr_txt
+D
+Q77_O
+living_alone
+D
+Q43
+Q40
+Q86
+Q77
+living_numinhh
+Q37
+Q41
+Q41
+Q44
+lim_bathing
+—–
+—–
+—–
+—–
+—–
+D
+Q87A
+Q78A
+Q78A
+lim_dressing
+—–
+—–
+—–
+—–
+—–
+D
+Q87B
+Q78B
+Q78B
+lim_eating
+—–
+—–
+—–
+—–
+—–
+D
+Q87C
+Q78C
+Q78C
+lim_chairs
+—–
+—–
+—–
+—–
+—–
+D
+Q87D
+Q78D
+Q78D
+lim_walking
+—–
+—–
+—–
+—–
+—–
+D
+Q87E
+Q78E
+Q78E
+lim_toilet
+—–
+—–
+—–
+—–
+—–
+D
+Q87F
+Q78F
+Q78F
+web_at_home
+recontact
+Q38
+Q42
+Q42
+Q45
+Q44
+Q41
+Q88
+Q79
+Q79
+dayphone
+D
+Q80
+Q80
+lang_speak
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+83
+Variable
+Reverse
+2007
+Year 1
+ma_hlthplan
+—–
+ma_hlthplan_txt
+—–
+ins_have_oth
+Q01
+ins_medigap
+Q02A
+ins_employer
+Q02B
+ins_veteran
+Q02C
+ins_military
+Q02D
+ins_medicaid
+Q02E
+ins_ma_pdp
+Q02F
+ins_other
+Q02G
+ins_other_txt
+Q02_O
+ins_medicare
+Q02H
+ca_illness
+Q03
+ca_illasaw*
+Q04
+ca_routine
+Q05
+ca_rtnasaw*
+Q06
+ca_visits
+Q07
+ca_emerquex
+ca_emeransr
+ca_emerfup
+R
+ca_wt15mns*
+rate_care*
+Q08
+ca_equipment
+ca_getequip
+ca_therapy
+ca_gettherapy
+md_have
+Q09
+md_visits
+Q10
+md_explain*
+Q11
+md_listen*
+Q12
+md_respect*
+Q13
+md_sptime*
+Q14
+rate_md*
+Q15
+md_medrecs*
+md_hlthcond
+md_ezinstr
+md_descinstr
+md_test
+md_testfup*
+md_testasan*
+md_rxmeds
+md_talkmeds*
+md_hhdevice
+R
+md_hhdhelp
+R
+md_hhdtalk
+md_morethan1
+md_needmngca
+md_getmngca*
+R
+md_cacoord
+md_visnotes
+R
+sp_persmd
+sp_tryappt
+Q16
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+84
+Variable
+Reverse
+2007
+Year 1
+sp_getappt*
+Q17
+pp_specwait
+R
+sp_visits
+Q18
+rate_spec*
+Q19
+sp_mdinformd*
+md_change
+R
+md_disagree
+R
+md_leavansr
+md_result
+sp_informed
+sp_cacoord
+pp_specvis
+pp_specntwk
+pp_specrec
+pp_specfar
+R
+pp_specfew
+R
+pp_speclist
+R
+pl_needcare
+Q20
+pl_getcare*
+Q21
+pl_paperwk
+Q22
+pl_ezpaper*
+Q23
+rate_plan*
+Q24
+pl_remindappt
+R
+pl_remindﬂu
+R
+pl_remindtest
+R
+pl_lowercopay
+R
+pl_xtrabeneﬁts
+R
+pl_hospovn
+pl_hospfup
+R
+pl_chgnotice
+R
+pl_benedoc
+R
+pl_insagtcall
+pl_insagtvis
+pl_insagtswtch
+pp_enoughmds
+R
+pp_ﬁndmd
+pp_ﬁndmdphon
+pp_ﬁndmdcs
+pp_ﬁndmdweb
+pp_ﬁndmdemp
+pp_ﬁndmddir
+pp_ﬁndmdoth
+pp_ﬁndmdoth_txt
+pp_accinfo
+R
+pp_inaccoffc
+pp_inacccs
+pp_inaccweb
+pp_inaccemp
+pp_inaccdir
+pp_inaccoth
+pp_inaccoth_txt
+pl_value
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+85
+Variable
+Reverse
+2007
+Year 1
+ma_nocare
+—–
+ma_reconsid
+—–
+ma_appeal
+—–
+ma_forms
+—–
+ma_resolve
+—–
+ma_listen
+—–
+ma_discourage
+—–
+ma_nothing
+—–
+ma_complaint
+ma_comphandle
+ma_compresolv
+R
+ma_compsat
+R
+pd_hlthplan
+pd_hlthplan_txt
+pd_covrxmeds
+pd_cstryinfo
+Q25
+cs_cstryinfo
+—–
+pd_csgetinfo*
+Q26
+cs_csgetinfo*
+—–
+pd_csrespect*
+Q27
+cs_csrespect*
+—–
+pd_covinfo
+Q28
+pd_getcovinf*
+Q29
+pd_costinfo
+Q30
+pd_getcostinf*
+Q31
+pd_diffrx
+Q32
+pd_rxnocov
+Q33
+pd_askrxcov
+Q34
+pd_appeal
+pd_forms
+pd_resolve
+pd_listen
+pd_discourage
+pd_nothing
+pd_rxcovered
+pd_ﬁllrx*
+R
+pd_takemeds*
+R
+pd_ezrxmeds*
+Q35
+pd_rxpharm
+Q36
+pd_ezrxpharm*
+Q37
+pd_rxmail
+Q38
+pd_ezrxmail*
+Q39
+pd_infocov
+R
+Q40
+rate_pdp*
+Q41
+pd_recommend
+R
+Q42
+pd_rxhelp
+pd_userxhelp
+pd_proofrxhelp
+pd_phnorxhelp
+ghs
+R
+Q43
+mhs
+R
+Q44
+lim_modact
+Q45
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+86
+Variable
+Reverse
+2007
+Year 1
+lim_climb
+Q46
+lim_acomls
+R
+Q47
+lim_regact
+R
+Q48
+lim_acomlsem
+R
+Q49
+lim_regactem
+R
+Q50
+lim_painint
+R
+Q51
+sf_calm
+R
+Q52
+sf_energy
+R
+Q53
+sf_downblue
+Q54
+lim_socacts
+Q55
+ds_nointerest
+R
+ds_depressed
+R
+cnd_seemd2
+Q56
+cnd_last3mo
+Q57
+cnd_rxmeds
+Q58
+cnd_meds3mo
+Q59
+rxmedslist
+Q60
+rxezmeds
+rxinspay
+rxdelay
+Q61
+rxmailunreq
+pdpenroll
+R
+mtm_enrollprog
+mtm_medansr
+R
+mtm_meduse
+R
+mtm_summ
+R
+mtm_info
+R
+mtm_prog
+R
+knowcare
+R
+Q62
+helpperscare
+Q63
+helproutine
+Q64
+lim_physcond
+Q65
+cnd_heartattack
+cnd_angina
+cnd_stroke
+cnd_hbp
+cnd_cancer
+cnd_copd
+cnd_diabetes
+prob_walking
+prob_dressing
+prob_errands
+im_ﬂu1last*
+R
+Q66
+im_ﬂu1plan
+—–
+im_pneum*
+R
+Q67
+smokenow
+Q68
+advsquit
+Q69
+smokequit
+agecat
+Q70
+sex
+Q71
+educ
+Q72
+race_hisp
+Q73
+
+
+C. Crosswalk: 2007 to 2025 - PDP Survey
+87
+Variable
+Reverse
+2007
+Year 1
+race_white
+Q74A
+race_black
+Q74B
+race_asian
+Q74C
+race_paciﬁc
+Q74D
+race_natamer
+Q74E
+proxy
+Q75
+proxy_read
+Q76A
+proxy_writ
+Q76B
+proxy_answ
+Q76C
+proxy_tran
+Q76D
+proxy_othr
+Q76E
+proxy_othr_txt
+Q76_O
+living_arr
+Q77
+living_arr_txt
+Q77_O
+living_alone
+living_numinhh
+lim_bathing
+Q78A
+lim_dressing
+Q78B
+lim_eating
+Q78C
+lim_chairs
+Q78D
+lim_walking
+Q78E
+lim_toilet
+Q78F
+web_at_home
+recontact
+Q79
+dayphone
+Q80
+lang_speak
+
+
+V. Composites: 2007 to 2025
+88
+V. Composites: 2007 to 2025
+
+
+V. Composites: 2007 to 2025
+89
+The following tables contain composite crosswalk information for 2007 to 2025. The tables include composite names, items
+that contribute to the composite, and question numbers across all years and survey types. The following key describes these
+indicators.
+D: DROPPED
+—–: QUESTION NOT ASKED ON THIS SURVEY TYPE
+X: ITEM NOT PART OF COMPOSITE
+C: COMBINED ITEMS VARIABLE
+ˆ: COMBINED ITEMS
+
+
+A. Composites: 2007 to 2025 - MA-PD Survey
+90
+A. MA-PD Survey
+The following table shows composite crosswalk information for the MA-PD survey.
+Composite
+Item
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pdp_getinfo
+pd_getcovinf
+D
+pd_getcostinf
+D
+pd_infocov
+pd_csgetinfo
+D
+pd_csrespect
+D
+pdp_getdrug
+pd_ezrxmeds
+Q41
+Q42
+Q42
+Q42
+Q42
+Q42
+Q42
+Q42
+pd_ezrxpharmˆ
+Q43
+Q44
+Q44
+Q44
+Q44
+Q44
+Q44
+Q44
+pd_ezrxmailˆ
+Q45
+Q46
+Q46
+Q46
+Q46
+Q46
+Q46
+Q46
+pd_mailpharm
+C
+C
+C
+C
+C
+C
+C
+pd_cust_svc
+pd_csgetinfo
+pd_csrespect
+dr_comm
+md_explain
+Q12
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+md_listen
+Q13
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+md_respect
+Q14
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+md_sptime
+Q15
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+care_need
+sp_getappt
+Q28
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+pl_getcare
+Q09
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+care_quik
+ca_illasaw
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_rtnasaw
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_wt15mns
+D
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+cust_svc
+cs_csgetinfo
+Q33
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+cs_csrespect
+Q34
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+pl_ezpaper
+Q36
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+care_coord
+md_medrecs
+Q17
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+md_testfupˆ
+Q19
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+md_testasanˆ
+Q20
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+md_testcomb
+C
+C
+C
+C
+C
+C
+C
+md_talkmeds
+Q22
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+r_md_getmngca
+Q25
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+sp_mdinformd
+Q31
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+
+
+A. Composites: 2007 to 2025 - MA-PD Survey
+91
+Composite
+Item
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+pdp_getinfo
+pd_getcovinf
+Q61
+Q61
+Q61
+Q60
+Q57
+Q48
+Q54
+Q40
+Q41
+pd_getcostinf
+Q63
+Q63
+Q63
+Q62
+Q59
+Q50
+Q56
+Q42
+Q43
+pd_infocov
+D
+pd_csgetinfo
+Q58
+Q58
+Q58
+Q57
+Q54
+Q45
+Q51
+Q37
+Q38
+pd_csrespect
+Q59
+Q59
+Q59
+Q58
+Q55
+Q46
+Q52
+Q38
+Q39
+pdp_getdrug
+pd_ezrxmeds
+Q69
+Q69
+Q69
+Q68
+Q64
+Q55
+Q61
+Q47
+Q47
+pd_ezrxpharmˆ
+Q71
+Q71
+Q71
+Q71
+Q66
+Q57
+Q63
+Q49
+Q49
+pd_ezrxmailˆ
+Q73
+Q73
+Q73
+Q73
+Q68
+Q59
+Q65
+Q51
+Q51
+pd_mailpharm
+C
+C
+C
+C
+C
+C
+C
+C
+C
+pd_cust_svc
+pd_csgetinfo
+D
+pd_csrespect
+D
+dr_comm
+md_explain
+Q15
+Q15
+Q15
+Q17
+Q17
+Q17
+Q17
+Q16
+Q16
+md_listen
+Q16
+Q16
+Q16
+Q18
+Q18
+Q18
+Q18
+Q17
+Q17
+md_respect
+Q17
+Q17
+Q17
+Q19
+Q19
+Q19
+Q19
+Q18
+Q18
+md_sptime
+Q18
+Q18
+Q18
+Q20
+Q20
+Q20
+Q20
+Q19
+Q19
+care_need
+sp_getappt
+Q35
+Q35
+Q35
+Q34
+Q34
+Q26
+Q25
+Q22
+Q22
+pl_getcare
+Q40
+Q40
+Q40
+Q39
+Q39
+Q31
+Q32
+Q26
+Q26
+care_quik
+ca_illasaw
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_rtnasaw
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_wt15mns
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q11
+Q08
+Q08
+cust_svc
+cs_csgetinfo
+Q42
+Q42
+Q42
+Q41
+Q41
+Q33
+Q34
+Q28
+Q28
+cs_csrespect
+Q43
+Q43
+Q43
+Q42
+Q42
+Q34
+Q35
+Q29
+Q29
+pl_ezpaper
+Q45
+Q45
+Q45
+Q44
+Q44
+Q36
+Q37
+Q31
+Q31
+care_coord
+md_medrecs
+Q20
+Q20
+Q20
+Q22
+Q22
+md_testfupˆ
+Q22
+Q22
+Q22
+Q24
+Q24
+X
+X
+md_testasanˆ
+Q23
+Q23
+Q23
+Q25
+Q25
+md_testcomb
+C
+C
+C
+C
+C
+md_talkmeds
+Q25
+Q25
+Q25
+Q27
+Q27
+r_md_getmngca
+Q31
+Q31
+Q31
+Q30
+Q30
+sp_mdinformd
+Q38
+Q38
+Q38
+Q37
+Q37
+X
+X
+
+
+A. Composites: 2007 to 2025 - MA-PD Survey
+92
+Composite
+Item
+2007
+Year 1
+pdp_getinfo
+pd_getcovinf
+Q32
+pd_getcostinf
+Q34
+pd_infocov
+Q43
+pd_csgetinfo
+Q29
+pd_csrespect
+X
+pdp_getdrug
+pd_ezrxmeds
+Q38
+pd_ezrxpharmˆ
+Q40
+pd_ezrxmailˆ
+Q42
+pd_mailpharm
+X
+pd_cust_svc
+pd_csgetinfo
+Q29
+pd_csrespect
+Q30
+dr_comm
+md_explain
+Q11
+md_listen
+Q12
+md_respect
+Q13
+md_sptime
+Q14
+care_need
+sp_getappt
+Q17
+pl_getcare
+Q21
+care_quik
+ca_illasaw
+Q04
+ca_rtnasaw
+Q06
+ca_wt15mns
+cust_svc
+cs_csgetinfo
+—–
+cs_csrespect
+—–
+pl_ezpaper
+Q23
+care_coord
+md_medrecs
+md_testfupˆ
+md_testasanˆ
+md_testcomb
+md_talkmeds
+r_md_getmngca
+sp_mdinformd
+
+
+B. Composites: 2007 to 2025 - MA-Only Survey
+93
+B. MA-Only Survey
+The following table shows composite crosswalk information for the MA-Only survey.
+Composite
+Item
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pdp_getinfo
+pd_getcovinf
+pd_getcostinf
+pd_infocov
+pd_csgetinfo
+pd_csrespect
+pdp_getdrug
+pd_ezrxmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxpharmˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxmailˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_mailpharm
+pd_cust_svc
+pd_csgetinfo
+pd_csrespect
+dr_comm
+md_explain
+Q12
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+Q13
+md_listen
+Q13
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+Q14
+md_respect
+Q14
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+Q15
+md_sptime
+Q15
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+Q16
+care_need
+sp_getappt
+Q28
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+Q29
+pl_getcare
+Q09
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+Q10
+care_quik
+ca_illasaw
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_rtnasaw
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_wt15mns
+D
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+cust_svc
+cs_csgetinfo
+Q33
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+Q34
+cs_csrespect
+Q34
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+Q35
+pl_ezpaper
+Q36
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+Q37
+care_coord
+md_medrecs
+Q17
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+Q18
+md_testfupˆ
+Q19
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+Q20
+md_testasanˆ
+Q20
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+Q21
+md_testcomb
+C
+C
+C
+C
+C
+C
+C
+md_talkmeds
+Q22
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+Q23
+r_md_getmngca
+Q25
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+Q26
+sp_mdinformd
+Q31
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+Q32
+
+
+B. Composites: 2007 to 2025 - MA-Only Survey
+94
+Composite
+Item
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+pdp_getinfo
+pd_getcovinf
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_getcostinf
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_infocov
+pd_csgetinfo
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_csrespect
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pdp_getdrug
+pd_ezrxmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxpharmˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_ezrxmailˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pd_mailpharm
+pd_cust_svc
+pd_csgetinfo
+—–
+pd_csrespect
+—–
+dr_comm
+md_explain
+Q15
+Q15
+Q15
+Q17
+Q17
+Q17
+Q17
+Q16
+Q16
+md_listen
+Q16
+Q16
+Q16
+Q18
+Q18
+Q18
+Q18
+Q17
+Q17
+md_respect
+Q17
+Q17
+Q17
+Q19
+Q19
+Q19
+Q19
+Q18
+Q18
+md_sptime
+Q18
+Q18
+Q18
+Q20
+Q20
+Q20
+Q20
+Q19
+Q19
+care_need
+sp_getappt
+Q35
+Q35
+Q35
+Q34
+Q34
+Q26
+Q25
+Q22
+Q22
+pl_getcare
+Q40
+Q40
+Q40
+Q39
+Q39
+Q31
+Q32
+Q26
+Q26
+care_quik
+ca_illasaw
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+ca_rtnasaw
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+ca_wt15mns
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q11
+Q08
+Q08
+cust_svc
+cs_csgetinfo
+Q42
+Q42
+Q42
+Q41
+Q41
+Q33
+Q34
+Q28
+Q28
+cs_csrespect
+Q43
+Q43
+Q43
+Q42
+Q42
+Q34
+Q35
+Q29
+Q29
+pl_ezpaper
+Q45
+Q45
+Q45
+Q44
+Q44
+Q36
+Q37
+Q31
+Q31
+care_coord
+md_medrecs
+Q20
+Q20
+Q20
+Q22
+Q22
+md_testfupˆ
+Q22
+Q22
+Q22
+Q24
+Q24
+X
+X
+md_testasanˆ
+Q23
+Q23
+Q23
+Q25
+Q25
+md_testcomb
+C
+C
+C
+C
+C
+md_talkmeds
+Q25
+Q25
+Q25
+Q27
+Q27
+r_md_getmngca
+Q31
+Q31
+Q31
+Q30
+Q30
+sp_mdinformd
+Q38
+Q38
+Q38
+Q37
+Q37
+X
+X
+
+
+B. Composites: 2007 to 2025 - MA-Only Survey
+95
+Composite
+Item
+2007
+Year 1
+pdp_getinfo
+pd_getcovinf
+—–
+pd_getcostinf
+—–
+pd_infocov
+—–
+pd_csgetinfo
+—–
+pd_csrespect
+—–
+pdp_getdrug
+pd_ezrxmeds
+—–
+pd_ezrxpharmˆ
+—–
+pd_ezrxmailˆ
+—–
+pd_mailpharm
+pd_cust_svc
+pd_csgetinfo
+—–
+pd_csrespect
+—–
+dr_comm
+md_explain
+Q11
+md_listen
+Q12
+md_respect
+Q13
+md_sptime
+Q14
+care_need
+sp_getappt
+Q17
+pl_getcare
+Q21
+care_quik
+ca_illasaw
+Q04
+ca_rtnasaw
+Q06
+ca_wt15mns
+cust_svc
+cs_csgetinfo
+Q23
+cs_csrespect
+Q24
+pl_ezpaper
+Q26
+care_coord
+md_medrecs
+md_testfupˆ
+md_testasanˆ
+md_testcomb
+md_talkmeds
+r_md_getmngca
+sp_mdinformd
+
+
+C. Composites: 2007 to 2025 - PDP Survey
+96
+C. PDP Survey
+The following table shows composite crosswalk information for the PDP survey. 2
+Composite
+Item
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Year 19
+Year 18
+Year 17
+Year 16
+Year 15
+Year 14
+Year 13
+Year 12
+Year 11
+pdp_getinfo
+pd_getcovinf
+D
+pd_getcostinf
+D
+pd_infocov
+pd_csgetinfo
+D
+pd_csrespect
+D
+pdp_getdrug
+pd_ezrxmeds
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+pd_ezrxpharmˆ
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+Q06
+pd_ezrxmailˆ
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+Q08
+pd_mailpharm
+C
+C
+C
+C
+C
+C
+C
+pd_cust_svc
+pd_csgetinfo
+pd_csrespect
+dr_comm
+md_explain
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_listen
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_respect
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_sptime
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+care_need
+sp_getappt
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_getcare
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+care_quik
+ca_illasaw
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_rtnasaw
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+ca_wt15mns
+—–
+—–
+—–
+—–
+—–
+—–
+cust_svc
+cs_csgetinfo
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+cs_csrespect
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+pl_ezpaper
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+care_coord
+md_medrecs
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testfupˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testasanˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testcomb
+md_talkmeds
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+r_md_getmngca
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+sp_mdinformd
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+2Note that in 2007-2010, the Prescription Drug Plan Survey was called the FFS Stand-Alone Prescription Drug Plan Survey.
+
+
+C. Composites: 2007 to 2025 - PDP Survey
+97
+Composite
+Item
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+Year 10
+Year 9
+Year 8
+Year 7
+Year 6
+Year 5
+Year 4
+Year 3
+Year 2
+pdp_getinfo
+pd_getcovinf
+Q07
+Q07
+Q07
+Q07
+Q07
+Q07
+Q43
+Q39
+Q40
+pd_getcostinf
+Q09
+Q09
+Q09
+Q09
+Q09
+Q09
+Q45
+Q41
+Q42
+pd_infocov
+D
+pd_csgetinfo
+Q04
+Q04
+Q04
+Q04
+Q04
+Q04
+Q40
+Q36
+Q37
+pd_csrespect
+Q05
+Q05
+Q05
+Q05
+Q05
+Q05
+Q41
+Q37
+Q38
+pdp_getdrug
+pd_ezrxmeds
+Q18
+Q18
+Q18
+Q18
+Q17
+Q14
+Q50
+Q46
+Q46
+pd_ezrxpharmˆ
+Q20
+Q20
+Q20
+Q20
+Q19
+Q16
+Q52
+Q48
+Q48
+pd_ezrxmailˆ
+Q22
+Q22
+Q22
+Q22
+Q21
+Q18
+Q54
+Q50
+Q50
+pd_mailpharm
+C
+C
+C
+C
+C
+C
+C
+C
+C
+pd_cust_svc
+pd_csgetinfo
+D
+pd_csrespect
+D
+dr_comm
+md_explain
+—–
+—–
+—–
+—–
+—–
+—–
+Q14
+Q16
+Q16
+md_listen
+—–
+—–
+—–
+—–
+—–
+—–
+Q15
+Q17
+Q17
+md_respect
+—–
+—–
+—–
+—–
+—–
+—–
+Q16
+Q18
+Q18
+md_sptime
+—–
+—–
+—–
+—–
+—–
+—–
+Q17
+Q19
+Q19
+care_need
+sp_getappt
+—–
+—–
+—–
+—–
+—–
+—–
+Q20
+Q22
+Q22
+pl_getcare
+—–
+—–
+—–
+—–
+—–
+—–
+Q24
+Q26
+Q26
+care_quik
+ca_illasaw
+—–
+—–
+—–
+—–
+—–
+—–
+Q04
+Q04
+Q04
+ca_rtnasaw
+—–
+—–
+—–
+—–
+—–
+—–
+Q06
+Q06
+Q06
+ca_wt15mns
+—–
+—–
+—–
+—–
+—–
+—–
+Q08
+Q08
+Q08
+cust_svc
+cs_csgetinfo
+—–
+—–
+—–
+—–
+—–
+—–
+Q26
+Q28
+Q28
+cs_csrespect
+—–
+—–
+—–
+—–
+—–
+—–
+Q27
+Q29
+Q29
+pl_ezpaper
+—–
+—–
+—–
+—–
+—–
+—–
+Q29
+Q31
+Q31
+care_coord
+md_medrecs
+—–
+—–
+—–
+—–
+—–
+md_testfupˆ
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+md_testasanˆ
+—–
+—–
+—–
+—–
+—–
+md_testcomb
+md_talkmeds
+—–
+—–
+—–
+—–
+—–
+r_md_getmngca
+—–
+—–
+—–
+—–
+—–
+sp_mdinformd
+—–
+—–
+—–
+—–
+—–
+—–
+—–
+
+
+C. Composites: 2007 to 2025 - PDP Survey
+98
+Composite
+Item
+2007
+Year 1
+pdp_getinfo
+pd_getcovinf
+Q29
+pd_getcostinf
+Q31
+pd_infocov
+Q40
+pd_csgetinfo
+Q26
+pd_csrespect
+X
+pdp_getdrug
+pd_ezrxmeds
+Q35
+pd_ezrxpharmˆ
+Q37
+pd_ezrxmailˆ
+Q39
+pd_mailpharm
+X
+pd_cust_svc
+pd_csgetinfo
+Q26
+pd_csrespect
+Q27
+dr_comm
+md_explain
+Q11
+md_listen
+Q12
+md_respect
+Q13
+md_sptime
+Q14
+care_need
+sp_getappt
+Q17
+pl_getcare
+Q21
+care_quik
+ca_illasaw
+Q04
+ca_rtnasaw
+Q06
+ca_wt15mns
+cust_svc
+cs_csgetinfo
+—–
+cs_csrespect
+—–
+pl_ezpaper
+Q23
+care_coord
+md_medrecs
+md_testfupˆ
+md_testasanˆ
+md_testcomb
+md_talkmeds
+r_md_getmngca
+sp_mdinformd

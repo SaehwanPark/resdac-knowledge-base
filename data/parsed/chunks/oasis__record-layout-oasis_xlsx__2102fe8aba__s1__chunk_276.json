@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_276",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Fully granulating\n02 = Early/partial granulation\n03 = Not healing\nNA = No observable pressure ulcer CHAR 2 x x x x x x\nM1322_NBR_PRU_STG1 M1322 (M0450) Current Number of Stage I Pressure Ulcers This field indicates the current number of stage I pressure ulcers. 00 = Zero\n01 = One\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x x x x x x\nM1324_STG_PRBL_PRU M1324 (M0460) Stage of Most Problematic Pressure Ulcer This field indicates the stage of the most problematic unhealed (observable) pressure",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

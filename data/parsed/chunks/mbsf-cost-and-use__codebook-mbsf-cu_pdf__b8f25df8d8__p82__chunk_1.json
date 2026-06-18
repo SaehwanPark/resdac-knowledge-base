@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p82__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 82,
+  "text": "on the source claims. This \nalgorithm counts covered days where the CLM_PMT_AMT ≥ $0. \nSHORT NAME: — \nLONG NAME: SNF_COV_DAYS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nWe consider fully covered days, days where the beneficiary was liable for coinsurance, and lifetime \nreserve days to all be Medicare-covered days. Non-covered days, leave of absence days, and the day of \ndischarge or death are not included. \nMedicare payments are described in",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p193__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 193,
+  "text": "of inpatient \nadmission. CMS will not pay the CC/MCC DRG for those selected HACs that are coded as 'U' for the POA \nIndicator. \nW = Clinically undetermined. Provider is unable to clinically determine whether condition was present at \nthe time of inpatient admission. CMS will pay the CC/MCC DRG for those selected HACs that are coded \nas 'W' for the POA Indicator. \nZ = Denotes the end of the POA indicators (terminated 1/2011). \nX = Denotes the end of the POA indicators in special data processing",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p43__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 43,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n35 \nMC_PLAN_OPRTG_AUTHRTY_CD \nLABEL: \nManaged Care Plan Operating Authority Code \nDESCRIPTION: The type of operating authority(ies) through which the managed care entity receives its contract \nauthority. \nSHORT NAME: MC_PLAN_OPRTG_AUTHRTY_CD \nLONG NAME: MC_PLAN_OPRTG_AUTHRTY_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAPL Operating Authority \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES:",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

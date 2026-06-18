@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_47",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Claim Bundled Adjustment Payment Amount NUM 12 220\nCLM_VBP_ADJSTMT_PMT_AMT CLM_VBP_ADJSTMT_PMT_AMT Claim Value Based Purchasing Adjustment Payment Amount NUM 12 221\nCLM_HRR_ADJSTMT_PMT_AMT CLM_HRR_ADJSTMT_PMT_AMT Claim Hospital Readmission Reduction (HRR) Adjustment Payment Amount NUM 12 222\nEHR_PYMT_ADJSTMT_AMT EHR_PYMT_ADJSTMT_AMT Claim Electronic Health Record (EHR) Payment Adjustment Amount NUM 12 223\nPPS_STD_VAL_PYMT_AMT PPS_STD_VAL_PYMT_AMT Standard Payment Amount NUM 12 224\nFINL_STD_AMT",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

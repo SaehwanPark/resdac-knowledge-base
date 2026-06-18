@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p213__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 213,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n197 \nRC_NDC_1_CD \nRC_NDC_2_CD \nRC_NDC_3_CD \nRC_NDC_4_CD \nRC_NDC_5_CD \nRC_NDC_6_CD \nRC_NDC_7_CD \nRC_NDC_8_CD \nRC_NDC_9_CD \nRC_NDC_10_CD \nLABEL: \nRevenue Center National Drug Code (NDC) 1–10 \nDESCRIPTION: NDC numbers that are present in the revenue center trailers present on the claims that make up the \nstay. \nSHORT NAME: \nRC_NDC_1_CD \nRC_NDC_2_CD \nRC_NDC_3_CD \nRC_NDC_4_CD \nRC_NDC_5_CD \nRC_NDC_6_CD",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

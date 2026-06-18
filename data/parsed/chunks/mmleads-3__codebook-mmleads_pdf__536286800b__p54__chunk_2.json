@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p54__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 54,
+  "text": "(Medicaid or expansion claim) 'B' (S-CHIP claim) or 'V' (Other Services \nclaim). These capitated payment claims are not included in this variable; they are captured in \nMMLEADS in the MDCD_OT_MC_CAPTD_SPEND variable. \nCCW calculates this variable as the sum of all MDCD_PD_AMT from the non-capitated payment Other \nServices (header) claims. The Center for Medicaid and CHIP Services (CMCS) at CMS has required \nredaction of this payment field for managed care claims due to the proprietary and",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

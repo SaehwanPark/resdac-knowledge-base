@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p197__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 197,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n181 \nPPS_STD_VAL_PYMT_AMT \nLABEL: \nStandard Payment Amount \nDESCRIPTION: This amount identifies the standardized Medicare payment amount. \nSHORT NAME: PPS_STD_VAL_PYMT_AMT \nLONG NAME: PPS_STD_VAL_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis is the standardized amount as determined by PRICER software output. \nThis amount is never used for payments. It is used for",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

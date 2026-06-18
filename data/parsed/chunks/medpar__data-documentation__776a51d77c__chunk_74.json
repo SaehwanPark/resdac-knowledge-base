@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_74",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Medical/Surgical General Amount ($) | \n\n | 402 | MDCL_SRGCL_NSTRL_AMT | Medical/Surgical Non-Sterile Supplies Amount ($) | \n\n | 403 | MDCL_SRGCL_STRL_AMT | Medical/Surgical Sterile Supplies Amount ($) | \n\n | 404 | TAKE_HOME_AMT | Medical/Surgical Supplies Take Home Amount ($) | \n\n | 405 | PRSTHTC_ORTHTC_AMT | Medical/Surgical Supplies Prosthetic Orthotic Amount ($) | \n\n | 406 | MDCL_SRGCL_PCMKR_AMT | Medical/Surgical Pacemaker Amount ($) | \n\n | 407 | INTRAOCULAR_LENS_AMT | Medical/Surgical",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p44__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 44,
+  "text": "alpha/numeric value. First digit is one of the following: \nH = Managed Care Organizations other than Regional PPO \nR = Regional preferred provider organization (PPO) \nS = Stand-alone prescription drug plan (PDP) \nE = Employer direct plan (starting January 2007) \nX = Limited Income Newly Eligible Transition plan (LI NET, starting July 2009) \nCOMMENT: \nFor 2006–2012, this variable was always encrypted to comply with CMS privacy rules. \nYou need to know both the Part D contract number and plan",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

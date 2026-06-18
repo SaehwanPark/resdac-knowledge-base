@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_26",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "months for which dual eligible status is “QMB only,” “QMB and Medicaid coverage including Rx,” \"SLMB and Medicaid coverage including RX,\" or \"Other Dual Eligibles (Non-QMB, SLMB, QWDI, or QI) w/Medicaid coverage including RX\" (BENE_DUAL_STUS_CD = 01, 02, 04, or 08 for the 12 month period used for the third quarter; values from 0-12; will be missing if beneficiary not assigned in quarter (Q3_assign = 0) NUM 2 12 months prior to the end of Q3 of reference year - i.e. 10/1/20yy - 9/30/20yy x x x x",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

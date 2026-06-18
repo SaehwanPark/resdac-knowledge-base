@@ -1,0 +1,14 @@
+CMS has created an analytical file that contains identifying information about providers participating in the Kidney Care Choices (KCC) Model.
+A related file, the KCC Model Alignment Beneficiary file, contains enrollment data for beneficiaries with chronic kidney disease (CKD) who are aligned to participating providers in the KCC Model.
+The KCC Model builds upon the earlier Comprehensive End Stage Renal Disease (ESRD) Care (CEC) Model structure, in which dialysis facilities, nephrologists, and other health care providers form ESRD-focused accountable care organizations to provide higher-quality, cost-effective care for beneficiaries with late-stage chronic kidney disease (CKD) and ESRD. CMS designed the KCC model to delay the onset of ESRD, better prepare patients for dialysis, coordinate care across different healthcare settings, and incentivize kidney transplantation.
+What does this file include? (variable highlights)
+- Participant Tax Identification Number
+- Individual National Provider Identifier (NPI)
+- CMS Certification Number
+- KCC Model Participant Type
+- Participant relationship to Kidney Contracting Entities under the KCC Model
+- Participant information
+Special Considerations
+- This file can be linked to any other CMS file that includes the TIN, CCN, or NPI.
+- The KCC Model Performance Period began on January 1, 2022, and will continue through December 31, 2027.
+- For more information about the KCC Model, visit the CMS Innovation Center website or reference the CCW user guide. Questions about the model can be directed to [email protected].

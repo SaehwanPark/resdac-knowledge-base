@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p236__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 236,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n222 \nPRE_ICL_DAYS_LTCP_1M \nLABEL: \nPre-ICL Long Term Care Pharmacy — Number of Days in One-Month Supply \nDESCRIPTION: This variable identifies the number of days in a one-month supply of a drug on this tier, when using a \nlong-term care pharmacy (LTCP) during the pre-initial coverage limit (ICL) phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files)",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

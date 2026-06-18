@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_6",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "Claim Rendering Physician NPI Number CHAR 12 31\nRNDRNG_PHYSN_SPCLTY_CD RNDRNG_PHYSN_SPCLTY_CD Claim Rendering Physician Specialty Code CHAR 2 32\nMCOPDSW CLM_MCO_PD_SW Claim MCO Paid Switch CHAR 1 33\nSTUS_CD PTNT_DSCHRG_STUS_CD Patient Discharge Status Code CHAR 2 34\nPPS_IND CLM_PPS_IND_CD Claim PPS Indicator Code CHAR 1 35\nTOT_CHRG CLM_TOT_CHRG_AMT Claim Total Charge Amount NUM 12 36\nADMSN_DT CLM_ADMSN_DT Claim Admission Date DATE 8 37\nTYPE_ADM CLM_IP_ADMSN_TYPE_CD Claim Inpatient Admission",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

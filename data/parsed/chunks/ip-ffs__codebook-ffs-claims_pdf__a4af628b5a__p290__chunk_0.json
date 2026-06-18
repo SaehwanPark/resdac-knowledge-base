@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p290__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 290,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n272 \nOT_PHYSN_NPI \nLABEL: \nClaim Other Physician NPI Number \nDESCRIPTION: On an institutional claim, the National Provider Identifier (NPI) number assigned to uniquely identify \nthe other physician associated with the institutional claim. \nNPIs replaced UPINs as the standard provider identifiers beginning in 2007. The UPIN is almost never \npopulated after 2009. \nSHORT NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

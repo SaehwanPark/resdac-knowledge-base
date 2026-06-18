@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_26",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Diagnosis Code XXIV CHAR 7 117\nCLM_POA_IND_SW24 CLM_POA_IND_SW24 Claim Diagnosis Code XXIV Diagnosis Present on Admission Indicator Code CHAR 1 118\nICD_DGNS_CD25 ICD_DGNS_CD25 Claim Diagnosis Code XXV CHAR 7 119\nCLM_POA_IND_SW25 CLM_POA_IND_SW25 Claim Diagnosis Code XXV Diagnosis Present on Admission Indicator Code CHAR 1 120\nFST_DGNS_E_CD FST_DGNS_E_CD First Claim Diagnosis E Code CHAR 7 121\nICD_DGNS_E_CD1 ICD_DGNS_E_CD1 Claim Diagnosis E Code I CHAR 7 122\nCLM_E_POA_IND_SW1 CLM_E_POA_IND_SW1",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

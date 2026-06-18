@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p216__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 216,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n196 \nOUTLIER_TYPE_CD \nLABEL: \nOutlier Type Code \nDESCRIPTION: This code indicates the Type of Outlier Code or DRG Source. \nSHORT NAME: OUTLIER_TYPE_CD \nLONG NAME: OUTLIER_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nVALUES: \n00 = No outlier \n01 = Day Outlier \n02 = Cost Outlier \n06 = Valid DRG Received from the intermediary \n07 = CMS",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

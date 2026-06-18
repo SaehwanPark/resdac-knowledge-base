@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_25",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "2 41\nTOOTH_ORAL_CVTY_AREA_DSGNTD_CD Tooth Oral Cavity Area Designated Code CHAR 2 42\nTOOTH_SRFC_CD Tooth Surface Code CHAR 1 43\nSRVC_PRVDR_ID Servicing Provider Identification Number CHAR 30 44\nSRVC_PRVDR_NPI Servicing Provider NPI CHAR 10 45\nSRVC_PRVDR_TXNMY_CD Servicing Provider Taxonomy Code CHAR 12 46\nSRVC_PRVDR_NPPES_TXNMY_CD2 Servicing Provider NPPES Taxonomy Code CHAR 10 61\nSRVC_PRVDR_TYPE_CD Servicing Provider Type Code CHAR 2 47\nSRVC_PRVDR_SPCLTY_CD Servicing Provider Specialty Code",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

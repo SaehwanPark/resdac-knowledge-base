@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_236",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "K2B K2B_WEIGHT (K2B) Weight CHAR 3 Oral/nutritional status: height and weight - weight (pounds).\n383 K3A K3A_WEIGHT_LOSS (K3A) Weight Loss CHAR 1 Oral/nutritional status: height and weight - weight loss - 5% or more in 30 days; 10% or more in 180 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n384 K3B K3B_WEIGHT_GAIN (K3B) Weight Gain CHAR 1 Oral/nutritional status: height and weight - weight gain - 5% or more in 30 days; 10% or more in 180 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n385 K4A K4A_COMP_FOOD_TAST",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

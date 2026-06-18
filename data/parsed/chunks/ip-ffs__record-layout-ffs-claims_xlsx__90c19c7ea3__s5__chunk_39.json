@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_39",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "REV_CNTR_DDCTBL_COINSRNC_CD Revenue Center Deductible Coinsurance Code CHAR 1 43\nREVSTIND REV_CNTR_STUS_IND_CD Revenue Center Status Indicator Code CHAR 2 37\nRC_PTNT_ADD_ON_PYMT_AMT RC_PTNT_ADD_ON_PYMT_AMT Revenue Center Patient/Initial Visit Add-On Payment Amount (for initial wellness visit) NUM 12 47\nREV_CNTR_CRA_TPNIES_AMT REV_CNTR_CRA_TPNIES_AMT Rev Cntr Capital Related Assets Transitnl Add-on Pymnt Amt New and Innovtv Equip NUM 12 53 New5\nREV_CNTR_NDC_QTY REV_CNTR_NDC_QTY Revenue Center",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

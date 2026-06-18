@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_42",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "occupational therapy, or speech and language pathology therapy Per capita cost for attributed beneficiary, Outpatient Physical, Occupational, or Speech and Language Pathology Therapy category 59 Num 8 Populated only for records with Inpatient_stay not equal to missing\nCCN CCN of hospital at which hospitalization occurred CMS certification number of hospital at which hospitalization occurred 60 Char 6 Populated only for records with Inpatient_stay=1, MSPB_episode=1, or SSP_ADM=1\nRADM30 Hospital",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

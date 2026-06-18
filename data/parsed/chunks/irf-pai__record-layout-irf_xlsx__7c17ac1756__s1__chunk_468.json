@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_468",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "year or any fall with injury within the past year. CHAR 1 The data in this column indicates whether the patient had two or more falls in the past year or any fall with injury within the past year. 0 = No\n1 = Yes\n8 = Unknown\n389 J1800_FALL_LAST_ASMT_CD J1800_FALL_LAST_ASMT_CD J1800 Falls Since Admission or Prior Assessment Code - The data in this column indicates whether the patient had any falls since admission or prior assessment. CHAR 1 The data in this column indicates whether the patient",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

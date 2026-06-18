@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__codebook-mbsf-cc_pdf__67b8f2251b__p37__chunk_1",
+  "source_document": "data/raw/assets/pdf/67b8f2251b8ce41fa22290227e10b8b8ec333559.pdf",
+  "page": 37,
+  "text": "The variable will be blank for beneficiaries that have never \nhad the condition. \nSHORT NAME: CNCRLNGE \nLONG NAME: CANCER_LUNG_EVER \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThe earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible \nfor Medicare after that, the earliest possible date will be some time after his/her coverage start date \n(i.e., the COVSTART variable in the Beneficiary File). \n^ Back to TOC ^",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cc.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p409__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 409,
+  "text": "RR_BRD_EXCLSN_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = Yes (exclude RRB beneficiary from PA) \nNull/missing = Subject RRB beneficiary services to prior authorization \nCOMMENT: \nThis field informs the SSMs and CWF if the RRB beneficiary claim should either be included or excluded \nfrom Prior Authorization (PA) processing. Ex: If the field is valued “Y”, and it is RRB beneficiary claim, it \nwill be excluded from PA processing. \nThis field was new in April 2019. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

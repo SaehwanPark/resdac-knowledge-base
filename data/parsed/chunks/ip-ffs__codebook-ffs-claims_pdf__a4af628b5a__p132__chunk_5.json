@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p132__chunk_5",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 132,
+  "text": "number of covered days or covered \ndays < lifetime reserve days \n65 = Operating cost-to-charge ratio not numeric \n67 = Cost outlier with length of stay > covered days \n68 = Provider specific state code invalid \n72 = Invalid blend indicator (not 1 thru 5) \n73 = Discharged before provider FY begin \ndate",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

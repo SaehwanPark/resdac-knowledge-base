@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_297",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "treatment regimen. CHAR 2 x x x x x x\nM1700_COG_FUNCTION M1700 (M0560) Cognitive Functioning This field indicates the patient's current level of cognitive functioning. 00 = Alert/oriented, able to focus and shift attention, comprehends and recalls task directions independently.\n01 = Requires prompting (cuing, repetition, reminders) only under stressful or unfamiliar conditions.\n02 = Requires assistance and some direction in specific situations (e.g., on all tasks involving shifting of",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

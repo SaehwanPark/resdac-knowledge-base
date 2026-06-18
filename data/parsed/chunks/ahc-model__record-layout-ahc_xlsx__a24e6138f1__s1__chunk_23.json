@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Navigated Core HRSN Housing Resolved CHAR 1\nNN_CORE_HOUSNG_CNCT_CSP_SW Navigated Core HRSN Housing Connected to Community Service Provider CHAR 1\nNN_CORE_HOUSNG_OPTOUT_SW Navigated Core HRSN Housing Opted Out CHAR 1\nNN_CORE_HOUSNG_CNTCT_FAIL_SW Navigated Core HRSN Housing Attempts to Reach Failed CHAR 1\nNN_CORE_HOUSNG_CSP_UNAVBL_SW Navigated Core HRSN Housing Community Service Provider Unable to Help CHAR 1\nNN_CORE_HOUSNG_OUTCM_UNK_SW Navigated Core HRSN Housing Outcome Unknown CHAR",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

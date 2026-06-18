@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p253__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 253,
+  "text": "PP = \nPlan Protocol \nPR = \nPrior Adverse Reaction \nPS = \nProduct Selection Opportunity \nRF = \nHealth Provider Referral \nSC = \nSuboptimal Compliance \nSD = \nSuboptimal Drug/Indication \nSE = \nSide Effect \nSF = \nSuboptimal Dosage Form \nSR = \nSuboptimal Regimen \nSX = \nDrug-Sex \nTD = \nTherapeutic \nTN = \nLaboratory Test Needed \nTP = \nPayer/Processor Question \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThe reason for service code field is data element 439-E4 of the NCPDP data",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

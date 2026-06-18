@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_470",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "09/30/2025\n529 O0400C6_PT_END_DT O0400C6_PT_END_DT O0400C6 Physical Therapy End Date CHAR 8 The data in this column indicates the end date for the most recent physical therapy. discontinued 09/30/2025\n530 O0400D1_RT_MIN_NUM O0400D1_RT_MIN_NUM O0400D1 Respiratory Therapy Minutes Number CHAR 4 The data in this column indicates the total number of minutes that respiratory therapy was administered to the resident in the last seven days. discontinued 09/30/2025\n531 O0400D2_RT_DAY_NUM",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

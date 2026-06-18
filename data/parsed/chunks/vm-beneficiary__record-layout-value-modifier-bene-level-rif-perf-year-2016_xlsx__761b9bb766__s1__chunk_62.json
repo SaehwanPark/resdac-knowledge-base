@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_62",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "only for records with MSPB_episode=1\nCOST_ER_IMAGING MSPB imaging costs in an ER setting Medicare Spending per Beneficiary (MSPB) costs for attributed beneficiary, ER Imaging Services category 90 Num 8 Populated only for records with MSPB_episode=1\nCOST_IP_TRIGGER MSPB inpatient costs incurred during hospitalization Medicare Spending per Beneficiary (MSPB) costs for attributed beneficiary, Acute Inpatient Hospital: Index Admission category 91 Num 8 Populated only for records with",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

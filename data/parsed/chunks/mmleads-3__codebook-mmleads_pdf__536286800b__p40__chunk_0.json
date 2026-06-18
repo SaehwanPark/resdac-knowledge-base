@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p40__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 40,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n29 \nMDCD_IP_TOTAL_SPEND \nLABEL: \nMedicaid Payment Amount — Inpatient \nDESCRIPTION: This variable is the total Medicaid payment amount from all Inpatient (IP) claims for the beneficiary \nduring the year. Note that this dollar amount may be an undercount if the beneficiary had managed \ncare claims. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Inpatient Claims File (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p327__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 327,
+  "text": "preferred pharmacy (INNPP; also known as a standard \nretail pharmacy within a split network) during the pre-initial coverage limit (ICL) phase of the Part D \nbenefit. \nSHORT NAME: — \nLONG NAME: PRE_ICL_INNPP_COINS_1M \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \n\nCOMMENT: \nPlans that use a co-payment amount rather than a coinsurance percentage will not have a value in this \nfield; see instead the corresponding co-payment variable called (PRE_ICL_INNPP_COPAY_1M). \nStarting in",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

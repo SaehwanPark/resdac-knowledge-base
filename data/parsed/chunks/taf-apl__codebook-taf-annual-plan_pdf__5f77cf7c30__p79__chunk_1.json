@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p79__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 79,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis data element is triggered by a value of “14” (Concurrent 1932(a)/1915(i) Home and Community-\nBased Services (HCBS) state plan services) in any instance of MC_PLAN_OPRTG_AUTHRTY_CD. \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

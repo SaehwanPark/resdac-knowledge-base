@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_73",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "1 x x\nM0350_AP_HM_RES (M0350) Person Residing in Home Assisting person(s): person residing in the home (excluding paid help). 0 = No, 1 = Yes CHAR 1 x x\nM0350_AP_REL_FRND (M0350) Relatives/Friends/Neighbors Living Outside Home Assisting person(s): relatives, friends, or neighbors living outside the home. 0 = No, 1 = Yes CHAR 1 x x\nM0350_AP_UK (M0350) Unknown Assisting Persons Assisting person(s): unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0360_PRI_CAREGVR (M0360) Primary Caregiver Primary caregiver",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p150__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 150,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n137 \nGAP_LTCP_COPAY_1M \nLABEL: \nGap Long Term Care Pharmacy Copay for 1-month supply \nDESCRIPTION: This variable identifies the beneficiary co-payment amount for a 1-month supply of the drugs on this \ntier, using a long-term care pharmacy (LTCP) during the coverage gap phase of the Part D benefit. \nSHORT NAME: — \nLONG NAME: GAP_LTCP_COPAY_1M \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

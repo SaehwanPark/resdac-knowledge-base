@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p74__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 74,
+  "text": "drug manufacturer provides directly to the Part D plan \nsponsor. \nSHORT NAME: TOTALCST \nLONG NAME: TOT_RX_CST_AMT \nTYPE: \nNUM \nLENGTH: \n14 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nField length expanded from 10 to 14 in 2025. Starting in 2010, this variable includes the vaccine \nadministration fee, when applicable. Starting March 4, 2022, the vaccine administration fee may \ninclude an additional dispensing fee paid for Emergency Use Authorization oral antiviral drugs \nprocured by the U.S. Government",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

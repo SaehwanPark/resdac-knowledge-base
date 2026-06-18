@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p3__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 3,
+  "text": "DMERC_OXGN_EQUIP_PRVS_DT, \nESRD_TRTMT_CHS_IND_CD, LINE_ADJUST_GRP_CD, \nLINE_ADJUST_RSN_CD, LINE_RA_RMRK_CD, \nMS_DRG_GRPR_VRSN_CD, OWNG_PRVDR_TIN_NUM, \nPRVDR_FULL_CCN_NUM, REV_CNTR_ADJUST_GRP_CD, \nREV_CNTR_ADJUST_RSN_CD, REV_CNTR_RA_RMRK_CD, \nREV_CNTR_CRA_TPNIES_AMT, REV_CNTR_THRPY_RDCTN_AMT. \nAdded values and corresponding descriptions for \nCARR_NUM, CLM_FREQ_CD, CLM_SRC_IP_ADMSN_CD, FI_NUM, \nREV_CNTR \n1.9 \nApril 2022 \nK. Schneider \nA. Sisco \nA. Meyer \nAdded values and corresponding",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

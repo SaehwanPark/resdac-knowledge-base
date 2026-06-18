@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p170__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 170,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n152 \nDMERC_LINE_FRGN_ADR_IND \nLABEL: \nLine Foreign Address Indicator \nDESCRIPTION: Line Foreign Address Indicator on the durable medical equipment (DME) claim line \nSHORT NAME: DMERC_LINE_FRGN_ADR_IND \nLONG NAME: DMERC_LINE_FRGN_ADR_IND \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nEX = Expatriate Beneficiary \nCOMMENT: \nThis field is used to identify claims for expatriate",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

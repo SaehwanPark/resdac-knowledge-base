@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_895",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "(Discharge) CHAR 1 The data in this column indicates whether the resident received transfusions in the last three days of their SNF stay. 0=No\n1=Yes effective 10/01/2023\n1006 DLYS_ADMSN_CD DLYS_ADMSN_CD O0110J1A Other: Dialysis (Admission) CHAR 1 The data in this column indicates whether the resident received dialysis days one through three (on admission) of becoming a resident of the facility. 0=No\n1=Yes effective 10/01/2023\n1007 DLYS_14_CD DLYS_14_CD O0110J1B Other: Dialysis (14 days) CHAR 1",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

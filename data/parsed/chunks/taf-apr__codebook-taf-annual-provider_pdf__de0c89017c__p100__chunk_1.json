@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p100__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 100,
+  "text": "PRVDR_GRP_ACTV_IND_12 \nLABEL: \nProvider Group Active Indicator — January through December \nDESCRIPTION: A flag to indicate the provider’s affiliated group specified in the PRVDR_GRP_ID variable was active in \nthe given month. Each of 12 months.\nSHORT NAME: \nPRVDR_GRP_ACTV_IND_01 \nPRVDR_GRP_ACTV_IND_02 \nPRVDR_GRP_ACTV_IND_03 \nPRVDR_GRP_ACTV_IND_04 \nPRVDR_GRP_ACTV_IND_05 \nPRVDR_GRP_ACTV_IND_06 \nPRVDR_GRP_ACTV_IND_07 \nPRVDR_GRP_ACTV_IND_08 \nPRVDR_GRP_ACTV_IND_09 \nPRVDR_GRP_ACTV_IND_10",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,15 @@
+The Centers for Medicare & Medicaid Services (CMS) uses a risk adjustment process that is applied to payments made to Medicare Advantage Organizations (MAOs), which administer health plans for Medicare Advantage (MA) beneficiaries. This risk adjustment process creates risk scores designed to account for differences in health status among MA plan enrollees. Risk scores are calculated for all Medicare beneficiaries, regardless of whether the beneficiary was enrolled in Original Medicare (also known as Fee-For-Service Medicare) or MA during the payment year.
+For a given payment year, the research risk score files include an Operational Payment Base File and Model Output Files (MOFs) from a mix of six potential risk models. The MOFs contain raw risk scores calculated prior to any adjustments made for payments. Each payment year has specific risk models that are based on that year’s risk adjustment methodology; payment years may use a blend of MOF risk scores as inputs to calculate the operational payment risk scores. MOF risk scores are converted into payment risk scores by applying payment year specific CMS-Hierarchical Condition Category (HCC) risk adjustment model normalization factors and an MA coding pattern difference adjustment. The MA coding pattern difference adjustment is based on MA enrollment during the payment year and may not be appropriate for analyzing FFS cohorts.
+The Risk Score Operational Payment Base File is a beneficiary-level data file with variables containing monthly risk adjustment payment scores. The file uses a beneficiary’s demographic, care setting, and clinical characteristics to identify the beneficiary’s correct monthly payment score, i.e., the monthly “operational” risk scores for each beneficiary which determine what CMS pays an MAO for that beneficiary.
+The research risk score files are designed to be used with other Chronic Conditions Warehouse (CCW) data products that contain a wide range of demographic and Medicare coverage information and can be linked to other CCW files using the Beneficiary ID variable.
+What does this file include? (variable highlights)
+- Monthly Part C risk payment scores
+- Monthly Part C model segment codes
+- Monthly Part D payment risk scores
+- Monthly Part D model segment codes
+- Long-term institutional monthly indicators
+- All possible Part C and Part D risk scores
+- Beneficiary demographic characteristics
+Special considerations:
+- Reference the CCW Medicare Risk Score Files User Guide for more information on the operational payment risk score base file and model output files.
+- Reference the Report to Congress: Risk Adjustment in Medicare Advantage for a discussion of risk adjustment in the Medicare Advantage program.

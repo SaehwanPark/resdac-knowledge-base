@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_24",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Type Code CHAR 2 35\nSELF_DRCTN_TYPE_CD Beneficiary Service Self-Direction Type Code CHAR 3 36\nPRE_AUTHRZTN_NUM Pre-Authorization Number CHAR 18 37\nHCBS_SRVC_CD Home- and Community-Based Services Service Code CHAR 1 38\nHCBS_TXNMY_CD Home- and Community-Based Services Taxonomy Code CHAR 5 39\nTOOTH_DSGNTN_SYS Tooth Designation System/Nomenclature CHAR 2 40\nTOOTH_NUM Tooth Number CHAR 2 41\nTOOTH_ORAL_CVTY_AREA_DSGNTD_CD Tooth Oral Cavity Area Designated Code CHAR 2 42\nTOOTH_SRFC_CD Tooth Surface",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

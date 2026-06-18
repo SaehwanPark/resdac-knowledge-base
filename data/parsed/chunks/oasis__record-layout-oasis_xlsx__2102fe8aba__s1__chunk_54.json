@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_54",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "f. CHAR 7 x x\nM0245_PMT_ICD2 (M0245) Payment Diagnosis: First Secondary ICD The ICD-9 code indicating the first secondary payment reason. CHAR 7 x x\nM0245_PMT_ICD1 (M0245) Payment Diagnosis: Primary ICD The ICD-9 code indicating the primary payment reason. CHAR 7 x x\nM0250_THH_ENT_NUTR (M0250) Enteral Nutrition Enteral nutrition (nasogastric, gastrostomy, jejunostomy, or any other artificial entry into alimentary canal). 0 = No, 1 = Yes CHAR 1 x x\nM0250_THH_IV_INFUS (M0250) Intravenous or",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

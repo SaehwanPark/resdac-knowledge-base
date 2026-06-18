@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p19__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 19,
+  "text": "year. \nSHORT NAME: AMBLTRY_CLNC_TXNMY_IND \nLONG NAME: AMBLTRY_CLNC_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis variable = 1 if PRVDR_CLSFCTN_SYS = “1” or “N” and the taxonomy code value is one of the \nfollowing: \n261Q00000X: Clinic/Center \n261QA0005X: Clinic/Center — ambulatory family planning facility \n261QA0006X: Clinic/Center — ambulatory fertility facility \n261QA0600X: Clinic/Center — adult day care",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

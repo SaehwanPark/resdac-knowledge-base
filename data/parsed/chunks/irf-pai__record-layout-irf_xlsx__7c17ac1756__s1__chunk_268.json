@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_268",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "closed (resurfaced with epithelium) upon Discharge. If there are no healed pressure ulcers noted at a given stage, enter 0.\n254 HEALED_STG_3_PRSR_ULCRS_NUM HEALED_STG_3_PRSR_ULCRS_NUM M0900C Healed Stage 3 Pressure Ulcers Number CHAR 1 The number of Stage 3 pressure ulcers that were: (a) present on Admission; and (b) have completely closed (resurfaced with epithelium) upon Discharge. If there are no healed pressure ulcers noted at a given stage, enter 0.\n255 HEALED_STG_4_PRSR_ULCRS_NUM",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Provider Analysis and Review (MEDPAR) File\nVersion — November 2023\nShort SAS name Long SAS name Label Type Length 1999– 2000 1 2001 1 2002– 2004 1 2005 1 2006 1 2007– 2008 1 2009 1 2010 1 2011 1 2012 1 2013 1 2014 1 2015 1 2016– 2017 1 2018 1 2019 1 2020 1 2021-2022 1\nBENE_ID BENE_ID CCW Encrypted Beneficiary ID Number CHAR 15 X X X X X X X X X X X X X X X X X X\nMEDPARID MEDPAR_ID MEDPAR ID Number CHAR 15 X X X X X X X X X X X X X",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

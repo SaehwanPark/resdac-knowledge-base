@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p174__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 174,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n158 \nORG_NPI_NUM \nLABEL: \nOrganization NPI Number \nDESCRIPTION: The National Provider Identifier (NPI) number assigned to uniquely identify the institutional provider \ncertified by Medicare to provide services to the beneficiary. \nSHORT NAME: ORGNPINM \nLONG NAME: ORG_NPI_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field comes from the organization NPI that is present on",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

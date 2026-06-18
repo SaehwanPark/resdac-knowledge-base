@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_125",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "day of admission.\n165 T3MDCR T3MCARE_CALC_RUG 43-Medicare (T3)Case Mix Group - Medicare CHAR 5 The software will calculate the RUG-III classification for the Medicare program using the 44-Group Version 5.12 RUG-III Classification.\n166 T3STATE T3STATE_CALC_RUG 43-State(T3)Case Mix Group - State CHAR 5 If the state requires the completion of the SB-MDS assessment for Medicaid swing bed payment, and the State uses a version of the RUG-III system, the Medicaid RUG-III group may be coded on the",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

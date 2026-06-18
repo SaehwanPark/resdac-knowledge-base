@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s3__chunk_25",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 3,
+  "text": "Revenue Center Rendering Physician Specialty Code CHAR 2 24\nIDENDC REV_CNTR_IDE_NDC_UPC_NUM Revenue Center IDE, NDC, or UPC Number CHAR 24 25\nREVSTIND REV_CNTR_STUS_IND_CD Revenue Center Status Indicator Code CHAR 2 26\nREV_CNTR_PRCNG_IND_CD REV_CNTR_PRCNG_IND_CD Revenue Center Pricing Indicator Code CHAR 2 27\nTHRPY_CAP_IND_CD1 THRPY_CAP_IND_CD1 Revenue Center Therapy Cap Indicator 1 Code CHAR 1 28\nTHRPY_CAP_IND_CD2 THRPY_CAP_IND_CD2 Revenue Center Therapy Cap Indicator 2 Code CHAR 1",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

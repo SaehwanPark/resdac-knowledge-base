@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_27",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "Railroad Board Exclusion Indicator Switch | \n\n | 163 | CLM_MODEL_REIMBRSMT_AMT | Claim Model Reimbursement Amount | \n\n | 164 | CLM_ADJUST_GRP_CD | Claim Adjustment Group Code | \n\n | 165 | CLM_ADJUST_RSN_CD | Claim Adjustment Reason Code | \n\n | 166 | ESRD_TRTMT_CHS_IND_CD | End-Stage Renal Disease (ESRD) Treatment Choices Demonstration Indicator Code | \n\n | 167 | CLM_OP_PPS_IND | Claim Outpatient Prospective Payment System (OPPS) Indicator | \n\n | 168 | CLM_CLNCL_TRIL_NUM | Clinical Trial Number |",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

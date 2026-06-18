@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_58",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "relatives/friends. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n115 AC1T AC1T_ATTEND_CHURCH (AC1T) Usually Attends Church/Temple/Synagogue CHAR 1 Customary routine: involvement patterns - usually attends church, temple, etc.. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n116 AC1U AC1U_STRNGTH_FAITH (AC1U) Finds Strength in Faith CHAR 1 Customary routine: involvement patterns - finds strength in faith. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n117 AC1V AC1V_ANIMAL (AC1V) Daily Animal",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

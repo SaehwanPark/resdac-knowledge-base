@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Annual State code for the individual. 2-letter postal abbreviation\nDemographics D_ALIVE_MOS Months alive during the reference year (null if alive all year) 1 - 11\nNull/missing - did not die during the year\nD_DIED Beneficiary died during year, indicator 0 - Did not die during year\n1 - Died during year\nD_DOD Date of death. Source is Medicare for all with Medicare coverage, and Medicaid SSA DOD from MAX for others (Medicaid date of death from MAX for non-Medicare for 2006) date -",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

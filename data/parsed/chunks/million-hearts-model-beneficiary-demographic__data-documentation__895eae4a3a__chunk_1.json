@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-beneficiary-demographic__data-documentation__895eae4a3a__chunk_1",
+  "source_document": "data/raw/html/documentation_page/895eae4a3a6048f9a194064d52304b48b989ef93.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| PRACTICE_ID | Model-Assigned Practice ID | \n| PRACTICE_NAME | Name of Practice | \n| TIN | Practice's Taxpayer Identification Number | \n| UNIQUE_PATIENT_ID | Unique Model-Assigned Patient ID | \n| PATIENT_DOB | Patient's Date of Birth | \n| PATIENT_SEX | Patient's Sex | \n| PATIENT_RACE | Patient's Race | \n| PATIENT_ETHNICITY | Patient's Ethnicity | \n|",
+  "dataset": "million-hearts-model-beneficiary-demographic",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-beneficiary-demographic/data-documentation"
+}

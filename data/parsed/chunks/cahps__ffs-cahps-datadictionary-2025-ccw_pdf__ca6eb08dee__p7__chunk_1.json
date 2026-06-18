@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 7,
+  "text": "and their meanings are as follows: \n• ws_ - Westat derived variables \n• su_ - Survey processing variables \n• sa_ - Administrative variables \n• r_ - Survey variables with response categories reverse-coded \nname \nLABEL \nFORMAT \nins_have_oth \nRECODE : Have health insurance other than medicare \nYNA \nins_medigap \nRECODE : Other insurance-medigap supplemental \nYNE \nins_employer \nRECODE : Other insurance-employer, union \nYNE \nins_veteran \nRECODE : Other insurance-veteran benefit \nYNE \nins_military",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p251__chunk_3",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 251,
+  "text": "acknowledged \n3G = \nDrug Therapy Unchanged \n3H = \nFollow-Up/Report \n3J = \nPatient Referral \n3K = \nInstructions Understood \n3M = \nCompliance Aid Provided \n3N = \nMedication Administered \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis Result of Service Code is data element 441-E6 of the NCPDP data dictionary. It is one of three \nfields concatenated into the drug utilization code field (DRUG_UTLZTN_CD) in this file. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

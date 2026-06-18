@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_103",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "253 241 239\nHPC_TOT_ACSC_DSCHRG_CNT HPC: Observed Total Ambulatory Care Senstv Condtn (ACSC) Discharges NUM 3 193 212 254 242 240\nHPC_PPD_CHRNC_ACSC_CMRBDTY_WT HPC: PPD Chronic Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight NUM 8 194 213 255 243 241\nHPC_PPD_ACUTE_ACSC_CMRBDTY_WT HPC: PPD Acute Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight NUM 8 195 214 256 244 242\nHPC_PPD_TOT_ACSC_CMRBDTY_WT HPC: PPD Total Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight NUM 8 196 215",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

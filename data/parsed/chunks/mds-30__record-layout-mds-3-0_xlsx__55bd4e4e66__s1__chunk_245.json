@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_245",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Toileting Program Code CHAR 1 The data in this column indicates the response to the trial toileting program (e.g., scheduled toileting, prompted voiding, or bladder training). -=Not assessed/no information\n0=No improvement\n1=Decreased wetness\n2=Completely dry (continent)\n9=Unable to determine or trial in progress\n^=Blank (skip pattern)\n261 H0200C_CRNT_TOILTG_PGM_CD H0200C_CRNT_TOILTG_PGM_CD H0200C Urinary Toileting Program: Current Toileting Program Code CHAR 1 The data in this column indicates",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

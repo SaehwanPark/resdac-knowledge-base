@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_13",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "ICD_DGNS_E_CD7 Claim Diagnosis E Code VII CHAR 7 68\nICD_DGNS_E_CD8 ICD_DGNS_E_CD8 Claim Diagnosis E Code VIII CHAR 7 69\nICD_DGNS_E_CD9 ICD_DGNS_E_CD9 Claim Diagnosis E Code IX CHAR 7 70\nICD_DGNS_E_CD10 ICD_DGNS_E_CD10 Claim Diagnosis E Code X CHAR 7 71\nICD_DGNS_E_CD11 ICD_DGNS_E_CD11 Claim Diagnosis E Code XI CHAR 7 72\nICD_DGNS_E_CD12 ICD_DGNS_E_CD12 Claim Diagnosis E Code XII CHAR 7 73\nLUPAIND CLM_HHA_LUPA_IND_CD Claim HHA Low Utilization Payment Adjustment (LUPA) Indicator Code CHAR 1",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

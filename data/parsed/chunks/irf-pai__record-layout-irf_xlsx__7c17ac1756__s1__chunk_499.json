@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_499",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n428 RACE_NO_RSPNS_CD RACE_NO_RSPNS_CD Race: Patient unable to respond CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n429 RACE_DCLN_RSPNS_CD RACE_DCLN_RSPNS_CD Race: Patient declines to respond CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n430 RACE_NONE_ABV_CD RACE_NONE_ABV_CD Race: None of the above CHAR 1 The data in this column",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

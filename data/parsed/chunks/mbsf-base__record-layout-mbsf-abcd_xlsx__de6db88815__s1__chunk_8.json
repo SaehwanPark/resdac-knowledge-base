@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Code - September CHAR 2\nMDCR_STUS_CD_10 MDCR_STATUS_CODE_10 Medicare Status Code - October CHAR 2\nMDCR_STUS_CD_11 MDCR_STATUS_CODE_11 Medicare Status Code - November CHAR 2\nMDCR_STUS_CD_12 MDCR_STATUS_CODE_12 Medicare Status Code - December CHAR 2\nA_TRM_CD BENE_PTA_TRMNTN_CD Part A Termination Code CHAR 1\nB_TRM_CD BENE_PTB_TRMNTN_CD Part B Termination Code CHAR 1\nA_MO_CNT BENE_HI_CVRAGE_TOT_MONS Part A Months Count NUM 3\nB_MO_CNT BENE_SMI_CVRAGE_TOT_MONS Part B Months Count NUM 3\nBUYIN_MO",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

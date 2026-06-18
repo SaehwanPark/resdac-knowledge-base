@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p38__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 38,
+  "text": "NUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the beneficiary inpatient deductible amount that is present on \nany of the claim records included in the stay (i.e., the sum of the inpatient deductibles reported on \nclaims that comprise the stay). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

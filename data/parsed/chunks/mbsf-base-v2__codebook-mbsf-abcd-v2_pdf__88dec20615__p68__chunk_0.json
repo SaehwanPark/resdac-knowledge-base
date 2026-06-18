@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p68__chunk_0",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 68,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D, Version 2 │ May 2026 │ V 1.2 \n61 \nVALID_DEATH_DT_SW \nLABEL: \nValid Date of Death Switch \nDESCRIPTION: This variable indicates whether a beneficiary’s day of death has been verified by the Social Security \nAdministration (SSA) or the Railroad Retirement Board (RRB). \nLONG NAME: VALID_DEATH_DT_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nNull = Default \nV =",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

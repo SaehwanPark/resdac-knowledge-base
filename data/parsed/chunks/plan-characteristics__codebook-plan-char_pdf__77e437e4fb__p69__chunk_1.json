@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p69__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 69,
+  "text": "SOURCE: \nCMS (HPMS files) \nVALUES: \n0 = No Benefit plan Information (e.g., PACE and employer plans) \n1 = Defined Standard benefit \n2 = Actuarially Equivalent Standard \n3 = Basic Alternative \n4 = Enhanced Alternative \n9 = Part C only plan (no Part D benefit) \nCOMMENT: \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors to \nCMS’s Health Plan Management System (HPMS). \nEmployer and National Program of All-inclusive Care for the Elderly (PACE) plans are",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

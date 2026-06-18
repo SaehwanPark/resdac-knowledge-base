@@ -1,0 +1,9 @@
+The Original Medicare Fee-for-Service (FFS) Hospice file contains claims submitted by Medicare hospice providers. Records are included in the file regardless of whether the beneficiary is enrolled in fee-for-service Medicare or Medicare Advantage (Medicare managed care.)
+This file is based on information from the CMS form 1450 (UB04).
+What does this file include? (variable highlights)
+- The level of hospice care received (e.g., home health aide, skilled nursing care)
+- Diagnosis (ICD diagnosis codes)
+- The dates of service
+- Submitted charges
+- Reimbursement amounts
+- Hospice provider number

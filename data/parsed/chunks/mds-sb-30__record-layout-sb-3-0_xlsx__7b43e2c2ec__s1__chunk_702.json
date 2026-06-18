@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_702",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "whether the state requires this assessment for payment. 0 = No \n1 = Yes effective 10/01/2019\ndiscontinued 9/30/2023\n755 A0300B_STATE_PYMT_ASMT_TYPE_CD A0300B_STATE_PYMT_ASMT_TYPE_CD A0300B State Payment Assessment Type Code CHAR 1 Type of assessment. 1 = Start of therapy assessment\n2 = End of therapy assessment\n3 = Both: Start and End of therapy assessment\n4 = Change of therapy assessment\n5 = Other payment assessment effective 10/01/2019\ndiscontinued 9/30/2023\n756 A0310G1_INTRPTED_STAY_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

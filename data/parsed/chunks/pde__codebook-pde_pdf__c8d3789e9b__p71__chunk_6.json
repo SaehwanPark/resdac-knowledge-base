@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p71__chunk_6",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 71,
+  "text": "This variable \nbecame the SUBMSN_CLRFCTN_CD_1 in 2025 in the source data, when additional submission \nclarification code fields became available (SUBMSN_CLRFCTN_CD_2–SUBMSN_CLRFCTN_CD_5). PDE \nRIF users should use this variable for PDEs with submission dates prior to 1/1/2025, and the new \nSUBMSN_CLRFCTN_CD_1–5 variables for PDEs with submission dates 1/1/2025 and later. \n\n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

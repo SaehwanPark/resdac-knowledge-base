@@ -1,0 +1,2906 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+ 
+Chronic Conditions Warehouse Virtual Research Data Center  
+Master Beneficiary Summary File (MBSF)  
+Cost and Use Segment Codebook  
+MARCH 2026 │ VERSION 1.3
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+March 2026 
+K. Schneider 
+R. VanGilder 
+• Added clarification re: claims included/not included in 
+ACUTE_MDCR_PMT, ACUTE_PRMRY_PMT, ACUTE_STAYS, 
+HH_PRMRY_PMT, HH_VISITS, HOP_PRMRY_PMT, 
+HOP_VISITS, HOS_COV_DAYS, HOS_PRMRY_PMT, 
+HOS_STAYS, OIP_PRMRY_PMT, OIP_MDCR_PMT, OIP_STAYS, 
+SNF_COV_DAYS, SNF_PRMRY_PMT, SNF_STAYS 
+• Added clarification re: calculation for HOP_VISITS, 
+PTD_FILL_CNT, and corrected source variable names used to 
+calculate HOP_BENE_PMT 
+• Added COMMENT re: ACO payments to all _MDCR_PMT 
+fields (except for PTD_MDCR_PMT) 
+1.3 
+March 2022 
+K. Schneider 
+R. VanGilder 
+Corrected the algorithms for the “stays” variables so that they 
+refer to the CLM_THRU_DT. 
+1.2 
+February 2021 
+C. Alleman 
+K. Russell 
+Migrated codebook to new document template. 
+1.1 
+May 2017 
+C. Alleman 
+K. Schneider 
+Initial release of codebook for the Master Beneficiary Summary 
+File – Cost and Use Segment. 
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Beneficiary Summary File (MBSF) 
+— Cost and Use Segment research files. The guide includes several ways for users to quickly find the information they 
+need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and notes discussing the variable construction and use 
+The CCW team has included hyperlinks throughout the codebook to make it easier for users to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes users to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes users back to the Table of Contents 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+iii 
+Table of Contents 
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links: 
+ 
+Variable Details ......................................................................................................................................................... 1 
+ACUTE_BENE_PMT .......................................................................................................................................................... 1 
+ACUTE_COV_DAYS .......................................................................................................................................................... 2 
+ACUTE_MDCR_PMT ........................................................................................................................................................ 3 
+ACUTE_PERDIEM_PMT ................................................................................................................................................... 4 
+ACUTE_PRMRY_PMT ....................................................................................................................................................... 5 
+ACUTE_STAYS .................................................................................................................................................................. 6 
+ANES_BENE_PMT ............................................................................................................................................................ 7 
+ANES_EVENTS ................................................................................................................................................................. 8 
+ANES_MDCR_PMT .......................................................................................................................................................... 9 
+ANES_PRMRY_PMT ....................................................................................................................................................... 10 
+ASC_BENE_PMT ............................................................................................................................................................ 11 
+ASC_EVENTS .................................................................................................................................................................. 12 
+ASC_MDCR_PMT ........................................................................................................................................................... 13 
+ASC_PRMRY_PMT ......................................................................................................................................................... 14 
+BENE_ENROLLMT_REF_YR ............................................................................................................................................ 15 
+BENE_ID......................................................................................................................................................................... 16 
+DIALYS_BENE_PMT ....................................................................................................................................................... 17 
+DIALYS_EVENTS ............................................................................................................................................................. 18 
+DIALYS_MDCR_PMT ...................................................................................................................................................... 19 
+DIALYS_PRMRY_PMT .................................................................................................................................................... 20 
+DME_BENE_PMT ........................................................................................................................................................... 21 
+DME_EVENTS ................................................................................................................................................................ 22 
+DME_MDCR_PMT ......................................................................................................................................................... 23 
+DME_PRMRY_PMT ........................................................................................................................................................ 24 
+EM_BENE_PMT ............................................................................................................................................................. 25 
+EM_EVENTS ................................................................................................................................................................... 26 
+EM_MDCR_PMT ............................................................................................................................................................ 27 
+EM_PRMRY_PMT .......................................................................................................................................................... 28 
+ENRL_SRC ...................................................................................................................................................................... 29 
+HH_MDCR_PMT ............................................................................................................................................................ 30 
+HH_PRMRY_PMT .......................................................................................................................................................... 31 
+HH_VISITS ...................................................................................................................................................................... 32 
+HOP_BENE_PMT ........................................................................................................................................................... 33 
+HOP_ER_VISITS ............................................................................................................................................................. 34 
+HOP_MDCR_PMT .......................................................................................................................................................... 35 
+A 
+B 
+C 
+D 
+E 
+F 
+G 
+H 
+I 
+J 
+K 
+L 
+M N O 
+P 
+Q R 
+S 
+T 
+U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+iv 
+HOP_PRMRY_PMT ........................................................................................................................................................ 36 
+HOP_VISITS .................................................................................................................................................................... 37 
+HOS_COV_DAYS ............................................................................................................................................................ 38 
+HOS_MDCR_PMT .......................................................................................................................................................... 39 
+HOS_PRMRY_PMT......................................................................................................................................................... 40 
+HOS_STAYS .................................................................................................................................................................... 41 
+IMG_BENE_PMT ............................................................................................................................................................ 42 
+IMG_EVENTS ................................................................................................................................................................. 43 
+IMG_MDCR_PMT .......................................................................................................................................................... 44 
+IMG_PRMRY_PMT ......................................................................................................................................................... 45 
+IP_ER_VISITS .................................................................................................................................................................. 46 
+OIP_BENE_PMT ............................................................................................................................................................. 47 
+OIP_COV_DAYS ............................................................................................................................................................. 48 
+OIP_MDCR_PMT ........................................................................................................................................................... 49 
+OIP_PERDIEM_PMT....................................................................................................................................................... 50 
+OIP_PRMRY_PMT .......................................................................................................................................................... 51 
+OIP_STAYS ..................................................................................................................................................................... 52 
+OPROC_BENE_PMT ....................................................................................................................................................... 53 
+OPROC_EVENTS ............................................................................................................................................................ 54 
+OPROC_MDCR_PMT ..................................................................................................................................................... 55 
+OPROC_PRMRY_PMT .................................................................................................................................................... 56 
+OTHC_BENE_PMT ......................................................................................................................................................... 57 
+OTHC_EVENTS ............................................................................................................................................................... 58 
+OTHC_MDCR_PMT ........................................................................................................................................................ 59 
+OTHC_PRMRY_PMT ...................................................................................................................................................... 60 
+PHYS_BENE_PMT .......................................................................................................................................................... 61 
+PHYS_EVENTS ................................................................................................................................................................ 62 
+PHYS_MDCR_PMT ......................................................................................................................................................... 63 
+PHYS_PRMRY_PMT ....................................................................................................................................................... 64 
+PTB_DRUG_BENE_PMT ................................................................................................................................................. 65 
+PTB_DRUG_EVENTS ...................................................................................................................................................... 66 
+PTB_DRUG_MDCR_PMT ............................................................................................................................................... 67 
+PTB_DRUG_PRMRY_PMT .............................................................................................................................................. 68 
+PTD_BENE_PMT ............................................................................................................................................................ 69 
+PTD_EVENTS .................................................................................................................................................................. 70 
+PTD_FILL_CNT ............................................................................................................................................................... 71 
+PTD_MDCR_PMT ........................................................................................................................................................... 72 
+PTD_TOTAL_RX_CST ...................................................................................................................................................... 73 
+READMISSIONS .............................................................................................................................................................. 74 
+SNF_BENE_PMT ............................................................................................................................................................ 75 
+SNF_COV_DAYS ............................................................................................................................................................. 76 
+SNF_MDCR_PMT ........................................................................................................................................................... 77 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+v 
+SNF_PRMRY_PMT ......................................................................................................................................................... 78 
+SNF_STAYS..................................................................................................................................................................... 79 
+TEST_BENE_PMT ........................................................................................................................................................... 80 
+TEST_EVENTS ................................................................................................................................................................ 81 
+TEST_MDCR_PMT ......................................................................................................................................................... 82 
+TEST_PRMRY_PMT ........................................................................................................................................................ 83 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Medicare Beneficiary Summary File (MBSF) Cost 
+and Use Segment files. Each entry contains variable details to facilitate understanding and use of the variables. 
+ACUTE_BENE_PMT 
+LABEL: 
+Acute Inpatient Hospital Beneficiary Payments 
+DESCRIPTION: This variable is the sum of Medicare coinsurance and deductible payments in the acute inpatient 
+hospital setting for the year. The total acute hospitalization beneficiary payments are calculated as the 
+sum of the beneficiary deductible amount and coinsurance amount (variables called 
+NCH_BENE_IP_DDCTBL_AMT and NCH_BENE_PTA_COINSRNC_LBLTY_AM) for all acute inpatient claims 
+where the CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: ACUTE_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Acute inpatient claims are a subset of the claims in the IP data file consisting of data from both acute 
+hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of the 
+provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. 
+There are two cost/use categories from the IP data files: Acute and OIP. 
+Costs that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a 
+CMS publication called "Your Medicare Benefits,” which explains the deductibles and coinsurance 
+amounts. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+2 
+ACUTE_COV_DAYS 
+LABEL: 
+Acute Inpatient Medicare Covered Days 
+DESCRIPTION: This variable is the count of Medicare covered days in the acute inpatient hospital setting for the year. 
+This variable equals the sum of the CLM_UTLZTN_DAY_CNT variables on the source claims. 
+SHORT NAME: — 
+LONG NAME: ACUTE_COV_DAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+Acute inpatient hospital claims are a subset of the claims in the IP data file consisting of data from both 
+acute hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of 
+the provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. 
+We consider fully covered days, days where the beneficiary was liable for coinsurance, and lifetime 
+reserve days to all be Medicare-covered days. Non-covered days, leave of absence days, and the day of 
+discharge or death are not included. The algorithm for ACUTE_COV_DAYS includes only claims that 
+ended during the calendar year (using the CLM_THRU_DT), and where the payment amount was >= $0. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html) 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+3 
+ACUTE_MDCR_PMT 
+LABEL: 
+Acute Inpatient Medicare Payments 
+DESCRIPTION: This variable is the sum of the Medicare claim payment amounts (CLM_PMT_AMT from each claim) in 
+the acute inpatient hospital setting for a given year. The algorithm includes only Institutional claims that 
+ended during the year of the data file, and where the payment amount was >= $0. To obtain the total 
+acute hospital Medicare payments, take this variable and add in the annual per diem payment amount 
+(ACUTE_MDCR_PMT + ACUTE_PERDIEM_AMT). 
+SHORT NAME: — 
+LONG NAME: ACUTE_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+Acute inpatient hospital claims are a subset of the claims in the IP data file consisting of data from both 
+acute hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of 
+the provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. 
+ACUTE_PERDIEM_PMT must be added to this field to obtain the total acute hospital Medicare payments 
+for the year. The annual per diem variable was new in 2010; it will always be null/missing in earlier files. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html) 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+4 
+ACUTE_PERDIEM_PMT 
+LABEL: 
+Acute Inpatient Hospital Pass-thru Per Diem Payments 
+DESCRIPTION: This variable is the sum of all the pass through per diem payment amounts 
+(CLM_PASS_THRU_PER_DIEM_AMT from each claim) in the acute inpatient hospital setting for the year. 
+Medicare payments are designed to include certain "pass-through" expenses such as capital-related 
+costs, direct medical education costs, kidney acquisition costs for hospitals that are renal transplant 
+centers, and bad debts. This variable is the sum of all the daily payments for pass-through expenses. It is 
+not included in the Medicare Payment amount (ACUTE_MDCR_PMT). To determine the total Medicare 
+payments for acute hospitalizations for the beneficiary, this field must be added to the total Medicare 
+payment amount for acute inpatient hospitalizations. 
+SHORT NAME: — 
+LONG NAME: ACUTE_PERDIEM_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+ACUTE_MDCR_PMT must be added to this field to obtain the total Medicare payments for the year. 
+Acute inpatient hospital claims are a subset of the claims in the IP data file consisting of data from both 
+acute hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of 
+the provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+5 
+ACUTE_PRMRY_PMT 
+LABEL: 
+Acute Inpatient Hospital Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for acute inpatient hospital stays by a primary payer other 
+than Medicare. It is the sum of all the primary payer amounts (NCH_PRMRY_PYR_CLM_PD_AMT from 
+each claim) in the acute inpatient hospital setting for the year. The algorithm includes only claims that 
+ended during the year of the data file, and where the payment amount was >= $0.  
+SHORT NAME: — 
+LONG NAME: ACUTE_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+Acute inpatient claims are a subset of the claims in the IP data file consisting of data from both acute 
+hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of the 
+provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+6 
+ACUTE_STAYS 
+LABEL: 
+Acute Inpatient Stays 
+DESCRIPTION: This variable is the count of acute inpatient hospital stays (unique admissions, which may span more 
+than one facility) for the year. An acute inpatient stay is defined as a set of one or more consecutive 
+acute inpatient hospital claims where the beneficiary is only discharged on the most recent claim in the 
+set. If a beneficiary is transferred to a different provider, the acute stay is continued even if there is a 
+discharge date on the claim from which the beneficiary was transferred. 
+SHORT NAME: — 
+LONG NAME: ACUTE_STAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+The CLM_THRU_DT for the last claim associated with the stay must have been in the year of the data 
+file. Stays that cross-over into another calendar year would only appear in the year when the stay ended 
+(e.g., a stay that began in 2017 but ended in 2018 would only be counted as a stay in the 2018 file). Note 
+that the algorithm considers all claims (in the ACUTE_STAYS and OIP_STAYS variables). However, for the 
+count of covered days (ACUTE_COV_DAYS and OIP_COV_DAYS) and payments (ACUTE_MDCR_PMT and 
+OIP_MDCR_PMT), the algorithms include only claims that ended during the calendar year, and where 
+the payment amount was >= $0. 
+Acute inpatient hospital claims are a subset of the claims in the IP data file consisting of data from both 
+acute hospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of 
+the provider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of PRVDR_NUM = 13. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+7 
+ANES_BENE_PMT 
+LABEL: 
+Anesthesia Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for Part B anesthesia services (ANES) 
+for a given year. The total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + 
+LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+ANES claim lines are a subset of the claims, and a subset of procedures in the Part B carrier data file. 
+ANES claims are defined as those with a line BETOS code (BETOS_CD) where the first two digits = “P0” 
+and the CARR_LINE_MTUS_CD = “2.” 
+SHORT NAME: — 
+LONG NAME: ANES_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+8 
+ANES_EVENTS 
+LABEL: 
+Anesthesia Events 
+DESCRIPTION: This variable is the count of events for Part B anesthesia services (ANES) for a given year. An event is 
+defined as each line item that contains the relevant service. 
+ANES claim lines are a subset of the claims, and a subset of procedures in the Part B carrier data file. 
+ANES claims are defined as those with a line BETOS code (BETOS_CD) where the first two digits = “P0” 
+and the CARR_LINE_MTUS_CD = “2.” 
+SHORT NAME: — 
+LONG NAME: ANES_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+9 
+ANES_MDCR_PMT 
+LABEL: 
+Anesthesia Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B anesthesia services (ANES) for a given year. ANES 
+claims are a subset of the claims, and a subset of procedures in the Part B carrier data file. 
+ANES claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = 
+“P0” and the CARR_LINE_MTUS_CD = “2.” The total Medicare payments are calculated as the sum of 
+LINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: ANES_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+10 
+ANES_PRMRY_PMT 
+LABEL: 
+Anesthesia Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for anesthesia services (ANES) by a primary payer other 
+than Medicare for a given year. ANES claims are a subset of the claims, and a subset of procedures in the 
+Part B carrier data file. 
+ANES claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = 
+“P0” and the CARR_LINE_MTUS_CD= “2.” The total Primary Payer Payments are calculated as the sum of 
+the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: ANES_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+11 
+ASC_BENE_PMT 
+LABEL: 
+Ambulatory Surgery Center Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments in the Part B ambulatory surgery center 
+(ASC) setting for a given year. The total beneficiary payment is calculated as the sum of the 
+LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for all relevant lines. 
+ASC claim lines are a subset of the claims in the Part B carrier data file. The ASC claim lines are identified 
+by the claim lines where the LINE_CMS_TYPE_SRVC_CD =“F.” 
+SHORT NAME: — 
+LONG NAME: ASC_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+12 
+ASC_EVENTS 
+LABEL: 
+Ambulatory Surgery Center Events 
+DESCRIPTION: This variable is the count of events in the Part B ambulatory surgery center (ASC) setting for a given year. 
+An event is defined as each line item that contains an ASC service. 
+ASC claim lines are a subset of the claims in the Part B carrier data file. The ASC claim lines are identified 
+by the claim lines where the LINE_CMS_TYPE_SRVC_CD =“F.” 
+SHORT NAME: — 
+LONG NAME: ASC_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+13 
+ASC_MDCR_PMT 
+LABEL: 
+Ambulatory Surgery Center Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments in the Part B ambulatory surgery center (ASC) setting for a 
+given year. ASC claims are a subset of the claim lines in the Part B carrier data file.  
+The ASC claim lines are identified by the claim lines where the LINE_CMS_TYPE_SRVC_CD = “F.” The 
+total ASC Medicare Payments are calculated as the sum of LINE_NCH_PMT_AMT where the 
+LINE_PRCSG_IND_CD was “A,” “R,” or “S.” 
+SHORT NAME: — 
+LONG NAME: ASC_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+14 
+ASC_PRMRY_PMT 
+LABEL: 
+Ambulatory Surgery Center Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for services in the ambulatory surgery center (ASC) setting 
+by a primary payer other than Medicare for a given year. ASC claims are a subset of the claim lines in the 
+Part B carrier data file. 
+The ASC claim lines are identified by the claim lines where the LINE_CMS_TYPE_SRVC_CD = “F.” The 
+total ASC Primary Payer Payments are calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: ASC_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+15 
+BENE_ENROLLMT_REF_YR 
+LABEL: 
+Reference Year 
+DESCRIPTION: This field indicates the reference year of the enrollment data. 
+SHORT NAME: RFRNC_YR 
+LONG NAME: BENE_ENROLLMT_REF_YR 
+TYPE: 
+NUM 
+LENGTH: 
+4 
+SOURCE: 
+CMS Enrollment Database (EDB) 
+VALUES: 
+1999–current data year 
+COMMENT: 
+The data files are partitioned into calendar year files. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+16 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. 
+The CCW assigns a unique beneficiary identification number to each individual who receives Medicare 
+and/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., 
+Medicare claims, MAX claims, MDS assessment data). 
+This number does not change during a beneficiary’s lifetime and each number is used only once. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME: BENE_ID 
+LONG NAME: BENE_ID 
+TYPE: 
+CHAR 
+LENGTH: 
+15 
+SOURCE: 
+CCW 
+VALUES: 
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+17 
+DIALYS_BENE_PMT 
+LABEL: 
+Dialysis Beneficiary Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B dialysis services (primarily the professional 
+component since treatments are covered in hospital outpatient) for a given year. The total Beneficiary 
+payments are calculated as the sum of LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for the 
+relevant lines. 
+SHORT NAME: — 
+LONG NAME: DIALYS_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+18 
+DIALYS_EVENTS 
+LABEL: 
+Dialysis Events 
+DESCRIPTION: This variable is the total Medicare payments for Part B dialysis services (primarily the professional 
+component since treatments are covered in hospital outpatient) for a given year. An event is defined as 
+each line item that contains the relevant service. Dialysis claims are a subset of the claims, and a subset 
+of procedures in the Part B carrier data file. 
+Dialysis claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = 
+“P9.” 
+SHORT NAME: — 
+LONG NAME: DIALYS_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+19 
+DIALYS_MDCR_PMT 
+LABEL: 
+Dialysis Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B dialysis services (primarily the professional 
+component since treatments are covered in hospital outpatient) for a given year. Dialysis claims are a 
+subset of the claims, and a subset of procedures in the Part B carrier data file. 
+Dialysis claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = 
+“P9.” The total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the 
+LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: DIALYS_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+20 
+DIALYS_PRMRY_PMT 
+LABEL: 
+Dialysis Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Part B dialysis services (primarily the professional 
+component since treatments are covered in hospital outpatient) by a primary payer other than 
+Medicare for a given year. Dialysis claims are a subset of the claims, and a subset of procedures in the 
+Part B carrier data file. 
+Dialysis claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = 
+“P9.” The total Primary Payer Payments are calculated as the sum of the 
+LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: DIALYS_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+21 
+DME_BENE_PMT 
+LABEL: 
+Durable Medical Equipment Beneficiary Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B durable medical equipment (DME) for a given 
+year. The total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + 
+LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Claims for DME are a subset of the claims in the Part B carrier and DME data files. These claim lines are 
+defined as those with a line BETOS code (BETOS_CD) where the first three digits are “D1A,” “D1B,” 
+“D1C,” “D1D,” “D1E,” or “D1F.” 
+SHORT NAME: — 
+LONG NAME: DME_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+22 
+DME_EVENTS 
+LABEL: 
+Durable Medical Equipment Events 
+DESCRIPTION: This variable is the count of events in the Part B durable medical equipment (DME) for a given year. An 
+event is defined as each line item that contains the relevant service. 
+Claims for DME are a subset of the claims in the Part B carrier and DME data files. These claim lines are 
+defined as those with a line BETOS code (BETOS_CD) where the first three digits are “D1A,” “D1B,” 
+“D1C,” “D1D,” “D1E,” or “D1F.” 
+SHORT NAME: — 
+LONG NAME: DME_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+23 
+DME_MDCR_PMT 
+LABEL: 
+Durable Medical Equipment Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B durable medical equipment (DME) for a given 
+year. Claims for DME are a subset of the claims in the Part B carrier and DME data files. 
+These claim lines are defined as those with a line BETOS code (BETOS_CD) where the first three digits 
+are “D1A,” “D1B,” “D1C,” “D1D,” “D1E,” or “D1F.” The total Medicare payments are calculated as the 
+sum of LINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant 
+lines. 
+SHORT NAME: — 
+LONG NAME: DME_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+24 
+DME_PRMRY_PMT 
+LABEL: 
+Durable Medical Equipment Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Part B durable medical equipment (DME) by a primary 
+payer other than Medicare for a given year. Claims for DME are a subset of the claims in the Part B 
+carrier and DME data files. 
+These claim lines are defined as those with a line BETOS code (BETOS_CD) where the first three digits 
+are (“D1A,” “D1B,” “D1C,” “D1D,” “D1E,” or “D1F”). The total Primary Payer Payments are calculated as 
+the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: DME_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+25 
+EM_BENE_PMT 
+LABEL: 
+Evaluation and Management (E/M) Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for the Part B evaluation and 
+management (E/M) services for a given year. The total Beneficiary payments are calculated as the sum 
+of LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+E/M claims are a subset of the claims in the Part B carrier and DME data files, and a subset of physician 
+claims. The E/M claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit 
+= “M” (but is not M1A or M1B — which are categorized as physician office care in this file — reference 
+PHYS_MDCR_PMT). 
+SHORT NAME: — 
+LONG NAME: EM_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+26 
+EM_EVENTS 
+LABEL: 
+Evaluation and Management Events 
+DESCRIPTION: This variable is the count of events for the Part B evaluation and management (E/M) services for a given 
+year. An event is defined as each line item that contains the relevant service. 
+E/M claims are a subset of the claims in the Part B carrier and DME data files, and a subset of physician 
+claims. The E/M claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit 
+= “M” (but is not M1A or M1B — which are categorized as physician office care in this file — reference 
+PHYS_MDCR_PMT). 
+SHORT NAME: — 
+LONG NAME: EM_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+27 
+EM_MDCR_PMT 
+LABEL: 
+Evaluation and Management Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for the Part B evaluation and management (E/M) services 
+for a given year. E/M claims are a subset of the claims in the Part B carrier and DME data files, and a 
+subset of physician claims. 
+The E/M claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit = “M” 
+(but is not “M1A” or “M1B” — which are categorized as physician office care in this file — reference 
+PHYS_MDCR_PMT). The total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT 
+where the LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: EM_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. There are 11 cost/use categories from 
+the carrier Part B and durable medical equipment (DME) data files — ambulatory surgery center (ASC), 
+anesthesia, Part B drug, physician, evaluation and management (E/M), dialysis, imaging, tests, other 
+procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+28 
+EM_PRMRY_PMT 
+LABEL: 
+Evaluation and Management Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for evaluation and management (E/M) services by a 
+primary payer other than Medicare for a given year. E/M claims are a subset of the claims in the Part B 
+carrier and DME data files, and a subset of physician claims. 
+The E/M claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit =“M” 
+(but is not M1A or M1B — which are categorized as physician office care in this file — reference 
+PHYS_MDCR_PMT). The total Primary Payer Payments are calculated as the sum of the 
+LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: EM_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+29 
+ENRL_SRC 
+LABEL: 
+Enrollment Source 
+DESCRIPTION: This variable indicates the source of enrollment data. 
+SHORT NAME: ENRL_SRC 
+LONG NAME: ENRL_SRC 
+TYPE: 
+CHAR 
+LENGTH: 
+3 
+SOURCE: 
+CCW 
+VALUES: 
+EDB = Enrollment Database 
+CME = Common Medicare Environment 
+COMMENT: 
+The Centers for Medicare & Medicaid Services (CMS) has updated the Medicare enrollment source data 
+for the Master Beneficiary Summary File (MBSF). As of March 2017, the MBSF includes Medicare 
+enrollment information from the CMS Common Medicare Environment (CME) rather than the 
+Enrollment Database (EDB). Data from the two sources was nearly identical. The CME improves the 
+identification of Medicare Part B enrollment and also allows for more timely release of the MBSF. 
+The universe of beneficiaries in the CME versus the EDB version of the MBSF are only slightly different. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+30 
+HH_MDCR_PMT 
+LABEL: 
+Home Health Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments in the home health (HH) setting for a given year. The total 
+Medicare payments for HH are calculated as the sum of CLM_PMT_AMT for all HH claims where the 
+CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: HH_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs.  
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+31 
+HH_PRMRY_PMT 
+LABEL: 
+Home Health Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Home Health (HH) visits by a primary payer other than 
+Medicare. It is the sum of all the primary payer amounts (NCH_PRMRY_PYR_CLM_PD_AMT from each 
+claim) in the HH setting for the year. The algorithm includes only claims that ended during the year of 
+the data file, and where the payment amount was >= $0.  
+SHORT NAME: — 
+LONG NAME: HH_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+32 
+HH_VISITS 
+LABEL: 
+Home Health Visits 
+DESCRIPTION: This variable is the count of home health (HH) visits for the year. The CCW variable 
+CLM_HHA_TOT_VISIT_CNT is used to obtain this variable. 
+This algorithm includes all claims with a CLM_PMT_AMT ≥ $0.; therefore it differs from the algorithms 
+used for the other PTA utilization algorithms. 
+SHORT NAME: — 
+LONG NAME: HH_VISITS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+The CLM_THRU_DT for the claim must have been in the year of the data file. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+33 
+HOP_BENE_PMT 
+LABEL: 
+Hospital Outpatient Beneficiary Payments 
+DESCRIPTION: This variable is the sum of Medicare coinsurance and deductible payments in the hospital outpatient 
+(HOP) setting for a given year. The total beneficiary payment is calculated as the sum of the beneficiary 
+deductible amount and coinsurance amount (variables called NCH_BENE_PTB_DDCTBL_AMT and 
+NCH_BENE_PTB_COINSRNC_AMT) for all HOP claims where the CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: HOP_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Costs that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a 
+CMS publication called "Your Medicare Benefits,” which explains the deductibles and coinsurance 
+amounts. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+34 
+HOP_ER_VISITS 
+LABEL: 
+Hospital Outpatient Emergency Room Visits 
+DESCRIPTION: This variable is the count of unique emergency department revenue center dates (as a proxy for an ED 
+visit) in the hospital outpatient data file for the year. Revenue center codes indicating Emergency Room 
+use were (0450, 0451, 0452, 0456, or 0459). 
+SHORT NAME: — 
+LONG NAME: HOP_ER_VISITS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+Additional ED revenue centers are found in the inpatient data files — if the ED visit resulted in an IP 
+admission at the same facility. 
+There are two variables that contain counts of ER visits in different settings: this variable and the 
+Inpatient ER (IP_ER_VISITS). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+35 
+HOP_MDCR_PMT 
+LABEL: 
+Hospital Outpatient Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments in the hospital outpatient (HOP) setting for a given year. 
+The total Medicare payments for HOP are calculated as the sum of CLM_PMT_AMT for all HOP claims 
+where the CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: HOP_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs.  
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+36 
+HOP_PRMRY_PMT 
+LABEL: 
+Hospital Outpatient Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for hospital outpatient (HOP) visits by a primary payer 
+other than Medicare. It is the sum of all the primary payer amounts (NCH_PRMRY_PYR_CLM_PD_AMT 
+from each claim) in the HOP setting for the year. The algorithm includes only claims that ended during 
+the year of the data file, and where the payment amount was >= $0.  
+SHORT NAME: — 
+LONG NAME: HOP_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+37 
+HOP_VISITS 
+LABEL: 
+Hospital Outpatient Visits 
+DESCRIPTION: This variable is the count of revenue center dates (as a proxy for visits) in the hospital outpatient (HOP) 
+setting for the year. Note that the algorithm counts the dates on each of the claim revenue lines; 
+therefore if the same revenue center date appears on two different claims then it is counted as two 
+visits. 
+This algorithm includes all claims regardless of CLM_PMT_AMT. 
+SHORT NAME: — 
+LONG NAME: HOP_VISITS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+The CLM_THRU_DT must have been in the year of the data file. 
+ER visits in the HOP setting are counted in this variable (also reference HOP_ER_VISITS). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+38 
+HOS_COV_DAYS 
+LABEL: 
+Hospice Medicare Covered Days 
+DESCRIPTION: This variable is the count of Medicare covered days in the hospice setting for a given year. This variable 
+equals the sum of the CLM_UTLZTN_DAY_CNT variables on the source claims. This algorithm counts 
+covered days where the CLM_PMT_AMT ≥ $0.  
+SHORT NAME: — 
+LONG NAME: HOS_COV_DAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+We consider fully covered days, days where the beneficiary was liable for coinsurance, and lifetime 
+reserve days to all be Medicare-covered days. Non-covered days, leave of absence days, and the day of 
+discharge or death are not included. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+39 
+HOS_MDCR_PMT 
+LABEL: 
+Hospice Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments in the hospice (HOS) setting for the year. The total 
+Medicare payments for hospice are calculated as the sum of the CLM_PMT_AMT for all hospice claims 
+where the CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: HOS_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+40 
+HOS_PRMRY_PMT 
+LABEL: 
+Hospice Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Hospice stays by a primary payer other than Medicare. 
+It is the sum of all the primary payer amounts (NCH_PRMRY_PYR_CLM_PD_AMT from each claim) in the 
+hospice setting for the year. The algorithm includes only claims that ended during the year of the data 
+file, and where the payment amount was >= $0.  
+SHORT NAME: — 
+LONG NAME: HOS_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+41 
+HOS_STAYS 
+LABEL: 
+Hospice Stays 
+DESCRIPTION: This variable is the count of stays (unique admissions, which may span more than one facility) in the 
+hospice setting for a given year. A hospice stay is defined as a set of one or more consecutive hospice 
+claims where the beneficiary is only discharged on the most recent claim in the set. 
+This algorithm includes all claims regardless of CLM_PMT_AMT. 
+SHORT NAME: — 
+LONG NAME: HOS_STAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+The CLM_THRU_DT must have been in the year of the data file. Stays that cross-over into another 
+calendar year would only appear in the year when the stay ended (e.g., a stay that began in 2017 but 
+ended in 2018 would only be counted as a stay in the 2018 file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+42 
+IMG_BENE_PMT 
+LABEL: 
+Imaging Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for imaging services (IMG) for a given 
+year. The total beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + 
+LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Claims for imaging procedures are a subset of the claims, and a subset of procedures in the Part B carrier 
+and DME data files. These imaging claim lines are defined as those with a line BETOS code (BETOS_CD) 
+where the first digit = I (except for “I1E,” or “I1F” — which are considered Part B drugs). 
+SHORT NAME: — 
+LONG NAME: IMG_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+43 
+IMG_EVENTS 
+LABEL: 
+Imaging Events 
+DESCRIPTION: This variable is the count of events for imaging services (IMG) for a given year. An event is defined as 
+each line item that contains the relevant service. Claims for imaging procedures are a subset of the 
+claims, and a subset of procedures in the Part B carrier and DME data files. 
+These imaging claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit 
+=I (except for “I1E,” or “I1F” — which are considered Part B drugs). 
+SHORT NAME: — 
+LONG NAME: IMG_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+44 
+IMG_MDCR_PMT 
+LABEL: 
+Imaging Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for imaging services (IMG) for a given year. Claims for 
+imaging procedures are a subset of the claims, and a subset of procedures in the Part B carrier and DME 
+data files. 
+These imaging claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit = 
+“I” (except for “I1E” or “I1F” — which are considered Part B drugs). 
+The total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the 
+LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: IMG_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+45 
+IMG_PRMRY_PMT 
+LABEL: 
+Imaging Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for imaging services (IMG) by a primary payer other than 
+Medicare for a given year. This variable is the total Medicare payments for imaging services (IMG) for a 
+given year. Claims for imaging procedures are a subset of the claims, and a subset of procedures in the 
+Part B carrier and DME data files. 
+These imaging claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit 
+=I (except for “I1E,” or “I1F” — which are considered Part B drugs). The total Primary Payer Payments 
+are calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: IMG_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+— 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+46 
+IP_ER_VISITS 
+LABEL: 
+Inpatient Emergency Room Visits 
+DESCRIPTION: This variable is the count of emergency department (ED) claims in the inpatient setting for the year. The 
+revenue center codes indicating Emergency Room use were (0450, 0451, 0452, 0456, 0459). 
+SHORT NAME: — 
+LONG NAME: IP_ER_VISITS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+Additional ED revenue centers are found in the Hospital Outpatient data files — if the ED visit did not 
+result in an inpatient admission at the same facility. Reference the variable HOP_ER_VISITS within the 
+MBSF-CU file. 
+There are two variables that contain counts of ER visits in different settings: this variable and the 
+Hospital Outpatient ER (HOP_ER_VISITS). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+47 
+OIP_BENE_PMT 
+LABEL: 
+Other Inpatient Hospital Beneficiary Payments 
+DESCRIPTION: This variable is the sum of Medicare coinsurance and deductible payments in the non-acute inpatient 
+hospital setting for the year. The total “other” inpatient (OIP) beneficiary payments are calculated as the 
+sum of NCH_BENE_IP_DDCTBL_AMT and NCH_BENE_PTA_COINSRNC_LBLTY_AM for all relevant claims 
+where the CLM_PMT_AMT >= 0. 
+These OIP claims are a subset of the claims in the IP data file consisting of data from IP settings such as 
+long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation facilities, and other types 
+of IP facilities such as children’s hospitals or cancer centers. 
+SHORT NAME: — 
+LONG NAME: OIP_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Costs that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a 
+CMS publication called "Your Medicare Benefits,” which explains the deductibles and coinsurance 
+amounts. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+48 
+OIP_COV_DAYS 
+LABEL: 
+Other Inpatient Hospital Covered Days 
+DESCRIPTION: This variable is the count of covered days in the non-acute inpatient hospital setting for the year. This 
+variable equals the sum of the CLM_UTLZTN_DAY_CNT variables on the source claims. 
+These “other” inpatient (OIP) claims are a subset of the claims in the IP data file consisting of data from 
+IP settings such as long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation 
+facilities, and other types of IP facilities such as children’s hospitals or cancer centers. 
+SHORT NAME: — 
+LONG NAME: OIP_COV_DAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+We consider fully covered days, days where the beneficiary was liable for coinsurance, and lifetime 
+reserve days to all be Medicare-covered days. Non-covered days, leave of absence days, and the day of 
+discharge or death are not included. The algorithm for OIP_COV_DAYS includes only claims that ended 
+during the calendar year (using the CLM_THRU_DT), and where the payment amount was >= $0.  
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+49 
+OIP_MDCR_PMT 
+LABEL: 
+Other Inpatient Hospital Medicare Payments 
+DESCRIPTION: This variable is the sum of the Medicare claim payment amounts (CLM_PMT_AMT from each claim) in 
+the other inpatient (OIP) settings for a given year. The algorithm includes only Institutional claims that 
+ended during the year of the data file, and where the payment amount was >= $0.  To obtain the total 
+OIP Medicare payments, take this variable and add in the annual per diem payment amount 
+(OIP_MDCR_PMT + OIP_PERDIEM_AMT). 
+These OIP claims are a subset of the claims in the IP data file consisting of data from IP settings such as 
+long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation facilities, and other types 
+of IP facilities such as children’s hospitals or cancer centers. 
+SHORT NAME: — 
+LONG NAME: OIP_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+OIP_PERDIEM_PMT must be added to this field to obtain the total Medicare payments. The annual per 
+diem variable was new in 2010; it will always be null/missing in earlier files. 
+Costs that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a 
+CMS publication called "Your Medicare Benefits,” which explains the deductibles and coinsurance 
+amounts. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+50 
+OIP_PERDIEM_PMT 
+LABEL: 
+Other Inpatient Hospital Pass-thru Per Diem Payments 
+DESCRIPTION: This variable is the sum of all the pass through per diem payment amounts 
+(CLM_PASS_THRU_PER_DIEM_AMT from each claim) in the other inpatient (OIP) setting for the year. 
+Medicare payments are designed to include certain "pass-through" expenses such as capital-related 
+costs, direct medical education costs, kidney acquisition costs for hospitals that are renal transplant 
+centers, and bad debts. This variable is the sum of all the daily payments for pass-through expenses. It is 
+not included in the Medicare Payment amount (OIP_MDCR_PMT). To determine the total Medicare 
+payments for other (non-acute) hospitalizations for the beneficiary, this field must be added to the total 
+Medicare payment amount for other hospitalizations. 
+These “other” inpatient (OIP) claims are a subset of the claims in the IP data file consisting of data from 
+IP settings such as long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation 
+facilities, and other types of IP facilities such as children’s hospitals or cancer centers. 
+SHORT NAME: — 
+LONG NAME: OIP_PERDIEM_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. OIP_MDCR_PMT must be 
+added to this field to obtain the total Medicare payments. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+51 
+OIP_PRMRY_PMT 
+LABEL: 
+Other Inpatient Hospital Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for other (non-acute) inpatient stays by a primary payer 
+other than Medicare. It is the sum of all the primary payer amounts (NCH_PRMRY_PYR_CLM_PD_AMT 
+from each claim) in the other inpatient hospital settings for the year. The algorithm includes only claims 
+that ended during the year of the data file, and where the payment amount was >= $0. 
+These “other” inpatient (OIP) claims are a subset of the claims in the IP data file consisting of data from 
+IP settings such as long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation 
+facilities, and other types of IP facilities such as children’s hospitals or cancer centers. 
+SHORT NAME: — 
+LONG NAME: OIP_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+52 
+OIP_STAYS 
+LABEL: 
+Other Inpatient Stays 
+DESCRIPTION: This variable is the count of hospital stays (unique admissions, which may span more than one facility) in 
+the non-acute inpatient setting for a given year. A non-acute inpatient stay is defined as a set of one or 
+more consecutive non-acute inpatient claims where the beneficiary is only discharged on the most 
+recent claim in the set. The CLM_THRU_DT for the last claim associated with the stay must have been in 
+the year of the data file. Stays that cross-over into another calendar year would only appear in the year 
+when the stay ended (e.g., a stay that began in 2017 but ended in 2018 would only be counted as a stay 
+in the 2018 file).  
+These “other” inpatient (OIP) claims are a subset of the claims in the IP data file consisting of data from 
+IP settings such as long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation 
+facilities, and other types of IP facilities such as children’s hospitals or cancer centers. 
+SHORT NAME: — 
+LONG NAME: OIP_STAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+The algorithm considers all claims (for the ACUTE_STAYS and OIP_STAYS variables). However, for the 
+count of covered days (ACUTE_COV_DAYS and OIP_COV_DAYS) and payments (ACUTE_MDCR_PMT and 
+OIP_MDCR_PMT), the algorithms include only claims that ended during the year of the data file, and 
+where the payment amount was >= $0.  
+There are two cost/use categories from the IP data files: Acute and the OIP. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+53 
+OPROC_BENE_PMT 
+LABEL: 
+Other Procedures Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for services considered Part B other 
+procedures (i.e., not anesthesia or dialysis) for a given year. The total Beneficiary payments are 
+calculated as the sum of LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Claims for other procedures are a subset of the claims in the Part B carrier data file. These other 
+procedure claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits 
+are (“P1,” “P2,” “P3,” “P4,” “P5,” “P6,” “P7,” or “P8”). 
+SHORT NAME: — 
+LONG NAME: OPROC_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+54 
+OPROC_EVENTS 
+LABEL: 
+Other Procedures Events 
+DESCRIPTION: This variable is the count of events for Part B other procedures for a given year. An event is defined as 
+each line item that contains the relevant service. Claims for other procedures are a subset of the claims 
+in the Part B carrier data file. 
+These other procedure claim lines are defined as those with a line BETOS code (BETOS_CD) where the 
+first two digits are (“P1,” “P2,” “P3,” “P4,” “P5,” “P6,” “P7,” or “P8”). 
+SHORT NAME: — 
+LONG NAME: OPROC_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+55 
+OPROC_MDCR_PMT 
+LABEL: 
+Other Procedures Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for services considered Part B other procedures (i.e., not 
+anesthesia or dialysis) for a given year. Claims for other procedures are a subset of the claims, and a 
+subset of procedures in the Part B carrier data file. 
+These other procedure claim lines are defined as those with a line BETOS code (BETOS_CD) where the 
+first two digits are “P1,” “P2,” “P3,” “P4,” “P5,” “P6,” “P7,” or “P8.” 
+The total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the 
+LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: OPROC_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+56 
+OPROC_PRMRY_PMT 
+LABEL: 
+Other Procedures Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for services considered Part B other procedures (i.e., not 
+anesthesia or dialysis) by a primary payer other than Medicare for a given year. Claims for other 
+procedures are a subset of the claims, and a subset of procedures in the Part B carrier data file. 
+These other procedure claim lines are defined as those with a line BETOS code (BETOS_CD) where the 
+first two digits are “P1,” “P2,” “P3,” “P4,” “P5,” “P6,” “P7,” or “P8.” The total Primary Payer Payments 
+are calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: OPROC_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+— 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+57 
+OTHC_BENE_PMT 
+LABEL: 
+Other Part B Carrier Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments from Part B carrier and DME claims 
+which appear in settings other than the 10 specific categories which are part of this file for a given year. 
+The total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + 
+LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Claims for other carrier/DME claim lines are a subset of the claims in the Part B carrier and DME data 
+files. Types of services which may have been summarized in this other carrier category (OTHC) include 
+ambulance, chiropractor, chemotherapy, vision, hearing, and speech services, etc. 
+SHORT NAME: — 
+LONG NAME: OTHC_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+58 
+OTHC_EVENTS 
+LABEL: 
+Other Part B Carrier Events 
+DESCRIPTION: This variable is the count of events in the Part B other setting for a given year, which includes Part B 
+carrier and DME claims which appear in settings other than the 10 specific categories which are part of 
+this file for a given year. Claim lines for other carrier/DME claims are a subset of the claims in the Part B 
+carrier and DME data files. 
+Types of services which may have been summarized in this other carrier category (OTHC) include 
+ambulance, chiropractor, chemotherapy, vision, hearing, and speech services, etc. 
+An event is defined as each line item that contains the relevant service. 
+SHORT NAME: — 
+LONG NAME: OTHC_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+59 
+OTHC_MDCR_PMT 
+LABEL: 
+Other Part B Carrier Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments from Part B carrier and DME claims which appear in 
+settings other than the 10 specific categories which are part of this file for a given year. Claims for other 
+carrier/DME claim lines are a subset of the claims in the Part B carrier and DME data files. Types of 
+services which may have been summarized in this other carrier category (OTHC) include ambulance, 
+chiropractor, chemotherapy, vision, hearing, and speech services, etc. 
+The total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the 
+LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: OTHC_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+60 
+OTHC_PRMRY_PMT 
+LABEL: 
+Other Part B Carrier Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Part B carrier and DME claims which appear in settings 
+other than the 10 specific categories which are part of this file by a primary payer other than Medicare 
+for a given year. Claim lines for other carrier/DME claims are a subset of the claims in the Part B carrier 
+and DME data files. Types of services which may have been summarized in this other carrier category 
+(OTHC) include ambulance, chiropractor, chemotherapy, vision, hearing, and speech services, etc. 
+The total Primary Payer Payments are calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: OTHC_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+61 
+PHYS_BENE_PMT 
+LABEL: 
+Part B Physician Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for the Part B physician office services 
+(PHYS) for a given year. The total Beneficiary payments are calculated as the sum of 
+LINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Physician office claims are a subset of the claim lines in the Part B carrier and DME data files, and a 
+subset of physician evaluation and management (E/M) claim lines (NOTE: E/M are tabulated separately 
+in this data file). The PHYS claims are defined as those with a line BETOS code (BETOS_CD) where the 
+first three digits = “M1A” or “M1B” (the remainder of physician services which occur in different settings 
+appear in EM_MDCR_PMT). 
+SHORT NAME: — 
+LONG NAME: PHYS_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+62 
+PHYS_EVENTS 
+LABEL: 
+Part B Physician Events 
+DESCRIPTION: This variable is the count of events in the Part B physician office services (PHYS) for a given year. An 
+event is defined as each line item that contains the relevant service. 
+Physician office claim lines are a subset of the claims in the Part B carrier and DME data files, and a 
+subset of physician evaluation and management (E/M) claim lines (NOTE: E/M are tabulated separately 
+in this data file). The PHYS claims are defined as those with a line BETOS code (BETOS_CD) where the 
+first three digits = “M1A” or “M1B” (the remainder of physician services which occur in different settings 
+appear in EM_MDCR_PMT). 
+SHORT NAME: — 
+LONG NAME: PHYS_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+63 
+PHYS_MDCR_PMT 
+LABEL: 
+Part B Physician Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for the Part B physician office services (PHYS) for a given 
+year. Physician office claims are a subset of the claim lines in the Part B carrier and DME data files, and a 
+subset of physician evaluation and management (E/M) claim lines (NOTE: E/M are tabulated separately 
+in this data file). 
+The physician claim lines are defined as those with a line BETOS code (BETOS_CD) where the first 3 digits 
+= “M1A” or “M1B” (NOTE: all other BETOS_CD that begin with “M” are categorized as other E/M 
+services in this file — reference EM_MDCR_PMT). The total Medicare payments are calculated as the 
+sum of LINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant 
+lines. 
+SHORT NAME: — 
+LONG NAME: PHYS_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+64 
+PHYS_PRMRY_PMT 
+LABEL: 
+Part B Physician Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Part B physician office services (PHYS) by a primary 
+payer other than Medicare for a given year. Physician office claims are a subset of the claim lines in the 
+Part B carrier and DME data files, and a subset of physician evaluation and management (E/M) claims 
+(NOTE: E/M are tabulated separately in this data file). 
+The PHYS claim lines are defined as those with a line BETOS code (BETOS_CD) where the first three digits 
+= “M1A” or “M1B” (the remainder of physician services which occur in different settings appear in 
+EM_MDCR_PMT). The total Primary Payer Payments are calculated as the sum of the 
+LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: PHYS_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+— 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+65 
+PTB_DRUG_BENE_PMT 
+LABEL: 
+Part B Drug Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for Part B drugs for a given year. The 
+total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + 
+LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Part B drug claims are a subset of the claims in the Part B carrier and DME data files. The Part B drug 
+claim lines are identified by BETOS codes (CCW variable BETOS_CD with values of “D1G,” “O1D,” “O1E,” 
+“O1G,” “I1E,” or “I1F”). 
+SHORT NAME: — 
+LONG NAME: PTB_DRUG_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+66 
+PTB_DRUG_EVENTS 
+LABEL: 
+Part B Drug Events 
+DESCRIPTION: This variable is the count of events in the Part B drug setting for a given year. An event is defined as each 
+line item that contains the relevant service. 
+Part B drug claims are a subset of the claims in the Part B carrier and DME data files. The Part B drug 
+claim lines are identified by BETOS codes (CCW variable BETOS_CD with values of “D1G,” “O1D,” “O1E,” 
+“O1G,” “I1E,” or “I1F”). 
+SHORT NAME: — 
+LONG NAME: PTB_DRUG_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+67 
+PTB_DRUG_MDCR_PMT 
+LABEL: 
+Part B Drug Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B drugs for a given year. Part B drug claims are a 
+subset of the claims in the Part B carrier and DME data files. 
+The Part B drug claim lines are identified by BETOS codes (CCW variable BETOS_CD with values of “D1G,” 
+“O1D,” “O1E,” “O1G,” “I1E,” or “I1F”). Total Part B drug payments are calculated as sum of 
+LINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S.” 
+SHORT NAME: — 
+LONG NAME: PTB_DRUG_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+68 
+PTB_DRUG_PRMRY_PMT 
+LABEL: 
+Part B Drug Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Part B drugs by a primary payer other than Medicare for 
+a given year. Part B drug claims are a subset of the claims in the Part B carrier and DME data files. 
+The Part B drug claim lines are identified by BETOS codes (CCW variable BETOS_CD with values of “D1G,” 
+“O1D,” “O1E,” “O1G,” “I1E,” or “I1F”). Total Part B drug payments from a Primary Payer are calculated 
+as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: PTB_DRUG_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+— 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+69 
+PTD_BENE_PMT 
+LABEL: 
+Part D Beneficiary Payments 
+DESCRIPTION: This variable is the dollar amount that the beneficiary paid for all PDEs for a given year, without being 
+reimbursed by a third party. The amount includes all copayments, coinsurance, deductible, or other 
+patient payment amounts, and comes directly from the source Prescription Drug Events (PDEs). 
+The total beneficiary payments are calculated as the sum of three CCW variables: patient pay amount 
+(PTNT_PAY_AMT), other troop amount (OTHER_TROOP_AMT), and patient liability reduction due to 
+other payer amount (PLRO_AMT) for Part D drugs for the relevant PDEs. 
+SHORT NAME: — 
+LONG NAME: PTD_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This amount contributes to a beneficiary’s true out-of-pocket (TrOOP) costs, but only if it is for a Part D-
+covered drug (i.e., spending on non-covered drugs does not count toward the TrOOP amount). 
+NOTE: Another PDE variable called the low-income cost sharing (LIS) amount (variable name LICS_AMT), 
+indicates the amount paid by Part D low-income subsidy for the PDE. Although this is sometimes 
+considered a beneficiary payment (since it is made on behalf of a beneficiary), we have included the LIS 
+payments in the Part D Medicare Payment amount (reference variable called PTD_MDCR_PMT). 
+The value will be null if the beneficiary was not enrolled in Part D or did not use any Part D drugs during 
+the year. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+70 
+PTD_EVENTS 
+LABEL: 
+Part D Event Count 
+DESCRIPTION: This variable is the count of events for Part D drugs for a given year (i.e., a unique count of the PDE_IDs). 
+An event is a dispensed (filled) drug prescription that appears in the Prescription Drug Event (PDE) file. 
+SHORT NAME: — 
+LONG NAME: PTD_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXXX 
+COMMENT: 
+The value will be null if the beneficiary was not enrolled in Part D or did not use any Part D drugs during 
+the year. 
+PDEs consist of highly variable days’ supply of the medication. We also create a derived variable that 
+counts a standard 30-day supply of a filled Part D prescription (reference PTD_FILL_CNT). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+71 
+PTD_FILL_CNT 
+LABEL: 
+Part D Standardized Fill Count 
+DESCRIPTION: Part D prescribing events (PDE) consist of highly variable days’ supply of the medication. This derived 
+variable creates a standard 30 days’ supply of a filled Part D prescription and counts this as a 
+standardized “fill.”  
+This field is calculated using the source PDE field for the days supply of the medication 
+(DAYS_SUPLY_NUM) The Part D standardized fill count does not indicate the number of different drugs 
+the person is using, only the total months covered by a medication (e.g., if a patient is receiving a full 
+year supply of a medication, whether this occurs in one transaction or 12 monthly transactions, the fill 
+count = 12; if the patient is taking three such medications, the fill count = 36). 
+SHORT NAME: — 
+LONG NAME: PTD_FILL_CNT 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXXX 
+COMMENT: 
+The value will be null if the beneficiary was not enrolled in Part D or did not use any Part D drugs during 
+the year. 
+We also calculate the actual number of prescription drug fill events for Part D drugs for a given year (i.e., 
+a unique count of the PDE_IDs); reference variable PTD_EVENTS. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+72 
+PTD_MDCR_PMT 
+LABEL: 
+Part D Medicare Payments 
+DESCRIPTION: This variable is the dollar amount that the Part D plan covered for all covered drugs for a given year. The 
+variable is calculated as the sum of the plan payments for covered PDEs (CVRD_D_PLAN_PD_AMT) and 
+the low-income cost sharing subsidy amount (LICS_AMT) during the year. 
+SHORT NAME: — 
+LONG NAME: PTD_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable does not include all costs to Medicare for the Part D benefit; it does not include non-
+covered drugs (PDE variable called NCVRD_PLAN_PD_AMT) also does not consider include any 
+applicable rebate amounts or other discounts). 
+Plans may choose to provide enhanced benefits that pay for some non-covered drugs. 
+The value will be null if the beneficiary was not enrolled in Part D or did not use any Part D drugs during 
+the year. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+73 
+PTD_TOTAL_RX_CST 
+LABEL: 
+Part D Total Prescription Costs 
+DESCRIPTION: This variable is the gross drug cost (TOT_RX_CST_AMT) of all Part D drugs for a given year. This value 
+includes the ingredient cost, dispensing fee, sales tax (if applicable), and vaccine administration fee (if 
+any, 2010+ only). 
+SHORT NAME: — 
+LONG NAME: PTD_TOTAL_RX_CST 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This is the price paid for the drug at the point of sale (i.e., the pharmacy counter), and it does not 
+include any rebates or discounts that the drug manufacturer provides directly to the Part D plan 
+sponsor. 
+The value will be null if the beneficiary was not enrolled in Part D or did not use any Part D drugs during 
+the year. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+74 
+READMISSIONS 
+LABEL: 
+Acute Inpatient Hospital Readmissions 
+DESCRIPTION: This variable is the count of hospital readmissions in the acute inpatient setting for a given year. 
+The CLM_THRU_DT for the original admission must have been in the year of the data file, however it 
+was permissible for the readmission claim to have occurred in January of the following year. A 
+beneficiary is considered to be readmitted when they have an acute inpatient stay with a discharge 
+status that is not expired (DSCHRG_STUS=20) or left against medical advice (DSCHRG_STUS not equal to 
+07) within 30 days of a previous acute inpatient stay with a discharge status that is also not expired or 
+left against medical advice. 
+SHORT NAME: — 
+LONG NAME: READMISSIONS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+All hospital stays during the year, including readmissions, are counted in the ACUTE_STAYS variable. 
+Similarly, all acute hospital inpatient payments including payments for readmissions are included in the 
+ACUTE_* payment variables. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+75 
+SNF_BENE_PMT 
+LABEL: 
+Skilled Nursing Facility Beneficiary Payments 
+DESCRIPTION: This variable is the sum of Medicare coinsurance and deductible payments in the skilled nursing facility 
+(SNF) setting for the year. The total beneficiary payment is calculated as the sum of the beneficiary 
+deductible amount and coinsurance amount (variables called NCH_BENE_IP_DDCTBL_AMT and 
+NCH_BENE_PTA_COINSRNC_LBLTY_AM) for all SNF claims where the CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: SNF_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Costs that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a 
+CMS publication called "Your Medicare Benefits,” which explains the deductibles and coinsurance 
+amounts. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+76 
+SNF_COV_DAYS 
+LABEL: 
+Skilled Nursing Facility Medicare Covered Days 
+DESCRIPTION: This variable is the count of Medicare covered days in the skilled nursing facility (SNF) setting for the 
+year. This variable equals the sum of the CLM_UTLZTN_DAY_CNT variables on the source claims. This 
+algorithm counts covered days where the CLM_PMT_AMT ≥ $0.  
+SHORT NAME: — 
+LONG NAME: SNF_COV_DAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+We consider fully covered days, days where the beneficiary was liable for coinsurance, and lifetime 
+reserve days to all be Medicare-covered days. Non-covered days, leave of absence days, and the day of 
+discharge or death are not included. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+77 
+SNF_MDCR_PMT 
+LABEL: 
+Skilled Nursing Facility Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments in the skilled nursing facility (SNF) setting for the year. 
+The total Medicare payments for SNF are calculated as the sum of the CLM_PMT_AMT for all SNF claims 
+where the CLM_PMT_AMT >= 0. 
+SHORT NAME: — 
+LONG NAME: SNF_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the CLM_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs.  
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+78 
+SNF_PRMRY_PMT 
+LABEL: 
+Skilled Nursing Facility Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for skilled nursing facility setting (SNF) stays by a primary 
+payer other than Medicare. It is the sum of all the primary payer amounts 
+(NCH_PRMRY_PYR_CLM_PD_AMT from each claim) in the SNF setting for the year. This algorithm 
+includes claims where the CLM_PMT_AMT ≥ $0. 
+SHORT NAME: — 
+LONG NAME: SNF_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable was new in 2010; it will always be null/missing in earlier files. 
+Medicare payments are described in detail in a series of Medicare Payment Advisory Commission 
+(MedPAC) documents called “Payment Basics” (reference: http://www.medpac.gov/-documents-
+/payment-basics). 
+Also in the Medicare Learning Network (MLN) “Payment System Fact Sheet Series” (reference the list of 
+MLN publications at: http://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-
+MLN/MLNProducts/MLN-Publications.html). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+79 
+SNF_STAYS 
+LABEL: 
+Skilled Nursing Facility Stays 
+DESCRIPTION: This variable is the count of skilled nursing facility setting (SNF) stays (unique admissions, which may 
+span more than one facility) for a given year. A SNF stay is defined as a set of one or more consecutive 
+SNF claims where the beneficiary is only discharged on the most recent claim in the set. 
+This algorithm includes all claims regardless of CLM_PMT_AMT. 
+SHORT NAME: — 
+LONG NAME: SNF_STAYS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+The CLM_THRU_DT for the last claim associated with the stay must have been in the year of the data 
+file. Stays that cross-over into another calendar year would only appear in the year when the stay ended 
+(e.g., a stay that began in 2017 but ended in 2018 would only be counted as a stay in the 2018 file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+80 
+TEST_BENE_PMT 
+LABEL: 
+Tests Beneficiary Payments 
+DESCRIPTION: This variable is the sum of coinsurance and deductible payments for Part B tests for a given year. The 
+total Beneficiary payments are calculated as the sum of LINE_COINSRNC_AMT + 
+LINE_BENE_PTB_DDCTBL_AMT for the relevant lines. 
+Claims for tests are a subset of the claims in the Part B carrier data file. These claim lines are defined as 
+those with a line BETOS code (BETOS_CD) where the first digit = T. 
+SHORT NAME: — 
+LONG NAME: TEST_BENE_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+81 
+TEST_EVENTS 
+LABEL: 
+Tests Events 
+DESCRIPTION: This variable is the count of events in for Part B tests for a given year. An event is defined as each line 
+item that contains the relevant service. Claims for tests are a subset of the claims in the Part B carrier 
+data file. 
+These claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit = T. 
+SHORT NAME: — 
+LONG NAME: TEST_EVENTS 
+TYPE: 
+NUM 
+LENGTH: 
+6 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+Null/missing or 1–XXX 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+82 
+TEST_MDCR_PMT 
+LABEL: 
+Tests Medicare Payments 
+DESCRIPTION: This variable is the total Medicare payments for Part B tests for a given year. Claims for tests are a 
+subset of the claims in the Part B carrier data file. 
+These claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit = “T.” The 
+total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the 
+LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. 
+SHORT NAME: — 
+LONG NAME: TEST_MDCR_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+Starting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the provider, 
+rather it may include adjustments due to ACO or PBP programs. 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 
+83 
+TEST_PRMRY_PMT 
+LABEL: 
+Tests Primary Payer Amount 
+DESCRIPTION: This variable indicates the total amount paid for Part B tests by a primary payer other than Medicare for 
+a given year. Claims for tests are a subset of the claims in the Part B carrier data file. 
+These claim lines are defined as those with a line BETOS code (BETOS_CD) where the first digit = T. The 
+total Primary Payer Payments are calculated as the sum of the LINE_BENE_PRMRY_PYR_PD_AMT. 
+SHORT NAME: — 
+LONG NAME: TEST_PRMRY_PMT 
+TYPE: 
+NUM 
+LENGTH: 
+12 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+There are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data 
+files — ambulatory surgery center (ASC), anesthesia, Part B drug, physician, evaluation and management 
+(E/M), dialysis, imaging, tests, other procedures, DME and other carrier claims. 
+^ Back to TOC ^

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__codebook-mbsf-cc_pdf__67b8f2251b__p88__chunk_0",
+  "source_document": "data/raw/assets/pdf/67b8f2251b8ce41fa22290227e10b8b8ec333559.pdf",
+  "page": 88,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 \n82 \nSTROKE_TIA \nLABEL: \nStroke / Transient Ischemic Attack End-of-Year Indicator \nDESCRIPTION: This variable indicates whether a beneficiary met the Chronic Condition Warehouse (CCW) criteria for \nstroke / transient ischemic attack (TIA) as of the end of the calendar year. \nSHORT NAME: STRKETIA \nLONG NAME: STROKE_TIA \nTYPE: \nNUM \nLENGTH: \n1 \nSOURCE: \nCCW (derived)",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cc.pdf"
+}

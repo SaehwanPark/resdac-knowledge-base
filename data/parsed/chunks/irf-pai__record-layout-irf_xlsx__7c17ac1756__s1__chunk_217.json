@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_217",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "within the assessment period regardless of whether taking pain medication at the time of admission. Pain refers to any type of physical pain or discomfort in any part of the body. 00 = 00, 01 = 01, 02 = 02, 03 = 03, 04 = 04, 05 = 05, -6 = 06, 07 = 07, 08 = 08, 09 = 09, 10 = 10\n178 _51D MOST_SVR_PN_RATE_DSCHRG_CD (51d) Rate the Highest Level of Pain Reported by the Patient Within the Assessment Period: Discharge CHAR 2 A rating indicating the highest level of pain reported by the patient within",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

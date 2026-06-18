@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__data-documentation__2617b90539__chunk_21",
+  "source_document": "data/raw/html/documentation_page/2617b90539062fe66e0d34c18b850febb573183e.html",
+  "page": null,
+  "text": "1 Core HRSN Resolved | \n\n | NN_CORE_ALL_RSLVD_SW | All Core HRSNs Resolved | \n\n | NN_CORE_ALL_CNCTED_TO_CSP_SW | All Core HRSNs: Connected to CSP | \n\n | NN_CORE_ALL_OPTOUT_NVGTN_SW | All Core HRSNs: Opted Out of Further Navigation Services | \n\n | NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW | All Core HRSNs: Attempt to Reach Failed | \n\n | NN_CORE_ALL_CSP_UNAVLBL_SW | All Core HRSNs: CSP Unavailable or Unable to Help | \n\n | NN_CORE_ALL_OUTCM_UNK_SW | All Core HRSNs: Outcome Unknown | \n\n |",
+  "dataset": "ahc-model",
+  "url": "https://resdac.org/cms-data/files/ahc-model/data-documentation"
+}

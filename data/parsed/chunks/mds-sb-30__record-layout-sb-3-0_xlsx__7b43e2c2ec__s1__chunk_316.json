@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_316",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Staff Frequency of Indicator of Pain or Possible Pain Frequency Code CHAR 1 The data in this column indicates the frequency of the resident's pain or possible pain in the last five days. -=Not assessed/no information\n 1=Indicators of pain or possible pain observed 1 to 2 days\n 2=Indicators of pain or possible pain observed 3 to 4 days\n 3=Indicators of possible pain observed daily\n^=Blank (skip pattern)\n350 J1100A_SOB_EXRTN_CD J1100A_SOB_EXRTN_CD J1100A Shortness of Breath With Exertion Code",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

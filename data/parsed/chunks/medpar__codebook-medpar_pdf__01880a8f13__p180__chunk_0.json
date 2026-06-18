@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p180__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 180,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n164 \nOUTLIER_DAY_CNT \nLABEL: \nDays paid as outliers (either day or cost) under PPS beyond DRG threshold \nDESCRIPTION: The count of the number of days paid as outliers (either a day or cost outlier) under PPS beyond the DRG \nthreshold. \nSHORT NAME: OUTLRDAY \nLONG NAME: OUTLIER_DAY_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by checking the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

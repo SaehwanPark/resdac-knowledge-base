@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_80",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Understands; \"-\" = Unknown, -2 = Space.\n152 C7 C7_CHANGE_IN_COMM (C7) Change in Communication/Hearing CHAR 1 Communications/hearing patterns: change in communication/hearing. 0 = No change, 1 = Improved, 2 = Deteriorated. \"-\" = Unknown, -2 = Space.\n153 D1 D1_VISION (D1) Vision CHAR 1 Vision Patterns: vision. 0 = Adequate - sees fine detail, including regular print in newspapers/bookds; 1 = Impaired - sees larged print, but not regular print in newspapers/books; 2= Moderately Impaired - limited",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

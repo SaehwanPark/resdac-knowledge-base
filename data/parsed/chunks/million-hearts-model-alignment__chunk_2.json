@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-alignment__chunk_2",
+  "source_document": "data/raw/html/dataset_page/2ef35ad68b97b1a876f94af5cf18da99eb2b9d36.html",
+  "page": null,
+  "text": "highlights)\n- Model-Assigned Practice ID\n- Practice Name\n- Practice TIN\n- Unique Model-Assigned Patient ID\n- Aligned Flag\n- Eligible Flag\n- Patient Status Change Reason Code\nA record represents the eligibility and alignment status of a beneficiary.\nThe Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link to other CCW non-Million Hearts® files.\nThe Model-Assigned Practice ID can be used to link all",
+  "dataset": "million-hearts-model-alignment",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-alignment?page=1"
+}

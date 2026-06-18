@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p87__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 87,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n69 \nCLM_FROM_DT \nLABEL: \nClaim From Date \nDESCRIPTION: The first day on the billing statement covering services rendered to the beneficiary (aka “Statement \nCovers From Date”). \nSHORT NAME: FROM_DT \nLONG NAME: CLM_FROM_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nFor home health prospective payment system (PPS) claims, the “from” date and the “thru” date",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_876",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Correct CHAR 1 x\nC0400A_RCALL_FIRST_WORD_CD Recall: Able to recall 'sock' Indicates patient's ability to recall the word 'sock' from C0200 word repetition exercise. 0. No – could not recall \n1. Yes, after cueing (\"something to wear\") \n2. Yes, no cue required CHAR 1 x\nC0400B_RCALL_SCND_WORD_CD Recall: Able to recall 'blue' Indicates patient's ability to recall the word 'blue' from C0200 word repetition exercise. 0. No – could not recall \n1. Yes, after cueing (\"a color\") \n2. Yes, no cue required",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

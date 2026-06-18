@@ -1,0 +1,51 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicaid Enrollee Supplemental File — National Death Index (NDI) Segment
+Version — April 2026
+SAS name	Label	Data type	Data length	Description	Value
+BENE_ID	Encrypted 723 Beneficiary ID (Unique Key)	CHAR	15	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse
+STATE_CD	State Code	CHAR	2	This field specifies the state as it appeared in the Medicaid enrollment file.	2 character postal state code
+MSIS_ID	Encrypted Medicaid State ID Number	CHAR	32	This field indicates the enrollee's Medicaid state identification number
+REF_YR	Record Reference Year	CHAR	4	This field indicates the reference year of the Medicaid enrollment data.
+DM_SOURCE	Dual or Medicaid only enrollee	CHAR	1	This field specifies whether enrollee was dually enrolled in Medicare & Medicaid during the year, or enrolled only in Medicaid. CCW attempted to link each person (BENE_ID) who had a returned NDI record to both the Medicare and Medicaid enrollment data. Those with a match to both are classified as dually enrolled.	Values:
+D=person was dually enrolled
+M=person was Medicaid only (not dual)
+DEATH_DT	Date of Death	NUM	8	This field indicates the date of death of the enrollee according to the Medicaid enrollment data. This field is missing if the MSIS_ID did not have a death date in the Medicaid enrollment data for the reference year.	Formatted as YYYYMMDD
+NDI_DOD	NDI Date of Death	NUM	8	This field indicates that an enrollee's date of death has been verified as the exact date of becoming deceased, according to a death certificate	Formatted as YYYYMMDD
+NDI_MATCH	Death confirmed through NDI match	CHAR	1	CCW-derived field identifying whether the Medicaid or Medicare reported death was matched to the NDI record	For 2007 and forward values:
+0 = Not Matched to NDI file
+1 = Matched to NDI file
+
+For 1999-2008 values:
+1 = Matched to NDI file
+2 = Did not match and all matching indicators included (DOB, sex, SSN, age, state)
+3 = Did not match since indicators were missing
+NDI_STATE_DEATH_CD	NDI State of Death	CHAR	2	This field indicates the state in which the beneficiary died, according to NDI data (CCW recodes it to the SSA code)	2-digit numeric (SSA code)
+DEATH_CERT_NUM	NDI Death Certificate Number	CHAR	6	This field indicates the death certificate number	6-digits; numbers are not unique across years
+ICD_CODE	ICD-10 Code	CHAR	4	This field indicates the ICD 10 code for the cause of death. The cause may have been recoded by NCHS.	All ICD-10 cause of death codes begin with an alpha character followed by two or three digits. NDI results do not include decimals in the cause of death codes. The decimal is implied between the second and third digits for ICD-10 codes
+ICD_TITLE	ICD-10 Code Description	CHAR	120	This field indicates the ICD 10 descriptor (text) for the cause of death (the ICD_CODE)
+ICD_CODE_358	358 ICD-10 Cause of Death Recodes	CHAR	5	This field is the NDI recode of the ICD-10 Code cause of death into one of 358 categories	Refer to the CDC's "ICD-10 Cause-of-Death Lists for Tabulating Mortality Statistics."  see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf
+ICD_CODE_113	113 ICD-10 Cause of Death Recodes	CHAR	3	This field is the NDI recode of the ICD-10 Code cause of death into one of 113 categories. The list reflects 113 selected causes of death and enterocolitis due to Clostridium Difficile.	Refer to the CDC's "ICD-10 Cause-of-Death Lists for Tabulating Mortality Statistics."  see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf
+ICD_CODE_130	130 ICD-10 Cause of Death Recodes	CHAR	3	130 ICD-10 Cause of Death Recodes (available for 2007 forward). The list reflects 130 selected causes of infant death.	Refer to the CDC's "ICD-10 Cause-of-Death Lists for Tabulating Mortality Statistics."  see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf
+ENTITY_COND_1 (through ENTITY_COND_20)	NDI Entity Axis Cause of Death - Condition 1 (through Condition 20)	CHAR	7	These fields identify the underlying causes of death as listed by the certifier of death (formatted but not audited). From 1999-2006 there were up to 8 codes, and from 2007 forward there are up to 20 codes.	Position1: Part/line number on certificate
+1 = Part I, line 1 (a)
+2 = Part I, line 2 (b)
+3 = Part I, line 3 (c)
+4 = Part I, line 4 (d)
+5 = Part I, line 5 (e)
+6 = Part II
+
+Position 2: Sequence of condition within
+part/line Code range:1-7
+
+Position 3-6: Condition code (ICD-10 code)
+Whenever there is a 4-position code, there is always an implied decimal after the 3rd position.
+
+Position 7: Nature of Injury flag (only for ICD-9 codes)
+1 = the code in positions 3-6 is a Nature of Injury ICD-9 code
+0 = all other codes
+RECORD_COND_1 (through RECORD_COND_20)	NDI Record Axis Cause of Death - Condition 1 (through Condition 20)	CHAR	5	These fields identify the underlying causes of death as edited and audited by the National Center for Health Statistics (NCHS). From 1999-2006 there were up to 8 codes, and from 2007 forward there are up to 20 codes.	Positions 1-4: Condition Code (ICD-10 code)  
+Note: Whenever there is a 4-position code, there is always an implied decimal after the 3rd position.
+
+Position 5: Nature of Injury Flag (only for ICD-9 codes)
+1 = the code in position 1-4 is a Nature of Injury ICD-9 code
+0 = all other codes

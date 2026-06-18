@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p21__chunk_4",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 21,
+  "text": "= Prescription is not current \n177 = Patient has not met the required eligibility requirements \n178 = Patient has not met the required spend down requirements \n179 = Patient has not met the required waiting requirements. \n180 = Patient has not met the required residency requirements \n181 = Procedure code was invalid on the date of service \n182 = Procedure modifier was invalid on the date of service \n183 = The referring provider is not eligible to refer the service billed",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

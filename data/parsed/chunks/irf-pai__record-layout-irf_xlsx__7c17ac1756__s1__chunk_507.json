@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_507",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "to respond to the question regarding lack of transportation. 0 = No\n1 = Yes\n441 TRNSPRTN_DCLN_RSPNS_ADMSN_CD TRNSPRTN_DCLN_RSPNS_ADMSN_CD Transportation: Patient declines to respond (Adm) CHAR 1 This column documents that at the time of admission the patient declined to respond to the question regarding lack of transportation. 0 = No\n1 = Yes\n442 TRNSPRTN_DCLN_RSPNS_DSCHRG_CD TRNSPRTN_DCLN_RSPNS_DSCHRG_CD Transportation: Patient declines to respond (Dsch) CHAR 1 This column documents that at the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

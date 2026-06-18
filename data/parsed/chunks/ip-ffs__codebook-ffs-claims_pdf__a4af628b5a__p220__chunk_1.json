@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p220__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 220,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = Medical care \n2 = Surgery \n3 = Consultation \n4 = Diagnostic radiology \n5 = Diagnostic laboratory \n6 = Therapeutic radiology \n7 = Anesthesia \n8 = Assistant at surgery \n9 = Other medical items or services \n0 = Whole blood \nA = Used durable medical equipment \n(DME) \nD = Ambulance \nE = Enteral/parenteral \nnutrients/supplies \nF = Ambulatory \nsurgical center \n(facility usage for \nsurgical services) \nG = Immunosuppressive drugs \nJ = Diabetic shoes",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-entity__chunk_2",
+  "source_document": "data/raw/html/dataset_page/fe306019948692b5209277e7fd3e0aeb53e463a9.html",
+  "page": null,
+  "text": "Entity ID is unique to CMMI systems and cannot be used to link to claims data or other CCW data. The Entity ID is the key field for tying CMDS Provider and Beneficiary participation data to a specific Entity and is unique across all models.\nAn Entity may have an End Date of 12/31/9999, which indicates that the Entity is “currently” participating in the model.",
+  "dataset": "cmds-entity",
+  "url": "https://resdac.org/cms-data/files/cmds-entity"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_12",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "that a Policy will Pay for a Covered Service NUM 8 67\nMDCD_COPAY_AMT Total Copay Amount Paid by Beneficiary NUM 8 68\nMDCR_DDCTBL_PD_AMT Total Medicare Deductible Amount NUM 8 69\nMDCR_COINSRNC_PD_AMT Total Medicare Coinsurance Amount NUM 8 70\nMDCR_CMBND_DDCTBL_IND Medicare Combined Deductible and Coinsurance Indicator CHAR 1 71\nMDCR_REIMBRSMT_TYPE_CD Medicare Reimbursement Type Code CHAR 2 72\nCOINSRNC_AMT Beneficiary Coinsurance Amount NUM 8 73\nTOT_BENE_COINSRNC_LBLTY_AMT Total Beneficiary",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p115__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 115,
+  "text": "Conditions (HAC). \nSHORT NAME: HAC_PGM_RDCTN_IND_SW \nLONG NAME: HAC_PGM_RDCTN_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = hospital subject to a reduction under the HAC Reduction Program \nN = hospital is not subject to a reduction under the HAC Reduction Program \nNull/missing \nCOMMENT: \nThis field identifies hospitals subject to a Hospital Acquired Condition (HAC) reduction of what they \nwould otherwise be paid under IPPS. \nThe dollar amount of the reduction is in the HAC",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

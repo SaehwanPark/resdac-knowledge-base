@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_58",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "not required). 00 = Live expectancy is greater than 6 months.\n01 = Life expectancy is 6 months or fewer. CHAR 2 x x\nM0290_RSK_ALCOHOL (M0290) Alcohol Dependency High risk factors characterizing this patient: alcoholism. 0 = No, 1 = Yes CHAR 1 x x\nM0290_RSK_DRUGS (M0290) Drug Dependency High risk factors characterizing this patient: drug dependency. 0 = No, 1 = Yes CHAR 1 x x\nM0290_RSK_SMOKING (M0290) Heavy Smoking High risk factors characterizing this patient: heavy smoking. 0 = No, 1 = Yes",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__record-layout-ptd-formulary_xlsx__38598074c1__s5__chunk_1",
+  "source_document": "data/raw/assets/xlsx/38598074c1dd858c02b65f05a48cc7e746745ec7.xlsx",
+  "page": 5,
+  "text": "Name for Proxy NDC CHAR 30\nGNN FDB USAN Generic Name - Short Version for Proxy NDC CHAR 30\nSTR FDB Drug Strength Description for Proxy NDC CHAR 10\nGCDF FDB Dosage Form Code for Proxy NDC CHAR 2\nGCDF_DESC FDB Dosage Form Code Description for Proxy NDC CHAR 40\nTYPE Insulin Type as Defined by the Model CHAR 50\nCOPAY Copay NUM 3\n1 This file was first available starting with the 2021 data release. The file was retired after 2023, and is not available 2024+.",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-formulary.xlsx"
+}

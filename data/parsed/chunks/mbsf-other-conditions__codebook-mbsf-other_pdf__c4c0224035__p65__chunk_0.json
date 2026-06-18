@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__codebook-mbsf-other_pdf__c4c0224035__p65__chunk_0",
+  "source_document": "data/raw/assets/pdf/c4c02240350e73a79a885b327567f3b5714475c3.pdf",
+  "page": 65,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 \n59 \nOUD_HOSP_MEDICARE_EVER \nLABEL: \nOpioid-Related Hospitalization or ED First Ever Occurrence Date — Medicare Only Claims \nDESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Opioid-Related \nHospitalization or emergency department (ED) visit indicator. The variable will be blank for \nbeneficiaries",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-other.pdf"
+}

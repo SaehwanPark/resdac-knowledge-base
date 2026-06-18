@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p268__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 268,
+  "text": "per diem present (non-PPS) \n1 = Pass thru per diem present on final action claim \nWarning indicator 10 (Resource Utilization Groups [RUGs] indicator applicable to 'NHCMQ RUGs III SNF \ndemo' stay records derived from the presence of 9,000 series revenue center codes.) \n0 = No RUGs 9000 series revenue center codes \n2 = RUGs 9000 series revenue center code(s) \n3 = RUGs 9000 series revenue center code(s) \n4 = RUGs 9000 series revenue center code(s) \nWarning indicators 11–17 (not yet assigned;",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

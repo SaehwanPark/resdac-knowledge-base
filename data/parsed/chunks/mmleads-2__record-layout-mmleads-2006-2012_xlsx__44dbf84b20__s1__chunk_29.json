@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "- ESRD only\nE_PRIMARY_PAYER_CD A Medicare beneficiary with medical coverage by some other primary payer - either a federal program or other insurance source. A - Working aged bene/spouse with an employer group health plan (EGHP)\nB - End stage renal disease (ESRD) beneficiary in the 30 month coordination period with an employer group health plan\nC - Conditional payment by Medicare; future reimbursement expected\nD - Automobile insurance and no fault\nE - Workers' compensation\nF - Public health",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

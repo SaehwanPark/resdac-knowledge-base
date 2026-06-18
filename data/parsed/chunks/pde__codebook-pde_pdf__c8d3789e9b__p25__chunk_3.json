@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p25__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 25,
+  "text": "NDC is assigned to each RXCUI. The proxy \nNDC for each drug product is mapped to a unique FirstDataBank brand name and proprietary clinical \nformulation identifier which is then assigned a CCW sequence number (FRMLRY_RX_ID). In order for a \nPDE record to link to the formulary characteristics files, the drug product on the PDE must map to a \nFRMLRY_RX_ID in the formulary associated with the plan of record. \nResearchers interested in linking the utilization management (UM) variables (tier, step",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

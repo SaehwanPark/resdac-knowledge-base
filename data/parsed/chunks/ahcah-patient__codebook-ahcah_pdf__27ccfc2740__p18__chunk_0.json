@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n13 \nPRVDR_NAME \nLABEL: \nName of Facility \nDESCRIPTION: The facility’s name. \nSHORT NAME: PRVDR_NAME \nLONG NAME: PRVDR_NAME \nTYPE: \nCHAR \nLENGTH: \n255 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data (verified by CMS) \nVALUES: \nEx – Best hospital \n\nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

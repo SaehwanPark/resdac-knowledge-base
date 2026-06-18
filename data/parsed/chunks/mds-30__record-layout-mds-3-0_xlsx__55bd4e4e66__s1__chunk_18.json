@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "C_STATE_2_RUG_VRSN_TXT C_STATE_2_RUG_VRSN_TXT Recalculated Z0250B CHAR 10 The data in this column contains the second calculated state Medicaid RUG version code.\n29 C_STATE_2_SET_CD C_STATE_2_SET_CD CMI Set for Recalculated Z0250A CHAR 3 The data in this column contains the second calculated state Medicaid RUG Set Code.\n30 C_STATE_2_CMI_TXT C_STATE_2_CMI_TXT CMI Value for Recalculated Z0250A CHAR 7 The data in this column contains the second calculated state Medicaid CMI text.\n31",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

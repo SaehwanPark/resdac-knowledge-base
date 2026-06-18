@@ -1,0 +1,8 @@
+The Medicare Data on Provider Practice and Specialty (MD-PPAS) file assigns Medicare providers to medical practices based on the tax identification numbers and elaborates on the Centers for Medicare & Medicaid Services (CMS) provider specialty classification. This provider-level dataset is built around two identifiers: the national provider identifier (NPI) and the tax identification number (TIN).
+What does this file include? (variable highlights)
+- The MD-PPAS contain data on specialty, TIN practice assignment, place of service information, provider demographics, geographic location, and summary Medicare utilization measures for over 1.2 million providers.
+- The MD-PPAS has been updated to version 2.4 from version 2.3 to reflect the following changes:- The MD-PPAS data include a modified broad specialty variable that provides a more detailed breakdown of non-physician specialties.
+- The data also include two additional variables related to the percent of providers' line items that are performed in a given place of service (POS). Specifically, MD-PPAS data now include variables that report the percent of line items performed in urgent care centers and retail clinics.
+ 
+Special considerations
+- The data use a new methodology to assign providers to CBSAs based on the zip code reported on their submitted claims. This change resulted in a small percentage of providers with different values for their CBSA code and type variable.

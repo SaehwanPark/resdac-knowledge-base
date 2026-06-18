@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Reported Dual Eligible Status Code - August CHAR 2\nDUAL_STUS_CD_09 State Reported Dual Eligible Status Code - September CHAR 2\nDUAL_STUS_CD_10 State Reported Dual Eligible Status Code - October CHAR 2\nDUAL_STUS_CD_11 State Reported Dual Eligible Status Code - November CHAR 2\nDUAL_STUS_CD_12 State Reported Dual Eligible Status Code - December CHAR 2\nPart C\nPTC_CNTRCT_ID_01 Part C Contract ID - January CHAR 5\nPTC_CNTRCT_ID_02 Part C Contract ID - February CHAR 5\nPTC_CNTRCT_ID_03 Part C Contract",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

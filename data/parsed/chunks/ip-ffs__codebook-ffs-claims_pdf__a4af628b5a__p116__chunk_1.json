@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p116__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 116,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nA = Outpatient Psychiatric hospital \nB = Outpatient tuberculosis (TB) \nhospital \nC = Outpatient General Care hospital \nD = Outpatient skilled nursing facility \n(SNF) \nE = Home health agency \nF = Comprehensive Health Care \nG = Clinical Rehab agency \nH = Rural Health Clinic \nI = Satellite Dialysis Facility \nJ = Limited Care Facility \n0 = Christian Science SNF \n1 = Psychiatric hospital Facility \n2 = TB hospital Facility \n3 = General Care hospital \n4",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

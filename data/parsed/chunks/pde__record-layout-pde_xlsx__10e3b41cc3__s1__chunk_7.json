@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "- X X X X X X X X\nGAPDSCNT RPTD_GAP_DSCNT_NUM Gap Discount Amount NUM 13 - - - X X X X X LC\nBRNDGNCD BRND_GNRC_CD Brand-Generic Code Reported by Submitting Plan CHAR 1 - - - X X X X X X\nPHRMCY_SRVC_TYPE_CD PHRMCY_SRVC_TYPE_CD Pharmacy Service Type Code CHAR 2 - - - - X X X X X\nPTNT_RSDNC_CD PTNT_RSDNC_CD Patient Residence Code CHAR 2 - - - - X X X X X\nLTPAC_DSPNSNG_FREQ_CD LTPAC_DSPNSNG_FREQ_CD Long Term and Post Acute Care (LTPAC) Dispensing Frequency Code CHAR 2 - - - - - - - -",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

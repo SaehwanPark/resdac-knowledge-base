@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p296__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 296,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n276 \nTOT_BENE_DDCTBL_LBLTY_AMT \nLABEL: \nTotal Beneficiary Deductible Liability Amount \nDESCRIPTION: The total deductible amount on a claim the beneficiary is obligated to pay for covered services. This \namount is the total Medicaid or contract negotiated beneficiary deductible liability minus previous \nbeneficiary payments that went toward their deductible. Do not subtract out any",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

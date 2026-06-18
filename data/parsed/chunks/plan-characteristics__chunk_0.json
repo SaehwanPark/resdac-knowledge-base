@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__chunk_0",
+  "source_document": "data/raw/html/dataset_page/8b7cb3b3ddc436da3e8aba213676753e9c338587.html",
+  "page": null,
+  "text": "The Plan Characteristics file contains Medicare Advantage plan and Prescription Drug Plan information separated into six subfiles.\nThe subfiles are:\n- Plan Base\n- Premium\n- Tier\n- Service Area\n- Plan Crosswalk\n- SNP Contract\nWhat does this file include? (variable highlights)\n- Initial and gap coverage limits\n- Plan premium amount\n- Plan service area description\n- Crosswalk of current plan ID to previous years\n- Demonstration type\n- Special needs plan type\n- Linkage variables to the PDE and to",
+  "dataset": "plan-characteristics",
+  "url": "https://resdac.org/cms-data/files/plan-characteristics?page=2"
+}

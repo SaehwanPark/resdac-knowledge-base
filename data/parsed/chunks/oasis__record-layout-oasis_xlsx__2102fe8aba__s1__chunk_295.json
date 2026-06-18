@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_295",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Very rarely or never has bowel incontinence\n01 = Less than once weekly\n02 = One to three times weekly\n03 = Four to six times weekly\n04 = On a daily basis\n05 = More often than once daily\nNA = NA - Patient has ostomy for bowel elimination\nUK = Unknown CHAR 2 x x x x x x\nM1630_OSTOMY M1630 (M0550) Ostomy For Bowel Elimination This field indicates whether the patient has an ostomy for bowel elimination that was related to an inpatient stay\nor necessitated a change in medical or treatment regimen.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

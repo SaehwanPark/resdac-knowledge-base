@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 7,
+  "text": "and their meanings are as follows:\n• ws_ - Westat derived variables\n• su_ - Survey processing variables\n• sa_ - Administrative variables\n• r_ - Survey variables with response categories reverse-coded\nname\nLABEL\nFORMAT\nma_hlthplan\nRECODE : Covered by named medicare health plan\nYNA\nma_hlthplan_txt\nRECODE : Name of health plan in 2024\nca_illness\nRECODE : Last 6 mths, illness or injury requiring immediate care\nYNA\nca_illasaw\nRECODE : Last 6 mths, how often get care as soon as",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

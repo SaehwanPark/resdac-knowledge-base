@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p95__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 95,
+  "text": "NAME: WVR_1115_EXPNSN_CVRG_POP_IND \nLONG NAME: WVR_1115_EXPNSN_CVRG_POP_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis data element is triggered by a value of “69”–“71” in any instance of \nMC_PLAN_ELGBLTY_GRP_POP_CD. \nThese values are: \n69 = Individuals with Mental Health Conditions (expansion group) \n70 = Family Planning Participants (expansion group) \n71 = Other expansion group \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

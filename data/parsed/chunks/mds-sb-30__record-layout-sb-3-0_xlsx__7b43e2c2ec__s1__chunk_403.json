@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_403",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Nutrition/Hydration Code CHAR 1 The data in this column indicates that the resident is receiving nutrition or hydration interventions to manage skin problems. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n453 M1200E_ULCR_CARE_CD M1200E_ULCR_CARE_CD M1200E Skin and Ulcer Treatments: Ulcer Care Code CHAR 1 The data in this column indicates that the resident is receiving pressure ulcer care. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n454",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

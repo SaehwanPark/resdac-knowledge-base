@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p75__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 75,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n74 \nNN_NVGTD_CORE_UTILITIES_SW \nLABEL: \nNavigated Core HRSN Utilities Indicator \nDESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) utilities indicator. \nLONG NAME: NN_NVGTD_CORE_UTILITIES_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = No \n1 = Yes \nMissing \nCOMMENT: \nVariables that start with “NN” include information for each",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

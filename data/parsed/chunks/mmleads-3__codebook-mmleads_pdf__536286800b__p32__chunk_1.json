@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p32__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 32,
+  "text": "Indicator — January–December (01–12) \nDESCRIPTION: This variable is a monthly variable that indicates whether the beneficiary was enrolled in traditional \nMedicaid fee-for-service (FFS), or whether the beneficiary was enrolled in a comprehensive medical \nmanaged care plan. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS DE file (derived) \nVALUES: \n0 = not Medicaid FFS during month \n1 = Medicaid FFS during the month \nNull/missing = (if no Medicaid enrollment for the month — or if the plan type code was",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

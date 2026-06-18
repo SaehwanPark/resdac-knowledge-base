@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p47__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 47,
+  "text": "LONG NAME: BENE_RSDNC_SSA_CNTY_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nEach state has a series of codes beginning with '000' for each county within that state. Certain cities \nwithin that state have their own code. \nCounty codes must be combined with state codes to locate the specific county. The coding system is \nthe SSA system, not the Federal Information Processing Standard (FIPS). \nIn some cases, the code may not be the actual county where the beneficiary resides.",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

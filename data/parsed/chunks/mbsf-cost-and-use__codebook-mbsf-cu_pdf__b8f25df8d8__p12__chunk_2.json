@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p12__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 12,
+  "text": "or 1–XXX \nCOMMENT: \nThe CLM_THRU_DT for the last claim associated with the stay must have been in the year of the data \nfile. Stays that cross-over into another calendar year would only appear in the year when the stay ended \n(e.g., a stay that began in 2017 but ended in 2018 would only be counted as a stay in the 2018 file). Note \nthat the algorithm considers all claims (in the ACUTE_STAYS and OIP_STAYS variables). However, for the \ncount of covered days (ACUTE_COV_DAYS and OIP_COV_DAYS) and",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

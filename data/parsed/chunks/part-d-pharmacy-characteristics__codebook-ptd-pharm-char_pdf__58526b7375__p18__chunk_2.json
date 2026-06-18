@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p18__chunk_2",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 18,
+  "text": "in 2012 and 2013 files only. \nThe CCW Pharmacy ID is created by linking the service provider identification number \n(SRVC_PRVDR_ID) from the source PDE to the proprietary National Council for Prescription Drug \nPrograms (NCPDP) Database. The variable is populated only for the subset of CCW Pharmacy IDs \nwhere the physical location of the pharmacy did not change, but the NCPDP pharmacy data for that \nyear indicated the ownership changed. \n^ Back to TOC ^",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

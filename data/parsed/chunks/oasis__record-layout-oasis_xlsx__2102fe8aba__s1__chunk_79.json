@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_79",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Spaces = Unknown. CHAR 1 x x\nM0380_CA_UK (M0380) Unknown Primary Caregiver Assistance Type of primary caregiver assistance: unknown. 0 = No, 1 = Yes, Spaces = Unknown. CHAR 1 x x\nM0390_VISION (M0390) Vision Vision with corrective lenses if the patient usually wears them. 00 = Normal vision; sees adequately in most situations; can see medication labels, newsprint.\n01 = Partially impaired; cannot see medication labels or newsprint, but can see obstacles in path, and the surrounding layout; can",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

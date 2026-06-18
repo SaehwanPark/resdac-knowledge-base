@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p33__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 33,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n28 \nLTPAC_DSPNSNG_FREQ_CD \nLABEL: \nLong-Term and Post-Acute Care (LTPAC) Dispensing Frequency Code \nDESCRIPTION: This field is used to identify long-term and post-acute care short-cycle (LTPAC) dispensing PDEs. \nSHORT NAME: LTPAC_DSPNSNG_FREQ_CD \nLONG NAME: LTPAC_DSPNSNG_FREQ_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE \nVALUES: \n1 = Medication dispensed in a",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_26",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "RC_NDC_10_CD | Revenue Center National Drug Code (NDC) 10 | \n\n | 142 | NO_PSTV_TEST_SW | No Positive Test Switch | \n\n | 143 | EXPNDD_ACS_SW | Expanded Access Switch | \n\n | 144 | CLNCL_TRIL_SW | Other Clinical Trial Switch | \n\n | 145 | EMER_USE_SW | Emergency Use Switch | \n\n | 146 | ADMTG_DGNS_CD | Initial diagnosis at time of admission | \n\n | 147 | ADMTG_DGNS_VRSN_CD | MedPAR Admitting Diagnosis Version Code (ICD-9 or ICD-10) | \n\n | 148 | DGNS_CD_CNT | Count of Diagnosis Codes | \n\n | 149 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

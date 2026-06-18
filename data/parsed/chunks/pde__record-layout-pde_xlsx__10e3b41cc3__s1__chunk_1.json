@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "DOB_DT Patient Date of Birth (DOB) DATE 8 X X X X X X X X X\nSEX_CD7 SEX_CD7 Patient Sex CHAR 1 X X X X X X X X X\nSRVC_DT SRVC_DT RX Date of Service (DOS) DATE 8 X X X X X X X X X\nPD_DT PD_DT Paid Date DATE 8 X X X X X X X X X\nSRVRFNUM RX_SRVC_RFRNC_NUM RX Service Reference Number NUM 12 X X LC X X X X X X\nPRDSRVID PROD_SRVC_ID Product Service ID (the National Drug Code [NDC]) CHAR 40 X X X X X X X X LC\nPLNCNTRC 2 PLAN_CNTRCT_REC_ID Plan Contract ID CHAR 5 X X X X X X X X X\nPLNPBPRC 2",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

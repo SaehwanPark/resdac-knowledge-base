@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p275__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 275,
+  "text": "insurance bills. \nThe presence of a primary payer code indicates that some other payer besides Medicare covered at \nleast some portion of the charges. \nSHORT NAME: PRPAY_CD \nLONG NAME: NCH_PRMRY_PYR_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nA = Employer group health plan (EGHP) insurance for an aged beneficiary \nB = EGHP insurance for an end-stage renal disease (ESRD) beneficiary \nC = Conditional payment by Medicare; future reimbursement from the Public Health Service (PHS) \nexpected",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

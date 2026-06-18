@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__data-documentation__e252ae2091__chunk_23",
+  "source_document": "data/raw/html/documentation_page/e252ae2091db2798540dec6536db5aca3f78d6b2.html",
+  "page": null,
+  "text": "- Medicaid Only Claims | \n\n | 118 | HEPVIRAL_MEDICARE | Viral Hepatitis (General) - Medicare Only Claims | \n\n | 119 | HFRAC_COMBINED | Hip / Pelvic Fracture Indicator - Combined Data | \n\n | 120 | HFRAC_MEDICAD | Hip / Pelvic Fracture Indicator - Medicaid-Only Data | \n\n | 121 | HFRAC_MEDICARE | Hip / Pelvic Fracture Indicator - Medicare-Only Data | \n\n | 122 | HIVAIDS_COMBINED | (HIV/AIDS) - Combined Medicare & Medicaid Claims | \n\n | 123 | HIVAIDS_MEDICAID | (HIV/AIDS) - Medicaid Only Claims |",
+  "dataset": "mesf-conditions",
+  "url": "https://resdac.org/cms-data/files/mesf-conditions/data-documentation"
+}

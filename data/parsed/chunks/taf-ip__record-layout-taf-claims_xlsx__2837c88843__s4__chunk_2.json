@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_2",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "3 11\nADJDCTN_DT Adjudication Date DATE 8 12\nMDCD_PD_DT Medicaid Paid Date DATE 8 13\nCMPND_DRUG_IND Compound Drug Indicator CHAR 1 14\nSRC_LCTN_CD Denotes the Claims Payment System from which the Claim was Extracted CHAR 2 64 New3\nRX_ORGN_CD Prescription Origin Code CHAR 1 65 New3\nCLL_CNT Claim Line Count - Original NUM 8 15\nCLL_CNT_CALC Claim Line Count - Calculated NUM 8 16\nPRSN_CLM_IND1 Indicator of a Claim for a Person CHAR 1 62\nSRVC_TRKNG_TYPE_CD Service Tracking Type Code CHAR 2",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

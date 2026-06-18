@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p143__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 143,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n123 \nIP_SUD_DGNS_IND \nLABEL: \nSubstance Use Disorder Diagnosis Indicator \nDESCRIPTION: Indicator that identifies if diagnosis code on the claim is related to substance use. \nSHORT NAME: IP_SUD_DGNS_IND \nLONG NAME: IP_SUD_DGNS_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS Analytic File (TAF) claims (derived) \nFILE(S): \nIP header \nVALUES: \n0 = Not substance use diagnosis (SUD) claim \n1 =",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p15__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 15,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n11 \nPLAN_ID \nLABEL: \nPart D Plan Benefit Package Identifier \nDESCRIPTION: This variable is the unique plan benefit package (PBP) number for the Part D plan sponsor's contract. \nCMS assigns an identifier to each PBP within a contract that a Part D plan sponsor has with CMS. This \nfield is a key that links of Part D sponsor's contract and plan identifiers. \nSHORT NAME: —",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

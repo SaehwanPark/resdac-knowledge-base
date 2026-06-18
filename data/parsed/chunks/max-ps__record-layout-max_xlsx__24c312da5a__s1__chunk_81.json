@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_81",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X X\n378 TOT_REC_CNT_RHC Total records (RHC) NUM 5 X X X X X X X X X X X\n379 TOT_PYMT_AMT_RHC Total payments (RHC) NUM 12 X X X X X X X X X X X\n380 IP_HOSP_REC_FQHC Inpatient hospital record count - Federally Qualiied Health Centers (FQHC) NUM 3 X X X X X X X X X X X\n381 IP_HOSP_PYMT_FQHC Inpatient hospital payments (FQHC) NUM 12 X X X X X X X X X X X\n382 LT_REC_CNT_FQHC Institutional LT care records (FQHC) NUM 5 X X X X X X X X X X X\n383 LT_PYMT_AMT_FQHC Institutional LT care",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

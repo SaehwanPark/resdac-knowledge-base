@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_531",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "quarterly assessment\n99=None of the above\n^=Blank (skip pattern) effective 10/01/2023\n611 X0600B_CRCTN_PPS_CD X0600B_CRCTN_PPS_CD X0600B Correction PPS Reason for Assessment Code CHAR 2 The data in this column indicates the PPS (A0310B) code from the prior erroneous record to be modified or inactivated. 01=5-day scheduled assessment\n02=14-day scheduled assessment\n03=30-day scheduled assessment\n04=60-day scheduled assessment\n05=90-day scheduled assessment\n06=Readmission/return",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

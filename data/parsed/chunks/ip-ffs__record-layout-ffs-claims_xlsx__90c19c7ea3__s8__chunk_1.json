@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s8__chunk_1",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 8,
+  "text": "and BLG_PRVDR_TXNMY_CD to Carrier base claims;\n4) RNDRNG_PRVDR_SPCLTY_CD1, RNDRNG_PRVDR_SPCLTY_CD2, RNDRNG_PRVDR_SPCLTY_CD3, RNDRNG_PRVDR_TXNMY_CD, LINE_POINT_OF_PCKP_ZIP_CD, and LINE_DROP_OFF_ZIP_CD to Carrier lines;\n5) CLM_NEXT_GNRTN_ACO_IND_CD1 - CLM_NEXT_GNRTN_ACO_IND_CD5 to DME lines.\n44927 All Changes resulting from NCH updates (CR 18-21). Added new fields:\n1) CLM_ADJUST_GRP_CD, CLM_ADJUST_RSN_CD , CLM_PRCR_VRSN_CD and PRVDR_FULL_CCN_NUM to IP, SNF, HH, Hospice and OP base claims.\n2)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

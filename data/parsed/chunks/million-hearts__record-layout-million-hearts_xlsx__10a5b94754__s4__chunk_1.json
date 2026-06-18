@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__record-layout-million-hearts_xlsx__10a5b94754__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/10a5b94754c766cb1dad7c4ed5361d3db70f550d.xlsx",
+  "page": 4,
+  "text": "National Provider Identifier CHAR 10\nUNIQUE_PATIENT_ID Unique Model-Assigned Patient ID CHAR 36\nACTIVITY_DATE Encounter/Procedure/Diagnosis/Lab/Medication Start or Occurrence Date DATE 8\nACTIVITY_END_DATE Encounter/Procedure/Diagnosis End Date DATE 8\nCODE Code Used to Document the Service CHAR 20\nMODIFIER Any Modifiers for the Base Code CHAR 10\nVALUE Value Provided for Certain Service Attributes CHAR 250\nUNITS Unit for the Value Provided for Certain Service Attributes CHAR 10\nCREATE_DATE Date",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-million-hearts.xlsx"
+}

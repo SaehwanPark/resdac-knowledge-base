@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_222",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "admission.\n182 _52BD PRSR_ULCR_DSCHRG_CNT (52Bd) Number of Current Pressure Ulcers: Discharge CHAR 2 The number of pressure ulcers, including ulcers that cannot be accurately staged at the time of discharge.\n183 _52CA LRGST_PRSR_ULCR_ADMSN_NUM (52Ca) Length Multiplied by Width: Admission CHAR 2 A score indicating the largest pressure ulcer's open surface area at the time of admission. 00 = 0 cm, 01 = <0.3 cm, 02 = 0.3 to 0.6 cm, 03 = 0.7 to 1.0 cm, 04 = 1.1 to 2.0 cm, 05 = 2.1 to 3.0 cm, 06 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

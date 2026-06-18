@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_25",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "(FFS) | \n\n | 124 | CLM_POA_IND_SW25 | Claim Diagnosis Code XXV Diagnosis Present on Admission (POA) Indicator Code (FFS) | \n\n | 125 | FST_DGNS_E_CD | First Claim Diagnosis E Code (FFS) | \n\n | 126 | ICD_DGNS_E_CD1 | Claim Diagnosis E Code I (FFS) | \n\n | 127 | CLM_E_POA_IND_SW1 | Claim Diagnosis E Code I Diagnosis Present on Admission (POA) Indicator Code (FFS) | \n\n | 128 | ICD_DGNS_E_CD2 | Claim Diagnosis E Code II (FFS) | \n\n | 129 | CLM_E_POA_IND_SW2 | Claim Diagnosis E Code II Diagnosis",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

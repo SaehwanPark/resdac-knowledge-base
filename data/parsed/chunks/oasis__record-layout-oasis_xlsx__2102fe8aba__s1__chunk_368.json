@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_368",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "patient received emergent care was due to myocardial infarction or chest pain. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2310_ECR_OTHR_HRT_DEASE M2310 Emergent Care Reason- Other Heart Disease This field indicates that the reason the patient received emergent care was due to other heart disease. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2310_ECR_RSPRTRY_OTHR M2310 Emergent Care Reason- Other Respiratory Problem This field indicates that the reason the patient",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

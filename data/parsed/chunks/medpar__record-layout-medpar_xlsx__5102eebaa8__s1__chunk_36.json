@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_36",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X X X X X\nOPSRVCCD OP_SRVC_IND_CD Outpatient services/ambulatory surgical care indicator code Char 1 X X X X X X X X X X X X X X X X X X\nORGNCD ORGN_ACQSTN_IND_CD Organ acquisition type code Char 2 X X X X X X X X X X X X X X X X X X\nESRD_CD ESRD_COND_CD End Stage Renal Disease (ESRD) condition indicator code Char 2 X X X X X X X X X X X X X X X X X X\nESRDSTG1 ESRD_SETG_IND_1_CD Dialysis service type code 1 Char 2 X X X X X X X X X X X X X X X X X X\nESRDSTG2 ESRD_SETG_IND_2_CD",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

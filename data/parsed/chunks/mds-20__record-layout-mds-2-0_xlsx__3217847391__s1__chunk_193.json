@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_193",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Appliances and Programs CHAR 1 Continence in last 14 days: appliances and programs - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n277 H4 H4_CHANGE_URINARY (H4) Change in Urinary Continence CHAR 1 Continence in last 14 days: change in urinary continence since last assessment. 0 = No Change, 1 = Improved, 2 = Deteriorated, \"-\" = Unknown.\n278 I1A I1A_DIABETES (I1A) Diabetes Mellitus CHAR 1 Disease diagnosis: diseases - endocrine/metabolic/nutritional - diabetes mellitus. 0 = No, 1 = Yes, \"-\" =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

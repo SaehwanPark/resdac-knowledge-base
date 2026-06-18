@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-drug-characteristics__data-documentation__94330ae01c__chunk_1",
+  "source_document": "data/raw/html/documentation_page/94330ae01c5174c465ae2ea92c4c7ac5374ce077.html",
+  "page": null,
+  "text": "unable to locate the information you need, please contact ResDAC.\nCCW Codebook - Medicare Part D Event (PDE)/Drug Characteristics\nCCW Record Layout - Medicare Part D Event (PDE)/Drug Characteristics\n| SAS Name | Variable Name | \n|---|---|\n| BN | Brand Name | \n| GNN | Generic Name | \n| STR | Drug Strength Description | \n| GCDF | Dosage Form Code | \n| GCDF_DESC | Dosage Form Code Description |",
+  "dataset": "part-d-drug-characteristics",
+  "url": "https://resdac.org/cms-data/files/part-d-drug-characteristics/data-documentation"
+}

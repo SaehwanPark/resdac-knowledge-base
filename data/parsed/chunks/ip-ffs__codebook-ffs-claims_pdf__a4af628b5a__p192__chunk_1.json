@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p192__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 192,
+  "text": "SHORT NAME: FST_DGNS_E_CD \nLONG NAME: FST_DGNS_E_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nPrior to version “J,” this field was named: CLM_DGNS_E_CD. \nEffective with version “J,” this field has been expanded from 5 bytes to 7 bytes to accommodate ICD-\n10. \nOn October 1, 2015, the conversion from the 9th version of the International Classification of Diseases \n(ICD-9-CM) to version 10 (ICD-10-CM) occurred. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

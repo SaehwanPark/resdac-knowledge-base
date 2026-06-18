@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_356",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "K0710A2_CAL_PRNTRL_PST_CD K0710A2 Percent Caloric Intake Through Parenteral/Tube Feeding While a Resident Code. CHAR 1 The data in this column indicates the proportion of total calories that the resident received through parenteral or tube feeding while a resident of this faciltity within the last seven days. -=Not assessed/no information\n1=25% or less\n2=26-50%\n3=51% or more\n^=Blank (skip pattern) effective 10/01/2013\n396 K0710A3_CAL_PRNTRL_7_DAY_CD K0710A3_CAL_PRNTRL_7_DAY_CD K0710A3 Percent",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

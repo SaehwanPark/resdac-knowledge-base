@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p371__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 371,
+  "text": "as a preferred pharmacy within a split \nnetwork) during the pre-initial coverage limit (ICL) phase of the Part D benefit. \nSHORT NAME: — \nLONG NAME: PRE_ICL_INPP_COPAY_2M \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \n\nCOMMENT: \nThis variable was new in 2013. Plans that use a coinsurance percentage amount rather than a co-\npayment will not have a value in this field; see instead the corresponding coinsurance variable called \n(PRE_ICL_INPP_COINS_2M). \nStarting in 2016, CMS",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-rx__chunk_0",
+  "source_document": "data/raw/html/dataset_page/628d80d9571d4dee54b1868e920448bf5ba9cccf.html",
+  "page": null,
+  "text": "Medicaid Analytic Extract (MAX) Prescription Drug (RX) file includes records of filled prescriptions from fee-for-service (FFS) claims paid by Medicaid and encounter records for prescription drugs paid by a Medicaid managed care organization.\nThe Medicaid RX Prescription Drug file includes fee-for-service (FFS) claim and managed care encounter records that contain a National Drug Code (NDC) for a filled prescription.\nWhat does this file include? (variable highlights)\n- National Drug Code",
+  "dataset": "max-rx",
+  "url": "https://resdac.org/cms-data/files/max-rx?page=1"
+}

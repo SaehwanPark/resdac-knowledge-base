@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p212__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 212,
+  "text": "participating in \nthe particular model. \nSHORT NAME: RC_MODEL_REIMBRSMT_AMT \nLONG NAME: RC_MODEL_REIMBRSMT_AMT \nTYPE: \nNUM \nLENGTH: \n10 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the Revenue Center Model Reimbursement Amount (REV-CNTR-\nMODEL-AMT) that is present on any line item on all claim records included in the stay (i.e., sum of the \nREV-CNTR-MODEL-AMT reported on the claims that comprised the stay). \nFor the participating hospitals in the PA",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

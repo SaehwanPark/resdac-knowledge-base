@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p152__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 152,
+  "text": "MDCL_SRGCL_NSTRL_AMT, MDCL_SRGCL_STRL_AMT, \nMDCL_SRGCL_DRSNG_AMT, MDCL_SRGCL_PCMKR_AMT, MDCL_SRGCL_MISC_AMT, TAKE_HOME_AMT, \nPRSTHTC_ORTHTC_AMT, INTRAOCULAR_LENS_AMT, OXYGN_TAKE_HOME_AMT, \nOTHR_IMPLANTS_AMT, OTHR_SUPLIES_DVC_AMT, INCDNT_RDLGY_AMT, \nINCDNT_DGNSTC_SRVCS_AMT, and INVSTGTNL_DVC_AMT \nNote that the sum of all the medical/surgical supplies charge amounts is available all years (field called \nMDCL_SUPLY_CHRG_AMT). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

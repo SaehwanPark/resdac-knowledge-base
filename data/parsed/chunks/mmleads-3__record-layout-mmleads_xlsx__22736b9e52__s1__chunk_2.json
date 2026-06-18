@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "Ethnicity Constructed Code - Ltst in Yr Char 1\n13 MDCR_STATE_CD Medicare - State FIPS Code - Ltst in Yr Char 2\n14 MDCR_COUNTY_CD Medicare - County FIPS Code - Ltst in Yr Char 3\n15 MDCR_PTA_MOS Medicare - Part A Enrolled Months Num 8\n16 MDCR_PTB_MOS Medicare - Part B Enrolled Months Num 8\n17 MDCR_PTAPTB_MOS Medicare - Part A & Part B Enrolled Months Num 8\n18 MDCR_PTD_MOS Medicare - Part D Enrolled Months Num 8\n19 FD_MOS Medicare - Full Dual Months Num 8\n20 PD_MOS Partial Dual Months Num 8\n21",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "(not dual)\nDEATH_DT Date of Death NUM 8 This field indicates the date of death of the enrollee according to the Medicaid enrollment data. This field is missing if the MSIS_ID did not have a death date in the Medicaid enrollment data for the reference year. Formatted as YYYYMMDD\nNDI_DOD NDI Date of Death NUM 8 This field indicates that an enrollee's date of death has been verified as the exact date of becoming deceased, according to a death certificate Formatted as YYYYMMDD\nNDI_MATCH Death",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_198",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Therapy visits not applicable Therapy visits not applicable. Effective August 2008. CHAR 1 x x\nM1000_DC_IPPS_14_DA M1000 Discharged Past 14 Days From IPPS This field indicates the patient was discharged from short stay acute hospital during the past 14 days. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x\nM1000_DC_IRF_14_DA M1000 Discharged Past 14 Days From IRF This field indicates the patient was discharged from inpatient rehabilitation hospital or unit (IRF) during the past\n14",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

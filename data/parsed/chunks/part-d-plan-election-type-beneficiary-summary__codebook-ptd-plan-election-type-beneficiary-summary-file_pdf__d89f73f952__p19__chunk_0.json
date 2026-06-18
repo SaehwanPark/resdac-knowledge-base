@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 \n\n14 \nREF_YEAR \nLABEL: \nThe Part D plan enrollment year \nDESCRIPTION: Year of Part D plan enrollment. The data files are partitioned into calendar year files. \nTYPE: \nNUM \nLENGTH: \n4 \nSOURCE: \nCCW (derived) \nFILE(S): \nPart D Beneficiary Plan Election file \nPart D Beneficiary Auto-Assignment file \nVALUES: \n2007 + \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

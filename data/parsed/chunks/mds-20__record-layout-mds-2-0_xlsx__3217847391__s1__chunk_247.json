@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_247",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= Unknown.\n404 L1E L1E_INFLAMED_GUM (L1E) Inflamed/Swollen/Bleeding Gums CHAR 1 Oral/dental status: oral status and disease prevention - inflamed/bleeding gums, oral abscesses, etc. 0 = No, 1 = Yes, \"-\" = Unknown.\n405 L1F L1F_DAY_TEETH_CLEAN (L1F) Daily Cleaning of Teeth/Dentures CHAR 1 Oral/dental status: oral status and disease prevention - daily cleaning teeth/dentures or mouth care. 0 = No, 1 = Yes, \"-\" = Unknown.\n406 L1G L1G_NONE_ABOVE (L1G) None of Above Oral Status CHAR 1 Oral/dental",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

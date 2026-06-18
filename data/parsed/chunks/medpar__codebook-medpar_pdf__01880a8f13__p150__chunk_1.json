@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p150__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 150,
+  "text": "LONG NAME: MA_TCHNG_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = Yes, provider requests a supplemental payment for IME/DGME/N&AH \nN = No additional IME/DGME/N&AH payment requested \nCOMMENT: \nIf any claim that comprises the Stay has a condition code (CLM-RLT-COND-CD) equal to '69' populate the \nMEDPAR MA Teaching Indicator Switch with a 'Y'. If no '69' condition code, populate field with an 'N'. \nThis field is new in 2011. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

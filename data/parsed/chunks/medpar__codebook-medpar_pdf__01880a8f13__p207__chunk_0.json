@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p207__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 207,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n191 \nPRVDR_NUM_SPCL_UNIT_CD \nLABEL: \nProvider Number Special Unit Code \nDESCRIPTION: The code identifying the special numbering system for units of hospitals that are excluded from the \nprospective payment system (PPS) or hospitals with skilled nursing facility (SNF) swing-bed designation. \nSHORT NAME: SPCLUNIT \nLONG NAME: PRVDR_NUM_SPCL_UNIT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nM =",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

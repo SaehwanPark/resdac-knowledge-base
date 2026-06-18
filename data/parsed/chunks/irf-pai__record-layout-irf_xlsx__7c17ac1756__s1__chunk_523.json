@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_523",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "pamphlets, or other written material from their doctor \nor pharmacy. 0 = Never\n1 = Rarely\n2 = Sometimes\n3 = Often\n4 = Always\n7 = Patient declines to respond\n8 = Patient unable to respond\n459 CNDCT_MENTL_STUS_DSCHRG_CD CNDCT_MENTL_STUS_DSCHRG_CD Brief Interview - Mental Status (BIMS) (Dsch) CHAR 1 This column documents whether, at the time of discharge, the facility felt a brief mental status interview should be conducted. 0 = No (patient is rarely/never understood)\n1 = Yes\n- = Not Assessed/No",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

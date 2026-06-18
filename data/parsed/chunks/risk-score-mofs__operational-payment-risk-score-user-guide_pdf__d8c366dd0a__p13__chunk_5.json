@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p13__chunk_5",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 13,
+  "text": "V21_HCC1 in this data file \n(whereas the same HCC in the V22 file is called V22_HCC1). The HCC numbering may apply to different condition \ncategories in different models. For example, in V21 and V22 HCC54 was Drug/Alcohol Psychosis; for V23 and V24 \nHCC54 is Substance Use with Psychotic Complications. \nTable 6. Naming conventions for HCCs — V21 example \nVariable name \nCondition \nV21_HCC1 \nHIV/AIDS (V21 HCC1) \nV21_HCC2 \nSepticemia/shock (V21 HCC2) \nV21_HCC6 \nOpportunistic infections (V21 HCC6)",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

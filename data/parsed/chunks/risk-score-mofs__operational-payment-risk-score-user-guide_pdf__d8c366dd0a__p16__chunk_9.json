@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_9",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "diagnostic groupings, diseases within a CC are related clinically and with respect to \ncost. An example is the CCs for diabetes, where both the diabetes with acute complications and diabetes with chronic \ncomplications include diagnosis codes for ketoacidosis or coma. Note, a small number of diagnosis codes mapped into \nmore than one CC. \nCMS imposes hierarchies among related CCs, so that the model codes a person for only the most severe manifestation \namong related diseases. After imposing",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

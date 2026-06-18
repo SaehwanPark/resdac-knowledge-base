@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p119__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 119,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n121 \nPRVDR_NUM_SYS \nLABEL: \nProvider Number System/Nomenclature \nDESCRIPTION: A code to identify the kind of provider identifier that is captured in the PRVDR_NUM data element. \nSHORT NAME: PRVDR_NUM_SYS \nLONG NAME: PRVDR_NUM_SYS \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR Identifiers \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n1: State-specific Medicaid provider ID \n2:",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

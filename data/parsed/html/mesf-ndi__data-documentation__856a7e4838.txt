@@ -1,0 +1,23 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+CCW Record Layout - Medicaid Enrollee Supplemental File (MESF): National Death Index (NDI)
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted 723 Beneficiary ID (Unique Key) | 
+| STATE_CD | State Code (MESF) | 
+| MSIS_ID | Encrypted Medicaid State ID Number | 
+| REF_YR | Record Reference Year | 
+| DM_SOURCE | Dual or Medicaid only enrollee | 
+| DEATH_DT | Date of Death | 
+| NDI_DOD | NDI Date of Death | 
+| NDI_MATCH | Death confirmed through NDI match | 
+| NDI_STATE_DEATH_CD | NDI State of Death | 
+| DEATH_CERT_NUM | NDI Death Certificate Number | 
+| ICD_CODE | ICD-10 Code | 
+| ICD_TITLE | ICD-10 Code Description | 
+| ICD_CODE_358 | 358 ICD-10 Cause of Death Recodes | 
+| ICD_CODE_113 | 113 ICD-10 Cause of Death Recodes | 
+| ICD_CODE_130 | 130 ICD-10 Cause of Death Recodes | 
+| ENTITY_COND_1 (through ENTITY_COND_20) | NDI Entity Axis Cause of Death - Condition 1 (through Condition 20) | 
+| RECORD_COND_1 (through RECORD_COND_20) | NDI Record Axis Cause of Death - Condition 1 (through Condition 20) |

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_41",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "and Resident Review (PASRR) Code CHAR 1 The data in this column identifies if the resident has been evaluated by the Level II Preadmission Screening and\nResident Review (PASRR). -=Not assessed/no information\n0=No\n1=Yes\n9=Not a Medicaid certified unit\n^=Blank(skip pattern)\n67 A1510A_SRUS_MENTL_ILL_CD A1510A_SRUS_MENTL_ILL_CD A1510A Serious Mental Illness Code CHAR 1 The data in this column identifies if the resident has a been diagnosed with a serious mental iilness. -=Not assessed/no",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

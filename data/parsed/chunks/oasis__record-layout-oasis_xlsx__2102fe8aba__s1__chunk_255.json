@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_255",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "00 = Normal vision; sees adequately in most situations; can see medication labels, newsprint.\n01 = Partially impaired: cannot see medication labels or newsprint, but can see obstacles in path, and the surrounding layout; can count fingers at arm's length.\n02 = Severely impaired; cannot locate object without hearing or touching\nthem or patient nonresponsive. CHAR 2 x x x x x\nM1210_HEARG_ABLTY M1210 Ability To Hear This field indicates the patient's ability to hear. 00 = Adequate: hears normal",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

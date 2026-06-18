@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p151__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 151,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n111 \nLCKIN_TOS_CD_1 \nLCKIN_TOS_CD_2 \nLCKIN_TOS_CD_3 \nLABEL: \nLock-in Type of Service Codes (1–3) \nDESCRIPTION: The type(s) of service that are locked-in to a specific provider for the individual. The LCKIN_TOS_CD_1 \nis related to LCKIN_PRVDR_ID_1 and LCKIN_PRVDR_TYPE_CD_1. \nSHORT NAME: LCKIN_TOS_CD_1 \nLCKIN_TOS_CD_2 \nLCKIN_TOS_CD_3 \nLONG NAME: LCKIN_TOS_CD_1",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

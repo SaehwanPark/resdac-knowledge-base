@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_7",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "41\nMDCD_PD_AMT Total Amount Paid By Medicaid NUM 8 42\nMDCD_COPAY_AMT Total Copay Amount Paid by Beneficiary NUM 8 43\nMDCR_DDCTBL_PD_AMT Total Medicare Deductible Amount NUM 8 44\nMDCR_COINSRNC_PD_AMT Total Medicare Coinsurance Amount NUM 8 45\nCOINSRNC_AMT Beneficiary Coinsurance Amount NUM 8 46\nTOT_BENE_COINSRNC_LBLTY_AMT Total Beneficiary Coinsurance Liability Amount NUM 8 66 New3\nCOPAY_AMT Beneficiary Copayment Amount NUM 8 47\nTOT_BENE_COPAY_LBLTY_AMT Total Beneficiary Copayment Liability",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

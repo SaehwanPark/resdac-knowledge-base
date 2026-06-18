@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_34",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "a percentage of the federal poverty level NUM 3 202 New2\nVET_IND Veteran Ind - Ltst in Yr CHAR 1 153\nCTZNSHP_IND U.S. Citizenship Ind - Ltst in Yr CHAR 1 154\nCTZNSHP_VRFCTN_PENDG_IND Beneficiary is Enrolled Pending Citizenship Verification - Ltst in Yr CHAR 1 155\nIMGRTN_STUS_CD Immigration Status Code - Ltst in Yr CHAR 1 156\nIMGRTN_VRFCTN_PENDG_IND Beneficiary is Enrolled Pending Immigration Verification - Ltst in Yr CHAR 1 157\nIMGRTN_STUS_5YR_BAR_END_DT Immigration Status Five Yr Bar End Date",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

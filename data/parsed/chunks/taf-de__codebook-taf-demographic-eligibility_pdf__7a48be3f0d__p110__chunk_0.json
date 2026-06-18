@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p110__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 110,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n70 \nENRLMT_END_DT \nLABEL: \nEnrollment End Date (Within Calendar Year) \nDESCRIPTION: Indicates the date at which a beneficiary’s enrollment in Medicaid or CHIP is terminated. If the \nenrollment episode is terminated after December 31 of the calendar year, this date is edited to \nDecember 31 of the calendar year. \nSHORT NAME: ENRLMT_END_DT \nLONG NAME: ENRLMT_END_DT",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

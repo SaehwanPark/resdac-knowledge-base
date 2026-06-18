@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_13",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "Type Code CHAR 3 14\nTOS_CD Type of Service Code CHAR 3 15\nXIX_SRVC_CTGRY_CD CMS-64 Form Category of Service for the Paid Claim CHAR 4 16\nXXI_SRVC_CTGRY_CD CMS-21 Form Category of Service for the Paid Claim CHAR 3 17\nCMS_64_FED_CTGRY_CD CMS-64 Form Code for Federal Reimbursement CHAR 2 18\nIHS_SRVC_IND Indian Health Service (IHS) Service Indicator CHAR 1 48 New3\nRX_FILL_DT Prescription Fill Date DATE 8 19\nNDC National Drug Code CHAR 13 20\nNDC_UOM_CD NDC Unit of Measure Code CHAR 2 21\nNDC_QTY NDC",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

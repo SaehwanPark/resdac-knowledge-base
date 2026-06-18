@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_6",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "12 X\n36 PHP_VAL Prepaid plan value NUM 12 X\n37 MDCR_COINSUR_PYMT_AMT Medicare coinsurance payment amount NUM 12 X\n38 MDCR_DED_PYMT_AMT Medicare deductible payment amount NUM 12 X\n39 PRES_PHYSICIAN_ID_NUM Prescribing physician id number CHAR 12 X\n40 PRSC_WRTE_DT Prescribed date DATE 8 X\n41 PRSCRPTN_FILL_DT Prescription fill date DATE 8 X\n42 NEW_REFILL_IND New or refill indicator NUM 2 X\n43 NDC National Drug Code (NDC) CHAR 12 X\n44 QTY_SRVC_UNITS Quantity of service NUM 6 X\n45 DAYS_SUPPLY Days",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,35 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Oncology Care Model Files — Clinical and Staging File
+Version — May 2024
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+DOB	Beneficiary Date of Birth	DATE	8
+SEX	Beneficiary Sex	NUM	3
+EPSD_BGN_DT	Episode Beginning Date	DATE	8
+EPSD_END_DT	Episode Ending Date	DATE	8
+DOD	Beneficiary Date of Death	DATE	8
+OCM_PRCTC_ID	OCM-Assigned Practice ID	CHAR	7
+CNCR_TYPE_ASGNED	OCM-Assigned Cancer Type	CHAR	35
+PRFMNC_PRD	OCM 6 Month Performance Period	NUM	3
+RPTD_TO_RGSTRY	Participant Reported Episode to OCM Registry	NUM	3
+ICD10_CNCR_DGNS_CD_RPTD	ICD10 Cancer Diagnosis Code Reported by Participant	CHAR	7
+CNCR_TYPE_RPTD	Participant-Reported Cancer Type	CHAR	35
+INITL_DGNS_DT	Initial Diagnosis Date	DATE	8
+AJCC_EDITION	AJCC Cancer Staging Edition	CHAR	3
+PRMRY_TUMOR	Primary Tumor Staging	CHAR	30
+NODAL_DISEASE	Nodal Disease Staging	CHAR	30
+METASTASIS	Metastasis Staging	CHAR	30
+ESTROGEN_RECEPTOR	Breast Cancer Estrogen Receptor	CHAR	30
+PROGESTERONE_RECEPTOR	Breast Cancer Progesterone Receptor	CHAR	30
+HER2_AMPLIFICATION	HER2 Amplification	CHAR	30
+HISTOLOGY	Histology	CHAR	30
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Oncology Care Model Files — Current Clinical Status File
+Version — May 2024
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+ICD10_CNCR_DGNS_CD_RPTD	ICD10 Cancer Diagnosis Code Reported by Participant	CHAR	7
+INITL_DGNS_DT	Initial Diagnosis Date	DATE	8
+CRNT_CLNCL_STUS	Current Clinical Status	CHAR	45
+CRNT_CLNCL_STUS_DT	Current Clinical Status Date	DATE	8

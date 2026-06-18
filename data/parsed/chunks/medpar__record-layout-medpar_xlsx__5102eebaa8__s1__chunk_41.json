@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_41",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "- - - - - - - - - - - - - - - X X\nNO_PSTV_TEST_SW NO_PSTV_TEST_SW No Positive Test Switch Char 1 - - - - - - - - - - - - - - - - - X\nEXPNDD_ACS_SW EXPNDD_ACS_SW Expanded Access Switch Char 1 - - - - - - - - - - - - - - - - - X\nCLNCL_TRIL_SW CLNCL_TRIL_SW Other Clinical Trial Switch Char 1 - - - - - - - - - - - - - - - - - X\nEMER_USE_SW EMER_USE_SW Emergency Use Switch Char 1 - - - - - - - - - - - - - - - - - X\nDiagnosis and Procedure Codes\nAD_DGNS ADMTG_DGNS_CD Initial diagnosis at time of",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

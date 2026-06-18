@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "services.\n41 _14A ADMTD_FROM_CD (14a) Admitted From Code CHAR 2 The patient's living arrangements prior to admission and the presence or absence of home health services if the patient was in a private home or apartment. -1 = Unknown, 1 = Private home/apt. with no home health services, 2 = Private home/apt. with home health services, 3 = Board and care/assisted living/group home, 4 = Nursing home, 5 = Acute Care Hospital, 6 = Psychiatric Hospital, MR/DD facility, 7 = Rehabilitation Hospital, 8 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

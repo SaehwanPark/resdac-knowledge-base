@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Disability Outcome Unknown CHAR 1\nNN_SPLMTL_EDCTN_RSLVD_SW Navigated Supplemental HRSN Education Resolved CHAR 1\nNN_SPLMTL_EDCTN_CNCT_CSP_SW Navigated Splmt HRSN Education Connected to Community Service Provider CHAR 1\nNN_SPLMTL_EDCTN_OPTOUT_SW Navigated Supplemental HRSN Education Opted Out CHAR 1\nNN_SPLMTL_EDCTN_CNTCT_FAIL_SW Navigated Supplemental HRSN Education Attempts to Reach Failed CHAR 1\nNN_SPLMTL_EDCTN_CSP_UNAVBL_SW Navigated Splmt HRSN Education Community Service Provider Unable to",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

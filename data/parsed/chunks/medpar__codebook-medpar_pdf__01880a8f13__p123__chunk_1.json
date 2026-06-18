@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p123__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 123,
+  "text": "1 \nSOURCE: \nMedPAR (derived) \nVALUES: \n0 = General (revenue center 0200) \n1 = Surgical (revenue center 0201) \n2 = Medical (revenue center 0202) \n3 = Pediatric (revenue center 0203) \n4 = Psychiatric (revenue center 0204) \n6 = Intermediate IOU; (revenue center 0209) prior to 12/96 update was 'post ICU' \n7 = Burn care (revenue center 0207) \n8 = Trauma (revenue center 0208) \n9 = Other intensive care (revenue code 0209) \nCOMMENT: \nThis field is derived by checking for the presence of ICU revenue",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

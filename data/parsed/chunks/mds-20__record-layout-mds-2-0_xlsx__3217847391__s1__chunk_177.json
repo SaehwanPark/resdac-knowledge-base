@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_177",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n250 G6D G6D_LIFTED_MECH (G6D) Lifted Mechanically CHAR 1 Physical functioning and structural problems: modes of transfer in last 7 days - lifted mechanically. 0 = No, 1 = Yes, \"-\" = Unknown.\n251 G6E G6E_TRANS_AID (G6E) Transfer Aid CHAR 1 Physical functioning and structural problems: modes of transfer in last 7 days - transfer aid. 0 = No, 1 = Yes, \"-\" = Unknown.\n252 G6F G6F_NONE_ABOVE (G6F) None of Above Modes of Transfer CHAR 1 Physical functioning and",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

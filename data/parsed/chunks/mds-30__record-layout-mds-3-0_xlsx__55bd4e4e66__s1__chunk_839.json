@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_839",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "10/01/2023\n929 NTRTN_NONE_DSCHRG_CD NTRTN_NONE_DSCHRG_CD K0520Z4 Nutritional Approaches (Discharge): None CHAR 1 The data in this column indicates whether the resident performed none of the listed nutritional approaches in the last three days of the resident's stay at the facility. 0=No\n1=Yes effective 10/01/2023\n930 ANTPSYCT_TKNG_CD ANTPSYCT_TKNG_CD N0415A1 High-Risk Drug (Is Taking): Antipsychotic CHAR 1 The data in this column indicates if the resident is taking antipsychotic medication",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

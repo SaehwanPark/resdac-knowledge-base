@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p133__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 133,
+  "text": "so that it is representative of each state’s data in \nMMLEADS, and within the state it is representative of the underlying distribution of MME_TYPE_CD. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCCW (derived) \nVALUES: \n0 = not included in sample \n1 = included in 1% sample \nCOMMENT: \nSince the MMLEADS files are very large, CCW developed this variable and includes it in MMLEADS as a \nsimple way to test analytic code — or conduct exploratory analyses using a small subset of data. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

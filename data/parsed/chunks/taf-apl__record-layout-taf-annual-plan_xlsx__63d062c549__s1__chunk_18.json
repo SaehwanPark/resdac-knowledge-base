@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 1,
+  "text": "Care Entity - 5th Accrediting Organization CHAR 2 67\nMC_ENT_ACRDTN_ACHVMT_DT_5 Managed Care Entity Accreditation Achievement Dt - 5th Accrediting Organization DATE 8 68\nMC_ENT_ACRDTN_END_DT_5 Managed Care Entity Accreditation End Date - 5th Accrediting Organization DATE 8 69\nMC_ENT_PRFT_STUS_CD Managed Care Entity Profit Status Code - Latest in Yr CHAR 2 70\nMC_ENT_GOVT_PCT Managed Care Entity Percent of Revenue from Medicare and Medicaid - Latest in Yr NUM 3 71\nSPLMTL_SRVC_ADDR_LCTN Annual",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

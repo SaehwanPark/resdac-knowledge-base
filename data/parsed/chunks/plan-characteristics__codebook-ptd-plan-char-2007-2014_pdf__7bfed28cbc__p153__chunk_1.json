@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p153__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 153,
+  "text": "of the Part D benefit. \nSHORT NAME: — \nLONG NAME: GAP_LTCP_COPAY_DAILY \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n1 = HPSA \n2 = Scarcity \n3 = Both \n5 =HPSA and HSIP \n6 =PCIP \n7 = HPSA and PCIP \nSpace = Not applicable \nCOMMENT: \nThis variable was new in 2014. It will only be populated if the plan has an enhanced benefit design \nwith extra coverage in the gap. \nThe coverage gap is technically referred to as the initial coverage limit (ICL) for the Part D benefit. The \nCCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

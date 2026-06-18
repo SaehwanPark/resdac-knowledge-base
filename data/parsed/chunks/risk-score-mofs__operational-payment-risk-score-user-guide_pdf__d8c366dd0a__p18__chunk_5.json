@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p18__chunk_5",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 18,
+  "text": "in the MBSF include: \n• \nDemographic — age, race, sex, date of death \n• \nGeographic — state, county, zip code \n• \nEnrollment — the start date for Medicare coverage; the beneficiary Medicare entitlement reason(both the original \nreason and the current reason, which can differ); and monthly information on eligibility (Part A, Part B, or both), \nenrollment in MA (aka Medicare Part C), and enrollment in Part D \nThe base beneficiary summary file is also known as the MBSF Part A, B, C, and D",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

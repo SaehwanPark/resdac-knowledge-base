@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "that was used in the RUB calculation for this assessment by the state MDS system.\n17 MCD_GP MCD_GP Medicaid RUG Group CHAR 3 This field contains the Medicaid RUG group calculated for this assessment by the state MDS system.\n18 MCD_VR MCD_VR Medicaid RUG Version CHAR 2 This field contains the Medicaid RUG calculator version used for this assessment by the state MDS system.\n19 MCR_CMI MCR_CMI Medicare CMI Value for RUG Group CHAR 9 This field contains the Medicare Case Mix Index generated in the",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

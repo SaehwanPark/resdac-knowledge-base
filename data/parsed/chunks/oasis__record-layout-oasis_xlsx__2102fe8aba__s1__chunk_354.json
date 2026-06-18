@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_354",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "At least daily\n02 = Three or more times per week\n03 = One to two times per week\n04 = Received, but less often than weekly\n05 = No assistance received\nUK = Unknown CHAR 2 x x x x\nM2200_THRPY_NEED_NA_NUM M2200 (M0826) Therapy Need- NA This field indicates therapy need is not applicable. 0 = Not Checked (Not NA), 1 = Checked (NA) CHAR 1 x x x x x x\nM2200_THRPY_NEED_NUM M2200 (M0826) Therapy Need- Number of Visits This field indicates the need for therapy visits (total of reasonable and necessary",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

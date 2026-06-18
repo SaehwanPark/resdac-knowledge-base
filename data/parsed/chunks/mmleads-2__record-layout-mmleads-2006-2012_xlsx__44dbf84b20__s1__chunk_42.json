@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_42",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "disorder\nNull/Missing – No Medicaid coverage during the month\nE_WAIVER2_1 - 12 Monthly Medicaid Waiver Status (2nd type of waiver) see E_WAIVER1_1-12\nE_WAIVER3_1 - 12 Monthly Medicaid Waiver Status (3rd type of waiver) see E_WAIVER1_1-12\nE_MEDICAID_RESTRICTED_1 - 12 Monthly Medicaid Restricted Benefits Indicator. January through December 0 - Not Medicaid eligible\n1 - Full Medicaid\n2 - Restricted Medicaid – alien status\n3 - Restricted Dual (QMB/SLMB only)\n4 - Restricted – pregnancy-related only",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p111__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 111,
+  "text": "(TAF) claims \nFILE(S): \nRX line \nVALUES: \nSix-character field that concatenates three two-digit codes. \nThe two leftmost digits (first and second characters) are the reason for service code: \nAD = Additional Drug Needed \nAN = Prescription Authentication \nAR = Adverse Drug Reaction \nAT = Additive Toxicity \nCD = Chronic Disease Management \nCH = Call Help Desk \nCS = Patient Complaint/Symptom \nDA = Drug — Allergy \nDC = Drug — Disease (Inferred) \nDD = Drug — Drug Interaction \nDF = Drug — Food",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

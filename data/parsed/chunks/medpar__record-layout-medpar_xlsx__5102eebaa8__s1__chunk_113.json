@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_113",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "Payment Indicator Code Char 1 - - - - - - - - - - - - X X X X X X\nCLM_RP_IND_CD CLM_RP_IND_CD Claim Representative Payee (RP) Indicator Code Char 1 - - - - - - - - - - - - X X - - - -\nRC_RP_IND_CD RC_RP_IND_CD Revenue Center Representative Payee (RP) Indicator Code Char 1 - - - - - - - - - - - - - X - - - -\nACO_ID_NUM ACO_ID_NUM Accountable Care Organization (ACO) Identification Number Char 10 - - - - - - - - - - - - - X X X X X\nLTCH_DPP_ADJSTMT_AMT LTCH_DPP_ADJSTMT_AMT Long Term Care Hospital",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

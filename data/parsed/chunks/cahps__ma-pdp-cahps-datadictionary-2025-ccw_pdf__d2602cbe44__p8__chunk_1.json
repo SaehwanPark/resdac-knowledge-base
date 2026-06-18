@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p8__chunk_1",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 8,
+  "text": "contact: make sure take meds as directed\nYNA\npd_ezrxmeds\nRECODE : Last 6 mths, easy to use pdp to get rx meds\nOFA\npd_rxpharm\nRECODE : Last 6 mths, ever use pdp to ﬁll rx at local pharmacy\nYNA\npd_ezrxpharm\nRECODE : Last 6 mths, easy to use pdp to ﬁll rx at local pharmacy\nOFA\npd_rxmail\nRECODE : Last 6 mths, ever use pdp to ﬁll rx by mail\nYNA\npd_ezrxmail\nRECODE : Last 6 mths, easy to use pdp to ﬁll rx by mail\nOFA\nrate_pdp\nRECODE : Rate prescription drug plan\nRTA\nghs\nRECODE : Rate overall general",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

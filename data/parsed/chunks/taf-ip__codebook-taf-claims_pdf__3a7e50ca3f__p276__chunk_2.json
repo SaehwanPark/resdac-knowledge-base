@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p276__chunk_2",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 276,
+  "text": "50 = Grocery Store \n51 = Indian Health Service Facility \n52 = Oxygen supplier \n53 = Pedorthic personnel \n54 = Medical supply company with pedorthic personnel \n55 = Rehabilitation Agency \n56 = Ocularist \n57 = All Other \n58 = Institutions for Mental Disease \nNull/missing = Source value is missing or unknown \nCOMMENT: \nIf the state uses state-specific codes, they should map their internal codes to the CMS standard list \nprovided. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p26__chunk_2",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 26,
+  "text": "(which has each unique NPI that has been assigned to a provider), the Drug Enforcement \nAdministration, and SureScripts (a nationwide e-prescribing network). This variable is the primary \ntaxonomy code listed for the prescriber in the NPPES directory. \nThis variable corresponds with the TAXONOMY_DESC variable, which provides the description of the \ntaxonomy code number. There are up to four additional taxonomy groupings for the prescriber in the \nPrescriber Characteristics file (reference",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

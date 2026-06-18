@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p23__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 23,
+  "text": "field comes from the admitting diagnosis code that is present on the last claim record included in \nthe stay. \nFor ICD-9 diagnosis codes, this is a 3–5 digit numeric or alpha/numeric value; it can include leading \nzeros. Starting in October 2015, ICD-10 diagnosis codes are used. A variable that indicates the version \nof the diagnosis code used appears for each occurrence (e.g., ADMTG_DGNS_VRSN_CD). \nThis diagnosis code may not be confirmed after the patient is evaluated; it may be different",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

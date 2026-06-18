@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p161__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 161,
+  "text": "calendar year. \nSHORT NAME: LTSS_LVL_CD_2_LTST \nLONG NAME: LTSS_LVL_CD_2_LTST \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nDisability and need \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n1 = Skilled Care \n2 = Intermediate Care \n3 = Custodial Care \nNull/missing = source value is missing or unknown \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

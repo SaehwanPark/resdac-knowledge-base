@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_175",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "G5E_NONE_ABOVE (G5E) None of Above Modes of Locomotion CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n247 G6A G6A_BEDFAST (G6A) Bedfast All/Most of Time CHAR 1 Physical functioning and structural problems: modes of transfer in last 7 days - bedfast all or most of the time. 0 = No, 1 = Yes, \"-\" = Unknown.\n248 G6B G6B_USE_BEDRAILS (G6B) Bed Rails Used for Bed Mobility/Transfer CHAR 1 Physical functioning and",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

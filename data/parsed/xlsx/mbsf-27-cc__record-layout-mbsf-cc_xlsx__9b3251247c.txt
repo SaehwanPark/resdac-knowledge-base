@@ -1,0 +1,90 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Master Beneficiary Summary File — 27 CCW Chronic Conditions (CC) File
+Version — February 2022
+Short SAS Name1	Long SAS Name2	Label	Type	Length
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+RFRNC_YR	BENE_ENROLLMT_REF_YR	Reference Year	NUM	4
+ENRL_SRC	ENRL_SRC	Source of enrollment data	CHAR	3
+AMI	AMI	Acute Myocardial Infarction End-of-Year Indicator	NUM	1
+AMIM	AMI_MID	Acute Myocardial Infarction Mid-Year Indicator	NUM	1
+AMIE	AMI_EVER	First Occurrence of Acute Myocardial Infarction	DATE	8
+ALZH	ALZH	Alzheimer's Disease End-of-Year Indicator	NUM	1
+ALZHM	ALZH_MID	Alzheimer's Disease Mid-Year Indicator	NUM	1
+ALZHE	ALZH_EVER	First Occurrence of Alzheimer's Disease	DATE	8
+ALZHDMTA	ALZH_DEMEN	Alzheimer's Disease and Related Disorders or Senile Dementia End-of-Year Indicator	NUM	1
+ALZHDMTM	ALZH_DEMEN_MID	Alzheimer's Disease and Related Disorders or Senile Dementia Mid-Year Indicator	NUM	1
+ALZHDMTE	ALZH_DEMEN_EVER	First Occurrence of Alzheimer's Disease and Related Disorders or Senile Dementia	DATE	8
+ATRIALFB	ATRIAL_FIB	Atrial Fibrillation End-of-Year Indicator	NUM	1
+ATRIALFM	ATRIAL_FIB_MID	Atrial Fibrillation Mid-Year Indicator	NUM	1
+ATRIALFE	ATRIAL_FIB_EVER	First Occurrence of Atrial Fibrillation	DATE	8
+CATARACT	CATARACT	Cataract End-of-Year Indicator	NUM	1
+CATARCTM	CATARACT_MID	Cataract Mid-Year Indicator	NUM	1
+CATARCTE	CATARACT_EVER	First Occurrence of Cataract	DATE	8
+CHRNKIDN	CHRONICKIDNEY	Chronic Kidney Disease End-of-Year Indicator	NUM	1
+CHRNKDNM	CHRONICKIDNEY_MID	Chronic Kidney Disease Mid-Year Indicator	NUM	1
+CHRNKDNE	CHRONICKIDNEY_EVER	First Occurrence of Chronic Kidney Disease	DATE	8
+COPD	COPD	Chronic Obstructive Pulmonary Disease End-of-Year Indicator	NUM	1
+COPDM	COPD_MID	Chronic Obstructive Pulmonary Disease Mid-Year Indicator	NUM	1
+COPDE	COPD_EVER	First Occurrence of Chronic Obstructive Pulmonary Disease	DATE	8
+CHF	CHF	Heart Failure End-of-Year Indicator	NUM	1
+CHFM	CHF_MID	Heart Failure Mid-Year Indicator	NUM	1
+CHFE	CHF_EVER	First Occurrence of Heart Failure	DATE	8
+DIABETES	DIABETES	Diabetes End-of-Year Indicator	NUM	1
+DIABTESM	DIABETES_MID	Diabetes Mid-Year Indicator	NUM	1
+DIABTESE	DIABETES_EVER	First Occurrence of Diabetes	DATE	8
+GLAUCOMA	GLAUCOMA	Glaucoma End-of-Year Indicator	NUM	1
+GLAUCMAM	GLAUCOMA_MID	Glaucoma Mid-Year Indicator	NUM	1
+GLAUCMAE	GLAUCOMA_EVER	First Occurrence of Glaucoma	DATE	8
+HIPFRAC	HIP_FRACTURE	Hip/Pelvic Fracture End-of-Year Indicator	NUM	1
+HIPFRACM	HIP_FRACTURE_MID	Hip/Pelvic Fracture Mid-Year Indicator	NUM	1
+HIPFRACE	HIP_FRACTURE_EVER	First Occurrence of Hip/Pelvic Fracture	DATE	8
+ISCHMCHT	ISCHEMICHEART	Ischemic Heart Disease End-of-Year Indicator	NUM	1
+ISCHMCHM	ISCHEMICHEART_MID	Ischemic Heart Disease Mid-Year Indicator	NUM	1
+ISCHMCHE	ISCHEMICHEART_EVER	First Occurrence of Ischemic Heart Disease	DATE	8
+DEPRESSN	DEPRESSION	Depression End-of-Year Indicator	NUM	1
+DEPRSSNM	DEPRESSION_MID	Depression Mid-Year Indicator	NUM	1
+DEPRSSNE	DEPRESSION_EVER	First Occurrence of Depression	DATE	8
+OSTEOPRS	OSTEOPOROSIS	Osteoporosis End-of-Year Indicator	NUM	1
+OSTEOPRM	OSTEOPOROSIS_MID	Osteoporosis Mid-Year Indicator	NUM	1
+OSTEOPRE	OSTEOPOROSIS_EVER	First Occurrence of Osteoporosis	DATE	8
+RA_OA	RA_OA	Rheumatoid Arthritis / Osteoarthritis End-of-Year Indicator	NUM	1
+RA_OA_M	RA_OA_MID	Rheumatoid Arthritis / Osteoarthritis Mid-Year Indicator	NUM	1
+RA_OA_E	RA_OA_EVER	First Occurrence of Rheumatoid Arthritis / Osteoarthritis	DATE	8
+STRKETIA	STROKE_TIA	Stroke / Transient Ischemic Attack End-of-Year Indicator	NUM	1
+STRKTIAM	STROKE_TIA_MID	Stroke / Transient Ischemic Attack Mid-Year Indicator	NUM	1
+STRKTIAE	STROKE_TIA_EVER	First Occurrence of Stroke / Transient Ischemic Attack	DATE	8
+CNCRBRST	CANCER_BREAST	Breast Cancer End-of-Year Indicator	NUM	1
+CNCRBRSM	CANCER_BREAST_MID	Breast Cancer Mid-Year Indicator	NUM	1
+CNCRBRSE	CANCER_BREAST_EVER	First Occurrence of Breast Cancer	DATE	8
+CNCRCLRC	CANCER_COLORECTAL	Colorectal Cancer End-of-Year Indicator	NUM	1
+CNCRCLRM	CANCER_COLORECTAL_MID	Colorectal Cancer Mid-Year Indicator	NUM	1
+CNCRCLRE	CANCER_COLORECTAL_EVER	First Occurrence of Colorectal Cancer	DATE	8
+CNCRPRST	CANCER_PROSTATE	Prostate Cancer End-of-Year Indicator	NUM	1
+CNCRPRSM	CANCER_PROSTATE_MID	Prostate Cancer Mid-Year Indicator	NUM	1
+CNCRPRSE	CANCER_PROSTATE_EVER	First Occurrence of Prostate Cancer	DATE	8
+CNCRLUNG	CANCER_LUNG	Lung Cancer End-of-Year Indicator	NUM	1
+CNCRLNGM	CANCER_LUNG_MID	Lung Cancer Mid-Year Indicator	NUM	1
+CNCRLNGE	CANCER_LUNG_EVER	First Occurrence of Lung Cancer	DATE	8
+CNCRENDM	CANCER_ENDOMETRIAL	Endometrial Cancer End-of-Year Indicator	NUM	1
+CNCENDMM	CANCER_ENDOMETRIAL_MID	Endometrial Cancer Mid-Year Indicator	NUM	1
+CNCENDME	CANCER_ENDOMETRIAL_EVER	First Occurrence of Endometrial Cancer	DATE	8
+ANEMIA	ANEMIA	Anemia End Year Flag	NUM	1
+ANEMIA_MID	ANEMIA_MID	Anemia Mid Year Flag	NUM	1
+ANEMIA_EVER	ANEMIA_EVER	Anemia First Ever Occurrence Date	DATE	8
+ASTHMA	ASTHMA	Asthma End Year Flag	NUM	1
+ASTHMA_MID	ASTHMA_MID	Asthma Mid Year Flag	NUM	1
+ASTHMA_EVER	ASTHMA_EVER	Asthma First Ever Occurrence Date	DATE	8
+HYPERL	HYPERL	Hyperlipidemia End Year Flag	NUM	1
+HYPERL_MID	HYPERL_MID	Hyperlipidemia Mid Year Flag	NUM	1
+HYPERL_EVER	HYPERL_EVER	Hyperlipidemia First Ever Occurrence Date	DATE	8
+HYPERP	HYPERP	Benign Prostatic Hyperplasia End Year Flag	NUM	1
+HYPERP_MID	HYPERP_MID	Benign Prostatic Hyperplasia Mid Year Flag	NUM	1
+HYPERP_EVER	HYPERP_EVER	Benign Prostatic Hyperplasia First Ever Occurrence Date	DATE	8
+HYPERT	HYPERT	Hypertension End Year Flag	NUM	1
+HYPERT_MID	HYPERT_MID	Hypertension Mid Year Flag	NUM	1
+HYPERT_EVER	HYPERT_EVER	Hypertension First Ever Occurrence Date	DATE	8
+HYPOTH	HYPOTH	Acquired Hypothyroidism End Year Flag	NUM	1
+HYPOTH_MID	HYPOTH_MID	Acquired Hypothyroidism Mid Year Flag	NUM	1
+HYPOTH_EVER	HYPOTH_EVER	Acquired Hypothyroidism First Ever Occurrence Date	DATE	8
+1 If read into SAS version 6.x environment, "SHORT NAMES" will display in output file.
+2 If read into SAS version 8.x environment, "LONG NAMES" will display in output file.

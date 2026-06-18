@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s2__chunk_144",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 2,
+  "text": "Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Medicaid Only Claims 0-9 or Missing\nHIVARV_MEDICARE Antiretroviral Medication Number of Unique Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Medicare Only Claims 0-9 or Missing\nHIVPGM HIV/AIDS Program Participation (Waiver Program) 0 - No\n1 - Yes\nNull/missing\nHIVSSAPRIM HIV/AIDS SSA Disability Qualifying Primary Diagnosis (identified using disability determination codes) 0 - No Disability determination/no HIV",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_281",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "wound. 00 = Newly epithelialized\n01 = Fully granulating\n02 = Early/partial granulation\n03 = Not healing CHAR 2 x x x x x x\nM1350_LESION_OPEN_WND M1350 Skin Lesion Or Open Wound This field indicates whether the patient has a skin lesion or open wound, excluding bowel ostomy that is receiving intervention by the home health agency. 0 = No, 1 = Yes CHAR 1 x x x x\nM1400_WHEN_DYSPNIC M1400 (M0490) When Is Patient Dyspneic This field indicates when the patient is dyspneic or noticeably short of",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_2",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Zip code of the beneficiary’s residence | \n\n | 14 | BENE_DSCHRG_STUS_CD | Code identifying status of patient as of CLM_THRU_DT | \n\n | 15 | FICARR_IDENT_NUM | Fiscal Intermediary (FI) ID Number | \n\n | 16 | WRNG_IND_CD | Warning indicators code specifying detailed billing info | \n\n | 17 | GHO_PD_CD | Code indicating whether Group Health Organization (GHO) has paid provider for claim(s) | \n\n | 18 | PPS_IND_CD | Prospective payment system (PPS) Indicator Code | \n\n | 19 | ORG_NPI_NUM | Organization",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

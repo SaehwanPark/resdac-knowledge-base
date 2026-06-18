@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p54__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 54,
+  "text": "had Part \nD coverage. \nSHORT NAME: PTD_MO \nLONG NAME: PTD_PLAN_CVRG_MONS \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) (derived) \nVALUES: \n0–12 \nCOMMENT: \nA Part D covered month is one where the first value of the monthly PTD_CNTRCT_ID_XX variable \nequaled H, R, S, or E or the value was X followed by 4 alphanumeric characters. \n^ Back to TOC ^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

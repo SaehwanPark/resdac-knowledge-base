@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "code - August CHAR 2\nDUAL_09 DUAL_STUS_CD_09 Medicare-Medicaid dual eligibility code - September CHAR 2\nDUAL_10 DUAL_STUS_CD_10 Medicare-Medicaid dual eligibility code - October CHAR 2\nDUAL_11 DUAL_STUS_CD_11 Medicare-Medicaid dual eligibility code - November CHAR 2\nDUAL_12 DUAL_STUS_CD_12 Medicare-Medicaid dual eligibility code - December CHAR 2\nCSTSHR01 CST_SHR_GRP_CD_01 Part D low-income cost share group code - January CHAR 2\nCSTSHR02 CST_SHR_GRP_CD_02 Part D low-income cost share group code",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

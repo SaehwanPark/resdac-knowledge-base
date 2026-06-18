@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_1",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "NPI Number | \n\n | ORG_NPI_NUM | Organization (or group) NPI Number | \n\n | CARR_LINE_PRVDR_TYPE_CD | Carrier Line Provider Type Code | \n\n | TAX_NUM | Line Provider Tax Number | \n\n | PRVDR_STATE_CD | NCH Provider SSA State Code | \n\n | PRVDR_ZIP | Carrier Line Performing Provider ZIP Code | \n\n | PRVDR_SPCLTY | Line CMS Provider Specialty Code | \n\n | RNDRNG_PRVDR_SPCLTY_CD1 | Rendering Provider Secondary Specialty Code 1 | \n\n | RNDRNG_PRVDR_SPCLTY_CD2 | Rendering Provider Secondary Specialty Code 2",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

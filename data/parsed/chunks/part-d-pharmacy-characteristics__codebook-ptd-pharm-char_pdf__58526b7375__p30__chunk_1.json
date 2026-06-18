@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p30__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 30,
+  "text": "NAME: — \nLONG NAME: STATUS_340B_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n36 = Site has no 340B relationships or is non-participating \n37 = Site is not owned by a 340B covered entity but acts as a contract pharmacy to one or more \ncovered entities \n38 = Site is owned by a participating 340B covered entity but also serves non Eligible Patients \n39 = Site is owned by a participating 340B covered entity and serves only Eligible Patients \nNull /missing= This information has not",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

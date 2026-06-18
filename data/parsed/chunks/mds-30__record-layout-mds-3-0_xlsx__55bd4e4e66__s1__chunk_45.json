@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_45",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "A1550B MR/DD Status: Autism Code CHAR 1 The data in this column identifies if the resident has autism. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n72 A1550C_EPLPSY_CD A1550C_EPLPSY_CD A1550C MR/DD Status: Epilepsy Code CHAR 1 The data in this column identifies if the resident has epilepsy. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n73 A1550D_OTHR_ORGNC_MR_DD_CD A1550D_OTHR_ORGNC_MR_DD_CD A1550D MR/DD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

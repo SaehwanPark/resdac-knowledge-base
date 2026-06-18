@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p63__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 63,
+  "text": "1 \nSOURCE: \nT-MSIS DE file \nVALUES: \n0 = Not eligible for Medicaid or (CHIP) during the month \n1 = Eligible for Medicaid or CHIP (full scope of benefits) \n2 = Eligible for Medicaid or Medicaid-Expansion CHIP (restricted benefits based on alien status) \n3 = Eligible for Medicaid (restricted benefits based on Medicare dual-eligibility status; e.g., QMB, \nSLMB, QDWI, QI) \n4 = Eligible for Medicaid or CHIP (restricted benefits — pregnancy) \n5 = Eligible for Medicaid or Medicaid-Expansion CHIP",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

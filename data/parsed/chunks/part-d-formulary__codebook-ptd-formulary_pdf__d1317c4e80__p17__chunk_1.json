@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 17,
+  "text": "— \nLONG NAME: QUANTITY_LIMIT_YN \n\nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nFor 2006–2009 this variable was found in the Event Characteristics files (BP_UM_TIER_YYYY_MM).This \nvariable is first available in the Formulary file in 2010. \nPart D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS \nvia the Health Plan Management System (HPMS). This includes information on which drugs are subject \nto quantity",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

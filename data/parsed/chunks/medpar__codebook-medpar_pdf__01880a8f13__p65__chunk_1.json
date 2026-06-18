@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p65__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 65,
+  "text": "or \nworker's compensation Medicare Set-Aside Arrangements (WCMSA). \nSHORT NAME: CLM_RSDL_PYMT_IND_CD \nLONG NAME: CLM_RSDL_PYMT_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nX = Residual Payment \nCOMMENT: \nNormally, CWF does not allow a secondary payment on MSP involving ORM or WCMSA, so the RPI will \nbe used to allow CWF to make an exception to its normal routine. \nThis field comes from the Claim Residual Payment Indicator Code (CLM-RSDL-PMT-IND-CD) that is \npresent on the first claim",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,6 @@
+The Master Beneficiary Summary File (MBSF) Cost and Use segment includes one record for each beneficiary enrolled in Medicare in the calendar year of the file.
+What does this file include? (variable highlights)
+- Summary of utilization and total annual payments for services such as:
+- Number of hospital stays, Medicare covered days and total annual inpatient payments for services covered by FFS Medicare
+- Summary of Part D payments, events and prescription fills
+This file is a segment that can be requested in addition to the Master Beneficiary Summary File (MBSF) base file.

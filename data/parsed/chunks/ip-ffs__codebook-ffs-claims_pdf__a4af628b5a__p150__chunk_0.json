@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p150__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 150,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n132 \nCLM_SRVC_FAC_ZIP_CD \nLABEL: \nClaim service facility ZIP code (where service was provided) \nDESCRIPTION: ZIP code where service was provided, as indicated on the claim. \nSHORT NAME: CLM_SRVC_FAC_ZIP_CD \nLONG NAME: CLM_SRVC_FAC_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n9 \nSOURCE: \nNCH \nVALUES: \nXXXXXXXXX \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

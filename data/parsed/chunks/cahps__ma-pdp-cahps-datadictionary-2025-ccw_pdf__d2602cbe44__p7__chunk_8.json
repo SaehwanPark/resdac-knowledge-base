@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p7__chunk_8",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 7,
+  "text": ": Last 6 mths, how often health plan forms easy to ﬁll out\nOFA\nrate_plan\nRECODE : Rate health plan\nRTA\npl_lowercopay\nRECODE : Last 6 mths, did health plan offer to lower amount of your co-pay because of health condition\nYNA\npl_xtrabeneﬁts\nRECODE : Last 6 mths, did health plan offer extra beneﬁts because of health condition\nYNA\npl_hospovn\nRECODE : Last 6 mths, spend one or more nights in a hospital\nYNA\npd_hlthplan\nRECODE : Name of health plan\nYNA\npd_hlthplan_txt\nRECODE : Name of medicare",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_56",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(AC1O) Has Irregular Bowel Movement Pattern CHAR 1 Customary routine: ADL patterns - has irregular bowel movement pattern. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n111 AC1P AC1P_SHOWERS (AC1P) Showers for Bathing CHAR 1 Customary routine: ADL patterns - showers for bathing. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n112 AC1Q AC1Q_BATH_PM (AC1Q) Bathing in PM CHAR 1 Customary routine: ADL patterns - bathing in PM. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n113 AC1R AC1R_NONE_ABOVE (AC1R) None",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

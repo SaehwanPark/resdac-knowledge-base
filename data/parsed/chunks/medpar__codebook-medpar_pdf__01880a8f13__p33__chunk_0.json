@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p33__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 33,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n17 \nBENE_ID \nLABEL: \nCCW Encrypted Beneficiary ID Number \nDESCRIPTION: The unique CCW identifier for a beneficiary. The CCW assigns a unique beneficiary identification \nnumber to each individual who receives Medicare and/or Medicaid and uses that number to identify \nan individual’s records in all CCW data files (e.g., Medicare claims, MAX claims, and MDS assessment \ndata). \nThis number does not",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

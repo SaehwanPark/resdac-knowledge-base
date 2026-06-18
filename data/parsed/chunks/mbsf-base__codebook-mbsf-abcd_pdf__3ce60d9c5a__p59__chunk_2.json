@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p59__chunk_2",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 59,
+  "text": "Administration (and is in turn used in CMS’s enrollment data base) and applying an algorithm \nthat identifies more beneficiaries as Hispanic or Asian. \nThis algorithm was developed by the Research Triangle Institute (RTI) and is thus often referred to as \nthe “RTI race code”. \nThe algorithm classifies beneficiaries as Hispanic or Asian if their SSA race code equals 4 (Asian) or 5 \n(Hispanic), or if they have a first or last name that RTI determined was likely Hispanic or Asian in origin. \n^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

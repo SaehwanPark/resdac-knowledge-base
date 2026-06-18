@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_89",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "NUM 8 175 — — — —\nIHU_PUCD_TOT_AGE_SEX_WT3 Inpatient Hospital Utilization (IHU): PUCD Age-Sex Weight, Total NUM 8 176 — — — —\nIHU_PUCD_SRGRY_AGE_SEX_WT3 Inpatient Hospital Utilization (IHU): PUCD Age-Sex Weight, Surgery NUM 8 177 — — — —\nIHU_PUCD_MDCL_AGE_SEX_WT3 Inpatient Hospital Utilization (IHU): PUCD Age-Sex Weight, Medical NUM 8 178 — — — —\nIHU_PUCD_TOT_BASE_RISK_WT Inpatient Hospital Utilization (IHU): PUCD Base Risk Weight, Total NUM 8 179 — — — —\nIHU_PUCD_SRGRY_BASE_RISK_WT Inpatient",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

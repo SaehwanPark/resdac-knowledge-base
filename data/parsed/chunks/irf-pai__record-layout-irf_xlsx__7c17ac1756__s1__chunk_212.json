@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_212",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "CHAR 1 A code which indicates whether the patient reports one or more episodes of becoming 'breathless' or short of breath (dyspneic), or the patient is observed to be short of breath with mild exertion, such as during bathing or transferring, on at least one occasion at the time of discharge. 0 = No, 1 = Yes\n173 _49A SOB_REST_ADMSN_SW (49a) Shortness of Breath At Rest: Admission CHAR 1 A code which indicates whether the patient reports one or more episodes of becoming 'breathless' or short of",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

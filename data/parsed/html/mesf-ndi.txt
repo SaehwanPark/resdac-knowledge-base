@@ -1,0 +1,11 @@
+The National Death Index (NDI) segment of the Medicaid Enrollee Supplemental File (MESF) includes cause of death information from death certificates provided through linkage with the NDI cause of death information.
+What does this file include? (variable highlights)
+- NDI date of death
+- ICD-10 description and code for cause of death
+- Underlying conditions for cause of death
+- CDC category code for cause of death
+Special considerations
+- Some states are not included in the later years. See specific availability below.
+- This is a segment of the MESF file. Another segment, the Conditions Segment can also be requested.
+- Only beneficiaries with a date of death in the annual Medicaid enrollment file are included in the file. The date can be the Medicaid date of death reported in MAX/TAF or the Medicare date of death for the dually eligible.
+- A bridge file will be provided to assist researchers who are conducting longitudinal analysis involving the 2020 MESF NDI file and the 2020 or 2021 TAF research files. For additional information, see the CCW T-MSIS Analytic Files (TAF) User Guide, section 5A, footnote 29, posted on CCW’s User Documentation page.

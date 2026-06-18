@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "ADJSTMT_DLTN_CD Adjustment Deletion Code CHAR 1 X X X X X X X X X\nNSTFMTCD NSTD_FRMT_CD Non-Standard Format Code CHAR 1 X X X X X X X X X\nPRCGEXCD PRCNG_EXCPTN_CD Pricing Exception Code CHAR 1 X X X X X X X X X\nCATCOVCD CTSTRPHC_CVRG_CD Catastrophic Coverage Code CHAR 1 X X - - - - - - -\nGDCBOOPT GDC_BLW_OOPT_AMT Gross Drug Cost Below Out-of-Pocket Threshold (GDCB) NUM 13 X X X X X X X X LC\nGDCAOOPT GDC_ABV_OOPT_AMT Gross Drug Cost Above Out-of-Pocket Threshold (GDCA) NUM 13 X X X X X X X X",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

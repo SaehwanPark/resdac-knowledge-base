@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__chunk_0",
+  "source_document": "data/raw/html/dataset_page/8cb6484ad20a60abb1e2f652756c576cfbf5dba9.html",
+  "page": null,
+  "text": "The Medicaid and CHIP T-MSIS Analytic File (TAF) Long Term Care (LT) file contains records for institutional long term care provided by specific facilities identified by the Type of Service variable:\n- Nursing Facility Services\n- Mental Facility Services\n- Independent (free-standing) Psychiatric Wings of Acute Care Hospitals\n- Intermediate Care Facility (ICF) Services for Individuals With Intellectual Disabilities\nThe records in the LT TAF include fee-for-service (FFS) claims, managed care",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt?page=1"
+}

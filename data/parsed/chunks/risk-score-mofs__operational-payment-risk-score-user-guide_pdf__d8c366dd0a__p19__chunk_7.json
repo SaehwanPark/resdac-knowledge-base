@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p19__chunk_7",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 19,
+  "text": "This set of files includes the V22 MOF executable file, and \nonce decrypted and uncompressed it includes the .dat \n(data) file, .fts (layout and record counts) file, and version 8 \nSAS read-in programs. \nres000011111req000232_2019_RSV23.exe \n\nrisk_score_v23_res000011111_req000232_2019.dat \nrisk_score_v23_res000011111_req000232_2019.fts \nrisk_score_v23_read_v6.sas \nrisk_score_v23_read_v8.sas \nThis set of files includes the V23 MOF executable file, and \nonce decrypted and uncompressed it",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

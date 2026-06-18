@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "8\nNC_NVGTN_CASE_ID Navigation Case Unique Identifier CHAR 9\nNC_NVGTN_CASE_STRT_DT Navigation Case Opt In Date DATE 8\nNC_NVGTN_CASE_TRMNTN_DT Navigation Case Termination Date DATE 8\nNC_NVGTN_ACTN_PLAN_CMPLT_SW Navigation Case Action Plan Complete Indicator CHAR 1\nNN_NVGTD_CORE_FOOD_SW Navigated Core HRSN Food Indicator CHAR 1\nNN_NVGTD_CORE_HOUSNG_SW Navigated Core HRSN Housing Indicator CHAR 1\nNN_NVGTD_CORE_SFTY_SW Navigated Core HRSN Safety Indicator CHAR 1\nNN_NVGTD_CORE_TRNSPRTN_SW Navigated",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

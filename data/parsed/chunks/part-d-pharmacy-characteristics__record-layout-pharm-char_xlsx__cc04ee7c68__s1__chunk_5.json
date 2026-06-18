@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__record-layout-pharm-char_xlsx__cc04ee7c68__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/cc04ee7c6808c16f3ba84c100b6269bc17e26f68.xlsx",
+  "page": 1,
+  "text": "Indicator CHAR 1 - X X\nIMMUNIZATIONS_CD Code Indicating the Level of Immunization Services Offered CHAR 2 - X X\nSTATUS_340B_IND 340B Status Indicator CHAR 1 - X X\nSTATUS_340B_CD Code Indicating the Level of 340B Services Offered CHAR 2 - X X\n1 Shading or '-' indicates that the variable was not present during this time.",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pharm-char.xlsx"
+}

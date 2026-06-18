@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p164__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 164,
+  "text": "This field was new in 2011. \nIf the total covered costs of the discharge exceed the DRG payment for the case including adjustments \nfor IME and disproportionate share hospitals (DSH) but excluding outlier payments) an add-on amount is \nmade indicating a new technology was used in the treatment of the beneficiary. \nThis field is derived by accumulating the amount field (CLM-VAL-AMT) found in the value code trailer for \nvalue code (CLM-VAL-CD) equal to '77' for any claim records included in the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

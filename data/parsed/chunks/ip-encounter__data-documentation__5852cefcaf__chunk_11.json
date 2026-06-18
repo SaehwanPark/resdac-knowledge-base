@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__data-documentation__5852cefcaf__chunk_11",
+  "source_document": "data/raw/html/documentation_page/5852cefcaf4dca5dba3392a521caae7b6816e9f1.html",
+  "page": null,
+  "text": "| Claim Diagnosis Code 3 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 66 | CLM_POA_IND_SW4 | Claim Diagnosis Code 4 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 67 | CLM_POA_IND_SW5 | Claim Diagnosis Code 5 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 68 | CLM_POA_IND_SW6 | Claim Diagnosis Code 6 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 69 | CLM_POA_IND_SW7 | Claim Diagnosis Code 7",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter/data-documentation"
+}

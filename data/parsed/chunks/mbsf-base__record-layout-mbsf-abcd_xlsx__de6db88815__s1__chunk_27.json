@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_27",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Number - December CHAR 3\nRDSIND01 RDS_IND_01 Part D Retiree Drug Subsidy Indicator - January CHAR 1\nRDSIND02 RDS_IND_02 Part D Retiree Drug Subsidy Indicator - February CHAR 1\nRDSIND03 RDS_IND_03 Part D Retiree Drug Subsidy Indicator - March CHAR 1\nRDSIND04 RDS_IND_04 Part D Retiree Drug Subsidy Indicator - April CHAR 1\nRDSIND05 RDS_IND_05 Part D Retiree Drug Subsidy Indicator - May CHAR 1\nRDSIND06 RDS_IND_06 Part D Retiree Drug Subsidy Indicator - June CHAR 1\nRDSIND07 RDS_IND_07 Part D Retiree",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p40__chunk_5",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 40,
+  "text": "Oral medicine \nF1 = Orofacial pain \nF2 = Orthodontics and dentofacial orthopedics \nF3 = Pediatric dentistry \nF4 = Periodontics \nF5 = Prosthodontics \nF6 = Epileptologists\nCOMMENT: \nThese fields are added to the data file October 2023. The primary specialty code for the rendering \nprovider is “LINE_HCFA_PRVDR_SPCLTY_CD.” These codes are all secondary-specialty codes — not \nprimary specialty codes, just additional specialties that the provider has. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

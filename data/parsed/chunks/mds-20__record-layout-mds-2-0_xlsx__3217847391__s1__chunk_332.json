@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_332",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "urinary incontinence and indwelling catheter - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n561 VA06B VA06B_INCONT_PC (VA06B) Urinary Incontinence Care Planning Decision CHAR 1 RAP summary: urinary incontinence and indwelling catheter - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n562 VA07A VA07A_PSYCH_TR (VA07A) Psychosocial Well-being Triggered CHAR 1 RAP summary: psychological well-being -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

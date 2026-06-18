@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_154",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "PREM_MDCD_PYMT_AMT_PHI Medicaid premium payments (PHI) NUM 8 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zeros Only Not in 2013 proc contents\n672 ENCTR_REC_CNT_HCBS Encounter record count - Home and Community-Based Services (HCBS) NUM 5 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zeros Only Not in 2013 proc contents\n673 TMSIS_ELG_GRP_MO_1 T-MSIS Eligibility Group - Month 1 CHAR 2 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zero or '99'\n674 TMSIS_ELG_GRP_MO_2 T-MSIS Eligibility Group - Month 2 CHAR 2 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

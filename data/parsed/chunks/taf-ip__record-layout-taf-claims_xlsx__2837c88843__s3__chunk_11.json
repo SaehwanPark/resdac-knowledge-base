@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_11",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Payment Level Indicator - Header or Line CHAR 1 61\nCPTATD_PYMT_BILLED_AMT Capitated Payment Billed Amount NUM 8 62 Retired4\nCPTATD_PYMT_BILLED_DT Capitated Payment Billed Date DATE 8 63 Retired4\nBILLED_AMT Total Claim Billed Amount NUM 8 64\nMDCD_ALOWD_AMT Total Medicaid Allowed Amount NUM 8 65\nMDCD_PD_AMT Total Amount Paid By Medicaid NUM 8 66\nDAILY_RATE Daily Rate that a Policy will Pay for a Covered Service NUM 8 67\nMDCD_COPAY_AMT Total Copay Amount Paid by Beneficiary NUM 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

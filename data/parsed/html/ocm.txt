@@ -1,0 +1,7 @@
+The Oncology Care Model (OCM) operated from July 2016-June 2022 and aimed to provide higher quality, precisely coordinated oncology care at the same or lower cost to Medicare.
+Under OCM, physician practices entered into payment arrangements with CMS that included financial and performance accountability for episodes of care surrounding chemotherapy administration to cancer patients. The practices which participated in OCM committed to providing enhanced services to Medicare beneficiaries such as care coordination, navigation, and adherence to national treatment guidelines for care.
+OCM participants submitted staging and clinical data to the OCM Data Registry, a web-based data submission and collection tool, for their attributed episodes.
+The data from the Oncology Care Model (OCM) is a set of two linkable files, which are both provided for a research request (i.e., cannot be requested separately):
+- The Clinical and Staging file contains practice-reported staging and clinical data, which includes basic information on the episodes attributed to model participants.
+- The Current Clinical Status file contains practice-reported, cancer-specific clinical and staging patient status values.
+The data includes information about the care episodes, the practice ID to which they were attributed, episode beginning and end dates, and the clinical and staging characteristics.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p39__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 39,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n31 \nMC_PLAN_LCTN_ID \nLABEL: \nManaged Care Plan Location Identifier \nDESCRIPTION: A field to differentiate a managed care entity’s service location. \nSHORT NAME: MC_PLAN_LCTN_ID \nLONG NAME: MC_PLAN_LCTN_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nFILE(S): \nAPL Location \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nState-reported location identification number. The field can contain any",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

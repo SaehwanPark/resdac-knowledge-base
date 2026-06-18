@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 17,
+  "text": "as the sum of the \nLINE_COINSRNC_AMT + LINE_BENE_PTB_DDCTBL_AMT for all relevant lines. \nASC claim lines are a subset of the claims in the Part B carrier data file. The ASC claim lines are identified \nby the claim lines where the LINE_CMS_TYPE_SRVC_CD =“F.” \nSHORT NAME: — \nLONG NAME: ASC_BENE_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThere are 11 cost/use categories from the carrier Part B and durable medical equipment (DME) data \nfiles — ambulatory surgery",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

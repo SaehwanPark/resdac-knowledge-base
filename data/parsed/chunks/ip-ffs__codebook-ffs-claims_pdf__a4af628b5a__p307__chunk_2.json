@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p307__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 307,
+  "text": "that state and type of \nprovider (i.e., this is a unique but not necessarily sequential number). \nSHORT NAME: PROVIDER \nLONG NAME: PRVDR_NUM \nTYPE: \nCHAR \nLENGTH: \n6 \nSOURCE: \n— \nVALUES: \nThe first two positions are the CCN state codes. A state may have more than one code. The following is \na list of all CMS assigned state codes to be used with the CCN:\n00 = Arizona \n01 = Alabama \n02 = Alaska \n03 = Arizona \n04 = Arkansas \n05 = California \n06 = Colorado \n07 = Connecticut \n08 = Delaware \n09 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p204__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 204,
+  "text": "This field is populated from the provider number (the CCN), from the first claim record included in the \nstay, modified as follows. \nIf position 3 of the provider number is one of the alpha characters on the list below, and position 4 is \nnumeric, then populate position 3 of this field with the following numeric values: \nPsych/Rehab Unit or Swing Bed Unit in a CAH: \nIf “M”, “R” or “Z”, populate “1” \nPsych/Rehab Unit or Swing Bed in a IPPS Hospital: \nIf “S”, “T” or “U”, populate “0” \nSwing Bed",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

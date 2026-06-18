@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p303__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 303,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n283 \nXIX_SRVC_CTGRY_CD \nLABEL: \nCMS-64 Form Category of Service for the Paid Claim \nDESCRIPTION: A code indicating the category of service for the paid claim. The category of service is the line item \nfrom the CMS-64 form that states use to report their expenditures and request federal financial \nparticipation. \nSHORT NAME: XIX_SRVC_CTGRY_CD \nLONG NAME: XIX_SRVC_CTGRY_CD \nTYPE: \nCHAR",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

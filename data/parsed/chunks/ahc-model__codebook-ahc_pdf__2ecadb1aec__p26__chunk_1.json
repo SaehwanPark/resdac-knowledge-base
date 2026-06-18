@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p26__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 26,
+  "text": "who opted in for \nnavigation services. \nLONG NAME: NC_NVGTN_ACTN_PLAN_CMPLT_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = No \n1 = Yes \nMissing \nCOMMENT: \nThis was not a required field until October 2019, so if a beneficiary has a missing value, it does not \nnecessarily mean the navigator did not work with the beneficiary to complete a personalized action \nplan. It is possible the navigator and beneficiary completed the personalized action plan but did not \ndocument it in",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

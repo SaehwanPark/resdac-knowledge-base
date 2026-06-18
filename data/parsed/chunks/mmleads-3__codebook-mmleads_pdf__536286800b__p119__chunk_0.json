@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p119__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 119,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n108 \nMDCR_RTI_RACE \nLABEL: \nMedicare — Research Triangle Institute (RTI) Race Code \nDESCRIPTION: This variable is the Medicare beneficiary race code, modified using an algorithm produced by the RTI. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedicare MBSF \nVALUES: \n0 = Unknown \n1 = Non-Hispanic White \n2 = Black (Or African American) \n3 = Other \n4 = Asian/Pacific Islander \n5 = Hispanic \n6 = American Indian/Alaska Native \nNull/missing",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

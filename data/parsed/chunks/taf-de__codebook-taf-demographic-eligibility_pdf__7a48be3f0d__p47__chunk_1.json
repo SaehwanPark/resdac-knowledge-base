@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p47__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 47,
+  "text": "Medicaid, and uses that number to identify an individual’s \nrecords in all CCW data files (e.g., Medicare claims, Medicare encounter, MAX claims, T-MSIS claims, \nand MDS assessment data). \nThis number does not change during a beneficiary’s lifetime and each number is used only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nSHORT NAME: BENE_ID \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nFILE(S): \nAll demographic and",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

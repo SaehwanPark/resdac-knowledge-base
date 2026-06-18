@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s4__chunk_5",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 4,
+  "text": "MSIS Type of Program (TOP) NUM 1 X X X X\n24 HCBS_TXNMY_WVR_CD Home and community-based services (HCBS) toxonomy code for waviers CHAR 5 ‾ NP X X\n25 MAX_TOS MAX Type of Service (TOS) NUM 2 X X X X\n26 CLTC_FLAG Community-based LT care (CLTC) flag CHAR 2 ‾ X X X\n27 PRVDR_ID_NMBR Billing provider identification number CHAR 12 X X X X\n28 NPI National Provider Identifier CHAR 12 X X X X\n29 TAXONOMY Provider Taxonomy CHAR 12 X X X X\n30 TYPE_CLM_CD Type of claim NUM 1 X X X X\n31 ADJUST_CD Adjustment",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

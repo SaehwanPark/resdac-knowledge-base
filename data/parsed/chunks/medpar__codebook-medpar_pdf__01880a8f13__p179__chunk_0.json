@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p179__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 179,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n163 \nOTHR_SUPLIES_DVC_AMT \nLABEL: \nMedical/Surgical Supplies Other Device Amount ($) \nDESCRIPTION: The charge amount (rounded to whole dollars) for the medical/surgical supplies for other devices \nrelated to the beneficiary's stay. \nSHORT NAME: OTHR_SUPLIES_DVC_AMT \nLONG NAME: OTHR_SUPLIES_DVC_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

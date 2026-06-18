@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_540",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "the reason for modification of the prior erroneous record is related to a data entry error. 0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern) effective 10/01/2023\n621 X0900C_MDFCTN_SFTWR_ERR_CD X0900C_MDFCTN_SFTWR_ERR_CD X0900C Reason for Modification: Software Product Error Code CHAR 1 The data in this column indicates the reason for modification of the prior erroneous record is related to a software product error. 0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern) effective",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

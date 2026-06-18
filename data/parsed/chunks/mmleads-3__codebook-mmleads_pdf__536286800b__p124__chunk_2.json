@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p124__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 124,
+  "text": "this variable as the count of all claims from the monthly Inpatient, Skilled Nursing \nFacility, Home Health, Hospice, Hospital Outpatient, Carrier, and DME claims as well as the count of \nPart D Prescription Drug Events for the beneficiary. \nWithin MMLEADS, there are monthly variables that sum the total payments (the CLM_PMT_AMT field) \nfor capitated payments (the MDCR_MC_PTA_PTB_CAPTD_SPEND_01–12). There are monthly totals \nthat include the sum of the FFS claims (these claims) and capitated",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

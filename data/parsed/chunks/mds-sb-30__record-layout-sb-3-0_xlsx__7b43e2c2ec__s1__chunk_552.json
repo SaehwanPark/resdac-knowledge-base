@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_552",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "data in this column contains the date that the RN Assessment Coordinator signed the assessment as complete.\n638 FAC_INTRNL_ID FAC_INTRNL_ID Facility ID CHAR 16 This column contains the facility internal ID for nursing home facilities,\n639 A0310H_PTA_DSCHRG_ASMT_IND A0310H_PTA_DSCHRG_ASMT_IND A0310H SNF PPS Part A Discharge Assessment CHAR 1 Indicates if the assessment is a PPS Part A Stay Discharge record. 0=No\n1=Yes effective 10/01/2016\n640 C1310A_MENTL_STUS_CHG_IND C1310A_MENTL_STUS_CHG_IND",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_270",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "N3B N3B_ACTIVITY_RM (N3B) Prefers Day/Activity Room CHAR 1 Activity pursuit patterns: preferred activity settings - day/activity room. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n446 N3C N3C_INSIDE_NH (N3C) Prefers Inside NH/Off Unit CHAR 1 Activity pursuit patterns: preferred activity settings - inside NH/off unit. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n447 N3D N3D_OUTSIDE (N3D) Prefers Outside Activity CHAR 1 Activity pursuit patterns: preferred activity settings - outside facility. 0 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

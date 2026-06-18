@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 22,
+  "text": "fill. When the full quantity \nis dispensed at one time, this field is blank. \nSHORT NAME: DSPNSTCD \nLONG NAME: DSPNSNG_STUS_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \nBlank = Not specified or presumably full quantity of prescription \nP = Partial fill \nC = Completion of partial fill \nCOMMENT: \nThis variable has been retired; therefore, the field is blank after 2010 service dates. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

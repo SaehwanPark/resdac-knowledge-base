@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p171__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 171,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Values reported as zero \n1 = (rarely used) \n2 = (rarely used) \n3 = Number of services \n4 = Oxygen volume units \n6 = Drug dosage (valid 2004 and earlier) — since early 1994 this value has incorrectly been placed on \nDMERC claims. The DMERCs were overriding the MTUS indicator with a “6” if the claim was \nsubmitted with an NDC code. \nNOTE: This problem has been corrected — no date on when the correction became effective. \n COMMENT: \n— \n^ Back to",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

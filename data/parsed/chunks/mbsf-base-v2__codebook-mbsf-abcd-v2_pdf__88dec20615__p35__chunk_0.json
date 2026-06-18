@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p35__chunk_0",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 35,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D, Version 2 │ May 2026 │ V 1.2 \n26 \nENTLMT_RSN_ORIG \nLABEL: \nOriginal Reason for Entitlement Code \nDESCRIPTION: Original reason for Medicare entitlement. \nLONG NAME: ENTLMT_RSN_ORIG \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n0 = Old age and survivor’s insurance (OASI) \n1 = Disability insurance benefits (DIB) \n2 = End-stage renal disease (ESRD) \n3 = Both DIB",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

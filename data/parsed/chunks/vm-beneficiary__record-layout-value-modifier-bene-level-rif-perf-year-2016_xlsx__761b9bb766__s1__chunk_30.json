@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "care services outside practice Specialty of eligible professional outside of practice who billed most primary care services for beneficiary 42 Char 119 Populated only for records with Inpatient_stay not equal to missing\nSPECIALTY_NPI_IN_PRIM Specialty of EP billing most primary care services in practice Specialty of eligible professional in practice who billed most primary care services for beneficiary 43 Char 119 Populated only for records with Inpatient_stay not equal to missing\nTOTCOST Total",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

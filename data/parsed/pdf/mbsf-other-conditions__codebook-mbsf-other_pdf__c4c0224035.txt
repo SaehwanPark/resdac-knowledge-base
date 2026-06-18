@@ -1,0 +1,2890 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+ 
+Chronic Conditions Warehouse Virtual Research Data Center  
+Master Beneficiary Summary File (MBSF) 
+Other Chronic or Potentially Disabling  
+Conditions Segment Codebook  
+AUGUST 2025 │ VERSION 1.7
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+August 2025 
+A. Sisco 
+Added note to OUD_ANY_MEDICARE_EVER and 
+OUD_MAT_MEDICARE_EVER variables regarding 2021–2023 
+OTCC files 
+1.7 
+March 2025 
+A. Sisco 
+Added chronic pain condition 
+1.6 
+February 2024 
+A. Sisco 
+Clarified name of the depression condition 
+1.5 
+February 2021 
+C. Alleman 
+K. Russell 
+Migrated codebook to 2020 document template 
+1.4 
+June 2019 
+J. Burton  
+Added sickle cell disease condition 
+1.3 
+August 2018 
+C. Alleman 
+K. Schneider 
+Added opioid use disorder conditions 
+1.2 
+August 2017 
+K. Schneider 
+Added the alcohol and drug abuse conditions 
+1.1 
+May 2017 
+C. Alleman 
+K. Schneider 
+Initial release of codebook for the Master Beneficiary Summary 
+File — Other Chronic or Potentially Disabling Conditions 
+Segment 
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Beneficiary Summary File (MBSF) 
+— Other Chronic or Potentially Disabling Conditions Segment research files. The guide includes several ways for users 
+to quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable contain a short description of the variable, the possible values for the variable, 
+and, in many cases, comments discussing the variable construction and use 
+The CCW team has included hyperlinks throughout the codebook to make it easier for users to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes users to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes users back to the Table of Contents
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+iii 
+Table of Contents  
+Quick links: 
+ 
+Variable Details............................................................................................................................................................. 1 
+ACP_MEDICARE ........................................................................................................................................................ 1 
+ACP_MEDICARE_EVER .............................................................................................................................................. 2 
+ALCO_MEDICARE ...................................................................................................................................................... 3 
+ALCO_MEDICARE_EVER ............................................................................................................................................ 4 
+ANXI_MEDICARE ....................................................................................................................................................... 5 
+ANXI_MEDICARE_EVER ............................................................................................................................................. 6 
+AUTISM_MEDICARE .................................................................................................................................................. 7 
+AUTISM_MEDICARE_EVER ........................................................................................................................................ 8 
+BIPL_MEDICARE ........................................................................................................................................................ 9 
+BIPL_MEDICARE_EVER ............................................................................................................................................ 10 
+BRAINJ_MEDICARE ................................................................................................................................................. 11 
+BRAINJ_MEDICARE_EVER ....................................................................................................................................... 12 
+CERPAL_MEDICARE ................................................................................................................................................. 13 
+CERPAL_MEDICARE_EVER ....................................................................................................................................... 14 
+CHRONICPAIN_MEDICARE ...................................................................................................................................... 15 
+CHRONICPAIN_MEDICARE_EVER ............................................................................................................................ 16 
+CYSFIB_MEDICARE .................................................................................................................................................. 17 
+CYSFIB_MEDICARE_EVER ........................................................................................................................................ 18 
+DEPSN_MEDICARE .................................................................................................................................................. 19 
+DEPSN_MEDICARE_EVER ........................................................................................................................................ 20 
+DRUG_MEDICARE ................................................................................................................................................... 21 
+DRUG_MEDICARE_EVER ......................................................................................................................................... 22 
+ENRL_SRC ............................................................................................................................................................... 23 
+EPILEP_MEDICARE .................................................................................................................................................. 24 
+EPILEP_MEDICARE_EVER ........................................................................................................................................ 25 
+FIBRO_MEDICARE ................................................................................................................................................... 26 
+FIBRO_MEDICARE_EVER ......................................................................................................................................... 27 
+HEARIM_MEDICARE ................................................................................................................................................ 28 
+HEARIM_MEDICARE_EVER ...................................................................................................................................... 29 
+HEPVIRAL_MEDICARE ............................................................................................................................................. 30 
+HEPVIRAL_MEDICARE_EVER ................................................................................................................................... 31 
+HIVAIDS_MEDICARE................................................................................................................................................ 32 
+HIVAIDS_MEDICARE_EVER ...................................................................................................................................... 33 
+INTDIS_MEDICARE .................................................................................................................................................. 34 
+INTDIS_MEDICARE_EVER ........................................................................................................................................ 35 
+LEADIS_MEDICARE .................................................................................................................................................. 36 
+LEADIS_MEDICARE_EVER ........................................................................................................................................ 37 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+iv 
+LEUKLYMPH_MEDICARE ......................................................................................................................................... 38 
+LEUKLYMPH_MEDICARE_EVER ............................................................................................................................... 39 
+LIVER_MEDICARE .................................................................................................................................................... 40 
+LIVER_MEDICARE_EVER .......................................................................................................................................... 41 
+MIGRAINE_MEDICARE ............................................................................................................................................ 42 
+MIGRAINE_MEDICARE_EVER .................................................................................................................................. 43 
+MOBIMP_MEDICARE .............................................................................................................................................. 44 
+MOBIMP_MEDICARE_EVER .................................................................................................................................... 45 
+MULSCL_MEDICARE ................................................................................................................................................ 46 
+MULSCL_MEDICARE_EVER ...................................................................................................................................... 47 
+MUSDYS_MEDICARE ............................................................................................................................................... 48 
+MUSDYS_MEDICARE_EVER ..................................................................................................................................... 49 
+OBESITY_MEDICARE ............................................................................................................................................... 50 
+OBESITY_MEDICARE_EVER...................................................................................................................................... 51 
+OTHDEL_MEDICARE ................................................................................................................................................ 52 
+OTHDEL_MEDICARE_EVER ...................................................................................................................................... 53 
+OUD_ANY_MEDICARE............................................................................................................................................. 54 
+OUD_ANY_MEDICARE_EVER ................................................................................................................................... 55 
+OUD_DX_MEDICARE ............................................................................................................................................... 56 
+OUD_DX_MEDICARE_EVER ..................................................................................................................................... 57 
+OUD_HOSP_MEDICARE .......................................................................................................................................... 58 
+OUD_HOSP_MEDICARE_EVER ................................................................................................................................. 59 
+OUD_MAT_MEDICARE ............................................................................................................................................ 60 
+OUD_MAT_MEDICARE_EVER .................................................................................................................................. 61 
+PSDS_MEDICARE..................................................................................................................................................... 62 
+PSDS_MEDICARE_EVER ........................................................................................................................................... 63 
+PTRA_MEDICARE .................................................................................................................................................... 64 
+PTRA_MEDICARE_EVER .......................................................................................................................................... 65 
+PVD_MEDICARE ...................................................................................................................................................... 66 
+PVD_MEDICARE_EVER ............................................................................................................................................ 67 
+SCD_MEDICARE ...................................................................................................................................................... 68 
+SCD_MEDICARE_EVER ............................................................................................................................................ 69 
+SCHI_MEDICARE ..................................................................................................................................................... 70 
+SCHI_MEDICARE_EVER ........................................................................................................................................... 71 
+SCHIOT_MEDICARE ................................................................................................................................................. 72 
+SCHIOT_MEDICARE_EVER ....................................................................................................................................... 73 
+SPIBIF_MEDICARE ................................................................................................................................................... 74 
+SPIBIF_MEDICARE_EVER ......................................................................................................................................... 75 
+SPIINJ_MEDICARE ................................................................................................................................................... 76 
+SPIINJ_MEDICARE_EVER ......................................................................................................................................... 77 
+TOBA_MEDICARE .................................................................................................................................................... 78 
+TOBA_MEDICARE_EVER .......................................................................................................................................... 79 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+v 
+ULCERS_MEDICARE................................................................................................................................................. 80 
+ULCERS_MEDICARE_EVER ....................................................................................................................................... 81 
+VISUAL_MEDICARE ................................................................................................................................................. 82 
+VISUAL_MEDICARE_EVER ....................................................................................................................................... 83 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Medicare Beneficiary Summary File (MBSF) —
+Other Chronic or Potentially Disabling Conditions segment files. Each entry contains variable details to facilitate 
+understanding and use of the variables. 
+ACP_MEDICARE 
+LABEL: 
+ADHD and Other Conduct Disorders Indicator – Medicare Only Data 
+DESCRIPTION: This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only 
+Medicare data, for having attention deficit hyperactivity disorder (ADHD) or other conduct disorders 
+as of the end of the calendar year. 
+SHORT NAME: ACP_MEDICARE 
+LONG NAME: ACP_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s other chronic or potentially disabling condition variables require enrollees to satisfy both 
+claims criteria (a minimum number/type of Medicare claims that have the proper diagnosis codes and 
+occurred within a specified time period) and coverage criteria (FFS Medicare Part A and Part B 
+coverage during the entire specified time period). 
+For ADHD and other conduct disorders, beneficiaries must have at least one inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the algorithm criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+2 
+ACP_MEDICARE_EVER 
+LABEL: 
+ADHD and Other Conduct Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the attention deficit 
+hyperactivity disorder (ADHD) or other conduct disorders indicator. The variable will be blank for 
+beneficiaries that have never had the condition. 
+SHORT NAME: ACP_MEDICARE_EVER 
+LONG NAME: ACP_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+3 
+ALCO_MEDICARE 
+LABEL: 
+Alcohol Use Disorders Indicator — Medicare Only Data 
+DESCRIPTION: This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only 
+Medicare data, for having alcohol use disorder as of the end of the calendar year. 
+SHORT NAME: ALCO_MEDICARE 
+LONG NAME: ALCO_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s other chronic or potentially disabling condition variables require enrollees to satisfy both 
+claims criteria (a minimum number/type of Medicare claims that have the proper diagnosis codes and 
+occurred within a specified time period) and coverage criteria (FFS Medicare Part A and Part B 
+coverage during the entire specified time period). 
+For alcohol use disorders, beneficiaries must have at least one inpatient claim or two other non-drug 
+claims of any service type with a related code in any position during the two-year reference period. 
+When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the algorithm criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+4 
+ALCO_MEDICARE_EVER 
+LABEL: 
+Alcohol Use Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the alcohol use disorders 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: ALCO_MEDICARE_EVER 
+LONG NAME: ALCO_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+5 
+ANXI_MEDICARE 
+LABEL: 
+Anxiety Disorders Indicator — Medicare Only Data 
+DESCRIPTION: This variable indicates whether the enrollee met the chronic condition algorithm criteria, considering 
+only Medicare data, for anxiety disorders as of the end of the calendar year. 
+SHORT NAME: ANXI_MEDICARE 
+LONG NAME: ANXI_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s other chronic or potentially disabling condition variables require enrollees to satisfy both 
+claims criteria (a minimum number/type of Medicare claims that have the proper diagnosis codes and 
+occurred within a specified time period) and coverage criteria (Medicare FFS Part A and Part B 
+coverage during the entire specified time period). 
+For anxiety disorders, beneficiaries must have at least one Medicare inpatient claim or two other non-
+drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+6 
+ANXI_MEDICARE_EVER 
+LABEL: 
+Anxiety Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the anxiety disorders 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: ANXI_MEDICARE_EVER 
+LONG NAME: ANXI_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+7 
+AUTISM_MEDICARE 
+LABEL: 
+Autism Spectrum Disorders Indicator — Medicare Only Data 
+DESCRIPTION: This variable indicates whether the enrollee met the chronic condition algorithm criteria, considering 
+only Medicare data, for autism spectrum disorders as of the end of the calendar year. 
+SHORT NAME: AUTISM_MEDICARE 
+LONG NAME: AUTISM_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s other chronic or potentially disabling condition variables require enrollees to satisfy both 
+claims criteria (a minimum number/type of Medicare claims that have the proper diagnosis codes and 
+occurred within a specified time period) and coverage criteria (Medicare FFS Part A and Part B 
+coverage during the entire specified time period). 
+For autism spectrum disorders, beneficiaries must have at least one Medicare inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+8 
+AUTISM_MEDICARE_EVER 
+LABEL: 
+Autism Spectrum Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the autism spectrum 
+disorders indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: AUTISM_MEDICARE_EVER 
+LONG NAME: AUTISM_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+9 
+BIPL_MEDICARE 
+LABEL: 
+Bipolar Disorder Indicator — Medicare Only Data 
+DESCRIPTION: This variable indicates whether the enrollee met the chronic condition algorithm criteria, considering 
+only Medicare data, for bipolar disorders as of the end of the calendar year. 
+SHORT NAME: BIPL_MEDICARE 
+LONG NAME: BIPL_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The CCW’s other chronic or potentially disabling condition variables require enrollees to satisfy both 
+claims criteria (a minimum number/type of Medicare claims that have the proper diagnosis codes and 
+occurred within a specified time period) and coverage criteria (Medicare FFS Part A and Part B 
+coverage during the entire specified time period). 
+For bipolar disorders, beneficiaries must have at least one Medicare inpatient claim or two other non-
+drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+10 
+BIPL_MEDICARE_EVER 
+LABEL: 
+Bipolar Disorder First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the bipolar disorders 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: BIPL_MEDICARE_EVER 
+LONG NAME: BIPL_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+11 
+BRAINJ_MEDICARE 
+LABEL: 
+Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage End-of-Year Indicator 
+— Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for traumatic brain injury and 
+nonpsychotic mental disorders as of the end of the calendar year. 
+SHORT NAME: BRAINJ_MEDICARE 
+LONG NAME: BRAINJ_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For traumatic brain injury and nonpsychotic mental disorders, beneficiaries must have at least one 
+Medicare inpatient claim or two other non-drug claims of any service type with a related code in any 
+position during the two-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+12 
+BRAINJ_MEDICARE_EVER 
+LABEL: 
+Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage First Ever Occurrence 
+Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the traumatic brain injury 
+and nonpsychotic mental disorders indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: BRAINJ_MEDICARE_EVER 
+LONG NAME: BRAINJ_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+13 
+CERPAL_MEDICARE 
+LABEL: 
+Cerebral Palsy End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for cerebral palsy as of the end 
+of the calendar year. 
+SHORT NAME: CERPAL_MEDICARE 
+LONG NAME: CERPAL_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For cerebral palsy, beneficiaries must have at least one Medicare inpatient claim or two other non-
+drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+14 
+CERPAL_MEDICARE_EVER 
+LABEL: 
+Cerebral Palsy First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the cerebral palsy indicator. 
+The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: CERPAL_MEDICARE_EVER 
+LONG NAME: CERPAL_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+15 
+CHRONICPAIN_MEDICARE 
+LABEL: 
+Chronic Pain End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for chronic pain as of the end 
+of the calendar year. 
+SHORT NAME: CHRONICPAIN_MEDICARE 
+LONG NAME: CHRONICPAIN_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+This variable is populated beginning in 2018. 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For chronic pain, beneficiaries must have at least one Medicare claim of any service type with a 
+related code in any position during the three-year reference period. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+16 
+CHRONICPAIN_MEDICARE_EVER 
+LABEL: 
+Chronic Pain First Ever Occurrence Date (starting 2016) — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the chronic pain indicator. 
+The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: CHRONICPAIN_MEDICARE_EVER 
+LONG NAME: CHRONICPAIN_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+This variable is populated beginning in 2018. The earliest possible date for anyone in the CCW is 
+January 1, 2016. If the beneficiary became eligible for Medicare after that, the earliest possible date is 
+some time after his or her coverage start date (i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+17 
+CYSFIB_MEDICARE 
+LABEL: 
+Cystic Fibrosis and Other Metabolic Developmental Disorders End-of-Year Indicator — Medicare Only 
+Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for cystic fibrosis and other 
+metabolic developmental disorders as of the end of the calendar year. 
+SHORT NAME: CYSFIB_MEDICARE 
+LONG NAME: CYSFIB_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For cystic fibrosis and other metabolic developmental disorders, beneficiaries must have at least one 
+Medicare inpatient claim or two other non-drug claims of any service type with a related code in any 
+position during the two-year reference period. When two claims are required, they must occur at least 
+one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+18 
+CYSFIB_MEDICARE_EVER 
+LABEL: 
+Cystic Fibrosis and Other Metabolic Developmental Disorders First Ever Occurrence Date — Medicare 
+Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the cystic fibrosis and other 
+metabolic developmental disorders indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: CYSFIB_MEDICARE_EVER 
+LONG NAME: CYSFIB_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+19 
+DEPSN_MEDICARE 
+LABEL: 
+Major Depressive Disorders End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for major depressive disorders 
+as of the end of the calendar year. (On the CCW website, we shorten this condition label to 
+“Depressive Disorders” for simplicity.) 
+SHORT NAME: DEPSN_MEDICARE 
+LONG NAME: DEPSN_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For major depressive disorders, beneficiaries must have at least one Medicare inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+NOTE: This depressive disorders condition definition is slightly different than the CCW depression 
+condition; CMS specified this depressive affective disorder condition to enhance research of the 
+Medicare-Medicaid dually enrolled population. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+20 
+DEPSN_MEDICARE_EVER 
+LABEL: 
+Major Depressive Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the major depressive 
+disorders indicator. The variable will be blank for beneficiaries that have never had the condition. (On 
+the CCW website, we shorten this condition label to “Depressive Disorders” for simplicity.) 
+SHORT NAME: DEPSN_MEDICARE_EVER 
+LONG NAME: DEPSN_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+21 
+DRUG_MEDICARE 
+LABEL: 
+Drug Use Disorders End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for drug use disorder as of the 
+end of the calendar year. 
+SHORT NAME: DRUG_MEDICARE 
+LONG NAME: DRUG_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For drug use disorders, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+22 
+DRUG_MEDICARE_EVER 
+LABEL: 
+Drug Use Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the drug use disorder 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: DRUG_MEDICARE_EVER 
+LONG NAME: DRUG_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+23 
+ENRL_SRC 
+LABEL: 
+Enrollment Source 
+DESCRIPTION: This variable indicates the source of enrollment data. 
+SHORT NAME: ENRL_SRC 
+LONG NAME: ENRL_SRC 
+TYPE: 
+CHAR 
+LENGTH: 
+3 
+SOURCE: 
+CCW 
+VALUES: 
+EDB = Enrollment Database 
+CME = Common Medicare Environment 
+COMMENT: 
+The Centers for Medicare & Medicaid Services (CMS) has updated the Medicare enrollment source 
+data for the Master Beneficiary Summary File (MBSF). As of March 2017, the MBSF includes Medicare 
+enrollment information from the CMS Common Medicare Environment (CME) rather than the 
+Enrollment Database (EDB). Data from the two sources was nearly identical. The CME improves the 
+identification of Medicare Part B enrollment and allows for more timely release of the MBSF. 
+The universe of beneficiaries in the CME versus the EDB version of the MBSF are only slightly different. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+24 
+EPILEP_MEDICARE 
+LABEL: 
+Epilepsy End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for epilepsy as of the end of 
+the calendar year. 
+SHORT NAME: EPILEP_MEDICARE 
+LONG NAME: EPILEP_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For epilepsy, beneficiaries must have at least one Medicare inpatient claim or two other non-drug 
+claims of any service type with a related code in any position during the two-year reference period. 
+When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+25 
+EPILEP_MEDICARE_EVER 
+LABEL: 
+Epilepsy First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the epilepsy indicator. The 
+variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: EPILEP_MEDICARE_EVER 
+LONG NAME: EPILEP_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+26 
+FIBRO_MEDICARE 
+LABEL: 
+Fibromyalgia, Chronic Pain and Fatigue End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for fibromyalgia, chronic pain, 
+and fatigue as of the end of the calendar year. 
+SHORT NAME: FIBRO_MEDICARE 
+LONG NAME: FIBRO_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For fibromyalgia, chronic pain and fatigue, beneficiaries must have at least one Medicare inpatient 
+claim or two other non-drug claims of any service type with a related code in any position during the 
+two-year reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+27 
+FIBRO_MEDICARE_EVER 
+LABEL: 
+Fibromyalgia, Chronic Pain and Fatigue First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the fibromyalgia, chronic 
+pain, and fatigue indicator. The variable will be blank for beneficiaries that have never had the 
+condition. 
+SHORT NAME: FIBRO_MEDICARE_EVER 
+LONG NAME: FIBRO_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+28 
+HEARIM_MEDICARE 
+LABEL: 
+Sensory — Deafness and Hearing Impairment End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for a sensory (deafness and 
+hearing) impairment as of the end of the calendar year. 
+SHORT NAME: HEARIM_MEDICARE 
+LONG NAME: HEARIM_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For sensory (deafness and hearing) impairment, beneficiaries must have at least one Medicare 
+inpatient claim or two other non-drug claims of any service type with a related code in any position 
+during the two-year reference period. When two claims are required, they must occur at least one day 
+apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+29 
+HEARIM_MEDICARE_EVER 
+LABEL: 
+Sensory — Deafness and Hearing Impairment First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for a sensory (deafness and 
+hearing) impairment. 
+The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: HEARIM_MEDICARE_EVER 
+LONG NAME: HEARIM_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+30 
+HEPVIRAL_MEDICARE 
+LABEL: 
+Viral Hepatitis (General) End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for viral hepatitis (general) as 
+of the end of the calendar year. 
+SHORT NAME: HEPVIRAL_MEDICARE 
+LONG NAME: HEPVIRAL_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For viral hepatitis (general), beneficiaries must have at least one Medicare inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+31 
+HEPVIRAL_MEDICARE_EVER 
+LABEL: 
+Viral Hepatitis (General) First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the viral hepatitis (general) 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: HEPVIRAL_MEDICARE_EVER 
+LONG NAME: HEPVIRAL_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+32 
+HIVAIDS_MEDICARE 
+LABEL: 
+Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) End-of-Year 
+Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for human immunodeficiency 
+virus and/or acquired immunodeficiency syndrome (HIV/AIDS) as of the end of the calendar year. 
+SHORT NAME: HIVAIDS_MEDICARE 
+LONG NAME: HIVAIDS_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For human immunodeficiency virus and/or acquired immunodeficiency syndrome (HIV/AIDS), 
+beneficiaries must have at least one Medicare inpatient claim or two other non-drug claims of any 
+service type with a related code in any position during the two-year reference period. When two 
+claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+33 
+HIVAIDS_MEDICARE_EVER 
+LABEL: 
+Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) First Ever 
+Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the human 
+immunodeficiency virus and/or acquired immunodeficiency syndrome (HIV/AIDS) indicator. The 
+variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: HIVAIDS_MEDICARE_EVER 
+LONG NAME: HIVAIDS_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+34 
+INTDIS_MEDICARE 
+LABEL: 
+Intellectual Disabilities and Related Conditions End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for intellectual disabilities and 
+related conditions as of the end of the calendar year. 
+SHORT NAME: INTDIS_MEDICARE 
+LONG NAME: INTDIS_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For intellectual disabilities and related conditions, beneficiaries must have at least one Medicare 
+inpatient claim or two other non-drug claims of any service type with a related code in any position 
+during the two-year reference period. When two claims are required, they must occur at least one day 
+apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+35 
+INTDIS_MEDICARE_EVER 
+LABEL: 
+Intellectual Disabilities and Related Conditions First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the intellectual disabilities 
+and related conditions indicator. The variable will be blank for beneficiaries that have never had the 
+condition. 
+SHORT NAME: INTDIS_MEDICARE_EVER 
+LONG NAME: INTDIS_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+36 
+LEADIS_MEDICARE 
+LABEL: 
+Learning Disabilities End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for learning disabilities as of 
+the end of the calendar year. 
+SHORT NAME: LEADIS_MEDICARE 
+LONG NAME: LEADIS_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For learning disabilities, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+37 
+LEADIS_MEDICARE_EVER 
+LABEL: 
+Learning Disabilities First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the learning disabilities 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: LEADIS_MEDICARE_EVER 
+LONG NAME: LEADIS_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+38 
+LEUKLYMPH_MEDICARE 
+LABEL: 
+Leukemias and Lymphomas End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for leukemias and lymphomas 
+as of the end of the calendar year. 
+SHORT NAME: LEUKLYMPH_MEDICARE 
+LONG NAME: LEUKLYMPH_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For leukemias and lymphomas, beneficiaries must have at least one Medicare inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+39 
+LEUKLYMPH_MEDICARE_EVER 
+LABEL: 
+Leukemias and Lymphomas First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the leukemias and 
+lymphomas indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: LEUKLYMPH_MEDICARE_EVER 
+LONG NAME: LEUKLYMPH_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+40 
+LIVER_MEDICARE 
+LABEL: 
+Liver Disease, Cirrhosis and Other Liver Conditions (excluding Hepatitis) End-of-Year Indicator — 
+Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for liver disease, cirrhosis, and 
+other liver conditions (excluding hepatitis) as of the end of the calendar year. 
+SHORT NAME: LIVER_MEDICARE 
+LONG NAME: LIVER_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For liver disease, cirrhosis, and other liver conditions (excluding hepatitis), beneficiaries must have at 
+least one Medicare inpatient claim or two other non-drug claims of any service type with a related 
+code in any position during the two-year reference period. When two claims are required, they must 
+occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+41 
+LIVER_MEDICARE_EVER 
+LABEL: 
+Liver Disease, Cirrhosis and Other Liver Conditions (excluding Hepatitis) First Ever Occurrence Date — 
+Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the liver disease, cirrhosis, 
+and other liver conditions (excluding hepatitis) indicator. The variable will be blank for beneficiaries 
+that have never had the condition. 
+SHORT NAME: LIVER_MEDICARE_EVER 
+LONG NAME: LIVER_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+42 
+MIGRAINE_MEDICARE 
+LABEL: 
+Migraine and other Chronic Headache End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for migraine and other chronic 
+headache as of the end of the calendar year. 
+SHORT NAME: MIGRAINE_MEDICARE 
+LONG NAME: MIGRAINE_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For migraine and other chronic headache, beneficiaries must have at least one Medicare inpatient 
+claim or two other non-drug claims of any service type with a related code in any position during the 
+two-year reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+43 
+MIGRAINE_MEDICARE_EVER 
+LABEL: 
+Migraine and other Chronic Headache First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the migraine and other 
+chronic headache indicator. The variable will be blank for beneficiaries that have never had the 
+condition. 
+SHORT NAME: MIGRAINE_MEDICARE_EVER 
+LONG NAME: MIGRAINE_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+44 
+MOBIMP_MEDICARE 
+LABEL: 
+Mobility Impairments End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for mobility impairments as of 
+the end of the calendar year. 
+SHORT NAME: MOBIMP_MEDICARE 
+LONG NAME: MOBIMP_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For mobility impairments, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+45 
+MOBIMP_MEDICARE_EVER 
+LABEL: 
+Mobility Impairments First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the mobility impairments 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: MOBIMP_MEDICARE_EVER 
+LONG NAME: MOBIMP_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+46 
+MULSCL_MEDICARE 
+LABEL: 
+Multiple Sclerosis and Transverse Myelitis End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for multiple sclerosis and 
+transverse myelitis as of the end of the calendar year. 
+SHORT NAME: MULSCL_MEDICARE 
+LONG NAME: MULSCL_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For multiple sclerosis and transverse myelitis, beneficiaries must have at least one Medicare inpatient 
+claim or two other non-drug claims of any service type with a related code in any position during the 
+two-year reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+47 
+MULSCL_MEDICARE_EVER 
+LABEL: 
+Multiple Sclerosis and Transverse Myelitis First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the multiple sclerosis and 
+transverse myelitis indicator. The variable will be blank for beneficiaries that have never had the 
+condition. 
+SHORT NAME: MULSCL_MEDICARE_EVER 
+LONG NAME: MULSCL_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+48 
+MUSDYS_MEDICARE 
+LABEL: 
+Muscular Dystrophy End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for muscular dystrophy as of 
+the end of the calendar year. 
+SHORT NAME: MUSDYS_MEDICARE 
+LONG NAME: MUSDYS_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For muscular dystrophy, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+49 
+MUSDYS_MEDICARE_EVER 
+LABEL: 
+Muscular Dystrophy First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the muscular dystrophy 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: MUSDYS_MEDICARE_EVER 
+LONG NAME: MUSDYS_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+50 
+OBESITY_MEDICARE 
+LABEL: 
+Obesity End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for obesity as of the end of the 
+calendar year. 
+SHORT NAME: OBESITY_MEDICARE 
+LONG NAME: OBESITY_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For obesity, beneficiaries must have at least one Medicare inpatient claim or two other non-drug 
+claims of any service type with a related code in any position during the two-year reference period. 
+When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+51 
+OBESITY_MEDICARE_EVER 
+LABEL: 
+Obesity First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the obesity indicator. The 
+variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: OBESITY_MEDICARE_EVER 
+LONG NAME: OBESITY_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+52 
+OTHDEL_MEDICARE 
+LABEL: 
+Other Developmental Delays End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for other developmental delays 
+as of the end of the calendar year. 
+SHORT NAME: OTHDEL_MEDICARE 
+LONG NAME: OTHDEL_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For other developmental delays, beneficiaries must have at least one Medicare inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+53 
+OTHDEL_MEDICARE_EVER 
+LABEL: 
+Other Developmental Delays First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the other developmental 
+delays’ indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: OTHDEL_MEDICARE_EVER 
+LONG NAME: OTHDEL_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+54 
+OUD_ANY_MEDICARE 
+LABEL: 
+Overarching OUD Disorder (Any of the Three Sub-Indicators) — Medicare Only Claims 
+DESCRIPTION: This variable is the Overarching Opioid Use Disorder (OUD) indicator, which identifies whether a 
+beneficiary met any of the three opioid-related sub-Indicators as of the end of the calendar year. 
+Beneficiaries who were identified as meeting the criteria for any of the following, also meet the 
+criteria for this overarching indicator: OUD_DX_MEDICARE, OUD_HOSP_MEDICARE, or 
+OUD_MAT_MEDICARE. 
+SHORT NAME: OUD_ANY_MEDICARE 
+LONG NAME: OUD_ANY_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For the overarching opioid use disorder indicator, beneficiaries must have met the criteria for at least 
+one of the three opioid-use disorder sub-category conditions: 
+Diagnosis and Procedure Basis for OUD (OUD_DX_MEDICARE), 
+Opioid-Related Hospitalization or ED (OUD_HOSP_MEDICARE), or 
+Use of Medication-Assisted Treatment (MAT) (OUD_MAT_MEDICARE). 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+55 
+OUD_ANY_MEDICARE_EVER 
+LABEL: 
+Overarching OUD Disorder (Any of the Three Sub-Indicators) First Ever Occurrence Date — Medicare 
+Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Overarching opioid use 
+disorder (OUD) condition indicator (Any of the Three Sub-Indicators). The variable will be blank for 
+beneficiaries that have never had the condition. 
+SHORT NAME: OUD_ANY_MEDICARE_EVER 
+LONG NAME: OUD_ANY MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+In the 2021–2023 MBSF OTCC files, a small number of records may have an ever date value of 
+1/1/1960. In the 2024 file, these have been corrected. 
+For the overarching opioid use disorder indicator, beneficiaries must have met the criteria for at least 
+one of the three opioid-use disorder sub-category conditions, and therefore had the corresponding 
+“*_EVER” variable populated: 
+Diagnosis and Procedure Basis for OUD — First Ever Occurrence Date (OUD_DX_MEDICARE_EVER), 
+Opioid-Related Hospitalization or ED — First Ever Occurrence Date (OUD_HOSP_MEDICARE_EVER), or 
+Use of Medication-Assisted Treatment (MAT) — First Ever Occurrence Date 
+(OUD_MAT_MEDICARE_EVER). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+56 
+OUD_DX_MEDICARE 
+LABEL: 
+Diagnosis and Procedure Basis for OUD — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the Diagnosis and Procedure Basis for Opioid Use 
+Disorder (OUD) as of the end of the calendar year. 
+SHORT NAME: OUD_DX_MEDICARE 
+LONG NAME: OUD_DX _MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For opioid use disorder, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+57 
+OUD_DX_MEDICARE_EVER 
+LABEL: 
+Diagnosis and Procedure Basis for OUD First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the opioid use disorder 
+(OUD) indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: OUD_DX_MEDICARE_EVER 
+LONG NAME: OUD_DX MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+58 
+OUD_HOSP_MEDICARE 
+LABEL: 
+Opioid-Related Hospitalization or ED — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the criteria for Opioid-Related Hospitalization or 
+emergency department (ED) visits as of the end of the calendar year. 
+SHORT NAME: OUD_HOSP_MEDICARE 
+LONG NAME: OUD_HOSP _MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For opioid-related hospitalization or ED visits, beneficiaries must have at least one Medicare inpatient 
+claim or one emergency department claim with a related code in any position during the two-year 
+reference period. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+59 
+OUD_HOSP_MEDICARE_EVER 
+LABEL: 
+Opioid-Related Hospitalization or ED First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Opioid-Related 
+Hospitalization or emergency department (ED) visit indicator. The variable will be blank for 
+beneficiaries that have never had the condition. 
+SHORT NAME: OUD_HOSP_MEDICARE_EVER 
+LONG NAME: OUD_HOSP_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+60 
+OUD_MAT_MEDICARE 
+LABEL: 
+Use of Medication-Assisted Treatment (MAT) — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the criteria for the Use of Medication-Assisted 
+Treatment (MAT) as of the end of the calendar year. 
+SHORT NAME: OUD_MAT_MEDICARE 
+LONG NAME: OUD_MAT _MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper codes and occurred within a specified time period) and 
+coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time period). 
+For use of Medication-Assisted Treatment (MAT), beneficiaries must have one or more drug claim 
+(Medicare Part B, Medicare Part D, and/or Medicaid) with an NDC (national drug code) for opioid-MAT 
+or one or more non-drug claim (Medicare Part B or Medicaid non-drug claim) with a HCPCs code 
+during the two-year period. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+61 
+OUD_MAT_MEDICARE_EVER 
+LABEL: 
+Use of Medication-Assisted Treatment (MAT) First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the utilization of 
+Medication-Assisted Treatment (MAT) indicator. The variable will be blank for beneficiaries that have 
+never had the condition. 
+SHORT NAME: OUD_MAT_MEDICARE_EVER 
+LONG NAME: OUD_MAT MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+In the 2021–2023 MBSF OTCC files, a small number of records may have an ever date value of 
+1/1/1960. In the 2024 file, these have been corrected. 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+62 
+PSDS_MEDICARE 
+LABEL: 
+Personality Disorders End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for personality disorders as of 
+the end of the calendar year. 
+SHORT NAME: PSDS_MEDICARE 
+LONG NAME: PSDS_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For personality disorders, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+63 
+PSDS_MEDICARE_EVER 
+LABEL: 
+Personality Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the personality disorders 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: PSDS_MEDICARE_EVER 
+LONG NAME: PSDS_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+64 
+PTRA_MEDICARE 
+LABEL: 
+Post-Traumatic Stress Disorder End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for post-traumatic stress 
+disorder as of the end of the calendar year. 
+SHORT NAME: PTRA_MEDICARE 
+LONG NAME: PTRA_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For post-traumatic stress disorder, beneficiaries must have at least one Medicare inpatient claim or 
+two other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+65 
+PTRA_MEDICARE_EVER 
+LABEL: 
+Post-Traumatic Stress Disorder First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the post-traumatic stress 
+disorder indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: PTRA_MEDICARE_EVER 
+LONG NAME: PTRA_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+66 
+PVD_MEDICARE 
+LABEL: 
+Peripheral Vascular Disease End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for peripheral vascular disease 
+as of the end of the calendar year. 
+SHORT NAME: PVD_MEDICARE 
+LONG NAME: PVD_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For peripheral vascular disease, beneficiaries must have at least one Medicare inpatient claim or two 
+other non-drug claims of any service type with a related code in any position during the two-year 
+reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+67 
+PVD_MEDICARE_EVER 
+LABEL: 
+Peripheral Vascular Disease First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the peripheral vascular 
+disease indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: PVD_MEDICARE_EVER 
+LONG NAME: PVD_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+68 
+SCD_MEDICARE 
+LABEL: 
+Sickle Cell Disease End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for sickle cell disease as of the 
+end of the calendar year. 
+SHORT NAME: SCD_MEDICARE 
+LONG NAME: SCD_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For sickle cell disease, beneficiaries must have at least one Medicare inpatient claim or two other non-
+drug claims of any service type with a related code in any position during the five-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+69 
+SCD_MEDICARE_EVER 
+LABEL: 
+Sickle Cell Disease First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the sickle cell disease 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: SCD_MEDICARE_EVER 
+LONG NAME: SCD_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+70 
+SCHI_MEDICARE 
+LABEL: 
+Schizophrenia End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for schizophrenia as of the end 
+of the calendar year. 
+SHORT NAME: SCHI_MEDICARE 
+LONG NAME: SCHI_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For schizophrenia, beneficiaries must have at least one Medicare inpatient claim or two other non-
+drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+71 
+SCHI_MEDICARE_EVER 
+LABEL: 
+Schizophrenia First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the schizophrenia indicator. 
+The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: SCHI_MEDICARE_EVER 
+LONG NAME: SCHI_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+72 
+SCHIOT_MEDICARE 
+LABEL: 
+Schizophrenia and Other Psychotic Disorders End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for schizophrenia and other 
+psychotic disorders as of the end of the calendar year. 
+SHORT NAME: SCHIOT_MEDICARE 
+LONG NAME: SCHIOT_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For schizophrenia and other psychotic disorders, beneficiaries must have at least one Medicare 
+inpatient claim or two other non-drug claims of any service type with a related code in any position 
+during the two-year reference period. When two claims are required, they must occur at least one day 
+apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+73 
+SCHIOT_MEDICARE_EVER 
+LABEL: 
+Schizophrenia and Other Psychotic Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the schizophrenia and 
+other psychotic disorders indicator. The variable will be blank for beneficiaries that have never had the 
+condition. 
+SHORT NAME: SCHIOT_MEDICARE_EVER 
+LONG NAME: SCHIOT_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+74 
+SPIBIF_MEDICARE 
+LABEL: 
+Spina Bifida and Other Congenital Anomalies of the Nervous System End-of-Year Indicator — Medicare 
+Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for spina bifida and other 
+congenital anomalies of the nervous system as of the end of the calendar year. 
+SHORT NAME: SPIBIF_MEDICARE 
+LONG NAME: SPIBIF_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For spina bifida and other congenital anomalies of the nervous system, beneficiaries must have at 
+least one Medicare inpatient claim or two other non-drug claims of any service type with a related 
+code in any position during the two-year reference period. When two claims are required, they must 
+occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+75 
+SPIBIF_MEDICARE_EVER 
+LABEL: 
+Spina Bifida and Other Congenital Anomalies of the Nervous System First Ever Occurrence Date — 
+Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the spina bifida and other 
+congenital anomalies of the nervous system indicator. The variable will be blank for beneficiaries that 
+have never had the condition. 
+SHORT NAME: SPIBIF_MEDICARE_EVER 
+LONG NAME: SPIBIF_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+76 
+SPIINJ_MEDICARE 
+LABEL: 
+Spinal Cord Injury End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for spinal cord injury as of the 
+end of the calendar year. 
+SHORT NAME: SPIINJ_MEDICARE 
+LONG NAME: SPIINJ_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For spinal cord injury, beneficiaries must have at least one Medicare inpatient claim or two other non-
+drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+77 
+SPIINJ_MEDICARE_EVER 
+LABEL: 
+Spinal Cord Injury First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the spinal cord injury 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: SPIINJ_MEDICARE_EVER 
+LONG NAME: SPIINJ_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+78 
+TOBA_MEDICARE 
+LABEL: 
+Tobacco Use Disorders End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for tobacco use disorders as of 
+the end of the calendar year. 
+SHORT NAME: TOBA_MEDICARE 
+LONG NAME: TOBA_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For tobacco use disorders, beneficiaries must have at least one Medicare inpatient claim or two other 
+non-drug claims of any service type with a related code in any position during the two-year reference 
+period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+79 
+TOBA_MEDICARE_EVER 
+LABEL: 
+Tobacco Use Disorders First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the tobacco use disorders 
+indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: TOBA_MEDICARE_EVER 
+LONG NAME: TOBA_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+80 
+ULCERS_MEDICARE 
+LABEL: 
+Pressure Ulcers and Chronic Ulcers End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for pressure ulcers and chronic 
+ulcers as of the end of the calendar year. 
+SHORT NAME: ULCERS_MEDICARE 
+LONG NAME: ULCERS_MEDICARE 
+TYPE: 
+NUM 
+LENGTH: 
+1 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For pressure ulcers and chronic ulcers, beneficiaries must have at least one Medicare inpatient claim 
+or two other non-drug claims of any service type with a related code in any position during the two-
+year reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+81 
+ULCERS_MEDICARE_EVER 
+LABEL: 
+Pressure Ulcers and Chronic Ulcers First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the pressure ulcers and 
+chronic ulcers indicator. The variable will be blank for beneficiaries that have never had the condition. 
+SHORT NAME: ULCERS_MEDICARE_EVER 
+LONG NAME: ULCERS_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+82 
+VISUAL_MEDICARE 
+LABEL: 
+Sensory — Blindness and Visual Impairment End-of-Year Indicator — Medicare Only Claims 
+DESCRIPTION: This variable indicates whether a beneficiary met the condition criteria for sensory (blindness and 
+visual) impairment as of the end of the calendar year. 
+SHORT NAME: VISUAL_MEDICARE 
+LONG NAME: VISUAL_MEDICARE 
+TYPE: 
+NUM 
+LENGTH:  
+1 
+SOURCE:  
+CCW (derived) 
+VALUES: 
+0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage 
+1 = Beneficiary met claims criteria but did not have sufficient FFS coverage 
+2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage 
+3 = Beneficiary met claims criteria and had sufficient FFS coverage 
+COMMENT: 
+The condition variable requires beneficiaries to satisfy both claims criteria (a minimum number/type 
+of Medicare claims that have the proper diagnosis codes and occurred within a specified time period) 
+and coverage criteria (Medicare FFS Part A and Part B coverage during the entire specified time 
+period). 
+For sensory (blindness and visual) impairment, beneficiaries must have at least one Medicare inpatient 
+claim or two other non-drug claims of any service type with a related code in any position during the 
+two-year reference period. When two claims are required, they must occur at least one day apart. 
+You can find more detailed information on the criteria on the CCW website: 
+https://www.ccwdata.org/web/guest/condition-categories 
+^ Back to TOC ^ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+MBSF Other Chronic or Potentially Disabling Conditions Segment Codebook │ August 2025 │ V 1.7 
+83 
+VISUAL_MEDICARE_EVER 
+LABEL: 
+Sensory — Blindness and Visual Impairment First Ever Occurrence Date — Medicare Only Claims 
+DESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the sensory (blindness and 
+visual) impairment indicator. The variable will be blank for beneficiaries that have never had the 
+condition. 
+SHORT NAME: VISUAL_MEDICARE_EVER 
+LONG NAME: VISUAL_MEDICARE_EVER 
+TYPE: 
+DATE 
+LENGTH: 
+8 
+SOURCE: 
+CCW (derived) 
+VALUES: 
+— 
+COMMENT: 
+The earliest possible date for anyone in the CCW is January 1, 1999. If the beneficiary became eligible 
+for Medicare after that, the earliest possible date will be some time after his/her coverage start date 
+(i.e., the COVSTART variable in the beneficiary file). 
+^ Back to TOC ^

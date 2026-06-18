@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__data-documentation__5852cefcaf__chunk_6",
+  "source_document": "data/raw/html/documentation_page/5852cefcaf4dca5dba3392a521caae7b6816e9f1.html",
+  "page": null,
+  "text": "| \n\n | 37 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (Encounter) | \n\n | 38 | ICD_DGNS_CD1 | Claim Diagnosis Code 1 (Encounter) | \n\n | 39 | ICD_DGNS_CD2 | Claim Diagnosis Code 2 (Encounter) | \n\n | 40 | ICD_DGNS_CD3 | Claim Diagnosis Code 3 (Encounter) | \n\n | 41 | ICD_DGNS_CD4 | Claim Diagnosis Code 4 (Encounter) | \n\n | 42 | ICD_DGNS_CD5 | Claim Diagnosis Code 5 (Encounter) | \n\n | 43 | ICD_DGNS_CD6 | Claim Diagnosis Code 6 (Encounter) | \n\n | 44 | ICD_DGNS_CD7 | Claim Diagnosis Code 7",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter/data-documentation"
+}

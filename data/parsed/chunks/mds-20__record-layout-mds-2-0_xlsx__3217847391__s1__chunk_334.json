@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_334",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "\"-\" = Determination precluded by missing data.\n564 VA08A VA08A_MOOD_TR (VA08A) Mood State Triggered CHAR 1 RAP summary: mood state - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n565 VA08B VA08B_MOOD_PC (VA08B) Mood State Care Planning Decision CHAR 1 RAP summary: mood state - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n566 VA09A VA09A_BEHAVE_TR (VA09A) Behavioral Symptoms Triggered CHAR 1 RAP",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

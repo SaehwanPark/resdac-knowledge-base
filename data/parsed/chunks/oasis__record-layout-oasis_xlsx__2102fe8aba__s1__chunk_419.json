@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_419",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "This field lists optional diagnosis (ICD-10), column 4. CHAR 8 x x\nM1033_HOSP_RISK_HSTRY_FALLS M1033 (M1032) Risk For Hosp - History Of Falls This field is checked if the patient is at risk for hospitalization due to history of falls. (2 or more falls - or any fall with an injury -in the past 12 months) 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1033_HOSP_RISK_WGHT_LOSS M1033 Risk For Hosp - Unintentional weight loss This field is checked if the patient is at risk for",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

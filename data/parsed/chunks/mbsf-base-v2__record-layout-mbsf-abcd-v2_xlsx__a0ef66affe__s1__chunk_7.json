@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Justification Code CHAR 1\nSSA_DIB_PRMRY_IMPRMNT_CD SSA Disability Insurance Benefit Dx Primary Impairment Code CHAR 4\nSSA_DIB_SCNDRY_IMPRMNT_CD SSA Disability Insurance Benefit Dx Secondary Impairment Code CHAR 4\nMDCR_STATUS_CD_01 Medicare Status Code - January CHAR 2\nMDCR_STATUS_CD_02 Medicare Status Code - February CHAR 2\nMDCR_STATUS_CD_03 Medicare Status Code - March CHAR 2\nMDCR_STATUS_CD_04 Medicare Status Code - April CHAR 2\nMDCR_STATUS_CD_05 Medicare Status Code - May CHAR",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

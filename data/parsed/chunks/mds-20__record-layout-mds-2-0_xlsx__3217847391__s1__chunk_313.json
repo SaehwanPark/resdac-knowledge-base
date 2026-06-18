@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_313",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Visits CHAR 2 Special treatments and procedures: physician visits. The number of days the physician or an authorized assistant or practitioner visited in last 14 days.\n526 P8 P8_PHYS_ORDERS (P8) Physicians Orders CHAR 2 Special treatments and procedures: physician orders.\n527 P9 P9_AB_LAB_VALUES (P9) Abnormal Lab Values CHAR 1 Special treatments and procedures: abnormal lab values. 0 = No, 1 = Yes, \"-\" = Unknown.\n528 Q1A Q1A_RES_RETURN (Q1A) Resident Wishes to Return to Community CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 1,
+  "text": "plan_type Plan Type Char 2 Type of Part D plan. 01 HMO\n02 HMOPOS\n04 PPO\n05 PSO (State License)\n06 PSO (Federal Waiver of State License)\n09 PFFS\n10 SHMO\n18 1876 Cost\n20 National PACE\n29 Medicare Prescription Drug Plan\n30 Employer Sponsored PDP\n31 Regional PPO\n33 MN Disability Health Options\n34 MN Senior Health Options\n35 WI Partnership Program\n36 MA Health Senior Care Options\n37 Continuing Care Retirement Community\n39 ESRD II\n10 demo_type Demo Type Char 1 This variable describes the type of Part",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

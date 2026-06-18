@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p145__chunk_2",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 145,
+  "text": "exist, the billing location is used. \nWhen the provider location ID (variable called PRVDR_LCTN_ID) equals ‘000’, it means that a license or \nidentifier applies to all locations for the provider. When the state sends a license or identifier record \nwith PRVDR_LCTN_ID ‘000’ but no corresponding location record, a record location record is added to \nensure referential integrity. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

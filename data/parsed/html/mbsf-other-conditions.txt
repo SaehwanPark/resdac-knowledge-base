@@ -1,0 +1,14 @@
+The Master Beneficiary Summary File (MBSF) Other Chronic or Potentially Disabling Conditions segment flags beneficiary records for the presence of 35 chronic or potentially disabling conditions not included in the original list of 27 conditions, including:
+- Mental health
+- Tobacco use, alcohol and drug use
+- Developmental disorders
+- Disability-related conditions
+- Behavioral health
+- Other chronic physical conditions
+What does this file include? (variable highlights)
+- Two flags for each chronic condition:- First ever occurrence date
+- End of year indicator
+ 
+- This file is a segment that can be requested in addition to the Master Beneficiary Summary File (MBSF) base file.
+Special considerations
+- This file uses information from Fee-For-Service (FFS) Medicare claims.

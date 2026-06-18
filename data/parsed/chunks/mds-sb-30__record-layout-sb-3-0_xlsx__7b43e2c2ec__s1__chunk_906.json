@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_906",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "of the facility. 0=No\n1=Yes effective 10/01/2023\n1023 CENTRL_DSCHRG_CD CENTRL_DSCHRG_CD O0110O4C Other: IV Access - Central (Discharge) CHAR 1 The data in this column indicates whether the resident received central IV access in the last three days of their SNF stay. 0=No\n1=Yes effective 10/01/2023\n1024 TRTMT_NONE_ADMSN_CD TRTMT_NONE_ADMSN_CD O0110Z1A Other: None of the above (Admission) CHAR 1 The data in this column indicates that the resident did not receive any of the listed treatments days",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

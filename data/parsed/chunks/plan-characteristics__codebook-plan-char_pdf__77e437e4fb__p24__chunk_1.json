@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p24__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 24,
+  "text": "CMS (HPMS files) \nVALUES: \nN = Not a SNP for this Condition Category \nY = SNP for this Condition Category \nCOMMENT: \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors to \nCMS’s Health Plan Management System (HPMS). \nOnly SNP plans are included in this file (i.e., there are no blank/missing values for this field). \n^ Back to TOC ^",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

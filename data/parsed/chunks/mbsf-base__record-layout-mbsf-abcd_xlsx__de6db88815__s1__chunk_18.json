@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "Part C PBP Number - September CHAR 3\nPTC_PBP_ID_10 PTC_PBP_ID_10 Part C PBP Number - October CHAR 3\nPTC_PBP_ID_11 PTC_PBP_ID_11 Part C PBP Number - November CHAR 3\nPTC_PBP_ID_12 PTC_PBP_ID_12 Part C PBP Number - December CHAR 3\nPTC_PLAN_TYPE_CD_01 PTC_PLAN_TYPE_CD_01 Part C Plan Type Code - January CHAR 3\nPTC_PLAN_TYPE_CD_02 PTC_PLAN_TYPE_CD_02 Part C Plan Type Code - February CHAR 3\nPTC_PLAN_TYPE_CD_03 PTC_PLAN_TYPE_CD_03 Part C Plan Type Code - March CHAR 3\nPTC_PLAN_TYPE_CD_04",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

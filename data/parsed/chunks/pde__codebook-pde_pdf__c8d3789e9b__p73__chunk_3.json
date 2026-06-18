@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p73__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 73,
+  "text": "System (HPMS). \nThis includes information on how many cost-sharing tiers each plan will use and the drugs that will be \non each tier. The CCW creates this variable based on the beneficiary’s plan of record, which is \nidentified using the Part D contract and plan benefit package of record (the PLAN_CNTRCT_REC_ID \nand PLAN_PBP_REC_ID variables). For a small number of beneficiaries, particularly those who changed \nplans around the time of the fill, the variable may not be an accurate reflection of",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

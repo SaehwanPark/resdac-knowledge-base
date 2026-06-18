@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "Reduced Post Out-of-Pocket (OOP) Threshold Cost-Sharing Amounts CHAR 1 X X X X X X\nINCREASED_ICL Plan Offers Increased Initial Coverage Limit (ICL) Amount CHAR 1 - - - - X X\nSPECIALTY_TIER Specialty Tier Number CHAR 2 X X LC X X X\nNAT_RX_COV_YN Plan Offers Nationwide Prescription Coverage CHAR 1 - X X X X X\nLIMITED_GAP_BENEFIT Plan Offers Limited benefit above the Initial Coverage Limit (ICL) CHAR 1 - X LC X - -\nLIMITED_GAP_BENEFIT_TYPE Types of Drugs Offered for Limited Gap Coverage CHAR 7 - X",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

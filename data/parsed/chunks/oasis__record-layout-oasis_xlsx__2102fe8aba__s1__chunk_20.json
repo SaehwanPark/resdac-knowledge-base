@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Checked (Yes) CHAR 1 x x x x x x\nM0140_ETHNIC_UK (M0140) Unknown Race/Ethnicity Race/ethnicity as identified by patient: Unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0140_ETHNIC_WHITE (M0140) White Race/ethnicity as identified by patient: White 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x\nM0150_CPY_MCAIDFFS (M0150) Medicaid Fee-For-Service Current payment sources for home care: Medicaid (traditional fee-for-service). 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

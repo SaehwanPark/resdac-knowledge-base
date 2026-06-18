@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_261",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "M5G M5G_APP_DRESSINGS (M5G) Application of Dressings CHAR 1 Skin condition: skin treatments in last 7 days - application of dressings. 0 = No, 1 = Yes, \"-\" = Unknown.\n429 M5H M5H_APP_MEDS (M5H) Application of Ointments/Medications CHAR 1 Skin condition: skin treatments in last 7 days - application of ointments/medications other than to feet. 0 = No, 1 = Yes, \"-\" = Unknown.\n430 M5I M5I_PREVNT_SKIN_CARE (M5I) Other Preventative or Protective Skin Care CHAR 1 Skin condition: skin treatments in",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

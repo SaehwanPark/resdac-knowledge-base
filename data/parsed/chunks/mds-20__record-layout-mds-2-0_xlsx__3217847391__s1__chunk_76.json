@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_76",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "patterns: modes of expression - signs/gestures/sounds. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n146 C3E C3E_COMM_BOARD (C3E) Communication Board CHAR 1 Communications/hearing patterns: modes of expression - communication board. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n147 C3F C3F_OTHER (C3F) Other Mode of Expression CHAR 1 Communications/hearing patterns: modes of expression - other. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n148 C3G C3G_NONE_ABOVE (C3G) None of Above Modes of Expression",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

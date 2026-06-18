@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "- Assessment Reference Date, 15 (A2000) - Discharge Date and 16 (A1600) - Reentry Date.\n4 STATE_CD STATE_CD State Code CHAR 2 This column contains the two-digit state abbreviation code. AK=Alaska\nAL=Alabama\nAP=APO\nAR=Arkansas\nAS=American Samoa\nAZ=Arizona\nCA=California\nCN=Canada\nCO=Colorado\nCT=Connecticut\nDC=District of Columbia\nDE=Delaware\nFL=Florida\nFM=Micronesia\nFN=Foreign\nGA=Georgia\nGU=Guam\nHI=Hawaii\nIA=Iowa\nID=Idaho\nIL=Illinois\nIN=Indiana\nKS=Kansas\nKY=Kentucky\nLA=Louisiana\nMA=Massachusetts\nM",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

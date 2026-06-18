@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_8",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "| Claim PPS Capital Federal Specific Portion (FSP) Amount | \n\n | 48 | CLM_PPS_CPTL_OUTLIER_AMT | Claim PPS Capital Outlier Amount | \n\n | 49 | CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT | Claim PPS Capital Disproportionate Share Amount | \n\n | 50 | CLM_PPS_CPTL_IME_AMT | Claim PPS Capital Indirect Medical Education (IME) Amount | \n\n | 51 | CLM_PPS_CPTL_EXCPTN_AMT | Claim PPS Capital Exception Amount | \n\n | 52 | CLM_PPS_OLD_CPTL_HLD_HRMLS_AMT | Claim PPS Old Capital Hold Harmless Amount | \n\n | 53 |",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

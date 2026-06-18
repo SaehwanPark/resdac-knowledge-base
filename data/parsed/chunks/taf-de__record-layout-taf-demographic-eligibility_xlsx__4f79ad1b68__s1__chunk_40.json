@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_40",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Record in Supplemental Money Follows Person (MFP) File CHAR 1 180\nSPLMTL_DSB_HCBS Beneficiary HCBS Record in Supplemental Disability File CHAR 1 181\nSPLMTL_DSB_LTSS Beneficiary LTSS Record in Supplemental Disability File CHAR 1 182\nSPLMTL_DSB_LCKIN Beneficiary Lock-In Record in Supplemental Disability File CHAR 1 183\nSPLMTL_DSB_OTHR Beneficiary Other Needs Record in Supplemental Disability File CHAR 1 184\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 8 185\nDE_VRSN DE",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

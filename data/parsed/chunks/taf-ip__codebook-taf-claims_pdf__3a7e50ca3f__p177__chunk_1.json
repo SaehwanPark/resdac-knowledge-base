@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p177__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 177,
+  "text": "LONG NAME: MDCD_ACMDTN_PD_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nLT header \nVALUES: \nDollar amount with two decimal places (e.g., 98.76) \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis field is calculated as the sum of the Medicaid Paid Amount (LINE_MDCD_PD_AMT) for all lines \nwhere the revenue center code (REV_CNTR_CD) = 0100–0219. \nNot available for managed care claims. CMS has required redaction of some payment fields for",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

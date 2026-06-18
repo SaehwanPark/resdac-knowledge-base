@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p8__chunk_3",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 8,
+  "text": "model. Payment years may use a blend of model risk scores, and therefore uses different MOFs as \ninputs for CMS to calculate the resolved risk scores. Depending on the payment year, the detailed MOFs that are \napplicable may include (also reference Table 3): \no ESRD V21 scores \no V21 scores \no V22 scores \no V23 scores \no V24 scores \no RXHCC scores \nThe MOFs for an HCC model may vary by the array of variables used in the model and in some instances the relative \ncoefficients assigned to each",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

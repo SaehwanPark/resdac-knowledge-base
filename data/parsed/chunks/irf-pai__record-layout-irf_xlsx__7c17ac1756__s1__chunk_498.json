@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_498",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Yes\n425 RACE_GU_CHAMORRO_CD RACE_GU_CHAMORRO_CD Race: Guamanian or Chamorro CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n426 RACE_SAMOAN_CD RACE_SAMOAN_CD Race: Samoan CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n427 RACE_OTHR_PCFCISLNDR_CD RACE_OTHR_PCFCISLNDR_CD Race: Other Pacific Islander CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n428 RACE_NO_RSPNS_CD",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

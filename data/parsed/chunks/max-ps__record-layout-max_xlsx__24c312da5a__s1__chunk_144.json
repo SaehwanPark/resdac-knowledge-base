@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_144",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Populated with Zeros Only\n644 HCBS_TXNMY_MDCD_PYMT_AMT_17 Medicaid payment amount (HCBS) - Other Services NUM 8 ‾ ‾ ‾ ‾ ‾ ‾ X X X X X Populated with Zeros Only\n645 HCBS_TXNMY_MDCD_PYMT_AMT_99 Medicaid payment amount (HCBS) - Unknown NUM 8 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾\n646 PREM_PYMT_IND_HMO Premium payment indicator (HMO or PACE) NUM 1 X X X X X X X X X X X\n647 PREM_PYMT_REC_CNT_HMO Premium payment record count (HMO or PACE) NUM 5 X X X X X X X X X X X\n648 PREM_MDCD_PYMT_AMT_HMO Medicaid premium",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

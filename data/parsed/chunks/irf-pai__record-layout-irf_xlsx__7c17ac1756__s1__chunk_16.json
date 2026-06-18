@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "07 = Acute Unit of Another Facility, 08 = Chronic Hospital, 09 = Rehabilitation Facility, 10 = Other, 12 = Alternate Level of Care Unit, 13 = Subacute Setting, 14 = Assisted Living Residence\n32 _17 PRE_HOSP_LVG_WTH_CD (17) Pre-Hospital Living With CHAR 2 The relationship of any individuals who resided with the patient prior to the patient's hospitalization. This item is used only if code 01 (Home) in Item 16 (Prehospital Living Setting) was coded. 01 = Alone, 02 = Family/Relatives, 03 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

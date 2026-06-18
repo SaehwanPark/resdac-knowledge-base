@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p101__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 101,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n87 \nGAP_DAYS_OONP_1M \nLABEL: \nGap Out-of-Network Pharmacy — Number of Days in One-Month Supply \nDESCRIPTION: This variable identifies the number of days in a one-month supply of a drug on this tier, when using an \nout-of-network pharmacy (OONP) during the coverage gap phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

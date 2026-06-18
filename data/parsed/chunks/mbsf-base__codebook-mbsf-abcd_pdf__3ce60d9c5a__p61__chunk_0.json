@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p61__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 61,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \n53 \nSEX_IDENT_CD \nLABEL: \nSex \nDESCRIPTION: This variable indicates the sex of the beneficiary. \nSHORT NAME: SEX \nLONG NAME: SEX_IDENT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n0 = Unknown \n1 = Male \n2 = Female \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

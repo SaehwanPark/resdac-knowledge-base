@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_124",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "harm self. -=Not assessed/no information\n0=Never or 1 day\n1=2-6 days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern)\n156 D0500J1_STF_SHRT_TMPR_CD D0500J1_STF_SHRT_TMPR_CD D0500J1 Staff Assessment of Resident Mood - Short Temper Code CHAR 1 The data in this column contains the staff assessment whether the resident is short-tempered or easily annoyed. -=Not assessed/no information\n0=No (enter 0 in column 2)\n1=Yes (enter 0-3 in column",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

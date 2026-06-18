@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p26__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 26,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n8 \nAT_PHYSN_UPIN \nLABEL: \nClaim Attending Physician UPIN Number \nDESCRIPTION: On an institutional claim, the unique physician identification number (UPIN) of the physician who \nwould normally be expected to certify and recertify the medical necessity of the services rendered \nand/or who has primary responsibility for the beneficiary's medical care and treatment (attending",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

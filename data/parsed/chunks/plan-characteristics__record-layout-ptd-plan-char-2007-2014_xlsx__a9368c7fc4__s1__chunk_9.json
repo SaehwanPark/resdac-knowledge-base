@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "(ICL) CHAR 1 - X LC X - -\nLIMITED_GAP_BENEFIT_TYPE Types of Drugs Offered for Limited Gap Coverage CHAR 7 - X LC X - -\nLIMITED_GAP_BENEFIT_AMT Limited Gap Coverage Amount NUM 8 - X X X - -\nFREE_GENERICS Plan Offers Free Generic Drugs up to a Maximum Amount CHAR 1 - X X X - -\nFREE_GENERICS_AMT Maximum Amount for Free Generic Drugs NUM 8 - X LC X - -\nSPECIALTY_ACCESS Plan Requires Specialty Pharmacies for Some Drugs CHAR 1 - X X X - -\nOTC_UM_PROGRAM Plan Covers Over-the-Counter medications (OTCs)",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

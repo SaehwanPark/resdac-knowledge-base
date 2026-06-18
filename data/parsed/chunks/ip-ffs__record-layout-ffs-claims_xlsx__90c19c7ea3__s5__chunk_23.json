@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_23",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "RSN_VISIT_CD1 Reason for Visit Diagnosis Code I CHAR 7 129\nRSN_VISIT_CD2 RSN_VISIT_CD2 Reason for Visit Diagnosis Code II CHAR 7 130\nRSN_VISIT_CD3 RSN_VISIT_CD3 Reason for Visit Diagnosis Code III CHAR 7 131\nPTB_DED NCH_BENE_PTB_DDCTBL_AMT NCH Beneficiary Part B Deductible Amount NUM 12 132\nPTB_COIN NCH_BENE_PTB_COINSRNC_AMT NCH Beneficiary Part B Coinsurance Amount NUM 12 133\nPRVDRPMT CLM_OP_PRVDR_PMT_AMT Claim Outpatient Provider Payment Amount NUM 12 134\nBENEPMT CLM_OP_BENE_PMT_AMT Claim",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

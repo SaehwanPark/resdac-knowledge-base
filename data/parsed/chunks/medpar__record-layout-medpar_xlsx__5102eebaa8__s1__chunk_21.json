@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "X X X X\nCVRCHRG TOT_CVR_CHRG_AMT Total Covered Charge Amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nPMT_AMT MDCR_PMT_AMT Total Medicare Payment Amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nPPS_PRCR_VRSN_CD PPS_PRCR_VRSN_CD Prospective Payment System (PPS) Pricer Version Char 10 - - - - - - - - - - - - - - - - - X\nService Use and Payment Summaries from Revenue Center Codes\nACMDTNS ACMDTNS_TOT_CHRG_AMT Total charge for all accommodations ($) Num 8 X X X X X X X X X X X X X X X X X",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

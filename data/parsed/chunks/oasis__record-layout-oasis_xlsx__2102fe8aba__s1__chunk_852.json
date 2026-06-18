@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_852",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "0. No\n1. Yes CHAR 1 x\nA1010B_RACE_AFRCN_AMRCN_CD Race: Black or African American Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010C_RACE_AMR_INDN_AK_NTV_CD Race: American Indian or Alaska Native Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010D_RACE_ASN_INDN_CD Race: Asian Indian Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1 x\nA1010E_RACE_CHNS_CD Race: Chinese Indicates the patient's self reported race. 0. No\n1. Yes CHAR 1",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

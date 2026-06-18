@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_3",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "| NCH Primary Payer Code (if not Medicare) | \n\n | 21 | FI_CLM_ACTN_CD | FI or MAC Claim Action Code | \n\n | 22 | PRVDR_STATE_CD | NCH Provider SSA State Code | \n\n | 23 | ORG_NPI_NUM | Organization (or group) NPI Number | \n\n | 24 | SRVC_LOC_NPI_NUM | Claim Service Location NPI Number | \n\n | 25 | AT_PHYSN_UPIN | Claim Attending Physician UPIN Number | \n\n | 26 | AT_PHYSN_NPI | Claim Attending Physician NPI Number (FFS) | \n\n | 27 | AT_PHYSN_SPCLTY_CD | Claim Attending Physician Specialty Code | \n\n |",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

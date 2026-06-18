@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_105",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Depressive feelings: sense of failure or self reproach. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_SUICIDE (M0590) Thoughts of Suicide Depressive feelings: thoughts of suicide. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_SUICIDE (M0600) A Suicide Attempt Patient's behaviors: a suicide attempt. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_AGITAT (M0600) Agitation Patient's behaviors: agitation. 0 = No, 1 = Yes CHAR 1 x x\nM0600_BEH_DIM_INT (M0600) Diminished Interest in Most Activities Patient's behaviors: diminished",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

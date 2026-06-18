@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_87",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Other service payments (HCBCA) NUM 12 X X X X X X X X X X X\n406 RX_REC_CNT_HCBCA Prescription drug records (HCBCA) NUM 5 X X X X X X X X X X X\n407 RX_PYMT_AMT_HCBCA Prescription drug payments (HCBCA) NUM 12 X X X X X X X X X X X\n408 TOT_REC_CNT_HCBCA Total records (HCBCA) NUM 5 X X X X X X X X X X X\n409 TOT_PYMT_AMT_HCBCA Total payments (HCBCA) NUM 12 X X X X X X X X X X X\n410 IP_HOSP_REC_HCBCS Inpatient hospital record count - Home and Community-Based Care Waiver (HCBCS) NUM 3 X X X X X X X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

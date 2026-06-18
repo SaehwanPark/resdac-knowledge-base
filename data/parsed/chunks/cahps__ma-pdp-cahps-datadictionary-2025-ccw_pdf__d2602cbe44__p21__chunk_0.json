@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 21,
+  "text": "B. 2025 MCAHPS Format Tables\n21\nr_im_ﬂu1last: REVERSED: Flu shot last year\nSAS Format: YND\n1: NO\n2: YES\nr_im_pneum: REVERSED: Ever had a Pneumonia shot\nSAS Format: YND\n1: NO\n2: YES\nr_md_getmngca: REVERSED: last 6 mths, got help from personal md to manage care\nSAS Format: YNC\n1: NO\n2: YES, SOMEWHAT\n3: YES, DEFINITELY\nr_mhs: REVERSED: Rate Mental Health\nSAS Format: RTC\n1: POOR\n2: FAIR\n3: GOOD\n4: VERY GOOD\n5: EXCELLENT\nr_pd_ﬁllrx: REVERSED: Last 6 mths, Dr/pharmacy/PDP contact: Make sure ﬁll or",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

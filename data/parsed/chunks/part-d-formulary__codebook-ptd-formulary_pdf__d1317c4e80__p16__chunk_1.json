@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p16__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 16,
+  "text": "SHORT NAME: — \nLONG NAME: PRIOR_AUTHORIZATION_YN \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS files) \n VALUES: \n0 = No \n1 = Yes \nCOMMENT: \nPart D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS \nvia the Health Plan Management System (HPMS). This includes information on which drugs are subject \nto prior authorization, which means that a physician must get the plan’s approval in advance before \nprescribing the drug. The value of this field may not",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

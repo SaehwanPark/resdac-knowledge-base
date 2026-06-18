@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_10",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| Claim PPS Capital Indirect Medical Education (IME) Amount | \n\n | 55 | CLM_PPS_CPTL_EXCPTN_AMT | Claim PPS Capital Exception Amount | \n\n | 56 | CLM_PPS_OLD_CPTL_HLD_HRMLS_AMT | Claim PPS Old Capital Hold Harmless Amount | \n\n | 57 | CLM_PPS_CPTL_DRG_WT_NUM | Claim PPS Capital DRG Weight Number | \n\n | 58 | CLM_UTLZTN_DAY_CNT | Claim Medicare Utilization Day Count | \n\n | 59 | BENE_TOT_COINSRNC_DAYS_CNT | Beneficiary Total Coinsurance Days Count | \n\n | 60 | BENE_LRD_USED_CNT | Beneficiary Medicare",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_214",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "sexually transmitted diseases. 0 = No, 1 = Yes, \"-\" = Unknown.\n330 I2I I2I_TUBERCULOSIS (I2I) Tuberculosis CHAR 1 Disease diagnosis: infections - tuberculosis. 0 = No, 1 = Yes, \"-\" = Unknown.\n331 I2J I2J_UTI_THRTY_DAYS (I2J) Urinary Tract Infection CHAR 1 Disease diagnosis: infections - urinary tract infection in last 30 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n332 I2K I2K_VIRAL_HEP (I2K) Viral Hepititis CHAR 1 Disease diagnosis: infections - viral hepatitis. 0 = No, 1 = Yes, \"-\" = Unknown.\n333",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

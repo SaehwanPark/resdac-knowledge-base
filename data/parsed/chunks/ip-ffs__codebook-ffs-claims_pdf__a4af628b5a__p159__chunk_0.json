@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p159__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 159,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n141 \nCLM_VAL_CD \nLABEL: \nClaim Value Code \nDESCRIPTION: The code indicating a monetary condition which was used by the intermediary to process an \ninstitutional claim. \nThe associated monetary value is in the claim value amount field (CLM_VAL_AMT). \nSHORT NAME: VAL_CD \nLONG NAME: CLM_VAL_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nThis code set is an external code set",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

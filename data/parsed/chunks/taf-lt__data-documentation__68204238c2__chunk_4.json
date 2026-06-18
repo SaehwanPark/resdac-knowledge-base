@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_4",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "Medicare or Medicaid) | \n\n | 28 | SECT_1115A_DEMO_IND | 1115(A) Demonstration Participation Indicator | \n\n | 29 | SRVC_BGN_DT | Claim Beginning Date of Service | \n\n | 30 | SRVC_END_DT | Claim Ending Date of Service | \n\n | 31 | SRVC_END_DT_CD | Identifies the Date Field Used to Populate SRVC_END_DT | \n\n | 32 | ADMSM_DT | Admission Date (TAF) | \n\n | 33 | ADMSN_HR | Admission Hour | \n\n | 34 | DSCHRG_DT | Discharge Date | \n\n | 35 | DSCHRG_HR | Discharge Hour | \n\n | 36 | ADMTG_DGNS_CD | Admitting",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

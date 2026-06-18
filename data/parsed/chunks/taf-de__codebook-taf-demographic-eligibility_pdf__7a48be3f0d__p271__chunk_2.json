@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p271__chunk_2",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 271,
+  "text": "7 = Hispanic, all races \n8 = Other, non-Hispanic or Hispanic not reported \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis variable is constructed in the TAF if either the RACE or ETHNICITY-CODE source variables has a \nvalid value, a non-missing code will be assigned. \nIf the TAF variable (ETHNCTY_CD) indicates beneficiary is Hispanic, value is set to 7 regardless of what \nis reported in the RACE data element. Otherwise, if there is at least one valid race code, value is set",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

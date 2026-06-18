@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p50__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 50,
+  "text": "CHAR \nLENGTH: \n35 \nSOURCE: \nPDE \nVALUES: \nUp to 35 positive integers \nCOMMENT: \nField length expanded from 15 to 35 in 2025. Historically, a single individual prescriber might have had \nmore than one type of identifier, and the PDEs that he/she prescribed may have more than one \nPRSCRBR_ID (e.g., the NPI could have appeared on some PDEs and the DEA number on others). The \nPRSCRBR_ID usually represents a unique individual prescriber (i.e., a prescribing provider), but can \noccasionally",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

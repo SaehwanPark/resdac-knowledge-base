@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_298",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "column contains ICD (International Classification of Diseases) code 4 for an additional active diagnoses in the last seven days.\n327 I8000E_ICD_5_CD I8000E_ICD_5_CD I8000E Additional Active Diagnoses: ICD 5 Code CHAR 8 This column contains ICD (International Classification of Diseases) code 5 for an additional active diagnoses in the last seven days.\n328 I8000F_ICD_6_CD I8000F_ICD_6_CD I8000F Additional Active Diagnoses: ICD 6 Code CHAR 8 This column contains ICD (International Classification",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

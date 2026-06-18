@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_268",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "last 7 days - evening. This field indicates if the resident is awake all or most of the evening (I.e., naps no more than one hour during the evening). 0 = No, 1 = Yes, \"-\" = Unknown\n442 N1D N1D_NONE_ABOVE (N1D) None of Above Time Awake CHAR 1 Activity pursuit patterns: time awake over last 7 days - none of above. 0 = No, 1 = Yes, \"-\" = Unknown\n443 N2 N2_TM_ACTIVITIES (N2) Time Involved in Activities CHAR 1 Activity pursuit patterns: average time involved in activities. 0 = Most - more than 2/3",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p11__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 11,
+  "text": "the delivery and release mechanism of the drug. When this variable appears in the \nFormulary file, it is the FDB dosage form code for a drug product on the formulary. \nSHORT NAME: GCDF \nLONG NAME: GCDF \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nFirst DataBank \nVALUES: \n2-digit alpha/numeric code (e.g., CA [capsule], PS [adhesive patch, medicated]) \nCOMMENT: \nThe narrative description for this code appears in the dosage form code description variable (called \nGCDF_DESC). In the Formulary file, this",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

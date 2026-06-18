@@ -1,0 +1,1855 @@
+Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) V2.0
+Beneficiary/Enrollee File Data Dictionary - Includes all Medicare eligible (Medicare-only, Medicare-Medicaid eligible) and Medicaid-only with disability enrollees
+Note: Individual Identifier is BENE_ID and when BENE_ID is missing MSIS_ID/STATE_CD is unique person identifier
+Category	Variable Name	Description	Values
+Identifiers	REFERENCE_YEAR	Beneficiary enrollment reference year	2006 - 2012
+SAMPLE_IND	1% random sample indicator	1 - person is included in 1% sample
+Null/missing - person is not included in 1%
+BENE_ID	CCW beneficiary ID	up to 15 alphanumeric characters
+MSIS_ID	State reported MSIS ID used for individuals who do not have a valid BENE_ID	up to 20 alphanumeric characters
+D_STATE_CD	Annual State code for the individual.	2-letter postal abbreviation
+Demographics	D_ALIVE_MOS	Months alive during the reference year (null if alive all year)	1 - 11
+Null/missing - did not die during the year
+D_DIED	Beneficiary died during year, indicator	0 - Did not die during year
+1 - Died during year
+D_DOD	Date of death. Source is Medicare for all with Medicare coverage, and Medicaid SSA DOD from MAX for others (Medicaid date of death from MAX for non-Medicare for 2006)	date - MM/DD/YYYY
+Null/missing = no date of death (did not die during year)
+D_DOB	Date of birth. Source is Medicare for all with Medicare coverage, Medicaid DOB for non-Medicare	date - MM/DD/YYYY
+D_AGE	Age (in years) at the end of the calendar year	XXX
+D_SEX	Sex of enrollee	F - Female
+M - Male
+U - Unknown
+D_DISABILITY_CD	Disability Insurance Benefit Entitlement to Medicare Justification code - fromSocial Security Administration (SSA)	1 - Beneficiary is entitled to Medicare coverage due to prior periods of SSA disability entitlement
+A - Beneficiary is entitled to Medicare based upon SSA disability and the 24 month waiting period has been waived
+H - Beneficiary is entitled to Medicare due to health hazard
+Null/missing – no record of SSA disability determination
+D_DISABILITY_AWARD_CD	SSA Disability Insurance Benefit Diagnosis Award Code	A - Health Insurance/Supplemental Medical Insurance (HI/SMI) Entitlement Based Upon Disability on Another Claim Number    
+C - Retirement Insurance Benefit/Disability Insurance Benefit (RIB/DIB) Entitlement     
+F - Favorable Decision for DIB Reentitlement     
+K - Invalid Code Entered     
+L - 1972 Blind Provision     
+N - BLIND, 1967 Definition     
+P - BLIND Prior to Age 31, 1967 Definition    
+R - Insured Under Special Insured Status Provision for Young Disabled     
+S - BLIND - Original Definition     
+T - BLIND, Prior to Age 31, Original Definition     
+U - Short-Term Disability     
+X - No Waiting Period    
+^ - Delete the First Disabled Adult Child (DAC) Field Only
+Null/missing – no record of SSA disability determination
+D_DISABILITY_PRIMARY_CD	SSA Disability Insurance Benefit Diagnosis Primary Impairment Code	see SSA website: https://secure.ssa.gov/poms.nsf/lnx/0426510015
+D_DISABILITY_SECONDARY_CD	SSA Disability Insurance Benefit Secondary Impairment Code	see D_DISABILITY_PRIMARY_CD
+D_MEDICARE_RACE	Medicare Beneficiary Race Code
+(modified using RTI algorithm)	0 - Unknown
+1 - Non-Hispanic White
+2 - Black (or African American)
+3 - Other
+4- Asian/Pacific Islander
+5 - Hispanic
+6 - American Indian/Alaskan Native
+Null/missing - unknown or no Medicare enrollment data
+D_MEDICAID_RACE	Medicaid Race/Ethnicity Code	0 - unknown
+1 - White
+2 - Black (or African American)
+3 - American Indian/Alaskan Native
+4 - Asian
+5 - Hispanic
+6 - Native Hawaiian/Pacific Islander
+7 - Hispanic and one or more races
+8 - more than 1 race
+9 - unknown
+Null/missing - unknown or no Medicaid enrollment data
+D_MEDICARE_COV_START	Medicare Coverage Start Date - First occurrence of Medicare (A or B)  coverage based on Medicare enrollment	date - MM/DD/YYYY
+D_MEDICAID_COV_START	Medicaid Coverage Start Date - First occurrence since 1999 of Medicaid coverage, regardless of state (source: Uniform eligibility code from MAX)	date - MM/DD/YYYY
+D_STATE_CD_1 -12	Monthly State Code:  January through December (state of residence)	2-letter postal abbreviation
+D_ZIP	Five-digit ZIP Code of Beneficiary/Enrollee	XXXXX
+D_COUNTY	Annual county for the individual.	XXX
+Long Term Services	L_MEDICAID_LTSS_DTL_1 - 12	Monthly detail of Medicaid long term supports and services(LTSS) status. January through December.	I1 - Nursing Facility Service (NFS) Institutional (INST) LTSS
+I2 - Other INST LTSS
+C1 - Waiver Community (COMM) LTSS
+C2 - Home Health (HH) or Personal Care Services (PCS) COMM LTSS
+A - Non-LTSS; no such service use
+Null - No Medicaid coverage during the month
+L_MEDICARE_LT_DTL_1 - 12	Monthly detail of long term care utilization.   January through December.	NF - Nursing Facility (source: MDS assessment)
+SNF - Skilled Nursing Facility (source: Medicare claims)
+LTC - Long Term Care Hospital (source: Medicare Claims)
+Null - None of these Medicare LT services, or no Medicare coverage during the month
+L_LTINST_IND_1 - 12	Monthly indicator of Medicaid LTSS and/or Medicare LT services. January through December.	0 = no LTC stay during the month
+1 = at least one day of the month in LTC setting
+L_LTINST_MOS	Months in Long Term Care Setting.  Count of months where L_LTINST_IND_<M>=1	XX
+Dual Eligibility	E_MAX_DUAL_1 - 12	Monthly  code indicating if Medicaid enrollee is covered by Medicare. January through December.	00 - Eligible is not a Medicare Beneficiary
+01 - Eligible is entitled to Medicare - QMB only
+02 - Eligible is entitled to Medicare - QMB and Full Medicaid
+03 - Eligible is entitled to Medicare - SLMB only
+04 - Eligible is entitled to Medicare - SLMB and Full Medicaid
+05 - Eligible is entitled to Medicare - QDWI
+06 - Eligible is entitled to Medicare - Qualifying Individuals
+07 - Eligible is entitled to Medicare - Qualifying Individual
+08 - Eligible is entitled to Medicare - Other Dual Eligible
+09 - Eligible is entitled to Medicare - Dual eligibility category unknown
+50- Found in Medicare EDB and 01-09 do not apply
+51 - found in EDB and 01 applies
+52 - found in EDB and 02 applies
+53 - found in EDB and 03 applies
+54 - found in EDB and 04 applies
+55 - found in EDB and 05 applies
+56 - found in EDB and 06 applies
+57 - found in EDB and 07 applies 
+58 - found in EDB and 08 applies
+59 - found in EDB and 09 applies
+98 - found in EDB and 99 applies
+99 - Eligible Medicare Status is unknown
+Null/missing = No Medicaid coverage during the month
+E_DUAL_1 - 12	Monthly State Reported Dual Eligibility Status Code:  January through December	00 - Not Medicare Enrolled
+01 - QMB only
+02 - QMB + full Medicaid
+03 - SLMB-only
+04 - SLMB + full dual Medicaid benefits
+05 - QDWI
+06 - QI
+08 - Other full benefit
+09 - Other dual eligible without Medicaid
+99 - Unknown
+NA - Non Medicaid
+XX - Enrolled in Medicare, no MIIR record
+E_MME_TYPE_1 - 12	Monthly Medicare and/or Medicaid enrollment (MME)  type classification.  January through December.	5 - Full dual 
+4 - QMB dual 
+3 - Partial dual 
+2 - Medicare only
+1 - Medicaid only with a disability
+Null/missing
+E_MME_TYPE	Annual Medicare-Medicaid enrollment (MME) type classification.	5 - Full dual 
+4 - QMB dual 
+3 - Partial dual 
+2 - Medicare only
+1 - Medicaid only with a disability
+E_FD_MOS	Months full dual coverage.	XX
+E_QMB_MOS	Months QMB dual coverage	XX
+E_PD_MOS	Months partial dual coverage.	XX
+E_MEDICAREONLY_MOS	Months Medicare only coverage.	XX
+E_MEDICAIDONLY_MOS	Months Medicaid only with a disability (coverage).	XX
+E_OTHER_MOS	Months neither Medicare nor Medicaid coverage.	XX
+FFS/MA Eligibility	E_MEDICAREFFS_1 - 12	Monthly Medicare fee-for-service (FFS) indicator. January through December.  If Medicare monthly buyin (E_BUYIN_<M>)is equal to '3' or 'C' and the monthly HMO indicator is '0' or 4' then FFS.  If monthly HMO is '1' or '2' then cost based and if monthly HMO is 'A', 'B', or 'C' then 'risk-based'	1 - Fee-for-service (FFS)
+2 - Medicare Advantage (MA) Cost-based
+3 - MA Risk-based
+Null- Other, or no Medicare coverage during the month
+E_MEDICAIDFFS_1 - 12	Monthly Medicaid fee-for-service (FFS) indicator.  January through December. A hierarchy is used:  If any of the 4 Eligible Pre-Paid Plan (PHP) Group codes for the month equals 01 (medical or comprehensive managed care plan), 05 (LTC managed care plan),  06 (PACE), 07 (PCCM), 02 (dental), 03 (behavioral), 04(prenatal), or 08 (other managed care - only if individual lived in AL, CA, FL, or W).  If none of these PHP values applies, then individual is considered FFS for the month	1 - FFS
+2 - Long term care
+3 - Comprehensive managed care
+4 - Primary care case management
+5 - Program of all-inclusive care for elderly (PACE)
+6 - Dental
+7 - Behavioral
+8 - Prenatal
+Null - Other, or no Medicaid coverage during the month
+E_PTDFFS_1 - 12	Monthly Medicare Part D fee-for-service (FFS) indicator. January through December.	1 - Stand-alone Prescription Drug Plan (PDP)
+2 - Employer-direct plan
+3- Medicare Advantage - Prescription Drug Plan (MA-PD)
+4 - Other
+Null - No Medicare Part D coverage during the month
+E_MEDICAREFFS	Annual Medicare FFS Indicator	1 - All months alive Medicare FFS
+0 - Some months Medicare MA
+Null - No months MA, not all months alive Medicare FFS
+E_MEDICAIDFFS	Annual Medicaid FFS Indicator	1 - All months alive Medicaid FFS
+0 - Some months Medicaid PHP
+Null - No months PHP, not all months alive Medicaid FFS
+E_MEDICAREMA	Annual Medicare Managed Care Summary	1 - Some eligible months MA
+0 - FFS = No eligible months MA
+Null - Not FFS or MA
+E_MEDICAIDPHP	Annual Medicaid Managed Care (Prepaid Health Plan - PHP) Indicator	4 - Some eligible months LTC
+3 - No LTC but some eligible months CMC
+2 - No LTC or CMC but some eligible months PCCM
+1 - No LTC or CMC or PCCM but some eligible months LMC
+0 - FFS = No LTC or CMC or PCCM or LMC
+Null - Not FFS or MA
+E_LTC_COV_MOS	Months of  Coverage in a Medicaid Long Term Care (LTC) PHP	XX
+Null/missing = No Medicaid coverage during the month
+E_CMC_COV_MOS	Months of  Coverage in a Medicaid Comprehensive Managed Care PHP	XX
+Null/missing = No Medicaid coverage during the month
+E_PCCM_COV_MOS	Months of  Coverage in a Medicaid Primary Care Case Management (PCCM) Plan	XX
+Null/missing = No Medicaid coverage during the month
+E_PACE_COV_MOS	Months of  Coverage in a Medicaid-Identified Program of All-Inclusive Care for the Elderly (PACE) PHP	XX
+Null/missing = No Medicaid coverage during the month
+E_DENTAL_COV_MOS	Months of  Coverage in a Medicaid Dental PHP	XX
+Null/missing = No Medicaid coverage during the month
+E_BEHAVIORAL_COV_MOS	Months of Coverage in a Medicaid Behavioral PHP	XX
+Null/missing = No Medicaid coverage during the month
+E_PRENATAL_COV_MOS	Months of Coverage in a Medicaid Prenatal Care PHP	XX
+Null/missing = No Medicaid coverage during the month
+Eligibility (Medicare)	E_CREC	Current Reason for Medicare  Entitlement	0 - Old Age and Survivor's Insurance
+1 - Disability Insurance benefits
+2 - ESRD
+3 - Disability Insurance and ESRD
+E_OREC	Original  Reason for Medicare  Entitlement	0 - Old Age and Survivor's Insurance
+1 - Disability Insurance benefits
+2 - ESRD
+3 - Disability Insurance and ESRD
+E_MS_CD	Medicare Status Code (year end)	10 - Aged without ESRD
+11 - Aged with ESRD
+20 - Disabled without ESRD
+21 - Disabled with ESRD
+31 - ESRD only
+E_PRIMARY_PAYER_CD	A Medicare beneficiary with medical coverage by some other primary payer - either a federal program or other insurance source.	A - Working aged bene/spouse with an employer group health plan (EGHP)
+B - End stage renal disease (ESRD) beneficiary in the 30 month coordination period with an employer group health plan
+C - Conditional payment by Medicare; future reimbursement expected
+D - Automobile insurance and no fault
+E - Workers' compensation
+F - Public health service (PHS) or other federal agency (other than Dept. of Veterans Affairs)
+G - Working disabled
+H - Black lung
+I - Dept. of Veterans Affairs
+L- Liability insurance
+1 - Potential workers' compensation
+2 - Potential black lung
+3 - Potential Dept. of Veterans Affairs
+Null/Missing - No other primary payer besides Medicare
+E_BUYIN_1 - 12	Monthly Medicare Part A and/or B Entitlement Indicator. January through December	0 - Not Entitled
+1 - Part A Only
+2 - Part B Only
+3 - Part A and Part B
+A - Part A, State Buy-in
+B - Part B, State buy-in
+C - Parts A and B, State Buy-in
+E_MEDICAREMA_1 - 12	Monthly Medicare Managed Care (Medicare Advantage; MA) Indicator. January through December	0 - Not a member of HMO
+1 - Non lock-in, HCFA to process provider claim
+2 - Non lock-in, GHO to process in-plan Part A and in-area Part B claims
+4 - Fee for service participant in case or disease management demonstration project (effective 2005 forward)
+A - Lock-in, HCFA to process provider claims
+B- Lock-in, GHO to process in-plan Part a and in-area Part B claims
+C - Lock-in, GHO to process all provider claims
+E_PTD_PBP_ID_1 - 12	Monthly Medicare Part D Plan Benefit Package Number.  January through December	3-digit numeric
+Null/missing  = Not enrolled in Mediare Part D during the month
+E_PTD_CONTRACT_ID_1 - 12	Monthly Medicare Part D Contract Number. January through December	5-digit alpha numeric
+N=
+Null/missing (or 0) = Not enrolled in Mediare Part D during the month
+E_PTD_SNP_1 - 12	Monthly Medicare Part D Special Needs Plan (SNP) Indicator.  January through December	0 - Part D plan is not a SNP
+C - Chronic or disabling condition SNP
+D - Dual eligible SNP
+I - Institutional SNP
+Null/Missing = No Medicare Part D coverage for the month
+Eligibility (Medicaid)	E_MAS_1 - 12	Monthly Medicaid Maintenance Assistance Status (Source=1st position of uniform eligibility code).  January through December	0 - Not eligible for Medicaid
+1 - Cash
+2 - Medically Needy
+3 - Poverty
+4 - Other
+5 - Section 1115 waiver
+9 - Unknown
+Null/Missing = No Medicaid coverage during the month
+E_BOE_1 - 12	Monthly Medicaid Basis of Eligibility (Source= 2nd position of uniform eligibility code). January through December	0 - Not eligible for Medicaid
+1 - Aged
+2 - Blind/disabled
+4 - Child
+5 - Adult
+6 - Child of unemployed adult
+7 - Unemployed Adult
+8 - Foster care child
+A - Covered under Breast and Cervical Cancer Prevention Act
+9 - Unknown
+Null/Missing = No Medicaid coverage during the month
+E_MAS	Annual Medicaid Maintenance Assisstance Status - last  enrolled month	0 - Not Eligible
+1 - Cash
+2 - Medically Needy
+3 - Poverty
+4 - Other
+5 - Section 1115 waiver
+9 - Unknown
+Null/missing = no Medicaid coverage during the month
+E_BOE	Annual Medicaid Basis of Eligibility - last enrolled month	0 - Not Eligible
+1 - Aged
+2 - Blind/Disabled
+4 - Child
+5 - Adult
+6 - Child of Unemployed Adult
+7 - Unemployed Adult 
+8 - Foster Care Child
+A - Covered under Breast and Cervical Cancer Prevention Act
+9 - Unknown
+E_WAIVER1_1 - 12	Monthly Medicaid Waiver Status (1st type of waiver).  January through December.	0 - individual was not eligible for Medicaid this month
+1 - enrolled in Section 1115 waiver this month
+2 - enrolled in section 1915(B) waiver this month
+4 - enrolled in combined section 1915(B) and (C) waiver this month
+5 - enrolled in section 1115 Health Insurance and Flexibility and Accountability (HIFA) waiver this month
+6 - section 1115 pharmacy waiver coverage this month
+7 - enrolled in other type of waiver this month
+8 - not applicable (not enrolled in a waiver)
+9 - enrolled in unknown type of waiver this month
+A - enrolled in section 1115 disaster-related waiver
+F - enrolled in section 1115 family planning-only waiver
+G - enrolled in section 1915(C) waiver for aged and disabled
+H - enrolled in section 1915(C) waiver for aged this month
+I - enrolled in section 1915(C) waiver for physically disabled this month
+J - enrolled in section 1915(C) waiver for people with brain injuries this month
+K - enrolled in section 1915(C) waiver for people with human immunodeficiency virus / acquired immunodeficiency syndrome (HIV/AIDS)
+L - enrolled in section 1915(C) waiver for mentally retarded/developmentally disabled
+M - enrolled in section 1915(C) waiver for people with mental illness / serious emotional disturbance
+N - enrolled in section 1915(C) waiver for technology dependent / medically fragile
+O - enrolled in section 1915(C) waiver for unspecified or unknown populations
+P - enrolled in section 1915(C) waiver this month for autism/spectrum disorder
+Null/Missing – No Medicaid coverage during the month
+E_WAIVER2_1 - 12	Monthly Medicaid Waiver Status (2nd type of waiver)	see E_WAIVER1_1-12
+E_WAIVER3_1 - 12	Monthly Medicaid Waiver Status (3rd type of waiver)	see E_WAIVER1_1-12
+E_MEDICAID_RESTRICTED_1 - 12	Monthly Medicaid Restricted Benefits Indicator. January through December	0 - Not Medicaid eligible
+1 - Full Medicaid
+2 - Restricted Medicaid – alien status
+3 - Restricted Dual (QMB/SLMB only)
+4 - Restricted – pregnancy-related only 
+5 - Restricted – other 
+6 - Medicaid – Family Planning only
+7 - Medicaid – Alternative Benchmark Equivalent Coverage
+8 - Medicaid – Money Follows the Person - CBLTC
+9 - Medicaid – unknown restrictions
+A - Medicaid – Psychiatric Residential Treatment Facilities Demo
+B - Medicaid – Health Opportunity Account
+W - Medicaid – HMO plan purchase, Massachusetts Commonwealth
+X - Medicaid– Prescription (RX) drug only
+Y - Dual – RX only (QMB/SLMB only)
+Z - Dual – RX only 
+Null/Missing = No Medicaid coverage during the month
+Total Medicare Spending	S_MEDICARE_PMT_1 - 12	Monthly Medicare FFS  payments (based on claim through date)	Value displayed in dollars and cents
+S_MEDICARE_PMT	Annual Medicare FFS payments	Value displayed in dollars and cents
+S_MEDICARE_BENE_PMT_1 - 12	Monthly Medicare coinsurance and deductible FFS  payments (based on claim through date)	Value displayed in dollars and cents
+S_MEDICARE_BENE_PMT	Annual Medicare coinsurance and deductible FFS payments	Value displayed in dollars and cents
+S_OTH_MEDICARE_PMT	Medicare FFS payments for months with 'Other' Dual Status	Value displayed in dollars and cents
+S_OTH_MEDICARE_BENE_PMT	Medicare Coinsurance/Deductible FFS Pmts for Mos w/Oth Dual Status	Value displayed in dollars and cents
+S_FD_MEDICARE_PMT	Medicare FFS payments for months with 'Full' Dual Status	Value displayed in dollars and cents
+S_FD_MEDICARE_BENE_PMT	Medicare Coinsurance/Deductible FFS Pmts for Mos w/Full Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICARE_PMT	Medicare FFS payments for months with 'QMB' Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICARE_BENE_PMT	Medicare Coinsurance/Deductible FFS Pmts for Mos w/QMB Dual Status	Value displayed in dollars and cents
+S_PD_MEDICARE_PMT	Medicare FFS payments for months with 'Partial' Dual Status	Value displayed in dollars and cents
+S_PD_MEDICARE_BENE_PMT	Medicare Coinsurance/Deductible FFS Pmts for Mos w/Partial Dual Status	Value displayed in dollars and cents
+S_MRO_MEDICARE_PMT	Medicare FFS payments for months with 'Medicare Only'  Status	Value displayed in dollars and cents
+S_MRO_MEDICARE_BENE_PMT	Medicare Coinsurance/Deductible FFS Pmts for Mos w/MDCR Only Dual Status	Value displayed in dollars and cents
+Total Medicaid Spending	S_FED_PMT_1 - 12	Monthly Federal share of all Medicaid payments (based on ending date of service)	Value displayed in dollars and cents
+S_ST_PMT_1 - 12	Monthly State share of all Medicaid payments (based on ending date of service)	Value displayed in dollars and cents
+S_MEDICAID_PMT_1 - 12	Monthly Medicaid Managed Care and FFS payments (based on ending date of service)	Value displayed in dollars and cents
+S_MEDICAID_PMT	Annual Medicaid Managed Care and FFS payments	Value displayed in dollars and cents
+S_MEDICAID_FFS_PMT_1 - 12	Monthly Medicaid FFS month payments (based on ending date of service)	Value displayed in dollars and cents
+S_MEDICAID_FFS_PMT	Annual Medicaid FFS payments	Value displayed in dollars and cents
+S_MEDICAID_BENE_PMT_1 - 12	Monthly Medicaid coinsurance and deductible payments (based on ending date of service)	Value displayed in dollars and cents
+S_MEDICAID_BENE_PMT	Annual Medicaid coinsurance and deductible payments.	Value displayed in dollars and cents
+S_MEDICAID_BENE_FFS_PMT_1 - 12	Monthly Medicaid coinsurance and deductible FFS month payments (based on ending date of service).	Value displayed in dollars and cents
+S_OTH_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+S_OTH_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+S_OTH_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+S_OTH_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+S_OTH_MEDICAID_BENE_PMT	Medicaid Coinsurance/Deductible FFS & MC Pmts for Mos w/Oth Dual Status	Value displayed in dollars and cents
+S_OTH_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance/Deductible FFS Pmts for Mos w/Oth Dual Status	Value displayed in dollars and cents
+S_FD_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Full' Dual Status	Value displayed in dollars and cents
+S_FD_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+S_FD_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+S_FD_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+S_FD_MEDICAID_BENE_PMT	Medicaid Coinsurance/Deductible FFS & MC Pmts for Mos w/Full Dual Status	Value displayed in dollars and cents
+S_FD_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance/Deductible FFS Pmts for Mos w/Full Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'QMB' Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'QMB'  Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with  'QMB'  Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICAID_FFS_PMT	Medicaid Coinsurance/Deductible FFS Pmts for Mos w/QMB Dual Status	Value displayed in dollars and cents
+S_QMB_MEDICAID_BENE_PMT	Medicaid Coinsurance/Deductible FFS & MC Pmts for Mos w/QMB Dual Status	Value displayed in dollars and cents
+S_PD_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+S_PD_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+S_PD_MEDICAID_PMT	Medicaid FFS and Managed Care Pmts for Mos w/Partial Dual Status	Value displayed in dollars and cents
+S_PD_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with   'Partial' Dual Status	Value displayed in dollars and cents
+S_PD_MEDICAID_BENE_PMT	Medicaid Coins/Deductible FFS & MC Pmts for Mos w/Partial Dual Status	Value displayed in dollars and cents
+S_PD_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance/Deductible FFS Pmts for Mos w/Partial Dual Status	Value displayed in dollars and cents
+S_MDO_MEDICAID_PMT_FED	Federal Share of Medicaid Pmts for Mos w/Medicaid Only Dual Status	Value displayed in dollars and cents
+S_MDO_MEDICAID_PMT_ST	State Share of Medicaid Pmts for Mos w/Medicaid Only Dual Status	Value displayed in dollars and cents
+S_MDO_MEDICAID_PMT	Medicaid FFS and Managed Care Pmts for Mos w/Medicaid Only Dual Status	Value displayed in dollars and cents
+S_MDO_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with 'Medicaid Only with Disability' Status	Value displayed in dollars and cents
+S_MDO_MEDICAID_BENE_PMT	Medicaid Coins/Deductible FFS & MC Pmts for Mos w/MDCD Only Dual Status	Value displayed in dollars and cents
+S_MDO_MEDICAID_BENE_FFS_PMT	Medicaid Coins/Deductible FFS Pmts for Mos w/MDCD Only Dual Status	Value displayed in dollars and cents
+Medicare Utilization	U_MEDICARE_ADMITS	Total number of Medicare inpatient hospital admissions during year	XXX
+U_MEDICARE_READMITS	# Medicare hospital inpt readmissions within 30 days (excl transfers)	XXX
+Monthly Medicare Utilization	U_MEDICARE_IER_CNT_1 - 12	Total number of Medicare Inpatient ER visits per month	XXX
+U_MEDICARE_OER_CNT_1 - 12	Total number of Medicare Hospital Outpatient ER visits per month	XXX
+U_MEDICARE_HH_VST_CNT_1 - 12	Total number of Medicare FFS month Home Health visit count	XXX
+U_ACUTE_DAY_COV_DAY_CNT_1 - 12	Total number of Medicare Acute Inpatient covered days*	XXX
+U_SNF_DAY_COV_CNT_1 - 12	Total number of Medicare Skilled Nursing Facility covered days*	XXX
+U_PAC_OTH_DAY_COV_CNT_1 - 12	Total number of Medicare Post-Acute Care covered days*	XXX
+U_HOSPICE_DAY_COV_CNT_1  - 12	Total number of Medicare Hospice covered days*	XXX
+U_HOP_VST_1 - 12	Total number of Medicare Hospital Outpatient visits	XXX
+U_PHYS_VST_1 - 12	Total number of Medicare Physician claims	XXX
+U_DME_VST_1 - 12	Total number of Medicare DME claims	XXX
+U_DRUG_PTD_1 - 12	Total number of Medicare Prescriptions	XXX
+Annual Medicare Utilization - by MME_TYPE	U_MRO_OER_CNT	# MDCR FFS month HospOutpt ER visit cnt during mos of MDCR Only Dual Status	XXX
+U_MRO_IER_CNT	# MDCR FFS month Inpt ER visit count during mos of MDCR Only Dual Status	XXX
+U_MRO_HH_VST_CNT	# MDCR FFS month HH visit count during mos of MDCR Only Dual Status	XXX
+U_MRO_IP_ACUTE_DAY	# MDCR Acute Inpt covered days during mos of MDCR Only Dual Sta	XXX
+U_MRO_SNF_DAY	# MDCR SNF covered days during mos of MDCR Only Dual Status	XXX
+U_MRO_PAC_OTH_DAY	# MDCR Post-Acute Care covered days during mos of MDCR Only Dual Status	XXX
+U_MRO_HOSPICE_DAY	# MDCR Hospice covered days during mos of MDCR Only Dual Status	XXX
+U_MRO_HOP_VST	# MDCR Hosp Outpt visits during mos of MDCR Only Dual Status	XXX
+U_MRO_PHYS_VST	Total number of Medicare Physician claims during months of 'Medicare Only' Status	XXX
+U_MRO_DME_VST	Total number of Medicare DME claims during months of 'Medicare Only'  Status	XXX
+U_MRO_DRUG_PTD	Total number of Medicare Prescriptions during months of 'Medicare Only' Status	XXX
+U_FD_OER_CNT	# MDCR FFS month Hosp Outpt ER visit cnt during mos of Full Dual Status	XXX
+U_FD_IER_CNT	# MDCR FFS month Inpt ER visit count during mos of Full Dual Status	XXX
+U_FD_HH_VST_CNT	# MDCR FFS month HH visit count during mos of Full Dual Status	XXX
+U_FD_IP_ACUTE_DAY	# MDCR Acute Inpt covered days during mos of Full Dual Status	XXX
+U_FD_SNF_DAY	# MDCR SNF covered days during mos of Partial Dual Status	XXX
+U_FD_PAC_OTH_DAY	# MDCR Post-Acute Care covered days during mos of Partial Dual Status	XXX
+U_FD_HOSPICE_DAY	Total number of Medicare Hospice covered days during months of 'Full' Dual Status*	XXX
+U_FD_HOP_VST	Total number of Medicare Hospital Outpatient visits during months of 'Full' Dual Status	XXX
+U_FD_PHYS_VST	Total number of Medicare Physician claims during months of 'Full' Dual Status	XXX
+U_FD_DME_VST	Total number of Medicare DME claims during months of 'Full' Dual Status	XXX
+U_FD_DRUG_PTD	Total number of Medicare Prescriptions during months of 'Full' Dual Status	XXX
+U_PD_OER_CNT	# MDCR FFS month HospOutpt ER visit cnt during mos of Partial Dual Status	XXX
+U_PD_IER_CNT	# MDCR FFS month Inpt ER visit count during mos of Partial Dual Status	XXX
+U_PD_HH_VST_CNT	# MDCR FFS month HH visit count during mos of Partial Dual Status	XXX
+U_PD_IP_ACUTE_DAY	# MDCR Acute Inpt covered days during mos of Partial Dual Status	XXX
+U_PD_SNF_DAY	Total number of Medicare Skilled Nursing Facility covered days during months of 'Partial' Dual Status*	XXX
+U_PD_PAC_OTH_DAY	Total number of Medicare Post-Acute Care covered days during months of 'Partial' Dual Status*	XXX
+U_PD_HOSPICE_DAY	Total number of Medicare Hospice covered days during months of 'Partial' Dual Status*	XXX
+U_PD_HOP_VST	Total number of Medicare Hospital Outpatient visits during months of 'Partial' Dual Status	XXX
+U_PD_PHYS_VST	Total number of Medicare Physician claims during months of 'Partial' Dual Status	XXX
+U_PD_DME_VST	Total number of Medicare DME claims during months of 'Partial' Dual Status	XXX
+U_PD_DRUG_PTD	Total number of Medicare Prescriptions during months of 'Partial' Dual Status	XXX
+U_QMB_OER_CNT	Total number of Medicare FFS month Hospital Outpatient ER visit count during months of 'QMB' Dual Status	XXX
+U_QMB_IER_CNT	Total number of Medicare FFS month Inpatient ER visit count during months of 'QMB' Dual Status	XXX
+U_QMB_HH_VST_CNT	Total number of Medicare FFS month Home Health visit count during months of 'QMB' Dual Status	XXX
+U_QMB_IP_ACUTE_DAY	Total number of Medicare Acute Inpatient covered days during months of 'QMB' Dual Status*	XXX
+U_QMB_SNF_DAY	Total number of Medicare Skilled Nursing Facility covered days during months of 'QMB' Dual Status*	XXX
+U_QMB_PAC_OTH_DAY	Total number of Medicare Post-Acute Care covered days during months of 'QMB' Dual Status*	XXX
+U_QMB_HOSPICE_DAY	Total number of Medicare Hospice covered days during months of 'QMB' Dual Status*	XXX
+U_QMB_HOP_VST	Total number of Medicare Hospital Outpatient visits during months of 'QMB' Dual Status	XXX
+U_QMB_PHYS_VST	Total number of Medicare Physician claims during months of 'QMB' Dual Status	XXX
+U_QMB_DME_VST	Total number of Medicare DME claims during months of 'QMB' Dual Status	XXX
+U_QMB_DRUG_PTD	Total number of Medicare Prescriptions during months of 'QMB' Dual Status	XXX
+U_OTH_OER_CNT	Total number of Medicare FFS month Hospital Outpatient ER visit count during months of 'Other' Dual Status	XXX
+U_OTH_IER_CNT	Total number of Medicare FFS month Inpatient ER visit count during months of 'Other' Dual Status	XXX
+U_OTH_HH_VST_CNT	Total number of Medicare FFS month Home Health visit count during months of 'Other' Dual Status	XXX
+U_OTH_IP_ACUTE_DAY	Total number of Medicare Acute Inpatient covered days during months of 'Other' Dual Status*	XXX
+U_OTH_SNF_DAY	Total number of Medicare Skilled Nursing Facility covered days during months of 'Other' Dual Status*	XXX
+U_OTH_PAC_OTH_DAY	Total number of Medicare Post-Acute Care covered days during months of 'Other' Dual Status*	XXX
+U_OTH_HOSPICE_DAY	Total number of Medicare Hospice covered days during months of 'Other' Dual Status*	XXX
+U_OTH_HOP_VST	Total number of Medicare Hospital Outpatient visits during months of 'Other' Dual Status	XXX
+U_OTH_PHYS_VST	Total number of Medicare Physician claims during months of 'Other' Dual Status	XXX
+U_OTH_DME_VST	Total number of Medicare DME claims during months of 'Other' Dual Status	XXX
+U_OTH_DRUG_PTD	Total number of Medicare Prescriptions during months of 'Other' Dual Status	XXX
+Medicare and Medicaid Utilization	U_COMM_MH_CNT	Number of Community Mental Health Days	XXX
+U_RES_MH_CNT	Number of Residential Mental Health Days	XXX
+Medicaid Utilization	U_MEDICAID_ADMITS	Total number of Medicaid hospital inpatient admissions during year	XXX
+U_MEDICAID_READMITS	Total number of Medicaid hospital inpatient readmissions within 30 days (excluding transfers)	XXX
+Monthly Medicaid Utilization	U_MEDICAID_DRUG_RX_FFS_1 - 12	Total number of Medicaid Prescriptions	XXX
+U_MEDICAID_NURS_FAC_FFS1 - 12	Total number of Medicaid Nursing Facility claims	XXX
+U_MEDICAID_HH_VST_FFS_1 - 12	Total number of Medicaid FFS month Home Health visit count	XXX
+U_MEDICAID_PCS_VST_FFS_1 - 12	Total number of Medicaid Personal Care Services visits	XXX
+U_MEDICAID_IP_DAYS_FFS_1 - 12	Total number of Medicaid Inpatient Days determined from the start and end date from the MAX data (based on the end date of service)*	XXX
+U_MEDICAID_IER_VST_1 - 12	Total number of Medicaid Inpatient ER visits per month identified using Revenue Center codes (0450, 0451 ,0452 ,0456, 0458 ,0459) with Inpatient TOS (01)	XXX
+U_MEDICAID_OER_VST_1 - 12	Total number of Medicaid Hospital Outpatient ER visits per month identified using Revenue Center codes (0450, 0451 ,0452 ,0456, 0458, 0459) with outpatient TOS (11)	XXX
+Annual Medicaid Utilization - by MME_TYPE	U_MDO_MEDICAID_DRUG_RX	Total number of Medicaid Prescriptions during months of 'Medicaid Only with Disability' Status	XXX
+U_MDO_MEDICAID_NURS_FAC	Total number of Medicaid Nursing Facility claims during months of 'Medicaid Only with Disability' Status	XXX
+U_MDO_MEDICAID_HH_VST_CNT	Total number of Medicaid Home Health visits during months of 'Medicaid Only with Disability'  Status	XXX
+U_MDO_MEDICAID_PCS_VST	Total number of Medicaid Personal Care Services visits during months of 'Medicaid Only with Disability' Status	XXX
+U_MDO_MEDICAID_IP_DAYS	Total number of Medicaid Inpatient Days determined from the start and end date from the MAX data during months of 'Medicaid Only with Disability' Status*	XXX
+U_MDO_MEDICAID_IER_VST	Total number of Medicaid Inpatient ER visits during months of 'Medicaid Only with Disability'  Status	XXX
+U_MDO_MEDICAID_OER_VST	Total number of Medicaid Hospital Outpatient ER visits during months of 'Medicaid Only with Disability' Status	XXX
+U_FD_MEDICAID_DRUG_RX	Total number of Medicaid Prescriptions during months of 'Full' Dual Status	XXX
+U_FD_MEDICAID_NURS_FAC	Total number of Medicaid Nursing Facility claims during months of 'Full' Dual Status	XXX
+U_FD_MEDICAID_HH_VST_CNT	Total number of Medicaid Home Health visits during months of 'Full' Dual Status	XXX
+U_FD_MEDICAID_PCS_VST	Total number of Medicaid Personal Care Services visits during months of 'Full' Dual Status	XXX
+U_FD_MEDICAID_IP_DAYS	Total number of Medicaid Inpatient Days determined from the start and end date from the MAX data during months of 'Full' Dual Status*	XXX
+U_FD_MEDICAID_IER_VST	Total number of Medicaid Inpatient ER visits during months of 'Full' Dual Status	XXX
+U_FD_MEDICAID_OER_VST	Total number of Medicaid Hospital Outpatient ER visits during months of 'Full' Dual Status	XXX
+U_PD_MEDICAID_DRUG_RX	Total number of Medicaid Prescriptions during months of 'Partial' Dual Status	XXX
+U_PD_MEDICAID_NURS_FAC	Total number of Medicaid Nursing Facility claims during months of 'Partial' Dual Status	XXX
+U_PD_MEDICAID_HH_VST_CNT	Total number of Medicaid Home Health visits during months of 'Partial' Dual Status	XXX
+U_PD_MEDICAID_PCS_VST	Total number of Medicaid Personal Care Services visits during months of 'Partial' Dual Status	XXX
+U_PD_MEDICAID_IP_DAYS	Total number of Medicaid Inpatient Days determined from the start and end date from the MAX data during months of 'Partial' Dual Status*	XXX
+U_PD_MEDICAID_IER_VST	Total number of Medicaid Inpatient ER visits during months of 'Partial' Dual Status	XXX
+U_PD_MEDICAID_OER_VST	Total number of Medicaid Hospital Outpatient ER visits during months of 'Partial' Dual Status	XXX
+U_QMB_MEDICAID_DRUG_RX	Total number of Medicaid Prescriptions during months of 'QMB' Dual Status	XXX
+U_QMB_MEDICAID_NURS_FAC	Total number of Medicaid Nursing Facility claims during months of 'QMB' Dual Status	XXX
+U_QMB_MEDICAID_HH_VST_CNT	Total number of Medicaid Home Health visits during months of 'QMB' Dual Status	XXX
+U_QMB_MEDICAID_PCS_VST	Total number of Medicaid Personal Care Services visits during months of 'QMB' Dual Status	XXX
+U_QMB_MEDICAID_IP_DAYS	Total number of Medicaid Inpatient Days determined from the start and end date from the MAX data during months of 'QMB' Dual Status*	XXX
+U_QMB_MEDICAID_IER_VST	Total number of Medicaid Inpatient ER visits during months of 'QMB' Dual Status	XXX
+U_QMB_MEDICAID_OER_VST	Total number of Medicaid Hospital Outpatient ER visits during months of 'QMB' Dual Status	XXX
+U_OTH_MEDICAID_DRUG_RX	Total number of Medicaid Prescriptions during months of 'Other' Dual Status	XXX
+U_OTH_MEDICAID_NURS_FAC	Total number of Medicaid Nursing Facility claims during months of 'Other' Dual Status	XXX
+U_OTH_MEDICAID_HH_VST_CNT	Total number of Medicaid Home Health visits during months of 'Other' Dual Status	XXX
+U_OTH_MEDICAID_PCS_VST	Total number of Medicaid Personal Care Services visits during months of 'Other' Dual Status	XXX
+U_OTH_MEDICAID_IP_DAYS	Total number of Medicaid Inpatient Days determined from the start and end date from the MAX data during months of 'Other' Dual Status*	XXX
+U_OTH_MEDICAID_IER_VST	Total number of Medicaid Inpatient ER visits during months of 'Other' Dual Status	XXX
+U_OTH_MEDICAID_OER_VST	Total number of Medicaid Hospital Outpatient ER visits during months of 'Other' Dual Status	XXX
+*Because days apply to the stay and are not parceled out based on when the particular days occurred, the count of days may be greater than the number of calendar days in the month.
+
+Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) V2.0
+Conditions File Data Dictionary - a row of data for each person in the Beneficiary File
+Note: File is at the Bene_ID level (MSIS_ID/State level for Medicaid only eligible without a BENE_ID)
+Category	Variable Name	Description	Values
+Identifiers	BENE_ID	CCW beneficiary ID	up to 15 alphanumeric characters
+MSIS_ID	State reported MSIS ID used for individuals who do not have a valid BENE_ID	up to 20 alphanumeric characters
+STATE_CD	MDCD State for  used for Medicaid-only individuals who do not have a valid BENE_ID	2-letter postal abbreviation
+REFERENCE_YEAR	Reference Year
+SAMPLE_IND	1% sample	1 - person is included in 1% sample
+Null/missing
+CCW Conditions	HYPTHY_COMBINED	Acquired Hypothyroidism - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTHY_MEDICARE	Acquired Hypothyroidism - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTHY_MEDICAID	Acquired Hypothyroidism - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTHY_COMBINED_EVER	Acquired Hypothyroidism - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPTHY_MEDICARE_EVER	Acquired Hypothyroidism - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPTHY_MEDICAID_EVER	Acquired Hypothyroidism - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+AMI_COMBINED	Acute Myocardial Infarction  - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AMI_MEDICARE	Acute Myocardial Infarction - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AMI_MEDICAID	Acute Myocardial Infarction - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AMI_COMBINED_EVER	Acute Myocardial Infarction  - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+AMI_MEDICARE_EVER	Acute Myocardial Infarction - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+AMI_MEDICAID_EVER	Acute Myocardial Infarction - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALZ_COMBINED	Alzheimer's Disease - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZ_MEDICARE	Alzheimer's Disease - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZ_MEDICAID	Alzheimer's Disease - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZ_COMBINED_EVER	Alzheimer's Disease - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALZ_MEDICARE_EVER	Alzheimer's Disease - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALZ_MEDICAID_EVER	Alzheimer's Disease - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALZRDSD_COMBINED	Alzheimer's or Related Dementia - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZRDSD_MEDICARE	Alzheimer's or Related Dementia - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZRDSD_MEDICAID	Alzheimer's or Related Dementia - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZRDSD_COMBINED_EVER	Alzheimer's or Related Dementia - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALZRDSD_MEDICARE_EVER	Alzheimer's or Related Dementia - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALZRDSD_MEDICAID_EVER	Alzheimer's or Related Dementia - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ANEMIA_COMBINED	Anemia - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANEMIA_MEDICARE	Anemia - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANEMIA_MEDICAID	Anemia - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANEMIA_COMBINED_EVER	Anemia - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ANEMIA_MEDICARE_EVER	Anemia - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ANEMIA_MEDICAID_EVER	Anemia - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ASTHMA_COMBINED	Asthma - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ASTHMA_MEDICARE	Asthma - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ASTHMA_MEDICAID	Asthma - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ASTHMA_COMBINED_EVER	Asthma - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ASTHMA_MEDICARE_EVER	Asthma - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ASTHMA_MEDICAID_EVER	Asthma - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+AFIB_COMBINED	Atrial Fibrillation - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AFIB_MEDICARE	Atrial Fibrillation - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AFIB_MEDICAID	Atrial Fibrillation - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+A_FIB_COMBINED_EVER	Atrial Fibrillation - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+A_FIB_MEDICARE_EVER	Atrial Fibrillation - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+A_FIB_MEDICAID_EVER	Atrial Fibrillation - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPPLA_COMBINED	Benign Prostatic Hyperplasia - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPPLA_MEDICARE	Benign Prostatic Hyperplasia - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPPLA_MEDICAID	Benign Prostatic Hyperplasia - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPPLA_COMBINED_EVER	Benign Prostatic Hyperplasia - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPPLA_MEDICARE_EVER	Benign Prostatic Hyperplasia - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPPLA_MEDICAID_EVER	Benign Prostatic Hyperplasia - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CAT_COMBINED	Cataract - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CAT_MEDICARE	Cataract - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CAT_MEDICAID	Cataract - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CAT_COMBINED_EVER	Cataract - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CAT_MEDICARE_EVER	Cataract - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CAT_MEDICAID_EVER	Cataract - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CKD_COMBINED	Chronic Kidney Disease - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CKD_MEDICARE	Chronic Kidney Disease - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CKD_MEDICAID	Chronic Kidney Disease - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CKD_COMBINED_EVER	Chronic Kidney Disease - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CKD_MEDICARE_EVER	Chronic Kidney Disease - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CKD_MEDICAID_EVER	Chronic Kidney Disease - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+COPD_COMBINED	Chronic Obstructive Pulmonary Disease - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+COPD_MEDICARE	Chronic Obstructive Pulmonary Disease - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+COPD_MEDICAID	Chronic Obstructive Pulmonary Disease - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+COPD_COMBINED_EVER	Chronic Obstructive Pulmonary Disease - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+COPD_MEDICARE_EVER	Chronic Obstructive Pulmonary Disease - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+COPD_MEDICAID_EVER	Chronic Obstructive Pulmonary Disease - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CHF_COMBINED	Heart Failure - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CHF_MEDICARE	Heart Failure - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CHF_MEDICAID	Heart Failure - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CHF_COMBINED_EVER	Heart Failure - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CHF_MEDICARE_EVER	Heart Failure - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CHF_MEDICAID_EVER	Heart Failure - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DEPR_COMBINED	Depression - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPR_MEDICARE	Depression - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPR_MEDICAID	Depression - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPR_COMBINED_EVER	Depression - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DEPR_MEDICARE_EVER	Depression - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DEPR_MEDICAID_EVER	Depression - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DIAB_COMBINED	Diabetes - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DIAB_MEDICARE	Diabetes - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DIAB_MEDICAID	Diabetes - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DIAB_COMBINED_EVER	Diabetes - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DIAB_MEDICARE_EVER	Diabetes - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DIAB_MEDICAID_EVER	Diabetes - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+GLCM_COMBINED	Glaucoma - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+GLCM_MEDICARE	Glaucoma - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+GLCM_MEDICAID	Glaucoma - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+GLCM_COMBINED_EVER	Glaucoma - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+GLCM_MEDICARE_EVER	Glaucoma - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+GLCM_MEDICAID_EVER	Glaucoma - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HFRAC_COMBINED	Hip/Pelvic Fracture - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HFRAC_MEDICARE	Hip/Pelvic Fracture - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HFRAC_MEDICAID	Hip/Pelvic Fracture - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HFRAC_COMBINED_EVER	Hip/Pelvic Fracture - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HFRAC_MEDICARE_EVER	Hip/Pelvic Fracture - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HFRAC_MEDICAID_EVER	Hip/Pelvic Fracture - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPLIP_COMBINED	Hyperlipidemia - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPLIP_MEDICARE	Hyperlipidemia - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPLIP_MEDICAID	Hyperlipidemia - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPLIP_COMBINED_EVER	Hyperlipidemia - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPLIP_MEDICARE_EVER	Hyperlipidemia - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPLIP_MEDICAID_EVER	Hyperlipidemia - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPTEN_COMBINED	Hypertension - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTEN_MEDICARE	Hypertension - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTEN_MEDICAID	Hypertension - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTEN_COMBINED_EVER	Hypertension - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPTEN_MEDICARE_EVER	Hypertension - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HYPTEN_MEDICAID_EVER	Hypertension - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+IHD_COMBINED	Ischemic Heart Disease - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+IHD_MEDICARE	Ischemic Heart Disease - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+IHD_MEDICAID	Ischemic Heart Disease - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+IHD_COMBINED_EVER	Ischemic Heart Disease - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+IHD_MEDICARE_EVER	Ischemic Heart Disease - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+IHD_MEDICAID_EVER	Ischemic Heart Disease - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OST_COMBINED	Osteoporosis - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OST_MEDICARE	Osteoporosis - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OST_MEDICAID	Osteoporosis - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OST_COMBINED_EVER	Osteoporosis - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OST_MEDICARE_EVER	Osteoporosis - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OST_MEDICAID_EVER	Osteoporosis - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+RAOA_COMBINED	Rheumatoid/Osteoarthritis - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+RAOA_MEDICARE	Rheumatoid/Osteoarthritis - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+RAOA_MEDICAID	Rheumatoid/Osteoarthritis - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+RAOA_COMBINED_EVER	Rheumatoid/Osteoarthritis - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+RAOA_MEDICARE_EVER	Rheumatoid/Osteoarthritis - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+RAOA_MEDICAID_EVER	Rheumatoid/Osteoarthritis - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+STRK_COMBINED	Stroke - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+STRK_MEDICARE	Stroke - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+STRK_MEDICAID	Stroke - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+STRK_COMBINED_EVER	Stroke - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+STRK_MEDICARE_EVER	Stroke - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+STRK_MEDICAID_EVER	Stroke - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BRC_COMBINED	Breast Cancer - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRC_MEDICARE	Breast Cancer - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRC_MEDICAID	Breast Cancer - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRC_COMBINED_EVER	Breast Cancer - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BRC_MEDICARE_EVER	Breast Cancer - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BRC_MEDICAID_EVER	Breast Cancer - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CRC_COMBINED	Colorectal Cancer - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CRC_MEDICARE	Colorectal Cancer - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CRC_MEDICAID	Colorectal Cancer - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CRC_COMBINED_EVER	Colorectal Cancer - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CRC_MEDICARE_EVER	Colorectal Cancer - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CRC_MEDICAID_EVER	Colorectal Cancer - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LNGC_COMBINED	Lung Cancer - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LNGC_MEDICARE	Lung Cancer - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LNGC_MEDICAID	Lung Cancer - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LNGC_COMBINED_EVER	Lung Cancer - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LNGC_MEDICARE_EVER	Lung Cancer - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LNGC_MEDICAID_EVER	Lung Cancer - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PRC_COMBINED	Prostate Cancer - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PRC_MEDICARE	Prostate Cancer - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PRC_MEDICAID	Prostate Cancer - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PRC_COMBINED_EVER	Prostate Cancer - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PRC_MEDICARE_EVER	Prostate Cancer - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PRC_MEDICAID_EVER	Prostate Cancer - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ENDC_COMBINED	Endometrial Cancer - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ENDC_MEDICARE	Endometrial Cancer - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ENDC_MEDICAID	Endometrial Cancer - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ENDC_COMBINED_EVER	Endometrial Cancer - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ENDC_MEDICARE_EVER	Endometrial Cancer - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ENDC_MEDICAID_EVER	Endometrial Cancer - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+Mental Health, Tobacco-related Conditions	ACP_COMBINED	ADHD and Other Conduct Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ACP_MEDICAID	ADHD and Other Conduct Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ACP_Medicare	ADHD and Other Conduct Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ACP_COMBINED_EVER	ADHD and Other Conduct Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ACP_MEDICAID_EVER	ADHD and Other Conduct Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ACP_MEDICARE_EVER	ADHD and Other Conduct Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ANXI_COMBINED	Anxiety Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANXI_MEDICAID	Anxiety Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANXI_MEDICARE	Anxiety Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANXI_COMBINED_EVER	Anxiety Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ANXI_MEDICAID_EVER	Anxiety Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ANXI_MEDICARE_EVER	Anxiety Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BIPL_COMBINED	Bipolar Disorder - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BIPL_MEDICAID	Bipolar Disorder - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BIPL_MEDICARE	Bipolar Disorder - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BIPL_COMBINED_EVER	Bipolar Disorder - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BIPL_MEDICAID_EVER	Bipolar Disorder - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BIPL_MEDICARE_EVER	Bipolar Disorder - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DEPSN_COMBINED	Depression - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPSN_MEDICAID	Depression - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPSN_MEDICARE	Depression - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPSN_COMBINED_EVER	Depression - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DEPSN_MEDICAID_EVER	Depression - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DEPSN_MEDICARE_EVER	Depression - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PSDS_COMBINED	Personality Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PSDS_MEDICAID	Personality Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PSDS_MEDICARE	Personality Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PSDS_COMBINED_EVER	Personality Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PSDS_MEDICAID_EVER	Personality Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PSDS_MEDICARE_EVER	Personality Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PTRA_COMBINED	Post-traumatic Stress Disorder - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PTRA_MEDICAID	Post-traumatic Stress Disorder - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PTRA_MEDICARE	Post-traumatic Stress Disorder - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PTRA_COMBINED_EVER	Post-traumatic Stress Disorder - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PTRA_MEDICAID_EVER	Post-traumatic Stress Disorder - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PTRA_MEDICARE_EVER	Post-traumatic Stress Disorder - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCHI_COMBINED	Schizophrenia - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHI_MEDICAID	Schizophrenia - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHI_MEDICARE	Schizophrenia - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHI_COMBINED_EVER	Schizophrenia - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCHI_MEDICAID_EVER	Schizophrenia - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCHI_MEDICARE_EVER	Schizophrenia - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCHIOT_COMBINED	Schizophrenia and Other Psychotic Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHIOT_MEDICAID	Schizophrenia and Other Psychotic Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHIOT_MEDICARE	Schizophrenia and Other Psychotic Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHIOT_COMBINED_EVER	Schizophrenia and Other Psychotic Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCHIOT_MEDICAID_EVER	Schizophrenia and Other Psychotic Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCHIOT_MEDICARE_EVER	Schizophrenia and Other Psychotic Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+TOBA_COMBINED	Tobacco Use Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+TOBA_MEDICAID	Tobacco Use Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+TOBA_MEDICARE	Tobacco Use Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+TOBA_COMBINED_EVER	Tobacco Use Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+TOBA_MEDICAID_EVER	Tobacco Use Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+TOBA_MEDICARE_EVER	Tobacco Use Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+Physical and Mental Disability Conditions	AUTISM_COMBINED	Autism Sectrum Disorder - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AUTISM_MEDICAID	Autism Sectrum Disorder - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AUTISM_MEDICARE	Autism Sectrum Disorder - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AUTISM_COMBINED_EVER	Autism Sectrum Disorder - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+AUTISM_MEDICAID_EVER	Autism Sectrum Disorder - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+AUTISM_MEDICARE_EVER	Autism Sectrum Disorder - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BRAINJ_COMBINED	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRAINJ_MEDICAID	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRAINJ_MEDICARE	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRAINJ_COMBINED_EVER	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BRAINJ_MEDICAID_EVER	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+BRAINJ_MEDICARE_EVER	Traumatic Brain Injury and Nonpsychotic Mental Disorders due to Brain Damage - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CERPAL_COMBINED	Cerebral Palsy - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CERPAL_MEDICAID	Cerebral Palsy - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CERPAL_MEDICARE	Cerebral Palsy - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CERPAL_COMBINED_EVER	Cerebral Palsy - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CERPAL_MEDICAID_EVER	Cerebral Palsy - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CERPAL_MEDICARE_EVER	Cerebral Palsy - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CYSFIB_COMBINED	Cystic Fibrosis and Other Metabolic Developmental Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CYSFIB_MEDICAID	Cystic Fibrosis and Other Metabolic Developmental Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CYSFIB_MEDICARE	Cystic Fibrosis and Other Metabolic Developmental Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CYSFIB_COMBINED_EVER	Cystic Fibrosis and Other Metabolic Developmental Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CYSFIB_MEDICAID_EVER	Cystic Fibrosis and Other Metabolic Developmental Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+CYSFIB_MEDICARE_EVER	Cystic Fibrosis and Other Metabolic Developmental Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+EPILEP_COMBINED	Epilepsy - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+EPILEP_MEDICAID	Epilepsy - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+EPILEP_MEDICARE	Epilepsy - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+EPILEP_COMBINED_EVER	Epilepsy - Combined Medicare & Medicaid Claims, Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+EPILEP_MEDICAID_EVER	Epilepsy - Medicaid Only Claims, Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+EPILEP_MEDICARE_EVER	Epilepsy - Medicare Only Claims, Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEARIM_COMBINED	Deafness and Hearing Impairment - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEARIM_MEDICAID	Deafness and Hearing Impairment - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEARIM_MEDICARE	Deafness and Hearing Impairment - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEARIM_COMBINED_EVER	Deafness and Hearing Impairment - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEARIM_MEDICAID_EVER	Deafness and Hearing Impairment - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEARIM_MEDICARE_EVER	Deafness and Hearing Impairment - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+INTDIS_COMBINED	Intellectual Disabilities and Related Conditions - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+INTDIS_MEDICAID	Intellectual Disabilities and Related Conditions - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+INTDIS_MEDICARE	Intellectual Disabilities and Related Conditions - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+INTDIS_COMBINED_EVER	Intellectual Disabilities and Related Conditions - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+INTDIS_MEDICAID_EVER	Intellectual Disabilities and Related Conditions - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+INTDIS_MEDICARE_EVER	Intellectual Disabilities and Related Conditions - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LEADIS_COMBINED	Learning Disabilities and other Developmental Delays - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEADIS_MEDICAID	Learning Disabilities and other Developmental Delays - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEADIS_MEDICARE	Learning Disabilities and other Developmental Delays - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEADIS_COMBINED_EVER	Learning Disabilities and other Developmental Delays - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LEADIS_MEDICAID_EVER	Learning Disabilities and other Developmental Delays - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LEADIS_MEDICARE_EVER	Learning Disabilities and other Developmental Delays - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MOBIMP_COMBINED	Mobility Impairments - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MOBIMP_MEDICAID	Mobility Impairments - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MOBIMP_MEDICARE	Mobility Impairments - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MOBIMP_COMBINED_EVER	Mobility Impairments - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MOBIMP_MEDICAID_EVER	Mobility Impairments - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MOBIMP_MEDICARE_EVER	Mobility Impairments - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MULSCL_COMBINED	Multiple Sclerosis and Transverse Myelitis - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MULSCL_MEDICAID	Multiple Sclerosis and Transverse Myelitis - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MULSCL_MEDICARE	Multiple Sclerosis and Transverse Myelitis - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MULSCL_COMBINED_EVER	Multiple Sclerosis and Transverse Myelitis - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MULSCL_MEDICAID_EVER	Multiple Sclerosis and Transverse Myelitis - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MULSCL_MEDICAR_EVER	Multiple Sclerosis and Transverse Myelitis - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MUSDYS_COMBINED	Muscular Dystrophy - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MUSDYS_MEDICAID	Muscular Dystrophy - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MUSDYS_MEDICARE	Muscular Dystrophy - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MUSDYS_COMBINED_EVER	Muscular Dystrophy - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MUSDYS_MEDICAID_EVER	Muscular Dystrophy - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MUSDYS_MEDICARE_EVER	Muscular Dystrophy - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SPIBIF_COMBINED	Spina Bifida and Other Congenital Anomalies of the Nervous System - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIBIF_MEDICAID	Spina Bifida and Other Congenital Anomalies of the Nervous System - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIBIF_MEDICARE	Spina Bifida and Other Congenital Anomalies of the Nervous System - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIBIF_COMBINED_EVER	Spina Bifida and Other Congenital Anomalies of the Nervous System - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SPIBIF_MEDICAID_EVER	Spina Bifida and Other Congenital Anomalies of the Nervous System - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SPIBIF_MEDICARE_EVER	Spina Bifida and Other Congenital Anomalies of the Nervous System - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SPIINJ_COMBINED	Spinal Cord Injury - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIINJ_MEDICAID	Spinal Cord Injury - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIINJ_MEDICARE	Spinal Cord Injury - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIINJ_COMBINED_EVER	Spinal Cord Injury - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SPIINJ_MEDICAID_EVER	Spinal Cord Injury - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SPIINJ_MEDICARE_EVER	Spinal Cord Injury - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+VISUAL_COMBINED	Blindness and Visual Impairment - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+VISUAL_MEDICAID	Blindness and Visual Impairment - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+VISUAL_MEDICARE	Blindness and Visual Impairment - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+VISUAL_COMBINED_EVER	Blindness and Visual Impairment - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+VISUAL_MEDICAID_EVER	Blindness and Visual Impairment - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+VISUAL_MEDICARE_EVER	Blindness and Visual Impairment - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+Other Clinical Conditions	ALCO_COMBINED	Alcohol Use Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALCO_MEDICARE	Alcohol Use Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALCO_MEDICAID	Alcohol Use Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALCO_COMBINED_EVER	Alcohol Use Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALCO_MEDICARE_EVER	Alcohol Use Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ALCO_MEDICAID_EVER	Alcohol Use Disorders - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DRUG_COMBINED	Drug Use Disorders - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DRUG_MEDICARE	Drug Use Disorders - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DRUG_MEDICAID	Drug Use Disorders - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DRUG_COMBINED_EVER	Drug Use Disorders - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DRUG_MEDICARE_EVER	Drug Use Disorders - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+DRUG_MEDICAID_EVER	Drug Use Disorders -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+FIBRO_COMBINED	Fibromyalgia, Chronic Pain and Chronic Fatigue - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+FIBRO_MEDICAID	Fibromyalgia, Chronic Pain and Chronic Fatigue - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+FIBRO_MEDICARE	Fibromyalgia, Chronic Pain and Chronic Fatigue - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+FIBRO_COMBINED_EVER	Fibromyalgia, Chronic Pain and Chronic Fatigue - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+FIBRO_MEDICAID_EVER	Fibromyalgia, Chronic Pain and Chronic Fatigue - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+FIBRO_MEDICARE_EVER	Fibromyalgia, Chronic Pain and Chronic Fatigue -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPVIRAL_COMBINED	Hepatitis (Any Viral) - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPVIRAL_MEDICAID	Hepatitis (Any Viral) - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPVIRAL_MEDICARE	Hepatitis (Any Viral) - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPVIRAL_MEDICARE_EVER	Hepatitis (Any Viral) - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPVIRAL_MEDICAID_EVER	Hepatitis (Any Viral) - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPVIRAL_COMBINED_EVER	Hepatitis (Any Viral) - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPA_MEDICAID_EVER	Hepatitis A - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPA_COMBINED_EVER	Hepatitis A - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPA_COMBINED	Hepatitis A - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPA_MEDICAID	Hepatitis A - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPA_MEDICARE	Hepatitis A - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPA_MEDICARE_EVER	Hepatitis A - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPB_ACT_COMBINED	Hepatitis B - acute - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPB_ACT_MEDICARE_EVER	Hepatitis B - acute  - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPB_ACT_MEDICAID_EVER	Hepatitis B - acute  - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPB_ACT_COMBINED_EVER	Hepatitis B - acute - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPB_ACT_MEDICAID	Hepatitis B - acute - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPB_ACT_MEDICARE	Hepatitis B - acute - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPB_CHR_COMBINED	Hepatitis B - chronic - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPB_CHR_MEDICAID	Hepatitis B - chronic - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPB_CHR_MEDICARE	Hepatitis B - chronic - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPB_CHR_MEDICARE_EVER	Hepatitis B - chronic - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPB_CHR_MEDICAID_EVER	Hepatitis B - chronic  - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPB_CHR_COMBINED_EVER	Hepatitis B - chronic - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_ACT_COMBINED	Hepatitis C - acute - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_ACT_MEDICAID	Hepatitis C - acute - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_ACT_MEDICARE	Hepatitis C - acute - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_ACT_MEDICARE_EVER	Hepatitis C - acute - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_ACT_MEDICAID_EVER	Hepatitis C - acute  - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_ACT_COMBINED_EVER	Hepatitis C - acute - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_CHR_COMBINED	Hepatitis C - chronic - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_CHR_MEDICAID	Hepatitis C - chronic - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_CHR_MEDICARE	Hepatitis C - chronic - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_CHR_MEDICARE_EVER	Hepatitis C - chronic - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_CHR_MEDICAID_EVER	Hepatitis C - chronic  - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_CHR_COMBINED_EVER	Hepatitis C - chronic - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_UNS_COMBINED	Hepatitis C - unspecified - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_UNS_MEDICAID	Hepatitis C - unspecified - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_UNS_MEDICARE	Hepatitis C - unspecified - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPC_UNS_MEDICARE_EVER	Hepatitis C - unspecified - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_UNS_MEDICAID_EVER	Hepatitis C - unspecified  - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPC_UNS_COMBINED_EVER	Hepatitis C - unspecified - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPD_COMBINED	Hepatitis D - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPD_MEDICAID	Hepatitis D - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPD_MEDICARE	Hepatitis D - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPD_MEDICARE_EVER	Hepatitis D - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPD_MEDICAID_EVER	Hepatitis D - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPD_COMBINED_EVER	Hepatitis D - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPE_COMBINED	Hepatitis E - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPE_MEDICAID	Hepatitis E - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPE_MEDICARE	Hepatitis E - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEPE_MEDICARE_EVER	Hepatitis E - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPE_MEDICAID_EVER	Hepatitis E - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HEPE_COMBINED_EVER	Hepatitis E - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HIVAIDS_1YR_COMBINED	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) First Ever Occurrence Date - Combined Medicare & Medicaid Claims	date - MM/DD/YYYY
+HIVAIDS_1YR_MEDICAID	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) First Ever Occurrence Date -  Medicaid Only Claims	date - MM/DD/YYYY
+HIVAIDS_1YR_MEDICARE	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) First Ever Occurrence Date - Medicare Only Claims	date - MM/DD/YYYY
+HIVAIDS_COMBINED	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HIVAIDS_MEDICAID	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HIVAIDS_MEDICARE	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) -   Medicare	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HIVAIDS_COMBINED_EVER	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HIVAIDS_MEDICAID_EVER	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HIVAIDS_MEDICARE_EVER	Human Immunodeficiency Virus and/or Acquired Immunodeficiency Syndrome (HIV/AIDS) -  Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+HIVARV_COMBINED	Antiretroviral Medication Number of Unique Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Combined Medicare & Medicaid Claims	0-9 or Missing
+HIVARV_MEDICAID	Antiretroviral Medication Number of Unique Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Medicaid Only Claims	0-9 or Missing
+HIVARV_MEDICARE	Antiretroviral Medication Number of Unique Prescription Fill Days {0, 1, 2, 3, 4, 5, 6, 7, 8, 9 = 9+} - Medicare Only Claims	0-9 or Missing
+HIVPGM	HIV/AIDS Program Participation (Waiver Program)	0 - No
+1 - Yes
+Null/missing
+HIVSSAPRIM	HIV/AIDS SSA Disability Qualifying Primary Diagnosis (identified using disability determination codes)	0   - No Disability determination/no HIV disabilitly 
+1  - Asymptomatic HIV Infection (0440) 
+2   - Symptomatic HIV Infection (0430)
+3 -  HIV Wasting Syndrome (2630)
+4  - HIV Encephalopathy (3480) 
+Null/missing (for Medicaid only enrollees)
+HIVSSASCNDRY	HIV/AIDS SSA Disability Qualifying Secondary Diagnosis (identified using disability determination codes)	0   - No Disability determination/no HIV disabilitly 
+1  - Asymptomatic HIV Infection (0440) 
+2   - Symptomatic HIV Infection (0430)
+3 -  HIV Wasting Syndrome (2630)
+4  - HIV Encephalopathy (3480) 
+Null/missing (for Medicaid only enrollees)
+HIVTSTNG_CAT1	HIV/AIDS Screening Tests {0, 1, 2, 3 = 3+} - Category 1 {86701, 87390, 87534, 87535, S3645}	0-3 or Missing
+HIVTSTNG_CAT2	HIV/AIDS Screening Tests {0, 1, 2, 3 = 3+} - Category 2 {86702, 87391}	0-3 or Missing
+HIVTSTNG_CAT3	HIV/AIDS Screening Tests {0, 1, 2, 3 = 3+} - Category 3 {86703, 87389}	0-3 or Missing
+HIVTSTNG_CAT4	HIV/AIDS Screening Tests {0, 1, 2, 3 = 3+} - Category 4 {86689, G0432, G0433, G0435}	0-3 or Missing
+LEUKLYMP_COMBINED	Leukemias and Lymphomas - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEUKLYMP_MEDICAID	Leukemias and Lymphomas - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEUKLYMP_MEDICARE	Leukemias and Lymphomas - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEUKLYMP_COMBINED_EVER	Leukemias and Lymphomas - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LEUKLYMP_MEDICAID_EVER	Leukemias and Lymphomas - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LEUKLYMP_MEDICARE_EVER	Leukemias and Lymphomas -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LIVER_COMBINED	Liver Disease, Cirrhosis, and Other Liver Conditions (Excluding Hepatitis) - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LIVER_MEDICAID	Liver Disease, Cirrhosis, and Other Liver Conditions (Excluding Hepatits) - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LIVER_MEDICARE	Liver Disease, Cirrhosis, and Other Liver Conditions (Excluding Hepatitis) - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LIVER_COMBINED_EVER	Liver Disease, Cirrhosis, and Other Liver Conditions (Excluding Hepatitis) - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LIVER_MEDICAID_EVER	Liver Disease, Cirrhosis, and Other Liver Conditions (Excluding Hepatitis) - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+LIVER_MEDICARE_EVER	Liver Disease, Cirrhosis, and Other Liver Conditions (Excluding Hepatitis) -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MIGRAINE_COMBINED	Migraine and other Chronic Headache - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MIGRAINE_MEDICAID	Migraine and other Chronic Headache - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MIGRAINE_MEDICARE	Migraine and other Chronic Headache - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MIGRAINE_COMBINED_EVER	Migraine and other Chronic Headache - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MIGRAINE_MEDICAID_EVER	Migraine and other Chronic Headache - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+MIGRAINE_MEDICARE_EVER	Migraine and other Chronic Headache -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OBESITY_COMBINED	Obesity - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OBESITY_MEDICAID	Obesity - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OBESITY_MEDICARE	Obesity - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OBESITY_COMBINED_EVER	Obesity - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OBESITY_MEDICAID_EVER	Obesity - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OBESITY_MEDICARE_EVER	Obesity -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OTHDEL_COMBINED	Other Developmental Delays - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OTHDEL_MEDICAID	Other Developmental Delays - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OTHDEL_MEDICARE	Other Developmental Delays - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OTHDEL_COMBINED_EVER	Other Developmental Delays - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OTHDEL_MEDICAID_EVER	Other Developmental Delays - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OTHDEL_MEDICARE_EVER	Other Developmental Delays - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+OUD_ANY_COMBINED	Overarching OUD Disorder (Any of the Three Sub-Indicators) - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_ANY_MEDICAID	Overarching OUD Disorder (Any of the Three Sub-Indicators) - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_ANY_MEDICARE	Overarching OUD Disorder (Any of the Three Sub-Indicators) - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_ANY_COMBINED_EVER	Overarching OUD Disorder (Any of the Three Sub-Indicators) First Ever Occurrence Date - Combined Medicare & Medicaid Claims	date - MM/DD/YYYY
+OUD_ANY_MEDICAID_EVER	Overarching OUD Disorder (Any of the Three Sub-Indicators) First Ever Occurrence Date - Medicaid Only Claims	date - MM/DD/YYYY
+OUD_ANY_MEDICARE_EVER	Overarching OUD Disorder (Any of the Three Sub-Indicators) First Ever Occurrence Date - Medicare Only Claims	date - MM/DD/YYYY
+OUD_DX_COMBINED	Diagnosis and Procedure Basis for OUD - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_DX_MEDICAID	Diagnosis and Procedure Basis for OUD - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_DX_MEDICARE	Diagnosis and Procedure Basis for OUD - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_DX_COMBINED_EVER	Diagnosis and Procedure Basis for OUD First Ever Occurrence Date - Combined Medicare & Medicaid Claims	date - MM/DD/YYYY
+OUD_DX_MEDICAID_EVER	Diagnosis and Procedure Basis for OUD First Ever Occurrence Date - Medicaid Only Claims	date - MM/DD/YYYY
+OUD_DX_MEDICARE_EVER	Diagnosis and Procedure Basis for OUD First Ever Occurrence Date - Medicare Only Claims	date - MM/DD/YYYY
+OUD_HOSP_COMBINED	Opioid-Related Hospitalization or ED - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_HOSP_MEDICAID	Opioid-Related Hospitalization or ED - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_HOSP_MEDICARE	Opioid-Related Hospitalization or ED - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_HOSP_COMBINED_EVER	Opioid-Related Hospitalization or ED First Ever Occurrence Date - Combined Medicare & Medicaid Claims	date - MM/DD/YYYY
+OUD_HOSP_MEDICAID_EVER	Opioid-Related Hospitalization or ED First Ever Occurrence Date - Medicaid Only Claims	date - MM/DD/YYYY
+OUD_HOSP_MEDICARE_EVER	Opioid-Related Hospitalization or ED First Ever Occurrence Date - Medicare Only Claims	date - MM/DD/YYYY
+OUD_MAT_COMBINED	Use of Medication-Assisted Treatment (MAT) - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_MAT_MEDICAID	Use of Medication-Assisted Treatment (MAT) - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_MAT_MEDICARE	Use of Medication-Assisted Treatment (MAT) - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OUD_MAT_COMBINED_EVER	Use of Medication-Assisted Treatment (MAT) First Ever Occurrence Date - Combined Medicare & Medicaid Claims	date - MM/DD/YYYY
+OUD_MAT_MEDICAID_EVER	Use of Medication-Assisted Treatment (MAT) First Ever Occurrence Date - Medicaid Only Claims	date - MM/DD/YYYY
+OUD_MAT_MEDICARE_EVER	Use of Medication-Assisted Treatment (MAT) First Ever Occurrence Date - Medicare Only Claims	date - MM/DD/YYYY
+PVD_COMBINED	Peripheral Vascular Disease - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PVD_MEDICAID	Peripheral Vascular Disease - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PVD_MEDICARE	Peripheral Vascular Disease - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PVD_COMBINED_EVER	Peripheral Vascular Disease - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PVD_MEDICAID_EVER	Peripheral Vascular Disease - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+PVD_MEDICARE_EVER	Peripheral Vascular Disease -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ULCERS_COMBINED	Pressure Ulcers and Chronic Ulcers - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ULCERS_MEDICAID	Pressure Ulcers and Chronic Ulcers - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ULCERS_MEDICARE	Pressure Ulcers and Chronic Ulcers - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ULCERS_COMBINED_EVER	Pressure Ulcers and Chronic Ulcers - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ULCERS_MEDICAID_EVER	Pressure Ulcers and Chronic Ulcers - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+ULCERS_MEDICARE_EVER	Pressure Ulcers and Chronic Ulcers -Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCD_COMBINED	Sickle Cell Disease - Combined Medicare & Medicaid Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCD_COMBINED_EVER	Sickle Cell Disease - Combined Medicare & Medicaid Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCD_MEDICAID	Sickle Cell Disease - Medicaid Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCD_MEDICAID_EVER	Sickle Cell Disease - Medicaid Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+SCD_MEDICARE	Sickle Cell Disease - Medicare Only Claims	0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCD_MEDICARE_EVER	Sickle Cell Disease - Medicare Only Claims, First Ever Occurrence Date	date - MM/DD/YYYY
+
+Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) V2.0
+Medicaid Service File Data Dictionary
+Note: File is at the Bene_ID/SRVC_3 level (MSIS_ID/State/SRVC_3 level for Medicaid only eligible without a BENE_ID)
+Category	Variable Name	Description	Values
+Identifiers	BENE_ID	CCW beneficiary ID	up to 15 alphanumeric characters
+MSIS_ID	State reported MSIS ID used for individuals who do not have a valid BENE_ID	up to 20 alphanumeric characters
+STATE_CD	MDCD State for  used for Medicaid-only individuals who do not have a valid BENE_ID	2-letter postal abbreviation
+STATE_CD_1-STATE_CD_12	Monthly State Code:  January, etc; (state of residence)	2-letter postal abbreviation
+SAMPLE_IND	1% sample	1 - person is included in 1% sample
+Null/missing
+Service Type	SRVC_1	Level 1 service category.  Waiver Vs. Non-waiver or Managed Care	MDCD_WAIVER
+MDCD_NONWAIVER
+MDCD_MC
+SRVC_2	Level 2 service category	MDCD_FFS_ACUTE
+MDCD_FFS_LTI
+MDCD_FFS_LTN
+MDCD_FFS_DRUG
+MDCD_MC
+SRVC_3	Level 3 service category. MAX Type of Service	MDCD_FFS_ACUTE_IP
+MDCD_FFS_ACUTE_HOP
+MDCD_FFS_ACUTE_PHYS
+MDCD_FFS_ACUTE_OTH_OTHPRC
+MDCD_FFS_ACUTE_OTH_CLINIC
+MDCD_FFS_ACUTE_OTH_LABX
+MDCD_FFS_ACUTE_OTH_MISC
+MDCD_FFS_ACUTE_OTH_STERL
+MDCD_FFS_ACUTE_OTH_ABORT
+MDCD_FFS_ACUTE_OTH_THERAPY
+MDCD_FFS_ACUTE_OTH_NMW
+MDCD_FFS_ACUTE_OTH_NP
+MDCD_FFS_ACUTE_OTH_RELIG
+MDCD_FFS_ACUTE_OTH_PSYC
+MDCD_FFS_ACUTE_OTH_DENTAL
+MDCD_FFS_ACUTE_OTH_UNKW
+MDCD_FFS_LTI_IMD
+MDCD_FFS_LTI_IPF
+MDCD_FFS_LTI_ICF
+MDCD_FFS_LTI_NFS
+MDCD_FFS_LTN_REHAB_W
+MDCD_FFS_LTN_REHAB_NW
+MDCD_FFS_LTN_HH_W
+MDCD_FFS_LTN_HH_NW
+MDCD_FFS_LTN_HOS_W
+MDCD_FFS_LTN_HOS_NW
+MDCD_FFS_LTN_DME_W
+MDCD_FFS_LTN_DME_NW
+MDCD_FFS_LTN_PCS_W
+MDCD_FFS_LTN_PCS_NW
+MDCD_FFS_LTN_RC_W
+MDCD_FFS_LTN_RC_NW
+MDCD_FFS_LTN_ADC_W
+MDCD_FFS_LTN_ADC_NW
+MDCD_FFS_LTN_TS_W
+MDCD_FFS_LTN_TS_NW
+MDCD_FFS_LTN_TCM_W
+MDCD_FFS_LTN_TCM_NW
+MDCD_FFS_LTN_PDN_W
+MDCD_FFS_LTN_PDN_NW
+MDCD_MC_HMO
+MDCD_MC_PHP
+MDCD_MC_PCCM
+(also the MDCD_DRUG categories)
+Beneficiary & User Counts	BENE_CNT	Unduplicated  beneficiary count	1 - single row of data for the person
+1/x - person used x distinct level 3 services in the file
+USER1_CNT	Unduplicated SRVC_1 user count	0 - person did not use any service in the file
+1/x - 1.0 - person used x distinct level 1 services in the file
+USER2_CNT	Unduplicated  SRVC_2 user count	0 - person did not use any service in the file
+1/x - 1.0 - person used x distinct level 2 services in the file
+USER3_CNT	Unduplicated SRVC_3 user count	0 - person did not use any service in the file
+1.0 - person used the particular level 3 Medicaid service
+Medicaid Cost	FR_1 - 12	Monthly Federal rates	XXX.XX
+FED_PMT_1 - 12	Monthly  Federal share of all Medicaid payments (based on ending date of service)	Value displayed in dollars and cents
+ST_PMT_1 - 12	Monthly State share of all Medicaid payments (based on ending date of service)	Value displayed in dollars and cents
+MEDICAID_PMT_1 - 12	Monthly Medicaid payments (based on ending date of service)	Value displayed in dollars and cents
+MEDICAID_PMT	Annual Medicaid Payment	Value displayed in dollars and cents
+MEDICAID_COIN_PMT	Annual Medicare Coinsurance paid by Medicaid (from MAX)	Value displayed in dollars and cents
+MEDICAID_DED_PMT	Annual Medicare Deductible paid by Medicaid (from MAX)	Value displayed in dollars and cents
+MEDICAID_COIN_PMT_1 - 12	Monthly amount paid for Medicare Coinsurance by Medicaid from MAX (based on ending date of service)	Value displayed in dollars and cents
+MEDICAID_DED_PMT_1 - 12	Monthly amount paid for Medicare Deductible by Medicaid from MAX (based on ending date of service)	Value displayed in dollars and cents
+OTH_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+OTH_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+OTH_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+OTH_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+OTH_MEDICAID_BENE_PMT	Medicaid Coinsurance and Deductible FFS and Managed Care Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+OTH_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance and Deductible FFS Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+FD_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Full' Dual Status	Value displayed in dollars and cents
+FD_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+FD_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+FD_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+FD_MEDICAID_BENE_PMT	Medicaid Coinsurance and Deductible FFS and Managed Care Payments for Months with 'Full' Dual Status	Value displayed in dollars and cents
+FD_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance and Deductible FFS Payments for Months with  'Full'  Dual Status	Value displayed in dollars and cents
+QMB_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'QMB' Dual Status	Value displayed in dollars and cents
+QMB_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'QMB'  Dual Status	Value displayed in dollars and cents
+QMB_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with  'QMB'  Dual Status	Value displayed in dollars and cents
+QMB_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with  'QMB'  Dual Status	Value displayed in dollars and cents
+QMB_MEDICAID_BENE_PMT	Medicaid Coinsurance and Deductible FFS and Managed Care Payments for Months with 'QMB' Dual Status	Value displayed in dollars and cents
+QMB_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance and Deductible FFS Payments for Months with  'QMB' Dual Status	Value displayed in dollars and cents
+PD_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+PD_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+PD_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with  'Partial'  Dual Status	Value displayed in dollars and cents
+PD_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with   'Partial' Dual Status	Value displayed in dollars and cents
+PD_MEDICAID_BENE_PMT	Medicaid Coinsurance and Deductible FFS and Managed Care Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+PD_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance and Deductible FFS Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+MDO_MEDICAID_PMT_FED	Federal Share of Medicaid Payments for Months with 'Medicaid Only with Disability'  Status	Value displayed in dollars and cents
+MDO_MEDICAID_PMT_ST	State Share of Medicaid Payments for Months with 'Medicaid Only with Disability' Status	Value displayed in dollars and cents
+MDO_MEDICAID_PMT	Medicaid FFS and Managed Care Payments for Months with  'Medicaid Only with Disability' Status	Value displayed in dollars and cents
+MDO_MEDICAID_FFS_PMT	Medicaid FFS Payments for Months with 'Medicaid Only with Disability'  Status	Value displayed in dollars and cents
+MDO_MEDICAID_BENE_PMT	Medicaid Coinsurance and Deductible FFS and Managed Care Payments for Months with 'Medicaid Only with Disability' Status	Value displayed in dollars and cents
+MDO_MEDICAID_BENE_FFS_PMT	Medicaid Coinsurance and Deductible FFS Payments for Months with 'Medicaid Only with Disability' Status	Value displayed in dollars and cents
+Medicaid Utilization	MEDICAID_CLM_CNT_1 - MEDICAID_CLM_CNT_12	Monthly Medicaid  FFS and encounter claim count	XXX
+MEDICAID_DAY_CNT_1 - MEDICAID_DAY_CNT_12	Monthly Medicaid days - determined using the start and end date of a claim	XXX
+MEDICAID_COV_DAY_CNT_1 - MEDICAID_COV_DAY_CNT_12	Monthly Medicaid covered day count*	XXX
+OTH_MEDICAID_CLM_FFS	Medicaid FFS claims for months with 'Other' Dual Status	XXX
+FD_MEDICAID_CLM_FFS	Medicaid FFS claims for months with 'Full' Dual Status	XXX
+QMB_MEDICAID_CLM_FFS	Medicaid FFS claims for months with 'QMB' Dual Status	XXX
+PD_MEDICAID_CLM_FFS	Medicaid FFS claims for months with 'Partial' Dual Status	XXX
+MDO_MEDICAID_CLM_FFS	Medicaid FFS claims for months with 'Medicaid Only with a Disability' Status	XXX
+OTH_MEDICAID_COV_DAYS	Medicaid covered days for months with 'Other' Dual Status*	XXX
+FD_MEDICAID_COV_DAYS	Medicaid covered days for months with 'Full' Dual Status*	XXX
+QMB_MEDICAID_COV_DAYS	Medicaid covered days for months with 'QMB' Dual Status*	XXX
+PD_MEDICAID_COV_DAYS	Medicaid covered days for months with 'Partial' Dual Status*	XXX
+MDO_MEDICAID_COV_DAYS	Medicaid covered days for months with 'Medicaid Only with a Disability' Status*	XXX
+OTH_MEDICAID_DAYS	Medicaid days for months with 'Other' Dual Status (day count determined from start and end date of the claim)*	XXX
+FD_MEDICAID_DAYS	Medicaid days for months with 'Full' Dual Status  (day count determined from start and end date of the claim)*	XXX
+QMB_MEDICAID_DAYS	Medicaid days for months with 'QMB' Dual Status  (day count determined from start and end date of the claim)*	XXX
+PD_MEDICAID_DAYS	Medicaid days for months with 'Partial' Dual Status  (day count determined from start and end date of the claim)*	XXX
+MDO_MEDICAID_DAYS	Medicaid days for months with 'Medicaid Only with a Disability' Status  (day count determined from start and end date of the claim)*	XXX
+*Because days apply to the stay, and are not parceled out based on when the particular days occurred, the count of days may be greater than the number of calendar days in the month.
+
+Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) V2.0
+Medicare Service File Data Dictionary
+Note: File is at the Bene_ID/SRVC_2 level
+Category	Variable Name	Description	Values
+Identifiers	BENE_ID	CCW beneficiary ID	up to 15 alphanumeric characters
+SAMPLE_IND	1% sample	1 - person is included in 1% sample
+Null/missing
+Service Type	SRVC_1	Level 1 service category	MDCR_PTA
+MDCR_HOP
+MDCR_PTB
+MDCR_MC
+MDCR_PTD
+SRVC_2	Level 2 service category	MDCR_IP
+MDCR_IP_OTH
+MDCR_PAC_OTH
+MDCR_SNF
+MDCR_HOSPICE
+MDCR_HH
+MDCR_OPD
+MDCR_ESRD
+MDCR_OSNF 
+MDCR_FQHC
+MDCR_RHC
+MDCR_THRPY
+MDCR_CMHC
+MDCR_OTH40
+MDCR_ASC
+MDCR_PTB_DRUG
+MDCR_EM
+MDCR_PROC
+MDCR_IMG
+MDCR_LABTST
+MDCR_OTH
+MDCR_DME
+MDCR_PTA
+MDCR_PTB
+(also the MDCR_PTD categories)
+Beneficiary & User Counts	BENE_CNT	Unduplicated beneficiary count	1 - single row of data for the person
+1/x - person used x distinct level 2 services in the file
+USER1_CNT	Unduplicated srvc_1 user count	0 - person did not use any service in the file
+1/x - 1.0 - person used x distinct level 1 services in the file
+USER2_CNT	Unduplicated srvc_2 user count	0 - person did not use any service in the file
+1.0 - person used the particular level 2 Medicare service
+Medicare Cost	MEDICARE_PMT_01 - 12	Monthly  Medicare payments (For Part D, it's the cvrd_d_plan_pd_amt ; also includes Medicare Advantage premiums), (based on claim through date)	Value displayed in dollars and cents
+MEDICARE_BENE_PMT_01 - 12	Monthly Medicare coinsurance and deductible  payments (based on claim through date)	Value displayed in dollars and cents
+MEDICARE_COIN_PMT_01-12	Monthly Medicare coinsurance payments	Value displayed in dollars and cents
+MEDICARE_DED_PMT_01-12	Monthly Medicare deductible payments payments	Value displayed in dollars and cents
+MEDICARE_PMT	Annual Medicare payments (For Part D, it's the sum of  monthly cvrd_d_plan_pd_amt )	Value displayed in dollars and cents
+MEDICARE_BENE_PMT	Annual Medicare coinsurance and deductible payments	Value displayed in dollars and cents
+MEDICAID_BENE_PMT	Annual Medicare coinsurance and deductible payments covered by Medicaid for Medicare-Medicaid Enrollees	Value displayed in dollars and cents
+OTH_MEDICARE_PMT	Medicare FFS payments for months with 'Other' Dual Status	Value displayed in dollars and cents
+OTH_MEDICARE_BENE_PMT	Medicare Coinsurance and Deductible FFS Payments for Months with 'Other' Dual Status	Value displayed in dollars and cents
+FD_MEDICARE_PMT	Medicare FFS payments for months with 'Full' Dual Status	Value displayed in dollars and cents
+FD_MEDICARE_BENE_PMT	Medicare Coinsurance and Deductible FFS Payments for Months with 'Full' Dual Status	Value displayed in dollars and cents
+QMB_MEDICARE_PMT	Medicare FFS payments for months with 'QMB' Dual Status	Value displayed in dollars and cents
+QMB_MEDICARE_BENE_PMT	Medicare Coinsurance and Deductible FFS Payments for Months with 'QMB' Dual Status	Value displayed in dollars and cents
+PD_MEDICARE_PMT	Medicare FFS payments for months with 'Partial' Dual Status	Value displayed in dollars and cents
+PD_MEDICARE_BENE_PMT	Medicare Coinsurance and Deductible FFS Payments for Months with 'Partial' Dual Status	Value displayed in dollars and cents
+MRO_MEDICARE_PMT	Medicare FFS payments for months with 'Medicare Only' Status	Value displayed in dollars and cents
+MRO_MEDICARE_BENE_PMT	Medicare Coinsurance and Deductible FFS Payments for Months with 'Medicare Only' Status	Value displayed in dollars and cents
+MEDICAID_MATCH_CNT_01 - 12	Monthly Medicaid beneficiary payment equaled the Medicare coinsurance and deductible for a service that occurred on the same day.	0 = Overlapping payments, but not a match
+1-X=Count of services that match
+Null/missing = Not applicable, no similar Medicaid services
+MEDICAID_OVRLP_CNT_01 - 12	Monthly Medicaid beneficiary payment was less than or equal to the Medicare coinsurance and deductible for a service that occurred on the same day.	0 = Medicaid services present, but no overlap
+1-X=Count of services that overlap
+Null/missing = Not applicable, no similar Medicaid services
+Medicare Utilization	MEDICARE_CLM_CNT_01 - 12	Monthly Medicare FFS claim count	XXX
+MEDICARE_DAY_CNT_01 - 12	Monthly Medicare days (covered and non-covered)*	XXX
+MEDICARE_COV_DAY_CNT_01 - 12	Monthly Medicare covered days *	XXX
+OTH_MEDICARE_CLM_CNT	Medicare FFS claims for months with 'Other' Dual Status	XXX
+FD_MEDICARE_CLM_CNT	Medicare FFS claims for months with 'Full' Dual Status	XXX
+QMB_MEDICARE_CLM_CNT	Medicare FFS claims for months with 'QMB' Dual Status	XXX
+PD_MEDICARE_CLM_CNT	Medicare FFS claims for months with 'Partial' Dual Status	XXX
+MRO_MEDICARE_CLM_CNT	Medicare FFS claims for months with 'Medicare Only' Status	XXX
+OTH_MEDICARE_COV_DAY_CNT	Medicare Covered days for months with 'Other' Dual Status*	XXX
+FD_MEDICARE_COV_DAY_CNT	Medicare Covered days for months with 'Full' Dual Status*	XXX
+QMB_MEDICARE_COV_DAY_CNT	Medicare Covered days for months with 'QMB' Dual Status*	XXX
+PD_MEDICARE_COV_DAY_CNT	Medicare Covered days for months with 'Partial' Dual Status*	XXX
+MRO_MEDICARE_COV_DAY_CNT	Medicare Covered days for months with 'Medicare Only' Status*	XXX
+OTH_MEDICARE_DAY_CNT	Medicare days (covered and non-covered) for months with 'Other' Dual Status*	XXX
+FD_MEDICARE_DAY_CNT	Medicare days (covered and non-covered) for months with 'Full' Dual Status*	XXX
+QMB_MEDICARE_DAY_CNT	Medicare days (covered and non-covered) for months with 'QMB' Dual Status*	XXX
+PD_MEDICARE_DAY_CNT	Medicare days (covered and non-covered) for months with 'Partial' Dual Status*	XXX
+MRO_MEDICARE_DAY_CNT	Medicare days (covered and non-covered) for months with 'Medicare Only' Status*	XXX
+OTH_MEDICARE_VST_CNT	Medicare Home Health Visits for months with 'Other' Dual Status	XXX
+FD_MEDICARE_VST_CNT	Medicare Home Health Visits for months with 'Full' Dual Status	XXX
+QMB_MEDICARE_VST_CNT	Medicare Home Health Visits for months with 'QMB' Dual Status	XXX
+PD_MEDICARE_VST_CNT	Medicare Home Health Visits for months with 'Partial' Dual Status	XXX
+MRO_MEDICARE_VST_CNT	Medicare Home Health Visits for months with 'Medicare Only' Status	XXX
+*Because days apply to the stay, and are not parceled out based on when the particular days occurred, the count of days may be greater than the number of calendar days in the month.

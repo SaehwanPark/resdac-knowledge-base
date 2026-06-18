@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "as the exact date of becoming deceased, according to a death certificate Formatted as YYYYMMDD\nNDI_MATCH Death confirmed through NDI match CHAR 1 CCW-derived field identifying whether the Medicaid or Medicare reported death was matched to the NDI record For 2007 and forward values:\n0 = Not Matched to NDI file\n1 = Matched to NDI file\n\nFor 1999-2008 values:\n1 = Matched to NDI file\n2 = Did not match and all matching indicators included (DOB, sex, SSN, age, state)\n3 = Did not match since indicators",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

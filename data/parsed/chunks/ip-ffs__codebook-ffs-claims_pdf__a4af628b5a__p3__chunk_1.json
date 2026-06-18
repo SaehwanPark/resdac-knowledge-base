@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p3__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 3,
+  "text": "LINE_OTHR_APLD_IND_CD1-7, LINE_PLACE_OF_SRVC_CD, and \nPRVDR_NUM. Updated web link for MedPAC Payment Basic series, \nand web link for revenue center codes (REV_CNTR) \n1.10 \nJanuary 2023 \nK. Schneider \n\nAdded new fields and corresponding descriptions for: \nCLM_ADJUST_GRP_CD, CLM_ADJUST_RSN_CD, CLM_OP_PPS_IND, \nCLM_PRCR_VRSN_CD, DMERC_OXGN_EQUIP_INITL_DT, \nDMERC_OXGN_INITL_DT_CD, DMERC_OXGN_EQUIP_PRVS_DT, \nESRD_TRTMT_CHS_IND_CD, LINE_ADJUST_GRP_CD, \nLINE_ADJUST_RSN_CD, LINE_RA_RMRK_CD,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

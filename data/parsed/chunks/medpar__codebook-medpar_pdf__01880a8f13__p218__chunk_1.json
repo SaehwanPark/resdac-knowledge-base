@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p218__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 218,
+  "text": "MedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge amount (REV-CNTR-TOT-CHRG-\nAMT) associated with revenue center codes (REV CNTR CD) '0320', '0321', '0322', '0323', '0324', '0325', \n'0326', '0327', '0328' and '0329' from all claim records included in the stay. \nThis field was new in 2011. \nThis field is one of six detailed radiology revenue center amounts (RDLGY_ONCOLOGY_AMT, \nRDLGY_DGNSTC_AMT, RDLGY_THRPTC_AMT, RDLGY_NUCLR_MDCN_AMT,",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

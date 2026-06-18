@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p107__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 107,
+  "text": "(if no Medicaid enrollment) \nCOMMENT: \nCCW calculates this variable as the count of months where a beneficiary is enrolled in Medicare and \nthe monthly dual status code from the MBSF did not indicate eligibility for full or partial dual \nMedicare-Medicaid benefits (i.e., where DUAL_STUS_CD_MM NOT IN ('01' '02' '03' '04' '05' '06' '08'). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

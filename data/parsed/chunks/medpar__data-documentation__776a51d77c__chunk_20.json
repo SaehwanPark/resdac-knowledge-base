@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_20",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Organ acquisition or other donor bank charge amount ($) | \n\n | 109 | ESRD_REV_SETG_CHRG_AMT | End Stage Renal Disease (ESRD) charge amount ($) | \n\n | 110 | CLNC_VISIT_CHRG_AMT | Clinic Visit Charge Amount ($) | \n\n | 111 | HOSP_AT_HOME_CHRG_AMT | Hospital at Home Room and Board (R&B) Charge Amount | \n\n | 112 | HOSP_AT_HOME_FROM_DT | Hospital at Home Care From Date | \n\n | 113 | HOSP_AT_HOME_THRU_DT | Hospital at Home Care Through Date | \n\n | 114 | ICU_IND_CD | Intensive Care Unit (ICU)",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

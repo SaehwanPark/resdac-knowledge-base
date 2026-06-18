@@ -1,0 +1,16 @@
+The Part D Pharmacy Characteristics file provides information about the pharmacy identified as the source of the drug for each Part D Event (PDE) prescription fill record.
+What does this file include? (variable highlights)
+- Pharmacy type
+- Pharmacy dispenser type code
+- Pharmacy primary taxonomy code
+- DME service
+- Walk-in service
+- Linking variable to the PDE file:
+- CCW Pharmacy ID
+ 
+Why do researchers request this file?
+- Evaluate medication possession rates by pharmacy type
+- Assess the effect of pharmacy type on clinical outcomes
+Special considerations
+- Beginning with the CY 2014 file, it is possible to request an unencrypted pharmacy identifier.
+- Researchers who request and are approved by CMS for unencrypted variables will be able to link to third party data for pharmacy characteristics.

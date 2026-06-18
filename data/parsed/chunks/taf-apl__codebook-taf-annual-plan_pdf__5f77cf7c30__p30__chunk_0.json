@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n22 \nMC_PLAN_CNTY_CD \nLABEL: \nManaged Care Plan Location — County (FIPS) Code \nDESCRIPTION: The county FIPS code for the managed care plan service location associated with a unique managed \ncare service location ID. \nSHORT NAME: MC_PLAN_CNTY_CD \nLONG NAME: MC_PLAN_CNTY_CD \nTYPE: \nCHAR \nLENGTH: \n4 \nFILE(S): \nAPL Location \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nThree digit",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

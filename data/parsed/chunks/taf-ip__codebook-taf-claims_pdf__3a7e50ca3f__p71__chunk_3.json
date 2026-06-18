@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p71__chunk_3",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 71,
+  "text": "A = Separate CHIP (Title XXI) claim: a fee-for-service (FFS) claim \nB = Separate CHIP (Title XXI) claim: capitated payment \nC = Separate CHIP (Title XXI) encounter record that simulates a bill for a service or items rendered to a \npatient covered under some form of Capitation Plan. This includes billing records submitted by \nproviders to non-state entities (e.g., MCOs, health plans) for which a state has no financial liability \nas the at-risk entity has already received a capitated payment",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_276",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "1,2014, M0300D1 Stage 4 Pressure Ulcers Admission Number will be displayed CHAR 1 This indicates the number of unhealed Stage 4 pressure ulcers that were present at the time of admission.\n264 STG_4_PRSR_ULCRS_DSCHRG_NUM STG_4_PRSR_ULCRS_DSCHRG_NUM 48CD/M0300D1 Stage 4 Pressure Ulcers Discharge Number. When Discharge Date is on or after Oct. 1,2014, M0300D1 Stage 4 Pressure Ulcers Discharge Number will be displayed CHAR 1 This indicates the number of unhealed Stage 4 pressure ulcers that were",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

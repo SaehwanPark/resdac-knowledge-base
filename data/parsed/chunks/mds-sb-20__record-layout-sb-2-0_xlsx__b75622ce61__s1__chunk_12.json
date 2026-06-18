@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "submission process.\n24 STATE_CD STATE_CD State Code CHAR 2 The two-digit state abbreviation.\n25 SUBMSNDT SUBMSN_DT Submission Date DATE 8 The date the submission was received by the system.\n26 TARGETDT TARGET_DT Target Date DATE 8 For MDS, the target date is the R4 Discharge Date for any discharge, the A4A Reentry Date for any re-entry and the A3A Assessment Reference Date for any other type of assessment. For IRF-PAI, the Target Date is 12: Admission Date. For SB the Target DAte is the same as",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

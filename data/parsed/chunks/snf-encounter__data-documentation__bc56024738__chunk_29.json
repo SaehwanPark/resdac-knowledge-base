@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_29",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "| 143 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (Encounter) | \n\n | 144 | BENE_MLG_CNTCT_ZIP_CD | Beneficiary ZIP Code of Residence from Claim | \n\n | 146 | BENE_RACE_CD | Beneficiary Race Code (Encounter) | \n\n | 147 | DOB_DT | Date of Birth from Encounter | \n\n | 148 | BENE_MDCR_STUS_CD | Beneficiary Medicare Status Code | \n\n | 149 | TAX_NUM | Provider Tax Number | \n\n | 150 | BENE_STATE | State of beneficiary (postal abbreviation) |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

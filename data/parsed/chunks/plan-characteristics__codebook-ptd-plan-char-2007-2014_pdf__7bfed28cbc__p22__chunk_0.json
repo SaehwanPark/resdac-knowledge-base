@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 22,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n9 \nCONTRACT_ID_09 (reference year) \nLABEL: \nPart D Contract Identifier for Reference Year \nDESCRIPTION: This variable is the unique number CMS assigns to each contract that a Part D plan has with CMS. This \nwas the Contract ID for the plan in 2009 (the reference year). It may or may not be the same as the \nContract ID in the previous year (2008). \nThis field is a key that links of",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

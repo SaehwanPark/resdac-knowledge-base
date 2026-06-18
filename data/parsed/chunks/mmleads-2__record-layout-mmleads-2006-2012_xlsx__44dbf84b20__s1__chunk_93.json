@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_93",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "and end date from the MAX data during months of 'Other' Dual Status* XXX\nU_OTH_MEDICAID_IER_VST Total number of Medicaid Inpatient ER visits during months of 'Other' Dual Status XXX\nU_OTH_MEDICAID_OER_VST Total number of Medicaid Hospital Outpatient ER visits during months of 'Other' Dual Status XXX\n*Because days apply to the stay and are not parceled out based on when the particular days occurred, the count of days may be greater than the number of calendar days in the month.",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

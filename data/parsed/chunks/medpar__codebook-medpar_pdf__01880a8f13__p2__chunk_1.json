@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 2,
+  "text": "EMER_USE_SW \nEXPNDD_ACS_SW \nHOSP_AT_HOME_CHRG_AMT \nHOSP_AT_HOME_FROM_DT \nHOSP_AT_HOME_THRU_DT \nNO_PSTV_TEST_SW \nPPS_PRCR_VRSN_CD \nPRVDR_BASE_FAC_CCN_NUM \nPRVDR_FULL_CCN_NUM \nUpdated derivation rules for the following variables: \nPRVDR_NUM \nPRVDR_NUM_SPCL_UNIT_CD \nSEMIPRVT_ROOM_DAY_CNT \nSEMIPRVT_ROOM_CHRG_AMT \nAdded value and corresponding description for: \nSRC_IP_ADMSN_CD \n4.1 \nDecember 2021 S. Pietzsch \nAdded 11 new variables: \nLTCH_DPP_ADJSTMT_AMT \nRC_NDC_1_CD–RC NDC_10_CD \nChanged DRG_CD",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

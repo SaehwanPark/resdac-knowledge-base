@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_143",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Dependence/Minimal Assistance (Subject 75% or more), 05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n125 _39LA WLK_WC_ADMSN_CD (39La) Locomotion - Walk/wheelchair: Admission CHAR 2 A score indicating the patient's ability to walk or use a wheelchair on a level surface at admission. This item indicates the most frequent mode of locomotion the patient uses - 'walk' or 'wheelchair'.",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

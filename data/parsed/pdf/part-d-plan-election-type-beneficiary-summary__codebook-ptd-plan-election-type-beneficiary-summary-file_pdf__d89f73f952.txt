@@ -1,0 +1,533 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse 
+CODEBOOK: 
+Medicare Part D Beneficiary Plan Election and 
+Auto-Assignment Files 
+OCTOBER 2021 │ VERSION 1.3 
+
+
+  
+This page intentionally left blank. 
+
+
+  
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+October 2021 
+D. Happe 
+Put on the 2020 template 
+1.3 
+February 2019 
+K. Schneider 
+Added value (“N”) for ENRLMT_TYPE_CD 
+1.2 
+August 2018 
+K. Schneider 
+Adjusted data source; description of Audit sequence 
+(AUDT_SQNC_NUM) 
+number 
+1.1 
+October 2017 
+K. Schneider 
+C. Alleman 
+Initial release of codebook 
+Auto-Assignment files 
+for PTD Beneficiary Plan Election and 
+1.0 
+
+
+  
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Part D Beneficiary Plan Election and 
+Auto-Assignment research files. Because the files have many variables, we have included several ways for users to 
+quickly find the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used. 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents. 
+
+
+  
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:  
+ 
+ 
+Variable Details ......................................................................................................................................................... 1 
+APLCTN_DT ..................................................................................................................................................................... 1 
+AUDT_SQNC_NUM ......................................................................................................................................................... 2 
+AUTO_ASSIGNED_FLAG .................................................................................................................................................. 3 
+BENE_ID .......................................................................................................................................................................... 4 
+CHOOSER ........................................................................................................................................................................ 5 
+CONTRACT_ID ................................................................................................................................................................. 6 
+CRNT_PREV_YR_CHOOSER ............................................................................................................................................. 7 
+DISENRLMNT_DT ............................................................................................................................................................ 8 
+ENRLMT_EFCTV_DT ........................................................................................................................................................ 9 
+ENRLMT_TYPE_CD ........................................................................................................................................................ 10 
+LIS_MONTHS ................................................................................................................................................................. 11 
+PLAN_ID ........................................................................................................................................................................ 12 
+REASSIGN_JAN .............................................................................................................................................................. 13 
+REF_YEAR ...................................................................................................................................................................... 14 
+ 
+ 
+ 
+ 
+ 
+A B C D E 
+F 
+G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in Medicare Part D Beneficiary Plan Election and 
+Auto-Assignment file. Each entry contains variable details to facilitate understanding and use of the variables. 
+APLCTN_DT 
+LABEL: 
+Part D Plan application date  
+DESCRIPTION:  This variable is the date the Part D plan sponsor received the election form from the beneficiary. 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+CMS Common Medicare Environment (CME)  
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+Date value formatted as: DDMONYYYY 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+2 
+AUDT_SQNC_NUM 
+LABEL: 
+Part D Enrollment Transaction Audit Sequence Number 
+DESCRIPTION:  This variable is the Medicare Part D Enrollment Transaction Audit Sequence Number. The number 
+indicates whether the occurrence has been audited. It will default to 0 (zero) for valid occurrences and 
+will be incremented by 1 for audited rows with the same key fields.  
+TYPE: 
+NUM 
+LENGTH:  
+3 
+SOURCE:  
+CMS Common Medicare Environment (CME) 
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+0 = valid (effective) transaction 
+1–X = audited records 
+COMMENT: 
+While a beneficiary can only be enrolled in one Part D plan during a given time period there may be 
+more than one enrollment transaction with an audit sequence number of zero for that time period. 
+This indicates that a valid transaction has been replaced with another valid transaction. For example, if 
+a beneficiary was auto assigned to a plan but then picked a different plan.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+3 
+AUTO_ASSIGNED_FLAG 
+LABEL: 
+Part D Plan Auto Assignment Indicator 
+DESCRIPTION:  This variable Indicates that the beneficiary had one or more Part D enrollment transactions that span 
+the reference year where the Enrollment Type Code indicates auto-assignment or re-assignment 
+(Enrollment Type Code of A or H) regardless of whether they opted-out of the plan they were assigned 
+to. 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+CMS Common Medicare Environment (CME) — derived  
+FILE(S): 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+Y = yes, auto-assigned to the Part D Plan 
+Null/missing 
+COMMENT: 
+The Enrollment Type Code variable (SAS name is ENRLMT_TYPE_CD) appears in the Part D Beneficiary 
+Plan Election file. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+4 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID  
+DESCRIPTION:  The unique CCW identifier for a beneficiary. The CCW assigns a unique beneficiary identification 
+number to each individual who receives Medicare and/or Medicaid, and uses that number to identify 
+an individual’s records in all CCW data files (e.g., Medicare claims, MAX claims, MDS assessment data).  
+This number does not change during a beneficiary’s lifetime and each number is used only once. 
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source.  
+TYPE: 
+CHAR  
+LENGTH:  
+15 
+SOURCE:  
+CCW 
+FILE(S): 
+Part D Beneficiary Plan Election file 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+5 
+CHOOSER 
+LABEL: 
+Part D Plan Self Selection Indicator  
+DESCRIPTION:  This variable indicates that the beneficiary had one or more Part D enrollment transactions that span 
+the reference year where the Enrollment Type Code indicates that the beneficiary made the plan 
+selection (Enrollment Type Code of B or L). 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+CMS Common Medicare Environment (CME) — derived 
+FILE(S): 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+Y = yes, the beneficiary elected the Part D Plan 
+Null/missing 
+COMMENT: 
+The Enrollment Type Code variable (SAS name is ENRLMT_TYPE_CD) appears in the Part D Beneficiary 
+Plan Election file. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+6 
+CONTRACT_ID 
+LABEL: 
+Part D Contract Number 
+DESCRIPTION:  This variable is the Medicare Part D contract number for the beneficiary’s Part D plan. 
+CMS assigns an identifier to each contract that a Part D plan has with CMS. 
+TYPE: 
+CHAR 
+LENGTH:  
+5 
+SOURCE:  
+CMS Common Medicare Environment (CME)  
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+XXXXX 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+7 
+CRNT_PREV_YR_CHOOSER 
+LABEL: 
+Part D Plan Self Selection in Current or Previous Year Indicator 
+DESCRIPTION:  This variable indicates whether the plan choice was in the current or previous year. For beneficiaries 
+where the variable CHOOSER = “Y”, this variable indicates whether the beneficiary made their Part D 
+plan self-selection in the current year or the previous year. 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+CMS Common Medicare Environment (CME) — derived  
+FILE(S): 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+C = Part D plan election in the reference year 
+P = Part D plan election in the year prior to the reference year 
+Null/missing = Beneficiary is not a chooser in the reference year 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+8 
+DISENRLMNT_DT 
+LABEL: 
+Beneficiary Part D Plan Disenrollment Date  
+DESCRIPTION:  This variable is the date the beneficiary disenrolled in the Part D Plan, if applicable 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+CMS Common Medicare Environment (CME)  
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+Date value formatted as: DDMONYYYY 
+Null/missing if the plan remained active; if beneficiary did not disenroll from the plan. 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+9 
+ENRLMT_EFCTV_DT 
+LABEL: 
+Beneficiary Part D Plan Enrollment Effective Date  
+DESCRIPTION:  This variable is the date that Part D coverage began for the beneficiary. 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+SOURCE:  
+CMS Common Medicare Environment (CME)  
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+Date value formatted as: DDMONYYYY 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+10 
+ENRLMT_TYPE_CD 
+LABEL: 
+Beneficiary Part D Plan Enrollment Type Code  
+DESCRIPTION:  This variable contains the enrollment type code, which is used to identify the source/mechanism of 
+the Part D enrollment 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+CMS Common Medicare Environment (CME) 
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+A = Part D Auto Enrolled by CMS 
+B = Beneficiary Election (Beneficiary Made Plan Choice) 
+C = Part D Facilitated Enrollment by CMS 
+D = System Generated Enrollment (Rollover) 
+E = Plan Submitted Auto Enrollment 
+F = Plan Submitted Facilitated Enrollment 
+G = Point of Sale (POS) submitted enrollment (i.e., pharmacy enrolled beneficiary in a LINET plan) 
+H = CMS or Plan Submitted Re-assignment Enrollment 
+I = Assigned to Plan Submitted Transactions with Enrollment Source Other than any of the Following: 
+B, E, F, G, H and blank 
+J = State Submitted Passive Enrollment 
+K = CMS Submitted Passive Enrollment 
+L = Financial Alignment (FA) Demonstration Beneficiary Election 
+N = Rollover by Plan Transaction 
+Missing/null = unknown 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+11 
+LIS_MONTHS 
+LABEL: 
+Part D Low Income Subsidy (LIS) Months 
+DESCRIPTION: This variable is the number of months in the reference year that the beneficiary was determined to be 
+eligible for a Part D premium low-income subsidy (LIS) 
+TYPE: 
+NUM 
+LENGTH:  
+2 
+SOURCE: 
+CMS Common Medicare Environment (CME) — derived 
+FILE(S): 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+0–12 
+COMMENT: 
+The Medicare Modernization Act of 2003 (MMA) mandated that CMS establish the Low-Income 
+Subsidy (LIS) program for the Medicare Part D benefit, which provides subsidies that reduce or 
+eliminate Part D premiums and deductibles and offers zero or reduced co-payments for low-income 
+beneficiaries. 
+Beneficiaries who are eligible for the full LIS subsidy will pay zero premiums if they are enrolled in an 
+at- or below-benchmark plan. If they enroll in above-benchmark plans, they are responsible for paying 
+the amount of the premium above the benchmark. Because benchmarks are recalculated on an annual 
+basis, some plans may be at or below the benchmark in one year but not in the following year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+12 
+PLAN_ID 
+LABEL: 
+Part D Plan Benefit Package Identifier 
+DESCRIPTION: This variable is the unique plan benefit package (PBP) number for the Part D plan sponsor's contract. 
+CMS assigns an identifier to each PBP within a contract that a Part D plan sponsor has with CMS. 
+This field is a key that links Part D sponsor's contract and plan identifiers. 
+TYPE: 
+CHAR 
+LENGTH:  
+3 
+SOURCE: 
+CMS Common Medicare Environment (CME)  
+FILE(S): 
+Part D Beneficiary Plan Election file 
+VALUES: 
+3-digit numeric value 
+COMMENT: 
+You need to know both the Part D contract number (variable called CONTRACT_ID) and plan benefit 
+package identifier in order to identify the specific plan benefit package offered to beneficiaries. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+13 
+REASSIGN_JAN 
+LABEL: 
+Beneficiary Newly Reassigned for January Plan 
+DESCRIPTION:  This variable indicates whether the plan reassignment occurred in January of the reference year. 
+This variable is populated only if the beneficiary was newly reassigned for their January plan, 
+regardless if they opted out of the re-assignment. This flag resets yearly. 
+TYPE: 
+CHAR 
+LENGTH:  
+1 
+SOURCE:  
+CMS Common Medicare Environment (CME) — derived 
+FILE(S): 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+Y = Yes, beneficiary was reassigned to the Part D Plan at the beginning of the year 
+Null/missing = Beneficiary was not reassigned in January of the reference year 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Conditions Warehouse  
+CODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 
+ 
+14 
+REF_YEAR 
+LABEL: 
+The Part D plan enrollment year  
+DESCRIPTION:  Year of Part D plan enrollment. The data files are partitioned into calendar year files. 
+TYPE: 
+NUM 
+LENGTH:  
+4 
+SOURCE:  
+CCW (derived) 
+FILE(S): 
+Part D Beneficiary Plan Election file 
+Part D Beneficiary Auto-Assignment file 
+VALUES: 
+2007 + 
+COMMENT: 
+— 
+^ Back to TOC ^

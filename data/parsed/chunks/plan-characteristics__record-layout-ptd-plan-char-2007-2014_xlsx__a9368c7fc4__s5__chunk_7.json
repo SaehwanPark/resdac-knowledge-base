@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s5__chunk_7",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 5,
+  "text": "year of the data file) and the prior year. As a result, variable names change each year, as indicated in the record layout.\n2 The contract & plan ID variables must be used together to uniquely identify a plan sponsor's benefit package; prior to the 2013 data release, these variables were required to be encrypted.\n3 These two variables (RELATIONSHIP_CODE and RELATIONSHIP_DESC) appear in each data file.\n4 The 2007 Plan Crosswalk File maps plans in 2007 back to plans in 2006. There is no 2006",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

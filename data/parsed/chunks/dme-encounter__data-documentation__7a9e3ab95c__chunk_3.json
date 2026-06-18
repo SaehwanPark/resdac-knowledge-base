@@ -1,0 +1,8 @@
+{
+  "chunk_id": "dme-encounter__data-documentation__7a9e3ab95c__chunk_3",
+  "source_document": "data/raw/html/documentation_page/7a9e3ab95c81408f2ef1644024e5ac09aae2fff6.html",
+  "page": null,
+  "text": "(HCPCS) Code (Encounter) | \n| HCPCS_1ST_MDFR_CD | HCPCS Initial Modifier Code (Encounter) | \n| HCPCS_2ND_MDFR_CD | HCPCS Second Modifier Code (Encounter) | \n| HCPCS_3RD_MDFR_CD | HCPCS Third Modifier Code (Encounter) | \n| HCPCS_4TH_MDFR_CD | HCPCS Fourth Modifier Code (Encounter) | \n| LINE_NDC_CD | Line National Drug Code (NDC) (Encounter) | \n| LINE_LTST_CLM_IND | Line Latest Claim Indicator |",
+  "dataset": "dme-encounter",
+  "url": "https://resdac.org/cms-data/files/dme-encounter/data-documentation"
+}

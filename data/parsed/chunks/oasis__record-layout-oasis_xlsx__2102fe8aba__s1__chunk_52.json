@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_52",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "controlled with current therapy.\n02 = Symptoms controlled with difficulty, affecting daily functioning; patient needs ongoing monitoring.\n03 = Symptoms poorly controlled, patient needs frequent adjustment in treatment and dose monitoring.\n04 = Symptoms poorly controlled, history of rehospitalizations. CHAR 2 x x\nM0240_OTH_DGN1_ICD (M0240) Other Diagnosis and ICD Code - b Other diagnosis ICD b. CHAR 7 x x\nM0240_OTH_DGN2_ICD (M0240) Other Diagnosis and ICD Code - c Other diagnosis ICD c. CHAR 7 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

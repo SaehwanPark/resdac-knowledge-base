@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p264__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 264,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n251 \nPLAN_TOTAL_PREMIUM_NET_REBATE \nLABEL: \nPart D Total Premium Net of Rebate \nDESCRIPTION: This variable is the dollar amount of the Part D Total Premium (basic + supplemental) Rate (Net of \nRebates). \nThe Part D Total Premium is the sum of the Basic and Supplemental Premiums (variables called \nPLAN_BASIC_PREMIUM_NET_REBATE and PLAN_SUPP_PREMIUM_NET_REBATE). This amount is net \nof",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "1\nBENE_INCM_RNG_CD Beneficiary Income CHAR 1\nBENE_INSRNC_TYPE_CD Beneficiary Payer Type CHAR 1\nAHC_BRDG_ORG_ID AHC Bridge Organization Identifier CHAR 3\nAHC_BRDG_ORG_STATE_CD AHC Bridge Organization State CHAR 2\nAHC_TRK_CD AHC Assistance or Alignment Track CHAR 1\nAHC_BENE_ID AHC Beneficiary Identifier CHAR 9\nSR_SCRNG_ID Screening Identifier CHAR 9\nSR_SCRNG_DT Screening Date DATE 8\nSR_SCRNG_BEFORE_DRNG_AFTR_CD Did screening occur before, during, or after the visit CHAR 1\nSR_CORE_FOOD_1_CD Core",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

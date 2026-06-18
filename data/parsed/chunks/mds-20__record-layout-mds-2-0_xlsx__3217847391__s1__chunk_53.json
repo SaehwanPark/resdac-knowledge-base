@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_53",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "cycle of daily events - none of above. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n104 AC1I AC1I_FOOD_PREF (AC1I) Distinct Food Preferences CHAR 1 Customary routine: eating patterns - distinct food preferences. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n105 AC1J AC1J_EAT_BTWN_MEAL (AC1J) Eats Between Meals CHAR 1 Customary routine: eating patterns - eats between meals most days. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n106 AC1K AC1K_ALC_WKLY (AC1K) Use of Alcoholic Beverages at Least Weekly",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

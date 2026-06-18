@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_554",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "C1310A Acute Mental Status Change CHAR 1 Indicates whether there has been an acute change in mental status from the resident's baseline. -=Not assessed/no information\n 0=No\n 1=Yes\n ^=Blank(skip pattern) effective10/01/2016\n641 C1310B_INTNTN_IND C1310B_INTNTN_IND C1310B Signs and Symptoms of Delirium: Inattention CHAR 1 Indicates whether the resident exhibits signs and symptoms of inattention. -=Not assessed/no information\n 0=Behavior not present\n 1=Behavior continuously present, does not",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

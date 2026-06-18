@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_252",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "This field indicates the highest stage indicator of a pressure ulcer in the last 7 days. A pressure ulcer is any lesion caused by pressure resulting in damage of underlying tissue. 0 = None; 1 = Stage 1; 2 = Stage 2; 3 = Stage 3; 4 = Stage 4; \"-\" = Unknown.\n412 M2B M2B_STASIS_ULCER (M2B) Stasis Ulcers CHAR 1 Skin condition: ulcers - stasis ulcer. This field indicates the highest stage indicator of a stasis ulcer in the last 7 days. A stasis ulcer is an open lesion caused by poor circulation in",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

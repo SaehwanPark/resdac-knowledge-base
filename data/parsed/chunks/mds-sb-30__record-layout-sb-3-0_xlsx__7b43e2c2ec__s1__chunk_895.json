@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_895",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "the facility. 0=No\n1=Yes effective 10/01/2023\n1007 DLYS_14_CD DLYS_14_CD O0110J1B Other: Dialysis (14 days) CHAR 1 The data in this column indicates whether the resident received dialysis while a resident of the facility and within the last 14 days. 0=No\n1=Yes effective 10/01/2023\n1008 DLYS_DSCHRG_CD DLYS_DSCHRG_CD O0110J1C Other: Dialysis (Discharge) CHAR 1 The data in this column indicates whether the resident received dialysis in the last three days of their SNF stay. 0=No\n1=Yes effective",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

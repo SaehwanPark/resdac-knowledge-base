@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_391",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "The data in this column indicates whether pressure ulcers were present on the prior assessment (OBRA, or Scheduled PPS). -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern) discontinued 9/30/2018\n436 M0900B_HEALD_STG_2_ULCR_NUM M0900B_HEALD_STG_2_ULCR_NUM M0900B Healed Stage 2 Pressure Ulcer Number CHAR 1 The data in this column indicates the number of Stage 2 pressure ulcers present on the prior assessment (OBRA, or Scheduled PPS) that have completely closed (resurfaced with",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

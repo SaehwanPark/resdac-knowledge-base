@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p203__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 203,
+  "text": "is populated with CCN of the parent provider for \nIPPS hospitals, critical access hospitals, and IPPS-excluded hospitals with IPPS-excluded rehabilitation or \npsychiatric units or swing beds (as applicable). Beginning in 2021, the PRVDR_NUM may contain an \nalpha character in the third digit, which is recoded when it appears in the PRVDR_BASE _FAC_CCN_NUM \nas follows: \nWhere position 3 is an alpha character (S, T, U, W, or Y) replace with a “0”. \nWhere position 3 is an alpha character (M or R)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

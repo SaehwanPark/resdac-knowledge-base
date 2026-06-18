@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_821",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "type of wheelchair used to wheel 150 feet during this assessment period plus the two previous calendar days. 1=Manual\n2=Motorized effective 10/01/2023\n908 PAIN_HURT_FREQ_CD PAIN_HURT_FREQ_CD J0410 Pain Frequency CHAR 1 The data in this column indicates the frequency at which the resident has experienced pain or hurting over the last five days. 1=Rarely or not at all\n2=Occasionally\n3=Frequently\n4=Almost constantly\n9=Unable to answer effective 10/01/2023\n909 PAIN_SLP_CD PAIN_SLP_CD J0510 Pain",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

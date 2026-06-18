@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__data-documentation__5852cefcaf__chunk_4",
+  "source_document": "data/raw/html/documentation_page/5852cefcaf4dca5dba3392a521caae7b6816e9f1.html",
+  "page": null,
+  "text": "| Claim Operating Physician NPI Number (Encounter) | \n\n | 27 | OT_PHYSN_NPI | Claim Other Physician NPI Number (Encounter) | \n\n | 28 | CLM_ADMSN_DT | Claim Admission Date (Encounter) | \n\n | 29 | CLM_IP_ADMSN_TYPE_CD | Claim Inpatient Admission Type Code (Encounter) | \n\n | 30 | CLM_SRC_IP_ADMSN_CD | Claim Source Inpatient Admission Code (Encounter) | \n\n | 31 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (Encounter) | \n\n | 32 | CLM_DAY_CNT | Day Count (Length of Stay) | \n\n | 33 |",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter/data-documentation"
+}

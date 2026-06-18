@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__chunk_2",
+  "source_document": "data/raw/html/dataset_page/5f790fcd9499f996f1cbe1ebbbb4d8aa4648a8e3.html",
+  "page": null,
+  "text": "prior to any adjustments made for payments. Each payment year has specific risk models that are based on that year’s risk adjustment methodology; payment years may use a blend of MOF risk scores as inputs to calculate the operational payment risk scores.\nDepending on the payment year, the risk models that are used for MAO payments may include:\n- ESRD V21 scores (based on model calibration year)\n- Part C V21 scores\n- Part C V22 scores\n- Part C V23 scores\n- Part C V24 scores\n- Part D V05",
+  "dataset": "risk-score-mofs",
+  "url": "https://resdac.org/cms-data/files/risk-score-mofs"
+}

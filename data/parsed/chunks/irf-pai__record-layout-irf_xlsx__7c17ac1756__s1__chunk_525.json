@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_525",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= One \n0 = None \n- = Not Assessed/No Information \n^ = Blank\n461 RPT_CRCT_YR_DSCHRG_CD RPT_CRCT_YR_DSCHRG_CD BIMS - Temporal Orientation - Year (Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was able to identify the current year. 3 = Correct \n2 = Missed by 1 year \n1 = Missed by 2-5 years \n0 = Missed by > 5 years or no answer \n- = Not Assessed/No Information \n^ = Blank\n462 RPT_CRCT_MO_DSCHRG_CD RPT_CRCT_MO_DSCHRG_CD BIMS - Temporal Orientation - Month (Dsch)",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

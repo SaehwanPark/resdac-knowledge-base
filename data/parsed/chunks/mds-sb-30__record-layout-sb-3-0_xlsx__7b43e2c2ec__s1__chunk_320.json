@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_320",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "whether the resident currently uses tobacco. -=Not assessed/no information\n0=No\n1=Yes\n355 J1400_LIFE_PRGNS_CD J1400_LIFE_PRGNS_CD J1400 Life Prognosis Less Than Six Months Code CHAR 1 The data in this column indicates whether the resident has a condition or chronic disease that may result in a life expectancy of less than six months. -=Not assessed/no information\n0=No\n1=Yes\n356 J1550A_FVR_CD J1550A_FVR_CD J1550A Problem Conditions: Fever Code CHAR 1 The data in this column indicates whether the",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

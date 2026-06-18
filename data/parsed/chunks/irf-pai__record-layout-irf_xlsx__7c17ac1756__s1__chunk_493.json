@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_493",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "ETHNCTY_NO_RSPNS_CD ETHNCTY_NO_RSPNS_CD Ethnicity: Patient unable to respond CHAR 1 The data in this column is the patient's response to ethnicity. 0 = No\n1 = Yes\n413 ETHNCTY_DCLN_RSPNS_CD ETHNCTY_DCLN_RSPNS_CD Ethnicity: Patient declines to respond CHAR 1 The data in this column is the patient's response to their ethnicity. 0 = No\n1 = Yes\n414 RACE_WHT_CD RACE_WHT_CD Race: White CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n415 RACE_AFRCN_AMRCN_CD",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

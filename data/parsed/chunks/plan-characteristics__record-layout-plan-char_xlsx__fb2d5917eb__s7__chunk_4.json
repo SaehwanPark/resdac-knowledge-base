@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s7__chunk_4",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 7,
+  "text": "available after 2017\n43739 Tier Edit to Plan Base File: \nUpdated DED_COSTSHARE_TIERS value descriptions\nUpdated field length in the Tier File for PRE_ICL_TIER_DRUG_TYPE, GAP_TIER_DRUG_TYPE, and POST_OOPT_TIER_DRUG_TYPE\n\nAdded new variables to Plan Crosswalk File:\nCONTRACT_ID_17 (previous year)\nCONTRACT_ID_18 (reference year)\nPLAN_ID_17 (previous year)\nPLAN_ID_18 (reference year)\nPTCD_INDICATOR_18\n43374 Base Added new variable: DSNP_ZERODOLLAR",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

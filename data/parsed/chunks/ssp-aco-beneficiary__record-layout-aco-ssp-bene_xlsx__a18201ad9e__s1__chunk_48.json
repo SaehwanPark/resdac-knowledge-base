@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_48",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "CMS-HCC Risk Score for Disabled Status Final, prospective risk score based on the applicable risk adjustment model for the most recently available MA payment year, renormalized so that the mean national assignable FFS risk score equals 1.0. Populated based on the beneficiary's last eligible month and =. if Final_assign =1.\nRisk scores for different enrollment categories are reported in separate columns: ESRD risk scores are renormalized to the ESRD population, disabled risk scores are",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

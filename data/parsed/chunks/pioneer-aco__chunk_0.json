@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__chunk_0",
+  "source_document": "data/raw/html/dataset_page/d82072986f1b00818ff87f632eef42c89e309650.html",
+  "page": null,
+  "text": "The Centers for Medicare and Medicaid Services (CMS) has created a set of files that contain Pioneer Accountable Care Organizations information. There are three separate files in the set:\n- Provider-includes one record for each facility or professional participating provider\n- Beneficiary-each record represents an individual beneficiary who was associated with a Pioneer ACO\n- Settlement-one record for each Pioneer ACO provides information on the post-performance year financial settlement\nWhat",
+  "dataset": "pioneer-aco",
+  "url": "https://resdac.org/cms-data/files/pioneer-aco?page=1"
+}

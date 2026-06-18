@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_44",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "for any cause followed within 30 days from the date of hospital discharge. Does not apply to beneficiaries hospitalized for treatment of cancer or psychiatric disease, discharged against medical advice, transferred to another acute care hospital, or who died during the admission.\nDGNSCD01 Primary diagnosis code for hospital admission ICD diagnostic code determined to be chiefly responsible for beneficiary hospital admission during 2016 62 Char 7 Populated only for records with Inpatient_stay=1",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

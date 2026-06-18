@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "CHAR 6 X X X X X X X X X X X\n65 SS_ELG_CD_MO_11 State specific eligibility group (Nov) CHAR 6 X X X X X X X X X X X\n66 SS_ELG_CD_MO_12 State specific eligibility group (Dec) CHAR 6 X X X X X X X X X X X\n67 MAX_ELG_CD_MO_1 MAX uniform eligibility group (Jan) CHAR 2 X X X X X X X X X X X\n68 MAX_ELG_CD_MO_2 MAX uniform eligibility group (Feb) CHAR 2 X X X X X X X X X X X\n69 MAX_ELG_CD_MO_3 MAX uniform eligibility group (Mar) CHAR 2 X X X X X X X X X X X\n70 MAX_ELG_CD_MO_4 MAX uniform eligibility",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

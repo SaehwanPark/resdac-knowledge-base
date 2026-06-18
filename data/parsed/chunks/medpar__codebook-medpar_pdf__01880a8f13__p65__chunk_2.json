@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p65__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 65,
+  "text": "comes from the Claim Residual Payment Indicator Code (CLM-RSDL-PMT-IND-CD) that is \npresent on the first claim record included in the stay. If there is no CLM-RSDL-PMT-IND-CD on the 1st \nclaim, then take the first-round code on any of the other claims that make up the stay. \nThis field is new in 2015. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

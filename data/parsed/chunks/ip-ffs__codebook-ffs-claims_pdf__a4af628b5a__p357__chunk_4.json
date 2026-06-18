@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p357__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 357,
+  "text": "group for the particular revenue center is located in the data field called the \nAPC or HIPPS code variable. \nThe APC is a four-byte field. \nThe HIPPS code is a five-byte field (such as 1AFKS). \nSHORT NAME: APCHIPPS \nLONG NAME: REV_CNTR_APC_HIPPS_CD \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nNCH \nVALUES: \nAPC codes can be downloaded from the CMS website (reference: \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-\nPayment/HospitalOutpatientPPS/passthrough_payment.html) \nExamples of APC codes:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p245__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 245,
+  "text": "calendar year. \nSHORT NAME: MFP_QLFYD_INSTN_CD \nLONG NAME: MFP_QLFYD_INSTN_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nMoney Follows the Person \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n00 = Default- No MFP Participation \n01 = Nursing Facility \n02 = ICF/IID (Intermediate Care Facilities for individuals with Intellectual Disabilities) \n03 = IMD (Institution for Mental Diseases) \n04 = Hospital \n05 = Other \nNull/missing = source value is missing or unknown \nCOMMENT: \n— \n^ Back",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

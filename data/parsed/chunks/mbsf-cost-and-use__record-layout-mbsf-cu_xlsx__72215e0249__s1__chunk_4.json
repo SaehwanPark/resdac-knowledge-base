@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "Hospice Stays NUM 6\nHOS_COV_DAYS Hospice Medicare Covered Days NUM 6\nHH_MDCR_PMT Home Health Medicare Payments NUM 12\nHH_PRMRY_PMT Home Health Primary Payer Amount NUM 12\nHH_VISITS Home Health Visits NUM 6\nHOP_BENE_PMT Hospital Outpatient Beneficiary Payments NUM 12\nHOP_MDCR_PMT Hospital Outpatient Medicare Payments NUM 12\nHOP_PRMRY_PMT Hospital Outpatient Primary Payer Amount NUM 12\nHOP_VISITS Hospital Outpatient Visits NUM 6\nHOP_ER_VISITS Hospital Outpatient Emergency Room Visits NUM",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

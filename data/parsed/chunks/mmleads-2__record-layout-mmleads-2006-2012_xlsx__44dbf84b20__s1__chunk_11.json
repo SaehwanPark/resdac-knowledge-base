@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "- 12 Monthly detail of Medicaid long term supports and services(LTSS) status. January through December. I1 - Nursing Facility Service (NFS) Institutional (INST) LTSS\nI2 - Other INST LTSS\nC1 - Waiver Community (COMM) LTSS\nC2 - Home Health (HH) or Personal Care Services (PCS) COMM LTSS\nA - Non-LTSS; no such service use\nNull - No Medicaid coverage during the month\nL_MEDICARE_LT_DTL_1 - 12 Monthly detail of long term care utilization. January through December. NF - Nursing Facility (source: MDS",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

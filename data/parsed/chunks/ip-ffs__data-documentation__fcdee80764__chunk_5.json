@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_5",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "32 | OT_PHYSN_NPI | Claim Other Physician NPI Number (FFS) | \n\n | 33 | OT_PHYSN_SPCLTY_CD | Claim Other Physician Specialty Code | \n\n | 34 | RNDRNG_PHYSN_NPI | Rendering Physician NPI (FFS) | \n\n | 34 | RNDRNG_PHYSN_SPCLTY_CD | Claim or Revenue Center Rendering Physician Specialty Code | \n\n | 35 | RFR_PHYSN_NPI | Claim Referring Physician NPI Number | \n\n | 36 | RFRG_SPCLTY_CD | Claim Referring Physician Specialty Code | \n\n | 37 | CLM_MCO_PD_SW | Claim MCO Paid Switch | \n\n | 38 |",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

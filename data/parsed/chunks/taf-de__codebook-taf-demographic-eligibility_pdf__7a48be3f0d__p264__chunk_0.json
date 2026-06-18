@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p264__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 264,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n224 \nPHRMCY_PAHP_MOS \nLABEL: \nPharmacy Prepaid Ambulatory Health Plan (PAHP) Months \nDESCRIPTION: Number of months the beneficiary was enrolled in a Pharmacy Prepaid Ambulatory Health Plan (PAHP) \nManaged Care Plan in the calendar year. \nSHORT NAME: PHRMCY_PAHP_MOS \nLONG NAME: PHRMCY_PAHP_MOS \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nManaged Care \nSOURCE: \nT-MSIS annual",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

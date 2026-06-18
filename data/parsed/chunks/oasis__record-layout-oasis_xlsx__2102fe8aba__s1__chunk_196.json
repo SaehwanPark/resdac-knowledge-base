@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_196",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 7 x x\nM0246_PMT_DGNS_ICD_E4_CD (M0246) Optional - Case Mix Diagnosis Optional field to capture the Case Mix Diagnosis. Effective August 2008. CHAR 7 x x\nM0246_PMT_DGNS_ICD_F3_CD (M0246) Case Mix Dgns for PPS Pymnt rplcd by V-Cd in M0240 F Optional field to capture the Case Mix Diagnosis for PPS Payment if payment diagnosis is replaced 'V-Code' in M0240 F. Effective August 2008. CHAR 7 x x\nM0246_PMT_DGNS_ICD_F4_CD (M0246) Optional - Case Mix Diagnosis Optional field to capture the Case Mix",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

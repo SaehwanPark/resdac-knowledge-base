@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p79__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 79,
+  "text": "(in the IP, SNF, HHA, hospice and HOP files) \nLONG NAME: CLM_CLNCL_TRIL_NUM \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nCMS is requesting the clinical trial number be voluntarily reported. The number is assigned by the \nNational Library of Medicine (NLM) Clinical Trials Data Bank when a new study is registered. \nThis field was effective September 1, 2008, for carrier and DME claims. Starting October 2023, this \nfield is also available on institutional claims, i.e., inpatient,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

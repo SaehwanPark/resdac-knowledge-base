@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_46",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "non-applicable - no MR/DD. 0 = No, 1 = Yes, \"-\" = Unknown\n90 AB10B AB10B_MR_DD_DOWNS (AB10B) Downs Syndrome CHAR 1 Demographic information: conditions related to MR/DD status - Down's Syndrome. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n91 AB10C AB10C_MR_DD_AUTISM (AB10C) Autism CHAR 1 Demographic information: conditions related to MR/DD status - autism. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n92 AB10D AB10D_MR_DD_EPI (AB10D) Epilepsy CHAR 1 Demographic information: conditions related to",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

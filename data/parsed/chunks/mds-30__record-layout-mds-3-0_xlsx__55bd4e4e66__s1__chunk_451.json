@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_451",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "the last 14 days while a resident of this facility. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern) discontinued 09/30/2023\n504 O0250A_INFLNZ_RCVD_CD O0250A_INFLNZ_RCVD_CD O0250A Influenza Received Code CHAR 1 The data in this column indicates whether the resident received the influenza vaccination in this facility. -=Not assessed/no information\n0=No\n1=Yes\n505 O0250B_INFLNZ_RCVD_DT O0250B_INFLNZ_RCVD_DT O0250B Influenza Received Date CHAR 8 The data in",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

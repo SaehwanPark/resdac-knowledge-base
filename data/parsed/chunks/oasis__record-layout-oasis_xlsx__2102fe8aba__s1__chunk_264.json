@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_264",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "x x x x\nM1302_RISK_OF_PRSR_ULCR M1302 Risk of Developing Pressure Ulcers This field indicates whether the patient has a risk of developing pressure ulcers. 0 = No, 1 = Yes CHAR 1 x x x x\nM1306_UNHLD_STG2_PRSR_ULCR M1306 Unhealed Pressure Ulcer at Least Stage II This field indicates whether the patient has at least one unhealed pressure ulcer at stage II or higher. 0 = No, 1 = Yes CHAR 1 x x x x x x\nM1307_OLDST_STG2_ONST_DT M1307 Oldest Stage II Onset Date This field indicates the date of onset",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicaid Enrollee Supplemental File — National Death Index (NDI) Segment\nVersion — April 2026\nSAS name Label Data type Data length Description Value\nBENE_ID Encrypted 723 Beneficiary ID (Unique Key) CHAR 15 A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse\nSTATE_CD State Code CHAR 2 This field specifies the state as it appeared in the Medicaid enrollment file. 2 character postal state",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

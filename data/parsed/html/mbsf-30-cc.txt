@@ -1,0 +1,13 @@
+The 30 CCW Chronic Conditions segment of the Master Beneficiary Summary File (MBSF) flags each Medicare beneficiary for the presence of one of 30 specific chronic conditions.
+What does this file include? (variable highlights)
+- Two flags for each chronic condition:- First occurrence date
+- End of year indicator
+ 
+Special considerations
+- The algorithms used to assign the flags are available from the CCW website.
+- Algorithms requiring a multiple-year look back period are completed without requiring the researcher to order multiple years of data.
+- Algorithms search data from Medicare Fee-For-Service (FFS) claims.
+- This file is a segment that can be requested in addition to the Master Beneficiary Summary File (MBSF) base file.
+- The algorithms for the 30 CCW Chronic Conditions data file use only ICD-10-CM diagnosis codes. The first full calendar year that is used to identify conditions is 2016.
+- Three new conditions are added compared with the 27 CCW version.
+- The changes to the algorithms compared with the 27 CCW version are noted on the individual variable pages and detailed descriptions of changes can be found in the Chronic Conditions File Enhancements white paper.

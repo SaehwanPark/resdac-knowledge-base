@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p97__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 97,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n81 \nDRG_PRICE_AMT \nLABEL: \nDRG Price Amount ($) \nDESCRIPTION: The amount (called the 'DRG price' for purposes of MEDPAR analysis) that would have been paid if no \ndeductibles, coinsurance, primary payers, or outliers were involved (rounded to whole dollars). \nSHORT NAME: DRGPRICE \nLONG NAME: DRG_PRICE_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

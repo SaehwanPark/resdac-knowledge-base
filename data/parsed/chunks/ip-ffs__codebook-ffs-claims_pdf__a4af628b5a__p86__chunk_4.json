@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p86__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 86,
+  "text": "bill type, and it is helpful for distinguishing between final, interim, or RAP \n(request for anticipated payment) claims, which is particularly helpful if you receive claims that are not \n“final action.” \nMany different types of services can be billed on a Part A or Part B institutional claim and knowing the \ntype of bill helps to distinguish them. The type of bill is the concatenation of three variables: the \nfacility type (CLM_FAC_TYPE_CD), the service classification type code",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

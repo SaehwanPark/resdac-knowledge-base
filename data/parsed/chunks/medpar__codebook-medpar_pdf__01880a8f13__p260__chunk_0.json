@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p260__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 260,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n244 \nVAL_CD_QB_OCM_PYMT_ADJSTMT_AMT \nLABEL: \nValue Code QB OCM + Payment Adjustment Amount \nDESCRIPTION: This field contains the QB OCM + payment adjustment amount. \nSHORT NAME: VAL_CD_QB_OCM_PYMT_ADJSTMT_AMT \nLONG NAME: VAL_CD_QB_OCM_PYMT_ADJSTMT_AMT \nTYPE: \nNUM \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the amount field (CLM VAL AMT) found in the value",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

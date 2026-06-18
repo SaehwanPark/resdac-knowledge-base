@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-npi-practice__chunk_0",
+  "source_document": "data/raw/html/dataset_page/ae5d36997a900aec079861d6a07524b88ba61ff0.html",
+  "page": null,
+  "text": "The Value Modifier (VM) NPI Practice-Level Research Identifiable File (RIF) includes one record for each eligible professional associated with a practice subject to the VM based on the given performance year. Using the RIF data, researchers can examine practice specialty composition, size, and practice changes across performance years.\nWhat does this file include? (variable highlights)\n- Practice Identifier\n- Eligible professional NPI\n- Eligible professional subject to the VM\n- Provider",
+  "dataset": "vm-npi-practice",
+  "url": "https://resdac.org/cms-data/files/vm-npi-practice?page=1"
+}

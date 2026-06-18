@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "for swing bed providers.\n6 MDS_ASMT_ID MDS_ASMT_ID Encrypted MDS Assessment Internal ID NUM 12 Unique identifier for a version of an assessment when combined with State ID.\n7 MDS_ITM_SBST_CD MDS_ITM_SBST_CD Item Subset Code (ISC) CHAR 4 This column contains the item subset code and identifies the type of assessment that was submitted. This code is derived from the values submitted in A0310A, A0310B, A0310C, A0310D and A0310F in conjunction with the value submitted in A0200 - type of provider.",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

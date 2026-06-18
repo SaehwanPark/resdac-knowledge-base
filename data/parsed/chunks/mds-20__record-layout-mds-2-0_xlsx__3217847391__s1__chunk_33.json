@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "advanced directives - medication restrictions 0 = No, 1 = Yes, \"-\" = Unknown.\n65 A10H A10H_OTH_TRT_REST (A10H) Other Treatment Restrictions CHAR 1 Identification and background information: advanced directives - other treatment restrictions 0 = No, 1 = Yes, \"-\" = Unknown.\n66 A10I A10I_NONE_ABOVE (A10I) None of the Above Advanced Directives CHAR 1 Identification and background information: advanced directives - none of above 0 = No, 1 = Yes, \"-\" = Unknown.\n67 AA2 AA2_SEX1 (AA2) Sex CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_333",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "VA07A VA07A_PSYCH_TR (VA07A) Psychosocial Well-being Triggered CHAR 1 RAP summary: psychological well-being - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n563 VA07B VA07B_PSYCH_PC (VA07B) Psychosocial Well-being Care Planning Decision CHAR 1 RAP summary: psychological well-being - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n564 VA08A VA08A_MOOD_TR (VA08A) Mood State Triggered CHAR 1 RAP",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

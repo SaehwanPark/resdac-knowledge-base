@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_77",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "the body - usually caused by cerebral hemorrhage, thrombosis, embolism, or tumor. 0 = Unchecked, 1 = Checked, -1 = Unknown\n95 I1W I1W_M_S 25e(I1w)Multiple Sclerosis CHAR 1 Indicates a diagnosis of Multiple Sclerosis - a chronic disease affecting the central nervous system with remissions and relapses of weakness, uncoordination, paresthesis, speed disturbances, and visual disturbances. 0 = Unchecked, 1 = Checked, -1 = Unknown\n96 I1Z I1Z_QUADRIPLEGIA 25f(I1z)Quadriplegia CHAR 1 Indicates a",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-clinical-and-staging__chunk_1",
+  "source_document": "data/raw/html/dataset_page/e67fb8194a56ec61aead4bd4580e766d10529ed2.html",
+  "page": null,
+  "text": "- December 31, 2021), primarily including data reported by OCM participants to the Oncology Care Model Registry (OCMR).\nWhat does this file include? (variable highlights)\n- Beneficiary ID\n- Episode Beginning Date\n- Episode Ending Date\n- OCM-Assigned Practice ID\n- OCM-Assigned Cancer Type\n- OCM 6-Month Episode Performance Period\n- ICD10 Cancer Diagnosis Code\n- Primary Tumor Staging\n- Nodal Disease Staging\n- Metastasis Staging\n- Histology\nSpecial Considerations\n- There is one row per episode and",
+  "dataset": "ocm-clinical-and-staging",
+  "url": "https://resdac.org/cms-data/files/ocm-clinical-and-staging"
+}

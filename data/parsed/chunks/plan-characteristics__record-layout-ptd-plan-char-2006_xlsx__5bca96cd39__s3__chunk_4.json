@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s3__chunk_4",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 3,
+  "text": "Tier 2\n11 Tier 3\n12 Tier 4\n13 Tier 5\n14 Tier 6\n15 Tier 7\n16 Tier 8\n17 Tier 9\n18 Tier 10\n6 Pre_ICL_coins_yn Pre-ICL Coinsurance Y/N Char 1 Indicates the type of pre-initial coverage limit cost sharing for drugs on the tier is a co-insurance percentage. Y Yes\nN No\n7 Pre_ICL_copay_yn Pre-ICL Copay YN Char 1 Indicates the type of pre-initial coverage limit cost sharing for drugs on the tier is a copayment amount. Y Yes\nN No\n8 Pre_ICL_inpp_coins_1m Pre-ICL In-Network Preferred Pharmacy Coinsurance",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

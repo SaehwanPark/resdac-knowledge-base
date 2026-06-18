@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_49",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "beneficiary was admitted 69 Char 200 Populated only for records with Inpatient_stay=1 or MSPB_episode=1\nSTATE_HOSP State of hospital at which hospitalization occurred Location (state) of hospital to which beneficiary was admitted 70 Char 200 Populated only for records with Inpatient_stay=1 or MSPB_episode=1\nPDGNS_DESC Description of principal diagnosis code for MSPB index hospitalization Description of the ICD diagnostic code determined to be chiefly responsible for beneficiary Medicare",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

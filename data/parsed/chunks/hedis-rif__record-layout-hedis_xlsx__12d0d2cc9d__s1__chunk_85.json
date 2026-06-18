@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_85",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "— —\nIHU_IP_SRGRY_DSCHRG_CNT Inpatient Hospital Utilization (IHU): Observed IP Discharges, Surgery NUM 3 162 — — — —\nIHU_IP_MDCL_DSCHRG_CNT Inpatient Hospital Utilization (IHU): Observed IP Discharges, Medical NUM 3 163 — — — —\nIHU_PPD_TOT_CMRBDTY_WT Inpatient Hospital Utilization (IHU): PPD Comorbidity Weight, Total NUM 8 164 — — — —\nIHU_PPD_SRGRY_CMRBDTY_WT Inpatient Hospital Utilization (IHU): PPD Comorbidity Weight, Surgery NUM 8 165 — — — —\nIHU_PPD_MDCL_CMRBDTY_WT Inpatient Hospital",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

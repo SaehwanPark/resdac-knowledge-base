@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_399",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "stay within the\npast 14 days. CHAR 8 x x\nM1011_14_DAY_INP5_ICD M1011 Inpatient Diagnosis5 ICD10 Code This field lists the inpatient diagnosis and ICD-10 code 5 for conditions treated during an inpatient stay within the\npast 14 days. CHAR 8 x x\nM1011_14_DAY_INP6_ICD M1011 Inpatient Diagnosis6 ICD10 Code This field lists the inpatient diagnosis and ICD-10 code 6 for conditions treated during an inpatient stay within the\npast 14 days. CHAR 8 x x\nM1011_14_DAY_ICD_NA M1011 Inpatient Diagnosis - NA",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

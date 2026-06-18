@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p39__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 39,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n33 \nHOP_BENE_PMT \nLABEL: \nHospital Outpatient Beneficiary Payments \nDESCRIPTION: This variable is the sum of Medicare coinsurance and deductible payments in the hospital outpatient \n(HOP) setting for a given year. The total beneficiary payment is calculated as the sum of the beneficiary \ndeductible amount and coinsurance amount (variables called NCH_BENE_PTB_DDCTBL_AMT and",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

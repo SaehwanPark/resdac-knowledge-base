@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p140__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 140,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n122 \nCLM_RLT_OCRNC_DT \nLABEL: \nClaim Related Occurrence Date \nDESCRIPTION: The date associated with a significant event related to an institutional claim that may affect payer \nprocessing. \nThe date for the event that appears in the claim related occurrence code field. \nSHORT NAME: OCRNCDT \nLONG NAME: CLM_RLT_OCRNC_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n—",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

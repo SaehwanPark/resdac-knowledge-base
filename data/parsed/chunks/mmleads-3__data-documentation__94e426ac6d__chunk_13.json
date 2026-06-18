@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__data-documentation__94e426ac6d__chunk_13",
+  "source_document": "data/raw/html/documentation_page/94e426ac6df090203083bffc9a6b039975585c37.html",
+  "page": null,
+  "text": "| Medicare — Long-Term Care Hospital Months (from Claims) | \n\n | 66 | MDCR_SNF_MOS | Medicare — Skilled Nursing Facility Months (from Claims) | \n\n | 67 | MDCR_NF_MOS | Medicare — Nursing Facility months (from MDS) | \n\n | 68 | MDCD_HOSPITAL_LTSS_MOS | Medicaid — Hospital LTSS Months | \n\n | 69 | MDCD_IPF_LTSS_MOS | Medicaid — IP Psych Facility for Individuals under age 21 — LTSS Months | \n\n | 70 | MDCD_NF_LTSS_MOS | Medicaid — Nursing Facility LTSS Months | \n\n | 71 | MDCD_ICF_IID_LTSS_MOS |",
+  "dataset": "mmleads-3",
+  "url": "https://resdac.org/cms-data/files/mmleads-3/data-documentation"
+}

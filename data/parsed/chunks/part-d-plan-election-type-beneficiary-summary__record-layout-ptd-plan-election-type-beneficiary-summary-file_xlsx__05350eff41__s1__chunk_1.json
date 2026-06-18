@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__record-layout-ptd-plan-election-type-beneficiary-summary-file_xlsx__05350eff41__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/05350eff416176cf3b13b42182ffebfeda1500bf.xlsx",
+  "page": 1,
+  "text": "8\nDISENRLMT_DT Beneficiary Part D Plan Disenrollment Date DATE 8\nENRLMT_TYPE_CD Part D Enrollment Type Code CHAR 1\nCONTRACT_ID Contract ID CHAR 5\nPLAN_ID Plan ID CHAR 3\nAUDT_SQNC_NUM Audit Sequential Number: Valid=0/Canceled=Greater Than 0 NUM 3",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-election-type-beneficiary-summary-file.xlsx"
+}

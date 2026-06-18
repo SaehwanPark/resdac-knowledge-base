@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p29__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 29,
+  "text": "Part D, a beneficiary qualifies for catastrophic coverage when his/her true out-of-pocket \n(TrOOP) costs reach a specific dollar threshold (for example, the threshold was $4,550 in 2010). For \nprescriptions that were filled when a beneficiary was below the out-of-pocket threshold (OOPT), this \nfield will contain a positive dollar value. For prescriptions above the OOPT, this field will contain a \nzero-dollar amount. If a prescription crosses the threshold, then the portion of the gross drug",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

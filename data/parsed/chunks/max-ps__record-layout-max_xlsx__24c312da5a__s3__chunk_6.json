@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s3__chunk_6",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 3,
+  "text": "X X X\n32 MDCD_PYMT_AMT Medicaid payment amount NUM 12 X X X\n33 TP_PYMT_AMT Third party payment amount NUM 12 X X X\n34 PYMT_DT Payment/adjudication date DATE 8 X X X\n35 CHRG_AMT Charge amount NUM 12 X X X\n36 PHP_VAL Prepaid plan value NUM 12 X X X\n37 MDCR_COINSUR_PYMT_AMT Medicare coinsurance payment amount NUM 12 X X X\n38 MDCR_DED_PYMT_AMT Medicare deductible payment amount NUM 12 X X X\n39 ADMSN_DT Admission date DATE 8 X X X\n40 SRVC_BGN_DT Beginning date of service DATE 8 X X X\n41 SRVC_END_DT",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p269__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 269,
+  "text": "carrier (DMERC); non-DMEPOS claim \n82 = DMERC; DMEPOS claim \nCOMMENT: \nThis variable may not always indicate the type of service performed; for example, when the claim type \ncode = 60 (inpatient), the services may actually be for post-acute care. Additional information \nregarding the type of service on the claim can be found in a CCW Technical Guidance document \nentitled: \"Getting Started with Medicare data\". \nNote that there is a data issue with the incorrect assignment of National Claims",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

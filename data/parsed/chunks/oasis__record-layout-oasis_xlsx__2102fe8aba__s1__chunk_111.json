@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_111",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "a month\n02 = Once a month\n03 = Several times each month\n04 = Several times a week\n05 = At least daily. CHAR 2 x x\nM0630_REC_PSYCH (M0630) Psychiatric Nursing Services Is patient receiving psychiatric nursing services at home provided by a qualified psychiatric nurse? 0 = No, 1 = Yes CHAR 1 x x\nM0640_CU_GROOMING (M0640) Current Grooming Current grooming ability to tend to personal hygiene needs. 00 = Able to groom self unaided, with or without the use of assistive devices or adapted methods\n01 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

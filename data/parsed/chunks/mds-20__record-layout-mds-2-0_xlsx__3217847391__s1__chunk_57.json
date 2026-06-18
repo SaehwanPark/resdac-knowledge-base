@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_57",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "ADL patterns - bathing in PM. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n113 AC1R AC1R_NONE_ABOVE (AC1R) None of Above ADL Patterns CHAR 1 Customary routine: ADL patterns - none of above. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n114 AC1S AC1S_CONTACT_REL (AC1S) Daily Contact with Relatives/Close Friends CHAR 1 Customary routine: involvement patterns - daily contact with relatives/friends. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n115 AC1T AC1T_ATTEND_CHURCH (AC1T) Usually Attends",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

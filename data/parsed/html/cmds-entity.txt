@@ -1,0 +1,11 @@
+The CCMI Model Data Sharing (CMDS) Entity file is one of a set of three file types (entity, provider, beneficiary) included for each model. An Entity is the Model Participant that has applied for and been accepted to participate in the model or is required by mandate to participate. The Entity has the direct relationship with CMMI and is held fiscally responsible for meeting a model’s performance goals. An Entity can be a Medicare group practice, an Accountable Care Organization, a State, or other organizations or groups of organizations.
+What does this file include? (variable highlights)
+- Model ID (in which the Entity participates)
+- Model Name (in which the Entity particpates)
+- Entity ID
+- Entity Name
+- Entity Type
+- Entity Start Date
+- Entity End Date
+The Entity ID is unique to CMMI systems and cannot be used to link to claims data or other CCW data. The Entity ID is the key field for tying CMDS Provider and Beneficiary participation data to a specific Entity and is unique across all models.
+An Entity may have an End Date of 12/31/9999, which indicates that the Entity is “currently” participating in the model.

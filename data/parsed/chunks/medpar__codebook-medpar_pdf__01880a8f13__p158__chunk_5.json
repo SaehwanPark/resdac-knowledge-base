@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p158__chunk_5",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 158,
+  "text": "the SNF PPS claim, the rate for each revenue center line item with revenue center code = '0022' is \nused; MEDPAR multiplies the rate times the units count; and then sums the amount payable for all lines \nwith revenue center code '0022' to determine the total Medicare payment amount. \nFor demo ids '01','02','03','04' — claims contain amount paid to the provider, except that special \n'differentials' paid outside the normal payment system are not included. \nFor demo ids '05','15' — encounter data",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

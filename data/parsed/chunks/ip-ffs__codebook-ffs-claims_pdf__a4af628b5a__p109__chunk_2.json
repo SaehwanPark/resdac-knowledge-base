@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p109__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 109,
+  "text": "LONG NAME: \nCLM_NEXT_GNRTN_ACO_IND_CD1 \nCLM_NEXT_GNRTN_ACO_IND_CD2 \nCLM_NEXT_GNRTN_ACO_IND_CD3 \nCLM_NEXT_GNRTN_ACO_IND_CD4 \nCLM_NEXT_GNRTN_ACO_IND_CD5\nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Base record (no enhancements) \n1 = Population based payments (PBP) \n2 = Telehealth \n3 = Post discharge home health Visits \n4 = 3-Day SNF waiver \n5 = Capitation \n6 = CEC telehealth \n7 = Care management home visits \n8 = Prospective Primary Care Payment \n9 = Home health benefit enhancement — eff.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

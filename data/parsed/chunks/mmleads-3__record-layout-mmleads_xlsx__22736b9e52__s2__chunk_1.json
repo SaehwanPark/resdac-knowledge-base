@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 2,
+  "text": "Medicaid Eligibility Type Code Num 8\n5 SAMPLE_GRP Sample Group Indicator - 1% Num 8\n6 MDCR_TOTAL_FFS_USE Medicare Use (FFS Claim Count) - Total Num 8\n7 MDCR_TOTAL_SPEND Medicare Payment Amount - Total Num 8\n8 MDCR_TOTAL_FFS_SPEND Medicare FFS Payment Amount - Total Num 8\n9 MDCD_TOTAL_USE Medicaid Use (Claim Count) - Total Num 8\n10 MDCD_TOTAL_SPEND Medicaid Payment Amount - Total Num 8\n11 MDCD_TOTAL_NON_CAPTD_SPEND Medicaid Payment Amount - Non Capitated Total Num 8\n12 MDCR_PTA_TOTAL_FFS_USE",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

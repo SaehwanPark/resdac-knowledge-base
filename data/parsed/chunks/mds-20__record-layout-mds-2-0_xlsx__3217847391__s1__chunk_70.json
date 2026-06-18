@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_70",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = Behavior not present, 1 = Behavior present, not of recent onset, 2 = Behavior present, over last seven days appears different from resident's usual functioning (e.g., new onset or worsening), \"-\" = Unknown, -2 = Space.\n136 B6 B6_CHANG_COG_STAT (B6) Change in Cognitive Status CHAR 1 Cognitive patterns: indicators of delirium - change in congitive status as compared to status 90 days ago 0 = No change, 1 = Improved, 2 = Deteriorated. \"-\" = Unknown, -2 = Space.\n137 C1 C1_HEARING (C1) Hearing",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_59",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0290) Heavy Smoking High risk factors characterizing this patient: heavy smoking. 0 = No, 1 = Yes CHAR 1 x x\nM0290_RSK_NONE (M0290) None of Above High Risk Factors High risk factors characterizing this patient: none of the above. 0 = No, 1 = Yes CHAR 1 x x\nM0290_RSK_OBESITY (M0290) Obesity High risk factors characterizing this patient: obesity. 0 = No, 1 = Yes CHAR 1 x x\nM0290_RSK_UK (M0290) Unknown High Risk Factors High risk factors characterizing this patient: unknown. 0 = No, 1 = Yes CHAR",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_63",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(B3C) Staff Names/Faces CHAR 1 Cognitive patterns: memory/recall ability - staff names/faces. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n127 B3D B3D_IN_HOME (B3D) That He/She is in Nursing Home CHAR 1 Cognitive patterns: memory/recall ability - that he/she is in nursing home. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n128 B3E B3E_NONE_ABOVE (B3E) None of Above are Recalled CHAR 1 Cognitive patterns: memory/recall ability - none of above 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n129 B4",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

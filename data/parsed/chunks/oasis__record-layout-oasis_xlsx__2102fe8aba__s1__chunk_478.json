@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_478",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "or at any time since the most recent SOC/ROC assessment. 0 = No\n1 = Yes\nNA = Patient not taking any drugs CHAR 2 x x\nM2301_EMER_USE_AFTR_LAST_ASMT M2301 Emergent Care Since Last OASIS This field indicates whether the patient has utilized a hospital emergency department or observation unit since the last time OASIS data were collected. 00 = No\n01 = Yes, used hospital emergency department WITHOUT hospital admission\n02 = Yes, used hospital emergency department WITH hospital admission\nUK = Unknown",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

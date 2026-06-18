@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_17",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "Amount | \n\n | 101 | DDCTBL_AMT | Beneficiary Deductible Amount | \n\n | 102 | COPAY_WVD_IND | Indicator Signifying Copay was Waived by Provider | \n\n | 103 | TP_PD_AMT | Total Third Party Liability Paid Amount | \n\n | 104 | TP_COINSRNC_PD_AMT | Third Party Coinsurance Paid Amount | \n\n | 105 | TP_COPAY_PD_AMT | Third Party Copayment Paid Amount | \n\n | 106 | OTHR_INSRNC_PD_AMT | Total Other Than Medicare or Medicaid -Insurance Paid Amount | \n\n | 107 | OTHR_TP_CLCTN_CD | Other Third Party Collection",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

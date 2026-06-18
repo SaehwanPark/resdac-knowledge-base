@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_109",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "of blood or any blood products which are administered directly into the bloodstream. 0 = Unchecked, 1 = Checked, -1 = Unknown\n141 P1AL P1AL_VENTILATOR 38ai(P1al)Special Care - Ventilator or Respirator CHAR 1 Indicates the patient received ventilator or respirator treatment. Includes any type of electrically or pneumatically powered closed system mechanical ventilatory support devices. 0 = Unchecked, 1 = Checked, -1 = Unknown\n142 P1BAA P1BAA_SPCH_THR_DAY 38baA(P1baA)Speech Language Pathology &",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_195",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- hyperthyroidism. 0 = No, 1 = Yes, \"-\" = Unknown.\n281 I1BB I1BB_TIA (I1BB) Transient Ischemic Attack CHAR 1 Disease diagnosis: diseases - nerological - transient ischemic attack (TIA). 0 = No, 1 = Yes, \"-\" = Unknown.\n282 I1C I1C_HYPOTHYRD (I1C) Hypothyroidism CHAR 1 Disease diagnosis: diseases - endocrine/metabolic/nutritional - hypothyroidism. 0 = No, 1 = Yes, \"-\" = Unknown.\n283 I1CC I1CC_BRAIN_INJURY (I1CC) Traumatic Brain Injury CHAR 1 Disease diagnosis: diseases - nerological - traumatic",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

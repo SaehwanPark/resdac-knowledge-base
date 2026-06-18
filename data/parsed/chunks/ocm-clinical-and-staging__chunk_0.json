@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-clinical-and-staging__chunk_0",
+  "source_document": "data/raw/html/dataset_page/e67fb8194a56ec61aead4bd4580e766d10529ed2.html",
+  "page": null,
+  "text": "The Oncology Care Model (OCM) Clinical and Staging file includes information about the episodes, the practice ID to which they were attributed, their beginning and end dates, their cancer types, and the clinical and staging characteristics that were required to be reported.\nThis file contains data for the third through eleventh OCM performance periods (episodes initiating July 2, 2017 - December 31, 2021), primarily including data reported by OCM participants to the Oncology Care Model Registry",
+  "dataset": "ocm-clinical-and-staging",
+  "url": "https://resdac.org/cms-data/files/ocm-clinical-and-staging"
+}

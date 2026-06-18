@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p111__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 111,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n71 \nENRLMT_START_DT \nLABEL: \nEnrollment Start Date (Within Calendar Year) \nDESCRIPTION: Indicates the date at which a beneficiary’s enrollment in Medicaid or CHIP became effective. If the \nenrollment episode begins before January 1 of the calendar year, this date is edited to January 1 of the \ncalendar year. \nSHORT NAME: ENRLMT_START_DT \nLONG NAME: ENRLMT_START_DT",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

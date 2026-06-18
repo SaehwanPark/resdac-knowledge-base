@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_203",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Residence\n162 _44B DSCHRG_WTH_HOME_HLTH_SRVC_SW (44B) Was Patient Discharged with Home Health Services? CHAR 1 A code indicating whether the patient was discharged with Home Health Services (if the patient was discharged to a community-based setting, i.e., Item 44A is coded 01 - Home; 02 - Board and Care; 03 - Transitional Living; 14 - Assisted Living Residence). 0 = No, 1 = Yes\n163 _45 DSCHRG_TO_LVG_WTH_CD (45) Discharge to Living With CHAR 2 A code which indicates with whom the resident will",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

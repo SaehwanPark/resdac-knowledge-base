@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p106__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 106,
+  "text": "dialysis services where the patient and helper (if necessary) \nwere learning to perform dialysis. \n74 = Home — Billing is for a patient who received dialysis services at home. \n75 = Home dialysis patient using a dialysis machine that was purchased under the 100% program. \n76 = Back-up in facility dialysis — Billing is for a patient who received dialysis services in a back-up \nfacility. \nCOMMENT: \nThis field is derived by checking for condition codes 70–76 on any of the claim records included in",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

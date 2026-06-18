@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Indicator - July CHAR 1\nESRD_IND_08 ESRD Indicator - August CHAR 1\nESRD_IND_09 ESRD Indicator - September CHAR 1\nESRD_IND_10 ESRD Indicator - October CHAR 1\nESRD_IND_11 ESRD Indicator - November CHAR 1\nESRD_IND_12 ESRD Indicator - December CHAR 1\nSSA_DIB_AWD_CD SSA Disability Insurance Benefit Award Code CHAR 1\nSSA_DIB_JSTFCTN_CD SSA Disability Insurance Benefit Entitlement to Medicare Justification Code CHAR 1\nSSA_DIB_PRMRY_IMPRMNT_CD SSA Disability Insurance Benefit Dx Primary Impairment Code",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

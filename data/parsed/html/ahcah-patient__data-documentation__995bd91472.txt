@@ -1,0 +1,19 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| FAC_DATA_SUBMSN_DT | Facility Data Submission Date | 
+| CCN | CMS Certification Number (Facility Provider Number) | 
+| PRVDR_STATE | Provider State | 
+| FAC_TIER | Tier 1: 25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients | 
+| STATE_BENE_MDCD_ID | Encrypted State-Specific Medicaid Beneficiary ID | 
+| PGM_ID | Program Identifier (1=FFS Medicare; 2=FFS Medicaid; 3=Dual) | 
+| ADMSN_DT | Facility Admission Date | 
+| AHCAH_WVR_SUBMSN_ID | AHCAH Waiver Submission ID | 
+| PRVDR_NAME | Name of Facility | 
+| PRVDR_PHNE_NUM | Facility Phone Number | 
+| PRVDR_ADR | Facility Location Address | 
+| PRVDR_CITY | Facility Location City | 
+| PRVDR_ZIP_CD | Facility Location Zip Code |

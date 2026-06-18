@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p193__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 193,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n173 \nMSIS_ID \nLABEL: \nEncrypted State Assigned Beneficiary Unique Identifier \nDESCRIPTION: A state-assigned unique identification number used to identify a Medicaid/CHIP enrolled beneficiary \nand any claims submitted to the system. Also referred to as the Medicaid Statistical Information \nSystem Identifier (MSIS_ID). \nSHORT NAME: MSIS_ID \nLONG NAME: MSIS_ID \nTYPE: \nCHAR \nLENGTH: \n32",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

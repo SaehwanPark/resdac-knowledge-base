@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p79__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 79,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n73 \nPTD_TOTAL_RX_CST \nLABEL: \nPart D Total Prescription Costs \nDESCRIPTION: This variable is the gross drug cost (TOT_RX_CST_AMT) of all Part D drugs for a given year. This value \nincludes the ingredient cost, dispensing fee, sales tax (if applicable), and vaccine administration fee (if \nany, 2010+ only). \nSHORT NAME: — \nLONG NAME: PTD_TOTAL_RX_CST \nTYPE: \nNUM \nLENGTH: \n12",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

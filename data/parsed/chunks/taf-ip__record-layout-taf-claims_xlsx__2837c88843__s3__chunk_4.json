@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_4",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Insured is Covered by Another Plan (Not Medicare or Medicaid) CHAR 1 23\nSECT_1115A_DEMO_IND 1115(A) Demonstration Participation Indicator CHAR 1 24\nSRVC_BGN_DT Claim Beginning Date of Service DATE 8 25\nSRVC_END_DT Claim Ending Date of Service DATE 8 26\nSRVC_END_DT_CD Identifies the Date Field Used to Populate SRVC_END_DT CHAR 1 27\nDGNS_CD_1 Primary or Principal Diagnosis Code CHAR 7 28\nDGNS_VRSN_CD_1 Diagnosis Version Code 1 (ICD-9 or ICD-10) CHAR 1 29\nDGNS_POA_IND_1 Diagnosis 1 Present on",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

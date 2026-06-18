@@ -1,0 +1,23 @@
+CMS has created a set of analytical files that contain data from the Medicare Shared Saving Program. There are two separate files in this data set:
+- The Shared Savings Program Beneficiary-Level Research Identifiable File (RIF)
+- The Shared Savings Program Provider-Level RIF
+What does this file include? (variable highlights)
+- ACO ID
+- Assigned in Preliminary/Prospective Assignment Period
+- Assigned in Quarter 1
+- Assigned in Quarter 2
+- Assigned in Quarter 3
+- Assigned in Quarter 4
+- Assigned in Final Reconciliation
+- Part D Eligible Months
+- HICN (populated in PY2013-PY2019/2019-A)
+- Date of birth
+- Date of death
+- Sex
+- Race
+- Medicare Beneficiary Identifier (MBI)
+Special considerations
+- This file can be linked to any other CMS file that includes the Bene ID.
+- These files differ from the monthly Claim and Claim Line Feed (CCLF) files active Shared Savings Program ACOs receive from CMS. CCLF files include claims for the ACO’s assigned or assignable beneficiary population. The purpose of the CCLFs is to assist active Shared Savings Program ACOs with coordination of care. In contrast, Shared Savings Program Beneficiary-Level RIFs are statistics on beneficiaries and services included in each ACOs annual reconciliation. CCLF files cannot be linked to the Shared Savings Program Provider or Beneficiary RIFs.
+- Shared Savings Program RIFs do not include data for models such as ACO Realizing Equity, Access and Communication Health (ACO REACH) or Kidney Care Choices (KCC) models.
+- All technical questions related to the Shared Savings Program should be directed to the ACO Information Center at [email protected].

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p211__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 211,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n193 \nIME_OP_CLM_VAL_AMT \nLABEL: \nOperating Indirect Medical Education (IME) Amount \nDESCRIPTION: This is one component of the total amount that is payable on PPS claims, and reflects the IME (indirect \nmedical education) payments for operating expenses (such as labor) for the claim. \nThere are two types of IME amounts that may be payable for many PPS claims; the other type of",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,12 @@
+The eleven model alignment files contain the point-in-time eligibility and alignment status of model beneficiaries, and a list of eligible-but-not-enrolled patients for participating practice reporting. These alignment validation files, also known as Enrollment, Validation, Alignment, and Adjudication (EVAA) files, were generated semi-annually throughout the duration of the model, each October and April. There were a total of 10 EVAA analytical cycles, between October 2017 and April 2022. The model alignment file names indicate the cycle number (01-10) and the year and month of the cycle. In addition, there is a final model alignment file that represents the alignment status of model beneficiaries at the end of the model.
+What does this file include? (variable highlights)
+- Model-Assigned Practice ID
+- Practice Name
+- Practice TIN
+- Unique Model-Assigned Patient ID
+- Aligned Flag
+- Eligible Flag
+- Patient Status Change Reason Code
+A record represents the eligibility and alignment status of a beneficiary.
+The Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link to other CCW non-Million Hearts® files.
+The Model-Assigned Practice ID can be used to link all Million Hearts® data files for provider-oriented analytics. It does not link to other CCW provider data.

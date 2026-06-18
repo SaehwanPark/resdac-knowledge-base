@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_866",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "provided the patient’s current reconciled medication list to the patient, family and/or caregiver. 0. No– Current reconciled medication list not provided to the patient, family and/or caregiver\n1. Yes – Current reconciled medication list provided to the patient, family and/or caregiver\n^ . Blank CHAR 1 x\nA2124A_ROUTE_RSDNT_EHR_CD Patient Trans - Electronic Health Record Indicate whether the route(s) of transmission of the current reconciled medication list to the patient, family and/or",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

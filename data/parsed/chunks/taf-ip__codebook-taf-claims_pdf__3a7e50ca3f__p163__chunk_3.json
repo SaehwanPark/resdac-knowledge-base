@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p163__chunk_3",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 163,
+  "text": "for the \nTool and Documentation” portion of the page: \nhttps://www.hcup-us.ahrq.gov/toolssoftware/ccsr/prccsr.jsp. \nCMS used the CCSR v2021.2 software to populate this field. CCSR uses the first three characters to \nindicate which of the 31 clinical domains applies. In the TAF the CCSR was mapped to the OT line \nProcedure Code (variable called LINE_PRCDR_CD) The 31 clinical domains are: \nAbbreviation \nCCSR Clinical Domain \nADM = Administration of Therapeutic Substances \nCAR = Cardiovascular",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

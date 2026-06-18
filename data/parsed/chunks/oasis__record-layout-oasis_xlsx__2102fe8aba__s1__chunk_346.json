@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_346",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "00 = No assistance needed in this area\n01 = Caregiver(s) currently provides assistance\n02 = Caregiver(s) need training/supportive services to provide assistance\n03 = Caregiver(s) not likely to provide assistance\n04 = Unclear if caregiver(s) will provide assistance\n05 = Assistance needed, but no caregiver(s) available CHAR 2 x\nM2100_CARE_TYPE_SRC_IADL M2100 Care Management- IADL Assistance This field indicates the level of caregiver ability and willingness to provide IADL assistance. 00 = No",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

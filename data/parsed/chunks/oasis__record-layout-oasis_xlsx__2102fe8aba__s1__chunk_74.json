@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_74",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "person(s): unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0360_PRI_CAREGVR (M0360) Primary Caregiver Primary caregiver taking lead responsibility. 00 = No one person.\n01 = Spouse or significant other.\n02 = Daughter or son.\n03 = Other family member.\n04 = Friend or neighbor or community or church member.\n05 = Paid help.\nUK = Unknown. CHAR 2 x x\nM0370_FREQ_PRM_AST (M0370) Frequency Patient Receives Assistance How often does patient receive assistance from primary caregiver. 01 = Several times during day and",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

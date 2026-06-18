@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p76__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 76,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n36 \nDEATH_IND \nLABEL: \nIndicator that Beneficiary Died During the Calendar Year \nDESCRIPTION: A flag to indicate whether the beneficiary was deceased in the calendar year of the data file, or in a \nprior year. \nSHORT NAME: DEATH_IND \nLONG NAME: DEATH_IND \nTYPE: \nNUM \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES:",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

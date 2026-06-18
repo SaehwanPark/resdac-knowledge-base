@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_377",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Pressure Ulcer Present on Admission Number CHAR 1 The data in this column indicates the number of Stage 4 pressure ulcers that were present on admission/entry or reentry. 0 Minimum\n9 Maximum\n- Not assessed/no information\n422 M0300E1_UNSTGBL_ULCR_DRSNG_NUM M0300E1_UNSTGBL_ULCR_DRSNG_NUM M0300E1 Unstageable Pressure Ulcer Due To Dressing Number CHAR 1 The data in this column indicates the current number of unstageable pressure ulcers due to non-removable dressing or device. 0 Minimum\n9 Maximum\n-",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p73__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 73,
+  "text": "services on the claim. This data \nelement is reported only when the claim does not differentiate among copayment, coinsurance, \nand/or deductible payments made by the beneficiary. Does not include beneficiary cost sharing \npayments made by a third party/ies on behalf of the beneficiary. \nSHORT NAME: CMBND_BENE_CST_SHRNG_PD_AMT \nLONG NAME: CMBND_BENE_CST_SHRNG_PD_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES:",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

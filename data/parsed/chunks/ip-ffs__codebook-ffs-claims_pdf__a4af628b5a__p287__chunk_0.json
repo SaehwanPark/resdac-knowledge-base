@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p287__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 287,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n269 \nOP_PHYSN_UPIN \nLABEL: \nClaim Operating Physician UPIN Number \nDESCRIPTION: On an institutional claim, the unique physician identification number (UPIN) of the physician who \nperformed the principal procedure. This element is used by the provider to identify the operating \nphysician who performed the surgical procedure. \nNPIs replaced UPINs as the standard provider",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

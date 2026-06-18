@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p41__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 41,
+  "text": "LENGTH: \n60 \nFILE(S): \nAPR license \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nAlphanumeric character string (e.g., 1, 01, ACCREDITATION, BOARD OF MEDICINE, CLIA) \nCOMMENT: \nThe type of license is indicated in the LCNS_TYPE_CD field. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

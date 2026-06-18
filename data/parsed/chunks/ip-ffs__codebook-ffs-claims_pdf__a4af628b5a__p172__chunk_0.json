@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p172__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 172,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n154 \nDMERC_LINE_MTUS_CNT \nLABEL: \nDMERC Line Miles/Time/Units/Services (MTUS) Count \nDESCRIPTION: The count of the total units associated with services needing unit reporting such as number of \nsupplies, volume of oxygen or nutritional units. \nThis is a line-item field on the DMERC claim and is used for both allowed and denied services. \nSHORT NAME: DME_UNIT \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

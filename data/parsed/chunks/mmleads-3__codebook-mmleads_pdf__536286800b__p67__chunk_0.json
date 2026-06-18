@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p67__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 67,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n56 \nMDCD_STATE_CD_01 \nMDCD_STATE_CD_02 \nMDCD_STATE_CD_03 \nMDCD_STATE_CD_04 \nMDCD_STATE_CD_05 \nMDCD_STATE_CD_06 \nMDCD_STATE_CD_07 \nMDCD_STATE_CD_08 \nMDCD_STATE_CD_09 \nMDCD_STATE_CD_10 \nMDCD_STATE_CD_11 \nMDCD_STATE_CD_12 \nLABEL: \nMedicaid — State Alpha Abbreviation — January–December (01–12) \nDESCRIPTION: This variable is the Medicaid beneficiary’s state for the month. \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS DE file",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

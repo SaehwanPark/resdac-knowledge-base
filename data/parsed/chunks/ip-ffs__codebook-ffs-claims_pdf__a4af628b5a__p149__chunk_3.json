@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p149__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 149,
+  "text": "Federally Qualified Health Center \n(FQHC) \nFor facility type code 8 (special facility): \n1 = Hospice (non-hospital based) \n2 = Hospice (hospital based) \n3 = Ambulatory surgical center (ASC) in \nhospital outpatient department \n4 = Freestanding birthing center \n5 = Critical Access hospital — outpatient services \n7 = Freestanding Non-residential Opioid Treatment \nPrograms (eff. 1/2021)\nCOMMENT: \nThis field, in combination with the facility type code (variable called CLM_FAC_TYPE_CD) indicates the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

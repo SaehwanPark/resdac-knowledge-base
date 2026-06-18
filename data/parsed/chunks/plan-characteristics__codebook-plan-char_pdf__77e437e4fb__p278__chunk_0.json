@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p278__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 278,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n264 \nPRE_ICL_MO_COPAY_1M \nLABEL: \nPre-ICL Copay Standard Mail Order — One-Month Supply \nDESCRIPTION: This variable identifies the beneficiary copay amount for a one-month supply of the drugs on this tier, \nusing a standard mail order pharmacy during the pre-initial coverage limit (ICL) phase of the Part D \nbenefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 \n\n13 \nREASSIGN_JAN \nLABEL: \nBeneficiary Newly Reassigned for January Plan \nDESCRIPTION: This variable indicates whether the plan reassignment occurred in January of the reference year. \nThis variable is populated only if the beneficiary was newly reassigned for their January plan, \nregardless if they opted out of the re-assignment. This flag resets yearly. \nTYPE: \nCHAR",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

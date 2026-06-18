@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p267__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 267,
+  "text": "day count < LOS day count \n2 = Utilization day count > LOS day count \nWarning indicator 5 ('single/multiple claim indicator' derived when the stay record is created by \nchecking the number of final action claims that comprise the stay): \n0 = Stay includes a single final action claim \n1 = Stay includes multiple final action claims \n2 = Stay includes multiple final action claims and beneficiary is still a patient (applicable to SNF stays \nonly) \nWarning indicator 6 ('intermediary cancel",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,13 @@
+The CMMI Model Data Sharing (CMDS) Beneficiary file is one of a set of three files types (entity, provider, beneficiary) included for each model. A Beneficiary is someone who is entitled to health services under a federal health insurance plan. A Beneficiary is associated with an Entity and is not tied to a specific Provider, but rather to the set of providers in an entity group.
+What does this file include? (variable highlights)
+- Model ID (with which the Beneficiary is associated)
+- Entity ID (with which the Beneficiary is associated)
+- CCW Beneficiary ID
+- Beneficiary Start Date
+- Beneficiary End Date
+- Beneficiary Operational End Date
+- Voluntary Alignment Indicator
+The Entity ID is the only key field needed to link a Beneficiary to their Entity.
+The Beneficiary file also contains the CCW Beneficiary ID that can be used to link to claims and other relevant CCW data.
+A Beneficiary may have an End Date of 12/31/9999, which indicates that the Beneficiary is “currently” participating in the model.
+The “Beneficiary Operational End Date” field is only applicable to models with defined-length beneficiary episodes, such as the Oncology Care Model (OCM), so it will not be populated for many models’ beneficiary data. For these kinds of defined-length episodic models, the “Beneficiary Operational End Date” variable represents the end date for a full-length beneficiary episode, regardless of whether or not the beneficiary’s provider organization remains in the model for its entire duration. If a participating provider leaves the model before the end of the full episode, the field “Beneficiary End Date” would match the field “Entity End Date”, but the field “Beneficiary Operational End Date” would reflect any additional time the Beneficiary is in the model after the Entity leaves.

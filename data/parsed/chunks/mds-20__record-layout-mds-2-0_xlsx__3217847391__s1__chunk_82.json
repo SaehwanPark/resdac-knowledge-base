@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_82",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "\"-\" = Unknown; -2 = Space.\n154 D2A D2A_SIDE_VISN_PROB (D2A) Side Vision Problems CHAR 1 Vision Patterns: visual limitations/difficulties - side vision problems. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n155 D2B D2B_FLASHES_LIGHT (D2B) Experiences Seeing Halos/Rings Around Light/Flashes of Light CHAR 1 Vision Patterns: visual limitations/difficulties - sees halos/rings/flashes/curtains. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n156 D2C D2C_NONE_ABOVE (D2C) None of Above Visual Limitations",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

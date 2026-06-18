@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_283",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Admission Number CHAR 1 The number of stage 4 pressure ulcers at discharge that were unstageable at admission.\n274 DML_IND DML_IND I2900A Diabetes Mellitus Code CHAR 1 The code for whether the patient had a diagnosis of Diabetes Mellitus. -=Not assessed/no information\n0=No\n1=Yes\n275 DBTC_RETINOPATHY_IND DBTC_RETINOPATHY_IND I2900B Diabetic Retinopathy Code CHAR 1 The code for whether the patient had an active diagnosis of diabetic retinopathy.\n276 BB0700_EXPRSN_IDEA_WNT_IND",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

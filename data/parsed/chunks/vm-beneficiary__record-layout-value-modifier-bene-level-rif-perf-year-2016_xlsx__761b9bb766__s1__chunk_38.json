@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "not equal to missing\nHOSP_NAME Name of hospital at which hospitalization occurred Name of hospital to which beneficiary was admitted 54 Char 200 Populated only for records with Inpatient_stay=1 or MSPB_episode=1\nINPATIENT_STAY Inpatient stay for beneficiary attributed for per capita cost and claims-based quality outcome measures Indicator for whether record corresponds to inpatient stay for beneficiary attributed for per capita cost and claims-based quality outcome measures 55 Num 8 Populated",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

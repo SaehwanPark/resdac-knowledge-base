@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p6__chunk_3",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 6,
+  "text": "proprietary NCPDP_ID) that will \nallow linkage between the PDE and Pharmacy Characteristics Files. \nBeginning with 2014 data, the NCPDP_ID is used in place of the CCW_PHARM_ID. Researchers who \nreceived CCW data from 2006–2013 and wish to identify the NCPDP_ID associated with the \nCCW_PHARM_ID may request the “Pharmacy Bridge File”, which is designed for this purpose. \nThis variable is populated by linking the service provider identification number (SRVC_PRVDR_ID) from \nthe source PDE to the",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

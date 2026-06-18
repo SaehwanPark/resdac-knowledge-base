@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_190",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Mandated by HIPAA as a unique provider number assigned for each health care provider to be used in standard electronic health care transactions. Effective August 2008. CHAR 10 x x x x x x\nM0110_EPSD_TIMING_CD (M0110) Episode Timing Medicare home health payment episode for which this assessment will define a case mix group an \"early\" episode or a \"later\" episode. Effective August 2008. 1 = Early\n2 = Later\nUK = Unknown\nNA = Not Applicable: No Medicare case mix group to be defined by this",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

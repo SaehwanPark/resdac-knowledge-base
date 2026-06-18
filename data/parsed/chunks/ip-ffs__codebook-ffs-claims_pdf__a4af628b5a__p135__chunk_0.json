@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p135__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 135,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n117 \n*******Home Health Pricer Return Codes************ \n*****TOB 32X or 33X, DOS 10/1/2000 and after****** \nHome health payment return codes: \n00 = Final payment where no outlier \napplies \n01 = Final payment where outlier \napplies \n03 = Initial percentage payment, 0% \n04 = Initial percentage payment, 50% \n05 = Initial percentage payment, 60% \n06 = LUPA payment only \n07 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p311__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 311,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n293 \nThe sixth position of the provider number is as follows: \nE = Non-federal emergency hospital \nF = Federal emergency hospital \nCOMMENT: \nEffective October 1, 2007, the OSCAR Provider Number has been renamed the CMS Certification \nNumber (CCN). The name was changed to avoid confusion with the National Provider Identifier (NPI). \nThe CCN will continue to play a critical",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

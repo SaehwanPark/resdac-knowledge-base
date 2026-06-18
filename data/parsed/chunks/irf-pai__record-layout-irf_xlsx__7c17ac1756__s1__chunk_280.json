@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_280",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "is X.1-X.4 round down, X.5 or greater round up\n270 WT_NUM WT_NUM 26A Weight Number CHAR 3 This column documents the patient's weight (in pounds) at admission. If measurement is X.1-X.4 round down, X.5 or greater round up\n271 DSCHRG_ALIVE_IND DSCHRG_ALIVE_IND 44C Discharged Alive CHAR 1 This column documents whether the patient was discharged alive. 0 - No\n1 - Yes\n272 DSCHRG_DSTNTN_CD DSCHRG_DSTNTN_CD 44D Discharge Destination Code CHAR 2 This column documents the patient's discharge",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_42",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "beneficiary was prospectively assigned to the ACO through voluntary alignment and = 0 if the beneficiary was not prospectively assigned to the ACO through voluntary alignment.\nA beneficiary may be both voluntarily aligned to the ACO and assigned through claims-based assignment and may have a flag designating they were assigned through both methods. NUM 1 - - - - - - - - - x x\nCBA_FLAG Claims-Based Assignment Flag 0/1 flag; = 1 if the beneficiary was assigned to the ACO through claims-based",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

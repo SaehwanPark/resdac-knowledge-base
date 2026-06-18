@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p3__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 3,
+  "text": "FI_NUM, \nREV_CNTR \n1.9 \nApril 2022 \nK. Schneider \nA. Sisco \nA. Meyer \nAdded values and corresponding descriptions for \nAT_PHYSN_SPCLTY_CD, OP_PHYSN_SPCLTY_CD, \nOT_PHYSN_SPCLTY_CD, RFR_PHYSN_SPCLTY_CD, \nRNDRNG_PHYSN_SPCLTY_CD, CLM_NEXT_GNRTN_ACO_IND_CD1- \nCLM_NEXT_GNRTN_ACO_IND_CD5, CLM_RLT_COND_CD, \nCLM_SRVC_CLSFCTN_TYPE_CD, DEMO_ID_NUM, \nLINE_OTHR_APLD_IND_CD1- LINE_OTHR_APLD_IND_CD7, REV_CNTR. \nAdjusted historical values and formatting for CARR_NUM and \nFI_NUM. Corrected values for",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

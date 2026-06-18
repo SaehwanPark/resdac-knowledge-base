@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p32__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 32,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n27 \nTERTIARY_DISPENSER_TYPE \nLABEL: \nPharmacy Tertiary Dispenser Type Code \nDESCRIPTION: This variable describes the tertiary type of pharmacy that filled the prescription, if applicable. \nProviders are not required by NCPDP to specify a tertiary dispenser type. \nSHORT NAME: — \nLONG NAME: TERTIARY_DISPENSER_TYPE \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n\n01 = Community/retail",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Adult Child (DAC) Field Only\nNull/missing – no record of SSA disability determination\nD_DISABILITY_PRIMARY_CD SSA Disability Insurance Benefit Diagnosis Primary Impairment Code see SSA website: https://secure.ssa.gov/poms.nsf/lnx/0426510015\nD_DISABILITY_SECONDARY_CD SSA Disability Insurance Benefit Secondary Impairment Code see D_DISABILITY_PRIMARY_CD\nD_MEDICARE_RACE Medicare Beneficiary Race Code\n(modified using RTI algorithm) 0 - Unknown\n1 - Non-Hispanic White\n2 - Black (or African",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

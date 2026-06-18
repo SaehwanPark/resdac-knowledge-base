@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_158",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "‾ ‾ ‾ ‾ X Populated with Zero or '99'\n684 TMSIS_ELG_GRP_MO_12 T-MSIS Eligibility Group - Month 12 CHAR 2 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zero or '99'\n685 TMSIS_ELG_GRP_LTST T-MSIS Eligibility Group- most recent CHAR 2 ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ ‾ X Populated with Zero or '99'\n1 Year of Data File - for all columns under \"Year of Data File\": X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values)",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

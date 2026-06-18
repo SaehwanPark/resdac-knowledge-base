@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p259__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 259,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n241 \nNCH_BENE_IP_DDCTBL_AMT \nLABEL: \nNCH Beneficiary Inpatient (or other Part A) Deductible Amount \nDESCRIPTION: The amount of the deductible the beneficiary paid for inpatient services, as originally submitted on the \ninstitutional claim. \nUnder Part A, the deductible applies only to inpatient hospital care (whether in an acute care facility, \ninpatient psychiatric facility",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

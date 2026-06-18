@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_103",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= NA - Patient nonresponsive. CHAR 2 x x\nM0580_WHEN_ANXIOUS (M0580) When Anxious When anxious (reported or observed). 00 = None of the time\n01 = Less often than daily\n02 = Daily, but not constantly\n03 = All of the time\nNA = NA - Patient nonresponsive. CHAR 2 x x\nM0590_DP_MOOD (M0590) Depressed Mood Depressive feelings: depressed mood. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_HOPELESS (M0590) Hopelessness Depressive feelings: hopelessness. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_NONE (M0590) None of the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

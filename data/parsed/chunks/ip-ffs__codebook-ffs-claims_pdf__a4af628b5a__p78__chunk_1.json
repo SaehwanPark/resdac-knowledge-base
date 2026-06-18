@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p78__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 78,
+  "text": "bundling payments. The \ninitiative if referred to as the Bundled Payments for Care Improvement initiative (BPCI). \nSHORT NAME: \nCLM_CARE_IMPRVMT_MODEL_CD1 \nCLM_CARE_IMPRVMT_MODEL_CD2 \nCLM_CARE_IMPRVMT_MODEL_CD3 \nCLM_CARE_IMPRVMT_MODEL_CD4 \nLONG NAME: \nCLM_CARE_IMPRVMT_MODEL_CD1 \nCLM_CARE_IMPRVMT_MODEL_CD2 \nCLM_CARE_IMPRVMT_MODEL_CD3 \nCLM_CARE_IMPRVMT_MODEL_CD4 \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n61 = Care Improvement Model 1 is used \n62 = Care Improvement Model 2 is used \n63 = Care",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

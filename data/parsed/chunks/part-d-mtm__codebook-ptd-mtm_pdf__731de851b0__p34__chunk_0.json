@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p34__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 34,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n30 \nTARG_MED_REV_NUM \nLABEL: \nNumber of targeted medication reviews conducted \nDESCRIPTION: This variable indicates the number of targeted medication reviews conducted \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n0–XXX \nCOMMENT: \nCMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan \nManagement",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

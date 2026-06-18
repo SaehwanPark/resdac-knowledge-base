@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_347",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= Not in the facility during this year's flu season, 2 = Received outside of this facility, 3 = Not eligible, 4 = Offered and declined, 5 = Not offered, 6 = Inability to obtain vacine, \"-\" = Unknown, - 2 = Space.\n591 W3A W3A_PPV_STUS_SW (W3A) Resident up to date with PPV status CHAR 1 Resident up to date with Pneumococcal Polysaccharide Vaccine (PPV) status. 0 = No, 1 = Yes, \"-\" = Unknown\n592 W3B W3B_PPV_NOT_RCVD_RSN_ID (W3B) Reason PPV not received CHAR 1 Reason Pneumococcal Polysaccharide not",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_279",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 2 Medications: number of medications. This field indicates the number of different medications taken by the resident in the last 7 days.\n465 O2 O2_NEW_MEDS (O2) New Medications CHAR 1 Medications: new medications. This field indicates if the resident began receiving new medications during the last 90 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n466 O3 O3_INJECTIONS (O3) Injections CHAR 1 Medications: injections (number days). This field indicates the number of days the resident received",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

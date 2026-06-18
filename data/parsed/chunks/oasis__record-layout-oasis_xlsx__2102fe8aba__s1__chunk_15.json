@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(retired)\n03 = Resumption of care (after inpatient stay)\n04 = Recertification (follow-up) reassessment\n05 = Other follow-up\n06 = Transferred to an inpatient facility - patient not discharged from agency\n07 = Transferred to an inpatient facility - patient discharged from agency\n08 = Death at home\n09 = Discharge from agency\n10 = Discharge from agency - no visits completed after start/resumption of care assessment. (retired) CHAR 2 x x x x x x x\nM0102_PHYSN_ORDRD_SOCROC_DT M0102 Physician Ordered",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

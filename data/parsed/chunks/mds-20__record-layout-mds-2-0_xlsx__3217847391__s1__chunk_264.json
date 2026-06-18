@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_264",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "M6C M6C_LESIONS_FOOT (M6C) Open Lesions on Foot CHAR 1 Skin condition: foot problems and care in last 7 days - open lesions on foot. 0 = No, 1 = Yes, \"-\" = Unknown.\n435 M6D M6D_TRIMMED (M6D) Nails/Calluses Trimmed on Foot CHAR 1 Skin condition: foot problems and care in last 7 days - nails/calluses trimmed in last 90 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n436 M6E M6E_PRVENT_FT_CARE (M6E) Received Preventative/Protective Foot Care CHAR 1 Skin condition: foot problems and care in last 7 days -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

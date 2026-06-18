@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "Pass Thru Per Diem Amount for stay ($) Num 8 X X X X X X X X X X X X X X X X X X\nPPS_CPTL TOT_PPS_CPTL_AMT Total PPS capital Amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nIP_LOW_VOL_PYMT_AMT IP_LOW_VOL_PYMT_AMT Inpatient Low Volume Payment Amount Num 8 - - - - - - - - X X X X X X X X X X\nTOTCHRG TOT_CHRG_AMT Total Charge Amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nCVRCHRG TOT_CVR_CHRG_AMT Total Covered Charge Amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nPMT_AMT",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

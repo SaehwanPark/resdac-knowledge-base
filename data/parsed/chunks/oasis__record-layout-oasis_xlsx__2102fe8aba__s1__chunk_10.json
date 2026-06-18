@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "x x x x\nM0032_ROC_DT_NA (M0032) Resumption of Care Date Not Applicable Resumption of care date is not applicable. 0 = Not Checked (Not NA), 1 = Checked (NA) CHAR 1 x x x x x x x\nM0032_ROC_DT (M0032) Resumption of Care Date Resumption of care date. DATE 8 x x x x x x x\nM0050_PAT_ST (M0050) Patient State Patient's state of residence. CHAR 2 x x x x x x x\nM0060_PAT_ZIP (M0060) Patient ZIP Code Patient's ZIP code. CHAR 11 x x x x x x x\nM0063_MEDICARE_NA (M0063) No Medicare Number Patient has no",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

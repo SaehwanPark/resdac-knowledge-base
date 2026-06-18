@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p309__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 309,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n295 \n\nPTCD_INDICATOR_22 \nLABEL: \nIndicates Whether the Reference Year Plan is Part C, Part D, or Both \nDESCRIPTION: This variable indicates whether the plan for the Current Year (2022) is Medicare Part C, Part D, or \nboth. All Part C and D plans are included in the file. \n\nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n1 = Part C only plan (any non-FFS; not all",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

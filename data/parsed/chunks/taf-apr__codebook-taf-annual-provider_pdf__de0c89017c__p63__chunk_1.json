@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p63__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 63,
+  "text": "PRVDR_AFLTD_PGM_ACTV_IND_10 \nPRVDR_AFLTD_PGM_ACTV_IND_11 \nPRVDR_AFLTD_PGM_ACTV_IND_12 \nLABEL: \nProvider Affiliated Program Active Indicator — January through December \nDESCRIPTION: A flag to indicate the provider’s affiliated programs information specified in the unique combination of \naffiliated program variables (AFLTD_PGM_TYPE_CD and PRVDR_AFLTD_PGM_ID) was active in the \ngiven month. Each of 12 months.\nSHORT NAME: PRVDR_AFLTD_PGM_ACTV_IND_01 \nPRVDR_AFLTD_PGM_ACTV_IND_02",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

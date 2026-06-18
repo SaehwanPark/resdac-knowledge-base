@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Beneficiary Race Code\n(modified using RTI algorithm) 0 - Unknown\n1 - Non-Hispanic White\n2 - Black (or African American)\n3 - Other\n4- Asian/Pacific Islander\n5 - Hispanic\n6 - American Indian/Alaskan Native\nNull/missing - unknown or no Medicare enrollment data\nD_MEDICAID_RACE Medicaid Race/Ethnicity Code 0 - unknown\n1 - White\n2 - Black (or African American)\n3 - American Indian/Alaskan Native\n4 - Asian\n5 - Hispanic\n6 - Native Hawaiian/Pacific Islander\n7 - Hispanic and one or more races\n8 - more",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

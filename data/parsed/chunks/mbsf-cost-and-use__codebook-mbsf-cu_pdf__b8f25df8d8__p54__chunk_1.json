@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p54__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 54,
+  "text": "These “other” inpatient (OIP) claims are a subset of the claims in the IP data file consisting of data from \nIP settings such as long-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation \nfacilities, and other types of IP facilities such as children’s hospitals or cancer centers. \nSHORT NAME: — \nLONG NAME: OIP_COV_DAYS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nWe consider fully covered days, days where the beneficiary",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

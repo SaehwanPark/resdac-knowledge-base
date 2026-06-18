@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-clinical-and-staging__chunk_2",
+  "source_document": "data/raw/html/dataset_page/e67fb8194a56ec61aead4bd4580e766d10529ed2.html",
+  "page": null,
+  "text": "Nodal Disease Staging\n- Metastasis Staging\n- Histology\nSpecial Considerations\n- There is one row per episode and beneficiaries can appear multiple times in the file depending on the number of 6-month episodes initiated.\n- The Clinical and Staging data file and the Current Clinical Status data file can be linked by the Beneficiary ID, ICD10 Cancer Diagnosis Code Reported by Participant, and the Initial Diagnosis Date.\n- The file does not include any treatment data such as surgery, radiation,",
+  "dataset": "ocm-clinical-and-staging",
+  "url": "https://resdac.org/cms-data/files/ocm-clinical-and-staging"
+}

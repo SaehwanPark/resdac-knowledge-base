@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_69",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "after cueing (\"a piece of furniture\")\n2=Yes, no cue required\n^=Blank(skip pattern)\n102 C0500_BIMS_SCRE_NUM C0500_BIMS_SCRE_NUM C0500 Brief Interview for Mental Status (BIMS) Score Number CHAR 2 This column contains the BIMS (Brief Interview for Mental Status) score, which is calculated by adding the scores in items C0200-C0400.\n103 C0600_CNDCT_STF_MENTL_STUS_CD C0600_CNDCT_STF_MENTL_STUS_CD C0600 Staff to Conduct Brief Interview for Mental Status CHAR 1 The data in this column indicates whether",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

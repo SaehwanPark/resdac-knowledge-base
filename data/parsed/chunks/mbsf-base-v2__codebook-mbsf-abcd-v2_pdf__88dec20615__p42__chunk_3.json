@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p42__chunk_3",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 42,
+  "text": "was Medicare enrolled for the month, but did not have a monthly value in \nthe source CME data \nCOMMENT: \nThe field name for this variable was updated with MBSF ABCD V2 (previously it was called \nMDCR_STATUS_CODE_MM). Also effective with MBSF ABDC V2, a beneficiary with a verified or \nunverified date of death will have a ‘00’ for any month that is after the death date. \nAnalysts can use this variable to quickly distinguish between the aged, disabled, and ESRD populations. \nThere are 12 monthly",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

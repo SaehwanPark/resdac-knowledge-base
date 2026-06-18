@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p71__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 71,
+  "text": "prescriber ID submitted, the associated DEA number is a valid hospital DEA number with \nsuffix (rarely populated) \nNull = Not applicable, beneficiary not in an LTC setting (or in the first two months of 2013, the \npresumption is there was greater than a 14-day supply) \nCOMMENT: \nCMS requires Part D plans to have drug utilization management programs to encourage compliance \nwith the formulary; this variable is designed to make it easier to monitor how well LTC pharmacies \ncomply with formularies",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

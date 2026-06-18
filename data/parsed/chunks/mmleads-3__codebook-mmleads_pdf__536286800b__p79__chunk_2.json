@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p79__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 79,
+  "text": "unspecified or unknown populations \n16 = 1915(c) — Autism/Autism spectrum disorder \n17 = 1915(c) — Developmental Disabilities \n18 = 1915(c) — Mental Illness — Age 18 or Older \n19 = 1915(c) — Mental Illness — Under Age 18 \n20 = 1915(c) waiver concurrent with an 1115 or 1915(b) managed care authority \n33 = 1915(c) waiver (T-MSIS DD v2.1) \n89 = Two or more 1915(c) waivers in the latest month \nNull/missing = not one of the 1915 waivers, source value missing/unknown, or not Medicaid enrolled",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

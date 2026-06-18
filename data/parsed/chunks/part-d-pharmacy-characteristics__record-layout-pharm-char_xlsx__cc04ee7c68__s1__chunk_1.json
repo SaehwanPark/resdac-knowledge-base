@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__record-layout-pharm-char_xlsx__cc04ee7c68__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/cc04ee7c6808c16f3ba84c100b6269bc17e26f68.xlsx",
+  "page": 1,
+  "text": "-\nPHYSICAL_LOCATION_CLOSE_DATE Physical Location of Pharmacy Closure Date DATE 8 X X X\nPHYSICAL_LOCATION_OPEN_DATE Physical Location of Pharmacy Open Date DATE 8 X X X\nPHYSICAL_LOCATION_STATE_CODE Physical Location of Pharmacy State Code CHAR 2 X X X\nDISPENSER_CLASS Part D Dispenser Class Code CHAR 2 X X X\nPRIMARY_DISPENSER_TYPE Pharmacy Primary Dispenser Type Code CHAR 2 X X X\nPRIMARY_TAXONOMY_CODE Pharmacy Primary Taxonomy Code CHAR 10 X X X\nSECONDARY_DISPENSER_TYPE Pharmacy Secondary",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pharm-char.xlsx"
+}

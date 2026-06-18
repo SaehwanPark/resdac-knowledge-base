@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p62__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 62,
+  "text": "STATE_CNTY_FIPS_CD_12 \nLABEL: \nState and county FIPS code – January through December \nDESCRIPTION: This field specifies the monthly the concatenated state/county Federal Information Processing \nStandard (FIPS) code for the beneficiary — in January through December. \nSHORT NAME: \nSTATE_CNTY_FIPS_CD_01 \nSTATE_CNTY_FIPS_CD_02 \nSTATE_CNTY_FIPS_CD_03 \nSTATE_CNTY_FIPS_CD_04 \nSTATE_CNTY_FIPS_CD_05 \nSTATE_CNTY_FIPS_CD_06 \nSTATE_CNTY_FIPS_CD_07 \nSTATE_CNTY_FIPS_CD_08 \nSTATE_CNTY_FIPS_CD_09",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__record-layout-mbsf-ndi_xlsx__21e721b4ec__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/21e721b4ec64c624ca4af0c2f9b8d19c80c4925d.xlsx",
+  "page": 1,
+  "text": "3 x x\nDEATH_CERT_NUM DEATH_CERT_NUM NDI Death Certificate Number CHAR 6 x x\nNDI_DEATH_DT NDI_DEATH_DT NDI Date of Death DATE 8 x x\nNDI_STATE_DEATH_CD NDI_STATE_DEATH_CD NDI State of Death CHAR 2 x x\nICD_CODE ICD_CODE ICD-10 Cause of Death Code CHAR 4 x x\nICD_TITLE ICD_TITLE ICD-10 Cause of Death Title CHAR 120 x x\nICD_CODE_358 ICD_CODE_358 358 ICD-10 Cause of Death Recodes CHAR 5 x x\nICD_CODE_113 ICD_CODE_113 113 ICD-10 Cause of Death Recodes CHAR 3 x x\nICD_CODE_130 ICD_CODE_130 130 ICD-10",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-ndi.xlsx"
+}

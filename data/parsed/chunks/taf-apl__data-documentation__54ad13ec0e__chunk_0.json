@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__data-documentation__54ad13ec0e__chunk_0",
+  "source_document": "data/raw/html/documentation_page/54ad13ec0ec7f6d311da24252620d5ade6c49360.html",
+  "page": null,
+  "text": "| 1 | MC_PLAN_ID | Managed Care Plan Identification Number | \n\n | 2 | MC_PLAN_NAME | Managed Care Plan Name | \n\n | 3 | STATE_CD | Submitting State Alpha Abbreviation | \n\n | 4 | SUBMTG_STATE_CD | Submitting State FIPS Code | \n\n | 5 | CMS_RGN | CMS Region for Submitting State | \n\n | 6 | MC_PLAN_PGM_CD | Managed Care Plan Program Code | \n\n | 7 | MC_PLAN_TYPE_CD | Managed Care Plan Type Code | \n\n | 8 | MC_PLAN_TYPE_CTGRY_CD | Managed Care Plan Type Category Code | \n\n | 9 | MC_PLAN_REIMBRSMT_TYPE_CD",
+  "dataset": "taf-apl",
+  "url": "https://resdac.org/cms-data/files/taf-apl/data-documentation"
+}

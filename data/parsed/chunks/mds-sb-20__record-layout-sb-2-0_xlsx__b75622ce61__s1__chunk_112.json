@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_112",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "the total number of minutes of occupational therapy received by the patient for the past seven days.\n146 P1BCA P1BCA_PHY_THPY_DAY 38bcA(P1bcA)Physical Therapy Days CHAR 1 Indicates the number of days of physical therapy received by the patient for the past seven days.\n147 P1BCB P1BCB_PHY_THPY_MIN 38bcB(P1bcB)Physical Therapy Minutes CHAR 4 Indicates the total number of minutes of physical therapy received by the patient for the past seven days.\n148 P1BDA P1BDA_RES_THPY_DAY",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

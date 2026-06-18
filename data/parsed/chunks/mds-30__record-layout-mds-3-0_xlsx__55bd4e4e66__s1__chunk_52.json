@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_52",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Term Care Hospital (LTCH)\n99=Other\n^=Blank(skip pattern) discontinued 09/30/2023\n81 A2200_PRVS_ASMT_RFRNC_DT A2200_PRVS_ASMT_RFRNC_DT A2200 Previous Assessment Reference Date For Significant Correction CHAR 8 This column contains the previous assessment reference date of the associated significant correction of prior quarterly or comprehensive assessment.\n82 A2300_ASMT_RFRNC_DT A2300_ASMT_RFRNC_DT A2300 Assessment Reference Date DATE 8 This column contains the end date of the observation period",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

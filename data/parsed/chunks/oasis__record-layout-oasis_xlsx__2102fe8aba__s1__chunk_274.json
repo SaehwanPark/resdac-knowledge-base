@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_274",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "ROC). CHAR 2 x\nM1310_PRSR_ULCR_LNGTH M1310 Largest Pressure Ulcer Length This field records the longest length (in centimeters) \"head-to-toe\" of the Stage III or IV pressure ulcer with the\nlargest surface dimension (length x width). CHAR 4 x\nM1312_PRSR_ULCR_WDTH M1312 Largest Pressure Ulcer Width This field records the width of the same pressure ulcer; greatest width perpendicular to the length. CHAR 4 x\nM1314_PRSR_ULCR_DEPTH M1314 Largest Pressure Ulcer Depth This field records the depth of",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "year segments. Char 1 X X X X X X X X X X X X X X X X X X\nSMPLSIZE INTRNL_USE_SMPL_SIZE_CD For internal use. MEDPAR sample size. Char 1 X X X X X X X X X X X X X X X X X X\nStay-Level Use and Payment Summaries\nLOSCNT LOS_DAY_CNT Days of beneficiarys stay in a hospital/SNF Num 8 X X X X X X X X X X X X X X X X X X\nOUTLRDAY OUTLIER_DAY_CNT Days paid as outliers (either day or cost) under PPS beyond DRG threshld Num 8 X X X X X X X X X X X X X X X X X X\nUTIL_DAY UTLZTN_DAY_CNT Covered days of care",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

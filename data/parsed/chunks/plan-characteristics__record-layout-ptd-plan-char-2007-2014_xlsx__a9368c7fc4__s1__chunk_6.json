@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "How Part D Pre-ICL Cost-Sharing is Applied CHAR 1 X X X X X X\nICL_APPLY How Part D Initial Coverage Limit (ICL) is Applied CHAR 1 X X X X X X\nICL_AMT Part D Initial Coverage Limit (ICL) Amount NUM 8 X X LC X X X\nPOST_OOPT_APPLY How Post Out-of-Pocket (OOP) Threshold Cost-Sharing is Applied CHAR 1 X X X X X X\nOOPT_AMT Out-of-Pocket (OOP) Threshold Amount NUM 8 X X LC X X X\nEXCLUDED_DRUGS Plan Covers Excluded Drugs CHAR 1 X X X X X X\nREDUCED_COST_SHARE Plan Offers Reduced Cost-Sharing CHAR 1 X X",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

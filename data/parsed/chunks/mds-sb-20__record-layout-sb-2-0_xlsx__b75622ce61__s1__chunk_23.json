@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "5 = Divorced\n47 AB4 AB4_PRIOR_ZIP 6(AB4)ZIP Code of Pre-Hospital Residence CHAR 5 The community address where the patient last resided prior to swing bed admission.\n48 AA6A AA6A_FAC_MCAID_NBR 9a(AA6a)Hospital State Medicaid Provider Number CHAR 15 The hospital's state Medicaid provider identification number.\n49 AA6B AA6B_FAC_MCARE_NBR 9b(AA6b)Hospital Medicare Provider Number CHAR 12 The hospital's Medicare provider number.\n50 A3A A3A_ASMT_REF_DT 10a(A3a)Assessment Reference Date DATE 8 This",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p200__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 200,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n182 \nNOTE 2: This field may contain information regarding case-mix grouping that Medicare used to pay for \nSNF, home health, or IRF services. These groupings are sometimes known as Health Insurance \nprospective payment system (HIPPS) codes. \nThis field will contain a HIPPS code if the revenue center code (REV_CNTR) equals 0022 for SNF care, \n0023 for home health, or 0024 for",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

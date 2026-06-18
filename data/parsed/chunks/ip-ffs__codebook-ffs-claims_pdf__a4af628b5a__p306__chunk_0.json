@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p306__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 306,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n288 \nPRVDR_NPI \nLABEL: \nDMERC Line-Item Supplier NPI Number \nDESCRIPTION: The National Provider Identifier (NPI) assigned to the supplier of the Part B service/DMEPOS line item. \nNPIs replaced UPINs as the standard provider identifiers beginning in 2007. The UPIN is almost never \npopulated after 2009. \nSHORT NAME: SUP_NPI \nLONG NAME: PRVDR_NPI \nTYPE: \nCHAR \nLENGTH: \n12",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

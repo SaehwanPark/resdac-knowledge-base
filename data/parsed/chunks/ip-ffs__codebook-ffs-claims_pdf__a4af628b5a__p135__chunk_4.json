@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p135__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 135,
+  "text": "by the OCE \n41 = Service indicator invalid for OPPS \nPRICER \n42 = APC = “00000” or (packaging flag = 1 \nor 2) \n43 = Payment indicator not = to 1 or 5 \nthru 9 \n44 = Service indicator = “H” but payment \nindicator not = to 6 \n45 = Packaging flag not = to 0 \n46 = Line-item denial/reject flag not = to 0 or \nline-item denial/reject flag = to 1 and (APC \nnot = 0033 or 0034 or 0322 or 0323 or \n0324 or 0325 or 0373 or 0374)) or line-\nitem action flag not = to 1 \n47 = Line-item action flag = 2 or 3 \n48",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

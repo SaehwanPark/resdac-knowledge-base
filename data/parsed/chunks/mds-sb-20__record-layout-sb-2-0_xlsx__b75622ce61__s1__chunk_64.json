@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_64",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "= Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person physical assist, 3 = Two+ person physical assist, 8 = ADL activity itself did not occur during entire 7 days\n85 G1HA G1HA_SELF_EAT 23cA(G1hA)Eating - Self Performance CHAR 1 Indicates how the patient without assistance eats and drinks, regardless of skill. -1 = Unknown, 0 = Independent - No help or oversight -OR- Help/oversight provided only 1 or 2 times during last 7 days, 1 = Supervision - Oversight,",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

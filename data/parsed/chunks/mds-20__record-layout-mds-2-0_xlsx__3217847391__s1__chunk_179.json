@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_179",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "resident could perform them. 0 = No, 1 = Yes, \"-\" = Unknown.\n254 G8A G8A_RES_INDEP (G8A) Resident Believes he/she Capable of Increased Independence CHAR 1 Physical functioning and structural problems: ADL functional rehabilitatio potential -resident - increased independence capability. 0 = No, 1 = Yes, \"-\" = Unknown.\n255 G8B G8B_STAFF_INDEP (G8B) Staff Believes Resident is Capable of Increased Independence CHAR 1 Physical functioning and structural problems: ADL functional rehabilitatio",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

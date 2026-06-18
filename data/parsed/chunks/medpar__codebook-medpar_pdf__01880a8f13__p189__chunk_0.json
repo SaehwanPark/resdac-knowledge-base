@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p189__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 189,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n173 \nDESCRIPTION: The code used to identify the present on admission (POA) indicator code associated with the diagnosis \ncodes (DGNSCD1–DGNSCD25). \nSHORT NAME: \nPOA_DGNS_1_IND_CD \nPOA_DGNS_2_IND_CD \nPOA_DGNS_3_IND_CD \nPOA_DGNS_4_IND_CD \nPOA_DGNS_5_IND_CD \nPOA_DGNS_6_IND_CD \nPOA_DGNS_7_IND_CD \nPOA_DGNS_8_IND_CD \nPOA_DGNS_9_IND_CD \nPOA_DGNS_10_IND_CD \nPOA_DGNS_11_IND_CD \nPOA_DGNS_12_IND_CD",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

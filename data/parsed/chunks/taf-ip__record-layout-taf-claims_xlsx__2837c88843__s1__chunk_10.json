@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "CHAR 1 61\nDGNS_POA_IND_8 Diagnosis 8 Present on Admission Indicator CHAR 1 62\nDGNS_CD_9 Diagnosis Code 9 CHAR 7 63\nDGNS_VRSN_CD_9 Diagnosis Version Code 9 (ICD-9 or ICD-10) CHAR 1 64\nDGNS_POA_IND_9 Diagnosis 9 Present on Admission Indicator CHAR 1 65\nDGNS_CD_10 Diagnosis Code 10 CHAR 7 66\nDGNS_VRSN_CD_10 Diagnosis Version Code 10 (ICD-9 or ICD-10) CHAR 1 67\nDGNS_POA_IND_10 Diagnosis 10 Present on Admission Indicator CHAR 1 68\nDGNS_CD_11 Diagnosis Code 11 CHAR 7 69\nDGNS_VRSN_CD_11 Diagnosis",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

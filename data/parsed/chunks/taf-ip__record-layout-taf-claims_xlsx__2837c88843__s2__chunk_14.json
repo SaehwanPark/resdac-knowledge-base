@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_14",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "or Line CHAR 1 81\nBILLED_AMT Total Claim Billed Amount NUM 8 82\nNCVRD_CHRG_AMT Noncovered Charges Amount NUM 8 83\nMDCD_ALOWD_AMT Total Medicaid Allowed Amount NUM 8 84\nMDCD_PD_AMT Total Amount Paid By Medicaid NUM 8 85\nDAILY_RATE Daily Rate that a Policy will Pay for a Covered Service NUM 8 86\nMDCD_ACMDTN_PD_AMT Medicaid Amount Paid for All Accommodation (Room and Board) Revenue Lines NUM 8 87\nMDCD_ANCLRY_PD_AMT Medicaid Amount Paid for All Ancillary (Non-Room & Board) Revenue Lines NUM 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

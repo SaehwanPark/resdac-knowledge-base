@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p41__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 41,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n36 \nNDI_STATE_DEATH_CD \nLABEL: \nNDI State of Death \nDESCRIPTION: This variable is the two-digit Social Security Administration (SSA) code for the state identified as the \nstate where the beneficiary death occurred. \nSHORT NAME: NDI_STATE_DEATH_CD \nLONG NAME: NDI_STATE_DEATH_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__codebook-mbsf-other_pdf__c4c0224035__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/c4c02240350e73a79a885b327567f3b5714475c3.pdf",
+  "page": 22,
+  "text": "pain indicator. \nThe variable will be blank for beneficiaries that have never had the condition. \nSHORT NAME: CHRONICPAIN_MEDICARE_EVER \nLONG NAME: CHRONICPAIN_MEDICARE_EVER \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis variable is populated beginning in 2018. The earliest possible date for anyone in the CCW is \nJanuary 1, 2016. If the beneficiary became eligible for Medicare after that, the earliest possible date is \nsome time after his or her coverage start date",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-other.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p13__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 13,
+  "text": "Formulary file, it is the FDB generic name for a drug product on the formulary. \nSHORT NAME: GNN \nLONG NAME: GNN \nTYPE: \nCHAR \nLENGTH: \n30 \nSOURCE: \nFirst DataBank \nVALUES: \ntext description of drug (e.g., RISEDRONATE SODIUM, MEMANTINE HCL) \nCOMMENT: \nFDB uses the chemical name when the USAN name is not available. For multi-ingredient products, \nabbreviations may be used (e.g., HCTZ [Hydrochlorothiazide] and PP [Phenylpropanolamine]). In the \nFormulary file, this variable is populated by",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

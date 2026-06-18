@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_49",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "reported in separate columns: ESRD risk scores are renormalized to the ESRD population, disabled risk scores are renormalized to the disabled population, aged/dual risk scores are renormalized to the aged/dual population, and aged/non-dual risk scores are renormalized to the aged/non-dual population. Therefore ESRD, disabled, aged/dual, and aged/non-dual risk scores are not on the same scale and are not comparable. Although there are four columns, each beneficiary will only have the risk score",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

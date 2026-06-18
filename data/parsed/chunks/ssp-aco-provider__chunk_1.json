@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__chunk_1",
+  "source_document": "data/raw/html/dataset_page/09b860ae2397d9bc1589465c525822cef2fc97e5.html",
+  "page": null,
+  "text": "(TIN) of ACO Participant\n- TIN Legal Business Name\n- National Provider Identifier (NPI) for practitioner\n- Name of Provider Associated with the NPI\n- CMS Certification Number (CCN; formerly OSCAR number)\n- CCN Facility Type\n- CCN Facility Type Description\n- Provider Specialty Code\n- ACO Location (county primarily served)\n- Year of ACO Source Record\nSpecial considerations\n- Shared Savings Program RIFs do not include data for models such as ACO Realizing Equity, Access and Communication Health",
+  "dataset": "ssp-aco-provider",
+  "url": "https://resdac.org/cms-data/files/ssp-aco-provider?page=1"
+}

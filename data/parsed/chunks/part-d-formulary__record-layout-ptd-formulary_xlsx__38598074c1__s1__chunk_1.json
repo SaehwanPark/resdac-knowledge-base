@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__record-layout-ptd-formulary_xlsx__38598074c1__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/38598074c1dd858c02b65f05a48cc7e746745ec7.xlsx",
+  "page": 1,
+  "text": "Authorization Indicator3 CHAR 2\nBN Brand Name CHAR 30\nGNN Generic Name CHAR 30\nSTR Drug Strength Description CHAR 10\nGCDF Dosage Form Code CHAR 2\nGCDF_DESC Dosage Form Code Description CHAR 40\n1 This file was first available starting with the 2010 data release.\n2 Prior to the 2013 data release, CCW was required to encrypt this sensitive data field. We are no longer required\nto encrypt this variable.\n3 For 2006-2009 the utilization management variables were available on the PDE File for filled",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-formulary.xlsx"
+}

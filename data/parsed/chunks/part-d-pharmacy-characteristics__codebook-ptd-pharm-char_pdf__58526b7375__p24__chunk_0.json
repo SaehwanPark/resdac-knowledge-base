@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p24__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 24,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n19 \nRELATIONSHIP_ID \nLABEL: \nPharmacy Relationship Identifier (encrypted) \nDESCRIPTION: An encrypted NCPDP identifier for a chain or franchise organization that the pharmacy has a \nrelationship with. \nSome pharmacies share a relationship with a common organization. For each of these pharmacies, \nthere is a maximum of one relationship ID (RELATIONSHIP_ID) and type (RELATIONSHIP_TYPE). When \na",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

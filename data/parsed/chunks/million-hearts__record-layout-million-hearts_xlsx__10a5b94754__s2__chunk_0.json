@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__record-layout-million-hearts_xlsx__10a5b94754__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/10a5b94754c766cb1dad7c4ed5361d3db70f550d.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Million Hearts Data File — NPI File\nVersion — May 2025\nSAS name Label Type Length\nPRACTICE_ID Model-Assigned Practice ID CHAR 9\nPRACTICE_NAME Name of Practice CHAR 100\nTIN Practice's Taxpayer Identification Number CHAR 9\nNPI Provider's National Provider Identifier CHAR 10\nFIRST_NAME Provider's First Name CHAR 100\nLAST_NAME Provider's Last Name CHAR 100\nINSERT_DATE Date the Record was Created DATE 8\nUPDATE_DATE Date the Record was",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-million-hearts.xlsx"
+}

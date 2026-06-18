@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_197",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Disease diagnosis: diseases - psychiatric/mood - anxiety disorder. 0 = No, 1 = Yes, \"-\" = Unknown.\n286 I1E I1E_CARD_DYSRH (I1E) Cardiac Dysrhythmias CHAR 1 Disease diagnosis: diseases - heart/circulation - cardiac dysrhytmia. 0 = No, 1 = Yes, \"-\" = Unknown.\n287 I1EE I1EE_DEPRESSION (I1EE) Depression CHAR 1 Disease diagnosis: diseases - psychiatric/mood - depression. 0 = No, 1 = Yes, \"-\" = Unknown.\n288 I1F I1F_CON_HEART_FAIL (I1F) Congestive Heart Failure CHAR 1 Disease diagnosis:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

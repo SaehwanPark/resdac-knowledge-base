@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_13",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "15 2\nLINE_NUM LINE_NUM Claim Line Number NUM 13 3\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 4\nTHRU_DT CLM_THRU_DT Claim Through Date DATE 8 5\nTAX_NUM TAX_NUM Line Provider Tax Number CHAR 10 6\nHCFASPCL PRVDR_SPCLTY Line CMS Provider Specialty Code CHAR 3 7\nPRTCPTG PRTCPTNG_IND_CD Line Provider Participating Indicator Code CHAR 1 8\nSRVC_CNT LINE_SRVC_CNT Line Service Count NUM 4 9\nTYPSRVCB LINE_CMS_TYPE_SRVC_CD Line CMS Type Service Code CHAR 1 10\nPLCSRVC LINE_PLACE_OF_SRVC_CD Line",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

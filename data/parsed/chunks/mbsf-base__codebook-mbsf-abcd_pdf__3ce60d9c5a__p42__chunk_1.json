@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p42__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 42,
+  "text": "LABEL: \nMedicare Status Code – January through December \nDESCRIPTION: This variable indicates how a beneficiary currently qualifies for Medicare – January through December. \nSHORT NAME: \nMDCR_STUS_CD_01 \nMDCR_STUS_CD_02 \nMDCR_STUS_CD_03 \nMDCR_STUS_CD_04 \nMDCR_STUS_CD_05 \nMDCR_STUS_CD_06 \nMDCR_STUS_CD_07 \nMDCR_STUS_CD_08 \nMDCR_STUS_CD_09 \nMDCR_STUS_CD_10 \nMDCR_STUS_CD_11 \nMDCR_STUS_CD_12 \nLONG NAME: \nMDCR_STATUS_CODE_01 \nMDCR_STATUS_CODE_02 \nMDCR_STATUS_CODE_03 \nMDCR_STATUS_CODE_04",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

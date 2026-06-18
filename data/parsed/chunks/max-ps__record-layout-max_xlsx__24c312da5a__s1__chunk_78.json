@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_78",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "NUM 12 X X X X X X X X X X X\n364 OT_REC_CNT_FP Other service record count (FP) NUM 5 X X X X X X X X X X X\n365 OT_PYMT_AMT_FP Other service payments (FP) NUM 12 X X X X X X X X X X X\n366 RX_REC_CNT_FP Prescription drug record count (FP) NUM 5 X X X X X X X X X X X\n367 RX_PYMT_AMT_FP Prescription drug payments (FP) NUM 12 X X X X X X X X X X X\n368 TOT_REC_CNT_FP Total record count (FP) NUM 5 X X X X X X X X X X X\n369 TOT_PYMT_AMT_FP Total payments (FP) NUM 12 X X X X X X X X X X X\n370",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_8",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "Diagnosis codes (2nd diagnosis) CHAR 8 X X X\n45 DIAG_CD_3 Diagnosis codes (3rd diagnosis) CHAR 8 X X X\n46 DIAG_CD_4 Diagnosis codes (4th diagnosis) CHAR 8 X X X\n47 DIAG_CD_5 Diagnosis codes (5th diagnosis) CHAR 8 X X X\n48 DIAG_CD_6 Diagnosis codes (6th diagnosis) CHAR 8 X X X\n49 DIAG_CD_7 Diagnosis codes (7th diagnosis) CHAR 8 X X X\n50 DIAG_CD_8 Diagnosis codes (8th diagnosis) CHAR 8 X X X\n51 DIAG_CD_9 Diagnosis codes (9th diagnosis) CHAR 8 X X X\n52 PRNCPL_PRCDR_DT Principal procedure date DATE",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

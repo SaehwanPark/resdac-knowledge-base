@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p42__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 42,
+  "text": "number to identify an individual’s \nrecords in all CCW data files (e.g., Medicare claims, Medicare encounter, MAX claims, T-MSIS claims, \nand MDS assessment data). \nThis number does not change during a beneficiary’s lifetime and each number is used only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nSHORT NAME: BENE_ID \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nCCW (derived) \nFILE(S): \nAll header claim, line, and",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

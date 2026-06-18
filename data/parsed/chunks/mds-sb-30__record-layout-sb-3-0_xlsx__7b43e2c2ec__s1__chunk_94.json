@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_94",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "days (several days)\n2=7-11 days (half or more of the days)\n3=12-14 days (nearly every day)\n^=Blank (skip pattern) discontinued 09/30/2023\n128 D0200F1_SELF_DPRCTN_CD D0200F1_SELF_DPRCTN_CD D0200F1 Resident Mood Interview - Self Depreciation Code CHAR 1 The data in this column indicates if the resident is experiencing self-depreciation (feeling bad about themselves, that they are a failure, etc.). -=Not assessed/no information\n0=No (enter 0 in column 2)\n1=Yes (enter 0-3 in column 2)\n9=No response",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

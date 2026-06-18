@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_72",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Center Representative Payee (RP) Indicator Code | \n\n | 393 | ACO_ID_NUM | Accountable Care Organization (ACO) Identification Number | \n\n | 394 | LTCH_DPP_ADJSTMT_AMT | Long-Term Care Hospital Discharge Payment Percentage Adjustment Amount | \n\n | 395 | VAL_CD_Q1_PYMT_RDCTN_AMT | Value Code Q1 Payment Reduction Amount | \n\n | 396 | CLM_MODEL_REIMBRSMT_AMT | MedPAR Claim Model Reimbursement Amount | \n\n | 397 | RC_MODEL_REIMBRSMT_AMT | MedPAR Revenue Center Model Reimbursement Amount | \n\n | 398 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

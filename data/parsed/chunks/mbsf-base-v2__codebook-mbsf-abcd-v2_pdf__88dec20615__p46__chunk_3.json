@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p46__chunk_3",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 46,
+  "text": "for a given month, this variable will be \nnull/missing for that month; this includes beneficiaries not enrolled in Medicare for the month. The \n1833 cost plans do not have populated PBP_IDs. Effective with MBSF ABDC V2, a beneficiary with a \nverified or unverified date of death will have a null/missing Part C PBP_ID for any month that is after \nthe death date. \nUsers need to know both the Part C contract number (PTC_CNTRCT_ID_XX) and plan benefit package \n(PBP) to identify the specific plan in",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

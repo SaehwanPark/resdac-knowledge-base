@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p33__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 33,
+  "text": "B. 2025 MCAHPS Format Tables \n33 \nsu_email_stat: Email indicator \nSAS Format: $ESTATF \nN: No, no email identified for enrollee \nY: Yes, email identified for enrollee \nsu_mode: Survey Data Collection Mode \nSAS Format: $MODEF \nI: INBOUND CATI \nM: MAIL \nN: NA \nO: OUTBOUND CATI \nW: WEB \nsu_type: Survey Type (1-4) \nSAS Format: $TYPEF \n1: MA PDP \n2: MA ONLY \n3: PDP \n4: FFS \nsu_web_surv: Indicates Whether Submitted Web Survey Came from Prenotification Letter, Web Invitation, or Reminder \nSAS Format:",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

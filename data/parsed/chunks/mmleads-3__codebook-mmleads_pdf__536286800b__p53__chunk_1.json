@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p53__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 53,
+  "text": "VALUES: \nXX \nCOMMENT: \nThese are header claims where the claim type code (T-MSIS variable called CLM_TYPE_CD) is equal to \n'2' (Medicaid or expansion claim) 'B' (S-CHIP claim) or 'V' (Other Services claim). The corresponding \npayment information for these claims is in the MDCD_OT_MC_CAPTD_SPEND field. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

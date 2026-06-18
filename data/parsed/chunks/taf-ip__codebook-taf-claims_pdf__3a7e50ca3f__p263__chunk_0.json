@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p263__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 263,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n243 \nSRC_LCTN_CD \nLABEL: \nDenotes the Claims Payment System from which the Claim was Extracted \nDESCRIPTION: Denotes the claims payment system from which the claim was extracted. \nSHORT NAME: SRC_LCTN_CD \nLONG NAME: SRC_LCTN_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES: \n01 = MMIS \n02 = Non-MMIS CHIP",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

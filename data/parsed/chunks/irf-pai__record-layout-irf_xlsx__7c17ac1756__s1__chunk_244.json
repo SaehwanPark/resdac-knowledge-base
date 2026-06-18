@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_244",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Ulcers Slough/Eschar on Admission Number CHAR 1 The number of unstageable pressure ulcers at discharge due to coverage of wound bed by slough and/or eschar that were present at admission.\n213 UNSTGBL_PRSR_TISUE_STG_NUM UNSTGBL_PRSR_TISUE_STG_NUM M0300F3 Unstageable Pressure Ulcers Slough and/or Eschar Discharge Stageable on Admission Number CHAR 1 The number of unstageable pressure ulcers at discharge due to coverage of wound bed by slough and/or eschar that were stageable at admission.\n214",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

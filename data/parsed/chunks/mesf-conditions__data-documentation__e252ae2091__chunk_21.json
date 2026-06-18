@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__data-documentation__e252ae2091__chunk_21",
+  "source_document": "data/raw/html/documentation_page/e252ae2091db2798540dec6536db5aca3f78d6b2.html",
+  "page": null,
+  "text": "- Combined Medicare & Medicaid Claims | \n\n | 108 | HEPC_UNS_MEDICAID | Hepatitis C (Unspecified) - Medicaid Only Claims | \n\n | 109 | HEPC_UNS_MEDICARE | Hepatitis C (Unspecified) - Medicare Only Claims | \n\n | 110 | HEPD_COMBINED | Hepatitis D - Combined Medicare & Medicaid Claims | \n\n | 111 | HEPD_MEDICAID | Hepatitis D - Medicaid Only Claims | \n\n | 112 | HEPD_MEDICARE | Hepatitis D - Medicare Only Claims | \n\n | 113 | HEPE_COMBINED | Hepatitis E - Combined Medicare & Medicaid Claims | \n\n | 114",
+  "dataset": "mesf-conditions",
+  "url": "https://resdac.org/cms-data/files/mesf-conditions/data-documentation"
+}

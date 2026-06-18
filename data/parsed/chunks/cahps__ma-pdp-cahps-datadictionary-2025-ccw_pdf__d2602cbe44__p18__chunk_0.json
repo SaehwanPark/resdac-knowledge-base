@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 18,
+  "text": "B. 2025 MCAHPS Format Tables\n18\npd_ezrxpharm: RECODE : Last 6 mths, easy to use PDP to ﬁll RX at local pharmacy\nSAS Format: OFA\n3: USUALLY\n4: ALWAYS\npd_ﬁllrx: RECODE : Last 6 mths, Dr/pharmacy/PDP contact: Make sure ﬁll or reﬁll Rx\nSAS Format: YNA\n1: YES\n2: NO\npd_hlthplan: RECODE : Name of health plan\nSAS Format: YNA\n1: YES\n2: NO\npd_rxmail: RECODE : Last 6 mths, ever use PDP to ﬁll RX by mail\nSAS Format: YNA\n1: YES\n2: NO\npd_rxpharm: RECODE : Last 6 mths, ever use PDP to ﬁll RX at local",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

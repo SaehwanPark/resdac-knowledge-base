@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_26",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "Code from Claim (SSA) | \n\n | 160 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (FFS) | \n\n | 161 | BENE_MLG_CNTCT_ZIP_CD | Zip Code of Residence from Claim | \n\n | 162 | CLM_MDCL_REC | Claim Medical Record Number (FFS) | \n\n | 163 | CLM_TRTMT_AUTHRZTN_NUM | Claim Treatment Authorization Number | \n\n | 164 | CLM_PRCR_RTRN_CD | Claim Pricer Return Code | \n\n | 165 | CLM_PRCR_VRSN_CD | Claim Pricer Version Code | \n\n | 166 | CLM_SRVC_FAC_ZIP_CD | Claim service facility ZIP code (where service",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

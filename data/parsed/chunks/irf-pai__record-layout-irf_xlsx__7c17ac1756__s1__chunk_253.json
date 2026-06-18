@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_253",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "A CHAR 3 This is the first ICD code indicating the etiologic problem that led to the condition for which the patient is\nreceiving rehabilitation.\n228 INDVDL_PT_WK_1_NUM INDVDL_PT_WK_1_NUM O0401AA PT: Total Minutes Individual Therapy Week 1 NUM 22 This indicates the total number of individual physical therapy minutes provided in the first week of stay.\n229 CNCRNT_PT_WK_1_NUM CNCRNT_PT_WK_1_NUM O0401AB PT: Total Minutes Concurrent Therapy Week 1 NUM 22 This indicates the total number of",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

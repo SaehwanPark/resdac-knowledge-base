@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Native\n4 - Asian\n5 - Hispanic\n6 - Native Hawaiian/Pacific Islander\n7 - Hispanic and one or more races\n8 - more than 1 race\n9 - unknown\nNull/missing - unknown or no Medicaid enrollment data\nD_MEDICARE_COV_START Medicare Coverage Start Date - First occurrence of Medicare (A or B) coverage based on Medicare enrollment date - MM/DD/YYYY\nD_MEDICAID_COV_START Medicaid Coverage Start Date - First occurrence since 1999 of Medicaid coverage, regardless of state (source: Uniform eligibility code from",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

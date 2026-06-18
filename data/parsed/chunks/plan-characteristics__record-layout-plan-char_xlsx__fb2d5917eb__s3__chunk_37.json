@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s3__chunk_37",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 3,
+  "text": "Care Pharmacy Copay for 1 month supply NUM 12 X X\nGAP_LTCP_COPAY_DAILY Gap Copay Long Term Care Pharmacy - 1 day supply NUM 12 X X\nGAP_DAYS_LTCP_1M Gap Long Term Care Pharmacy - days in 1 month supply NUM 5 X X\nPost-ICL Tier Cost-Sharing\nPOST_OOPT_TIER_DRUG_TYPE2 Post-Out-of-Pocket Threshold Drug Type by Tier CHAR 6* X X\nPOST_OOPT_COSTSHARE_TYPE Post-Out-of-Pocket Threshold Costshare Type by Tier CHAR 1 X X\nPOST_OOPT_COINS_PCT Post-Out-of-pocket threshold Coinsurance Percentage NUM 12 X",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

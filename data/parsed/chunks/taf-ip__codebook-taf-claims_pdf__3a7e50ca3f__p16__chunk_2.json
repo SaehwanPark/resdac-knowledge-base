@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p16__chunk_2",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 16,
+  "text": "covered under a capitation agreement/managed care plan \n025 = Payment denied. Your stop loss deductible has not been met \n026 = Expenses incurred prior to coverage \n027 = Expenses incurred after coverage terminated \n028 = Coverage not in effect at the time the service was provided. Redundant to codes 026 and 027 \n029 = The time limit for filing has expired \n030 = Payment adjusted because the patient has not met the required eligibility, spend down, waiting, \nor residency requirements \n031 =",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n7 \nCMR_RECEIVED_DT1 \nLABEL: \nDate First Comprehensive Medication Review (CMR) received \nDESCRIPTION: This variable indicates the date of the initial Comprehensive Medication Review (CMR) with written \nsummary in CMS standardized format was received \nTYPE: \nDATE \nLENGTH: \n9 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nCMS created the MTM file from",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

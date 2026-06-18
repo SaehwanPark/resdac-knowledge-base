@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "nor awareness (cognition of self and envrionment) is present. -1 = Unknown, 0 = No, 1 = Yes\n57 B2A B2A_ST_MEMORY 18(B2a)Short Term Memory CHAR 1 Indicates the patient's functional capacity to remember recent or short-term events. -1 = Unknown, -2 = Space, 0 = Memory OK, 1 = Memory problem\n58 B4 B4_DAY_DCSN_MAKING 19(B4)Cognitive Skills CHAR 1 Indicates the patient's actual performance in making everyday decisions about tasks or activities of daily living. -1 = Unknown, -2 = Space, 0 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

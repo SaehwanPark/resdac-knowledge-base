@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "SMALL_MFTR_DSCNT_PCT Applicable Discount Percentage for Specified Small Manufacturer Drugs NUM 2 - - - - - - - - X\nLIS_MFTR_DSCNT_PCT LIS_MFTR_DSCNT_PCT Applicable Discount Pctg for Spcfied Manufacturer Drugs Dispensed to LIS Benes NUM 2 - - - - - - - - X\nDRUG_STUS_IND DRUG_STUS_IND Drug Status Indicator of Manufacturer Discount CHAR 1 - - - - - - - - X\nPart D drug characteristics 6\nBN BN Brand Name CHAR 30 X X X X X X X X X\nGNN GNN Generic Name CHAR 30 X X X X X X X X X\nSTR STR Drug Strength",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

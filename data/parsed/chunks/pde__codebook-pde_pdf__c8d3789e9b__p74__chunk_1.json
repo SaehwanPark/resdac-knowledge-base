@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p74__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 74,
+  "text": "The ingredient cost (INGRDNT_CST_PD_AMT), \n• \nThe dispensing fee (DSPNSNG_FEE_PD_AMT), \n• \nThe sales tax, if any (TOT_AMT_ATTR_SLS_TAX_AMT), and \n• \nThe vaccine administration fee, if any (VCCN_ADMIN_FEE_AMT, included starting in 2010). \nThis is the price paid for the drug at the point of sale (i.e., the pharmacy counter), and it does not \ninclude any rebates or discounts that the drug manufacturer provides directly to the Part D plan \nsponsor. \nSHORT NAME: TOTALCST \nLONG NAME: TOT_RX_CST_AMT",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

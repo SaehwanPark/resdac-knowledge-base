@@ -1,0 +1,16 @@
+The Medicaid and CHIP T-MSIS Analytic File (TAF) Inpatient (IP) file contains records for enrollees who had an inpatient hospital stay. Records include fee-for-service (FFS) claims, managed care encounters and supplemental payments for Medicaid, Medicaid-expansion CHIP and separate CHIP.
+What does this file include? (variable highlights)
+- Records included based on discharge date within the file calendar year
+- Active, non-voided, non-denied final action claims
+- Diagnosis codes
+- Present on Admission Indicator
+- Procedure codes
+- Procedure date
+- Discharge status
+- Charges and payments
+- Provider identifier
+Special considerations
+- Available encounter data may vary by state, year and eligibility group.
+- CMS continues to work with states to address data quality issues. In addition to preliminary and fully mature files, CMS may provide updated releases of the files for a given year. CMS has fee information for TAF data pricing.
+- ResDAC provides resources on Medicaid TAF data quality.
+- A bridge file will be provided to assist researchers that are conducting longitudinal analysis involving 2020 TAF research files along with earlier service years. For additional information, please see the CCW T-MSIS Analytic Files (TAF) User Guide posted on CCW’s User Documentation page.

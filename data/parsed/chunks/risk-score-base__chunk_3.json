@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-base__chunk_3",
+  "source_document": "data/raw/html/dataset_page/a908448a73ab3c65dfd95d8626da4db2940148f2.html",
+  "page": null,
+  "text": "risk adjustment model normalization factors and an MA coding pattern difference adjustment. The MA coding pattern difference adjustment is based on MA enrollment during the payment year and may not be appropriate for analyzing FFS cohorts.\nThe Risk Score Operational Payment Base File is a beneficiary-level data file with variables containing monthly risk adjustment payment scores. The file uses a beneficiary’s demographic, care setting, and clinical characteristics to identify the beneficiary’s",
+  "dataset": "risk-score-base",
+  "url": "https://resdac.org/cms-data/files/risk-score-base"
+}

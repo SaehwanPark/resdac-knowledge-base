@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p174__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 174,
+  "text": "LT header \nVALUES: \nTwo-digit values from 01–XX \nCOMMENT: \nA version number where the value 01 is assigned to the original monthly file, and the version number \nis increased by one for each subsequent month in which one or more replacement files are generated \nafter the original month in which the file was generated. The higher the number, the more time has \nelapsed following the dates of service in the file. \nThis variable will never contain NULL values \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

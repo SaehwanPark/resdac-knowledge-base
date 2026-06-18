@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p28__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 28,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n14 \nCONDITION_CATEGORY_12 \nLABEL: \nSpecial Needs Plan (SNP) — Condition Category 12 (Chronic Lung Disorders) \nDESCRIPTION: This variable identifies special needs plans (SNP) for chronic lung disorders (Condition Category 12). \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nN = Not a SNP for this Condition Category \nY = SNP for this Condition Category \nCOMMENT:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

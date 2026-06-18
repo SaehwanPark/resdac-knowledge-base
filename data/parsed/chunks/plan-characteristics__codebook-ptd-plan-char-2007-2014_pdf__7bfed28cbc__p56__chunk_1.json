@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p56__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 56,
+  "text": "—\nLONG NAME: GAP_COSTSHARE_TYPE \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n1 = Coinsurance \n2 = Copayment \n3 = Greater of Coinsurance and Copayment \n4 = Lesser of Coinsurance and Copayment \nCOMMENT: \nThis variable was new in 2007. \nThis variable applies only to enhanced plans with gap coverage. The coverage gap is technically \nreferred to as the initial coverage limit (ICL) for the Part D benefit. \nThe CCW constructs the Plan Characteristics file from information submitted by",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

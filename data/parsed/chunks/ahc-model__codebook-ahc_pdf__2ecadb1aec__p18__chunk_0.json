@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n17 \nBENE_INCM_RNG_CD \nLABEL: \nBeneficiary Income \nDESCRIPTION: Beneficiary income range code. \nLONG NAME: BENE_INCM_RNG_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n1 = Less than $10,000 \n2 = $10,000 - $14,999 \n3 = $15,000 - $19,999 \n4 = $20,000 - $24,999 \n5 = $25,000 - $34,999 \n6 = $35,000 - $49,999 \n7 = $50,000 - $74,999 \n8 = $75,000 or more \nMissing \nCOMMENT:",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

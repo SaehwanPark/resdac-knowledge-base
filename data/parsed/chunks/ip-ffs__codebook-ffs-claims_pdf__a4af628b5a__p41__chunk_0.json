@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p41__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 41,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n23 \nBLG_PRVDR_TXNMY_CD \nLABEL: \nClaim Billing Provider Taxonomy Code \nDESCRIPTION: The taxonomy code assigned to the billing provider’s National Provider Identifier (NPI). A taxonomy \ncode is a unique 10-character code that assigns a provider's classification and specialization. Providers \nuse this code when applying for a National Provider Identifier (NPI).This taxonomy code",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

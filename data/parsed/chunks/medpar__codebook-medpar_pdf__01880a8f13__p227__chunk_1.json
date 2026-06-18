@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p227__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 227,
+  "text": "VALUES: \n0 = No therapeutic radiology (revenue code not 033X) \n1 = Yes therapeutic radiology (revenue code 033X) \nCOMMENT: \nThis field is derived by checking for revenue center code 033X on any of the claim records included in \nthe stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

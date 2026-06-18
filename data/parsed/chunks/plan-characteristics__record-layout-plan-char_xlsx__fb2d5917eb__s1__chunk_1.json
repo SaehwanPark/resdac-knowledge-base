@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 1,
+  "text": "Whether the Current Year Plan is Part C, Part D or Both CHAR 1 X X X\nCONTRACT_NAME Contract Name CHAR 150 X X X\nPLAN_NAME Plan Benefit Package Name CHAR 75 X X X\nORGANIZATION_MARKETING_NAME Plan Organization Marketing Name CHAR 150 X X X\nPARENT_ORGANIZATION Plan Parent Organization Name CHAR 50 X X X\nEFFECTIVE_DATE Plan Effective Date CHAR 10 X X X\nORGANIZATION_TYPE Organization Type CHAR 2 X X X\nPLAN_TYPE Plan Type CHAR 2 X X X\nDEMO_TYPE Demonstration Type CHAR 1 X X X\nSNP_TYPE Special Needs",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

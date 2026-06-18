@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_87",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Yes CHAR 1 x x\nM0450_NBR_PRU_STG1 (M0450) Number Stage 1 Pressure Ulcers Number of pressure ulcers, stage 1. 00 = Zero\n01 = one\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x x\nM0450_NBR_PRU_STG2 (M0450) Number Stage 2 Pressure Ulcers Number of pressure ulcers, stage 2. 00 = Zero\n01 = one\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x x\nM0450_NBR_PRU_STG3 (M0450) Number Stage 3 Pressure Ulcers Number of pressure ulcers, stage 3. 00 = Zero\n01 = one\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

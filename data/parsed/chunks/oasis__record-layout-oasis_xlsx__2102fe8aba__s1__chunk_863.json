@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_863",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "the subsequent provider was an electronic health record. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2122B_ROUTE_PRVDR_HIE_CD Provider Trans - Health Info Exchange Indicate whether the route(s) of transmission of the current reconciled medication list to the subsequent provider was an electronic health information exchange. 0. No\n1. Yes\n^ . Blank CHAR 1 x\nA2122C_ROUTE_PRVDR_VRBL_CD Provider Trans - Verbal Indicate whether the route(s) of transmission of the current reconciled medication list to the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

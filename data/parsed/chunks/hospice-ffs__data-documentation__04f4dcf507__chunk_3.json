@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_3",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "Action Code | \n\n | 21 | PRVDR_STATE_CD | NCH Provider SSA State Code | \n\n | 22 | ORG_NPI_NUM | Organization (or group) NPI Number | \n\n | 23 | SRVC_LOC_NPI_NUM | Claim Service Location NPI Number | \n\n | 24 | AT_PHYSN_UPIN | Claim Attending Physician UPIN Number | \n\n | 25 | AT_PHYSN_NPI | Claim Attending Physician NPI Number (FFS) | \n\n | 26 | AT_PHYSN_SPCLTY_CD | Claim Attending Physician Specialty Code | \n\n | 27 | OP_PHYSN_NPI | Claim Operating Physician NPI Number (FFS) | \n\n | 28 |",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

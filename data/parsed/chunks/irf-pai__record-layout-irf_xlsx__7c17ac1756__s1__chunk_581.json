@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_581",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "the past 5 days \n1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to answer\n518 PAIN_THRPY_ADMSN_CD PAIN_THRPY_ADMSN_CD Pain interference with therapy activities (Adm) CHAR 1 This column document, at the time of admission, how often, in the past five days, pain has interfered with therapy. 0 = Does not apply - I have not received rehabilitation therapy in the past 5 days\n1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

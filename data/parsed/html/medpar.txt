@@ -1,0 +1,9 @@
+The Medicare Provider Analysis and Review (MedPAR) file contains information about inpatient (IP) hospital and skilled nursing facility (SNF) stays that were covered by Medicare. MedPAR records are created by rolling up information for a single stay from individual IP and SNF claims. The data on these claims was originally submitted on the CMS 1450 or UB04.
+This file includes (variable highlights)
+- Diagnosis (ICD diagnosis),
+- Procedure (ICD procedure code)
+- Admission, discharge dates or end date of covered benefits
+- Charge amounts, total and assigned to specific departments
+- FFS reimbursement amount
+- Hospital provider identification number
+- Some dummy records for Medicare managed care coverage of IP stays

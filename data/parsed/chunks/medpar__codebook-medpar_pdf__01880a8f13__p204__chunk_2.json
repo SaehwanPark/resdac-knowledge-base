@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p204__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 204,
+  "text": "(i.e., this is a unique but not necessarily \nsequential number). \nSHORT NAME: PRVDR_BASE_FAC_CCN_NUM \nLONG NAME: PRVDR_BASE_FAC_CCN_NUM \nTYPE: \nCHAR \nLENGTH: \n6 \nSOURCE: \nNCH (base) \nVALUES: \n— \nCOMMENT: \nThis field was new in 2021. Prior to 2021, the CCN was populated in the PRVDR_NUM field. For 2021+ a \nsubset of provider types also has a populated value for PRVDR_BASE_FAC_CCN_NUM. \nThis field is populated from the provider number (the CCN), from the first claim record included in the \nstay,",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

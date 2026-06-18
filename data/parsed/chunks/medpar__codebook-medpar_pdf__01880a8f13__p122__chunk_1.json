@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p122__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 122,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Not participating \n1 = Participating and not equal to 1.0000 \n2 = Participating and equal to 1.0000 \nCOMMENT: \nFor details on the CMS hospital readmission reduction program reference the CMS website: \nhttp://www.cms.gov/Medicare/Medicare-Fee-For-Service-Payment/AcuteInpatientPPS/Readmissions-\nReduction-Program.html \nThis field comes from the Claim HRR Participant Indicator code (CLM-HRR-PRTCPNT-IND-CD) that is \npresent on the first claim",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

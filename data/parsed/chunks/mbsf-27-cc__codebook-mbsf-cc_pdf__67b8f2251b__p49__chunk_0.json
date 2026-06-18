@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__codebook-mbsf-cc_pdf__67b8f2251b__p49__chunk_0",
+  "source_document": "data/raw/assets/pdf/67b8f2251b8ce41fa22290227e10b8b8ec333559.pdf",
+  "page": 49,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF 27 CCW Chronic Conditions (CC) File Codebook │ May 2026 │ V 1.3 \n43 \nCHRONICKIDNEY_EVER \nLABEL: \nDate that beneficiary first met claims criteria for the chronic kidney disease indicator \nDESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Condition \nWarehouse (CCW) chronic kidney disease indicator. The variable will be blank for beneficiaries that \nhave never had the condition.",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cc.pdf"
+}

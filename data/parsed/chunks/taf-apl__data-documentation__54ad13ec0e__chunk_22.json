@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__data-documentation__54ad13ec0e__chunk_22",
+  "source_document": "data/raw/html/documentation_page/54ad13ec0ec7f6d311da24252620d5ade6c49360.html",
+  "page": null,
+  "text": "Record in Supplemental Operating Authority File | \n\n | 84 | CCW_APL_LINK_KEY | CCW Key to Link APL base Record to Related Supplement Records | \n\n | 85 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | \n\n | 86 | PL_VRSN | Plan File Version Representing the Iteration of the File | \n\n | 87 | RFRNC_YR | Reference Year (TAF) | \n\n | 88 | CCW_LD_DT | CCW Load Date |",
+  "dataset": "taf-apl",
+  "url": "https://resdac.org/cms-data/files/taf-apl/data-documentation"
+}

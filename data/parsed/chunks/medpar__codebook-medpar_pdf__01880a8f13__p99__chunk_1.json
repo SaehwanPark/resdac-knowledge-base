@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p99__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 99,
+  "text": "date that is present on the claim records included in the \nstay, where the claim status code is other than '30' (still patient) on the last claim record included in the \nstay. \nInpatient claims will always have a discharge date; SNF claims could have a zero date. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

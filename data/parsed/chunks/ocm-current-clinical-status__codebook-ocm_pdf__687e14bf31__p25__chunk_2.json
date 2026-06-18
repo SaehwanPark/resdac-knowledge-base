@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p25__chunk_2",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 25,
+  "text": "Episodes beginning July 2, 2019–January 1, 2020 \n8 = Episodes beginning January 2, 2020–July 1, 2020 \n9 = Episodes beginning July 2, 2020–January 1, 2021 \n10 = Episodes beginning January 2, 2021–July 1, 2021 \n11 = Episodes beginning July 2, 2021–December 31, 2021 \n\nCOMMENT: \nIn OCM, episodes are initiated on the date of service for an initial Part B chemotherapy drug claim \nwith a corresponding cancer diagnosis on the claim, or on the fill date for an initial Part D \nchemotherapy drug claim",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

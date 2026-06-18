@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p91__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 91,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n92 \nPRVDR_ENRLMT_STUS_ACTV_IND \nLABEL: \nMedicaid or CHIP Active Enrollment Indicator — Ever in Calendar Year \nDESCRIPTION: Indicates the provider’s Medicaid and/or CHIP enrollment status is one of the values for an active \nenrollment status; ever in the calendar year. \nSHORT NAME: PRVDR_ENRLMT_STUS_ACTV_IND \nLONG NAME: PRVDR_ENRLMT_STUS_ACTV_IND \nTYPE: \nCHAR \nLENGTH: \n1",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

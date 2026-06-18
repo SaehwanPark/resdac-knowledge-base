@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_60",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0290) Unknown High Risk Factors High risk factors characterizing this patient: unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0300_CURR_RESIDEN (M0300) Current Residence Current residence. 01 = Patient owned or rented residence (house, apartment, or mobile home owned or rented by patient/couple/significant other).\n02 = Family member residence.\n03 = Boarding home or rented room.\n04 = Board and care or assisted living facility.\n05 = Other (specify) CHAR 2 x x\nM0310_STR_DOORWAYS (M0310) Narrow or",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

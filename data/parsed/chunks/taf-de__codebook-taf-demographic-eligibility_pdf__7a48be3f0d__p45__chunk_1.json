@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p45__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 45,
+  "text": "Annual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n1 = Age <1 \n2 = Age 1–5 \n3 = Age 6–14 \n4 = Age 15–18 \n5 = Age 19–20 \n6 = Age 21–44 \n7 = Age 45–64 \n8 = Age 65–74 \n9 = Age 75–84 \n10 = Age 85–125 \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis variable is derived from the TAF variable AGE_NUM, for which ages > 125 are set to 125. Age can \nbe less than zero (AGE_GRP_CD = 1) in cases where a fetus is covered. \nThis age group value is the most",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

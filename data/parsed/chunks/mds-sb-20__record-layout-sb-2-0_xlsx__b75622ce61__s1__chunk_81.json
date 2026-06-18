@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_81",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "J1H J1H_FEVER 27c(J1h)Fever CHAR 1 Indicates the patient has a fever - a fever is present when the patient's temperature is 2.4 degrees greater than the baseline temperature. Many frail elders have normally low rectal baseline temperatures. 0 = Unchecked, 1 = Checked, -1 = Unknown\n102 J1I J1I_HALLUCINATIONS 27d(J1i)Hallucinations CHAR 1 Indicates the patient has hallucinations - false perceptions that occur in the absence of any real stimuli. An hallucination may be auditory (hearing voices),",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

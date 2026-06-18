@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "of care assessment. (retired) CHAR 2 x x x x x x x\nM0102_PHYSN_ORDRD_SOCROC_DT M0102 Physician Ordered SOC ROC The date the physician ordered the start of care or resumption of care for a patient. DATE 8 x x x x x x x\nM0102_PHYSN_ORDRD_SOCROC_DT_NA M0102 Physician Ordered SOC ROC - NA This field is checked if there is no specific start of care date ordered by the physician (or physician designee). 0 = Not Checked (Not NA), 1 = Checked (NA) CHAR 1 x x x x x x x\nM0104_PHYSN_RFRL_DT M0104",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

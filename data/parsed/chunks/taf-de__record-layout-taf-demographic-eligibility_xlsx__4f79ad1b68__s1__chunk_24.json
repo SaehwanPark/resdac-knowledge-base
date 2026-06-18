@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_24",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Code - November CHAR 2 109\nELGBLTY_GRP_CD_12 Eligibility Group Code - December CHAR 2 110\nELGBLTY_GRP_CD_LTST Eligibility Group Code - Ltst in Yr CHAR 2 111\nMASBOE_CD_01 Maintenance Assistance Status and Basis of Eligibility Code - January CHAR 3 112\nMASBOE_CD_02 Maintenance Assistance Status and Basis of Eligibility Code - February CHAR 3 113\nMASBOE_CD_03 Maintenance Assistance Status and Basis of Eligibility Code - March CHAR 3 114\nMASBOE_CD_04 Maintenance Assistance Status and Basis of",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

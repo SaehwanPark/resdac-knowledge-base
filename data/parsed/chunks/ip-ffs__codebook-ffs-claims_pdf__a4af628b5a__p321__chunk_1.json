@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p321__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 321,
+  "text": "participating in the particular \nmodel. \nSHORT NAME: RC_PTNT_ADD_ON_PYMT_AMT \nLONG NAME: RC_PTNT_ADD_ON_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nCOMMENT: \nThis field is new in January 2020. This field only applies to Part A claims. \nFor participating hospitals within the PA model all inpatient and outpatient services (facility/technical \nservices) are considered a part of the model/global budget services. Basically, all the services for \nparticipating hospitals would be global except",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

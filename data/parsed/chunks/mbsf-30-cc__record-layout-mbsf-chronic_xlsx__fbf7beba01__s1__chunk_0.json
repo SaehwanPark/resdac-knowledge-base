@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-30-cc__record-layout-mbsf-chronic_xlsx__fbf7beba01__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/fbf7beba01bf4890eb76a8a9cf8a66fdb3f15943.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File — 30 CCW Chronic Conditions (CHRONIC) File\nVersion — March 2022\nSAS Name Label Type Length\nBENE_ID Encrypted CCW Beneficiary ID CHAR 15\nBENE_ENROLLMT_REF_YR Reference Year NUM 4\nALZH Alzheimer's Disease End-of-Year Indicator NUM 1\nALZH_EVER First Occurrence of Alzheimer's Disease DATE 8\nAMI Acute Myocardial Infarction End-of-Year Indicator NUM 1\nAMI_EVER First Occurrence of Acute Myocardial Infarction DATE",
+  "dataset": "mbsf-30-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-chronic.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p12__chunk_5",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 12,
+  "text": "disease, and starting with the V24 Risk Score Model, the \ntotal number of diseases or conditions of an individual. \nCCW provides unique data file variable names for each variable in the MOFs, so it is easy to trace which version of the \nHCCs is in the data. If a beneficiary has more than one condition within a particular HCC hierarchy, CMS uses only the \nmost severe condition when determining his or her risk score. Each condition variable has a value of 1 if the \nbeneficiary had the condition",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_395",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "resident has a foot infection (e.g., cellulitis, purulent drainage). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n441 M1040B_DBTC_FT_ULCR_CD M1040B_DBTC_FT_ULCR_CD M1040B Other Foot Skin Problems: Diabetic Foot Ulcer Code CHAR 1 The data in this column indicates whether the resident has diabetic foot ulcer(s). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n442 M1040C_OTHR_LSN_FT_CD M1040C_OTHR_LSN_FT_CD M1040C Other Foot Skin Problems: Other Open Lesion on",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

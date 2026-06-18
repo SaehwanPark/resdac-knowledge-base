@@ -1,12 +1,12 @@
 # Extraction Pack
 
 - Archive manifest input: manifests/archive_manifest.csv
-- Manifest rows: 3950
+- Manifest rows: 3949
 - Datasets: 96
 - Documents: 179
 - Document edges: 179
 - Ontology nodes: 99
-- Ontology edges: 253
+- Ontology edges: 251
 - Failures: 0
 
 ## Outputs

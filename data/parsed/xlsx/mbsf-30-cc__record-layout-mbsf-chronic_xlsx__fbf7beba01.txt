@@ -1,0 +1,66 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Master Beneficiary Summary File — 30 CCW Chronic Conditions (CHRONIC) File
+Version — March 2022
+SAS Name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+BENE_ENROLLMT_REF_YR	Reference Year	NUM	4
+ALZH	Alzheimer's Disease End-of-Year Indicator	NUM	1
+ALZH_EVER	First Occurrence of Alzheimer's Disease	DATE	8
+AMI	Acute Myocardial Infarction End-of-Year Indicator	NUM	1
+AMI_EVER	First Occurrence of Acute Myocardial Infarction	DATE	8
+ANEMIA	Anemia End-of-Year Indicator	NUM	1
+ANEMIA_EVER	First Occurrence of Anemia	DATE	8
+ASTHMA	Asthma End-of-Year Indicator	NUM	1
+ASTHMA_EVER	First Occurrence of Asthma	DATE	8
+ATRIAL_FIB	Atrial Fibrillation and Flutter End-of-Year Indicator	NUM	1
+ATRIAL_FIB_EVER	First Occurrence of Atrial Fibrillation and Flutter	DATE	8
+BPH	Benign Prostatic Hyperplasia End-of-Year Indicator	NUM	1
+BPH_EVER	First Occurrence of Benign Prostatic Hyperplasia	DATE	8
+CANCER_BREAST	Breast Cancer End-of-Year Indicator	NUM	1
+CANCER_BREAST_EVER	First Occurrence of Breast Cancer	DATE	8
+CANCER_COLORECTAL	Colorectal Cancer End-of-Year Indicator	NUM	1
+CANCER_COLORECTAL_EVER	First Occurrence of Colorectal Cancer	DATE	8
+CANCER_ENDOMETRIAL	Endometrial Cancer End-of-Year Indicator	NUM	1
+CANCER_ENDOMETRIAL_EVER	First Occurrence of Endometrial Cancer	DATE	8
+CANCER_LUNG	Lung Cancer End-of-Year Indicator	NUM	1
+CANCER_LUNG_EVER	First Occurrence of Lung Cancer	DATE	8
+CANCER_PROSTATE	Prostate Cancer End-of-Year Indicator	NUM	1
+CANCER_PROSTATE_EVER	First Occurrence of Prostate Cancer	DATE	8
+CANCER_UROLOGIC	Urologic Cancer (Kidney, Renal Pelvis and Ureter) End-of-Year Indicator	NUM	1
+CANCER_UROLOGIC_EVER	First Occurrence of Urologic Cancer (Kidney, Renal Pelvis and Ureter)	DATE	8
+CATARACT	Cataract End-of-Year Indicator	NUM	1
+CATARACT_EVER	First Occurrence of Cataract	DATE	8
+CHRONICKIDNEY	Chronic Kidney Disease End-of-Year Indicator	NUM	1
+CHRONICKIDNEY_EVER	First Occurrence of Chronic Kidney Disease	DATE	8
+COPD	Chronic Obstructive Pulmonary Disease End-of-Year Indicator	NUM	1
+COPD_EVER	First Occurrence of Chronic Obstructive Pulmonary Disease	DATE	8
+DEPRESSION	Depression, Bipolar or Other Depressive Mood Disorders End-of-Year Indicator	NUM	1
+DEPRESSION_EVER	First Occurrence of Depression, Bipolar or Other Depressive Mood Disorders	DATE	8
+DIABETES	Diabetes End-of-Year Indicator	NUM	1
+DIABETES_EVER	First Occurrence of Diabetes	DATE	8
+GLAUCOMA	Glaucoma End-of-Year Indicator	NUM	1
+GLAUCOMA_EVER	First Occurrence of Glaucoma	DATE	8
+HF	Heart Failure and Non-Ischemic Heart Disease End-of-Year Indicator	NUM	1
+HF_EVER	First Occurrence of Heart Failure and Non-Ischemic Heart Disease	DATE	8
+HIP_FRACTURE	Hip/Pelvic Fracture End-of-Year Indicator	NUM	1
+HIP_FRACTURE_EVER	First Occurrence of Hip/Pelvic Fracture	DATE	8
+HLP	Hyperlipidemia End-of-Year Indicator	NUM	1
+HLP_EVER	First Occurrence of Hyperlipidemia	DATE	8
+HTN	Hypertension End-of-Year Indicator	NUM	1
+HTN_EVER	First Occurrence of Hypertension	DATE	8
+HYPTHYRD	Hypothyroidism End-of-Year Indicator	NUM	1
+HYPTHYRD_EVER	First Occurrence of Hypothyroidism	DATE	8
+ISCHEMICHEART	Ischemic Heart Disease End-of-Year Indicator	NUM	1
+ISCHEMICHEART_EVER	First Occurrence of Ischemic Heart Disease	DATE	8
+NONALZH_DEMEN	Non-Alzheimer's Dementia End-of-Year Indicator	NUM	1
+NONALZH_DEMEN_EVER	First Occurrence of Non-Alzheimer's Dementia	DATE	8
+OSTEOPOROSIS	Osteoporosis With or Without Pathological Fracture End-of-Year Indicator	NUM	1
+OSTEOPOROSIS_EVER	First Occurrence of Osteoporosis With or Without Pathological Fracture	DATE	8
+PNEUMO	All Cause Pneumonia End-of-Year Indicator	NUM	1
+PNEUMO_EVER	First Occurrence of All Cause Pneumonia	DATE	8
+PRKNSN	Parkinson's Disease and Secondary Parkinsonism End-of-Year Indicator	NUM	1
+PRKNSN_EVER	First Occurrence of Parkinson's Disease and Secondary Parkinsonism	DATE	8
+RA_OA	Rheumatoid Arthritis / Osteoarthritis End-of-Year Indicator	NUM	1
+RA_OA_EVER	First Occurrence of Rheumatoid Arthritis / Osteoarthritis	DATE	8
+STROKE_TIA	Stroke / Transient Ischemic Attack End-of-Year Indicator	NUM	1
+STROKE_TIA_EVER	First Occurrence of Stroke / Transient Ischemic Attack	DATE	8

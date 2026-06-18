@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_65",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "Beneficiary (MSPB) costs for attributed beneficiary, ER Laboratory, Pathology, and Other Tests category 94 Num 8 Populated only for records with MSPB_episode=1\nCOST_MAJOR_PROCS_ANESTHESIA MSPB major procedure and anesthesia costs Medicare Spending per Beneficiary (MSPB) costs for attributed beneficiary, Major Procedures and Anesthesia category 95 Num 8 Populated only for records with MSPB_episode=1\nCOST_MINOR_PROCS_AMBULATORY MSPB minor procedure and ambulatory service costs Medicare Spending",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__data-documentation__856a7e4838__chunk_1",
+  "source_document": "data/raw/html/documentation_page/856a7e4838643c566306030b513d1693d008b4c5.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\nCCW Record Layout - Medicaid Enrollee Supplemental File (MESF): National Death Index (NDI)\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted 723 Beneficiary ID (Unique Key) | \n| STATE_CD | State Code (MESF) | \n| MSIS_ID | Encrypted Medicaid State ID Number | \n| REF_YR | Record Reference Year | \n| DM_SOURCE | Dual or Medicaid only enrollee | \n| DEATH_DT | Date of Death | \n| NDI_DOD | NDI Date of Death | \n| NDI_MATCH | Death",
+  "dataset": "mesf-ndi",
+  "url": "https://resdac.org/cms-data/files/mesf-ndi/data-documentation"
+}

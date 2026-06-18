@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p89__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 89,
+  "text": "be reimbursed based on a national standardized per visit \nrate instead of home health resource groups (HHRGs). \nSHORT NAME: LUPAIND \nLONG NAME: CLM_HHA_LUPA_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nL = Low utilization payment adjustment (LUPA) claim \nBlank = Not a LUPA claim; process using home health resource groups (HHRG) \nCOMMENT: \nBeginning 10/1/2000, this field was populated with data. Claims processed prior to 10/1/2000 \ncontained spaces. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

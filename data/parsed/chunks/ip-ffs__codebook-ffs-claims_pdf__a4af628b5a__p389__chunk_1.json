@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p389__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 389,
+  "text": "coinsurance amounts and \nbefore an adjustment for the cost of services provided. \nSHORT NAME: REV_CHRG \nLONG NAME: REV_CNTR_TOT_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nFor accommodation revenue center total charges must equal the rate times units (days). \nEXCEPTIONS: \n1. For SNF RUGS demo claims only (9000 series revenue center codes), this field contains SNF \ncustomary accommodation charge, (i.e., charges related to the accommodation revenue center \ncode",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

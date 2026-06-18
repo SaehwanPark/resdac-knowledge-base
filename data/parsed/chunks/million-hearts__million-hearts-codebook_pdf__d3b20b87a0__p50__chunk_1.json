@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p50__chunk_1",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 50,
+  "text": "(final and raw) \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \nEx — %, ##, -##.#, MG/DL, NULL, MM HG, missing \nCOMMENT: \nThis field is only populated in the Clinical_raw file (not the Clinical_final where it is always missing). In \nthe raw clinical file, values are a mixture of non-standardized values which may include values from \ntest results, dosages of medications, free-form text, and other unknown values. \n^ Back to TOC ^",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_6",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "CHAR 10 59\nBLG_PRVDR_SPCLTY_CD1 BLG_PRVDR_SPCLTY_CD1 Claim Billing Provider Secondary Specialty Code 1 CHAR 2 65 New6\nBLG_PRVDR_SPCLTY_CD2 BLG_PRVDR_SPCLTY_CD2 Claim Billing Provider Secondary Specialty Code 2 CHAR 2 66 New6\nBLG_PRVDR_SPCLTY_CD3 BLG_PRVDR_SPCLTY_CD3 Claim Billing Provider Secondary Specialty Code 3 CHAR 2 67 New6\nBLG_PRVDR_TXNMY_CD BLG_PRVDR_TXNMY_CD Claim Billing Provider Taxonomy Code CHAR 10 68 New6\nPRNCPAL_DGNS_CD PRNCPAL_DGNS_CD Claim Principal Diagnosis Code CHAR 7",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

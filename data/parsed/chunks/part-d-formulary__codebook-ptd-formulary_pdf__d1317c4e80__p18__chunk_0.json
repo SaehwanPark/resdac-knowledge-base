@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n14 \nSEGMENT_ID \nLABEL: \nMarket Segment Identifier \nDESCRIPTION: This variable is the identifier for the geographic market segment covered by the plan. \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n3-digit number \nCOMMENT: \nYou need to know both the contract number and plan benefit package identification number \n(variables called CONTRACT_ID and PLAN_ID) in",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

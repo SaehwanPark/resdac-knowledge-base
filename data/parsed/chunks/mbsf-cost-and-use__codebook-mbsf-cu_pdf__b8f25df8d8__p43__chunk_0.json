@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p43__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 43,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n37 \nHOP_VISITS \nLABEL: \nHospital Outpatient Visits \nDESCRIPTION: This variable is the count of revenue center dates (as a proxy for visits) in the hospital outpatient (HOP) \nsetting for the year. Note that the algorithm counts the dates on each of the claim revenue lines; \ntherefore if the same revenue center date appears on two different claims then it is counted as two \nvisits.",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

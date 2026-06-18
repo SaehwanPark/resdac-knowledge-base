@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p363__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 363,
+  "text": "Equipment and Supplies (TPNIES) Amount. \nThis line level field represents the ESRD PPS add-on payment for capital-related assets (CRA). For \neligible CRAs that are home dialysis machines, ESRD facilities will be paid the CRA for TPNIES \nSHORT NAME: REV_CNTR_CRA_TPNIES_AMT \nLONG NAME: REV_CNTR_CRA_TPNIES_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XXXX \nCOMMENT: \nThis only appears on outpatient claims. This field is not populated prior to 2021. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

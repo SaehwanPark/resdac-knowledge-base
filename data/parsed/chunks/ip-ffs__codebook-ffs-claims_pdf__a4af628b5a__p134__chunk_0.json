@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p134__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 134,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n116 \nC6 = Blend yr, site-neutral based on \nIPPS, SSO, no vent \n\nC7 = Blend yr, site-neutral based on \nIPPS, SSO, outlier, no vent \n\nCA = Site-neutral based on cost, no \nvent \n\nCB = Site-neutral based on IPPS, no \nvent \n\nCC = Site-neutral based on \nIPPS, outlier, no vent \nCD = SSO standard payment, no vent \n\nCE = SSO standard payment, outlier, no \nvent \n\nCF = Standard payment",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

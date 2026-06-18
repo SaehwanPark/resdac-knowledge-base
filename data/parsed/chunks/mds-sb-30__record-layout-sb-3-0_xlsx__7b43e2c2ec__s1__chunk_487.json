@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_487",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "in the last 14 days. discontinued 09/30/2023\n550 O0700_PHYSN_ORDR_NUM O0700_PHYSN_ORDR_NUM O0700 Physician Order Day Number CHAR 2 The data in this column indicates the number of days that the physician (or authorized assistant or practitioner) changed the resident's orders in the last 14 days. discontinued 09/30/2023\n551 P0100A_BED_RAIL_CD P0100A_BED_RAIL_CD P0100A Physical Restraints in Bed: Bed Rail Code CHAR 1 The data in this column indicates the frequency that a bed rail(s) was used.",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

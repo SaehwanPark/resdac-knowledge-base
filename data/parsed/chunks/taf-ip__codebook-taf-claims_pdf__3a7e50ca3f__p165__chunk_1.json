@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p165__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 165,
+  "text": "LENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT line \nVALUES: \nhttps://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeeSched/PFS-Relative-\nValue-Files.html \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThe variable called line procedure code system/nomenclature (LINE_PRCDR_CD_SYS) is used to \nidentify whether a CPT or HCPCS code is used. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

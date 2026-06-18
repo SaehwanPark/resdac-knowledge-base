@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p116__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 116,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n100 \nHAC_RDCTN_PMT_AMT \nLABEL: \nHospital Acquired Conditions (HAC) Reduction Payment Amount \nDESCRIPTION: This field identifies the reduction in payment amount from the IPPS payment for hospitals that rank in \nthe lowest-performing quartile of selected Hospital Acquired Conditions (HAC). \nSHORT NAME: HAC_RDCTN_PMT_AMT \nLONG NAME: HAC_RDCTN_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n0,",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

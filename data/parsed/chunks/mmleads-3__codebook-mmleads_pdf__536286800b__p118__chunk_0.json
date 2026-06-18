@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p118__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 118,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n107 \nMDCR_PTD_TOTAL_USE \nLABEL: \nMedicare Use (Claim Count) — PDE \nDESCRIPTION: This variable is the total count of the Medicare Part D Events (PDEs) for the beneficiary during the \nyear. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF (derived) \nVALUES: \nXX \nCOMMENT: \nNote that all PDEs are included, whether the beneficiary was enrolled in a stand-alone prescription \ndrug plan (PDP) or a Medicare Advantage (managed care) plan. \nThe",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

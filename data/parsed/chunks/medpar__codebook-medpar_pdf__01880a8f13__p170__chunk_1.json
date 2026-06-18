@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p170__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 170,
+  "text": "federal rate payment (includes DSH, IME, outliers, etc. as applicable) when HSP \nrate payment exceeds Federal rate payment (otherwise $0). \nSHORT NAME: OPRTG_HSP_AMT \nLONG NAME: OPRTG_HSP_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field was new in 2011. \nThis field is derived by accumulating the Claim Operating HSP Amount (CLM_OPRTG_HSP_AMT) that is \npresent on any of the claim records included in the stay (i.e., of the claim operating HSP amounts \nreported on the",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

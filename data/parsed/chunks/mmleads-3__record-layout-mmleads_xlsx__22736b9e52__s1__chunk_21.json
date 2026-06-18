@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "- September Num 8\n105 MDCR_DUAL_STUS_CD_10 Medicare - Medicaid Dual Eligibility Code - October Char 2\n106 MDCR_BUYIN_10 Medicare - Entitlement/Buy-In Indicator - October Char 1\n107 MDCR_FFS_MEDICAL_10 Medicare - Fee-for-Service Medical Coverage Indicator - October Num 8\n108 MDCR_DUAL_STUS_CD_11 Medicare - Medicaid Dual Eligibility Code - November Char 2\n109 MDCR_BUYIN_11 Medicare - Entitlement/Buy-In Indicator - November Char 1\n110 MDCR_FFS_MEDICAL_11 Medicare - Fee-for-Service Medical Coverage",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s2__chunk_5",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 2,
+  "text": "Care Capitated Claim Count - Other Services Num 8\n27 MDCD_OT_MC_CAPTD_SPEND Medicaid Managed Care Capitated Payment Amount - Other Services Num 8\n28 MDCD_RX_TOTAL_USE Medicaid Use (Claim Count) - Rx Num 8\n29 MDCD_RX_TOTAL_SPEND Medicaid Payment Amount - Rx Num 8\n30 MDCR_MC_PTA_PTB_CAPTD_SPEND Medicare Part A/ Part B Managed Care Capitated Payment Amount Num 8\n31 MDCR_MC_PTA_PTB_CAPTD_SPEND_01 Medicare PTA/PTB Managed Care Capitated Payment Amount - January Num 8\n32 MDCR_MC_PTA_PTB_CAPTD_SPEND_02",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

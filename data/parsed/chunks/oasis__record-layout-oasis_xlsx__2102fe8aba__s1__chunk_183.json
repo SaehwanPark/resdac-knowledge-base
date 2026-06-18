@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_183",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Injury Caused by Fall/Accident Reason for hospitalization: injury caused by fall or accident at home. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_STROKE (M0895) Myocardial Infarction/Stroke Reason for hospitalization: myocardial infarction, stroke. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_OTHER (M0895) Other Than Above Reason for Hospitalization Reason for hospitalization: Other than above. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_PSYCH (M0895)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

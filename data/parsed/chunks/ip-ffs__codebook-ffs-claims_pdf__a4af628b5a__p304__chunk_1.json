@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p304__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 304,
+  "text": "PRTCPTNG_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = Participating \n2 = All or some covered and allowed expenses applied to deductible participating \n3 = Assignment accepted/non-participating \n4 = Assignment not accepted/non-participating \n5 = Assignment accepted but all or some covered and allowed expenses applied to deductible non-\nparticipating \n6 = Assignment not accepted and all covered and allowed expenses applied to deductible non-\nparticipating \n7 = Participating",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

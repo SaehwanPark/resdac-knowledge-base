@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_250",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "clincially as an abrasion, blister, or shallow crater.\n409 M1C M1C_STAGE_3_ULCER (M1C) Stage 3 Ulcers CHAR 1 Skin condition: ulcers - stage 3 in last 7 days. This field indicates the number of stage 3 ulcers on the resdient's body. Stage 3 is defined as a full thickness loss of skin layers exposing the subcutaneous tissues. Presents as a deep crater with or without undermining adjacent tissue.\n410 M1D M1D_STAGE_4_ULCER (M1D) Stage 4 Ulcers CHAR 1 Skin condition: ulcers - stage 4 in last 7 days.",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

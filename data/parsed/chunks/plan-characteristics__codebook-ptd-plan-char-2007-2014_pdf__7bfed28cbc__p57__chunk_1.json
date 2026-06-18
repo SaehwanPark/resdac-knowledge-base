@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p57__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 57,
+  "text": "NAME: GAP_COVERAGE_TYPE \nTYPE: \nCHAR \nLENGTH: \n2 (was 1 CHAR 2006–2008) \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n01 = Few Brands \n10 = Few Generics \n11 = Few Generics and Few Brands \n20 = Some Generics \n21 = Some Generics and Few Brands \n22 = Some Generics and Some Brands \n30 = All Preferred Generics \n32 = All Preferred Generics and Some Brands \n33 = All Preferred Generics and All Preferred Brands \n40 = All Generics \n41 = All Generics and Few Brands \n42 = All Generics and Some Brands \n43 = All",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

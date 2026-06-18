@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p5__chunk_6",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 5,
+  "text": "institution (usually a nursing home); and the diagnoses on the beneficiary’s claims from the previous \nyear if the beneficiary was enrolled in Part B for all 12 months of the previous year (i.e., the risk score for payment year 2019 is \nbased on diagnoses from claims from 2018). Diagnosis codes are not a model input for beneficiaries with less than 12 months \nof Part B during the previous year. CMS employs a “new enrollee” model for these beneficiaries. \nCMS pays each MA organization a monthly",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

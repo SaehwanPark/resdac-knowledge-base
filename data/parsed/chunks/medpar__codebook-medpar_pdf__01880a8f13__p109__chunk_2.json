@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p109__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 109,
+  "text": "0853) \n54 = CCPD-OP-maintenance/100% (revenue code 0854) \n55 = CCPD-OP-support services (revenue code 0855) \n59 = CCPD-OP-other (revenue code 0859) \n80 = Miscellaneous dialysis-general (revenue code 0880) \n81 = Miscellaneous dialysis-ultrafiltration (revenue code 0881) \n89 = Miscellaneous dialysis-other (revenue code 0889) \nMissing/null = No ESRD setting indication \nCOMMENT: \nThis field is derived from the presence of the dialysis revenue center codes (080X, 082X, 083X, 084X, \n085X, and 088X)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

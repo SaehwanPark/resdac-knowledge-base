@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p289__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 289,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n269 \nTOOTH_SRFC_CD \nLABEL: \nTooth Surface Code \nDESCRIPTION: A code to identify the tooth’s surface on which the service was performed. \nSHORT NAME: TOOTH_SRFC_CD \nLONG NAME: TOOTH_SRFC_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT line \nVALUES: \nB = Buccal — the surface of the tooth which is closest to the cheek. \nD = Distal — the surface of the",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

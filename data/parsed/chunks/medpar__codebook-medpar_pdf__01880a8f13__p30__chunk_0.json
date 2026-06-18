@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n14 \nBENE_DEATH_DT \nLABEL: \nDate beneficiary died \nDESCRIPTION: The date the beneficiary died. \nSHORT NAME: DEATHDT \nLONG NAME: BENE_DEATH_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field comes from the beneficiary death date if present on the enrollment database. It is \nnull/missing if there is no date of death. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_279",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "M0800C Worsening Stage 4 Pressure Ulcers Number CHAR 1 The number of current stage 4 pressure ulcers that were not present or were at a lesser stage on admission. If no current pressure ulcer at a given stage, enter 0..\n268 FAC_ID FAC_ID Facility ID CHAR 16\n269 HGT_NUM HGT_NUM 25A Height Number CHAR 2 This column documents the patient's height (in inches) at admission. If measurement is X.1-X.4 round down, X.5 or greater round up\n270 WT_NUM WT_NUM 26A Weight Number CHAR 3 This column documents",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

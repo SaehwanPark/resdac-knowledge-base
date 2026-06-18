@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s3__chunk_38",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 3,
+  "text": "Costshare Type by Tier CHAR 1 X X\nPOST_OOPT_COINS_PCT Post-Out-of-pocket threshold Coinsurance Percentage NUM 12 X X\nPOST_OOPT_COPAY_AMT Post-Out-of-Pocket Threshold Copay NUM 12 X X\nPOST_OOPT_EXCL_DRUG_CST_SHR Post-Out-of-Pocket Threshold Costshare Type by Tier for Excluded Drugs CHAR 1 - X\nInsulin Tier Cost-Sharing\nINSULIN_INP_COPAY_1M Insulin Copay Standard Retail - 1 month supply NUM 12 - X\nINSULIN_INP_COPAY_2M Insulin Copay Standard Retail - 2 month supply NUM 12 - X\nINSULIN_INP_COPAY_3M",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

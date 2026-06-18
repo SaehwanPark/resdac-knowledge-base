@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "lines that are submitted from the same assessment.\n3 TRGT_DT TRGT_DT Target Date (Date of Assessment) DATE 8 For MDS, the target date is the A2000 Discharge Date for any discharge, the A1600 Reentry Date for any re-entry and the A2300 Assessment Reference Date for any other type of assessment. For SB the Target Date is the same as the Event Date and is equal to the following dates: 10a (A2300) - Assessment Reference Date, 15 (A2000) - Discharge Date and 16 (A1600) - Reentry Date.\n4 STATE_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

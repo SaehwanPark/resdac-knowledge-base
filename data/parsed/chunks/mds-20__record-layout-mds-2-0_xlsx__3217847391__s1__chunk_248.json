@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_248",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "care. 0 = No, 1 = Yes, \"-\" = Unknown.\n406 L1G L1G_NONE_ABOVE (L1G) None of Above Oral Status CHAR 1 Oral/dental status: oral status and disease prevention - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n407 M1A M1A_STAGE_1_ULCER (M1A) Stage 1 Ulcers CHAR 1 Skin condition: ulcers - stage 1 in last 7 days. This field indicates the number of stage 1 ulcers on the resdient's body. Stage 1 is defined as a persistent area of skin redness (without a break in the skin) that does not disappear when",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

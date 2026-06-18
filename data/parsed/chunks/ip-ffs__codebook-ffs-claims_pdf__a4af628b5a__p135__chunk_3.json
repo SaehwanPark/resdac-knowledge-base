@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p135__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 135,
+  "text": "Return Codes****** \nOutpatient PPS payment return codes: \n01 = Line processed to payment \n20 = Line processed but payment = 0 \nbene deductible = > adjusted \npayment \n22 = For outpatient PPS, it means daily \ncoinsurance limitation\nOutpatient PPS error return codes:\n30 = Missing, deleted, or invalid APC \n38 = Missing or invalid discount \nfactor \n40 = Invalid service indicator passed \nby the OCE \n41 = Service indicator invalid for OPPS \nPRICER \n42 = APC = “00000” or (packaging flag = 1 \nor 2) \n43",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

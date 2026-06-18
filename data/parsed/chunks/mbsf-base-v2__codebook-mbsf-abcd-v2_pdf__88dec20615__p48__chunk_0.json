@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p48__chunk_0",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 48,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D, Version 2 │ May 2026 │ V 1.2 \n41 \n41 = Medical Savings Account (MSA) \nDemonstration \n48 = Medicare-Medicaid Plan (MMP) \nHMO \n49 = Medicare-Medicaid Plan HMO \nPoint-of-Service (MMP \nHMOPOS) \nCOMMENT: \nIf the beneficiary was not enrolled in a managed care plan for a given month, this variable will be \nnull/missing for that month; this includes beneficiaries not enrolled in Medicare for the month.",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

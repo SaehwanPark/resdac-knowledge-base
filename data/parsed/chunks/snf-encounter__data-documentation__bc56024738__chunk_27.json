@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_27",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "132 | PRCDR_DT11 | Claim Procedure Code 11 Date (Encounter) | \n\n | 133 | PRCDR_DT12 | Claim Procedure Code 12 Date (Encounter) | \n\n | 134 | PRCDR_DT13 | Claim Procedure Code 13 Date (Encounter) | \n\n | 135 | CLM_OBSLT_DT | Claim Obsolete Date | \n\n | 136 | CLM_BPRVDR_CITY_NAME | Billing Provider Address - City | \n\n | 137 | CLM_BPRVDR_USPS_STATE_CD | Billing Provider Address - USPS State Code | \n\n | 138 | CLM_BPRVDR_ADR_ZIP_CD | Billing Provider Zip Code | \n\n | 139 | CLM_SUBSCR_CITY_NAME |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

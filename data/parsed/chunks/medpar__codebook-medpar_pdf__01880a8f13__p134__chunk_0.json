@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p134__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 134,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n118 \nINTRNL_USE_SMPL_SIZE_CD \nLABEL: \nFor internal use. MEDPAR sample size. \nDESCRIPTION: MEDPAR Internal Use Sample Size Code Limited availability; for internal use only to identify the MEDPAR \nsample size: 20% (HIC 9th digit = 0, 5); 20% (HIC 9th digit = 4, 8; 60% (remainder). Where not available, \nthis field will contain a zero. \nSHORT NAME: SMPLSIZE \nLONG NAME: INTRNL_USE_SMPL_SIZE_CD \nTYPE:",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

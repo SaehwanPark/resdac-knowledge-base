@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "to delivery to researchers. It identifies lines that are submitted from the same assessment. CHAR 15 x x x x x x x\nASMT_EFF_DATE Assessment Effective Date This date determines the year of the assessment. The effective date is based on the M0100 RFA field. This is the (M0030) Start of Cre date for RFA 01 or 02; (M0032) Resumption of Care Date for 03; (M0090) Information Completion Date for 04 or 05; and (M0906) Discharge/Transfer/Death date of 06, 07, 08, 09, or 10. DATE 8 x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

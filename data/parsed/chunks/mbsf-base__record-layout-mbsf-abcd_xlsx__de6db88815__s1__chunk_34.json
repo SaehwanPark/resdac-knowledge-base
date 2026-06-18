@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_34",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "2\nCSTSHR11 CST_SHR_GRP_CD_11 Part D low-income cost share group code - November CHAR 2\nCSTSHR12 CST_SHR_GRP_CD_12 Part D low-income cost share group code - December CHAR 2\n1 If associated CCW data is read into a SAS version 6.x environment, the \"SHORT NAMES\", will be displayed in the output file.\n2 If associated CCW data is read into a SAS version 8.x environment, the \"LONG NAMES\". will be displayed in the output file.",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

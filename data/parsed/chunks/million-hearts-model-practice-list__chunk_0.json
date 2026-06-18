@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-practice-list__chunk_0",
+  "source_document": "data/raw/html/dataset_page/461213bb26f38197ebe336bdfd286e4ea35bd7f1.html",
+  "page": null,
+  "text": "The Practice List file contains the list of all practices enrolled in the model, including an indicator if the practice is active and the number of files submitted for the practice.\nWhat does this file include? (variable highlights)\n- Model-Assigned Practice ID\n- Practice Billing TIN\n- Practice Location\n- Comma-Separated Lists of Affiliated Practice NPIs and CCNs (Facility Numbers)\nA record represents a single physician practice (billing TIN).\nThe practice TIN can be linked to other Medicare",
+  "dataset": "million-hearts-model-practice-list",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-practice-list?page=1"
+}

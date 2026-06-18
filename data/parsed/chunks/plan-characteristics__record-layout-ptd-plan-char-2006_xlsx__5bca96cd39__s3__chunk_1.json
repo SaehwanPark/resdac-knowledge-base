@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 3,
+  "text": "within a contract.\n3 tier_id Tier ID Char 2 Medicare Part D formulary tier identifier. This field represents the cost sharing tier in which the product was placed in the sponsor's formulary. This identifier is also a key that links a Part D sponsor's cost sharing tier record to a prescription drug event record via contract ID, plan ID, and tier ID.\n4 pre_ICL_tier_drug_type Pre-ICL Tier Drug Type Char 3 Indicates the type of drug (e.g., \"Generic\", \"Brand\", etc.) included on the Part D formulary",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

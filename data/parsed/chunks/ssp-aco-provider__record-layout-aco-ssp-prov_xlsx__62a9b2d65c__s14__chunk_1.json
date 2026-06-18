@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-provider__record-layout-aco-ssp-prov_xlsx__62a9b2d65c__s14__chunk_1",
+  "source_document": "data/raw/assets/xlsx/62a9b2d65c4b2aad9a909a9ab2ecf081d9087b48.xlsx",
+  "page": 14,
+  "text": "during the performance period, based on information in the Medicare Provider Enrollment, Chain, and Ownership System (PECOS); (2) identified by PECOS as a sole proprietor using an ACO participant TIN that has not reassigned its billing rights; or (3) appeared as rendering services on a claim submitted by an ACO participant TIN during the performance period. CHAR 10\nPRVDR_ACO_YEAR PRVDR_ACO_YEAR Year of ACO Source Record NUM 4\nTIN TIN Tax Identification Number (TIN) of ACO Participant Tax",
+  "dataset": "ssp-aco-provider",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-prov.xlsx"
+}

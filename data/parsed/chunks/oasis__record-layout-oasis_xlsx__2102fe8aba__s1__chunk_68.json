@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_68",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Insects/Rodents Present Sanitation hazards: insects/rodents present. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_COOK_FAC (M0330) No Cooking Facilities Sanitation hazards: no cooking facilities. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_REFRIGER (M0330) No Food Refrigeration Sanitation hazards: no food refrigeration. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_NO_H2O (M0330) No Running Water Sanitation hazards: no running water. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_NONE (M0330) No Sanitation Hazards Sanitation",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_14",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "CHAR 7 73\nLUPAIND CLM_HHA_LUPA_IND_CD Claim HHA Low Utilization Payment Adjustment (LUPA) Indicator Code CHAR 1 74\nHHA_RFRL CLM_HHA_RFRL_CD Claim HHA Referral Code CHAR 1 75\nVISITCNT CLM_HHA_TOT_VISIT_CNT Claim HHA Total Visit Count NUM 3 76\nHHSTRTDT CLM_ADMSN_DT Claim Admission Date DATE 8 77 New6\nDOB_DT DOB_DT Date of Birth from Claim DATE 8 78\nRACE_CD BENE_RACE_CD Race Code from Claim CHAR 1 79\nCNTY_CD BENE_CNTY_CD County Code from Claim (SSA) CHAR 3 80\nSTATE_CD BENE_STATE_CD Beneficiary",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

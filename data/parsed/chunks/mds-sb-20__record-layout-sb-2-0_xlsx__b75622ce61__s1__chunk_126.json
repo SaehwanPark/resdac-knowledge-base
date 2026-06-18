@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_126",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "bed payment, and the State uses a version of the RUG-III system, the Medicaid RUG-III group may be coded on the SB-MDS. RAVEN-SB does not include a State Medicaid classification program, and will NOT calculate the RUG-III group needed for state payment.\n167 HIPPS_CD HIPPS_CD 44HIPPS Code CHAR 5 The HIPPS (Health Insurance Prospective Payment System) codes are 5-character codes used solely for billing the Medicare Part A stay under the SNF PPS. The codes reflect the 3-character RUG-III group",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

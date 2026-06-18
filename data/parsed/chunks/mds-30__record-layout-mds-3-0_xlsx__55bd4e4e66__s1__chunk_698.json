@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_698",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "I0020A_OTHR_MDCL_COND_ICD_CD I0020A Other Medical Condition ICD Code CHAR 8 This column contains the ICD (International Classification of Diseases) code for the resident's primary medical condition category when different from the options in I0020. effective 10/01/2018\ndiscontinued 9/30.2019\n748 I0020_PRMRY_MDCL_COND_CTGRY_CD I0020_PRMRY_MDCL_COND_CTGRY_CD I0020 Primary Medical Condition Category CHAR 2 Indicates the resident's primary medical condition category that best describes the primary",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

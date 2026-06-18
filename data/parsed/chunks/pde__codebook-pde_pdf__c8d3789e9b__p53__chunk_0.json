@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p53__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 53,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n48 \nPTNT_PAY_AMT \nLABEL: \nAmount Paid by Patient \nDESCRIPTION: This variable is the dollar amount that the beneficiary paid for the PDE without being reimbursed by a \nthird party. \nThe amount includes all copayments, coinsurance, deductible, or other patient payment amounts, and \ncomes directly from the source PDE. This amount contributes to a beneficiary's",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_456",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "= Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n379 GG0170S2_WHEEL_150_GOAL_CD GG0170S2_WHEEL_150_GOAL_CD GG0170S2 Discharge Goal Wheelchair 150 Feet Code - The data in this column indicates the patient's discharge goal to be able to wheel at least 150 feet in a corridor or similar space. CHAR 2 The data in this column indicates the patient's discharge goal to be able to wheel at least 150",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

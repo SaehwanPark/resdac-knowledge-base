@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p43__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 43,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n25 \nCARR_CLM_CASH_DDCTBL_APLD_AMT \nLABEL: \nCarrier Claim Cash Deductible Applied Amount (sum of all line-level deductible amounts) \nDESCRIPTION: The amount of the cash deductible as submitted on the claim. \nThis variable is the beneficiary’s liability under the annual Part B deductible for all line items on the \nclaim; it is the sum of all line-level deductible amounts.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

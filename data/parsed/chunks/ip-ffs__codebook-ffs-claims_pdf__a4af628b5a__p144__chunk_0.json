@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p144__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 144,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n126 \nCLM_SITE_NTRL_PYMT_IPPS_AMT \nLABEL: \nClaim Site Neutral Payment Based on Inpatient Prospective Payment System (IPPS) Amounts \nDESCRIPTION: Under the long-term care hospital (LTCH) prospective payment system (PPS), the payment amount \nbased on the inpatient prospective payment system (IPPS) comparable amount. This amount does not \ninclude any applicable outlier payment",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

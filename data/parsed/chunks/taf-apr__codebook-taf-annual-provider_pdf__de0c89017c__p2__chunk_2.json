@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p2__chunk_2",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 2,
+  "text": "K. Schneider \n• Added new valid values to PRVDR_CLSFCTN_CD \n• Added new valid value “N” to PRVDR_CLSFCTN_SYS, which \nresulted in downstream addition of this code to all the \ndichotomous taxonomy indicator variables in the APR base file. \nThe following indicator variables also had one or more additional \ntaxonomy code added to the definition \nALPTHC_OSTPTHC_PHYSN_TXNMY_IND, \nBHVRL_HLTH_SCL_SRVC_TXNMY_IND, DNTL_TXNMY_IND, \nDTRY_NTRTNL_SRVC_TXNMY_IND, \nOTHR_INDVDL_SRVC_TXNMY_IND,",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

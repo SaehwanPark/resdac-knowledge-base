@@ -1,0 +1,11 @@
+The Next Generation ACO (NGACO) Model Beneficiary file contains information about the Medicare beneficiaries enrolled in the NGACO Model. The file includes one record per year of enrollment for assigned beneficiaries. A related file, the Next Generation ACO Model Provider file, contains information about the participating providers in the NGACO Model.
+What does this file include? (variable highlights)
+- Beneficiary ID (allows linkage to other files)
+- ACO Name
+- Monthly assignment status information
+- Date of Birth
+- Date of Death
+Special considerations
+- This file can be linked to any other CMS file that includes the Bene ID
+- Beneficiaries can be linked to their assigned providers by linking the ACO_ID in the provider file to the ACO_NUM in the beneficiary file
+- Questions regarding the Next Generation ACO Model can be directed to [email protected]

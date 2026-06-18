@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "physician who has signed the plan of care. CHAR 10 x x x x x x\nM0018_PHYSICIAN_UK M0018 (M0072) Physician NPI UK This field indicates the National Provider ID (NPI) for the attending physician who has signed the plan of care is unknown or not available. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x\nM0030_SOC_DT (M0030) Start of Care Date Start of care date. DATE 8 x x x x x x x\nM0032_ROC_DT_NA (M0032) Resumption of Care Date Not Applicable Resumption of care date is not applicable.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

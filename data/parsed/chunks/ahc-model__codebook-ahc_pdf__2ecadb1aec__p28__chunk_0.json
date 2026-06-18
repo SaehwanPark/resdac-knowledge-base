@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p28__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 28,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n27 \nNC_NVGTN_CASE_STRT_DT \nLABEL: \nNavigation Case Opt In Date \nDESCRIPTION: Navigation case (NC) opt in date. \nLONG NAME: NC_NVGTN_CASE_STRT_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nAHC data system \nVALUES: \nFormat: DDMONYYYY (e.g., 21DEC2019) \nCOMMENT: \nDates are from May 3, 2018–April 24, 2023. \nFor each navigation-eligible beneficiary who opted in for and received navigation",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

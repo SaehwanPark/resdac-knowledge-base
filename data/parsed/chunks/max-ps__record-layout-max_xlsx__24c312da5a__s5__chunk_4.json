@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_4",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "Medicare crossover code (from claims only) NUM 1 X\n21 EL_MDCR_ANN_XOVR_99 Medicare crossover code (Annual) CHAR 2 X\n22 MSIS_TOS MSIS Type of Service (TOS) NUM 2 X\n23 MSIS_TOP MSIS Type of Program (TOP) NUM 1 X\n24 MAX_TOS MAX Type of Service (TOS) NUM 2 X\n25 PRVDR_ID_NMBR Billing provider identification number CHAR 12 X\n26 NPI National Provider Identifier CHAR 12 X\n27 TAXONOMY Provider Taxonomy CHAR 12 X\n28 TYPE_CLM_CD Type of claim NUM 1 X\n29 ADJUST_CD Adjustment code NUM 1 X\n30 PHP_TYPE",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

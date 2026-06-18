@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p67__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 67,
+  "text": "the FDB drug strength for a drug product on the \nformulary. \nSHORT NAME: STR \nLONG NAME: STR \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nFirst DataBank \nVALUES: \n10-digit alpha/numeric value (e.g., 25MG, 1:10000, or 10MG/100ML) \nCOMMENT: \nDescription of drug potency may be expressed in units of grams, milligrams, percentage, and other \nterms. \nIn the formulary file, this variable is populated by matching the drug products on the Part D plan \nsubmitted formulary to FDB. Part D plan sponsors submit the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

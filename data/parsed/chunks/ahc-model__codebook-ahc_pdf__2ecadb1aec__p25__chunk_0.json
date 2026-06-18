@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p25__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 25,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n24 \nMSIS_RFRNC_YR \nLABEL: \nMedicaid Beneficiary Identifier Reference Year \nDESCRIPTION: Year the MSIS_ID in the AHC file was found in the T-MSIS claims. \nLONG NAME: MSIS_RFRNC_YR \nTYPE: \nCHAR \nLENGTH: \n4 \nSOURCE: \nCCW \nVALUES: \n2018–2022, or \nNull/missing = MSIS_ID was not found in T-MSIS or beneficiary was enrolled in Medicare only and not \nMedicaid \nCOMMENT: \nEarliest year",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

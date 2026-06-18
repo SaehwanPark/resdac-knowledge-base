@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__chunk_0",
+  "source_document": "data/raw/html/dataset_page/78aff82de2fa0476d44dc0080160c652b04c4094.html",
+  "page": null,
+  "text": "The National Death Index (NDI) segment of the Medicaid Enrollee Supplemental File (MESF) includes cause of death information from death certificates provided through linkage with the NDI cause of death information.\nWhat does this file include? (variable highlights)\n- NDI date of death\n- ICD-10 description and code for cause of death\n- Underlying conditions for cause of death\n- CDC category code for cause of death\nSpecial considerations\n- Some states are not included in the later years. See",
+  "dataset": "mesf-ndi",
+  "url": "https://resdac.org/cms-data/files/mesf-ndi"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p9__chunk_3",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 9,
+  "text": "CMS calculates payment risk scores for all model segments for a beneficiary, regardless of the beneficiary’s \nmonthly characteristics. \nIn this document specific field names will be in all capitals. \nTable 1. Base file — resolved payment risk scores \nVariable name \nLabel \nBENE_ID \nCCW encrypted beneficiary ID \nPTC_RISK_SCORE_01–12 \nMonthly Part C risk score 01 (January)–12 (December) \nPTC_MODEL_SGMT_CD_01–12 \nMonthly Part C model segment code 01 (January)–12 (December) \nPTD_RISK_SCORE_01–12",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__chunk_2",
+  "source_document": "data/raw/html/dataset_page/5604b2ec7bd4d71517e04a39607d45d5b421650b.html",
+  "page": null,
+  "text": "for Medicare and Medicaid\n- Formulary drug identifier for linkage to the Part D Formulary files\n- CCW Pharmacy ID or the NCPDP_ID for linkage to the Pharmacy Characteristics file\n- CCW-assigned Prescriber Identifier for linkage to the Prescriber Characteristics file\n\nWhy do researchers request this file?\n- Studies that include prescription drugs as a treatment of interest\n- Research comparing outcomes of treatment\nSpecial considerations\n- These files do not have information on drugs given",
+  "dataset": "pde",
+  "url": "https://resdac.org/cms-data/files/pde?page=1"
+}

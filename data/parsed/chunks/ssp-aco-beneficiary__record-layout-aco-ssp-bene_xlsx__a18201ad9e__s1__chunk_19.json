@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "from 0-12; will be missing if beneficiary excluded in quarter (Q4_assign = 0) NUM 2 All Tracks Q4 = 12 month reference year x x x x - - - - - - -\nINTERIM_AB_ELIG_MONTHS Parts A and B Eligibile Months for Interim Period Number of months of Parts A and B eligibility for the 12 month period used for interim period (from interim reconciliation assignment tables in IDR); values from 0-12; will be missing if beneficiary not assigned in period NUM 2 x x x x - - - - - - -\nFINAL_AB_ELIG_MONTHS Parts A",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

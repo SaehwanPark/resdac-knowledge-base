@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p263__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 263,
+  "text": "for Medicare Advantage plans. \nSHORT NAME: — \nLONG NAME: PLAN_SUPP_PREMIUM_NET_REBATE \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n- \nCOMMENT: \nThe width of this value changed from 12 to 8 in 2009. \nThe Part D Supplemental Premium covers any enhanced benefits that may be offered by a plan above \nand beyond the basic (standard) Part D benefit. These benefits may include extra coverage in the \ncoverage gap, lower copayments than the standard benefit, coverage of non-Part D drugs",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

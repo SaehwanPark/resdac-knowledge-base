@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_21",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "ICD_PRCDR_CD20 Claim Procedure Code XX CHAR 7 117\nPRCDR_DT20 PRCDR_DT20 Claim Procedure Code XX Date DATE 8 118\nICD_PRCDR_CD21 ICD_PRCDR_CD21 Claim Procedure Code XXI CHAR 7 119\nPRCDR_DT21 PRCDR_DT21 Claim Procedure Code XXI Date DATE 8 120\nICD_PRCDR_CD22 ICD_PRCDR_CD22 Claim Procedure Code XXII CHAR 7 121\nPRCDR_DT22 PRCDR_DT22 Claim Procedure Code XXII Date DATE 8 122\nICD_PRCDR_CD23 ICD_PRCDR_CD23 Claim Procedure Code XXIII CHAR 7 123\nPRCDR_DT23 PRCDR_DT23 Claim Procedure Code XXIII Date DATE",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__record-layout-ahcah_xlsx__83602a409f__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/83602a409fc06cd2d8af1083b47854c376f2898a.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nAcute Hospital Care at Home File — Hospital File\nVersion — January 2024\nSAS name Label Type Length\nCCN CMS Certification Number (Facility Provider Number) CHAR 6\nPRVDR_STATE Provider State CHAR 2\nFAC_TIER Tier 1: 25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients NUM 1\nFAC_DATA_SUBMSN_DT Facility Data Submission Date DATE 8\nDISCHARGES Count of AHCAH Discharges During the Data Submission Period NUM 8\nMORTALITIES Count of AHCAH Mortalities",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahcah.xlsx"
+}

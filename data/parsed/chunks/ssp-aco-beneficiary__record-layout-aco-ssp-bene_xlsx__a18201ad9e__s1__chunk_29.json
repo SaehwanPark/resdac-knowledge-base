@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "status is “QMB only” or “QMB and Medicaid coverage including Rx” (BENE_DUAL_STUS_CD = 01 or 02) for the 12 month period used for the first quarter; values from 0-12; will be missing if beneficiary not assigned in period NUM 2 x x x x - - - - - - -\nFINAL_DUAL_ELIG_MONTHS Dual Status Eligibile Months for Final Reconciliation Period Number of months for which dual eligible status is “QMB only,” “QMB and Medicaid coverage including Rx,” \"SLMB and Medicaid coverage including RX,\" or \"Other Dual",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

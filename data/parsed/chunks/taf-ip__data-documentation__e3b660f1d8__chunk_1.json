@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_1",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "Identifier | \n\n | 8 | CLM_TYPE_CD | Claim Type Code (TAF) | \n\n | 9 | BILL_TYPE_CD | Bill Type Code | \n\n | 10 | CROSSOVER_CLM_IND | Code To Indicate if a Portion of Claim is Paid by Medicare | \n\n | 11 | ADJUST_CD | Claim Adjustment Code | \n\n | 12 | ADJUST_RSN_CD | Adjustment Reason Code | \n\n | 13 | ADJDCTN_DT | Adjudication Date | \n\n | 14 | MDCD_PD_DT | Medicaid Paid Date | \n\n | 15 | SPLIT_CLM_IND | Split Claim Indicator | \n\n | 16 | CLL_CNT | Claim Line Count - Original | \n\n | 17 | CLL_CNT_CALC",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

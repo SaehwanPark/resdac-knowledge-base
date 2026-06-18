@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Beneficiary Race Code CHAR 1\nRTI_RACE_CD Research Triangle Institute (RTI) Race Code CHAR 1\nCOVSTART Medicare Coverage Start Date DATE 8\nPTA_CVRG_STRT_DT Medicare Part A Coverage Start Date DATE 8\nPTB_CVRG_STRT_DT Medicare Part B Coverage Start Date DATE 8\nPTD_CVRG_STRT_DT Medicare Part D Coverage Start Date DATE 8\nENTLMT_RSN_ORIG Original Reason for Entitlement Code CHAR 1\nENTLMT_RSN_CURR Current Reason for Entitlement Code CHAR 1\nESRD_IND End-stage Renal Disease (ESRD)- Annual Indicator CHAR",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

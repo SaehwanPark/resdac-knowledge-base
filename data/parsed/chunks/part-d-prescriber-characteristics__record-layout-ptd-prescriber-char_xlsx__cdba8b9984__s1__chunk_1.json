@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__record-layout-ptd-prescriber-char_xlsx__cdba8b9984__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/cdba8b9984d9984d2f7918f548d349b2d33a4aa8.xlsx",
+  "page": 1,
+  "text": "Primary Taxonomy Code for Part D Prescribers CHAR 10 X X\nPRIMARY_TAXONOMY_DESC Primary Taxonomy Code Description for Part D Prescribers CHAR 250 X X\nOTHER_TAXONOMY_CLASS01 Other Taxonomy Classification 1 - for Part D Prescribers CHAR 4 X X\nOTHER_TAXONOMY_CLASS02 Other Taxonomy Classification 2 - for Part D Prescribers CHAR 4 X X\nOTHER_TAXONOMY_CLASS03 Other Taxonomy Classification 3 - for Part D Prescribers CHAR 4 X X\nOTHER_TAXONOMY_CLASS04 Other Taxonomy Classification 4 - for Part D",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-prescriber-char.xlsx"
+}

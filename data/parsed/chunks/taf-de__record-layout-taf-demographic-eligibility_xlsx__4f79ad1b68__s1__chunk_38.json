@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Supplemental Security Income (SSI) State Supplement Code - Ltst in Yr CHAR 3 171\nTANF_CASH_CD Temporary Assistance for Needy Families (TANF) Cash Code - Ltst in Yr CHAR 1 172\nTPL_INSRNC_CVRG_IND Third Party Liability (TPL) Insurance Coverage Ind - Ltst in Yr CHAR 1 173\nTPL_OTHR_CVRG_IND Third Party Liability (TPL) - Other Coverage Ind - Ltst in Yr CHAR 1 174\nMSIS_CASE_NUM Encrypted TMSIS Case Number - Ltst in Yr CHAR 32 175\nSPLMTL_DTS Beneficiary Record In Supplemental Dates File CHAR 1",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

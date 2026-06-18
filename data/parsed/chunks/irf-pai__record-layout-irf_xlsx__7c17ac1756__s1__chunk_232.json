@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_232",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "reports at least one episode of dizziness, vertigo, or light-headedness while sitting or standing at the time of discharge. 0 = No, 1 = Yes\n193 _54 TOT_FALL_DRNG_REHAB_STAY_NUM (54) Total Number of Falls During the Rehabilitation Stay: Discharge CHAR 3 The total number of falls during the rehabilitation stay recorded at the time of discharge.\n194 UNHLD_PRSR_ULCR_AT_ADMSN_CD UNHLD_PRSR_ULCR_AT_ADMSN_CD M0210 Unhealed Pressure Ulcers at Admission Number CHAR 1 Patient had one or more unhealed",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

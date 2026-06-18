@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_310",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- other types of side rails used. 0 = Not Used, 1 = Used less than daily, 2 = Used daily, \"-\" = Unknown.\n520 P4C P4C_TRUNK_REST (P4C) Trunk Restraint CHAR 1 Special treatments and procedures: devices and restraints - trunk restraint. 0 = Not Used, 1 = Used less than daily, 2 = Used daily, \"-\" = Unknown.\n521 P4D P4D_LIMB_REST (P4D) Limb Restraint CHAR 1 Special treatments and procedures: devices and restraints - limb restraint. 0 = Not Used, 1 = Used less than daily, 2 = Used daily, \"-\" =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

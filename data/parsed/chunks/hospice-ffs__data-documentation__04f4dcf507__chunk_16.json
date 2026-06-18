@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_16",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "97 | CLM_NEXT_GNRTN_ACO_IND_CD5 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation | \n\n | 98 | ACO_ID_NUM | Claim Accountable Care Organization (ACO) Identification Number | \n\n | 99 | CLM_BENE_ID_TYPE_CD | Claim Beneficiary Identifier Type Code | \n\n | 100 | CLM_RSDL_PYMT_IND_CD | Claim Residual Payment Indicator Code | \n\n | 101 | PRVDR_VLDTN_TYPE_CD | Provider Validation Type Code | \n\n | 102 | RR_BRD_EXCLSN_IND_SW | Railroad Board Exclusion Indicator",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

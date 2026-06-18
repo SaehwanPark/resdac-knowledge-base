@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p51__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 51,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n33 \nCARR_CLM_SOS_NPI_NUM \nLABEL: \nCarrier Claim Site of Service NPI Number \nDESCRIPTION: This field identifies the site of service National Provider Identifier (NPI). \n SHORT NAME: CARR_CLM_SOS_NPI_NUM \nLONG NAME: CARR_CLM_SOS_NPI_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is not populated prior to 2009. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

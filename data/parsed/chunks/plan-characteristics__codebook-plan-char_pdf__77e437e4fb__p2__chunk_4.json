@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p2__chunk_4",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 2,
+  "text": "K. Schneider \n• Added a value to accommodate the seven-tier to the \nDED_COSTSHARE_TIERS and TIER_ID fields \n• Added new CONTRACT_ID, PLAN_ID and PTCD_INDICATOR \nvariables to the plan crosswalk file for 2020 and 2021 \nreference years (and corresponding previous years) \n1.5 \nOctober 2021 \nS. Pietzsch \nAdded the new variable — STATE_ABBRV to the service area file \n1.4 \nDecember 2020 K. Schneider \n• Clarified SNP_PERCENTAGE_TYPE in the SNP contract file is \nnot available after 2017 \n• Added new",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

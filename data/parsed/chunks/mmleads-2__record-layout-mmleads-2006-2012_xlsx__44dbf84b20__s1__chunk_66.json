@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_66",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "# MDCR Post-Acute Care covered days during mos of MDCR Only Dual Status XXX\nU_MRO_HOSPICE_DAY # MDCR Hospice covered days during mos of MDCR Only Dual Status XXX\nU_MRO_HOP_VST # MDCR Hosp Outpt visits during mos of MDCR Only Dual Status XXX\nU_MRO_PHYS_VST Total number of Medicare Physician claims during months of 'Medicare Only' Status XXX\nU_MRO_DME_VST Total number of Medicare DME claims during months of 'Medicare Only' Status XXX\nU_MRO_DRUG_PTD Total number of Medicare Prescriptions during",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

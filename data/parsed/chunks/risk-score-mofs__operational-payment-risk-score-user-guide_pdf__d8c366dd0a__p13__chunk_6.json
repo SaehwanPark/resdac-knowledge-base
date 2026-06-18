@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p13__chunk_6",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 13,
+  "text": "HIV/AIDS (V21 HCC1) \nV21_HCC2 \nSepticemia/shock (V21 HCC2) \nV21_HCC6 \nOpportunistic infections (V21 HCC6) \nV21_HCC8 \nMetastatic cancer/acute leukemia (V21 HCC8) \nEach condition variable has a value of 1 if the beneficiary had the condition in the prior year; otherwise, the value is 0. \nThere are also variables to indicate some disease/disease combinations, and some disability/disease combinations. \nDemographic variables that are related to the segment scores (e.g., sex, age groupings, and",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

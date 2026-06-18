@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p190__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 190,
+  "text": "Null/missing = Identifies diagnosis codes that are exempt from the POA reporting requirements \n(replaces the '1'; same meaning as '0'). \nCOMMENT: \nThe POA indicators for the diagnosis E codes are stored in the variables POA_DGNS_E_1_IND_CD–\nPOA_DGNS_E_25_IND_CD. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

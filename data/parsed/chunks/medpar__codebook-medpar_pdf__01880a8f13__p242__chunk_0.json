@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p242__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 242,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n226 \nDESCRIPTION: The date on which the surgical procedure was performed during the beneficiary's stay. This element \ncorresponds with the surgical procedure code (variables called PRCDRCD1–PRCDRCD25). \nSHORT NAME: \nPRCDRDT1 \nPRCDRDT2 \nPRCDRDT3 \nPRCDRDT4 \nPRCDRDT5 \nPRCDRDT6 \nPRCDRDT7 \nPRCDRDT8 \nPRCDRDT9 \nPRCDRDT10 \nPRCDRDT11 \nPRCDRDT12 \nPRCDRDT13 \nPRCDRDT14 \nPRCDRDT15 \nPRCDRDT16 \nPRCDRDT17",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_443",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x\nCALCD_CCN_NUM Calculated CMS Certification Number (CCN) The CMS Certification Number (CCN) of the facility. CHAR 12 x x x x x x\nCALCD_PTNT_AGE_NUM Calculated Patient Age Number This column contains the system calculated patient age number. NUM 22 x x x x x x\nGG0170C_MBLTY_DSCHRG_GOAL_CD GG0170C Mobility - Discharge Goal - Lying to Sitting This field indicates the patient's discharge goal for mobility . If helper assistance is required because",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

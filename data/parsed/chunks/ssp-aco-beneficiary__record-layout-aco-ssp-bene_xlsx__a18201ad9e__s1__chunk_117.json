@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_117",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "Organizations\"\nand \"Performance Year 2019 Medicare Shared Savings Program Accountable Care Organizations (As of July 1, 2019)\". If an ACO exists in the \"As of July 1, 2019\" file and does not have a July 1, 2019 start date, then it participated in the full 12-month performance year\nfrom January 1, 2019, through December 31, 2019. If an ACO exists in the \"As of July 1, 2019\" file with a July 1, 2019 start date, and exists in the original 2019 ACO Participation file, then it participated in the",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

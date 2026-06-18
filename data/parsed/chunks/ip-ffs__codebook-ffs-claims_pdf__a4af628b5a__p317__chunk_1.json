@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p317__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 317,
+  "text": "the PRVDR_NUM) \nhave been exhausted, CMS implemented a two-position alpha-numeric coding system for State Codes. \nWhen this occurs, CMS mapped the alphanumeric codes to these SSA state codes. For example, even \nthough Florida CCNs include the first 2-digits (state codes) 10, 68, 69, and A2, all will have \nPRVDR_STATE_CD = 10. NOTE: Effective July 26, 2024, the following CCN assigned state codes are \nbeing added to the derivation rules for the provider state code (D6, D7, D8, D9, E1, E2, E3). If",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p50__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 50,
+  "text": "LONG NAME: NRSNG_SRVC_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis variable = 1 if PRVDR_CLSFCTN_SYS = “1” or “N” and the taxonomy code value is one of the \nfollowing: \n163W00000X: Registered nurse \n163WA0400X: Registered nurse — addiction (substance use disorder) \n163WA2000X: Registered nurse — administrator \n163WC0200X: Registered nurse — critical care medicine \n163WC0400X: Registered nurse — case",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

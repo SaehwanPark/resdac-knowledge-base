@@ -1,0 +1,9 @@
+The Original Medicare Fee-for-Service (FFS) Durable Medical Equipment (DME) file contains fee-for-service claims submitted by Durable Medical Equipment suppliers to the DME Medicare Administrative Contractor (MAC).
+What does this file include? (variable highlights)
+- Diagnosis, (ICD diagnosis code)
+- Services provided (CMS Common Procedure Coding System (HCPCS) codes)
+- Dates of service
+- Charge
+- Reimbursement amounts
+- Supplier provider number
+- Supplier NPI

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p81__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 81,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n63 \nCLM_DRG_CD \nLABEL: \nClaim Diagnosis Related Group Code (or MS-DRG Code) \nDESCRIPTION: The diagnostic related group to which a hospital claim belongs for prospective payment purposes. \nSHORT NAME: DRG_CD \nLONG NAME: CLM_DRG_CD \nTYPE: \nCHAR \nLENGTH: \n4 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nStarting in January 2021 with NCH version L, this field changed from three characters",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

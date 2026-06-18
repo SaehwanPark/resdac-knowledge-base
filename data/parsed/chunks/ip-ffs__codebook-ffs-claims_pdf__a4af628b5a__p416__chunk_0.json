@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p416__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 416,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n398 \nTRNSTNL_DRUG_ADD_ON_PYMT_AMT \nLABEL: \nTransitional Drug Add-On Payment Amount \nDESCRIPTION: This field houses the amount for the Transitional Drug Add-On Payment Adjustment (TDAPA) for ESRD \nclaims (72X) with injectable, intravenous, and oral calcimimetics when reported with an AX modifier. \nThese services qualify for an add-on payment from the ESRD Pricer. \nSHORT NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

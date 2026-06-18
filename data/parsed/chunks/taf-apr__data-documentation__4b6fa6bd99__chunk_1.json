@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__data-documentation__4b6fa6bd99__chunk_1",
+  "source_document": "data/raw/html/documentation_page/4b6fa6bd99a6df68962fe05bc883c5d7a0aa4c70.html",
+  "page": null,
+  "text": "| 7 | PRVDR_TAX_NAME | Provider Tax (IRS) Name | \n\n | 8 | PRVDR_ORG_NAME | Provider Organization Name | \n\n | 9 | PRVDR_DBA_NAME | Provider Doing Business as (DBA) Name | \n\n | 10 | PRVDR_NPI_1 | Provider NPI — First Occurrence | \n\n | 11 | PRVDR_NPI_2 | Provider NPI — Second Occurrence | \n\n | 12 | PRVDR_NPI_CNT | Provider NPI Count | \n\n | 13 | SUBMTG_STATE_PRVDR_IND_01 | Submitting State Provider Identifier Indicator — January | \n\n | 14 | SUBMTG_STATE_PRVDR_IND_02 | Submitting State Provider",
+  "dataset": "taf-apr",
+  "url": "https://resdac.org/cms-data/files/taf-apr/data-documentation"
+}

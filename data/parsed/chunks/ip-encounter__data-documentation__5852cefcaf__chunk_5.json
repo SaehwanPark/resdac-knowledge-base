@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-encounter__data-documentation__5852cefcaf__chunk_5",
+  "source_document": "data/raw/html/documentation_page/5852cefcaf4dca5dba3392a521caae7b6816e9f1.html",
+  "page": null,
+  "text": "| Patient Discharge Status Code (Encounter) | \n\n | 32 | CLM_DAY_CNT | Day Count (Length of Stay) | \n\n | 33 | BENE_DSCHRG_DT | Beneficiary Discharge Date | \n\n | 34 | CLM_DRG_CD | Claim Diagnosis Related Group Code (or MS-DRG Code) (Encounter) | \n\n | 35 | DRVD_DRG_CD | Derived MS-Diagnosis Related Group Code (MS-DRG) | \n\n | 36 | ADMTG_DGNS_CD | Claim Admitting Diagnosis Code (Encounter) | \n\n | 37 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (Encounter) | \n\n | 38 | ICD_DGNS_CD1 | Claim",
+  "dataset": "ip-encounter",
+  "url": "https://resdac.org/cms-data/files/ip-encounter/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p267__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 267,
+  "text": "Cost Threshold (i.e., in catastrophic coverage \nphase). The amount paid by the beneficiary to the provider for the line-item service. \nSHORT NAME: — \nLONG NAME: POST_OOPT_APPLY \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n1 = Medicare-Defined Post Threshold Cost Sharing \n\n2 = Cost Share Tiers \n\n3 = No Cost Sharing \n\nCOMMENT: \nFor Fixed Capitated Reinsurance Demonstration Projects, this variable captures how cost sharing is \napplied after the Medicare-defined total drug spending",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

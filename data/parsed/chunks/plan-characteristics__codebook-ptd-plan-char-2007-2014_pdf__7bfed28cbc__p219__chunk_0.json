@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p219__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 219,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n206 \nICL_AMT \nLABEL: \nPart D Initial Coverage Limit (ICL) Amount \nDESCRIPTION: This variable is the dollar amount of Part D Initial Coverage Limit (ICL) applied by Part D plan. If no ICL \nis applied this field is blank. \nSHORT NAME: — \nLONG NAME: ICL_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \nCOMMENT: \nThe width of this value changed from 12 to 8 in 2009.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

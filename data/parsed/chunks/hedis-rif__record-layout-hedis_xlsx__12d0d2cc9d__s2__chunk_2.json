@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s2__chunk_2",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 2,
+  "text": "Beneficiary date of birth (HEDIS) DATE 8 11 11 11\nSNP_TYPE_CD Special Needs Plan (SNP) Type Code NUM 3 12 12 12\nAGE_DSCHRG Age at Discharge NUM 3 13 13 13\nADMSN_DT Inpatient Hospital Admission Date DATE 8 14 14 14\nDSCHRG_DT Inpatient Hospital Discharge Date DATE 8 15 15 15\nREADMSN_IND Readmission Indicator CHAR 1 16 16 16\nBASE_RISK_WT Base Risk Weight NUM 8 17 17 —\nAGE_SEX_WT2 Age - Sex Weight NUM 8 18 18 17\nCMRBDTY_WT Comorbidity Weight NUM 8 19 19 18\nSRGRY_WT Surgery Weight NUM 8 20 20",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

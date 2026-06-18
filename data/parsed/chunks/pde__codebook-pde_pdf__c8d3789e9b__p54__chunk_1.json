@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p54__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 54,
+  "text": "SOURCE: \nPDE \nVALUES: \n00 = Not specified, other patient residence not identified below \n01 = Home \n03 = Nursing facility (long-term care facility) \n04 = Assisted living facility \n\n06 = Group home (e.g., congregate residential foster care) \n09 = Intermediate care facility /intellectual disability) \n10 = Residential Substance Abuse Treatment Facility \n11 = Hospice \nNull/missing \nCOMMENT: \nCMS requires Part D plans to maintain pharmacy networks that are sufficient to ensure convenient \naccess to",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

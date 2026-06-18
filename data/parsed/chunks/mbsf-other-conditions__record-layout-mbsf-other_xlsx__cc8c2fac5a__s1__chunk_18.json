@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__record-layout-mbsf-other_xlsx__cc8c2fac5a__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/cc8c2fac5a2291b61e5426cbe53c089c37e0e38c.xlsx",
+  "page": 1,
+  "text": "Medicare Only Claims NUM 1\nOUD_ANY_MEDICARE_EVER OUD_ANY_MEDICARE_EVER Overarching OUD Disorder (Any of the Three Sub-Indicators) - First Ever Occurrence Date DATE 8\nOUD_DX_MEDICARE OUD_DX_MEDICARE Diagnosis and Procedure Basis for OUD - Medicare Only Claims NUM 1\nOUD_DX_MEDICARE_EVER OUD_DX_MEDICARE_EVER Diagnosis and Procedure Basis for OUD First Ever Occurrence Date - Medicare Only Claims DATE 8\nOUD_HOSP_MEDICARE OUD_HOSP_MEDICARE Opioid-Related Hospitalization or ED - Medicare Only Claims",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-other.xlsx"
+}

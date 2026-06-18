@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_308",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "resident's day-to-day activities were limited because of pain or hurting in the last five days. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine discontinued 09/30/2023\n341 J0600A_PAIN_INTNSTY_NUM J0600A_PAIN_INTNSTY_NUM J0600A Pain Intensity Numeric Rating Scale Number CHAR 2 The data in this column indicates the resident's numeric pain rating value over the last five days on a zero to ten scale. 0 Minimum\n10 Maximum\n99 Unable to answer\n- Not assessed/no information\n^ Blank (skip",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

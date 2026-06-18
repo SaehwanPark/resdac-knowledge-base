@@ -1,0 +1,12 @@
+The Oncology Care Model (OCM) Current Clinical Status file includes information on the reported Current Clinical Status (CCS) for a patient. CCS was required to be reported at least once for each episode, as well as whenever there was a change in the CCS.
+This file contains CCS information submitted for the third through eleventh OCM performance periods (episodes initiating July 2, 2017 - December 31, 2021), primarily including data reported by OCM participants to the Oncology Care Model Registry (OCMR).
+What does this file include? (variable highlights)
+- Beneficiary ID
+- ICD10 Cancer Diagnosis Code
+- Initial Diagnosis Date
+- Current Clinical Status coded into one of 10 categories
+- Current Clinical Status Date
+Special Considerations
+- Many beneficiaries have multiple CCS records, within an episode and across multiple episodes.
+- The Clinical and Staging data file and the Current Clinical Status data file can be linked by the Beneficiary ID, ICD10 Cancer Diagnosis Code Reported by Participant, and the Initial Diagnosis Date.
+- Researchers may wish to obtain Medicare Fee-for-Service claims data for a population they identify within the OCM data files. The Beneficiary ID can be used to link to Medicare claims.

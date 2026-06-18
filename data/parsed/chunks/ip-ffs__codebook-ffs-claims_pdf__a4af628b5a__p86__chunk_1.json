@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p86__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 86,
+  "text": "CLM_FREQ_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Non-payment/zero claims \n1 = Admit thru discharge claim \n2 = Interim — first claim \n3 = Interim — continuing claim \n4 = Interim — last claim \n5 = Late charge(s) only claim \n7 = Replacement of prior claim \n8 = Void/cancel prior claim \n9 = Final claim (for HH PPS = process as \na debit/credit to RAP claim) \nG = Common Working File \n(NCH) generated \nadjustment claim \nH = CMS generated adjustment claim \nI = Misc. adjustment claim",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

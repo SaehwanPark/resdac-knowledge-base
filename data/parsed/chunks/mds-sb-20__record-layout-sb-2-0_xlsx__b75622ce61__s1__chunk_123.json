@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_123",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "41(P8)Physician Orders CHAR 2 Indicates the number of days during the last 14-day period in which a physician has changed the patient's orders.\n162 T1B T1B_ORDER_THPY 42a(T1b)Ordered Therapies CHAR 1 Indicates if the physician ordered any of the therapy services to begin in the first 14 days of stay: physical therapy, occupational therapy, or speech pathology services. 0 = No, 1 = Yes, -1 = Unknown, -2 = Space\n163 T1C T1C_THPY_DAYS 42b(T1c)Ordered Therapies - Days CHAR 2 Estimated number of",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

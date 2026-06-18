@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_281",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "DSCHRG_DSTNTN_CD 44D Discharge Destination Code CHAR 2 This column documents the patient's discharge destination. 01-Home (private home/apt., board/care, assisted living, group home, transitional living); \n02-Short-term General Hospital; \n03 -Skilled Nursing Facility (SNF); \n04 -Intermediate care; \n06 -Home under care of organized home health service organization; \n50 -Hospice (home); \n51 -Hospice (institutional facility); \n61 -Swing bed; \n62 -Another Inpatient Rehabilitation Facility; \n63",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_201",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "when the patient returns to the inpatient rehabilitation facility in a program interruption situation (Item 42 - a situation where a Medicare inpatient is discharged from the inpatient rehabilitation facility and returns to the same inpatient rehabilitation facility within 3 consecutive calendar days).\n161 _44A DSCHRG_TO_LVG_SETG_CD (44A) Discharge to Living Setting CHAR 2 A code indicating the setting to which the patient is discharged. 01 = Home, 02 = Board and Care, 03 = Transitional Living,",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

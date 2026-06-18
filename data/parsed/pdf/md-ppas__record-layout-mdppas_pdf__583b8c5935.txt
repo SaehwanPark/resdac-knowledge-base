@@ -1,0 +1,273 @@
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Medicare Data on Provider Practice and Specialty  
+(MD-PPAS) 
+Versions Changes and Data Layout 
+ 
+Version 2.4 
+ 
+ 
+Centers for Medicare & Medicaid Services 
+ 
+June 2021 
+ 
+
+
+2 
+ 
+ 
+Version Updates 
+ 
+Version 2.4 introduces the following changes from version 2.3 
+ 
+• 
+The MD-PPAS data include a modified broad specialty variable that provides a more detailed 
+breakdown of non-physician specialties.  
+ 
+• 
+The data also include two additional variables related to the percent of providers’ line items that 
+are performed in a given place of service (POS). Specifically, MD-PPAS data now include variables 
+that report the percent of line items performed in urgent care centers and retail clinics.  Internal 
+analyses revealed that providers affiliated with large retail clinics or urgent care centers listed the 
+place of service as “office” as well as “retail clinic” or “urgent care center”. Therefore, to help 
+data users more accurately capture the POS for these providers, the data now report service lines 
+associated with retail clinics and urgent care centers separately rather than collapsing them into 
+the other POS category. 
+• 
+The data use a new methodology to assign providers to CBSAs based on the zip code reported on 
+their submitted claims.   
+ 
+• 
+Finally, the naming conventions for the MD-PPAS data sets were changed in order to conform to 
+new internal documentation standards. 
+ 
+ 
+
+
+3 
+ 
+ 
+MD-PPAS File Layout 
+ 
+ID variables 
+Description 
+Data Source 
+npi 
+National provider identifier (NPI)  
+Claims 
+name_last 
+Provider last name 
+NPPES 
+name_first 
+Provider first name 
+NPPES 
+name_middle 
+Provider middle name 
+NPPES 
+ 
+Demographic 
+variables 
+Description 
+Data Source 
+sex 
+1=Male; 2=Female 
+NPPES 
+birth_dt 
+Birth date 
+PECOS 
+ 
+Specialty variables 
+Description 
+Data Source 
+spec_broad 
+Broad specialty based on spec_prim_1 .  
+1  =  Physician - Primary care 
+2  =  Physician - Medical specialty  
+3  =  Physician - Surgical specialty  
+4  =  Physician - Obstetrics/gynecology with no primary care specialty. 
+5  =  Physician - Hospital-based specialty (includes designated hospitalists) 
+6  =  Physician - Psychiatry 
+7  =  Non-physician – Nurse Practitioner and Physician Assistant 
+8  =  Non-physician – Other Advanced Practice Registered Nurses (APRN) 
+9  =  Non-physician – Limited Liability Physicians (LLP) 
+10  =  Non-physician – Physical, Occupational, and Speech Therapists 
+11  =  Non-physician – Other 
+99  =  Specialty Unknown 
+PECOS/claims 
+spec_prim_1 
+Primary specialty (the most recently reported in PECOS) 
+PECOS/claims 
+spec_prim_1_name 
+Name of primary specialty 
+ 
+spec_prim_2 
+Concurrently reported primary specialty 
+PECOS/claims 
+spec_prim_2_name 
+Name of concurrently reported primary specialty 
+ 
+spec_source 
+Source data for specialty  
+1=PECOS  
+2=claims 
+PECOS/claims 
+spec_source_hosp 
+Source data for hospitalist specialty designation  
+1=PECOS 
+2=claims 
+PECOS/claims 
+ 
+Place of service 
+(POS) variables 
+Description 
+Data Source 
+pos_office 
+% of line items delivered in office 
+Claims 
+pos_retail 
+% of line items delivered in retail clinics 
+Claims 
+pos_urgent 
+% of line items delivered in urgent care centers 
+Claims 
+pos_inpat 
+% of line items delivered in inpatient hospital 
+Claims 
+pos_opd 
+% of line items delivered in hospital outpatient department (OPD) 
+Claims 
+
+
+4 
+ 
+ 
+Place of service 
+(POS) variables 
+Description 
+Data Source 
+pos_er 
+% of line items delivered in emergency room (ER) 
+Claims 
+pos_nursing 
+% of line items delivered in nursing facility or skilled nursing facility 
+Claims 
+pos_asc 
+% of line items delivered in ambulatory surgery center (ASC) 
+Claims 
+pos_resid 
+% of line items delivered in the patient’s residence (i.e., home, assisted 
+living facility, custodial care facility, or group home) 
+Claims 
+pos_other 
+% of line items delivered in other places of service  
+Claims 
+ 
+Geographic location 
+Description 
+Data Source 
+state 
+State abbreviation with the most line items for that NPI  
+99=missing 
+Claims 
+state_multi 
+Multiple state indicator (1=multiple states; 0=single state) 
+Claims 
+cbsa_type 
+Type of CBSA for physician 
+1=Metropolitan area 
+2=Micropolitan area 
+3=non-CBSA  
+9=missing CBSA code 
+Claims 
+cbsa_cd 
+CBSA code with the most allowed line items for that NPI 
+00000=non-CBSA 
+99999=missing CBSA code 
+Claims 
+cbsa_name 
+CBSA name 
+Claims 
+cbsa_multi 
+Multiple CBSA indicator (1=multiple CBSAs; 0=single CBSA) 
+Claims 
+ 
+Utilization summary 
+measures 
+Description 
+Data Source 
+npi_srvc_lines 
+Count of line items billed by NPI 
+Claims 
+npi_allowed_amt 
+Total allowed charges billed by NPI 
+Claims 
+npi_unq_benes 
+Number of unique beneficiaries for whom the NPI billed 
+Claims 
+ 
+TIN1 variables 
+Description 
+Data Source 
+tin1 
+Tax identification number (TIN) with the most service  lines 
+Claims 
+tin1_legal_name 
+TIN1 legal name 
+PECOS 
+tin1_srvc_month 
+Twelve monthly flags for whether the NPI billed for any services under 
+TIN1. Position 1 pertains to January; position 12 to December. 
+1= billed  
+0=did not bill 
+Claims 
+tin1_srvc_lines 
+Count of line items billed under TIN1 
+Claims 
+tin1_allowed_amt 
+Total allowed charges billed under TIN1 
+Claims 
+tin1_unq_benes 
+Number of unique beneficiaries for whom the NPI billed under TIN1  
+Claims 
+ 
+TIN2 variables 
+Description 
+Data Source 
+tin2 
+Tax identification number (TIN) with the most service  lines 
+Claims 
+tin2_legal_name 
+TIN2 legal name 
+PECOS 
+
+
+5 
+ 
+ 
+TIN2 variables 
+Description 
+Data Source 
+tin2_srvc_month 
+Twelve monthly flags for whether the NPI billed for any services under 
+TIN2. Position 1 pertains to January; position 12 to December. 
+1= billed  
+0=did not bill 
+Claims 
+tin2_srvc_lines 
+Count of line items billed under TIN2 
+Claims 
+tin2_allowed_amt 
+Total allowed charges billed under TIN2 
+Claims 
+tin2_unq_benes 
+Number of unique beneficiaries for whom the NPI billed under TIN2  
+Claims

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p26__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 26,
+  "text": "annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThere can be multiple records per CCW_APR_LINK_KEY. If no service location exists for the provider, \nthe address from the practice location is used. If no service or practice locations exist, the billing \nlocation is used. Therefore, the address components on this location record could be different from \nthose submitted on the T-MSIS billing location record. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

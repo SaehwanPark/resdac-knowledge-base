@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_422",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n359 GG0170M1_1_STP_STRT_CD GG0170M1_1_STP_STRT_CD GG0170M1 Admission Performance 1 Step Code - The data in this column indicates the patient's ability to step over a curb or up and down one step at the time of admission. CHAR 2 The data in this column indicates the patient's ability to step over a curb or up and down one step at the time of",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

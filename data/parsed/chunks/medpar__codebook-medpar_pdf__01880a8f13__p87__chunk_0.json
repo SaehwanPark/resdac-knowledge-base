@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p87__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 87,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n71 \nDGNS_POA_CD \nLABEL: \nDiagnosis Code POA Array \nDESCRIPTION: MEDPAR Diagnosis Code Present on Admission (POA) Array \nSHORT NAME: DGNS_POA \nLONG NAME: DGNS_POA_CD \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is only populated in 2007-08. Starting in 2009 this field is replaced with POA_DGNS_#_IND_CD \n(where # = 1-25). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

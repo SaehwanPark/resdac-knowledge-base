@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_82",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Institutional LT care records (FQHC) NUM 5 X X X X X X X X X X X\n383 LT_PYMT_AMT_FQHC Institutional LT care payments (FQHC) NUM 12 X X X X X X X X X X X\n384 OT_REC_CNT_FQHC Other service records (FQHC) NUM 5 X X X X X X X X X X X\n385 OT_PYMT_AMT_FQHC Other service payments (FQHC) NUM 12 X X X X X X X X X X X\n386 RX_REC_CNT_FQHC Prescription drug records (FQHC) NUM 5 X X X X X X X X X X X\n387 RX_PYMT_AMT_FQHC Prescription drug payments (FQHC) NUM 12 X X X X X X X X X X X\n388 TOT_REC_CNT_FQHC",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

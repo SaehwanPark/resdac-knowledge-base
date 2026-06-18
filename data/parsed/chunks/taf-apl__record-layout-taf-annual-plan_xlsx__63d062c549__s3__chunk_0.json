@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s3__chunk_0",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 3,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nTAF Annual Plan — Service Area File\nVersion — October 2022\nRIF SAS name RIF label Type Length RIF sequence\nMC_PLAN_ID Managed Care Plan Identification Number CHAR 12 1\nSTATE_CD Submitting State Alpha Abbreviation CHAR 2 2\nSUBMTG_STATE_CD Submitting State Entity Code CHAR 2 3\nMC_PLAN_SAREA_NAME Managed Care Plan Service Area Name CHAR 45 4\nMC_PLAN_SAREA_ACTV_IND_01 Managed Care Plan Service Area Active Indicator - January CHAR 1",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

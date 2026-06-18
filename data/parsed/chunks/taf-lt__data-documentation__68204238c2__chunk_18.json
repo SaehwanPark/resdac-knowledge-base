@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_18",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "Than Medicare or Medicaid -Insurance Paid Amount | \n\n | 107 | OTHR_TP_CLCTN_CD | Other Third Party Collection Code | \n\n | 108 | FUNDNG_CD | Code To Indicate Source of Non-Federal Funding | \n\n | 109 | FUNDNG_SRC_NON_FED_SHR_CD | Funding Source Non-Federal Share Code | \n\n | 110 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | \n\n | 111 | TMSIS_RUN_ID | TMSIS State Data Processing Run Identifier | \n\n | 112 | LT_VRSN | Long-Term Version Representing the Iteration of the File |",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

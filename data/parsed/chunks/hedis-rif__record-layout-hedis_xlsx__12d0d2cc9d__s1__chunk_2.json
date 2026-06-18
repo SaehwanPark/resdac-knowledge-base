@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "assigned at birth. Sex (HEDIS) CHAR 1 10 10 10 10 10\nHEDIS_BENE_DOB Beneficiary date of birth (HEDIS) DATE 8 11 11 11 11 11\nSNP_TYPE_CD Special Needs Plan (SNP) Type Code NUM 3 12 12 12 12 12\nBENE_MMC Beneficiary Member Months Contribution (MMC) to Denominator NUM 3 13 13 13 13 13\nABA_DNMTR_IND Adult BMI Assessment (ABA) Denominator Indicator NUM 3 14 14 14 — —\nABA_NMRTR_IND Adult BMI Assessment (ABA) Numerator Indicator NUM 3 15 15 15 — —\nCOL_DNMTR_IND Colorectal Cancer Screening (COL)",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p173__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 173,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n172 \nSR_SPLMTL_EMPLYMT_1_CD \nLABEL: \nSupplemental HRSN Employment 1: Want Help Finding or Keeping Job \nDESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) employment where patient \nwants help finding or keeping a job. \nLONG NAME: SR_SPLMTL_EMPLYMT_1_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = I do not need or want help \n1 = Yes,",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p5__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 5,
+  "text": "Edition \nDESCRIPTION: The edition of the American Joint Committee on Cancer (AJCC) Cancer Staging manual used to \ndescribe the patient’s cancer stage. \nSHORT NAME: AJCC_EDITION \nLONG NAME: AJCC_EDITION \nTYPE: \nCHAR \nLENGTH: \n3 \nFILE(S): \nClinical and staging \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \n7th \n8th \nNull/missing = OCM participant did not report the staging data or it was invalid (reference details in \nthe RPTD_TO_RGSTRY codebook entry) \nCOMMENT: \nFor any initial diagnosis",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_238",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "problems - regular complaints of hunger. 0 = No, 1 = Yes, \"-\" = Unknown.\n387 K4C K4C_NOT_EATING (K4C) Leaves 25 percent or more Food Uneaten at Most Meals CHAR 1 Oral/nutritional status: nutritional problems - leaves 25% or more food uneaten at most meals. 0 = No, 1 = Yes, \"-\" = Unknown.\n388 K4D K4D_NONE_ABOVE (K4D) None of Above Nutritional Problems CHAR 1 Oral/nutritional status: nutritional problems - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n389 K5A K5A_PARENTERAL_IV (K5A) Parenteral",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

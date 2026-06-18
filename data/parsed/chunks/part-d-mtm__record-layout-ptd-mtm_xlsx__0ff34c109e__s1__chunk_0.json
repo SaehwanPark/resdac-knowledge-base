@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Part D Medication Therapy Management (MTM) — Enrollment File\nVersion — May 2024\nLong SAS name Label Type Length 2013 1 2014–2015 1 2016–2018 1 2019–2021 1 2022 + 1\nBENE_ID Encrypted CCW beneficiary ID CHAR 15 X X X X X\nRFRNC_YR Year of Part D Medication Therapy Management (MTM) file NUM 8 X X X X X\nCONTRACT_ID Part D contract number CHAR 5 X X X X X\nTARG_CRITERIA_MET Beneficiary met targeting criteria CHAR 1 X X X X",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

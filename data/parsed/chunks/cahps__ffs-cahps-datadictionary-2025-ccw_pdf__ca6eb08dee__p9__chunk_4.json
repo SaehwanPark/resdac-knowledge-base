@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p9__chunk_4",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 9,
+  "text": "of beneficiary \nsa_dob \nDate of birth of beneficiary \nsa_disbld \nDisabled flag \n$ID_F \nsa_deemd_lis \nDeemed for low income subsidy \n$ID_F \nsa_deemd_cpmt \nGeneric level for copay computation \n$GENLEVF \nsa_cvrg_type \nPart a-b coverage type \n$CVT \nsa_cntrct_num \nHealth plan id of surveyed plan \nsa_age \nAge derived as su_received - sa_dob \nr_mhs \nREVERSED: Rate mental health \nRTC \nr_md_getmngca \nREVERSED: Last 6 mths, got help from personal md to manage care \nYNC \nr_md_disagree \nREVERSED: How",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

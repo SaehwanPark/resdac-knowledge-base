@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p15__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 15,
+  "text": "B. 2025 MCAHPS Format Tables\n15\nmd_explain: RECODE : Last 6 mths, how often personal MD explain things\nSAS Format: OFA\n2: SOMETIMES\n3: USUALLY\n4: ALWAYS\nmd_getmngca: RECODE : Last 6 mths, got help needed from personal MD to manage care\nSAS Format: YNB\n1: YES, DEFINITELY\n2: YES, SOMEWHAT\n3: NO\nmd_have: RECODE : Do you have a personal MD\nSAS Format: YNA\n1: YES\n2: NO\nmd_listen: RECODE : Last 6 mths, how often personal MD listen carefully\nSAS Format: OFA\n1: NEVER\n2: SOMETIMES\n3: USUALLY\n4:",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

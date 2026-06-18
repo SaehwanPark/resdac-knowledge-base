@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_369",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "formal assessment instrument or tool (e.g., Braden, Norton, or other). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n410 M0100C_RISK_CLNCL_JDGMNT_CD M0100C_RISK_CLNCL_JDGMNT_CD M0100C Determination of Pressure Ulcer Risk: Clinical Assessment Code CHAR 1 The data in this column indicates whether the resident is at risk for a pressure ulcer based on clinical judgment. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n411 M0100Z_NO_RISK_DTMNTN_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

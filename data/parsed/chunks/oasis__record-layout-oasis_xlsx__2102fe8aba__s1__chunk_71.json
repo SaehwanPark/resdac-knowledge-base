@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_71",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Lives With Friend Patient lives with friend. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_OTH_FAM (M0340) Lives With Other Family Member Patient lives with other family member. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_OTHER (M0340) Lives With Other Than Above Patient lives with other than above. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_PD_HELP (M0340) Lives With Paid Help Patient lives with paid help. 0 = No, 1 = Yes CHAR 1 x x\nM0340_LIV_SPOUSE (M0340) Lives With Spouse/Significant Other Patient lives with",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_191",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "and programs - intermittent catheter. 0 = No, 1 = Yes, \"-\" = Unknown.\n272 H3F H3F_NOT_USE_TOLIET (H3F) Did Not Use Toilet Room/Commode/Urinal CHAR 1 Continence in last 14 days: appliances and programs - did not use toilet/commode/urinal. 0 = No, 1 = Yes, \"-\" = Unknown.\n273 H3G H3G_PADS_USED (H3G) Pads/Briefs Used CHAR 1 Continence in last 14 days: appliances and programs - pads/briefs used. 0 = No, 1 = Yes, \"-\" = Unknown.\n274 H3H H3H_ENEMAS (H3H) Enemas/Irrigation CHAR 1 Continence in last 14",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

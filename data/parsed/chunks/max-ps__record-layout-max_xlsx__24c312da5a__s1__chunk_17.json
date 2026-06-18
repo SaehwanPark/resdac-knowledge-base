@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "2 X X X X X X X X X X X\n74 MAX_ELG_CD_MO_8 MAX uniform eligibility group (Aug) CHAR 2 X X X X X X X X X X X\n75 MAX_ELG_CD_MO_9 MAX uniform eligibility group (Sep) CHAR 2 X X X X X X X X X X X\n76 MAX_ELG_CD_MO_10 MAX uniform eligibility group (Oct) CHAR 2 X X X X X X X X X X X\n77 MAX_ELG_CD_MO_11 MAX uniform eligibility group (Nov) CHAR 2 X X X X X X X X X X X\n78 MAX_ELG_CD_MO_12 MAX uniform eligibility group (Dec) CHAR 2 X X X X X X X X X X X\n79 EL_PVT_INS_CD_1 Private health insurance code",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

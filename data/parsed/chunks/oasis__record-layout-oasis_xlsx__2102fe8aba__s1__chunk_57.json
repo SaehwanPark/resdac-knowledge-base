@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_57",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Rehabilitive Prognosis Rehabilitative prognosis: best description of patient's prognosis for functional status. 00 = Guarded: minimal improvement in functional status is expected; decline is possible.\n01 = Good: marked improvement in functional status is expected.\nUK = Unknown. CHAR 2 x x\nM0280_LIFE_EXPECT (M0280) Life Expectancy Life expectancy (physician documentation is not required). 00 = Live expectancy is greater than 6 months.\n01 = Life expectancy is 6 months or fewer. CHAR 2 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

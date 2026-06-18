@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p88__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 88,
+  "text": "TYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nAPR enrollment \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nDate (numeric, system dependent) e.g., 05DEC2015, 31DEC2299 \nCOMMENT: \nIf PRVDR_ENROLMT_START_DT is not NULL and PRVDR_ENRLMT_END_DT is NULL, \nPRVDR_ENRLMT_END_DT is equal to “31DEC9999” in the T-MSIS source data. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

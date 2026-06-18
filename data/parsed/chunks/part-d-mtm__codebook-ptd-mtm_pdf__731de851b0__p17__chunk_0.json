@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n13 \nCMR_RECIPIENT \nLABEL: \nComprehensive Medication Review (CMR) recipient \nDESCRIPTION: This variable indicates the recipient of the comprehensive medication review (CMR) interaction and \nnot the recipient of the CMR documentation \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n01 = Beneficiary \n02 = Beneficiary's prescriber \n03 =",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

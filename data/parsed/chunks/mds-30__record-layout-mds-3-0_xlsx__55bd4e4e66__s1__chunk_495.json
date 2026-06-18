@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_495",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "01=Admission assessment (required by day 14)\n02=Quarterly review assessment\n03=Annual assessment\n04=Significant change in status assessment\n05=Significant correction to prior comprehensive assessment\n06=Significant correction to prior quarterly assessment\n99=None of the above \n^=Blank (skip pattern)\n560 V0100B_PRIOR_PPS_CD V0100B_PRIOR_PPS_CD V0100B Prior Assessment PPS Reason for Assessment Code CHAR 2 The data in this column indicates the PPS Reason for Assessment of the most recent prior",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

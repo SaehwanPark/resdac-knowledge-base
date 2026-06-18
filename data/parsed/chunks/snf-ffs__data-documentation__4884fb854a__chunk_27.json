@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_27",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "| Claim Pricer Version Code | \n\n | 166 | CLM_SRVC_FAC_ZIP_CD | Claim service facility ZIP code (where service was provided) | \n\n | 167 | NCH_PROFNL_CMPNT_CHRG_AMT | Professional Component Charge Amount | \n\n | 168 | CLM_NEXT_GNRTN_ACO_IND_CD1 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population-Based Payment (PBP) | \n\n | 169 | CLM_NEXT_GNRTN_ACO_IND_CD2 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth | \n\n | 170",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

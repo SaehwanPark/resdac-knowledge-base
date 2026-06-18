@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_26",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "Code CHAR 1 67 New5\nDMERC_OXGN_EQUIP_PRVS_DT DMERC_OXGN_EQUIP_PRVS_DT Oxygen Equipment Previous Date DATE 8 68 New5\nCLM_NEXT_GNRTN_ACO_IND_CD1 CLM_NEXT_GNRTN_ACO_IND_CD1 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP) CHAR 1 69 New6\nCLM_NEXT_GNRTN_ACO_IND_CD2 CLM_NEXT_GNRTN_ACO_IND_CD2 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth CHAR 1 70 New6\nCLM_NEXT_GNRTN_ACO_IND_CD3",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

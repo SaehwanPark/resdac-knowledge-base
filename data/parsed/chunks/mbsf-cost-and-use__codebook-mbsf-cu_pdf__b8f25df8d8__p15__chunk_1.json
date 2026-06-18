@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p15__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 15,
+  "text": "ANES claim lines are defined as those with a line BETOS code (BETOS_CD) where the first two digits = \n“P0” and the CARR_LINE_MTUS_CD = “2.” The total Medicare payments are calculated as the sum of \nLINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. \nSHORT NAME: — \nLONG NAME: ANES_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nStarting in 2015, the LINE_NCH_PMT_AMT does not necessarily reflect the amount paid to the",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

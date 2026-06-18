@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p30__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 30,
+  "text": "TYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nAHC data system (derived) \nVALUES: \nFORMAT: XX.XX (e.g., 5.91, 15.00), expressed in minutes \nMissing \nCOMMENT: \nRange is from 5–30 minutes. The values for the raw variable were 5 minutes, 15 minutes, 30 minutes, \nand more than 30 minutes. Values of more than 30 minutes were coded as 30 minutes. CMS did not \nrequire bridge organizations to report navigation contacts in the AHC data system, so \nNE_NVGTR_AVG_CNTCT_MNTS_NUM may not reflect the duration of all",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

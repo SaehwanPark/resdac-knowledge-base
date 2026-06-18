@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p184__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 184,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n168 \nPGM_RDCTN_IND_SW \nLABEL: \nElectronic Health Records (EHR) Program Reduction Indicator \nDESCRIPTION: This field is a switch that identifies which hospitals are Electronic Health Records (EHR) meaningful \nusers. \nSHORT NAME: PGM_RDCTN_IND_SW \nLONG NAME: PGM_RDCTN_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = hospital is subject to a reduction under the EHR program \nBlank = not",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

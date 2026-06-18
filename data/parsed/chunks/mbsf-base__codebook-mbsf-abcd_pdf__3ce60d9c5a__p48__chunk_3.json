@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p48__chunk_3",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 48,
+  "text": "VALUES: \nNull/missing =Not Enrolled in Medicare Part C \n01 = Health Maintenance Organization (HMO) \n02 = HMO point-of-service (HMOPOS) \n04 = Local Preferred Provider Organization (PPO) \n05 = PSO (State License) \n06 = PSO (Federal Waiver of State License) \n07 = Medical Savings Account (MSA) \n08 = Religious Fraternal Benefit (RFB) private fee-for-service (PFFS) plan \n09 = Private fee-for-service (PFFS) plan \n10 = SHMO \n18 = Section 1876 Cost Plan \n19 = HCPP — Section 1833 Cost Plan",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

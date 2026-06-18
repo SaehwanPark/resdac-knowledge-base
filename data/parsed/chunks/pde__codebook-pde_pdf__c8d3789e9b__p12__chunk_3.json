@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p12__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 12,
+  "text": "identification number from the \nsource PDE to the proprietary National Council for Prescription Drug Programs (NCPDP) dataQ™ \nDatabase. The variable is populated for every PDE that could be linked to the NCPDP pharmacy data \nfor that year, and will occasionally be null if there was no conclusive link between the service provider \nidentification number in the source PDE data and the provider identification numbers in the NCPDP \npharmacy data. \nThis variable usually represents a unique pharmacy",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

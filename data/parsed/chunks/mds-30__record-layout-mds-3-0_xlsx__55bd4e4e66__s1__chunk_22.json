@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_22",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "RUG III Hierarchical Version CHAR 10 This column contains the calculated RUG III Hierarchical Medicare RUG Group Version code.\n37 C_MDCR_RUG4_HIRCHCL_GRP_TXT C_MDCR_RUG4_HIRCHCL_GRP_TXT Medicare RUG IV Hierarchical Group CHAR 10 This column contains the calculated RUG IV Hierarchical Medicare RUG Group code.\n38 C_MDCR_RUG4_HIRCHCL_VRSN_TXT C_MDCR_RUG4_HIRCHCL_VRSN_TXT Medicare RUG IV Hierarchical Version CHAR 10 This column contains the calculated RUG IV Hierarchical Medicare RUG Group Version",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

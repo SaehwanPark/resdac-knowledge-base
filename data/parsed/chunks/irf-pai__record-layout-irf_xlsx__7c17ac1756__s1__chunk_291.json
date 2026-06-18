@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_291",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "- Able to Report Correct Year - The data in this column identifies how closely the patient knew the current year. CHAR 1 The data in this column identifies how closely the patient knew the current year. 0 = Missed by > 5 years or no answer\n1 = Missed by 2 - 5 years\n2 = Missed by 1 year\n3 = Correct\n281 C0300B_RPT_MO_CD C0300B_RPT_MO_CD C0300B BIMS: Temporal Orientation - Able to Report Correct Month - The data in this column identifies how closely the patient knew the current month. CHAR 1 The",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

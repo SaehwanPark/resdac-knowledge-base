@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_204",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "I1MM I1MM_MACULAR_DEGN (I1MM) Macular Degeneration CHAR 1 Disease diagnosis: diseases - sensory - macular degeneration. 0 = No, 1 = Yes, \"-\" = Unknown.\n304 I1N I1N_MISS_LIMB (I1N) Missing Limb CHAR 1 Disease diagnosis: diseases - musculoskeletal - missing limb. 0 = No, 1 = Yes, \"-\" = Unknown.\n305 I1NN I1NN_ALLERGIES (I1NN) Allergies CHAR 1 Disease diagnosis: diseases - other - allergies. 0 = No, 1 = Yes, \"-\" = Unknown.\n306 I1O I1O_OSTEOPORO (I1O) Osteoporosis CHAR 1 Disease diagnosis: diseases",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

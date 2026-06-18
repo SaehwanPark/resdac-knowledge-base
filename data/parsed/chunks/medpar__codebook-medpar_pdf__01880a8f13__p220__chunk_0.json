@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p220__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 220,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n204 \nRDLGY_NUCLR_MDCN_AMT \nLABEL: \nRadiology Nuclear Medicine Amount ($) \nDESCRIPTION: The charge amount (rounded to whole dollars) for the nuclear medicine services related to the \nbeneficiary's stay. \nSHORT NAME: RDLGY_NUCLR_MDCN_AMT \nLONG NAME: RDLGY_NUCLR_MDCN_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

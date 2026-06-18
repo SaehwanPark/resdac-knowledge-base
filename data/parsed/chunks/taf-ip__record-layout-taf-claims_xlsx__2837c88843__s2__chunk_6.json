@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_6",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "7 36\nDGNS_VRSN_CD_1 Diagnosis Version Code 1 (ICD-9 or ICD-10) CHAR 1 37\nDGNS_POA_IND_1 Diagnosis 1 Present on Admission Indicator CHAR 1 38\nDGNS_1_CCSR_CTGRY_CD2 AHRQ Clinical Classifications Software Refined (CCSR) Diagnosis 1 Category Code CHAR 6 113\nDGNS_CD_2 Diagnosis Code 2 CHAR 7 39\nDGNS_VRSN_CD_2 Diagnosis Version Code 2 (ICD-9 or ICD-10) CHAR 1 40\nDGNS_POA_IND_2 Diagnosis 2 Present on Admission Indicator CHAR 1 41\nDGNS_CD_3 Diagnosis Code 3 CHAR 7 42\nDGNS_VRSN_CD_3 Diagnosis Version",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

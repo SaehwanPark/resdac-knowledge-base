@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p30__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 30,
+  "text": "TYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) (derived) \nVALUES: \n0–12 \nCOMMENT: \nThe algorithm for this variable was updated with MBSF ABCD V2. CCW derived this variable by \ncounting the number of months where the beneficiary had full or partial dual eligibility (i.e., months \nwhere DUAL_STUS_CD_XX equal to 01, 02, 03, 04, 05, 06, 08, or 10 ). Starting with MBSF ABCD V2, \nthe DUAL_STUS_CD_XX value 10 identifies beneficiaries in Puerto Rico, Virgin Islands, and other",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

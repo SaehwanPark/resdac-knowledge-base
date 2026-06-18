@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_550",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "9/30/2019\n633 Z0200A_STATE_RUG_GRP_TXT Z0200A_STATE_RUG_GRP_TXT Z0200A State Medicaid RUG Case Mix Group Text CHAR 10 The data in this column contains the submitted state Medicaid RUG case mix group code. (If required by the state)\n634 Z0200B_STATE_RUG_VRSN_TXT Z0200B_STATE_RUG_VRSN_TXT Z0200B State Medicaid RUG Version Text CHAR 10 The data in this column contains the submitted state Medicaid RUG version code. (If required by the state)\n635 Z0250A_STATE_2_RUG_GRP_TXT Z0250A_STATE_2_RUG_GRP_TXT",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

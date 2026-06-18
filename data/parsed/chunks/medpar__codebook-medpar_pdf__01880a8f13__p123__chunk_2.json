@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p123__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 123,
+  "text": "intensive care (revenue code 0209) \nCOMMENT: \nThis field is derived by checking for the presence of ICU revenue center codes (listed below) on any of \nthe claim records included in the stay. If more than one of the revenue center codes listed below are \nincluded on these claims; the code with the highest revenue center total charge amount is used. \nThis field is derived by identifying the accommodation revenue center codes 020X (all nine \nsubcategories) from all claims included in the stay.",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

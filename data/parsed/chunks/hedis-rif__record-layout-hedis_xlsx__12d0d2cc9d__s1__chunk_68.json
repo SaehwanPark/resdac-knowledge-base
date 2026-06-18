@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_68",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Outpatient Services Ind NUM 3 — 142 184 — —\nMPT_NMRTR_ED_SRVC_IND Mental Health Utilization (MPT) Nmrtr: Mmbr Receiving Emergncy Dept Services Ind NUM 3 — 143 185 — —\nMPT_NMRTR_TLHLTH_SRVC_IND Mental Health Utilization (MPT) Nmrtr: Member Receiving Telehealth Services Ind NUM 3 — 144 186 — —\nABX_NMRTR_ANTBTC_RX_CNT2 Antibiotic Utilization (ABX) Numerator: Total Number of Antibiotic Prescriptions NUM 4* 111 145 187 176 174\nABX_NMRTR_RX_DAYS_SUPLY_CNT2 Antibiotic Utilization (ABX) Nmrtr: Total",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

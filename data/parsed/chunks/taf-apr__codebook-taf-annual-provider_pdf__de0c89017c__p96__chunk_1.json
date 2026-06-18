@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p96__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 96,
+  "text": "the calendar year. \nSHORT NAME: PRVDR_ENRLMT_STUS_PENDG_IND \nLONG NAME: PRVDR_ENRLMT_STUS_PENDG_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThe value of this variable will be 1 (“Yes”) when PRVDR_ENRLMT_STUS_CD (variable in the APR \nenrollment file) equals “40”–“48.” \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

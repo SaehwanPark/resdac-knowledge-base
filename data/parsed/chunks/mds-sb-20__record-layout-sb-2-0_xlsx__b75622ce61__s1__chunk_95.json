@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_95",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Intervention CHAR 1 Indicates the patient has received nutrition or hydration intervention to prevent or treat specific skin conditions in the past seven days. Includes wheat-free diet to prevent allergic dermatitis, high calorie diet with added supplements to prevent skin breakdown, high protein supplements for wound healing. 0 = Unchecked, 1 = Checked, -1 = Unknown\n122 M5E M5E_ULCER_CARE 34e(M5e)Ulcer Care CHAR 1 Indicates the patient has received any intervention for treating an ulcer at any",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_101",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(E2) Mood Persistance CHAR 1 Mood and behavior patterns: mood persistance. 0 = No Mood Indicators; 1 = Indicators Present, easily altered; 2 = Indicators Present, not easily altered; \"-\" = Unknown, -2 = Space.\n175 E3 E3_MOOD_CHANGE (E3) Change in Mood CHAR 1 Mood and behavior patterns: change is mood as compared to status 90 days ago. 0 = No change, 1 = Improved, 2 = Deteriorated. \"-\" = Unknown, -2 = Space.\n176 E4AA E4AA_WANDERS (E4AA) Wandering Frequency CHAR 1 Mood and behavior patterns:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__chunk_2",
+  "source_document": "data/raw/html/dataset_page/000224f3381ebc39db622e3eee762a28c41e05ec.html",
+  "page": null,
+  "text": "least one record for every beneficiary enrolled in Part D during the year; there may be multiple records if more than one plan was elected during the year.\n- This file consists of two sub-files, Part D Plan Election File and Part D Re-Assignment File. When the Part D Plan Election Type Beneficiary Summary File is requested and approved, both sub-files are automatically delivered. The two sub-files link by CCW Beneficiary ID.",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://resdac.org/cms-data/files/part-d-plan-election-type-beneficiary-summary?page=1"
+}

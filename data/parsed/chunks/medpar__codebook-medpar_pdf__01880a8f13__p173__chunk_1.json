@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p173__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 173,
+  "text": "MedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center total charge amount (REV-CNTR-TOT-CHRG-\nAMT) associated with revenue center codes (REV CNTR CD) '0720', '0721', '0722', '0723', '0724', '0725', \n'0726', '0727', '0728' and '0729' from all claim records included in the stay. This field was new in 2011. \nNote that the sum of this field and the operating room charge amounts (OPRTG_ROOM_AMT) is \navailable all years (field called OROOMAMT). \n^ Back to",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

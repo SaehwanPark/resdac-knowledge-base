@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_855",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "effective 10/01/2023\n950 DRUG_NONE_TKNG_CD DRUG_NONE_TKNG_CD N0415Z1 High-Risk Drug (Is taking): None of the Above CHAR 1 The data in this column indicates the resident is not taking any of the above medications during the last seven days or since admission/entry or reentry if less than seven days. 0=No\n1=Yes effective 10/01/2023\n951 CHMTHRPY_ADMSN_CD CHMTHRPY_ADMSN_CD O0110A1A Treatment: Chemotherapy (Admission) CHAR 1 The data in this column indicates whether the resident received",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

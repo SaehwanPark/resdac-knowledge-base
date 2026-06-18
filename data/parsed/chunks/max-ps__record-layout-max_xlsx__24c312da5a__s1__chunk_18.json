@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "MAX uniform eligibility group (Dec) CHAR 2 X X X X X X X X X X X\n79 EL_PVT_INS_CD_1 Private health insurance code (Jan) NUM 1 X X X X X X X X X X X\n80 EL_PVT_INS_CD_2 Private health insurance code (Feb) NUM 1 X X X X X X X X X X X\n81 EL_PVT_INS_CD_3 Private health insurance code (Mar) NUM 1 X X X X X X X X X X X\n82 EL_PVT_INS_CD_4 Private health insurance code (Apr) NUM 1 X X X X X X X X X X X\n83 EL_PVT_INS_CD_5 Private health insurance code (May) NUM 1 X X X X X X X X X X X\n84 EL_PVT_INS_CD_6",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

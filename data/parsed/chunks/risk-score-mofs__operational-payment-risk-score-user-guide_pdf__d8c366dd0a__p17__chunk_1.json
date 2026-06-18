@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 17,
+  "text": "and diabetes without complication, with diagnosis code of diabetes with acute complications. Although \nHCCs reflect hierarchies among related disease categories, for unrelated diseases, the model accumulates the relative \ncoefficient for each HCC, i.e., the model is “additive.” For example, a female with both rheumatoid arthritis and breast \ncancer has (at least) two separate HCCs coded, and her predicted cost reflects increments for both conditions. \nBecause the model codes a single individual",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

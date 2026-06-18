@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_81",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = Impaired - sees larged print, but not regular print in newspapers/books; 2= Moderately Impaired - limited vision, not able to see newspaper headlines, but can identify objects; 3 = Highly Impaired - object identification in question, but eyes appear to follow objects; 4 = Severely Impaired - no vision or sees only light, colors, or shapes - eyes do not appear to follow objects; \"-\" = Unknown; -2 = Space.\n154 D2A D2A_SIDE_VISN_PROB (D2A) Side Vision Problems CHAR 1 Vision Patterns: visual",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

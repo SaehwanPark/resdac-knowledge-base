@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_318",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "other. 0 = No, 1 = Yes, 2 = None, \"-\" = Unknown.\n535 R2B R2B_COMPLETE_DT (R2B) Date Assessment Complete DATE 8 Assessment/discharge information: participation in assessment - date RN coordinator signed assessment as complete.\n536 R3A R3A_DISCHARGE_CD (R3A) Resident Discharge Disposition Code CHAR 1 Assessment/discharge information: code for resident discharge disposition. 1 = Private home/apt. with no home health services, 2 = Private home/apt. with home health services, 3 = Board and",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

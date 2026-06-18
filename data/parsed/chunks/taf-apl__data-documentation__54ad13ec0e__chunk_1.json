@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__data-documentation__54ad13ec0e__chunk_1",
+  "source_document": "data/raw/html/documentation_page/54ad13ec0ec7f6d311da24252620d5ade6c49360.html",
+  "page": null,
+  "text": "Code | \n\n | 8 | MC_PLAN_TYPE_CTGRY_CD | Managed Care Plan Type Category Code | \n\n | 9 | MC_PLAN_REIMBRSMT_TYPE_CD | Managed Care Plan Reimbursement Type Code | \n\n | 10 | Managed Care Plan Reimbursement Type Category Code | Managed Care Plan Reimbursement Type Category Code | \n\n | 11 | MC_PLAN_CNTRCT_START_DT | Managed Care Plan Contract Start Date | \n\n | 12 | MC_PLAN_CNTRCT_END_DT | Managed Care Plan Contract End Date | \n\n | 13 | MC_PLAN_CNTRCT_ADDTNL_PRD_IND | Managed Care Plan Contract",
+  "dataset": "taf-apl",
+  "url": "https://resdac.org/cms-data/files/taf-apl/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_7",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "Amount | \n\n | 43 | NCH_BLOOD_PNTS_FRNSHD_QTY | NCH Blood Pints Furnished Quantity | \n\n | 44 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (FFS) | \n\n | 45 | ICD_DGNS_CD1 | Claim Diagnosis Code I (FFS) | \n\n | 46 | ICD_DGNS_CD2 | Claim Diagnosis Code II (FFS) | \n\n | 47 | ICD_DGNS_CD3 | Claim Diagnosis Code III (FFS) | \n\n | 48 | ICD_DGNS_CD4 | Claim Diagnosis Code IV (FFS) | \n\n | 49 | ICD_DGNS_CD5 | Claim Diagnosis Code V (FFS) | \n\n | 50 | ICD_DGNS_CD6 | Claim Diagnosis Code VI (FFS) | \n\n | 51",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_66",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Unsafe Floor Coverings Safety hazards: unsafe floor coverings. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_APPLIANC (M0320) Unsafe Gas/Electric Appliance Safety hazards: unsafe gas/electric appliance. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_LIVING_A (M0330) Cluttered/Soiled Living Area Sanitation hazards: cluttered/soiled living area. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_BAD_H2O (M0330) Contaminated Water Sanitation hazards: contaminated water. 0 = No, 1 = Yes CHAR 1 x x\nM0330_SAN_SEW_DISP (M0330)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

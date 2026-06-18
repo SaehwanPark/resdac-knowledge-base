@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p130__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 130,
+  "text": "provider effective \nstart date or discharge date < MSA \neffective start date for PPS \n56 = Invalid length of stay \n57 = Review code invalid (Not 00, 03, 06, \n07, 09) \n58 = Total charges not numeric \n61 = Lifetime reserve days not numeric \nor BILL-LTR-DAYS > 60 \n62 = Invalid number of covered days \n65 = PAY-CODE not = A, B or C on \nprovider specific file for capital \n67 = Cost outlier with LOS > covered days \n***Inpatient Rehab Facility (IRF) Pricer Return Codes*** \nIRF Payment return codes: \n00",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

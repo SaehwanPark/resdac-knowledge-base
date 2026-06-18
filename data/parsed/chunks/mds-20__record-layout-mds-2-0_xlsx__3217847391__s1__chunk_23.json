@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "current payment sources - Medicare ancillary part A 0 = No, 1 = Yes, \"-\" = Unknown.\n44 A7D A7D_MCARE_ANC_P_B (A7D) Medicare Ancillary Part B CHAR 1 Identification and background information: current payment sources - Medicare ancillary part B 0 = No, 1 = Yes, \"-\" = Unknown.\n45 A7E A7E_CHAMPUS_P_D (A7E) CHAMPUS Per Diem CHAR 1 Identification and background information: current payment sources - CHAMPUS per diem 0 = No, 1 = Yes, \"-\" = Unknown.\n46 A7F A7F_VA_PER_DIEM (A7F) VA Per Diem CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

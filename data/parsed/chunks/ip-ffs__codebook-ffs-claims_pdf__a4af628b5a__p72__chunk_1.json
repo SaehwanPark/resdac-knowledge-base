@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p72__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 72,
+  "text": "added to reflect \nthe admission date for hospice or to a home health agency (HHA). \nSHORT NAME: ADMSN_DT (in the inpatient and SNF files) \nHHSTRTDT (in the HHA file) \nCLM_ADMSN_DT (in the hospice files) \nLONG NAME: CLM_ADMSN_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThe admission date is a required field on inpatient and HHA claims. The Medicare rule is the admission \ndate and the claim “from date” (field called CLM_FROM_DT) must be the same. \nFrom 1/1/2020 until",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

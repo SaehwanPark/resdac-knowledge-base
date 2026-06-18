@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p75__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 75,
+  "text": "— \nLONG NAME: PTD_BENE_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis amount contributes to a beneficiary’s true out-of-pocket (TrOOP) costs, but only if it is for a Part D-\ncovered drug (i.e., spending on non-covered drugs does not count toward the TrOOP amount). \nNOTE: Another PDE variable called the low-income cost sharing (LIS) amount (variable name LICS_AMT), \nindicates the amount paid by Part D low-income subsidy for the PDE. Although this is sometimes",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

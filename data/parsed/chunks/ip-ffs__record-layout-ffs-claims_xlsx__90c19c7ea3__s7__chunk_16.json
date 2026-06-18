@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_16",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "Line Payment Amount to Beneficiary NUM 12 19\nLPRVPMT LINE_PRVDR_PMT_AMT Line Provider Payment Amount NUM 12 20\nLDEDAMT LINE_BENE_PTB_DDCTBL_AMT Line Beneficiary Part B Deductible Amount NUM 12 21\nLPRPAYCD LINE_BENE_PRMRY_PYR_CD Line Primary Payer Code (if not Medicare) CHAR 1 22\nLPRPDAMT LINE_BENE_PRMRY_PYR_PD_AMT Line Primary Payer (if not Medicare) Paid Amount NUM 12 23\nCOINAMT LINE_COINSRNC_AMT Line Beneficiary Coinsurance Amount NUM 12 24\nPRPYALOW LINE_PRMRY_ALOWD_CHRG_AMT Line Primary",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

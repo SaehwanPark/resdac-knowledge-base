@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p60__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 60,
+  "text": "Prior to version H, DME claims also used this code; the following were valid codes: \n\n0 = Clinics, groups, associations, \npartnerships, or other entities for \nwhom the carrier's own ID number \nhas been assigned \n1 = Physicians or suppliers billing as solo \npractitioners for whom SSN's are \nshown in the physician ID code field \n2 = Physicians or suppliers billing as solo \npractitioners for whom the carrier's \nown physician ID code is shown \n3 = Suppliers (other than sole \nproprietorship) for",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

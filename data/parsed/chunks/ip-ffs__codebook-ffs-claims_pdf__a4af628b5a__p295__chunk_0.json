@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p295__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 295,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n277 \nOWNG_PRVDR_TIN_NUM \nLABEL: \nOwning Provider Tax Identification Number (TIN) \nDESCRIPTION: The tax identification number (TIN) of the hospital provider used to identify ownership. Medicare’s \nthree-day (or one-day) payment window applies to outpatient services furnished by hospitals and \nhospitals wholly owned or wholly operated Part B entities. \nSHORT NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

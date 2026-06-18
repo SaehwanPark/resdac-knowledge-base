@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_173",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "CHAR 1 The data in this column indicates whether the resident prefers to snack between meals. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n204 F0800H_STF_BED_TIME_CD F0800H_STF_BED_TIME_CD F0800H Staff Assessment: Bed Time Code CHAR 1 The data in this column indicates whether the resident prefers to stay up past eight p.m. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n205 F0800I_STF_FMLY_INVLVMT_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

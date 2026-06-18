@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p19__chunk_5",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 19,
+  "text": "file layout and record counts. \nrisk_score_v21_read_v6.sas \nrisk_score_v21_read_v8.sas \nThis is the v6 and v8 SAS read-in programs found within the \nSDA. \nDetailed MOFs \nFile \nFile description \nres000011111req000232_2019_RSV21.exe \n\nrisk_score_v21_res000011111_req000232_2019.dat \nrisk_score_v21_res000011111_req000232_2019.fts \nrisk_score_v21_read_v6.sas \nrisk_score_v21_read_v8.sas \nThis set of files includes the V21 MOF executable file, and \nonce decrypted and uncompressed it includes the .dat",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

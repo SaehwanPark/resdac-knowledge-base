@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p239__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 239,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n223 \nSRGCL_PRCDR_DT_CNT \nLABEL: \nDates associated with surgical procedures included in stay \nDESCRIPTION: The count of the number of dates associated with the surgical procedures included in the stay. \nSHORT NAME: PRCDTCNT \nLONG NAME: SRGCL_PRCDR_DT_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n0–25 \nCOMMENT: \nThis field is derived by counting the surgical procedures dates that are reported",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

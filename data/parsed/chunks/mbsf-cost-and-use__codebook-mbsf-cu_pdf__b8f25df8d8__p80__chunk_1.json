@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p80__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 80,
+  "text": "file, however it \nwas permissible for the readmission claim to have occurred in January of the following year. A \nbeneficiary is considered to be readmitted when they have an acute inpatient stay with a discharge \nstatus that is not expired (DSCHRG_STUS=20) or left against medical advice (DSCHRG_STUS not equal to \n07) within 30 days of a previous acute inpatient stay with a discharge status that is also not expired or \nleft against medical advice. \nSHORT NAME: — \nLONG NAME: READMISSIONS \nTYPE:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

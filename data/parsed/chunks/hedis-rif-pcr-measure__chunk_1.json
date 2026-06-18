@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif-pcr-measure__chunk_1",
+  "source_document": "data/raw/html/dataset_page/21d6d237c32fea07af50f6e40ad3e0e6d3a0d116.html",
+  "page": null,
+  "text": "record represents a hospitalization for a beneficiary in the calendar year (CY). Beneficiaries with multiple hospitalizations will have multiple records in this file.\nBeneficiaries can be linked to other beneficiary data via the BENE_ID and to plan information via the HEDIS_CONTRACT_ID and HEDIS_PLAN_ID variables.",
+  "dataset": "hedis-rif-pcr-measure",
+  "url": "https://resdac.org/cms-data/files/hedis-rif-pcr-measure"
+}

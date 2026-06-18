@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p224__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 224,
+  "text": "PRCDR_CD_DT_2 \nPRCDR_CD_DT_5 \nPRCDR_CD_DT_3 \nPRCDR_CD_DT_6 \nLONG NAME: \nPRCDR_CD_DT_1 \nPRCDR_CD_DT_4 \nPRCDR_CD_DT_2 \nPRCDR_CD_DT_5 \nPRCDR_CD_DT_3 \nPRCDR_CD_DT_6 \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nVALUES: \nDate (numeric, system dependent) \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThe procedure codes are in variables called PRCDR_CD_1–6, and the coding system used to identify \nthe procedure is documented in variables",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

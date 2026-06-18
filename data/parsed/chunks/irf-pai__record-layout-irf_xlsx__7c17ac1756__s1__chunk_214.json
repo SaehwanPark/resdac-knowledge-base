@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_214",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "indicates whether the patient reports one or more episodes of becoming 'breathless' or short of breath (dyspneic), or the patient is observed to be short of breath while at rest (e.g., while sitting, talking) on at least on occasion at the time of discharge. 0 = No, 1 = Yes\n175 _50A DFCLTY_CLRG_ARWY_ADMSN_SW (50a) Weak Cough and Difficulty Clearing Airway Secretions: Admission CHAR 1 A code which indicates whether the patient reports or is observed to be unable to cough effectively to expel",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

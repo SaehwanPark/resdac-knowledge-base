@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_488",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "in Bed: Bed Rail Code CHAR 1 The data in this column indicates the frequency that a bed rail(s) was used. -=Not assessed/no information\n0=Not used\n1=Used less than daily\n2=Used Daily\n552 P0100B_TRNK_RSTRNT_BED_CD P0100B_TRNK_RSTRNT_BED_CD P0100B Physical Restraints in Bed: Trunk Restraint Bed Code CHAR 1 The data in this column indicates the frequency that a trunk restraint in bed was used. -=Not assessed/no information\n0=Not used\n1=Used less than daily\n2=Used Daily\n553 P0100C_LMB_RSTRNT_BED_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

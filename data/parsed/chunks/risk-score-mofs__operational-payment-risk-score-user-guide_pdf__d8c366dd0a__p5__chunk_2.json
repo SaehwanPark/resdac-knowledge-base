@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p5__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 5,
+  "text": "into related disease categories known \nas Hierarchical Condition Categories (HCCs). \nThe CMS-HCC risk adjustment model factors for Medicare Part C are calibrated on the Medicare OM population, and thus rely \non expenditures and diagnoses from FFS claims to calculate the predicted costs associated with each of the risk adjustment \nmodel factors.2 Although CMS has begun using MA plan-submitted diagnoses from encounter data to calculate risk scores, the \nPart C risk adjustment model coefficients",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

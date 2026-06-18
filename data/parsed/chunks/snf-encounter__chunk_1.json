@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__chunk_1",
+  "source_document": "data/raw/html/dataset_page/970e4806529a8e1d182c58a55b451dc499166a4b.html",
+  "page": null,
+  "text": "Organization NPI number only\n- No payment variables\n- Part C/Medicare Advantage benefit package and contract number\nSpecial considerations:\n- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter data may include records for some of these additional items and services provided under the plan.",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter?page=2"
+}

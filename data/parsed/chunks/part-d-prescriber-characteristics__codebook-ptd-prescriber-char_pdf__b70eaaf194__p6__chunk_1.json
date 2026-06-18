@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p6__chunk_1",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 6,
+  "text": "Prescriber Identifier \nDESCRIPTION: This variable is the CCW-assigned number that is used to uniquely identify prescribers found in the \nPart D Event file. The ID is specific to the CCW and not applicable to any other identification system or \ndata source. \nThis field also enables linkage between the Part D Event file and the CCW Prescriber Characteristics \nfile. \nSHORT NAME: — \nLONG NAME: CCW_PRSCRBR_ID \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE and HCIdea™ Prescriber Database (derived) \nVALUES:",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

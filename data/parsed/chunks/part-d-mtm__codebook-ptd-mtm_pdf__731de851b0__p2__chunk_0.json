@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nMay 2024 \nK. Schneider \nAdded new 2022 variables: DSPSL_MDCTNS_MTHD, \nNUM_COMMS_SAFE_DSPSL_MDCTNS, and \nTARG_CRITERIA_MET_REASON. Noted discontinuation of variables: \nCMR_RECIPIENT_INI and TARG_CRITERIA_MET \n1.3 \nApril 2021 \nS. Pietzsch \nAdded new 2019 variables: LTC_CMR, CMR_RECIPIENT_INI,",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

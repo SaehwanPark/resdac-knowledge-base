@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p2__chunk_2",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 2,
+  "text": "INSULIN_OONP_COPAY_1M, INSULIN_OONP_COPAY_OS, \nand INSULIN_LTCP_COPAY_1M \n• Added new CONTRACT_ID, PLAN_ID, and PTCD_INDICATOR \nvariables to the Plan Crosswalk file for the 2024 reference \nyear \n• Adjusted list of valid values for DED_APPLY_ALL \n1.7 \nOctober 2024 \nK. Schneider \n• Updated plan base file to indicate the FIDE_SNP field is \nretired and the DSNP_ZERODOLLAR field is moved to the SNP \ncontract file in the 2023 file \n• Added new variables to the SNP contract file: \nAIP_INDICATOR,",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

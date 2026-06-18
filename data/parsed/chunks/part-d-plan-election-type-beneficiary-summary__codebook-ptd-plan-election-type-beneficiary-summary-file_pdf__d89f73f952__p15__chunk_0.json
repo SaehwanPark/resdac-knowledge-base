@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p15__chunk_0",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 15,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 \n\n10 \nENRLMT_TYPE_CD \nLABEL: \nBeneficiary Part D Plan Enrollment Type Code \nDESCRIPTION: This variable contains the enrollment type code, which is used to identify the source/mechanism of \nthe Part D enrollment \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nFILE(S): \nPart D Beneficiary Plan Election file \nVALUES: \nA = Part D Auto Enrolled by CMS",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

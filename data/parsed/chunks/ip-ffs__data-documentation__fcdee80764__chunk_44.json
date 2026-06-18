@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_44",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Payment Amount | \n\n | 229 | EHR_PYMT_ADJSTMT_AMT | Claim Electronic Health Record (EHR) Payment Adjustment Amount | \n\n | 230 | PPS_STD_VAL_PYMT_AMT | Standard Payment Amount | \n\n | 231 | FINL_STD_AMT | Claim Final Standard Payment Amount | \n\n | 232 | CLM_FULL_STD_PYMT_AMT | Claim Full Standard Payment Amount | \n\n | 233 | CLM_SS_OUTLIER_STD_PYMT_AMT | Claim Short Stay Outlier (SSO) Standard Payment Amount | \n\n | 234 | HAC_PGM_RDCTN_IND_SW | Claim Hospital Acquired Condition (HAC) Program",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

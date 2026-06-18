@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s3__chunk_2",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 3,
+  "text": "Tier Drug Type Char 3 Indicates the type of drug (e.g., \"Generic\", \"Brand\", etc.) included on the Part D formulary tier for the pre-initial coverage limit phase. A tier may include multiple drug types. 001 Brand *2006 values are different than 2007 values.\n010 Generic\n011 Generic and Brand\n100 Preferred Brand\n101 Brand and Preferred Brand\n110 Generic and Preferred Brand\n111 Generic, Brand, and Preferred Brand\n999 Not Applicable\n5 Pre_ICL_tier_label Label of Pre-ICL Tier Char 2 Text label",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

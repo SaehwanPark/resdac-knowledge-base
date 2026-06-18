@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p183__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 183,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n165 \nEHR_PYMT_ADJSTMT_AMT \nLABEL: \nClaim Electronic Health Record (EHR) Payment Adjustment Amount \nDESCRIPTION: The claims adjustment payment amount for Hospitals that are not meaningful users of certified \nElectronic Health Record (EHR) technology. \nSHORT NAME: EHR_PYMT_ADJSTMT_AMT \nLONG NAME: EHR_PYMT_ADJSTMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

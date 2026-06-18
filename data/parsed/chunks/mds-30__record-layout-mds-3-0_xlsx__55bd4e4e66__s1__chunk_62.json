@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_62",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "B1200_CRCTV_LENS_CD B1200 Corrective Lenses Code CHAR 1 The data in this column identifies whether or not the resident utilizes corrective lenses. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n94 C0100_CNDCT_MENTL_STUS_CD C0100_CNDCT_MENTL_STUS_CD C0100 Brief Interview for Mental Status Be Conducted Code CHAR 1 The data in this column identifies whether or not a Brief Interview for Mental Status (BIMS) should be\nperformed. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

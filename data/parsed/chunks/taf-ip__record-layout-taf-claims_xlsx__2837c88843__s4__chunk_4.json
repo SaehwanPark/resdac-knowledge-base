@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_4",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "2 21\nWVR_ID Waiver Identification Number CHAR 20 22\nOTHR_INSRNC_IND Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid) CHAR 1 23\nSECT_1115A_DEMO_IND 1115(A) Demonstration Participation Indicator CHAR 1 24\nPRSCRBD_DT Prescribed Date DATE 8 25\nRX_FILL_DT Prescription Fill Date DATE 8 26\nBLG_PRVDR_ID Billing Provider Identification Number CHAR 30 27\nBLG_PRVDR_NPI Billing Provider NPI CHAR 10 28\nBLG_PRVDR_TXNMY_CD Billing Provider Taxonomy Code CHAR 12 29\nBLG_PRVDR_SPCLTY_CD",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p28__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 28,
+  "text": "Cost Share Group Code — January through December \nDESCRIPTION: This variable indicates the beneficiary’s Part D low-income subsidy cost sharing group for a given \nmonth (e.g., January). The Part D benefit requires enrollees to pay both premiums and cost-sharing, \nbut the program also has a low-income subsidy (LIS) that covers some or all of those costs for certain \nlow-income individuals, including deductibles and cost-sharing during the coverage gap. \nLONG NAME: \nCST_SHR_GRP_CD_01",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

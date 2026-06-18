@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p270__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 270,
+  "text": "the prospective payment system \n(PPS), which has been classified into a specific diagnosis related group (DRG). \nThis variable will typically include the total outlier payment amount, if any, for the claim. \nSHORT NAME: OUTLRPMT \nLONG NAME: NCH_DRG_OUTLIER_APRVD_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

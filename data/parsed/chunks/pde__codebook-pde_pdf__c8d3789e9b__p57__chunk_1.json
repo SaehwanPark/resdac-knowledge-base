@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p57__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 57,
+  "text": "plan. \nStarting in 2010, this variable is included in the formulary file (rather than the PDE file). \nSHORT NAME: QTYLMTYN \nLONG NAME: QUANTITY_LIMIT_YN \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE and plan characteristics (derived) \nVALUES: \n1 = Quantity limits apply \n0 = Quantity limits do not apply \nNull \nCOMMENT: \nPart D plan sponsors submit the pricing, tiers, and formularies for their plan benefit packages to CMS \nvia the Health Plan Management System (HPMS). \nThis includes information on which",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

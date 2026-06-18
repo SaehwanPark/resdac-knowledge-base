@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "in period (Final_assign = 0) NUM 2 Final = Reference Year x x x x - - - - - - -\nPRELIM_DUAL_ELIG_MONTHS Dual Status Eligibile Months in Preliminary Period Number of months for which dual eligible status is “QMB only,” “QMB and Medicaid coverage including Rx,” \"SLMB and Medicaid coverage including RX,\" or \"Other Dual Eligibles (Non-QMB, SLMB, QWDI, or QI) w/Medicaid coverage including RX\" (BENE_DUAL_STUS_CD = 01, 02, 04, or 08) for the 12 month period used for the preliminary assignment period;",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

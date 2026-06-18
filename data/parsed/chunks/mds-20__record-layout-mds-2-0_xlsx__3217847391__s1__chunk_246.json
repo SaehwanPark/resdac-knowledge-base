@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_246",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= No, 1 = Yes, \"-\" = Unknown.\n402 L1C L1C_LOST_TEETH (L1C) Some/All Natural Teeth Lost CHAR 1 Oral/dental status: oral status and disease prevention - some/all natural teeth lost. 0 = No, 1 = Yes, \"-\" = Unknown.\n403 L1D L1D_LOOSE_TEETH (L1D) Broken/Loose/Carious Teeth CHAR 1 Oral/dental status: oral status and disease prevention - broken, loose, or carious teeth. 0 = No, 1 = Yes, \"-\" = Unknown.\n404 L1E L1E_INFLAMED_GUM (L1E) Inflamed/Swollen/Bleeding Gums CHAR 1 Oral/dental status: oral status",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

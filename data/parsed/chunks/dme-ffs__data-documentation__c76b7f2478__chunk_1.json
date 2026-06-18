@@ -1,0 +1,8 @@
+{
+  "chunk_id": "dme-ffs__data-documentation__c76b7f2478__chunk_1",
+  "source_document": "data/raw/html/documentation_page/c76b7f2478f9acd0d6b5bd4f4b0d553884a4a16d.html",
+  "page": null,
+  "text": "to locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| BENE_ID | Encrypted CCW Beneficiary ID | \n| CLM_ID | Claim ID | \n| NCH_CLM_TYPE_CD | NCH Claim Type Code | \n| DEMO_ID_SQNC_NUM | Demonstration sequence number | \n| DEMO_ID_NUM | Demonstration number | \n| DEMO_INFO_TXT | Demo information text |",
+  "dataset": "dme-ffs",
+  "url": "https://resdac.org/cms-data/files/dme-ffs/data-documentation"
+}

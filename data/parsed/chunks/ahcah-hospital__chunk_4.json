@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-hospital__chunk_4",
+  "source_document": "data/raw/html/dataset_page/1bc1428ed5b3cd286fd5e01f6f6ec6c9bfcd5ca4.html",
+  "page": null,
+  "text": "months.\nThere have been two AHCAH releases to date:\n- First release data submission period: November 2020 - March 2023 (29 months)\n- Second release data submission period: April 2023 - September 2025 (30 months)\nWhat does this file include? (variable highlights)\n- CMS Certification Number (CCN), also known as the Facility Identifier\n- Facility Waiver Participation Tier (based on the level of experience the facility has with providing hospital-at-home services)\n- Facility Waiver Submission",
+  "dataset": "ahcah-hospital",
+  "url": "https://resdac.org/cms-data/files/ahcah-hospital"
+}

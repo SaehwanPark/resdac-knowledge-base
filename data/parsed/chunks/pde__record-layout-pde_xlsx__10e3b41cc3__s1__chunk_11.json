@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "of Part D Event CHAR 2 X X X X X X X X X\nPHARM_ID 3 CCW_PHARM_ID CCW Pharmacy Identifier NUM 12 X X X X X - - - -\nNCPDP_ID 3 NCPDP_ID NCPDP Pharmacy Identifier CHAR 7 - - - - - X X X X\nPRSCRBID 2,4 PRSCRBR_ID Prescriber Identification Number CHAR 35 - - - - - X X X LC\nPRSCQLFR 4 PRSCRBR_ID_QLFYR_CD Prescriber ID Qualifier Code CHAR 2 - - - - - X X X X\nCCW_PRSCRBR_ID 4 CCW_PRSCRBR_ID CCW Prescriber Identifier NUM 12 X X X X X - - - -\nPDE_PRSCRBR_ID_FRMT_CD 4 PDE_PRSCRBR_ID_FRMT_CD PDE Prescriber",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

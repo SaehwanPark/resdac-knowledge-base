@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p51__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 51,
+  "text": "or null/missing (if no Medicaid enrollment) \nCOMMENT: \nCCW calculates this variable as the count of months where MME_TYPE_CD_MM = 1 (Medicaid only \nA/B/D). This is when the T-MSIS DE File ELIGBLTY_GRP_CD_MM IN ('11' '12' '13' '14' '15' '16' '17' '18' \n'19' '20' '21' '22' '23' '24' '25' '26' '37' '38' '39' '40' '41' '42' '43' '44' '45' '46' '47' '48' '49' '50' '51' '52' \n'59' '60' '69'). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

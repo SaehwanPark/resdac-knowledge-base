@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__record-layout-taf-annual-provider_xlsx__179b4ad7fe__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/179b4ad7feb1b102917b101b3b732e857e6b6d85.xlsx",
+  "page": 1,
+  "text": "CCW Key to Link APR Base Record to Related Supplement Records NUM 15 85\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 11 86\nPR_VRSN Provider File Version Representing the Iteration of the File CHAR 2 87\nRFRNC_YR Reference Yr CHAR 4 88\nCCW_LD_DT CCW Load Date DATE 8 89",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-provider.xlsx"
+}

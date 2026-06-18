@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p78__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 78,
+  "text": "2 \nSOURCE: \nNCH \nVALUES: \n61 = Care Improvement Model 1 is used \n62 = Care Improvement Model 2 is used \n63 = Care Improvement Model 3 is used \n64 = Care Improvement Model 4 is used \nNull/missing \nCOMMENT: \nThere are 4 of these Care Improvement Model fields (CLM_CARE_IMPRVMT_MODEL_CD1–\nCLM_CARE_IMPRVMT_MODEL_CD4). \nThis field was new in 2013 and is null/missing for all previous years. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

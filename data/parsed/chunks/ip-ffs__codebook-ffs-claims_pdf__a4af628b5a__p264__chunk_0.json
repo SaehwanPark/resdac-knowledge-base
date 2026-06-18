@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p264__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 264,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n246 \nNCH_BLOOD_PNTS_FRNSHD_QTY \nLABEL: \nNCH Blood Pints Furnished Quantity \nDESCRIPTION: Number of whole pints of blood furnished to the beneficiary, as reported on the carrier claim (non-\nDMERC). \nSHORT NAME: BLDFRNSH \nLONG NAME: NCH_BLOOD_PNTS_FRNSHD_QTY \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nFor institutional claims, this field is capped at 999 by the",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

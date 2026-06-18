@@ -1,0 +1,1180 @@
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: 
+Medicare Oncology Care Model Files 
+MAY 2024 │ VERSION 1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+May 2024 
+K. Schneider 
+Initial release of codebook  
+1.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Oncology Care Model (OCM) 
+research files. Because the files have many variables, the CCW team has included several ways for users to quickly find 
+the information they need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used 
+The CCW team has included hyperlinks throughout the codebook to make it easier for analysts to navigate between the 
+table of contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents takes you to the detailed description for that variable 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description takes you back to the Table of Contents
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:   
+ 
+ 
+Variable Details............................................................................................................................................................. 1 
+AJCC_EDITION .......................................................................................................................................................... 1 
+BENE_ID ................................................................................................................................................................... 2 
+CNCR_TYPE_ASGNED ................................................................................................................................................ 3 
+CNCR_TYPE_RPTD ..................................................................................................................................................... 4 
+CRNT_CLNCL_STUS ................................................................................................................................................... 5 
+CRNT_CLNCL_STUS_DT ............................................................................................................................................. 6 
+DOB 
+ .................................................................................................................................................................... 7 
+DOD 
+ .................................................................................................................................................................... 8 
+EPSD_BGN_DT .......................................................................................................................................................... 9 
+EPSD_END_DT ........................................................................................................................................................ 10 
+ESTROGEN_RECEPTOR ............................................................................................................................................ 11 
+HER2_AMPLIFICATION ............................................................................................................................................ 12 
+HISTOLOGY ............................................................................................................................................................. 13 
+ICD10_CNCR_DGNS_CD_RPTD ................................................................................................................................ 14 
+INITL_DGNS_DT ...................................................................................................................................................... 15 
+METASTASIS ........................................................................................................................................................... 16 
+NODAL_DISEASE ..................................................................................................................................................... 18 
+OCM_PRCTC_ID ...................................................................................................................................................... 20 
+PRFMNC_PRD ......................................................................................................................................................... 21 
+PRMRY_TUMOR...................................................................................................................................................... 22 
+PROGESTERONE_RECEPTOR ................................................................................................................................... 25 
+RPTD_TO_RGSTRY .................................................................................................................................................. 26 
+SEX 
+ .................................................................................................................................................................. 27 
+ 
+ 
+ 
+ 
+ 
+A B C D E 
+F G H 
+I 
+J 
+K 
+L 
+M N O P Q R 
+S 
+T U V W X 
+Y 
+Z 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Medicare Oncology Care Model files. Each 
+entry contains variable details to facilitate understanding and use of the variables. 
+AJCC_EDITION 
+LABEL: 
+AJCC Cancer Staging Edition 
+DESCRIPTION: The edition of the American Joint Committee on Cancer (AJCC) Cancer Staging manual used to 
+describe the patient’s cancer stage. 
+SHORT NAME: AJCC_EDITION 
+LONG NAME: AJCC_EDITION 
+TYPE: 
+CHAR 
+LENGTH:  
+3 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+7th 
+8th 
+Null/missing = OCM participant did not report the staging data or it was invalid (reference details in 
+the RPTD_TO_RGSTRY codebook entry) 
+COMMENT: 
+For any initial diagnosis date (INITL_DGNS_DT) after 1/1/2018, this variable indicates whether the 
+AJCC 7th edition or the AJCC 8th Edition was reported. AJCC 7th Edition is effective for cancer patients 
+diagnosed through 12/31/2017; AJCC 8th Edition is effective for cancer patients diagnosed on or after 
+1/1/2018. To support participants that did not have AJCC 8th Edition staging available, the OCM Data 
+Registry accepted either AJCC 7th Edition or AJCC 8th Edition staging values for cancer patients 
+diagnosed on or after 1/1/2018. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+2 
+BENE_ID 
+LABEL: 
+Encrypted CCW Beneficiary ID 
+DESCRIPTION: The unique CCW identifier for a beneficiary. 
+The CCW assigns a unique beneficiary identification number to each individual who receives Medicare 
+and/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., 
+Medicare claims and enrollment, T-MSIS claims, and MDS assessment data).  
+This number does not change during a beneficiary’s lifetime, and CCW uses each number only once.  
+The BENE_ID is specific to the CCW and is not applicable to any other identification system or data 
+source. 
+SHORT NAME: BENE_ID 
+LONG NAME: BENE_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+15 
+FILE(S):  
+Clinical and staging 
+Current clinical status 
+SOURCE:  
+CCW 
+VALUES:  
+— 
+COMMENT: 
+— 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+3 
+CNCR_TYPE_ASGNED 
+LABEL: 
+OCM-Assigned Cancer Type 
+DESCRIPTION: OCM-assigned cancer type. 
+SHORT NAME: CNCR_TYPE_ASGNED 
+LONG NAME: CNCR_TYPE_ASGNED 
+TYPE: 
+CHAR 
+LENGTH:  
+35 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+CMS Oncology Care Model data 
+VALUES:  
+Acute Leukemia 
+Anal Cancer 
+Bladder Cancer 
+Breast Cancer 
+CNS Tumor 
+Chronic Leukemia 
+Endocrine Tumor 
+Female GU Cancer other than Ovary 
+Gastro/Esophageal Cancer 
+Head and Neck Cancer 
+Kidney Cancer 
+Liver Cancer 
+Lung Cancer 
+Lymphoma 
+MDS 
+Malignant Melanoma 
+Multiple Myeloma 
+Ovarian Cancer 
+Pancreatic Cancer 
+Prostate Cancer 
+Small Intestine/Colorectal Cancer 
+ 
+COMMENT: 
+OCM classified each episode by cancer type (e.g., prostate, lymphoma, breast). Cancer type was 
+defined using the plurality of cancer diagnoses on qualifying evaluation and management (E&M) 
+provider visits in the carrier file that occurred during the episode. The cancer type is used in 
+categorizing episodes for reporting, monitoring, and risk adjustment purposes.  
+ 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+4 
+CNCR_TYPE_RPTD 
+LABEL: 
+Participant-Reported Cancer Type 
+DESCRIPTION: Participant-reported cancer type. 
+SHORT NAME: CNCR_TYPE_RPTD 
+LONG NAME: CNCR_TYPE_RPTD 
+TYPE: 
+CHAR 
+LENGTH:  
+35 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+Acute Leukemia 
+Anal Cancer 
+Bladder Cancer 
+Breast Cancer 
+CNS Tumor 
+Chronic Leukemia 
+Endocrine Tumor 
+Female GU Cancer other than Ovary 
+Gastro/Esophageal Cancer 
+Head and Neck Cancer 
+Kidney Cancer 
+Liver Cancer 
+Lung Cancer 
+Lymphoma 
+MDS 
+Malignant Melanoma 
+Multiple Myeloma 
+Ovarian Cancer 
+Pancreatic Cancer 
+Prostate Cancer 
+Small Intestine/Colorectal Cancer 
+Null/missing = cancer type was not reported by OCM participant, or it was invalid (reference details in 
+the RPTD_TO_RGSTRY codebook entry) 
+ 
+COMMENT: 
+— 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+5 
+CRNT_CLNCL_STUS 
+LABEL: 
+Current Clinical Status 
+DESCRIPTION: Current clinical status. 
+SHORT NAME: CRNT_CLNCL_STUS 
+LONG NAME: CRNT_CLNCL_STUS 
+TYPE: 
+CHAR 
+LENGTH:  
+45 
+FILE(S):  
+Current clinical status 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+ 
+Value 
+Description 
+Deceased 
+Patient is deceased 
+Initial diagnosis 
+Treatment of the disease has started, and the disease has not been re-evaluated since 
+treatment began 
+Local or regional 
+recurrence/Relapse 
+Recurrence is the local or regional return of a solid tumor cancer after a clinically 
+disease-free interval. Relapse is the return of a leukemia, lymphoma, or other 
+hematopoietic malignancy that was not previously clinically apparent or symptomatic 
+Metastasis  
+Evidence of cancer in a site other than the primary tumor site that was not present at 
+initial diagnosis or initial relapse 
+No evidence of 
+disease/Remission 
+When radiological examinations or complete surgical resection of tumor with negative 
+margins show no evidence of cancer in a patient who is being or has been treated for 
+cancer (including a previous recurrence/relapse); or there is no morphological 
+evidence of leukemia 
+Progressive disease  
+Cancer continues to grow or spread since initial diagnosis. 
+Recurrent or 
+progressive disease 
+Defined as "Local or Regional Recurrence/Relapse" or "Progressive Disease" as above. 
+This status was only available to report prior to July 1, 2017, and will only appear for 
+patients whose episodes had not yet begun 
+Responding 
+Cancer is decreasing in extent or severity in response to treatment 
+Stable disease 
+Cancer is neither decreasing nor increasing in extent or severity 
+Stable, Responding, 
+or No Evidence of 
+Disease  
+Defined as "Stable Disease," "Responding," or "No Evidence of Disease/Remission" as 
+above. This status was only available to report prior to July 1, 2017, and will only 
+appear for patients whose episodes had not yet begun. 
+ 
+COMMENT: 
+Participants were required to enter current clinical status at least one time during each 6-month 
+episode, and were expected to update the current clinical status if changes occurred. When there was 
+documentation to support a current clinical status value of “Metastasis” during the episode, practices 
+were instructed to prioritize reporting this value over other current clinical statuses that were 
+documented during the episode, if they only going to report one status during the episode. Current 
+clinical status may not have been reported for every episode. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+6 
+CRNT_CLNCL_STUS_DT 
+LABEL: 
+Current Clinical Status Date 
+DESCRIPTION: The date the current clinical status (variable called CRNT_CLNCL_STUS) was reported. 
+SHORT NAME: CRNT_CLNCL_STUS_DT 
+LONG NAME: CRNT_CLNCL_STUS_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Current Clinical Status 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+Ex — 08/22/2019 
+COMMENT: 
+Formatted as MMDDYY10 in SAS.  
+Current clinical status may not have been entered for every episode. Current clinical status date is not 
+available for episodes occurring in performance period 3 (PRFMNC_PRD =3). 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+7 
+DOB 
+LABEL: 
+Beneficiary Date of Birth 
+DESCRIPTION: Beneficiary date of birth. 
+SHORT NAME: DOB 
+LONG NAME: DOB 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Clinical and staging 
+ 
+SOURCE:  
+CCW Master Beneficiary Summary File (MBSF) 
+VALUES:  
+Ex — 10/12/1945 
+COMMENT: 
+The CMS Oncology Care Model team obtained this information from the MBSF. 
+Formatted as MMDDYY10 in SAS 
+ 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+8 
+DOD 
+LABEL: 
+Beneficiary Date of Death 
+DESCRIPTION: Beneficiary date of death. 
+SHORT NAME: DOD 
+LONG NAME: DOD 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+CCW Master Beneficiary Summary File (MBSF) 
+VALUES:  
+Ex — 10/12/2020 
+COMMENT: 
+The CMS Oncology Care Model team obtained this information from the MBSF. 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+9 
+EPSD_BGN_DT 
+LABEL: 
+Episode Beginning Date 
+DESCRIPTION: Episode beginning date. 
+SHORT NAME: EPSD_BGN_DT 
+LONG NAME: EPSD_BGN_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+CMS Oncology Care Model data 
+VALUES:  
+Ex — 10/12/2018 
+ 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+In OCM, episodes were initiated on the date of service for an initial Part B chemotherapy drug claim 
+with a corresponding cancer diagnosis on the claim, or on the fill date for an initial Part D 
+chemotherapy drug claim with a corresponding Part B claim for cancer on the date of, or in the 59 
+days preceding, the drug claim. Episodes continued for six months after the triggering chemotherapy 
+event, as long as the beneficiary met eligibility requirements for all six months; the ending date of the 
+episode is the variable EPSD_END_DT. Beneficiaries who continued to receive chemotherapy after 
+completing the six-month episode initiated a new episode. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+10 
+EPSD_END_DT 
+LABEL: 
+Episode Ending Date 
+DESCRIPTION: Episode ending date. 
+SHORT NAME: EPSD_END_DT 
+LONG NAME: EPSD_END_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+CMS Oncology Care Model data 
+VALUES:  
+Ex — 04/12/2019  
+ 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+In OCM, episodes were initiated on the date of service for an initial Part B chemotherapy drug claim 
+with a corresponding cancer diagnosis on the claim, or on the fill date for an initial Part D 
+chemotherapy drug claim with a corresponding Part B claim for cancer on the date of, or in the 59 
+days preceding, the drug claim (variable called EPSD_BGN_DT). Episodes continued for six months 
+after the triggering chemotherapy event, as long as the beneficiary met eligibility requirements for all 
+six months; the ending date of the episode is this variable (EPSD_END_DT). Beneficiaries who 
+continued to receive chemotherapy after completing the six-month episode initiated a new episode. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+11 
+ESTROGEN_RECEPTOR 
+LABEL: 
+Breast Cancer Estrogen Receptor 
+DESCRIPTION: Breast cancer estrogen receptor. 
+SHORT NAME: ESTROGEN_RECEPTOR 
+LONG NAME: ESTROGEN_RECEPTOR 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+None Selected  
+Not Tested  
+Negative  
+Positive 
+Null/missing = n/a (not breast cancer); or not reported by OCM participant (reference details in the 
+RPTD_TO_RGSTRY codebook entry)  
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. Estrogen Receptor (ER) is routinely tested for breast cancer and is necessary for staging and 
+treatment decisions. This variable is only populated for episodes with breast cancer. 
+ 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+12 
+HER2_AMPLIFICATION 
+LABEL: 
+HER2 Amplification 
+DESCRIPTION: HER2 amplification. 
+SHORT NAME: HER2_AMPLIFICATION 
+LONG NAME: HER2_AMPLIFICATION 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+None Selected  
+Not Tested  
+Equivocal  
+Negative  
+Positive 
+Null/missing = n/a (not breast gastro/esophageal cancer); or not reported by OCM participant 
+(reference details in the RPTD_TO_RGSTRY codebook entry)  
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. HER2 Amplification is routinely tested for breast cancer and gastro/esophageal cancer. It is 
+necessary for breast cancer staging and helps determine treatment decisions. This variable is only 
+populated for episodes with breast cancer or gastro/esophageal cancer. 
+ 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+13 
+HISTOLOGY 
+LABEL: 
+Histology 
+DESCRIPTION: Histology. 
+SHORT NAME: HISTOLOGY 
+LONG NAME: HISTOLOGY 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+Adenocarcinoma 
+Adenocarcinoma, NOS 
+Carcinoma, NOS 
+Inflammatory  
+NSCLC - Adenocarcinoma 
+NSCLC - Large Cell 
+NSCLC - Squamous Cell 
+Non-small cell carcinoma 
+None Selected 
+Other 
+Small Cell Lung Cancer 
+Small cell carcinoma, NOS 
+Squamous cell carcinoma 
+Squamous cell carcinoma, NOS 
+Null/missing = n/a (not applicable for the type of cancer reported); or not reported by OCM 
+participant (reference details in the RPTD_TO_RGSTRY codebook entry)  
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. This variable is only populated for episodes with breast cancer, some types of 
+gastro/esophageal cancer (ICD10 diagnosis codes C15.3, C15.4, C15.5, C15.8, C15.9, C16.0), and some 
+types of lung cancer (ICD10 diagnosis codes C34.00, C34.01, C34.02, C34.10, C34.11, C34.12, C34.2, 
+C34.30, C34.31, C34.32, C34.80, C34.81, C34.82, C34.90, C34.91, C34.92, C39.0, and C39.9). 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+14 
+ICD10_CNCR_DGNS_CD_RPTD 
+LABEL: 
+ICD10 Cancer Diagnosis Code Reported by Participant 
+DESCRIPTION: ICD10 cancer diagnosis code reported by participant. The diagnosis code for the cancer type is 
+classified using the International Classification of Diseases, 10th Revision, clinical modification (ICD-10-
+CM). 
+SHORT NAME: ICD10_CNCR_DGNS_CD_RPTD 
+LONG NAME: ICD10_CNCR_DGNS_CD_RPTD 
+TYPE: 
+CHAR 
+LENGTH:  
+7 
+FILE(S):  
+Clinical and Staging 
+Current Clinical Status 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+3- to 7-digit alphanumeric value (without decimals) 
+Ex — C50211 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. 
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+15 
+INITL_DGNS_DT 
+LABEL: 
+Initial Diagnosis Date 
+DESCRIPTION: Initial diagnosis date. 
+SHORT NAME: INITL_DGNS_DT 
+LONG NAME: INITL_DGNS_DT 
+TYPE: 
+DATE 
+LENGTH:  
+8 
+FILE(S):  
+Clinical and staging 
+Current clinical status 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+Ex — 03/29/2015 
+COMMENT: 
+Formatted as MMDDYY10 in SAS 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+16 
+METASTASIS 
+LABEL: 
+Metastasis Staging 
+DESCRIPTION: Metastasis staging. 
+SHORT NAME: METASTASIS 
+LONG NAME: METASTASIS 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+None Selected,  
+M0,  
+M1,  
+M1a,  
+M1a(0),  
+M1a(1),  
+M1b,  
+M1b(0),  
+M1b(1),  
+M1c,  
+M1c(0),  
+M1c(1),  
+M1d,  
+M1d(0),  
+M1d(1),  
+cM0(i+),  
+pM1,  
+pM1a,  
+pM1b,  
+pM1c 
+Null/missing = n/a (not required for cancer type); or not reported by OCM participant (reference 
+details in the RPTD_TO_RGSTRY codebook entry)  
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. The Metastasis (M) category describes the presence of distant metastasis in sites and/or 
+organs outside the local tumor area and regional nodes as defined by cancer site.  
+Metastasis reporting was required for breast cancer, female GU other than ovarian cancer, gastro-
+esophageal cancer, kidney cancer, malignant melanoma, ovarian cancer, pancreatic cancer, and 
+prostate cancer, and for the following cancer types for specific diagnosis codes: 
+ 
+Anal cancer — all diagnoses (except for C21.2 under the AJCC 8th edition) 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+17 
+ 
+Bladder cancer — C65.1, C65.2, C65.9, C66.1, C66.2, C66.9, C67.0, C67.1, C67.2, C67.3, C67.4, 
+C67.5, C67.6, C67.7, C67.8, C67.9, and C68.0 
+ 
+Endocrine tumors — C73, C74.00, C74.01, C74.02, C74.10, C74.11, C74.12, C74.90, C74.91, C74.92, 
+C7A.010, C7A.011, C7A.012, C7A.020, C7A.021, C7A.022, C7A.023, C7A.024, C7A.025, C7A.026, 
+C7A.029, C7A.090, C7A.091 (AJCC 8th edition only), C7A.092, C7A.1, and C7A.8 
+ 
+Head and neck cancer — AJCC 8th edition: all diagnoses EXCEPT C30.1, C33, C69.10, C69.11, 
+C69.12, C69.80, C69.81, C69.82, C69.90, C69.91, and C69.92. AJCC 7th edition: all diagnoses EXCEPT 
+C14.0, C14.2, C14.8, C30.1, C31.8, C31.9, C32.3, C33, C69.10, C69.11, C69.12, C69.90, C69.91, 
+C69.92, and C76.0 
+ 
+Liver cancer — C22.0, C22.1, C22.2, C22.3, C22.4, C22.7, C22.8, C22.9, C23, C24.0, and C24.1 
+ 
+Lung cancer — C34.00, C34.01, C34.02, C34.10, C34.11, C34.12, C34.2, C34.30, C34.31, C34.32, 
+C34.80, C34.81, C34.82, C34.90, C34.91, C34.92, C45.0, C45.7, and C45.9 
+ 
+Lymphoma — AJCC 8th edition only: C84.00, C84.01, C84.02, C84.03, C84.04, C84.05, C84.06, 
+C84.07, C84.08, C84.09, C84.10, C84.11, C84.12, C84.13, C84.14, C84.15, C84.16, C84.17, C84.18, 
+C84.19, C84.A0, C84.A1, C84.A2, C84.A3, C84.A4, C84.A5, C84.A6, C84.A7, C84.A8, C84.A9, C86.3, 
+and C86.6 
+ 
+Small intestine/colorectal cancer — C17.0, C17.1, C17.2, C17.8, C17.9, C18.0, C18.1, C18.2, C18.3, 
+C18.4, C18.5, C18.6, C18.7, C18.8, C18.9, C19, and C20 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+18 
+NODAL_DISEASE 
+LABEL: 
+Nodal Disease Staging 
+DESCRIPTION: Nodal disease staging. 
+SHORT NAME: NODAL_DISEASE 
+LONG NAME: NODAL_DISEASE 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+None Selected,  
+N0,  
+N0(i+),  
+N0a,  
+N0b,  
+N1,  
+N1a,  
+N1b,  
+N1c,  
+N1mi,  
+N2,  
+N2a,  
+N2b,  
+N2c,  
+N2mi,  
+N3,  
+N3a,  
+N3b,  
+N3c,  
+NX,  
+pN0,  
+pN0(i+),  
+pN0(i-),  
+pN0(mol+),  
+pN0(mol-),  
+pN1,  
+pN1a,  
+pN1b,  
+pN1c,  
+pN1mi, 
+pN2,  
+pN2a,  
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+19 
+pN2b,  
+pN2c,  
+pN3,  
+pN3a,  
+pN3b,  
+pN3c,  
+pNX 
+Null/missing = n/a (not required for cancer type); or not reported by OCM participant (reference 
+details in the RPTD_TO_RGSTRY codebook entry) 
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. Nodal Disease (N) category describes the regional lymph node involvement as defined for each 
+cancer site. It may include the absence or presence of cancer in regional nodes and/or the number of 
+positive nodes, size, or involvement.  
+Nodal disease reporting was required for breast cancer, female GU other than ovarian cancer, gastro-
+esophageal cancer, kidney cancer, malignant melanoma, ovarian cancer, pancreatic cancer, and 
+prostate cancer, and for the following cancer types for specific diagnosis codes: 
+ 
+Anal cancer – all diagnoses (except for C21.2 under the AJCC 8th edition) 
+ 
+Bladder cancer – C65.1, C65.2, C65.9, C66.1, C66.2, C66.9, C67.0, C67.1, C67.2, C67.3, C67.4, 
+C67.5, C67.6, C67.7, C67.8, C67.9, and C68.0 
+ 
+Endocrine tumors – C73, C74.00, C74.01, C74.02, C74.10, C74.11, C74.12, C74.90, C74.91, C74.92, 
+C7A.010, C7A.011, C7A.012, C7A.020, C7A.021, C7A.022, C7A.023, C7A.024, C7A.025, C7A.026, 
+C7A.029, C7A.090, C7A.091 (AJCC 8th edition only), C7A.092, C7A.1, and C7A.8 
+ 
+Head and neck cancer – AJCC 8th edition: all diagnoses EXCEPT C30.1, C33, C69.10, C69.11, C69.12, 
+C69.80, C69.81, C69.82, C69.90, C69.91, and C69.92. AJCC 7th edition: all diagnoses EXCEPT C14.0, 
+C14.2, C14.8, C30.1, C31.8, C31.9, C32.3, C33, C69.10, C69.11, C69.12, C69.90, C69.91, C69.92, and 
+C76.0 
+ 
+Liver cancer – C22.0, C22.1, C22.2, C22.3, C22.4, C22.7, C22.8, C22.9, C23, C24.0, and C24.1 
+ 
+Lung cancer – C34.00, C34.01, C34.02, C34.10, C34.11, C34.12, C34.2, C34.30, C34.31, C34.32, 
+C34.80, C34.81, C34.82, C34.90, C34.91, C34.92, C45.0, C45.7, and C45.9 
+ 
+Lymphoma – AJCC 8th edition only: C84.00, C84.01, C84.02, C84.03, C84.04, C84.05, C84.06, 
+C84.07, C84.08, C84.09, C84.10, C84.11, C84.12, C84.13, C84.14, C84.15, C84.16, C84.17, C84.18, 
+C84.19, C84.A0, C84.A1, C84.A2, C84.A3, C84.A4, C84.A5, C84.A6, C84.A7, C84.A8, C84.A9, C86.3, 
+and C86.6 
+ 
+Small intestine/colorectal cancer – C17.0, C17.1, C17.2, C17.8, C17.9, C18.0, C18.1, C18.2, C18.3, 
+C18.4, C18.5, C18.6, C18.7, C18.8, C18.9, C19, and C20 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+20 
+OCM_PRCTC_ID 
+LABEL: 
+OCM-Assigned Practice ID 
+DESCRIPTION: OCM-assigned practice ID 
+SHORT NAME: OCM_PRCTC_ID 
+LONG NAME: OCM_PRCTC_ID 
+TYPE: 
+CHAR 
+LENGTH:  
+7 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+CMS Oncology Care Model data 
+VALUES:  
+Ex — OCM-123 
+ 
+COMMENT: 
+Formatted as OCM-###  
+ 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+21 
+PRFMNC_PRD 
+LABEL: 
+OCM 6 Month Performance Period 
+DESCRIPTION: OCM six-month performance period. Episodes of care were organized by performance periods, which 
+are the six-month periods of time during which a cohort of episodes terminated and was reconciled 
+together. 
+SHORT NAME: PRFMNC_PRD 
+LONG NAME: PRFMNC_PRD 
+TYPE: 
+NUM 
+LENGTH:  
+3 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+3 = Episodes beginning July 2, 2017–January 1, 2018 
+4 = Episodes beginning January 2, 2018–July 1, 2018 
+5 = Episodes beginning July 2, 2018–January 1, 2019 
+6 = Episodes beginning January 2, 2019–July 1, 2019 
+7 = Episodes beginning July 2, 2019–January 1, 2020 
+8 = Episodes beginning January 2, 2020–July 1, 2020 
+9 = Episodes beginning July 2, 2020–January 1, 2021 
+10 = Episodes beginning January 2, 2021–July 1, 2021 
+11 = Episodes beginning July 2, 2021–December 31, 2021  
+ 
+COMMENT: 
+In OCM, episodes are initiated on the date of service for an initial Part B chemotherapy drug claim 
+with a corresponding cancer diagnosis on the claim, or on the fill date for an initial Part D 
+chemotherapy drug claim with a corresponding Part B claim for cancer on the date of, or in the 59 
+days preceding, the drug claim. Episodes continued for six months after the triggering chemotherapy 
+event, as long as the beneficiary met eligibility requirements for all six months. Beneficiaries who 
+continued to receive chemotherapy after completing the six-month episode initiated a new episode. 
+Data reported for the first two OCM performance periods have not been shared because obstacles 
+were encountered that made the data reported questionable in accuracy and reliability. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+22 
+PRMRY_TUMOR 
+LABEL: 
+Primary Tumor Staging 
+DESCRIPTION: Primary tumor staging. 
+SHORT NAME: PRMRY_TUMOR 
+LONG NAME: PRMRY_TUMOR 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+Multiple Primaries,  
+None Selected,  
+T0,  
+T1,  
+T1a,  
+T1a1,  
+T1a2,  
+T1b,  
+T1b1,  
+T1b2,  
+T1c,  
+T1c1,  
+T1c2,  
+T1c3,  
+T1d,  
+T1mi,  
+T2,  
+T2a,  
+T2a1,  
+T2a2,  
+T2b,  
+T2c,  
+T3,  
+T3a,  
+T3b,  
+T3c,  
+T3d,  
+T4,  
+T4a,  
+T4b,  
+T4c,  
+T4d,  
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+23 
+TX,  
+Ta,  
+Tis,  
+Tis (DCIS),  
+Tis (LCIS),  
+Tis (Paget's),  
+Tis (Paget),  
+pT0,  
+pT1,  
+pT1a,  
+pT1b,  
+pT1c,  
+pT1mi,  
+pT2,  
+pT2a,  
+pT2b,  
+pT2c,  
+pT3,  
+pT3a,  
+pT3b,  
+pT4,  
+pT4a,  
+pT4b,  
+pT4c,  
+pT4d,  
+pTX, 
+pTa,  
+pTis,  
+pTis (DCIS), 
+pTis (LCIS),  
+pTis (Paget's),  
+pTis (Paget) 
+Null/missing = n/a (not required for cancer type); or not reported by OCM participant (reference 
+details in the RPTD_TO_RGSTRY codebook entry)  
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. Primary Tumor (T) describes the size and/or the extension of the primary tumor specifically 
+defined for each cancer site. Generally, the higher the Primary Tumor category (value), the greater the 
+extent of the disease and generally the worse the prognosis; some exceptions exist.  
+Primary tumor reporting was required for breast cancer, female GU other than ovarian cancer, gastro-
+esophageal cancer, kidney cancer, malignant melanoma, ovarian cancer, pancreatic cancer, and 
+prostate cancer, and for the following cancer types for specific diagnosis codes: 
+ 
+Anal cancer – all diagnoses (except for C21.2 under the AJCC 8th edition) 
+ 
+Bladder cancer – C65.1, C65.2, C65.9, C66.1, C66.2, C66.9, C67.0, C67.1, C67.2, C67.3, C67.4, 
+C67.5, C67.6, C67.7, C67.8, C67.9, and C68.0 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+24 
+ 
+Endocrine tumors – C73, C74.00, C74.01, C74.02, C74.10, C74.11, C74.12, C74.90, C74.91, C74.92, 
+C7A.010, C7A.011, C7A.012, C7A.020, C7A.021, C7A.022, C7A.023, C7A.024, C7A.025, C7A.026, 
+C7A.029, C7A.090, C7A.091 (AJCC 8th edition only), C7A.092, C7A.1, and C7A.8 
+ 
+Head and neck cancer – AJCC 8th edition: all diagnoses EXCEPT C30.1, C33, C69.10, C69.11, C69.12, 
+C69.80, C69.81, C69.82, C69.90, C69.91, and C69.92. AJCC 7th edition: all diagnoses EXCEPT C14.0, 
+C14.2, C14.8, C30.1, C31.8, C31.9, C32.3, C33, C69.10, C69.11, C69.12, C69.90, C69.91, C69.92, and 
+C76.0 
+ 
+Liver cancer – C22.0, C22.1, C22.2, C22.3, C22.4, C22.7, C22.8, C22.9, C23, C24.0, and C24.1 
+ 
+Lung cancer – C34.00, C34.01, C34.02, C34.10, C34.11, C34.12, C34.2, C34.30, C34.31, C34.32, 
+C34.80, C34.81, C34.82, C34.90, C34.91, C34.92, C45.0, C45.7, and C45.9 
+ 
+Lymphoma – AJCC 8th edition only: C84.00, C84.01, C84.02, C84.03, C84.04, C84.05, C84.06, 
+C84.07, C84.08, C84.09, C84.10, C84.11, C84.12, C84.13, C84.14, C84.15, C84.16, C84.17, C84.18, 
+C84.19, C84.A0, C84.A1, C84.A2, C84.A3, C84.A4, C84.A5, C84.A6, C84.A7, C84.A8, C84.A9, C86.3, 
+and C86.6 
+ 
+Small intestine/Colorectal cancer – C17.0, C17.1, C17.2, C17.8, C17.9, C18.0, C18.1, C18.2, C18.3, 
+C18.4, C18.5, C18.6, C18.7, C18.8, C18.9, C19, and C20 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+25 
+PROGESTERONE_RECEPTOR 
+LABEL: 
+Breast Cancer Progesterone Receptor 
+DESCRIPTION: Breast cancer progesterone receptor. 
+SHORT NAME: PROGESTERONE_RECEPTOR 
+LONG NAME: PROGESTERONE_RECEPTOR 
+TYPE: 
+CHAR 
+LENGTH:  
+30 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+None Selected  
+Not Tested  
+Negative  
+Positive 
+Null/missing = n/a (not breast cancer); or not reported by OCM participant (reference details in the 
+RPTD_TO_RGSTRY codebook entry)  
+ 
+COMMENT: 
+Practices were required to report clinical and staging data associated with each beneficiary’s assigned 
+cancer. Progesterone Receptor (PR) is routinely tested for breast cancer and is necessary for staging 
+and treatment decisions. This variable is only populated for episodes with breast cancer. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+26 
+RPTD_TO_RGSTRY 
+LABEL: 
+Participant Reported Episode to OCM Registry 
+DESCRIPTION: Indicates whether the OCM participant reported data on this episode to the OCM registry. 
+SHORT NAME: RPTD_TO_RGSTRY 
+LONG NAME: RPTD_TO_RGSTRY 
+TYPE: 
+NUM 
+LENGTH:  
+3 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+Oncology Care Model Data Registry 
+VALUES:  
+0 = No 
+1 = Yes  
+ 
+COMMENT: 
+OCM participants submitted staging and clinical data to the OCM Data Registry (OCMR), a web-based 
+data submission and collection tool, for episodes that were attributed to their practice. 
+ 
+ 
+Beneficiaries not reported to the OCMR (RPTD_TO_RGSTRY=0) have blank values for the following 
+variables in the Clinical and Staging file: AJCC_EDITION, CNCR_TYPE_RPTD, ESTROGEN_RECEPTOR, 
+HER2_AMPLIFICATION, HISTOLOGY, ICD10_CNCR_DGNS_CD_RPTD, INITL_DGNS_DT, METASTASIS, 
+NODAL_DISEASE, PRMRY_TUMOR, and PROGESTERONE_RECEPTOR. Such beneficiaries will also not 
+have records in the current clinical status file. 
+ 
+ 
+A second group of beneficiaries also has blank values for the variables listed above, those where 
+RPTD_TO_RGSTRY = 1 but whose reported values were determined to be invalid for one of the 
+following reasons:  
+1. Participant-reported cancer type (CNCR_TYPE_RPTD) not equal to OCM-assigned cancer type 
+(CNCR_TYPE_ASGNED) 
+2. Practice reporting the data was not the same as the practice to which the beneficiary’s 
+episode was attributed 
+3. Not all information was completely reported, or, 
+4. Multiple records with conflicting values for the primary tumor, nodal disease, and/or 
+metastasis elements were reported (and it was not known which were correct). 
+In the first five performance periods, if a practice did not report to the OCMR, they were ineligible to 
+be considered for a performance-based payment (reporting was required for at least 75% of 
+episodes). For the 6th through 11th performance periods, practices were permitted to opt out of 
+reporting due to external burdens associated with the COVID19 PHE, and were still eligible to receive 
+performance-based payments. 
+^ Back to TOC ^ 
+
+
+  
+Chronic Conditions Warehouse Virtual Research Data Center 
+CODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 
+27 
+SEX 
+LABEL: 
+Beneficiary Sex 
+DESCRIPTION: Beneficiary sex. 
+SHORT NAME: SEX 
+LONG NAME: SEX 
+TYPE: 
+NUM 
+LENGTH:  
+3 
+FILE(S):  
+Clinical and staging 
+SOURCE:  
+CCW Master Beneficiary Summary File (MBSF) 
+VALUES:  
+1 = Male 
+2 = Female 
+ 
+COMMENT: 
+The CMS Oncology Care Model team obtained this information from the MBSF. 
+ 
+^ Back to TOC ^

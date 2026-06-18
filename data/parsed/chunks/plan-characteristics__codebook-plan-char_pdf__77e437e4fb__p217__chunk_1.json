@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p217__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 217,
+  "text": "Premiums (variables called \nPLAN_BASIC_PREMIUM_NET_REBATE and PLAN_SUPP_PREMIUM_NET_REBATE). This amount is net \nof any Part A/B rebates applied to \"buy down\" the drug premium for \nMedicare Advantage plans; for some plans the total premium may be lower than the sum of the basic \nand supplemental premiums due to negative basic or supplemental premiums. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThe CCW constructs the plan characteristics file from information",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

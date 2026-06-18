@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_70",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "03 = 150 feet\n86 _36A DSTNC_WC_ADMSN_CD (36a) Distance Traveled in Wheelchair: Admission CHAR 2 A code indicating the distance the patient traveled in a wheelchair at admission. 00 = Activity does not occur, 01 = Less than 50 feet, 02 = 50 to 149 feet, 03 = 150 feet\n87 _36D DSTNC_WC_DSCHRG_CD (36d) Distance Traveled in Wheelchair: Discharge CHAR 2 A code indicating the distance the patient traveled in a wheelchair at discharge. 00 = Activity does not occur, 01 = Less than 50 feet, 02 = 50 to",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

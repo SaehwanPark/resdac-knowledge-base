@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s8__chunk_0",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 8,
+  "text": "Revision date Tab Description\n45992 DE Base\nDE Disability & Need (DSB) Added FPL_PCT.\nAdded LCKIN_TOS_CD_1, LCKIN_TOS_CD_2 and LCKIN_TOS_CD_3.\n44835 DE Base Added 13 variables: ELGBL_AFTR_EOY_IND and the monthly ELGBLTY_CHG_RSN_CD_01-12\n44440 DE Managed Care Enrollment Added two new summary fields: LTSS_PIHP_MOS and OTH_PLAN_MOS\n44440 All files Adjusted SAS label for SUBMTG_STATE_CD to reflect expansion of this field to state entity code",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

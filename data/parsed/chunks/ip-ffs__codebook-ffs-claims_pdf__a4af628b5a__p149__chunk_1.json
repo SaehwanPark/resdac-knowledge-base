@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p149__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 149,
+  "text": "code 1 thru 6, and 9: \n1 = Inpatient \n2 = Inpatient or home health (covered \non Part B) \n3 = Outpatient (or HHA — covered on \nPart A) \n4 = Other (Part B) — (includes HHA \nmedical and other health services, \ne.g., SNF osteoporosis injectable \ndrugs) \n5 = Intermediate care — level I \n6 = Intermediate care — level II \n7 = Subacute inpatient (revenue code 019X \nrequired) (formerly Intermediate care \n— level III) \n8 = Swing bed \n\nFor facility type code 7 (clinics): \n1 = Rural Health Clinic (RHC) \n2",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

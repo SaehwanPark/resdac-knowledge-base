@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_172",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = Limitation on one side, 2 = Limitation on both sides, \"-\" = Unknown.\n241 G4FB G4FB_OTH_MOVE (G4FB) Other Limitation of Voluntary Movement CHAR 1 Physical functioning and structural problems: functional limitation in range of motion in last 7 days - other limitations or loss - voluntary movement. 0 = No Loss, 1 = Partial Loss, 2 = Full Loss, \"-\" = Unknown.\n242 G5A G5A_CANE_CRUTCH (G5A) Cane/Walker/Crutch CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_529",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "1 This column documents whether, at the time of discharge, the patient was able to recall the word blue from the previous repetition of words question. 2 = Yes, no cue required \n1 = Yes, after cueing (\"a color\") \n0 = No - could not recall \n- = Not Assessed/No Information \n^ = Blank\n466 RCLL_3RD_WORD_DSCHRG_CD RCLL_3RD_WORD_DSCHRG_CD BIMS - Recalls Bed (Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was able to recall the word bed from the previous repetition",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p29__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 29,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n20 \nCCW_LD_DT \nLABEL: \nCCW Load Date \nDESCRIPTION: The date source file was loaded to the CCW. \nSHORT NAME: CCW_LD_DT \nLONG NAME: CCW_LD_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nAPR base \nSOURCE: \nCCW (derived) \nVALUES: \nDate (numeric, system dependent) e.g., 31DEC2015 \nCOMMENT: \nStates may resubmit T-MSIS data to CMS. This date indicates when the TAF was obtained by CCW.",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

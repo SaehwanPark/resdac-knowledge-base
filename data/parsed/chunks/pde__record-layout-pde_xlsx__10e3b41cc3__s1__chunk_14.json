@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__record-layout-pde_xlsx__10e3b41cc3__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/10e3b41cc377b7165469269d45f85ae89f9baed4.xlsx",
+  "page": 1,
+  "text": "X\nMDCR_RX_PYMT_PLAN_IND MDCR_RX_PYMT_PLAN_IND Medicare Prescription Payment Plan (MPPP) Indicator CHAR 1 - - - - - - - - X\nSLCTD_DRUG_SBSDY_AMT SLCTD_DRUG_SBSDY_AMT Selected Drug Subsidy Amount at Point of Sale NUM 13 - - - - - - - - X\nRPTD_MFTR_DSCNT_AMT RPTD_MFTR_DSCNT_AMT Reported Manufacturer Discount Amount at Point of Sale NUM 13 - - - - - - - - X\nSMALL_MFTR_DSCNT_PCT SMALL_MFTR_DSCNT_PCT Applicable Discount Percentage for Specified Small Manufacturer Drugs NUM 2 - - - - - - - -",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-pde.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_263",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "M6A M6A_FOOT_PROB (M6A) Resident Has 1 or More Foot Problems CHAR 1 Skin condition: foot problems and care in last 7 days - resident has one or more goot problems. 0 = No, 1 = Yes, \"-\" = Unknown.\n433 M6B M6B_INFECT_FOOT (M6B) Infection of Foot CHAR 1 Skin condition: foot problems and care in last 7 days - infection of foot - e.g., cellulitis, etc. 0 = No, 1 = Yes, \"-\" = Unknown.\n434 M6C M6C_LESIONS_FOOT (M6C) Open Lesions on Foot CHAR 1 Skin condition: foot problems and care in last 7 days -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

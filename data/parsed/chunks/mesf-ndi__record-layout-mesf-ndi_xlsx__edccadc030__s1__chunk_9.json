@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "Lists for Tabulating Mortality Statistics.\" see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf\nICD_CODE_130 130 ICD-10 Cause of Death Recodes CHAR 3 130 ICD-10 Cause of Death Recodes (available for 2007 forward). The list reflects 130 selected causes of infant death. Refer to the CDC's \"ICD-10 Cause-of-Death Lists for Tabulating Mortality Statistics.\" see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf\nENTITY_COND_1 (through ENTITY_COND_20) NDI",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

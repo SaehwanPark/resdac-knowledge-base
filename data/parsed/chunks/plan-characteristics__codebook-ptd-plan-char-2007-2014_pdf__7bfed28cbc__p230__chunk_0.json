@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p230__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 230,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n217 \nORGANIZATION_TYPE \nLABEL: \nPart D Organization Type \nDESCRIPTION: This variable is the type of organization sponsoring the Part D plan. \nSHORT NAME: — \nLONG NAME: ORGANIZATION_TYPE \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n01 = Local coordinated care plan (CCP) \n\n03 = Religious Fraternal Benefit (RFB) — private fee-for-service (PFFS) plan \n\n04 = PFFS plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

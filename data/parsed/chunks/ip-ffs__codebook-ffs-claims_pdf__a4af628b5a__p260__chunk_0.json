@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p260__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 260,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n242 \nNCH_BENE_MDCR_BNFTS_EXHTD_DT_I \nLABEL: \nNCH Beneficiary Medicare Benefits Exhausted Date \nDESCRIPTION: The last date for which the beneficiary has Medicare coverage. \nThis is completed only where benefits were exhausted before the date of discharge and during the \nbilling period covered by this institutional claim. \n SHORT NAME: EXHST_DT \n LONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

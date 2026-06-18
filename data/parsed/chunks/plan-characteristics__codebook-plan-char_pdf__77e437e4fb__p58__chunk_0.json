@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p58__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 58,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n44 \n\nCONTRACT_NAME \nLABEL: \nContract Name \nDESCRIPTION: This variable is the name of the plan sponsor's contract with CMS. \nTYPE: \nCHAR \nLENGTH: \n150 \nSOURCE: \nCMS (HPMS files) \nVALUES: \ntext description \nCOMMENT: \nThis is the name associated with the contract number (CONTRACT_ID). \nThe CCW constructs the plan characteristics file from information submitted by plan sponsors",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

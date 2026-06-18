@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-provider-list__chunk_0",
+  "source_document": "data/raw/html/dataset_page/427d5b97369f13b314b6abbbc651690e609ec985.html",
+  "page": null,
+  "text": "The Provider List file contains the list of all NPIs enrolled in the model, including the activation and deactivation dates.\nWhat does this file include? (variable highlights)\n- NPI of the Participating Provider\n- Provider First and Last Name\n- Model-Assigned Practice ID the provider is associated with\n- Practice Name\n- Practice TIN\nA record represents a provider (NPI) who is enrolled in the registry.\nThe Model-Assigned Practice ID can be used to link all Million Hearts® data files for",
+  "dataset": "million-hearts-model-provider-list",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-provider-list?page=1"
+}

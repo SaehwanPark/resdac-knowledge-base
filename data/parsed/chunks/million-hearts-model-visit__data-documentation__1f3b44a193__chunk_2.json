@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-visit__data-documentation__1f3b44a193__chunk_2",
+  "source_document": "data/raw/html/documentation_page/1f3b44a193ee97cae4f968a27927d3d117f6924b.html",
+  "page": null,
+  "text": "| \n| VISIT_DATE | Patient Visit Date | \n| FOLLOWUP_ATTESTATION | Practitioner's Attestation to Follow-up | \n| ACCURACY_ATTESTATION | Practitioner's Accuracy of Attestation | \n| RISK_SCORE | Calculated ASCVD Risk Score | \n| BASELINE_SCORE | Patient's Baseline ASCVD Score | \n| BASELINE_GROUP | Patient's Baseline Group (Low, Medium, High) | \n| BASELINE_DATE | Patient's Baseline Date | \n| INSERT_DATE | Date the Record was Created | \n| LAST_MODIFIED_DATE | Date the Patient Record was Modified |",
+  "dataset": "million-hearts-model-visit",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-visit/data-documentation"
+}

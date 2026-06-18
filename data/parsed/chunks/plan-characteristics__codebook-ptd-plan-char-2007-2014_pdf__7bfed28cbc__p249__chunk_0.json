@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p249__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 249,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n236 \nPLAN_ID_08 (previous year) \nLABEL: \nPart D Plan Benefit Package Identifier for Previous Year \nDESCRIPTION: This variable is the unique plan benefit package (PBP) number for the Part D plan sponsor's contract. \nCMS assigns an identifier to each PBP within a contract that a Part D plan sponsor has with CMS. This \nwas the Plan ID for the plan in 2008. It may or may not be the same",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-30-cc__codebook-mbsf-chronic_pdf__0f9abc3685__p48__chunk_0",
+  "source_document": "data/raw/assets/pdf/0f9abc36852dae6ab7448d07437b996a225a6692.pdf",
+  "page": 48,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MBSF 30 CCW Chronic Conditions (CHRONIC) File │ March 2022 │ V 1.0 \n42 \nHIP_FRACTURE_EVER \nLABEL: \nDate that beneficiary first met claims criteria for the hip/pelvic fracture indicator \nDESCRIPTION: This variable shows the date when the beneficiary first met the criteria for the Chronic Conditions \nWarehouse (CCW) hip/pelvic fracture indicator. The variable will be blank for beneficiaries that have \nnever had the condition. \nSHORT NAME: — \nLONG NAME:",
+  "dataset": "mbsf-30-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-chronic.pdf"
+}

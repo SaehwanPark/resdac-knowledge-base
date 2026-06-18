@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_474",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "or not the patient was able to swallow regular food during the admission time period. CHAR 1 The data in this column indicates whether or not the patient was able to swallow regular food during the admission time period. 0 = No\n1 = Yes\n395 K0110B_SWLNG_MDFYD_FOOD_SW K0110B_SWLNG_MDFYD_FOOD_SW K0110B Swallowing Modified Food Code - The data in this column indicates whether or not the patient was able to swallow modified food or liquid consistency and/or needs supervision during eating during the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

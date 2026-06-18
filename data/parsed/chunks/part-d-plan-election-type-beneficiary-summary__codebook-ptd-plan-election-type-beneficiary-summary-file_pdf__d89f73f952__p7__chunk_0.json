@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__codebook-ptd-plan-election-type-beneficiary-summary-file_pdf__d89f73f952__p7__chunk_0",
+  "source_document": "data/raw/assets/pdf/d89f73f9524b703a2cac0a3ae5eee514c245464b.pdf",
+  "page": 7,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Beneficiary Plan Election and Auto-Assignment │ October 2021 │ V 1.3 \n\n2 \nAUDT_SQNC_NUM \nLABEL: \nPart D Enrollment Transaction Audit Sequence Number \nDESCRIPTION: This variable is the Medicare Part D Enrollment Transaction Audit Sequence Number. The number \nindicates whether the occurrence has been audited. It will default to 0 (zero) for valid occurrences and \nwill be incremented by 1 for audited rows with the same key fields. \nTYPE: \nNUM",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-election-type-beneficiary-summary-file.pdf"
+}

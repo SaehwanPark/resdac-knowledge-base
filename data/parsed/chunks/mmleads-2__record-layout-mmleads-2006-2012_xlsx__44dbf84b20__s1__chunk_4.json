@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "- Male\nU - Unknown\nD_DISABILITY_CD Disability Insurance Benefit Entitlement to Medicare Justification code - fromSocial Security Administration (SSA) 1 - Beneficiary is entitled to Medicare coverage due to prior periods of SSA disability entitlement\nA - Beneficiary is entitled to Medicare based upon SSA disability and the 24 month waiting period has been waived\nH - Beneficiary is entitled to Medicare due to health hazard\nNull/missing – no record of SSA disability determination\nD_DISABILITY_AWARD",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

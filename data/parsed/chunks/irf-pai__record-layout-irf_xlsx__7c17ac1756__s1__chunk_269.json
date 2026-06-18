@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_269",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Discharge. If there are no healed pressure ulcers noted at a given stage, enter 0.\n255 HEALED_STG_4_PRSR_ULCRS_NUM HEALED_STG_4_PRSR_ULCRS_NUM M0900D Healed Stage 4 Pressure Ulcers Number CHAR 1 The number of Stage 4 pressure ulcers that were: (a) present on Admission; and (b) have completely closed (resurfaced with epithelium) upon Discharge. If there are no healed pressure ulcers noted at a given stage, enter 0.\n256 PRPHRL_ARTERIAL_IND PRPHRL_ARTERIAL_IND I0900B Peripheral Arterial Code CHAR",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

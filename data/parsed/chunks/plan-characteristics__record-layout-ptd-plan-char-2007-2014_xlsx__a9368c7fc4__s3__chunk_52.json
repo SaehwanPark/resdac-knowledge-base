@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s3__chunk_52",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 3,
+  "text": "- days in 1 month supply NUM 8 X X X X X X X X\nGAP_DAYS_INP_2M Gap In-Network Pharmacy - days in 2 month supply NUM 8 - - - - - - X X\nGAP_DAYS_INP_3M Gap In-Network Pharmacy - days in 3 month supply NUM 8 X X X X X X X X\nGAP_DAYS_INP_OS Gap In-Network Pharmacy - days in other day supply NUM 8 X X X X X X - -\nGAP_DAYS_INPP_1M Gap In-Network Preferred Pharmacy - days in 1 month supply NUM 8 X X X X X X X X\nGAP_DAYS_INPP_2M Gap In-Network Preferred Pharmacy - days in 2 month supply NUM 8 - - - - -",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

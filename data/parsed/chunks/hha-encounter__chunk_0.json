@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hha-encounter__chunk_0",
+  "source_document": "data/raw/html/dataset_page/22e3288d3f760638d04abe30249e6d2f960989ad.html",
+  "page": null,
+  "text": "The Medicare Encounter Home Health Agency file includes Medicare Advantage (MA) plan records for home health agency services.\nThis file includes (variable highlights):\n- Part C Benefit Package and Contract number\n- Diagnosis (ICD diagnosis) codes\n- HCPCS code\n- Revenue center codes, dates, unit counts\n- Organization NPI\n- NPI for line rendering physician\n- Patient discharge status code\n- No payment variables\nSpecial considerations:\n- Many Medicare Advantage Plans offer extra coverage in",
+  "dataset": "hha-encounter",
+  "url": "https://resdac.org/cms-data/files/hha-encounter?page=2"
+}

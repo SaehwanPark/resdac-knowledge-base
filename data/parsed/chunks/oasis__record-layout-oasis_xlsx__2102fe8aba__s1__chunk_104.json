@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_104",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Hopelessness Depressive feelings: hopelessness. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_NONE (M0590) None of the Above Depressive Feelings Depressive feelings: none of the above. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_DEATH (M0590) Recurrent Thoughts of Death Depressive feelings: recurrent thoughts of death. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_SENS_FAIL (M0590) Sense of Failure/Self Reproach Depressive feelings: sense of failure or self reproach. 0 = No, 1 = Yes CHAR 1 x x\nM0590_DP_SUICIDE (M0590)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

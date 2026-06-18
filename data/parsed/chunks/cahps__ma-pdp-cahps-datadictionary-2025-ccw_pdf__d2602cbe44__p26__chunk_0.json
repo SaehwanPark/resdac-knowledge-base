@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p26__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 26,
+  "text": "B. 2025 MCAHPS Format Tables\n26\nsa_fpl_pct: Federal Poverty Level Percent Code\nSAS Format: $FPL\n1: BELOW 100% FPL\n2: 100% OR ABOVE FPL\n9: UNKNOWN\nsa_incarc_sw: Incarceration Flag\nSAS Format: $ID_F\nN: NO\nU: UNKNOWN\nY: YES\nsa_lis: Low Income Subsidy\nSAS Format: $ID_F\nN: NO\nU: UNKNOWN\nY: YES\nsa_mdcd_stus: Sample Members who are Dual Eligible\nSAS Format: $ID_F\nN: NO\nU: UNKNOWN\nY: YES\nsa_mdcr_stus: Reason for Beneﬁciary Entitlement\nSAS Format: $MCR\n0 : MISSING\n10: AGED WITHOUT ESRD\n11: AGED WITH",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

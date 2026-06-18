@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p40__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 40,
+  "text": "Emergency Room \nuse were (0450, 0451, 0452, 0456, or 0459). \nSHORT NAME: — \nLONG NAME: HOP_ER_VISITS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXX \nCOMMENT: \nAdditional ED revenue centers are found in the inpatient data files — if the ED visit resulted in an IP \nadmission at the same facility. \nThere are two variables that contain counts of ER visits in different settings: this variable and the \nInpatient ER (IP_ER_VISITS). \n^ Back to TOC ^",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

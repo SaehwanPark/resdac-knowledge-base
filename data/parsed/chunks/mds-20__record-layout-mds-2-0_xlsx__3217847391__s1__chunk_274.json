@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_274",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "N4F_RELIGIOUS (N4F) Spiritual/Religious Activities CHAR 1 Activity pursuit patterns: general activity preference - spiritual/religious activities. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n455 N4G N4G_TRIPS (N4G) Trips/Shopping CHAR 1 Activity pursuit patterns: general activity preference - trips/shopping. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n456 N4H N4H_WALKING (N4H) Walking/Wheeling Outdoors CHAR 1 Activity pursuit patterns: general activity preference - walking/wheeling outdoors. 0",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

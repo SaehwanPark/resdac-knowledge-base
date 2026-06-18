@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__record-layout-ptd-plan-election-type-beneficiary-summary-file_xlsx__05350eff41__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/05350eff416176cf3b13b42182ffebfeda1500bf.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nMedicare Part D Beneficiary Plan Election File\nVersion 1.2 (April 2018)\nLong SAS NAME Label Type Length\nBENE_ID CCW Beneficiary ID CHAR 15\nREF_YEAR Year of Part D Election Flag NUM 4\nAPLCTN_DT Beneficiary Part D Plan Enrollment Application Date DATE 8\nENRLMT_EFCTV_DT Beneficiary Part D Plan Enrollment Effective Date DATE 8\nDISENRLMT_DT Beneficiary Part D Plan Disenrollment Date DATE 8\nENRLMT_TYPE_CD Part D Enrollment Type Code CHAR",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-election-type-beneficiary-summary-file.xlsx"
+}

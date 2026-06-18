@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p434__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 434,
+  "text": "tier record to a prescription drug event record via contract ID, plan ID, and tier ID. \nSHORT NAME: — \nLONG NAME: TIER_ID \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n01 - 09 \nCOMMENT: \nThe maximum number of tiers varied by year. The largest number of tiers was 9 (in 2007). Starting in \n2011, only up to six tiers are possible. \n\nThe CCW constructs the Plan Characteristics file from information submitted by Part D plan sponsors \nto CMS’s Health Plan Management System (HPMS).",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_84",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Statin Adherence 80% Indicator NUM 3 158 177 219 206 204\nSPD_NMRTR_80PCT_ADHRNC_IND Statin Therapy for Diabetes (SPD) Numerator: Statin Adherence 80% Indicator NUM 3 159 178 220 207 205\nIHU_DNMTR_IND Inpatient Hospital Utilization (IHU) Denominator Indicator NUM 3 160 — — — —\nIHU_IP_TOT_DSCHRG_CNT Inpatient Hospital Utilization (IHU): Observed IP Discharges, Total NUM 3 161 — — — —\nIHU_IP_SRGRY_DSCHRG_CNT Inpatient Hospital Utilization (IHU): Observed IP Discharges, Surgery NUM 3 162 — — —",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

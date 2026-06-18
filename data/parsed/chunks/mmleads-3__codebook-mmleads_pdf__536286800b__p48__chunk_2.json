@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p48__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 48,
+  "text": "is ('01' '04'). \nWe set this variable to null/missing for beneficiaries who are not enrolled in Medicaid during the year. \nThe sum of MDCD_MC_MEDICAL_MOS + MDCD_FFS_MEDICAL_MOS is equal to the total months of \nMedicaid coverage during the year. Note that this does not always equal the number of months \nenrolled in Medicaid due to missing data in the source fields (e.g., eligibility group code associated \nwith the beneficiary state). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

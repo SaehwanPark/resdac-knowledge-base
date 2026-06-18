@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s3__chunk_13",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 3,
+  "text": "8 X X X X X X X X\nPRE_ICL_INP_COPAY_OS Pre-ICL In-Network Pharmacy Copay for other days supply NUM 8 X X X X X X - -\nPRE_ICL_INP_COPAY_DAILY Pre-ICL In-Network Pharmacy Copay for one day supply NUM 8 - - - - - - X X\nPRE_ICL_INPP_COPAY_1M Pre-ICL In-Network Preferred Pharmacy Copay for 1 month Supply NUM 8 X X X X X X X X\nPRE_ICL_INPP_COPAY_2M Pre-ICL In-Network Preferred Pharmacy Copay for 2 month Supply NUM 8 - - - - - - X X\nPRE_ICL_INPP_COPAY_3M Pre-ICL In-Network Preferred Pharmacy Copay for",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

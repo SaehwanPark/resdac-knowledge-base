@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_94",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "-1 = Unknown\n120 M5C M5C_TURN_REPO 34c(M5c)Turning/Repositioning Program CHAR 1 Indicates the patient has received turning/repositioning program to manage skin problems in the past seven days. Includes a continuous, consistent program for changing the patient's position and realigning the body. 0 = Unchecked, 1 = Checked, -1 = Unknown\n121 M5D M5D_INTER_SKN_PROB 34d(M5d)Nutrition/Hydration Intervention CHAR 1 Indicates the patient has received nutrition or hydration intervention to prevent or",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

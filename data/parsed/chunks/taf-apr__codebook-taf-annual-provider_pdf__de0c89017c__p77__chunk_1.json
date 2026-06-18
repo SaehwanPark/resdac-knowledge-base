@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p77__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 77,
+  "text": "Cell Transplantation and Cellular Therapy \nD1 = Medicare Diabetes Preventative Program \nD2 = Restricted Use \nD3 = Medical Genetics and Genomics \nD4 = Undersea and Hyperbaric medicine \nD5 = Opioid Treatment Program \nD6 = Home Infusion Therapy Services \nD7 = Micrographic Dermatologic surgery \nD8 = adult congenital heart disease \n\nIf PRVDR_CLSFCTN_SYS equals “3” (provider type code), then the values are: \n01 = Physician \n02 = Speech language pathologist \n03 = Oral surgery (dentist only) \n04 =",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

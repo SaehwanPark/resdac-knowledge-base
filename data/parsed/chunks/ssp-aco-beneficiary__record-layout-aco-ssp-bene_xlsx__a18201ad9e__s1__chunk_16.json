@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_16",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "ACOs, number of months of Parts A and B eligibility for the 12 month period used for third quarter (from quarterly assignment table in IDR); values from 0-12; will be missing if beneficiary not assigned in quarter (Q3_assign = 0); For Track 3 ACOs, number of months of Parts A and B eligibility for the year-to-date period used for the first quarter (from quarterly assignment table in IDR); values from 0-9; will be missing if beneficiary excluded in quarter (Q3_assign = 0) NUM 2 Tracks 1 and 2 Q2",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

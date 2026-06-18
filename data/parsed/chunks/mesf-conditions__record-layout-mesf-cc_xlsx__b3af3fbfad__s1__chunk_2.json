@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__record-layout-mesf-cc_xlsx__b3af3fbfad__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/b3af3fbfad2f6ed43af3c60fe6a83820ef895ce6.xlsx",
+  "page": 1,
+  "text": "CHAR 1 This field specifies whether enrollee was dually enrolled in Medicare & Medicaid during the year, or enrolled only in Medicaid. CCW attempted to link each person in MAX PS to the Medicare enrollment data. Those with a match are classified as dually enrolled. Values:\nD=person was dually enrolled\nM=person was Medicaid only (not dual)\nACP_COMBINED ADHD and Other Conduct Disorders Indicator - Combined Data NUM 1 This code specifies whether the enrollee met the chronic condition algorithm",
+  "dataset": "mesf-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-cc.xlsx"
+}

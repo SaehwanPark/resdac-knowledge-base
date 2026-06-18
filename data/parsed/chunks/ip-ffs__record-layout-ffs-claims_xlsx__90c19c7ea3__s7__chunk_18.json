@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_18",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "Payment 80% / 100% Code CHAR 1 29\nDED_SW LINE_SERVICE_DEDUCTIBLE Line Service Deductible Indicator Switch CHAR 1 30\nLINE_ICD_DGNS_CD LINE_ICD_DGNS_CD Line Diagnosis Code CHAR 7 31\nLINE_ICD_DGNS_VRSN_CD LINE_ICD_DGNS_VRSN_CD Line Diagnosis Code Diagnosis Version Code (ICD-9 or ICD-10) CHAR 1 32\nDME_PURC LINE_DME_PRCHS_PRICE_AMT Line DME Purchase Price Amount NUM 12 33\nSUPLRNUM PRVDR_NUM DMERC Line Supplier Provider Number CHAR 10 34\nSUP_NPI PRVDR_NPI DMERC Line Item Supplier NPI Number CHAR 12",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

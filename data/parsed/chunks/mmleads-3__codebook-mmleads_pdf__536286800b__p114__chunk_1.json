@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p114__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 114,
+  "text": "equipment (DME). Note that only fee-for-service (FFS) claims are included. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedicare Carrier and Durable Medical Equipment (DME) Claims files (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as the sum of all CLM_PMT_AMT from the Carrier and DME claims. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

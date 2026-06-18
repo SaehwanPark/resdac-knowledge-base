@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_491",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "prior use of a motorized wheelchair and/or scooter. CHAR 1 x x\nGG0110C_PRIOR_MCHNCL_LIFT_IND GG0110C Prior Device: Mechanical Lift Indicates the patient's prior use of a mechanical lift. CHAR 1 x x\nGG0110D_PRIOR_WLKR_IND GG0110D Prior Device: Walker Indicates the patient's prior use of a walker. CHAR 1 x x\nGG0110E_PRIOR_ORTHTCS_IND GG0110E Prior Device: Orthotics/Prosthetics Indicates the patient's prior use of orthotics/prosthetics. CHAR 1 x x\nGG0110Z_PRIOR_NONE_OF_THE_ABV GG0110Z Prior",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 14,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n10 \nMESH_CUI \nLABEL: \nCoverage indicator \nDESCRIPTION: This variable is the medical subject heading (MeSH) concept unique identifier (CUI) \nSHORT NAME: MESH_CUI \nLONG NAME: MESH_CUI \nTYPE: \nCHAR \nLENGTH: \n11 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n7-XXX digit alphanumeric (e.g., D003424, M0023901) \nCOMMENT: \nThis variable is new in 2020 and appears in the Indication-based",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

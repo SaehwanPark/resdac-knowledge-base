@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 17,
+  "text": "total charge amount (rounded to whole dollars) for all accommodations (routine hospital room \nand board charges for general care, coronary care, and/or intensive care units) related to a \nbeneficiary's stay. \nSHORT NAME: ACMDTNS \nLONG NAME: ACMDTNS_TOT_CHRG_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is the sum of MEDPAR private room charge amounts, MEDPAR semiprivate room charge \namount, MEDPAR ward charge amount, MEDPAR intensive care charge",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

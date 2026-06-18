@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p218__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 218,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n204 \nPLAN_TYPE \nLABEL: \nPlan Type \nDESCRIPTION: This variable indicates the type of plan offered by the plan sponsor. \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n01 = Health Maintenance Organization (HMO) \n02 = Health Maintenance Organization Point-of-Service (HMO POS) \n04 = Local Preferred Provider Organization (PPO) \n07 = Medical Savings Account (MSA) \n09",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

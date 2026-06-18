@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_24",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "payment sources - CHAMPUS per diem 0 = No, 1 = Yes, \"-\" = Unknown.\n46 A7F A7F_VA_PER_DIEM (A7F) VA Per Diem CHAR 1 Identification and background information: current payment sources - VA per diem 0 = No, 1 = Yes, \"-\" = Unknown.\n47 A7G A7G_SELF_FAM_PAY (A7G) Self/Family Pay Full Per Diem CHAR 1 Identification and background information: current payment sources - self or family pays for per diem 0 = No, 1 = Yes, \"-\" = Unknown.\n48 A7H A7H_MCAID_MCARE (A7H) Medicaid Resident Liability/Medicare",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nOctober 2025 \nK. Schneider \nClarified value definition of NA for BENEFIT_PHASE field \n1.9 \nJuly 2025 \nK. Schneider \nAdded new fields beginning with 2025 files: DRUG_STUS_IND, \nLIS_MFTR_DSCNT_PCT, LTPAC_DSPNSNG_FREQ_CD, \nMDCR_RX_PYMT_PLAN_IND, QTY_PRSCRBD_NUM, \nRPTD_MFTR_DSCNT_AMT, SLCTD_DRUG_SBSDY_AMT,",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

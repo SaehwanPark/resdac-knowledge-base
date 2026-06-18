@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_73",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Amount | \n\n | 397 | RC_MODEL_REIMBRSMT_AMT | MedPAR Revenue Center Model Reimbursement Amount | \n\n | 398 | VAL_CD_QB_OCM_PYMT_ADJSTMT_AMT | Value Code QB OCM + Payment Adjustment Amount | \n\n | 399 | RC_ALLOGENEIC_STEM_CELL_AMT | Revenue Center Allogeneic Stem Cell Acquisition/Donor Services Amount | \n\n | 400 | ISLET_ADD_ON_PYMT_AMT | Islet Add-On Payment Amount | \n\n | 401 | MDCL_SRGCL_GNRL_AMT | Medical/Surgical General Amount ($) | \n\n | 402 | MDCL_SRGCL_NSTRL_AMT | Medical/Surgical Non-Sterile",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

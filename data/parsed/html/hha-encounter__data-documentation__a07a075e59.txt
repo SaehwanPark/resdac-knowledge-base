@@ -1,0 +1,34 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| ENC_JOIN_KEY | Unique Encounter Join Key | 
+| CLM_TYPE_CD | Claim Type Code | 
+| RLT_COND_CD_SEQ | Claim Related Condition Code Sequence | 
+| CLM_RLT_COND_CD | Claim Related Condition Code (Encounter) | 
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| ENC_JOIN_KEY | Unique Encounter Join Key | 
+| CLM_TYPE_CD | Claim Type Code | 
+| RLT_OCRNC_CD_SEQ | Claim Related Occurrence Code Sequence | 
+| CLM_RLT_OCRNC_CD | Claim Related Occurrence Code (Encounter) | 
+| CLM_RLT_OCRNC_DT | Claim Related Occurrence Date (Encounter) | 
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| ENC_JOIN_KEY | Unique Encounter Join Key | 
+| CLM_TYPE_CD | Claim Type Code | 
+| RLT_SPAN_CD_SEQ | Claim Related Span Code Sequence | 
+| CLM_SPAN_CD | Claim Occurrence Span Code (Encounter) | 
+| CLM_SPAN_FROM_DT | Claim Occurrence Span From Date (Encounter) | 
+| CLM_SPAN_THRU_DT | Claim Occurrence Span Through Date (Encounter) | 
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| ENC_JOIN_KEY | Unique Encounter Join Key | 
+| CLM_TYPE_CD | Claim Type Code | 
+| RLT_VAL_CD_SEQ | Claim Related Value Code Sequence | 
+| CLM_VAL_CD | Claim Value Code (Encounter) |

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_260",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "pathology therapy minutes provided in the first\nweek of stay.\n240 INDVDL_PT_WK_2_NUM INDVDL_PT_WK_2_NUM O0402AA PT: Total Minutes Individual Therapy Week 2 NUM 22 This indicates the total number of individual physical therapy minutes provided in the second week of stay.\n241 CNCRNT_PT_WK_2_NUM CNCRNT_PT_WK_2_NUM O0402AB PT: Total Minutes Concurrent Therapy Week 2 NUM 22 This indicates the total number of concurrent physical therapy minutes provided in the second week of stay.\n242 GRP_PT_WK_2_NUM",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

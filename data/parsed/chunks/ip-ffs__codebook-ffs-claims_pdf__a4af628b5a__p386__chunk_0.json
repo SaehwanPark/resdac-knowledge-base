@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p386__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 386,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n368 \nL = Influenza Vaccine; Pneumococcal \nPneumonia Vaccine; Hepatitis B \nVaccines; Covid-19 Vaccine; \nMonoclonal Antibody Therapy \nProduct \nM = Service not billable to fiscal \nintermediary [now a MAC] (not \npaid under OPPS); For home \nhealth - Medical Review changes \na HIPPS code \nN = Items and Services packaged into \nAPC rates \nP = For Outpatient claims - Partial",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

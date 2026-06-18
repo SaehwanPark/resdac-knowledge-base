@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p217__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 217,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n197 \nPGM_TYPE_CD \nLABEL: \nProgram Type Code \nDESCRIPTION: Code indicating special Medicaid program under which the service was provided. \nSHORT NAME: PGM_TYPE_CD \nLONG NAME: PGM_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nOT header \nRX header \nVALUES: \n00 = No Special Program \n01 = Early and periodic screening and",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

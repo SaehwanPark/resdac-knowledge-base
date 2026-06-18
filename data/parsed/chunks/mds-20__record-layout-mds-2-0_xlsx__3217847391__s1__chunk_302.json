@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_302",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "to address mood/behavior patterns used in last 7 days 0 = No, 1 = Yes, \"-\" = Unknown.\n505 P2E P2E_REORIENT (P2E) Reorientation CHAR 1 Special treatments and procedures: intervention programs for mood, behavior, cognitive loss - reorientation used in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n506 P2F P2F_NONE_ABOVE (P2F) None of Above Intervention Programs CHAR 1 Special treatments and procedures: intervention programs for mood, behavior, cognitive loss - none of above. 0 = No, 1 = Yes, \"-\" =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

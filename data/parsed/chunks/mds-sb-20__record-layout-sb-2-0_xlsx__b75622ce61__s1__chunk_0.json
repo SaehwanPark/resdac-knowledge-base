@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nAssessment — Swing Bed (SB) File\nVersion — April 2025\nVariable sequence Short SAS name Long SAS name Variable label Data type Data length Description Codes\n1 BENE_ID BENE_ID Encrypted 723 Beneficiary ID CHAR 15 A unique CCW beneficiary identifier field that is specific to the Chronic Condition Warehouse. This field is encrypted prior to delivery to researchers. The BENE_ID field is used to cross-reference data for each beneficiary across",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

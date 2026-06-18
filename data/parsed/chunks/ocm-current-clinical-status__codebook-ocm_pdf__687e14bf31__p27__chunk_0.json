@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 27,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n23 \nTX, \nTa, \nTis, \nTis (DCIS), \nTis (LCIS), \nTis (Paget's), \nTis (Paget), \npT0, \npT1, \npT1a, \npT1b, \npT1c, \npT1mi, \npT2, \npT2a, \npT2b, \npT2c, \npT3, \npT3a, \npT3b, \npT4, \npT4a, \npT4b, \npT4c, \npT4d, \npTX, \npTa, \npTis, \npTis (DCIS), \npTis (LCIS), \npTis (Paget's), \npTis (Paget) \nNull/missing = n/a (not required for cancer type); or not reported by OCM participant (reference",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

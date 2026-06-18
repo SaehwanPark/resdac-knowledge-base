@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p186__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 186,
+  "text": "NAME: SR_SPLMTL_PHYS_ACTVTY_2_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nAHC data system \nVALUES: \n0 = 0 minutes \n10 = 10 minutes \n20 = 20 minutes \n30 = 30 minutes \n40 = 40 minutes \n50 = 50 minutes \n60 = 60 minutes \n90 = 90 minutes \n120 = 120 minutes \n150 = 150 minutes \nMissing \nCOMMENT: \nVariables that start with “SR” include information for each screening. \n ^ Back to TOC ^",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

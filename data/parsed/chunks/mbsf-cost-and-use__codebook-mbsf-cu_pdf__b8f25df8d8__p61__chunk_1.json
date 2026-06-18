@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p61__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 61,
+  "text": "of the claims, and a \nsubset of procedures in the Part B carrier data file. \nThese other procedure claim lines are defined as those with a line BETOS code (BETOS_CD) where the \nfirst two digits are “P1,” “P2,” “P3,” “P4,” “P5,” “P6,” “P7,” or “P8.” \nThe total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the \nLINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. \nSHORT NAME: — \nLONG NAME: OPROC_MDCR_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

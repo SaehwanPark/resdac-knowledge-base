@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_71",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "patient traveled in a wheelchair at discharge. 00 = Activity does not occur, 01 = Less than 50 feet, 02 = 50 to 149 feet, 03 = 150 feet\n88 _37A WLK_ADMSN_CD (37a) Walk: Admission CHAR 2 A score indicating the patient's ability to walk on a level surface at admission. 00 = Activity did not occur, 01 = Helper - Complete Dependence/Total Assistance (Subject less than 25%), 02 = Helper - Complete Dependence/Maximal Assistance (Subject 25% or more), 03 = Helper - Modified Dependence/Moderate",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

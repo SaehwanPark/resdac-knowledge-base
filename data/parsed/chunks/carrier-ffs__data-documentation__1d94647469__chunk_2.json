@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_2",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "Provider Secondary Specialty Code 1 | \n\n | RNDRNG_PRVDR_SPCLTY_CD2 | Rendering Provider Secondary Specialty Code 2 | \n\n | RNDRNG_PRVDR_SPCLTY_CD3 | Rendering Provider Secondary Specialty Code 3 | \n\n | RNDRNG_PRVDR_TXNMY_CD | Rendering Provider Taxonomy Code | \n\n | PRTCPTNG_IND_CD | Line Provider Participating Indicator Code | \n\n | CARR_LINE_RDCD_PMT_PHYS_ASTN_C | Carrier Line Reduced Payment Physician Assistant Code | \n\n | LINE_SRVC_CNT | Line Service Count (FFS) | \n\n | LINE_CMS_TYPE_SRVC_CD |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

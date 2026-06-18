@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_698",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Category CHAR 2 Indicates the resident's primary medical condition category that best describes the primary reason for admission. effective 10/01/2018\n749 J2000_PRIOR_SRGRY_IND J2000_PRIOR_SRGRY_IND J2000 Prior Surgry Indicator CHAR 1 Indicates whether the resident had major surgery during the 100 days prior to admission. 0 = No \n1 = Yes\n8 = Unknown effective 10/01/2018\n750 N2001_DRUG_RGMN_RVW_IND N2001_DRUG_RGMN_RVW_IND N2001 Drug Regimen Review Indicator CHAR 1 Indicates a complete drug",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

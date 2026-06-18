@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p88__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 88,
+  "text": "CMS SSA tables \nVALUES: \n0001–9999 (e.g., 2960,) or null/missing \nCOMMENT: \nNote that these are not ICD-10 (or ICD-9) diagnosis codes. Reference the SSA website: \nhttps://secure.ssa.gov/poms.nsf/lnx/0426510015 \nCMS obtains information regarding SSA disability benefits and stores it as part of the Common \nMedicare Environment (CME) database. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

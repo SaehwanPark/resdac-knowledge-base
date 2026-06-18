@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s4__chunk_17",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 4,
+  "text": "Amount NUM 8 36\nLINE_MDCD_ALOWD_AMT Line Medicaid Allowed Amount NUM 8 37\nLINE_MDCD_PD_AMT Line Medicaid Paid Amount NUM 8 38\nLINE_MDCD_FFS_EQUIV_AMT Line Medicaid Fee For Service Equivalent Amount NUM 8 39\nLINE_MDCR_PD_AMT Line Medicare Paid Amount NUM 8 40\nLINE_MDCR_DDCTBL_PD_AMT Line Medicare Deductible Amount NUM 8 41\nLINE_MDCR_COINSRNC_PD_AMT Line Medicare Coinsurance Amount NUM 8 42\nLINE_COPAY_AMT Line Beneficiary Copayment Amount NUM 8 43\nLINE_TP_PD_AMT Line Third Party Liability Paid",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

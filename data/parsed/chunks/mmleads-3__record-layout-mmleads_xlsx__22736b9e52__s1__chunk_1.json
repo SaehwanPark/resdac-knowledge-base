@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "Medicaid Eligibility Type Code Num 8\n5 SAMPLE_GRP Sample Group Indicator - 1% Num 8\n6 BIRTH_DT Date of Birth Date 8\n7 AGE Age (in Years) Num 8\n8 ALIVE_MOS Months Alive Num 8\n9 DEATH_DT Date of Death Date 8\n10 SEX_CD Sex (Biological) - Ltst in Yr Char 1\n11 MDCR_RTI_RACE Medicare - Research Triangle Institute (RTI) Race Code Char 1\n12 MDCD_RACE_ETHNCTY_CD Medicaid - Race and Ethnicity Constructed Code - Ltst in Yr Char 1\n13 MDCR_STATE_CD Medicare - State FIPS Code - Ltst in Yr Char 2\n14",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

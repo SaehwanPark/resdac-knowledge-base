@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_85",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Prescription drug records (IHS) NUM 5 X X X X X X X X X X X\n397 RX_PYMT_AMT_IHS Prescription drug payments (IHS) NUM 12 X X X X X X X X X X X\n398 TOT_REC_CNT_IHS Total records (IHS) NUM 5 X X X X X X X X X X X\n399 TOT_PYMT_AMT_IHS Total payments (IHS) NUM 12 X X X X X X X X X X X\n400 IP_HOSP_REC_HCBCA Inpatient hospital record count - Home and Community-Based Care for Aged (HCBCA) NUM 3 X X X X X X X X X X X\n401 IP_HOSP_PYMT_HCBCA Inpatient hospital payments (HCBCA) NUM 12 X X X X X X X X X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

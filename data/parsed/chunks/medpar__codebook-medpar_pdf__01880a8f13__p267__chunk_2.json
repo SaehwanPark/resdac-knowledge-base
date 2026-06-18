@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p267__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 267,
+  "text": "and beneficiary is still a patient (applicable to SNF stays \nonly) \nWarning indicator 6 ('intermediary cancel indicator' derived from the presence of the values noted \nbelow for intermediary claim action code and intermediary-requested claim cancel reason code on any \nof the claims included in the analysis. \nIf multiple claims contain these values, latest claim is used. If both specified action code and cancel \nreason code are present, cancel reason code takes priority.): \n0 = No cancel action",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

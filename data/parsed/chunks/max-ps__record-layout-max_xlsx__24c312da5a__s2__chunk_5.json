@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_5",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "MAX_TOS MAX Type of Service (TOS) NUM 2 X X X\n25 PRVDR_ID_NMBR Billing provider identification number CHAR 12 X X X\n26 NPI National Provider Identifier CHAR 12 ‾ X X Populated starting in 2009\n27 TAXONOMY Provider Taxonomy CHAR 12 ‾ X X Populated starting in 2010\n28 TYPE_CLM_CD Type of claim NUM 1 X X X\n29 ADJUST_CD Adjustment code NUM 1 X X X\n30 PHP_TYPE Managed care type of plan code NUM 2 X X X\n31 PHP_ID Managed care plan identification code CHAR 12 X X X\n32 MDCD_PYMT_AMT Medicaid payment",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

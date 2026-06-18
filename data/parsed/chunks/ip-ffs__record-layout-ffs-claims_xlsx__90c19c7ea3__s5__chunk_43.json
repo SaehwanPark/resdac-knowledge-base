@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_43",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "RC_VLNTRY_SRVC_IND_CD Revenue Center Voluntary Service Indicator Code CHAR 1 51 New4\nORDRNG_PHYSN_NPI ORDRNG_PHYSN_NPI Revenue Center Ordering Physician NPI CHAR 12 52 New4\nREV_CNTR_ADJUST_GRP_CD REV_CNTR_ADJUST_GRP_CD Revenue Center Adjustment Group Code CHAR 2 55 New5\nREV_CNTR_ADJUST_RSN_CD REV_CNTR_ADJUST_RSN_CD Revenue Center Adjustment Reason Code CHAR 5 56 New5\nREV_CNTR_RA_RMRK_CD REV_CNTR_RA_RMRK_CD Revenue Center Remittance Advice Remark Code CHAR 5 57 New5\nCondition code file\nBENE_ID",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

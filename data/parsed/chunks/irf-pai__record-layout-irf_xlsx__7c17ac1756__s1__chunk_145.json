@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_145",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "- Modified Dependence/Minimal Assistance (Subject 75% or more), 05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n126 _39LAA WLK_WC_BOTH_ADMSN_CD (39Laa) Locomotion - Walk/wheelchair/both: Admission CHAR 1 A score indicating the patient's ability to both walk and use a wheelchair at admission. This item indicates that the patient uses 'both' means of locomotion about equally. B =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_317",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n533 R1B R1B_ASMT_PART_FAM (R1B) Family Participation in Assessment CHAR 1 Assessment/discharge information: participation in assessment - family. 0 = No, 1 = Yes, 2 = No Family, \"-\" = Unknown.\n534 R1C R1C_ASMT_PART_SIGO (R1C) Significant Other Participation in Assessment CHAR 1 Assessment/discharge information: participation in assessment - significant other. 0 = No, 1 = Yes, 2 = None, \"-\" = Unknown.\n535 R2B R2B_COMPLETE_DT (R2B) Date Assessment Complete DATE 8",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

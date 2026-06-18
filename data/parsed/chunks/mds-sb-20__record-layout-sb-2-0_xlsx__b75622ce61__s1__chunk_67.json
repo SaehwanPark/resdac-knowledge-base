@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_67",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Dependence - Full staff performance of activity during entire 7 days, 8 = Activity did not occur during entire 7 days.\n86 G1HB G1HB_SUPP_EAT 23cB(G1hB)Eating - Support Provided CHAR 1 Indicates how the patient with support provided eats and drinks, regardless of skill. -1 = Unknown, 0 = No setup or physical help from staff, 1 = Setup help only, 2 = One person physical assist, 3 = Two+ person physical assist, 8 = ADL activity itself did not occur during entire 7 days\n87 G1IA G1IA_SELF_TOLIET",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

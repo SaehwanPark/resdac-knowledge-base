@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p2__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 2,
+  "text": "DEMO_ID_NUM, \nLINE_OTHR_APLD_IND_CD1-7, REV_CNTR_PMT_MTHD_IND_CD, and \nREV_CNTR_STUS_IND_CD. Adjusted two historical values for \nCLM_VAL_CD. Added state values for the PRVDR_NUM and related \ncomment in PRVDR_STATE_CD. Inserted caution re: \nNCH_PTNT_STUS_IND_CD \n1.12 \nJanuary 2024 \nK. Schneider \nAdded new fields and corresponding descriptions for \nBLG_PRVDR_SPCLTY_CD1, BLG_PRVDR_SPCLTY_CD2, \nBLG_PRVDR_SPCLTY_CD3, BLG_PRVDR_TXNMY_CD to carrier base \nfile; RNDRNG_PRVDR_SPCLTY_CD1,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

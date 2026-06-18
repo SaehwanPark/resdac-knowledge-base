@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p33__chunk_1",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 33,
+  "text": "Indicates Whether Submitted Web Survey Came from Prenotification Letter, Web Invitation, or Reminder \nSAS Format: WEBF \n1: Prenotification letter URL/PIN \n2: Paper web invitation URL/PIN \n3: Email web invitation URL/PIN \n4: Email reminder URL/PIN \n8: Not Applicable \nweb_at_home: RECODE : Do you ever use the internet at home \nSAS Format: YNA \n1: YES \n2: NO \nws_wes_comp: WESTAT: Complete for Analysis and Reporting \nSAS Format: WESCOF \n0: NOT COMPLETE FOR ANALYSIS \n1: COMPLETE FOR ANALYSIS",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

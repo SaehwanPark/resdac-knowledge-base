@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hha-ffs__data-documentation__7a39b31d66__chunk_17",
+  "source_document": "data/raw/html/documentation_page/7a39b31d66a1e4c8a9496eb67fda7c56df9bca35.html",
+  "page": null,
+  "text": "Identifier Type Code | \n\n | 102 | CLM_RSDL_PYMT_IND_CD | Claim Residual Payment Indicator Code | \n\n | 103 | PRVDR_VLDTN_TYPE_CD | Provider Validation Type Code | \n\n | 104 | RR_BRD_EXCLSN_IND_SW | Railroad Board Exclusion Indicator Switch | \n\n | 105 | PPS_STD_VAL_PYMT_AMT | Standard Payment Amount | \n\n | 106 | CLM_MODEL_REIMBRSMT_AMT | Claim Model Reimbursement Amount | \n\n | 107 | CLM_ADJUST_GRP_CD | Claim Adjustment Group Code | \n\n | 108 | CLM_ADJUST_RSN_CD | Claim Adjustment Reason Code | \n\n |",
+  "dataset": "hha-ffs",
+  "url": "https://resdac.org/cms-data/files/hha-ffs/data-documentation"
+}

@@ -1,0 +1,665 @@
+| 1 | BENE_ID | Encrypted CCW Beneficiary ID | 
+        
+          
+                  
+                                                                                                                                        | 2 | CLM_ID | Claim ID | 
+        
+          
+                  
+                                                                                                                                        | 3 | NCH_NEAR_LINE_REC_IDENT_CD | NCH Near Line Record Identification Code (RIC) | 
+        
+          
+                  
+                                                                                                                                        | 4 | NCH_CLM_TYPE_CD | NCH Claim Type Code | 
+        
+          
+                  
+                                                                                                                                        | 5 | CLM_FROM_DT | Claim From Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 6 | CLM_THRU_DT | Claim Through Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 7 | NCH_WKLY_PROC_DT | NCH Weekly Claim Processing Date | 
+        
+          
+                  
+                                                                                                                                        | 8 | FI_CLM_PROC_DT | FI Claim Process Date | 
+        
+          
+                  
+                                                                                                                                        | 9 | CLAIM_QUERY_CODE | Claim Query Code | 
+        
+          
+                  
+                                                                                                                                        | 10 | PRVDR_NUM | Provider Number | 
+        
+          
+                  
+                                                                                                                                        | 11 | PRVDR_FULL_CCN_NUM | Full CMS Certification Number for Provider | 
+        
+          
+                  
+                                                                                                                                        | 12 | CLM_FAC_TYPE_CD | Claim Facility Type Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 13 | OWNG_PRVDR_TIN_NUM | Owning Provider Tax Identification Number (TIN) | 
+        
+          
+                  
+                                                                                                                                        | 14 | CLM_SRVC_CLSFCTN_TYPE_CD | Claim Service Classification Type Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 15 | CLM_FREQ_CD | Claim Frequency Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 16 | FI_NUM | FI or MAC Number | 
+        
+          
+                  
+                                                                                                                                        | 17 | CLM_MDCR_NON_PMT_RSN_CD | Claim Medicare Non-Payment Reason Code | 
+        
+          
+                  
+                                                                                                                                        | 18 | CLM_PMT_AMT | Claim (Medicare) Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 19 | NCH_PRMRY_PYR_CLM_PD_AMT | NCH Primary Payer (if not Medicare) Claim Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 20 | NCH_PRMRY_PYR_CD | NCH Primary Payer Code (if not Medicare) | 
+        
+          
+                  
+                                                                                                                                        | 21 | FI_CLM_ACTN_CD | FI or MAC Claim Action Code | 
+        
+          
+                  
+                                                                                                                                        | 22 | PRVDR_STATE_CD | NCH Provider SSA State Code | 
+        
+          
+                  
+                                                                                                                                        | 23 | ORG_NPI_NUM | Organization (or group) NPI Number | 
+        
+          
+                  
+                                                                                                                                        | 24 | SRVC_LOC_NPI_NUM | Claim Service Location NPI Number | 
+        
+          
+                  
+                                                                                                                                        | 25 | AT_PHYSN_UPIN | Claim Attending Physician UPIN Number | 
+        
+          
+                  
+                                                                                                                                        | 26 | AT_PHYSN_NPI | Claim Attending Physician NPI Number (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 27 | AT_PHYSN_SPCLTY_CD | Claim Attending Physician Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 28 | OP_PHYSN_UPIN | Claim Operating Physician UPIN Number | 
+        
+          
+                  
+                                                                                                                                        | 29 | OP_PHYSN_NPI | Claim Operating Physician NPI Number (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 30 | OP_PHYSN_SPCLTY_CD | Claim Operating Physician Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 31 | OT_PHYSN_UPIN | Claim Other Physician UPIN Number | 
+        
+          
+                  
+                                                                                                                                        | 32 | OT_PHYSN_NPI | Claim Other Physician NPI Number (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 33 | OT_PHYSN_SPCLTY_CD | Claim Other Physician Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 34 | RNDRNG_PHYSN_NPI | Rendering Physician NPI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 35 | RNDRNG_PHYSN_SPCLTY_CD | Claim or Revenue Center Rendering Physician Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 36 | RFR_PHYSN_NPI | Claim Referring Physician NPI Number | 
+        
+          
+                  
+                                                                                                                                        | 37 | RFRG_SPCLTY_CD | Claim Referring Physician Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 38 | CLM_MCO_PD_SW | Claim MCO Paid Switch | 
+        
+          
+                  
+                                                                                                                                        | 39 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 40 | CLM_TOT_CHRG_AMT | Claim Total Charge Amount | 
+        
+          
+                  
+                                                                                                                                        | 41 | NCH_BENE_BLOOD_DDCTBL_LBLTY_AM | NCH Beneficiary Blood Deductible Liability Amount | 
+        
+          
+                  
+                                                                                                                                        | 42 | NCH_PROFNL_CMPNT_CHRG_AMT | Professional Component Charge Amount | 
+        
+          
+                  
+                                                                                                                                        | 43 | NCH_BLOOD_PNTS_FRNSHD_QTY | NCH Blood Pints Furnished Quantity | 
+        
+          
+                  
+                                                                                                                                        | 44 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 45 | ICD_DGNS_CD1 | Claim Diagnosis Code I (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 46 | ICD_DGNS_CD2 | Claim Diagnosis Code II (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 47 | ICD_DGNS_CD3 | Claim Diagnosis Code III (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 48 | ICD_DGNS_CD4 | Claim Diagnosis Code IV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 49 | ICD_DGNS_CD5 | Claim Diagnosis Code V (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 50 | ICD_DGNS_CD6 | Claim Diagnosis Code VI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 51 | ICD_DGNS_CD7 | Claim Diagnosis Code VII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 52 | ICD_DGNS_CD8 | Claim Diagnosis Code VIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 53 | ICD_DGNS_CD9 | Claim Diagnosis Code IX (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 54 | ICD_DGNS_CD10 | Claim Diagnosis Code X (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 55 | ICD_DGNS_CD11 | Claim Diagnosis Code XI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 56 | ICD_DGNS_CD12 | Claim Diagnosis Code XII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 57 | ICD_DGNS_CD13 | Claim Diagnosis Code XIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 58 | ICD_DGNS_CD14 | Claim Diagnosis Code XIV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 59 | ICD_DGNS_CD15 | Claim Diagnosis Code XV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 60 | ICD_DGNS_CD16 | Claim Diagnosis Code XVI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 61 | ICD_DGNS_CD17 | Claim Diagnosis Code XVII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 62 | ICD_DGNS_CD18 | Claim Diagnosis Code XVIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 63 | ICD_DGNS_CD19 | Claim Diagnosis Code XIX (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 64 | ICD_DGNS_CD20 | Claim Diagnosis Code XX (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 65 | ICD_DGNS_CD21 | Claim Diagnosis Code XXI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 66 | ICD_DGNS_CD22 | Claim Diagnosis Code XXII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 67 | ICD_DGNS_CD23 | Claim Diagnosis Code XXIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 68 | ICD_DGNS_CD24 | Claim Diagnosis Code XXIV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 69 | ICD_DGNS_CD25 | Claim Diagnosis Code XXV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 70 | FST_DGNS_E_CD | First Claim Diagnosis E Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 71 | ICD_DGNS_E_CD1 | Claim Diagnosis E Code I (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 72 | ICD_DGNS_E_CD2 | Claim Diagnosis E Code II (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 73 | ICD_DGNS_E_CD3 | Claim Diagnosis E Code III (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 74 | ICD_DGNS_E_CD4 | Claim Diagnosis E Code IV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 75 | ICD_DGNS_E_CD5 | Claim Diagnosis E Code V (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 76 | ICD_DGNS_E_CD6 | Claim Diagnosis E Code VI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 77 | ICD_DGNS_E_CD7 | Claim Diagnosis E Code VII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 78 | ICD_DGNS_E_CD8 | Claim Diagnosis E Code VIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 79 | ICD_DGNS_E_CD9 | Claim Diagnosis E Code IX (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 80 | ICD_DGNS_E_CD10 | Claim Diagnosis E Code X (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 81 | ICD_DGNS_E_CD11 | Claim Diagnosis E Code XI | 
+        
+          
+                  
+                                                                                                                                        | 82 | ICD_DGNS_E_CD12 | Claim Diagnosis E Code XII | 
+        
+          
+                  
+                                                                                                                                        | 83 | ICD_PRCDR_CD1 | Claim Procedure Code I (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 84 | PRCDR_DT1 | Claim Procedure Code I Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 85 | ICD_PRCDR_CD2 | Claim Procedure Code II (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 86 | PRCDR_DT2 | Claim Procedure Code II Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 87 | ICD_PRCDR_CD3 | Claim Procedure Code III (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 88 | PRCDR_DT3 | Claim Procedure Code III Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 89 | ICD_PRCDR_CD4 | Claim Procedure Code IV (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 90 | PRCDR_DT4 | Claim Procedure Code IV Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 91 | ICD_PRCDR_CD5 | Claim Procedure Code V (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 92 | PRCDR_DT5 | Claim Procedure Code V Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 93 | ICD_PRCDR_CD6 | Claim Procedure Code VI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 94 | PRCDR_DT6 | Claim Procedure Code VI Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 95 | ICD_PRCDR_CD7 | Claim Procedure Code VII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 96 | PRCDR_DT7 | Claim Procedure Code VII Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 97 | ICD_PRCDR_CD8 | Claim Procedure Code VIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 98 | PRCDR_DT8 | Claim Procedure Code VIII Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 99 | ICD_PRCDR_CD9 | Claim Procedure Code IX (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 100 | PRCDR_DT9 | Claim Procedure Code IX Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 101 | ICD_PRCDR_CD10 | Claim Procedure Code X (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 102 | PRCDR_DT10 | Claim Procedure Code X Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 103 | ICD_PRCDR_CD11 | Claim Procedure Code XI (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 104 | PRCDR_DT11 | Claim Procedure Code XI Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 105 | ICD_PRCDR_CD12 | Claim Procedure Code XII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 106 | PRCDR_DT12 | Claim Procedure Code XII Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 107 | ICD_PRCDR_CD13 | Claim Procedure Code XIII (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 108 | PRCDR_DT13 | Claim Procedure Code XIII Date (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 109 | ICD_PRCDR_CD14 | Claim Procedure Code XIV | 
+        
+          
+                  
+                                                                                                                                        | 110 | PRCDR_DT14 | Claim Procedure Code XIV Date | 
+        
+          
+                  
+                                                                                                                                        | 111 | ICD_PRCDR_CD15 | Claim Procedure Code XV | 
+        
+          
+                  
+                                                                                                                                        | 112 | PRCDR_DT15 | Claim Procedure Code XV Date | 
+        
+          
+                  
+                                                                                                                                        | 113 | ICD_PRCDR_CD16 | Claim Procedure Code XVI | 
+        
+          
+                  
+                                                                                                                                        | 114 | PRCDR_DT16 | Claim Procedure Code XVI Date | 
+        
+          
+                  
+                                                                                                                                        | 115 | ICD_PRCDR_CD17 | Claim Procedure Code XVII | 
+        
+          
+                  
+                                                                                                                                        | 116 | PRCDR_DT17 | Claim Procedure Code XVII Date | 
+        
+          
+                  
+                                                                                                                                        | 117 | ICD_PRCDR_CD18 | Claim Procedure Code XVIII | 
+        
+          
+                  
+                                                                                                                                        | 118 | PRCDR_DT18 | Claim Procedure Code XVIII Date | 
+        
+          
+                  
+                                                                                                                                        | 119 | ICD_PRCDR_CD19 | Claim Procedure Code XIX | 
+        
+          
+                  
+                                                                                                                                        | 120 | PRCDR_DT19 | Claim Procedure Code XIX Date | 
+        
+          
+                  
+                                                                                                                                        | 121 | ICD_PRCDR_CD20 | Claim Procedure Code XX | 
+        
+          
+                  
+                                                                                                                                        | 122 | PRCDR_DT20 | Claim Procedure Code XX Date | 
+        
+          
+                  
+                                                                                                                                        | 123 | ICD_PRCDR_CD21 | Claim Procedure Code XXI | 
+        
+          
+                  
+                                                                                                                                        | 124 | PRCDR_DT21 | Claim Procedure Code XXI Date | 
+        
+          
+                  
+                                                                                                                                        | 125 | ICD_PRCDR_CD22 | Claim Procedure Code XXII | 
+        
+          
+                  
+                                                                                                                                        | 126 | PRCDR_DT22 | Claim Procedure Code XXII Date | 
+        
+          
+                  
+                                                                                                                                        | 127 | ICD_PRCDR_CD23 | Claim Procedure Code XXIII | 
+        
+          
+                  
+                                                                                                                                        | 128 | PRCDR_DT23 | Claim Procedure Code XXIII Date | 
+        
+          
+                  
+                                                                                                                                        | 129 | ICD_PRCDR_CD24 | Claim Procedure Code XXIV | 
+        
+          
+                  
+                                                                                                                                        | 130 | PRCDR_DT24 | Claim Procedure Code XXIV Date | 
+        
+          
+                  
+                                                                                                                                        | 131 | ICD_PRCDR_CD25 | Claim Procedure Code XXV | 
+        
+          
+                  
+                                                                                                                                        | 132 | PRCDR_DT25 | Claim Procedure Code XXV Date | 
+        
+          
+                  
+                                                                                                                                        | 133 | RSN_VISIT_CD1 | Reason for Visit Diagnosis Code I (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 134 | RSN_VISIT_CD2 | Reason for Visit Diagnosis Code II (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 135 | RSN_VISIT_CD3 | Reason for Visit Diagnosis Code III (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 136 | NCH_BENE_PTB_DDCTBL_AMT | NCH Beneficiary Part B Deductible Amount | 
+        
+          
+                  
+                                                                                                                                        | 137 | NCH_BENE_PTB_COINSRNC_AMT | NCH Beneficiary Part B Coinsurance Amount | 
+        
+          
+                  
+                                                                                                                                        | 138 | CLM_OP_PRVDR_PMT_AMT | Claim Outpatient Provider Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 139 | CLM_OP_BENE_PMT_AMT | Claim Outpatient Payment Amount to Beneficiary | 
+        
+          
+                  
+                                                                                                                                        | 140 | DOB_DT | Date of Birth from Claim | 
+        
+          
+                  
+                                                                                                                                        | 142 | BENE_RACE_CD | Beneficiary Race Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 143 | BENE_CNTY_CD | County Code from Claim (SSA) | 
+        
+          
+                  
+                                                                                                                                        | 144 | BENE_STATE_CD | Beneficiary Residence (SSA) State Code (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 145 | BENE_MLG_CNTCT_ZIP_CD | Zip Code of Residence from Claim | 
+        
+          
+                  
+                                                                                                                                        | 146 | CLM_MDCL_REC | Claim Medical Record Number (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 147 | CLM_TRTMT_AUTHRZTN_NUM | Claim Treatment Authorization Number | 
+        
+          
+                  
+                                                                                                                                        | 148 | CLM_PRCR_RTRN_CD | Claim Pricer Return Code | 
+        
+          
+                  
+                                                                                                                                        | 149 | CLM_PRCR_VRSN_CD | Claim Pricer Version Code | 
+        
+          
+                  
+                                                                                                                                        | 150 | CLM_SRVC_FAC_ZIP_CD | Claim service facility ZIP code (where service was provided) | 
+        
+          
+                  
+                                                                                                                                        | 151 | CLM_OP_TRANS_TYPE_CD | Claim Outpatient transaction type | 
+        
+          
+                  
+                                                                                                                                        | 152 | CLM_OP_ESRD_MTHD_CD | Claim Outpatient End Stage Renal Disease (ESRD) Method of Reimbursement Code | 
+        
+          
+                  
+                                                                                                                                        | 153 | CLM_NEXT_GNRTN_ACO_IND_CD1 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population-Based Payment (PBP) | 
+        
+          
+                  
+                                                                                                                                        | 154 | CLM_NEXT_GNRTN_ACO_IND_CD2 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth | 
+        
+          
+                  
+                                                                                                                                        | 155 | CLM_NEXT_GNRTN_ACO_IND_CD3 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits | 
+        
+          
+                  
+                                                                                                                                        | 156 | CLM_NEXT_GNRTN_ACO_IND_CD4 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3-day SNF waiver | 
+        
+          
+                  
+                                                                                                                                        | 157 | CLM_NEXT_GNRTN_ACO_IND_CD5 | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation | 
+        
+          
+                  
+                                                                                                                                        | 158 | ACO_ID_NUM | Claim Accountable Care Organization (ACO) Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 159 | CLM_BENE_ID_TYPE_CD | Claim Beneficiary Identifier Type Code | 
+        
+          
+                  
+                                                                                                                                        | 160 | CLM_RSDL_PYMT_IND_CD | Claim Residual Payment Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 161 | PRVDR_VLDTN_TYPE_CD | Provider Validation Type Code | 
+        
+          
+                  
+                                                                                                                                        | 162 | RR_BRD_EXCLSN_IND_SW | Railroad Board Exclusion Indicator Switch | 
+        
+          
+                  
+                                                                                                                                        | 163 | CLM_MODEL_REIMBRSMT_AMT | Claim Model Reimbursement Amount | 
+        
+          
+                  
+                                                                                                                                        | 164 | CLM_ADJUST_GRP_CD | Claim Adjustment Group Code | 
+        
+          
+                  
+                                                                                                                                        | 165 | CLM_ADJUST_RSN_CD | Claim Adjustment Reason Code | 
+        
+          
+                  
+                                                                                                                                        | 166 | ESRD_TRTMT_CHS_IND_CD | End-Stage Renal Disease (ESRD) Treatment Choices Demonstration Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 167 | CLM_OP_PPS_IND | Claim Outpatient Prospective Payment System (OPPS) Indicator | 
+        
+          
+                  
+                                                                                                                                        | 168 | CLM_CLNCL_TRIL_NUM | Clinical Trial Number |

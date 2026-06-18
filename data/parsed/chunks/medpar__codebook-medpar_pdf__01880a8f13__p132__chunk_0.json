@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p132__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 132,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n116 \nINTRNL_USE_FIL_DT_CD \nLABEL: \nFor internal use only. Fiscal year/calendar year segments. \nDESCRIPTION: MEDPAR Internal Use File Date Code. Limited availability; for internal use only to identify fiscal \nyear/calendar year segments. Where not available, this field will contain a zero. \nSHORT NAME: FILDTCD \nLONG NAME: INTRNL_USE_FIL_DT_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedPAR (derived)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

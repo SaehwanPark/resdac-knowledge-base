@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p20__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 20,
+  "text": "This variable counts the total number of months during the year when the beneficiary premium was \npaid by the state. State Medicaid programs can pay Medicare premiums for certain dual eligibles (i.e., \nfor beneficiaries also enrolled in a state Medicaid program); this action is called “buying in” and so this \nvariable is the “buy-in code.” Any month where the MDCR_ENTLMT_BUYIN_IND_XX variable was: A \n(Part A state buy-in), B (Part B state buy-in), or C (Part A and Part B state buy-in) is",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

@@ -1,0 +1,12 @@
+The Medicare Encounter Home Health Agency file includes Medicare Advantage (MA) plan records for home health agency services.
+This file includes (variable highlights):
+- Part C Benefit Package and Contract number
+- Diagnosis (ICD diagnosis) codes
+- HCPCS code
+- Revenue center codes, dates, unit counts
+- Organization NPI
+- NPI for line rendering physician
+- Patient discharge status code
+- No payment variables
+Special considerations:
+- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter data may include records for some of these additional items and services provided under the plan.

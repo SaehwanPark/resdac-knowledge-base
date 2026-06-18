@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p55__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 55,
+  "text": "claims that \nended during the year of the data file, and where the payment amount was >= $0. To obtain the total \nOIP Medicare payments, take this variable and add in the annual per diem payment amount \n(OIP_MDCR_PMT + OIP_PERDIEM_AMT). \nThese OIP claims are a subset of the claims in the IP data file consisting of data from IP settings such as \nlong-term care hospitals, inpatient psychiatric facilities, inpatient rehabilitation facilities, and other types \nof IP facilities such as children’s",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__record-layout-aco-pioneer-v2_xlsx__7957b5f6c4__s2__chunk_0",
+  "source_document": "data/raw/assets/xlsx/7957b5f6c4da3ec2079167ec3fad059f4bf72ffc.xlsx",
+  "page": 2,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nPioneer — Accountable Care Organizations (ACO) — Provider File V2\nVersion — May 2025\nSAS name Label Type Length\nACO_ID ACO Identifier CHAR 4\nPRVDR_ACO_YEAR Year of Provider ACO Source Record NUM 4\nORG_TIN Billing TIN of ACO Participant CHAR 9\nORG_CCN CMS Certification Number CHAR 6\nIND_NPI NPI for Practitioner CHAR 10\nORG_NAME Legal Business Name Associated with the ACO Participant TIN CHAR 70\nLAST_NAME Last Name of Provider Associated with",
+  "dataset": "pioneer-aco",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-pioneer-v2.xlsx"
+}

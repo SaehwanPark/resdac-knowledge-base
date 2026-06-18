@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n19 \nMDCD_ELGBLTY_GRP_CD_LTST \nLABEL: \nMedicaid — Eligibility Group Code — Latest in Year \nDESCRIPTION: The eligibility group applicable to the Medicaid beneficiary based on the eligibility determination \nprocess for the calendar year; most recent in the calendar year. \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nT-MSIS DE file \nVALUES: \n01 = Parents and Other Caretaker Relatives \n02 = Transitional Medical Assistance \n03 = Extended",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

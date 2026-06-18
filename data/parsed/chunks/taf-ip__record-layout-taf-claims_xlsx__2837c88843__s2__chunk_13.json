@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_13",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Over 65 Years) NUM 8 76\nCVRD_DAYS_IP_PSYCH_UNDER_21 Count of Medicaid Covered Days in an IPF (Beneficiary Under 21 Years) NUM 8 77\nLEAVE_DAYS Count of Days During Medicaid Coverage Period Patient was not Residing in LTC NUM 8 78\nFIXD_PYMT_IND Fixed Payment Indicator CHAR 1 79\nSRVC_TRKNG_PYMT_AMT Service Tracking Payment Amount NUM 8 80\nPYMT_LVL_IND Payment Level Indicator - Header or Line CHAR 1 81\nBILLED_AMT Total Claim Billed Amount NUM 8 82\nNCVRD_CHRG_AMT Noncovered Charges Amount NUM 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

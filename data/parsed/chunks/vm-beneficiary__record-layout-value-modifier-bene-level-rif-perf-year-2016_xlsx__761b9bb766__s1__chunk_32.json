@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_32",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "beneficiary, All Other Services category 45 Num 8 Populated only for records with Inpatient_stay not equal to missing\nMINOR_PROCS_INGRP Total costs for ambulatory/minor procedures billed by EPs in practice Per capita cost for attributed beneficiary, Ambulatory/Minor Procedures Billed by Eligible Professionals in practice category 46 Num 8 Populated only for records with Inpatient_stay not equal to missing\nMINOR_PROCS_OTHGRP Total costs for ambulatory/minor procedures billed by EPs outside",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

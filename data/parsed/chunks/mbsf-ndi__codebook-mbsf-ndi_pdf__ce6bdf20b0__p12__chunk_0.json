@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 12,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n7 \nICD_CODE \nLABEL: \nICD-10 Cause of Death Code \nDESCRIPTION: This field identifies only the ICD-10 diagnosis code associated with cause of death. The text descriptor \nfor this code is in the field called ICD_TITLE. \nSHORT NAME: ICD_CODE \nLONG NAME: ICD_CODE \nTYPE: \nCHAR \nLENGTH: \n4 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI)",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

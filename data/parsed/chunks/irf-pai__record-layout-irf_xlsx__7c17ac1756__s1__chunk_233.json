@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_233",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "M0210 Unhealed Pressure Ulcers at Admission Number CHAR 1 Patient had one or more unhealed pressure ulcer(s) (Stage 1 or higher) at admission. 0 = No, 1 = Yes\n195 UNHLD_PRSR_ULCR_AT_DSCHRG_CD UNHLD_PRSR_ULCR_AT_DSCHRG_CD M0210 Unhealed Pressure Ulcers at Discharge Number CHAR 1 Patient had one or more unhealed pressure ulcer(s) (Stage 1 or higher) at discharge. 0 = No, 1 = Yes\n196 STG_1_PRSR_ULCR_ADMSN_NUM STG_1_PRSR_ULCR_ADMSN_NUM M0300A1 Stage 1 Pressure Ulcers Admissson Number CHAR 1 The",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

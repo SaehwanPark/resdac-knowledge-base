@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p87__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 87,
+  "text": "a doctor’s office or shopping because of a physical, mental, or emotional \ncondition; ever in the calendar year. \nSHORT NAME: DSBLTY_DFCLTY_ERNDS_IND \nLONG NAME: DSBLTY_DFCLTY_ERNDS_IND \nTYPE: \nNUM \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = No \n1 = Yes \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis flag is state reported; it is eligibility-based and not claims-based. \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

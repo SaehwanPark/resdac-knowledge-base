@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_459",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "effective date 10/1/2013\ndiscontinued 09/30/2025\n513 O0400A4_SPCH_THRPY_DAY_NUM O0400A4_SPCH_THRPY_DAY_NUM O0400A4 Number of Days Speech Therapy/Audiology Administered CHAR 1 The data in this column indicates the number of days that speech-language pathology and audiology services were administered for at least 15 minutes in the last seven days. discontinued 09/30/2025\n514 O0400A5_SPCH_THRPY_STRT_DT O0400A5_SPCH_THRPY_STRT_DT O0400A5 Speech Therapy/Audiology Start Date CHAR 8 The data in this",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

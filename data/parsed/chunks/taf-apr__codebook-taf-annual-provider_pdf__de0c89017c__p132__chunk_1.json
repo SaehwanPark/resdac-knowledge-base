@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p132__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 132,
+  "text": "year. \nSHORT NAME: RSDNTL_TRTMT_FAC_TXNMY_IND \nLONG NAME: RSDNTL_TRTMT_FAC_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis variable = 1 if PRVDR_CLSFCTN_SYS = “1” or “N” and the taxonomy code value is one of the \nfollowing: \n320600000X: Residential treatment facility, mental retardation and/or developmental disabilities \n320700000X: Residential treatment facility, physical disabilities \n320800000X: Community",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

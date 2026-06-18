@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p77__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 77,
+  "text": "one transaction or 12 monthly transactions, the fill \ncount = 12; if the patient is taking three such medications, the fill count = 36). \nSHORT NAME: — \nLONG NAME: PTD_FILL_CNT \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing or 1–XXXX \nCOMMENT: \nThe value will be null if the beneficiary was not enrolled in Part D or did not use any Part D drugs during \nthe year. \nWe also calculate the actual number of prescription drug fill events for Part D drugs for a given year (i.e.,",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

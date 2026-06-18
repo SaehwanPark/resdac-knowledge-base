@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_267",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "DBTC_NEUROPATHY_IND Diabetic Neuropathy Indicator CHAR 3 The code for whether the patient had a diagnosis of Diabetic Neuropathy. -=Not assessed/no information\n0=No\n1=Yes\n253 HEALED_STG_2_PRSR_ULCRS_NUM HEALED_STG_2_PRSR_ULCRS_NUM M0900B Healed Stage 2 Pressure Ulcers Number CHAR 1 The number of Stage 2 pressure ulcers that were: (a) present on Admission; and (b) have completely closed (resurfaced with epithelium) upon Discharge. If there are no healed pressure ulcers noted at a given stage,",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

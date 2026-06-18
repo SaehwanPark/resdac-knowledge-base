@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n12 \nBENE_LRD_USED_CNT \nLABEL: \nBeneficiary Medicare Lifetime Reserve Days (LRD) Used Count \nDESCRIPTION: The number of lifetime reserve days that the beneficiary has elected to use during the period covered \nby the institutional claim. \nUnder Medicare, each beneficiary has a one-time reserve of sixty additional days of inpatient hospital \ncoverage that the patient can use",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

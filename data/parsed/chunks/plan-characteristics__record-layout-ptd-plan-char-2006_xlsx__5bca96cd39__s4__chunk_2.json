@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s4__chunk_2",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 4,
+  "text": "code in which the Part D plan benefit package (segment) provides coverage.\n7 Partial_flag Partial County Indicator Char 1 Indicates that the Part D plan benefit package (segment) covers only a portion of the county. Blank Plan benefit package segment covers the whole county or does not vary by segment.\nY Plan benefit package segment covers only a portion of the county\n8 Region_code Region code Char 2 PDP or MA-PD region code in which the plan benefit package provides coverage. Applies only to",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

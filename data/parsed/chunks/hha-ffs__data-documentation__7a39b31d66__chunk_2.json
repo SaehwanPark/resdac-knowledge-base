@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hha-ffs__data-documentation__7a39b31d66__chunk_2",
+  "source_document": "data/raw/html/documentation_page/7a39b31d66a1e4c8a9496eb67fda7c56df9bca35.html",
+  "page": null,
+  "text": "| \n\n | 15 | FI_NUM | FI or MAC Number | \n\n | 16 | CLM_MDCR_NON_PMT_RSN_CD | Claim Medicare Non-Payment Reason Code | \n\n | 17 | CLM_PMT_AMT | Claim (Medicare) Payment Amount | \n\n | 18 | NCH_PRMRY_PYR_CLM_PD_AMT | NCH Primary Payer (if not Medicare) Claim Paid Amount | \n\n | 19 | NCH_PRMRY_PYR_CD | NCH Primary Payer Code (if not Medicare) | \n\n | 20 | FI_CLM_ACTN_CD | FI or MAC Claim Action Code | \n\n | 21 | PRVDR_STATE_CD | NCH Provider SSA State Code | \n\n | 22 | ORG_NPI_NUM | Organization (or",
+  "dataset": "hha-ffs",
+  "url": "https://resdac.org/cms-data/files/hha-ffs/data-documentation"
+}

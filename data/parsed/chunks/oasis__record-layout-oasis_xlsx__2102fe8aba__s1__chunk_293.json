@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_293",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Or Catheter Presence This field indicates whether the patient has urinary incontinence or urinary catheter presence. 00 = No incontinence or catheter (includes anuria or ostomy for urinary\ndrainage)\n01 = Patient is incontinent\n02 = Patient requires a urinary catheter (i.e., external, indwelling,\nintermittent, suprapubic) CHAR 2 x x x x x x\nM1615_INCNTNT_TIMING M1615 When Does Urinary Incontinence Occur This field indicates when urinary incontinence occurs. 00 = Timed-voiding defers",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

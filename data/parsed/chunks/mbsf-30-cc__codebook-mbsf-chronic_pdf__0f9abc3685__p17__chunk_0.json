@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-30-cc__codebook-mbsf-chronic_pdf__0f9abc3685__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/0f9abc36852dae6ab7448d07437b996a225a6692.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MBSF 30 CCW Chronic Conditions (CHRONIC) File │ March 2022 │ V 1.0 \n11 \nBENE_ENROLLMT_REF_YR \nLABEL: \nReference Year \nDESCRIPTION: This field indicates the reference year of the enrollment data. \nSHORT NAME: — \nLONG NAME: BENE_ENROLLMT_REF_YR \nTYPE: \nNUM \nLENGTH: \n4 \nSOURCE: \nCMS Enrollment Database (EDB) \nVALUES: \n2017–current data year \nCOMMENT: \nThe data files are partitioned into calendar year files. \n^ Back to TOC ^",
+  "dataset": "mbsf-30-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-chronic.pdf"
+}

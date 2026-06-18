@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_875",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Temporal Orientation: Able to report correct month Indicates the patient's ability to report the correct month. 0. Missed by > 1 month or no answer \n1. Missed by 6 days to 1 month \n2. Accurate within 5 days CHAR 1 x\nC0300C_RPT_CRCT_DAY_CD Temporal Orientation: Able to report correct day Indicates the patient's ability to report the correct day of the week. 0. Incorrect or no answer\n1. Correct CHAR 1 x\nC0400A_RCALL_FIRST_WORD_CD Recall: Able to recall 'sock' Indicates patient's ability to recall",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p50__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 50,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n36 \nCONTRACT_ID_20 (reference year) \nLABEL: \nContract Identifier for Reference Year \nDESCRIPTION: This variable is the unique number CMS assigns to each contract that a plan has with CMS. This \nwas the contract ID for the plan in 2020 (the reference year). It may or may not be the same as \nthe contract ID in the previous year (2019). \nThis field is a key that links the plan",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

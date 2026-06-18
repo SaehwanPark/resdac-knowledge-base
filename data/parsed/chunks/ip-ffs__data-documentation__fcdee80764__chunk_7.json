@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_7",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "Type Code (FFS) | \n\n | 41 | CLM_SRC_IP_ADMSN_CD | Claim Source Inpatient Admission Code (FFS) | \n\n | 42 | NCH_PTNT_STUS_IND_CD | NCH Patient Status Indicator Code | \n\n | 43 | CLM_PASS_THRU_PER_DIEM_AMT | Claim Pass Thru Per Diem Amount | \n\n | 44 | NCH_BENE_IP_DDCTBL_AMT | NCH Beneficiary Inpatient (or other Part A) Deductible Amount | \n\n | 45 | NCH_BENE_PTA_COINSRNC_LBLTY_AM | NCH Beneficiary Part A Coinsurance Liability Amount | \n\n | 46 | NCH_BENE_BLOOD_DDCTBL_LBLTY_AM | NCH Beneficiary Blood",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

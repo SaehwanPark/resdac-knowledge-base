@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p76__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 76,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n70 \nPTD_EVENTS \nLABEL: \nPart D Event Count \nDESCRIPTION: This variable is the count of events for Part D drugs for a given year (i.e., a unique count of the PDE_IDs). \nAn event is a dispensed (filled) drug prescription that appears in the Prescription Drug Event (PDE) file. \nSHORT NAME: — \nLONG NAME: PTD_EVENTS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES: \nNull/missing",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

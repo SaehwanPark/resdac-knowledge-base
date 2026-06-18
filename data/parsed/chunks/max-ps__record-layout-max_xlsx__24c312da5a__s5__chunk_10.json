@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s5__chunk_10",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 5,
+  "text": "ID Char 6 NP field contains proprietary data; is not released\n57 HICL_SEQNO Ingredient List ID Char 6 NP field contains proprietary data; is not released\n58 HIC3 HTCC Code Char 3 NP field contains proprietary data; is not released\n59 HIC3_SEQN HTCC Sequence Number Char 6 NP field contains proprietary data; is not released\n1 For all columns under \"Year of Data File\": X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

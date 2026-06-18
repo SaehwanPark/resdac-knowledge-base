@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_27",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "to prior comprehensive assessment\n06=Significant correction to prior quarterly assessment\n99=None of the above\n45 A0310B_PPS_CD A0310B_PPS_CD A0310B PPS Assessment Code CHAR 2 This column contains the PPS (Prospective Payment System) reason for assessment value. 01=5-day scheduled assessment\n02=14-day scheduled assessment\n03=30-day scheduled assessment\n04=60-day scheduled assessment\n05=90-day scheduled assessment\n06=Readmission/return assessment\n07=Unscheduled assessment used for PPS (OMRA,",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

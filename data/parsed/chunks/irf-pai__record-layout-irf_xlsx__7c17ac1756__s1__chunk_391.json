@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_391",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "attempted due to medical condition or safety concerns\n342 GG0170G1_CAR_TRNSFR_STRT_CD GG0170G1_CAR_TRNSFR_STRT_CD GG0170G1 Admission Performance Car Transfer Code - The data in this column indicates the patient's ability to safely transfer in and out of a car or van on the passenger side at the time of admission. CHAR 2 The data in this column indicates the patient's ability to safely transfer in and out of a car or van on the passenger side at the time of admission. 01 = Dependent\n02 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

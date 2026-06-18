@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-encounter__data-documentation__bc56024738__chunk_19",
+  "source_document": "data/raw/html/documentation_page/bc56024738729e306e5ee3f1b54282a875b74624.html",
+  "page": null,
+  "text": "Code 5 (Encounter) | \n\n | 94 | ICD_DGNS_E_CD6 | Claim Diagnosis E Code 6 (Encounter) | \n\n | 95 | ICD_DGNS_E_CD7 | Claim Diagnosis E Code 7 (Encounter) | \n\n | 96 | ICD_DGNS_E_CD8 | Claim Diagnosis E Code 8 (Encounter) | \n\n | 97 | ICD_DGNS_E_CD9 | Claim Diagnosis E Code 9 (Encounter) | \n\n | 98 | ICD_DGNS_E_CD10 | Claim Diagnosis E Code 10 (Encounter) | \n\n | 99 | CLM_E_POA_IND_SW1 | Claim Diagnosis E Code 1 Diagnosis Present on Admission (POA) Indicator Code (Encounter) | \n\n | 100 |",
+  "dataset": "snf-encounter",
+  "url": "https://resdac.org/cms-data/files/snf-encounter/data-documentation"
+}

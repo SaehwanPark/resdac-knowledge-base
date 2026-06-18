@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_346",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "care plan signature date.\n588 W1 W1_NATL_PRVDR_ID (W1) National Provider ID CHAR 10 National Provider ID.\n589 W2A W2A_INFLNZ_STUS_SW (W2A) Influenza vaccine received in facility CHAR 1 Influenza vaccine received in facility. 0 = No, 1 = Yes, \"-\" = Unknown\n590 W2B W2B_INFLNZ_NOT_RCVD_RSN_ID (W2B) Reason influenza vaccine not received CHAR 1 Reason influenza vaccine not received. 1 = Not in the facility during this year's flu season, 2 = Received outside of this facility, 3 = Not eligible, 4 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

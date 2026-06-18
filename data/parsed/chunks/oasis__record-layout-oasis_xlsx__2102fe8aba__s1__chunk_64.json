@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_64",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(M0320) Inadequate Heating Safety hazards: inadequate heating. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_LIGHTING (M0320) Inadequate Lighting Safety hazards: inadequate lighting. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_RAILINGS (M0320) Inadequate Stair Railings Safety hazards: inadequate stair railings. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_FIRE_SAF (M0320) Lack of Fire Safety Devices Safety hazards: lack of fire safety devices. 0 = No, 1 = Yes CHAR 1 x x\nM0320_SAF_PAINT (M0320) Lead-Based Paint Safety",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p55__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 55,
+  "text": "VALUES: \nXX \nCOMMENT: \nCCW filtered the OT claims header records to distinguish between capitated payments and payments \nfor services. Capitated payments are header claims where the claim type code (T-MSIS variable called \nCLM_TYPE_CD) is equal to '2' (Medicaid or expansion claim) 'B' (S-CHIP claim) or 'V' (Other Services \nclaim). These capitated payment claims are captured in MMLEADS in the \nMDCD_OT_MC_PREMIUM_USE variable. \nThe Medicaid payment information corresponding to this variable is",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

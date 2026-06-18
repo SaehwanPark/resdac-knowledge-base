@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_5",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Healthcare Common Procedure Coding System (HCPCS) Year Code CHAR 1 22\nRFR_PRFL CARR_CLM_RFRNG_PIN_NUM Carrier Claim Referring Provider ID Number (PIN) CHAR 14 23\nCPO_PRVDR_NUM CPO_PRVDR_NUM Care Plan Oversight (CPO) Provider Number CHAR 12 57\nCPO_ORG_NPI_NUM CPO_ORG_NPI_NUM CPO Organization NPI Number CHAR 10 58\nCARR_CLM_BLG_NPI_NUM CARR_CLM_BLG_NPI_NUM Carrier Claim Billing NPI Number CHAR 10 59\nBLG_PRVDR_SPCLTY_CD1 BLG_PRVDR_SPCLTY_CD1 Claim Billing Provider Secondary Specialty Code 1 CHAR 2",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

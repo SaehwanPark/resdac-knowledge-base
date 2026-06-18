@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "CHAR 2 X X X X X X X X X X X\n4 EL_STATE_CASE_NUM Encrypted Case Number CHAR 32 X X X X X X X X X X X\n5 MAX_YR_DT Year NUM 4 X X X X X X X X X X X\n6 HGT_FLAG SSN (from MSIS) High Group Test CHAR 1 ‾ X X X X X X NP NP NP NP\n7 EXT_SSN_SRCE External SSN source CHAR 1 ‾ X X X X X X X X X X\n8 EL_DOB Date of birth DATE 8 X X X X X X X X X X X\n9 EL_AGE_GRP_CD Age group code NUM 1 X X X X X X X X X X X\n10 EL_SEX_CD Sex CHAR 1 X X X X X X X X X X X\n11 EL_RACE_ETHNCY_CD Race/ethnicity (from MSIS) CHAR 1 X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

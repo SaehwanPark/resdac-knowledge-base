@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__record-layout-million-hearts_xlsx__10a5b94754__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/10a5b94754c766cb1dad7c4ed5361d3db70f550d.xlsx",
+  "page": 2,
+  "text": "Provider's Last Name CHAR 100\nINSERT_DATE Date the Record was Created DATE 8\nUPDATE_DATE Date the Record was Modified DATE 8\nACTIVATION_DATE Date the Provider Joined the Program DATE 8\nDEACTIVATION_DATE Date the Provider Left the Program DATE 8",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-million-hearts.xlsx"
+}

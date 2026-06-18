@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p36__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 36,
+  "text": "included on the NCH claims as a line item on the non-institutional claim. \nSHORT NAME: BETOS \nLONG NAME: BETOS_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nNCH \nVALUES: \nD1A = Medical/Surgical supplies \nD1B = Hospital beds \nD1C = Oxygen and supplies \nD1D = Wheelchairs \nD1E = Other DME \nD1F = Prosthetic/Orthotic devices \nD1G = Drugs Administered through \nDME \nI1A = Standard imaging — chest \nI1B = Standard imaging — \nmusculoskeletal \nI1C = Standard imaging — breast \nI1D = Standard imaging — contrast",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

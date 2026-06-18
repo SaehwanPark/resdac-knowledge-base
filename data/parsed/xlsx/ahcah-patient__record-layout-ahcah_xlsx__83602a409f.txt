@@ -1,0 +1,36 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Acute Hospital Care at Home File — Patient File
+Version — January 2024
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+FAC_DATA_SUBMSN_DT	Facility Data Submission Date	DATE	8
+CCN	CMS Certification Number (Facility Provider Number)	CHAR	6
+PRVDR_STATE	Provider State	CHAR	2
+FAC_TIER	Tier 1:  25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients	NUM	1
+STATE_BENE_MDCD_ID	Encrypted State-Specific Medicaid Beneficiary ID	CHAR	32
+PGM_ID	Program Identifier (1=FFS Medicare; 2=FFS Medicaid; 3=Dual)	NUM	1
+ADMSN_DT	Facility Admission Date	DATE	8
+AHCAH_WVR_SUBMSN_ID	AHCAH Waiver Submission ID	CHAR	15
+PRVDR_NAME	Name of Facility	CHAR	255
+PRVDR_PHNE_NUM	Facility Phone Number	CHAR	22
+PRVDR_ADR	Facility Location Address	CHAR	510
+PRVDR_CITY	Facility Location City	CHAR	255
+PRVDR_ZIP_CD	Facility Location City Zip Code	CHAR	10
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Acute Hospital Care at Home File — Hospital File
+Version — January 2024
+SAS name	Label	Type	Length
+CCN	CMS Certification Number (Facility Provider Number)	CHAR	6
+PRVDR_STATE	Provider State	CHAR	2
+FAC_TIER	Tier 1:  25+ AHCAH Patients; Tier 2: <= 24 AHCAH Patients	NUM	1
+FAC_DATA_SUBMSN_DT	Facility Data Submission Date	DATE	8
+DISCHARGES	Count of AHCAH Discharges During the Data Submission Period	NUM	8
+MORTALITIES	Count of AHCAH Mortalities During the Data Submission Period	NUM	8
+ESCALATIONS	Count of AHCAH Patnts Trnsfrrd Back to Inpat Fac During the Data Submissn Period	NUM	8
+AHCAH_WVR_SUBMSN_ID	AHCAH Waiver Submission ID	CHAR	15
+PRVDR_NAME	Name of Facility	CHAR	255
+PRVDR_PHNE_NUM	Facility Phone Number	CHAR	22
+PRVDR_ADR	Facility Location Address	CHAR	510
+PRVDR_CITY	Facility Location City	CHAR	255
+PRVDR_ZIP_CD	Facility Location City Zip Code	CHAR	10

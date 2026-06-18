@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_584",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "activities (excluding rehabilitation therapy sessions) were limited because of pain? 1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to answer \n^ = Blank\n521 PAIN_DAY_DAY_DSCHRG_CD PAIN_DAY_DAY_DSCHRG_CD Pain interference with DTD activities (Dsch) CHAR 1 This column document, at the time of discharge, how often, in the past five days, day-to-day activities (excluding rehabilitation therapy sessions) were limited because of pain? 1 = Rarely or not",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

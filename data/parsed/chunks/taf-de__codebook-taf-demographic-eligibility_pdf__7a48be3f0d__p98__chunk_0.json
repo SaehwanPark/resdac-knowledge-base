@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p98__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 98,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n58 \nELGBL_AFTR_EOY_IND \nLABEL: \nEligible After End of Year — Indicator \nDESCRIPTION: Indicates if the beneficiary's T-MSIS eligibility end date was recoded to the last day of the calendar \nyear because the original eligibility end date was either NULL or after the last day of the calendar year, \neither of which indicates the beneficiary was eligible beyond the",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

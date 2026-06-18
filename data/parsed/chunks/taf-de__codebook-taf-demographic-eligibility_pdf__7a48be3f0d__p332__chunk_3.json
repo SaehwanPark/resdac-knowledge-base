@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p332__chunk_3",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 332,
+  "text": "concurrent with an 1115 or 1915(b) managed care authority \n33 = 1915(c) waiver (T-MSIS DD v2.1) \n89 = Two or more 1915(c) waivers in the latest month \nNull/missing = not one of the 1915 waivers, or source value is missing or unknown \nCOMMENT: \nThe value is from the last populated '1915C Waiver Type Code'. There are up to 10 waiver type codes \nfor 1915(c) waivers in total; i.e., where the monthly waiver type = 06–19 or 33. The value is set to '89' \nif there are two or more 1915c waivers in the",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

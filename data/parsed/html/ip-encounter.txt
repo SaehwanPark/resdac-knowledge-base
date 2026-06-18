@@ -1,0 +1,13 @@
+The Medicare Encounter Inpatient file contains Medicare Advantage plan records for inpatient hospital stays.
+This file includes (variable highlights):
+- Admission, discharge dates
+- Diagnosis (ICD diagnosis) codes
+- Procedure (ICD procedure) codes
+- Diagnostic related group (DRG) codes
+- Patient discharge status code
+- Organization NPI
+- Part C/Medicare Advantage benefit package and contract number
+- Revenue center codes, dates, unit counts
+- No payment variables are available
+Special considerations:
+- Many Medicare Advantage Plans offer extra coverage in addition to services covered under traditional fee-for-service Medicare (e.g., vision, hearing, dental, and/or health and wellness programs). Encounter data may include records for some of these additional items and services provided under the plan.

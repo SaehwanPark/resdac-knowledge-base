@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p46__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 46,
+  "text": "CHAR \nLENGTH: \n3 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \nhttps://www.nber.org/data/ssa-fips-state-county-crosswalk.html \nCOMMENT: \nThe county code corresponding to the home address is used. When home address is unavailable, the \ncounty code corresponding to the mailing address is used instead. \nThis county code value is the most recent in the calendar year (or, if not populated, then most recent \nvalue from the two-prior year[s] is used). \n^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

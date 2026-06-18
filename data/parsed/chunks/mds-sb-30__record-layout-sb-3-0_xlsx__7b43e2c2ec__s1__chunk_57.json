@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_57",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "information\n0=No\n1=Yes\n^=Blank(skip pattern)\n89 B0600_SPCH_CLRTY_CD B0600_SPCH_CLRTY_CD B0600 Speech Clarity Code CHAR 1 The data in this column describes the resident's speech pattern. -=Not assessed/no information\n0=Clear Speech-distinct intelligible words\n1=Unclear speech-slurred or mumbled words\n2=No speech-absence of spoken word\n^=Blank(skip pattern)\n90 B0700_SELF_UNDRSTOD_CD B0700_SELF_UNDRSTOD_CD B0700 Makes Self Understood Code CHAR 1 The data in this column identifies the resident's",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

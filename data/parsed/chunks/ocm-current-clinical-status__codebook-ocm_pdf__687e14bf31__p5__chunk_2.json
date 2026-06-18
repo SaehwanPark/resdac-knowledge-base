@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p5__chunk_2",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 5,
+  "text": "or it was invalid (reference details in \nthe RPTD_TO_RGSTRY codebook entry) \nCOMMENT: \nFor any initial diagnosis date (INITL_DGNS_DT) after 1/1/2018, this variable indicates whether the \nAJCC 7th edition or the AJCC 8th Edition was reported. AJCC 7th Edition is effective for cancer patients \ndiagnosed through 12/31/2017; AJCC 8th Edition is effective for cancer patients diagnosed on or after \n1/1/2018. To support participants that did not have AJCC 8th Edition staging available, the OCM Data",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

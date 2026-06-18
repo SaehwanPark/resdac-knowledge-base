@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_166",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Respondent Code CHAR 1 The data in this column identifies the primary respondent for the daily and activity preferences questions. -=Not assessed/no information\n1=Resident\n2=Family or significant other (close friend or other respresentative)\n9=Interview could not be completed by resident or family/significant other (\"No response\" to 3 or more items)\n^=Blank (skip pattern)\n196 F0700_STF_CNDCT_ACTVTY_CD F0700_STF_CNDCT_ACTVTY_CD F0700 Conduct Staff Assessment of Daily and Activity Preferences",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

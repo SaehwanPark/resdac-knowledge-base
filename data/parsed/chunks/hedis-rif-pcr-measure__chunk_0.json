@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif-pcr-measure__chunk_0",
+  "source_document": "data/raw/html/dataset_page/21d6d237c32fea07af50f6e40ad3e0e6d3a0d116.html",
+  "page": null,
+  "text": "The HEDIS Medicare Advantage Plan All-Cause Readmissions (PCR) File (referred to as File 2 in the file name) is a patient-level file that contains all variables pertinent to the PCR measure. There is a separate record for each acute inpatient hospital discharge during the year.\nWhat does this file include? (variable highlights)\n- Readmission indicator\n- Chronic condition weight\nEach record represents a hospitalization for a beneficiary in the calendar year (CY). Beneficiaries with multiple",
+  "dataset": "hedis-rif-pcr-measure",
+  "url": "https://resdac.org/cms-data/files/hedis-rif-pcr-measure"
+}

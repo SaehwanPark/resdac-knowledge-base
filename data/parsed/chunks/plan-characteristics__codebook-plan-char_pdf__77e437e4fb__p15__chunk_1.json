@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p15__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 15,
+  "text": "Plan Indicator \nDESCRIPTION: Indicates whether a dual eligible special needs plan (D-SNP) is an Applicable Integrated Plan (AIP). \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes (D-SNP AIP plan) \nN = No (D-SNP is not an AIP plan) \n9 = Not Applicable \n\nCOMMENT: \nThis variable is new in 2023. \nThe Bipartisan Budget Act (BBA) of 2018 permanently authorized Medicare Advantage dual-eligible \nspecial needs plans (D-SNPs), strengthened Medicare-Medicaid integration requirements.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

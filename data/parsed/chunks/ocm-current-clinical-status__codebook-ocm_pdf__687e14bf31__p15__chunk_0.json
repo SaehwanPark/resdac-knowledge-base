@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p15__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 15,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n11 \nESTROGEN_RECEPTOR \nLABEL: \nBreast Cancer Estrogen Receptor \nDESCRIPTION: Breast cancer estrogen receptor. \nSHORT NAME: ESTROGEN_RECEPTOR \nLONG NAME: ESTROGEN_RECEPTOR \nTYPE: \nCHAR \nLENGTH: \n30 \nFILE(S): \nClinical and staging \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \nNone Selected \nNot Tested \nNegative \nPositive \nNull/missing = n/a (not breast cancer); or",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

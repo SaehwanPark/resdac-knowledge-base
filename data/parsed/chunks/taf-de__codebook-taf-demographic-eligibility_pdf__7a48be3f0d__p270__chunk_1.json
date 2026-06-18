@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p270__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 270,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \nC = Chinese \nD = German \nE = English \nF = French \nG = Greek \nI = Italian \nJ = Japanese \nN = Norwegian \nO = Other \nP = Polish \nR = Russian \nS = Spanish \nV = Swedish \nW = Serbo-Croatian \nNull/missing = source value is missing or unknown \nCOMMENT: \nThis value uses the most recent PRMRY_LANG_CD in the calendar year (or, if not populated, then most \nrecent value from the two-prior",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

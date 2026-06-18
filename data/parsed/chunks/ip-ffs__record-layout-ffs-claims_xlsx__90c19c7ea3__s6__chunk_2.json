@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_2",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "CHAR 5 10\nPMTDNLCD CARR_CLM_PMT_DNL_CD Carrier Claim Payment Denial Code CHAR 2 11\nPMT_AMT CLM_PMT_AMT Claim (Medicare) Payment Amount NUM 12 12\nPRPAYAMT CARR_CLM_PRMRY_PYR_PD_AMT NCH Primary Payer (if not Medicare) Claim Paid Amount NUM 12 13\nRFR_UPIN RFR_PHYSN_UPIN Carrier/DMERC Claim Referring Physician UPIN Number CHAR 12 14\nRFR_NPI RFR_PHYSN_NPI Carrier/DMERC Claim Referring Physician NPI Number CHAR 12 15\nASGMNTCD CARR_CLM_PRVDR_ASGNMT_IND_SW Carrier Claim Provider Assignment Indicator",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

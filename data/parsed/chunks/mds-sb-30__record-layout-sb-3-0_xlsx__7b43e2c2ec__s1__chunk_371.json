@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_371",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "information\n0=No\n1=Yes\n413 M0210_STG_1_HGHR_ULCR_CD M0210_STG_1_HGHR_ULCR_CD M0210 One or More Stage 1 or Higher Unhealed Pressure Ulcer Code CHAR 1 The data in this column indicates whether the resident had one or more unhealed pressure ulcer(s) at Stage 1 or higher. -=Not assessed/no information\n0=No\n1=Yes\n414 M0300A_STG_1_ULCR_NUM M0300A_STG_1_ULCR_NUM M0300A Stage 1 Pressure Ulcer Number CHAR 1 The data in this column indicates the current number of unhealed Stage 1 pressure ulcers. 0",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

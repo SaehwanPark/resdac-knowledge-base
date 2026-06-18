@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_22",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "23\nALOWD_SRVC_QTY Maximum Allowed Service Quantity NUM 8 24\nLINE_PRCDR_CD_DT Date Line Procedure Performed DATE 8 25\nLINE_PRCDR_CD Line Procedure Code CHAR 8 26\nLINE_PRCDR_CD_SYS Line Procedure Code System/Nomenclature CHAR 2 27\nLINE_PRCDR_MDFR_CD_1 Line Procedure Code Modifier Code 1 CHAR 2 28\nLINE_PRCDR_MDFR_CD_2 Line Procedure Code Modifier Code 2 CHAR 2 29\nLINE_PRCDR_MDFR_CD_3 Line Procedure Code Modifier Code 3 CHAR 2 30\nLINE_PRCDR_MDFR_CD_4 Line Procedure Code Modifier Code 4 CHAR 2",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

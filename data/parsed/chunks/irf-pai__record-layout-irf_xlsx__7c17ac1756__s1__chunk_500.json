@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_500",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "race. 0 = No\n1 = Yes\n430 RACE_NONE_ABV_CD RACE_NONE_ABV_CD Race: None of the above CHAR 1 The data in this column is the patient's response to their race. 0 = No\n1 = Yes\n431 PREFRD_LANG_TXT PREFRD_LANG_TXT Preferred language CHAR 15 The data in this column is the patient's preferred language.\n432 NEED_WNT_INTRPTR_CD NEED_WNT_INTRPTR_CD Does the patient need or want an interpreter CHAR 1 This column contains information on whether the patient needs an interpreter to communicate with a doctor or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_361",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "hospital admission\n02 = Yes, used hospital emergency department WITH hospital admission\nUK = Unknown CHAR 2 x x x\nM2310_ECR_MENTL_BHVRL_PRBLM M2310 Emergent Care Reason- Acute Mental/Behavioral This field indicates that the reason the patient received emergent care was due to acute mental/behavioral health problem. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2310_ECR_CRDC_DSRTHM M2310 Emergent Care Reason- Cardiac Dysrhythmia This field indicates that the reason the patient received",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_309",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "J0600A Pain Intensity Numeric Rating Scale Number CHAR 2 The data in this column indicates the resident's numeric pain rating value over the last five days on a zero to ten scale. 0 Minimum\n10 Maximum\n99 Unable to answer\n- Not assessed/no information\n^ Blank (skip pattern)\n342 J0600B_VRBL_DSCRPTR_SCALE_NUM J0600B_VRBL_DSCRPTR_SCALE_NUM J0600B Pain Intensity Verbal Descriptor Scale Number CHAR 1 The data in this column indicates the resident's intensity of worst pain experienced in the last five",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

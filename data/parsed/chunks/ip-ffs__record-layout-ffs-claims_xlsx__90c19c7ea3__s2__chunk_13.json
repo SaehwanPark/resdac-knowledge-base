@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_13",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "Code) CHAR 4 63\nMS_DRG_GRPR_VRSN_CD MS_DRG_GRPR_VRSN_CD MS-DRG Grouper Version Code CHAR 8 178 New5\nADMTG_DGNS_CD ADMTG_DGNS_CD Claim Admitting Diagnosis Code CHAR 7 64\nPRNCPAL_DGNS_CD PRNCPAL_DGNS_CD Claim Principal Diagnosis Code CHAR 7 65\nICD_DGNS_CD1 ICD_DGNS_CD1 Claim Diagnosis Code I CHAR 7 66\nICD_DGNS_CD2 ICD_DGNS_CD2 Claim Diagnosis Code II CHAR 7 67\nICD_DGNS_CD3 ICD_DGNS_CD3 Claim Diagnosis Code III CHAR 7 68\nICD_DGNS_CD4 ICD_DGNS_CD4 Claim Diagnosis Code IV CHAR 7 69\nICD_DGNS_CD5",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

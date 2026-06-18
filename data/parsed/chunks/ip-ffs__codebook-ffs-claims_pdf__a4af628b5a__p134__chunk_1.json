@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p134__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 134,
+  "text": "no vent \nCD = SSO standard payment, no vent \n\nCE = SSO standard payment, outlier, no \nvent \n\nCF = Standard payment full DRG, no vent \n\nCG = Standard payment full DRG, outlier, \nno vent \n\n*************SNF Pricer Return Codes********* \n*******************TOB 21X******************* \nSNF payment return codes: \n00 = RUG III group rate returned \nSNF Error return codes: \n20 = Bad RUG code \n30 = Bad MSA code \n40 = Thru date < July 1, 1998, or \ninvalid \n50 = Invalid federal blend for that \nyear \n60 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

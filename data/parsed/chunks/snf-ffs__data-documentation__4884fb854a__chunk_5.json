@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__data-documentation__4884fb854a__chunk_5",
+  "source_document": "data/raw/html/documentation_page/4884fb854a6d49f92d07233bdd338c6ca594c7b0.html",
+  "page": null,
+  "text": "| 32 | RNDRNG_PHYSN_NPI | Rendering Physician NPI (FFS) | \n\n | 33 | CLM_RNDRNG_PHYSN_SPCLTY_CD | Claim Rendering Physician Specialty Code | \n\n | 34 | CLM_MCO_PD_SW | Claim MCO Paid Switch | \n\n | 35 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (FFS) | \n\n | 36 | CLM_PPS_IND_CD | Claim PPS Indicator Code | \n\n | 37 | CLM_TOT_CHRG_AMT | Claim Total Charge Amount | \n\n | 38 | CLM_ADMSN_DT | Claim Admission Date (FFS) | \n\n | 39 | CLM_IP_ADMSN_TYPE_CD | Claim Inpatient Admission Type Code (FFS)",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs/data-documentation"
+}

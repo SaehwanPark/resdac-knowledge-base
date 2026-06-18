@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_21",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "Code CHAR 5 105 New5\nCLM_CLNCL_TRIL_NUM CLM_CLNCL_TRIL_NUM Clinical Trial Number CHAR 8 108 New6\nRevenue center file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 1\nCLM_ID CLM_ID Claim ID CHAR 15 2\nTHRU_DT CLM_THRU_DT Claim Through Date DATE 8 3\nCLM_LN CLM_LINE_NUM Claim Line Number NUM 13 4\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 5\nREV_CNTR REV_CNTR Revenue Center Code CHAR 4 6\nREV_DT REV_CNTR_DT Revenue Center Date DATE 8 7\nREVANSI1 REV_CNTR_1ST_ANSI_CD Revenue Center 1st",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

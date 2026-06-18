@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p23__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 23,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n19 \npN2b, \npN2c, \npN3, \npN3a, \npN3b, \npN3c, \npNX \nNull/missing = n/a (not required for cancer type); or not reported by OCM participant (reference \ndetails in the RPTD_TO_RGSTRY codebook entry) \n\nCOMMENT: \nPractices were required to report clinical and staging data associated with each beneficiary’s assigned \ncancer. Nodal Disease (N) category describes the regional lymph",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

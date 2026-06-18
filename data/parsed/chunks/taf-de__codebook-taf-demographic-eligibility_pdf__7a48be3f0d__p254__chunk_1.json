@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p254__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 254,
+  "text": "to identify cases in which the beneficiary’s enrollment \nstart and end dates are valid, but the enrollment type is “unknown”; the person is not classified as \nenrolled in either Medicaid or CHIP. Months where the value 0 indicates that the code for enrollment \ntype is not missing, and 1 indicates that it is missing. If the variable that indicates that the enrollment \ntype is missing is null, then the beneficiary was not enrolled at any time during the month. \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

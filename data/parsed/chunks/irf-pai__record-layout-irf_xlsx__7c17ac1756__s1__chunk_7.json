@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Submitted CMG Code CHAR 10 The Case-Mix Group code that is submitted by the facility. This CMG code is calculated by the software the facility utilizes.\n15 TRGT_DT TRGT_DT Target Date DATE 8 For MDS, the target date is the R4 Discharge Date for any discharge, the A4A Reentry Date for any re-entry and the A3A Assessment Reference Date for any other type of assessment. For IRF-PAI, the Target Date is 12: Admission Date. For SB the Target DAte is the same as the Event Date and is equal to the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

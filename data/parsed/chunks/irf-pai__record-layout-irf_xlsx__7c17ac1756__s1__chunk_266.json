@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_266",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "22 This indicates the total number of group speech-language pathology therapy minutes provided in the second\nweek of stay.\n251 CO_TRTMT_SPCH_THRPY_WK_2_NUM CO_TRTMT_SPCH_THRPY_WK_2_NUM O0402CD SLP: Total Minutes Co-treatment Therapy Week 2 NUM 22 This indicates the total number of co-treatment speech-language pathology therapy minutes provided in the\nsecond week of stay.\n252 DBTC_NEUROPATHY_IND DBTC_NEUROPATHY_IND Diabetic Neuropathy Indicator CHAR 3 The code for whether the patient had a",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

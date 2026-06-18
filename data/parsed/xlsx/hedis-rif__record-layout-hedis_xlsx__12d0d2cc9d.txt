@@ -1,0 +1,456 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+HEDIS Person-Level Data — Utilization (File 1)
+Version — June 2025
+RIF SAS name	RIF label	Type	Length	2015–16  RIF sequence1	2017 1	2018 1	2020 1	2021 1
+BENE_ID	CCW Beneficiary Identifier	NUM	8	1	1	1	1	1
+HEDIS_REC_ID	HEDIS Record identifier	NUM	8	2	2	2	2	2
+HEDIS_CNTRCT_ID	Contract Identifier (HEDIS)	CHAR	5	3	3	3	3	3
+HEDIS_PLAN_ID	Plan Identifier (HEDIS)	CHAR	3	4	4	4	4	4
+HEDIS_PLAN_TYPE	Plan Type (HEDIS)	CHAR	30	5	5	5	5	5
+HEDIS_ORG_TYPE	Plan Organization Type (HEDIS)	CHAR	10	6	6	6	6	6
+CMS_RGN_NAME	CMS Region Name for Plan Organization	CHAR	20	7	7	7	7	7
+HEDIS_BENE_STATE_CD	State Code for Beneficiary (Postal)	CHAR	2	8	8	8	8	8
+HEDIS_BENE_ZIP_CD	Beneficiary ZIP code	CHAR	5	9	9	9	9	9
+HEDIS_SEX_CD3	Beneficiary sex assigned at birth. Sex (HEDIS)	CHAR	1	10	10	10	10	10
+HEDIS_BENE_DOB	Beneficiary date of birth (HEDIS)	DATE	8	11	11	11	11	11
+SNP_TYPE_CD	Special Needs Plan (SNP) Type Code	NUM	3	12	12	12	12	12
+BENE_MMC	Beneficiary Member Months Contribution (MMC) to Denominator	NUM	3	13	13	13	13	13
+ABA_DNMTR_IND	Adult BMI Assessment (ABA) Denominator Indicator	NUM	3	14	14	14	—	—
+ABA_NMRTR_IND	Adult BMI Assessment (ABA) Numerator Indicator	NUM	3	15	15	15	—	—
+COL_DNMTR_IND	Colorectal Cancer Screening (COL) Denominator Indicator	NUM	3	16	16	16	14	14
+COL_NMRTR_IND	Colorectal Cancer Screening (COL) Numerator Indicator	NUM	3	17	17	17	15	15
+COL_DNMTR_NO_LISDE_NO_DSBLTY_IND	SES Stratficatn Colorectal Cancr Scrng (COL) Dnmtr: Non-LIS/Non-Dual/Nondisbility	NUM	3	—	—	18	16	16
+COL_NMRTR_NO_LISDE_NO_DSBLTY_IND	SES Stratficatn Colorectal Cancr Scrng (COL) Nmrtr: Non-LIS/Non-Dual/Nondisbility	NUM	3	—	—	19	17	17
+COL_DNMTR_LIS_DE_IND	SES Stratficatn Colorectal Cancer Screening (COL) Dnmtr: LIS or Dual Elig	NUM	3	—	—	20	18	18
+COL_NMRTR_LIS_DE_IND	SES Stratification Colorectal Cancer Screening (COL) Nmrtr: LIS or Dual Eligible	NUM	3	—	—	21	19	19
+COL_DNMTR_DSBLTY_IND	SES Stratification Colorectal Cancer Screening (COL) Denominator: Disability	NUM	3	—	—	22	20	20
+COL_NMRTR_DSBLTY_IND	SES Stratificatn for Colorectal Cancer Screening (COL) Nmrtr: Disability	NUM	3	—	—	23	21	21
+COL_DNMTR_LIS_DE_DSBLTY_IND	SES Stratficatn Colorectal Cancr Screening (COL) Dnmtr: LIS, Dual, & Disability	NUM	3	—	—	24	22	22
+COL_NMRTR_LIS_DE_DSBLTY_IND	SES Stratficatn Colorectal Cancr Screening (COL) Nmrtr: LIS, Dual, & Disability	NUM	3	—	—	25	23	23
+COL_DNMTR_OTHR_POP_IND	SES Stratficatn Colorectal Cancer Screening (COL) Dnmtr: Othr Elig Population	NUM	3	—	—	26	24	24
+COL_NMRTR_OTHR_POP_IND	SES Stratficatn Colorectal Cancer Screening (COL) Nmrtr: Othr Elig Population	NUM	3	—	—	27	25	25
+COL_DNMTR_UNK_POP_IND	SES Stratficatn Colorectal Cancer Screening (COL) Dnmtr: Unknown Elig Populatn	NUM	3	28	26	26
+COL_NMRTR_UNK_POP_IND	SES Stratificatn Colorectal Cancer Screening (COL) Nmrtr: Unknown Elig Populatn	NUM	3	—	—	29	27	27
+BCS_DNMTR_IND	Breast Cancer Screening (BCS) Denominator Indicator	NUM	3	18	18	30	28	28
+BCS_NMRTR_IND	Breast Cancer Screening (BCS) Numerator Indicator	NUM	3	19	19	31	29	29
+BCS_DNMTR_NO_LISDE_NO_DSBLTY_IND	SES Stratficatn Brst Cancr Screenng (BCS) Dnmtr: Non-LIS, Non-Dual, Nondisability	NUM	3	—	—	32	30	30
+BCS_NMRTR_NO_LISDE_NO_DSBLTY_IND	SES Stratficatn Brst Cancr Screenng (BCS) Nmrtr: Non-LIS, Non-Dual, Nondisability	NUM	3	—	—	33	31	31
+BCS_DNMTR_LIS_DE_IND	SES Stratficatn Brst Cancr Screenng (BCS) Dnmtr: Low-Income Subsidy or Dual Elig	NUM	3	—	—	34	32	32
+BCS_NMRTR_LIS_DE_IND	SES Stratficatn Brst Cancr Screenng (BCS) Nmrtr: Low-Income Subsidy or Dual Elig	NUM	3	—	—	35	33	33
+BCS_DNMTR_DSBLTY_IND	SES Stratificatn for Breast Cancer Screenng (BCS) Denominator: Disability	NUM	3	—	—	36	34	34
+BCS_NMRTR_DSBLTY_IND	SES Stratificatn for Breast Cancer Screenng (BCS) Numerator: Disability	NUM	3	—	—	37	35	35
+BCS_DNMTR_LIS_DE_DSBLTY_IND	SES Stratificatn for Brst Cancer Screenng (BCS) Dnmtr: LIS, Dual, & Disability	NUM	3	—	—	38	36	36
+BCS_NMRTR_LIS_DE_DSBLTY_IND	SES Stratificatn for Brst Cancer Screenng (BCS) Nmrtr: LIS, Dual, & Disability	NUM	3	—	—	39	37	37
+BCS_DNMTR_OTHR_POP_IND	SES Stratificatn for Breast Cancer Screenng (BCS) Dnmtr: Other Elig Population	NUM	3	—	—	40	38	38
+BCS_NMRTR_OTHR_POP_IND	SES Stratificatn for Breast Cancer Screenng (BCS) Nmrtr: Other Elig Population	NUM	3	—	—	41	39	39
+BCS_DNMTR_UNK_POP_IND	SES Stratificatn for Breast Cancer Screenng (BCS) Dnmtr: Unknown Elig Population	NUM	3	—	—	42	40	40
+BCS_NMRTR_UNK_POP_IND	SES Stratificatn for Breast Cancer Screenng (BCS) Nmrtr: Unknown Elig Population	NUM	3	—	—	43	41	41
+OMW_DNMTR_IND	Osteoporosis Management in Women Who Had a Fracture (OMW) Denominator Indicator	NUM	3	20	20	44	42	42
+OMW_NMRTR_IND	Osteoporosis Management in Women Who Had a Fracture (OMW) Numerator Indicator	NUM	3	21	21	45	43	43
+CBP_DNMTR_IND	Controlling High Blood Pressure (CBP) Denominator Indicatror	NUM	3	22	22	46	44	44
+CBP_NMRTR_IND	Controlling High Blood Pressure (CBP) Numerator Indicatror	NUM	3	23	23	47	45	45
+PBH_DNMTR_IND	Persistence of Beta-Blocker Treatment After Heart Attack (PBH) Denominator Ind	NUM	3	24	24	48	46	46
+PBH_NMRTR_IND	Persistence of Beta-Blocker Treatmnt After Heart Attack(PBH) Numerator Indicator	NUM	3	25	25	49	47	47
+CDC_DNMTR_1_HBA1C_TSTNG_IND	Comprehensive Diabetes Care (CDC) Denominator 1: HbA1c Testing	NUM	3	26	26	50	48	48
+CDC_NMRTR_1_HBA1C_TSTNG_IND	Comprehensive Diabetes Care (CDC) Numerator 1: HbA1c Testing	NUM	3	27	27	51	49	49
+CDC_DNMTR_2_HBA1C_GT9_IND	Comprehensive Diabetes Care (CDC) Denominator 2: HbA1c Poor Control >9%	NUM	3	28	28	52	50	50
+CDC_NMRTR_2_HBA1C_GT9_IND	Comprehensive Diabetes Care (CDC) Numerator 2: HbA1c Poor Control >9%	NUM	3	29	29	53	51	51
+CDC_DNMTR_3_HBA1C_LT8_IND	Comprehensive Diabetes Care (CDC) Denominator 3: HbA1c Control <8%	NUM	3	30	30	54	52	52
+CDC_NMRTR_3_HBA1C_LT8_IND	Comprehensive Diabetes Care (CDC) Numerator 3: HbA1c Poor Control <8%	NUM	3	31	31	55	53	53
+CDC_DNMTR_4_EYE_EXMNTN_IND	Comprehensive Diabetes Care (CDC) Denominator 4: Eye exam (retinal) performed	NUM	3	32	32	56	54	54
+CDC_NMRTR_4_EYE_EXMNTN_IND	Comprehensive Diabetes Care (CDC) Numerator 4: Eye exam (retinal) performed	NUM	3	33	33	57	55	55
+CDC_DNMTR_7_NRPTHY_IND	Comprehensive Diabetes Care (CDC) Denominator7: Medical Attentn for Nephropathy	NUM	3	34	34	58	56	56
+CDC_NMRTR_7_NRPTHY_IND	Comprehensive Diabetes Care (CDC) Numerator 7: Medical Attentn for Nephropathy	NUM	3	35	35	59	57	57
+CDC_DNMTR_9_BLD_PRSR_CNTL_IND	Comp Diabetes Care (CDC) Denominator 9: Blood Pres Cntrl(BPC)<140/90 mmHg	NUM	3	36	36	60	58	58
+CDC_NMRTR_9_BLD_PRSR_CNTL_IND	Comp Diabetes Care (CDC) Numerator 9: Blood Pres Cntrl(BPC)<140/90 mmHg	NUM	3	37	37	61	59	59
+CDC_DNMTR_NO_LISDE_NO_DSBLTY_IND	SES Strat Comp Diabtes Care Eye Exm (CDC) Dnmtr: Non-LIS, Non-Dual, Nondisablity	NUM	3	—	—	62	60	60
+CDC_NMRTR_NO_LISDE_NO_DSBLTY_IND	SES Strat Comp Diabtes Care Eye Exm (CDC) Nmrtr: Non-LIS, Non-Dual, Nondisablity	NUM	3	—	—	63	61	61
+CDC_DNMTR_LIS_DE_IND	SES Stratficatn Comprehensve Diabetes Care Eye Exm (CDC) Dnmtr: LIS or Dual Elig	NUM	3	—	—	64	62	62
+CDC_NMRTR_LIS_DE_IND	SES Stratification Comp Diabetes Care Eye Exam (CDC) Nmrtr: LIS or Dual Eligible	NUM	3	—	—	65	63	63
+CDC_DNMTR_DSBLTY_IND	SES Stratification Comp Diabetes Care Eye Exam (CDC) Denominator: Disability	NUM	3	—	—	66	64	64
+CDC_NMRTR_DSBLTY_IND	SES Stratificatn for Comprehensve Diabetes Care Eye Exam (CDC) Nmrtr: Disability	NUM	3	—	—	67	65	65
+CDC_DNMTR_LIS_DE_DSBLTY_IND	SES Stratficatn Comp Diabetes Care Eye Exam (CDC) Dnmtr: LIS, Dual, & Disability	NUM	3	—	—	68	66	66
+CDC_NMRTR_LIS_DE_DSBLTY_IND	SES Stratficatn Comp Diabetes Care Eye Exm (CDC) Nmrtr: LIS, Dual, & Disability	NUM	3	—	—	69	67	67
+CDC_DNMTR_OTHR_POP_IND	SES Stratficatn Comp Diabetes Care Eye Exam (CDC) Dnmtr: Othr Elig Population	NUM	3	—	—	70	68	68
+CDC_NMRTR_OTHR_POP_IND	SES Stratficatn Comp Diabetes Care Eye Exam (CDC) Nmrtr: Othr Elig Population	NUM	3	—	—	71	69	69
+CDC_DNMTR_UNK_POP_IND	SES Stratficatn Comp Diabetes Care Eye Exam (CDC) Dnmtr: Unknown Elig Populatn	NUM	3	—	—	72	70	70
+CDC_NMRTR_UNK_POP_IND	SES Stratificatn Comp Diabetes Care Eye Exam (CDC) Nmrtr: Unknown Elig Populatn	NUM	3	—	—	73	71	71
+SPR_DNMTR_IND	Spirometry Testing in the Assessment and Diagnosis of COPD (SPR) Denominator Ind	NUM	3	38	38	74	72	72
+SPR_NMRTR_IND	Spirometry Testing in the Assessment and Diagnosis of COPD (SPR) Numerator Ind	NUM	3	39	39	75	73	73
+KED_DNMTR_AGE_18_64_IND	Kidney Health Eval for Patients with Diabetes (KED) Denominator: Ages 18-64	NUM	3	—	—	—	74	74
+KED_NMRTR_AGE_18_64_IND	Kidney Health Evaluation for Patients with Diabetes (KED) Numerator: Ages 18-64	NUM	3	—	—	—	75	75
+KED_DNMTR_AGE_65_74_IND	Kidney Health Eval for Patients with Diabetes (KED) Denominator: Ages 65-74	NUM	3	—	—	—	76	76
+KED_NMRTR_AGE_65_74_IND	Kidney Health Evaluation for Patients with Diabetes (KED) Numerator: Ages 65-74	NUM	3	—	—	—	77	77
+KED_DNMTR_AGE_75_85_IND	Kidney Health Eval for Patients with Diabetes (KED) Denominator: Ages 75-85	NUM	3	—	—	—	78	78
+KED_NMRTR_AGE_75_85_IND	Kidney Health Evaluation for Patients with Diabetes (KED) Numerator: Ages 75-85	NUM	3	—	—	—	79	79
+PCE_DNMTR_CNT	Pharmacotherpy Mgt of COPD Exacerbatn (PCE) Dnmtr: IP Discharge & ED Visit Count	NUM	3	40	40	76	80	80
+PCE_NMRTR_1_CRTCOSTRD_CNT	Pharmacthrpy Mgt of COPD Excrbtn(PCE) Nmrtr 1: 14-Day Systmc Corticosteroid Count	NUM	3	41	41	77	81	81
+PCE_NMRTR_2_BRNCODLTR_CNT	Pharmacotherapy Mgt of COPD Exacrbtn (PCE) Nmrtr 2: 30-Day Bronchodilator Count	NUM	3	42	42	78	82	82
+FUH_DNMTR_MENTL_ILL_DSCHRG_CNT	Follow-Up After Hospitalization for Mental Illness (FUH) Dnmtr: Discharge Count	NUM	3	43	43	—	—	—
+FUH_NMRTR_1_30DAY_FLWP_CNT	Follow-Up After Hospitalizatn for Mental Illness(FUH) Nmrtr 1: 30-Day Flwp Count	NUM	3	44	44	—	—	—
+FUH_NMRTR_2_7DAY_FLWP_CNT	Follow-Up After Hospitalizatn for Mental Illness (FUH) Nmrtr 2: 7-Day Flwp Count	NUM	3	45	45	—	—	—
+FUH_DNMTR_AGE_6_17_DSCHRG_CNT	Follow-Up After Hosp for Mental Illness (FUH) Dnmtr: Discharge Count 6-17 Years	NUM	3	—	—	79	83	83
+FUH_NMRTR_1_AGE_6_17_30DAY_CNT	Follow-Up Aftr Hosp for Mntl Illness (FUH) Nmrtr 1: 30-Day Flwp Dschrg Cnt 6-17 Yrs	NUM	3	—	—	80	84	84
+FUH_NMRTR_2_AGE_6_17_7DAY_CNT	Follow-Up Aftr Hosp for Mntl Illness (FUH) Nmrtr 2: 7-Day Flwp Dschrg Cnt 6-17 Yrs	NUM	3	—	—	81	85	85
+FUH_DNMTR_AGE_18_64_DSCHRG_CNT	Follow-Up After Hosp for Mental Illness (FUH) Dnmtr: Discharge Count 18-64 Years	NUM	3	—	—	82	86	86
+FUH_NMRTR_1_AGE_18_64_30DAY_CNT	Follw-Up Aftr Hosp for Mntl Illness (FUH) Nmrtr 1: 30-Day Flwp Dschrg Cnt 18-64 Yrs	NUM	3	—	—	83	87	87
+FUH_NMRTR_2_AGE_18_64_7DAY_CNT	Follw-Up Aftr Hosp for Mntl Illness (FUH) Nmrtr 2: 7-Day Flwp Dschrg Cnt 18-64 Yrs	NUM	3	—	—	84	88	88
+FUH_DNMTR_AGE_GE65_DSCHRG_CNT	Follow-Up After Hosp for Mental Illness (FUH) Dnmtr: Discharge Count 65+ Years	NUM	3	—	—	85	89	89
+FUH_NMRTR_1_AGE_GE65_30DAY_CNT	Follw-Up Aftr Hosp for Mntl Illness (FUH) Nmrtr 1: 30-Day Flwp Dschrg Cnt 65+ Yrs	NUM	3	—	—	86	90	90
+FUH_NMRTR_2_AGE_GE65_7DAY_CNT	Follw-Up Aftr Hosp for Mntl Illness (FUH) Nmrtr 2: 7-Day Flwp Dschrg Cnt 65+ Yrs	NUM	3	—	—	87	91	91
+AMM_DNMTR_IND	Antidepressant Medication Management (AMM) Denominator 1	NUM	3	46	46	88	92	92
+AMM_NMRTR_1_ACUTE_TRTMT_IND	Antidepressant Medication Mgt (AMM) Nmrtr 1: Effective Acute Phase Treatment	NUM	3	47	47	89	93	93
+AMM_NMRTR_2_CNTD_TRTMT_IND	Antidepressant Medicatn Mgt (AMM) Nmrtr2: Effective Continuation Phase Treatmnt	NUM	3	48	48	90	94	94
+ART_DNMTR_IND	Disease-Mod Anti-Rheumatic Drug Therapy for Rheumtd Arthritis (ART) Dnmntr Ind	NUM	3	49	49	91	95	—
+ART_NMRTR_IND	Disease-Mod Anti-Rheumatic Drug Therapy for Rheumtd Arthritis (ART) Nmrtr Ind	NUM	3	50	50	92	96	—
+MPM_DNMTR_1_ACEI_ARB_IND	Annl Monitrng-Patients on Persistnt Meds (MPM) Dnmntr 1: ACE Inhibitors or ARBs	NUM	3	51	—	—	—	—
+MPM_NMRTR_1_ACEI_ARB_IND	Annl Monitrng-Patients on Persistnt Meds (MPM) Numrtr 1: ACE Inhibitors or ARBs	NUM	3	52	—	—	—	—
+MPM_DNMTR_2_DIGOXIN_IND	Annual Monitoring for Patients on Persistent Meds (MPM) Denominator 2: Digoxin	NUM	3	53	—	—	—	—
+MPM_NMRTR_2_DIGOXIN_IND	Annual Monitoring for Patients on Persistent Meds (MPM) Numerator 2: Digoxin	NUM	3	54	—	—	—	—
+MPM_DNMTR_3_DRTCS_IND	Annual Monitoring for Patients on Persistent Meds (MPM) Denominator 3: Diuretics	NUM	3	55	—	—	—	—
+MPM_NMRTR_3_DRTCS_IND	Annual Monitoring for Patients on Persistent Meds (MPM) Numerator 3: Diuretics	NUM	3	56	—	—	—	—
+DAE_DNMTR_IND	Use of High-Risk Medications in the Elderly (DAE) Denominator Indicator	NUM	3	57	51	93	97	95
+DAE_NMRTR_1_AT_LST_1_RX_IND	High-Risk Medication Usage in Elderly (DAE) Nmrtr 1: At Least One Prescription	NUM	3	58	52	94	—	—
+DAE_NMRTR_2_AT_LST_2_RX_IND	High-Risk Medication Usage in Elderly (DAE) Nmrtr 2: At Least Two Prescriptions	NUM	3	59	53	95	—	—
+DDE_DNMTR_1_HOF_ANTPSYCT_IND	DDE Dnmtr 1: Hstry Falls+Tricyclic Antidepressnts Antipsychotics or Sleep Agnts	NUM	3	60	54	96	—	—
+DDE_NMRTR_1_HOF_ANTPSYCT_IND	DDE Nmrtr 1: Hstry Falls+Tricyclic Antidepressnts Antipsychotics or Sleep Agnts	NUM	3	61	55	97	—	—
+DDE_DNMTR_2_DMNT_ANTDPRST_IND	DDE Denominator 2: Dementia + Tricyclic Antidepressants or Anticholineric Agents	NUM	3	62	56	98	—	—
+DDE_NMRTR_2_DMNT_ANTDPRST_IND	DDE Numerator 2: Dementia + Tricyclic Antidepressants or Anticholineric Agents	NUM	3	63	57	99	—	—
+DDE_DNMTR_3_CKD_NSAID_IND	DDE Dnmtr 3: Chronic Kidney Disease+Nonaspirin NSAIDs or Cox2 Selective NSAIDs	NUM	3	64	58	100	—	—
+DDE_NMRTR_3_CKD_NSAID_IND	DDE Nmrtr 3: Chronic Kidney Disease+Nonaspirin NSAIDs or Cox2 Selective NSAIDs	NUM	3	65	59	101	—	—
+DAE_NMRTR_RATE_1_IND	Use of High-Risk Medications in Older Adults (DAE) Numerator: Rate 1 Indicator	NUM	3	—	—	—	98	96
+DAE_NMRTR_RATE_2_IND	Use of High-Risk Medications in Older Adults (DAE) Numerator: Rate 2 Indicator	NUM	3	—	—	—	99	97
+DAE_NMRTR_TOT_RATE_IND	Use of High-Risk Medications in Older Adults (DAE) Numerator: Total Rate Ind	NUM	3	—	—	—	100	98
+DDE_DNMTR_1_IND	Potentlly Harmful Drug-Disease Interactn in Older Adult (DDE) Dnmntr: Rate 1 Ind	NUM	3	—	—	—	101	99
+DDE_NMRTR_RATE_1_IND	Potentially Harmful Drug-Disease Interaction in Older Adults (DDE) Nmrtr: Rate 1	NUM	3	—	—	—	102	100
+DDE_DNMTR_2_IND	Potentlly Harmful Drug-Disease Interactn in Older Adult (DDE) Dnmtr: Rate 2 Ind	NUM	3	—	—	—	103	101
+DDE_NMRTR_RATE_2_IND	Potentially Harmful Drug-Disease Interaction in Older Adults (DDE) Nmrtr: Rate 2	NUM	3	—	—	—	104	102
+DDE_DNMTR_3_IND	Potentlly Harmful Drug-Disease Interactn in Older Adult (DDE) Dnmtr: Rate 3 Ind	NUM	3	—	—	—	105	103
+DDE_NMRTR_RATE_3_IND	Potentially Harmful Drug-Disease Interaction in Older Adults (DDE) Nmrtr: Rate 3	NUM	3	—	—	—	106	104
+AAP_DNMTR_AGE_20_44_IND	Adult Access to Preventive-Ambulatory Hlth Services(AAP) Denominator: Ages 20-44	NUM	3	66	60	102	107	105
+AAP_NMRTR_AGE_20_44_IND	Adult Access to Preventive-Ambulatory Hlth Services (AAP) Numerator: Ages 20-44	NUM	3	67	61	103	108	106
+AAP_DNMTR_AGE_45_64_IND	Adult Access to Preventive-Ambulatory Hlth Services(AAP) Denominator: Ages 45-64	NUM	3	68	62	104	109	107
+AAP_NMRTR_AGE_45_64_IND	Adult Access to Preventive-Ambulatory Hlth Services (AAP) Numerator: Ages 45-64	NUM	3	69	63	105	110	108
+AAP_DNMTR_AGE_65_OVR_IND	Adult Access to Preventive-Ambulatory Hlth Services (AAP) Denominator: Ages 65+	NUM	3	70	64	106	111	109
+AAP_NMRTR_AGE_65_OVR_IND	Adult Access to Preventive-Ambulatory Health Services (AAP) Numerator: Ages 65+	NUM	3	71	65	107	112	110
+IET_DNMTR_AGE_13_17_IND	Initiatn & Engagemnt of Alcohol & Othr Drug Depend Trtmnt (IET) Dnmtr: 13-17 Yrs	NUM	3	72	—	—	—	—
+IET_NMRTR_TRTMT_INITN_13_17_IND	Alcohol & Othr Drug Depend Trtmnt (IET) Numerator: Treatmnt Initiation 13-17 Yrs	NUM	3	73	—	—	—	—
+IET_NMRTR_TRTMT_ENGGMT_13_17_IND	Alcohol & Othr Drug Depend Trtmnt (IET) Numerator: Treatmnt Engagement 13-17 Yrs	NUM	3	74	—	—	—	—
+IET_DNMTR_AGE_GE18_IND	Initiatn & Engagemnt of Alcohol & Othr Drug Depend Trtmnt (IET) Dnmtr: 18+ Yrs	NUM	3	75	—	—	—	—
+IET_NMRTR_INITN_GE18_IND	Alcohol & Othr Drug Depend Trtmnt (IET) Numerator: Treatmnt Initiation 18+ years	NUM	3	76	—	—	—	—
+IET_NMRTR_ENGGMT_GE18_IND	Alcohol & Othr Drug Depend Trtmnt (IET) Numerator: Treatmnt Engagement 18+ years	NUM	3	77	—	—	—	—
+IET_DNMTR_AAD_AGE_13_17_IND	Initn & Engagmnt of Alc & Othr Drug Dpnd Trtmnt (IET) Dnmtr: Alc Abuse 13-17 Yrs	NUM	3	—	66	108	113	111
+IET_NMRTR_AAD_INITN_13_17_IND	Init & Engagmt Alc & Othr Drug Dpnd Trtmnt Nmrtr: Alc Abuse Trtmt Init 13-17 Yrs	NUM	3	—	67	109	114	112
+IET_NMRTR_AAD_ENGGMT_13_17_IND	Init & Engagmt Alc & Oth Drug Dpnd Trtmnt Nmrtr: Alc Abuse Trtmt Enggmt 13-17 Yr	NUM	3	—	68	110	115	113
+IET_DNMTR_OAD_AGE_13_17_IND	Initn & Enggmnt of Alc & Oth Drug Depnd Trtmnt (IET)Dnmtr: Opioid Abuse 13-17 Yr	NUM	3	—	69	111	116	114
+IET_NMRTR_OAD_INITN_13_17_IND	Initn & Enggmnt Alc & Oth Drug Depnd Trmt Nmtr: Opioid Abuse Trtmt Init 13-17 Yr	NUM	3	—	70	112	117	115
+IET_NMRTR_OAD_ENGGMT_13_17_IND	Initn & Engmnt Alc & Oth Drug Depnd Trmt Nmtr: Opioid Abuse Trtmt Engmt 13-17 Yr	NUM	3	—	71	113	118	116
+IET_DNMTR_ODA_AGE_13_17_IND	Initn & Enggmt of Alc & Oth Drug Depnd Trmt (IET) Dnmtr: Oth Drug Abuse 13-17 Yr	NUM	3	—	72	114	119	117
+IET_NMRTR_ODA_INITN_13_17_IND	Initn & Enggmt Alc- Oth Drug Dep Trtmnt Nmrtr: Oth Drug Ab Trtmnt Initn 13-17 Yr	NUM	3	—	73	115	120	118
+IET_NMRTR_ODA_ENGGMT_13_17_IND	Initn & Enggmt Alc& Oth Drug Dep Trtmnt Nmtr: Oth Drug Abuse Trmt Engmt 13-17 Yr	NUM	3	—	74	116	121	119
+IET_DNMTR_TOT_AGE_13_17_IND	Initn & Engagmnt of Alc & Othr Drug Depend Trtmnt (IET) Dnmtr: Total, 13-17 Yrs	NUM	3	—	75	117	122	120
+IET_NMRTR_TOT_INITN_13_17_IND	Initn & Engagmt Alc & Othr Drug Depend Trtmnt Nmrtr: Initiation Total, 13-17 Yrs	NUM	3	—	76	118	123	121
+IET_NMRTR_TOT_ENGGMT_13_17_IND	Initn & Engagmnt Alc & Othr Drug Depend Trtmnt Nmrtr: Engagmnt Total, 13-17 Yrs	NUM	3	—	77	119	124	122
+IET_DNMTR_AAD_AGE_GE18_IND	Initn & Engagmnt of Alc & Othr Drug Depnd Trtmnt (IET) Dnmtr: Alc Abuse 18+ Yrs	NUM	3	—	78	120	125	123
+IET_NMRTR_AAD_INITN_GE18_IND	Init & Engagmt Alc & Othr Drug Depnd Trtmnt Nmrtr: Alc Abuse Trtmnt Init 18+ Yrs	NUM	3	—	79	121	126	124
+IET_NMRTR_AAD_ENGGMT_GE18_IND	Init & Engagmt Alc & Oth Drug Depnd Trtmnt Nmrtr: Alc Abuse Trtmnt Enggmt 18+ Yr	NUM	3	—	80	122	127	125
+IET_DNMTR_OAD_AGE_GE18_IND	Initn & Enggmnt of Alc & Oth Drug Depnd Trtmnt (IET) Dnmtr: Opioid Abuse 18+ Yr	NUM	3	—	81	123	128	126
+IET_NMRTR_OAD_INITN_GE18_IND	Initn & Enggmnt Alc & Oth Drug Depnd Trmt Nrmtr: Opioid Abuse Trtmt Init 18+ Yrs	NUM	3	—	82	124	129	127
+IET_NMRTR_OAD_ENGGMT_GE18_IND	Initn & Enggmnt Alc & Oth Drug Depnd Trmt Nrmtr: Opioid Abuse Trmt Engmt 18+ Yrs	NUM	3	—	83	125	130	128
+IET_DNMTR_ODA_AGE_GE18_IND	Initn &Enggmt of Alc & Oth Drug Depnd Trtmnt (IET) Dnmtr: Oth Drug Abuse 18+ Yrs	NUM	3	—	84	126	131	129
+IET_NMRTR_ODA_INITN_GE18_IND	Initn & Enggmt Alc& Oth Drug Dep Trtmnt Nmrtr: Oth Drug Abuse Trtmt Init 18+ Yrs	NUM	3	—	85	127	132	130
+IET_NMRTR_ODA_ENGGMT_GE18_IND	Initn & Enggmt Alc & Oth Drug Dep Trtmnt Nmtr: Oth Drug Abuse Trmt Engmt 18 Yrs	NUM	3	—	86	128	133	131
+IET_DNMTR_TOT_AGE_GE18_IND	Initn & Engagmnt of Alc & Othr Drug Depend Trtmnt (IET) Dnmtr: Total, 18+ Yrs	NUM	3	—	87	129	134	132
+IET_NMRTR_TOT_INITN_GE18_IND	Initn & Engagmt Alc & Othr Drug Depend Trtmnt Nmrtr: Initiation Total, 18+ Yrs	NUM	3	—	88	130	135	133
+IET_NMRTR_TOT_ENGGMT_GE18_IND	Initn & Engagmnt Alc & Othr Drug Depend Trtmnt Nmrtr: Engagmnt Total, 18+ Yrs	NUM	3	—	89	131	136	134
+FSP_NMRTR_BWLS_CNT	Frequency of Selected Procedures (FSP) Nmrtr: Bariatric Wt Loss Surgery Count	NUM	3	78	90	132	137	135
+FSP_NMRTR_CABG_CNT	Frequency of Selected Procedures (FSP) Nmrtr: Coronary Artery Bypass Graft Count	NUM	3	79	91	133	138	136
+FSP_NMRTR_PCI_CNT	Freq of Selected Procedures (FSP) Nmrtr: Percutaneous Coronary Interventn Count	NUM	3	80	92	134	139	137
+FSP_NMRTR_CRDC_CTHRTZTN_CNT	Frequency of Selected Procedures (FSP) Numerator: Cardiac Catheterization Count	NUM	3	81	93	135	140	138
+FSP_NMRTR_CAE_CNT	Freq of Selected Procedures (FSP) Nmrtr: Carotid Artery Endarterectomy Count	NUM	3	82	94	136	141	139
+FSP_NMRTR_OCH_CNT	Frequency of Selected Procedures (FSP) Numerator: Open Cholecystectomy Count	NUM	3	83	95	137	142	140
+FSP_NMRTR_LCH_CNT	Frequency of Selected Procedures (FSP) Nmrtr: Laparoscopic Cholecystectomy Count	NUM	3	84	96	138	143	141
+FSP_NMRTR_BACK_SRGRY_CNT	Frequency of Selected Procedures (FSP) Numerator: Back Surgery Count	NUM	3	85	97	139	144	142
+FSP_NMRTR_AB_HYSTRMY_CNT	Frequency of Selected Procedures (FSP) Numerator: Abdominal Hysterectomy Count	NUM	3	86	98	140	145	143
+FSP_NMRTR_VAG_HYSTRMY_CNT	Frequency of Selected Procedures (FSP) Numerator: Vaginal Hysterectomy Count	NUM	3	87	99	141	146	144
+FSP_NMRTR_PROSTATCTMY_CNT	Frequency of Selected Procedures (FSP) Numerator: Prostatectomy Count	NUM	3	88	100	142	147	145
+FSP_NMRTR_TOT_HIP_RPLCMT_CNT	Frequency of Selected Procedures (FSP) Numerator: Total Hip Replacement Count	NUM	3	89	101	143	148	146
+FSP_NMRTR_TOT_KNEE_RPLCMT_CNT	Frequency of Selected Procedures (FSP) Numerator: Total Knee Replacement Count	NUM	3	90	102	144	149	147
+FSP_NMRTR_MASTCTMY_CNT	Frequency of Selected Procedures (FSP) Numerator: Mastectomy Count	NUM	3	91	103	145	150	148
+FSP_NMRTR_LUMPCTMY_CNT	Frequency of Selected Procedures (FSP) Numerator: Lumpectomy Count	NUM	3	92	104	146	151	149
+IPU_NMRTR_IP_DSCHRG_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Total IP Discharges	NUM	3	93	105	147	—	—
+IPU_NMRTR_IP_DAYS_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Total Inpatient Days	NUM	3	94	106	148	—	—
+IPU_NMRTR_IP_MDCL_DSCHRG_CNT	Inpatient Utilizatn Hospital-Acute Care (IPU) Nmrtr: Medical Discharges Count	NUM	3	95	107	149	—	—
+IPU_NMRTR_IP_MDCL_DAYS_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Medical Days	NUM	3	96	108	150	—	—
+IPU_NMRTR_IP_SRGRY_DSCHRG_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Nmrtr: Surgery Discharges Count	NUM	3	97	109	151	—	—
+IPU_NMRTR_IP_SRGRY_DAYS_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Surgery Days	NUM	3	98	110	152	—	—
+IPU_NMRTR_IP_MATRNTY_DSCHRG_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Nmrtr: Maternity Discharges Cnt	NUM	3	99	111	153	—	—
+IPU_NMRTR_IP_MATRNTY_DAYS_CNT	Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Maternity Days	NUM	3	100	112	154	—	—
+AMB_NMRTR_OP_VISIT_CNT	Ambulatory Care (AMB) Numerator: Outpatient Visits	NUM	3	101	113	155	—	—
+AMB_NMRTR_ED_VISIT_CNT	Ambulatory Care (AMB) Numerator: Emergency Department Visits	NUM	3	102	114	156	—	—
+IAD_NMRTR_ANY_SRVC_IND	Identfctn Alcohol & Othr Drug (IAD) Nmrtr: Member Receiving Any Service Ind	NUM	3	103	—	—	—	—
+IAD_NMRTR_IP_SRVC_IND	Identfctn Alcohol & Othr Drug (IAD) Nmrtr: Member Receiving IP Services Ind	NUM	3	104	—	—	—	—
+IAD_NMRTR_IOP_SRVC_IND	Ident Alcohol & Oth Drug (IAD) Nmrtr: Member Recv Intnsve OP— Partl Hosp Svc Ind	NUM	3	105	—	—	—	—
+IAD_NMRTR_OP_ED_SRVC_IND	Identfctn Alcohol & Oth Drug (IAD) Nmrtr: Member Recv OP or Emer Dept Svcs Ind	NUM	3	106	—	—	—	—
+IAD_NMRTR_AD_ANY_SRVC_IND	Identfctn Alc & Drug Svcs (IAD) Nmrtr: Member Receiving Any Alc Disordr Svcs Ind	NUM	3	—	115	157	152	150
+IAD_NMRTR_OD_ANY_SRVC_IND	Identfctn Alc & Drug Svcs (IAD) Nmrtr: Membr Rcving Any Opioid Disordr Svcs Ind	NUM	3	—	116	158	153	151
+IAD_NMRTR_OUDD_ANY_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Rcvng Any Oth or Unspcfd Drug Disrdr Svcs Ind	NUM	3	—	117	159	154	152
+IAD_NMRTR_TOT_ANY_SRVC_IND	Idnt Alc & Drug Svcs (IAD) Nmrtr: Membr Rcving Any IAD Service (Total) Ind	NUM	3	—	118	160	155	153
+IAD_NMRTR_AD_IP_SRVC_IND	Identfctn Alc & Drug Svcs (IAD) Nmrtr: Member Receiving IP Alc Disordr Svc Ind	NUM	3	—	119	161	156	154
+IAD_NMRTR_OD_IP_SRVC_IND	Identfctn Alc & Drug Svcs (IAD) Nmrtr: Member Rcving IP Opioid Disrdr Svc Ind	NUM	3	—	120	162	157	155
+IAD_NMRTR_OUDD_IP_SRVC_IND	Idnt Alc & Drug Svc (IAD) Nmrtr: Mmbr Recv IP Oth or Unspcfd Drug Disrdr Svc Ind	NUM	3	—	121	163	158	156
+IAD_NMRTR_TOT_IP_SRVC_IND	Identifctn of Alc & Drug Svcs (IAD) Nmrtr: Mmbr Rcving Inpat IAD Svcs(Total) Ind	NUM	3	—	122	164	159	157
+IAD_NMRTR_AD_IOP_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Recv Intnsve OP-Partl Hosp Alc Disordr Svc Ind	NUM	3	—	123	165	160	158
+IAD_NMRTR_OD_IOP_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr:Mmbr Recv Intnsv OP-Partl Hosp Opioid Disrdr Svc Ind	NUM	3	—	124	166	161	159
+IAD_NMRTR_OUDD_IOP_SRVC_IND	Idnt Alc & Drug(IAD) Nmrtr: Mmbr Recv Intnsv OP-Partl Hosp Oth-Unsp Drug Svc Ind	NUM	3	—	125	167	162	160
+IAD_NMRTR_TOT_IOP_SRVC_IND	Idnt of Alc & Drug (IAD) Nmrtr: Mmbr Recv Intnsve OP-Partl Hosp IAD Svc(Ttl) Ind	NUM	3	—	126	168	163	161
+IAD_NMRTR_AD_OP_SRVC_IND	Identfctn Alc & Drug Svcs (IAD) Nmrtr: Member Receiving OP Alc Disorder Svc Ind	NUM	3	—	127	169	164	162
+IAD_NMRTR_OD_OP_SRVC_IND	Identfctn Alc & Drug Svcs (IAD) Nmrtr: Mmbr Receiving OP Opioid Disorder Svc Ind	NUM	3	—	128	170	165	163
+IAD_NMRTR_OUDD_OP_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Recv OP Oth or Unspcfd Drug Disorder Srvc Ind	NUM	3	—	129	171	166	164
+IAD_NMRTR_TOT_OP_SRVC_IND	Ident of Alcohol & Drug Svcs (IAD) Nmrtr: Member Recv OP IAD Svcs (Total) Ind	NUM	3	—	130	172	167	165
+IAD_NMRTR_AD_ED_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Receiving Emer Dept Alc Disorder Svcs Ind	NUM	3	—	131	173	168	166
+IAD_NMRTR_OD_ED_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Receiving Emer Dept Opioid Disordr Svcs Ind	NUM	3	—	132	174	169	167
+IAD_NMRTR_OUDD_ED_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Rcv ED Oth or Unspcfd Drug Disorder Svcs Ind	NUM	3	—	133	175	170	168
+IAD_NMRTR_TOT_ED_SRVC_IND	Identfctn Alc & Drug (IAD) Nmrtr: Member Rcving Emer Dept IAD Svcs (Total) Ind	NUM	3	—	134	176	171	169
+IAD_NMRTR_AD_TLHLTH_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Receiving Telehealth Alc Disordr Svcs Ind	NUM	3	—	135	177	172	170
+IAD_NMRTR_OD_TLHLTH_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Receiving Telehealth Opioid Disordr Svcs Ind	NUM	3	—	136	178	173	171
+IAD_NMRTR_OUDD_TLHLTH_SRVC_IND	Idnt Alc & Drug (IAD) Nmrtr: Mmbr Rcv Telehlth Oth or Unspc Drug Disrd Svcs Ind	NUM	3	—	137	179	174	172
+IAD_NMRTR_TOT_TLHLTH_SRVC_IND	Identfctn Alc & Drug (IAD) Nmrtr: Mmbr Receiving Telehealth IAD Svcs (Total) Ind	NUM	3	—	138	180	175	173
+MPT_NMRTR_ANY_SRVC_IND	Mental Health Utilization (MPT) Nmrtr: Member Receiving Any Service Indicator	NUM	3	107	139	181	—	—
+MPT_NMRTR_IP_SRVC_IND	Mental Health Utilization (MPT) Nmrtr: Member Receiving Inpatient Service Ind	NUM	3	108	140	182	—	—
+MPT_NMRTR_IOP_SRVC_IND	Mental Health Utiliztn (MPT) Nmrtr: Member Receiving IOP or Partl Hosp Svcs Ind	NUM	3	109	141	183	—	—
+MPT_NMRTR_OP_ED_SRVC_IND	Mental Health Utilization (MPT) Nmrtr: Member Receiving OP or ED Services Ind	NUM	3	110	—	—	—	—
+MPT_NMRTR_OP_SRVC_IND	Mental Health Utilization (MPT) Nmrtr: Member Receiving Outpatient Services Ind	NUM	3	—	142	184	—	—
+MPT_NMRTR_ED_SRVC_IND	Mental Health Utilization (MPT) Nmrtr: Mmbr Receiving Emergncy Dept Services Ind	NUM	3	—	143	185	—	—
+MPT_NMRTR_TLHLTH_SRVC_IND	Mental Health Utilization (MPT) Nmrtr: Member Receiving Telehealth Services Ind	NUM	3	—	144	186	—	—
+ABX_NMRTR_ANTBTC_RX_CNT2	Antibiotic Utilization (ABX) Numerator: Total Number of Antibiotic Prescriptions	NUM	4*	111	145	187	176	174
+ABX_NMRTR_RX_DAYS_SUPLY_CNT2	Antibiotic Utilization (ABX) Nmrtr: Total Days Supply of All ABX Prescriptions	NUM	4*	112	146	188	177	175
+ABX_NMRTR_CNCRN_RX_CNT2	Antibiotic Utilization (ABX) Nmrtr: Antibiotics of Concern -Ttl Num Prescriptns	NUM	4*	113	147	189	178	176
+ABX_NMRTR_CNCRN_RX_QUINOLONE_CNT2	Antibiotic Utilization (ABX) Nmrtr: Antibiotics of Concern - Quinolones Count	NUM	4*	114	148	190	179	177
+ABX_NMRTR_CNCRN_RX_CEPHLSPRN_CNT2	Antibiotic Util (ABX) Nmrtr: Antibiotics of Concern Cephalosporn 2nd-4th Gen Cnt	NUM	4*	115	149	191	180	178
+ABX_NMRTR_CNCRN_RX_AZITH_CNT2	Antibiotic Util (ABX) Nmrtr: Antibiotics of Cncrn Azithromycn-Clarithromycn Cnt	NUM	4*	116	150	192	181	179
+ABX_NMRTR_CNCRN_RX_AMOXI_CNT2	Antibiotic Util (ABX) Nmrtr: Antibiotics of Concern -Amoxicln or Clavulanate Cnt	NUM	4*	117	151	193	182	180
+ABX_NMRTR_CNCRN_RX_KETOL_CNT2	Antibiotic Utilization (ABX) Numerator: Antibiotics of Concern- Ketolides Count	NUM	4*	118	152	194	183	181
+ABX_NMRTR_CNCRN_RX_CLIND_CNT2	Antibiotic Utilization (ABX) Nmrtr: Antibiotics of Concern- Clindamycin Count	NUM	4*	119	153	195	184	182
+ABX_NMRTR_CNCRN_RX_MISC_CNT2	Antibiotic Utilization (ABX) Nmrtr: Misc Antibiotics of Concern Count	NUM	4*	120	154	196	185	183
+ABX_NMRTR_OTHR_RX_SULFNMDS_CNT2	Antibiotic Util (ABX) Nmrtr: All Oth Antibiotics -Absorbable Sulfonamide Count	NUM	4*	121	155	197	186	184
+ABX_NMRTR_OTHR_RX_AMNOGLYC_CNT2	Antibiotic Utilization (ABX) Nmrtr: All Oth Antibiotics -Aminoglycosides Count	NUM	4*	122	156	198	187	185
+ABX_NMRTR_OTHR_RX_1G_CPHLS_CNT2	Antibiotic Util (ABX) Nmrtr: All Oth Antibiotics -1st Gen Cephalosporins Count	NUM	4*	123	157	199	188	186
+ABX_NMRTR_OTHR_RX_LINCOSMD_CNT2	Antibiotc Util (ABX) Nmrtr: All Oth Antibiotcs -Lincosamides (Not Clndamycn) Cnt	NUM	4*	124	158	200	189	187
+ABX_NMRTR_OTHR_RX_MACROLDS_CNT2	Antibiotic Util (ABX) Nmrtr: All Oth Antibiotcs -Macrolides (Not Azithrmycn) Cnt	NUM	4*	125	159	201	190	188
+ABX_NMRTR_OTHR_RX_PENICLN_CNT2	Antibiotic Utilization (ABX) Numerator: All Oth Antibiotics - Penicillins Count	NUM	4*	126	160	202	191	189
+ABX_NMRTR_OTHR_RX_TETRACYCLN_CNT2	Antibiotic Utilization (ABX) Numerator: All Oth Antibiotics -Tetracyclines Count	NUM	4*	127	161	203	192	190
+ABX_NMRTR_OTHR_RX_MISC_CNT2	Antibiotic Utilization (ABX) Numerator: All Oth Miscellaneous Antibiotics Count	NUM	4*	128	162	204	193	191
+PSA_DNMTR_IND	Non-Recommended PSA-Based Screening in Older Men (PSA) Denominator Indicator	NUM	3	129	163	205	194	192
+PSA_NMRTR_IND	Non-Recommended PSA-Based Screening in Older Men (PSA) Numerator Indicator	NUM	3	130	164	206	195	193
+MRP_DNMTR_DSCHRG_CNT	Medication Reconciliation Post—Discharge (MRP) Denominator: Discharge Count	NUM	3	131	165	207	—	—
+MRP_NMRTR_30DAY_CNT	Medication Reconcilitn Post—Discharge(MRP) Nmrtr: Mdctn Recon Within 30 Dys Cnt	NUM	3	132	166	208	—	—
+MMA_DNMTR_AGE_18_50_IND	Medication Mgt for People with Asthma(MMA) Dnmtr: 18–50 Years	NUM	3	133	—	—	—	—
+MMA_NMRTR_50PCT_CMPLNC_18_50_IND	Med Mgt for People with Asthma(MMA) Nmrtr 1: Med Compliance 50%, 18–50 Yrs	NUM	3	134	—	—	—	—
+MMA_NMRTR_75PCT_CMPLNC_18_50_IND	Med Mgt for People with Asthma (MMA) Nmrtr 2: Med Compliance 75%, 18–50 years	NUM	3	135	—	—	—	—
+MMA_DNMTR_AGE_51_64_IND	Medication Mgt for People with Asthma(MMA): 51–64 Years Denominator Indicator	NUM	3	136	—	—	—	—
+MMA_NMRTR_50PCT_CMPLNC_51_64_IND	Med Mgt for People with Asthma(MMA) Nmrtr 1: Med Compliance 50%, 51–64 Years	NUM	3	137	—	—	—	—
+MMA_NMRTR_75PCT_CMPLNC_51_64_IND	Med Mgmt for People with Asthma (MMA) Nmrtr 2: Med Compliance 75%, 51–64 Years	NUM	3	138	—	—	—	—
+MMA_DNMTR_AGE_65_85_IND	Medication Mgt for People with Asthma(MMA) Denominator: 65–85 Years	NUM	3	139	—	—	—	—
+MMA_NMRTR_50PCT_CMPLNC_65_85_IND	Med Mgt for People with Asthma(MMA) Nmrtr 1: Med Compliance 50%, 65–85 Years	NUM	3	140	—	—	—	—
+MMA_NMRTR_75PCT_CMPLNC_65_85_IND	Med Mgmt for People with Asthma (MMA) Nmrtr 2: Med Compliance 75%, 65–85 Years	NUM	3	141	—	—	—	—
+AMR_DNMTR_AGE_18_50_IND	Asthma Medication Ratio (AMR) Denominator: 18–50 Years	NUM	3	142	—	—	—	—
+AMR_NMRTR_AGE_18_50_IND	Asthma Medication Ratio (AMR) Numerator: 18–50 Years	NUM	3	143	—	—	—	—
+AMR_DNMTR_AGE_51_64_IND	Asthma Medication Ratio (AMR) Denominator: 51–64 Years	NUM	3	144	—	—	—	—
+AMR_NMRTR_AGE_51_64_IND	Asthma Medication Ratio (AMR) Numerator: 51–64 Years	NUM	3	145	—	—	—	—
+AMR_DNMTR_AGE_65_85_IND	Asthma Medication Ratio (AMR) Denominator: 65–85 Years	NUM	3	146	—	—	—	—
+AMR_NMRTR_AGE_65_85_IND	Asthma Medication Ratio (AMR) Numerator: 65–85 Years	NUM	3	147	—	—	—	—
+SPC_DNMTR_MALE_AGE_21_75_IND	Statin Therapy for Cardiovascular Disease (SPC) Denominator: Males 21-75 Yrs	NUM	3	148	167	209	196	194
+SPC_NMRTR_MALE_AGE_21_75_IND	Statin Therapy for Cardiovascular Disease (SPC) Numerator: Males 21-75 Yrs	NUM	3	149	168	210	197	195
+SPC_DNMTR_80PCT_MALE_21_75_IND	Statin Thrpy- Cardiovsclr Dis (SPC) Dnmtr: Males 21-75 Yrs, Statin Adherence 80%	NUM	3	150	169	211	198	196
+SPC_NMRTR_80PCT_MALE_21_75_IND	Statin Thrpy- Cardiovsclr Dis (SPC) Nmrtr: Males 21-75 Yrs, Statin Adherence 80%	NUM	3	151	170	212	199	197
+SPC_DNMTR_FEML_AGE_40_75_IND	Statin Therapy for Cardiovsclr Disease (SPC) Denominator: Females 40-75 Yrs	NUM	3	152	171	213	200	198
+SPC_NMRTR_FEML_AGE_40_75_IND	Statin Therapy for Cardiovsclr Disease (SPC) Numerator: Females 40-75 Yrs	NUM	3	153	172	214	201	199
+SPC_DNMTR_80PCT_FEML_40_75_IND	Statin Thrpy- Cardiovsclr Dis (SPC) Dnmtr: Female 40-75 Yrs, Statin Adherence 80%	NUM	3	154	173	215	202	200
+SPC_NMRTR_80PCT_FEML_40_75_IND	Statin Thrpy- Cardiovsclr Dis (SPC) Nmrtr: Female 40-75 Yrs, Statin Adherence 80%	NUM	3	155	174	216	203	201
+SPD_DNMTR_IND	Statin Therapy for Patients with Diabetes (SPD) Denominator Indicator	NUM	3	156	175	217	204	202
+SPD_NMRTR_IND	Statin Therapy for Diabetes (SPD) Numerator Indicator	NUM	3	157	176	218	205	203
+SPD_DNMTR_80PCT_ADHRNC_IND	Statin Therapy for Diabetes (SPD) Denominator: Statin Adherence 80% Indicator	NUM	3	158	177	219	206	204
+SPD_NMRTR_80PCT_ADHRNC_IND	Statin Therapy for Diabetes (SPD) Numerator: Statin Adherence 80% Indicator	NUM	3	159	178	220	207	205
+IHU_DNMTR_IND	Inpatient Hospital Utilization (IHU) Denominator Indicator	NUM	3	160	—	—	—	—
+IHU_IP_TOT_DSCHRG_CNT	Inpatient Hospital Utilization (IHU): Observed IP Discharges, Total	NUM	3	161	—	—	—	—
+IHU_IP_SRGRY_DSCHRG_CNT	Inpatient Hospital Utilization (IHU): Observed IP Discharges, Surgery	NUM	3	162	—	—	—	—
+IHU_IP_MDCL_DSCHRG_CNT	Inpatient Hospital Utilization (IHU): Observed IP Discharges, Medical	NUM	3	163	—	—	—	—
+IHU_PPD_TOT_CMRBDTY_WT	Inpatient Hospital Utilization (IHU): PPD Comorbidity Weight, Total	NUM	8	164	—	—	—	—
+IHU_PPD_SRGRY_CMRBDTY_WT	Inpatient Hospital Utilization (IHU): PPD Comorbidity Weight, Surgery	NUM	8	165	—	—	—	—
+IHU_PPD_MDCL_CMRBDTY_WT	Inpatient Hospital Utilization (IHU): PPD Comorbidity Weight, Medical	NUM	8	166	—	—	—	—
+IHU_PPD_TOT_AGE_SEX_WT3	Inpatient Hospital Utilization (IHU): PPD Age-Sex Weight, Total	NUM	8	167	—	—	—	—
+IHU_PPD_SRGRY_AGE_SEX_WT3	Inpatient Hospital Utilization (IHU): PPD Age-Sex Weight, Surgery	NUM	8	168	—	—	—	—
+IHU_PPD_MDCL_AGE_SEX_WT3	Inpatient Hospital Utilization (IHU): PPD Age-Sex Weight, Medical	NUM	8	169	—	—	—	—
+IHU_PPD_TOT_BASE_RISK_WT	Inpatient Hospital Utilization (IHU): PPD Base Risk Weight, Total	NUM	8	170	—	—	—	—
+IHU_PPD_SURG_BASE_RISK_WT	Inpatient Hospital Utilization (IHU): PPD Base Risk Weight, Surgery	NUM	8	171	—	—	—	—
+IHU_PPD_MDCL_BASE_RISK_WT	Inpatient Hospital Utilization (IHU): PPD Base Risk Weight, Medical	NUM	8	172	—	—	—	—
+IHU_PUCD_TOT_CMRBDTY_WT	Inpatient Hospital Utilization (IHU): PUCD Comorbidity Weight, Total	NUM	8	173	—	—	—	—
+IHU_PUCD_SRGRY_CMRBDTY_WT	Inpatient Hospital Utilization (IHU): PUCD Comorbidity Weight, Surgery	NUM	8	174	—	—	—	—
+IHU_PUCD_MDCL_CMRBDTY_WT	Inpatient Hospital Utilization (IHU): PUCD Comorbidity Weight, Medical	NUM	8	175	—	—	—	—
+IHU_PUCD_TOT_AGE_SEX_WT3	Inpatient Hospital Utilization (IHU): PUCD Age-Sex Weight, Total	NUM	8	176	—	—	—	—
+IHU_PUCD_SRGRY_AGE_SEX_WT3	Inpatient Hospital Utilization (IHU): PUCD Age-Sex Weight, Surgery	NUM	8	177	—	—	—	—
+IHU_PUCD_MDCL_AGE_SEX_WT3	Inpatient Hospital Utilization (IHU): PUCD Age-Sex Weight, Medical	NUM	8	178	—	—	—	—
+IHU_PUCD_TOT_BASE_RISK_WT	Inpatient Hospital Utilization (IHU): PUCD Base Risk Weight, Total	NUM	8	179	—	—	—	—
+IHU_PUCD_SRGRY_BASE_RISK_WT	Inpatient Hospital Utilization (IHU): PUCD Base Risk Weight, Surgery	NUM	8	180	—	—	—	—
+IHU_PUCD_MDCL_BASE_RISK_WT	Inpatient Hospital Utilization (IHU): PUCD Base Risk Weight, Medical	NUM	8	181	—	—	—	—
+SAA_DNMTR_IND	Adherence to Antipsychotics for Individuals With Schizophrenia (SAA) Dnmtr Ind	NUM	3	—	—	—	208	206
+SAA_NMRTR_IND	Adherence to Antipsychotics for Individuals With Schizophrenia (SAA) Nmrtr Ind	NUM	3	—	—	—	209	207
+AHU_DNMTR_IND	Acute Hospital Utilization (AHU) Denominator Indicator	NUM	3	—	179	—	—	—
+AHU_DNMTR_NOUTLIER_IND	Acute Hospital Utilization (AHU) Denominator for Non-Outliers Indicator	NUM	3	—	180	221	210	208
+AHU_DNMTR_OUTLIER_IND	Acute Hospital Utilization (AHU) Denominator for Outliers Indicator	NUM	3	—	181	222	211	209
+AHU_IP_SRGRY_DSCHRG_CNT	Acute Hospital Utilization (AHU): Observed IP Discharges, Surgery	NUM	3	—	182	—	—	—
+AHU_IP_MDCL_DSCHRG_CNT	Acute Hospital Utilization (AHU): Observed IP Discharges, Medical	NUM	3	—	183	—	—	—
+AHU_IP_TOT_DSCHRG_CNT	Acute Hospital Utilization (AHU): Observed IP Discharges, Total	NUM	3	—	184	—	—	—
+AHU_SRGRY_DSCHRG_CNT	Acute Hospital Utilization (IHU): Observed Discharges, Surgery	NUM	3	—	—	223	212	210
+AHU_MDCL_DSCHRG_CNT	Acute Hospital Utilization (IHU): Observed Discharges, Medical	NUM	3	—	—	224	213	211
+AHU_TOT_DSCHRG_CNT	Acute Hospital Utilization (IHU): Observed Discharges, Total	NUM	3	—	—	225	214	212
+AHU_PPD_SRGRY_CMRBDTY_WT	Acute Hospital Utilization (AHU): PPD Comorbidity Weight, Surgery	NUM	8	—	185	226	215	213
+AHU_PPD_MDCL_CMRBDTY_WT	Acute Hospital Utilization (AHU): PPD Comorbidity Weight, Medical	NUM	8	—	186	227	216	214
+AHU_PPD_TOT_CMRBDTY_WT	Acute Hospital Utilization (AHU): PPD Comorbidity Weight, Total	NUM	8	—	187	228	217	215
+AHU_PPD_SRGRY_AGE_SEX_WT3	Acute Hospital Utilization (AHU): PPD Age-Sex Weight, Surgery	NUM	8	—	188	229	218	216
+AHU_PPD_MDCL_AGE_SEX_WT3	Acute Hospital Utilization (AHU): PPD Age-Sex Weight, Medical	NUM	8	—	189	230	219	217
+AHU_PPD_TOT_AGE_SEX_WT3	Acute Hospital Utilization (AHU): PPD Age-Sex Weight, Total	NUM	8	—	190	231	220	218
+AHU_PUCD_SRGRY_CMRBDTY_WT	Acute Hospital Utilization (AHU): PUCD Comorbidity Weight, Surgery	NUM	8	—	191	232	221	219
+AHU_PUCD_MDCL_CMRBDTY_WT	Acute Hospital Utilization (AHU): PUCD Comorbidity Weight, Medical	NUM	8	—	192	233	222	220
+AHU_PUCD_TOT_CMRBDTY_WT	Acute Hospital Utilization (AHU): PUCD Comorbidity Weight, Total	NUM	8	—	193	234	223	221
+AHU_PUCD_SRGRY_AGE_SEX_WT3	Acute Hospital Utilization (AHU): PUCD Age-Sex Weight, Surgery	NUM	8	—	194	235	224	222
+AHU_PUCD_MDCL_AGE_SEX_WT3	Acute Hospital Utilization (AHU): PUCD Age-Sex Weight, Medical	NUM	8	—	195	236	225	223
+AHU_PUCD_TOT_AGE_SEX_WT3	Acute Hospital Utilization (AHU): PUCD Age-Sex Weight, Total	NUM	8	—	196	237	226	224
+EDU_DNMTR_IND	Emergency Department Utilization (EDU) Denominator Indicator	NUM	3	182	197	238	—	—
+EDU_NOUTLIER_IND	Emergency Department Utilization (EDU): Non-Outliers Indicator	NUM	3	—	—	—	227	225
+EDU_OUTLIER_IND	Emergency Department Utilization (EDU): Outliers Indicator	NUM	3	—	—	—	228	226
+EDU_ED_VISIT_CNT	Emergency Department Utilization (EDU): Observed ED Visits	NUM	3	183	198	239	229	227
+EDU_PPV_CMRBDTY_WT	Emergency Department Utilization (EDU): PPV Comorbidity Weight	NUM	8	184	199	240	230	228
+EDU_PPV_AGE_SEX_WT3	Emergency Department Utilization (EDU): PPV Age-Sex Weight	NUM	8	185	200	241	231	229
+EDU_PPV_BASE_RISK_WT	Emergency Department Utilization (EDU): PPV Base Risk Weight	NUM	8	186	201	242	—	—
+EDU_PUCV_CMRBDTY_WT	Emergency Department Utilization (EDU): PUCV Comorbidity Weight	NUM	8	187	202	243	232	230
+EDU_PUCV_AGE_SEX_WT3	Emergency Department Utilization (EDU): PUCV Age-Sex Weight	NUM	8	188	203	244	233	231
+EDU_PUCV_BASE_RISK_WT	Emergency Department Utilization (EDU): PUCV Base Risk Weight	NUM	8	189	204	245	—	—
+HPC_DNMTR_IND	Hospitalization for Potentially Preventable Complications (HPC) Denominator Ind	NUM	3	190	205	—	—	—
+HPC_CHRNC_ACSC_NOL_DSCHRG_IND	HPC: Observd Chronic Ambulatory Care Senstv Condtn (ACSC) Non-Outlier Dschrg Ind	NUM	3	—	206	246	234	232
+HPC_CHRNC_ACSC_OL_DSCHRG_IND	HPC: Observed Chronic Ambulatory Care Senstv Condtn (ACSC) Outlier Discharge Ind	NUM	3	—	207	247	235	233
+HPC_ACUTE_ACSC_NOL_DSCHRG_IND	HPC: Observed Acute Ambulatory Care Senstv Condtn (ACSC) Non-Outlier Dschrg Ind	NUM	3	—	208	248	236	234
+HPC_ACUTE_ACSC_OL_DSCHRG_IND	HPC: Observed Acute Ambulatory Care Senstv Condtn (ACSC) Outlier Discharge Ind	NUM	3	—	209	249	237	235
+HPC_TOT_ACSC_NOL_DSCHRG_IND	HPC: Observd Total Ambulatory Care Senstive Condtn (ACSC) Non-Outlier Dschrg Ind	NUM	3	—	—	250	238	236
+HPC_TOT_ACSC_OL_DSCHRG_IND	HPC: Observed Total Ambulatory Care Sensitive Condtn (ACSC) Outlier Discharg Ind	NUM	3	—	—	251	239	237
+HPC_CHRNC_ACSC_DSCHRG_CNT	HPC: Observed Chronic Ambulatory Care Senstv Condtn (ACSC) Discharges	NUM	3	191	210	252	240	238
+HPC_ACUTE_ACSC_DSCHRG_CNT	HPC: Observed Acute Ambulatory Care Senstv Condtn (ACSC) Discharges	NUM	3	192	211	253	241	239
+HPC_TOT_ACSC_DSCHRG_CNT	HPC: Observed Total Ambulatory Care Senstv Condtn (ACSC) Discharges	NUM	3	193	212	254	242	240
+HPC_PPD_CHRNC_ACSC_CMRBDTY_WT	HPC: PPD Chronic Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight	NUM	8	194	213	255	243	241
+HPC_PPD_ACUTE_ACSC_CMRBDTY_WT	HPC: PPD Acute Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight	NUM	8	195	214	256	244	242
+HPC_PPD_TOT_ACSC_CMRBDTY_WT	HPC: PPD Total Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight	NUM	8	196	215	257	245	243
+HPC_PPD_CHRNC_ACSC_AGE_SEX_WT3	HPC: PPD Chronic Ambulatory Care Senstv Condtn (ACSC) Age-Sex Weight	NUM	8	197	216	258	246	244
+HPC_PPD_ACUTE_ACSC_AGE_SEX_WT3	HPC: PPD Acute Ambulatory Care Senstv Condtn (ACSC) Age-Sex Weight	NUM	8	198	217	259	247	245
+HPC_PPD_TOT_ACSC_AGE_SEX_WT3	HPC: PPD Total Ambulatory Care Senstv Condtn (ACSC) Age-Sex Weight	NUM	8	199	218	260	248	246
+HPC_PPD_CHRNC_ACSC_BASE_RISK_WT	HPC: PPD Chronic Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight	NUM	8	200	—	—	—	—
+HPC_PPD_ACUTE_ACSC_BASE_RISK_WT	HPC: PPD Acute Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight	NUM	8	201	—	—	—	—
+HPC_PPD_TOT_ACSC_BASE_RISK_WT	HPC: PPD Total Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight	NUM	8	202	—	—	—	—
+HPC_PUCD_CHRNC_ACSC_CMRBDTY_WT	HPC: PUCD Chronic Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight	NUM	8	203	219	261	249	247
+HPC_PUCD_ACUTE_ACSC_CMRBDTY_WT	HPC: PUCD Acute Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight	NUM	8	204	220	262	250	248
+HPC_PUCD_TOT_ACSC_CMRBDTY_WT	HPC: PUCD Total Ambulatory Care Senstv Condtn (ACSC) Comorbidity Weight	NUM	8	205	221	263	251	249
+HPC_PUCD_CHRNC_ACSC_AGE_SEX_WT3	HPC: PUCD Chronic Ambulatory Care Senstv Condtn (ACSC) Age-SexWeight	NUM	8	206	222	264	252	250
+HPC_PUCD_ACUTE_ACSC_AGE_SEX_WT3	HPC: PUCD Acute Ambulatory Care Senstv Condtn (ACSC) Age-Sex Weight	NUM	8	207	223	265	253	251
+HPC_PUCD_TOT_ACSC_AGE_SEX_WT3	HPC: PUCD Total Ambulatory Care Senstv Condtn (ACSC) Age-Sex Weight	NUM	8	208	224	266	254	252
+HPC_PUCD_CHRNC_ACSC_BASE_RISK_WT	HPC: PUCD Chronic Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight	NUM	8	209	—	—	—	—
+HPC_PUCD_ACUTE_ACSC_BASE_RISK_WT	HPC: PUCD Acute Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight	NUM	8	210	—	—	—	—
+HPC_PUCD_TOT_ACSC_BASE_RISK_WT	HPC: PUCD Total Ambulatory Care Senstv Condtn (ACSC) Base Risk Weight	NUM	8	211	—	—	—	—
+FUM_DNMTR_MENTL_ILL_ED_VISIT_CNT	Follow-Up After Emer Dpt (ED) Visit for Mental Illness (FUM) Dnmtr: Visit Count	NUM	3	—	225	—	—	—
+FUM_NMRTR_30DAY_FLWP_CNT	Follow-Up After ED Visit for Mental Illness (FUM) Nmrtr: 30-Day Flwp Visit Count	NUM	3	—	226	—	—	—
+FUM_NMRTR_7DAY_FLWP_CNT	Follow-Up After ED Visit for Mental Illness (FUM) Nmrtr: 7-Day Flwp Visit Count	NUM	3	—	227	—	—	—
+FUM_DNMTR_AGE_6_17_VISIT_CNT	Follow-Up After ED Visit for Mental Illness (FUM) Dnmtr: Visit Count 6-17 Years	NUM	3	—	—	267	255	253
+FUM_NMRTR_1_AGE_6_17_30DAY_CNT	Follow-Up Aftr ED Visit for Mntl Illness (FUM) Nmrtr 1: 30-Day Flwp Cnt 6-17 Yrs	NUM	3	—	—	268	256	254
+FUM_NMRTR_2_AGE_6_17_7DAY_CNT	Follow-Up Aftr ED Visit for Mntl Illness (FUM) Nmrtr 2: 7-Day Flwp Cnt 6-17 Yrs	NUM	3	—	—	269	257	255
+FUM_DNMTR_AGE_18_64_VISIT_CNT	Follow-Up After ED Visit for Mental Illness (FUM) Dnmtr: Visit Count 18-64 Years	NUM	3	—	—	270	258	256
+FUM_NMRTR_1_AGE_18_64_30DAY_CNT	Follow-Up Aftr ED Visit for Mntl Illness (FUM) Nmrtr 1: 30-Day Flwp Cnt 18-64 Yrs	NUM	3	—	—	271	259	257
+FUM_NMRTR_2_AGE_18_64_7DAY_CNT	Follow-Up Aftr ED Visit for Mntl Illness (FUM) Nmrtr 2: 7-Day Flwp Cnt 18-64 Yrs	NUM	3	—	—	272	260	258
+FUM_DNMTR_AGE_GE65_VISIT_CNT	Follow-Up After ED Visit for Mental Illness (FUM) Dnmtr: Visit Count 65+ Years	NUM	3	—	—	273	261	259
+FUM_NMRTR_1_AGE_GE65_30DAY_CNT	Follow-Up Aftr ED Visit for Mntl Illness (FUM) Nmrtr 1: 30-Day Flwp Cnt 65+ Yrs	NUM	3	—	—	274	262	260
+FUM_NMRTR_2_AGE_GE65_7DAY_CNT	Follow-Up Aftr ED Visit for Mntl Illness (FUM) Nmrtr 2: 7-Day Flwp Cnt 65+ Yrs	NUM	3	—	—	275	263	261
+FUA_DNMTR_AGE_13_17_ED_VISIT_CNT	Follow-Up Aftr ED Visit for Alc & Othr Drug Dpnd(FUA) Dnmtr: Visit Cnt 13–17 Yrs	NUM	3	—	228	276	264	262
+FUA_NMRTR_30DAY_AGE_13_17_CNT	Follow-Up Aftr ED Vst for Alc-Drug Dpnd Nmrtr: 30-Dy Flwp-Up Visit Cnt 13–17 Yrs	NUM	3	—	229	277	265	263
+FUA_NMRTR_7DAY_AGE_13_17_CNT	Follow-Up Aftr ED Vst for Alc-Drug Dpnd Nmrtr: 7-Day Flwp-Up Visit Cnt 13–17 Yrs	NUM	3	—	230	278	266	264
+FUA_DNMTR_AGE_GE18_ED_VISIT_CNT	Follow-Up After ED Visit for Alc & Othr Drug Dpnd (FUA) Dnmtr: Visit Cnt 18+ Yrs	NUM	3	—	231	279	267	265
+FUA_NMRTR_30DAY_AGE_GE18_CNT	Follow-Up After ED Vst for Alc-Drug Dpnd (FUA)Nmrtr: 30-Day Flwp Visit Cnt 18+ Yrs	NUM	3	—	232	280	268	266
+FUA_NMRTR_7DAY_AGE_GE18_CNT	Follow-Up After ED Vst for Alc-Drug Dpnd(FUA) Nmrtr: 7-Day Flwp Visit Cnt 18+ Yrs	NUM	3	—	233	281	269	267
+UOD_DNMTR_IND	Use of Opioids at High Dosage (UOD) Denominator Indicator	NUM	3	—	234	282	—	—
+UOD_NMRTR_IND	Use of Opioids at High Dosage (UOD) Numerator Indicator	NUM	3	—	235	283	—	—
+HDO_DNMTR_IND	Use of Opioids at High Dosage (HDO) Denominator Indicator	NUM	3	—	—	—	270	268
+HDO_NMRTR_IND	Use of Opioids at High Dosage (HDO) Numerator Indicator	NUM	3	—	—	—	271	269
+UOP_DNMTR_IND	Use of Opioids from Multiple Providers (UOP) Denominator Indicator	NUM	3	—	236	284	272	270
+UOP_NMRTR_MLTPL_PRSCRBR_IND	Use of Opioids from Multiple Prvdrs (UOP) Numrtr: Multiple Prescribers Indicator	NUM	3	—	237	285	273	271
+UOP_NMRTR_MLTPL_PHRMCY_IND	Use of Opioids from Multiple Prvdrs (UOP) Numrtr: Multiple Pharmacies Indicator	NUM	3	—	238	286	274	272
+UOP_NMRTR_PRSCRBR_PHRMCY_IND	Use of Opioids from Mltpl Prvdrs (UOP) Numrtr: Multiple Prscrbrs & Pharmcs Ind	NUM	3	—	239	287	275	273
+TRC_DNMTR_NIA_AGE_18_64_CNT	Transitns of Care Dnmtr: Notifctn of IP Admission (NIA) Dischrg Cnt 18-64 Yrs	NUM	3	—	240	288	276	274
+TRC_NMRTR_NIA_AGE_18_64_CNT	Transitions of Care (TRC) Numrtr: Notifctn of IP Admission (NIA) Count 18-64 Yrs	NUM	3	—	241	289	277	275
+TRC_DNMTR_RDI_AGE_18_64_CNT	Transitions of Care (TRC) Dnmtr: Recpt of Dschrg Info (RDI) Dschrg Cnt 18-64 Yrs	NUM	3	—	242	290	278	276
+TRC_NMRTR_RDI_AGE_18_64_CNT	Transitions of Care (TRC) Nmrtr: Receipt of Discharge Info (RDI) Count 18-64 Yrs	NUM	3	—	243	291	279	277
+TRC_DNMTR_PEID_AGE_18_64_CNT	Transitns of Care(TRC) Dnmtr: Patient Engmnt aftr IP Dschrg (PEID) Cnt 18-64 Yrs	NUM	3	—	244	292	280	278
+TRC_NMRTR_PEID_AGE_18_64_CNT	Transitions of Care (TRC) Nmrtr: Pt Engmnt aftr IP Dschrg (PEID) Count 18-64 Yrs	NUM	3	—	245	293	281	279
+TRC_DNMTR_MRPD_AGE_18_64_CNT	Transitns of Care(TRC) Medctn Rec Post-Dschrg (MRPD) Dnmtr: Dschrg Cnt 18-64 Yrs	NUM	3	—	246	294	282	280
+TRC_NMRTR_MRPD_AGE_18_64_CNT	Transitns of Care (TRC) Nmrtr: Medicatn Recon Post-Dschrg (MRPD) Count 18-64 Yrs	NUM	3	—	247	295	283	281
+TRC_DNMTR_NIA_AGE_GE65_CNT	Transitions of Care Dnmtr: Notifctn of IP Admission (NIA) Discharge Cnt 65+ Yrs	NUM	3	—	248	296	284	282
+TRC_NMRTR_NIA_AGE_GE65_CNT	Transitions of Care (TRC) Numrtr: Notifctn of IP Admission (NIA) Count 65+ Yrs	NUM	3	—	249	297	285	283
+TRC_DNMTR_RDI_AGE_GE65_CNT	Transitions of Care (TRC) Dnmtr: Recpt of Dschrg Info (RDI) Dschrg Cnt 65+ Yrs	NUM	3	—	250	298	286	284
+TRC_NMRTR_RDI_AGE_GE65_CNT	Transitions of Care (TRC) Nmrtr: Receipt of Discharge Info (RDI) Count 65+ Yrs	NUM	3	—	251	299	287	285
+TRC_DNMTR_PEID_AGE_GE65_CNT	Transitns of Care (TRC) Dnmtr: Patient Engmnt aftr IP Dschrg (PEID) Cnt 65+ Yrs	NUM	3	—	252	300	288	286
+TRC_NMRTR_PEID_AGE_GE65_CNT	Transitions of Care (TRC) Nmrtr: Pt Engmnt aftr IP Dschrg (PEID) Count 65+ Yrs	NUM	3	—	253	301	289	287
+TRC_DNMTR_MRPD_AGE_GE65_CNT	Transitns of Care (TRC) Medctn Rec Post-Dschrg (MRPD) Dnmtr: Dschrg Cnt 65+ Yrs	NUM	3	—	254	302	290	288
+TRC_NMRTR_MRPD_AGE_GE65_CNT	Transitns of Care (TRC) Nmrtr: Medicatn Recon Post-Dschrg (MRPD) Count 65+ Yrs	NUM	3	—	255	303	291	289
+FMC_DNMTR_AGE_18_64_ED_VISIT_CNT	Flw-Up Aftr ED Visit for High-Risk Mltpl Chrnc Cond Dnmtr: Visit Cnt 18-64 Yrs	NUM	3	—	256	304	292	290
+FMC_NMRTR_AGE_18_64_CNT	Flw-Up Aftr ED Visit for High-Risk Multpl Chronc Cond (FMC) Nmrtr: Cnt 18-64 Yrs	NUM	3	—	257	305	293	291
+FMC_DNMTR_AGE_GE65_ED_VISIT_CNT	Flw-Up Aftr ED Visit for High-Risk Mltpl Chrnc Cond Dnmtr: Visit Count 65+ Yrs	NUM	3	—	258	306	294	292
+FMC_NMRTR_AGE_GE65_CNT	Flw-Up Aftr ED Visit for High-Risk Multpl Chronc Cond (FMC) Nmrtr: Count 65+ Yrs	NUM	3	—	259	307	295	293
+CRE_DNMTR_IND	Cardiac Rehabilitation (CRE) Denominator Indicator	NUM	3	—	—	—	—	294
+CRE_NMRTR_1_INITN_IND	Cardiac Rehabilitation (CRE) Numerator 1: Initiation Indicator	NUM	3	—	—	—	—	295
+CRE_NMRTR_2_ENGGMT_1_IND	Cardiac Rehabilitation (CRE) Numerator 2: Engagement 1 (90 day) Indicator	NUM	3	—	—	—	—	296
+CRE_NMRTR_3_ENGGMT_2_IND	Cardiac Rehabilitation (CRE) Numerator 3: Engagement 2 (180 day) Indicator	NUM	3	—	—	—	—	297
+CRE_NMRTR_4_ACHVMT_IND	Cardiac Rehabilitation (CRE) Numerator 4: Achievement Indicator	NUM	3	—	—	—	—	298
+OSW_DNMTR_IND	Osteoporosis Screening in Older Women (OSW) Denominator Indicator	NUM	3	—	—	—	—	299
+OSW_NMRTR_IND	Osteoporosis Screening in Older Women (OSW) Numerator Indicator	NUM	3	—	—	—	—	300
+RFRNC_YR_HEDIS	Reference Year HEDIS	NUM	3	212	260	308	296	301
+1 For all columns relating to the year of the data file, shading or '—' indicates variable is not in the file.
+2 or * indicates length change for the variable; length in the most recent file is displayed. Prior to 2017 the length was 3.
+3In 2025, this field was renamed to sex to comply with Executive Order 14168.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+HEDIS Person-Level Data — Inpatient (File 2)
+Version — June 2025
+RIF SAS name	RIF  label	Type	Length	2015–171 RIF sequence	2018 1	2020–21 1
+BENE_ID	CCW Beneficiary Identifier	NUM	8	1	1	1
+HEDIS_REC_ID	HEDIS Record identifier	NUM	8	2	2	2
+HEDIS_CNTRCT_ID	Contract Identifier (HEDIS)	CHAR	5	3	3	3
+HEDIS_PLAN_TYPE	Plan Type (HEDIS)	CHAR	30	4	4	4
+HEDIS_PLAN_ID	Plan Identifier (HEDIS)	CHAR	3	5	5	5
+HEDIS_ORG_TYPE	Plan Organization Type (HEDIS)	CHAR	10	6	6	6
+CMS_RGN_NAME	CMS Region Name for Plan Organization	CHAR	20	7	7	7
+HEDIS_BENE_STATE_CD	State Code for Beneficiary (Postal)	CHAR	2	8	8	8
+HEDIS_BENE_ZIP_CD	Beneficiary ZIP code	CHAR	5	9	9	9
+HEDIS_SEX_CD2	Beneficiary Sex assigned at birth. Sex (HEDIS)	CHAR	1	10	10	10
+HEDIS_BENE_DOB	Beneficiary date of birth (HEDIS)	DATE	8	11	11	11
+SNP_TYPE_CD	Special Needs Plan (SNP) Type Code	NUM	3	12	12	12
+AGE_DSCHRG	Age at Discharge	NUM	3	13	13	13
+ADMSN_DT	Inpatient Hospital Admission Date	DATE	8	14	14	14
+DSCHRG_DT	Inpatient Hospital Discharge Date	DATE	8	15	15	15
+READMSN_IND	Readmission Indicator	CHAR	1	16	16	16
+BASE_RISK_WT	Base Risk Weight	NUM	8	17	17	—
+AGE_SEX_WT2	Age - Sex Weight	NUM	8	18	18	17
+CMRBDTY_WT	Comorbidity Weight	NUM	8	19	19	18
+SRGRY_WT	Surgery Weight	NUM	8	20	20	19
+DSCHRG_WT	Discharge Weight	NUM	8	21	21	20
+OBSRVTN_STAY_WT	Observation Stay Weight	NUM	8	—	—	21
+DSCHRG_TRNSFR_SKLD_NRSNG_IND	Discharge or Transfer to Skilled Nursing Care Indictor	NUM	3	—	—	22
+DSCHRG_TRNSFR_SN_AGE_SEX_WT2	Discharge or Transfer to Skilled Nursing Care Age-Sex Weight	NUM	8	—	—	23
+DSCHRG_TRNSFR_SN_SRGRY_WT	Discharge or Transfer to Skilled Nursing Care Surgery Weight	NUM	8	—	—	24
+DSCHRG_TRNSFR_SN_DSCHRG_WT	Discharge or Transfer to Skilled Nursing Care Discharge Weight	NUM	8	—	—	25
+DSCHRG_TRNSFR_SN_CMRBDTY_WT	Discharge or Transfer to Skilled Nursing Care Comorbidity Weight	NUM	8	—	—	26
+DSCHRG_TRNSFR_SN_OBSRVTN_STAY_WT	Discharge or Transfer to Skilled Nursing Care Observation Stay Weight	NUM	8	—	—	27
+SES_NO_LISDE_NO_DSBLTY_IND	SES Stratification Indicator: Non-Low-Income Subsdy(LIS), Non-Dual, Nondisablity	NUM	3	—	22	28
+SES_LIS_DE_IND	SES Stratification Indicator: Low-Income Subsidy (LIS) or Dual Eligible (DE)	NUM	3	—	23	29
+SES_DSBLTY_IND	SES Stratification Indicator: Disability	NUM	3	—	24	30
+SES_LIS_DE_DSBLTY_IND	SES Stratification Indicator: Low-Income Subsidy or Dual Eligble, and Disabled	NUM	3	—	25	31
+SES_OTHR_POP_IND	SES Stratification Indicator: Other Eligible Population	NUM	3	—	26	32
+SES_UNK_POP_IND	SES Stratification Indicator: Unknown Eligible Population	NUM	3	—	27	33
+RFRNC_YR_HEDIS	Reference Year HEDIS	NUM	3	22	28	34
+1 For all columns relating to the year of the data file, shading or '—' indicates variable is not in the file.
+2In 2025, this field was renamed to sex to comply with Executive Order 14168.

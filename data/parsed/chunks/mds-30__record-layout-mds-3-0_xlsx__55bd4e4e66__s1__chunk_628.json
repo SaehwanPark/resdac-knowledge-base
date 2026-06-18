@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_628",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "movement and alert\nstaff. -=Not assessed/no information\n0=Not used\n1=Used less than daily\n2=Used Daily effective 10/01/2017\n698 P0200D_MTN_SENSOR_ALARM_IND P0200D_MTN_SENSOR_ALARM_IND P0200D Motion Sensor Alarm CHAR 1 The data in this column indicates how often a motion sensor alarm was used to monitor resident movement and\nalert staff. -=Not assessed/no information\n0=Not used\n1=Used less than daily\n2=Used Daily effective 10/01/2017\n699 P0200E_WNDR_ALARM_IND P0200E_WNDR_ALARM_IND P0200E",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p27__chunk_1",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 27,
+  "text": "by knowing the type of provider \nand his/her specialty). \nSHORT NAME: — \nLONG NAME: PRIMARY_TAXONOMY_DESC \nTYPE: \nCHAR \nLENGTH: \n250 \nSOURCE: \nHCIdea™ Prescriber Database \nVALUES: \n(e.g., 207R00000X= Internal Medicine) \nCOMMENT: \nWe populated this variable in the Part D Prescriber Characteristics file by linking to the proprietary \nHCIdea™ Prescriber Database. HCIdea obtains prescriber information from a variety of data sources, \nincluding the NPPES directory (which has each unique NPI that has",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

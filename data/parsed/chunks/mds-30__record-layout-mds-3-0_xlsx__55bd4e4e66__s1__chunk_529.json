@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_529",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "X0300_CRCTN_SEX_CD X0300 Correction Sex Code CHAR 1 The data in this column indicates the resident's sex from the prior erroneous record to be modified or inactivated. -=Not assessed/no information/unable to determine\n1=Male\n2=Female\n^=Blank (Skip Pattern) effective 10/01/2023\ndiscontinued 9/30/2025\n609 X0400_CRCTN_BIRTH_DT X0400_CRCTN_BIRTH_DT X0400 Correction Birth Date CHAR 8 The data in this column indicates the resident's birth date from the prior erroneous record to be modified or",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

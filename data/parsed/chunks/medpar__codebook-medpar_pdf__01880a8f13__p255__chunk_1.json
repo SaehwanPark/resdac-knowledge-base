@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p255__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 255,
+  "text": "UNCOMPD_CARE_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nUncompensated care payments are effective for claims with discharge dates on or after 10/1/13 \nforward. For payment policies, reference the Affordable Care Act section 3133 and the FY2014 IPPS final \nrule. \nThis field is derived by accumulating the Claim inpatient prospective payment system (IPPS) \nUncompensated Care Payment Amount (previously referred to as the Flex Payment 1 Amount field; \nCLM_",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

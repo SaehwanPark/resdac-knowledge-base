@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_203",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "1 = Checked (NA) CHAR 1 x x x x x x\nM1005_DSCHG_UK M1005 (M0180) Most Recent Inpat Discharge Date- UK This field indicates the most recent inpatient discharge date is unknown. 0 = Not Checked (Not Unknown), 1 = Checked (Unknown) CHAR 1 x x x x x x\nM1005_INP_DSCHG_DT M1005 (M0180) Most Recent Inpatient Discharge Date This field indicates the most recent inpatient discharge date. DATE 8 x x x x x x\nM1010_14D_INP1_ICD M1010 (M0190) Inpatient Diagnosis1 ICD Code This field lists the inpatient",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

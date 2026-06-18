@@ -1,0 +1,404 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Plan Characteristics File — Plan Base File
+Version — October 2025
+Long SAS name	Label	Type	Length	Year of data file1
+2015–2016	2017–2022	2023 +
+CONTRACT_ID	Contract Identifier	CHAR	5	X	X	X
+PLAN_ID	Plan Benefit Package Identifier	CHAR	3	X	X	X
+FORMULARY_ID	Part D Formulary Identifier	CHAR	8	X	X	X
+PTCD_INDICATOR	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	X	X	X
+CONTRACT_NAME	Contract Name	CHAR	150	X	X	X
+PLAN_NAME	Plan Benefit Package Name	CHAR	75	X	X	X
+ORGANIZATION_MARKETING_NAME	Plan Organization Marketing Name	CHAR	150	X	X	X
+PARENT_ORGANIZATION	Plan Parent Organization Name	CHAR	50	X	X	X
+EFFECTIVE_DATE	Plan Effective Date	CHAR	10	X	X	X
+ORGANIZATION_TYPE	Organization Type	CHAR	2	X	X	X
+PLAN_TYPE	Plan Type	CHAR	2	X	X	X
+DEMO_TYPE	Demonstration Type	CHAR	1	X	X	X
+SNP_TYPE	Special Needs Plan (SNP) Type	CHAR	1	X	X	X
+FIDE_SNP	Fully Integrated Dual Eligible (FIDE) SNP	CHAR	1	X	X	-
+DSNP_ZERODOLLAR	Medicare Zero-Dollar Cost Sharing D-SNP Plan	CHAR	1	-	X	-
+DRUG_BENEFIT_TYPE	Part D Drug Benefit Type	CHAR	1	X	X	X
+EGWP_INDICATOR	Employer Group Waiver Plan (EGWP) Indicator	CHAR	1	X	X	X
+EGHP_CALENDAR_YEAR_FLAG	Employer Group Health Plan (EGHP) Calendar Year Indicator	CHAR	1	X	X	X
+COV_CRITERIA	Coverage Criteria (Part A/B or B only Requirement)	CHAR	1	X	X	X
+NATIONAL_PDP	National Prescription Drug Plan (PDP) Sponsor	CHAR	1	X	X	X
+DEMINIMIS_PD_FLAG	Part D Deminimis Paid Flag	CHAR	1	X	X	X
+DED_APPLY	How Part D Deductible is Applied	CHAR	1	X	X	X
+DED_AMT	Part D Plan Deductible Amount	NUM	12	X	X	X
+DED_APPLY_ALL	Type of Cost Sharing in the Part D Plan Deductible Phase	CHAR	1	X	X	X
+DED_COSTSHARE_TIERS	Tiers with Cost Sharing in the Part D Deductible Phase	CHAR	7	X	X	X
+DED_COPAY	Part D Deductible Phase Co-pay Amount	NUM	12	X	X	X
+DED_COINS	Part D Plan Deductible Phase Coinsurance Percentage	NUM	12	X	X	X
+FREE_FIRST_FILL	Indicates Whether Part D Plan Offers Free First Prescription Fill	CHAR	1	X	X	X
+PRE_ICL_APPLY	How Part D Pre-ICL Cost-Sharing is Applied in the Part D Plan	CHAR	1	X	X	X
+ICL_APPLY	How Part D Initial Coverage Limit (ICL) is Applied in the Part D Plan	CHAR	1	X	X	X
+ICL_AMT	Part D Plan Initial Coverage Limit (ICL) Amount	NUM	12	X	X	X
+POST_OOPT_APPLY	How Post Out-of-Pocket (OOP) Threshold Cost-Sharing is Applied in the Part D Plan	CHAR	1	X	X	X
+OOPT_AMT	Out-of-Pocket (OOP) Threshold Amount in the Part D Plan	NUM	12	X	X	X
+EXCLUDED_DRUGS	Indicates Whether Part D Plan Covers Excluded Drugs	CHAR	1	X	X	X
+REDUCED_COST_SHARE	Indicates Whether Part D Plan Offers Reduced Cost-Sharing	CHAR	1	X	X	X
+REDUCED_DED	Indicates Whether Part D Plan Offers Reduced Deductible Amount	CHAR	1	X	X	X
+REDUCED_PREICL_CS	Indicates Whether Part D Plan Offers Reduced Pre-ICL Cost-sharing	CHAR	1	X	X	X
+REDUCED_OOPT_CS	Indicates Whether Part D Plan Offers Reduced Post Out-of-Pocket (OOP) Threshold Cost-Sharing Amounts	CHAR	1	X	X	X
+INCREASED_ICL	Indicates Whether Part D Plan Offers Increased Initial Coverage Limit (ICL) Amount	CHAR	1	X	X	X
+OTC_UM_PROGRAM	Part D Plan Covers Over-the-Counter (OTC) Medications under the Utilization Management Program	CHAR	1	X	X	X
+1 For all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not)
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Plan Characteristics File — Premium File
+Version — October 2025
+Long SAS name	Label	Type	Length	1Year of	Data File1
+2015–20232	2024 +
+CONTRACT_ID	Contract Identifier	CHAR	5	X	X
+PLAN_ID	Plan Benefit Package Identifier	CHAR	3	X	X
+SEGMENT_ID	Market Segment Identifier	CHAR	3	X	X
+PTCD_INDICATOR	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	X	X
+PART_B_PREMIUM_REDUCTION_AMT	Part B Premium Reduction Amount	NUM	12	X	X
+PART_C_PREMIUM	Part C Premium	NUM	12	X	X
+PLAN_BASIC_PREMIUM_NET_REBATE	Part D Basic Premium Net of Rebate	NUM	12	X	X
+PLAN_SUPP_PREMIUM_NET_REBATE	Part D Supplemental Premium Net of Rebate	NUM	12	X	X
+PLAN_TOTAL_PREMIUM_NET_REBATE	Part D Total Premium Net of Rebate	NUM	12	X	X
+PART_D_LIS_25	Part D Low Income Subsidy 25%	NUM	12	X	-
+PART_D_LIS_50	Part D Low Income Subsidy 50%	NUM	12	X	-
+PART_D_LIS_75	Part D Low Income Subsidy 75%	NUM	12	X	-
+PART_D_LIS_100	Part D Low Income Subsidy 100%	NUM	12	X	X
+PART_D_LIPS_25	Part D Low Income Premium Subsidy 25%	NUM	12	X	-
+PART_D_LIPS_50	Part D Low Income Premium Subsidy 50%	NUM	12	X	-
+PART_D_LIPS_75	Part D Low Income Premium Subsidy 75%	NUM	12	X	-
+PART_D_LIPS_100	Part D Low Income Premium Subsidy 100%	NUM	12	X	X
+BELOW_BENCHMARK	Indicates Whether Part D Plan Offered Basic Plan with Premium Below Benchmark	CHAR	1	X	X
+1 Shading or '-' indicates that the variable was not present during this time.
+2 Prior to the 2015 benefit year, this file was available in the Part D Plan Characteristics Files
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Plan Characteristics File — Tier File1
+Version — October 2025
+Long SAS name	Label	Type	Length2	3Year of	Data File3
+2015–2023	2024 +
+CONTRACT_ID	Contract Identifier	CHAR	5	X	X
+PLAN_ID	Plan Benefit Package Identifier	CHAR	3	X	X
+TIER_ID	Tier Number	CHAR	2	X	X
+GAP_TIER	Indicates Whether Tier is Covered in the Gap Phase	CHAR	1	X	X
+GAP_TIER_PARTIAL	Indicates Whether Tier is Partially Covered in the Gap Phase	CHAR	1	X	X
+EXCLUDED_TIER_GAP	Indicates Whether Excluded Drugs are Covered on this Tier in the Gap Phase	CHAR	1	X	X
+EXCLUDED_TIER_PRE_ICL	Indicates Whether Excluded Drugs are Covered on this Tier in the Pre ICL Phase	CHAR	1	X	X
+SPECIALTY_TIER	Indicates Whether Tier is a Specialty Tier	CHAR	1	X	X
+Pre-ICL Tier Cost-Sharing
+PRE_ICL_TIER_DRUG_TYPE2	Pre-ICL Drug Type by Tier	CHAR	6*	X	X
+PRE_ICL_COSTSHARE_TYPE	Pre-ICL Costshare Type	CHAR	1	X	X
+PRE_ICL_INP_COINS_1M	Pre-ICL Coinsurance Standard Retail - 1 month supply	NUM	12	X	X
+PRE_ICL_INP_COINS_2M	Pre-ICL Coinsurance Standard Retail - 2 month supply	NUM	12	X	X
+PRE_ICL_INP_COINS_3M	Pre-ICL Coinsurance Standard Retail - 3 month supply	NUM	12	X	X
+PRE_ICL_INP_COINS_AVG_1M	Pre-ICL Average Expected Cost Sharing - Standard Retail Coinsurance 1M	NUM	12	X	X
+PRE_ICL_INP_COPAY_1M	Pre-ICL Copay Standard Retail - 1 month supply	NUM	12	X	X
+PRE_ICL_INP_COPAY_2M	Pre-ICL Copay Standard Retail - 2 month supply	NUM	12	X	X
+PRE_ICL_INP_COPAY_3M	Pre-ICL Copay Standard Retail - 3 month supply	NUM	12	X	X
+PRE_ICL_INP_COPAY_DAILY	Pre-ICL Copay Standard Retail - 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_INP_1M	Pre-ICL Standard Retail - number of days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_INP_2M	Pre-ICL Standard Retail - number of days in 2 month supply	NUM	5	X	X
+PRE_ICL_DAYS_INP_3M	Pre-ICL Standard Retail - number of days in 3 month supply	NUM	5	X	X
+PRE_ICL_INPP_COINS_1M	Pre-ICL Coinsurance Split Network Preferred - 1 month supply	NUM	12	X	X
+PRE_ICL_INPP_COINS_2M	Pre-ICL Coinsurance Split Network Preferred - 2 month supply	NUM	12	X	X
+PRE_ICL_INPP_COINS_3M	Pre-ICL Coinsurance Split Network Preferred - 3 month supply	NUM	12	X	X
+PRE_ICL_INPP_COINS_AVG_1M	Pre-ICL Average Expected Cost Sharing - Split Network Preferred Coinsurance 1M	NUM	12	X	X
+PRE_ICL_INPP_COPAY_1M	Pre-ICL Copay Split Network Preferred - 1 month supply	NUM	12	X	X
+PRE_ICL_INPP_COPAY_2M	Pre-ICL Copay Split Network Preferred - 2 month supply	NUM	12	X	X
+PRE_ICL_INPP_COPAY_3M	Pre-ICL Copay Split Network Preferred - 3 month supply	NUM	12	X	X
+PRE_ICL_INPP_COPAY_DAILY	Pre-ICL Copay Split Network Preferred - 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_INPP_1M	Pre-ICL Split Network Preferred - number of days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_INPP_2M	Pre-ICL Split Network Preferred - number of days in 2 month supply	NUM	5	X	X
+PRE_ICL_DAYS_INPP_3M	Pre-ICL Split Network Preferred - number of days in 3 month supply	NUM	5	X	X
+PRE_ICL_INNPP_COINS_1M	Pre-ICL Coinsurance Split Network Standard Retail - 1 month supply	NUM	12	X	X
+PRE_ICL_INNPP_COINS_2M	Pre-ICL Coinsurance Split Network Standard Retail - 2 month supply	NUM	12	X	X
+PRE_ICL_INNPP_COINS_3M	Pre-ICL Coinsurance Split Network Standard Retail - 3 month supply	NUM	12	X	X
+PRE_ICL_INNPP_COINS_AVG_1M	Pre-ICL Average Expected Cost Sharing - Split Network Standard Retail Coinsurance 1M	NUM	12	X	X
+PRE_ICL_INNPP_COPAY_1M	Pre-ICL Copay Split Network Standard Retail - 1 month supply	NUM	12	X	X
+PRE_ICL_INNPP_COPAY_2M	Pre-ICL Copay Split Network Standard Retail - 2 month supply	NUM	12	X	X
+PRE_ICL_INNPP_COPAY_3M	Pre-ICL Copay Split Network Standard Retail - 3 month supply	NUM	12	X	X
+PRE_ICL_INNPP_COPAY_DAILY	Pre-ICL Copay Split Network Standard Retail - 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_INNPP_1M	Pre-ICL Split Network Standard Retail - number of days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_INNPP_2M	Pre-ICL Split Network Standard Retail - number of days in 2 month supply	NUM	5	X	X
+PRE_ICL_DAYS_INNPP_3M	Pre-ICL Split Network Standard Retail - number of days in 3 month supply	NUM	5	X	X
+PRE_ICL_OONP_COINS_1M	Pre-ICL Out-of-Network Pharmacy Coinsurance for 1 month Supply	NUM	12	X	X
+PRE_ICL_OONP_COINS_OS	Pre-ICL Out-of-Network Pharmacy Coinsurance for other days supply	NUM	12	X	X
+PRE_ICL_OONP_COPAY_1M	Pre-ICL Out-of-Network Pharmacy Copay for 1 month supply	NUM	12	X	X
+PRE_ICL_OONP_COPAY_OS	Pre-ICL Out-of-Network Pharmacy Copay for other days supply	NUM	12	X	X
+PRE_ICL_DAYS_OONP_1M	Pre-ICL Out-of-Network Pharmacy - days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_OONP_OS	Pre-ICL Out-of-Network Pharmacy - days in other day supply	NUM	5	X	X
+PRE_ICL_MO_COINS_1M	Pre-ICL Coinsurance Standard Mail Order - 1 month supply	NUM	12	X	X
+PRE_ICL_MO_COINS_2M	Pre-ICL Coinsurance Standard Mail Order - 2 month supply	NUM	12	X	X
+PRE_ICL_MO_COINS_3M	Pre-ICL Coinsurance Standard Mail Order - 3 month supply	NUM	12	X	X
+PRE_ICL_MO_COPAY_1M	Pre-ICL Copay Standard Mail Order - 1 month supply	NUM	12	X	X
+PRE_ICL_MO_COPAY_2M	Pre-ICL Copay Standard Mail Order - 2 month supply	NUM	12	X	X
+PRE_ICL_MO_COPAY_3M	Pre-ICL Copay Standard Mail Order - 3 month supply	NUM	12	X	X
+PRE_ICL_MO_COPAY_DAILY	Pre-ICL Copay Standard Mail Order - 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_MO_1M	Pre-ICL Standard Mail Order - number of days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_MO_2M	Pre-ICL Standard Mail Order - number of days in 2 month supply	NUM	5	X	X
+PRE_ICL_DAYS_MO_3M	Pre-ICL Standard Mail Order - number of days in 3 month supply	NUM	5	X	X
+PRE_ICL_MOPP_COINS_1M	Pre-ICL Coinsurance Split Network Preferred Mail Order - 1 month supply	NUM	12	X	X
+PRE_ICL_MOPP_COINS_2M	Pre-ICL Coinsurance Split Network Preferred Mail Order - 2 month supply	NUM	12	X	X
+PRE_ICL_MOPP_COINS_3M	Pre-ICL Coinsurance Split Network Preferred Mail Order - 3 month supply	NUM	12	X	X
+PRE_ICL_MOPP_COPAY_1M	Pre-ICL Copay Split Network Preferred Mail Order - 1 month supply	NUM	12	X	X
+PRE_ICL_MOPP_COPAY_2M	Pre-ICL Copay Split Network Preferred Mail Order - 2 month supply	NUM	12	X	X
+PRE_ICL_MOPP_COPAY_3M	Pre-ICL Copay Split Network Preferred Mail Order - 3 month supply	NUM	12	X	X
+PRE_ICL_MOPP_COPAY_DAILY	Pre-ICL Copay Split Network Preferred Mail Order - 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_MOPP_1M	Pre-ICL Split Network Preferred Mail Order - number of days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_MOPP_2M	Pre-ICL Split Network Preferred Mail Order - number of days in 2 month supply	NUM	5	X	X
+PRE_ICL_DAYS_MOPP_3M	Pre-ICL Split Network Preferred Mail Order - number of days in 3 month supply	NUM	5	X	X
+PRE_ICL_MONPP_COINS_1M	Pre-ICL Coinsurance Split Network Standard Mail Order - 1 month supply	NUM	12	X	X
+PRE_ICL_MONPP_COINS_2M	Pre-ICL Coinsurance Split Network Standard Mail Order - 2 month supply	NUM	12	X	X
+PRE_ICL_MONPP_COINS_3M	Pre-ICL Coinsurance Split Network Standard Mail Order - 3 month supply	NUM	12	X	X
+PRE_ICL_MONPP_COPAY_1M	Pre-ICL Copay Split Network Standard Mail Order - 1 month supply	NUM	12	X	X
+PRE_ICL_MONPP_COPAY_2M	Pre-ICL Copay Split Network Standard Mail Order - 2 month supply	NUM	12	X	X
+PRE_ICL_MONPP_COPAY_3M	Pre-ICL Copay Split Network Standard Mail Order - 3 month supply	NUM	12	X	X
+PRE_ICL_MONPP_COPAY_DAILY	Pre-ICL Copay Split Network Standard Mail Order - 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_MONPP_1M	Pre-ICL Split Network Standard Mail Order - number of days in 1 month supply	NUM	5	X	X
+PRE_ICL_DAYS_MONPP_2M	Pre-ICL Split Network Standard Mail Order - number of days in 2 month supply	NUM	5	X	X
+PRE_ICL_DAYS_MONPP_3M	Pre-ICL Split Network Standard Mail Order - number of days in 3 month supply	NUM	5	X	X
+PRE_ICL_LTCP_COINS_1M	Pre-ICL Long Term Care Pharmacy Coinsurance for 1 month supply	NUM	12	X	X
+PRE_ICL_LTCP_COPAY_1M	Pre-ICL Long Term Care Pharmacy Copay for 1 month supply	NUM	12	X	X
+PRE_ICL_LTCP_COPAY_DAILY	Pre-ICL Long Term Care Pharmacy Copay for 1 day supply	NUM	12	X	X
+PRE_ICL_DAYS_LTCP_1M	Pre-ICL Long Term Care Pharmacy - days in 1 month supply	NUM	5	X	X
+GAP Tier Cost-Sharing (= ICL Phase)
+GAP_TIER_DRUG_TYPE2	Gap Drug Type by Tier	CHAR	6*	X	X
+GAP_COSTSHARE_TYPE	Gap Cost Share Type	CHAR	1	X	X
+GAP_INP_COINS_1M	Gap Coinsurance Standard Retail- 1 month supply	NUM	12	X	X
+GAP_INP_COINS_2M	Gap Coinsurance Standard Retail- 2 month supply	NUM	12	X	X
+GAP_INP_COINS_3M	Gap Coinsurance Standard Retail- 3 month supply	NUM	12	X	X
+GAP_INP_COINS_AVG_1M	Gap Average Expected Cost Sharing - Standard Retail Coinsurance 1M	NUM	12	X	X
+GAP_INP_COPAY_1M	Gap Copay Standard Retail- 1 month supply	NUM	12	X	X
+GAP_INP_COPAY_2M	Gap Copay Standard Retail- 2 month supply	NUM	12	X	X
+GAP_INP_COPAY_3M	Gap Copay Standard Retail- 3 month supply	NUM	12	X	X
+GAP_INP_COPAY_DAILY	Gap Copay Standard Retail- 1 day supply	NUM	12	X	X
+GAP_DAYS_INP_1M	Gap Standard Retail- number of days in 1 month supply	NUM	5	X	X
+GAP_DAYS_INP_2M	Gap Standard Retail- number of days in 2 month supply	NUM	5	X	X
+GAP_DAYS_INP_3M	Gap Standard Retail- number of days in 3 month supply	NUM	5	X	X
+GAP_INPP_COINS_1M	Gap Coinsurance Split Network Preferred - 1 month supply	NUM	12	X	X
+GAP_INPP_COINS_2M	Gap Coinsurance Split Network Preferred - 2 month supply	NUM	12	X	X
+GAP_INPP_COINS_3M	Gap Coinsurance Split Network Preferred - 3 month supply	NUM	12	X	X
+GAP_INPP_COINS_AVG_1M	Gap Average Expected Cost Sharing - Split Network Preferred Coinsurance 1M	NUM	12	X	X
+GAP_INPP_COPAY_1M	Gap Copay Split Network Preferred - 1 month supply	NUM	12	X	X
+GAP_INPP_COPAY_2M	Gap Copay Split Network Preferred - 2 month supply	NUM	12	X	X
+GAP_INPP_COPAY_3M	Gap Copay Split Network Preferred - 3 month supply	NUM	12	X	X
+GAP_INPP_COPAY_DAILY	Gap Copay Split Network Preferred - 1 day supply	NUM	12	X	X
+GAP_DAYS_INPP_1M	Gap Split Network Preferred - number of days in 1 month supply	NUM	5	X	X
+GAP_DAYS_INPP_2M	Gap Split Network Preferred - number of days in 2 month supply	NUM	5	X	X
+GAP_DAYS_INPP_3M	Gap Split Network Preferred - number of days in 3 month supply	NUM	5	X	X
+GAP_INNPP_COINS_1M	Gap Coinsurance Split Network Standard Retail - 1 month supply	NUM	12	X	X
+GAP_INNPP_COINS_2M	Gap Coinsurance Split Network Standard Retail - 2 month supply	NUM	12	X	X
+GAP_INNPP_COINS_3M	Gap Coinsurance Split Network Standard Retail - 3 month supply	NUM	12	X	X
+GAP_INNPP_COINS_AVG_1M	Gap Average Expected Cost Sharing - Split Network Standard Retail Coinsurance 1M	NUM	12	X	X
+GAP_INNPP_COPAY_1M	Gap Copay Split Network Standard Retail - 1 month supply	NUM	12	X	X
+GAP_INNPP_COPAY_2M	Gap Copay Split Network Standard Retail - 2 month supply	NUM	12	X	X
+GAP_INNPP_COPAY_3M	Gap Copay Split Network Standard Retail - 3 month supply	NUM	12	X	X
+GAP_INNPP_COPAY_DAILY	Gap Copay Split Network Standard Retail - 1 day supply	NUM	12	X	X
+GAP_DAYS_INNPP_1M	Gap Split Network Standard Retail - number of days in 1 month supply	NUM	5	X	X
+GAP_DAYS_INNPP_2M	Gap Split Network Standard Retail - number of days in 2 month supply	NUM	5	X	X
+GAP_DAYS_INNPP_3M	Gap Split Network Standard Retail - number of days in 3 month supply	NUM	5	X	X
+GAP_OONP_COINS_1M	Gap Out-of-Network Pharmacy Coinsurance for 1 month supply	NUM	12	X	X
+GAP_OONP_COINS_OS	Gap Out-of-Network Pharmacy Coinsurance for other days supply	NUM	12	X	X
+GAP_OONP_COPAY_1M	Gap Out-of-Network Pharmacy Copay for 1 month supply	NUM	12	X	X
+GAP_OONP_COPAY_OS	Gap Out-of-Network Pharmacy Copay for other days supply	NUM	12	X	X
+GAP_DAYS_OONP_1M	Gap Out-of-Network Pharmacy - days in 1 month supply	NUM	5	X	X
+GAP_DAYS_OONP_OS	Gap Out-of-Network Pharmacy - days in other day supply	NUM	5	X	X
+GAP_MO_COINS_1M	Gap Coinsurance Standard Mail Order - 1 month supply	NUM	12	X	X
+GAP_MO_COINS_2M	Gap Coinsurance Standard Mail Order - 2 month supply	NUM	12	X	X
+GAP_MO_COINS_3M	Gap Coinsurance Standard Mail Order - 3 month supply	NUM	12	X	X
+GAP_MO_COPAY_1M	Gap Copay Standard Mail Order - 1 month supply	NUM	12	X	X
+GAP_MO_COPAY_2M	Gap Copay Standard Mail Order - 2 month supply	NUM	12	X	X
+GAP_MO_COPAY_3M	Gap Copay Standard Mail Order - 3 month supply	NUM	12	X	X
+GAP_MO_COPAY_DAILY	Gap Copay Standard Mail Order - 1 day supply	NUM	12	X	X
+GAP_DAYS_MO_1M	Gap Standard Mail Order - number of days in 1 month supply	NUM	5	X	X
+GAP_DAYS_MO_2M	Gap Standard Mail Order - number of days in 2 month supply	NUM	5	X	X
+GAP_DAYS_MO_3M	Gap Standard Mail Order - number of days in 3 month supply	NUM	5	X	X
+GAP_MOPP_COINS_1M	Gap Coinsurance Split Network Preferred Mail Order - 1 month supply	NUM	12	X	X
+GAP_MOPP_COINS_2M	Gap Coinsurance Split Network Preferred Mail Order - 2 month supply	NUM	12	X	X
+GAP_MOPP_COINS_3M	Gap Coinsurance Split Network Preferred Mail Order - 3 month supply	NUM	12	X	X
+GAP_MOPP_COPAY_1M	Gap Copay Split Network Preferred Mail Order - 1 month supply	NUM	12	X	X
+GAP_MOPP_COPAY_2M	Gap Copay Split Network Preferred Mail Order - 2 month supply	NUM	12	X	X
+GAP_MOPP_COPAY_3M	Gap Copay Split Network Preferred Mail Order - 3 month supply	NUM	12	X	X
+GAP_MOPP_COPAY_DAILY	Gap Copay Split Network Preferred Mail Order - 1 day supply	NUM	12	X	X
+GAP_DAYS_MOPP_1M	Gap Split Network Preferred Mail Order - number of days in 1 month supply	NUM	5	X	X
+GAP_DAYS_MOPP_2M	Gap Split Network Preferred Mail Order - number of days in 2 month supply	NUM	5	X	X
+GAP_DAYS_MOPP_3M	Gap Split Network Preferred Mail Order - number of days in 3 month supply	NUM	5	X	X
+GAP_MONPP_COINS_1M	Gap Coinsurance Split Network Standard Mail Order - 1 month supply	NUM	12	X	X
+GAP_MONPP_COINS_2M	Gap Coinsurance Split Network Standard Mail Order - 2 month supply	NUM	12	X	X
+GAP_MONPP_COINS_3M	Gap Coinsurance Split Network Standard Mail Order - 3 month supply	NUM	12	X	X
+GAP_MONPP_COPAY_1M	Gap Copay Split Network Standard Mail Order - 1 month supply	NUM	12	X	X
+GAP_MONPP_COPAY_2M	Gap Copay Split Network Standard Mail Order - 2 month supply	NUM	12	X	X
+GAP_MONPP_COPAY_3M	Gap Copay Split Network Standard Mail Order - 3 month supply	NUM	12	X	X
+GAP_MONPP_COPAY_DAILY	Gap Copay Split Network Standard Mail Order - 1 day supply	NUM	12	X	X
+GAP_DAYS_MONPP_1M	Gap Split Network Standard Mail Order - number of days in 1 month supply	NUM	5	X	X
+GAP_DAYS_MONPP_2M	Gap Split Network Standard Mail Order - number of days in 2 month supply	NUM	5	X	X
+GAP_DAYS_MONPP_3M	Gap Split Network Standard Mail Order - number of days in 3 month supply	NUM	5	X	X
+GAP_LTCP_COINS_1M	Gap Long Term Care Pharmacy Coinsurance for 1 month supply	NUM	12	X	X
+GAP_LTCP_COPAY_1M	Gap Long Term Care Pharmacy Copay for 1 month supply	NUM	12	X	X
+GAP_LTCP_COPAY_DAILY	Gap Copay Long Term Care Pharmacy - 1 day supply	NUM	12	X	X
+GAP_DAYS_LTCP_1M	Gap Long Term Care Pharmacy - days in 1 month supply	NUM	5	X	X
+Post-ICL Tier Cost-Sharing
+POST_OOPT_TIER_DRUG_TYPE2	Post-Out-of-Pocket Threshold Drug Type by Tier	CHAR	6*	X	X
+POST_OOPT_COSTSHARE_TYPE	Post-Out-of-Pocket Threshold Costshare Type by Tier	CHAR	1	X	X
+POST_OOPT_COINS_PCT	Post-Out-of-pocket threshold Coinsurance Percentage	NUM	12	X	X
+POST_OOPT_COPAY_AMT	Post-Out-of-Pocket Threshold Copay	NUM	12	X	X
+POST_OOPT_EXCL_DRUG_CST_SHR	Post-Out-of-Pocket Threshold Costshare Type by Tier for Excluded Drugs	CHAR	1	-	X
+Insulin Tier Cost-Sharing
+INSULIN_INP_COPAY_1M	Insulin Copay Standard Retail - 1 month supply	NUM	12	-	X
+INSULIN_INP_COPAY_2M	Insulin Copay Standard Retail - 2 month supply	NUM	12	-	X
+INSULIN_INP_COPAY_3M	Insulin Copay Standard Retail - 3 month supply	NUM	12	-	X
+INSULIN_INPP_COPAY_1M	Insulin Copay Split Network Preferred Retail - 1 month supply	NUM	12	-	X
+INSULIN_INPP_COPAY_2M	Insulin Copay Split Network Preferred Retail - 2 month supply	NUM	12	-	X
+INSULIN_INPP_COPAY_3M	Insulin Copay Split Network Preferred Retail - 3 month supply	NUM	12	-	X
+INSULIN_MO_COPAY_1M	Insulin Copay Standard Mail Order - 1 month supply	NUM	12	-	X
+INSULIN_MO_COPAY_2M	Insulin Copay Standard Mail Order - 2 month supply	NUM	12	-	X
+INSULIN_MO_COPAY_3M	Insulin Copay Standard Mail Order - 3 month supply	NUM	12	-	X
+INSULIN_MOPP_COPAY_1M	Insulin Copay Split Network Preferred Mail Order - 1 month supply	NUM	12	-	X
+INSULIN_MOPP_COPAY_2M	Insulin Copay Split Network Preferred Mail Order - 2 month supply	NUM	12	-	X
+INSULIN_MOPP_COPAY_3M	Insulin Copay Split Network Preferred Mail Order - 3 month supply	NUM	12	-	X
+INSULIN_OONP_COPAY_1M	Insulin Copay Out-of-Network Pharmacy - 1 month supply	NUM	12	-	X
+INSULIN_OONP_COPAY_OS	Insulin Copay Out-of-Network Pharmacy - Other days supply	NUM	12	-	X
+INSULIN_LTCP_COPAY_1M	Insulin Copay Long Term Care Pharmacy - 1 month supply	NUM	12	-	X
+1 This file applies only to Part D plans.
+2 * indicates length change for the variable; length in the most recent file is displayed. Prior to the May 2018 update the length was 2.
+3 Shading or '-' indicates that the variable was not present during this time.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Plan Characteristics File — Service Area File
+Version — October 2025
+Long SAS name	Label	Type	Length
+CONTRACT_ID	Contract Identifier	CHAR	5
+PLAN_ID	Plan Benefit Package Identifier	CHAR	3
+SEGMENT_ID	Market Segment Identifier	CHAR	3
+PTCD_INDICATOR	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1
+STATE_NAME	Segment State Name	CHAR	25
+STATE_ABBRV	State Postal Code	CHAR	2
+COUNTY_NAME	Segment County Name	CHAR	35
+SSA_CODE	Segment SSA State and County Code	CHAR	5
+PARTIAL_FLAG	Segment Partial County Indicator	CHAR	1
+REGION_CODE	Segment Region Code	CHAR	2
+REGION_NAME	Segment Region Name	CHAR	150
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Plan Characteristics File — Plan Crosswalk File1
+Version — October 2025
+Long SAS name2	Label	Type	Length	Year of	data file4
+2015	2016	2017	2018	2019	2020	2021	2022	2023	2024
+RELATIONSHIP_CODE	Relationship Code3	CHAR	1	X	X	X	X	X	X	X	X	X	X
+RELATIONSHIP_DESC	Relationship Description3	CHAR	15	X	X	X	X	X	X	X	X	X	X
+PTCD_INDICATOR_15	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	X	-	-	-	-	-	-	-	-	-
+CONTRACT_ID_15	Contract Identifier for Reference Year	CHAR	5	X	-	-	-	-	-	-	-	-	-
+PLAN_ID_15	Plan Benefit Package Identifier for Reference Year	CHAR	3	X	-	-	-	-	-	-	-	-	-
+CONTRACT_ID_14	Contract Identifier for Previous Year	CHAR	5	X	-	-	-	-	-	-	-	-	-
+PLAN_ID_14	Plan Benefit Package Identifier for Previous Year	CHAR	3	X	-	-	-	-	-	-	-	-	-
+PTCD_INDICATOR_16	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	X	-	-	-	-	-	-	-	-
+CONTRACT_ID_16	Contract Identifier for Reference Year	CHAR	5	-	X	-	-	-	-	-	-	-	-
+PLAN_ID_16	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	X	-	-	-	-	-	-	-	-
+CONTRACT_ID_15	Contract Identifier for Previous Year	CHAR	5	-	X	-	-	-	-	-	-	-	-
+PLAN_ID_15	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	X	-	-	-	-	-	-	-	-
+PTCD_INDICATOR_17	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	-	X	-	-	-	-	-	-	-
+CONTRACT_ID_17	Contract Identifier for Reference Year	CHAR	5	-	-	X	-	-	-	-	-	-	-
+PLAN_ID_17	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	-	X	-	-	-	-	-	-	-
+CONTRACT_ID_16	Contract Identifier for Previous Year	CHAR	5	-	-	X	-	-	-	-	-	-	-
+PLAN_ID_16	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	-	X	-	-	-	-	-	-	-
+PTCD_INDICATOR_18	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	X	-	-	-	-	-	-
+CONTRACT_ID_18	Contract Identifier for Reference Year	CHAR	5	-	-	-	X	-	-	-	-	-	-
+PLAN_ID_18	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	-	-	X	-	-	-	-	-	-
+CONTRACT_ID_17	Contract Identifier for Previous Year	CHAR	5	-	-	-	X	-	-	-	-	-	-
+PLAN_ID_17	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	-	-	X	-	-	-	-	-	-
+PTCD_INDICATOR_19	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	-	X	-	-	-	-	-
+CONTRACT_ID_19	Contract Identifier for Reference Year	CHAR	5	-	-	-	-	X	-	-	-	-	-
+PLAN_ID_19	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	-	-	-	X	-	-	-	-	-
+CONTRACT_ID_18	Contract Identifier for Previous Year	CHAR	5	-	-	-	-	X	-	-	-	-	-
+PLAN_ID_18	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	-	-	-	X	-	-	-	-	-
+PTCD_INDICATOR_20	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	-	-	X	-	-	-	-
+CONTRACT_ID_20	Contract Identifier for Reference Year	CHAR	5	-	-	-	-	-	X	-	-	-	-
+PLAN_ID_20	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	-	-	-	-	X	-	-	-	-
+CONTRACT_ID_19	Contract Identifier for Previous Year	CHAR	5	-	-	-	-	-	X	-	-	-	-
+PLAN_ID_19	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	-	-	-	-	X	-	-	-	-
+PTCD_INDICATOR_21	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	-	-	-	X	-	-	-
+CONTRACT_ID_21	Contract Identifier for Reference Year	CHAR	5	-	-	-	-	-	-	X	-	-	-
+PLAN_ID_21	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	-	-	-	-	-	X	-	-	-
+CONTRACT_ID_20	Contract Identifier for Previous Year	CHAR	5	-	-	-	-	-	-	X	-	-	-
+PLAN_ID_20	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	-	-	-	-	-	X	-	-	-
+PTCD_INDICATOR_22	Indicates Whether the Current Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	-	-	-	-	X	-	-
+CONTRACT_ID_22	Contract Identifier for Reference Year	CHAR	5	-	-	-	-	-	-	-	X	-	-
+PLAN_ID_22	Plan Benefit Package Identifier for Reference Year	CHAR	3	-	-	-	-	-	-	-	X	-	-
+CONTRACT_ID_21	Contract Identifier for Previous Year	CHAR	5	-	-	-	-	-	-	-	X	-	-
+PLAN_ID_21	Plan Benefit Package Identifier for Previous Year	CHAR	3	-	-	-	-	-	-	-	X	-	-
+PTCD_INDICATOR_23	Indicates Whether the Reference Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	-	-	-	-	-	X	-
+CONTRACT_ID_23	Reference Year Part D Plan Contract Identifier	CHAR	5	-	-	-	-	-	-	-	-	X	-
+PLAN_ID_23	Reference Year Part D Plan Benefit Identifier	CHAR	3	-	-	-	-	-	-	-	-	X	-
+CONTRACT_ID_22	Previous Year Part D Plan Contract Identifier	CHAR	5	-	-	-	-	-	-	-	-	X	-
+PLAN_ID_22	Previous Year Part D Plan Benefit Identifier	CHAR	3	-	-	-	-	-	-	-	-	X	-
+PTCD_INDICATOR_24	Indicates Whether the Reference Year Plan is Part C, Part D or Both	CHAR	1	-	-	-	-	-	-	-	-	-	X
+CONTRACT_ID_24	Reference Year Part D Plan Contract Identifier	CHAR	5	-	-	-	-	-	-	-	-	-	X
+PLAN_ID_24	Reference Year Part D Plan Benefit Identifier	CHAR	3	-	-	-	-	-	-	-	-	-	X
+CONTRACT_ID_23	Previous Year Part D Plan Contract Identifier	CHAR	5	-	-	-	-	-	-	-	-	-	X
+PLAN_ID_23	Previous Year Part D Plan Benefit Identifier	CHAR	3	-	-	-	-	-	-	-	-	-	X
+1 Naming convention for plan and contract ID variables uses the reference year (i.e., year of the data file) and the prior year.
+As a result, variable names change each year.
+2 The contract and plan ID variables must be used together to uniquely identify a plan sponsor's benefit package.
+3 These two variables (RELATIONSHIP_CODE and RELATIONSHIP_DESC) appear in each data file.
+4 Shading or '-' indicates that the variable was not present during this time.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Plan Characteristics File — Special Needs Plan (SNP) Contract File1
+Version — October 2025
+Long SAS name	Label	Type	Length	Year of data file2
+2017	2018–2022	2023 +
+CONTRACT_ID	Contract Number	CHAR	5	X	X	X
+PLAN_ID	Plan Identifier	CHAR	3	X	X	X
+SNP_PERCENTAGE_TYPE	SNP Percentage Type	CHAR	1	X	-	-
+SNP_INSTITUTIONAL_TYPE	SNP Institutional Type	CHAR	1	X	X	X
+AIP_INDICATOR	Applicable Integrated Plan Indicator	CHAR	1	-	-	X
+DSNP_INTEGRATION_LEVEL	D-SNP integration level with FIDE/HIDE/CO values	CHAR	10	-	-	X
+DSNP_ZERODOLLAR	Medicare Zero-Dollar Cost Sharing D-SNP Plan	CHAR	1	-	-	X
+CONDITION_CATEGORY_01	Chronic Alcohol and Other Drug Dependence	CHAR	1	X	X	X
+CONDITION_CATEGORY_02	Auto-immune Disorders	CHAR	1	X	X	X
+CONDITION_CATEGORY_03	Cancer Excluding Pre-cancer Conditions or In-situ Status	CHAR	1	X	X	X
+CONDITION_CATEGORY_04	Cardiovascular Disorders	CHAR	1	X	X	X
+CONDITION_CATEGORY_05	Chronic Heart Failure	CHAR	1	X	X	X
+CONDITION_CATEGORY_06	Dementia	CHAR	1	X	X	X
+CONDITION_CATEGORY_07	Diabetes Mellitus	CHAR	1	X	X	X
+CONDITION_CATEGORY_08	End-Stage Liver Disease	CHAR	1	X	X	X
+CONDITION_CATEGORY_09	End-Stage Renal Disease Requiring Any Mode of Dialysis	CHAR	1	X	X	X
+CONDITION_CATEGORY_10	Severe Hematologic Disorders	CHAR	1	X	X	X
+CONDITION_CATEGORY_11	HIV/AIDS	CHAR	1	X	X	X
+CONDITION_CATEGORY_12	Chronic Lung Disorders	CHAR	1	X	X	X
+CONDITION_CATEGORY_13	Chronic and Disabling Mental Health Conditions	CHAR	1	X	X	X
+CONDITION_CATEGORY_14	Neurologic Disorders	CHAR	1	X	X	X
+CONDITION_CATEGORY_15	Stroke	CHAR	1	X	X	X
+CONDITION_CATEGORY_16	Cardiovascular Disorders and/or Chronic Heart Failure	CHAR	1	X	X	X
+CONDITION_CATEGORY_17	Cardiovascular Disorders and/or Diabetes	CHAR	1	X	X	X
+CONDITION_CATEGORY_18	Chronic Heart Failure and/or Diabetes	CHAR	1	X	X	X
+CONDITION_CATEGORY_19	Cardiovascular Disorders, Chronic Heart Failure, and/or Diabetes	CHAR	1	X	X	X
+CONDITION_CATEGORY_20	Cardiovascular Disorders and/or Stroke	CHAR	1	X	X	X
+1 All SNP plans offer both Part C and Part D benefits
+2 For all columns under "Year of Data File":  X = variable is present (shading or '-' indicates it is not)
+
+Revision date	Tab	Description
+45931	Premium
+Tier
+Plan Crosswalk	Retired 6 fields from Premium file after 2023: PART_D_LIS_25, PART_D_LIS_50, PART_D_LIS_75, PART_D_LIPS_25, PART_D_LIPS_50, PART_D_LIPS_75.
+
+Added 16 fields to Tier file starting with 2024: POST_OOPT_EXCL_DRUG_CST_SHR, INSULIN_INP_COPAY_1M, INSULIN_INP_COPAY_2M, INSULIN_INP_COPAY_3M, INSULIN_INPP_COPAY_1M, INSULIN_INPP_COPAY_2M, INSULIN_INPP_COPAY_3M, INSULIN_MO_COPAY_1M, INSULIN_MO_COPAY_2M, INSULIN_MO_COPAY_3M, INSULIN_MOPP_COPAY_1M, INSULIN_MOPP_COPAY_2M, INSULIN_MOPP_COPAY_3M, INSULIN_OONP_COPAY_1M, INSULIN_OONP_COPAY_OS, INSULIN_LTCP_COPAY_1M.
+
+Added new annual variables to Plan Crosswalk file for 2024 (CONTRACT_ID_YY, PLAN_ID_YY and PTCD_INDICATOR_YY) and reformatted the layout for consistency.
+45597	Plan Base
+Plan Crosswalk
+SNP Contract	Updated layout to reflect FIDE_SNPand DSNP_ZERODOLLAR fields  in Plan Base File are retired after 2022. Added new annual variables to Plan Croswalk file for 2022 and 2023 files: CONTRACT_ID_YY, PLAN_ID_YY and PTCD_INDICATOR_YY. Updated layout to reflect three fields added to SNP contract file: AIP_INDICATOR, DSNP_INTEGRATION_LEVEL, and DSNP_ZERODOLLAR
+44835	Plan Base
+Plan Crosswalk	Edited length of DED_COSTSHARE_TIERS field  in Plan Base File to 7 (rather than 6). Added new annual variables to Plan Croswalk file for 2020 and 2021 files: CONTRACT_ID_YY, PLAN_ID_YY and PTCD_INDICATOR_YY
+44470	Service Area File	Added new variable STATE_ABBRV to the layout
+44166	SNP Contract	Clarified that SNP_PERCENTAGE_TYPE  is not available after 2017
+43739	Tier	Edit to Plan Base File: 
+Updated DED_COSTSHARE_TIERS value descriptions
+Updated field length in the Tier File for PRE_ICL_TIER_DRUG_TYPE, GAP_TIER_DRUG_TYPE, and POST_OOPT_TIER_DRUG_TYPE
+
+Added new variables to Plan Crosswalk File:
+CONTRACT_ID_17 (previous year)
+CONTRACT_ID_18 (reference year)
+PLAN_ID_17 (previous year)
+PLAN_ID_18 (reference year)
+PTCD_INDICATOR_18
+43374	Base	Added new variable: DSNP_ZERODOLLAR

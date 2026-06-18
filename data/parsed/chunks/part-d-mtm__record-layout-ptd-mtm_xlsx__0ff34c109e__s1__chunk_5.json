@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__record-layout-ptd-mtm_xlsx__0ff34c109e__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/0ff34c109e2a17f7f4331ca3d1d545920f22d3d5.xlsx",
+  "page": 1,
+  "text": "review (CMR) received DATE 8 X X - - -\nCMR_RECEIVED_DT5 Date fifth comprehensive medication review (CMR) received DATE 8 X X - - -\nWRIT_SUMM_DT Date written summary in CMS’ standardized format was provided or sent DATE 8 - - - X X\nCMR_DELIVERY_METHOD Comprehensive medication review (CMR) method CHAR 2 X X X X X\nCMR_PROVIDER Comprehensive medication review (CMR) provider type CHAR 2 X X X X X\nCMR_RECIPIENT_INI If offered a CMR recipient of (initial) offer CHAR 2 - - - X -\nTARG_MED_REV_NUM Number",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-mtm.xlsx"
+}

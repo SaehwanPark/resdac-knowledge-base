@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_37",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "correction to full prior assessment, 05 = Quarterly review assessment, 06 = Discharged - return not anticipated, 07 = Discharged - return anticipated, 08 = Discharged prior to completing initial assessment, 09 = Reentry, 10 = Significant correction of prior quarterly assessment, 00 = None of above\n73 AA8B AA8B_SPC_RFA (AA8B) Assessment Codes for Medicare PPS State CHAR 1 Special reason for assessment. = Space, - = Unknown, 1 = Medicare 5 day assessment, 2 = Medicare 30 day assessment, 3 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

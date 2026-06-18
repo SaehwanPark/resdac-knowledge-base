@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_7",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "6\nEM_BENE_PMT Evaluation and Management Beneficiary Payments NUM 12\nEM_MDCR_PMT Evaluation and Management Medicare Payments NUM 12\nEM_PRMRY_PMT Evaluation and Management Primary Payer Amount NUM 12\nEM_EVENTS Evaluation and Management Events NUM 6\nPHYS_BENE_PMT Part B Physician Beneficiary Payments NUM 12\nPHYS_MDCR_PMT Part B Physician Medicare Payments NUM 12\nPHYS_PRMRY_PMT Part B Physician Primary Payer Amount NUM 12\nPHYS_EVENTS Part B Physician Events NUM 6\nDIALYS_BENE_PMT Dialysis",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

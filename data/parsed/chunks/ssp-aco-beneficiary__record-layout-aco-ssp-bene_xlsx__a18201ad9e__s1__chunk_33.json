@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "6 = North American Native) CHAR 1 x x x x x x x x x x x\nM01_ENROLL Month January Eligibility Flag Monthly enrollment flag indicates the Medicare Enrollment category of the beneficiary for the given month (1 = ESRD, 2 = Disabled, 3 = Aged/Dual, 4 = Aged/Non-dual). CHAR 1 - - - - x x x x x x x\nM02_ENROLL Month February Eligibility Flag Monthly enrollment flag indicates the Medicare Enrollment category of the beneficiary for the given month (1 = ESRD, 2 = Disabled, 3 = Aged/Dual, 4 =",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

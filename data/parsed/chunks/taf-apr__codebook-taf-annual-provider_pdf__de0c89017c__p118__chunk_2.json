@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p118__chunk_2",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 118,
+  "text": "Medicaid Provider ID), then this value is the ANSI state \nnumeric code (e.g., 04,17,33,48). \nIf PRVDR_NUM_SYS equals “2” (NPI) or “3” (Medicare), this value is “CMS.” \nIf PRVDR_NUM_SYS equals “4” (NCPDP ID) then this value is “NCPDP” \nIf PRVDR_NUM_SYS equals “5” (Federal Tax ID), then this value is “IRS”. \nIf PRVDR_NUM_SYS equals “6” (State Tax ID), then this value is the name of the state’s taxation \ndivision (e.g., DOR, OK TAX). \nIf PRVDR_NUM_SYS equals “8” (Other), then this value is the",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

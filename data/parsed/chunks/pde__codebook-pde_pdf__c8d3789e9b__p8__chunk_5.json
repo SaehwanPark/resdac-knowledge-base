@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p8__chunk_5",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 8,
+  "text": "PP = PDE occurred in pre-ICL phase \nXX = PDE plan identifiers do not link to \nthe plan benefit file \nCOMMENT: \nSome non-standard combinations of benefit phases might appear, particularly if a beneficiary changed \nplans during the year. \nThe CCW creates this variable based on the beneficiary’s plan benefit package at the time of the \nprescription was filled (using the Part D contract and plan of record which appear in the CCW Master \nBeneficiary Summary A/B/D file). For a small number of",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

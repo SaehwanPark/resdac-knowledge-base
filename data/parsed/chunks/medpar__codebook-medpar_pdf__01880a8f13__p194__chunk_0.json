@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p194__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 194,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n178 \nPOA_DGNS_E_CD_CNT \nLABEL: \nCount of Present on Admission (POA) Diagnosis E Codes \nDESCRIPTION: The count of the number of Present on Admission (POA) codes associated with the diagnosis E codes \nreported on the Inpatient/SNF claim. \nSHORT NAME: POA_DGNS_E_CD_CNT \nLONG NAME: POA_DGNS_E_CD_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n0 to 12 \nCOMMENT: \nThis field was new in 2009. \nThe E",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

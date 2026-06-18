@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "Assigned in Final Reconciliation (Boolean) 0/1 flag; =1 if beneficiary was assigned in final reconciliation period (from final reconciliation assignment tables in IDR) based on the ACO's certified participant list used in financial reconciliation NUM 1 Final = Reference Year x x x x x x x x x x x\nPRELIM_AB_ELIG_MONTHS Parts A and B Eligibile Months in Preliminary Period Number of months of Parts A and B eligibility for the 12 month period used for preliminary assignment period (from preliminary",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

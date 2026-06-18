@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_233",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "of Recurrent/Chronic Problem CHAR 1 Health conditions: stability of conditions - resident experiencing acute episode/flare-up. 0 = No, 1 = Yes, \"-\" = Unknown.\n375 J5C J5C_END_STG_DISEAS (J5C) End Stage Disease CHAR 1 Health conditions: stability of conditions - end-stage disease. 0 = No, 1 = Yes, \"-\" = Unknown.\n376 J5D J5D_NONE_ABOVE (J5D) None of Above Stability of Conditions CHAR 1 Health conditions: stability of conditions - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n377 K1A",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

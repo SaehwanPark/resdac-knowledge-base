@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p350__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 350,
+  "text": "co-payment amount will not have a value in this \nfield; see instead the corresponding coinsurance variable called (PRE_ICL_INP_1M_COINS_TIER_01). \nThere are a different number of the variables each year to describe tiers, due to variation in the \nformulary tiers over time. There are different variables to describe all possible tiers in the pre-ICL \nbenefit phase. See PRE_ICL_INP_1M_COPAY_TIER_01 - PRE_ICL_INP_1M_COPAY_TIER_09. \nDuring 2008- 2010 there were only seven tiers (i.e., variables",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p266__chunk_3",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 266,
+  "text": "indicator 1 ('adjustment indicator' derived from the presence of query code values noted below \non any of the claim records included in the analysis): \n0 = No adjustment (no query code = 0 or 5) \n1 = Credit adjustment (query code = 0) \n2 = Debit adjustment (query code = 5) \n3 = Credit and debit adjustment (both query code = 0 and 5) \nWarning indicator 2 ('error condition' derived from checking the edit code trailer on the final action \nclaims(s) that comprise the stay): \n0 = No error \n1 = Error",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "0 = No, 1 = Yes, \"-\" = Unknown.\n56 A9F A9F_PAT_RESP_SELF (A9F) Patient Responsible for Self CHAR 1 Identification and background information: Responsibility/legal guardian - patient responsible for self 0 = No, 1 = Yes, \"-\" = Unknown.\n57 A9G A9G_NONE_ABOVE (A9G) None of Above Legal Guardian CHAR 1 Identification and background information: Responsibility/legal guardian - none of above 0 = No, 1 = Yes, \"-\" = Unknown.\n58 A10A A10A_LIVING_WILL (A10A) Living Will CHAR 1 Identification and",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

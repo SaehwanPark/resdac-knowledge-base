@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p13__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 13,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n2 \nALIVE_MOS \nLABEL: \nMonths Alive \nDESCRIPTION: Number of months alive in the reference year. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF/T-MSIS DE file (derived) \nVALUES: \n1–12 \nCOMMENT: \nCCW creates this variable using MBSF for the Medicare population; for the population with only \nMedicaid, CCW creates this variable from the T-MSIS DE file. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

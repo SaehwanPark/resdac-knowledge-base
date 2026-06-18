@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hha-ffs__data-documentation__7a39b31d66__chunk_6",
+  "source_document": "data/raw/html/documentation_page/7a39b31d66a1e4c8a9496eb67fda7c56df9bca35.html",
+  "page": null,
+  "text": "| Claim Total Charge Amount | \n\n | 39 | NCH_BENE_DSCHRG_DT | NCH Beneficiary Discharge Date | \n\n | 40 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (FFS) | \n\n | 41 | ICD_DGNS_CD1 | Claim Diagnosis Code I (FFS) | \n\n | 42 | ICD_DGNS_CD2 | Claim Diagnosis Code II (FFS) | \n\n | 43 | ICD_DGNS_CD3 | Claim Diagnosis Code III (FFS) | \n\n | 44 | ICD_DGNS_CD4 | Claim Diagnosis Code IV (FFS) | \n\n | 45 | ICD_DGNS_CD5 | Claim Diagnosis Code V (FFS) | \n\n | 46 | ICD_DGNS_CD6 | Claim Diagnosis Code VI (FFS)",
+  "dataset": "hha-ffs",
+  "url": "https://resdac.org/cms-data/files/hha-ffs/data-documentation"
+}

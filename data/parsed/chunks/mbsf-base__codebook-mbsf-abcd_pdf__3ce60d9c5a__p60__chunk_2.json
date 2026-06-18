@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p60__chunk_2",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 60,
+  "text": "that SAMPLE_GRP equals “01”. \nTo use the 5 percent sample, specify that SAMPLE_GRP equals “01” or “04”. \nTo use the 15 percent sample, specify that SAMPLE_GRP equals “15”. \nTo use the 20 percent sample, specify that SAMPLE_GRP equals “01”, “04”, or “15”. \nBeneficiaries are assigned to sample groups each year based on the last two digits of their Medicare \nClaim Account Numbers (CANs). Since CANs can change over time (e.g., in the case of remarriage), \nnew beneficiaries are becoming eligible for",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p18__chunk_2",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 18,
+  "text": "insurance claim (HIC)27 numbers from all data files delivered to \nresearchers. CCW adds a unique CCW beneficiary identifier (variable called the BENE_ID) in each data file delivered as \npart of the output package. The unique CCW beneficiary identifier provides a common link across all applicable types \nof data available, thus allowing data users to link the CCW Payment Risk Score data to beneficiary and claims data in \nthe CCW. \nThe unique CCW beneficiary identifier field is specific to the CCW",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

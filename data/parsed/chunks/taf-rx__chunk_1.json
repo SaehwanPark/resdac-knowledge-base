@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-rx__chunk_1",
+  "source_document": "data/raw/html/dataset_page/4e158ec9ec730af462c8ee86fbfacdaf76bb7468.html",
+  "page": null,
+  "text": "Charges and Medicaid payments (FFS only)\n- National Provider Identifier (NPI) for the billing provider\nSpecial considerations\n- Encounter data reporting may vary by state, year and eligibility group.\n- Information on the drug name, dosage and format is not recorded in the TAF RX file. An external source of NDC data will be required if that information is needed.\n- CMS continues to work with states to address data quality issues. In addition to preliminary and fully mature files, CMS may provide",
+  "dataset": "taf-rx",
+  "url": "https://resdac.org/cms-data/files/taf-rx?page=1"
+}

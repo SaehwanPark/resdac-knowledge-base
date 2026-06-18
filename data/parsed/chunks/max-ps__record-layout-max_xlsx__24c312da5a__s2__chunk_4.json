@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_4",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "old values NUM 1 X NP NP 2005+ variable is present but field is blank.\n19 MSNG_ELG_DATA Missing eligibility data CHAR 1 ‾ X X\n20 EL_MDCR_XOVR_CLM_BSD_CD Medicare crossover code (from claims only) NUM 1 X X X\n21 EL_MDCR_ANN_XOVR_99 Medicare crossover code (Annual) CHAR 2 X X X\n22 MSIS_TOS MSIS Type of Service (TOS) NUM 2 X X X\n23 MSIS_TOP MSIS Type of Program (TOP) NUM 1 X X X\n24 MAX_TOS MAX Type of Service (TOS) NUM 2 X X X\n25 PRVDR_ID_NMBR Billing provider identification number CHAR 12 X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

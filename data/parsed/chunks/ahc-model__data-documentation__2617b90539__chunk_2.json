@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__data-documentation__2617b90539__chunk_2",
+  "source_document": "data/raw/html/documentation_page/2617b90539062fe66e0d34c18b850febb573183e.html",
+  "page": null,
+  "text": "| AHC Bridge Organization Identifier | \n\n | AHC_BRDG_ORG_STATE_CD | AHC Bridge Organization State | \n\n | AHC_TRK_CD | AHC Assistance or Alignment Track | \n\n | AHC_BENE_ID | AHC Beneficiary Identifier | \n\n | SR_SCRNG_ID | Screening Identifier | \n\n | SR_SCRNG_DT | Screening Date | \n\n | SR_SCRNG_BEFORE_DRNG_AFTR_CD | Did Screening Occur Before, During, or After the Visit | \n\n | SR_CORE_FOOD_1_CD | Core HRSN Food 1: Worried Food Would Run Out Before Got Money for More | \n\n | SR_CORE_FOOD_2_CD |",
+  "dataset": "ahc-model",
+  "url": "https://resdac.org/cms-data/files/ahc-model/data-documentation"
+}

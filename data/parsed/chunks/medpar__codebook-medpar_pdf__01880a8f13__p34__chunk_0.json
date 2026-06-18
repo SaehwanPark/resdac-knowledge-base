@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p34__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 34,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n18 \nBENE_IDENT_CD \nLABEL: \nBIC reported on first claim included in stay \nDESCRIPTION: The MEDPAR Beneficiary Identification Code (BIC) reported on the first claim record included in the \nstay. \nSHORT NAME: BIC \nLONG NAME: BENE_IDENT_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nA = Primary claimant \nB = Aged wife, age 62 or over (1st claimant) \nB1 = Aged husband, age 62 or over (1st claimant)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

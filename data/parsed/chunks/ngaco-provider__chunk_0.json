@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-provider__chunk_0",
+  "source_document": "data/raw/html/dataset_page/6273349b5375e4ae0122178ff00841c6e978da09.html",
+  "page": null,
+  "text": "The Next Generation ACO (NGACO) Model Provider file contains information about the participating providers in the NGACO Model. The file includes one record per year of participation for participating organizations. A related file, the Next Generation ACO Model Beneficiary file, contains identifying information about the beneficiaries assigned to a provider who is participating in the NGACO Model.\nWhat does this file include? (variable highlights)\n- ACO identifier\n- Performance year\n-",
+  "dataset": "ngaco-provider",
+  "url": "https://resdac.org/cms-data/files/ngaco-provider"
+}

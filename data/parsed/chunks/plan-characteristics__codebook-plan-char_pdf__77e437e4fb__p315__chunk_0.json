@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p315__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 315,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n301 \nREDUCED_PREICL_CS \nLABEL: \nIndicates Whether Part D Plan Offers Reduced Pre-ICL Cost-sharing \nDESCRIPTION: This variable indicates whether the plan offers reduced cost sharing applies to the pre-Initial Coverage \nLimit (ICL) phase of the Part D benefit. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes \nN = No \n9 = Not Applicable \nCOMMENT: \nThis",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

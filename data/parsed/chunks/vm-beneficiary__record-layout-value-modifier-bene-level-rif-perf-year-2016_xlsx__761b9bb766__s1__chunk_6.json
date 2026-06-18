@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "not equal to missing. Equals 1 if beneficiary has COPD\nIHD Chronic condition flag for CAD Indicator for whether beneficiary has Coronary Artery Disease 12 Num 8 Populated only for records with Inpatient_stay not equal to missing. Equals 1 if beneficiary has Coronary Artery Disease\nDIA Chronic condition flag for diabetes Indicator for whether beneficiary has Diabetes 13 Num 8 Populated only for records with Inpatient_stay not equal to missing. Equals 1 if beneficiary has Diabetes\nCHF Chronic",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p28__chunk_1",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 28,
+  "text": "SOURCE: \nCMS (HPMS files) \nVALUES: \n01 = Death \n02 = Disenrollment from plan \n03 = Request from beneficiary \n99 = Other \nNull/missing = beneficiary did not opt-out \nCOMMENT: \nCMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan \nManagement System (HPMS). \nThis field is required if there is an opt-out date (field called OPT_OUT_DT). \n^ Back to TOC ^",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

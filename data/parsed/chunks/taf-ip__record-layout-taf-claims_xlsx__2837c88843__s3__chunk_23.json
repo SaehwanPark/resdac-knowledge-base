@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_23",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Line Procedure Code Modifier Code 3 CHAR 2 30\nLINE_PRCDR_MDFR_CD_4 Line Procedure Code Modifier Code 4 CHAR 2 31\nLINE_PRCDR_CCS_CTGRY_CD2 Line Procedure AHRQ Clinical Classifications Software Refined (CCSR) Category Cd CHAR 8 60\nNDC National Drug Code CHAR 13 32\nNDC_UOM_CD NDC Unit of Measure Code CHAR 2 33\nNDC_QTY NDC Quantity Dispensed NUM 8 34\nIMNZTN_TYPE_CD Immunization Type Code CHAR 2 35\nSELF_DRCTN_TYPE_CD Beneficiary Service Self-Direction Type Code CHAR 3 36\nPRE_AUTHRZTN_NUM",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

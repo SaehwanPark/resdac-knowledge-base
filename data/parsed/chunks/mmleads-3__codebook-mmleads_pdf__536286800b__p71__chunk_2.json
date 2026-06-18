@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p71__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 71,
+  "text": "Monthly claims total spending is calculated independent of Medicaid eligibility status; the CCW sums \nthe MDCD_PD_AMT for all claim header records. This means there may be payment amounts for \nmonths when the beneficiary did not meet the MMLEADS population criteria. Therefore, for a small \nnumber of beneficiaries, you may observe payments for months that do not correspond with monthly \nMedicaid or Medicare enrollment in the MMLEADS Beneficiary file. \nNote that the Center for Medicaid and CHIP",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

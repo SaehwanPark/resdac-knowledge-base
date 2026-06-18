@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p40__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 40,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n35 \nNDI_DEATH_DT \nLABEL: \nNDI Date of Death \nDESCRIPTION: This variable is the date of death as reported on the Beneficiary’s death certificate. \nSHORT NAME: NDI_DEATH_DT \nLONG NAME: NDI_DEATH_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI) \nVALUES: \n— \nCOMMENT: \nResearchers wishing to obtain this NDI segment",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

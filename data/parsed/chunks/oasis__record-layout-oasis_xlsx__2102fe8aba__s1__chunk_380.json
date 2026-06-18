@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_380",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(with formal assistive services).\n03 = Patient transferred to a non-institutional hospice.\n04 = Unknown because patient moved to a geographical location not served by this agency.\nUK = Other unknown. CHAR 2 x x x x\nM2430_HOSP_MENTL_BHVRL_PRBLM M2430 Hospital Reason- Acute Mental/Behavioral This field indicates the reason the patient required hospitalization was due to acute mental/behavioral health\nproblem. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOSP_CRDC_DSRTHM M2430",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

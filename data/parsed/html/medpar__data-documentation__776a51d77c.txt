@@ -1,0 +1,1705 @@
+| 1 | BENE_ID | CCW Encrypted Beneficiary ID Number | 
+        
+          
+                  
+                                                                                                                                        | 2 | MEDPAR_ID | MEDPAR ID Number | 
+        
+          
+                  
+                                                                                                                                        | 3 | MEDPAR_YR_NUM | Year of MedPAR Record | 
+        
+          
+                  
+                                                                                                                                        | 4 | NCH_CLM_TYPE_CD | MEDPAR NCH Claim Type Code | 
+        
+          
+                  
+                                                                                                                                        | 5 | BENE_IDENT_CD | BIC reported on first claim included in stay | 
+        
+          
+                  
+                                                                                                                                        | 6 | EQTBL_BIC_CD | Equated BIC | 
+        
+          
+                  
+                                                                                                                                        | 7 | BENE_AGE_CNT | Age as of Date of Admission | 
+        
+          
+                  
+                                                                                                                                        | 8 | BENE_SEX_CD | Sex of Beneficiary | 
+        
+          
+                  
+                                                                                                                                        | 9 | BENE_RACE_CD | Race of Beneficiary | 
+        
+          
+                  
+                                                                                                                                        | 10 | BENE_MDCR_STUS_CD | Reason for entitlement to Medicare benefits as of CLM_THRU_DT | 
+        
+          
+                  
+                                                                                                                                        | 11 | BENE_RSDNC_SSA_STATE_CD | SSA standard state code of the beneficiary’s residence | 
+        
+          
+                  
+                                                                                                                                        | 12 | BENE_RSDNC_SSA_CNTY_CD | SSA standard county code of the beneficiary’s residence | 
+        
+          
+                  
+                                                                                                                                        | 13 | BENE_MLG_CNTCT_ZIP_CD | Zip code of the beneficiary’s residence | 
+        
+          
+                  
+                                                                                                                                        | 14 | BENE_DSCHRG_STUS_CD | Code identifying status of patient as of CLM_THRU_DT | 
+        
+          
+                  
+                                                                                                                                        | 15 | FICARR_IDENT_NUM | Fiscal Intermediary (FI) ID Number | 
+        
+          
+                  
+                                                                                                                                        | 16 | WRNG_IND_CD | Warning indicators code specifying detailed billing info | 
+        
+          
+                  
+                                                                                                                                        | 17 | GHO_PD_CD | Code indicating whether Group Health Organization (GHO) has paid provider for claim(s) | 
+        
+          
+                  
+                                                                                                                                        | 18 | PPS_IND_CD | Prospective payment system (PPS) Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 19 | ORG_NPI_NUM | Organization NPI Number (FFS) | 
+        
+          
+                  
+                                                                                                                                        | 20 | PRVDR_NUM | MEDPAR Provider Number | 
+        
+          
+                  
+                                                                                                                                        | 21 | PRVDR_NUM_SPCL_UNIT_CD | Provider Number Special Unit Code | 
+        
+          
+                  
+                                                                                                                                        | 22 | PRVDR_BASE_FAC_CCN_NUM | Provider Base Facility CMS Certification Number (CCN) | 
+        
+          
+                  
+                                                                                                                                        | 23 | PRVDR_FULL_CCN_NUM | Provider Full CMS Certification Number (CCN) | 
+        
+          
+                  
+                                                                                                                                        | 24 | SS_LS_SNF_IND_CD | Short Stay/Long Stay/SNF Provider Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 25 | ACTV_XREF_IND | MEDPAR Active Cross Reference Indicator | 
+        
+          
+                  
+                                                                                                                                        | 26 | SLCT_RSN_CD | Specifies whether this record is a case or control record | 
+        
+          
+                  
+                                                                                                                                        | 27 | STAY_FINL_ACTN_CLM_CNT | Number of claims (final action) included in stay | 
+        
+          
+                  
+                                                                                                                                        | 28 | LTST_CLM_ACRTN_DT | Latest Claim Accretion Date | 
+        
+          
+                  
+                                                                                                                                        | 29 | BENE_MDCR_BNFT_EXHST_DT | Beneficiary Medicare Benefit Exhausted Date | 
+        
+          
+                  
+                                                                                                                                        | 30 | SNF_QUALN_FROM_DT | Beginning date of beneficiary's qualifying SNF stay | 
+        
+          
+                  
+                                                                                                                                        | 31 | SNF_QUALN_THRU_DT | Ending date of beneficiary's qualifying SNF stay | 
+        
+          
+                  
+                                                                                                                                        | 32 | SRC_IP_ADMSN_CD | Source of admission to an Inpatient facility — for newborn admit is type of delivery code | 
+        
+          
+                  
+                                                                                                                                        | 33 | IP_ADMSN_TYPE_CD | Inpatient admission type code | 
+        
+          
+                  
+                                                                                                                                        | 34 | ADMSN_DAY_CD | Code indicating day of week beneficiary was admitted to facility | 
+        
+          
+                  
+                                                                                                                                        | 35 | ADMSN_DT | Date beneficiary admitted for Inpatient care or date care started | 
+        
+          
+                  
+                                                                                                                                        | 36 | DSCHRG_DT | Date beneficiary was discharged or died | 
+        
+          
+                  
+                                                                                                                                        | 37 | DSCHRG_DSTNTN_CD | Destination upon discharge from facility code | 
+        
+          
+                  
+                                                                                                                                        | 38 | CVRD_LVL_CARE_THRU_ DT | Date covered level of care ended in a SNF | 
+        
+          
+                  
+                                                                                                                                        | 39 | BENE_DEATH_DT | Date beneficiary died | 
+        
+          
+                  
+                                                                                                                                        | 40 | BENE_DEATH_DT_VRFY_CD | Death Date Verification Code | 
+        
+          
+                  
+                                                                                                                                        | 41 | ADMSN_DEATH_DAY_CNT | Days from date admitted to facility to date of death | 
+        
+          
+                  
+                                                                                                                                        | 42 | INTRNL_USE_SSI_IND_CD | MEDPAR Internal Use SSI Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 43 | INTRNL_USE_SSI_DAY_CNT | MEDPAR Internal Use SSI Day Count | 
+        
+          
+                  
+                                                                                                                                        | 44 | INTRNL_USE_SSI_DATA | MEDPAR Internal Use SSI Data | 
+        
+          
+                  
+                                                                                                                                        | 45 | INTRNL_USE_IPSB_CD | For internal Use Only. IPSB Code | 
+        
+          
+                  
+                                                                                                                                        | 46 | INTRNL_USE_FIL_DT_CD | For internal use only. Fiscal year/calendar year segments. | 
+        
+          
+                  
+                                                                                                                                        | 47 | INTRNL_USE_SMPL_SIZE_CD | For internal use. MEDPAR sample size. | 
+        
+          
+                  
+                                                                                                                                        | 48 | LOS_DAY_CNT | Days of beneficiary’s stay in a hospital/SNF | 
+        
+          
+                  
+                                                                                                                                        | 49 | OUTLIER_DAY_CNT | Days paid as outliers (either day or cost) under PPS beyond DRG threshold | 
+        
+          
+                  
+                                                                                                                                        | 50 | UTLZTN_DAY_CNT | Covered days of care chargeable to Medicare utilization for stay | 
+        
+          
+                  
+                                                                                                                                        | 51 | TOT_COINSRNC_DAY_CNT | MEDPAR Beneficiary Total Coinsurance Day Count | 
+        
+          
+                  
+                                                                                                                                        | 52 | BENE_LRD_USE_CNT | Lifetime reserve days (LRD) used by beneficiary for stay | 
+        
+          
+                  
+                                                                                                                                        | 53 | BENE_PTA_COINSRNC_AMT | Beneficiary’s liability for part A coinsurance for stay ($) | 
+        
+          
+                  
+                                                                                                                                        | 54 | BENE_IP_DDCTBL_AMT | Beneficiary’s liability for deductible for stay ($) | 
+        
+          
+                  
+                                                                                                                                        | 55 | BENE_BLOOD_DDCTBL_AMT | Beneficiary’s liability for blood deductible for stay ($) | 
+        
+          
+                  
+                                                                                                                                        | 56 | BENE_PRMRY_PYR_CD | Primary Payer Responsibility Code | 
+        
+          
+                  
+                                                                                                                                        | 57 | BENE_PRMRY_PYR_AMT | Primary Payer Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 58 | DRG_CD | Diagnosis Related Group Code (or MS-DRG Code) | 
+        
+          
+                  
+                                                                                                                                        | 59 | DRG_OUTLIER_STAY_CD | DRG Cost or Day Outlier code | 
+        
+          
+                  
+                                                                                                                                        | 60 | DRG_OUTLIER_PMT_AMT | DRG Outlier Approved Payment Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 61 | DRG_PRICE_AMT | DRG Price Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 62 | DRG_GRPR_VRSN_CD | Medicare-Severity Diagnosis Related Group (MS-DRG) Grouper Version | 
+        
+          
+                  
+                                                                                                                                        | 63 | CLM_IP_INITL_MS_DRG_CD | MedPAR Claim Inpatient Initial MS-DRG Code | 
+        
+          
+                  
+                                                                                                                                        | 64 | IP_DSPRPRTNT_SHR_AMT | Inpatient Disproportionate Share (DSH) Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 65 | IME_AMT | Indirect Medical Education (IME) Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 66 | PASS_THRU_AMT | Pass Thru Per Diem Amount for Stay ($) | 
+        
+          
+                  
+                                                                                                                                        | 67 | TOT_PPS_CPTL_AMT | Total PPS Capital Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 68 | IP_LOW_VOL_PYMT_AMT | Inpatient Low Volume Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 69 | TOT_CHRG_AMT | Total Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 70 | TOT_CVR_CHRG_AMT | Total Covered Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 71 | MDCR_PMT_AMT | Total Medicare Payment Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 72 | PPS_PRCR_VRSN_CD | Prospective Payment System (PPS) Pricer Version | 
+        
+          
+                  
+                                                                                                                                        | 73 | ACMDTNS_TOT_CHRG_AMT | Total Charge for All Accommodations ($) | 
+        
+          
+                  
+                                                                                                                                        | 74 | DPRTMNTL_TOT_CHRG_AMT | Total charge for all ancillary departments related to beneficiary’s stay ($) | 
+        
+          
+                  
+                                                                                                                                        | 75 | PRVT_ROOM_DAY_CNT | Private Room Day Count | 
+        
+          
+                  
+                                                                                                                                        | 76 | SEMIPRVT_ROOM_DAY_CNT | Semi-Private Room Day Count | 
+        
+          
+                  
+                                                                                                                                        | 77 | WARD_DAY_CNT | Ward Day Count | 
+        
+          
+                  
+                                                                                                                                        | 78 | INTNSV_CARE_DAY_CNT | Intensive Care Day Count | 
+        
+          
+                  
+                                                                                                                                        | 79 | CRNRY_CARE_DAY_CNT | Coronary Care Day Count | 
+        
+          
+                  
+                                                                                                                                        | 80 | PRVT_ROOM_CHRG_AMT | Private Room Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 81 | SEMIPRVT_ROOM_CHRG_AMT | Semi-Private Room Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 82 | WARD_CHRG_AMT | Ward Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 83 | INTNSV_CARE_CHRG_AMT | Intensive Care Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 84 | CRNRY_CARE_CHRG_AMT | Coronary Care Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 85 | OTHR_SRVC_CHRG_AMT | Other Service Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 86 | PHRMCY_CHRG_AMT | Pharmacy Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 87 | MDCL_SUPLY_CHRG_AMT | Medical/Surgical Supplies Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 88 | DME_CHRG_AMT | Durable Medical Equipment (DME) Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 89 | USED_DME_CHRG_AMT | Used Durable Medical Equipment (DME) Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 90 | PHYS_THRPY_CHRG_AMT | Physical Therapy Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 91 | OCPTNL_THRPY_CHRG_AMT | Occupational Therapy Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 92 | SPCH_PTHLGY_CHRG_AMT | Speech Pathology Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 93 | INHLTN_THRPY_CHRG_AMT | Inhalation Therapy Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 94 | BLOOD_CHRG_AMT | Blood Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 95 | BLOOD_ADMIN_CHRG_AMT | Blood storage and processing charge amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 96 | BLOOD_PT_FRNSH_QTY | Blood Pints Furnished Quantity | 
+        
+          
+                  
+                                                                                                                                        | 97 | OPRTG_ROOM_CHRG_AMT | Operating Room Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 98 | LTHTRPSY_CHRG_AMT | Lithotripsy Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 99 | CRDLGY_CHRG_AMT | Cardiology Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 100 | ANSTHSA_CHRG_AMT | Anesthesia Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 101 | LAB_CHRG_AMT | Laboratory Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 102 | RDLGY_CHRG_AMT | Radiology Charge Amount (excluding MRI) ($) | 
+        
+          
+                  
+                                                                                                                                        | 103 | MRI_CHRG_AMT | Magnetic Resonance Imaging (MRI) charge amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 104 | OP_SRVC_CHRG_AMT | Outpatient Service Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 105 | ER_CHRG_AMT | Emergency Room (ER) Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 106 | AMBLNC_CHRG_AMT | Ambulance Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 107 | PROFNL_FEES_CHRG_AMT | Professional Fees Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 108 | ORGN_ACQSTN_CHRG_AMT | Organ acquisition or other donor bank charge amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 109 | ESRD_REV_SETG_CHRG_AMT | End Stage Renal Disease (ESRD) charge amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 110 | CLNC_VISIT_CHRG_AMT | Clinic Visit Charge Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 111 | HOSP_AT_HOME_CHRG_AMT | Hospital at Home Room and Board (R&B) Charge Amount | 
+        
+          
+                  
+                                                                                                                                        | 112 | HOSP_AT_HOME_FROM_DT | Hospital at Home Care From Date | 
+        
+          
+                  
+                                                                                                                                        | 113 | HOSP_AT_HOME_THRU_DT | Hospital at Home Care Through Date | 
+        
+          
+                  
+                                                                                                                                        | 114 | ICU_IND_CD | Intensive Care Unit (ICU) Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 115 | CRNRY_CARE_IND_CD | Coronary Care Unit (CCU) Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 116 | PHRMCY_IND_CD | Pharmacy Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 117 | TRNSPLNT_IND_CD | Organ Transplant Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 118 | RDLGY_ONCLGY_IND_SW | Oncology Indicator | 
+        
+          
+                  
+                                                                                                                                        | 119 | RDLGY_DGNSTC_IND_SW | Diagnostic Radiology Indicator | 
+        
+          
+                  
+                                                                                                                                        | 120 | RDLGY_THRPTC_IND_SW | Therapeutic Radiology Indicator | 
+        
+          
+                  
+                                                                                                                                        | 121 | RDLGY_NUCLR_MDCN_IND_SW | Radiology Nuclear Medicine Indicator | 
+        
+          
+                  
+                                                                                                                                        | 122 | RDLGY_CT_SCAN_IND_SW | Radiology Computed Tomographic (CT) Scan Indicator | 
+        
+          
+                  
+                                                                                                                                        | 123 | RDLGY_OTHR_IMGNG_IND_SW | Radiology Other Imaging Indicator | 
+        
+          
+                  
+                                                                                                                                        | 124 | OP_SRVC_IND_CD | Outpatient services/ambulatory surgical care indicator code | 
+        
+          
+                  
+                                                                                                                                        | 125 | ORGN_ACQSTN_IND_CD | Organ Acquisition Type Code | 
+        
+          
+                  
+                                                                                                                                        | 126 | ESRD_COND_CD | End Stage Renal Disease (ESRD) Condition Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 127 | ESRD_SETG_IND_1_CD | Dialysis service type code 1 | 
+        
+          
+                  
+                                                                                                                                        | 128 | ESRD_SETG_IND_2_CD | Dialysis service type code 2 | 
+        
+          
+                  
+                                                                                                                                        | 129 | ESRD_SETG_IND_3_CD | Dialysis service type code 3 | 
+        
+          
+                  
+                                                                                                                                        | 130 | ESRD_SETG_IND_4_CD | Dialysis service type code 4 | 
+        
+          
+                  
+                                                                                                                                        | 131 | ESRD_SETG_IND_5_CD | Dialysis service type code 5 | 
+        
+          
+                  
+                                                                                                                                        | 132 | RC_NDC_1_CD | Revenue Center National Drug Code (NDC) 1 | 
+        
+          
+                  
+                                                                                                                                        | 133 | RC_NDC_2_CD | Revenue Center National Drug Code (NDC) 2 | 
+        
+          
+                  
+                                                                                                                                        | 134 | RC_NDC_3_CD | Revenue Center National Drug Code (NDC) 3 | 
+        
+          
+                  
+                                                                                                                                        | 135 | RC_NDC_4_CD | Revenue Center National Drug Code (NDC) 4 | 
+        
+          
+                  
+                                                                                                                                        | 136 | RC_NDC_5_CD | Revenue Center National Drug Code (NDC) 5 | 
+        
+          
+                  
+                                                                                                                                        | 137 | RC_NDC_6_CD | Revenue Center National Drug Code (NDC) 6 | 
+        
+          
+                  
+                                                                                                                                        | 138 | RC_NDC_7_CD | Revenue Center National Drug Code (NDC) 7 | 
+        
+          
+                  
+                                                                                                                                        | 139 | RC_NDC_8_CD | Revenue Center National Drug Code (NDC) 8 | 
+        
+          
+                  
+                                                                                                                                        | 140 | RC_NDC_9_CD | Revenue Center National Drug Code (NDC) 9 | 
+        
+          
+                  
+                                                                                                                                        | 141 | RC_NDC_10_CD | Revenue Center National Drug Code (NDC) 10 | 
+        
+          
+                  
+                                                                                                                                        | 142 | NO_PSTV_TEST_SW | No Positive Test Switch | 
+        
+          
+                  
+                                                                                                                                        | 143 | EXPNDD_ACS_SW | Expanded Access Switch | 
+        
+          
+                  
+                                                                                                                                        | 144 | CLNCL_TRIL_SW | Other Clinical Trial Switch | 
+        
+          
+                  
+                                                                                                                                        | 145 | EMER_USE_SW | Emergency Use Switch | 
+        
+          
+                  
+                                                                                                                                        | 146 | ADMTG_DGNS_CD | Initial diagnosis at time of admission | 
+        
+          
+                  
+                                                                                                                                        | 147 | ADMTG_DGNS_VRSN_CD | MedPAR Admitting Diagnosis Version Code (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 148 | DGNS_CD_CNT | Count of Diagnosis Codes | 
+        
+          
+                  
+                                                                                                                                        | 149 | DGNS_VRSN_CD | MEDPAR Diagnosis Version Code (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 150 | DGNS_VRSN_CD_1 | MedPAR Diagnosis Version Code 1 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 151 | DGNS_VRSN_CD_2 | MedPAR Diagnosis Version Code 2 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 152 | DGNS_VRSN_CD_3 | MedPAR Diagnosis Version Code 3 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 153 | DGNS_VRSN_CD_4 | MedPAR Diagnosis Version Code 4 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 154 | DGNS_VRSN_CD_5 | MedPAR Diagnosis Version Code 5 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 155 | DGNS_VRSN_CD_6 | MedPAR Diagnosis Version Code 6 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 156 | DGNS_VRSN_CD_7 | MedPAR Diagnosis Version Code 7 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 157 | DGNS_VRSN_CD_8 | MedPAR Diagnosis Version Code 8 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 158 | DGNS_VRSN_CD_9 | MedPAR Diagnosis Version Code 9 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 159 | DGNS_VRSN_CD_10 | MedPAR Diagnosis Version Code 10 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 160 | DGNS_VRSN_CD_11 | MedPAR Diagnosis Version Code 11 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 161 | DGNS_VRSN_CD_12 | MedPAR Diagnosis Version Code 12 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 162 | DGNS_VRSN_CD_13 | MedPAR Diagnosis Version Code 13 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 163 | DGNS_VRSN_CD_14 | MedPAR Diagnosis Version Code 14 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 164 | DGNS_VRSN_CD_15 | MedPAR Diagnosis Version Code 15 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 165 | DGNS_VRSN_CD_16 | MedPAR Diagnosis Version Code 16 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 166 | DGNS_VRSN_CD_17 | MedPAR Diagnosis Version Code 17 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 167 | DGNS_VRSN_CD_18 | MedPAR Diagnosis Version Code 18 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 168 | DGNS_VRSN_CD_19 | MedPAR Diagnosis Version Code 19 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 169 | DGNS_VRSN_CD_20 | MedPAR Diagnosis Version Code 20 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 170 | DGNS_VRSN_CD_21 | MedPAR Diagnosis Version Code 21 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 171 | DGNS_VRSN_CD_22 | MedPAR Diagnosis Version Code 22 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 172 | DGNS_VRSN_CD_23 | MedPAR Diagnosis Version Code 23 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 173 | DGNS_VRSN_CD_24 | MedPAR Diagnosis Version Code 24 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 174 | DGNS_VRSN_CD_25 | MedPAR Diagnosis Version Code 25 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 175 | DGNS_1_CD | MEDPAR Principal Diagnosis Code | 
+        
+          
+                  
+                                                                                                                                        | 176 | DGNS_2_CD | MedPAR Diagnosis Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 177 | DGNS_3_CD | MedPAR Diagnosis Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 178 | DGNS_4_CD | MedPAR Diagnosis Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 179 | DGNS_5_CD | MedPAR Diagnosis Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 180 | DGNS_6_CD | MedPAR Diagnosis Code 6 | 
+        
+          
+                  
+                                                                                                                                        | 181 | DGNS_7_CD | MedPAR Diagnosis Code 7 | 
+        
+          
+                  
+                                                                                                                                        | 182 | DGNS_8_CD | MedPAR Diagnosis Code 8 | 
+        
+          
+                  
+                                                                                                                                        | 183 | DGNS_9_CD | MedPAR Diagnosis Code 9 | 
+        
+          
+                  
+                                                                                                                                        | 184 | DGNS_10_CD | MedPAR ICD-9-CM Diagnosis Code 10 | 
+        
+          
+                  
+                                                                                                                                        | 185 | DGNS_11_CD | MedPAR ICD-9-CM Diagnosis Code 11 | 
+        
+          
+                  
+                                                                                                                                        | 186 | DGNS_12_CD | MedPAR ICD-9-CM Diagnosis Code 12 | 
+        
+          
+                  
+                                                                                                                                        | 187 | DGNS_13_CD | MedPAR ICD-9-CM Diagnosis Code 13 | 
+        
+          
+                  
+                                                                                                                                        | 188 | DGNS_14_CD | MedPAR ICD-9-CM Diagnosis Code 14 | 
+        
+          
+                  
+                                                                                                                                        | 189 | DGNS_15_CD | MedPAR ICD-9-CM Diagnosis Code 15 | 
+        
+          
+                  
+                                                                                                                                        | 190 | DGNS_16_CD | MedPAR ICD-9-CM Diagnosis Code 16 | 
+        
+          
+                  
+                                                                                                                                        | 191 | DGNS_17_CD | MedPAR ICD-9-CM Diagnosis Code 17 | 
+        
+          
+                  
+                                                                                                                                        | 192 | DGNS_18_CD | MedPAR ICD-9-CM Diagnosis Code 18 | 
+        
+          
+                  
+                                                                                                                                        | 193 | DGNS_19_CD | MedPAR ICD-9-CM Diagnosis Code 19 | 
+        
+          
+                  
+                                                                                                                                        | 194 | DGNS_20_CD | MedPAR ICD-9-CM Diagnosis Code 20 | 
+        
+          
+                  
+                                                                                                                                        | 195 | DGNS_21_CD | MedPAR ICD-9-CM Diagnosis Code 21 | 
+        
+          
+                  
+                                                                                                                                        | 196 | DGNS_22_CD | MedPAR ICD-9-CM Diagnosis Code 22 | 
+        
+          
+                  
+                                                                                                                                        | 197 | DGNS_23_CD | MedPAR ICD-9-CM Diagnosis Code 23 | 
+        
+          
+                  
+                                                                                                                                        | 198 | DGNS_24_CD | MedPAR ICD-9-CM Diagnosis Code 24 | 
+        
+          
+                  
+                                                                                                                                        | 199 | DGNS_25_CD | MedPAR ICD-9-CM Diagnosis Code 25 | 
+        
+          
+                  
+                                                                                                                                        | 200 | DGNS_POA_CD | Diagnosis Code POA Array | 
+        
+          
+                  
+                                                                                                                                        | 201 | POA_DGNS_CD_CNT | Count of Present on Admission (POA) Diagnosis Codes | 
+        
+          
+                  
+                                                                                                                                        | 202 | POA_DGNS_1_IND_CD | Diagnosis 1 Present on Admission (POA) Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 203 | POA_DGNS_2_IND_CD | MedPAR Diagnosis Present on Admission Indicator 2 | 
+        
+          
+                  
+                                                                                                                                        | 204 | POA_DGNS_3_IND_CD | MedPAR Diagnosis Present on Admission Indicator 3 | 
+        
+          
+                  
+                                                                                                                                        | 205 | POA_DGNS_4_IND_CD | MedPAR Diagnosis Present on Admission Indicator 4 | 
+        
+          
+                  
+                                                                                                                                        | 206 | POA_DGNS_5_IND_CD | MedPAR Diagnosis Present on Admission Indicator 5 | 
+        
+          
+                  
+                                                                                                                                        | 207 | POA_DGNS_6_IND_CD | MedPAR Diagnosis Present on Admission Indicator 6 | 
+        
+          
+                  
+                                                                                                                                        | 208 | POA_DGNS_7_IND_CD | MedPAR Diagnosis Present on Admission Indicator 7 | 
+        
+          
+                  
+                                                                                                                                        | 209 | POA_DGNS_8_IND_CD | MedPAR Diagnosis Present on Admission Indicator 8 | 
+        
+          
+                  
+                                                                                                                                        | 210 | POA_DGNS_9_IND_CD | MedPAR Diagnosis Present on Admission Indicator 9 | 
+        
+          
+                  
+                                                                                                                                        | 211 | POA_DGNS_10_IND_CD | MedPAR Diagnosis Present on Admission Indicator 10 | 
+        
+          
+                  
+                                                                                                                                        | 212 | POA_DGNS_11_IND_CD | MedPAR Diagnosis Present on Admission Indicator 11 | 
+        
+          
+                  
+                                                                                                                                        | 213 | POA_DGNS_12_IND_CD | MedPAR Diagnosis Present on Admission Indicator 12 | 
+        
+          
+                  
+                                                                                                                                        | 214 | POA_DGNS_13_IND_CD | MedPAR Diagnosis Present on Admission Indicator 13 | 
+        
+          
+                  
+                                                                                                                                        | 215 | POA_DGNS_14_IND_CD | MedPAR Diagnosis Present on Admission Indicator 14 | 
+        
+          
+                  
+                                                                                                                                        | 216 | POA_DGNS_15_IND_CD | MedPAR Diagnosis Present on Admission Indicator 15 | 
+        
+          
+                  
+                                                                                                                                        | 217 | POA_DGNS_16_IND_CD | MedPAR Diagnosis Present on Admission Indicator 16 | 
+        
+          
+                  
+                                                                                                                                        | 218 | POA_DGNS_17_IND_CD | MedPAR Diagnosis Present on Admission Indicator 17 | 
+        
+          
+                  
+                                                                                                                                        | 219 | POA_DGNS_18_IND_CD | MedPAR Diagnosis Present on Admission Indicator 18 | 
+        
+          
+                  
+                                                                                                                                        | 220 | POA_DGNS_19_IND_CD | MedPAR Diagnosis Present on Admission Indicator 19 | 
+        
+          
+                  
+                                                                                                                                        | 221 | POA_DGNS_20_IND_CD | MedPAR Diagnosis Present on Admission Indicator 20 | 
+        
+          
+                  
+                                                                                                                                        | 222 | POA_DGNS_21_IND_CD | MedPAR Diagnosis Present on Admission Indicator 21 | 
+        
+          
+                  
+                                                                                                                                        | 223 | POA_DGNS_22_IND_CD | MedPAR Diagnosis Present on Admission Indicator 22 | 
+        
+          
+                  
+                                                                                                                                        | 224 | POA_DGNS_23_IND_CD | MedPAR Diagnosis Present on Admission Indicator 23 | 
+        
+          
+                  
+                                                                                                                                        | 225 | POA_DGNS_24_IND_CD | MedPAR Diagnosis Present on Admission Indicator 24 | 
+        
+          
+                  
+                                                                                                                                        | 226 | POA_DGNS_25_IND_CD | MedPAR Diagnosis Present on Admission Indicator 25 | 
+        
+          
+                  
+                                                                                                                                        | 227 | DGNS_E_CD_CNT | Count of Diagnosis E Codes | 
+        
+          
+                  
+                                                                                                                                        | 228 | DGNS_E_VRSN_CD | Diagnosis E Version Code (Earlier Version) | 
+        
+          
+                  
+                                                                                                                                        | 229 | DGNS_E_VRSN_CD_1 | Diagnosis E Version Code 1 | 
+        
+          
+                  
+                                                                                                                                        | 230 | DGNS_E_VRSN_CD_2 | Diagnosis E Version Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 231 | DGNS_E_VRSN_CD_3 | Diagnosis E Version Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 232 | DGNS_E_VRSN_CD_4 | Diagnosis E Version Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 233 | DGNS_E_VRSN_CD_5 | Diagnosis E Version Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 234 | DGNS_E_VRSN_CD_6 | Diagnosis E Version Code 6 | 
+        
+          
+                  
+                                                                                                                                        | 235 | DGNS_E_VRSN_CD_7 | Diagnosis E Version Code 7 | 
+        
+          
+                  
+                                                                                                                                        | 236 | DGNS_E_VRSN_CD_8 | Diagnosis E Version Code 8 | 
+        
+          
+                  
+                                                                                                                                        | 237 | DGNS_E_VRSN_CD_9 | Diagnosis E Version Code 9 | 
+        
+          
+                  
+                                                                                                                                        | 238 | DGNS_E_VRSN_CD_10 | Diagnosis E Version Code 10 | 
+        
+          
+                  
+                                                                                                                                        | 329 | DGNS_E_VRSN_CD_11 | Diagnosis E Version Code 11 | 
+        
+          
+                  
+                                                                                                                                        | 240 | DGNS_E_VRSN_CD_12 | Diagnosis E Version Code 12 | 
+        
+          
+                  
+                                                                                                                                        | 241 | DGNS_E_1_CD | Diagnosis E Code 1 | 
+        
+          
+                  
+                                                                                                                                        | 242 | DGNS_E_2_CD | Diagnosis E Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 243 | DGNS_E_3_CD | Diagnosis E Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 244 | DGNS_E_4_CD | Diagnosis E Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 245 | DGNS_E_5_CD | Diagnosis E Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 246 | DGNS_E_6_CD | Diagnosis E Code 6 | 
+        
+          
+                  
+                                                                                                                                        | 247 | DGNS_E_7_CD | Diagnosis E Code 7 | 
+        
+          
+                  
+                                                                                                                                        | 248 | DGNS_E_8_CD | Diagnosis E Code 8 | 
+        
+          
+                  
+                                                                                                                                        | 249 | DGNS_E_9_CD | Diagnosis E Code 9 | 
+        
+          
+                  
+                                                                                                                                        | 250 | DGNS_E_10_CD | Diagnosis E Code 10 | 
+        
+          
+                  
+                                                                                                                                        | 251 | DGNS_E_11_CD | Diagnosis E Code 11 | 
+        
+          
+                  
+                                                                                                                                        | 252 | DGNS_E_12_CD | Diagnosis E Code 12 | 
+        
+          
+                  
+                                                                                                                                        | 253 | POA_DGNS_E_CD_CNT | Count of Present on Admission (POA) Diagnosis E Codes | 
+        
+          
+                  
+                                                                                                                                        | 254 | POA_DGNS_E_1_IND_CD | Diagnosis E Code Present on Admission Indicator 1 | 
+        
+          
+                  
+                                                                                                                                        | 255 | POA_DGNS_E_2_IND_CD | Diagnosis E Code Present on Admission Indicator 2 | 
+        
+          
+                  
+                                                                                                                                        | 256 | POA_DGNS_E_3_IND_CD | Diagnosis E Code Present on Admission Indicator 3 | 
+        
+          
+                  
+                                                                                                                                        | 257 | POA_DGNS_E_4_IND_CD | Diagnosis E Code Present on Admission Indicator 4 | 
+        
+          
+                  
+                                                                                                                                        | 258 | POA_DGNS_E_5_IND_CD | Diagnosis E Code Present on Admission Indicator 5 | 
+        
+          
+                  
+                                                                                                                                        | 259 | POA_DGNS_E_6_IND_CD | Diagnosis E Code Present on Admission Indicator 6 | 
+        
+          
+                  
+                                                                                                                                        | 260 | POA_DGNS_E_7_IND_CD | Diagnosis E Code Present on Admission Indicator 7 | 
+        
+          
+                  
+                                                                                                                                        | 261 | POA_DGNS_E_8_IND_CD | Diagnosis E Code Present on Admission Indicator 8 | 
+        
+          
+                  
+                                                                                                                                        | 262 | POA_DGNS_E_9_IND_CD | Diagnosis E Code Present on Admission Indicator 9 | 
+        
+          
+                  
+                                                                                                                                        | 263 | POA_DGNS_E_10_IND_CD | Diagnosis E Code Present on Admission Indicator 10 | 
+        
+          
+                  
+                                                                                                                                        | 264 | POA_DGNS_E_11_IND_CD | Diagnosis E Code Present on Admission Indicator 11 | 
+        
+          
+                  
+                                                                                                                                        | 265 | POA_DGNS_E_12_IND_CD | Diagnosis E Code Present on Admission Indicator 12 | 
+        
+          
+                  
+                                                                                                                                        | 266 | SRGCL_PRCDR_IND_SW | Surgical Procedure Indicator | 
+        
+          
+                  
+                                                                                                                                        | 267 | SRGCL_PRCDR_CD_CNT | Surgical procedure codes included in stay | 
+        
+          
+                  
+                                                                                                                                        | 268 | SRGCL_PRCDR_VRSN_CD | Surgical Procedure Version Code (Earlier Version) | 
+        
+          
+                  
+                                                                                                                                        | 269 | SRGCL_PRCDR_VRSN_CD_1 | MEDPAR Surgical Procedure Version Code 1 (ICD-9-CM or ICD-10-PCS) | 
+        
+          
+                  
+                                                                                                                                        | 270 | SRGCL_PRCDR_VRSN_CD_2 | MEDPAR Surgical Procedure Version Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 271 | SRGCL_PRCDR_VRSN_CD_3 | MEDPAR Surgical Procedure Version Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 272 | SRGCL_PRCDR_VRSN_CD_4 | MEDPAR Surgical Procedure Version Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 273 | SRGCL_PRCDR_VRSN_CD_5 | MEDPAR Surgical Procedure Version Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 274 | SRGCL_PRCDR_VRSN_CD_6 | MEDPAR Surgical Procedure Version Code 6 | 
+        
+          
+                  
+                                                                                                                                        | 275 | SRGCL_PRCDR_VRSN_CD_7 | MEDPAR Surgical Procedure Version Code 7 | 
+        
+          
+                  
+                                                                                                                                        | 276 | SRGCL_PRCDR_VRSN_CD_8 | MEDPAR Surgical Procedure Version Code 8 | 
+        
+          
+                  
+                                                                                                                                        | 277 | SRGCL_PRCDR_VRSN_CD_9 | MEDPAR Surgical Procedure Version Code 9 | 
+        
+          
+                  
+                                                                                                                                        | 278 | SRGCL_PRCDR_VRSN_CD_10 | MEDPAR Surgical Procedure Version Code 10 | 
+        
+          
+                  
+                                                                                                                                        | 279 | SRGCL_PRCDR_VRSN_CD_11 | MEDPAR Surgical Procedure Version Code 11 | 
+        
+          
+                  
+                                                                                                                                        | 280 | SRGCL_PRCDR_VRSN_CD_12 | MEDPAR Surgical Procedure Version Code 12 | 
+        
+          
+                  
+                                                                                                                                        | 281 | SRGCL_PRCDR_VRSN_CD_13 | MEDPAR Surgical Procedure Version Code 13 | 
+        
+          
+                  
+                                                                                                                                        | 282 | SRGCL_PRCDR_VRSN_CD_14 | MEDPAR Surgical Procedure Version Code 14 | 
+        
+          
+                  
+                                                                                                                                        | 283 | SRGCL_PRCDR_VRSN_CD_15 | MEDPAR Surgical Procedure Version Code 15 | 
+        
+          
+                  
+                                                                                                                                        | 284 | SRGCL_PRCDR_VRSN_CD_16 | MEDPAR Surgical Procedure Version Code 16 | 
+        
+          
+                  
+                                                                                                                                        | 285 | SRGCL_PRCDR_VRSN_CD_17 | MEDPAR Surgical Procedure Version Code 17 | 
+        
+          
+                  
+                                                                                                                                        | 286 | SRGCL_PRCDR_VRSN_CD_18 | MEDPAR Surgical Procedure Version Code 18 | 
+        
+          
+                  
+                                                                                                                                        | 287 | SRGCL_PRCDR_VRSN_CD_19 | MEDPAR Surgical Procedure Version Code 19 | 
+        
+          
+                  
+                                                                                                                                        | 288 | SRGCL_PRCDR_VRSN_CD_20 | MEDPAR Surgical Procedure Version Code 20 | 
+        
+          
+                  
+                                                                                                                                        | 289 | SRGCL_PRCDR_VRSN_CD_21 | MEDPAR Surgical Procedure Version Code 21 | 
+        
+          
+                  
+                                                                                                                                        | 290 | SRGCL_PRCDR_VRSN_CD_22 | MEDPAR Surgical Procedure Version Code 22 | 
+        
+          
+                  
+                                                                                                                                        | 291 | SRGCL_PRCDR_VRSN_CD_23 | MEDPAR Surgical Procedure Version Code 23 | 
+        
+          
+                  
+                                                                                                                                        | 292 | SRGCL_PRCDR_VRSN_CD_24 | MEDPAR Surgical Procedure Version Code 24 | 
+        
+          
+                  
+                                                                                                                                        | 293 | SRGCL_PRCDR_VRSN_CD_25 | MEDPAR Surgical Procedure Version Code 25 | 
+        
+          
+                  
+                                                                                                                                        | 294 | SRGCL_PRCDR_1_CD | Principal Procedure Code | 
+        
+          
+                  
+                                                                                                                                        | 295 | SRGCL_PRCDR_2_CD | MedPAR Procedure Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 296 | SRGCL_PRCDR_3_CD | MedPAR Procedure Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 297 | SRGCL_PRCDR_4_CD | MedPAR Procedure Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 298 | SRGCL_PRCDR_5_CD | MedPAR Procedure Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 299 | SRGCL_PRCDR_6_CD | MedPAR Procedure Code 6 | 
+        
+          
+                  
+                                                                                                                                        | 300 | SRGCL_PRCDR_7_CD | MedPAR Procedure Code 7 | 
+        
+          
+                  
+                                                                                                                                        | 301 | SRGCL_PRCDR_8_CD | MedPAR Procedure Code 8 | 
+        
+          
+                  
+                                                                                                                                        | 302 | SRGCL_PRCDR_9_CD | MedPAR Procedure Code 9 | 
+        
+          
+                  
+                                                                                                                                        | 303 | SRGCL_PRCDR_10_CD | MedPAR Procedure Code 10 | 
+        
+          
+                  
+                                                                                                                                        | 304 | SRGCL_PRCDR_11_CD | MedPAR Procedure Code 11 | 
+        
+          
+                  
+                                                                                                                                        | 305 | SRGCL_PRCDR_12_CD | MedPAR Procedure Code 12 | 
+        
+          
+                  
+                                                                                                                                        | 306 | SRGCL_PRCDR_13_CD | MedPAR Procedure Code 13 | 
+        
+          
+                  
+                                                                                                                                        | 307 | SRGCL_PRCDR_14_CD | MedPAR Procedure Code 14 | 
+        
+          
+                  
+                                                                                                                                        | 308 | SRGCL_PRCDR_15_CD | MedPAR Procedure Code 15 | 
+        
+          
+                  
+                                                                                                                                        | 309 | SRGCL_PRCDR_16_CD | MedPAR Procedure Code 16 | 
+        
+          
+                  
+                                                                                                                                        | 310 | SRGCL_PRCDR_17_CD | MedPAR Procedure Code 17 | 
+        
+          
+                  
+                                                                                                                                        | 311 | SRGCL_PRCDR_18_CD | MedPAR Procedure Code 18 | 
+        
+          
+                  
+                                                                                                                                        | 312 | SRGCL_PRCDR_19_CD | MedPAR Procedure Code 19 | 
+        
+          
+                  
+                                                                                                                                        | 313 | SRGCL_PRCDR_20_CD | MedPAR Procedure Code 20 | 
+        
+          
+                  
+                                                                                                                                        | 314 | SRGCL_PRCDR_21_CD | MedPAR Procedure Code 21 | 
+        
+          
+                  
+                                                                                                                                        | 315 | SRGCL_PRCDR_22_CD | MedPAR Procedure Code 22 | 
+        
+          
+                  
+                                                                                                                                        | 316 | SRGCL_PRCDR_23_CD | MedPAR Procedure Code 23 | 
+        
+          
+                  
+                                                                                                                                        | 317 | SRGCL_PRCDR_24_CD | MedPAR Procedure Code 24 | 
+        
+          
+                  
+                                                                                                                                        | 318 | SRGCL_PRCDR_25_CD | MedPAR Procedure Code 25 | 
+        
+          
+                  
+                                                                                                                                        | 319 | SRGCL_PRCDR_DT_CNT | Dates associated with surgical procedures included in stay | 
+        
+          
+                  
+                                                                                                                                        | 320 | SRGCL_PRCDR_PRFRM_1_DT | Principal Procedure Date | 
+        
+          
+                  
+                                                                                                                                        | 321 | SRGCL_PRCDR_PRFRM_2_DT | Procedure Date 2 | 
+        
+          
+                  
+                                                                                                                                        | 322 | SRGCL_PRCDR_PRFRM_3_DT | Procedure Date 3 | 
+        
+          
+                  
+                                                                                                                                        | 323 | SRGCL_PRCDR_PRFRM_4_DT | Procedure Date 4 | 
+        
+          
+                  
+                                                                                                                                        | 324 | SRGCL_PRCDR_PRFRM_5_DT | Procedure Date 5 | 
+        
+          
+                  
+                                                                                                                                        | 325 | SRGCL_PRCDR_PRFRM_6_DT | Procedure Date 6 | 
+        
+          
+                  
+                                                                                                                                        | 326 | SRGCL_PRCDR_PRFRM_7_DT | Procedure Date 7 | 
+        
+          
+                  
+                                                                                                                                        | 327 | SRGCL_PRCDR_PRFRM_8_DT | Procedure Date 8 | 
+        
+          
+                  
+                                                                                                                                        | 328 | SRGCL_PRCDR_PRFRM_9_DT | Procedure Date 9 | 
+        
+          
+                  
+                                                                                                                                        | 329 | SRGCL_PRCDR_PRFRM_10_DT | Procedure Date 10 | 
+        
+          
+                  
+                                                                                                                                        | 330 | SRGCL_PRCDR_PRFRM_11_DT | Procedure Date 11 | 
+        
+          
+                  
+                                                                                                                                        | 331 | SRGCL_PRCDR_PRFRM_12_DT | Procedure Date 12 | 
+        
+          
+                  
+                                                                                                                                        | 332 | SRGCL_PRCDR_PRFRM_13_DT | Procedure Date 13 | 
+        
+          
+                  
+                                                                                                                                        | 333 | SRGCL_PRCDR_PRFRM_14_DT | Procedure Date 14 | 
+        
+          
+                  
+                                                                                                                                        | 334 | SRGCL_PRCDR_PRFRM_15_DT | Procedure Date 15 | 
+        
+          
+                  
+                                                                                                                                        | 335 | SRGCL_PRCDR_PRFRM_16_DT | Procedure Date 16 | 
+        
+          
+                  
+                                                                                                                                        | 336 | SRGCL_PRCDR_PRFRM_17_DT | Procedure Date 17 | 
+        
+          
+                  
+                                                                                                                                        | 337 | SRGCL_PRCDR_PRFRM_18_DT | Procedure Date 18 | 
+        
+          
+                  
+                                                                                                                                        | 338 | SRGCL_PRCDR_PRFRM_19_DT | Procedure Date 19 | 
+        
+          
+                  
+                                                                                                                                        | 339 | SRGCL_PRCDR_PRFRM_20_DT | Procedure Date 20 | 
+        
+          
+                  
+                                                                                                                                        | 340 | SRGCL_PRCDR_PRFRM_21_DT | Procedure Date 21 | 
+        
+          
+                  
+                                                                                                                                        | 341 | SRGCL_PRCDR_PRFRM_22_DT | Procedure Date 22 | 
+        
+          
+                  
+                                                                                                                                        | 342 | SRGCL_PRCDR_PRFRM_23_DT | Procedure Date 23 | 
+        
+          
+                  
+                                                                                                                                        | 343 | SRGCL_PRCDR_PRFRM_24_DT | Procedure Date 24 | 
+        
+          
+                  
+                                                                                                                                        | 344 | SRGCL_PRCDR_PRFRM_25_DT | Procedure Date 25 | 
+        
+          
+                  
+                                                                                                                                        | 345 | CLM_PTNT_RLTNSHP_CD | Claim Patient Relationship Code | 
+        
+          
+                  
+                                                                                                                                        | 346 | CARE_IMPRVMT_MODEL_1_CD | Care Improvement Model 1 Code | 
+        
+          
+                  
+                                                                                                                                        | 347 | CARE_IMPRVMT_MODEL_2_CD | Care Improvement Model 2 Code | 
+        
+          
+                  
+                                                                                                                                        | 348 | CARE_IMPRVMT_MODEL_3_CD | Care Improvement Model 3 Code | 
+        
+          
+                  
+                                                                                                                                        | 349 | CARE_IMPRVMT_MODEL_4_CD | Care Improvement Model 4 Code | 
+        
+          
+                  
+                                                                                                                                        | 350 | VBP_PRTCPNT_IND_CD | Value-Based Purchasing (VBP) Participant Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 351 | HRR_PRTCPNT_IND_CD | Hospital Readmission Reduction (HRR) Participant Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 352 | BNDLD_MODEL_DSCNT_PCT | Bundled Payment Model Discount Percent | 
+        
+          
+                  
+                                                                                                                                        | 353 | VBP_ADJSTMT_PCT | Value Based Purchasing (VBP) Adjustment Percent | 
+        
+          
+                  
+                                                                                                                                        | 354 | HRR_ADJSTMT_PCT | Hospital Readmission Reduction (HRR) Adjustment Percent | 
+        
+          
+                  
+                                                                                                                                        | 355 | INFRMTL_ENCTR_IND_SW | Informational Encounter Indicator | 
+        
+          
+                  
+                                                                                                                                        | 356 | MA_TCHNG_IND_SW | MA Teaching Indicator | 
+        
+          
+                  
+                                                                                                                                        | 357 | PROD_RPLCMT_LIFECYC_SW | Product Replacement within Product Lifecycle (early) | 
+        
+          
+                  
+                                                                                                                                        | 358 | PROD_RPLCMT_RCLL_SW | Product Replacement for Recall of Product | 
+        
+          
+                  
+                                                                                                                                        | 359 | CRED_RCVD_RPLCD_DVC_SW | Credit Received Replaced Device | 
+        
+          
+                  
+                                                                                                                                        | 360 | OBSRVTN_SW | Observation Unit Indicator | 
+        
+          
+                  
+                                                                                                                                        | 361 | NEW_TCHNLGY_ADD_ON_AMT | New Technology Add On Amount | 
+        
+          
+                  
+                                                                                                                                        | 362 | BASE_OPRTG_DRG_AMT | Base Operating DRG Amount | 
+        
+          
+                  
+                                                                                                                                        | 363 | OPRTG_HSP_AMT | Operating Hospital Amount | 
+        
+          
+                  
+                                                                                                                                        | 364 | SQSTRTN_RDCTN_AMT | Sequestration Reduction Amount | 
+        
+          
+                  
+                                                                                                                                        | 365 | UNCOMPD_CARE_PYMT_AMT | Uncompensated Care Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 366 | BNDLD_ADJSTMT_AMT | Bundled Payment Adjustment Amount | 
+        
+          
+                  
+                                                                                                                                        | 367 | VBP_ADJSTMT_AMT | Hospital Value Based Purchasing (VBP) Amount | 
+        
+          
+                  
+                                                                                                                                        | 368 | HRR_ADJSTMT_AMT | Hospital Readmission Reduction (HRR) Adjustment Amount | 
+        
+          
+                  
+                                                                                                                                        | 369 | EHR_PYMT_ADJSTMT_AMT | Electronic Health Record (EHR) Payment Adjustment Amount | 
+        
+          
+                  
+                                                                                                                                        | 370 | PPS_STD_VAL_PYMT_AMT | Standard Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 371 | FINL_STD_AMT | Final Standard Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 372 | IPPS_FLEX_PYMT_6_AMT | Flexible Payment Amount (6th) - renamed to Hospital Acquired Conditions (HAC) Reduction Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 373 | HAC_RDCTN_PMT_AMT | Hospital Acquired Conditions (HAC) Reduction Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 374 | IPPS_FLEX_PYMT_7_AMT | Flexible Payment Amount — 7th (placeholder) | 
+        
+          
+                  
+                                                                                                                                        | 375 | PTNT_ADD_ON_PYMT_AMT | Patient Add-On Payment Amount (new patient) | 
+        
+          
+                  
+                                                                                                                                        | 376 | HAC_PGM_RDCTN_IND_SW | Hospital Acquired Conditions (HAC) Program Reduction Indicator | 
+        
+          
+                  
+                                                                                                                                        | 377 | PGM_RDCTN_IND_SW | Electronic Health Records (EHR) Program Reduction Indicator | 
+        
+          
+                  
+                                                                                                                                        | 378 | PA_IND_CD | Prior Authorization Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 379 | UNIQ_TRKNG_NUM | Unique Tracking Number | 
+        
+          
+                  
+                                                                                                                                        | 380 | STAY_2_IND_SW | Two Midnight Stay Indicator | 
+        
+          
+                  
+                                                                                                                                        | 381 | CLM_SITE_NTRL_PYMT_CST_AMT | Claim Site Neutral Payment Based on Cost Amount | 
+        
+          
+                  
+                                                                                                                                        | 382 | CLM_SITE_NTRL_PYMT_IPPS_AMT | Claim Site Neutral Payment Based on IPPS Amount | 
+        
+          
+                  
+                                                                                                                                        | 383 | CLM_FULL_STD_PYMT_AMT | Claim Full Standard Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 384 | CLM_SS_OUTLIER_STD_PYMT_AMT | Claim Short Stay Outlier (SSO) Standard Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 385 | CLM_NGACO_IND_1_CD | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 1 | 
+        
+          
+                  
+                                                                                                                                        | 386 | CLM_NGACO_IND_2_CD | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 387 | CLM_NGACO_IND_3_CD | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 388 | CLM_NGACO_IND_4_CD | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 389 | CLM_NGACO_IND_5_CD | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 390 | CLM_RSDL_PYMT_IND_CD | MedPAR Claim Residual Payment Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 391 | CLM_RP_IND_CD | MedPAR Claim Representative Payee (RP) Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 392 | RC_RP_IND_CD | MedPAR Revenue Center Representative Payee (RP) Indicator Code | 
+        
+          
+                  
+                                                                                                                                        | 393 | ACO_ID_NUM | Accountable Care Organization (ACO) Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 394 | LTCH_DPP_ADJSTMT_AMT | Long-Term Care Hospital Discharge Payment Percentage Adjustment Amount | 
+        
+          
+                  
+                                                                                                                                        | 395 | VAL_CD_Q1_PYMT_RDCTN_AMT | Value Code Q1 Payment Reduction Amount | 
+        
+          
+                  
+                                                                                                                                        | 396 | CLM_MODEL_REIMBRSMT_AMT | MedPAR Claim Model Reimbursement Amount | 
+        
+          
+                  
+                                                                                                                                        | 397 | RC_MODEL_REIMBRSMT_AMT | MedPAR Revenue Center Model Reimbursement Amount | 
+        
+          
+                  
+                                                                                                                                        | 398 | VAL_CD_QB_OCM_PYMT_ADJSTMT_AMT | Value Code QB OCM + Payment Adjustment Amount | 
+        
+          
+                  
+                                                                                                                                        | 399 | RC_ALLOGENEIC_STEM_CELL_AMT | Revenue Center Allogeneic Stem Cell Acquisition/Donor Services Amount | 
+        
+          
+                  
+                                                                                                                                        | 400 | ISLET_ADD_ON_PYMT_AMT | Islet Add-On Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 401 | MDCL_SRGCL_GNRL_AMT | Medical/Surgical General Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 402 | MDCL_SRGCL_NSTRL_AMT | Medical/Surgical Non-Sterile Supplies Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 403 | MDCL_SRGCL_STRL_AMT | Medical/Surgical Sterile Supplies Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 404 | TAKE_HOME_AMT | Medical/Surgical Supplies Take Home Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 405 | PRSTHTC_ORTHTC_AMT | Medical/Surgical Supplies Prosthetic Orthotic Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 406 | MDCL_SRGCL_PCMKR_AMT | Medical/Surgical Pacemaker Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 407 | INTRAOCULAR_LENS_AMT | Medical/Surgical Supplies Intraocular Lens Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 408 | OXYGN_TAKE_HOME_AMT | Medical/Surgical Supplies Oxygen Take Home Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 409 | OTHR_IMPLANTS_AMT | Medical/Surgical Supplies Other Implants Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 410 | OTHR_SUPLIES_DVC_AMT | Medical/Surgical Supplies Other Device Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 411 | INCDNT_RDLGY_AMT | Medical/Surgical Supplies Incident Radiology Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 412 | INCDNT_DGNSTC_SRVCS_AMT | Medical/Surgical Supplies Incident Diagnostic Services Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 413 | MDCL_SRGCL_DRSNG_AMT | Medical/Surgical Dressing Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 414 | INVSTGTNL_DVC_AMT | Medical/Surgical Supplies Investigational Device Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 415 | MDCL_SRGCL_MISC_AMT | Medical Surgical Miscellaneous Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 416 | RDLGY_ONCOLOGY_AMT | Oncology Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 417 | RDLGY_DGNSTC_AMT | Radiology Diagnostic Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 418 | RDLGY_THRPTC_AMT | Radiology Therapeutic Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 419 | RDLGY_NUCLR_MDCN_AMT | Radiology Nuclear Medicine Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 420 | RDLGY_CT_SCAN_AMT | Radiology CT Scan Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 421 | RDLGY_OTHR_IMGNG_AMT | Radiology Other Imaging Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 422 | OPRTG_ROOM_AMT | Operating and Recovery Room Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 423 | OR_LABOR_DLVRY_AMT | Labor Room and Delivery Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 424 | CRDC_CATHRZTN_AMT | Cardiac Catheterization Lab Amount ($) | 
+        
+          
+                  
+                                                                                                                                        | 425 | CELL_GENE_THRPY_PRCDRS_TOT_AMT | Cell/Gene Therapy Procedures Total Charge Amount | 
+        
+          
+                  
+                                                                                                                                        | 426 | CELL_THRPY_DRUGS_TOT_AMT | Cell Therapy Drugs Total Charge Amount | 
+        
+          
+                  
+                                                                                                                                        | 427 | GENE_THRPY_DRUGS_TOT_AMT | Gene Therapy Drugs Total Charge Amount |

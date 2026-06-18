@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Date.\n35 UPDTDDT UPDATED_DATE Updated Date DATE 8 This is the date the row was last updated in the assessment table in the state system.\n36 A2 A2_ROOM_NUM (A2) Room Number CHAR 5 Identification and background information: room number.\n37 A3A A3A_ASMT_REF_DT (A3A) Assessment Reference Date DATE 8 Identification and background information: last day of MDS observation period.\n38 A4A A4A_REENTRY_DT (A4A) Reentry Date DATE 8 Identification and background information: date of reentry.\n39 A4B",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_532",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "X0600B Correction PPS Reason for Assessment Code CHAR 2 The data in this column indicates the PPS (A0310B) code from the prior erroneous record to be modified or inactivated. 01=5-day scheduled assessment\n02=14-day scheduled assessment\n03=30-day scheduled assessment\n04=60-day scheduled assessment\n05=90-day scheduled assessment\n06=Readmission/return assessment\n07=Unscheduled assessment used for PPS (OMRA, significant or clinical\nchange, or significant correction assessment)\n99=None of the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

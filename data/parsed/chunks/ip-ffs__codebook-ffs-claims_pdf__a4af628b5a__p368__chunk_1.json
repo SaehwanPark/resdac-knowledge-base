@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p368__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 368,
+  "text": "Administration (FDA) to an \ninvestigational device (IDE) after the manufacturer has approval to conduct a clinical trial. \nThe IDEs will have a revenue center code “0624”. \nSHORT NAME: IDENDC \nLONG NAME: REV_CNTR_IDE_NDC_UPC_NUM \nTYPE: \nCHAR \nLENGTH: \n24 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field was renamed to eventually accommodate the National Drug Code (NDC) and the Universal \nProduct Code (UPC). This field could contain either of these 3 fields (there would never be an instance \nwhere",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

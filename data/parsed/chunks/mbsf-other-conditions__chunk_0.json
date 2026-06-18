@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__chunk_0",
+  "source_document": "data/raw/html/dataset_page/cb6221ac2e195081875db2207b6efc6681e56769.html",
+  "page": null,
+  "text": "The Master Beneficiary Summary File (MBSF) Other Chronic or Potentially Disabling Conditions segment flags beneficiary records for the presence of 35 chronic or potentially disabling conditions not included in the original list of 27 conditions, including:\n- Mental health\n- Tobacco use, alcohol and drug use\n- Developmental disorders\n- Disability-related conditions\n- Behavioral health\n- Other chronic physical conditions\nWhat does this file include? (variable highlights)\n- Two flags for each",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://resdac.org/cms-data/files/mbsf-other-conditions"
+}

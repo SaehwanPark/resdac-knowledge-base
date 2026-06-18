@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_208",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "I1S_CEREBRAL_PALSY (I1S) Cerebral Palsy CHAR 1 Disease diagnosis: diseases - neurological - cerebral palsy. 0 = No, 1 = Yes, \"-\" = Unknown.\n315 I1T I1T_STROKE (I1T) Cerebrovascular Accident/Stroke CHAR 1 Disease diagnosis: diseases - neurological - cerebrovascular accident/stroke. 0 = No, 1 = Yes, \"-\" = Unknown.\n316 I1U I1U_DEMENTIA (I1U) Dementia Other than Alzheimers Disease CHAR 1 Disease diagnosis: diseases - neurological - dementia other than Alzheimer's. 0 = No, 1 = Yes, \"-\" =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_27",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "NUM 8 53\nLINE_COPAY_AMT Line Beneficiary Copayment Amount NUM 8 54\nLINE_TP_PD_AMT Line Third Party Liability Paid Amount NUM 8 55\nLINE_OTHR_INSRNC_PD_AMT Line Other Than Medicare or Medicaid -Insurance Paid Amount NUM 8 56\nOT_ACCMDTN_HCPCS_RATE Other Services Accommodation Rate CHAR 14 57 Retired4\nDA_RUN_ID TAF Production Run Identifier (unique for each TAF run) NUM 8 58\nTMSIS_RUN_ID TMSIS State Data Processing Run Identifier NUM 8 59\n1 Fields are populated starting with the 2017 and 2018",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

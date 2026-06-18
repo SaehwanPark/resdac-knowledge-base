@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_552",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Medicaid RUG Version Text CHAR 10 The data in this column contains the alternate submitted state Medicaid RUG version code. (If required by the state)\n637 Z0500B_RN_SGN_CMPLT_DT Z0500B_RN_SGN_CMPLT_DT Z0500B Date RN Assessment Coordinator Signed Assessment as Complete CHAR 8 The data in this column contains the date that the RN Assessment Coordinator signed the assessment as complete.\n638 FAC_INTRNL_ID FAC_INTRNL_ID Facility ID CHAR 16 This column contains the facility internal ID for nursing",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

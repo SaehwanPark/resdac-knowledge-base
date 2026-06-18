@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_737",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Start and End of therapy assessment\n4 = Change of therapy assessment\n5 = Other payment assessment discontinued 09/30/2023\n817 Z0200C_STATE_SS_IND Z0200C_STATE_SS_IND Z0200C State Short Stay Code CHAR 1 Short-stay assessment. 0 = No \n1 = Yes effective 10/01/2019\ndiscontinued 9/30/2023\n818 C_STATE_SS_IND C_STATE_SS_IND Recalculated Z0200C CHAR 1\n819 ETHNCTY_NO_HSPNC_CD ETHNCTY_NO_HSPNC_CD A1005A Ethnicity: No, not Hispanic, Latino/a, Spanish CHAR 1 The data in this column indicates if the",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

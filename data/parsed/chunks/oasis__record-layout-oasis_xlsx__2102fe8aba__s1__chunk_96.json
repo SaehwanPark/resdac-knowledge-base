@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_96",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Oxygen Respiratory treatments utilized at home: oxygen (intermittent or continuous). 0 = No, 1 = Yes CHAR 1 x x\nM0500_RESPTX_VENT (M0500) Ventilator Respiratory treatments utilized at home: ventilator (continually or at night). 0 = No, 1 = Yes CHAR 1 x x\nM0510_UTI (M0510) Urinary Tract Infection Patient has been treated for urinary tract infection in past 14 days. 0 = No\n1 = Yes\nNA = Patient on prophylactic treatment\nUK = Unknown CHAR 2 x x\nM0520_UR_INCONT (M0520) Urinary Incontinence Urinary",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

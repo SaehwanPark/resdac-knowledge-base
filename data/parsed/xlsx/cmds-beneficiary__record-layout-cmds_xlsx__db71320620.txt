@@ -1,0 +1,84 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+CMMI Data Sharing (CMDS) — Beneficiary File
+Version — April 2025
+SAS name	Label	Type	Length	Format	Values
+MODEL_ID	Model Identifier	CHAR	2	refer to Model ID tab
+ENTITY_ID	Entity Identifier	CHAR	10
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+START_DATE	Beneficiary Start Date	DATE	8	CCYYMMDD
+END_DATE	Beneficary End Date	DATE	8	CCYYMMDD
+VLNTRY_IND	Voluntary Alignment Indicator	CHAR	1	Y = Beneficiary Voluntarily Aligned
+N = Beneficiary Systemically Aligned
+Blank = Voluntary Alignment not applicable for Model
+OPRTNL_END_DATE	Beneficiary Operational End Date	DATE	8	CCYYMMDD
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+CMMI Data Sharing (CMDS) — Provider File
+Version — April 2025
+SAS name	Label	Type	Length	Format	Values
+MODEL_ID	Model Identifier	CHAR	2	refer to Model ID tab
+ENTITY_ID	Entity Identifier	CHAR	10
+PRVDR_TIN	Taxpayer Identification Number of Provider	CHAR	9
+PRVDR_NPI	National Provider Identifier of Provider	CHAR	10
+PRVDR_CCN	CMS Certification Number of Provider	CHAR	6
+START_DATE	Provider Start Date	DATE	8	CCYYMMDD
+END_DATE	Provider End Date	DATE	8	CCYYMMDD
+PART_TYPE	Provider Participation Type	CHAR	1	P = Participating Provider
+F = Preferred Provider
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+CMMI Data Sharing (CMDS) — Entity File
+Version — April 2025
+SAS name	Label	Type	Length	Format	Values
+MODEL_ID	Model Identifier	CHAR	2	refer to Model ID tab
+MODEL_NAME	Model Name	CHAR	256
+ENTITY_ID	Entity Identifier	CHAR	10
+ENTITY_NAME	Entity Name	CHAR	256
+ENTITY_TYPE	Entity Type	CHAR	3	MDC = Medicare Enrolled Provider/Supplier
+FAC = Medicare Facility 
+HSP = Medicare Hospital
+PAC = Post-Acute Care Medicare Facility
+PRA = Medicare Enrolled Practice
+ACO = Accountable Care Organization
+CBO = Community Based Organization
+CNV = Convener
+MRE = Medicaid Related Entity
+MAP = Medicare Advantage Plan
+PLN = Commercial Health Plan
+STE = State
+OTH = Other/Unknown
+START_DATE	Entity Start Date	DATE	8	CCYYMMDD
+END_DATE	Entity End Date	DATE	8	CCYYMMDD
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+CMMI Data Sharing (CMDS) — Model IDs
+Version — April 2025
+Model ID	Model name	Short name
+01	Independence at Home Demonstration	IAH
+11	Medicare-Medicaid Financial Alignment Initiative	FAI
+25	Graduate Nursing Education Demonstration	GNE
+22	Comprehensive Primary Care Plus Model	CPC+
+27	Pennsylvania Rural Health Model	PARHM
+28	Rural Community Hospital Demo	RCH
+33	Comprehensive Care for Joint Replacement Payment Model	CJR
+36	Frontier Community Health Integration Project	FCHIP
+37	Home Health Value-Based Purchasing Model	HHVBP
+41	Medicare Care Choices Model	MCCM
+42	Prior Auth: Repetitive Scheduled Non-Emergent Ambulance Transport	RSNAT
+43	Prior Auth: Non-Emergent Hyperbaric Oxygen Therapy	HBO
+44	Oncology Care Model	OCM
+46	Reduce Avoidable Hospitalizations Among Nursing Facility Residents	NFI
+48	Transforming Clinical Practice Initiative	TCPI
+52	Accountable Health Communities (AHC) Model	AHC
+53	Vermont All-Payer ACO Model	VTAPM
+54	Bundled Payment for Care Improvement Advanced Model	BPCI-A
+56	Maryland Total Cost of Care Model	MDTCOC
+57	Primary Care First	PCF
+63	ACO Realizing Equity, Access, and Community Health Model	ACO REACH
+64	ESRD Treatment Choices Model	ETC
+65	Emergency Triage, Treat and Transport Model	ET3
+66	Kidney Care Choices	KCC
+71	Value in Opioid Use Disorder Treatment Demo	ViT
+73	Frontier Community Health Integration Project Demonstration – Extension	EFCHIP
+75	Making Care Primary (MCP) Model	MCP
+76	Guiding an Improved Dementia Experience (GUIDE) Model	GUIDE

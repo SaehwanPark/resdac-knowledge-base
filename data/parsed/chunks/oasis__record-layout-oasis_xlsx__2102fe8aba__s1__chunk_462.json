@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_462",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "stage at most recent SOC/ROC This field indicates the current number of unhealed pressure ulcers at stage II that were not present or were at a lesser stage at most recent SOC / ROC. If no current pressure ulcer at a given stage, enter 0. CHAR 2 x\nM1313_NBR_STG3_NOT_PRESENT M1313 (M1309) Number Of Unhealed Pressure Ulcers - Stage III that were not present or were at a lesser stage at most recent SOC/ROC This field indicates the current number of unhealed pressure ulcers at stage III that were",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

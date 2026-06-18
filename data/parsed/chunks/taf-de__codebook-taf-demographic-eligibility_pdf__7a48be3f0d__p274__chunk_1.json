@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p274__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 274,
+  "text": "LABEL: \nScope of Medicaid or CHIP Benefits — January–December (01–12) \nDESCRIPTION: A flag that indicates the scope of Medicaid or Children’s Health Insurance Program (CHIP) benefits to \nwhich a beneficiary is entitled, in the month. There are separate variables for each of the 12 months \nduring the year. \nSHORT NAME: \nRSTRCTD_BNFTS_CD_01 \nRSTRCTD_BNFTS_CD_02 \nRSTRCTD_BNFTS_CD_03 \nRSTRCTD_BNFTS_CD_04 \nRSTRCTD_BNFTS_CD_05 \nRSTRCTD_BNFTS_CD_06 \nRSTRCTD_BNFTS_CD_07 \nRSTRCTD_BNFTS_CD_08",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

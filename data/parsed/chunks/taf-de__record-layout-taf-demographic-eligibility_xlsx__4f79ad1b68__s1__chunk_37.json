@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_37",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "Disability Ind - Other Disability Not Listed - Ever in Calendar Yr NUM 1 166\nBIRTH_CNCPTN_IND Birth to Conception Ind - Ltst in Yr CHAR 1 167\nSSDI_IND Social Security Disability Insurance (SSDI) Ind - Ltst in Yr CHAR 1 168\nSSI_IND Supplemental Security Income (SSI) Ind - Ltst in Yr CHAR 1 169\nSSI_STUS_CD Supplemental Security Income (SSI) Status Code - Ltst in Yr CHAR 3 170\nSSI_STATE_SPLMT_CD Supplemental Security Income (SSI) State Supplement Code - Ltst in Yr CHAR 3 171\nTANF_CASH_CD Temporary",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

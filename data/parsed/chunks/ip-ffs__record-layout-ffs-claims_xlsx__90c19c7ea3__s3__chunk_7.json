@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s3__chunk_7",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 3,
+  "text": "Total Charge Amount NUM 12 33\nPTNTSTUS NCH_PTNT_STATUS_IND_CD NCH Patient Status Indicator Code CHAR 1 34\nUTIL_DAY CLM_UTLZTN_DAY_CNT Claim Medicare Utilization Day Count NUM 3 35\nDSCHRGDT NCH_BENE_DSCHRG_DT NCH Beneficiary Discharge Date DATE 8 36\nPRNCPAL_DGNS_CD PRNCPAL_DGNS_CD Claim Principal Diagnosis Code CHAR 7 37\nICD_DGNS_CD1 ICD_DGNS_CD1 Claim Diagnosis Code I CHAR 7 38\nICD_DGNS_CD2 ICD_DGNS_CD2 Claim Diagnosis Code II CHAR 7 39\nICD_DGNS_CD3 ICD_DGNS_CD3 Claim Diagnosis Code III CHAR 7",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

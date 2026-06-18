@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p274__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 274,
+  "text": "File (TAF) claims \nFILE(S): \nIP line \nLT line \nOT line \nVALUES: \nhttp://www.wpc-edi.com/reference/ \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis variable has been retired; therefore, the field is blank starting with the 2023 Release 1 RIF. \nThis value is null if the SRVC_PRVDR_NPI value is not found in National Plan and Provider Enumeration \nSystem (NPPES), or the NPI value does not have a taxonomy code in NPPES that is marked as primary. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

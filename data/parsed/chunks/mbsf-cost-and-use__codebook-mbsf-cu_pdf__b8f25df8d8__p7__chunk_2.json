@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p7__chunk_2",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 7,
+  "text": "NCH_BENE_PTA_COINSRNC_LBLTY_AM) for all acute inpatient claims \nwhere the CLM_PMT_AMT >= 0. \nSHORT NAME: — \nLONG NAME: ACUTE_BENE_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nAcute inpatient claims are a subset of the claims in the IP data file consisting of data from both acute \nhospitals and critical access hospitals (CAH). These facilities are those where either the 3rd digit of the \nprovider number (SAS variable PRVDR_NUM) = 0 or the 3rd and 4th digits of",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

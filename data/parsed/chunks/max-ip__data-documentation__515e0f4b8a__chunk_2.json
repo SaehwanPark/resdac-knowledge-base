@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__data-documentation__515e0f4b8a__chunk_2",
+  "source_document": "data/raw/html/documentation_page/515e0f4b8a82429031028f6befb46024fb536839.html",
+  "page": null,
+  "text": "eligibility - most recent | \n\n | EL_MAX_ELGBLTY_CD_MO | MAX eligibility - mo of svc | \n\n | EL_MDCR_ANN_XOVR_OLD | Medicare Crossover code (Annual) old values | \n\n | MSNG_ELG_DATA | Missing eligibility data | \n\n | EL_MDCR_XOVR_CLM_BSD_CD | Crossover code (from claims only) | \n\n | EL_MDCR_ANN_XOVR_99 | Crossover code (Annual) | \n\n | MSIS_TOS | MSIS Type of Service (TOS) | \n\n | MSIS_TOP | MSIS Type of Program (TOP) | \n\n | MAX_TOS | MAX Type of Service (TOS) | \n\n | PRVDR_ID_NMBR | Billing provider",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip/data-documentation"
+}

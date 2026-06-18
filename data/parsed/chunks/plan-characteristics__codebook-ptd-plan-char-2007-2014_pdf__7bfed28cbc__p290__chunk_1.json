@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p290__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 290,
+  "text": "(LTCP) during the pre-initial coverage limit (ICL) phase of the Part D \nbenefit. \nSHORT NAME: — \n\nLONG NAME: PRE_ICL_DAYS_LTCP_G_1M \n\nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \nCOMMENT: \nThis variable was populated only in 2013. Plans that may offer a different days supply for brand name \ndrugs on this tier; see the corresponding LTCP brand name drug variable called \n(PRE_ICL_DAYS_LTCP_B_1M). \nThe CCW constructs the Plan Characteristics file from information submitted by",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

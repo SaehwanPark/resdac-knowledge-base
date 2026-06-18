@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_808",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "PRSNL_HYGN_INTRM_CD GG0130I5 Personal Hygiene (Interim Perf) CHAR 2 The data in this column indicates the resident's ability to perform personal hygiene during this assessment period plus two previous calendar days. 06=Independent \n05=Setup or clean-up assistance \n04=Supervision or touching assistance \n03=Partial/moderate assistance \n02=Substantial/maximal assistance \n01=Dependent \n\nIf activity was not attempted, code reason:\n07=Resident refused\n09=Not applicable \n10=Not attempted due to",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

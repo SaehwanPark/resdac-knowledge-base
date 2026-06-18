@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__record-layout-mbsf-cc_xlsx__9b3251247c__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/9b3251247c196c2ff5244785fa3366fd9b900eec.xlsx",
+  "page": 1,
+  "text": "NUM 1\nCNCRBRSE CANCER_BREAST_EVER First Occurrence of Breast Cancer DATE 8\nCNCRCLRC CANCER_COLORECTAL Colorectal Cancer End-of-Year Indicator NUM 1\nCNCRCLRM CANCER_COLORECTAL_MID Colorectal Cancer Mid-Year Indicator NUM 1\nCNCRCLRE CANCER_COLORECTAL_EVER First Occurrence of Colorectal Cancer DATE 8\nCNCRPRST CANCER_PROSTATE Prostate Cancer End-of-Year Indicator NUM 1\nCNCRPRSM CANCER_PROSTATE_MID Prostate Cancer Mid-Year Indicator NUM 1\nCNCRPRSE CANCER_PROSTATE_EVER First Occurrence of Prostate",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cc.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p111__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 111,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n97 \nGAP_INP_COINS_1M \nLABEL: \nGap Coinsurance Standard Retail — One-Month Supply \nDESCRIPTION: This variable identifies the beneficiary co-insurance percentage for a one-month supply of the drugs \non this tier, using an in-network pharmacy (INP; also known as a standard retail pharmacy) during the coverage gap \nphase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

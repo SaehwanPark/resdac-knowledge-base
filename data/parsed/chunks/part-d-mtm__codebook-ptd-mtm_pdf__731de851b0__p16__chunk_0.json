@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p16__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 16,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n12 \nCMR_RECEIVED_NUM \nLABEL: \nNumber of Comprehensive Medication Reviews (CMRs) received \nDESCRIPTION: This variable indicates the number of Comprehensive Medication Reviews (CMRs) with written \nsummary in CMS standardized format the beneficiary received \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n0–XX \nCOMMENT: \nThis variable is",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

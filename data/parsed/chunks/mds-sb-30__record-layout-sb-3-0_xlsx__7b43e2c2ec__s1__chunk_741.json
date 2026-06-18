@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_741",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "column indicates if the resident's ethnicity is another Hispanic, Latino/a, or Spanish origin. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes) effective 10/01/2023\n824 ETHNCTY_NO_RSPNS_CD ETHNCTY_NO_RSPNS_CD A1005X Ethnicity: Resident unable to respond CHAR 1 The data in this column indicates the resident was unable to respond regarding their ethnicity. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes) effective 10/01/2023\n825 ETHNCTY_DCLN_RSPNS_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

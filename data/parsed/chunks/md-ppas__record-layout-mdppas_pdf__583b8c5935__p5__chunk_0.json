@@ -1,0 +1,8 @@
+{
+  "chunk_id": "md-ppas__record-layout-mdppas_pdf__583b8c5935__p5__chunk_0",
+  "source_document": "data/raw/assets/pdf/583b8c59350c60f3a057b741c5d5e47e73c3d990.pdf",
+  "page": 5,
+  "text": "5 \n\nTIN2 variables \nDescription \nData Source \ntin2_srvc_month \nTwelve monthly flags for whether the NPI billed for any services under \nTIN2. Position 1 pertains to January; position 12 to December. \n1= billed \n0=did not bill \nClaims \ntin2_srvc_lines \nCount of line items billed under TIN2 \nClaims \ntin2_allowed_amt \nTotal allowed charges billed under TIN2 \nClaims \ntin2_unq_benes \nNumber of unique beneficiaries for whom the NPI billed under TIN2 \nClaims",
+  "dataset": "md-ppas",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mdppas.pdf"
+}

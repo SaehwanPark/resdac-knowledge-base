@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p38__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 38,
+  "text": "indicator (January through December). \nLONG NAME: \nHMO_IND_01 \nHMO_IND_02 \nHMO_IND_03 \nHMO_IND_04 \nHMO_IND_05 \nHMO_IND_06 \nHMO_IND_07 \nHMO_IND_08 \nHMO_IND_09 \nHMO_IND_10 \nHMO_IND_11 \nHMO_IND_12 \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nN = Not enrolled in Medicare part A or B in the month, whether not enrolled but still alive, or died \n(with a verified or unverified date of death) (value effective with MBSF ABCD V2) \n0 = Enrolled in Medicare A or B but",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

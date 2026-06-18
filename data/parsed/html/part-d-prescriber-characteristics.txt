@@ -1,0 +1,13 @@
+The Medicare Part D Prescriber Characteristics file contains descriptive information for the prescriber identified on a Part D Event file record.
+What does this file include? (variable highlights)
+- Primary Taxonomy Code
+- Practice location (state)
+- Academic or Professional Credential for the prescriber
+- Linkage variables to the PDE file:
+- CCW Prescriber Identifier
+ 
+Why do researchers request this file?
+- Studies describing prescribing patterns based on prescriber specialty
+- Evaluation of clinical outcome based on prescriber characteristics
+Special considerations
+- Prior to CY2014 data, the prescriber ID is the encrypted CCW Prescriber ID, which cannot be linked to external, non-CMS Part D data sources.

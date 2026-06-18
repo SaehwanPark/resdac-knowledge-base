@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p318__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 318,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n304 \nRELATIONSHIP_CODE \nLABEL: \nRelationship Code \nDESCRIPTION: This variable is the code that identifies whether the contract and plan ID that was active in in the \nreference year was new or related to a contract and plan ID in the previous year. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nN = New \nR = Renewal \nC = Consolidation \nT = Termination \nCOMMENT:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

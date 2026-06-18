@@ -1,0 +1,310 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare-Medicaid Linked Enrollee Analytic Data Set (MMLEADS) — Beneficiary Summary File
+August 2021
+File Sequence	Long SAS NAME	Label	Type	Length
+1	BENE_ID	CCW Beneficiary Identifier	Num	8
+2	MSIS_ID	State Assigned Beneficiary Unique Identifier	Char	32
+3	STATE_CD	State Alpha Abbreviation	Char	2
+4	MME_TYPE_CD	Annual Medicare - Medicaid Eligibility Type Code	Num	8
+5	SAMPLE_GRP	Sample Group Indicator - 1%	Num	8
+6	BIRTH_DT	Date of Birth	Date	8
+7	AGE	Age (in Years)	Num	8
+8	ALIVE_MOS	Months Alive	Num	8
+9	DEATH_DT	Date of Death	Date	8
+10	SEX_CD	Sex (Biological) - Ltst in Yr	Char	1
+11	MDCR_RTI_RACE	Medicare - Research Triangle Institute (RTI) Race Code	Char	1
+12	MDCD_RACE_ETHNCTY_CD	Medicaid - Race and Ethnicity Constructed Code - Ltst in Yr	Char	1
+13	MDCR_STATE_CD	Medicare - State FIPS Code - Ltst in Yr	Char	2
+14	MDCR_COUNTY_CD	Medicare - County FIPS Code - Ltst in Yr	Char	3
+15	MDCR_PTA_MOS	Medicare - Part A Enrolled Months	Num	8
+16	MDCR_PTB_MOS	Medicare - Part B Enrolled Months	Num	8
+17	MDCR_PTAPTB_MOS	Medicare - Part A & Part B Enrolled Months	Num	8
+18	MDCR_PTD_MOS	Medicare - Part D Enrolled Months	Num	8
+19	FD_MOS	Medicare - Full Dual Months	Num	8
+20	PD_MOS	Partial Dual Months	Num	8
+21	MDCR_ONLY_MOS	Medicare Only Months	Num	8
+22	MDCD_ELGBLTY_GRP_CD_LTST	Medicaid - Eligibility Group Code - Ltst in Yr	Char	2
+23	MDCD_ABD_MOS	Medicaid Enrollment - Aged, Blind, Disabled Months	Num	8
+24	MDCD_ONLY_MOS	Medicaid - Aged, Blind, Disabled Only Months	Num	8
+25	MDCD_CHIP_NON_ABD_MOS	Medicaid or CHIP Enrollment - Non-ABD Months	Num	8
+26	MDCD_RSTRCTD_BNFTS_CD_LTST	Medicaid - Scope of Medicaid or CHIP Benefits - Ltst in Yr	Char	1
+27	MDCR_COVSTART	Medicare - Coverage Start Date	Date	8
+28	MDCR_OREC	Medicare - Original Reason for Entitlement Code (OREC)	Char	1
+29	MDCR_CREC	Medicare - Current Reason for Entitlement Code (CREC)	Char	1
+30	MDCR_MS_CD	Medicare Status Code - Ltst in Yr	Char	2
+31	MDCR_DIB_AWD_CD	Medicare - SSA Disability Insurance Benefit Award Code	Char	1
+32	MDCR_DIB_JSTFCTN_CD	Medicare - Disability Insurance Benefit Entitlement to Medicare Justifctn Code	Char	1
+33	MDCR_DIB_PRMRY_IMPRMNT_CD	Medicare - SSA Disability Insurance Benefit Dx Primary Impairment Code	Char	4
+34	MDCR_DIB_SCNDRY_IMPRMNT_CD	Medicare - SSA Disability Insurance Benefit	Dx Secondary Impairment Code	Char	4
+35	MDCR_FFS_MEDICAL_MOS	Medicare - Fee-for-Service Medical Coverage Months	Num	8
+36	MDCR_HMO_MOS	Medicare - HMO Coverage Months	Num	8
+37	MDCR_MC_PACE_MOS	Medicare - Program of All-Inclusive Care for the Elderly (PACE) Months	Num	8
+38	MDCR_MC_MMP_MOS	Medicare - Medicaid Plan (MMP) Coverage Months	Num	8
+39	MDCR_MC_OTHER_MOS	Medicare - Other Managed Care Months	Num	8
+40	MDCR_MC_UNKNOWN_MOS	Medicare - Unknown Plan Type Manage Care Months	Num	8
+41	MDCR_C_SNP_MOS	Medicare - Medicaid Chronic Condition Special Needs Plan (C-SNP) Months	Num	8
+42	MDCR_D_SNP_MOS	Medicare - Medicaid Dual Eligible Special Needs Plan (D-SNP) Months	Num	8
+43	MDCR_I_SNP_MOS	Medicare - Medicaid Institutional Special Needs Plan (I-SNP) Months	Num	8
+44	MDCD_FFS_MEDICAL_MOS	Medicaid - Fee-for-Service Medical Coverage Months	Num	8
+45	MDCD_MC_MEDICAL_MOS	Medicaid - Managed Care Medicaid Coverage Months	Num	8
+46	MDCD_OTHR_MC_MOS	Medicaid - Other (non-Comprehensive) Managed Care Medicaid Coverage Months	Num	8
+47	MDCD_CMC_COV_MOS	Medicaid - Comprehensive Managed Care Months	Num	3
+48	MDCD_PCCM_COV_MOS	Medicaid - Primary Care Case Management (PCCM) Months	Num	3
+49	MDCD_HIO_COV_MOS	Medicaid - Health Insuring Organization (HIO) Months	Num	3
+50	MDCD_PHP_COV_MOS	Medicaid - Prepaid Inpatient or Ambulatory Hlth Plan (PIHP / PAHP) Months	Num	8
+51	MDCD_LTC_COV_MOS	Medicaid - Long-Term Care Prepaid Inpatient Hlth Plan (PIHP) Months	Num	3
+52	MDCD_BEHAVIORAL_COV_MOS	Medicaid - Managed Care Mental Health or Substance Abuse Coverage Months	Num	8
+53	MDCD_DENTAL_COV_MOS	Medicaid - Managed Care Dental Coverage Months	Num	3
+54	MDCD_TRANSPORTATION_COV_MOS	Medicaid - Managed Care Transportation Months	Num	3
+55	MDCD_DISEASE_MGMT_COV_MOS	Medicaid - Managed Care Disease Management Plan Coverage Months	Num	3
+56	MDCD_PACE_COV_MOS	Medicaid - Program of All-Inclusive Care for the Elderly (PACE) Months	Num	3
+57	MDCD_PHARMACY_COV_MOS	Medicaid - Managed Care Pharmacy Months	Num	3
+58	MDCD_HLTH_MDCL_HOME_COV_MOS	Medicaid - Health or Medical Home Months	Num	3
+59	MDCD_INTEGRATED_DUAL_COV_MOS	Medicaid - Integrated Care for Dual Eligible Months	Num	3
+60	MDCD_WVR_1115_TYPE_CD	Medicaid - 1115 Waiver Type Cd - Ltst in Yr	Char	2
+61	MDCD_WVR_1915C_TYPE_CD	Medicaid - 1915(c) Waiver Type Cd - Ltst in Yr	Char	2
+62	MDCD_WVR_1915B_MOS	Medicaid - 1915(b) Waiver Months	Num	3
+63	MDCD_WVR_1915C_MOS	Medicaid - 1915(c) Waiver Type Code - Ltst in Yr Months	Num	3
+64	MDCD_WVR_1915BC_MOS	Medicaid - 1915(b)(c) Waiver Months	Num	3
+65	MDCR_LTCH_MOS	Medicare - Long-Term Care Hospital Months (from MDS)	Num	8
+66	MDCR_SNF_MOS	Medicare - Skilled Nursing Facility Months (from Claims)	Num	8
+67	MDCR_NF_MOS	Medicare - Nursing Facility months (from MDS)	Num	8
+68	MDCD_HOSPITAL_LTSS_MOS	Medicaid - Hospital LTSS Months	Num	8
+69	MDCD_IPF_LTSS_MOS	Medicaid - IP Psych Facility for Individuals under age 21 LTSS Months	Num	8
+70	MDCD_NF_LTSS_MOS	Medicaid - Nursing Facility LTSS Months	Num	8
+71	MDCD_ICF_IID_LTSS_MOS	Medicaid - ICF for Individuals with Intellectual Disabilities LTSS Months	Num	8
+72	MDCD_OTHER_LTSS_MOS	Medicaid - Other Type of Facility LTSS Months	Num	8
+73	MDCD_CARE_LEVEL_MOS	Medicaid - Total LTSS Months (All Levels of Care)	Num	8
+74	MDCD_SKILLED_CARE_MOS	Medicaid - Skilled Level of Care for LTSS Months	Num	8
+75	MDCD_INTERMEDIATE_CARE_MOS	Medicaid - Intermediate Level of Care for LTSS Months	Num	8
+76	MDCD_CUSTODIAL_CARE_MOS	Medicaid - Custodial Level of Care for LTSS Months	Num	8
+77	MDCD_LTSS_LEVEL_MOS	Medicaid - LTSS Provider 1 Level of Care Code Months	Num	8
+78	MDCR_DUAL_STUS_CD_01	Medicare - Medicaid Dual Eligibility Code - January	Char	2
+79	MDCR_BUYIN_01	Medicare - Entitlement/Buy-In Indicator - January	Char	1
+80	MDCR_FFS_MEDICAL_01	Medicare - Fee-for-Service Medical Coverage Indicator - January	Num	8
+81	MDCR_DUAL_STUS_CD_02	Medicare - Medicaid Dual Eligibility Code - February	Char	2
+82	MDCR_BUYIN_02	Medicare - Entitlement/Buy-In Indicator - February	Char	1
+83	MDCR_FFS_MEDICAL_02	Medicare - Fee-for-Service Medical Coverage Indicator - February	Num	8
+84	MDCR_DUAL_STUS_CD_03	Medicare - Medicaid Dual Eligibility Code - March	Char	2
+85	MDCR_BUYIN_03	Medicare - Entitlement/Buy-In Indicator - March	Char	1
+86	MDCR_FFS_MEDICAL_03	Medicare - Fee-for-Service Medical Coverage Indicator - March	Num	8
+87	MDCR_DUAL_STUS_CD_04	Medicare - Medicaid Dual Eligibility Code - April	Char	2
+88	MDCR_BUYIN_04	Medicare - Entitlement/Buy-In Indicator - April	Char	1
+89	MDCR_FFS_MEDICAL_04	Medicare - Fee-for-Service Medical Coverage Indicator - April	Num	8
+90	MDCR_DUAL_STUS_CD_05	Medicare - Medicaid Dual Eligibility Code - May	Char	2
+91	MDCR_BUYIN_05	Medicare - Entitlement/Buy-In Indicator - May	Char	1
+92	MDCR_FFS_MEDICAL_05	Medicare - Fee-for-Service Medical Coverage Indicator - May	Num	8
+93	MDCR_DUAL_STUS_CD_06	Medicare - Medicaid Dual Eligibility Code - June	Char	2
+94	MDCR_BUYIN_06	Medicare - Entitlement/Buy-In Indicator - June	Char	1
+95	MDCR_FFS_MEDICAL_06	Medicare - Fee-for-Service Medical Coverage Indicator - June	Num	8
+96	MDCR_DUAL_STUS_CD_07	Medicare - Medicaid Dual Eligibility Code - July	Char	2
+97	MDCR_BUYIN_07	Medicare - Entitlement/Buy-In Indicator - July	Char	1
+98	MDCR_FFS_MEDICAL_07	Medicare - Fee-for-Service Medical Coverage Indicator - July	Num	8
+99	MDCR_DUAL_STUS_CD_08	Medicare - Medicaid Dual Eligibility Code - August	Char	2
+100	MDCR_BUYIN_08	Medicare - Entitlement/Buy-In Indicator - August	Char	1
+101	MDCR_FFS_MEDICAL_08	Medicare - Fee-for-Service Medical Coverage Indicator - August	Num	8
+102	MDCR_DUAL_STUS_CD_09	Medicare - Medicaid Dual Eligibility Code - September	Char	2
+103	MDCR_BUYIN_09	Medicare - Entitlement/Buy-In Indicator - September	Char	1
+104	MDCR_FFS_MEDICAL_09	Medicare - Fee-for-Service Medical Coverage Indicator - September	Num	8
+105	MDCR_DUAL_STUS_CD_10	Medicare - Medicaid Dual Eligibility Code - October	Char	2
+106	MDCR_BUYIN_10	Medicare - Entitlement/Buy-In Indicator - October	Char	1
+107	MDCR_FFS_MEDICAL_10	Medicare - Fee-for-Service Medical Coverage Indicator - October	Num	8
+108	MDCR_DUAL_STUS_CD_11	Medicare - Medicaid Dual Eligibility Code - November	Char	2
+109	MDCR_BUYIN_11	Medicare - Entitlement/Buy-In Indicator - November	Char	1
+110	MDCR_FFS_MEDICAL_11	Medicare - Fee-for-Service Medical Coverage Indicator - November	Num	8
+111	MDCR_DUAL_STUS_CD_12	Medicare - Medicaid Dual Eligibility Code - December	Char	2
+112	MDCR_BUYIN_12	Medicare - Entitlement/Buy-In Indicator - December	Char	1
+113	MDCR_FFS_MEDICAL_12	Medicare - Fee-for-Service Medical Coverage Indicator - December	Num	8
+114	MDCD_STATE_CD_01	Medicaid - State Alpha Abbreviation - January	Char	2
+115	MDCD_STATE_CD_02	Medicaid - State Alpha Abbreviation - February	Char	2
+116	MDCD_STATE_CD_03	Medicaid - State Alpha Abbreviation - March	Char	2
+117	MDCD_STATE_CD_04	Medicaid - State Alpha Abbreviation - April	Char	2
+118	MDCD_STATE_CD_05	Medicaid - State Alpha Abbreviation - May	Char	2
+119	MDCD_STATE_CD_06	Medicaid - State Alpha Abbreviation - June	Char	2
+120	MDCD_STATE_CD_07	Medicaid - State Alpha Abbreviation - July	Char	2
+121	MDCD_STATE_CD_08	Medicaid - State Alpha Abbreviation - August	Char	2
+122	MDCD_STATE_CD_09	Medicaid - State Alpha Abbreviation - September	Char	2
+123	MDCD_STATE_CD_10	Medicaid - State Alpha Abbreviation - October	Char	2
+124	MDCD_STATE_CD_11	Medicaid - State Alpha Abbreviation - November	Char	2
+125	MDCD_STATE_CD_12	Medicaid - State Alpha Abbreviation - December	Char	2
+126	MDCD_FFS_MEDICAL_01	Medicaid - Fee-for-Service Medical Coverage Indicator - January	Num	8
+127	MDCD_ELGBLTY_GRP_CD_01	Medicaid - Eligibility Group Code - January	Char	2
+128	MDCD_ABD_01	Medicaid - Aged, Blind, Disabled Indicator - January	Num	8
+129	MDCD_FFS_MEDICAL_02	Medicaid - Fee-for-Service Medical Coverage Indicator - February	Num	8
+130	MDCD_ELGBLTY_GRP_CD_02	Medicaid - Eligibility Group Code - February	Char	2
+131	MDCD_ABD_02	Medicaid - Aged, Blind, Disabled Indicator - February	Num	8
+132	MDCD_FFS_MEDICAL_03	Medicaid - Fee-for-Service Medical Coverage Indicator - March	Num	8
+133	MDCD_ELGBLTY_GRP_CD_03	Medicaid - Eligibility Group Code - March	Char	2
+134	MDCD_ABD_03	Medicaid - Aged, Blind, Disabled Indicator - March	Num	8
+135	MDCD_FFS_MEDICAL_04	Medicaid - Fee-for-Service Medical Coverage Indicator - April	Num	8
+136	MDCD_ELGBLTY_GRP_CD_04	Medicaid - Eligibility Group Code - April	Char	2
+137	MDCD_ABD_04	Medicaid - Aged, Blind, Disabled Indicator - April	Num	8
+138	MDCD_FFS_MEDICAL_05	Medicaid - Fee-for-Service Medical Coverage Indicator - May	Num	8
+139	MDCD_ELGBLTY_GRP_CD_05	Medicaid - Eligibility Group Code - May	Char	2
+140	MDCD_ABD_05	Medicaid - Aged, Blind, Disabled Indicator - May	Num	8
+141	MDCD_FFS_MEDICAL_06	Medicaid - Fee-for-Service Medical Coverage Indicator - June	Num	8
+142	MDCD_ELGBLTY_GRP_CD_06	Medicaid - Eligibility Group Code - June	Char	2
+143	MDCD_ABD_06	Medicaid - Aged, Blind, Disabled Indicator - June	Num	8
+144	MDCD_FFS_MEDICAL_07	Medicaid - Fee-for-Service Medical Coverage Indicator - July	Num	8
+145	MDCD_ELGBLTY_GRP_CD_07	Medicaid - Eligibility Group Code - July	Char	2
+146	MDCD_ABD_07	Medicaid - Aged, Blind, Disabled Indicator - July	Num	8
+147	MDCD_FFS_MEDICAL_08	Medicaid - Fee-for-Service Medical Coverage Indicator - August	Num	8
+148	MDCD_ELGBLTY_GRP_CD_08	Medicaid - Eligibility Group Code - August	Char	2
+149	MDCD_ABD_08	Medicaid - Aged, Blind, Disabled Indicator - August	Num	8
+150	MDCD_FFS_MEDICAL_09	Medicaid - Fee-for-Service Medical Coverage Indicator - September	Num	8
+151	MDCD_ELGBLTY_GRP_CD_09	Medicaid - Eligibility Group Code - September	Char	2
+152	MDCD_ABD_09	Medicaid - Aged, Blind, Disabled Indicator - September	Num	8
+153	MDCD_FFS_MEDICAL_10	Medicaid - Fee-for-Service Medical Coverage Indicator - October	Num	8
+154	MDCD_ELGBLTY_GRP_CD_10	Medicaid - Eligibility Group Code - October	Char	2
+155	MDCD_ABD_10	Medicaid - Aged, Blind, Disabled Indicator - October	Num	8
+156	MDCD_FFS_MEDICAL_11	Medicaid - Fee-for-Service Medical Coverage Indicator - November	Num	8
+157	MDCD_ELGBLTY_GRP_CD_11	Medicaid - Eligibility Group Code - November	Char	2
+158	MDCD_ABD_11	Medicaid - Aged, Blind, Disabled Indicator - November	Num	8
+159	MDCD_FFS_MEDICAL_12	Medicaid - Fee-for-Service Medical Coverage Indicator - December	Num	8
+160	MDCD_ELGBLTY_GRP_CD_12	Medicaid - Eligibility Group Code - December	Char	2
+161	MDCD_ABD_12	Medicaid - Aged, Blind, Disabled Indicator - December	Num	8
+162	MME_TYPE_CD_01	Medicare - Medicaid Eligibility Type Code - January	Num	8
+163	MME_TYPE_CD_02	Medicare - Medicaid Eligibility Type Code - February	Num	8
+164	MME_TYPE_CD_03	Medicare - Medicaid Eligibility Type Code - March	Num	8
+165	MME_TYPE_CD_04	Medicare - Medicaid Eligibility Type Code - April	Num	8
+166	MME_TYPE_CD_05	Medicare - Medicaid Eligibility Type Code - May	Num	8
+167	MME_TYPE_CD_06	Medicare - Medicaid Eligibility Type Code - June	Num	8
+168	MME_TYPE_CD_07	Medicare - Medicaid Eligibility Type Code - July	Num	8
+169	MME_TYPE_CD_08	Medicare - Medicaid Eligibility Type Code - August	Num	8
+170	MME_TYPE_CD_09	Medicare - Medicaid Eligibility Type Code - September	Num	8
+171	MME_TYPE_CD_10	Medicare - Medicaid Eligibility Type Code - October	Num	8
+172	MME_TYPE_CD_11	Medicare - Medicaid Eligibility Type Code - November	Num	8
+173	MME_TYPE_CD_12	Medicare - Medicaid Eligibility Type Code - December	Num	8
+174	RFRNC_YR	Reference Year	Char	4
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare-Medicaid Linked Enrollee Analytic Data Set (MMLEADS) — Cost and Use Summary File
+August 2021
+File Sequence	Long SAS NAME	Label	Type	Length
+1	BENE_ID	CCW Beneficiary Identifier	Num	8
+2	MSIS_ID	State Assigned Beneficiary Unique Identifier	Char	32
+3	STATE_CD	State Alpha Abbreviation	Char	2
+4	MME_TYPE_CD	Annual Medicare - Medicaid Eligibility Type Code	Num	8
+5	SAMPLE_GRP	Sample Group Indicator - 1%	Num	8
+6	MDCR_TOTAL_FFS_USE	Medicare Use (FFS Claim Count) - Total	Num	8
+7	MDCR_TOTAL_SPEND	Medicare Payment Amount - Total	Num	8
+8	MDCR_TOTAL_FFS_SPEND	Medicare FFS Payment Amount - Total	Num	8
+9	MDCD_TOTAL_USE	Medicaid Use (Claim Count) - Total	Num	8
+10	MDCD_TOTAL_SPEND	Medicaid Payment Amount - Total	Num	8
+11	MDCD_TOTAL_NON_CAPTD_SPEND	Medicaid Payment Amount - Non Capitated Total	Num	8
+12	MDCR_PTA_TOTAL_FFS_USE	Medicare Use (FFS Claim Count) - Part A	Num	8
+13	MDCR_PTA_TOTAL_FFS_SPEND	Medicare FFS Payment Amount - Part A	Num	8
+14	MDCR_HOP_TOTAL_FFS_USE	Medicare Use (FFS Claim Count) - Hospital Outpatient	Num	8
+15	MDCR_HOP_TOTAL_FFS_SPEND	Medicare FFS Payment Amount - Hospital Outpatient	Num	8
+16	MDCR_PTBNI_TOTAL_FFS_USE	Medicare Use (FFS Claim Count) - Part B Non-Institutional	Num	8
+17	MDCR_PTBNI_TOTAL_FFS_SPEND	Medicare FFS Payment Amount - Part B Non-Institutional	Num	8
+18	MDCR_PTD_TOTAL_USE	Medicare Use (Claim Count) - PDE	Num	8
+19	MDCR_PTD_TOTAL_SPEND	Medicare Payment Amount - PDE	Num	8
+20	MDCD_IP_TOTAL_USE	Medicaid Use (Claim Count) - Inpatient	Num	8
+21	MDCD_IP_TOTAL_SPEND	Medicaid Payment Amount - Inpatient	Num	8
+22	MDCD_LT_TOTAL_USE	Medicaid Use (Claim Count) - Long Term Care	Num	8
+23	MDCD_LT_TOTAL_SPEND	Medicaid Payment Amount - Long Term Care	Num	8
+24	MDCD_OT_TOTAL_USE	Medicaid Use (Claim Count) - Other Services	Num	8
+25	MDCD_OT_TOTAL_SPEND	Medicaid Payment Amount - Other Services	Num	8
+26	MDCD_OT_MC_CAPTD_USE	Medicaid Managed Care Capitated Claim Count - Other Services	Num	8
+27	MDCD_OT_MC_CAPTD_SPEND	Medicaid Managed Care Capitated Payment Amount - Other Services	Num	8
+28	MDCD_RX_TOTAL_USE	Medicaid Use (Claim Count) - Rx	Num	8
+29	MDCD_RX_TOTAL_SPEND	Medicaid Payment Amount - Rx	Num	8
+30	MDCR_MC_PTA_PTB_CAPTD_SPEND	Medicare Part A/ Part B Managed Care Capitated Payment Amount	Num	8
+31	MDCR_MC_PTA_PTB_CAPTD_SPEND_01	Medicare PTA/PTB Managed Care Capitated Payment Amount - January	Num	8
+32	MDCR_MC_PTA_PTB_CAPTD_SPEND_02	Medicare PTA/PTB Managed Care Capitated Payment Amount - February	Num	8
+33	MDCR_MC_PTA_PTB_CAPTD_SPEND_03	Medicare PTA/PTB Managed Care Capitated Payment Amount - March	Num	8
+34	MDCR_MC_PTA_PTB_CAPTD_SPEND_04	Medicare PTA/PTB Managed Care Capitated Payment Amount - April	Num	8
+35	MDCR_MC_PTA_PTB_CAPTD_SPEND_05	Medicare PTA/PTB Managed Care Capitated Payment Amount - May	Num	8
+36	MDCR_MC_PTA_PTB_CAPTD_SPEND_06	Medicare PTA/PTB Managed Care Capitated Payment Amount - June	Num	8
+37	MDCR_MC_PTA_PTB_CAPTD_SPEND_07	Medicare PTA/PTB Managed Care Capitated Payment Amount - July	Num	8
+38	MDCR_MC_PTA_PTB_CAPTD_SPEND_08	Medicare PTA/PTB Managed Care Capitated Payment Amount - August	Num	8
+39	MDCR_MC_PTA_PTB_CAPTD_SPEND_09	Medicare PTA/PTB Managed Care Capitated Payment Amount - September	Num	8
+40	MDCR_MC_PTA_PTB_CAPTD_SPEND_10	Medicare PTA/PTB Managed Care Capitated Payment Amount - October	Num	8
+41	MDCR_MC_PTA_PTB_CAPTD_SPEND_11	Medicare PTA/PTB Managed Care Capitated Payment Amount - November	Num	8
+42	MDCR_MC_PTA_PTB_CAPTD_SPEND_12	Medicare PTA/PTB Managed Care Capitated Payment Amount - December	Num	8
+43	MDCR_TOTAL_FFS_USE_01	Medicare FFS Use (Claim Count) - January	Num	8
+44	MDCR_TOTAL_FFS_USE_02	Medicare FFS Use (Claim Count) - February	Num	8
+45	MDCR_TOTAL_FFS_USE_03	Medicare FFS Use (Claim Count) - March	Num	8
+46	MDCR_TOTAL_FFS_USE_04	Medicare FFS Use (Claim Count) - April	Num	8
+47	MDCR_TOTAL_FFS_USE_05	Medicare FFS Use (Claim Count) - May	Num	8
+48	MDCR_TOTAL_FFS_USE_06	Medicare FFS Use (Claim Count) - June	Num	8
+49	MDCR_TOTAL_FFS_USE_07	Medicare FFS Use (Claim Count) - July	Num	8
+50	MDCR_TOTAL_FFS_USE_08	Medicare FFS Use (Claim Count) - August	Num	8
+51	MDCR_TOTAL_FFS_USE_09	Medicare FFS Use (Claim Count) - September	Num	8
+52	MDCR_TOTAL_FFS_USE_10	Medicare FFS Use (Claim Count) - October	Num	8
+53	MDCR_TOTAL_FFS_USE_11	Medicare FFS Use (Claim Count) - November	Num	8
+54	MDCR_TOTAL_FFS_USE_12	Medicare FFS Use (Claim Count) - December	Num	8
+55	MDCR_TOTAL_SPEND_01	Medicare Payment Amount - January	Num	8
+56	MDCR_TOTAL_SPEND_02	Medicare Payment Amount - February	Num	8
+57	MDCR_TOTAL_SPEND_03	Medicare Payment Amount - March	Num	8
+58	MDCR_TOTAL_SPEND_04	Medicare Payment Amount - April	Num	8
+59	MDCR_TOTAL_SPEND_05	Medicare Payment Amount - May	Num	8
+60	MDCR_TOTAL_SPEND_06	Medicare Payment Amount - June	Num	8
+61	MDCR_TOTAL_SPEND_07	Medicare Payment Amount - July	Num	8
+62	MDCR_TOTAL_SPEND_08	Medicare Payment Amount - August	Num	8
+63	MDCR_TOTAL_SPEND_09	Medicare Payment Amount - September	Num	8
+64	MDCR_TOTAL_SPEND_10	Medicare Payment Amount - October	Num	8
+65	MDCR_TOTAL_SPEND_11	Medicare Payment Amount - November	Num	8
+66	MDCR_TOTAL_SPEND_12	Medicare Payment Amount - December	Num	8
+67	MDCD_TOTAL_USE_01	Medicaid Use (Claim Count) - January	Num	8
+68	MDCD_TOTAL_SPEND_01	Medicaid Payment Amount - January	Num	8
+69	MDCD_NON_CAPTD_SPEND_01	Medicaid Non-Capitated Payment Amount - January	Num	8
+70	MDCD_MC_CAPTD_SPEND_01	Medicaid Managed Care Capitated Payment Amount - January	Num	8
+71	MDCD_TOTAL_USE_02	Medicaid Use (Claim Count) - February	Num	8
+72	MDCD_TOTAL_SPEND_02	Medicaid Payment Amount - February	Num	8
+73	MDCD_NON_CAPTD_SPEND_02	Medicaid Non-Capitated Payment Amount - February	Num	8
+74	MDCD_MC_CAPTD_SPEND_02	Medicaid Managed Care Capitated Payment Amount - February	Num	8
+75	MDCD_TOTAL_USE_03	Medicaid Use (Claim Count) - March	Num	8
+76	MDCD_TOTAL_SPEND_03	Medicaid Payment Amount - March	Num	8
+77	MDCD_NON_CAPTD_SPEND_03	Medicaid Non-Capitated Payment Amount - March	Num	8
+78	MDCD_MC_CAPTD_SPEND_03	Medicaid Managed Care Capitated Payment Amount - March	Num	8
+79	MDCD_TOTAL_USE_04	Medicaid Use (Claim Count) - April	Num	8
+80	MDCD_TOTAL_SPEND_04	Medicaid Payment Amount - April	Num	8
+81	MDCD_NON_CAPTD_SPEND_04	Medicaid Non-Capitated Payment Amount - April	Num	8
+82	MDCD_MC_CAPTD_SPEND_04	Medicaid Managed Care Capitated Payment Amount - April	Num	8
+83	MDCD_TOTAL_USE_05	Medicaid Use (Claim Count) - May	Num	8
+84	MDCD_TOTAL_SPEND_05	Medicaid Payment Amount - May	Num	8
+85	MDCD_NON_CAPTD_SPEND_05	Medicaid Non-Capitated Payment Amount - May	Num	8
+86	MDCD_MC_CAPTD_SPEND_05	Medicaid Managed Care Capitated Payment Amount - May	Num	8
+87	MDCD_TOTAL_USE_06	Medicaid Use (Claim Count) - June	Num	8
+88	MDCD_TOTAL_SPEND_06	Medicaid Payment Amount - June	Num	8
+89	MDCD_NON_CAPTD_SPEND_06	Medicaid Non-Capitated Payment Amount - June	Num	8
+90	MDCD_MC_CAPTD_SPEND_06	Medicaid Managed Care Capitated Payment Amount - June	Num	8
+91	MDCD_TOTAL_USE_07	Medicaid Use (Claim Count) - July	Num	8
+92	MDCD_TOTAL_SPEND_07	Medicaid Payment Amount - July	Num	8
+93	MDCD_NON_CAPTD_SPEND_07	Medicaid Non-Capitated Payment Amount - July	Num	8
+94	MDCD_MC_CAPTD_SPEND_07	Medicaid Managed Care Capitated Payment Amount - July	Num	8
+95	MDCD_TOTAL_USE_08	Medicaid Use (Claim Count) - August	Num	8
+96	MDCD_TOTAL_SPEND_08	Medicaid Payment Amount - August	Num	8
+97	MDCD_NON_CAPTD_SPEND_08	Medicaid Non-Capitated Payment Amount - August	Num	8
+98	MDCD_MC_CAPTD_SPEND_08	Medicaid Managed Care Capitated Payment Amount - August	Num	8
+99	MDCD_TOTAL_USE_09	Medicaid Use (Claim Count) - September	Num	8
+100	MDCD_TOTAL_SPEND_09	Medicaid Payment Amount - September	Num	8
+101	MDCD_NON_CAPTD_SPEND_09	Medicaid Non-Capitated Payment Amount - September	Num	8
+102	MDCD_MC_CAPTD_SPEND_09	Medicaid Managed Care Capitated Payment Amount - September	Num	8
+103	MDCD_TOTAL_USE_10	Medicaid Use (Claim Count) - October	Num	8
+104	MDCD_TOTAL_SPEND_10	Medicaid Payment Amount - October	Num	8
+105	MDCD_NON_CAPTD_SPEND_10	Medicaid Non-Capitated Payment Amount - October	Num	8
+106	MDCD_MC_CAPTD_SPEND_10	Medicaid Managed Care Capitated Payment Amount - October	Num	8
+107	MDCD_TOTAL_USE_11	Medicaid Use (Claim Count) - November	Num	8
+108	MDCD_TOTAL_SPEND_11	Medicaid Payment Amount - November	Num	8
+109	MDCD_NON_CAPTD_SPEND_11	Medicaid Non-Capitated Payment Amount - November	Num	8
+110	MDCD_MC_CAPTD_SPEND_11	Medicaid Managed Care Capitated Payment Amount - November	Num	8
+111	MDCD_TOTAL_USE_12	Medicaid Use (Claim Count) - December	Num	8
+112	MDCD_TOTAL_SPEND_12	Medicaid Payment Amount - December	Num	8
+113	MDCD_NON_CAPTD_SPEND_12	Medicaid Non-Capitated Payment Amount - December	Num	8
+114	MDCD_MC_CAPTD_SPEND_12	Medicaid Managed Care Capitated Payment Amount - December	Num	8
+115	MME_TYPE_CD_01	Medicare - Medicaid Eligibility Type Code - January	Num	8
+116	MME_TYPE_CD_02	Medicare - Medicaid Eligibility Type Code - February	Num	8
+117	MME_TYPE_CD_03	Medicare - Medicaid Eligibility Type Code - March	Num	8
+118	MME_TYPE_CD_04	Medicare - Medicaid Eligibility Type Code - April	Num	8
+119	MME_TYPE_CD_05	Medicare - Medicaid Eligibility Type Code - May	Num	8
+120	MME_TYPE_CD_06	Medicare - Medicaid Eligibility Type Code - June	Num	8
+121	MME_TYPE_CD_07	Medicare - Medicaid Eligibility Type Code - July	Num	8
+122	MME_TYPE_CD_08	Medicare - Medicaid Eligibility Type Code - August	Num	8
+123	MME_TYPE_CD_09	Medicare - Medicaid Eligibility Type Code - September	Num	8
+124	MME_TYPE_CD_10	Medicare - Medicaid Eligibility Type Code - October	Num	8
+125	MME_TYPE_CD_11	Medicare - Medicaid Eligibility Type Code - November	Num	8
+126	MME_TYPE_CD_12	Medicare - Medicaid Eligibility Type Code - December	Num	8
+127	RFRNC_YR	Reference Year	Char	4

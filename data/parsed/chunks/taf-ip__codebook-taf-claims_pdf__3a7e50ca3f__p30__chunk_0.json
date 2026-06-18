@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 30,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n19 \nADMTG_DGNS_CD \nLABEL: \nAdmitting Diagnosis Code \nDESCRIPTION: The ICD-9/10-CM diagnosis code provided at the time of admission by the physician. \nSHORT NAME: ADMTG_DGNS_CD \nLONG NAME: ADMTG_DGNS_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nLT header \nVALUES: \nICD9: http://www.cms.gov/Medicare/Coding/ICD9ProviderDiagnosticCodes/codes.htm",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

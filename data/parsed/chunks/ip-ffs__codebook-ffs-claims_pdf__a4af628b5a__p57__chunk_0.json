@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p57__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 57,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n39 \nCARR_LINE_MTUS_CNT \nLABEL: \nCarrier Line Miles/Time/Units/Services (MTUS) Count \nDESCRIPTION: The count of the total units associated with services needing unit reporting such as transportation, \nmiles, anesthesia time units, number of services, volume of oxygen or blood units. \nThis is a line-item field on the carrier claim (non-DMERC) and is used for both allowed and",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

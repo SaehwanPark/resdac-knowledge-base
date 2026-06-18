@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p18__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 18,
+  "text": "CHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field comes from the Claim ACO Identification Number (CLM_ACO_ID_NUM) that is present on \nthe first claim record included in the stay. If there is no CLM_ACO_ID_NUM on the 1st claim, then take \nthe first found on any of the other claims that make up the stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

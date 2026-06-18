@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_189",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Assistance (Subject 25% or more), 03 = Helper - Modified Dependence/Moderate Assistance (Subject 50% or more), 04 = Helper - Modified Dependence/Minimal Assistance (Subject 75% or more), 05 = Helper - Modified Dependence/Supervision (Subject 100%), 06 = No Helper/Modified Independence (Device), 07 = No Helper/Complete Independence (Timely, Safely)\n150 _39RD MEMRY_DSCHRG_CD (39Rd) Social Cognition - Memory: Discharge CHAR 2 A score indicating the patient's ability to remember at discharge.",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

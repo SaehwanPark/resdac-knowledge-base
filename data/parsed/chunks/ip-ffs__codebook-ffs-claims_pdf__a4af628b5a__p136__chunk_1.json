@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p136__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 136,
+  "text": "invalid or missing \n53 = Service from date not numeric or < \n20000801 \n54 = Service from date < provider effective \ndate or service from date > provider \ntermination date\n***End-stage Renal Disease (ESRD) Pricer Return Codes*** \nESRD payment return codes: \n00 = ESRD PPS payment calculated \n01 = ESRD facility rate > zero \nESRD error return codes: \n22 = For ESRD Pricer, it means PPS \nw/acute comorbid, training \n26 = For ESRD Pricer, it means PPS \nw/chronic comorbid, low \nvolume, training \n31 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

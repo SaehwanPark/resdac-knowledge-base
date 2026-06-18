@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_48",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "food consistency\n70 _28A DHYDRTN_ADMSN_SW (28a) Clinical Signs of Dehydration: Admission CHAR 1 A code indicating whether the patient exhibits signs of dehydration at time of admission. 0 = No, 1 = Yes\n71 _28D DHYDRTN_DSCHRG_SW (28d) Clinical Signs of Dehydration: Discharge CHAR 1 A code indicating whether the patient exhibits signs of dehydration at time of discharge. 0 = No, 1 = Yes\n72 _29A BLADR_ASTNC_ADMSN_CD (29a) Bladder Level of Assistance: Admission CHAR 2 A score indicating the level",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

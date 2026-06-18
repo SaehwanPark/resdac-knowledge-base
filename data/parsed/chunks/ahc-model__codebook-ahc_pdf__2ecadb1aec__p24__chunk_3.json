@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p24__chunk_3",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 24,
+  "text": "3-\nyear look back period for the AHC Model). An MSIS_ID was not always obtained. \nWithin the AHC data file, unique beneficiaries are identified using the AHC_BENE_ID. You would only \nuse the BENE_ID or MSIS_ID if you were attempting to link AHC data to other CCW data files. For these \nlinkages, MSIS_ID must be combined with STATE_CD to uniquely identify a beneficiary. The reference \nyear (MSIS_RFRNC_YR) field identifies the earliest year the MSIS_ID was identified during the AHC \nstudy period.",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

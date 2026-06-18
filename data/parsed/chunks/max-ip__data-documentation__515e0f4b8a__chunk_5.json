@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ip__data-documentation__515e0f4b8a__chunk_5",
+  "source_document": "data/raw/html/documentation_page/515e0f4b8a82429031028f6befb46024fb536839.html",
+  "page": null,
+  "text": "| SRVC_BGN_DT | Beginning date of service | \n\n | SRVC_END_DT | Ending date of service | \n\n | DIAG_CD_1 | Principle Diagnosis code | \n\n | ICD_DGNS_VRSN_CD1 | Claim Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10) (Encounter) | \n\n | DIAG_CD_2 | Diagnosis codes (2nd diagnosis) | \n\n | DIAG_CD_3 | Diagnosis codes (3rd diagnosis) | \n\n | DIAG_CD_4 | Diagnosis codes (4th diagnosis) | \n\n | DIAG_CD_5 | Diagnosis codes (5th diagnosis) | \n\n | DIAG_CD_6 | Diagnosis codes (6th diagnosis) | \n\n |",
+  "dataset": "max-ip",
+  "url": "https://resdac.org/cms-data/files/max-ip/data-documentation"
+}

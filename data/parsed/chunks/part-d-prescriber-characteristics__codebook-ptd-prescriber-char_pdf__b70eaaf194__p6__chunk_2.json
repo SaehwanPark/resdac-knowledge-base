@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p6__chunk_2",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 6,
+  "text": "NAME: CCW_PRSCRBR_ID \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE and HCIdea™ Prescriber Database (derived) \nVALUES: \nNull, or any positive or negative number \nCOMMENT: \nThis variable is only available 2006–2013. Beginning with 2014 data, the National Provider Identifier \n(NPI; which appears in the PDE variable called PRSCRBR_ID) is used in place of the CCW_PRSCRBR_ID \nwithin the Prescriber Characteristics file. \nResearchers who received CCW data from 2006–2013 and wish to identify the",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_23",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "non-primary care services for beneficiary 32 Char 200 Populated only for records with Inpatient_stay not equal to missing\nNAME_NPI_IN_NON Name of EP billing most non primary care services in practice Name of eligible professional in practice who billed most non-primary care services for beneficiary 33 Char 200 Populated only for records with Inpatient_stay not equal to missing\nNAME_NPI_OUT_PRIM Name of EP billing most primary care services outside practice Name of eligible professional outside",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

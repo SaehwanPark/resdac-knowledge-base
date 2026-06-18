@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p246__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 246,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n206 \nMFP_QLFYD_RSDNC_CD \nLABEL: \nMoney Follows Person (MFP) — Qualified Residence Code \nDESCRIPTION: A code indicating the type of qualified residence for an eligible MFP Demonstration participant; most \nrecent in the calendar year. \nSHORT NAME: MFP_QLFYD_RSDNC_CD \nLONG NAME: MFP_QLFYD_RSDNC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nMoney Follows the Person \nSOURCE:",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

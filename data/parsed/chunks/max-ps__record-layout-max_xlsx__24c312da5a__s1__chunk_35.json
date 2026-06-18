@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_35",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "(Jun) CHAR 12 X X X X X X X X X X X\n158 EL_PHP_TYPE_1_7 Prepaid plan type-1 (Jul) NUM 2 X X X X X X X X X X X\n159 EL_PHP_ID_1_7 Prepaid plan identifier-1 (Jul) CHAR 12 X X X X X X X X X X X\n160 EL_PHP_TYPE_2_7 Prepaid plan type-2 (Jul) NUM 2 X X X X X X X X X X X\n161 EL_PHP_ID_2_7 Prepaid plan identifier-2 (Jul) CHAR 12 X X X X X X X X X X X\n162 EL_PHP_TYPE_3_7 Prepaid plan type-3 (Jul) NUM 2 X X X X X X X X X X X\n163 EL_PHP_ID_3_7 Prepaid plan identifier-3 (Jul) CHAR 12 X X X X X X X X X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

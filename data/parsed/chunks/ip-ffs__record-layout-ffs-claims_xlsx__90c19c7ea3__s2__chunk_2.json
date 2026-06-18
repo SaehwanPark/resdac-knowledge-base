@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_2",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "6 10\nPRVDR_FULL_CCN_NUM PRVDR_FULL_CCN_NUM Full CMS Certification Number for Provider CHAR 13 179 New5\nFAC_TYPE CLM_FAC_TYPE_CD Claim Facility Type Code CHAR 1 11\nTYPESRVC CLM_SRVC_CLSFCTN_TYPE_CD Claim Service classification Type Code CHAR 1 12\nFREQ_CD CLM_FREQ_CD Claim Frequency Code CHAR 1 13\nFI_NUM FI_NUM FI or MAC Number CHAR 5 14\nNOPAY_CD CLM_MDCR_NON_PMT_RSN_CD Claim Medicare Non Payment Reason Code CHAR 2 15\nPMT_AMT CLM_PMT_AMT Claim (Medicare) Payment Amount NUM 12 16\nPRPAYAMT",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

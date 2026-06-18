@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "Submitting State Entity Code CHAR 2 4\nCLM_ID CCW Claim Identifier CHAR 64 5\nCLM_NUM_ORIG Original Claim Identifier CHAR 50 6\nCLM_NUM_ADJ Adjustment Claim Identifier CHAR 50 7\nCLM_TYPE_CD Claim Type Code CHAR 1 8\nBILL_TYPE_CD Bill Type Code CHAR 4 9\nCROSSOVER_CLM_IND Code To Indicate if a Portion of Claim is Paid by Medicare CHAR 1 10\nADJUST_CD Claim Adjustment Code CHAR 1 11\nADJUST_RSN_CD Adjustment Reason Code CHAR 3 12\nADJDCTN_DT Adjudication Date DATE 8 13\nMDCD_PD_DT Medicaid Paid Date DATE",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

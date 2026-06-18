@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_213",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "1 A code which indicates whether the patient reports one or more episodes of becoming 'breathless' or short of breath (dyspneic), or the patient is observed to be short of breath while at rest (e.g., while sitting, talking) on at least on occasion at the time of admission. 0 = No, 1 = Yes\n174 _49D SOB_REST_DSCHRG_SW (49d) Shortness of Breath At Rest: Discharge CHAR 1 A code which indicates whether the patient reports one or more episodes of becoming 'breathless' or short of breath (dyspneic),",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

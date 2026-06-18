@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "Tabulating Mortality Statistics.\" see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-508.pdf\nICD_CODE_113 113 ICD-10 Cause of Death Recodes CHAR 3 This field is the NDI recode of the ICD-10 Code cause of death into one of 113 categories. The list reflects 113 selected causes of death and enterocolitis due to Clostridium Difficile. Refer to the CDC's \"ICD-10 Cause-of-Death Lists for Tabulating Mortality Statistics.\" see: https://www.cdc.gov/nchs/data/dvs/part9instructionmanual2020-",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

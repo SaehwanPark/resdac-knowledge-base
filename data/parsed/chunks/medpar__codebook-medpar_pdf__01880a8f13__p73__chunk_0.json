@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p73__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 73,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n57 \nCRED_RCVD_RPLCD_DVC_SW \nLABEL: \nCredit Received Replaced Device \nDESCRIPTION: The switch used to identify whether the provider received a credit from the Manufacturer for a replaced \nmedical device. \nSHORT NAME: CRED_RCVD_RPLCD_DVC_SW \nLONG NAME: CRED_RCVD_RPLCD_DVC_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = credit received \nN = no credit received \nCOMMENT: \nIf any claim that",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

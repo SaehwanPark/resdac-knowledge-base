@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p163__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 163,
+  "text": "intelligence (e.g., 2230025803 is the 25,803rd unique \nscreening for the AHC bridge organization B23). \nThe first digit is always 2, then the 2nd and 3rd digits are the numeric portion of the bridge organization \nidentifier (i.e., the “B” from the bridge organization ID is replaced with a “2”). The remaining 6 digits \nare sequential numbers representing unique screenings for each bridge organization. \nCOMMENT: \nBeneficiaries had between one and 95 screenings; these are uniquely identified using",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

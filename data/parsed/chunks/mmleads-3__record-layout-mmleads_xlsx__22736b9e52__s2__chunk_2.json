@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s2__chunk_2",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 2,
+  "text": "Num 8\n11 MDCD_TOTAL_NON_CAPTD_SPEND Medicaid Payment Amount - Non Capitated Total Num 8\n12 MDCR_PTA_TOTAL_FFS_USE Medicare Use (FFS Claim Count) - Part A Num 8\n13 MDCR_PTA_TOTAL_FFS_SPEND Medicare FFS Payment Amount - Part A Num 8\n14 MDCR_HOP_TOTAL_FFS_USE Medicare Use (FFS Claim Count) - Hospital Outpatient Num 8\n15 MDCR_HOP_TOTAL_FFS_SPEND Medicare FFS Payment Amount - Hospital Outpatient Num 8\n16 MDCR_PTBNI_TOTAL_FFS_USE Medicare Use (FFS Claim Count) - Part B Non-Institutional Num 8\n17",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

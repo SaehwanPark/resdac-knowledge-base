@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p43__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 43,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n3 \nACO_MOS \nLABEL: \nAccountable Care Organization (ACO) Months \nDESCRIPTION: Number of months the beneficiary was enrolled in an accountable care organization (ACO) in the \ncalendar year. \nSHORT NAME: ACO_MOS \nLONG NAME: ACO_MOS \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nManaged Care \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0–12 (Number of months)",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

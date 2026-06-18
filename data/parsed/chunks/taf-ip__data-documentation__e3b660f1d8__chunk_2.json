@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_2",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| SPLIT_CLM_IND | Split Claim Indicator | \n\n | 16 | CLL_CNT | Claim Line Count - Original | \n\n | 17 | CLL_CNT_CALC | Claim Line Count - Calculated | \n\n | 18 | PRSN_CLM_IND | Indicator of a Claim for a Person | \n\n | 19 | SRVC_TRKNG_TYPE_CD | Service Tracking Type Code | \n\n | 20 | FED_SRVC_CTGRY_CD | Federally Assigned Service Category Code Added During TAF Production | \n\n | 21 | BIRTH_DT | Date of Birth | \n\n | 22 | PTNT_DSCHRG_STUS_CD | Patient Status at Ending Date of Service | \n\n | 23 |",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

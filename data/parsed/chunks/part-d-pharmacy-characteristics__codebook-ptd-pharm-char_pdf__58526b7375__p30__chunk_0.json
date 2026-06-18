@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p30__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 30,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n25 \nSTATUS_340B_CD \nLABEL: \nCode Indicating the Level of 340B Services Offered \nDESCRIPTION: For pharmacies that indicated they offer some level of 340B service (reference variable called \nSTATUS_340B_IND), this variable identifies the level of 340B services offered. \nSHORT NAME: — \nLONG NAME: STATUS_340B_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n36 = Site has no 340B",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

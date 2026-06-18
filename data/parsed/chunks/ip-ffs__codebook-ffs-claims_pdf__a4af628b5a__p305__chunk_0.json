@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p305__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 305,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n287 \nPRVDR_FULL_CCN_NUM \nLABEL: \nFull CMS Certification Number for Provider \nDESCRIPTION: This variable is the extended CMS Certification Number (CCN). \nThis extended field is designed to allow for the identification of multiple campus hospitals. For multi-\ncampus hospitals, all campuses contain the same first 6-digit CCN (reference PRVDR_NUM variable in \nthis data file), but",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

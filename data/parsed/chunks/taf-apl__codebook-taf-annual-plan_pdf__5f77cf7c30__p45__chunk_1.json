@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p45__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 45,
+  "text": "CHAR \nLENGTH: \n2 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n01 = Risk-based capitation, no incentives or risk-sharing \n02 = Risk-based capitation with Incentive arrangements \n03 = Risk-based capitation with other risk-sharing arrangements \n04 = Non-risk capitation \n05 = Fee-for-service (FFS) \n06 = Primary care case management (PCCM) payment \n07 = Other \n08 = Primary Care Case Management Payment plus Fee-For-Service \nNull/missing = unknown/missing \nCOMMENT: \nThe",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

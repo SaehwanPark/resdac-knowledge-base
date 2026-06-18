@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p9__chunk_1",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 9,
+  "text": "CMS (HPMS files) \nVALUES: \n01 = Physician \n02 = Registered Nurse \n03 = Licensed Practical Nurse \n04 = Nurse Practitioner \n05 = Physician's Assistant \n06 = Local Pharmacist \n07 = LTC Consultant Pharmacist \n08 = Plan Sponsor Pharmacist \n09 = Plan Benefit Manager (PBM) Pharmacist \n10 = MTM Vendor Local Pharmacist \n11 = MTM Vendor In-house Pharmacist \n12 = Hospital Pharmacist \n13 = Pharmacist — other \n14 = Supervised pharmacy intern (new in 2016) \n99 = Other \nNull/missing = beneficiary did not",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

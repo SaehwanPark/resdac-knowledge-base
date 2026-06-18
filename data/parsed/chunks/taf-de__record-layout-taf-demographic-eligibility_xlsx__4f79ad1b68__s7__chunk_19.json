@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s7__chunk_19",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 7,
+  "text": "CHAR 3 80\nCARE_LVL_STUS_CD_12 Level of Care Status Code for LTSS - December CHAR 3 81\nLTSS_PRVDR_ID_1 Long-Term Services and Supports Provider 1 Identification Number - Ltst in Yr CHAR 30 82\nLTSS_LVL_CD_1_01 Long-Term Services & Supports Provider 1 Level of Care Code – January CHAR 1 83\nLTSS_LVL_CD_1_02 Long-Term Services & Supports Provider 1 Level of Care Code – February CHAR 1 84\nLTSS_LVL_CD_1_03 Long-Term Services & Supports Provider 1 Level of Care Code – March CHAR 1 85\nLTSS_LVL_CD_1_04",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

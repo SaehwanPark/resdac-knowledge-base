@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p24__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 24,
+  "text": "pharmacies, \nthere is a maximum of one relationship ID (RELATIONSHIP_ID) and type (RELATIONSHIP_TYPE). When \na relationship was not specified, both the relationship ID and relationship type variables are null \n(missing). \nSHORT NAME: — \nLONG NAME: RELATIONSHIP_ID \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n3-digit alpha numeric or null/missing (relationship n/a) \nCOMMENT: \nA single relationship ID will generally relate to more than one CCW_PHARM_ID (i.e., multiple \npharmacies can",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

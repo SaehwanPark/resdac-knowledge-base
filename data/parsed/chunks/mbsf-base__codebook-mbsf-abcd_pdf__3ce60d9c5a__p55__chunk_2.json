@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p55__chunk_2",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 55,
+  "text": "SGMTID06 \nSGMTID07 \nSGMTID08 \nSGMTID09 \nSGMTID10 \nSGMTID11 \nSGMTID12 \nLONG NAME: \nPTD_SGMT_ID_01 \nPTD_SGMT_ID_02 \nPTD_SGMT_ID_03 \nPTD_SGMT_ID_04 \nPTD_SGMT_ID_05 \nPTD_SGMT_ID_06 \nPTD_SGMT_ID_07 \nPTD_SGMT_ID_08 \nPTD_SGMT_ID_09 \nPTD_SGMT_ID_10 \nPTD_SGMT_ID_11 \nPTD_SGMT_ID_12 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nNull/missing or a three-digit numeric value that includes leading zeros. \nCOMMENT: \nIf the beneficiary did not have a Part D plan for a given",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

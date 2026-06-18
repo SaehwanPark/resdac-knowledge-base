@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p38__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 38,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n25 \nDED_COINS \nLABEL: \nPart D Deductible Coinsurance Percentage \nDESCRIPTION: This variable is the coinsurance percentage beneficiaries are charged by for enhanced alternative \nplans that offer cost sharing during the deductible phase. \nSHORT NAME: — \nLONG NAME: DED_COINS \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n— \nCOMMENT: \nThis variable was new in 2010. \nThe CCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

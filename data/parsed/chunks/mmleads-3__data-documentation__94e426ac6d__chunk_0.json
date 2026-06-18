@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__data-documentation__94e426ac6d__chunk_0",
+  "source_document": "data/raw/html/documentation_page/94e426ac6df090203083bffc9a6b039975585c37.html",
+  "page": null,
+  "text": "| 1 | BENE_ID | CCW Beneficiary ID | \n\n | 2 | MSIS_ID | Encrypted State Assigned Beneficiary Unique Identifier | \n\n | 3 | STATE_CD | Submitting State Alpha Abbreviation | \n\n | 4 | MME_TYPE_CD | Medicare — Medicaid Eligibility Type Code: Annual Dual Eligibility Status | \n\n | 5 | SAMPLE_GRP | Sample Group Indicator — 1% | \n\n | 6 | BIRTH_DT | Date of Birth | \n\n | 7 | AGE | Age (in years) | \n\n | 8 | ALIVE_MOS | Months Alive | \n\n | 9 | BENE_DEATH_DT | Beneficiary Date of Death | \n\n | 10 | SEX_CD |",
+  "dataset": "mmleads-3",
+  "url": "https://resdac.org/cms-data/files/mmleads-3/data-documentation"
+}

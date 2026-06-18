@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_30",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "CHAR 2 157 New2\nRR_BRD_EXCLSN_IND_SW RR_BRD_EXCLSN_IND_SW Railroad Board Exclusion Indicator Switch CHAR 1 158 New2\nCLM_MODEL_REIMBRSMT_AMT CLM_MODEL_REIMBRSMT_AMT Claim Model Reimbursement Amount NUM 12 159 New3\nCLM_ADJUST_GRP_CD CLM_ADJUST_GRP_CD Claim Adjustment Group Code CHAR 2 161 New5\nCLM_ADJUST_RSN_CD CLM_ADJUST_RSN_CD Claim Adjustment Reason Code CHAR 5 162 New5\nESRD_TRTMT_CHS_IND_CD ESRD_TRTMT_CHS_IND_CD End-Stage Renal Disease (ESRD) Treatment Choices Demonstration Indicator Code",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

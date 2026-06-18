@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_577",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Score (Dsch) CHAR 2 This column documents the total mood score by adding the frequencies documented in the questions above at the time of discharge. 00 = Minimum Total Severity Score \n27 = Maximum Total Severity Score \n99 = Patient was unable to complete the interview \n- = Not Assessed/No Information\n514 SCL_ISLTN_ADMSN_CD SCL_ISLTN_ADMSN_CD Social Isolation (Adm) CHAR 1 This column documents, at the time of admission, how often the patient feels lonely or isolated from those around them. 0 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

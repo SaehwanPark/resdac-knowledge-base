@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_9",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "8 X X X\n51 DIAG_CD_9 Diagnosis codes (9th diagnosis) CHAR 8 X X X\n52 PRNCPL_PRCDR_DT Principal procedure date DATE 8 X X X\n53 PRCDR_CD_SYS_1 Procedure code system- principal CHAR 2 X X X\n54 PRCDR_CD_1 Principal procedure code CHAR 8 X X X\n55 PRCDR_CD_SYS_2 Procedure code system (2nd procedure) CHAR 2 X X X\n56 PRCDR_CD_2 Procedure code (2nd procedure) CHAR 8 X X X\n57 PRCDR_CD_SYS_3 Procedure code system (3rd procedure) CHAR 2 X X X\n58 PRCDR_CD_3 Procedure code (3rd procedure) CHAR 8 X X X\n59",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

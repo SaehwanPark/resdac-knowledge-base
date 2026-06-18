@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_713",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Recent Surgery Requiring Active SNF Care CHAR 1 Indicates whether the resident had a major surgical procedure during the prior inpatient hospital stay that requires active care during the SNF stay. 0 = No \n1 = Yes\n8 = Unknown effective 10/01/2019\n770 J2300_KNEE_RPLCMT_IND J2300_KNEE_RPLCMT_IND J2300 Knee Replacement - Partial or Total CHAR 1 Knee Replacement - partial or total requiring SNF service.\n771 J2310_HIP_RPLCMT_IND J2310_HIP_RPLCMT_IND J2310 Hip Replacement - Partial or Total CHAR 1",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

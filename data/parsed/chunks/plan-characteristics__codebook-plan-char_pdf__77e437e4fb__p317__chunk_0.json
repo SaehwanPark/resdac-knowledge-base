@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p317__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 317,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n303 \nREGION_NAME \nLABEL: \nSegment Region Name \nDESCRIPTION: This variable is the stand-alone prescription drug plan (PDP) or Medicare Advantage Prescription Drug \nplan (MA-PD) region name in which the plan benefit package provides coverage. Applies only to stand-\nalone PDPs and regional Medicare. \nTYPE: \nCHAR \nLENGTH: \n120 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT:",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

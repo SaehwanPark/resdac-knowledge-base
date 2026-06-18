@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__chunk_0",
+  "source_document": "data/raw/html/dataset_page/836dbe353b499896051544d2545edd5f19a6106e.html",
+  "page": null,
+  "text": "The Medicare Provider Analysis and Review (MedPAR) file contains information about inpatient (IP) hospital and skilled nursing facility (SNF) stays that were covered by Medicare. MedPAR records are created by rolling up information for a single stay from individual IP and SNF claims. The data on these claims was originally submitted on the CMS 1450 or UB04.\nThis file includes (variable highlights)\n- Diagnosis (ICD diagnosis),\n- Procedure (ICD procedure code)\n- Admission, discharge dates or end",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar?page=1"
+}

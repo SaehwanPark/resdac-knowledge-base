@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p5__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 5,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n1 \nVariable Details \nThis section of the codebook contains one entry for each variable in Medicare Part D Medication Therapy \nManagement Enrollment file. Each entry contains variable details to facilitate understanding and use of the variables. \nBENE_ID \nLABEL: \nEncrypted CCW Beneficiary ID \nDESCRIPTION: The unique CCW identifier for a beneficiary. The",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

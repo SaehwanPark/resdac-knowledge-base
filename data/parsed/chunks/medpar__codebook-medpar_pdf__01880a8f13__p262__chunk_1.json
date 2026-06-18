@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p262__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 262,
+  "text": "with their Total \nPerformance Score (TPS) as required by the Affordable Care Act (ACA). This is the Value Based \nPurchasing Score. \nSHORT NAME: VBP_ADJSTMT_PCT \nLONG NAME: VBP_ADJSTMT_PCT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \nX.XXXXXXXXXXXX \nCOMMENT: \nThis field comes from the Claim VBP Adjustment Percent (CLM-VBP-CLM-ADJSTMT-PCT) that is present \non the last claim record included in the stay. \nThe Affordable Care Act (ACA; Section 3001) excludes from HVBP program hospitals that meet",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

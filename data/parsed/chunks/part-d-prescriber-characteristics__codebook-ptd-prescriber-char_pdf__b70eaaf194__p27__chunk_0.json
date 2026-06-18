@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-prescriber-characteristics__codebook-ptd-prescriber-char_pdf__b70eaaf194__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/b70eaaf19460c5ee9e1883b905ce7befb8a5cc2f.pdf",
+  "page": 27,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n22 \nPRIMARY_TAXONOMY_DESC \nLABEL: \nPrimary Taxonomy Code Description for Part D Prescribers \nDESCRIPTION: This is the description of the taxonomy code for the prescriber. This field allows researchers to better \nunderstand the type of provider who prescribed the medication (e.g., by knowing the type of provider \nand his/her specialty). \nSHORT NAME: — \nLONG NAME: PRIMARY_TAXONOMY_DESC \nTYPE:",
+  "dataset": "part-d-prescriber-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-prescriber-char.pdf"
+}

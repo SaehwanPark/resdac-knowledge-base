@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s3__chunk_43",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 3,
+  "text": "OOP_days_innpp_os Post-OOP Threshold In-Network Non-Preferred Pharmacy number of days in other day supply Num 5 Post out-of-pocket threshold (catastrophic) phase: in-network non-preferred pharmacy number of days in other supply.\n78 OOP_days_oonp_1m Post-OOP Threshold Out-of-Network Pharmacy number of days in one month supply Num 5 Post out-of-pocket threshold (catastrophic) phase: out-of-network pharmacy number of days in 1 month supply.\n79 OOP_days_oonp_3m Post-OOP Threshold Out-of-Network",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s6__chunk_1",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 6,
+  "text": "Abbreviation CHAR 2 3\nSUBMTG_STATE_CD Submitting State Entity Code CHAR 2 4\nHLTH_HOME_PRVDR_ID Hlth Home Provider Identification Number - Ltst in Yr CHAR 30 5\nHLTH_HOME_ENT_NAME Hlth Home Entity Name - Ltst in Yr CHAR 100 6\nHLTH_HOME_MH_CC_IND Hlth Home Mental Hlth State-Reported Chronic Condition Ind - Ltst in Yr CHAR 1 7\nHLTH_HOME_SUD_CC_IND Hlth Home Substance Abuse Disorders St-Rprtd Chronic Condition Ind - Ltst in Yr CHAR 1 8\nHLTH_HOME_ASTHMA_CC_IND Hlth Home Asthma State-Reported Chronic",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

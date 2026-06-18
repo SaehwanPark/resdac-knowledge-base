@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p263__chunk_2",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 263,
+  "text": "= County/Local Government Claims Payment System \n10 = Other Vendor/Other Claims Payment System \n20 = Managed Care Organization (MCO) \n22 = Sub-contracted entity \n23 = Sub-capitated network provider \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis field is new, starting with the 2023 service year. It is not populated in earlier years. \n\nFor sub-capitated encounters from a sub-capitated entity that is not a sub-capitated network provider, \nstates are instructed to report a value",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

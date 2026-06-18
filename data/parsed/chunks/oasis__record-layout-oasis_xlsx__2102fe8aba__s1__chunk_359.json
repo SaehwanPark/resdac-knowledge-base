@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_359",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "whether the physician-ordered plan of care includes pressure ulcer treatment based on principles of moist wound healing OR order for treatment based on moist wound healing has been requested from physician. 00 = No\n01 = Yes\nNA = Not Applicable CHAR 2 x x x x\nM2250_PLAN_SMRY_PRSULC_PRVNT M2250 Plan of Care Synopsis- Pressure Ulcer Prevention This field indicates whether the physician-ordered plan of care includes interventions to prevent pressure ulcers. 00 = No\n01 = Yes\nNA = Not Applicable CHAR",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

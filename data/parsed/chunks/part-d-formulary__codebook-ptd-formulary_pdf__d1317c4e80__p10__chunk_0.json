@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p10__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 10,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n6 \nFRMLRY_RX_ID \nLABEL: \nCCW Formulary Drug Identifier \nDESCRIPTION: This variable is a CCW-created identifier for a drug product that is found in a Part D prescription drug \nplan's formulary. Part D Plans submit their formularies to CMS and identify drug products using the \nNational Library of Medicine RxNorm Concept Unique Identifiers (RXCUIs). There can be several drug",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

@@ -1,0 +1,7 @@
+The HEDIS Measures file is a person-level file that includes information about all HEDIS measures, except the Plan All-Cause Readmission measure, which is included in HEDIS File 2. It represents beneficiaries enrolled in each MA plan/contract during the year. The file contains indicator variables for whether the beneficiary met the denominator and numerator requirements for each of the HEDIS measures, as well as weights for some measures.
+What does this file include? (variable highlights)
+- Colorectal cancer screening
+- Comprehensive diabetes care (multiple measures)
+- High risk medication usage
+Each record represents the experience of a beneficiary in a specific plan for the calendar year (CY). Beneficiaries enrolled in more than one plan during the CY will have multiple records in this file.
+Beneficiaries can be linked to other beneficiary data via the BENE_ID and to plan information via the HEDIS_CONTRACT_ID and HEDIS_PLAN_ID variables.

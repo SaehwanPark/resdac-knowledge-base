@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p41__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 41,
+  "text": "MC_PLAN_OPRTG_AUTH_ACTV_IND_10 \nMC_PLAN_OPRTG_AUTH_ACTV_IND_11 \nMC_PLAN_OPRTG_AUTH_ACTV_IND_12 \nLABEL: \nManaged Care Plan Operating Authority and/or Waiver ID Active Indicator — January through \nDecember \nDESCRIPTION: A flag to indicate the operating authority and/or waiver ID specified in the \nMC_PLAN_OPRTG_AUTHRTY_CD and MC_PLAN_WVR_ID variable(s) was active in the given month. \nEach of 12 months. \nSHORT NAME: \nMC_PLAN_OPRTG_AUTH_ACTV_IND_01 \nMC_PLAN_OPRTG_AUTH_ACTV_IND_02",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "2 Final = 12 month reference year x x x x - - - - - - -\nFINAL_PTD_ELIG_MONTHS Part D Eligibile Months Number of months of Part D eligibility (BENE_PTD_STUS_CD not null) in calendar year 2016; values from 0-12 NUM 2 12 month reference year x x x x x x x x x x x\nBIRTH_DT Date of Birth Most current date of birth in Medicare records (BENE_BRTH_DT) DATE 8 x x x x x x x x x x x\nDEATH_DT Date of Death Most current date of death in Medicare records (BENE_DEATH_DT) DATE 8 x x x x x x x x x x x\nSEX_CD2",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

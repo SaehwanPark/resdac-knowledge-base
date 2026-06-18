@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s4__chunk_16",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 4,
+  "text": "CLM_PRCR_RTRN_CD Claim Pricer Return Code CHAR 2 89\nCLM_PRCR_VRSN_CD CLM_PRCR_VRSN_CD Claim Pricer Version Code CHAR 10 106 New5\nCLM_SRVC_FAC_ZIP_CD CLM_SRVC_FAC_ZIP_CD Claim service facility ZIP code (where service was provided) CHAR 9 90\nCLM_NEXT_GNRTN_ACO_IND_CD1 CLM_NEXT_GNRTN_ACO_IND_CD1 Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP) CHAR 1 91\nCLM_NEXT_GNRTN_ACO_IND_CD2 CLM_NEXT_GNRTN_ACO_IND_CD2 Claim Next Generation (NG)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

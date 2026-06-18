@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_173",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Unknown. CHAR 1 x x\nM0840_ECR_INJURY (M0840) Injury Caused by Fall/Accident Emergent Care Reason: injury caused by fall or accident at home. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_NAUSEA (M0840) Nausea/Dehydration/Malnutrition/Constipation/Impaction Emergent Care Reason: nausea, dehydration, malnutrition, constipation, impaction. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_OTHER (M0840) Other than Above Reasons for Emergent Care Emergent Care Reason: other than",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

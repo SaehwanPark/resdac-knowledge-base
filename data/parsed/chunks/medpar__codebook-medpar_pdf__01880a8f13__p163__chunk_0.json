@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p163__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 163,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n147 \nNCH_CLM_TYPE_CD \nLABEL: \nNCH Claim Type Code \nDESCRIPTION: The code used to identify the type of claim record being processed in NCH. \nSHORT NAME: CLM_TYPE \nLONG NAME: NCH_CLM_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n20 = Medicare Non-Swing Bed Skilled Nursing Facility (SNF) Claim \n30 = Medicare Swing Bed SNF Claim \n60 = Medicare Inpatient Claim \n61 = Medicare Inpatient Full",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

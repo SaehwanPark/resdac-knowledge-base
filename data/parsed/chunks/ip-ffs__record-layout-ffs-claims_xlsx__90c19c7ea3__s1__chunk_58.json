@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_58",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "CHAR 2 17\nRNDRNG_PHYSN_UPIN RNDRNG_PHYSN_UPIN Revenue Center Rendering Physician UPIN CHAR 12 18\nRNDRNG_PHYSN_NPI RNDRNG_PHYSN_NPI Revenue Center Rendering Physician NPI CHAR 12 19\nRNDRNG_PHYSN_SPCLTY_CD RNDRNG_PHYSN_SPCLTY_CD Revenue Center Rendering Physician Specialty Code CHAR 2 20\nIDENDC REV_CNTR_IDE_NDC_UPC_NUM Revenue Center IDE, NDC, or UPC Number CHAR 24 21\nREV_CNTR_PRCNG_IND_CD REV_CNTR_PRCNG_IND_CD Revenue Center Pricing Indicator Code CHAR 2 22\nTHRPY_CAP_IND_CD1 THRPY_CAP_IND_CD1",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

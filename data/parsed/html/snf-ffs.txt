@@ -1,0 +1,8 @@
+The Original Medicare Fee-for-Service (FFS) Skilled Nursing Facility (SNF) file contains information from paid bills submitted by SNF institutional facility providers. Skilled nursing care is the only level of nursing home care that is covered by the Medicare program.
+The information on the file records is based on the CMS form 1450 (UB04).
+What does this file include? (variable highlights)
+- Diagnosis codes (ICD diagnosis)
+- Procedure codes (ICD procedure)
+- Admission/discharge dates
+- FFS Reimbursement amount
+- SNF provider number

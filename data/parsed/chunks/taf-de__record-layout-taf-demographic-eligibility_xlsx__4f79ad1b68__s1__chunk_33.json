@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "- November CHAR 2 148\nMC_PLAN_TYPE_CD_12 Managed Care Plan Type Code (Using Hierarchy) - December CHAR 2 149\nMRTL_STUS_CD Marital Status Code - Ltst in Yr CHAR 2 150\nHSEHLD_SIZE_CD Household Size Used To Determine Medicaid or CHIP Eligibility - Ltst in Yr CHAR 2 151\nINCM_CD Income Relative to the Federal Poverty Level - Ltst in Yr CHAR 2 152\nFPL_PCT Beneficiary's household income as a percentage of the federal poverty level NUM 3 202 New2\nVET_IND Veteran Ind - Ltst in Yr CHAR 1 153\nCTZNSHP_IND",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

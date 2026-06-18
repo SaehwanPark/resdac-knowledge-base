@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "CHAR 1 This field specifies whether enrollee was dually enrolled in Medicare & Medicaid during the year, or enrolled only in Medicaid. CCW attempted to link each person (BENE_ID) who had a returned NDI record to both the Medicare and Medicaid enrollment data. Those with a match to both are classified as dually enrolled. Values:\nD=person was dually enrolled\nM=person was Medicaid only (not dual)\nDEATH_DT Date of Death NUM 8 This field indicates the date of death of the enrollee according to the",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

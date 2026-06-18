@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_479",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "WITHOUT hospital admission\n02 = Yes, used hospital emergency department WITH hospital admission\nUK = Unknown CHAR 2 x x x\nM2401_INTRVTN_SMRY_DBTS_FT M2401 Intervention Synopsis - Diabetic Foot Care Diabetic foot care including monitoring for the presence of skin lesions on the lower extremities and patient/caregiver education on proper foot care 00 = No\n01 = Yes\nNA = Patient is not diabetic or is missing lower legs due to congenital or acquired condition (bilateral amputee) CHAR 2 x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p81__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 81,
+  "text": "the sum of the beneficiary \ndeductible amount and coinsurance amount (variables called NCH_BENE_IP_DDCTBL_AMT and \nNCH_BENE_PTA_COINSRNC_LBLTY_AM) for all SNF claims where the CLM_PMT_AMT >= 0. \nSHORT NAME: — \nLONG NAME: SNF_BENE_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nCosts that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a \nCMS publication called \"Your Medicare Benefits,” which explains the deductibles and",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

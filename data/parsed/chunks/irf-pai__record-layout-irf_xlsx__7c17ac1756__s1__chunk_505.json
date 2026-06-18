@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_505",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "No\n1 = Yes\n438 TRNSPRTN_NO_DSCHRG_CD TRNSPRTN_NO_DSCHRG_CD Transportation: No (Dsch) CHAR 1 This column documents that lack of transportation has not kept the patient from attending medical appointments, meetings, work or from getting things needed for daily living at the time of admission. 0 = No\n1 = Yes\n439 TRNSPRTN_NO_RSPNS_ADMSN_CD TRNSPRTN_NO_RSPNS_ADMSN_CD Transportation: Patient unable to respond (Adm) CHAR 1 This column documents that at the time of admission the patient was unable to",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

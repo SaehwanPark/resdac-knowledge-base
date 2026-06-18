@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-beneficiary__record-layout-next-generation_xlsx__486207168f__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/486207168fb11df3830f1b952de1d345767ec72c.xlsx",
+  "page": 2,
+  "text": "National Provider Identifier (NPI) for Organization CHAR 10\nORG_CCN CMS Certification Number CHAR 6\nIND_NPI National Provider Identifier (NPI) for Practitioner CHAR 10\nORG_NAME Legal Business Name Associated with the ACO Participant TIN CHAR 70\nLAST_NAME Last Name of Provider Associated with the NPI CHAR 25\nFIRST_NAME First Name of Provider Associated with the NPI CHAR 19\nCCN_TYPE CCN Facility Type CHAR 1\nPCP_FLAG Primary Care Practitioner Indicator (Note: N/A for Preferred Providers) CHAR 1",
+  "dataset": "ngaco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-next-generation.xlsx"
+}

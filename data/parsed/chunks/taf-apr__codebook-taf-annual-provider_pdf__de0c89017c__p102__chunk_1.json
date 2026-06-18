@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p102__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 102,
+  "text": "CHAR \nLENGTH: \n30 (prior to the 2023 file, the length was 12) \nFILE(S): \nAPR Affiliated Groups \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nalphanumeric character string (e.g., A1233445, 758002). \nCOMMENT: \nThe submitting state's unique identifier for the group. The group will also appear in the provider data \nset as a provider (i.e., the group-as-a-provider). \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

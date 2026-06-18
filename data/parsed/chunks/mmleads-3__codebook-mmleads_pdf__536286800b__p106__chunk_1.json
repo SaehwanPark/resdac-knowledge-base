@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p106__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 106,
+  "text": "for the month if there is not a Medicare long-term care hospital or skilled \nnursing facility claim. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMinimum Data Set (MDS) (derived) \nVALUES: \n1–12, or null/missing (if no Medicare enrollment) \nCOMMENT: \nCCW creates a Medicare Timeline file to identify the type of facility or level of acuity of care received \nby the beneficiary each day. Using CMS rules, CCW employs a hierarchy of claims and MDS assessment \ndata. If the beneficiary does not have Medicare",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

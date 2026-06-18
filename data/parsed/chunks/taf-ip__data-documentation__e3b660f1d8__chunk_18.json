@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_18",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "| Referring Provider Type Code | \n\n | 117 | RFRG_PRVDR_SPCLTY_CD | Referring Provider Specialty Code | \n\n | 118 | PRVDR_LCTN_CD | Provider Location Code | \n\n | 119 | BRDR_STATE_IND | Border State Indicator | \n\n | 120 | IP_MH_TXNMY_IND | Mental Health Provider Taxonomy Indicator | \n\n | 121 | IP_SUD_TXNMY_IND | Substance Use Disorder Provider Taxonomy Indicator | \n\n | 122 | NCVRD_DAYS | Medicaid Non-covered Days Count | \n\n | 123 | CVRD_DAYS | Medicaid Covered Inpatient Days Count | \n\n | 124 |",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

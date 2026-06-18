@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p94__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 94,
+  "text": "creates this variable using the MBSF. We consider the beneficiary to have Medicare Advantage \n(also referred to as health maintenance organization [HMO]) coverage if the beneficiary had Medicare \nenrollment for the month, and the monthly beneficiary HMO (Medicare Advantage) indicator code \nwas a value other than '0' (Not a member of an HMO) or '4' (Fee-for-service participant in case or \ndisease management demonstration project) (i.e., BENE_HMO_IND_MM NOT IN ('0' '4'). \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

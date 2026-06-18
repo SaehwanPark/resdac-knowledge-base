@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_102",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "TOS 11) NUM 6 X X X X X X X X X X X\n471 FFS_PYMT_AMT_11 Medicaid payment amount (MAX TOS 11) NUM 12 X X X X X X X X X X X\n472 FFS_CHRG_AMT_11 Charge amount (MAX TOS 11) NUM 12 X X X X X X X X X X X\n473 FFS_TP_AMT_11 Third party payment amount (MAX TOS 11) NUM 12 X X X X X X X X X X X\n474 ENCTR_REC_CNT_11 Encounter record count (MAX TOS 11) NUM 5 X X X X X X X X X X X\n475 FEE_FOR_SRVC_IND_12 Recipient indicator (MAX TOS 12 - clinic) CHAR 1 X X X X X X X X X X X\n476 FFS_CLM_CNT_12 Claim count",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

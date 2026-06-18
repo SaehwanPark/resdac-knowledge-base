@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p66__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 66,
+  "text": "is \npart of two different step therapy protocols, this field is populated with the maximum step value for \nthe product. If the value is greater than 1, then the beneficiary’s plan imposed some type of step \ntherapy requirement, and the value indicates the number of steps or therapy trials needed before \nbecoming eligible for the current drug. \nStarting in 2010, this variable is included in the formulary file (rather than the PDE file). \nSHORT NAME: STEP \nLONG NAME: STEP \nTYPE: \nCHAR \nLENGTH: \n2",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

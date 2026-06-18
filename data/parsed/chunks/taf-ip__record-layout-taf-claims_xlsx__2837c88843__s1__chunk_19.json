@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "2 121\nDRG_OUTLIER_AMT DRG Outlier Additional Payment Amount NUM 8 122\nFIXD_PYMT_IND Fixed Payment Indicator CHAR 1 123\nSRVC_TRKNG_PYMT_AMT Service Tracking Payment Amount NUM 8 124\nDRG_RLTV_WT DRG Relative Weight NUM 8 125\nPYMT_LVL_IND Payment Level Indicator - Header or Line CHAR 1 126\nBILLED_AMT Total Claim Billed Amount NUM 8 127\nNCVRD_CHRG_AMT Noncovered Charges Amount NUM 8 128\nMDCD_ALOWD_AMT Total Medicaid Allowed Amount NUM 8 129\nMDCD_PD_AMT Total Amount Paid By Medicaid NUM 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_38",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "reason for assessment. = Space, - = Unknown, 1 = Medicare 5 day assessment, 2 = Medicare 30 day assessment, 3 = Medicare 60 day assessment, 4 = Mediare 90 day assessment, 5 = Medicare readmission/return assessment, 6 = Other state required assessment, 7 = Medicare 14 day assessment, 8 = Other Medicare required assessment\n74 AB1 AB1_ENTRY_DT (AB1) Date of Entry DATE 8 Demographic informaiton: date of entry - date the stay began.\n75 AB2 AB2_ADMIT_FROM (AB2) Admitted From CHAR 1 Demographic",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

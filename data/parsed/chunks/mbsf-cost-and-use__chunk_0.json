@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__chunk_0",
+  "source_document": "data/raw/html/dataset_page/7552ff2238b2b2e9031180b3717bf5761986387c.html",
+  "page": null,
+  "text": "The Master Beneficiary Summary File (MBSF) Cost and Use segment includes one record for each beneficiary enrolled in Medicare in the calendar year of the file.\nWhat does this file include? (variable highlights)\n- Summary of utilization and total annual payments for services such as:\n- Number of hospital stays, Medicare covered days and total annual inpatient payments for services covered by FFS Medicare\n- Summary of Part D payments, events and prescription fills\nThis file is a segment that can",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://resdac.org/cms-data/files/mbsf-cost-and-use"
+}

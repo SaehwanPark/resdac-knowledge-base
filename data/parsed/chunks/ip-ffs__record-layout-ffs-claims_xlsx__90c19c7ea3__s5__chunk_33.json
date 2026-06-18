@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_33",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Code CHAR 5 9\nREVANSI3 REV_CNTR_3RD_ANSI_CD Revenue Center 3rd ANSI Code CHAR 5 10\nREVANSI4 REV_CNTR_4TH_ANSI_CD Revenue Center 4th ANSI Code CHAR 5 11\nAPCHIPPS REV_CNTR_APC_HIPPS_CD Revenue Center APC or HIPPS Code CHAR 5 12\nHCPCS_CD HCPCS_CD HCFA Common Procedure Coding System (HCPCS) Code CHAR 5 13\nMDFR_CD1 HCPCS_1ST_MDFR_CD HCPCS Initial Modifier Code CHAR 5 14\nMDFR_CD2 HCPCS_2ND_MDFR_CD HCPCS Second Modifier Code CHAR 5 15\nMDFR_CD3 HCPCS_3RD_MDFR_CD HCPCS Third Modifier Code CHAR 5",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

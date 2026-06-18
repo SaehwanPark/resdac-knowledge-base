@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_49",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "into the facility.\n77 A1700_ENTRY_TYPE_CD A1700_ENTRY_TYPE_CD A1700 Type of Entry Code CHAR 1 This data in this column identifies the type of entry - admission or reentry. 1=Admission\n2=Reentry\n78 A1800_ENTRD_FROM_TXT A1800_ENTRD_FROM_TXT A1800 Entered From Code CHAR 2 The data in this column identifies from where the resident was admitted. 01=Community (private home/apt.,board/care,assisted living, group home)\n02=Another nursing home or swing bed\n03=Acute hospital\n04=Psychiatric",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

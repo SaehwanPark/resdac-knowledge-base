@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p6__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 6,
+  "text": "DESCRIPTION: This is the CCW-assigned pharmacy identification number used to uniquely identify pharmacy entities. \nThe ID is specific to the CCW and not applicable to any other identification system or data source. \nThis field also enables linkage between pharmacies in the Part D Event file and the CCW Pharmacy \nCharacteristics file. \nSHORT NAME: — \nLONG NAME: CCW_PHARM_ID \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE and NCDPD DataQ™ (derived) \nVALUES: \nNull/missing, or a 5-digit numeric value",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

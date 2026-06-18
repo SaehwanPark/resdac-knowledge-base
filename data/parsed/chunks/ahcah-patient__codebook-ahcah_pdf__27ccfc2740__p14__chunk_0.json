@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 14,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n9 \nMORTALITIES \nLABEL: \nCount of AHCAH Mortalities During the Data Submission Period \nDESCRIPTION: The number of patients served by the hospital at home program who died during the data submission \nperiod, including those whose care was escalated to the hospital (excluding those on hospice or those \nfor whom death was expected). \nSHORT NAME:",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

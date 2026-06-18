@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p205__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 205,
+  "text": "ICD_DGNS_VRSN_CD15 \nICD_DGNS_VRSN_CD16 \nICD_DGNS_VRSN_CD17 \nICD_DGNS_VRSN_CD18 \nICD_DGNS_VRSN_CD19 \nICD_DGNS_VRSN_CD20 \nICD_DGNS_VRSN_CD21 \nICD_DGNS_VRSN_CD22 \nICD_DGNS_VRSN_CD23 \nICD_DGNS_VRSN_CD24 \nICD_DGNS_VRSN_CD25 \nLABEL: \nClaim Diagnosis Code Version Code (ICD-9 or ICD-10) \nDESCRIPTION: Effective with version “J,” the code used to indicate if the diagnosis code is ICD-9/ICD-10. \nSHORT NAME: \nICD_DGNS_VRSN_CD1 \nICD_DGNS_VRSN_CD2 \nICD_DGNS_VRSN_CD3 \nICD_DGNS_VRSN_CD4 \nICD_DGNS_VRSN_CD5",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

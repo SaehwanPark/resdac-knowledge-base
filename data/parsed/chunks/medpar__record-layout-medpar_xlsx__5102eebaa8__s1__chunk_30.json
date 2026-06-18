@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X X X X X X X X X\nMRI_AMT MRI_CHRG_AMT Magnetic resonance imaging (MRI) charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nOPSRVC OP_SRVC_CHRG_AMT Outpatient service charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nER_AMT ER_CHRG_AMT Emergency room (ER) charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nAMBLNC AMBLNC_CHRG_AMT Ambulance charge amount ($) Num 8 X X X X X X X X X X X X X X X X X X\nPROFFEES PROFNL_FEES_CHRG_AMT Professional fees charge",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

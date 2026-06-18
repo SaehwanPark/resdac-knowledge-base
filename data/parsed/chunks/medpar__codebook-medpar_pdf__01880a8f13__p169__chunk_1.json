@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p169__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 169,
+  "text": "1 \nSOURCE: \nMedPAR (derived) \nVALUES: \n0 = No outpatient services/ambulatory surgical care (revenue code other than 049X, 050X) \n1 = Outpatient services (revenue code 050X) \n2 = Ambulatory surgical care (revenue code 049X) \n3 = Outpatient services and ambulatory surgical care (revenue codes 049X and 050X) \nCOMMENT: \nThis field is derived by checking for the presence of the outpatient services revenue center codes (049X, \n050X) on any of the claim records included in the stay. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

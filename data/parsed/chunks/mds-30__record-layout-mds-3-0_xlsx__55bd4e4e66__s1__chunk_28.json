@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_28",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "assessment\n05=90-day scheduled assessment\n06=Readmission/return assessment\n07=Unscheduled assessment used for PPS (OMRA, significant or clinical change, or significant correction assessment)\n08=IPA - Interim Payment Assessment\n99=None of the above\n46 A0310C_PPS_OMRA_CD A0310C_PPS_OMRA_CD A0310C PPS Other Medicare Required Assessment (OMRA) Code CHAR 1 This column contains the PPS Other Medicare Required Assessment value. 0=No\n1=Start of therapy assessment\n2=End of therapy assessment\n3=Both",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

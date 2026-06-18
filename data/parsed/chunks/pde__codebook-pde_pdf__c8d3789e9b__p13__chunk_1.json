@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p13__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 13,
+  "text": "identification system or \ndata source. \nThis field also enables linkage between the Part D Event file and the CCW prescriber characteristics \nfile. This variable is only available 2006–2013. \nSHORT NAME: CCW_PRSCRBR_ID \nLONG NAME: CCW_PRSCRBR_ID \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE and HCIdea™ Prescriber Database (derived) \nVALUES: \nNull, or any positive or negative number \nCOMMENT: \nBeginning with 2014 data, this variable has been retired and researchers may obtain both the actual",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

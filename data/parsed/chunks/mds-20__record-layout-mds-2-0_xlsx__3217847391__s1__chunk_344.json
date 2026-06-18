@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_344",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Drug Use Care Planning Decision CHAR 1 RAP summary: psychotropic drug use - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n584 VA18A VA18A_RESTRAINT_TR (VA18A) Physical Restraints Triggered CHAR 1 RAP summary: physical restraints - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n585 VA18B VA18B_RESTRAINT_PC (VA18B) Physical Restraints Care Planning Decision CHAR 1 RAP summary: physical restraints -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

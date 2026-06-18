@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_262",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "2 NUM 22 This indicates the total number of co-treatment physical therapy minutes provided in the second week of stay.\n244 INDVDL_OT_WK_2_NUM INDVDL_OT_WK_2_NUM O0402BA OT: Total Minutes Individual Therapy Week 2 NUM 22 This indicates the total number of individual occupational therapy minutes provided in the second week of stay.\n245 CNCRNT_OT_WK_2_NUM CNCRNT_OT_WK_2_NUM O0402BB OT: Total Minutes Concurrent Therapy Week 2 NUM 22 This indicates the total number of concurrent occupational therapy",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

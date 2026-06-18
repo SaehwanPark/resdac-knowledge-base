@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "MDCR_NF_MOS Medicare - Nursing Facility months (from MDS) Num 8\n68 MDCD_HOSPITAL_LTSS_MOS Medicaid - Hospital LTSS Months Num 8\n69 MDCD_IPF_LTSS_MOS Medicaid - IP Psych Facility for Individuals under age 21 LTSS Months Num 8\n70 MDCD_NF_LTSS_MOS Medicaid - Nursing Facility LTSS Months Num 8\n71 MDCD_ICF_IID_LTSS_MOS Medicaid - ICF for Individuals with Intellectual Disabilities LTSS Months Num 8\n72 MDCD_OTHER_LTSS_MOS Medicaid - Other Type of Facility LTSS Months Num 8\n73 MDCD_CARE_LEVEL_MOS",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

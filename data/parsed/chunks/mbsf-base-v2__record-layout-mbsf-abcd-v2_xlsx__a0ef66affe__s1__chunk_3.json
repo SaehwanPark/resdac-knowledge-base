@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Code - October CHAR 5\nSTATE_CNTY_FIPS_CD_11 FIPS State-County Code - November CHAR 5\nSTATE_CNTY_FIPS_CD_12 FIPS State-County Code - December CHAR 5\nAGE_AT_END_REF_YR Age at the End of the Reference Year NUM 3\nBENE_BIRTH_DT Beneficiary Date of Birth DATE 8\nVALID_DEATH_DT_SW Valid Date of Death Switch CHAR 1\nBENE_DEATH_DT Beneficiary Date of Death DATE 8\nSEX_IDENT_CD Sex CHAR 1\nBENE_RACE_CD Beneficiary Race Code CHAR 1\nRTI_RACE_CD Research Triangle Institute (RTI) Race Code CHAR 1\nCOVSTART",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

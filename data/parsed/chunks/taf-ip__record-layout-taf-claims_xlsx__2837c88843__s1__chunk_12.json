@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "Indicator CHAR 1 74\nHAC_IND Health Care Acquired Condition (HAC) Indicator CHAR 1 75\nIP_MH_DGNS_IND Mental Health Diagnosis Indicator CHAR 1 76\nIP_SUD_DGNS_IND Substance Use Disorder Diagnosis Indicator CHAR 1 77\nDRG_CD Diagnosis Related Group (DRG) Code CHAR 7 78\nDRG_CD_SYS DRG Code System/Nomenclature CHAR 8 79\nDRG_DESC Description of DRG Code CHAR 20 80\nMDC_CD Major Diagnostic Category (MDC) Code CHAR 3 81\nPRCDR_CD_DT_1 Date Procedure 1 Performed DATE 8 82\nPRCDR_CD_1 Procedure Code 1 CHAR 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

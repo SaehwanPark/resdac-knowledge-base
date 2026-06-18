@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p95__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 95,
+  "text": "SHORT NAME: CLM_HRR_ADJSTMT_PMT_AMT \nLONG NAME: CLM_HRR_ADJSTMT_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX (may be a negative value) \nCOMMENT: \nThe ACA (Section 3025) requires CMS to reduce payments to subsection (d) inpatient prospective \npayment system (IPPS) hospitals with excess readmissions. There is a variable that indicates whether \nthe hospital was excluded from the HRR program (reference CLM_HRR_PRTCPNT_IND_CD). This \npercentage reduction is applied to the base",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

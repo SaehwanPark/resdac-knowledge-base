@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p229__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 229,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n211 \nLINE_NCH_PMT_AMT \nLABEL: \nLine NCH Medicare Payment Amount \nDESCRIPTION: Amount of payment made from the Medicare trust fund (after deductible and coinsurance amounts \nhave been paid) for the line-item service on the non-institutional claim. \nSHORT NAME: LINEPMT \nLONG NAME: LINE_NCH_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

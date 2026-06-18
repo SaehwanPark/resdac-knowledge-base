@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p20__chunk_4",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 20,
+  "text": "and name do not match \n141 = Claim spans eligible and ineligible periods of coverage \n142 = Monthly Medicaid patient liability amount \n143 = Portion of payment deferred \n144 = Incentive adjustment, e.g., preferred product/service \n145 = Premium payment withholding. (No longer used: 04/01/2008, use group code CO and code 45). \n146 = Diagnosis was invalid for the date(s) of service reported \n147 = Provider contracted/negotiated rate expired or not on file \n148 = Information from another provider",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

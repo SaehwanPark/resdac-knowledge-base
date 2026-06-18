@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__record-layout-ptd-formulary_xlsx__38598074c1__s5__chunk_0",
+  "source_document": "data/raw/assets/xlsx/38598074c1dd858c02b65f05a48cc7e746745ec7.xlsx",
+  "page": 5,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Part D Formulary File — Part D Senior Savings (PDSS) Model1\nVersion — October 2025\nLong SAS name Label Type Length\nCONTRACT_ID Contract ID CHAR 5\nPLAN_ID Plan ID CHAR 3\nSEGMENT_ID Segment ID CHAR 3\nFRMLRY_RX_ID CCW Identifier for a Drug Product Found in a Part D Prescription Drug Plan Formulary CHAR 8\nBN FDB Brand Name for Proxy NDC CHAR 30\nGNN FDB USAN Generic Name - Short Version for Proxy NDC CHAR 30\nSTR FDB Drug Strength",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-formulary.xlsx"
+}

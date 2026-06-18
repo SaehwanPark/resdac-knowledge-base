@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_25",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "A0100C State Provider Number CHAR 15 This column contains the facility or provider's state-assigned provider number.\n43 A0200_PRVDR_TYPE_CD A0200_PRVDR_TYPE_CD A0200 Type of Provider CHAR 1 This column identifies the type of provider (nursing home or swing bed) submitting the assessment. This value is used in conjunction with the Type of Assessment fields (A0310A, A0310B, A0310C, A0310D and A0310F) to determine the ISC. 1=Nursing home (SNF/NF)\n2=Swing bed\n44 A0310A_FED_OBRA_CD",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_427",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1046 (M1045) Influenza Vaccine - Received This field indicates the reason why the influenza vaccine was received from the agency during this episode of care. 01 = Yes; received from your agency during this episode of care (SOC/ROC to Transfer/Discharge)\n02 = Yes; received from your agency during a prior episode of care (SOC/ROC to Transfer/Discharge)\n03 = Yes; received from another health care provider (for example, physician, pharmacist)\n04 = No; patient offered and declined\n05 = No; patient",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

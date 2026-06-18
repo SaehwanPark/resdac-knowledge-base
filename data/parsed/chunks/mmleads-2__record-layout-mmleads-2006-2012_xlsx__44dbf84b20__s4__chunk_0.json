@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s4__chunk_0",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 4,
+  "text": "Medicare-Medicaid Linked Enrollee Analytic Data Source (MMLEADS) V2.0\nMedicare Service File Data Dictionary\nNote: File is at the Bene_ID/SRVC_2 level\nCategory Variable Name Description Values\nIdentifiers BENE_ID CCW beneficiary ID up to 15 alphanumeric characters\nSAMPLE_IND 1% sample 1 - person is included in 1% sample\nNull/missing\nService Type SRVC_1 Level 1 service category MDCR_PTA\nMDCR_HOP\nMDCR_PTB\nMDCR_MC\nMDCR_PTD\nSRVC_2 Level 2 service category MDCR_IP\nMDCR_IP_OTH\nMDCR_PAC_OTH\nMDCR_SNF\nMDC",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

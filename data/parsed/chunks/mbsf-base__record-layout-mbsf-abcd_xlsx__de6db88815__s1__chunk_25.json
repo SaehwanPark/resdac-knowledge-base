@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_25",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "PTD_PBP_ID_12 Part D PBP Number - December CHAR 3\nSGMTID01 PTD_SGMT_ID_01 Part D Segment Number - January CHAR 3\nSGMTID02 PTD_SGMT_ID_02 Part D Segment Number - February CHAR 3\nSGMTID03 PTD_SGMT_ID_03 Part D Segment Number - March CHAR 3\nSGMTID04 PTD_SGMT_ID_04 Part D Segment Number - April CHAR 3\nSGMTID05 PTD_SGMT_ID_05 Part D Segment Number - May CHAR 3\nSGMTID06 PTD_SGMT_ID_06 Part D Segment Number - June CHAR 3\nSGMTID07 PTD_SGMT_ID_07 Part D Segment Number - July CHAR 3\nSGMTID08",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

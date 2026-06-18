@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p80__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 80,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n62 \nCLM_DISP_CD \nLABEL: \nClaim Disposition Code \nDESCRIPTION: Code indicating the disposition or outcome of the processing of the claim record. \nIn the source CMS National Claims History (NCH), claims are transactional records, and several \niterations of the claim may exist (e.g., original claim, an edited/updated version, which also cancels the \noriginal claim, etc.). \nThe",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

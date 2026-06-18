@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p44__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 44,
+  "text": "CMS. \nIf the beneficiary was enrolled in more than one plan during the year, this is the contract number for \nthe Part D plan in which the beneficiary was enrolled at the end of the year. \nThe first character of the plan contract ID is a letter representing the type of plan. \nSHORT NAME: PLNCNTRC \nLONG NAME: PLAN_CNTRCT_REC_ID \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nPDE \nVALUES: \n5-digit alpha/numeric value. First digit is one of the following: \nH = Managed Care Organizations other than Regional PPO",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

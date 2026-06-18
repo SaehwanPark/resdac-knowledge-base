@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p130__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 130,
+  "text": "enrolled, and nearly all Medicaid enrolled beneficiaries. There are some TAF DE records that did not \nhave sufficient identifiers to use for assigning the BENE_ID, therefore it is null/missing. For the records \nwithout a BENE_ID, we use the state-assigned MSIS_ID; the MSIS_ID along with the state code \n(STATE_CD) should be used as the person-level identifier. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_323",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "information\n0=Not checked (No)\n1=Checked (Yes)\n359 J1550D_INTRNL_BLEDG_CD J1550D_INTRNL_BLEDG_CD J1550D Problem Conditions: Internal Bleeding Code CHAR 1 The data in this column indicates whether the resident had internal bleeding. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n360 J1550Z_NO_PRBLM_COND_CD J1550Z_NO_PRBLM_COND_CD J1550Z Problem Conditions: None of Above Code CHAR 1 The data in this column indicates that the resident had none of the above problem conditions.",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

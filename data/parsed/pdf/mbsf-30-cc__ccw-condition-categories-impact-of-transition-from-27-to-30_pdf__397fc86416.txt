@@ -1,0 +1,1450 @@
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions 
+CCW WHITE PAPER │ MARCH 2022 
+Chronic Conditions Warehouse  
+Your source for national CMS Medicare and Medicaid research data
+
+
+  
+This page intentionally left blank.
+
+
+  
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+March 2022 
+CCW analytic team 
+Created initial document 
+1.0 
+
+
+  
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ii 
+Table of Contents  
+ 
+1.0 Overview ........................................................................................................................................................... 1 
+1.1 Objectives ................................................................................................................................................................ 1 
+2.0 Methods ............................................................................................................................................................ 1 
+2.1 Comparison of 27 CCW and 30 CCW Chronic Condition Algorithms ....................................................................... 2 
+2.2 Comparison of Ever Dates ....................................................................................................................................... 6 
+3.0 Summary and Recommendations ......................................................................................................................11 
+Appendix A — List of Acronyms ..............................................................................................................................12 
+Appendix B — Supplemental Data ..........................................................................................................................13 
+ 
+List of Tables 
+Table 1. Conditions prevalence, 2017 — comparison of difference in prevalence using 27 CCW algorithm  
+coding to 30 CCW algorithm coding ..................................................................................................................... 3 
+Table 2. Counts of beneficiaries with “ever” date in the conditions files, 2017 ............................................................... 13 
+Table 3. Comparison of first occurrence dates for conditions in the two files ................................................................. 14 
+ 
+List of Figures 
+Figure 1. Counts of beneficiaries with an “ever” date in either of the MBSF CCW Conditions files, 2017 ......................... 7 
+Figure 2. Distribution of first occurrence dates in the MBSF CCW Conditions files, 2017 .................................................. 9 
+Figure 3. First “ever” date for beneficiaries with IHD in both MBSF Chronic Conditions files in 2017 ............................. 10 
+
+
+1.0 Overview  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+1 
+1.0 Overview 
+The Centers for Medicare & Medicaid Services (CMS) created the 27 predefined Chronic Conditions Warehouse (CCW) 
+common and chronic condition categories,1 in collaboration with the Research Data Assistance Center (ResDAC) and 
+the CCW team.2 In 2020, CMS contracted an expert panel to validate the algorithms following the change from 
+International Classification of Diseases (ICD)-9 to ICD-10-CM. CMS also asked the expert panel to refine these 
+algorithms and identify additional conditions to add to the CCW, resulting in the 30 CCW Chronic Conditions 
+algorithms. The CCW contains two versions of the Chronic Conditions algorithms: the 30 CCW Chronic Conditions 
+(2017 forward) and the 27 CCW Chronic Conditions (1999–20203). Data for these two sets of condition variables are 
+available through two versions of the conditions file segment that are part of the annual CCW Master Beneficiary 
+Summary (MBSF) suite of files:  
+1. the 27 CCW Chronic Conditions (available 1999-2020; delivered as the MBSF_CC_YYYY file), or  
+2. the 30 CCW Chronic Conditions (2017 forward; delivered as the MBSF_CHRONIC_YYYY file).  
+The algorithms examine service patterns in claims data, which serve as a proxy indicating that a beneficiary is likely 
+receiving treatment for the condition. A description of these files is available in the CCW Medicare Administrative Data 
+User Guide on the CCW website. A listing of all the variables in the data files, along with valid values, is available on the 
+CCW Data Dictionary webpage. A list of abbreviations found in this document appears in Appendix A. 
+1.1 Objectives 
+The objectives of this document are to: 
+• 
+Provide a high-level description of the condition definition and algorithm differences between the 27 CCW Chronic 
+Conditions and the 30 CCW Chronic Conditions 
+• 
+Compare the prevalence of the 27 CCW Chronic Conditions to the prevalence of the 30 CCW Chronic Conditions in 
+the Medicare fee-for-service (FFS) data 
+• 
+Identify the impact of the updated condition definitions on the first occurrence dates (also referred to as “ever” 
+dates) 
+• 
+Discuss implications for researchers in terms of switching to the 30 CCW Chronic Conditions file 
+2.0 Methods 
+The CCW team creates the MBSF Chronic Condition segment file (delivered as the MBSF_CC_YYYY file) to disseminate 
+the 27 CCW Chronic Conditions data. The CCW team also creates an MBSF segment file for the 30 CCW Chronic 
+Conditions (delivered as the MBSF_CHRONIC_YYYY file). 
+ 
+ 
+1 As a historical note, when CCW data first became available, there were only 21 CCW conditions. When 2010 data became 
+available, we revised 17 of the original 21 chronic conditions (CCs); the updated 27 CCs are available from 1999 forward. 
+2 The original contractor for the CCW was the Iowa Foundation for Medical Care. 
+3 The CCW team will produce the 2021 data file after the data matures for a full calendar year; we expect the final run of the 
+MBSF_CC_2021 in the first quarter of 2023. 
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+2 
+The 27 and 30 CCW Chronic Conditions are annual files containing summarized clinical information for all beneficiaries 
+included in the requested cohort. The files include two variables4 for each of the chronic conditions:  
+1. Yearly indicator (or end-of-year indicator) — indicates whether the beneficiary met each of the chronic condition 
+definitions during the respective time period ending December 31, YYYY  
+2. First occurrence date (or "ever" date) — indicates the date the beneficiary first met the specifications for the 
+condition (NOTE: For the 27 CCW Chronic Conditions file, 1999 is the earliest year that will appear in this field, and 
+for the 30 CCW Chronic Conditions file, 2016 is the earliest year) 
+The MBSF Chronic Conditions segments include a record for each eligible beneficiary during the year and does not 
+limit inclusion to those with a chronic condition. Although CMS began disseminating Medicare managed care 
+encounter data for people enrolled in Medicare Advantage (MA) plans starting in 2015, the chronic condition 
+algorithms currently do not consider encounter data. Therefore, users should view the CCW as a source of utilization 
+and chronic condition information primarily for the Medicare FFS population. 
+2.1 Comparison of 27 CCW and 30 CCW Chronic Condition Algorithms 
+To ascertain the impact of the updated algorithms for the chronic conditions, the CCW team empirically examined the 
+prevalence of conditions using the 27 CCW Chronic Conditions (27 CCW) compared to the 30 CCW Chronic Conditions 
+(30 CCW). For the 2017 reporting period, the CCW team calculated prevalence for the 27 CCW algorithms using the 
+MBSF_CC_2017 file and the requisite one-, two-, and three-year lookback periods. The CCW team also calculated 
+prevalence for the 30 CCW algorithms using the MBSF_CHRONIC_2017 file,5 which included the requisite one or two-
+year lookback periods (i.e., 2016–2017 Medicare FFS claims). 
+Within Table 1, the CCW team provides the 2017 Medicare prevalence rates for the 27 CCW, the 30 CCW, and the 
+difference in prevalence rates. The CCW team depicts the difference in the two sets of algorithms two ways: first as a 
+difference in prevalence rates (30 CCW prevalence minus 27 CCW prevalence) and second as a percentage change in 
+the prevalence of beneficiaries identified with the condition (30 CCW prevalence – 27 CCW prevalence/27 CCW 
+prevalence * 100). In addition to the prevalence statistics, the CCW team summarizes the differences between the 27 
+CCW Chronic Conditions algorithm and the 30 CCW Chronic Conditions algorithm in the right-most column of the 
+table. The types of algorithm changes include the addition or deletion of diagnosis (DX) codes, an increase in the 
+number of diagnosis code fields examined from the claim, the change in the types of claims files used, and the change 
+in the number of years included in the lookback period. For specific details regarding the algorithms, refer to the CCW 
+website.  
+ 
+ 
+ 
+ 
+ 
+4 The MBSF_CC also includes a mid-year indicator variable for each of the conditions; it uses a July 1 timeframe rather than the 
+calendar year. 
+5 The CCW team calculates condition prevalence using standard CCW methodology (reference web tables B2a and B2b); the 
+denominator is the subset of beneficiaries who had full or nearly full Medicare FFS coverage (i.e., 11 or 12 months of Medicare 
+Parts A and B [or coverage until time of death] and one month or less of health maintenance organization [HMO] coverage). The 
+numerator is the count of these beneficiaries who also met the FFS claims criteria for the algorithm. 
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+Table 1. Conditions prevalence, 2017 — comparison of the difference in prevalence using 27 CCW algorithm coding to 30 CCW algorithm coding  
+Conditions* 
+27 CCW 
+(%) 
+30 CCW 
+(%) 
+Change in 
+prevalence** 
+% Change in identified 
+beneficiaries† 
+Summary of change to algorithm‡ 
+Acute Myocardial Infarction 
+1.0% 
+1.2% 
+0.22% 
+23% 
+• Added DX codes 
+• Look at all DX instead first 2 
+Alzheimer's Disease 
+4.3% 
+3.1% 
+-1.1% 
+-26% 
+• Decreased reference period from 3 to 2 years 
+• Increased hospital outpatient (HOP)/carrier claims from 1 
+to 2 
+Anemia 
+22.5% 
+21.7% 
+-0.8% 
+-4% 
+• Added/removed DX codes 
+• Increased reference period from 1 to 2 years 
+• Increased HOP/carrier claims from 1 to 2 
+Asthma 
+5.3% 
+7.9% 
+2.6% 
+48% 
+• Increased reference period from 1 to 2 years 
+Atrial Fibrillation and Flutter 
+8.7% 
+13.1% 
+4.5% 
+52% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+• Added at least one skilled nursing facility (SNF) and home 
+health agency (HHA) claim to the number/type of claims 
+• Look at all DX instead of the first 2 
+Benign Prostatic 
+Hyperplasia▲ 
+16.8% 
+25.4% 
+8.6% 
+51% 
+• Removed DX codes 
+• Increased reference period from 1 to 2 years 
+Cancer, Female Breast# 
+5.8% 
+7.4% 
+1.6% 
+27% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+Cancer, Male Breast▲ 
+0.06% 
+0.13% 
+0.07% 
+122% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+Cancer, Colorectal 
+1.2% 
+1.6% 
+0.4% 
+33% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+Cancer, Endometrial# 
+0.7% 
+1.0% 
+0.3% 
+45% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+Cancer, Lung 
+1.1% 
+1.3% 
+0.2% 
+16% 
+• Increased reference period from 1 to 2 years 
+Cancer, Prostate▲ 
+7.2% 
+8.9% 
+1.7% 
+24% 
+• Increased reference period from 1 to 2 years 
+Cancer, Urologic (Kidney, 
+Renal Pelvis and Ureter) 
+n/a 
+0.7% 
+n/a 
+n/a 
+• n/a 
+Cataract 
+17.8% 
+25.8% 
+8.0% 
+45% 
+• Added/removed DX codes 
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+Conditions* 
+27 CCW 
+(%) 
+30 CCW 
+(%) 
+Change in 
+prevalence** 
+% Change in identified 
+beneficiaries† 
+Summary of change to algorithm‡ 
+Chronic Kidney Disease 
+(CKD) 
+24.8% 
+16.3% 
+-8.5% 
+-34% 
+• Added/removed DX codes 
+Chronic Obstructive 
+Pulmonary Disease 
+12.1% 
+15.9% 
+3.8% 
+31% 
+• Added/removed DX codes 
+• Increased reference period from 1 to 2 years 
+Depression, Bipolar or 
+Other Depressive Mood 
+Disorders 
+18.4% 
+19.4% 
+1.0% 
+6% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+• Increased HOP/carrier claims from 1 to 2 
+Diabetes 
+28.0% 
+28.0% 
+0.0% 
+0% 
+• No change 
+Glaucoma 
+9.6% 
+13.8% 
+4.2% 
+44% 
+• Added/removed DX codes 
+• Increased reference period from 1 to 2 years 
+• Added at least 1 HOP claim to the number/type of claims  
+• Look at all DX instead of the first 1 
+Heart Failure and Non-
+Ischemic Heart Disease 
+14.4% 
+12.1% 
+-2.2% 
+-16% 
+• Added DX codes 
+• Added at least 1 SNF and HHA claim to number/type of 
+claim 
+• Increased HOP/carrier claims from 1 to 2 
+Hip/Pelvic Fracture 
+0.7% 
+1.2% 
+0.4% 
+57% 
+• Added DX codes 
+• Added at least 1 HOP or carrier claim to the number/type 
+of claims 
+Hyperlipidemia 
+48.3% 
+61.3% 
+13.1% 
+27% 
+• Increased reference period from 1 to 2 years 
+Hypertension 
+58.7% 
+67.8% 
+9.1% 
+16% 
+• Increased reference period from 1 to 2 years 
+Hypothyroidism˄ 
+15.9% 
+20.9% 
+5.0% 
+31% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+Ischemic Heart Disease 
+27.8% 
+21.8% 
+-6.0% 
+-21% 
+• Added/removed DX codes 
+• Increased HOP/carrier claims from 1 to 2  
+Non-Alzheimer's Dementia¶ 
+11.3% 
+8.0% 
+-3.3% 
+-29% 
+• Added/removed DX codes 
+• Decreased reference period from 3 to 2 years 
+• Increased HOP/carrier claims from 1 to 2 
+Osteoporosis With or 
+Without Pathological 
+Fracture 
+6.6% 
+9.9% 
+3.3% 
+50% 
+• Added DX codes 
+• Increased reference period from 1 to 2 years 
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+Conditions* 
+27 CCW 
+(%) 
+30 CCW 
+(%) 
+Change in 
+prevalence** 
+% Change in identified 
+beneficiaries† 
+Summary of change to algorithm‡ 
+Pneumonia, All Cause 
+n/a 
+5.5% 
+n/a 
+n/a 
+• n/a 
+Parkinson's Disease and 
+Secondary Parkinsonism 
+n/a 
+1.7% 
+n/a 
+n/a 
+• n/a 
+Rheumatoid 
+Arthritis/Osteoarthritis 
+34.2% 
+35.5% 
+1.3% 
+4% 
+• Added DX codes 
+• Decreased inpatient (IP), SNF, and HHA claims from 2 to 1 
+Stroke/Transient Ischemic 
+Attack 
+3.9% 
+6.6% 
+2.7% 
+68% 
+• Added/removed DX codes 
+• Decreased HOP/carrier claims from 2 to 1 
+* We have ordered this table by the condition’s name within the 30 CCW Chronic Conditions file. 
+** We calculate the change in prevalence as the 30 CCW % minus 27 CCW %. 
+† We calculate the % change in identified beneficiaries as (30 CCW minus 27 CCW) divided by 27 CCW times 100. 
+‡ CCW provided an abbreviated summary of the changes to the algorithm. For details, refer to the condition algorithms on the CCW website. 
+▲ Prevalence calculated for males only. 
+# Prevalence calculated for females only. 
+˄ For the 27 CCW Chronic Conditions, this condition is “Acquired Hypothyroidism.” 
+¶ For the 27 CCW Chronic Conditions, this condition is “Alzheimer’s Disease, Related Disorders, or Senile Dementia.” 
+Researchers should be aware that some algorithm changes for the 30 CCW Chronic Conditions resulted in significant changes in the number of beneficiaries 
+identified as having the condition. For example, Stroke/Transient Ischemic Attack (TIA) had a large increase in the number of beneficiaries, and Chronic Kidney 
+Disease (CKD) had a large decrease in the number of beneficiaries identified in the 30 CCW Chronic Conditions. 
+The CCW team will continue producing the 27 CCW Chronic Conditions file through the 2021 data year to allow researchers the opportunity to complete 
+research projects using the MBSF_CC_YYYY file. The last run of the 27 CCW Chronic Conditions file will occur in early 2023 (using 2021 FFS data). 
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+6 
+2.2 Comparison of Ever Dates 
+The algorithms for the 30 CCW Chronic Conditions data file use only ICD-10-CM diagnosis codes, which means the first 
+full calendar year that the CCW team could use to identify conditions is 2016. Therefore, the earliest possible date that 
+could appear in the “ever” date fields is January 1, 2016. This is a difference between the 27 CCW Chronic Conditions 
+file, where the earliest “ever” date is January 1, 1999. 
+There are several reasons for differences in “ever” dates between the two MBSF Conditions files, including different 
+dates between the two files or one file contains an “ever” date while the other does not. For some conditions, there 
+may be many beneficiaries who had a prior history of claims for the condition that would no longer be appearing in 
+the 30 CCW Chronic Conditions file. For example, a beneficiary could have an “ever” date for acute myocardial 
+infarction (AMI) of 01/25/2011 in the 27 CCW Chronic Conditions, but since the 30 CCW Conditions only go back to 
+2016, their ever date in the 30 CCW Chronic Conditions is null. There are also changes in the algorithm specifications 
+that could result in a broader (or narrower) group of beneficiaries meeting the updated criteria for the condition(s) in 
+the 30 CCW Chronic Conditions file; this could result in different “ever” dates in the two files. 
+To address how different the first occurrence dates are using the updated 30 CCW Chronic Conditions algorithms, the 
+CCW team compared “ever” dates identified by the 27 CCW Chronic Conditions algorithms to “ever” dates identified 
+by the 30 CCW Chronic Conditions algorithms. For this analysis, the CCW team identified all beneficiaries with first 
+occurrence dates for each condition within the MBSF_CHRONIC_2017 and MBSF_CC_2017 files. To have a first 
+occurrence date in the MBSF_CHRONIC_2017 file, the data identifies the beneficiary with the condition in either 2016 
+or 2017 (i.e., the beneficiary had a value of ‘1’ or ‘3’ for the condition category). In each of these instances, the data 
+file populates an “ever” date greater than or equal to 01/01/2016data file. In Figure 1 below, the CCW team calculated 
+the unduplicated count of beneficiaries with an ever date for the condition in one or both files. The CCW team 
+provides detailed beneficiary counts in Table 2 and Table 3 within Appendix B. 
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+7 
+Figure 1. Counts of beneficiaries with an “ever” date in either of the MBSF CCW Conditions files, 2017 
+ 
+This figure displays the number of beneficiaries with an ever date in either of the MBSF CCW Conditions files for each 
+condition. This visual depiction makes it easy to understand the magnitude of conditions; the corresponding 
+percentages are in Appendix B (reference Table 2). Among the beneficiaries with an occurrence of a condition in either 
+file, we observed that 30–75% of beneficiaries (depending on the condition) have an “ever” date in both files. 
+• 
+The Acute Myocardial Infarction (AMI) and Hip/Pelvic Fracture conditions have a relatively low percentage of 
+beneficiaries with “ever” dates in both files (30% and 33%, respectively), while the Hypertension (74%) and Lung 
+Cancer (75%) conditions have a relatively large percentage of beneficiaries with ever dates in both files 
+0
+10
+20
+30
+Acute Myocardial Infarction
+Alzheimer's Disease
+Anemia
+Asthma
+Atrial Fibrillation and Flutter
+Benign Prostatic Hyperplasia
+Breast Cancer
+Colorectal Cancer
+Endometrial Cancer
+Lung Cancer
+Prostate Cancer
+Cataract
+Chronic Kidney Disease
+Chronic Obstructive Pulmonary Disease
+Depression, Bipolar or Other Depressive Mood Disorders
+Diabetes
+Glaucoma
+Heart Failure and Non-Ischemic Heart Disease
+Hip/Pelvic Fracture
+Hyperlipidemia
+Hypertension
+Hypothyroidism
+Ischemic Heart Disease
+Non-Alzheimer's Dementia
+Osteoporosis With or Without Pathological Fracture
+Rheumatoid Arthritis / Osteoarthritis
+Stroke / Transient Ischemic Attack
+Number of beneficiaries
+in millions
+Both 27 CCW & 30 CCW
+27 CCW Only
+30 CCW Only
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+8 
+In general, the algorithms for the 30 CCW Chronic Conditions did not result in many new condition occurrences gained. 
+Between 0–14% (depending on condition) of beneficiaries have an ever date in the 30 CCW Chronic Conditions file, but 
+not in the 27 CCW Chronic Conditions file.  
+• 
+This occurred most frequently for the Hip/Pelvic Fracture (13%) and Stroke/TIA (14%) conditions, and in <1% of 
+beneficiaries for most other conditions 
+Depending on the condition, between 21–66% of beneficiaries with an “ever” date only have an “ever” date populated 
+in the 27 CCW Chronic Condition file and not in the 30 CCW Chronic Condition file (Figure 1).  
+• 
+The AMI (66%) and Anemia (63%) conditions resulted in larger losses in historical occurrences 
+For the subset of beneficiaries with an “ever” date in both the 27 and 30 CCW Chronic Condition files, the CCW team 
+compared the first occurrence dates between the two files to determine whether they were identical. Beneficiary 
+counts are in Table 3 of Appendix B. We graphically depict the difference in the “ever” dates for beneficiaries in both 
+files to illustrate the magnitude of change for each condition. Figure 2 is a boxplot that shows the median number of 
+years difference, and the 25 and 75 percentiles for the number of years’ difference in the first occurrence date. The 
+boxes within the plots display the interquartile range (25 through 75 percentile), with the median value depicted as a 
+vertical bar within the box. The minimum value possible is -1 year, and the maximum is 18 years.  
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+9 
+Figure 2. Distribution of first occurrence dates in the MBSF CCW Conditions files, 2017 
+ 
+• 
+Although there are a small number of beneficiaries with differing “ever” dates in the two files for AMI, Lung 
+Cancer and Hip/Pelvic Fracture, the median number of years difference between “ever” dates for the beneficiaries 
+with conditions in both files is zero 
+ 
+• 
+For Hyperlipidemia, Hypertension, Ischemic Heart Disease (IHD), and Glaucoma the median number of years’ 
+difference is six years. Similarly, the 75 percentile (Q3) for these three conditions is large: 12 years for 
+Hypertension and IHD and 11 years for Hyperlipidemia and Glaucoma 
+-5
+0
+5
+10
+15
+20
+Acute Myocardial Infarction
+Alzheimer's Disease
+Anemia
+Asthma
+Atrial Fibrillation and Flutter
+Benign Prostatic Hyperplasia
+Breast Cancer
+Colorectal Cancer
+Endometrial Cancer
+Lung Cancer
+Prostate Cancer
+Cataract
+Chronic Kidney Disease
+Chronic Obstructive Pulmonary Disease
+Depression, Bipolar or Other Depressive…
+Diabetes
+Glaucoma
+Heart Failure and Non-Ischemic Heart…
+Hip / Pelvic Fracture
+Hyperlipidemia
+Hypertension
+Hypothyroidism
+Ischemic Heart Disease
+Non-Alzheimer's Dementia
+Osteoporosis With or Without Pathological…
+Rheumatoid Arthritis / Osteoarthritis
+Stroke / Transient Ischemic Attack
+Change in ever dates, in years (30 CCW–27 CCW)
+
+
+2.0 Methods  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+10 
+• 
+For each of the 27 conditions, there were beneficiaries for whom the “ever’ date is 18 years different (i.e., it was in 
+1999 in the MBSF_CC file) 
+For some conditions, there are a large number of beneficiaries who had a first occurrence date before 2016. The first 
+occurrence date is often in 1999, which is the earliest year possible in the 27 CCW Chronic Conditions file. We illustrate 
+using one condition, IHD, with a fairly high percentage of beneficiaries with the condition in the MBSF_CHRONIC_2017 
+file who had an earlier “ever” date in the MBSF_CC_2017 (96.2%, n=7,902,514; as in Table 3). Reference Figure 3. 
+Figure 3. First “ever” date for beneficiaries with IHD in both MBSF Chronic Conditions files in 2017 
+ 
+• 
+Among the beneficiaries with an IHD “ever” date in both files, 80% have an MBSF_CC_2017 “ever” date between 
+1999–2015. This mainly explains 96.2% of the differences observed between “ever” dates in the two files (Table 3) 
+o Additional differences in the “ever” dates for IHD between the files are that 299,700 beneficiaries had a date 
+in 2016 or 2017, yet the date was earlier in the MBSF_CC_2017 file than the MBSF_CHRONIC_2017 file. This is 
+likely due to the differences in the algorithm specifications, where the 30 CCW Chronic Conditions algorithm 
+requires two HOP or carrier claims to meet the criteria rather than the required, single HOP/carrier claim in 
+the 27 CCW Chronic Conditions algorithm (Table 1). 
+• 
+Almost 7% of these beneficiaries have a 1999 “ever” date in MBSF_CC_2017 
+• 
+Following the earliest possible year (1999), the “ever” dates from 2000–2015 distribute evenly — with about a 3% 
+increase in the number of beneficiaries from year to year 
+• 
+Twenty percent of beneficiaries have “ever” dates in 2016–2017 (data not shown). The CCW team observes the 
+“ever” dates in 2016–2017 more frequently than any other year among beneficiaries who have ever dates in both 
+files 
+ 
+ 
+0%
+20%
+40%
+60%
+80%
+100%
+0
+200,000
+400,000
+600,000
+Cumulative percentage of beneficiaries
+Number of beneficiares
+Year of MBSF_CC ever date
+IHD first occurrence
+Number of Beneficiaries
+Percentage of Beneficiaries
+
+
+3.0 Summary and Recommendations  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+11 
+3.0 Summary and Recommendations 
+The CCW team will no longer produce the 27 CCW Chronic Conditions file after the 2021 data file; it is available for 
+data years 2000–2021.6 The CCW team will only deliver the 30 CCW Chronic Conditions file going forward. The CCW 
+team recommends researchers switch to using the 30 CCW Chronic Conditions files as soon as reasonably possible. 
+Since there are five years of overlap between the 27 and 30 CCW Chronic Conditions (i.e., data for both sets of 
+algorithm variables are available for 2017–2021), researchers may empirically examine the impact of the algorithm 
+changes for their studies. 
+Due to the limited historical claims pattern available in the 30 CCW Chronic Conditions file, researchers should use 
+caution with the “ever” dates, since many beneficiaries may have had a first occurrence date for the condition (as 
+specified using the 27 CCW Chronic Condition coding) that preceded 2016. Using the “ever” dates in the 30 CCW 
+Chronic Conditions file to identify beneficiaries with a prior history of the condition, may not yield accurate 
+information regarding the first ever date when the beneficiary met the condition criteria in Medicare FFS claims. The 
+exception is when the beneficiary was newly enrolled in Medicare in 2016 or later, which the COVSTART variable in the 
+MBSF captures. 
+ 
+ 
+ 
+6 The CCW team will produce the 2021 data file after the data matures for a full calendar year; we expect the final run of the 
+MBSF_CC_2021 in the first quarter of 2023. 
+
+
+Appendix A — List of Acronyms  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+12 
+Appendix A — List of Acronyms  
+Acronym 
+ Definition 
+AMI 
+Acute Myocardial Infarction 
+CC 
+Chronic Conditions 
+CCW 
+Chronic Conditions Warehouse 
+CMS 
+Centers for Medicare & Medicaid Services 
+DX 
+Diagnosis 
+FFS 
+Fee-for-service 
+HHA 
+Home Health Agency 
+HOP 
+Hospital Outpatient 
+ICD 
+International Classification of Diseases 
+IHD 
+Ischemic Heart Disease 
+IP 
+Inpatient 
+MA 
+Medicare Advantage 
+MBSF 
+Master Beneficiary Summary File 
+ResDAC 
+Research Data Assistance Center 
+SNF 
+Skilled Nursing Facility 
+TIA 
+Transient Ischemic Attack 
+ 
+ 
+ 
+
+
+Appendix B — Supplemental Data  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+13 
+Appendix B — Supplemental Data 
+The CCW team compared the “ever” dates for the 27 CCW Chronic Conditions in the MBSF_CC_2017 to the “ever” 
+dates for the same conditions in the MBSF_CHRONIC_2017 file. We classify beneficiaries with an “ever” date in either 
+file into one of three categories: 1) having an “ever” date in both files, 2) “ever” date only in the 27 CCW Chronic 
+Conditions file (MBSF_CC), or 3) “ever” date only in the 30 CCW Chronic Conditions file (MBSF_CHRONIC). We present 
+a related graphic, Figure 1, in the main body of this paper. 
+Table 2. Counts of beneficiaries with “ever” date in the conditions files, 2017 
+Condition 
+“Ever” date in 
+27 CCW or 30 
+CCW 
+(total 
+beneficiaries) 
+In both 27 
+CCW and 30 
+CCW 
+(benes) 
+Both 
+(%) 
+In 27 CCW 
+only 
+(benes) 
+27 
+CCW 
+(%) 
+In 30 CCW 
+only 
+(benes) 
+30 
+CCW 
+(%) 
+Acute Myocardial 
+Infarction 
+1,969,802 
+590,072 
+30.0% 
+1,290,967 
+65.5% 
+88,763 
+4.5% 
+Alzheimer's Disease 
+2,093,499 
+1,136,926 
+54.3% 
+956,573 
+45.7% 
+0 
+0.0% 
+Anemia 
+21,041,243 
+7,835,209 
+37.2% 
+13,201,168 
+62.7% 
+4,866 
+0.0% 
+Asthma 
+6,115,770 
+2,828,844 
+46.3% 
+3,246,804 
+53.1% 
+40,122 
+0.7% 
+Atrial Fibrillation and 
+Flutter 
+6,023,806 
+4,149,821 
+68.9% 
+1,266,318 
+21.0% 
+607,667 
+10.1% 
+Benign Prostatic 
+Hyperplasia 
+7,348,583 
+3,953,206 
+53.8% 
+3,272,729 
+44.5% 
+122,648 
+1.7% 
+Breast Cancer 
+2,185,316 
+1,466,891 
+67.1% 
+696,336 
+31.9% 
+22,089 
+1.0% 
+Colorectal Cancer 
+1,056,877 
+593,429 
+56.1% 
+458,545 
+43.4% 
+4,903 
+0.5% 
+Endometrial Cancer  
+374,785 
+186,772 
+49.8% 
+184,566 
+49.2% 
+3,447 
+0.9% 
+Lung Cancer 
+621,718 
+466,965 
+75.1% 
+153,183 
+24.6% 
+1,570 
+0.3% 
+Prostate Cancer 
+2,166,626 
+1,436,888 
+66.3% 
+718,947 
+33.2% 
+10,791 
+0.5% 
+Urologic Cancer (Kidney, 
+Renal Pelvis and Ureter) 
+n/a  
+  
+  
+  
+  
+  
+  
+Cataract  
+25,950,736 
+10,795,518 
+41.6% 
+13,070,024 
+50.4% 
+2,085,194 
+8.0% 
+Chronic Kidney Disease 
+12,796,549 
+5,969,876 
+46.7% 
+6,826,012 
+53.3% 
+661 
+0.0% 
+Chronic Obstructive 
+Pulmonary Disease 
+10,419,348 
+5,733,307 
+55.0% 
+4,608,622 
+44.2% 
+77,419 
+0.7% 
+Depression, Bipolar or 
+Other Depressive Mood 
+Disorders  
+15,482,171 
+7,075,576 
+45.7% 
+8,310,360 
+53.7% 
+96,235 
+0.6% 
+Diabetes 
+16,141,644 
+10,667,991 
+66.1% 
+5,473,653 
+33.9% 
+0 
+0.0% 
+Glaucoma 
+9,288,918 
+4,326,870 
+46.6% 
+4,340,802 
+46.7% 
+621,246 
+6.7% 
+Heart Failure and Non-
+Ischemic Heart Disease 
+9,743,302 
+4,341,447 
+44.6% 
+5,295,595 
+54.4% 
+106,260 
+1.1% 
+Hip/Pelvic Fracture 
+1,500,559 
+505,155 
+33.7% 
+797,055 
+53.1% 
+198,349 
+13.2% 
+Hyperlipidemia 
+32,564,866 
+21,899,277 
+67.2% 
+10,337,893 
+31.7% 
+327,696 
+1.0% 
+Hypertension  
+34,003,364 
+25,041,546 
+73.6% 
+8,826,096 
+26.0% 
+135,722 
+0.4% 
+Hypothyroidism 
+11,108,320 
+7,336,251 
+66.0% 
+3,614,208 
+32.5% 
+157,861 
+1.4% 
+
+
+Appendix B — Supplemental Data  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+14 
+Condition 
+“Ever” date in 
+27 CCW or 30 
+CCW 
+(total 
+beneficiaries) 
+In both 27 
+CCW and 30 
+CCW 
+(benes) 
+Both 
+(%) 
+In 27 CCW 
+only 
+(benes) 
+27 
+CCW 
+(%) 
+In 30 CCW 
+only 
+(benes) 
+30 
+CCW 
+(%) 
+Ischemic Heart Disease 
+18,115,613 
+7,902,514 
+43.6% 
+10,213,098 
+56.4% 
+1 
+0.0% 
+Non-Alzheimer's Dementia  
+5,488,875 
+2,917,887 
+53.2% 
+2,569,075 
+46.8% 
+1,913 
+0.0% 
+Osteoporosis With or 
+Without Pathological 
+Fracture 
+7,684,022 
+3,393,749 
+44.2% 
+4,202,402 
+54.7% 
+87,871 
+1.1% 
+All Cause Pneumonia 
+n/a  
+  
+  
+  
+  
+  
+  
+Parkinson's Disease and 
+Secondary Parkinsonism 
+n/a  
+  
+  
+  
+  
+  
+  
+Rheumatoid Arthritis / 
+Osteoarthritis 
+22,917,221 
+12,498,928 
+54.5% 
+10,146,118 
+44.3% 
+272,175 
+1.2% 
+Stroke / Transient Ischemic 
+Attack 
+6,323,005 
+2,600,124 
+41.1% 
+2,837,539 
+44.9% 
+885,342 
+14.0% 
+ 
+For some conditions, it was common to have an occurrence date in both files (between 30-75% of beneficiaries have 
+“ever” dates in both files, depending on the condition). Only a few of the algorithms for the 30 CCW Chronic 
+Conditions resulted in a relatively large percentage of new condition occurrences gained (e.g., Stroke/TIA and 
+Hip/Pelvic Fracture). Depending on the condition, between 21-66% of beneficiaries with an “ever” date only have an 
+“ever” date populated in the 27 CCW Chronic Condition file and not in the 30 CCW Chronic Condition file.  
+For the subset of beneficiaries with an ever date in both files, the CCW team compared the first occurrence dates 
+between the two files to determine whether they were identical (Table 3). We present a related illustration in the 
+main body of this paper (reference Figure 3). 
+Table 3. Comparison of first occurrence dates for conditions in the two files 
+Condition 
+Ever date in 
+both 27 CCW 
+and 30 CCW 
+(total 
+beneficiaries) 
+27 CCW < 
+30 CCW 
+date 
+(benes) 
+27 CCW < 
+30 CCW 
+date 
+(%) 
+27 CCW = 
+30 CCW 
+date 
+(benes) 
+27 CCW = 
+30 CCW 
+date 
+(%) 
+27 CCW > 
+30 CCW 
+date 
+(benes) 
+27 CCW > 
+30 CCW 
+date 
+(%) 
+Acute Myocardial 
+Infarction 
+590,072 
+93,679  
+15.9% 
+487,607 
+82.6% 
+8,786 
+1.5% 
+Alzheimer's Disease 
+1,136,926 
+1,027,985  
+90.4% 
+108,941 
+9.6% 
+0 
+0.0% 
+Anemia 
+7,835,209 
+7,413,990  
+94.6% 
+418,396 
+5.3% 
+2,823 
+0.0% 
+Asthma 
+2,828,844 
+1,907,843  
+67.4% 
+901,058 
+31.9% 
+19,943 
+0.7% 
+Atrial Fibrillation and 
+Flutter 
+4,149,821 
+2,910,547  
+70.1% 
+778,093 
+18.8% 
+461,181 
+11.1% 
+Benign Prostatic 
+Hyperplasia 
+3,953,206 
+2,787,886  
+70.5% 
+1,118,750 
+28.3% 
+46,570 
+1.2% 
+Breast Cancer 
+1,466,891 
+1,127,493  
+76.9% 
+332,684 
+22.7% 
+6,714 
+0.5% 
+Colorectal Cancer 
+593,429 
+396,479  
+66.8% 
+195,021 
+32.9% 
+1,929 
+0.3% 
+Endometrial Cancer  
+186,772 
+109,350  
+58.5% 
+76,413 
+40.9% 
+1,009 
+0.5% 
+
+
+Appendix B — Supplemental Data  
+ 
+Chronic Conditions Warehouse  
+Impact of Transition from 27 to 30 CCW Chronic Conditions │ March 2022 │ V 1.0 
+ 
+ 
+ 
+ 
+15 
+Condition 
+Ever date in 
+both 27 CCW 
+and 30 CCW 
+(total 
+beneficiaries) 
+27 CCW < 
+30 CCW 
+date 
+(benes) 
+27 CCW < 
+30 CCW 
+date 
+(%) 
+27 CCW = 
+30 CCW 
+date 
+(benes) 
+27 CCW = 
+30 CCW 
+date 
+(%) 
+27 CCW > 
+30 CCW 
+date 
+(benes) 
+27 CCW > 
+30 CCW 
+date 
+(%) 
+Lung Cancer 
+466,965 
+218,550  
+46.8% 
+247,189 
+52.9% 
+1,226 
+0.3% 
+Prostate Cancer 
+1,436,888 
+1,102,906  
+76.8% 
+329,124 
+22.9% 
+4,858 
+0.3% 
+Urologic Cancer 
+(Kidney, Renal Pelvis 
+and Ureter) 
+n/a  
+  
+  
+  
+  
+  
+  
+Cataract  
+10,795,518 
+7,654,657  
+70.9% 
+2,552,682 
+23.6% 
+588,179 
+5.4% 
+Chronic Kidney Disease 
+5,969,876 
+4,660,147  
+78.1% 
+1,309,439 
+21.9% 
+ 290  
+0.0% 
+Chronic Obstructive 
+Pulmonary Disease 
+5,733,307 
+3,895,383  
+67.9% 
+1,793,572 
+31.3% 
+44,352 
+0.8% 
+Depression, Bipolar or 
+Other Depressive 
+Mood Disorders  
+7,075,576 
+6,570,146  
+92.9% 
+455,634 
+6.4% 
+49,796 
+0.7% 
+Diabetes 
+10,667,991 
+8,491,657  
+79.6% 
+2,176,334 
+20.4% 
+0 
+0.0% 
+Glaucoma 
+4,326,870 
+3,428,629  
+79.2% 
+581,007 
+13.4% 
+317,234 
+7.3% 
+Heart Failure and Non-
+Ischemic Heart Disease 
+4,341,447 
+4,023,300  
+92.7% 
+278,673 
+6.4% 
+39,474 
+0.9% 
+Hip/Pelvic Fracture 
+505,155 
+116,731  
+23.1% 
+21,335 
+4.2% 
+367,089 
+72.7% 
+Hyperlipidemia 
+21,899,277 
+18,047,893  
+82.4% 
+3,613,039 
+16.5% 
+238,345 
+1.1% 
+Hypertension  
+25,041,546 
+20,825,235  
+83.2% 
+4,111,919 
+16.4% 
+104,392 
+0.4% 
+Hypothyroidism 
+7,336,251 
+5,737,521  
+78.2% 
+1,535,919 
+20.9% 
+62,811 
+0.9% 
+Ischemic Heart Disease 
+7,902,514 
+7,602,814  
+96.2% 
+299,700 
+3.8% 
+0 
+0.0% 
+Non-Alzheimer's 
+Dementia  
+2,917,887 
+2,561,073  
+87.8% 
+354,617 
+12.2% 
+2,197 
+0.1% 
+Osteoporosis With or 
+Without Pathological 
+Fracture 
+3,393,749 
+2,373,245  
+69.9% 
+975,555 
+28.7% 
+44,949 
+1.3% 
+All Cause Pneumonia 
+n/a  
+  
+  
+  
+  
+  
+  
+Parkinson's Disease 
+and Secondary 
+Parkinsonism 
+n/a  
+  
+  
+  
+  
+  
+  
+Rheumatoid Arthritis / 
+Osteoarthritis 
+12,498,928 
+9,435,276  
+75.5% 
+2,864,595 
+22.9% 
+199,057 
+1.6% 
+Stroke / Transient 
+Ischemic Attack 
+2,600,124 
+1,460,361  
+56.2% 
+92,490 
+3.6% 
+1,047,273 
+40.3% 
+ 
+• 
+For some conditions, a large proportion of beneficiaries have an “ever” date in the 27 CCW Chronic Conditions file 
+(MBSF_CC_2017) that is prior to the date that appears in the 30 CCW Chronic Conditions file 
+(MBSF_CHRONIC_2017).  
+• 
+Although fewer conditions had beneficiaries with “ever” dates in the 30 CCW Chronic Conditions file that preceded 
+the “ever” date in the 27 CCW Conditions file, this was common for Hip/Pelvic Fracture and Stroke/TIA.

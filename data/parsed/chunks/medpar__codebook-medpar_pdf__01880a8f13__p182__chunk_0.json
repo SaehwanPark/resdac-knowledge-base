@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p182__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 182,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n166 \nPA_IND_CD \nLABEL: \nPrior Authorization Indicator Code \nDESCRIPTION: This field identifies the indicator assigned by CMS for each prior authorization program to define the \napplicable line of business i.e., Part A, Part B, DME, Home Health and Hospice. \nSHORT NAME: PA_IND_CD \nLONG NAME: PA_IND_CD \nTYPE: \nCHAR \nLENGTH: \n4 \nSOURCE: \nNCH \nVALUES: \nThe value is a four-digit alpha-numeric code,",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

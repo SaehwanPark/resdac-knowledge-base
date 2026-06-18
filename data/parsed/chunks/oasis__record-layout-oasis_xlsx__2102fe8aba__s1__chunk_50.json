@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_50",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "in treatment and dose monitoring.\n04 = Symptoms poorly controlled, history of rehospitalizations. CHAR 2 x x\nM0240_OTH_DGN4_SEV (M0240) Other Diagnosis Severity Rating - e Other diagnosis severity rating (0-4) e. 00 = Asymptomatic, no treatment needed at this time. \n01 = Symptoms well controlled with current therapy.\n02 = Symptoms controlled with difficulty, affecting daily functioning; patient needs ongoing monitoring.\n03 = Symptoms poorly controlled, patient needs frequent adjustment in",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

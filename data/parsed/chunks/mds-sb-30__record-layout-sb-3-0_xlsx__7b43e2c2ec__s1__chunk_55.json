@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_55",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "identifies whether or not the resident is comatose. -=Not assessed/no information\n0=No\n1=Yes\n87 B0200_HEARG_CD B0200_HEARG_CD B0200 Hearing Code CHAR 1 This data in this column identifies the resident's ability to hear. -=Not assessed/no information\n0=Adequate-no difficulty in normal conversation, social interaction,\nlistening to TV\n1=Minimal difficulty-difficulty in some environments (e.g.,when person\nspeaks softly or setting is noisy\n2=Moderate difficulty-speaker has to increase volume and",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

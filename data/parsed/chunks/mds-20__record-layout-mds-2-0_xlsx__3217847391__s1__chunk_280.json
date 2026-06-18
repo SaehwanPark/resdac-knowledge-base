@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_280",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Medications: injections (number days). This field indicates the number of days the resident received injections during the last 7 days.\n467 O4A O4A_ANTIPSYCHOTIC (O4A) Antipsychotic CHAR 1 Medications: days received the following medication during the last 7 days - antipsychotic.\n468 O4B O4B_ANTIANXIETY (O4B) Antianxiety CHAR 1 Medications: days received the following medication during the last 7 days - antianxiety.\n469 O4C O4C_ANTIDEPRESS (O4C) Antidepressant CHAR 1 Medications: days",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

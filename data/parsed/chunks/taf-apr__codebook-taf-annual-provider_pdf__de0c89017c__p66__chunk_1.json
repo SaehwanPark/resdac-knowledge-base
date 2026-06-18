@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p66__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 66,
+  "text": "NUM \nLENGTH: \n3 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nNumeric value representing provider age, or null/missing. \nCOMMENT: \nApplicable to individual providers only; derived from the same monthly base record as the most recent \nvalue of PRVDR_ENT_TYPE_CD in the calendar year. \nIf PRVDR_AGE is greater than 125, then PRVDR_AGE is set to 125. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

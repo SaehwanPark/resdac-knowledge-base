@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p44__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 44,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n33 \nBILL_TYPE_CD \nLABEL: \nBill Type Code \nDESCRIPTION: A data element corresponding with UB-04 form locator FL4 that classifies the claim as to the type of \nfacility (second digit), type of care (third digit) and the billing record’s sequence in the episode of care \n(fourth digit). (The first digit is always zero.) \nSHORT NAME: BILL_TYPE_CD \nLONG NAME: BILL_TYPE_CD \nTYPE: \nCHAR \nLENGTH:",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,28 @@
+The Health and Retirement Study (HRS)-Medicare linked dataset includes HRS survey information linked to CMS claims and assessment data for the HRS study population. The HRS has been fielded since 1992 and surveys more than 30,000 people age 50 and older.
+The Health and Retirement Study (HRS) is designed to:
+- facilitate understanding of the relationship between medical history and financial status
+- examine how use of health care may change as people age.
+The longitudinal survey data is linked to CMS data to provide information on health care utilization and beneficiary assessment.
+CMS is no longer distributing this file. See the NIA Data LINKAGE Program website to request this data.
+What does this file include? (variable highlights)
+- HRS data include:- Demographic and background information, including household
+- Physical and mental health
+- Cognition
+- Functional limitations
+- Employment
+- Disability
+- Health insurance
+- Assets and Income
+- Wills, including advanced directives
+ 
+- Linked files include:- Medicare denominator/Beneficiary Summary File (BSF)
+- Medicare fee-for-service (FFS) claims
+- Part D drug event (PDE) file
+- Assessment data Minimum Data Set (MDS)- Home Health Outcome and Assessment Information Set (OASIS)
+ 
+- Medicaid Analytic Extract (MAX)- Summary file, inpatient, long term care services, other services, file, drug record, personal summary
+ 
+ 
+Special considerations
+- Years of CMS data vary by file, please see the HRS-Medicare website.
+- Data security requirements are different from the standard CMS requirements. Contact HRS for more information.

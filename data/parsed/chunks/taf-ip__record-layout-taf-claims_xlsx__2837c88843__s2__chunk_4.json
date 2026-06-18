@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_4",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "CHAR 12 22\nWVR_TYPE_CD Waiver Type Code CHAR 2 23\nWVR_ID Waiver Identification Number CHAR 20 24\nOTHR_INSRNC_IND Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid) CHAR 1 25\nSECT_1115A_DEMO_IND 1115(A) Demonstration Participation Indicator CHAR 1 26\nSRVC_BGN_DT Claim Beginning Date of Service DATE 8 27\nSRVC_END_DT Claim Ending Date of Service DATE 8 28\nSRVC_END_DT_CD Identifies the Date Field Used to Populate SRVC_END_DT CHAR 1 29\nADMSN_DT Admission Date DATE 8 30\nADMSN_HR",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

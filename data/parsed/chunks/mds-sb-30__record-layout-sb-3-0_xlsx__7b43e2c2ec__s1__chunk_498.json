@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_498",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "V0100E_PRIOR_MOOD_SCRE_NUM V0100E Prior Assessment Resident Mood Interview (PHQ-9) Total Severity Score Number CHAR 2 The data in this column contains the resident mood interview (PHQ-9) total severity score from the most recent prior OBRA or PPS assessment.\n564 V0200A01A_DLRM_CTR_CD V0200A01A_DLRM_CTR_CD V0200A01A Delirium Care Area Trigger Code CHAR 1 The data in this column indicates whether the Delirium CA was triggered. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n565",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

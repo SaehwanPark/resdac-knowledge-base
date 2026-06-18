@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_231",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "_53A STNDG_BAL_PRBLM_ADMSN_SW (53a) Standing Balance Problem: Admission CHAR 1 A code indicating whether the patient reports at least one episode of dizziness, vertigo, or light-headedness while sitting or standing at the time of admission. 0 = No, 1 = Yes\n192 _53D STNDG_BAL_PRBLM_DSCHRG_SW (53d) Standing Balance Problem: Discharge CHAR 1 A code indicating whether the patient reports at least one episode of dizziness, vertigo, or light-headedness while sitting or standing at the time of",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

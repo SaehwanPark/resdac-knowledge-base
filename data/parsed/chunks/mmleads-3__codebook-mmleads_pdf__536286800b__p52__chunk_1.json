@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p52__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 52,
+  "text": "Claims file (derived) \nVALUES: \n$ \nCOMMENT: \nCCW calculates this variable as the sum of all MDCD_PD_AMT from the OT header claims that are for \nmanaged care capitated payments. These are header claims where the claim type code (T-MSIS \nvariable called CLM_TYPE_CD) is equal to '2' (Medicaid or expansion claim) 'B' (S-CHIP claim) or 'V' \n(Other Services claim). MMLEADS may count claims (in the MDCD_OT_MC_CAPTD_USE variable) for \nwhich there is no corresponding payment information. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

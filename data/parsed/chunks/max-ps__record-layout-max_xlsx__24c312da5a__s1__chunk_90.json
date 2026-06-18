@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_90",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "X\n419 TOT_PYMT_AMT_HCBCS Total payments (HCBCS) NUM 12 X X X X X X X X X X X\n420 RCPNT_DLVRY_CD Recipient maternal delivery code - Annual indicator NUM 1 X X X X X X X X X X X Note - same variable name as IP variable, but different meaning/values\n421 FEE_FOR_SRVC_IND_01 Recipient indicator (MAX TOS 01 - inpatient hospital) CHAR 1 X X X X X X X X X X X\n422 FFS_CLM_CNT_01 Fee-for-service claim count (MAX TOS 01) NUM 6 X X X X X X X X X X X\n423 FFS_PYMT_AMT_01 Fee-for-service Medicaid payment",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

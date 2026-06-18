@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p295__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 295,
+  "text": "services furnished by hospitals and \nhospitals wholly owned or wholly operated Part B entities. \nSHORT NAME: OWNG_PRVDR_TIN_NUM \nLONG NAME: OWNG_PRVDR_TIN_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is not populated prior to 2021. Applies to hospital, types of bill (TOBs) 011x, 013x, and 014x, \nclaims transmitted to CWF on Effective and Term dates, when the Ownership type equals “1” (Hospital \nTIN is Owner) or “2” (Owned by different Hospital TIN). The Medicare",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

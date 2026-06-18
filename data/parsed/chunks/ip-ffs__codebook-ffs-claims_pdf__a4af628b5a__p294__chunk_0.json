@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p294__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 294,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n276 \nOT_PHYSN_UPIN \nLABEL: \nClaim Other Physician UPIN Number \nDESCRIPTION: On an institutional claim, the unique physician identification number (UPIN) of the other physician \nassociated with the institutional claim. \nNPIs replaced UPINs as the standard provider identifiers beginning in 2007. The UPIN is almost never \npopulated after 2009. \nSHORT NAME: OT_UPIN \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

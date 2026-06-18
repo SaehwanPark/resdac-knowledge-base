@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_64",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Cognitive patterns: memory/recall ability - none of above 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n129 B4 B4_DAY_DCSN_MAKING (B4) Daily Decision Making Skills CHAR 1 Cognitive patterns: cognitive skills/daily decision making. 0 = Independent, 1 = Modified Independence - some difficulty in new situations only, 2 = Moderately Impaired - decisions poor; cues/supervision required, 3 = Severely Impaired - never/rarely made decisions, \"-\" = Unknown, -2 = Space.\n130 B5A B5A_DISTRACTED (B5A)",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

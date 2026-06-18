@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_576",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Total Severity Score (Adm) CHAR 2 This column documents the total mood score by adding the frequencies documented in the questions above at the time of admission. 00 = Minimum Total Severity Score \n27 = Maximum Total Severity Score \n99 = Patient was unable to complete the interview \n- = Not Assessed/No Information\n513 TOT_SVRTY_SCRE_DSCHRG_NUM TOT_SVRTY_SCRE_DSCHRG_NUM Total Severity Score (Dsch) CHAR 2 This column documents the total mood score by adding the frequencies documented in the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

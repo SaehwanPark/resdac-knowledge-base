@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_282",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1400 (M0490) When Is Patient Dyspneic This field indicates when the patient is dyspneic or noticeably short of breath. 00 = Never, patient is not short of breath\n01 = When walking more than 20 feet, climbing stairs\n02 = With moderate exertion (e.g., while dressing, using commode or\nbedpan, walking distances less than 20 feet)\n03 = With minimal exertion (e.g., while eating, talking, or performing other ADLs) or with agitation\n04 = At rest (during day or night) CHAR 2 x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

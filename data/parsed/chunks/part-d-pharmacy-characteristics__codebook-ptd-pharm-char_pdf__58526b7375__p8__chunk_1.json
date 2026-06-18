@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p8__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 8,
+  "text": "LONG NAME: DME_SRVC_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n13 = Site does not offer durable medical equipment (DME) \n14 = Site provides off-the-shelf non-custom DME but is not accredited \n15 = Site provides a full range of DME including custom items but is not accredited \n16 = Site is accredited to provide DME limited to pharmaceuticals and diabetic testing supplies \n17 = Site is accredited to provide DME limited to off-the-shelf non-custom products and \npharmaceuticals",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

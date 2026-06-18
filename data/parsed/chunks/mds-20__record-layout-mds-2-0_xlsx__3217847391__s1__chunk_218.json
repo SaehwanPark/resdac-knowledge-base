@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_218",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "J1A_WEIGHT_CHG (J1A) Weight Gain/Loss of 3+ Pounds CHAR 1 Health conditions: problem conditions - indicators of fluid status - weight fluctuations 3+ pounds in 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n341 J1B J1B_NOT_LIE_FLAT (J1B) Inability to Lie Flat Due to Shortness of Breath CHAR 1 Health conditions: problem conditions - indicators of fluid status - inability to lie flat - shortness of breath in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n342 J1C J1C_DEHYDRATED (J1C) Dehydrated/Output",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

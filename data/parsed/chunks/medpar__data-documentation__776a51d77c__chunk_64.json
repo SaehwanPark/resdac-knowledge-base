@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_64",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Percent | \n\n | 355 | INFRMTL_ENCTR_IND_SW | Informational Encounter Indicator | \n\n | 356 | MA_TCHNG_IND_SW | MA Teaching Indicator | \n\n | 357 | PROD_RPLCMT_LIFECYC_SW | Product Replacement within Product Lifecycle (early) | \n\n | 358 | PROD_RPLCMT_RCLL_SW | Product Replacement for Recall of Product | \n\n | 359 | CRED_RCVD_RPLCD_DVC_SW | Credit Received Replaced Device | \n\n | 360 | OBSRVTN_SW | Observation Unit Indicator | \n\n | 361 | NEW_TCHNLGY_ADD_ON_AMT | New Technology Add On Amount | \n\n | 362",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

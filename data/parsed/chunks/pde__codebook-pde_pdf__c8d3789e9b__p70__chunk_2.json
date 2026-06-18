@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p70__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 70,
+  "text": "SUBMSN_CLRFCTN_CD_4 \nSUBMSN_CLRFCTN_CD_5 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nPDE \nVALUES: \n00 = (Unknown value – rarely populated) \n05 = Therapy change. Physician determined that a change in therapy was required – either the \nmedication was used faster than expected, or a different dosage form is needed. \n07 = Emergency supply of non-formulary drugs (or formulary drugs which typically require step \ntherapy or prior authorization). Medication has been determined by the physician to be medically",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

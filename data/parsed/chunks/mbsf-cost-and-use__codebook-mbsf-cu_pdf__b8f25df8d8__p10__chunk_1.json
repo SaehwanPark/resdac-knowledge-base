@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p10__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 10,
+  "text": "year. \nMedicare payments are designed to include certain \"pass-through\" expenses such as capital-related \ncosts, direct medical education costs, kidney acquisition costs for hospitals that are renal transplant \ncenters, and bad debts. This variable is the sum of all the daily payments for pass-through expenses. It is \nnot included in the Medicare Payment amount (ACUTE_MDCR_PMT). To determine the total Medicare \npayments for acute hospitalizations for the beneficiary, this field must be added to",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_8",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "CHAR 1 47\nDGNS_CD_5 Diagnosis Code 5 CHAR 7 48\nDGNS_VRSN_CD_5 Diagnosis Version Code 5 (ICD-9 or ICD-10) CHAR 1 49\nDGNS_POA_IND_5 Diagnosis 5 Present on Admission Indicator CHAR 1 50\nHAC_IND Health Care Acquired Condition (HAC) Indicator CHAR 1 51\nMH_DGNS_IND Mental Health Diagnosis Indicator CHAR 1 52\nSUD_DGNS_IND Substance Use Disorder Diagnosis Indicator CHAR 1 53\nADMTG_PRVDR_ID Admitting Provider Identification Number CHAR 30 54\nADMTG_PRVDR_NPI Admitting Provider NPI CHAR 10",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

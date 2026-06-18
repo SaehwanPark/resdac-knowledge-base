@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__data-documentation__fcdee80764__chunk_43",
+  "source_document": "data/raw/html/documentation_page/fcdee80764dd59910f6190a9dd2c63ce3d8c2906.html",
+  "page": null,
+  "text": "| Claim Model 4 Readmission Indicator Code | \n\n | 225 | CLM_UNCOMPD_CARE_PMT_AMT | Claim Uncompensated Care Payment Amount | \n\n | 226 | CLM_BNDLD_ADJSTMT_PMT_AMT | Claim Bundled Adjustment Payment Amount | \n\n | 227 | CLM_VBP_ADJSTMT_PMT_AMT | Claim Value-Based Purchasing Adjustment Payment Amount | \n\n | 228 | CLM_HRR_ADJSTMT_PMT_AMT | Claim Hospital Readmission Reduction (HRR) Adjustment Payment Amount | \n\n | 229 | EHR_PYMT_ADJSTMT_AMT | Claim Electronic Health Record (EHR) Payment Adjustment",
+  "dataset": "ip-ffs",
+  "url": "https://resdac.org/cms-data/files/ip-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_238",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Independence Code CHAR 1 The data in this column indicates whether the resident believes that they are capable of increased independence. -=Not assessed/no information\n0=No\n1=Yes\n9=Unable to Determine\n^=Blank(skip pattern) discontinued 09/30/2023\n253 G0900B_STF_INCRS_INDPNDNC_CD G0900B_STF_INCRS_INDPNDNC_CD G0900B Functional Rehabilitation Potential: Staff Increased Independence Code CHAR 1 The data in this column indicates whether direct care staff believes that the resident is capable of",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

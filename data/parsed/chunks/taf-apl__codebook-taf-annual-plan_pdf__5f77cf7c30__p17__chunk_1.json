@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 17,
+  "text": "ended for every accreditation organization record. \nSHORT NAME: \nMC_ENT_ACRDTN_END_DT_1 \nMC_ENT_ACRDTN_END_DT_2 \nMC_ENT_ACRDTN_END_DT_3 \nMC_ENT_ACRDTN_END_DT_4 \nMC_ENT_ACRDTN_END_DT_5 \nLONG NAME: \nMC_ENT_ACRDTN_END_DT_1 \nMC_ENT_ACRDTN_END_DT_2 \nMC_ENT_ACRDTN_END_DT_3 \nMC_ENT_ACRDTN_END_DT_4 \nMC_ENT_ACRDTN_END_DT_5 \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nDate (numeric, system dependent) \n31DEC9999 = (default value) no ending date/still",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

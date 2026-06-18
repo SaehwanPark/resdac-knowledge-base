@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_24",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "CLM_OP_PRVDR_PMT_AMT Claim Outpatient Provider Payment Amount NUM 12 134\nBENEPMT CLM_OP_BENE_PMT_AMT Claim Outpatient Payment Amount to Beneficiary NUM 12 135\nDOB_DT DOB_DT Date of Birth from Claim DATE 8 136\nRACE_CD BENE_RACE_CD Race Code from Claim CHAR 1 137\nCNTY_CD BENE_CNTY_CD County Code from Claim (SSA) CHAR 3 138\nSTATE_CD BENE_STATE_CD Beneficiary Residence (SSA) State Code CHAR 2 139\nZIP_CD BENE_MLG_CNTCT_ZIP_CD ZIP Code of Residence from Claim CHAR 9 140\nCLM_MDCL_REC CLM_MDCL_REC",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

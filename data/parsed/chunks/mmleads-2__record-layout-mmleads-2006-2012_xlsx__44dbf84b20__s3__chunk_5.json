@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s3__chunk_5",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 3,
+  "text": "Counts BENE_CNT Unduplicated beneficiary count 1 - single row of data for the person\n1/x - person used x distinct level 3 services in the file\nUSER1_CNT Unduplicated SRVC_1 user count 0 - person did not use any service in the file\n1/x - 1.0 - person used x distinct level 1 services in the file\nUSER2_CNT Unduplicated SRVC_2 user count 0 - person did not use any service in the file\n1/x - 1.0 - person used x distinct level 2 services in the file\nUSER3_CNT Unduplicated SRVC_3 user count 0 - person",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p143__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 143,
+  "text": "— \nCOMMENT: \nThis field is new in October 2014 (it is not populated). This field only applies to Inpatient claims. \nThis field is derived by accumulating the Claim IPPS Flexible Payment 7 Amount (CLM-IPPS-FLEX-PMT-7-\nAMT) that is present on any of the claim records included in the stay (i.e., the sum of the claim IPPS \nflexible payment 7 amounts reported on the claims that comprise the stay). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

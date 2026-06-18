@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_171",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "of motion in last 7 days - foot - including ankle or toes- voluntary movement. 0 = No Loss, 1 = Partial Loss, 2 = Full Loss, \"-\" = Unknown.\n240 G4FA G4FA_OTH_RANGE (G4FA) Other Limitation of Range of Motion CHAR 1 Physical functioning and structural problems: functional limitation in range of motion in last 7 days - other limitations or loss - range of motion. 0 = No Limitation, 1 = Limitation on one side, 2 = Limitation on both sides, \"-\" = Unknown.\n241 G4FB G4FB_OTH_MOVE (G4FB) Other",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p258__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 258,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n218 \nMSIS_ID \nLABEL: \nEncrypted State Assigned Beneficiary Unique Identifier \nDESCRIPTION: A state-assigned unique identification number used to identify a Medicaid/CHIP enrolled beneficiary \nand any claims submitted to the system. Also referred to as the Medicaid Statistical Information \nSystem Identifier (MSIS_ID). \nSHORT NAME: MSIS_ID \nLONG NAME: MSIS_ID \nTYPE:",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

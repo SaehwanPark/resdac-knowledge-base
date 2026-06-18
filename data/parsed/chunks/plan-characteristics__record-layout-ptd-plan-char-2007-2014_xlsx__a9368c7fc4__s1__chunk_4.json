@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_4",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "1 X X X X X X\nGAP_COVERAGE_TYPE Type of Gap Coverage Offered CHAR 2 X X LC X X X\nDEMINIMIS_PD_FLAG Deminimis Paid Flag CHAR 1 - - - - - X\nDED_APPLY How Part D Deductible is Applied CHAR 1 X X X X X X\nDED_AMT Part D Deductible Amount NUM 8 X X LC X X X\nDED_APPLY_ALL Type of Cost Sharing in the Deductible Phase CHAR 1 X X X X X X\nDED_GENERIC_COPAY Part D Co-Payment Amount for Generic Drugs in Deductible NUM 8 X X LC - - -\nDED_COSTSHARE_TIERS Tiers with Cost Sharing in the Deductible Phase CHAR 6",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

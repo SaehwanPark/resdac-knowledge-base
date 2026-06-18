@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p124__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 124,
+  "text": "MedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the value amount associated with value code = 18 that is present on \nany of the claim records included in the stay (i.e., the sum of value code 18 amounts reported on the \nclaims that comprise the stay). \nThis amount is already included in the MEDPAR Medicare payment amount (field called PMT_AMT). \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

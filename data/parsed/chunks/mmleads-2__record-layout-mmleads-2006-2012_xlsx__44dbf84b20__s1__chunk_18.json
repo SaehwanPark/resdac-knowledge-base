@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "dual \n2 - Medicare only\n1 - Medicaid only with a disability\nNull/missing\nE_MME_TYPE Annual Medicare-Medicaid enrollment (MME) type classification. 5 - Full dual \n4 - QMB dual \n3 - Partial dual \n2 - Medicare only\n1 - Medicaid only with a disability\nE_FD_MOS Months full dual coverage. XX\nE_QMB_MOS Months QMB dual coverage XX\nE_PD_MOS Months partial dual coverage. XX\nE_MEDICAREONLY_MOS Months Medicare only coverage. XX\nE_MEDICAIDONLY_MOS Months Medicaid only with a disability (coverage).",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

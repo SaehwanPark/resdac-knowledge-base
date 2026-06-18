@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_104",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "O3 O3_INJECTIONS 37(O3)Injections CHAR 1 A determination of the number of days during the past seven days that the patient received any type of medication, antigen, vaccines (including influenza and pneumovax), and/or PPD tests, by subcutaneous, intramuscular or intradermal injection. 0 = Unchecked, 1 = Checked, -1 = Unknown\n133 P1AA P1AA_CHEMO 38aa(P1aa)Special Care - Chemotherapy CHAR 1 Indicates the patient received any type of chemotherapy given by any route. 0 = Unchecked, 1 = Checked, -1",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

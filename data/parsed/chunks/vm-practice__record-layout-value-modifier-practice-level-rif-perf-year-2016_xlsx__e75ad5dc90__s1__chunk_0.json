@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-practice__record-layout-value-modifier-practice-level-rif-perf-year-2016_xlsx__e75ad5dc90__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/e75ad5dc90d8b0bcd7b35ea5b41e8e51e49d04b1.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nValue Modifier Practice-Level RIF / Performance Year 2016\nVersion - August 2018\nVariable Name Variable Label (Short Description) Long Description Position Format Length Notes\nPRACTICE_ID Unique identifier of practice Unique identifier of practice 1 Char 11\nPRACTICE_NAME Name of practice found in PECOS Full Medical Group Practice Name 2 Char 70\nSTATE Location (state) of practice State in which practice is located 3 Char 2\nGET_REPORT",
+  "dataset": "vm-practice",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-practice-level-rif-perf-year-2016.xlsx"
+}

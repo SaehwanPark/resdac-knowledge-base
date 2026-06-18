@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-provider__data-documentation__89a050d3ee__chunk_1",
+  "source_document": "data/raw/html/documentation_page/89a050d3eeaecbde9f3604180849d89b9fb097cf.html",
+  "page": null,
+  "text": "locate the information you need, please contact ResDAC.\n| SAS Name | Variable Name | \n|---|---|\n| MODEL_ID | Model Identifier | \n| ENTITY_ID | Entity Identifier | \n| PRVDR_TIN | Taxpayer Identification Number of Provider | \n| NPI | Provider's National Provider Identifier | \n| PRVDR_CCN | CMS Certification Number of Provider | \n| START_DATE | Provider Start Date | \n| END_DATE | Provider End Date | \n| PART_TYPE | Provider Participation Type |",
+  "dataset": "cmds-provider",
+  "url": "https://resdac.org/cms-data/files/cmds-provider/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_290",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "C0200 BIMS: Number of Words Repeated After First Attempt - The data in this column identifies the number of words that the patient repeated after the first attempt. CHAR 1 The data in this column identifies the number of words that the patient repeated after the first attempt. 0 = None\n1 = One\n2 = Two\n3 = Three\n280 C0300A_RPT_YR_CD C0300A_RPT_YR_CD C0300A BIMS: Temporal Orientation - Able to Report Correct Year - The data in this column identifies how closely the patient knew the current year.",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

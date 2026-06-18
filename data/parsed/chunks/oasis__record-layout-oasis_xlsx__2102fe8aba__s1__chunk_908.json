@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_908",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Nutritional Approaches (7 days): None Indicates whether, in the past seven days, the patient's nutritional approach did not include any of the above methods. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nK0520Z5_NTRTN_NONE_DSCHRG_CD Nutritional Approaches (Discharge): None Indicates whether, at discharge, the patient's nutritional approach did not include any of the above methods. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nN0415A1_ANTPSYCT_TKNG_CD High-Risk Drug (Is Taking):",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

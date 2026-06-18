@@ -1,0 +1,20 @@
+The Centers for Medicare and Medicaid Services (CMS) has created a set of files that contain Pioneer Accountable Care Organizations information. There are three separate files in the set:
+- Provider-includes one record for each facility or professional participating provider
+- Beneficiary-each record represents an individual beneficiary who was associated with a Pioneer ACO
+- Settlement-one record for each Pioneer ACO provides information on the post-performance year financial settlement
+What does this file include? (variable highlights)
+- Provider file- Pioneer ACO ID
+- Tax identification number
+- Provider specialty code
+ 
+- Beneficiary file- Bene ID
+- Pioneer ACO ID
+- Aggregated expenditures and claim counts
+ 
+- Settlement file- Pioneer ACO ID
+- Beneficiary counts
+- Performance year expenditures and savings
+ 
+Special considerations
+- Each file needs to be specified separately on a data request.
+- Only the Pioneer ACO Beneficiary file can be linked to other CMS data via the Bene ID.

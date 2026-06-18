@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_66",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Payment Adjustment Amount | \n\n | 367 | VBP_ADJSTMT_AMT | Hospital Value Based Purchasing (VBP) Amount | \n\n | 368 | HRR_ADJSTMT_AMT | Hospital Readmission Reduction (HRR) Adjustment Amount | \n\n | 369 | EHR_PYMT_ADJSTMT_AMT | Electronic Health Record (EHR) Payment Adjustment Amount | \n\n | 370 | PPS_STD_VAL_PYMT_AMT | Standard Payment Amount | \n\n | 371 | FINL_STD_AMT | Final Standard Payment Amount | \n\n | 372 | IPPS_FLEX_PYMT_6_AMT | Flexible Payment Amount (6th) - renamed to Hospital Acquired",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

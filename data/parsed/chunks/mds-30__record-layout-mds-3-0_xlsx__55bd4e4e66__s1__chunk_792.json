@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_792",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "y\n2=Sometimes\n3=Often\n4=Always\n7=Resident declines to respond\n8=Resident unable to respond effective 10/01/2023\n885 LMTN_UPR_XTRMTY_CD LMTN_UPR_XTRMTY_CD GG0115A Functional limits - Upper extremity CHAR 1 The data in this column indicates whether the resident had upper extremity (shoulder, elbow, wrist, hand) limitations that interfered with daily functions or placed them at risk of injury in the last seven days. 0=No impairment\n1=Impairment on one side\n2=Impairment on both sides effective",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

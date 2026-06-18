@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p7__chunk_3",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 7,
+  "text": "year \nto identify HCCs. For the 2019 CCW HCC data files, the payment/prediction year is 2019 and the model uses \ninformation from Medicare services provided in 2018. \nCMS typically performs multiple operational model runs for each payment year, including an initial run, mid-year, and \nfinal. The CCW base (resolved) risk score files reflect the final run for each payment year. CMS runs the data for each \nMedicare beneficiary through each model and calculates risk scores for each model segment.",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

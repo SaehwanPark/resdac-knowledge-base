@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p218__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 218,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n200 \nLINE_BENE_PRMRY_PYR_PD_AMT \nLABEL: \nLine Primary Payer (if not Medicare) Paid Amount \nDESCRIPTION: The amount of a payment made on behalf of a Medicare beneficiary by a primary payer other than \nMedicare, that the provider is applying to covered Medicare charges for the line-item service on the \nnon-institutional claim. \nSHORT NAME: LPRPDAMT \nLONG NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

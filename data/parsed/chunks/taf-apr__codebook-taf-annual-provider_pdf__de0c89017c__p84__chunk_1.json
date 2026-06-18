@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p84__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 84,
+  "text": "business under a name that \ndiffers from the company's legal name, most recent in the calendar year. \nSHORT NAME: PRVDR_DBA_NAME \nLONG NAME: PRVDR_DBA_NAME \nTYPE: \nCHAR \nLENGTH: \n150 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nText string (e.g., UNIVERSAL CLINICS INC), or null/missing. \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

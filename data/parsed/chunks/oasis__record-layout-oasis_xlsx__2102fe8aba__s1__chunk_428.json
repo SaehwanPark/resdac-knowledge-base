@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_428",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "health care provider (for example, physician, pharmacist)\n04 = No; patient offered and declined\n05 = No; patient assessed and determined to have medical contraindication(s)\n06 = No; not indicated - patient does not meet age/condition guidelines for\ninfluenza vaccine\n07 = No; inability to obtain vaccine due to declared shortage\n08 = No; patient did not receive the vaccine due to reasons other than those listed in responses 4 - 7 CHAR 2 x x x x x\nM1051_PPV_RCVD_AGNCY M1051 (M1050) Pneumococcal",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

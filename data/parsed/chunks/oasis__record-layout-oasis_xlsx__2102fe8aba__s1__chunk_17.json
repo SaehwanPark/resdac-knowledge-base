@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(or physician designee). 0 = Not Checked (Not NA), 1 = Checked (NA) CHAR 1 x x x x x x x\nM0104_PHYSN_RFRL_DT M0104 Physician Date of Referral This field indicates the date the written orders from the physician for initiation or resumption of care were received by the HHA. DATE 8 x x x x x x x\nM0140_ETHNIC_AI_AN (M0140) American Indian or Alaska Native Race/ethnicity as identified by patient: American Indian or Alaska native. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

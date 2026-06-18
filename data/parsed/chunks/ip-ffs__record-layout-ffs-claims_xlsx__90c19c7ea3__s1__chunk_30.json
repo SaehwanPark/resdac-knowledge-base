@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 1,
+  "text": "Claim Diagnosis E Code VII CHAR 7 134\nCLM_E_POA_IND_SW7 CLM_E_POA_IND_SW7 Claim Diagnosis E Code VII Diagnosis Present on Admission Indicator Code CHAR 1 135\nICD_DGNS_E_CD8 ICD_DGNS_E_CD8 Claim Diagnosis E Code VIII CHAR 7 136\nCLM_E_POA_IND_SW8 CLM_E_POA_IND_SW8 Claim Diagnosis E Code VIII Diagnosis Present on Admission Indicator Code CHAR 1 137\nICD_DGNS_E_CD9 ICD_DGNS_E_CD9 Claim Diagnosis E Code IX CHAR 7 138\nCLM_E_POA_IND_SW9 CLM_E_POA_IND_SW9 Claim Diagnosis E Code IX Diagnosis Present on",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

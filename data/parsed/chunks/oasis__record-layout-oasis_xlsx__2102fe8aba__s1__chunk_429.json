@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_429",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "other than those listed in responses 4 - 7 CHAR 2 x x x x x\nM1051_PPV_RCVD_AGNCY M1051 (M1050) Pneumococcal Vaccine (PPV) Received In Agency This field indicates if the patient received the PPV during this episode of care in agency. 0 = No, 1 = Yes CHAR 1 x x x x x\nM1056_PPV_RSN_NOT_EVER_RCVD M1056 (M1055) Pneumococcal Vaccine (PPV) - Reason Not Received This field indicates the reason why the PPV was not received from the agency during this episode of care. 01 = Offered and declined\n02 =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

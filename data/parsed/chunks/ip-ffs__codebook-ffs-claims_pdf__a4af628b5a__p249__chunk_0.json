@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p249__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 249,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n231 \nLINE_RSDL_PYMT_IND_CD \nLABEL: \nLine Residual Payment Indicator Code \nDESCRIPTION: This field is used by CWF claims processing for the purpose of bypassing its normal MSP editing that \nwould otherwise apply for ongoing responsibility for medicals (ORM) or worker's compensation \nMedicare Set-Aside Arrangements (WCMSA). Normally, CWF does not allow a secondary payment on",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "code for beneficiary CHAR 5\nSTATE_CNTY_FIPS_CD_01 STATE_CNTY_FIPS_CD_01 State and county FIPS code - January CHAR 5\nSTATE_CNTY_FIPS_CD_02 STATE_CNTY_FIPS_CD_02 State and county FIPS code - February CHAR 5\nSTATE_CNTY_FIPS_CD_03 STATE_CNTY_FIPS_CD_03 State and county FIPS code - March CHAR 5\nSTATE_CNTY_FIPS_CD_04 STATE_CNTY_FIPS_CD_04 State and county FIPS code - April CHAR 5\nSTATE_CNTY_FIPS_CD_05 STATE_CNTY_FIPS_CD_05 State and county FIPS code - May CHAR 5\nSTATE_CNTY_FIPS_CD_06",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

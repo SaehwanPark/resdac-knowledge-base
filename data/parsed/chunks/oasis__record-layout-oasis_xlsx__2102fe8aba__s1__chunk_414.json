@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_414",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "controlled with difficulty, affecting daily functioning;\npatient needs ongoing monitoring\n03 = Symptoms poorly controlled, patient needs frequent adjustment in\ntreatment and dose monitoring\n04 = Symptoms poorly controlled, history of rehospitalizations CHAR 2 x x x x\nM1025_PMT_DGNS_ICD_A3_CD M1025 (M0246) Case Mix Dx - Primary ICD10; Col3 This field lists optional diagnoses (ICD-10), column 3, not used for payment. CHAR 8 x x\nM1025_PMT_DGNS_ICD_A4_CD M1025 (M0246) Case Mix Dx - Primary ICD10;",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

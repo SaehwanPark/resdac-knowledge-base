@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p80__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 80,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n74 \nREADMISSIONS \nLABEL: \nAcute Inpatient Hospital Readmissions \nDESCRIPTION: This variable is the count of hospital readmissions in the acute inpatient setting for a given year. \nThe CLM_THRU_DT for the original admission must have been in the year of the data file, however it \nwas permissible for the readmission claim to have occurred in January of the following year. A",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

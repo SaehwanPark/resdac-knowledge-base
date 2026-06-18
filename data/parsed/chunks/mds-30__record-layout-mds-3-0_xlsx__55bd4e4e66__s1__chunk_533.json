@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_533",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "used for PPS (OMRA, significant or clinical\nchange, or significant correction assessment)\n99=None of the above\n^=Blank (Skip Pattern) effective 10/01/2023\n612 X0600C_CRCTN_PPS_OMRA_CD X0600C_CRCTN_PPS_OMRA_CD X0600C PPS Other Medicare Required Assessment (OMRA) Code CHAR 1 The data in this column indicates the PPS Other Medicare Required Assessment (A0310C) code from the prior erroneous record to be modified or inactivated. 0=No\n 1=Start of therapy assessment\n 2=End of therapy assessment",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

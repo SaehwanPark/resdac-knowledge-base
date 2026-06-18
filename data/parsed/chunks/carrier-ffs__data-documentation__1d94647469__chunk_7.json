@@ -1,0 +1,8 @@
+{
+  "chunk_id": "carrier-ffs__data-documentation__1d94647469__chunk_7",
+  "source_document": "data/raw/html/documentation_page/1d94647469e83d6f113be85ff63b3d64ecbcd28d.html",
+  "page": null,
+  "text": "Carrier Line Miles/Time/Units/Services (MTUS) Indicator Code | \n\n | LINE_ICD_DGNS_CD | Line Diagnosis Code | \n\n | LINE_ICD_DGNS_VRSN_CD | Line Diagnosis Code Diagnosis Version Code (ICD-9 or ICD-10) | \n\n | HPSA_SCRCTY_IND_CD | Carrier Line Health Professional Shortage Area (HPSA)/Scarcity Indicator Code | \n\n | CARR_LINE_RX_NUM | Carrier Line RX Number (FFS) | \n\n | LINE_HCT_HGB_RSLT_NUM | Hematocrit/Hemoglobin Test Results | \n\n | LINE_HCT_HGB_TYPE_CD | Hematocrit/Hemoglobin Test Type Code | \n\n |",
+  "dataset": "carrier-ffs",
+  "url": "https://resdac.org/cms-data/files/carrier-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_103",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "daily, \"-\" = Unknown, -2 = Space.\n177 E4AB E4AB_WANDERS_ALT (E4AB) Wandering Alterability CHAR 1 Mood and behavior patterns: behavioral symptoms - wandering -behavior symptom alterability. 0 = Behavior not present OR behavior easily altered, 1 = Behavior was not easily altered, \"-\" = Unknown, -2 = Space.\n178 E4BA E4BA_VRBL_ABUSIVE (E4BA) Verbally Abusive Frequency CHAR 1 Mood and behavior patterns: behavioral symptoms - verbally abusive behavioral symptoms - behavior symptom frequency. 0 =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

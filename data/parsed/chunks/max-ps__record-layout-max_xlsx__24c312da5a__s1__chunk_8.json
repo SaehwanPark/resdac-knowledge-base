@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_8",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "NP NP NP NP NP\n34 EL_MDCR_QTR_XOVR_OLD_3 Quarterly crossover code (Old Quarter 3) NUM 1 X NP NP NP NP NP NP NP NP NP NP\n35 EL_MDCR_QTR_XOVR_OLD_4 Quarterly crossover code (Old Quarter 4) NUM 1 X NP NP NP NP NP NP NP NP NP NP\n36 EL_MDCR_DUAL_ANN Medicare dual code (Annual) CHAR 2 X X X X X X X X 35 X X\n37 EL_MDCR_QTR_XOVR_99_1 Quarterly crossover code (Quarter 1) CHAR 2 X X X NP NP NP NP NP NP NP NP\n38 EL_MDCR_QTR_XOVR_99_2 Quarterly crossover code (Quarter 2) CHAR 2 X X X NP NP NP NP NP NP NP",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

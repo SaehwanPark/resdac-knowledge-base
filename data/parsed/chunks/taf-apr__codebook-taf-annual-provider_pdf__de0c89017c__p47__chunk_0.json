@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p47__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 47,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n38 \nMLT_SNGL_SPCLTY_GRP_TXNMY_IND \nLABEL: \nMulti- or Single-Specialty Group Taxonomy Indicator — Ever in Calendar Year \nDESCRIPTION: Indicates whether the provider’s taxonomy value maps to the multi or single specialty group service \nprovider category; ever in the calendar year. \nSHORT NAME: MLT_SNGL_SPCLTY_GRP_TXNMY_IND \nLONG NAME: MLT_SNGL_SPCLTY_GRP_TXNMY_IND \nTYPE:",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

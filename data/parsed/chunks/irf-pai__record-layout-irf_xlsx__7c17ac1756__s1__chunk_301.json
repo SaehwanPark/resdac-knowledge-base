@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_301",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "0 = No\n1 = Yes\n290 C0900C_RCLL_STF_NAME_CD C0900C_RCLL_STF_NAME_CD C0900C Memory/Recall - Staff Names/Faces (3-day Asmt Prd) - The data in this column indentifies whether or not the patient was able to recall staff names and faces during the three-day assessment period. CHAR 1 The data in this column identifies whether or not the patient was able to recall staff names and faces during the three-day assessment period. 0 = No\n1 = Yes\n291 C0900E_RCLL_HOSP_IND C0900E_RCLL_HOSP_IND C0900E",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 12,
+  "text": "B. 2025 MCAHPS Format Tables\n12\nca_routine: RECODE : Last 6 mths, make in-person/phone/video appointment for check-up or routine care\nSAS Format: YNA\n1: YES\n2: NO\nca_rtnasaw: RECODE : Last 6 mths, how often get appt for routine care as soon as needed\nSAS Format: OFA\n1: NEVER\n2: SOMETIMES\n3: USUALLY\n4: ALWAYS\nca_visits: RECODE : Last 6 mths, how many in-person/phone/video visits for health care\nSAS Format: NMA\n0: NONE\n1: 1 TIME\n2: 2\n3: 3\n4: 4\n5: 5 TO 9\n6: 10 OR MORE TIMES\ncnd_angina: RECODE : Dr",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

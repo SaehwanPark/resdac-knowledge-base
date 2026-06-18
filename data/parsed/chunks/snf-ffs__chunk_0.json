@@ -1,0 +1,8 @@
+{
+  "chunk_id": "snf-ffs__chunk_0",
+  "source_document": "data/raw/html/dataset_page/8377dc546ecfb2a54ed25e3e14aa2eeb838960e6.html",
+  "page": null,
+  "text": "The Original Medicare Fee-for-Service (FFS) Skilled Nursing Facility (SNF) file contains information from paid bills submitted by SNF institutional facility providers. Skilled nursing care is the only level of nursing home care that is covered by the Medicare program.\nThe information on the file records is based on the CMS form 1450 (UB04).\nWhat does this file include? (variable highlights)\n- Diagnosis codes (ICD diagnosis)\n- Procedure codes (ICD procedure)\n- Admission/discharge dates\n- FFS",
+  "dataset": "snf-ffs",
+  "url": "https://resdac.org/cms-data/files/snf-ffs"
+}

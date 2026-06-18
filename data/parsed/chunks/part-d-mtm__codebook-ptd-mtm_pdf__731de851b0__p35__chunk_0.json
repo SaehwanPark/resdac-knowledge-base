@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p35__chunk_0",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 35,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Part D Medication Therapy Management Enrollment │ May 2024│ V 1.3 \n31 \nTMR_PERF_DT \nLABEL: \nDate the first targeted medication review (TMR) was performed \nDESCRIPTION: This variable indicates the date the first targeted medication review (TMR) was performed \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThis variable is new in 2019. \n^ Back to TOC ^",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

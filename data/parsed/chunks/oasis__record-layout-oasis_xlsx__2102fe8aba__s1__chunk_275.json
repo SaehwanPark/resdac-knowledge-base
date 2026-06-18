@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_275",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "to the length. CHAR 4 x\nM1314_PRSR_ULCR_DEPTH M1314 Largest Pressure Ulcer Depth This field records the depth of the same pressure ulcer; from the visible surface to the deepest area. CHAR 4 x\nM1320_STUS_PRBLM_PRSR_ULCR M1320 Status Of Most Problematic Pressure Ulcer This field indicates the status of the most problematic (observable) pressure ulcer. 00 = Newly epithelialized\n01 = Fully granulating\n02 = Early/partial granulation\n03 = Not healing\nNA = No observable pressure ulcer CHAR 2 x x x x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

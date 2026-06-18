@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p14__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 14,
+  "text": "Formatted as MMDDYY10 in SAS \nIn OCM, episodes were initiated on the date of service for an initial Part B chemotherapy drug claim \nwith a corresponding cancer diagnosis on the claim, or on the fill date for an initial Part D \nchemotherapy drug claim with a corresponding Part B claim for cancer on the date of, or in the 59 \ndays preceding, the drug claim (variable called EPSD_BGN_DT). Episodes continued for six months \nafter the triggering chemotherapy event, as long as the beneficiary met",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

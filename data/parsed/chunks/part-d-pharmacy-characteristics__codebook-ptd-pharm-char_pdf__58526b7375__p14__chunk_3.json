@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p14__chunk_3",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 14,
+  "text": "proprietary \nNCPDP_ID that will allow linkage between the PDE and Pharmacy Characteristics Files. \nThe NCPDP_ID variable is populated by linking the service provider identification number \n(SRVC_PRVDR_ID) from the source PDE to the proprietary National Council for Prescription Drug \nPrograms (NCPDP) Database. The variable is populated for every PDE that can be linked to the NCPDP \npharmacy data for that year, and will occasionally be null if there was no conclusive link between the \nservice",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

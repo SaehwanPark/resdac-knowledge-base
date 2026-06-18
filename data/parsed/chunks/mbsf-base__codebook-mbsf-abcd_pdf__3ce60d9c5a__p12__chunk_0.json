@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p12__chunk_0",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 12,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D Codebook │ May 2026 │ V 1.9 \n4 \nBENE_ENROLLMT_REF_YR \nLABEL: \nReference Year \nDESCRIPTION: This field indicates the reference year of the enrollment data. \nSHORT NAME: RFRNC_YR \nLONG NAME: BENE_ENROLLMT_REF_YR \nTYPE: \nNUM \nLENGTH: \n4 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n1999 – current data year \nCOMMENT: \nThe data files are partitioned into calendar year files. \n^ Back to TOC ^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

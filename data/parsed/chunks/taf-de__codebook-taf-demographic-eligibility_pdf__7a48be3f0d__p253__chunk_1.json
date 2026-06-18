@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p253__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 253,
+  "text": "MISG_ENRLMT_TYPE_IND_11 \nMISG_ENRLMT_TYPE_IND_12 \nLABEL: \nMissing Enrollment Type Code in Monthly Beneficiary Summary File — January–December (01–12) \nDESCRIPTION: A flag to indicate that the person had only unknown enrollment in the month. There are separate \nvariables for each of the 12 months during the year. \nSHORT NAME: \nMISG_ENRLMT_TYPE_IND_01 \nMISG_ENRLMT_TYPE_IND_02 \nMISG_ENRLMT_TYPE_IND_03 \nMISG_ENRLMT_TYPE_IND_04 \nMISG_ENRLMT_TYPE_IND_05 \nMISG_ENRLMT_TYPE_IND_06",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

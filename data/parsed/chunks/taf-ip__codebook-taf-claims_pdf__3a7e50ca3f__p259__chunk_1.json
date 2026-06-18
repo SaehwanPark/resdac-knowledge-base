@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p259__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 259,
+  "text": "individuals who \nfurnish his/her services), Budget Authority (The beneficiary has decision-making authority over how \nthe Medicaid funds in a budget are spent), or both Hiring and Budget Authority. \nSHORT NAME: SELF_DRCTN_TYPE_CD \nLONG NAME: SELF_DRCTN_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nOT line \nVALUES: \n000 = Not Applicable \n001 = Hiring Authority \n002 = Budget Authority \n003 = Hiring and Budget Authority \nNull/missing = Source value is",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

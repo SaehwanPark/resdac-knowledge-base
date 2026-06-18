@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p115__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 115,
+  "text": "NAME: PRVDR_NUM \nTYPE: \nCHAR \nLENGTH: \n30 (prior to the 2023 file, the length was 12) \nFILE(S): \nAPR Identifiers \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nAlphanumeric character string (e.g.,51275987, 9999999999, 0000000012) \nCOMMENT: \nThe provider number type code (PRVDR_NUM_SYS) indicates the type of number used to populate \nthis field, which is assigned by the issuing entity (PRVDR_NUM_ISSG_ENT_ID). \nIf the Provider Number System/Nomenclature (variable called PRVDR_NUM_SYS)= 7 (Social",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

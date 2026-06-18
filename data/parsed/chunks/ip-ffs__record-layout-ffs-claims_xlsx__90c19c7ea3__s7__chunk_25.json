@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s7__chunk_25",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 7,
+  "text": "LINE_RR_BRD_EXCLSN_IND_SW Line Railroad Board Exclusion Indicator Switch CHAR 1 64 New2\nLINE_VLNTRY_SRVC_IND_CD LINE_VLNTRY_SRVC_IND_CD Line Voluntary Service Indicator Code CHAR 1 65 New3\nDMERC_OXGN_EQUIP_INITL_DT DMERC_OXGN_EQUIP_INITL_DT Oxygen Equipment Initial Date DATE 8 66 New5\nDMERC_OXGN_INITL_DT_CD DMERC_OXGN_INITL_DT_CD Oxygen Equipment Initial Date Code CHAR 1 67 New5\nDMERC_OXGN_EQUIP_PRVS_DT DMERC_OXGN_EQUIP_PRVS_DT Oxygen Equipment Previous Date DATE 8 68",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

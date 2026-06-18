@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p200__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 200,
+  "text": "a HIPPS code if the revenue center code (REV_CNTR) equals 0022 for SNF care, \n0023 for home health, or 0024 for IRF care. \nFor home health claims, please also reference the revenue center APC/HIPPS code variable \n(REV_CNTR_APC_HIPPS_CD). \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

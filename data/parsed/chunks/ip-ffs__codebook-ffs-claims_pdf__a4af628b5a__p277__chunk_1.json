@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p277__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 277,
+  "text": "1 \nSOURCE: \nNCH QA Process \nVALUES: \nA = Discharged \nB = Died \nC = Still a patient \nCOMMENT: \nThis field should not be used prior to March 2024 due to inaccuracies in the derivation of this field. \nUse the PTNT_DSCHRG_STUS_CD instead. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

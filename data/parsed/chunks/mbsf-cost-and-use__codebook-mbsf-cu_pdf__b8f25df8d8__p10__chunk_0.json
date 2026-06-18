@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p10__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 10,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n4 \nACUTE_PERDIEM_PMT \nLABEL: \nAcute Inpatient Hospital Pass-thru Per Diem Payments \nDESCRIPTION: This variable is the sum of all the pass through per diem payment amounts \n(CLM_PASS_THRU_PER_DIEM_AMT from each claim) in the acute inpatient hospital setting for the year. \nMedicare payments are designed to include certain \"pass-through\" expenses such as capital-related \ncosts,",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

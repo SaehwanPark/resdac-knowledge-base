@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p365__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 365,
+  "text": "indicator (part of the \nREV_CNTR_PMT_MTHD_IND_CD) of “T”. The flag is applicable when more than one significant \nprocedure is performed. \n**If there is no discounting the factor will be 1.0.** \nSHORT NAME: DSCNTIND \nLONG NAME: REV_CNTR_DSCNT_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n*DISCOUNTING FORMULAS* \n1 = 1.0 \n2 = (1.0+D(U-1))/U \n3 = T/U \n4 = (1+D)/U \n5 = D \n6 = TD/U \n7 = D(1+D)/U \n8 = 2.0/U \nD = Discounting fraction (currently 0.5) \nU = Number of units \nT = Terminated",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

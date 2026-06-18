@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_225",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "adjustment in\ntreatment and dose monitoring\n04 = Symptoms poorly controlled, history of rehospitalizations CHAR 2 x\nM1022_OTH_DGN3_ICD M1022 (M0240) Other Diagnosis3 ICD Code This field lists the other diagnosis 3 (ICD-9). CHAR 7 x\nM1022_OTH_DGN3_SEV M1022 (M0240) Other Diagnosis3 Severity This field lists the severity of the other diagnosis 3. 00 = Asymptomatic, no treatment needed at this time\n01 = Symptoms well controlled with current therapy\n02 = Symptoms controlled with difficulty,",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

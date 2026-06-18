@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p69__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 69,
+  "text": "LTC value is provided (i.e., if the value is 16 or 21– 36), \nthe patient residence field (the PTNT_RSDNC_CD) must equal “03.” \nThis variable is different than the days supply of the medication on the PDE (the DAYS_SUPLY_NUM \nvariable). \nThis variable was new in 2013 and required for all PDEs beginning on February 28, 2013. This variable \nbecame the SUBMSN_CLRFCTN_CD_1 in 2025 in the source data, when additional submission \nclarification code fields became available (SUBMSN_CLRFCTN_CD_2–",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

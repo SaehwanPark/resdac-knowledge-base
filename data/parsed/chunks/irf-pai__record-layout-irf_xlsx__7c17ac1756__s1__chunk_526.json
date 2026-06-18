@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_526",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Information \n^ = Blank\n462 RPT_CRCT_MO_DSCHRG_CD RPT_CRCT_MO_DSCHRG_CD BIMS - Temporal Orientation - Month (Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was able to identify the current month. 2 = Accurate within 5 days \n1 = Missed by 6 days to 1 month \n0 = Missed by > 1 month or no answer \n- = Not Assessed/No Information \n^ = Blank (Skip Pattern)\n463 RPT_CRCT_DAY_DSCHRG_CD RPT_CRCT_DAY_DSCHRG_CD BIMS - Temporal Orientation - Day (Dsch) CHAR 1 This column",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

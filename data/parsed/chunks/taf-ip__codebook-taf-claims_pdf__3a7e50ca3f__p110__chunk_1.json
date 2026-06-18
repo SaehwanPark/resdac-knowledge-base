@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p110__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 110,
+  "text": "for each DRG is compared to the overall average. \nSHORT NAME: DRG_RLTV_WT \nLONG NAME: DRG_RLTV_WT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nVALUES: \nValid numeric, four decimal places (e.g., 1.0329) \nNull/missing = Source value is missing or unknown \nCOMMENT: \nThis ratio is published annually in the Federal Register for each DRG. A DRG with a weight of 2.0000 \nmeans that charges were historically twice the average; a DRG with a weight of 0.5000",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

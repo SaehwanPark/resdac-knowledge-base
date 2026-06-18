@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_732",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "over the SNF stay. effective 10/01/2019\n809 O0425C1_PT_INDVDL_MNTS_NUM O0425C1_PT_INDVDL_MNTS_NUM O0425C1 Physical Therapy: Individual Minutes CHAR 4 Individual minutes of physicaltherpay services that were provided over the SNF stay. effective 10/01/2019\n810 O0425C2_PT_CNCRNT_MNTS_NUM O0425C2_PT_CNCRNT_MNTS_NUM O0425C2 Physical Therapy: Concurrent Minutes CHAR 4 Concurrent minutes of physicaltherpay services that were provided over the SNF stay. effective 10/01/2019\n811 O0425C3_PT_GRP_MNTS_NUM",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

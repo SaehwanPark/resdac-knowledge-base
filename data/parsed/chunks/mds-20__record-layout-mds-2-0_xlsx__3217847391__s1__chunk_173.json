@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_173",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(G5A) Cane/Walker/Crutch CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days - cane/walker/crutch. 0 = No, 1 = Yes, \"-\" = Unknown.\n243 G5B G5B_SELF_WHEEL (G5B) Wheeled Self CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days - wheeled self. 0 = No, 1 = Yes, \"-\" = Unknown.\n244 G5C G5C_OTHER_WHEEL (G5C) Other Person Wheeled CHAR 1 Physical functioning and structural problems: modes of locomotion in last 7 days - other person",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

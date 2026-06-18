@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n14 \nPRVDR_PHNE_NUM \nLABEL: \nFacility Phone Number \nDESCRIPTION: The facility location’s phone number. \nSHORT NAME: PRVDR_PHNE_NUM \nLONG NAME: PRVDR_PHNE_NUM \nTYPE: \nCHAR \nLENGTH: \n22 \nFILE(S): \nPatient and hospital \n\nSOURCE: \nAHCAH facility-submitted data (verified by CMS) \nVALUES: \nEx – (202)867-5309 \n\nCOMMENT: \nFormatted (999)999–9999 \n^ Back",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

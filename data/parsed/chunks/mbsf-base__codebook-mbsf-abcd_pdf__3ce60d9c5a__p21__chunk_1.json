@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p21__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 21,
+  "text": "NAME: COUNTY_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n— \nCOMMENT: \nEach state has a series of codes beginning with '000' for each county within that state. Certain cities \nwithin that state have their own code. County codes must be combined with state codes in order to \nlocate the specific county. The coding system is the SSA system, not the Federal Information \nProcessing Standard (FIPS). In some cases, the code may not be the actual county where",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

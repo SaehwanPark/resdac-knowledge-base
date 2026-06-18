@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_452",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "CHAR 1 x x x\nM1028_ACTV_DGNS_IND Active Diagnosis - PVD or PAD Active Diagnosis Comorbidities and Co-existing Conditions - Peripheral Vascular Disease (PVD) or Peripheral Arterial Disease (PAD) CHAR 1 x x x\nM1060_HEIGHT M1060 Height and Weight - Height (in inches) This field indicates the most recent height measurement since the most recent SOC/ROC. Height (in inches) CHAR 2 x x x\nM1060_WEIGHT M1060 Height and Weight - Weight (in pounds) This field indicates the most recent base weight in the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

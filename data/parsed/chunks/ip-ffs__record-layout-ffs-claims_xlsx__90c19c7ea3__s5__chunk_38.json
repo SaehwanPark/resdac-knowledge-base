@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_38",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Payment Amount to Beneficiary NUM 12 32\nPTNTRESP REV_CNTR_PTNT_RSPNSBLTY_PMT Revenue Center Patient Responsibility Payment Amount NUM 12 33\nREVPMT REV_CNTR_PMT_AMT_AMT Revenue Center (Medicare) Payment Amount NUM 12 34\nREV_CHRG REV_CNTR_TOT_CHRG_AMT Revenue Center Total Charge Amount NUM 12 35\nREV_NCVR REV_CNTR_NCVRD_CHRG_AMT Revenue Center Non-Covered Charge Amount NUM 12 36\nREVDEDCD REV_CNTR_DDCTBL_COINSRNC_CD Revenue Center Deductible Coinsurance Code CHAR 1 43\nREVSTIND REV_CNTR_STUS_IND_CD",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

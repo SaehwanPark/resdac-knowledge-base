@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_535",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "the Swing Bed Clinical Change Assessment (A0310D) value from the prior erroneous record to be modified or inactivated. 0=No\n1=Yes\n^=Blank (Skip Pattern) discontinued 09/30/2023\n614 X0600F_CRCTN_ENTRY_DSCHRG_CD X0600F_CRCTN_ENTRY_DSCHRG_CD X0600F Correction Entry/Discharge Code CHAR 2 The data in this column indicates the Entry/Discharge Reporting (A0310F) code from the prior erroneous record to be modified or inactivated. 01=Entry tracking record\n10=Discharge assessment - return not",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

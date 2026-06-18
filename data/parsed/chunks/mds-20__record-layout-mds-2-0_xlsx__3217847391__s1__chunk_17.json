@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "received by the system.\n33 SUB_REQ SUB_REQ Submission Requirement CHAR 1 0 = Default for all records prior to the submission requirement field being added to the database, 1 = Facility has right to see the data, 2 = Facility and state have rights to see the data, 3 = Facility, state, and national have rights to see the data\n34 TRGTDT TARGET_DATE Target Date DATE 8 For MDS, the target date is the R4 Discharge Date for any discharge, the A4A Reentry Date for any re-entry and the A3A Assessment",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

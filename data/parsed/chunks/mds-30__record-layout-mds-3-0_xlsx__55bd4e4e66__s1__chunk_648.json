@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_648",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "or touching assistance\n 05=Setup or clean-up assistance\n 06=Independent\n 07=Resident refused\n 09=Not applicable\n 88=Not attempted due to medical condition or safety concerns\n ^=Blank (skip pattern) effective 10/01/2018\ndiscontinued 09/30/2024\n716 GG0130F3_UPR_DRSNG_END_CD GG0130F3_UPR_DRSNG_END_CD GG0130F3 Upper Dressing End Indicator CHAR 2 Indicates the resident's ability to dress and undress above the waist; including fasteners, if applicable at the end of the SNF PPS Part A stay. -=Not",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

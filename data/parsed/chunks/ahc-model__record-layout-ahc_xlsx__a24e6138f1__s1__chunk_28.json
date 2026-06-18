@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_28",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "CHAR 1\nNN_CORE_UTILITIES_CSP_UNAVBL_SW Navigated Core HRSN Utilities Community Service Provider Unable to Help CHAR 1\nNN_CORE_UTILITIES_OUTCM_UNK_SW Navigated Core HRSN Utilities Outcome Unknown CHAR 1\nNN_SPLMTL_DSBLTS_RSLVD_SW Navigated Supplemental HRSN Disability Resolved CHAR 1\nNN_SPLMTL_DSBLTS_CNCT_CSP_SW Navigated Splmt HRSN Disability Connected to Community Service Provider CHAR 1\nNN_SPLMTL_DSBLTS_OPTOUT_SW Navigated Supplemental HRSN Disability Opted Out CHAR",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

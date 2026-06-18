@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p169__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 169,
+  "text": "five positions of this text field. \nSHORT NAME: DEMO_INFO_TXT \nLONG NAME: DEMO_INFO_TXT \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nWhen the Demo ID = 01 (RUGS) — the text field will contain a 2, 3 or 4 to denote the RUGS phase. If \nRUGS phase is blank or not one of the above the text field will reflect “INVALID”. NOTE: In version “G”, \nRUGS phase was stored in redefined Claim Edit Group, 3rd occurrence, 4th position. \nDemo ID = 02 (home health demo) — the text field will",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

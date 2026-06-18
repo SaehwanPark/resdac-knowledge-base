@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p56__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 56,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n48 \nMC_PLAN_ZIP_CD \nLABEL: \nManaged Care Plan Location — Zip Code \nDESCRIPTION: The zip code of the managed care service location for each unique managed care service location ID \n(i.e., for each occurrence of the MC_PLAN_LCTN_ID). \nSHORT NAME: MC_PLAN_ZIP_CD \nLONG NAME: MC_PLAN_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n13 \nFILE(S): \nAPL Location \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES:",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

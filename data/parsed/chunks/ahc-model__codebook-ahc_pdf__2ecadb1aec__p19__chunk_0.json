@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n18 \nBENE_INSRNC_TYPE_CD \nLABEL: \nBeneficiary Payer Type \nDESCRIPTION: Beneficiary payer type code. \nLONG NAME: BENE_INSRNC_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nCCW \nVALUES: \n1 = Medicare only \n2 = Medicaid only \n3 = Dually eligible for Medicare and Medicaid \nMissing \nCOMMENT: \n— \n ^ Back to TOC ^",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

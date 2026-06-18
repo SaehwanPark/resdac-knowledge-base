@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p4__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 4,
+  "text": "RNDRNG_PHYSN_SPCLTY_CD, and \nRFR_PHYSN_SPCLTY_CD) \n1.5 \nMay 2019 \nC. Alleman \nK. Schneider \nAdded new fields: 1) CLM_RSDL_PYMT_IND_CD to all base claims, and \nLINE_RSDL_PYMT_IND_CD to carrier and DME lines; 2) \nCLM_RP_IND_CD to IP base claim, REV_CNTR_RP_IND_CD to SNF, HH, \nhospice and OP revenue lines, and LINE_RP_IND_CD to carrier and \nDME lines; 3) PRVDR_VLDTN_TYPE_CD to all base claims except for \nDME, and LINE_PRVDR_VLDTN_TYPE_CD to carrier and DME line; 4) \nRR_BRD_EXCLSN_IND_SW to IP,SNF,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

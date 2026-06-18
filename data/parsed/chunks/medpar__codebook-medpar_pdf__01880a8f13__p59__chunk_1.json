@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p59__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 59,
+  "text": "CLM_FULL_STD_PYMT_AMT \nLONG NAME: CLM_FULL_STD_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \nXXXXXX \nCOMMENT: \nThis field is derived by accumulating the amount field (CLM_FULL_STD_PMT_AMT) that is present on \nany of the claim records included in the stay (i.e., sum of the CLM_FULL_STD_PMT_AMT reported on the \nclaims that comprised the LTCH stay). \nThis field is new in 2015. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

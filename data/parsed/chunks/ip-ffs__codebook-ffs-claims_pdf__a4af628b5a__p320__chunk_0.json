@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p320__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 320,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n302 \nPTNT_DSCHRG_STUS_CD \nLABEL: \nPatient Discharge Status Code \nDESCRIPTION: The code used to identify the status of the patient as of the CLM_THRU_DT. \nSHORT NAME: STUS_CD \nLONG NAME: PTNT_DSCHRG_STUS_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \nThis code set is an external code set maintained by the National Uniform Billing Committee \n(NUBC™) https://www.nubc.org/",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

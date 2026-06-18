@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p151__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 151,
+  "text": "the MS-LTC-DRG with the short stay outlier \n(SSO) adjustment. \nThis amount does not include any other applicable outlier payment amount. \nSHORT NAME: CLM_SS_OUTLIER_STD_PYMT_AMT \nLONG NAME: CLM_SS_OUTLIER_STD_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nApplies only to inpatient (LTCH) claims. This field is new in October 2015. \nFor a LTCH PPS claim, only one of four fields will be populated (CLM_SITE_NTRL_PYMT_CST_AMT, \nCLM_SITE_NTRL_PYMT_IPPS_AMT,",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

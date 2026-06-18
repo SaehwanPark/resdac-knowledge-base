@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "- 12 Monthly detail of long term care utilization. January through December. NF - Nursing Facility (source: MDS assessment)\nSNF - Skilled Nursing Facility (source: Medicare claims)\nLTC - Long Term Care Hospital (source: Medicare Claims)\nNull - None of these Medicare LT services, or no Medicare coverage during the month\nL_LTINST_IND_1 - 12 Monthly indicator of Medicaid LTSS and/or Medicare LT services. January through December. 0 = no LTC stay during the month\n1 = at least one day of the month",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

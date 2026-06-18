@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-beneficiary__chunk_0",
+  "source_document": "data/raw/html/dataset_page/dc78605b880da6acf5413b0e36abcd051fcc22e4.html",
+  "page": null,
+  "text": "The Next Generation ACO (NGACO) Model Beneficiary file contains information about the Medicare beneficiaries enrolled in the NGACO Model. The file includes one record per year of enrollment for assigned beneficiaries. A related file, the Next Generation ACO Model Provider file, contains information about the participating providers in the NGACO Model.\nWhat does this file include? (variable highlights)\n- Beneficiary ID (allows linkage to other files)\n- ACO Name\n- Monthly assignment status",
+  "dataset": "ngaco-beneficiary",
+  "url": "https://resdac.org/cms-data/files/ngaco-beneficiary"
+}

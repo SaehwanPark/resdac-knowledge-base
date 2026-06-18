@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 2,
+  "text": "1.15 \nOctober 2025 \nK. Schneider \nAdded new value for: AT_PHYSN_SPCLTY_CD, \nBLG_PRVDR_SPCLTY_CD1 –3, RNDRNG_PRVDR_SPCLTY_CD1–3, and \nPRVDR_SPCLTY, and DEMO_ID_NUM \n1.14 \nMarch 2025 \nK. Schneider \nRemoved field for beneficiary sex because it is available in the Master \nBeneficiary Summary File. Added valid values to \nLINE_PLACE_OF_SRVC_CD, DEMO_ID_NUM, and CLM_FREQ_CD. \nClarified the comment section of CLM_THRU_DT. \nEmbellished description for CLM_NEXT_GNRTN_ACO_IND_CD1–5. \nRemoved values to",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

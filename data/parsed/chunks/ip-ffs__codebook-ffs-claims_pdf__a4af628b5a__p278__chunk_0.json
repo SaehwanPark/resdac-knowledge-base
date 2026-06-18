@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p278__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 278,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n260 \nNCH_QLFYD_STAY_FROM_DT \nLABEL: \nNCH Qualified Stay From Date \nDESCRIPTION: The beginning date of the beneficiary's qualifying Medicare stay. \nFor inpatient claims, the date relates to the PPS portion of the inlier for which there is no utilization of \nbenefits. \nFor SNF claims, the date relates to a qualifying stay from a hospital that is at least two days in a row if",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

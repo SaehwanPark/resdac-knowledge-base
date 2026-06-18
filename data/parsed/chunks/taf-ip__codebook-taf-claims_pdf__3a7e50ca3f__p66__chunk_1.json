@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p66__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 66,
+  "text": "IP header \nLT header \nOT header \nRX header \nVALUES: \n1 – XXX \nNull/missing = Source value is missing or unknown \nEquals the count of the claim lines submitted on the original claim. \nCOMMENT: \nThe value is what the provider submitted on the claim. There can be inaccuracies. Refer to \nCLL_CNT_CALC. \n^ Back to TOC ^",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

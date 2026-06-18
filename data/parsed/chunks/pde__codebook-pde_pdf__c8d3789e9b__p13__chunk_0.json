@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p13__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 13,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n8 \nCCW_PRSCRBR_ID \nLABEL: \nCCW Prescriber Identifier \nDESCRIPTION: This variable is the CCW-assigned number that is used to uniquely identify prescribers found in the \nPart D Event File. The ID is specific to the CCW and not applicable to any other identification system or \ndata source. \nThis field also enables linkage between the Part D Event file and the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

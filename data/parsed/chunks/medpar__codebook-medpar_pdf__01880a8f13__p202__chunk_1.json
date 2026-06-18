@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p202__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 202,
+  "text": "are used as a counter for the \nnumber of providers within that state and type of provider (i.e., this is a unique but not necessarily \nsequential number). \nSHORT NAME: PRVDRNUM \nLONG NAME: PRVDR_NUM \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \nThe following are the last four digits of the provider number; the blocks of numbers classify the facilities: \n0001–0879 \nShort-term (general and specialty) hospitals where Type of bill (TOB) = 11X; ESRD clinic \nwhere TOB = 72X \n0880–0899 \nReserved",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

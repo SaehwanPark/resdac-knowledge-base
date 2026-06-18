@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "OBQI_ROLLUPS, OBQI_CMIX_RISK_ADJSTD_ROLLUPS, OBQI_RAO_RISK_ADJSTD_ROLLUPS, OBQI_BRIEFG_BOOK_MISC_MSR and MEGA_QI_INITL_ROLLUP tables, if the number is a positive value, it is the CMS facility internal identifier. Positive value indicates the CMS facility indentifier. Other values include: \n-1 = the data is averaged to the state\n-2 = the data is averaged to the region\n-3 = the data is averaged to the whole nation CHAR 10 x x x x x x\nPRVDR_ID Provider Internal ID This ID is populated for new",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_59",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- finds strength in faith. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n117 AC1V AC1V_ANIMAL (AC1V) Daily Animal Companion/Presence CHAR 1 Customary routine: involvement patterns - daily animal companion. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n118 AC1W AC1W_GROUP_ACT (AC1W) Involved in Group Activities CHAR 1 Customary routine: involvement patterns - involved in group activities. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n119 AC1X AC1X_NONE_ABOVE (AC1X) None of Above Involvement Patterns CHAR",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

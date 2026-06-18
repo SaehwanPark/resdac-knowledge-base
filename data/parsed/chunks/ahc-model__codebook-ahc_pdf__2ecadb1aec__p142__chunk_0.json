@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p142__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 142,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n141 \nSR_CORE_HOUSNG_2_SCRNG_CMPST_IND \nLABEL: \nCore HRSN Housing 2: Problems Composite \nDESCRIPTION: Screening result (SR) core health related social need (HRSN) composite indicator that housing has \nproblems with pests, mold, lead, heat, oven, smoke detectors, and/or water. \nLONG NAME: SR_CORE_HOUSNG_2_SCRNG_CMPST_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system (derived)",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

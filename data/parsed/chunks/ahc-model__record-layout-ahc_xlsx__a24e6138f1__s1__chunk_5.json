@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_5",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Core HRSN Housing 2: Smoke Detector not Working CHAR 1\nSR_CORE_HOUSNG_2_WTR_LEAK_SW Core HRSN Housing 2: Water Leaks CHAR 1\nSR_CORE_HOUSNG_2_PRBLM_CNT Core HRSN Housing 2: Number of Problems NUM 1\nSR_CORE_HOUSNG_2_SCRNG_CMPST_IND Core HRSN Housing 2: Problems Composite CHAR 1\nSR_CORE_HOUSNG_OVRL_SCRNG_IND Screened Core HRSN Housing Overall Indicator CHAR 1\nSR_CORE_SFTY_1_CD Core HRSN Safety 1: How often physically hurt CHAR 1\nSR_CORE_SFTY_2_CD Core HRSN Safety 2: How often insulted CHAR",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

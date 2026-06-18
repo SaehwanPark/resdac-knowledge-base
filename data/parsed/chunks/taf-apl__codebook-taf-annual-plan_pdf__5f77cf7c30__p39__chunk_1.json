@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p39__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 39,
+  "text": "Annual Managed Care Plan TAF \nVALUES: \nState-reported location identification number. The field can contain any alphanumeric characters, \ndigits or symbols (e.g., 13222. 00001, 1) \nCOMMENT: \nThis variable corresponds to the other location information in the APL location record, including: \nMC_PLAN_ADR_LINE_1–3, MC_PLAN_CITY, MC_PLAN_STATE_CD, MC_PLAN_ZIP_CD, and \nMC_PLAN_CNTY_CD. \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

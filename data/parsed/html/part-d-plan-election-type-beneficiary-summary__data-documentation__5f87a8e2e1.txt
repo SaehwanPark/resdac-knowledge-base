@@ -1,0 +1,25 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+CCW Codebook - Medicare Part D Plan Election Type Beneficiary Summary
+CCW Record Layout - Medicare Part D Plan Election Type Beneficiary Summary
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | CCW Beneficiary ID | 
+| REF_YEAR | Part D Plan Enrollment Year | 
+| APLCTN_DT | Beneficiary Part D Plan Enrollment Application Date | 
+| ENRLMT_EFCTV_DT | Beneficiary Part D Plan Enrollment Effective Date | 
+| DISENRLMNT_DT | Beneficiary Part D Plan Disenrollment Date | 
+| ENRLMT_TYPE_CD | Beneficiary Part D Plan Enrollment Type Code | 
+| CONTRACT_ID | Part D Contract Number | 
+| PLAN_ID | Part D Plan Benefit Package Identifier | 
+| AUDT_SQNC_NUM | Part D Enrollment Transaction Audit Sequence Number | 
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | CCW Beneficiary ID | 
+| REF_YEAR | Part D Plan Enrollment Year | 
+| LIS_MONTHS | Part D Low Income Subsidy (LIS) Months | 
+| AUTO_ASSIGNED_FLAG | Part D Plan Auto Assignment Indicator | 
+| CHOOSER | Part D Plan Self Selection Indicator | 
+| CRNT_PREV_YR_CHOOSER | Part D Plan Self Selection in Current or Previous Year Indicator | 
+| REASSIGN_JAN | Beneficiary Newly Reassigned for January Plan |

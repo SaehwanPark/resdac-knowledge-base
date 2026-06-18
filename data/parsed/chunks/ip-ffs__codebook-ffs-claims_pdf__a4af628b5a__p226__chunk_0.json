@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p226__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 226,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n208 \nLINE_ICD_DGNS_CD \nLABEL: \nLine Diagnosis Code \nDESCRIPTION: The code indicating the diagnosis supporting this line-item procedure/service on the non-institutional \nclaim. \nSHORT NAME: LINE_ICD_DGNS_CD \nLONG NAME: LINE_ICD_DGNS_CD \nTYPE: \nCHAR \nLENGTH: \n7 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nFor ICD-9 diagnosis codes, this is a 3–5 digit numeric or alpha/numeric value; it",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

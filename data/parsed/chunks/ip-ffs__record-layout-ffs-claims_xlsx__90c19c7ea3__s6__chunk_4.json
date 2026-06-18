@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_4",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "NCH Carrier Claim Submitted Charge Amount (sum of all line-level submitted charges) NUM 12 19\nALOWCHRG NCH_CARR_CLM_ALOWD_AMT NCH Carrier Claim Allowed Charge Amount (sum of all line-level allowed charges) NUM 12 20\nDEDAPPLY CARR_CLM_CASH_DDCTBL_APLD_AMT Carrier Claim Cash Deductible Applied Amount (sum of all line-level deductible amounts) NUM 12 21\nHCPCS_YR CARR_CLM_HCPCS_YR_CD Claim Healthcare Common Procedure Coding System (HCPCS) Year Code CHAR 1 22\nRFR_PRFL CARR_CLM_RFRNG_PIN_NUM Carrier",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

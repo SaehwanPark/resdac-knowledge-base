@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Date and 45b (R2B) - Completion Date\n10 FACINTID FAC_INT_ID Facility Internal ID CHAR 10 The CMS facility internal identifier that is unique within a state. For the NATL_MDS_FAC_SUBMSN_SMRY, NATL_HHA_FAC_SUBMSN_SMRY, OBQI_ROLLUPS, OBQI_CMIX_RISK_ADJSTD_ROLLUPS, OBQI_RAO_RISK_ADJSTD_ROLLUPS, OBQI_BRIEFG_BOOK_MISC_MSR and MEGA_QI_INITL_ROLLUP tables, if the number is a positive value, it is the CMS facility internal identifier. Positive value indicates the CMS facility indentifier. Other values",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

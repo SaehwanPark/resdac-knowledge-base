@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p115__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 115,
+  "text": "VALUES: \n00 = 0:00–0:59 \n01 = 1:00–1:59 \n02 = 2:00–2:59 \n03 = 3:00–3:59 \n04 = 4:00–4:59 \n05 = 5:00–5:59 \n06 = 6:00–6:59 \n07 = 7:00–7:59 \n08 = 8:00–8:59 \n09 = 9:00–9:59 \n10 = 10:00–10:59 \n11 = 11:00–11:59 \n12 = 12:00–12:59 \n13 = 13:00–13:59 \n14 = 14:00–14:59 \n15 = 15:00–15:59 \n16 = 16:00–16:59 \n17 = 17:00–17:59 \n18 = 18:00–18:59 \n19 = 19:00–19:59 \n20 = 20:00–20:59 \n21 = 21:00–21:59 \n22 = 22:00–22:59 \n23 = 23:00–23:59 \nNull/missing = Source value is missing or unknown \nCOMMENT: \nA 24-hour clock",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p21__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 21,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n13 \nMC_ENT_PRFT_STUS_CD \nLABEL: \nManaged Care Entity Profit Status Code — Latest in Year \nDESCRIPTION: A code denoting the profit status of the managed care entity; most recent in the calendar year. \nSHORT NAME: MC_ENT_PRFT_STUS_CD \nLONG NAME: MC_ENT_PRFT_STUS_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \n01 = 501(C)(3) non-profits \n02",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

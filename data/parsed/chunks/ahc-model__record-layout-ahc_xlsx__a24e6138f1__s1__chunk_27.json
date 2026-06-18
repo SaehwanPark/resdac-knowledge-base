@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_27",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "HRSN Transportation Outcome Unknown CHAR 1\nNN_CORE_UTILITIES_RSLVD_SW Navigated Core HRSN Utilities Resolved CHAR 1\nNN_CORE_UTILITIES_CNCT_CSP_SW Navigated Core HRSN Utilities Connected to Community Service Provider CHAR 1\nNN_CORE_UTILITIES_OPTOUT_SW Navigated Core HRSN Utilities Opted Out CHAR 1\nNN_CORE_UTILITIES_CNTCT_FAIL_SW Navigated Core HRSN Utilities Attempts to Reach Failed CHAR 1\nNN_CORE_UTILITIES_CSP_UNAVBL_SW Navigated Core HRSN Utilities Community Service Provider Unable to Help",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

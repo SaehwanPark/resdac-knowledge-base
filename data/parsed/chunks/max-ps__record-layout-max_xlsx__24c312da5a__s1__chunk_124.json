@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_124",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "12 X X X X X X X X X X X\n570 ENCTR_REC_CNT_38 Encounter record count (MAX TOS 38) NUM 5 X X X X X X X X X X X\n571 FEE_FOR_SRVC_IND_39 Recipient indicator (MAX TOS 39 - religious non-medical health care institutions) CHAR 1 X X X X X X X X X X X\n572 FFS_CLM_CNT_39 Claim count (MAX TOS 39) NUM 6 X X X X X X X X X X X\n573 FFS_PYMT_AMT_39 Medicaid payment amount (MAX TOS 39) NUM 12 X X X X X X X X X X X\n574 FFS_CHRG_AMT_39 Charge amount (MAX TOS 39) NUM 12 X X X X X X X X X X X\n575 FFS_TP_AMT_39",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

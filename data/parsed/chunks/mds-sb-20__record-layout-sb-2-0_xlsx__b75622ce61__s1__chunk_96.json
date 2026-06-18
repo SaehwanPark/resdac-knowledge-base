@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_96",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "34e(M5e)Ulcer Care CHAR 1 Indicates the patient has received any intervention for treating an ulcer at any ulcer stage in the apst seven days. Includes use of dressings, chemical or surgical debridement, wound irrigations, and hydrotherapy. 0 = Unchecked, 1 = Checked, -1 = Unknown\n123 M5F M5F_SURG_WOUND_CAR 34f(M5f)Surgical Wound Care CHAR 1 Indicates the patient has received any intervention for treating or protecting any type of surgical wound in the last seven days. Includes topical",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

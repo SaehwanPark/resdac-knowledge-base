@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p23__chunk_4",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 23,
+  "text": "either the NCPDP reject reason code, or remittance advice remark code that is not \nan ALERT.) \n227 = Information requested from the patient/insured/responsible party was not provided or was \ninsufficient/incomplete. At least one remark code must be provided (may be comprised of either \nthe NCPDP reject reason code, or remittance advice remark code that is not an ALERT.) \n231 = Mutually exclusive procedures cannot be done in the same day/setting. Usage: Refer to the 835-\nhealthcare policy",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

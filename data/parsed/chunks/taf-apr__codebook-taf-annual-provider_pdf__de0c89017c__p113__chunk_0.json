@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p113__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 113,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n115 \nPRVDR_NPI_1 \nPRVDR_NPI_2 \nLABEL: \nProvider NPI — First through Second Occurrence \nDESCRIPTION: The National Provider ID (NPI) assigned to the provider. \nSHORT NAME: PRVDR_NPI_1 \nPRVDR_NPI_2 \nLONG NAME: PRVDR_NPI_1 \nPRVDR_NPI_2 \nTYPE: \nCHAR \nLENGTH: \n12 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nhttps://www.cms.gov/Regulations-and-Guidance/Admin",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

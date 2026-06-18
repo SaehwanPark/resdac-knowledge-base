@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_462",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "CHAR 1 The data in this column indicate the type of wheelchair or scooter used by the patient used in wheeling 150 feet at the time of discharge. 1 = Manual\n2 = Motorized\n383 H0350_URNRY_CNTNC_IND H0350_URNRY_CNTNC_IND H0350 Urinary Continence Code - The data in this column indicates the patient's urinary continence level. CHAR 1 The data in this column indicates the patient's urinary continence level. 0 = Always continent\n1 = Stress incontinence only \n2 = Incontinent less than daily\n3 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

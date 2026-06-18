@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p54__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 54,
+  "text": "calculated off the base operating DRG amount field. \nSHORT NAME: BNDLD_ADJSTMT_AMT \nLONG NAME: BNDLD_ADJSTMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the Claim inpatient prospective payment system (IPPS) bundled \npayment adjustment amount (previously referred to as the Flex Payment 2 Amount field; CLM_ \nIPPS_FLEX_PMT_2_AMT) that is present on any of the claim records included in the stay. \nReference the CMS Center for Medicare &",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

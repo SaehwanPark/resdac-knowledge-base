@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_294",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Does Urinary Incontinence Occur This field indicates when urinary incontinence occurs. 00 = Timed-voiding defers incontinence\n01 = Occasional stress incontinence\n02 = During the night only\n03 = During the day only\n04 = During the day and night CHAR 2 x x x x\nM1620_BWL_INCONT M1620 (M0540) Bowel Incontinence Frequency This field indicates the frequency of bowel incontinence. 00 = Very rarely or never has bowel incontinence\n01 = Less than once weekly\n02 = One to three times weekly\n03 = Four to",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

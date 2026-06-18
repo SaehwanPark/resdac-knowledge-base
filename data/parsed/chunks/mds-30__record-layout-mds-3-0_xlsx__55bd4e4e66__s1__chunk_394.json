@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_394",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "9/30/2018\n439 M1030_ARTRL_ULCR_NUM M1030_ARTRL_ULCR_NUM M1030 Venous and Arterial Ulcer Number CHAR 1 The data in this column indicates the number of venous or arterial ulcers present. 0 Minimum\n9 Maximum\n- Not assessed/no information\n440 M1040A_FT_INFCTN_CD M1040A_FT_INFCTN_CD M1040A Other Foot Skin Problems: Foot Infection Code CHAR 1 The data in this column indicates whether the resident has a foot infection (e.g., cellulitis, purulent drainage). -=Not assessed/no information\n0=Not checked",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

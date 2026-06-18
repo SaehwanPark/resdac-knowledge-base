@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p12__chunk_1",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 12,
+  "text": "TYPE: \nCHAR \nLENGTH: \n4 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI) \nVALUES: \n— \nCOMMENT: \nAll ICD-10 cause of death codes begin with an alpha character followed by two or three digits. NDI \nresults do not include decimals in the cause of death codes. The decimal is implied between the \nsecond and third digits for ICD-10 codes. Researchers wishing to obtain this NDI segment of the MBSF \nmust obtain an additional approval beyond the CMS DUA. \n^Back to",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

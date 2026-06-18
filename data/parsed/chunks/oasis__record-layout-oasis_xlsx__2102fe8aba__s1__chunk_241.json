@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_241",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1034 Overall Status This field describes the patient's overall status. 00 = The patient is stable with no heightened risk(s) for serious\ncomplications and death (beyond those typical of the patient's age).\n01 = The patient is temporarily facing high health risk(s) but is likely to\nreturn to being stable without heightened risk(s) for serious complications and death (beyond those typical of the patient's age).\n02 = The patient is likely to remain in fragile health and have ongoing high\nrisk(s)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p11__chunk_0",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 11,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D, Version 2 │ May 2026 │ V 1.2 \n2 \nBENE_BIRTH_DT \nLABEL: \nBeneficiary Date of Birth \nDESCRIPTION: This is the beneficiary's date of birth. \nLONG NAME: BENE_BIRTH_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nMM/DD/YYYY \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

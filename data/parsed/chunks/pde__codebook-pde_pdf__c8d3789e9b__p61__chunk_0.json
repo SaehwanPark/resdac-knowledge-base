@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p61__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 61,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n56 \nRX_SRVC_RFRNC_NUM \nLABEL: \nRX Service Reference Number \nDESCRIPTION: This field contains the prescription reference number assigned by the pharmacy at the time the \nprescription is filled. \nSHORT NAME: SRVRFNUM \nLONG NAME: RX_SRVC_RFRNC_NUM \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nField length expanded from 10 to 12 in 2011. \n^ Back",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s5__chunk_11",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 5,
+  "text": "- - - - - - X -\nCONTRACT_ID_22 Previous Year Part D Plan Contract Identifier CHAR 5 - - - - - - - - X -\nPLAN_ID_22 Previous Year Part D Plan Benefit Identifier CHAR 3 - - - - - - - - X -\nPTCD_INDICATOR_24 Indicates Whether the Reference Year Plan is Part C, Part D or Both CHAR 1 - - - - - - - - - X\nCONTRACT_ID_24 Reference Year Part D Plan Contract Identifier CHAR 5 - - - - - - - - - X\nPLAN_ID_24 Reference Year Part D Plan Benefit Identifier CHAR 3 - - - - - - - - - X\nCONTRACT_ID_23 Previous",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_89",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Other service records (HCBCS) NUM 5 X X X X X X X X X X X\n415 OT_PYMT_AMT_HCBCS Other service payments (HCBCS) NUM 12 X X X X X X X X X X X\n416 RX_REC_CNT_HCBCS Prescription drug records (HCBCS) NUM 5 X X X X X X X X X X X\n417 RX_PYMT_AMT_HCBCS Prescription drug payments (HCBCS) NUM 12 X X X X X X X X X X X\n418 TOT_REC_CNT_HCBCS Total records (HCBCS) NUM 5 X X X X X X X X X X X\n419 TOT_PYMT_AMT_HCBCS Total payments (HCBCS) NUM 12 X X X X X X X X X X X\n420 RCPNT_DLVRY_CD Recipient maternal",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

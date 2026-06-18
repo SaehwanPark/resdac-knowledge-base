@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "the RUG. discontinued 09/30/2023\n17 C_MDCR_SET_CD C_MDCR_SET_CD CMI Set for Recalculated Z0100A CHAR 3 The data in this column contains the calculated Medicare Set Code used for the Part A RUG. discontinued 09/30/2023\n18 C_MDCR_CMI_TXT C_MDCR_CMI_TXT CMI Value for Recalculated Z0100A CHAR 7 The data in this column contains the calculated Medicare CMI value returned for the Part A RUG. discontinued 09/30/2023\n19 C_MDCR_NT_HIPPS_TXT C_MDCR_NT_HIPPS_TXT Recalculated Z0150A CHAR 7 The data in this",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

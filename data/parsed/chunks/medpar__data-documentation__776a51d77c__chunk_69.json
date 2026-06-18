@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_69",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Indicator | \n\n | 381 | CLM_SITE_NTRL_PYMT_CST_AMT | Claim Site Neutral Payment Based on Cost Amount | \n\n | 382 | CLM_SITE_NTRL_PYMT_IPPS_AMT | Claim Site Neutral Payment Based on IPPS Amount | \n\n | 383 | CLM_FULL_STD_PYMT_AMT | Claim Full Standard Payment Amount | \n\n | 384 | CLM_SS_OUTLIER_STD_PYMT_AMT | Claim Short Stay Outlier (SSO) Standard Payment Amount | \n\n | 385 | CLM_NGACO_IND_1_CD | Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code 1 | \n\n | 386 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

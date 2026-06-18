@@ -1,0 +1,20 @@
+The Medicare Part D Drug Characteristics file refers to a set of variables that are appended to the Medicare Part D Event (PDE) file. Researchers need to request the specific variables required for their study and CMS must approve the release.
+What does this file include? (variable highlights)
+- Product ID (NDC) used to link Drug Characteristics to PDE file
+- Brand name
+- Generic name
+- Strength
+- Form of the drug
+Why do researchers request this file?
+- Researchers who do not have access to a proprietary NDC database use this file to identify specific drugs, strengths and formulation
+- Studies assessing pharmaceutical treatment that compare strengths and/or formulations of prescription drugs
+- Studies evaluating drug utilization under the Medicare Part D program
+Special considerations
+- Requests for any Part D data file require selection and justification for each requested variable.
+- This file does not include drug class or any other taxonomy variables.
+- The Part D Drug Characteristics file is not released as a freestanding file. Requested variables are appended to the requested PDE file. The structure is a flat file.
+-  - Product ID (NDC) used to link Drug Characteristics to PDE file
+- Brand name,
+- Generic name,
+- Strength
+- Form of the drug

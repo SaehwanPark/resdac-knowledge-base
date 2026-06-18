@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p176__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 176,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n156 \nMDC_CD \nLABEL: \nMajor Diagnostic Category (MDC) Code \nDESCRIPTION: Three-digit numeric code that groups beneficiary diagnosis codes into broad categories based on \ncondition type and body region. \nSHORT NAME: MDC_CD \nLONG NAME: MDC_CD \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nVALUES: \n000 = Ungroupable \n001 = Nervous System \n002 = Eye",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

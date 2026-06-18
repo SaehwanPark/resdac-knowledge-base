@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 1,
+  "text": "CHAR 1 X X X\nEGHP_CALENDAR_YEAR_FLAG Employer Group Health Plan (EGHP) Calendar Year Indicator CHAR 1 X X X\nCOV_CRITERIA Coverage Criteria (Part A/B or B only Requirement) CHAR 1 X X X\nNATIONAL_PDP National Prescription Drug Plan (PDP) Sponsor CHAR 1 X X X\nDEMINIMIS_PD_FLAG Part D Deminimis Paid Flag CHAR 1 X X X\nDED_APPLY How Part D Deductible is Applied CHAR 1 X X X\nDED_AMT Part D Plan Deductible Amount NUM 12 X X X\nDED_APPLY_ALL Type of Cost Sharing in the Part D Plan Deductible Phase CHAR 1",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

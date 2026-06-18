@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_335",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "precluded by missing data.\n566 VA09A VA09A_BEHAVE_TR (VA09A) Behavioral Symptoms Triggered CHAR 1 RAP summary: behavioral symptoms - triggered. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n567 VA09B VA09B_BEHAVE_PC (VA09B) Behavioral Symptoms Care Planning Decision CHAR 1 RAP summary: behavioral symptoms - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n568 VA10A VA10A_ACTIV_TR (VA10A) Activities Triggered",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

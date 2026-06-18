@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-conditions__record-layout-mesf-cc_xlsx__b3af3fbfad__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/b3af3fbfad2f6ed43af3c60fe6a83820ef895ce6.xlsx",
+  "page": 1,
+  "text": "prior to delivery to researchers \n\nThe BENE_ID field is used to cross-reference data for each beneficiary across all claim and assessment data files.\nSTATE_CD State Code CHAR 2 This field specifies the state as it appeared in the MAX PS file. 2 character postal state code\nMSIS_ID Encrypted Medicaid State ID Number CHAR 20 MSIS Identification Number\nDM_SOURCE Dual or Medicaid only enrollee CHAR 1 This field specifies whether enrollee was dually enrolled in Medicare & Medicaid during the year, or",
+  "dataset": "mesf-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-cc.xlsx"
+}

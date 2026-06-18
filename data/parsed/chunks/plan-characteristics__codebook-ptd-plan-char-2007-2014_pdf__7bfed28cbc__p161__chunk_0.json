@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p161__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 161,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n148 \nGAP_MO_COPAY_2M \nLABEL: \nGap Mail Order Pharmacy Copay for 2-month supply \nDESCRIPTION: This variable identifies the beneficiary co-payment amount for a 2-month supply of the drugs on this \ntier, using a standard mail order pharmacy during the coverage gap phase of the Part D benefit. \nSHORT NAME: — \nLONG NAME: GAP_MO_COPAY_2M \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nCMS (HPMS Files)",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

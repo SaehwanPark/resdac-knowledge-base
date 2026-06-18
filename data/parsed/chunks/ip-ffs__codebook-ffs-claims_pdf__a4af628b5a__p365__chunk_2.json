@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p365__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 365,
+  "text": "6 = TD/U \n7 = D(1+D)/U \n8 = 2.0/U \nD = Discounting fraction (currently 0.5) \nU = Number of units \nT = Terminated procedure discount (currently 0.5) \nCOMMENT: \nThis field is populated for those claims that are required to process through outpatient prospective \npayment system (PPS or OPPS) PRICER software. The type of bills (TOB) required to process through \nare: 12X, 13X, 14X (except Maryland providers, Indian Health Providers, hospitals located in American \nSamoa, Guam and Saipan and Critical",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p49__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 49,
+  "text": "NDC drugs, the NDC of the most expensive drug is used. \nSHORT NAME: PRDSRVID \nLONG NAME: PROD_SRVC_ID \nTYPE: \nCHAR \nLENGTH: \n40 \nSOURCE: \nPDE \nVALUES: \n\nCOMMENT: \nField length expanded from 19 to 40 in 2025. The NDC is reported in an 11-digit format, which is \ndivided into three sections. The first five digits indicate the labeler code for the manufacturer; the next \nfour digits indicate the ingredient, strength, dosage form and route of administration; and the last two \ndigits indicate the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p8__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 8,
+  "text": "phase and partly in the coverage gap. \nSHORT NAME: BNFTPHAS \nLONG NAME: BENEFIT_PHASE \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nPDE (derived) \nVALUES: \nNull/blank = Not a covered drug \nCC = PDE occurred in catastrophic \nphase \nDC = PDE straddled deductible and \ncatastrophic phases \nDD = PDE occurred in deductible phase \nDI = PDE straddled deductible and ICL \n(coverage gap) phases \nDP = PDE straddled deductible and \npre-ICL phases \nIC = PDE straddled ICL (coverage gap) \nand catastrophic phases \nII =",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

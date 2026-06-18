@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__record-layout-mmleads_xlsx__22736b9e52__s1__chunk_15",
+  "source_document": "data/raw/assets/xlsx/22736b9e5259750d16e7bb38f8963a293e7b3e9c.xlsx",
+  "page": 1,
+  "text": "Level of Care for LTSS Months Num 8\n77 MDCD_LTSS_LEVEL_MOS Medicaid - LTSS Provider 1 Level of Care Code Months Num 8\n78 MDCR_DUAL_STUS_CD_01 Medicare - Medicaid Dual Eligibility Code - January Char 2\n79 MDCR_BUYIN_01 Medicare - Entitlement/Buy-In Indicator - January Char 1\n80 MDCR_FFS_MEDICAL_01 Medicare - Fee-for-Service Medical Coverage Indicator - January Num 8\n81 MDCR_DUAL_STUS_CD_02 Medicare - Medicaid Dual Eligibility Code - February Char 2\n82 MDCR_BUYIN_02 Medicare - Entitlement/Buy-In",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads.xlsx"
+}

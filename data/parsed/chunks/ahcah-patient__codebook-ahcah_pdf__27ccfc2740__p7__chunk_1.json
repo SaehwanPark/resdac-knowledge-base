@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 7,
+  "text": "for each CCN. \nSHORT NAME: AHCAH_WVR_SUBMSN_ID \nLONG NAME: AHCAH_WVR_SUBMSN_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \nEx – AHCAH-1234, AHCAH-99887 \nCOMMENT: \nFormatted as AHCAH-xxxxx \n\n^ Back to TOC ^",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

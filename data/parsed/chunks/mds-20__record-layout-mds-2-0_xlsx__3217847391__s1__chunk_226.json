@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_226",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "intensity in last 7 days. 0 = Mild Pain, 1 = Moderate Pain, 2 = Times when pain is horrible or excruciatin, \"-\" = Unknown, -2 = Space.\n358 J3A J3A_BACK_PAIN (J3A) Back Pain CHAR 1 Health conditions: pain symptoms - back pain in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n359 J3B J3B_BONE_PAIN (J3B) Bone Pain CHAR 1 Health conditions: pain symptoms - bone pain in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n360 J3C J3C_CHEST_PAIN (J3C) Chest Pain while Doing Usual Activities CHAR 1 Health",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p47__chunk_2",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 47,
+  "text": "or data \nsource. \nSHORT NAME: BENE_ID \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nFILE(S): \nAll demographic and eligibility \nSOURCE: \nCCW (derived) \nVALUES: \n15-character alphanumeric string (Ex. 22222222GDDGjJs) \nNULL = not enough identifying information to assign a BENE_ID \nCOMMENT: \nIf the BENE_ID is null/missing, then use the combination of MSIS_ID and STATE_CD to identify distinct \nenrollees. Note that if using multiple years of data, MSIS_ID and STATE_CD may not represent the \nsame",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

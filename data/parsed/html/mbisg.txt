@@ -1,0 +1,12 @@
+The Medicare Bayesian Improved Surname Geocoding (MBISG) research data is an annual snapshot file that contains race and ethnicity probabilities for Medicare beneficiaries enrolled at a specific point in time each year from 2023 forward.
+The MBISG algorithm was developed by CMS to augment existing race and ethnicity data from the Social Security Administration and produce more accurate indirect estimates of the race and ethnicity of the Medicare beneficiary population. The MBISG data includes a set of probabilities that the beneficiary is a member of six racial and ethnic groups: American Indian or Alaska Native (AI/AN), Asian American and Native Hawaiian or Other Pacific Islander (AA and NHPI), Black, Hispanic, Multiracial, or White. MBISG probabilities are based on U.S. Census Bureau data on race and ethnicity distributions by surname and Census block group, as well as CMS’s race and ethnicity administrative data and additional administrative elements including first name, demographics, and coverage characteristics.
+The MBISG data consists of a single file that contains the race and ethnicity probabilities of Medicare beneficiaries enrolled on March 1st of each year. Each enrollment year of data is a separate snapshot file. In addition, the file contains a variable that represents the probability that a beneficiary prefers Spanish language survey material.
+The cohort may be linked to claims or Medicare eligibility data using the Beneficiary ID.
+What does this file include? (variable highlights)
+- Beneficiary ID
+- Data File Reference Date
+- Race/Ethnicity Probabilities (6 variables)
+- Predicted Spanish Preference Category
+Special Considerations
+The MBISG dataset is separate from CCW’s Master Beneficiary Summary File (MBSF), which is partitioned by calendar year. The MBISG dataset will overlap with MBSF files, but the cohort does not match exactly to any given MBSF calendar year dataset.
+For more information about the MBISG data, please contact [email protected].

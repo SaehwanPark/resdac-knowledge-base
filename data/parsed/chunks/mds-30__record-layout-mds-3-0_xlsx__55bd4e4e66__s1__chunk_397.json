@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_397",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Rashes Cuts Code CHAR 1 The data in this column indicates whether the resident has lesion(s) other than ulcers, rashes or cuts (e.g., cancer lesion). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n444 M1040E_SRGCL_WND_CD M1040E_SRGCL_WND_CD M1040E Other Skin Problems: Surgical Wound(s) Code CHAR 1 The data in this column indicates whether the resident has surgical wound(s). -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n445 M1040F_BRN_CD M1040F_BRN_CD M1040F",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

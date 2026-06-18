@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p115__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 115,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n117 \nPRVDR_NUM \nLABEL: \nProvider Number \nDESCRIPTION: A data element to capture the identification number used to distinguish providers from one another \non claims and other interactions between providers and other entities. \nSHORT NAME: PRVDR_NUM \nLONG NAME: PRVDR_NUM \nTYPE: \nCHAR \nLENGTH: \n30 (prior to the 2023 file, the length was 12) \nFILE(S): \nAPR Identifiers",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

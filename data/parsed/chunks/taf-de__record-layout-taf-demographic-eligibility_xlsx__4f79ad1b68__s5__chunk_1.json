@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s5__chunk_1",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 5,
+  "text": "Submitting State Entity Code CHAR 2 4\nMFP_LVS_WTH_FMLY_CD Money Follows Person (MFP) - Lives with Family or Non-Participant Code CHAR 1 5\nMFP_QLFYD_RSDNC_CD Money Follows Person (MFP) - Qualified Residence Code CHAR 2 6\nMFP_QLFYD_INSTN_CD Money Follows Person (MFP) - Qualified Institution Code CHAR 2 7\nMFP_RINSTLZD_RSN_CD Money Follows Person (MFP) - Reinstitutionalized Reason Code CHAR 2 8\nMFP_PRTCPTN_END_RSN_CD Money Follows Person (MFP) -Participation Ended Reason Code CHAR 2 9\nMFP_IND_01",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

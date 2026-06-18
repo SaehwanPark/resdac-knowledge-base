@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p19__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 19,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n15 \nSTEP \nLABEL: \nStep Number \nDESCRIPTION: This is a CCW-derived field that indicates whether the prescription was subject to a step therapy \nprotocol, according to the benefit structure and formulary for the beneficiary’s plan. If a product is \npart of two different step therapy protocols, this field is populated with the maximum step value for \nthe product. \nIf the value",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

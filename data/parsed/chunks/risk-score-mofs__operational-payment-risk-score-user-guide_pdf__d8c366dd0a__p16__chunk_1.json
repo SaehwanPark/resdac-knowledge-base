@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p16__chunk_1",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 16,
+  "text": "coding intensity adjustment to \nall scores (not limited to scores for MA enrollees). \nCMS applies a coding pattern adjustment to account for \ndifferential coding patterns between MA plans and FFS. \nFinal step \nResolve the risk score for each beneficiary. \nCMS applies adjustments to the raw risk scores to convert them to payment scores, reference Table 8. \n• \nNormalization — CMS uses the normalization factor to keep the FFS average risk score to be equal to 1.0 for the \npayment year. Due to the",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

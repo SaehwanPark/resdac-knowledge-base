@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_426",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "example medications, diet, exercise) in the past 3 months. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x\nM1041_INFLNZ_DATA_COLL_PERIOD M1041 (M1040) Influenza Vaccine Received In Agency This field indicates if the patient received the influenza vaccine during this episode of care (on or between October 1 and March 31) in agency. 00 = No\n01 = Yes CHAR 2 x x x x x\nM1046_INFLNZ_RCVD M1046 (M1045) Influenza Vaccine - Received This field indicates the reason why the influenza vaccine was",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

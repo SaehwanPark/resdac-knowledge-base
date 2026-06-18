@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s3__chunk_7",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 3,
+  "text": "X X X\n39 ADMSN_DT Admission date DATE 8 X X X\n40 SRVC_BGN_DT Beginning date of service DATE 8 X X X\n41 SRVC_END_DT Ending date of service DATE 8 X X X\n42 DIAG_CD_1 Principal Diagnosis code CHAR 8 X X X\n43 DIAG_VRSN_CD_1 Diagnosis Code 1 Diagnosis Version Code (ICD-9 or ICD-10) CHAR 1 ‾ ‾ X New in 2015\n44 DIAG_CD_2 Diagnosis codes (2nd diagnosis) CHAR 8 X X X\n45 DIAG_CD_3 Diagnosis codes (3rd diagnosis) CHAR 8 X X X\n46 DIAG_CD_4 Diagnosis codes (4th diagnosis) CHAR 8 X X X\n47 DIAG_CD_5 Diagnosis",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

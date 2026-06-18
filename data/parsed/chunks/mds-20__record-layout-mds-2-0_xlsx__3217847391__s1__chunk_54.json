@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_54",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= No, 1 = Yes, \"-\" = Unknown, -2 = Space\n106 AC1K AC1K_ALC_WKLY (AC1K) Use of Alcoholic Beverages at Least Weekly CHAR 1 Customary routine: eating patterns - use of alcohol weekly. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n107 AC1L AC1L_NONE_ABOVE (AC1L) None of Above Eating Patterns CHAR 1 Customary routine: eating patterns - none of above. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space\n108 AC1M AC1M_BEDCTHS_DAY (AC1M) In Bedclothes Much of Day CHAR 1 Customary routine: ADL patterns - in",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

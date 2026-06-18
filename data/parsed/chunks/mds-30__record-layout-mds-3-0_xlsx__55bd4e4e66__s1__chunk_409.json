@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_409",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "reentry if less than seven days. 0 Minimum\n7 Maximum\n- Not assessed/no information\n460 N0350A_INSLN_INJCT_DAY_NUM N0350A_INSLN_INJCT_DAY_NUM N0350A Number of Days Insulin Injections CHAR 1 The data in this column indicates the number of days that the resident received insulin injections in the past seven days or since admission/entry or reentry if less than seven days. 0 Minimum\n7 Maximum\n- Not assessed/no information\n461 N0350B_INSLN_ORDR_DAY_NUM N0350B_INSLN_ORDR_DAY_NUM N0350B Number of Days",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

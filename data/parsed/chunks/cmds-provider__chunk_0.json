@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-provider__chunk_0",
+  "source_document": "data/raw/html/dataset_page/d29088b3a0ca3b7bd57bfb2ce420ed5854cd27de.html",
+  "page": null,
+  "text": "The CMMI Model Data Sharing (CMDS) Provider file is one of a set of three file types (entity, provider, beneficiary) included for each model. A Provider is a Medicare provider/supplier who has an arrangement with an Entity to participate as a member of their entity group in a model.\nWhat does this file include? (variable highlights)\n- Model ID (in which the Provider participates)\n- Entity ID (with which the Provider is associated)\n- National Provider Identifier (NPI)\n- Tax Identification Number",
+  "dataset": "cmds-provider",
+  "url": "https://resdac.org/cms-data/files/cmds-provider"
+}

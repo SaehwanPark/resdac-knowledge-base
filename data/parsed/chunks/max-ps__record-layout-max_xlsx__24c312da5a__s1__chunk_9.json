@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "NP NP NP NP NP NP\n38 EL_MDCR_QTR_XOVR_99_2 Quarterly crossover code (Quarter 2) CHAR 2 X X X NP NP NP NP NP NP NP NP\n39 EL_MDCR_QTR_XOVR_99_3 Quarterly crossover code (Quarter 3) CHAR 2 X X X NP NP NP NP NP NP NP NP\n40 EL_MDCR_QTR_XOVR_99_4 Quarterly crossover code (Quarter 4) CHAR 2 X X X NP NP NP NP NP NP NP NP\n41 EL_MDCR_BEN_MO_CNT Medicare benefit mos (from Medicare EDB) NUM 2 X X X X X X X X X X X\n42 MDCR_ORIG_REAS_CD Mcare orig entitlemt reason (from EDB) NUM 1 X X X X X X X X X X X\n43",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

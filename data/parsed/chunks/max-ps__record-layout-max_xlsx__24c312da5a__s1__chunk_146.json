@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_146",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "Only\n651 PREM_MDCD_PYMT_AMT_PHP Medicaid premium payments (PHP) NUM 12 X X X X X X X X X X X Populated with Zeros Only\n652 PREM_PYMT_IND_PCCM Premium payment indicator (PCCM) NUM 1 X X X X X X X X X X X Populated with Zeros Only\n653 PREM_PYMT_REC_CNT_PCCM Premium payment records (PCCM) NUM 5 X X X X X X X X X X X Populated with Zeros Only\n654 PREM_MDCD_PYMT_AMT_PCCM Medicaid premium payments (PCCM) NUM 12 X X X X X X X X X X X Populated with Zeros Only\n655 SSA_DOD Date of death (from SSA Death",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

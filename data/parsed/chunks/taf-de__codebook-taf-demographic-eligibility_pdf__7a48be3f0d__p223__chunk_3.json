@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p223__chunk_3",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 223,
+  "text": "= Pharmacy PAHP \n19 = Individual is enrolled in long-term services and supports (LTSS) and mental health (MH) PIHP \n20 = Other \n60 = Accountable care organization (ACO) \n70 = Health/Medical home \n80 = Integrated care for dual eligibles \nNull/missing = source value is missing or unknown \nCOMMENT: \nFor each month, there are up to 16 managed care plan type codes; the sequence (first through \nsixteenth plan type codes) is indicated by the third and fourth digits from the right (e.g.,",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

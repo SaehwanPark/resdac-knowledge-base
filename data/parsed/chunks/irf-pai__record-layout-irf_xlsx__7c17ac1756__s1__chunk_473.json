@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_473",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "indicates whether or not the patient had major surgery during the 100 days prior to admission. CHAR 1 The data in this column indicates whether or not the patient had major surgery during the 100 days prior to admission. 0 = No\n1 = Yes\n8 = Unknown\n394 K0110A_SWLNG_RGLR_FOOD_SW K0110A_SWLNG_RGLR_FOOD_SW K0110A Swallowing Regular Food Code - The data in this column indicates whether or not the patient was able to swallow regular food during the admission time period. CHAR 1 The data in this",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

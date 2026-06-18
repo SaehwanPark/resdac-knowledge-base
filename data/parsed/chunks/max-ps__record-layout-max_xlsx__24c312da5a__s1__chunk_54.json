@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_54",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "EL_RSTRCT_BNFT_FLG_11 Restricted benefits (Nov) CHAR 1 X X X X X X X X X X X\n253 EL_RSTRCT_BNFT_FLG_12 Restricted benefits (Dec) CHAR 1 X X X X X X X X X X X\n254 EL_CHIP_FLAG_1 SCHIP eligibility (Jan) NUM 1 X X X X X X X X X X X\n255 EL_CHIP_FLAG_2 SCHIP eligibility (Feb) NUM 1 X X X X X X X X X X X\n256 EL_CHIP_FLAG_3 SCHIP eligibility (Mar) NUM 1 X X X X X X X X X X X\n257 EL_CHIP_FLAG_4 SCHIP eligibility (Apr) NUM 1 X X X X X X X X X X X\n258 EL_CHIP_FLAG_5 SCHIP eligibility (May) NUM 1 X X X X",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

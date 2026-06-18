@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_385",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "Depth Number CHAR 4 The data in this column contains the depth of the largest pressure ulcer (depth of the same pressure ulcer from the visible surface to the deepest area (if depth is unknown, enter a dash in each box). discontinued 9/30/2018\n431 M0700_ULCR_TISUE_TYPE_CD M0700_ULCR_TISUE_TYPE_CD M0700 Most Severe Pressure Ulcer Tissue Type Code CHAR 1 The data in this column indicates the most severe type of tissue present in any pressure ulcer bed. -=Not assessed/no information\n 1=Epithelial",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

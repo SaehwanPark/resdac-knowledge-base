@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p129__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 129,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n118 \nIf DUAL_STUS_CD_MM = '00' '09' 'N/A' 'NA' '99' and MDCR_BUY_IN in ('1' '2' '3' 'A' 'B' 'C') then \nMME_TYPE_CD = 2 (Medicare Only); or else if \nIf the T-MSIS DE File ELIGBLTY_GRP_CD_MM IN ('11' '12' '13' '14' '15' '16' '17' '18' '19' '20' '21' \n'22' '23' '24' '25' '26' '37' '38' '39' '40' '41' '42' '43' '44' '45' '46' '47' '48' '49' '50' '51' '52' '59' '60' \n'69') then MME_TYPE_CD = 1 \nIf Medicaid /CHIP enrolled but not",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_293",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Treatments CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n491 P1BAA P1BAA_SPCH_THR_DAY (P1BAA) Speech Therapy Days CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - therapies - speech - number of days for 15 minutes or more (last 7 days).\n492 P1BAB P1BAB_SPCH_THR_MIN (P1BAB) Speech Therapy Minutes CHAR 4 Special treatments",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

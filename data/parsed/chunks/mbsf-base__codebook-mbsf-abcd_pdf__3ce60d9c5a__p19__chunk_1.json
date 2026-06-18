@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p19__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 19,
+  "text": "This variable is the number of months during the year that the beneficiary had Medicare Part B \ncoverage. (This is sometimes referred to as supplemental medical insurance coverage — or SMI \ncoverage.) CCW derives this variable by counting the number of months where the beneficiary had \nPart B coverage (i.e., the MDCR_ENTLMT_BUYIN_IND_XX variable equaled 2, B, 3, or C). \n^ Back to TOC ^",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

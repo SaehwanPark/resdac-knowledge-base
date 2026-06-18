@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p73__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 73,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n68 \nTIER_ID \nLABEL: \nMedicare Part D Formulary Tier Number \nDESCRIPTION: This is a CCW-derived field that indicates the cost-sharing tier in which the prescription was placed, \naccording to the benefit structure and formulary for the beneficiary’s plan. If a product is part of two \ndifferent tiers, this field is populated with the minimum tier value for the",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

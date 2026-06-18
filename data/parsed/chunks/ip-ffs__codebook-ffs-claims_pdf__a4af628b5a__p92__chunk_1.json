@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p92__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 92,
+  "text": "rule (units associated with revenue center codes 042X, 043X, 044X, 055X, 056X, 057X, 058X, \nand 059X). Value 999 will be displayed if the sum of the revenue center unit count equals or exceeds \n999. \nEffective July 1, 1999, all HHA claims received with service from dates July 1, 1999, and after will be \nprocessed as if the units field contains the 15-minute interval count; and each visit revenue code line \nitem will be counted as ONE visit. This field is calculated correctly; but those users",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

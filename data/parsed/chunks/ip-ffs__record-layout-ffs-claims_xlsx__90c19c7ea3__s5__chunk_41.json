@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_41",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Revenue Center Rendering Physician NPI CHAR 12 41\nRNDRNG_PHYSN_SPCLTY_CD RNDRNG_PHYSN_SPCLTY_CD Revenue Center Rendering Physician Specialty Code CHAR 2 42\nTHRPY_CAP_IND_CD1 THRPY_CAP_IND_CD1 Revenue Center Therapy Cap Indicator 1 Code CHAR 1 45\nTHRPY_CAP_IND_CD2 THRPY_CAP_IND_CD2 Revenue Center Therapy Cap Indicator 2 Code CHAR 1 46\nREV_CNTR_THRPY_RDCTN_AMT REV_CNTR_THRPY_RDCTN_AMT Revenue Center Therapy Reduction Amount NUM 12 54 New5\nTRNSTNL_DRUG_ADD_ON_PYMT_AMT TRNSTNL_DRUG_ADD_ON_PYMT_AMT",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

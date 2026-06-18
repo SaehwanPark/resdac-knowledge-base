@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p327__chunk_0",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 327,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Demographic and Eligibility RIFs Codebook │ December 2025 │ V 1.8 \n287 \nVET_IND \nLABEL: \nVeteran Indicator — Latest in Year \nDESCRIPTION: A flag indicating if the beneficiary is a non-citizen who is exempt from the five-year bar on benefits \nbecause they are a veteran or an active member of the military, naval, or air service; most recent in \nthe calendar and the two prior years. \nSHORT NAME: VET_IND \nLONG NAME: VET_IND \nTYPE: \nCHAR",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

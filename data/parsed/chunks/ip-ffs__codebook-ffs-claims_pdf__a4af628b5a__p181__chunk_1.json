@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p181__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 181,
+  "text": "expenses (such \nas labor) for the claim. \nThere are two types of DSH amounts that may be payable for many PPS claims; the other type of DSH \npayment is for the DSH capital amount (variable called CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT). \nBoth operating and capital DSH payments are components of the PPS, as well as numerous other \nfactors. \nSHORT NAME: DSH_OP \nLONG NAME: DSH_OP_CLM_VAL_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nMedicare payments are described in detail in a",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

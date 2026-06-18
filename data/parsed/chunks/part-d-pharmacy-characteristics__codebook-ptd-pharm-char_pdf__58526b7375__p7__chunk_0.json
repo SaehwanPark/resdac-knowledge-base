@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p7__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 7,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n2 \nDISPENSER_CLASS \nLABEL: \nPart D Dispenser Class Code \nDESCRIPTION: This variable describes the class of pharmacy that filled the prescription. The dispenser class code is \nself-designated by pharmacies to NCPDP and is not related to taxonomy codes. \nSHORT NAME: — \nLONG NAME: DISPENSER_CLASS \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n01 = Independent pharmacy, defined as one to",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

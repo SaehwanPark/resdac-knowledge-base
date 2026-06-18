@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_387",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "This field indicates the reason the patient required hospitalization was due to myocardial infarction or chest pain. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOSP_OTHR_HRT_DEASE M2430 Hospital Reason- Other Heart Disease This field indicates the reason the patient required hospitalization was due to other heart disease. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2430_HOSP_RSPRTRY_OTHR M2430 Hospital Reason- Other Respiratory Problem This field indicates the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

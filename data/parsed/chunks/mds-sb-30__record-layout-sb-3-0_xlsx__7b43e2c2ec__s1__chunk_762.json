@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_762",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "(acute hospital, IPPS)\n05=Long-Term Care Hospital (LTCH)\n06=Inpatient Rehabilitation Facility (IRF, free standing facility or unit)\n07=Inpatient Psychiatric Facility (psychiatric hospital or unit)\n08=Intermediate Care Facility (ID/DD facility)\n09=Hospice (home/non-institutional)\n10=Hospice (institutional facility)\n11=]Critical Access Hospital (CAH)\n12=Home under care of organized home health service organization\n13=Deceased\n99=Not listed effective 10/01/2023\n852 CRNT_MDCTN_LST_PRVDR_CD",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

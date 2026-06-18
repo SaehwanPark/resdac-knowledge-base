@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p147__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 147,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n129 \nCLM_SPAN_THRU_DT \nLABEL: \nClaim Occurrence Span Through Date \nDESCRIPTION: The thru date of a period associated with an occurrence of a specific event relating to an institutional \nclaim that may affect payer processing. \nThe last date associated with the claim occurrence span code (variable called the CLM_SPAN_CD). \nSHORT NAME: SPANTHRU \nLONG NAME: CLM_SPAN_THRU_DT",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_376",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "= Not Applicable CHAR 2 x x x\nM2400_INTRVTN_SMRY_PRSULC_WET M2400 Intervention Synopsis- Moist Wound Treat of Pressure Ulcer This field indicates, since the previous OASIS assessment, whether the pressure ulcer treatment based on principles of moist wound healing was BOTH included in the physician-ordered plan of care AND implemented. 00 = No\n01 = Yes\nNA = Not Applicable CHAR 2 x x x\nM2400_INTRVTN_SMRY_PAIN_MNTR M2400 Intervention Synopsis- Monitor and Mitigate Pain This field indicates, since",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

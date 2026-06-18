@@ -1,0 +1,188 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Accountable Health Communities (AHC) Model Data File
+Version — May 2025
+SAS name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary Identifier	CHAR	15
+MSIS_ID	Encrypted Medicaid State Assigned Beneficiary Unique Identifier	CHAR	32
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2
+MSIS_RFRNC_YR	Medicaid Beneficiary Identifier Reference Year	CHAR	4
+BENE_STATE_CD	Beneficiary State	CHAR	2
+BENE_ZIP_CD	Beneficiary ZIP Code	CHAR	5
+BENE_BIRTH_DT	Beneficiary Birth Date	DATE	8
+BENE_AGE_NUM	Beneficiary Age at Screening	NUM	3
+BENE_SEX_CD	Beneficiary Sex	CHAR	1
+BENE_RACE_ETHNCTY_CD	Beneficiary Race and Ethnicity	CHAR	1
+BENE_PREFRD_LANG_TXT	Beneficiary Preferred Language	CHAR	15
+BENE_EDCTN_CD	Beneficiary Education	CHAR	1
+BENE_INCM_RNG_CD	Beneficiary Income	CHAR	1
+BENE_INSRNC_TYPE_CD	Beneficiary Payer Type	CHAR	1
+AHC_BRDG_ORG_ID	AHC Bridge Organization Identifier	CHAR	3
+AHC_BRDG_ORG_STATE_CD	AHC Bridge Organization State	CHAR	2
+AHC_TRK_CD	AHC Assistance or Alignment Track	CHAR	1
+AHC_BENE_ID	AHC Beneficiary Identifier	CHAR	9
+SR_SCRNG_ID	Screening Identifier	CHAR	9
+SR_SCRNG_DT	Screening Date	DATE	8
+SR_SCRNG_BEFORE_DRNG_AFTR_CD	Did screening occur before, during, or after the visit	CHAR	1
+SR_CORE_FOOD_1_CD	Core HRSN Food 1: Worried food would run out before got money for more	CHAR	1
+SR_CORE_FOOD_2_CD	Core HRSN Food 2: Food bought didn't last and didn't have money to get more	CHAR	1
+SR_CORE_FOOD_OVRL_SCRNG_IND	Screened Core HRSN Food Overall Indicator	CHAR	1
+SR_CORE_HOUSNG_1_CD	Core HRSN Housing 1: Current Living Situation	CHAR	1
+SR_CORE_HOUSNG_2_HEAT_SW	Core HRSN Housing 2: Heat Inadequate	CHAR	1
+SR_CORE_HOUSNG_2_LEAD_SW	Core HRSN Housing 2: Lead Paint Pipes	CHAR	1
+SR_CORE_HOUSNG_2_MOLD_SW	Core HRSN Housing 2: Mold	CHAR	1
+SR_CORE_HOUSNG_2_OVEN_SW	Core HRSN Housing 2: Oven not Working	CHAR	1
+SR_CORE_HOUSNG_2_PESTS_SW	Core HRSN Housing 2: Pests	CHAR	1
+SR_CORE_HOUSNG_2_SMK_DTCTR_SW	Core HRSN Housing 2: Smoke Detector not Working	CHAR	1
+SR_CORE_HOUSNG_2_WTR_LEAK_SW	Core HRSN Housing 2: Water Leaks	CHAR	1
+SR_CORE_HOUSNG_2_PRBLM_CNT	Core HRSN Housing 2: Number of Problems	NUM	1
+SR_CORE_HOUSNG_2_SCRNG_CMPST_IND	Core HRSN Housing 2: Problems Composite	CHAR	1
+SR_CORE_HOUSNG_OVRL_SCRNG_IND	Screened Core HRSN Housing Overall Indicator	CHAR	1
+SR_CORE_SFTY_1_CD	Core HRSN Safety 1: How often physically hurt	CHAR	1
+SR_CORE_SFTY_2_CD	Core HRSN Safety 2: How often insulted	CHAR	1
+SR_CORE_SFTY_3_CD	Core HRSN Safety 3: How often threatened	CHAR	1
+SR_CORE_SFTY_4_CD	Core HRSN Safety 4: How often screamed or cursed at	CHAR	1
+SR_CORE_SFTY_OVRL_SCRNG_IND	Screened Core HRSN Safety Overall Indicator	CHAR	1
+SR_CORE_TRNSPRTN_1_SW	Core HRSN Transportation 1: Lack of Reliable Transportation	CHAR	1
+SR_CORE_TRNSPRTN_OVRL_SCRNG_IND	Screened Core HRSN Transportation Overall Indicator	CHAR	1
+SR_CORE_UTILITIES_1_CD	Core HRSN Utility 1: Util company threatened to shut off services to home	CHAR	1
+SR_CORE_UTLTY_OVRL_SCRNG_IND	Screened Core HRSN Utilities Overall Indicator	CHAR	1
+SR_SPLMTL_DSBLTS_1_SW	Splmtl HRSN Disab 1: Serious diff cncntrting, rmembring, or making decisions	CHAR	1
+SR_SPLMTL_DSBLTS_2_SW	Supplemental HRSN Disabilities 2: Difficulty doing errands alone	CHAR	1
+SR_SPLMTL_DSBLTS_OVRL_SCRNG_IND	Screened Supplemental HRSN Disabilities Overall Indicator	CHAR	1
+SR_SPLMTL_EDCTN_1_SW	Supplemental HRSN Education 1: Speak a language other than English at home	CHAR	1
+SR_SPLMTL_EDCTN_2_SW	Supplemental HRSN Education 2: Want help with school or training	CHAR	1
+SR_SPLMTL_EDCTN_OVRL_SCRNG_IND	Screened Supplemental HRSN Education Overall Indicator	CHAR	1
+SR_SPLMTL_EMPLYMT_1_CD	Supplemental HRSN Employment 1: Want Help finding or keeping job	CHAR	1
+SR_SPLMTL_EMPLYMT_OVRL_SCRN_IND	Screened Supplemental HRSN Employment Overall Indicator	CHAR	1
+SR_SPLMTL_FMLY_CMNTY_SPRT_1_CD	Supplemental HRSN Fmly & Cmmnty Suprt 1: Get help with day-to-day activities	CHAR	1
+SR_SPLMTL_FMLY_CMNTY_SPRT_2_CD	Supplemental HRSN Fmly & Cmmnty Suprt 2: How often feel lonely or isolated	CHAR	1
+SR_SPLM_FMLY_CMNTY_OVRL_SCRN_IND	Screened Supplemental HRSN Family & Community Support Overall Indicator	CHAR	1
+SR_SPLMTL_FINCL_1_CD	Supplemental HRSN Financial Strain 1: How hard to pay for basics	CHAR	1
+SR_SPLMTL_FINCL_OVRL_SCRNG_IND	Screened Supplemental HRSN Financial Strain Overall Indicator	CHAR	1
+SR_SPLMTL_MH_1_CD	Supplemental HRSN Mental Health 1: Little interest or pleasure in things	CHAR	1
+SR_SPLMTL_MH_2_CD	Supplemental HRSN Mental Health 2: Feeling down, depressed, or hopeless	CHAR	1
+SR_SPLMTL_MH_1_2_SUM	Supplemental HRSN Mental Health Sum of SR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD	CHAR	1
+SR_SPLMTL_MH_3_CD	Splmtl HRSN Mntl Hlth 3: Feel tense, restless, anxious, sleepless, troubled	CHAR	1
+SR_SPLMTL_MH_OVRL_SCRNG_IND	Screened Supplemental HRSN Mental Health Overall Indicator	CHAR	1
+SR_SPLMTL_PHYS_ACTVTY_1_CD	Supplemental HRSN Physical Activity 1: Number days moderate exercise	CHAR	1
+SR_SPLMTL_PHYS_ACTVTY_2_CD	Supplemental HRSN Physical Activity 2: Number mins moderate exercise	CHAR	3
+SR_SPLMTL_PHYS_ACTVTY_1_2_QTY	Splmtl HRSN Phys Activity Items 1x2 Numb of days/minutes moderate exercise	NUM	4
+SR_SPLM_PHYS_ACTV_OVRL_SCRN_IND	Screened Supplemental HRSN Physical Activity Overall Indicator	CHAR	1
+SR_SPLMTL_SBSTNC_USE_1_CD	Supplemental HRSN Substance Use 1: Past 12 months alcohol use	CHAR	1
+SR_SPLMTL_SBSTNC_USE_2_CD	Supplemental HRSN Substance Use 2: Past 12 months tobacco use	CHAR	1
+SR_SPLMTL_SBSTNC_USE_3_CD	Supplemental HRSN Substance Use 3: Past 12 months non-medical rx drug use	CHAR	1
+SR_SPLMTL_SBSTNC_USE_4_CD	Supplemental HRSN Substance Use 4: Past 12 months illegal drug use	CHAR	1
+SR_SPLMT_SBST_USE_OVRL_SCRNG_IND	Screened Supplemental HRSN Substance Use Overall Indicator	CHAR	1
+SR_HAS_CORE_HRSN_IND	Beneficiary has at least 1 core HRSN	CHAR	1
+SR_ER_VISITS_CD	Beneficiary Number of ED Visits Last 12 Months	CHAR	1
+SR_ELGBL_FOR_NVGTN_IND	Beneficiary Elig for Navigation, includes Track 1 control group benes	CHAR	1
+SR_GRP_ASGNMT_IND	Beneficiary Group Assignment Assistance Track	CHAR	1
+SR_NVGTN_OPT_IN_OUT_IND	Beneficiary Opted in or out of Navigation services	CHAR	1
+SR_NVGTN_OPT_IN_OUT_DT	Navigation Case Opt In/Out Date	DATE	8
+NC_NVGTN_CASE_ID	Navigation Case Unique Identifier	CHAR	9
+NC_NVGTN_CASE_STRT_DT	Navigation Case Opt In Date	DATE	8
+NC_NVGTN_CASE_TRMNTN_DT	Navigation Case Termination Date	DATE	8
+NC_NVGTN_ACTN_PLAN_CMPLT_SW	Navigation Case Action Plan Complete Indicator	CHAR	1
+NN_NVGTD_CORE_FOOD_SW	Navigated Core HRSN Food Indicator	CHAR	1
+NN_NVGTD_CORE_HOUSNG_SW	Navigated Core HRSN Housing Indicator	CHAR	1
+NN_NVGTD_CORE_SFTY_SW	Navigated Core HRSN Safety Indicator	CHAR	1
+NN_NVGTD_CORE_TRNSPRTN_SW	Navigated Core HRSN Transportation Indicator	CHAR	1
+NN_NVGTD_CORE_UTILITIES_SW	Navigated Core HRSN Utilities Indicator	CHAR	1
+NN_NVGTD_SPLMTL_DSBLTY_SW	Navigated Supplemental HRSN Disability Indicator	CHAR	1
+NN_NVGTD_SPLMTL_EDCTN_SW	Navigated Supplemental HRSN Education Indicator	CHAR	1
+NN_NVGTD_SPLMTL_EMPLYMT_SW	Navigated Supplemental HRSN Employment Indicator	CHAR	1
+NN_NVGTD_SPLMTL_FMLY_CMNTY_SW	Navigated Supplemental HRSN Family & Community Support Indicator	CHAR	1
+NN_NVGTD_SPLMTL_FINCL_SW	Navigated Supplemental HRSN Financial Strain Indicator	CHAR	1
+NN_NVGTD_SPLMTL_MH_SW	Navigated Supplemental HRSN Mental Health Indicator	CHAR	1
+NN_NVGTD_SPLMTL_PHYS_ACTVTY_SW	Navigated Supplemental HRSN Physical Activity Indicator	CHAR	1
+NN_NVGTD_SPLMTL_SBSTNC_USE_SW	Navigated Supplemental HRSN Substance Use Indicator	CHAR	1
+NE_NVGTR_CNTCT_ATMPT_NUM	Number of navigator attempts to contact beneficiary (successful or not)	NUM	2
+NE_NVGTR_SUCSFL_CNTCT_NUM	Number of navigator successful contacts with beneficiary	NUM	2
+NE_NVGTR_AVG_CNTCT_MNTS_NUM	Average duration of successful contacts with beneficiary	NUM	5
+NN_CORE_1_CNCTED_TO_CSP_SW	At Least 1 Core HRSN Connected to CSP, None Resolved	CHAR	1
+NN_CORE_1_RSLVD_SW	At Least 1 Core HRSN Resolved	CHAR	1
+NN_CORE_ALL_RSLVD_SW	All Core HRSNs Resolved	CHAR	1
+NN_CORE_ALL_CNCTED_TO_CSP_SW	All Core HRSNs: Connected to CSP	CHAR	1
+NN_CORE_ALL_OPTOUT_NVGTN_SW	All Core HRSNs: Opted Out of Further Navigation Services	CHAR	1
+NN_CORE_ALL_OUTRCH_ATMPT_FAIL_SW	All Core HRSNs: Attempt to Reach Failed	CHAR	1
+NN_CORE_ALL_CSP_UNAVLBL_SW	All Core HRSNs: CSP Unavailable or Unable to Help	CHAR	1
+NN_CORE_ALL_OUTCM_UNK_SW	All Core HRSNs: Outcome Unknown	CHAR	1
+NN_CORE_FOOD_RSLVD_SW	Navigated Core HRSN Food Resolved	CHAR	1
+NN_CORE_FOOD_CNCT_CSP_SW	Navigated Core HRSN Food Connected to Community Service Provider	CHAR	1
+NN_CORE_FOOD_OPTOUT_SW	Navigated Core HRSN Food Opted Out	CHAR	1
+NN_CORE_FOOD_CNTCT_FAIL_SW	Navigated Core HRSN Food Attempts to Reach Failed	CHAR	1
+NN_CORE_FOOD_CSP_UNAVBL_SW	Navigated Core HRSN Food Community Service Provider Unable to Help	CHAR	1
+NN_CORE_FOOD_OUTCM_UNK_SW	Navigated Core HRSN Food Outcome Unknown	CHAR	1
+NN_CORE_HOUSNG_RSLVD_SW	Navigated Core HRSN Housing Resolved	CHAR	1
+NN_CORE_HOUSNG_CNCT_CSP_SW	Navigated Core HRSN Housing Connected to Community Service Provider	CHAR	1
+NN_CORE_HOUSNG_OPTOUT_SW	Navigated Core HRSN Housing Opted Out	CHAR	1
+NN_CORE_HOUSNG_CNTCT_FAIL_SW	Navigated Core HRSN Housing Attempts to Reach Failed	CHAR	1
+NN_CORE_HOUSNG_CSP_UNAVBL_SW	Navigated Core HRSN Housing Community Service Provider Unable to Help	CHAR	1
+NN_CORE_HOUSNG_OUTCM_UNK_SW	Navigated Core HRSN Housing Outcome Unknown	CHAR	1
+NN_CORE_SFTY_RSLVD_SW	Navigated Core HRSN Safety Resolved	CHAR	1
+NN_CORE_SFTY_CNCT_CSP_SW	Navigated Core HRSN Safety Connected to Community Service Provider	CHAR	1
+NN_CORE_SFTY_OPTOUT_SW	Navigated Core HRSN Safety Opted Out	CHAR	1
+NN_CORE_SFTY_CNTCT_FAIL_SW	Navigated Core HRSN Safety Attempts to Reach Failed	CHAR	1
+NN_CORE_SFTY_CSP_UNAVBL_SW	Navigated Core HRSN Safety Community Service Provider Unable to Help	CHAR	1
+NN_CORE_SFTY_OUTCM_UNK_SW	Navigated Core HRSN Safety Outcome Unknown	CHAR	1
+NN_CORE_TRNSPRTN_RSLVD_SW	Navigated Core HRSN Transportation Resolved	CHAR	1
+NN_CORE_TRNSPRTN_CNCT_CSP_SW	Navigated Core HRSN Transportation Connected to Community Service Provider	CHAR	1
+NN_CORE_TRNSPRTN_OPTOUT_SW	Navigated Core HRSN Transportation Opted Out	CHAR	1
+NN_CORE_TRNSPRTN_CNTCT_FAIL_SW	Navigated Core HRSN Transportation Attempts to Reach Failed	CHAR	1
+NN_CORE_TRNSPRTN_CSP_UNAVBL_SW	Navigated Core HRSN Transportation Community Service Provider Unable to Help	CHAR	1
+NN_CORE_TRNSPRTN_OUTCM_UNK_SW	Navigated Core HRSN Transportation Outcome Unknown	CHAR	1
+NN_CORE_UTILITIES_RSLVD_SW	Navigated Core HRSN Utilities Resolved	CHAR	1
+NN_CORE_UTILITIES_CNCT_CSP_SW	Navigated Core HRSN Utilities Connected to Community Service Provider	CHAR	1
+NN_CORE_UTILITIES_OPTOUT_SW	Navigated Core HRSN Utilities Opted Out	CHAR	1
+NN_CORE_UTILITIES_CNTCT_FAIL_SW	Navigated Core HRSN Utilities Attempts to Reach Failed	CHAR	1
+NN_CORE_UTILITIES_CSP_UNAVBL_SW	Navigated Core HRSN Utilities Community Service Provider Unable to Help	CHAR	1
+NN_CORE_UTILITIES_OUTCM_UNK_SW	Navigated Core HRSN Utilities Outcome Unknown	CHAR	1
+NN_SPLMTL_DSBLTS_RSLVD_SW	Navigated Supplemental HRSN Disability Resolved	CHAR	1
+NN_SPLMTL_DSBLTS_CNCT_CSP_SW	Navigated Splmt HRSN Disability Connected to Community Service Provider	CHAR	1
+NN_SPLMTL_DSBLTS_OPTOUT_SW	Navigated Supplemental HRSN Disability Opted Out	CHAR	1
+NN_SPLMTL_DSBLTS_CNTCT_FAIL_SW	Navigated Supplemental HRSN Disability Attempts to Reach Failed	CHAR	1
+NN_SPLMTL_DSBLTS_CSP_UNAVBL_SW	Navigated Splmt HRSN Disability Community Service Provider Unable to Help	CHAR	1
+NN_SPLMTL_DSBLTS_OUTCM_UNK_SW	Navigated Supplemental HRSN Disability Outcome Unknown	CHAR	1
+NN_SPLMTL_EDCTN_RSLVD_SW	Navigated Supplemental HRSN Education Resolved	CHAR	1
+NN_SPLMTL_EDCTN_CNCT_CSP_SW	Navigated Splmt HRSN Education Connected to Community Service Provider	CHAR	1
+NN_SPLMTL_EDCTN_OPTOUT_SW	Navigated Supplemental HRSN Education Opted Out	CHAR	1
+NN_SPLMTL_EDCTN_CNTCT_FAIL_SW	Navigated Supplemental HRSN Education Attempts to Reach Failed	CHAR	1
+NN_SPLMTL_EDCTN_CSP_UNAVBL_SW	Navigated Splmt HRSN Education Community Service Provider Unable to Help	CHAR	1
+NN_SPLMTL_EDCTN_OUTCM_UNK_SW	Navigated Supplemental HRSN Education Outcome Unknown	CHAR	1
+NN_SPLMTL_EMPLYMT_RSLVD_SW	Navigated Supplemental HRSN Employment Resolved	CHAR	1
+NN_SPLMTL_EMPLYMT_CNCT_CSP_SW	Navigated Splmt HRSN Employment Connected to Community Service Provider	CHAR	1
+NN_SPLMTL_EMPLYMT_OPTOUT_SW	Navigated Supplemental HRSN Employment Opted Out	CHAR	1
+NN_SPLMTL_EMPLYMT_CNTCT_FAIL_SW	Navigated Supplemental HRSN Employment Attempts to Reach Failed	CHAR	1
+NN_SPLMTL_EMPLYMT_CSP_UNAVBL_SW	Navigated Splmt HRSN Employment Community Service Provider Unable to Help	CHAR	1
+NN_SPLMTL_EMPLYMT_OUTCM_UNK_SW	Navigated Supplemental HRSN Employment Outcome Unknown	CHAR	1
+NN_SPLMT_FMLY_CMNT_RSLVD_SW	Navigated Supplemental HRSN Family & Community Support Resolved	CHAR	1
+NN_SPLMT_FMLY_CMNT_CNCT_CSP_SW	Navigated Splmt HRSN Family & Commty Supprt Connected to Commty Serv Prvdr	CHAR	1
+NN_SPLMT_FMLY_CMNT_OPTOUT_SW	Navigated Supplemental HRSN Family & Community Support Opted Out	CHAR	1
+NN_SPLMT_FMLY_CMNT_CNTCT_FAIL_SW	Navigated Splmt HRSN Family & Community Support Attempts to Reach Failed	CHAR	1
+NN_SPLMT_FMLY_CMNT_CSP_UNAVBL_SW	Navigated Splmt HRSN Family & Commty Supprt Comnty Serv Prvdr Unable to Help	CHAR	1
+NN_SPLMT_FMLY_CMNT_OUTCM_UNK_SW	Navigated Supplemental HRSN Family & Community Support Outcome Unknown	CHAR	1
+NN_SPLMTL_FINCL_RSLVD_SW	Navigated Supplemental HRSN Financial Strain Resolved	CHAR	1
+NN_SPLMTL_FINCL_CNCT_CSP_SW	Navigated Splmt HRSN Financial Strain Connected to Community Serv Prvdr	CHAR	1
+NN_SPLMTL_FINCL_OPTOUT_SW	Navigated Supplemental HRSN Financial Strain Opted Out	CHAR	1
+NN_SPLMTL_FINCL_CNTCT_FAIL_SW	Navigated Supplemental HRSN Financial Strain Attempts to Reach Failed	CHAR	1
+NN_SPLMTL_FINCL_CSP_UNAVBL_SW	Navigated Splmt HRSN Financial Strain Community Serv Prvdr Unable to Help	CHAR	1
+NN_SPLMTL_FINCL_OUTCM_UNK_SW	Navigated Supplemental HRSN Financial Strain Outcome Unknown	CHAR	1
+NN_SPLMTL_MH_RSLVD_SW	Navigated Supplemental HRSN Mental Health Resolved	CHAR	1
+NN_SPLMTL_MH_CNCT_CSP_SW	Navigated Splmt HRSN Mental Health Connected to Community Service Provider	CHAR	1
+NN_SPLMTL_MH_OPTOUT_SW	Navigated Supplemental HRSN Mental Health Opted Out	CHAR	1
+NN_SPLMTL_MH_CNTCT_FAIL_SW	Navigated Supplemental HRSN Mental Health Attempts to Reach Failed	CHAR	1
+NN_SPLMTL_MH_CSP_UNAVBL_SW	Navigated Splmt HRSN Mental Health Community Service Provider Unable to Help	CHAR	1
+NN_SPLMTL_MH_OUTCM_UNK_SW	Navigated Supplemental HRSN Mental Health Outcome Unknown	CHAR	1
+NN_SPLMT_PHYS_ACT_RSLVD_SW	Navigated Supplemental HRSN Physical Activity Resolved	CHAR	1
+NN_SPLMT_PHYS_ACT_CNCT_CSP_SW	Navigated Splmt HRSN Physical Activity Connected to Community Serv Prvdr	CHAR	1
+NN_SPLMT_PHYS_ACT_OPTOUT_SW	Navigated Supplemental HRSN Physical Activity Opted Out	CHAR	1
+NN_SPLMT_PHYS_ACT_CNTCT_FAIL_SW	Navigated Supplemental HRSN Physical Activity Attempts to Reach Failed	CHAR	1
+NN_SPLMT_PHYS_ACT_CSP_UNAVBL_SW	Navigated Splmt HRSN Physical Activity Community Serv Prvdr Unable to Help	CHAR	1
+NN_SPLMT_PHYS_ACT_OUTCM_UNK_SW	Navigated Supplemental HRSN Physical Activity Outcome Unknown	CHAR	1
+NN_SPLMT_SBSTN_USE_RSLVD_SW	Navigated Supplemental HRSN Substance Use Resolved	CHAR	1
+NN_SPLMT_SBSTN_USE_CNCT_CSP_SW	Navigated Splmt HRSN Substance Use Connected to Community Service Provider	CHAR	1
+NN_SPLMT_SBSTN_USE_OPTOUT_SW	Navigated Supplemental HRSN Substance Use Opted Out	CHAR	1
+NN_SPLMT_SBSTN_USE_CNTCT_FAIL_SW	Navigated Supplemental HRSN Substance Use Attempts to Reach Failed	CHAR	1
+NN_SPLMT_SBSTN_USE_CSP_UNAVBL_SW	Navigated Splmt HRSN Substance Use Community Service Provider Unable to Help	CHAR	1
+NN_SPLMT_SBSTN_USE_OUTCM_UNK_SW	Navigated Supplemental HRSN Substance Use Outcome Unknown	CHAR	1
+1In 2025, this field was renamed to sex to comply with Executive Order 14168.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-practice__record-layout-value-modifier-practice-level-rif-perf-year-2016_xlsx__e75ad5dc90__s1__chunk_44",
+  "source_document": "data/raw/assets/xlsx/e75ad5dc90d8b0bcd7b35ea5b41e8e51e49d04b1.xlsx",
+  "page": 1,
+  "text": "used to determine the number of eligible professionals in a practice for the purposes of the Value Modifier 49 Num 8\nHAS_PHYSICIAN_VM TIN has at least one physician identified in billings and at least one physician identified in PECOS 50 Num 8 Equals 1 if TIN has at least one physician identified in billings and at least one physician identified in PECOS\nPECOS_EPCNT Num of EPs for practice in PECOS Number of eligible professionals in practice identified via PECOS 51 Num 8\nPHYS_COUNT Num of",
+  "dataset": "vm-practice",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-practice-level-rif-perf-year-2016.xlsx"
+}

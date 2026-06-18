@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p57__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 57,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n46 \nMDCD_OTHR_MC_MOS \nLABEL: \nMedicaid — Other (non-Comprehensive) Managed Care Medicaid Coverage Months \nDESCRIPTION: This variable is the number of months during the year when the beneficiary had some type of \nMedicaid managed care coverage, however it was not comprehensive medical managed care \ncoverage. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS DE file (derived) \nVALUES: \n0–12, or null/missing (if no Medicaid enrollment)",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

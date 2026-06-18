@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p65__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 65,
+  "text": "TYPE: \nCHAR \nLENGTH: \n50 \nFILE(S): \nAPR Affiliated Programs \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nAlphanumeric character string (e.g., 00000000089, RAD) \nCOMMENT: \nThe specific type of affiliated program is shown in the corresponding value in the \nAFLTD_PGM_TYPE_CD data element. When AFLTD_PGM_TYPE_CD is “4” (Health Home Entity), the \nAffiliated Program ID should contain the health home entity name. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_194",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "CHAR 1 Disease diagnosis: diseases - endocrine/metabolic/nutritional - diabetes mellitus. 0 = No, 1 = Yes, \"-\" = Unknown.\n279 I1AA I1AA_SEIZURE_DIS (I1AA) Seizure Disorder CHAR 1 Disease diagnosis: diseases - neurological - seizure disorder. 0 = No, 1 = Yes, \"-\" = Unknown.\n280 I1B I1B_HYPERTHYRD (I1B) Hyperthyroidism CHAR 1 Disease diagnosis: diseases - endocrine/metabolic/nutritional - hyperthyroidism. 0 = No, 1 = Yes, \"-\" = Unknown.\n281 I1BB I1BB_TIA (I1BB) Transient Ischemic Attack CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p13__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 13,
+  "text": "calendar year. \nSHORT NAME: ALPTHC_OSTPTHC_PHYSN_TXNMY_IND \nLONG NAME: ALPTHC_OSTPTHC_PHYSN_TXNMY_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThis variable = 1 if PRVDR_CLSFCTN_SYS = “1” or “N” and the taxonomy code value is one of the \nfollowing: \n202C00000X: Independent medical examiner \n202D00000X: Integrative medicine physician \n202K00000X: Phlebology \n204C00000X: Neuromusculoskeletal medicine, sports medicine",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

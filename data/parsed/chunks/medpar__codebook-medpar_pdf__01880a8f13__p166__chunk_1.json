@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p166__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 166,
+  "text": "services in an observation unit \nN = No observation unit services. \nCOMMENT: \nIf any claim that comprises the Stay has a revenue center code (REV-CNTR-CD) equal to '0762' then \nMEDPAR Observation Switch = 'Y'. If no '0762' revenue center code, then field ='N'. \nThis field is new in 2011. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

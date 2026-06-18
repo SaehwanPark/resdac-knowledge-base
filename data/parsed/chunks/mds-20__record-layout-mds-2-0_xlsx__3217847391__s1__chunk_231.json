@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_231",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = Yes, \"-\" = Unknown.\n370 J4C J4C_HIP_FRC_180_DA (J4C) Hip Fracture in Last 180 Days CHAR 1 Health conditions: accidents - hip fracture in last 180 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n371 J4D J4D_OTH_FRC_180_DA (J4D) Other Fracture in Last 180 Days CHAR 1 Health conditions: accidents - other fracture in last 180 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n372 J4E J4E_NONE_ABOVE (J4E) None of Above Accidents CHAR 1 Health conditions: accidents - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n373",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

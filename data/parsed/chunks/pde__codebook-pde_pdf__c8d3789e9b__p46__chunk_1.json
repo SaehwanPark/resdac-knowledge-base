@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p46__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 46,
+  "text": "Part D’s true out-of-pocket (TrOOP) requirement. Examples \ninclude payments by group health plans, worker's compensation, and governmental programs like the \nVeterans Administration and TRICARE. \nSHORT NAME: PLRO_AMT \nLONG NAME: PLRO_AMT \nTYPE: \nNUM \nLENGTH: \n13 \nSOURCE: \nPDE \nVALUES: \n— \nCOMMENT: \nField length expanded from 10 to 13 in 2025. This variable comes directly from the original PDE. \n^ Back to TOC ^",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

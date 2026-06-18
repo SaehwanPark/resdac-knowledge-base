@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_119",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "from July 1,2019 through, December 31, 2019.\nBeginning in performance year 2020, ACO identifier uses the ACO ID. A crosswalk file is available to match ACO_ID with the previously used ACO_NUM (encrypted ACO identifier).\nThe Shared Savings Program Beneficiary-Level Research Identifiable File (RIF) is produced six times, for prospective/preliminary prospective assignment, for each of the four quarterly assignment runs, and for the final assignment run.\nThe Beneficiary-Level RIFs are cumulative",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

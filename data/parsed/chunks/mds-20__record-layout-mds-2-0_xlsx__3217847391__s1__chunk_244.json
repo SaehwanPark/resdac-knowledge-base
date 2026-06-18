@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_244",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 = 1% to 25%, 2 = 26% to 50%, 3 = 51% to 75%, 4 = 76% to 100%, \"-\" = Unknown, -2 = Space\n399 K6B K6B_FLUID_INTAKE (K6B) Fluid Intake Per Day CHAR 1 Oral/nutritional status: parenteral or enteral intake - average fluid intake (daily) in last 7 days. 0 = None, 1 = 1 to 500 cc/day, 2 = 501 to 1000 cc/day, 3 = 1001 to 1500 cc/day, 4 = 1501 to 2000 cc/day, 5 = 2001 or more cc/day, \"-\" = Unknown, -2 = Space\n400 L1A L1A_DEBRIS_B4_BED (L1A) Debris Present in Mouth Prior to Going to Bed CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

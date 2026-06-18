@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p222__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 222,
+  "text": "MC_PLAN_TYPE_CD_09_12 \nLABEL: \nManaged Care Plan Type Code (9th Occurrence) ― January–December (01–12) \nDESCRIPTION: Monthly values for the ninth of up to 16 managed care plan type codes: A model of health care \ndelivery organized to provide a defined set of services in the month. There are separate variables for \neach of the 12 months during the year. The last two digits of this variable indicate the month. \nSHORT NAME: \nMC_PLAN_TYPE_CD_09_01 \nMC_PLAN_TYPE_CD_09_02 \nMC_PLAN_TYPE_CD_09_03",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

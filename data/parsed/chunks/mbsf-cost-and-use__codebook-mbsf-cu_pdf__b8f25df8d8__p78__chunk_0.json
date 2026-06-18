@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p78__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 78,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n72 \nPTD_MDCR_PMT \nLABEL: \nPart D Medicare Payments \nDESCRIPTION: This variable is the dollar amount that the Part D plan covered for all covered drugs for a given year. The \nvariable is calculated as the sum of the plan payments for covered PDEs (CVRD_D_PLAN_PD_AMT) and \nthe low-income cost sharing subsidy amount (LICS_AMT) during the year. \nSHORT NAME: — \nLONG NAME: PTD_MDCR_PMT",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

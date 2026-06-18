@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 17,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF with Medicare Part A, B, C, and D, Version 2 │ May 2026 │ V 1.2 \n8 \nBENE_PTA_TRMNTN_CD \nLABEL: \nPart A Termination Code \nDESCRIPTION: This code specifies the reason Part A entitlement was terminated. \nLONG NAME: BENE_PTA_TRMNTN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \n0 = Not Terminated \n1 = Dead \n2 = Non-Payment of Premium \n3 = Voluntary Withdrawal \n9 = Other Termination \nCOMMENT: \n— \n^",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

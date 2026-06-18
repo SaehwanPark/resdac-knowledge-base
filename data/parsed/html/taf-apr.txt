@@ -1,0 +1,10 @@
+The T-MSIS Analytic File (TAF) Annual Provider (APR) file contains information about providers of Medicaid services—both facilities and individual providers. By linking the information in the APR to other TAFs by provider ID, users can enhance their analyses focused of providers. For example, users can identify whether the provider is a facility, group or individual; whether the provider’s specialty is primary care, obstetrics, or something else; how the provider is affiliated with other providers in a group practice; where the provider is located; and many other characteristics.
+What does this file include (variable highlights)
+- Provider taxonomy indicators such as eye or vision, behavioral health, speech language or hearing services
+- Residential treatment facility indicator
+- Substance Use Disorder Service provider indicator
+Special considerations
+- This file does not contain individual service records but contains information about providers that can be linked to individual service records.
+- CMS continues to work with states to address data quality issues. In addition to preliminary and fully mature files, CMS may provide updated releases of the files for a given year. Please see this page on CMS fee information for TAF data pricing.
+- ResDAC provides resources on Medicaid TAF data quality.
+- A bridge file will be provided to assist researchers that are conducting longitudinal analysis involving 2020 TAF research files along with earlier service years. For additional information, please see the CCW T-MSIS Analytic Files (TAF) User Guide posted on CCW’s User Documentation page.

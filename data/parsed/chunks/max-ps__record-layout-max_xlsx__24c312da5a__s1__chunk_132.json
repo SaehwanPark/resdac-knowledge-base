@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_132",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "(Unknown) NUM 12 X X X X X X X X X X X\n606 ENCTR_REC_CNT_99 Encounter record count (Unknown) NUM 5 X X X X X X X X X X X\n607 CLTC_FFS_PYMT_AMT_11 Medicaid payment amount (CLTC 11) - non-waiver personal care NUM 12 ‾ X X X X X X X X X X\n608 CLTC_FFS_PYMT_AMT_12 Medicaid payment amount (CLTC 12) - non-waiver private duty nursing NUM 12 ‾ X X X X X X X X X X\n609 CLTC_FFS_PYMT_AMT_13 Medicaid payment amount (CLTC 13) - non-waiver adult day program NUM 12 ‾ X X X X X X X X X X\n610",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

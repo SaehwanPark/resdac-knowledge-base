@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p105__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 105,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n94 \nMDCR_MS_CD \nLABEL: \nMedicare Status Code — Latest in Year \nDESCRIPTION: This Medicare status code variable indicates how a beneficiary currently qualifies for Medicare. \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMBSF (derived) \nVALUES: \n10 = Aged without end-stage renal disease (ESRD) \n11 = Aged with ESRD \n20 = Disabled without ESRD \n21 = Disabled with ESRD \n31 = ESRD only \nNull/missing = not Medicare enrolled \nCOMMENT: \nCCW",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

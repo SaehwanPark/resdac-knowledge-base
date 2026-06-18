@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_15",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Validation Type Code CHAR 2 64 New2\nLine file\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15 1\nCLM_ID CLM_ID Claim ID CHAR 15 2\nLINE_NUM LINE_NUM Claim Line Number NUM 13 3\nCLM_TYPE NCH_CLM_TYPE_CD NCH Claim Type Code CHAR 2 4\nTHRU_DT CLM_THRU_DT Claim Through Date DATE 8 5\nPRF_PRFL CARR_PRFRNG_PIN_NUM Carrier Line Performing Provider ID Number (PIN) CHAR 15 6\nPRF_UPIN PRF_PHYSN_UPIN Carrier Line Performing UPIN Number CHAR 12 7\nPRFNPI PRF_PHYSN_NPI Carrier Line Performing NPI Number CHAR",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

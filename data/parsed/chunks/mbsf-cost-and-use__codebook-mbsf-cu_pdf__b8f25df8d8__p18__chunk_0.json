@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 18,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n12 \nASC_EVENTS \nLABEL: \nAmbulatory Surgery Center Events \nDESCRIPTION: This variable is the count of events in the Part B ambulatory surgery center (ASC) setting for a given year. \nAn event is defined as each line item that contains an ASC service. \nASC claim lines are a subset of the claims in the Part B carrier data file. The ASC claim lines are identified \nby the claim lines",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

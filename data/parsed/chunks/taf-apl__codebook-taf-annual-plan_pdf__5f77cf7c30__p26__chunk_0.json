@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p26__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 26,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n18 \nMC_PLAN_CITY \nLABEL: \nManaged Care Plan Location — City \nDESCRIPTION: The city of the managed care service location associated with a unique managed care service location \nID. \nSHORT NAME: MC_PLAN_CITY \nLONG NAME: MC_PLAN_CITY \nTYPE: \nCHAR \nLENGTH: \n42 \nFILE(S): \nAPL Location \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nCity name \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

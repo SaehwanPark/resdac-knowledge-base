@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_26",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Zip Code CHAR 15 51\nLINE_POINT_OF_PCKP_ZIP_CD LINE_POINT_OF_PCKP_ZIP_CD Line Point of Pickup Zip Code CHAR 5 88 New6\nLINE_DROP_OFF_ZIP_CD LINE_DROP_OFF_ZIP_CD Line Drop Off Zip Code CHAR 5 89 New6\nLINE_OTHR_APLD_IND_CD1 LINE_OTHR_APLD_IND_CD1 Line Other Applied Indicator 1st Code CHAR 2 52\nLINE_OTHR_APLD_IND_CD2 LINE_OTHR_APLD_IND_CD2 Line Other Applied Indicator 2nd Code CHAR 2 53\nLINE_OTHR_APLD_IND_CD3 LINE_OTHR_APLD_IND_CD3 Line Other Applied Indicator 3rd Code CHAR 2",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

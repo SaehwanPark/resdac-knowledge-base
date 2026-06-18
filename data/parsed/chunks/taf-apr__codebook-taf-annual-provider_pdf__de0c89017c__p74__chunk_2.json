@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p74__chunk_2",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 74,
+  "text": "NPPES); then this value is described at the following website: \nhttps://x12.org/codes/provider-taxonomy-codes \nIf PRVDR_CLSFCTN_SYS equals “2” (provider specialty code), then the values are: \n01 = General practice \n02 = General surgery \n03 = Allergy/Immunology \n04 = Otolaryngology \n05 = Anesthesiology \n06 = Cardiology \n07 = Dermatology \n08 = Family practice \n09 = Interventional pain management \n10 = Gastroenterology \n11 = Internal medicine \n12 = Osteopathic manipulative medicine \n13 =",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

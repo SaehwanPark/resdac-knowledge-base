@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_10",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "2 X X X X X X X X X X X\n42 MDCR_ORIG_REAS_CD Mcare orig entitlemt reason (from EDB) NUM 1 X X X X X X X X X X X\n43 EL_MDCR_DUAL_MO_1 Medicare dual code (Jan) CHAR 2 ‾ X X X X X X X X X X New in 2005 (replaces the monthly XOVR codes - which are at the end of this layout)\n44 EL_MDCR_DUAL_MO_2 Medicare dual code (Feb) CHAR 2 ‾ X X X X X X X X X X\n45 EL_MDCR_DUAL_MO_3 Medicare dual code (Mar) CHAR 2 ‾ X X X X X X X X X X\n46 EL_MDCR_DUAL_MO_4 Medicare dual code (Apr) CHAR 2 ‾ X X X X X X X X X X\n47",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

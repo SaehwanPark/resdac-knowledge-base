@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-lt__data-documentation__68204238c2__chunk_12",
+  "source_document": "data/raw/html/documentation_page/68204238c286253d5e458f05aef7dfde120d87fd.html",
+  "page": null,
+  "text": "| \n\n | 76 | NCVRD_DAYS | Medicaid Non-covered Days Count | \n\n | 77 | CVRD_DAYS_ICF_IID | Count of Medicaid Covered Days in ICF for Patients with Intellectual Disability | \n\n | 78 | CVRD_DAYS_NF | Count of Medicaid Covered Days in a Nursing Facility | \n\n | 79 | CVRD_DAYS_IP_PSYCH | Count of Medicaid Covered Days in an Inpatient Psychiatric Facility (IPF) | \n\n | 80 | CVRD_DAYS_IP_PSYCH_OVER_65 | Count of Medicaid Covered Days in an IPF (Beneficiary Over 65 Years) | \n\n | 81 |",
+  "dataset": "taf-lt",
+  "url": "https://resdac.org/cms-data/files/taf-lt/data-documentation"
+}

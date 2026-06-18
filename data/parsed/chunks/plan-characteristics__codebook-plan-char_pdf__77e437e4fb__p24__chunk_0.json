@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p24__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 24,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n10 \nCONDITION_CATEGORY_08 \nLABEL: \nSpecial Needs Plan (SNP) — Condition Category 08 (End-Stage Liver Disease) \nDESCRIPTION: This variable identifies special needs plans (SNP) for end-stage liver disease (Condition Category 08). \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nN = Not a SNP for this Condition Category \nY = SNP for this Condition Category",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

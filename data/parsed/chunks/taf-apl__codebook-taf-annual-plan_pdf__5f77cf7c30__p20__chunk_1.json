@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p20__chunk_1",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 20,
+  "text": "contract(s) in the prior calendar year; \nmost recent in the calendar year. \nSHORT NAME: MC_ENT_GOVT_PCT \nLONG NAME: MC_ENT_GOVT_PCT \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nValues are 0 through 100 or Null/missing \nCOMMENT: \nThe value was chosen using the last-best method for values from the monthly TAF (calendar year). \nGuidance to plans was to include Medicaid and Medicare in calculation of percentage of business in \npublic programs",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

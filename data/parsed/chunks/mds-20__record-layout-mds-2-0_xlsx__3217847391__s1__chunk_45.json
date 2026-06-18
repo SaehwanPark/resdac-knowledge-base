@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_45",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "3 = Other, \"-\" = Unknown\n87 AB8B AB8B_OTH_LANG (AB8B) Other Language CHAR 9 Demographic information: if other (language), specify.\n88 AB9 AB9_MH_HISTORY (AB9) Mental Health History CHAR 1 Demographic information: metal health history 0 = No, 1 = Yes, \"-\" = Unknown\n89 AB10A AB10A_MR_DD_NA (AB10A) No MR/DD CHAR 1 Demographic information: conditions related to MR/DD status - non-applicable - no MR/DD. 0 = No, 1 = Yes, \"-\" = Unknown\n90 AB10B AB10B_MR_DD_DOWNS (AB10B) Downs Syndrome CHAR 1",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

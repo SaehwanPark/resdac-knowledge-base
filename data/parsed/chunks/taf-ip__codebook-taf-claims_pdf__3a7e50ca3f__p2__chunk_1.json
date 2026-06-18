@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 2,
+  "text": "to each line claim record \n• \nAdded new fields ORDRG_PRVDR_ID and ORDRG_PRVDR_NPI \nto OT header \n• \nAdded new field RX_ORGN_CD to RX header; added new fields \nto RX line: DSPNSNG_FEE_PD_AMT, \nINGRDNT_CST_BILLED_AMT, INGRDNT_CST_PD_AMT, \nPROFNL_SRVC_FEE_BILLED_AMT, PROFNL_SRVC_FEE_PD_AMT \n• \nUpdated label for RX line DSPNSNG_FEE_AMT \n• \nUpdated comments to show variables retired after 2022: \nCOPAY_WVD_IND, CPTATD_PYMT_BILLED_AMT, \nCPTATD_PYMT_BILLED_DT, DRCTNG_PRVDR_NPI, \nDRCTNG_PRVDR_TXNMY_CD,",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

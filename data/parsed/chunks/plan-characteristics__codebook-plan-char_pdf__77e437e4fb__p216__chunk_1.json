@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p216__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 216,
+  "text": "for Medicare Advantage plans. \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nThe Part D Supplemental Premium covers any enhanced benefits that may be offered by a plan above \nand beyond the basic (standard) Part D benefit. These benefits may include extra coverage in the \ncoverage gap, lower copayments than the standard benefit, coverage of non-Part D drugs (e.g. \nbenzodiazepines prior to 2013), etc. \nThe CCW constructs the plan characteristics file from information",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

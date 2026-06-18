@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "NUM 12\nACUTE_PERDIEM_PMT Acute Inpatient Hospital Pass-thru Per Diem Payments NUM 12\nACUTE_PRMRY_PMT Acute Inpatient Hospital Primary Payer Amount NUM 12\nACUTE_STAYS Acute Inpatient Stays NUM 6\nACUTE_COV_DAYS Acute Inpatient Medicare Covered Days NUM 6\nREADMISSIONS Acute Inpatient Hospital Readmissions NUM 6\nIP_ER_VISITS Inpatient Emergency Room Visits NUM 6\nOIP_BENE_PMT Other Inpatient Hospital Beneficiary Payments NUM 12\nOIP_MDCR_PMT Other Inpatient Hospital Medicare Payments NUM",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

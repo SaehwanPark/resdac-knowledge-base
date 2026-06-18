@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s1__chunk_56",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 1,
+  "text": "X X X X X X X X X X X\n263 EL_CHIP_FLAG_10 SCHIP eligibility (Oct) NUM 1 X X X X X X X X X X X\n264 EL_CHIP_FLAG_11 SCHIP eligibility (Nov) NUM 1 X X X X X X X X X X X\n265 EL_CHIP_FLAG_12 SCHIP eligibility (Dec) NUM 1 X X X X X X X X X X X\n266 MAX_WAIVER_TYPE_1_MO_1 MAX Waiver Type Code -1 (Jan) CHAR 1 ‾ X X X X X X X X X X\n267 MAX_WAIVER_ID_1_MO_1 Waiver ID-1 (Jan) CHAR 2 ‾ X X X X X X X X X X\n268 MAX_WAIVER_TYPE_2_MO_1 MAX Waiver Type Code -2 (Jan) CHAR 1 ‾ X X X X X X X X X X\n269",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_604",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "medical condition or safety concerns\n ^=Blank (skip pattern) effective 10/01/2016\n676 GG0170Q1_USE_WLCHR_STRT_CD GG0170Q1_USE_WLCHR_STRT_CD GG0170Q1 Mobility: Uses Wheelchair/Scooter at Start of SNF PPS Part A Stay CHAR 1 Indicates whether the resident uses a wheelchair or scooter at the start of the SNF PPS Part A stay. -=Not assessed/no information\n 0=No\n 1=Yes\n ^=Blank(skip pattern) effective 10/01/2016\n677 GG0170Q3_USE_WLCHR_END_CD GG0170Q3_USE_WLCHR_END_CD GG0170Q3 Mobility: Uses",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

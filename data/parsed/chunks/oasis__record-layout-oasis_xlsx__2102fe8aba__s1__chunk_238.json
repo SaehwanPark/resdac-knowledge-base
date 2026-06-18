@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_238",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "if the patient is at risk for hospitalization due to frailty indicators. 0 = Not Checked, 1 = Checked CHAR 1 x\nM1032_HOSP_RISK_HSTRY_FALLS M1032 Risk for Hosp- History of Falls This field is checked if the patient is at risk for hospitalization due to history of falls. 0 = Not Checked, 1 = Checked CHAR 1 x\nM1032_HOSP_RISK_MLTPL_HOSPZTN M1032 Risk for Hosp- More Than 1 Hospital In 12 Mo This field is checked if the patient is at risk for hospitalization due to multiple hospitalizations (2 or",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

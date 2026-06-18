@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p14__chunk_6",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 14,
+  "text": "score calculation but not in the Part C HCC models. The exact \nnumber of variables in the RxHCC file depends on the payment year. \nCMS produces three versions of the RXHCC file each year using various data inputs for the model; therefore for each \nbeneficiary there are three records in the annual RXHCC file. CCW derived a field called the MOF diagnosis input file \nsource code (MOF_DGNS_INPUT_CD) in the MOFs to identify the three versions. Table 5 describes the field values. \nThe CCW base risk",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

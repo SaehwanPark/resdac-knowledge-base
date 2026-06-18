@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hha-ffs__data-documentation__7a39b31d66__chunk_5",
+  "source_document": "data/raw/html/documentation_page/7a39b31d66a1e4c8a9496eb67fda7c56df9bca35.html",
+  "page": null,
+  "text": "| Claim or Revenue Center Rendering Physician Specialty Code | \n\n | 33 | RFR_PHYSN_NPI | Claim Referring Physician NPI Number | \n\n | 34 | RFRG_SPCLTY_CD | Claim Referring Physician Specialty Code | \n\n | 35 | CLM_MCO_PD_SW | Claim MCO Paid Switch | \n\n | 36 | PTNT_DSCHRG_STUS_CD | Patient Discharge Status Code (FFS) | \n\n | 37 | CLM_PPS_IND_CD | Claim PPS Indicator Code | \n\n | 38 | CLM_TOT_CHRG_AMT | Claim Total Charge Amount | \n\n | 39 | NCH_BENE_DSCHRG_DT | NCH Beneficiary Discharge Date | \n\n |",
+  "dataset": "hha-ffs",
+  "url": "https://resdac.org/cms-data/files/hha-ffs/data-documentation"
+}

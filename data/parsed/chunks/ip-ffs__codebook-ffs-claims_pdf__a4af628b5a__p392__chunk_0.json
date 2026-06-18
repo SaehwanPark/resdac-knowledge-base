@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p392__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 392,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n374 \nRFR_PHYSN_SPCLTY_CD \nLABEL: \nClaim Referring Physician Specialty Code \nDESCRIPTION: The code used to identify the CMS specialty code of the referring physician/practitioner. \nSHORT NAME: RFR_PHYSN_SPCLTY_CD \nLONG NAME: RFR_PHYSN_SPCLTY_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCH \nVALUES: \n00 = carrier wide \n01 = General practice \n02 = General surgery \n03 =",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

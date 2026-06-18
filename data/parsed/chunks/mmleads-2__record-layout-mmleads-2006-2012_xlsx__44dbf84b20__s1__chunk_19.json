@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-2__record-layout-mmleads-2006-2012_xlsx__44dbf84b20__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/44dbf84b2079bde113ba3342dc52d79adaaab07f.xlsx",
+  "page": 1,
+  "text": "Months Medicare only coverage. XX\nE_MEDICAIDONLY_MOS Months Medicaid only with a disability (coverage). XX\nE_OTHER_MOS Months neither Medicare nor Medicaid coverage. XX\nFFS/MA Eligibility E_MEDICAREFFS_1 - 12 Monthly Medicare fee-for-service (FFS) indicator. January through December. If Medicare monthly buyin (E_BUYIN_<M>)is equal to '3' or 'C' and the monthly HMO indicator is '0' or 4' then FFS. If monthly HMO is '1' or '2' then cost based and if monthly HMO is 'A', 'B', or 'C' then",
+  "dataset": "mmleads-2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mmleads-2006-2012.xlsx"
+}

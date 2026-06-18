@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p62__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 62,
+  "text": "NCH \nVALUES: \n0 = Base record (no enhancements) \n1 = Population Based Payments (PBP) \n2 = Telehealth \n3 = Post Discharge Home Health Visits \n4 = 3-Day SNF Waiver \n5 = Capitation \nCOMMENT: \nThis field comes from the CLM-NG-ACO-IND-1-CD–CLM-NG-ACO-IND-5-CD that is present on the first \nclaim record included in the stay. If there is no CLM-NG-ACO-IND-1-CD–CLM-NG-ACO-IND-5-CD on the \nfirst claim, then take the first found code on any of the other claims that make up the stay. \nThis field is new in",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

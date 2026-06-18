@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cmds-beneficiary__record-layout-cmds_xlsx__db71320620__s3__chunk_0",
+  "source_document": "data/raw/assets/xlsx/db713206205b9bc4a36a311a78fdfb65414c59e1.xlsx",
+  "page": 3,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nCMMI Data Sharing (CMDS) — Entity File\nVersion — April 2025\nSAS name Label Type Length Format Values\nMODEL_ID Model Identifier CHAR 2 refer to Model ID tab\nMODEL_NAME Model Name CHAR 256\nENTITY_ID Entity Identifier CHAR 10\nENTITY_NAME Entity Name CHAR 256\nENTITY_TYPE Entity Type CHAR 3 MDC = Medicare Enrolled Provider/Supplier\nFAC = Medicare Facility \nHSP = Medicare Hospital\nPAC = Post-Acute Care Medicare Facility\nPRA = Medicare Enrolled",
+  "dataset": "cmds-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cmds.xlsx"
+}

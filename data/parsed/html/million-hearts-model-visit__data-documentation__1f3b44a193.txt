@@ -1,0 +1,20 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| PRACTICE_ID | Model-Assigned Practice ID | 
+| PRACTICE_NAME | Name of Practice | 
+| TIN | Practice's Taxpayer Identification Number | 
+| UNIQUE_PATIENT_ID | Unique Model-Assigned Patient ID | 
+| NPI | Provider's National Provider Identifier | 
+| VISIT_DATE | Patient Visit Date | 
+| FOLLOWUP_ATTESTATION | Practitioner's Attestation to Follow-up | 
+| ACCURACY_ATTESTATION | Practitioner's Accuracy of Attestation | 
+| RISK_SCORE | Calculated ASCVD Risk Score | 
+| BASELINE_SCORE | Patient's Baseline ASCVD Score | 
+| BASELINE_GROUP | Patient's Baseline Group (Low, Medium, High) | 
+| BASELINE_DATE | Patient's Baseline Date | 
+| INSERT_DATE | Date the Record was Created | 
+| LAST_MODIFIED_DATE | Date the Patient Record was Modified |

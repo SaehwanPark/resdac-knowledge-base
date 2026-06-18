@@ -1,0 +1,15 @@
+The Medicaid and CHIP T-MSIS Analytic File (TAF) Demographic and Eligibility (DE) file contains one record for every individual eligible for and enrolled in Medicaid or CHIP for at least one day during the file calendar year.
+What does this file include? (variable highlights)
+- Eligibility dates
+- Managed care enrollment
+- Waiver enrollment
+- Money Follows the Person program enrollment
+- Health Home information, including State Plan Option participants, chronic Home Health condition
+- Long-Term Services and Supports eligiblity
+- Conception-to-Birth Option eligibility
+- Disability information
+- Government Assistance program participation
+- Third Party Liability coverage
+Special considerations
+- ResDAC provides resources on Medicaid TAF data quality.
+- A bridge file will be provided to assist researchers that are conducting longitudinal analysis involving 2020 TAF research files along with earlier service years. For additional information, please see the CCW T-MSIS Analytic Files (TAF) User Guide posted on CCW’s User Documentation page.

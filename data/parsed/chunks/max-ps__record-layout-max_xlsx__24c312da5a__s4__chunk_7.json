@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s4__chunk_7",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 4,
+  "text": "date DATE 8 X X X X\n37 CHRG_AMT Charge amount NUM 12 X X X X\n38 PHP_VAL Prepaid plan value NUM 12 X X X X\n39 MDCR_COINSUR_PYMT_AMT Medicare coinsurance payment amount NUM 12 X X X X\n40 MDCR_DED_PYMT_AMT Medicare deductible payment amount NUM 12 X X X X\n41 SRVC_BGN_DT Beginning date of service DATE 8 X X X X\n42 SRVC_END_DT Ending date of service DATE 8 X X X X\n43 PRCDR_CD_SYS Procedure (service) coding system CHAR 2 X X X X\n44 PRCDR_CD Procedure (service) code CHAR 8 X X X X\n45",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

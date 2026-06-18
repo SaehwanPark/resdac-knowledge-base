@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 17,
+  "text": "Part D plans generally require pharmacies to use generics or the least expensive version of the \nprescribed drug. \nHowever, there are times when a prescriber intends for the beneficiary to receive the drug exactly as \nit is written on the prescription (e.g., to get the brand-name version of a drug). When there are \nspecific instructions from the prescriber, it is indicated in this variable with a value of 1 or greater. \nSHORT NAME: DAWPS_CD \nLONG NAME: DAW_PROD_SLCTN_CD \nTYPE: \nCHAR \nLENGTH:",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

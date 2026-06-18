@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_289",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Mental Status Be Conducted Code - The data in this column identifies whether or not a Brief Interview for Mental Status (BIMS) should be performed. CHAR 1 The data in this column identifies whether or not a Brief Interview for Mental Status(BIMS) should be performed. 0 = No (patient is rarely/never understood)\n1 = Yes\n279 C0200_WORD_RPETE_1ST_ATMPT_CD C0200_WORD_RPETE_1ST_ATMPT_CD C0200 BIMS: Number of Words Repeated After First Attempt - The data in this column identifies the number of words",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

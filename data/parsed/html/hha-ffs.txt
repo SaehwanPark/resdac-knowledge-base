@@ -1,0 +1,9 @@
+The Original Medicare Fee-For-Service (FFS) Home Health Agency (HHA) file contains FFS claims submitted by Medicare home health agency providers for reimbursement of home health covered services.
+This file is based on information from the CMS form 1450 (UB04).
+What does this file include? (variable highlights)
+- Type of visit (eg: skilled care, home health aide, physical therapy)
+- Quantity of services
+- Diagnosis (ICD diagnosis),
+- Dates of service
+- Reimbursement amount
+- Home health agency provider number

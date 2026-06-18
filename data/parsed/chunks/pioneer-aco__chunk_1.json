@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__chunk_1",
+  "source_document": "data/raw/html/dataset_page/d82072986f1b00818ff87f632eef42c89e309650.html",
+  "page": null,
+  "text": "record for each Pioneer ACO provides information on the post-performance year financial settlement\nWhat does this file include? (variable highlights)\n- Provider file- Pioneer ACO ID\n- Tax identification number\n- Provider specialty code\n\n- Beneficiary file- Bene ID\n- Pioneer ACO ID\n- Aggregated expenditures and claim counts\n\n- Settlement file- Pioneer ACO ID\n- Beneficiary counts\n- Performance year expenditures and savings\n\nSpecial considerations\n- Each file needs to be specified separately on a",
+  "dataset": "pioneer-aco",
+  "url": "https://resdac.org/cms-data/files/pioneer-aco?page=1"
+}

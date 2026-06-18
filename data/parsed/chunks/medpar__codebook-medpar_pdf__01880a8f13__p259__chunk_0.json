@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p259__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 259,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n243 \nVAL_CD_Q1_PYMT_RDCTN_AMT \nLABEL: \nValue Code Q1 Payment Reduction Amount \nDESCRIPTION: This field is derived by accumulating the amount field (CLM VAL AMT) found in the value code trailer for \nvalue code (CLM VAL CD) equal to 'Q1' for any claim records included in the stay. \nSHORT NAME: VAL_CD_Q1_PYMT_RDCTN_AMT \nLONG NAME: VAL_CD_Q1_PYMT_RDCTN_AMT \nTYPE: \nNUM \nLENGTH: \n10 \nSOURCE: \nMedPAR",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

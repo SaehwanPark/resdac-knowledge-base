@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_579",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "those around them. 0 = Never\n1 = Rarely\n2 = Sometimes\n3 = Often \n4 = Always \n7 = Declines to respond\n8 = Unable to answer\n516 PAIN_SLP_ADMSN_CD PAIN_SLP_ADMSN_CD Pain effect on sleep (Adm) CHAR 1 This column document, at the time of admission, how often, in the past five days, has pain made it hard to sleep at night. 0 = Does not apply - I have not had any pain or hurting in the past 5 days \n1 = Rarely or not at all \n2 = Occasionally \n3 = Frequently \n4 = Almost constantly \n8 = Unable to",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

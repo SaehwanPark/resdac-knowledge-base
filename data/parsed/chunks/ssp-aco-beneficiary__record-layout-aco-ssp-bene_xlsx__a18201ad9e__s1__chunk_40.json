@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_40",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "Flag Monthly enrollment flag indicates the Medicare Enrollment category of the beneficiary for the given month (1 = ESRD, 2 = Disabled, 3 = Aged/Dual, 4 = Aged/Non-dual). CHAR 1 - - - - x x x x x x x\nADI_NATRANK ADI National Percentile Rank ADI is determined based on most recent available data within the Shared Savings Program ACO report period. \nA small number of beneficiaries will not receive ADI because of address changes or census block groups. These beneficiaries will receive an imputed",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

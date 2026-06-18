@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s3__chunk_21",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 3,
+  "text": "CMS-64 Form Category of Service for the Paid Claim CHAR 4 19\nXXI_SRVC_CTGRY_CD CMS-21 Form Category of Service for the Paid Claim CHAR 3 20\nCMS_64_FED_CTGRY_CD CMS-64 Form Code for Federal Reimbursement CHAR 2 21\nIHS_SRVC_IND Indian Health Service (IHS) Service Indicator CHAR 1 62 New3\nREV_CNTR_CD Revenue Center Code CHAR 4 22\nACTL_SRVC_QTY Actual Service Quantity NUM 8 23\nALOWD_SRVC_QTY Maximum Allowed Service Quantity NUM 8 24\nLINE_PRCDR_CD_DT Date Line Procedure Performed DATE 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

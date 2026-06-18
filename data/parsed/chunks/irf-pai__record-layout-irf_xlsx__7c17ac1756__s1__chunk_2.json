@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "prior to delivery to researchers. It identifies lines that are submitted from the same assessment.\n3 IRFASIID IRF_ASMT_INT_ID Encrypted D16Assessment Internal ID CHAR 10 This field is used as a key to uniquely identify an assessment and to tie together all the different tables that compose one assessment record received from a facility.\n4 ASMTMDCD ASMT_MOD_CD Assessment Modification Code CHAR 1 A code designating the version of the assessment. C = Current, M = Modified, X = Inactive\n5 CLCDAGTX",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s5__chunk_0",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 5,
+  "text": "CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary\nMedicare Part D Plan Characteristics File - Plan Crosswalk File 1\nVersion - May 2018\nLong SAS Name 2 Label Type Length\nRELATIONSHIP_CODE Relationship Code 3 CHAR 1\nRELATIONSHIP_DESC Relationship Description 3 CHAR 15\n2007 4\nCONTRACT_ID_07 Part D Contract Identifier for Reference Year CHAR 5\nPLAN_ID_07 Part D Plan Benefit Package Identifier for Reference Year CHAR 3\nCONTRACT_ID_06 Part D Contract Identifier for Previous Year CHAR",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

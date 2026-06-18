@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_300",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "C0900B_RCLL_LCTN_ROOM_CD C0900B Memory/Recall - Loc Of Own Room (3-day Asmt Prd) - The data in this column indentifies whether or not the patient was able to recall the location of their room during the three-day assessment period. CHAR 1 The data in this column identifies whether or not the patient was able to recall the location of their room during the three-day assessment period. 0 = No\n1 = Yes\n290 C0900C_RCLL_STF_NAME_CD C0900C_RCLL_STF_NAME_CD C0900C Memory/Recall - Staff Names/Faces",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

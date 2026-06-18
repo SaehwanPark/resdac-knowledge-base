@@ -1,0 +1,12 @@
+The Value Modifier (VM) Practice-Level Research Identifiable File (RIF) includes one record for each practice that was subject to the VM based on the given performance year. Using the RIF data, researchers can examine trends in cost and quality performance and identify factors supporting higher quality at lower cost.
+The VM Practice-Level RIF contains Quality and Resource Use Report (QRUR) and VM information. Program and participation information can be found on the CMS website.
+What does this file include? (variable highlights)
+- Practice Identifier
+- Quality and Resource Use Report (QRUR) information
+- VM information
+- Benchmark information
+Special considerations
+- Data documentation is specific to each performance year.
+- This RIF includes thousands of records with hundreds of variables.
+- Can be linked to provider NPI in the VM NPI-Practice-Level RIF
+- Two additional VM program RIFs are available:

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_308",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "care. 0 = No, 1 = Yes, \"-\" = Unknown.\n516 P3J P3J_NR_COMMUNICAT (P3J) Communication CHAR 1 Special treatments and procedures: nursing rehabilitation/restorative care - training and skill practice -communication. 0 = No, 1 = Yes, \"-\" = Unknown.\n517 P3K P3K_NR_OTHER (P3K) Other Nursing Rehabilitation CHAR 1 Special treatments and procedures: nursing rehabilitation/restorative care - training and skill practice -other. 0 = No, 1 = Yes, \"-\" = Unknown.\n518 P4A P4A_BED_RAILS (P4A) Full Bed Rails CHAR",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s6__chunk_18",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 6,
+  "text": "Rendering Provider Secondary Specialty Code 3 CHAR 2 86 New6\nRNDRNG_PRVDR_TXNMY_CD RNDRNG_PRVDR_TXNMY_CD Rendering Provider Taxonomy Code CHAR 10 87 New6\nPRTCPTG PRTCPTNG_IND_CD Line Provider Participating Indicator Code CHAR 1 15\nASTNT_CD CARR_LINE_RDCD_PMT_PHYS_ASTN_C Carrier Line Reduced Payment Physician Assistant Code CHAR 1 16\nSRVC_CNT LINE_SRVC_CNT Line Service Count NUM 4 17\nTYPSRVCB LINE_CMS_TYPE_SRVC_CD Line CMS Type Service Code CHAR 1 18\nPLCSRVC LINE_PLACE_OF_SRVC_CD Line Place of",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

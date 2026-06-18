@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p10__chunk_1",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 10,
+  "text": "Clinical Status \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \nEx — 08/22/2019 \nCOMMENT: \nFormatted as MMDDYY10 in SAS. \nCurrent clinical status may not have been entered for every episode. Current clinical status date is not \navailable for episodes occurring in performance period 3 (PRFMNC_PRD =3). \n^ Back to TOC ^",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

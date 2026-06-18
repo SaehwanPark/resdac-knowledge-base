@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_233",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Case Mix Dx- Secndry ICD3, Col4 This field lists the case mix third secondary diagnosis (ICD-9), column 4. CHAR 7 x\nM1024_PMT_DGNS_ICD_E3_CD M1024 (M0246) Case Mix Dx- Secndry ICD4, Col3 This field lists the case mix fourth secondary diagnosis (ICD-9), column 3. CHAR 7 x\nM1024_PMT_DGNS_ICD_E4_CD M1024 (M0246) Case Mix Dx- Secndry ICD4, Col4 This field lists the case mix fourth secondary diagnosis (ICD-9), column 4. CHAR 7 x\nM1024_PMT_DGNS_ICD_F3_CD M1024 (M0246) Case Mix Dx- Secndry ICD5, Col3",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

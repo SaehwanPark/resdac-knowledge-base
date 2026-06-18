@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_543",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "No response \n- = Not Assessed/No Information\n478 LTTL_INTRST_FREQ_ADMSN_CD LTTL_INTRST_FREQ_ADMSN_CD Mood: Little interest/pleasure doing things: F (A) CHAR 1 This column documents, at the time of admission, the frequency with which the patient has found little interest or pleasure in doing things. 0 = Never or 1 day \n1 = 2-6 days \n2 = 7-11 days \n3 = 12-14 days \n- = Not Assessed/No Information \n^ = Blank\n479 LTTL_INTRST_FREQ_DSCHRG_CD LTTL_INTRST_FREQ_DSCHRG_CD Mood: Little interest/pleasure",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

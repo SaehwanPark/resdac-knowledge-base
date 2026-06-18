@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2007-2014_xlsx__a9368c7fc4__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/a9368c7fc4e008ebd1c2dcab08f589f5cc115ccc.xlsx",
+  "page": 1,
+  "text": "Identifier 3 CHAR 8 X X LC X X X\nCONTRACT_NAME Part D Contract Name CHAR 150 X X X X X X\nPLAN_NAME Part D Plan Benefit Package Name CHAR 75 X X X X X X\nORGANIZATION_MARKETING_NAME Part D Plan Organization Marketing Name CHAR 150 X X X X X X\nPARENT_ORGANIZATION Part D Plan Parent Organization Name CHAR 50 X X X X X X\nEFFECTIVE_DATE Part D Plan Effective Date CHAR 10 X X X X X X\nORGANIZATION_TYPE Part D Organization Type CHAR 2 X X X X X X\nPLAN_TYPE Part D Plan Type CHAR 2 X X X X X X\nDEMO_TYPE",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2007-2014.xlsx"
+}

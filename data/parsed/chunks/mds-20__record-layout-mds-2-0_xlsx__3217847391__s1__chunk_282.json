@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_282",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "the following medication during the last 7 days - diuretic.\n472 P1AA P1AA_CHEMO (P1AA) Chemotherapy CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - chemotherapy.\n473 P1AB P1AB_DIALYSIS (P1AB) Dialysis CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - dialysis. 0 = No, 1 = Yes, \"-\" = Unknown.\n474 P1AC P1AC_IV_MED (P1AC) IV",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

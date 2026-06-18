@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p267__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 267,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n249 \nNCH_CLM_BENE_PMT_AMT \nLABEL: \nNCH Claim Payment Amount to Beneficiary \nDESCRIPTION: The total payments made to the beneficiary for this claim (sum of all line-level payments to \nbeneficiary, variable called LINE_BENE_PMT_AMT). \nSHORT NAME: BENE_PMT \nLONG NAME: NCH_CLM_BENE_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nThis variable",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

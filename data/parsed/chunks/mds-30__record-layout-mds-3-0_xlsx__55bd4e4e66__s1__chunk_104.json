@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_104",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "contains the total severity score of mood symptoms. discontinued 09/30/2023\n137 D0350_NGTV_STATE_NTFY_STF_CD D0350_NGTV_STATE_NTFY_STF_CD D0350 Resident Mood Interview - Negative Statements Notify Staff Code CHAR 1 The data in this column indicates whether the staff or provider informed that there is potential for resident self harm. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern) discontinued 9/30/2019\n138 D0500A1_STF_INTRST_LOSS_CD D0500A1_STF_INTRST_LOSS_CD D0500A1 Staff",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

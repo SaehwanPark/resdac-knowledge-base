@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_72",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "X\nPOA_DGNS_E_1_IND_CD POA_DGNS_E_1_IND_CD Diagnosis E Code Present on Admission Indicator 1 Char 1 - - - - - - X X X X X X X X X X X X\nPOA_DGNS_E_2_IND_CD POA_DGNS_E_2_IND_CD Diagnosis E Code Present on Admission Indicator 2 Char 1 - - - - - - X X - - - - - - - - - -\nPOA_DGNS_E_3_IND_CD POA_DGNS_E_3_IND_CD Diagnosis E Code Present on Admission Indicator 3 Char 1 - - - - - - X X - - - - - - - - - -\nPOA_DGNS_E_4_IND_CD POA_DGNS_E_4_IND_CD Diagnosis E Code Present on Admission Indicator 4 Char 1 -",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

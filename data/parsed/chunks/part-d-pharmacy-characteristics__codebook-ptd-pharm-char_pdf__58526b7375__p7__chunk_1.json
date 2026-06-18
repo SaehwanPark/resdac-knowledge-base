@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p7__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 7,
+  "text": "TYPE: \nCHAR \nLENGTH: \n2 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n01 = Independent pharmacy, defined as one to three pharmacies under common ownership. \n02 = Chain pharmacy, defined as part of a group of four or more pharmacies under common \nownership. Pharmacies may or may not share the same Federal Tax ID number. \n05 = Franchise pharmacy, defined as an independently owned pharmacy that has signed a franchise \nagreement with a franchisor wherein the franchisee receives services such as training,",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

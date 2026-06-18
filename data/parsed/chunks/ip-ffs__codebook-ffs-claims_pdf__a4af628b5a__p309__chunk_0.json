@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p309__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 309,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n291 \nThe following blocks of numbers are reserved for the facilities indicated \n(NOTE: may have different meanings dependent on the type of bill [TOB]): \n0001–0879: Short-term (general and \nspecialty) hospitals where TOB = 11X; \nESRD clinic where TOB = 72X \n0880–0899: Reserved for hospitals \nparticipating in ORD demonstration \nprojects where TOB = 11X; ESRD clinic \nwhere TOB",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

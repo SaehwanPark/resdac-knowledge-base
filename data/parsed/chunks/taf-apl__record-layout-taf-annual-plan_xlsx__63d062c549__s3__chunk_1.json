@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 3,
+  "text": "Area Name CHAR 45 4\nMC_PLAN_SAREA_ACTV_IND_01 Managed Care Plan Service Area Active Indicator - January CHAR 1 5\nMC_PLAN_SAREA_ACTV_IND_02 Managed Care Plan Service Area Active Indicator - February CHAR 1 6\nMC_PLAN_SAREA_ACTV_IND_03 Managed Care Plan Service Area Active Indicator - March CHAR 1 7\nMC_PLAN_SAREA_ACTV_IND_04 Managed Care Plan Service Area Active Indicator - April CHAR 1 8\nMC_PLAN_SAREA_ACTV_IND_05 Managed Care Plan Service Area Active Indicator - May CHAR 1",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

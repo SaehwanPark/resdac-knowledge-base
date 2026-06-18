@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 20,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Acute Hospital Care at Home Patient and Hospital Data Files │ January 2024 │ V 1.0 \n15 \nPRVDR_STATE \nLABEL: \nProvider State \nDESCRIPTION: The state in which the hospital facility is located. \nSHORT NAME: PRVDR_STATE \nLONG NAME: PRVDR_STATE \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nPatient and hospital \nSOURCE: \nAHCAH facility-submitted data (verified by CMS) \nVALUES: \nTwo-character postal state code \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

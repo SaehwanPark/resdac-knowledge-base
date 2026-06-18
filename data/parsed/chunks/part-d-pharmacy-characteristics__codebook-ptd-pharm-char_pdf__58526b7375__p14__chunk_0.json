@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 14,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n9 \nNCPDP_ID \nLABEL: \nNCPDP Pharmacy Identifier \nDESCRIPTION: This is the unique, national identification number assigned by the National Council for Prescription \nDrug Programs (NCPDP) to every licensed pharmacy in the United States and its territories. \nThis field also enables linkage between pharmacies in the Part D Event (PDE) File and the CCW \nPharmacy Characteristics File. \nSHORT NAME: —",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

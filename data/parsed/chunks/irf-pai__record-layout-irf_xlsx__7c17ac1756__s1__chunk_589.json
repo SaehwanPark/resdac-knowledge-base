@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_589",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Information\n527 FEED_TUBE_DSCHRG_CD FEED_TUBE_DSCHRG_CD Nutritional Approaches (Discharge): Feeding Tube CHAR 1 This column documents whether the patient was on a feeding tube as their nutritional approach at the time of discharge. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n528 ALTRD_DIET_ADMSN_CD ALTRD_DIET_ADMSN_CD Nutritional Approaches (Admission) : Mech Alt Diet CHAR 1 This column documents whether the patient needed a mechanically altered diet as their nutritional approach at the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts-model-raw-clinical__chunk_0",
+  "source_document": "data/raw/html/dataset_page/72ee475771d626bb204c0fc1e193ec18d6e8d6d9.html",
+  "page": null,
+  "text": "The Raw Clinical file contains all visit and clinical data that was uploaded to the model’s data collection registry. This data is preserved as it was uploaded, therefore it may contain data that is not relevant for the Million Hearts® registry as the measures are defined. The file is at the clinical data element level and contains one row per clinical data element per beneficiary, using industry standard codes.\nNote that this file excludes all manually entered data in the Million Hearts®",
+  "dataset": "million-hearts-model-raw-clinical",
+  "url": "https://resdac.org/cms-data/files/million-hearts-model-raw-clinical?page=1"
+}

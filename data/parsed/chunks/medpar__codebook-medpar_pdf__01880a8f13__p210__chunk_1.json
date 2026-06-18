@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p210__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 210,
+  "text": "NAME: PTNT_ADD_ON_PYMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue center amount field \n(REV_CNTR_PTNT_ADD_ON_PMT_AMT) that is on any of the claim records included in the stay (i.e., \nsum of the REV_CNTR_PTNT_ADD_ON_PMT_AMT reported on the claims that comprise the stay). \nThis field is new in October 2014. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

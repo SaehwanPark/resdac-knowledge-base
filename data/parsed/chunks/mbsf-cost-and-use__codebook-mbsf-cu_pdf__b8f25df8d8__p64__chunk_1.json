@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p64__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 64,
+  "text": "part of \nthis file for a given year. Claim lines for other carrier/DME claims are a subset of the claims in the Part B \ncarrier and DME data files. \nTypes of services which may have been summarized in this other carrier category (OTHC) include \nambulance, chiropractor, chemotherapy, vision, hearing, and speech services, etc. \nAn event is defined as each line item that contains the relevant service. \nSHORT NAME: — \nLONG NAME: OTHC_EVENTS \nTYPE: \nNUM \nLENGTH: \n6 \nSOURCE: \nCCW (derived) \nVALUES:",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

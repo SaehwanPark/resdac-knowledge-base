@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p110__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 110,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n99 \nDRG_RLTV_WT \nLABEL: \nDRG Relative Weight \nDESCRIPTION: The relative weight for the DRG on the claim. Each year CMS assigns a relative weight to each DRG. \nThese weights indicate the relative costs for treating patients during the prior year. The national \naverage charge for each DRG is compared to the overall average. \nSHORT NAME: DRG_RLTV_WT \nLONG NAME: DRG_RLTV_WT \nTYPE: \nNUM",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

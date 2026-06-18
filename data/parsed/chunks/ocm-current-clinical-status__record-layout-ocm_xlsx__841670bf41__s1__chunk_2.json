@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__record-layout-ocm_xlsx__841670bf41__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/841670bf413cf4120155451b7395c917931706ff.xlsx",
+  "page": 1,
+  "text": "DATE 8\nAJCC_EDITION AJCC Cancer Staging Edition CHAR 3\nPRMRY_TUMOR Primary Tumor Staging CHAR 30\nNODAL_DISEASE Nodal Disease Staging CHAR 30\nMETASTASIS Metastasis Staging CHAR 30\nESTROGEN_RECEPTOR Breast Cancer Estrogen Receptor CHAR 30\nPROGESTERONE_RECEPTOR Breast Cancer Progesterone Receptor CHAR 30\nHER2_AMPLIFICATION HER2 Amplification CHAR 30\nHISTOLOGY Histology CHAR 30",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ocm.xlsx"
+}

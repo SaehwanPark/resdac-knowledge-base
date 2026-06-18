@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p8__chunk_2",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 8,
+  "text": "use pdp to ﬁll rx by mail\nOFA\nrate_pdp\nRECODE : Rate prescription drug plan\nRTA\nghs\nRECODE : Rate overall general health\nRTB\nmhs\nRECODE : Rate overall mental health\nRTB\nrxezmeds\nRECODE: Last 6 mths, easy to get medicines doctor prescribed\nOFA\nrxinspay\nRECODE: Have insurance that pays part or all the cost of rx medicines\nYNA\nrxdelay\nRECODE : Last 6 mths, delayed ﬁlling rx meds because of cost\nYNA\ncnd_heartattack\nRECODE : Dr ever said had: heart attack\nYNA\ncnd_angina\nRECODE : Dr ever said had:",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

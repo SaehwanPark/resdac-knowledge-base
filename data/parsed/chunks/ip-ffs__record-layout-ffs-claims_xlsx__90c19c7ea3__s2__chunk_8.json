@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s2__chunk_8",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 2,
+  "text": "NUM 12 41\nCOIN_AMT NCH_BENE_PTA_COINSRNC_LBLTY_AM NCH Beneficiary Part A Coinsurance Liability Amount NUM 12 42\nBLDDEDAM NCH_BENE_BLOOD_DDCTBL_LBLTY_AM NCH Beneficiary Blood Deductible Liability Amount NUM 12 43\nNCCHGAMT NCH_IP_NCVRD_CHRG_AMT NCH Inpatient (or other Part A) Noncovered Charge Amount NUM 12 44\nTDEDAMT NCH_IP_TOT_DDCTN_AMT NCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount NUM 12 45\nCPTL_FSP CLM_PPS_CPTL_FSP_AMT Claim PPS Capital Federal Specific Portion (FSP)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

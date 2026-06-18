@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p117__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 117,
+  "text": "acquisition costs for \nhospitals that are renal transplant centers, and bad debts. This variable is the daily payment rate for \npass-through expenses. It is not included in the CLM_PMT_AMT field. \nTo determine the total of the pass-through payments for a hospitalization, this field should be \nmultiplied by the claim Medicare utilization day count (CLM_UTLZTN_DAY_CNT). Then, total Medicare \npayments for a hospitalization claim can be determined by summing this product and the \nCLM_PMT_AMT field.",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

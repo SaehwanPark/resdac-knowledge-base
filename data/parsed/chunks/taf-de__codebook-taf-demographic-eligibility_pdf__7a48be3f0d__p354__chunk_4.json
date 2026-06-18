@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p354__chunk_4",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 354,
+  "text": "27 = 1115 beneficiary engagement demonstration \n28 = 1115 former foster care youth from another state \n29 = 1115 managed long-term services and support \n30 = 1115 delivery system reform \n31 = 1332 demonstration \n32 = 1915(b) waiver \n33 = 1915(c) waiver \nNull/missing = source value is missing or unknown \nCOMMENT: \nFor each month, there are up to 10 waiver type codes; the sequence (first–tenth waiver type code) is \nindicated by the third and fourth digits from the right (e.g., WVR_TYPE_CD_05_MM",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

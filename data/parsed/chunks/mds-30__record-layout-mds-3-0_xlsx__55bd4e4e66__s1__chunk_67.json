@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_67",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "column identifies the resident's ability to recall the first word. -=Not assessed/no information\n0=No-could not recall\n1=Yes, after cueing (\"something to wear\")\n2=Yes, no cue required\n^=Blank(skip pattern)\n100 C0400B_RCALL_SCND_WORD_CD C0400B_RCALL_SCND_WORD_CD C0400B BIMS: Recall - Able to Recall Blue CHAR 1 The data in this column identifies the resident's ability to recall the second word. -=Not assessed/no information\n0=No-could not recall\n1=Yes, after cueing (\"a color\")\n2=Yes, no cue",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

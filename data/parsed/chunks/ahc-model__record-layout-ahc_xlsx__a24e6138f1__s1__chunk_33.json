@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_33",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "Outcome Unknown CHAR 1\nNN_SPLMT_FMLY_CMNT_RSLVD_SW Navigated Supplemental HRSN Family & Community Support Resolved CHAR 1\nNN_SPLMT_FMLY_CMNT_CNCT_CSP_SW Navigated Splmt HRSN Family & Commty Supprt Connected to Commty Serv Prvdr CHAR 1\nNN_SPLMT_FMLY_CMNT_OPTOUT_SW Navigated Supplemental HRSN Family & Community Support Opted Out CHAR 1\nNN_SPLMT_FMLY_CMNT_CNTCT_FAIL_SW Navigated Splmt HRSN Family & Community Support Attempts to Reach Failed CHAR 1\nNN_SPLMT_FMLY_CMNT_CSP_UNAVBL_SW Navigated Splmt",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

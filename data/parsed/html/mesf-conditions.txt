@@ -1,0 +1,10 @@
+The Conditions segment of the Medicaid Enrollee Supplemental File (MESF) flags each Medicaid beneficiary for the presence of one of 27 specific chronic conditions or one of 35 other chronic or potentially disabling conditions.
+What does this file include? (variable highlights)
+- Three flags for each chronic condition (based on end of calendar year):- Medicaid only (found in Medicaid claims)
+- Medicare only (found in Medicare claims)
+- Combined data (found in Medicare and Medicaid claims)
+ 
+Special considerations
+- The algorithms used to assign the flags are available from the CCW website.
+- Algorithms that include multi-year look-back periods are applied without the purchase of additional years of data.
+- This is a segment of the MESF file. Another segment, the National Death Index (NDI) segment can also be requested.

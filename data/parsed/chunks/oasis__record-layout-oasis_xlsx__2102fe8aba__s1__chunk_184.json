@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_184",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "for hospitalization: Other than above. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_PSYCH (M0895) Psychotic Episode Reason for hospitalization: psychotic episode. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_RESP (M0895) Respiratory Problems Reason for hospitalization: respiratory problems. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0895_HOSP_SURGERY (M0895) Scheduled Surgical Procedure Reason for hospitalization: scheduled surgical procedure. 0 = No, 1 = Yes, Space =",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

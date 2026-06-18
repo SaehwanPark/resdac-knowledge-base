@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_557",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "P (D) CHAR 1 This column documents whether, at the time of discharge, the patient expressed that in the last two weeks they have had a poor appetite or has been overeating. 0 = No \n1 = Yes \n9 = No response \n- = Not Assessed/No Information\n^ = Blank\n494 APTIT_OVREATG_FREQ_ADMSN_CD APTIT_OVREATG_FREQ_ADMSN_CD Mood: Poor appetite or overeating: F (A) CHAR 1 This column documents, at the time of admission, the frequency with which the patient has had a poor appetite or has been overeating. 0 =",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

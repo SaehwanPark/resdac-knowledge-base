@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p201__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 201,
+  "text": "LONG NAME: HPSA_SCRCTY_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n1 = HPSA \n2 = Scarcity \n3 = Both \n5 =HPSA and HSIP \n6 =PCIP \n7 = HPSA and PCIP \nSpace = Not applicable \nCOMMENT: \nThis variable was added 10/3/2005 with the implementation of NCH/NMUD CR#2. \nPrior to 10/3/2005, claims contained a modifier code to indicate the bonus payment. A “QU” \nrepresented a HPSA bonus payment and an “AR” represented a scarcity bonus payment. As of \n1/1/2005, the modifiers were no longer being",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

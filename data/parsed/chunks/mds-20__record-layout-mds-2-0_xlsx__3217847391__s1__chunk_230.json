@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_230",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Pain Site CHAR 1 Health conditions: pain symptoms - other in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n368 J4A J4A_FELL_30_DAYS (J4A) Fell in Past 30 Days CHAR 1 Health conditions: accidents - fell in past 30 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n369 J4B J4B_FELL_OVR_31_DA (J4B) Fell in Past 31-180 Days CHAR 1 Health conditions: accidents - fell in past 31 -180 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n370 J4C J4C_HIP_FRC_180_DA (J4C) Hip Fracture in Last 180 Days CHAR 1 Health conditions:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

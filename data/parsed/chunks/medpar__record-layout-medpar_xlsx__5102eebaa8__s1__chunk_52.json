@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__record-layout-medpar_xlsx__5102eebaa8__s1__chunk_52",
+  "source_document": "data/raw/assets/xlsx/5102eebaa83ce0afcc10dbf0a4e0dc3d6d4c08f9.xlsx",
+  "page": 1,
+  "text": "VI Char 7 X X X X X X X X X X X X X X X X X X\nDGNSCD7 DGNS_7_CD Diagnosis code VII Char 7 X X X X X X X X X X X X X X X X X X\nDGNSCD8 DGNS_8_CD Diagnosis code VIII Char 7 X X X X X X X X X X X X X X X X X X\nDGNSCD9 DGNS_9_CD Diagnosis code IX Char 7 X X X X X X X X X X X X X X X X X X\nDGNSCD10 DGNS_10_CD ICD-9-CM Diagnosis code 10 Char 7 - - - - - - X X X X X X X X X X X X\nDGNSCD11 DGNS_11_CD ICD-9-CM Diagnosis code 11 Char 7 - - - - - - X X X X X X X X X X X X\nDGNSCD12 DGNS_12_CD ICD-9-CM",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-medpar.xlsx"
+}

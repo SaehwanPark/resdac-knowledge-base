@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p14__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 14,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n10 \nEPSD_END_DT \nLABEL: \nEpisode Ending Date \nDESCRIPTION: Episode ending date. \nSHORT NAME: EPSD_END_DT \nLONG NAME: EPSD_END_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nClinical and staging \nSOURCE: \nCMS Oncology Care Model data \nVALUES: \nEx — 04/12/2019 \n\nCOMMENT: \nFormatted as MMDDYY10 in SAS \nIn OCM, episodes were initiated on the date of service for an initial Part B",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

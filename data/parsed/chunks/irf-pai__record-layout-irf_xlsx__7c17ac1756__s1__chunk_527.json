@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_527",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "RPT_CRCT_DAY_DSCHRG_CD RPT_CRCT_DAY_DSCHRG_CD BIMS - Temporal Orientation - Day (Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was able to identify the current day of the week. 1 = Correct \n0 = Incorrect or no answer \n- = Not Assessed/No Information \n^ = Blank (Skip Pattern)\n464 RCLL_1ST_WORD_DSCHRG_CD RCLL_1ST_WORD_DSCHRG_CD BIMS - Recalls Sock (Dsch) CHAR 1 This column documents whether, at the time of discharge, the patient was able to recall the word sock",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

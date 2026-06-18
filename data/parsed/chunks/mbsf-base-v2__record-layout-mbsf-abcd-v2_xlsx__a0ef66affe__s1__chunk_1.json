@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__record-layout-mbsf-abcd-v2_xlsx__a0ef66affe__s1__chunk_1",
+  "source_document": "data/raw/assets/xlsx/a0ef66affe71438d4b00c6abcd0c09c66365d4f4.xlsx",
+  "page": 1,
+  "text": "Enhanced 5% Sample Indicator CHAR 1\nCRNT_BIC_CD Current Beneficiary Identification Code CHAR 2\nSTATE_CD SSA State Code CHAR 2\nCOUNTY_CD SSA County Code CHAR 3\nZIP_CD 5-digit ZIP Code CHAR 5\nSTATE_CNTY_FIPS_CD_01 FIPS State-County Code - January CHAR 5\nSTATE_CNTY_FIPS_CD_02 FIPS State-County Code - February CHAR 5\nSTATE_CNTY_FIPS_CD_03 FIPS State-County Code - March CHAR 5\nSTATE_CNTY_FIPS_CD_04 FIPS State-County Code - April CHAR 5\nSTATE_CNTY_FIPS_CD_05 FIPS State-County Code - May CHAR",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd_v2.xlsx"
+}

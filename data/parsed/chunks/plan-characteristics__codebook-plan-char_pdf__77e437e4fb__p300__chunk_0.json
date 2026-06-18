@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p300__chunk_0",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 300,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Plan Characteristics Codebook │ October 2025 │ V 1.7 \n286 \nPRE_ICL_TIER_DRUG_TYPE \nLABEL: \nPre-ICL Drug Type by Tier \nDESCRIPTION: This variable identifies what types of drugs, if any, are covered on each formulary tier during the pre-\ninitial coverage limit (ICL) phase. A tier may include multiple drug types. \nTYPE: \nCHAR \nLENGTH: \n6 (starting in 2018, length is 2) \nSOURCE: \nCMS (HPMS files) \nVALUES: \nFor 2007–2017 data — this",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

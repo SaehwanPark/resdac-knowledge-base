@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s4__chunk_1",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 4,
+  "text": "2 3\nSUBMTG_STATE_CD Submitting State Entity Code CHAR 2 4\nWVR_1915C_TYPE_CD 1915(c) Waiver Type Code - Ltst in Yr CHAR 2 5\nWVR_1915C_MOS 1915(c) Waiver Months NUM 2 6\nWVR_1915B_MOS 1915(b) Waiver Months NUM 2 7\nWVR_1915BC_MOS 1915(b)(c) Waiver Months NUM 2 8\nWVR_1115_TYPE_CD 1115 Waiver Type Code - Ltst in Yr CHAR 2 9\nPHRMCY_WVR_1115_MOS 1115 Pharmacy Waiver Months NUM 2 10\nDSTR_RLTD_WVR_1115_MOS 1115 Disaster-Related Waiver Months NUM 2 11\nFMLY_PLNG_ONLY_WVR_1115_MOS 1115 Family Planning Only",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

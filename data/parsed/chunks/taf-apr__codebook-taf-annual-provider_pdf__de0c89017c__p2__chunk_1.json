@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p2__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 2,
+  "text": "values to \nBED_TYPE_CD \n• Added new criterion to the “COMMENT” for \nSUD_SRVC_PRVDR_CLSFCTN_IND \n• Added Guam to STATE_CD and SUBMTG_STATE_CD and added \ndetail to SUBMTG_STATE_CD for MT TPA (94) and WY CHIP (93). \nIncluded values for some additional territories in \nPRVDR_STATE_CD. Re-ordered all valid values for the provider \n*_TXNMY_IND fields to be in alphanum order \n1.2 \nOctober 2022 \nK. Schneider \n• Added new valid values to PRVDR_CLSFCTN_CD \n• Added new valid value “N” to PRVDR_CLSFCTN_SYS,",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

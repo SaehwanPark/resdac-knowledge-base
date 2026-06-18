@@ -1,0 +1,11 @@
+The Next Generation ACO (NGACO) Model Provider file contains information about the participating providers in the NGACO Model. The file includes one record per year of participation for participating organizations. A related file, the Next Generation ACO Model Beneficiary file, contains identifying information about the beneficiaries assigned to a provider who is participating in the NGACO Model.
+What does this file include? (variable highlights)
+- ACO identifier
+- Performance year
+- Organization Name
+- CMS organization identifiers including Tax Identification Number, CMS Certification Number (CCN)
+- Provider type description
+Special considerations
+- This file can be linked to any other CMS file that contains the ORG_TIN, ORG_NPI or ORG_CCN
+- Providers can be linked to their assigned beneficiaries by linking the ACO_ID in the provider file to the ACO_NUM in the beneficiary file
+- Questions regarding the Next Generation ACO Model can be directed to [email protected]

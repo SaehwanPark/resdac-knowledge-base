@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p24__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 24,
+  "text": "B. 2025 MCAHPS Format Tables \n24 \nrate_md: RECODE : Rate personal MD \nSAS Format: RTA \n1: 1 \n2: 2 \n3: 3 \n4: 4 \n5: 5 \n6: 6 \n7: 7 \n8: 8 \n9: 9 \n10: BEST POSSIBLE \nrate_plan: RECODE : Rate health plan \nSAS Format: RTA \n0: WORST POSSIBLE \n1: 1 \n2: 2 \n3: 3 \n4: 4 \n5: 5 \n6: 6 \n7: 7 \n8: 8 \n9: 9 \n10: BEST POSSIBLE \nrate_spec: RECODE : Rate specialist talked to most often \nSAS Format: RTA \n0: WORST POSSIBLE \n1: 1 \n2: 2 \n3: 3 \n4: 4 \n5: 5 \n6: 6 \n7: 7 \n8: 8 \n9: 9 \n10: BEST POSSIBLE",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

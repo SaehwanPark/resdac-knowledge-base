@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_446",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "scooter (Dschg) - The data in this column indicates whether or not the patient used a wheelchair and/or scooter at the time of discharge. CHAR 1 The data in this column indicates whether or not the patient used a wheelchair and/or scooter at the time of discharge. 0 = No\n1 = Yes\n373 GG0170R1_WHEEL_50_2_TURN_STRT GG0170R1_WHEEL_50_2_TURN_STRT GG0170R1 Admission Performance Wheelchair 50 Feet Code - The data in this column indicates the patient's ability to wheel 50 feet and make two turns at the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p218__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 218,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n205 \nGAP_TIER_PARTIAL_TYPE \nLABEL: \nPartial Gap Drug Type by Tier \nDESCRIPTION: This variable identifies what types of drugs, if any, are covered on each formulary tier during the \ncoverage gap phase when the Part D plan only covers a partial list of drugs in the coverage gap (i.e., \nwhen the variable GAP_TIER_PARTIAL=“Y” [yes]). A tier may include multiple drug types. \nSHORT NAME: —",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_31",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Self Understood CHAR 1 Indicates the patient's ability to express or communicate requests, needs, opinions, urgent problems, and social conversation, whether in speech, writing, sign language, or a combination of these. -1 = Unknown, -2 = Space, 0 = Understood, 1 = Usually Understood - difficulty finding words or finishing thoughts, 2 = Sometimes Understood - ability is limited to making concrete requests, 3 = Rarely/Never Understood\n60 E1L E1L_WORRIED_FACE 21(E1l)Sad, Pained, Worried Facial",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

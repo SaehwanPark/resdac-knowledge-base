@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p143__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 143,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n125 \nCLM_SITE_NTRL_PYMT_CST_AMT \nLABEL: \nClaim Site Neutral Payment Based on Cost Amount \nDESCRIPTION: Under the long-term care hospital (LTCH) prospective payment system (PPS), the payment amount \nbased on estimated cost of the case. \nSHORT NAME: CLM_SITE_NTRL_PYMT_CST_AMT \nLONG NAME: CLM_SITE_NTRL_PYMT_CST_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

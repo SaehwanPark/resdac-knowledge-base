@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_915",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "information\n^. Blank CHAR 1 x\nN0415J1_HYPOGLYC_TKNG_CD High-Risk Drug (Is taking): Hypoglycemic Indicates whether the patient is taking any hypoglycemic medications. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nN0415J2_HYPOGLYC_INDCTN_CD High-Risk Drug (Indication): Hypoglycemic Indicates whether, if the patient is taking any hypoglycemic medications, there is an indication noted for all medications in the drug class. 0. No\n1. Yes\n-. Not assessed/no information\n^. Blank CHAR 1",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

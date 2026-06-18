@@ -1,0 +1,18 @@
+The Raw Clinical file contains all visit and clinical data that was uploaded to the model’s data collection registry. This data is preserved as it was uploaded, therefore it may contain data that is not relevant for the Million Hearts® registry as the measures are defined. The file is at the clinical data element level and contains one row per clinical data element per beneficiary, using industry standard codes.
+Note that this file excludes all manually entered data in the Million Hearts® registry.
+What does this file include? (variable highlights)
+- Beneficiary ID
+- Model-Assigned Practice ID
+- Model-Assigned Patient ID
+- Provider NPI
+- Activity Date
+- Activity End Date
+- Provider NPI
+- Clinical Service Procedure Code
+- Clinical Service Procedure Modifier
+- Service Units
+A record represents one clinical data element per beneficiary. Beneficiaries that have multiple clinical data elements will have multiple records.
+The Unique Model-Assigned Patient ID can be used to link to other Million Hearts® beneficiary files (demographic, visit, and alignment), but cannot link to other CCW non-Million Hearts® files.
+The Model-Assigned Practice ID can be used to link all Million Hearts® data files for provider-oriented analytics. It does not link to other CCW provider data.
+The Beneficiary ID can be linked to other beneficiary records in this dataset and other CCW Medicare data.
+The NPI can be linked to other records with NPI in this dataset and other CCW Medicare data.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_30",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "of above 0 = No, 1 = Yes, \"-\" = Unknown.\n58 A10A A10A_LIVING_WILL (A10A) Living Will CHAR 1 Identification and background information: advanced directives - living will 0 = No, 1 = Yes, \"-\" = Unknown.\n59 A10B A10B_NOT_RECESS (A10B) Do Not Resuscitate CHAR 1 Identification and background information: advanced directives - do not resuscitate 0 = No, 1 = Yes, \"-\" = Unknown.\n60 A10C A10C_NOT_HOSPTIAL (A10C) Do Not Hospitalize CHAR 1 Identification and background information: advanced directives -",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

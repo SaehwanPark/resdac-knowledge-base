@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_492",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "is the patient's response to ethnicity. 0 = No\n1 = Yes\n410 ETHNCTY_CUBN_CD ETHNCTY_CUBN_CD Ethnicity: Yes, Cuban CHAR 1 The data in this column is the patient's response to ethnicity. 0 = No\n1 = Yes\n411 ETHNCTY_OTHR_HSPNC_CD ETHNCTY_OTHR_HSPNC_CD Ethnicity: Yes, another Hispanic/Latino/Spanish CHAR 1 The data in this column is the patient's response to ethnicity. 0 = No\n1 = Yes\n412 ETHNCTY_NO_RSPNS_CD ETHNCTY_NO_RSPNS_CD Ethnicity: Patient unable to respond CHAR 1 The data in this column is the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p54__chunk_2",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 54,
+  "text": "Organization \n11 = Health home or medical home \n12 = Integrated care for dual eligible \n13 = Other \nNull/missing = unknown/missing \nCOMMENT: \nThis field is derived from the MC_PLAN_TYPE_CD using the following logic: \n1 if MC_PLAN_TYPE_CD equals 01, 04, 17 \n2 if MC_PLAN_TYPE_CD equals 02, 03 \n3 if MC_PLAN_TYPE_CD equals 05, 06 \n4 if MC_PLAN_TYPE_CD equals 07, 19 \n5 if MC_PLAN_TYPE_CD equals 08, 09, 10, 11, \n12, 13 \n6 if MC_PLAN_TYPE_CD equals 14 \n7 if MC_PLAN_TYPE_CD equals 15 \n8 if",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

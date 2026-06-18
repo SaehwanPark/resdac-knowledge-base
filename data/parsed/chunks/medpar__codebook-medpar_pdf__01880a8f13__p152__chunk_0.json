@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p152__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 152,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n136 \nMDCL_SRGCL_GNRL_AMT \nLABEL: \nMedical/ Surgical General Amount ($) \nDESCRIPTION: The charge amount (rounded to whole dollars) for the medical/surgical general supplies related to the \nbeneficiary's stay. \nSHORT NAME: MDCL_SRGCL_GNRL_AMT \nLONG NAME: MDCL_SRGCL_GNRL_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the revenue",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p79__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 79,
+  "text": "and DME claims. Starting October 2023, this \nfield is also available on institutional claims, i.e., inpatient, SNF, home health, hospice, and institutional \noutpatient claims. For institutional claims, the clinical trial number is also populated in the claim value \namount field, when claim value code is equal to “D4.” CMS will continue to populate the clinical trial \nnumber in the claim value amount field, as well as this new field. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

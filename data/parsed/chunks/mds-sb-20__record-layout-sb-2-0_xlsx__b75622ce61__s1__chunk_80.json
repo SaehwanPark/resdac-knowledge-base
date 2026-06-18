@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_80",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "- Output Exceeds Input CHAR 1 Indicates the patient is dehydrated - output excees input. 0 = Unchecked, 1 = Checked, -1 = Unknown\n100 J1E J1E_DELUSIONS 27b(J1e)Delusions CHAR 1 Indicates the patient has delusions - fixed, false beliefs not shared by others that the patient holds even when there is obvious proof or evidence to the contrary. 0 = Unchecked, 1 = Checked, -1 = Unknown\n101 J1H J1H_FEVER 27c(J1h)Fever CHAR 1 Indicates the patient has a fever - a fever is present when the patient's",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p20__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 20,
+  "text": "B. 2025 MCAHPS Format Tables \n20 \nmhs: RECODE : Rate overall mental health \nSAS Format: RTB \n1: EXCELLENT \n2: VERY GOOD \n3: GOOD \n4: FAIR \n5: POOR \npl_ezpaper: RECODE : Last 6 mths, how often health plan forms easy to fill out \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \npl_getcare: RECODE : Last 6 mths, how often easy to get needed care/tests/treatment \nSAS Format: OFA \n1: NEVER \n2: SOMETIMES \n3: USUALLY \n4: ALWAYS \npl_hospovn: RECODE : Last 6 mths, spend one or more nights",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

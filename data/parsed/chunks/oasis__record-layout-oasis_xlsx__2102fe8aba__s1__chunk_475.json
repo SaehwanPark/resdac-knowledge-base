@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_475",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "a physician or the physician-designee was contacted within one calendar day to resolve clinically significant medication issues and complete prescribed/recommended actions in response to the identified potential clinically significant medication issues (by midnight of the next calendar day). 0 = No, 1 = Yes CHAR 1 x x x\nM2005_MDCTN_INTRVTN M2005 Medication Intervention This field indicates if there were any clinically significant medication issues since the previous OASIS assessment, was a",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

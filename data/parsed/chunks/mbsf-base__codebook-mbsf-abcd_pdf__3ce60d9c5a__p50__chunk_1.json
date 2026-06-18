@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p50__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 50,
+  "text": "– January through December \nDESCRIPTION: This variable is the Part D contract number for the beneficiary’s Part D plan for a given month \n(January). CMS assigns an identifier to each contract that a Part D plan has with CMS. \nSHORT NAME: \nPTDCNTRCT01 \nPTDCNTRCT02 \nPTDCNTRCT03 \nPTDCNTRCT04 \nPTDCNTRCT05 \nPTDCNTRCT06 \nPTDCNTRCT07 \nPTDCNTRCT08 \nPTDCNTRCT09 \nPTDCNTRCT10 \nPTDCNTRCT11 \nPTDCNTRCT12 \nLONG NAME: \nPTD_CNTRCT_ID_01 \nPTD_CNTRCT_ID_02 \nPTD_CNTRCT_ID_03 \nPTD_CNTRCT_ID_04 \nPTD_CNTRCT_ID_05",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

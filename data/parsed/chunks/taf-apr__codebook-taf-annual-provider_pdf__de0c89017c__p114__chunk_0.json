@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p114__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 114,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n116 \nPRVDR_NPI_CNT \nLABEL: \nProvider NPI Count \nDESCRIPTION: The count of unique NPIs assigned to the provider. \nSHORT NAME: PRVDR_NPI_CNT \nLONG NAME: PRVDR_NPI_CNT \nTYPE: \nNUM \nLENGTH: \n3 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n1–XX, or Null/missing \nCOMMENT: \nThis variable is the count of unique NPI values on the APR Identifier records for the",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

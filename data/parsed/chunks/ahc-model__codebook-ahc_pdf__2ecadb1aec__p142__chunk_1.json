@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p142__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 142,
+  "text": "water. \nLONG NAME: SR_CORE_HOUSNG_2_SCRNG_CMPST_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system (derived) \nVALUES: \n0 = No issues with pests, mold, lead, heat, oven, smoke detectors, or water \n1 = Has issues with pests, mold, lead, heat, oven, smoke detectors, and/or water \nMissing \nCOMMENT: \nVariables considered for this indicator are the seven fields that begin with “SR_CORE_HOUSNG_2_*”. \nThese are: SR_CORE_HOUSNG_2_HEAT_SW, SR_CORE_HOUSNG_2_LEAD_SW, \nSR_CORE_HOUSNG_2_MOLD_SW,",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

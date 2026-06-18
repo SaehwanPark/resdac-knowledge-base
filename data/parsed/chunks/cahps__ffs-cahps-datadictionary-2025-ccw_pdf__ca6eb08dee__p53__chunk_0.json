@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p53__chunk_0",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 53,
+  "text": "A. Crosswalk: 2007 to 2025 - Original Medicare Survey \n53 \nVariable \nReverse \n2007 \nYear 1 \nma_hlthplan \n—– \nma_hlthplan_txt \n—– \nins_have_oth \nQ01 \nins_medigap \nQ02A \nins_employer \nQ02B \nins_veteran \nQ02C \nins_military \nQ02D \nins_medicaid \nQ02E \nins_ma_pdp \nQ02F \nins_other \nQ02G \nins_other_txt \nQ02_O \nins_medicare \nQ02H \nca_illness \nQ03 \nca_illasaw* \nQ04 \nca_routine \nQ05 \nca_rtnasaw* \nQ06 \nca_visits \nQ07 \nca_emerquex \nca_emeransr \nca_emerfup \nR \nca_wt15mns* \nrate_care* \nQ08 \nca_equipment",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

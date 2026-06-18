@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p102__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 102,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n104 \nPRVDR_GRP_ID \nLABEL: \nSubmitting State Provider Group Identification Number \nDESCRIPTION: The unique, state-assigned identification number for the group with which the individual is associated. \nSHORT NAME: PRVDR_GRP_ID \nLONG NAME: PRVDR_GRP_ID \nTYPE: \nCHAR \nLENGTH: \n30 (prior to the 2023 file, the length was 12) \nFILE(S): \nAPR Affiliated Groups \nSOURCE: \nT-MSIS",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

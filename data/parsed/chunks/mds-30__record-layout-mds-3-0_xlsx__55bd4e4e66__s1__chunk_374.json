@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_374",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "of Stage 2 pressure ulcers that were present on admission/entry or reentry. 0 Minimum\n9 Maximum\n- Not assessed/no information\n^ Blank (skip pattern)\n417 M0300B3_STG_2_ULCR_OLD_DT M0300B3_STG_2_ULCR_OLD_DT M0300B3 Date of Oldest Stage 2 Pressure Ulcer CHAR 8 The data in this column indicates the date of the oldest Stage 2 pressure ulcer. discontinued 9/30/2018\n418 M0300C1_STG_3_ULCR_NUM M0300C1_STG_3_ULCR_NUM M0300C1 Stage 3 Pressure Ulcer Number CHAR 1 The data in this column indicates the",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

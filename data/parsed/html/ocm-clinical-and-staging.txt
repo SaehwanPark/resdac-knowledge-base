@@ -1,0 +1,18 @@
+The Oncology Care Model (OCM) Clinical and Staging file includes information about the episodes, the practice ID to which they were attributed, their beginning and end dates, their cancer types, and the clinical and staging characteristics that were required to be reported.
+This file contains data for the third through eleventh OCM performance periods (episodes initiating July 2, 2017 - December 31, 2021), primarily including data reported by OCM participants to the Oncology Care Model Registry (OCMR).
+What does this file include? (variable highlights)
+- Beneficiary ID
+- Episode Beginning Date
+- Episode Ending Date
+- OCM-Assigned Practice ID
+- OCM-Assigned Cancer Type
+- OCM 6-Month Episode Performance Period
+- ICD10 Cancer Diagnosis Code
+- Primary Tumor Staging
+- Nodal Disease Staging
+- Metastasis Staging
+- Histology
+Special Considerations
+- There is one row per episode and beneficiaries can appear multiple times in the file depending on the number of 6-month episodes initiated.
+- The Clinical and Staging data file and the Current Clinical Status data file can be linked by the Beneficiary ID, ICD10 Cancer Diagnosis Code Reported by Participant, and the Initial Diagnosis Date.
+- The file does not include any treatment data such as surgery, radiation, hormonal therapy or chemotherapy. Researchers may wish to obtain Medicare claims data for a population they identify within the OCM data files. The Beneficiary ID can be used to link to Medicare claims.

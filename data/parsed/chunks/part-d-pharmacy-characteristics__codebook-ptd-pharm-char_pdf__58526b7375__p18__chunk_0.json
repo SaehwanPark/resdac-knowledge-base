@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p18__chunk_0",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 18,
+  "text": "Chronic Condition Warehouse \nCODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 \n13 \nPREV_CCW_PHARM_ID \nLABEL: \nPrevious Owner CCW Pharmacy identifier \nDESCRIPTION: This variable is the CCW-assigned pharmacy identification number that is used to uniquely identify \npharmacy entities. This variable is only populated if the pharmacy ownership changed in the reference \nyear and the new owner did not keep the same pharmacy identifiers as the previous owner. This \nvariable allows",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

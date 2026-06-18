@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_21",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "Reason for Visit Diagnosis Code II (FFS) | \n\n | 135 | RSN_VISIT_CD3 | Reason for Visit Diagnosis Code III (FFS) | \n\n | 136 | NCH_BENE_PTB_DDCTBL_AMT | NCH Beneficiary Part B Deductible Amount | \n\n | 137 | NCH_BENE_PTB_COINSRNC_AMT | NCH Beneficiary Part B Coinsurance Amount | \n\n | 138 | CLM_OP_PRVDR_PMT_AMT | Claim Outpatient Provider Payment Amount | \n\n | 139 | CLM_OP_BENE_PMT_AMT | Claim Outpatient Payment Amount to Beneficiary | \n\n | 140 | DOB_DT | Date of Birth from Claim | \n\n | 142 |",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_189",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "(H3A) Any Scheduled Toileting Plan CHAR 1 Continence in last 14 days: appliances and programs - any scheduled toileting plan. 0 = No, 1 = Yes, \"-\" = Unknown.\n268 H3B H3B_BLADDER_TR (H3B) Bladder Retraining Program CHAR 1 Continence in last 14 days: appliances and programs - bladder retraining program. 0 = No, 1 = Yes, \"-\" = Unknown.\n269 H3C H3C_EXTERN_CATH (H3C) External Condom Catheter CHAR 1 Continence in last 14 days: appliances and programs - external (condom) catheter. 0 = No, 1 = Yes, \"-\"",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

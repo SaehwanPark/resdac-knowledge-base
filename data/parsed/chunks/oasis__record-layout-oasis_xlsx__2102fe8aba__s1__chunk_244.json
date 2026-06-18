@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_244",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "health status and/or outcome. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM1036_RSK_NONE M1036 (M0290) High Risk Factor- None of The Above This field indicates if none of the above is a risk factor, either present or past, likely to affect the patient's current health status and/or outcome. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM1036_RSK_OBESITY M1036 (M0290) High Risk Factor- Obesity This field indicates if obesity is a risk factor, either present or past, likely to",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

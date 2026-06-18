@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p267__chunk_4",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 267,
+  "text": "= D) \n7 = Other (cancel reason code = H) \n8 = Combining 2 spells or 2 beneficiary records (cancel reason code = L) \nWarning indicator 7 ('state/county numeric indicator' derived from checking the format of the \nbeneficiary residence SSA state code and beneficiary residence county code on the final action claim(s) \nthat comprise the stay; determine if in numeric range): \n0 = State and county codes are valid numeric values \n1 = State and county codes are not in numeric range \n2 = State code is",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

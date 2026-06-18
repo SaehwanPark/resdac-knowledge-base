@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cec-beneficiary__record-layout-cec_xlsx__0a9d5eb9d2__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/0a9d5eb9d2a837bfce8a309faaa844e1ab5cb215.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Condition Warehouse (CCW) Data Dictionary\nComprehensive End-stage Renal Disease Care Model (CEC) — Beneficiary File\nVersion — May 2025\nSAS Name Label Type Length\nBENE_ID Encrypted CCW Beneficiary ID CHAR 15\nESCO_NUMBER ESCO Number CHAR 5\nESCO_NAME ESCO Name CHAR 100\nBENE_BRTH_DT Beneficiary Date of Birth DATE 8\nBENE_DEATH_DT Beneficiary Date of Death DATE 8\nBENE_SEX1 Beneficiary Sex: F = Female, M = Male CHAR 1\nMO1_ALIGN Beneficiary Monthly Alignment Status: 1 = aligned, 0 = Not",
+  "dataset": "cec-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-cec.xlsx"
+}

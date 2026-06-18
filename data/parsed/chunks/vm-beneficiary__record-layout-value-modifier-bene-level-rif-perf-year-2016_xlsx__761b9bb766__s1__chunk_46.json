@@ -1,0 +1,8 @@
+{
+  "chunk_id": "vm-beneficiary__record-layout-value-modifier-bene-level-rif-perf-year-2016_xlsx__761b9bb766__s1__chunk_46",
+  "source_document": "data/raw/assets/xlsx/761b9bb766f9b4e05e452ed8077ccfa7e6d9e26d.xlsx",
+  "page": 1,
+  "text": "Admission date of hospitalization Date of beneficiary hospital admission 64 Num 8 Populated only for records with Inpatient_stay=1, MSPB_episode=1, or SSP_ADM=1. MM/DD/YYYY.\nDSCHRGDT Discharge date of hospitalization Date of beneficiary's hospital discharge 65 Num 8 Populated only for records with Inpatient_stay=1, MSPB_episode=1, or SSP_ADM=1. MM/DD/YYYY\nSTUS_CD_ABBRV Discharge status abbreviation Abbreviated description of discharge status code for beneficiary's hospital stay listed on",
+  "dataset": "vm-beneficiary",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-bene-level-rif-perf-year-2016.xlsx"
+}

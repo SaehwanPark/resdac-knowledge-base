@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p400__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 400,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n382 \nRNDRNG_PHYSN_NPI \nLABEL: \nRendering Physician NPI \nDESCRIPTION: This variable is the National Provider Identifier (NPI) for the physician who rendered the services. \nEffective 7/2012 with CR#7, the NPI number assigned to uniquely identify the rendering physician \nwhose services qualify for an incentive bonus under the Primary Care Incentive Payment Program \n(PCIP).",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

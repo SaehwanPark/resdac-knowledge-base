@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_240",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "M1032 Risk for Hosp- Taking 5 or More Meds This field is checked if the patient is at risk for hospitalization due to taking 5 or more medications. 0 = Not Checked, 1 = Checked CHAR 1 x\nM1032_HOSP_RISK_OTHR M1032 Risk for Hospitalization- Other This field is checked if the patient is at risk for hospitalization is other. 0 = Not Checked, 1 = Checked CHAR 1 x\nM1034_PTNT_OVRAL_STUS M1034 Overall Status This field describes the patient's overall status. 00 = The patient is stable with no",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

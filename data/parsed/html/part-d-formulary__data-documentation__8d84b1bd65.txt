@@ -1,0 +1,64 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| FORMULARY_ID | Formulary Identification Number | 
+| FRMLRY_RX_ID | CCW Formulary Drug Identifier | 
+| TIER_ID | Tier Number | 
+| STEP | Step Number | 
+| QUANTITY_LIMIT_YN | Quantity Limit Indicator (Formulary) | 
+| PRIOR_AUTHORIZATION_YN | Prior Authorization Indicator (Formulary) | 
+| BN | Brand Name | 
+| GNN | Generic Name | 
+| STR | Drug Strength Description | 
+| GCDF | Dosage Form Code | 
+| GCDF_DESC | Dosage Form Code Description | 
+| SAS Name | Variable Name | 
+|---|---|
+| FORMULARY_ID | Formulary Identification Number | 
+| FRMLRY_RX_ID | CCW Formulary Drug Identifier | 
+| CONTRACT_ID | Part D Contract Identifier | 
+| PLAN_ID | Part D Plan Benefit Package Identifier | 
+| TIER_ID | Tier Number | 
+| STEP_THERAPY_YN | Step Therapy Indicator | 
+| QUANTITY_LIMIT_YN | Quantity Limit Indicator (Formulary) | 
+| PRIOR_AUTHORIZATION_YN | Prior Authorization Indicator (Formulary) | 
+| BN | Brand Name | 
+| GNN | Generic Name | 
+| STR | Drug Strength Description | 
+| GCDF | Dosage Form Code | 
+| GCDF_DESC | Dosage Form Code Description | 
+| SAS Name | Variable Name | 
+|---|---|
+| FORMULARY_ID | Formulary Identification Number | 
+| FRMLRY_RX_ID | CCW Formulary Drug Identifier | 
+| BN | Brand Name | 
+| GNN | Generic Name | 
+| STR | Drug Strength Description | 
+| GCDF | Dosage Form Code | 
+| GCDF_DESC | Dosage Form Code Description | 
+| SAS Name | Variable Name | 
+|---|---|
+| FORMULARY_ID | Formulary Identification Number | 
+| FRMLRY_RX_ID | CCW Formulary Drug Identifier | 
+| BN | Brand Name | 
+| GNN | Generic Name | 
+| STR | Drug Strength Description | 
+| GCDF | Dosage Form Code | 
+| GCDF_DESC | Dosage Form Code Description | 
+| MESH_CUI | Coverage Indicator | 
+| DISEASE | Condition | 
+| SAS Name | Variable Name | 
+|---|---|
+| CONTRACT_ID | Part D Contract Identifier | 
+| PLAN_ID | Part D Plan Benefit Package Identifier | 
+| SEGMENT_ID | Market Segment Identifier | 
+| FRMLRY_RX_ID | CCW Formulary Drug Identifier | 
+| BN | Brand Name | 
+| GNN | Generic Name | 
+| STR | Drug Strength Description | 
+| GCDF | Dosage Form Code | 
+| GCDF_DESC | Dosage Form Code Description | 
+| TYPE | Insulin Type as Defined by the Model | 
+| COPAY | Copay |

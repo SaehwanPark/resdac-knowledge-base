@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_135",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Presence of Behavioral Symptoms CHAR 1 The data in this column indicates if any of the behavioral symptoms in E0200A-E0200C were coded as 1, 2 or 3. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n167 E0500A_BHVR_INJR_SELF_CD E0500A_BHVR_INJR_SELF_CD E0500A Behavior Impact on Resident: Risk to Injure Self CHAR 1 The data in this column indicates if the identified symptoms (physical, verbal or other behavioral symptoms) put the resident at significant risk for physical illness or",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

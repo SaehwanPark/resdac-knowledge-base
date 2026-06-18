@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p279__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 279,
+  "text": "For SNF claims, the date relates to a qualifying stay from a hospital that is at least two days in a row if \nthe source of admission is an “A” (transfer from critical access hospital), or at least three days in a row \nif the source of admission is other than “A”. \nSHORT NAME: QLFYTHRU \nLONG NAME: NCH_QLFYD_STAY_THRU_DT \nTYPE: \nDATE \nLENGTH: \n8 \nSOURCE: \nNCH QA Process \nVALUES: \n— \nCOMMENT: \nDerivation Rules: Based on the presence of the occurrence span code (variable called \nCLM_OCRNC_SPAN_CD)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

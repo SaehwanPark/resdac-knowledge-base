@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p35__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 35,
+  "text": "Prescription Drug Programs (NCPDP) DataQ™ \nDatabase. The variable is populated for every PDE that can be linked to the NCPDP pharmacy data for \nthat year, and will occasionally be null if there was no conclusive link between the service provider \nidentification number in the source PDE data and the provider identification numbers in the NCPDP \npharmacy data. Within the NCPDP database, this ID used to be called the NABP Number. NCPDP also \nenumerates licensed alternate dispensing sites and",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

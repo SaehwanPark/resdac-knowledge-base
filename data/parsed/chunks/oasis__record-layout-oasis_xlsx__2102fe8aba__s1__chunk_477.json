@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_477",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "any medications CHAR 1 x x x\nM2016_DRUG_EDCTN_INTRVTN M2016 Patient/Caregiver Drug Educ Intervention This field indicates whether the patient/caregiver was instructed by agency staff or other health care provider to monitor the effectiveness of drug therapy, drug reactions and side effects and how and when to report problems that may occur at the time of or at any time since the most recent SOC/ROC assessment. 0 = No\n1 = Yes\nNA = Patient not taking any drugs CHAR 2 x",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

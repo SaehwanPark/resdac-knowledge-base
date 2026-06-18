@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_11",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "codes. Position1: Part/line number on certificate\n1 = Part I, line 1 (a)\n2 = Part I, line 2 (b)\n3 = Part I, line 3 (c)\n4 = Part I, line 4 (d)\n5 = Part I, line 5 (e)\n6 = Part II\n\nPosition 2: Sequence of condition within\npart/line Code range:1-7\n\nPosition 3-6: Condition code (ICD-10 code)\nWhenever there is a 4-position code, there is always an implied decimal after the 3rd position.\n\nPosition 7: Nature of Injury flag (only for ICD-9 codes)\n1 = the code in positions 3-6 is a Nature of Injury ICD-9",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

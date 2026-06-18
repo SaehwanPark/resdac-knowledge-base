@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p389__chunk_3",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 389,
+  "text": "will equal the \ndollar amount for the “0023” line. \n4. For home health PPS (final claim), when revenue center code = “0023”, the total charges will be \nthe sum of the revenue center code lines (other than “0023”). \n5. For inpatient Rehabilitation Facility (IRF) PPS, when the revenue center code = “0024”, the total \ncharges will be zero. For accommodation revenue codes (010X–021X), total charges must equal \nthe rate times the units. \n6. For encounter data, if the plan (e.g., MCO) does not know",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

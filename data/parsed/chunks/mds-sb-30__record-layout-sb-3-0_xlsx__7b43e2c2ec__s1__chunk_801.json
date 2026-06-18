@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_801",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "assistance \n02=Substantial/maximal assistance \n01=Dependent \n\nIf activity was not attempted, code reason:\n07=Resident refused\n09=Not applicable \n10=Not attempted due to environmental limitations (e.g., lack of equipment, weather constraints)\n88=Not attempted due to medical condition or safety concerns effective 10/01/2023\n895 FTWR_INTRM_CD FTWR_INTRM_CD GG0130H5 Put on/take off footwear (Interim Perf) CHAR 2 Indicates the resident's ability to put on and take off socks and shoes or other",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

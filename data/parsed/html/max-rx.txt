@@ -1,0 +1,10 @@
+Medicaid Analytic Extract (MAX) Prescription Drug (RX) file includes records of filled prescriptions from fee-for-service (FFS) claims paid by Medicaid and encounter records for prescription drugs paid by a Medicaid managed care organization.
+The Medicaid RX Prescription Drug file includes fee-for-service (FFS) claim and managed care encounter records that contain a National Drug Code (NDC) for a filled prescription.
+What does this file include? (variable highlights)
+- National Drug Code (NDC)
+- Days supply covered by the prescription
+- Charges and Medicaid payments (FFS only)
+- National Provider Identifier (NPI) for the billing provider
+Special considerations
+- Encounter record reporting may not be complete. Data reporting may vary by state, year, eligibility group
+- Information on the drug name, dosage and format is not recorded in the MAX RX file. An external source of NDC data will be required if that information is needed.

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p362__chunk_4",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 362,
+  "text": "The above claim types could have lines that are not required to price under OPPS rules so those lines \nwould not have data in this field. \nThis field will have either a zero (for services for which coinsurance is not applicable), a regular \ncoinsurance amount (calculated on either charges or a fee schedule) or if subject to OP PPS the \nnational coinsurance amount will be wage adjusted. The wage adjusted coinsurance is based on the \nMSA where the provider is located or assigned as a result of a",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

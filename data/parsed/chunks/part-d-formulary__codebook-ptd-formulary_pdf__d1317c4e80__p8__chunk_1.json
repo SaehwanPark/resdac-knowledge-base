@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p8__chunk_1",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 8,
+  "text": "files) \nVALUES: \nText description (e.g., CROHN DISEASE and ARTHRITIS, PSORIATIC) \nCOMMENT: \nStarting in 2020, Medicare Part D plan sponsors may limit formulary inclusion of a Part D drug to only \ncertain FDA-approved indications. The corresponding standardized medical subject headings (MeSH) \nfor this value appears in the variable called “MESH_CUI.” Both variables are included in the CMS-\ncreated indication-based reference file in HPMS for plan sponsors to use for indication-based drug",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

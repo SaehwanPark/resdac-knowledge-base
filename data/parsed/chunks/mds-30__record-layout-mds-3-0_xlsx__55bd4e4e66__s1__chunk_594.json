@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_594",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "Does Resident Walk at Start of SNF PPS Part A Stay CHAR 1 Indicates whether the resident walks or there is a goal for the resident to walk at the start of the SNF PPS Part A\nstay. -=Not assessed/no information\n 0=No, and walking goal is not clinically indicated\n 1=No, and walking goal is clinically indicated\n 2=Yes\n ^=Blank (skip pattern) effective 10/01/2016\ndiscontinued 09/30/2018\n669 GG0170H3_RSDNT_WLK_END_CD GG0170H3_RSDNT_WLK_END_CD GG0170H3 Mobility: Does Resident Walk at End of SNF PPS",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

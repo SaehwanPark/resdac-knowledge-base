@@ -1,0 +1,1309 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicaid Enrollee Supplemental File — Conditions Segment
+Version — September 2022
+SAS name	Label	Data type	Data length	Description	Value
+BENE_ID	Encrypted 723 Beneficiary ID (Unique Key)	CHAR	15	A unique CCW beneficiary identifier field (BENE_ID) that is specific to the Chronic Condition Warehouse  Condition Warehouse ; encrypted prior to delivery to researchers 
+ 
+The BENE_ID field is used to cross-reference data for each beneficiary across all claim and assessment data files.
+STATE_CD	State Code	CHAR	2	This field specifies the state as it appeared in the MAX PS file.	2 character postal state code
+MSIS_ID	Encrypted Medicaid State ID Number	CHAR	20	MSIS Identification Number
+DM_SOURCE	Dual or Medicaid only enrollee	CHAR	1	This field specifies whether enrollee was dually enrolled in Medicare & Medicaid during the year, or enrolled only in Medicaid. CCW attempted to link each person in MAX PS to the Medicare enrollment data.  Those with a match are classified as dually enrolled.	Values:
+D=person was dually enrolled
+M=person was Medicaid only (not dual)
+ACP_COMBINED	ADHD and Other Conduct Disorders Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having ADHD and Other Conduct Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ACP_MEDICAID	ADHD and Other Conduct Disorders Indicator  - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having ADHD and Other Conduct Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS 
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ACP_MEDICARE	ADHD and Other Conduct Disorders Indicator  - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having ADHD and Other Conduct Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+AFIB_COMBINED	Atrial Fibrillation Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Atrial Fibrillation	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+AFIB_MEDICAID	Atrial Fibrillation Indicator  - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Atrial Fibrillation	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AFIB_MEDICARE	Atrial Fibrillation Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Atrial Fibrillation	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ALCO_COMBINED	Alcohol Use Disorder - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Alcohol Use Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ALCO_MEDICAID	Alcohol Use Disorder - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Alcohol Use Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALCO_MEDICARE	Alcohol Use Disorder - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Alcohol Use Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ALZ_COMBINED	Alzheimer's Disease Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Alzheimer's Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ALZ_MEDICAID	Alzheimer's Disease Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Alzheimer's Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZ_MEDICARE	Alzheimer's Disease Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Alzheimer's Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ALZRDSD_COMBINED	Alzheimer's or related dementia Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Alzheimer's or related dementia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ALZRDSD_MEDICAID	Alzheimer's Disease  Related Disorders  or Senile Dementia Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Alzheimer's Disease Related Disorders or Senile Dementia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ALZRDSD_MEDICARE	Alzheimer's Disease  Related Disorders  or Senile Dementia Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Alzheimer's Disease Related Disorders or Senile Dementia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+AMI_COMBINED	Acute Myocardial Infarction Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having an Acute Myocardial Infarction	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+AMI_MEDICAID	Acute Myocardial Infarction Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Acute Myocardial Infarction	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AMI_MEDICARE	Acute Myocardial Infarction Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Acute Myocardial Infarction	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ANEMIA_COMBINED	Anemia Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having an Anemia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ANEMIA_MEDICAID	Anemia Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Anemia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANEMIA_MEDICARE	Anemia Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Anemia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ANXI_COMBINED	Anxiety Disorders Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Anxiety	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ANXI_MEDICAID	Anxiety Disorders Indicator  - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Anxiety Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ANXI_MEDICARE	Anxiety Disorders Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Anxiety Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ASTHMA_COMBINED	Asthma Indicator  - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Asthma	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ASTHMA_MEDICAID	Asthma Indicator  - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Asthma	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ASTHMA_MEDICARE	Asthma Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Asthma	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+AUTISM_COMBINED	Autism Indicator  - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Autism	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+AUTISM_MEDICAID	Autism Indicator  - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Autism	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+AUTISM_MEDICARE	Autism Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having  Autism+E47	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+BIPL_COMBINED	Bipolar Disorder Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Bipolar Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+BIPL_MEDICAID	Bipolar Disorder Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Bipolar Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BIPL_MEDICARE	Bipolar Disorder Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Bipolar Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+BRAINJ_COMBINED	Brain Injury Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Traumatic Brain Injury and Nonpsychotic Mental Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+BRAINJ_MEDICAID	Brain Injury Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Traumatic Brain Injury and Nonpsychotic Mental Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRAINJ_MEDICARE	Brain Injury Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Traumatic Brain Injury and Nonpsychotic Mental Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+BRC_COMBINED	Breast Cancer Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Beast Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+BRC_MEDICAID	Breast Cancer Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Breast Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+BRC_MEDICARE	Breast Cancer Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Breast Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CAT_COMBINED	Cataract Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Cataracts	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CAT_MEDICAID	Cataract Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Cataracts	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CAT_MEDICARE	Cataract Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Cataracts	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CERPAL_COMBINED	Cerebral Palsy Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Cerebral Palsy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CERPAL_MEDICAID	Cerebral Palsy Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having  Cerebral Palsy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CERPAL_MEDICARE	Cerebral Palsy Indicator - Medicare-Only Data+B40+B13	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having  Cerebral Palsy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CHF_COMBINED	Heart Failure Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Heart Failure	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CHF_MEDICAID	Heart Failure Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Heart Failure	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CHF_MEDICARE	Heart Failure Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Heart Failure	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CKD_COMBINED	Chronic Kidney Disease Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Chronic Kidney Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CKD_MEDICAID	Chronic Kidney Disease Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Chronic Kidney Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CKD_MEDICARE	Chronic Kidney Disease Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Chronic Kidney Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+COPD_COMBINED	Chronic Obstructive Pulmonary Disease Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Chronic Obstructive Pulmonary Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+COPD_MEDICAID	Chronic Obstructive Pulmonary Disease Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Chronic Obstructive Pulmonary Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+COPD_MEDICARE	Chronic Obstructive Pulmonary Disease Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Chronic Obstructive Pulmonary Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CRC_COMBINED	Colorectal Cancer Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Colorectal Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CRC_MEDICAID	Colorectal Cancer Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Colorectal Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CRC_MEDICARE	Colorectal Cancer Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Colorectal Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CYSFIB_COMBINED	Cystic Fibrosis Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Cystic Fibrosis and other Metabolic Developmental Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+CYSFIB_MEDICAID	Cystic Fibrosis Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having  Cystic Fibrosis and other Metabolic Developmental Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+CYSFIB_MEDICARE	Cystic Fibrosis Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having  Cystic Fibrosis and other Metabolic Developmental Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DEPR_COMBINED	Depression Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Depression	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DEPR_MEDICAID	Depression Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Depression	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPR_MEDICARE	Depression Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Depression	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DEPSN_COMBINED	TO10 Depression Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  TO 10 Depression	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DEPSN_MEDICAID	TO10 Depression Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having TO10 Depression	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DEPSN_MEDICARE	TO10 Depression Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having TO10 Depression	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DIAB_COMBINED	Diabetes Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Diabetes	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DIAB_MEDICAID	Diabetes Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Diabetes	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DIAB_MEDICARE	Diabetes Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Diabetes	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DRUG_COMBINED	Drug Use Disorder Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Drug Use Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+DRUG_MEDICAID	Drug Use Disorder - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Drug Use Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+DRUG_MEDICARE	Drug Use Disorder Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Drug Use Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ENDC_COMBINED	Endometrial Cancer Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Endometrial Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ENDC_MEDICAID	Endometrial Cancer Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Endometrial Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+ENDC_MEDICARE	Endometrial Cancer Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Endometrial Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+EPLILEP_COMBINED	Epilepsy Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Epilepsy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+EPLILEP_MEDICAID	Epilepsy Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Epilepsy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+EPLILEP_MEDICARE	Epilepsy Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Epilepsy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+FIBRO_COMBINED	Chronic Pain, Fatigue, and Fibromyalgia - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Chronic Pain, Fatigue, and Fibromyalgia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+FIBRO_MEDICAID	Chronic Pain, Fatigue, and Fibromyalgia - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Chronic Pain, Fatigue, and Fibromyalgia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+FIBRO_MEDICARE	Chronic Pain, Fatigue, and Fibromyalgia - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Chronic Pain, Fatigue, and Fibromyalgia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+GLCM_COMBINED	Glaucoma Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Glaucoma	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+GLCM_MEDICAID	Glaucoma Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Glaucoma	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+GLCM_MEDICARE	Glaucoma Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Glaucoma	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEARIM_COMBINED	Hearing Impaired Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Deafness and Hearing Impairment	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEARIM_MEDICAID	Hearing Impaired Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Deafness and Hearing Impairment	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HEARIM_MEDICARE	Hearing Impaired Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Deafness and Hearing Impairment	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPA_COMBINED	Hepatitis A - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Hepatits A	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPA_MEDICAID	Hepatitis A - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Hepatits A	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPA_MEDICARE	Hepatitis A - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Hepatits A	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPB_ACT_COMBINED	Hepatitis B (Acute or Unspecified) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Acute or Unspecified Hepatits B	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPB_ACT_MEDICAID	Hepatitis B (Acute or Unspecified) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Acute or Unspecified Hepatits B	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPB_ACT_MEDICARE	Hepatitis B (Acute or Unspecified) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Acute or Unspecified Hepatits B	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPB_CHR_COMBINED	Hepatitis B (Chronic) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Chronic Hepatits B	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPB_CHR_MEDICAID	Hepatitis B (Chronic) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Chronic Hepatits B	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPB_CHR_MEDICARE	Hepatitis B (Chronic) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Chronic Hepatits B	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_ACT_COMBINED	Hepatitis C (Acute) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Acute Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_ACT_MEDICAID	Hepatitis C (Acute) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Acute Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_ACT_MEDICARE	Hepatitis C (Acute) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Acute Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_CHR_COMBINED	Hepatitis C (Chronic) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Chronic Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_CHR_MEDICAID	Hepatitis C (Chronic) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Chronic Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_CHR_MEDICARE	Hepatitis C (Chronic) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Chronic Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_UNS_COMBINED	Hepatitis C (Unspecified) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Unspecified Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_UNS_MEDICAID	Hepatitis C (Unspecified) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Unspecified Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPC_UNS_MEDICARE	Hepatitis C (Unspecified) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Unspecified Hepatits C	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPD_COMBINED	Hepatitis D - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Hepatits D	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPD_MEDICAID	Hepatitis D - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Hepatits D	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPD_MEDICARE	Hepatitis D - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Hepatits D	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPE_COMBINED	Hepatitis E - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Hepatits E	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPE_MEDICAID	Hepatitis E - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Hepatits E	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPE_MEDICARE	Hepatitis E - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Hepatits E	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPVIRAL_COMBINED	Viral Hepatitis (General) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Viral Hepatits	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPVIRAL_MEDICAID	Viral Hepatitis (General) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Viral Hepatits	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HEPVIRAL_MEDICARE	Viral Hepatitis (General) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Viral Hepatits	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HFRAC_COMBINED	Hip / Pelvic Fracture Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Hip / Pelvic Fracture	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HFRAC_MEDICAID	Hip / Pelvic Fracture Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Hip/Pelvic Fractures	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HFRAC_MEDICARE	Hip / Pelvic Fracture Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Hip/Pelvic Fractures	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HIVAIDS_COMBINED	(HIV/AIDS) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having HIV/AIDS	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HIVAIDS_MEDICAID	(HIV/AIDS) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having HIV/AIDS	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HIVAIDS_MEDICARE	(HIV/AIDS) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having HIV/AIDS	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPLIP_COMBINED	Hyperlipidemia Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Hyperlipidemia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPLIP_MEDICAID	Hyperlipidemia Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Hyperlipidemia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPLIP_MEDICARE	Hyperlipidemia Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Hyperlipidemia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPPLA_COMBINED	Benign Prostatic Hyperplasia Indicator -Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Benign Prostatic Hyperplasia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPPLA_MEDICAID	Benign Prostatic Hyperplasia Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Benign Prostatic Hypertrophy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPPLA_MEDICARE	Benign Prostatic Hyperplasia Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Benign Prostatic Hypertrophy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPTEN_COMBINED	Hypertension Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Hypertension	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPTEN_MEDICAID	Hypertension Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Hypertension	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTEN_MEDICARE	Hypertension Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Hypertension	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPTHY_COMBINED	Acquired Hypothyroidism Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Acquired Hypothyroidism	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+HYPTHY_MEDICAID	Acquired Hypothyroidism Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Acquired Hypothyroidism	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+HYPTHY_MEDICARE	Acquired Hypothyroidism Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Acquired Hypothyroidism	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+IHD_COMBINED	Ischemic Heart Disease Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Ischemic Heart Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+IHD_MEDICAID	Ischemic Heart Disease Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Ischemic Heart Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+IHD_MEDICARE	Ischemic Heart Disease Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Ischemic Heart Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+INTDIS_COMBINED	Intellectual Disabilities Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Intellectual Disabilities and Related Conditions	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+INTDIS_MEDICAID	Intellectual Disabilities Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having  Intellectual Disabilities and Related Conditions	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+INTDIS_MEDICARE	Intellectual Disabilities Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having  Intellectual Disabilities and Related Conditions	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LEADIS_COMBINED	Learning Disabilities Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Learning Disabilities	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LEADIS_MEDICAID	Learning Disabilities Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Learning Disabilities	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LEADIS_MEDICARE	Learning Disabilities Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Learning Disabilities	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LEUKLYMPH_COMBINED	Leukemias and Lymphomas - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Leukemias and Lymphomas	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LEUKLYMPH_MEDICAID	Leukemias and Lymphomas - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Leukemias and Lymphomas	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LEUKLYMPH_MEDICARE	Leukemias and Lymphomas - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Leukemias and Lymphomas	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LIVER_COMBINED	Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis) - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LIVER_MEDICAID	Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis) - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LIVER_MEDICARE	Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis) - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Liver Disease, Cirrhosis & Oth Liver Cond (excl Hepatitis)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LNGC_COMBINED	Lung Cancer Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Lung Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+LNGC_MEDICAID	Lung Cancer Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Lung Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+LNGC_MEDICARE	Lung Cancer Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Lung Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MIGRAINE_COMBINED	Migraine and other Chronic Headache - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Migraine and other Chronic Headache	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MIGRAINE_MEDICAID	Migraine and other Chronic Headache - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Migraine and other Chronic Headache	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MIGRAINE_MEDICARE	Migraine and other Chronic Headache - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Migraine and other Chronic Headache	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MOBIMP_COMBINED	Mobility Impairments Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Mobility Impairments	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MOBIMP_MEDICAID	Mobility Impairments Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Mobility Impairments	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MOBIMP_MEDICARE	Mobility Impairments Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Mobility Impairments	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MULSCL_COMBINED	Multiple Sclerosis and Transverse Myelitis Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Multiple Sclerosis and Transverse Myelitis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MULSCL_MEDICAID	Multiple Sclerosis and Transverse Myelitis  Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Multiple Sclerosis and Transverse Myelitis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MULSCL_MEDICARE	Multiple Sclerosis and Transverse Myelitis  Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Multiple Sclerosis and Transverse Myelitis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MUSDYS_COMBINED	Muscular Dystrophy Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Muscular Dystrophy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+MUSDYS_MEDICAID	Muscular Dystrophy Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Muscular Dystrophy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+MUSDYS_MEDICARE	Muscular Dystrophy Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Muscular Dystrophy	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OBESITY_COMBINED	Obesity - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Obesity	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OBESITY_MEDICAID	Obesity - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Obesity	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OBESITY_MEDICARE	Obesity - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Obesity	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OST_COMBINED	Osteoporosis Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Osteoporosis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OST_MEDICAID	Osteoporosis Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Osteoporosis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OST_MEDICARE	Osteoporosis Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Osteoporosis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OTHDEL_COMBINED	Other Developmental Delays Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Other Developmental Delays	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OTHDEL_MEDICAID	Other Developmental Delays Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Other Developmental Delays	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+OTHDEL_MEDICARE	Other Developmental Delays Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Other Developmental Delays	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_ANY_COMBINED	Overarching OUD Disorder (Any of the 3 Sub-Indicators) - Combined Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Overarching opioid use disorder (any positive result from the three indicators: DX or procedure, hospital or ED, or MAT)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_ANY_MEDICAID	Overarching OUD Disorder (Any of the 3 Sub-Indctrs) - Mdcd-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Overarching opioid use disorder (any positive result from the three indicators: DX or procedure, hospital or ED, or MAT)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_ANY_MEDICARE	Overarching OUD Disorder (Any of the 3 Sub-Indctrs) - Mdcr-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Overarching opioid use disorder (any positive result from the three indicators: DX or procedure, hospital or ED, or MAT)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_DX_COMBINED	Diagnosis and Procedure Basis for OUD - Combined Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Diagnosis and Procedure Basis for opioid use disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_DX_MEDICAID	Diagnosis and Procedure Basis for OUD - Medicaid-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Diagnosis and Procedure Basis for  opioid use disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_DX_MEDICARE	Diagnosis and Procedure Basis for OUD - Medicare-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Diagnosis and Procedure Basis for  opioid use disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_HOSP_COMBINED	Opioid-Related Hospitalization or Emergency Department - Combined Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Opioid User Disorder-Related to Hospitalization or Emergency Department	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_HOSP_MEDICAID	Opioid-Related Hospitalization or Emergency Department - Medicaid-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Opioid Use Disorder-Related to Hospitalization or Emergency Department	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_HOSP_MEDICARE	Opioid-Related Hospitalization or Emergency Department - Medicare-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Opioid Use Disorder -Related to Hospitalization or Emergency Department	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_MAT_COMBINED	Use of Medication-Assisted Treatment (MAT) - Combined Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Use of Medication-Assisted Treatment (MAT)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_MAT_MEDICAID	Use of Medication-Assisted Treatment (MAT) - Medicaid-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for havin gUse of Medication-Assisted Treatment (MAT)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+OUD_MAT_MEDICARE	Use of Medication-Assisted Treatment (MAT) - Medicare-Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Use of Medication-Assisted Treatment (MAT)	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PRC_COMBINED	Prostate Cancer Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Prostate Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PRC_MEDICAID	Prostate Cancer Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Prostate Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PRC_MEDICARE	Prostate Cancer Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Prostate Cancer	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PSDS_COMBINED	Personality Disorders Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having a Personality Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PSDS_MEDICAID	Personality Disorders Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having a Personality Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PSDS_MEDICARE	Personality Disorders Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having a Personality Disorder	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PTRA_COMBINED	PTSD Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  PTSD	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PTRA_MEDICAID	PTSD Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having PTSD	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+PTRA_MEDICARE	PTSD Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having PTSD	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PVD_COMBINED	Peripheral Vascular Disease - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Peripheral Vascular Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PVD_MEDICAID	Peripheral Vascular Disease - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Peripheral Vascular Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+PVD_MEDICARE	Peripheral Vascular Disease - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Peripheral Vascular Disease	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+RAOA_COMBINED	Rheumatoid - Osteo Arthritis Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Rheumatoid - Osteo Arthritis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+RAOA_MEDICAID	Rheumatoid - Osteo Arthritis Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Rheumatoid - Osteoarthritis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+RAOA_MEDICARE	Rheumatoid - Osteo Arthritis Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Rheumatoid - Osteoarthritis	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SCD_COMBINED	Sickle Cell Disease Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Sickle Cell Disease.	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SCD_MEDICAID	Sickle Cell Disease Indicator- Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Sickle Cell Disease.	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCD_MEDICARE	Sickle Cell Disease Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Sickle Cell Disease.	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SCHI_COMBINED	Schizophrenia Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Schizophrenia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SCHI_MEDICAID	Schizophrenia Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Schizophrenia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHI_MEDICARE	Schizophrenia Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Schizophrenia	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SCHIOT_COMBINED	Schizophrenia and Other Psychotic Disorders Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Schizophrenia and Other Psychotic Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SCHIOT_MEDICAID	Schizophrenia and Other Psychotic Disorders Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Schizophrenia and Other Psychotic Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SCHIOT_MEDICARE	Schizophrenia and Other Psychotic Disorders Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Schizophrenia and Other Psychotic Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SPIBIF_COMBINED	Spina Bifida and Other Congenital Anomalies Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Spina Bifida and Other Congenital Anomalies	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SPIBIF_MEDICAID	Spina Bifida and Other Congenital Anomalies Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Spina Bifida and Other Congenital Anomalies	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+SPIBIF_MEDICARE	Spina Bifida and Other Congenital Anomalies Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Spina Bifida and Other Congenital Anomalies E149	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SPIINJ_COMBINED	Spinal Cord Injury - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Spinal Cord Injury	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SPIINJ_MEDICAID	Spinal Cord Injury - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Spinal Cord Injury	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+SPIINJ_MEDICARE	Spinal Cord Injury - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Spinal Cord Injury	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+STRK_COMBINED	Stroke / Transient Ischemic Attack Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having a Stroke / Transient Ischemic Attack	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+STRK_MEDICAID	Stroke / Transient Ischemic Attack Indicator - Medicaid-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Stroke / Transient Ischemic Attack	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+STRK_MEDICARE	Stroke / Transient Ischemic Attack Indicator - Medicare-Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Stroke / Transient Ischemic Attack	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+TOBA_COMBINED	Tobacco Use Disorders Indicator - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having  Tobacco Use Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+TOBA_MEDICAID	Tobacco Use Disorders Indicator - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Tobacco Use Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+TOBA_MEDICARE	Tobacco Use Disorders Indicator - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Tobacco Use Disorders	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ULCERS_COMBINED	Pressure Ulcers and Chronic Ulcers - Combined Medicare & Medicaid Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Pressure Ulcers and Chronic Ulcers	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ULCERS_MEDICAID	Pressure Ulcers and Chronic Ulcers - Medicaid Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Pressure Ulcers and Chronic Ulcers	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+ULCERS_MEDICARE	Pressure Ulcers and Chronic Ulcers - Medicare Only Claims	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Pressure Ulcers and Chronic Ulcers	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+VISUAL_COMBINED	Sensory Blindness and Visual Impairment - Combined Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering both Medicare and Medicaid data, for having Sensory Blindness and Visual Impairment	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing
+VISUAL_MEDICAID	Sensory Blindness and Visual Impairment - Medicaid Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicaid data, for having Sensory Blindness and Visual Impairment	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+VISUAL_MEDICARE	Sensory Blindness and Visual Impairment - Medicare Only Data	NUM	1	This code specifies whether the enrollee met the chronic condition algorithm criteria, considering only Medicare data, for having Sensory Blindness and Visual Impairment	Values:
+0 - Claims and FFS not met
+1 - Claims met, not FFS
+2 - Claims not met, FFS
+3 - Claims met and FFS
+null/missing

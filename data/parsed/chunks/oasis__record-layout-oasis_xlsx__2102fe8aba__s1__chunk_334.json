@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_334",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "conducted.\n01 = Yes, and it does not indicate a risk for falls.\n02 = Yes, and it does indicate a risk for falls. CHAR 2 x x x x x\nM2000_DRUG_RGMN_RVW M2000 Drug Regimen Review This field indicates whether a complete drug regimen review was completed. 00 = Not assessed/reviewed\n01 = No problems found during review\n02 = Problems found during review\nNA = Patient is not taking any medications CHAR 2 x x x\nM2002_MDCTN_FLWP M2002 Medication Follow-Up This field indicates whether a physician or the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_218",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Assessment Period: Discharge CHAR 2 A rating indicating the highest level of pain reported by the patient within the assessment period regardless of whether taking pain medication at the time of discharge. Pain refers to any type of physical pain or discomfort in any part of the body. 00 = 00, 01 = 01, 02 = 02, 03 = 03, 04 = 04, 05 = 05, -6 = 06, 07 = 07, 08 = 08, 09 = 09, 10 = 10\n179 _52AA HIGHST_PRSR_ULCR_ADMSN_CD (52Aa) Highest Current Pressure Ulcer stage: Admission CHAR 2 A code indicating",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

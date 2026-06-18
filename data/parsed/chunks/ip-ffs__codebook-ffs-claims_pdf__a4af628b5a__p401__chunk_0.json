@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p401__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 401,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n383 \nRNDRNG_PHYSN_SPCLTY_CD \nLABEL: \nClaim or Revenue Center Rendering Physician Specialty Code \nDESCRIPTION: The code used to identify the CMS specialty code of the rendering physician/practitioner. \nEffective 7/2012 with CR#7, the code used to identify the CMS specialty code of the rendering \nphysician/practitioner (identified using the NPI) whose services qualify for an",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

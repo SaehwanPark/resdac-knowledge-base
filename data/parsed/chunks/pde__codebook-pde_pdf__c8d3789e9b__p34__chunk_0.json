@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p34__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 34,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n29 \nMDCR_RX_PYMT_PLAN_IND \nLABEL: \nMedicare Prescription Payment Plan (MPPP) Indicator \nDESCRIPTION: This field indicates the PDE was included in the Medicare Prescription Payment Plan. \nSHORT NAME: MDCR_RX_PYMT_PLAN_IND \nLONG NAME: MDCR_RX_PYMT_PLAN_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \nY = PDE is included in the Medicare Prescription Payment",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

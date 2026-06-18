@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_574",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "dead: F (A) CHAR 1 This column documents, at the time of admission, the frequency with which the patient says they have had thoughts that they would be better off dead, or of hurting themselves in some way. 0 = Never or 1 day \n1 = 2-6 days \n2 = 7-11 days \n3 = 12-14 days \n- = Not Assessed/No Information \n^ = Blank\n511 THGHT_BETTER_DD_FREQ_DSCHRG_CD THGHT_BETTER_DD_FREQ_DSCHRG_CD Mood: Thoughts of better off dead: F (D) CHAR 1 This column documents, at the time of discharge, the frequency with",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

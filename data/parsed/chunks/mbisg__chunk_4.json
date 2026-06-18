@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbisg__chunk_4",
+  "source_document": "data/raw/html/dataset_page/719d1d0b72f037784384d6658ed2c12e9fe1eaa4.html",
+  "page": null,
+  "text": "File Reference Date\n- Race/Ethnicity Probabilities (6 variables)\n- Predicted Spanish Preference Category\nSpecial Considerations\nThe MBISG dataset is separate from CCW’s Master Beneficiary Summary File (MBSF), which is partitioned by calendar year. The MBISG dataset will overlap with MBSF files, but the cohort does not match exactly to any given MBSF calendar year dataset.\nFor more information about the MBISG data, please contact [email protected].",
+  "dataset": "mbisg",
+  "url": "https://resdac.org/cms-data/files/mbisg"
+}

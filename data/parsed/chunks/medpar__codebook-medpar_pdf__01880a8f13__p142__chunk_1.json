@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p142__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 142,
+  "text": "quartile of selected Hospital Acquired Conditions (HAC). \nSHORT NAME: IPPS_FLEX_PYMT_6_AMT \nLONG NAME: IPPS_FLEX_PYMT_6_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the IPPS_FLEX_PYMT_6_AMT) that is present on any of the claim \nrecords included in the stay (i.e., the sum of the claim HAC reduction payment amounts reported on the \nclaims that comprise the stay). \nThis field is new in October 2014. This field only applies to Inpatient",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

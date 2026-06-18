@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p165__chunk_1",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 165,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system \nVALUES: \n0 = Did not screen positive for physical activity need \n1 = Screened positive for physical activity need \nMissing \nCOMMENT: \nThe variable considered for this indicator is SR_SPLMTL_PHYS_ACTVTY_1_2_QTY, which is the product \nof SR_SPLMTL_PHYS_ACTVTY_1_CD and SR_SPLMTL_PHYS_ACTVTY_2_CD. \nWhether this field is “1” depends on 1) the amount of exercise engaged in each week, and 2) the \nrespondent’s age: \n \nUnder 6 years old: No physical",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

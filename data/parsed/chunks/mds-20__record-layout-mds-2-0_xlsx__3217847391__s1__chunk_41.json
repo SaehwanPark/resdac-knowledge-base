@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_41",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Home CHAR 1 Demographic information: residential history prior to entry - prior stay at this nursing home. 0 = No, 1 = Yes, \"-\" = Unknown\n79 AB5B AB5B_PRIOR_OTH_NF (AB5B) Stay in Other Nursing Home CHAR 1 Demographic information: residential history prior to entry - prior stay in other nursing home. 0 = No, 1 = Yes, \"-\" = Unknown\n80 AB5C AB5C_OTH_RF (AB5C) Other Residential Facility CHAR 1 Demographic information: residential history prior to entry - other residential facility. 0 = No, 1 = Yes,",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

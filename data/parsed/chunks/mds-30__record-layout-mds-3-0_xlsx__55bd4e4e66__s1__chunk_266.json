@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_266",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n285 I2200_TB_CD I2200_TB_CD I2200 Active Diagnoses: Tuberculosis Code CHAR 1 The data in this column indicates whether the resident had an active diagnosis of tuberculosis in the last seven days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n286 I2300_UTI_CD I2300_UTI_CD I2300 Active Diagnoses: Urinary Tract Infection (UTI) Code CHAR 1 The data in this column indicates whether the resident had an active",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p98__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 98,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n98 \nPRVDR_ENT_TYPE_CD \nLABEL: \nProvider Entity Type Code — individual, group or facility \nDESCRIPTION: A code to identify whether the SUBMTG_STATE_PRVDR_ID is assigned to an individual, a group of \nproviders, or a facility; most recent in the calendar year. \nSHORT NAME: PRVDR_ENT_TYPE_CD \nLONG NAME: PRVDR_ENT_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAPR base \nSOURCE:",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

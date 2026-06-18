@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p29__chunk_2",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 29,
+  "text": "the earliest contract start date range continuous with the date range on the record with the \nlast-best MC_PLAN_CNTRCT_END_DT. The algorithm starts with the date range on that record and \nworks backwards. \nIf the APL base variable MC_PLAN_CNTRCT_ADDTNL_PRD_IND equals 1, there are contract dates that \nare not within the date range MC_PLAN_CNTRCT_START_DT to MC_PLAN_CNTRCT_END_DT. \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

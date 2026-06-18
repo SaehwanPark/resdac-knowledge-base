@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_322",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "15.\n543 T1D T1D_THPY_MIN (T1D) Therapy Minutes CHAR 4 Multistate supplement: special treatments and procedures - estimate of minutes of therapy until day 15.\n544 T2A T2A_WALK (T2A) Furthest Distance Walked CHAR 1 Multistate supplement: walking when most self sufficient - furthest distance walked. 0 = 150+ feet, 1 = 51\"-\"49 feet, 2 = 26-50 feet, 3 = 10-25 feet, 4 = Less than 10 feet.\n545 T2B T2B_TIME_WALK (T2B) Time Walked CHAR 1 Multistate supplement: walking when most self sufficient - time",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

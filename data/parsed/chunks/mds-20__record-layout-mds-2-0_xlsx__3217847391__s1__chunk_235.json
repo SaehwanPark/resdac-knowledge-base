@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_235",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "K1C K1C_MOUTH_PAIN (K1C) Mouth Pain CHAR 1 Oral/nutritional status: oral problems - mouth pain. 0 = No, 1 = Yes, \"-\" = Unknown.\n380 K1D K1D_NONE_ABOVE (K1D) None of Above Oral Problems CHAR 1 Oral/nutritional status: oral problems - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n381 K2A K2A_HEIGHT (K2A) Height CHAR 2 Oral/nutritional status: height and weight - height (inches).\n382 K2B K2B_WEIGHT (K2B) Weight CHAR 3 Oral/nutritional status: height and weight - weight (pounds).\n383 K3A",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

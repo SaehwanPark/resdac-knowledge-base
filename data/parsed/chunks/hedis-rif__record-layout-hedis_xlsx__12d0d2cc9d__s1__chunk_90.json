@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_90",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Hospital Utilization (IHU): PUCD Base Risk Weight, Total NUM 8 179 — — — —\nIHU_PUCD_SRGRY_BASE_RISK_WT Inpatient Hospital Utilization (IHU): PUCD Base Risk Weight, Surgery NUM 8 180 — — — —\nIHU_PUCD_MDCL_BASE_RISK_WT Inpatient Hospital Utilization (IHU): PUCD Base Risk Weight, Medical NUM 8 181 — — — —\nSAA_DNMTR_IND Adherence to Antipsychotics for Individuals With Schizophrenia (SAA) Dnmtr Ind NUM 3 — — — 208 206\nSAA_NMRTR_IND Adherence to Antipsychotics for Individuals With Schizophrenia (SAA)",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

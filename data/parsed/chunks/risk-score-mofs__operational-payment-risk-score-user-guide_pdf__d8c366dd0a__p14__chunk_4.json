@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p14__chunk_4",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 14,
+  "text": "As a result, there are \nsimilar characteristics as the other HCC models. For each beneficiary, CMS uses diagnosis codes to calculate RxHCC \ncategories; however, they use a different HCCs to calculate a risk score than they use for the other Part C HCCs. \nIn the RxHCC model, nearly one-half of the variables are the HCC condition categories included in the calculation of a \nrisk score. There are also variables for select disease and disabled interactions, as well as post graft add-on factors",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

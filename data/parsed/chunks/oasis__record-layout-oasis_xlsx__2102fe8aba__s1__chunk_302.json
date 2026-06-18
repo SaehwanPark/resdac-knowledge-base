@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_302",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "assessment-and the patient meets\ncriteria for further evaluation for depression.\n03 = Yes, patient was screened with a different standardized assessment-and the patient does not meet criteria for further evaluation for depression. CHAR 2 x x x x x\nM1730_PHQ2_DPRSN M1730 PHQ2- Feeling Down, Depressed, Or Hopeless This field indicates how often the patient has been bothered by feeling down, depressed, or hopeless. 00 = Not at all/0 - 1day\n01 = Several days/2 - 6 days\n02 = More than half of the",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-other-conditions__codebook-mbsf-other_pdf__c4c0224035__p17__chunk_1",
+  "source_document": "data/raw/assets/pdf/c4c02240350e73a79a885b327567f3b5714475c3.pdf",
+  "page": 17,
+  "text": "criteria for traumatic brain injury and \nnonpsychotic mental disorders as of the end of the calendar year. \nSHORT NAME: BRAINJ_MEDICARE \nLONG NAME: BRAINJ_MEDICARE \nTYPE: \nNUM \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage \n1 = Beneficiary met claims criteria but did not have sufficient FFS coverage \n2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage \n3 = Beneficiary met",
+  "dataset": "mbsf-other-conditions",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-other.pdf"
+}

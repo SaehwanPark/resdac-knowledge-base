@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p84__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 84,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n73 \nMDCR_CREC \nLABEL: \nMedicare — Current Reason for Entitlement Code (CREC) \nDESCRIPTION: This variable is the current reason for Medicare entitlement \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nMedicare MBSF \nVALUES: \n0 = Old age and survivor’s insurance (OASI) \n1 = Disability insurance benefits (DIB) \n2 = End-stage renal disease (ESRD) \n3 = Both DIB and ESRD \nNull/missing = not Medicare enrolled \nCOMMENT: \nCCW obtains this",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p132__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 132,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n114 \n15 = Blend year 3 — 40% facility rate \nplus 60% short stay payment \nwith outlier \n16 = Blend year 4 — 20% facility rate \nplus 80% normal DRG payment \nwithout outlier \n17 = Blend year 4 — 20% facility rate \nplus 80% normal DRG payment \nwith outlier \n18 = Blend year 4 — 20% facility rate \nplus 80% short stay payment \nwithout outlier \n19 = Blend year 4 — 20% facility rate",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

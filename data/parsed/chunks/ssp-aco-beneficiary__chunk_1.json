@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__chunk_1",
+  "source_document": "data/raw/html/dataset_page/e0b196e3d259fa2849b7e990d5bd1d887944fcad.html",
+  "page": null,
+  "text": "Period\n- Assigned in Quarter 1\n- Assigned in Quarter 2\n- Assigned in Quarter 3\n- Assigned in Quarter 4\n- Assigned in Final Reconciliation\n- Part D Eligible Months\n- HICN (populated in PY2013-PY2019/2019-A)\n- Date of birth\n- Date of death\n- Sex\n- Race\n- Medicare Beneficiary Identifier (MBI)\nSpecial considerations\n- This file can be linked to any other CMS file that includes the Bene ID.\n- These files differ from the monthly Claim and Claim Line Feed (CCLF) files active Shared Savings Program",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://resdac.org/cms-data/files/ssp-aco-beneficiary?page=1"
+}

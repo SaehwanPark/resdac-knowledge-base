@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_12",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Group CHAR 3 This field contains the Medicare RUG group calculated for this assessment by the state MDS system.\n22 MCR_VR MCR_VR Medicare RUG Version CHAR 2 This field contains the Medicare RUG calculator version used for this assessment by the state MDS system.\n23 ORGSMTID ORIG_ASMT_INT_ID Encrypted D614Original Assessment Internal ID CHAR 10 Original version (ASMT INT ID) of this assessment where Correction Number is 00.\n24 P_REC_DT P_REC_DT Previous Record Date DATE 8 Previous Record Date\n25",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

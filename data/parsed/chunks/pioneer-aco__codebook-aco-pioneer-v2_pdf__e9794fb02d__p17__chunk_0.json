@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pioneer-aco__codebook-aco-pioneer-v2_pdf__e9794fb02d__p17__chunk_0",
+  "source_document": "data/raw/assets/pdf/e9794fb02d175a1909be3f0dea52965ad4524cdd.pdf",
+  "page": 17,
+  "text": "ORG_TIN \nChronic Conditions Warehouse Virtual Research Data Center \nACO Pioneer V2 Codebook │ May 2025 │ V 1.1 \n13 \nORG_TIN \nLABEL: \nBilling TIN of ACO Participant \nDESCRIPTION: The taxpayer identification number (TIN) of the participating provider, generally an employer \nidentification number (EIN) but may be (in the case of professionals) a Social Security number (SSN). \nSHORT NAME: ORG_TIN \nLONG NAME: ORG_TIN \nTYPE: \nNUM \nLENGTH: \n9 \nSOURCE: \nCMS Participating Provider Pioneer ACO RIF",
+  "dataset": "pioneer-aco",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-aco-pioneer-v2.pdf"
+}

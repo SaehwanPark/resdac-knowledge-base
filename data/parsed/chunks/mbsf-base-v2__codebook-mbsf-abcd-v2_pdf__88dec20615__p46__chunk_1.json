@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p46__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 46,
+  "text": "variable is the Medicare Part C plan benefit package (PBP) for the beneficiary’s Medicare \nAdvantage (MA) plan for a given month (January through December). \nCMS assigns an identifier to each PBP within a contract that a Part C plan sponsor has with CMS. \nLONG NAME: \nPTC_PBP_ID_01 \nPTC_PBP_ID_02 \nPTC_PBP_ID_03 \nPTC_PBP_ID_04 \nPTC_PBP_ID_05 \nPTC_PBP_ID_06 \nPTC_PBP_ID_07 \nPTC_PBP_ID_08 \nPTC_PBP_ID_09 \nPTC_PBP_ID_10 \nPTC_PBP_ID_11 \nPTC_PBP_ID_12 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS Common",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

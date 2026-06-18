@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p273__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 273,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n260 \nPRE_ICL_APPLY \nLABEL: \nHow Part D Pre-ICL Cost-Sharing is applied \nDESCRIPTION: This variable indicates how the plan charges cost-sharing before reaching the Initial Coverage Limit \n(ICL). \nSHORT NAME: — \nLONG NAME: PRE_ICL_APPLY \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n1 = Medicare-Defined Part D Coinsurance Amount \n\n2 = Cost Share Tiers \n\n3 = No Cost",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

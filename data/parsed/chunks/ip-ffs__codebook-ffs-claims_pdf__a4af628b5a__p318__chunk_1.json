@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p318__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 318,
+  "text": "CP = Ordering/Referring Physician \nAP = Attending Physician \nFA = Facility \nCOMMENT: \nThe purpose of the Provider Validation Type field on the claim is to inform Common Working File \n(CWF) to perform an edit check to ensure that the provider that was submitted on the Prior \nAuthorization (PA) request is the same provider on the claim. \nThis field was new in April 2019. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

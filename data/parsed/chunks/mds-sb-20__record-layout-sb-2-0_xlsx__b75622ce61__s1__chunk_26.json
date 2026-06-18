@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_26",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "review assessment, 06 = Discharged - return not anticipated, 07 = Discharged - return anticipated, 08 = Discharged prior to completing initial assessment, 09 = Reentry, 10 = Significant correction of prior quarterly assessment\n52 AA8B AA8B_SPC_RFA 11b (AA8b) PPS Scheduled Assessments CHAR 1 Indicates which SB-MDS assessment is being completed. = Space, - = Unknown, 1 = Medicare 5 day assessment, 2 = Medicare 30 day assessment, 3 = Medicare 60 day assessment, 4 = Mediare 90 day assessment, 5 =",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-plan-election-type-beneficiary-summary__data-documentation__5f87a8e2e1__chunk_3",
+  "source_document": "data/raw/html/documentation_page/5f87a8e2e116646c5b2efabbdfcab56530e7beb6.html",
+  "page": null,
+  "text": "Name | Variable Name | \n|---|---|\n| BENE_ID | CCW Beneficiary ID | \n| REF_YEAR | Part D Plan Enrollment Year | \n| LIS_MONTHS | Part D Low Income Subsidy (LIS) Months | \n| AUTO_ASSIGNED_FLAG | Part D Plan Auto Assignment Indicator | \n| CHOOSER | Part D Plan Self Selection Indicator | \n| CRNT_PREV_YR_CHOOSER | Part D Plan Self Selection in Current or Previous Year Indicator | \n| REASSIGN_JAN | Beneficiary Newly Reassigned for January Plan |",
+  "dataset": "part-d-plan-election-type-beneficiary-summary",
+  "url": "https://resdac.org/cms-data/files/part-d-plan-election-type-beneficiary-summary/data-documentation"
+}

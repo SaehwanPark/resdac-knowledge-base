@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_463",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "urinary continence level. 0 = Always continent\n1 = Stress incontinence only \n2 = Incontinent less than daily\n3 = Incontinent daily\n4 = Always incontinent \n5 = No urine output\n9 = Not applicable\n384 H0400_BWL_CNTNC_IND H0400_BWL_CNTNC_IND H0400 Bowel Continence Code - The data in this column indicates the patient's bowel continence level. CHAR 1 The data in this column indicates the patient's bowel continence level. 0 = Always continent \n1 = Occasionally incontinent\n2 = Frequently incontinent\n3",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

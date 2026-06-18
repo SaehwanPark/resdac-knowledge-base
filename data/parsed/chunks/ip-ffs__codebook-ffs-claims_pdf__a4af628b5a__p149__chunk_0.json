@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p149__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 149,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n131 \nCLM_SRVC_CLSFCTN_TYPE_CD \nLABEL: \nClaim Service Classification Type Code \nDESCRIPTION: The type of service provided to the beneficiary. \nSHORT NAME: TYPESRVC \nLONG NAME: CLM_SRVC_CLSFCTN_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nFor facility type code 1 thru 6, and 9: \n1 = Inpatient \n2 = Inpatient or home health (covered \non Part B) \n3 = Outpatient (or HHA",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

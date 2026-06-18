@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p274__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 274,
+  "text": "charges on a non-institutional claim. \nSHORT NAME: PRPAYAMT \nLONG NAME: NCH_PRMRY_PYR_CLM_PD_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nDerivation Rules: It is calculated as the sum of the line-level primary payer amounts. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p7__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 7,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n3 \nCNCR_TYPE_ASGNED \nLABEL: \nOCM-Assigned Cancer Type \nDESCRIPTION: OCM-assigned cancer type. \nSHORT NAME: CNCR_TYPE_ASGNED \nLONG NAME: CNCR_TYPE_ASGNED \nTYPE: \nCHAR \nLENGTH: \n35 \nFILE(S): \nClinical and staging \nSOURCE: \nCMS Oncology Care Model data \nVALUES: \nAcute Leukemia \nAnal Cancer \nBladder Cancer \nBreast Cancer \nCNS Tumor \nChronic Leukemia \nEndocrine Tumor \nFemale GU",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

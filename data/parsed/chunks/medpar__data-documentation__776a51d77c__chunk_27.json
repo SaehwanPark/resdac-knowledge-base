@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_27",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Diagnosis Version Code (ICD-9 or ICD-10) | \n\n | 148 | DGNS_CD_CNT | Count of Diagnosis Codes | \n\n | 149 | DGNS_VRSN_CD | MEDPAR Diagnosis Version Code (ICD-9 or ICD-10) | \n\n | 150 | DGNS_VRSN_CD_1 | MedPAR Diagnosis Version Code 1 (ICD-9 or ICD-10) | \n\n | 151 | DGNS_VRSN_CD_2 | MedPAR Diagnosis Version Code 2 (ICD-9 or ICD-10) | \n\n | 152 | DGNS_VRSN_CD_3 | MedPAR Diagnosis Version Code 3 (ICD-9 or ICD-10) | \n\n | 153 | DGNS_VRSN_CD_4 | MedPAR Diagnosis Version Code 4 (ICD-9 or ICD-10) | \n\n | 154",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

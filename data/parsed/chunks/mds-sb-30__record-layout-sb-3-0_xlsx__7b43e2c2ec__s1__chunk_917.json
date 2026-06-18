@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_917",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "appointments,eetings, work or from getting things needed for daily living (past 12 months) -=Not assessed/no information/unable to determine\n0=Yes\n1=No\n7 = Resident declines to respond\n8 = Resident unable to respond\n^=Blank(skip pattern) effective 10/01/2025\n1037 A0810_SEX_CD A0810_SEX_CD A0810 Sex CHAR 1 This data in this column identifies the resident's sex. 1=Male\n2=Female effective 10/01/2025\n1038 X0310_CRCTN_SEX_CD X0310_CRCTN_SEX_CD X0310 Correction Sex Code CHAR 1 The data in this column",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

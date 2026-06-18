@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p247__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 247,
+  "text": "that a Part D plan sponsor has with CMS. This \nwas the Plan ID for the plan in 2007. It may or may not be the same as the Plan ID in the reference \nyear (2008). \nThis field is a key that links of Part D sponsor's contract and plan identifiers. \nSHORT NAME: — \nLONG NAME: PLAN_ID_07 \nTYPE: \nCHAR \nLENGTH: \n3 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \n3-digit numeric value \nCOMMENT: \nTo determine whether the Contract and Plan IDs in the data file for the reference year (year of the \ndata file) represent",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

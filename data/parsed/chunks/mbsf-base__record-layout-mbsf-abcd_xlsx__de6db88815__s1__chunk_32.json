@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_32",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "cost share group code - January CHAR 2\nCSTSHR02 CST_SHR_GRP_CD_02 Part D low-income cost share group code - February CHAR 2\nCSTSHR03 CST_SHR_GRP_CD_03 Part D low-income cost share group code - March CHAR 2\nCSTSHR04 CST_SHR_GRP_CD_04 Part D low-income cost share group code - April CHAR 2\nCSTSHR05 CST_SHR_GRP_CD_05 Part D low-income cost share group code - May CHAR 2\nCSTSHR06 CST_SHR_GRP_CD_06 Part D low-income cost share group code - June CHAR 2\nCSTSHR07 CST_SHR_GRP_CD_07 Part D low-income cost",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

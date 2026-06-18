@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_278",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "of activities involved in. 0 = No Change, 1 = Slight Change, 2 = Major Change, \"-\" = Unknown, -2 = Space.\n463 N5B N5B_CHG_EXTENT_ACT (N5B) Extent of Involvement CHAR 1 Activity pursuit patterns: prefers change in daily routine - extent of involvement in activities. 0 = No Change, 1 = Slight Change, 2 = Major Change, \"-\" = Unknown, -2 = Space.\n464 O1 O1_NUM_MEDS (O1) Number of Medications CHAR 2 Medications: number of medications. This field indicates the number of different medications taken by",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

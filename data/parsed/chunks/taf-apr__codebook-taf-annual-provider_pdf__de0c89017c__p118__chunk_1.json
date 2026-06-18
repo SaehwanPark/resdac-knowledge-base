@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p118__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 118,
+  "text": "NAME: PRVDR_NUM_ISSG_ENT_ID \nTYPE: \nCHAR \nLENGTH: \n18 \nFILE(S): \nAPR Identifiers \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \nAlphanumeric character string (e.g., 01, CMS, NPI, DEA, IRS), or Null/missing; type of value depends on \nthe PRVDR_NUM_SYS. \nCOMMENT: \nThe values in this field depend on the Provider Number System/Nomenclature used: \nIf PRVDR_NUM_SYS equals “1” (State-specific Medicaid Provider ID), then this value is the ANSI state \nnumeric code (e.g., 04,17,33,48). \nIf PRVDR_NUM_SYS",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

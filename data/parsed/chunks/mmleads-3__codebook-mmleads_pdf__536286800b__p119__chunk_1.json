@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p119__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 119,
+  "text": "American) \n3 = Other \n4 = Asian/Pacific Islander \n5 = Hispanic \n6 = American Indian/Alaska Native \nNull/missing = not Medicare enrolled \nCOMMENT: \nCCW obtains this directly from the MBSF RTI_RACE_CD variable. \nCCW creates this variable for the MBSF by taking the beneficiary race code that has historically been \nused by the Social Security Administration (and is in turn used in CMS’s enrollment data base) and \napplying a CMS-approved algorithm that identifies more beneficiaries as Hispanic or",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p93__chunk_0",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 93,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: MMLEADS │ August 2021 │ V 1.0 \n82 \nMDCR_FFS_MEDICAL_MOS \nLABEL: \nMedicare — Fee-for-Service Medical Coverage Months \nDESCRIPTION: This variable is the number of months during the year when the beneficiary had Medicare FFS medical \ncoverage. \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMBSF (derived) \nVALUES: \n0–12, or null/missing (if no Medicare enrollment) \nCOMMENT: \nCCW calculates this variable as the count of months where the monthly Medicare FFS Medical",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

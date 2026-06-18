@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_330",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "with equipment.\n05 = Totally unable to use the telephone.\nNA = Patient does not have a telephone. CHAR 2 x x x x\nM1900_PRIOR_ADLIADL_AMBLTN M1900 Prior Functioning ADL/IADL- Ambulation This field indicates the patient's usual ability with the everyday activity of ambulation prior to this current illness, exacerbation, or injury. 00 = Independent\n01 = Needed Some Help\n02 = Dependent CHAR 2 x x x x\nM1900_PRIOR_ADLIADL_HSEHOLD M1900 Prior Functioning ADL/IADL - Household Tasks This field indicates",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p58__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 58,
+  "text": "indicates if the beneficiary was enrolled in an employer-sponsored prescription drug plan \nthat qualified for Part D’s retiree drug subsidy (RDS) for a given month (January through December). \nSHORT NAME: \nRDSIND01 \nRDSIND02 \nRDSIND03 \nRDSIND04 \nRDSIND05 \nRDSIND06 \nRDSIND07 \nRDSIND08 \nRDSIND09 \nRDSIND10 \nRDSIND11 \nRDSIND12 \nLONG NAME: \nRDS_IND_01 \nRDS_IND_02 \nRDS_IND_03 \nRDS_IND_04 \nRDS_IND_05 \nRDS_IND_06 \nRDS_IND_07 \nRDS_IND_08 \nRDS_IND_09 \nRDS_IND_10 \nRDS_IND_11 \nRDS_IND_12 \nTYPE: \nCHAR",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

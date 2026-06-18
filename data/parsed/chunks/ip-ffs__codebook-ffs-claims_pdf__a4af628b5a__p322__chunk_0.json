@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p322__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 322,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n304 \nRC_PTNT_ADD_ON_PYMT_AMT \nLABEL: \nRevenue Center Patient/Initial Visit Add-On Payment Amount (for initial wellness visit) \nDESCRIPTION: This field is the revenue-center Patient Initial Visit Add-On Amount. This field represents a base rate \nincrease factor of 1.3516 for new patient initial preventive physical examination (IPPE) and annual \nwellness visit. \nSHORT NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

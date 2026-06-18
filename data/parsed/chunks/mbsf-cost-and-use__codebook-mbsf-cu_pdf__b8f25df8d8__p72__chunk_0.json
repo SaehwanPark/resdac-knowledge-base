@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p72__chunk_0",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 72,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF Cost and Use Segment Codebook │ March 2026 │ V 1.3 \n66 \nPTB_DRUG_EVENTS \nLABEL: \nPart B Drug Events \nDESCRIPTION: This variable is the count of events in the Part B drug setting for a given year. An event is defined as each \nline item that contains the relevant service. \nPart B drug claims are a subset of the claims in the Part B carrier and DME data files. The Part B drug \nclaim lines are identified by BETOS codes (CCW variable",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

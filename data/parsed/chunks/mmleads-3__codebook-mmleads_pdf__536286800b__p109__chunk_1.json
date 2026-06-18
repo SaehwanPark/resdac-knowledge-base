@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p109__chunk_1",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 109,
+  "text": "this variable using the MBSF monthly Medicare entitlement buy-in variable. We count \nthe months when any value indicates Part A coverage (i.e., where MDCR_ENTLMT_BUY_IND_MM in \n('1' '3' 'A' 'C'). \nWithin MMLEADS we include this monthly Medicare Entitlement/Buy-In Indicator variable as \nMDCR_BUYIN_01–12. \n^ Back to TOC ^",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

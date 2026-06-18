@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_342",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "reminders by another person at the appropriate times based on the frequency of the\ninjection.\n03 = Unable to take injectable medication unless administered by another person.\nNA = No injectable medications prescribed. CHAR 2 x x x x x x\nM2040_PRIOR_MGMT_INJCTN_MDCTN M2040 Prior Medication Management- Injectable Meds This field indicates the patient's usual ability with managing injectable medications prior to this current illness, exacerbation, or injury. 00 = Independent\n01 = Needed Some",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

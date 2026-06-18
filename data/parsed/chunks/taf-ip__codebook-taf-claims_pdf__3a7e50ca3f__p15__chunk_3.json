@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p15__chunk_3",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 15,
+  "text": "with the provider type \n013 = The date of death precedes the date of service \n014 = The date of birth follows the date of service \n015 = The authorization number is missing, invalid, or does not apply to the billed services or provider \n016 = Claim/Service lacks information or has submission/billing error(s). At least one remark code \nmust be provided (May be comprised of either the NCPDP reject reason code, or remittance \nadvice remark code that is not an ALERT.)",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

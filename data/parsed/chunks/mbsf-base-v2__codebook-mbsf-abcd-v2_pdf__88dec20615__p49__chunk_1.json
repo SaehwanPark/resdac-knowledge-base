@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p49__chunk_1",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 49,
+  "text": "DESCRIPTION: This variable is the segment number that CMS assigns to identify a geographic market segment or \nsubdivision of a Part C plan; the segment number allows users to determine the market area covered \nby the plan. The variable describes the market segment for a given month (January through \nDecember). \nLONG NAME: \nPTC_SGMT_ID_01 \nPTC_SGMT_ID_02 \nPTC_SGMT_ID_03 \nPTC_SGMT_ID_04 \nPTC_SGMT_ID_05 \nPTC_SGMT_ID_06 \nPTC_SGMT_ID_07 \nPTC_SGMT_ID_08 \nPTC_SGMT_ID_09 \nPTC_SGMT_ID_10",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

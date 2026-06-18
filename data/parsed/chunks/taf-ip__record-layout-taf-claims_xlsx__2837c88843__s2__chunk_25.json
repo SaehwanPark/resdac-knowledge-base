@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_25",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "NDC Quantity Dispensed NUM 8 27\nIMNZTN_TYPE_CD Immunization Type Code CHAR 2 28\nPRVDR_FAC_TYPE_CD Provider Facility Type Code CHAR 9 29\nSRVC_PRVDR_ID Servicing Provider Identification Number CHAR 30 30\nSRVC_PRVDR_NPI Servicing Provider NPI CHAR 10 31\nSRVC_PRVDR_TXNMY_CD Servicing Provider Taxonomy Code CHAR 12 32 Retired4\nSRVC_PRVDR_TYPE_CD Servicing Provider Type Code CHAR 2 33\nSRVC_PRVDR_SPCLTY_CD Servicing Provider Specialty Code CHAR 2 34\nREV_CNTR_CHRG_AMT Revenue Center Charge Amount NUM 8",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

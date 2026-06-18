@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p27__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 27,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n22 \nGCDF_DESC \nLABEL: \nDosage Form Code Description \nDESCRIPTION: This variable describes the dosage form of a clinical formulation, according to the First DataBank (FDB) \nreference files. The dosage form is the physical presentation of a drug, such as tablet, capsule, or \nliquid. It may also incorporate the delivery and release mechanism of the drug. \nWhen",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

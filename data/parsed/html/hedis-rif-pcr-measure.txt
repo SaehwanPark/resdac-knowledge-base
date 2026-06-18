@@ -1,0 +1,6 @@
+The HEDIS Medicare Advantage Plan All-Cause Readmissions (PCR) File (referred to as File 2 in the file name) is a patient-level file that contains all variables pertinent to the PCR measure. There is a separate record for each acute inpatient hospital discharge during the year.
+What does this file include? (variable highlights)
+- Readmission indicator
+- Chronic condition weight
+Each record represents a hospitalization for a beneficiary in the calendar year (CY). Beneficiaries with multiple hospitalizations will have multiple records in this file.
+Beneficiaries can be linked to other beneficiary data via the BENE_ID and to plan information via the HEDIS_CONTRACT_ID and HEDIS_PLAN_ID variables.

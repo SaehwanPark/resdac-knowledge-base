@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p152__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 152,
+  "text": "date) use the discharge date from the claim (variable called NCH_BENE_DSCHRG_DT; NOTE: this \nvariable is not available for home health claims). \nFor Part B non-institutional (carrier and DME) services, this variable corresponds with the latest of any \nof the line-item level dates (i.e., in the Line File, it is the last CLM_THRU_DT for any line on the claim). \nIt is almost always the same as the CLM_FROM_DT; exception is for DME claims — where some \nservices are billed in advance. In instances",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

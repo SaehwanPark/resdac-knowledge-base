@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p29__chunk_0",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 29,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Event (PDE)/Drug Characteristics Codebook │ July 2025 │ V 1.8 \n24 \nGDC_BLW_OOPT_AMT \nLABEL: \nGross Drug Cost Below Part D Out-of-Pocket Threshold (GDCB) \nDESCRIPTION: This variable is the portion of the gross drug cost for the prescription drug fill that was not covered by \nPart D’s catastrophic coverage. \nUnder Part D, a beneficiary qualifies for catastrophic coverage when his/her true out-of-pocket \n(TrOOP) costs reach",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

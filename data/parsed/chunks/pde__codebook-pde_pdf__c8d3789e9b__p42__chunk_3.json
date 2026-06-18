@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p42__chunk_3",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 42,
+  "text": "prescriber ID \nCOMMENT: \nThis variable may have ascribed a different format to the prescriber identifier than what was reported \nin the prescriber id qualifier code (variable called PRSCRBR_ID_QLFYR_CD), which is submitted on the \noriginal PDE. \nThe PDE_PRSCRBR_ID_FRMT_CD was retired after 2013 since it was designed to provide information \nregarding the type of prescriber identifier that appeared on the PDE, since the CCW was not allowed \nto release the actual prescriber identifier",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

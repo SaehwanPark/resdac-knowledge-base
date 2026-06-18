@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-mtm__codebook-ptd-mtm_pdf__731de851b0__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/731de851b0e4f3aad282ff11affe4583677d01cf.pdf",
+  "page": 31,
+  "text": "CHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS files) \nVALUES: \nY = Yes \nN = No \nCOMMENT: \nCMS created the MTM file from information submitted by Part D plan sponsors to CMS’s Health Plan \nManagement System (HPMS). \nThis field is available in the 2013–2021 data files. Starting with 2022, the \nTARG_CRITERIA_MET_REASON field contains expanded information, documenting the reason why \nbeneficiary met the targeting criteria \n^ Back to TOC ^",
+  "dataset": "part-d-mtm",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-mtm.pdf"
+}

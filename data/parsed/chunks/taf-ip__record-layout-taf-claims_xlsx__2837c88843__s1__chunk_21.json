@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_21",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "Total Medicare Coinsurance Amount NUM 8 135\nMDCR_CMBND_DDCTBL_IND Medicare Combined Deductible and Coinsurance Indicator CHAR 1 136\nMDCR_REIMBRSMT_TYPE_CD Medicare Reimbursement Type Code CHAR 2 137\nCOINSRNC_AMT Beneficiary Coinsurance Amount NUM 8 138\nTOT_BENE_COINSRNC_LBLTY_AMT Total Beneficiary Coinsurance Liability Amount NUM 8 159 New3\nCOPAY_AMT Beneficiary Copayment Amount NUM 8 139\nTOT_BENE_COPAY_LBLTY_AMT Total Beneficiary Copayment Liability Amount NUM 8 160 New3\nDDCTBL_AMT Beneficiary",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

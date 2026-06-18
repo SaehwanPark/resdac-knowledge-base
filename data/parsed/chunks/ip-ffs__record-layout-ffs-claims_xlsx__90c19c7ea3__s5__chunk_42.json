@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_42",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Revenue Center Therapy Reduction Amount NUM 12 54 New5\nTRNSTNL_DRUG_ADD_ON_PYMT_AMT TRNSTNL_DRUG_ADD_ON_PYMT_AMT Transitional Drug Add-On Payment Amount NUM 12 48\nREV_CNTR_RP_IND_CD REV_CNTR_RP_IND_CD Revenue Center Representative Payee (RP) Indicator Code CHAR 1 49\nRC_MODEL_REIMBRSMT_AMT RC_MODEL_REIMBRSMT_AMT Revenue Center Model Reimbursement Amount NUM 12 50 New3\nRC_VLNTRY_SRVC_IND_CD RC_VLNTRY_SRVC_IND_CD Revenue Center Voluntary Service Indicator Code CHAR 1 51 New4\nORDRNG_PHYSN_NPI",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

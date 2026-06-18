@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p96__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 96,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n80 \nDRG_OUTLIER_STAY_CD \nLABEL: \nDRG Cost or Day Outlier code \nDESCRIPTION: The code identifying if the stay has an unusually long length (day outlier) or high cost (cost outlier). \nSHORT NAME: OUTLR_CD \nLONG NAME: DRG_OUTLIER_STAY_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nFor PPS providers: \n0 = No Outlier \n1 = Day Outlier \n2 = Cost Outlier \nFor Non-PPS Providers: \n6 = Valid DRG Received",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

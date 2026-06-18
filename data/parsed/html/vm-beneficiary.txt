@@ -1,0 +1,10 @@
+The Value Modifier (VM) Beneficiary-Level Research Identifiable File (RIF) includes one record for each beneficiary who was attributed to a practice subject to the VM based on the given performance year. Using the RIF data, researchers can examine differences in beneficiary characteristics, costs across practices, and the stability of beneficiaries attributed to a specific practice across time. Program and participation information can be found on the CMS website.
+What does this file include? (variable highlights)
+- Beneficiary identifiers
+- Practice identifier for the practice to which the beneficiary was attributed
+- Number and percent of primary care services provided to the beneficiary that were billed by the practice
+- HCC percentile risk score
+Special considerations
+- Data documentation is specific to each performance year.
+- This RIF can be linked to any other CMS file that includes the Bene ID.
+- Two additional VM program RIFs are available:

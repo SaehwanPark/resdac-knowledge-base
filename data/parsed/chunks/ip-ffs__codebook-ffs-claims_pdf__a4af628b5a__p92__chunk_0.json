@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p92__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 92,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n74 \nCLM_HHA_TOT_VISIT_CNT \nLABEL: \nClaim HHA Total Visit Count \nDESCRIPTION: The count of the number of HHA visits as derived by CMS. \nSHORT NAME: VISITCNT \nLONG NAME: CLM_HHA_TOT_VISIT_CNT \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nDerivation rule (units associated with revenue center codes 042X, 043X, 044X, 055X, 056X, 057X, 058X, \nand 059X). Value 999",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

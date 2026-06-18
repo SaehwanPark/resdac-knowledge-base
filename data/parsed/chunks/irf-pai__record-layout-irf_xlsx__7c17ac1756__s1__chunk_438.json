@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_438",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "assistance\n06 = Independent\n07 = Patient refused\n09 = Not applicable\n10 = Not attempted due to environmental limitations\n88 = Not attempted due to medical condition or safety concerns\n368 GG0170P1_PCKNG_UP_OBJ_STRT_CD GG0170P1_PCKNG_UP_OBJ_STRT_CD GG0170P1 Admission Performance Pick up Object Code - The data in this column indicates the patient's ability to bend/stoop from a standing position to pick up a small object, such as a spoon, from the floor, at the time of admission. CHAR 2 The data",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

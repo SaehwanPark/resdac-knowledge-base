@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p272__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 272,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n254 \nNCH_IP_TOT_DDCTN_AMT \nLABEL: \nNCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount \nDESCRIPTION: The total of all Part A and blood deductibles and coinsurance amounts on the claim. \nSHORT NAME: TDEDAMT \nLONG NAME: NCH_IP_TOT_DDCTN_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nDerivation Rules: Accumulate the value",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

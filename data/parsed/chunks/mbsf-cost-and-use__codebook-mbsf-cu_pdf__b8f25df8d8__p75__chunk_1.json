@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p75__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 75,
+  "text": "or other \npatient payment amounts, and comes directly from the source Prescription Drug Events (PDEs). \nThe total beneficiary payments are calculated as the sum of three CCW variables: patient pay amount \n(PTNT_PAY_AMT), other troop amount (OTHER_TROOP_AMT), and patient liability reduction due to \nother payer amount (PLRO_AMT) for Part D drugs for the relevant PDEs. \nSHORT NAME: — \nLONG NAME: PTD_BENE_PMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nCCW (derived) \nVALUES: \n— \nCOMMENT: \nThis amount",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

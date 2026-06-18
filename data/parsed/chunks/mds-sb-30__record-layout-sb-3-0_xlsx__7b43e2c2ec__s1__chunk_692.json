@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_692",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "GG0170P1_PCKNG_UP_OBJ_STRT_CD GG0170P1 Picking Up Object Start Indicator CHAR 2 Indicates the resident's ability to bend/stoop from a standing position to pick up a small object, such as a spoon, from the floor at the start of the SNF PPS Part A stay. -=Not assessed/no information\n 01=Dependent\n 02=Substantial/maximal assistance\n 03=Partial/moderate assistance\n 04=Supervision or touching assistance\n 05=Setup or clean-up assistance\n 06=Independent\n 07=Resident refused\n 09=Not applicable\n 88=Not",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

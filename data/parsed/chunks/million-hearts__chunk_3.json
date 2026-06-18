@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__chunk_3",
+  "source_document": "data/raw/html/dataset_page/86c5a3c7da1125d7c7b11d8b5388deaee3563996.html",
+  "page": null,
+  "text": "in the model:\n- Raw Clinical File - all visit and clinical data for beneficiaries as it was uploaded to the data collection registry by the provider\n- Final Clinical File - a model-curated version of the raw clinical data\n- Beneficiary Demographic File - demographic data submitted by the practice\n- Visit File – All data extracted to create a beneficiary visit, and includes the generated risk scores and baseline groups for each participating beneficiary\n- Practice List File - information about",
+  "dataset": "million-hearts",
+  "url": "https://resdac.org/cms-data/files/million-hearts?page=1"
+}

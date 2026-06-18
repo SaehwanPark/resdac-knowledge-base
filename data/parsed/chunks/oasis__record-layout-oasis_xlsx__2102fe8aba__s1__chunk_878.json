@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_878",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "BIMS Summary Score Indicates the patient's BIMS summary score. 0-15 - BIMS score\n99 - Unable to complete the interview CHAR 2 x\nC1310A_MENTL_STUS_CHG_CD Delirium: Acute Onset Mental Status Change After completing the patient's BIMs interview, there is evidence of an acute change in mental status from the patient's baseline. 0. No\n1. Yes CHAR 1 x\nC1310B_DFCLTY_ATTNTN_CD Delirium: Inattention After completing the patient's BIMs interview, there is evidence that the patient has difficulty focusing",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

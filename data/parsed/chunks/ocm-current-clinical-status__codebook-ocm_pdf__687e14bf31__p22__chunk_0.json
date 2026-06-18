@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p22__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 22,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n18 \nNODAL_DISEASE \nLABEL: \nNodal Disease Staging \nDESCRIPTION: Nodal disease staging. \nSHORT NAME: NODAL_DISEASE \nLONG NAME: NODAL_DISEASE \nTYPE: \nCHAR \nLENGTH: \n30 \nFILE(S): \nClinical and staging \nSOURCE: \nOncology Care Model Data Registry \nVALUES: \nNone Selected, \nN0, \nN0(i+), \nN0a, \nN0b, \nN1, \nN1a, \nN1b, \nN1c, \nN1mi, \nN2, \nN2a, \nN2b, \nN2c, \nN2mi, \nN3, \nN3a, \nN3b, \nN3c,",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

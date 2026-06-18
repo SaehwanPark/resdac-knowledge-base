@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p231__chunk_1",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 231,
+  "text": "Program. \nSHORT NAME: — \nLONG NAME: OTC_UM_PROGRAM \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS (HPMS Files) \nVALUES: \nY = Yes \n\nN = No \n\n9 = Not Applicable \n\nX = Unknown \nCOMMENT: \nThis variable was new in 2008. \nPlans that elect to cover OTC drugs as part of general drug utilization management or part of a step \ntherapy protocol have identified the applicable drugs and they appear in the OTC Drug file (which is \ndelivered as part of the Formulary File, starting in 2010). \nWhen OTC_UM_PROGRAM=”Y”",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

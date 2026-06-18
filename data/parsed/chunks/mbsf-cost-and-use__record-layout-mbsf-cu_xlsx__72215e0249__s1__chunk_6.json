@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__record-layout-mbsf-cu_xlsx__72215e0249__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/72215e024991fc135c2c270dd5ad3ef3083d8561.xlsx",
+  "page": 1,
+  "text": "Beneficiary Payments NUM 12\nANES_MDCR_PMT Anesthesia Medicare Payments NUM 12\nANES_PRMRY_PMT Anesthesia Primary Payer Amount NUM 12\nANES_EVENTS Anesthesia Events NUM 6\nPTB_DRUG_BENE_PMT Part B Drug Beneficiary Payments NUM 12\nPTB_DRUG_MDCR_PMT Part B Drug Medicare Payments NUM 12\nPTB_DRUG_PRMRY_PMT Part B Drug Primary Payer Amount NUM 12\nPTB_DRUG_EVENTS Part B Drug Events NUM 6\nEM_BENE_PMT Evaluation and Management Beneficiary Payments NUM 12\nEM_MDCR_PMT Evaluation and Management Medicare",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cu.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p65__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 65,
+  "text": "Claims for other \ncarrier/DME claim lines are a subset of the claims in the Part B carrier and DME data files. Types of \nservices which may have been summarized in this other carrier category (OTHC) include ambulance, \nchiropractor, chemotherapy, vision, hearing, and speech services, etc. \nThe total Medicare payments are calculated as the sum of LINE_NCH_PMT_AMT where the \nLINE_PRCSG_IND_CD was “A,” “R,” or “S” — for all relevant lines. \nSHORT NAME: — \nLONG NAME: OTHC_MDCR_PMT \nTYPE: \nNUM",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

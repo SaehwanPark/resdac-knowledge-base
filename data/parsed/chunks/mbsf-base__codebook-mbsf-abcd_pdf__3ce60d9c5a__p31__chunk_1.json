@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p31__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 31,
+  "text": "DUAL_ELGBL_MONS \nTYPE: \nNUM \nLENGTH: \n3 \nSOURCE: \nCMS Common Medicare Environment (CME) (derived) \nVALUES: \n0–12 \nCOMMENT: \nCCW derived this variable by counting the number of months where the beneficiary had dual eligibility \n(i.e., months where DUAL_STUS_CD_XX equal to '01', '02', '03', '04', '05', '06', '08', '09', or '99'). \nThere are different ways to classify dually eligible beneficiaries — in terms of whether he/she is \nenrolled in full or partial benefits. Additional information",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

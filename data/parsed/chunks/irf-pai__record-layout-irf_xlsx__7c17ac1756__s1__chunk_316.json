@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_316",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "or injury. CHAR 1 The data in this column identifies the patient's use of a Mechanical lift prior to the current illness, exacerbation or injury. 0 = No\n1 = Yes\n300 GG0110D_PRIOR_WLKR_IND GG0110D_PRIOR_WLKR_IND GG0110D Prior Device Use - Walker Code - The data in this column identifies the patient's use of a Walker prior to the current illness, exacerbation or injury. CHAR 1 The data in this column identifies the patient's use of a Walker prior to the current illness, exacerbation or injury. 0",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

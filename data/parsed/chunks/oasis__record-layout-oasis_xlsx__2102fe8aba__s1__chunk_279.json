@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_279",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "stasis wounds. 01 = One\n02 = Two\n03 = Three\n04 = Four or more CHAR 2 x x x x x x\nM1334_STUS_PRBLM_STAS_ULCR M1334 Status of Most Problematic Stasis Ulcer This field indicates the status of the most problematic (observable) stasis ulcer. 01 = Fully granulating\n02 = Early/partial granulation\n03 = Not healing CHAR 2 x x x x x x\nM1340_SRGCL_WND_PRSNT M1340 Does This Patient Have A Surgical Wound This field indicates whether the patient has a surgical wound. 00 = No\n01 = Yes, patient has at least",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

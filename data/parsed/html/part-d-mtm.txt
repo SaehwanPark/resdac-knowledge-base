@@ -1,0 +1,12 @@
+This file includes beneficiary-level information for participants in the Part D Medication Therapy Management (MTM) program, required of CMS Part D plans. Eligible beneficiaries include those enrolled in Part D plans with multiple chronic disease, those taking multiple Part D drugs and those likely to have expenditures exceeding a specified level as described by federal regulations.
+What does this file include? (variable highlights)
+- Whether beneficiary met target criteria
+- Long term care residence
+- Number of drug-therapy recommendations made
+- Number of drug-therapy problems resolved
+- Linking variable
+Why do researchers request this file?
+- Assess the effect of medication management on prescribing patterns and clinical outcome
+- Identify cost of illness impact of the Part D MTM program
+Special considerations
+- All beneficiaries in the file were enrolled in MTM at some point during the year. Not everyone in file received MTM services.

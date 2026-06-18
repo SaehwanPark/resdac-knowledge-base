@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p42__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 42,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n41 \nNN_CORE_FOOD_CNTCT_FAIL_SW \nLABEL: \nNavigated Core HRSN Food Attempts to Reach Failed \nDESCRIPTION: Navigation needs (NN): navigated core health related social need (HRSN) food attempts to reach \nfailed. \nLONG NAME: NN_CORE_FOOD_CNTCT_FAIL_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system (derived) \nVALUES: \n0 = No \n1 = Yes \nMissing \nCOMMENT: \nVariables that start with “NN”",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

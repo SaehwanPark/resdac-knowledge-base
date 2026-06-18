@@ -1,0 +1,8 @@
+{
+  "chunk_id": "op-ffs__data-documentation__98b7c41c59__chunk_20",
+  "source_document": "data/raw/html/documentation_page/98b7c41c59324a19534b3a875a60fe0f7a82596e.html",
+  "page": null,
+  "text": "XXIII | \n\n | 128 | PRCDR_DT23 | Claim Procedure Code XXIII Date | \n\n | 129 | ICD_PRCDR_CD24 | Claim Procedure Code XXIV | \n\n | 130 | PRCDR_DT24 | Claim Procedure Code XXIV Date | \n\n | 131 | ICD_PRCDR_CD25 | Claim Procedure Code XXV | \n\n | 132 | PRCDR_DT25 | Claim Procedure Code XXV Date | \n\n | 133 | RSN_VISIT_CD1 | Reason for Visit Diagnosis Code I (FFS) | \n\n | 134 | RSN_VISIT_CD2 | Reason for Visit Diagnosis Code II (FFS) | \n\n | 135 | RSN_VISIT_CD3 | Reason for Visit Diagnosis Code III (FFS) |",
+  "dataset": "op-ffs",
+  "url": "https://resdac.org/cms-data/files/op-ffs/data-documentation"
+}

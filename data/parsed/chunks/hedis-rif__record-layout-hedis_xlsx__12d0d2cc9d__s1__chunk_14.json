@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_14",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Denominator 2: HbA1c Poor Control >9% NUM 3 28 28 52 50 50\nCDC_NMRTR_2_HBA1C_GT9_IND Comprehensive Diabetes Care (CDC) Numerator 2: HbA1c Poor Control >9% NUM 3 29 29 53 51 51\nCDC_DNMTR_3_HBA1C_LT8_IND Comprehensive Diabetes Care (CDC) Denominator 3: HbA1c Control <8% NUM 3 30 30 54 52 52\nCDC_NMRTR_3_HBA1C_LT8_IND Comprehensive Diabetes Care (CDC) Numerator 3: HbA1c Poor Control <8% NUM 3 31 31 55 53 53\nCDC_DNMTR_4_EYE_EXMNTN_IND Comprehensive Diabetes Care (CDC) Denominator 4: Eye exam",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

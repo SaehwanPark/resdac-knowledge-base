@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p154__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 154,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n136 \nCLM_TOT_PPS_CPTL_AMT \nLABEL: \nClaim Total PPS Capital Amount \nDESCRIPTION: The total amount that is payable for capital for the prospective payment system (PPS) claim. \nThis is the sum of the capital hospital specific portion, federal specific portion, outlier portion, \ndisproportionate share portion, indirect medical education portion, exception payments, and hold",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

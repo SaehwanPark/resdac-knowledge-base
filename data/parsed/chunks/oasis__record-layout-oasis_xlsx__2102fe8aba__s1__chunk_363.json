@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_363",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "malnutrition. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2310_ECR_DVT_PULMNRY M2310 Emergent Care Reason- DVT, Pulmonary Embolus This field indicates that the reason the patient received emergent care was due to deep vein thrombosis, pulmonary embolus. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x\nM2310_ECR_GI_PRBLM M2310 Emergent Care Reason- GI Issues This field indicates that the reason the patient received emergent care was due to GI bleeding, obstruction,",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__record-layout-taf-annual-plan_xlsx__63d062c549__s5__chunk_4",
+  "source_document": "data/raw/assets/xlsx/63d062c54940f1dd5350875fe865ceacdc732ab8.xlsx",
+  "page": 5,
+  "text": "Care Plan Operating Authority and/or Waiver ID Active Ind - October CHAR 1 15\nMC_PLAN_OPRTG_AUTH_ACTV_IND_11 Managed Care Plan Operating Authority and/or Waiver ID Active Ind - November CHAR 1 16\nMC_PLAN_OPRTG_AUTH_ACTV_IND_12 Managed Care Plan Operating Authority and/or Waiver ID Active Ind - December CHAR 1 17\nRFRNC_YR Reference Yr CHAR 4 18\nCCW_APL_LINK_KEY CCW Key to Link APL Base Record to Related Supplement Records NUM 15 19",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-annual-plan.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_282",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "(home); \n51 -Hospice (institutional facility); \n61 -Swing bed; \n62 -Another Inpatient Rehabilitation Facility; \n63 -Long-Term Care Hospital (LTCH); \n64 -Medicaid Nursing Facility; \n65 -Inpatient Psychiatric Facility; \n66 -Critical Access Hospital; \n99 -Not Listed\n273 STG_4_ULCR_DSCHRG_UNSTGBL_NUM STG_4_ULCR_DSCHRG_UNSTGBL_NUM M0300D3 Stage 4 Pressure Ulcers Discharge Unstageable on Admission Number CHAR 1 The number of stage 4 pressure ulcers at discharge that were unstageable at admission.\n274",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

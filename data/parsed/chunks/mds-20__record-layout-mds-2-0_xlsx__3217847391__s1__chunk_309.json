@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_309",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "and skill practice -other. 0 = No, 1 = Yes, \"-\" = Unknown.\n518 P4A P4A_BED_RAILS (P4A) Full Bed Rails CHAR 1 Special treatments and procedures: devices and restraints - full bed rails on all sides of bed. 0 = Not Used, 1 = Used less than daily, 2 = Used daily, \"-\" = Unknown.\n519 P4B P4B_OTH_RAILS (P4B) Other Side Rails CHAR 1 Special treatments and procedures: devices and restraints - other types of side rails used. 0 = Not Used, 1 = Used less than daily, 2 = Used daily, \"-\" = Unknown.\n520 P4C",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

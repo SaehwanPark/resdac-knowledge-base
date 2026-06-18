@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p38__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 38,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n20 \nBLG_PRVDR_SPCLTY_CD1 \nBLG_PRVDR_SPCLTY_CD2 \nBLG_PRVDR_SPCLTY_CD3 \nLABEL: \nClaim Billing Provider Secondary Specialty Code (1–3) \nDESCRIPTION: The CMS secondary specialty code(s) assigned to the billing provider’s National Provider Identifier \n(NPI). These specialty codes apply to the carrier claim billing NPI number (CARR_CLM_BLG_NPI_NUM). \nSHORT NAME:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

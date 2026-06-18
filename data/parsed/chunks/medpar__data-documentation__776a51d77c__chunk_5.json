@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_5",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "Claim Accretion Date | \n\n | 29 | BENE_MDCR_BNFT_EXHST_DT | Beneficiary Medicare Benefit Exhausted Date | \n\n | 30 | SNF_QUALN_FROM_DT | Beginning date of beneficiary's qualifying SNF stay | \n\n | 31 | SNF_QUALN_THRU_DT | Ending date of beneficiary's qualifying SNF stay | \n\n | 32 | SRC_IP_ADMSN_CD | Source of admission to an Inpatient facility — for newborn admit is type of delivery code | \n\n | 33 | IP_ADMSN_TYPE_CD | Inpatient admission type code | \n\n | 34 | ADMSN_DAY_CD | Code indicating day of",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

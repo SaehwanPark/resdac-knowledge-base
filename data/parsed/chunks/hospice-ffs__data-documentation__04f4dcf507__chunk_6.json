@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hospice-ffs__data-documentation__04f4dcf507__chunk_6",
+  "source_document": "data/raw/html/documentation_page/04f4dcf5076501e9f5760cd735190c8954eeabeb.html",
+  "page": null,
+  "text": "Code | \n\n | 38 | CLM_UTLZTN_DAY_CNT | Claim Medicare Utilization Day Count | \n\n | 39 | NCH_BENE_DSCHRG_DT | NCH Beneficiary Discharge Date | \n\n | 40 | PRNCPAL_DGNS_CD | Claim Principal Diagnosis Code (FFS) | \n\n | 41 | ICD_DGNS_CD1 | Claim Diagnosis Code I (FFS) | \n\n | 42 | ICD_DGNS_CD2 | Claim Diagnosis Code II (FFS) | \n\n | 43 | ICD_DGNS_CD3 | Claim Diagnosis Code III (FFS) | \n\n | 44 | ICD_DGNS_CD4 | Claim Diagnosis Code IV (FFS) | \n\n | 45 | ICD_DGNS_CD5 | Claim Diagnosis Code V (FFS) | \n\n | 46",
+  "dataset": "hospice-ffs",
+  "url": "https://resdac.org/cms-data/files/hospice-ffs/data-documentation"
+}

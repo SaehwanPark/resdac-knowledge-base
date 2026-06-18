@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_93",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "— 184 — — —\nAHU_SRGRY_DSCHRG_CNT Acute Hospital Utilization (IHU): Observed Discharges, Surgery NUM 3 — — 223 212 210\nAHU_MDCL_DSCHRG_CNT Acute Hospital Utilization (IHU): Observed Discharges, Medical NUM 3 — — 224 213 211\nAHU_TOT_DSCHRG_CNT Acute Hospital Utilization (IHU): Observed Discharges, Total NUM 3 — — 225 214 212\nAHU_PPD_SRGRY_CMRBDTY_WT Acute Hospital Utilization (AHU): PPD Comorbidity Weight, Surgery NUM 8 — 185 226 215 213\nAHU_PPD_MDCL_CMRBDTY_WT Acute Hospital Utilization (AHU):",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

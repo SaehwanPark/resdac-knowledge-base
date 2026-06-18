@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahcah-patient__codebook-ahcah_pdf__27ccfc2740__p6__chunk_1",
+  "source_document": "data/raw/assets/pdf/27ccfc27407a53098d675d692da68eaa1b233dfc.pdf",
+  "page": 6,
+  "text": "ADMSN_DT \nLABEL: \nFacility Admission Date \nDESCRIPTION: Date of the patient’s admission to the facility. \nSHORT NAME: ADMSN_DT \nLONG NAME: ADMSN_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nPatient \nSOURCE: \nAHCAH facility-submitted data \nVALUES: \n25NOV2020 forward \nCOMMENT: \nFormatted as MMDDYY10. in SAS. The earliest date a patient could be admitted to a facility under the \nAHCAH waiver is November 25, 2020. \n^ Back to TOC ^",
+  "dataset": "ahcah-patient",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahcah.pdf"
+}

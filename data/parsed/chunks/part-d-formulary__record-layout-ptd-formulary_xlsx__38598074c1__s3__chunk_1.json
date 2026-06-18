@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__record-layout-ptd-formulary_xlsx__38598074c1__s3__chunk_1",
+  "source_document": "data/raw/assets/xlsx/38598074c1dd858c02b65f05a48cc7e746745ec7.xlsx",
+  "page": 3,
+  "text": "Dosage Form Code Description CHAR 40\n1 This file was first available starting with the 2011 data release.\n2 Prior to the 2013 data release, CCW was required to encrypt this sensitive data field. This sensitive field was one\nwhich could be used to identify the plan’s formulary (FORMULARY_ID). We are no longer required to encrypt this variable.",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-formulary.xlsx"
+}

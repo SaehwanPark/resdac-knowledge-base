@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p261__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 261,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n245 \nVBP_ADJSTMT_AMT \nLABEL: \nHospital Value Based Purchasing (VBP) Amount \nDESCRIPTION: This field represents the amount (rounded to whole dollars) of the Hospital Value Based Purchasing \n(VBP) Amount. This could be an additional payment on the claim or a reduction, depending on the \nhospital's score. \nSHORT NAME: VBP_ADJSTMT_AMT \nLONG NAME: VBP_ADJSTMT_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

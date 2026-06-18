@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-ndi__codebook-mbsf-ndi_pdf__ce6bdf20b0__p43__chunk_0",
+  "source_document": "data/raw/assets/pdf/ce6bdf20b0b93d7392f33d70b2137cdee1ec7e21.pdf",
+  "page": 43,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMBSF National Death Index Segment Codebook │ May 2026 │ V 2.6 \n38 \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCenters for Disease Control and Prevention (CDC) National Death Index (NDI) \nVALUES: \nEach condition takes five positions in the record. \nPositions 1–4: Condition Code (Reference ICD-10 codes) \nNOTE: Whenever there is a 4-position code, there is always an implied decimal after the third position. \nPosition 5: Nature of Injury Flag \n0 =",
+  "dataset": "mbsf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-ndi.pdf"
+}

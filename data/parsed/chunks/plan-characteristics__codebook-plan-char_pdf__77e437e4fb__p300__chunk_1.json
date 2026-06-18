@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p300__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 300,
+  "text": "CHAR \nLENGTH: \n6 (starting in 2018, length is 2) \nSOURCE: \nCMS (HPMS files) \nVALUES: \nFor 2007–2017 data — this is a binary character string where each digit is a 1 or 0 to accommodate a \nvariety of types of drugs. For example, if the value = 110000 (1s in the 1st and 2nd digits), then generic \nand non-preferred brand drugs are covered on this tier during the pre-ICL phase. \n1 in 1st digit = Non-Preferred Brand \n1 in 2nd digit = Generic \n1 in 3rd digit = Preferred Generic \n1 in 4th digit =",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

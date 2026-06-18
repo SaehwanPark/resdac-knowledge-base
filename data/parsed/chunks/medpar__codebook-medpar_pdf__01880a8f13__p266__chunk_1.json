@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p266__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 266,
+  "text": "information for the \nMEDPAR user, i.e., let the user know whether the stay included adjustments, a single claim or multiple \nclaims, any error conditions, etc. \nSHORT NAME: WRNGCD \nLONG NAME: WRNG_IND_CD \nTYPE: \nCHAR \nLENGTH: \n18 \nSOURCE: \nNCH \nVALUES: \nThis is an 18-digit character string, where each digit of the warning indicator has a specific meaning. \nFor example, if the value=00010002000000000 (1 in the 4th digit and 2 in the 8th digit), then the \nbeneficiary had a greater number of",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

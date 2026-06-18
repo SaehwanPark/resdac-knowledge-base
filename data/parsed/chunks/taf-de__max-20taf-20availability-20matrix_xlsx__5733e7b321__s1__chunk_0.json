@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__max-20taf-20availability-20matrix_xlsx__5733e7b321__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/5733e7b321caf5443c6882f53a8ed2ecd7b102fa.xlsx",
+  "page": 1,
+  "text": "State Name State Code FIPS_ALPHA FIPS_NUM First T-MSIS Submission Date Medicaid Data Source for 2010 Medicaid Data Source for 2011 Medicaid Data Source for 2012 Medicaid Data Source for 2013 Medicaid Data Source for 2014 Medicaid Data Source for 2015\nAlaska AK AK 02 41548 MAX MAX MAX MAX-T TAF TAF\nAlabama AL AL 01 41640 MAX MAX MAX MAX-T TAF TAF\nArkansas AR AR 05 42095 MAX MAX MAX MAX MAX-T MAX-T\nArizona AZ AZ 04 41913 MAX MAX MAX MAX MAX-T TAF\nCalifornia CA CA 06 42278 MAX MAX MAX MAX MAX",
+  "dataset": "taf-de",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2022-10/MAX%20TAF%20Availability%20Matrix.xlsx"
+}

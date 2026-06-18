@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-pharmacy-characteristics__codebook-ptd-pharm-char_pdf__58526b7375__p22__chunk_1",
+  "source_document": "data/raw/assets/pdf/58526b73752036ae7547b8f5fa7fc8287000d944.pdf",
+  "page": 22,
+  "text": "relationship IDs (variable called RELATIONSHIP_ID) that link to a common parent organization. \nSHORT NAME: — \nLONG NAME: PRNT_ORG_ID \nTYPE: \nCHAR \nLENGTH: \n6 \nSOURCE: \nNCDPD DataQ™ \nVALUES: \n6-digit alpha numeric or null/missing (parent organization n/a) \nCOMMENT: \nThis variable was new in 2012. \nA single parent organization ID will generally relate to multiple CCW_PHARM_IDs (i.e., multiple \npharmacies can have the same parent company). \nAdditional details regarding the National Council for",
+  "dataset": "part-d-pharmacy-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-pharm-char.pdf"
+}

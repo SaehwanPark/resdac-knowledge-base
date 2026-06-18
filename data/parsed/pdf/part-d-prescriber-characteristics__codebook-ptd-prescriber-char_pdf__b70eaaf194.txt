@@ -1,0 +1,1002 @@
+Chronic Condition Warehouse  
+Your source for national CMS Medicare and Medicaid research data 
+Chronic Condition Warehouse 
+CODEBOOK: 
+Medicare Part D Prescriber Characteristics 
+APRIL 2021 │ VERSION 1.1 
+
+
+  
+This page intentionally left blank. 
+
+
+  
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Prescriber Characteristics │ April 2021 │ V 1.1 
+i 
+Revision Log 
+Date 
+Changed by 
+Revisions 
+Version 
+April 2021 
+K. Schneider 
+D. Happe 
+Migrated codebook to the 2020 document template 
+1.1 
+May 2017 
+K. Schneider 
+C. Alleman 
+Initial release of codebook for PTD Prescriber Characteristics file 
+1.0 
+
+
+  
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Prescriber Characteristics │ April 2021 │ V 1.1 
+ii 
+Tips on Navigating the Codebook 
+This document is a detailed codebook that describes each variable in the Medicare Part D Prescriber Characteristics research 
+files. Because the files have many variables, we have included several ways for users to quickly find the information they 
+need: 
+• 
+A complete listing of all variables in the files, in alphabetical order based on their SAS variable names. 
+• 
+Individual entries for each variable that contain a short description of the variable, the possible values for the 
+variable, and, in many cases, notes that discuss how the variable was constructed and should be used. 
+We have included hyperlinks throughout the codebook to make it easier for analysts to navigate between the table of 
+contents and the detailed entries for the individual variables: 
+• 
+Clicking on any variable name in the Table of Contents will take you to the detailed description for that variable. 
+• 
+From the detailed description for any individual variable, clicking on the ^Back to TOC^ link after each variable 
+description will take you back to the Table of Contents. 
+
+
+  
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Prescriber Characteristics │ April 2021 │ V 1.1 
+iii 
+Table of Contents  
+This section of the codebook contains a list of all variables in alphabetical order based on the SAS variable name. 
+Quick links:  
+ 
+ 
+Variable Details............................................................................................................................................................. 1 
+CCW_PRESCRIBER_ID ............................................................................................................................................... 1 
+CREDENTIAL01 .......................................................................................................................................................... 2 
+CREDENTIAL02 .......................................................................................................................................................... 3 
+CREDENTIAL03 .......................................................................................................................................................... 4 
+CREDENTIAL04 .......................................................................................................................................................... 5 
+CREDENTIAL05 .......................................................................................................................................................... 6 
+HCID 
+ .................................................................................................................................................................... 7 
+NPI 
+ .................................................................................................................................................................... 8 
+OTHER_TAXONOMY_CLASS01 .................................................................................................................................. 9 
+OTHER_TAXONOMY_CLASS02 ................................................................................................................................ 10 
+OTHER_TAXONOMY_CLASS03 ................................................................................................................................ 11 
+OTHER_TAXONOMY_CLASS04 ................................................................................................................................ 12 
+PRACTICE_LOC_STATE01 ........................................................................................................................................ 13 
+PRACTICE_LOC_STATE02 ........................................................................................................................................ 15 
+PRACTICE_LOC_STATE03 ........................................................................................................................................ 17 
+PRACTICE_LOC_STATE04 ........................................................................................................................................ 19 
+PRIMARY_TAXONOMY_CD...................................................................................................................................... 21 
+PRIMARY_TAXONOMY_DESC .................................................................................................................................. 22 
+ 
+ 
+ 
+ 
+ 
+A B C D E 
+F 
+G H 
+I 
+J 
+K 
+L 
+M N O P Q R S 
+T U V W X 
+Y 
+Z 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+1 
+Variable Details 
+This section of the codebook contains one entry for each variable in the Medicare Part D Prescriber Characteristics file. 
+Each entry contains variable details to facilitate understanding and use of the variables. 
+CCW_PRESCRIBER_ID 
+LABEL: 
+CCW-assigned Prescriber Identifier 
+DESCRIPTION: This variable is the CCW-assigned number that is used to uniquely identify prescribers found in the 
+Part D Event file. The ID is specific to the CCW and not applicable to any other identification system or 
+data source.  
+This field also enables linkage between the Part D Event file and the CCW Prescriber Characteristics 
+file. 
+SHORT NAME:  — 
+LONG NAME:  CCW_PRSCRBR_ID 
+TYPE: 
+NUM 
+LENGTH:  
+12 
+SOURCE: 
+PDE and HCIdea™ Prescriber Database (derived) 
+VALUES: 
+Null, or any positive or negative number 
+COMMENT: 
+This variable is only available 2006–2013. Beginning with 2014 data, the National Provider Identifier 
+(NPI; which appears in the PDE variable called PRSCRBR_ID) is used in place of the CCW_PRSCRBR_ID 
+within the Prescriber Characteristics file. 
+Researchers who received CCW data from 2006–2013 and wish to identify the HCIdea-assigned 
+provider ID (HCID) and/or NPI associated with the CCW_PRSCRBR_ID may request the “Prescriber 
+Bridge file,” which is designed for this purpose. 
+This variable is the CCW-assigned prescriber identifier that is populated by linking the PRSCRBR_ID 
+from the PDE to the proprietary HCIdea Prescriber Database.  
+HCIdea has prescriber information from a variety of data sources, including the NPPES directory (the 
+National Plan and Provider Enumeration System, which assigns a unique NPI to each provider), the 
+Drug Enforcement Administration (through data files known as the Controlled Substances Act 
+Registrants), and SureScripts (a nationwide e-prescribing network). Using these input files, it was 
+generally possible for CCW to identify a unique provider using an NPI, DEA number, and/or UPIN 
+number. 
+This variable is populated for every PDE that could be linked to a provider in the HCIdea database for 
+that year. CCW_PRSCRBR_ID has a negative value when a conclusive link could not be found between 
+the prescriber identification number in the source PDE data and the HCIdea database. 
+^ Back to TOC ^ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+2 
+CREDENTIAL01 
+LABEL: 
+Academic or Professional Credential 1 — for Part D Prescribers 
+DESCRIPTION: The degree or academic credential for the prescriber. This variable is one of five possible credentials or 
+academic degrees in the source data. 
+SHORT NAME:  — 
+LONG NAME:  CREDENTIAL01 
+TYPE: 
+CHAR 
+LENGTH:  
+8  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., MD, DO, RN, DPM) 
+COMMENT: 
+This variable is populated by linking to the proprietary HCIdea™ Prescriber Database. HCIdea obtains 
+prescriber information from a variety of data sources, including the NPPES directory (which has each 
+unique NPI that has been assigned to a provider), the Drug Enforcement Administration, and 
+SureScripts (a nationwide e-prescribing network). Information regarding credentials is self-reported by 
+the provider. 
+From this source data, CCW creates an array of academic or professional credentials associated with 
+the provider during the year. We gave priority in this array to the types of credentials most likely to 
+have prescribing privileges, the next priority was other medical credentials, and then other types of 
+academic credentials that may have appeared in the source data. Reference also CREDENTIAL02 
+through CREDENTIAL05. The number of credentials for a prescriber may vary from year to year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+3 
+CREDENTIAL02 
+LABEL: 
+Academic or Professional Credential 2 — for Part D Prescribers 
+DESCRIPTION: The degree or academic credential for the prescriber. This variable is one of five possible credentials or 
+academic degrees in the source data. 
+SHORT NAME:  — 
+LONG NAME:  CREDENTIAL02 
+TYPE: 
+CHAR 
+LENGTH:  
+8  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., MD, DO, RN, DPM) 
+COMMENT: 
+This variable is populated by linking to the proprietary HCIdea™ Prescriber Database. HCIdea obtains 
+prescriber information from a variety of data sources, including the NPPES directory (which has each 
+unique NPI that has been assigned to a provider), the Drug Enforcement Administration, and 
+SureScripts (a nationwide e-prescribing network). Information regarding credentials is self-reported by 
+the provider. 
+From this source data, CCW creates an array of academic or professional credentials associated with 
+the provider during the year. We gave priority in this array to the types of credentials most likely to 
+have prescribing privileges, the next priority was other medical credentials, and then other types of 
+academic credentials that may have appeared in the source data. Reference also CREDENTIAL02 
+through CREDENTIAL05. The number of credentials for a prescriber may vary from year to year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+4 
+CREDENTIAL03 
+LABEL: 
+Academic or Professional Credential 3 — for Part D Prescribers 
+DESCRIPTION: The degree or academic credential for the prescriber. This variable is one of five possible credentials or 
+academic degrees in the source data. 
+SHORT NAME:  — 
+LONG NAME:  CREDENTIAL03 
+TYPE: 
+CHAR 
+LENGTH:  
+8  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., MD, DO, RN, DPM) 
+COMMENT: 
+This variable is populated by linking to the proprietary HCIdea™ Prescriber Database. HCIdea obtains 
+prescriber information from a variety of data sources, including the NPPES directory (which has each 
+unique NPI that has been assigned to a provider), the Drug Enforcement Administration, and 
+SureScripts (a nationwide e-prescribing network). Information regarding credentials is self-reported by 
+the provider. 
+From this source data, CCW creates an array of academic or professional credentials associated with 
+the provider during the year. We gave priority in this array to the types of credentials most likely to 
+have prescribing privileges, the next priority was other medical credentials, and then other types of 
+academic credentials that may have appeared in the source data. Reference also CREDENTIAL02 
+through CREDENTIAL05. The number of credentials for a prescriber may vary from year to year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+5 
+CREDENTIAL04 
+LABEL: 
+Academic or Professional Credential 4 — for Part D Prescribers 
+DESCRIPTION: The degree or academic credential for the prescriber. This variable is one of five possible credentials or 
+academic degrees in the source data. 
+SHORT NAME:  — 
+LONG NAME:  CREDENTIAL04 
+TYPE: 
+CHAR 
+LENGTH:  
+8  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., MD, DO, RN, DPM) 
+COMMENT: 
+This variable is populated by linking to the proprietary HCIdea™ Prescriber Database. HCIdea obtains 
+prescriber information from a variety of data sources, including the NPPES directory (which has each 
+unique NPI that has been assigned to a provider), the Drug Enforcement Administration, and 
+SureScripts (a nationwide e-prescribing network). Information regarding credentials is self-reported by 
+the provider. 
+From this source data, CCW creates an array of academic or professional credentials associated with 
+the provider during the year. We gave priority in this array to the types of credentials most likely to 
+have prescribing privileges, the next priority was other medical credentials, and then other types of 
+academic credentials that may have appeared in the source data. Reference also CREDENTIAL02 
+through CREDENTIAL05. The number of credentials for a prescriber may vary from year to year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+6 
+CREDENTIAL05 
+LABEL: 
+Academic or Professional Credential 5 — for Part D Prescribers 
+DESCRIPTION: The degree or academic credential for the prescriber. This variable is one of five possible credentials or 
+academic degrees in the source data. 
+SHORT NAME:  — 
+LONG NAME:  CREDENTIAL05 
+TYPE: 
+CHAR 
+LENGTH:  
+8  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., MD, DO, RN, DPM) 
+COMMENT: 
+This variable is populated by linking to the proprietary HCIdea™ Prescriber Database. HCIdea obtains 
+prescriber information from a variety of data sources, including the NPPES directory (which has each 
+unique NPI that has been assigned to a provider), the Drug Enforcement Administration, and 
+SureScripts (a nationwide e-prescribing network). Information regarding credentials is self-reported by 
+the provider. 
+From this source data, CCW creates an array of academic or professional credentials associated with 
+the provider during the year. We gave priority in this array to the types of credentials most likely to 
+have prescribing privileges, the next priority was other medical credentials, and then other types of 
+academic credentials that may have appeared in the source data. Reference also CREDENTIAL02 
+through CREDENTIAL05. The number of credentials for a prescriber may vary from year to year. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+7 
+HCID 
+LABEL: 
+HCIdea Proprietary Prescriber Identifier 
+DESCRIPTION: This variable uniquely identifies prescribers found in the proprietary HCIdea™ Prescriber Database.  
+HCIdea has prescriber information from a variety of data sources, including the NPPES directory (the 
+National Plan and Provider Enumeration System, which assigns a unique NPI to each provider), the 
+Drug Enforcement Administration (through data files known as the Controlled Substances Act 
+Registrants), and SureScripts (a nationwide e-prescribing network). Using these input files, it is 
+generally possible to identify a unique provider using an NPI, DEA number, and/or UPIN number. 
+SHORT NAME:  — 
+LONG NAME:  HCID 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+Null, or any positive or negative number 
+COMMENT: 
+This variable was new in 2014; beginning with 2014 Part D Prescriber Characteristics file, the NPI is 
+used in place of the CCW_PRSCRBR_ID.  
+The HCID was historically used to assign the CCW-assigned prescriber identifier (CCW_PRSCRBR_ID). 
+CCW purchased the HCIdea™ Prescriber Database to enable us to roll-up various IDs in the Part D 
+Prescription Drug Event (PDE) file to a unique prescriber. Each year, CCW used HCIdea™ and cross-
+walked all of the identifiers in the PDE for a unique prescriber (which corresponded to a HCID) and 
+assigned a CCW_PRSCRBR_ID to represent an individual medical practitioner. This allowed PDE records 
+that had the same prescriber but used a combination of different identifiers to be assigned the same 
+identifier in the CCW file. We assigned CCW_PRSCRBR_IDs on an annual basis for the universe of 
+prescribers found in the annual PDE data. 
+For current years (i.e., after May 2013), a national provider identifier (NPI) will typically be associated 
+with a single.HCID. 
+ ^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+8 
+NPI 
+LABEL:  
+Prescriber NPI Number 
+DESCRIPTION: The national provider identifier (NPI) number assigned to uniquely identify the physician or 
+practitioner who prescribed the beneficiary's medication. 
+NPIs replaced Drug Enforcement Agency (DEA) numbers as the standard prescriber identifiers in May 
+2013. This field also enables linkage between the Part D Event file, NPI is contained in a PDE field 
+called the PRSCRBR_ID, and the CCW Prescriber Characteristics file. 
+SHORT NAME:  — 
+LONG NAME:  NPI 
+TYPE: 
+CHAR 
+LENGTH:  
+10 
+SOURCE:  
+PDE and HCIdea™ Prescriber Database  
+VALUES:  
+— 
+COMMENT:  
+This variable was new in 2014; beginning with 2014 Part D Prescriber Characteristics file, the NPI is 
+used in place of the CCW_PRSCRBR_ID. The CCW_PRSCRBR_ID was retired after 2013. Prior to 2014 
+data, the NPI on the Prescription Drug Event (PDE) file was not allowed to be released, in accordance 
+with CMS privacy rules.  
+Prior to 2014 data, the proprietary HCIdea™ Prescriber Database was used to uniquely identify 
+prescribers since a variety of identifiers were allowed on the PDE. HCIdea has prescriber information 
+from a variety of data sources, including the NPPES directory (the National Plan and Provider 
+Enumeration System, which assigns a unique NPI to each provider), the Drug Enforcement 
+Administration (through data files known as the Controlled Substances Act Registrants), and 
+SureScripts (a nationwide e-prescribing network). Using these input files, it is generally possible to 
+identify a unique provider using an NPI, DEA number, and/or UPIN number. 
+The HCID (from the HCIdea data) was historically used to assign the CCW-assigned prescriber identifier 
+(CCW_PRSCRBR_ID). For current years, an NPI will typically be associated with a single HCID. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+9 
+OTHER_TAXONOMY_CLASS01 
+LABEL: 
+Other Taxonomy Classification 1 — for Part D Prescribers 
+DESCRIPTION: An additional taxonomy classification different from the primary taxonomy classification. 
+NUCC Provider Taxonomy Codes have three levels: Type, Classification, and Specialization. The 
+Classification is obtained from the first four characters of the full Taxonomy Code and represents the 
+provider's general specialty.  
+SHORT NAME:  — 
+LONG NAME:  OTHER_TAXONOMY_CLASS01 
+TYPE: 
+CHAR 
+LENGTH:  
+4  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., 207R) 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. HCIdea obtains prescriber information from a variety of data sources, including the NPPES 
+directory (which has each unique NPI that has been assigned to a provider), the Drug Enforcement 
+Administration, and SureScripts (a nationwide e-prescribing network).  
+Descriptions for the taxonomy classifications provided in this file are included in the descriptions for 
+the primary taxonomy codes (reference variable called PRIMARY_TAXONOMY_DESC). There are up to 
+four additional taxonomy classification groupings for the prescriber in the Prescriber Characteristics 
+file (reference PRIMARY_TAXONOMY_CD, and OTHER_TAXONOMY_CLASS02 through 
+OTHER_TAXONOMY_CLASS04). 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+10 
+OTHER_TAXONOMY_CLASS02 
+LABEL: 
+Other Taxonomy Classification 2 — for Part D Prescribers 
+DESCRIPTION: An additional taxonomy classification different from the primary taxonomy classification. 
+NUCC Provider Taxonomy Codes have three levels: Type, Classification, and Specialization. The 
+Classification is obtained from the first four characters of the full Taxonomy Code and represents the 
+provider's general specialty.  
+SHORT NAME:  — 
+LONG NAME:  OTHER_TAXONOMY_CLASS02 
+TYPE: 
+CHAR 
+LENGTH:  
+4  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., 207R) 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. HCIdea obtains prescriber information from a variety of data sources, including the NPPES 
+directory (which has each unique NPI that has been assigned to a provider), the Drug Enforcement 
+Administration, and SureScripts (a nationwide e-prescribing network).  
+Descriptions for the taxonomy classifications provided in this file are included in the descriptions for 
+the primary taxonomy codes (reference variable called PRIMARY_TAXONOMY_DESC). There are up to 
+four additional taxonomy classification groupings for the prescriber in the Prescriber Characteristics 
+file (reference PRIMARY_TAXONOMY_CD, and OTHER_TAXONOMY_CLASS02 through 
+OTHER_TAXONOMY_CLASS04). 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+11 
+OTHER_TAXONOMY_CLASS03 
+LABEL: 
+Other Taxonomy Classification 3 — for Part D Prescribers 
+DESCRIPTION: An additional taxonomy classification different from the primary taxonomy classification. 
+NUCC Provider Taxonomy Codes have three levels: Type, Classification, and Specialization. The 
+Classification is obtained from the first four characters of the full Taxonomy Code and represents the 
+provider's general specialty.  
+SHORT NAME:  — 
+LONG NAME:  OTHER_TAXONOMY_CLASS03 
+TYPE: 
+CHAR 
+LENGTH:  
+4  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., 207R) 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. HCIdea obtains prescriber information from a variety of data sources, including the NPPES 
+directory (which has each unique NPI that has been assigned to a provider), the Drug Enforcement 
+Administration, and SureScripts (a nationwide e-prescribing network).  
+Descriptions for the taxonomy classifications provided in this file are included in the descriptions for 
+the primary taxonomy codes (reference variable called PRIMARY_TAXONOMY_DESC). There are up to 
+four additional taxonomy classification groupings for the prescriber in the Prescriber Characteristics 
+file (reference PRIMARY_TAXONOMY_CD, and OTHER_TAXONOMY_CLASS02 through 
+OTHER_TAXONOMY_CLASS04). 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+12 
+OTHER_TAXONOMY_CLASS04 
+LABEL: 
+Other Taxonomy Classification 4 — for Part D Prescribers 
+DESCRIPTION: An additional taxonomy classification different from the primary taxonomy classification. 
+NUCC Provider Taxonomy Codes have three levels: Type, Classification, and Specialization. The 
+Classification is obtained from the first four characters of the full Taxonomy Code and represents the 
+provider's general specialty.  
+SHORT NAME:  — 
+LONG NAME:  OTHER_TAXONOMY_CLASS04 
+TYPE: 
+CHAR 
+LENGTH:  
+4  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., 207R) 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. HCIdea obtains prescriber information from a variety of data sources, including the NPPES 
+directory (which has each unique NPI that has been assigned to a provider), the Drug Enforcement 
+Administration, and SureScripts (a nationwide e-prescribing network).  
+Descriptions for the taxonomy classifications provided in this file are included in the descriptions for 
+the primary taxonomy codes (reference variable called PRIMARY_TAXONOMY_DESC). There are up to 
+four additional taxonomy classification groupings for the prescriber in the Prescriber Characteristics 
+file (reference PRIMARY_TAXONOMY_CD, and OTHER_TAXONOMY_CLASS02 through 
+OTHER_TAXONOMY_CLASS04). 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+13 
+PRACTICE_LOC_STATE01 
+LABEL: 
+Prescriber Practice Location State 1 
+DESCRIPTION: The state where the prescriber practices, using the standard two-character postal state code. 
+The CCW Prescriber Characteristics file allows for up to five practice location states associated with 
+the prescriber during the year.  
+The number of associated states may vary from year to year. 
+SHORT NAME:  — 
+LONG NAME:  PRACTICE_LOC_STATE01 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+HCIdea™ Prescriber Database 
+VALUES: 
+ 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC = North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+XX = Unknown 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+14 
+Null/missing = Unable to link PDE 
+prescriber to HCIdea™ Prescriber 
+Database 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database.  
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+15 
+PRACTICE_LOC_STATE02 
+LABEL: 
+Prescriber Practice Location State 2 
+DESCRIPTION: The 2nd state where the prescriber practices, using the standard two-character postal state code. 
+The CCW Prescriber Characteristics file allows for up to five practice location states associated with 
+the prescriber during the year.  
+The number of associated states may vary from year to year. 
+SHORT NAME:  — 
+LONG NAME:  PRACTICE_LOC_STATE02 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+HCIdea™ Prescriber Database 
+VALUES: 
+ 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC = North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+XX = Unknown 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+16 
+Null/missing = Unable to link PDE 
+prescriber to HCIdea™ Prescriber 
+Database 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+17 
+PRACTICE_LOC_STATE03 
+LABEL: 
+Prescriber Practice Location State 3 
+DESCRIPTION: The 3rd state where the prescriber practices, using the standard two-character postal state code. 
+The CCW Prescriber Characteristics file allows for up to five practice location states associated with 
+the prescriber during the year.  
+The number of associated states may vary from year to year. 
+SHORT NAME:  — 
+LONG NAME:  PRACTICE_LOC_STATE03 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+HCIdea™ Prescriber Database 
+VALUES: 
+ 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC = North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+XX = Unknown 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+18 
+Null/missing = Unable to link PDE 
+prescriber to HCIdea™ Prescriber 
+Database 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+19 
+PRACTICE_LOC_STATE04 
+LABEL: 
+Prescriber Practice Location State 4 
+DESCRIPTION: The 4th state where the prescriber practices, using the standard two-character postal state code. 
+The CCW Prescriber Characteristics file allows for up to five practice location states associated with 
+the prescriber during the year.  
+The number of associated states may vary from year to year. 
+SHORT NAME:  — 
+LONG NAME:  PRACTICE_LOC_STATE04 
+TYPE: 
+CHAR 
+LENGTH:  
+2  
+SOURCE: 
+HCIdea™ Prescriber Database 
+VALUES: 
+ 
+AK = Alaska 
+AL = Alabama 
+AR = Arkansas 
+AZ = Arizona 
+CA = California 
+CO = Colorado 
+CT = Connecticut 
+DC = District of Columbia 
+DE = Delaware 
+FL = Florida 
+GA = Georgia 
+HI = Hawaii 
+IA = Iowa 
+ID = Idaho 
+IL = Illinois 
+IN = Indiana 
+KS = Kansas 
+KY = Kentucky 
+LA = Louisiana 
+MA = Massachusetts 
+MD = Maryland 
+ME = Maine 
+MI = Michigan 
+MN = Minnesota 
+MO = Missouri 
+MS = Mississippi 
+MT = Montana 
+NC = North Carolina 
+ND = North Dakota 
+NE = Nebraska 
+NH = New Hampshire 
+NJ = New Jersey 
+NM = New Mexico 
+NV = Nevada 
+NY = New York 
+OH = Ohio 
+OK = Oklahoma 
+OR = Oregon 
+PA = Pennsylvania 
+PR = Puerto Rico 
+RI = Rhode Island 
+SC = South Carolina 
+SD = South Dakota 
+TN = Tennessee 
+TX = Texas 
+UT = Utah 
+VA = Virginia 
+VI = Virgin Islands 
+VT = Vermont 
+WA = Washington 
+WI = Wisconsin 
+WV = West Virginia 
+WY = Wyoming 
+XX = Unknown 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+20 
+Null/missing = Unable to link PDE 
+prescriber to HCIdea™ Prescriber 
+Database 
+COMMENT: 
+We populated this variable for the CCW_PRSCRBR_ID by linking to the proprietary HCIdea™ Prescriber 
+Database. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+21 
+PRIMARY_TAXONOMY_CD 
+LABEL: 
+Primary Taxonomy Code for Part D Prescribers 
+DESCRIPTION: This is the taxonomy code for the prescriber. This field allows researchers to better understand the 
+type of provider who prescribed the medication (e.g., by knowing the type of provider and his/her 
+specialty).  
+SHORT NAME:  — 
+LONG NAME:  PRIMARY_TAXONOMY_CD 
+TYPE: 
+CHAR 
+LENGTH:  
+10  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., 207R00000X) 
+COMMENT: 
+The Part D Prescriber Characteristics file is populated by linking to the proprietary HCIdea™ Prescriber 
+Database. HCIdea obtains prescriber information from a variety of data sources, including the NPPES 
+directory (which has each unique NPI that has been assigned to a provider), the Drug Enforcement 
+Administration, and SureScripts (a nationwide e-prescribing network). This variable is the primary 
+taxonomy code listed for the prescriber in the NPPES directory. 
+This variable corresponds with the TAXONOMY_DESC variable, which provides the description of the 
+taxonomy code number. There are up to four additional taxonomy groupings for the prescriber in the 
+Prescriber Characteristics file (reference OTHER_TAXONOMY_CLASS01 through 
+OTHER_TAXONOMY_CLASS04). 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^ 
+ 
+ 
+
+
+ 
+Chronic Condition Warehouse  
+CODEBOOK: Medicare Part D Pharmacy Characteristics │ April 2021 │ V 1.1 
+22 
+PRIMARY_TAXONOMY_DESC 
+LABEL: 
+Primary Taxonomy Code Description for Part D Prescribers 
+DESCRIPTION: This is the description of the taxonomy code for the prescriber. This field allows researchers to better 
+understand the type of provider who prescribed the medication (e.g., by knowing the type of provider 
+and his/her specialty).  
+SHORT NAME:  — 
+LONG NAME:  PRIMARY_TAXONOMY_DESC 
+TYPE: 
+CHAR 
+LENGTH:  
+250  
+SOURCE: 
+HCIdea™ Prescriber Database  
+VALUES: 
+(e.g., 207R00000X= Internal Medicine) 
+COMMENT: 
+We populated this variable in the Part D Prescriber Characteristics file by linking to the proprietary 
+HCIdea™ Prescriber Database. HCIdea obtains prescriber information from a variety of data sources, 
+including the NPPES directory (which has each unique NPI that has been assigned to a provider), the 
+Drug Enforcement Administration, and SureScripts (a nationwide e-prescribing network). This variable 
+is the primary taxonomy code listed for the prescriber in the NPPES directory. 
+This variable corresponds with the PRIMARY_TAXONOMY_CD variable, which provides the taxonomy 
+code number associated with this description. There are up to four additional taxonomy groupings for 
+the prescriber in the Prescriber Characteristics file (reference OTHER_TAXONOMY_CLASS01 through 
+OTHER_TAXONOMY_CLASS04), which can be identified using this description variable. 
+Taxonomy codes are assigned by the National Uniform Claim Committee (NUCC). For a current list of 
+NUCC Provider Taxonomy Codes and Descriptions reference the Code Sets link at 
+http://www.nucc.org/. 
+^ Back to TOC ^

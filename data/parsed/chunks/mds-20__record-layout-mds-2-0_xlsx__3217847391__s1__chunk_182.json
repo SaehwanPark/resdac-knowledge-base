@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_182",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Physical functioning and structural problems: ADL functional rehabilitatio potential - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n259 G9 G9_CHG_ADL (G9) Change in ADL Function CHAR 1 This field indicates if the resident's ADL self-performance status has changed as compred to the status fo 90 days ago (or since last assessment if less than 90 days). 0 = No Change, 1 = Improved, 2 = Deteriorated, \"-\" = Unknown.\n260 H1A H1A_BOWEL_CONTRL (H1A) Bowel Continence CHAR 1 Continence in last 14 days:",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

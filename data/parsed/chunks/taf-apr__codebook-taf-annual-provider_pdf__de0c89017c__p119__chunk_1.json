@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p119__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 119,
+  "text": "APR Identifiers \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n1: State-specific Medicaid provider ID \n2: NPI \n3: Medicare ID \n4: NCPDP ID \n5: Federal tax ID \n6: State tax ID \n7: SSN \n8: Other \n9: Old state provider ID \n\nCOMMENT: \nThe name of the entity that assigned the PRVDR_NUM is called PRVDR_NUM_ISSG_ENT_ID. \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

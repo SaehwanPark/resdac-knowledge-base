@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "there were up to 8 codes, and from 2007 forward there are up to 20 codes. Positions 1-4: Condition Code (ICD-10 code) \nNote: Whenever there is a 4-position code, there is always an implied decimal after the 3rd position.\n\nPosition 5: Nature of Injury Flag (only for ICD-9 codes)\n1 = the code in position 1-4 is a Nature of Injury ICD-9 code\n0 = all other codes",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

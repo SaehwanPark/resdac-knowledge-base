@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p111__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 111,
+  "text": "NAME: FICARR \nLONG NAME: FICARR_IDENT_NUM \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nNCH \nVALUES: \nXXXXX \nCOMMENT: \nThis field comes from the fiscal intermediary number that is present on the first claim record included in \nthe stay. \nDifferent FIs are under contract with CMS at different times. Reference the CMS website for MAC \nContractors (for example): https://www.cms.gov/Medicare/Medicare-Contracting/Medicare-\nAdministrative-Contractors/Who-are-the- MACs.html \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

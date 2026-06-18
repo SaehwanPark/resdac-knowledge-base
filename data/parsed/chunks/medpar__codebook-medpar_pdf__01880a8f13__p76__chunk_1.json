@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p76__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 76,
+  "text": "CHAR \nLENGTH: \n1 \nSOURCE: \nMedPAR (derived) \nVALUES: \nMissing/null = No coronary care indication C \n0 = General (revenue code 0210) \n1 = Myocardial (revenue code 0211) \n2 = Pulmonary care (revenue code 0212) \n3 = Heart transplant (revenue code 0213) \n4 = Intermediate CCU (revenue code 0214) \n9 = Other Coronary Care (revenue code 0219) \nCOMMENT: \nThis field is derived by checking for the presence of coronary care revenue center codes (021X) on any of \nthe claim records included in the stay. If",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

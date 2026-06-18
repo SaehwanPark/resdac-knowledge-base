@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_329",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "fall, since admission/entry or reentry or the prior assessment (OBRA or Scheduled PPS) which ever is more recent. -=Not assessed/no information\n0=None\n1=One\n2=Two or more\n^=Blank (skip pattern)\n366 J1900B_FALL_INJURY_CD J1900B_FALL_INJURY_CD J1900B Number of Falls Since Admission or Prior Assessment With Injury Except Major Code CHAR 1 The data in this column indicates the number of falls that resulted in injury (except major) - skin tears, abrasions, lacerations, superficial bruises, hematomas",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

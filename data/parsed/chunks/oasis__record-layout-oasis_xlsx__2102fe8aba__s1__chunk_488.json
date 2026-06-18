@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_488",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Indicates the patient's prior functioning abilities with stairs. 3. Independent – Patient completed the activities by him/herself, with or without an assistive device, with no assistance from a helper.\n2. Needed Some Help – Patient needed partial assistance from another person to complete activities.\n1. Dependent – A helper completed the activities for the patient.\n8. Unknown\n9. Not Applicable CHAR 1 x x\nGG0100D_PRIOR_FNCTNL_CGNTN_IND GG0100D Prior Functioning: Functional Cognition Indicates",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

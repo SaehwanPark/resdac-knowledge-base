@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_485",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "N2001 Drug Regimen Review - The data in this column indicates whether a complete drug regimen review identified potential clinically significant medication issues. CHAR 1 The data in this column indicates whether a complete drug regimen review identified potential clinically significant medication issues. 0 = No - No issues found during review\n1 = Yes - Issues found during review\n9 = NA - Patient is not taking any medications\n404 N2003_MDCTN_FLW_UP_IND N2003_MDCTN_FLW_UP_IND N2003 Medication",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

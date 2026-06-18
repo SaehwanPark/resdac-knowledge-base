@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p31__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 31,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n22 \nCMS_RGN \nLABEL: \nCMS Region for Submitting State \nDESCRIPTION: Submitting State FIPS Code grouped into the 10 CMS Regions. \nSHORT NAME: CMS_RGN \nLONG NAME: CMS_RGN \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAPR base \nSOURCE: \nT-MSIS annual provider TAF \nVALUES: \n1 = Region 1: CT, MA, ME, NH, RI, VT \n2 = Region 2: NJ, NY, PR, VI \n3 = Region 3: DE, DC, MD, PA, VA, WV \n4 =",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

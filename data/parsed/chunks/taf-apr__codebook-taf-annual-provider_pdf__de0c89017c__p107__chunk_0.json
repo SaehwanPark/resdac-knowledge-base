@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p107__chunk_0",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 107,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nT-MSIS TAF Annual Provider RIFs Codebook │ December 2025 │ V 1.3 \n109 \nVALUES: \n0 = No \n1 = Yes \nCOMMENT: \nThe location records use a unique combination of the following variables (PRVDR_LCTN_ID, \nBLG_LCTN_IND, PRCTC_LCTN_IND, SRVC_LCTN_IND, PRVDR_ADR_LINE_1, PRVDR_ADR_LINE_2, \nPRVDR_ADR_LINE_3, PRVDR_CITY, PRVDR_STATE_CD, PRVDR_ZIP_CD, PRVDR_CNTY_CD, \nBRDR_STATE_IND, PRVDR_STATE_CD_DFRNT_IND). \n^ Back to TOC ^",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

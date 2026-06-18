@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_207",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "treated during an inpatient stay within the\npast 14 days. CHAR 7 x\nM1012_INP_NA_ICD M1012 Inpatient ICD Procedure Code- NA This field is checked if the inpatient procedure and associated ICD code is unknown for the plan of care. CHAR 1 x\nM1012_INP_UK_ICD M1012 Inpatient ICD Procedure Code- UK This field is checked if there is no inpatient procedure and associated ICD code for the plan of care. 0 = Not Checked, 1 = Checked CHAR 1 x\nM1012_INP_PRCDR1_ICD M1012 Inpatient ICD Procedure1 Code This",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_8",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| MEDPAR Internal Use SSI Day Count | \n\n | 44 | INTRNL_USE_SSI_DATA | MEDPAR Internal Use SSI Data | \n\n | 45 | INTRNL_USE_IPSB_CD | For internal Use Only. IPSB Code | \n\n | 46 | INTRNL_USE_FIL_DT_CD | For internal use only. Fiscal year/calendar year segments. | \n\n | 47 | INTRNL_USE_SMPL_SIZE_CD | For internal use. MEDPAR sample size. | \n\n | 48 | LOS_DAY_CNT | Days of beneficiary’s stay in a hospital/SNF | \n\n | 49 | OUTLIER_DAY_CNT | Days paid as outliers (either day or cost) under PPS beyond DRG",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

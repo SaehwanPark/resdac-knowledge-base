@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p113__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 113,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n95 \nCLM_OP_ESRD_MTHD_CD \nLABEL: \nClaim Outpatient End-stage Renal Disease (ESRD) Method of Reimbursement Code \nDESCRIPTION: This variable contains the code denoting the method of reimbursement selected by the beneficiary \nreceiving End-stage Renal Disease (ESRD) services for home dialysis (i.e., whether home supplies are \npurchased through a facility or from a supplier.)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

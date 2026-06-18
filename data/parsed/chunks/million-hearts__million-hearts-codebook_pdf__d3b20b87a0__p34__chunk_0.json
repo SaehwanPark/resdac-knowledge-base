@@ -1,0 +1,8 @@
+{
+  "chunk_id": "million-hearts__million-hearts-codebook_pdf__d3b20b87a0__p34__chunk_0",
+  "source_document": "data/raw/assets/pdf/d3b20b87a00316ac2738fff4fc36d32eecf35bb7.pdf",
+  "page": 34,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMillion Hearts® CVD Risk Reduction Model Medicare Data Files Codebook │ May 2025 │ V 1.1 \n29 \nMODIFIER \nLABEL: \nAny Modifiers for the Base Code \nDESCRIPTION: Any modifiers for the base code. \nSHORT NAME: MODIFIER \nLONG NAME: MODIFIER \nTYPE: \nCHAR \nLENGTH: \n10 \nFILE(S): \nClinical (final and raw) \nSOURCE: \nMillion Hearts Data Registry \nVALUES: \n— \nCOMMENT: \nThis field is only populated in the Clinical_raw file (not the Clinical_final",
+  "dataset": "million-hearts",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/million-hearts-codebook.pdf"
+}

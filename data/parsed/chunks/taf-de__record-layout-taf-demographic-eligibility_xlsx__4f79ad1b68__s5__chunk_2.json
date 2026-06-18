@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s5__chunk_2",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 5,
+  "text": "CHAR 2 8\nMFP_PRTCPTN_END_RSN_CD Money Follows Person (MFP) -Participation Ended Reason Code CHAR 2 9\nMFP_IND_01 Money Follows Person (MFP) Participant - January CHAR 1 10\nMFP_IND_02 Money Follows Person (MFP) Participant - February CHAR 1 11\nMFP_IND_03 Money Follows Person (MFP) Participant - March CHAR 1 12\nMFP_IND_04 Money Follows Person (MFP) Participant - April CHAR 1 13\nMFP_IND_05 Money Follows Person (MFP) Participant - May CHAR 1 14\nMFP_IND_06 Money Follows Person (MFP) Participant -",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

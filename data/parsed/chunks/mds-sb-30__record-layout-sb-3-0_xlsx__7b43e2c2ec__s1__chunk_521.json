@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_521",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "checked (No)\n1=Checked (Yes)\n597 V0200A17B_PSYCH_DRUG_CPL_CD V0200A17B_PSYCH_DRUG_CPL_CD V0200A17B Psychotropic Drug Addressed in Care Plan Code CHAR 1 The data in this column indicates whether the Psychotropic Drug Use care area was addressed in the care plan. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n598 V0200A18A_RSTRNT_CTR_CD V0200A18A_RSTRNT_CTR_CD V0200A18A Restraint Care Area Trigger Code CHAR 1 The data in this column indicates whether the Physical Restraints CA",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

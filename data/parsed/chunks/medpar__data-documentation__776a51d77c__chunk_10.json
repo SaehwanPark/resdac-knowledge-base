@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_10",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "stay | \n\n | 53 | BENE_PTA_COINSRNC_AMT | Beneficiary’s liability for part A coinsurance for stay ($) | \n\n | 54 | BENE_IP_DDCTBL_AMT | Beneficiary’s liability for deductible for stay ($) | \n\n | 55 | BENE_BLOOD_DDCTBL_AMT | Beneficiary’s liability for blood deductible for stay ($) | \n\n | 56 | BENE_PRMRY_PYR_CD | Primary Payer Responsibility Code | \n\n | 57 | BENE_PRMRY_PYR_AMT | Primary Payer Paid Amount | \n\n | 58 | DRG_CD | Diagnosis Related Group Code (or MS-DRG Code) | \n\n | 59 |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

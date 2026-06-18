@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 2,
+  "text": "Submitting State Entity Code CHAR 2 4\nENRLMT_TYPE_CD Enrollment Type Code - Medicaid or CHIP CHAR 1 5\nENRLMT_START_DT Enrollment Start Date (Within Calendar Yr) DATE 8 6\nENRLMT_END_DT Enrollment End Date (Within Calendar Yr) DATE 8 7\nRFRNC_YR Reference Yr CHAR 4 8",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

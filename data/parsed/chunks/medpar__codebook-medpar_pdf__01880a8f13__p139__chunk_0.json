@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p139__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 139,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n123 \nIP_ADMSN_TYPE_CD \nLABEL: \nInpatient Admission Type Code \nDESCRIPTION: The code indicating the type and priority of the beneficiary's admission to a facility for the Inpatient \nhospital stay. \nSHORT NAME: TYPE_ADM \nLONG NAME: IP_ADMSN_TYPE_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nThis code set is an external code set maintained by the National Uniform Billing Committee \n(NUBC™)",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

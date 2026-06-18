@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_257",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "whether the resident had a diagnosis of orthostatic hypotension in the last seven days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n274 I0900_PVD_CD I0900_PVD_CD I0900 Active Diagnoses: Peripheral Vascular Disease (PVD) Code CHAR 1 The data in this column indicates whether the resident had a diagnosis of peripheral vascular disease (PVD) or peripheral arterial disease (PAD) in the last seven days. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n275",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

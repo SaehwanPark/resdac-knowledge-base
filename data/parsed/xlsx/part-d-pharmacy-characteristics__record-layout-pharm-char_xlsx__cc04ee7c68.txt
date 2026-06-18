@@ -1,0 +1,34 @@
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Medicare Part D Pharmacy Characteristics File
+Version - October 2016
+Long SAS Name	Label	Type	Length	Year of Data File1
+2006 - 2011	2012 - 2013	2014 +
+CCW_PHARM_ID	CCW-assigned Pharmacy Identifier	NUM	12	X	X	-
+NCPDP_ID	NCPDP Pharmacy Identifier	CHAR	7	-	-	X
+PREV_CCW_PHARM_ID	Previous Owner CCW Pharmacy identifier	NUM	8	-	X	-
+PHYSICAL_LOCATION_CLOSE_DATE	Physical Location of Pharmacy Closure Date	DATE	8	X	X	X
+PHYSICAL_LOCATION_OPEN_DATE	Physical Location of Pharmacy Open Date	DATE	8	X	X	X
+PHYSICAL_LOCATION_STATE_CODE	Physical Location of Pharmacy State Code	CHAR	2	X	X	X
+DISPENSER_CLASS	Part D Dispenser Class Code	CHAR	2	X	X	X
+PRIMARY_DISPENSER_TYPE	Pharmacy Primary Dispenser Type Code	CHAR	2	X	X	X
+PRIMARY_TAXONOMY_CODE	Pharmacy Primary Taxonomy Code	CHAR	10	X	X	X
+SECONDARY_DISPENSER_TYPE	Pharmacy Secondary Dispenser Type Code	CHAR	2	X	X	X
+SECONDARY_TAXONOMY_CODE	Pharmacy Secondary Taxonomy Code	CHAR	10	X	X	X
+TERTIARY_DISPENSER_TYPE	Pharmacy Tertiary Dispenser Type Code	CHAR	2	X	X	X
+TERTIARY_TAXONOMY_CODE	Pharmacy Tertiary Taxonomy Code	CHAR	10	X	X	X
+RELATIONSHIP_ID	Pharmacy Relationship Identifier (encrypted)	CHAR	3	X	X	X
+RELATIONSHIP_FROM_DT	Pharmacy Relationship From Date	DATE	8	X	X	X
+RELATIONSHIP_THRU_DT	Pharmacy Relationship Through Date	DATE	8	X	X	X
+RELATIONSHIP_TYPE	Pharmacy Relationship Type	CHAR	2	X	X	X
+PRNT_ORG_ID	Pharmacy  Parent Organization Identifier (encrypted)	CHAR	6	-	X	X
+EPRSCRB_SRVC_IND	E-Prescribing Services Indicator	CHAR	1	-	X	X
+EPRSCRB_SRVC_CD	Code Indicating the E-Prescribing Services Offered	CHAR	2	-	X	X
+DME_SRVC_IND	DME Services Indicator	CHAR	1	-	X	X
+DME_SRVC_CD	Code Indicating the DME Services Offered	CHAR	2	-	X	X
+WALKIN_CLINIC_IND	Walk-in Clinic Services Indicator	CHAR	1	-	X	X
+WALKIN_CLINIC_CD	Code Indicating the Level of Walk-in Clinic Services Offered	CHAR	2	-	X	X
+IMMUNIZATIONS_IND	Immunization Services Indicator	CHAR	1	-	X	X
+IMMUNIZATIONS_CD	Code Indicating the Level of Immunization Services Offered	CHAR	2	-	X	X
+STATUS_340B_IND	340B Status Indicator	CHAR	1	-	X	X
+STATUS_340B_CD	Code Indicating the Level of 340B Services Offered	CHAR	2	-	X	X
+1 Shading or '-' indicates that the variable was not present during this time.

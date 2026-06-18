@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p266__chunk_5",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 266,
+  "text": "primary payer amount and utilization day \ncount): \n0 = Medicare payment amount and total charge amount > zeroes \n1 = Medicare payment amount and total charge amount < zeroes \n2 = Medicare payment amount is a credit \n3 = Total charge amount is a credit \n4 = Medicare payment amount, total charge amount, beneficiary primary payer claim payment amount, \nand utilization day count = zeroes",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

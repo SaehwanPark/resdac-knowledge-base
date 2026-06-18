@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__record-layout-ffs-claims_xlsx__90c19c7ea3__s5__chunk_35",
+  "source_document": "data/raw/assets/xlsx/90c19c7ea3b4ad1863786390a8c5400f3dbbbdf2.xlsx",
+  "page": 5,
+  "text": "Center Packaging Indicator Code CHAR 1 20\nREV_CNTR_PRCNG_IND_CD REV_CNTR_PRCNG_IND_CD Revenue Center Pricing Indicator Code CHAR 2 44\nOTAF_1 REV_CNTR_OTAF_PMT_CD Revenue Center Obligation to Accept As Full (OTAF) Payment Code CHAR 1 21\nIDENDC REV_CNTR_IDE_NDC_UPC_NUM Revenue Center IDE, NDC, or UPC Number CHAR 24 22\nREV_UNIT REV_CNTR_UNIT_CNT Revenue Center Unit Count NUM 8 23\nREV_RATE REV_CNTR_RATE_AMT Revenue Center Rate Amount NUM 12 24\nREVBLOOD REV_CNTR_BLOOD_DDCTBL_AMT Revenue Center Blood",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ffs-claims.xlsx"
+}

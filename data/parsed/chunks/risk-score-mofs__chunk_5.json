@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__chunk_5",
+  "source_document": "data/raw/html/dataset_page/5f790fcd9499f996f1cbe1ebbbb4d8aa4648a8e3.html",
+  "page": null,
+  "text": "risk model generates raw scores based on multiple sources of clinical diagnoses.\nMOFs also contain Hierarchical Condition Categories (HCCs), which represent groups of diagnosis codes for related disease categories.\nThe research risk score files are designed to be used with other Chronic Conditions Warehouse (CCW) data products that contain a wide range of demographic and Medicare coverage information and can be linked to other CCW files using the Beneficiary ID variable.\nWhat does this file",
+  "dataset": "risk-score-mofs",
+  "url": "https://resdac.org/cms-data/files/risk-score-mofs"
+}

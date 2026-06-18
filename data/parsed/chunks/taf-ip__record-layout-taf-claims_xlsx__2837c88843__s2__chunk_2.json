@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s2__chunk_2",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 2,
+  "text": "Adjustment Reason Code CHAR 3 12\nADJDCTN_DT Adjudication Date DATE 8 13\nMDCD_PD_DT Medicaid Paid Date DATE 8 14\nSPLIT_CLM_IND Split Claim Indicator CHAR 1 15\nSRC_LCTN_CD Denotes the Claims Payment System from which the Claim was Extracted CHAR 2 115 New3\nCLL_CNT Claim Line Count - Original NUM 8 16\nCLL_CNT_CALC Claim Line Count - Calculated NUM 8 17\nPRSN_CLM_IND1 Indicator of a Claim for a Person CHAR 1 111\nSRVC_TRKNG_TYPE_CD Service Tracking Type Code CHAR 2 18\nFED_SRVC_CTGRY_CD2 Federally",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

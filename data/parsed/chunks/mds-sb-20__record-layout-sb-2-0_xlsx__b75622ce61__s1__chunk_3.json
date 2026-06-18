@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Ending Version Date DATE 8 Ending date of the submission file that contains the version of this assessment\n6 ASTMDND AST_MOD_IND Assessment Modification Code CHAR 1 A code designating the version of the assessment. C = Current, M = Modified, X = Inactive\n7 CLCHPSCD CALC_HIPPS_CD Calculated HIPPS Code CHAR 5 The value of the HIPPS (Health Insurance Prospective Payment System) code calculated by the sate system using the OASIS PPS dll for this assessment.\n8 CRTDDT CREATED_DT Created Date DATE 8",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

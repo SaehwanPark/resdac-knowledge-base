@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p18__chunk_3",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 18,
+  "text": "to beneficiary and claims data in \nthe CCW. \nThe unique CCW beneficiary identifier field is specific to the CCW and is not applicable to any other identification \nsystem or data source. CCW encrypts this identifier prior to delivering the data files to researchers. In addition, CCW \nencrypts all data files delivered to researchers (details in 8.0 Further Assistance with CCW Data). Each research request \nemploys a different encryption key for the beneficiary identifier field and the data files.",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

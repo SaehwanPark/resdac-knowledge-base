@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_228",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "Hip Pain CHAR 1 Health conditions: pain symptoms - hip pain in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n363 J3F J3F_INCISION_PAIN (J3F) Incisional Pain CHAR 1 Health conditions: pain symptoms - incisional pain in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n364 J3G J3G_JOINT_PAIN (J3G) Joint Pain CHAR 1 Health conditions: pain symptoms - joint pain (other than hip) in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n365 J3H J3H_TISSUE_PAIN (J3H) Soft Tissue Pain CHAR 1 Health conditions: pain",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

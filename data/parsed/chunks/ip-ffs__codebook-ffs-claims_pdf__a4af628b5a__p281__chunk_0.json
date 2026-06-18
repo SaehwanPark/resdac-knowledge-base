@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p281__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 281,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n263 \nNCH_VRFD_NCVRD_STAY_THRU_DT \nLABEL: \nNCH Verified Non-covered Stay Through Date \nDESCRIPTION: The ending date of the beneficiary's non-covered stay. \nMedicare places limits on the number of days of inpatient or SNF care that a beneficiary may receive. \nFor some beneficiaries, all days in one of these settings may not be covered by Medicare. \nSHORT NAME: NCOVTHRU \nLONG",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_470",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "minutes in the last seven days. discontinued 09/30/2025\n528 O0400C5_PT_STRT_DT O0400C5_PT_STRT_DT O0400C5 Physical Therapy Start Date CHAR 8 The data in this column indicates the start date for the most recent physical therapy. discontinued 09/30/2025\n529 O0400C6_PT_END_DT O0400C6_PT_END_DT O0400C6 Physical Therapy End Date CHAR 8 The data in this column indicates the end date for the most recent physical therapy. discontinued 09/30/2025\n530 O0400D1_RT_MIN_NUM O0400D1_RT_MIN_NUM O0400D1",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

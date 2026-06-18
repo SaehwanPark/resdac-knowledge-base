@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_25",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "for per diem 0 = No, 1 = Yes, \"-\" = Unknown.\n48 A7H A7H_MCAID_MCARE (A7H) Medicaid Resident Liability/Medicare Co-Pay CHAR 1 Identification and background information: current payment sources - Medicaid resident liability or Medicare copay. 0 = No, 1 = Yes, \"-\" = Unknown.\n49 A7I A7I_PRIVATE_PAY (A7I) Private Insurance Per Diem CHAR 1 Identification and background information: current payment sources - private insurance per diem. 0 = No, 1 = Yes, \"-\" = Unknown.\n50 A7J A7J_OTHER (A7J) Other Per",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

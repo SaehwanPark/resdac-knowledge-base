@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_588",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "05=Setup or clean-up assistance\n 06=Independent\n 07=Resident refused\n 09=Not applicable\n 88=Not attempted due to medical condition or safety concerns\n ^=Blank (skip pattern) effective 10/01/2016\n665 GG0170F1_TOILT_TRNSFR_STRT_CD GG0170F1_TOILT_TRNSFR_STRT_CD GG0170F1 Mobility: Toilet Transfer at Start of SNF PPS Part A Stay CHAR 2 Indicates the resident's ability to safely transfer on or off the toilet at the start of the SNF PPS Part A stay. -=Not assessed/no information\n 01=Dependent",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

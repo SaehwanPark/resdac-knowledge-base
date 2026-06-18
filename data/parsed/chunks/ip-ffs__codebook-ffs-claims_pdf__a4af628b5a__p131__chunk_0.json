@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p131__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 131,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n113 \nIRF Error return codes: \n50 = Provider specific rate not numeric \n51 = Provider record terminated \n52 = Invalid wage index \n53 = Waiver state — not calculated by \nPPS \n54 = CMG on claim not found in table \n55 = Discharge date < provider effective \nstart date or discharge date < MSA \neffective start date for PPS \n56 = Invalid length of stay \n57 = Provider specific rate",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

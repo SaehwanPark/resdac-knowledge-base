@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ssp-aco-beneficiary__record-layout-aco-ssp-bene_xlsx__a18201ad9e__s1__chunk_3",
+  "source_document": "data/raw/assets/xlsx/a18201ad9ebc7d0a8f9c06edfab22a7ee9a939ca.xlsx",
+  "page": 1,
+  "text": "- - x x x x x x\nACO_NUM SSP ACO Identifier Encrypted ACO Identifier CHAR 6 x x x x x x x x x x x\nACO_NAME ACO Name The name of the ACO CHAR 100 x x x - - - - - - - -\nSTART_DATE ACO Agreement Start Date The ACO agreement start date DATE 8 x x x - - - - - - - -\nPRELIM_ASSIGN Assigned in Preliminary Period (Boolean) 0/1 flag; =1 if beneficiary was assigned in the initial performance year assignment run (prospective assignment for Track 3 ACOs, preliminary prospective assignment for Tracks 1 and 2",
+  "dataset": "ssp-aco-beneficiary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-aco-ssp-bene.xlsx"
+}

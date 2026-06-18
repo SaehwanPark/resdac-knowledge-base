@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_221",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "= No, 1 = Yes, \"-\" = Unknown.\n346 J1G J1G_EDEMA (J1G) Edema CHAR 1 Health conditions: problem conditions - other - edema in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n347 J1H J1H_FEVER (J1H) Fever CHAR 1 Health conditions: problem conditions - other - fever in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n348 J1I J1I_HALLUCINATIONS (J1I) Hallucinations CHAR 1 Health conditions: problem conditions - other - hallucinations in last 7 days. 0 = No, 1 = Yes, \"-\" = Unknown.\n349 J1J J1J_INTERN_BLEED",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

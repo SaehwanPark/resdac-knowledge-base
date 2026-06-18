@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__codebook-mbsf-cc_pdf__67b8f2251b__p61__chunk_1",
+  "source_document": "data/raw/assets/pdf/67b8f2251b8ce41fa22290227e10b8b8ec333559.pdf",
+  "page": 61,
+  "text": "TYPE: \nNUM \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n0 = Beneficiary did not meet claims criteria or have sufficient fee-for-service (FFS) coverage \n1 = Beneficiary met claims criteria but did not have sufficient FFS coverage \n2 = Beneficiary did not meet claims criteria but had sufficient FFS coverage \n3 = Beneficiary met claims criteria and had sufficient FFS coverage \nCOMMENT: \nThe CCW’s chronic condition flags require beneficiaries to satisfy both claims criteria (a minimum",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cc.pdf"
+}

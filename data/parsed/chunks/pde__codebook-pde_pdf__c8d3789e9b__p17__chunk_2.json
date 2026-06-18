@@ -1,0 +1,8 @@
+{
+  "chunk_id": "pde__codebook-pde_pdf__c8d3789e9b__p17__chunk_2",
+  "source_document": "data/raw/assets/pdf/c8d3789e9b9a3e36ec93e4d39d180a1ab4ef52ce.pdf",
+  "page": 17,
+  "text": "variable with a value of 1 or greater. \nSHORT NAME: DAWPS_CD \nLONG NAME: DAW_PROD_SLCTN_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nPDE \nVALUES: \n0 = No Product Selection Indicated (may also have missing values) \n1 = Substitution Not Allowed by Prescriber \n2 = Substitution Allowed — Patient Requested That Brand Product Be Dispensed \n3 = Substitution Allowed — Pharmacist Selected Product Dispensed \n4 = Substitution Allowed — Generic Drug Not in Stock \n5 = Substitution Allowed — Brand Drug Dispensed as",
+  "dataset": "pde",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-pde.pdf"
+}

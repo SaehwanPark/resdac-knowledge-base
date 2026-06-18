@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_29",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "RDS_IND_11 Part D Retiree Drug Subsidy Indicator - November CHAR 1\nRDSIND12 RDS_IND_12 Part D Retiree Drug Subsidy Indicator - December CHAR 1\nDUAL_01 DUAL_STUS_CD_01 Medicare-Medicaid dual eligibility code - January CHAR 2\nDUAL_02 DUAL_STUS_CD_02 Medicare-Medicaid dual eligibility code - February CHAR 2\nDUAL_03 DUAL_STUS_CD_03 Medicare-Medicaid dual eligibility code - March CHAR 2\nDUAL_04 DUAL_STUS_CD_04 Medicare-Medicaid dual eligibility code - April CHAR 2\nDUAL_05 DUAL_STUS_CD_05",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

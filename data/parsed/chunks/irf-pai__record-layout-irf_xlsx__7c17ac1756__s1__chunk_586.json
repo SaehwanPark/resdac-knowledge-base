@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_586",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "as their nutritional approach at the time of admission. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n523 PRNTRL_7_DAY_CD PRNTRL_7_DAY_CD Nutritional Approaches (7 days): Parenteral CHAR 1 This column documents whether the patient has received Parenteral/IV feeding as their nutritional approach in the past seven days. 0 = No \n1 = Yes\n- = Not Assessed/No Information\n524 PRNTRL_DSCHRG_CD PRNTRL_DSCHRG_CD Nutritional Approaches (Discharge): Parenteral CHAR 1 This column documents whether the",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

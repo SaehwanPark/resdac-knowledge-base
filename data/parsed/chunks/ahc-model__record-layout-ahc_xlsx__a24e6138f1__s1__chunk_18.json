@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_18",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "1\nNN_NVGTD_SPLMTL_EMPLYMT_SW Navigated Supplemental HRSN Employment Indicator CHAR 1\nNN_NVGTD_SPLMTL_FMLY_CMNTY_SW Navigated Supplemental HRSN Family & Community Support Indicator CHAR 1\nNN_NVGTD_SPLMTL_FINCL_SW Navigated Supplemental HRSN Financial Strain Indicator CHAR 1\nNN_NVGTD_SPLMTL_MH_SW Navigated Supplemental HRSN Mental Health Indicator CHAR 1\nNN_NVGTD_SPLMTL_PHYS_ACTVTY_SW Navigated Supplemental HRSN Physical Activity Indicator CHAR 1\nNN_NVGTD_SPLMTL_SBSTNC_USE_SW Navigated",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_305",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "1 = Checked (Yes) CHAR 1 x x x x x x\nM1740_BD_IMP_DCSN M1740 (M0610) Cog/Behavr/Psych Symp- Impaired Decision This field indicates impaired decision-making has been demonstrated at least once a week. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x\nM1740_BD_MEM_DFICT M1740 (M0610) Cog/Behavr/Psych Symp- Memory Deficit This field indicates memory deficit has been demonstrated at least once a week. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x x x x x x\nM1740_BD_NONE M1740 (M0610)",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

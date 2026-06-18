@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base-v2__codebook-mbsf-abcd-v2_pdf__88dec20615__p45__chunk_2",
+  "source_document": "data/raw/assets/pdf/88dec20615b0691efc1812370c27a4f1825aa109.pdf",
+  "page": 45,
+  "text": "PTC_CNTRCT_ID_07 \nPTC_CNTRCT_ID_08 \nPTC_CNTRCT_ID_09 \nPTC_CNTRCT_ID_10 \nPTC_CNTRCT_ID_11 \nPTC_CNTRCT_ID_12 \nTYPE: \nCHAR \nLENGTH: \n5 \nSOURCE: \nCMS Common Medicare Environment (CME) \nVALUES: \nThe first character of the contract ID is a letter or number representing the type of plan: \nH = Managed care organizations other than a regional PPO (i.e., local MA-PDs, 1876 and 1833 cost \nplans, Program of All-Inclusive Care for the Elderly (PACE) plans, private fee-for-service plans, or \ndemonstration",
+  "dataset": "mbsf-base-v2",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd-v2.pdf"
+}

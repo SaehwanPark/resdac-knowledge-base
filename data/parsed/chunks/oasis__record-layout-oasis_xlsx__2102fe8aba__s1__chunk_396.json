@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_396",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Nursing Home Reason- Unknown This field indicates the reason the patient was admitted to a nursing home was for unknown reasons. 0 = Not Checked, 1 = Checked CHAR 1 x\nM2440_NH_UNSAFE_HM M2440 (M0900) Nursing Home Reason- Unsafe At Home This field indicates the reason the patient was admitted to a nursing home was due to being unsafe for care at home. 0 = Not Checked, 1 = Checked CHAR 1 x\nM1011_14D_INP1_ICD M1011 Inpatient Diagnosis1 ICD10 Code This field lists the inpatient diagnosis and ICD-10",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

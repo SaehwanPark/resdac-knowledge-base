@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__record-layout-taf-demographic-eligibility_xlsx__4f79ad1b68__s1__chunk_2",
+  "source_document": "data/raw/assets/xlsx/4f79ad1b684ccc6c7a2dad2065ed7ad89849be68.xlsx",
+  "page": 1,
+  "text": "CHAR 9 8\nBIRTH_DT Date of Birth DATE 8 9\nAGE Age (in Yrs) NUM 3 10\nAGE_GRP_CD Age Group CHAR 2 11\nDEATH_DT Date of Death DATE 8 12\nDEATH_IND Ind that Beneficiary Died During the Calendar Yr NUM 1 13\nSEX_CD Sex (Biological) - Ltst in Yr CHAR 1 14\nETHNCTY_CD Ethnicity Code - Ltst in Yr CHAR 1 15\nRACE_ETHNCTY_CD Race and Ethnicity Constructed Code - Ltst in Yr CHAR 1 16\nRACE_ETHNCTY_EXP_CD Expanded Race and Ethnicity Constructed Code - Ltst in Yr CHAR 3 17\nCRTFD_AMRCN_INDN_ALSKN_NTV_CD Certified",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-demographic-eligibility.xlsx"
+}

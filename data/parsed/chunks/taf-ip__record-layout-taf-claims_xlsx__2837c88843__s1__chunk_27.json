@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__record-layout-taf-claims_xlsx__2837c88843__s1__chunk_27",
+  "source_document": "data/raw/assets/xlsx/2837c88843e634721ad44bc32fff80da6af55b1a.xlsx",
+  "page": 1,
+  "text": "State FIPS Code CHAR 2 4\nCLM_ID CCW Claim Identifier CHAR 64 5\nLINE_NUM Sequential Claim Line Number NUM 3 6\nCLM_NUM_ORIG Original Claim Identifier CHAR 50 7\nLINE_NUM_ORIG Original Claim Line Number CHAR 3 8\nCLM_NUM_ADJ Adjustment Claim Identifier CHAR 50 9\nLINE_NUM_ADJ Adjustment Claim Line Number CHAR 3 10\nADJDCTN_DT Adjudication Date DATE 8 11\nLINE_CLAIM_STUS_CD Claim Line Status Code CHAR 3 12\nLINE_ADJUST_CD Claim Line Adjustment Code CHAR 1 13\nLINE_SRVC_BGN_DT Claim Line Beginning Date of",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-taf-claims.xlsx"
+}

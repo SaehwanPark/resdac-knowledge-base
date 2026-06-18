@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_10",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "Procedure code system (3rd procedure) CHAR 2 X X X\n58 PRCDR_CD_3 Procedure code (3rd procedure) CHAR 8 X X X\n59 PRCDR_CD_SYS_4 Procedure code system (4th procedure) CHAR 2 X X X\n60 PRCDR_CD_4 Procedure code (4th procedure) CHAR 8 X X X\n61 PRCDR_CD_SYS_5 Procedure code system (5th procedure) CHAR 2 X X X\n62 PRCDR_CD_5 Procedure code (5th procedure) CHAR 8 X X X\n63 PRCDR_CD_SYS_6 Procedure code system (6th procedure) CHAR 2 X X X\n64 PRCDR_CD_6 Procedure code (6th procedure) CHAR 8 X X X\n65",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__record-layout-ahc_xlsx__a24e6138f1__s1__chunk_17",
+  "source_document": "data/raw/assets/xlsx/a24e6138f13d454f8775f43d953f26690833f358.xlsx",
+  "page": 1,
+  "text": "CHAR 1\nNN_NVGTD_CORE_SFTY_SW Navigated Core HRSN Safety Indicator CHAR 1\nNN_NVGTD_CORE_TRNSPRTN_SW Navigated Core HRSN Transportation Indicator CHAR 1\nNN_NVGTD_CORE_UTILITIES_SW Navigated Core HRSN Utilities Indicator CHAR 1\nNN_NVGTD_SPLMTL_DSBLTY_SW Navigated Supplemental HRSN Disability Indicator CHAR 1\nNN_NVGTD_SPLMTL_EDCTN_SW Navigated Supplemental HRSN Education Indicator CHAR 1\nNN_NVGTD_SPLMTL_EMPLYMT_SW Navigated Supplemental HRSN Employment Indicator CHAR 1\nNN_NVGTD_SPLMTL_FMLY_CMNTY_SW",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ahc.xlsx"
+}

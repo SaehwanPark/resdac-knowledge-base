@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_828",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "parenteral/IV feedings while a resident of the facility and within the last seven days. 0=No\n1=Yes effective 10/01/2023\n915 PRNTRL_DSCHRG_CD PRNTRL_DSCHRG_CD K0520A4 Nutritional Approaches (Discharge): Parenteral CHAR 1 The data in this column indicates whether the resident performed parenteral/IV feedings in the last three days of the resident's stay at the facility. 0=No\n1=Yes effective 10/01/2023\n916 FEED_TUBE_ADMSN_CD FEED_TUBE_ADMSN_CD K0520B1 Nutritional Approaches (Admission): Feeding",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

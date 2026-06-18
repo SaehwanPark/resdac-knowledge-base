@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-27-cc__record-layout-mbsf-cc_xlsx__9b3251247c__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/9b3251247c196c2ff5244785fa3366fd9b900eec.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMaster Beneficiary Summary File — 27 CCW Chronic Conditions (CC) File\nVersion — February 2022\nShort SAS Name1 Long SAS Name2 Label Type Length\nBENE_ID BENE_ID Encrypted CCW Beneficiary ID CHAR 15\nRFRNC_YR BENE_ENROLLMT_REF_YR Reference Year NUM 4\nENRL_SRC ENRL_SRC Source of enrollment data CHAR 3\nAMI AMI Acute Myocardial Infarction End-of-Year Indicator NUM 1\nAMIM AMI_MID Acute Myocardial Infarction Mid-Year Indicator NUM 1\nAMIE AMI_EVER",
+  "dataset": "mbsf-27-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-cc.xlsx"
+}

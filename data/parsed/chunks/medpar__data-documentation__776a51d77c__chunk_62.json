@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_62",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "25 | \n\n | 345 | CLM_PTNT_RLTNSHP_CD | Claim Patient Relationship Code | \n\n | 346 | CARE_IMPRVMT_MODEL_1_CD | Care Improvement Model 1 Code | \n\n | 347 | CARE_IMPRVMT_MODEL_2_CD | Care Improvement Model 2 Code | \n\n | 348 | CARE_IMPRVMT_MODEL_3_CD | Care Improvement Model 3 Code | \n\n | 349 | CARE_IMPRVMT_MODEL_4_CD | Care Improvement Model 4 Code | \n\n | 350 | VBP_PRTCPNT_IND_CD | Value-Based Purchasing (VBP) Participant Indicator Code | \n\n | 351 | HRR_PRTCPNT_IND_CD | Hospital Readmission",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

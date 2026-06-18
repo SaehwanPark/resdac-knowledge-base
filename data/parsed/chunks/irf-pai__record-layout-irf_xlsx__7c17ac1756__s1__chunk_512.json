@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_512",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "This column documents whether the transmission route of patient's current reconciled medication list to subsequent provider was paper based. 0 = No\n1 = Yes\n^ = Blank\n448 ROUTE_PRVDR_OTHR_CD ROUTE_PRVDR_OTHR_CD Provider Trans - Other Methods CHAR 1 This column documents whether the transmission route of patient's current reconciled medication list to subsequent provider was an alternate method such as text, email or CD. 0 = No\n1 = Yes\n^ = Blank\n449 CRNT_MDCTN_LST_RSDNT_CD CRNT_MDCTN_LST_RSDNT_CD",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

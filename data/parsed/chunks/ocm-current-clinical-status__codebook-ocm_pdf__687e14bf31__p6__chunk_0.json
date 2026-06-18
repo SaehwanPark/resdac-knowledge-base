@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ocm-current-clinical-status__codebook-ocm_pdf__687e14bf31__p6__chunk_0",
+  "source_document": "data/raw/assets/pdf/687e14bf310457071225d4833378b7f8cecd7290.pdf",
+  "page": 6,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nCODEBOOK: Medicare Oncology Care Model Files │ May 2024 │ V 1.0 \n2 \nBENE_ID \nLABEL: \nEncrypted CCW Beneficiary ID \nDESCRIPTION: The unique CCW identifier for a beneficiary. \nThe CCW assigns a unique beneficiary identification number to each individual who receives Medicare \nand/or Medicaid and uses that number to identify an individual’s records in all CCW data files (e.g., \nMedicare claims and enrollment, T-MSIS claims, and MDS",
+  "dataset": "ocm-current-clinical-status",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ocm.pdf"
+}

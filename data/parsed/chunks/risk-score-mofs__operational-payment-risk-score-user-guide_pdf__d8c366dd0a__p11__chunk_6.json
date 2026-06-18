@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p11__chunk_6",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 11,
+  "text": "(e.g., Rx model segments). \nThese include: 1) aged, 2) disabled, 3) institutional, and 4) new enrollee. CMS further divides some of these segments \ninto low income and not low income. As with Part C risk scores, CMS calculates Rx risk scores using FFS claims and MA \nreported diagnosis information to predict expenditures associated with prescription drugs. Additional details are \navailable on the CMS website.12,13 \nA listing of all variables included in the data file appears in the CCW Data",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

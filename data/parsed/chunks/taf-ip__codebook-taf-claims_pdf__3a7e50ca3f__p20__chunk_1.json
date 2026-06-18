@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p20__chunk_1",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 20,
+  "text": "and code 1) \n127 = Coinsurance — major medical. (No longer used: 04/01/2008, use group code PR and code 2) \n128 = Newborn’s services are covered in the mother’s allowance \n129 = Prior processing information appears incorrect. At least one remark code must be provided \n(may be comprised of either the NCPDP reject reason code, or remittance advice remark code \nthat is not an ALERT.) \n130 = Claim submission fee \n131 = Claim specific negotiated discount \n132 = Prearranged demonstration project",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

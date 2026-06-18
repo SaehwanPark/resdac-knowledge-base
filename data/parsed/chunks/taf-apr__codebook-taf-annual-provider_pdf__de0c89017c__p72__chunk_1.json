@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apr__codebook-taf-annual-provider_pdf__de0c89017c__p72__chunk_1",
+  "source_document": "data/raw/assets/pdf/de0c89017c1d3e10d2c3fa782cf1871880f29b65.pdf",
+  "page": 72,
+  "text": "PRVDR_CLSFCTN_ACTV_IND_11 \nPRVDR_CLSFCTN_ACTV_IND_12 \nLABEL: \nProvider Classification Code Active Indicator — January through December \nDESCRIPTION: A flag to indicate the provider’s taxonomy/classification information specified in the unique \ncombination of taxonomy/classification variables (PRVDR_CLSFCTN_SYS and PRVDR_CLSFCTN_CD) was \nactive in the given month. Each of 12 months.\nSHORT NAME: PRVDR_CLSFCTN_ACTV_IND_01 \nPRVDR_CLSFCTN_ACTV_IND_02 \nPRVDR_CLSFCTN_ACTV_IND_03",
+  "dataset": "taf-apr",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-provider.pdf"
+}

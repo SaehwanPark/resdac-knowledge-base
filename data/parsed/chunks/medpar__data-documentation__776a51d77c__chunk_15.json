@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_15",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| 80 | PRVT_ROOM_CHRG_AMT | Private Room Charge Amount ($) | \n\n | 81 | SEMIPRVT_ROOM_CHRG_AMT | Semi-Private Room Charge Amount ($) | \n\n | 82 | WARD_CHRG_AMT | Ward Charge Amount ($) | \n\n | 83 | INTNSV_CARE_CHRG_AMT | Intensive Care Charge Amount ($) | \n\n | 84 | CRNRY_CARE_CHRG_AMT | Coronary Care Charge Amount ($) | \n\n | 85 | OTHR_SRVC_CHRG_AMT | Other Service Charge Amount ($) | \n\n | 86 | PHRMCY_CHRG_AMT | Pharmacy Charge Amount ($) | \n\n | 87 | MDCL_SUPLY_CHRG_AMT | Medical/Surgical Supplies",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

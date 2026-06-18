@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-plan-char_xlsx__fb2d5917eb__s7__chunk_1",
+  "source_document": "data/raw/assets/xlsx/fb2d5917eb403209d1bb6382dce2e9ae79a43582.xlsx",
+  "page": 7,
+  "text": "INSULIN_INPP_COPAY_2M, INSULIN_INPP_COPAY_3M, INSULIN_MO_COPAY_1M, INSULIN_MO_COPAY_2M, INSULIN_MO_COPAY_3M, INSULIN_MOPP_COPAY_1M, INSULIN_MOPP_COPAY_2M, INSULIN_MOPP_COPAY_3M, INSULIN_OONP_COPAY_1M, INSULIN_OONP_COPAY_OS, INSULIN_LTCP_COPAY_1M.\n\nAdded new annual variables to Plan Crosswalk file for 2024 (CONTRACT_ID_YY, PLAN_ID_YY and PTCD_INDICATOR_YY) and reformatted the layout for consistency.\n45597 Plan Base\nPlan Crosswalk\nSNP Contract Updated layout to reflect FIDE_SNPand DSNP_ZERODOLLAR",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-plan-char.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_286",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "in last 14 days - oxygen therapy. 0 = No, 1 = Yes, \"-\" = Unknown.\n479 P1AH P1AH_RADIATION (P1AH) Radiation CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - radiation 0 = No, 1 = Yes, \"-\" = Unknown.\n480 P1AI P1AI_SUCTION (P1AI) Suctioning CHAR 1 Special treatments and procedures: special treatments, procedures, and programs - special care - treatments in last 14 days - suctioning. 0 = No, 1 = Yes, \"-\" =",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

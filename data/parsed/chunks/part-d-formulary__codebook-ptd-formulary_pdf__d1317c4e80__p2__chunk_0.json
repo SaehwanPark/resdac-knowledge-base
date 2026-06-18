@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p2__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 2,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \ni \nRevision Log \nDate \nChanged by \nRevisions \nVersion \nOctober 2025 \nK. Schneider \nUpdated COPAY and TYPE variables to reflect the PDSS Model file \nwas retired and not delivered after 2023 \n2.2 \nOctober 2022 \nK. Schneider \nAdded variables in the Part D Senior Savings (PDSS) model file. \nUpdated value description for TIER_ID \n2.1 \nOctober 2021 \nK. Schneider \nMigrated",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

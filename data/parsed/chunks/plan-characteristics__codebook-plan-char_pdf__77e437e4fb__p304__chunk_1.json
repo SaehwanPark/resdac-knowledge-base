@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p304__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 304,
+  "text": "file. \n\nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCCW (derived) \nVALUES: \n1 = Part C only plan (any non-FFS; not all are MA) \n2 = Part D only plan \n3 = Both Part C and D plan \nCOMMENT: \nYou may use this field to identify plans that offer either only the Part C benefit, the Part D benefit, or \nboth. Note that plans that are identified as Part C may include other non-fee-for-service plans such as \nsome demonstrations (i.e., not all plans identified as Part C plans are Medicare Advantage managed \ncare",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

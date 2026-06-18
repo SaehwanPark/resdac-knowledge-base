@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_34",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "Code for comorbid conditions. A comorbidity is a specific condition that also affects a patient in\naddition to the principal diagnosis or impairment that is used to place a patient into a rehabilitation impairment\ncategory.\n54 CMRBD_CONDS_N_CD CMRBD_CONDS_N_CD 24N Comorbid Conditions: ICD Code N CHAR 8 An ICD Code for comorbid conditions. A comorbidity is a specific condition that also affects a patient in\naddition to the principal diagnosis or impairment that is used to place a patient into a",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

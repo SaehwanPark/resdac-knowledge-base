@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_171",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "No, 1 = Yes CHAR 1 x x\nM0830_EC_UK (M0830) Unknown Emergent Care Emergent care: unknown. 0 = No, 1 = Yes CHAR 1 x x\nM0840_ECR_CARDIAC (M0840) Cardiac Problems Emergent Care Reason: cardiac problems. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_GI_BLEED (M0840) GI Bleeding, Obstruction Emergent Care Reason: GI bleeding, obstruction. 0 = No, 1 = Yes, Space = Unknown. CHAR 1 x x\nM0840_ECR_HYPOGLYC (M0840) Hypo/Hyperglycemia, Diabetes Out of Control Emergent Care Reason: hypo/",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

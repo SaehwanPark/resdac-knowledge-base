@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_277",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- helping others. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n461 N4M N4M_NONE_ABOVE (N4M) None of Above Activity Preferences CHAR 1 Activity pursuit patterns: general activity preference - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n462 N5A N5A_CHG_TYPE_ACT (N5A) Type of Activities Currently Involved In CHAR 1 Activity pursuit patterns: prefers change in daily routine - type of activities involved in. 0 = No Change, 1 = Slight Change, 2 = Major Change, \"-\" = Unknown, -2 = Space.\n463 N5B",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

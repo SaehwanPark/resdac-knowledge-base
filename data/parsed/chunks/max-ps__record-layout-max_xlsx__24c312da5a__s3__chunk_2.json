@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s3__chunk_2",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 3,
+  "text": "Sex CHAR 1 X X X\n7 EL_RACE_ETHNCY_CD Race/ethnicity (from MSIS) CHAR 1 X X X\n8 RACE_CODE_1 Race - White (from MSIS) CHAR 1 ‾ X X\n9 RACE_CODE_2 Race - Black (from MSIS) CHAR 1 ‾ X X\n10 RACE_CODE_3 Race - Am Indian/Alaskan (from MSIS) CHAR 1 ‾ X X\n11 RACE_CODE_4 Race - Asian (from MSIS) CHAR 1 ‾ X X\n12 RACE_CODE_5 Race - Hawaiian/Pac. Islands (from MSIS) CHAR 1 ‾ X X\n13 ETHNICITY_CODE Ethnicity - Hispanic (from MSIS) CHAR 1 ‾ X X\n14 EL_SS_ELGBLTY_CD_LTST State specific eligibility - most recent",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

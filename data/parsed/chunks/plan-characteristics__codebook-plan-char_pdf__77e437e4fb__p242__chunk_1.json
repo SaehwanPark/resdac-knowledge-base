@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p242__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 242,
+  "text": "pharmacy (MONPP; also known as a standard mail order pharmacy within a \nsplit network) during the pre-initial coverage limit (ICL) phase of the Part D benefit. \nTYPE: \nNUM \nLENGTH: \n5 \nSOURCE: \nCMS (HPMS files) \nVALUES: \n— \nCOMMENT: \nStarting in 2016, CMS changed how they describe pharmacy networks. The MOPP are currently \nreferred to as standard mail order pharmacies within split networks. There is no change in the \nmeaning of the variable, and the data values are the same over time. \nThe CCW",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

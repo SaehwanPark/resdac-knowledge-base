@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p409__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 409,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n391 \nRR_BRD_EXCLSN_IND_SW \nLABEL: \nRailroad Board Exclusion Indicator Switch \nDESCRIPTION: This field indicates whether Railroad Board (RRB) beneficiary claim should be excluded from Prior \nAuthorization processing. \nSHORT NAME: RR_BRD_EXCLSN_IND_SW \nLONG NAME: RR_BRD_EXCLSN_IND_SW \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nY = Yes (exclude RRB beneficiary from PA)",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

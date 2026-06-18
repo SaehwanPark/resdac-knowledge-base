@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__codebook-mbsf-abcd_pdf__3ce60d9c5a__p59__chunk_1",
+  "source_document": "data/raw/assets/pdf/3ce60d9c5a3b97f691686c5fdd76b1f633f07612.pdf",
+  "page": 59,
+  "text": "TYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nCMS Common Medicare Environment (CME) (derived) \nVALUES: \n0 = Unknown \n1 = Non-Hispanic White \n2 = Black (Or African-American) \n3 = Other \n4 = Asian/Pacific Islander \n5 = Hispanic \n6 = American Indian / Alaska Native \nCOMMENT: \nThis variable is created by taking the beneficiary race code that has historically been used by the Social \nSecurity Administration (and is in turn used in CMS’s enrollment data base) and applying an algorithm \nthat identifies more",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-abcd.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p121__chunk_2",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 121,
+  "text": "and factors related \nto the stay. For example, payments are reduced for certain short stay transfers or where patients are \ndischarged to post-acute care. Therefore, for a given DRG, the weight in this field may vary. \nSHORT NAME: DRGWTAMT \nLONG NAME: CLM_PPS_CPTL_DRG_WT_NUM \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nMedicare payments are described in detail in a series of Medicare Payment Advisory Commission \n(MedPAC) documents called “Payment Basics” (reference:",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

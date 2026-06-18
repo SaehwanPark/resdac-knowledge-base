@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p28__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 28,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n20 \nMC_PLAN_CNTRCT_END_DT \nLABEL: \nManaged Care Plan Contract End Date \nDESCRIPTION: The expiration date of the managed care contract period with the state. \nSHORT NAME: MC_PLAN_CNTRCT_END_DT \nLONG NAME: MC_PLAN_CNTRCT_END_DT \nTYPE: \nDATE \nLENGTH: \n8 \nFILE(S): \nAPL base \nSOURCE: \nT-MSIS Annual Managed Care Plan TAF \nVALUES: \nDate (numeric, system dependent) \n31DEC9999 = (default value) no",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_13",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Persistence of Beta-Blocker Treatmnt After Heart Attack(PBH) Numerator Indicator NUM 3 25 25 49 47 47\nCDC_DNMTR_1_HBA1C_TSTNG_IND Comprehensive Diabetes Care (CDC) Denominator 1: HbA1c Testing NUM 3 26 26 50 48 48\nCDC_NMRTR_1_HBA1C_TSTNG_IND Comprehensive Diabetes Care (CDC) Numerator 1: HbA1c Testing NUM 3 27 27 51 49 49\nCDC_DNMTR_2_HBA1C_GT9_IND Comprehensive Diabetes Care (CDC) Denominator 2: HbA1c Poor Control >9% NUM 3 28 28 52 50 50\nCDC_NMRTR_2_HBA1C_GT9_IND Comprehensive Diabetes Care",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

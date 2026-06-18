@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_99",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "Emergency Department Utilization (EDU): PPV Base Risk Weight NUM 8 186 201 242 — —\nEDU_PUCV_CMRBDTY_WT Emergency Department Utilization (EDU): PUCV Comorbidity Weight NUM 8 187 202 243 232 230\nEDU_PUCV_AGE_SEX_WT3 Emergency Department Utilization (EDU): PUCV Age-Sex Weight NUM 8 188 203 244 233 231\nEDU_PUCV_BASE_RISK_WT Emergency Department Utilization (EDU): PUCV Base Risk Weight NUM 8 189 204 245 — —\nHPC_DNMTR_IND Hospitalization for Potentially Preventable Complications (HPC) Denominator Ind",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

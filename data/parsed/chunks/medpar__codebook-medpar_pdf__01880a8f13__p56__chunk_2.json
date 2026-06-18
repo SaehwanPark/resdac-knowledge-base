@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p56__chunk_2",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 56,
+  "text": "Model (CLM_CARE_IMPRVMT_MODEL_1_CD– \nCLM_CARE_IMPRVMT_MODEL_4_CD) code that is present on the first claim record included in the stay. \nIf there is no Claim Care Improve Model code on the 1st claim, then take the first found code on the \nother claims that make up the stay. \nThis field is new in 2013. \nThis value is also reflected in the demonstration trailer of the claim. \n^ Back to TOC ^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p296__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 296,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n278 \nPHYSN_ZIP_CD \nLABEL: \nLine Place of Service (POS) Physician Zip Code \nDESCRIPTION: The field used to identify the zip code where the services were rendered. \nSHORT NAME: PHYSN_ZIP_CD \nLONG NAME: PHYSN_ZIP_CD \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nEffective with Version”'K”. \n^ Back to TOC ^",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

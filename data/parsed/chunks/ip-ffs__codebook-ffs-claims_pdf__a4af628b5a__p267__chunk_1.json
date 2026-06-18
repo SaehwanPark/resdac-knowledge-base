@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p267__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 267,
+  "text": "NCH_CLM_BENE_PMT_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH QA Process \nVALUES: \nXXX.XX \nCOMMENT: \nThis variable is populated if, for example, a beneficiary pays for a service that should have been \nMedicare-covered. \nThe beneficiary can be refunded the payment. \nCosts to that beneficiaries are liable for are described in detail on the Medicare.gov website. There is a \nCMS publication called \"Your Medicare Benefits,\" which explains the deductibles and coinsurance \namounts. \nMedicare payments",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

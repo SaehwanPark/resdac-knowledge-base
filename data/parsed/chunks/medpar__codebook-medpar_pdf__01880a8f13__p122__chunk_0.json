@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p122__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 122,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n106 \nHRR_PRTCPNT_IND_CD \nLABEL: \nHospital Readmission Reduction (HRR) Participant Indicator Code \nDESCRIPTION: The code used to identify whether the facility is participating in the Hospital Readmission Reduction \n(HRR) Program. \nSHORT NAME: HRR_PRTCPNT_IND_CD \nLONG NAME: HRR_PRTCPNT_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \n0 = Not participating \n1 = Participating and not equal to",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

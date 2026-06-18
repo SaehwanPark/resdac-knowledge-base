@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p11__chunk_2",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 11,
+  "text": "warrants an answer, but no response was given)\n.N = NA SURVEY OPTION (tailored skip)\n.R = REFUSED (possible only as a CATI response)\nagecat: Age category derived from SA_AGE\nSAS Format: AGE\n1: 18-24\n2: 25-34\n3: 35-44\n4: 45-54\n5: 55-64\n6: 65-69\n7: 70-74\n8: 75-79\n9: 80-84\n10: 85 OR OLDER\nca_illasaw: RECODE : Last 6 mths, how often get care as soon as needed\nSAS Format: OFA\n1: NEVER\n2: SOMETIMES\n3: USUALLY\n4: ALWAYS\nca_illness: RECODE : Last 6 mths, illness or injury requiring immediate care\nSAS",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

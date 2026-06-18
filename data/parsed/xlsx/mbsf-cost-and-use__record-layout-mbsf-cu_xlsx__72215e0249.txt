@@ -1,0 +1,87 @@
+CMS Chronic Conditions Data Warehouse (CCW) Data Dictionary
+Master Beneficiary Summary File - Cost and Use
+Version - May 2017
+Long SAS Name	Label	Type	Length
+BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15
+RFRNC_YR	Reference Year	NUM	4
+ENRL_SRC	Source of enrollment data	CHAR	3
+ACUTE_BENE_PMT	Acute Inpatient Hospital Beneficiary Payments	NUM	12
+ACUTE_MDCR_PMT	Acute Inpatient Medicare Payments	NUM	12
+ACUTE_PERDIEM_PMT	Acute Inpatient Hospital Pass-thru Per Diem Payments	NUM	12
+ACUTE_PRMRY_PMT	Acute Inpatient Hospital Primary Payer Amount	NUM	12
+ACUTE_STAYS	Acute Inpatient Stays	NUM	6
+ACUTE_COV_DAYS	Acute Inpatient Medicare Covered Days	NUM	6
+READMISSIONS	Acute Inpatient Hospital Readmissions	NUM	6
+IP_ER_VISITS	Inpatient Emergency Room Visits	NUM	6
+OIP_BENE_PMT	Other Inpatient Hospital Beneficiary Payments	NUM	12
+OIP_MDCR_PMT	Other Inpatient Hospital Medicare Payments	NUM	12
+OIP_PERDIEM_PMT	Other Inpatient Pass-thru Per Diem Payments	NUM	12
+OIP_PRMRY_PMT	Other Inpatient Hospital Primary Payer Amount	NUM	12
+OIP_STAYS	Other Inpatient Stays	NUM	6
+OIP_COV_DAYS	Other Inpatient Hospital Covered Days	NUM	6
+SNF_BENE_PMT	Skilled Nursing Facility Beneficiary Payments	NUM	12
+SNF_MDCR_PMT	Skilled Nursing Facility Medicare Payments	NUM	12
+SNF_PRMRY_PMT	Skilled Nursing Facility Primary Payer Amount	NUM	12
+SNF_STAYS	Skilled Nursing Facility Stays	NUM	6
+SNF_COV_DAYS	Skilled Nursing Facility Medicare Covered Days	NUM	6
+HOS_MDCR_PMT	Hospice Medicare Payments	NUM	12
+HOS_PRMRY_PMT	Hospice Primary Payer Amount	NUM	12
+HOS_STAYS	Hospice Stays	NUM	6
+HOS_COV_DAYS	Hospice Medicare Covered Days	NUM	6
+HH_MDCR_PMT	Home Health Medicare Payments	NUM	12
+HH_PRMRY_PMT	Home Health Primary Payer Amount	NUM	12
+HH_VISITS	Home Health Visits	NUM	6
+HOP_BENE_PMT	Hospital Outpatient Beneficiary Payments	NUM	12
+HOP_MDCR_PMT	Hospital Outpatient Medicare Payments	NUM	12
+HOP_PRMRY_PMT	Hospital Outpatient Primary Payer Amount	NUM	12
+HOP_VISITS	Hospital Outpatient Visits	NUM	6
+HOP_ER_VISITS	Hospital Outpatient Emergency Room Visits	NUM	6
+ASC_BENE_PMT	Ambulatory Surgery Center Beneficiary Payments	NUM	12
+ASC_MDCR_PMT	Ambulatory Surgery Center Medicare Payments	NUM	12
+ASC_PRMRY_PMT	Ambulatory Surgery Center Primary Payer Amount	NUM	12
+ASC_EVENTS	Ambulatory Surgery Center Events	NUM	6
+ANES_BENE_PMT	Anesthesia Beneficiary Payments	NUM	12
+ANES_MDCR_PMT	Anesthesia Medicare Payments	NUM	12
+ANES_PRMRY_PMT	Anesthesia Primary Payer Amount	NUM	12
+ANES_EVENTS	Anesthesia Events	NUM	6
+PTB_DRUG_BENE_PMT	Part B Drug Beneficiary Payments	NUM	12
+PTB_DRUG_MDCR_PMT	Part B Drug Medicare Payments	NUM	12
+PTB_DRUG_PRMRY_PMT	Part B Drug Primary Payer Amount	NUM	12
+PTB_DRUG_EVENTS	Part B Drug Events	NUM	6
+EM_BENE_PMT	Evaluation and Management Beneficiary Payments	NUM	12
+EM_MDCR_PMT	Evaluation and Management Medicare Payments	NUM	12
+EM_PRMRY_PMT	Evaluation and Management Primary Payer Amount	NUM	12
+EM_EVENTS	Evaluation and Management Events	NUM	6
+PHYS_BENE_PMT	Part B Physician Beneficiary Payments	NUM	12
+PHYS_MDCR_PMT	Part B Physician Medicare Payments	NUM	12
+PHYS_PRMRY_PMT	Part B Physician Primary Payer Amount	NUM	12
+PHYS_EVENTS	Part B Physician Events	NUM	6
+DIALYS_BENE_PMT	Dialysis Beneficiary Payments	NUM	12
+DIALYS_MDCR_PMT	Dialysis Medicare Payments	NUM	12
+DIALYS_PRMRY_PMT	Dialysis Primary Payer Amount	NUM	12
+DIALYS_EVENTS	Dialysis Events	NUM	6
+OPROC_BENE_PMT	Other Procedures Beneficiary Payments	NUM	12
+OPROC_MDCR_PMT	Other Procedures Medicare Payments	NUM	12
+OPROC_PRMRY_PMT	Other Procedures Primary Payer Amount	NUM	12
+OPROC_EVENTS	Other Procedures Events	NUM	6
+IMG_BENE_PMT	Imaging Beneficiary Payments	NUM	12
+IMG_MDCR_PMT	Imaging Medicare Payments	NUM	12
+IMG_PRMRY_PMT	Imaging Primary Payer Amount	NUM	12
+IMG_EVENTS	Imaging Events	NUM	6
+TEST_BENE_PMT	Tests Beneficiary Payments	NUM	12
+TEST_MDCR_PMT	Tests Medicare Payments	NUM	12
+TEST_PRMRY_PMT	Tests Primary Payer Amount	NUM	12
+TEST_EVENTS	Tests Events	NUM	6
+DME_BENE_PMT	Durable Medical Equipment Beneficiary Payments	NUM	12
+DME_MDCR_PMT	Durable Medical Equipment Medicare Payments	NUM	12
+DME_PRMRY_PMT	Durable Medical Equipment  Primary Payer Amount	NUM	12
+DME_EVENTS	Durable Medical Equipment Events	NUM	6
+OTHC_BENE_PMT	Other Part B Carrier Beneficiary Payments	NUM	12
+OTHC_MDCR_PMT	Other Part B Carrier Medicare Payments	NUM	12
+OTHC_PRMRY_PMT	Other Part B Carrier Primary Payer Amount	NUM	12
+OTHC_EVENTS	Other Part B Carrier Events	NUM	6
+PTD_BENE_PMT	Part D Beneficiary Payments	NUM	12
+PTD_MDCR_PMT	Part D Medicare Payments	NUM	12
+PTD_EVENTS	Part D Events	NUM	6
+PTD_FILL_CNT	Part D Standardized  Fill Count	NUM	6
+PTD_TOTAL_RX_CST	Part D Total Prescription Costs	NUM	12

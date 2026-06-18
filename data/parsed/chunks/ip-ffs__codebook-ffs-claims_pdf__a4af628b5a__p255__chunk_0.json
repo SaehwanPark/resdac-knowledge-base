@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p255__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 255,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n237 \nMS_DRG_GRPR_VRSN_CD \nLABEL: \nMS-DRG Grouper Version Code \nDESCRIPTION: This field displays the Medicare-Severity Diagnosis Related Group (MS-DRG) Grouper version for the \ninpatient or skilled nursing facility (SNF) claim. \nSHORT NAME: MS_DRG_GRPR_VRSN_CD \nLONG NAME: MS_DRG_GRPR_VRSN_CD \nTYPE: \nCHAR \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nThis field is not",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

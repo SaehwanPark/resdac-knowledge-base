@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mesf-ndi__record-layout-mesf-ndi_xlsx__edccadc030__s1__chunk_6",
+  "source_document": "data/raw/assets/xlsx/edccadc03022c2b4259911530b84bb73631f6fbb.xlsx",
+  "page": 1,
+  "text": "the death certificate number 6-digits; numbers are not unique across years\nICD_CODE ICD-10 Code CHAR 4 This field indicates the ICD 10 code for the cause of death. The cause may have been recoded by NCHS. All ICD-10 cause of death codes begin with an alpha character followed by two or three digits. NDI results do not include decimals in the cause of death codes. The decimal is implied between the second and third digits for ICD-10 codes\nICD_TITLE ICD-10 Code Description CHAR 120 This field",
+  "dataset": "mesf-ndi",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mesf-ndi.xlsx"
+}

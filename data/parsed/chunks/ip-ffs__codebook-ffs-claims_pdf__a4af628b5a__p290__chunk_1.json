@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p290__chunk_1",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 290,
+  "text": "the standard provider identifiers beginning in 2007. The UPIN is almost never \npopulated after 2009. \nSHORT NAME: OT_NPI \nLONG NAME: OT_PHYSN_NPI \nTYPE: \nCHAR \nLENGTH: \n10 \nSOURCE: \nNCH \nVALUES: \n— \nCOMMENT: \nCMS has determined that dual provider identifiers (old legacy numbers and new NPI) must be \navailable in the NCH. After the 5/2007 NPI implementation, the standard system maintainers will add \nthe legacy number to the claim when it is adjudicated. We will continue to receive the OSCAR",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_202",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "the setting to which the patient is discharged. 01 = Home, 02 = Board and Care, 03 = Transitional Living, 04 = Intermediate Care, 05 = Skilled Nursing Facility, 06 = Acute Unit of Own Facility, 07 = Acute Unit of Another Facility, 08 = Chronic Hospital, 09 = Rehabilitation Facility, 10 = Other, 11 = Died, 12 = Alternate Level of Care Unit, 13 = Subacute Setting, 14 = Assisted Living Residence\n162 _44B DSCHRG_WTH_HOME_HLTH_SRVC_SW (44B) Was Patient Discharged with Home Health Services? CHAR 1 A",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

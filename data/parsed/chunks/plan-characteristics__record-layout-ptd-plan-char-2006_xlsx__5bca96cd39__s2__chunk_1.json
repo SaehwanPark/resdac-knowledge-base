@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__record-layout-ptd-plan-char-2006_xlsx__5bca96cd39__s2__chunk_1",
+  "source_document": "data/raw/assets/xlsx/5bca96cd39cc16c427cfa140c37b408838ef51df.xlsx",
+  "page": 2,
+  "text": "a contract.\n3 segment_id Segment ID Char 3 Segment identifier Premium values can differ by segment within some plans.\n4 part_b_premium_reduction_amt Part B Premium Reduction Amt Num 12 Dollar amount of Part D rebate attributed to Part B premium reduction.\n5 part_c_premium Part C Premium Num 12 Dollar amount of the Part C Basic Plus Mandatory Supplemental Premium Rate (Net of Rebates).\n6 plan_basic_premium_net_rebate Part D Basic Premium Net of Rebate Num 12 Dollar amount of the Part D Premium",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-ptd-plan-char-2006.xlsx"
+}

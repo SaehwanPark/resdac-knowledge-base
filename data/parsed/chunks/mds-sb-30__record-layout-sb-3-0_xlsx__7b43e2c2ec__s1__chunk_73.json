@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_73",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n107 C0900B_RCALL_LCTN_ROOM_CD C0900B_RCALL_LCTN_ROOM_CD C0900B Staff Assessment of Mental Status - Recalls Location of Room Code CHAR 1 The data in this column indentifies whether or not the resident was able to recall the location of their room. -=Not assessed/no information\n0=Not checked (No)\n1=Checked (Yes)\n^=Blank (skip pattern)\n108 C0900C_RCALL_STF_NAME_CD C0900C_RCALL_STF_NAME_CD C0900C Staff Assessment of Mental Status - Recalls Staff",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

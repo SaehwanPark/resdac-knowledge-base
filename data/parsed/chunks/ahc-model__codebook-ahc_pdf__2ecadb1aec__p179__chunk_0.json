@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ahc-model__codebook-ahc_pdf__2ecadb1aec__p179__chunk_0",
+  "source_document": "data/raw/assets/pdf/2ecadb1aec0f9d6e0f07a7cc628ccf35b46ec6c5.pdf",
+  "page": 179,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nAHC Model Data File Codebook │ December 2024 │ V 1.0 \n178 \nSR_SPLMTL_MH_1_2_SUM \nLABEL: \nSupplemental HRSN Mental Health Sum of SR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD \nDESCRIPTION: Screening result (SR) Supplemental health related social need (HRSN) mental health sum of \nSR_SPLMTL_MH_1_CD and SR_SPLMTL_MH_2_CD. \nLONG NAME: SR_SPLMTL_MH_1_2_SUM \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nAHC data system (derived) \nVALUES: \n0–6, or \nNull/Missing",
+  "dataset": "ahc-model",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ahc.pdf"
+}

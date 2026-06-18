@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p39__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 39,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n23 \nBENE_LRD_USE_CNT \nLABEL: \nLifetime reserve days (LRD) used by beneficiary for stay \nDESCRIPTION: The count of the number of lifetime reserve days (LRD), if any, used by the beneficiary for this stay. \nSHORT NAME: LRD_USE \nLONG NAME: BENE_LRD_USE_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nMedPAR (derived) \nVALUES: \n— \nCOMMENT: \nThis field is derived by accumulating the LRD used count that is present",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

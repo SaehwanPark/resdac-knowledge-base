@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_943",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "Indicates whether the patient was receiving hemodialysis at the time of admission. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110J2C_HMDYLS_DSCHRG_CD Other: Hemodialysis (Discharge) Indicates whether the patient was receiving hemodialysis at the time of discharge. 0. No\n1. Yes\n-. Not assessed/no information CHAR 1 x\nO0110J3A_PRTNL_DLYS_ADMSN_CD Other: Peritoneal dialysis (Admission) Indicates whether the patient was receiving peritoneal dialysis at the time of admission. 0. No\n1.",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

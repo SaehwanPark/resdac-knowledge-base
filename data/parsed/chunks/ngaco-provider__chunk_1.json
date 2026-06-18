@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ngaco-provider__chunk_1",
+  "source_document": "data/raw/html/dataset_page/6273349b5375e4ae0122178ff00841c6e978da09.html",
+  "page": null,
+  "text": "in the NGACO Model.\nWhat does this file include? (variable highlights)\n- ACO identifier\n- Performance year\n- Organization Name\n- CMS organization identifiers including Tax Identification Number, CMS Certification Number (CCN)\n- Provider type description\nSpecial considerations\n- This file can be linked to any other CMS file that contains the ORG_TIN, ORG_NPI or ORG_CCN\n- Providers can be linked to their assigned beneficiaries by linking the ACO_ID in the provider file to the ACO_NUM in the",
+  "dataset": "ngaco-provider",
+  "url": "https://resdac.org/cms-data/files/ngaco-provider"
+}

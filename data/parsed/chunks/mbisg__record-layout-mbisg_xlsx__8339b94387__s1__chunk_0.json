@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbisg__record-layout-mbisg_xlsx__8339b94387__s1__chunk_0",
+  "source_document": "data/raw/assets/xlsx/8339b9438785fd135da3bd57eca7910fa46eea2d.xlsx",
+  "page": 1,
+  "text": "CMS Chronic Conditions Warehouse (CCW) Data Dictionary\nMedicare Bayesian Improved Surname Geocoding (MBISG) File\nVersion — January 2025\nSAS name Label Type Length Format Values\nBENE_ID Encrypted CCW Beneficiary ID CHAR 15\nRFRNC_DT Data File Reference Date DATE 8 DATE9. 01MAR2023; 01MAR2024\nMBISG_VRSN Version of the MBISG algorithm CHAR 5 5 2.1.2\nRE_PRBLTY_AIAN R/E probability - American Indian or Alaska Native NUM 8 12.1 x.xxxxxxxxx\nRE_PRBLTY_AANHPI R/E probability - Asian American and Native",
+  "dataset": "mbisg",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbisg.xlsx"
+}

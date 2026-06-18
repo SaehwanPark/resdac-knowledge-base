@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ffs-cahps-datadictionary-2025-ccw_pdf__ca6eb08dee__p8__chunk_5",
+  "source_document": "data/raw/assets/pdf/ca6eb08deec69a2ca0c053e0e47dab882908b143.pdf",
+  "page": 8,
+  "text": "from sa_age \nAGE \neduc \nRECODE : Highest education level completed \nEDU \nrace_hisp \nRECODE : Hispanic or latino origin/descent \nHSP \nrace_white \nRECODE : Race: white \nYNE \nrace_black \nRECODE : Race: black or african american \nYNE \nrace_asian \nRECODE : Race: asian \nYNE \nrace_pacific \nRECODE : Race: native hawaiian or other pacific islander \nYNE \nrace_natamer \nRECODE : Race: american indian or alaska native \nYNE \nproxy \nRECODE : Someone helped complete survey \nYNA \nproxy_read \nRECODE : How",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/FFS_CAHPS_DataDictionary_2025_CCW.pdf"
+}

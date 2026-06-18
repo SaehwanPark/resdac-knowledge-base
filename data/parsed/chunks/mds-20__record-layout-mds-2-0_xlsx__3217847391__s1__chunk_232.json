@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_232",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "None of Above Accidents CHAR 1 Health conditions: accidents - none of above. 0 = No, 1 = Yes, \"-\" = Unknown.\n373 J5A J5A_UNSTABLE_COND (J5A) Conditions/Disease Make Residents Mood/Behavior Unstable CHAR 1 Health conditions: stability of conditions - conditions/diseases lead to instability. 0 = No, 1 = Yes, \"-\" = Unknown.\n374 J5B J5B_ACUTE_EPISODE (J5B) Resident Experiencing Episode of Recurrent/Chronic Problem CHAR 1 Health conditions: stability of conditions - resident experiencing acute",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

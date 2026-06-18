@@ -1,0 +1,1603 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	IP file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+FI_CLM_PROC_DT	FI_CLM_PROC_DT	FI Claim Process Date	DATE	8	8
+QUERY_CD	CLAIM_QUERY_CODE	Claim Query Code	CHAR	1	9
+PROVIDER	PRVDR_NUM	Provider Number	CHAR	6	10
+PRVDR_FULL_CCN_NUM	PRVDR_FULL_CCN_NUM	Full CMS Certification Number for Provider	CHAR	13	251	New5
+FAC_TYPE	CLM_FAC_TYPE_CD	Claim Facility Type Code	CHAR	1	11
+OWNG_PRVDR_TIN_NUM	OWNG_PRVDR_TIN_NUM	Owning Provider Tax Identification Number (TIN)	CHAR	10	246	New5
+TYPESRVC	CLM_SRVC_CLSFCTN_TYPE_CD	Claim Service classification Type Code	CHAR	1	12
+FREQ_CD	CLM_FREQ_CD	Claim Frequency Code	CHAR	1	13
+FI_NUM	FI_NUM	FI or MAC Number	CHAR	5	14
+NOPAY_CD	CLM_MDCR_NON_PMT_RSN_CD	Claim Medicare Non Payment Reason Code	CHAR	2	15
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	16
+PRPAYAMT	NCH_PRMRY_PYR_CLM_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	17
+PRPAY_CD	NCH_PRMRY_PYR_CD	NCH Primary Payer Code (if not Medicare)	CHAR	1	18
+ACTIONCD	FI_CLM_ACTN_CD	FI or MAC Claim Action Code	CHAR	1	19
+PRSTATE	PRVDR_STATE_CD	NCH Provider SSA State Code	CHAR	2	20
+ORGNPINM	ORG_NPI_NUM	Organization NPI Number	CHAR	10	21
+AT_UPIN	AT_PHYSN_UPIN	Claim Attending Physician UPIN Number	CHAR	6	22
+AT_NPI	AT_PHYSN_NPI	Claim Attending Physician NPI Number	CHAR	10	23
+AT_PHYSN_SPCLTY_CD	AT_PHYSN_SPCLTY_CD	Claim Attending Physician Specialty Code	CHAR	2	24
+OP_UPIN	OP_PHYSN_UPIN	Claim Operating Physician UPIN Number	CHAR	6	25
+OP_NPI	OP_PHYSN_NPI	Claim Operating Physician NPI Number	CHAR	10	26
+OP_PHYSN_SPCLTY_CD	OP_PHYSN_SPCLTY_CD	Claim Operating Physician Specialty Code	CHAR	2	27
+OT_UPIN	OT_PHYSN_UPIN	Claim Other Physician UPIN Number	CHAR	6	28
+OT_NPI	OT_PHYSN_NPI	Claim Other Physician NPI Number	CHAR	10	29
+OT_PHYSN_SPCLTY_CD	OT_PHYSN_SPCLTY_CD	Claim Other Physician Specialty Code	CHAR	2	30
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Claim Rendering Physician NPI Number	CHAR	12	31
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Claim Rendering Physician Specialty Code	CHAR	2	32
+MCOPDSW	CLM_MCO_PD_SW	Claim MCO Paid Switch	CHAR	1	33
+STUS_CD	PTNT_DSCHRG_STUS_CD	Patient Discharge Status Code	CHAR	2	34
+PPS_IND	CLM_PPS_IND_CD	Claim PPS Indicator Code	CHAR	1	35
+TOT_CHRG	CLM_TOT_CHRG_AMT	Claim Total Charge Amount	NUM	12	36
+ADMSN_DT	CLM_ADMSN_DT	Claim Admission Date	DATE	8	37
+TYPE_ADM	CLM_IP_ADMSN_TYPE_CD	Claim Inpatient Admission Type Code	CHAR	1	38
+SRC_ADMS	CLM_SRC_IP_ADMSN_CD	Claim Source Inpatient Admission Code	CHAR	1	39
+PTNTSTUS	NCH_PTNT_STATUS_IND_CD	NCH Patient  Status Indicator Code	CHAR	1	40
+PER_DIEM	CLM_PASS_THRU_PER_DIEM_AMT	Claim Pass Thru Per Diem Amount	NUM	12	41
+DED_AMT	NCH_BENE_IP_DDCTBL_AMT	NCH Beneficiary Inpatient (or other Part A) Deductible Amount	NUM	12	42
+COIN_AMT	NCH_BENE_PTA_COINSRNC_LBLTY_AM	NCH Beneficiary Part A Coinsurance Liability Amount	NUM	12	43
+BLDDEDAM	NCH_BENE_BLOOD_DDCTBL_LBLTY_AM	NCH Beneficiary Blood Deductible Liability Amount	NUM	12	44
+PCCHGAMT	NCH_PROFNL_CMPNT_CHRG_AMT	NCH Professional Component Charge Amount	NUM	12	45
+NCCHGAMT	NCH_IP_NCVRD_CHRG_AMT	NCH Inpatient (or other Part A) Noncovered Charge Amount	NUM	12	46
+TDEDAMT	NCH_IP_TOT_DDCTN_AMT	NCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount	NUM	12	47
+PPS_CPTL	CLM_TOT_PPS_CPTL_AMT	Claim Total PPS Capital Amount	NUM	12	48
+CPTL_FSP	CLM_PPS_CPTL_FSP_AMT	Claim PPS Capital Federal Specific Portion (FSP) Amount	NUM	12	49
+CPTLOUTL	CLM_PPS_CPTL_OUTLIER_AMT	Claim PPS Capital Outlier Amount	NUM	12	50
+DISP_SHR	CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT	Claim PPS Capital Disproportionate Share (DSH) Amount	NUM	12	51
+IME_AMT	CLM_PPS_CPTL_IME_AMT	Claim PPS Capital Indirect Medical Education (IME) Amount	NUM	12	52
+CPTL_EXP	CLM_PPS_CPTL_EXCPTN_AMT	Claim PPS Capital Exception Amount	NUM	12	53
+HLDHRMLS	CLM_PPS_OLD_CPTL_HLD_HRMLS_AMT	Claim PPS Old Capital Hold Harmless Amount	NUM	12	54
+DRGWTAMT	CLM_PPS_CPTL_DRG_WT_NUM	Claim PPS Capital DRG Weight Number	NUM	8	55
+UTIL_DAY	CLM_UTLZTN_DAY_CNT	Claim Medicare Utilization Day Count	NUM	3	56
+COIN_DAY	BENE_TOT_COINSRNC_DAYS_CNT	Beneficiary Total Coinsurance Days Count	NUM	3	57
+LRD_USE	BENE_LRD_USED_CNT	Beneficiary Medicare Lifetime Reserve Days (LRD) Used Count	NUM	3	58
+NUTILDAY	CLM_NON_UTLZTN_DAYS_CNT	Claim Medicare Non Utilization Days Count	NUM	5	59
+BLDFRNSH	NCH_BLOOD_PNTS_FRNSHD_QTY	NCH Blood Pints Furnished Quantity	NUM	3	60
+NCOVFROM	NCH_VRFD_NCVRD_STAY_FROM_DT	NCH Verified Noncovered Stay From Date	DATE	8	61
+NCOVTHRU	NCH_VRFD_NCVRD_STAY_THRU_DT	NCH Verified Noncovered Stay Through Date	DATE	8	62
+CARETHRU	NCH_ACTV_OR_CVRD_LVL_CARE_THRU	NCH Active or Covered Level Care Thru Date	DATE	8	63
+EXHST_DT	NCH_BENE_MDCR_BNFTS_EXHTD_DT_I	NCH Beneficiary Medicare Benefits Exhausted Date	DATE	8	64
+DSCHRGDT	NCH_BENE_DSCHRG_DT	NCH Beneficiary Discharge Date	DATE	8	65
+DRG_CD	CLM_DRG_CD	Claim Diagnosis Related Group Code (or MS-DRG Code)	CHAR	4	66
+MS_DRG_GRPR_VRSN_CD	MS_DRG_GRPR_VRSN_CD	MS-DRG Grouper Version Code	CHAR	8	250	New5
+CLM_IP_INITL_MS_DRG_CD	CLM_IP_INITL_MS_DRG_CD	Claim Inpatient Initial MS DRG Code	CHAR	4	243	New2
+OUTLR_CD	CLM_DRG_OUTLIER_STAY_CD	Claim Diagnosis Related Group Outlier Stay Code	CHAR	1	67
+OUTLRPMT	NCH_DRG_OUTLIER_APRVD_PMT_AMT	NCH DRG Outlier Approved Payment Amount	NUM	12	68
+ADMTG_DGNS_CD	ADMTG_DGNS_CD	Claim Admitting Diagnosis Code	CHAR	7	69
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	70
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	71
+CLM_POA_IND_SW1	CLM_POA_IND_SW1	Claim Diagnosis Code I Diagnosis Present on Admission (POA) Indicator Code	CHAR	1	72
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	73
+CLM_POA_IND_SW2	CLM_POA_IND_SW2	Claim Diagnosis Code II Diagnosis Present on Admission (POA) Indicator Code	CHAR	1	74
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	75
+CLM_POA_IND_SW3	CLM_POA_IND_SW3	Claim Diagnosis Code III Diagnosis Present on Admission (POA) Indicator Code	CHAR	1	76
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	77
+CLM_POA_IND_SW4	CLM_POA_IND_SW4	Claim Diagnosis Code IV Diagnosis Present on Admission (POA) Indicator Code	CHAR	1	78
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	79
+CLM_POA_IND_SW5	CLM_POA_IND_SW5	Claim Diagnosis Code V Diagnosis Present on Admission (POA) Indicator Code	CHAR	1	80
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	81
+CLM_POA_IND_SW6	CLM_POA_IND_SW6	Claim Diagnosis Code VI Diagnosis Present on Admission Indicator Code	CHAR	1	82
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	83
+CLM_POA_IND_SW7	CLM_POA_IND_SW7	Claim Diagnosis Code VII Diagnosis Present on Admission Indicator Code	CHAR	1	84
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	85
+CLM_POA_IND_SW8	CLM_POA_IND_SW8	Claim Diagnosis Code VIII Diagnosis Present on Admission Indicator Code	CHAR	1	86
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	87
+CLM_POA_IND_SW9	CLM_POA_IND_SW9	Claim Diagnosis Code IX Diagnosis Present on Admission Indicator Code	CHAR	1	88
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	89
+CLM_POA_IND_SW10	CLM_POA_IND_SW10	Claim Diagnosis Code X Diagnosis Present on Admission Indicator Code	CHAR	1	90
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	91
+CLM_POA_IND_SW11	CLM_POA_IND_SW11	Claim Diagnosis Code XI Diagnosis Present on Admission Indicator Code	CHAR	1	92
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	93
+CLM_POA_IND_SW12	CLM_POA_IND_SW12	Claim Diagnosis Code XII Diagnosis Present on Admission Indicator Code	CHAR	1	94
+ICD_DGNS_CD13	ICD_DGNS_CD13	Claim Diagnosis Code XIII	CHAR	7	95
+CLM_POA_IND_SW13	CLM_POA_IND_SW13	Claim Diagnosis Code XIII Diagnosis Present on Admission Indicator Code	CHAR	1	96
+ICD_DGNS_CD14	ICD_DGNS_CD14	Claim Diagnosis Code XIV	CHAR	7	97
+CLM_POA_IND_SW14	CLM_POA_IND_SW14	Claim Diagnosis Code XIV Diagnosis Present on Admission Indicator Code	CHAR	1	98
+ICD_DGNS_CD15	ICD_DGNS_CD15	Claim Diagnosis Code XV	CHAR	7	99
+CLM_POA_IND_SW15	CLM_POA_IND_SW15	Claim Diagnosis Code XV Diagnosis Present on Admission Indicator Code	CHAR	1	100
+ICD_DGNS_CD16	ICD_DGNS_CD16	Claim Diagnosis Code XVI	CHAR	7	101
+CLM_POA_IND_SW16	CLM_POA_IND_SW16	Claim Diagnosis Code XVI Diagnosis Present on Admission Indicator Code	CHAR	1	102
+ICD_DGNS_CD17	ICD_DGNS_CD17	Claim Diagnosis Code XVII	CHAR	7	103
+CLM_POA_IND_SW17	CLM_POA_IND_SW17	Claim Diagnosis Code XVII Diagnosis Present on Admission Indicator Code	CHAR	1	104
+ICD_DGNS_CD18	ICD_DGNS_CD18	Claim Diagnosis Code XVIII	CHAR	7	105
+CLM_POA_IND_SW18	CLM_POA_IND_SW18	Claim Diagnosis Code XVIII Diagnosis Present on Admission Indicator Code	CHAR	1	106
+ICD_DGNS_CD19	ICD_DGNS_CD19	Claim Diagnosis Code XIX	CHAR	7	107
+CLM_POA_IND_SW19	CLM_POA_IND_SW19	Claim Diagnosis Code XIX Diagnosis Present on Admission Indicator Code	CHAR	1	108
+ICD_DGNS_CD20	ICD_DGNS_CD20	Claim Diagnosis Code XX	CHAR	7	109
+CLM_POA_IND_SW20	CLM_POA_IND_SW20	Claim Diagnosis Code XX Diagnosis Present on Admission Indicator Code	CHAR	1	110
+ICD_DGNS_CD21	ICD_DGNS_CD21	Claim Diagnosis Code XXI	CHAR	7	111
+CLM_POA_IND_SW21	CLM_POA_IND_SW21	Claim Diagnosis Code XXI Diagnosis Present on Admission Indicator Code	CHAR	1	112
+ICD_DGNS_CD22	ICD_DGNS_CD22	Claim Diagnosis Code XXII	CHAR	7	113
+CLM_POA_IND_SW22	CLM_POA_IND_SW22	Claim Diagnosis Code XXII Diagnosis Present on Admission Indicator Code	CHAR	1	114
+ICD_DGNS_CD23	ICD_DGNS_CD23	Claim Diagnosis Code XXIII	CHAR	7	115
+CLM_POA_IND_SW23	CLM_POA_IND_SW23	Claim Diagnosis Code XXIII Diagnosis Present on Admission Indicator Code	CHAR	1	116
+ICD_DGNS_CD24	ICD_DGNS_CD24	Claim Diagnosis Code XXIV	CHAR	7	117
+CLM_POA_IND_SW24	CLM_POA_IND_SW24	Claim Diagnosis Code XXIV Diagnosis Present on Admission Indicator Code	CHAR	1	118
+ICD_DGNS_CD25	ICD_DGNS_CD25	Claim Diagnosis Code XXV	CHAR	7	119
+CLM_POA_IND_SW25	CLM_POA_IND_SW25	Claim Diagnosis Code XXV Diagnosis Present on Admission Indicator Code	CHAR	1	120
+FST_DGNS_E_CD	FST_DGNS_E_CD	First Claim Diagnosis E Code	CHAR	7	121
+ICD_DGNS_E_CD1	ICD_DGNS_E_CD1	Claim Diagnosis E Code I	CHAR	7	122
+CLM_E_POA_IND_SW1	CLM_E_POA_IND_SW1	Claim Diagnosis E Code I Diagnosis Present on Admission Indicator Code	CHAR	1	123
+ICD_DGNS_E_CD2	ICD_DGNS_E_CD2	Claim Diagnosis E Code II	CHAR	7	124
+CLM_E_POA_IND_SW2	CLM_E_POA_IND_SW2	Claim Diagnosis E Code II Diagnosis Present on Admission Indicator Code	CHAR	1	125
+ICD_DGNS_E_CD3	ICD_DGNS_E_CD3	Claim Diagnosis E Code III	CHAR	7	126
+CLM_E_POA_IND_SW3	CLM_E_POA_IND_SW3	Claim Diagnosis E Code III Diagnosis Present on Admission Indicator Code	CHAR	1	127
+ICD_DGNS_E_CD4	ICD_DGNS_E_CD4	Claim Diagnosis E Code IV	CHAR	7	128
+CLM_E_POA_IND_SW4	CLM_E_POA_IND_SW4	Claim Diagnosis E Code IV Diagnosis Present on Admission Indicator Code	CHAR	1	129
+ICD_DGNS_E_CD5	ICD_DGNS_E_CD5	Claim Diagnosis E Code V	CHAR	7	130
+CLM_E_POA_IND_SW5	CLM_E_POA_IND_SW5	Claim Diagnosis E Code V Diagnosis Present on Admission Indicator Code	CHAR	1	131
+ICD_DGNS_E_CD6	ICD_DGNS_E_CD6	Claim Diagnosis E Code VI	CHAR	7	132
+CLM_E_POA_IND_SW6	CLM_E_POA_IND_SW6	Claim Diagnosis E Code VI Diagnosis Present on Admission Indicator Code	CHAR	1	133
+ICD_DGNS_E_CD7	ICD_DGNS_E_CD7	Claim Diagnosis E Code VII	CHAR	7	134
+CLM_E_POA_IND_SW7	CLM_E_POA_IND_SW7	Claim Diagnosis E Code VII Diagnosis Present on Admission Indicator Code	CHAR	1	135
+ICD_DGNS_E_CD8	ICD_DGNS_E_CD8	Claim Diagnosis E Code VIII	CHAR	7	136
+CLM_E_POA_IND_SW8	CLM_E_POA_IND_SW8	Claim Diagnosis E Code VIII Diagnosis Present on Admission Indicator Code	CHAR	1	137
+ICD_DGNS_E_CD9	ICD_DGNS_E_CD9	Claim Diagnosis E Code IX	CHAR	7	138
+CLM_E_POA_IND_SW9	CLM_E_POA_IND_SW9	Claim Diagnosis E Code IX Diagnosis Present on Admission Indicator Code	CHAR	1	139
+ICD_DGNS_E_CD10	ICD_DGNS_E_CD10	Claim Diagnosis E Code X	CHAR	7	140
+CLM_E_POA_IND_SW10	CLM_E_POA_IND_SW10	Claim Diagnosis E Code X Diagnosis Present on Admission Indicator Code	CHAR	1	141
+ICD_DGNS_E_CD11	ICD_DGNS_E_CD11	Claim Diagnosis E Code XI	CHAR	7	142
+CLM_E_POA_IND_SW11	CLM_E_POA_IND_SW11	Claim Diagnosis E Code XI Diagnosis Present on Admission Indicator Code	CHAR	1	143
+ICD_DGNS_E_CD12	ICD_DGNS_E_CD12	Claim Diagnosis E Code XII	CHAR	7	144
+CLM_E_POA_IND_SW12	CLM_E_POA_IND_SW12	Claim Diagnosis E Code XII Diagnosis Present on Admission Indicator Code	CHAR	1	145
+ICD_PRCDR_CD1	ICD_PRCDR_CD1	Claim Procedure Code I	CHAR	7	146
+PRCDR_DT1	PRCDR_DT1	Claim Procedure Code I Date	DATE	8	147
+ICD_PRCDR_CD2	ICD_PRCDR_CD2	Claim Procedure Code II	CHAR	7	148
+PRCDR_DT2	PRCDR_DT2	Claim Procedure Code II Date	DATE	8	149
+ICD_PRCDR_CD3	ICD_PRCDR_CD3	Claim Procedure Code III	CHAR	7	150
+PRCDR_DT3	PRCDR_DT3	Claim Procedure Code III Date	DATE	8	151
+ICD_PRCDR_CD4	ICD_PRCDR_CD4	Claim Procedure Code IV	CHAR	7	152
+PRCDR_DT4	PRCDR_DT4	Claim Procedure Code IV Date	DATE	8	153
+ICD_PRCDR_CD5	ICD_PRCDR_CD5	Claim Procedure Code V	CHAR	7	154
+PRCDR_DT5	PRCDR_DT5	Claim Procedure Code V Date	DATE	8	155
+ICD_PRCDR_CD6	ICD_PRCDR_CD6	Claim Procedure Code VI	CHAR	7	156
+PRCDR_DT6	PRCDR_DT6	Claim Procedure Code VI Date	DATE	8	157
+ICD_PRCDR_CD7	ICD_PRCDR_CD7	Claim Procedure Code VII	CHAR	7	158
+PRCDR_DT7	PRCDR_DT7	Claim Procedure CodeVII Date	DATE	8	159
+ICD_PRCDR_CD8	ICD_PRCDR_CD8	Claim Procedure Code VIII	CHAR	7	160
+PRCDR_DT8	PRCDR_DT8	Claim Procedure Code VIII Date	DATE	8	161
+ICD_PRCDR_CD9	ICD_PRCDR_CD9	Claim Procedure Code IX	CHAR	7	162
+PRCDR_DT9	PRCDR_DT9	Claim Procedure Code IX Date	DATE	8	163
+ICD_PRCDR_CD10	ICD_PRCDR_CD10	Claim Procedure Code X	CHAR	7	164
+PRCDR_DT10	PRCDR_DT10	Claim Procedure Code X Date	DATE	8	165
+ICD_PRCDR_CD11	ICD_PRCDR_CD11	Claim Procedure Code XI	CHAR	7	166
+PRCDR_DT11	PRCDR_DT11	Claim Procedure Code XI Date	DATE	8	167
+ICD_PRCDR_CD12	ICD_PRCDR_CD12	Claim Procedure Code XII	CHAR	7	168
+PRCDR_DT12	PRCDR_DT12	Claim Procedure Code XII Date	DATE	8	169
+ICD_PRCDR_CD13	ICD_PRCDR_CD13	Claim Procedure Code XIII	CHAR	7	170
+PRCDR_DT13	PRCDR_DT13	Claim Procedure Code XIII Date	DATE	8	171
+ICD_PRCDR_CD14	ICD_PRCDR_CD14	Claim Procedure Code XIV	CHAR	7	172
+PRCDR_DT14	PRCDR_DT14	Claim Procedure Code XIV Date	DATE	8	173
+ICD_PRCDR_CD15	ICD_PRCDR_CD15	Claim Procedure Code XV	CHAR	7	174
+PRCDR_DT15	PRCDR_DT15	Claim Procedure Code XV Date	DATE	8	175
+ICD_PRCDR_CD16	ICD_PRCDR_CD16	Claim Procedure Code XVI	CHAR	7	176
+PRCDR_DT16	PRCDR_DT16	Claim Procedure Code XVI Date	DATE	8	177
+ICD_PRCDR_CD17	ICD_PRCDR_CD17	Claim Procedure Code XVII	CHAR	7	178
+PRCDR_DT17	PRCDR_DT17	Claim Procedure Code XVII Date	DATE	8	179
+ICD_PRCDR_CD18	ICD_PRCDR_CD18	Claim Procedure Code XVIII	CHAR	7	180
+PRCDR_DT18	PRCDR_DT18	Claim Procedure Code XVIII Date	DATE	8	181
+ICD_PRCDR_CD19	ICD_PRCDR_CD19	Claim Procedure Code XIX	CHAR	7	182
+PRCDR_DT19	PRCDR_DT19	Claim Procedure Code XIX Date	DATE	8	183
+ICD_PRCDR_CD20	ICD_PRCDR_CD20	Claim Procedure Code XX	CHAR	7	184
+PRCDR_DT20	PRCDR_DT20	Claim Procedure Code XX Date	DATE	8	185
+ICD_PRCDR_CD21	ICD_PRCDR_CD21	Claim Procedure Code XXI	CHAR	7	186
+PRCDR_DT21	PRCDR_DT21	Claim Procedure Code XXI Date	DATE	8	187
+ICD_PRCDR_CD22	ICD_PRCDR_CD22	Claim Procedure Code XXII	CHAR	7	188
+PRCDR_DT22	PRCDR_DT22	Claim Procedure Code XXII Date	DATE	8	189
+ICD_PRCDR_CD23	ICD_PRCDR_CD23	Claim Procedure Code XXIII	CHAR	7	190
+PRCDR_DT23	PRCDR_DT23	Claim Procedure Code XXIII Date	DATE	8	191
+ICD_PRCDR_CD24	ICD_PRCDR_CD24	Claim Procedure Code XXIV	CHAR	7	192
+PRCDR_DT24	PRCDR_DT24	Claim Procedure Code XXIV Date	DATE	8	193
+ICD_PRCDR_CD25	ICD_PRCDR_CD25	Claim Procedure Code XXV	CHAR	7	194
+PRCDR_DT25	PRCDR_DT25	Claim Procedure Code XXV Date	DATE	8	195
+IME_OP	IME_OP_CLM_VAL_AMT	Operating Indirect Medical Education (IME) Amount	NUM	12	196
+DSH_OP	DSH_OP_CLM_VAL_AMT	Operating Disproportionate Share Amount	NUM	12	197
+DOB_DT	DOB_DT	Date of Birth from Claim	DATE	8	198
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	199
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	200
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	201
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	202
+CLM_MDCL_REC	CLM_MDCL_REC	Claim Medical Record Number	CHAR	17	203
+CLM_TRTMT_AUTHRZTN_NUM	CLM_TRTMT_AUTHRZTN_NUM	Claim Treatment Authorization Number	CHAR	18	204
+CLM_PRCR_RTRN_CD	CLM_PRCR_RTRN_CD	Claim Pricer Return Code	CHAR	2	205
+CLM_PRCR_VRSN_CD	CLM_PRCR_VRSN_CD	Claim Pricer Version Code	CHAR	10	249	New5
+CLM_SRVC_FAC_ZIP_CD	CLM_SRVC_FAC_ZIP_CD	Claim service facility ZIP code (where service was provided)	CHAR	9	206
+CLM_IP_LOW_VOL_PMT_AMT	CLM_IP_LOW_VOL_PMT_AMT	Claim Inpatient Low Volume Payment Amount	NUM	12	207
+CLM_CARE_IMPRVMT_MODEL_CD1	CLM_CARE_IMPRVMT_MODEL_CD1	Claim Care Improvement Model 1 Code (budled payment)	CHAR	2	208
+CLM_CARE_IMPRVMT_MODEL_CD2	CLM_CARE_IMPRVMT_MODEL_CD2	Claim Care Improvement Model 2 Code	CHAR	2	209
+CLM_CARE_IMPRVMT_MODEL_CD3	CLM_CARE_IMPRVMT_MODEL_CD3	Claim Care Improvement Model 3 Code	CHAR	2	210
+CLM_CARE_IMPRVMT_MODEL_CD4	CLM_CARE_IMPRVMT_MODEL_CD4	Claim Care Improvement Model 4 Code	CHAR	2	211
+CLM_BNDLD_MODEL_1_DSCNT_PCT	CLM_BNDLD_MODEL_1_DSCNT_PCT	Claim Bundled Model 1 Discount Percent	NUM	8	212
+CLM_BASE_OPRTG_DRG_AMT	CLM_BASE_OPRTG_DRG_AMT	Claim Base Operating DRG Amount	NUM	12	213
+CLM_VBP_PRTCPNT_IND_CD	CLM_VBP_PRTCPNT_IND_CD	Claim Value-Based Purchasing (VBP) Participant Indicator Code	CHAR	1	214
+CLM_VBP_ADJSTMT_PCT	CLM_VBP_ADJSTMT_PCT	Claim VBP Adjustment Percent	NUM	15	215
+CLM_HRR_PRTCPNT_IND_CD	CLM_HRR_PRTCPNT_IND_CD	Claim Hospital Readmission Rdctn (HRR) Participant Indicator Code	CHAR	1	216
+CLM_HRR_ADJSTMT_PCT	CLM_HRR_ADJSTMT_PCT	Claim HRR Adjustment Percent	NUM	8	217
+CLM_MODEL_4_READMSN_IND_CD	CLM_MODEL_4_READMSN_IND_CD	Claim Model 4 Readmission Indicator Code	CHAR	1	218
+CLM_UNCOMPD_CARE_PMT_AMT	CLM_UNCOMPD_CARE_PMT_AMT	Claim Uncompensated Care Payment Amount	NUM	12	219
+CLM_BNDLD_ADJSTMT_PMT_AMT	CLM_BNDLD_ADJSTMT_PMT_AMT	Claim Bundled Adjustment Payment Amount	NUM	12	220
+CLM_VBP_ADJSTMT_PMT_AMT	CLM_VBP_ADJSTMT_PMT_AMT	Claim Value Based Purchasing Adjustment Payment Amount	NUM	12	221
+CLM_HRR_ADJSTMT_PMT_AMT	CLM_HRR_ADJSTMT_PMT_AMT	Claim Hospital Readmission Reduction (HRR) Adjustment Payment Amount	NUM	12	222
+EHR_PYMT_ADJSTMT_AMT	EHR_PYMT_ADJSTMT_AMT	Claim Electronic Health Record (EHR) Payment Adjustment Amount	NUM	12	223
+PPS_STD_VAL_PYMT_AMT	PPS_STD_VAL_PYMT_AMT	Standard Payment Amount	NUM	12	224
+FINL_STD_AMT	FINL_STD_AMT	Claim Final Standard Payment Amount	NUM	12	225
+CLM_FULL_STD_PYMT_AMT	CLM_FULL_STD_PYMT_AMT	Claim Full Standard Payment Amount	NUM	12	230
+CLM_SS_OUTLIER_STD_PYMT_AMT	CLM_SS_OUTLIER_STD_PYMT_AMT	Claim Short Stay Outlier (SSO) Standard Payment Amount	NUM	12	231
+HAC_PGM_RDCTN_IND_SW	HAC_PGM_RDCTN_IND_SW	Claim Hospital Acquired Condition (HAC) Program Reduction Indicator Switch	CHAR	1	226
+EHR_PGM_RDCTN_IND_SW	EHR_PGM_RDCTN_IND_SW	Claim Electronic Health Records (EHR) Program Reduction Indicator Switch	CHAR	1	227
+CLM_SITE_NTRL_PYMT_CST_AMT	CLM_SITE_NTRL_PYMT_CST_AMT	Claim Site Neutral Payment Based on Cost Amount	NUM	12	228
+CLM_SITE_NTRL_PYMT_IPPS_AMT	CLM_SITE_NTRL_PYMT_IPPS_AMT	Claim Site Neutral Payment Based on inpatient prospective payment system (IPPS) Amounts	NUM	12	229
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	232
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	233
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	234
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	235
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	236
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	237
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	238
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	239	New2
+CLM_RP_IND_CD	CLM_RP_IND_CD	Claim Representative Payee (RP) Indicator Code	CHAR	1	240	New2
+PRVDR_VLDTN_TYPE_CD	PRVDR_VLDTN_TYPE_CD	Provider Validation Type Code	CHAR	2	241	New2
+RR_BRD_EXCLSN_IND_SW	RR_BRD_EXCLSN_IND_SW	Railroad Board Exclusion Indicator Switch	CHAR	1	242	New2
+CLM_MODEL_REIMBRSMT_AMT	CLM_MODEL_REIMBRSMT_AMT	Claim Model Reimbursement Amount	NUM	12	244	New3
+LTCH_DSCHRG_PYMT_ADJSTMT_AMT	LTCH_DSCHRG_PYMT_ADJSTMT_AMT	LTCH Discharge Payment Adjustment Amount	NUM	12	245	New4
+CLM_ADJUST_GRP_CD	CLM_ADJUST_GRP_CD	Claim Adjustment Group Code	CHAR	2	246	New5
+CLM_ADJUST_RSN_CD	CLM_ADJUST_RSN_CD	Claim Adjustment Reason Code	CHAR	5	248	New5
+CLM_CLNCL_TRIL_NUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	252	New6
+Revenue center file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	3
+CLM_LN	CLM_LINE_NUM	Claim Line Number	NUM	13	4
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	5
+REV_CNTR	REV_CNTR	Revenue Center Code	CHAR	4	6
+HCPCS_CD	HCPCS_CD	HCFA Common Procedure Coding System (HCPCS) Code	CHAR	5	7
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	8
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	9
+MDFR_CD3	HCPCS_3RD_MDFR_CD	HCPCS Third Modifier Code	CHAR	5	10
+REV_UNIT	REV_CNTR_UNIT_CNT	Revenue Center Unit Count	NUM	8	11
+REV_RATE	REV_CNTR_RATE_AMT	Revenue Center Rate Amount	NUM	12	12
+REV_CHRG	REV_CNTR_TOT_CHRG_AMT	Revenue Center Total Charge Amount	NUM	12	13
+REV_NCVR	REV_CNTR_NCVRD_CHRG_AMT	Revenue Center Non-Covered Charge Amount	NUM	12	14
+REVDEDCD	REV_CNTR_DDCTBL_COINSRNC_CD	Revenue Center Deductible Coinsurance Code	CHAR	1	15
+REV_CNTR_NDC_QTY	REV_CNTR_NDC_QTY	Revenue Center National Drug Code (NDC) Quantity	NUM	10	16
+REV_CNTR_NDC_QTY_QLFR_CD	REV_CNTR_NDC_QTY_QLFR_CD	Revenue Center NDC Quantity Qualifier Code	CHAR	2	17
+RNDRNG_PHYSN_UPIN	RNDRNG_PHYSN_UPIN	Revenue Center Rendering Physician UPIN	CHAR	12	18
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Revenue Center Rendering Physician NPI	CHAR	12	19
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Revenue Center Rendering Physician Specialty Code	CHAR	2	20
+IDENDC	REV_CNTR_IDE_NDC_UPC_NUM	Revenue Center IDE, NDC, or UPC Number	CHAR	24	21
+REV_CNTR_PRCNG_IND_CD	REV_CNTR_PRCNG_IND_CD	Revenue Center Pricing Indicator Code	CHAR	2	22
+THRPY_CAP_IND_CD1	THRPY_CAP_IND_CD1	Revenue Center Therapy Cap Indicator 1 Code	CHAR	1	23
+THRPY_CAP_IND_CD2	THRPY_CAP_IND_CD2	Revenue Center Therapy Cap Indicator 2 Code	CHAR	1	24
+RC_MODEL_REIMBRSMT_AMT	RC_MODEL_REIMBRSMT_AMT	Revenue Center Model Reimbursement Amount	NUM	12	25	New3
+REV_CNTR_ADJUST_GRP_CD	REV_CNTR_ADJUST_GRP_CD	Revenue Center Adjustment Group Code	CHAR	2	26	New5
+REV_CNTR_ADJUST_RSN_CD	REV_CNTR_ADJUST_RSN_CD	Revenue Center Adjustment Reason Code	CHAR	5	27	New5
+Condition code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTCNDSQ	RLT_COND_CD_SEQ	Claim Related Condition Code Sequence	CHAR	2	4
+RLT_COND	CLM_RLT_COND_CD	Claim Related Condition Code	CHAR	2	5
+Occurrence code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTOCRSQ	RLT_OCRNC_CD_SEQ	Claim Related Occurrence Code Sequence	CHAR	2	4
+OCRNC_CD	CLM_RLT_OCRNC_CD	Claim Related Occurrence Code	CHAR	2	5
+OCRNCDT	CLM_RLT_OCRNC_DT	Claim Related Occurrence Date	DATE	8	6
+Span code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTSPNSQ	RLT_SPAN_CD_SEQ	Claim Related Span Code Sequence	CHAR	2	4
+SPAN_CD	CLM_SPAN_CD	Claim Occurrence Span Code	CHAR	2	5
+SPANFROM	CLM_SPAN_FROM_DT	Claim Occurrence Span From Date	DATE	8	6
+SPANTHRU	CLM_SPAN_THRU_DT	Claim Occurrence Span Through Date	DATE	8	7
+Value code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTVALSQ	RLT_VAL_CD_SEQ	Claim Related Value Code Sequence	CHAR	2	4
+VAL_CD	CLM_VAL_CD	Claim Value Code	CHAR	2	5
+VAL_AMT	CLM_VAL_AMT	Claim Value Amount	NUM	12	6
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration sequence number	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2020.
+4 New fields added in January 2021.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	SNF file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+FI_CLM_PROC_DT	FI_CLM_PROC_DT	FI Claim Process Date	DATE	8	8
+QUERY_CD	CLAIM_QUERY_CODE	Claim Query Code	CHAR	1	9
+PROVIDER	PRVDR_NUM	Provider Number	CHAR	6	10
+PRVDR_FULL_CCN_NUM	PRVDR_FULL_CCN_NUM	Full CMS Certification Number for Provider	CHAR	13	179	New5
+FAC_TYPE	CLM_FAC_TYPE_CD	Claim Facility Type Code	CHAR	1	11
+TYPESRVC	CLM_SRVC_CLSFCTN_TYPE_CD	Claim Service classification Type Code	CHAR	1	12
+FREQ_CD	CLM_FREQ_CD	Claim Frequency Code	CHAR	1	13
+FI_NUM	FI_NUM	FI or MAC Number	CHAR	5	14
+NOPAY_CD	CLM_MDCR_NON_PMT_RSN_CD	Claim Medicare Non Payment Reason Code	CHAR	2	15
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	16
+PRPAYAMT	NCH_PRMRY_PYR_CLM_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	17
+PRPAY_CD	NCH_PRMRY_PYR_CD	NCH Primary Payer Code (if not Medicare)	CHAR	1	18
+ACTIONCD	FI_CLM_ACTN_CD	FI or MAC Claim Action Code	CHAR	1	19
+PRSTATE	PRVDR_STATE_CD	NCH Provider SSA State Code	CHAR	2	20
+ORGNPINM	ORG_NPI_NUM	Organization NPI Number	CHAR	10	21
+AT_UPIN	AT_PHYSN_UPIN	Claim Attending Physician UPIN Number	CHAR	6	22
+AT_NPI	AT_PHYSN_NPI	Claim Attending Physician NPI Number	CHAR	10	23
+AT_PHYSN_SPCLTY_CD	AT_PHYSN_SPCLTY_CD	Claim Attending Physician Specialty Code	CHAR	2	24
+OP_UPIN	OP_PHYSN_UPIN	Claim Operating Physician UPIN Number	CHAR	6	25
+OP_NPI	OP_PHYSN_NPI	Claim Operating Physician NPI Number	CHAR	10	26
+OP_PHYSN_SPCLTY_CD	OP_PHYSN_SPCLTY_CD	Claim Operating Physician Specialty Code	CHAR	2	27
+OT_UPIN	OT_PHYSN_UPIN	Claim Other Physician UPIN Number	CHAR	6	28
+OT_NPI	OT_PHYSN_NPI	Claim Other Physician NPI Number	CHAR	10	29
+OT_PHYSN_SPCLTY_CD	OT_PHYSN_SPCLTY_CD	Claim Other Physician Specialty Code	CHAR	2	30
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Claim Rendering Physician NPI Number	CHAR	12	31
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Claim Rendering Physician Specialty Code	CHAR	2	32
+MCOPDSW	CLM_MCO_PD_SW	Claim MCO Paid Switch	CHAR	1	33
+STUS_CD	PTNT_DSCHRG_STUS_CD	Patient Discharge Status Code	CHAR	2	34
+PPS_IND	CLM_PPS_IND_CD	Claim PPS Indicator Code	CHAR	1	35
+TOT_CHRG	CLM_TOT_CHRG_AMT	Claim Total Charge Amount	NUM	12	36
+ADMSN_DT	CLM_ADMSN_DT	Claim Admission Date	DATE	8	37
+TYPE_ADM	CLM_IP_ADMSN_TYPE_CD	Claim Inpatient Admission Type Code	CHAR	1	38
+SRC_ADMS	CLM_SRC_IP_ADMSN_CD	Claim Source Inpatient Admission Code	CHAR	1	39
+PTNTSTUS	NCH_PTNT_STATUS_IND_CD	NCH Patient  Status Indicator Code	CHAR	1	40
+DED_AMT	NCH_BENE_IP_DDCTBL_AMT	NCH Beneficiary Inpatient (or other Part A) Deductible Amount	NUM	12	41
+COIN_AMT	NCH_BENE_PTA_COINSRNC_LBLTY_AM	NCH Beneficiary Part A Coinsurance Liability Amount	NUM	12	42
+BLDDEDAM	NCH_BENE_BLOOD_DDCTBL_LBLTY_AM	NCH Beneficiary Blood Deductible Liability Amount	NUM	12	43
+NCCHGAMT	NCH_IP_NCVRD_CHRG_AMT	NCH Inpatient (or other Part A) Noncovered Charge Amount	NUM	12	44
+TDEDAMT	NCH_IP_TOT_DDCTN_AMT	NCH Inpatient (or other Part A) Total Deductible/Coinsurance Amount	NUM	12	45
+CPTL_FSP	CLM_PPS_CPTL_FSP_AMT	Claim PPS Capital Federal Specific Portion (FSP) Amount	NUM	12	46
+CPTLOUTL	CLM_PPS_CPTL_OUTLIER_AMT	Claim PPS Capital Outlier Amount	NUM	12	47
+DISP_SHR	CLM_PPS_CPTL_DSPRPRTNT_SHR_AMT	Claim PPS Capital Disproportionate Share (DSH) Amount	NUM	12	48
+IME_AMT	CLM_PPS_CPTL_IME_AMT	Claim PPS Capital Indirect Medical Education (IME) Amount	NUM	12	49
+CPTL_EXP	CLM_PPS_CPTL_EXCPTN_AMT	Claim PPS Capital Exception Amount	NUM	12	50
+HLDHRMLS	CLM_PPS_OLD_CPTL_HLD_HRMLS_AMT	Claim PPS Old Capital Hold Harmless Amount	NUM	12	51
+UTIL_DAY	CLM_UTLZTN_DAY_CNT	Claim Medicare Utilization Day Count	NUM	3	52
+COIN_DAY	BENE_TOT_COINSRNC_DAYS_CNT	Beneficiary Total Coinsurance Days Count	NUM	3	53
+NUTILDAY	CLM_NON_UTLZTN_DAYS_CNT	Claim Medicare Non Utilization Days Count	NUM	5	54
+BLDFRNSH	NCH_BLOOD_PNTS_FRNSHD_QTY	NCH Blood Pints Furnished Quantity	NUM	3	55
+QLFYFROM	NCH_QLFYD_STAY_FROM_DT	NCH Qualified Stay From Date	DATE	8	56
+QLFYTHRU	NCH_QLFYD_STAY_THRU_DT	NCH Qualified Stay Through Date	DATE	8	57
+NCOVFROM	NCH_VRFD_NCVRD_STAY_FROM_DT	NCH Verified Noncovered Stay From Date	DATE	8	58
+NCOVTHRU	NCH_VRFD_NCVRD_STAY_THRU_DT	NCH Verified Noncovered Stay Through Date	DATE	8	59
+CARETHRU	NCH_ACTV_OR_CVRD_LVL_CARE_THRU	NCH Active or Covered Level Care Thru Date	DATE	8	60
+EXHST_DT	NCH_BENE_MDCR_BNFTS_EXHTD_DT_I	NCH Beneficiary Medicare Benefits Exhausted Date	DATE	8	61
+DSCHRGDT	NCH_BENE_DSCHRG_DT	NCH Beneficiary Discharge Date	DATE	8	62
+DRG_CD	CLM_DRG_CD	Claim Diagnosis Related Group Code (or MS-DRG Code)	CHAR	4	63
+MS_DRG_GRPR_VRSN_CD	MS_DRG_GRPR_VRSN_CD	MS-DRG Grouper Version Code	CHAR	8	178	New5
+ADMTG_DGNS_CD	ADMTG_DGNS_CD	Claim Admitting Diagnosis Code	CHAR	7	64
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	65
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	66
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	67
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	68
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	69
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	70
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	71
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	72
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	73
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	74
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	75
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	76
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	77
+ICD_DGNS_CD13	ICD_DGNS_CD13	Claim Diagnosis Code XIII	CHAR	7	78
+ICD_DGNS_CD14	ICD_DGNS_CD14	Claim Diagnosis Code XIV	CHAR	7	79
+ICD_DGNS_CD15	ICD_DGNS_CD15	Claim Diagnosis Code XV	CHAR	7	80
+ICD_DGNS_CD16	ICD_DGNS_CD16	Claim Diagnosis Code XVI	CHAR	7	81
+ICD_DGNS_CD17	ICD_DGNS_CD17	Claim Diagnosis Code XVII	CHAR	7	82
+ICD_DGNS_CD18	ICD_DGNS_CD18	Claim Diagnosis Code XVIII	CHAR	7	83
+ICD_DGNS_CD19	ICD_DGNS_CD19	Claim Diagnosis Code XIX	CHAR	7	84
+ICD_DGNS_CD20	ICD_DGNS_CD20	Claim Diagnosis Code XX	CHAR	7	85
+ICD_DGNS_CD21	ICD_DGNS_CD21	Claim Diagnosis Code XXI	CHAR	7	86
+ICD_DGNS_CD22	ICD_DGNS_CD22	Claim Diagnosis Code XXII	CHAR	7	87
+ICD_DGNS_CD23	ICD_DGNS_CD23	Claim Diagnosis Code XXIII	CHAR	7	88
+ICD_DGNS_CD24	ICD_DGNS_CD24	Claim Diagnosis Code XXIV	CHAR	7	89
+ICD_DGNS_CD25	ICD_DGNS_CD25	Claim Diagnosis Code XXV	CHAR	7	90
+FST_DGNS_E_CD	FST_DGNS_E_CD	First Claim Diagnosis E Code	CHAR	7	91
+ICD_DGNS_E_CD1	ICD_DGNS_E_CD1	Claim Diagnosis E Code I	CHAR	7	92
+ICD_DGNS_E_CD2	ICD_DGNS_E_CD2	Claim Diagnosis E Code II	CHAR	7	93
+ICD_DGNS_E_CD3	ICD_DGNS_E_CD3	Claim Diagnosis E Code III	CHAR	7	94
+ICD_DGNS_E_CD4	ICD_DGNS_E_CD4	Claim Diagnosis E Code IV	CHAR	7	95
+ICD_DGNS_E_CD5	ICD_DGNS_E_CD5	Claim Diagnosis E Code V	CHAR	7	96
+ICD_DGNS_E_CD6	ICD_DGNS_E_CD6	Claim Diagnosis E Code VI	CHAR	7	97
+ICD_DGNS_E_CD7	ICD_DGNS_E_CD7	Claim Diagnosis E Code VII	CHAR	7	98
+ICD_DGNS_E_CD8	ICD_DGNS_E_CD8	Claim Diagnosis E Code VIII	CHAR	7	99
+ICD_DGNS_E_CD9	ICD_DGNS_E_CD9	Claim Diagnosis E Code IX	CHAR	7	100
+ICD_DGNS_E_CD10	ICD_DGNS_E_CD10	Claim Diagnosis E Code X	CHAR	7	101
+ICD_DGNS_E_CD11	ICD_DGNS_E_CD11	Claim Diagnosis E Code XI	CHAR	7	102
+ICD_DGNS_E_CD12	ICD_DGNS_E_CD12	Claim Diagnosis E Code XII	CHAR	7	103
+ICD_PRCDR_CD1	ICD_PRCDR_CD1	Claim Procedure Code I	CHAR	7	104
+PRCDR_DT1	PRCDR_DT1	Claim Procedure Code I Date	DATE	8	105
+ICD_PRCDR_CD2	ICD_PRCDR_CD2	Claim Procedure Code II	CHAR	7	106
+PRCDR_DT2	PRCDR_DT2	Claim Procedure Code II Date	DATE	8	107
+ICD_PRCDR_CD3	ICD_PRCDR_CD3	Claim Procedure Code III	CHAR	7	108
+PRCDR_DT3	PRCDR_DT3	Claim Procedure Code III Date	DATE	8	109
+ICD_PRCDR_CD4	ICD_PRCDR_CD4	Claim Procedure Code IV	CHAR	7	110
+PRCDR_DT4	PRCDR_DT4	Claim Procedure Code IV Date	DATE	8	111
+ICD_PRCDR_CD5	ICD_PRCDR_CD5	Claim Procedure Code V	CHAR	7	112
+PRCDR_DT5	PRCDR_DT5	Claim Procedure Code V Date	DATE	8	113
+ICD_PRCDR_CD6	ICD_PRCDR_CD6	Claim Procedure Code VI	CHAR	7	114
+PRCDR_DT6	PRCDR_DT6	Claim Procedure Code VI Date	DATE	8	115
+ICD_PRCDR_CD7	ICD_PRCDR_CD7	Claim Procedure Code VII	CHAR	7	116
+PRCDR_DT7	PRCDR_DT7	Claim Procedure CodeVII Date	DATE	8	117
+ICD_PRCDR_CD8	ICD_PRCDR_CD8	Claim Procedure Code VIII	CHAR	7	118
+PRCDR_DT8	PRCDR_DT8	Claim Procedure Code VIII Date	DATE	8	119
+ICD_PRCDR_CD9	ICD_PRCDR_CD9	Claim Procedure Code IX	CHAR	7	120
+PRCDR_DT9	PRCDR_DT9	Claim Procedure Code IX Date	DATE	8	121
+ICD_PRCDR_CD10	ICD_PRCDR_CD10	Claim Procedure Code X	CHAR	7	122
+PRCDR_DT10	PRCDR_DT10	Claim Procedure Code X Date	DATE	8	123
+ICD_PRCDR_CD11	ICD_PRCDR_CD11	Claim Procedure Code XI	CHAR	7	124
+PRCDR_DT11	PRCDR_DT11	Claim Procedure Code XI Date	DATE	8	125
+ICD_PRCDR_CD12	ICD_PRCDR_CD12	Claim Procedure Code XII	CHAR	7	126
+PRCDR_DT12	PRCDR_DT12	Claim Procedure Code XII Date	DATE	8	127
+ICD_PRCDR_CD13	ICD_PRCDR_CD13	Claim Procedure Code XIII	CHAR	7	128
+PRCDR_DT13	PRCDR_DT13	Claim Procedure Code XIII Date	DATE	8	129
+ICD_PRCDR_CD14	ICD_PRCDR_CD14	Claim Procedure Code XIV	CHAR	7	130
+PRCDR_DT14	PRCDR_DT14	Claim Procedure Code XIV Date	DATE	8	131
+ICD_PRCDR_CD15	ICD_PRCDR_CD15	Claim Procedure Code XV	CHAR	7	132
+PRCDR_DT15	PRCDR_DT15	Claim Procedure Code XV Date	DATE	8	133
+ICD_PRCDR_CD16	ICD_PRCDR_CD16	Claim Procedure Code XVI	CHAR	7	134
+PRCDR_DT16	PRCDR_DT16	Claim Procedure Code XVI Date	DATE	8	135
+ICD_PRCDR_CD17	ICD_PRCDR_CD17	Claim Procedure Code XVII	CHAR	7	136
+PRCDR_DT17	PRCDR_DT17	Claim Procedure Code XVII Date	DATE	8	137
+ICD_PRCDR_CD18	ICD_PRCDR_CD18	Claim Procedure Code XVIII	CHAR	7	138
+PRCDR_DT18	PRCDR_DT18	Claim Procedure Code XVIII Date	DATE	8	139
+ICD_PRCDR_CD19	ICD_PRCDR_CD19	Claim Procedure Code XIX	CHAR	7	140
+PRCDR_DT19	PRCDR_DT19	Claim Procedure Code XIX Date	DATE	8	141
+ICD_PRCDR_CD20	ICD_PRCDR_CD20	Claim Procedure Code XX	CHAR	7	142
+PRCDR_DT20	PRCDR_DT20	Claim Procedure Code XX Date	DATE	8	143
+ICD_PRCDR_CD21	ICD_PRCDR_CD21	Claim Procedure Code XXI	CHAR	7	144
+PRCDR_DT21	PRCDR_DT21	Claim Procedure Code XXI Date	DATE	8	145
+ICD_PRCDR_CD22	ICD_PRCDR_CD22	Claim Procedure Code XXII	CHAR	7	146
+PRCDR_DT22	PRCDR_DT22	Claim Procedure Code XXII Date	DATE	8	147
+ICD_PRCDR_CD23	ICD_PRCDR_CD23	Claim Procedure Code XXIII	CHAR	7	148
+PRCDR_DT23	PRCDR_DT23	Claim Procedure Code XXIII Date	DATE	8	149
+ICD_PRCDR_CD24	ICD_PRCDR_CD24	Claim Procedure Code XXIV	CHAR	7	150
+PRCDR_DT24	PRCDR_DT24	Claim Procedure Code XXIV Date	DATE	8	151
+ICD_PRCDR_CD25	ICD_PRCDR_CD25	Claim Procedure Code XXV	CHAR	7	152
+PRCDR_DT25	PRCDR_DT25	Claim Procedure Code XXV Date	DATE	8	153
+DOB_DT	DOB_DT	Date of Birth from Claim (Date)	DATE	8	154
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	155
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	156
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	157
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	158
+CLM_MDCL_REC	CLM_MDCL_REC	Claim Medical Record Number	CHAR	17	159
+CLM_TRTMT_AUTHRZTN_NUM	CLM_TRTMT_AUTHRZTN_NUM	Claim Treatment Authorization Number	CHAR	18	160
+CLM_PRCR_RTRN_CD	CLM_PRCR_RTRN_CD	Claim Pricer Return Code	CHAR	2	161
+CLM_PRCR_VRSN_CD	CLM_PRCR_VRSN_CD	Claim Pricer Version Code	CHAR	10	177	New5
+CLM_SRVC_FAC_ZIP_CD	CLM_SRVC_FAC_ZIP_CD	Claim service facility ZIP code (where service was provided)	CHAR	9	162
+PCCHGAMT	NCH_PROFNL_CMPNT_CHRG_AMT	Professional Component Charge Amount	NUM	12	163
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	164
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	165
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	166
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	167
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	168
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	169
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	170
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	171	New2
+PRVDR_VLDTN_TYPE_CD	PRVDR_VLDTN_TYPE_CD	Provider Validation Type Code	CHAR	2	172	New2
+RR_BRD_EXCLSN_IND_SW	RR_BRD_EXCLSN_IND_SW	Railroad Board Exclusion Indicator Switch	CHAR	1	173	New2
+CLM_MODEL_REIMBRSMT_AMT	CLM_MODEL_REIMBRSMT_AMT	Claim Model Reimbursement Amount	NUM	12	174	New3
+CLM_ADJUST_GRP_CD	CLM_ADJUST_GRP_CD	Claim Adjustment Group Code	CHAR	2	175	New5
+CLM_ADJUST_RSN_CD	CLM_ADJUST_RSN_CD	Claim Adjustment Reason Code	CHAR	5	176	New5
+CLM_CLNCL_TRIL_NUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	180	New6
+Revenue center file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	3
+CLM_LN	CLM_LINE_NUM	Claim Line Number	NUM	13	4
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	5
+REV_CNTR	REV_CNTR	Revenue Center Code	CHAR	4	6
+HCPCS_CD	HCPCS_CD	HCFA Common Procedure Coding System (HCPCS) Code	CHAR	5	7
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	8
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	9
+MDFR_CD3	HCPCS_3RD_MDFR_CD	HCPCS Third Modifier Code	CHAR	5	10
+REV_UNIT	REV_CNTR_UNIT_CNT	Revenue Center Unit Count	NUM	8	11
+REV_RATE	REV_CNTR_RATE_AMT	Revenue Center Rate Amount	NUM	12	12
+REV_CHRG	REV_CNTR_TOT_CHRG_AMT	Revenue Center Total Charge Amount	NUM	12	13
+REV_NCVR	REV_CNTR_NCVRD_CHRG_AMT	Revenue Center Non-Covered Charge Amount	NUM	12	14
+REVDEDCD	REV_CNTR_DDCTBL_COINSRNC_CD	Revenue Center Deductible Coinsurance Code	CHAR	1	15
+REV_CNTR_NDC_QTY	REV_CNTR_NDC_QTY	Revenue Center National Drug Code (NDC) Quantity	NUM	10	16
+REV_CNTR_NDC_QTY_QLFR_CD	REV_CNTR_NDC_QTY_QLFR_CD	Revenue Center NDC Quantity Qualifier Code	CHAR	2	17
+RNDRNG_PHYSN_UPIN	RNDRNG_PHYSN_UPIN	Revenue Center Rendering Physician UPIN	CHAR	12	18
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Revenue Center Rendering Physician NPI	CHAR	12	19
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Revenue Center Rendering Physician Specialty Code	CHAR	2	20
+IDENDC	REV_CNTR_IDE_NDC_UPC_NUM	Revenue Center IDE, NDC, or UPC Number	CHAR	24	21
+REV_CNTR_PRCNG_IND_CD	REV_CNTR_PRCNG_IND_CD	Revenue Center Pricing Indicator Code	CHAR	2	22
+THRPY_CAP_IND_CD1	THRPY_CAP_IND_CD1	Revenue Center Therapy Cap Indicator 1 Code	CHAR	1	23
+THRPY_CAP_IND_CD2	THRPY_CAP_IND_CD2	Revenue Center Therapy Cap Indicator 2 Code	CHAR	1	24
+REV_CNTR_RP_IND_CD	REV_CNTR_RP_IND_CD	Revenue Center Representative Payee (RP) Indicator Code	CHAR	1	25	New2
+RC_MODEL_REIMBRSMT_AMT	RC_MODEL_REIMBRSMT_AMT	Revenue Center Model Reimbursement Amount	NUM	12	26	New3
+REV_CNTR_ADJUST_GRP_CD	REV_CNTR_ADJUST_GRP_CD	Revenue Center Adjustment Group Code	CHAR	2	27	New5
+REV_CNTR_ADJUST_RSN_CD	REV_CNTR_ADJUST_RSN_CD	Revenue Center Adjustment Reason Code	CHAR	5	28	New5
+Condition code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTCNDSQ	RLT_COND_CD_SEQ	Claim Related Condition Code Sequence	CHAR	2	4
+RLT_COND	CLM_RLT_COND_CD	Claim Related Condition Code	CHAR	2	5
+Occurrence code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTOCRSQ	RLT_OCRNC_CD_SEQ	Claim Related Occurrence Code Sequence	CHAR	2	4
+OCRNC_CD	CLM_RLT_OCRNC_CD	Claim Related Occurrence Code	CHAR	2	5
+OCRNCDT	CLM_RLT_OCRNC_DT	Claim Related Occurrence Date	DATE	8	6
+Span code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTSPNSQ	RLT_SPAN_CD_SEQ	Claim Related Span Code Sequence	CHAR	2	4
+SPAN_CD	CLM_SPAN_CD	Claim Occurrence Span Code	CHAR	2	5
+SPANFROM	CLM_SPAN_FROM_DT	Claim Occurrence Span From Date	DATE	8	6
+SPANTHRU	CLM_SPAN_THRU_DT	Claim Occurrence Span Through Date	DATE	8	7
+Value code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTVALSQ	RLT_VAL_CD_SEQ	Claim Related Value Code Sequence	CHAR	2	4
+VAL_CD	CLM_VAL_CD	Claim Value Code	CHAR	2	5
+VAL_AMT	CLM_VAL_AMT	Claim Value Amount	NUM	12	6
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration sequence numer	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2020.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	HOS file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+FI_CLM_PROC_DT	FI_CLM_PROC_DT	FI Claim Process Date	DATE	8	8
+QUERY_CD	CLAIM_QUERY_CODE	Claim Query Code	CHAR	1	84
+PROVIDER	PRVDR_NUM	Provider Number	CHAR	6	9
+PRVDR_FULL_CCN_NUM	PRVDR_FULL_CCN_NUM	Full CMS Certification Number for Provider	CHAR	13	103	New5
+FAC_TYPE	CLM_FAC_TYPE_CD	Claim Facility Type Code	CHAR	1	10
+TYPESRVC	CLM_SRVC_CLSFCTN_TYPE_CD	Claim Service classification Type Code	CHAR	1	11
+FREQ_CD	CLM_FREQ_CD	Claim Frequency Code	CHAR	1	12
+FI_NUM	FI_NUM	FI or MAC Number	CHAR	5	13
+NOPAY_CD	CLM_MDCR_NON_PMT_RSN_CD	Claim Medicare Non Payment Reason Code	CHAR	2	14
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	15
+PRPAYAMT	NCH_PRMRY_PYR_CLM_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	16
+PRPAY_CD	NCH_PRMRY_PYR_CD	NCH Primary Payer Code (if not Medicare)	CHAR	1	17
+ACTIONCD	FI_CLM_ACTN_CD	FI or MAC Claim Action Code	CHAR	1	85
+PRSTATE	PRVDR_STATE_CD	NCH Provider SSA State Code	CHAR	2	18
+ORGNPINM	ORG_NPI_NUM	Organization NPI Number	CHAR	10	19
+SRVC_LOC_NPI_NUM	SRVC_LOC_NPI_NUM	Claim Service Location NPI Number	CHAR	22	20
+AT_UPIN	AT_PHYSN_UPIN	Claim Attending Physician UPIN Number	CHAR	6	21
+AT_NPI	AT_PHYSN_NPI	Claim Attending Physician NPI Number	CHAR	10	22
+AT_PHYSN_SPCLTY_CD	AT_PHYSN_SPCLTY_CD	Claim Attending Physician Specialty Code	CHAR	2	23
+OP_NPI	OP_PHYSN_NPI	Claim Operating Physician NPI Number	CHAR	10	24
+OP_PHYSN_SPCLTY_CD	OP_PHYSN_SPCLTY_CD	Claim Operating Physician Specialty Code	CHAR	2	25
+OT_NPI	OT_PHYSN_NPI	Claim Other Physician NPI Number	CHAR	10	26
+OT_PHYSN_SPCLTY_CD	OT_PHYSN_SPCLTY_CD	Claim Other Physician Specialty Code	CHAR	2	27
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Claim Rendering Physician NPI Number	CHAR	12	28
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Claim Rendering Physician Specialty Code	CHAR	2	29
+RFR_PHYSN_NPI	RFR_PHYSN_NPI	Claim Referring Physician NPI Number	CHAR	12	30
+RFR_PHYSN_SPCLTY_CD	RFR_PHYSN_SPCLTY_CD	Claim Referring Physician Specialty Code	CHAR	2	31
+STUS_CD	PTNT_DSCHRG_STUS_CD	Patient Discharge Status Code	CHAR	2	32
+TOT_CHRG	CLM_TOT_CHRG_AMT	Claim Total Charge Amount	NUM	12	33
+PTNTSTUS	NCH_PTNT_STATUS_IND_CD	NCH Patient  Status Indicator Code	CHAR	1	34
+UTIL_DAY	CLM_UTLZTN_DAY_CNT	Claim Medicare Utilization Day Count	NUM	3	35
+DSCHRGDT	NCH_BENE_DSCHRG_DT	NCH Beneficiary Discharge Date	DATE	8	36
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	37
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	38
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	39
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	40
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	41
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	42
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	43
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	44
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	45
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	46
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	47
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	48
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	49
+ICD_DGNS_CD13	ICD_DGNS_CD13	Claim Diagnosis Code XIII	CHAR	7	50
+ICD_DGNS_CD14	ICD_DGNS_CD14	Claim Diagnosis Code XIV	CHAR	7	51
+ICD_DGNS_CD15	ICD_DGNS_CD15	Claim Diagnosis Code XV	CHAR	7	52
+ICD_DGNS_CD16	ICD_DGNS_CD16	Claim Diagnosis Code XVI	CHAR	7	53
+ICD_DGNS_CD17	ICD_DGNS_CD17	Claim Diagnosis Code XVII	CHAR	7	54
+ICD_DGNS_CD18	ICD_DGNS_CD18	Claim Diagnosis Code XVIII	CHAR	7	55
+ICD_DGNS_CD19	ICD_DGNS_CD19	Claim Diagnosis Code XIX	CHAR	7	56
+ICD_DGNS_CD20	ICD_DGNS_CD20	Claim Diagnosis Code XX	CHAR	7	57
+ICD_DGNS_CD21	ICD_DGNS_CD21	Claim Diagnosis Code XXI	CHAR	7	58
+ICD_DGNS_CD22	ICD_DGNS_CD22	Claim Diagnosis Code XXII	CHAR	7	59
+ICD_DGNS_CD23	ICD_DGNS_CD23	Claim Diagnosis Code XXIII	CHAR	7	60
+ICD_DGNS_CD24	ICD_DGNS_CD24	Claim Diagnosis Code XXIV	CHAR	7	61
+ICD_DGNS_CD25	ICD_DGNS_CD25	Claim Diagnosis Code XXV	CHAR	7	62
+FST_DGNS_E_CD	FST_DGNS_E_CD	First Claim Diagnosis E Code	CHAR	7	63
+ICD_DGNS_E_CD1	ICD_DGNS_E_CD1	Claim Diagnosis E Code I	CHAR	7	64
+ICD_DGNS_E_CD2	ICD_DGNS_E_CD2	Claim Diagnosis E Code II	CHAR	7	65
+ICD_DGNS_E_CD3	ICD_DGNS_E_CD3	Claim Diagnosis E Code III	CHAR	7	66
+ICD_DGNS_E_CD4	ICD_DGNS_E_CD4	Claim Diagnosis E Code IV	CHAR	7	67
+ICD_DGNS_E_CD5	ICD_DGNS_E_CD5	Claim Diagnosis E Code V	CHAR	7	68
+ICD_DGNS_E_CD6	ICD_DGNS_E_CD6	Claim Diagnosis E Code VI	CHAR	7	69
+ICD_DGNS_E_CD7	ICD_DGNS_E_CD7	Claim Diagnosis E Code VII	CHAR	7	70
+ICD_DGNS_E_CD8	ICD_DGNS_E_CD8	Claim Diagnosis E Code VIII	CHAR	7	71
+ICD_DGNS_E_CD9	ICD_DGNS_E_CD9	Claim Diagnosis E Code IX	CHAR	7	72
+ICD_DGNS_E_CD10	ICD_DGNS_E_CD10	Claim Diagnosis E Code X	CHAR	7	73
+ICD_DGNS_E_CD11	ICD_DGNS_E_CD11	Claim Diagnosis E Code XI	CHAR	7	74
+ICD_DGNS_E_CD12	ICD_DGNS_E_CD12	Claim Diagnosis E Code XII	CHAR	7	75
+HSPCSTRT	CLM_HOSPC_START_DT_ID	Claim Hospice Start Date	DATE	8	76
+CLM_ADMSN_DT	CLM_ADMSN_DT	Claim Admission Date	DATE	8	105	New6
+HOSPCPRD	BENE_HOSPC_PRD_CNT	Beneficiary's Hospice Period Count	NUM	1	77
+DOB_DT	DOB_DT	Date of Birth from Claim	DATE	8	78
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	79
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	80
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	81
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	82
+CLM_MDCL_REC	CLM_MDCL_REC	Claim Medical Record Number	CHAR	17	83
+CLM_TRTMT_AUTHRZTN_NUM	CLM_TRTMT_AUTHRZTN_NUM	Claim Treatment Authorization Number	CHAR	18	86
+CLM_PRCR_RTRN_CD	CLM_PRCR_RTRN_CD	Claim Pricer Return Code	CHAR	2	87
+CLM_PRCR_VRSN_CD	CLM_PRCR_VRSN_CD	Claim Pricer Version Code	CHAR	10	102	New5
+CLM_SRVC_FAC_ZIP_CD	CLM_SRVC_FAC_ZIP_CD	Claim service facility ZIP code (where service was provided)	CHAR	9	88
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	89
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	90
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	91
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	92
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	93
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	94
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	95
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	96	New2
+PRVDR_VLDTN_TYPE_CD	PRVDR_VLDTN_TYPE_CD	Provider Validation Type Code	CHAR	2	97	New2
+RR_BRD_EXCLSN_IND_SW	RR_BRD_EXCLSN_IND_SW	Railroad Board Exclusion Indicator Switch	CHAR	1	98	New2
+CLM_MODEL_REIMBRSMT_AMT	CLM_MODEL_REIMBRSMT_AMT	Claim Model Reimbursement Amount	NUM	12	99	New3
+CLM_ADJUST_GRP_CD	CLM_ADJUST_GRP_CD	Claim Adjustment Group Code	CHAR	2	100	New5
+CLM_ADJUST_RSN_CD	CLM_ADJUST_RSN_CD	Claim Adjustment Reason Code	CHAR	5	101	New5
+CLM_CLNCL_TRIL_NUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	104	New6
+Revenue center file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	3
+CLM_LN	CLM_LINE_NUM	Claim Line Number	NUM	13	4
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	5
+REV_CNTR	REV_CNTR	Revenue Center Code	CHAR	4	6
+REV_DT	REV_CNTR_DT	Revenue Center Date	DATE	8	7
+HCPCS_CD	HCPCS_CD	HCFA Common Procedure Coding System (HCPCS) Code	CHAR	5	8
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	9
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	10
+MDFR_CD3	HCPCS_3RD_MDFR_CD	HCPCS Third Modifier Code	CHAR	5	11
+REV_UNIT	REV_CNTR_UNIT_CNT	Revenue Center Unit Count	NUM	8	12
+REV_RATE	REV_CNTR_RATE_AMT	Revenue Center Rate Amount	NUM	12	13
+RPRVDPMT	REV_CNTR_PRVDR_PMT_AMT	Revenue Center (Medicare) Provider Payment Amount	NUM	12	14
+REVPMT	REV_CNTR_PMT_AMT_AMT	Revenue Center (Medicare) Payment Amount	NUM	12	16
+REV_CHRG	REV_CNTR_TOT_CHRG_AMT	Revenue Center Total Charge Amount	NUM	12	17
+REV_NCVR	REV_CNTR_NCVRD_CHRG_AMT	Revenue Center Non-Covered Charge Amount	NUM	12	18
+REVDEDCD	REV_CNTR_DDCTBL_COINSRNC_CD	Revenue Center Deductible Coinsurance Code	CHAR	1	19
+RBENEPMT	REV_CNTR_BENE_PMT_AMT	Revenue Center Payment Amount to Beneficiary	NUM	12	15
+REV_CNTR_NDC_QTY	REV_CNTR_NDC_QTY	Revenue Center National Drug Code (NDC) Quantity	NUM	10	20
+REV_CNTR_NDC_QTY_QLFR_CD	REV_CNTR_NDC_QTY_QLFR_CD	Revenue Center NDC Quantity Qualifier Code	CHAR	2	21
+RNDRNG_PHYSN_UPIN	RNDRNG_PHYSN_UPIN	Revenue Center Rendering Physician UPIN	CHAR	12	22
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Revenue Center Rendering Physician NPI	CHAR	12	23
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Revenue Center Rendering Physician Specialty Code	CHAR	2	24
+IDENDC	REV_CNTR_IDE_NDC_UPC_NUM	Revenue Center IDE, NDC, or UPC Number	CHAR	24	25
+REVSTIND	REV_CNTR_STUS_IND_CD	Revenue Center Status Indicator Code	CHAR	2	26
+REV_CNTR_PRCNG_IND_CD	REV_CNTR_PRCNG_IND_CD	Revenue Center Pricing Indicator Code	CHAR	2	27
+THRPY_CAP_IND_CD1	THRPY_CAP_IND_CD1	Revenue Center Therapy Cap Indicator 1  Code	CHAR	1	28
+THRPY_CAP_IND_CD2	THRPY_CAP_IND_CD2	Revenue Center Therapy Cap Indicator 2 Code	CHAR	1	29
+REV_CNTR_RP_IND_CD	REV_CNTR_RP_IND_CD	Revenue Center Representative Payee (RP) Indicator Code	CHAR	1	30	New2
+RC_MODEL_REIMBRSMT_AMT	RC_MODEL_REIMBRSMT_AMT	Revenue Center Model Reimbursement Amount	NUM	12	31	New3
+RC_VLNTRY_SRVC_IND_CD	RC_VLNTRY_SRVC_IND_CD	Revenue Center Voluntary Service Indicator Code	CHAR	1	32	New4
+ORDRNG_PHYSN_NPI	ORDRNG_PHYSN_NPI	Revenue Center Ordering Physician NPI	CHAR	12	33	New4
+REV_CNTR_ADJUST_GRP_CD	REV_CNTR_ADJUST_GRP_CD	Revenue Center Adjustment Group Code	CHAR	2	34	New5
+REV_CNTR_ADJUST_RSN_CD	REV_CNTR_ADJUST_RSN_CD	Revenue Center Adjustment Reason Code	CHAR	5	35	New5
+REV_CNTR_RA_RMRK_CD	REV_CNTR_RA_RMRK_CD	Revenue Center Remittance Advice Remark Code	CHAR	5	36	New5
+Condition code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTCNDSQ	RLT_COND_CD_SEQ	Claim Related Condition Code Sequence	CHAR	2	4
+RLT_COND	CLM_RLT_COND_CD	Claim Related Condition Code	CHAR	2	5
+Occurrence code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTOCRSQ	RLT_OCRNC_CD_SEQ	Claim Related Occurrence Code Sequence	CHAR	2	4
+OCRNC_CD	CLM_RLT_OCRNC_CD	Claim Related Occurrence Code	CHAR	2	5
+OCRNCDT	CLM_RLT_OCRNC_DT	Claim Related Occurrence Date	DATE	8	6
+Span code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTSPNSQ	RLT_SPAN_CD_SEQ	Claim Related Span Code Sequence	CHAR	2	4
+SPAN_CD	CLM_SPAN_CD	Claim Occurrence Span Code	CHAR	2	5
+SPANFROM	CLM_SPAN_FROM_DT	Claim Occurrence Span From Date	DATE	8	6
+SPANTHRU	CLM_SPAN_THRU_DT	Claim Occurrence Span Through Date	DATE	8	7
+Value code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTVALSQ	RLT_VAL_CD_SEQ	Claim Related Value Code Sequence	CHAR	2	4
+VAL_CD	CLM_VAL_CD	Claim Value Code	CHAR	2	5
+VAL_AMT	CLM_VAL_AMT	Claim Value Amount	NUM	12	6
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration number	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2020.
+4 New fields added in January 2021.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	HHA file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+FI_CLM_PROC_DT	FI_CLM_PROC_DT	FI Claim Process Date	DATE	8	8
+QUERY_CD	CLAIM_QUERY_CODE	Claim Query Code	CHAR	1	84
+PROVIDER	PRVDR_NUM	Provider Number	CHAR	6	9
+PRVDR_FULL_CCN_NUM	PRVDR_FULL_CCN_NUM	Full CMS Certification Number for Provider	CHAR	13	107	New5
+FAC_TYPE	CLM_FAC_TYPE_CD	Claim Facility Type Code	CHAR	1	10
+TYPESRVC	CLM_SRVC_CLSFCTN_TYPE_CD	Claim Service classification Type Code	CHAR	1	11
+FREQ_CD	CLM_FREQ_CD	Claim Frequency Code	CHAR	1	12
+FI_NUM	FI_NUM	FI or MAC Number	CHAR	5	13
+NOPAY_CD	CLM_MDCR_NON_PMT_RSN_CD	Claim Medicare Non Payment Reason Code	CHAR	2	14
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	15
+PRPAYAMT	NCH_PRMRY_PYR_CLM_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	16
+PRPAY_CD	NCH_PRMRY_PYR_CD	NCH Primary Payer Code (if not Medicare)	CHAR	1	17
+ACTIONCD	FI_CLM_ACTN_CD	FI or MAC Claim Action Code	CHAR	1	85
+PRSTATE	PRVDR_STATE_CD	NCH Provider SSA State Code	CHAR	2	18
+ORGNPINM	ORG_NPI_NUM	Organization NPI Number	CHAR	10	19
+SRVC_LOC_NPI_NUM	SRVC_LOC_NPI_NUM	Claim Service Location NPI Number	CHAR	22	20
+AT_UPIN	AT_PHYSN_UPIN	Claim Attending Physician UPIN Number	CHAR	6	21
+AT_NPI	AT_PHYSN_NPI	Claim Attending Physician NPI Number	CHAR	10	22
+AT_PHYSN_SPCLTY_CD	AT_PHYSN_SPCLTY_CD	Claim Attending Physician Specialty Code	CHAR	2	23
+OP_NPI	OP_PHYSN_NPI	Claim Operating Physician NPI Number	CHAR	10	24
+OP_PHYSN_SPCLTY_CD	OP_PHYSN_SPCLTY_CD	Claim Operating Physician Specialty Code	CHAR	2	25
+OT_NPI	OT_PHYSN_NPI	Claim Other Physician NPI Number	CHAR	10	26
+OT_PHYSN_SPCLTY_CD	OT_PHYSN_SPCLTY_CD	Claim Other Physician Specialty Code	CHAR	2	27
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Claim Rendering Physician NPI Number	CHAR	12	28
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Claim Rendering Physician Specialty Code	CHAR	2	29
+RFR_PHYSN_NPI	RFR_PHYSN_NPI	Claim Referring Physician NPI Number	CHAR	12	30
+RFR_PHYSN_SPCLTY_CD	RFR_PHYSN_SPCLTY_CD	Claim Referring Physician Specialty Code	CHAR	2	31
+MCOPDSW	CLM_MCO_PD_SW	Claim MCO Paid Switch	CHAR	1	86
+STUS_CD	PTNT_DSCHRG_STUS_CD	Patient Discharge Status Code	CHAR	2	32
+PPS_IND	CLM_PPS_IND_CD	Claim PPS Indicator Code	CHAR	1	33
+TOT_CHRG	CLM_TOT_CHRG_AMT	Claim Total Charge Amount	NUM	12	34
+DSCHRGDT	NCH_BENE_DSCHRG_DT	NCH Beneficiary Discharge Date	DATE	8	87
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	35
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	36
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	37
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	38
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	39
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	40
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	41
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	42
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	43
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	44
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	45
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	46
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	47
+ICD_DGNS_CD13	ICD_DGNS_CD13	Claim Diagnosis Code XIII	CHAR	7	48
+ICD_DGNS_CD14	ICD_DGNS_CD14	Claim Diagnosis Code XIV	CHAR	7	49
+ICD_DGNS_CD15	ICD_DGNS_CD15	Claim Diagnosis Code XV	CHAR	7	50
+ICD_DGNS_CD16	ICD_DGNS_CD16	Claim Diagnosis Code XVI	CHAR	7	51
+ICD_DGNS_CD17	ICD_DGNS_CD17	Claim Diagnosis Code XVII	CHAR	7	52
+ICD_DGNS_CD18	ICD_DGNS_CD18	Claim Diagnosis Code XVIII	CHAR	7	53
+ICD_DGNS_CD19	ICD_DGNS_CD19	Claim Diagnosis Code XIX	CHAR	7	54
+ICD_DGNS_CD20	ICD_DGNS_CD20	Claim Diagnosis Code XX	CHAR	7	55
+ICD_DGNS_CD21	ICD_DGNS_CD21	Claim Diagnosis Code XXI	CHAR	7	56
+ICD_DGNS_CD22	ICD_DGNS_CD22	Claim Diagnosis Code XXII	CHAR	7	57
+ICD_DGNS_CD23	ICD_DGNS_CD23	Claim Diagnosis Code XXIII	CHAR	7	58
+ICD_DGNS_CD24	ICD_DGNS_CD24	Claim Diagnosis Code XXIV	CHAR	7	59
+ICD_DGNS_CD25	ICD_DGNS_CD25	Claim Diagnosis Code XXV	CHAR	7	60
+FST_DGNS_E_CD	FST_DGNS_E_CD	First Claim Diagnosis E Code	CHAR	7	61
+ICD_DGNS_E_CD1	ICD_DGNS_E_CD1	Claim Diagnosis E Code I	CHAR	7	62
+ICD_DGNS_E_CD2	ICD_DGNS_E_CD2	Claim Diagnosis E Code II	CHAR	7	63
+ICD_DGNS_E_CD3	ICD_DGNS_E_CD3	Claim Diagnosis E Code III	CHAR	7	64
+ICD_DGNS_E_CD4	ICD_DGNS_E_CD4	Claim Diagnosis E Code IV	CHAR	7	65
+ICD_DGNS_E_CD5	ICD_DGNS_E_CD5	Claim Diagnosis E Code V	CHAR	7	66
+ICD_DGNS_E_CD6	ICD_DGNS_E_CD6	Claim Diagnosis E Code VI	CHAR	7	67
+ICD_DGNS_E_CD7	ICD_DGNS_E_CD7	Claim Diagnosis E Code VII	CHAR	7	68
+ICD_DGNS_E_CD8	ICD_DGNS_E_CD8	Claim Diagnosis E Code VIII	CHAR	7	69
+ICD_DGNS_E_CD9	ICD_DGNS_E_CD9	Claim Diagnosis E Code IX	CHAR	7	70
+ICD_DGNS_E_CD10	ICD_DGNS_E_CD10	Claim Diagnosis E Code X	CHAR	7	71
+ICD_DGNS_E_CD11	ICD_DGNS_E_CD11	Claim Diagnosis E Code XI	CHAR	7	72
+ICD_DGNS_E_CD12	ICD_DGNS_E_CD12	Claim Diagnosis E Code XII	CHAR	7	73
+LUPAIND	CLM_HHA_LUPA_IND_CD	Claim HHA Low Utilization Payment Adjustment (LUPA) Indicator Code	CHAR	1	74
+HHA_RFRL	CLM_HHA_RFRL_CD	Claim HHA Referral Code	CHAR	1	75
+VISITCNT	CLM_HHA_TOT_VISIT_CNT	Claim HHA Total Visit Count	NUM	3	76
+HHSTRTDT	CLM_ADMSN_DT	Claim Admission Date	DATE	8	77	New6
+DOB_DT	DOB_DT	Date of Birth from Claim	DATE	8	78
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	79
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	80
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	81
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	82
+CLM_MDCL_REC	CLM_MDCL_REC	Claim Medical Record Number	CHAR	17	83
+CLM_TRTMT_AUTHRZTN_NUM	CLM_TRTMT_AUTHRZTN_NUM	Claim Treatment Authorization Number	CHAR	18	88
+CLM_PRCR_RTRN_CD	CLM_PRCR_RTRN_CD	Claim Pricer Return Code	CHAR	2	89
+CLM_PRCR_VRSN_CD	CLM_PRCR_VRSN_CD	Claim Pricer Version Code	CHAR	10	106	New5
+CLM_SRVC_FAC_ZIP_CD	CLM_SRVC_FAC_ZIP_CD	Claim service facility ZIP code (where service was provided)	CHAR	9	90
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	91
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	92
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	93
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	94
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	95
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	96
+FINL_STD_AMT	FINL_STD_AMT	Claim Final Standard Amount	NUM	12	97
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	98
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	99	New2
+PRVDR_VLDTN_TYPE_CD	PRVDR_VLDTN_TYPE_CD	Provider Validation Type Code	CHAR	2	100	New2
+RR_BRD_EXCLSN_IND_SW	RR_BRD_EXCLSN_IND_SW	Railroad Board Exclusion Indicator Switch	CHAR	1	101	New2
+PPS_STD_VAL_PYMT_AMT	PPS_STD_VAL_PYMT_AMT	Claim PPS Standard Value Payment Amount	NUM	12	102	New2
+CLM_MODEL_REIMBRSMT_AMT	CLM_MODEL_REIMBRSMT_AMT	Claim Model Reimbursement Amount	NUM	12	103	New3
+CLM_ADJUST_GRP_CD	CLM_ADJUST_GRP_CD	Claim Adjustment Group Code	CHAR	2	104	New5
+CLM_ADJUST_RSN_CD	CLM_ADJUST_RSN_CD	Claim Adjustment Reason Code	CHAR	5	105	New5
+CLM_CLNCL_TRIL_NUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	108	New6
+Revenue center file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	3
+CLM_LN	CLM_LINE_NUM	Claim Line Number	NUM	13	4
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	5
+REV_CNTR	REV_CNTR	Revenue Center Code	CHAR	4	6
+REV_DT	REV_CNTR_DT	Revenue Center Date	DATE	8	7
+REVANSI1	REV_CNTR_1ST_ANSI_CD	Revenue Center 1st ANSI Code	CHAR	5	8
+APCHIPPS	REV_CNTR_APC_HIPPS_CD	Revenue Center APC or HIPPS Code	CHAR	5	9
+HCPCS_CD	HCPCS_CD	HCFA Common Procedure Coding System (HCPCS) Code	CHAR	5	10
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	11
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	12
+MDFR_CD3	HCPCS_3RD_MDFR_CD	HCPCS Third Modifier Code	CHAR	5	13
+PMTMTHD	REV_CNTR_PMT_MTHD_IND_CD	Revenue Center Payment Method Indicator Code	CHAR	2	14
+DSCNTIND	REV_CNTR_DSCNT_IND_CD	Revenue Center Discount Indicator Code	CHAR	1	27
+REV_CNTR_PRCNG_IND_CD	REV_CNTR_PRCNG_IND_CD	Revenue Center Pricing Indicator Code	CHAR	2	31
+IDENDC	REV_CNTR_IDE_NDC_UPC_NUM	Revenue Center IDE, NDC, or UPC Number	CHAR	24	28
+REV_UNIT	REV_CNTR_UNIT_CNT	Revenue Center Unit Count	NUM	8	15
+REV_RATE	REV_CNTR_RATE_AMT	Revenue Center Rate Amount	NUM	12	16
+RPRVDPMT	REV_CNTR_PRVDR_PMT_AMT	Revenue Center (Medicare) Provider Payment Amount	NUM	12	29
+PTNTRESP	REV_CNTR_PTNT_RSPNSBLTY_PMT	Revenue Center Patient Responsibility Payment Amount	NUM	12	30
+REVPMT	REV_CNTR_PMT_AMT_AMT	Revenue Center (Medicare) Payment Amount	NUM	12	17
+REV_CHRG	REV_CNTR_TOT_CHRG_AMT	Revenue Center Total Charge Amount	NUM	12	18
+REV_NCVR	REV_CNTR_NCVRD_CHRG_AMT	Revenue Center Non-Covered Charge Amount	NUM	12	19
+REVDEDCD	REV_CNTR_DDCTBL_COINSRNC_CD	Revenue Center Deductible Coinsurance Code	CHAR	1	20
+REVSTIND	REV_CNTR_STUS_IND_CD	Revenue Center Status Indicator Code	CHAR	2	21
+REV_CNTR_NDC_QTY	REV_CNTR_NDC_QTY	Revenue Center National Drug Code (NDC) Quantity	NUM	10	22
+REV_CNTR_NDC_QTY_QLFR_CD	REV_CNTR_NDC_QTY_QLFR_CD	Revenue Center NDC Quantity Qualifier Code	CHAR	2	23
+RNDRNG_PHYSN_UPIN	RNDRNG_PHYSN_UPIN	Revenue Center Rendering Physician UPIN	CHAR	12	24
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Revenue Center Rendering Physician NPI	CHAR	12	25
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Revenue Center Rendering Physician Specialty Code	CHAR	2	26
+THRPY_CAP_IND_CD1	THRPY_CAP_IND_CD1	Revenue Center Therapy Cap Indicator 1 Code	CHAR	1	32
+THRPY_CAP_IND_CD2	THRPY_CAP_IND_CD2	Revenue Center Therapy Cap Indicator 2 Code	CHAR	1	33
+REV_CNTR_RP_IND_CD	REV_CNTR_RP_IND_CD	Revenue Center Representative Payee (RP) Indicator Code	CHAR	1	34	New2
+RC_MODEL_REIMBRSMT_AMT	RC_MODEL_REIMBRSMT_AMT	Revenue Center Model Reimbursement Amount	NUM	12	35	New3
+RC_VLNTRY_SRVC_IND_CD	RC_VLNTRY_SRVC_IND_CD	Revenue Center Voluntary Service Indicator Code	CHAR	1	36	New4
+ORDRNG_PHYSN_NPI	ORDRNG_PHYSN_NPI	Revenue Center Ordering Physician NPI	CHAR	12	37	New4
+REV_CNTR_ADJUST_GRP_CD	REV_CNTR_ADJUST_GRP_CD	Revenue Center Adjustment Group Code	CHAR	2	38	New5
+REV_CNTR_ADJUST_RSN_CD	REV_CNTR_ADJUST_RSN_CD	Revenue Center Adjustment Reason Code	CHAR	5	39	New5
+REV_CNTR_RA_RMRK_CD	REV_CNTR_RA_RMRK_CD	Revenue Center Remittance Advice Remark Code	CHAR	5	40	New5
+Condition code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTCNDSQ	RLT_COND_CD_SEQ	Claim Related Condition Code Sequence	CHAR	2	4
+RLT_COND	CLM_RLT_COND_CD	Claim Related Condition Code	CHAR	2	5
+Occurrence code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTOCRSQ	RLT_OCRNC_CD_SEQ	Claim Related Occurrence Code Sequence	CHAR	2	4
+OCRNC_CD	CLM_RLT_OCRNC_CD	Claim Related Occurrence Code	CHAR	2	5
+OCRNCDT	CLM_RLT_OCRNC_DT	Claim Related Occurrence Date	DATE	8	6
+Span code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTSPNSQ	RLT_SPAN_CD_SEQ	Claim Related Span Code Sequence	CHAR	2	4
+SPAN_CD	CLM_SPAN_CD	Claim Occurrence Span Code	CHAR	2	5
+SPANFROM	CLM_SPAN_FROM_DT	Claim Occurrence Span From Date	DATE	8	6
+SPANTHRU	CLM_SPAN_THRU_DT	Claim Occurrence Span Through Date	DATE	8	7
+Value code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTVALSQ	RLT_VAL_CD_SEQ	Claim Related Value Code Sequence	CHAR	2	4
+VAL_CD	CLM_VAL_CD	Claim Value Code	CHAR	2	5
+VAL_AMT	CLM_VAL_AMT	Claim Value Amount	NUM	12	6
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration sequence number	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2020.
+4 New fields added in January 2021.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	HOP file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+FI_CLM_PROC_DT	FI_CLM_PROC_DT	FI Claim Process Date	DATE	8	8
+QUERY_CD	CLAIM_QUERY_CODE	Claim Query Code	CHAR	1	9
+PROVIDER	PRVDR_NUM	Provider Number	CHAR	6	10
+PRVDR_FULL_CCN_NUM	PRVDR_FULL_CCN_NUM	Full CMS Certification Number for Provider	CHAR	13	164	New5
+FAC_TYPE	CLM_FAC_TYPE_CD	Claim Facility Type Code	CHAR	1	11
+OWNG_PRVDR_TIN_NUM	OWNG_PRVDR_TIN_NUM	Owning Provider Tax Identification Number (TIN)	CHAR	10	160	New5
+TYPESRVC	CLM_SRVC_CLSFCTN_TYPE_CD	Claim Service classification Type Code	CHAR	1	12
+FREQ_CD	CLM_FREQ_CD	Claim Frequency Code	CHAR	1	13
+FI_NUM	FI_NUM	FI or MAC Number	CHAR	5	14
+NOPAY_CD	CLM_MDCR_NON_PMT_RSN_CD	Claim Medicare Non Payment Reason Code	CHAR	2	15
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	16
+PRPAYAMT	NCH_PRMRY_PYR_CLM_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	17
+PRPAY_CD	NCH_PRMRY_PYR_CD	NCH Primary Payer Code (if not Medicare)	CHAR	1	18
+ACTIONCD	FI_CLM_ACTN_CD	FI or MAC Claim Action Code	CHAR	1	142
+PRSTATE	PRVDR_STATE_CD	NCH Provider SSA State Code	CHAR	2	19
+ORGNPINM	ORG_NPI_NUM	Organization NPI Number	CHAR	10	20
+SRVC_LOC_NPI_NUM	SRVC_LOC_NPI_NUM	Claim Service Location NPI Number	CHAR	22	21
+AT_UPIN	AT_PHYSN_UPIN	Claim Attending Physician UPIN Number	CHAR	6	22
+AT_NPI	AT_PHYSN_NPI	Claim Attending Physician NPI Number	CHAR	10	23
+AT_PHYSN_SPCLTY_CD	AT_PHYSN_SPCLTY_CD	Claim Attending Physician Specialty Code	CHAR	2	24
+OP_UPIN	OP_PHYSN_UPIN	Claim Operating Physician UPIN Number	CHAR	6	25
+OP_NPI	OP_PHYSN_NPI	Claim Operating Physician NPI Number	CHAR	10	26
+OP_PHYSN_SPCLTY_CD	OP_PHYSN_SPCLTY_CD	Claim Operating Physician Specialty Code	CHAR	2	27
+OT_UPIN	OT_PHYSN_UPIN	Claim Other Physician UPIN Number	CHAR	6	28
+OT_NPI	OT_PHYSN_NPI	Claim Other Physician NPI Number	CHAR	10	29
+OT_PHYSN_SPCLTY_CD	OT_PHYSN_SPCLTY_CD	Claim Other Physician Specialty Code	CHAR	2	30
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Claim Rendering Physician NPI Number	CHAR	12	31
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Claim Rendering Physician Specialty Code	CHAR	2	32
+RFR_PHYSN_NPI	RFR_PHYSN_NPI	Claim Referring Physician NPI Number	CHAR	12	33
+RFR_PHYSN_SPCLTY_CD	RFR_PHYSN_SPCLTY_CD	Claim Referring Physician Specialty Code	CHAR	2	34
+MCOPDSW	CLM_MCO_PD_SW	Claim MCO Paid Switch	CHAR	1	35
+STUS_CD	PTNT_DSCHRG_STUS_CD	Patient Discharge Status Code	CHAR	2	36
+TOT_CHRG	CLM_TOT_CHRG_AMT	Claim Total Charge Amount	NUM	12	37
+BLDDEDAM	NCH_BENE_BLOOD_DDCTBL_LBLTY_AM	NCH Beneficiary Blood Deductible Liability Amount	NUM	12	38
+PCCHGAMT	NCH_PROFNL_CMPNT_CHRG_AMT	NCH Professional Component Charge Amount	NUM	12	39
+BLDFRNSH	NCH_BLOOD_PNTS_FRNSHD_QTY	NCH Blood Pints Furnished Quantity	NUM	3	143
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	40
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	41
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	42
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	43
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	44
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	45
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	46
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	47
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	48
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	49
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	50
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	51
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	52
+ICD_DGNS_CD13	ICD_DGNS_CD13	Claim Diagnosis Code XIII	CHAR	7	53
+ICD_DGNS_CD14	ICD_DGNS_CD14	Claim Diagnosis Code XIV	CHAR	7	54
+ICD_DGNS_CD15	ICD_DGNS_CD15	Claim Diagnosis Code XV	CHAR	7	55
+ICD_DGNS_CD16	ICD_DGNS_CD16	Claim Diagnosis Code XVI	CHAR	7	56
+ICD_DGNS_CD17	ICD_DGNS_CD17	Claim Diagnosis Code XVII	CHAR	7	57
+ICD_DGNS_CD18	ICD_DGNS_CD18	Claim Diagnosis Code XVIII	CHAR	7	58
+ICD_DGNS_CD19	ICD_DGNS_CD19	Claim Diagnosis Code XIX	CHAR	7	59
+ICD_DGNS_CD20	ICD_DGNS_CD20	Claim Diagnosis Code XX	CHAR	7	60
+ICD_DGNS_CD21	ICD_DGNS_CD21	Claim Diagnosis Code XXI	CHAR	7	61
+ICD_DGNS_CD22	ICD_DGNS_CD22	Claim Diagnosis Code XXII	CHAR	7	62
+ICD_DGNS_CD23	ICD_DGNS_CD23	Claim Diagnosis Code XXIII	CHAR	7	63
+ICD_DGNS_CD24	ICD_DGNS_CD24	Claim Diagnosis Code XXIV	CHAR	7	64
+ICD_DGNS_CD25	ICD_DGNS_CD25	Claim Diagnosis Code XXV	CHAR	7	65
+FST_DGNS_E_CD	FST_DGNS_E_CD	First Claim Diagnosis E Code	CHAR	7	66
+ICD_DGNS_E_CD1	ICD_DGNS_E_CD1	Claim Diagnosis E Code I	CHAR	7	67
+ICD_DGNS_E_CD2	ICD_DGNS_E_CD2	Claim Diagnosis E Code II	CHAR	7	68
+ICD_DGNS_E_CD3	ICD_DGNS_E_CD3	Claim Diagnosis E Code III	CHAR	7	69
+ICD_DGNS_E_CD4	ICD_DGNS_E_CD4	Claim Diagnosis E Code IV	CHAR	7	70
+ICD_DGNS_E_CD5	ICD_DGNS_E_CD5	Claim Diagnosis E Code V	CHAR	7	71
+ICD_DGNS_E_CD6	ICD_DGNS_E_CD6	Claim Diagnosis E Code VI	CHAR	7	72
+ICD_DGNS_E_CD7	ICD_DGNS_E_CD7	Claim Diagnosis E Code VII	CHAR	7	73
+ICD_DGNS_E_CD8	ICD_DGNS_E_CD8	Claim Diagnosis E Code VIII	CHAR	7	74
+ICD_DGNS_E_CD9	ICD_DGNS_E_CD9	Claim Diagnosis E Code IX	CHAR	7	75
+ICD_DGNS_E_CD10	ICD_DGNS_E_CD10	Claim Diagnosis E Code X	CHAR	7	76
+ICD_DGNS_E_CD11	ICD_DGNS_E_CD11	Claim Diagnosis E Code XI	CHAR	7	77
+ICD_DGNS_E_CD12	ICD_DGNS_E_CD12	Claim Diagnosis E Code XII	CHAR	7	78
+ICD_PRCDR_CD1	ICD_PRCDR_CD1	Claim Procedure Code I	CHAR	7	79
+PRCDR_DT1	PRCDR_DT1	Claim Procedure Code I Date	DATE	8	80
+ICD_PRCDR_CD2	ICD_PRCDR_CD2	Claim Procedure Code II	CHAR	7	81
+PRCDR_DT2	PRCDR_DT2	Claim Procedure Code II Date	DATE	8	82
+ICD_PRCDR_CD3	ICD_PRCDR_CD3	Claim Procedure Code III	CHAR	7	83
+PRCDR_DT3	PRCDR_DT3	Claim Procedure Code III Date	DATE	8	84
+ICD_PRCDR_CD4	ICD_PRCDR_CD4	Claim Procedure Code IV	CHAR	7	85
+PRCDR_DT4	PRCDR_DT4	Claim Procedure Code IV Date	DATE	8	86
+ICD_PRCDR_CD5	ICD_PRCDR_CD5	Claim Procedure Code V	CHAR	7	87
+PRCDR_DT5	PRCDR_DT5	Claim Procedure Code V Date	DATE	8	88
+ICD_PRCDR_CD6	ICD_PRCDR_CD6	Claim Procedure Code VI	CHAR	7	89
+PRCDR_DT6	PRCDR_DT6	Claim Procedure Code VI Date	DATE	8	90
+ICD_PRCDR_CD7	ICD_PRCDR_CD7	Claim Procedure Code VII	CHAR	7	91
+PRCDR_DT7	PRCDR_DT7	Claim Procedure CodeVII Date	DATE	8	92
+ICD_PRCDR_CD8	ICD_PRCDR_CD8	Claim Procedure Code VIII	CHAR	7	93
+PRCDR_DT8	PRCDR_DT8	Claim Procedure Code VIII Date	DATE	8	94
+ICD_PRCDR_CD9	ICD_PRCDR_CD9	Claim Procedure Code IX	CHAR	7	95
+PRCDR_DT9	PRCDR_DT9	Claim Procedure Code IX Date	DATE	8	96
+ICD_PRCDR_CD10	ICD_PRCDR_CD10	Claim Procedure Code X	CHAR	7	97
+PRCDR_DT10	PRCDR_DT10	Claim Procedure Code X Date	DATE	8	98
+ICD_PRCDR_CD11	ICD_PRCDR_CD11	Claim Procedure Code XI	CHAR	7	99
+PRCDR_DT11	PRCDR_DT11	Claim Procedure Code XI Date	DATE	8	100
+ICD_PRCDR_CD12	ICD_PRCDR_CD12	Claim Procedure Code XII	CHAR	7	101
+PRCDR_DT12	PRCDR_DT12	Claim Procedure Code XII Date	DATE	8	102
+ICD_PRCDR_CD13	ICD_PRCDR_CD13	Claim Procedure Code XIII	CHAR	7	103
+PRCDR_DT13	PRCDR_DT13	Claim Procedure Code XIII Date	DATE	8	104
+ICD_PRCDR_CD14	ICD_PRCDR_CD14	Claim Procedure Code XIV	CHAR	7	105
+PRCDR_DT14	PRCDR_DT14	Claim Procedure Code XIV Date	DATE	8	106
+ICD_PRCDR_CD15	ICD_PRCDR_CD15	Claim Procedure Code XV	CHAR	7	107
+PRCDR_DT15	PRCDR_DT15	Claim Procedure Code XV Date	DATE	8	108
+ICD_PRCDR_CD16	ICD_PRCDR_CD16	Claim Procedure Code XVI	CHAR	7	109
+PRCDR_DT16	PRCDR_DT16	Claim Procedure Code XVI Date	DATE	8	110
+ICD_PRCDR_CD17	ICD_PRCDR_CD17	Claim Procedure Code XVII	CHAR	7	111
+PRCDR_DT17	PRCDR_DT17	Claim Procedure Code XVII Date	DATE	8	112
+ICD_PRCDR_CD18	ICD_PRCDR_CD18	Claim Procedure Code XVIII	CHAR	7	113
+PRCDR_DT18	PRCDR_DT18	Claim Procedure Code XVIII Date	DATE	8	114
+ICD_PRCDR_CD19	ICD_PRCDR_CD19	Claim Procedure Code XIX	CHAR	7	115
+PRCDR_DT19	PRCDR_DT19	Claim Procedure Code XIX Date	DATE	8	116
+ICD_PRCDR_CD20	ICD_PRCDR_CD20	Claim Procedure Code XX	CHAR	7	117
+PRCDR_DT20	PRCDR_DT20	Claim Procedure Code XX Date	DATE	8	118
+ICD_PRCDR_CD21	ICD_PRCDR_CD21	Claim Procedure Code XXI	CHAR	7	119
+PRCDR_DT21	PRCDR_DT21	Claim Procedure Code XXI Date	DATE	8	120
+ICD_PRCDR_CD22	ICD_PRCDR_CD22	Claim Procedure Code XXII	CHAR	7	121
+PRCDR_DT22	PRCDR_DT22	Claim Procedure Code XXII Date	DATE	8	122
+ICD_PRCDR_CD23	ICD_PRCDR_CD23	Claim Procedure Code XXIII	CHAR	7	123
+PRCDR_DT23	PRCDR_DT23	Claim Procedure Code XXIII Date	DATE	8	124
+ICD_PRCDR_CD24	ICD_PRCDR_CD24	Claim Procedure Code XXIV	CHAR	7	125
+PRCDR_DT24	PRCDR_DT24	Claim Procedure Code XXIV Date	DATE	8	126
+ICD_PRCDR_CD25	ICD_PRCDR_CD25	Claim Procedure Code XXV	CHAR	7	127
+PRCDR_DT25	PRCDR_DT25	Claim Procedure Code XXV Date	DATE	8	128
+RSN_VISIT_CD1	RSN_VISIT_CD1	Reason for Visit Diagnosis Code I	CHAR	7	129
+RSN_VISIT_CD2	RSN_VISIT_CD2	Reason for Visit Diagnosis Code II	CHAR	7	130
+RSN_VISIT_CD3	RSN_VISIT_CD3	Reason for Visit Diagnosis Code III	CHAR	7	131
+PTB_DED	NCH_BENE_PTB_DDCTBL_AMT	NCH Beneficiary Part B Deductible Amount	NUM	12	132
+PTB_COIN	NCH_BENE_PTB_COINSRNC_AMT	NCH Beneficiary Part B Coinsurance Amount	NUM	12	133
+PRVDRPMT	CLM_OP_PRVDR_PMT_AMT	Claim Outpatient Provider Payment Amount	NUM	12	134
+BENEPMT	CLM_OP_BENE_PMT_AMT	Claim Outpatient Payment Amount to Beneficiary	NUM	12	135
+DOB_DT	DOB_DT	Date of Birth from Claim	DATE	8	136
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	137
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	138
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	139
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	140
+CLM_MDCL_REC	CLM_MDCL_REC	Claim Medical Record Number	CHAR	17	141
+CLM_TRTMT_AUTHRZTN_NUM	CLM_TRTMT_AUTHRZTN_NUM	Claim Treatment Authorization Number	CHAR	18	144
+CLM_PRCR_RTRN_CD	CLM_PRCR_RTRN_CD	Claim Pricer Return Code	CHAR	2	145
+CLM_PRCR_VRSN_CD	CLM_PRCR_VRSN_CD	Claim Pricer Version Code	CHAR	10	163	New5
+CLM_SRVC_FAC_ZIP_CD	CLM_SRVC_FAC_ZIP_CD	Claim service facility ZIP code (where service was provided)	CHAR	9	146
+CLM_OP_TRANS_TYPE_CD	CLM_OP_TRANS_TYPE_CD	Claim Outpatient transaction type	CHAR	1	147
+CLM_OP_ESRD_MTHD_CD	CLM_OP_ESRD_MTHD_CD	Claim Outpatient End Stage Renal Disease (ESRD) Method of Reimbursement Code	CHAR	1	148
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	149
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	150
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	151
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	152
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	153
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	154
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	155
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	156	New2
+PRVDR_VLDTN_TYPE_CD	PRVDR_VLDTN_TYPE_CD	Provider Validation Type Code	CHAR	2	157	New2
+RR_BRD_EXCLSN_IND_SW	RR_BRD_EXCLSN_IND_SW	Railroad Board Exclusion Indicator Switch	CHAR	1	158	New2
+CLM_MODEL_REIMBRSMT_AMT	CLM_MODEL_REIMBRSMT_AMT	Claim Model Reimbursement Amount	NUM	12	159	New3
+CLM_ADJUST_GRP_CD	CLM_ADJUST_GRP_CD	Claim Adjustment Group Code	CHAR	2	161	New5
+CLM_ADJUST_RSN_CD	CLM_ADJUST_RSN_CD	Claim Adjustment Reason Code	CHAR	5	162	New5
+ESRD_TRTMT_CHS_IND_CD	ESRD_TRTMT_CHS_IND_CD	End-Stage Renal Disease (ESRD) Treatment Choices Demonstration Indicator Code	CHAR	1	165	New5
+CLM_OP_PPS_IND	CLM_OP_PPS_IND	Claim Outpatient Prospective Payment System (OPPS) Indicator	CHAR	1	166	New5
+CLM_CLNCL_TRIL_NUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	167	New6
+Revenue center file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	3
+CLM_LN	CLM_LINE_NUM	Claim Line Number	NUM	13	4
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	5
+REV_CNTR	REV_CNTR	Revenue Center Code	CHAR	4	6
+REV_DT	REV_CNTR_DT	Revenue Center Date	DATE	8	7
+REVANSI1	REV_CNTR_1ST_ANSI_CD	Revenue Center 1st ANSI Code	CHAR	5	8
+REVANSI2	REV_CNTR_2ND_ANSI_CD	Revenue Center 2nd ANSI Code	CHAR	5	9
+REVANSI3	REV_CNTR_3RD_ANSI_CD	Revenue Center 3rd ANSI Code	CHAR	5	10
+REVANSI4	REV_CNTR_4TH_ANSI_CD	Revenue Center 4th ANSI Code	CHAR	5	11
+APCHIPPS	REV_CNTR_APC_HIPPS_CD	Revenue Center APC  or HIPPS Code	CHAR	5	12
+HCPCS_CD	HCPCS_CD	HCFA Common Procedure Coding System (HCPCS) Code	CHAR	5	13
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	14
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	15
+MDFR_CD3	HCPCS_3RD_MDFR_CD	HCPCS Third Modifier Code	CHAR	5	16
+MDFR_CD4	HCPCS_4th_MDFR_CD	HCPCS Fourth Modifier Code	CHAR	5	17
+PMTMTHD	REV_CNTR_PMT_MTHD_IND_CD	Revenue Center Payment Method Indicator Code	CHAR	2	18
+DSCNTIND	REV_CNTR_DSCNT_IND_CD	Revenue Center Discount Indicator Code	CHAR	1	19
+PACKGIND	REV_CNTR_PACKG_IND_CD	Revenue Center Packaging Indicator Code	CHAR	1	20
+REV_CNTR_PRCNG_IND_CD	REV_CNTR_PRCNG_IND_CD	Revenue Center Pricing Indicator Code	CHAR	2	44
+OTAF_1	REV_CNTR_OTAF_PMT_CD	Revenue Center Obligation to Accept As Full (OTAF) Payment Code	CHAR	1	21
+IDENDC	REV_CNTR_IDE_NDC_UPC_NUM	Revenue Center IDE, NDC, or UPC Number	CHAR	24	22
+REV_UNIT	REV_CNTR_UNIT_CNT	Revenue Center Unit Count	NUM	8	23
+REV_RATE	REV_CNTR_RATE_AMT	Revenue Center Rate Amount	NUM	12	24
+REVBLOOD	REV_CNTR_BLOOD_DDCTBL_AMT	Revenue Center Blood Deductible Amount	NUM	12	25
+REVDCTBL	REV_CNTR_CASH_DDCTBL_AMT	Revenue Center Cash Deductible Amount	NUM	12	26
+WAGEADJ	REV_CNTR_COINSRNC_WGE_ADJSTD_C	Revenue Center Coinsurance/Wage Adjusted Coinsurance Amount	NUM	12	27
+RDCDCOIN	REV_CNTR_RDCD_COINSRNC_AMT	Revenue Center Reduced Coinsurance Amount	NUM	12	28
+REV_MSP1	REV_CNTR_1ST_MSP_PD_AMT	Revenue Center 1st Medicare Secondary Payer (MSP) Paid Amount	NUM	12	29
+REV_MSP2	REV_CNTR_2ND_MSP_PD_AMT	Revenue Center 2nd Medicare Secondary Payer Paid Amount	NUM	12	30
+RPRVDPMT	REV_CNTR_PRVDR_PMT_AMT	Revenue Center (Medicare) Provider Payment Amount	NUM	12	31
+RBENEPMT	REV_CNTR_BENE_PMT_AMT	Revenue Center Payment Amount to Beneficiary	NUM	12	32
+PTNTRESP	REV_CNTR_PTNT_RSPNSBLTY_PMT	Revenue Center Patient Responsibility Payment Amount	NUM	12	33
+REVPMT	REV_CNTR_PMT_AMT_AMT	Revenue Center (Medicare) Payment Amount	NUM	12	34
+REV_CHRG	REV_CNTR_TOT_CHRG_AMT	Revenue Center Total Charge Amount	NUM	12	35
+REV_NCVR	REV_CNTR_NCVRD_CHRG_AMT	Revenue Center Non-Covered Charge Amount	NUM	12	36
+REVDEDCD	REV_CNTR_DDCTBL_COINSRNC_CD	Revenue Center Deductible Coinsurance Code	CHAR	1	43
+REVSTIND	REV_CNTR_STUS_IND_CD	Revenue Center Status Indicator Code	CHAR	2	37
+RC_PTNT_ADD_ON_PYMT_AMT	RC_PTNT_ADD_ON_PYMT_AMT	Revenue Center Patient/Initial Visit Add-On Payment Amount (for initial wellness visit)	NUM	12	47
+REV_CNTR_CRA_TPNIES_AMT	REV_CNTR_CRA_TPNIES_AMT	Rev Cntr Capital Related Assets Transitnl Add-on Pymnt Amt New and Innovtv Equip	NUM	12	53	New5
+REV_CNTR_NDC_QTY	REV_CNTR_NDC_QTY	Revenue Center National Drug Code (NDC) Quantity	NUM	10	38
+REV_CNTR_NDC_QTY_QLFR_CD	REV_CNTR_NDC_QTY_QLFR_CD	Revenue Center NDC Quantity Qualifier Code	CHAR	2	39
+RNDRNG_PHYSN_UPIN	RNDRNG_PHYSN_UPIN	Revenue Center Rendering Physician UPIN	CHAR	12	40
+RNDRNG_PHYSN_NPI	RNDRNG_PHYSN_NPI	Revenue Center Rendering Physician NPI	CHAR	12	41
+RNDRNG_PHYSN_SPCLTY_CD	RNDRNG_PHYSN_SPCLTY_CD	Revenue Center Rendering Physician Specialty Code	CHAR	2	42
+THRPY_CAP_IND_CD1	THRPY_CAP_IND_CD1	Revenue Center Therapy Cap Indicator 1 Code	CHAR	1	45
+THRPY_CAP_IND_CD2	THRPY_CAP_IND_CD2	Revenue Center Therapy Cap Indicator 2 Code	CHAR	1	46
+REV_CNTR_THRPY_RDCTN_AMT	REV_CNTR_THRPY_RDCTN_AMT	Revenue Center Therapy Reduction Amount	NUM	12	54	New5
+TRNSTNL_DRUG_ADD_ON_PYMT_AMT	TRNSTNL_DRUG_ADD_ON_PYMT_AMT	Transitional Drug Add-On Payment Amount	NUM	12	48
+REV_CNTR_RP_IND_CD	REV_CNTR_RP_IND_CD	Revenue Center Representative Payee (RP) Indicator Code	CHAR	1	49
+RC_MODEL_REIMBRSMT_AMT	RC_MODEL_REIMBRSMT_AMT	Revenue Center Model Reimbursement Amount	NUM	12	50	New3
+RC_VLNTRY_SRVC_IND_CD	RC_VLNTRY_SRVC_IND_CD	Revenue Center Voluntary Service Indicator Code	CHAR	1	51	New4
+ORDRNG_PHYSN_NPI	ORDRNG_PHYSN_NPI	Revenue Center Ordering Physician NPI	CHAR	12	52	New4
+REV_CNTR_ADJUST_GRP_CD	REV_CNTR_ADJUST_GRP_CD	Revenue Center Adjustment Group Code	CHAR	2	55	New5
+REV_CNTR_ADJUST_RSN_CD	REV_CNTR_ADJUST_RSN_CD	Revenue Center Adjustment Reason Code	CHAR	5	56	New5
+REV_CNTR_RA_RMRK_CD	REV_CNTR_RA_RMRK_CD	Revenue Center Remittance Advice Remark Code	CHAR	5	57	New5
+Condition code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTCNDSQ	RLT_COND_CD_SEQ	Claim Related Condition Code Sequence	CHAR	2	4
+RLT_COND	CLM_RLT_COND_CD	Claim Related Condition Code	CHAR	2	5
+Occurrence code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTOCRSQ	RLT_OCRNC_CD_SEQ	Claim Related Occurrence Code Sequence	CHAR	2	4
+OCRNC_CD	CLM_RLT_OCRNC_CD	Claim Related Occurrence Code	CHAR	2	5
+OCRNCDT	CLM_RLT_OCRNC_DT	Claim Related Occurrence Date	DATE	8	6
+Span code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTSPNSQ	RLT_SPAN_CD_SEQ	Claim Related Span Code Sequence	CHAR	2	4
+SPAN_CD	CLM_SPAN_CD	Claim Occurrence Span Code	CHAR	2	5
+SPANFROM	CLM_SPAN_FROM_DT	Claim Occurrence Span From Date	DATE	8	6
+SPANTHRU	CLM_SPAN_THRU_DT	Claim Occurrence Span Through Date	DATE	8	7
+Value code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+RLTVALSQ	RLT_VAL_CD_SEQ	Claim Related Value Code Sequence	CHAR	2	4
+VAL_CD	CLM_VAL_CD	Claim Value Code	CHAR	2	5
+VAL_AMT	CLM_VAL_AMT	Claim Value Amount	NUM	12	6
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration sequence number	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2020.
+4 New fields added in January 2021.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Non-Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	Carrier file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+ENTRY_CD	CARR_CLM_ENTRY_CD	Carrier Claim Entry Code	CHAR	1	8
+DISP_CD	CLM_DISP_CD	Claim Disposition Code	CHAR	2	9
+CARR_NUM	CARR_NUM	Carrier or MAC Number	CHAR	5	10
+PMTDNLCD	CARR_CLM_PMT_DNL_CD	Carrier Claim Payment Denial Code	CHAR	2	11
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	12
+PRPAYAMT	CARR_CLM_PRMRY_PYR_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	13
+RFR_UPIN	RFR_PHYSN_UPIN	Carrier/DMERC Claim Referring Physician UPIN Number	CHAR	12	14
+RFR_NPI	RFR_PHYSN_NPI	Carrier/DMERC Claim Referring Physician NPI Number	CHAR	12	15
+ASGMNTCD	CARR_CLM_PRVDR_ASGNMT_IND_SW	Carrier Claim Provider Assignment Indicator Switch	CHAR	1	16
+PROV_PMT	NCH_CLM_PRVDR_PMT_AMT	NCH Claim Provider Payment Amount	NUM	12	17
+BENE_PMT	NCH_CLM_BENE_PMT_AMT	NCH Claim Payment Amount to Beneficiary	NUM	12	18
+CLM_BENE_PD_AMT	CLM_BENE_PD_AMT	Carrier Claim Beneficiary Paid Amount	NUM	12	56
+SBMTCHRG	NCH_CARR_CLM_SBMTD_CHRG_AMT	NCH Carrier Claim Submitted Charge Amount (sum of all line-level submitted charges)	NUM	12	19
+ALOWCHRG	NCH_CARR_CLM_ALOWD_AMT	NCH Carrier Claim Allowed Charge Amount (sum of all line-level allowed charges)	NUM	12	20
+DEDAPPLY	CARR_CLM_CASH_DDCTBL_APLD_AMT	Carrier Claim Cash Deductible Applied Amount (sum of all line-level deductible amounts)	NUM	12	21
+HCPCS_YR	CARR_CLM_HCPCS_YR_CD	Claim Healthcare Common Procedure Coding System (HCPCS) Year Code	CHAR	1	22
+RFR_PRFL	CARR_CLM_RFRNG_PIN_NUM	Carrier Claim Referring Provider ID Number (PIN)	CHAR	14	23
+CPO_PRVDR_NUM	CPO_PRVDR_NUM	Care Plan Oversight (CPO) Provider Number	CHAR	12	57
+CPO_ORG_NPI_NUM	CPO_ORG_NPI_NUM	CPO Organization NPI Number	CHAR	10	58
+CARR_CLM_BLG_NPI_NUM	CARR_CLM_BLG_NPI_NUM	Carrier Claim Billing NPI Number	CHAR	10	59
+BLG_PRVDR_SPCLTY_CD1	BLG_PRVDR_SPCLTY_CD1	Claim Billing Provider Secondary Specialty Code 1	CHAR	2	65	New6
+BLG_PRVDR_SPCLTY_CD2	BLG_PRVDR_SPCLTY_CD2	Claim Billing Provider Secondary Specialty Code 2	CHAR	2	66	New6
+BLG_PRVDR_SPCLTY_CD3	BLG_PRVDR_SPCLTY_CD3	Claim Billing Provider Secondary Specialty Code 3	CHAR	2	67	New6
+BLG_PRVDR_TXNMY_CD	BLG_PRVDR_TXNMY_CD	Claim Billing Provider Taxonomy Code	CHAR	10	68	New6
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	24
+PRNCPAL_DGNS_VRSN_CD	PRNCPAL_DGNS_VRSN_CD	Claim Principal Diagnosis Version Code	CHAR	1	25
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	26
+ICD_DGNS_VRSN_CD1	ICD_DGNS_VRSN_CD1	Claim Diagnosis Code I Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	27
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	28
+ICD_DGNS_VRSN_CD2	ICD_DGNS_VRSN_CD2	Claim Diagnosis Code II Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	29
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	30
+ICD_DGNS_VRSN_CD3	ICD_DGNS_VRSN_CD3	Claim Diagnosis Code III Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	31
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	32
+ICD_DGNS_VRSN_CD4	ICD_DGNS_VRSN_CD4	Claim Diagnosis Code IV Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	33
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	34
+ICD_DGNS_VRSN_CD5	ICD_DGNS_VRSN_CD5	Claim Diagnosis Code V Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	35
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	36
+ICD_DGNS_VRSN_CD6	ICD_DGNS_VRSN_CD6	Claim Diagnosis Code VI Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	37
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	38
+ICD_DGNS_VRSN_CD7	ICD_DGNS_VRSN_CD7	Claim Diagnosis Code VII Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	39
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	40
+ICD_DGNS_VRSN_CD8	ICD_DGNS_VRSN_CD8	Claim Diagnosis Code VIII Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	41
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	42
+ICD_DGNS_VRSN_CD9	ICD_DGNS_VRSN_CD9	Claim Diagnosis Code IX Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	43
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	44
+ICD_DGNS_VRSN_CD10	ICD_DGNS_VRSN_CD10	Claim Diagnosis Code X Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	45
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	46
+ICD_DGNS_VRSN_CD11	ICD_DGNS_VRSN_CD11	Claim Diagnosis Code XI Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	47
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	48
+ICD_DGNS_VRSN_CD12	ICD_DGNS_VRSN_CD12	Claim Diagnosis Code XII Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	49
+CCLTRNUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	50
+DOB_DT	DOB_DT	Date of Birth from Claim	DATE	8	51
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	52
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	53
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	54
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	55
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	60
+CARR_CLM_SOS_NPI_NUM	CARR_CLM_SOS_NPI_NUM	Carrier Claim Site of Service NPI Number	CHAR	10	61
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	62
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	63	New2
+PRVDR_VLDTN_TYPE_CD	PRVDR_VLDTN_TYPE_CD	Provider Validation Type Code	CHAR	2	64	New2
+Line file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+LINE_NUM	LINE_NUM	Claim Line Number	NUM	13	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	5
+PRF_PRFL	CARR_PRFRNG_PIN_NUM	Carrier Line Performing Provider ID Number (PIN)	CHAR	15	6
+PRF_UPIN	PRF_PHYSN_UPIN	Carrier Line Performing UPIN Number	CHAR	12	7
+PRFNPI	PRF_PHYSN_NPI	Carrier Line Performing NPI Number	CHAR	12	8
+PRGRPNPI	ORG_NPI_NUM	Carrier Line Performing Group NPI Number	CHAR	10	9
+PRV_TYPE	CARR_LINE_PRVDR_TYPE_CD	Carrier Line Provider Type Code	CHAR	1	10
+TAX_NUM	TAX_NUM	Line Provider Tax Number	CHAR	10	11
+PRVSTATE	PRVDR_STATE_CD	Line Provider State Code (SSA)	CHAR	2	12
+PROVZIP	PRVDR_ZIP	Carrier Line Performing Provider ZIP Code	CHAR	9	13
+HCFASPCL	PRVDR_SPCLTY	Line CMS Provider Specialty Code	CHAR	3	14
+RNDRNG_PRVDR_SPCLTY_CD1	RNDRNG_PRVDR_SPCLTY_CD1	Rendering Provider Secondary Specialty Code 1	CHAR	2	84	New6
+RNDRNG_PRVDR_SPCLTY_CD2	RNDRNG_PRVDR_SPCLTY_CD2	Rendering Provider Secondary Specialty Code 2	CHAR	2	85	New6
+RNDRNG_PRVDR_SPCLTY_CD3	RNDRNG_PRVDR_SPCLTY_CD3	Rendering Provider Secondary Specialty Code 3	CHAR	2	86	New6
+RNDRNG_PRVDR_TXNMY_CD	RNDRNG_PRVDR_TXNMY_CD	Rendering Provider Taxonomy Code	CHAR	10	87	New6
+PRTCPTG	PRTCPTNG_IND_CD	Line Provider Participating Indicator Code	CHAR	1	15
+ASTNT_CD	CARR_LINE_RDCD_PMT_PHYS_ASTN_C	Carrier Line Reduced Payment Physician Assistant Code	CHAR	1	16
+SRVC_CNT	LINE_SRVC_CNT	Line Service Count	NUM	4	17
+TYPSRVCB	LINE_CMS_TYPE_SRVC_CD	Line CMS Type Service Code	CHAR	1	18
+PLCSRVC	LINE_PLACE_OF_SRVC_CD	Line Place of Service Code	CHAR	2	19
+LCLTY_CD	CARR_LINE_PRCNG_LCLTY_CD	Carrier Line Pricing Locality Code	CHAR	2	20
+EXPNSDT1	LINE_1ST_EXPNS_DT	Line First Expense Date	DATE	8	21
+EXPNSDT2	LINE_LAST_EXPNS_DT	Line Last Expense Date	DATE	8	22
+HCPCS_CD	HCPCS_CD	Healthcare Common Procedure Coding System (HCPCS) Code	CHAR	5	23
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	24
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	25
+BETOS	BETOS_CD	Line Berenson-Eggers Type of Service (BETOS) Code	CHAR	3	26
+LINEPMT	LINE_NCH_PMT_AMT	Line NCH Medicare Payment Amount	NUM	12	27
+LBENPMT	LINE_BENE_PMT_AMT	Line Payment Amount to Beneficiary	NUM	12	28
+LPRVPMT	LINE_PRVDR_PMT_AMT	Line Provider Payment Amount	NUM	12	29
+LDEDAMT	LINE_BENE_PTB_DDCTBL_AMT	Line Beneficiary Part B Deductible Amount	NUM	12	30
+LPRPAYCD	LINE_BENE_PRMRY_PYR_CD	Line Primary Payer Code (if not Medicare)	CHAR	1	31
+LPRPDAMT	LINE_BENE_PRMRY_PYR_PD_AMT	Line Primary Payer (if not Medicare) Paid Amount	NUM	12	32
+COINAMT	LINE_COINSRNC_AMT	Line Beneficiary Coinsurance Amount	NUM	12	33
+LSBMTCHG	LINE_SBMTD_CHRG_AMT	Line Submitted Charge Amount	NUM	12	34
+LALOWCHG	LINE_ALOWD_CHRG_AMT	Line Allowed Charge Amount	NUM	12	35
+PRCNGIND	LINE_PRCSG_IND_CD	Line Processing Indicator Code	CHAR	2	36
+PMTINDSW	LINE_PMT_80_100_CD	Line Payment 80% / 100% Code	CHAR	1	37
+DED_SW	LINE_SERVICE_DEDUCTIBLE	Line Service Deductible Indicator Switch	CHAR	1	38
+MTUS_CNT	CARR_LINE_MTUS_CNT	Carrier Line Miles/Time/Units/Services (MTUS) Count	NUM	11	39
+MTUS_IND	CARR_LINE_MTUS_CD	Carrier Line Miles/Time/Units/Services (MTUS) Indicator Code	CHAR	1	40
+LINE_ICD_DGNS_CD	LINE_ICD_DGNS_CD	Line Diagnosis Code	CHAR	7	41
+LINE_ICD_DGNS_VRSN_CD	LINE_ICD_DGNS_VRSN_CD	Line Diagnosis Code Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	42
+HPSASCCD	HPSA_SCRCTY_IND_CD	Carrier Line Health Professional Shortage Area (HPSA) / Scarcity Indicator Code	CHAR	1	43
+CARRXNUM	CARR_LINE_RX_NUM	Carrier Line RX Number	CHAR	30	44
+HCTHGBRS	LINE_HCT_HGB_RSLT_NUM	Hematocrit / Hemoglobin Test Results	NUM	4	45
+HCTHGBTP	LINE_HCT_HGB_TYPE_CD	Hematocrit / Hemoglobin Test Type Code	CHAR	2	46
+LNNDCCD	LINE_NDC_CD	Line National Drug Code (NDC)	CHAR	11	47
+CARR_LINE_CLIA_LAB_NUM	CARR_LINE_CLIA_LAB_NUM	Clinical Laboratory Improvement Amendments (CLIA) monitored laboratory number	CHAR	10	48
+CARR_LINE_ANSTHSA_UNIT_CNT	CARR_LINE_ANSTHSA_UNIT_CNT	Carrier Line Anesthesia Unit Count	NUM	2	49
+CARR_LINE_CL_CHRG_AMT	CARR_LINE_CL_CHRG_AMT	Carrier Line Clinical Lab Charge Amount	NUM	12	50
+PHYSN_ZIP_CD	PHYSN_ZIP_CD	Line Place of Service (POS) Physician Zip Code	CHAR	15	51
+LINE_POINT_OF_PCKP_ZIP_CD	LINE_POINT_OF_PCKP_ZIP_CD	Line Point of Pickup Zip Code	CHAR	5	88	New6
+LINE_DROP_OFF_ZIP_CD	LINE_DROP_OFF_ZIP_CD	Line Drop Off Zip Code	CHAR	5	89	New6
+LINE_OTHR_APLD_IND_CD1	LINE_OTHR_APLD_IND_CD1	Line Other Applied Indicator 1st Code	CHAR	2	52
+LINE_OTHR_APLD_IND_CD2	LINE_OTHR_APLD_IND_CD2	Line Other Applied Indicator 2nd Code	CHAR	2	53
+LINE_OTHR_APLD_IND_CD3	LINE_OTHR_APLD_IND_CD3	Line Other Applied Indicator 3rd Code	CHAR	2	54
+LINE_OTHR_APLD_IND_CD4	LINE_OTHR_APLD_IND_CD4	Line Other Applied Indicator 4th Code	CHAR	2	55
+LINE_OTHR_APLD_IND_CD5	LINE_OTHR_APLD_IND_CD5	Line Other Applied Indicator 5th Code	CHAR	2	56
+LINE_OTHR_APLD_IND_CD6	LINE_OTHR_APLD_IND_CD6	Line Other Applied Indicator 6th Code	CHAR	2	57
+LINE_OTHR_APLD_IND_CD7	LINE_OTHR_APLD_IND_CD7	Line Other Applied Indicator 7th Code	CHAR	2	58
+LINE_OTHR_APLD_AMT1	LINE_OTHR_APLD_AMT1	Line Other Applied Amount for 1st Code	NUM	12	59
+LINE_OTHR_APLD_AMT2	LINE_OTHR_APLD_AMT2	Line Other Applied Amount for 2nd Code	NUM	12	60
+LINE_OTHR_APLD_AMT3	LINE_OTHR_APLD_AMT3	Line Other Applied Amount for 3rd Code	NUM	12	61
+LINE_OTHR_APLD_AMT4	LINE_OTHR_APLD_AMT4	Line Other Applied Amount for 4th Code	NUM	12	62
+LINE_OTHR_APLD_AMT5	LINE_OTHR_APLD_AMT5	Line Other Applied Amount for 5th Code	NUM	12	63
+LINE_OTHR_APLD_AMT6	LINE_OTHR_APLD_AMT6	Line Other Applied Amount for 6th Code	NUM	12	64
+LINE_OTHR_APLD_AMT7	LINE_OTHR_APLD_AMT7	Line Other Applied Amount for 7th Code	NUM	12	65
+THRPY_CAP_IND_CD1	THRPY_CAP_IND_CD1	Line Therapy cap Indicator 1 Code	CHAR	1	66
+THRPY_CAP_IND_CD2	THRPY_CAP_IND_CD2	Line Therapy cap Indicator 2 Code	CHAR	1	67
+THRPY_CAP_IND_CD3	THRPY_CAP_IND_CD3	Line Therapy cap Indicator 3 Code	CHAR	1	68
+THRPY_CAP_IND_CD4	THRPY_CAP_IND_CD4	Line Therapy cap Indicator 4 Code	CHAR	1	69
+THRPY_CAP_IND_CD5	THRPY_CAP_IND_CD5	Line Therapy cap Indicator 5 Code	CHAR	1	70
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	71
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	72
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	73
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	74
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	75
+CARR_LINE_MDPP_NPI_NUM	CARR_LINE_MDPP_NPI_NUM	Carrier Line Medicare Diabetes Prevention Program (MDPP) NPI Number	CHAR	10	76
+LINE_RSDL_PYMT_IND_CD	LINE_RSDL_PYMT_IND_CD	Line Residual Payment Indicator Code	CHAR	1	77	New2
+LINE_RP_IND_CD	LINE_RP_IND_CD	Line Representative Payee (RP) Indicator Code	CHAR	1	78	New2
+LINE_PRVDR_VLDTN_TYPE_CD	LINE_PRVDR_VLDTN_TYPE_CD	Line Provider Validation Type Code	CHAR	2	79	New2
+LINE_VLNTRY_SRVC_IND_CD	LINE_VLNTRY_SRVC_IND_CD	Line Voluntary Service Indicator Code	CHAR	1	80	New3
+LINE_ADJUST_GRP_CD	LINE_ADJUST_GRP_CD	Line Adjustment Group Code	CHAR	2	81	New5
+LINE_ADJUST_RSN_CD	LINE_ADJUST_RSN_CD	Line Adjustment Reason Code	CHAR	5	82	New5
+LINE_RA_RMRK_CD	LINE_RA_RMRK_CD	Line Remittance Advice Remark Code	CHAR	5	83	New5
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration sequence number	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2021.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+Medicare Fee-For-Service Non-Institutional Claims
+Version — March 2025
+Short SAS name	Long SAS name	Label	Type	Length	DME file sequence1	New variables
+Base claim file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+RIC_CD	NCH_NEAR_LINE_REC_IDENT_CD	NCH Near Line Record Identification Code (RIC)	CHAR	1	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+FROM_DT	CLM_FROM_DT	Claim From Date	DATE	8	5
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	6
+WKLY_DT	NCH_WKLY_PROC_DT	NCH Weekly Claim Processing Date	DATE	8	7
+ENTRY_CD	CARR_CLM_ENTRY_CD	Carrier Claim Entry Code	CHAR	1	8
+DISP_CD	CLM_DISP_CD	Claim Disposition Code	CHAR	2	9
+CARR_NUM	CARR_NUM	Carrier or MAC Number	CHAR	5	10
+PMTDNLCD	CARR_CLM_PMT_DNL_CD	Carrier Claim Payment Denial Code	CHAR	2	11
+PMT_AMT	CLM_PMT_AMT	Claim (Medicare) Payment Amount	NUM	12	12
+PRPAYAMT	CARR_CLM_PRMRY_PYR_PD_AMT	NCH Primary Payer (if not Medicare) Claim Paid Amount	NUM	12	13
+ASGMNTCD	CARR_CLM_PRVDR_ASGNMT_IND_SW	Carrier Claim Provider Assignment Indicator Switch	CHAR	1	14
+PROV_PMT	NCH_CLM_PRVDR_PMT_AMT	NCH Claim Provider Payment Amount	NUM	12	15
+BENE_PMT	NCH_CLM_BENE_PMT_AMT	NCH Claim Payment Amount to Beneficiary	NUM	12	16
+CLM_BENE_PD_AMT	CLM_BENE_PD_AMT	Carrier Claim Beneficiary Paid Amount	NUM	12	55
+SBMTCHRG	NCH_CARR_CLM_SBMTD_CHRG_AMT	NCH Carrier Claim Submitted Charge Amount (sum of all line-level submitted charges)	NUM	12	17
+ALOWCHRG	NCH_CARR_CLM_ALOWD_AMT	NCH Carrier Claim Allowed Charge Amount (sum of all line-level allowed charges)	NUM	12	18
+DEDAPPLY	CARR_CLM_CASH_DDCTBL_APLD_AMT	Carrier Claim Cash Deductible Applied Amount (sum of all line-level deductible amounts)	NUM	12	19
+HCPCS_YR	CARR_CLM_HCPCS_YR_CD	Claim Healthcare Common Procedure Coding System (HCPCS) Year Code	CHAR	1	20
+PRNCPAL_DGNS_CD	PRNCPAL_DGNS_CD	Claim Principal Diagnosis Code	CHAR	7	21
+PRNCPAL_DGNS_VRSN_CD	PRNCPAL_DGNS_VRSN_CD	Claim Principal Diagnosis Version Code	CHAR	1	22
+ICD_DGNS_CD1	ICD_DGNS_CD1	Claim Diagnosis Code I	CHAR	7	23
+ICD_DGNS_VRSN_CD1	ICD_DGNS_VRSN_CD1	Claim Diagnosis Code I Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	24
+ICD_DGNS_CD2	ICD_DGNS_CD2	Claim Diagnosis Code II	CHAR	7	25
+ICD_DGNS_VRSN_CD2	ICD_DGNS_VRSN_CD2	Claim Diagnosis Code II Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	26
+ICD_DGNS_CD3	ICD_DGNS_CD3	Claim Diagnosis Code III	CHAR	7	27
+ICD_DGNS_VRSN_CD3	ICD_DGNS_VRSN_CD3	Claim Diagnosis Code III Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	28
+ICD_DGNS_CD4	ICD_DGNS_CD4	Claim Diagnosis Code IV	CHAR	7	29
+ICD_DGNS_VRSN_CD4	ICD_DGNS_VRSN_CD4	Claim Diagnosis Code IV Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	30
+ICD_DGNS_CD5	ICD_DGNS_CD5	Claim Diagnosis Code V	CHAR	7	31
+ICD_DGNS_VRSN_CD5	ICD_DGNS_VRSN_CD5	Claim Diagnosis Code V Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	32
+ICD_DGNS_CD6	ICD_DGNS_CD6	Claim Diagnosis Code VI	CHAR	7	33
+ICD_DGNS_VRSN_CD6	ICD_DGNS_VRSN_CD6	Claim Diagnosis Code VI Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	34
+ICD_DGNS_CD7	ICD_DGNS_CD7	Claim Diagnosis Code VII	CHAR	7	35
+ICD_DGNS_VRSN_CD7	ICD_DGNS_VRSN_CD7	Claim Diagnosis Code VII Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	36
+ICD_DGNS_CD8	ICD_DGNS_CD8	Claim Diagnosis Code VIII	CHAR	7	37
+ICD_DGNS_VRSN_CD8	ICD_DGNS_VRSN_CD8	Claim Diagnosis Code VIII Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	38
+ICD_DGNS_CD9	ICD_DGNS_CD9	Claim Diagnosis Code IX	CHAR	7	39
+ICD_DGNS_VRSN_CD9	ICD_DGNS_VRSN_CD9	Claim Diagnosis Code IX Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	40
+ICD_DGNS_CD10	ICD_DGNS_CD10	Claim Diagnosis Code X	CHAR	7	41
+ICD_DGNS_VRSN_CD10	ICD_DGNS_VRSN_CD10	Claim Diagnosis Code X Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	42
+ICD_DGNS_CD11	ICD_DGNS_CD11	Claim Diagnosis Code XI	CHAR	7	43
+ICD_DGNS_VRSN_CD11	ICD_DGNS_VRSN_CD11	Claim Diagnosis Code XI Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	44
+ICD_DGNS_CD12	ICD_DGNS_CD12	Claim Diagnosis Code XII	CHAR	7	45
+ICD_DGNS_VRSN_CD12	ICD_DGNS_VRSN_CD12	Claim Diagnosis Code XII Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	46
+RFR_UPIN	RFR_PHYSN_UPIN	Carrier/DMERC Claim Ordering Physician UPIN Number	CHAR	12	47
+RFR_NPI	RFR_PHYSN_NPI	Carrier/DMERC Claim Ordering Physician NPI Number	CHAR	12	48
+CCLTRNUM	CLM_CLNCL_TRIL_NUM	Clinical Trial Number	CHAR	8	49
+DOB_DT	DOB_DT	Date of Birth from Claim	DATE	8	50
+RACE_CD	BENE_RACE_CD	Race Code from Claim	CHAR	1	51
+CNTY_CD	BENE_CNTY_CD	County Code from Claim (SSA)	CHAR	3	52
+STATE_CD	BENE_STATE_CD	Beneficiary Residence (SSA) State Code	CHAR	2	53
+ZIP_CD	BENE_MLG_CNTCT_ZIP_CD	ZIP Code of Residence from Claim	CHAR	9	54
+ACO_ID_NUM	ACO_ID_NUM	Claim Accountable Care Organization (ACO) Identification Number	CHAR	10	56
+CLM_BENE_ID_TYPE_CD	CLM_BENE_ID_TYPE_CD	Claim Beneficiary Identifier Type Code (For CMS Internal Use)	CHAR	1	57
+CLM_RSDL_PYMT_IND_CD	CLM_RSDL_PYMT_IND_CD	Claim Residual Payment Indicator Code	CHAR	1	58	New2
+Line file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+LINE_NUM	LINE_NUM	Claim Line Number	NUM	13	3
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	4
+THRU_DT	CLM_THRU_DT	Claim Through Date	DATE	8	5
+TAX_NUM	TAX_NUM	Line Provider Tax Number	CHAR	10	6
+HCFASPCL	PRVDR_SPCLTY	Line CMS Provider Specialty Code	CHAR	3	7
+PRTCPTG	PRTCPTNG_IND_CD	Line Provider Participating Indicator Code	CHAR	1	8
+SRVC_CNT	LINE_SRVC_CNT	Line Service Count	NUM	4	9
+TYPSRVCB	LINE_CMS_TYPE_SRVC_CD	Line CMS Type Service Code	CHAR	1	10
+PLCSRVC	LINE_PLACE_OF_SRVC_CD	Line Place of Service Code	CHAR	2	11
+EXPNSDT1	LINE_1ST_EXPNS_DT	Line First Expense Date	DATE	8	12
+EXPNSDT2	LINE_LAST_EXPNS_DT	Line Last Expense Date	DATE	8	13
+HCPCS_CD	HCPCS_CD	Healthcare Common Procedure Coding System (HCPCS) Code	CHAR	5	14
+MDFR_CD1	HCPCS_1ST_MDFR_CD	HCPCS Initial Modifier Code	CHAR	5	15
+MDFR_CD2	HCPCS_2ND_MDFR_CD	HCPCS Second Modifier Code	CHAR	5	16
+MDFR_CD3	HCPCS_3RD_MDFR_CD	HCPCS Third Modifier Code	CHAR	5	39
+MDFR_CD4	HCPCS_4TH_MDFR_CD	HCPCS Fourth Modifier Code	CHAR	5	40
+BETOS	BETOS_CD	Line Berenson-Eggers Type of Service (BETOS) Code	CHAR	3	17
+LINEPMT	LINE_NCH_PMT_AMT	Line NCH Medicare Payment Amount	NUM	12	18
+LBENPMT	LINE_BENE_PMT_AMT	Line Payment Amount to Beneficiary	NUM	12	19
+LPRVPMT	LINE_PRVDR_PMT_AMT	Line Provider Payment Amount	NUM	12	20
+LDEDAMT	LINE_BENE_PTB_DDCTBL_AMT	Line Beneficiary Part B Deductible Amount	NUM	12	21
+LPRPAYCD	LINE_BENE_PRMRY_PYR_CD	Line Primary Payer Code (if not Medicare)	CHAR	1	22
+LPRPDAMT	LINE_BENE_PRMRY_PYR_PD_AMT	Line Primary Payer (if not Medicare) Paid Amount	NUM	12	23
+COINAMT	LINE_COINSRNC_AMT	Line Beneficiary Coinsurance Amount	NUM	12	24
+PRPYALOW	LINE_PRMRY_ALOWD_CHRG_AMT	Line Primary Payer Allowed Charge Amount	NUM	12	25
+LSBMTCHG	LINE_SBMTD_CHRG_AMT	Line Submitted Charge Amount	NUM	12	26
+LALOWCHG	LINE_ALOWD_CHRG_AMT	Line Allowed Charge Amount	NUM	12	27
+PRCNGIND	LINE_PRCSG_IND_CD	Line Processing Indicator Code	CHAR	2	28
+PMTINDSW	LINE_PMT_80_100_CD	Line Payment 80% / 100% Code	CHAR	1	29
+DED_SW	LINE_SERVICE_DEDUCTIBLE	Line Service Deductible Indicator Switch	CHAR	1	30
+LINE_ICD_DGNS_CD	LINE_ICD_DGNS_CD	Line Diagnosis Code	CHAR	7	31
+LINE_ICD_DGNS_VRSN_CD	LINE_ICD_DGNS_VRSN_CD	Line Diagnosis Code Diagnosis Version Code (ICD-9 or ICD-10)	CHAR	1	32
+DME_PURC	LINE_DME_PRCHS_PRICE_AMT	Line DME Purchase Price Amount	NUM	12	33
+SUPLRNUM	PRVDR_NUM	DMERC Line Supplier Provider Number	CHAR	10	34
+SUP_NPI	PRVDR_NPI	DMERC Line Item Supplier NPI Number	CHAR	12	35
+PRCNG_ST	DMERC_LINE_PRCNG_STATE_CD	DMERC Line Pricing State Code (SSA)	CHAR	2	36
+PRVSTATE	PRVDR_STATE_CD	Line Provider State Code (SSA)	CHAR	2	37
+SUP_TYPE	DMERC_LINE_SUPPLR_TYPE_CD	DMERC Line Supplier Type Code	CHAR	1	38
+SCRNSVGS	DMERC_LINE_SCRN_SVGS_AMT	DMERC Line Screen Savings Amount	NUM	12	41
+DME_UNIT	DMERC_LINE_MTUS_CNT	DMERC Line Miles/Time/Units/Services (MTUS) Count	NUM	11	42
+UNIT_IND	DMERC_LINE_MTUS_CD	DMERC Line Miles/Time/ Units/Services (MTUS) Indicator Code	CHAR	1	43
+HCTHGBRS	LINE_HCT_HGB_RSLT_NUM	Hematocrit / Hemoglobin Test Results	NUM	4	44
+HCTHGBTP	LINE_HCT_HGB_TYPE_CD	Hematocrit / Hemoglobin Test Type Code	CHAR	2	45
+LNNDCCD	LINE_NDC_CD	Line National Drug Code (NDC)	CHAR	11	46
+LINE_OTHR_APLD_IND_CD1	LINE_OTHR_APLD_IND_CD1	Line Other Applied Indicator 1 Code	CHAR	2	47
+LINE_OTHR_APLD_IND_CD2	LINE_OTHR_APLD_IND_CD2	Line Other Applied Indicator 2 Code	CHAR	2	48
+LINE_OTHR_APLD_IND_CD3	LINE_OTHR_APLD_IND_CD3	Line Other Applied Indicator 3 Code	CHAR	2	49
+LINE_OTHR_APLD_IND_CD4	LINE_OTHR_APLD_IND_CD4	Line Other Applied Indicator 4 Code	CHAR	2	50
+LINE_OTHR_APLD_IND_CD5	LINE_OTHR_APLD_IND_CD5	Line Other Applied Indicator 5 Code	CHAR	2	51
+LINE_OTHR_APLD_IND_CD6	LINE_OTHR_APLD_IND_CD6	Line Other Applied Indicator 6 Code	CHAR	2	52
+LINE_OTHR_APLD_IND_CD7	LINE_OTHR_APLD_IND_CD7	Line Other Applied Indicator 7 Code	CHAR	2	53
+LINE_OTHR_APLD_AMT1	LINE_OTHR_APLD_AMT1	Line Other Applied 1 Amount	NUM	12	54
+LINE_OTHR_APLD_AMT2	LINE_OTHR_APLD_AMT2	Line Other Applied 2 Amount	NUM	12	55
+LINE_OTHR_APLD_AMT3	LINE_OTHR_APLD_AMT3	Line Other Applied 3 Amount	NUM	12	56
+LINE_OTHR_APLD_AMT4	LINE_OTHR_APLD_AMT4	Line Other Applied 4 Amount	NUM	12	57
+LINE_OTHR_APLD_AMT5	LINE_OTHR_APLD_AMT5	Line Other Applied 5 Amount	NUM	12	58
+LINE_OTHR_APLD_AMT6	LINE_OTHR_APLD_AMT6	Line Other Applied 6 Amount	NUM	12	59
+LINE_OTHR_APLD_AMT7	LINE_OTHR_APLD_AMT7	Line Other Applied 7 Amount	NUM	12	60
+LINE_RSDL_PYMT_IND_CD	LINE_RSDL_PYMT_IND_CD	Line Residual Payment Indicator Code	CHAR	1	61	New2
+LINE_RP_IND_CD	LINE_RP_IND_CD	Line Representative Payee (RP) Indicator Code	CHAR	1	62	New2
+DMERC_LINE_FRGN_ADR_IND	DMERC_LINE_FRGN_ADR_IND	Line Foreign Address Indicator	CHAR	2	63	New2
+LINE_RR_BRD_EXCLSN_IND_SW	LINE_RR_BRD_EXCLSN_IND_SW	Line Railroad Board Exclusion Indicator Switch	CHAR	1	64	New2
+LINE_VLNTRY_SRVC_IND_CD	LINE_VLNTRY_SRVC_IND_CD	Line Voluntary Service Indicator Code	CHAR	1	65	New3
+DMERC_OXGN_EQUIP_INITL_DT	DMERC_OXGN_EQUIP_INITL_DT	Oxygen Equipment Initial Date	DATE	8	66	New5
+DMERC_OXGN_INITL_DT_CD	DMERC_OXGN_INITL_DT_CD	Oxygen Equipment Initial Date Code	CHAR	1	67	New5
+DMERC_OXGN_EQUIP_PRVS_DT	DMERC_OXGN_EQUIP_PRVS_DT	Oxygen Equipment Previous Date	DATE	8	68	New5
+CLM_NEXT_GNRTN_ACO_IND_CD1	CLM_NEXT_GNRTN_ACO_IND_CD1	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Population based payments (PBP)	CHAR	1	69	New6
+CLM_NEXT_GNRTN_ACO_IND_CD2	CLM_NEXT_GNRTN_ACO_IND_CD2	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Telehealth	CHAR	1	70	New6
+CLM_NEXT_GNRTN_ACO_IND_CD3	CLM_NEXT_GNRTN_ACO_IND_CD3	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Post Discharge HH visits	CHAR	1	71	New6
+CLM_NEXT_GNRTN_ACO_IND_CD4	CLM_NEXT_GNRTN_ACO_IND_CD4	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - 3 day SNF waiver	CHAR	1	72	New6
+CLM_NEXT_GNRTN_ACO_IND_CD5	CLM_NEXT_GNRTN_ACO_IND_CD5	Claim Next Generation (NG) Accountable Care Organization (ACO) Indicator Code - Capitation	CHAR	1	73	New6
+Demonstrations/Innovations code file
+BENE_ID	BENE_ID	Encrypted CCW Beneficiary ID	CHAR	15	1
+CLM_ID	CLM_ID	Claim ID	CHAR	15	2
+CLM_TYPE	NCH_CLM_TYPE_CD	NCH Claim Type Code	CHAR	2	3
+DEMO_ID_SQNC_NUM	DEMO_ID_SQNC_NUM	Demonstration sequence number	NUM	3	4
+DEMO_ID_NUM	DEMO_ID_NUM	Demonstration number	CHAR	2	5
+DEMO_INFO_TXT	DEMO_INFO_TXT	Demo information text	CHAR	15	6
+1 Number shown on the matrix indicates the sequence of the data field. In 2025, the field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File;
+the numbering of the fields was updated.
+2 Fields that are new since the February 2018 update.
+3 New fields added in January 2021.
+5 New fields added in January 2023.
+6 New fields added in January 2024.
+
+Revision Date	Tab	Description
+45740	All	The field for beneficiary sex was removed because it is available in the Master Beneficiary Summary File.
+45292	All	Changes resulting from NCH Updates (CR 24). Added new fields:
+1)CLM_ADMSN_DT to HHA and Hospice base claims;
+2) CLM_CLNCL_TRIL_NUM to IP/SNF/HHA/Hospice and OP base claims;
+3)  BLG_PRVDR_SPCLTY_CD1, BLG_PRVDR_SPCLTY_CD2, BLG_PRVDR_SPCLTY_CD3, and BLG_PRVDR_TXNMY_CD to Carrier base claims;
+4) RNDRNG_PRVDR_SPCLTY_CD1, RNDRNG_PRVDR_SPCLTY_CD2, RNDRNG_PRVDR_SPCLTY_CD3, RNDRNG_PRVDR_TXNMY_CD, LINE_POINT_OF_PCKP_ZIP_CD, and LINE_DROP_OFF_ZIP_CD to Carrier lines;
+5) CLM_NEXT_GNRTN_ACO_IND_CD1 - CLM_NEXT_GNRTN_ACO_IND_CD5 to DME lines.
+44927	All	Changes resulting from NCH updates (CR 18-21). Added new fields:
+1) CLM_ADJUST_GRP_CD, CLM_ADJUST_RSN_CD , CLM_PRCR_VRSN_CD and PRVDR_FULL_CCN_NUM to IP, SNF, HH, Hospice and OP base claims.
+2) OWNG_PRVDR_TIN_NUM to IP and OP base claims;
+3) MS_DRG_GRPR_VRSN_CD to IP and SNF base claims;
+4) ESRD_TRTMT_CHS_IND_CD and CLM_OP_PPS_IND to OP base claims;
+5) REV_CNTR_ADJUST_GRP_CD and REV_CNTR_ADJUST_RSN_CD to IP, SNF, HH, Hospice and OP revenue lines;
+6) REV_CNTR_RA_RMRK_CD to HH, Hospice  and OP revenue lines;
+7) REV_CNTR_CRA_TPNIES_AMT and REV_CNTR_THRPY_RDCTN_AMT to OP revenue lines;
+8) LINE_ADJUST_GRP_CD, LINE_ADJUST_RSN_CD, and LINE_RA_RMRK_CD to Carrier lines;
+9) DMERC_OXGN_EQUIP_INITL_DT, DMERC_OXGN_INITL_DT_CD, and DMERC_OXGN_EQUIP_PRVS_DT to DME lines.
+44197	IP, SNF, Hospice, HHA, HOP, Carrier, DME	Changes resulting from NCH Version L updates
+•Update Inpatient and SNF Claim: expand CLM_DRG_CD from 3 bytes to 4 bytes
+•Update Carrier and DME Line: expand LINE_OTHR_APLD_IND_CD1-LINE_OTHR_APLD_IND_CD7 from 1 byte to 2 bytes
+•Add to Inpatient Claim: LTCH_DSCHRG_PYMT_ADJSTMT_AMT
+•Add to Outpatient, HHA, Hospice Revenue: REV_CNTR_ORDRG_PHYSN_NPI
+•Add to Outpatient, HHA, Hospice Revenue: RC_VLNTRY_SRVC_IND_CD
+•Add to Carrier and DME Line: LINE_VLNTRY_SRVC_IND_CD
+43862	IP, SNF, Hospice,  HHA, and HOP	Added one new variable to each Base and Revenue for the CR-16 changes.  Populated last column noting New variable and added footnote for 2020.
+43709	HHA and HOP	Corrected SAS long name for REVSTIND (to REV_CNTR_STUS_IND_CD) in the Hospice, HHA and HOP files.
+43602	All	Added new fields: 1) CLM_RSDL_PYMT_IND_CD  to all base claims, and LINE_RSDL_PYMT_IND_CD to Carrier and DME lines; 2) CLM_RP_IND_CD to IP base claim, REV_CNTR_RP_IND_CD to SNF, HH, Hospice and OP revenue lines, and LINE_RP_IND_CD to Carrier and DME lines; 3) PRVDR_VLDTN_TYPE_CD to all base claims except for DME, and LINE_PRVDR_VLDTN_TYPE_CD to Carrier and DME line; 4) RR_BRD_EXCLSN_IND_SW to IP,SNF, HH, Hospice and OP base claims, and LINE_RR_BRD_EXCLSN_IND_SW to DME line; 5) CLM_IP_INITL_MS_DRG_CD to IP base file; and 6) DMERC_LINE_FRGN_ADR_IND to DME line. 
+
+Also changed the name of the HHA base field FINL_STD_AMT to be PPS_STD_VAL_PYMT_AMT.
+43149	All	Initial release of February 2018 version of Record Layout for Medicare Fee-For-Service Claims, Version K with CR13 updates.

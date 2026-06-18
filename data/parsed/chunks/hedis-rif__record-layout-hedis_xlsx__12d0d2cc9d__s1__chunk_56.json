@@ -1,0 +1,8 @@
+{
+  "chunk_id": "hedis-rif__record-layout-hedis_xlsx__12d0d2cc9d__s1__chunk_56",
+  "source_document": "data/raw/assets/xlsx/12d0d2cc9dacbb09dd6e9287b10bee19e1a205f6.xlsx",
+  "page": 1,
+  "text": "—\nIPU_NMRTR_IP_MATRNTY_DSCHRG_CNT Inpatient Utilization Hospital-Acute Care (IPU) Nmrtr: Maternity Discharges Cnt NUM 3 99 111 153 — —\nIPU_NMRTR_IP_MATRNTY_DAYS_CNT Inpatient Utilization Hospital-Acute Care (IPU) Numerator: Maternity Days NUM 3 100 112 154 — —\nAMB_NMRTR_OP_VISIT_CNT Ambulatory Care (AMB) Numerator: Outpatient Visits NUM 3 101 113 155 — —\nAMB_NMRTR_ED_VISIT_CNT Ambulatory Care (AMB) Numerator: Emergency Department Visits NUM 3 102 114 156 — —\nIAD_NMRTR_ANY_SRVC_IND Identfctn",
+  "dataset": "hedis-rif",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-hedis.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-30__record-layout-mds-3-0_xlsx__55bd4e4e66__s1__chunk_54",
+  "source_document": "data/raw/assets/xlsx/55bd4e4e66fb4eda32461631b671f7a2d6770e14.xlsx",
+  "page": 1,
+  "text": "A2400B_MDCR_STAY_STRT_DT A2400B Start Date of Most Recent Medicare Stay CHAR 8 This column contains the start date of the most recent Medicare stay.\n85 A2400C_MDCR_STAY_END_DT A2400C_MDCR_STAY_END_DT A2400C End Date of Most Recent Medicare Stay CHAR 8 This column contains the end date of the most recent Medicare stay.\n86 B0100_CMTS_CD B0100_CMTS_CD B0100 Comatose Code CHAR 1 The data in this column identifies whether or not the resident is comatose. -=Not assessed/no information\n0=No\n1=Yes\n87",
+  "dataset": "mds-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-3-0.xlsx"
+}

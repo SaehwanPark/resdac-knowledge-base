@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__codebook-taf-claims_pdf__3a7e50ca3f__p109__chunk_0",
+  "source_document": "data/raw/assets/pdf/3a7e50ca3fea9874a59b75c2b53d874e249d4e08.pdf",
+  "page": 109,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nTAF Claims RIFs Codebook │ December 2025 │ V 1.8 \n98 \nDRG_OUTLIER_AMT \nLABEL: \nDRG Outlier Additional Payment Amount \nDESCRIPTION: The additional payment on a claim that is associated with either a cost outlier or length of stay outlier. \nSHORT NAME: DRG_OUTLIER_AMT \nLONG NAME: DRG_OUTLIER_AMT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nT-MSIS Analytic File (TAF) claims \nFILE(S): \nIP header \nVALUES: \nDollar amount with two decimal places (e.g.,",
+  "dataset": "taf-ip",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-claims.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p31__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 31,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n15 \nBENE_DEATH_DT_VRFY_CD \nLABEL: \nDeath Date Verification Code \nDESCRIPTION: The code indicating whether the beneficiary's date of death has been verified the Social Security \nAdministration (SSA) or originated from a claim record. \nSHORT NAME: DEATHCD \nLONG NAME: BENE_DEATH_DT_VRFY_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nNull = Default \nV = Valid death date \nCOMMENT: \nThis field is",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

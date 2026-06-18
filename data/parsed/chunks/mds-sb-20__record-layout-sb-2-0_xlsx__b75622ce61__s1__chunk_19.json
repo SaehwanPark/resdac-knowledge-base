@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-20__record-layout-sb-2-0_xlsx__b75622ce61__s1__chunk_19",
+  "source_document": "data/raw/assets/xlsx/b75622ce6136dda733759e7be67a80bd728fb9cc.xlsx",
+  "page": 1,
+  "text": "Other Reasons CHAR 1 A code used to identify a SB-MDS assessment completed for other payers, such a a Health Maintenance Organization (HMO) or other Medicare Secondary Payer (MSP).\n40 _12 PRIOR_ACUTE_CARE_ADMSN_DT (12) Prior Acute Care Admission Date DATE 8 The admission date of the qualifying 3-day hospital stay that occurred before admission to the swing bed for Part A SNF-level services.\n41 _14A ADMTD_FROM_CD (14a) Admitted From Code CHAR 2 The patient's living arrangements prior to",
+  "dataset": "mds-sb-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-2-0.xlsx"
+}

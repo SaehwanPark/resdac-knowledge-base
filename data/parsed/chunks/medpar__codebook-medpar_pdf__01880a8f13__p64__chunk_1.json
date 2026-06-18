@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p64__chunk_1",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 64,
+  "text": "NAME: CLM_RP_IND_CD \nTYPE: \nCHAR \nLENGTH: \n1 \nSOURCE: \nNCH \nVALUES: \nR = bypass representative payee \nCOMMENT: \nThis field comes from the CLM-RP-IND-CD that is present on the first claim record included in the stay. If \nthere is no CLM-RP-IND-CD on the first claim, then take the first found code (R) on any of the other \nclaims that make up the stay. \nThis field is new in 2015. \nNote that there is also a Revenue Center Representative Payee (RP) Indicator Code (SAS variable called \nRC_RP_IND_CD).",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

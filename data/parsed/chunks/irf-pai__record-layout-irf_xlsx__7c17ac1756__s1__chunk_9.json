@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_9",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "DATE 8 The patient's birthdate.\n18 _8 SEX_CD1 (8) Sex Code CHAR 1 The patient's sex. 1 = Male, 2 = Female\n19 _9A ETH_AMRCN_INDN_AK_NTV_SW (9A) Race: American Indian/Alaskan Native CHAR 1 The patient's race or ethnic category: American Indian or Alaskan Native. 0 = No, 1 = Yes\n20 _9B ETH_ASN_SW (9B) Race: Asian CHAR 1 The patient's race or ethnic category: Asian. 0 = No, 1 = Yes\n21 _9C ETH_AFRCN_AMRCN_SW (9C) Race: Black or African American CHAR 1 The patient's race or ethnic category: Black or",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

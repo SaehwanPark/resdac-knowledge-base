@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_390",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "that were not present or were at a lesser stage on the prior assessment (OBRA, or Scheduled PPS) or last entry. discontinued 9/30/2018\n435 M0900A_PRSR_ULCR_PRIOR_CD M0900A_PRSR_ULCR_PRIOR_CD M0900A Healed Pressure Ulcer Present on Prior Assessment Code CHAR 1 The data in this column indicates whether pressure ulcers were present on the prior assessment (OBRA, or Scheduled PPS). -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern) discontinued 9/30/2018\n436 M0900B_HEALD_STG_2_ULCR_NUM",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p355__chunk_2",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 355,
+  "text": "the corresponding co-payment variable \ncalled (PRE_ICL_INP_COPAY_1M). This variable also appears in the Plan Characteristics - Base File (see \nPRE_ICL_INP_1M_COINS_TIER_01 - PRE_ICL_INP_1M_COINS_TIER_09). \nStarting in 2016, CMS changed how they describe pharmacy networks. The INP are currently referred \nto as standard retail pharmacies. There is no change in the meaning of the variable, and the data \nvalues are the same over time. \nThe CCW constructs the Plan Characteristics file from",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

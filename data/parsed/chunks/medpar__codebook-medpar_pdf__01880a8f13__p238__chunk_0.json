@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p238__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 238,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n222 \nSRGCL_PRCDR_CD_CNT \nLABEL: \nSurgical procedure codes included in stay \nDESCRIPTION: The count of the number of surgical procedure codes included in the stay. \nSHORT NAME: PRCDRCNT \nLONG NAME: SRGCL_PRCDR_CD_CNT \nTYPE: \nNUM \nLENGTH: \n8 \nSOURCE: \nNCH \nVALUES: \nXXX \nCOMMENT: \nThis field is derived by counting the procedure codes that are reported on the last claim record included \nin the stay. \n^",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

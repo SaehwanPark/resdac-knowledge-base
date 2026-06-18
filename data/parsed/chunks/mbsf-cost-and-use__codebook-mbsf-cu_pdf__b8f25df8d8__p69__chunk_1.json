@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-cost-and-use__codebook-mbsf-cu_pdf__b8f25df8d8__p69__chunk_1",
+  "source_document": "data/raw/assets/pdf/b8f25df8d81906f5defd1b315d22b81093ed2f5d.pdf",
+  "page": 69,
+  "text": "DME data files, and a \nsubset of physician evaluation and management (E/M) claim lines (NOTE: E/M are tabulated separately \nin this data file). \nThe physician claim lines are defined as those with a line BETOS code (BETOS_CD) where the first 3 digits \n= “M1A” or “M1B” (NOTE: all other BETOS_CD that begin with “M” are categorized as other E/M \nservices in this file — reference EM_MDCR_PMT). The total Medicare payments are calculated as the \nsum of LINE_NCH_PMT_AMT where the LINE_PRCSG_IND_CD was",
+  "dataset": "mbsf-cost-and-use",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-cu.pdf"
+}

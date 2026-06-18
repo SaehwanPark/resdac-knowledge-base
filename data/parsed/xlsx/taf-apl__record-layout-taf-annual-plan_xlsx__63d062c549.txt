@@ -1,0 +1,198 @@
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Plan — Base File
+Version — October 2022
+RIF SAS name	RIF  label	Type	Length	RIF sequence	New variables1
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	1
+MC_PLAN_NAME	Managed Care Plan Name	CHAR	82	2
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	3
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	4
+CMS_RGN	CMS Region for Submitting State	CHAR	2	5
+MC_PLAN_PGM_CD	Managed Care Plan Program Code	CHAR	1	6
+MC_PLAN_TYPE_CD	Managed Care Plan Type Code	CHAR	2	7
+MC_PLAN_TYPE_CTGRY_CD	Managed Care Plan Type Category Code	CHAR	2	8
+MC_PLAN_REIMBRSMT_TYPE_CD	Managed Care Plan Reimbursement Type Code	CHAR	2	9
+MC_PLAN_REIMBRSMT_TYPE_CTGRY_CD	Managed Care Plan Reimbursement Type Category Code	CHAR	1	10
+MC_PLAN_CNTRCT_START_DT	Managed Care Plan Contract Start Date	DATE	8	11
+MC_PLAN_CNTRCT_END_DT	Managed Care Plan Contract End Date	DATE	8	12
+MC_PLAN_CNTRCT_ADDTNL_PRD_IND	Managed Care Plan Contract Additional Period Indicator	CHAR	1	13
+MC_PLAN_SAREA_CD	CHAR	1	14
+MC_PLAN_STATEWIDE_IND	Managed Care Plan Statewide Service Area Indicator - Ever in Calendar Yr	CHAR	1	15
+MC_PLAN_CBSA_CD	Managed Care Plan Core-Based Statistical Area Code for Service Area	CHAR	1	16
+MC_PLAN_ACTV_IND_01	Managed Care Plan Active Indicator - January	CHAR	1	17
+MC_PLAN_ACTV_IND_02	Managed Care Plan Active Indicator - February	CHAR	1	18
+MC_PLAN_ACTV_IND_03	Managed Care Plan Active Indicator - March	CHAR	1	19
+MC_PLAN_ACTV_IND_04	Managed Care Plan Active Indicator - April	CHAR	1	20
+MC_PLAN_ACTV_IND_05	Managed Care Plan Active Indicator - May	CHAR	1	21
+MC_PLAN_ACTV_IND_06	Managed Care Plan Active Indicator - June	CHAR	1	22
+MC_PLAN_ACTV_IND_07	Managed Care Plan Active Indicator - July	CHAR	1	23
+MC_PLAN_ACTV_IND_08	Managed Care Plan Active Indicator - August	CHAR	1	24
+MC_PLAN_ACTV_IND_09	Managed Care Plan Active Indicator - September	CHAR	1	25
+MC_PLAN_ACTV_IND_10	Managed Care Plan Active Indicator - October	CHAR	1	26
+MC_PLAN_ACTV_IND_11	Managed Care Plan Active Indicator - November	CHAR	1	27
+MC_PLAN_ACTV_IND_12	Managed Care Plan Active Indicator - December	CHAR	1	28
+OPRTG_AUTHRTY_1115_DEMO_WVR_IND	Operating Authority Ind: 1115 Demo Waiver - Ever in Calendar Yr	CHAR	1	29
+OPRTG_AUTHRTY_1915B_WVR_IND	Operating Authority Ind: 1915(b) Waiver- Ever in Calendar Yr	CHAR	1	30
+OPRTG_AUTHRTY_1932A_SPO_IND	Operating Authority Ind: 1932(a) State Plan Option - Ever in Calendar Yr	CHAR	1	31
+OPRTG_AUTHRTY_1915A_IND	Operating Authority Ind:1915(a) - Ever in Calendar Yr	CHAR	1	32
+OPRTG_AUTHRTY_1915BC_WVR_IND	Operating Authority Ind:1915(b)(c) Waiver - Ever in Calendar Yr	CHAR	1	33
+OPRTG_AUTHRTY_1915AC_WVR_IND	Operating Authority Ind:1915(a)(c) Waiver - Ever in Calendar Yr	CHAR	1	34
+OPRTG_AUTHRTY_1932A_1915C_IND	Operating Authority Ind: 1932(a)-1915(c) Waiver - Ever in Calendar Yr	CHAR	1	35
+OPRTG_AUTHRTY_PACE_IND	Operating Authority Ind: PACE - Ever in Calendar Yr	CHAR	1	36
+OPRTG_AUTHRTY_1905T_PCCM_IND	Operating Authority Ind: Voluntary PCCM - Ever in Calendar Yr	CHAR	1	37
+OPRTG_AUTHRTY_1937_ABP_IND	Operating Authority Ind: 1937 Alternative Benefits Plan - Ever in Calendar Yr	CHAR	1	38
+OPRTG_AUTHRTY_1902A70_NEMT_IND	Operating Authority Ind: 1902(a)(70) Non-Emer Med Transports - Ever in Calendar Yr	CHAR	1	39
+OPRTG_AUTHRTY_1915BI_IND	Operating Authority Ind: 1915(b)(i) - Ever in Calendar Yr	CHAR	1	40
+OPRTG_AUTHRTY_1915AI_IND	Operating Authority Ind:1915(a)(i) - Ever in Calendar Yr	CHAR	1	41
+OPRTG_AUTHRTY_1932A_1915I_IND	Operating Authority Ind: 1932(a)-1915(i) -Ever in Calendar Yr	CHAR	1	42
+OPRTG_AUTHRTY_1945_HLTH_HOME_IND	Operating Authority Ind: 1945 Hlth Home - Ever in Calendar Yr	CHAR	1	43
+OPRTG_AUTHRTY_1915AJ_IND	Operating Authority Ind: 1915(a)(j) - Ever in Calendar Yr	CHAR	1	81	New2
+OPRTG_AUTHRTY_1932A_1915J_IND	Operating Authority Ind: 1932(a) - 1915(j) - Ever in Calendar Yr	CHAR	1	82	New2
+OPRTG_AUTHRTY_1915BJ_IND	Operating Authority Ind: 1915(b)(j) - Ever in Calendar Yr	CHAR	1	83	New2
+OPRTG_AUTHRTY_1115_1915J_IND	Operating Authority Ind: 1115 -1915(j) - Ever in Calendar Yr	CHAR	1	84	New2
+OPRTG_AUTHRTY_1915AK_IND	Operating Authority Ind: 1915(a)(k) - Ever in Calendar Yr	CHAR	1	85	New2
+OPRTG_AUTHRTY_1932A_1915K_IND	Operating Authority Ind: 1932(a) - 1915(k) - Ever in Calendar Yr	CHAR	1	86	New2
+OPRTG_AUTHRTY_1915BK_IND	Operating Authority Ind: 1915(b)(k) - Ever in Calendar Yr	CHAR	1	87	New2
+OPRTG_AUTHRTY_1115_1915K_IND	Operating Authority Ind: 1115 - 1915(k) - Ever in Calendar Yr	CHAR	1	88	New2
+MDCD_MAND_CVRG_ADLT_POP_IND	Elig Pop Ind: Medicaid Mandatory Cvrg Family-Adult - Ever in Calendar Yr	CHAR	1	44
+MDCD_MAND_CVRG_ABD_POP_IND	Elig Pop Ind: Medicaid Mandatory Cvrg Aged-Blind-Disabled-Ever in Calendar Yr	CHAR	1	45
+MDCD_OPTNL_CVRG_ADLT_POP_IND	Elig Pop Ind: Medicaid Optional Cvrg Adult-Children-Ever in Calendar Yr	CHAR	1	46
+MDCD_OPTNL_CVRG_ABD_POP_IND	Elig Pop Ind: Medicaid Optional Cvrg Aged-Blind-Disabled -Ever in Calendar Yr	CHAR	1	47
+MDCD_MDCLY_NDY_CVRG_ADLT_POP_IND	Elig Pop Ind: Medicaid Medically Needy Family-Adult-Ever in Calendar Yr	CHAR	1	48
+MDCD_MDCLY_NDY_CVRG_ABD_POP_IND	Elig Pop Ind: Medicaid Medically Needy Cvrg Aged-Blind-Disabled - Ever in Cal Yr	CHAR	1	49
+CHIP_CVRG_CHLDRN_POP_IND	Elig Pop Ind: CHIP Coverage Children - Ever in Calendar Yr	CHAR	1	50
+CHIP_OPTNS_CVRG_CHLDRN_POP_IND	Elig Pop Ind: CHIP Additional Coverage Options for Children - Ever in Cal Yr	CHAR	1	51
+CHIP_OPTN_CVRG_PRGNT_WMN_POP_IND	Elig Pop Ind: CHIP Additional Cvrg Options for Pregnant Women - Ever in Cal Yr	CHAR	1	52
+WVR_1115_EXPNSN_CVRG_POP_IND	Elig Pop Ind: 1115 Expansion Groups Coverage Waiver - Ever in Calendar Yr	CHAR	1	53
+UNK_ELGBLTY_GRP_POP_IND	Elig Pop Ind: Unknown Eligibility Group - Ever in Calendar Yr	CHAR	1	54
+MC_ENT_ACRDTN_ORG_CD_1	Managed Care Entity - 1st Accrediting Organization	CHAR	2	55
+MC_ENT_ACRDTN_ACHVMT_DT_1	Managed Care Entity Accreditation Achievement Dt - 1st Accrediting Organization	DATE	8	56
+MC_ENT_ACRDTN_END_DT_1	Managed Care Entity Accreditation End Date - 1st Accrediting Organization	DATE	8	57
+MC_ENT_ACRDTN_ORG_CD_2	Managed Care Entity - 2nd Accrediting Organization	CHAR	2	58
+MC_ENT_ACRDTN_ACHVMT_DT_2	Managed Care Entity Accreditation Achievement Dt - 2nd Accrediting Organization	DATE	8	59
+MC_ENT_ACRDTN_END_DT_2	Managed Care Entity Accreditation End Date - 2nd Accrediting Organization	DATE	8	60
+MC_ENT_ACRDTN_ORG_CD_3	Managed Care Entity - 3rd Accrediting Organization	CHAR	2	61
+MC_ENT_ACRDTN_ACHVMT_DT_3	Managed Care Entity Accreditation Achievement Dt - 3rd Accrediting Organization	DATE	8	62
+MC_ENT_ACRDTN_END_DT_3	Managed Care Entity Accreditation End Date - 3rd Accrediting Organization	DATE	8	63
+MC_ENT_ACRDTN_ORG_CD_4	Managed Care Entity - 4th Accrediting Organization	CHAR	2	64
+MC_ENT_ACRDTN_ACHVMT_DT_4	Managed Care Entity Accreditation Achievement Dt - 4th Accrediting Organization	DATE	8	65
+MC_ENT_ACRDTN_END_DT_4	Managed Care Entity Accreditation End Date - 4th Accrediting Organization	DATE	8	66
+MC_ENT_ACRDTN_ORG_CD_5	Managed Care Entity - 5th Accrediting Organization	CHAR	2	67
+MC_ENT_ACRDTN_ACHVMT_DT_5	Managed Care Entity Accreditation Achievement Dt - 5th Accrediting Organization	DATE	8	68
+MC_ENT_ACRDTN_END_DT_5	Managed Care Entity Accreditation End Date - 5th Accrediting Organization	DATE	8	69
+MC_ENT_PRFT_STUS_CD	Managed Care Entity Profit Status Code - Latest in Yr	CHAR	2	70
+MC_ENT_GOVT_PCT	Managed Care Entity Percent of Revenue from Medicare and Medicaid - Latest in Yr	NUM	3	71
+SPLMTL_SRVC_ADDR_LCTN	Annual Managed Care Plan Record in Supplemental Service Address Location File	CHAR	1	72
+SPLMTL_SAREA	Annual Managed Care Plan Record in Supplemental Service Area File	CHAR	1	73
+SPLMTL_POP_ENRLMT	Annual Managed Care Plan Record in Supplemental Enrolled Population File	CHAR	1	74
+SPLMTL_OPRTG_AUTHRTY	Annual Managed Care Plan Record in Supplemental Operating Authority File	CHAR	1	75
+CCW_APL_LINK_KEY	CCW Key to Link APL Base Record to Related Supplement Records	NUM	15	76
+DA_RUN_ID	TAF Production Run Identifier (unique for each TAF run)	NUM	6	77
+PL_VRSN	Plan File Version Representing the Iteration of the File	CHAR	2	78
+RFRNC_YR	Reference Yr	CHAR	4	79
+CCW_LD_DT	CCW Load Date	DATE	8	80
+1 Fields that are new starting with the August 2021 RIF 2017 and 2018 Release 2 update are designated as "New1"
+2 Fields are populated starting with the 2020 Release 1 RIF are designated as "New2"
+These fields will not be populated in data extracts for earlier service years.
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Plan — Location File
+Version — October 2022
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+MC_PLAN_LCTN_ID	Managed Care Plan Location Identifier	CHAR	15	4
+MC_PLAN_ADR_LINE_1	Managed Care Plan Location - Street Address 1	CHAR	90	5
+MC_PLAN_ADR_LINE_2	Managed Care Plan Location - Street Address 2	CHAR	90	6
+MC_PLAN_ADR_LINE_3	Managed Care Plan Location - Street Address 3	CHAR	90	7
+MC_PLAN_CITY	Managed Care Plan Location - City	CHAR	42	8
+MC_PLAN_STATE_CD	Managed Care Plan Location - State (ANSI Code)	CHAR	2	9
+MC_PLAN_ZIP_CD	Managed Care Plan Location - Zip Code	CHAR	13	10
+MC_PLAN_CNTY_CD	Managed Care Plan Location - County (FIPS) Code	CHAR	4	11
+MC_PLAN_LCTN_ACTV_IND_01	Managed Care Plan Location Active Indicator - January	CHAR	1	12
+MC_PLAN_LCTN_ACTV_IND_02	Managed Care Plan Location Active Indicator - February	CHAR	1	13
+MC_PLAN_LCTN_ACTV_IND_03	Managed Care Plan Location Active Indicator - March	CHAR	1	14
+MC_PLAN_LCTN_ACTV_IND_04	Managed Care Plan Location Active Indicator - April	CHAR	1	15
+MC_PLAN_LCTN_ACTV_IND_05	Managed Care Plan Location Active Indicator - May	CHAR	1	16
+MC_PLAN_LCTN_ACTV_IND_06	Managed Care Plan Location Active Indicator - June	CHAR	1	17
+MC_PLAN_LCTN_ACTV_IND_07	Managed Care Plan Location Active Indicator - July	CHAR	1	18
+MC_PLAN_LCTN_ACTV_IND_08	Managed Care Plan Location Active Indicator - August	CHAR	1	19
+MC_PLAN_LCTN_ACTV_IND_09	Managed Care Plan Location Active Indicator - September	CHAR	1	20
+MC_PLAN_LCTN_ACTV_IND_10	Managed Care Plan Location Active Indicator - October	CHAR	1	21
+MC_PLAN_LCTN_ACTV_IND_11	Managed Care Plan Location Active Indicator - November	CHAR	1	22
+MC_PLAN_LCTN_ACTV_IND_12	Managed Care Plan Location Active Indicator - December	CHAR	1	23
+RFRNC_YR	Reference Yr	CHAR	4	24
+CCW_APL_LINK_KEY	CCW Key to Link APL Base Record to Related Supplement Records	NUM	15	25
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Plan — Service Area File
+Version — October 2022
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+MC_PLAN_SAREA_NAME	Managed Care Plan Service Area Name	CHAR	45	4
+MC_PLAN_SAREA_ACTV_IND_01	Managed Care Plan Service Area Active Indicator - January	CHAR	1	5
+MC_PLAN_SAREA_ACTV_IND_02	Managed Care Plan Service Area Active Indicator - February	CHAR	1	6
+MC_PLAN_SAREA_ACTV_IND_03	Managed Care Plan Service Area Active Indicator - March	CHAR	1	7
+MC_PLAN_SAREA_ACTV_IND_04	Managed Care Plan Service Area Active Indicator - April	CHAR	1	8
+MC_PLAN_SAREA_ACTV_IND_05	Managed Care Plan Service Area Active Indicator - May	CHAR	1	9
+MC_PLAN_SAREA_ACTV_IND_06	Managed Care Plan Service Area Active Indicator - June	CHAR	1	10
+MC_PLAN_SAREA_ACTV_IND_07	Managed Care Plan Service Area Active Indicator - July	CHAR	1	11
+MC_PLAN_SAREA_ACTV_IND_08	Managed Care Plan Service Area Active Indicator - August	CHAR	1	12
+MC_PLAN_SAREA_ACTV_IND_09	Managed Care Plan Service Area Active Indicator - September	CHAR	1	13
+MC_PLAN_SAREA_ACTV_IND_10	Managed Care Plan Service Area Active Indicator - October	CHAR	1	14
+MC_PLAN_SAREA_ACTV_IND_11	Managed Care Plan Service Area Active Indicator - November	CHAR	1	15
+MC_PLAN_SAREA_ACTV_IND_12	Managed Care Plan Service Area Active Indicator - December	CHAR	1	16
+RFRNC_YR	Reference Yr	CHAR	4	17
+CCW_APL_LINK_KEY	CCW Key to Link APL Base Record to Related Supplement Records	NUM	15	18
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Plan — Enrolled Population File
+Version — October 2022
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+MC_PLAN_ELGBLTY_GRP_POP_CD	Managed Care Plan Authorized Eligibility Group Population Code	CHAR	2	4
+MC_PLAN_ELGBL_POP_ACTV_IND_01	Managed Care Plan Eligible Population Active Indicator - January	CHAR	1	5
+MC_PLAN_ELGBL_POP_ACTV_IND_02	Managed Care Plan Eligible Population Active Indicator - February	CHAR	1	6
+MC_PLAN_ELGBL_POP_ACTV_IND_03	Managed Care Plan Eligible Population Active Indicator - March	CHAR	1	7
+MC_PLAN_ELGBL_POP_ACTV_IND_04	Managed Care Plan Eligible Population Active Indicator - April	CHAR	1	8
+MC_PLAN_ELGBL_POP_ACTV_IND_05	Managed Care Plan Eligible Population Active Indicator - May	CHAR	1	9
+MC_PLAN_ELGBL_POP_ACTV_IND_06	Managed Care Plan Eligible Population Active Indicator - June	CHAR	1	10
+MC_PLAN_ELGBL_POP_ACTV_IND_07	Managed Care Plan Eligible Population Active Indicator - July	CHAR	1	11
+MC_PLAN_ELGBL_POP_ACTV_IND_08	Managed Care Plan Eligible Population Active Indicator - August	CHAR	1	12
+MC_PLAN_ELGBL_POP_ACTV_IND_09	Managed Care Plan Eligible Population Active Indicator - September	CHAR	1	13
+MC_PLAN_ELGBL_POP_ACTV_IND_10	Managed Care Plan Eligible Population Active Indicator - October	CHAR	1	14
+MC_PLAN_ELGBL_POP_ACTV_IND_11	Managed Care Plan Eligible Population Active Indicator - November	CHAR	1	15
+MC_PLAN_ELGBL_POP_ACTV_IND_12	Managed Care Plan Eligible Population Active Indicator - December	CHAR	1	16
+RFRNC_YR	Reference Yr	CHAR	4	17
+CCW_APL_LINK_KEY	CCW Key to Link APL Base Record to Related Supplement Records	NUM	15	18
+
+CMS Chronic Conditions Warehouse (CCW) Data Dictionary
+TAF Annual Plan — Operating Authority File
+Version — October 2022
+RIF SAS name	RIF  label	Type	Length	RIF sequence
+MC_PLAN_ID	Managed Care Plan Identification Number	CHAR	12	1
+STATE_CD	Submitting State Alpha Abbreviation	CHAR	2	2
+SUBMTG_STATE_CD	Submitting State Entity Code	CHAR	2	3
+MC_PLAN_WVR_ID	Managed Care Plan Waiver ID	CHAR	20	4
+MC_PLAN_OPRTG_AUTHRTY_CD	Managed Care Plan Operating Authority Code	CHAR	2	5
+MC_PLAN_OPRTG_AUTH_ACTV_IND_01	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - January	CHAR	1	6
+MC_PLAN_OPRTG_AUTH_ACTV_IND_02	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - February	CHAR	1	7
+MC_PLAN_OPRTG_AUTH_ACTV_IND_03	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - March	CHAR	1	8
+MC_PLAN_OPRTG_AUTH_ACTV_IND_04	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - April	CHAR	1	9
+MC_PLAN_OPRTG_AUTH_ACTV_IND_05	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - May	CHAR	1	10
+MC_PLAN_OPRTG_AUTH_ACTV_IND_06	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - June	CHAR	1	11
+MC_PLAN_OPRTG_AUTH_ACTV_IND_07	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - July	CHAR	1	12
+MC_PLAN_OPRTG_AUTH_ACTV_IND_08	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - August	CHAR	1	13
+MC_PLAN_OPRTG_AUTH_ACTV_IND_09	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - Sept	CHAR	1	14
+MC_PLAN_OPRTG_AUTH_ACTV_IND_10	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - October	CHAR	1	15
+MC_PLAN_OPRTG_AUTH_ACTV_IND_11	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - November	CHAR	1	16
+MC_PLAN_OPRTG_AUTH_ACTV_IND_12	Managed Care Plan Operating Authority and/or Waiver ID Active Ind - December	CHAR	1	17
+RFRNC_YR	Reference Yr	CHAR	4	18
+CCW_APL_LINK_KEY	CCW Key to Link APL Base Record to Related Supplement Records	NUM	15	19
+
+Revision date	Tab	Description
+44835	APL Base	Added eight indicator variables to account for new values for operating authority: OPRTG_AUTHRTY_1915AJ_IND, OPRTG_AUTHRTY_1932A_1915J_IND, OPRTG_AUTHRTY_1915BJ_IND, OPRTG_AUTHRTY_1115_1915J_IND, OPRTG_AUTHRTY_1915AK_IND, OPRTG_AUTHRTY_1932A_1915K_IND, OPRTG_AUTHRTY_1915BK_IND, and OPRTG_AUTHRTY_1115_1915K_IND.

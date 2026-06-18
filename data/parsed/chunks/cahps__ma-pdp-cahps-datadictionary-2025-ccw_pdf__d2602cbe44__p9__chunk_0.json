@@ -1,0 +1,8 @@
+{
+  "chunk_id": "cahps__ma-pdp-cahps-datadictionary-2025-ccw_pdf__d2602cbe44__p9__chunk_0",
+  "source_document": "data/raw/assets/pdf/d2602cbe44c673c77cf8472b3ff5f084d5a5c3aa.pdf",
+  "page": 9,
+  "text": "A. 2025 MCAHPS Analytic Data Contents\n9\nname\nLABEL\nFORMAT\nsa_type\nMa & pdp survey type (1-4)\nSTP\nsa_st_abbr\nFips state abbreviation\nsa_spanish_ind\nSpanish language ﬂag (medicare & you)\n$ID_F\nsa_snp_type\nPart d special needs plan type\n$SNP\nsa_sex\nSex of beneﬁciary\n$SEXF\nsa_region\nRegion deﬁned using sa_st_abbr/sa_ﬁps_state\nRGN\nsa_race\nBeneﬁciary race\n$RACEF\nsa_ptdpbp\nPart d plan id\nsa_ptdcntrct\nPart d health plan id\nsa_ptd_type\nPart d plan type\n$PBT\nsa_ptd_snp\nPart d special needs",
+  "dataset": "cahps",
+  "url": "https://resdac.org/sites/datadocumentation.resdac.org/files/2026-05/MA_PDP_CAHPS_DataDictionary_2025_CCW.pdf"
+}

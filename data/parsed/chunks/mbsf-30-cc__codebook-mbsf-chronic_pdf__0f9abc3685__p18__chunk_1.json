@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-30-cc__codebook-mbsf-chronic_pdf__0f9abc3685__p18__chunk_1",
+  "source_document": "data/raw/assets/pdf/0f9abc36852dae6ab7448d07437b996a225a6692.pdf",
+  "page": 18,
+  "text": "to identify an individual’s \nrecords in all CCW data files (e.g., Medicare claims, Medicaid T-MSIS claims, MDS assessment data). \nThis number does not change during a beneficiary’s lifetime and each number is used only once. \nThe BENE_ID is specific to the CCW and is not applicable to any other identification system or data \nsource. \nSHORT NAME: — \nLONG NAME: BENE_ID \nTYPE: \nCHAR \nLENGTH: \n15 \nSOURCE: \nCCW \nVALUES: \n— \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "mbsf-30-cc",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mbsf-chronic.pdf"
+}

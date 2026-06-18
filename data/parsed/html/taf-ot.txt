@@ -1,0 +1,12 @@
+The Medicaid and CHIP T-MSIS Analytic File (TAF) Other Services (OT) file contains records for a variety of Medicaid services, including physician services, outpatient hospital institutional utilization, lab/X-ray, clinic services, home health, hospice and premium payments. Records include fee-for-service (FFS) claims, managed care encounters and supplemental payments for Medicaid, Medicaid-expansion CHIP and separate CHIP.
+What does this file include? (variable highlights)
+- As appropriate for the type of service on the record:- Diagnosis codes
+- Procedure code
+ 
+- Charges and payments
+- Provider identifiers
+Special considerations
+- Encounter data reporting may vary by state, year and eligibility group.
+- CMS continues to work with states to address data quality issues. In addition to preliminary and fully mature files, CMS may provide updated releases of the files for a given year. CMS has fee information for TAF data pricing.
+- ResDAC provides resources on Medicaid TAF data quality.
+- A bridge file will be provided to assist researchers that are conducting longitudinal analysis involving 2020 TAF research files along with earlier service years. For additional information, please see the CCW T-MSIS Analytic Files (TAF) User Guide posted on CCW’s User Documentation page.

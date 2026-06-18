@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_20",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "A4A A4A_REENTRY_DT (A4A) Reentry Date DATE 8 Identification and background information: date of reentry.\n39 A4B A4B_ADMIT_FROM (A4B) Admitted From CHAR 1 Identification and background information: admitted from (at reentry) 1 = Private home/apt. with no home health services, 2 = Private home/apt. with home health services, 3 = Board and care/assisted living/group home, 4 = Nursing home, 5 = Acute Care Hospital, 6 = Psychiatric Hospital, MR/DD facility, 7 = Rehabilitation Hospital, 8 = Other\n40",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_256",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "- rashes - e.g., intertrigo, eczema, etc. 0 = No, 1 = Yes, \"-\" = Unknown.\n418 M4E M4E_DESENSIT_SKIN (M4E) Skin Desensitized to Pain/Pressure CHAR 1 Skin condition: other skin problems or lesions present in last 7 days - skin desensitized to pain or pressure. 0 = No, 1 = Yes, \"-\" = Unknown.\n419 M4F M4F_SKIN_TEAR_CUT (M4F) Skin Tears/Cuts CHAR 1 Skin condition: other skin problems or lesions present in last 7 days - skin tears or cuts (other than surgery). 0 = No, 1 = Yes, \"-\" = Unknown.\n420 M4G",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

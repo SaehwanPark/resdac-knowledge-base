@@ -1,0 +1,22 @@
+Reminder: DUA and VRDC access needs to be extended or renewed annually. Read more.
+For most files, a table of variables will display below, with links to the variable definitions. If no table displays, or if you need additional information for a specific variable, please see the CCW website. Data documentation is available for all files and codebooks for many.
+If you are unable to locate the information you need, please contact ResDAC.
+| SAS Name | Variable Name | 
+|---|---|
+| BENE_ID | Encrypted CCW Beneficiary ID | 
+| ACO_ID | Pioneer ACO Identifier | 
+| BIRTH_DT | Date of Birth | 
+| DEATH_DT | Date of Death | 
+| SEX_CD | Sex | 
+| MO1_ALIGN | Month 1 Alignment Flag | 
+| MO2_ALIGN | Month 2 Alignment Flag | 
+| MO3_ALIGN | Month 3 Alignment Flag | 
+| MO4_ALIGN | Month 4 Alignment Flag | 
+| MO5_ALIGN | Month 5 Alignment Flag | 
+| MO6_ALIGN | Month 6 Alignment Flag | 
+| MO7_ALIGN | Month 7 Alignment Flag | 
+| MO8_ALIGN | Month 8 Alignment Flag | 
+| MO9_ALIGN | Month 9 Alignment Flag | 
+| MO10_ALIGN | Month 10 Alignment Flag | 
+| MO11_ALIGN | Month 11 Alignment Flag | 
+| MO12_ALIGN | Month 12 Alignment Flag |

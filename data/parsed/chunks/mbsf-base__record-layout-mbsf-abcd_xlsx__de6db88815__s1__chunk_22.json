@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mbsf-base__record-layout-mbsf-abcd_xlsx__de6db88815__s1__chunk_22",
+  "source_document": "data/raw/assets/xlsx/de6db88815fd35a07bc4a64e25b046ac01c8bd8b.xlsx",
+  "page": 1,
+  "text": "5\nPTDCNTRCT06 PTD_CNTRCT_ID_06 Part D Contract Number - June CHAR 5\nPTDCNTRCT07 PTD_CNTRCT_ID_07 Part D Contract Number - July CHAR 5\nPTDCNTRCT08 PTD_CNTRCT_ID_08 Part D Contract Number - August CHAR 5\nPTDCNTRCT09 PTD_CNTRCT_ID_09 Part D Contract Number - September CHAR 5\nPTDCNTRCT10 PTD_CNTRCT_ID_10 Part D Contract Number - October CHAR 5\nPTDCNTRCT11 PTD_CNTRCT_ID_11 Part D Contract Number - November CHAR 5\nPTDCNTRCT12 PTD_CNTRCT_ID_12 Part D Contract Number - December CHAR 5\nPTDPBPID01",
+  "dataset": "mbsf-base",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mbsf-abcd.xlsx"
+}

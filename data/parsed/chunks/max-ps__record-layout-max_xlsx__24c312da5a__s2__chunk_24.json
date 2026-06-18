@@ -1,0 +1,8 @@
+{
+  "chunk_id": "max-ps__record-layout-max_xlsx__24c312da5a__s2__chunk_24",
+  "source_document": "data/raw/assets/xlsx/24c312da5a32f99e973f5de6c546195664e72c3a.xlsx",
+  "page": 2,
+  "text": "revenue code units (23rd) NUM 8 X X X\n139 UPDT_DT MAX file update date DATE 4 X X NP\n1 Year of Data File - for all columns under \"Year of Data File\": X = variable is present (shading or '-' indicates it is not); NP = field is present but not populated (or populatd with null values)",
+  "dataset": "max-ps",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-max.xlsx"
+}

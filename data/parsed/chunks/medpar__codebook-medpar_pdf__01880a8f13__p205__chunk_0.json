@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p205__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 205,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n189 \nIf positions 3 and 4 of the provider number are both alpha characters, shown on the list below, then \npopulate positions 3 and 4 of this field with the following numeric values: \nRehab/Psych Unit of LTCH: \nIf “TA” or “SA”, populate “20” \nIf “TB” or “SB”, populate “21” \nIf “TC” or “SC”, populate “22” \nPsych Unit of Rehab Facility: \nIf “SD”, populate, “30” \nRehab/Psych Unit of Hospital: \nIf “TE”",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p92__chunk_0",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 92,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: TAF Annual Managed Care Plan (APL) RIFs │ October 2022 │ V 1.1 \n84 \nSTATE_CD \nLABEL: \nSubmitting State Alpha Abbreviation \nDESCRIPTION: Submitting State (postal abbreviation) \nSHORT NAME: STATE_CD \nLONG NAME: STATE_CD \nTYPE: \nCHAR \nLENGTH: \n2 \nFILE(S): \nAll Annual Managed Care Plan files \nSOURCE: \nCCW and CMS/Census Bureau crosswalk (derived) \nVALUES: \nTwo-character postal state code \nAK = Alaska \nAL = Alabama \nAR = Arkansas \nAZ = Arizona \nCA = California",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "risk-score-mofs__operational-payment-risk-score-user-guide_pdf__d8c366dd0a__p20__chunk_4",
+  "source_document": "data/raw/assets/pdf/d8c366dd0abbcfd26c61b8c4fd0774178fc9ab1b.pdf",
+  "page": 20,
+  "text": "applicable to the years in the data request. The \nfiles within the CCW VRDC have a different naming convention, as depicted in Table 10. \nTable 10. Payment risk score files in the CCW VRDC \nRISK_SCORE_BASE_YYYY \nThis is name of the base risk score file in the CCW VRDC. \nRISK_SCORE_V21_YYYY \nThis is name of the V21 MOF risk score file in the CCW VRDC. \nRISK_SCORE_V22_YYYY \nThis is name of the V22 MOF risk score file in the CCW VRDC. \nRISK_SCORE_V23_YYYY \nThis is name of the V23 MOF risk score",
+  "dataset": "risk-score-mofs",
+  "url": "https://www2.ccwdata.org/documents/10280/19002246/operational-payment-risk-score-user-guide.pdf"
+}

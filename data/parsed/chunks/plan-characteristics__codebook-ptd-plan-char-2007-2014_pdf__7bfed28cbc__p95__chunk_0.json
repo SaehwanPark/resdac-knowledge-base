@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-ptd-plan-char-2007-2014_pdf__7bfed28cbc__p95__chunk_0",
+  "source_document": "data/raw/assets/pdf/7bfed28cbc6d638a0319dd5eddbf46ee872d129f.pdf",
+  "page": 95,
+  "text": "Chronic Conditions Warehouse \nCODEBOOK: Medicare Part D Plan Characteristics (2007-2014) │ October 2021 │ V 1.4 \n82 \nGAP_DRUG_TYPE_TIER_05 \nLABEL: \nGap Drug Type for Tier 5 \nDESCRIPTION: This variable identifies what types of drugs, if any, are covered in this formulary tier during the \ncoverage gap phase. \nThe value contains a string of binary digits; each digit of the value indicates which types of drugs are \ncovered on this tier of the formulary. \nA tier may include multiple drug types.",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-plan-char-2007-2014.pdf"
+}

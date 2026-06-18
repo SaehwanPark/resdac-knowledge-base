@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__codebook-medpar_pdf__01880a8f13__p253__chunk_0",
+  "source_document": "data/raw/assets/pdf/01880a8f130acdc0b26ba14dd05f81632589ce24.pdf",
+  "page": 253,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedPAR Codebook │ April 2025 │ V 4.2 \n\n237 \nTOT_PPS_CPTL_AMT \nLABEL: \nTotal PPS Capital Amount ($) \nDESCRIPTION: The total amount (rounded to whole dollars) that is payable for capital for the prospective payment \nsystem (PPS) (e.g., reimbursement for depreciation, rent, certain interest, real estate taxes for hospital \nbuildings/equipment that are subject to PPS). \nSHORT NAME: PPS_CPTL \nLONG NAME: TOT_PPS_CPTL_AMT \nTYPE: \nNUM \nLENGTH:",
+  "dataset": "medpar",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/Codebook-MedPAR.pdf"
+}

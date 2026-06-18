@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_3",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| \n\n | 18 | PPS_IND_CD | Prospective payment system (PPS) Indicator Code | \n\n | 19 | ORG_NPI_NUM | Organization NPI Number (FFS) | \n\n | 20 | PRVDR_NUM | MEDPAR Provider Number | \n\n | 21 | PRVDR_NUM_SPCL_UNIT_CD | Provider Number Special Unit Code | \n\n | 22 | PRVDR_BASE_FAC_CCN_NUM | Provider Base Facility CMS Certification Number (CCN) | \n\n | 23 | PRVDR_FULL_CCN_NUM | Provider Full CMS Certification Number (CCN) | \n\n | 24 | SS_LS_SNF_IND_CD | Short Stay/Long Stay/SNF Provider Indicator Code |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}

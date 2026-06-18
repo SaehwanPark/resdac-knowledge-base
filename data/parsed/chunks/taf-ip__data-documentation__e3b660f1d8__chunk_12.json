@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-ip__data-documentation__e3b660f1d8__chunk_12",
+  "source_document": "data/raw/html/documentation_page/e3b660f1d8f5e35d44d034a58b65b4225dafc478.html",
+  "page": null,
+  "text": "Present on Admission Indicator 12 | \n\n | 78 | HAC_IND | Health Care Acquired Condition (HAC) Indicator | \n\n | 79 | IP_MH_DGNS_IND | Mental Health Diagnosis Indicator | \n\n | 80 | IP_SUD_DGNS_IND | Substance Use Disorder Diagnosis Indicator | \n\n | 81 | DRG_CD | Diagnosis Related Group (DRG) Code | \n\n | 82 | DRG_CD_SYS | DRG Code System/Nomenclature | \n\n | 83 | DRG_DESC | Description of DRG Code | \n\n | 84 | MDC_CD | Major Diagnostic Category (MDC) Code | \n\n | 85 | PRCDR_CD_DT_1 | Date Procedures 1",
+  "dataset": "taf-ip",
+  "url": "https://resdac.org/cms-data/files/taf-ip/data-documentation"
+}

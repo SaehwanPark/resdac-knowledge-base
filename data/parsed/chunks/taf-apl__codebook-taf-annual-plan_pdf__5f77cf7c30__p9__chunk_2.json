@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-apl__codebook-taf-annual-plan_pdf__5f77cf7c30__p9__chunk_2",
+  "source_document": "data/raw/assets/pdf/5f77cf7c30acd114cc7f3b826ca63f6650c33876.pdf",
+  "page": 9,
+  "text": "identifies each unique combination of submitting state entity code \n(SUBMTG_STATE_CD) and state plan identification number (MC_PLAN_ID). This is the unique key for \nlinking all records in the APL base file to the APL supplemental files. Please note that there can be \nmore than 1 record in the APL supplemental files for each CCW_APL_LINK_KEY. \n^ Back to TOC ^",
+  "dataset": "taf-apl",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-annual-plan.pdf"
+}

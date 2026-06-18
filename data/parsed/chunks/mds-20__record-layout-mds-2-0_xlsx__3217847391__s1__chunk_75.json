@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_75",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "1 Communications/hearing patterns: modes of expression - writing messages. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n144 C3C C3C_SIGN_LANG (C3C) American Sign Language/Braille CHAR 1 Communications/hearing patterns: modes of expression - American Sign language/Braille. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n145 C3D C3D_GESTURES (C3D) Signs/Gestures/Sounds CHAR 1 Communications/hearing patterns: modes of expression - signs/gestures/sounds. 0 = No, 1 = Yes, \"-\" = Unknown, -2 = Space.\n146",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

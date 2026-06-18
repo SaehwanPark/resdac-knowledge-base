@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_137",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "pattern)\n169 E0500C_BHVR_INTRFR_PRTCPTN_CD E0500C_BHVR_INTRFR_PRTCPTN_CD E0500C Behavior Impact on Resident: Interferes With Participation CHAR 1 The data in this column indicates if the identified symptoms (physical, verbal or other behavioral symptoms) significantly interfere with the resident's participation in activities or social interaction. -=Not assessed/no information\n0=No\n1=Yes\n^=Blank(skip pattern)\n170 E0600A_BHVR_INJR_OTHR_CD E0600A_BHVR_INJR_OTHR_CD E0600A Behavior Impact on",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

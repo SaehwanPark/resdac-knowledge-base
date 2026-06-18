@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-sb-30__record-layout-sb-3-0_xlsx__7b43e2c2ec__s1__chunk_538",
+  "source_document": "data/raw/assets/xlsx/7b43e2c2ec335c4fd39f2442454c69e22012d928.xlsx",
+  "page": 1,
+  "text": "event date is the entry date for an entry record. effective 10/01/2023\n618 X0800_CRCTN_NUM X0800_CRCTN_NUM X0800 Correction Number CHAR 2 The data in this column contains the number of correction requests to modify/inativate the existing record, including the present one. effective 10/01/2023\n619 X0900A_MDFCTN_TRNSCRPT_ERR_CD X0900A_MDFCTN_TRNSCRPT_ERR_CD X0900A Reason for Modification: Transcription Error Code CHAR 1 The data in this column indicates the reason for modification of the prior",
+  "dataset": "mds-sb-30",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-sb-3-0.xlsx"
+}

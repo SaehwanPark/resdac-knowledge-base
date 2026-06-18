@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mmleads-3__codebook-mmleads_pdf__536286800b__p69__chunk_2",
+  "source_document": "data/raw/assets/pdf/536286800bad660e7af16072eb5a63475d8835f9.pdf",
+  "page": 69,
+  "text": "type code (T-MSIS variable called CLM_TYPE_CD) is equal \nto '2' (Medicaid or expansion claim) 'B' (S-CHIP claim) or 'V' (Other Services claim). These capitated \npayment claims are captured in MMLEADS in the MDCD_OT_MC_CAPTD_SPEND variable. \nNote that the Center for Medicaid and CHIP Services (CMCS) at CMS has required redaction of the \nMDCD_PD_AMT field for managed care claims due to the proprietary and confidential nature of this \ninformation. Therefore, this total does not reflect the",
+  "dataset": "mmleads-3",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-mmleads.pdf"
+}

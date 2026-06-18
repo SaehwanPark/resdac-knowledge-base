@@ -1,0 +1,8 @@
+{
+  "chunk_id": "irf-pai__record-layout-irf_xlsx__7c17ac1756__s1__chunk_247",
+  "source_document": "data/raw/assets/xlsx/7c17ac17564c08a550183914917ae962de8f3862.xlsx",
+  "page": 1,
+  "text": "in evolution that were unstageable at admission.\n217 HLG_STG_1_ULCR_NUM HLG_STG_1_ULCR_NUM M0900A Healed Stage 1 Ulcers Number CHAR 1 The number of Stage 1 pressure ulcers present on the admission that have healed on discharge.\n218 HLG_STG_2_ULCR_NUM HLG_STG_2_ULCR_NUM M0900B Healed Stage 2 Ulcers Number CHAR 1 The number of Stage 2 pressure ulcers present on the admission that have healed on discharge.\n219 HLG_STG_3_ULCR_NUM HLG_STG_3_ULCR_NUM M0900C Healed Stage 3 Ulcers Number CHAR 1 The",
+  "dataset": "irf-pai",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-irf.xlsx"
+}

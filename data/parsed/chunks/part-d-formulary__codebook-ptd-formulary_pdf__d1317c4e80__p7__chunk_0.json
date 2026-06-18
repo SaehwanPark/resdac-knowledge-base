@@ -1,0 +1,8 @@
+{
+  "chunk_id": "part-d-formulary__codebook-ptd-formulary_pdf__d1317c4e80__p7__chunk_0",
+  "source_document": "data/raw/assets/pdf/d1317c4e806f94e2c200d2c99be272ebc6fc299c.pdf",
+  "page": 7,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare Part D Formulary File Codebook │ October 2025 │ V 2.2 \n3 \nCOPAY \nLABEL: \nCopay \nDESCRIPTION: This variable identifies the beneficiary copayment amount for the drug products covered by the Part D \nSenior Savings (PDSS) model. The insulin drug products (represented by the FRMLRY_RX_ID) covered \nas part of the PDSS have a different payment structure than other insulins (or other drug products) on \nthe formulary. \nSHORT NAME: COPAY",
+  "dataset": "part-d-formulary",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ptd-formulary.pdf"
+}

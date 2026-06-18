@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ip-ffs__codebook-ffs-claims_pdf__a4af628b5a__p332__chunk_0",
+  "source_document": "data/raw/assets/pdf/a4af628b5ad494c93baa8921ab4d55ef29217d67.pdf",
+  "page": 332,
+  "text": "Chronic Conditions Warehouse Virtual Research Data Center \nMedicare FFS Claims (version L) Codebook │ May 2026 │ V 1.15 \n314 \nREV_CNTR_1ST_MSP_PD_AMT \nLABEL: \nRevenue Center 1st Medicare Secondary Payer (MSP) Paid Amount \nDESCRIPTION: The amount paid by the primary payer when the payer is primary to Medicare (Medicare is a \nsecondary). \nSHORT NAME: REV_MSP1 \nLONG NAME: REV_CNTR_1ST_MSP_PD_AMT \nTYPE: \nNUM \nLENGTH: \n12 \nSOURCE: \nNCH \nVALUES: \nXXX.XX \nCOMMENT: \nThis field is populated for those",
+  "dataset": "ip-ffs",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-ffs-claims.pdf"
+}

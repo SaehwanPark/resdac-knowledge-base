@@ -1,0 +1,8 @@
+{
+  "chunk_id": "plan-characteristics__codebook-plan-char_pdf__77e437e4fb__p3__chunk_1",
+  "source_document": "data/raw/assets/pdf/77e437e4fbf75223d4afb45fb37a8a975a86839b.pdf",
+  "page": 3,
+  "text": "• Added new variables to plan crosswalk file: \nCONTRACT_ID_17 (previous year) \nCONTRACT_ID_18 (reference year) \nPLAN_ID_17 (previous year) \nPLAN_ID_18 (reference year) \nPTCD_INDICATOR_18 \n1.2 \nOctober 2018 \nK. Schneider \nC. Alleman \nAdded new variables: \nBase file: DSNP_ZERODOLLAR \nPlan crosswalk file: PTCD_INDICATOR_17 \nCONTRACT_ID_17 (reference year) \nPLAN_ID_17 (reference year) \nCONTRACT_ID_16 (previous year) \nPLAN_ID_16 (previous year) \n1.1 \nMay 2018 \nK. Schneider \nC. Alleman \nCreated",
+  "dataset": "plan-characteristics",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-plan-char.pdf"
+}

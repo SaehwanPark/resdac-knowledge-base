@@ -1,0 +1,8 @@
+{
+  "chunk_id": "oasis__record-layout-oasis_xlsx__2102fe8aba__s1__chunk_442",
+  "source_document": "data/raw/assets/xlsx/2102fe8aba60550816b99a0ae8ceb566105ee9b5.xlsx",
+  "page": 1,
+  "text": "(most recent SOC / ROC). CHAR 2 x x\nM1511_HRT_FAILR_PHYSN_TRTMT M1511 Heart Fail. Follow-Up: Physician-Ordered Treatment This field indicates, if the patient has been diagnosed with heart failure and has exhibited symptoms indicative of heart failure since the previous OASIS assessment, physician-ordered patient-specific established parameters for treatment were implemented. 0 = Not Checked (No), 1 = Checked (Yes) CHAR 1 x\nCALCD_CCN_NUM Calculated CMS Certification Number (CCN) The CMS",
+  "dataset": "oasis",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-oasis.xlsx"
+}

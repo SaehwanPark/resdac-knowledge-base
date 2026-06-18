@@ -1,0 +1,8 @@
+{
+  "chunk_id": "mds-20__record-layout-mds-2-0_xlsx__3217847391__s1__chunk_345",
+  "source_document": "data/raw/assets/xlsx/3217847391ddeaf11fa2cd9c65f18561d39d28aa.xlsx",
+  "page": 1,
+  "text": "VA18B_RESTRAINT_PC (VA18B) Physical Restraints Care Planning Decision CHAR 1 RAP summary: physical restraints - proceed with care. 0 = Not Triggered, 1 = Triggered, \"-\" = Determination precluded by missing data.\n586 VB2 VB2_RAP_DT (VB2) RAP Date DATE 8 RAP summary: RAP assessment signature date.\n587 VB4 VB4_CARE_PLAN_DT (VB4) Care Planning Decision Date DATE 8 RAP summary: care plan signature date.\n588 W1 W1_NATL_PRVDR_ID (W1) National Provider ID CHAR 10 National Provider ID.\n589 W2A",
+  "dataset": "mds-20",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/record-layout-mds-2-0.xlsx"
+}

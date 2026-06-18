@@ -1,0 +1,453 @@
+| 1 | BENE_ID | Encrypted CCW Beneficiary Identifier | 
+        
+          
+                  
+                                                                                                                                        | 2 | MSIS_ID | Encrypted State Assigned Beneficiary Unique Identifier | 
+        
+          
+                  
+                                                                                                                                        | 3 | STATE_CD | Submitting State Alpha Abbreviation | 
+        
+          
+                  
+                                                                                                                                        | 4 | SUBMTG_STATE_CD | Submitting State FIPS Code | 
+        
+          
+                  
+                                                                                                                                        | 5 | CLM_ID | CCW Claim Identifier | 
+        
+          
+                  
+                                                                                                                                        | 6 | CLM_NUM_ORIG | Original Claim Identifier | 
+        
+          
+                  
+                                                                                                                                        | 7 | CLM_NUM_ADJ | Adjustment Claim Identifier | 
+        
+          
+                  
+                                                                                                                                        | 8 | CLM_TYPE_CD | Claim Type Code (TAF) | 
+        
+          
+                  
+                                                                                                                                        | 9 | BILL_TYPE_CD | Bill Type Code | 
+        
+          
+                  
+                                                                                                                                        | 10 | CROSSOVER_CLM_IND | Code To Indicate if a Portion of Claim is Paid by Medicare | 
+        
+          
+                  
+                                                                                                                                        | 11 | ADJUST_CD | Claim Adjustment Code | 
+        
+          
+                  
+                                                                                                                                        | 12 | ADJUST_RSN_CD | Adjustment Reason Code | 
+        
+          
+                  
+                                                                                                                                        | 13 | ADJDCTN_DT | Adjudication Date | 
+        
+          
+                  
+                                                                                                                                        | 14 | MDCD_PD_DT | Medicaid Paid Date | 
+        
+          
+                  
+                                                                                                                                        | 15 | SPLIT_CLM_IND | Split Claim Indicator | 
+        
+          
+                  
+                                                                                                                                        | 16 | CLL_CNT | Claim Line Count - Original | 
+        
+          
+                  
+                                                                                                                                        | 17 | CLL_CNT_CALC | Claim Line Count - Calculated | 
+        
+          
+                  
+                                                                                                                                        | 18 | PRSN_CLM_IND | Indicator of a Claim for a Person | 
+        
+          
+                  
+                                                                                                                                        | 19 | SRVC_TRKNG_TYPE_CD | Service Tracking Type Code | 
+        
+          
+                  
+                                                                                                                                        | 20 | FED_SRVC_CTGRY_CD | Federally Assigned Service Category Code Added During TAF Production | 
+        
+          
+                  
+                                                                                                                                        | 21 | BIRTH_DT | Date of Birth | 
+        
+          
+                  
+                                                                                                                                        | 22 | PTNT_DSCHRG_STUS_CD | Patient Status at Ending Date of Service | 
+        
+          
+                  
+                                                                                                                                        | 23 | PGM_TYPE_CD | Program Type Code | 
+        
+          
+                  
+                                                                                                                                        | 24 | MC_PLAN_ID | Managed Care Plan Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 25 | WVR_TYPE_CD | Waiver Type Code | 
+        
+          
+                  
+                                                                                                                                        | 26 | WVR_ID | Waiver Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 27 | OTHR_INSRNC_IND | Indicator Insured is Covered by Another Plan (Not Medicare or Medicaid) | 
+        
+          
+                  
+                                                                                                                                        | 28 | SECT_1115A_DEMO_IND | 1115(A) Demonstration Participation Indicator | 
+        
+          
+                  
+                                                                                                                                        | 29 | SRVC_BGN_DT | Claim Beginning Date of Service | 
+        
+          
+                  
+                                                                                                                                        | 30 | SRVC_END_DT | Claim Ending Date of Service | 
+        
+          
+                  
+                                                                                                                                        | 31 | SRVC_END_DT_CD | Identifies the Date Field Used to Populate SRVC_END_DT | 
+        
+          
+                  
+                                                                                                                                        | 32 | ADMSM_DT | Admission Date (TAF) | 
+        
+          
+                  
+                                                                                                                                        | 33 | ADMSN_HR | Admission Hour | 
+        
+          
+                  
+                                                                                                                                        | 34 | DSCHRG_DT | Discharge Date | 
+        
+          
+                  
+                                                                                                                                        | 35 | DSCHRG_HR | Discharge Hour | 
+        
+          
+                  
+                                                                                                                                        | 36 | ADMTG_DGNS_CD | Admitting Diagnosis Code | 
+        
+          
+                  
+                                                                                                                                        | 37 | ADMTG_DGNS_VRSN_CD | Admitting Diagnosis Version Code (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 38 | DGNS_CD_1 | Primary or Principal Diagnosis Code | 
+        
+          
+                  
+                                                                                                                                        | 39 | DGNS_VRSN_CD_1 | Diagnosis Version Code 1 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 40 | DGNS_POA_IND_1 | Diagnosis Present on Admission Indicator 1 | 
+        
+          
+                  
+                                                                                                                                        | 41 | DGNS_1_CCSR_CTGRY_CD | AHRQ Clinical Classifications Software Refined (CCSR) Diagnosis 1 Category Code | 
+        
+          
+                  
+                                                                                                                                        | 42 | DGNS_CD_2 | Diagnosis Code 2 | 
+        
+          
+                  
+                                                                                                                                        | 43 | DGNS_VRSN_CD_2 | Diagnosis Version Code 2 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 44 | DGNS_POA_IND_2 | Diagnosis Present on Admission Indicator 2 | 
+        
+          
+                  
+                                                                                                                                        | 45 | DGNS_CD_3 | Diagnosis Code 3 | 
+        
+          
+                  
+                                                                                                                                        | 46 | DGNS_VRSN_CD_3 | Diagnosis Version Code 3 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 47 | DGNS_POA_IND_3 | Diagnosis Present on Admission Indicator 3 | 
+        
+          
+                  
+                                                                                                                                        | 48 | DGNS_CD_4 | Diagnosis Code 4 | 
+        
+          
+                  
+                                                                                                                                        | 49 | DGNS_VRSN_CD_4 | Diagnosis Version Code 4 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 50 | DGNS_POA_IND_4 | Diagnosis Present on Admission Indicator 4 | 
+        
+          
+                  
+                                                                                                                                        | 51 | DGNS_CD_5 | Diagnosis Code 5 | 
+        
+          
+                  
+                                                                                                                                        | 52 | DGNS_VRSN_CD_5 | Diagnosis Version Code 5 (ICD-9 or ICD-10) | 
+        
+          
+                  
+                                                                                                                                        | 53 | DGNS_POA_IND_5 | Diagnosis Present on Admission Indicator 5 | 
+        
+          
+                  
+                                                                                                                                        | 54 | HAC_IND | Health Care Acquired Condition (HAC) Indicator | 
+        
+          
+                  
+                                                                                                                                        | 55 | IP_MH_DGNS_IND | Mental Health Diagnosis Indicator | 
+        
+          
+                  
+                                                                                                                                        | 56 | IP_SUD_DGNS_IND | Substance Use Disorder Diagnosis Indicator | 
+        
+          
+                  
+                                                                                                                                        | 57 | ADMTG_PRVDR_ID | Admitting Provider Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 58 | ADMTG_PRVDR_NPI | Admitting Provider NPI | 
+        
+          
+                  
+                                                                                                                                        | 59 | ADMTG_PRVDR_TXNMY_CD | Admitting Provider Taxonomy Code | 
+        
+          
+                  
+                                                                                                                                        | 60 | ADMTG_PRVDR_TYPE_CD | Admitting Provider Type Code | 
+        
+          
+                  
+                                                                                                                                        | 61 | ADMTG_PRVDR_SPCLTY_CD | Admitting Provider Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 62 | BLG_PRVDR_ID | Billing Provider Identification Number (TAF) | 
+        
+          
+                  
+                                                                                                                                        | 63 | BLG_PRVDR_NPI | Billing Provider NPI | 
+        
+          
+                  
+                                                                                                                                        | 64 | BLG_PRVDR_TXNMY_CD | Billing Provider Taxonomy Code | 
+        
+          
+                  
+                                                                                                                                        | 65 | BLG_PRVDR_NPPES_TXNMY_CD | Billing Provider NPPES Taxonomy Code | 
+        
+          
+                  
+                                                                                                                                        | 66 | BLG_PRVDR_TYPE_CD | Billing Provider Type Code | 
+        
+          
+                  
+                                                                                                                                        | 67 | BLG_PRVDR_SPCLTY_CD | Billing Provider Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 68 | RFRG_PRVDR_ID | Referring Provider Identification Number | 
+        
+          
+                  
+                                                                                                                                        | 69 | RFRG_PRVDR_NPI | Referring Provider NPI | 
+        
+          
+                  
+                                                                                                                                        | 70 | RFRG_PRVDR_TYPE_CD | Referring Provider Type Code | 
+        
+          
+                  
+                                                                                                                                        | 71 | RFRG_PRVDR_SPCLTY_CD | Referring Provider Specialty Code | 
+        
+          
+                  
+                                                                                                                                        | 72 | PRVDR_LCTN_CD | Provider Location Code | 
+        
+          
+                  
+                                                                                                                                        | 73 | BRDR_STATE_IND | Border State Indicator | 
+        
+          
+                  
+                                                                                                                                        | 74 | IP_MH_TXNMY_IND | Mental Health Provider Taxonomy Indicator | 
+        
+          
+                  
+                                                                                                                                        | 75 | IP_SUD_TXNMY_IND | Substance Use Disorder Provider Taxonomy Indicator | 
+        
+          
+                  
+                                                                                                                                        | 76 | NCVRD_DAYS | Medicaid Non-covered Days Count | 
+        
+          
+                  
+                                                                                                                                        | 77 | CVRD_DAYS_ICF_IID | Count of Medicaid Covered Days in ICF for Patients with Intellectual Disability | 
+        
+          
+                  
+                                                                                                                                        | 78 | CVRD_DAYS_NF | Count of Medicaid Covered Days in a Nursing Facility | 
+        
+          
+                  
+                                                                                                                                        | 79 | CVRD_DAYS_IP_PSYCH | Count of Medicaid Covered Days in an Inpatient Psychiatric Facility (IPF) | 
+        
+          
+                  
+                                                                                                                                        | 80 | CVRD_DAYS_IP_PSYCH_OVER_65 | Count of Medicaid Covered Days in an IPF (Beneficiary Over 65 Years) | 
+        
+          
+                  
+                                                                                                                                        | 81 | CVRD_DAYS_IP_PSYCH_UNDER_21 | Count of Medicaid Covered Days in an IPF (Beneficiary Under 21 Years) | 
+        
+          
+                  
+                                                                                                                                        | 82 | LEAVE_DAYS | Count of Days During Medicaid Coverage Period Patient was not Residing in LTC | 
+        
+          
+                  
+                                                                                                                                        | 83 | FIXD_PYMT_IND | Fixed Payment Indicator | 
+        
+          
+                  
+                                                                                                                                        | 84 | SRVC_TRKNG_PYMT_AMT | Service Tracking Payment Amount | 
+        
+          
+                  
+                                                                                                                                        | 85 | PYMT_LVL_IND | Payment Level Indicator - Header or Line | 
+        
+          
+                  
+                                                                                                                                        | 86 | BILLED_AMT | Total Claim Billed Amount | 
+        
+          
+                  
+                                                                                                                                        | 87 | NCVRD_CHRG_AMT | Non-covered Charges Amount | 
+        
+          
+                  
+                                                                                                                                        | 88 | MDCD_ALOWD_AMT | Total Medicaid Allowed Amount | 
+        
+          
+                  
+                                                                                                                                        | 89 | MDCD_PD_AMT | Total Amount Paid By Medicaid | 
+        
+          
+                  
+                                                                                                                                        | 90 | DAILY_RATE | Daily Rate that a Policy will Pay for a Covered Service | 
+        
+          
+                  
+                                                                                                                                        | 91 | MDCD_ACMDTN_PD_AMT | Medicaid Amount Paid for All Accommodation (Room and Board) Revenue Lines | 
+        
+          
+                  
+                                                                                                                                        | 92 | MDCD_ANCLRY_PD_AMT | Medicaid Amount Paid for All Ancillary (Non-Room & Board) Revenue Lines | 
+        
+          
+                  
+                                                                                                                                        | 93 | MDCR_PD_AMT | Medicare Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 94 | MDCR_DDCTBL_PD_AMT | Total Medicare Deductible Amount | 
+        
+          
+                  
+                                                                                                                                        | 95 | MDCR_COINSRNC_PD_AMT | Total Medicare Coinsurance Amount | 
+        
+          
+                  
+                                                                                                                                        | 96 | MDCR_CMBND_DDCTBL_IND | Medicare Combined Deductible and Coinsurance Indicator | 
+        
+          
+                  
+                                                                                                                                        | 97 | MDCR_REIMBRSMT_TYPE_CD | Medicare Reimbursement Type Code | 
+        
+          
+                  
+                                                                                                                                        | 98 | BENE_LIABILITY_AMT | Total Beneficiary Long-Term Care Liability Amount | 
+        
+          
+                  
+                                                                                                                                        | 99 | COINSRNC_AMT | Beneficiary Coinsurance Amount | 
+        
+          
+                  
+                                                                                                                                        | 100 | COPAY_AMT | Beneficiary Copayment Amount | 
+        
+          
+                  
+                                                                                                                                        | 101 | DDCTBL_AMT | Beneficiary Deductible Amount | 
+        
+          
+                  
+                                                                                                                                        | 102 | COPAY_WVD_IND | Indicator Signifying Copay was Waived by Provider | 
+        
+          
+                  
+                                                                                                                                        | 103 | TP_PD_AMT | Total Third Party Liability Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 104 | TP_COINSRNC_PD_AMT | Third Party Coinsurance Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 105 | TP_COPAY_PD_AMT | Third Party Copayment Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 106 | OTHR_INSRNC_PD_AMT | Total Other Than Medicare or Medicaid -Insurance Paid Amount | 
+        
+          
+                  
+                                                                                                                                        | 107 | OTHR_TP_CLCTN_CD | Other Third Party Collection Code | 
+        
+          
+                  
+                                                                                                                                        | 108 | FUNDNG_CD | Code To Indicate Source of Non-Federal Funding | 
+        
+          
+                  
+                                                                                                                                        | 109 | FUNDNG_SRC_NON_FED_SHR_CD | Funding Source Non-Federal Share Code | 
+        
+          
+                  
+                                                                                                                                        | 110 | DA_RUN_ID | TAF Production Run Identifier (unique for each TAF run) | 
+        
+          
+                  
+                                                                                                                                        | 111 | TMSIS_RUN_ID | TMSIS State Data Processing Run Identifier | 
+        
+          
+                  
+                                                                                                                                        | 112 | LT_VRSN | Long-Term Version Representing the Iteration of the File | 
+        
+          
+                  
+                                                                                                                                        | 113 | LT_FIL_DT | Long-Term File Date - Represents the Year and Month of the Reporting Period | 
+        
+          
+                  
+                                                                                                                                        | 114 | CCW_LD_DT | CCW Load Date (Claims) |

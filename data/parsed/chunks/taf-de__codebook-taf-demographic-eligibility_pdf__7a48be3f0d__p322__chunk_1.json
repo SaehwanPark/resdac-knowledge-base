@@ -1,0 +1,8 @@
+{
+  "chunk_id": "taf-de__codebook-taf-demographic-eligibility_pdf__7a48be3f0d__p322__chunk_1",
+  "source_document": "data/raw/assets/pdf/7a48be3f0d3c4224b3129bd4e6af2eec1975b637.pdf",
+  "page": 322,
+  "text": "recent in the calendar year. \nSHORT NAME: TPL_OTHR_CVRG_IND \nLONG NAME: TPL_OTHR_CVRG_IND \nTYPE: \nCHAR \nLENGTH: \n1 \nFILE(S): \nAnnual DE base \nSOURCE: \nT-MSIS annual demographic and eligibility TAF \nVALUES: \n0 = Medicaid/CHIP eligible individual has no other TPL funding available \n1 = Medicaid/CHIP eligible individual does have other TPL funding available \nNull/missing = source value is missing or unknown \nCOMMENT: \n— \n^ Back to TOC ^",
+  "dataset": "taf-de",
+  "url": "https://www2.ccwdata.org/documents/10280/19022436/codebook-taf-demographic-eligibility.pdf"
+}

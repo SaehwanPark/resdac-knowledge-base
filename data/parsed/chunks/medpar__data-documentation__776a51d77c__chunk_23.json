@@ -1,0 +1,8 @@
+{
+  "chunk_id": "medpar__data-documentation__776a51d77c__chunk_23",
+  "source_document": "data/raw/html/documentation_page/776a51d77c856d4766b5eb9e5457d692139041ce.html",
+  "page": null,
+  "text": "| Outpatient services/ambulatory surgical care indicator code | \n\n | 125 | ORGN_ACQSTN_IND_CD | Organ Acquisition Type Code | \n\n | 126 | ESRD_COND_CD | End Stage Renal Disease (ESRD) Condition Indicator Code | \n\n | 127 | ESRD_SETG_IND_1_CD | Dialysis service type code 1 | \n\n | 128 | ESRD_SETG_IND_2_CD | Dialysis service type code 2 | \n\n | 129 | ESRD_SETG_IND_3_CD | Dialysis service type code 3 | \n\n | 130 | ESRD_SETG_IND_4_CD | Dialysis service type code 4 | \n\n | 131 | ESRD_SETG_IND_5_CD |",
+  "dataset": "medpar",
+  "url": "https://resdac.org/cms-data/files/medpar/data-documentation"
+}
