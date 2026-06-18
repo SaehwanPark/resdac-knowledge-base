@@ -95,7 +95,7 @@ variable-page coverage.
 ```bash
 uv run cms-kb-archive \
   --retry-failed-only \
-  --max-downloads 50 \
+  --max-downloads 5000 \
   --request-delay-seconds 5 \
   --rate-limit-cooldown-seconds 300
 ```
