@@ -1,4 +1,22 @@
-"""Phase 1 archive preservation for CMS KB inventory outputs."""
+"""Phase 1 archive preservation for CMS KB inventory outputs.
+
+This module implements Phase 1 (Archive Preservation) of the CMS Knowledge Base pipeline.
+It consumes the discovered site inventory, downloads HTML pages and asset attachments
+from ResDAC/CMS, and persists them locally under `data/raw/` in a repeatable, traceable way.
+
+Key Architecture Details:
+- Robust Network Client: Implements auto-retry with exponential backoff, handling of transient
+  HTTP codes, and parsing of standard 'Retry-After' response headers to respect rate limits.
+- Rate Limit & Deferral: Deferrals are triggered for variable pages (which are numerous)
+  if rate limits are repeatedly encountered. Remaining variable pages get deferred to protect
+  general dataset/document crawls.
+- Safe Writing: Uses atomic file writes (`_write_bytes_atomically`) by writing to a temporary file
+  on the same filesystem and renaming it, preventing corrupt files if the process is terminated.
+- Reuse & Validation: Performs trust checks on previous runs. Reuses existing files if their size
+  and SHA-256 checksums match the recorded metadata, avoiding redundant network requests.
+- Provenance Manifests: Registers the state of every download in `archive_manifest.csv` with its
+  UTC download timestamp, checksum, content-type, and HTTP response code.
+"""
 
 from __future__ import annotations
 
@@ -93,6 +111,10 @@ class ArchiveConfig(BaseModel):
 
 
 class ArchiveManifestRow(BaseModel):
+  """A structured registry entry in the archive manifest.
+
+  Tracks provenance and download outcomes for a single URL crawled in Phase 0.
+  """
   url: str
   resource_kind: ResourceKind
   asset_kind: str = ""
@@ -108,6 +130,7 @@ class ArchiveManifestRow(BaseModel):
 
   @model_validator(mode="after")
   def validate_archived_provenance(self) -> ArchiveManifestRow:
+    """Enforces integrity constraints on successfully archived entries."""
     if self.archive_state != "archived":
       return self
     if not self.downloaded_at_utc:
@@ -126,6 +149,7 @@ class ArchiveManifestRow(BaseModel):
 
 
 class DownloadResult(BaseModel):
+  """Internal result containing raw network download outcomes."""
   url: str
   status: int | None = None
   content_type: str | None = None
@@ -134,6 +158,7 @@ class DownloadResult(BaseModel):
 
 
 class ArchiveResult(BaseModel):
+  """Complete statistical summary for an archiving run."""
   config: ArchiveConfig
   inventory_rows: int
   manifest_rows: list[ArchiveManifestRow] = Field(default_factory=list)
@@ -409,6 +434,18 @@ def _archive_url_error(url: str) -> str:
 
 
 def _write_bytes_atomically(local_path: Path, body: bytes) -> str:
+  """Writes data to a temporary file first, then renames it to prevent half-written files.
+
+  This is a safety-critical design pattern to protect raw archive artifacts against
+  system crashes or manual script interruptions.
+
+  Args:
+    local_path: The target path where the file should be permanently saved.
+    body: The raw bytes data to be written.
+
+  Returns:
+    The computed 64-character hex SHA-256 checksum of the written bytes.
+  """
   local_path.parent.mkdir(parents=True, exist_ok=True)
   hasher = hashlib.sha256()
   with tempfile.NamedTemporaryFile(

@@ -1,4 +1,15 @@
-"""Lightweight JSONL progress logging for long CMS KB pipeline phases."""
+"""Lightweight JSONL progress logging for long CMS KB pipeline phases.
+
+This module provides structured tracking and monitoring of execution progress for
+potentially long-running pipeline steps (such as web crawling, archiving, or bulk document
+parsing). It writes events sequentially to a JSONL (JSON Lines) log file.
+
+Key Features & Performance Tradeoffs:
+- Appending is an efficient O(1) file append operation.
+- The monitoring CLI uses a backward-seeking read strategy (`_read_last_text_lines`)
+  analogous to Unix `tail`. This allows analyzing the last N lines of a massive progress log
+  instantly without loading the whole file into memory.
+"""
 
 from __future__ import annotations
 
@@ -14,6 +25,19 @@ from pydantic import BaseModel, Field
 
 
 class ProgressEvent(BaseModel):
+  """A validated log event representing a step in pipeline execution.
+
+  Attributes:
+    timestamp_utc: ISO 8601 formatted timestamp of the event, normalized to UTC 'Z'.
+    phase: The active pipeline phase name (e.g., 'inventory', 'archive', 'parse').
+    event: A categorizing slug for the event type (e.g., 'download_success', 'error', 'complete').
+    message: Contextual human-readable details about the action being logged.
+    url: Optional URL associated with the event (e.g., the page being downloaded).
+    resource_kind: The category of the resource (e.g., 'dataset_page', 'asset').
+    status: HTTP response status code, if applicable.
+    counts: Accumulated execution metrics up to this point in the phase.
+    error: Formatted traceback or message if the step failed.
+  """
   timestamp_utc: str
   phase: str
   event: str
@@ -26,10 +50,20 @@ class ProgressEvent(BaseModel):
 
 
 def now_utc_timestamp() -> str:
+  """Generates the current system time formatted as a UTC ISO 8601 string.
+
+  Returns:
+    A string like '2026-06-19T01:51:00.000000Z'.
+  """
   return datetime.now(UTC).isoformat().replace("+00:00", "Z")
 
 
 def init_progress_log(log_path: Path | None) -> None:
+  """Creates/truncates the progress log file, ensuring parent directories exist.
+
+  Args:
+    log_path: The target log file path. If None, this operation acts as a no-op.
+  """
   if log_path is None:
     return
   log_path.parent.mkdir(parents=True, exist_ok=True)
@@ -69,6 +103,19 @@ def append_progress_event(
 
 
 def _read_last_text_lines(log_path: Path, line_count: int) -> list[str]:
+  """Reads lines backwards from the end of a file to optimize memory/speed.
+
+  This is a critical custom tail implementation designed to avoid loading huge log files
+  into memory. It seeks backward from the EOF in chunks, looking for line breaks, until
+  the requested number of lines are located.
+
+  Args:
+    log_path: Absolute or relative path to the log file.
+    line_count: The maximum number of lines from the end to retrieve.
+
+  Returns:
+    A list of the last `line_count` decoded lines.
+  """
   chunk_size = 8192
   with log_path.open("rb") as handle:
     handle.seek(0, 2)
@@ -86,6 +133,7 @@ def _read_last_text_lines(log_path: Path, line_count: int) -> list[str]:
       chunk = handle.read(read_size)
       buffer = chunk + buffer
       lines_found += chunk.count(b"\n")
+      # Stop seeking backward once we've crossed the target line threshold
       if lines_found > line_count:
         break
 
@@ -114,7 +162,19 @@ def read_progress_tail(log_path: Path, line_count: int) -> list[ProgressEvent]:
 
 
 def summarize_progress_events(events: list[ProgressEvent]) -> dict[str, object]:
+  """Aggregates a sequence of progress events into a structured metrics summary.
+
+  This analyzes event logs to present the overall status, event frequency distribution,
+  and details of the last recorded success and general action.
+
+  Args:
+    events: A list of logged ProgressEvents.
+
+  Returns:
+    A dict summarizing total event count, event types count, and recent events.
+  """
   event_counts = Counter(event.event for event in events)
+  # Find the most recent event representing a successful step
   last_success = next(
     (
       event

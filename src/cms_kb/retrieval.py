@@ -1,4 +1,19 @@
-"""Read-only lexical retrieval over CMS KB metadata and parsed chunks."""
+"""Read-only lexical retrieval over CMS KB metadata and parsed chunks.
+
+This module houses the core search engine of the CMS Knowledge Base. It uses a custom
+BM25 (Best Matching 25) TF-IDF ranking implementation enhanced with exact-term field
+boosting.
+
+Architecture & Data Flow:
+- Multiple heterogeneous source schemas (datasets, documents, variables, text chunks)
+  are parsed and normalized into a unified schema represented by `RetrievableRecord`.
+- On query execution, the search engine computes term frequency relative to the average
+  document length and token inverse document frequency (IDF) using a BM25 variant.
+- Custom exact matches on identifier fields (such as `variable_id` or `dataset_id`) are
+  highly boosted to ensure precise direct query resolution.
+- Finally, search results are formatted into snippets centering on matched tokens
+  and returned as a sorted list of `SearchResult` objects.
+"""
 
 from __future__ import annotations
 
@@ -23,6 +38,7 @@ TOKEN_PATTERN = re.compile(r"[a-z0-9_]+")
 
 
 class RetrievalConfig(BaseModel):
+  """Configuration holding file paths for the knowledge base catalogs and chunks."""
   datasets_metadata_path: Path = Path("data/metadata/datasets.csv")
   documents_metadata_path: Path = Path("data/metadata/documents.csv")
   variables_metadata_path: Path = Path("data/metadata/variables.csv")
@@ -30,6 +46,22 @@ class RetrievalConfig(BaseModel):
 
 
 class RetrievableRecord(BaseModel):
+  """A search index record representing a flattened entity in the CMS KB.
+
+  All parsed items (datasets, files, variables, chunks) are mapped to this format
+  for indexation and lexical analysis.
+
+  Attributes:
+    record_id: Unique identifier of the entity.
+    record_type: Kind of record ('dataset', 'document', 'variable', 'chunk').
+    title: Human-readable name/label.
+    dataset_id: The ID of the parent or associated dataset.
+    text: Normalized content text block scanned by the search query.
+    source_url: Original source citation web URL.
+    source_document: Local path to the raw archived document.
+    page: Optional page number if the source document is a PDF.
+    exact_terms: High-priority strings (like codes, acronyms) that qualify for exact field boosting.
+  """
   record_id: str
   record_type: RecordType
   title: str
@@ -42,6 +74,19 @@ class RetrievableRecord(BaseModel):
 
 
 class SearchResult(BaseModel):
+  """A scored and matched retrieval hit returned by the search engine.
+
+  Attributes:
+    record_id: Identifier of the matched entity.
+    record_type: Type of the entity.
+    title: Human-readable name.
+    dataset_id: Parent dataset identifier.
+    score: The lexical score calculated by BM25 plus exact-match boosts.
+    snippet: The text excerpt containing highlighted search query terms.
+    source_url: Original citation URL.
+    source_document: Local path to the archived source document.
+    page: Optional page number of the source document.
+  """
   record_id: str
   record_type: RecordType
   title: str
@@ -232,6 +277,11 @@ def load_retrievable_records(config: RetrievalConfig) -> list[RetrievableRecord]
 
 
 def _idf_by_token(records: list[RetrievableRecord]) -> dict[str, float]:
+  """Calculates the BM25-variant Inverse Document Frequency (IDF) for all unique tokens.
+
+  This downweights tokens that occur frequently across the entire corpus
+  (such as common words like 'the' or 'data') and boosts rare tokens.
+  """
   document_count = len(records)
   document_frequencies: Counter[str] = Counter()
   for record in records:
@@ -243,14 +293,22 @@ def _idf_by_token(records: list[RetrievableRecord]) -> dict[str, float]:
 
 
 def _field_boost(query: str, query_tokens: list[str], record: RetrievableRecord) -> float:
+  """Calculates field boosting values based on exact matches of key identifiers.
+
+  For example, if the query matches a variable ID (e.g. 'BENE_ID') exactly,
+  it gets a significant boost to ensure it ranks ahead of general text matches.
+  """
   boost = 0.0
   exact_values = [value.lower() for value in record.exact_terms if value]
   if query in exact_values:
+    # Large boost for exact query match on key identifiers
     boost += 8.0
   for token in query_tokens:
     if token in exact_values:
+      # Modest boost for query sub-tokens matching identifiers
       boost += 4.0
   if query and query in record.text.lower():
+    # Small boost for substring inclusion
     boost += 2.0
   return boost
 
@@ -262,6 +320,10 @@ def _record_score(
   idf: dict[str, float],
   average_length: float,
 ) -> float:
+  """Computes the final retrieval score for a record using BM25 and exact field boosts.
+
+  Uses standard k1 and b tuning parameters to normalize document length.
+  """
   record_tokens = _tokens(record.text)
   if not record_tokens:
     return 0.0
@@ -284,6 +346,11 @@ def _record_score(
 
 
 def _snippet(text: str, query_tokens: list[str], max_length: int = 180) -> str:
+  """Generates a contextual text excerpt showing query term matches.
+
+  Finds the first occurrence of any search token in the text and slices a window
+  of up to `max_length` characters around it, appending ellipses if truncated.
+  """
   cleaned = re.sub(r"\s+", " ", text).strip()
   if len(cleaned) <= max_length:
     return cleaned
@@ -308,6 +375,19 @@ def search_records(
   records: list[RetrievableRecord],
   limit: int = 10,
 ) -> list[SearchResult]:
+  """Searches across an in-memory list of retrievable records.
+
+  Computes BM25 scores and exact boosts on-the-fly, sorts by score, and returns
+  the top search results up to the limit.
+
+  Args:
+    query: The query text containing one or more terms.
+    records: Pre-loaded RetrievableRecords to search over.
+    limit: The maximum number of search results to return.
+
+  Returns:
+    A list of SearchResult objects sorted descending by score.
+  """
   normalized_query = query.strip().lower()
   if not normalized_query:
     raise ValueError("query must not be empty")
@@ -359,6 +439,18 @@ def run_retrieval(
   query: str,
   limit: int = 10,
 ) -> list[SearchResult]:
+  """Performs the full load-and-search pipeline for a query.
+
+  This helper initializes the index from disk and runs the search synchronously.
+
+  Args:
+    config: Configuration setting target directory paths.
+    query: The search input query.
+    limit: Max results count.
+
+  Returns:
+    Sorted list of SearchResults.
+  """
   records = load_retrievable_records(config)
   return search_records(query, records, limit)
 

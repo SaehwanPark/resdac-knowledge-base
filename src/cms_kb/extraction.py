@@ -1,4 +1,20 @@
-"""Phase 2 metadata extraction from archived CMS KB materials."""
+"""Phase 2 metadata extraction from archived CMS KB materials.
+
+This module implements Phase 2 (Metadata and Graph Extraction) of the CMS Knowledge Base pipeline.
+It processes the archived files registered in `archive_manifest.csv`, verifies their local
+physical state (size, path, checksum), and parses raw HTML structures to extract datasets,
+associated documents, program ontology nodes, and relationship edges.
+
+Key Architecture Details:
+- Validation: Verifies that every archived resource is physically present on disk and matches
+  the recorded SHA-256 checksum, logging warnings or errors for mismatches/missing files.
+- Dataset Parser: Utilizes `_DatasetParser` to dynamically parse the unstructured HTML tables,
+  sidebars, and descriptions typical of ResDAC dataset pages to extract fields like 'program',
+  'category', and 'availability'.
+- Graph Synthesis: Emits directed document edges (mapping documents and assets to their parent datasets)
+  and ontology records (belonging/related categories) to feed retrieval and graph representations.
+- Handoff Summary: Outputs clean CSV catalogs and writes `_workspace/04_extraction_pack.md`.
+"""
 
 from __future__ import annotations
 
@@ -698,6 +714,17 @@ def write_extraction_workspace_summary(result: ExtractionResult) -> Path:
 
 
 def run_extraction(config: ExtractionConfig) -> tuple[ExtractionResult, Path]:
+  """Performs Phase 2 metadata extraction from the offline archived documents.
+
+  Coordinates loading manifests, checking checksum validity, parsing details from HTML pages,
+  weaving many-to-many relationships, structuring the ontology layers, and saving CSV catalogs.
+
+  Args:
+    config: ExtractionConfig containing folder and manifest configurations.
+
+  Returns:
+    A tuple of (ExtractionResult, summary_report_path).
+  """
   manifest_rows = read_archive_manifest_csv(config.archive_manifest_path)
   datasets_by_id: dict[str, DatasetMetadataRow] = {}
   documents_by_id: dict[str, DocumentMetadataRow] = {}

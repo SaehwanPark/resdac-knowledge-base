@@ -1,4 +1,18 @@
-"""Model Context Protocol (MCP) server for CMS KB retrieval and agent context."""
+"""Model Context Protocol (MCP) server for CMS KB retrieval and agent context.
+
+This module implements an MCP server using FastMCP. It exposes tool wrappers
+allowing external LLM agents and clients to query the local CMS Knowledge Base
+interactively. The tools provide search capabilities over datasets, documents,
+variables, and parsed text chunks, including citation-preserving context hits.
+
+Architecture & State Management:
+- The `ServerState` object acts as an in-memory database cache. Since loading
+  thousands of records from CSV/JSONL files on every query would be slow,
+  `ServerState` caches the parsed metadata list and the archive document mappings.
+- Setting any configuration path invalidates the cache dynamically.
+- Execution runs on the `stdio` transport layer, enabling easy integration with
+  MCP-compliant host applications.
+"""
 
 from __future__ import annotations
 
@@ -23,6 +37,12 @@ from .retrieval import (
 
 
 class ServerState:
+  """Caches and manages the in-memory metadata state for the MCP server.
+
+  This avoids expensive re-reads of the CSV and JSONL source files on
+  each tool invocation. Modifying configurations invalidates cached objects.
+  """
+
   def __init__(self) -> None:
     self._config = RetrievalConfig()
     self._archive_manifest_path = Path("manifests/archive_manifest.csv")
@@ -32,28 +52,34 @@ class ServerState:
 
   @property
   def config(self) -> RetrievalConfig:
+    """The search and index configuration settings."""
     return self._config
 
   @config.setter
   def config(self, value: RetrievalConfig) -> None:
     self._config = value
-    self._records = None  # Invalidate cached records
+    # Invalidate cached records so that they are reloaded with the new configuration
+    self._records = None
 
   def get_records(self) -> list[RetrievableRecord]:
+    """Retrieves all indexed metadata records, loading them on-demand if not cached."""
     if self._records is None:
       self._records = load_retrievable_records(self._config)
     return self._records
 
   @property
   def archive_manifest_path(self) -> Path:
+    """The path to the local archive manifest CSV."""
     return self._archive_manifest_path
 
   @archive_manifest_path.setter
   def archive_manifest_path(self, value: Path) -> None:
     self._archive_manifest_path = value
+    # Invalidate cached archive map when the manifest path changes
     self._archived_documents_by_url = None
 
   def get_archived_documents_by_url(self) -> dict[str, str]:
+    """Loads and caches the URL-to-local-path map for offline citation resolution."""
     if self._archived_documents_by_url is None:
       self._archived_documents_by_url = read_archived_document_map(
         self._archive_manifest_path
@@ -146,6 +172,11 @@ def get_agent_context(query: str, limit: int | None = None) -> str:
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
+  """Constructs the argument parser for starting the MCP server CLI.
+
+  Returns:
+    An ArgumentParser instance configured with path and limit defaults.
+  """
   parser = argparse.ArgumentParser(
     description="Start the read-only MCP server for CMS KB retrieval."
   )
@@ -179,6 +210,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+  """CLI execution entrypoint to configure and start the MCP server.
+
+  Args:
+    argv: Command line arguments. Uses sys.argv if None.
+
+  Returns:
+    Exit code: 0 for clean execution, 1 on initialization/runtime errors.
+  """
   parser = build_arg_parser()
   args = parser.parse_args(argv)
 
@@ -189,6 +228,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"Error: Documents metadata file not found at {args.documents_metadata}", file=sys.stderr)
     return 1
 
+  # Initialize state values with command line overrides
   state.config = RetrievalConfig(
     datasets_metadata_path=args.datasets_metadata,
     documents_metadata_path=args.documents_metadata,
@@ -199,6 +239,7 @@ def main(argv: list[str] | None = None) -> int:
   state.default_limit = args.limit
 
   try:
+    # Run the FastMCP server utilizing stdio transport communication
     mcp.run("stdio")
   except Exception as exc:
     print(f"Error running MCP server: {exc}", file=sys.stderr)

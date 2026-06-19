@@ -1,4 +1,19 @@
-"""Phase 3 document parsing and text chunking for CMS KB."""
+"""Phase 3 document parsing and text chunking for CMS KB.
+
+This module implements Phase 3 (Document Parsing and Text Chunking) of the pipeline.
+It extracts text contents from different file formats, maps them, and chunks the resulting
+text blocks into retrieval-sized windows with overlap to prepare for lexical search.
+
+Key Architecture Details:
+- Format Support: Parses HTML via `trafilatura` for clean web text, PDFs via `PyMuPDF`
+  preserving page numbers, and spreadsheets (.xlsx) via a custom lightweight zip/XML parser.
+- Custom XLSX Parser: Avoids bulky openpyxl/pandas dependencies by reading OpenXML ZIP structures,
+  loading shared strings, and yielding cell texts cell-by-cell.
+- Sliding Window Chunking: Generates overlapping text windows (`chunk_text`), keeping words intact
+  and computing character boundaries.
+- Traceability: Emits chunks in a JSONL stream (`chunks.jsonl`) with metadata tags identifying
+  the parent dataset, source URL, local file path, and page number.
+"""
 
 from __future__ import annotations
 
@@ -201,6 +216,18 @@ def _xlsx_sheet_sort_key(path: str) -> tuple[int, str]:
 
 
 def parse_xlsx(local_path: Path) -> list[tuple[int, str]]:
+  """Extracts tabular text data from an Excel (.xlsx) spreadsheet file.
+
+  It implements a custom XML parser to extract sheet data without external libraries like pandas.
+  It loads the shared string tables, traverses the worksheet files sequentially, and maps cell values
+  to string rows.
+
+  Args:
+    local_path: Path to the .xlsx file on disk.
+
+  Returns:
+    A list of tuples (sheet_index, sheet_text) where sheet_text is a newline-delimited representation.
+  """
   sheets: list[tuple[int, str]] = []
   with zipfile.ZipFile(local_path) as workbook:
     shared_strings = _read_xlsx_shared_strings(workbook)
@@ -326,6 +353,14 @@ def write_parsing_workspace_summary(result: ParsingResult) -> Path:
 
 
 def run_parsing(config: ParsingConfig) -> tuple[ParsingResult, Path]:
+  """Performs Phase 3 parsing and text chunking for all indexed datasets and documents.
+
+  Args:
+    config: Configuration holding chunk settings and input/output paths.
+
+  Returns:
+    A tuple of (ParsingResult, summary_report_path).
+  """
   # Let FileNotFoundError propagate
   datasets = read_datasets_csv(config.datasets_metadata_path)
   documents = read_documents_csv(config.documents_metadata_path)

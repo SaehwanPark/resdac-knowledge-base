@@ -1,4 +1,15 @@
-"""Small retrieval usefulness evaluation helpers for CMS KB variables."""
+"""Small retrieval usefulness evaluation helpers for CMS KB variables.
+
+This module provides the validation logic to assess the quality of variables
+retrieval in the CMS Knowledge Base. It randomly samples variables (with a stable random
+seed) and runs queries to check if the retrieval system:
+1. Surfaces the correct variable in the top N search ranks.
+2. Exposes actual "definition evidence" inside the snippet (meaningful tokens rather
+   than just repeating the variable ID or title).
+3. Preserves traceability through a valid web source citation.
+4. Prefers HTML source pages over PDF or Excel assets when both are available,
+   since HTML is typically the canonical variable detail page at ResDAC.
+"""
 
 from __future__ import annotations
 
@@ -16,6 +27,14 @@ from .variables import VariableMetadataRow
 
 
 class VariableEvaluationConfig(BaseModel):
+  """Configuration settings for variable retrieval evaluation.
+
+  Attributes:
+    retrieval: Settings configuration for locating variables metadata and chunks files.
+    sample_size: Number of unique variable names to randomly sample.
+    seed: RNG seed to ensure repeatable, deterministic evaluation runs.
+    limit: The maximum search rank depth to check for a successful match.
+  """
   retrieval: RetrievalConfig = RetrievalConfig()
   sample_size: int = 10
   seed: int = 20260616
@@ -23,6 +42,21 @@ class VariableEvaluationConfig(BaseModel):
 
 
 class VariableEvaluationCase(BaseModel):
+  """Results of evaluating retrieval for a single variable name.
+
+  Attributes:
+    variable_name: The name of the variable query being tested.
+    expected_variable_ids: Target variable IDs associated with this variable name.
+    expected_dataset_ids: Target dataset IDs that contain this variable.
+    top_result: The very first retrieval match returned.
+    first_matching_rank: The 1-based rank where the expected variable record first appeared.
+    first_matching_result: The matched SearchResult record itself.
+    snippet_has_definition_evidence: True if the result snippet includes contextual words.
+    citation_present: True if the result includes a citation web URL.
+    html_preferred_when_available: True if the query returned an HTML record or HTML wasn't available.
+    html_evidence_available: True if any source metadata rows originate from HTML.
+    passed: Overall boolean indicating whether all quality checks were satisfied.
+  """
   variable_name: str
   expected_variable_ids: list[str]
   expected_dataset_ids: list[str]
@@ -37,6 +71,14 @@ class VariableEvaluationCase(BaseModel):
 
 
 class VariableEvaluationReport(BaseModel):
+  """The compiled results report for a complete evaluation run.
+
+  Attributes:
+    sample_size: Total number of cases evaluated.
+    seed: The random seed used for sampling.
+    limit: The retrieval limit cutoff used.
+    cases: Details for each individual variable name case.
+  """
   sample_size: int
   seed: int
   limit: int
@@ -44,10 +86,12 @@ class VariableEvaluationReport(BaseModel):
 
   @property
   def passed_count(self) -> int:
+    """The total number of cases that successfully passed all checks."""
     return sum(1 for case in self.cases if case.passed)
 
   @property
   def pass_rate(self) -> float:
+    """Ratio of passed cases to the total sample size."""
     if not self.cases:
       return 0.0
     return self.passed_count / len(self.cases)
@@ -84,6 +128,12 @@ def _sample_variable_names(
 
 
 def _snippet_has_definition_evidence(result: SearchResult) -> bool:
+  """Checks if a search match snippet actually contains contextual text.
+
+  To prevent false positives where the snippet only contains the queried variable
+  name or its ID without any descriptive definition, this function filters out
+  those tokens and checks if at least 3 other non-numeric words remain.
+  """
   snippet_tokens = {
     token.lower()
     for token in [
@@ -125,6 +175,11 @@ def _evaluate_variable_name(
   rows: list[VariableMetadataRow],
   limit: int,
 ) -> VariableEvaluationCase:
+  """Runs evaluation checks for a specific variable name query.
+
+  Queries the retrieval system with the variable name, maps the matches, and evaluates
+  whether the returned results satisfy all qualitative criteria.
+  """
   expected_variable_ids = sorted({row.variable_id for row in rows})
   expected_dataset_ids = sorted({row.dataset_id for row in rows})
   html_available = _html_evidence_available(rows)
@@ -170,6 +225,14 @@ def _evaluate_variable_name(
 
 
 def evaluate_variable_retrieval(config: VariableEvaluationConfig) -> VariableEvaluationReport:
+  """Runs the full seeded evaluation suite across the variable metadata catalog.
+
+  Args:
+    config: VariableEvaluationConfig configuration parameters.
+
+  Returns:
+    A VariableEvaluationReport mapping outcomes across all sampled cases.
+  """
   rows = _read_variable_rows(config.retrieval.variables_metadata_path)
   rows_by_name: dict[str, list[VariableMetadataRow]] = {}
   for row in rows:

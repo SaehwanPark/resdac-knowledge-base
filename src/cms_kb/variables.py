@@ -1,4 +1,19 @@
-"""Phase 6 variable-level metadata extraction from parsed CMS KB chunks."""
+"""Phase 6 variable-level metadata extraction from parsed CMS KB chunks.
+
+This module implements Phase 6 (Variable-Level Metadata Extraction) of the pipeline.
+It scans parsed text chunks (`chunks.jsonl`) for occurrences of variable names and uses regex/text heuristics
+to extract definitions, aliases, and active years. It also parses archived ResDAC variable-detail
+HTML pages (`/cms-data/variables/...`) to build a canonical variable catalog.
+
+Key Architecture Details:
+- Text-Based Extraction: Inspects text chunks to find lines matching variable patterns
+  (e.g., table layouts or paragraph headers), pulling out definitions and active years.
+- Canonical Variable Parsing: Parses raw archived HTML of variable detail pages (via `_VariablePageParser`)
+  to capture the variable label, description table, and membership in different datasets.
+- Priority Deduplication: Resolves conflicting definitions of the same variable name using priorities
+  (e.g. favoring details extracted from HTML pages over general PDF/spreadsheet chunks).
+- Handoff Summary: Outputs CSV registries and edges, writing `_workspace/07_variable_pack.md`.
+"""
 
 from __future__ import annotations
 
@@ -671,6 +686,17 @@ def write_variable_workspace_summary(result: VariableExtractionResult) -> Path:
 def run_variable_extraction(
   config: VariableExtractionConfig,
 ) -> tuple[VariableExtractionResult, Path]:
+  """Performs Phase 6 variable-level metadata and relationship extraction.
+
+  Parses text definitions from chunks and parses canonical variables from HTML pages,
+  deduplicating matches and writing the output CSV catalogs.
+
+  Args:
+    config: VariableExtractionConfig configuration parameters.
+
+  Returns:
+    A tuple of (VariableExtractionResult, variable_report_path).
+  """
   chunks, failures = read_chunks_jsonl(config.chunks_jsonl_path)
   canonical_variables, data_source_variable_edges, canonical_failures = (
     _extract_canonical_variables_from_manifest(config.archive_manifest_path)

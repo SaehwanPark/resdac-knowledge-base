@@ -1,4 +1,14 @@
-"""CMS KB inventory and crawl helpers."""
+"""CMS Knowledge Base core libraries and CLI utilities.
+
+This package exposes the programmatic API components for all pipeline phases:
+- Phase 0: Discovery Inventory crawl (`cms_kb.inventory`)
+- Phase 1: Archive preservation (`cms_kb.archive`)
+- Phase 2: Metadata and ontology extraction (`cms_kb.extraction`)
+- Phase 3: Content parsing and text chunking (`cms_kb.parsing`)
+- Phase 4: Provenance QA validation (`cms_kb.qa`)
+- Phase 6: Variable metadata extraction (`cms_kb.variables`)
+- Phase 7: Lexical BM25 search and agent-facing context API (`cms_kb.retrieval`, `cms_kb.agent_api`)
+"""
 
 from .agent_api import (
   AgentCitation,

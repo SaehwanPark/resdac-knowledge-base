@@ -1,4 +1,19 @@
-"""Phase 4 QA Specialist and provenance validation for CMS KB."""
+"""Phase 4 QA Specialist and provenance validation for CMS KB.
+
+This module implements Phase 4 (Quality Assurance) of the pipeline. It validates
+the completeness, consistency, and integrity of all catalogs and graph structures
+generated in previous pipeline phases (discovery, archival, extraction, parsing, variables).
+
+Key Architecture Details:
+- Comprehensive Checks: Verifies physical file existence, SHA-256 checksums,
+  URL schemes, structural headers, and referential integrity constraints.
+- Referential Integrity: Ensures that target nodes for all graph edges (document edges,
+  variable edges, and ontology relationships) exist and that variables are mapped back
+  to valid parent datasets.
+- Verdict Reporting: Aggregates findings as warnings or errors, outputs summaries to the CLI,
+  and compiles a detailed report in `_workspace/06_qa_review.md` yielding a final verdict:
+  PASS (zero errors, zero warnings), FIX (warnings or minor errors), or REDO (major validation errors).
+"""
 
 from __future__ import annotations
 
@@ -406,6 +421,17 @@ def is_valid_url(url: str) -> bool:
 
 
 def run_qa(config: QAConfig) -> tuple[QAResult, Path]:
+  """Runs the exhaustive Phase 4 validation checks on all pipeline files.
+
+  Validates datasets, documents, variables, canonical variables, edges, and ontology structures,
+  reporting findings to ensure knowledge base consistency and provenance.
+
+  Args:
+    config: QAConfig mapping target file directories and files.
+
+  Returns:
+    A tuple of (QAResult, qa_report_path).
+  """
   findings: list[QAFinding] = []
   datasets_checked = 0
   documents_checked = 0

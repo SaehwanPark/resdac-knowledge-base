@@ -1,4 +1,20 @@
-"""Discovery-only inventory crawl for CMS data documentation pages."""
+"""Discovery-only inventory crawl for CMS data documentation pages.
+
+This module implements Phase 0 (Discovery and Inventory) of the CMS Knowledge Base pipeline.
+It crawls the ResDAC data pages to catalog all available datasets, documentation pages,
+variable detail pages, and asset attachments (PDFs, spreadsheets, CSVs, ZIPs).
+
+Key Architecture Details:
+- Crawler Logic: Performs BFS (Breadth-First Search) starting from ResDAC listing pages,
+  following discovered dataset and documentation links up to configured boundaries.
+- Traceable Provenance: Every link traversal is recorded as a directed edge in
+  `site_inventory_edges.csv`, mapping source URLs to target URLs. This forms the many-to-many
+  graph structure showing where files and variables are referenced.
+- Polite Crawling: Implements request delays and handles HTTP status codes. Probes assets
+  via HTTP HEAD requests (using `probe_url`) rather than full downloads to classify their
+  file type and size efficiently.
+- Outputs: Produces site inventory, edges, and a markdown summary pack for Phase 1.
+"""
 
 from __future__ import annotations
 
@@ -63,6 +79,21 @@ def _strip_www(netloc: str) -> str:
 
 
 def normalize_url(base_url: str, href: str) -> str:
+  """Resolves a relative link against a base URL and normalizes it.
+
+  Normalization rules applied:
+  - Trims trailing slashes (except root '/').
+  - Converts schemes and netlocs to lowercase.
+  - Strips leading 'www.' subdomain prefixes for canonical mapping.
+  - Drops fragments/anchors to avoid duplicate inventory entries.
+
+  Args:
+    base_url: The parent document URL where the link was found.
+    href: The raw hyperlink target string.
+
+  Returns:
+    A canonical, normalized absolute URL.
+  """
   absolute = urljoin(base_url, href)
   parts = urlparse(absolute)
   path = parts.path
@@ -81,6 +112,17 @@ def normalize_url(base_url: str, href: str) -> str:
 
 
 def classify_resource_kind(url: str) -> ResourceKind:
+  """Categorizes a ResDAC/CMS web resource based on its URL path signature.
+
+  This categorization dictates how the crawler crawls, behaves (e.g., parsing HTML vs.
+  probing metadata headers for binary assets) and guides downstream extraction.
+
+  Args:
+    url: The normalized absolute URL of the resource.
+
+  Returns:
+    A ResourceKind classification string (e.g. 'dataset_page', 'asset').
+  """
   parts = urlparse(url)
   path = parts.path.lower()
   if path == "/cms-data":
@@ -650,6 +692,26 @@ def crawl_inventory(
   probe_url_fn: Callable[[str, float, str], ProbeResult] = probe_url,
   progress_fn: Callable[[str], None] | None = None,
 ) -> InventoryResult:
+  """Executes the Phase 0 discovery web crawl over ResDAC CMS documentation.
+
+  Crawl Workflow:
+  1. Crawls paginated index pages ('listing_page') under `/cms-data` up to `max_pages`.
+  2. Parses dataset detail links (`/cms-data/files/...`) and adds them to a queue.
+  3. Dequeues and fetches dataset and document pages. Parses them to extract titles,
+     relationships, and variable listings, mapping source-to-target links.
+  4. Collects and executes lightweight HTTP HEAD requests on discovered assets (e.g., PDFs)
+     to verify their HTTP status and determine their content-types.
+  5. Returns a unified results inventory and details of any dead links.
+
+  Args:
+    config: Configuration parameters, crawling limits, delays, and paths.
+    fetch_html_fn: Dependency injection function for fetching HTML content.
+    probe_url_fn: Dependency injection function for probing asset headers.
+    progress_fn: Optional progress callback.
+
+  Returns:
+    An InventoryResult containing rows, edges, and quality metrics.
+  """
   rows: dict[str, InventoryRow] = {}
   edges: dict[tuple[str, str, str], InventoryEdgeRow] = {}
   duplicates_skipped = [0]
