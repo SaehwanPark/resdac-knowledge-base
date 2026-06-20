@@ -8,10 +8,9 @@ Status: Verified
 
 ## Main Surfaces
 - [README.md](README.md): first-visitor overview, quick start, and documentation map.
-- [user-manual.md](docs/user-manual.md): comprehensive user manual for health policy researchers, scientists, and analysts.
+- [user-manual.md](docs/user-manual.md): comprehensive user manual covering core concepts, offline build instructions, CLI usage, and MCP server configuration.
 - [developer-guide.md](docs/developer-guide.md): developer reference guide for pipeline execution, code constraints, and MCP server configuration.
 - [STATUS.md](STATUS.md): separate current status for code implementation, checked-in corpus coverage, and retained generated artifacts.
-- [pipeline.md](docs/pipeline.md): phase commands, generated outputs, and QA workflow.
 - [data-model.md](docs/data-model.md): dataset, document, variable, graph, and provenance records.
 - [source-coverage.md](docs/source-coverage.md): current ResDAC source scope and future source families.
 - [SPEC.md](SPEC.md): operational feature-state record with mutually exclusive Past, Present, and Future sections.

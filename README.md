@@ -93,7 +93,7 @@ Return JSON context for an agent workflow:
 uv run cms-kb-agent-context --query BENE_ID --limit 5 --json
 ```
 
-For the full phase-by-phase command list, see [pipeline.md](docs/pipeline.md).
+For the full phase-by-phase command list and build instructions, see [user-manual.md](docs/user-manual.md).
 
 During long inventory or archive runs, tail `_workspace/*_progress.jsonl` or run
 `uv run cms-kb-progress` for a structured summary. See
@@ -101,10 +101,9 @@ During long inventory or archive runs, tail `_workspace/*_progress.jsonl` or run
 
 ## Documentation Map
 
-- [user-manual.md](docs/user-manual.md): a comprehensive user manual written for health policy researchers, scientists, and analysts.
+- [user-manual.md](docs/user-manual.md): a comprehensive user manual covering core concepts, offline build instructions, CLI usage, and MCP server configuration.
 - [developer-guide.md](docs/developer-guide.md): developer reference guide for pipeline execution, code constraints, and MCP server configuration.
 - [STATUS.md](STATUS.md): current code implementation status, checked-in corpus status, and derived artifact status.
-- [pipeline.md](docs/pipeline.md): phase commands, generated outputs, and QA workflow.
 - [data-model.md](docs/data-model.md): dataset, document, variable, graph, and provenance records.
 - [source-coverage.md](docs/source-coverage.md): current ResDAC source scope and future source families.
 - [SPEC.md](SPEC.md): operational feature-state record for past, present, and future work.

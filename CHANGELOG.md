@@ -19,6 +19,9 @@
 - `cms-kb-evaluate-variables` for seeded exact variable-name retrieval usefulness smoke checks.
 
 ### Changed
+- Consolidated user-facing documentation into a unified, comprehensive [user-manual.md](docs/user-manual.md), deleting the redundant [pipeline.md](docs/pipeline.md).
+- Added explicit user-facing guides on how to build and rebuild the knowledge base locally using the pre-packaged offline ResDAC archive snapshot under `data/raw/`.
+- Updated all references to `pipeline.md` in README, ARCHITECTURE, and the archive module source code.
 - Split documentation status tracking into separate code implementation,
   checked-in corpus, and derived artifact states.
 - Clarified `SPEC.md` so `Past`, `Present`, and `Future` are mutually exclusive operational states, with completed pipeline phases moved out of active work.

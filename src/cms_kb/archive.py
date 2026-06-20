@@ -922,7 +922,7 @@ def run_archive(
   ):
     warning_message = (
       f"warning: inventory contains {variable_page_count} variable_page rows; "
-      "use bounded Phase 1B batches (see docs/pipeline.md) to avoid rate limits"
+      "use bounded archive batches (see docs/user-manual.md) to avoid rate limits"
     )
     print(warning_message, file=sys.stderr, flush=True)
     if progress_fn is not None:
