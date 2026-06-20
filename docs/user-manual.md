@@ -140,10 +140,14 @@ uv run cms-kb-archive \
 
 ## 4. Querying and Searching the Knowledge Base
 
-Once the knowledge base is built, you can query across all datasets, documents, variables, and parsed text chunks using the search interface.
+Once the metadata and parsed chunks exist, compile the SQLite FTS5 serving index:
+
+```bash
+uv run cms-kb-index
+```
 
 ### Running Search Queries
-You can perform lexical search queries directly from your terminal:
+You can perform lexical search queries directly from your terminal using the SQLite index:
 ```bash
 uv run cms-kb-search --query BENE_ID --limit 5 --json
 ```

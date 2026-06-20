@@ -22,6 +22,7 @@ import csv
 import json
 import math
 import re
+import sqlite3
 import sys
 from collections import Counter
 from pathlib import Path
@@ -43,6 +44,8 @@ class RetrievalConfig(BaseModel):
   documents_metadata_path: Path = Path("data/metadata/documents.csv")
   variables_metadata_path: Path = Path("data/metadata/variables.csv")
   chunks_jsonl_path: Path = Path("data/parsed/chunks.jsonl")
+  database_path: Path = Path("data/index/retrieval.sqlite")
+
 
 
 class RetrievableRecord(BaseModel):
@@ -303,7 +306,7 @@ def _field_boost(query: str, query_tokens: list[str], record: RetrievableRecord)
   if query in exact_values:
     # Large boost for exact query match on key identifiers
     boost += 8.0
-  for token in query_tokens:
+  for token in set(query_tokens):
     if token in exact_values:
       # Modest boost for query sub-tokens matching identifiers
       boost += 4.0
@@ -434,25 +437,162 @@ def search_records(
   )[:limit]
 
 
+def search_records_sqlite(
+  query: str,
+  db_path: Path,
+  limit: int = 10,
+  record_type: RecordType | None = None,
+) -> list[SearchResult]:
+  """Searches across the SQLite FTS5 serving index.
+
+  Calculates BM25 scores and exact boosts on candidates fetched from SQLite.
+  """
+  normalized_query = query.strip().lower()
+  if not normalized_query:
+    raise ValueError("query must not be empty")
+  if limit <= 0:
+    raise ValueError("limit must be greater than 0")
+
+  # Clamp limit to prevent extreme memory use
+  limit = min(limit, 1000)
+
+  query_tokens = _tokens(normalized_query)
+  if not query_tokens:
+    raise ValueError("query must contain at least one searchable token")
+
+  if not db_path.is_file():
+    raise FileNotFoundError(f"Search index not found at {db_path}. Please run index building first.")
+
+  # Escape search tokens by wrapping in double quotes
+  match_expr = " OR ".join(f'"{t}"' for t in query_tokens)
+
+  conn = sqlite3.connect(db_path)
+  try:
+    cursor = conn.cursor()
+    # Fetch a generous candidate pool to rerank in Python to apply exact boosts
+    candidate_limit = max(500, limit * 5)
+    if record_type:
+      cursor.execute(
+        """
+        SELECT 
+          r.record_id,
+          r.record_type,
+          r.title,
+          r.dataset_id,
+          r.source_url,
+          r.source_document,
+          r.page,
+          r.exact_terms,
+          fts.text,
+          -bm25(records_fts, 10.0, 5.0, 2.0, 1.0) AS fts_score
+        FROM records r
+        JOIN records_fts fts ON r.record_id = fts.record_id
+        WHERE records_fts MATCH ? AND r.record_type = ?
+        ORDER BY fts_score DESC
+        LIMIT ?
+        """,
+        (match_expr, record_type, candidate_limit),
+      )
+    else:
+      cursor.execute(
+        """
+        SELECT 
+          r.record_id,
+          r.record_type,
+          r.title,
+          r.dataset_id,
+          r.source_url,
+          r.source_document,
+          r.page,
+          r.exact_terms,
+          fts.text,
+          -bm25(records_fts, 10.0, 5.0, 2.0, 1.0) AS fts_score
+        FROM records r
+        JOIN records_fts fts ON r.record_id = fts.record_id
+        WHERE records_fts MATCH ?
+        ORDER BY fts_score DESC
+        LIMIT ?
+        """,
+        (match_expr, candidate_limit),
+      )
+    rows = cursor.fetchall()
+  finally:
+    conn.close()
+
+  results = []
+  for (
+    record_id,
+    row_record_type,
+    title,
+    dataset_id,
+    source_url,
+    source_document,
+    page,
+    exact_terms_json,
+    text,
+    fts_score,
+  ) in rows:
+    exact_terms = json.loads(exact_terms_json)
+    
+    # Calculate exact-match boosts
+    boost = 0.0
+    exact_values = [val.lower() for val in exact_terms if val]
+    if normalized_query in exact_values:
+      boost += 8.0
+    for token in set(query_tokens):
+      if token in exact_values:
+        boost += 4.0
+    if normalized_query and normalized_query in text.lower():
+      boost += 2.0
+      
+    final_score = fts_score + boost
+
+    # Cast row_record_type to RecordType since SQLite returns TEXT
+    res_type: RecordType = row_record_type # type: ignore
+
+    results.append(
+      SearchResult(
+        record_id=record_id,
+        record_type=res_type,
+        title=title,
+        dataset_id=dataset_id,
+        score=round(final_score, 6),
+        snippet=_snippet(text, query_tokens),
+        source_url=source_url,
+        source_document=source_document,
+        page=page,
+      )
+    )
+
+  return sorted(
+    results,
+    key=lambda result: (-result.score, result.record_type, result.record_id),
+  )[:limit]
+
+
 def run_retrieval(
   config: RetrievalConfig,
   query: str,
   limit: int = 10,
+  record_type: RecordType | None = None,
 ) -> list[SearchResult]:
-  """Performs the full load-and-search pipeline for a query.
-
-  This helper initializes the index from disk and runs the search synchronously.
+  """Performs the full SQLite-backed search pipeline for a query.
 
   Args:
-    config: Configuration setting target directory paths.
+    config: Configuration settings.
     query: The search input query.
     limit: Max results count.
+    record_type: Optional record type filter.
 
   Returns:
     Sorted list of SearchResults.
   """
-  records = load_retrievable_records(config)
-  return search_records(query, records, limit)
+  if not config.datasets_metadata_path.is_file():
+    raise FileNotFoundError(f"Datasets metadata file not found at {config.datasets_metadata_path}")
+  if not config.documents_metadata_path.is_file():
+    raise FileNotFoundError(f"Documents metadata file not found at {config.documents_metadata_path}")
+
+  return search_records_sqlite(query, config.database_path, limit, record_type)
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -481,6 +621,12 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("data/parsed/chunks.jsonl"),
   )
+  parser.add_argument(
+    "--database-path",
+    type=Path,
+    default=Path("data/index/retrieval.sqlite"),
+  )
+  parser.add_argument("--legacy", action="store_true", help="Force the legacy in-memory search.")
   parser.add_argument("--json", action="store_true")
   return parser
 
@@ -493,10 +639,15 @@ def main(argv: list[str] | None = None) -> int:
     documents_metadata_path=args.documents_metadata,
     variables_metadata_path=args.variables_metadata,
     chunks_jsonl_path=args.chunks_jsonl,
+    database_path=args.database_path,
   )
 
   try:
-    results = run_retrieval(config, args.query, args.limit)
+    if args.legacy:
+      records = load_retrievable_records(config)
+      results = search_records(args.query, records, args.limit)
+    else:
+      results = run_retrieval(config, args.query, args.limit)
   except Exception as exc:
     print(f"Error executing retrieval: {exc}", file=sys.stderr)
     return 1
@@ -514,13 +665,137 @@ def main(argv: list[str] | None = None) -> int:
   return 0
 
 
+def build_index(config: RetrievalConfig) -> None:
+  """Builds a SQLite FTS5 serving index from canonical metadata and chunks."""
+  records = load_retrievable_records(config)
+  db_dir = config.database_path.parent
+  db_dir.mkdir(parents=True, exist_ok=True)
+  temp_db_path = config.database_path.with_suffix(".sqlite.tmp")
+  if temp_db_path.exists():
+    temp_db_path.unlink()
+
+  conn = sqlite3.connect(temp_db_path)
+  try:
+    conn.execute("PRAGMA foreign_keys = ON;")
+    # Create records table
+    conn.execute("""
+      CREATE TABLE records (
+        record_id TEXT PRIMARY KEY,
+        record_type TEXT NOT NULL,
+        title TEXT NOT NULL,
+        dataset_id TEXT NOT NULL,
+        source_url TEXT NOT NULL,
+        source_document TEXT NOT NULL,
+        page INTEGER,
+        exact_terms TEXT NOT NULL
+      );
+    """)
+    # Create records_fts virtual table using FTS5 with unicode61 tokenizer preserving underscores
+    conn.execute("""
+      CREATE VIRTUAL TABLE records_fts USING fts5(
+        record_id,
+        title,
+        dataset_id,
+        text,
+        tokenize="unicode61 tokenchars '_'"
+      );
+    """)
+
+    with conn:
+      for r in records:
+        conn.execute(
+          "INSERT OR REPLACE INTO records (record_id, record_type, title, dataset_id, source_url, source_document, page, exact_terms) "
+          "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+          (
+            r.record_id,
+            r.record_type,
+            r.title,
+            r.dataset_id,
+            r.source_url,
+            r.source_document,
+            r.page,
+            json.dumps(r.exact_terms),
+          ),
+        )
+        conn.execute(
+          "INSERT OR REPLACE INTO records_fts (record_id, title, dataset_id, text) VALUES (?, ?, ?, ?)",
+          (
+            r.record_id,
+            r.title,
+            r.dataset_id,
+            r.text,
+          ),
+        )
+  except Exception:
+    if temp_db_path.exists():
+      temp_db_path.unlink()
+    raise
+  finally:
+    conn.close()
+
+  temp_db_path.replace(config.database_path)
+
+
+def main_index(argv: list[str] | None = None) -> int:
+  """CLI entry point to build search index."""
+  parser = argparse.ArgumentParser(
+    description="Build SQLite FTS5 search index from CMS KB metadata and parsed chunks."
+  )
+  parser.add_argument(
+    "--datasets-metadata",
+    type=Path,
+    default=Path("data/metadata/datasets.csv"),
+  )
+  parser.add_argument(
+    "--documents-metadata",
+    type=Path,
+    default=Path("data/metadata/documents.csv"),
+  )
+  parser.add_argument(
+    "--variables-metadata",
+    type=Path,
+    default=Path("data/metadata/variables.csv"),
+  )
+  parser.add_argument(
+    "--chunks-jsonl",
+    type=Path,
+    default=Path("data/parsed/chunks.jsonl"),
+  )
+  parser.add_argument(
+    "--database-path",
+    type=Path,
+    default=Path("data/index/retrieval.sqlite"),
+  )
+  args = parser.parse_args(argv)
+  config = RetrievalConfig(
+    datasets_metadata_path=args.datasets_metadata,
+    documents_metadata_path=args.documents_metadata,
+    variables_metadata_path=args.variables_metadata,
+    chunks_jsonl_path=args.chunks_jsonl,
+    database_path=args.database_path,
+  )
+
+  try:
+    print(f"Building search index at {config.database_path}...")
+    build_index(config)
+    print("Search index built successfully.")
+    return 0
+  except Exception as exc:
+    print(f"Error building search index: {exc}", file=sys.stderr)
+    return 1
+
+
 __all__ = [
   "RetrievableRecord",
   "RetrievalConfig",
   "SearchResult",
   "build_arg_parser",
+  "build_index",
   "load_retrievable_records",
   "main",
+  "main_index",
   "run_retrieval",
   "search_records",
+  "search_records_sqlite",
 ]
+

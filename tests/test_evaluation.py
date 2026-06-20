@@ -10,7 +10,7 @@ from cms_kb.evaluation import (
   main,
 )
 from cms_kb.parsing import ChunkMetadata
-from cms_kb.retrieval import RetrievalConfig
+from cms_kb.retrieval import RetrievalConfig, build_index
 
 
 def _write_evaluation_fixture(tmp_path: Path) -> RetrievalConfig:
@@ -130,12 +130,15 @@ def _write_evaluation_fixture(tmp_path: Path) -> RetrievalConfig:
     encoding="utf-8",
   )
 
-  return RetrievalConfig(
+  config = RetrievalConfig(
     datasets_metadata_path=datasets_csv,
     documents_metadata_path=documents_csv,
     variables_metadata_path=variables_csv,
     chunks_jsonl_path=chunks_jsonl,
+    database_path=tmp_path / "data" / "index" / "retrieval.sqlite",
   )
+  build_index(config)
+  return config
 
 
 def test_evaluate_variable_retrieval_uses_seeded_sample(tmp_path: Path) -> None:
@@ -175,6 +178,8 @@ def test_evaluation_cli_outputs_json(tmp_path: Path, capsys) -> None:
     str(retrieval.variables_metadata_path),
     "--chunks-jsonl",
     str(retrieval.chunks_jsonl_path),
+    "--database-path",
+    str(retrieval.database_path),
     "--json",
   ])
 

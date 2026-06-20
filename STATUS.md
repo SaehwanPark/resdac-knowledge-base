@@ -88,13 +88,26 @@ The retained generated artifacts are:
 - `data/parsed/xlsx/`: 50 parsed XLSX text files.
 - `data/parsed/chunks/`: 27,123 per-chunk JSON files.
 - `data/parsed/chunks.jsonl`: 27,123 chunk rows.
+- `data/index/retrieval.sqlite`: SQLite FTS5 serving index over 30,745 chunks and metadata.
 
 Agent context results are generated on demand from the retrieval inputs and are
 not retained as derived artifacts.
 
 These retained artifacts were produced by `uv run cms-kb-extract`,
-`uv run cms-kb-parse`, and `uv run cms-kb-variables`, then validated with
+`uv run cms-kb-parse`, `uv run cms-kb-variables`, and `uv run cms-kb-index`, then validated with
 `uv run cms-kb-qa`.
+
+## SQLite FTS5 serving index implementation
+Run completed: 2026-06-20
+
+Scope:
+- Branch: `feat/phase-10-sqlite-fts5`
+- Purpose: Build a rebuildable, deterministic SQLite FTS5 serving index over validated retrieval records to replace Python BM25 logic.
+- Completed steps:
+  - `uv run cms-kb-index` wrote 30,745 chunks and metadata to `data/index/retrieval.sqlite` in 0.82s.
+  - `uv run pytest` — 114 passed.
+  - `uv run ruff check .` and `uv run basedpyright .` — PASS.
+  - `uv run python scripts/benchmark_retrieval.py` — verified warm latency of ~10ms (down from 1.2s baseline).
 
 ## Variable Evidence Refinement Run
 

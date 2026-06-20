@@ -283,6 +283,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("data/parsed/chunks.jsonl"),
   )
+  parser.add_argument(
+    "--database-path",
+    type=Path,
+    default=Path("data/index/retrieval.sqlite"),
+  )
   parser.add_argument("--json", action="store_true")
   return parser
 
@@ -296,6 +301,7 @@ def main(argv: list[str] | None = None) -> int:
       documents_metadata_path=args.documents_metadata,
       variables_metadata_path=args.variables_metadata,
       chunks_jsonl_path=args.chunks_jsonl,
+      database_path=args.database_path,
     ),
     sample_size=args.sample_size,
     seed=args.seed,

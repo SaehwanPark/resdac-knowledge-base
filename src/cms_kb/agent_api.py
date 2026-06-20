@@ -336,6 +336,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("manifests/archive_manifest.csv"),
   )
+  parser.add_argument(
+    "--database-path",
+    type=Path,
+    default=Path("data/index/retrieval.sqlite"),
+  )
   parser.add_argument("--json", action="store_true", help="Emit JSON output.")
   return parser
 
@@ -357,6 +362,7 @@ def main(argv: list[str] | None = None) -> int:
       documents_metadata_path=args.documents_metadata,
       variables_metadata_path=args.variables_metadata,
       chunks_jsonl_path=args.chunks_jsonl,
+      database_path=args.database_path,
     ),
     archive_manifest_path=args.archive_manifest,
     default_limit=args.limit,

@@ -16,3 +16,8 @@ wheels/
 # Harness scratch; deterministic markdown handoffs are retained.
 _workspace/*
 !_workspace/*.md
+
+# Search serving index
+data/index/
+*.sqlite
+*.sqlite.tmp

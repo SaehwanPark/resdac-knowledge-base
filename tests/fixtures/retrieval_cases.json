@@ -1,0 +1,26 @@
+[
+  {
+    "query": "BENE_ID",
+    "expected_ids": ["mbsf__var__bene-id", "medpar__var__bene-id"],
+    "min_recall_at_5": 0.5,
+    "description": "Exact underscore-bearing identifier match"
+  },
+  {
+    "query": "medicare advantage",
+    "expected_ids": [],
+    "min_recall_at_5": 0.0,
+    "description": "Conceptual multi-word phrase query"
+  },
+  {
+    "query": "dual eligibility",
+    "expected_ids": ["chunk-1"],
+    "min_recall_at_5": 0.5,
+    "description": "Text chunk match"
+  },
+  {
+    "query": "MBSF",
+    "expected_ids": ["mbsf"],
+    "min_recall_at_5": 1.0,
+    "description": "Acronym matching dataset name"
+  }
+]
