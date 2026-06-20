@@ -8,8 +8,10 @@ from cms_kb.parsing import ChunkMetadata
 from cms_kb.retrieval import (
   RetrievableRecord,
   RetrievalConfig,
+  build_index,
   load_retrievable_records,
   main,
+  main_index,
   run_retrieval,
   search_records,
 )
@@ -120,12 +122,15 @@ def _write_metadata_fixture(tmp_path: Path, include_variables: bool = True) -> R
     encoding="utf-8",
   )
 
-  return RetrievalConfig(
+  config = RetrievalConfig(
     datasets_metadata_path=datasets_csv,
     documents_metadata_path=documents_csv,
     variables_metadata_path=variables_csv,
     chunks_jsonl_path=chunks_jsonl,
+    database_path=tmp_path / "data" / "index" / "retrieval.sqlite",
   )
+  build_index(config)
+  return config
 
 
 def test_load_retrievable_records_uses_optional_inputs(tmp_path: Path) -> None:
@@ -149,6 +154,44 @@ def test_load_retrievable_records_allows_missing_optional_inputs(tmp_path: Path)
   records = load_retrievable_records(config)
 
   assert [record.record_type for record in records] == ["dataset", "document"]
+
+
+def test_build_index_creates_tables_and_inserts_records(tmp_path: Path) -> None:
+  config = _write_metadata_fixture(tmp_path)
+  config.database_path = tmp_path / "data" / "index" / "retrieval.sqlite"
+
+  build_index(config)
+
+  assert config.database_path.is_file()
+
+  import sqlite3
+  conn = sqlite3.connect(config.database_path)
+  try:
+    cursor = conn.cursor()
+    cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    tables = {row[0] for row in cursor.fetchall()}
+    assert "records" in tables
+    assert "records_fts" in tables
+
+    cursor.execute("SELECT COUNT(*) FROM records;")
+    records_count = cursor.fetchone()[0]
+    assert records_count == 4
+
+    cursor.execute("SELECT COUNT(*) FROM records_fts;")
+    fts_count = cursor.fetchone()[0]
+    assert fts_count == 4
+
+    cursor.execute("SELECT record_id, record_type, title, exact_terms FROM records ORDER BY record_id;")
+    rows = cursor.fetchall()
+    assert rows[0][0] == "chunk-1"
+    assert rows[0][1] == "chunk"
+    assert rows[0][2] == "chunk-1"
+
+    assert rows[1][0] == "mbsf"
+    assert rows[1][1] == "dataset"
+    assert json.loads(rows[1][3]) == ["mbsf", "Medicare Beneficiary Summary File"]
+  finally:
+    conn.close()
 
 
 def test_exact_variable_match_ranks_above_generic_chunk(tmp_path: Path) -> None:
@@ -217,6 +260,8 @@ def test_retrieval_cli_json_output(tmp_path: Path, capsys) -> None:
     str(config.variables_metadata_path),
     "--chunks-jsonl",
     str(config.chunks_jsonl_path),
+    "--database-path",
+    str(config.database_path),
     "--json",
   ])
 
@@ -243,6 +288,8 @@ def test_retrieval_cli_failure_for_missing_required_input(
     str(config.variables_metadata_path),
     "--chunks-jsonl",
     str(config.chunks_jsonl_path),
+    "--database-path",
+    str(config.database_path),
   ])
 
   captured = capsys.readouterr()
@@ -274,8 +321,31 @@ def test_retrieval_cli_failure_for_empty_query(tmp_path: Path, capsys) -> None:
     str(config.datasets_metadata_path),
     "--documents-metadata",
     str(config.documents_metadata_path),
+    "--database-path",
+    str(config.database_path),
   ])
 
   captured = capsys.readouterr()
   assert exit_code == 1
   assert "query must not be empty" in captured.err
+
+
+def test_main_index_cli(tmp_path: Path) -> None:
+  config = _write_metadata_fixture(tmp_path)
+  db_path = tmp_path / "data" / "index" / "cli_built.sqlite"
+
+  exit_code = main_index([
+    "--datasets-metadata",
+    str(config.datasets_metadata_path),
+    "--documents-metadata",
+    str(config.documents_metadata_path),
+    "--variables-metadata",
+    str(config.variables_metadata_path),
+    "--chunks-jsonl",
+    str(config.chunks_jsonl_path),
+    "--database-path",
+    str(db_path),
+  ])
+
+  assert exit_code == 0
+  assert db_path.is_file()

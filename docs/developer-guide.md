@@ -63,6 +63,7 @@ The package defines several command-line tools in `pyproject.toml`. Run all comm
 | `cms-kb-qa` | `cms_kb.qa` | `_workspace/06_qa_review.md` | Audits checksums, URLs, and references |
 | `cms-kb-variables` | `cms_kb.variables` | `data/metadata/variables.csv` | Extracts variable definitions from chunks |
 | `cms-kb-search` | `cms_kb.retrieval` | stdout (JSON) | Direct local lexical search CLI |
+| `cms-kb-index` | `cms_kb.retrieval` | `data/index/retrieval.sqlite` | Compiles the SQLite FTS5 serving index |
 | `cms-kb-agent-context` | `cms_kb.agent_api` | stdout (JSON) | Retrieval context CLI with citation mapping |
 | `cms-kb-mcp` | `cms_kb.mcp` | stdio stream | Model Context Protocol (MCP) server |
 | `cms-kb-progress` | `cms_kb.progress` | stdout | Summarize tail of inventory/archive progress JSONL |
@@ -126,6 +127,14 @@ Runs reference and checksum checks to verify that every record contains valid ci
 uv run cms-kb-qa
 ```
 *Creates: `_workspace/06_qa_review.md`.*
+
+### Step 6: SQLite Index Compilation
+Compiles the final SQLite FTS5 serving index from the generated metadata catalogs and parsed text chunks:
+
+```bash
+uv run cms-kb-index
+```
+*Creates: `data/index/retrieval.sqlite`.*
 
 ---
 

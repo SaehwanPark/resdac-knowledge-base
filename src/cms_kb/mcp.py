@@ -32,7 +32,7 @@ from .retrieval import (
   RetrievableRecord,
   RetrievalConfig,
   load_retrievable_records,
-  search_records,
+  run_retrieval,
 )
 
 
@@ -100,9 +100,7 @@ def search_datasets(query: str, limit: int | None = None) -> str:
     limit: The maximum number of results to return.
   """
   resolved_limit = limit if limit is not None else state.default_limit
-  records = state.get_records()
-  filtered = [r for r in records if r.record_type == "dataset"]
-  results = search_records(query, filtered, resolved_limit)
+  results = run_retrieval(state.config, query, resolved_limit, record_type="dataset")
   return json.dumps([res.model_dump() for res in results], indent=2)
 
 
@@ -115,9 +113,7 @@ def search_documents(query: str, limit: int | None = None) -> str:
     limit: The maximum number of results to return.
   """
   resolved_limit = limit if limit is not None else state.default_limit
-  records = state.get_records()
-  filtered = [r for r in records if r.record_type == "document"]
-  results = search_records(query, filtered, resolved_limit)
+  results = run_retrieval(state.config, query, resolved_limit, record_type="document")
   return json.dumps([res.model_dump() for res in results], indent=2)
 
 
@@ -130,9 +126,7 @@ def search_variables(query: str, limit: int | None = None) -> str:
     limit: The maximum number of results to return.
   """
   resolved_limit = limit if limit is not None else state.default_limit
-  records = state.get_records()
-  filtered = [r for r in records if r.record_type == "variable"]
-  results = search_records(query, filtered, resolved_limit)
+  results = run_retrieval(state.config, query, resolved_limit, record_type="variable")
   return json.dumps([res.model_dump() for res in results], indent=2)
 
 
@@ -145,9 +139,7 @@ def search_chunks(query: str, limit: int | None = None) -> str:
     limit: The maximum number of results to return.
   """
   resolved_limit = limit if limit is not None else state.default_limit
-  records = state.get_records()
-  filtered = [r for r in records if r.record_type == "chunk"]
-  results = search_records(query, filtered, resolved_limit)
+  results = run_retrieval(state.config, query, resolved_limit, record_type="chunk")
   return json.dumps([res.model_dump() for res in results], indent=2)
 
 
@@ -160,8 +152,7 @@ def get_agent_context(query: str, limit: int | None = None) -> str:
     limit: The maximum number of results to return.
   """
   resolved_limit = limit if limit is not None else state.default_limit
-  records = state.get_records()
-  results = search_records(query, records, resolved_limit)
+  results = run_retrieval(state.config, query, resolved_limit)
   archived_documents_by_url = state.get_archived_documents_by_url()
   hits = [
     context_hit_from_search_result(res, archived_documents_by_url)
@@ -205,6 +196,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("manifests/archive_manifest.csv"),
   )
+  parser.add_argument(
+    "--database-path",
+    type=Path,
+    default=Path("data/index/retrieval.sqlite"),
+  )
   parser.add_argument("--limit", type=int, default=5)
   return parser
 
@@ -234,6 +230,7 @@ def main(argv: list[str] | None = None) -> int:
     documents_metadata_path=args.documents_metadata,
     variables_metadata_path=args.variables_metadata,
     chunks_jsonl_path=args.chunks_jsonl,
+    database_path=args.database_path,
   )
   state.archive_manifest_path = args.archive_manifest
   state.default_limit = args.limit

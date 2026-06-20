@@ -11,7 +11,7 @@ from cms_kb.agent_api import (
   main,
 )
 from cms_kb.parsing import ChunkMetadata
-from cms_kb.retrieval import RetrievalConfig, SearchResult
+from cms_kb.retrieval import RetrievalConfig, SearchResult, build_index
 
 
 VARIABLE_URL = "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
@@ -133,12 +133,15 @@ def _write_metadata_fixture(tmp_path: Path, include_variables: bool = True) -> R
     encoding="utf-8",
   )
 
-  return RetrievalConfig(
+  config = RetrievalConfig(
     datasets_metadata_path=datasets_csv,
     documents_metadata_path=documents_csv,
     variables_metadata_path=variables_csv,
     chunks_jsonl_path=chunks_jsonl,
+    database_path=tmp_path / "data" / "index" / "retrieval.sqlite",
   )
+  build_index(config)
+  return config
 
 
 def _write_archive_manifest_fixture(tmp_path: Path) -> Path:
@@ -276,6 +279,8 @@ def test_agent_context_cli_outputs_json_with_nested_citations(
     str(retrieval_config.chunks_jsonl_path),
     "--archive-manifest",
     str(manifest_path),
+    "--database-path",
+    str(retrieval_config.database_path),
     "--json",
   ])
 
@@ -303,6 +308,8 @@ def test_agent_context_cli_failure_for_empty_query(tmp_path: Path, capsys) -> No
     str(retrieval_config.datasets_metadata_path),
     "--documents-metadata",
     str(retrieval_config.documents_metadata_path),
+    "--database-path",
+    str(retrieval_config.database_path),
   ])
 
   captured = capsys.readouterr()
@@ -326,6 +333,8 @@ def test_agent_context_cli_failure_for_missing_required_input(
     str(retrieval_config.variables_metadata_path),
     "--chunks-jsonl",
     str(retrieval_config.chunks_jsonl_path),
+    "--database-path",
+    str(retrieval_config.database_path),
   ])
 
   captured = capsys.readouterr()

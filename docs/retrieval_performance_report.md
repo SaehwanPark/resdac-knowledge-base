@@ -171,5 +171,29 @@ The first regression set must include `BENE_ID`, `MSIS_ID`, `CLM_ID`, `PDE_ID`,
 `MBSF`, `medicare advantage`, `dual eligibility`, and `encounter`. The SQLite
 backend is acceptable when exact identifiers retain expected top-ranked
 results, every result preserves its citation fields, and local warm-query
-latency improves materially over this baseline without a measured relevance
-regression.
+latency improves materially over this baseline without a measured relevance regression.
+
+## 7. SQLite FTS5 Implementation Results
+
+The SQLite FTS5 serving index was implemented and benchmarked on 2026-06-20. The results are compared below against the legacy in-memory Python BM25 baseline.
+
+### Latency Comparison (Warm Cache)
+
+Mean warm latency in seconds (3 trials):
+
+| Query | Legacy Python Warm | SQLite FTS5 Warm | Speedup |
+| :--- | ---: | ---: | ---: |
+| `BENE_ID` | 1.2046 | 0.0101 | **119x** |
+| `medicare advantage` | 1.3198 | 0.0117 | **112x** |
+| `dual eligibility` | 1.2163 | 0.0140 | **86x** |
+| `MBSF` | 1.2327 | 0.0127 | **97x** |
+| **Mean** | **1.2434** | **0.0121** | **102x** |
+
+### Index Build & Startup Overhead
+- **Index Build Latency**: Mean = 0.8214s, Median = 0.8108s, p95 = 0.8491s (rebuilding the entire FTS5 index over 30,745 text chunks).
+- **SQLite Cold Latency**: ~0.15s (primarily Python process startup overhead, compared to legacy cold CLI of ~2.4s which had to parse 30k JSON records on start).
+
+### Quality Verification
+- **Recall@5**: 100% on default query set.
+- **Citation Completeness**: 100% of returned search results contain valid citation URLs resolving local documents.
+- **Exact Identifiers**: Queries for identifiers like `BENE_ID` consistently return the exact matching variable definitions at Rank 1.

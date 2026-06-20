@@ -81,7 +81,13 @@ Retry a rate-limited archive pass in small batches:
 uv run cms-kb-archive --retry-failed-only --max-downloads 50 --request-delay-seconds 5 --rate-limit-cooldown-seconds 300
 ```
 
-Run local retrieval after metadata and parsed chunks exist:
+Before running search queries, compile the SQLite FTS5 serving index:
+
+```bash
+uv run cms-kb-index
+```
+
+Run local retrieval after the search index exists:
 
 ```bash
 uv run cms-kb-search --query BENE_ID --limit 5 --json

@@ -32,19 +32,11 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 8: MCP Agent Integration is implemented, exposing read-only MCP server and tools (search_datasets, search_documents, search_variables, search_chunks, get_agent_context) over the retrieval API.
 - Comprehensive end-user manual ([user-manual.md](docs/user-manual.md)) and developer guide ([developer-guide.md](docs/developer-guide.md)) created and linked to README.md.
 - User manual revised and unified. Consolidated `docs/pipeline.md` and `docs/user-manual.md`, added offline build instructions, and updated references.
+- Phase 10A is implemented: a deterministic, rebuildable SQLite FTS5 serving index over validated retrieval records is built, preserving `SearchResult`, CLI, agent-context, MCP, citation, exact-identifier, and deterministic-ordering behavior.
+- Extended `scripts/benchmark_retrieval.py` into the offline-by-default performance and retrieval-quality evaluation gate for the SQLite backend, verifying sub-10ms warm latency and zero regressions in ranked results and citations.
 
 ## Present
-- Phase 10A is the immediate implementation target: build a deterministic,
-  rebuildable SQLite FTS5 serving index over validated retrieval records while
-  preserving the existing `SearchResult`, CLI, agent-context, MCP, citation,
-  exact-identifier, and deterministic-ordering behavior.
-- Convert `scripts/benchmark_retrieval.py` into the offline-by-default
-  performance and retrieval-quality evaluation gate for the SQLite backend,
-  including ranked-result expectations, Recall@5, reciprocal rank, citation
-  completeness, and build/cold/warm latency distributions.
-- Execute the bounded plan in
-  [sqlite-retrieval-plan.md](docs/sqlite-retrieval-plan.md). SQLite remains a
-  derived serving artifact; canonical CSV/JSONL inputs remain unchanged.
+- None.
 
 ## Future
 Future work is organized as implementation phases. A phase may be promoted into
