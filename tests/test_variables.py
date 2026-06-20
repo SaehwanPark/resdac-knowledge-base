@@ -311,6 +311,15 @@ def test_run_variable_extraction_writes_canonical_variable_graph(
     edge_rows = list(csv.DictReader(handle))
   assert len(edge_rows) == 2
 
+  with (tmp_path / "data" / "metadata" / "variables.csv").open(
+    newline="", encoding="utf-8"
+  ) as handle:
+    variable_rows = list(csv.DictReader(handle))
+  assert len(variable_rows) == 1
+  assert variable_rows[0]["source_url"] == "https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-id"
+  assert variable_rows[0]["source_document"] == str(variable_page)
+
+
 
 def test_run_variable_extraction_reports_missing_source_document(
   tmp_path: Path,
