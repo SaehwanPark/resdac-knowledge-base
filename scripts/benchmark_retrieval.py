@@ -248,6 +248,7 @@ def main():
   parser.add_argument("--database-path", type=Path, default=Path("data/index/retrieval.sqlite"), help="Database path.")
   parser.add_argument("--fixture", type=Path, default=None, help="Optional evaluation fixture JSON path.")
   parser.add_argument("--online", action="store_true", help="Enable online Internet and Grep benchmarks.")
+  parser.add_argument("--hybrid", action="store_true", help="Enable hybrid search (semantic reranking) in benchmarks.")
   args = parser.parse_args()
 
   print("Starting ResDAC retrieval benchmarking...", file=sys.stderr)
@@ -265,7 +266,7 @@ def main():
   build_latencies = []
   for _ in range(args.trials):
     start_build = time.perf_counter()
-    build_index(config)
+    build_index(config, build_embeddings=args.hybrid)
     build_latencies.append(time.perf_counter() - start_build)
   build_stats = compute_stats(build_latencies)
   print(f"  Build index time: mean={build_stats['mean']:.4f}s, median={build_stats['median']:.4f}s, p95={build_stats['p95']:.4f}s", file=sys.stderr)
@@ -292,6 +293,7 @@ def main():
       "kb_records_count": len(records),
       "kb_load_time_seconds": load_time,
       "index_build_stats_seconds": build_stats,
+      "hybrid_enabled": args.hybrid,
     },
     "queries": {}
   }
@@ -313,6 +315,8 @@ def main():
 
     # SQLite Cold (SQLite CLI Subprocess)
     cmd_cold_sqlite = ["uv", "run", "cms-kb-search", "--query", query, "--database-path", str(args.database_path), "--limit", "5", "--json"]
+    if args.hybrid:
+      cmd_cold_sqlite.append("--hybrid")
     sqlite_cold_latencies = []
     for _ in range(args.trials):
       start = time.perf_counter()
@@ -332,12 +336,12 @@ def main():
     sqlite_warm_latencies = []
     for _ in range(args.trials):
       start = time.perf_counter()
-      _ = search_records_sqlite(query, args.database_path, limit=5)
+      _ = search_records_sqlite(query, args.database_path, limit=5, hybrid=args.hybrid)
       sqlite_warm_latencies.append(time.perf_counter() - start)
     sqlite_warm_stats = compute_stats(sqlite_warm_latencies)
 
     # Get results of Warm SQLite for quality metrics
-    warm_sqlite_results = search_records_sqlite(query, args.database_path, limit=5)
+    warm_sqlite_results = search_records_sqlite(query, args.database_path, limit=5, hybrid=args.hybrid)
     quality_metrics = compute_quality(warm_sqlite_results, expected)
 
     # Optional online comparisons

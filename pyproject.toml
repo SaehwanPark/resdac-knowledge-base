@@ -11,6 +11,12 @@ dependencies = [
   "trafilatura>=2.1.0",
 ]
 
+[project.optional-dependencies]
+semantic = [
+  "sentence-transformers>=3.0.0",
+  "numpy>=1.24",
+]
+
 [project.scripts]
 cms-kb = "cms_kb.__main__:main"
 cms-kb-archive = "cms_kb.archive:main"

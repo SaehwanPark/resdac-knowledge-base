@@ -40,6 +40,8 @@ The current Python implementation includes:
 - Agent context variable citations resolve archived local variable-detail pages
   from `manifests/archive_manifest.csv` when available.
 - Read-only Model Context Protocol (MCP) server for integration with AI agents.
+- Optional Hybrid Retrieval and Ranking (Phase 10B-C) via candidate semantic reranking from pre-computed SQLite embeddings (using local `SentenceTransformer` with fallback to lexical FTS5 search).
+
 
 `SPEC.md` tracks implementation lifecycle state with mutually exclusive
 `Past`, `Present`, and `Future` sections.
@@ -96,6 +98,19 @@ not retained as derived artifacts.
 These retained artifacts were produced by `uv run cms-kb-extract`,
 `uv run cms-kb-parse`, `uv run cms-kb-variables`, and `uv run cms-kb-index`, then validated with
 `uv run cms-kb-qa`.
+
+## SQLite Hybrid Retrieval and Ranking implementation
+Run completed: 2026-06-20
+
+Scope:
+- Branch: `feat/phase-10-hybrid-retrieval`
+- Purpose: Implement optional local semantic reranking on candidates fetched by SQLite FTS5.
+- Completed steps:
+  - `uv run cms-kb-index --build-embeddings` wrote 30,745 chunks and pre-computed 384-dimensional embeddings using `all-MiniLM-L6-v2` to `record_embeddings` table in `data/index/retrieval.sqlite` in ~385s.
+  - `uv run pytest` — 118 passed (including new hybrid unit tests).
+  - `uv run ruff check .` and `uv run basedpyright .` — PASS.
+  - `uv run python scripts/benchmark_retrieval.py --hybrid` — verified hybrid query latency and recall scores.
+
 
 ## SQLite FTS5 serving index implementation
 Run completed: 2026-06-20

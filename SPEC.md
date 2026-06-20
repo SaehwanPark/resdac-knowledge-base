@@ -34,6 +34,8 @@ checked-in corpus coverage, and retained generated data artifacts.
 - User manual revised and unified. Consolidated `docs/pipeline.md` and `docs/user-manual.md`, added offline build instructions, and updated references.
 - Phase 10A is implemented: a deterministic, rebuildable SQLite FTS5 serving index over validated retrieval records is built, preserving `SearchResult`, CLI, agent-context, MCP, citation, exact-identifier, and deterministic-ordering behavior.
 - Extended `scripts/benchmark_retrieval.py` into the offline-by-default performance and retrieval-quality evaluation gate for the SQLite backend, verifying sub-10ms warm latency and zero regressions in ranked results and citations.
+- Phase 10B-C is implemented: optional hybrid retrieval and ranking is added via candidate semantic reranking from pre-computed SQLite embeddings. The pipeline preserves deterministic citation outputs, exact identifier query reliability, and handles library fallbacks gracefully.
+
 
 ## Present
 - None.
@@ -60,23 +62,7 @@ Verification:
 - Source expansion does not weaken existing ResDAC inventory, archive, or QA
   behavior.
 
-### Phase 10B-C: Optional Hybrid Retrieval And Ranking
-Purpose: consider retrieval quality improvements beyond the SQLite lexical
-index only after Phase 10A is implemented and evaluated, while keeping exact
-matching and citations as first-class behavior.
 
-Subphases:
-- 10B: Add optional semantic retrieval or reranking behind explicit
-  configuration.
-- 10C: Preserve deterministic citation output and make ranking changes
-  measurable against evaluation questions.
-
-Verification:
-- Retrieval results still include source citations for every returned record.
-- Exact identifier queries such as `BENE_ID`, `MSIS_ID`, `CLM_ID`, and `PDE_ID`
-  remain reliable.
-- Optional semantic or reranking behavior can be disabled for deterministic
-  local runs.
 
 ### Phase 11: Evaluation Suite
 Purpose: measure retrieval and agent-context quality with gold-standard CMS
