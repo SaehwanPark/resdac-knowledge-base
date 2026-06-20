@@ -26,7 +26,7 @@ import sqlite3
 import sys
 from collections import Counter
 from pathlib import Path
-from typing import Literal
+from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
@@ -45,6 +45,10 @@ class RetrievalConfig(BaseModel):
   variables_metadata_path: Path = Path("data/metadata/variables.csv")
   chunks_jsonl_path: Path = Path("data/parsed/chunks.jsonl")
   database_path: Path = Path("data/index/retrieval.sqlite")
+
+  hybrid_search_enabled: bool = False
+  semantic_model_name: str = "all-MiniLM-L6-v2"
+  semantic_weight: float = 0.5
 
 
 
@@ -437,15 +441,37 @@ def search_records(
   )[:limit]
 
 
+
+
+_MODEL_CACHE: dict[str, Any] = {}
+
+
+def _get_embedding_model(model_name: str) -> Any:
+  if model_name not in _MODEL_CACHE:
+    try:
+      from sentence_transformers import SentenceTransformer
+    except ImportError as exc:
+      raise ImportError(
+        "sentence-transformers is required for semantic search. "
+        "Please run 'uv sync --extra semantic' to install it."
+      ) from exc
+    _MODEL_CACHE[model_name] = SentenceTransformer(model_name)
+  return _MODEL_CACHE[model_name]
+
+
 def search_records_sqlite(
   query: str,
   db_path: Path,
   limit: int = 10,
   record_type: RecordType | None = None,
+  hybrid: bool = False,
+  semantic_weight: float = 0.5,
+  model_name: str = "all-MiniLM-L6-v2",
 ) -> list[SearchResult]:
   """Searches across the SQLite FTS5 serving index.
 
   Calculates BM25 scores and exact boosts on candidates fetched from SQLite.
+  Optionally combines with semantic cosine similarity using pre-computed embeddings.
   """
   normalized_query = query.strip().lower()
   if not normalized_query:
@@ -469,6 +495,15 @@ def search_records_sqlite(
   conn = sqlite3.connect(db_path)
   try:
     cursor = conn.cursor()
+    # Check if record_embeddings table exists
+    has_embeddings = False
+    if hybrid:
+      cursor.execute(
+        "SELECT count(*) FROM sqlite_master WHERE type='table' AND name='record_embeddings';"
+      )
+      if cursor.fetchone()[0] > 0:
+        has_embeddings = True
+
     # Fetch a generous candidate pool to rerank in Python to apply exact boosts
     candidate_limit = max(500, limit * 5)
     if record_type:
@@ -516,8 +551,42 @@ def search_records_sqlite(
         (match_expr, candidate_limit),
       )
     rows = cursor.fetchall()
+
+    embeddings_map = {}
+    if has_embeddings and rows:
+      candidate_ids = [row[0] for row in rows]
+      placeholders = ",".join("?" for _ in candidate_ids)
+      cursor.execute(
+        f"SELECT record_id, embedding FROM record_embeddings WHERE record_id IN ({placeholders})",
+        candidate_ids,
+      )
+      for rec_id, emb_blob in cursor.fetchall():
+        embeddings_map[rec_id] = emb_blob
   finally:
     conn.close()
+
+  # If hybrid search is enabled and table exists, initialize model and compute query embedding
+  query_emb = None
+  if has_embeddings and rows:
+    try:
+      import numpy as np
+      model = _get_embedding_model(model_name)
+      query_emb = model.encode(query, convert_to_numpy=True)
+      query_norm = np.linalg.norm(query_emb)
+      if query_norm > 0:
+        query_emb = query_emb / query_norm
+    except Exception as exc:
+      print(f"Warning: Semantic search failed, falling back to lexical: {exc}", file=sys.stderr)
+      has_embeddings = False
+
+  # Normalize FTS5 scores across candidates if blending is active
+  if has_embeddings and rows:
+    fts_scores = [row[9] for row in rows]
+    max_fts = max(fts_scores) if fts_scores else 0.0
+    min_fts = min(fts_scores) if fts_scores else 0.0
+    fts_range = max_fts - min_fts
+  else:
+    max_fts, min_fts, fts_range = 0.0, 0.0, 0.0
 
   results = []
   for (
@@ -534,6 +603,27 @@ def search_records_sqlite(
   ) in rows:
     exact_terms = json.loads(exact_terms_json)
     
+    # Calculate cosine similarity if embeddings are present
+    cosine_sim = 0.0
+    if has_embeddings and query_emb is not None and record_id in embeddings_map:
+      try:
+        import numpy as np
+        emb_bytes = embeddings_map[record_id]
+        emb = np.frombuffer(emb_bytes, dtype=np.float32)
+        emb_norm = np.linalg.norm(emb)
+        if emb_norm > 0:
+          emb = emb / emb_norm
+          cosine_sim = float(np.dot(query_emb, emb))
+      except Exception:
+        pass
+
+    # Blend scores
+    if has_embeddings:
+      norm_fts = (fts_score - min_fts) / fts_range if fts_range > 0.0 else 1.0
+      blend_score = (1.0 - semantic_weight) * norm_fts + semantic_weight * cosine_sim
+    else:
+      blend_score = fts_score
+
     # Calculate exact-match boosts
     boost = 0.0
     exact_values = [val.lower() for val in exact_terms if val]
@@ -545,7 +635,7 @@ def search_records_sqlite(
     if normalized_query and normalized_query in text.lower():
       boost += 2.0
       
-    final_score = fts_score + boost
+    final_score = blend_score + boost
 
     # Cast row_record_type to RecordType since SQLite returns TEXT
     res_type: RecordType = row_record_type # type: ignore
@@ -592,7 +682,15 @@ def run_retrieval(
   if not config.documents_metadata_path.is_file():
     raise FileNotFoundError(f"Documents metadata file not found at {config.documents_metadata_path}")
 
-  return search_records_sqlite(query, config.database_path, limit, record_type)
+  return search_records_sqlite(
+    query,
+    config.database_path,
+    limit,
+    record_type,
+    hybrid=config.hybrid_search_enabled,
+    semantic_weight=config.semantic_weight,
+    model_name=config.semantic_model_name,
+  )
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
@@ -628,6 +726,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
   )
   parser.add_argument("--legacy", action="store_true", help="Force the legacy in-memory search.")
   parser.add_argument("--json", action="store_true")
+  parser.add_argument("--hybrid", action="store_true", help="Enable hybrid search (semantic reranking).")
+  parser.add_argument("--semantic-weight", type=float, default=0.5, help="Semantic blend weight (0 to 1).")
+  parser.add_argument("--semantic-model-name", type=str, default="all-MiniLM-L6-v2", help="SentenceTransformer model name.")
   return parser
 
 
@@ -640,6 +741,9 @@ def main(argv: list[str] | None = None) -> int:
     variables_metadata_path=args.variables_metadata,
     chunks_jsonl_path=args.chunks_jsonl,
     database_path=args.database_path,
+    hybrid_search_enabled=args.hybrid,
+    semantic_weight=args.semantic_weight,
+    semantic_model_name=args.semantic_model_name,
   )
 
   try:
@@ -665,7 +769,7 @@ def main(argv: list[str] | None = None) -> int:
   return 0
 
 
-def build_index(config: RetrievalConfig) -> None:
+def build_index(config: RetrievalConfig, build_embeddings: bool = False) -> None:
   """Builds a SQLite FTS5 serving index from canonical metadata and chunks."""
   records = load_retrievable_records(config)
   db_dir = config.database_path.parent
@@ -701,6 +805,14 @@ def build_index(config: RetrievalConfig) -> None:
       );
     """)
 
+    if build_embeddings:
+      conn.execute("""
+        CREATE TABLE record_embeddings (
+          record_id TEXT PRIMARY KEY,
+          embedding BLOB NOT NULL
+        );
+      """)
+
     with conn:
       for r in records:
         conn.execute(
@@ -726,6 +838,30 @@ def build_index(config: RetrievalConfig) -> None:
             r.text,
           ),
         )
+
+      if build_embeddings:
+        try:
+          from sentence_transformers import SentenceTransformer
+          import numpy as np
+        except ImportError as exc:
+          raise ImportError(
+            "sentence-transformers and numpy are required for building embeddings. "
+            "Please install them or run with semantic extras."
+          ) from exc
+
+        print(f"Loading embedding model '{config.semantic_model_name}'...")
+        model = SentenceTransformer(config.semantic_model_name)
+        texts = [r.text for r in records]
+        print(f"Encoding {len(texts)} record embeddings...")
+        embeddings = model.encode(texts, show_progress_bar=True, batch_size=128)
+        
+        for r, emb in zip(records, embeddings):
+          emb_arr = np.asarray(emb, dtype=np.float32)
+          emb_bytes = emb_arr.tobytes()
+          conn.execute(
+            "INSERT OR REPLACE INTO record_embeddings (record_id, embedding) VALUES (?, ?)",
+            (r.record_id, sqlite3.Binary(emb_bytes)),
+          )
   except Exception:
     if temp_db_path.exists():
       temp_db_path.unlink()
@@ -766,6 +902,17 @@ def main_index(argv: list[str] | None = None) -> int:
     type=Path,
     default=Path("data/index/retrieval.sqlite"),
   )
+  parser.add_argument(
+    "--build-embeddings",
+    action="store_true",
+    help="Build semantic embeddings for hybrid search.",
+  )
+  parser.add_argument(
+    "--semantic-model-name",
+    type=str,
+    default="all-MiniLM-L6-v2",
+    help="Semantic model name to build embeddings with.",
+  )
   args = parser.parse_args(argv)
   config = RetrievalConfig(
     datasets_metadata_path=args.datasets_metadata,
@@ -773,11 +920,12 @@ def main_index(argv: list[str] | None = None) -> int:
     variables_metadata_path=args.variables_metadata,
     chunks_jsonl_path=args.chunks_jsonl,
     database_path=args.database_path,
+    semantic_model_name=args.semantic_model_name,
   )
 
   try:
     print(f"Building search index at {config.database_path}...")
-    build_index(config)
+    build_index(config, build_embeddings=args.build_embeddings)
     print("Search index built successfully.")
     return 0
   except Exception as exc:
