@@ -4,7 +4,6 @@ import sys
 from pathlib import Path
 from unittest.mock import MagicMock
 import numpy as np
-import pytest
 
 # Mock sentence_transformers module before importing retrieval module
 class MockSentenceTransformer:
@@ -36,12 +35,11 @@ mock_sentence_transformers = MagicMock()
 mock_sentence_transformers.SentenceTransformer = MockSentenceTransformer
 sys.modules["sentence_transformers"] = mock_sentence_transformers
 
-from cms_kb.retrieval import (
-  RetrievalConfig,
+from cms_kb.retrieval import (  # noqa: E402
   build_index,
   run_retrieval,
 )
-from tests.test_retrieval import _write_metadata_fixture
+from tests.test_retrieval import _write_metadata_fixture  # noqa: E402
 
 
 def test_build_index_with_embeddings(tmp_path: Path) -> None:

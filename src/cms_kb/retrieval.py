@@ -473,6 +473,11 @@ def search_records_sqlite(
   Calculates BM25 scores and exact boosts on candidates fetched from SQLite.
   Optionally combines with semantic cosine similarity using pre-computed embeddings.
   """
+  try:
+    import numpy as np
+  except ImportError:
+    np = None
+
   normalized_query = query.strip().lower()
   if not normalized_query:
     raise ValueError("query must not be empty")
@@ -555,13 +560,17 @@ def search_records_sqlite(
     embeddings_map = {}
     if has_embeddings and rows:
       candidate_ids = [row[0] for row in rows]
-      placeholders = ",".join("?" for _ in candidate_ids)
-      cursor.execute(
-        f"SELECT record_id, embedding FROM record_embeddings WHERE record_id IN ({placeholders})",
-        candidate_ids,
-      )
-      for rec_id, emb_blob in cursor.fetchall():
-        embeddings_map[rec_id] = emb_blob
+      # Query in chunks to avoid SQLite's parameter limit (default 999 on older versions)
+      chunk_size = 500
+      for i in range(0, len(candidate_ids), chunk_size):
+        chunk = candidate_ids[i : i + chunk_size]
+        placeholders = ",".join("?" for _ in chunk)
+        cursor.execute(
+          f"SELECT record_id, embedding FROM record_embeddings WHERE record_id IN ({placeholders})",
+          chunk,
+        )
+        for rec_id, emb_blob in cursor.fetchall():
+          embeddings_map[rec_id] = emb_blob
   finally:
     conn.close()
 
@@ -569,12 +578,28 @@ def search_records_sqlite(
   query_emb = None
   if has_embeddings and rows:
     try:
-      import numpy as np
+      if np is None:
+        raise ImportError("numpy is not installed")
       model = _get_embedding_model(model_name)
       query_emb = model.encode(query, convert_to_numpy=True)
       query_norm = np.linalg.norm(query_emb)
       if query_norm > 0:
         query_emb = query_emb / query_norm
+
+      # Validate dimension mismatch and non-empty mapping
+      if not embeddings_map:
+        has_embeddings = False
+      else:
+        assert np is not None
+        first_emb_bytes = next(iter(embeddings_map.values()))
+        first_emb = np.frombuffer(first_emb_bytes, dtype=np.float32)
+        if len(first_emb) != len(query_emb):
+          print(
+            f"Warning: Embedding dimensions mismatch ({len(first_emb)} vs {len(query_emb)}). "
+            "Falling back to lexical search.",
+            file=sys.stderr,
+          )
+          has_embeddings = False
     except Exception as exc:
       print(f"Warning: Semantic search failed, falling back to lexical: {exc}", file=sys.stderr)
       has_embeddings = False
@@ -607,7 +632,7 @@ def search_records_sqlite(
     cosine_sim = 0.0
     if has_embeddings and query_emb is not None and record_id in embeddings_map:
       try:
-        import numpy as np
+        assert np is not None
         emb_bytes = embeddings_map[record_id]
         emb = np.frombuffer(emb_bytes, dtype=np.float32)
         emb_norm = np.linalg.norm(emb)
@@ -779,6 +804,7 @@ def build_index(config: RetrievalConfig, build_embeddings: bool = False) -> None
     temp_db_path.unlink()
 
   conn = sqlite3.connect(temp_db_path)
+  success = False
   try:
     conn.execute("PRAGMA foreign_keys = ON;")
     # Create records table
@@ -853,7 +879,7 @@ def build_index(config: RetrievalConfig, build_embeddings: bool = False) -> None
         model = SentenceTransformer(config.semantic_model_name)
         texts = [r.text for r in records]
         print(f"Encoding {len(texts)} record embeddings...")
-        embeddings = model.encode(texts, show_progress_bar=True, batch_size=128)
+        embeddings = model.encode(texts, show_progress_bar=True, batch_size=128, normalize_embeddings=True)
         
         for r, emb in zip(records, embeddings):
           emb_arr = np.asarray(emb, dtype=np.float32)
@@ -862,12 +888,17 @@ def build_index(config: RetrievalConfig, build_embeddings: bool = False) -> None
             "INSERT OR REPLACE INTO record_embeddings (record_id, embedding) VALUES (?, ?)",
             (r.record_id, sqlite3.Binary(emb_bytes)),
           )
-  except Exception:
-    if temp_db_path.exists():
-      temp_db_path.unlink()
-    raise
+    success = True
   finally:
     conn.close()
+    if not success and temp_db_path.exists():
+      try:
+        temp_db_path.unlink()
+      except Exception as cleanup_exc:
+        print(
+          f"Warning: Failed to clean up temporary database {temp_db_path}: {cleanup_exc}",
+          file=sys.stderr,
+        )
 
   temp_db_path.replace(config.database_path)
 
