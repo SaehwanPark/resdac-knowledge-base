@@ -306,7 +306,7 @@ def _field_boost(query: str, query_tokens: list[str], record: RetrievableRecord)
   if query in exact_values:
     # Large boost for exact query match on key identifiers
     boost += 8.0
-  for token in query_tokens:
+  for token in set(query_tokens):
     if token in exact_values:
       # Modest boost for query sub-tokens matching identifiers
       boost += 4.0
@@ -453,6 +453,9 @@ def search_records_sqlite(
   if limit <= 0:
     raise ValueError("limit must be greater than 0")
 
+  # Clamp limit to prevent extreme memory use
+  limit = min(limit, 1000)
+
   query_tokens = _tokens(normalized_query)
   if not query_tokens:
     raise ValueError("query must contain at least one searchable token")
@@ -485,6 +488,7 @@ def search_records_sqlite(
         FROM records r
         JOIN records_fts fts ON r.record_id = fts.record_id
         WHERE records_fts MATCH ? AND r.record_type = ?
+        ORDER BY fts_score DESC
         LIMIT ?
         """,
         (match_expr, record_type, candidate_limit),
@@ -506,6 +510,7 @@ def search_records_sqlite(
         FROM records r
         JOIN records_fts fts ON r.record_id = fts.record_id
         WHERE records_fts MATCH ?
+        ORDER BY fts_score DESC
         LIMIT ?
         """,
         (match_expr, candidate_limit),
@@ -534,7 +539,7 @@ def search_records_sqlite(
     exact_values = [val.lower() for val in exact_terms if val]
     if normalized_query in exact_values:
       boost += 8.0
-    for token in query_tokens:
+    for token in set(query_tokens):
       if token in exact_values:
         boost += 4.0
     if normalized_query and normalized_query in text.lower():
@@ -621,6 +626,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
     type=Path,
     default=Path("data/index/retrieval.sqlite"),
   )
+  parser.add_argument("--legacy", action="store_true", help="Force the legacy in-memory search.")
   parser.add_argument("--json", action="store_true")
   return parser
 
@@ -637,7 +643,11 @@ def main(argv: list[str] | None = None) -> int:
   )
 
   try:
-    results = run_retrieval(config, args.query, args.limit)
+    if args.legacy:
+      records = load_retrievable_records(config)
+      results = search_records(args.query, records, args.limit)
+    else:
+      results = run_retrieval(config, args.query, args.limit)
   except Exception as exc:
     print(f"Error executing retrieval: {exc}", file=sys.stderr)
     return 1
@@ -691,31 +701,35 @@ def build_index(config: RetrievalConfig) -> None:
       );
     """)
 
-    for r in records:
-      conn.execute(
-        "INSERT INTO records (record_id, record_type, title, dataset_id, source_url, source_document, page, exact_terms) "
-        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-        (
-          r.record_id,
-          r.record_type,
-          r.title,
-          r.dataset_id,
-          r.source_url,
-          r.source_document,
-          r.page,
-          json.dumps(r.exact_terms),
-        ),
-      )
-      conn.execute(
-        "INSERT INTO records_fts (record_id, title, dataset_id, text) VALUES (?, ?, ?, ?)",
-        (
-          r.record_id,
-          r.title,
-          r.dataset_id,
-          r.text,
-        ),
-      )
-    conn.commit()
+    with conn:
+      for r in records:
+        conn.execute(
+          "INSERT OR REPLACE INTO records (record_id, record_type, title, dataset_id, source_url, source_document, page, exact_terms) "
+          "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+          (
+            r.record_id,
+            r.record_type,
+            r.title,
+            r.dataset_id,
+            r.source_url,
+            r.source_document,
+            r.page,
+            json.dumps(r.exact_terms),
+          ),
+        )
+        conn.execute(
+          "INSERT OR REPLACE INTO records_fts (record_id, title, dataset_id, text) VALUES (?, ?, ?, ?)",
+          (
+            r.record_id,
+            r.title,
+            r.dataset_id,
+            r.text,
+          ),
+        )
+  except Exception:
+    if temp_db_path.exists():
+      temp_db_path.unlink()
+    raise
   finally:
     conn.close()
 

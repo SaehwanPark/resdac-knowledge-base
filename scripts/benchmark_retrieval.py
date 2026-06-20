@@ -303,7 +303,7 @@ def main():
     print(f"\nBenchmarking query: '{query}' ({desc})", file=sys.stderr)
     
     # Python Cold (Legacy CLI Subprocess)
-    cmd_cold_python = ["uv", "run", "cms-kb-search", "--query", query, "--limit", "5", "--json"]
+    cmd_cold_python = ["uv", "run", "cms-kb-search", "--query", query, "--limit", "5", "--legacy", "--json"]
     python_cold_latencies = []
     for _ in range(args.trials):
       start = time.perf_counter()

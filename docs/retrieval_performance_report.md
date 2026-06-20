@@ -183,17 +183,18 @@ Mean warm latency in seconds (3 trials):
 
 | Query | Legacy Python Warm | SQLite FTS5 Warm | Speedup |
 | :--- | ---: | ---: | ---: |
-| `BENE_ID` | 1.2046 | 0.0101 | **119x** |
-| `medicare advantage` | 1.3198 | 0.0117 | **112x** |
-| `dual eligibility` | 1.2163 | 0.0140 | **86x** |
-| `MBSF` | 1.2327 | 0.0127 | **97x** |
-| **Mean** | **1.2434** | **0.0121** | **102x** |
+| `BENE_ID` | 0.6114 | 0.0098 | **62x** |
+| `medicare advantage` | 0.6622 | 0.0156 | **42x** |
+| `dual eligibility` | 0.6204 | 0.0091 | **68x** |
+| `MBSF` | 0.6181 | 0.0074 | **83x** |
+| **Mean** | **0.6280** | **0.0105** | **60x** |
 
 ### Index Build & Startup Overhead
-- **Index Build Latency**: Mean = 0.8214s, Median = 0.8108s, p95 = 0.8491s (rebuilding the entire FTS5 index over 30,745 text chunks).
+- **Index Build Latency**: Mean = 0.4155s, Median = 0.4106s, p95 = 0.4285s (rebuilding the entire FTS5 index over 30,745 text chunks).
 - **SQLite Cold Latency**: ~0.15s (primarily Python process startup overhead, compared to legacy cold CLI of ~2.4s which had to parse 30k JSON records on start).
 
 ### Quality Verification
 - **Recall@5**: 100% on default query set.
 - **Citation Completeness**: 100% of returned search results contain valid citation URLs resolving local documents.
 - **Exact Identifiers**: Queries for identifiers like `BENE_ID` consistently return the exact matching variable definitions at Rank 1.
+
