@@ -20,6 +20,19 @@ Agent Integration
 
 That way every layer remains independently useful.
 
+## Immediate Next Target — SQLite FTS5 Retrieval Index
+
+Replace per-query corpus-wide BM25 computation with a deterministic SQLite FTS5
+serving index. Preserve the existing retrieval result models, exact CMS
+identifier behavior, citations, agent API, and MCP tools. Keep CSV and JSONL as
+canonical inputs; SQLite is a rebuildable derived artifact.
+
+Use `scripts/benchmark_retrieval.py` as the starting point for an
+offline-by-default evaluation command covering build, cold, and warm latency;
+ranked-result expectations; Recall@5; reciprocal rank; and citation
+completeness. The bounded implementation and verification plan is in
+[`docs/sqlite-retrieval-plan.md`](docs/sqlite-retrieval-plan.md).
+
 # Phase 0 — Discovery & Scoping (1–2 days)
 
 Goal: understand the ResDAC information architecture before writing much code.
@@ -130,13 +143,11 @@ Example:
 }
 ```
 
-Store in:
+Canonical outputs remain portable files:
 
 ```text
-datasets.parquet
+data/metadata/*.csv
 ```
-
-DuckDB works perfectly here.
 
 Schema:
 
@@ -290,17 +301,16 @@ Potential future sources:
 
 Now build retrieval.
 
-I would use:
+Use:
 
 ```text
-DuckDB
+SQLite FTS5 BM25
 +
-BM25
-+
-Embeddings
+explicit exact-identifier boosts
 ```
 
-not a vector DB initially.
+Do not introduce a vector database initially. Optional embedding reranking is a
+later, evaluation-gated concern rather than part of the serving-index target.
 
 Architecture:
 

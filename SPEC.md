@@ -34,7 +34,17 @@ checked-in corpus coverage, and retained generated data artifacts.
 - User manual revised and unified. Consolidated `docs/pipeline.md` and `docs/user-manual.md`, added offline build instructions, and updated references.
 
 ## Present
-- No active implementation item is currently tracked.
+- Phase 10A is the immediate implementation target: build a deterministic,
+  rebuildable SQLite FTS5 serving index over validated retrieval records while
+  preserving the existing `SearchResult`, CLI, agent-context, MCP, citation,
+  exact-identifier, and deterministic-ordering behavior.
+- Convert `scripts/benchmark_retrieval.py` into the offline-by-default
+  performance and retrieval-quality evaluation gate for the SQLite backend,
+  including ranked-result expectations, Recall@5, reciprocal rank, citation
+  completeness, and build/cold/warm latency distributions.
+- Execute the bounded plan in
+  [sqlite-retrieval-plan.md](docs/sqlite-retrieval-plan.md). SQLite remains a
+  derived serving artifact; canonical CSV/JSONL inputs remain unchanged.
 
 ## Future
 Future work is organized as implementation phases. A phase may be promoted into
@@ -58,13 +68,12 @@ Verification:
 - Source expansion does not weaken existing ResDAC inventory, archive, or QA
   behavior.
 
-### Phase 10: Hybrid Retrieval And Ranking
-Purpose: improve retrieval quality beyond the deterministic lexical MVP while
-keeping exact matching and citations as first-class behavior.
+### Phase 10B-C: Optional Hybrid Retrieval And Ranking
+Purpose: consider retrieval quality improvements beyond the SQLite lexical
+index only after Phase 10A is implemented and evaluated, while keeping exact
+matching and citations as first-class behavior.
 
 Subphases:
-- 10A: Add benchmarkable lexical ranking improvements for CMS identifiers,
-  aliases, acronyms, and phrase queries.
 - 10B: Add optional semantic retrieval or reranking behind explicit
   configuration.
 - 10C: Preserve deterministic citation output and make ranking changes
