@@ -683,6 +683,39 @@ def write_variable_workspace_summary(result: VariableExtractionResult) -> Path:
   return summary_path
 
 
+def _resolve_variable_citations(
+  variables: list[VariableMetadataRow],
+  canonical_variables: list[CanonicalVariableRow],
+  data_source_variable_edges: list[DataSourceVariableEdgeRow],
+) -> None:
+  """Resolves extracted variable source URLs and documents to their canonical detail pages.
+
+  Updates the variables list in-place where matches are found in the data source edges.
+  """
+  canonical_id_to_name = {
+    v.variable_id: v.variable_name
+    for v in canonical_variables
+    if v.variable_name
+  }
+  resolved_vars: dict[tuple[str, str], tuple[str, str]] = {}
+  for edge in data_source_variable_edges:
+    var_name = canonical_id_to_name.get(edge.target_id)
+    if var_name:
+      resolved_vars[(edge.source_id.lower(), var_name.lower())] = (
+        edge.variable_url,
+        edge.variable_document,
+      )
+
+  for row in variables:
+    lookup_key = (row.dataset_id.lower(), row.variable_name.lower())
+    if lookup_key in resolved_vars:
+      var_url, var_doc = resolved_vars[lookup_key]
+      if var_url:
+        row.source_url = var_url
+      if var_doc:
+        row.source_document = var_doc
+
+
 def run_variable_extraction(
   config: VariableExtractionConfig,
 ) -> tuple[VariableExtractionResult, Path]:
@@ -729,31 +762,9 @@ def run_variable_extraction(
     skipped_candidates += skipped
 
   variables = _deduplicate_variables(extracted_rows)
-
-  # Map (dataset_id, variable_name) -> (variable_url, variable_document) using canonical_variables & data_source_variable_edges
-  canonical_id_to_name = {
-    v.variable_id: v.variable_name
-    for v in canonical_variables
-    if v.variable_name
-  }
-  resolved_vars: dict[tuple[str, str], tuple[str, str]] = {}
-  for edge in data_source_variable_edges:
-    var_name = canonical_id_to_name.get(edge.target_id)
-    if var_name:
-      resolved_vars[(edge.source_id.lower(), var_name.lower())] = (
-        edge.variable_url,
-        edge.variable_document,
-      )
-
-  for row in variables:
-    lookup_key = (row.dataset_id.lower(), row.variable_name.lower())
-    if lookup_key in resolved_vars:
-      var_url, var_doc = resolved_vars[lookup_key]
-      if var_url:
-        row.source_url = var_url
-      if var_doc:
-        row.source_document = var_doc
-
+  _resolve_variable_citations(
+    variables, canonical_variables, data_source_variable_edges
+  )
   result = VariableExtractionResult(
     config=config,
     chunks_read=len(chunks),
