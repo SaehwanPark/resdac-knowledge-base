@@ -238,6 +238,7 @@ def test_evaluate_benchmark_suite(tmp_path: Path) -> None:
 
   config = VariableEvaluationConfig(
     retrieval=retrieval,
+    archive_manifest_path=archive_manifest,
     sample_size=1,
     seed=20260616,
     limit=5,
@@ -247,27 +248,10 @@ def test_evaluate_benchmark_suite(tmp_path: Path) -> None:
     questions=[BenchmarkQuestion.model_validate(q) for q in benchmark_questions]
   )
 
-  # Monkey patch Path("manifests/archive_manifest.csv") resolution
-  import cms_kb.evaluation as ev
-  ev_manifest_backup = ev.Path
-  
-  class MockPathClass:
-    def __new__(cls, *args, **kwargs):
-      # Redirect specific check to tmp_path
-      path_str = str(args[0]) if args else ""
-      if "archive_manifest.csv" in path_str:
-        return Path(archive_manifest)
-      return Path(*args, **kwargs)
-
-  ev.Path = MockPathClass  # pytype: disable=name-error
-
-  try:
-    report = evaluate_benchmark_suite(config, suite)
-    assert len(report.results) == 1
-    assert report.results[0].question_id == "q1"
-    assert report.results[0].lexical.dataset_recall_at_5 == 1.0
-  finally:
-    ev.Path = ev_manifest_backup
+  report = evaluate_benchmark_suite(config, suite)
+  assert len(report.results) == 1
+  assert report.results[0].question_id == "q1"
+  assert report.results[0].lexical.dataset_recall_at_5 == 1.0
 
 
 def test_evaluation_cli_benchmark_option(tmp_path: Path) -> None:
@@ -292,38 +276,26 @@ def test_evaluation_cli_benchmark_option(tmp_path: Path) -> None:
   benchmark_file.write_text(json.dumps(benchmark_questions), encoding="utf-8")
   output_report = tmp_path / "report.md"
 
-  import cms_kb.evaluation as ev
-  ev_manifest_backup = ev.Path
-  
-  class MockPathClass:
-    def __new__(cls, *args, **kwargs):
-      path_str = str(args[0]) if args else ""
-      if "archive_manifest.csv" in path_str:
-        return Path(archive_manifest)
-      return Path(*args, **kwargs)
+  exit_code = main([
+    "--datasets-metadata",
+    str(retrieval.datasets_metadata_path),
+    "--documents-metadata",
+    str(retrieval.documents_metadata_path),
+    "--variables-metadata",
+    str(retrieval.variables_metadata_path),
+    "--chunks-jsonl",
+    str(retrieval.chunks_jsonl_path),
+    "--database-path",
+    str(retrieval.database_path),
+    "--archive-manifest-path",
+    str(archive_manifest),
+    "--benchmark",
+    str(benchmark_file),
+    "--output-report",
+    str(output_report),
+  ])
+  assert exit_code == 0
+  assert output_report.is_file()
+  assert "Aggregate Benchmark Summary" in output_report.read_text(encoding="utf-8")
 
-  ev.Path = MockPathClass  # pytype: disable=name-error
-
-  try:
-    exit_code = main([
-      "--datasets-metadata",
-      str(retrieval.datasets_metadata_path),
-      "--documents-metadata",
-      str(retrieval.documents_metadata_path),
-      "--variables-metadata",
-      str(retrieval.variables_metadata_path),
-      "--chunks-jsonl",
-      str(retrieval.chunks_jsonl_path),
-      "--database-path",
-      str(retrieval.database_path),
-      "--benchmark",
-      str(benchmark_file),
-      "--output-report",
-      str(output_report),
-    ])
-    assert exit_code == 0
-    assert output_report.is_file()
-    assert "Aggregate Benchmark Summary" in output_report.read_text(encoding="utf-8")
-  finally:
-    ev.Path = ev_manifest_backup
 

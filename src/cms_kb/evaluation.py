@@ -32,11 +32,13 @@ class VariableEvaluationConfig(BaseModel):
 
   Attributes:
     retrieval: Settings configuration for locating variables metadata and chunks files.
+    archive_manifest_path: Path to the archive manifest CSV file.
     sample_size: Number of unique variable names to randomly sample.
     seed: RNG seed to ensure repeatable, deterministic evaluation runs.
     limit: The maximum search rank depth to check for a successful match.
   """
   retrieval: RetrievalConfig = RetrievalConfig()
+  archive_manifest_path: Path = Field(default_factory=lambda: Path("manifests/archive_manifest.csv"))
   sample_size: int = 10
   seed: int = 20260616
   limit: int = 5
@@ -301,22 +303,36 @@ class BenchmarkReport(BaseModel):
   results: list[QuestionEvaluationResult] = Field(default_factory=list)
 
 
-def recall_at_k(retrieved: list[str], expected: list[str], k: int) -> float:
+def recall_at_k(retrieved: list[str] | list[set[str]], expected: list[str], k: int) -> float:
   """Calculates Recall@K: proportion of expected IDs found in top K retrieved IDs."""
   if not expected:
     return 1.0
   top_k = retrieved[:k]
-  matched = set(top_k) & set(expected)
-  return len(matched) / len(expected)
+  matched_count = 0
+  for target in expected:
+    for item in top_k:
+      if isinstance(item, set):
+        if target in item:
+          matched_count += 1
+          break
+      else:
+        if item == target:
+          matched_count += 1
+          break
+  return matched_count / len(expected)
 
 
-def reciprocal_rank(retrieved: list[str], expected: list[str]) -> float:
+def reciprocal_rank(retrieved: list[str] | list[set[str]], expected: list[str]) -> float:
   """Calculates Reciprocal Rank (RR): 1 / rank of the first correct retrieved ID."""
   if not expected:
     return 1.0
   for index, item in enumerate(retrieved):
-    if item in expected:
-      return 1.0 / (index + 1)
+    if isinstance(item, set):
+      if any(e in item for e in expected):
+        return 1.0 / (index + 1)
+    else:
+      if item in expected:
+        return 1.0 / (index + 1)
   return 0.0
 
 
@@ -331,14 +347,17 @@ def citation_accuracy(retrieved: list[str], expected: list[str]) -> float:
   norm_retrieved = {normalize(c) for c in retrieved if c}
   norm_expected = {normalize(e) for e in expected if e}
 
+  if not norm_expected:
+    return 1.0
+
   matched = norm_retrieved & norm_expected
   return len(matched) / len(norm_expected)
 
 
-def extract_lexical_hybrid_ids(results: list[SearchResult]) -> tuple[list[str], list[str], list[str]]:
+def extract_lexical_hybrid_ids(results: list[SearchResult]) -> tuple[list[str], list[set[str]], list[str]]:
   """Extracts dataset IDs, variable identifiers, and citations from SearchResults."""
   retrieved_datasets = []
-  retrieved_variables = []
+  retrieved_variables: list[set[str]] = []
   retrieved_citations = []
   for r in results:
     if r.record_type == "dataset":
@@ -347,8 +366,7 @@ def extract_lexical_hybrid_ids(results: list[SearchResult]) -> tuple[list[str], 
       retrieved_datasets.append(r.dataset_id)
 
     if r.record_type == "variable":
-      retrieved_variables.append(r.record_id)
-      retrieved_variables.append(r.title)
+      retrieved_variables.append({r.record_id, r.title})
 
     if r.source_url:
       retrieved_citations.append(r.source_url)
@@ -357,7 +375,7 @@ def extract_lexical_hybrid_ids(results: list[SearchResult]) -> tuple[list[str], 
 
 def evaluate_path(
   retrieved_datasets: list[str],
-  retrieved_variables: list[str],
+  retrieved_variables: list[set[str]],
   retrieved_citations: list[str],
   question: BenchmarkQuestion,
 ) -> PathEvaluationResult:
@@ -379,7 +397,7 @@ def evaluate_benchmark_suite(
   from .agent_api import AgentContextConfig, build_agent_context
 
   results: list[QuestionEvaluationResult] = []
-  archive_manifest_path = Path("manifests/archive_manifest.csv")
+  archive_manifest_path = config.archive_manifest_path
 
   for question in suite.questions:
     # 1. Lexical Path
@@ -405,7 +423,7 @@ def evaluate_benchmark_suite(
     agent_response = build_agent_context(agent_config, question.query, limit=10)
     
     agent_d = []
-    agent_v = []
+    agent_v: list[set[str]] = []
     agent_c = []
     for h in agent_response.results:
       if h.record_type == "dataset":
@@ -414,8 +432,7 @@ def evaluate_benchmark_suite(
         agent_d.append(h.dataset_id)
 
       if h.record_type == "variable":
-        agent_v.append(h.record_id)
-        agent_v.append(h.title)
+        agent_v.append({h.record_id, h.title})
 
       if h.citation:
         if h.citation.source_url:
@@ -435,20 +452,24 @@ def evaluate_benchmark_suite(
       )
     )
 
-  def average(field: str, path: str) -> float:
+  def average(field: str, path: str, expect_field: str) -> float:
     vals = []
     for r in results:
-      p_res = getattr(r, path)
-      vals.append(getattr(p_res, field))
+      # Find corresponding BenchmarkQuestion to see if ground truth is empty
+      q = next(question for question in suite.questions if question.question_id == r.question_id)
+      expected_list = getattr(q, expect_field)
+      if expected_list:
+        p_res = getattr(r, path)
+        vals.append(getattr(p_res, field))
     return sum(vals) / len(vals) if vals else 1.0
 
   def make_mean_result(path: str) -> PathEvaluationResult:
     return PathEvaluationResult(
-      dataset_recall_at_5=average("dataset_recall_at_5", path),
-      variable_recall_at_5=average("variable_recall_at_5", path),
-      citation_accuracy=average("citation_accuracy", path),
-      dataset_mrr=average("dataset_mrr", path),
-      variable_mrr=average("variable_mrr", path),
+      dataset_recall_at_5=average("dataset_recall_at_5", path, "expected_datasets"),
+      variable_recall_at_5=average("variable_recall_at_5", path, "expected_variables"),
+      citation_accuracy=average("citation_accuracy", path, "expected_citations"),
+      dataset_mrr=average("dataset_mrr", path, "expected_datasets"),
+      variable_mrr=average("variable_mrr", path, "expected_variables"),
     )
 
   return BenchmarkReport(
@@ -547,7 +568,27 @@ def build_arg_parser() -> argparse.ArgumentParser:
     default=Path("_workspace/retrieval_evaluation_report.md"),
     help="Path where the compiled markdown report comparing the three retrieval paths will be saved.",
   )
+  parser.add_argument(
+    "--archive-manifest-path",
+    type=Path,
+    default=Path("manifests/archive_manifest.csv"),
+    help="Path to the archive manifest CSV file.",
+  )
   return parser
+
+
+def check_embeddings_exist(database_path: Path) -> bool:
+  """Checks if the record_embeddings table exists in the SQLite database."""
+  if not database_path.is_file():
+    return False
+  try:
+    import sqlite3
+    with sqlite3.connect(database_path) as conn:
+      cursor = conn.cursor()
+      cursor.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='record_embeddings'")
+      return cursor.fetchone() is not None
+  except Exception:
+    return False
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -561,6 +602,7 @@ def main(argv: list[str] | None = None) -> int:
       chunks_jsonl_path=args.chunks_jsonl,
       database_path=args.database_path,
     ),
+    archive_manifest_path=args.archive_manifest_path,
     sample_size=args.sample_size,
     seed=args.seed,
     limit=args.limit,
@@ -575,6 +617,15 @@ def main(argv: list[str] | None = None) -> int:
       else:
         print(f"Error: benchmark questions file not found at {args.benchmark}", file=sys.stderr)
         return 1
+
+    # Warn user if record_embeddings table does not exist
+    if not check_embeddings_exist(config.retrieval.database_path):
+      print(
+        "Warning: 'record_embeddings' table not found in SQLite database.\n"
+        "Hybrid search will silently fall back to lexical search, resulting in identical metrics.\n"
+        "To enable semantic hybrid search, rebuild the index with: uv run cms-kb-index --build-embeddings\n",
+        file=sys.stderr,
+      )
 
     try:
       with benchmark_path.open("r", encoding="utf-8") as f:
@@ -654,8 +705,11 @@ __all__ = [
   "VariableEvaluationConfig",
   "VariableEvaluationReport",
   "build_arg_parser",
+  "citation_accuracy",
   "evaluate_benchmark_suite",
   "evaluate_variable_retrieval",
   "generate_markdown_report",
   "main",
+  "recall_at_k",
+  "reciprocal_rank",
 ]
