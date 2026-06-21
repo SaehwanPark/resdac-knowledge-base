@@ -1328,7 +1328,7 @@ wheels = [
 
 [[package]]
 name = "resdac-doc-archive"
-version = "0.2.0"
+version = "2.2.26"
 source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
