@@ -35,6 +35,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 10A is implemented: a deterministic, rebuildable SQLite FTS5 serving index over validated retrieval records is built, preserving `SearchResult`, CLI, agent-context, MCP, citation, exact-identifier, and deterministic-ordering behavior.
 - Extended `scripts/benchmark_retrieval.py` into the offline-by-default performance and retrieval-quality evaluation gate for the SQLite backend, verifying sub-10ms warm latency and zero regressions in ranked results and citations.
 - Phase 10B-C is implemented: optional hybrid retrieval and ranking is added via candidate semantic reranking from pre-computed SQLite embeddings. The pipeline preserves deterministic citation outputs, exact identifier query reliability, and handles library fallbacks gracefully.
+- Phase 9: Package Distribution (PyPI) is implemented, bundling pre-built index database, CSV metadata, graph edges, and optimized HTML assets inside the module package. Resolved dynamically at runtime via importlib.resources and size-optimized to stay below the 100MB upload limit.
 
 
 ## Present
@@ -44,23 +45,6 @@ checked-in corpus coverage, and retained generated data artifacts.
 Future work is organized as implementation phases. A phase may be promoted into
 `Present` when active work begins, with concise verification criteria and
 explicit out-of-scope notes.
-
-### Phase 9: Package Distribution (PyPI)
-Purpose: bundle pre-built CMS KB data artifacts inside the `cms_kb` Python package and configure Hatchling for PyPI distribution under size constraints.
-
-Subphases:
-- 9A: Relocate pre-built CSVs, chunk JSONLs, and the SQLite serving index into the module directory (`src/cms_kb/data/`).
-- 9B: Implement dynamic path resolution using `importlib.resources` inside path config/helpers (e.g., `src/cms_kb/paths.py`).
-- 9C: Implement pre-packaging database optimizations (`VACUUM` and `PRAGMA optimize`) and an HTML layout-cleaning pre-processor to strip scripts/styles/comments to remain under the 100MB limit.
-- 9D: Configure Hatchling wheel build rules in `pyproject.toml` (treat `data/` as package data, exclude raw PDFs/assets).
-- 9E: Prepare PyPI publication elements (e.g., project description/README formatting, automated upload/release script or workflows).
-
-Verification:
-- `uv build` compiles a valid wheel (`.whl`) under the 100MB limit.
-- The built wheel includes compiled indexes, CSVs, and JSONLs, but excludes raw PDF files.
-- Module queries resolve paths using dynamic importlib-based resolution.
-- Cleaned HTML files preserve semantic tables and links while reducing layout/styling overhead.
-- Package description renders correctly, and automated release script/workflow runs successfully for testing/publishing.
 
 ### Phase 11: Downstream Integration APIs
 Purpose: provide standard programmatic APIs and CLI utility patterns to assist external research projects and AI agent workflows using the packaged KB.
