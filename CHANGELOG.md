@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## version 1.0.0
 
 ### Added
 - Phase 11B: implemented dynamic cohort data dictionary generators querying the SQLite FTS5 backend (exposed via programmatic API and CLI subcommand).
