@@ -92,3 +92,10 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Resolution: replace `\b` boundary assertions with lookaround assertions `(?<![A-Za-z0-9_-])` and `(?![A-Za-z0-9_-])` to correctly match symbols containing hyphens as single tokens.
 - Prevention: when scanning codebase files for identifiers that can contain hyphens, avoid simple `\b` boundary checks and use boundary-independent lookaround patterns.
 
+### Exact key matching in custom TOML parsing
+
+- Context: follow-up code review (Re-review gate) of MCP client setup script (`src/cms_kb/mcp_setup.py`).
+- Symptom: potential deletion/loss of user-defined custom settings (e.g. `command_timeout = 30`) under `[mcp_servers.<name>]` section during TOML replacement.
+- Cause: the custom TOML parser matched key-value pairs using a simple `startswith` prefix match (e.g. matching any key starting with `command`, `args`, or `type` and containing `=`).
+- Resolution: replaced the `startswith` match with exact key matching by splitting the line on `=`, stripping whitespace/quotes from the key, and checking for equality against target keys (`"type"`, `"command"`, `"args"`).
+- Prevention: when parsing configuration formats with custom text manipulation (rather than AST/standard parsers), match keys exactly to prevent prefix-matching errors on custom settings.

@@ -177,6 +177,14 @@ counts such as `rows_processed`, `archived`, `failed`, and `download_attempts`.
 
 The server implements the Model Context Protocol to serve the retrieved outputs. It runs in `stdio` mode and can be integrated into AI editors (e.g., Cursor, Windsurf) or client applications (e.g., Claude Desktop).
 
+### Automatic Setup (Setup Wizard)
+
+Developers can use the configuration wizard to configure client applications automatically:
+```bash
+uv run cms-kb-mcp-setup
+```
+Refer to the [user-manual.md](user-manual.md) for more details.
+
 ### Running the Server locally
 
 ```bash
