@@ -17,13 +17,13 @@ It enables researchers, data engineers, and AI agents to query dataset metadata,
 Install using `pip` or `uv`:
 
 ```bash
-pip install resdac-doc-archive
+pip install resdac-knowledge-base
 ```
 
 For optional semantic search support:
 
 ```bash
-pip install "resdac-doc-archive[semantic]"
+pip install "resdac-knowledge-base[semantic]"
 ```
 
 ## Quick Start
