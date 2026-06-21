@@ -1,6 +1,6 @@
-# CMS Knowledge Base PyPI Publishing Guide
+# ResDAC/CMS Knowledge Base PyPI Publishing Guide
 
-This guide outlines the steps required to prepare, optimize, validate, and publish the `resdac-doc-archive` package to PyPI.
+This guide outlines the steps required to prepare, optimize, validate, and publish the `resdac-knowledge-base` package to PyPI.
 
 ---
 
@@ -31,7 +31,7 @@ Before initiating a release, ensure all checks pass to maintain package integrit
 1. **Update Version**: Open [pyproject.toml](file:///Users/saehwan/repos/resdac-knowledge-base/pyproject.toml) and update the `version` field under `[project]` following Semantic Versioning (SemVer):
    ```toml
    [project]
-   name = "resdac-doc-archive"
+   name = "knowledge"
    version = "X.Y.Z"
    ```
 2. **Lock Dependencies**: Sync the environment and update `uv.lock`:
