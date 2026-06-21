@@ -1,6 +1,6 @@
 [project]
 name = "resdac-doc-archive"
-version = "2.2.26"
+version = "0.22.26"
 description = "CMS documentation archive and inventory tooling"
 readme = "README.md"
 requires-python = ">=3.13"
