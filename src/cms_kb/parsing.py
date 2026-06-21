@@ -28,6 +28,8 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field, model_validator
 
+from .paths import get_packaged_data_path
+
 # Try standard fitz import for PyMuPDF
 try:
   import fitz  # type: ignore
@@ -40,9 +42,9 @@ from .extraction import DatasetMetadataRow, DocumentMetadataRow
 
 
 class ParsingConfig(BaseModel):
-  datasets_metadata_path: Path = Path("data/metadata/datasets.csv")
-  documents_metadata_path: Path = Path("data/metadata/documents.csv")
-  parsed_root: Path = Path("data/parsed")
+  datasets_metadata_path: Path = Field(default_factory=lambda: get_packaged_data_path("metadata/datasets.csv"))
+  documents_metadata_path: Path = Field(default_factory=lambda: get_packaged_data_path("metadata/documents.csv"))
+  parsed_root: Path = Field(default_factory=lambda: get_packaged_data_path("parsed"))
   workspace_dir: Path = Path("_workspace")
   chunk_size: int = 500
   chunk_overlap: int = 100
@@ -710,14 +712,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
-  parser.add_argument("--parsed-root", type=Path, default=Path("data/parsed"))
+  parser.add_argument("--parsed-root", type=Path, default=get_packaged_data_path("parsed"))
   parser.add_argument("--workspace-dir", type=Path, default=Path("_workspace"))
   parser.add_argument("--chunk-size", type=int, default=500)
   parser.add_argument("--chunk-overlap", type=int, default=100)

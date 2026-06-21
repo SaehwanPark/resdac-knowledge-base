@@ -27,6 +27,8 @@ from urllib.parse import urlparse
 
 from pydantic import BaseModel, Field, model_validator
 
+from .paths import get_packaged_data_path
+
 from .extraction import (
   DatasetMetadataRow,
   DocumentEdgeRow,
@@ -43,15 +45,15 @@ from .variables import (
 )
 
 
-DEFAULT_DATASETS_METADATA_PATH = Path("data/metadata/datasets.csv")
-DEFAULT_DOCUMENTS_METADATA_PATH = Path("data/metadata/documents.csv")
-DEFAULT_VARIABLES_METADATA_PATH = Path("data/metadata/variables.csv")
-DEFAULT_CANONICAL_VARIABLES_METADATA_PATH = Path("data/metadata/canonical_variables.csv")
-DEFAULT_DOCUMENT_EDGES_PATH = Path("data/graph/document_edges.csv")
-DEFAULT_VARIABLE_EDGES_PATH = Path("data/graph/variable_edges.csv")
-DEFAULT_DATA_SOURCE_VARIABLE_EDGES_PATH = Path("data/graph/data_source_variable_edges.csv")
-DEFAULT_ONTOLOGY_NODES_PATH = Path("data/graph/ontology_nodes.csv")
-DEFAULT_ONTOLOGY_EDGES_PATH = Path("data/graph/ontology_edges.csv")
+DEFAULT_DATASETS_METADATA_PATH = get_packaged_data_path("metadata/datasets.csv")
+DEFAULT_DOCUMENTS_METADATA_PATH = get_packaged_data_path("metadata/documents.csv")
+DEFAULT_VARIABLES_METADATA_PATH = get_packaged_data_path("metadata/variables.csv")
+DEFAULT_CANONICAL_VARIABLES_METADATA_PATH = get_packaged_data_path("metadata/canonical_variables.csv")
+DEFAULT_DOCUMENT_EDGES_PATH = get_packaged_data_path("graph/document_edges.csv")
+DEFAULT_VARIABLE_EDGES_PATH = get_packaged_data_path("graph/variable_edges.csv")
+DEFAULT_DATA_SOURCE_VARIABLE_EDGES_PATH = get_packaged_data_path("graph/data_source_variable_edges.csv")
+DEFAULT_ONTOLOGY_NODES_PATH = get_packaged_data_path("graph/ontology_nodes.csv")
+DEFAULT_ONTOLOGY_EDGES_PATH = get_packaged_data_path("graph/ontology_edges.csv")
 
 
 class QAConfig(BaseModel):
@@ -1794,47 +1796,47 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
   parser.add_argument(
     "--variables-metadata",
     type=Path,
-    default=Path("data/metadata/variables.csv"),
+    default=get_packaged_data_path("metadata/variables.csv"),
   )
   parser.add_argument(
     "--canonical-variables-metadata",
     type=Path,
-    default=Path("data/metadata/canonical_variables.csv"),
+    default=get_packaged_data_path("metadata/canonical_variables.csv"),
   )
   parser.add_argument(
     "--document-edges",
     type=Path,
-    default=Path("data/graph/document_edges.csv"),
+    default=get_packaged_data_path("graph/document_edges.csv"),
   )
   parser.add_argument(
     "--variable-edges",
     type=Path,
-    default=Path("data/graph/variable_edges.csv"),
+    default=get_packaged_data_path("graph/variable_edges.csv"),
   )
   parser.add_argument(
     "--data-source-variable-edges",
     type=Path,
-    default=Path("data/graph/data_source_variable_edges.csv"),
+    default=get_packaged_data_path("graph/data_source_variable_edges.csv"),
   )
   parser.add_argument(
     "--ontology-nodes",
     type=Path,
-    default=Path("data/graph/ontology_nodes.csv"),
+    default=get_packaged_data_path("graph/ontology_nodes.csv"),
   )
   parser.add_argument(
     "--ontology-edges",
     type=Path,
-    default=Path("data/graph/ontology_edges.csv"),
+    default=get_packaged_data_path("graph/ontology_edges.csv"),
   )
   parser.add_argument(
     "--archive-manifest",

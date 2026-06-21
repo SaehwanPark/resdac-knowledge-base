@@ -21,3 +21,7 @@ _workspace/*
 data/index/
 *.sqlite
 *.sqlite.tmp
+
+# Package data build directory
+src/cms_kb/data/
+

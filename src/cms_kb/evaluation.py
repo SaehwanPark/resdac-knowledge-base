@@ -22,6 +22,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field
 
+from .paths import get_packaged_data_path
 from .retrieval import RetrievalConfig, SearchResult, run_retrieval
 from .variables import VariableMetadataRow
 
@@ -266,27 +267,27 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
   parser.add_argument(
     "--variables-metadata",
     type=Path,
-    default=Path("data/metadata/variables.csv"),
+    default=get_packaged_data_path("metadata/variables.csv"),
   )
   parser.add_argument(
     "--chunks-jsonl",
     type=Path,
-    default=Path("data/parsed/chunks.jsonl"),
+    default=get_packaged_data_path("parsed/chunks.jsonl"),
   )
   parser.add_argument(
     "--database-path",
     type=Path,
-    default=Path("data/index/retrieval.sqlite"),
+    default=get_packaged_data_path("index/retrieval.sqlite"),
   )
   parser.add_argument("--json", action="store_true")
   return parser

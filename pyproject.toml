@@ -1,10 +1,11 @@
 [project]
 name = "resdac-doc-archive"
-version = "0.1.0"
+version = "0.22.0"
 description = "CMS documentation archive and inventory tooling"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+  "beautifulsoup4>=4.12.0",
   "mcp>=1.27.2",
   "pydantic>=2",
   "pymupdf>=1.27.2.3",
@@ -38,8 +39,16 @@ dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]
 requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build]
+ignore-vcs = true
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/cms_kb"]
+exclude = [
+  "src/cms_kb/data/raw/**/*.pdf",
+  "src/cms_kb/data/raw/assets",
+  "src/cms_kb/data/parsed/pdf",
+]
 
 [tool.basedpyright]
 typeCheckingMode = "standard"
