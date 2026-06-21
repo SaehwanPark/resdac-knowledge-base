@@ -183,8 +183,17 @@ def update_toml_string(
     preserved_lines = []
     for line in section_body.splitlines(keepends=True):
       stripped = line.strip()
-      if stripped.startswith(("type", "command", "args")) and "=" in stripped:
-        continue
+      if "=" in stripped:
+        parts = stripped.split("=", 1)
+        key = parts[0].strip()
+        # Strip quotes around the key if present
+        if (
+          (key.startswith('"') and key.endswith('"'))
+          or (key.startswith("'") and key.endswith("'"))
+        ):
+          key = key[1:-1]
+        if key in ("type", "command", "args"):
+          continue
       preserved_lines.append(line)
     
     updated_section = new_section

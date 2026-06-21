@@ -181,6 +181,8 @@ def test_update_toml_string_quoted_and_preserved_comments() -> None:
     'command = "old-command"\n'
     'args = ["old-args"]\n'
     "custom_setting = true\n"
+    "command_timeout = 30\n"
+    'type_custom = "foo"\n'
     "\n"
     "[other_section]"
   )
@@ -188,8 +190,10 @@ def test_update_toml_string_quoted_and_preserved_comments() -> None:
   assert 'command = "uv"' in res
   # Check comment is still present in output
   assert "# A comment we must preserve" in res
-  # Check custom_setting is still present in output
+  # Check custom settings are still present in output
   assert "custom_setting = true" in res
+  assert "command_timeout = 30" in res
+  assert 'type_custom = "foo"' in res
 
 
 def test_update_toml_config(tmp_path: Path) -> None:
@@ -232,6 +236,6 @@ def test_main_cli_dry_run(tmp_path: Path) -> None:
 
 def test_main_cli_non_tty_error() -> None:
   # With stdin mocked to non-TTY, calling setup with no client should error out
-  with mock.patch("sys.stdin.isatty", return_type=bool, return_value=False):
+  with mock.patch("sys.stdin.isatty", return_value=False):
     exit_code = main([])
     assert exit_code == 1
