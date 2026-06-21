@@ -144,7 +144,7 @@ Inventory (`cms-kb`) and archive (`cms-kb-archive`) write JSONL progress logs
 under `_workspace/` by default. Each run **truncates** its log file at start so
 tails reflect the current run only.
 
-| Phase | Default progress log |
+| Stage | Default progress log |
 | :--- | :--- |
 | Inventory | `_workspace/02_inventory_progress.jsonl` |
 | Archive | `_workspace/03_archive_progress.jsonl` |
@@ -215,7 +215,7 @@ To add the CMS Knowledge Base to Claude Desktop, add the following entry to your
 
 ## 6. Workspace Handoff Contract
 
-Every phase of the pipeline outputs a markdown file under `_workspace/` summarizing its execution. These files are used by agents and operators to audit intermediate steps:
+Every stage of the pipeline outputs a markdown file under `_workspace/` summarizing its execution. These files are used by agents and operators to audit intermediate steps:
 
 *   `_workspace/01_request.md`: The initial query scope.
 *   `_workspace/02_source_inventory.md`: Discovered dataset URLs and coverage bounds.

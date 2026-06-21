@@ -733,7 +733,7 @@ def crawl_inventory(
   )
   append_progress_event(
     config.progress_log_path,
-    phase="inventory",
+    stage="inventory",
     event="start",
     message=(
       f"max listing pages={config.max_pages}, "
@@ -852,7 +852,7 @@ def crawl_inventory(
     )
     append_progress_event(
       config.progress_log_path,
-      phase="inventory",
+      stage="inventory",
       event="progress",
       counts={
         "listing_pages": listing_pages_fetched,
@@ -1019,7 +1019,7 @@ def crawl_inventory(
     )
     append_progress_event(
       config.progress_log_path,
-      phase="inventory",
+      stage="inventory",
       event="progress",
       url=current_url,
       resource_kind=row.resource_kind,
@@ -1049,7 +1049,7 @@ def crawl_inventory(
   summary["duplicates_skipped"] = duplicates_skipped[0]
   append_progress_event(
     config.progress_log_path,
-    phase="inventory",
+    stage="inventory",
     event="complete",
     counts={
       "listing_pages": listing_pages_fetched,

@@ -7,7 +7,7 @@ description: Coordinate CMS documentation archival, extraction, and provenance r
 
 ## When to use
 
-- Use for any CMS documentation workflow that needs ordered phases and durable review artifacts.
+- Use for any CMS documentation workflow that needs ordered stages and durable review artifacts.
 - Use when a request may touch discovery, archival, metadata extraction, or citation review in the same run.
 - Do not use for one-off ad hoc questions that can be answered from a single existing artifact.
 
@@ -36,13 +36,13 @@ description: Coordinate CMS documentation archival, extraction, and provenance r
 
 ## Validation notes
 
-- Keep the phase order fixed: request -> inventory -> archive -> extraction -> QA.
+- Keep the stage order fixed: request -> inventory -> archive -> extraction -> QA.
 - Keep handoff filenames stable so later agents can replay the run without guessing.
-- If a phase needs a new artifact name, update the team spec and validator together.
+- If a stage needs a new artifact name, update the team spec and validator together.
 
 ## Stop conditions
 
-- Stop if a phase cannot name its input and output artifact.
+- Stop if a stage cannot name its input and output artifact.
 - Stop if provenance is missing and the agent is tempted to infer it.
 - Stop if the workflow starts requiring a second coordinator or a backlog queue.
 

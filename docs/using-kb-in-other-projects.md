@@ -6,7 +6,7 @@ This guide describes how to consume the CMS Knowledge Base (KB) in external work
 
 ## 1. Integration Vectors
 
-Once the crawling, parsing, metadata extraction, and indexing phases are complete, external projects can consume the knowledge base through three primary interfaces:
+Once the crawling, parsing, metadata extraction, and indexing stages are complete, external projects can consume the knowledge base through three primary interfaces:
 
 ```mermaid
 graph TD
@@ -286,7 +286,7 @@ The size of the pre-built knowledge base is determined by three main elements:
 ##### 1. Exclude Raw PDF Binaries
 The current CMS Knowledge Base core extraction features and downstream use cases (such as schema crosswalks and variables) rely primarily on the HTML dataset and variable detail catalogs from ResDAC. 
 *   **Omit PDFs from Wheel:** You can safely exclude raw binary PDF documents from your PyPI packaging definitions. 
-*   **Retain Chunks only:** If you want search support for PDF content without bundling raw PDF files, perform the PDF parsing/chunking phase locally *before* building the release, inject the generated text chunks into [chunks.jsonl](file:///Users/saehwan/gitrepos/resdac-knowledge-base/data/parsed/chunks.jsonl) and [retrieval.sqlite](file:///Users/saehwan/gitrepos/resdac-knowledge-base/data/index/retrieval.sqlite), and then exclude `data/raw/**/*.pdf` from the final wheel. This retains the knowledge from PDFs while eliminating the binary overhead.
+*   **Retain Chunks only:** If you want search support for PDF content without bundling raw PDF files, perform the PDF parsing/chunking stage locally *before* building the release, inject the generated text chunks into [chunks.jsonl](file:///Users/saehwan/gitrepos/resdac-knowledge-base/data/parsed/chunks.jsonl) and [retrieval.sqlite](file:///Users/saehwan/gitrepos/resdac-knowledge-base/data/index/retrieval.sqlite), and then exclude `data/raw/**/*.pdf` from the final wheel. This retains the knowledge from PDFs while eliminating the binary overhead.
 
 ##### 2. Clean Up and Strip Raw HTML Files
 Raw ResDAC HTML files are filled with header boilerplate, style rules, JavaScript code, CSS classes, and presentation elements. Stripping these styling components while keeping semantic tags (`table`, `tr`, `td`, `a`) reduces disk space usage by **80% to 90%** and speeds up downstream parsers.

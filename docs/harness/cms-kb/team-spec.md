@@ -8,7 +8,7 @@ It is intentionally repo-local and markdown-driven. Version 1 does not add `AGEN
 
 ## Roles
 
-- `cms-kb-orchestrator`: classifies the request, assigns the phase, and enforces handoff order.
+- `cms-kb-orchestrator`: classifies the request, assigns the stage, and enforces handoff order.
 - `cms-kb-archive`: discovers source pages, inventories assets, and records archive provenance.
 - `cms-kb-extraction`: turns archived material into metadata, entities, and graph seeds.
 - `cms-kb-parse`: parses HTML and PDF text and generates chunks with complete provenance.
@@ -16,7 +16,7 @@ It is intentionally repo-local and markdown-driven. Version 1 does not add `AGEN
 
 ## Handoff Contract
 
-The harness uses deterministic `_workspace/` files so every phase can be inspected after the run.
+The harness uses deterministic `_workspace/` files so every stage can be inspected after the run.
 
 - `_workspace/01_request.md`: request scope, source scope, and acceptance criteria.
 - `_workspace/02_source_inventory.md`: discovered pages, files, and coverage notes.

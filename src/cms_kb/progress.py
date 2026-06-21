@@ -1,4 +1,4 @@
-"""Lightweight JSONL progress logging for long CMS KB pipeline phases.
+"""Lightweight JSONL progress logging for long CMS KB pipeline stages.
 
 This module provides structured tracking and monitoring of execution progress for
 potentially long-running pipeline steps (such as web crawling, archiving, or bulk document
@@ -29,17 +29,17 @@ class ProgressEvent(BaseModel):
 
   Attributes:
     timestamp_utc: ISO 8601 formatted timestamp of the event, normalized to UTC 'Z'.
-    phase: The active pipeline phase name (e.g., 'inventory', 'archive', 'parse').
+    stage: The active pipeline stage name (e.g., 'inventory', 'archive', 'parse').
     event: A categorizing slug for the event type (e.g., 'download_success', 'error', 'complete').
     message: Contextual human-readable details about the action being logged.
     url: Optional URL associated with the event (e.g., the page being downloaded).
     resource_kind: The category of the resource (e.g., 'dataset_page', 'asset').
     status: HTTP response status code, if applicable.
-    counts: Accumulated execution metrics up to this point in the phase.
+    counts: Accumulated execution metrics up to this point in the stage.
     error: Formatted traceback or message if the step failed.
   """
   timestamp_utc: str
-  phase: str
+  stage: str
   event: str
   message: str = ""
   url: str = ""
@@ -73,7 +73,7 @@ def init_progress_log(log_path: Path | None) -> None:
 def append_progress_event(
   log_path: Path | None,
   *,
-  phase: str,
+  stage: str,
   event: str,
   message: str = "",
   url: str = "",
@@ -88,7 +88,7 @@ def append_progress_event(
   log_path.parent.mkdir(parents=True, exist_ok=True)
   progress_event = ProgressEvent(
     timestamp_utc=timestamp_utc or now_utc_timestamp(),
-    phase=phase,
+    stage=stage,
     event=event,
     message=message,
     url=url,
@@ -221,7 +221,7 @@ def main(argv: list[str] | None = None) -> int:
     if isinstance(last_event, dict):
       print(
         "last_event: "
-        f"{last_event.get('timestamp_utc')} {last_event.get('phase')} "
+        f"{last_event.get('timestamp_utc')} {last_event.get('stage')} "
         f"{last_event.get('event')} {last_event.get('url') or ''}"
       )
   return 0

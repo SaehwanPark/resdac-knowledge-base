@@ -658,7 +658,7 @@ def _emit_archive_periodic_progress(
     )
   append_progress_event(
     config.progress_log_path,
-    phase="archive",
+    stage="archive",
     event="progress",
     counts=counts,
   )
@@ -853,7 +853,7 @@ def _bulk_defer_remaining_rows(
   if bulk_deferred:
     append_progress_event(
       config.progress_log_path,
-      phase="archive",
+      stage="archive",
       event="circuit_breaker_bulk",
       message=(
         f"deferred {bulk_deferred} remaining variable pages after repeated HTTP 429 "
@@ -909,7 +909,7 @@ def run_archive(
   init_progress_log(config.progress_log_path)
   append_progress_event(
     config.progress_log_path,
-    phase="archive",
+    stage="archive",
     event="start",
     message=f"inventory={config.inventory_path}",
     counts={"inventory_rows": inventory_row_count},
@@ -929,7 +929,7 @@ def run_archive(
       progress_fn(warning_message)
     append_progress_event(
       config.progress_log_path,
-      phase="archive",
+      stage="archive",
       event="preflight_warning",
       message=warning_message,
       counts={"variable_page_count": variable_page_count},
@@ -965,7 +965,7 @@ def run_archive(
       )
       append_progress_event(
         config.progress_log_path,
-        phase="archive",
+        stage="archive",
         event="skip",
         url=row.url,
         resource_kind=row.resource_kind,
@@ -996,7 +996,7 @@ def run_archive(
       )
       append_progress_event(
         config.progress_log_path,
-        phase="archive",
+        stage="archive",
         event="retry_skip",
         message="no previous manifest row in retry-failed-only mode",
         url=row.url,
@@ -1036,7 +1036,7 @@ def run_archive(
       )
       append_progress_event(
         config.progress_log_path,
-        phase="archive",
+        stage="archive",
         event="carry_forward",
         url=row.url,
         resource_kind=row.resource_kind,
@@ -1070,7 +1070,7 @@ def run_archive(
       )
       append_progress_event(
         config.progress_log_path,
-        phase="archive",
+        stage="archive",
         event="download_limit",
         message="not attempted because max downloads reached",
         url=row.url,
@@ -1100,7 +1100,7 @@ def run_archive(
       consecutive_rate_limits = 0
       append_progress_event(
         config.progress_log_path,
-        phase="archive",
+        stage="archive",
         event="download_failure",
         url=row.url,
         resource_kind=row.resource_kind,
@@ -1138,7 +1138,7 @@ def run_archive(
       consecutive_rate_limits = 0
       append_progress_event(
         config.progress_log_path,
-        phase="archive",
+        stage="archive",
         event="reuse",
         url=row.url,
         resource_kind=row.resource_kind,
@@ -1172,7 +1172,7 @@ def run_archive(
         consecutive_rate_limits += 1
         append_progress_event(
           config.progress_log_path,
-          phase="archive",
+          stage="archive",
           event="rate_limited",
           url=row.url,
           resource_kind=row.resource_kind,
@@ -1197,7 +1197,7 @@ def run_archive(
         consecutive_rate_limits = 0
         append_progress_event(
           config.progress_log_path,
-          phase="archive",
+          stage="archive",
           event="download_failure",
           url=row.url,
           resource_kind=row.resource_kind,
@@ -1255,7 +1255,7 @@ def run_archive(
     )
     append_progress_event(
       config.progress_log_path,
-      phase="archive",
+      stage="archive",
       event="download_success",
       url=row.url,
       resource_kind=row.resource_kind,
@@ -1312,7 +1312,7 @@ def run_archive(
   }
   append_progress_event(
     config.progress_log_path,
-    phase="archive",
+    stage="archive",
     event="complete",
     counts=complete_counts,
   )

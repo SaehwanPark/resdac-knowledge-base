@@ -1,6 +1,6 @@
 """CMS Knowledge Base core libraries and CLI utilities.
 
-This package exposes the programmatic API components for all pipeline phases:
+This package exposes the programmatic API components for all pipeline stages:
 - Phase 0: Discovery Inventory crawl (`cms_kb.inventory`)
 - Phase 1: Archive preservation (`cms_kb.archive`)
 - Phase 2: Metadata and ontology extraction (`cms_kb.extraction`)
