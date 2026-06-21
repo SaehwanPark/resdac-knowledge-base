@@ -83,3 +83,12 @@ Use this file to record recurring setup traps, debugging lessons, and workflow g
 - Cause: archive progress is written to `_workspace/03_archive_progress.jsonl`, and the manifest summary is only refreshed at the end of the run.
 - Resolution: tail the JSONL log (`tail -f _workspace/03_archive_progress.jsonl`) or summarize recent events with `uv run cms-kb-progress _workspace/03_archive_progress.jsonl --lines 20`.
 - Prevention: leave progress logging enabled for long archive batches; use periodic rollup lines (`--progress-interval 25`) to scan status without reading every per-row event.
+
+### Word boundaries in codebase scanner must support hyphens
+
+- Context: implementing the codebase caveat scanner in Phase 11C.
+- Symptom: variable `BENE_ID` was identified, but dataset `mbsf-base` was not matched.
+- Cause: regex `\b` does not treat `-` (hyphen) as a word character, splitting `mbsf-base` into separate tokens `mbsf` and `base` during tokenization.
+- Resolution: replace `\b` boundary assertions with lookaround assertions `(?<![A-Za-z0-9_-])` and `(?![A-Za-z0-9_-])` to correctly match symbols containing hyphens as single tokens.
+- Prevention: when scanning codebase files for identifiers that can contain hyphens, avoid simple `\b` boundary checks and use boundary-independent lookaround patterns.
+

@@ -38,6 +38,8 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 9: Package Distribution (PyPI) is implemented, bundling pre-built index database, CSV metadata, graph edges, and optimized HTML assets inside the module package. Resolved dynamically at runtime via importlib.resources and size-optimized to stay below the 100MB upload limit.
 - Phase 11A is implemented: programmatic schema crosswalking and dataset availability query helpers (with year availability parsing and a custom CLI subcommand cms-kb-integration).
 - Phase 11B is implemented: dynamic cohort data dictionary generators querying the SQLite FTS5 backend (supporting case-insensitive matches, definition prefix stripping, and metadata integration).
+- Phase 11C is implemented: code caveat and limitation scanner to check analysis scripts against KB text chunks (supporting variables, datasets, and custom keywords).
+- Phase 11D is implemented: RAG-oriented context formatters for code generators and external agents (supporting prompt, markdown, and XML outputs).
 
 
 ## Present
@@ -47,18 +49,6 @@ checked-in corpus coverage, and retained generated data artifacts.
 Future work is organized as implementation phases. A phase may be promoted into
 `Present` when active work begins, with concise verification criteria and
 explicit out-of-scope notes.
-
-### Phase 11: Downstream Integration APIs
-Purpose: provide standard programmatic APIs and CLI utility patterns to assist external research projects and AI agent workflows using the packaged KB.
-
-Subphases:
-- 11C: Implement a code caveat and limitation scanner to check analysis scripts against KB text chunks.
-- 11D: Expose RAG-oriented context formatters for code generators and external agents.
-
-Verification:
-- Integration APIs run correctly on sample scripts and cohort columns.
-- Helper queries resolve exact variable matches and return clean citation links.
-- Context outputs match the existing `SearchResult` and Pydantic models.
 
 ### Phase 12: Evaluation Suite
 Purpose: measure retrieval and agent-context quality with gold-standard CMS
