@@ -247,10 +247,40 @@ uv run cms-kb-mcp-setup --client codex-project --project-path /absolute/path/to/
 ```
 
 ### Running the Server Locally
-To start the MCP server in standard I/O mode:
+
+The MCP server supports running in the foreground (standard I/O mode) or in the background as a daemon process (SSE mode).
+
+#### Foreground Mode (stdio)
+To start the MCP server directly in your terminal in standard I/O mode (default):
 ```bash
 uv run cms-kb-mcp
 ```
+To run foreground mode using the SSE transport:
+```bash
+uv run cms-kb-mcp --transport sse --port 8000
+```
+
+#### Background Daemon Mode
+For a better user experience when running manually, you can manage the server as a background daemon process:
+
+1. **Start the background server**:
+   ```bash
+   uv run cms-kb-mcp start
+   ```
+   *By default, this launches an HTTP SSE server binding to `127.0.0.1:8000`. You can customize the host, port, and transport using the `--host`, `--port`, and `--transport` options.*
+
+2. **Check server status**:
+   ```bash
+   uv run cms-kb-mcp status
+   ```
+   *Displays whether the server is running, the active PID, transport mode, endpoint URL, start time, and log file location (`_workspace/mcp_server.log`).*
+
+3. **Stop the background server**:
+   ```bash
+   uv run cms-kb-mcp stop
+   ```
+   *Gracefully terminates the background server process and cleans up tracking state files.*
+
 
 ### Claude Desktop Integration
 To configure Claude Desktop to use the server, add the following to your `claude_desktop_config.json`:

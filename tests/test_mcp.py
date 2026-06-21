@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Generator
 
 import pytest
+from unittest.mock import MagicMock, patch
+
 
 from cms_kb.mcp import (
   get_agent_context,
@@ -133,3 +135,80 @@ def test_mcp_cli_fails_on_missing_files(tmp_path: Path, capsys: pytest.CaptureFi
   assert exit_code == 1
   captured = capsys.readouterr()
   assert "Datasets metadata file not found" in captured.err
+
+
+def test_mcp_cli_status_stopped(tmp_path: Path, capsys: pytest.CaptureFixture[str], monkeypatch: pytest.MonkeyPatch) -> None:
+  # Ensure no state file is present
+  monkeypatch.chdir(tmp_path)
+  exit_code = main(["status"])
+  assert exit_code == 0
+  captured = capsys.readouterr()
+  assert "MCP server status: stopped" in captured.out
+
+
+def test_mcp_cli_stop_not_running(tmp_path: Path, capsys: pytest.CaptureFixture[str], monkeypatch: pytest.MonkeyPatch) -> None:
+  # Ensure no state file is present
+  monkeypatch.chdir(tmp_path)
+  exit_code = main(["stop"])
+  assert exit_code == 1
+  captured = capsys.readouterr()
+  assert "Error: No MCP server is currently running." in captured.err
+@patch("cms_kb.mcp.subprocess.Popen")
+@patch("cms_kb.mcp.is_mcp_server_process")
+@patch("cms_kb.mcp.is_process_running")
+@patch("cms_kb.mcp.os.kill")
+def test_mcp_cli_start_status_stop_flow(
+  mock_kill: MagicMock,
+  mock_is_running: MagicMock,
+  mock_is_mcp: MagicMock,
+  mock_popen: MagicMock,
+  tmp_path: Path,
+  capsys: pytest.CaptureFixture[str],
+  monkeypatch: pytest.MonkeyPatch,
+) -> None:
+  monkeypatch.chdir(tmp_path)
+  
+  # 1. Test start
+  mock_proc = MagicMock()
+  mock_proc.pid = 99999
+  mock_proc.poll.return_value = None  # means process is running
+  mock_popen.return_value = mock_proc
+  
+  mock_is_running.return_value = True
+  mock_is_mcp.return_value = True
+
+  exit_code = main(["start", "--port", "9000", "--host", "127.0.0.1"])
+  assert exit_code == 0
+  captured = capsys.readouterr()
+  assert "Starting MCP server in background" in captured.out
+  assert "MCP server started successfully" in captured.out
+  
+  # Check if state file was created
+  state_file = tmp_path / "_workspace" / "mcp_server_state.json"
+  assert state_file.is_file()
+  
+  with open(state_file, "r") as f:
+    state_data = json.load(f)
+  assert state_data["pid"] == 99999
+  assert state_data["port"] == 9000
+  assert state_data["host"] == "127.0.0.1"
+
+  # 2. Test status running
+  exit_code = main(["status"])
+  assert exit_code == 0
+  captured = capsys.readouterr()
+  assert "MCP server status: running" in captured.out
+  assert "PID: 99999" in captured.out
+  assert "Port: 9000" in captured.out
+
+  # 3. Test stop
+  mock_is_running.side_effect = [True, False]
+  exit_code = main(["stop"])
+  assert exit_code == 0
+  captured = capsys.readouterr()
+  assert "Stopping MCP server (PID: 99999)" in captured.out
+  assert "MCP server stopped successfully." in captured.out
+  
+  # Check state file is removed
+  assert not state_file.exists()
+

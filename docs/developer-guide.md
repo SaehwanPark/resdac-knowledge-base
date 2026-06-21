@@ -65,7 +65,7 @@ The package defines several command-line tools in `pyproject.toml`. Run all comm
 | `cms-kb-search` | `cms_kb.retrieval` | stdout (JSON) | Direct local lexical search CLI |
 | `cms-kb-index` | `cms_kb.retrieval` | `data/index/retrieval.sqlite` | Compiles the SQLite FTS5 serving index |
 | `cms-kb-agent-context` | `cms_kb.agent_api` | stdout (JSON) | Retrieval context CLI with citation mapping |
-| `cms-kb-mcp` | `cms_kb.mcp` | stdio stream | Model Context Protocol (MCP) server |
+| `cms-kb-mcp` | `cms_kb.mcp` | stdio / HTTP / log | Model Context Protocol (MCP) server (supports start/stop/status background daemon commands) |
 | `cms-kb-progress` | `cms_kb.progress` | stdout | Summarize tail of inventory/archive progress JSONL |
 
 ---
@@ -187,13 +187,32 @@ Refer to the [user-manual.md](user-manual.md) for more details.
 
 ### Running the Server locally
 
+The server supports two execution modes:
+
+#### Foreground Mode (stdio)
 ```bash
 uv run cms-kb-mcp
+```
+
+#### Background Daemon Mode (start/stop/status)
+```bash
+# Start background server (runs as SSE HTTP server by default)
+uv run cms-kb-mcp start --port 8000
+
+# Inspect server status
+uv run cms-kb-mcp status
+
+# Stop background server
+uv run cms-kb-mcp stop
 ```
 
 ### Configuration Options
 The server CLI accepts the following configuration flags:
 
+*   `command`: Optional action (`start`, `stop`, `status`). If omitted, starts in the foreground.
+*   `--transport`: Transport protocol to use (`stdio`, `sse`, or `streamable-http`). Defaults to `stdio` for foreground, and `sse` for background daemon.
+*   `--host`: Host to bind the SSE server to (default: `127.0.0.1`).
+*   `--port`: Port to bind the SSE server to (default: `8000`).
 *   `--datasets-metadata`: Path to `datasets.csv` (default: `data/metadata/datasets.csv`)
 *   `--documents-metadata`: Path to `documents.csv` (default: `data/metadata/documents.csv`)
 *   `--variables-metadata`: Path to `variables.csv` (default: `data/metadata/variables.csv`)
