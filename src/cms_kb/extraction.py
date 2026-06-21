@@ -24,7 +24,7 @@ import hashlib
 from html.parser import HTMLParser
 import re
 from pathlib import Path
-from typing import Literal, Sequence
+from typing import Literal, Sequence, TypeVar
 from urllib.parse import urlparse
 
 from pydantic import BaseModel, Field
@@ -621,8 +621,11 @@ def _edge_for_document(row: DocumentMetadataRow) -> DocumentEdgeRow:
   )
 
 
-def _write_model_csv[T: BaseModel](
-  rows: list[T], output_path: Path, fieldnames: Sequence[str]
+_T = TypeVar("_T", bound=BaseModel)
+
+
+def _write_model_csv(
+  rows: list[_T], output_path: Path, fieldnames: Sequence[str]
 ) -> None:
   output_path.parent.mkdir(parents=True, exist_ok=True)
   with output_path.open("w", newline="", encoding="utf-8") as handle:

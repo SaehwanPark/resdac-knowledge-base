@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## version 1.0.2
+
+### Changed
+- Decreased `requires-python` from `">=3.13"` to `">=3.11"` for broader adoption.
+- Down-leveled PEP 695 generics to Python 3.11 compatible `TypeVar` syntax in `extraction.py` and `variables.py`.
+- Optimized wheel and source distribution packaging by globally excluding raw, parsed, and temporary index folders, reducing build sizes below 20MB.
+
 ## version 1.0.0
 
 ### Added
