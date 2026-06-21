@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Added
+- Phase 11B: implemented dynamic cohort data dictionary generators querying the SQLite FTS5 backend (exposed via programmatic API and CLI subcommand).
 - Archive progress logging now emits periodic rollup events, truncates the
   per-run JSONL log at start, flushes each append, and reads tails efficiently
   from large logs.
