@@ -37,6 +37,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 10B-C is implemented: optional hybrid retrieval and ranking is added via candidate semantic reranking from pre-computed SQLite embeddings. The pipeline preserves deterministic citation outputs, exact identifier query reliability, and handles library fallbacks gracefully.
 - Phase 9: Package Distribution (PyPI) is implemented, bundling pre-built index database, CSV metadata, graph edges, and optimized HTML assets inside the module package. Resolved dynamically at runtime via importlib.resources and size-optimized to stay below the 100MB upload limit.
 - Phase 11A is implemented: programmatic schema crosswalking and dataset availability query helpers (with year availability parsing and a custom CLI subcommand cms-kb-integration).
+- Phase 11B is implemented: dynamic cohort data dictionary generators querying the SQLite FTS5 backend (supporting case-insensitive matches, definition prefix stripping, and metadata integration).
 
 
 ## Present
@@ -51,7 +52,6 @@ explicit out-of-scope notes.
 Purpose: provide standard programmatic APIs and CLI utility patterns to assist external research projects and AI agent workflows using the packaged KB.
 
 Subphases:
-- 11B: Implement dynamic cohort data dictionary generators querying the SQLite FTS5 backend.
 - 11C: Implement a code caveat and limitation scanner to check analysis scripts against KB text chunks.
 - 11D: Expose RAG-oriented context formatters for code generators and external agents.
 

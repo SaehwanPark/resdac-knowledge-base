@@ -10,7 +10,9 @@ import argparse
 import csv
 import functools
 import json
+from pathlib import Path
 import re
+import sqlite3
 import sys
 from pydantic import BaseModel
 
@@ -228,6 +230,125 @@ def crosswalk_variables(variable_names: list[str]) -> VariableCrosswalkResponse:
   return VariableCrosswalkResponse(variables=result)
 
 
+class CohortVariableDetail(BaseModel):
+  """Cohort variable documentation details querying the SQLite FTS5 backend.
+
+  Attributes:
+    variable_name: The queried variable name (casing preserved).
+    record_id: Unique record identifier in the database.
+    dataset_id: Dataset ID where this variable belongs.
+    dataset_name: Human-readable dataset name.
+    definition: Extracted definition of the variable.
+    source_url: Source documentation URL.
+    source_document: Local path to the archived source document.
+    page: Optional page number of the source document.
+    available_years: Sorted list of years the dataset is available.
+  """
+  variable_name: str
+  record_id: str
+  dataset_id: str
+  dataset_name: str
+  definition: str
+  source_url: str
+  source_document: str
+  page: int | None = None
+  available_years: list[int]
+
+
+def generate_cohort_dictionary(
+    variable_names: list[str],
+    database_path: Path | str | None = None,
+) -> dict[str, list[CohortVariableDetail]]:
+  """Queries the SQLite index to extract details and definitions for cohort columns.
+
+  Args:
+    variable_names: A list of cohort variable names/columns to query.
+    database_path: Optional path to the SQLite search index. Defaults to packaged path.
+
+  Returns:
+    A dictionary mapping each queried variable name to a list of CohortVariableDetail.
+  """
+  if not variable_names:
+    return {}
+
+  if database_path is None:
+    db_path = get_packaged_data_path("index/retrieval.sqlite")
+  else:
+    db_path = Path(database_path)
+
+  if not db_path.is_file():
+    raise FileNotFoundError(f"Search index database not found at {db_path}")
+
+  datasets_map = _load_datasets_map()
+  variables_rows = _load_variables_list()
+  definitions_map = {
+    (row.get("variable_id") or ""): (row.get("definition") or "")
+    for row in variables_rows
+  }
+
+  result: dict[str, list[CohortVariableDetail]] = {
+    var: [] for var in variable_names
+  }
+
+  # Build a mapping of uppercase query names to their original cases
+  query_map: dict[str, list[str]] = {}
+  for var in variable_names:
+    query_map.setdefault(var.upper(), []).append(var)
+
+  # Connect to the SQLite database in read-only mode using a URI path
+  conn = sqlite3.connect(f"file:{db_path.resolve()}?mode=ro", uri=True)
+  try:
+    cursor = conn.cursor()
+    # Match query_map keys (variable names) case-insensitively, chunked to prevent SQL variable limit
+    all_keys = list(query_map.keys())
+    batch_size = 900
+    rows = []
+    for i in range(0, len(all_keys), batch_size):
+      batch = all_keys[i:i + batch_size]
+      placeholders = ", ".join(["?"] * len(batch))
+      query = f"""
+        SELECT record_id, title, dataset_id, source_url, source_document, page
+        FROM records
+        WHERE record_type = 'variable' AND UPPER(title) IN ({placeholders})
+      """
+      cursor.execute(query, batch)
+      rows.extend(cursor.fetchall())
+
+    for record_id, title, dataset_id, source_url, source_document, page in rows:
+      upper_title = title.upper()
+      if upper_title in query_map:
+        for original_var_name in query_map[upper_title]:
+          # Get clean definition directly from the cached variables metadata
+          definition = definitions_map.get(record_id, "")
+
+          # Look up dataset metadata
+          if dataset_id in datasets_map:
+            ds_info = datasets_map[dataset_id]
+            ds_name = ds_info.name
+            available_years = ds_info.available_years
+          else:
+            ds_name = dataset_id
+            available_years = []
+
+          detail = CohortVariableDetail(
+            variable_name=original_var_name,
+            record_id=record_id,
+            dataset_id=dataset_id,
+            dataset_name=ds_name,
+            definition=definition,
+            source_url=source_url,
+            source_document=source_document,
+            page=page,
+            available_years=available_years,
+          )
+          result[original_var_name].append(detail)
+
+  finally:
+    conn.close()
+
+  return result
+
+
 def build_arg_parser() -> argparse.ArgumentParser:
   """Builds the ArgumentParser instance for integration subcommands."""
   parser = argparse.ArgumentParser(
@@ -255,6 +376,17 @@ def build_arg_parser() -> argparse.ArgumentParser:
     "--variables",
     required=True,
     help="Comma-separated list of variable names to crosswalk.",
+  )
+
+  # Subcommand: cohort-dictionary
+  cohort_dictionary_parser = subparsers.add_parser(
+    "cohort-dictionary",
+    help="Generate cohort data dictionary by querying the SQLite FTS5 backend.",
+  )
+  cohort_dictionary_parser.add_argument(
+    "--variables",
+    required=True,
+    help="Comma-separated list of cohort variable names.",
   )
 
   return parser
@@ -287,6 +419,17 @@ def main(args: list[str] | None = None) -> int:
       ]
       response = crosswalk_variables(variables_list)
       print(response.model_dump_json(indent=2))
+
+    elif parsed_args.command == "cohort-dictionary":
+      variables_list = [
+        v.strip() for v in parsed_args.variables.split(",") if v.strip()
+      ]
+      result = generate_cohort_dictionary(variables_list)
+      serialized = {
+        var: [item.model_dump() for item in items]
+        for var, items in result.items()
+      }
+      print(json.dumps(serialized, indent=2))
 
     return 0
   except Exception as e:

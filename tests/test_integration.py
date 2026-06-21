@@ -6,8 +6,11 @@ from cms_kb.integration import (
   check_dataset_availability,
   crosswalk_variables,
   VariableCrosswalkResponse,
+  generate_cohort_dictionary,
+  CohortVariableDetail,
   main,
 )
+
 
 def test_parse_availability_years() -> None:
   # Simple range
@@ -111,3 +114,74 @@ def test_cli_subcommands(capsys: pytest.CaptureFixture[str]) -> None:
   assert "BENE_ID" in data["variables"]
   assert "bene_id" in data["variables"]
   assert len(data["variables"]["BENE_ID"]) > 0
+
+
+def test_generate_cohort_dictionary() -> None:
+  # Query cohort dictionary for BENE_ID and bene_birth_dt
+  result = generate_cohort_dictionary(["BENE_ID", "bene_birth_dt", "NON_EXISTENT_VAR"])
+  assert isinstance(result, dict)
+  assert "BENE_ID" in result
+  assert "bene_birth_dt" in result
+  assert "NON_EXISTENT_VAR" in result
+
+  # Check BENE_ID detail
+  bene_items = result["BENE_ID"]
+  assert len(bene_items) > 0
+  for item in bene_items:
+    assert isinstance(item, CohortVariableDetail)
+    assert item.variable_name == "BENE_ID"
+    assert item.record_id != ""
+    assert item.dataset_id != ""
+    assert item.dataset_name != ""
+    assert isinstance(item.available_years, list)
+    assert item.source_url.startswith("http")
+    # Verify prefix was stripped from definition
+    assert not item.definition.startswith(f"{item.record_id} {item.variable_name} {item.dataset_id}")
+
+  # Check that at least some matching datasets have populated availability years
+  assert any(len(item.available_years) > 0 for item in bene_items)
+
+
+  # Check bene_birth_dt detail
+  birth_items = result["bene_birth_dt"]
+  assert len(birth_items) > 0
+  for item in birth_items:
+    assert isinstance(item, CohortVariableDetail)
+    # Check casing is preserved per-query key
+    assert item.variable_name == "bene_birth_dt"
+
+  # Check non-existent variable maps to empty list
+  assert result["NON_EXISTENT_VAR"] == []
+
+
+def test_cli_cohort_dictionary(capsys: pytest.CaptureFixture[str]) -> None:
+  assert main(["cohort-dictionary", "--variables", "BENE_ID, bene_birth_dt"]) == 0
+  captured = capsys.readouterr()
+  data = json.loads(captured.out)
+  assert "BENE_ID" in data
+  assert "bene_birth_dt" in data
+  assert len(data["BENE_ID"]) > 0
+  # Ensure the serialized JSON fields are correct
+  item = data["BENE_ID"][0]
+  assert "variable_name" in item
+  assert "record_id" in item
+  assert "definition" in item
+  assert "available_years" in item
+
+
+def test_generate_cohort_dictionary_empty() -> None:
+  # Verify that querying with empty list returns empty dict without errors
+  assert generate_cohort_dictionary([]) == {}
+
+
+def test_generate_cohort_dictionary_large_input() -> None:
+  # Generate a large query list of 1000 variables to test SQLite parameter chunking limit
+  query_list = [f"VAR_{i}" for i in range(1000)] + ["BENE_ID"]
+  result = generate_cohort_dictionary(query_list)
+  assert isinstance(result, dict)
+  assert "BENE_ID" in result
+  assert len(result["BENE_ID"]) > 0
+  assert result["VAR_0"] == []
+
+
+
