@@ -191,17 +191,17 @@ def test_generate_cohort_dictionary_large_input() -> None:
 def test_format_agent_context() -> None:
   from cms_kb.agent_api import AgentContextResponse, AgentContextHit, AgentCitation
   response = AgentContextResponse(
-    query="BENE_ID",
+    query="BENE_ID & GNDR_CD",
     results=[
       AgentContextHit(
         record_id="carrier-ffs-bene_id",
         record_type="variable",
-        title="BENE_ID",
+        title='BENE_ID "Identifier"',
         dataset_id="carrier-ffs",
         score=1.5,
-        snippet="This is a snippet for BENE_ID.",
+        snippet="Snippet containing <special> characters & symbols.",
         citation=AgentCitation(
-          source_url="https://resdac.org/cms-data/variables/bene-id",
+          source_url="https://resdac.org/cms-data/variables/bene-id?p=1&q=2",
           source_document="data/raw/html/variable_page/bene_id.html"
         )
       )
@@ -211,37 +211,51 @@ def test_format_agent_context() -> None:
   # Format as prompt
   prompt_out = format_agent_context(response, "prompt")
   assert "=== CMS DOCUMENTATION CONTEXT ===" in prompt_out
-  assert "Record: BENE_ID (variable)" in prompt_out
-  assert "Snippet: This is a snippet for BENE_ID." in prompt_out
-  assert "Source URL: https://resdac.org/cms-data/variables/bene-id" in prompt_out
+  assert 'Record: BENE_ID "Identifier" (variable)' in prompt_out
+  assert "Snippet: Snippet containing <special> characters & symbols." in prompt_out
+  assert "Source URL: https://resdac.org/cms-data/variables/bene-id?p=1&q=2" in prompt_out
 
   # Format as markdown
   markdown_out = format_agent_context(response, "markdown")
   assert "### CMS Documentation Context" in markdown_out
-  assert "#### 1. BENE_ID (variable)" in markdown_out
+  assert '#### 1. BENE_ID "Identifier" (variable)' in markdown_out
   assert "**Source URL**:" in markdown_out
 
   # Format as xml
   xml_out = format_agent_context(response, "xml")
   assert "<documentation_context>" in xml_out
-  assert '<record id="carrier-ffs-bene_id"' in xml_out
-  assert "<excerpt>This is a snippet for BENE_ID.</excerpt>" in xml_out
+  assert 'query>BENE_ID &amp; GNDR_CD</query' in xml_out
+  assert 'record id="carrier-ffs-bene_id" type="variable" title="BENE_ID &quot;Identifier&quot;"' in xml_out
+  assert "<source_url>https://resdac.org/cms-data/variables/bene-id?p=1&amp;q=2</source_url>" in xml_out
+  assert "<excerpt>Snippet containing &lt;special&gt; characters &amp; symbols.</excerpt>" in xml_out
 
 
 def test_scan_codebase_caveats(tmp_path: Path) -> None:
-  # Create a mock code file referencing BENE_ID and mbsf-base
-  mock_script = tmp_path / "analysis.sas"
+  # Create a directory and place mock code inside it to verify directory traversal
+  sub_dir = tmp_path / "src"
+  sub_dir.mkdir()
+  mock_script = sub_dir / "analysis.sas"
   mock_script.write_text("data cohort; set lib.carrier; run; * check BENE_ID and mbsf-base here;", encoding="utf-8")
 
-  # Run scanner. BENE_ID matches variable metadata, mbsf-base matches dataset metadata
-  response = scan_codebase_caveats([mock_script])
+  # Run scanner passing directory path. BENE_ID matches variable metadata, mbsf-base matches dataset metadata
+  response = scan_codebase_caveats([sub_dir])
   assert isinstance(response, CaveatScanResponse)
   assert "BENE_ID" in response.matches
   assert "mbsf-base" in response.matches
 
-  # Pass additional keywords
+  # Pass additional keywords and verify we get actual caveat records (relevance ordered)
   response_with_kw = scan_codebase_caveats([mock_script], additional_keywords=["encounter"])
   assert "encounter" in response_with_kw.matches
+  assert len(response_with_kw.matches["encounter"]) > 0
+  assert response_with_kw.matches["encounter"][0].score > 0.0
+
+  # Verify passing double-quoted keyword does not crash and handles safely
+  response_quotes = scan_codebase_caveats([mock_script], additional_keywords=['test"quote'])
+  assert 'test"quote' in response_quotes.matches
+
+  # Verify invalid database path raises FileNotFoundError
+  with pytest.raises(FileNotFoundError, match="Search index database not found at"):
+    scan_codebase_caveats([mock_script], database_path=tmp_path / "non_existent_db.sqlite")
 
 
 def test_cli_integration_new_commands(capsys: pytest.CaptureFixture[str], tmp_path: Path) -> None:
@@ -256,12 +270,13 @@ def test_cli_integration_new_commands(capsys: pytest.CaptureFixture[str], tmp_pa
   assert "BENE_ID" in data["matches"]
   assert "mbsf-base" in data["matches"]
   assert "encounter" in data["matches"]
-
+  assert len(data["matches"]["encounter"]) > 0
 
   # Test format-context CLI
   assert main(["format-context", "--query", "BENE_ID", "--format", "markdown", "--limit", "2"]) == 0
   captured = capsys.readouterr()
   assert "### CMS Documentation Context" in captured.out
+
 
 
 

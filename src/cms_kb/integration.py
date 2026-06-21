@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import csv
 import functools
+import html
 import json
 from pathlib import Path
 import re
@@ -433,19 +434,22 @@ def format_agent_context(response: AgentContextResponse, format_type: str = "pro
     return "\n".join(lines).strip()
 
   elif format_type == "xml":
-    lines = ["<documentation_context>", f"  <query>{response.query}</query>"]
+    lines = ["<documentation_context>", f"  <query>{html.escape(response.query)}</query>"]
     for hit in response.results:
-      lines.append(f'  <record id="{hit.record_id}" type="{hit.record_type}" title="{hit.title}">')
-      lines.append(f"    <source_url>{hit.citation.source_url}</source_url>")
+      rec_id = html.escape(hit.record_id, quote=True)
+      rec_type = html.escape(hit.record_type, quote=True)
+      rec_title = html.escape(hit.title, quote=True)
+      lines.append(f'  <record id="{rec_id}" type="{rec_type}" title="{rec_title}">')
+      lines.append(f"    <source_url>{html.escape(hit.citation.source_url)}</source_url>")
       if hit.citation.source_document:
-        lines.append(f"    <local_path>{hit.citation.source_document}</local_path>")
+        lines.append(f"    <local_path>{html.escape(hit.citation.source_document)}</local_path>")
       if hit.citation.page is not None:
         lines.append(f"    <page>{hit.citation.page}</page>")
       if hit.citation.variable_url:
-        lines.append(f"    <variable_url>{hit.citation.variable_url}</variable_url>")
+        lines.append(f"    <variable_url>{html.escape(hit.citation.variable_url)}</variable_url>")
       if hit.citation.variable_document:
-        lines.append(f"    <variable_local_path>{hit.citation.variable_document}</variable_local_path>")
-      lines.append(f"    <excerpt>{hit.snippet}</excerpt>")
+        lines.append(f"    <variable_local_path>{html.escape(hit.citation.variable_document)}</variable_local_path>")
+      lines.append(f"    <excerpt>{html.escape(hit.snippet)}</excerpt>")
       lines.append("  </record>")
     lines.append("</documentation_context>")
     return "\n".join(lines)
@@ -489,12 +493,18 @@ def scan_codebase_caveats(
       if kw.strip():
         found_keywords.add(kw.strip())
 
+  # Recursively resolve file paths if directories are passed
+  all_files: list[Path] = []
   for file_path in code_files:
     path = Path(file_path)
-    if not path.is_file():
-      continue
+    if path.is_dir():
+      all_files.extend(p for p in path.rglob("*") if p.is_file())
+    elif path.is_file():
+      all_files.append(path)
+
+  for file_path in all_files:
     try:
-      content = path.read_text(encoding="utf-8", errors="replace")
+      content = file_path.read_text(encoding="utf-8", errors="replace")
     except Exception:
       continue
 
@@ -512,29 +522,41 @@ def scan_codebase_caveats(
   else:
     db_path = Path(database_path)
 
+  if not db_path.is_file():
+    raise FileNotFoundError(f"Search index database not found at {db_path}")
+
   # 4. Query the SQLite database for caveats
   matches: dict[str, list[CaveatMatch]] = {kw: [] for kw in found_keywords}
 
-  if found_keywords and db_path.is_file():
+  if found_keywords:
     conn = sqlite3.connect(f"file:{db_path.resolve()}?mode=ro", uri=True)
     try:
       cursor = conn.cursor()
       for keyword in found_keywords:
+        # Strip double quotes to prevent syntax error in FTS5
+        clean_keyword = keyword.replace('"', '')
+        if not clean_keyword.strip():
+          continue
         # Build FTS5 query to find chunk records containing keyword and caveat terms
-        query = f'"{keyword}" AND (caveat OR limitations OR limitation OR exclude OR warn OR warning)'
+        query = f'"{clean_keyword}" AND (caveat OR limitations OR limitation OR exclude OR warn OR warning)'
         sql = """
-          SELECT r.record_id, r.record_type, r.title, r.dataset_id, r.source_url, r.source_document, r.page, f.text
+          SELECT r.record_id, r.record_type, r.title, r.dataset_id, r.source_url, r.source_document, r.page, f.text, f.rank
           FROM records r
           JOIN records_fts f ON r.record_id = f.record_id
           WHERE records_fts MATCH ? AND r.record_type = 'chunk'
+          ORDER BY f.rank
           LIMIT 5
         """
-        cursor.execute(sql, (query,))
-        rows = cursor.fetchall()
-        for record_id, record_type, title, dataset_id, source_url, source_document, page, text in rows:
+        try:
+          cursor.execute(sql, (query,))
+          rows = cursor.fetchall()
+        except sqlite3.OperationalError:
+          continue
+
+        for record_id, record_type, title, dataset_id, source_url, source_document, page, text, rank in rows:
           # Extract a snippet around the keyword
           snippet = text[:300] + "..." if len(text) > 300 else text
-          idx = text.lower().find(keyword.lower())
+          idx = text.lower().find(clean_keyword.lower())
           if idx != -1:
             start = max(0, idx - 100)
             end = min(len(text), idx + 200)
@@ -546,7 +568,7 @@ def scan_codebase_caveats(
             record_type=record_type,
             title=title,
             dataset_id=dataset_id,
-            score=1.0,
+            score=float(-rank) if rank is not None else 1.0,
             snippet=snippet,
             source_url=source_url,
             source_document=source_document,
