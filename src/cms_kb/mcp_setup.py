@@ -11,7 +11,9 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -26,9 +28,10 @@ CLIENT_CHOICES = {
 }
 
 
-def get_default_config_path(client: str, project_root: Path) -> Path | None:
+def get_default_config_path(client: str, project_root: Path, home: Path | None = None) -> Path | None:
   """Resolves the default configuration file path for a client based on the OS."""
-  home = Path.home()
+  if home is None:
+    home = Path.home()
 
   if client == "claude-desktop":
     if sys.platform == "win32":
@@ -69,9 +72,12 @@ def detect_project_root() -> Path:
   # Parent 2: src
   # Parent 3: project root
   try:
-    return Path(__file__).resolve().parents[2]
+    root = Path(__file__).resolve().parents[2]
+    if (root / "pyproject.toml").is_file():
+      return root
   except Exception:
-    return Path.cwd().resolve()
+    pass
+  return Path.cwd().resolve()
 
 
 def update_json_config(
@@ -128,8 +134,17 @@ def update_json_config(
 
   try:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-      json.dump(content, f, indent=2)
+    # Atomic write using tempfile
+    fd, temp_path_str = tempfile.mkstemp(dir=path.parent, prefix="mcp_config_", suffix=".tmp")
+    temp_path = Path(temp_path_str)
+    try:
+      with os.fdopen(fd, "w", encoding="utf-8") as f:
+        json.dump(content, f, indent=2)
+      temp_path.replace(path)
+    except Exception:
+      if temp_path.exists():
+        temp_path.unlink()
+      raise
     return True, f"Successfully configured MCP server in {path}."
   except Exception as exc:
     return False, f"Failed to write configuration to {path}: {exc}"
@@ -142,15 +157,17 @@ def update_toml_string(
   args: list[str],
 ) -> str:
   """Updates or appends an MCP server TOML section in the configuration string."""
-  args_toml = ", ".join(f'"{a}"' for a in args)
+  command_json = json.dumps(command)
+  args_json = ", ".join(json.dumps(a) for a in args)
   new_section = (
     f"[mcp_servers.{server_name}]\n"
     f'type = "stdio"\n'
-    f'command = "{command}"\n'
-    f'args = [{args_toml}]\n'
+    f'command = {command_json}\n'
+    f'args = [{args_json}]\n'
   )
 
-  pattern = rf"(?m)^\s*\[\s*mcp_servers\.{re.escape(server_name)}\s*\]\s*\n"
+  # Support optional single/double quotes around server name
+  pattern = rf"(?m)^\s*\[\s*mcp_servers\.['\"]?{re.escape(server_name)}['\"]?\s*\]\s*\n"
   match = re.search(pattern, content)
   if match:
     start_idx = match.start()
@@ -159,7 +176,25 @@ def update_toml_string(
       end_idx = match.end() + next_section.start()
     else:
       end_idx = len(content)
-    updated = content[:start_idx] + new_section + content[end_idx:]
+    
+    # Extract the lines of the existing section to filter out updated keys
+    # while preserving any comments or other user settings inside that section.
+    section_body = content[match.end() : end_idx]
+    preserved_lines = []
+    for line in section_body.splitlines(keepends=True):
+      stripped = line.strip()
+      if stripped.startswith(("type", "command", "args")) and "=" in stripped:
+        continue
+      preserved_lines.append(line)
+    
+    updated_section = new_section
+    if preserved_lines:
+      preserved_body = "".join(preserved_lines)
+      if not updated_section.endswith("\n"):
+        updated_section += "\n"
+      updated_section += preserved_body
+      
+    updated = content[:start_idx] + updated_section + content[end_idx:]
     return updated
   else:
     # Append
@@ -192,14 +227,21 @@ def update_toml_config(
       return False, f"Failed to read TOML configuration at {path}: {exc}"
 
   # Check if already present and identical to avoid churn
-  args_toml = ", ".join(f'"{a}"' for a in args)
-  expected_lines = [
-    f"[mcp_servers.{server_name}]",
-    'type = "stdio"',
-    f'command = "{command}"',
-    f"args = [{args_toml}]",
-  ]
-  if all(line in content for line in expected_lines):
+  command_json = json.dumps(command)
+  args_json = ", ".join(json.dumps(a) for a in args)
+  expected_block_unquoted = (
+    f"[mcp_servers.{server_name}]\n"
+    f'type = "stdio"\n'
+    f'command = {command_json}\n'
+    f'args = [{args_json}]'
+  )
+  expected_block_quoted = (
+    f'[mcp_servers."{server_name}"]\n'
+    f'type = "stdio"\n'
+    f'command = {command_json}\n'
+    f'args = [{args_json}]'
+  )
+  if expected_block_unquoted in content or expected_block_quoted in content:
     return True, f"Already configured and up-to-date in {path}."
 
   updated_content = update_toml_string(content, server_name, command, args)
@@ -209,8 +251,17 @@ def update_toml_config(
 
   try:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-      f.write(updated_content)
+    # Atomic write using tempfile
+    fd, temp_path_str = tempfile.mkstemp(dir=path.parent, prefix="mcp_config_", suffix=".tmp")
+    temp_path = Path(temp_path_str)
+    try:
+      with os.fdopen(fd, "w", encoding="utf-8") as f:
+        f.write(updated_content)
+      temp_path.replace(path)
+    except Exception:
+      if temp_path.exists():
+        temp_path.unlink()
+      raise
     return True, f"Successfully configured MCP server in {path}."
   except Exception as exc:
     return False, f"Failed to write configuration to {path}: {exc}"
@@ -257,11 +308,15 @@ def run_interactive_wizard() -> list[str]:
   print(f"  {len(choices_keys) + 1}) All of the above")
   print(f"  {len(choices_keys) + 2}) Exit")
 
+  if not sys.stdin.isatty():
+    print("Error: Interactive prompt cannot run in a non-TTY environment.", file=sys.stderr)
+    return []
+
   try:
     selection = input("\nSelect options: ").strip()
   except (KeyboardInterrupt, EOFError):
     print("\nSetup cancelled.")
-    sys.exit(0)
+    return []
 
   if not selection:
     print("No options selected. Exiting.")
@@ -315,14 +370,26 @@ def main(argv: list[str] | None = None) -> int:
       target_clients = list(dict.fromkeys(args.client))
   else:
     # Run interactive mode
+    if not sys.stdin.isatty():
+      print("Error: No client specified via --client, and stdin is not a TTY.", file=sys.stderr)
+      return 1
     target_clients = run_interactive_wizard()
+    if not target_clients:
+      # Cancelled or skipped
+      return 130
 
   if not target_clients:
     return 0
 
+  # De-duplicate client selections
+  target_clients = list(dict.fromkeys(target_clients))
+
+  # Resolve absolute path to 'uv' for GUI clients that lack terminal PATH variables
+  uv_path = shutil.which("uv")
+  command = uv_path if uv_path else "uv"
+
   # Command parameters for the MCP server
   server_name = "cms-knowledge-base"
-  command = "uv"
   mcp_args = ["--directory", str(project_root), "run", "cms-kb-mcp"]
 
   print(f"\nConfiguring MCP Server: {server_name}")

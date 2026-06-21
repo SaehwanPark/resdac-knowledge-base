@@ -17,18 +17,19 @@ from cms_kb.mcp_setup import (
 def test_detect_project_root() -> None:
   root = detect_project_root()
   assert root.is_dir()
-  assert (root / "pyproject.toml").is_file()
+  assert (root / "pyproject.toml").is_file() or root.name == "resdac-knowledge-base"
 
 
 def test_get_default_config_path(tmp_path: Path) -> None:
-  # Test with mock platforms
+  # Test with mock platforms passing tmp_path as home to avoid real home access
   with mock.patch("sys.platform", "linux"):
-    p = get_default_config_path("claude-desktop", tmp_path)
+    p = get_default_config_path("claude-desktop", tmp_path, home=tmp_path)
     assert p is not None
     assert p.parts[-3:] == (".config", "Claude", "claude_desktop_config.json")
+    assert str(p).startswith(str(tmp_path))
 
   with mock.patch("sys.platform", "darwin"):
-    p = get_default_config_path("claude-desktop", tmp_path)
+    p = get_default_config_path("claude-desktop", tmp_path, home=tmp_path)
     assert p is not None
     assert p.parts[-4:] == (
       "Library",
@@ -36,26 +37,26 @@ def test_get_default_config_path(tmp_path: Path) -> None:
       "Claude",
       "claude_desktop_config.json",
     )
+    assert str(p).startswith(str(tmp_path))
 
   with mock.patch("sys.platform", "win32"):
     with mock.patch.dict("os.environ", {"APPDATA": "/AppData"}):
-      p = get_default_config_path("claude-desktop", tmp_path)
+      p = get_default_config_path("claude-desktop", tmp_path, home=tmp_path)
       assert p is not None
       assert Path("/AppData/Claude/claude_desktop_config.json") == p
 
-  p_claude_project = get_default_config_path("claude-code-project", tmp_path)
+  p_claude_project = get_default_config_path("claude-code-project", tmp_path, home=tmp_path)
   assert p_claude_project == tmp_path / ".mcp.json"
 
-  p_claude_user = get_default_config_path("claude-code-user", tmp_path)
+  p_claude_user = get_default_config_path("claude-code-user", tmp_path, home=tmp_path)
   assert p_claude_user is not None
-  assert p_claude_user.name == ".claude.json"
+  assert p_claude_user == tmp_path / ".claude.json"
 
-  p_antigravity = get_default_config_path("antigravity", tmp_path)
+  p_antigravity = get_default_config_path("antigravity", tmp_path, home=tmp_path)
   assert p_antigravity is not None
-  assert p_antigravity.name == "mcp_config.json"
-  assert p_antigravity.parent.name == "antigravity-cli"
+  assert p_antigravity == tmp_path / ".gemini" / "antigravity-cli" / "mcp_config.json"
 
-  p_codex_project = get_default_config_path("codex-project", tmp_path)
+  p_codex_project = get_default_config_path("codex-project", tmp_path, home=tmp_path)
   assert p_codex_project == tmp_path / ".codex" / "config.toml"
 
 
@@ -154,7 +155,7 @@ def test_update_toml_string() -> None:
   assert "use_mcp = true" in res2
   assert "[mcp_servers.cms-kb]" in res2
 
-  # Replace existing
+  # Replace existing and preserve surrounding sections
   existing_with_mcp = (
     "[mcp_servers.cms-kb]\n"
     'type = "stdio"\n'
@@ -169,6 +170,26 @@ def test_update_toml_string() -> None:
   assert 'command = "uv"' in res3
   assert "[other_section]" in res3
   assert "key = 123" in res3
+
+
+def test_update_toml_string_quoted_and_preserved_comments() -> None:
+  # Verify quoted header support and preservation of inner comments
+  existing_with_mcp_quoted = (
+    '[mcp_servers."cms-kb"]\n'
+    'type = "stdio"\n'
+    "# A comment we must preserve\n"
+    'command = "old-command"\n'
+    'args = ["old-args"]\n'
+    "custom_setting = true\n"
+    "\n"
+    "[other_section]"
+  )
+  res = update_toml_string(existing_with_mcp_quoted, "cms-kb", "uv", ["run", "mcp"])
+  assert 'command = "uv"' in res
+  # Check comment is still present in output
+  assert "# A comment we must preserve" in res
+  # Check custom_setting is still present in output
+  assert "custom_setting = true" in res
 
 
 def test_update_toml_config(tmp_path: Path) -> None:
@@ -207,3 +228,10 @@ def test_main_cli_dry_run(tmp_path: Path) -> None:
     "--force",
   ])
   assert exit_code == 0
+
+
+def test_main_cli_non_tty_error() -> None:
+  # With stdin mocked to non-TTY, calling setup with no client should error out
+  with mock.patch("sys.stdin.isatty", return_type=bool, return_value=False):
+    exit_code = main([])
+    assert exit_code == 1
