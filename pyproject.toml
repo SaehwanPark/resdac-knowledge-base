@@ -31,6 +31,7 @@ cms-kb-agent-context = "cms_kb.agent_api:main"
 cms-kb-mcp = "cms_kb.mcp:main"
 cms-kb-evaluate-variables = "cms_kb.evaluation:main"
 cms-kb-progress = "cms_kb.progress:main"
+cms-kb-integration = "cms_kb.integration:main"
 
 [dependency-groups]
 dev = ["basedpyright>=1.20", "pytest>=8", "ruff>=0.11"]
