@@ -218,6 +218,34 @@ The AI assistant can invoke the following tools:
 *   `search_chunks(query, limit)`: Searches the full text of all parsed HTML, PDF, and Excel documents.
 *   `get_agent_context(query, limit)`: Returns a unified, citation-preserving retrieval context hit stream.
 
+### Easy Configuration (Setup Wizard)
+
+To configure the MCP server automatically for your preferred AI client, use the interactive setup wizard:
+```bash
+uv run cms-kb-mcp-setup
+```
+
+This wizard will auto-detect the project path and guide you through configuring:
+1. **Claude Desktop**
+2. **Claude Code** (Project-level `.mcp.json` or user-level `~/.claude.json`)
+3. **Google Antigravity** (CLI, IDE, and desktop environments)
+4. **Codex** (Project-level or user-level `config.toml`)
+
+#### Non-Interactive Automation
+
+For non-interactive environments, scripting, or agent automation, you can run the tool with flags:
+
+```bash
+# Configure all supported clients automatically
+uv run cms-kb-mcp-setup --client all -y
+
+# Configure specific clients (e.g., Claude Code and Antigravity) with dry-run
+uv run cms-kb-mcp-setup --client claude-code-project --client antigravity --dry-run
+
+# Run with an overridden project directory
+uv run cms-kb-mcp-setup --client codex-project --project-path /absolute/path/to/project -y
+```
+
 ### Running the Server Locally
 To start the MCP server in standard I/O mode:
 ```bash
