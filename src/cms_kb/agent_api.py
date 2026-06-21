@@ -37,6 +37,7 @@ from urllib.parse import urljoin
 
 from pydantic import BaseModel
 
+from .paths import get_packaged_data_path
 from .retrieval import RetrievalConfig, SearchResult, run_retrieval
 
 
@@ -206,6 +207,12 @@ def _find_variable_link(
     record type is not a variable.
   """
   source_document = Path(result.source_document)
+  if source_document.parts and source_document.parts[0] == "data":
+    pkg_subpath = Path(*source_document.parts[1:])
+    resolved_path = get_packaged_data_path(str(pkg_subpath))
+    if resolved_path.is_file():
+      source_document = resolved_path
+
   if result.record_type != "variable" or not source_document.is_file():
     return "", ""
 
@@ -314,22 +321,22 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
   parser.add_argument(
     "--variables-metadata",
     type=Path,
-    default=Path("data/metadata/variables.csv"),
+    default=get_packaged_data_path("metadata/variables.csv"),
   )
   parser.add_argument(
     "--chunks-jsonl",
     type=Path,
-    default=Path("data/parsed/chunks.jsonl"),
+    default=get_packaged_data_path("parsed/chunks.jsonl"),
   )
   parser.add_argument(
     "--archive-manifest",
@@ -339,7 +346,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--database-path",
     type=Path,
-    default=Path("data/index/retrieval.sqlite"),
+    default=get_packaged_data_path("index/retrieval.sqlite"),
   )
   parser.add_argument("--json", action="store_true", help="Emit JSON output.")
   return parser

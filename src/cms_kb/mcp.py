@@ -28,6 +28,7 @@ from .agent_api import (
   context_hit_from_search_result,
   read_archived_document_map,
 )
+from .paths import get_packaged_data_path
 from .retrieval import (
   RetrievableRecord,
   RetrievalConfig,
@@ -174,22 +175,22 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
   parser.add_argument(
     "--variables-metadata",
     type=Path,
-    default=Path("data/metadata/variables.csv"),
+    default=get_packaged_data_path("metadata/variables.csv"),
   )
   parser.add_argument(
     "--chunks-jsonl",
     type=Path,
-    default=Path("data/parsed/chunks.jsonl"),
+    default=get_packaged_data_path("parsed/chunks.jsonl"),
   )
   parser.add_argument(
     "--archive-manifest",
@@ -199,7 +200,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--database-path",
     type=Path,
-    default=Path("data/index/retrieval.sqlite"),
+    default=get_packaged_data_path("index/retrieval.sqlite"),
   )
   parser.add_argument("--limit", type=int, default=5)
   return parser

@@ -45,15 +45,46 @@ Future work is organized as implementation phases. A phase may be promoted into
 `Present` when active work begins, with concise verification criteria and
 explicit out-of-scope notes.
 
-### Phase 9: Source Expansion
+### Phase 9: Package Distribution (PyPI)
+Purpose: bundle pre-built CMS KB data artifacts inside the `cms_kb` Python package and configure Hatchling for PyPI distribution under size constraints.
+
+Subphases:
+- 9A: Relocate pre-built CSVs, chunk JSONLs, and the SQLite serving index into the module directory (`src/cms_kb/data/`).
+- 9B: Implement dynamic path resolution using `importlib.resources` inside path config/helpers (e.g., `src/cms_kb/paths.py`).
+- 9C: Implement pre-packaging database optimizations (`VACUUM` and `PRAGMA optimize`) and an HTML layout-cleaning pre-processor to strip scripts/styles/comments to remain under the 100MB limit.
+- 9D: Configure Hatchling wheel build rules in `pyproject.toml` (treat `data/` as package data, exclude raw PDFs/assets).
+- 9E: Prepare PyPI publication elements (e.g., project description/README formatting, automated upload/release script or workflows).
+
+Verification:
+- `uv build` compiles a valid wheel (`.whl`) under the 100MB limit.
+- The built wheel includes compiled indexes, CSVs, and JSONLs, but excludes raw PDF files.
+- Module queries resolve paths using dynamic importlib-based resolution.
+- Cleaned HTML files preserve semantic tables and links while reducing layout/styling overhead.
+- Package description renders correctly, and automated release script/workflow runs successfully for testing/publishing.
+
+### Phase 11: Downstream Integration APIs
+Purpose: provide standard programmatic APIs and CLI utility patterns to assist external research projects and AI agent workflows using the packaged KB.
+
+Subphases:
+- 11A: Implement schema crosswalking and dataset availability query helpers (e.g., year availability checks).
+- 11B: Implement dynamic cohort data dictionary generators querying the SQLite FTS5 backend.
+- 11C: Implement a code caveat and limitation scanner to check analysis scripts against KB text chunks.
+- 11D: Expose RAG-oriented context formatters for code generators and external agents.
+
+Verification:
+- Integration APIs run correctly on sample scripts and cohort columns.
+- Helper queries resolve exact variable matches and return clean citation links.
+- Context outputs match the existing `SearchResult` and Pydantic models.
+
+### Phase 12: Source Expansion
 Purpose: expand archived documentation beyond the current ResDAC source set
 while preserving the archive-first provenance model.
 
 Subphases:
-- 9A: Add source-family configuration for related CMS and CCW documentation.
-- 9B: Add TAF, VRDC, Medicare Advantage encounter, and Medicaid technical
+- 12A: Add source-family configuration for related CMS and CCW documentation.
+- 12B: Add TAF, VRDC, Medicare Advantage encounter, and Medicaid technical
   documentation sources as bounded inventory/archive targets.
-- 9C: Update source coverage documentation with entry points, corpus counts,
+- 12C: Update source coverage documentation with entry points, corpus counts,
   and source-family limitations.
 
 Verification:
@@ -62,17 +93,15 @@ Verification:
 - Source expansion does not weaken existing ResDAC inventory, archive, or QA
   behavior.
 
-
-
-### Phase 11: Evaluation Suite
+### Phase 13: Evaluation Suite
 Purpose: measure retrieval and agent-context quality with gold-standard CMS
 research questions.
 
 Subphases:
-- 11A: Create benchmark questions with expected datasets, variables, source
+- 13A: Create benchmark questions with expected datasets, variables, source
   documents, and citation evidence.
-- 11B: Add evaluation commands that report recall, MRR, and citation accuracy.
-- 11C: Use evaluation results to compare lexical, hybrid, and agent-facing
+- 13B: Add evaluation commands that report recall, MRR, and citation accuracy.
+- 13C: Use evaluation results to compare lexical, hybrid, and agent-facing
   retrieval paths.
 
 Verification:
@@ -81,16 +110,16 @@ Verification:
 - Evaluation commands run locally with `uv`.
 - Results identify both answer recall and citation correctness.
 
-### Phase 12: Research Workflow Assistance
+### Phase 14: Research Workflow Assistance
 Purpose: build higher-level grounded workflows only after source coverage,
 retrieval quality, and evaluation are strong enough to support them.
 
 Subphases:
-- 12A: Add workflow-oriented query helpers for common CMS research discovery
+- 14A: Add workflow-oriented query helpers for common CMS research discovery
   tasks such as enrollment, diagnoses, linkage, and data availability.
-- 12B: Add structured response shapes for recommended datasets, variables,
+- 14B: Add structured response shapes for recommended datasets, variables,
   caveats, and supporting citations.
-- 12C: Document boundaries so the system recommends documentation-backed data
+- 14C: Document boundaries so the system recommends documentation-backed data
   discovery paths, not research conclusions.
 
 Verification:

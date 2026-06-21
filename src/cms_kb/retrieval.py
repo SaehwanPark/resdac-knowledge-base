@@ -31,6 +31,7 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 from .parsing import ChunkMetadata
+from .paths import get_packaged_data_path
 
 
 RecordType = Literal["dataset", "document", "variable", "chunk"]
@@ -40,11 +41,11 @@ TOKEN_PATTERN = re.compile(r"[a-z0-9_]+")
 
 class RetrievalConfig(BaseModel):
   """Configuration holding file paths for the knowledge base catalogs and chunks."""
-  datasets_metadata_path: Path = Path("data/metadata/datasets.csv")
-  documents_metadata_path: Path = Path("data/metadata/documents.csv")
-  variables_metadata_path: Path = Path("data/metadata/variables.csv")
-  chunks_jsonl_path: Path = Path("data/parsed/chunks.jsonl")
-  database_path: Path = Path("data/index/retrieval.sqlite")
+  datasets_metadata_path: Path = Field(default_factory=lambda: get_packaged_data_path("metadata/datasets.csv"))
+  documents_metadata_path: Path = Field(default_factory=lambda: get_packaged_data_path("metadata/documents.csv"))
+  variables_metadata_path: Path = Field(default_factory=lambda: get_packaged_data_path("metadata/variables.csv"))
+  chunks_jsonl_path: Path = Field(default_factory=lambda: get_packaged_data_path("parsed/chunks.jsonl"))
+  database_path: Path = Field(default_factory=lambda: get_packaged_data_path("index/retrieval.sqlite"))
 
   hybrid_search_enabled: bool = False
   semantic_model_name: str = "all-MiniLM-L6-v2"
@@ -727,27 +728,27 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
   parser.add_argument(
     "--variables-metadata",
     type=Path,
-    default=Path("data/metadata/variables.csv"),
+    default=get_packaged_data_path("metadata/variables.csv"),
   )
   parser.add_argument(
     "--chunks-jsonl",
     type=Path,
-    default=Path("data/parsed/chunks.jsonl"),
+    default=get_packaged_data_path("parsed/chunks.jsonl"),
   )
   parser.add_argument(
     "--database-path",
     type=Path,
-    default=Path("data/index/retrieval.sqlite"),
+    default=get_packaged_data_path("index/retrieval.sqlite"),
   )
   parser.add_argument("--legacy", action="store_true", help="Force the legacy in-memory search.")
   parser.add_argument("--json", action="store_true")
@@ -911,27 +912,27 @@ def main_index(argv: list[str] | None = None) -> int:
   parser.add_argument(
     "--datasets-metadata",
     type=Path,
-    default=Path("data/metadata/datasets.csv"),
+    default=get_packaged_data_path("metadata/datasets.csv"),
   )
   parser.add_argument(
     "--documents-metadata",
     type=Path,
-    default=Path("data/metadata/documents.csv"),
+    default=get_packaged_data_path("metadata/documents.csv"),
   )
   parser.add_argument(
     "--variables-metadata",
     type=Path,
-    default=Path("data/metadata/variables.csv"),
+    default=get_packaged_data_path("metadata/variables.csv"),
   )
   parser.add_argument(
     "--chunks-jsonl",
     type=Path,
-    default=Path("data/parsed/chunks.jsonl"),
+    default=get_packaged_data_path("parsed/chunks.jsonl"),
   )
   parser.add_argument(
     "--database-path",
     type=Path,
-    default=Path("data/index/retrieval.sqlite"),
+    default=get_packaged_data_path("index/retrieval.sqlite"),
   )
   parser.add_argument(
     "--build-embeddings",
