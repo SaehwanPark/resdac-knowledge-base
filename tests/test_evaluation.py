@@ -5,9 +5,15 @@ import json
 from pathlib import Path
 
 from cms_kb.evaluation import (
+  BenchmarkQuestion,
+  BenchmarkQuestionSuite,
   VariableEvaluationConfig,
+  evaluate_benchmark_suite,
   evaluate_variable_retrieval,
   main,
+  recall_at_k,
+  reciprocal_rank,
+  citation_accuracy,
 )
 from cms_kb.parsing import ChunkMetadata
 from cms_kb.retrieval import RetrievalConfig, build_index
@@ -189,3 +195,135 @@ def test_evaluation_cli_outputs_json(tmp_path: Path, capsys) -> None:
   assert payload["sample_size"] == 1
   assert payload["passed_count"] == 1
   assert payload["pass_rate"] == 1.0
+
+
+def test_evaluation_metrics_calculations() -> None:
+  # 1. Recall
+  assert recall_at_k(["a", "b", "c"], ["a", "d"], k=2) == 0.5
+  assert recall_at_k(["a", "b", "c"], ["a", "b"], k=2) == 1.0
+  assert recall_at_k(["a", "b", "c"], [], k=5) == 1.0
+
+  # 2. Reciprocal Rank
+  assert reciprocal_rank(["a", "b", "c"], ["b", "d"]) == 0.5
+  assert reciprocal_rank(["a", "b", "c"], ["a"]) == 1.0
+  assert reciprocal_rank(["a", "b", "c"], ["d"]) == 0.0
+  assert reciprocal_rank(["a", "b", "c"], []) == 1.0
+
+  # 3. Citation Accuracy
+  assert citation_accuracy(["http://a.com/", "http://b.com"], ["http://a.com"]) == 1.0
+  assert citation_accuracy(["http://a.com"], ["http://a.com", "http://b.com"]) == 0.5
+  assert citation_accuracy([], []) == 1.0
+
+
+def test_evaluate_benchmark_suite(tmp_path: Path) -> None:
+  retrieval = _write_evaluation_fixture(tmp_path)
+  
+  # Create a dummy archive manifest file
+  archive_manifest = tmp_path / "archive_manifest.csv"
+  archive_manifest.write_text("local_path,url,downloaded_at,sha256,content_type\n", encoding="utf-8")
+
+  # Write dummy benchmark questions JSON
+  benchmark_questions = [
+    {
+      "question_id": "q1",
+      "query": "BENE_ID",
+      "expected_datasets": ["medpar"],
+      "expected_variables": ["BENE_ID"],
+      "expected_citations": ["https://resdac.org/cms-data/files/medpar/data-documentation"],
+      "description": "Test dual eligibility query"
+    }
+  ]
+  benchmark_file = tmp_path / "benchmark_questions.json"
+  benchmark_file.write_text(json.dumps(benchmark_questions), encoding="utf-8")
+
+  config = VariableEvaluationConfig(
+    retrieval=retrieval,
+    sample_size=1,
+    seed=20260616,
+    limit=5,
+  )
+
+  suite = BenchmarkQuestionSuite(
+    questions=[BenchmarkQuestion.model_validate(q) for q in benchmark_questions]
+  )
+
+  # Monkey patch Path("manifests/archive_manifest.csv") resolution
+  import cms_kb.evaluation as ev
+  ev_manifest_backup = ev.Path
+  
+  class MockPathClass:
+    def __new__(cls, *args, **kwargs):
+      # Redirect specific check to tmp_path
+      path_str = str(args[0]) if args else ""
+      if "archive_manifest.csv" in path_str:
+        return Path(archive_manifest)
+      return Path(*args, **kwargs)
+
+  ev.Path = MockPathClass  # pytype: disable=name-error
+
+  try:
+    report = evaluate_benchmark_suite(config, suite)
+    assert len(report.results) == 1
+    assert report.results[0].question_id == "q1"
+    assert report.results[0].lexical.dataset_recall_at_5 == 1.0
+  finally:
+    ev.Path = ev_manifest_backup
+
+
+def test_evaluation_cli_benchmark_option(tmp_path: Path) -> None:
+  retrieval = _write_evaluation_fixture(tmp_path)
+
+  # Create a dummy archive manifest file
+  archive_manifest = tmp_path / "archive_manifest.csv"
+  archive_manifest.write_text("local_path,url,downloaded_at,sha256,content_type\n", encoding="utf-8")
+
+  # Write dummy benchmark questions JSON
+  benchmark_questions = [
+    {
+      "question_id": "q1",
+      "query": "BENE_ID",
+      "expected_datasets": ["medpar"],
+      "expected_variables": ["BENE_ID"],
+      "expected_citations": ["https://resdac.org/cms-data/files/medpar/data-documentation"],
+      "description": "Test dual eligibility query"
+    }
+  ]
+  benchmark_file = tmp_path / "benchmark_questions.json"
+  benchmark_file.write_text(json.dumps(benchmark_questions), encoding="utf-8")
+  output_report = tmp_path / "report.md"
+
+  import cms_kb.evaluation as ev
+  ev_manifest_backup = ev.Path
+  
+  class MockPathClass:
+    def __new__(cls, *args, **kwargs):
+      path_str = str(args[0]) if args else ""
+      if "archive_manifest.csv" in path_str:
+        return Path(archive_manifest)
+      return Path(*args, **kwargs)
+
+  ev.Path = MockPathClass  # pytype: disable=name-error
+
+  try:
+    exit_code = main([
+      "--datasets-metadata",
+      str(retrieval.datasets_metadata_path),
+      "--documents-metadata",
+      str(retrieval.documents_metadata_path),
+      "--variables-metadata",
+      str(retrieval.variables_metadata_path),
+      "--chunks-jsonl",
+      str(retrieval.chunks_jsonl_path),
+      "--database-path",
+      str(retrieval.database_path),
+      "--benchmark",
+      str(benchmark_file),
+      "--output-report",
+      str(output_report),
+    ])
+    assert exit_code == 0
+    assert output_report.is_file()
+    assert "Aggregate Benchmark Summary" in output_report.read_text(encoding="utf-8")
+  finally:
+    ev.Path = ev_manifest_backup
+

@@ -40,6 +40,7 @@ checked-in corpus coverage, and retained generated data artifacts.
 - Phase 11B is implemented: dynamic cohort data dictionary generators querying the SQLite FTS5 backend (supporting case-insensitive matches, definition prefix stripping, and metadata integration).
 - Phase 11C is implemented: code caveat and limitation scanner to check analysis scripts against KB text chunks (supporting variables, datasets, and custom keywords).
 - Phase 11D is implemented: RAG-oriented context formatters for code generators and external agents (supporting prompt, markdown, and XML outputs).
+- Phase 12: Evaluation Suite is implemented, including gold-standard benchmark questions, Recall@5/MRR/Citation accuracy metrics calculators, and a comparative runner comparing lexical, hybrid, and agent-facing search paths.
 
 
 ## Present
@@ -49,23 +50,6 @@ checked-in corpus coverage, and retained generated data artifacts.
 Future work is organized as implementation phases. A phase may be promoted into
 `Present` when active work begins, with concise verification criteria and
 explicit out-of-scope notes.
-
-### Phase 12: Evaluation Suite
-Purpose: measure retrieval and agent-context quality with gold-standard CMS
-research questions.
-
-Subphases:
-- 12A: Create benchmark questions with expected datasets, variables, source
-  documents, and citation evidence.
-- 12B: Add evaluation commands that report recall, MRR, and citation accuracy.
-- 12C: Use evaluation results to compare lexical, hybrid, and agent-facing
-  retrieval paths.
-
-Verification:
-- Evaluation fixtures are provenance-aware and do not require restricted CMS
-  data.
-- Evaluation commands run locally with `uv`.
-- Results identify both answer recall and citation correctness.
 
 ### Phase 13: Source Expansion
 Purpose: expand archived documentation beyond the current ResDAC source set
