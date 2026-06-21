@@ -99,6 +99,21 @@ These retained artifacts were produced by `uv run cms-kb-extract`,
 `uv run cms-kb-parse`, `uv run cms-kb-variables`, and `uv run cms-kb-index`, then validated with
 `uv run cms-kb-qa`.
 
+## Retrieval Performance Evaluation Suite implementation
+Run completed: 2026-06-21
+
+Scope:
+- Branch: `feat/phase-12-evaluation-suite`
+- Purpose: Systematically evaluate and compare retrieval and agent-context quality with gold-standard CMS research questions.
+- Completed steps:
+  - Created `data/evaluation/benchmark_questions.json` containing 15 gold-standard research discovery queries.
+  - Implemented Recall@K, MRR, and Citation Accuracy metrics in `src/cms_kb/evaluation.py`.
+  - Added CLI argument `--benchmark` to evaluate and write a comparative markdown report to `_workspace/retrieval_evaluation_report.md`.
+  - Added comprehensive unit tests in `tests/test_evaluation.py`.
+  - `uv run pytest` — 134 passed.
+  - `uv run ruff check .` and `uv run basedpyright .` — PASS.
+
+
 ## SQLite Hybrid Retrieval and Ranking implementation
 Run completed: 2026-06-20
 

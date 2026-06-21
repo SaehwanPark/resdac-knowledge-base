@@ -1,0 +1,118 @@
+[
+  {
+    "question_id": "q1",
+    "query": "BENE_ID",
+    "expected_datasets": ["mbsf-base", "pde", "medpar"],
+    "expected_variables": ["BENE_ID"],
+    "expected_citations": ["https://resdac.org/cms-data/variables/encrypted-ccw-beneficiary-identifier-0"],
+    "description": "Beneficiary Identifier search, a very common exact key lookup."
+  },
+  {
+    "question_id": "q2",
+    "query": "Part D prescription drug event",
+    "expected_datasets": ["pde"],
+    "expected_variables": ["NCPDP_ID", "CCW_PHARM_ID", "CCW_PRSCRBR_ID"],
+    "expected_citations": ["https://resdac.org/cms-data/files/pde?page=1"],
+    "description": "Query about Part D Event dataset."
+  },
+  {
+    "question_id": "q3",
+    "query": "Medicare Advantage encounter carrier",
+    "expected_datasets": ["carrier-encounter"],
+    "expected_variables": ["BENE_ID"],
+    "expected_citations": ["https://resdac.org/cms-data/files/carrier-encounter?page=1"],
+    "description": "Medicare Advantage encounter carrier dataset query."
+  },
+  {
+    "question_id": "q4",
+    "query": "inpatient fee-for-service",
+    "expected_datasets": ["ip-ffs"],
+    "expected_variables": ["CLM_RSDL_PYMT_IND_CD"],
+    "expected_citations": ["https://resdac.org/cms-data/files/ip-ffs?page=1"],
+    "description": "Inpatient Fee-For-Service claims dataset query."
+  },
+  {
+    "question_id": "q5",
+    "query": "dual eligibility code January",
+    "expected_datasets": ["mmleads-3"],
+    "expected_variables": ["MDCR_DUAL_STUS_CD_01"],
+    "expected_citations": ["https://resdac.org/cms-data/variables/medicare-medicaid-dual-eligibility-code-january-1"],
+    "description": "Specific variable search for monthly Medicare-Medicaid dual eligibility."
+  },
+  {
+    "question_id": "q6",
+    "query": "MedPAR claim residual payment indicator",
+    "expected_datasets": ["medpar"],
+    "expected_variables": ["CLM_RSDL_PYMT_IND_CD"],
+    "expected_citations": ["https://resdac.org/variables/medpar-claim-residual-payment-indicator-code"],
+    "description": "Specific MedPAR residual payment indicator code query."
+  },
+  {
+    "question_id": "q7",
+    "query": "Quality composite score modifier",
+    "expected_datasets": ["vm-practice"],
+    "expected_variables": ["QUAL_COMP_TIER_TEXT"],
+    "expected_citations": ["https://resdac.org/sites/datadocumentation.resdac.org/files/2025-02/record-layout-value-modifier-practice-level-rif-perf-year-2016.xlsx"],
+    "description": "Value modifier practice-level Quality composite query."
+  },
+  {
+    "question_id": "q8",
+    "query": "hha encounter claims",
+    "expected_datasets": ["hha-encounter"],
+    "expected_variables": ["BENE_ID"],
+    "expected_citations": ["https://resdac.org/cms-data/files/hha-encounter?page=2"],
+    "description": "Home Health Agency encounter dataset query."
+  },
+  {
+    "question_id": "q9",
+    "query": "Master Beneficiary Summary File CCW chronic conditions",
+    "expected_datasets": ["mbsf-cc", "mbsf-27-cc", "mbsf-30-cc"],
+    "expected_citations": ["https://resdac.org/cms-data/files/mbsf-cc?page=1", "https://resdac.org/cms-data/files/mbsf-27-cc?page=1"],
+    "description": "CCW chronic conditions datasets under MBSF."
+  },
+  {
+    "question_id": "q10",
+    "query": "HEDIS Medicare Linked data",
+    "expected_datasets": ["hedis-rif", "hedis-rif-measures", "hedis-rif-pcr-measure"],
+    "expected_citations": ["https://resdac.org/cms-data/files/hedis-rif"],
+    "description": "HEDIS (Healthcare Effectiveness Data and Information Set) dataset query."
+  },
+  {
+    "question_id": "q11",
+    "query": "dme encounter durable medical equipment",
+    "expected_datasets": ["dme-encounter"],
+    "expected_citations": ["https://resdac.org/cms-data/files/dme-encounter?page=1"],
+    "description": "Encounter Durable Medical Equipment dataset query."
+  },
+  {
+    "question_id": "q12",
+    "query": "Medicaid LTSS dual eligible months",
+    "expected_datasets": ["mmleads-3"],
+    "expected_variables": ["MDCD_INTEGRATED_DUAL_COV_MOS"],
+    "expected_citations": ["https://resdac.org/cms-data/variables/medicaid-integrated-care-dual-eligible-months"],
+    "description": "Medicaid integrated care for dual eligibles variable search."
+  },
+  {
+    "question_id": "q13",
+    "query": "Claim Residual Payment Indicator Code hospice",
+    "expected_datasets": ["hospice-ffs"],
+    "expected_variables": ["CLM_RSDL_PYMT_IND_CD"],
+    "expected_citations": ["https://resdac.org/variables/claim-residual-payment-indicator-code"],
+    "description": "Hospice residual payment indicator variable search."
+  },
+  {
+    "question_id": "q14",
+    "query": "Master Beneficiary Summary File Base",
+    "expected_datasets": ["mbsf-base", "mbsf-base-v2"],
+    "expected_citations": ["https://resdac.org/cms-data/files/mbsf-base"],
+    "description": "MBSF Base dataset query."
+  },
+  {
+    "question_id": "q15",
+    "query": "individual NPI number cec provider",
+    "expected_datasets": ["cec-provider"],
+    "expected_variables": ["NPI_NUMBER"],
+    "expected_citations": ["https://resdac.org/cms-data/variables/individual-npi-number"],
+    "description": "CEC provider NPI number variable query."
+  }
+]
