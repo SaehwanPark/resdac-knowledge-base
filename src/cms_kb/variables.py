@@ -24,7 +24,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
-from typing import Literal, Sequence
+from typing import Literal, Sequence, TypeVar
 from urllib.parse import urljoin, urlparse
 
 from pydantic import BaseModel, Field
@@ -32,6 +32,7 @@ from pydantic import BaseModel, Field
 from .archive import ArchiveManifestRow
 from .extraction import read_archive_manifest_csv
 from .parsing import ChunkMetadata
+from .paths import get_packaged_data_path
 
 VariableFieldnames = Literal[
   "variable_id",
@@ -134,7 +135,7 @@ TABLE_SEPARATOR_CELL_PATTERN = re.compile(r"^:?-{2,}:?$")
 
 
 class VariableExtractionConfig(BaseModel):
-  chunks_jsonl_path: Path = Path("data/parsed/chunks.jsonl")
+  chunks_jsonl_path: Path = Field(default_factory=lambda: get_packaged_data_path("parsed/chunks.jsonl"))
   archive_manifest_path: Path = Path("manifests/archive_manifest.csv")
   metadata_dir: Path = Path("data/metadata")
   graph_dir: Path = Path("data/graph")
@@ -609,8 +610,11 @@ def _edge_for_variable(row: VariableMetadataRow) -> VariableEdgeRow:
   )
 
 
-def _write_model_csv[T: BaseModel](
-  rows: list[T], output_path: Path, fieldnames: Sequence[str]
+_T = TypeVar("_T", bound=BaseModel)
+
+
+def _write_model_csv(
+  rows: list[_T], output_path: Path, fieldnames: Sequence[str]
 ) -> None:
   output_path.parent.mkdir(parents=True, exist_ok=True)
   with output_path.open("w", newline="", encoding="utf-8") as handle:
@@ -787,7 +791,7 @@ def build_arg_parser() -> argparse.ArgumentParser:
   parser.add_argument(
     "--chunks-jsonl",
     type=Path,
-    default=Path("data/parsed/chunks.jsonl"),
+    default=get_packaged_data_path("parsed/chunks.jsonl"),
   )
   parser.add_argument(
     "--archive-manifest",

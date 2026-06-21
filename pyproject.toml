@@ -1,9 +1,9 @@
 [project]
 name = "resdac-knowledge-base"
-version = "1.0.0"
+version = "1.0.2"
 description = "ResDAC/CMS documentation archive and inventory tooling"
 readme = "docs/pypi-readme.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
   "beautifulsoup4>=4.12.0",
   "mcp>=1.27.2",
@@ -43,18 +43,30 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build]
 ignore-vcs = true
+exclude = [
+  "src/cms_kb/data/raw",
+  "src/cms_kb/data/parsed/chunks",
+  "src/cms_kb/data/parsed/html",
+  "src/cms_kb/data/parsed/pdf",
+  "src/cms_kb/data/parsed/xlsx",
+  "src/cms_kb/data/index/*.tmp",
+  "src/cms_kb/data/index/*.tmp-journal",
+  "data/raw",
+  "data/parsed/chunks",
+  "data/parsed/html",
+  "data/parsed/pdf",
+  "data/parsed/xlsx",
+  "data/index/*.tmp",
+  "data/index/*.tmp-journal",
+  "_workspace",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/cms_kb"]
-exclude = [
-  "src/cms_kb/data/raw/**/*.pdf",
-  "src/cms_kb/data/raw/assets",
-  "src/cms_kb/data/parsed/pdf",
-]
 
 [tool.basedpyright]
 typeCheckingMode = "standard"
-pythonVersion = "3.13"
+pythonVersion = "3.11"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
