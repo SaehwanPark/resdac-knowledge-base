@@ -1,8 +1,8 @@
 [project]
-name = "resdac-doc-archive"
-version = "0.22.0"
-description = "CMS documentation archive and inventory tooling"
-readme = "README.md"
+name = "resdac-knowledge-base"
+version = "1.0.0"
+description = "ResDAC/CMS documentation archive and inventory tooling"
+readme = "docs/pypi-readme.md"
 requires-python = ">=3.13"
 dependencies = [
   "beautifulsoup4>=4.12.0",
@@ -59,4 +59,3 @@ pythonVersion = "3.13"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = "."
-
