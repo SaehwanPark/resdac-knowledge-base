@@ -169,3 +169,19 @@ def test_cli_cohort_dictionary(capsys: pytest.CaptureFixture[str]) -> None:
   assert "available_years" in item
 
 
+def test_generate_cohort_dictionary_empty() -> None:
+  # Verify that querying with empty list returns empty dict without errors
+  assert generate_cohort_dictionary([]) == {}
+
+
+def test_generate_cohort_dictionary_large_input() -> None:
+  # Generate a large query list of 1000 variables to test SQLite parameter chunking limit
+  query_list = [f"VAR_{i}" for i in range(1000)] + ["BENE_ID"]
+  result = generate_cohort_dictionary(query_list)
+  assert isinstance(result, dict)
+  assert "BENE_ID" in result
+  assert len(result["BENE_ID"]) > 0
+  assert result["VAR_0"] == []
+
+
+

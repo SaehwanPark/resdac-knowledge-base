@@ -268,6 +268,9 @@ def generate_cohort_dictionary(
   Returns:
     A dictionary mapping each queried variable name to a list of CohortVariableDetail.
   """
+  if not variable_names:
+    return {}
+
   if database_path is None:
     db_path = get_packaged_data_path("index/retrieval.sqlite")
   else:
@@ -277,6 +280,11 @@ def generate_cohort_dictionary(
     raise FileNotFoundError(f"Search index database not found at {db_path}")
 
   datasets_map = _load_datasets_map()
+  variables_rows = _load_variables_list()
+  definitions_map = {
+    (row.get("variable_id") or ""): (row.get("definition") or "")
+    for row in variables_rows
+  }
 
   result: dict[str, list[CohortVariableDetail]] = {
     var: [] for var in variable_names
@@ -287,30 +295,31 @@ def generate_cohort_dictionary(
   for var in variable_names:
     query_map.setdefault(var.upper(), []).append(var)
 
-  conn = sqlite3.connect(db_path)
+  # Connect to the SQLite database in read-only mode using a URI path
+  conn = sqlite3.connect(f"file:{db_path.resolve()}?mode=ro", uri=True)
   try:
     cursor = conn.cursor()
-    # Match query_map keys (variable names) case-insensitively
-    placeholders = ", ".join(["?"] * len(query_map))
-    query = f"""
-      SELECT r.record_id, r.title, r.dataset_id, r.source_url, r.source_document, r.page, f.text
-      FROM records r
-      JOIN records_fts f ON r.record_id = f.record_id
-      WHERE r.record_type = 'variable' AND UPPER(r.title) IN ({placeholders})
-    """
-    cursor.execute(query, list(query_map.keys()))
-    rows = cursor.fetchall()
+    # Match query_map keys (variable names) case-insensitively, chunked to prevent SQL variable limit
+    all_keys = list(query_map.keys())
+    batch_size = 900
+    rows = []
+    for i in range(0, len(all_keys), batch_size):
+      batch = all_keys[i:i + batch_size]
+      placeholders = ", ".join(["?"] * len(batch))
+      query = f"""
+        SELECT record_id, title, dataset_id, source_url, source_document, page
+        FROM records
+        WHERE record_type = 'variable' AND UPPER(title) IN ({placeholders})
+      """
+      cursor.execute(query, batch)
+      rows.extend(cursor.fetchall())
 
-    for record_id, title, dataset_id, source_url, source_document, page, text in rows:
+    for record_id, title, dataset_id, source_url, source_document, page in rows:
       upper_title = title.upper()
       if upper_title in query_map:
         for original_var_name in query_map[upper_title]:
-          # Extract definition by stripping the prefix: f"{record_id} {title} {dataset_id} "
-          prefix = f"{record_id} {title} {dataset_id} "
-          if text.startswith(prefix):
-            definition = text[len(prefix):]
-          else:
-            definition = text
+          # Get clean definition directly from the cached variables metadata
+          definition = definitions_map.get(record_id, "")
 
           # Look up dataset metadata
           if dataset_id in datasets_map:
