@@ -60,32 +60,15 @@ Verification:
 - Helper queries resolve exact variable matches and return clean citation links.
 - Context outputs match the existing `SearchResult` and Pydantic models.
 
-### Phase 12: Source Expansion
-Purpose: expand archived documentation beyond the current ResDAC source set
-while preserving the archive-first provenance model.
-
-Subphases:
-- 12A: Add source-family configuration for related CMS and CCW documentation.
-- 12B: Add TAF, VRDC, Medicare Advantage encounter, and Medicaid technical
-  documentation sources as bounded inventory/archive targets.
-- 12C: Update source coverage documentation with entry points, corpus counts,
-  and source-family limitations.
-
-Verification:
-- New source families produce inventory and archive manifest rows with source
-  URLs, checksums, timestamps, status, and local paths.
-- Source expansion does not weaken existing ResDAC inventory, archive, or QA
-  behavior.
-
-### Phase 13: Evaluation Suite
+### Phase 12: Evaluation Suite
 Purpose: measure retrieval and agent-context quality with gold-standard CMS
 research questions.
 
 Subphases:
-- 13A: Create benchmark questions with expected datasets, variables, source
+- 12A: Create benchmark questions with expected datasets, variables, source
   documents, and citation evidence.
-- 13B: Add evaluation commands that report recall, MRR, and citation accuracy.
-- 13C: Use evaluation results to compare lexical, hybrid, and agent-facing
+- 12B: Add evaluation commands that report recall, MRR, and citation accuracy.
+- 12C: Use evaluation results to compare lexical, hybrid, and agent-facing
   retrieval paths.
 
 Verification:
@@ -93,6 +76,23 @@ Verification:
   data.
 - Evaluation commands run locally with `uv`.
 - Results identify both answer recall and citation correctness.
+
+### Phase 13: Source Expansion
+Purpose: expand archived documentation beyond the current ResDAC source set
+while preserving the archive-first provenance model.
+
+Subphases:
+- 13A: Add source-family configuration for related CMS and CCW documentation.
+- 13B: Add TAF, VRDC, Medicare Advantage encounter, and Medicaid technical
+  documentation sources as bounded inventory/archive targets.
+- 13C: Update source coverage documentation with entry points, corpus counts,
+  and source-family limitations.
+
+Verification:
+- New source families produce inventory and archive manifest rows with source
+  URLs, checksums, timestamps, status, and local paths.
+- Source expansion does not weaken existing ResDAC inventory, archive, or QA
+  behavior.
 
 ### Phase 14: Research Workflow Assistance
 Purpose: build higher-level grounded workflows only after source coverage,
