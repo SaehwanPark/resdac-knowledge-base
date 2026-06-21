@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 import pytest
 from cms_kb.integration import (
   parse_availability_years,
@@ -9,6 +10,9 @@ from cms_kb.integration import (
   generate_cohort_dictionary,
   CohortVariableDetail,
   main,
+  format_agent_context,
+  scan_codebase_caveats,
+  CaveatScanResponse,
 )
 
 
@@ -182,6 +186,83 @@ def test_generate_cohort_dictionary_large_input() -> None:
   assert "BENE_ID" in result
   assert len(result["BENE_ID"]) > 0
   assert result["VAR_0"] == []
+
+
+def test_format_agent_context() -> None:
+  from cms_kb.agent_api import AgentContextResponse, AgentContextHit, AgentCitation
+  response = AgentContextResponse(
+    query="BENE_ID",
+    results=[
+      AgentContextHit(
+        record_id="carrier-ffs-bene_id",
+        record_type="variable",
+        title="BENE_ID",
+        dataset_id="carrier-ffs",
+        score=1.5,
+        snippet="This is a snippet for BENE_ID.",
+        citation=AgentCitation(
+          source_url="https://resdac.org/cms-data/variables/bene-id",
+          source_document="data/raw/html/variable_page/bene_id.html"
+        )
+      )
+    ]
+  )
+
+  # Format as prompt
+  prompt_out = format_agent_context(response, "prompt")
+  assert "=== CMS DOCUMENTATION CONTEXT ===" in prompt_out
+  assert "Record: BENE_ID (variable)" in prompt_out
+  assert "Snippet: This is a snippet for BENE_ID." in prompt_out
+  assert "Source URL: https://resdac.org/cms-data/variables/bene-id" in prompt_out
+
+  # Format as markdown
+  markdown_out = format_agent_context(response, "markdown")
+  assert "### CMS Documentation Context" in markdown_out
+  assert "#### 1. BENE_ID (variable)" in markdown_out
+  assert "**Source URL**:" in markdown_out
+
+  # Format as xml
+  xml_out = format_agent_context(response, "xml")
+  assert "<documentation_context>" in xml_out
+  assert '<record id="carrier-ffs-bene_id"' in xml_out
+  assert "<excerpt>This is a snippet for BENE_ID.</excerpt>" in xml_out
+
+
+def test_scan_codebase_caveats(tmp_path: Path) -> None:
+  # Create a mock code file referencing BENE_ID and mbsf-base
+  mock_script = tmp_path / "analysis.sas"
+  mock_script.write_text("data cohort; set lib.carrier; run; * check BENE_ID and mbsf-base here;", encoding="utf-8")
+
+  # Run scanner. BENE_ID matches variable metadata, mbsf-base matches dataset metadata
+  response = scan_codebase_caveats([mock_script])
+  assert isinstance(response, CaveatScanResponse)
+  assert "BENE_ID" in response.matches
+  assert "mbsf-base" in response.matches
+
+  # Pass additional keywords
+  response_with_kw = scan_codebase_caveats([mock_script], additional_keywords=["encounter"])
+  assert "encounter" in response_with_kw.matches
+
+
+def test_cli_integration_new_commands(capsys: pytest.CaptureFixture[str], tmp_path: Path) -> None:
+  # Test scan-caveats CLI
+  mock_script = tmp_path / "script.py"
+  mock_script.write_text("import pandas\nprint(pandas.read_csv('mbsf-base'))\n# BENE_ID, GNDR_CD\n", encoding="utf-8")
+
+  assert main(["scan-caveats", "--files", str(mock_script), "--keywords", "encounter"]) == 0
+  captured = capsys.readouterr()
+  data = json.loads(captured.out)
+  assert "matches" in data
+  assert "BENE_ID" in data["matches"]
+  assert "mbsf-base" in data["matches"]
+  assert "encounter" in data["matches"]
+
+
+  # Test format-context CLI
+  assert main(["format-context", "--query", "BENE_ID", "--format", "markdown", "--limit", "2"]) == 0
+  captured = capsys.readouterr()
+  assert "### CMS Documentation Context" in captured.out
+
 
 
 

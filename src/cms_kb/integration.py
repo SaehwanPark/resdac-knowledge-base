@@ -17,6 +17,8 @@ import sys
 from pydantic import BaseModel
 
 from .paths import get_packaged_data_path
+from .agent_api import AgentContextResponse, AgentContextConfig, build_agent_context
+
 
 
 class DatasetAvailability(BaseModel):
@@ -61,6 +63,42 @@ class VariableCrosswalkResponse(BaseModel):
       matching crosswalk items.
   """
   variables: dict[str, list[VariableCrosswalkItem]]
+
+
+class CaveatMatch(BaseModel):
+  """Details of a caveat or limitation match found in documentation.
+
+  Attributes:
+    keyword: The matched keyword (variable or dataset name) that triggered the query.
+    record_id: Unique record identifier in the database.
+    record_type: Record type (e.g. 'chunk').
+    title: Title of the record.
+    dataset_id: Dataset ID where this record belongs.
+    score: Lexical match score.
+    snippet: Snippet containing the caveat.
+    source_url: Source documentation URL.
+    source_document: Local path to the archived source document.
+    page: Optional page number.
+  """
+  keyword: str
+  record_id: str
+  record_type: str
+  title: str
+  dataset_id: str
+  score: float
+  snippet: str
+  source_url: str
+  source_document: str
+  page: int | None = None
+
+
+class CaveatScanResponse(BaseModel):
+  """Response model containing caveat scan matches grouped by keyword.
+
+  Attributes:
+    matches: A dictionary mapping each matched keyword to a list of CaveatMatches.
+  """
+  matches: dict[str, list[CaveatMatch]]
 
 
 def parse_availability_years(availability_text: str) -> list[int]:
@@ -349,6 +387,178 @@ def generate_cohort_dictionary(
   return result
 
 
+def format_agent_context(response: AgentContextResponse, format_type: str = "prompt") -> str:
+  """Formats agent context response into prompt-ready, markdown, or XML representation.
+
+  Args:
+    response: The AgentContextResponse payload.
+    format_type: The format type: 'prompt', 'markdown', or 'xml'.
+
+  Returns:
+    A formatted context string.
+  """
+  if format_type == "prompt":
+    lines = ["=== CMS DOCUMENTATION CONTEXT ===", f"Query: {response.query}\n"]
+    for hit in response.results:
+      lines.append(f"Record: {hit.title} ({hit.record_type})")
+      lines.append(f"Snippet: {hit.snippet}")
+      lines.append(f"Source URL: {hit.citation.source_url}")
+      if hit.citation.source_document:
+        lines.append(f"Local Path: {hit.citation.source_document}")
+      if hit.citation.page is not None:
+        lines.append(f"Page: {hit.citation.page}")
+      if hit.citation.variable_url:
+        lines.append(f"Variable URL: {hit.citation.variable_url}")
+      if hit.citation.variable_document:
+        lines.append(f"Variable Path: {hit.citation.variable_document}")
+      lines.append("")
+    return "\n".join(lines).strip()
+
+  elif format_type == "markdown":
+    lines = ["### CMS Documentation Context", f"**Query**: `{response.query}`\n"]
+    for i, hit in enumerate(response.results, 1):
+      lines.append(f"#### {i}. {hit.title} ({hit.record_type})")
+      lines.append(f"- **Source URL**: [{hit.title}]({hit.citation.source_url})")
+      if hit.citation.source_document:
+        lines.append(f"- **Local Path**: `{hit.citation.source_document}`")
+      if hit.citation.page is not None:
+        lines.append(f"- **Page**: {hit.citation.page}")
+      if hit.citation.variable_url:
+        lines.append(f"- **Variable URL**: [Detail Link]({hit.citation.variable_url})")
+      if hit.citation.variable_document:
+        lines.append(f"- **Variable Local Path**: `{hit.citation.variable_document}`")
+      lines.append("- **Excerpt**:")
+      lines.append(f"  > {hit.snippet}")
+      lines.append("")
+    return "\n".join(lines).strip()
+
+  elif format_type == "xml":
+    lines = ["<documentation_context>", f"  <query>{response.query}</query>"]
+    for hit in response.results:
+      lines.append(f'  <record id="{hit.record_id}" type="{hit.record_type}" title="{hit.title}">')
+      lines.append(f"    <source_url>{hit.citation.source_url}</source_url>")
+      if hit.citation.source_document:
+        lines.append(f"    <local_path>{hit.citation.source_document}</local_path>")
+      if hit.citation.page is not None:
+        lines.append(f"    <page>{hit.citation.page}</page>")
+      if hit.citation.variable_url:
+        lines.append(f"    <variable_url>{hit.citation.variable_url}</variable_url>")
+      if hit.citation.variable_document:
+        lines.append(f"    <variable_local_path>{hit.citation.variable_document}</variable_local_path>")
+      lines.append(f"    <excerpt>{hit.snippet}</excerpt>")
+      lines.append("  </record>")
+    lines.append("</documentation_context>")
+    return "\n".join(lines)
+  else:
+    raise ValueError(f"Unknown format type: {format_type}")
+
+
+def scan_codebase_caveats(
+    code_files: list[Path | str],
+    additional_keywords: list[str] | None = None,
+    database_path: Path | str | None = None,
+) -> CaveatScanResponse:
+  """Scans analysis script files for referenced variables/datasets and extracts caveat context from SQLite FTS5 index.
+
+  Args:
+    code_files: List of file paths to check.
+    additional_keywords: Optional list of additional keywords to check.
+    database_path: Optional path to the SQLite search index. Defaults to packaged path.
+
+  Returns:
+    A CaveatScanResponse containing matches grouped by keyword.
+  """
+  # 1. Gather all variables and datasets to search for
+  datasets_map = _load_datasets_map()
+  variables_rows = _load_variables_list()
+
+  known_vars = {row.get("variable_name") or "" for row in variables_rows}
+  known_datasets = {ds_id for ds_id in datasets_map.keys()}
+
+  known_vars.discard("")
+  known_datasets.discard("")
+
+  # 2. Build case-insensitive maps
+  upper_vars = {v.upper(): v for v in known_vars}
+  upper_datasets = {d.upper(): d for d in known_datasets}
+
+  # 3. Scan codebase files
+  found_keywords: set[str] = set()
+  if additional_keywords:
+    for kw in additional_keywords:
+      if kw.strip():
+        found_keywords.add(kw.strip())
+
+  for file_path in code_files:
+    path = Path(file_path)
+    if not path.is_file():
+      continue
+    try:
+      content = path.read_text(encoding="utf-8", errors="replace")
+    except Exception:
+      continue
+
+    # Match whole word boundaries (case-insensitive) supporting underscores and hyphens
+    words = set(re.findall(r"(?<![A-Za-z0-9_-])[A-Za-z0-9_-]+(?![A-Za-z0-9_-])", content))
+    for word in words:
+      word_upper = word.upper()
+      if word_upper in upper_vars:
+        found_keywords.add(upper_vars[word_upper])
+      if word_upper in upper_datasets:
+        found_keywords.add(upper_datasets[word_upper])
+
+  if database_path is None:
+    db_path = get_packaged_data_path("index/retrieval.sqlite")
+  else:
+    db_path = Path(database_path)
+
+  # 4. Query the SQLite database for caveats
+  matches: dict[str, list[CaveatMatch]] = {kw: [] for kw in found_keywords}
+
+  if found_keywords and db_path.is_file():
+    conn = sqlite3.connect(f"file:{db_path.resolve()}?mode=ro", uri=True)
+    try:
+      cursor = conn.cursor()
+      for keyword in found_keywords:
+        # Build FTS5 query to find chunk records containing keyword and caveat terms
+        query = f'"{keyword}" AND (caveat OR limitations OR limitation OR exclude OR warn OR warning)'
+        sql = """
+          SELECT r.record_id, r.record_type, r.title, r.dataset_id, r.source_url, r.source_document, r.page, f.text
+          FROM records r
+          JOIN records_fts f ON r.record_id = f.record_id
+          WHERE records_fts MATCH ? AND r.record_type = 'chunk'
+          LIMIT 5
+        """
+        cursor.execute(sql, (query,))
+        rows = cursor.fetchall()
+        for record_id, record_type, title, dataset_id, source_url, source_document, page, text in rows:
+          # Extract a snippet around the keyword
+          snippet = text[:300] + "..." if len(text) > 300 else text
+          idx = text.lower().find(keyword.lower())
+          if idx != -1:
+            start = max(0, idx - 100)
+            end = min(len(text), idx + 200)
+            snippet = ("..." if start > 0 else "") + text[start:end].strip() + ("..." if end < len(text) else "")
+
+          match_item = CaveatMatch(
+            keyword=keyword,
+            record_id=record_id,
+            record_type=record_type,
+            title=title,
+            dataset_id=dataset_id,
+            score=1.0,
+            snippet=snippet,
+            source_url=source_url,
+            source_document=source_document,
+            page=page,
+          )
+          matches[keyword].append(match_item)
+    finally:
+      conn.close()
+
+  return CaveatScanResponse(matches=matches)
+
+
 def build_arg_parser() -> argparse.ArgumentParser:
   """Builds the ArgumentParser instance for integration subcommands."""
   parser = argparse.ArgumentParser(
@@ -387,6 +597,42 @@ def build_arg_parser() -> argparse.ArgumentParser:
     "--variables",
     required=True,
     help="Comma-separated list of cohort variable names.",
+  )
+
+  # Subcommand: scan-caveats
+  scan_caveats_parser = subparsers.add_parser(
+    "scan-caveats",
+    help="Scan scripts/code files for referenced variables/datasets and extract caveat context.",
+  )
+  scan_caveats_parser.add_argument(
+    "--files",
+    help="Comma-separated list of script/code files to scan.",
+  )
+  scan_caveats_parser.add_argument(
+    "--keywords",
+    help="Comma-separated list of additional keywords to check.",
+  )
+
+  # Subcommand: format-context
+  format_context_parser = subparsers.add_parser(
+    "format-context",
+    help="Query agent context and format the response (prompt, markdown, xml).",
+  )
+  format_context_parser.add_argument(
+    "--query",
+    required=True,
+    help="The context retrieval search query.",
+  )
+  format_context_parser.add_argument(
+    "--format",
+    choices=["prompt", "markdown", "xml"],
+    default="prompt",
+    help="Output format style.",
+  )
+  format_context_parser.add_argument(
+    "--limit",
+    type=int,
+    help="Maximum number of context results to retrieve.",
   )
 
   return parser
@@ -430,6 +676,25 @@ def main(args: list[str] | None = None) -> int:
         for var, items in result.items()
       }
       print(json.dumps(serialized, indent=2))
+
+    elif parsed_args.command == "scan-caveats":
+      files_list = []
+      if parsed_args.files:
+        files_list = [f.strip() for f in parsed_args.files.split(",") if f.strip()]
+      keywords_list = []
+      if parsed_args.keywords:
+        keywords_list = [k.strip() for k in parsed_args.keywords.split(",") if k.strip()]
+      response = scan_codebase_caveats(files_list, keywords_list)
+      print(response.model_dump_json(indent=2))
+
+    elif parsed_args.command == "format-context":
+      query = parsed_args.query
+      fmt = parsed_args.format
+      limit = parsed_args.limit
+      config = AgentContextConfig()
+      response = build_agent_context(config, query, limit=limit)
+      formatted = format_agent_context(response, format_type=fmt)
+      print(formatted)
 
     return 0
   except Exception as e:
